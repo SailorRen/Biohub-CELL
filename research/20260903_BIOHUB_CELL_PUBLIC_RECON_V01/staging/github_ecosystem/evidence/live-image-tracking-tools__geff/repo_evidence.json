@@ -1,0 +1,2020 @@
+{
+  "schema_version": "1.0",
+  "source_id": "GH-DEEP-live-image-tracking-tools__geff",
+  "repo": "live-image-tracking-tools/geff",
+  "url": "https://github.com/live-image-tracking-tools/geff",
+  "relation_to_competition": "geff_reference_implementation",
+  "access_time_utc": "2026-09-03T08:47:12.250107+00:00",
+  "fixed_branch": "main",
+  "fixed_commit_sha": "5727ad6e7b2a1fd04ee4a24c9e897939131a15fd",
+  "latest_commit_date": "2026-08-27T16:28:27-04:00",
+  "tree_file_count": 102,
+  "tree_bytes": 9130,
+  "tree_sha256": "322b2afde724b527e8bcefb8f44b7f1b03da77234a981d09e1b221f3b68a35da",
+  "tree_evidence_path": "staging/github_ecosystem/evidence/live-image-tracking-tools__geff/tree.txt",
+  "read_status": "FULL_RELEVANT_REPO_SOURCE_READ",
+  "files_requested": 88,
+  "relevant_source_paths_selected": 88,
+  "relevant_source_selection_coverage": 1.0,
+  "files_actually_read_count": 88,
+  "files_actually_read": [
+    {
+      "path": "README.md",
+      "bytes": 3652,
+      "sha256": "528ca6b2198357d5c75294970d43461132dbd0584cbd4641741989ce2a3fd9fb",
+      "line_count": 86,
+      "keyword_counts": {
+        "track": 6,
+        "flow": 2,
+        "geff": 41,
+        "zarr": 1
+      },
+      "symbols": [],
+      "headings": [
+        "# Graph Exchange File Format",
+        "## Installation",
+        "## Quick Start",
+        "# Create a simple networkx graph with 10 nodes connected sequentially",
+        "# Each node has an attribute \"t\"",
+        "# Each edge has an attribute \"color\""
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1065,
+      "sha256": "976ad978e72b9cb9d7fbbcf18dee36f2bc83e8e7e05d591c156e7d8de3cc04de",
+      "line_count": 21,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "license"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 4061,
+      "sha256": "a33d6d6090413381fb26b6f872382b0f4f034be2c376ecf6a1b20a903294dff5",
+      "line_count": 144,
+      "keyword_counts": {
+        "geff": 11,
+        "ctc": 1
+      },
+      "symbols": [],
+      "category": "dependency"
+    },
+    {
+      "path": "geff-schema.json",
+      "bytes": 22919,
+      "sha256": "74d90e2d477e490df773bb0ed27e863d4685c5d0b4ae8d5d009623d58c3c2204",
+      "line_count": 563,
+      "keyword_counts": {
+        "detect": 3,
+        "segment": 6,
+        "track": 8,
+        "link": 2,
+        "lineage": 4,
+        "geff": 34,
+        "zarr": 10
+      },
+      "symbols": [],
+      "category": "format_schema"
+    },
+    {
+      "path": "packages/geff/README.md",
+      "bytes": 1492,
+      "sha256": "18dbac4a312f4937d88f72a61526a5b9296e744a1153ff05d291c9577ee9640f",
+      "line_count": 22,
+      "keyword_counts": {
+        "track": 6,
+        "flow": 2,
+        "geff": 15
+      },
+      "symbols": [],
+      "headings": [
+        "# Graph Exchange File Format",
+        "## Installation"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "packages/geff/pyproject.toml",
+      "bytes": 2795,
+      "sha256": "01c646e3c8da58f02b21cbfb1a658b77bb510d37b3331028b7b6ccf44b1da1e1",
+      "line_count": 81,
+      "keyword_counts": {
+        "track": 4,
+        "geff": 9,
+        "zarr": 1,
+        "ctc": 1
+      },
+      "symbols": [],
+      "category": "dependency"
+    },
+    {
+      "path": "packages/geff/src/geff/core_io/_base_read.py",
+      "bytes": 13852,
+      "sha256": "4de26927313481e81868fbe2e578de7c75b58bb546a9f7c97a57a99c57bd6bd1",
+      "line_count": 340,
+      "keyword_counts": {
+        "geff": 35,
+        "zarr": 49,
+        "sparse": 1
+      },
+      "symbols": [
+        "GeffReader",
+        "__init__",
+        "read_node_props",
+        "read_edge_props",
+        "_read_prop",
+        "_load_zarr_subset",
+        "_load_prop_to_memory",
+        "build",
+        "read_to_memory"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/src/geff/core_io/_base_write.py",
+      "bytes": 19218,
+      "sha256": "a665bf90b15bb46dc28d0d80641596f38e3f58ec25367612d5a4104583c16a63",
+      "line_count": 483,
+      "keyword_counts": {
+        "detect": 2,
+        "geff": 76,
+        "zarr": 61
+      },
+      "symbols": [
+        "write_dicts",
+        "_determine_default_value",
+        "dict_props_to_arr",
+        "write_arrays",
+        "_compute_first_dim_chunk",
+        "_write_zarr_array",
+        "write_id_arrays",
+        "write_props_arrays"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/src/geff/convert/_ctc.py",
+      "bytes": 9092,
+      "sha256": "05e71ea4d2a6da0c235b1ccc1a5cdc62db3809afcf5b545e285768fa0a1fc9b6",
+      "line_count": 255,
+      "keyword_counts": {
+        "segment": 12,
+        "track": 39,
+        "geff": 31,
+        "zarr": 34,
+        "ctc": 23
+      },
+      "symbols": [
+        "ctc_tiffs_to_zarr",
+        "from_ctc_to_geff"
+      ],
+      "category": "conversion"
+    },
+    {
+      "path": "packages/geff/src/geff/validate/graph.py",
+      "bytes": 3636,
+      "sha256": "6bc17ced9871ba1e959055c34860ef095b7916b6ddb97bd8f21eae82343ed227",
+      "line_count": 104,
+      "keyword_counts": {},
+      "symbols": [
+        "validate_unique_node_ids",
+        "validate_nodes_for_edges",
+        "validate_no_self_edges",
+        "validate_no_repeated_edges"
+      ],
+      "category": "validation"
+    },
+    {
+      "path": "packages/geff/src/geff/validate/tracks.py",
+      "bytes": 5766,
+      "sha256": "e8de2aa5ef7d441012a29de0ad833ecc27a2e8f160491d4fea43325352505d38",
+      "line_count": 157,
+      "keyword_counts": {
+        "detect": 2,
+        "segment": 3,
+        "track": 23,
+        "lineage": 16
+      },
+      "symbols": [
+        "validate_tracklets",
+        "validate_lineages"
+      ],
+      "category": "validation"
+    },
+    {
+      "path": "packages/geff/src/geff/_graph_libs/_graph_adapter.py",
+      "bytes": 2596,
+      "sha256": "39c610cf68e82a88d6947814c624f64c996b20d68786688d7b50516de6294a96",
+      "line_count": 96,
+      "keyword_counts": {
+        "geff": 14
+      },
+      "symbols": [
+        "GraphAdapter",
+        "__init__",
+        "get_node_ids",
+        "get_edge_ids",
+        "has_node_prop",
+        "get_node_prop",
+        "has_edge_prop",
+        "get_edge_prop"
+      ],
+      "category": "graph_model"
+    },
+    {
+      "path": "packages/geff-spec/src/geff_spec/_schema.py",
+      "bytes": 17875,
+      "sha256": "f47124d7662ca7d0194e70d010e0ce7618d4611c42e9bda140e0c252ad14bad7",
+      "line_count": 420,
+      "keyword_counts": {
+        "detect": 3,
+        "segment": 6,
+        "track": 10,
+        "link": 2,
+        "lineage": 6,
+        "assign": 1,
+        "geff": 68,
+        "zarr": 24
+      },
+      "symbols": [
+        "DisplayHint",
+        "_validate_key_identifier_equality",
+        "RelatedObject",
+        "_validate_model",
+        "GeffMetadata",
+        "_validate_model_after",
+        "write",
+        "read",
+        "GeffSchema",
+        "_formatted_schema_json"
+      ],
+      "category": "format_schema"
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "bytes": 1172,
+      "sha256": "66a30048f5f4e89ad35bc4c7ebab69090ad9ef69b3a383680b580f70a5033cbb",
+      "line_count": 48,
+      "keyword_counts": {
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 5705,
+      "sha256": "29e4a24de2d25727915aed00e30b1e9877a6ca6ce7ac6c10f913cf48362825ef",
+      "line_count": 189,
+      "keyword_counts": {
+        "track": 3,
+        "flow": 5,
+        "geff": 22
+      },
+      "symbols": [],
+      "headings": [
+        "# CONTRIBUTING",
+        "## Setup",
+        "### Install with generic environment manager",
+        "# <create and activate virtual environment>",
+        "### Install with uv",
+        "## Running Tasks",
+        "## Testing",
+        "## Style",
+        "## Versioning",
+        "### geff-spec",
+        "### geff (reference implementation)",
+        "## Releases",
+        "### geff",
+        "### geff-spec",
+        "## Building",
+        "## Docs"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/_hooks.py",
+      "bytes": 2299,
+      "sha256": "b246ec4f1fc254824384804b6f89f9650ef5e16b16cff4f6dc27f3efd4b807bf",
+      "line_count": 65,
+      "keyword_counts": {
+        "link": 2,
+        "geff": 6
+      },
+      "symbols": [
+        "_gen_schema_docs",
+        "on_page_markdown"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/command-line-tools.md",
+      "bytes": 411,
+      "sha256": "183852ebb6a7f0918c27016d2792d3be43ad6c14016cd8116ac7c208486438b8",
+      "line_count": 26,
+      "keyword_counts": {
+        "geff": 6
+      },
+      "symbols": [],
+      "headings": [
+        "# Command line tools",
+        "## Running command line tools",
+        "# or",
+        "## Running command with a developmental build"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/compatibility.md",
+      "bytes": 755,
+      "sha256": "3246712d583a8444f398869b41ca54fb14185dab821d025240de4d4ceaf0cdad",
+      "line_count": 16,
+      "keyword_counts": {
+        "track": 20,
+        "geff": 3
+      },
+      "symbols": [],
+      "headings": [
+        "# Compatible Libraries"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/convert.md",
+      "bytes": 1818,
+      "sha256": "9498ab0abebb761f831c0636a5f2ce4956a4451da29b5d53caa03343c2e94c8c",
+      "line_count": 34,
+      "keyword_counts": {
+        "segment": 1,
+        "track": 12,
+        "geff": 34,
+        "zarr": 2,
+        "ctc": 8,
+        "csv": 7
+      },
+      "symbols": [],
+      "headings": [
+        "# Conversion to GEFF",
+        "## Cell Tracking Challenge (CTC)",
+        "## Trackmate XML",
+        "## DataFrames / CSV",
+        "## AceTree"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/geffception.md",
+      "bytes": 4183,
+      "sha256": "f20896ebac13009bd72dfdebefd1f168ba7b68e830ab825fe03691380bf01444",
+      "line_count": 129,
+      "keyword_counts": {
+        "track": 24,
+        "lineage": 9,
+        "geff": 26,
+        "zarr": 3
+      },
+      "symbols": [],
+      "headings": [
+        "# GEFFception: Hierarchical nesting of GEFFs"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/index.md",
+      "bytes": 161,
+      "sha256": "1d47b95d474c1c2ca1e5f30e46f16b42b17e1041b3384742461378143161ab8c",
+      "line_count": 10,
+      "keyword_counts": {
+        "geff": 2
+      },
+      "symbols": [],
+      "headings": [
+        "# Welcome to geff!"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/js/mathjax.js",
+      "bytes": 384,
+      "sha256": "5c08877d7224f72c8ec0208e8208e1c225fe7b38f126e48e54ac707da7b0b3f5",
+      "line_count": 19,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/specification.md",
+      "bytes": 12318,
+      "sha256": "88604e64ee45721749431b9c71a3dea868b7a59abbb758681f8e83d551557b67",
+      "line_count": 253,
+      "keyword_counts": {
+        "detect": 1,
+        "segment": 3,
+        "track": 7,
+        "lineage": 3,
+        "geff": 31,
+        "zarr": 18
+      },
+      "symbols": [],
+      "headings": [
+        "# GEFF specification",
+        "## Zarr specification",
+        "## The `nodes` group",
+        "### The `ids` array",
+        "### The `props` group and `node property` groups",
+        "#### Shape properties",
+        "#### Variable length properties",
+        "## The `edges` group",
+        "### The `ids` array",
+        "### The `props` group and `edge property` groups",
+        "## Example file structure and metadata",
+        "# optional:",
+        "# unspecified, but totally okay:"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/tips-and-tricks.md",
+      "bytes": 2684,
+      "sha256": "54c1237301a337d80245f2622731a1b0daca520dd39fea9518adcbc80f66d8e6",
+      "line_count": 77,
+      "keyword_counts": {
+        "geff": 40
+      },
+      "symbols": [],
+      "headings": [
+        "# Tips and Tricks",
+        "## Loading a subset of a GEFF",
+        "### Loading a subset of properties",
+        "# Open the geff file without reading any data into memory",
+        "# Print names of available node/edge properties",
+        "# >>> (['t', 'x', 'y', 'label', 'score'] ['color', 'score'])",
+        "# By default all edge properties will be loaded",
+        "# Read the data of the geff into memory including only properties that have been loaded",
+        "# Construct a graph representation of the data with the backend of your choice",
+        "# Nodes will contain the attributes t, x, and y",
+        "# Edges will contain the attributes color and score",
+        "### Filtering based on nodes",
+        "# Open the geff file without reading any data into memory",
+        "# Load edge and node properties",
+        "# Access the property values, load it into memory as a numpy and then create the mask",
+        "# Read the data of the geff into memory using the mask to filter which nodes to load",
+        "# Construct a graph representation of the data with the backend of your choice",
+        "### Filtering based on edges",
+        "# Open the geff file without reading any data into memory",
+        "# Load edge and node properties",
+        "# Access the property values, load it into memory as a numpy and then create the mask",
+        "# Read the data of the geff into memory using the mask to filter which edges to load",
+        "# Construct a graph representation of the data with the backend of your choice"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/tracking.md",
+      "bytes": 3933,
+      "sha256": "609a16fe32a0bb29313fa3ef315696527d7815a903c880eb28fcdf911ac5b70e",
+      "line_count": 93,
+      "keyword_counts": {
+        "track": 42,
+        "lineage": 22,
+        "assign": 1,
+        "geff": 26
+      },
+      "symbols": [],
+      "headings": [
+        "# Tracking graph standards",
+        "## Tracklet and lineage ID properties",
+        "### GEFFception for tracking"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "docs/what-is-geff.md",
+      "bytes": 788,
+      "sha256": "3c78e34c7fbb4514eee6ce14c3d6630c002562a54b31ad618f1cdbfd2257a62f",
+      "line_count": 13,
+      "keyword_counts": {
+        "segment": 3,
+        "link": 1,
+        "geff": 4
+      },
+      "symbols": [],
+      "headings": [
+        "# What is geff?",
+        "## Design Decisions and Assumptions"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "mkdocs.yml",
+      "bytes": 2242,
+      "sha256": "ebec7ee69f8fedc9f7ae0387744c0984f1443139a03fe4e2c1637b327113b788",
+      "line_count": 85,
+      "keyword_counts": {
+        "track": 4,
+        "geff": 11,
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "packages/geff-spec/LICENSE",
+      "bytes": 1065,
+      "sha256": "976ad978e72b9cb9d7fbbcf18dee36f2bc83e8e7e05d591c156e7d8de3cc04de",
+      "line_count": 21,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "license"
+    },
+    {
+      "path": "packages/geff-spec/README.md",
+      "bytes": 1040,
+      "sha256": "5cd7aa3b2f38490e8a5a31d680f316d45215d19316bf0097c15eb9882e244dbc",
+      "line_count": 20,
+      "keyword_counts": {
+        "track": 4,
+        "geff": 13
+      },
+      "symbols": [],
+      "headings": [
+        "# Graph Exchange File Format Specification",
+        "## Installation"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "packages/geff-spec/pyproject.toml",
+      "bytes": 971,
+      "sha256": "a57d19d73fbca66277036716f646e90268bb3e5a83e0f806e91816a6b1d747bc",
+      "line_count": 34,
+      "keyword_counts": {
+        "track": 3,
+        "geff": 4,
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "dependency"
+    },
+    {
+      "path": "packages/geff-spec/src/geff_spec/__init__.py",
+      "bytes": 736,
+      "sha256": "40103587d652943ff5c3f81c512717c3f9173a8ef8a2bc76423a6c88d7ee6258",
+      "line_count": 34,
+      "keyword_counts": {
+        "geff": 5
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff-spec/src/geff_spec/_axis.py",
+      "bytes": 4269,
+      "sha256": "b4c212e73d647ec6e5bedd7aff4adc14e19549f36d4696079b3815510a93696a",
+      "line_count": 117,
+      "keyword_counts": {
+        "zarr": 4
+      },
+      "symbols": [
+        "Axis",
+        "_validate_model",
+        "_check_units"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff-spec/src/geff_spec/_prop_metadata.py",
+      "bytes": 2539,
+      "sha256": "bbf08ebfaf85b7f3ed037d5c823b1824b4259d47f329653242ce4a6adce443c5",
+      "line_count": 75,
+      "keyword_counts": {},
+      "symbols": [
+        "PropMetadata",
+        "_convert_dtype"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "packages/geff-spec/src/geff_spec/_valid_values.py",
+      "bytes": 3733,
+      "sha256": "96f6d138131b4824bb1e6e50e94f9f292341c565152bcd81b2406a0c979ce7eb",
+      "line_count": 149,
+      "keyword_counts": {
+        "geff": 1,
+        "zarr": 9
+      },
+      "symbols": [
+        "validate_axis_type",
+        "validate_space_unit",
+        "validate_time_unit"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff-spec/src/geff_spec/utils.py",
+      "bytes": 11680,
+      "sha256": "df3963bc8b5aa2a0ed645d9d7022f66feec38437cc81760af0129e417e366d46",
+      "line_count": 319,
+      "keyword_counts": {
+        "detect": 1,
+        "geff": 24,
+        "infer": 1
+      },
+      "symbols": [
+        "update_metadata_axes",
+        "compute_and_add_axis_min_max",
+        "create_or_update_metadata",
+        "add_or_update_props_metadata",
+        "axes_from_lists",
+        "create_props_metadata"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff-spec/tests/conftest.py",
+      "bytes": 259,
+      "sha256": "5ee15d577c3fa365ab564bcfe89277d79e3a07b4024397d7859a020be2af11b8",
+      "line_count": 11,
+      "keyword_counts": {
+        "geff": 1
+      },
+      "symbols": [
+        "pytest_addoption"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff-spec/tests/test_axis.py",
+      "bytes": 2587,
+      "sha256": "51cffe66eb65531bd789d5e283d68268fcc111fa9df78105945869434faec4d8",
+      "line_count": 81,
+      "keyword_counts": {
+        "geff": 1
+      },
+      "symbols": [
+        "TestAxis",
+        "test_valid",
+        "test_no_name",
+        "test_bad_type",
+        "test_invalid_units",
+        "test_min_max",
+        "test_invalid_scaled_units"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff-spec/tests/test_prop_metadata.py",
+      "bytes": 2843,
+      "sha256": "e6e7adae96a58ea45fed7d4d429e42bf1856062b6d2a4ca7c344c89e3e0e7f58",
+      "line_count": 86,
+      "keyword_counts": {
+        "geff": 1
+      },
+      "symbols": [
+        "TestPropMetadata",
+        "test_valid",
+        "test_invalid_identifier",
+        "test_invalid_dtype",
+        "test_numpy_dtypes",
+        "test_string"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "packages/geff-spec/tests/test_schema.py",
+      "bytes": 18985,
+      "sha256": "264870fb1c385ceb1ca02b85e83797da371147ddd9c12e3ce2c630dce044c2fa",
+      "line_count": 505,
+      "keyword_counts": {
+        "segment": 4,
+        "track": 6,
+        "lineage": 4,
+        "geff": 77,
+        "zarr": 9
+      },
+      "symbols": [
+        "TestMetadataModel",
+        "test_version_pattern",
+        "test_invalid_version",
+        "test_valid_init",
+        "test_duplicate_axes_names",
+        "test_related_objects",
+        "test_props_metadata",
+        "test_extra_attrs",
+        "test_read_write",
+        "test_meta_write_raises_type_error_upon_group",
+        "test_model_mutation",
+        "test_read_write_ignored_metadata",
+        "test_display_hints",
+        "test_all_fields",
+        "test_other_fields_not_allowed",
+        "test__validate_key_identifier_equality",
+        "test_schema_and_round_trip",
+        "test_schema_file_updated"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff-spec/tests/test_utils.py",
+      "bytes": 15451,
+      "sha256": "0a6bdd43bc1af345df373256814d22caee4cb66bb73692dca69ea38415cbf9d4",
+      "line_count": 381,
+      "keyword_counts": {
+        "geff": 18,
+        "sparse": 2
+      },
+      "symbols": [
+        "TestCreateOrUpdatePropsMetadata",
+        "test_create_node_props_metadata_from_empty",
+        "test_create_edge_props_metadata_from_none",
+        "test_update_existing_node_props_metadata",
+        "test_update_existing_edge_props_metadata",
+        "test_update_without_overwriting_existing_values",
+        "test_overwrite_existing_prop",
+        "test_empty_props_md_list",
+        "test_multiple_props_same_call",
+        "test_invalid_c_type_raises_error",
+        "TestCreatePropMetadata",
+        "test_normal_prop_int",
+        "test_normal_prop_float_with_missing",
+        "test_normal_prop_string",
+        "test_varlen_prop_valid",
+        "test_varlen_prop_with_none_values",
+        "test_varlen_prop_all_none_raises_error",
+        "test_invalid_prop_data_raises_error",
+        "test_all_optional_parameters",
+        "test_cast_to_float",
+        "TestUpdateMetadataAxes",
+        "test_valid",
+        "test_invalid_units",
+        "test_invalid_types",
+        "TestComputeAndAddAxisMinMax",
+        "test_no_missing",
+        "test_with_missing"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff-spec/tests/test_valid_values.py",
+      "bytes": 990,
+      "sha256": "6792e83c18740f23647c9a7ad08fd52b0eeb7c4d2bc1e1b8d7ce2957b9530284",
+      "line_count": 37,
+      "keyword_counts": {
+        "geff": 1
+      },
+      "symbols": [
+        "test_validate_data_type_allowed",
+        "test_validate_data_type_disallowed"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/LICENSE",
+      "bytes": 1065,
+      "sha256": "976ad978e72b9cb9d7fbbcf18dee36f2bc83e8e7e05d591c156e7d8de3cc04de",
+      "line_count": 21,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "license"
+    },
+    {
+      "path": "packages/geff/src/geff/__init__.py",
+      "bytes": 542,
+      "sha256": "d1afb04449dcbfc5edaaa61de075ab2bb0ef1392c2c26cdcb4d62886f8c42be5",
+      "line_count": 23,
+      "keyword_counts": {
+        "geff": 6
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/src/geff/_cli.py",
+      "bytes": 5311,
+      "sha256": "37ea812f569909a1ac0273f8434e5f1e6e8881e4c011562362ec363dd34477ba",
+      "line_count": 177,
+      "keyword_counts": {
+        "segment": 2,
+        "track": 18,
+        "geff": 36,
+        "zarr": 16,
+        "ctc": 11,
+        "csv": 6
+      },
+      "symbols": [
+        "validate",
+        "info",
+        "convert_ctc",
+        "convert_trackmate_xml",
+        "convert_to_csv"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/src/geff/_graph_libs/README.md",
+      "bytes": 1787,
+      "sha256": "0adc9223b18ebba4e620e642cbde6eb60f2aa88d158a928f7d4e375883fbcc88",
+      "line_count": 26,
+      "keyword_counts": {},
+      "symbols": [],
+      "headings": [
+        "# Adding a new backend",
+        "## Read from a new backend"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "packages/geff/src/geff/_graph_libs/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/src/geff/_graph_libs/_api_wrapper.py",
+      "bytes": 14643,
+      "sha256": "fc86a3b6a0cdcad90029aed12879b81bcbb237149362ea12af80e201d1082230",
+      "line_count": 371,
+      "keyword_counts": {
+        "geff": 45,
+        "zarr": 18
+      },
+      "symbols": [
+        "_import_available_backends",
+        "get_backend",
+        "get_backend",
+        "get_backend",
+        "get_backend",
+        "get_backend_from_graph_type",
+        "read",
+        "read",
+        "read",
+        "read",
+        "construct",
+        "construct",
+        "construct",
+        "construct",
+        "write",
+        "write",
+        "write"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/src/geff/_graph_libs/_backend_protocol.py",
+      "bytes": 2389,
+      "sha256": "15c23b5a89ad2a304c1d8311cd8d78c942a3201ecc87d14b7d1dc2695dda31db",
+      "line_count": 81,
+      "keyword_counts": {
+        "geff": 11,
+        "zarr": 2
+      },
+      "symbols": [
+        "Backend",
+        "GRAPH_TYPES",
+        "construct",
+        "read",
+        "write",
+        "graph_adapter"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/src/geff/_graph_libs/_errors.py",
+      "bytes": 49,
+      "sha256": "1b284fbb93557453880926862500beff99b8294b11f898bce33e6541bc6d3047",
+      "line_count": 2,
+      "keyword_counts": {},
+      "symbols": [
+        "MissingDependencyError"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/src/geff/_graph_libs/_networkx.py",
+      "bytes": 5599,
+      "sha256": "6b00146cecd26432b31fa54abff007290948c6b667ef7437125ca670bbbe0f54",
+      "line_count": 163,
+      "keyword_counts": {
+        "geff": 12,
+        "zarr": 4,
+        "sparse": 1
+      },
+      "symbols": [
+        "_set_property_values",
+        "NxBackend",
+        "GRAPH_TYPES",
+        "construct",
+        "write",
+        "graph_adapter",
+        "NxGraphAdapter",
+        "__init__",
+        "get_node_ids",
+        "get_edge_ids",
+        "has_node_prop",
+        "get_node_prop",
+        "has_edge_prop",
+        "get_edge_prop"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/src/geff/_graph_libs/_rustworkx.py",
+      "bytes": 7184,
+      "sha256": "61c51d83272618c4f5457cdb5653edf4c60a805612da15dd969b793aa3bec0b5",
+      "line_count": 209,
+      "keyword_counts": {
+        "geff": 14,
+        "zarr": 4
+      },
+      "symbols": [
+        "RxBackend",
+        "GRAPH_TYPES",
+        "construct",
+        "write",
+        "graph_adapter",
+        "RxGraphAdapter",
+        "__init__",
+        "get_node_ids",
+        "get_edge_ids",
+        "has_node_prop",
+        "get_node_prop",
+        "has_edge_prop",
+        "get_edge_prop"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/src/geff/_graph_libs/_spatial_graph.py",
+      "bytes": 9341,
+      "sha256": "936bb49d982e1f77e194cdc4b1d5f71d6a35c11be4be7b5356954681ff304939",
+      "line_count": 261,
+      "keyword_counts": {
+        "geff": 17,
+        "zarr": 4
+      },
+      "symbols": [
+        "SgBackend",
+        "GRAPH_TYPES",
+        "construct",
+        "get_dtype_str",
+        "write",
+        "graph_adapter",
+        "SgGraphAdapter",
+        "__init__",
+        "get_node_ids",
+        "get_edge_ids",
+        "has_node_prop",
+        "get_node_prop",
+        "_get_node_spatial_props",
+        "has_edge_prop",
+        "get_edge_prop"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/src/geff/_path.py",
+      "bytes": 1155,
+      "sha256": "519bc42b7460b2d246129771163f16dd67441be76d340551daf3ab7732add7c2",
+      "line_count": 34,
+      "keyword_counts": {
+        "geff": 6
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/src/geff/_typing.py",
+      "bytes": 1723,
+      "sha256": "4ae1dcf1a7543bbecfe45db51544ac65d83f8df903153473b2bb14c0ea10744d",
+      "line_count": 62,
+      "keyword_counts": {
+        "geff": 5,
+        "zarr": 9
+      },
+      "symbols": [
+        "PropDictNpArray",
+        "ZarrPropDict",
+        "InMemoryGeff"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/src/geff/convert/__init__.py",
+      "bytes": 1517,
+      "sha256": "c04a5d7766bbe51d7c54fdbb4f98cc03e4a55706ebeb48b39aeed94dde16501b",
+      "line_count": 56,
+      "keyword_counts": {
+        "track": 3,
+        "geff": 40,
+        "zarr": 5,
+        "ctc": 13,
+        "csv": 10
+      },
+      "symbols": [
+        "__getattr__"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/src/geff/convert/_dataframe.py",
+      "bytes": 12467,
+      "sha256": "0f9a97bc18b7c368cbc2694767daa057b50ad8b4d414f5d8151a61e710636649",
+      "line_count": 326,
+      "keyword_counts": {
+        "geff": 33,
+        "zarr": 13,
+        "csv": 33,
+        "infer": 3
+      },
+      "symbols": [
+        "geff_to_dataframes",
+        "geff_to_csv",
+        "_dataframes_to_memory_geff",
+        "_df_columns_to_props",
+        "dataframes_to_geff",
+        "csv_to_geff"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "packages/geff/src/geff/convert/_trackmate_xml.py",
+      "bytes": 39738,
+      "sha256": "810323683e19f7a9544063f976fc817a50db804ecf7e1dfb97c71232535f013a",
+      "line_count": 1040,
+      "keyword_counts": {
+        "detect": 1,
+        "segment": 16,
+        "track": 133,
+        "lineage": 11,
+        "assign": 1,
+        "geff": 53,
+        "zarr": 12,
+        "infer": 1
+      },
+      "symbols": [
+        "_preliminary_checks",
+        "_get_units",
+        "_get_attributes_metadata",
+        "_convert_attributes",
+        "_convert_ROI_coordinates",
+        "_add_all_nodes",
+        "_add_edge",
+        "_build_tracks",
+        "_get_filtered_tracks_ID",
+        "_build_data",
+        "_get_trackmate_version",
+        "_get_specific_tags",
+        "_extract_image_path",
+        "_get_feature_name",
+        "_get_feature_dtype",
+        "_get_feature_unit",
+        "_process_feature_metadata",
+        "_extract_props_metadata",
+        "_build_geff_metadata",
+        "_check_component_props_consistency",
+        "_ensure_data_metadata_consistency",
+        "from_trackmate_xml_to_geff"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/src/geff/core_io/__init__.py",
+      "bytes": 351,
+      "sha256": "121caf43f0b30d0513628bc6587f422e2807359736644b23d613110a50dfe50a",
+      "line_count": 14,
+      "keyword_counts": {
+        "geff": 4
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/src/geff/core_io/_serialization.py",
+      "bytes": 4998,
+      "sha256": "9b8339cc526e268681511895e9c614f8092ed9e1d42f388b2ff2d43a8c7b71f3",
+      "line_count": 123,
+      "keyword_counts": {
+        "geff": 1
+      },
+      "symbols": [
+        "serialize_vlen_property_data",
+        "_deserialize_vlen_value",
+        "deserialize_vlen_property_data"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/src/geff/core_io/_utils.py",
+      "bytes": 15597,
+      "sha256": "82bef899889d690b7d4cd43055d0387edab2607c8568beb019e3438bd2ac10f7",
+      "line_count": 445,
+      "keyword_counts": {
+        "detect": 6,
+        "geff": 19,
+        "zarr": 84,
+        "infer": 4
+      },
+      "symbols": [
+        "is_remote_url",
+        "remove_tilde",
+        "open_storelike",
+        "expect_array",
+        "expect_group",
+        "_detect_zarr_spec_version",
+        "setup_zarr_group",
+        "_get_common_type_dims",
+        "default_for_value",
+        "_infer_int_dtype",
+        "construct_props",
+        "construct_var_len_props",
+        "delete_geff",
+        "check_for_geff"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/src/geff/testing/__init__.py",
+      "bytes": 29,
+      "sha256": "27ef8e98c44946c5f8d7c7b8f5197efcd81148828247d76c87522aa482052f3d",
+      "line_count": 2,
+      "keyword_counts": {
+        "geff": 1
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/src/geff/testing/_utils.py",
+      "bytes": 5351,
+      "sha256": "cded8426649b1dce15baf8898b0ec141d883bb6bc87f22787c9882f127466198",
+      "line_count": 132,
+      "keyword_counts": {
+        "geff": 10,
+        "zarr": 5
+      },
+      "symbols": [
+        "nx_is_equal",
+        "check_equiv_geff"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/src/geff/testing/data.py",
+      "bytes": 23640,
+      "sha256": "6ee33331808338ab487a6ce7527eae99ba26c586a8a7ba971b8e80a27e6ec8e4",
+      "line_count": 605,
+      "keyword_counts": {
+        "track": 1,
+        "geff": 51,
+        "zarr": 14,
+        "sparse": 3
+      },
+      "symbols": [
+        "ExampleNodeAxisPropsDtypes",
+        "create_dummy_in_mem_geff",
+        "_add_axis",
+        "create_mock_geff",
+        "create_simple_2d_geff",
+        "create_simple_3d_geff",
+        "create_simple_temporal_geff",
+        "create_empty_geff"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "packages/geff/src/geff/validate/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/src/geff/validate/data.py",
+      "bytes": 3226,
+      "sha256": "ec4e6fe3c5b70251032048da8c3452a8466db1f5b9bad4670280bc0a3cd4f114",
+      "line_count": 87,
+      "keyword_counts": {
+        "track": 17,
+        "lineage": 11,
+        "geff": 23
+      },
+      "symbols": [
+        "ValidationConfig",
+        "validate_data"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "packages/geff/src/geff/validate/segmentation.py",
+      "bytes": 9659,
+      "sha256": "584afc3892c4871bc799af143c6e25909678fa0932d4f0f88f234ee38087172e",
+      "line_count": 267,
+      "keyword_counts": {
+        "segment": 42,
+        "geff": 32,
+        "zarr": 1
+      },
+      "symbols": [
+        "has_valid_seg_id",
+        "axes_match_seg_dims",
+        "graph_is_in_seg_bounds",
+        "has_seg_ids_at_time_points",
+        "has_seg_ids_at_coords"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/src/geff/validate/shapes.py",
+      "bytes": 2624,
+      "sha256": "62c40170d136f43411075427ad84a5fb536bb165513a16f33e9b03b15bdcc673",
+      "line_count": 75,
+      "keyword_counts": {
+        "geff": 1
+      },
+      "symbols": [
+        "validate_ellipsoid",
+        "validate_sphere"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/src/geff/validate/structure.py",
+      "bytes": 7449,
+      "sha256": "f3fb27bbd6873fba39e5015ed151f93de67c345d65f0f85ed253119ac59eee9f",
+      "line_count": 189,
+      "keyword_counts": {
+        "geff": 17,
+        "zarr": 17
+      },
+      "symbols": [
+        "validate_structure",
+        "_validate_axes_structure",
+        "_validate_props_group",
+        "_validate_nodes_group",
+        "_validate_edges_group"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/tests/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/tests/data/FakeTracks.xml",
+      "bytes": 271605,
+      "sha256": "72fb578c8585c76f2bda5d5e2abd9a8ff8621884e3b068101f4ead39511ce91d",
+      "line_count": 800,
+      "keyword_counts": {
+        "detect": 8,
+        "segment": 1,
+        "track": 315,
+        "link": 112,
+        "stardist": 2,
+        "sparse": 1
+      },
+      "symbols": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "packages/geff/tests/test_bench.py",
+      "bytes": 4443,
+      "sha256": "af8c6d26ce3b2df66f5917dee935817df2be54434501d91378bfc050affa0864",
+      "line_count": 147,
+      "keyword_counts": {
+        "geff": 5,
+        "zarr": 3
+      },
+      "symbols": [
+        "node_data",
+        "edge_data",
+        "create_nx_graph",
+        "graph_file_path",
+        "test_bench_write",
+        "test_bench_validate",
+        "test_bench_read"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/tests/test_cli.py",
+      "bytes": 3229,
+      "sha256": "e5bd6e893c312d1eecd7719ad7630440372a9b0256e774634e3b75b87871b29d",
+      "line_count": 95,
+      "keyword_counts": {
+        "track": 4,
+        "geff": 25,
+        "zarr": 2,
+        "ctc": 8,
+        "csv": 2
+      },
+      "symbols": [
+        "example_geff_path",
+        "test_validate_command_prints_valid",
+        "test_info_command_prints_metadata",
+        "test_main_invalid_command",
+        "test_convert_ctc",
+        "test_convert_trackmate_xml",
+        "test_convert_to_csv"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/tests/test_convert/test_ctc.py",
+      "bytes": 11808,
+      "sha256": "f3d445a900a91596f7f117e80af50c0d29516a4f20753e82fe6e6d325615d762",
+      "line_count": 410,
+      "keyword_counts": {
+        "segment": 12,
+        "track": 40,
+        "geff": 65,
+        "zarr": 29,
+        "ctc": 43
+      },
+      "symbols": [
+        "create_mock_data",
+        "_create_mock_data_3d",
+        "Test_ctc_to_geff",
+        "test_basic",
+        "orig_test",
+        "test_seg_to_path",
+        "test_seg_to_store",
+        "test_seg_to_bad_store",
+        "test_ctc_image_to_zarr"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/tests/test_convert/test_dataframe.py",
+      "bytes": 14942,
+      "sha256": "95aa8356969ad933939e2fef971f0209e399389e0d2a94a0a75e4571f639d271",
+      "line_count": 390,
+      "keyword_counts": {
+        "geff": 82,
+        "zarr": 3,
+        "csv": 37
+      },
+      "symbols": [
+        "Test_geff_to_dataframes",
+        "test_3d_geff",
+        "test_2d_prop",
+        "test_3d_prop",
+        "test_no_nodes",
+        "test_no_edges",
+        "test_missing",
+        "Test_geff_to_csv",
+        "test_outpath_no_suffix",
+        "test_outpath_with_suffix",
+        "test_no_nodes",
+        "test_no_edges",
+        "test_overwrite",
+        "sample_dataframes",
+        "expected_memory_geff",
+        "Test_dataframes_to_geff",
+        "test_missing_node_id_column",
+        "test_missing_edge_columns",
+        "test_empty_dataframes",
+        "test_all_edge_cases",
+        "Test_csv_to_geff",
+        "test_end_to_end"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "packages/geff/tests/test_convert/test_trackmate_xml.py",
+      "bytes": 40653,
+      "sha256": "fbf3c22fe212c000072d7a2735389b41b6b26ed3b0770335ee17c282f7f9b735",
+      "line_count": 1086,
+      "keyword_counts": {
+        "segment": 2,
+        "track": 141,
+        "lineage": 1,
+        "geff": 38
+      },
+      "symbols": [
+        "test_preliminary_checks",
+        "test_get_units",
+        "test_get_attributes_metadata",
+        "test_convert_attributes",
+        "test_convert_ROI_coordinates",
+        "test_add_all_nodes",
+        "test_add_edge",
+        "test_build_tracks",
+        "test_get_filtered_tracks_ID",
+        "test_get_trackmate_version",
+        "test_get_specific_tags",
+        "normalize_xml_string",
+        "test_extract_image_path",
+        "test_get_feature_name",
+        "test_get_feature_dtype",
+        "test_get_feature_unit",
+        "test_process_feature_metadata",
+        "test_metadata_info_stability",
+        "test_build_geff_metadata",
+        "_validate_ROI_info",
+        "test_from_trackmate_xml_to_geff"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/tests/test_core_io/test_base_read.py",
+      "bytes": 10431,
+      "sha256": "a35a61c4b70385f73326edcb10001063e9ed59c3df14b42b6b566dc6f75b1f6c",
+      "line_count": 292,
+      "keyword_counts": {
+        "geff": 76,
+        "zarr": 5
+      },
+      "symbols": [
+        "test_build_w_masked_nodes",
+        "test_load_prop_into_memory",
+        "test_build_w_masked_edges",
+        "test_build_w_masked_nodes_edges",
+        "test_read_node_props",
+        "test_read_edge_props",
+        "test_build_w_empty_node_mask",
+        "test_build_w_masked_nodes_varlength",
+        "test_read_to_memory"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/tests/test_core_io/test_base_write.py",
+      "bytes": 18718,
+      "sha256": "0f8065da16f22a05d111ced9ec74585001c8f5a7650a56c2f1b4d1b961cc24c0",
+      "line_count": 547,
+      "keyword_counts": {
+        "geff": 92,
+        "zarr": 32
+      },
+      "symbols": [
+        "_tmp_metadata",
+        "dict_data",
+        "TestWriteArrays",
+        "test_write_arrays_basic",
+        "test_write_in_mem_geff",
+        "test_write_arrays_rejects_disallowed_id_dtype",
+        "test_write_arrays_upcasts_disallowed_property_dtype",
+        "test_simple_geffs",
+        "test_invalid_geff",
+        "test_existing_geff",
+        "test_write_props_metadata",
+        "test_write_empty_with_axes",
+        "test_dict_prop_to_arr",
+        "test_dict_prop_to_arr_missing_on_all",
+        "Test_write_dicts",
+        "test_node_ids_not_int",
+        "test_node_int_to_uint",
+        "test_negative_ids",
+        "TestWritePropsArrays",
+        "_helper_for_testing_expected",
+        "test_int_prop",
+        "test_unsquish_prop",
+        "test_str_prop",
+        "test_str_array_prop",
+        "test_varlength_1d",
+        "test_varlength_3d"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/tests/test_core_io/test_core_utils.py",
+      "bytes": 9752,
+      "sha256": "a815a4c908d69c031aed462838a92ae5b0531783058c3ac8788715d7429c4bcb",
+      "line_count": 280,
+      "keyword_counts": {
+        "detect": 20,
+        "geff": 42,
+        "zarr": 77,
+        "infer": 10
+      },
+      "symbols": [
+        "test_default_for_value",
+        "TestZarrV3Warnings",
+        "test_detect_zarr_spec_version_v2",
+        "test_detect_zarr_spec_version_v3",
+        "test_open_storelike_warns_for_v3_with_zarr_v2",
+        "test_detect_zarr_spec_version_returns_none_for_invalid_path",
+        "TestZarrV2Warnings",
+        "test_detect_zarr_spec_version_v2",
+        "test_warn_if_writing_zarr_format_3",
+        "Test_infer_int_dtype",
+        "test_small_unsigned",
+        "test_uint16",
+        "test_uint32",
+        "test_uint64",
+        "test_negative_int8",
+        "test_negative_int16",
+        "test_negative_int32",
+        "test_negative_int64",
+        "Test_construct_props",
+        "test_values_and_missing",
+        "test_all_none",
+        "Test_delete_geff",
+        "test_basic_path",
+        "test_extra_data",
+        "test_mem_store",
+        "Test_check_for_geff",
+        "test_path",
+        "test_str",
+        "test_Store"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/tests/test_core_io/test_serialization.py",
+      "bytes": 8877,
+      "sha256": "0167eb5ec6ae21e2ac00f7849c8b794a7da41a4b9a82bd31863317a00455fe54",
+      "line_count": 320,
+      "keyword_counts": {
+        "geff": 2
+      },
+      "symbols": [
+        "basic_1d_data",
+        "data_with_missing",
+        "basic_2d_data",
+        "complex_2d_data",
+        "empty_and_data",
+        "all_missing_data",
+        "mixed_dimension_data",
+        "float_data",
+        "TestSerializeVlenPropertyData",
+        "test_serialize_basic_data",
+        "test_serialize_nonarrays",
+        "test_serialize_mixed_ndim",
+        "test_serialize_mixed_dtype",
+        "TestDeserializeVlenPropertyData",
+        "test_deserialize",
+        "test_deserialize_index_out_of_bounds"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/tests/test_docs/test_specification_json.py",
+      "bytes": 3061,
+      "sha256": "5f575aac4ef6821a3224f9acd973b77b112fa5951c2fb8cad38330ff89958568",
+      "line_count": 115,
+      "keyword_counts": {
+        "geff": 25
+      },
+      "symbols": [
+        "check_jsonc_markdown_blocks",
+        "test_specification_md",
+        "test_geffception_md",
+        "test_check_jsonc_markdown_blocks"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/tests/test_graph_libs/test_api_wrapper.py",
+      "bytes": 14114,
+      "sha256": "a255ea5f234339bc240928b28c01247a394273e646bc41a336544695895008da",
+      "line_count": 367,
+      "keyword_counts": {
+        "geff": 83,
+        "zarr": 8,
+        "train": 1
+      },
+      "symbols": [
+        "_assert_graph_equal_to_geff",
+        "Test_api_wrapper",
+        "test_read",
+        "test_construct",
+        "test_write",
+        "Test_api_wrapper_simple",
+        "test_write_axis_lists_override_metadata",
+        "test_write_read_different_stores",
+        "test_overwrite",
+        "Test_empty_graph",
+        "test_read",
+        "test_construct",
+        "test_write"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/tests/test_testing/test_testing_data.py",
+      "bytes": 28896,
+      "sha256": "fa1a580d5343cd0beded90657a623468ce24e3052f8b74d6d5140ae0aba27f02",
+      "line_count": 738,
+      "keyword_counts": {
+        "geff": 113
+      },
+      "symbols": [
+        "Test_create_simple_2d_geff",
+        "test_basic",
+        "test_edge_properties",
+        "test_create_simple_3d_geff",
+        "test_create_simple_temporal_geff",
+        "Test_create_mock_geff",
+        "test_extra_node_props",
+        "test_no_extra_node_props",
+        "test_extra_node_props_validation",
+        "test_extra_node_props_different_dtypes",
+        "Test_create_dummy_in_mem_geff",
+        "test_extra_node_props",
+        "test_empty_graph",
+        "test_empty_graph_no_extra_props",
+        "test_empty_graph_partial_dimensions",
+        "test_varlength",
+        "test_empty_geff"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "packages/geff/tests/test_validate/test_graph.py",
+      "bytes": 3143,
+      "sha256": "5342b1659e8e97d94d4bef38258517f425ac326838504cd6c54ae5574cc35ae2",
+      "line_count": 83,
+      "keyword_counts": {
+        "detect": 9,
+        "geff": 2
+      },
+      "symbols": [
+        "test_no_self_edges",
+        "test_detects_self_edges",
+        "test_all_edges_valid",
+        "test_detects_invalid_edges",
+        "test_no_repeated_edges",
+        "test_detects_repeated_edges",
+        "test_validate_unique_node_ids"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/tests/test_validate/test_segmentation.py",
+      "bytes": 4910,
+      "sha256": "5835514659e56ba0ff3b5173f7e4f56cf0c6214ce865f312f49b059cd751c7a8",
+      "line_count": 157,
+      "keyword_counts": {
+        "segment": 14,
+        "geff": 32
+      },
+      "symbols": [
+        "valid_store_and_attrs",
+        "invalid_store_and_attrs",
+        "valid_segmentation",
+        "test_has_valid_seg_id",
+        "test_axes_match_seg_dims",
+        "test_graph_is_in_seg_bounds",
+        "test_has_seg_ids_at_time_points",
+        "test_has_seg_ids_at_coords"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/tests/test_validate/test_shapes.py",
+      "bytes": 2262,
+      "sha256": "6ce992b12a5206a5def519a9badccf972069909e4b7a2c43017f62fc110768ce",
+      "line_count": 69,
+      "keyword_counts": {
+        "geff": 2
+      },
+      "symbols": [
+        "Test_validate_ellipsoid",
+        "test_axes",
+        "test_square_matrix",
+        "test_ndim",
+        "test_symmetric",
+        "test_pos_def",
+        "test_validate_sphere"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/tests/test_validate/test_structure.py",
+      "bytes": 13354,
+      "sha256": "625f6459cfc2e3dd91ef40c06a5be367b2a225138e26383730f6b96a63402098",
+      "line_count": 357,
+      "keyword_counts": {
+        "geff": 28,
+        "zarr": 18
+      },
+      "symbols": [
+        "z",
+        "meta",
+        "node_group",
+        "edge_group",
+        "TestValidateStructure",
+        "test_valid_geff",
+        "test_missing_metadata",
+        "test_no_nodes_group",
+        "test_no_edges",
+        "Test_validate_nodes_group",
+        "test_no_node_ids",
+        "test_no_node_props_group",
+        "test_ids_not_int",
+        "Test_validate_edges_group",
+        "test_no_edge_ids",
+        "test_edge_ids_bad_second_dim",
+        "test_edge_ids_wrong_ndim",
+        "test_edge_ids_not_int",
+        "Test_validate_props_group",
+        "test_node_prop_no_values",
+        "test_node_prop_shape_mismatch",
+        "test_node_prop_missing_mismatch",
+        "test_missing_dtype",
+        "test_missing_prop_metadata",
+        "test_extra_prop_metadata",
+        "test_mismatched_dtype_prop_metadata",
+        "test_varlen_value_dtype",
+        "test_varlen_data_dtype",
+        "test_data_wo_varlen",
+        "test_open_storelike",
+        "Test_check_equiv_geff",
+        "_write_new_store",
+        "test_same_geff",
+        "test_id_shape_mismatch",
+        "test_props_mismatch",
+        "test_only_one_with_missing",
+        "test_value_shape_mismatch",
+        "test_value_dtype_mismatch",
+        "Test_validate_axes_structure",
+        "test_missing_axes_prop",
+        "test_must_be_1d",
+        "test_no_missing_values"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/tests/test_validate/test_tracks.py",
+      "bytes": 5747,
+      "sha256": "9407a6749c72d79f74d7c9bbe48549ce55cbcb0b20d274f3528c10a7147d0151",
+      "line_count": 181,
+      "keyword_counts": {
+        "track": 20,
+        "lineage": 20,
+        "geff": 1
+      },
+      "symbols": [
+        "test_validate_tracklets",
+        "test_validate_lineages"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "packages/geff/tests/test_validate/test_validate_data.py",
+      "bytes": 5347,
+      "sha256": "4f90724dcf282333be5ba5bd2f58a42d1518410d9dfccac04dfe19584d15f0d1",
+      "line_count": 137,
+      "keyword_counts": {
+        "track": 14,
+        "lineage": 8,
+        "geff": 39
+      },
+      "symbols": [
+        "Test_validate_data",
+        "test_valid_graph",
+        "test_nodes_for_edges",
+        "test_no_self_edges",
+        "test_no_repeated_edges",
+        "test_unique_node_ids",
+        "test_sphere",
+        "test_ellipsoid",
+        "test_tracklet",
+        "test_lineages"
+      ],
+      "category": "data_loader"
+    }
+  ],
+  "target_paths_missing": [],
+  "read_errors": [],
+  "checkout_exit": 0,
+  "checkout_stderr_excerpt": "",
+  "checkout_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "license": "MIT",
+  "categories_observed": [
+    "conversion",
+    "data_io",
+    "data_loader",
+    "dependency",
+    "format_schema",
+    "graph_model",
+    "license",
+    "readme",
+    "relevant_source",
+    "temporal_linking",
+    "validation"
+  ],
+  "categories_not_present_in_selected_files": [
+    "division",
+    "evaluation",
+    "inference",
+    "model",
+    "optimization",
+    "postprocessing",
+    "submission_conversion",
+    "training"
+  ],
+  "category_coverage": {
+    "data_io": {
+      "status": "READ",
+      "paths": [
+        "packages/geff/src/geff/core_io/_base_read.py",
+        "packages/geff/src/geff/core_io/_base_write.py",
+        "docs/geffception.md",
+        "docs/specification.md",
+        "docs/what-is-geff.md",
+        "packages/geff-spec/src/geff_spec/__init__.py",
+        "packages/geff-spec/src/geff_spec/_axis.py",
+        "packages/geff-spec/src/geff_spec/_valid_values.py",
+        "packages/geff-spec/src/geff_spec/utils.py",
+        "packages/geff-spec/tests/conftest.py",
+        "packages/geff-spec/tests/test_axis.py",
+        "packages/geff-spec/tests/test_schema.py",
+        "packages/geff-spec/tests/test_utils.py",
+        "packages/geff-spec/tests/test_valid_values.py",
+        "packages/geff/src/geff/__init__.py",
+        "packages/geff/src/geff/_cli.py",
+        "packages/geff/src/geff/_graph_libs/__init__.py",
+        "packages/geff/src/geff/_graph_libs/_api_wrapper.py",
+        "packages/geff/src/geff/_graph_libs/_backend_protocol.py",
+        "packages/geff/src/geff/_graph_libs/_errors.py",
+        "packages/geff/src/geff/_graph_libs/_networkx.py",
+        "packages/geff/src/geff/_graph_libs/_rustworkx.py",
+        "packages/geff/src/geff/_graph_libs/_spatial_graph.py",
+        "packages/geff/src/geff/_path.py",
+        "packages/geff/src/geff/_typing.py",
+        "packages/geff/src/geff/convert/__init__.py",
+        "packages/geff/src/geff/convert/_trackmate_xml.py",
+        "packages/geff/src/geff/core_io/__init__.py",
+        "packages/geff/src/geff/core_io/_serialization.py",
+        "packages/geff/src/geff/core_io/_utils.py",
+        "packages/geff/src/geff/testing/__init__.py",
+        "packages/geff/src/geff/testing/_utils.py",
+        "packages/geff/src/geff/validate/__init__.py",
+        "packages/geff/src/geff/validate/segmentation.py",
+        "packages/geff/src/geff/validate/shapes.py",
+        "packages/geff/src/geff/validate/structure.py",
+        "packages/geff/tests/__init__.py",
+        "packages/geff/tests/test_bench.py",
+        "packages/geff/tests/test_cli.py",
+        "packages/geff/tests/test_convert/test_ctc.py",
+        "packages/geff/tests/test_convert/test_trackmate_xml.py",
+        "packages/geff/tests/test_core_io/test_base_read.py",
+        "packages/geff/tests/test_core_io/test_base_write.py",
+        "packages/geff/tests/test_core_io/test_core_utils.py",
+        "packages/geff/tests/test_core_io/test_serialization.py",
+        "packages/geff/tests/test_docs/test_specification_json.py",
+        "packages/geff/tests/test_graph_libs/test_api_wrapper.py",
+        "packages/geff/tests/test_validate/test_graph.py",
+        "packages/geff/tests/test_validate/test_segmentation.py",
+        "packages/geff/tests/test_validate/test_shapes.py",
+        "packages/geff/tests/test_validate/test_structure.py",
+        "packages/geff/tests/test_validate/test_tracks.py"
+      ]
+    },
+    "data_loader": {
+      "status": "READ",
+      "paths": [
+        "packages/geff-spec/src/geff_spec/_prop_metadata.py",
+        "packages/geff-spec/tests/test_prop_metadata.py",
+        "packages/geff/src/geff/convert/_dataframe.py",
+        "packages/geff/src/geff/testing/data.py",
+        "packages/geff/src/geff/validate/data.py",
+        "packages/geff/tests/data/FakeTracks.xml",
+        "packages/geff/tests/test_convert/test_dataframe.py",
+        "packages/geff/tests/test_testing/test_testing_data.py",
+        "packages/geff/tests/test_validate/test_validate_data.py"
+      ]
+    },
+    "dependency": {
+      "status": "READ",
+      "paths": [
+        "pyproject.toml",
+        "packages/geff/pyproject.toml",
+        "packages/geff-spec/pyproject.toml"
+      ]
+    },
+    "division": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "evaluation": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "inference": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "license": {
+      "status": "READ",
+      "paths": [
+        "LICENSE",
+        "packages/geff-spec/LICENSE",
+        "packages/geff/LICENSE"
+      ]
+    },
+    "model": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "optimization": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "postprocessing": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "readme": {
+      "status": "READ",
+      "paths": [
+        "README.md",
+        "packages/geff/README.md",
+        "packages/geff-spec/README.md",
+        "packages/geff/src/geff/_graph_libs/README.md"
+      ]
+    },
+    "submission_conversion": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "temporal_linking": {
+      "status": "READ",
+      "paths": [
+        "docs/tracking.md"
+      ]
+    },
+    "training": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    }
+  },
+  "selection_policy": {
+    "included": "all human-readable code, notebooks, documentation, dependency/runtime configuration, schemas, tests, and license/notices at the fixed commit",
+    "excluded": "repository-hosting automation, generated/cache directories, and binary/non-source artefacts",
+    "excluded_path_count": 14,
+    "excluded_paths": [
+      {
+        "path": ".gitattributes",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": ".github/PULL_REQUEST_TEMPLATE.md",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".github/changelog-config.json",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".github/dependabot.yml",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".github/workflows/ci.yaml",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".github/workflows/gh-pages.yaml",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".gitignore",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "CITATION.cff",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "docs/css/extra.css",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "docs/images/GEFF_HorizontalLogo_RGB.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "docs/images/GEFF_Icon_RGB.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "docs/images/vlen_props.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "justfile",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "packages/geff/src/geff/py.typed",
+        "reason": "non_text_or_non_source_extension"
+      }
+    ]
+  },
+  "scope_note": "Full bytes were read for every listed relevant-source path; only hashes, structure, notebook-cell hashes, and symbol/keyword summaries are persisted. The complete tree and per-path exclusions preserve the coverage boundary."
+}

@@ -1,0 +1,968 @@
+{
+  "schema_version": "1.0",
+  "source_id": "GH-DEEP-CellTrackingChallenge__py-ctcmetrics",
+  "repo": "CellTrackingChallenge/py-ctcmetrics",
+  "url": "https://github.com/CellTrackingChallenge/py-ctcmetrics",
+  "relation_to_competition": "cell_tracking_challenge_metrics",
+  "access_time_utc": "2026-09-03T08:47:12.427451+00:00",
+  "fixed_branch": "main",
+  "fixed_commit_sha": "59481c48a62d4376fe34bed3e3606b4ec4d60972",
+  "latest_commit_date": "2026-03-12T09:51:40+01:00",
+  "tree_file_count": 70,
+  "tree_bytes": 5937,
+  "tree_sha256": "0ff2685eb39837f782daafb4f79ff8f016f4a0b5a6222c089e51900fc94bbcc8",
+  "tree_evidence_path": "staging/github_ecosystem/evidence/CellTrackingChallenge__py-ctcmetrics/tree.txt",
+  "read_status": "FULL_RELEVANT_REPO_SOURCE_READ",
+  "files_requested": 51,
+  "relevant_source_paths_selected": 51,
+  "relevant_source_selection_coverage": 1.0,
+  "files_actually_read_count": 51,
+  "files_actually_read": [
+    {
+      "path": "README.md",
+      "bytes": 18318,
+      "sha256": "2c3fcea1c4a3f85a66411c47dd8f8e3bc38d248591157024814848f49897c1df",
+      "line_count": 408,
+      "keyword_counts": {
+        "detect": 2,
+        "segment": 2,
+        "track": 46,
+        "link": 2,
+        "flow": 6,
+        "ctc": 47,
+        "csv": 12,
+        "train": 18,
+        "evaluate": 18
+      },
+      "symbols": [],
+      "headings": [
+        "# Py-CTCMetrics",
+        "## Features at a Glance",
+        "## Requirements",
+        "## Installation",
+        "## Usage",
+        "### Validation",
+        "### Evaluation",
+        "# Validate the sequence",
+        "# Evaluate the sequence",
+        "### Visualization",
+        "### Impact of Errors and Noise on the Evaluation Metrics",
+        "## Notes",
+        "## Contributing",
+        "## Acknowledgement and Citations",
+        "## License"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 1306,
+      "sha256": "b8a076a1dd8714e600b78cb89ff5d8d91c0a97abb38a431d5c8d46ba52ef1d6f",
+      "line_count": 25,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "license"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 150,
+      "sha256": "c08a71a7f4490600e211f26de4238d025c3e1ee30954a8d7720c4de7dc136e70",
+      "line_count": 8,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "dependency"
+    },
+    {
+      "path": "setup.py",
+      "bytes": 895,
+      "sha256": "0a56f4cb8980846a19f011e0cc5f19b34a5f58443f6c1b5af11fb284e31a008b",
+      "line_count": 32,
+      "keyword_counts": {
+        "track": 2,
+        "ctc": 9,
+        "evaluate": 2
+      },
+      "symbols": [],
+      "category": "dependency"
+    },
+    {
+      "path": "ctc_metrics/scripts/evaluate.py",
+      "bytes": 14917,
+      "sha256": "acee1cce37124e732abd3fe3d439567f3a43e4f578cb5870a8356ca187877b31",
+      "line_count": 434,
+      "keyword_counts": {
+        "segment": 10,
+        "track": 50,
+        "division": 4,
+        "ctc": 6,
+        "csv": 3,
+        "evaluate": 13
+      },
+      "symbols": [
+        "match_computed_to_reference_masks",
+        "load_data",
+        "calculate_metrics",
+        "evaluate_sequence",
+        "evaluate_all",
+        "parse_args",
+        "main"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/technical/det.py",
+      "bytes": 871,
+      "sha256": "1f40939181b3e8a6af559b5db61f4135d1d96ee82e32fb3902e95c9d853d6e9f",
+      "line_count": 38,
+      "keyword_counts": {
+        "detect": 2,
+        "track": 1
+      },
+      "symbols": [
+        "det"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/technical/seg.py",
+      "bytes": 978,
+      "sha256": "d37b7102a8f3778de831bd80d40bf3c5f64a4a2fb8df84e185d86cb80f90c9e2",
+      "line_count": 28,
+      "keyword_counts": {
+        "segment": 2,
+        "assign": 1
+      },
+      "symbols": [
+        "seg"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/technical/tra.py",
+      "bytes": 1242,
+      "sha256": "55c6279e4a7640471b004ff1a81e073042fcf0d037e05e5e613eec03e7193aac",
+      "line_count": 49,
+      "keyword_counts": {
+        "track": 3
+      },
+      "symbols": [
+        "tra"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/technical/lnk.py",
+      "bytes": 886,
+      "sha256": "b7697f387b5ca30f7bf73c6775141c87a8cb64f8eae0ab269377700160c8f1c6",
+      "line_count": 38,
+      "keyword_counts": {
+        "track": 1,
+        "link": 2
+      },
+      "symbols": [
+        "lnk"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/hota/hota.py",
+      "bytes": 2616,
+      "sha256": "2bc0287ddd6a4eb73ade792d70afb4a79f07e26415cc5902944129cbee704534",
+      "line_count": 64,
+      "keyword_counts": {
+        "track": 12,
+        "ctc": 1
+      },
+      "symbols": [
+        "hota"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/hota/chota.py",
+      "bytes": 4690,
+      "sha256": "c82866ff229cff82a8a1b8150c101ca6c4d3a30cddae05848a4651bba382c5fc",
+      "line_count": 126,
+      "keyword_counts": {
+        "track": 52,
+        "ctc": 1
+      },
+      "symbols": [
+        "cluster_clique",
+        "chota"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/validation/valid.py",
+      "bytes": 6105,
+      "sha256": "87f22b00928b0d23994f726329552f3156d2c5fb918e67522dff936b7f1acf87",
+      "line_count": 239,
+      "keyword_counts": {
+        "detect": 2,
+        "track": 53,
+        "link": 5
+      },
+      "symbols": [
+        "valid_parents",
+        "unique_labels",
+        "valid_parent_links",
+        "valid_ends",
+        "inspect_masks",
+        "no_empty_frames",
+        "no_empty_tracking_result",
+        "valid"
+      ],
+      "category": "validation"
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "bytes": 263,
+      "sha256": "389173420fbf7361e2557a856fe8fee9f779c174ba701f3b8843b6bdb4651969",
+      "line_count": 14,
+      "keyword_counts": {
+        "link": 1
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "ctc_metrics/__init__.py",
+      "bytes": 118,
+      "sha256": "c7e068e5c145d6892f4be74274ea17a6c72f83223b99db74226f0f4533c7b01c",
+      "line_count": 3,
+      "keyword_counts": {
+        "ctc": 2,
+        "evaluate": 2
+      },
+      "symbols": [],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/__init__.py",
+      "bytes": 1171,
+      "sha256": "f01fa58f6ce1af3506d90be652a7dbb80cc3c41df247b92c10e3eb3da6c3c64f",
+      "line_count": 25,
+      "keyword_counts": {
+        "division": 1,
+        "ctc": 19
+      },
+      "symbols": [],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/biological/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/biological/bc.py",
+      "bytes": 8707,
+      "sha256": "cab0b299382ca6d1c041a7a142261f1c1813f5c03bbf27758576cd3a8581c56d",
+      "line_count": 241,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 44,
+        "division": 4,
+        "assign": 2,
+        "ctc": 1,
+        "evaluate": 1
+      },
+      "symbols": [
+        "get_ids_that_ends_with_split",
+        "calculate_f1_score",
+        "is_matching",
+        "raw_division_metrics",
+        "bc"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/biological/bio.py",
+      "bytes": 961,
+      "sha256": "0dd70336f214a00ba46b6657f88bd787db6c984c6f1e4e61956e34f9af02c1f2",
+      "line_count": 42,
+      "keyword_counts": {
+        "track": 4
+      },
+      "symbols": [
+        "bio"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/biological/cca.py",
+      "bytes": 2398,
+      "sha256": "63fdc447afcbeae350a1cb5f8df301ed62cb96089d81d8d2f399f50785873b62",
+      "line_count": 76,
+      "keyword_counts": {
+        "track": 35,
+        "ctc": 1
+      },
+      "symbols": [
+        "is_valid_track",
+        "cca"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/biological/ct.py",
+      "bytes": 2556,
+      "sha256": "76fedefda6c28284a0b27e55c28fe931738c768bd74324884d6229e7f559e742",
+      "line_count": 66,
+      "keyword_counts": {
+        "track": 24,
+        "assign": 11,
+        "ctc": 1
+      },
+      "symbols": [
+        "ct"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/biological/op_clb.py",
+      "bytes": 355,
+      "sha256": "216807f3df36fd631207d5cc1f42a2e394f345c7b4ff83c2ba68d167913a37d3",
+      "line_count": 20,
+      "keyword_counts": {
+        "track": 2,
+        "link": 1
+      },
+      "symbols": [
+        "op_clb"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/biological/tf.py",
+      "bytes": 4205,
+      "sha256": "506883ef8e329e1a1034082ef5e45751ad6fa0ad363512cc47f41f9d799c708d",
+      "line_count": 108,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 26,
+        "assign": 11,
+        "ctc": 2
+      },
+      "symbols": [
+        "calculate_fractions_fo_computed_tracks",
+        "tf"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/clearmot/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/clearmot/mota.py",
+      "bytes": 2583,
+      "sha256": "a7dd5218dd2ecc958c995199bdf8be60a9bb178d17f70018306dcf932431f175",
+      "line_count": 68,
+      "keyword_counts": {
+        "track": 2,
+        "assign": 5
+      },
+      "symbols": [
+        "mota"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/hota/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/identity_metrics/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/identity_metrics/idf1.py",
+      "bytes": 4493,
+      "sha256": "a72bf69914e0424c8410db2c828ff616926b2ee8f5a1ced4d3fe5f5de5c5d7a9",
+      "line_count": 118,
+      "keyword_counts": {
+        "track": 26,
+        "assign": 6,
+        "linear_sum_assignment": 2,
+        "ctc": 1
+      },
+      "symbols": [
+        "get_idf1_stats",
+        "idf1"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/others/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/others/faf.py",
+      "bytes": 740,
+      "sha256": "4132046c879b5dbf6f34cc245c831444bbbf6441067924af734412ef6e67a308",
+      "line_count": 35,
+      "keyword_counts": {},
+      "symbols": [
+        "faf"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/others/mt_ml.py",
+      "bytes": 1165,
+      "sha256": "b03e91a012dcb6ef2238c86043f7b8cf51a131835cf705d10d976fc9b2a3be5a",
+      "line_count": 40,
+      "keyword_counts": {
+        "track": 6,
+        "ctc": 1
+      },
+      "symbols": [
+        "mtml"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/technical/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/technical/op_csb.py",
+      "bytes": 359,
+      "sha256": "7146dee299c6e5d33b3ffaab928762c0a3d36af567a89d28677ac8eeba0789a5",
+      "line_count": 20,
+      "keyword_counts": {
+        "detect": 1,
+        "segment": 1,
+        "track": 2
+      },
+      "symbols": [
+        "op_csb"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/technical/op_ctb.py",
+      "bytes": 358,
+      "sha256": "58a25028d3e2a26685a43394884fe9ccd110572d534251edb4d87d755c5104a8",
+      "line_count": 20,
+      "keyword_counts": {
+        "segment": 1,
+        "track": 3
+      },
+      "symbols": [
+        "op_ctb"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/metrics/validation/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/scripts/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/scripts/noise.py",
+      "bytes": 21630,
+      "sha256": "bb38a412c459b1dbff2ee51c67257722718925ed92b040816fe5f5462e730620",
+      "line_count": 693,
+      "keyword_counts": {
+        "detect": 1,
+        "segment": 3,
+        "track": 124,
+        "ctc": 4,
+        "csv": 24,
+        "evaluate": 11
+      },
+      "symbols": [
+        "load_data",
+        "remove_mitosis",
+        "sample_fn",
+        "add_false_negatives",
+        "add_false_positives",
+        "remove_matches",
+        "add_id_switches",
+        "add_noise",
+        "is_new_setting",
+        "append_results",
+        "run_noisy_sample",
+        "filter_existing_noise_settings",
+        "create_noise_settings",
+        "evaluate_sequence",
+        "evaluate_all",
+        "parse_args",
+        "main"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/scripts/validate.py",
+      "bytes": 2741,
+      "sha256": "4b9de878030eb7505982d777d12b4f3ba9ce910ac6b89802c1c94ceed781e827",
+      "line_count": 97,
+      "keyword_counts": {
+        "track": 8,
+        "ctc": 5,
+        "evaluate": 1
+      },
+      "symbols": [
+        "validate_sequence",
+        "validate_all",
+        "parse_args",
+        "main"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/scripts/visualize.py",
+      "bytes": 10301,
+      "sha256": "634c1fd31f5e2576d1c3160dc42cb28d77434074abc41a03df779f5397fc2394",
+      "line_count": 327,
+      "keyword_counts": {
+        "track": 5,
+        "ctc": 2
+      },
+      "symbols": [
+        "get_palette_color",
+        "visualize",
+        "create_colored_image",
+        "parse_args",
+        "main"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/utils/filesystem.py",
+      "bytes": 3507,
+      "sha256": "bc7aa47730687aca5aad598963f93e355d2a13e6114dd14c9e715542e54fd47f",
+      "line_count": 107,
+      "keyword_counts": {
+        "track": 8,
+        "evaluate": 1
+      },
+      "symbols": [
+        "parse_directories",
+        "read_tracking_file",
+        "parse_masks"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/utils/handle_results.py",
+      "bytes": 1602,
+      "sha256": "90fa4de49a7552bf3442bf6be0ea7112344f3717ff717f117312d08bea13c43e",
+      "line_count": 55,
+      "keyword_counts": {
+        "csv": 5
+      },
+      "symbols": [
+        "print_results",
+        "print_block",
+        "store_results"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "ctc_metrics/utils/representations.py",
+      "bytes": 17376,
+      "sha256": "6b33ef7bc549ddbec884c1e0a385bbcf126174a7875dd0bd65eab8b257af3d3f",
+      "line_count": 457,
+      "keyword_counts": {
+        "detect": 8,
+        "segment": 2,
+        "track": 71,
+        "link": 4,
+        "assign": 15,
+        "sparse": 2
+      },
+      "symbols": [
+        "track_confusion_matrix",
+        "match",
+        "create_edge_mapping",
+        "create_detection_test_matrix",
+        "count_acyclic_graph_correction_operations",
+        "assign_comp_to_ref",
+        "merge_tracks"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "pixi_env/README.md",
+      "bytes": 1022,
+      "sha256": "b5c131f2d86a899878c5f8ce23fbd9fc5dae754fd4ce08be0025436717d0a8b5",
+      "line_count": 33,
+      "keyword_counts": {},
+      "symbols": [],
+      "headings": [
+        "# Python environment managed by the pixi",
+        "# Using pixi with this project"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "pixi_env/pixi.toml",
+      "bytes": 672,
+      "sha256": "d518ee4ef96cf45968723bcbeacbb2f7b15924848b294f716a66a5ea8fcd3b79",
+      "line_count": 26,
+      "keyword_counts": {
+        "track": 2,
+        "ctc": 3
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "py-ctcmetrics.toml",
+      "bytes": 90,
+      "sha256": "4a017048064bf853e9f8ac4a774af07985c633c8bdd164a7ceb2438c350c2e54",
+      "line_count": 4,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "evaluation"
+    },
+    {
+      "path": "test/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "test/prepare_test_data.sh",
+      "bytes": 170,
+      "sha256": "de0aedbdbe72ad8d47f30e8db8e7f9e3a5c04ed4e4a865fb1062d4d6029ebc53",
+      "line_count": 4,
+      "keyword_counts": {
+        "link": 2,
+        "ctc": 4
+      },
+      "symbols": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "test/test_metrics.py",
+      "bytes": 2075,
+      "sha256": "a7a1805deee070f9c57760777f6568e6caff3c62494f084a6ca4c2ebba7b6acd",
+      "line_count": 73,
+      "keyword_counts": {
+        "ctc": 1,
+        "evaluate": 8
+      },
+      "symbols": [
+        "test_metric_det",
+        "test_metric_seg",
+        "test_metric_tra",
+        "test_metric_ct",
+        "test_metric_tf",
+        "test_metric_bc",
+        "test_metric_cca"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "test/test_validate.py",
+      "bytes": 223,
+      "sha256": "70aa0786c623a072a10e98cd5ff8f264702b0025bfe239655ffc9ad02cbce6ab",
+      "line_count": 8,
+      "keyword_counts": {
+        "ctc": 1
+      },
+      "symbols": [
+        "test_validate_sequence"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "test/utils.py",
+      "bytes": 385,
+      "sha256": "53983be46b79bfeb14d8bd079bea0ecd289495d7add9763367204260d589769c",
+      "line_count": 18,
+      "keyword_counts": {
+        "ctc": 3,
+        "train": 3
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "third_party/LICENSE",
+      "bytes": 1300,
+      "sha256": "972ac8b2b869aa994719861a48c36bc3169f8f7c4919dc8d377da83c9c611565",
+      "line_count": 25,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "license"
+    }
+  ],
+  "target_paths_missing": [],
+  "read_errors": [],
+  "checkout_exit": 0,
+  "checkout_stderr_excerpt": "",
+  "checkout_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "license": "BSD-family",
+  "categories_observed": [
+    "data_loader",
+    "dependency",
+    "evaluation",
+    "license",
+    "readme",
+    "relevant_source",
+    "validation"
+  ],
+  "categories_not_present_in_selected_files": [
+    "data_io",
+    "division",
+    "inference",
+    "model",
+    "optimization",
+    "postprocessing",
+    "submission_conversion",
+    "temporal_linking",
+    "training"
+  ],
+  "category_coverage": {
+    "data_io": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "data_loader": {
+      "status": "READ",
+      "paths": [
+        "test/prepare_test_data.sh"
+      ]
+    },
+    "dependency": {
+      "status": "READ",
+      "paths": [
+        "requirements.txt",
+        "setup.py"
+      ]
+    },
+    "division": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "evaluation": {
+      "status": "READ",
+      "paths": [
+        "ctc_metrics/scripts/evaluate.py",
+        "ctc_metrics/metrics/technical/det.py",
+        "ctc_metrics/metrics/technical/seg.py",
+        "ctc_metrics/metrics/technical/tra.py",
+        "ctc_metrics/metrics/technical/lnk.py",
+        "ctc_metrics/metrics/hota/hota.py",
+        "ctc_metrics/metrics/hota/chota.py",
+        "ctc_metrics/__init__.py",
+        "ctc_metrics/metrics/__init__.py",
+        "ctc_metrics/metrics/biological/__init__.py",
+        "ctc_metrics/metrics/biological/bc.py",
+        "ctc_metrics/metrics/biological/bio.py",
+        "ctc_metrics/metrics/biological/cca.py",
+        "ctc_metrics/metrics/biological/ct.py",
+        "ctc_metrics/metrics/biological/op_clb.py",
+        "ctc_metrics/metrics/biological/tf.py",
+        "ctc_metrics/metrics/clearmot/__init__.py",
+        "ctc_metrics/metrics/clearmot/mota.py",
+        "ctc_metrics/metrics/hota/__init__.py",
+        "ctc_metrics/metrics/identity_metrics/__init__.py",
+        "ctc_metrics/metrics/identity_metrics/idf1.py",
+        "ctc_metrics/metrics/others/__init__.py",
+        "ctc_metrics/metrics/others/faf.py",
+        "ctc_metrics/metrics/others/mt_ml.py",
+        "ctc_metrics/metrics/technical/__init__.py",
+        "ctc_metrics/metrics/technical/op_csb.py",
+        "ctc_metrics/metrics/technical/op_ctb.py",
+        "ctc_metrics/metrics/validation/__init__.py",
+        "ctc_metrics/scripts/__init__.py",
+        "ctc_metrics/scripts/noise.py",
+        "ctc_metrics/scripts/validate.py",
+        "ctc_metrics/scripts/visualize.py",
+        "ctc_metrics/utils/__init__.py",
+        "ctc_metrics/utils/filesystem.py",
+        "ctc_metrics/utils/handle_results.py",
+        "ctc_metrics/utils/representations.py",
+        "py-ctcmetrics.toml",
+        "test/test_metrics.py"
+      ]
+    },
+    "inference": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "license": {
+      "status": "READ",
+      "paths": [
+        "LICENSE.txt",
+        "third_party/LICENSE"
+      ]
+    },
+    "model": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "optimization": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "postprocessing": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "readme": {
+      "status": "READ",
+      "paths": [
+        "README.md",
+        "pixi_env/README.md"
+      ]
+    },
+    "submission_conversion": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "temporal_linking": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "training": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    }
+  },
+  "selection_policy": {
+    "included": "all human-readable code, notebooks, documentation, dependency/runtime configuration, schemas, tests, and license/notices at the fixed commit",
+    "excluded": "repository-hosting automation, generated/cache directories, and binary/non-source artefacts",
+    "excluded_path_count": 19,
+    "excluded_paths": [
+      {
+        "path": ".github/workflows/publish.yml",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".github/workflows/pylint.yml",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".github/workflows/python-package.yml",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".gitignore",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": ".pylintrc",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "assets/visualization.jpg",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pixi_env/.gitignore",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "third_party/Evaluation software.pdf",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "third_party/Linux/DETMeasure",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "third_party/Linux/SEGMeasure",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "third_party/Linux/TRAMeasure",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "third_party/Win/DETMeasure.exe",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "third_party/Win/SEGMeasure.exe",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "third_party/Win/TRAMeasure.exe",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "third_party/Win/cbia.lib.i3dalgo.dyn.rel.x64.15.dll",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "third_party/Win/cbia.lib.i3dcore.dyn.rel.x64.15.dll",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "third_party/Win/cbia.lib.tiff.dyn.rel.x64.15.dll",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "third_party/Win/cbia.lib.z.dyn.rel.x64.15.dll",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "third_party/Win/wxbase311u_vc_x64_cbia.dll",
+        "reason": "non_text_or_non_source_extension"
+      }
+    ]
+  },
+  "scope_note": "Full bytes were read for every listed relevant-source path; only hashes, structure, notebook-cell hashes, and symbol/keyword summaries are persisted. The complete tree and per-path exclusions preserve the coverage boundary."
+}

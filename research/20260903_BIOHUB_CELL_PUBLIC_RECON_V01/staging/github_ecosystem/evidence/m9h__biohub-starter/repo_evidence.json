@@ -1,0 +1,760 @@
+{
+  "schema_version": "1.0",
+  "source_id": "GH-DEEP-m9h__biohub-starter",
+  "repo": "m9h/biohub-starter",
+  "url": "https://github.com/m9h/biohub-starter",
+  "relation_to_competition": "competition_participant_validation_starter",
+  "access_time_utc": "2026-09-03T08:47:13.769878+00:00",
+  "fixed_branch": "master",
+  "fixed_commit_sha": "c3cdf6bcace5708806efbdac61dcdf6691a234bf",
+  "latest_commit_date": "2026-07-25T17:06:06-07:00",
+  "tree_file_count": 20,
+  "tree_bytes": 1563,
+  "tree_sha256": "f196862c095e3e4d2ce4383362c496763614ada617de118aa6bf41137895d737",
+  "tree_evidence_path": "staging/github_ecosystem/evidence/m9h__biohub-starter/tree.txt",
+  "read_status": "FULL_RELEVANT_REPO_SOURCE_READ",
+  "files_requested": 19,
+  "relevant_source_paths_selected": 19,
+  "relevant_source_selection_coverage": 1.0,
+  "files_actually_read_count": 19,
+  "files_actually_read": [
+    {
+      "path": "README.md",
+      "bytes": 10334,
+      "sha256": "2ae6e8761e7f2bdf350dbeb1092eb529bb3d7018e1be469b32d09b3705b41001",
+      "line_count": 216,
+      "keyword_counts": {
+        "detect": 4,
+        "segment": 1,
+        "track": 17,
+        "link": 4,
+        "division": 15,
+        "lineage": 3,
+        "hungarian": 1,
+        "flow": 3,
+        "transformer": 2,
+        "unet": 2,
+        "geff": 1,
+        "zarr": 1,
+        "jaccard": 6,
+        "submission": 1,
+        "train": 10,
+        "infer": 1,
+        "predict": 3,
+        "evaluate": 2,
+        "ilp": 4
+      },
+      "symbols": [],
+      "headings": [
+        "# Learning Cell Tracking in Development — a Starter Kit",
+        "### What you'll actually learn by doing this",
+        "## Three things the data will teach you first",
+        "## Quickstart",
+        "# 1. Baseline repo + environment  (aarch64 and x86 both fine; uv resolves CUDA)",
+        "# 2. Data (~81 GB zip -> ~87 GB extracted; needs ~170 GB free)",
+        "#    Requires accepting the competition rules in-browser first.",
+        "# 3. The weights everyone actually uses (dataset says \"50ep\"; it is really 402ep)",
+        "# 4. Point the repo at the data",
+        "# 5. Sanity check — should be 122 passed",
+        "### Build honest validation (this repo's main contribution)",
+        "# -> embryo_splits.json : fold 0 holds out 44b6, fold 1 holds out 6bba",
+        "### Get a real score",
+        "### Understand the data",
+        "## Gotchas that cost us time",
+        "## Where the open questions are",
+        "## How this was made (and how to read it)"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "FINDINGS.md",
+      "bytes": 36011,
+      "sha256": "2f7f424a6835282940115e8bc04ced3abb45f600c1c3f61fa68f53275a0d256c",
+      "line_count": 690,
+      "keyword_counts": {
+        "detect": 27,
+        "segment": 6,
+        "track": 58,
+        "link": 23,
+        "division": 115,
+        "lineage": 7,
+        "assign": 4,
+        "hungarian": 4,
+        "transformer": 1,
+        "geff": 2,
+        "zarr": 3,
+        "jaccard": 23,
+        "csv": 1,
+        "sparse": 10,
+        "train": 41,
+        "predict": 21,
+        "evaluate": 2,
+        "ilp": 19
+      },
+      "symbols": [],
+      "headings": [
+        "# Measured Findings",
+        "## Dataset structure",
+        "## Baseline performance (held-out embryo `44b6`, 20 videos, det-threshold 0.96875)",
+        "## The one big opportunity: division false positives",
+        "### A division TP needs a 5-generation window",
+        "## Negative results (things that do NOT work -- save yourself the time)",
+        "## Metric properties worth knowing",
+        "### The metric-hack situation",
+        "## What the ~0.90 public recipe actually is",
+        "## Measurement harness (A0.0) — validated 2026-07-19",
+        "## A0.2 — `--use-ilp` is worth +0.042 (measured 2026-07-20)",
+        "### Runtime cost",
+        "### The ILP division weight is a dead end (swept 2026-07-20)",
+        "## Phase 1 — Post-processing (fold 0, full 71-video held-out `44b6`)",
+        "### A1.1 — Minimum track-length filter — SHIPS (+0.0126)",
+        "### A1.4 — Motion relink (constant-velocity, gated Hungarian) — SHIPS (+0.0074)",
+        "### Fold-1 confirmation — the Phase 1 chain generalizes across embryos",
+        "### A1.2 — ILP birth/death asymmetry — DEAD END on top of the chain",
+        "## Phase 2 — Divisions",
+        "### A2.0 diagnostic (blocking) — missed divisions are a LINKING problem, not segmentation",
+        "### A2.1/A2.2 — geometric division recovery — DEAD END (points to learned evidence)",
+        "### A2.3 — learned candidate edge-prob is NOT division-discriminative",
+        "### A2.4 — multi-feature division classifier — FAILS the kill criterion",
+        "## Track B (research) — unbalanced OT for division detection",
+        "### B3.1 — OT signal does NOT survive detector output — KILL criterion met",
+        "## THE METRIC REFRAME — sparsification is the real lever (+0.07 ceiling)",
+        "### Selector signal — GT cells are in LONGER tracks (the one honest handle)",
+        "### Node/track selection FAILS — sparsification is unreachable honestly",
+        "### CORRECTION — the \"0.97 is an exploit\" conclusion was overconfident",
+        "### RESOLVED — external data & pretrained models ARE allowed (rules Section 2.6)",
+        "## Track B' — dense external supervision located (Zebrahub ZSNS001)",
+        "### Dense supervision confirms: divisions need APPEARANCE, not geometry",
+        "### Appearance PoC (static, level-1) — weak: AUC 0.556",
+        "### Temporal appearance PoC — AUC 0.487 — and the UNIFIED root cause: tissue density"
+      ],
+      "category": "experiment_report"
+    },
+    {
+      "path": "CV_LB_LOG.md",
+      "bytes": 3172,
+      "sha256": "24a4163f532b2ff2101c1ec1059a5df6af268fb53b104d422120c0db2853965b",
+      "line_count": 50,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 6,
+        "link": 1,
+        "division": 1,
+        "assign": 1,
+        "geff": 1,
+        "submission": 2,
+        "train": 2,
+        "predict": 2,
+        "ilp": 2
+      },
+      "symbols": [],
+      "headings": [
+        "# CV / LB correlation log",
+        "## Reading of the first point",
+        "## Packaging facts earned here (offline no-internet rerun)"
+      ],
+      "category": "experiment_report"
+    },
+    {
+      "path": "notebook/embryo_holdout_validation.py",
+      "bytes": 15614,
+      "sha256": "47d73463617a3742cd2c0779aa9c8a1965575884574c3bfab341754abbc1ea07",
+      "line_count": 355,
+      "keyword_counts": {
+        "detect": 2,
+        "track": 15,
+        "link": 4,
+        "division": 21,
+        "lineage": 3,
+        "assign": 1,
+        "hungarian": 1,
+        "transformer": 1,
+        "unet": 1,
+        "geff": 5,
+        "zarr": 1,
+        "jaccard": 3,
+        "submission": 2,
+        "train": 21,
+        "predict": 8,
+        "evaluate": 1,
+        "postprocess": 1,
+        "ilp": 8
+      },
+      "symbols": [
+        "build_embryo_splits"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "scripts/analyze_dataset.py",
+      "bytes": 4881,
+      "sha256": "f5c6fa586c96396c43a6e5dc0f2c29541c5d8e7955166ff2541511dafbab6fff",
+      "line_count": 124,
+      "keyword_counts": {
+        "track": 2,
+        "division": 5,
+        "geff": 12,
+        "zarr": 3,
+        "train": 3
+      },
+      "symbols": [
+        "main"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "scripts/eval_per_sample.py",
+      "bytes": 4381,
+      "sha256": "7bd469d56f42c98b9d6537b83f337cad7425641df2000a0105beb4c5449d0fba",
+      "line_count": 102,
+      "keyword_counts": {
+        "track": 3,
+        "division": 4,
+        "geff": 3,
+        "jaccard": 8,
+        "csv": 7,
+        "predict": 1,
+        "evaluate": 8
+      },
+      "symbols": [
+        "_repo_scripts_on_path",
+        "name_order",
+        "main"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "scripts/make_embryo_splits.py",
+      "bytes": 3486,
+      "sha256": "a4c27bf48636d0f50ada4b89dc7d7af99ed5b47d649f4169d015f4a15e96e30a",
+      "line_count": 100,
+      "keyword_counts": {
+        "track": 1,
+        "transformer": 1,
+        "unet": 1,
+        "geff": 4,
+        "zarr": 4,
+        "train": 11,
+        "predict": 1
+      },
+      "symbols": [
+        "sample_stems",
+        "embryo_of",
+        "build_folds",
+        "main"
+      ],
+      "category": "cv_design"
+    },
+    {
+      "path": "scripts/analyze_candidate_divisions.py",
+      "bytes": 5684,
+      "sha256": "3cbf0f24b0c3f140419455e48398be0039a85bf6a29d98df657a439646bb55dc",
+      "line_count": 147,
+      "keyword_counts": {
+        "track": 1,
+        "link": 1,
+        "division": 11,
+        "transformer": 1,
+        "geff": 5,
+        "train": 2,
+        "ilp": 1
+      },
+      "symbols": [
+        "_load",
+        "tables",
+        "by_frame",
+        "nearest",
+        "main",
+        "stats"
+      ],
+      "category": "division"
+    },
+    {
+      "path": "scripts/build_division_classifier.py",
+      "bytes": 7562,
+      "sha256": "7f676128e740276aafd189b2cc780caf2537721584ed9cf9481a109d0ea0db57",
+      "line_count": 202,
+      "keyword_counts": {
+        "track": 1,
+        "division": 6,
+        "geff": 9,
+        "train": 8,
+        "predict": 1,
+        "evaluate": 2,
+        "ilp": 1
+      },
+      "symbols": [
+        "_load",
+        "tables",
+        "by_frame",
+        "nearest",
+        "extract",
+        "load_set",
+        "main"
+      ],
+      "category": "division"
+    },
+    {
+      "path": "scripts/postprocess.py",
+      "bytes": 12122,
+      "sha256": "5db835e7b89940ec9ad9a1cd828998f35b11592779a9f20c8af35d2d5a4a7ce1",
+      "line_count": 302,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 19,
+        "link": 11,
+        "division": 18,
+        "lineage": 5,
+        "assign": 4,
+        "hungarian": 1,
+        "linear_sum_assignment": 3,
+        "transformer": 1,
+        "unet": 1,
+        "geff": 20,
+        "jaccard": 1,
+        "predict": 6,
+        "postprocess": 1,
+        "ilp": 1
+      },
+      "symbols": [
+        "_load",
+        "_UnionFind",
+        "__init__",
+        "find",
+        "union",
+        "short_component_nodes",
+        "motion_relink",
+        "recover_divisions",
+        "process_geff",
+        "main"
+      ],
+      "category": "postprocessing"
+    },
+    {
+      "path": "notebook/embryo_holdout_validation.ipynb",
+      "bytes": 20431,
+      "sha256": "75d90b9809174f86bb07fd8919d3fd77cf318b74542f4ff13f09d97e91dad224",
+      "line_count": 479,
+      "keyword_counts": {
+        "detect": 2,
+        "track": 15,
+        "link": 4,
+        "division": 21,
+        "lineage": 3,
+        "assign": 1,
+        "hungarian": 1,
+        "transformer": 1,
+        "unet": 1,
+        "geff": 5,
+        "zarr": 1,
+        "jaccard": 3,
+        "submission": 2,
+        "train": 21,
+        "predict": 8,
+        "evaluate": 1,
+        "postprocess": 1,
+        "ilp": 8
+      },
+      "notebook": {
+        "cell_count": 18,
+        "code_cell_count": 5,
+        "markdown_cell_count": 13,
+        "output_cell_count": 0,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "d70b8a73992f86b1b0efc1207b11f10ca4787d48d6e5382234fe1e753e405a77",
+          "437cb9e379e135fdb0b0068ebefeedf6e76eab0ae8ca2f28bd2b86d21c0d3bef",
+          "add1fcde019a0e7b457ba12209cb9892635c3fd8f03524b0bcdacac3b55b5dbc",
+          "f368f7bd38a12136bd2e54a9f09ea6d823d0b7682f395962cda0d655987f0389",
+          "64490b3bc96cfeb572468df3cc0e09f8491ba0b68ad3b784b7786a78642b5769"
+        ]
+      },
+      "category": "data_io"
+    },
+    {
+      "path": "notes/HISTORY_AND_IDEAS.md",
+      "bytes": 10309,
+      "sha256": "4e9d12f0c9b9ba2dac55ad48c9f7eec1d456bab4d4d7abfdf8dbcd1af388aa6d",
+      "line_count": 198,
+      "keyword_counts": {
+        "detect": 15,
+        "segment": 2,
+        "track": 24,
+        "link": 13,
+        "division": 21,
+        "lineage": 7,
+        "assign": 5,
+        "hungarian": 2,
+        "flow": 2,
+        "transformer": 2,
+        "attention": 1,
+        "geff": 5,
+        "zarr": 3,
+        "jaccard": 1,
+        "train": 2,
+        "infer": 1,
+        "predict": 2,
+        "postprocess": 2,
+        "ilp": 7
+      },
+      "symbols": [],
+      "headings": [
+        "# Where This Came From: A Short History of Cell Tracking in Development",
+        "## 1. The question: what is a lineage, and can we read it?",
+        "## 2. The enabling technology: light-sheet microscopy",
+        "## 3. The core algorithm: tracking-by-detection",
+        "## 4. Going global: tracking as combinatorial optimization (ILP)",
+        "## 5. The learning turn: letting a network do the association",
+        "## 6. How we know if any of it works: metrics and standards",
+        "## 7. The road not (yet) taken: optimal transport",
+        "## The through-line"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "notes/PAPER.md",
+      "bytes": 12375,
+      "sha256": "480bc0aaf3d18f4e49c6eb9cb0087466e114d0820ce43e118f83ce2a2276c2b9",
+      "line_count": 157,
+      "keyword_counts": {
+        "detect": 9,
+        "segment": 1,
+        "track": 17,
+        "link": 8,
+        "division": 27,
+        "lineage": 7,
+        "assign": 1,
+        "hungarian": 2,
+        "flow": 4,
+        "transformer": 2,
+        "geff": 1,
+        "jaccard": 2,
+        "submission": 1,
+        "sparse": 2,
+        "train": 14,
+        "predict": 5,
+        "evaluate": 1,
+        "prune": 1,
+        "ilp": 11
+      },
+      "symbols": [],
+      "headings": [
+        "# Empirical Benchmarking, Leakage-Free Validation, and Division Precision Bottlenecks in 3D+t Light-Sheet Cell Lineage Reconstruction",
+        "## Abstract",
+        "## 1. Introduction & Background",
+        "## 2. The Data Leakage Problem & Embryo-Disjoint Validation",
+        "### 2.1 The Two-Embryo Structure",
+        "### 2.2 Embryo-Disjoint Cross-Validation",
+        "## 3. Empirical Findings & System Evaluation",
+        "### 3.1 Detection vs. Linking Bottlenecks",
+        "### 3.2 Integer Linear Programming (ILP) Optimization",
+        "### 3.3 Post-Processing Geometry",
+        "### 3.4 Cross-Embryo Generalization (Fold-1 Confirmation)",
+        "## 4. The Division Precision Frontier",
+        "### 4.1 Precision Breakdown",
+        "### 4.2 Biological Prior Evaluation",
+        "## 5. Kaggle Rerun & Execution Constraints",
+        "## 6. Conclusion & Future Directions",
+        "## References"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "notes/READING_LIST.md",
+      "bytes": 21092,
+      "sha256": "801c5c6f5aad05e447d8370bf10f56697486088ac1d89f2c8f12624aeb8153f7",
+      "line_count": 351,
+      "keyword_counts": {
+        "detect": 7,
+        "segment": 10,
+        "track": 56,
+        "link": 11,
+        "division": 47,
+        "lineage": 13,
+        "assign": 4,
+        "hungarian": 1,
+        "flow": 8,
+        "transformer": 2,
+        "attention": 2,
+        "stardist": 3,
+        "cellpose": 1,
+        "ctc": 7,
+        "jaccard": 2,
+        "sparse": 2,
+        "train": 10,
+        "infer": 1,
+        "predict": 6,
+        "kalman": 2,
+        "ilp": 12,
+        "gurobi": 1
+      },
+      "symbols": [],
+      "headings": [
+        "# Biohub Cell Tracking — Essential Reading & Actionable Priors",
+        "## THE FIVE MUST-READS",
+        "## SECOND TIER",
+        "## DETECTION (deprioritize — metric only needs centroids within 7um)",
+        "## MEASURED FACTS FROM OUR DATA (2026-07-19)",
+        "## BIOLOGICAL PRIORS — TESTED",
+        "## RANKED DIVISION FEATURES (from literature)",
+        "## NOT VERIFIED / DEAD LEADS",
+        "# TOOL/METHOD SURVEY (added 2026-07-19)",
+        "## What actually wins on 3D+t embryos (Cell Tracking Challenge)",
+        "## The ILP substrate: motile",
+        "### linajea division constraints (the formulation to copy)",
+        "## TGMM's mitosis detector — the only trained one in the field",
+        "## Maintenance status (2026-07)",
+        "## Division handling by tool (how each represents one-to-two)",
+        "# MATHEMATICAL TECHNIQUES (added 2026-07-19)",
+        "## The organizing fact",
+        "## LOAD-BEARING (2020-2026)",
+        "## DISPLACED / WRONG",
+        "## ASCENDANT",
+        "## ABSENT FROM THE FIELD == OPEN",
+        "## PHD filters / random finite sets -- mine, don't adopt",
+        "## Metric learning -- the transitivity break",
+        "## Metrics",
+        "## DATA CAVEATS",
+        "## TALKS / VIDEO (verified URLs)"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "notes/SLIDES.md",
+      "bytes": 7202,
+      "sha256": "32c39c0b9eff3da5e57e9a547dd0ba291dc67d110f33e406c6eb9af47b94c2c7",
+      "line_count": 166,
+      "keyword_counts": {
+        "detect": 5,
+        "track": 8,
+        "link": 6,
+        "division": 16,
+        "lineage": 5,
+        "assign": 1,
+        "hungarian": 1,
+        "flow": 2,
+        "geff": 2,
+        "jaccard": 4,
+        "train": 6,
+        "predict": 3,
+        "evaluate": 1,
+        "ilp": 8
+      },
+      "symbols": [],
+      "headings": [
+        "# Learning Cell Tracking in Development",
+        "### An Empirical Evaluation & Starter Kit for 3D+t Lineage Reconstruction",
+        "## 1. The Core Scientific & Computational Problem",
+        "## 2. Why Most Validation Pipelines Fail (The Leakage Trap)",
+        "## 3. Ground Truth & Metric Reality",
+        "## 4. Key Benchmark Results & Improvements",
+        "## 5. Correction: The \"50ep\" Support Pack Myth",
+        "## 6. The Division Precision Bottleneck (The +0.10 Opportunity)",
+        "## 7. Negative Results (Save Your Time!)",
+        "## 8. Actionable Biological & Feature Priors",
+        "## 9. Kaggle Code Competition Gotchas & Rerun Specs",
+        "## 10. Summary & Recommended Action Plan"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "scripts/compare_configs.py",
+      "bytes": 5092,
+      "sha256": "6b4eef0b80dce0fdbb0c13f0d5cbe8d2f6795d3b83be5e30d695ee2911608848",
+      "line_count": 130,
+      "keyword_counts": {
+        "track": 2,
+        "division": 8,
+        "jaccard": 15,
+        "csv": 9
+      },
+      "symbols": [
+        "load",
+        "_f",
+        "statistic",
+        "main"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "scripts/diagnose_divisions.py",
+      "bytes": 6789,
+      "sha256": "551dc89d92e4b3f4d296afb46b79b5b3c912d53376d1408318d0999c149b504c",
+      "line_count": 170,
+      "keyword_counts": {
+        "detect": 16,
+        "segment": 5,
+        "track": 3,
+        "link": 15,
+        "division": 20,
+        "geff": 6,
+        "predict": 7
+      },
+      "symbols": [
+        "_load",
+        "graph_tables",
+        "by_frame",
+        "nearest",
+        "divisions",
+        "diagnose",
+        "main"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "scripts/ot_division_probe.py",
+      "bytes": 5272,
+      "sha256": "dee014615c6e2775cb644571990d22346e95c3901fb3bcb7b6b4dcabce79b370",
+      "line_count": 137,
+      "keyword_counts": {
+        "detect": 2,
+        "track": 1,
+        "division": 4,
+        "geff": 10
+      },
+      "symbols": [
+        "unbalanced_sinkhorn",
+        "_lse",
+        "collect_frame_pairs",
+        "main"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "scripts/ot_probe_detector.py",
+      "bytes": 5855,
+      "sha256": "c1cf4672b3955a43933ce573acadfc4d734b46072472c3f1a0c0dcb3b3b9e7be",
+      "line_count": 143,
+      "keyword_counts": {
+        "detect": 11,
+        "track": 2,
+        "division": 3,
+        "geff": 9,
+        "sparse": 1,
+        "predict": 1
+      },
+      "symbols": [
+        "_lse",
+        "unbalanced_sinkhorn",
+        "_load",
+        "frames_and_divs",
+        "cohens_d",
+        "main"
+      ],
+      "category": "relevant_source"
+    }
+  ],
+  "target_paths_missing": [],
+  "read_errors": [],
+  "checkout_exit": 0,
+  "checkout_stderr_excerpt": "",
+  "checkout_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "license": "NO_LICENSE_FILE_OBSERVED",
+  "categories_observed": [
+    "cv_design",
+    "data_io",
+    "data_loader",
+    "division",
+    "evaluation",
+    "experiment_report",
+    "postprocessing",
+    "readme",
+    "relevant_source"
+  ],
+  "categories_not_present_in_selected_files": [
+    "dependency",
+    "inference",
+    "license",
+    "model",
+    "optimization",
+    "submission_conversion",
+    "temporal_linking",
+    "training"
+  ],
+  "category_coverage": {
+    "data_io": {
+      "status": "READ",
+      "paths": [
+        "notebook/embryo_holdout_validation.ipynb",
+        "scripts/diagnose_divisions.py",
+        "scripts/ot_division_probe.py"
+      ]
+    },
+    "data_loader": {
+      "status": "READ",
+      "paths": [
+        "scripts/analyze_dataset.py"
+      ]
+    },
+    "dependency": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "division": {
+      "status": "READ",
+      "paths": [
+        "scripts/analyze_candidate_divisions.py",
+        "scripts/build_division_classifier.py"
+      ]
+    },
+    "evaluation": {
+      "status": "READ",
+      "paths": [
+        "notebook/embryo_holdout_validation.py",
+        "scripts/eval_per_sample.py"
+      ]
+    },
+    "inference": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "license": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "model": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "optimization": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "postprocessing": {
+      "status": "READ",
+      "paths": [
+        "scripts/postprocess.py"
+      ]
+    },
+    "readme": {
+      "status": "READ",
+      "paths": [
+        "README.md"
+      ]
+    },
+    "submission_conversion": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "temporal_linking": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "training": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    }
+  },
+  "selection_policy": {
+    "included": "all human-readable code, notebooks, documentation, dependency/runtime configuration, schemas, tests, and license/notices at the fixed commit",
+    "excluded": "repository-hosting automation, generated/cache directories, and binary/non-source artefacts",
+    "excluded_path_count": 1,
+    "excluded_paths": [
+      {
+        "path": ".gitignore",
+        "reason": "non_text_or_non_source_extension"
+      }
+    ]
+  },
+  "scope_note": "Full bytes were read for every listed relevant-source path; only hashes, structure, notebook-cell hashes, and symbol/keyword summaries are persisted. The complete tree and per-path exclusions preserve the coverage boundary."
+}

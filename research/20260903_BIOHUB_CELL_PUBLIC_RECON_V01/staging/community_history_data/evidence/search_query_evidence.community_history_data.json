@@ -1,0 +1,79 @@
+{
+  "reddit_site_queries": [
+    [
+      "site:reddit.com \"Biohub - Cell Tracking During Development\"",
+      0,
+      "no direct hit"
+    ],
+    [
+      "site:reddit.com \"biohub-cell-tracking-during-development\"",
+      0,
+      "no direct hit"
+    ],
+    [
+      "site:reddit.com \"Biohub cell tracking Kaggle\"",
+      0,
+      "quoted search no direct hit"
+    ],
+    [
+      "site:reddit.com \"zebrafish tracking Kaggle\"",
+      1,
+      "one general fish 3D result"
+    ],
+    [
+      "site:reddit.com \"3D microscopy Kaggle\"",
+      5,
+      "at least five general results"
+    ],
+    [
+      "site:reddit.com \"GEFF cell tracking\"",
+      0,
+      "no direct hit"
+    ],
+    [
+      "site:reddit.com \"Ultrack Kaggle\"",
+      0,
+      "no direct hit; mixed noisy returns not counted"
+    ],
+    [
+      "site:reddit.com \"cell lineage competition\"",
+      1,
+      "single-cell dataset request, not image tracking"
+    ],
+    [
+      "site:reddit.com Biohub cell tracking Kaggle",
+      1,
+      "supplemental unquoted search; at least one direct current-competition hit"
+    ]
+  ],
+  "scientific_queries": [
+    "Cell Tracking Challenge evaluation annotations history",
+    "Zebrahub lineage light-sheet atlas",
+    "Ultrack documentation",
+    "Trackastra transformer cell tracking",
+    "GEFF specification",
+    "tracksdata tracking graph",
+    "ELEPHANT 3D lineage image.sc",
+    "Temporal Affinity Fields cell tracking",
+    "Biohub Royer organismal architecture"
+  ],
+  "similar_kaggle_queries": [
+    "cell tracking",
+    "cell detection",
+    "cell segmentation",
+    "nuclei segmentation",
+    "microscopy",
+    "biomedical image segmentation",
+    "3D microscopy",
+    "time-lapse microscopy",
+    "object tracking",
+    "multi-object tracking",
+    "lineage",
+    "instance segmentation",
+    "zebrafish",
+    "organoid",
+    "embryo",
+    "fluorescent nuclei"
+  ],
+  "method": "Queries are recorded as executed; result totals are not inferred when the engine did not expose them."
+}

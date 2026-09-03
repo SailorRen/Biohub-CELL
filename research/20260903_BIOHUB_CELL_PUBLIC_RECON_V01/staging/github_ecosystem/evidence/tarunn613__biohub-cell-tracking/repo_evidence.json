@@ -1,0 +1,987 @@
+{
+  "schema_version": "1.0",
+  "source_id": "GH-DEEP-tarunn613__biohub-cell-tracking",
+  "repo": "tarunn613/biohub-cell-tracking",
+  "url": "https://github.com/tarunn613/biohub-cell-tracking",
+  "relation_to_competition": "competition_participant_pipeline",
+  "access_time_utc": "2026-09-03T08:47:13.226003+00:00",
+  "fixed_branch": "master",
+  "fixed_commit_sha": "6bbcb87747aa65c531da99f21cb773f0a0fef1cc",
+  "latest_commit_date": "2026-07-29T02:02:00+05:30",
+  "tree_file_count": 58,
+  "tree_bytes": 5507,
+  "tree_sha256": "a2a7ba5897c3ffcb7f424e301f5d5a0cb3f37495d96f6a8eefecd268dcc1b577",
+  "tree_evidence_path": "staging/github_ecosystem/evidence/tarunn613__biohub-cell-tracking/tree.txt",
+  "read_status": "FULL_RELEVANT_REPO_SOURCE_READ",
+  "files_requested": 42,
+  "relevant_source_paths_selected": 42,
+  "relevant_source_selection_coverage": 1.0,
+  "files_actually_read_count": 42,
+  "files_actually_read": [
+    {
+      "path": "README.md",
+      "bytes": 15608,
+      "sha256": "238b5bba8402648901fef412164414a73b56cc160667bf14cdd1c82b4899c44d",
+      "line_count": 301,
+      "keyword_counts": {
+        "detect": 23,
+        "track": 34,
+        "link": 16,
+        "division": 15,
+        "lineage": 3,
+        "hungarian": 2,
+        "flow": 1,
+        "transformer": 1,
+        "cellpose": 21,
+        "geff": 8,
+        "zarr": 5,
+        "jaccard": 6,
+        "submission": 19,
+        "csv": 11,
+        "sparse": 2,
+        "train": 6,
+        "infer": 1,
+        "predict": 3,
+        "prune": 2,
+        "ilp": 6
+      },
+      "symbols": [],
+      "headings": [
+        "# Biohub Cell Tracking During Development",
+        "## Result",
+        "## How it works",
+        "## System requirements",
+        "### Hardware",
+        "### Software",
+        "### Storage",
+        "## Time constraints",
+        "### Local (Apple M5 / MPS)",
+        "### Kaggle rerun budget — the binding constraint",
+        "## Quickstart",
+        "### Key environment variables",
+        "## Repository layout",
+        "## Branches",
+        "## What did not work",
+        "## Documentation",
+        "## References"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 1330,
+      "sha256": "7e16fb76cc8ff6fe2b66de49cf290262fd09fe246062913c85c4a35dfc379566",
+      "line_count": 37,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 1,
+        "link": 1,
+        "cellpose": 5,
+        "zarr": 3,
+        "ilp": 3
+      },
+      "symbols": [],
+      "category": "dependency"
+    },
+    {
+      "path": "docs/metric.md",
+      "bytes": 4347,
+      "sha256": "4176293e940528cf45554ad658f2c91bf54767903366c45e8047da5a473b2efc",
+      "line_count": 105,
+      "keyword_counts": {
+        "detect": 10,
+        "segment": 2,
+        "track": 2,
+        "link": 3,
+        "division": 6,
+        "lineage": 1,
+        "assign": 1,
+        "jaccard": 8,
+        "submission": 1,
+        "sparse": 2,
+        "predict": 9
+      },
+      "symbols": [],
+      "headings": [
+        "# The evaluation metric",
+        "## 1. Node matching",
+        "## 2. Edge Jaccard (the dominant term)",
+        "### The over-prediction penalty is mild",
+        "### Aggregation",
+        "## 3. Division Jaccard",
+        "## 4. What this means for tuning",
+        "### Priorities, in order"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "docs/results.md",
+      "bytes": 7119,
+      "sha256": "6eae0d97c8680bdad8c9fc22fff22f1108c8e2c60e3c1bd63af8f627995898b9",
+      "line_count": 151,
+      "keyword_counts": {
+        "detect": 26,
+        "segment": 3,
+        "track": 6,
+        "link": 13,
+        "division": 7,
+        "lineage": 1,
+        "hungarian": 3,
+        "cellpose": 9,
+        "jaccard": 3,
+        "submission": 3,
+        "sparse": 1,
+        "train": 4,
+        "predict": 1,
+        "evaluate": 1,
+        "prune": 1,
+        "ilp": 4
+      },
+      "symbols": [],
+      "headings": [
+        "# Results",
+        "## 1. Score progression",
+        "### Why pruning matters more than it sounds",
+        "### Detection quality",
+        "## 2. Per-dataset scores on the submission datasets",
+        "## 3. Leaderboard history",
+        "## 4. Comparison of every linker tried",
+        "## 5. The datasets are heterogeneous",
+        "### Where the remaining edge errors come from"
+      ],
+      "category": "experiment_report"
+    },
+    {
+      "path": "src/baseline.py",
+      "bytes": 6744,
+      "sha256": "cbe77582eb8d77b89b31c86b7fef5a24d6bed15e03e05f83c28132765f115546",
+      "line_count": 163,
+      "keyword_counts": {
+        "detect": 17,
+        "track": 9,
+        "link": 7,
+        "assign": 3,
+        "hungarian": 1,
+        "linear_sum_assignment": 3,
+        "cellpose": 4,
+        "geff": 2,
+        "zarr": 11,
+        "submission": 3,
+        "csv": 5,
+        "train": 2
+      },
+      "symbols": [
+        "resolve",
+        "cellpose_dir",
+        "detect_cc",
+        "detect_peaks",
+        "detect_volume",
+        "track",
+        "track_dataset",
+        "rows_for",
+        "main"
+      ],
+      "category": "pipeline"
+    },
+    {
+      "path": "src/detect_cellpose.py",
+      "bytes": 2559,
+      "sha256": "4a69dbe9e210e56785e68e5f5c928dd2364fdcb3922e92cf28041d7ab29271da",
+      "line_count": 59,
+      "keyword_counts": {
+        "detect": 4,
+        "track": 1,
+        "cellpose": 8,
+        "zarr": 2
+      },
+      "symbols": [],
+      "category": "detection"
+    },
+    {
+      "path": "src/track_lap.py",
+      "bytes": 1523,
+      "sha256": "026eabf0c189d6bf5394cdda463e525998126fccac713b51d21472947b019f6e",
+      "line_count": 36,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 7,
+        "link": 2,
+        "hungarian": 2,
+        "cellpose": 4,
+        "submission": 3,
+        "csv": 4
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/track_motile.py",
+      "bytes": 5116,
+      "sha256": "c7e521fc55acea0934d54f01f1f5e910461f175e18a167d032bb5ef037830f8b",
+      "line_count": 109,
+      "keyword_counts": {
+        "detect": 3,
+        "track": 5,
+        "link": 2,
+        "division": 4,
+        "lineage": 1,
+        "cellpose": 4,
+        "geff": 2,
+        "submission": 2,
+        "csv": 4,
+        "train": 4,
+        "prune": 1,
+        "ilp": 2
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/score.py",
+      "bytes": 6060,
+      "sha256": "35c80195c5677777813fb8b8480fdd356887aae6ad8663ec3c57e46222fd2049",
+      "line_count": 153,
+      "keyword_counts": {
+        "detect": 3,
+        "track": 2,
+        "link": 2,
+        "division": 3,
+        "assign": 3,
+        "linear_sum_assignment": 2,
+        "geff": 4,
+        "zarr": 2,
+        "jaccard": 4,
+        "submission": 2,
+        "csv": 1,
+        "train": 3,
+        "predict": 6
+      },
+      "symbols": [
+        "load_geff",
+        "_by_time",
+        "match_nodes",
+        "score",
+        "jac",
+        "print_row",
+        "main"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "src/assemble_submission.py",
+      "bytes": 3268,
+      "sha256": "0e06ee0962e3dfae5d5e623e069a24f0d4d4df1ef47457fb1d0cd7a28744507a",
+      "line_count": 66,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 3,
+        "cellpose": 2,
+        "submission": 6,
+        "csv": 10
+      },
+      "symbols": [],
+      "category": "submission_conversion"
+    },
+    {
+      "path": "data/README.md",
+      "bytes": 1940,
+      "sha256": "759b7fc7cbd7b804a9b7bcb321f2fcbe78e55f3c484686f0a4f2be641a1c06a5",
+      "line_count": 37,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 3,
+        "lineage": 1,
+        "cellpose": 2,
+        "geff": 2,
+        "zarr": 4,
+        "submission": 1,
+        "csv": 1,
+        "train": 4
+      },
+      "symbols": [],
+      "headings": [
+        "# `data/` — dataset store (not tracked in git)",
+        "## Expected layout",
+        "## Notes"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "docs/competition.md",
+      "bytes": 7007,
+      "sha256": "b8df1d5d2cfef303acfb0a79f78de85dc5ecfa8281953e37b5fb1b87e0bba6f1",
+      "line_count": 168,
+      "keyword_counts": {
+        "detect": 6,
+        "track": 3,
+        "link": 3,
+        "division": 3,
+        "lineage": 4,
+        "stardist": 1,
+        "cellpose": 1,
+        "geff": 6,
+        "zarr": 6,
+        "submission": 11,
+        "csv": 6,
+        "sparse": 1,
+        "train": 10,
+        "predict": 2,
+        "evaluate": 1
+      },
+      "symbols": [
+        "datasets"
+      ],
+      "headings": [
+        "# The competition and the data",
+        "## 1. The task",
+        "## 2. Image data",
+        "### Voxel scale and anisotropy — the thing that bites",
+        "## 3. Splits",
+        "### Test ids also appear in train",
+        "## 4. Ground truth: GEFF",
+        "### Ground truth is SPARSE — the single most important data fact",
+        "## 5. Submission format",
+        "## 6. Submission mechanics — it is a rerun competition"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/experiments.md",
+      "bytes": 11768,
+      "sha256": "bb7d6c91d3441b87ceb7d0dbaf9c320580050c09414229ceb0fe7ba9fad3fb00",
+      "line_count": 231,
+      "keyword_counts": {
+        "detect": 16,
+        "segment": 1,
+        "track": 19,
+        "link": 8,
+        "division": 21,
+        "lineage": 2,
+        "transformer": 1,
+        "cellpose": 17,
+        "geff": 1,
+        "ctc": 1,
+        "jaccard": 3,
+        "submission": 5,
+        "csv": 3,
+        "sparse": 1,
+        "train": 12,
+        "infer": 4,
+        "predict": 2,
+        "evaluate": 1,
+        "ilp": 3
+      },
+      "symbols": [],
+      "headings": [
+        "# Experiments",
+        "## Why the best pipeline is not the submitted pipeline",
+        "## `dog-peaks-submission` — the pipeline that shipped",
+        "## `experiments/cotracker` — point tracking as a motion prior",
+        "## `experiments/learned-edge` — a learned edge classifier",
+        "## `experiments/trackastra` — a learned transformer linker",
+        "## Divisions",
+        "### Geometric divisions fail — proven, not assumed",
+        "### The signal is temporal",
+        "### `experiments/division-cnn` — a 3D CNN on 3-frame crops",
+        "## Kaggle submission mechanics"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "reference/file_manifest.csv",
+      "bytes": 1859371,
+      "sha256": "b36c100675e4b33dd7919f6aa61619f80034202c2a008f8105c96f4892a2b62d",
+      "line_count": 24887,
+      "keyword_counts": {
+        "geff": 4179,
+        "zarr": 24097,
+        "train": 24477
+      },
+      "symbols": [],
+      "category": "submission_conversion"
+    },
+    {
+      "path": "reference/sample_submission.csv",
+      "bytes": 890,
+      "sha256": "263dec32a126192f0ce4d5443b7432940fbeedf0d7ae4130156bf83657defc40",
+      "line_count": 22,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "reference/zarr_meta/array0_meta/zarr.json",
+      "bytes": 760,
+      "sha256": "73e3ff105fe0c50983cff97a50bfa95f8c0da16e1cb5adb56968d1cb7e1c41b0",
+      "line_count": 49,
+      "keyword_counts": {
+        "transformer": 1,
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "reference/zarr_meta/geff_meta/train/44b6_0113de3b.geff/edges/ids/zarr.json",
+      "bytes": 634,
+      "sha256": "2349586432c3cf7e57f4b3aa69eb7ec37e94c528cbe1a505f7dcea3dac9653c0",
+      "line_count": 42,
+      "keyword_counts": {
+        "transformer": 1,
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "training"
+    },
+    {
+      "path": "reference/zarr_meta/geff_meta/train/44b6_0113de3b.geff/edges/props/zarr.json",
+      "bytes": 99,
+      "sha256": "b2aafe033afdbdd48a21781b27e1c90554817d19d1bd973137574d6e8cd0f711",
+      "line_count": 6,
+      "keyword_counts": {
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "training"
+    },
+    {
+      "path": "reference/zarr_meta/geff_meta/train/44b6_0113de3b.geff/edges/zarr.json",
+      "bytes": 99,
+      "sha256": "b2aafe033afdbdd48a21781b27e1c90554817d19d1bd973137574d6e8cd0f711",
+      "line_count": 6,
+      "keyword_counts": {
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "training"
+    },
+    {
+      "path": "reference/zarr_meta/geff_meta/train/44b6_0113de3b.geff/nodes/ids/zarr.json",
+      "bytes": 616,
+      "sha256": "59b49b7e2e0624d3133e0d35124e273c8ba32cd51133a11870e2a5dfb0c944b0",
+      "line_count": 40,
+      "keyword_counts": {
+        "transformer": 1,
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "training"
+    },
+    {
+      "path": "reference/zarr_meta/geff_meta/train/44b6_0113de3b.geff/nodes/props/zarr.json",
+      "bytes": 99,
+      "sha256": "b2aafe033afdbdd48a21781b27e1c90554817d19d1bd973137574d6e8cd0f711",
+      "line_count": 6,
+      "keyword_counts": {
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "training"
+    },
+    {
+      "path": "reference/zarr_meta/geff_meta/train/44b6_0113de3b.geff/nodes/zarr.json",
+      "bytes": 99,
+      "sha256": "b2aafe033afdbdd48a21781b27e1c90554817d19d1bd973137574d6e8cd0f711",
+      "line_count": 6,
+      "keyword_counts": {
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "training"
+    },
+    {
+      "path": "reference/zarr_meta/geff_meta/train/44b6_0113de3b.geff/zarr.json",
+      "bytes": 2102,
+      "sha256": "881fa7ecfaeeea75f170d28de6f058f616ba3104d87c5b80d655d842448a422b",
+      "line_count": 95,
+      "keyword_counts": {
+        "track": 1,
+        "geff": 2,
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "training"
+    },
+    {
+      "path": "reference/zarr_meta/rel/test/44b6_0113de3b/0/zarr.json",
+      "bytes": 760,
+      "sha256": "73e3ff105fe0c50983cff97a50bfa95f8c0da16e1cb5adb56968d1cb7e1c41b0",
+      "line_count": 49,
+      "keyword_counts": {
+        "transformer": 1,
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "reference/zarr_meta/rel/test/6bba_05b6850b/0/zarr.json",
+      "bytes": 760,
+      "sha256": "73e3ff105fe0c50983cff97a50bfa95f8c0da16e1cb5adb56968d1cb7e1c41b0",
+      "line_count": 49,
+      "keyword_counts": {
+        "transformer": 1,
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "reference/zarr_meta/rel/train/44b6_0113de3b/0/zarr.json",
+      "bytes": 760,
+      "sha256": "73e3ff105fe0c50983cff97a50bfa95f8c0da16e1cb5adb56968d1cb7e1c41b0",
+      "line_count": 49,
+      "keyword_counts": {
+        "transformer": 1,
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "training"
+    },
+    {
+      "path": "reference/zarr_meta/rel/train/6bba_05b6850b/0/zarr.json",
+      "bytes": 760,
+      "sha256": "73e3ff105fe0c50983cff97a50bfa95f8c0da16e1cb5adb56968d1cb7e1c41b0",
+      "line_count": 49,
+      "keyword_counts": {
+        "transformer": 1,
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "training"
+    },
+    {
+      "path": "reference/zarr_meta/rel/traingeff/44b6_0113de3b/zarr.json",
+      "bytes": 2102,
+      "sha256": "881fa7ecfaeeea75f170d28de6f058f616ba3104d87c5b80d655d842448a422b",
+      "line_count": 95,
+      "keyword_counts": {
+        "track": 1,
+        "geff": 2,
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "training"
+    },
+    {
+      "path": "reference/zarr_meta/rel/traingeff/6bba_05b6850b/zarr.json",
+      "bytes": 2099,
+      "sha256": "7b17a3db575196097f374ab77ad15213aff88bea16309c497eacf0d89e8f3042",
+      "line_count": 95,
+      "keyword_counts": {
+        "track": 1,
+        "geff": 2,
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "training"
+    },
+    {
+      "path": "reference/zarr_meta/root_meta/zarr.json",
+      "bytes": 1279,
+      "sha256": "c3768f1dfc78a0005d113b174c610c0c6aca375b085ad3b94da28c0a1fbbfda0",
+      "line_count": 63,
+      "keyword_counts": {
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "reference/zarr_meta/verify/train/44b6_0113de3b.geff/edges/ids/zarr.json",
+      "bytes": 634,
+      "sha256": "2349586432c3cf7e57f4b3aa69eb7ec37e94c528cbe1a505f7dcea3dac9653c0",
+      "line_count": 42,
+      "keyword_counts": {
+        "transformer": 1,
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "training"
+    },
+    {
+      "path": "reference/zarr_meta/verify/train/44b6_0113de3b.geff/nodes/ids/zarr.json",
+      "bytes": 616,
+      "sha256": "59b49b7e2e0624d3133e0d35124e273c8ba32cd51133a11870e2a5dfb0c944b0",
+      "line_count": 40,
+      "keyword_counts": {
+        "transformer": 1,
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "training"
+    },
+    {
+      "path": "reference/zarr_meta/verify/train/44b6_0113de3b.geff/nodes/props/t/values/zarr.json",
+      "bytes": 615,
+      "sha256": "24eeb0a68498390b82331577013f245fe548ab745cfe3ced14056dec664ea4bd",
+      "line_count": 40,
+      "keyword_counts": {
+        "transformer": 1,
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "training"
+    },
+    {
+      "path": "tools/animate_compare.py",
+      "bytes": 5140,
+      "sha256": "0ec2a2c5a7ad916a483a7b1ca2e4a635d41aec3e1b275dbf15d99e52b75babb0",
+      "line_count": 107,
+      "keyword_counts": {
+        "track": 10,
+        "cellpose": 1,
+        "zarr": 3,
+        "csv": 7
+      },
+      "symbols": [
+        "catmull_rom",
+        "load_tracks",
+        "find",
+        "color",
+        "panel"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tools/animate_detections.py",
+      "bytes": 3798,
+      "sha256": "b1dfde86af7f41c75b23aab99014294b1fb4eba4957a00181034772fc7803206",
+      "line_count": 87,
+      "keyword_counts": {
+        "detect": 13,
+        "geff": 1,
+        "zarr": 5,
+        "train": 1
+      },
+      "symbols": [
+        "cross"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "tools/animate_tracks.py",
+      "bytes": 5577,
+      "sha256": "756b9e2954028fef49e6edc096c5fea5c0ba07476e48f444838d83757e497504",
+      "line_count": 117,
+      "keyword_counts": {
+        "track": 11,
+        "division": 1,
+        "lineage": 1,
+        "cellpose": 3,
+        "geff": 1,
+        "zarr": 4,
+        "submission": 2,
+        "csv": 6
+      },
+      "symbols": [
+        "find",
+        "color",
+        "catmull_rom"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "tools/animate_zarr.py",
+      "bytes": 3568,
+      "sha256": "6f60b0309ccfbbcafcba252a21358d91f8a94ae423d9647dfe0e4c0faa61f959",
+      "line_count": 84,
+      "keyword_counts": {
+        "geff": 3,
+        "zarr": 19,
+        "train": 3
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tools/download_datasets.py",
+      "bytes": 4965,
+      "sha256": "91a9de6d8aef0eaa3a81758a16c418cde22a79b94f2ba77a8fa458fd7dcba4e5",
+      "line_count": 122,
+      "keyword_counts": {
+        "track": 2,
+        "geff": 6,
+        "zarr": 5,
+        "csv": 1,
+        "train": 3
+      },
+      "symbols": [
+        "list_files_from_manifest",
+        "list_files_from_api",
+        "main"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "tools/view_compare_napari.py",
+      "bytes": 3320,
+      "sha256": "b2a0598c9de6bfe12c0d8da259ceac94b6ce89ea29adb600c7b89a54894aad7b",
+      "line_count": 74,
+      "keyword_counts": {
+        "track": 12,
+        "lineage": 1,
+        "cellpose": 1,
+        "geff": 2,
+        "zarr": 10,
+        "csv": 11,
+        "train": 1
+      },
+      "symbols": [
+        "tracks_from_csv"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tools/view_napari.py",
+      "bytes": 4584,
+      "sha256": "2ae45839511bf78933a4cd495077d4b3bb99acee3cc28046bd2152219d581e5d",
+      "line_count": 106,
+      "keyword_counts": {
+        "track": 23,
+        "division": 2,
+        "lineage": 3,
+        "geff": 3,
+        "zarr": 14,
+        "train": 3
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tools/view_tracks_napari.py",
+      "bytes": 5955,
+      "sha256": "b2b2713453cc041b88d07a38b8b947e63dbff9ecc7e251e4f9caa741e8739f36",
+      "line_count": 119,
+      "keyword_counts": {
+        "detect": 4,
+        "segment": 1,
+        "track": 27,
+        "link": 1,
+        "division": 1,
+        "lineage": 3,
+        "cellpose": 8,
+        "geff": 2,
+        "zarr": 11,
+        "csv": 11,
+        "train": 1,
+        "predict": 3,
+        "prune": 1
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "tools/visualize_zarr.py",
+      "bytes": 4480,
+      "sha256": "595a8f2bf801cd4554d8526a73e8dcd15e37e41fb7d77b1d5601dbdf5c984915",
+      "line_count": 103,
+      "keyword_counts": {
+        "track": 1,
+        "geff": 3,
+        "zarr": 22,
+        "train": 5,
+        "infer": 1
+      },
+      "symbols": [
+        "contrast"
+      ],
+      "category": "relevant_source"
+    }
+  ],
+  "target_paths_missing": [],
+  "read_errors": [],
+  "checkout_exit": 0,
+  "checkout_stderr_excerpt": "",
+  "checkout_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "license": "NO_LICENSE_FILE_OBSERVED",
+  "categories_observed": [
+    "data_io",
+    "data_loader",
+    "dependency",
+    "detection",
+    "evaluation",
+    "experiment_report",
+    "pipeline",
+    "readme",
+    "relevant_source",
+    "submission_conversion",
+    "temporal_linking",
+    "training"
+  ],
+  "categories_not_present_in_selected_files": [
+    "division",
+    "inference",
+    "license",
+    "model",
+    "optimization",
+    "postprocessing"
+  ],
+  "category_coverage": {
+    "data_io": {
+      "status": "READ",
+      "paths": [
+        "docs/competition.md",
+        "reference/sample_submission.csv",
+        "tools/animate_detections.py"
+      ]
+    },
+    "data_loader": {
+      "status": "READ",
+      "paths": [
+        "tools/download_datasets.py"
+      ]
+    },
+    "dependency": {
+      "status": "READ",
+      "paths": [
+        "requirements.txt"
+      ]
+    },
+    "division": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "evaluation": {
+      "status": "READ",
+      "paths": [
+        "docs/metric.md",
+        "src/score.py"
+      ]
+    },
+    "inference": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "license": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "model": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "optimization": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "postprocessing": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "readme": {
+      "status": "READ",
+      "paths": [
+        "README.md",
+        "data/README.md"
+      ]
+    },
+    "submission_conversion": {
+      "status": "READ",
+      "paths": [
+        "src/assemble_submission.py",
+        "reference/file_manifest.csv"
+      ]
+    },
+    "temporal_linking": {
+      "status": "READ",
+      "paths": [
+        "src/track_lap.py",
+        "src/track_motile.py",
+        "tools/animate_tracks.py",
+        "tools/view_tracks_napari.py"
+      ]
+    },
+    "training": {
+      "status": "READ",
+      "paths": [
+        "reference/zarr_meta/geff_meta/train/44b6_0113de3b.geff/edges/ids/zarr.json",
+        "reference/zarr_meta/geff_meta/train/44b6_0113de3b.geff/edges/props/zarr.json",
+        "reference/zarr_meta/geff_meta/train/44b6_0113de3b.geff/edges/zarr.json",
+        "reference/zarr_meta/geff_meta/train/44b6_0113de3b.geff/nodes/ids/zarr.json",
+        "reference/zarr_meta/geff_meta/train/44b6_0113de3b.geff/nodes/props/zarr.json",
+        "reference/zarr_meta/geff_meta/train/44b6_0113de3b.geff/nodes/zarr.json",
+        "reference/zarr_meta/geff_meta/train/44b6_0113de3b.geff/zarr.json",
+        "reference/zarr_meta/rel/train/44b6_0113de3b/0/zarr.json",
+        "reference/zarr_meta/rel/train/6bba_05b6850b/0/zarr.json",
+        "reference/zarr_meta/rel/traingeff/44b6_0113de3b/zarr.json",
+        "reference/zarr_meta/rel/traingeff/6bba_05b6850b/zarr.json",
+        "reference/zarr_meta/verify/train/44b6_0113de3b.geff/edges/ids/zarr.json",
+        "reference/zarr_meta/verify/train/44b6_0113de3b.geff/nodes/ids/zarr.json",
+        "reference/zarr_meta/verify/train/44b6_0113de3b.geff/nodes/props/t/values/zarr.json"
+      ]
+    }
+  },
+  "selection_policy": {
+    "included": "all human-readable code, notebooks, documentation, dependency/runtime configuration, schemas, tests, and license/notices at the fixed commit",
+    "excluded": "repository-hosting automation, generated/cache directories, and binary/non-source artefacts",
+    "excluded_path_count": 16,
+    "excluded_paths": [
+      {
+        "path": ".gitignore",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "assets/dataset_44b6_551a5dba.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "assets/dataset_6bba_12665c0e.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "assets/detection_baseline_demo.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "assets/detection_cellpose_frame45.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "assets/detection_cellpose_vs_peaks.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "assets/tracks_demo.gif",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "reference/zarr_meta/dist/44b6_551a5dba.geff/edges/ids/zarr.json",
+        "reason": "generated_or_cache_path"
+      },
+      {
+        "path": "reference/zarr_meta/dist/44b6_551a5dba.geff/nodes/ids/zarr.json",
+        "reason": "generated_or_cache_path"
+      },
+      {
+        "path": "reference/zarr_meta/dist/44b6_551a5dba.geff/zarr.json",
+        "reason": "generated_or_cache_path"
+      },
+      {
+        "path": "reference/zarr_meta/dist/6bba_12665c0e.geff/edges/ids/zarr.json",
+        "reason": "generated_or_cache_path"
+      },
+      {
+        "path": "reference/zarr_meta/dist/6bba_12665c0e.geff/nodes/ids/zarr.json",
+        "reason": "generated_or_cache_path"
+      },
+      {
+        "path": "reference/zarr_meta/dist/6bba_12665c0e.geff/zarr.json",
+        "reason": "generated_or_cache_path"
+      },
+      {
+        "path": "reference/zarr_meta/dist/6bba_7f87b3d8.geff/edges/ids/zarr.json",
+        "reason": "generated_or_cache_path"
+      },
+      {
+        "path": "reference/zarr_meta/dist/6bba_7f87b3d8.geff/nodes/ids/zarr.json",
+        "reason": "generated_or_cache_path"
+      },
+      {
+        "path": "reference/zarr_meta/dist/6bba_7f87b3d8.geff/zarr.json",
+        "reason": "generated_or_cache_path"
+      }
+    ]
+  },
+  "scope_note": "Full bytes were read for every listed relevant-source path; only hashes, structure, notebook-cell hashes, and symbol/keyword summaries are persisted. The complete tree and per-path exclusions preserve the coverage boundary."
+}

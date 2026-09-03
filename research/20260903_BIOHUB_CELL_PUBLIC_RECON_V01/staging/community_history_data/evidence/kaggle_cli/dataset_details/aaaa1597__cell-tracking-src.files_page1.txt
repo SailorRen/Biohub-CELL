@@ -1,0 +1,247 @@
+[
+  {
+    "name": "src/dataset_3d.py",
+    "size": 4290,
+    "creationDate": "2026-07-23T17:01:55.007000"
+  },
+  {
+    "name": "src/eda_visualizer.py",
+    "size": 3464,
+    "creationDate": "2026-07-23T17:01:54.998000"
+  },
+  {
+    "name": "src/geff/__init__.py",
+    "size": 542,
+    "creationDate": "2026-07-23T17:01:55.131000"
+  },
+  {
+    "name": "src/geff/_cli.py",
+    "size": 5311,
+    "creationDate": "2026-07-23T17:01:55.145000"
+  },
+  {
+    "name": "src/geff/_graph_libs/README.md",
+    "size": 1787,
+    "creationDate": "2026-07-23T17:01:55.062000"
+  },
+  {
+    "name": "src/geff/_graph_libs/__init__.py",
+    "size": 0,
+    "creationDate": "2026-07-23T17:01:55.114000"
+  },
+  {
+    "name": "src/geff/_graph_libs/_api_wrapper.py",
+    "size": 14651,
+    "creationDate": "2026-07-23T17:01:55.067000"
+  },
+  {
+    "name": "src/geff/_graph_libs/_backend_protocol.py",
+    "size": 2389,
+    "creationDate": "2026-07-23T17:01:55.080000"
+  },
+  {
+    "name": "src/geff/_graph_libs/_errors.py",
+    "size": 49,
+    "creationDate": "2026-07-23T17:01:55.096000"
+  },
+  {
+    "name": "src/geff/_graph_libs/_graph_adapter.py",
+    "size": 2596,
+    "creationDate": "2026-07-23T17:01:55.096000"
+  },
+  {
+    "name": "src/geff/_graph_libs/_networkx.py",
+    "size": 5599,
+    "creationDate": "2026-07-23T17:01:55.080000"
+  },
+  {
+    "name": "src/geff/_graph_libs/_rustworkx.py",
+    "size": 7213,
+    "creationDate": "2026-07-23T17:01:55.131000"
+  },
+  {
+    "name": "src/geff/_graph_libs/_spatial_graph.py",
+    "size": 9441,
+    "creationDate": "2026-07-23T17:01:55.096000"
+  },
+  {
+    "name": "src/geff/_path.py",
+    "size": 1155,
+    "creationDate": "2026-07-23T17:01:55.114000"
+  },
+  {
+    "name": "src/geff/_typing.py",
+    "size": 1723,
+    "creationDate": "2026-07-23T17:01:55.131000"
+  },
+  {
+    "name": "src/geff/convert/__init__.py",
+    "size": 1517,
+    "creationDate": "2026-07-23T17:01:55.007000"
+  },
+  {
+    "name": "src/geff/convert/_ctc.py",
+    "size": 9125,
+    "creationDate": "2026-07-23T17:01:55.007000"
+  },
+  {
+    "name": "src/geff/convert/_dataframe.py",
+    "size": 12467,
+    "creationDate": "2026-07-23T17:01:54.993000"
+  },
+  {
+    "name": "src/geff/convert/_trackmate_xml.py",
+    "size": 39753,
+    "creationDate": "2026-07-23T17:01:54.998000"
+  },
+  {
+    "name": "src/geff/core_io/__init__.py",
+    "size": 351,
+    "creationDate": "2026-07-23T17:01:55.007000"
+  },
+  {
+    "name": "src/geff/core_io/_base_read.py",
+    "size": 13894,
+    "creationDate": "2026-07-23T17:01:55.023000"
+  },
+  {
+    "name": "src/geff/core_io/_base_write.py",
+    "size": 19139,
+    "creationDate": "2026-07-23T17:01:55.007000"
+  },
+  {
+    "name": "src/geff/core_io/_serialization.py",
+    "size": 4999,
+    "creationDate": "2026-07-23T17:01:55.007000"
+  },
+  {
+    "name": "src/geff/core_io/_utils.py",
+    "size": 15562,
+    "creationDate": "2026-07-23T17:01:55.042000"
+  },
+  {
+    "name": "src/geff/py.typed",
+    "size": 0,
+    "creationDate": "2026-07-23T17:01:55.016000"
+  },
+  {
+    "name": "src/geff/testing/__init__.py",
+    "size": 29,
+    "creationDate": "2026-07-23T17:01:55.056000"
+  },
+  {
+    "name": "src/geff/testing/_utils.py",
+    "size": 5395,
+    "creationDate": "2026-07-23T17:01:55.023000"
+  },
+  {
+    "name": "src/geff/testing/data.py",
+    "size": 23673,
+    "creationDate": "2026-07-23T17:01:55.062000"
+  },
+  {
+    "name": "src/geff/validate/__init__.py",
+    "size": 0,
+    "creationDate": "2026-07-23T17:01:55.062000"
+  },
+  {
+    "name": "src/geff/validate/data.py",
+    "size": 3226,
+    "creationDate": "2026-07-23T17:01:55.073000"
+  },
+  {
+    "name": "src/geff/validate/graph.py",
+    "size": 3636,
+    "creationDate": "2026-07-23T17:01:55.073000"
+  },
+  {
+    "name": "src/geff/validate/segmentation.py",
+    "size": 9663,
+    "creationDate": "2026-07-23T17:01:55.073000"
+  },
+  {
+    "name": "src/geff/validate/shapes.py",
+    "size": 2624,
+    "creationDate": "2026-07-23T17:01:55.067000"
+  },
+  {
+    "name": "src/geff/validate/structure.py",
+    "size": 7465,
+    "creationDate": "2026-07-23T17:01:55.062000"
+  },
+  {
+    "name": "src/geff/validate/tracks.py",
+    "size": 5766,
+    "creationDate": "2026-07-23T17:01:55.073000"
+  },
+  {
+    "name": "src/models/unet3d.py",
+    "size": 3280,
+    "creationDate": "2026-07-23T17:01:55.158000"
+  },
+  {
+    "name": "src/track/btrack_tracker.py",
+    "size": 2226,
+    "creationDate": "2026-07-23T17:01:55.145000"
+  },
+  {
+    "name": "src/tracking_cellmot/__init__.py",
+    "size": 80,
+    "creationDate": "2026-07-23T17:01:55.145000"
+  },
+  {
+    "name": "src/tracking_cellmot/division_metrics.py",
+    "size": 21062,
+    "creationDate": "2026-07-23T17:01:55.137000"
+  },
+  {
+    "name": "src/tracking_cellmot/img_proc.py",
+    "size": 5506,
+    "creationDate": "2026-07-23T17:01:55.131000"
+  },
+  {
+    "name": "src/tracking_cellmot/io.py",
+    "size": 14022,
+    "creationDate": "2026-07-23T17:01:55.145000"
+  },
+  {
+    "name": "src/tracking_cellmot/metrics.py",
+    "size": 20138,
+    "creationDate": "2026-07-23T17:01:55.131000"
+  },
+  {
+    "name": "src/tracking_cellmot/models/__init__.py",
+    "size": 254,
+    "creationDate": "2026-07-23T17:01:55.145000"
+  },
+  {
+    "name": "src/tracking_cellmot/models/simple_node_transformer.py",
+    "size": 7439,
+    "creationDate": "2026-07-23T17:01:55.137000"
+  },
+  {
+    "name": "src/tracking_cellmot/models/temporal_unet.py",
+    "size": 5253,
+    "creationDate": "2026-07-23T17:01:55.131000"
+  },
+  {
+    "name": "src/train_unet3d.py",
+    "size": 2713,
+    "creationDate": "2026-07-23T17:01:55.152000"
+  },
+  {
+    "name": "src/utils/anisotropy.py",
+    "size": 472,
+    "creationDate": "2026-07-23T17:01:55.158000"
+  },
+  {
+    "name": "src/utils/contrast.py",
+    "size": 840,
+    "creationDate": "2026-07-23T17:01:55.152000"
+  },
+  {
+    "name": "src/utils/visualize.py",
+    "size": 1471,
+    "creationDate": "2026-07-23T17:01:55.169000"
+  }
+]

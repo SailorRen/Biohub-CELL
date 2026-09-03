@@ -1,0 +1,82 @@
+[
+  {
+    "name": "ctc/config.yaml",
+    "size": 291,
+    "creationDate": "2026-07-02T22:50:54.011000"
+  },
+  {
+    "name": "ctc/model.pt",
+    "size": 109906058,
+    "creationDate": "2026-07-02T22:50:56.129000"
+  },
+  {
+    "name": "ctc/train_config.yaml",
+    "size": 3294,
+    "creationDate": "2026-07-02T22:50:54.031000"
+  },
+  {
+    "name": "general_2d/config.yaml",
+    "size": 290,
+    "creationDate": "2026-07-02T22:50:53.268000"
+  },
+  {
+    "name": "general_2d/model.pt",
+    "size": 43065042,
+    "creationDate": "2026-07-02T22:50:54.072000"
+  },
+  {
+    "name": "general_2d/train_config.yaml",
+    "size": 7688,
+    "creationDate": "2026-07-02T22:50:53.303000"
+  },
+  {
+    "name": "manifest.json",
+    "size": 2969,
+    "creationDate": "2026-07-02T22:50:51.229000"
+  },
+  {
+    "name": "packages/donfig-0.8.1.post1-py3-none-any.whl",
+    "size": 21592,
+    "creationDate": "2026-07-02T22:50:53.271000"
+  },
+  {
+    "name": "packages/edt-3.0.0-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "size": 3028197,
+    "creationDate": "2026-07-02T22:50:52.849000"
+  },
+  {
+    "name": "packages/geff-1.2.0.1.1-py3-none-any.whl",
+    "size": 68963,
+    "creationDate": "2026-07-02T22:50:53.166000"
+  },
+  {
+    "name": "packages/geff_spec-1.1.1-py3-none-any.whl",
+    "size": 14807,
+    "creationDate": "2026-07-02T22:50:53.184000"
+  },
+  {
+    "name": "packages/imagecodecs-2025.3.30-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "size": 45247507,
+    "creationDate": "2026-07-02T22:50:53.833000"
+  },
+  {
+    "name": "packages/lz4-4.4.5-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+    "size": 1368249,
+    "creationDate": "2026-07-02T22:50:53.170000"
+  },
+  {
+    "name": "packages/numcodecs-0.15.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "size": 8879163,
+    "creationDate": "2026-07-02T22:50:53.332000"
+  },
+  {
+    "name": "packages/zarr-3.2.1-py3-none-any.whl",
+    "size": 319617,
+    "creationDate": "2026-07-02T22:50:53.147000"
+  },
+  {
+    "name": "trackastra-0.5.3-py3-none-any.whl",
+    "size": 50538349,
+    "creationDate": "2026-07-02T22:50:52.419000"
+  }
+]

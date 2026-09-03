@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_CELL_OFFICIAL_KAGGLE_RECON_20260903_V01",
+  "goal": "在零 Kaggle 写入、零训练、零大数据下载前提下，为官方比赛页面、Kaggle Code、Discussion 与 Leaderboard 生成可审计的只读研究材料和精确覆盖统计。",
+  "scope": {
+    "in_scope": [
+      "只读访问官方比赛 7 个页面及允许的 Kaggle list/metadata/files/kernel source 接口",
+      "仅写入 research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/official_kaggle/",
+      "生成逐来源 URL、双时区时间、bytes、SHA-256、read_status、查询与失败证据"
+    ],
+    "out_of_scope": [
+      "Kaggle submission、比赛报名、Notebook Version 写入、Dataset 创建、训练或推理任务",
+      "完整比赛数据或大型外部数据下载",
+      "canonical 研究文件修改、Git commit、Git push"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "acceptance": [
+    {
+      "id": "coverage-summary",
+      "type": "json",
+      "required": true,
+      "path": "coverage_summary.json",
+      "assertions": [
+        {"pointer": "/task_id", "op": "equals", "value": "BIOHUB_CELL_OFFICIAL_KAGGLE_RECON_20260903_V01"},
+        {"pointer": "/counts", "op": "not_empty"},
+        {"pointer": "/blocked_points", "op": "exists"},
+        {"pointer": "/kaggle_write_counts/submissions", "op": "equals", "value": 0},
+        {"pointer": "/kaggle_write_counts/notebook_versions", "op": "equals", "value": 0},
+        {"pointer": "/kaggle_write_counts/training_jobs", "op": "equals", "value": 0}
+      ]
+    },
+    {
+      "id": "source-manifest",
+      "type": "file",
+      "required": true,
+      "path": "source_manifest.jsonl",
+      "min_bytes": 200
+    },
+    {
+      "id": "query-log",
+      "type": "file",
+      "required": true,
+      "path": "search_query_log.csv",
+      "min_bytes": 200
+    },
+    {
+      "id": "official-draft",
+      "type": "file",
+      "required": true,
+      "path": "official_competition_draft.md",
+      "min_bytes": 400,
+      "contains_all": ["读取范围", "证据", "未知"]
+    },
+    {
+      "id": "code-inventory",
+      "type": "file",
+      "required": true,
+      "path": "kaggle_code_inventory.csv",
+      "min_bytes": 200
+    },
+    {
+      "id": "code-deep-read",
+      "type": "file",
+      "required": true,
+      "path": "kaggle_code_deep_read.md",
+      "min_bytes": 400,
+      "contains_all": ["实际源码", "read_status"]
+    },
+    {
+      "id": "discussion-inventory",
+      "type": "file",
+      "required": true,
+      "path": "kaggle_discussion_inventory.csv",
+      "min_bytes": 200
+    },
+    {
+      "id": "discussion-deep-read",
+      "type": "file",
+      "required": true,
+      "path": "kaggle_discussion_deep_read.md",
+      "min_bytes": 400,
+      "contains_all": ["完整主题", "评论", "read_status"]
+    },
+    {
+      "id": "semantic-source-review",
+      "type": "manual",
+      "required": true,
+      "reason": "外部动态页面正文、作者角色、评论覆盖及 Notebook 全单元语义无法仅靠文件存在性自动证明。",
+      "evidence_needed": [
+        "逐来源 evidence 文件与 SHA-256",
+        "源码 cell 统计及全部 code cell 检查记录",
+        "Discussion 主帖与全部可加载评论覆盖记录"
+      ]
+    }
+  ]
+}

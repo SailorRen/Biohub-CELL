@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_CELL_GITHUB_ECOSYSTEM_20260903_V02",
+  "goal": "只读检索并深度核验 Biohub Cell Tracking 相关 GitHub 生态，在隔离 staging 目录形成可并入 canonical 研究包的证据草稿，且不提交、不推送、不修改外部仓库。",
+  "scope": {
+    "in_scope": [
+      "GitHub Repository Search、Code Search、普通网页搜索的只读查询",
+      "royerlab/kaggle-cell-tracking-competition 及 royerlab、Biohub/CZI、GEFF、tracksdata、Ultrack、Trackastra、Cell Tracking Challenge 和参赛者公开仓库",
+      "当前 github_ecosystem staging 目录内的草稿与证据"
+    ],
+    "out_of_scope": [
+      "canonical 研究文件修改",
+      "Git commit 或 push",
+      "外部仓库修改、fork、issue、PR 或 release",
+      "Kaggle 写入、训练、提交或大型下载",
+      "无明确再分发许可的完整源码或网页复制"
+    ]
+  },
+  "freeze": {"require_git_tracked": false},
+  "acceptance": [
+    {"id": "repository-inventory", "type": "file", "required": true, "path": "github_repository_inventory.csv", "min_bytes": 2500, "contains_all": ["owner/repo", "latest_commit_sha", "read_status", "files_actually_read", "evidence_path"]},
+    {"id": "deep-read-report", "type": "file", "required": true, "path": "github_deep_read.md", "min_bytes": 9000, "contains_all": ["royerlab/kaggle-cell-tracking-competition", "固定提交", "实际读取文件", "FULL_RELEVANT_REPO_SOURCE_READ", "TARGET_FILES_READ"]},
+    {"id": "method-matrix", "type": "file", "required": true, "path": "github_code_method_matrix.csv", "min_bytes": 2500, "contains_all": ["owner/repo", "detection", "temporal_linking", "division_handling", "license", "evidence_source_ids"]},
+    {"id": "source-manifest", "type": "file", "required": true, "path": "source_manifest.github.jsonl", "min_bytes": 5000, "contains_all": ["source_id", "commit_sha", "read_status", "bytes_observed", "sha256", "evidence_path"]},
+    {"id": "query-log", "type": "file", "required": true, "path": "search_query_log.github.csv", "min_bytes": 1000, "contains_all": ["query_id", "search_type", "query", "pages_requested", "reported_total_count", "actual_results_observed", "access_time_utc", "status"]},
+    {"id": "claims-draft", "type": "file", "required": true, "path": "claims_evidence_matrix.github.csv", "min_bytes": 1200, "contains_all": ["claim_id", "claim_text", "claim_type", "source_ids", "evidence_paths", "direct_or_inference"]},
+    {"id": "failure-log", "type": "file", "required": true, "path": "access_failures.github.md", "min_bytes": 300, "contains_all": ["GitHub API", "BLOCKED", "RATE_LIMITED", "LOGIN_REQUIRED"]}
+  ]
+}

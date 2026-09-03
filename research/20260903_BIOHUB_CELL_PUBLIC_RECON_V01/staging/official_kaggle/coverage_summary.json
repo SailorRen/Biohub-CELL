@@ -1,0 +1,54 @@
+{
+  "bounded_scope_status": "PARTIAL_RATE_LIMITED_COMPETITION_FILE_METADATA; CODE_SOURCE_TARGET_MET",
+  "failures": {
+    "api_failures_logged": 33,
+    "http_429_failures": 33
+  },
+  "generated_at_singapore": "2026-09-03T16:58:05.905260+08:00",
+  "generated_at_utc": "2026-09-03T08:58:05.905174+00:00",
+  "handoff": "Discussion 08-10 intentionally not generated in this staging subtask; parent agent owns that scope.",
+  "kaggle_code": {
+    "ScriptVersionId_unknown": 30,
+    "ScriptVersionId_verified": 0,
+    "code_cells_all_hashed_scanned": 218,
+    "current_score_verified": 0,
+    "full_source_read": 30,
+    "keyword_queries": 20,
+    "keyword_visible_occurrences": 356,
+    "metadata_only": 164,
+    "output_bearing_code_cells": 0,
+    "sort_queries": 5,
+    "sort_visible_occurrences": 104,
+    "source_bytes_read": 3022497,
+    "source_saved": 0,
+    "total_cells": 340,
+    "unique_authors_full_source": 25,
+    "unique_notebook_refs": 194,
+    "visible_occurrences_total": 460
+  },
+  "leaderboard": {
+    "dynamic_team_count_observed": 3032,
+    "highest_score": 0.963,
+    "private_fraction": "71%",
+    "public_fraction": "29%",
+    "required_rank_values_read": 6
+  },
+  "official": {
+    "api_content_pages_full_read": 8,
+    "competition_file_metadata_missing_vs_page_total": 19486,
+    "competition_file_metadata_obtained": 5400,
+    "competition_file_page_total_reported": 24886,
+    "file_metadata_status": "PARTIAL_RATE_LIMITED",
+    "required_routes": 7,
+    "routes_full_visible_main_read": 7
+  },
+  "physical_actions": {
+    "competition_data_download": 0,
+    "dataset_create": 0,
+    "kaggle_submission": 0,
+    "notebook_version_save": 0,
+    "rule_acceptance": 0,
+    "training": 0
+  },
+  "schema_version": "1.0"
+}

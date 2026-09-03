@@ -1,0 +1,247 @@
+[
+  {
+    "name": "kaggle-cell-tracking-competition-main/.gitignore",
+    "size": 206,
+    "creationDate": "2026-08-25T07:55:24.805000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/LICENSE",
+    "size": 1507,
+    "creationDate": "2026-08-25T07:55:24.794000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/README.md",
+    "size": 7254,
+    "creationDate": "2026-08-25T07:55:24.844000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/assets/demo.gif",
+    "size": 5244279,
+    "creationDate": "2026-08-25T07:55:24.916000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/assets/division.svg",
+    "size": 57747,
+    "creationDate": "2026-08-25T07:55:24.844000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/assets/figure.svg",
+    "size": 55844,
+    "creationDate": "2026-08-25T07:55:24.844000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/assets/late_division.svg",
+    "size": 51381,
+    "creationDate": "2026-08-25T07:55:24.838000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/metrics.md",
+    "size": 6942,
+    "creationDate": "2026-08-25T07:55:24.862000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/pyproject.toml",
+    "size": 1440,
+    "creationDate": "2026-08-25T07:55:24.850000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/scripts/augmentations.py",
+    "size": 1876,
+    "creationDate": "2026-08-25T07:55:24.890000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/scripts/csv_to_geffs.py",
+    "size": 2887,
+    "creationDate": "2026-08-25T07:55:24.862000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/scripts/dataspec.py",
+    "size": 1215,
+    "creationDate": "2026-08-25T07:55:24.856000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/scripts/evaluate.py",
+    "size": 5219,
+    "creationDate": "2026-08-25T07:55:24.884000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/scripts/geffs_to_csv.py",
+    "size": 3131,
+    "creationDate": "2026-08-25T07:55:24.884000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/scripts/predict_unet_transformer.py",
+    "size": 26011,
+    "creationDate": "2026-08-25T07:55:24.884000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/scripts/train_unet_transformer.py",
+    "size": 50229,
+    "creationDate": "2026-08-25T07:55:24.905000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/src/tracking_cellmot/__init__.py",
+    "size": 79,
+    "creationDate": "2026-08-25T07:55:24.905000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/src/tracking_cellmot/division_metrics.py",
+    "size": 20488,
+    "creationDate": "2026-08-25T07:55:24.916000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/src/tracking_cellmot/img_proc.py",
+    "size": 5319,
+    "creationDate": "2026-08-25T07:55:24.910000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/src/tracking_cellmot/io.py",
+    "size": 13485,
+    "creationDate": "2026-08-25T07:55:24.926000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/src/tracking_cellmot/metrics.py",
+    "size": 19602,
+    "creationDate": "2026-08-25T07:55:24.926000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/src/tracking_cellmot/models/__init__.py",
+    "size": 248,
+    "creationDate": "2026-08-25T07:55:24.916000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/src/tracking_cellmot/models/simple_node_transformer.py",
+    "size": 7229,
+    "creationDate": "2026-08-25T07:55:24.946000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/src/tracking_cellmot/models/temporal_unet.py",
+    "size": 5112,
+    "creationDate": "2026-08-25T07:55:24.926000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/tests/__init__.py",
+    "size": 0,
+    "creationDate": "2026-08-25T07:55:24.926000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/tests/assets/sandbox_examples/3_division.json",
+    "size": 1042,
+    "creationDate": "2026-08-25T07:55:24.926000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/tests/assets/sandbox_examples/complex.json",
+    "size": 3133,
+    "creationDate": "2026-08-25T07:55:24.964000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/tests/assets/sandbox_examples/complex2.json",
+    "size": 3131,
+    "creationDate": "2026-08-25T07:55:24.952000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/tests/assets/sandbox_examples/division.json",
+    "size": 1839,
+    "creationDate": "2026-08-25T07:55:24.946000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/tests/assets/sandbox_examples/division_at_end.json",
+    "size": 1968,
+    "creationDate": "2026-08-25T07:55:24.952000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/tests/assets/sandbox_examples/division_node_stage.json",
+    "size": 2038,
+    "creationDate": "2026-08-25T07:55:24.997000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/tests/assets/sandbox_examples/division_test.json",
+    "size": 1852,
+    "creationDate": "2026-08-25T07:55:24.964000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/tests/assets/sandbox_examples/duplicated_division.json",
+    "size": 2080,
+    "creationDate": "2026-08-25T07:55:24.964000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/tests/assets/sandbox_examples/edges_wrong_division_ok.json",
+    "size": 2075,
+    "creationDate": "2026-08-25T07:55:24.975000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/tests/assets/sandbox_examples/late_division.json",
+    "size": 1681,
+    "creationDate": "2026-08-25T07:55:24.970000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/tests/assets/sandbox_examples/merge_delay.json",
+    "size": 1576,
+    "creationDate": "2026-08-25T07:55:24.975000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/tests/assets/sandbox_examples/node_conflict.json",
+    "size": 2511,
+    "creationDate": "2026-08-25T07:55:24.986000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/tests/assets/sandbox_examples/simple.json",
+    "size": 2030,
+    "creationDate": "2026-08-25T07:55:24.992000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/tests/assets/sandbox_examples/successive_div.json",
+    "size": 1829,
+    "creationDate": "2026-08-25T07:55:24.992000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/tests/conftest.py",
+    "size": 3523,
+    "creationDate": "2026-08-25T07:55:24.998000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/tests/test_division_metrics.py",
+    "size": 39456,
+    "creationDate": "2026-08-25T07:55:24.986000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/tests/test_division_sandbox_examples.py",
+    "size": 11437,
+    "creationDate": "2026-08-25T07:55:24.992000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/tests/test_img_proc.py",
+    "size": 3207,
+    "creationDate": "2026-08-25T07:55:24.992000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/tests/test_io.py",
+    "size": 4022,
+    "creationDate": "2026-08-25T07:55:24.992000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/tests/test_metrics.py",
+    "size": 49117,
+    "creationDate": "2026-08-25T07:55:25.003000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/tests/test_training_scripts.py",
+    "size": 5017,
+    "creationDate": "2026-08-25T07:55:24.997000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/visualize/visualize_ground_truth.py",
+    "size": 2492,
+    "creationDate": "2026-08-25T07:55:25.019000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/visualize/visualize_predictions.py",
+    "size": 11517,
+    "creationDate": "2026-08-25T07:55:25.014000"
+  },
+  {
+    "name": "kaggle-cell-tracking-competition-main/visualize/visualize_utils.py",
+    "size": 3356,
+    "creationDate": "2026-08-25T07:55:25.100000"
+  }
+]

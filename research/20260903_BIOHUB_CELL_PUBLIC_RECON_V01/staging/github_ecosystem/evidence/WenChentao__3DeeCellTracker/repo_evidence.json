@@ -1,0 +1,1258 @@
+{
+  "schema_version": "1.0",
+  "source_id": "GH-DEEP-WenChentao__3DeeCellTracker",
+  "repo": "WenChentao/3DeeCellTracker",
+  "url": "https://github.com/WenChentao/3DeeCellTracker",
+  "relation_to_competition": "3d_time_lapse_tracking",
+  "access_time_utc": "2026-09-03T08:47:12.502002+00:00",
+  "fixed_branch": "master",
+  "fixed_commit_sha": "0c0518c7790f6c459f205f4acadc46837231f21d",
+  "latest_commit_date": "2025-11-13T15:35:43+09:00",
+  "tree_file_count": 74,
+  "tree_bytes": 6171,
+  "tree_sha256": "97945444c50ac075b71a54ac5144ebc1a62c5148bd69e7c55091ef147f0dbb49",
+  "tree_evidence_path": "staging/github_ecosystem/evidence/WenChentao__3DeeCellTracker/tree.txt",
+  "read_status": "FULL_RELEVANT_REPO_SOURCE_READ",
+  "files_requested": 29,
+  "relevant_source_paths_selected": 29,
+  "relevant_source_selection_coverage": 1.0,
+  "files_actually_read_count": 29,
+  "files_actually_read": [
+    {
+      "path": "README.md",
+      "bytes": 9112,
+      "sha256": "2fe3f6921f9405fd3fb26de360b0f326788b565d6aa52ce759b157dbb5ac865a",
+      "line_count": 137,
+      "keyword_counts": {
+        "detect": 1,
+        "segment": 9,
+        "track": 43,
+        "link": 1,
+        "flow": 6,
+        "unet": 11,
+        "stardist": 15,
+        "csv": 2,
+        "sparse": 1,
+        "train": 12
+      },
+      "symbols": [],
+      "headings": [
+        "# 3DeeCellTracker",
+        "## Updates:",
+        "## Installation",
+        "### Prerequisites",
+        "### Steps",
+        "## Quick Start",
+        "## Protocols",
+        "### Frequently Reported Issue and Solution (for v0.4)",
+        "### Video Tutorials (for v0.4)",
+        "## How it works",
+        "## Citation",
+        "## Acknowledgements"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1068,
+      "sha256": "19d34afbf68b27c688082207872f5169651cb6bef610dba85371cc9a4781391b",
+      "line_count": 22,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "license"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 630,
+      "sha256": "db773ad6a924a3c2ac9f201336734440bfee6b04e7620a9bde31bbe65647bdea",
+      "line_count": 31,
+      "keyword_counts": {
+        "track": 3
+      },
+      "symbols": [],
+      "category": "dependency"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 82,
+      "sha256": "02202ecf711d1e30da637a20b19e412d21c885fe7766da0a881a2e1ebbfe2878",
+      "line_count": 6,
+      "keyword_counts": {
+        "flow": 1,
+        "stardist": 1
+      },
+      "symbols": [],
+      "category": "dependency"
+    },
+    {
+      "path": "CellTracker/preprocess.py",
+      "bytes": 5332,
+      "sha256": "b887b5e3141b9c9d643569370f3c81068d8d8ab8de411e37c0640888bd09c06c",
+      "line_count": 205,
+      "keyword_counts": {
+        "flow": 3,
+        "predict": 2
+      },
+      "symbols": [
+        "_make_folder",
+        "_get_files",
+        "load_image",
+        "lcn_cpu",
+        "conv3d_keras",
+        "lcn_gpu",
+        "_normalize_image",
+        "_normalize_label"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "CellTracker/stardistwrapper.py",
+      "bytes": 14949,
+      "sha256": "1b03bf54ebdb48030d1644f557e17de5ec05ad2675e7300ecc76dab215e6e27e",
+      "line_count": 365,
+      "keyword_counts": {
+        "segment": 4,
+        "track": 1,
+        "division": 1,
+        "flow": 1,
+        "unet": 9,
+        "stardist": 24,
+        "train": 31,
+        "predict": 7
+      },
+      "symbols": [
+        "load_stardist_model",
+        "imread_pillow",
+        "load_2d_slices_at_time",
+        "predict_and_save",
+        "get_t_range",
+        "save_auto_seg_vol1",
+        "save_arrays_to_folder",
+        "load_training_images",
+        "configure",
+        "print_dict",
+        "plot_img_label_center_slice",
+        "plot_img_label_max_projection",
+        "plot_img_label_max_projection_xz",
+        "random_fliprot",
+        "random_intensity_change",
+        "augmenter"
+      ],
+      "category": "segmentation"
+    },
+    {
+      "path": "CellTracker/unet3d.py",
+      "bytes": 24761,
+      "sha256": "168897b330e7c24afc75c010a1ed1499ad4cbb9cd02b8a4a644e3835ebe5445a",
+      "line_count": 602,
+      "keyword_counts": {
+        "segment": 1,
+        "track": 1,
+        "flow": 5,
+        "unet": 33,
+        "train": 94,
+        "predict": 31
+      },
+      "symbols": [
+        "unet3_a",
+        "unet3_b",
+        "unet3_c",
+        "_unet3_depth3",
+        "_conv3d_leakyrelu_bn",
+        "_conv3d_relu_bn",
+        "_downscale",
+        "_upscale",
+        "unet3_prediction",
+        "_get_sizes_padded_im",
+        "_divide_img",
+        "_augmentation_generator",
+        "TrainingUNet3D",
+        "__init__",
+        "_make_folders",
+        "load_dataset",
+        "draw_dataset",
+        "preprocess",
+        "draw_norm_dataset",
+        "_subplots_4images",
+        "draw_divided_train_data",
+        "train",
+        "select_weights",
+        "_draw_prediction"
+      ],
+      "category": "model"
+    },
+    {
+      "path": "CellTracker/ffn.py",
+      "bytes": 14741,
+      "sha256": "35e0fc22a5777327df0d1e83572c1fc592345acb38d1713dc719415680033310",
+      "line_count": 375,
+      "keyword_counts": {
+        "segment": 11,
+        "track": 1,
+        "flow": 4,
+        "train": 26,
+        "predict": 4
+      },
+      "symbols": [
+        "affine_transform",
+        "features_of_points_ffn_quick",
+        "DataGeneratorFFN",
+        "__init__",
+        "generator_train_data",
+        "TrainFFN",
+        "__init__",
+        "train",
+        "select_ffn_weights",
+        "FFN",
+        "__init__",
+        "_build_feat_layer1",
+        "_build_combine_feat2",
+        "_build_pred",
+        "call",
+        "initial_matching_ffn",
+        "normalize_points"
+      ],
+      "category": "model"
+    },
+    {
+      "path": "CellTracker/track.py",
+      "bytes": 23398,
+      "sha256": "c6d10915a52e25410c701d19d12b4d61015d90543454c856e33480effe8fbb3c",
+      "line_count": 611,
+      "keyword_counts": {
+        "segment": 2,
+        "track": 13,
+        "train": 1,
+        "predict": 5
+      },
+      "symbols": [
+        "pr_gls_quick",
+        "initial_matching_quick",
+        "pr_gls",
+        "initial_matching",
+        "gaussian_filter",
+        "transform_cells",
+        "plot_arrow",
+        "plot_tracking_2d",
+        "plot_tracking_2d_realcoord",
+        "tracking_plot_xy",
+        "tracking_plot_zx",
+        "FFN_matching_plot",
+        "get_subregions",
+        "_get_coordinates",
+        "get_reference_vols",
+        "get_remote_vols"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "CellTracker/tracker.py",
+      "bytes": 70284,
+      "sha256": "3f253eb0a56f891e7932a0f357c1f22b676342ad28e51ddf720b74dc5c4b3f09",
+      "line_count": 1552,
+      "keyword_counts": {
+        "detect": 6,
+        "segment": 133,
+        "track": 148,
+        "assign": 1,
+        "flow": 2,
+        "unet": 75,
+        "csv": 3,
+        "train": 53,
+        "predict": 94,
+        "evaluate": 5
+      },
+      "symbols": [
+        "timer",
+        "wrapper_timer",
+        "get_random_cmap",
+        "get_tracking_path",
+        "read_image_ts",
+        "save_automatic_segmentation",
+        "save_img3ts",
+        "Draw",
+        "__init__",
+        "draw_segresult",
+        "draw_manual_seg1",
+        "_draw_transformation",
+        "draw_correction",
+        "_draw_correction",
+        "draw_overlapping",
+        "_draw_matching",
+        "_draw_matching_6panel",
+        "_draw_before_matching",
+        "_draw_after_matching",
+        "_subplots_ffnprgls_animation",
+        "_subplots_2_horizontal",
+        "_subplots_3",
+        "_subplots_4",
+        "subplots_tracking",
+        "_set_layout_anim",
+        "_transform_interpolated_to_layer",
+        "_transform_motion_to_image",
+        "_transform_real_to_layer",
+        "SegResults",
+        "__init__",
+        "update_results",
+        "Segmentation",
+        "__init__",
+        "set_segmentation",
+        "_transform_disps",
+        "_transform_layer_to_real",
+        "_transform_real_to_interpolated",
+        "_transform_real_to_layer",
+        "_transform_interpolated_to_layer",
+        "load_unet",
+        "segment_vol1",
+        "_segment",
+        "_predict_cellregions",
+        "_save_unet_regions",
+        "_watershed",
+        "Paths",
+        "__init__",
+        "make_folders",
+        "History",
+        "__init__",
+        "Tracker",
+        "__init__",
+        "set_tracking",
+        "load_manual_seg",
+        "_retrain_preprocess",
+        "_remove_2d_boundary",
+        "retrain_unet",
+        "_draw_retrain",
+        "select_unet_weights",
+        "interpolate_seg",
+        "_relabel_separated_cells",
+        "_interpolate",
+        "cal_subregions",
+        "_check_multicells",
+        "load_ffn",
+        "initiate_tracking",
+        "match",
+        "_accurate_correction",
+        "_predict_pos_once",
+        "_fit_ffn_prgls",
+        "_ffn_prgls_once",
+        "_predict_one_rep",
+        "_get_cells_onBoundary",
+        "_correction_once_interp",
+        "_transform_cells_quick",
+        "_transform_motion_to_image",
+        "_evaluate_correction",
+        "track",
+        "replay_track_animation",
+        "_reset_tracking_state"
+      ],
+      "category": "pipeline"
+    },
+    {
+      "path": "CellTracker/trackerlite.py",
+      "bytes": 21852,
+      "sha256": "55f31806c1b757f6fcc1a106ce5efc0621da3f208f59c5550f1819ac9c80f550",
+      "line_count": 439,
+      "keyword_counts": {
+        "segment": 25,
+        "track": 33,
+        "transformer": 1,
+        "stardist": 1,
+        "train": 1,
+        "predict": 27
+      },
+      "symbols": [
+        "TrackerLite",
+        "__init__",
+        "predict_cell_positions",
+        "predict_cell_positions_ensemble",
+        "match_by_ffn",
+        "_get_segmented_pos",
+        "activities",
+        "plot_initial_matching",
+        "simple_match",
+        "prgls_quick",
+        "prgls_with_two_ref",
+        "dist_squares",
+        "gaussian_kernel",
+        "estimate_posterior",
+        "softmax_normalize",
+        "row_wise_normalize",
+        "non_max_suppression_normalize",
+        "solve_movements_ref",
+        "evenly_distributed_volumes",
+        "get_volumes_list"
+      ],
+      "category": "pipeline"
+    },
+    {
+      "path": "CellTracker/watershed.py",
+      "bytes": 5756,
+      "sha256": "59bee9bb237e71626c6c2867aaa4cb43c193005180e133f521dfd19faf0aa60f",
+      "line_count": 152,
+      "keyword_counts": {
+        "detect": 2,
+        "segment": 13,
+        "predict": 1
+      },
+      "symbols": [
+        "watershed_2d",
+        "watershed_3d",
+        "recalculate_cell_boundaries"
+      ],
+      "category": "postprocessing"
+    },
+    {
+      "path": "CellTracker/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "CellTracker/analyses.py",
+      "bytes": 6322,
+      "sha256": "644b82f3a1e6624881d75aea610761f8107f5dde5e508cb242f5b9941dd3c720",
+      "line_count": 188,
+      "keyword_counts": {
+        "track": 16
+      },
+      "symbols": [
+        "get_activities",
+        "get_activities_quick",
+        "_read_image",
+        "optimize_row_column",
+        "draw_signals"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "CellTracker/coord_image_transformer.py",
+      "bytes": 33501,
+      "sha256": "01d115c48341441f328d7836f8b0a21f9c5ea190448d43c8db8af52e3fcbe82f",
+      "line_count": 779,
+      "keyword_counts": {
+        "segment": 52,
+        "track": 36,
+        "assign": 1,
+        "transformer": 2,
+        "stardist": 1,
+        "predict": 10
+      },
+      "symbols": [
+        "Coordinates",
+        "__init__",
+        "__add__",
+        "__sub__",
+        "_transform_z",
+        "real",
+        "interp",
+        "raw",
+        "cell_num",
+        "CoordsToImageTransformer",
+        "__init__",
+        "load_segmentation",
+        "interpolate",
+        "extract_regions",
+        "move_cells_in_3d_image",
+        "move_cells",
+        "add_bbox_with_movements",
+        "get_cells_on_boundary",
+        "accurate_correction",
+        "_correction_once",
+        "save_tracking_results",
+        "save_merged_labels",
+        "save_tracked_labels",
+        "gaussian_interpolation_3d",
+        "fix_labeling_errors",
+        "plot_prgls_prediction",
+        "plot_two_pointset_scatters",
+        "unify_xy_lims"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "CellTracker/stardist3dcustom.py",
+      "bytes": 12815,
+      "sha256": "7313993416e85945945ecdb489227d64e4e2eb395b3e9fb70d11d558762c2139",
+      "line_count": 262,
+      "keyword_counts": {
+        "segment": 1,
+        "division": 1,
+        "flow": 1,
+        "stardist": 6,
+        "sparse": 12,
+        "predict": 42
+      },
+      "symbols": [
+        "StarDist3DCustom",
+        "_predict_instances_generator",
+        "predict_instances",
+        "_predict_sparse_generator",
+        "_prep"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "CellTracker/synthesize.py",
+      "bytes": 3268,
+      "sha256": "fe2374ed1db20d25f4b5f2e9aad6f75308350e2f46ceaa6131059231a02ae4dd",
+      "line_count": 87,
+      "keyword_counts": {},
+      "symbols": [
+        "points_to_features",
+        "no_match_points",
+        "add_seg_errors",
+        "affine_transform"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "Examples/use_stardist/track_stardist_ensemble_mode-h5.ipynb",
+      "bytes": 1486944,
+      "sha256": "d438572eea58715ac1884ac427c0f6fbb570dc6037666d6d6e88afc98c1440bf",
+      "line_count": 766,
+      "keyword_counts": {
+        "segment": 27,
+        "track": 40,
+        "link": 2,
+        "flow": 19,
+        "transformer": 2,
+        "unet": 1,
+        "stardist": 17,
+        "geff": 1,
+        "zarr": 5,
+        "ctc": 41,
+        "csv": 42,
+        "train": 4,
+        "predict": 6,
+        "ilp": 38
+      },
+      "notebook": {
+        "cell_count": 32,
+        "code_cell_count": 15,
+        "markdown_cell_count": 17,
+        "output_cell_count": 14,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "06aa570d0a6b0676aec1923533b375fadcfd84eb64973a8c0be1dd5f93d5867e",
+          "3cf61743c090a9b8a80c9e1e49ee415505e965af33b962fd403de97d04f24a88",
+          "0d3c620b0d363874fe6971c44423efd01014248b54fa4d45d0bd21a8df9d507f",
+          "6574cc0aed3d63ebf35cf72c0ca4970720ed8129876758db77ea318f07773b23",
+          "0e663663dff132abfded59a03a57fd4d09947658aae669e6dc03d2656f3ac7ab",
+          "316f7a9dce6603f12a5343828793b9f65a7ea649bc6c1e3632d7352c21ffedfd",
+          "967016698f1ba10c617372e3418020196e9d8a85cf9a5329b7d1d4edbd8de75a",
+          "e45b02a9496492bba21fee012524feb0c158ccbca71b50035faa0443022d2bb2",
+          "a7294b2c3fd10554e7ef9d22717305997ee248a8ceee456b352d39bb86b9fd30",
+          "bf2559ab1f5e94f84677bdc0e3dbbacc8165c381d9a5fc9198e0e00c2f3f72e4",
+          "bbfafe50122f1dfd101ab25d64c918c9dde8b96bdb542548c0cdc856358a7d97",
+          "7426ff200dd2a47f130a8f82378000fbefd504dd6478d1f4691c6e36da3aea6e",
+          "fbcd226e499330289a5695a6d19ef9ea272461143ed2d6a4ddcf374a6d8970c7",
+          "2da47362b0802b99d023e57305c28c6288cb27afd1a798c2b653de1299baf115",
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        ]
+      },
+      "category": "temporal_linking"
+    },
+    {
+      "path": "Examples/use_stardist/track_stardist_ensemble_mode.ipynb",
+      "bytes": 1753950,
+      "sha256": "3aa5ba4e5ac5832cb5758bc01f36b91c8386e034529b1291a6e1584c0f43ef9f",
+      "line_count": 799,
+      "keyword_counts": {
+        "segment": 27,
+        "track": 41,
+        "link": 2,
+        "flow": 43,
+        "transformer": 2,
+        "unet": 1,
+        "stardist": 17,
+        "geff": 3,
+        "zarr": 2,
+        "ctc": 50,
+        "csv": 65,
+        "sparse": 1,
+        "train": 4,
+        "predict": 6,
+        "ilp": 56
+      },
+      "notebook": {
+        "cell_count": 33,
+        "code_cell_count": 16,
+        "markdown_cell_count": 17,
+        "output_cell_count": 14,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "06aa570d0a6b0676aec1923533b375fadcfd84eb64973a8c0be1dd5f93d5867e",
+          "4ae8f02c2d4d6997c154604b196095de71218af4f26bf17efa85c547fb287479",
+          "3cf61743c090a9b8a80c9e1e49ee415505e965af33b962fd403de97d04f24a88",
+          "e060bece084ec3afc0721c75844e685fadb57d0f0eaaac58f1b9cbf972d91cde",
+          "6574cc0aed3d63ebf35cf72c0ca4970720ed8129876758db77ea318f07773b23",
+          "0e663663dff132abfded59a03a57fd4d09947658aae669e6dc03d2656f3ac7ab",
+          "12aeffd0097aefdc67e2b48e353fdbfac1ed5e890cac1c22348d1e2381f2eb7b",
+          "967016698f1ba10c617372e3418020196e9d8a85cf9a5329b7d1d4edbd8de75a",
+          "e45b02a9496492bba21fee012524feb0c158ccbca71b50035faa0443022d2bb2",
+          "8863a2f574ebc2003fbdd0bfeb1ef3d19354e788051d2fbd78565ac2edb80a60",
+          "bf2559ab1f5e94f84677bdc0e3dbbacc8165c381d9a5fc9198e0e00c2f3f72e4",
+          "b4836205dbcdabc348a13d5ff7dfec16f25109df0a5c25aaf7965d785152bc9b",
+          "78b9da79fca4dc26b3b99cfacac0f8721cf26ab97208d3937022c3e9abc1ced2",
+          "fbcd226e499330289a5695a6d19ef9ea272461143ed2d6a4ddcf374a6d8970c7",
+          "2da47362b0802b99d023e57305c28c6288cb27afd1a798c2b653de1299baf115",
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        ]
+      },
+      "category": "temporal_linking"
+    },
+    {
+      "path": "Examples/use_stardist/track_stardist_single_mode-h5.ipynb",
+      "bytes": 1523472,
+      "sha256": "cc3f8fe189b1264ec2f9ef7886965b3f2b6499b4fdebc589730643249120aed5",
+      "line_count": 764,
+      "keyword_counts": {
+        "segment": 27,
+        "track": 40,
+        "link": 1,
+        "flow": 20,
+        "transformer": 2,
+        "unet": 3,
+        "stardist": 17,
+        "geff": 1,
+        "zarr": 4,
+        "ctc": 41,
+        "csv": 43,
+        "train": 4,
+        "predict": 6,
+        "ilp": 41
+      },
+      "notebook": {
+        "cell_count": 32,
+        "code_cell_count": 15,
+        "markdown_cell_count": 17,
+        "output_cell_count": 14,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "06aa570d0a6b0676aec1923533b375fadcfd84eb64973a8c0be1dd5f93d5867e",
+          "3cf61743c090a9b8a80c9e1e49ee415505e965af33b962fd403de97d04f24a88",
+          "4a7908e4235871170af6f4c426b96216768831172ecfcd2b6a2c1b52fbce21ac",
+          "6574cc0aed3d63ebf35cf72c0ca4970720ed8129876758db77ea318f07773b23",
+          "0e663663dff132abfded59a03a57fd4d09947658aae669e6dc03d2656f3ac7ab",
+          "316f7a9dce6603f12a5343828793b9f65a7ea649bc6c1e3632d7352c21ffedfd",
+          "967016698f1ba10c617372e3418020196e9d8a85cf9a5329b7d1d4edbd8de75a",
+          "5b86926e719eff69f8b79ec33ae0e42cc22950ef0702bce7e016bca96ded4ffc",
+          "a7294b2c3fd10554e7ef9d22717305997ee248a8ceee456b352d39bb86b9fd30",
+          "199a829bfa2235aac14529f49f11e0c000fbb2948a570ec6a1deb45c22d30840",
+          "f460164be513c3b4d5a57e103b2ea506d42b099fd9411408866c51476ca40aaf",
+          "7426ff200dd2a47f130a8f82378000fbefd504dd6478d1f4691c6e36da3aea6e",
+          "fa3b752c07d2b7ab7c3d89725bfce9de12ee0cd6b86b73002bde025444620444",
+          "ddff5bed71d2ad9c257a8364a6d5a7aa8fac4c643dc6a7a2192efcd32b297880",
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        ]
+      },
+      "category": "temporal_linking"
+    },
+    {
+      "path": "Examples/use_stardist/track_stardist_single_mode.ipynb",
+      "bytes": 2674609,
+      "sha256": "37c0451cf3725cafd5c7bbd8361352a687833a3d814a16f6b70e7799788836e3",
+      "line_count": 711,
+      "keyword_counts": {
+        "segment": 27,
+        "track": 40,
+        "link": 3,
+        "flow": 1,
+        "transformer": 2,
+        "unet": 1,
+        "stardist": 17,
+        "geff": 6,
+        "zarr": 2,
+        "ctc": 84,
+        "csv": 77,
+        "train": 4,
+        "predict": 6,
+        "ilp": 68
+      },
+      "notebook": {
+        "cell_count": 32,
+        "code_cell_count": 15,
+        "markdown_cell_count": 17,
+        "output_cell_count": 13,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "06aa570d0a6b0676aec1923533b375fadcfd84eb64973a8c0be1dd5f93d5867e",
+          "b6dce02a24f09411cdd0622b56c4f9b6ee76cf26666bd31b6ca61d14208a81d4",
+          "388275736f9ab94aaed83254b9bebffbbcc0885fe73a59b01d659745b8d5b959",
+          "03746d9ae05c9d1f201d9f9780c905925c670bf69e3cc02046e393805d0168c6",
+          "0e663663dff132abfded59a03a57fd4d09947658aae669e6dc03d2656f3ac7ab",
+          "2dce56349a262f3f28c589116899e882d433d6d2d3ca9513fce20a46290d74f7",
+          "e8c000d7223d87614976c849edb982eade0473a72003aa6314963cd0b6add914",
+          "5b86926e719eff69f8b79ec33ae0e42cc22950ef0702bce7e016bca96ded4ffc",
+          "d4fea259362fd6c4b97475ed34783d3d52af7ce1dcf3114b8c752a6a299f4f0f",
+          "986226887bfc4928e7b3d9d21b0da9360e797f5cc8caca56d99e6b4388c46b89",
+          "cf55c1997aaa098370b4f53931d1e757563b7d77df4ef7dcc25c8cd3bf9edda4",
+          "138ed5098d308dcbe63e6c470c2eea441c55ba9c2dddd0864747798eadf1aad1",
+          "fa3b752c07d2b7ab7c3d89725bfce9de12ee0cd6b86b73002bde025444620444",
+          "ddff5bed71d2ad9c257a8364a6d5a7aa8fac4c643dc6a7a2192efcd32b297880",
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        ]
+      },
+      "category": "temporal_linking"
+    },
+    {
+      "path": "Examples/use_stardist/train_ffn_with_coordinates_csv.ipynb",
+      "bytes": 17757,
+      "sha256": "79848d0b26b1e676a0004be7a11b3c71dd4d20c0bc18ec1ae0de2cf27191c807",
+      "line_count": 289,
+      "keyword_counts": {
+        "track": 4,
+        "flow": 35,
+        "stardist": 1,
+        "csv": 6,
+        "sparse": 1,
+        "train": 119
+      },
+      "notebook": {
+        "cell_count": 8,
+        "code_cell_count": 4,
+        "markdown_cell_count": 4,
+        "output_cell_count": 3,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "e20527b6b8a2ca34934db0eefd772882708fa764a93d0001bd30e833d0aff815",
+          "7bca883ba6c7ca9982be15943a1e1708c2755fb3404857664cdf8070f9ce9de3",
+          "fd3183b009c144054f927b1f050404cccdb09262adb8cd6f7b091749cd87aec3",
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        ]
+      },
+      "category": "training"
+    },
+    {
+      "path": "Examples/use_stardist/train_ffn_with_label_image.ipynb",
+      "bytes": 17878,
+      "sha256": "727bbc8acd0d6f26b9fdbd228f82809a20f2f7f71c553ff79ec3c6e7baaee8e7",
+      "line_count": 300,
+      "keyword_counts": {
+        "segment": 6,
+        "track": 3,
+        "flow": 35,
+        "sparse": 1,
+        "train": 117
+      },
+      "notebook": {
+        "cell_count": 9,
+        "code_cell_count": 5,
+        "markdown_cell_count": 4,
+        "output_cell_count": 3,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "e20527b6b8a2ca34934db0eefd772882708fa764a93d0001bd30e833d0aff815",
+          "1afe0ecd39f6db8349f676d82a818662916eb6cbed1fbef549b47f34308c3c58",
+          "460012bdd682df3ef0efc11e123a2aa332185517c9e485b2f208de649e175b3a",
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        ]
+      },
+      "category": "training"
+    },
+    {
+      "path": "Examples/use_stardist/train_stardist.ipynb",
+      "bytes": 1652540,
+      "sha256": "06c19c2dc7257becce778652c6cd57721f020aec5dd24a272e4c5162a1147fba",
+      "line_count": 1617,
+      "keyword_counts": {
+        "segment": 7,
+        "track": 3,
+        "link": 1,
+        "flow": 43,
+        "unet": 13,
+        "stardist": 24,
+        "geff": 2,
+        "ctc": 37,
+        "csv": 42,
+        "sparse": 1,
+        "train": 54,
+        "predict": 3,
+        "bayes": 1,
+        "ilp": 43
+      },
+      "notebook": {
+        "cell_count": 17,
+        "code_cell_count": 8,
+        "markdown_cell_count": 9,
+        "output_cell_count": 7,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "ba00bd7e465500fca41b9f048dcd383559ebe94fda52b08016c5ee3347787283",
+          "e921f1c87f09f0ea0f35af7a793dc393b6be103704c2147cc4df6d3859eff779",
+          "b507c6c0bf9b59f176ab68933870ffdd57dc8c3efb73f3a97a37d075deea7c23",
+          "155a2f387525e86341e16cc119b4652cdf9a4bf92e3ec29ddb2f31af10b9553a",
+          "684186522eaf048072edd42a497dfa57889c1cce00f74305d42869db4786a426",
+          "c3fd062af26f25bd9116bfa376f94e32e971fee7b086ca0e96b1abe933530f7a",
+          "ef5e2671d42073ac22cb20473135e5136628d14cb3e48adb669126d7ad7e34d6",
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        ]
+      },
+      "category": "training"
+    },
+    {
+      "path": "Examples/use_stardist/worm3_points_t1.csv",
+      "bytes": 4154,
+      "sha256": "c54e51c2c93b0ea0572f0dcbc1d27c9fa29f7b59aab0e088b63a6efdd0704d07",
+      "line_count": 181,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "submission_conversion"
+    },
+    {
+      "path": "Examples/use_unet/3D_U_Net_training-clear.ipynb",
+      "bytes": 8503,
+      "sha256": "aa4d5b032479b03d4a0620fbfe6903fc27c2728dd78a30b8d5c06c57cda38d6b",
+      "line_count": 331,
+      "keyword_counts": {
+        "track": 3,
+        "unet": 11,
+        "train": 34,
+        "predict": 2
+      },
+      "notebook": {
+        "cell_count": 16,
+        "code_cell_count": 8,
+        "markdown_cell_count": 8,
+        "output_cell_count": 0,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "b6c8cd543928bb75ac086bcb7a27d70d1f8e3d0b87da60febf8eccc327f82686",
+          "e47797a592370b9f8b5e8cc7bf0d03b5a667dd74f76be577ce94e9ee6ee41af2",
+          "1d15086032fcaae1a8485562e9b5e2c581d035d01f4e40e5b014aeed3d34bc60",
+          "4e3f2816fb0efbbe685bfdc843cce2f5c21098faa6d814e01ab5d37cfed030d5",
+          "780d94c69655052c2aa72d76715d482f162e510854eba332826d64b17443c251",
+          "a2c3063cd5a534cfca2e804c13bc1931abfb77a8aab492c6ab2507ecdb8de9a1",
+          "c44d1fa255dc7d2e39fb2a19c2c2adeea6883993bad6bc6f67bb72afa08b1c28",
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        ]
+      },
+      "category": "training"
+    },
+    {
+      "path": "Examples/use_unet/ensemble_mode_worm4-clear.ipynb",
+      "bytes": 16417,
+      "sha256": "7ff2edece20c88d155466c2d31e82e91346ebd8ce22217f4485679f4335fdbdd",
+      "line_count": 577,
+      "keyword_counts": {
+        "detect": 1,
+        "segment": 28,
+        "track": 62,
+        "unet": 13,
+        "train": 12,
+        "predict": 6
+      },
+      "notebook": {
+        "cell_count": 38,
+        "code_cell_count": 18,
+        "markdown_cell_count": 20,
+        "output_cell_count": 0,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "e3bde084bc0f6f0c912ebe2b19653ac050bddce8d5308c41222c64c0c0a419bb",
+          "bd90b08d221d4c3a6a1057df0c876027f3ec2321f004f84bb36c547895087630",
+          "4a96574e187e6bd92e867112d6538b3b829053c0427b14599039194603b4f2c9",
+          "1bb53adddf99c01d4481b099d8b0a185810fb44f244ef6d8daadd362f6988f9b",
+          "be1314d9f08d60bd9275aab6c5181a1f0e8ae2be194ffd8f5da5bc6bebf8c563",
+          "3554e444194b9ea09d15629737292f2ccd2ce13a5b14eca67244d714634960f0",
+          "cfe20fc44b4e407b6a750a3ee56cb05ba480041049dbd05c7b372bfc61475b49",
+          "94cd2de1fac12a0510a8979e3d0d2f221802fff9e57718cf6f3eb872aad868d7",
+          "00a6c54daaba3a500e0c7802eeea41f4989e558e193470f1a879069f2dc29c0d",
+          "7eac55e9394d666e1456f1447a6d735cf194f7dfd619b200fa404d84b831b72e",
+          "937b86e70a1f4365bf97ce63ea0b17ee61fa5dd794949228b3d311282daf27fa",
+          "faa32f62bc31199865c05147eb5b9a20c4b46411d84252b6c9a68ed47cda7919",
+          "6a2e8875ad7f4141c83877aa86b7fa195d55cd4a8f6f512d4dc39b137b2f390c",
+          "418d4eef8e1df34b973559bd615347be8d2e2ddc608f0fa66ba218741c96b49e",
+          "521209c6ed39e2f8b918d950f525614f19f03a38d8c17e168d522eabc15368ef",
+          "c7420700831163d65467ff6323ad7285f18585171b1017f59a011aad74bf7119",
+          "5735dd2ba5be6cc1acb2e6662337571f46e65d9a963013146ae74128de79d1f9",
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        ]
+      },
+      "category": "relevant_source"
+    },
+    {
+      "path": "Examples/use_unet/single_mode_worm1-clear.ipynb",
+      "bytes": 8562003,
+      "sha256": "8cb0be4a1bb56a332e73fc769b07d74b4d2618f39af65b364e3359d1693555fc",
+      "line_count": 86814,
+      "keyword_counts": {
+        "detect": 2,
+        "segment": 35,
+        "track": 66,
+        "link": 3,
+        "flow": 40,
+        "unet": 24,
+        "geff": 16,
+        "zarr": 11,
+        "ctc": 156,
+        "csv": 165,
+        "sparse": 1,
+        "train": 13,
+        "infer": 1,
+        "predict": 5,
+        "bayes": 1,
+        "ilp": 151
+      },
+      "notebook": {
+        "cell_count": 38,
+        "code_cell_count": 18,
+        "markdown_cell_count": 20,
+        "output_cell_count": 11,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "aee4bb57d5e9de0c5cdef410a54ad896a4a61c7d586657a0f291179084114769",
+          "cb68cff310a010c0da6ccf9abc2907a7066046aa4d75da5e3fd48818a2b32e6f",
+          "d475ab0d29f0d3509618ddc84c292ed953d796378fbb5da44ecf9f6136d8dea2",
+          "1bb53adddf99c01d4481b099d8b0a185810fb44f244ef6d8daadd362f6988f9b",
+          "be1314d9f08d60bd9275aab6c5181a1f0e8ae2be194ffd8f5da5bc6bebf8c563",
+          "3554e444194b9ea09d15629737292f2ccd2ce13a5b14eca67244d714634960f0",
+          "cfe20fc44b4e407b6a750a3ee56cb05ba480041049dbd05c7b372bfc61475b49",
+          "94cd2de1fac12a0510a8979e3d0d2f221802fff9e57718cf6f3eb872aad868d7",
+          "e34e065592e4fcf213523a8b78852cea11dabd1d69ab18abff50195c46d94df2",
+          "7eac55e9394d666e1456f1447a6d735cf194f7dfd619b200fa404d84b831b72e",
+          "937b86e70a1f4365bf97ce63ea0b17ee61fa5dd794949228b3d311282daf27fa",
+          "b61e21692227094f128ab285ff9feebb6873ee18682e0d6cff6b1b4d28e577cf",
+          "4a78444e2b858821b877c9786ea25e5ef3903dcf2f78094979a71fdccda047f6",
+          "418d4eef8e1df34b973559bd615347be8d2e2ddc608f0fa66ba218741c96b49e",
+          "521209c6ed39e2f8b918d950f525614f19f03a38d8c17e168d522eabc15368ef",
+          "c7420700831163d65467ff6323ad7285f18585171b1017f59a011aad74bf7119",
+          "5735dd2ba5be6cc1acb2e6662337571f46e65d9a963013146ae74128de79d1f9",
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        ]
+      },
+      "category": "relevant_source"
+    },
+    {
+      "path": "LOG.MD",
+      "bytes": 1429,
+      "sha256": "aba72dffe1adae1ed41074bb0d9f82fb77916f760a3a23badca7c6de411dc7a0",
+      "line_count": 32,
+      "keyword_counts": {
+        "segment": 2,
+        "track": 11,
+        "flow": 1,
+        "stardist": 3
+      },
+      "symbols": [],
+      "headings": [
+        "### 2024.02.27",
+        "### 2023.04.24",
+        "### 2023.04.24",
+        "### 2023.04.23",
+        "### 2021.12.02",
+        "### 2021.06.17",
+        "### 2021.03.29"
+      ],
+      "category": "relevant_source"
+    }
+  ],
+  "target_paths_missing": [],
+  "read_errors": [],
+  "checkout_exit": 0,
+  "checkout_stderr_excerpt": "",
+  "checkout_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "license": "MIT",
+  "categories_observed": [
+    "data_loader",
+    "dependency",
+    "license",
+    "model",
+    "pipeline",
+    "postprocessing",
+    "readme",
+    "relevant_source",
+    "segmentation",
+    "submission_conversion",
+    "temporal_linking",
+    "training"
+  ],
+  "categories_not_present_in_selected_files": [
+    "data_io",
+    "division",
+    "evaluation",
+    "inference",
+    "optimization"
+  ],
+  "category_coverage": {
+    "data_io": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "data_loader": {
+      "status": "READ",
+      "paths": [
+        "CellTracker/preprocess.py"
+      ]
+    },
+    "dependency": {
+      "status": "READ",
+      "paths": [
+        "pyproject.toml",
+        "requirements.txt"
+      ]
+    },
+    "division": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "evaluation": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "inference": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "license": {
+      "status": "READ",
+      "paths": [
+        "LICENSE"
+      ]
+    },
+    "model": {
+      "status": "READ",
+      "paths": [
+        "CellTracker/unet3d.py",
+        "CellTracker/ffn.py"
+      ]
+    },
+    "optimization": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "postprocessing": {
+      "status": "READ",
+      "paths": [
+        "CellTracker/watershed.py"
+      ]
+    },
+    "readme": {
+      "status": "READ",
+      "paths": [
+        "README.md"
+      ]
+    },
+    "submission_conversion": {
+      "status": "READ",
+      "paths": [
+        "Examples/use_stardist/worm3_points_t1.csv"
+      ]
+    },
+    "temporal_linking": {
+      "status": "READ",
+      "paths": [
+        "CellTracker/track.py",
+        "CellTracker/__init__.py",
+        "CellTracker/analyses.py",
+        "CellTracker/coord_image_transformer.py",
+        "CellTracker/stardist3dcustom.py",
+        "CellTracker/synthesize.py",
+        "Examples/use_stardist/track_stardist_ensemble_mode-h5.ipynb",
+        "Examples/use_stardist/track_stardist_ensemble_mode.ipynb",
+        "Examples/use_stardist/track_stardist_single_mode-h5.ipynb",
+        "Examples/use_stardist/track_stardist_single_mode.ipynb"
+      ]
+    },
+    "training": {
+      "status": "READ",
+      "paths": [
+        "Examples/use_stardist/train_ffn_with_coordinates_csv.ipynb",
+        "Examples/use_stardist/train_ffn_with_label_image.ipynb",
+        "Examples/use_stardist/train_stardist.ipynb",
+        "Examples/use_unet/3D_U_Net_training-clear.ipynb"
+      ]
+    }
+  },
+  "selection_policy": {
+    "included": "all human-readable code, notebooks, documentation, dependency/runtime configuration, schemas, tests, and license/notices at the fixed commit",
+    "excluded": "repository-hosting automation, generated/cache directories, and binary/non-source artefacts",
+    "excluded_path_count": 45,
+    "excluded_paths": [
+      {
+        "path": ".binder/apt.txt",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".binder/environment.yml",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".binder/runtime.txt",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": "Examples/use_unet/3D_U_Net_training.html",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "Examples/use_unet/ensemble_mode_worm4.html",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "Examples/use_unet/single_mode_worm1.html",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/Beta10_xy.svg",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/Beta500_xy.svg",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/Beta50_xy.svg",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/Lambda_0.01_xy.svg",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/Lambda_2_xy.svg",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/auto_vol1_minsize_10_z88.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/auto_vol1_minsize_200_z88.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/autoseg-worm1.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/ffn-data1.svg",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/ffn-data2.svg",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/ffn-data3.svg",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/ffn-epoch1.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/ffn-epoch23.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/ffn-epoch9.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/ffn-loss.svg",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/icon-pycharm_small.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/iteration_200_xy.svg",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/iteration_5_xy.svg",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/jetbrains_small.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/manualseg-worm1.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/nvidia-smi.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/raw-unet-valid.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/raw-unet.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/raw-worm1.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/seg-unet-valid.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/seg-unet.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/track-worm1.gif",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/unet-epoch1-valid.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/unet-epoch1.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/unet-epoch2-valid.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/unet-epoch2.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/unet-epoch28-valid.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/unet-epoch28.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/unet-loss.svg",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/zebrafish_noiselevel_200_z88.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/zebrafish_noiselevel_500_z88.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/zebrafish_noiselevel_50_z88.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/zebrafish_raw_t9697.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "pictures/zebrafish_raw_z88.png",
+        "reason": "non_text_or_non_source_extension"
+      }
+    ]
+  },
+  "scope_note": "Full bytes were read for every listed relevant-source path; only hashes, structure, notebook-cell hashes, and symbol/keyword summaries are persisted. The complete tree and per-path exclusions preserve the coverage boundary."
+}

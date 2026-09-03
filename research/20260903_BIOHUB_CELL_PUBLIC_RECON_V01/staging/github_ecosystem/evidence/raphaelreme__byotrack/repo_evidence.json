@@ -1,0 +1,4684 @@
+{
+  "schema_version": "1.0",
+  "source_id": "GH-DEEP-raphaelreme__byotrack",
+  "repo": "raphaelreme/byotrack",
+  "url": "https://github.com/raphaelreme/byotrack",
+  "relation_to_competition": "modular_biological_tracking_framework",
+  "access_time_utc": "2026-09-03T08:47:12.549897+00:00",
+  "fixed_branch": "main",
+  "fixed_commit_sha": "57c59a88aedfc968b1cb05b2c84be75d90c34957",
+  "latest_commit_date": "2026-08-25T14:06:33+02:00",
+  "tree_file_count": 197,
+  "tree_bytes": 17580,
+  "tree_sha256": "4f32b2f4d7446b0104d193288d71ade2fbe38ab8650cff1c101753e331e8aebc",
+  "tree_evidence_path": "staging/github_ecosystem/evidence/raphaelreme__byotrack/tree.txt",
+  "read_status": "FULL_RELEVANT_REPO_SOURCE_READ",
+  "files_requested": 181,
+  "relevant_source_paths_selected": 181,
+  "relevant_source_selection_coverage": 1.0,
+  "files_actually_read_count": 181,
+  "files_actually_read": [
+    {
+      "path": "README.md",
+      "bytes": 12634,
+      "sha256": "fa48122f2a32db4344d75505ca19a607a4f72f9ebbd973159925618d7a7f524a",
+      "line_count": 337,
+      "keyword_counts": {
+        "detect": 42,
+        "segment": 4,
+        "track": 108,
+        "link": 26,
+        "flow": 8,
+        "transformer": 1,
+        "stardist": 8,
+        "geff": 4,
+        "ctc": 3,
+        "submission": 1,
+        "train": 1,
+        "infer": 1,
+        "evaluate": 1,
+        "kalman": 12,
+        "bayes": 1
+      },
+      "symbols": [],
+      "headings": [
+        "# ByoTrack",
+        "## Installation",
+        "### pip",
+        "### From source",
+        "## Getting started",
+        "# Load some specific implementations",
+        "# Read a video from a path, normalize and select channel",
+        "# First, let's detect targets with the Wavelet Spot Detector",
+        "## Smaller scale <=> search for smaller spots",
+        "## The noise threshold is linear with k. If you increase it, you will retrieve less spots.",
+        "# Then, let's use a KalmanLinker with default parameters estimated from the detections",
+        "# Last, you may filter short tracks and interpolate over missed detections if any",
+        "# Final visualization",
+        "# Export tracks",
+        "## Tracking Pipeline",
+        "### Detection",
+        "### Detection Refinement",
+        "### Linking",
+        "### Track Refinement",
+        "## Data, Evaluation & Utilities",
+        "### Data input",
+        "### Optical flow",
+        "### Datasets",
+        "### Metrics",
+        "## Cell Tracking Challenge",
+        "## Contributing",
+        "## Cite us",
+        "## References"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1068,
+      "sha256": "99365c45c419109d966e9fc0d0fd6609e7ad7a648e772974e375f40dbba9335d",
+      "line_count": 22,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "license"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 3834,
+      "sha256": "d35a262306aeb6d7b15378d570f8b1a08181cc995aa24655b22b7201561f52db",
+      "line_count": 168,
+      "keyword_counts": {
+        "segment": 1,
+        "track": 9,
+        "flow": 2,
+        "stardist": 1,
+        "geff": 2,
+        "ctc": 1
+      },
+      "symbols": [],
+      "category": "dependency"
+    },
+    {
+      "path": "examples/ctc/link.py",
+      "bytes": 15311,
+      "sha256": "c9165f65102c44927d8f15ef6d0eae751998c0a0a03bad8842c1b09141978856",
+      "line_count": 385,
+      "keyword_counts": {
+        "detect": 83,
+        "segment": 1,
+        "track": 45,
+        "link": 47,
+        "flow": 31,
+        "ctc": 18,
+        "sparse": 8,
+        "evaluate": 2,
+        "kalman": 23
+      },
+      "symbols": [
+        "get_average_size",
+        "get_average_min_dist",
+        "link",
+        "main"
+      ],
+      "category": "inference"
+    },
+    {
+      "path": "src/byotrack/api/tracker.py",
+      "bytes": 8084,
+      "sha256": "2bec3a8221602911c88eb763f57ce432d937921b37d48e4a95ccfe6f36945d25",
+      "line_count": 252,
+      "keyword_counts": {
+        "detect": 64,
+        "segment": 6,
+        "track": 79,
+        "link": 39
+      },
+      "symbols": [
+        "PauseableTQDM",
+        "__init__",
+        "update",
+        "pause",
+        "unpause",
+        "Tracker",
+        "run",
+        "MultiStepTracker",
+        "__init__",
+        "run",
+        "BatchMultiStepTracker",
+        "__init__",
+        "run",
+        "_online_tracking_with_ground_truth_detector"
+      ],
+      "category": "pipeline"
+    },
+    {
+      "path": "src/byotrack/api/tracking_graph.py",
+      "bytes": 14399,
+      "sha256": "cb9950acfc911a1dee6d4f9b78b7517827998fa6ede3e4e864e0880983725700",
+      "line_count": 382,
+      "keyword_counts": {
+        "detect": 24,
+        "segment": 56,
+        "track": 118,
+        "link": 1,
+        "assign": 3,
+        "ctc": 1,
+        "infer": 2
+      },
+      "symbols": [
+        "TrackingGraph",
+        "__init__",
+        "from_tracks",
+        "from_nx",
+        "to_tracks",
+        "_root_nodes",
+        "_segments",
+        "_identify_segments",
+        "_get_split_and_merge_ids"
+      ],
+      "category": "graph_model"
+    },
+    {
+      "path": "src/byotrack/dataset/ctc.py",
+      "bytes": 17912,
+      "sha256": "4d4230ef22fcd0c7601a17afbeb57ac608bae7a8be96a7f60dec4efbc097c953",
+      "line_count": 437,
+      "keyword_counts": {
+        "detect": 89,
+        "segment": 44,
+        "track": 160,
+        "ctc": 20
+      },
+      "symbols": [
+        "_parse_meta_data",
+        "load_detections",
+        "load_tracks",
+        "save_detections",
+        "_save_metadata",
+        "save_tracks"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/byotrack/geff/io.py",
+      "bytes": 13946,
+      "sha256": "7fd67da338ff5ae194e003c24f520e84db3550454715237c3686adfff2a4ddf3",
+      "line_count": 365,
+      "keyword_counts": {
+        "detect": 51,
+        "segment": 17,
+        "track": 70,
+        "geff": 51,
+        "zarr": 56,
+        "infer": 1
+      },
+      "symbols": [
+        "_delay_execution",
+        "wrapper",
+        "executor",
+        "save_video_to_zarr",
+        "save_detections_to_zarr",
+        "save_tracks_to_geff",
+        "load_video_from_zarr",
+        "load_detections_from_zarr",
+        "load_tracks_from_geff",
+        "load_video_from_geff",
+        "load_detections_from_geff"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/linker/frame_by_frame/greedy_lap.py",
+      "bytes": 1835,
+      "sha256": "22c497e914dfda9df217a5bbe6296ea9388ba8ccb0fe5b992618f7a23e784614",
+      "line_count": 59,
+      "keyword_counts": {
+        "track": 2,
+        "link": 11,
+        "assign": 2
+      },
+      "symbols": [
+        "_fast_build_links",
+        "greedy_assignment_solver"
+      ],
+      "category": "assignment"
+    },
+    {
+      "path": "src/byotrack/implementation/linker/frame_by_frame/kalman_linker.py",
+      "bytes": 34398,
+      "sha256": "62543d7a2b90e45d64599471d29f9f37133d2a65d1da3706b250d385f49486ac",
+      "line_count": 691,
+      "keyword_counts": {
+        "detect": 82,
+        "track": 108,
+        "link": 35,
+        "assign": 3,
+        "flow": 13,
+        "sparse": 4,
+        "predict": 14,
+        "prune": 1,
+        "kalman": 94,
+        "bayes": 1
+      },
+      "symbols": [
+        "Cost",
+        "TrackBuilding",
+        "KalmanLinkerParameters",
+        "__init__",
+        "check",
+        "estimate",
+        "estimate_association_threshold",
+        "estimate_process_std_from_tracks",
+        "build_filter",
+        "KalmanLinker",
+        "__init__",
+        "reset",
+        "collect",
+        "motion_model",
+        "cost",
+        "post_association",
+        "build_initial_covariance"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/implementation/linker/trackastra/trackastra.py",
+      "bytes": 5135,
+      "sha256": "b47c170a4a257bd87c5b2a8e0d732a9e747f9cb106723065195d91d0fad4b871",
+      "line_count": 128,
+      "keyword_counts": {
+        "detect": 11,
+        "segment": 1,
+        "track": 36,
+        "link": 7,
+        "division": 2,
+        "flow": 1,
+        "transformer": 2,
+        "train": 6,
+        "predict": 6,
+        "ilp": 12
+      },
+      "symbols": [
+        "TrackAstraParameters",
+        "TrackAstraLinker",
+        "__init__",
+        "run"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/implementation/refiner/stitching/dist_stitcher.py",
+      "bytes": 8961,
+      "sha256": "a1cc5febfdc9e432d5d61a499c699e03ddb6405a62b7ad72f053933e030cdd06",
+      "line_count": 227,
+      "keyword_counts": {
+        "detect": 4,
+        "track": 119,
+        "link": 8,
+        "assign": 1,
+        "flow": 1
+      },
+      "symbols": [
+        "DistStitcher",
+        "__init__",
+        "run",
+        "merge",
+        "skip_computation",
+        "normalize",
+        "_extract_connected_components"
+      ],
+      "category": "postprocessing"
+    },
+    {
+      "path": "src/byotrack/metrics/ctc.py",
+      "bytes": 24918,
+      "sha256": "a9e31c5e8da11f96e926433e38e218d024539874e33ae2ca63e6bcf150136f2c",
+      "line_count": 518,
+      "keyword_counts": {
+        "detect": 88,
+        "segment": 15,
+        "track": 156,
+        "assign": 1,
+        "ctc": 56,
+        "predict": 10,
+        "evaluate": 15
+      },
+      "symbols": [
+        "CTCSoftwareRunner",
+        "__init__",
+        "run",
+        "CTCMetrics",
+        "compute_tracking_metric",
+        "compute_detection_metric",
+        "copy_ground_truth",
+        "BioMetrics",
+        "__init__",
+        "run",
+        "compute"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "bytes": 828,
+      "sha256": "54e06e61d29fbad020a3a3601f83400c529784c70d27aeea65415bd87bbe7e6e",
+      "line_count": 33,
+      "keyword_counts": {
+        "detect": 1,
+        "link": 1
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": ".readthedocs.yaml",
+      "bytes": 307,
+      "sha256": "620ab844d701c313ddbd4d2f01404abc77f99a8d1d0ebf027fae0cd35793fdba",
+      "line_count": 15,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 11773,
+      "sha256": "6f5aea91b3bbee5fa7bf5c41ea4ebd49a5c0d8a17b5ef205f1c838e22823d6ab",
+      "line_count": 257,
+      "keyword_counts": {
+        "detect": 40,
+        "segment": 7,
+        "track": 69,
+        "link": 9,
+        "division": 1,
+        "lineage": 4,
+        "assign": 1,
+        "flow": 5,
+        "geff": 10,
+        "zarr": 6,
+        "ctc": 7,
+        "train": 1,
+        "infer": 1,
+        "kalman": 2,
+        "ilp": 3
+      },
+      "symbols": [],
+      "headings": [
+        "# Changelog",
+        "## [2.0.6] - 2026-08-25",
+        "### Added",
+        "### Changed",
+        "### Fixed",
+        "## [2.0.5] - 2026-08-19",
+        "### Breaking Changes",
+        "### Added",
+        "## [2.0.4] - 2026-08-17",
+        "### Added",
+        "### Changed",
+        "## [2.0.3] - 2026-08-17",
+        "### Breaking Changes",
+        "### Added",
+        "### Changed",
+        "### Fixed",
+        "## [2.0.2] - 2026-07-17",
+        "### Breaking Changes",
+        "### Added",
+        "### Fixed",
+        "## [2.0.1] - 2026-07-13",
+        "### Breaking Changes",
+        "### Added",
+        "### Changed",
+        "### Fixed",
+        "## [2.0.0] - 2026-07-06",
+        "### Breaking Changes",
+        "### Added",
+        "### Fixed"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/README.md",
+      "bytes": 536,
+      "sha256": "3e84a313e2f6e09c319ce9b2bebd2bbf22b596ecf9656b5b2f9080e8299a5a09",
+      "line_count": 17,
+      "keyword_counts": {
+        "track": 2
+      },
+      "symbols": [],
+      "headings": [
+        "# ByoTrack Documentation",
+        "# Build the documentation locally"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "docs/source/api/detections.rst",
+      "bytes": 455,
+      "sha256": "96996df6748d18cde313d0f65f0aa91c08ed1fe5421e20387a9461ad7fa5cb87",
+      "line_count": 32,
+      "keyword_counts": {
+        "detect": 10,
+        "segment": 2,
+        "track": 5
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/source/api/detector.rst",
+      "bytes": 57,
+      "sha256": "32a5eb57504beeb20933cbc88bfd15d52c06126931b568a95d00cc3dfd3b5797",
+      "line_count": 5,
+      "keyword_counts": {
+        "detect": 2,
+        "track": 1
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/source/api/linker.rst",
+      "bytes": 51,
+      "sha256": "3828fe9ef02f167dd0b28cd39c98e981415fbcd108398c18ca1c314419037d3c",
+      "line_count": 5,
+      "keyword_counts": {
+        "track": 1,
+        "link": 2
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "docs/source/api/optical_flow.rst",
+      "bytes": 82,
+      "sha256": "7050df37c684d992a2c47b3c1e65df405bde69b3b9a387698859ada783d58942",
+      "line_count": 5,
+      "keyword_counts": {
+        "track": 1,
+        "flow": 3
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/source/api/parameters.rst",
+      "bytes": 103,
+      "sha256": "9f34f48ffbea5f031f8c9b62f3753dc5923276b87225b1bc219d7af09647902c",
+      "line_count": 7,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/source/api/refiner.rst",
+      "bytes": 54,
+      "sha256": "b9b3f0cb016436050116e1d0d449b711215ada81ba7902ac4ff913ea395f90e5",
+      "line_count": 5,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/source/api/tracker.rst",
+      "bytes": 54,
+      "sha256": "9bd512fffa155e011296473edf22595ca6a672f2d835583499fe277d11397ef3",
+      "line_count": 5,
+      "keyword_counts": {
+        "track": 3
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "docs/source/api/tracks.rst",
+      "bytes": 126,
+      "sha256": "0428d7183b2adf88d51e383eccbfd9a58fc005538a482d8642c6acdfc7247829",
+      "line_count": 11,
+      "keyword_counts": {
+        "track": 6
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "docs/source/api/video.rst",
+      "bytes": 673,
+      "sha256": "3c55fe8514124bfbf42bbead1366263cc05a948e245dcc4d113dd6092b4eabb3",
+      "line_count": 35,
+      "keyword_counts": {
+        "track": 10
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/source/conf.py",
+      "bytes": 1077,
+      "sha256": "ba18d9c96eab30782c51230db5a0c734712c52845789ed0cbafe08e810a9eaa8",
+      "line_count": 47,
+      "keyword_counts": {
+        "track": 2
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/source/datasets/ctc.rst",
+      "bytes": 98,
+      "sha256": "d1e382b37f3ac794e00d2740c6f8249217ba36ffe1fc58045e283c7e7920f9d5",
+      "line_count": 5,
+      "keyword_counts": {
+        "track": 2,
+        "ctc": 2
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "docs/source/datasets/sinetra.rst",
+      "bytes": 58,
+      "sha256": "821c2858b0944d0762e774f264a1518d8b677f60022ce9b27a0dc65ae24d7fb3",
+      "line_count": 5,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "docs/source/fiji.rst",
+      "bytes": 200,
+      "sha256": "67bee644df3671de9a8fdc9249e462ae43eacd0762146e8e21264cbb3f7f82e7",
+      "line_count": 9,
+      "keyword_counts": {
+        "track": 2
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/source/icy.rst",
+      "bytes": 196,
+      "sha256": "01ac9f57f3cbea40bd6219ba8e4a24cfa696f3d6d5840b690b8a3886fd43e060",
+      "line_count": 9,
+      "keyword_counts": {
+        "track": 2
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/source/implementation/detectors/detection_refiners.rst",
+      "bytes": 97,
+      "sha256": "157fb6c4a1ec4509f9194e44ea18ec3c29462f33a27fe2804e746f1eaf9800eb",
+      "line_count": 5,
+      "keyword_counts": {
+        "detect": 2,
+        "track": 1
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/source/implementation/detectors/detectors.rst",
+      "bytes": 106,
+      "sha256": "e39e07ef2263257fbba47f9e40fe1ae6f97a7677b72f8ec64cb52d05c90928bd",
+      "line_count": 11,
+      "keyword_counts": {
+        "detect": 2,
+        "stardist": 1
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/source/implementation/detectors/stardist.rst",
+      "bytes": 155,
+      "sha256": "75c817df5c303dce7ec913494cfc0159778e37be8d4a3984b7ae52243765f147",
+      "line_count": 8,
+      "keyword_counts": {
+        "detect": 2,
+        "track": 1,
+        "stardist": 3
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/source/implementation/detectors/wavelet.rst",
+      "bytes": 214,
+      "sha256": "eaee38661d6036df0b95e139b694b4db2e0e452e939510b7f22295ab147666ee",
+      "line_count": 8,
+      "keyword_counts": {
+        "detect": 2,
+        "track": 1
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/source/implementation/linkers/frame_by_frame.rst",
+      "bytes": 313,
+      "sha256": "240abf08bb8de016827d35dc91c61adef12fb267408c9af82e508921ec86da64",
+      "line_count": 9,
+      "keyword_counts": {
+        "track": 3,
+        "link": 4
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/source/implementation/linkers/icy_emht.rst",
+      "bytes": 209,
+      "sha256": "5799ab071992b92561f2ad6a125eac5e6e83bbb565cd721b3f4eb9d049c4386a",
+      "line_count": 10,
+      "keyword_counts": {
+        "track": 2,
+        "link": 1
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/source/implementation/linkers/kalman.rst",
+      "bytes": 137,
+      "sha256": "9278efa9f21fd06e2c591f1e36ec220247d0c1ada342e671c35d72d01f519544",
+      "line_count": 7,
+      "keyword_counts": {
+        "track": 1,
+        "link": 3,
+        "kalman": 2
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/source/implementation/linkers/koft.rst",
+      "bytes": 306,
+      "sha256": "c9f0fc4acdb430e365606ce017cb1c2b87791e95fe3f33abafe3fd8e559c96c3",
+      "line_count": 9,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 2,
+        "link": 3,
+        "flow": 3,
+        "kalman": 3
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/source/implementation/linkers/linkers.rst",
+      "bytes": 153,
+      "sha256": "fd0699876636d8c8b875d4de39688822ad4be0ea035f44767f31eac96e7aa133",
+      "line_count": 15,
+      "keyword_counts": {
+        "track": 2,
+        "link": 1,
+        "kalman": 1
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/source/implementation/linkers/nearest_neighbor.rst",
+      "bytes": 128,
+      "sha256": "b43fa996e00603491b7df80b8a265d7f28d320d9e4afa4eb24610cc65b4db3ba",
+      "line_count": 5,
+      "keyword_counts": {
+        "track": 1,
+        "link": 2
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/source/implementation/linkers/trackmate.rst",
+      "bytes": 124,
+      "sha256": "6cb339976b5539903297a4c103a40c50c409a8732a9cf9bdd132a4632b7e2c69",
+      "line_count": 7,
+      "keyword_counts": {
+        "track": 5,
+        "link": 1
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/source/implementation/linkers/trackonstra.rst",
+      "bytes": 151,
+      "sha256": "fde8dca8262777765411fb0d1dea3b97883451a0cf976c595508df84ce963a03",
+      "line_count": 7,
+      "keyword_counts": {
+        "track": 4,
+        "link": 2
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/source/implementation/optical_flows/opencv.rst",
+      "bytes": 75,
+      "sha256": "6fcb83f05f0e149f343c63b01741c381ebb4e3bccd4384816029d5dbf8d09039",
+      "line_count": 5,
+      "keyword_counts": {
+        "track": 1,
+        "flow": 1
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/source/implementation/optical_flows/optical_flows.rst",
+      "bytes": 90,
+      "sha256": "1384cc431c706a1a5a1d2ba5710c61afe49abe95775b18bd0b4a3a5e6dbd5ecc",
+      "line_count": 10,
+      "keyword_counts": {
+        "flow": 1
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/source/implementation/optical_flows/skimage.rst",
+      "bytes": 88,
+      "sha256": "92c9f002112f328e9bfefe9bf0610e7389229c96f2382488bc11fd7a7042db18",
+      "line_count": 5,
+      "keyword_counts": {
+        "track": 1,
+        "flow": 1
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/source/implementation/refiners/cleaner.rst",
+      "bytes": 73,
+      "sha256": "e269ab90d83f643a1a1a73bce092c832a3f902ec056147da098aadf7a70bad44",
+      "line_count": 5,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/source/implementation/refiners/dist_stitcher.rst",
+      "bytes": 101,
+      "sha256": "45a84d8a6c9e175a7709ceacd803069da2fa9dd7a29886d74856da99c06f2ff8",
+      "line_count": 5,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/source/implementation/refiners/emc2.rst",
+      "bytes": 187,
+      "sha256": "1c1fe6ad7c1b21a8b060b882e0b8fc649b926b0a7e945fd4bd6d03ea85b48865",
+      "line_count": 7,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/source/implementation/refiners/interpolater.rst",
+      "bytes": 144,
+      "sha256": "41baa552fd9d289d1f50a7a9d92a3e4095d4905bf6b1832e370c9fadb488ab0d",
+      "line_count": 7,
+      "keyword_counts": {
+        "track": 2
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/source/implementation/refiners/propagation.rst",
+      "bytes": 85,
+      "sha256": "c4c76d11ddbdbb7748e435cc62f0ae251607abe97911ce068caeb0340029c509",
+      "line_count": 5,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/source/implementation/refiners/refiners.rst",
+      "bytes": 123,
+      "sha256": "c9de07a415998d82ac3732e22bd07a5cb98434286f93f029367c7bb1e31cc304",
+      "line_count": 13,
+      "keyword_counts": {},
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/source/implementation/refiners/smoother.rst",
+      "bytes": 116,
+      "sha256": "a16d8b5ac85a07758b215b872d154924e5224c2e2dfa60bce12b2bb0d7ac3910",
+      "line_count": 5,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/source/index.rst",
+      "bytes": 5643,
+      "sha256": "1b6b6e11d726eb2b8e25278006a7711da02fd48da9727033f97fbc17b6df6700",
+      "line_count": 152,
+      "keyword_counts": {
+        "detect": 10,
+        "track": 31,
+        "link": 9,
+        "flow": 4,
+        "transformer": 1,
+        "stardist": 1,
+        "ctc": 2,
+        "evaluate": 1,
+        "kalman": 2,
+        "bayes": 1
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/source/install.rst",
+      "bytes": 1754,
+      "sha256": "8c49a9913838f02c72109a44859af637bc7bd493b86301e544a79a3350951017",
+      "line_count": 58,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 14,
+        "link": 3,
+        "flow": 1,
+        "stardist": 5,
+        "geff": 4
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/source/metrics/ctc.rst",
+      "bytes": 98,
+      "sha256": "45ee6d1d1a6935a9a872e61d15da03eb88413d9164076b9e628a7e1efbcba45a",
+      "line_count": 5,
+      "keyword_counts": {
+        "track": 2,
+        "ctc": 2
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "evaluation"
+    },
+    {
+      "path": "docs/source/napari.rst",
+      "bytes": 315,
+      "sha256": "54d4876e2681e53d7e890e7fe1ae9f23566162ac8231fc6be9c54afdc624a693",
+      "line_count": 11,
+      "keyword_counts": {
+        "track": 3
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/source/run_examples/ByoTrack fundamental.ipynb",
+      "bytes": 3356644,
+      "sha256": "dbe894cd9261eb03aedb99734b46bbdeabc0068234cadc9251b3325b96511c60",
+      "line_count": 962,
+      "keyword_counts": {
+        "detect": 41,
+        "segment": 8,
+        "track": 116,
+        "link": 27,
+        "flow": 19,
+        "geff": 6,
+        "zarr": 4,
+        "ctc": 104,
+        "csv": 97,
+        "infer": 1,
+        "predict": 1,
+        "kalman": 4,
+        "ilp": 81
+      },
+      "notebook": {
+        "cell_count": 40,
+        "code_cell_count": 33,
+        "markdown_cell_count": 7,
+        "output_cell_count": 17,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "ceffe8607bea860c8c749fcb5530e492cce00efab43b24c9912b56bce1a464b4",
+          "62ef153809c2456cbfa2a9f716e5cb45433f81f7581d73ea5b381354c4c11db7",
+          "66d00d6d6d4edc7dc612ff6b563e174899ffe2a49ac7f4fc011d5f19f8dcb4f3",
+          "d41b04516e1e15f93c119d12152040c0b00e5948e5937d52b9ffc00e1b2ffcaf",
+          "294e949f580857c52bfea19e1ded5172f1647fe09351ecc2c0cf039176f3d11e",
+          "98f0c5dd0b8c47e9a8ddebee45c46d39b6099d76e757e099b853772b130f475e",
+          "f0b4ccb8b50556a68cb634fdce686e497c380c744f5a09c863eb56dfe5062bd4",
+          "85cfcf686458239b7f28be18261e1aa2c9f2855acac1c22b95a20465ad19f39e",
+          "7b40546f1a4782df78f2331c69da018090421cfa88f4af56d3b8e46bdcdd093b",
+          "629c16665f7590d63439f995cdd2861fceeefaf05f0f8ea7e2e0fc0d0a56e992",
+          "36f0fd567eb4a1c8e7db71850011c91d6fc89c025c2bc0d850f0c952c7faeaaf",
+          "ea5478062e4609a45b878272c3108807ae6b1880ebaf0a62de371ee47b26b3ba",
+          "8013bb52cb3b50dcb082db7e0ef82b9153435fbedfe32f35102426c770f12dbe",
+          "00a9bd26e884bc47435e21c58b9bd2c23bf2002233bf011b8ddf6f70c694bcaa",
+          "74a2fa3d58d049cfd72b0fe11c5b27872ba8682b2c596145cf822063a62580da",
+          "a1b451fa90a1f42dc413140db1fb1a1729105c3ad6d241300216a5be6da40af6",
+          "76cda17b9f4462f0b5392842e454db7f806ee947790c64c1f281f8ea9483a937",
+          "e92d49d496f45f03c24d87913ede8004be11c3a91a5cd5b57179692c013a4ad1",
+          "f4ece0b633b753d37272c08058ff1ffb11a28542b0be0efebc064a2d33c847ad",
+          "6bafdb4a356e012cb28a1002177c1c05c528862674f050e4e2b0c39034111493",
+          "ca8d9b5cd344d562b965441e7b8115d6a4adb99761a8209e71924169e77614a9",
+          "6bafdb4a356e012cb28a1002177c1c05c528862674f050e4e2b0c39034111493",
+          "d26e951b44cf6a4344f40c112d7edb8aaee085375ea2a5a3979b250d77fcc7de",
+          "6bafdb4a356e012cb28a1002177c1c05c528862674f050e4e2b0c39034111493",
+          "47c1aed7df60545e47c2ce8e695658ccddf13f6c8ae703882adbfb231bc3de3c",
+          "b7eea55bbebdca4a133faa42a71016588b7fcf95f407f235aa8b97a92c8b02e4",
+          "27c321a20b0b8a67c991bffc726d04fc2990f6fc8c81b8e34869eafba707b9b0",
+          "3566a6f5e36b99d0afccf8c60f21f73c28710bb7409c9dd5db13941b1fe965e7",
+          "6bafdb4a356e012cb28a1002177c1c05c528862674f050e4e2b0c39034111493",
+          "9bf7b06dce9673650ca53c9f008a780f28cbf54dfcec00c02273ae09b33b230a",
+          "76cda17b9f4462f0b5392842e454db7f806ee947790c64c1f281f8ea9483a937",
+          "73952c139ef03879dad1252d77a3012ae39e9e9f4d93536e0322de05c7ae2112",
+          "d2bc52e4f2c449a9aef5c40d13c49bce893950943f6e5ad42138db008c9d77cf"
+        ]
+      },
+      "category": "temporal_linking"
+    },
+    {
+      "path": "docs/source/run_examples/Detectors.ipynb",
+      "bytes": 1015403,
+      "sha256": "82e3e7cfa9ef474cfefc3b966729ff7235f66d3dfd7616a749668c35d041c7e1",
+      "line_count": 620,
+      "keyword_counts": {
+        "detect": 91,
+        "segment": 11,
+        "track": 15,
+        "link": 2,
+        "flow": 8,
+        "unet": 1,
+        "stardist": 25,
+        "zarr": 1,
+        "ctc": 23,
+        "csv": 34,
+        "train": 14,
+        "ilp": 31
+      },
+      "notebook": {
+        "cell_count": 22,
+        "code_cell_count": 17,
+        "markdown_cell_count": 5,
+        "output_cell_count": 9,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "0b4ced1da11134a1614781aa6a9e797098b25ab516134d3363bf8ac984c24fff",
+          "924ecce5c73dd1486cbc023f4fe560ea816f0bc93c5b66afb1553496f0d86b82",
+          "66d00d6d6d4edc7dc612ff6b563e174899ffe2a49ac7f4fc011d5f19f8dcb4f3",
+          "d41b04516e1e15f93c119d12152040c0b00e5948e5937d52b9ffc00e1b2ffcaf",
+          "294e949f580857c52bfea19e1ded5172f1647fe09351ecc2c0cf039176f3d11e",
+          "fc7e2e795f45eae8e8b07e3afe78fe1fd7a1c5f197d0f6dc8bb1069b440a8e8c",
+          "ed08967ca071562b2973e67893c812bac4689ba7e48718275e982f3238deeee0",
+          "bc84dd638d222fdfc1494948d097fa24594c440d49d8f7cb95889c3323bd4ea8",
+          "4813adce0f13e9caf0f6730a0b72a68c8989c2d5a8e3315783770103bab6d6d6",
+          "85cfcf686458239b7f28be18261e1aa2c9f2855acac1c22b95a20465ad19f39e",
+          "a6cccd36e5cb4a60d826ad62cc59ddc32939d7aa6f41142b9208b8d4cd4ed13e",
+          "fe6d7b58b8dcdd560a8592f0b858faeb2029be478265e66afeb630bb6969ed94",
+          "333b2e7e147b48f7f46d02312d0c076653842b3d312bb4a447702fc98a56b286",
+          "54959687ad4aed8f20a47794162779c48f27b804eb0c33d1128535cb792685db",
+          "85cfcf686458239b7f28be18261e1aa2c9f2855acac1c22b95a20465ad19f39e",
+          "7b40546f1a4782df78f2331c69da018090421cfa88f4af56d3b8e46bdcdd093b",
+          "b462aa0f79cbd726d34b4a18dbe75d63a7d11cefa700b6dd1912fed7a0de7588"
+        ]
+      },
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/source/run_examples/Linkers.ipynb",
+      "bytes": 4597039,
+      "sha256": "4bea521ad3013f1ed2744c471d103263621fafad64bba642a1c4f1425a924d3d",
+      "line_count": 2347,
+      "keyword_counts": {
+        "detect": 168,
+        "segment": 4,
+        "track": 411,
+        "link": 213,
+        "division": 1,
+        "assign": 7,
+        "flow": 51,
+        "transformer": 3,
+        "unet": 6,
+        "geff": 9,
+        "zarr": 7,
+        "ctc": 140,
+        "csv": 136,
+        "sparse": 23,
+        "train": 18,
+        "infer": 1,
+        "predict": 16,
+        "prune": 4,
+        "kalman": 83,
+        "bayes": 2,
+        "ilp": 120
+      },
+      "notebook": {
+        "cell_count": 70,
+        "code_cell_count": 60,
+        "markdown_cell_count": 10,
+        "output_cell_count": 33,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "cf9d5af5d6920b77109e46126870cddb197dee390eb8f17735317a58faa301a7",
+          "62ef153809c2456cbfa2a9f716e5cb45433f81f7581d73ea5b381354c4c11db7",
+          "66d00d6d6d4edc7dc612ff6b563e174899ffe2a49ac7f4fc011d5f19f8dcb4f3",
+          "d41b04516e1e15f93c119d12152040c0b00e5948e5937d52b9ffc00e1b2ffcaf",
+          "294e949f580857c52bfea19e1ded5172f1647fe09351ecc2c0cf039176f3d11e",
+          "98f0c5dd0b8c47e9a8ddebee45c46d39b6099d76e757e099b853772b130f475e",
+          "a8be9dcd34163561d14a3c4ca2db56a6df02771a2fed8aebc7453a6239225ed7",
+          "85cfcf686458239b7f28be18261e1aa2c9f2855acac1c22b95a20465ad19f39e",
+          "b462aa0f79cbd726d34b4a18dbe75d63a7d11cefa700b6dd1912fed7a0de7588",
+          "3c6ee338c557d6ba3735972c331120508d8f1ec07e9d32e5a35df3f3e40846c0",
+          "fc2e0e9797ac6d2f219736f4ea841ac030277a3fdea615e141a0509f93d0ac8f",
+          "0ec15c2f61b703b7b6087acf736055b4bb27dd28f758880025f5d1cb3ed4f093",
+          "13bb0c6069633bfb20e02ccdd73bd421065d1ac455e21a6a2112093b34bdcfa7",
+          "1fdae92d3d8fc6379904eddbd6e1186191e7cacf60cab760a75bb20db83be6bb",
+          "76cda17b9f4462f0b5392842e454db7f806ee947790c64c1f281f8ea9483a937",
+          "4fb9b87840df48e2170745f37709bbc79ef5544cbb9bd71747d7732d8aa365d0",
+          "203c25d2cc7d479516749d978a3dffca857f4621d0abad5e7a5e2346b7617a21",
+          "0ecbf1bb18c8b8d4d62d638ad63cb0c6adab55a173f932de50bdb5eb1dcd4787",
+          "a0db0d73bf63c2a5fdf3335e99cc98e69d2739a6bfa39be5b34b629228ea32eb",
+          "6557ed768a97e25dbdc1752e33ce4092637ace6fcdceeae0f3d8ba4716ad9e2b",
+          "dc91f537e9e8dd3ac0b53ce662ff792b183e8cf69665f4e62a1f7ed76c13c998",
+          "76cda17b9f4462f0b5392842e454db7f806ee947790c64c1f281f8ea9483a937",
+          "4fb9b87840df48e2170745f37709bbc79ef5544cbb9bd71747d7732d8aa365d0",
+          "9fbf4a0f4da7fff1a3641e6bf8dc73661c86234ed04c3aa540d1257133795101",
+          "db777af9ef800b3d4cf2d49e7e750975377fb48ba435f8fc2aa6e105646a645c",
+          "d02f4a656a5e031d37785b4228c3f79688efe8290db16ec98bf44a28734baa42",
+          "66876a78eee0b8b8c665f48b41ca78b9105cba6491a59138a86fe741aba5fb67",
+          "5ca433475c5c492692370c4db60975f84574fec5c7465b303b99cb74c08b2c6e",
+          "83cd4466b14c34ea82b3be8b745c8d5ff594b612d1016879ca9ab2d265322415",
+          "877d75a0cb388c6871e950e6c25ecb3be87d99b61ddb6a9e47c2d06b1737626e",
+          "76cda17b9f4462f0b5392842e454db7f806ee947790c64c1f281f8ea9483a937",
+          "4fb9b87840df48e2170745f37709bbc79ef5544cbb9bd71747d7732d8aa365d0",
+          "44971f8085d90377f717653c71a00ed33d16084d78e5aa7a2a949b57a16cd736",
+          "824d7fe28ae2fec007cd4500f7bd50dfbee3d35e70ad06da6349d889ea85e830",
+          "c82b64886291090dcbfa0dba86a57d7c495d86a068084f0239d7fb19e88ea52e",
+          "fcbcfc6a9394fab78f2b2ff0a71fe81d2fe995a44be9a3ff8ea95adbaee3563d",
+          "877d75a0cb388c6871e950e6c25ecb3be87d99b61ddb6a9e47c2d06b1737626e",
+          "76cda17b9f4462f0b5392842e454db7f806ee947790c64c1f281f8ea9483a937",
+          "4fb9b87840df48e2170745f37709bbc79ef5544cbb9bd71747d7732d8aa365d0",
+          "2fd42122afa95b3069ed2b38e2203a8804b8f422054b30ea9e18c09bfabdf775",
+          "23d99ecd0baf4ef84efe4762728d146a42b09f03bec415194d3ea71eff030333",
+          "d2395c2ec56b9378316b29fbeaeed6b5c0efb02d47d0441e11034609e685f61f",
+          "54a62d14f188b0add340fb57d929bab260738be31cac1507beea95bca6774644",
+          "877d75a0cb388c6871e950e6c25ecb3be87d99b61ddb6a9e47c2d06b1737626e",
+          "76cda17b9f4462f0b5392842e454db7f806ee947790c64c1f281f8ea9483a937",
+          "4fb9b87840df48e2170745f37709bbc79ef5544cbb9bd71747d7732d8aa365d0",
+          "b969f78538ab55b58db07a253825a4bb8f34a1bdf4c4e72c536194fe94f1907c",
+          "fa86f9cafd40f015e2cba7b65a4cf852280814be6a0e0e1b04f797db40a11fa1",
+          "b6d8ac02a6cbb3714f21e230e3508e2939c83abe649fcb5cd40b8d77721cb0e9",
+          "dc74ab0e8c5e04d21be289b9bb4995c8aa4db488b88c9900dfa8d2f22bfd6b5e",
+          "877d75a0cb388c6871e950e6c25ecb3be87d99b61ddb6a9e47c2d06b1737626e",
+          "76cda17b9f4462f0b5392842e454db7f806ee947790c64c1f281f8ea9483a937",
+          "4fb9b87840df48e2170745f37709bbc79ef5544cbb9bd71747d7732d8aa365d0",
+          "cb6bb46adcbc573f93066fba735bcef587acd18fb28d53eb2cd097743ad8c058",
+          "35eeb0faab011b3ead350626d82b5ed053c6cdbab6d20aebcc8d1dfabb09aaa5",
+          "221bbee32f95a9bc250d42d9f2f0c3aedfad968bd0a177c531237611894d8efa",
+          "7659238ec5deed0fc45a55176eac5e904994422e39af527d1502161777c47c5a",
+          "b98572e7f8448e2dc323ea3e5793f0bd5d6dc6ef4fd0719b2e3818910a2c28d6",
+          "76cda17b9f4462f0b5392842e454db7f806ee947790c64c1f281f8ea9483a937",
+          "4fb9b87840df48e2170745f37709bbc79ef5544cbb9bd71747d7732d8aa365d0"
+        ]
+      },
+      "category": "temporal_linking"
+    },
+    {
+      "path": "docs/source/run_examples/Video.ipynb",
+      "bytes": 1602493,
+      "sha256": "bcb6f3ebdceb74883c308375a7a43a148f12b03d8ed1b78200c0b8cd2d232fd7",
+      "line_count": 826,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 57,
+        "link": 1,
+        "unet": 3,
+        "geff": 2,
+        "zarr": 4,
+        "ctc": 44,
+        "csv": 32,
+        "infer": 4,
+        "ilp": 28
+      },
+      "notebook": {
+        "cell_count": 34,
+        "code_cell_count": 23,
+        "markdown_cell_count": 11,
+        "output_cell_count": 19,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "7408dc2d5636e1511079c0980bad93134f58156368e23ef94e2250ab405ef35b",
+          "d3c2c6ff487d9fbdd7f77d48053b369d6a8d0ba14bcf1bb85893a7096f52a4a3",
+          "1b8f49fc095d774c5cf6116d6d9b068ed6f2ceb8c465cce189d730ec77612d29",
+          "1a061b925423ecd23c5ebface8082bb7e6ef5580628f68440dd9336acc233997",
+          "ac3e72d0754d3c20f73253d6e964efc48385f0a337b65d299a3e9989470993fd",
+          "4d5a25038869b27277d0cf1e9cd341b87a23abfe5a4f5ed91e8b33c2877ee2f1",
+          "a454672e9932feb7b9de611bc8f5d51856022b1684056b61aa38099cd5e8ef9f",
+          "599efc283cb1dbc58a7de6a48a06376e92792ab47d214088578e6a21d960b7b1",
+          "bdb9292b9387c1b45d2f14d353d4ec338095e41f64dacdc5917b1f41201c25d1",
+          "6ad32327369e0c7fca50f98d3765a41fa384b8df08e1aef512d03d294ed10a0d",
+          "2404de0462d7e60904401eef034d423b11c88be1d61aca3812cef95086f1a322",
+          "e3bfb2c4f3ce40d985442fa6171e15756ea440fad56265aba45dafaa5c0b5554",
+          "10eacbf24531c8163f89471d17874048b9ce2cef11e4e860713ba0a50b55d52c",
+          "11655841a54ee0162ccdc5bc1ab17ad7390010bf46c76476613a03e8e2af6bed",
+          "68d98cb3ba59cc186644bd67010782d7766948f745448a93d5d3d72c3c4a7265",
+          "e74af5d4fbbe3d502d7a022322c58c8f04cd8a441b01c1c48f8685dfde6cd656",
+          "08f45fc5e21bbf8eaf553336e55db087a23debf89b01682b5d9cf6dc9c127e2a",
+          "edaa4eb2060623f0b20ffeaf1c3b5a692025696008890603dcfda8d4bf8dd9b5",
+          "cc3b1d24cd2446fe58938f7fbb8e839e9a88152aee4549734cf56703ba693fd6",
+          "98f0c5dd0b8c47e9a8ddebee45c46d39b6099d76e757e099b853772b130f475e",
+          "ca49df72f24a2675ad81b51ba8039d66dbd6bc4be51e344a53e7835c045040be",
+          "6b9db37ef0bb3851ca3b7e888ccbf3bb91ea1520ff6dcbcd309b2dd6357be916",
+          "003862504f0847e56f529b49fffd3e7b7dee0bbf9565029130f935eaf670254a"
+        ]
+      },
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/source/visualize.rst",
+      "bytes": 629,
+      "sha256": "8a2abe77854f5792947932ae289cea8274315efcf17156b32e1fcd6ec7aa8b12",
+      "line_count": 14,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 5,
+        "flow": 1
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "examples/ByoTrack fundamental.ipynb",
+      "bytes": 16689,
+      "sha256": "3f4e521a3375539c4f66ed616b556d34e6ca768ee447dd48dcfd55e6a90b3474",
+      "line_count": 599,
+      "keyword_counts": {
+        "detect": 39,
+        "segment": 8,
+        "track": 112,
+        "link": 22,
+        "flow": 18,
+        "predict": 1,
+        "kalman": 4
+      },
+      "notebook": {
+        "cell_count": 40,
+        "code_cell_count": 33,
+        "markdown_cell_count": 7,
+        "output_cell_count": 0,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "ceffe8607bea860c8c749fcb5530e492cce00efab43b24c9912b56bce1a464b4",
+          "62ef153809c2456cbfa2a9f716e5cb45433f81f7581d73ea5b381354c4c11db7",
+          "66d00d6d6d4edc7dc612ff6b563e174899ffe2a49ac7f4fc011d5f19f8dcb4f3",
+          "d41b04516e1e15f93c119d12152040c0b00e5948e5937d52b9ffc00e1b2ffcaf",
+          "294e949f580857c52bfea19e1ded5172f1647fe09351ecc2c0cf039176f3d11e",
+          "98f0c5dd0b8c47e9a8ddebee45c46d39b6099d76e757e099b853772b130f475e",
+          "f0b4ccb8b50556a68cb634fdce686e497c380c744f5a09c863eb56dfe5062bd4",
+          "85cfcf686458239b7f28be18261e1aa2c9f2855acac1c22b95a20465ad19f39e",
+          "7b40546f1a4782df78f2331c69da018090421cfa88f4af56d3b8e46bdcdd093b",
+          "629c16665f7590d63439f995cdd2861fceeefaf05f0f8ea7e2e0fc0d0a56e992",
+          "36f0fd567eb4a1c8e7db71850011c91d6fc89c025c2bc0d850f0c952c7faeaaf",
+          "ea5478062e4609a45b878272c3108807ae6b1880ebaf0a62de371ee47b26b3ba",
+          "8013bb52cb3b50dcb082db7e0ef82b9153435fbedfe32f35102426c770f12dbe",
+          "00a9bd26e884bc47435e21c58b9bd2c23bf2002233bf011b8ddf6f70c694bcaa",
+          "74a2fa3d58d049cfd72b0fe11c5b27872ba8682b2c596145cf822063a62580da",
+          "a1b451fa90a1f42dc413140db1fb1a1729105c3ad6d241300216a5be6da40af6",
+          "76cda17b9f4462f0b5392842e454db7f806ee947790c64c1f281f8ea9483a937",
+          "e92d49d496f45f03c24d87913ede8004be11c3a91a5cd5b57179692c013a4ad1",
+          "f4ece0b633b753d37272c08058ff1ffb11a28542b0be0efebc064a2d33c847ad",
+          "6bafdb4a356e012cb28a1002177c1c05c528862674f050e4e2b0c39034111493",
+          "ca8d9b5cd344d562b965441e7b8115d6a4adb99761a8209e71924169e77614a9",
+          "6bafdb4a356e012cb28a1002177c1c05c528862674f050e4e2b0c39034111493",
+          "d26e951b44cf6a4344f40c112d7edb8aaee085375ea2a5a3979b250d77fcc7de",
+          "6bafdb4a356e012cb28a1002177c1c05c528862674f050e4e2b0c39034111493",
+          "47c1aed7df60545e47c2ce8e695658ccddf13f6c8ae703882adbfb231bc3de3c",
+          "b7eea55bbebdca4a133faa42a71016588b7fcf95f407f235aa8b97a92c8b02e4",
+          "27c321a20b0b8a67c991bffc726d04fc2990f6fc8c81b8e34869eafba707b9b0",
+          "3566a6f5e36b99d0afccf8c60f21f73c28710bb7409c9dd5db13941b1fe965e7",
+          "6bafdb4a356e012cb28a1002177c1c05c528862674f050e4e2b0c39034111493",
+          "9bf7b06dce9673650ca53c9f008a780f28cbf54dfcec00c02273ae09b33b230a",
+          "76cda17b9f4462f0b5392842e454db7f806ee947790c64c1f281f8ea9483a937",
+          "73952c139ef03879dad1252d77a3012ae39e9e9f4d93536e0322de05c7ae2112",
+          "d2bc52e4f2c449a9aef5c40d13c49bce893950943f6e5ad42138db008c9d77cf"
+        ]
+      },
+      "category": "temporal_linking"
+    },
+    {
+      "path": "examples/Detectors.ipynb",
+      "bytes": 11974,
+      "sha256": "ccd0be0cc65f1b3fab40b6c724bddf2851104b71517768d5e003ae9d63fb9cff",
+      "line_count": 426,
+      "keyword_counts": {
+        "detect": 78,
+        "segment": 9,
+        "track": 11,
+        "unet": 1,
+        "stardist": 12,
+        "train": 11
+      },
+      "notebook": {
+        "cell_count": 22,
+        "code_cell_count": 17,
+        "markdown_cell_count": 5,
+        "output_cell_count": 0,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "0b4ced1da11134a1614781aa6a9e797098b25ab516134d3363bf8ac984c24fff",
+          "924ecce5c73dd1486cbc023f4fe560ea816f0bc93c5b66afb1553496f0d86b82",
+          "66d00d6d6d4edc7dc612ff6b563e174899ffe2a49ac7f4fc011d5f19f8dcb4f3",
+          "d41b04516e1e15f93c119d12152040c0b00e5948e5937d52b9ffc00e1b2ffcaf",
+          "294e949f580857c52bfea19e1ded5172f1647fe09351ecc2c0cf039176f3d11e",
+          "fc7e2e795f45eae8e8b07e3afe78fe1fd7a1c5f197d0f6dc8bb1069b440a8e8c",
+          "ed08967ca071562b2973e67893c812bac4689ba7e48718275e982f3238deeee0",
+          "bc84dd638d222fdfc1494948d097fa24594c440d49d8f7cb95889c3323bd4ea8",
+          "4813adce0f13e9caf0f6730a0b72a68c8989c2d5a8e3315783770103bab6d6d6",
+          "85cfcf686458239b7f28be18261e1aa2c9f2855acac1c22b95a20465ad19f39e",
+          "a6cccd36e5cb4a60d826ad62cc59ddc32939d7aa6f41142b9208b8d4cd4ed13e",
+          "fe6d7b58b8dcdd560a8592f0b858faeb2029be478265e66afeb630bb6969ed94",
+          "333b2e7e147b48f7f46d02312d0c076653842b3d312bb4a447702fc98a56b286",
+          "54959687ad4aed8f20a47794162779c48f27b804eb0c33d1128535cb792685db",
+          "85cfcf686458239b7f28be18261e1aa2c9f2855acac1c22b95a20465ad19f39e",
+          "7b40546f1a4782df78f2331c69da018090421cfa88f4af56d3b8e46bdcdd093b",
+          "b462aa0f79cbd726d34b4a18dbe75d63a7d11cefa700b6dd1912fed7a0de7588"
+        ]
+      },
+      "category": "relevant_source"
+    },
+    {
+      "path": "examples/Linkers.ipynb",
+      "bytes": 30971,
+      "sha256": "88075aa96dfac21a0abda0b3160c4cd821048ed8e25506d3378051b8691128d2",
+      "line_count": 1086,
+      "keyword_counts": {
+        "detect": 67,
+        "track": 134,
+        "link": 115,
+        "flow": 18,
+        "transformer": 1,
+        "sparse": 1,
+        "train": 11,
+        "predict": 3,
+        "kalman": 25,
+        "ilp": 2
+      },
+      "notebook": {
+        "cell_count": 70,
+        "code_cell_count": 60,
+        "markdown_cell_count": 10,
+        "output_cell_count": 0,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "cf9d5af5d6920b77109e46126870cddb197dee390eb8f17735317a58faa301a7",
+          "62ef153809c2456cbfa2a9f716e5cb45433f81f7581d73ea5b381354c4c11db7",
+          "66d00d6d6d4edc7dc612ff6b563e174899ffe2a49ac7f4fc011d5f19f8dcb4f3",
+          "d41b04516e1e15f93c119d12152040c0b00e5948e5937d52b9ffc00e1b2ffcaf",
+          "294e949f580857c52bfea19e1ded5172f1647fe09351ecc2c0cf039176f3d11e",
+          "98f0c5dd0b8c47e9a8ddebee45c46d39b6099d76e757e099b853772b130f475e",
+          "a8be9dcd34163561d14a3c4ca2db56a6df02771a2fed8aebc7453a6239225ed7",
+          "85cfcf686458239b7f28be18261e1aa2c9f2855acac1c22b95a20465ad19f39e",
+          "b462aa0f79cbd726d34b4a18dbe75d63a7d11cefa700b6dd1912fed7a0de7588",
+          "3c6ee338c557d6ba3735972c331120508d8f1ec07e9d32e5a35df3f3e40846c0",
+          "fc2e0e9797ac6d2f219736f4ea841ac030277a3fdea615e141a0509f93d0ac8f",
+          "0ec15c2f61b703b7b6087acf736055b4bb27dd28f758880025f5d1cb3ed4f093",
+          "13bb0c6069633bfb20e02ccdd73bd421065d1ac455e21a6a2112093b34bdcfa7",
+          "1fdae92d3d8fc6379904eddbd6e1186191e7cacf60cab760a75bb20db83be6bb",
+          "76cda17b9f4462f0b5392842e454db7f806ee947790c64c1f281f8ea9483a937",
+          "4fb9b87840df48e2170745f37709bbc79ef5544cbb9bd71747d7732d8aa365d0",
+          "203c25d2cc7d479516749d978a3dffca857f4621d0abad5e7a5e2346b7617a21",
+          "0ecbf1bb18c8b8d4d62d638ad63cb0c6adab55a173f932de50bdb5eb1dcd4787",
+          "a0db0d73bf63c2a5fdf3335e99cc98e69d2739a6bfa39be5b34b629228ea32eb",
+          "6557ed768a97e25dbdc1752e33ce4092637ace6fcdceeae0f3d8ba4716ad9e2b",
+          "dc91f537e9e8dd3ac0b53ce662ff792b183e8cf69665f4e62a1f7ed76c13c998",
+          "76cda17b9f4462f0b5392842e454db7f806ee947790c64c1f281f8ea9483a937",
+          "4fb9b87840df48e2170745f37709bbc79ef5544cbb9bd71747d7732d8aa365d0",
+          "9fbf4a0f4da7fff1a3641e6bf8dc73661c86234ed04c3aa540d1257133795101",
+          "db777af9ef800b3d4cf2d49e7e750975377fb48ba435f8fc2aa6e105646a645c",
+          "d02f4a656a5e031d37785b4228c3f79688efe8290db16ec98bf44a28734baa42",
+          "66876a78eee0b8b8c665f48b41ca78b9105cba6491a59138a86fe741aba5fb67",
+          "5ca433475c5c492692370c4db60975f84574fec5c7465b303b99cb74c08b2c6e",
+          "83cd4466b14c34ea82b3be8b745c8d5ff594b612d1016879ca9ab2d265322415",
+          "877d75a0cb388c6871e950e6c25ecb3be87d99b61ddb6a9e47c2d06b1737626e",
+          "76cda17b9f4462f0b5392842e454db7f806ee947790c64c1f281f8ea9483a937",
+          "4fb9b87840df48e2170745f37709bbc79ef5544cbb9bd71747d7732d8aa365d0",
+          "44971f8085d90377f717653c71a00ed33d16084d78e5aa7a2a949b57a16cd736",
+          "824d7fe28ae2fec007cd4500f7bd50dfbee3d35e70ad06da6349d889ea85e830",
+          "c82b64886291090dcbfa0dba86a57d7c495d86a068084f0239d7fb19e88ea52e",
+          "fcbcfc6a9394fab78f2b2ff0a71fe81d2fe995a44be9a3ff8ea95adbaee3563d",
+          "877d75a0cb388c6871e950e6c25ecb3be87d99b61ddb6a9e47c2d06b1737626e",
+          "76cda17b9f4462f0b5392842e454db7f806ee947790c64c1f281f8ea9483a937",
+          "4fb9b87840df48e2170745f37709bbc79ef5544cbb9bd71747d7732d8aa365d0",
+          "2fd42122afa95b3069ed2b38e2203a8804b8f422054b30ea9e18c09bfabdf775",
+          "23d99ecd0baf4ef84efe4762728d146a42b09f03bec415194d3ea71eff030333",
+          "d2395c2ec56b9378316b29fbeaeed6b5c0efb02d47d0441e11034609e685f61f",
+          "54a62d14f188b0add340fb57d929bab260738be31cac1507beea95bca6774644",
+          "877d75a0cb388c6871e950e6c25ecb3be87d99b61ddb6a9e47c2d06b1737626e",
+          "76cda17b9f4462f0b5392842e454db7f806ee947790c64c1f281f8ea9483a937",
+          "4fb9b87840df48e2170745f37709bbc79ef5544cbb9bd71747d7732d8aa365d0",
+          "b969f78538ab55b58db07a253825a4bb8f34a1bdf4c4e72c536194fe94f1907c",
+          "fa86f9cafd40f015e2cba7b65a4cf852280814be6a0e0e1b04f797db40a11fa1",
+          "b6d8ac02a6cbb3714f21e230e3508e2939c83abe649fcb5cd40b8d77721cb0e9",
+          "dc74ab0e8c5e04d21be289b9bb4995c8aa4db488b88c9900dfa8d2f22bfd6b5e",
+          "877d75a0cb388c6871e950e6c25ecb3be87d99b61ddb6a9e47c2d06b1737626e",
+          "76cda17b9f4462f0b5392842e454db7f806ee947790c64c1f281f8ea9483a937",
+          "4fb9b87840df48e2170745f37709bbc79ef5544cbb9bd71747d7732d8aa365d0",
+          "cb6bb46adcbc573f93066fba735bcef587acd18fb28d53eb2cd097743ad8c058",
+          "35eeb0faab011b3ead350626d82b5ed053c6cdbab6d20aebcc8d1dfabb09aaa5",
+          "221bbee32f95a9bc250d42d9f2f0c3aedfad968bd0a177c531237611894d8efa",
+          "7659238ec5deed0fc45a55176eac5e904994422e39af527d1502161777c47c5a",
+          "b98572e7f8448e2dc323ea3e5793f0bd5d6dc6ef4fd0719b2e3818910a2c28d6",
+          "76cda17b9f4462f0b5392842e454db7f806ee947790c64c1f281f8ea9483a937",
+          "4fb9b87840df48e2170745f37709bbc79ef5544cbb9bd71747d7732d8aa365d0"
+        ]
+      },
+      "category": "temporal_linking"
+    },
+    {
+      "path": "examples/Video.ipynb",
+      "bytes": 17416,
+      "sha256": "e2c7216521079cc46a8201df2dd90b87ff3c57a1260afe4cb962e9cde72dab2c",
+      "line_count": 532,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 48,
+        "infer": 2
+      },
+      "notebook": {
+        "cell_count": 34,
+        "code_cell_count": 23,
+        "markdown_cell_count": 11,
+        "output_cell_count": 0,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "7408dc2d5636e1511079c0980bad93134f58156368e23ef94e2250ab405ef35b",
+          "d3c2c6ff487d9fbdd7f77d48053b369d6a8d0ba14bcf1bb85893a7096f52a4a3",
+          "1b8f49fc095d774c5cf6116d6d9b068ed6f2ceb8c465cce189d730ec77612d29",
+          "1a061b925423ecd23c5ebface8082bb7e6ef5580628f68440dd9336acc233997",
+          "ac3e72d0754d3c20f73253d6e964efc48385f0a337b65d299a3e9989470993fd",
+          "4d5a25038869b27277d0cf1e9cd341b87a23abfe5a4f5ed91e8b33c2877ee2f1",
+          "a454672e9932feb7b9de611bc8f5d51856022b1684056b61aa38099cd5e8ef9f",
+          "599efc283cb1dbc58a7de6a48a06376e92792ab47d214088578e6a21d960b7b1",
+          "bdb9292b9387c1b45d2f14d353d4ec338095e41f64dacdc5917b1f41201c25d1",
+          "6ad32327369e0c7fca50f98d3765a41fa384b8df08e1aef512d03d294ed10a0d",
+          "2404de0462d7e60904401eef034d423b11c88be1d61aca3812cef95086f1a322",
+          "e3bfb2c4f3ce40d985442fa6171e15756ea440fad56265aba45dafaa5c0b5554",
+          "10eacbf24531c8163f89471d17874048b9ce2cef11e4e860713ba0a50b55d52c",
+          "11655841a54ee0162ccdc5bc1ab17ad7390010bf46c76476613a03e8e2af6bed",
+          "68d98cb3ba59cc186644bd67010782d7766948f745448a93d5d3d72c3c4a7265",
+          "e74af5d4fbbe3d502d7a022322c58c8f04cd8a441b01c1c48f8685dfde6cd656",
+          "08f45fc5e21bbf8eaf553336e55db087a23debf89b01682b5d9cf6dc9c127e2a",
+          "edaa4eb2060623f0b20ffeaf1c3b5a692025696008890603dcfda8d4bf8dd9b5",
+          "cc3b1d24cd2446fe58938f7fbb8e839e9a88152aee4549734cf56703ba693fd6",
+          "98f0c5dd0b8c47e9a8ddebee45c46d39b6099d76e757e099b853772b130f475e",
+          "ca49df72f24a2675ad81b51ba8039d66dbd6bc4be51e344a53e7835c045040be",
+          "6b9db37ef0bb3851ca3b7e888ccbf3bb91ea1520ff6dcbcd309b2dd6357be916",
+          "2b717af3bc089327bb5445757da68e45d399876355ec052c2489209d1ebe1458"
+        ]
+      },
+      "category": "relevant_source"
+    },
+    {
+      "path": "examples/ctc/README.md",
+      "bytes": 5058,
+      "sha256": "fb215f8003f400213da87a3c61d2b7f85ce77d07110dea7796312911b4126a98",
+      "line_count": 115,
+      "keyword_counts": {
+        "detect": 6,
+        "segment": 2,
+        "track": 28,
+        "link": 16,
+        "flow": 3,
+        "ctc": 10,
+        "submission": 1,
+        "kalman": 3,
+        "bayes": 2
+      },
+      "symbols": [],
+      "headings": [
+        "# Cell Linking Benchmark",
+        "## Environment creation and installation",
+        "## Running the linker",
+        "## Data format",
+        "### Outputs",
+        "## Method",
+        "## Cite Us"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "examples/ctc/hyper_parameters.json",
+      "bytes": 1017,
+      "sha256": "31be7e32f227c687aafa2cb813addd8b5f55d2d2504f3dc60bc7a6806595c165",
+      "line_count": 49,
+      "keyword_counts": {
+        "detect": 4,
+        "link": 1
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "examples/ctc/requirements.txt",
+      "bytes": 113,
+      "sha256": "93b089e7aee0896e37fe533e35f361422138a5e135e742d6a60bff5392d28062",
+      "line_count": 5,
+      "keyword_counts": {
+        "track": 3,
+        "submission": 2
+      },
+      "symbols": [],
+      "category": "dependency"
+    },
+    {
+      "path": "examples/ctc/run_clb.py",
+      "bytes": 1632,
+      "sha256": "08b28836a298d091191d63ed3563ffcbfa7af3c821dbfd63daae38c5e326cf2e",
+      "line_count": 57,
+      "keyword_counts": {
+        "link": 3,
+        "ctc": 2
+      },
+      "symbols": [
+        "build_params_string",
+        "run_clb"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "src/byotrack/__init__.py",
+      "bytes": 5592,
+      "sha256": "4ba8fb5e13019d99f5559c16d09c6870e716ae9d007227b4bada284ec1f3d30f",
+      "line_count": 153,
+      "keyword_counts": {
+        "detect": 61,
+        "segment": 5,
+        "track": 74,
+        "link": 18,
+        "flow": 6,
+        "stardist": 2,
+        "ctc": 2,
+        "evaluate": 1,
+        "kalman": 9
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/_env.py",
+      "bytes": 799,
+      "sha256": "ac0aa9a5c9869b4daf3942743e988bff3c6c3a7363fe4347147e115946e8c97d",
+      "line_count": 29,
+      "keyword_counts": {
+        "detect": 1,
+        "segment": 1
+      },
+      "symbols": [
+        "parse_bool_from_env"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/api/__init__.py",
+      "bytes": 28,
+      "sha256": "f1ce5927b9863e333507e51dceb69fde5ce6380c7e95891241615bb95709bb85",
+      "line_count": 2,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/api/detections/__init__.py",
+      "bytes": 533,
+      "sha256": "296980232746211a6f62a63cabc7463a06ee73f639a867a9a17cf493543d11db",
+      "line_count": 17,
+      "keyword_counts": {
+        "detect": 19,
+        "segment": 3,
+        "track": 4
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/api/detections/bbox_detections.py",
+      "bytes": 8164,
+      "sha256": "74deb0991563264af67b635d0783198d1def129a72ad5f54b93b8b8829e9b9c3",
+      "line_count": 226,
+      "keyword_counts": {
+        "detect": 21,
+        "segment": 19,
+        "track": 7,
+        "infer": 5
+      },
+      "symbols": [
+        "_check_bbox",
+        "_segmentation_from_bbox_2d",
+        "_segmentation_from_bbox_3d",
+        "BBoxDetections",
+        "__init__",
+        "_infer_shape",
+        "position",
+        "bbox",
+        "segmentation",
+        "mass",
+        "filter",
+        "add_disks",
+        "_to_dict",
+        "_from_dict"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/api/detections/detections.py",
+      "bytes": 27219,
+      "sha256": "e19c9c8a534769fc1d9383f413abdff8e7c2e24a0302b44bd351695f330d0a5b",
+      "line_count": 726,
+      "keyword_counts": {
+        "detect": 121,
+        "segment": 124,
+        "track": 24,
+        "assign": 1
+      },
+      "symbols": [
+        "_check_confidence",
+        "_check_labels",
+        "draw_disk_2d",
+        "draw_disk_3d",
+        "fast_relabel",
+        "_fast_unique",
+        "labels_of",
+        "labels_of",
+        "labels_of",
+        "_fast_relabel_consecutive",
+        "relabel_consecutive",
+        "relabel_consecutive",
+        "relabel_consecutive",
+        "compress",
+        "decompress",
+        "cached",
+        "wrapper",
+        "Detections",
+        "__init__",
+        "position",
+        "bbox",
+        "segmentation",
+        "mass",
+        "confidence",
+        "labels",
+        "labeled_segmentation",
+        "filter",
+        "relabel",
+        "add_disks",
+        "__len__",
+        "_to_dict",
+        "save",
+        "load",
+        "save_multi_frames_detections",
+        "load_multi_frames_detections",
+        "as_detections"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/api/detections/point_detections.py",
+      "bytes": 8554,
+      "sha256": "6addb759f68edc3ee9a672fd9f6e57b6e83898496fde2fe411cd3f84968555a2",
+      "line_count": 229,
+      "keyword_counts": {
+        "detect": 22,
+        "segment": 12,
+        "track": 4,
+        "infer": 5
+      },
+      "symbols": [
+        "_check_position",
+        "_expand_radius",
+        "PointDetections",
+        "__init__",
+        "_infer_shape",
+        "position",
+        "bbox",
+        "segmentation",
+        "mass",
+        "filter",
+        "add_disks",
+        "_to_dict",
+        "_from_dict"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/api/detections/segmentation_detections.py",
+      "bytes": 14464,
+      "sha256": "0e56460c86ddc16eb92a1508a55cdca01684a6b33cf0b1e8330d26f4c4998f93",
+      "line_count": 407,
+      "keyword_counts": {
+        "detect": 37,
+        "segment": 124,
+        "track": 12,
+        "assign": 1,
+        "infer": 1
+      },
+      "symbols": [
+        "_check_segmentation",
+        "_compute_mass",
+        "_position_from_segmentation",
+        "_median_from_segmentation",
+        "_bbox_from_segmentation",
+        "_filter_segmentation",
+        "_default_position_method",
+        "SegmentationDetections",
+        "__init__",
+        "position",
+        "bbox",
+        "segmentation",
+        "mass",
+        "add_disks",
+        "filter",
+        "_to_dict",
+        "_from_dict"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/api/detections/statistics.py",
+      "bytes": 5997,
+      "sha256": "35b7b72cbcfac5181d1e14c0fcafb8d203c48a9e4c3d193f0de5bf9d81cbfb27",
+      "line_count": 161,
+      "keyword_counts": {
+        "detect": 56,
+        "track": 9,
+        "flow": 1
+      },
+      "symbols": [
+        "average_mass",
+        "average_radius",
+        "average_min_dist",
+        "anisotropy"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/api/detector.py",
+      "bytes": 8347,
+      "sha256": "2928460fbd81c1111a6bd8aee5dc76a82c8b66460084b3885f40dc0403cad558",
+      "line_count": 235,
+      "keyword_counts": {
+        "detect": 78,
+        "segment": 34,
+        "track": 35,
+        "link": 3,
+        "ctc": 1,
+        "predict": 1
+      },
+      "symbols": [
+        "Detector",
+        "run",
+        "BatchDetector",
+        "__init__",
+        "run",
+        "detect",
+        "DetectionsRefiner",
+        "apply",
+        "run",
+        "GroundTruthDetector",
+        "__init__",
+        "run",
+        "_check_shape",
+        "detect"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/api/features_extractor.py",
+      "bytes": 3660,
+      "sha256": "6117d0db5f0f27bf8768aafcbbcdc0a70508ccb1dc388868ea38483b4e1bc531",
+      "line_count": 112,
+      "keyword_counts": {
+        "detect": 28,
+        "segment": 10,
+        "track": 9
+      },
+      "symbols": [
+        "FeaturesExtractor",
+        "__call__",
+        "register",
+        "MultiFeaturesExtractor",
+        "__init__",
+        "__call__",
+        "MassExtractor",
+        "__call__",
+        "IntensityExtractor",
+        "__call__",
+        "compute_intensity"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/api/linker.py",
+      "bytes": 4895,
+      "sha256": "a2bec13b59b23f6b3fa178e9221ce65c9b7ec463796ab2d8f0259ca40d4c0efd",
+      "line_count": 147,
+      "keyword_counts": {
+        "detect": 40,
+        "track": 35,
+        "link": 15
+      },
+      "symbols": [
+        "Linker",
+        "run",
+        "OnlineLinker",
+        "reset",
+        "update",
+        "collect",
+        "run"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/api/optical_flow/__init__.py",
+      "bytes": 32,
+      "sha256": "a91c6e3f8e47513215d9513aa2cf0adf3edd41afd1bc7fb60cc6f98ece6c4124",
+      "line_count": 2,
+      "keyword_counts": {
+        "flow": 1
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/api/optical_flow/optical_flow.py",
+      "bytes": 8375,
+      "sha256": "a8c1a1af3a931d44cdb928c1ebada6202f305a8e4f6b898fd686637701ae177a",
+      "line_count": 206,
+      "keyword_counts": {
+        "detect": 9,
+        "track": 2,
+        "flow": 51,
+        "predict": 1
+      },
+      "symbols": [
+        "OpticalFlow",
+        "__init__",
+        "preprocess",
+        "compute",
+        "flow_at",
+        "transform",
+        "warp",
+        "DummyOpticalFlow",
+        "compute"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/api/parameters.py",
+      "bytes": 2855,
+      "sha256": "4e627694eaf3a827f2097cc6e1ab79567243cfa21c8dce0cc112d3cb12b31b0a",
+      "line_count": 95,
+      "keyword_counts": {},
+      "symbols": [
+        "ParameterRange",
+        "is_valid",
+        "to_str",
+        "ParameterBound",
+        "__init__",
+        "is_valid",
+        "to_str",
+        "ParameterEnum",
+        "__init__",
+        "is_valid",
+        "to_str",
+        "ParametrizedObjectMixin",
+        "__setattr__"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/api/refiner.py",
+      "bytes": 1071,
+      "sha256": "daa93f17e1cd8f7724b99be48ca7f2d6e1f2e0f94db16aebe3113d3d8a5fe6ac",
+      "line_count": 39,
+      "keyword_counts": {
+        "track": 15
+      },
+      "symbols": [
+        "Refiner",
+        "run"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/api/tracks.py",
+      "bytes": 24984,
+      "sha256": "075fd28a666c1061e3bc16c0da070535b49914c906b589acf23fd266bec99ff4",
+      "line_count": 609,
+      "keyword_counts": {
+        "detect": 98,
+        "segment": 12,
+        "track": 298,
+        "link": 5,
+        "division": 2,
+        "ctc": 2,
+        "infer": 2
+      },
+      "symbols": [
+        "_check_points",
+        "_check_detection_ids",
+        "_check_tracks",
+        "Track",
+        "__init__",
+        "__len__",
+        "dim",
+        "__getitem__",
+        "overlaps_with",
+        "tensorize",
+        "_tensorize_det_ids",
+        "save",
+        "load",
+        "check_tracks",
+        "reverse",
+        "update_detection_ids",
+        "_resolve_disk_radius",
+        "update_detections_from_tracks"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/dataset/__init__.py",
+      "bytes": 46,
+      "sha256": "bdcae7b7cce4b4d4a73ad182e0e13405c1d8584b9f2358c531c309361491cce5",
+      "line_count": 2,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/byotrack/dataset/sinetra.py",
+      "bytes": 1825,
+      "sha256": "6fc5703f93f0da6c0b4db79624ce6f8b7b20d90709388bf472d5a24165c959af",
+      "line_count": 66,
+      "keyword_counts": {
+        "track": 12
+      },
+      "symbols": [
+        "load_metadata",
+        "load_tracks"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/byotrack/example_data.py",
+      "bytes": 1633,
+      "sha256": "42e065802b388716fd8ad3e5616da6afe4a0e5c242fca0178506cec29c5ccfc9",
+      "line_count": 46,
+      "keyword_counts": {
+        "track": 10
+      },
+      "symbols": [
+        "hydra_neurons"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/byotrack/fiji/__init__.py",
+      "bytes": 196,
+      "sha256": "d5df1144de612bf9e38af9453008d1899c9108ee27d347a71304fc523d3b6ad8",
+      "line_count": 7,
+      "keyword_counts": {
+        "detect": 2,
+        "track": 4
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/fiji/io.py",
+      "bytes": 4162,
+      "sha256": "8685dd7762960dac04359ba709625a2ec2eb588e5c7383cbe085916bc50b5c07",
+      "line_count": 122,
+      "keyword_counts": {
+        "detect": 18,
+        "segment": 9,
+        "track": 39
+      },
+      "symbols": [
+        "save_detections",
+        "load_tracks"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/fiji/run.py",
+      "bytes": 2382,
+      "sha256": "b0e8430434bfa8270c0674faa97f02800b1784852396f50338597ad9c4a19d17",
+      "line_count": 67,
+      "keyword_counts": {},
+      "symbols": [
+        "FijiRunner",
+        "__init__",
+        "run"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/geff/__init__.py",
+      "bytes": 620,
+      "sha256": "d3dab750c4a2b00569b09a3210182696e4c540c8ded5763e4f2a7cb840787dcc",
+      "line_count": 29,
+      "keyword_counts": {
+        "detect": 6,
+        "track": 5,
+        "geff": 12,
+        "zarr": 8
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/icy/__init__.py",
+      "bytes": 216,
+      "sha256": "f4721e8dd2dbe28efd5a2342ece377287b4231c090029a91777e5085cb5a9bb9",
+      "line_count": 7,
+      "keyword_counts": {
+        "detect": 2,
+        "track": 6
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/icy/io.py",
+      "bytes": 11439,
+      "sha256": "7b9b6deb5b8a220fe4f2b4a0e6889156ac836e242af17d68349de271ee6dc809",
+      "line_count": 309,
+      "keyword_counts": {
+        "detect": 37,
+        "segment": 6,
+        "track": 84
+      },
+      "symbols": [
+        "save_detections",
+        "load_tracks",
+        "save_tracks"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/icy/run.py",
+      "bytes": 1958,
+      "sha256": "94920463addddc042676f8196af105a02e65285ffc1e96f457c73ff275dc0518",
+      "line_count": 52,
+      "keyword_counts": {},
+      "symbols": [
+        "IcyRunner",
+        "__init__",
+        "run"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/implementation/__init__.py",
+      "bytes": 74,
+      "sha256": "984835eb47abd31e6be006a17ace940b89f9222dbeb1a053ddf03ae58e677184",
+      "line_count": 2,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 1,
+        "link": 1
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/detector/__init__.py",
+      "bytes": 32,
+      "sha256": "4a1b90a5ef8820ba3e3e7c45250554bd5ca77f186a9255b761dd1d6d6c8af80e",
+      "line_count": 2,
+      "keyword_counts": {
+        "detect": 1
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/detector/refiners.py",
+      "bytes": 11595,
+      "sha256": "81079107a3ffbb26e8531b6b4147145e8ccecc2b4852bbd7433c39f6566d3b76",
+      "line_count": 289,
+      "keyword_counts": {
+        "detect": 29,
+        "segment": 42,
+        "track": 6
+      },
+      "symbols": [
+        "_to_filter_based_on_intensity",
+        "DetectionsFilter",
+        "__init__",
+        "apply",
+        "Watershed",
+        "__init__",
+        "_default_footprint",
+        "peak_mask",
+        "watershed",
+        "WatershedRefiner",
+        "Mode",
+        "__init__",
+        "apply"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/detector/stardist.py",
+      "bytes": 4441,
+      "sha256": "3eb3db553ce32ad2c5b88b9758f6b43a1ddebde5bb9c36a1df3d2e1d6e354992",
+      "line_count": 119,
+      "keyword_counts": {
+        "detect": 23,
+        "segment": 4,
+        "track": 6,
+        "flow": 1,
+        "stardist": 35,
+        "train": 13,
+        "predict": 2
+      },
+      "symbols": [
+        "StarDistDetector",
+        "__init__",
+        "detect",
+        "from_pretrained",
+        "from_trained"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/detector/wavelet.py",
+      "bytes": 22357,
+      "sha256": "298a68a65e67072bedf21bd263bb9e4b28f2d6939c82bc6c1d2f944b2ce01d28",
+      "line_count": 591,
+      "keyword_counts": {
+        "detect": 17,
+        "segment": 24,
+        "track": 6
+      },
+      "symbols": [
+        "filter_objects_on_size",
+        "B3SplineUWT",
+        "__init__",
+        "forward",
+        "B3SplineUWTApprox1",
+        "__init__",
+        "forward",
+        "B3SplineUWTApprox2",
+        "__init__",
+        "forward",
+        "WaveletDetector",
+        "__init__",
+        "detect",
+        "compute_threshold",
+        "optimize"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/linker/__init__.py",
+      "bytes": 30,
+      "sha256": "48e48f68de776ca4096e18423199fc17af43e5c5705321c43b722a2a185effcb",
+      "line_count": 2,
+      "keyword_counts": {
+        "link": 1
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/linker/frame_by_frame/__init__.py",
+      "bytes": 30,
+      "sha256": "19a5c6908d5a15a66fc72dc74d9dc3a0293fc4f2452af8be7dce59d33aec9ed2",
+      "line_count": 2,
+      "keyword_counts": {
+        "link": 1
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/linker/frame_by_frame/base.py",
+      "bytes": 45109,
+      "sha256": "b1e5b2643cb0ee198ceb9603a66d052f5f8ec8dc3f0415bc13f3d06356706f70",
+      "line_count": 983,
+      "keyword_counts": {
+        "detect": 158,
+        "track": 458,
+        "link": 83,
+        "assign": 4,
+        "flow": 37,
+        "sparse": 17,
+        "predict": 1,
+        "prune": 1,
+        "kalman": 1
+      },
+      "symbols": [
+        "AssociationMethod",
+        "solve",
+        "TrackHandler",
+        "TrackState",
+        "__init__",
+        "__len__",
+        "is_active",
+        "update",
+        "register_track_id",
+        "OnlineFlowExtractor",
+        "__init__",
+        "reset",
+        "update",
+        "FrameByFrameLinkerParameters",
+        "__init__",
+        "check",
+        "estimate",
+        "FrameByFrameLinker",
+        "__init__",
+        "reset",
+        "collect",
+        "motion_model",
+        "cost",
+        "post_association",
+        "update_active_tracks",
+        "_update_active_tracks",
+        "_remove_single_split",
+        "_undo_split",
+        "_handle_extra_detections",
+        "update_detections",
+        "associate",
+        "update"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/linker/frame_by_frame/koft.py",
+      "bytes": 27623,
+      "sha256": "9a943d5e009c7fbe6c0e70b94804a7f5f9dc7a770dc2d0d57bf63cc1508d3f55",
+      "line_count": 559,
+      "keyword_counts": {
+        "detect": 91,
+        "track": 97,
+        "link": 34,
+        "assign": 2,
+        "flow": 75,
+        "sparse": 4,
+        "predict": 12,
+        "prune": 1,
+        "kalman": 59,
+        "bayes": 1
+      },
+      "symbols": [
+        "KOFTLinkerParameters",
+        "__init__",
+        "check",
+        "estimate",
+        "estimate_flow_std_from_tracks",
+        "estimate_association_threshold",
+        "build_filter",
+        "KOFTLinker",
+        "__init__",
+        "reset",
+        "motion_model",
+        "cost",
+        "post_association"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/linker/frame_by_frame/nearest_neighbor.py",
+      "bytes": 9347,
+      "sha256": "b92bd34757daf0dcae4c324078e3b9002421112bb84c75f2ac647d14db9dfd5e",
+      "line_count": 219,
+      "keyword_counts": {
+        "detect": 36,
+        "track": 25,
+        "link": 16,
+        "assign": 2,
+        "flow": 20,
+        "sparse": 4,
+        "predict": 1,
+        "prune": 1,
+        "kalman": 1
+      },
+      "symbols": [
+        "NearestNeighborParameters",
+        "__init__",
+        "check",
+        "estimate",
+        "NearestNeighborLinker",
+        "__init__",
+        "reset",
+        "motion_model",
+        "cost",
+        "post_association"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/linker/frame_by_frame/trackonstra.py",
+      "bytes": 15186,
+      "sha256": "eec8fe950f03168251fcc82d66de905f23b8b4214947f77171d657f84dcd1c32",
+      "line_count": 360,
+      "keyword_counts": {
+        "detect": 44,
+        "segment": 1,
+        "track": 70,
+        "link": 21,
+        "assign": 1,
+        "flow": 5,
+        "transformer": 12,
+        "ctc": 1,
+        "sparse": 4,
+        "train": 4,
+        "predict": 17,
+        "prune": 1
+      },
+      "symbols": [
+        "build_cost_dict",
+        "TrackastraFlex",
+        "__init__",
+        "predict_with_gap",
+        "TrackOnStraParameters",
+        "__init__",
+        "check",
+        "estimate",
+        "TrackOnStraLinker",
+        "__init__",
+        "setup",
+        "motion_model",
+        "post_association",
+        "cost"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/linker/icy_emht/__init__.py",
+      "bytes": 193,
+      "sha256": "94e14a71e2da5f80a423eb0f0b600e430902f8d0945c32f98ee9957bf40998cf",
+      "line_count": 6,
+      "keyword_counts": {
+        "track": 1,
+        "link": 3
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/linker/icy_emht/emht_protocol.xml",
+      "bytes": 6198,
+      "sha256": "13e83abf0b65fab2c4b28ec4f60cecc87d0736b60ea348d284b88431a520bee5",
+      "line_count": 113,
+      "keyword_counts": {
+        "detect": 13,
+        "track": 24,
+        "link": 12
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/linker/icy_emht/emht_protocol_with_full_specs.xml",
+      "bytes": 4772,
+      "sha256": "73847652aa72b048d33b83663eb0cf3746d63ab3fc2186ec4f152bd46a72766f",
+      "line_count": 91,
+      "keyword_counts": {
+        "detect": 9,
+        "track": 24,
+        "link": 9
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/linker/icy_emht/icy_emht.py",
+      "bytes": 13242,
+      "sha256": "8ab3e93e0be0b53acf44c197766da2b0336516c2d7f5a67b9b4ab1f42ab16b4b",
+      "line_count": 323,
+      "keyword_counts": {
+        "detect": 47,
+        "track": 48,
+        "link": 6,
+        "flow": 1,
+        "predict": 3,
+        "kalman": 1
+      },
+      "symbols": [
+        "Motion",
+        "EMHTParameters",
+        "to_xml",
+        "IcyEMHTLinker",
+        "__init__",
+        "run",
+        "_run_icy"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/linker/trackastra/__init__.py",
+      "bytes": 194,
+      "sha256": "c17db45565ac6b0de199d0538179e956e5445963fc9a6214a62d5ea3ce7a5d9d",
+      "line_count": 6,
+      "keyword_counts": {
+        "track": 8,
+        "link": 3
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/linker/trackmate/__init__.py",
+      "bytes": 197,
+      "sha256": "338d8ca3cab64c62cd8db6ad3021a7d86cfa19bfeab5d7e3ec106e0b36f09cce",
+      "line_count": 6,
+      "keyword_counts": {
+        "track": 8,
+        "link": 3
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/linker/trackmate/_trackmate.py",
+      "bytes": 2975,
+      "sha256": "ca371601bc3719e561d850ba7bc4bb1d0f4908ac1e8dcad7ed7e73985dc8a8de",
+      "line_count": 119,
+      "keyword_counts": {
+        "detect": 14,
+        "track": 36,
+        "sparse": 3,
+        "kalman": 6
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/linker/trackmate/trackmate.py",
+      "bytes": 8414,
+      "sha256": "57d9fa8ac145664456194cee8002d27d84988c25fb97ff7b52d5a466dda7c43b",
+      "line_count": 208,
+      "keyword_counts": {
+        "detect": 29,
+        "segment": 3,
+        "track": 64,
+        "link": 21,
+        "flow": 1,
+        "sparse": 2,
+        "predict": 1,
+        "kalman": 15
+      },
+      "symbols": [
+        "TrackMateParameters",
+        "save",
+        "TrackMateLinker",
+        "__init__",
+        "run",
+        "_run_fiji"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/optical_flow/__init__.py",
+      "bytes": 58,
+      "sha256": "549709b5d6356702153372bdd352b2dc23eaf584b0c53f80616af6607bbf2508",
+      "line_count": 2,
+      "keyword_counts": {
+        "flow": 1
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/optical_flow/opencv.py",
+      "bytes": 2474,
+      "sha256": "744e848367451a373c76d7fb0bf64e0328ebeb0588107f89ce2eb356ba235b42",
+      "line_count": 72,
+      "keyword_counts": {
+        "track": 3,
+        "flow": 31
+      },
+      "symbols": [
+        "OpenCVOpticalFlow",
+        "__init__",
+        "compute"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/optical_flow/skimage.py",
+      "bytes": 2175,
+      "sha256": "f2f92cf99794e3939f453208fe64ea0b3a84b6a2f4cd67db5d1d1b12de63a52d",
+      "line_count": 67,
+      "keyword_counts": {
+        "track": 2,
+        "flow": 17
+      },
+      "symbols": [
+        "SkimageOpticalFlow",
+        "__init__",
+        "compute"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/refiner/__init__.py",
+      "bytes": 32,
+      "sha256": "413d6fef8af90d53f1b85202d20371fca844d6ffd5b9d990e89b0a6531cb36fe",
+      "line_count": 2,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/refiner/cleaner.py",
+      "bytes": 4190,
+      "sha256": "ae4441cc3bd73597d5cd7f74de5f5a268705616e9f339da7a6c243120510ca17",
+      "line_count": 122,
+      "keyword_counts": {
+        "detect": 4,
+        "track": 72
+      },
+      "symbols": [
+        "Cleaner",
+        "__init__",
+        "run",
+        "clean_tracks"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/refiner/interpolater.py",
+      "bytes": 4160,
+      "sha256": "0bc60f4b49333732f016189a6b91c67a66921fad3930f8334d5a77788a26ac06",
+      "line_count": 100,
+      "keyword_counts": {
+        "detect": 6,
+        "track": 56,
+        "flow": 9
+      },
+      "symbols": [
+        "ForwardBackwardInterpolater",
+        "__init__",
+        "run"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/refiner/propagation.py",
+      "bytes": 12739,
+      "sha256": "e59a2347c8537a38e90c6d59dfeed8d8b06664455d3ea76732c138c823831e34",
+      "line_count": 307,
+      "keyword_counts": {
+        "track": 78,
+        "flow": 27,
+        "predict": 1
+      },
+      "symbols": [
+        "DirectedPropagate",
+        "__call__",
+        "forward_backward_propagation",
+        "merge",
+        "constant_directed_propagate",
+        "tps_directed_propagate",
+        "optical_flow_directed_propagate",
+        "frame_id"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/refiner/smoother.py",
+      "bytes": 8086,
+      "sha256": "787595097c1a2a02cb363ea88720d377902f42ec2255c0dcfb48a0df9d800204",
+      "line_count": 188,
+      "keyword_counts": {
+        "detect": 10,
+        "track": 51,
+        "link": 1,
+        "flow": 1,
+        "predict": 5,
+        "kalman": 29
+      },
+      "symbols": [
+        "RTSSmoother",
+        "__init__",
+        "run"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/refiner/stitching/__init__.py",
+      "bytes": 232,
+      "sha256": "35f31d499c081226d2b2ed6cb43bb07e312607e0305189b0b34b16d78fe4fec8",
+      "line_count": 7,
+      "keyword_counts": {
+        "track": 3
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/implementation/refiner/stitching/emc2.py",
+      "bytes": 5150,
+      "sha256": "7f445fd5cef0c01f93e057ef9282f9c2c329c0459828983202e020c787bd8f7f",
+      "line_count": 114,
+      "keyword_counts": {
+        "track": 48,
+        "flow": 6
+      },
+      "symbols": [
+        "_fast_emc2_dist",
+        "EMC2Stitcher",
+        "__init__",
+        "compute_dist"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/metrics/__init__.py",
+      "bytes": 31,
+      "sha256": "3ab6d1486fe6a458dc4ecbc4775f754ee3588f95378099dae740a5ac796d8326",
+      "line_count": 2,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [],
+      "category": "evaluation"
+    },
+    {
+      "path": "src/byotrack/napari/__init__.py",
+      "bytes": 711,
+      "sha256": "508c975e472431ae452c2f09066c8d5beb60a433ada97f3e591442ae96780ca6",
+      "line_count": 34,
+      "keyword_counts": {
+        "detect": 6,
+        "segment": 2,
+        "track": 8,
+        "flow": 6
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/napari/utils.py",
+      "bytes": 15703,
+      "sha256": "ced364cb41e28c173ccb619c8de2173f0b5036d03bafba7e5ec6e2d3dfd1e507",
+      "line_count": 391,
+      "keyword_counts": {
+        "detect": 75,
+        "segment": 21,
+        "track": 89,
+        "lineage": 9,
+        "assign": 3,
+        "flow": 25
+      },
+      "symbols": [
+        "detections_to_napari_segmentation",
+        "detections_to_napari_points",
+        "_detections_to_labels",
+        "tracks_to_napari_tracks",
+        "_initialize_grid",
+        "_find_paths_in_grid",
+        "_LazyVideoArray",
+        "__init__",
+        "shape",
+        "dtype",
+        "ndim",
+        "__len__",
+        "__getitem__",
+        "__array__",
+        "_LazySegmentationArray",
+        "__init__",
+        "shape",
+        "dtype",
+        "ndim",
+        "__len__",
+        "__getitem__",
+        "__array__",
+        "precompute_optical_flow"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/napari/viewer.py",
+      "bytes": 23867,
+      "sha256": "42e9b5298d830bfcbd31b05b4e16f86c86c58f413eebaf1c884f068e6649da9b",
+      "line_count": 556,
+      "keyword_counts": {
+        "detect": 90,
+        "segment": 22,
+        "track": 106,
+        "link": 3,
+        "assign": 2,
+        "flow": 63,
+        "infer": 1
+      },
+      "symbols": [
+        "_find_dim",
+        "_set_image_maximum_value",
+        "add_video",
+        "add_detections",
+        "add_tracks",
+        "add_optical_flow",
+        "on_step_change",
+        "reset_grid",
+        "visualize",
+        "visualize_flow_deformation"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/utils.py",
+      "bytes": 595,
+      "sha256": "3531f25161942f9efafb3930e9442e604efd43d85448307fe5db0bb5e89ca5a8",
+      "line_count": 25,
+      "keyword_counts": {},
+      "symbols": [
+        "sorted_alphanumeric",
+        "convert",
+        "alphanum_key"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/video/__init__.py",
+      "bytes": 1420,
+      "sha256": "b633764159677decba8bad0851989d5797578ed539c128a8438842cc50fa73dd",
+      "line_count": 38,
+      "keyword_counts": {
+        "track": 10
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/video/preprocessor/__init__.py",
+      "bytes": 74,
+      "sha256": "4434c21663082d0318af686b7485f4b1c366e84adac239bc47e9fa6793aea0c2",
+      "line_count": 2,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/video/preprocessor/channel_projection.py",
+      "bytes": 3417,
+      "sha256": "d4143759999f8378934a979ec7aaee7fd86b99d7aceab46e591afb2a5b1d2d9c",
+      "line_count": 97,
+      "keyword_counts": {
+        "track": 1,
+        "flow": 1
+      },
+      "symbols": [
+        "ChannelProjection",
+        "__init__",
+        "initialize",
+        "preprocess_frame",
+        "preprocess_video"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/video/preprocessor/normalizer.py",
+      "bytes": 5208,
+      "sha256": "72a26b30f6583e4f026bb1e490d3497e86e308c609a64964954d183fd3489d7b",
+      "line_count": 140,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [
+        "IntensityNormalizer",
+        "__init__",
+        "initialize",
+        "preprocess_frame",
+        "preprocess_video"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/video/preprocessor/preprocessor.py",
+      "bytes": 4152,
+      "sha256": "d513fea63b6ea8e270c836d8e65234fb540ae39404c1572ec97bcf28c28de06f",
+      "line_count": 114,
+      "keyword_counts": {
+        "track": 3
+      },
+      "symbols": [
+        "VideoPreprocessor",
+        "__init__",
+        "shape",
+        "dtype",
+        "initialize",
+        "preprocess_frame",
+        "preprocess_video"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/video/preprocessor/registrator.py",
+      "bytes": 4787,
+      "sha256": "05aa58a0d95b5b31d43cb52a6343891764f8896be214ea2a245646357b6b8582",
+      "line_count": 122,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [
+        "Registrator",
+        "__init__",
+        "initialize",
+        "preprocess_frame"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/video/preprocessor/slicer.py",
+      "bytes": 2184,
+      "sha256": "3d708ba568e1f2857d72aeaf19ab7ffee3f6d0c03e94113aa89bfd9c8673435d",
+      "line_count": 73,
+      "keyword_counts": {
+        "track": 2
+      },
+      "symbols": [
+        "FrameSlicer",
+        "__init__",
+        "initialize",
+        "preprocess_frame",
+        "preprocess_video"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/video/preprocessor/spatial_projection.py",
+      "bytes": 4456,
+      "sha256": "2178546e14b719f9a4e7501b34afdcbbcb69987bd6034554fab2f4dbd3e56deb",
+      "line_count": 127,
+      "keyword_counts": {
+        "track": 1,
+        "flow": 1
+      },
+      "symbols": [
+        "SpatialProjection",
+        "__init__",
+        "initialize",
+        "preprocess_frame",
+        "preprocess_video"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/video/preprocessor/temporal_equalization.py",
+      "bytes": 4744,
+      "sha256": "87f7e59ef9bf251cfe8a77c91d5806ef00d43f2492bf6c2da7c276af5005de7b",
+      "line_count": 116,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [
+        "TemporalEqualizer",
+        "__init__",
+        "initialize",
+        "preprocess_frame",
+        "preprocess_video"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/byotrack/video/preprocessor/zoom.py",
+      "bytes": 7599,
+      "sha256": "82cbd9837ae7795c63b1ef4a0cdd80f97e7aa0f5274c2dd36e01e8d83b8f3ce8",
+      "line_count": 193,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [
+        "Zoom",
+        "__init__",
+        "initialize",
+        "preprocess_frame",
+        "LocalMeanDownscaler",
+        "__init__",
+        "initialize",
+        "preprocess_frame"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/video/reader.py",
+      "bytes": 31349,
+      "sha256": "0c36c9a78a57f896ae6d018a2ad631403393f2fcca53614dfd7aa62268ed7271",
+      "line_count": 857,
+      "keyword_counts": {
+        "track": 1,
+        "assign": 1,
+        "zarr": 1,
+        "infer": 4
+      },
+      "symbols": [
+        "slice_length",
+        "MetaVideoReader",
+        "__init__",
+        "VideoReader",
+        "__init__",
+        "release",
+        "grab",
+        "retrieve",
+        "read",
+        "seek",
+        "tell",
+        "_check_frame_id",
+        "open",
+        "OpenCVVideoReader",
+        "__init__",
+        "release",
+        "grab",
+        "retrieve",
+        "seek",
+        "_check_frame_id",
+        "ArrayVideoReader",
+        "__init__",
+        "release",
+        "grab",
+        "seek",
+        "retrieve",
+        "PILVideoReader",
+        "__init__",
+        "release",
+        "grab",
+        "retrieve",
+        "seek",
+        "_check_frame_id",
+        "TiffVideoReader",
+        "__init__",
+        "_check_slice",
+        "_extract_axes",
+        "axes",
+        "_load",
+        "release",
+        "grab",
+        "seek",
+        "retrieve",
+        "FrameTiffLoader",
+        "__init__",
+        "_extract_axes",
+        "__call__",
+        "_read_slice",
+        "pil_loader",
+        "MultiFrameReader",
+        "__init__",
+        "grab",
+        "seek",
+        "retrieve"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/video/video.py",
+      "bytes": 21953,
+      "sha256": "fa05006b1de298555cc083655ed40f5150dcff71948aead9678ee23ef2711ed7",
+      "line_count": 574,
+      "keyword_counts": {
+        "track": 14,
+        "infer": 2
+      },
+      "symbols": [
+        "VideoTransformConfig",
+        "Video",
+        "__init__",
+        "dtype",
+        "shape",
+        "ndim",
+        "__len__",
+        "add_preprocessor",
+        "normalize",
+        "rescale",
+        "resize",
+        "isotrope",
+        "_preprocess",
+        "set_transform",
+        "__getitem__",
+        "__getitem__",
+        "__getitem__",
+        "__getitem__",
+        "__array__",
+        "_copy",
+        "expand_ellipsis",
+        "_handle_integer_slicing",
+        "compose_slice",
+        "video_length",
+        "video_shape",
+        "video_dtype"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/byotrack/visualize.py",
+      "bytes": 26329,
+      "sha256": "acaaec1e78673edbc6a1f5687ce3269fb0863cfa6cde5ba1be0254544d06b253",
+      "line_count": 718,
+      "keyword_counts": {
+        "detect": 39,
+        "segment": 31,
+        "track": 116,
+        "assign": 1,
+        "flow": 42
+      },
+      "symbols": [
+        "_convert_to_uint8",
+        "display_lifetime",
+        "temporal_projection",
+        "InteractiveVisualizer",
+        "__init__",
+        "run",
+        "_run",
+        "draw_segmentation",
+        "draw_tracks",
+        "handle_actions",
+        "_get_frame_shape",
+        "_reduce",
+        "_get_n_frames",
+        "InteractiveFlowVisualizer",
+        "__init__",
+        "_precompute",
+        "run",
+        "_run",
+        "handle_actions",
+        "flow_to_rgb",
+        "get_flow_wheel"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "tests/__init__.py",
+      "bytes": 26,
+      "sha256": "3e420c12808d6789aa4657ecd17fc26d4d4d9813023d1e98b58030469a33177b",
+      "line_count": 2,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/api/__init__.py",
+      "bytes": 30,
+      "sha256": "45d1b9baaf3f7cd4b6a7379d346026f2bcb7f4dd969c607c9faa41704f21ca84",
+      "line_count": 2,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/api/detections/__init__.py",
+      "bytes": 41,
+      "sha256": "ec31e921d2ec65226928b343b4286acd5df003d78e2f89b208e4c0c8cd4b9a09",
+      "line_count": 2,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 1
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/api/detections/conftest.py",
+      "bytes": 791,
+      "sha256": "f459a76fcf8cb325a92d248e16678959167f61d430056dfd97625354a3d6f57b",
+      "line_count": 42,
+      "keyword_counts": {},
+      "symbols": [
+        "pos_2d",
+        "pos_3d",
+        "seg_2d",
+        "seg_3d",
+        "bbox_2d",
+        "bbox_3d"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/api/detections/test_bbox_detections.py",
+      "bytes": 12769,
+      "sha256": "e9401bd5e439fc90f237049e74d91774c65659b7eabe0f86510c04e8c90c4a46",
+      "line_count": 392,
+      "keyword_counts": {
+        "detect": 82,
+        "segment": 24,
+        "track": 50,
+        "infer": 1
+      },
+      "symbols": [
+        "test_bbox_detections_2d_construction",
+        "test_bbox_detections_3d_construction",
+        "test_bbox_detections_wrong_format_raises",
+        "test_bbox_detections_empty_2d",
+        "test_bbox_detections_empty_3d",
+        "test_bbox_detections_explicit_shape",
+        "test_bbox_detections_shape_wrong_dim_raises",
+        "test_bbox_detections_position_shape_2d",
+        "test_bbox_detections_position_shape_3d",
+        "test_bbox_detections_position_inside_bbox",
+        "test_bbox_detections_bbox_identity_2d",
+        "test_bbox_detections_bbox_identity_3d",
+        "test_bbox_detections_segmentation_shape_2d",
+        "test_bbox_detections_segmentation_shape_3d",
+        "test_bbox_detections_segmentation_fills_region",
+        "test_bbox_detections_mass_product_of_sizes_2d",
+        "test_bbox_detections_mass_product_of_sizes_3d",
+        "test_bbox_detections_filter",
+        "test_bbox_detections_filter_with_metadata",
+        "test_bbox_detections_filter_all_false_empty",
+        "test_bbox_detections_add_disks_basic",
+        "test_bbox_detections_add_disks_basic_3d",
+        "test_bbox_detections_add_disks_default_labels_and_confidence",
+        "test_bbox_detections_add_disks_sizes_are_positive",
+        "test_bbox_detections_add_disks_original_unaffected",
+        "test_bbox_detections_save_load_2d",
+        "test_bbox_detections_save_load_3d",
+        "test_bbox_detections_save_load_with_metadata",
+        "test_bbox_detections_save_load_explicit_shape",
+        "test_bbox_detections_save_load_compress_and_cache",
+        "test_bbox_detections_without_cache",
+        "test_bbox_detections_cache_without_compress",
+        "test_bbox_detections_cache_with_compress"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/api/detections/test_detections.py",
+      "bytes": 17385,
+      "sha256": "bea16f7ad71966c1695707c6e303e57b3c4b7b5275efc1d289aca30d0271ae0d",
+      "line_count": 538,
+      "keyword_counts": {
+        "detect": 90,
+        "segment": 68,
+        "track": 54
+      },
+      "symbols": [
+        "test_labels_of_consecutive",
+        "test_labels_of_non_consecutive",
+        "test_labels_of_background_only",
+        "test_labels_of_without_background",
+        "test_labels_of_returns_torch_for_torch_input",
+        "test_labels_of_returns_numpy_for_numpy_input",
+        "test_relabel_consecutive_inplace_pt",
+        "test_relabel_consecutive_inplace_np",
+        "test_relabel_consecutive_copy_pt",
+        "test_relabel_consecutive_copy_np",
+        "test_relabel_consecutive_already_consecutive",
+        "test_fast_relabel_basic",
+        "test_fast_relabel_identity",
+        "test_compress_decompress_roundtrip",
+        "test_compress_output_dtype",
+        "test_decompress_restores_dtype",
+        "test_compress_level",
+        "test_draw_disk_2d_basic",
+        "test_draw_disk_2d_different_radius",
+        "test_draw_disk_2d_overwrite",
+        "test_draw_disk_2d_do_not_overwrite",
+        "test_draw_disk_2d_handles_overlap",
+        "test_draw_disk_3d_basic",
+        "test_draw_disk_3d_different_radius",
+        "test_draw_disk_3d_overwrite",
+        "test_draw_disk_3d_do_not_overwrite",
+        "test_draw_disk_3d_handles_overlap",
+        "test_as_detections_passthrough_returns_same_object",
+        "test_as_detections_float_n2_gives_point_detections",
+        "test_as_detections_float_n3_gives_point_detections",
+        "test_as_detections_int_n4_gives_bbox_detections",
+        "test_as_detections_int_n6_gives_bbox_detections",
+        "test_as_detections_2d_int_gives_segmentation_detections",
+        "test_as_detections_3d_int_gives_segmentation_detections",
+        "test_as_detections_list_are_converted_to_array",
+        "test_as_detections_unrecognized_shape_raises",
+        "test_as_detections_kwargs_forwarded",
+        "test_detections_default_confidence_is_ones",
+        "test_detections_default_labels_are_consecutive",
+        "test_detections_explicit_confidence_stored",
+        "test_detections_explicit_labels_stored",
+        "test_detections_confidence_wrong_format_raises",
+        "test_detections_labels_wrong_format_raises",
+        "test_detections_len_equals_length",
+        "test_detections_save_load_unknown_type_raises",
+        "test_detections_save_load_multi_frames",
+        "test_detections_save_load_multi_frames_fail_if_missing_file",
+        "test_detections_no_cache_for_metadata",
+        "test_relabel_changes_labels",
+        "test_relabel_original_unaffected",
+        "test_relabel_metadata_isolated_between_clone_and_original",
+        "test_relabel_cache_isolated_between_clone_and_original",
+        "test_relabel_wrong_length_raises"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/api/detections/test_point_detections.py",
+      "bytes": 14779,
+      "sha256": "c4ccfc9c03149d4c44a2bd7259c9c0e8c8e1dcb79e881e10ef1c0f9b8742bf8c",
+      "line_count": 444,
+      "keyword_counts": {
+        "detect": 95,
+        "segment": 24,
+        "track": 57,
+        "infer": 1
+      },
+      "symbols": [
+        "test_point_detections_2d_construction",
+        "test_point_detections_3d_construction",
+        "test_point_detections_wrong_format_raises",
+        "test_point_detections_negative_radius_raises",
+        "test_point_detections_empty_2d",
+        "test_point_detections_empty_3d",
+        "test_point_detections_uniform_radius_scalar",
+        "test_point_detections_per_detection_radius",
+        "test_point_detections_asymmetric_radius",
+        "test_point_detections_explicit_shape",
+        "test_point_detections_shape_wrong_dim_raises",
+        "test_point_detections_position_identity_2d",
+        "test_point_detections_position_identity_3d",
+        "test_point_detections_bbox_shape_2d",
+        "test_point_detections_bbox_shape_3d",
+        "test_point_detections_bbox_contains_position",
+        "test_point_detections_bbox_small_radius",
+        "test_point_detections_segmentation_shape_2d",
+        "test_point_detections_segmentation_shape_3d",
+        "test_point_detections_segmentation_contains_labels",
+        "test_point_detections_mass_2d_formula",
+        "test_point_detections_mass_3d_formula",
+        "test_point_detections_mass_min_one",
+        "test_point_detections_filter_2d",
+        "test_point_detections_filter_3d",
+        "test_point_detections_filter_with_metadata",
+        "test_point_detections_filter_all_false_empty",
+        "test_point_detections_add_disks_basic",
+        "test_point_detections_add_disks_basic_3d",
+        "test_point_detections_add_disks_default_labels_and_confidence",
+        "test_point_detections_add_disks_original_unaffected",
+        "test_point_detections_save_load_2d",
+        "test_point_detections_save_load_3d",
+        "test_point_detections_save_load_with_metadata",
+        "test_point_detections_save_load_explicit_shape",
+        "test_point_detections_save_load_compress_and_cache",
+        "test_point_detections_without_cache",
+        "test_point_detections_cache_without_compress",
+        "test_point_detections_cache_with_compress"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/api/detections/test_segmentation_detections.py",
+      "bytes": 20157,
+      "sha256": "056bef26922798d3932d50e2b5dc117fc6c9fdea774c61bd1da36faf346448f4",
+      "line_count": 599,
+      "keyword_counts": {
+        "detect": 105,
+        "segment": 110,
+        "track": 65
+      },
+      "symbols": [
+        "test_seg_detections_2d_construction",
+        "test_seg_detections_3d_construction",
+        "test_seg_detections_wrong_format_raises",
+        "test_seg_detections_wrong_position_fn_raises",
+        "test_seg_detections_all_background_2d",
+        "test_seg_detections_all_background_3d",
+        "test_seg_detections_non_consecutive_labels",
+        "test_seg_detections_position_when_round",
+        "test_seg_detections_position_method_mean_vs_median",
+        "test_seg_detections_position_method_custom_callable",
+        "custom_fn",
+        "test_seg_detections_bbox_2d",
+        "test_seg_detections_bbox_3d",
+        "test_seg_detections_bbox_contains_all_occurrences",
+        "test_seg_detections_segmentation_identity_2d",
+        "test_seg_detections_segmentation_identity_3d",
+        "test_seg_detections_mass_2d",
+        "test_seg_detections_mass_3d",
+        "test_seg_detections_filter_2d",
+        "test_seg_detections_filter_3d",
+        "test_seg_detections_filter_with_metadata",
+        "test_seg_detections_filter_all_false_empty",
+        "test_seg_detections_filter_with_compress",
+        "test_seg_detections_filter_without_labels",
+        "test_seg_detections_add_disks_basic",
+        "test_seg_detections_add_disks_basic_3d",
+        "test_seg_detections_add_disks_default_labels",
+        "test_seg_detections_add_disks_does_not_overwrite_by_default",
+        "test_seg_detections_add_disks_overwrite_true",
+        "test_seg_detections_add_disks_out_of_bounds_dropped",
+        "test_seg_detections_add_disks_original_unaffected",
+        "test_seg_detections_save_load_2d",
+        "test_seg_detections_save_load_3d",
+        "test_seg_detections_save_load_with_metadata",
+        "test_seg_detections_save_load_position_method_mean",
+        "test_seg_detections_save_load_position_method_specific",
+        "custom_fn",
+        "test_bbox_detections_save_load_compress_and_cache",
+        "test_seg_detections_without_cache_and_compress",
+        "test_seg_detections_without_cache_with_compress",
+        "test_seg_detections_cache_without_compress",
+        "test_bbox_detections_cache_with_compress",
+        "test_median_from_segmentation_non_consecutive"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/api/detections/test_statistics.py",
+      "bytes": 7301,
+      "sha256": "1b05bec5b24bb5e86c8502f836c39e566e3247130677015df43eedb5f95cb22f",
+      "line_count": 182,
+      "keyword_counts": {
+        "detect": 29,
+        "track": 23
+      },
+      "symbols": [
+        "test_average_mass_empty_sequence",
+        "test_average_mass_no_detections",
+        "test_average_mass_single_frame",
+        "test_average_mass_multiple_frames",
+        "test_average_mass_ignores_empty_frames",
+        "test_average_radius_empty_sequence",
+        "test_average_radius_2d",
+        "test_average_radius_3d",
+        "test_average_radius_anisotropy",
+        "test_average_min_dist_empty_sequence",
+        "test_average_min_dist_single_detection",
+        "test_average_min_dist_2d",
+        "test_average_min_dist_3d",
+        "test_average_min_dist_anisotropy",
+        "test_average_min_dist_multiple_frames",
+        "test_anisotropy_empty_sequence",
+        "test_anisotropy_2d_only_depth",
+        "test_anisotropy_2d_full",
+        "test_anisotropy_3d_only_depth",
+        "test_anisotropy_3d_full",
+        "test_anisotropy_isotropic",
+        "test_anisotropy_zero_sizes",
+        "test_anisotropy_warns_when_yx_anisotropic"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/api/test_detector.py",
+      "bytes": 6185,
+      "sha256": "3b57079abe61f054c980423bc283b01a5096e94a670fbae2c95f5156589836fa",
+      "line_count": 201,
+      "keyword_counts": {
+        "detect": 101,
+        "segment": 13,
+        "track": 23
+      },
+      "symbols": [
+        "MinimalBatchDetector",
+        "__init__",
+        "detect",
+        "MinimalDetectionsRefiner",
+        "__init__",
+        "apply",
+        "test_batch_detector_empty_video_returns_empty",
+        "test_batch_detector_single_frame",
+        "test_batch_detector_exact_multiple_of_batch",
+        "test_batch_detector_non_multiple_batch",
+        "test_detections_refiner_empty_sequence",
+        "test_detections_refiner_each_frame_refined",
+        "test_detections_refiner_video_frame_passed_to_apply",
+        "test_ground_truth_detector_detect_2d",
+        "test_ground_truth_detector_detect_3d",
+        "test_ground_truth_detector_detect_rejects_multichannel",
+        "test_ground_truth_detector_detect_rejects_float",
+        "test_ground_truth_detector_run_without_segmentations_uses_video",
+        "test_ground_truth_detector_run_with_segmentations_uses_them",
+        "test_ground_truth_detector_run_shape_mismatch_raises",
+        "test_ground_truth_detector_check_shape_noop_without_segmentation"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/api/test_linker.py",
+      "bytes": 4724,
+      "sha256": "401615601dc9b65a058d87d1910b97d03a932ef6f8f4a491805e8d2e19d2e6f6",
+      "line_count": 138,
+      "keyword_counts": {
+        "detect": 17,
+        "track": 28,
+        "link": 59
+      },
+      "symbols": [
+        "MinimalOnlineLinker",
+        "__init__",
+        "reset",
+        "update",
+        "collect",
+        "test_online_linker_empty_detections_pass",
+        "test_online_linker_on_2d_seq",
+        "test_online_linker_on_3d_seq",
+        "test_online_linker_video_none_passes_none_to_update",
+        "test_online_linker_video_frames_passed_to_update",
+        "test_online_linker_raw_tensor_converted",
+        "test_online_linker_returns_collect_result",
+        "test_online_linker_fewer_video_frames_warns",
+        "test_online_linker_more_video_frames_warns",
+        "test_online_linker_check_tracks_warns_on_bad_ids"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "tests/api/test_optical_flow.py",
+      "bytes": 7758,
+      "sha256": "eb69e88c85fd9550a88ed014146a8ac6b840db626eace6a0aefdc823f5a638c7",
+      "line_count": 268,
+      "keyword_counts": {
+        "track": 1,
+        "flow": 92
+      },
+      "symbols": [
+        "test_preprocess_2d_output_shape_halved",
+        "test_preprocess_3d_output_shape_halved",
+        "test_preprocess_output_dtype_float32",
+        "test_preprocess_channels_not_downscaled",
+        "test_preprocess_downscale_1_preserves_shape",
+        "test_preprocess_per_axis_downscale",
+        "test_preprocess_without_blur",
+        "test_preprocess_with_per_axis_blur",
+        "test_dummy_compute_2d_output_shape",
+        "test_dummy_compute_3d_output_shape",
+        "test_dummy_compute_all_zeros",
+        "test_flow_at_constant_2d",
+        "test_flow_at_constant_3d",
+        "test_flow_at_empty_returns_empty",
+        "test_flow_at_interpolates",
+        "test_transform_zero_flow_points_unchanged_2d",
+        "test_transform_zero_flow_points_unchanged_3d",
+        "test_transform_nonzero_flow_displaces_correctly",
+        "test_transform_empty_is_empty",
+        "test_warp_zero_flow_2d",
+        "test_warp_zero_flow_3d",
+        "test_warp_channels_preserved",
+        "test_warp_constant_flow_shifts_content",
+        "test_warp_flow_many_to_one"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/api/test_tracker.py",
+      "bytes": 11876,
+      "sha256": "a8fcdaecda9c234be6eee0133c6dd851a3364ad3a459d2ec89356f78f5deae6b",
+      "line_count": 390,
+      "keyword_counts": {
+        "detect": 75,
+        "segment": 12,
+        "track": 134,
+        "link": 83,
+        "flow": 1
+      },
+      "symbols": [
+        "MinimalDetector",
+        "run",
+        "MinimalLinker",
+        "run",
+        "MinimalRefiner",
+        "__init__",
+        "run",
+        "test_multi_step_tracker_empty_returns_empty",
+        "test_multi_step_tracker_basic_run",
+        "test_multi_step_tracker_with_refiner",
+        "test_multi_step_tracker_check_tracks_warns_on_bad_result",
+        "DuplicateIdLinker",
+        "run",
+        "test_batch_multi_step_tracker_empty_video",
+        "test_batch_multi_step_tracker_2d_basics",
+        "test_batch_multi_step_tracker_3d_basics",
+        "test_batch_multi_step_tracker_batch_1",
+        "test_batch_multi_step_tracker_smaller_batch",
+        "test_batch_multi_step_tracker_partial_batch",
+        "test_batch_multi_step_tracker_refiner_applied",
+        "_make_bar",
+        "test_pauseable_tqdm_initial_state",
+        "test_pauseable_tqdm_pause_sets_last_pause_t",
+        "test_pauseable_tqdm_unpause_resets_last_pause_t",
+        "test_pauseable_tqdm_double_pause_warns",
+        "test_pauseable_tqdm_unpause_without_pause_warns",
+        "test_pauseable_tqdm_update_while_paused_warns_and_unpauses",
+        "test_pauseable_tqdm_pause_no_refresh",
+        "test_pauseable_tqdm_unpause_shifts_start_t",
+        "test_pauseable_tqdm_disabled_pause_is_noop",
+        "test_pauseable_tqdm_disabled_unpause_is_noop",
+        "test_pauseable_tqdm_negative_delta_t_warns_and_skips_adjustment",
+        "test_batch_multi_step_tracker_gt_without_segmentations_uses_normal_batch_flow",
+        "test_batch_multi_step_tracker_gt_with_segmentations_dispatches_to_online_tracking",
+        "test_batch_multi_step_tracker_gt_online_tracking_applies_refiner",
+        "test_batch_multi_step_tracker_gt_online_tracking_shape_mismatch_raises",
+        "test_batch_multi_step_tracker_gt_online_tracking_guard_raises_on_wrong_detector"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "tests/api/test_tracking_graph.py",
+      "bytes": 18111,
+      "sha256": "126a6a973cbbdc2844ae9985aa57b43cbd388fa34deb038bc1c83ae2ee97bf02",
+      "line_count": 544,
+      "keyword_counts": {
+        "detect": 6,
+        "track": 356
+      },
+      "symbols": [
+        "test_from_tracks_empty_collection",
+        "test_from_tracks_single_2d_track",
+        "test_from_tracks_single_3d_track",
+        "test_from_tracks_independent_tracks_no_cross_edges",
+        "test_from_tracks_keep_nans",
+        "test_from_tracks_drop_nan_skips_and_bridges",
+        "test_from_tracks_split_edge_marked",
+        "test_from_tracks_merge_edge_marked",
+        "test_from_tracks_merge_and_split_typical_case",
+        "test_from_tracks_edge_with_merge_and_split_label",
+        "test_from_tracks_without_edges",
+        "test_from_nx_basic_remapping",
+        "test_from_nx_backward_edge_raises",
+        "test_from_nx_auto_split_from_out_degree",
+        "test_from_nx_auto_merge_from_in_degree",
+        "test_from_nx_explicit_split_flag",
+        "test_from_nx_explicit_merge_flag",
+        "test_from_nx_optional_keys",
+        "test_from_nx_optional_keys_undefined_by_default",
+        "test_from_nx_extra_keys_propagated",
+        "test_to_tracks_empty_graph",
+        "test_to_tracks_single_track_2d",
+        "test_to_tracks_single_track_3d",
+        "test_to_tracks_two_independent_tracks",
+        "test_to_tracks_single_split",
+        "test_to_tracks_single_merge",
+        "test_to_tracks_merge_and_split_typical",
+        "test_to_tracks_nan_gap_reconstructed",
+        "test_to_tracks_nan_border_reconstructed",
+        "test_from_tracks_drop_nan_round_trip_only_removes_outer_nan",
+        "test_to_tracks_from_graph_with_gap",
+        "test_to_tracks_with_unlabelled_split",
+        "test_to_tracks_with_unlabelled_merge",
+        "test_to_tracks_with_multiple_track_id_warns_and_use_first",
+        "test_to_tracks_with_single_track_id_with_undefined",
+        "test_to_tracks_with_non_unique_track_id_warns_and_relabel"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "tests/api/test_tracks.py",
+      "bytes": 31436,
+      "sha256": "7b4fb70806b730f7efcf7375d67e6a6767ca263bf1d2c2cbd848e54a2f7a1096",
+      "line_count": 893,
+      "keyword_counts": {
+        "detect": 115,
+        "segment": 23,
+        "track": 782,
+        "link": 4,
+        "infer": 1
+      },
+      "symbols": [
+        "test_track_2d_construction",
+        "test_track_3d_construction",
+        "test_track_auto_identifier_increments",
+        "test_track_negative_identifier_raises",
+        "test_track_wrong_points_shape_raises",
+        "test_track_float64_dtype_raises",
+        "test_track_default_detection_ids_minus_one",
+        "test_track_explicit_detection_ids",
+        "test_track_wrong_detection_ids_shape_raises",
+        "test_track_wrong_detection_ids_dtype_raises",
+        "test_track_merge_id_stored",
+        "test_track_parent_id_stored",
+        "test_track_len_equals_t",
+        "test_track_len_3d",
+        "test_track_getitem_inside_range",
+        "test_track_getitem_out_range_returns_nan",
+        "test_track_getitem_shape_2d",
+        "test_track_getitem_shape_3d",
+        "test_track_overlaps_same_frames",
+        "test_track_no_overlap_adjacent",
+        "test_track_no_overlap_with_gap",
+        "test_track_partial_overlap",
+        "test_track_overlaps_single_shared_frame",
+        "test_track_overlaps_tolerance_extends_overlap",
+        "test_track_overlaps_tolerance_reduces_overlap",
+        "test_track_tensorize_single",
+        "test_track_tensorize_multiple",
+        "test_track_tensorize_inferred_frame_range",
+        "test_track_tensorize_explicit_extended_frame_range",
+        "test_track_tensorize_explicit_restricted_frame_range",
+        "test_track_tensorize_empty_raises",
+        "test_track_tensorize_different_dim_raises",
+        "test_track_tensorize_det_ids_single",
+        "test_track_tensorize_det_ids_multiple",
+        "test_track_tensorize_det_ids_empty_raises",
+        "test_check_tracks_valid_independent",
+        "test_check_tracks_detect_shared_identifiers",
+        "test_check_tracks_valid_merge",
+        "test_check_tracks_invalid_merge",
+        "test_check_tracks_merge_only_warns_if_gap",
+        "test_check_tracks_merge_warns_if_not_couple",
+        "test_check_tracks_valid_split",
+        "test_check_tracks_invalid_split",
+        "test_check_tracks_split_only_warns_if_gap",
+        "test_check_tracks_split_warns_if_not_couple",
+        "test_check_valid_split_and_merge",
+        "test_track_save_load_single",
+        "test_track_save_load_single_with_metadata",
+        "_pass",
+        "test_track_save_load_preserves_start_with_offset",
+        "test_track_save_empty_collection_raises",
+        "test_track_reverse_points_reversed_single",
+        "test_track_reverse_points_reversed_multiple",
+        "test_track_reverse_start_time_adjusted",
+        "test_track_reverse_merge_becomes_parent",
+        "test_track_reverse_parent_becomes_merge",
+        "test_track_reverse_detection_ids_reversed",
+        "test_update_detection_ids_basic",
+        "test_update_detection_ids_empty_pass",
+        "test_update_detection_ids_with_seg",
+        "test_update_detection_ids_with_empty_seg",
+        "test_update_detection_ids_with_larger_sequence",
+        "test_update_detection_ids_with_nan_in_track",
+        "test_resolve_disk_radius_scalar",
+        "test_resolve_disk_radius_anisotropy_2d_uses_last_two_axes",
+        "test_resolve_disk_radius_anisotropy_3d_scales_depth_axis",
+        "test_resolve_disk_radius_per_track_mapping",
+        "test_resolve_disk_radius_per_track_per_frame_sequence",
+        "test_update_detections_from_tracks_empty_tracks_passthrough",
+        "test_update_detections_from_tracks_empty_sequence_passthrough",
+        "test_update_detections_from_tracks_relabels_matched",
+        "test_update_detections_from_tracks_drops_false_positives",
+        "test_update_detections_from_tracks_keeps_false_positives",
+        "test_update_detections_from_tracks_draws_false_negatives",
+        "test_update_detections_from_tracks_no_false_negatives_when_disabled",
+        "test_update_detections_from_tracks_per_track_radius",
+        "test_update_detections_from_tracks_complete_sequence",
+        "test_update_detections_from_tracks_warns_on_nan_gap",
+        "test_update_detections_from_tracks_warns_when_disk_not_found"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "tests/dataset/__init__.py",
+      "bytes": 34,
+      "sha256": "588c6f18816fa7319ba4d437995f45f0839c2d05317bbab01e68f922d112b3bd",
+      "line_count": 2,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "tests/dataset/test_ctc.py",
+      "bytes": 25529,
+      "sha256": "9159c764e03684e6a7238fd4a2ac45a3842b739a0dd72cf973529b426b705988",
+      "line_count": 687,
+      "keyword_counts": {
+        "detect": 138,
+        "segment": 24,
+        "track": 237,
+        "link": 13,
+        "ctc": 5
+      },
+      "symbols": [
+        "_write_tiff_2d",
+        "detections_2d",
+        "detections_3d",
+        "_make_tracks_2d",
+        "_make_tracks_3d",
+        "_write_tiff_multichannel",
+        "_write_seg_tiff",
+        "_write_seg_tiff_3d",
+        "test_parse_meta_data_basic",
+        "test_parse_meta_data_with_parent",
+        "test_parse_meta_data_identifier_offset",
+        "test_load_detections_standard_naming",
+        "test_load_detections_non_standard_naming",
+        "test_load_detections_roundtrip",
+        "test_load_detections_correct_for_missing_frames_no_gaps",
+        "test_load_detections_correct_for_missing_frames_2d",
+        "test_load_detections_correct_for_missing_frames_3d_full_volume",
+        "test_load_detections_correct_for_missing_frames_3d_per_slice",
+        "test_load_detections_correct_for_missing_frames_mixed_naming_raises",
+        "test_load_detections_correct_for_missing_frames_bad_naming_raises",
+        "test_load_detections_correct_for_missing_frames_requires_folder_raises",
+        "test_load_tracks_res_mode",
+        "test_load_tracks_man_track_mode",
+        "test_load_tracks_man_seg_mode",
+        "test_load_tracks_no_metadata_warns",
+        "test_load_tracks_missing_id_in_metadata_warns",
+        "test_load_tracks_frame_before_start_raises",
+        "test_load_tracks_frame_after_last_raises",
+        "test_load_tracks_multichannel_raises",
+        "test_load_tracks_with_parent",
+        "test_save_detections_as_res_naming",
+        "test_save_detections_as_man_track_naming",
+        "test_save_detections_as_seg_naming",
+        "test_save_detections_n_digit",
+        "test_save_detections_creates_directory",
+        "test_save_detections_2d_roundtrip",
+        "test_save_detections_3d_roundtrip",
+        "test_save_metadata_content",
+        "test_save_metadata_with_parent",
+        "test_save_metadata_merge_warns",
+        "test_save_tracks_as_res_creates_files",
+        "test_save_tracks_as_man_track_creates_files",
+        "test_save_tracks_as_seg_creates_files",
+        "test_save_tracks_no_shape_raises",
+        "test_save_tracks_shape_mismatch_raises",
+        "test_save_tracks_last_overwrite",
+        "test_save_tracks_missing_position_in_segment_warns",
+        "test_save_tracks_disk_outside_image_warns",
+        "test_save_tracks_occluded_track_warns",
+        "test_save_tracks_with_detections_uses_segmentation",
+        "test_save_tracks_unlinked_track_draws_disk",
+        "_sorted_tracks",
+        "test_round_trip_2d_res",
+        "test_round_trip_2d_man_track",
+        "test_round_trip_2d_man_seg",
+        "test_round_trip_3d_res",
+        "test_round_trip_with_detections"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "tests/dataset/test_sinetra.py",
+      "bytes": 1993,
+      "sha256": "f88e9fa26093fc7d458bd74ae083c097e9581ca6c94104e0a14ea28ebbb0197e",
+      "line_count": 72,
+      "keyword_counts": {
+        "track": 25
+      },
+      "symbols": [
+        "sinetra_data",
+        "sinetra_pt_file",
+        "test_load_metadata_from_file",
+        "test_load_metadata_from_directory",
+        "test_load_tracks_count",
+        "test_load_tracks_start",
+        "test_load_tracks_positions",
+        "test_load_tracks_identifiers"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "tests/fiji/__init__.py",
+      "bytes": 31,
+      "sha256": "ca8171e82c3ef17472c4b6b85faefaf614c11e78bdc075a13276ed49ecc87cc2",
+      "line_count": 2,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/fiji/conftest.py",
+      "bytes": 2811,
+      "sha256": "a35afeb6eba903b43bb16929e70e7035633e5972e5ce9839b55e5036a31ea111",
+      "line_count": 95,
+      "keyword_counts": {
+        "detect": 6,
+        "segment": 5,
+        "track": 32
+      },
+      "symbols": [
+        "seg_2d_det",
+        "seg_3d_det",
+        "_write_minimal_trackmate_xml",
+        "trackmate_2d_path",
+        "trackmate_3d_path"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/fiji/test_io.py",
+      "bytes": 4144,
+      "sha256": "d0ecf6d295f9ec608feed9d4cb445d4205947d729705f3b4da1e8f9d5f89cda1",
+      "line_count": 141,
+      "keyword_counts": {
+        "detect": 18,
+        "segment": 5,
+        "track": 48
+      },
+      "symbols": [
+        "test_save_detections_2d",
+        "test_save_detections_3d",
+        "test_save_detections_empty_raises",
+        "test_save_detections_with_outside_labels_ignores",
+        "test_load_tracks_2d_basic",
+        "test_load_tracks_3d_z_preserved",
+        "test_load_tracks_temporal_gap",
+        "test_load_tracks_splitting_raises",
+        "test_load_tracks_no_model_raises"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/fiji/test_run.py",
+      "bytes": 3392,
+      "sha256": "4635d931723687ec5d341e349e6934ba7e7322d2519e72cadb1ae89c7c52c91c",
+      "line_count": 127,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [
+        "test_fiji_runner_valid_path",
+        "test_fiji_runner_invalid_path_raises",
+        "test_fiji_runner_capture_outputs_default",
+        "test_fiji_runner_capture_outputs_set",
+        "test_fiji_runner_run_calls_subprocess",
+        "test_fiji_runner_run_command_contains_flags",
+        "test_fiji_runner_run_kwargs_format",
+        "test_fiji_runner_run_cwd_is_parent",
+        "test_fiji_runner_run_capture_output_forwarded",
+        "test_fiji_runner_run_returns_returncode"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/geff/__init__.py",
+      "bytes": 31,
+      "sha256": "19e85091e50acc6d5d7e9f6a3808599bee2ad2da0b5b8d6f366df818ed7d99f4",
+      "line_count": 2,
+      "keyword_counts": {
+        "track": 1,
+        "geff": 1
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/geff/conftest.py",
+      "bytes": 1143,
+      "sha256": "61e6e636fe185727397509223b53ebc7122f2d7682d3e3c261ad3504573eb281",
+      "line_count": 47,
+      "keyword_counts": {
+        "detect": 6,
+        "segment": 5,
+        "track": 14
+      },
+      "symbols": [
+        "tracks_2d",
+        "tracks_3d",
+        "seg_2d_det",
+        "seg_3d_det",
+        "video_2d",
+        "video_3d"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/geff/test_io.py",
+      "bytes": 13496,
+      "sha256": "ba8fb9aa6e0ed21904d39cbb9256928b44d0924511c0fae8e33e0b924d603cdf",
+      "line_count": 384,
+      "keyword_counts": {
+        "detect": 45,
+        "segment": 23,
+        "track": 152,
+        "geff": 86,
+        "zarr": 48
+      },
+      "symbols": [
+        "test_save_video_to_zarr_2d",
+        "test_save_video_to_zarr_3d",
+        "test_save_video_to_zarr_channel_selection",
+        "test_save_video_to_zarr_custom_chunks",
+        "test_save_video_to_zarr_empty_list_raises",
+        "test_save_detections_to_zarr_2d",
+        "test_save_detections_to_zarr_3d",
+        "test_save_detections_to_zarr_custom_chunks",
+        "test_save_detections_to_zarr_empty_raises",
+        "test_tracks_round_trip_2d",
+        "test_tracks_round_trip_3d",
+        "test_tracks_round_trip_empty",
+        "test_tracks_round_trip_split",
+        "test_tracks_round_trip_merge",
+        "test_save_tracks_drop_nan_round_trip_only_removes_outer_nan",
+        "test_tracks_anisotropy_sets_axis_scale",
+        "test_tracks_with_video_writes_video_without_split",
+        "test_tracks_with_video_splits_channel",
+        "test_tracks_with_detections_writes_segmentation",
+        "test_load_video_from_zarr_round_trip",
+        "test_load_detections_from_zarr_round_trip",
+        "test_load_video_from_geff_round_trip",
+        "test_load_video_from_geff_only_loads_first_channel",
+        "test_load_video_from_geff_no_related_object_raises",
+        "test_load_video_from_geff_do_not_load_labels",
+        "test_load_detections_from_geff_round_trip",
+        "test_load_detections_from_geff_no_related_object_raises",
+        "test_load_detections_from_geff_do_not_load_image"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/icy/__init__.py",
+      "bytes": 30,
+      "sha256": "ce43b3bade29ef35be0aa8b31d09dcd063914754555e1da41f35121abb57d09f",
+      "line_count": 2,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/icy/conftest.py",
+      "bytes": 887,
+      "sha256": "99f7779bca4a692469fe5dbc262d4017a3be46cbf41736fcc7775bec2a12a44d",
+      "line_count": 36,
+      "keyword_counts": {
+        "detect": 6,
+        "segment": 5,
+        "track": 14
+      },
+      "symbols": [
+        "tracks_2d",
+        "tracks_3d",
+        "seg_2d_det",
+        "seg_3d_det"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/icy/test_io.py",
+      "bytes": 9762,
+      "sha256": "010368549e3406b876213f589e251329c200c808429cdb1d460269dad3810c5e",
+      "line_count": 297,
+      "keyword_counts": {
+        "detect": 35,
+        "segment": 7,
+        "track": 134,
+        "assign": 2
+      },
+      "symbols": [
+        "test_save_tracks_2d_xml_structure",
+        "test_save_tracks_2d_positions",
+        "test_save_tracks_3d_positions",
+        "test_save_tracks_nan_warns",
+        "test_save_tracks_name_in_trackgroup",
+        "_write_icy_xml",
+        "test_load_tracks_2d",
+        "test_load_tracks_3d",
+        "test_load_tracks_with_gaps",
+        "test_load_tracks_ignores_ids_and_reassigns",
+        "test_load_tracks_without_id_assigns",
+        "test_load_tracks_no_trackgroup_raises",
+        "test_save_load_round_trip_2d",
+        "test_save_load_round_trip_3d",
+        "_xml_text",
+        "test_save_detections_2d_xml_structure",
+        "test_save_detections_2d_bounds",
+        "test_save_detections_2d_mask_data",
+        "test_save_detections_3d_xml_structure",
+        "test_save_detections_frame_id_in_t",
+        "test_save_detections_empty",
+        "test_save_detections_with_outside_labels_warns"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/icy/test_run.py",
+      "bytes": 4606,
+      "sha256": "35736b68150bd8f3835aa9de681646c492645be81025509ef4c81af6481f3d77",
+      "line_count": 172,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [
+        "test_icy_runner_valid_path",
+        "test_icy_runner_missing_jar_raises",
+        "test_icy_runner_no_path_uses_which",
+        "test_icy_runner_no_path_no_which_raises",
+        "test_icy_runner_timeout_stored",
+        "test_icy_runner_default_timeout_is_none",
+        "test_icy_runner_run_calls_subprocess",
+        "test_icy_runner_run_command_contains_flags",
+        "test_icy_runner_run_kwargs_format",
+        "test_icy_runner_run_cwd_is_parent",
+        "test_icy_runner_timeout_passed_to_subprocess",
+        "test_icy_runner_no_timeout_passed_when_none",
+        "test_icy_runner_returncode"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/test_env.py",
+      "bytes": 1887,
+      "sha256": "3c509c23cb38e032b97b13a11dbd29bcc14c1e97dd71e43f680b86dab280061f",
+      "line_count": 56,
+      "keyword_counts": {
+        "track": 3
+      },
+      "symbols": [
+        "test_absent_key_default_false",
+        "test_absent_key_default_true",
+        "test_false_values",
+        "test_true_values",
+        "test_case_insensitive",
+        "test_strips_whitespace",
+        "test_invalid_value_warns_and_returns_default"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/test_example_data.py",
+      "bytes": 1679,
+      "sha256": "dc39f33cc80c1cad97ada257202cfc50e8e215e9be828034a469e6361341eaac",
+      "line_count": 61,
+      "keyword_counts": {
+        "track": 5
+      },
+      "symbols": [
+        "_write_minimal_avi",
+        "test_download_triggered_when_file_absent",
+        "fake_retrieve",
+        "test_no_download_when_file_exists",
+        "test_runtime_error_on_corrupted_file",
+        "fake_retrieve"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "tests/test_utils.py",
+      "bytes": 1389,
+      "sha256": "224b4dfdee6d3a7b6e7d526dd86160b0d70c54fc61a8e659b18add8facdf0eb0",
+      "line_count": 57,
+      "keyword_counts": {
+        "track": 2
+      },
+      "symbols": [
+        "test_numeric_strings",
+        "test_alphanumeric_strings",
+        "test_pure_alpha_strings",
+        "test_already_sorted",
+        "test_empty",
+        "test_mixed_alpha_and_numeric",
+        "test_path_like_objects",
+        "test_parametrized_cases"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/video/__init__.py",
+      "bytes": 32,
+      "sha256": "0c55f92d16609923d7f39d2e9fd99f48495e09f6d51b3fba9f22362ebd5617ab",
+      "line_count": 2,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/video/conftest.py",
+      "bytes": 2829,
+      "sha256": "3887cf0452fc75f8b0bb4d6530fbc08aeed296e85ea9ff90363622fb60153889",
+      "line_count": 89,
+      "keyword_counts": {},
+      "symbols": [
+        "video_2d",
+        "video_3d",
+        "tiff_2d",
+        "tiff_3d",
+        "pil_tiff_gray",
+        "pil_tiff_rgb",
+        "png_folder",
+        "avi_2d",
+        "avi_gray"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/video/test_preprocessors.py",
+      "bytes": 30380,
+      "sha256": "4c5d6d8a70068df79dbee3cbb11b2f7da11e1e6e5299891f8a61a3dc931bfed7",
+      "line_count": 870,
+      "keyword_counts": {
+        "track": 8,
+        "division": 1,
+        "flow": 2
+      },
+      "symbols": [
+        "IdentityPreprocessor",
+        "preprocess_frame",
+        "test_preprocessor_shape_before_init_raises",
+        "test_preprocessor_initialize_ndarray_2d",
+        "test_preprocessor_initialize_ndarray_3d",
+        "test_preprocessor_initialize_list_of_frames",
+        "test_preprocessor_initialize_empty_video_raises",
+        "test_preprocessor_initialize_zero_pixel_frame_raises",
+        "test_preprocessor_preprocess_video_offline_ndarray",
+        "test_preprocessor_preprocess_video_offline_list",
+        "test_normalizer_hard_clip_output_range_2d",
+        "test_normalizer_hard_clip_output_range_3d",
+        "test_normalizer_uniform_channel_no_division_by_zero",
+        "test_normalizer_custom_quantiles",
+        "test_normalizer_multichannel_independent",
+        "test_normalizer_smooth_clip_output_range",
+        "test_normalizer_compute_stats_on_limits_frames",
+        "test_normalizer_preprocess_video_ndarray_vs_list",
+        "test_normalizer_gamma_hard_clip_matches_formula",
+        "test_normalizer_gamma_hard_clip_applied_after_clipping",
+        "test_normalizer_gamma_smooth_clip_applied_after_clipping",
+        "test_normalizer_gamma_output_range_bounded",
+        "test_normalizer_dtype_and_shape_attributes",
+        "_linear_drift_video",
+        "test_temporal_equalization_corrects_known_linear_drift",
+        "test_temporal_equalization_frame_step_subsamples",
+        "test_temporal_equalization_custom_frame_ids",
+        "test_temporal_equalization_preprocess_video_ndarray_vs_list",
+        "test_temporal_equalization_dtype_and_shape_attributes",
+        "test_channel_projection_mean",
+        "test_channel_projection_min",
+        "test_channel_projection_max",
+        "test_channel_projection_select",
+        "test_channel_projection_select_out_of_bounds_raises",
+        "test_channel_projection_3d_video",
+        "test_channel_projection_preprocess_video_ndarray_vs_seq",
+        "test_channel_projection_do_no_overflow",
+        "test_channel_projection_dtype_and_shape_attributes",
+        "test_frame_slicer_crop_2d",
+        "test_frame_slicer_crop_3d",
+        "test_frame_slicer_too_many_slices_raises",
+        "test_frame_slicer_empty_slice_raises",
+        "test_frame_slicer_preprocess_video_ndarray_vs_list",
+        "test_frame_slicer_dtype_and_shape_attributes",
+        "test_spatial_projection_axis_0_equivalent_to_z_and_d",
+        "test_spatial_projection_axis_1_equivalent_to_y_and_h",
+        "test_spatial_projection_axis_2_equivalent_to_x_and_w",
+        "test_spatial_projection_d_max_equivalent_to_z",
+        "test_spatial_projection_negative_axis_is_converted",
+        "test_spatial_projection_out_of_bounds_axis_raises",
+        "test_spatial_projection_on_2d_video_raises",
+        "test_spatial_projection_on_z_mean",
+        "test_spatial_projection_on_z_min",
+        "test_spatial_projection_on_z_max",
+        "test_spatial_projection_on_z_select",
+        "test_spatial_projection_select_out_of_bounds_raises",
+        "test_spatial_projection_on_y_max",
+        "test_spatial_projection_on_x_max",
+        "test_spatial_projection_preprocess_video_ndarray_vs_seq",
+        "test_spatial_projection_do_no_overflow",
+        "test_spatial_projection_dtype_and_shape_attributes",
+        "test_registrator_default_reference_frame_is_first_frame",
+        "test_registrator_explicit_reference_frame_is_kept",
+        "test_registrator_invalid_reference_channel_raises",
+        "test_registrator_preprocess_before_init_raises",
+        "test_registrator_recovers_known_integer_shift",
+        "test_registrator_applies_same_shift_to_all_channels",
+        "test_registrator_dtype_and_shape_attributes",
+        "test_zoom_2d",
+        "test_zoom__3d",
+        "test_zoom_mismatched_length_raises",
+        "test_zoom_order_0_integer_upscale_matches_repeat",
+        "test_zoom_no_anti_aliasing_does_not_mutate_input_frame",
+        "test_zoom_anti_aliasing_mutates_input_frame",
+        "test_zoom_dtype_and_shape_attributes",
+        "test_local_mean_downscaler_2d",
+        "test_local_mean_downscaler_shape_3d",
+        "test_local_mean_downscaler_mismatched_length_raises",
+        "test_local_mean_downscaler_matches_manual_block_mean",
+        "test_local_mean_dtype_and_shape_attributes"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/video/test_readers.py",
+      "bytes": 25519,
+      "sha256": "a398e78c0c5fa4604df9f9984a09a19b591300f4228758906818ab5bdbb798ec",
+      "line_count": 827,
+      "keyword_counts": {
+        "detect": 2,
+        "track": 1,
+        "assign": 1
+      },
+      "symbols": [
+        "test_slice_length_empty",
+        "test_slice_length_forward",
+        "test_slice_length_reverse",
+        "test_slice_length_step",
+        "test_video_reader_open_tiff_uses_tiff_reader",
+        "test_video_reader_open_unknown_extension_uses_opencv",
+        "test_video_reader_open_directory_uses_multi_frame_reader",
+        "test_array_reader_2d_attributes",
+        "test_array_reader_3d_attributes",
+        "test_array_reader_2d_warns_no_channel",
+        "test_array_reader_2d_with_many_channels_warns_and_convert_to_3d_single_channel",
+        "test_array_reader_3d_with_many_channels_is_not_converted",
+        "test_array_reader_nonempty_path_warns",
+        "test_array_reader_too_few_dims_raises",
+        "test_array_reader_too_many_dims_raises",
+        "test_array_reader_grab_advances",
+        "test_array_reader_seek_valid",
+        "test_array_reader_seek_same_frame_noop",
+        "test_array_reader_seek_out_of_range_raises",
+        "test_array_reader_retrieve_2d_copy",
+        "test_array_reader_read",
+        "test_array_reader_tell",
+        "test_array_reader_release",
+        "test_opencv_reader_attributes",
+        "test_opencv_reader_retrieve_rgb",
+        "test_opencv_reader_grab_advances",
+        "test_opencv_reader_seek_valid",
+        "test_opencv_reader_seek_out_of_range_raises",
+        "test_opencv_reader_empty_raises",
+        "test_opencv_reader_grayscale_opens",
+        "test_opencv_reader_check_frame_id",
+        "test_opencv_reader_release",
+        "test_pil_reader_gray_attributes",
+        "test_pil_reader_gray_retrieve",
+        "test_pil_reader_rgb_channels",
+        "test_pil_reader_grab_sequential",
+        "test_pil_reader_seek",
+        "test_pil_reader_check_frame_id",
+        "test_pil_reader_release",
+        "test_tiff_reader_2d_attributes",
+        "test_tiff_reader_2d_retrieve",
+        "test_tiff_reader_2d_all_frames",
+        "test_tiff_reader_3d_attributes",
+        "test_tiff_reader_3d_retrieve",
+        "test_tiff_reader_no_channel",
+        "test_tiff_reader_grab",
+        "test_tiff_reader_seek_valid",
+        "test_tiff_reader_seek_same_frame_noop",
+        "test_tiff_reader_seek_out_of_range_raises",
+        "test_tiff_reader_release",
+        "test_tiff_reader_permuted_explicit_axes",
+        "test_tiff_reader_ax_slice_spatial",
+        "test_tiff_reader_ax_slice_temporal_raises",
+        "test_tiff_reader_ax_slice_negative_step_raises",
+        "test_tiff_reader_s_axis_as_c",
+        "test_tiff_reader_invalid_out_axes",
+        "test_tiff_reader_c_and_s_raises",
+        "test_tiff_reader_no_temporal_axis_raises",
+        "test_tiff_reader_z_axis_treated_as_t",
+        "test_frame_tiff_reader_unknown_axes_as_t_and_z",
+        "test_frame_tiff_reader_too_many_unknown_axes_raises",
+        "test_frame_tiff_loader_yx",
+        "test_frame_tiff_loader_yxc",
+        "test_frame_tiff_loader_zyxc",
+        "test_frame_tiff_loader_ax_slice",
+        "test_frame_tiff_loader_invalid_ax_slice_raises",
+        "test_frame_tiff_loader_permuted_explicit_axes",
+        "test_tiff_loader_s_axis_as_c",
+        "test_frame_tiff_loader_c_and_s_raises",
+        "test_frame_tiff_loader_unknown_axis_treated_as_z",
+        "test_frame_tiff_loader_unknown_axis_with_z_raises",
+        "test_pil_loader_gray",
+        "test_pil_loader_rgb",
+        "test_multi_frame_reader_png_folder",
+        "test_multi_frame_reader_retrieve",
+        "test_multi_frame_reader_all_frames",
+        "test_multi_frame_reader_grab",
+        "test_multi_frame_reader_seek_out_of_range_raises",
+        "test_multi_frame_reader_explicit_and_implicit_extension",
+        "test_multi_frame_reader_explicit_paths"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/video/test_video.py",
+      "bytes": 27008,
+      "sha256": "29273a171344f699f0bb26ba6923b470a8aac82fa812eac9100097226de86380",
+      "line_count": 866,
+      "keyword_counts": {
+        "track": 101,
+        "assign": 1
+      },
+      "symbols": [
+        "_StubReader",
+        "__init__",
+        "grab",
+        "retrieve",
+        "seek",
+        "_GrabFailingReader",
+        "grab",
+        "_SeekFailingReader",
+        "seek",
+        "test_video_construction_from_2d_array",
+        "test_video_construction_from_3d_array",
+        "test_video_construction_from_reader",
+        "test_video_construction_from_path",
+        "test_video_construction_empty_raises",
+        "test_video_construction_zero_pixel_raises",
+        "test_video_len_2d",
+        "test_video_len_3d",
+        "test_video_len_after_temporal_slice",
+        "test_video_iteration_2d",
+        "test_video_iteration_3d",
+        "test_video_getitem_int_first_frame",
+        "test_video_getitem_int_last_frame",
+        "test_video_getitem_int",
+        "test_video_getitem_int_out_of_range_raises",
+        "test_video_getitem_int_sequential_read",
+        "test_video_temporal_slice_basic",
+        "test_video_temporal_slice_step",
+        "test_video_temporal_slice_reverse",
+        "test_video_temporal_slice_chained",
+        "test_video_spatial_slice_2d",
+        "test_video_spatial_slice_3d",
+        "test_video_spatial_slice_with_channel",
+        "test_video_complete_slice",
+        "test_video_3d_slice_as_z_projection",
+        "test_video_3d_slice_as_x_projection_negative",
+        "test_video_3d_slice_with_integer_on_temporal_axis_returns_frame",
+        "test_video_2d_slice_with_integer_on_channel_raises",
+        "test_video_3d_slice_with_integer_on_channel_raises",
+        "test_video_2d_slice_as_projection_raises",
+        "test_video_ellipsis_returns_copy",
+        "test_video_ellipsis_in_tuple_with_spatial",
+        "test_video_ellipsis_with_temporal_and_channel",
+        "test_video_empty_tuple_returns_copy",
+        "test_video_getitem_too_many_indices_raises",
+        "test_video_getitem_unsupported_type_raises",
+        "video_empty_slicing_raises",
+        "test_video_getitem_grab_failure_raises",
+        "test_video_getitem_seek_failure_raises",
+        "test_video_array_2d",
+        "test_video_array_3d",
+        "test_video_array_after_slicing_and_preprocessing",
+        "test_video_array_with_dtype",
+        "test_video_array_copy_true_or_none_ok",
+        "test_video_array_copy_false_raises",
+        "test_video_add_preprocessor_updates_shape",
+        "test_video_add_preprocessor_updates_dtype",
+        "test_video_add_preprocessor_returns_self",
+        "test_video_add_preprocessor_chaining",
+        "test_video_add_preprocessor_sequential_order",
+        "test_video_normalize_basics",
+        "test_video_normalize_double_warns",
+        "test_video_normalize_do_not_warns_with_other_preprocessor",
+        "test_video_rescale_basic",
+        "test_video_rescale_3d",
+        "test_video_rescale_forwards_zoom_params",
+        "test_video_resize_basic",
+        "test_video_resize_forwards_zoom_params",
+        "test_video_isotrope_min_reduces_video_size",
+        "test_video_isotrope_max_increases_video_size",
+        "test_video_isotrope_same_approximates_pixel_count",
+        "test_video_isotrope_3d",
+        "test_video_isotrope_is_no_op_for_isotrope_video",
+        "test_video_isotrope_forwards_zoom_params",
+        "test_video_set_transform_warns_deprecated",
+        "test_video_set_transform_aggregate",
+        "test_video_set_transform_normalize",
+        "test_video_set_transform_aggregate_and_normalize",
+        "test_expand_ellipsis_no_ellipsis",
+        "test_expand_ellipsis_at_start",
+        "test_expand_ellipsis_at_end"
+      ],
+      "category": "relevant_source"
+    }
+  ],
+  "target_paths_missing": [],
+  "read_errors": [],
+  "checkout_exit": 0,
+  "checkout_stderr_excerpt": "",
+  "checkout_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "license": "MIT",
+  "categories_observed": [
+    "assignment",
+    "data_io",
+    "data_loader",
+    "dependency",
+    "evaluation",
+    "graph_model",
+    "inference",
+    "license",
+    "pipeline",
+    "postprocessing",
+    "readme",
+    "relevant_source",
+    "temporal_linking"
+  ],
+  "categories_not_present_in_selected_files": [
+    "division",
+    "model",
+    "optimization",
+    "submission_conversion",
+    "training"
+  ],
+  "category_coverage": {
+    "data_io": {
+      "status": "READ",
+      "paths": [
+        "src/byotrack/geff/io.py",
+        "docs/source/api/detections.rst",
+        "docs/source/implementation/detectors/detection_refiners.rst",
+        "docs/source/implementation/detectors/detectors.rst",
+        "docs/source/implementation/detectors/stardist.rst",
+        "docs/source/implementation/detectors/wavelet.rst",
+        "docs/source/implementation/linkers/frame_by_frame.rst",
+        "docs/source/implementation/linkers/icy_emht.rst",
+        "docs/source/implementation/linkers/kalman.rst",
+        "docs/source/implementation/linkers/koft.rst",
+        "docs/source/implementation/linkers/linkers.rst",
+        "docs/source/implementation/linkers/nearest_neighbor.rst",
+        "docs/source/implementation/linkers/trackmate.rst",
+        "docs/source/implementation/linkers/trackonstra.rst",
+        "docs/source/implementation/optical_flows/opencv.rst",
+        "docs/source/implementation/optical_flows/optical_flows.rst",
+        "docs/source/implementation/optical_flows/skimage.rst",
+        "docs/source/implementation/refiners/cleaner.rst",
+        "docs/source/implementation/refiners/dist_stitcher.rst",
+        "docs/source/implementation/refiners/emc2.rst",
+        "docs/source/implementation/refiners/interpolater.rst",
+        "docs/source/implementation/refiners/propagation.rst",
+        "docs/source/implementation/refiners/refiners.rst",
+        "docs/source/implementation/refiners/smoother.rst",
+        "src/byotrack/api/detections/__init__.py",
+        "src/byotrack/api/detections/bbox_detections.py",
+        "src/byotrack/api/detections/detections.py",
+        "src/byotrack/api/detections/point_detections.py",
+        "src/byotrack/api/detections/segmentation_detections.py",
+        "src/byotrack/api/detections/statistics.py",
+        "src/byotrack/fiji/io.py",
+        "src/byotrack/geff/__init__.py",
+        "src/byotrack/icy/io.py",
+        "src/byotrack/implementation/__init__.py",
+        "src/byotrack/implementation/detector/__init__.py",
+        "src/byotrack/implementation/detector/refiners.py",
+        "src/byotrack/implementation/detector/stardist.py",
+        "src/byotrack/implementation/detector/wavelet.py",
+        "src/byotrack/implementation/linker/__init__.py",
+        "src/byotrack/implementation/linker/frame_by_frame/__init__.py",
+        "src/byotrack/implementation/linker/frame_by_frame/base.py",
+        "src/byotrack/implementation/linker/frame_by_frame/koft.py",
+        "src/byotrack/implementation/linker/frame_by_frame/nearest_neighbor.py",
+        "src/byotrack/implementation/linker/frame_by_frame/trackonstra.py",
+        "src/byotrack/implementation/linker/icy_emht/__init__.py",
+        "src/byotrack/implementation/linker/icy_emht/emht_protocol.xml",
+        "src/byotrack/implementation/linker/icy_emht/emht_protocol_with_full_specs.xml",
+        "src/byotrack/implementation/linker/icy_emht/icy_emht.py",
+        "src/byotrack/implementation/linker/trackastra/__init__.py",
+        "src/byotrack/implementation/linker/trackmate/__init__.py",
+        "src/byotrack/implementation/linker/trackmate/_trackmate.py",
+        "src/byotrack/implementation/linker/trackmate/trackmate.py",
+        "src/byotrack/implementation/optical_flow/__init__.py",
+        "src/byotrack/implementation/optical_flow/opencv.py",
+        "src/byotrack/implementation/optical_flow/skimage.py",
+        "src/byotrack/implementation/refiner/__init__.py",
+        "src/byotrack/implementation/refiner/cleaner.py",
+        "src/byotrack/implementation/refiner/interpolater.py",
+        "src/byotrack/implementation/refiner/propagation.py",
+        "src/byotrack/implementation/refiner/smoother.py",
+        "src/byotrack/implementation/refiner/stitching/__init__.py",
+        "src/byotrack/implementation/refiner/stitching/emc2.py",
+        "src/byotrack/video/preprocessor/channel_projection.py",
+        "src/byotrack/video/preprocessor/spatial_projection.py",
+        "src/byotrack/video/preprocessor/temporal_equalization.py",
+        "tests/api/detections/__init__.py",
+        "tests/api/detections/conftest.py",
+        "tests/api/detections/test_bbox_detections.py",
+        "tests/api/detections/test_detections.py",
+        "tests/api/detections/test_point_detections.py",
+        "tests/api/detections/test_segmentation_detections.py",
+        "tests/api/detections/test_statistics.py",
+        "tests/fiji/test_io.py",
+        "tests/geff/__init__.py",
+        "tests/geff/conftest.py",
+        "tests/geff/test_io.py",
+        "tests/icy/test_io.py"
+      ]
+    },
+    "data_loader": {
+      "status": "READ",
+      "paths": [
+        "src/byotrack/dataset/ctc.py",
+        "docs/source/datasets/ctc.rst",
+        "docs/source/datasets/sinetra.rst",
+        "src/byotrack/dataset/__init__.py",
+        "src/byotrack/dataset/sinetra.py",
+        "src/byotrack/example_data.py",
+        "tests/dataset/__init__.py",
+        "tests/dataset/test_ctc.py",
+        "tests/dataset/test_sinetra.py",
+        "tests/test_example_data.py"
+      ]
+    },
+    "dependency": {
+      "status": "READ",
+      "paths": [
+        "pyproject.toml",
+        "examples/ctc/requirements.txt"
+      ]
+    },
+    "division": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "evaluation": {
+      "status": "READ",
+      "paths": [
+        "src/byotrack/metrics/ctc.py",
+        "docs/source/metrics/ctc.rst",
+        "src/byotrack/metrics/__init__.py"
+      ]
+    },
+    "inference": {
+      "status": "READ",
+      "paths": [
+        "examples/ctc/link.py"
+      ]
+    },
+    "license": {
+      "status": "READ",
+      "paths": [
+        "LICENSE"
+      ]
+    },
+    "model": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "optimization": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "postprocessing": {
+      "status": "READ",
+      "paths": [
+        "src/byotrack/implementation/refiner/stitching/dist_stitcher.py"
+      ]
+    },
+    "readme": {
+      "status": "READ",
+      "paths": [
+        "README.md",
+        "docs/README.md",
+        "examples/ctc/README.md"
+      ]
+    },
+    "submission_conversion": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "temporal_linking": {
+      "status": "READ",
+      "paths": [
+        "src/byotrack/implementation/linker/frame_by_frame/kalman_linker.py",
+        "src/byotrack/implementation/linker/trackastra/trackastra.py",
+        "docs/source/api/linker.rst",
+        "docs/source/api/tracker.rst",
+        "docs/source/api/tracks.rst",
+        "docs/source/run_examples/ByoTrack fundamental.ipynb",
+        "docs/source/run_examples/Linkers.ipynb",
+        "examples/ByoTrack fundamental.ipynb",
+        "examples/Linkers.ipynb",
+        "src/byotrack/__init__.py",
+        "src/byotrack/_env.py",
+        "src/byotrack/api/__init__.py",
+        "src/byotrack/api/detector.py",
+        "src/byotrack/api/features_extractor.py",
+        "src/byotrack/api/linker.py",
+        "src/byotrack/api/optical_flow/__init__.py",
+        "src/byotrack/api/optical_flow/optical_flow.py",
+        "src/byotrack/api/parameters.py",
+        "src/byotrack/api/refiner.py",
+        "src/byotrack/api/tracks.py",
+        "src/byotrack/fiji/__init__.py",
+        "src/byotrack/fiji/run.py",
+        "src/byotrack/icy/__init__.py",
+        "src/byotrack/icy/run.py",
+        "src/byotrack/napari/__init__.py",
+        "src/byotrack/napari/utils.py",
+        "src/byotrack/napari/viewer.py",
+        "src/byotrack/utils.py",
+        "src/byotrack/video/__init__.py",
+        "src/byotrack/video/preprocessor/__init__.py",
+        "src/byotrack/video/preprocessor/normalizer.py",
+        "src/byotrack/video/preprocessor/preprocessor.py",
+        "src/byotrack/video/preprocessor/registrator.py",
+        "src/byotrack/video/preprocessor/slicer.py",
+        "src/byotrack/video/preprocessor/zoom.py",
+        "src/byotrack/video/reader.py",
+        "src/byotrack/video/video.py",
+        "src/byotrack/visualize.py",
+        "tests/api/test_linker.py",
+        "tests/api/test_tracker.py",
+        "tests/api/test_tracking_graph.py",
+        "tests/api/test_tracks.py"
+      ]
+    },
+    "training": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    }
+  },
+  "selection_policy": {
+    "included": "all human-readable code, notebooks, documentation, dependency/runtime configuration, schemas, tests, and license/notices at the fixed commit",
+    "excluded": "repository-hosting automation, generated/cache directories, and binary/non-source artefacts",
+    "excluded_path_count": 16,
+    "excluded_paths": [
+      {
+        "path": ".github/CONTRIBUTING.md",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".github/workflows/deploy.yml",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".github/workflows/tests.yml",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".gitignore",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": ".python-version",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "docs/Makefile",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "docs/make.bat",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "docs/source/images/emht_protocol_screenshot.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "docs/source/images/stardist.svg",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "docs/source/images/tracking.svg",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "docs/source/images/wavelet_thresholding.svg",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "example_data/tdt_contrxn-1.avi",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "examples/ctc/koft.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "examples/ctc/method.pdf",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/byotrack/py.typed",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "uv.lock",
+        "reason": "non_text_or_non_source_extension"
+      }
+    ]
+  },
+  "scope_note": "Full bytes were read for every listed relevant-source path; only hashes, structure, notebook-cell hashes, and symbol/keyword summaries are persisted. The complete tree and per-path exclusions preserve the coverage boundary."
+}

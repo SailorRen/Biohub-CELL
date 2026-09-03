@@ -1,0 +1,2081 @@
+{
+  "schema_version": "1.0",
+  "source_id": "GH-DEEP-quantumjot__btrack",
+  "repo": "quantumjot/btrack",
+  "url": "https://github.com/quantumjot/btrack",
+  "relation_to_competition": "bayesian_cell_tracking",
+  "access_time_utc": "2026-09-03T08:47:12.509290+00:00",
+  "fixed_branch": "main",
+  "fixed_commit_sha": "2de42c911253e021b3814191fd1a049a6c0e2628",
+  "latest_commit_date": "2026-01-09T13:03:17-08:00",
+  "tree_file_count": 115,
+  "tree_bytes": 8869,
+  "tree_sha256": "1a473a23b73308c189977da8a27b296f17f90a1a57d858ec424b2117d9ec52cc",
+  "tree_evidence_path": "staging/github_ecosystem/evidence/quantumjot__btrack/tree.txt",
+  "read_status": "FULL_RELEVANT_REPO_SOURCE_READ",
+  "files_requested": 100,
+  "relevant_source_paths_selected": 100,
+  "relevant_source_selection_coverage": 1.0,
+  "files_actually_read_count": 100,
+  "files_actually_read": [
+    {
+      "path": "README.md",
+      "bytes": 5329,
+      "sha256": "da8da0ba96b21a760e36ead2ef48a62db45b029ea8efd790e9feb716dbb2a2d3",
+      "line_count": 110,
+      "keyword_counts": {
+        "track": 45,
+        "link": 5,
+        "lineage": 3,
+        "assign": 1,
+        "flow": 2,
+        "predict": 1,
+        "bayes": 4
+      },
+      "symbols": [],
+      "headings": [
+        "# Bayesian Tracker (btrack) 🔬💻",
+        "## Installation",
+        "### Installing the latest stable version",
+        "## Usage examples",
+        "### Cell tracking in time-lapse imaging data",
+        "## Development",
+        "### Citation"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "LICENSE.md",
+      "bytes": 1082,
+      "sha256": "d88d058215358e1ed3e38474afe070fd31467b0154f957ad71458fe35e5d266f",
+      "line_count": 22,
+      "keyword_counts": {},
+      "symbols": [],
+      "headings": [],
+      "category": "license"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 3780,
+      "sha256": "ab9981d7393fe31d07b12bb948c429a56a1a2c36fe5c175652a3f768fba3d74a",
+      "line_count": 181,
+      "keyword_counts": {
+        "track": 13,
+        "bayes": 1
+      },
+      "symbols": [],
+      "category": "dependency"
+    },
+    {
+      "path": "btrack/core.py",
+      "bytes": 24849,
+      "sha256": "54d69666b6072c740205fbcd92704fd2b164673b637e7b58d296a7199a372d31",
+      "line_count": 684,
+      "keyword_counts": {
+        "track": 156,
+        "link": 11,
+        "division": 1,
+        "lineage": 4,
+        "assign": 4,
+        "csv": 2,
+        "predict": 3,
+        "kalman": 11,
+        "bayes": 15
+      },
+      "symbols": [
+        "BayesianTracker",
+        "__init__",
+        "__enter__",
+        "__exit__",
+        "configure_from_file",
+        "configure",
+        "configuration",
+        "__getattr__",
+        "__setattr__",
+        "__len__",
+        "_max_search_radius",
+        "_update_method",
+        "_store_candidate_graph",
+        "n_tracks",
+        "n_dummies",
+        "tracks",
+        "refs",
+        "dummies",
+        "LBEP",
+        "_sort",
+        "_volume",
+        "_motion_model",
+        "_object_model",
+        "frame_range",
+        "objects",
+        "append",
+        "_stats",
+        "track_interactive",
+        "track",
+        "step",
+        "hypotheses",
+        "optimize",
+        "optimise",
+        "__getitem__",
+        "export",
+        "to_napari",
+        "candidate_graph_edges"
+      ],
+      "category": "pipeline"
+    },
+    {
+      "path": "btrack/models.py",
+      "bytes": 10808,
+      "sha256": "5a7f1d238058d8a0dd324d324ccfa4e6f09bdd527ac0eb01016223a92875279b",
+      "line_count": 331,
+      "keyword_counts": {
+        "detect": 2,
+        "segment": 5,
+        "track": 11,
+        "link": 3,
+        "division": 1,
+        "assign": 7,
+        "predict": 3,
+        "kalman": 2
+      },
+      "symbols": [
+        "_check_symmetric",
+        "MotionModel",
+        "parse_arrays",
+        "reshape_A",
+        "reshape_H",
+        "reshape_P",
+        "reshape_R",
+        "reshape_G",
+        "reshape_Q",
+        "validate_motion_model",
+        "ObjectModel",
+        "parse_array",
+        "reshape_emission_transition",
+        "reshape_start",
+        "HypothesisModel",
+        "parse_hypotheses",
+        "hypotheses_to_generate",
+        "as_ctype"
+      ],
+      "category": "model"
+    },
+    {
+      "path": "btrack/dataio.py",
+      "bytes": 213,
+      "sha256": "d5ab54dfc24f7332c08b3214fdecc67558f6ffcbb74a345449519d704365e0e6",
+      "line_count": 9,
+      "keyword_counts": {
+        "track": 2
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "btrack/io/importers.py",
+      "bytes": 1121,
+      "sha256": "1460389fc5ba57e6a13d87ff7f7d5f88b7c674025b08cb3b27c0622564151f99",
+      "line_count": 51,
+      "keyword_counts": {
+        "track": 4,
+        "csv": 12
+      },
+      "symbols": [
+        "import_CSV"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "btrack/io/exporters.py",
+      "bytes": 3986,
+      "sha256": "39b8d8dd7c3c5f2eb966d56b63210857c66737614a9c531c501daa5720498944",
+      "line_count": 134,
+      "keyword_counts": {
+        "track": 47,
+        "csv": 12,
+        "bayes": 3
+      },
+      "symbols": [
+        "export_delegator",
+        "export_CSV",
+        "export_LBEP",
+        "_export_HDF"
+      ],
+      "category": "export"
+    },
+    {
+      "path": "btrack/optimise/hypothesis.py",
+      "bytes": 3097,
+      "sha256": "6a98258da77981468efc2d15a98ce0ac12a5ad4162cbcd5e6e37ab565fca1147",
+      "line_count": 114,
+      "keyword_counts": {
+        "segment": 2,
+        "track": 5,
+        "link": 7,
+        "assign": 1
+      },
+      "symbols": [
+        "Hypothesis",
+        "hypothesis_type",
+        "log_likelihood",
+        "PyHypothesisParams"
+      ],
+      "category": "optimization"
+    },
+    {
+      "path": "btrack/optimise/optimiser.py",
+      "bytes": 7878,
+      "sha256": "c32cd8e6c6cfb5a8b226db8b7838747cc4c426142475cb26519d98bf39f8805d",
+      "line_count": 226,
+      "keyword_counts": {
+        "track": 16,
+        "link": 9,
+        "division": 1,
+        "lineage": 1,
+        "assign": 1,
+        "sparse": 2,
+        "train": 4,
+        "bayes": 1,
+        "ilp": 4
+      },
+      "symbols": [
+        "TrackOptimiser",
+        "__init__",
+        "hypotheses",
+        "hypotheses",
+        "optimise",
+        "trk_idx"
+      ],
+      "category": "optimization"
+    },
+    {
+      "path": "btrack/src/tracker.cc",
+      "bytes": 24534,
+      "sha256": "6c053649bf89d3b9a2abda104510806865974f7992a3814f95e314f6f09c6bd5",
+      "line_count": 772,
+      "keyword_counts": {
+        "track": 108,
+        "link": 34,
+        "assign": 40,
+        "csv": 4,
+        "infer": 1,
+        "bayes": 35
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/src/hypothesis.cc",
+      "bytes": 24924,
+      "sha256": "adb01dca421009a8bbf1b3b46e9ed8fbc760b0a3530c6818f11d2bc9ad5b1453",
+      "line_count": 719,
+      "keyword_counts": {
+        "detect": 1,
+        "segment": 3,
+        "track": 121,
+        "link": 51,
+        "division": 5,
+        "assign": 3
+      },
+      "symbols": [],
+      "category": "division"
+    },
+    {
+      "path": ".napari-hub/DESCRIPTION.md",
+      "bytes": 2401,
+      "sha256": "2f0e741078fdc5e4f567a5f861d821b616ab78f1a7cd8afe1286f223145a9768",
+      "line_count": 57,
+      "keyword_counts": {
+        "track": 30,
+        "link": 2,
+        "lineage": 1,
+        "assign": 1,
+        "flow": 2,
+        "bayes": 1
+      },
+      "symbols": [],
+      "headings": [
+        "## tutorials",
+        "## Installation",
+        "## Example data",
+        "## Setting parameters",
+        "## Associated plugins"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": ".napari-hub/config.yml",
+      "bytes": 250,
+      "sha256": "22891dc9d36c91c40ba0e55f8b57ea4ebc400186dd7b266f0b5d0f896c558f64",
+      "line_count": 13,
+      "keyword_counts": {
+        "track": 2,
+        "lineage": 1
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "bytes": 964,
+      "sha256": "57ef3e3945c0389d97e6ed6f6f8c957a66e3c4e6482d3322663da966e340089b",
+      "line_count": 32,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": ".readthedocs.yaml",
+      "bytes": 516,
+      "sha256": "acd179c0f3cf5c5f2cfa0b88e4b7cb9bcfa10ce9433b3ec767e8794d715e2bc9",
+      "line_count": 24,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "CHANGELOG.rst",
+      "bytes": 8560,
+      "sha256": "09828975cbed15dc71eae9c2fc7c5202ecbb108b1f591846fdf964883785b904",
+      "line_count": 272,
+      "keyword_counts": {
+        "segment": 1,
+        "track": 56,
+        "link": 2,
+        "lineage": 5,
+        "flow": 1,
+        "csv": 3,
+        "infer": 2,
+        "predict": 2,
+        "evaluate": 1,
+        "kalman": 1,
+        "bayes": 3
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "btrack/__init__.py",
+      "bytes": 646,
+      "sha256": "df5c347bdc69d72054f647facd124bee8475fba6e999fb171dd06e678c847be9",
+      "line_count": 25,
+      "keyword_counts": {
+        "track": 5,
+        "bayes": 2
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/btypes.py",
+      "bytes": 18701,
+      "sha256": "2006291dc7f78bdcad2fa62569713dac82550e546ca1d33037b4269c38229a73",
+      "line_count": 587,
+      "keyword_counts": {
+        "track": 88,
+        "link": 11,
+        "division": 1,
+        "flow": 1,
+        "infer": 1,
+        "predict": 2,
+        "kalman": 14,
+        "bayes": 2
+      },
+      "symbols": [
+        "ImagingVolume",
+        "ndim",
+        "PyTrackObject",
+        "__init__",
+        "properties",
+        "properties",
+        "state",
+        "set_features",
+        "to_dict",
+        "from_dict",
+        "__repr__",
+        "_repr_html_",
+        "PyTrackingInfo",
+        "to_dict",
+        "tracker_active",
+        "PyGraphEdge",
+        "to_dict",
+        "Tracklet",
+        "__init__",
+        "__len__",
+        "__repr__",
+        "_repr_html_",
+        "properties",
+        "properties",
+        "__getitem__",
+        "x",
+        "y",
+        "z",
+        "t",
+        "dummy",
+        "refs",
+        "start",
+        "stop",
+        "label",
+        "state",
+        "softmax",
+        "is_root",
+        "is_leaf",
+        "kalman",
+        "kalman",
+        "mu",
+        "covar",
+        "predicted",
+        "to_dict",
+        "to_array",
+        "in_frame",
+        "trim",
+        "LBEP",
+        "_pandas_html_repr"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/config.py",
+      "bytes": 6133,
+      "sha256": "818f5c20ebb5b733ab398ae495c073dedce70e4a18b36213dcb7e4b0377978a4",
+      "line_count": 182,
+      "keyword_counts": {
+        "track": 39,
+        "link": 1,
+        "assign": 1,
+        "kalman": 3,
+        "bayes": 16
+      },
+      "symbols": [
+        "TrackerConfig",
+        "_parse_volume",
+        "_parse_tracking_updates",
+        "load_config",
+        "_load_legacy_config",
+        "_load_config",
+        "save_config"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/constants.py",
+      "bytes": 1850,
+      "sha256": "d315f5e7f61dff950e94c1e403183f959c90066839d4776171dfe0edaa7e8cef",
+      "line_count": 100,
+      "keyword_counts": {
+        "track": 8,
+        "link": 1,
+        "assign": 2,
+        "bayes": 2
+      },
+      "symbols": [
+        "Errors",
+        "Fates",
+        "States",
+        "BayesianUpdates",
+        "BayesianUpdateFeatures",
+        "Dimensionality"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/datasets.py",
+      "bytes": 2225,
+      "sha256": "169de36cfc0b30401a8cfb20ddb2303c58420855b5f3a4ddc17ee27211cf1b1d",
+      "line_count": 74,
+      "keyword_counts": {
+        "segment": 6,
+        "track": 17,
+        "csv": 5
+      },
+      "symbols": [
+        "_remote_registry",
+        "cell_config",
+        "particle_config",
+        "example_segmentation_file",
+        "example_segmentation",
+        "example_track_objects_file",
+        "example_track_objects",
+        "example_tracks"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "btrack/include/bayes.h",
+      "bytes": 1051,
+      "sha256": "1fee40f8529c2560dce61cca334fb4d0c1aff82caf62fbe055518f49458772a5",
+      "line_count": 33,
+      "keyword_counts": {
+        "track": 4,
+        "link": 2,
+        "assign": 3,
+        "bayes": 6
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/include/belief.h",
+      "bytes": 993,
+      "sha256": "7863c46d04b4116a5a4dbcefba2d0a61c8fe3a4e11e95cf1ef01b8fee74c4601",
+      "line_count": 31,
+      "keyword_counts": {
+        "track": 4,
+        "link": 2,
+        "assign": 1,
+        "predict": 1
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/include/defs.h",
+      "bytes": 5205,
+      "sha256": "43f7b4b2e888dd49ba0f36b884bba912f1e5cb5877908b29a2ec8766025bc2fd",
+      "line_count": 202,
+      "keyword_counts": {
+        "track": 20,
+        "link": 15,
+        "assign": 4
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/include/hyperbin.h",
+      "bytes": 5868,
+      "sha256": "1bb5018b865229b50ee3023dea2c6fd29963a75e6f4fd556addb041915a353e8",
+      "line_count": 202,
+      "keyword_counts": {
+        "track": 36,
+        "link": 2
+      },
+      "symbols": [
+        "HypercubeBin",
+        "ObjectBin"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/include/hypothesis.h",
+      "bytes": 8659,
+      "sha256": "fdf10fcbaac8700612f13811e63a5b93981bda083bf79822e0559efa0919fbfa",
+      "line_count": 288,
+      "keyword_counts": {
+        "detect": 1,
+        "segment": 1,
+        "track": 79,
+        "link": 19,
+        "division": 1,
+        "bayes": 2
+      },
+      "symbols": [
+        "TrackManager",
+        "Hypothesis",
+        "Hypothesis",
+        "HypothesisEngine"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/include/inference.h",
+      "bytes": 1756,
+      "sha256": "f6ed133fa9b69bf7ca2d9af724612f4000bbced6c616292f38874f57b37971fb",
+      "line_count": 68,
+      "keyword_counts": {
+        "track": 5,
+        "link": 2,
+        "infer": 2,
+        "predict": 3
+      },
+      "symbols": [
+        "ObjectModel"
+      ],
+      "category": "inference"
+    },
+    {
+      "path": "btrack/include/manager.h",
+      "bytes": 6264,
+      "sha256": "2ca8b1d2134326968db5061afa0d6491c2fbdf1f9414f1113c8eb83c2936427a",
+      "line_count": 216,
+      "keyword_counts": {
+        "track": 73,
+        "link": 5,
+        "lineage": 8,
+        "bayes": 1,
+        "ilp": 1
+      },
+      "symbols": [
+        "LineageTreeNode",
+        "TrackManager"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/include/motion.h",
+      "bytes": 2745,
+      "sha256": "5fb1f36030495d1a5c587d9da58a88e4d0a4b7ba451f2ccdb6a1c145788b1a11",
+      "line_count": 102,
+      "keyword_counts": {
+        "track": 7,
+        "link": 2,
+        "infer": 1,
+        "predict": 3,
+        "kalman": 5
+      },
+      "symbols": [
+        "MotionModel"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "btrack/include/pdf.h",
+      "bytes": 1313,
+      "sha256": "0c970f8da7729dfecbe4a912c2c45bc9e92e923a1131efa858f4277d3fb23db3",
+      "line_count": 44,
+      "keyword_counts": {
+        "track": 13,
+        "link": 2
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/include/tracker.h",
+      "bytes": 9065,
+      "sha256": "1277c2370e3b5f48b884d8b8d6f87efbe0cf0bafc418406020e2960fd62f4895",
+      "line_count": 278,
+      "keyword_counts": {
+        "track": 72,
+        "link": 12,
+        "division": 1,
+        "assign": 7,
+        "csv": 3,
+        "infer": 3,
+        "predict": 1,
+        "kalman": 2,
+        "bayes": 11
+      },
+      "symbols": [
+        "BayesianTracker"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/include/tracklet.h",
+      "bytes": 4746,
+      "sha256": "8e14cb3ee8acee5dd4360ef00e2650a57321927b3c6f1508eeae021fa7b334a6",
+      "line_count": 149,
+      "keyword_counts": {
+        "track": 43,
+        "link": 2,
+        "infer": 1,
+        "predict": 11,
+        "kalman": 2
+      },
+      "symbols": [
+        "Tracklet"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/include/types.h",
+      "bytes": 7373,
+      "sha256": "414f2a78432f668ecfcf35c77e3878523177a50bb2ca48fb975d4660952c228c",
+      "line_count": 259,
+      "keyword_counts": {
+        "track": 41,
+        "link": 9,
+        "predict": 5,
+        "bayes": 1
+      },
+      "symbols": [
+        "TrackObject"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/include/updates.h",
+      "bytes": 1704,
+      "sha256": "c787a9811313e1edad1b164a82d2995b04d76fc3dcc4af921f4e135f3d956055",
+      "line_count": 58,
+      "keyword_counts": {
+        "track": 6,
+        "link": 2,
+        "bayes": 2
+      },
+      "symbols": [
+        "UpdateFeatures"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/include/wrapper.h",
+      "bytes": 4624,
+      "sha256": "d3afc19730069eb9e9f3959769f03609027c86590113b60f13c71e481494f765",
+      "line_count": 134,
+      "keyword_counts": {
+        "track": 35,
+        "link": 2,
+        "assign": 1,
+        "kalman": 3,
+        "bayes": 2
+      },
+      "symbols": [
+        "InterfaceWrapper"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/io/__init__.py",
+      "bytes": 514,
+      "sha256": "08602d1ba2e1b79baf9d4f6d34f0ce33e310b7556d04c3cf446e943c475e57fe",
+      "line_count": 22,
+      "keyword_counts": {
+        "segment": 2,
+        "csv": 4
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "btrack/io/_localization.py",
+      "bytes": 10435,
+      "sha256": "3b7c4795e9a39741032e09400610ebacc3c83442f4c77536bad80b4c57a2458e",
+      "line_count": 308,
+      "keyword_counts": {
+        "detect": 1,
+        "segment": 41,
+        "track": 13,
+        "assign": 8,
+        "infer": 1
+      },
+      "symbols": [
+        "_is_unique",
+        "_concat_nodes",
+        "SegmentationContainer",
+        "__post_init__",
+        "_next_generator",
+        "_next_array",
+        "__iter__",
+        "__next__",
+        "__len__",
+        "NodeProcessor",
+        "img_props",
+        "__call__",
+        "segmentation_to_objects"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "btrack/io/hdf.py",
+      "bytes": 22419,
+      "sha256": "232ecb69d077e0cb3382877ecb45815ca1cdbd2a0350da38ffcea25af45a5e91",
+      "line_count": 630,
+      "keyword_counts": {
+        "segment": 21,
+        "track": 96,
+        "bayes": 7
+      },
+      "symbols": [
+        "h5check_property_exists",
+        "func",
+        "wrapped_handler_property",
+        "HDF5FileHandler",
+        "__init__",
+        "object_types",
+        "__enter__",
+        "__exit__",
+        "close",
+        "object_type",
+        "object_type",
+        "segmentation",
+        "write_segmentation",
+        "objects",
+        "filtered_objects",
+        "write_objects",
+        "write_properties",
+        "tracks",
+        "_get_txyz",
+        "write_tracks",
+        "lbep",
+        "tree",
+        "_h5_tree"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "btrack/io/utils.py",
+      "bytes": 2956,
+      "sha256": "e000d530cade274ab34d2b8addde3639f319efd92d12bbe1cc188f0a09eca66a",
+      "line_count": 95,
+      "keyword_counts": {
+        "track": 18
+      },
+      "symbols": [
+        "localizations_to_objects",
+        "objects_from_dict",
+        "objects_from_array",
+        "check_track_type",
+        "check_object_type"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "btrack/libwrapper.py",
+      "bytes": 7227,
+      "sha256": "670baf6eea53578f136b4c823beb31e6a30585ea79429f48417d6a17c9528850",
+      "line_count": 235,
+      "keyword_counts": {
+        "track": 29,
+        "division": 1,
+        "lineage": 1,
+        "predict": 1,
+        "kalman": 8
+      },
+      "symbols": [
+        "numpy_pointer_decorator",
+        "np_dbl_p",
+        "np_dbl_pc",
+        "np_uint_p",
+        "np_int_p",
+        "np_int_vec_p",
+        "load_library",
+        "get_library"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/napari.yaml",
+      "bytes": 726,
+      "sha256": "099b8a04f5e1125ada5a2b644bf4173a40a926c0c598124f16f9a9ef073abc9e",
+      "line_count": 33,
+      "keyword_counts": {
+        "track": 21
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/napari/__init__.py",
+      "bytes": 86,
+      "sha256": "f2f3693e3b070b1086202c982ce3ef0406ad0b0a4f26ab8f215527e771bd491a",
+      "line_count": 7,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/napari/config.py",
+      "bytes": 5674,
+      "sha256": "dcc003ae6dd8aa29efbeff8dc19a5c53bf84a1937556a97772a0dd3ef77b8829",
+      "line_count": 187,
+      "keyword_counts": {
+        "track": 36
+      },
+      "symbols": [
+        "Sigmas",
+        "__getitem__",
+        "__setitem__",
+        "__iter__",
+        "UnscaledTrackerConfig",
+        "__post_init__",
+        "_unscale_config",
+        "scale_config",
+        "TrackerConfigs",
+        "__post_init__",
+        "__getitem__",
+        "add_config",
+        "create_default_configs"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/napari/constants.py",
+      "bytes": 339,
+      "sha256": "bfd61b11806c2e3e183935d35e4da9ca47070a0f7b601be667f31dd464611343",
+      "line_count": 20,
+      "keyword_counts": {
+        "track": 1,
+        "link": 1
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/napari/examples/show_btrack_widget.py",
+      "bytes": 837,
+      "sha256": "e449e54d0989aae2e0aa42c621a3ae5635e814a81d3c996a3e61f232073202be",
+      "line_count": 32,
+      "keyword_counts": {
+        "segment": 7,
+        "track": 7
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/napari/main.py",
+      "bytes": 11765,
+      "sha256": "344522c3d22cd2ae7f70c34393e7d6b19484bc749e0cad14d6f3fdd8517c84c8",
+      "line_count": 381,
+      "keyword_counts": {
+        "segment": 27,
+        "track": 127,
+        "bayes": 2
+      },
+      "symbols": [
+        "create_btrack_widget",
+        "add_existing_labels",
+        "select_inserted_labels",
+        "update_labels_name",
+        "remove_deleted_labels",
+        "select_config",
+        "run",
+        "_run_tracker",
+        "restore_defaults",
+        "save_config_to_json",
+        "load_config_from_json"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/napari/reader.py",
+      "bytes": 3675,
+      "sha256": "f9e748d1a05c1bdf27fc948b9c8a22039a7a577a8fc0cefc40d47baa55da300d",
+      "line_count": 109,
+      "keyword_counts": {
+        "segment": 5,
+        "track": 13
+      },
+      "symbols": [
+        "get_reader",
+        "reader_function"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/napari/sync.py",
+      "bytes": 4594,
+      "sha256": "e633fe30bd2617f12bf49c493eba534c74ed57d8c89070e60466f4e4bbf73dd0",
+      "line_count": 129,
+      "keyword_counts": {
+        "segment": 4,
+        "track": 52,
+        "assign": 4
+      },
+      "symbols": [
+        "update_config_from_widgets",
+        "update_widgets_from_config"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/napari/widgets/__init__.py",
+      "bytes": 154,
+      "sha256": "0775ed2b73ef2d15ba8d1687170e93b9c26fccd3211b4d81db1672fdece6afe5",
+      "line_count": 6,
+      "keyword_counts": {
+        "track": 3
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/napari/widgets/_general.py",
+      "bytes": 5269,
+      "sha256": "22aec7cf2ce670fbadfa1c46c6f35cb9a6497eaa0a9fa8b378f1de4adcb6d793",
+      "line_count": 160,
+      "keyword_counts": {
+        "segment": 5,
+        "track": 19,
+        "link": 1,
+        "assign": 8,
+        "bayes": 3
+      },
+      "symbols": [
+        "create_logo_widgets",
+        "create_input_widgets",
+        "create_basic_widgets",
+        "create_config_widgets",
+        "create_track_widgets"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/napari/widgets/_motion.py",
+      "bytes": 1620,
+      "sha256": "3ba4708ff3ba572ade8f1072c3c166d396457980ce9f844022a2f40d904e9edb",
+      "line_count": 46,
+      "keyword_counts": {},
+      "symbols": [
+        "_create_sigma_widgets",
+        "create_motion_model_widgets"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "btrack/napari/widgets/_optimiser.py",
+      "bytes": 5954,
+      "sha256": "e130d7a169681db013d5b5c71d8776dc4c446f6251df9629ce31790a132e7fab",
+      "line_count": 146,
+      "keyword_counts": {
+        "detect": 3,
+        "segment": 8,
+        "track": 18,
+        "link": 3,
+        "division": 1
+      },
+      "symbols": [
+        "_create_hypotheses_widgets",
+        "_create_scaling_factor_widgets",
+        "_create_threshold_widgets",
+        "_create_bin_size_widgets",
+        "create_optimiser_widgets"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/napari/widgets/create_ui.py",
+      "bytes": 5549,
+      "sha256": "c429334e9ce5ebf1e81738519557fb243f7d4ebbe2ca7ec34c2a9af6e9fd1406",
+      "line_count": 160,
+      "keyword_counts": {
+        "track": 15,
+        "link": 1
+      },
+      "symbols": [
+        "BtrackWidget",
+        "__getitem__",
+        "__init__",
+        "_add_logo_widgets",
+        "_add_input_widgets",
+        "_add_basic_widgets",
+        "_add_motion_model_widgets",
+        "_add_optimiser_widgets",
+        "_add_config_widgets",
+        "_add_track_widgets"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/napari/widgets/io.py",
+      "bytes": 972,
+      "sha256": "b6b182e6b8bcdf8c8b94f78fe3c99b00517465bff23c86bed3e441f468eb8140",
+      "line_count": 38,
+      "keyword_counts": {
+        "track": 2
+      },
+      "symbols": [
+        "save_path_dialogue_box",
+        "load_path_dialogue_box"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "btrack/napari/writer.py",
+      "bytes": 594,
+      "sha256": "73e78d7193d9b16165584a71a651e6c208a758d40c62480c6494392967ff0920",
+      "line_count": 30,
+      "keyword_counts": {
+        "track": 9
+      },
+      "symbols": [
+        "export_to_hdf"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/optimise/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/src/bayes.cc",
+      "bytes": 1519,
+      "sha256": "27f3f5e7d06d7606dda0cf420448c1229be0da1f0b8f52cc22e7cc31061f0319",
+      "line_count": 42,
+      "keyword_counts": {
+        "track": 4,
+        "link": 2,
+        "assign": 15,
+        "bayes": 6
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/src/hyperbin.cc",
+      "bytes": 10400,
+      "sha256": "f19b2b6e1d7c09558c9f0e58c5c848800fed1cb7e4954f42ebd4e586ecd59466",
+      "line_count": 350,
+      "keyword_counts": {
+        "track": 56,
+        "link": 2
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/src/inference.cc",
+      "bytes": 2048,
+      "sha256": "ab6d138411087b3c2b872d60d38f2343790721170f2df4b82837c854d38be3bb",
+      "line_count": 62,
+      "keyword_counts": {
+        "track": 5,
+        "link": 2,
+        "infer": 1,
+        "predict": 6
+      },
+      "symbols": [],
+      "category": "inference"
+    },
+    {
+      "path": "btrack/src/interface.cc",
+      "bytes": 8775,
+      "sha256": "6a85453439f7ed9d83847883f27caa07b96d0a383fe3bbfb755dadc24675625e",
+      "line_count": 245,
+      "keyword_counts": {
+        "track": 21,
+        "link": 2,
+        "assign": 2,
+        "kalman": 6
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/src/manager.cc",
+      "bytes": 15664,
+      "sha256": "62573940987dcfc3ca9dedc8691335fd4224969c5b73666e15c75923fab8e932",
+      "line_count": 495,
+      "keyword_counts": {
+        "track": 154,
+        "link": 28,
+        "division": 2,
+        "lineage": 10
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/src/motion.cc",
+      "bytes": 2345,
+      "sha256": "5f49e2ae6de2f64c5c7c7bc7811753ec4b6f0a99836b4fc7417f02a00c7a4907",
+      "line_count": 74,
+      "keyword_counts": {
+        "track": 6,
+        "link": 2,
+        "predict": 8,
+        "kalman": 3
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "btrack/src/pdf.cc",
+      "bytes": 3411,
+      "sha256": "eedd49d982534df014339deab6b959583d58a7223e0376a79515426db9ed0bdd",
+      "line_count": 101,
+      "keyword_counts": {
+        "track": 12,
+        "link": 2,
+        "predict": 4
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/src/tracklet.cc",
+      "bytes": 3833,
+      "sha256": "8a45d95cdb0a3a05033e6781544d27811fddbc0e1a5e5355670a1c849bb1620b",
+      "line_count": 128,
+      "keyword_counts": {
+        "track": 38,
+        "link": 2,
+        "predict": 15,
+        "kalman": 2
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/src/wrapper.cc",
+      "bytes": 10684,
+      "sha256": "362bee1236057894adda0074911fd5ebbcda4e221e7316946c094dc8e3e9143b",
+      "line_count": 329,
+      "keyword_counts": {
+        "track": 115,
+        "link": 2,
+        "assign": 3,
+        "predict": 3,
+        "kalman": 18,
+        "bayes": 1
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "btrack/utils.py",
+      "bytes": 14513,
+      "sha256": "cd5f2ad4c649d353ae6a2b110ea01acccf65828c083ba56f79643bc3ef509cf0",
+      "line_count": 437,
+      "keyword_counts": {
+        "segment": 24,
+        "track": 124,
+        "link": 4,
+        "bayes": 3
+      },
+      "symbols": [
+        "log_error",
+        "log_stats",
+        "read_motion_model",
+        "read_object_model",
+        "read_hypothesis_model",
+        "crop_volume",
+        "within",
+        "_lbep_table",
+        "_cat_tracks_as_dict",
+        "tracks_to_napari",
+        "nans_idx",
+        "napari_to_tracks",
+        "update_segmentation",
+        "SystemInformation",
+        "__repr__",
+        "log_debug_info",
+        "wrapped_func_to_debug"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "build.sh",
+      "bytes": 373,
+      "sha256": "a79f9885cb8c8dd9f6d1104ae310cf4ae2bae6014e4a70d5f27c506415326468",
+      "line_count": 17,
+      "keyword_counts": {
+        "track": 7
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "codecov.yml",
+      "bytes": 156,
+      "sha256": "bdf362187bc336f5e9176a33b33d98d6de9f444f734394eee6f0bc2e1eafefbf",
+      "line_count": 9,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/about.rst",
+      "bytes": 1010,
+      "sha256": "e755d60e77c3a764f129fb372a0604bca36414816057820d05dd3cf449dd5707",
+      "line_count": 30,
+      "keyword_counts": {
+        "track": 4,
+        "lineage": 2,
+        "bayes": 2
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/api.rst",
+      "bytes": 233,
+      "sha256": "d934de35ca48dfa02553cb0e6a5df6d29f8a74903c90b4a786f651c1bd90e3b9",
+      "line_count": 14,
+      "keyword_counts": {
+        "track": 7
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/conf.py",
+      "bytes": 2368,
+      "sha256": "648368bb697bf0acac8325fdd569519a7cfde9993d58674d292fec97ee51f2fa",
+      "line_count": 75,
+      "keyword_counts": {
+        "track": 5,
+        "bayes": 1
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/dev_guide/index.rst",
+      "bytes": 1085,
+      "sha256": "a621f9b29767000e16740f38f12338a2ca4164fb2d876541c59fd5c8f67b61e2",
+      "line_count": 45,
+      "keyword_counts": {
+        "track": 5
+      },
+      "symbols": [],
+      "headings": [
+        "# Set next version number",
+        "# Create tags",
+        "# Push"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/index.rst",
+      "bytes": 1918,
+      "sha256": "55e4d59bbd3de1f1ea4b2c84b0b1a10290dee803821b94033bbc8f021930a88b",
+      "line_count": 65,
+      "keyword_counts": {
+        "track": 18,
+        "link": 5,
+        "lineage": 1,
+        "assign": 1,
+        "predict": 1,
+        "bayes": 2
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/user_guide/configuration.rst",
+      "bytes": 4723,
+      "sha256": "da3032c406c19216e51f8d1fad1f65632b85680623cf831908dc5716c08b09dc",
+      "line_count": 126,
+      "keyword_counts": {
+        "detect": 1,
+        "segment": 1,
+        "track": 26,
+        "link": 6,
+        "assign": 1,
+        "predict": 1,
+        "bayes": 2
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/user_guide/index.rst",
+      "bytes": 266,
+      "sha256": "160bce5530993259918a643604fd6265b4de58f47cbd0e8777bdf41d6734502d",
+      "line_count": 21,
+      "keyword_counts": {
+        "track": 2
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/user_guide/installation.rst",
+      "bytes": 1800,
+      "sha256": "a56775a96f578d26e9fe7c17fce04e4ddd0e6aa8b09025449cb5feb0dd4d7606",
+      "line_count": 56,
+      "keyword_counts": {
+        "track": 9
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "data_io"
+    },
+    {
+      "path": "docs/user_guide/large_datasets.rst",
+      "bytes": 1285,
+      "sha256": "fc80f682001153e1f63fc13141316329a1d824f144ac1b2cdbea04b6a181ebf6",
+      "line_count": 32,
+      "keyword_counts": {
+        "track": 11,
+        "bayes": 4
+      },
+      "symbols": [],
+      "headings": [
+        "# configure the tracker and change the update method"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "docs/user_guide/napari.rst",
+      "bytes": 982,
+      "sha256": "a8437661804f80768fd09127165129710e2bb54fbb80fa9afee81c5bef29f1b1",
+      "line_count": 36,
+      "keyword_counts": {
+        "segment": 1,
+        "track": 8,
+        "lineage": 1
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/user_guide/saving_tracks.rst",
+      "bytes": 929,
+      "sha256": "53d662b759ea0e844b5d183496cdfc29ad7f2715e709ed39fcc80226bf474c25",
+      "line_count": 37,
+      "keyword_counts": {
+        "track": 24,
+        "bayes": 1
+      },
+      "symbols": [],
+      "headings": [
+        "# export tracks using the HDF5 format",
+        "# run the tracking",
+        "# export the data in an HDF5 file"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "docs/user_guide/simple_example.rst",
+      "bytes": 2088,
+      "sha256": "08b3e2b6f05986b9e0107080a4e67ffd2bee47ce6aaa19cee9518936de16e430",
+      "line_count": 79,
+      "keyword_counts": {
+        "segment": 6,
+        "track": 43,
+        "bayes": 1
+      },
+      "symbols": [],
+      "headings": [
+        "# load your segmentation data",
+        "# create btrack objects (with properties) from the segmentation data",
+        "# (you can also calculate properties, based on scikit-image regionprops)",
+        "# initialise a tracker session using a context manager",
+        "# configure the tracker using a config file",
+        "# append the objects to be tracked",
+        "# set the volume (Z axis volume limits default to [-1e5, 1e5] for 2D data)",
+        "# track them (in interactive mode)",
+        "# generate hypotheses and run the global optimizer",
+        "# store the data in an HDF5 file",
+        "# get the tracks as a python list",
+        "# optional: get the data in a format for napari",
+        "# get the first track",
+        "# print the length of the track",
+        "# print all of the xyzt positions in the track",
+        "# print the fate of the track",
+        "# print the track ID, root node, parent node, children and generational depth"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/user_guide/using_features.rst",
+      "bytes": 4141,
+      "sha256": "12f30a5ac936bed668147498ff23fb93ef32f4b6b5df8d373dff98038c218533",
+      "line_count": 145,
+      "keyword_counts": {
+        "segment": 4,
+        "track": 37,
+        "link": 3,
+        "predict": 4,
+        "bayes": 3
+      },
+      "symbols": [],
+      "headings": [
+        "# features to be calculated from image data",
+        "# features to be used for tracking updates",
+        "# initialise a tracker session using a context manager",
+        "# configure the tracker using a config file",
+        "# set up the features to use as a list",
+        "# append the objects to be tracked",
+        "# tell the tracker to use certain information while",
+        "# performing tracking"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "examples/README.md",
+      "bytes": 476,
+      "sha256": "b62cf5d28e451f3e21005e1634ecd8001a7e72f75a349c8aced05b265413bea5",
+      "line_count": 24,
+      "keyword_counts": {
+        "segment": 3,
+        "track": 6
+      },
+      "symbols": [],
+      "headings": [
+        "# example segmentation",
+        "# example config",
+        "# example objects"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "examples/example_tracking_pipeline-features.ipynb",
+      "bytes": 235002,
+      "sha256": "3f4a33b80a6f98fa856f9d9c225e09ce698674d527e25cc0ffad49a1543bc6c7",
+      "line_count": 2460,
+      "keyword_counts": {
+        "segment": 16,
+        "track": 69,
+        "link": 11,
+        "unet": 1,
+        "stardist": 1,
+        "cellpose": 1,
+        "geff": 2,
+        "ctc": 2,
+        "csv": 6,
+        "train": 1,
+        "bayes": 8,
+        "ilp": 3
+      },
+      "notebook": {
+        "cell_count": 26,
+        "code_cell_count": 13,
+        "markdown_cell_count": 13,
+        "output_cell_count": 7,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "6f02b91aab38b1f0c17bbf2d8aca496fb890ef29f4918c57693cf30d176ad85b",
+          "965c07d5cd861f6ab5987f4402d39d4b991a7d10feeb0892ecba1a2ca0c7d812",
+          "04163ffdfa6052741b351e4f23795397b09b4ac4830d82e83e208da4f255e0ca",
+          "6a899d457312707f6e71bcd9140ca29e9572ba6e9d924add7a211aeff5d2059a",
+          "93338a481feff6631ea1bd9d864a251ecf929ac5d06c5a19131dd319a68634aa",
+          "d745f1759279084616e0d6904cc9675c4f23ee5ab966436d0665749597c7dafc",
+          "c2b1134a6d6e3fc2e7b3f697abe4e4b357b170f356ba65cf05eb72fb6467a9b4",
+          "cc137c95d0319c5e506fbb53ab9cce97a94f0fde797596bff8d034d4435beaef",
+          "4b679233f3bd6bebc20c57682d1d799a8e720ef5f9599cf32cd17d131a9620f0",
+          "0b86245bce7303495601773fecf19a8cd7c50a5c57069d6c2569d2e776f5ddbb",
+          "39d02b42938b2b75d027ebeb25c9d1fd0b71b6e0453e217a2e85cedc7e4637b4",
+          "babb47bd9ebc40e7460cb6d6654aefbdce00ce188036e1c76470e08e4adb2c7e",
+          "c5772d7ee1e191befb98acde93e9108dad484c49fdf6d4f193edcfd610065e43"
+        ]
+      },
+      "category": "temporal_linking"
+    },
+    {
+      "path": "tests/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/_test_data/test_data.csv",
+      "bytes": 37613,
+      "sha256": "4de49f229f44da9614b03882a1666a6c2e044b653ee6d3cc2a72d9360325d4fb",
+      "line_count": 1401,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "tests/_test_data/test_graph.json",
+      "bytes": 61,
+      "sha256": "42a5d552732e25c69b3bd5aa893bdde368810f5729fea30682fee64ee0b7c44f",
+      "line_count": 2,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "tests/_test_data/test_ground_truth.json",
+      "bytes": 7334,
+      "sha256": "cffa31b088a362efb05c792005b6b33ff475ab8827410b0768077175c1472591",
+      "line_count": 2,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "tests/_utils.py",
+      "bytes": 7519,
+      "sha256": "ddab7fb56956a6612fef4aa69e6dc82f00de494d1f5b83d49cecf2b5a7f865a1",
+      "line_count": 236,
+      "keyword_counts": {
+        "segment": 12,
+        "track": 99,
+        "assign": 1,
+        "bayes": 3
+      },
+      "symbols": [
+        "create_test_object",
+        "create_test_properties",
+        "create_test_tracklet",
+        "create_realistic_tracklet",
+        "create_test_image",
+        "_sample",
+        "create_test_segmentation_and_tracks",
+        "full_tracker_example",
+        "simple_tracker_example"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/conftest.py",
+      "bytes": 3014,
+      "sha256": "4ee557fda60c2f14269bb7a351697ce79e74cc1af77d92f5acefb8ae4f4333a3",
+      "line_count": 118,
+      "keyword_counts": {
+        "segment": 6,
+        "track": 22,
+        "csv": 2
+      },
+      "symbols": [
+        "_write_h5_file",
+        "sample_tracks",
+        "test_objects",
+        "test_real_objects",
+        "hdf5_file_path",
+        "hdf5_file_path_or_paths",
+        "test_segmentation_and_tracks",
+        "default_rng",
+        "track_widget",
+        "simplistic_tracker_outputs"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/napari/test_dock_widget.py",
+      "bytes": 5597,
+      "sha256": "e68f15ccb28f85e5616acb638fa8f8d87643e451b8eac8b85e0850388b2126f2",
+      "line_count": 156,
+      "keyword_counts": {
+        "segment": 6,
+        "track": 72
+      },
+      "symbols": [
+        "test_add_widget",
+        "test_config_to_widgets_round_trip",
+        "test_save_button",
+        "test_load_config",
+        "test_reset_button",
+        "test_run_button"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/napari/test_reader.py",
+      "bytes": 456,
+      "sha256": "35e7c5e49064c3dc3c62850dedbe1c1247504bdbcdfda40eaf6707489fed3292",
+      "line_count": 14,
+      "keyword_counts": {
+        "track": 6
+      },
+      "symbols": [
+        "test_reader"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/test_config.py",
+      "bytes": 3496,
+      "sha256": "5e05851d4b500a6f82003ea928bf33d6b01b805b8dfc5fe7e8e467defbcbbd01",
+      "line_count": 114,
+      "keyword_counts": {
+        "track": 40,
+        "kalman": 1,
+        "bayes": 4
+      },
+      "symbols": [
+        "_random_config",
+        "_validate_config",
+        "test_config",
+        "test_export_config",
+        "test_import_config",
+        "test_config_to_json",
+        "test_config_tracker_setters",
+        "_cfg_dict",
+        "_cfg_file",
+        "_cfg_pydantic",
+        "test_config_tracker"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/test_examples.py",
+      "bytes": 300,
+      "sha256": "b52c355f8e1a0bc0b6ec7a1eb8b179198f263abc794c81c171619c8c10b2d011",
+      "line_count": 11,
+      "keyword_counts": {
+        "track": 3
+      },
+      "symbols": [
+        "test_pooch_registry"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/test_io.py",
+      "bytes": 6027,
+      "sha256": "774a326982d3b7e372dc9c2ba04f179a72802fa3b743069bce4ea1f733b1cd59",
+      "line_count": 187,
+      "keyword_counts": {
+        "segment": 9,
+        "track": 72,
+        "csv": 1
+      },
+      "symbols": [
+        "test_hdf5_write",
+        "test_hdf5_write_with_properties",
+        "test_hdf5_write_dummies",
+        "test_tracker_export",
+        "test_write_tracks_only",
+        "test_write_lbep",
+        "test_write_hdf_segmentation",
+        "test_hdf_tree"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/test_models.py",
+      "bytes": 2640,
+      "sha256": "7d8b36f049edd5b012152e379103d40668fb00c20c1f424d5e37e85404395c29",
+      "line_count": 89,
+      "keyword_counts": {
+        "track": 6
+      },
+      "symbols": [
+        "test_read_motion_model",
+        "test_incorrect_reshape_motion_model",
+        "test_read_hypothesis_model",
+        "test_missing_process_covariance_motion_model",
+        "test_specifying_process_covariance_Q_motion_model"
+      ],
+      "category": "model"
+    },
+    {
+      "path": "tests/test_shared_lib.py",
+      "bytes": 832,
+      "sha256": "8b42ce89cc08ae1333bfcf017371a163301baaf2de8d0fd3b9aa4cddb42ba21b",
+      "line_count": 31,
+      "keyword_counts": {
+        "track": 8
+      },
+      "symbols": [
+        "test_load_library",
+        "test_fails_load_library_debug",
+        "test_debug_info"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/test_tracker.py",
+      "bytes": 3181,
+      "sha256": "0a98dc0ef4b2759fd541577201fa80f069342dc6738e4d8d83324199c99e8274",
+      "line_count": 111,
+      "keyword_counts": {
+        "track": 61,
+        "predict": 1,
+        "kalman": 5
+      },
+      "symbols": [
+        "_gt_object_hook",
+        "_load_ground_truth",
+        "_load_ground_truth_graph",
+        "_get_tracklet",
+        "test_tracker",
+        "test_tracker_kalman",
+        "test_tracker_graph",
+        "test_tracker_frames",
+        "test_tracker_candidate_graph"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "tests/test_tracklets.py",
+      "bytes": 3976,
+      "sha256": "5102844d4369098b71bd9e544db85cab4631da8507987b5b54291c72428ddfaa",
+      "line_count": 116,
+      "keyword_counts": {
+        "track": 38
+      },
+      "symbols": [
+        "test_create_object",
+        "test_object_to_dict",
+        "test_create_object_with_properties",
+        "test_object_features",
+        "test_object_feature_values",
+        "test_object_incorrect_features",
+        "test_create_tracklet",
+        "test_create_tracklet_with_properties",
+        "test_tracklet_to_dict"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "tests/test_utils.py",
+      "bytes": 11422,
+      "sha256": "5f625aabf7d5abbe762d02e2003c23bee6684b62193a6c16a8c2a7d583b10c24",
+      "line_count": 334,
+      "keyword_counts": {
+        "segment": 52,
+        "track": 80,
+        "assign": 3,
+        "infer": 2
+      },
+      "symbols": [
+        "test_is_unique_boolean_array",
+        "test_is_unique_labeled_array",
+        "test_is_unique_unlabeled_array",
+        "_example_segmentation_generator",
+        "_validate_centroids",
+        "test_segmentation_to_objects_type",
+        "test_segmentation_to_objects_type_generator",
+        "test_segmentation_to_objects",
+        "test_dask_segmentation_to_objects",
+        "test_segmentation_to_objects_scale",
+        "test_assign_class_ID",
+        "test_regionprops",
+        "test_extra_regionprops",
+        "extra_prop",
+        "test_intensity_image",
+        "test_update_segmentation_2d",
+        "test_update_segmentation_2d_colorby",
+        "test_update_segmentation_3d",
+        "test_tracks_to_napari",
+        "test_tracks_to_napari_incorrect_ndim",
+        "test_tracks_to_napari_ndim_inference",
+        "test_napari_to_tracks",
+        "test_objects_from_array"
+      ],
+      "category": "relevant_source"
+    }
+  ],
+  "target_paths_missing": [],
+  "read_errors": [],
+  "checkout_exit": 0,
+  "checkout_stderr_excerpt": "",
+  "checkout_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "license": "MIT",
+  "categories_observed": [
+    "data_io",
+    "data_loader",
+    "dependency",
+    "division",
+    "export",
+    "inference",
+    "license",
+    "model",
+    "optimization",
+    "pipeline",
+    "readme",
+    "relevant_source",
+    "temporal_linking"
+  ],
+  "categories_not_present_in_selected_files": [
+    "evaluation",
+    "postprocessing",
+    "submission_conversion",
+    "training"
+  ],
+  "category_coverage": {
+    "data_io": {
+      "status": "READ",
+      "paths": [
+        "btrack/dataio.py",
+        ".napari-hub/DESCRIPTION.md",
+        "btrack/include/motion.h",
+        "btrack/io/__init__.py",
+        "btrack/io/_localization.py",
+        "btrack/io/hdf.py",
+        "btrack/io/utils.py",
+        "btrack/napari/widgets/_motion.py",
+        "btrack/napari/widgets/io.py",
+        "btrack/src/motion.cc",
+        "docs/user_guide/configuration.rst",
+        "docs/user_guide/installation.rst",
+        "tests/test_io.py"
+      ]
+    },
+    "data_loader": {
+      "status": "READ",
+      "paths": [
+        "btrack/io/importers.py",
+        "btrack/datasets.py",
+        "docs/user_guide/large_datasets.rst",
+        "tests/_test_data/test_data.csv",
+        "tests/_test_data/test_graph.json",
+        "tests/_test_data/test_ground_truth.json"
+      ]
+    },
+    "dependency": {
+      "status": "READ",
+      "paths": [
+        "pyproject.toml"
+      ]
+    },
+    "division": {
+      "status": "READ",
+      "paths": [
+        "btrack/src/hypothesis.cc"
+      ]
+    },
+    "evaluation": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "inference": {
+      "status": "READ",
+      "paths": [
+        "btrack/include/inference.h",
+        "btrack/src/inference.cc"
+      ]
+    },
+    "license": {
+      "status": "READ",
+      "paths": [
+        "LICENSE.md"
+      ]
+    },
+    "model": {
+      "status": "READ",
+      "paths": [
+        "btrack/models.py",
+        "tests/test_models.py"
+      ]
+    },
+    "optimization": {
+      "status": "READ",
+      "paths": [
+        "btrack/optimise/hypothesis.py",
+        "btrack/optimise/optimiser.py"
+      ]
+    },
+    "postprocessing": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "readme": {
+      "status": "READ",
+      "paths": [
+        "README.md",
+        "examples/README.md"
+      ]
+    },
+    "submission_conversion": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "temporal_linking": {
+      "status": "READ",
+      "paths": [
+        "btrack/src/tracker.cc",
+        "btrack/__init__.py",
+        "btrack/btypes.py",
+        "btrack/config.py",
+        "btrack/constants.py",
+        "btrack/include/bayes.h",
+        "btrack/include/belief.h",
+        "btrack/include/defs.h",
+        "btrack/include/hyperbin.h",
+        "btrack/include/hypothesis.h",
+        "btrack/include/manager.h",
+        "btrack/include/pdf.h",
+        "btrack/include/tracker.h",
+        "btrack/include/tracklet.h",
+        "btrack/include/types.h",
+        "btrack/include/updates.h",
+        "btrack/include/wrapper.h",
+        "btrack/libwrapper.py",
+        "btrack/napari.yaml",
+        "btrack/napari/__init__.py",
+        "btrack/napari/config.py",
+        "btrack/napari/constants.py",
+        "btrack/napari/examples/show_btrack_widget.py",
+        "btrack/napari/main.py",
+        "btrack/napari/reader.py",
+        "btrack/napari/sync.py",
+        "btrack/napari/widgets/__init__.py",
+        "btrack/napari/widgets/_general.py",
+        "btrack/napari/widgets/_optimiser.py",
+        "btrack/napari/widgets/create_ui.py",
+        "btrack/napari/writer.py",
+        "btrack/optimise/__init__.py",
+        "btrack/src/bayes.cc",
+        "btrack/src/hyperbin.cc",
+        "btrack/src/interface.cc",
+        "btrack/src/manager.cc",
+        "btrack/src/pdf.cc",
+        "btrack/src/tracklet.cc",
+        "btrack/src/wrapper.cc",
+        "btrack/utils.py",
+        "docs/user_guide/saving_tracks.rst",
+        "examples/example_tracking_pipeline-features.ipynb",
+        "tests/test_tracker.py",
+        "tests/test_tracklets.py"
+      ]
+    },
+    "training": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    }
+  },
+  "selection_policy": {
+    "included": "all human-readable code, notebooks, documentation, dependency/runtime configuration, schemas, tests, and license/notices at the fixed commit",
+    "excluded": "repository-hosting automation, generated/cache directories, and binary/non-source artefacts",
+    "excluded_path_count": 15,
+    "excluded_paths": [
+      {
+        "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".github/actions/build-btrack/action.yml",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".github/workflows/deploy.yml",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".github/workflows/linting.yml",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".github/workflows/test.yml",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".github/workflows/update_project_board.yml",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".gitignore",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "MANIFEST.in",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "Makefile",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "btrack/napari/assets/btrack_logo.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "btrack/src/belief.cu",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "docs/Makefile",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "docs/_static/btrack_logo.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "docs/make.bat",
+        "reason": "non_text_or_non_source_extension"
+      }
+    ]
+  },
+  "scope_note": "Full bytes were read for every listed relevant-source path; only hashes, structure, notebook-cell hashes, and symbol/keyword summaries are persisted. The complete tree and per-path exclusions preserve the coverage boundary."
+}

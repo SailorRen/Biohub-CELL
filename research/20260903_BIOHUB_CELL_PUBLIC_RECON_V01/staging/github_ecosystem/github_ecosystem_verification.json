@@ -1,0 +1,84 @@
+{
+  "verified_at_utc": "2026-09-03T09:00:15.668140+00:00",
+  "status": "PASS",
+  "checks": {
+    "inventory_header_exact": true,
+    "method_header_exact": true,
+    "claims_header_exact": true,
+    "query_header_exact": true,
+    "inventory_rows": 195,
+    "method_rows": 19,
+    "claims_rows": 15,
+    "query_rows": 57,
+    "manifest_rows": 64,
+    "query_categories": [
+      "github_code",
+      "github_repository"
+    ],
+    "query_categories_exact": true,
+    "query_paths_resolve": true,
+    "claim_types": [
+      "INFERENCE",
+      "MEASURED",
+      "SOURCE_CODE_VERIFIED"
+    ],
+    "claim_types_allowlisted": true,
+    "claim_paths_resolve": true,
+    "manifest_fields_exact": true,
+    "manifest_statuses": [
+      "FULL_RELEVANT_REPO_SOURCE_READ",
+      "METADATA_ONLY",
+      "TARGET_FILES_READ"
+    ],
+    "manifest_statuses_allowlisted": true,
+    "manifest_paths_resolve": true,
+    "inventory_paths_resolve": true,
+    "deep_repository_count": 19,
+    "full_relevant_repository_count": 15,
+    "target_files_repository_count": 4,
+    "files_fully_read_count": 1165,
+    "deep_read_error_count": 66,
+    "all_deep_commits_40_hex": true,
+    "all_method_commits_40_hex": true,
+    "full_rows_have_complete_selection_and_no_errors": true,
+    "all_deep_files_lists_nonempty": true,
+    "official_start_repo_present_and_full": true,
+    "alias_11_equal": true,
+    "alias_12_equal": true,
+    "alias_13_equal": true,
+    "alias_manifest_equal": true,
+    "alias_claims_equal": true,
+    "alias_query_equal": true
+  },
+  "artifact_hashes": {
+    "00_source_manifest.github_fragment.jsonl": {
+      "bytes": 69406,
+      "sha256": "9f1ddba42aae67b2924939e71db4244d5866c09b2048d7ce8fca9a7029aa5df0"
+    },
+    "11_github_repository_inventory.csv": {
+      "bytes": 134177,
+      "sha256": "376242d2fb018cb23ae58ae7aeb9eb599ef69390d86cd763e7adcfd6e63c451b"
+    },
+    "12_github_deep_read.md": {
+      "bytes": 227603,
+      "sha256": "91b75cfe61ca2f0ae0d7d43bf8f73dfaa0966c14843eab53400d20c7be5c7d54"
+    },
+    "13_github_code_method_matrix.csv": {
+      "bytes": 59979,
+      "sha256": "4614ec59be15df8ab479c2b881203c63c264bee9e54645eff228c92ca4b898e8"
+    },
+    "19_claims_evidence_matrix.github_fragment.csv": {
+      "bytes": 9456,
+      "sha256": "4f9f71044121629591f72cfacf5f1d9b1b5c74a80a57f7100dc6e7be7f274752"
+    },
+    "20_access_failures.github_fragment.md": {
+      "bytes": 1559,
+      "sha256": "c5a16b18651436b9e8a31501a61649aedd4f15fb201f2d154330a9a272ef8164"
+    },
+    "21_search_query_log.github_fragment.csv": {
+      "bytes": 32786,
+      "sha256": "ea9353be2dacd4a95952a62313e6ff3841ebb1a532dd051a5f8fc0d1876016a1"
+    }
+  },
+  "scope": "github_ecosystem staging only; no runtime/training/submission verification"
+}

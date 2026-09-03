@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_CELL_GITHUB_ECOSYSTEM_20260903_V03",
+  "goal": "在隔离 staging 内交付可合并的 GitHub 仓库发现、固定提交深读、方法矩阵、manifest、claims、query 与 failure 证据草稿，严格保持只读外部范围。",
+  "scope": {
+    "in_scope": [
+      "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem 内的研究证据和草稿",
+      "GitHub Repository Search、Code Search、普通网页搜索与固定 commit 只读源码检查",
+      "royerlab/kaggle-cell-tracking-competition 强制起点及相关生态"
+    ],
+    "out_of_scope": [
+      "canonical 文件修改",
+      "Git commit 或 push",
+      "任何外部仓库写操作",
+      "训练、推理、Kaggle submission 或动态分数验证",
+      "持久化第三方完整源码"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "acceptance": [
+    {
+      "id": "inventory-canonical-schema",
+      "type": "file",
+      "path": "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/11_github_repository_inventory.csv",
+      "min_bytes": 100000,
+      "contains_all": [
+        "source_id,owner_repo,url,description,relation_to_competition,stars,forks,default_branch,latest_commit_sha,latest_commit_date,license,archived,file_count,read_status,files_actually_read,evidence_path,notes",
+        "royerlab/kaggle-cell-tracking-competition",
+        "FULL_RELEVANT_REPO_SOURCE_READ"
+      ]
+    },
+    {
+      "id": "deep-report",
+      "type": "file",
+      "path": "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/12_github_deep_read.md",
+      "min_bytes": 200000,
+      "contains_all": [
+        "royerlab/kaggle-cell-tracking-competition",
+        "FULL_RELEVANT_REPO_SOURCE_READ",
+        "TARGET_FILES_READ",
+        "实际读取文件"
+      ]
+    },
+    {
+      "id": "method-matrix-canonical-schema",
+      "type": "file",
+      "path": "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/13_github_code_method_matrix.csv",
+      "min_bytes": 50000,
+      "contains_all": [
+        "source_id,owner_repo,commit_sha,detection,segmentation,tracking,division,optimization,data_loading,evaluation,submission_conversion,dependencies,license,files_read,transfer_notes"
+      ]
+    },
+    {
+      "id": "manifest-schema-and-status",
+      "type": "file",
+      "path": "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/00_source_manifest.github_fragment.jsonl",
+      "min_bytes": 60000,
+      "contains_all": [
+        "\"source_id\"",
+        "\"read_status\"",
+        "\"FULL_RELEVANT_REPO_SOURCE_READ\"",
+        "\"TARGET_FILES_READ\"",
+        "\"METADATA_ONLY\""
+      ]
+    },
+    {
+      "id": "claims-canonical-schema",
+      "type": "file",
+      "path": "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/19_claims_evidence_matrix.github_fragment.csv",
+      "min_bytes": 8000,
+      "contains_all": [
+        "claim_id,report_section,claim_text,claim_type,source_ids,evidence_paths,direct_or_inference,confidence,conflict_present,conflict_notes",
+        "SOURCE_CODE_VERIFIED",
+        "INFERENCE",
+        "MEASURED"
+      ]
+    },
+    {
+      "id": "query-canonical-schema",
+      "type": "file",
+      "path": "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/21_search_query_log.github_fragment.csv",
+      "min_bytes": 25000,
+      "contains_all": [
+        "query_id,category,platform,query,sort_order,result_page,reported_total,actually_obtained,unique_after_dedupe,deep_read_count,access_time_utc,access_time_singapore,status,evidence_path,notes",
+        "github_repository",
+        "github_code"
+      ]
+    },
+    {
+      "id": "failure-boundaries",
+      "type": "file",
+      "path": "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/20_access_failures.github_fragment.md",
+      "min_bytes": 1200,
+      "contains_all": [
+        "仅本子任务早期默认隔离上下文",
+        "不是主环境当前认证状态",
+        "RATE_LIMITED",
+        "BLOCKED"
+      ]
+    },
+    {
+      "id": "summary-counts",
+      "type": "json",
+      "path": "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/github_ecosystem_output_summary.json",
+      "assertions": [
+        {"pointer": "/discovered_repository_count", "op": "equals", "value": 195},
+        {"pointer": "/deep_repository_count", "op": "equals", "value": 19},
+        {"pointer": "/full_relevant_repository_count", "op": "equals", "value": 15},
+        {"pointer": "/target_files_repository_count", "op": "equals", "value": 4},
+        {"pointer": "/files_fully_read_count", "op": "equals", "value": 1165},
+        {"pointer": "/deep_read_error_count", "op": "equals", "value": 66},
+        {"pointer": "/query_log_row_count", "op": "equals", "value": 57},
+        {"pointer": "/source_manifest_row_count", "op": "equals", "value": 64}
+      ]
+    },
+    {
+      "id": "schema-and-evidence-verifier",
+      "type": "command",
+      "argv": ["python3", "verify_github_outputs.py"],
+      "cwd": "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem",
+      "expected_exit": 0,
+      "stdout_contains_all": [
+        "\"status\": \"PASS\"",
+        "\"query_header_exact\": true",
+        "\"manifest_statuses_allowlisted\": true",
+        "\"full_relevant_repository_count\": 15"
+      ],
+      "timeout_seconds": 120
+    }
+  ]
+}

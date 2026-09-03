@@ -1,0 +1,404 @@
+{
+  "schema_version": "1.0",
+  "source_id": "GH-DEEP-MouseLand__cellpose",
+  "repo": "MouseLand/cellpose",
+  "url": "https://github.com/MouseLand/cellpose",
+  "relation_to_competition": "candidate_3d_segmentation_component",
+  "access_time_utc": "2026-09-03T08:47:13.811599+00:00",
+  "fixed_branch": "main",
+  "fixed_commit_sha": "a54cb48849b7e225a81e8e43dcb042d42427f543",
+  "latest_commit_date": "2026-06-14T09:19:49-04:00",
+  "tree_file_count": 110,
+  "tree_bytes": 8278,
+  "tree_sha256": "e7951c359c81098fd9adf6936faefe18279787e001e912c363afe9d8512fd114",
+  "tree_evidence_path": "staging/github_ecosystem/evidence/MouseLand__cellpose/tree.txt",
+  "read_status": "TARGET_FILES_READ",
+  "files_requested": 12,
+  "relevant_source_paths_selected": null,
+  "relevant_source_selection_coverage": null,
+  "files_actually_read_count": 12,
+  "files_actually_read": [
+    {
+      "path": "README.md",
+      "bytes": 20756,
+      "sha256": "bf9b0d2b4fb9d6dae4c4aa05687e920c27e8081fc52da1cf73dd8b1b24c0aa56",
+      "line_count": 220,
+      "keyword_counts": {
+        "segment": 12,
+        "link": 1,
+        "flow": 2,
+        "cellpose": 161,
+        "train": 14,
+        "predict": 1
+      },
+      "symbols": [],
+      "headings": [
+        "# <p>  <b>Cellpose </b> </p>",
+        "### :star2: v4.2+ update (June 2026) :star2:",
+        "### CITATION",
+        "## Old updates",
+        "### v3.1+ update (Feb 2025)",
+        "### :star2: v3 (Feb 2024) :star2:",
+        "### :star2: v2.0 (April 2022) :star2:",
+        "# Installation",
+        "## Local installation (< 2 minutes)",
+        "### System requirements",
+        "### Dependencies",
+        "### Option 1: Installation Instructions with conda",
+        "### Option 2: Installation Instructions with python's venv",
+        "### GPU version (CUDA) on Windows or Linux",
+        "### Installation of github version",
+        "## Run cellpose 1.0 without local python installation",
+        "# Run cellpose locally",
+        "## Step-by-step demo",
+        "### 3D segmentation",
+        "## Contributions",
+        "## Download of pretrained models"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1454,
+      "sha256": "fa908286fef07e1e8acd05adcdcd7bbb8c7ca4c02f563a4722dad28b94ce0b49",
+      "line_count": 9,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "license"
+    },
+    {
+      "path": "setup.py",
+      "bytes": 2405,
+      "sha256": "8fad18b40f31ce684d086ff396e0bc6203910711c4aa18adb463404871b7e04b",
+      "line_count": 103,
+      "keyword_counts": {
+        "segment": 2,
+        "cellpose": 4,
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "dependency"
+    },
+    {
+      "path": "environment.yml",
+      "bytes": 443,
+      "sha256": "b33549420af12cdbdd78c0437edcbec788974763c23f3ffdcae7f89518481d0e",
+      "line_count": 30,
+      "keyword_counts": {
+        "cellpose": 2,
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "dependency"
+    },
+    {
+      "path": "cellpose/io.py",
+      "bytes": 33209,
+      "sha256": "e04a6aac832303a68f829439764ceaa5f8caf4c43a45b7a45772585417b6fd06",
+      "line_count": 899,
+      "keyword_counts": {
+        "segment": 5,
+        "link": 1,
+        "flow": 100,
+        "cellpose": 18,
+        "train": 9
+      },
+      "symbols": [
+        "logger_setup",
+        "check_dir",
+        "outlines_to_text",
+        "load_dax",
+        "imread",
+        "imread_2D",
+        "imread_3D",
+        "remove_model",
+        "add_model",
+        "imsave",
+        "get_image_files",
+        "get_label_files",
+        "load_images_labels",
+        "load_train_test_data",
+        "masks_flows_to_seg",
+        "save_to_png",
+        "save_rois",
+        "save_masks"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "cellpose/models.py",
+      "bytes": 23734,
+      "sha256": "3b007cb67910720a3d7ac16643c348bba93743e6ab81d9468e90986ca9a38511",
+      "line_count": 438,
+      "keyword_counts": {
+        "segment": 5,
+        "assign": 3,
+        "flow": 52,
+        "transformer": 1,
+        "unet": 1,
+        "cellpose": 11,
+        "train": 30
+      },
+      "symbols": [
+        "cache_model_path",
+        "get_user_models",
+        "get_backbone",
+        "CellposeModel",
+        "__init__",
+        "eval",
+        "_run_net",
+        "_compute_masks"
+      ],
+      "category": "model"
+    },
+    {
+      "path": "cellpose/vit.py",
+      "bytes": 11421,
+      "sha256": "487f8efc4c8ee4498907b8ab8b3bf211645d8b7657fca7afe73ea3d1408dbf43",
+      "line_count": 293,
+      "keyword_counts": {
+        "segment": 1,
+        "attention": 1,
+        "cellpose": 1,
+        "train": 11
+      },
+      "symbols": [
+        "BaseModel",
+        "__init__",
+        "load_model",
+        "dtype",
+        "dtype",
+        "device",
+        "save_model",
+        "CPSAM",
+        "__init__",
+        "forward",
+        "load_pretrained",
+        "CPDINO",
+        "__init__",
+        "load_pretrained",
+        "forward",
+        "CPnetBioImageIO",
+        "forward",
+        "load_model",
+        "load_state_dict"
+      ],
+      "category": "model"
+    },
+    {
+      "path": "cellpose/train.py",
+      "bytes": 26882,
+      "sha256": "d3abca25c9e47982dc7c5b2f87a316041f9c894ea9062ffaa81afe6c8a0c9c2c",
+      "line_count": 540,
+      "keyword_counts": {
+        "segment": 1,
+        "track": 1,
+        "flow": 26,
+        "cellpose": 3,
+        "train": 196,
+        "predict": 4
+      },
+      "symbols": [
+        "_loss_fn_class",
+        "_loss_fn_seg",
+        "_reshape_norm",
+        "_get_batch",
+        "_reshape_norm_save",
+        "_process_train_test",
+        "train_seg"
+      ],
+      "category": "training"
+    },
+    {
+      "path": "cellpose/dynamics.py",
+      "bytes": 31143,
+      "sha256": "6d68cfa5db9bbe788963456bf979e0d178aa6269543a2387374de25cf4838989",
+      "line_count": 744,
+      "keyword_counts": {
+        "assign": 1,
+        "flow": 107,
+        "cellpose": 3,
+        "sparse": 2,
+        "train": 3,
+        "predict": 11
+      },
+      "symbols": [
+        "_extend_centers_gpu",
+        "center_of_mass",
+        "get_centers",
+        "masks_to_flows_gpu",
+        "masks_to_flows_gpu_3d",
+        "labels_to_flows",
+        "flow_error",
+        "steps_interp",
+        "follow_flows",
+        "remove_bad_flow_masks",
+        "mem_info",
+        "mem_info",
+        "max_pool1d",
+        "max_pool_nd",
+        "get_masks_torch",
+        "resize_and_compute_masks",
+        "compute_masks"
+      ],
+      "category": "postprocessing"
+    },
+    {
+      "path": "cellpose/metrics.py",
+      "bytes": 8975,
+      "sha256": "ff0fa0b443178b0d64106d6857789d3c581f6457b6f60e409724336e2a890f89",
+      "line_count": 210,
+      "keyword_counts": {
+        "assign": 4,
+        "linear_sum_assignment": 3,
+        "stardist": 3,
+        "jaccard": 2,
+        "sparse": 1,
+        "predict": 8
+      },
+      "symbols": [
+        "mask_ious",
+        "boundary_scores",
+        "_label_overlap",
+        "aggregated_jaccard_index",
+        "average_precision",
+        "_intersection_over_union",
+        "_true_positive"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "docs/do3d.rst",
+      "bytes": 7491,
+      "sha256": "50211a02139b881c784375903b879a9cafe1cfa341c071859906e5ca32f79f66",
+      "line_count": 140,
+      "keyword_counts": {
+        "segment": 14,
+        "flow": 9,
+        "cellpose": 10,
+        "train": 9
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "three_dimensional_inference"
+    },
+    {
+      "path": "docs/train.rst",
+      "bytes": 5030,
+      "sha256": "8eaee92476b62f2fecd7ba4c354ee5fcb154602d4111442caf24a76492325f5f",
+      "line_count": 112,
+      "keyword_counts": {
+        "flow": 2,
+        "cellpose": 7,
+        "train": 43
+      },
+      "symbols": [],
+      "headings": [],
+      "category": "training"
+    }
+  ],
+  "target_paths_missing": [],
+  "read_errors": [],
+  "checkout_exit": 0,
+  "checkout_stderr_excerpt": "",
+  "checkout_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "license": "BSD-3-Clause",
+  "categories_observed": [
+    "data_io",
+    "dependency",
+    "evaluation",
+    "license",
+    "model",
+    "postprocessing",
+    "readme",
+    "three_dimensional_inference",
+    "training"
+  ],
+  "categories_not_present_in_selected_files": [
+    "data_loader",
+    "division",
+    "inference",
+    "optimization",
+    "submission_conversion",
+    "temporal_linking"
+  ],
+  "category_coverage": {
+    "data_io": {
+      "status": "READ",
+      "paths": [
+        "cellpose/io.py"
+      ]
+    },
+    "data_loader": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "dependency": {
+      "status": "READ",
+      "paths": [
+        "setup.py",
+        "environment.yml"
+      ]
+    },
+    "division": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "evaluation": {
+      "status": "READ",
+      "paths": [
+        "cellpose/metrics.py"
+      ]
+    },
+    "inference": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "license": {
+      "status": "READ",
+      "paths": [
+        "LICENSE"
+      ]
+    },
+    "model": {
+      "status": "READ",
+      "paths": [
+        "cellpose/models.py",
+        "cellpose/vit.py"
+      ]
+    },
+    "optimization": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "postprocessing": {
+      "status": "READ",
+      "paths": [
+        "cellpose/dynamics.py"
+      ]
+    },
+    "readme": {
+      "status": "READ",
+      "paths": [
+        "README.md"
+      ]
+    },
+    "submission_conversion": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "temporal_linking": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "training": {
+      "status": "READ",
+      "paths": [
+        "cellpose/train.py",
+        "docs/train.rst"
+      ]
+    }
+  },
+  "selection_policy": null,
+  "scope_note": "Full bytes were read for every listed relevant-source path; only hashes, structure, notebook-cell hashes, and symbol/keyword summaries are persisted. The complete tree and per-path exclusions preserve the coverage boundary."
+}

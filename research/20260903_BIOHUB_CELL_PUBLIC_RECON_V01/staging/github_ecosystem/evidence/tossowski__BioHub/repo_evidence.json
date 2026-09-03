@@ -1,0 +1,2281 @@
+{
+  "schema_version": "1.0",
+  "source_id": "GH-DEEP-tossowski__BioHub",
+  "repo": "tossowski/BioHub",
+  "url": "https://github.com/tossowski/BioHub",
+  "relation_to_competition": "competition_participant_pipeline",
+  "access_time_utc": "2026-09-03T08:47:13.706435+00:00",
+  "fixed_branch": "main",
+  "fixed_commit_sha": "a0422bcf810cbb6ca10c71dbf828ea6c76fc8c11",
+  "latest_commit_date": "2026-07-10T15:06:05-07:00",
+  "tree_file_count": 91,
+  "tree_bytes": 8713,
+  "tree_sha256": "21e755863163dff454b0b5eed01c2e44ff5f8b15bbe6cd0c49f1144e50bd54cf",
+  "tree_evidence_path": "staging/github_ecosystem/evidence/tossowski__BioHub/tree.txt",
+  "read_status": "FULL_RELEVANT_REPO_SOURCE_READ",
+  "files_requested": 86,
+  "relevant_source_paths_selected": 86,
+  "relevant_source_selection_coverage": 1.0,
+  "files_actually_read_count": 86,
+  "files_actually_read": [
+    {
+      "path": "README.md",
+      "bytes": 10200,
+      "sha256": "0070e04d41557ba8259d534c27c57c0e96b756b8b9e1cd621668a5ccf053c634",
+      "line_count": 210,
+      "keyword_counts": {
+        "detect": 36,
+        "track": 31,
+        "link": 22,
+        "division": 8,
+        "assign": 4,
+        "unet": 4,
+        "geff": 4,
+        "zarr": 7,
+        "jaccard": 9,
+        "submission": 17,
+        "csv": 12,
+        "sparse": 4,
+        "train": 21,
+        "infer": 3,
+        "predict": 12,
+        "evaluate": 3,
+        "postprocess": 1,
+        "prune": 1,
+        "ilp": 2
+      },
+      "symbols": [],
+      "headings": [
+        "# Biohub — Cell Tracking During Development",
+        "## The task, precisely",
+        "## Evaluation metric (drives every design choice)",
+        "## Approach (hybrid, staged)",
+        "## Repository layout",
+        "## Quickest path to a submission",
+        "## Setup",
+        "## Usage",
+        "# 0. Calibration stats (needs the pipeline extra for tracksdata)",
+        "# 1. Self-contained baseline straight to a submission CSV (no heavy deps)",
+        "# 2. Score locally against annotated training videos (needs the pipeline extra)",
+        "## Stage 2 — train the learned detector (GPU)",
+        "# hyperparameters come from the `heatmap:` block of the config",
+        "# use all visible GPUs (each batch is sharded across them)",
+        "# pin to one GPU / disable mixed precision",
+        "### Uploading the trained weights",
+        "## Tests",
+        "## References",
+        "## Status"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1065,
+      "sha256": "c0263a3e10fe19eac0e9528b0dcbee16e127ed5bb65107dc96c21aaf4ebc67d5",
+      "line_count": 22,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "license"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 1241,
+      "sha256": "00d6e0f612b545e5c0c661ba6dbe27a2a542ed1cca312d1af99e213d3d152a04",
+      "line_count": 47,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 6,
+        "link": 2,
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "dependency"
+    },
+    {
+      "path": "scripts/train_detection.py",
+      "bytes": 4472,
+      "sha256": "775298a2166a88d0783f2e851537473e3c0a39f38a457a70322f07dbc4e5058c",
+      "line_count": 110,
+      "keyword_counts": {
+        "detect": 11,
+        "track": 3,
+        "unet": 2,
+        "geff": 2,
+        "zarr": 2,
+        "sparse": 1,
+        "train": 14
+      },
+      "symbols": [
+        "main"
+      ],
+      "category": "training"
+    },
+    {
+      "path": "scripts/predict.py",
+      "bytes": 4679,
+      "sha256": "c5284dfd37da4b1f543a66678a0a9c5feeb60053fdcdf0eccd84ae273d375869",
+      "line_count": 108,
+      "keyword_counts": {
+        "detect": 10,
+        "track": 21,
+        "link": 12,
+        "division": 4,
+        "assign": 1,
+        "geff": 9,
+        "zarr": 1,
+        "submission": 8,
+        "csv": 13,
+        "predict": 9,
+        "prune": 5
+      },
+      "symbols": [
+        "main",
+        "_predict_tracksdata"
+      ],
+      "category": "inference"
+    },
+    {
+      "path": "scripts/evaluate.py",
+      "bytes": 2164,
+      "sha256": "6d3ffe2e5d7cc2a1fdbacfcc43fb07932a1ba017efe8de6009801b1a75ff6933",
+      "line_count": 59,
+      "keyword_counts": {
+        "track": 2,
+        "division": 3,
+        "geff": 11,
+        "jaccard": 11,
+        "train": 1,
+        "predict": 3,
+        "evaluate": 2
+      },
+      "symbols": [
+        "main"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "src/biohub_tracking/dataspec.py",
+      "bytes": 1456,
+      "sha256": "fb7367a00846f9d97108bac57c647ea87501734e41251a9701b6717e03ea08b6",
+      "line_count": 56,
+      "keyword_counts": {
+        "track": 2,
+        "geff": 1,
+        "zarr": 1,
+        "train": 2,
+        "predict": 2
+      },
+      "symbols": [
+        "data_root",
+        "train_dir",
+        "test_dir",
+        "weights_dir",
+        "predictions_dir",
+        "results_dir"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/biohub_tracking/io.py",
+      "bytes": 4136,
+      "sha256": "b7bdc8169e11975a06df40c15db7d659145b9ef2b4d28e63420e6cc24971cb0a",
+      "line_count": 116,
+      "keyword_counts": {
+        "track": 25,
+        "link": 1,
+        "geff": 17,
+        "zarr": 15
+      },
+      "symbols": [
+        "Dataset",
+        "list_datasets",
+        "open_dataset",
+        "load_geff",
+        "save_geff",
+        "_parse_scale"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/biohub_tracking/detection/heatmap.py",
+      "bytes": 39589,
+      "sha256": "99cbe0fa05e516a857e357b4d063e4abcee0ff2e5d6b2d87935a062fe5a5b517",
+      "line_count": 1022,
+      "keyword_counts": {
+        "detect": 16,
+        "track": 5,
+        "link": 1,
+        "assign": 1,
+        "unet": 17,
+        "geff": 9,
+        "zarr": 22,
+        "sparse": 4,
+        "train": 47,
+        "infer": 9,
+        "predict": 7,
+        "evaluate": 2
+      },
+      "symbols": [
+        "HeatmapConfig",
+        "merged",
+        "build_target_heatmap",
+        "augment_tile",
+        "_unet_class",
+        "_norm",
+        "ConvBlock",
+        "__init__",
+        "forward",
+        "UNet3D",
+        "__init__",
+        "_run",
+        "forward",
+        "build_model",
+        "masked_loss",
+        "_VideoSource",
+        "_load_video_sources",
+        "_tile_dataset_class",
+        "HeatmapTileDataset",
+        "__init__",
+        "__len__",
+        "_movie",
+        "_origin",
+        "__getitem__",
+        "embryo_id",
+        "group_folds",
+        "_resolve_device",
+        "train",
+        "_fold_checkpoint_path",
+        "cross_validate",
+        "_evaluate",
+        "_save_checkpoint",
+        "load_model",
+        "_predict_volume",
+        "_starts",
+        "_peaks_from_heatmap",
+        "predict_centroids",
+        "_load_config"
+      ],
+      "category": "detection"
+    },
+    {
+      "path": "src/biohub_tracking/linking/lap.py",
+      "bytes": 4740,
+      "sha256": "bd6c7c43fb819a1d27c7f1e371dcaadfd589bf6519c3e4ddfc47a8435102d93a",
+      "line_count": 124,
+      "keyword_counts": {
+        "detect": 2,
+        "track": 11,
+        "link": 15,
+        "division": 11,
+        "assign": 11,
+        "linear_sum_assignment": 3,
+        "submission": 1,
+        "ilp": 1
+      },
+      "symbols": [
+        "_assign_frame_pair",
+        "link_lap",
+        "_attach_divisions"
+      ],
+      "category": "assignment"
+    },
+    {
+      "path": "src/biohub_tracking/linking/ultrack_linker.py",
+      "bytes": 2600,
+      "sha256": "aab319e62e622fd7c4cf5e3099d09cb8219783099015db56aa0cdcd2a12dbed4",
+      "line_count": 63,
+      "keyword_counts": {
+        "detect": 3,
+        "segment": 5,
+        "track": 19,
+        "link": 18,
+        "division": 5,
+        "assign": 2
+      },
+      "symbols": [
+        "UltrackParams",
+        "link_from_labels",
+        "link_from_points"
+      ],
+      "category": "optimization"
+    },
+    {
+      "path": "src/biohub_tracking/linking/postprocess.py",
+      "bytes": 6166,
+      "sha256": "5967f1383a139bf61d30b56b6dd246dc4b9cb8bee25e9af4eef29cad2d35038c",
+      "line_count": 162,
+      "keyword_counts": {
+        "detect": 3,
+        "track": 18,
+        "link": 2,
+        "division": 3,
+        "assign": 2,
+        "linear_sum_assignment": 2,
+        "jaccard": 1,
+        "sparse": 1,
+        "predict": 1,
+        "prune": 2
+      },
+      "symbols": [
+        "_edges_list",
+        "prune_isolated",
+        "gap_close",
+        "short_track_filter",
+        "find"
+      ],
+      "category": "postprocessing"
+    },
+    {
+      "path": "src/biohub_tracking/metrics.py",
+      "bytes": 8793,
+      "sha256": "8d425f4d0843d87b39a80be52473c5ecd0a204244bb88c2e69df2f9b9612170c",
+      "line_count": 235,
+      "keyword_counts": {
+        "detect": 2,
+        "track": 7,
+        "division": 49,
+        "assign": 1,
+        "jaccard": 43,
+        "predict": 9,
+        "evaluate": 9
+      },
+      "symbols": [
+        "Counts",
+        "as_dict",
+        "jaccard",
+        "edge_jaccard",
+        "adjusted_edge_jaccard",
+        "per_sample_metrics",
+        "combined_score",
+        "summarise",
+        "_isnan",
+        "evaluate",
+        "evaluate_datasets"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "src/biohub_tracking/submission.py",
+      "bytes": 5327,
+      "sha256": "7421bc31db811d5a296955901be72e2f008a13d6fb7893d76a097a87c4c64559",
+      "line_count": 141,
+      "keyword_counts": {
+        "track": 20,
+        "flow": 1,
+        "geff": 25,
+        "submission": 11,
+        "csv": 25,
+        "predict": 2
+      },
+      "symbols": [
+        "_graph_rows",
+        "write_submission",
+        "save_predictions",
+        "geffs_to_csv",
+        "_tracksdata_to_track_graph"
+      ],
+      "category": "submission_conversion"
+    },
+    {
+      "path": "src/biohub_tracking/pipeline.py",
+      "bytes": 4623,
+      "sha256": "bda9b94fdb9ce8c0b9ec0f5ae972aa76a66ab7c845f971fd905f0b8b05632300",
+      "line_count": 130,
+      "keyword_counts": {
+        "detect": 11,
+        "track": 15,
+        "link": 11,
+        "division": 4,
+        "geff": 1,
+        "zarr": 14,
+        "submission": 4,
+        "predict": 2,
+        "postprocess": 3,
+        "prune": 4
+      },
+      "symbols": [
+        "PipelineConfig",
+        "_open_movie",
+        "predict_movie",
+        "run_pipeline"
+      ],
+      "category": "pipeline"
+    },
+    {
+      "path": "CLAUDE.md",
+      "bytes": 14657,
+      "sha256": "c74bd6b40a79ad6a2c363af85b3d1d1f49d2ff93eedce9920e986714a3f0e607",
+      "line_count": 262,
+      "keyword_counts": {
+        "detect": 7,
+        "track": 22,
+        "link": 4,
+        "division": 7,
+        "assign": 1,
+        "flow": 2,
+        "unet": 1,
+        "cellpose": 18,
+        "geff": 1,
+        "zarr": 9,
+        "jaccard": 8,
+        "submission": 19,
+        "csv": 7,
+        "sparse": 1,
+        "train": 9,
+        "infer": 1,
+        "predict": 1,
+        "postprocess": 1,
+        "ilp": 4
+      },
+      "symbols": [
+        "entirely"
+      ],
+      "headings": [
+        "# BioHub Cell Tracking — Submission Guide & Plan",
+        "## 1. Competition mechanics (what actually happens on submit)",
+        "### Runtime budget (critical)",
+        "## 2. The metric (verified correct in `src/biohub_tracking/metrics.py`)",
+        "## 3. Offline environment — HARD-WON GOTCHAS (read before any submit)",
+        "### Kaggle assets (account: `timothyossowski`)",
+        "### Verify a rerun actually used the intended path",
+        "## 4. Submission workflow (CLI)",
+        "# 1. Stage a notebook + kernel-metadata.json in a dir (GPU/internet/datasets set).",
+        "# 2. Push:",
+        "# 3. Poll to completion (blob+LAP: minutes; do NOT foreground-sleep in this env):",
+        "# 4. Sanity-check output:",
+        "# 5. Submit (note -v and -f are required):",
+        "# 6. Confirm score:",
+        "### Score history",
+        "## 5. THE PLAN — iterate to gold-medal range",
+        "### Context / compaction discipline (keep the run sustainable)",
+        "### Guiding principle — monitor to learn, then think for yourself",
+        "### Loop — order matters: MONITOR FIRST, then build",
+        "### Record every experiment to an HTML log (for later review)",
+        "### Standing constraints for every candidate",
+        "### Near-term backlog",
+        "## 5b. Competitive landscape & strategy (monitored 2026-07-10)",
+        "## 6. Key files"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "biohub.ipynb",
+      "bytes": 95715,
+      "sha256": "8d74752622f919f730a2a9b71d3f8f67a38199943bc96780a67e0c03d000afe3",
+      "line_count": 2181,
+      "keyword_counts": {
+        "detect": 54,
+        "segment": 2,
+        "track": 62,
+        "link": 39,
+        "division": 11,
+        "assign": 6,
+        "hungarian": 2,
+        "linear_sum_assignment": 3,
+        "flow": 48,
+        "cellpose": 77,
+        "zarr": 26,
+        "jaccard": 10,
+        "submission": 13,
+        "csv": 13,
+        "sparse": 4,
+        "train": 9,
+        "infer": 2,
+        "predict": 5,
+        "evaluate": 1,
+        "postprocess": 2,
+        "prune": 10,
+        "ilp": 2
+      },
+      "notebook": {
+        "cell_count": 17,
+        "code_cell_count": 8,
+        "markdown_cell_count": 9,
+        "output_cell_count": 0,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "d53d9f7a3f715399be2afe9ae62cf729b1d12cf31a658c8028191b288333ffef",
+          "7b7e07542a0d8be20d573fd90a2bdf18728a987c4adbbeda1f435c40c98ce4fd",
+          "aa2e809905e3674080e2f7750e868b64920cc5817ba5b339fa2d36ff34019367",
+          "9f573109821e012199d34aadf2e2baad537b770be14218ee233b9154462818c0",
+          "bdc863ec7d6788f0d3270b70e7f16946295177a5734b3e951cc8012ec96c78c1",
+          "37aa63fc0d882f008cd72e2cc919d974ae54f1aa45d886a3ac56c200531713d0",
+          "5dffbebbd46e11ccd2af14d492142adaf9b34de3bf178552056c479a6e19545c",
+          "2359970352506b92280b73588cb42b003dc34758cfcc76b0ba61b40fc1686974"
+        ]
+      },
+      "category": "data_io"
+    },
+    {
+      "path": "configs/baseline.yaml",
+      "bytes": 2367,
+      "sha256": "d40b869374c85346b8d7998108b2bdb76c38c4c858df92e83513645fdfa21077",
+      "line_count": 64,
+      "keyword_counts": {
+        "detect": 8,
+        "track": 3,
+        "link": 2,
+        "division": 3,
+        "assign": 1,
+        "sparse": 1,
+        "train": 4,
+        "infer": 1
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "kaggle_submit/README.md",
+      "bytes": 3516,
+      "sha256": "89ab24cbd9ccf5db560952e550d8d670f16c962bc32f063e70fbbf9c1616d282",
+      "line_count": 76,
+      "keyword_counts": {
+        "track": 4,
+        "link": 1,
+        "cellpose": 9,
+        "submission": 3,
+        "csv": 1,
+        "train": 1
+      },
+      "symbols": [],
+      "headings": [
+        "# Automated offline notebook submission",
+        "## One-time / on-change: build & upload the payload",
+        "## Each submission: push the notebook and submit its output",
+        "## Prerequisites",
+        "## Verifying it actually used the offline path",
+        "## Files"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "kaggle_submit/build_wheelhouse.sh",
+      "bytes": 2054,
+      "sha256": "d27990c0c748a8c26aae7c231f4879e62b03931a009e443c3a63781e2481745a",
+      "line_count": 52,
+      "keyword_counts": {
+        "track": 9,
+        "link": 1,
+        "cellpose": 9,
+        "prune": 2
+      },
+      "symbols": [],
+      "category": "submission_conversion"
+    },
+    {
+      "path": "kaggle_submit/config.sh",
+      "bytes": 1803,
+      "sha256": "fbfe65d5422764f7cebe6e1d4ae4a4c3d5d7115586c02c7b42c6569bf132e76f",
+      "line_count": 38,
+      "keyword_counts": {
+        "track": 4,
+        "link": 1,
+        "flow": 1,
+        "cellpose": 8,
+        "submission": 3
+      },
+      "symbols": [],
+      "category": "submission_conversion"
+    },
+    {
+      "path": "kaggle_submit/kernel/kernel-metadata.json",
+      "bytes": 529,
+      "sha256": "311e38a40f7cfc61d0d9e4d25ed4783d5b8d8b7440ff52afb6f189e3e6ea96d2",
+      "line_count": 21,
+      "keyword_counts": {
+        "track": 3,
+        "cellpose": 1,
+        "submission": 2
+      },
+      "symbols": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "kaggle_submit/kernel_lb897/biohub-lb897-repro.ipynb",
+      "bytes": 109234,
+      "sha256": "2ccbd51f8611f2abcf361cda54bfcc83fdb03c044c9adde22d770e55b79d0168",
+      "line_count": 418,
+      "keyword_counts": {
+        "detect": 3,
+        "track": 88,
+        "link": 83,
+        "division": 63,
+        "assign": 6,
+        "hungarian": 1,
+        "linear_sum_assignment": 3,
+        "transformer": 4,
+        "unet": 11,
+        "geff": 31,
+        "zarr": 42,
+        "submission": 15,
+        "csv": 12,
+        "train": 11,
+        "infer": 6,
+        "predict": 23,
+        "prune": 10,
+        "ilp": 38
+      },
+      "notebook": {
+        "cell_count": 18,
+        "code_cell_count": 10,
+        "markdown_cell_count": 8,
+        "output_cell_count": 0,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "ed005222d5cdb4803d512a46f3776f16abfd35f3feb855912b9b3aec26e09ddc",
+          "93b75e91a3817fca4c404bc4b330a1d352757b00ed48051d1cf1ec2004c2c366",
+          "6568d590876993a81d7d980cad5619d831b715855c5ad1c505e511deee2e53a0",
+          "64d050f1696c79e9d343511460efebce98eb226a0c9933925f981d021a585961",
+          "0ff7c05d376cab7e6cb633b6db2786de6ea43426a7ee1084919f762dbc8dad92",
+          "9c70dede6dab715e838f5a9f95f6757b577c04e31aba09f06564a1f42f1e7842",
+          "25ce71944b73c91be2f8b751135b89520d8b6bd2457a8203cea25fbea9452d8b",
+          "5f7ff71a454d2a9192ee0813eefa73932030fb99c031722091bd1a41300f3027",
+          "af4516e4923e9c5bf0a4c7aa5f5b28038105dd281099ce5f6b7a054d6b52535b",
+          "db1f86c1898051519cdea3b2716fa60cc89301f7b87b1c81a89bae182fca4428"
+        ]
+      },
+      "category": "data_io"
+    },
+    {
+      "path": "kaggle_submit/kernel_lb897/kernel-metadata.json",
+      "bytes": 575,
+      "sha256": "688a7f3abcee3d4ab0bf278ac1f2801f18bf825310801177a5be32878f38a945",
+      "line_count": 21,
+      "keyword_counts": {
+        "track": 2
+      },
+      "symbols": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "kaggle_submit/kernel_test/biohub.ipynb",
+      "bytes": 96542,
+      "sha256": "422faf4c1a5f09baff35023791fb9094a3c3a2c7e555fe515e5fa657e925ee6f",
+      "line_count": 2196,
+      "keyword_counts": {
+        "detect": 54,
+        "segment": 2,
+        "track": 63,
+        "link": 39,
+        "division": 11,
+        "assign": 6,
+        "hungarian": 2,
+        "linear_sum_assignment": 3,
+        "flow": 48,
+        "cellpose": 77,
+        "zarr": 31,
+        "jaccard": 10,
+        "submission": 13,
+        "csv": 13,
+        "sparse": 4,
+        "train": 9,
+        "infer": 2,
+        "predict": 5,
+        "evaluate": 1,
+        "postprocess": 2,
+        "prune": 10,
+        "ilp": 2
+      },
+      "notebook": {
+        "cell_count": 17,
+        "code_cell_count": 8,
+        "markdown_cell_count": 9,
+        "output_cell_count": 0,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "09d076116611a67e80a7f8ca4980c2cba8d8ffd702b41c0a4aeb6f5c4bda14e2",
+          "7b7e07542a0d8be20d573fd90a2bdf18728a987c4adbbeda1f435c40c98ce4fd",
+          "aa2e809905e3674080e2f7750e868b64920cc5817ba5b339fa2d36ff34019367",
+          "9f573109821e012199d34aadf2e2baad537b770be14218ee233b9154462818c0",
+          "bdc863ec7d6788f0d3270b70e7f16946295177a5734b3e951cc8012ec96c78c1",
+          "37aa63fc0d882f008cd72e2cc919d974ae54f1aa45d886a3ac56c200531713d0",
+          "5dffbebbd46e11ccd2af14d492142adaf9b34de3bf178552056c479a6e19545c",
+          "2359970352506b92280b73588cb42b003dc34758cfcc76b0ba61b40fc1686974"
+        ]
+      },
+      "category": "data_io"
+    },
+    {
+      "path": "kaggle_submit/kernel_test/kernel-metadata.json",
+      "bytes": 453,
+      "sha256": "f91abf1fad36eccfc255a1b7a027bda241f76781f90ad0bb2ac0c32f5b298e8d",
+      "line_count": 20,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "kaggle_submit/push_and_submit.sh",
+      "bytes": 1957,
+      "sha256": "e8f0847f119c11346d89690f6e7623310703f0c87903021ece109757a3bc8be1",
+      "line_count": 59,
+      "keyword_counts": {
+        "submission": 3,
+        "csv": 1
+      },
+      "symbols": [],
+      "category": "submission_conversion"
+    },
+    {
+      "path": "kaggle_submit/stage_model.sh",
+      "bytes": 1367,
+      "sha256": "3ded4e3af13475f2458897396947344bfaa867a8fe7b9085a272cb8a3e88b7ba",
+      "line_count": 43,
+      "keyword_counts": {
+        "cellpose": 14
+      },
+      "symbols": [],
+      "category": "submission_conversion"
+    },
+    {
+      "path": "kaggle_submit/upload_datasets.sh",
+      "bytes": 1480,
+      "sha256": "eb30ec98d434bd5046303d2569ecaa34b7f958107e9eb0101286f676d092e197",
+      "line_count": 40,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "notebooks/biohub_baseline_submission.ipynb",
+      "bytes": 25120,
+      "sha256": "f844af87c72cbf8fe1792711b6a185e88bd32a18a7533255b7211f4f01808da2",
+      "line_count": 209,
+      "keyword_counts": {
+        "detect": 36,
+        "track": 10,
+        "link": 15,
+        "division": 8,
+        "assign": 6,
+        "linear_sum_assignment": 3,
+        "unet": 31,
+        "zarr": 24,
+        "jaccard": 2,
+        "submission": 14,
+        "csv": 13,
+        "sparse": 1,
+        "train": 5,
+        "infer": 3,
+        "predict": 9,
+        "evaluate": 1
+      },
+      "notebook": {
+        "cell_count": 17,
+        "code_cell_count": 8,
+        "markdown_cell_count": 9,
+        "output_cell_count": 0,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "85790333a1fe18f5282a9a56ad47eecc2ea5cf21a93034da0a0bb2c198070cab",
+          "411807e45b37afa937e06596b783edd0fd858aa05c11964650960188274396fe",
+          "e22f4ba593e6eaabfa0e291debee20a916b0d3f8307a77571ee10a0b376b479e",
+          "08d5470482356dce1785fbb616702811909d5acac6e2ed3caecee3eefc53d4c9",
+          "35a03407528106fc498bd0a07115f931092d55a296c7c03f571bde8c4f6bd6f3",
+          "18c33d72ac302a3a713e1b4a671d3b8c23c480665055edf9395a00a55fb9c3dc",
+          "e901fae10ec7890cfa90e3ee6a9416825e9ee002082c0dcb01e3d784bd0ba957",
+          "2359970352506b92280b73588cb42b003dc34758cfcc76b0ba61b40fc1686974"
+        ]
+      },
+      "category": "data_io"
+    },
+    {
+      "path": "plans/plan-A.md",
+      "bytes": 9452,
+      "sha256": "120ed0eb13e21129a5be4113ed9fee299806e30e268fe2c4c1e37e5152f00091",
+      "line_count": 144,
+      "keyword_counts": {
+        "detect": 20,
+        "segment": 1,
+        "track": 27,
+        "link": 20,
+        "division": 10,
+        "assign": 1,
+        "flow": 1,
+        "transformer": 4,
+        "attention": 2,
+        "unet": 4,
+        "geff": 13,
+        "zarr": 5,
+        "jaccard": 8,
+        "submission": 12,
+        "csv": 10,
+        "sparse": 2,
+        "train": 6,
+        "infer": 1,
+        "predict": 9,
+        "evaluate": 3,
+        "bayes": 1,
+        "ilp": 2
+      },
+      "symbols": [],
+      "headings": [
+        "# Plan: Biohub Cell Tracking During Development — Kaggle Solution Repo",
+        "## Context",
+        "### What the task actually is (verified from the official repo & metrics)",
+        "### Evaluation metric (drives every design decision)",
+        "## Reference material (reuse, don't reinvent)",
+        "## Repository scaffold (to create)",
+        "## Solution strategy (hybrid, staged)",
+        "## Critical files to create first",
+        "## Verification",
+        "## Open items / notes"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "research/lb897/lb897-baseline.ipynb",
+      "bytes": 106920,
+      "sha256": "c4d75190ba336623a01f42a239bfb8a915f547d3606aa29a7d666893bf83f087",
+      "line_count": 1,
+      "keyword_counts": {
+        "detect": 3,
+        "track": 88,
+        "link": 83,
+        "division": 63,
+        "assign": 6,
+        "hungarian": 1,
+        "linear_sum_assignment": 3,
+        "transformer": 4,
+        "unet": 11,
+        "geff": 31,
+        "zarr": 42,
+        "submission": 15,
+        "csv": 12,
+        "train": 11,
+        "infer": 6,
+        "predict": 23,
+        "prune": 10,
+        "ilp": 38
+      },
+      "notebook": {
+        "cell_count": 18,
+        "code_cell_count": 10,
+        "markdown_cell_count": 8,
+        "output_cell_count": 0,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "ed005222d5cdb4803d512a46f3776f16abfd35f3feb855912b9b3aec26e09ddc",
+          "93b75e91a3817fca4c404bc4b330a1d352757b00ed48051d1cf1ec2004c2c366",
+          "6568d590876993a81d7d980cad5619d831b715855c5ad1c505e511deee2e53a0",
+          "64d050f1696c79e9d343511460efebce98eb226a0c9933925f981d021a585961",
+          "0ff7c05d376cab7e6cb633b6db2786de6ea43426a7ee1084919f762dbc8dad92",
+          "9c70dede6dab715e838f5a9f95f6757b577c04e31aba09f06564a1f42f1e7842",
+          "25ce71944b73c91be2f8b751135b89520d8b6bd2457a8203cea25fbea9452d8b",
+          "5f7ff71a454d2a9192ee0813eefa73932030fb99c031722091bd1a41300f3027",
+          "af4516e4923e9c5bf0a4c7aa5f5b28038105dd281099ce5f6b7a054d6b52535b",
+          "db1f86c1898051519cdea3b2716fa60cc89301f7b87b1c81a89bae182fca4428"
+        ]
+      },
+      "category": "relevant_source"
+    },
+    {
+      "path": "research/lb897_out/tracking_repo/kaggle_test_splits_50ep.json",
+      "bytes": 155,
+      "sha256": "75fccf5fa4771548dc8e53fa96800574cad593528ae022a968f03d481c8d5b52",
+      "line_count": 12,
+      "keyword_counts": {
+        "train": 1
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "research/lb897_out/tracking_repo/scripts/augmentations.py",
+      "bytes": 1958,
+      "sha256": "13db09817bf492f8d0f710a0a4d09776320b262060167055090a303fc6057f4e",
+      "line_count": 66,
+      "keyword_counts": {
+        "train": 1
+      },
+      "symbols": [
+        "brightness_augment",
+        "flip_augment"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "research/lb897_out/tracking_repo/scripts/dataspec.py",
+      "bytes": 1229,
+      "sha256": "e69bf952fb985477ac50ff8598a35020c95d20a035a09b81ab4056e655dd311f",
+      "line_count": 41,
+      "keyword_counts": {
+        "track": 2,
+        "train": 5,
+        "predict": 3
+      },
+      "symbols": [
+        "_default_dataset_path"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "research/lb897_out/tracking_repo/scripts/evaluate.py",
+      "bytes": 6835,
+      "sha256": "614813cc51c3581c6ccda4bb20725a19da8ecac4a27620654bfca58319cffa3c",
+      "line_count": 188,
+      "keyword_counts": {
+        "track": 8,
+        "division": 7,
+        "geff": 18,
+        "jaccard": 8,
+        "predict": 17,
+        "evaluate": 11
+      },
+      "symbols": [
+        "_read_estimated_n_total",
+        "discover_runs",
+        "_nan_row",
+        "evaluate_run",
+        "main"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "research/lb897_out/tracking_repo/scripts/predict_unet_transformer.py",
+      "bytes": 26008,
+      "sha256": "c44e771ba5980b820f93091e03a303c25dfe8f3232e501f54dc9565731c234b9",
+      "line_count": 678,
+      "keyword_counts": {
+        "detect": 12,
+        "track": 10,
+        "link": 3,
+        "division": 14,
+        "assign": 2,
+        "flow": 1,
+        "transformer": 9,
+        "unet": 39,
+        "geff": 6,
+        "zarr": 9,
+        "ctc": 4,
+        "jaccard": 6,
+        "sparse": 1,
+        "train": 7,
+        "infer": 3,
+        "predict": 28,
+        "evaluate": 8,
+        "ilp": 35
+      },
+      "symbols": [
+        "PredictConfig",
+        "__post_init__",
+        "suppress_output",
+        "build_graph",
+        "load_model",
+        "_load_frame",
+        "pool_kernel_from_um",
+        "_detect_cells_pooled",
+        "predict_video",
+        "predict",
+        "main"
+      ],
+      "category": "inference"
+    },
+    {
+      "path": "research/lb897_out/tracking_repo/scripts/train_unet_transformer.py",
+      "bytes": 49438,
+      "sha256": "c4f6317736bb3bb1ec8f3f6e9a6d935a463e3f0f1f685481b2d13218d35dc9ea",
+      "line_count": 1280,
+      "keyword_counts": {
+        "detect": 31,
+        "track": 12,
+        "division": 1,
+        "flow": 2,
+        "transformer": 19,
+        "attention": 1,
+        "unet": 105,
+        "zarr": 12,
+        "sparse": 1,
+        "train": 44,
+        "predict": 13,
+        "evaluate": 6
+      },
+      "symbols": [
+        "compute_gt_transition_matrix",
+        "compute_loss",
+        "compute_batch_loss",
+        "_evaluate_pair",
+        "FrameWindowData",
+        "VideoMeta",
+        "extract_pos_features",
+        "_embed",
+        "get_window_data",
+        "pad_window",
+        "FrameWindowDataset",
+        "__init__",
+        "__len__",
+        "__getitem__",
+        "load_dataset_windows",
+        "UNetNodeTransformer",
+        "__init__",
+        "_index_features",
+        "detect",
+        "encode",
+        "predict_edges",
+        "compute_detection_loss",
+        "_pos_embed_torch",
+        "detect_and_match",
+        "build_matched_edge_targets",
+        "train_epoch",
+        "evaluate",
+        "train",
+        "_load",
+        "worker_init_fn",
+        "main"
+      ],
+      "category": "training"
+    },
+    {
+      "path": "research/lb897_out/tracking_repo/src/biohub_tracking/__init__.py",
+      "bytes": 86,
+      "sha256": "26a18d8da84e40da73281a48ebc3017d847a2e57431ab63e8629d2109e6e8571",
+      "line_count": 2,
+      "keyword_counts": {
+        "track": 3,
+        "ctc": 1
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "research/lb897_out/tracking_repo/src/biohub_tracking/division_metrics.py",
+      "bytes": 15872,
+      "sha256": "d1cf1e0a43009d02174f1699ce2aa28458a2220ac4b521731d3bcf31cf8c76be",
+      "line_count": 451,
+      "keyword_counts": {
+        "track": 14,
+        "division": 48,
+        "lineage": 7,
+        "sparse": 6,
+        "predict": 21,
+        "evaluate": 1
+      },
+      "symbols": [
+        "DivisionCounts",
+        "_reset_matching_attrs",
+        "extract_divisions",
+        "match_divisions",
+        "_match_full",
+        "_matched_node_attrs",
+        "_has_stage_coverage",
+        "_descendants",
+        "_weakly_connected_components",
+        "_bipartite_max_matching",
+        "augment",
+        "score_divisions",
+        "count_matched_pred_divisions",
+        "evaluate_divisions"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "research/lb897_out/tracking_repo/src/biohub_tracking/img_proc.py",
+      "bytes": 5319,
+      "sha256": "00e8ef0adc8b39f1aaaa547ea6197b906bf9e8c009e339d3e95f8f8dbf31be3f",
+      "line_count": 188,
+      "keyword_counts": {},
+      "symbols": [
+        "quantile_normalize",
+        "min_max_normalize",
+        "rescale_coords_to_isotropic",
+        "rescale_coords_from_isotropic",
+        "resample_image_to_isotropic",
+        "nms_3d"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "research/lb897_out/tracking_repo/src/biohub_tracking/io.py",
+      "bytes": 13485,
+      "sha256": "efae135b088cecaab463d889f16c885ef6da3ad27b0747327d8ddc28d866b7bd",
+      "line_count": 397,
+      "keyword_counts": {
+        "track": 44,
+        "link": 1,
+        "geff": 20,
+        "zarr": 24
+      },
+      "symbols": [
+        "Dataset",
+        "napari_tracks",
+        "open_dataset",
+        "_parse_scale",
+        "_lookup_precomputed_quantile",
+        "_process_on_gpu",
+        "invert_time_graph",
+        "rescale_graph_to_original",
+        "save_graph",
+        "list_datasets"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "research/lb897_out/tracking_repo/src/biohub_tracking/metrics.py",
+      "bytes": 15843,
+      "sha256": "31baf45b54c78f68bab4f65dd8f4b38bca702abb644171c6df7c46cdeef55d83",
+      "line_count": 451,
+      "keyword_counts": {
+        "track": 7,
+        "division": 72,
+        "geff": 1,
+        "jaccard": 72,
+        "sparse": 3,
+        "predict": 9,
+        "evaluate": 17
+      },
+      "symbols": [
+        "EvaluationResult",
+        "DatasetsResult",
+        "_jaccard",
+        "_evaluate_matched_graph",
+        "_compute_score",
+        "_evaluate",
+        "evaluate",
+        "evaluate_datasets",
+        "_matched_node_ids",
+        "node_recall",
+        "per_sample_metrics",
+        "nan_metrics_row",
+        "summarise"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "research/lb897_out/tracking_repo/src/biohub_tracking/models/__init__.py",
+      "bytes": 246,
+      "sha256": "ab7587ef79856bae50d24b62e5805092d0459ee1c586522b763f9ef70c093e1d",
+      "line_count": 7,
+      "keyword_counts": {
+        "track": 3,
+        "transformer": 3,
+        "unet": 3
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "research/lb897_out/tracking_repo/src/biohub_tracking/models/simple_node_transformer.py",
+      "bytes": 7229,
+      "sha256": "b97209edeb03840e80d903e3e2a8c81c520641c8ef343f6ca2904d0f80db064e",
+      "line_count": 211,
+      "keyword_counts": {
+        "detect": 2,
+        "transformer": 3,
+        "attention": 8,
+        "predict": 3
+      },
+      "symbols": [
+        "CrossAttentionBlock",
+        "__init__",
+        "forward",
+        "SimpleNodeTransformer",
+        "__init__",
+        "forward",
+        "_q_fn",
+        "_k_fn",
+        "_chunk_fn"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "research/lb897_out/tracking_repo/src/biohub_tracking/models/temporal_unet.py",
+      "bytes": 5112,
+      "sha256": "d809c35d42f504161074ddeaaa7aee5b407e5bca7f9b4e1d5f9b2ff345666cac",
+      "line_count": 142,
+      "keyword_counts": {
+        "attention": 6,
+        "unet": 1,
+        "train": 2
+      },
+      "symbols": [
+        "_conv_block",
+        "_TemporalAttention",
+        "__init__",
+        "forward",
+        "TemporalUNet3D",
+        "__init__",
+        "_run",
+        "forward"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "research/lb897_out2/run_stats.csv",
+      "bytes": 2090,
+      "sha256": "4b2d97afcc329a21b7796e177594b0322f7f1695825f4290a9de8b68b5c9c1eb",
+      "line_count": 6,
+      "keyword_counts": {
+        "track": 9,
+        "link": 7,
+        "division": 5,
+        "predict": 1,
+        "prune": 1
+      },
+      "symbols": [],
+      "category": "submission_conversion"
+    },
+    {
+      "path": "research/lb897_out2/tracking_repo/kaggle_test_splits_50ep.json",
+      "bytes": 155,
+      "sha256": "75fccf5fa4771548dc8e53fa96800574cad593528ae022a968f03d481c8d5b52",
+      "line_count": 12,
+      "keyword_counts": {
+        "train": 1
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "research/lb897_out2/tracking_repo/scripts/augmentations.py",
+      "bytes": 1958,
+      "sha256": "13db09817bf492f8d0f710a0a4d09776320b262060167055090a303fc6057f4e",
+      "line_count": 66,
+      "keyword_counts": {
+        "train": 1
+      },
+      "symbols": [
+        "brightness_augment",
+        "flip_augment"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "research/lb897_out2/tracking_repo/scripts/dataspec.py",
+      "bytes": 1229,
+      "sha256": "e69bf952fb985477ac50ff8598a35020c95d20a035a09b81ab4056e655dd311f",
+      "line_count": 41,
+      "keyword_counts": {
+        "track": 2,
+        "train": 5,
+        "predict": 3
+      },
+      "symbols": [
+        "_default_dataset_path"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "research/lb897_out2/tracking_repo/scripts/evaluate.py",
+      "bytes": 6835,
+      "sha256": "614813cc51c3581c6ccda4bb20725a19da8ecac4a27620654bfca58319cffa3c",
+      "line_count": 188,
+      "keyword_counts": {
+        "track": 8,
+        "division": 7,
+        "geff": 18,
+        "jaccard": 8,
+        "predict": 17,
+        "evaluate": 11
+      },
+      "symbols": [
+        "_read_estimated_n_total",
+        "discover_runs",
+        "_nan_row",
+        "evaluate_run",
+        "main"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "research/lb897_out2/tracking_repo/scripts/predict_unet_transformer.py",
+      "bytes": 26008,
+      "sha256": "c44e771ba5980b820f93091e03a303c25dfe8f3232e501f54dc9565731c234b9",
+      "line_count": 678,
+      "keyword_counts": {
+        "detect": 12,
+        "track": 10,
+        "link": 3,
+        "division": 14,
+        "assign": 2,
+        "flow": 1,
+        "transformer": 9,
+        "unet": 39,
+        "geff": 6,
+        "zarr": 9,
+        "ctc": 4,
+        "jaccard": 6,
+        "sparse": 1,
+        "train": 7,
+        "infer": 3,
+        "predict": 28,
+        "evaluate": 8,
+        "ilp": 35
+      },
+      "symbols": [
+        "PredictConfig",
+        "__post_init__",
+        "suppress_output",
+        "build_graph",
+        "load_model",
+        "_load_frame",
+        "pool_kernel_from_um",
+        "_detect_cells_pooled",
+        "predict_video",
+        "predict",
+        "main"
+      ],
+      "category": "inference"
+    },
+    {
+      "path": "research/lb897_out2/tracking_repo/scripts/train_unet_transformer.py",
+      "bytes": 49438,
+      "sha256": "c4f6317736bb3bb1ec8f3f6e9a6d935a463e3f0f1f685481b2d13218d35dc9ea",
+      "line_count": 1280,
+      "keyword_counts": {
+        "detect": 31,
+        "track": 12,
+        "division": 1,
+        "flow": 2,
+        "transformer": 19,
+        "attention": 1,
+        "unet": 105,
+        "zarr": 12,
+        "sparse": 1,
+        "train": 44,
+        "predict": 13,
+        "evaluate": 6
+      },
+      "symbols": [
+        "compute_gt_transition_matrix",
+        "compute_loss",
+        "compute_batch_loss",
+        "_evaluate_pair",
+        "FrameWindowData",
+        "VideoMeta",
+        "extract_pos_features",
+        "_embed",
+        "get_window_data",
+        "pad_window",
+        "FrameWindowDataset",
+        "__init__",
+        "__len__",
+        "__getitem__",
+        "load_dataset_windows",
+        "UNetNodeTransformer",
+        "__init__",
+        "_index_features",
+        "detect",
+        "encode",
+        "predict_edges",
+        "compute_detection_loss",
+        "_pos_embed_torch",
+        "detect_and_match",
+        "build_matched_edge_targets",
+        "train_epoch",
+        "evaluate",
+        "train",
+        "_load",
+        "worker_init_fn",
+        "main"
+      ],
+      "category": "training"
+    },
+    {
+      "path": "research/lb897_out2/tracking_repo/src/biohub_tracking/__init__.py",
+      "bytes": 86,
+      "sha256": "26a18d8da84e40da73281a48ebc3017d847a2e57431ab63e8629d2109e6e8571",
+      "line_count": 2,
+      "keyword_counts": {
+        "track": 3,
+        "ctc": 1
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "research/lb897_out2/tracking_repo/src/biohub_tracking/division_metrics.py",
+      "bytes": 15872,
+      "sha256": "d1cf1e0a43009d02174f1699ce2aa28458a2220ac4b521731d3bcf31cf8c76be",
+      "line_count": 451,
+      "keyword_counts": {
+        "track": 14,
+        "division": 48,
+        "lineage": 7,
+        "sparse": 6,
+        "predict": 21,
+        "evaluate": 1
+      },
+      "symbols": [
+        "DivisionCounts",
+        "_reset_matching_attrs",
+        "extract_divisions",
+        "match_divisions",
+        "_match_full",
+        "_matched_node_attrs",
+        "_has_stage_coverage",
+        "_descendants",
+        "_weakly_connected_components",
+        "_bipartite_max_matching",
+        "augment",
+        "score_divisions",
+        "count_matched_pred_divisions",
+        "evaluate_divisions"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "research/lb897_out2/tracking_repo/src/biohub_tracking/img_proc.py",
+      "bytes": 5319,
+      "sha256": "00e8ef0adc8b39f1aaaa547ea6197b906bf9e8c009e339d3e95f8f8dbf31be3f",
+      "line_count": 188,
+      "keyword_counts": {},
+      "symbols": [
+        "quantile_normalize",
+        "min_max_normalize",
+        "rescale_coords_to_isotropic",
+        "rescale_coords_from_isotropic",
+        "resample_image_to_isotropic",
+        "nms_3d"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "research/lb897_out2/tracking_repo/src/biohub_tracking/io.py",
+      "bytes": 13485,
+      "sha256": "efae135b088cecaab463d889f16c885ef6da3ad27b0747327d8ddc28d866b7bd",
+      "line_count": 397,
+      "keyword_counts": {
+        "track": 44,
+        "link": 1,
+        "geff": 20,
+        "zarr": 24
+      },
+      "symbols": [
+        "Dataset",
+        "napari_tracks",
+        "open_dataset",
+        "_parse_scale",
+        "_lookup_precomputed_quantile",
+        "_process_on_gpu",
+        "invert_time_graph",
+        "rescale_graph_to_original",
+        "save_graph",
+        "list_datasets"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "research/lb897_out2/tracking_repo/src/biohub_tracking/metrics.py",
+      "bytes": 15843,
+      "sha256": "31baf45b54c78f68bab4f65dd8f4b38bca702abb644171c6df7c46cdeef55d83",
+      "line_count": 451,
+      "keyword_counts": {
+        "track": 7,
+        "division": 72,
+        "geff": 1,
+        "jaccard": 72,
+        "sparse": 3,
+        "predict": 9,
+        "evaluate": 17
+      },
+      "symbols": [
+        "EvaluationResult",
+        "DatasetsResult",
+        "_jaccard",
+        "_evaluate_matched_graph",
+        "_compute_score",
+        "_evaluate",
+        "evaluate",
+        "evaluate_datasets",
+        "_matched_node_ids",
+        "node_recall",
+        "per_sample_metrics",
+        "nan_metrics_row",
+        "summarise"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "research/lb897_out2/tracking_repo/src/biohub_tracking/models/__init__.py",
+      "bytes": 246,
+      "sha256": "ab7587ef79856bae50d24b62e5805092d0459ee1c586522b763f9ef70c093e1d",
+      "line_count": 7,
+      "keyword_counts": {
+        "track": 3,
+        "transformer": 3,
+        "unet": 3
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "research/lb897_out2/tracking_repo/src/biohub_tracking/models/simple_node_transformer.py",
+      "bytes": 7229,
+      "sha256": "b97209edeb03840e80d903e3e2a8c81c520641c8ef343f6ca2904d0f80db064e",
+      "line_count": 211,
+      "keyword_counts": {
+        "detect": 2,
+        "transformer": 3,
+        "attention": 8,
+        "predict": 3
+      },
+      "symbols": [
+        "CrossAttentionBlock",
+        "__init__",
+        "forward",
+        "SimpleNodeTransformer",
+        "__init__",
+        "forward",
+        "_q_fn",
+        "_k_fn",
+        "_chunk_fn"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "research/lb897_out2/tracking_repo/src/biohub_tracking/models/temporal_unet.py",
+      "bytes": 5112,
+      "sha256": "d809c35d42f504161074ddeaaa7aee5b407e5bca7f9b4e1d5f9b2ff345666cac",
+      "line_count": 142,
+      "keyword_counts": {
+        "attention": 6,
+        "unet": 1,
+        "train": 2
+      },
+      "symbols": [
+        "_conv_block",
+        "_TemporalAttention",
+        "__init__",
+        "forward",
+        "TemporalUNet3D",
+        "__init__",
+        "_run",
+        "forward"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "research/pilkwang_graph/biohub-cell-tracking-learned-graph-w-gap-recovery.ipynb",
+      "bytes": 83640,
+      "sha256": "5d616f969bed8800076b9213f39c4f89791fc9855a0c65efc626bf0b740b4c42",
+      "line_count": 1,
+      "keyword_counts": {
+        "detect": 10,
+        "track": 45,
+        "link": 74,
+        "division": 46,
+        "assign": 6,
+        "hungarian": 1,
+        "linear_sum_assignment": 3,
+        "transformer": 8,
+        "attention": 4,
+        "unet": 16,
+        "geff": 25,
+        "zarr": 24,
+        "submission": 16,
+        "csv": 13,
+        "sparse": 3,
+        "train": 6,
+        "infer": 7,
+        "predict": 26,
+        "prune": 7,
+        "ilp": 41
+      },
+      "notebook": {
+        "cell_count": 11,
+        "code_cell_count": 5,
+        "markdown_cell_count": 6,
+        "output_cell_count": 0,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "ed005222d5cdb4803d512a46f3776f16abfd35f3feb855912b9b3aec26e09ddc",
+          "907547f8b7ee1f6d67cc273a63cd62e540e83703304f2adb404980938fd3e285",
+          "ef17c7c4404ac416dec8235bb6107fd9651014f22651acfdd6c1dc9a4921a5bc",
+          "ab68274c3af3181a9851529e2fd96ef291f5dc49db9ad09b241b7c8d8582b77e",
+          "f5192bdbd4b3a9643cfb3be19a02cdb9347b07272d1585508f874669c126aac2"
+        ]
+      },
+      "category": "data_io"
+    },
+    {
+      "path": "research/rule857/lb-0-857-rule-based-v14.ipynb",
+      "bytes": 41867,
+      "sha256": "c174e372d91fc3a6baf0dbae78ca228af64ba9b1774b21c71849f5ba2f5b9298",
+      "line_count": 1,
+      "keyword_counts": {
+        "detect": 11,
+        "track": 25,
+        "link": 29,
+        "division": 14,
+        "lineage": 1,
+        "assign": 9,
+        "hungarian": 1,
+        "linear_sum_assignment": 8,
+        "unet": 1,
+        "geff": 8,
+        "zarr": 18,
+        "jaccard": 16,
+        "submission": 4,
+        "csv": 2,
+        "sparse": 1,
+        "train": 1,
+        "predict": 4,
+        "prune": 4
+      },
+      "notebook": {
+        "cell_count": 2,
+        "code_cell_count": 1,
+        "markdown_cell_count": 1,
+        "output_cell_count": 0,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "ecfd0802420419eaff29386ef1c9a73a8b76812f73eb3db860a3c77864038d25"
+        ]
+      },
+      "category": "relevant_source"
+    },
+    {
+      "path": "research/support_pack_meta/ARTIFACT_MANIFEST.json",
+      "bytes": 4376,
+      "sha256": "bc20f1f04cfb682af3b27a836ce9a57f44a2fe27508dc59039200b2a23188103",
+      "line_count": 133,
+      "keyword_counts": {
+        "detect": 3,
+        "track": 1,
+        "transformer": 6,
+        "unet": 10,
+        "zarr": 1,
+        "submission": 1,
+        "csv": 3,
+        "sparse": 1,
+        "train": 4,
+        "infer": 1,
+        "predict": 2,
+        "ilp": 1
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "research/support_pack_meta/kaggle_dependency_install_command.txt",
+      "bytes": 119,
+      "sha256": "91af38b05a2f70ff62424a1ce0cc885f88b0e481b0f67b45ed90c9469a14d770",
+      "line_count": 2,
+      "keyword_counts": {
+        "track": 1,
+        "geff": 1,
+        "zarr": 1,
+        "ilp": 1
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "research/support_pack_meta/requirements-unet-ilp-kaggle-predownload.txt",
+      "bytes": 439,
+      "sha256": "6273c02435d1c14800012ce083b0f5e8c7487670de335ab04282be190aded474",
+      "line_count": 46,
+      "keyword_counts": {
+        "track": 1,
+        "geff": 2,
+        "zarr": 1,
+        "ilp": 1
+      },
+      "symbols": [],
+      "category": "dependency"
+    },
+    {
+      "path": "scripts/download_data.py",
+      "bytes": 1980,
+      "sha256": "933da118ea13c7889ac20726a200b8e3f5a5d473c4961092b66665ed9e98e042",
+      "line_count": 64,
+      "keyword_counts": {
+        "track": 1,
+        "link": 1
+      },
+      "symbols": [
+        "main"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "scripts/eval_detection.py",
+      "bytes": 6128,
+      "sha256": "6403f0a5397ab9bf01313207da403483269de5e51f0b5860e37184dabec1e7a1",
+      "line_count": 145,
+      "keyword_counts": {
+        "detect": 23,
+        "track": 7,
+        "link": 1,
+        "unet": 8,
+        "geff": 2,
+        "zarr": 7,
+        "sparse": 2,
+        "train": 7,
+        "predict": 8
+      },
+      "symbols": [
+        "_blob_predict",
+        "main",
+        "predict"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "scripts/make_submission.py",
+      "bytes": 852,
+      "sha256": "97e4dd73ee68e392b59796dacc1add214684b9a10d19943da9442e7a7ecb5bfd",
+      "line_count": 31,
+      "keyword_counts": {
+        "track": 2,
+        "geff": 6,
+        "submission": 8,
+        "csv": 8,
+        "predict": 3
+      },
+      "symbols": [
+        "main"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "scripts/run_eda.py",
+      "bytes": 2014,
+      "sha256": "34f64af311b11db38ace742144d80cf59cda91cd54bcb615eabdee8d8a1c0588",
+      "line_count": 58,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 3,
+        "link": 1,
+        "division": 2,
+        "geff": 1,
+        "csv": 10,
+        "train": 4
+      },
+      "symbols": [
+        "main"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "scripts/train_all.py",
+      "bytes": 4560,
+      "sha256": "fe52ab5c9169dcdab0223e3373204c009afbc3878d85b08e5a9057327153de58",
+      "line_count": 101,
+      "keyword_counts": {
+        "detect": 4,
+        "track": 2,
+        "unet": 1,
+        "submission": 1,
+        "train": 15,
+        "infer": 1,
+        "evaluate": 1
+      },
+      "symbols": [
+        "main"
+      ],
+      "category": "training"
+    },
+    {
+      "path": "src/biohub_tracking/__init__.py",
+      "bytes": 440,
+      "sha256": "8d32d15069d1e9d528f943f0140185132638e7c820641322c43b70c288a54aa2",
+      "line_count": 13,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 2,
+        "link": 1
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "src/biohub_tracking/_graph_eval.py",
+      "bytes": 4610,
+      "sha256": "caf8821229521181c25595d1eae167967c09c8c1a4f95ab3a5be65a5d022e574",
+      "line_count": 127,
+      "keyword_counts": {
+        "track": 7,
+        "division": 11,
+        "predict": 1,
+        "evaluate": 5
+      },
+      "symbols": [
+        "evaluate_graph_pair",
+        "_try_official",
+        "_local_evaluate",
+        "_matched_edge_frame"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "src/biohub_tracking/detection/__init__.py",
+      "bytes": 1563,
+      "sha256": "aef4c3f4c0dc2ee24ba571e4153ef7d0c90ebbe8b5d56097d009847205a90712",
+      "line_count": 52,
+      "keyword_counts": {
+        "detect": 11,
+        "track": 2,
+        "link": 2,
+        "sparse": 1,
+        "train": 5,
+        "predict": 3
+      },
+      "symbols": [
+        "__getattr__"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/biohub_tracking/detection/blob.py",
+      "bytes": 7931,
+      "sha256": "b9e95963fca197a6944c4712a6f762ee85a482a63d52213a8a7a1fcc73416f29",
+      "line_count": 222,
+      "keyword_counts": {
+        "detect": 23,
+        "track": 2,
+        "predict": 1
+      },
+      "symbols": [
+        "quantile_normalize",
+        "nms_3d",
+        "detect_peaks_frame",
+        "detect_peaks",
+        "detect_blobs_frame",
+        "detect_blobs"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/biohub_tracking/detection/eval.py",
+      "bytes": 6692,
+      "sha256": "13178b344d80993bd3d9b1d99b7f74efd20ef2426580c68280260047a71af52b",
+      "line_count": 163,
+      "keyword_counts": {
+        "detect": 20,
+        "track": 2,
+        "link": 2,
+        "assign": 5,
+        "linear_sum_assignment": 2,
+        "jaccard": 2,
+        "sparse": 1,
+        "train": 3,
+        "predict": 7
+      },
+      "symbols": [
+        "DetCounts",
+        "__add__",
+        "precision",
+        "recall",
+        "f1",
+        "pred_per_gt",
+        "as_row",
+        "match_frame",
+        "score_video",
+        "summarise_by_embryo"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "src/biohub_tracking/eda.py",
+      "bytes": 3882,
+      "sha256": "ef8a6025abb17c750c32c82d9016a6c8162d2e1c33596114b06da8adaa6b791e",
+      "line_count": 110,
+      "keyword_counts": {
+        "detect": 3,
+        "track": 3,
+        "link": 3,
+        "division": 6
+      },
+      "symbols": [
+        "VideoStats",
+        "analyze_graph",
+        "_within_frame_nn_spacings",
+        "_edge_displacements",
+        "_median",
+        "_pct"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/biohub_tracking/linking/__init__.py",
+      "bytes": 1020,
+      "sha256": "0ad238917845469985adbf0efd7b290d49951e11a2bf424e6673b47ea78a3d3f",
+      "line_count": 22,
+      "keyword_counts": {
+        "track": 9,
+        "link": 14,
+        "division": 2,
+        "assign": 2,
+        "flow": 1
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "src/biohub_tracking/linking/nn.py",
+      "bytes": 2484,
+      "sha256": "0eb1cd0827c6ca8871a2b435de81f2c4c057799f435916dfe7e54bf5e75e6bcc",
+      "line_count": 68,
+      "keyword_counts": {
+        "track": 4,
+        "link": 5,
+        "division": 1
+      },
+      "symbols": [
+        "_greedy_match",
+        "link_nearest_neighbor"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/biohub_tracking/track_graph.py",
+      "bytes": 2275,
+      "sha256": "5f54aa5057b3bf1ba48b6946972bddf5037a3597d5fc8e8a6e2d881139d5bde8",
+      "line_count": 66,
+      "keyword_counts": {
+        "detect": 2,
+        "track": 10,
+        "link": 2,
+        "division": 1,
+        "assign": 4,
+        "submission": 3
+      },
+      "symbols": [
+        "TrackGraph",
+        "__post_init__",
+        "num_nodes",
+        "num_edges",
+        "to_tracksdata"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/test_augmentation.py",
+      "bytes": 3102,
+      "sha256": "664aec9fe56dc689f3e3cfe1d77149d7a92a22a91f1cfebfc7c44f9e4e56f9af",
+      "line_count": 78,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 1,
+        "train": 1
+      },
+      "symbols": [
+        "_geometry_only_cfg",
+        "test_geometric_augmentation_keeps_centroid_registered",
+        "test_augment_disabled_is_noop",
+        "test_rot90_skipped_on_non_square_tiles",
+        "test_intensity_augmentation_stays_nonnegative"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/test_detection_eval.py",
+      "bytes": 2828,
+      "sha256": "0c611ad2fbe6b99e9dac91068d80e9370f9f7160db4ebc0675f66f4b8feb2eed",
+      "line_count": 76,
+      "keyword_counts": {
+        "detect": 3,
+        "track": 2,
+        "link": 1,
+        "assign": 2,
+        "predict": 3
+      },
+      "symbols": [
+        "test_detcounts_ratios",
+        "test_match_frame_perfect_and_missing",
+        "test_match_frame_threshold_boundary",
+        "test_match_frame_assignment_avoids_greedy_mistake",
+        "test_score_video_aggregates_over_frames",
+        "test_summarise_by_embryo_micro_averages"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "tests/test_heatmap.py",
+      "bytes": 6364,
+      "sha256": "2272bebebb4afbbb3f110848af19e97203e428f0cbf29de8a75be217ba6cc93b",
+      "line_count": 175,
+      "keyword_counts": {
+        "detect": 3,
+        "track": 2,
+        "unet": 1,
+        "train": 6,
+        "predict": 2
+      },
+      "symbols": [
+        "_fake_sources",
+        "test_embryo_id_takes_prefix_before_first_underscore",
+        "test_group_folds_never_split_an_embryo_across_train_and_val",
+        "test_group_folds_caps_folds_at_number_of_embryos",
+        "test_group_folds_balances_video_counts_largest_embryo_first",
+        "_blob_volume",
+        "test_build_target_heatmap_peaks_and_mask",
+        "test_build_target_heatmap_empty",
+        "test_unet_forward_shape_and_range",
+        "test_masked_loss_ignores_unsupervised_voxels",
+        "test_overfit_single_volume_then_recover_peak",
+        "test_predict_volume_tiling_matches_shape"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/test_metrics.py",
+      "bytes": 3957,
+      "sha256": "18e0541562c04e64ac00648cc80f6a85292ae741e57f3b54dfa4ed8db278f302",
+      "line_count": 111,
+      "keyword_counts": {
+        "track": 3,
+        "division": 12,
+        "jaccard": 22,
+        "predict": 3
+      },
+      "symbols": [
+        "test_jaccard_basic",
+        "test_jaccard_empty_is_nan",
+        "test_adjusted_penalizes_overprediction",
+        "test_adjusted_rewards_underprediction_up_to_boost",
+        "test_adjusted_clamped_at_zero",
+        "test_adjusted_nan_propagates",
+        "test_combined_score_with_divisions",
+        "test_combined_score_drops_nan_division",
+        "test_per_sample_metrics_end_to_end",
+        "test_per_sample_nan_when_true_count_missing",
+        "test_summarise_single_video",
+        "test_summarise_micro_averages_counts",
+        "test_summarise_drops_division_when_absent",
+        "test_summarise_empty"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "bytes": 6764,
+      "sha256": "f1a80531db9a1dd1c6a1e0a228eaaf0bb35b994cf12265fa6d8588849810697a",
+      "line_count": 168,
+      "keyword_counts": {
+        "detect": 7,
+        "track": 20,
+        "link": 14,
+        "submission": 12,
+        "csv": 8,
+        "postprocess": 1,
+        "prune": 3
+      },
+      "symbols": [
+        "_blob_volume",
+        "test_detect_peaks_recovers_centroids",
+        "test_nms_suppresses_close_peaks",
+        "test_link_lap_tracks_moving_blob",
+        "test_link_lap_resolves_two_cells_without_crossing",
+        "test_link_lap_gate_blocks_far_links",
+        "test_prune_isolated_drops_unlinked_nodes_and_remaps",
+        "test_gap_close_bridges_single_frame_dropout",
+        "test_gap_close_respects_gate",
+        "test_short_track_filter_removes_small_components",
+        "test_write_submission_schema",
+        "test_write_submission_global_id_across_datasets",
+        "test_empty_graph_writes_header_only"
+      ],
+      "category": "relevant_source"
+    }
+  ],
+  "target_paths_missing": [],
+  "read_errors": [],
+  "checkout_exit": 0,
+  "checkout_stderr_excerpt": "",
+  "checkout_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "license": "MIT",
+  "categories_observed": [
+    "assignment",
+    "data_io",
+    "data_loader",
+    "dependency",
+    "detection",
+    "evaluation",
+    "inference",
+    "license",
+    "optimization",
+    "pipeline",
+    "postprocessing",
+    "readme",
+    "relevant_source",
+    "submission_conversion",
+    "temporal_linking",
+    "training"
+  ],
+  "categories_not_present_in_selected_files": [
+    "division",
+    "model"
+  ],
+  "category_coverage": {
+    "data_io": {
+      "status": "READ",
+      "paths": [
+        "src/biohub_tracking/io.py",
+        "biohub.ipynb",
+        "kaggle_submit/kernel_lb897/biohub-lb897-repro.ipynb",
+        "kaggle_submit/kernel_test/biohub.ipynb",
+        "notebooks/biohub_baseline_submission.ipynb",
+        "research/lb897_out/tracking_repo/scripts/augmentations.py",
+        "research/lb897_out/tracking_repo/src/biohub_tracking/__init__.py",
+        "research/lb897_out/tracking_repo/src/biohub_tracking/img_proc.py",
+        "research/lb897_out/tracking_repo/src/biohub_tracking/io.py",
+        "research/lb897_out/tracking_repo/src/biohub_tracking/models/__init__.py",
+        "research/lb897_out/tracking_repo/src/biohub_tracking/models/simple_node_transformer.py",
+        "research/lb897_out/tracking_repo/src/biohub_tracking/models/temporal_unet.py",
+        "research/lb897_out2/tracking_repo/scripts/augmentations.py",
+        "research/lb897_out2/tracking_repo/src/biohub_tracking/__init__.py",
+        "research/lb897_out2/tracking_repo/src/biohub_tracking/img_proc.py",
+        "research/lb897_out2/tracking_repo/src/biohub_tracking/io.py",
+        "research/lb897_out2/tracking_repo/src/biohub_tracking/models/__init__.py",
+        "research/lb897_out2/tracking_repo/src/biohub_tracking/models/simple_node_transformer.py",
+        "research/lb897_out2/tracking_repo/src/biohub_tracking/models/temporal_unet.py",
+        "research/pilkwang_graph/biohub-cell-tracking-learned-graph-w-gap-recovery.ipynb",
+        "scripts/make_submission.py",
+        "src/biohub_tracking/__init__.py",
+        "src/biohub_tracking/detection/__init__.py",
+        "src/biohub_tracking/detection/blob.py",
+        "src/biohub_tracking/eda.py",
+        "src/biohub_tracking/linking/__init__.py",
+        "src/biohub_tracking/linking/nn.py",
+        "src/biohub_tracking/track_graph.py",
+        "tests/test_augmentation.py"
+      ]
+    },
+    "data_loader": {
+      "status": "READ",
+      "paths": [
+        "src/biohub_tracking/dataspec.py",
+        "kaggle_submit/kernel/kernel-metadata.json",
+        "kaggle_submit/kernel_lb897/kernel-metadata.json",
+        "kaggle_submit/kernel_test/kernel-metadata.json",
+        "kaggle_submit/upload_datasets.sh",
+        "research/lb897_out/tracking_repo/scripts/dataspec.py",
+        "research/lb897_out2/tracking_repo/scripts/dataspec.py",
+        "scripts/download_data.py"
+      ]
+    },
+    "dependency": {
+      "status": "READ",
+      "paths": [
+        "pyproject.toml",
+        "research/support_pack_meta/requirements-unet-ilp-kaggle-predownload.txt"
+      ]
+    },
+    "division": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "evaluation": {
+      "status": "READ",
+      "paths": [
+        "scripts/evaluate.py",
+        "src/biohub_tracking/metrics.py",
+        "research/lb897_out/tracking_repo/scripts/evaluate.py",
+        "research/lb897_out/tracking_repo/src/biohub_tracking/division_metrics.py",
+        "research/lb897_out/tracking_repo/src/biohub_tracking/metrics.py",
+        "research/lb897_out2/tracking_repo/scripts/evaluate.py",
+        "research/lb897_out2/tracking_repo/src/biohub_tracking/division_metrics.py",
+        "research/lb897_out2/tracking_repo/src/biohub_tracking/metrics.py",
+        "scripts/eval_detection.py",
+        "src/biohub_tracking/_graph_eval.py",
+        "src/biohub_tracking/detection/eval.py",
+        "tests/test_detection_eval.py",
+        "tests/test_metrics.py"
+      ]
+    },
+    "inference": {
+      "status": "READ",
+      "paths": [
+        "scripts/predict.py",
+        "research/lb897_out/tracking_repo/scripts/predict_unet_transformer.py",
+        "research/lb897_out2/tracking_repo/scripts/predict_unet_transformer.py"
+      ]
+    },
+    "license": {
+      "status": "READ",
+      "paths": [
+        "LICENSE"
+      ]
+    },
+    "model": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "optimization": {
+      "status": "READ",
+      "paths": [
+        "src/biohub_tracking/linking/ultrack_linker.py"
+      ]
+    },
+    "postprocessing": {
+      "status": "READ",
+      "paths": [
+        "src/biohub_tracking/linking/postprocess.py"
+      ]
+    },
+    "readme": {
+      "status": "READ",
+      "paths": [
+        "README.md",
+        "kaggle_submit/README.md"
+      ]
+    },
+    "submission_conversion": {
+      "status": "READ",
+      "paths": [
+        "src/biohub_tracking/submission.py",
+        "kaggle_submit/build_wheelhouse.sh",
+        "kaggle_submit/config.sh",
+        "kaggle_submit/push_and_submit.sh",
+        "kaggle_submit/stage_model.sh",
+        "research/lb897_out2/run_stats.csv"
+      ]
+    },
+    "temporal_linking": {
+      "status": "READ",
+      "paths": [
+        "research/lb897_out/tracking_repo/kaggle_test_splits_50ep.json",
+        "research/lb897_out2/tracking_repo/kaggle_test_splits_50ep.json"
+      ]
+    },
+    "training": {
+      "status": "READ",
+      "paths": [
+        "scripts/train_detection.py",
+        "research/lb897_out/tracking_repo/scripts/train_unet_transformer.py",
+        "research/lb897_out2/tracking_repo/scripts/train_unet_transformer.py",
+        "scripts/train_all.py"
+      ]
+    }
+  },
+  "selection_policy": {
+    "included": "all human-readable code, notebooks, documentation, dependency/runtime configuration, schemas, tests, and license/notices at the fixed commit",
+    "excluded": "repository-hosting automation, generated/cache directories, and binary/non-source artefacts",
+    "excluded_path_count": 5,
+    "excluded_paths": [
+      {
+        "path": ".gitignore",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "experiments/log.html",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "notebooks/.gitkeep",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "research/lb897_out/biohub-lb897-repro.log",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "research/lb897_out2/biohub-lb897-repro.log",
+        "reason": "non_text_or_non_source_extension"
+      }
+    ]
+  },
+  "scope_note": "Full bytes were read for every listed relevant-source path; only hashes, structure, notebook-cell hashes, and symbol/keyword summaries are persisted. The complete tree and per-path exclusions preserve the coverage boundary."
+}

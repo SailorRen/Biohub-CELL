@@ -1,0 +1,247 @@
+[
+  {
+    "name": ".gitignore",
+    "size": 206,
+    "creationDate": "2026-08-31T19:06:10.297000"
+  },
+  {
+    "name": "LICENSE",
+    "size": 1507,
+    "creationDate": "2026-08-31T19:06:10.317000"
+  },
+  {
+    "name": "README.md",
+    "size": 7254,
+    "creationDate": "2026-08-31T19:06:10.112000"
+  },
+  {
+    "name": "assets/demo.gif",
+    "size": 5244279,
+    "creationDate": "2026-08-31T19:06:10.163000"
+  },
+  {
+    "name": "assets/division.svg",
+    "size": 57747,
+    "creationDate": "2026-08-31T19:06:10.116000"
+  },
+  {
+    "name": "assets/figure.svg",
+    "size": 55844,
+    "creationDate": "2026-08-31T19:06:10.113000"
+  },
+  {
+    "name": "assets/late_division.svg",
+    "size": 51381,
+    "creationDate": "2026-08-31T19:06:10.113000"
+  },
+  {
+    "name": "metrics.md",
+    "size": 6942,
+    "creationDate": "2026-08-31T19:06:10.305000"
+  },
+  {
+    "name": "pyproject.toml",
+    "size": 1440,
+    "creationDate": "2026-08-31T19:06:10.323000"
+  },
+  {
+    "name": "scripts/augmentations.py",
+    "size": 1876,
+    "creationDate": "2026-08-31T19:06:10.115000"
+  },
+  {
+    "name": "scripts/csv_to_geffs.py",
+    "size": 2887,
+    "creationDate": "2026-08-31T19:06:10.131000"
+  },
+  {
+    "name": "scripts/dataspec.py",
+    "size": 1215,
+    "creationDate": "2026-08-31T19:06:10.121000"
+  },
+  {
+    "name": "scripts/evaluate.py",
+    "size": 5219,
+    "creationDate": "2026-08-31T19:06:10.118000"
+  },
+  {
+    "name": "scripts/geffs_to_csv.py",
+    "size": 3131,
+    "creationDate": "2026-08-31T19:06:10.133000"
+  },
+  {
+    "name": "scripts/predict_unet_transformer.py",
+    "size": 26011,
+    "creationDate": "2026-08-31T19:06:10.112000"
+  },
+  {
+    "name": "scripts/train_unet_transformer.py",
+    "size": 50229,
+    "creationDate": "2026-08-31T19:06:10.113000"
+  },
+  {
+    "name": "src/tracking_cellmot/__init__.py",
+    "size": 79,
+    "creationDate": "2026-08-31T19:06:10.188000"
+  },
+  {
+    "name": "src/tracking_cellmot/division_metrics.py",
+    "size": 20488,
+    "creationDate": "2026-08-31T19:06:10.166000"
+  },
+  {
+    "name": "src/tracking_cellmot/img_proc.py",
+    "size": 5319,
+    "creationDate": "2026-08-31T19:06:10.163000"
+  },
+  {
+    "name": "src/tracking_cellmot/io.py",
+    "size": 13485,
+    "creationDate": "2026-08-31T19:06:10.217000"
+  },
+  {
+    "name": "src/tracking_cellmot/metrics.py",
+    "size": 19602,
+    "creationDate": "2026-08-31T19:06:10.200000"
+  },
+  {
+    "name": "src/tracking_cellmot/models/__init__.py",
+    "size": 248,
+    "creationDate": "2026-08-31T19:06:10.176000"
+  },
+  {
+    "name": "src/tracking_cellmot/models/simple_node_transformer.py",
+    "size": 7229,
+    "creationDate": "2026-08-31T19:06:10.210000"
+  },
+  {
+    "name": "src/tracking_cellmot/models/temporal_unet.py",
+    "size": 5112,
+    "creationDate": "2026-08-31T19:06:10.184000"
+  },
+  {
+    "name": "tests/__init__.py",
+    "size": 0,
+    "creationDate": "2026-08-31T19:06:10.258000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/3_division.json",
+    "size": 1042,
+    "creationDate": "2026-08-31T19:06:10.191000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/complex.json",
+    "size": 3133,
+    "creationDate": "2026-08-31T19:06:10.190000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/complex2.json",
+    "size": 3131,
+    "creationDate": "2026-08-31T19:06:10.202000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/division.json",
+    "size": 1839,
+    "creationDate": "2026-08-31T19:06:10.187000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/division_at_end.json",
+    "size": 1968,
+    "creationDate": "2026-08-31T19:06:10.204000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/division_node_stage.json",
+    "size": 2038,
+    "creationDate": "2026-08-31T19:06:10.220000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/division_test.json",
+    "size": 1852,
+    "creationDate": "2026-08-31T19:06:10.195000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/duplicated_division.json",
+    "size": 2080,
+    "creationDate": "2026-08-31T19:06:10.239000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/edges_wrong_division_ok.json",
+    "size": 2075,
+    "creationDate": "2026-08-31T19:06:10.246000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/late_division.json",
+    "size": 1681,
+    "creationDate": "2026-08-31T19:06:10.243000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/merge_delay.json",
+    "size": 1576,
+    "creationDate": "2026-08-31T19:06:10.258000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/node_conflict.json",
+    "size": 2511,
+    "creationDate": "2026-08-31T19:06:10.262000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/simple.json",
+    "size": 2030,
+    "creationDate": "2026-08-31T19:06:10.240000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/successive_div.json",
+    "size": 1829,
+    "creationDate": "2026-08-31T19:06:10.249000"
+  },
+  {
+    "name": "tests/conftest.py",
+    "size": 3523,
+    "creationDate": "2026-08-31T19:06:10.257000"
+  },
+  {
+    "name": "tests/test_division_metrics.py",
+    "size": 39456,
+    "creationDate": "2026-08-31T19:06:10.258000"
+  },
+  {
+    "name": "tests/test_division_sandbox_examples.py",
+    "size": 11437,
+    "creationDate": "2026-08-31T19:06:10.259000"
+  },
+  {
+    "name": "tests/test_img_proc.py",
+    "size": 3207,
+    "creationDate": "2026-08-31T19:06:10.255000"
+  },
+  {
+    "name": "tests/test_io.py",
+    "size": 4022,
+    "creationDate": "2026-08-31T19:06:10.292000"
+  },
+  {
+    "name": "tests/test_metrics.py",
+    "size": 49117,
+    "creationDate": "2026-08-31T19:06:10.293000"
+  },
+  {
+    "name": "tests/test_training_scripts.py",
+    "size": 5017,
+    "creationDate": "2026-08-31T19:06:10.297000"
+  },
+  {
+    "name": "visualize/visualize_ground_truth.py",
+    "size": 2492,
+    "creationDate": "2026-08-31T19:06:10.304000"
+  },
+  {
+    "name": "visualize/visualize_predictions.py",
+    "size": 11517,
+    "creationDate": "2026-08-31T19:06:10.302000"
+  },
+  {
+    "name": "visualize/visualize_utils.py",
+    "size": 3356,
+    "creationDate": "2026-08-31T19:06:10.293000"
+  }
+]

@@ -1,0 +1,1259 @@
+{
+  "schema_version": "1.0",
+  "source_id": "GH-DEEP-live-image-tracking-tools__geff-java",
+  "repo": "live-image-tracking-tools/geff-java",
+  "url": "https://github.com/live-image-tracking-tools/geff-java",
+  "relation_to_competition": "geff_cross_language_implementation",
+  "access_time_utc": "2026-09-03T08:47:13.879739+00:00",
+  "fixed_branch": "main",
+  "fixed_commit_sha": "2e071f6295c8fe488182d15b7b80c0e366d9c9f4",
+  "latest_commit_date": "2026-07-19T16:45:20+02:00",
+  "tree_file_count": 106,
+  "tree_bytes": 11726,
+  "tree_sha256": "d973808165265b2bf2f78ae3d5957a8852686640ea7ea031410e44dc401df9ff",
+  "tree_evidence_path": "staging/github_ecosystem/evidence/live-image-tracking-tools__geff-java/tree.txt",
+  "read_status": "FULL_RELEVANT_REPO_SOURCE_READ",
+  "files_requested": 31,
+  "relevant_source_paths_selected": 31,
+  "relevant_source_selection_coverage": 1.0,
+  "files_actually_read_count": 31,
+  "files_actually_read": [
+    {
+      "path": ".pre-commit-ci.yaml",
+      "bytes": 18,
+      "sha256": "c513a62440445a1c76bd8f5c4ee0f27ecb24c85e5438e86bbf3c7732bd1b9067",
+      "line_count": 4,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "bytes": 11,
+      "sha256": "75e9d41dd60fdcd482780ad0af82cc059dcbf5bbe6bd8ba5ec8470b97b641116",
+      "line_count": 3,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 1306,
+      "sha256": "ce7888f3145aeaa68c1b6d3575dd200c3e3bc10df38554f55ecd3fe7522af328",
+      "line_count": 25,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "license"
+    },
+    {
+      "path": "README.md",
+      "bytes": 14268,
+      "sha256": "5b6122b498ccdc86109db1f1c9af7df7a0aed2b9f005cbcdc3edd3935ec638fa",
+      "line_count": 296,
+      "keyword_counts": {
+        "segment": 3,
+        "track": 34,
+        "lineage": 1,
+        "flow": 2,
+        "geff": 99,
+        "zarr": 37,
+        "infer": 1
+      },
+      "symbols": [],
+      "headings": [
+        "# GEFF Java",
+        "## Features",
+        "## Core Classes",
+        "### GeffNode",
+        "### GeffEdge",
+        "### GeffAxis",
+        "### GeffMetadata",
+        "### PropMetadata",
+        "### VarlengthProperty",
+        "### GeffSerializableVertex",
+        "### Geff",
+        "## Requirements",
+        "## Dependencies",
+        "## Usage Example",
+        "## Building",
+        "## Cross-Language Tests",
+        "## Data Format",
+        "## Technical Information",
+        "### Maintainer",
+        "### Contributors",
+        "### License",
+        "### Contribute Code or Provide Feedback",
+        "### Contribute Documentation",
+        "## Acknowledgements"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "cross-language-tests/README.md",
+      "bytes": 2952,
+      "sha256": "f22a0985212db88a93f02d0c4c32242c50c03d7f5cbac6d3db839bf758430b6c",
+      "line_count": 84,
+      "keyword_counts": {
+        "track": 3,
+        "geff": 21,
+        "zarr": 2
+      },
+      "symbols": [],
+      "headings": [
+        "# Cross-Language Round-Trip Tests",
+        "## How It Works",
+        "## Prerequisites",
+        "### Java",
+        "# Build the Java project (from repo root)",
+        "### Python",
+        "#### Setup Option 1: Using `uv sync` (recommended)",
+        "#### Setup Option 2: Run directly (no environment setup needed)",
+        "## Running the Tests",
+        "## Test Data Generation",
+        "## Test Cases",
+        "## Output"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "cross-language-tests/pyproject.toml",
+      "bytes": 250,
+      "sha256": "9993eafa39a1297c28a22f72ac8ba40fa28bdc5111e6da996956efbbce7c3f01",
+      "line_count": 13,
+      "keyword_counts": {
+        "geff": 3,
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "dependency"
+    },
+    {
+      "path": "cross-language-tests/run_tests.py",
+      "bytes": 17062,
+      "sha256": "d23b1465421543c063e8ab01c5ef7cf4a725801683931787caa126614eed2449",
+      "line_count": 532,
+      "keyword_counts": {
+        "geff": 87,
+        "zarr": 17
+      },
+      "symbols": [
+        "get_blosc_lib_path",
+        "get_java_classpath",
+        "run_java_roundtrip",
+        "check_equiv_with_tolerances",
+        "test_basic_3d_geff",
+        "test_basic_2d_geff",
+        "test_with_varlength",
+        "test_with_missing",
+        "test_with_string_props",
+        "test_with_covariance",
+        "main"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "doc/IMPLEMENTATION_PROGRESS.md",
+      "bytes": 4371,
+      "sha256": "c961ef79714567f4f735cfaaa32b64bea30372e335a0b8239b5fec30c59e831d",
+      "line_count": 100,
+      "keyword_counts": {
+        "track": 8,
+        "geff": 18,
+        "sparse": 2
+      },
+      "symbols": [],
+      "headings": [
+        "# GEFF v1 Spec Compatibility Implementation Progress",
+        "## Completed Tasks ✅",
+        "### Critical Issues (FIXED)",
+        "### Medium Priority - Graceful Handling (COMPLETED)",
+        "### Utility Improvements",
+        "## Known Limitations (Documentation Only)",
+        "### Issue #2: Axis coordinate transformation fields",
+        "### Issue #5: Covariance format mismatch",
+        "## Key Changes Made",
+        "## Backward Compatibility",
+        "## Test Status",
+        "## Next Steps (Out of Scope)"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "doc/V1_COMPATIBILITY_SUMMARY.md",
+      "bytes": 8341,
+      "sha256": "19c39ddd5ee4dfc5f6829204e0e41c6168eef2ae6b955c4899018311f887dd80",
+      "line_count": 204,
+      "keyword_counts": {
+        "detect": 2,
+        "track": 8,
+        "geff": 52,
+        "zarr": 3,
+        "sparse": 3,
+        "infer": 2
+      },
+      "symbols": [],
+      "headings": [
+        "# GEFF v1 Spec Compatibility - Implementation Complete ✅",
+        "## Summary",
+        "## Implementation Overview",
+        "### Critical Fixes (Priority: HIGH) ✅",
+        "#### 1. Required Metadata Fields - FIXED",
+        "#### 2. Hardcoded Axis Names - FIXED",
+        "#### 3. Missing Channel Axis Type - FIXED",
+        "#### 4. Hardcoded Track ID Path - FIXED",
+        "#### 5. Version Checking Pattern - FIXED",
+        "### Graceful Handling Features (Priority: MEDIUM) ✅",
+        "#### 6. Variable-Length Properties - FULLY IMPLEMENTED (Read & Write)",
+        "#### 7. String/Bytes Properties - IMPLEMENTED",
+        "#### 8. Missing Value Arrays - IMPLEMENTED",
+        "### Known Limitations (Documentation)",
+        "#### Axis Coordinate Transforms (Issue #2)",
+        "#### Covariance Format (Issue #5)",
+        "## Code Quality & Testing",
+        "### Test Results",
+        "### Backward Compatibility",
+        "## Files Added/Modified",
+        "### New Files",
+        "### Modified Files",
+        "## Interoperability Status",
+        "### Python ↔ Java Compatibility",
+        "### Next Steps for Testing",
+        "## Development Notes",
+        "### Design Decisions",
+        "### Code Patterns Used",
+        "## Conclusion"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "doc/V1_SPEC_COMPATIBILITY_PLAN.md",
+      "bytes": 11302,
+      "sha256": "5acce3ce6ede146e7dac08cbf203bd415e225c59723bd754d4209fc412c932a6",
+      "line_count": 245,
+      "keyword_counts": {
+        "segment": 1,
+        "track": 13,
+        "link": 1,
+        "lineage": 1,
+        "geff": 27,
+        "zarr": 6,
+        "sparse": 1,
+        "infer": 2
+      },
+      "symbols": [],
+      "headings": [
+        "# GEFF v1 Spec Compatibility Plan",
+        "## Action Summary",
+        "## Incompatibilities",
+        "### 1. Missing Required Metadata Fields (CRITICAL)",
+        "### 2. Axis: Missing `scale`, `scaled_unit`, `offset` Fields (MEDIUM)",
+        "### 3. Axis: Hardcoded Names Validation (CRITICAL)",
+        "### 4. Axis: Missing `channel` Type (LOW)",
+        "### 5. Covariance Storage Format (MEDIUM)",
+        "### 6. Property Paths: `track_id` vs Dynamic (MEDIUM)",
+        "## Missing Features",
+        "### Future Enhancements (no action needed now)",
+        "### Graceful Handling Needed (warn and skip, don't error)",
+        "#### 7. Variable-length Properties",
+        "#### 8. String Properties",
+        "#### 9. `missing` Arrays",
+        "### 10. Version Checking: Allowlist vs Pattern (LOW)",
+        "## Next Steps"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "doc/VARLENGTH_IMPLEMENTATION.md",
+      "bytes": 6741,
+      "sha256": "81e25dcc75d76613be7ebbfbf47bc2b03b7486af5744cff8aa24f340320385eb",
+      "line_count": 187,
+      "keyword_counts": {
+        "detect": 1,
+        "assign": 1,
+        "geff": 15,
+        "zarr": 7,
+        "infer": 3
+      },
+      "symbols": [],
+      "headings": [
+        "# Variable-Length Properties Implementation Summary",
+        "## Overview",
+        "## Files Created",
+        "### 1. VarlengthProperty.java",
+        "### 2. Test Suite",
+        "## Files Modified",
+        "### 1. GeffUtils.java",
+        "### 2. GeffNode.java",
+        "## Implementation Details",
+        "### Reading Varlength Properties",
+        "## Graceful Handling",
+        "## Testing",
+        "### Unit Tests (VarlengthPropertyTest)",
+        "### Integration Tests",
+        "## Status: Complete ✓ (Phases 1 & 2)",
+        "### Implemented Features",
+        "### Future Enhancements (Phase 3)",
+        "## Compatibility",
+        "## Writing Implementation Details (Phase 2)",
+        "### Methods Added to GeffUtils.java",
+        "### Integration with GeffNode.writeToZarr()",
+        "### Write Test Suite (VarlengthPropertyWriteTest)",
+        "## Next Steps Completed ✅"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "doc/release.md",
+      "bytes": 1601,
+      "sha256": "dc7abaf07c9aa3fca52d6216be7d6e555b7979b1655bb65fceee44a55a87b690",
+      "line_count": 29,
+      "keyword_counts": {
+        "track": 1,
+        "geff": 4
+      },
+      "symbols": [],
+      "headings": [
+        "# Release"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "imglib2-eclipse-mars-clean-up-formatter-style.xml",
+      "bytes": 37522,
+      "sha256": "5b15fb23c2ad4997f3bcd04643c0e88dfde31e02bcbda3521bcb4c2190c3dcce",
+      "line_count": 618,
+      "keyword_counts": {
+        "assign": 3
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "pom.xml",
+      "bytes": 8975,
+      "sha256": "90a6c76d64ab1c71d47b9f6d378e52454ee78f428a6dceac001e780cd01cff6b",
+      "line_count": 263,
+      "keyword_counts": {
+        "track": 9,
+        "geff": 15,
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "src/main/java/org/mastodon/geff/Geff.java",
+      "bytes": 5232,
+      "sha256": "5d3d97b15a4870b176fb4f5ff42945e37bbc79f51901840ccd9a3a3bcff0e74e",
+      "line_count": 161,
+      "keyword_counts": {
+        "track": 2,
+        "geff": 36,
+        "zarr": 16
+      },
+      "symbols": [
+        "Geff",
+        "String",
+        "main",
+        "GeffNode",
+        "GeffEdge",
+        "getMetadata"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/main/java/org/mastodon/geff/GeffAxis.java",
+      "bytes": 7622,
+      "sha256": "59606b32133bc89b38ec720066720c2eebeb28f5be7afa882fd7803e6ad08ddc",
+      "line_count": 316,
+      "keyword_counts": {
+        "geff": 25
+      },
+      "symbols": [
+        "GeffAxis",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "String",
+        "getName",
+        "setName",
+        "getType",
+        "setType",
+        "getUnit",
+        "setUnit",
+        "getMin",
+        "setMin",
+        "getMax",
+        "setMax",
+        "setBounds",
+        "hasBounds",
+        "getRange",
+        "validate",
+        "createTimeAxis",
+        "createSpaceAxis",
+        "createTimeAxis",
+        "createSpaceAxis",
+        "String",
+        "toString",
+        "equals",
+        "hashCode"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/main/java/org/mastodon/geff/GeffEdge.java",
+      "bytes": 22801,
+      "sha256": "076109aad06f3deae9c1a6b011153fb64e85126fd6c1bfa3fda35136c87a912b",
+      "line_count": 718,
+      "keyword_counts": {
+        "track": 1,
+        "link": 2,
+        "geff": 113,
+        "zarr": 59
+      },
+      "symbols": [
+        "GeffEdge",
+        "int",
+        "double",
+        "double",
+        "getId",
+        "setId",
+        "getSourceNodeId",
+        "setSourceNodeId",
+        "getTargetNodeId",
+        "setTargetNodeId",
+        "getScore",
+        "setScore",
+        "getDistance",
+        "setDistance",
+        "getProp",
+        "setProp",
+        "String",
+        "getVarlengthProperty",
+        "setVarlengthProperty",
+        "String",
+        "builder",
+        "Builder",
+        "setId",
+        "setSourceNodeId",
+        "setTargetNodeId",
+        "setScore",
+        "setDistance",
+        "build",
+        "GeffEdge",
+        "GeffEdge",
+        "GeffEdge",
+        "GeffEdge",
+        "GeffEdge",
+        "writeToZarr",
+        "writeToZarr",
+        "writeToZarr",
+        "writeToZarr",
+        "writeToZarr",
+        "writeToZarr",
+        "writeToN5",
+        "writeToN5",
+        "isValid",
+        "isSelfLoop",
+        "toString",
+        "equals",
+        "hashCode"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/main/java/org/mastodon/geff/GeffMetadata.java",
+      "bytes": 13099,
+      "sha256": "1866d72e411a4d7470f4784a774303b749f6822e1de4f9ab3d0dce38fd5ede56",
+      "line_count": 402,
+      "keyword_counts": {
+        "track": 28,
+        "geff": 149,
+        "zarr": 20
+      },
+      "symbols": [
+        "GeffMetadata",
+        "List",
+        "getGeffVersion",
+        "setGeffVersion",
+        "isDirected",
+        "setDirected",
+        "getGeffAxes",
+        "GeffAxis",
+        "setGeffAxes",
+        "setGeffAxes",
+        "String",
+        "setNodePropsMetadata",
+        "String",
+        "setEdgePropsMetadata",
+        "String",
+        "setTrackNodeProps",
+        "getAxisNameByType",
+        "getAxisNamesByType",
+        "validate",
+        "readFromZarr",
+        "readFromN5",
+        "writeToZarr",
+        "writeToN5",
+        "toString",
+        "equals",
+        "hashCode"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/main/java/org/mastodon/geff/GeffNode.java",
+      "bytes": 44131,
+      "sha256": "2c28c09d4df156ae32cb8ce1430d04cd433a708234ee0e089ecfa2605baa8027",
+      "line_count": 1402,
+      "keyword_counts": {
+        "segment": 31,
+        "track": 32,
+        "link": 7,
+        "geff": 139,
+        "zarr": 55,
+        "sparse": 1
+      },
+      "symbols": [
+        "GeffNode",
+        "double",
+        "double",
+        "double",
+        "getId",
+        "setId",
+        "getT",
+        "setT",
+        "getX",
+        "setX",
+        "getY",
+        "setY",
+        "getZ",
+        "setZ",
+        "getColor",
+        "setColor",
+        "getSegmentId",
+        "setSegmentId",
+        "getRadius",
+        "setRadius",
+        "getCovariance2d",
+        "setCovariance2d",
+        "getCovariance3d",
+        "setCovariance3d",
+        "getPolygonX",
+        "getPolygonY",
+        "setPolygonX",
+        "setPolygonY",
+        "getVarlengthProperty",
+        "setVarlengthProperty",
+        "String",
+        "getProp",
+        "setProp",
+        "String",
+        "getPosition",
+        "setPosition",
+        "builder",
+        "Builder",
+        "id",
+        "timepoint",
+        "x",
+        "y",
+        "z",
+        "color",
+        "segmentId",
+        "radius",
+        "covariance2d",
+        "covariance3d",
+        "polygonX",
+        "polygonY",
+        "build",
+        "GeffNode",
+        "GeffNode",
+        "GeffNode",
+        "writeToZarr",
+        "writeToZarr",
+        "writeToZarr",
+        "writeToZarr",
+        "writeToZarr",
+        "writeToN5",
+        "toString",
+        "equals",
+        "hashCode"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/main/java/org/mastodon/geff/GeffUtils.java",
+      "bytes": 42457,
+      "sha256": "49eaf272e232b1e38909bf7b714f784c8133f2cbff1a3aa4765efd5fcdc7c6ea",
+      "line_count": 1284,
+      "keyword_counts": {
+        "segment": 1,
+        "link": 1,
+        "geff": 7,
+        "zarr": 53,
+        "sparse": 2,
+        "infer": 3
+      },
+      "symbols": [
+        "GeffUtils",
+        "checkSupportedVersion",
+        "shouldSkipProperty",
+        "checkForMissingValues",
+        "computeFirstDimChunk",
+        "T",
+        "T",
+        "writeIntMatrix",
+        "T",
+        "T",
+        "readAsIntArray",
+        "readAsDoubleArray",
+        "FlattenedDoubles",
+        "readAsDoubleMatrix",
+        "FlattenedInts",
+        "readAsIntMatrix",
+        "convertToIntArray",
+        "convertToDoubleArray",
+        "verifyLength",
+        "verifyLength",
+        "verifyLength",
+        "verifyLength",
+        "write",
+        "readFully",
+        "readVarlengthProperty",
+        "writeVarlengthProperty",
+        "writeVarlengthProperty"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/main/java/org/mastodon/geff/PropMetadata.java",
+      "bytes": 3810,
+      "sha256": "0d2c905e387518a144b77e221e9ddc3c985e04d9ed85848727c72a99ac84572d",
+      "line_count": 161,
+      "keyword_counts": {
+        "geff": 4
+      },
+      "symbols": [
+        "PropMetadata",
+        "getIdentifier",
+        "setIdentifier",
+        "getDtype",
+        "setDtype",
+        "getVarlength",
+        "setVarlength",
+        "getUnit",
+        "setUnit",
+        "getName",
+        "setName",
+        "getDescription",
+        "setDescription",
+        "toString",
+        "equals",
+        "hashCode"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/main/java/org/mastodon/geff/RoundTripGeff.java",
+      "bytes": 3624,
+      "sha256": "6e6c403e5e46ba1614beb91aafbbfa7a55cc0f34cccf916cec0e32d4ef678968",
+      "line_count": 98,
+      "keyword_counts": {
+        "geff": 19,
+        "zarr": 8
+      },
+      "symbols": [
+        "RoundTripGeff",
+        "main"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/main/java/org/mastodon/geff/VarlengthProperty.java",
+      "bytes": 5671,
+      "sha256": "6ff8dd01722eb241ae52dcc18e7a821975dc335675a1f3b8cceafe7f641bbfa1",
+      "line_count": 208,
+      "keyword_counts": {
+        "geff": 3
+      },
+      "symbols": [
+        "VarlengthProperty",
+        "getName",
+        "getDtype",
+        "getData",
+        "getOffsets",
+        "getMissing",
+        "isMissing",
+        "getNodeData",
+        "toString",
+        "equals",
+        "hashCode"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/main/java/org/mastodon/geff/geom/GeffSerializableVertex.java",
+      "bytes": 1674,
+      "sha256": "59b59a3ca4c9340d31c2d9f4b2aad89d05507de410ecbbc9eb26a09389b88e92",
+      "line_count": 48,
+      "keyword_counts": {
+        "geff": 4
+      },
+      "symbols": [
+        "GeffSerializableVertex",
+        "getCoordinates"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/test/java/org/mastodon/geff/ChunkedWriteTest.java",
+      "bytes": 5033,
+      "sha256": "62e7c8b7c3d0331f66a9389b65adb34feb2fbee7de7f4c1c6c0140e5c7b4c5b1",
+      "line_count": 155,
+      "keyword_counts": {
+        "segment": 1,
+        "geff": 28,
+        "zarr": 6
+      },
+      "symbols": [
+        "ChunkedWriteTest",
+        "main"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/test/java/org/mastodon/geff/GeffAxisTest.java",
+      "bytes": 10891,
+      "sha256": "be9a1cde12360488086b478df940159fc9d9b78611536da953f1eeb5c35337d8",
+      "line_count": 292,
+      "keyword_counts": {
+        "geff": 112
+      },
+      "symbols": [
+        "GeffAxisTest"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/test/java/org/mastodon/geff/GeffCreateTest.java",
+      "bytes": 4549,
+      "sha256": "4069f865570a27094de2472b1823e6fd49fa9d0e82b359ac31b13ec540b44af6",
+      "line_count": 123,
+      "keyword_counts": {
+        "segment": 2,
+        "track": 6,
+        "geff": 41,
+        "zarr": 14
+      },
+      "symbols": [
+        "GeffCreateTest",
+        "main"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/test/java/org/mastodon/geff/GeffTest.java",
+      "bytes": 16107,
+      "sha256": "6a19575867d8876dd795a695a5f12886d12cea60273e2d7fa37c7b98f8be57f5",
+      "line_count": 501,
+      "keyword_counts": {
+        "segment": 8,
+        "track": 5,
+        "geff": 131,
+        "zarr": 24,
+        "ctc": 1
+      },
+      "symbols": [
+        "GeffTest"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/test/java/org/mastodon/geff/VarlengthPropertyTest.java",
+      "bytes": 5389,
+      "sha256": "5031331d9bc2b0b51391838d3fd07a0d82f85ce39e13d7a3ecbc714ce213366e",
+      "line_count": 174,
+      "keyword_counts": {
+        "geff": 2
+      },
+      "symbols": [
+        "VarlengthPropertyTest",
+        "setUp",
+        "tearDown",
+        "testBasicProperties",
+        "testMissingValues",
+        "testGetNodeData",
+        "testToString",
+        "testEquals",
+        "testHashCode",
+        "testGetNodeDataWithMissing",
+        "testGetNodeDataOutOfBounds"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/test/java/org/mastodon/geff/VarlengthPropertyWriteTest.java",
+      "bytes": 6559,
+      "sha256": "0b460cb0b536890aac6737266461114a3ab4aa8d58b6f8a085bc864aea9fd627",
+      "line_count": 194,
+      "keyword_counts": {
+        "geff": 12,
+        "zarr": 44
+      },
+      "symbols": [
+        "VarlengthPropertyWriteTest",
+        "setUp",
+        "tearDown",
+        "testWriteSingleNode",
+        "testWriteMultipleNodes",
+        "testWriteWithMissing",
+        "testRoundTrip",
+        "testWriteIntArray"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/test/java/org/mastodon/geff/VersionPatternTest.java",
+      "bytes": 3780,
+      "sha256": "f4f8522b48f72c81fcf597d9805346c2f2486dd8bfbf2cbe84eb9370dd887ee8",
+      "line_count": 110,
+      "keyword_counts": {
+        "geff": 16
+      },
+      "symbols": [
+        "VersionPatternTest",
+        "testValidVersionPatterns",
+        "testInvalidVersionPatterns",
+        "testDevelopmentVersionFormat",
+        "testNullVersion"
+      ],
+      "category": "data_io"
+    }
+  ],
+  "target_paths_missing": [],
+  "read_errors": [],
+  "checkout_exit": 0,
+  "checkout_stderr_excerpt": "",
+  "checkout_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "license": "BSD-family",
+  "categories_observed": [
+    "data_io",
+    "data_loader",
+    "dependency",
+    "license",
+    "readme",
+    "relevant_source"
+  ],
+  "categories_not_present_in_selected_files": [
+    "division",
+    "evaluation",
+    "inference",
+    "model",
+    "optimization",
+    "postprocessing",
+    "submission_conversion",
+    "temporal_linking",
+    "training"
+  ],
+  "category_coverage": {
+    "data_io": {
+      "status": "READ",
+      "paths": [
+        "doc/IMPLEMENTATION_PROGRESS.md",
+        "doc/VARLENGTH_IMPLEMENTATION.md",
+        "src/main/java/org/mastodon/geff/Geff.java",
+        "src/main/java/org/mastodon/geff/GeffAxis.java",
+        "src/main/java/org/mastodon/geff/GeffEdge.java",
+        "src/main/java/org/mastodon/geff/GeffNode.java",
+        "src/main/java/org/mastodon/geff/GeffUtils.java",
+        "src/main/java/org/mastodon/geff/RoundTripGeff.java",
+        "src/main/java/org/mastodon/geff/VarlengthProperty.java",
+        "src/main/java/org/mastodon/geff/geom/GeffSerializableVertex.java",
+        "src/test/java/org/mastodon/geff/ChunkedWriteTest.java",
+        "src/test/java/org/mastodon/geff/GeffAxisTest.java",
+        "src/test/java/org/mastodon/geff/GeffCreateTest.java",
+        "src/test/java/org/mastodon/geff/GeffTest.java",
+        "src/test/java/org/mastodon/geff/VarlengthPropertyTest.java",
+        "src/test/java/org/mastodon/geff/VarlengthPropertyWriteTest.java",
+        "src/test/java/org/mastodon/geff/VersionPatternTest.java"
+      ]
+    },
+    "data_loader": {
+      "status": "READ",
+      "paths": [
+        "src/main/java/org/mastodon/geff/GeffMetadata.java",
+        "src/main/java/org/mastodon/geff/PropMetadata.java"
+      ]
+    },
+    "dependency": {
+      "status": "READ",
+      "paths": [
+        "cross-language-tests/pyproject.toml"
+      ]
+    },
+    "division": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "evaluation": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "inference": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "license": {
+      "status": "READ",
+      "paths": [
+        "LICENSE.txt"
+      ]
+    },
+    "model": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "optimization": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "postprocessing": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "readme": {
+      "status": "READ",
+      "paths": [
+        "README.md",
+        "cross-language-tests/README.md"
+      ]
+    },
+    "submission_conversion": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "temporal_linking": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "training": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    }
+  },
+  "selection_policy": {
+    "included": "all human-readable code, notebooks, documentation, dependency/runtime configuration, schemas, tests, and license/notices at the fixed commit",
+    "excluded": "repository-hosting automation, generated/cache directories, and binary/non-source artefacts",
+    "excluded_path_count": 75,
+    "excluded_paths": [
+      {
+        "path": ".github/build.sh",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".github/setup.sh",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".github/workflows/build.yml",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".github/workflows/sonarcloud.yml",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".gitignore",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": ".vscode/launch.json",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": "CITATION.cff",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "cross-language-tests/uv.lock",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/.zgroup",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/.zattrs",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/.zgroup",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/edges/.zgroup",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/edges/ids/.zarray",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/edges/ids/0.0",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/edges/ids/1.0",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/.zgroup",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/.zgroup",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/position/.zgroup",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/position/values/.zarray",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/position/values/0.0",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/seg_id/.zgroup",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/seg_id/missing/.zarray",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/seg_id/missing/0",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/seg_id/values/.zarray",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/seg_id/values/0",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/t/.zgroup",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/t/missing/.zarray",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/t/missing/0",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/t/values/.zarray",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/t/values/0",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/x/.zgroup",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/x/missing/.zarray",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/x/missing/0",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/x/values/.zarray",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/x/values/0",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/y/.zgroup",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/y/missing/.zarray",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/y/missing/0",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/y/values/.zarray",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/attrs/y/values/0",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/ids/.zarray",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/Fluo-N2DL-HeLa-01.zarr/tracks/nodes/ids/0",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/.zattrs",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/.zgroup",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/edges/.zgroup",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/edges/ids/.zarray",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/edges/ids/0.0",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/edges/ids/1.0",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/.zgroup",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/ids/.zarray",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/ids/0",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/ids/1",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/props/.zgroup",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/props/t/.zgroup",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/props/t/values/.zarray",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/props/t/values/0",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/props/t/values/1",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/props/track_id/.zgroup",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/props/track_id/missing/.zarray",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/props/track_id/missing/0",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/props/track_id/values/.zarray",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/props/track_id/values/0",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/props/track_id/values/1",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/props/x/.zgroup",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/props/x/values/.zarray",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/props/x/values/0",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/props/x/values/1",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/props/y/.zgroup",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/props/y/values/.zarray",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/props/y/values/0",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/props/y/values/1",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/props/z/.zgroup",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/props/z/values/.zarray",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/props/z/values/0",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/test/resources/mouse-20250719.zarr/tracks/nodes/props/z/values/1",
+        "reason": "non_text_or_non_source_extension"
+      }
+    ]
+  },
+  "scope_note": "Full bytes were read for every listed relevant-source path; only hashes, structure, notebook-cell hashes, and symbol/keyword summaries are persisted. The complete tree and per-path exclusions preserve the coverage boundary."
+}

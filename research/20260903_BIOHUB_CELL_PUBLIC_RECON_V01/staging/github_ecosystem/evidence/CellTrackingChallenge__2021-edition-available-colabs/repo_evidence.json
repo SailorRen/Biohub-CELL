@@ -1,0 +1,306 @@
+{
+  "schema_version": "1.0",
+  "source_id": "GH-DEEP-CellTrackingChallenge__2021-edition-available-colabs",
+  "repo": "CellTrackingChallenge/2021-edition-available-colabs",
+  "url": "https://github.com/CellTrackingChallenge/2021-edition-available-colabs",
+  "relation_to_competition": "cell_tracking_challenge_reusable_training_inference",
+  "access_time_utc": "2026-09-03T08:47:12.431809+00:00",
+  "fixed_branch": "main",
+  "fixed_commit_sha": "046e3343e750d7b0bcd741a8ef21978fb6b13ca5",
+  "latest_commit_date": "2022-09-28T18:25:54+01:00",
+  "tree_file_count": 7,
+  "tree_bytes": 519,
+  "tree_sha256": "2867df290fb0d3de2284fe6f03dcc02df95acab878ec78e8ee428db74fc0d0e5",
+  "tree_evidence_path": "staging/github_ecosystem/evidence/CellTrackingChallenge__2021-edition-available-colabs/tree.txt",
+  "read_status": "FULL_RELEVANT_REPO_SOURCE_READ",
+  "files_requested": 7,
+  "relevant_source_paths_selected": 7,
+  "relevant_source_selection_coverage": 1.0,
+  "files_actually_read_count": 7,
+  "files_actually_read": [
+    {
+      "path": "LICENSE",
+      "bytes": 1078,
+      "sha256": "4645f0bb5ef63a984400fbe67f29d7326eb907b49c4598fab4171ed83d526825",
+      "line_count": 22,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "license"
+    },
+    {
+      "path": "Notebooks/CALT-US(*).ipynb",
+      "bytes": 550010,
+      "sha256": "88aa81615dfdd3d8943931dbaa1b4c236e60af6e7203ef27913da1796dc208a5",
+      "line_count": 2,
+      "keyword_counts": {
+        "track": 3375,
+        "ctc": 5,
+        "train": 12
+      },
+      "notebook": {
+        "cell_count": 5,
+        "code_cell_count": 5,
+        "markdown_cell_count": 0,
+        "output_cell_count": 4,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "8b6e050451a6f183a41784c4523fef1d20be9b29e04127c267a197e60062b29c",
+          "405c3a2b4f96b118eca26b9776c11bb126075cea2effb5626caf84d94e2f2546",
+          "c530dbc85be55bcc90458eb0318cdf25bf5f91ea6f6d9d3940dc037becc8575d",
+          "ad8095f68e02f613402b65446c1139a57786bdce1fe64c4dbb26b8eb01df6d15",
+          "cf064837493e0b39c6181f12ca83e493e36186b13b06f931b09d8e7eeb3dd035"
+        ]
+      },
+      "category": "relevant_source"
+    },
+    {
+      "path": "Notebooks/DKFZ-GE.ipynb",
+      "bytes": 305117,
+      "sha256": "ae0bf3ef902afc0ba1708a29b60c38530085f40c964c10112b6713e044645f4f",
+      "line_count": 2,
+      "keyword_counts": {
+        "segment": 70,
+        "track": 12,
+        "unet": 931,
+        "ctc": 448,
+        "train": 472,
+        "infer": 1,
+        "predict": 6
+      },
+      "notebook": {
+        "cell_count": 15,
+        "code_cell_count": 7,
+        "markdown_cell_count": 8,
+        "output_cell_count": 6,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "a1f33586d1f1527ec8441dad0b8744c4a6c2ac01b78bb5943d0c210cdf11cc1a",
+          "c3774b26c8d581c20c8c8df6cd4a6c2f4462e149271ecee2ab588b3750370423",
+          "7ef520aea415e8e67bf0bae89b5a3c8328e1d29af80511037fd3e78fb3b9932a",
+          "7759fc5464097510e0a437db0e5f7647226e095dbb581684b6b2eaf0a1780c74",
+          "e844ed5b1c360cb591ced054db884f5682f00aa96ba0fbc7fbd34408252bd297",
+          "462c0c77fcca2e8292083139378c662db1341e0b3b9d68c8f53e848892f37ef6",
+          "5ce25ecbcc7f2ea08dd57512d5fcfe1786e20dde5eb0c2ab73f82d1bbb3b1846"
+        ]
+      },
+      "category": "relevant_source"
+    },
+    {
+      "path": "Notebooks/MU-CZ(2*).ipynb",
+      "bytes": 6507,
+      "sha256": "bf4e6789685efbbe845d8d21b91ac7eee4a41aca6dd04f95b898a35abb47d48e",
+      "line_count": 2,
+      "keyword_counts": {
+        "segment": 4,
+        "track": 4,
+        "link": 1,
+        "flow": 1,
+        "ctc": 1,
+        "train": 4,
+        "evaluate": 3
+      },
+      "notebook": {
+        "cell_count": 21,
+        "code_cell_count": 12,
+        "markdown_cell_count": 9,
+        "output_cell_count": 0,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "bb40deb39321634c08f27712c9ac41d9cee23b8289f9462e96efc03602dee504",
+          "65634ff2fc6b79067e19798d3636054a8a932294c26752bc6e85cdcc2bc47c58",
+          "e5f2db1a49ce9b7a6fa567cdc59d2915512ff7b0508fc9da1b69841cd6f90a8f",
+          "0727bb52a40fd96c24e3de7cd9d59a76987b9776de8e90eae99713167d1ad6d3",
+          "625598b4a51a81e767ef9f066db53cbd753033ecae8b4e08e6111da6ab855cbf",
+          "8ac2e1bd3fc0282631ebf31f8dc4b5f3987a8c7023b8330ac33068d840e91d8d",
+          "7d40fb098548722ff8b8140c5bd87605d7bc4d027976ae9e728ef9f2a247f9b1",
+          "11b42ef22c08ab95f622e2a28a0fcd20831854eb9e20e6da591ca25e46d9b418",
+          "8bcaa2cd742d8add85816ff776ecaa3b73cc7404804915147dbb16b154325f24",
+          "026fad0ab582062dad6ba4cf264935045cd6c494b8ba9cfcb156cc83dd66c978",
+          "17905c7762fb764e12d914c3fcdb688ee253fd1fb0558416e4ff6df12380d6d5",
+          "6949bbc1b83bf9f9e882455ae705405aef9d612878343dcc0286b72281048e1b"
+        ]
+      },
+      "category": "relevant_source"
+    },
+    {
+      "path": "Notebooks/MU-US(4*).ipynb",
+      "bytes": 60147,
+      "sha256": "4ba2d67939ec7e4e5b99d4503faf220d03d9066dfe6d1864caaca1cff7d0db45",
+      "line_count": 2,
+      "keyword_counts": {
+        "segment": 13,
+        "track": 188,
+        "ctc": 15,
+        "train": 34,
+        "infer": 2
+      },
+      "notebook": {
+        "cell_count": 12,
+        "code_cell_count": 9,
+        "markdown_cell_count": 3,
+        "output_cell_count": 9,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "c3774b26c8d581c20c8c8df6cd4a6c2f4462e149271ecee2ab588b3750370423",
+          "529caa55e47b47f5594248226f3e1ba12b8cc31e719b502fa89ed9030d16c506",
+          "a7ed8c8db728d81df17c601b01ebf8b04b21132bffa66b6057cc62f2d64b019c",
+          "ff13528b6472cee85800601d7b3fa9278b2573c30ef8d226c7725e92483db261",
+          "59ad971195ff1c87312787070f1f942c704f066de328e3183ea8a4cdc74e1c7f",
+          "2a938bfe41e9fa8f5495e8fa9d80e7aa13cf7966a07e76341e7952d05918b3dd",
+          "91bc51f3de26c71b71cb11248147c1f3f69cb693e0702a85f0b0301f20f532ff",
+          "9fc02f43ff855b753a0be1799f4c1187ff45d4d1c6873d8ab24ad37e7d975141",
+          "b41b327ef29ca00b93d23b33d7dacf769ba015f5d2b69d2ac093ca47d6da2700"
+        ]
+      },
+      "category": "relevant_source"
+    },
+    {
+      "path": "Notebooks/PURD-US(*).ipynb",
+      "bytes": 28827,
+      "sha256": "27930fd80b22ce9531adf101188e6a054f009a11971d217521dadad05f3e95a0",
+      "line_count": 2,
+      "keyword_counts": {
+        "track": 3,
+        "ctc": 11,
+        "train": 19
+      },
+      "notebook": {
+        "cell_count": 19,
+        "code_cell_count": 11,
+        "markdown_cell_count": 8,
+        "output_cell_count": 6,
+        "all_code_cells_traversed": true,
+        "code_cell_source_sha256": [
+          "c3774b26c8d581c20c8c8df6cd4a6c2f4462e149271ecee2ab588b3750370423",
+          "562e9f9b8aa98e88668356b434dae62edec66329e41b133c6dbb88bc208fdf19",
+          "fb3449abf05bbc89899ac3868e8f3a5f33936e9bc10c7eb2f612aed8f3920385",
+          "8e7648f9be40ea68a154791d9f5c50c0762812b394476566a38f519a26455f7b",
+          "778b6b8c2924508f96ed28fed0f0c4e0d2339266db28a944e2447a73186f0982",
+          "867062ad04214f6dacba4154672bc0bb40f5535c2c4160c53a06f06a1c373709",
+          "9fb29f7c1df896a2ecd883eee3d9aa7a53b600bd2f3b16b6e3db466d743fd84c",
+          "a2432a2e25fd09f2de8c42950f16ffe53fa18019c0599836489e2ace8dbf66c9",
+          "3c093ddd675c763e972399154de1feb6c70a3158661da6280a1c0f72cd0c1f83",
+          "ce3acc7bf11caa4b3ee757ebd7352516cf6b5681db02322101af927fc6c94558",
+          "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        ]
+      },
+      "category": "relevant_source"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2702,
+      "sha256": "e8025ae5c01021852e01a4714a4f49f5ff60b6e5c79bdb330cfb8a835d608851",
+      "line_count": 47,
+      "keyword_counts": {
+        "segment": 1,
+        "track": 13,
+        "link": 1,
+        "unet": 1,
+        "ctc": 2,
+        "submission": 2,
+        "train": 1,
+        "infer": 1
+      },
+      "symbols": [],
+      "headings": [
+        "# Reusability of Cell Tracking Challenge submissions",
+        "## Citation"
+      ],
+      "category": "readme"
+    }
+  ],
+  "target_paths_missing": [],
+  "read_errors": [],
+  "checkout_exit": 0,
+  "checkout_stderr_excerpt": "",
+  "checkout_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "license": "MIT",
+  "categories_observed": [
+    "license",
+    "readme",
+    "relevant_source"
+  ],
+  "categories_not_present_in_selected_files": [
+    "data_io",
+    "data_loader",
+    "dependency",
+    "division",
+    "evaluation",
+    "inference",
+    "model",
+    "optimization",
+    "postprocessing",
+    "submission_conversion",
+    "temporal_linking",
+    "training"
+  ],
+  "category_coverage": {
+    "data_io": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "data_loader": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "dependency": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "division": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "evaluation": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "inference": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "license": {
+      "status": "READ",
+      "paths": [
+        "LICENSE"
+      ]
+    },
+    "model": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "optimization": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "postprocessing": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "readme": {
+      "status": "READ",
+      "paths": [
+        "README.md"
+      ]
+    },
+    "submission_conversion": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "temporal_linking": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "training": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    }
+  },
+  "selection_policy": {
+    "included": "all human-readable code, notebooks, documentation, dependency/runtime configuration, schemas, tests, and license/notices at the fixed commit",
+    "excluded": "repository-hosting automation, generated/cache directories, and binary/non-source artefacts",
+    "excluded_path_count": 0,
+    "excluded_paths": []
+  },
+  "scope_note": "Full bytes were read for every listed relevant-source path; only hashes, structure, notebook-cell hashes, and symbol/keyword summaries are persisted. The complete tree and per-path exclusions preserve the coverage boundary."
+}

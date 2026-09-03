@@ -1,0 +1,622 @@
+{
+  "schema_version": "1.0",
+  "source_id": "GH-DEEP-phucthaiv02__biohub-cell-tracking",
+  "repo": "phucthaiv02/biohub-cell-tracking",
+  "url": "https://github.com/phucthaiv02/biohub-cell-tracking",
+  "relation_to_competition": "competition_participant_baseline_derivative",
+  "access_time_utc": "2026-09-03T08:47:13.694180+00:00",
+  "fixed_branch": "main",
+  "fixed_commit_sha": "bb5bd58c15e939ddbb030c4e0d1d4280e9d737ee",
+  "latest_commit_date": "2026-07-03T16:10:40+07:00",
+  "tree_file_count": 23,
+  "tree_bytes": 1875,
+  "tree_sha256": "e22683e2c6c9e7c0eadc85ae4a42c69eb82ee1a10ba27174f67e76a95139c684",
+  "tree_evidence_path": "staging/github_ecosystem/evidence/phucthaiv02__biohub-cell-tracking/tree.txt",
+  "read_status": "FULL_RELEVANT_REPO_SOURCE_READ",
+  "files_requested": 22,
+  "relevant_source_paths_selected": 22,
+  "relevant_source_selection_coverage": 1.0,
+  "files_actually_read_count": 22,
+  "files_actually_read": [
+    {
+      "path": "src/biohub_cell_tracking/metrics",
+      "bytes": 15848,
+      "sha256": "7cdaddf1c9a024e847e1fb2f781f7f581fd4227618d4decea6363269180d73f4",
+      "line_count": 451,
+      "keyword_counts": {
+        "track": 7,
+        "division": 72,
+        "geff": 1,
+        "jaccard": 72,
+        "sparse": 3,
+        "predict": 9,
+        "evaluate": 17
+      },
+      "symbols": [
+        "EvaluationResult",
+        "DatasetsResult",
+        "_jaccard",
+        "_evaluate_matched_graph",
+        "_compute_score",
+        "_evaluate",
+        "evaluate",
+        "evaluate_datasets",
+        "_matched_node_ids",
+        "node_recall",
+        "per_sample_metrics",
+        "nan_metrics_row",
+        "summarise"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "line_count": 202,
+      "keyword_counts": {
+        "track": 1,
+        "link": 1,
+        "submission": 1
+      },
+      "symbols": [],
+      "category": "license"
+    },
+    {
+      "path": "README.md",
+      "bytes": 365,
+      "sha256": "d3e66b8de76c02bb649a6bd31f04e7e27d1f4baa5e30093f8fbb242b77c2acdd",
+      "line_count": 8,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 6
+      },
+      "symbols": [],
+      "headings": [
+        "# Biohub - Cell Tracking During Development",
+        "## Reference"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "docs/CHALLENGE.md",
+      "bytes": 5217,
+      "sha256": "2a07d1e586ce2567a8f3c44aa817746dca91428de675e4da176e4ed8d1f674fc",
+      "line_count": 55,
+      "keyword_counts": {
+        "detect": 5,
+        "segment": 1,
+        "track": 7,
+        "link": 4,
+        "division": 9,
+        "lineage": 4,
+        "assign": 1,
+        "geff": 5,
+        "zarr": 7,
+        "jaccard": 8,
+        "submission": 3,
+        "csv": 1,
+        "sparse": 2,
+        "train": 6,
+        "predict": 4,
+        "evaluate": 1
+      },
+      "symbols": [],
+      "headings": [
+        "# Overview",
+        "# Description",
+        "# Data",
+        "## Dataset Description",
+        "## Data Format",
+        "## Ground Truth (Training Only)",
+        "## Embryo Identity",
+        "## Files",
+        "# Evaluation"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/METRICS.md",
+      "bytes": 5045,
+      "sha256": "41a6cf2f6113fc5b169539e8b67e7edce9a92b33d1333e97c212df2a3fede88e",
+      "line_count": 113,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 3,
+        "link": 1,
+        "division": 21,
+        "lineage": 4,
+        "assign": 1,
+        "jaccard": 18,
+        "sparse": 3,
+        "predict": 27
+      },
+      "symbols": [],
+      "headings": [
+        "# Evaluating tracking predictions",
+        "## Edge Jaccard",
+        "### Adjusted edge Jaccard",
+        "## Division Jaccard",
+        "## Final score"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "main.py",
+      "bytes": 118,
+      "sha256": "43121b15498f101e8e13fb0007c8398685775e887d659356e6322d16d5ede4a8",
+      "line_count": 9,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [
+        "main"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 711,
+      "sha256": "719c80c2bc37c3f926bdae4a775c0179455f90f203ccb126a206eb66f606721c",
+      "line_count": 36,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 4,
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "dependency"
+    },
+    {
+      "path": "scripts/augmentations.py",
+      "bytes": 1876,
+      "sha256": "a929e73a2d6f963f2d9dc7003d96cf7c8ff4476e33601cdc1ea92cbb6604d37b",
+      "line_count": 64,
+      "keyword_counts": {
+        "train": 1
+      },
+      "symbols": [
+        "brightness_augment",
+        "flip_augment"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "scripts/dataspec.py",
+      "bytes": 1223,
+      "sha256": "aea837b0a97a9285f38ce3414d0801626177f19c90932e016843f451c7c4b6a9",
+      "line_count": 41,
+      "keyword_counts": {
+        "track": 1,
+        "train": 5,
+        "predict": 3
+      },
+      "symbols": [
+        "_default_dataset_path"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "scripts/evaluate.py",
+      "bytes": 6850,
+      "sha256": "90c6011fdfcb458b059c841ecc9980d5d3314eace99f6e9e937cbb409c04853b",
+      "line_count": 188,
+      "keyword_counts": {
+        "track": 8,
+        "division": 7,
+        "geff": 18,
+        "jaccard": 8,
+        "predict": 17,
+        "evaluate": 11
+      },
+      "symbols": [
+        "_read_estimated_n_total",
+        "discover_runs",
+        "_nan_row",
+        "evaluate_run",
+        "main"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "scripts/predict_unet_transformer.py",
+      "bytes": 26023,
+      "sha256": "47da1e699c9b9a76d31983153f5172db6f82bc2b1ca70a12c1cfda69e035f4e4",
+      "line_count": 678,
+      "keyword_counts": {
+        "detect": 12,
+        "track": 10,
+        "link": 3,
+        "division": 14,
+        "assign": 2,
+        "flow": 1,
+        "transformer": 9,
+        "unet": 39,
+        "geff": 6,
+        "zarr": 9,
+        "ctc": 4,
+        "jaccard": 6,
+        "sparse": 1,
+        "train": 7,
+        "infer": 3,
+        "predict": 28,
+        "evaluate": 8,
+        "ilp": 35
+      },
+      "symbols": [
+        "PredictConfig",
+        "__post_init__",
+        "suppress_output",
+        "build_graph",
+        "load_model",
+        "_load_frame",
+        "pool_kernel_from_um",
+        "_detect_cells_pooled",
+        "predict_video",
+        "predict",
+        "main"
+      ],
+      "category": "inference"
+    },
+    {
+      "path": "scripts/train_unet_transformer.py",
+      "bytes": 50237,
+      "sha256": "6a314a5fd00332c5cb0ea82bd4798798fbd44ce4da0e4a5c2773a153c2b58c1b",
+      "line_count": 1295,
+      "keyword_counts": {
+        "detect": 31,
+        "track": 12,
+        "division": 1,
+        "flow": 2,
+        "transformer": 19,
+        "attention": 1,
+        "unet": 105,
+        "geff": 1,
+        "zarr": 13,
+        "sparse": 1,
+        "train": 47,
+        "predict": 13,
+        "evaluate": 6
+      },
+      "symbols": [
+        "compute_gt_transition_matrix",
+        "compute_loss",
+        "compute_batch_loss",
+        "_evaluate_pair",
+        "FrameWindowData",
+        "VideoMeta",
+        "extract_pos_features",
+        "_embed",
+        "get_window_data",
+        "pad_window",
+        "FrameWindowDataset",
+        "__init__",
+        "__len__",
+        "__getitem__",
+        "load_dataset_windows",
+        "UNetNodeTransformer",
+        "__init__",
+        "_index_features",
+        "detect",
+        "encode",
+        "predict_edges",
+        "compute_detection_loss",
+        "_pos_embed_torch",
+        "detect_and_match",
+        "build_matched_edge_targets",
+        "train_epoch",
+        "evaluate",
+        "train",
+        "_load",
+        "worker_init_fn",
+        "main"
+      ],
+      "category": "training"
+    },
+    {
+      "path": "src/biohub_cell_tracking/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "src/biohub_cell_tracking/division_metrics.py",
+      "bytes": 15872,
+      "sha256": "d1cf1e0a43009d02174f1699ce2aa28458a2220ac4b521731d3bcf31cf8c76be",
+      "line_count": 451,
+      "keyword_counts": {
+        "track": 14,
+        "division": 48,
+        "lineage": 7,
+        "sparse": 6,
+        "predict": 21,
+        "evaluate": 1
+      },
+      "symbols": [
+        "DivisionCounts",
+        "_reset_matching_attrs",
+        "extract_divisions",
+        "match_divisions",
+        "_match_full",
+        "_matched_node_attrs",
+        "_has_stage_coverage",
+        "_descendants",
+        "_weakly_connected_components",
+        "_bipartite_max_matching",
+        "augment",
+        "score_divisions",
+        "count_matched_pred_divisions",
+        "evaluate_divisions"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "src/biohub_cell_tracking/img_proc.py",
+      "bytes": 5317,
+      "sha256": "c07ec286c7f91b32abe74768d30d698fb813652967da580802abd99162571e0d",
+      "line_count": 186,
+      "keyword_counts": {},
+      "symbols": [
+        "quantile_normalize",
+        "min_max_normalize",
+        "rescale_coords_to_isotropic",
+        "rescale_coords_from_isotropic",
+        "resample_image_to_isotropic",
+        "nms_3d"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/biohub_cell_tracking/io.py",
+      "bytes": 13484,
+      "sha256": "93b4e84fdac739bace565da8408fa2c91c2ead1e17e4bdcea944900ae69298f9",
+      "line_count": 396,
+      "keyword_counts": {
+        "track": 44,
+        "link": 1,
+        "geff": 20,
+        "zarr": 24
+      },
+      "symbols": [
+        "Dataset",
+        "napari_tracks",
+        "open_dataset",
+        "_parse_scale",
+        "_lookup_precomputed_quantile",
+        "_process_on_gpu",
+        "invert_time_graph",
+        "rescale_graph_to_original",
+        "save_graph",
+        "list_datasets"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/biohub_cell_tracking/models/__init__.py",
+      "bytes": 255,
+      "sha256": "3842cef6dedf9ca3babbd72adbfeded9372965fd9a588f0d3225efb2fe806bb3",
+      "line_count": 6,
+      "keyword_counts": {
+        "track": 3,
+        "transformer": 3,
+        "unet": 3
+      },
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "src/biohub_cell_tracking/models/simple_node_transformer.py",
+      "bytes": 7229,
+      "sha256": "b97209edeb03840e80d903e3e2a8c81c520641c8ef343f6ca2904d0f80db064e",
+      "line_count": 211,
+      "keyword_counts": {
+        "detect": 2,
+        "transformer": 3,
+        "attention": 8,
+        "predict": 3
+      },
+      "symbols": [
+        "CrossAttentionBlock",
+        "__init__",
+        "forward",
+        "SimpleNodeTransformer",
+        "__init__",
+        "forward",
+        "_q_fn",
+        "_k_fn",
+        "_chunk_fn"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/biohub_cell_tracking/models/temporal_unet.py",
+      "bytes": 5767,
+      "sha256": "c2c4849db55d6d22a16036730abe7094a4645923caa60a98fb93887c25c213d6",
+      "line_count": 152,
+      "keyword_counts": {
+        "attention": 6,
+        "unet": 1,
+        "train": 2
+      },
+      "symbols": [
+        "_conv_block",
+        "_TemporalAttention",
+        "__init__",
+        "forward",
+        "TemporalUNet3D",
+        "__init__",
+        "_run",
+        "forward"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "visualize/visualize_ground_truth.py",
+      "bytes": 2496,
+      "sha256": "b8444c63e8a15882830642e2d4bfbc46098b3386da99cd087dcd000cccde1997",
+      "line_count": 75,
+      "keyword_counts": {
+        "track": 10
+      },
+      "symbols": [
+        "main"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "visualize/visualize_predictions.py",
+      "bytes": 2495,
+      "sha256": "dc12a471e5af694fe9da9780ce6a103346692b8b754b32d13a5d1ab1c1a0fc3b",
+      "line_count": 74,
+      "keyword_counts": {
+        "track": 10
+      },
+      "symbols": [
+        "main"
+      ],
+      "category": "inference"
+    },
+    {
+      "path": "visualize/visualize_utils.py",
+      "bytes": 3356,
+      "sha256": "7dc34baec824e8a8a60af98fdb0752b30896a97bceac904d29889af786fe7302",
+      "line_count": 105,
+      "keyword_counts": {
+        "track": 6
+      },
+      "symbols": [
+        "_compute_contrast_limits",
+        "show_with_napari"
+      ],
+      "category": "relevant_source"
+    }
+  ],
+  "target_paths_missing": [],
+  "read_errors": [],
+  "checkout_exit": 0,
+  "checkout_stderr_excerpt": "",
+  "checkout_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "license": "Apache-2.0",
+  "categories_observed": [
+    "data_io",
+    "data_loader",
+    "dependency",
+    "evaluation",
+    "inference",
+    "license",
+    "readme",
+    "relevant_source",
+    "training"
+  ],
+  "categories_not_present_in_selected_files": [
+    "division",
+    "model",
+    "optimization",
+    "postprocessing",
+    "submission_conversion",
+    "temporal_linking"
+  ],
+  "category_coverage": {
+    "data_io": {
+      "status": "READ",
+      "paths": [
+        "scripts/augmentations.py",
+        "src/biohub_cell_tracking/__init__.py",
+        "src/biohub_cell_tracking/img_proc.py",
+        "src/biohub_cell_tracking/io.py",
+        "src/biohub_cell_tracking/models/__init__.py",
+        "src/biohub_cell_tracking/models/simple_node_transformer.py",
+        "src/biohub_cell_tracking/models/temporal_unet.py"
+      ]
+    },
+    "data_loader": {
+      "status": "READ",
+      "paths": [
+        "scripts/dataspec.py"
+      ]
+    },
+    "dependency": {
+      "status": "READ",
+      "paths": [
+        "pyproject.toml"
+      ]
+    },
+    "division": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "evaluation": {
+      "status": "READ",
+      "paths": [
+        "src/biohub_cell_tracking/metrics",
+        "docs/METRICS.md",
+        "scripts/evaluate.py",
+        "src/biohub_cell_tracking/division_metrics.py"
+      ]
+    },
+    "inference": {
+      "status": "READ",
+      "paths": [
+        "scripts/predict_unet_transformer.py",
+        "visualize/visualize_predictions.py"
+      ]
+    },
+    "license": {
+      "status": "READ",
+      "paths": [
+        "LICENSE"
+      ]
+    },
+    "model": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "optimization": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "postprocessing": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "readme": {
+      "status": "READ",
+      "paths": [
+        "README.md"
+      ]
+    },
+    "submission_conversion": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "temporal_linking": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "training": {
+      "status": "READ",
+      "paths": [
+        "scripts/train_unet_transformer.py"
+      ]
+    }
+  },
+  "selection_policy": {
+    "included": "all human-readable code, notebooks, documentation, dependency/runtime configuration, schemas, tests, and license/notices at the fixed commit",
+    "excluded": "repository-hosting automation, generated/cache directories, and binary/non-source artefacts",
+    "excluded_path_count": 2,
+    "excluded_paths": [
+      {
+        "path": ".gitignore",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "src/biohub_cell_tracking/metrics",
+        "reason": "non_text_or_non_source_extension"
+      }
+    ]
+  },
+  "scope_note": "Full bytes were read for every listed relevant-source path; only hashes, structure, notebook-cell hashes, and symbol/keyword summaries are persisted. The complete tree and per-path exclusions preserve the coverage boundary."
+}

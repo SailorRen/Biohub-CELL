@@ -1,0 +1,257 @@
+[
+  {
+    "name": "LICENSE",
+    "size": 1535,
+    "creationDate": "2026-08-31T17:54:11.499000"
+  },
+  {
+    "name": "README.md",
+    "size": 7457,
+    "creationDate": "2026-08-31T17:54:11.782000"
+  },
+  {
+    "name": "assets/demo.gif",
+    "size": 5244279,
+    "creationDate": "2026-08-31T17:54:12.295000"
+  },
+  {
+    "name": "assets/division.svg",
+    "size": 58848,
+    "creationDate": "2026-08-31T17:54:12.191000"
+  },
+  {
+    "name": "assets/figure.svg",
+    "size": 56915,
+    "creationDate": "2026-08-31T17:54:12.191000"
+  },
+  {
+    "name": "assets/late_division.svg",
+    "size": 52361,
+    "creationDate": "2026-08-31T17:54:12.209000"
+  },
+  {
+    "name": "metrics.md",
+    "size": 7090,
+    "creationDate": "2026-08-31T17:54:11.798000"
+  },
+  {
+    "name": "pyproject.toml",
+    "size": 1510,
+    "creationDate": "2026-08-31T17:54:11.671000"
+  },
+  {
+    "name": "scripts/augmentations.py",
+    "size": 1939,
+    "creationDate": "2026-08-31T17:54:12.004000"
+  },
+  {
+    "name": "scripts/csv_to_geffs.py",
+    "size": 2976,
+    "creationDate": "2026-08-31T17:54:12.048000"
+  },
+  {
+    "name": "scripts/dataspec.py",
+    "size": 1255,
+    "creationDate": "2026-08-31T17:54:12.056000"
+  },
+  {
+    "name": "scripts/diagnose_linking.py",
+    "size": 18511,
+    "creationDate": "2026-08-31T17:54:12.040000"
+  },
+  {
+    "name": "scripts/evaluate.py",
+    "size": 6916,
+    "creationDate": "2026-08-31T17:54:12.059000"
+  },
+  {
+    "name": "scripts/geffs_to_csv.py",
+    "size": 3216,
+    "creationDate": "2026-08-31T17:54:12.105000"
+  },
+  {
+    "name": "scripts/linking.py",
+    "size": 44547,
+    "creationDate": "2026-08-31T17:54:12.141000"
+  },
+  {
+    "name": "scripts/predict_unet_transformer.py",
+    "size": 47610,
+    "creationDate": "2026-08-31T17:54:12.132000"
+  },
+  {
+    "name": "scripts/sweep_detection.py",
+    "size": 9200,
+    "creationDate": "2026-08-31T17:54:12.155000"
+  },
+  {
+    "name": "scripts/sweep_linkers.py",
+    "size": 10234,
+    "creationDate": "2026-08-31T17:54:12.179000"
+  },
+  {
+    "name": "scripts/train_unet_transformer.py",
+    "size": 58565,
+    "creationDate": "2026-08-31T17:54:12.175000"
+  },
+  {
+    "name": "src/tracking_cellmot/__init__.py",
+    "size": 80,
+    "creationDate": "2026-08-31T17:54:12.087000"
+  },
+  {
+    "name": "src/tracking_cellmot/division_metrics.py",
+    "size": 21062,
+    "creationDate": "2026-08-31T17:54:12.023000"
+  },
+  {
+    "name": "src/tracking_cellmot/img_proc.py",
+    "size": 5506,
+    "creationDate": "2026-08-31T17:54:12.090000"
+  },
+  {
+    "name": "src/tracking_cellmot/io.py",
+    "size": 13881,
+    "creationDate": "2026-08-31T17:54:12.029000"
+  },
+  {
+    "name": "src/tracking_cellmot/metrics.py",
+    "size": 20138,
+    "creationDate": "2026-08-31T17:54:12.101000"
+  },
+  {
+    "name": "src/tracking_cellmot/models/__init__.py",
+    "size": 254,
+    "creationDate": "2026-08-31T17:54:12.122000"
+  },
+  {
+    "name": "src/tracking_cellmot/models/simple_node_transformer.py",
+    "size": 7439,
+    "creationDate": "2026-08-31T17:54:12.110000"
+  },
+  {
+    "name": "src/tracking_cellmot/models/temporal_unet.py",
+    "size": 5253,
+    "creationDate": "2026-08-31T17:54:12.125000"
+  },
+  {
+    "name": "tests/__init__.py",
+    "size": 0,
+    "creationDate": "2026-08-31T17:54:12.119000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/3_division.json",
+    "size": 1120,
+    "creationDate": "2026-08-31T17:54:12.104000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/complex.json",
+    "size": 3356,
+    "creationDate": "2026-08-31T17:54:12.121000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/complex2.json",
+    "size": 3354,
+    "creationDate": "2026-08-31T17:54:12.163000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/division.json",
+    "size": 1971,
+    "creationDate": "2026-08-31T17:54:12.139000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/division_at_end.json",
+    "size": 2109,
+    "creationDate": "2026-08-31T17:54:12.168000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/division_node_stage.json",
+    "size": 2184,
+    "creationDate": "2026-08-31T17:54:12.179000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/division_test.json",
+    "size": 1984,
+    "creationDate": "2026-08-31T17:54:12.182000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/duplicated_division.json",
+    "size": 2226,
+    "creationDate": "2026-08-31T17:54:12.202000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/edges_wrong_division_ok.json",
+    "size": 2221,
+    "creationDate": "2026-08-31T17:54:12.202000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/late_division.json",
+    "size": 1804,
+    "creationDate": "2026-08-31T17:54:12.191000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/merge_delay.json",
+    "size": 1690,
+    "creationDate": "2026-08-31T17:54:12.194000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/node_conflict.json",
+    "size": 2689,
+    "creationDate": "2026-08-31T17:54:12.198000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/simple.json",
+    "size": 2172,
+    "creationDate": "2026-08-31T17:54:12.194000"
+  },
+  {
+    "name": "tests/assets/sandbox_examples/successive_div.json",
+    "size": 1961,
+    "creationDate": "2026-08-31T17:54:12.218000"
+  },
+  {
+    "name": "tests/conftest.py",
+    "size": 3613,
+    "creationDate": "2026-08-31T17:54:12.004000"
+  },
+  {
+    "name": "tests/test_division_metrics.py",
+    "size": 40387,
+    "creationDate": "2026-08-31T17:54:12.038000"
+  },
+  {
+    "name": "tests/test_division_sandbox_examples.py",
+    "size": 11820,
+    "creationDate": "2026-08-31T17:54:12.032000"
+  },
+  {
+    "name": "tests/test_img_proc.py",
+    "size": 3291,
+    "creationDate": "2026-08-31T17:54:12.034000"
+  },
+  {
+    "name": "tests/test_io.py",
+    "size": 4140,
+    "creationDate": "2026-08-31T17:54:12.050000"
+  },
+  {
+    "name": "tests/test_metrics.py",
+    "size": 50372,
+    "creationDate": "2026-08-31T17:54:12.074000"
+  },
+  {
+    "name": "tests/test_training_scripts.py",
+    "size": 5148,
+    "creationDate": "2026-08-31T17:54:12.111000"
+  },
+  {
+    "name": "weights/baseline/split_0/config.json",
+    "size": 165,
+    "creationDate": "2026-08-31T17:54:12.202000"
+  },
+  {
+    "name": "weights/baseline/split_0/edge_predictor_best.pth",
+    "size": 8357783,
+    "creationDate": "2026-08-31T17:54:12.491000"
+  }
+]

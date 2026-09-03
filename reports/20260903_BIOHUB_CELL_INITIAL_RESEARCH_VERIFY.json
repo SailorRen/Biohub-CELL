@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260903_BIOHUB_CELL_INITIAL_RECON_V01",
+  "status": "PASS",
+  "summary": {
+    "passed": 18,
+    "failed": 0,
+    "total": 18
+  },
+  "counts": {
+    "manifest_records": 647,
+    "full_read": 157,
+    "metadata_only": 249,
+    "title_snippet_only": 223,
+    "blocked": 5,
+    "not_found": 0,
+    "notebook_discovered": 194,
+    "notebook_deep_reads": 30,
+    "discussion_discovered": 73,
+    "discussion_deep_reads": 30,
+    "github_repositories_discovered": 195,
+    "github_repositories_deep_reads": 15,
+    "kaggle_datasets": 35,
+    "kaggle_datasets_full_page_reads": 28,
+    "similar_competitions": 10,
+    "similar_competitions_deep_reads": 6,
+    "official_pages_full_reads": 15,
+    "reddit_hits": 14
+  },
+  "checks": [
+    {
+      "check_id": "required_files_present_nonempty",
+      "status": "PASS",
+      "details": {
+        "missing": [],
+        "empty": [],
+        "required": 31
+      }
+    },
+    {
+      "check_id": "csv_headers_and_data_rows",
+      "status": "PASS",
+      "details": {
+        "errors": [],
+        "files": 12
+      }
+    },
+    {
+      "check_id": "source_manifest_valid_jsonl_unique_ids",
+      "status": "PASS",
+      "details": {
+        "records": 647,
+        "parse_errors": [],
+        "duplicate_ids": [],
+        "missing_ids": 0
+      }
+    },
+    {
+      "check_id": "manifest_read_status_allowlist",
+      "status": "PASS",
+      "details": {
+        "errors": []
+      }
+    },
+    {
+      "check_id": "manifest_evidence_paths_exist",
+      "status": "PASS",
+      "details": {
+        "errors": []
+      }
+    },
+    {
+      "check_id": "full_reads_have_bytes_and_sha256",
+      "status": "PASS",
+      "details": {
+        "errors": []
+      }
+    },
+    {
+      "check_id": "kaggle_notebook_deep_read_minimum",
+      "status": "PASS",
+      "details": {
+        "discovered": 194,
+        "full_source_reads": 30,
+        "errors": []
+      }
+    },
+    {
+      "check_id": "kaggle_discussion_deep_read_minimum",
+      "status": "PASS",
+      "details": {
+        "discovered": 73,
+        "deep_reads": 30,
+        "missing_comment_counts": []
+      }
+    },
+    {
+      "check_id": "github_repository_deep_read_minimum",
+      "status": "PASS",
+      "details": {
+        "discovered": 195,
+        "deep_reads": 15,
+        "invalid_deep_records": []
+      }
+    },
+    {
+      "check_id": "kaggle_dataset_page_read_minimum",
+      "status": "PASS",
+      "details": {
+        "discovered": 35,
+        "full_page_reads": 28
+      }
+    },
+    {
+      "check_id": "similar_kaggle_competition_minimum",
+      "status": "PASS",
+      "details": {
+        "candidates": 10,
+        "deep_reads": 6
+      }
+    },
+    {
+      "check_id": "official_competition_pages_read",
+      "status": "PASS",
+      "details": {
+        "full_page_reads": 15,
+        "required": 7
+      }
+    },
+    {
+      "check_id": "required_search_categories_and_evidence",
+      "status": "PASS",
+      "details": {
+        "present": [
+          "github_code",
+          "github_repository",
+          "kaggle_code",
+          "kaggle_datasets",
+          "kaggle_discussion",
+          "official",
+          "reddit_native",
+          "reddit_site_search",
+          "scientific_web",
+          "similar_kaggle"
+        ],
+        "missing": [],
+        "query_count": 293,
+        "missing_evidence": []
+      }
+    },
+    {
+      "check_id": "claims_have_manifest_sources_and_evidence",
+      "status": "PASS",
+      "details": {
+        "claims": 51,
+        "errors": []
+      }
+    },
+    {
+      "check_id": "access_failures_recorded",
+      "status": "PASS",
+      "details": {
+        "blocked_records": 11,
+        "missing_mentions": []
+      }
+    },
+    {
+      "check_id": "no_large_or_prohibited_artifacts",
+      "status": "PASS",
+      "details": {
+        "oversized": [],
+        "prohibited": [],
+        "secret_named": []
+      }
+    },
+    {
+      "check_id": "no_placeholder_tokens_in_deliverables",
+      "status": "PASS",
+      "details": {
+        "hits": []
+      }
+    },
+    {
+      "check_id": "forbidden_external_actions_zero",
+      "status": "PASS",
+      "details": {
+        "kaggle_submission_count": 0,
+        "kaggle_notebook_write_count": 0,
+        "training_task_count": 0,
+        "kaggle_dataset_create_count": 0,
+        "competition_join_or_rule_accept_count": 0,
+        "large_dataset_download_count": 0
+      }
+    }
+  ]
+}

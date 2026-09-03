@@ -1,0 +1,1099 @@
+{
+  "schema_version": "1.0",
+  "source_id": "GH-DEEP-royerlab__kaggle-cell-tracking-competition",
+  "repo": "royerlab/kaggle-cell-tracking-competition",
+  "url": "https://github.com/royerlab/kaggle-cell-tracking-competition",
+  "relation_to_competition": "competition_host_baseline",
+  "access_time_utc": "2026-09-03T08:47:12.249216+00:00",
+  "fixed_branch": "main",
+  "fixed_commit_sha": "075fc5f5a52d11077f9dc2b074644618f26939e2",
+  "latest_commit_date": "2026-07-17T17:03:46-07:00",
+  "tree_file_count": 49,
+  "tree_bytes": 4203,
+  "tree_sha256": "6fe26893f3514d8ec4a89fa91e78982498348afc4d15d17497425ab04aa3ceb3",
+  "tree_evidence_path": "staging/github_ecosystem/evidence/royerlab__kaggle-cell-tracking-competition/tree.txt",
+  "read_status": "FULL_RELEVANT_REPO_SOURCE_READ",
+  "files_requested": 44,
+  "relevant_source_paths_selected": 44,
+  "relevant_source_selection_coverage": 1.0,
+  "files_actually_read_count": 44,
+  "files_actually_read": [
+    {
+      "path": "LICENSE",
+      "bytes": 1507,
+      "sha256": "3910a8b578783928cbbf981c1b204591ab3368e70017dc695d6536f71d272796",
+      "line_count": 29,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "license"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7254,
+      "sha256": "305222ff29b8b783c95ff2ceb2df3e801c52272633e798ef27af600fbe041812",
+      "line_count": 204,
+      "keyword_counts": {
+        "detect": 7,
+        "track": 23,
+        "link": 5,
+        "division": 10,
+        "flow": 1,
+        "transformer": 5,
+        "attention": 2,
+        "unet": 6,
+        "geff": 20,
+        "zarr": 5,
+        "jaccard": 6,
+        "submission": 6,
+        "csv": 13,
+        "sparse": 4,
+        "train": 12,
+        "infer": 3,
+        "predict": 21,
+        "evaluate": 10
+      },
+      "symbols": [],
+      "headings": [
+        "# tracking-cellmot",
+        "## The challenge",
+        "## Baseline method",
+        "## Metrics",
+        "## Installation",
+        "## Running scripts",
+        "### Training",
+        "### Prediction",
+        "### Evaluation",
+        "### Submission workflow",
+        "# 1. Inference — saves one .geff per test dataset into",
+        "#    predictions/<user>/<method>/split_<fold>/",
+        "# 2. geffs -> CSV — the file you upload to Kaggle",
+        "# 3. (Optional, if CSV is coming from kaggle) CSV -> geffs — reconstruct graphs from any submission CSV",
+        "# 4. Score against ground-truth geffs",
+        "### Visualization",
+        "## Python API",
+        "### Loading a dataset",
+        "### Building a prediction graph",
+        "### Evaluating predictions",
+        "# evaluate() returns raw counts; aggregate across datasets with evaluate_datasets.",
+        "### Evaluating across multiple datasets",
+        "# Counts are summed across all pairs before the Jaccards are computed",
+        "# (micro-averaged).",
+        "## Data format",
+        "### Layout",
+        "## Dependencies"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "metrics.md",
+      "bytes": 6942,
+      "sha256": "d8a2d3ff21b507242dd23e9b7c687d725261d7b4c79cff086cccb4093141d696",
+      "line_count": 149,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 2,
+        "link": 1,
+        "division": 20,
+        "lineage": 3,
+        "assign": 3,
+        "jaccard": 18,
+        "sparse": 3,
+        "predict": 31,
+        "evaluate": 1
+      },
+      "symbols": [],
+      "headings": [
+        "# Evaluating tracking predictions",
+        "## Edge Jaccard",
+        "### Adjusted edge Jaccard",
+        "## Division Jaccard",
+        "### True positives and false negatives",
+        "### False positives",
+        "## Final score"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 1440,
+      "sha256": "2e550bd632d68ef6402547489122f01d72c6a6e9842de46ff295f338452fce77",
+      "line_count": 71,
+      "keyword_counts": {
+        "track": 4,
+        "transformer": 1,
+        "zarr": 1,
+        "predict": 1
+      },
+      "symbols": [],
+      "category": "dependency"
+    },
+    {
+      "path": "scripts/augmentations.py",
+      "bytes": 1876,
+      "sha256": "a929e73a2d6f963f2d9dc7003d96cf7c8ff4476e33601cdc1ea92cbb6604d37b",
+      "line_count": 64,
+      "keyword_counts": {
+        "train": 1
+      },
+      "symbols": [
+        "brightness_augment",
+        "flip_augment"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "scripts/csv_to_geffs.py",
+      "bytes": 2887,
+      "sha256": "914d151495c2c0f6bcab1feeebc6d0452b0ec63175cbce3b8774d20f79fa6f9a",
+      "line_count": 90,
+      "keyword_counts": {
+        "track": 4,
+        "assign": 3,
+        "geff": 8,
+        "submission": 3,
+        "csv": 13
+      },
+      "symbols": [
+        "build_graph_from_rows",
+        "csv_to_geffs",
+        "main"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "scripts/dataspec.py",
+      "bytes": 1215,
+      "sha256": "a1454dc5feb9a794dff4e6b0a9f98a75ad69e0bb1d459911de6faa491d18c2f6",
+      "line_count": 41,
+      "keyword_counts": {
+        "track": 1,
+        "train": 6,
+        "predict": 3
+      },
+      "symbols": [
+        "_default_dataset_path"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "scripts/evaluate.py",
+      "bytes": 5219,
+      "sha256": "03ad4049530d3682c77435194e5d921981f331df3462abcde4a7156d1a57b7d3",
+      "line_count": 143,
+      "keyword_counts": {
+        "track": 8,
+        "division": 9,
+        "transformer": 1,
+        "unet": 1,
+        "geff": 23,
+        "zarr": 3,
+        "jaccard": 8,
+        "train": 1,
+        "infer": 1,
+        "predict": 6,
+        "evaluate": 8
+      },
+      "symbols": [
+        "_load_graph",
+        "_read_scale",
+        "_read_estimated_n_total",
+        "evaluate_pairs",
+        "evaluate_run",
+        "main"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "scripts/geffs_to_csv.py",
+      "bytes": 3131,
+      "sha256": "ecb8b121effb99f7889e6c9936f495fba6d98ea1bb541a2d1b1fb9f633bc9796",
+      "line_count": 86,
+      "keyword_counts": {
+        "track": 1,
+        "geff": 18,
+        "submission": 6,
+        "csv": 17
+      },
+      "symbols": [
+        "_load_graph",
+        "graph_to_rows",
+        "geffs_to_csv",
+        "main"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "scripts/predict_unet_transformer.py",
+      "bytes": 26011,
+      "sha256": "0c0f82844fa212d783bcb942a46d5b5a6cbe30a41ff08f38d22774cf0b47ff26",
+      "line_count": 678,
+      "keyword_counts": {
+        "detect": 12,
+        "track": 10,
+        "link": 3,
+        "division": 14,
+        "assign": 2,
+        "flow": 1,
+        "transformer": 9,
+        "unet": 39,
+        "geff": 6,
+        "zarr": 9,
+        "ctc": 4,
+        "jaccard": 6,
+        "sparse": 1,
+        "train": 7,
+        "infer": 3,
+        "predict": 28,
+        "evaluate": 8,
+        "ilp": 35
+      },
+      "symbols": [
+        "PredictConfig",
+        "__post_init__",
+        "suppress_output",
+        "build_graph",
+        "load_model",
+        "_load_frame",
+        "pool_kernel_from_um",
+        "_detect_cells_pooled",
+        "predict_video",
+        "predict",
+        "main"
+      ],
+      "category": "inference"
+    },
+    {
+      "path": "scripts/train_unet_transformer.py",
+      "bytes": 50229,
+      "sha256": "83e3f30a3313ea452b5072b118bfd06539302cf6886e317c542a602deb27d281",
+      "line_count": 1295,
+      "keyword_counts": {
+        "detect": 31,
+        "track": 12,
+        "division": 1,
+        "flow": 2,
+        "transformer": 19,
+        "attention": 1,
+        "unet": 105,
+        "geff": 1,
+        "zarr": 13,
+        "sparse": 1,
+        "train": 47,
+        "predict": 13,
+        "evaluate": 6
+      },
+      "symbols": [
+        "compute_gt_transition_matrix",
+        "compute_loss",
+        "compute_batch_loss",
+        "_evaluate_pair",
+        "FrameWindowData",
+        "VideoMeta",
+        "extract_pos_features",
+        "_embed",
+        "get_window_data",
+        "pad_window",
+        "FrameWindowDataset",
+        "__init__",
+        "__len__",
+        "__getitem__",
+        "load_dataset_windows",
+        "UNetNodeTransformer",
+        "__init__",
+        "_index_features",
+        "detect",
+        "encode",
+        "predict_edges",
+        "compute_detection_loss",
+        "_pos_embed_torch",
+        "detect_and_match",
+        "build_matched_edge_targets",
+        "train_epoch",
+        "evaluate",
+        "train",
+        "_load",
+        "worker_init_fn",
+        "main"
+      ],
+      "category": "training"
+    },
+    {
+      "path": "src/tracking_cellmot/__init__.py",
+      "bytes": 79,
+      "sha256": "f9df2098dd85934d0b0d48d477420b1f9ed20a9a55ca6294a1874b964e9166e6",
+      "line_count": 2,
+      "keyword_counts": {
+        "track": 2,
+        "ctc": 1
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/tracking_cellmot/division_metrics.py",
+      "bytes": 20488,
+      "sha256": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9",
+      "line_count": 575,
+      "keyword_counts": {
+        "track": 15,
+        "division": 59,
+        "lineage": 15,
+        "assign": 1,
+        "sparse": 6,
+        "predict": 30,
+        "evaluate": 1
+      },
+      "symbols": [
+        "DivisionCounts",
+        "DivisionScores",
+        "_reset_matching_attrs",
+        "extract_divisions",
+        "match_divisions",
+        "_match_full",
+        "_matched_node_attrs",
+        "_matched_division_nodes",
+        "_is_strongly_connected_division",
+        "_bipartite_max_matching",
+        "augment",
+        "score_divisions",
+        "_gt_weak_component_ids",
+        "_branch_component_evidence",
+        "_pred_division_fork_sets",
+        "count_matched_pred_divisions",
+        "evaluate_divisions"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "src/tracking_cellmot/img_proc.py",
+      "bytes": 5319,
+      "sha256": "00e8ef0adc8b39f1aaaa547ea6197b906bf9e8c009e339d3e95f8f8dbf31be3f",
+      "line_count": 188,
+      "keyword_counts": {},
+      "symbols": [
+        "quantile_normalize",
+        "min_max_normalize",
+        "rescale_coords_to_isotropic",
+        "rescale_coords_from_isotropic",
+        "resample_image_to_isotropic",
+        "nms_3d"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/tracking_cellmot/io.py",
+      "bytes": 13485,
+      "sha256": "efae135b088cecaab463d889f16c885ef6da3ad27b0747327d8ddc28d866b7bd",
+      "line_count": 397,
+      "keyword_counts": {
+        "track": 44,
+        "link": 1,
+        "geff": 20,
+        "zarr": 24
+      },
+      "symbols": [
+        "Dataset",
+        "napari_tracks",
+        "open_dataset",
+        "_parse_scale",
+        "_lookup_precomputed_quantile",
+        "_process_on_gpu",
+        "invert_time_graph",
+        "rescale_graph_to_original",
+        "save_graph",
+        "list_datasets"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/tracking_cellmot/metrics.py",
+      "bytes": 19602,
+      "sha256": "cfdd596e3f8909cca14db0682889738b19ff75c3808b3773175aba9367ca7444",
+      "line_count": 537,
+      "keyword_counts": {
+        "track": 8,
+        "division": 72,
+        "geff": 1,
+        "jaccard": 72,
+        "sparse": 3,
+        "predict": 12,
+        "evaluate": 17
+      },
+      "symbols": [
+        "EvaluationResult",
+        "DatasetsResult",
+        "_jaccard",
+        "_evaluate_matched_graph",
+        "_compute_score",
+        "_evaluate",
+        "evaluate",
+        "evaluate_datasets",
+        "_matched_node_ids",
+        "node_recall",
+        "per_sample_metrics",
+        "nan_metrics_row",
+        "summarise"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "src/tracking_cellmot/models/__init__.py",
+      "bytes": 248,
+      "sha256": "0861b0bf0d5a574dd0d582c529b763e75c8d271f4df48df15fae3cf5b5fbb127",
+      "line_count": 7,
+      "keyword_counts": {
+        "track": 3,
+        "transformer": 3,
+        "unet": 3
+      },
+      "symbols": [],
+      "category": "model"
+    },
+    {
+      "path": "src/tracking_cellmot/models/simple_node_transformer.py",
+      "bytes": 7229,
+      "sha256": "b97209edeb03840e80d903e3e2a8c81c520641c8ef343f6ca2904d0f80db064e",
+      "line_count": 211,
+      "keyword_counts": {
+        "detect": 2,
+        "transformer": 3,
+        "attention": 8,
+        "predict": 3
+      },
+      "symbols": [
+        "CrossAttentionBlock",
+        "__init__",
+        "forward",
+        "SimpleNodeTransformer",
+        "__init__",
+        "forward",
+        "_q_fn",
+        "_k_fn",
+        "_chunk_fn"
+      ],
+      "category": "model"
+    },
+    {
+      "path": "src/tracking_cellmot/models/temporal_unet.py",
+      "bytes": 5112,
+      "sha256": "d809c35d42f504161074ddeaaa7aee5b407e5bca7f9b4e1d5f9b2ff345666cac",
+      "line_count": 142,
+      "keyword_counts": {
+        "attention": 6,
+        "unet": 1,
+        "train": 2
+      },
+      "symbols": [
+        "_conv_block",
+        "_TemporalAttention",
+        "__init__",
+        "forward",
+        "TemporalUNet3D",
+        "__init__",
+        "_run",
+        "forward"
+      ],
+      "category": "model"
+    },
+    {
+      "path": "tests/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "line_count": 0,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/3_division.json",
+      "bytes": 1042,
+      "sha256": "df0222938ca596065c70ddab036dca97c6dc8f84cfbc863dedfe6faf03fd972c",
+      "line_count": 79,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/complex.json",
+      "bytes": 3133,
+      "sha256": "b8e50ee54f31c36557e65ce43d551fa96500db2290050190647f3b4ecba72f97",
+      "line_count": 224,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/complex2.json",
+      "bytes": 3131,
+      "sha256": "2190e8d561126bc7a16da8b4d8ee3f03f1b636d64d22a8e83be81d3f5fb3c5d1",
+      "line_count": 224,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/division.json",
+      "bytes": 1839,
+      "sha256": "1f0654706b9c62f1671c303c33307e53bdb5c91f3b7491a1f4f26f9ba825a34b",
+      "line_count": 133,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/division_at_end.json",
+      "bytes": 1968,
+      "sha256": "b313933430c01a3a9cf3121af24e73e11bf93815fa81b1248d668f5bafd88612",
+      "line_count": 142,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/division_node_stage.json",
+      "bytes": 2038,
+      "sha256": "cf9772d23cd0be95c4094bdb3b406c3b8dea14e312e9973f203fd7d9f2e75296",
+      "line_count": 147,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/division_test.json",
+      "bytes": 1852,
+      "sha256": "5c5d8031d15dbf6d683450efa8aca896175ea4169222a9d4abdc97fb7b19c350",
+      "line_count": 133,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/duplicated_division.json",
+      "bytes": 2080,
+      "sha256": "b1b5058f05e8071e573ed44180a544cba65416b63a1918854622c45764836e44",
+      "line_count": 147,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/edges_wrong_division_ok.json",
+      "bytes": 2075,
+      "sha256": "a521bdda6050b9ecf9e737ea7eaf79e352b32e58cc8b678b7e3e18ff1055d456",
+      "line_count": 147,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/late_division.json",
+      "bytes": 1681,
+      "sha256": "42de8f32c5322e2d06fc0f536fb5912ab1b1397c20fa41225ec0c189a6d39780",
+      "line_count": 124,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/merge_delay.json",
+      "bytes": 1576,
+      "sha256": "9eb4dcdcda057841c165a24f34889533e7ca6ceb3b9e86558496066453a63673",
+      "line_count": 115,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/node_conflict.json",
+      "bytes": 2511,
+      "sha256": "385c086733918b0ce363617e7c30ec2a2332d3d89dd23c028a34af3e303dd45c",
+      "line_count": 179,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/simple.json",
+      "bytes": 2030,
+      "sha256": "2c5b6bd676d55deca73700f10572f8b7b4c9c82fccad6bddada407584b1d2655",
+      "line_count": 143,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/successive_div.json",
+      "bytes": 1829,
+      "sha256": "95bb5fc0fba38361265a54cc5c61c51fcdacf33f747f596df9584fc251afcbea",
+      "line_count": 133,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/conftest.py",
+      "bytes": 3523,
+      "sha256": "03e48a23dc1ca67a4b432f46fcbbfd35be66cd0471976bcd8195db98a3efa75a",
+      "line_count": 91,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 1,
+        "division": 9,
+        "geff": 15,
+        "zarr": 19,
+        "train": 2
+      },
+      "symbols": [
+        "_build_division_clip_fixture",
+        "division_clip_fixture"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/test_division_metrics.py",
+      "bytes": 39456,
+      "sha256": "42cdba8ff668e41206530198e1d188f3d50e7ce256600321f5971a08f480d712",
+      "line_count": 932,
+      "keyword_counts": {
+        "track": 16,
+        "division": 123,
+        "lineage": 4,
+        "sparse": 1,
+        "predict": 3,
+        "evaluate": 14
+      },
+      "symbols": [
+        "_build_graph",
+        "TestExtractDivisions",
+        "test_no_divisions",
+        "test_single_division",
+        "test_single_division_no_parent",
+        "test_single_division_leaf_children",
+        "test_two_independent_divisions",
+        "test_chained_divisions_are_separate",
+        "test_empty_graph",
+        "test_preserves_node_attributes",
+        "_make_gt",
+        "TestStronglyConnectedDivision",
+        "test_accepts_local_division_window",
+        "test_rejects_great_grandchild_match",
+        "test_requires_distinct_pred_daughter_lineages",
+        "TestScoreDivisions",
+        "test_perfect_prediction",
+        "test_disconnected_child",
+        "test_linear_no_fork",
+        "test_no_matched_nodes",
+        "test_rejected_local_fork_is_false_positive",
+        "test_fork_but_wrong_topology",
+        "test_two_divisions_mixed_scores",
+        "test_no_gt_divisions",
+        "test_connected_via_intermediate_nodes",
+        "test_matched_parent_from_different_track",
+        "TestCountMatchedPredDivisions",
+        "test_perfect_prediction",
+        "test_spurious_division_on_linear_gt",
+        "test_two_divisions",
+        "test_unmatched_division_not_counted",
+        "test_mixed_real_and_spurious",
+        "TestEvaluateDivisions",
+        "test_perfect_prediction",
+        "test_missed_division",
+        "test_spurious_division",
+        "test_children_matched_to_distinct_gt_components_are_one_fp",
+        "test_cross_component_rule_requires_two_matched_branches",
+        "test_uses_grandchild_when_direct_child_is_unmatched",
+        "test_does_not_mix_child_and_grandchild_from_one_branch",
+        "test_matched_children_take_precedence_over_wrong_grandchildren",
+        "test_merged_grandchild_makes_fork_malformed",
+        "test_mixed_tp_fn_fp",
+        "test_no_divisions_in_either",
+        "test_returns_named_tuple",
+        "test_duplicate_pred_divisions_no_tp_inflation"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "tests/test_division_sandbox_examples.py",
+      "bytes": 11437,
+      "sha256": "2fdc8c6f0847db264e6c1ef5ff3b40bec7089ab7e7a87adc7270d6d90449de90",
+      "line_count": 384,
+      "keyword_counts": {
+        "track": 3,
+        "division": 27,
+        "lineage": 1,
+        "jaccard": 8,
+        "predict": 1,
+        "evaluate": 10
+      },
+      "symbols": [
+        "GraphSpec",
+        "SandboxMetrics",
+        "SandboxCase",
+        "_hack2_case",
+        "division_clip_fixture",
+        "_graph_from_spec_with_ids",
+        "_graph_from_spec",
+        "_compute_sandbox_metrics",
+        "_build_case",
+        "test_mock_sandbox_case_matches_frozen_counts",
+        "test_evaluate_agrees_with_mock_sandbox",
+        "test_hack2_classifies_all_four_predicted_forks_as_fp"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/test_img_proc.py",
+      "bytes": 3207,
+      "sha256": "d144a2196525755932540d1264edd54fa68fc323feb503db9d1284b476f6b1e8",
+      "line_count": 85,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [
+        "test_quantile_normalize_range",
+        "test_quantile_normalize_gamma",
+        "test_quantile_normalize_constant_image",
+        "test_nms_3d_removes_nearby",
+        "test_nms_3d_empty",
+        "test_nms_3d_all_far_apart",
+        "test_rescale_coords_roundtrip",
+        "test_rescale_coords_to_isotropic_z_scaled"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/test_io.py",
+      "bytes": 4022,
+      "sha256": "6f88111a55cdce88af92fbb53e85b63f650fbaeb6236827de22fc06cd35cd64f",
+      "line_count": 119,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 9,
+        "geff": 13,
+        "zarr": 7,
+        "train": 4
+      },
+      "symbols": [
+        "_require_training_data",
+        "test_list_datasets_with_geff",
+        "test_list_datasets_without_geff_is_superset",
+        "test_list_datasets_missing_dir_raises",
+        "test_open_dataset_shape",
+        "test_open_dataset_no_normalize_preserves_dtype",
+        "test_open_dataset_normalize_returns_float32",
+        "test_open_dataset_scale_is_3_tuple",
+        "test_open_dataset_returns_dataset_instance",
+        "test_open_dataset_no_tracks_by_default",
+        "test_open_dataset_loads_tracks",
+        "test_open_dataset_missing_zarr_raises",
+        "test_open_dataset_zarr_extension_stripped"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/test_metrics.py",
+      "bytes": 49117,
+      "sha256": "40726020c13fee8aa53ced61a58e6fde356acab41ae6deaf6e879b325bdfdff2",
+      "line_count": 1256,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 31,
+        "division": 20,
+        "geff": 19,
+        "jaccard": 76,
+        "train": 2,
+        "predict": 14,
+        "evaluate": 17
+      },
+      "symbols": [
+        "_load_geff",
+        "_jaccard_of",
+        "_make_graph",
+        "test_evaluate_matched_graph_overlap",
+        "test_evaluate_matched_graph_pred_valid",
+        "test_compute_score_jaccard",
+        "test_compute_score_dice",
+        "test_compute_score_empty_returns_nan",
+        "test_evaluate_perfect_prediction",
+        "test_evaluate_no_matching_prediction",
+        "test_distance_threshold",
+        "_simple_graph",
+        "test_scale_parameter",
+        "_simple_graph",
+        "test_extra_edge_at_track_end_not_penalized",
+        "test_extra_edge_at_track_start_not_penalized",
+        "test_spurious_edge_to_gt_interior_is_penalized",
+        "_build",
+        "fresh_gt",
+        "pred_with_extra",
+        "test_division_extra_child_dropped_and_missing_child_penalized",
+        "_build",
+        "fresh_gt",
+        "test_node_matching_prefers_closer_node",
+        "_build",
+        "fresh_gt",
+        "test_unmatched_gt_node_does_not_corrupt_nearby_match",
+        "test_evaluate_geff_against_itself_is_perfect",
+        "test_evaluate_geff_score_decreases_when_edges_removed",
+        "test_evaluate_geff_score_decreases_when_nodes_removed",
+        "_build_graph",
+        "test_dice_geq_jaccard",
+        "test_score_bounds_unit",
+        "test_cross_track_edge_penalized_only_when_forward",
+        "test_reparenting_node_penalized",
+        "test_missing_division_child_penalized",
+        "test_duplicate_edges_cannot_inflate_score",
+        "test_duplicate_matched_edge_kept_after_dedup",
+        "test_pred_no_edges_scores_zero",
+        "test_empty_pred_no_nodes_scores_zero",
+        "test_compute_score_invalid_metric",
+        "test_colocated_gt_nodes_ambiguous_matching",
+        "test_spoiler_node_steals_match",
+        "test_self_loops_on_interior_nodes_dropped",
+        "test_reverse_edge_at_boundary_invisible",
+        "test_dense_bipartite_cross_edges_capped_by_id",
+        "test_skip_connection_scores_zero",
+        "test_distance_matching_respects_timeframes",
+        "test_correct_track_with_many_unmatched_noise_edges",
+        "test_hub_out_degree_capped_at_two",
+        "test_nan_coordinates_no_match",
+        "test_inf_coordinates_no_match",
+        "test_same_graph_object_as_pred_and_gt",
+        "test_score_asymmetric_big_pred_vs_small_gt",
+        "test_false_merge_into_interior_penalized",
+        "test_false_merge_into_track_start_invisible",
+        "test_summarise_no_divisions_warns_and_drops_term"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "tests/test_training_scripts.py",
+      "bytes": 5017,
+      "sha256": "27ce1f02f1df181f57c0a4366c787d49fbb8c1bcd7dc6683fc83e7447eedbe8a",
+      "line_count": 132,
+      "keyword_counts": {
+        "track": 5,
+        "division": 11,
+        "transformer": 6,
+        "unet": 13,
+        "ctc": 2,
+        "jaccard": 14,
+        "train": 5,
+        "predict": 12,
+        "evaluate": 5,
+        "ilp": 1
+      },
+      "symbols": [
+        "_seed_everything",
+        "test_unet_transformer_overfit_and_evaluate"
+      ],
+      "category": "training"
+    },
+    {
+      "path": "visualize/visualize_ground_truth.py",
+      "bytes": 2492,
+      "sha256": "79a65af8ee08498f9f6ad220a3a3b59f0afdde4e784baa3904d7480b199639e1",
+      "line_count": 75,
+      "keyword_counts": {
+        "track": 10
+      },
+      "symbols": [
+        "main"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "visualize/visualize_predictions.py",
+      "bytes": 11517,
+      "sha256": "afd2a739f957fb5e17ef3b9b96108ecf3137128772939aef288ba84134d18ac8",
+      "line_count": 335,
+      "keyword_counts": {
+        "segment": 1,
+        "track": 32,
+        "division": 8,
+        "geff": 13,
+        "zarr": 1,
+        "jaccard": 9,
+        "predict": 24,
+        "evaluate": 3
+      },
+      "symbols": [
+        "_edges_to_tracks",
+        "_build_node_coords",
+        "_classify_edges",
+        "visualize_prediction",
+        "_record_video",
+        "main"
+      ],
+      "category": "inference"
+    },
+    {
+      "path": "visualize/visualize_utils.py",
+      "bytes": 3356,
+      "sha256": "7dc34baec824e8a8a60af98fdb0752b30896a97bceac904d29889af786fe7302",
+      "line_count": 105,
+      "keyword_counts": {
+        "track": 6
+      },
+      "symbols": [
+        "_compute_contrast_limits",
+        "show_with_napari"
+      ],
+      "category": "relevant_source"
+    }
+  ],
+  "target_paths_missing": [],
+  "read_errors": [],
+  "checkout_exit": 0,
+  "checkout_stderr_excerpt": "",
+  "checkout_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "license": "BSD-3-Clause",
+  "categories_observed": [
+    "data_io",
+    "data_loader",
+    "dependency",
+    "evaluation",
+    "inference",
+    "license",
+    "model",
+    "readme",
+    "relevant_source",
+    "temporal_linking",
+    "training"
+  ],
+  "categories_not_present_in_selected_files": [
+    "division",
+    "optimization",
+    "postprocessing",
+    "submission_conversion"
+  ],
+  "category_coverage": {
+    "data_io": {
+      "status": "READ",
+      "paths": [
+        "scripts/augmentations.py",
+        "scripts/csv_to_geffs.py",
+        "scripts/geffs_to_csv.py",
+        "src/tracking_cellmot/io.py",
+        "tests/assets/sandbox_examples/3_division.json",
+        "tests/assets/sandbox_examples/division.json",
+        "tests/assets/sandbox_examples/division_at_end.json",
+        "tests/assets/sandbox_examples/division_node_stage.json",
+        "tests/assets/sandbox_examples/division_test.json",
+        "tests/assets/sandbox_examples/duplicated_division.json",
+        "tests/assets/sandbox_examples/edges_wrong_division_ok.json",
+        "tests/assets/sandbox_examples/late_division.json",
+        "tests/test_division_sandbox_examples.py",
+        "tests/test_io.py"
+      ]
+    },
+    "data_loader": {
+      "status": "READ",
+      "paths": [
+        "scripts/dataspec.py"
+      ]
+    },
+    "dependency": {
+      "status": "READ",
+      "paths": [
+        "pyproject.toml"
+      ]
+    },
+    "division": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "evaluation": {
+      "status": "READ",
+      "paths": [
+        "metrics.md",
+        "scripts/evaluate.py",
+        "src/tracking_cellmot/division_metrics.py",
+        "src/tracking_cellmot/metrics.py",
+        "tests/test_division_metrics.py",
+        "tests/test_metrics.py"
+      ]
+    },
+    "inference": {
+      "status": "READ",
+      "paths": [
+        "scripts/predict_unet_transformer.py",
+        "visualize/visualize_predictions.py"
+      ]
+    },
+    "license": {
+      "status": "READ",
+      "paths": [
+        "LICENSE"
+      ]
+    },
+    "model": {
+      "status": "READ",
+      "paths": [
+        "src/tracking_cellmot/models/__init__.py",
+        "src/tracking_cellmot/models/simple_node_transformer.py",
+        "src/tracking_cellmot/models/temporal_unet.py"
+      ]
+    },
+    "optimization": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "postprocessing": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "readme": {
+      "status": "READ",
+      "paths": [
+        "README.md"
+      ]
+    },
+    "submission_conversion": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "temporal_linking": {
+      "status": "READ",
+      "paths": [
+        "src/tracking_cellmot/__init__.py",
+        "src/tracking_cellmot/img_proc.py"
+      ]
+    },
+    "training": {
+      "status": "READ",
+      "paths": [
+        "scripts/train_unet_transformer.py",
+        "tests/test_training_scripts.py"
+      ]
+    }
+  },
+  "selection_policy": {
+    "included": "all human-readable code, notebooks, documentation, dependency/runtime configuration, schemas, tests, and license/notices at the fixed commit",
+    "excluded": "repository-hosting automation, generated/cache directories, and binary/non-source artefacts",
+    "excluded_path_count": 5,
+    "excluded_paths": [
+      {
+        "path": ".gitignore",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "assets/demo.gif",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "assets/division.svg",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "assets/figure.svg",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "assets/late_division.svg",
+        "reason": "non_text_or_non_source_extension"
+      }
+    ]
+  },
+  "scope_note": "Full bytes were read for every listed relevant-source path; only hashes, structure, notebook-cell hashes, and symbol/keyword summaries are persisted. The complete tree and per-path exclusions preserve the coverage boundary."
+}

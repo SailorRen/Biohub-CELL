@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260903_BIOHUB_CELL_INITIAL_RECON_V01",
+  "status": "EVIDENCE_ASSEMBLED_PENDING_REMOTE_VERIFICATION",
+  "contract_sha256": "238a17f05370055ed6a8d0866c1ad88c5a247f5ba80b75de444995909ed0d1b7",
+  "final_commit_sha": "TO_BE_BOUND_TO_SUBSTANTIVE_EVIDENCE_COMMIT_AFTER_FIRST_REMOTE_READBACK",
+  "final_commit_semantics": "Provisional value before the immutable substantive evidence commit exists; it will be replaced after that commit is pushed and read back.",
+  "local_bundle_verification": "PASS",
+  "authoritative_remote_readback": "NOT_RUN_FOR_SUBSTANTIVE_EVIDENCE_COMMIT",
+  "independent_contract_verification": "NOT_RUN_FOR_CLOSEOUT_HEAD",
+  "kaggle_submission_count": 0,
+  "kaggle_notebook_write_count": 0,
+  "training_task_count": 0,
+  "kaggle_dataset_create_count": 0
+}

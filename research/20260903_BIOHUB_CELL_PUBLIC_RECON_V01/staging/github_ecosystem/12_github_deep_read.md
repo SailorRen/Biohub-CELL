@@ -1,0 +1,1489 @@
+# GitHub 生态固定提交深读草稿
+
+> 这是 `github_ecosystem` 隔离 staging 草稿，未修改 canonical、未提交、未推送，也未修改任何外部仓库。
+
+## 结论与证据边界
+
+- 发现清单：195 个去重仓库；其中 19 个固定 branch + 40 位 commit 深读。
+- 深读状态：`FULL_RELEVANT_REPO_SOURCE_READ` 15 个，`TARGET_FILES_READ` 4 个；完整读取并哈希 1165 个文件。
+- source manifest 共 64 条：搜索页与固定 tree 的聚合记录；逐文件 full-bytes 读取清单、bytes 与 SHA-256 保存在各仓库 `repo_evidence.json`。
+- `FULL_RELEVANT_REPO_SOURCE_READ` 的含义严格限定为：对固定 commit 的完整 tree 按冻结规则选择全部人类可读代码、Notebook、文档、依赖/运行配置、schema、测试和许可文本，逐文件完整读取；只排除托管自动化、生成/缓存目录及二进制/非源码产物。tree 与逐路径排除原因均保留。它不代表运行过代码、训练过模型或验证过 README 分数。
+- `TARGET_FILES_READ` 表示只读取预先选定的相关文件；不能外推为仓库完整源码阅读。`README_ONLY` 本批为 0；未深读仓库统一为 `SEARCH_RESULT_METADATA_ONLY`。
+- 所有 README、实验报告和 leaderboard 数字均按 `AUTHOR_CLAIM` 处理；本任务没有执行训练、推理、Kaggle submission 或动态分数回收。
+
+## 搜索覆盖
+
+Repository Search 的核心 37、68、28 个比赛相关结果集，以及 Ultrack 21、Trackastra 12、CTC 33、Zebrahub 8、royerlab tracking 5、GEFF 4 等集合均读取全部报告页。`tracksdata in:name` 报告 144 项，但除首项外被同名账号工程结果主导，仅保存首屏并标 `PARTIAL`。九个 Code Search 查询均读取首屏并记录可见文本 bytes/SHA-256 与唯一 blob 数；未继续翻完大结果集，所以不声称穷尽 GitHub Code Search。普通网页搜索保存查询和主要 GitHub 命中，不声称全网穷尽。
+
+## 关键技术综合
+
+1. 最接近端到端可复用链条的是官方基线：3D+时间 U-Net 中心检测、节点对 transformer、greedy/ILP 图求解、稀疏标注指标和 GEFF/CSV 转换均在同一固定提交可定位。
+2. 生态组件职责要分开：GEFF 是图交换格式；tracksdata 是图模型/求解/评价基础库；Ultrack 是分割候选与跟踪联合优化器；Trackastra 是消费实例 mask 的学习关联器。文件存在不等于接口已接通。
+3. 可组合路线包括 Cellpose/3Dee/ELEPHANT 的检测或分割前端、Trackastra/btrack/ByoTrack/Ultrack 的关联与全局约束，以及 CTC 工具的外部评价。但 Biohub 的稀疏点标注、物理坐标、division 计分和 submission.csv 仍需明确适配。
+4. 参赛者公开仓库提供 DoG+CNN+min-cost-flow、Cellpose+Motile、热图+LAP/Ultrack、交叉注意力+min-cost-flow 等备选。其 README 分数未独立复跑；无许可证仓库仅可作为研究线索，不应复制完整源码。
+
+## 逐仓库深读记录
+
+### 1. `CellTrackingChallenge/2021-edition-available-colabs`
+
+- 固定提交：branch `main`，commit `046e3343e750d7b0bcd741a8ef21978fb6b13ca5`，commit date `2022-09-28T18:25:54+01:00`。
+- 阅读状态：`FULL_RELEVANT_REPO_SOURCE_READ`；完整 tree 7 个 blob；实际读取文件 7 个；missing 0；read error 0。
+- 许可证观察：`MIT`。无许可或只有 NOTICE 时，不推定再分发权。
+- 证据路径：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/CellTrackingChallenge__2021-edition-available-colabs/repo_evidence.json`；tree：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/CellTrackingChallenge__2021-edition-available-colabs/tree.txt`。
+- 角色：reusability collection。
+- 方法：检测=method-specific；分割=five contestant notebooks: CALT-US, nnU-Net, Deepwater, U-SE-ResNet, XB-Net；时序链接=method-specific/partly external repositories；division=method-specific；优化=method-specific。
+- 训练/推理/评价：训练=all 44 code cells across five notebooks traversed; training and inference recipes preserved；推理=Colab training/inference recipes；评价=CTC evaluation recipes in several notebooks。
+- I/O 与后处理：I/O=CTC datasets/Drive paths；submission=CTC outputs；后处理=method-specific。
+- 判定：complete small repository read; it is a reproducibility index rather than one unified algorithm
+- 类别覆盖：data_io=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；data_loader=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；dependency=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；division=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；evaluation=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；inference=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；license=READ；model=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；optimization=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；postprocessing=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；readme=READ；submission_conversion=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；temporal_linking=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；training=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE。
+- 实际读取文件：
+
+  - `LICENSE` — category `license`；1078 bytes；SHA-256 `4645f0bb5ef63a984400fbe67f29d7326eb907b49c4598fab4171ed83d526825`
+  - `Notebooks/CALT-US(*).ipynb` — category `relevant_source`；550010 bytes；SHA-256 `88aa81615dfdd3d8943931dbaa1b4c236e60af6e7203ef27913da1796dc208a5`；Notebook cells=5, code=5, markdown=0, all_code_cells_traversed=True
+  - `Notebooks/DKFZ-GE.ipynb` — category `relevant_source`；305117 bytes；SHA-256 `ae0bf3ef902afc0ba1708a29b60c38530085f40c964c10112b6713e044645f4f`；Notebook cells=15, code=7, markdown=8, all_code_cells_traversed=True
+  - `Notebooks/MU-CZ(2*).ipynb` — category `relevant_source`；6507 bytes；SHA-256 `bf4e6789685efbbe845d8d21b91ac7eee4a41aca6dd04f95b898a35abb47d48e`；Notebook cells=21, code=12, markdown=9, all_code_cells_traversed=True
+  - `Notebooks/MU-US(4*).ipynb` — category `relevant_source`；60147 bytes；SHA-256 `4ba2d67939ec7e4e5b99d4503faf220d03d9066dfe6d1864caaca1cff7d0db45`；Notebook cells=12, code=9, markdown=3, all_code_cells_traversed=True
+  - `Notebooks/PURD-US(*).ipynb` — category `relevant_source`；28827 bytes；SHA-256 `27930fd80b22ce9531adf101188e6a054f009a11971d217521dadad05f3e95a0`；Notebook cells=19, code=11, markdown=8, all_code_cells_traversed=True
+  - `README.md` — category `readme`；2702 bytes；SHA-256 `e8025ae5c01021852e01a4714a4f49f5ff60b6e5c79bdb330cfb8a835d608851`
+
+### 2. `CellTrackingChallenge/py-ctcmetrics`
+
+- 固定提交：branch `main`，commit `59481c48a62d4376fe34bed3e3606b4ec4d60972`，commit date `2026-03-12T09:51:40+01:00`。
+- 阅读状态：`FULL_RELEVANT_REPO_SOURCE_READ`；完整 tree 70 个 blob；实际读取文件 51 个；missing 0；read error 0。
+- 许可证观察：`BSD-family`。无许可或只有 NOTICE 时，不推定再分发权。
+- 证据路径：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/CellTrackingChallenge__py-ctcmetrics/repo_evidence.json`；tree：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/CellTrackingChallenge__py-ctcmetrics/tree.txt`。
+- 角色：evaluation toolkit。
+- 方法：检测=N/A；分割=N/A；时序链接=N/A；division=BC and CHOTA lineage-aware evaluation；优化=N/A。
+- 训练/推理/评价：训练=N/A；推理=CLI evaluates result directories；评价=DET, SEG, TRA, LNK, HOTA, CHOTA and validation。
+- I/O 与后处理：I/O=CTC masks + res_track.txt/man_track.txt；submission=N/A；后处理=merges track representations for metric computation。
+- 判定：useful as an external benchmark vocabulary; its metrics are not the Kaggle adjusted-edge/division score
+- 类别覆盖：data_io=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；data_loader=READ；dependency=READ；division=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；evaluation=READ；inference=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；license=READ；model=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；optimization=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；postprocessing=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；readme=READ；submission_conversion=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；temporal_linking=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；training=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE。
+- 实际读取文件：
+
+  - `README.md` — category `readme`；18318 bytes；SHA-256 `2c3fcea1c4a3f85a66411c47dd8f8e3bc38d248591157024814848f49897c1df`
+  - `LICENSE.txt` — category `license`；1306 bytes；SHA-256 `b8a076a1dd8714e600b78cb89ff5d8d91c0a97abb38a431d5c8d46ba52ef1d6f`
+  - `requirements.txt` — category `dependency`；150 bytes；SHA-256 `c08a71a7f4490600e211f26de4238d025c3e1ee30954a8d7720c4de7dc136e70`
+  - `setup.py` — category `dependency`；895 bytes；SHA-256 `0a56f4cb8980846a19f011e0cc5f19b34a5f58443f6c1b5af11fb284e31a008b`
+  - `ctc_metrics/scripts/evaluate.py` — category `evaluation`；14917 bytes；SHA-256 `acee1cce37124e732abd3fe3d439567f3a43e4f578cb5870a8356ca187877b31`
+  - `ctc_metrics/metrics/technical/det.py` — category `evaluation`；871 bytes；SHA-256 `1f40939181b3e8a6af559b5db61f4135d1d96ee82e32fb3902e95c9d853d6e9f`
+  - `ctc_metrics/metrics/technical/seg.py` — category `evaluation`；978 bytes；SHA-256 `d37b7102a8f3778de831bd80d40bf3c5f64a4a2fb8df84e185d86cb80f90c9e2`
+  - `ctc_metrics/metrics/technical/tra.py` — category `evaluation`；1242 bytes；SHA-256 `55c6279e4a7640471b004ff1a81e073042fcf0d037e05e5e613eec03e7193aac`
+  - `ctc_metrics/metrics/technical/lnk.py` — category `evaluation`；886 bytes；SHA-256 `b7697f387b5ca30f7bf73c6775141c87a8cb64f8eae0ab269377700160c8f1c6`
+  - `ctc_metrics/metrics/hota/hota.py` — category `evaluation`；2616 bytes；SHA-256 `2bc0287ddd6a4eb73ade792d70afb4a79f07e26415cc5902944129cbee704534`
+  - `ctc_metrics/metrics/hota/chota.py` — category `evaluation`；4690 bytes；SHA-256 `c82866ff229cff82a8a1b8150c101ca6c4d3a30cddae05848a4651bba382c5fc`
+  - `ctc_metrics/metrics/validation/valid.py` — category `validation`；6105 bytes；SHA-256 `87f22b00928b0d23994f726329552f3156d2c5fb918e67522dff936b7f1acf87`
+  - `.pre-commit-config.yaml` — category `relevant_source`；263 bytes；SHA-256 `389173420fbf7361e2557a856fe8fee9f779c174ba701f3b8843b6bdb4651969`
+  - `ctc_metrics/__init__.py` — category `evaluation`；118 bytes；SHA-256 `c7e068e5c145d6892f4be74274ea17a6c72f83223b99db74226f0f4533c7b01c`
+  - `ctc_metrics/metrics/__init__.py` — category `evaluation`；1171 bytes；SHA-256 `f01fa58f6ce1af3506d90be652a7dbb80cc3c41df247b92c10e3eb3da6c3c64f`
+  - `ctc_metrics/metrics/biological/__init__.py` — category `evaluation`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `ctc_metrics/metrics/biological/bc.py` — category `evaluation`；8707 bytes；SHA-256 `cab0b299382ca6d1c041a7a142261f1c1813f5c03bbf27758576cd3a8581c56d`
+  - `ctc_metrics/metrics/biological/bio.py` — category `evaluation`；961 bytes；SHA-256 `0dd70336f214a00ba46b6657f88bd787db6c984c6f1e4e61956e34f9af02c1f2`
+  - `ctc_metrics/metrics/biological/cca.py` — category `evaluation`；2398 bytes；SHA-256 `63fdc447afcbeae350a1cb5f8df301ed62cb96089d81d8d2f399f50785873b62`
+  - `ctc_metrics/metrics/biological/ct.py` — category `evaluation`；2556 bytes；SHA-256 `76fedefda6c28284a0b27e55c28fe931738c768bd74324884d6229e7f559e742`
+  - `ctc_metrics/metrics/biological/op_clb.py` — category `evaluation`；355 bytes；SHA-256 `216807f3df36fd631207d5cc1f42a2e394f345c7b4ff83c2ba68d167913a37d3`
+  - `ctc_metrics/metrics/biological/tf.py` — category `evaluation`；4205 bytes；SHA-256 `506883ef8e329e1a1034082ef5e45751ad6fa0ad363512cc47f41f9d799c708d`
+  - `ctc_metrics/metrics/clearmot/__init__.py` — category `evaluation`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `ctc_metrics/metrics/clearmot/mota.py` — category `evaluation`；2583 bytes；SHA-256 `a7dd5218dd2ecc958c995199bdf8be60a9bb178d17f70018306dcf932431f175`
+  - `ctc_metrics/metrics/hota/__init__.py` — category `evaluation`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `ctc_metrics/metrics/identity_metrics/__init__.py` — category `evaluation`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `ctc_metrics/metrics/identity_metrics/idf1.py` — category `evaluation`；4493 bytes；SHA-256 `a72bf69914e0424c8410db2c828ff616926b2ee8f5a1ced4d3fe5f5de5c5d7a9`
+  - `ctc_metrics/metrics/others/__init__.py` — category `evaluation`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `ctc_metrics/metrics/others/faf.py` — category `evaluation`；740 bytes；SHA-256 `4132046c879b5dbf6f34cc245c831444bbbf6441067924af734412ef6e67a308`
+  - `ctc_metrics/metrics/others/mt_ml.py` — category `evaluation`；1165 bytes；SHA-256 `b03e91a012dcb6ef2238c86043f7b8cf51a131835cf705d10d976fc9b2a3be5a`
+  - `ctc_metrics/metrics/technical/__init__.py` — category `evaluation`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `ctc_metrics/metrics/technical/op_csb.py` — category `evaluation`；359 bytes；SHA-256 `7146dee299c6e5d33b3ffaab928762c0a3d36af567a89d28677ac8eeba0789a5`
+  - `ctc_metrics/metrics/technical/op_ctb.py` — category `evaluation`；358 bytes；SHA-256 `58a25028d3e2a26685a43394884fe9ccd110572d534251edb4d87d755c5104a8`
+  - `ctc_metrics/metrics/validation/__init__.py` — category `evaluation`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `ctc_metrics/scripts/__init__.py` — category `evaluation`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `ctc_metrics/scripts/noise.py` — category `evaluation`；21630 bytes；SHA-256 `bb38a412c459b1dbff2ee51c67257722718925ed92b040816fe5f5462e730620`
+  - `ctc_metrics/scripts/validate.py` — category `evaluation`；2741 bytes；SHA-256 `4b9de878030eb7505982d777d12b4f3ba9ce910ac6b89802c1c94ceed781e827`
+  - `ctc_metrics/scripts/visualize.py` — category `evaluation`；10301 bytes；SHA-256 `634c1fd31f5e2576d1c3160dc42cb28d77434074abc41a03df779f5397fc2394`
+  - `ctc_metrics/utils/__init__.py` — category `evaluation`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `ctc_metrics/utils/filesystem.py` — category `evaluation`；3507 bytes；SHA-256 `bc7aa47730687aca5aad598963f93e355d2a13e6114dd14c9e715542e54fd47f`
+  - `ctc_metrics/utils/handle_results.py` — category `evaluation`；1602 bytes；SHA-256 `90fa4de49a7552bf3442bf6be0ea7112344f3717ff717f117312d08bea13c43e`
+  - `ctc_metrics/utils/representations.py` — category `evaluation`；17376 bytes；SHA-256 `6b33ef7bc549ddbec884c1e0a385bbcf126174a7875dd0bd65eab8b257af3d3f`
+  - `pixi_env/README.md` — category `readme`；1022 bytes；SHA-256 `b5c131f2d86a899878c5f8ce23fbd9fc5dae754fd4ce08be0025436717d0a8b5`
+  - `pixi_env/pixi.toml` — category `relevant_source`；672 bytes；SHA-256 `d518ee4ef96cf45968723bcbeacbb2f7b15924848b294f716a66a5ea8fcd3b79`
+  - `py-ctcmetrics.toml` — category `evaluation`；90 bytes；SHA-256 `4a017048064bf853e9f8ac4a774af07985c633c8bdd164a7ceb2438c350c2e54`
+  - `test/__init__.py` — category `relevant_source`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `test/prepare_test_data.sh` — category `data_loader`；170 bytes；SHA-256 `de0aedbdbe72ad8d47f30e8db8e7f9e3a5c04ed4e4a865fb1062d4d6029ebc53`
+  - `test/test_metrics.py` — category `evaluation`；2075 bytes；SHA-256 `a7a1805deee070f9c57760777f6568e6caff3c62494f084a6ca4c2ebba7b6acd`
+  - `test/test_validate.py` — category `relevant_source`；223 bytes；SHA-256 `70aa0786c623a072a10e98cd5ff8f264702b0025bfe239655ffc9ad02cbce6ab`
+  - `test/utils.py` — category `relevant_source`；385 bytes；SHA-256 `53983be46b79bfeb14d8bd079bea0ecd289495d7add9763367204260d589769c`
+  - `third_party/LICENSE` — category `license`；1300 bytes；SHA-256 `972ac8b2b869aa994719861a48c36bc3169f8f7c4919dc8d377da83c9c611565`
+
+### 3. `MouseLand/cellpose`
+
+- 固定提交：branch `main`，commit `a54cb48849b7e225a81e8e43dcb042d42427f543`，commit date `2026-06-14T09:19:49-04:00`。
+- 阅读状态：`TARGET_FILES_READ`；完整 tree 110 个 blob；实际读取文件 12 个；missing 0；read error 0。
+- 许可证观察：`BSD-3-Clause`。无许可或只有 NOTICE 时，不推定再分发权。
+- 证据路径：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/MouseLand__cellpose/repo_evidence.json`；tree：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/MouseLand__cellpose/tree.txt`。
+- 角色：segmentation component。
+- 方法：检测=cell probability and vector-flow prediction；分割=Cellpose instance segmentation; 3D inference documented；时序链接=N/A native lineage tracker；division=N/A；优化=N/A lineage optimization。
+- 训练/推理/评价：训练=segmentation training APIs；推理=2D/3D segmentation inference；评价=mask/flow segmentation metrics。
+- I/O 与后处理：I/O=image/mask I/O；submission=N/A；后处理=flow integration, mask construction/cleanup。
+- 判定：powerful front-end candidate only; tracking, divisions, GEFF and Biohub submission remain external
+- 类别覆盖：data_io=READ；data_loader=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；dependency=READ；division=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；evaluation=READ；inference=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；license=READ；model=READ；optimization=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；postprocessing=READ；readme=READ；submission_conversion=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；temporal_linking=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；training=READ。
+- 实际读取文件：
+
+  - `README.md` — category `readme`；20756 bytes；SHA-256 `bf9b0d2b4fb9d6dae4c4aa05687e920c27e8081fc52da1cf73dd8b1b24c0aa56`
+  - `LICENSE` — category `license`；1454 bytes；SHA-256 `fa908286fef07e1e8acd05adcdcd7bbb8c7ca4c02f563a4722dad28b94ce0b49`
+  - `setup.py` — category `dependency`；2405 bytes；SHA-256 `8fad18b40f31ce684d086ff396e0bc6203910711c4aa18adb463404871b7e04b`
+  - `environment.yml` — category `dependency`；443 bytes；SHA-256 `b33549420af12cdbdd78c0437edcbec788974763c23f3ffdcae7f89518481d0e`
+  - `cellpose/io.py` — category `data_io`；33209 bytes；SHA-256 `e04a6aac832303a68f829439764ceaa5f8caf4c43a45b7a45772585417b6fd06`
+  - `cellpose/models.py` — category `model`；23734 bytes；SHA-256 `3b007cb67910720a3d7ac16643c348bba93743e6ab81d9468e90986ca9a38511`
+  - `cellpose/vit.py` — category `model`；11421 bytes；SHA-256 `487f8efc4c8ee4498907b8ab8b3bf211645d8b7657fca7afe73ea3d1408dbf43`
+  - `cellpose/train.py` — category `training`；26882 bytes；SHA-256 `d3abca25c9e47982dc7c5b2f87a316041f9c894ea9062ffaa81afe6c8a0c9c2c`
+  - `cellpose/dynamics.py` — category `postprocessing`；31143 bytes；SHA-256 `6d68cfa5db9bbe788963456bf979e0d178aa6269543a2387374de25cf4838989`
+  - `cellpose/metrics.py` — category `evaluation`；8975 bytes；SHA-256 `ff0fa0b443178b0d64106d6857789d3c581f6457b6f60e409724336e2a890f89`
+  - `docs/do3d.rst` — category `three_dimensional_inference`；7491 bytes；SHA-256 `50211a02139b881c784375903b879a9cafe1cfa341c071859906e5ca32f79f66`
+  - `docs/train.rst` — category `training`；5030 bytes；SHA-256 `8eaee92476b62f2fecd7ba4c354ee5fcb154602d4111442caf24a76492325f5f`
+
+### 4. `WenChentao/3DeeCellTracker`
+
+- 固定提交：branch `master`，commit `0c0518c7790f6c459f205f4acadc46837231f21d`，commit date `2025-11-13T15:35:43+09:00`。
+- 阅读状态：`FULL_RELEVANT_REPO_SOURCE_READ`；完整 tree 74 个 blob；实际读取文件 29 个；missing 0；read error 0。
+- 许可证观察：`MIT`。无许可或只有 NOTICE 时，不推定再分发权。
+- 证据路径：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/WenChentao__3DeeCellTracker/repo_evidence.json`；tree：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/WenChentao__3DeeCellTracker/tree.txt`。
+- 角色：3D time-lapse tracker。
+- 方法：检测=cell centers derived from segmentation；分割=3D U-Net or StarDist wrapper plus watershed utilities；时序链接=FFN-based local matching followed by PR-GLS nonrigid registration across frames；division=lineage handling is not a central explicit branch optimizer in selected implementation；优化=iterative local matching/registration rather than global lineage ILP。
+- 训练/推理/评价：训练=model training APIs exist；推理=Tracker/TrackerLite pipelines；评价=internal tracking accuracy utilities; no Biohub metric。
+- I/O 与后处理：I/O=TIFF/NumPy preprocessing；submission=N/A；后处理=watershed and label correction。
+- 判定：relevant 3D motion/registration prior; adaptation to sparse Biohub point labels and divisions would be needed
+- 类别覆盖：data_io=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；data_loader=READ；dependency=READ；division=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；evaluation=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；inference=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；license=READ；model=READ；optimization=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；postprocessing=READ；readme=READ；submission_conversion=READ；temporal_linking=READ；training=READ。
+- 实际读取文件：
+
+  - `README.md` — category `readme`；9112 bytes；SHA-256 `2fe3f6921f9405fd3fb26de360b0f326788b565d6aa52ce759b157dbb5ac865a`
+  - `LICENSE` — category `license`；1068 bytes；SHA-256 `19d34afbf68b27c688082207872f5169651cb6bef610dba85371cc9a4781391b`
+  - `pyproject.toml` — category `dependency`；630 bytes；SHA-256 `db773ad6a924a3c2ac9f201336734440bfee6b04e7620a9bde31bbe65647bdea`
+  - `requirements.txt` — category `dependency`；82 bytes；SHA-256 `02202ecf711d1e30da637a20b19e412d21c885fe7766da0a881a2e1ebbfe2878`
+  - `CellTracker/preprocess.py` — category `data_loader`；5332 bytes；SHA-256 `b887b5e3141b9c9d643569370f3c81068d8d8ab8de411e37c0640888bd09c06c`
+  - `CellTracker/stardistwrapper.py` — category `segmentation`；14949 bytes；SHA-256 `1b03bf54ebdb48030d1644f557e17de5ec05ad2675e7300ecc76dab215e6e27e`
+  - `CellTracker/unet3d.py` — category `model`；24761 bytes；SHA-256 `168897b330e7c24afc75c010a1ed1499ad4cbb9cd02b8a4a644e3835ebe5445a`
+  - `CellTracker/ffn.py` — category `model`；14741 bytes；SHA-256 `35e0fc22a5777327df0d1e83572c1fc592345acb38d1713dc719415680033310`
+  - `CellTracker/track.py` — category `temporal_linking`；23398 bytes；SHA-256 `c6d10915a52e25410c701d19d12b4d61015d90543454c856e33480effe8fbb3c`
+  - `CellTracker/tracker.py` — category `pipeline`；70284 bytes；SHA-256 `3f253eb0a56f891e7932a0f357c1f22b676342ad28e51ddf720b74dc5c4b3f09`
+  - `CellTracker/trackerlite.py` — category `pipeline`；21852 bytes；SHA-256 `55f31806c1b757f6fcc1a106ce5efc0621da3f208f59c5550f1819ac9c80f550`
+  - `CellTracker/watershed.py` — category `postprocessing`；5756 bytes；SHA-256 `59bee9bb237e71626c6c2867aaa4cb43c193005180e133f521dfd19faf0aa60f`
+  - `CellTracker/__init__.py` — category `temporal_linking`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `CellTracker/analyses.py` — category `temporal_linking`；6322 bytes；SHA-256 `644b82f3a1e6624881d75aea610761f8107f5dde5e508cb242f5b9941dd3c720`
+  - `CellTracker/coord_image_transformer.py` — category `temporal_linking`；33501 bytes；SHA-256 `01d115c48341441f328d7836f8b0a21f9c5ea190448d43c8db8af52e3fcbe82f`
+  - `CellTracker/stardist3dcustom.py` — category `temporal_linking`；12815 bytes；SHA-256 `7313993416e85945945ecdb489227d64e4e2eb395b3e9fb70d11d558762c2139`
+  - `CellTracker/synthesize.py` — category `temporal_linking`；3268 bytes；SHA-256 `fe2374ed1db20d25f4b5f2e9aad6f75308350e2f46ceaa6131059231a02ae4dd`
+  - `Examples/use_stardist/track_stardist_ensemble_mode-h5.ipynb` — category `temporal_linking`；1486944 bytes；SHA-256 `d438572eea58715ac1884ac427c0f6fbb570dc6037666d6d6e88afc98c1440bf`；Notebook cells=32, code=15, markdown=17, all_code_cells_traversed=True
+  - `Examples/use_stardist/track_stardist_ensemble_mode.ipynb` — category `temporal_linking`；1753950 bytes；SHA-256 `3aa5ba4e5ac5832cb5758bc01f36b91c8386e034529b1291a6e1584c0f43ef9f`；Notebook cells=33, code=16, markdown=17, all_code_cells_traversed=True
+  - `Examples/use_stardist/track_stardist_single_mode-h5.ipynb` — category `temporal_linking`；1523472 bytes；SHA-256 `cc3f8fe189b1264ec2f9ef7886965b3f2b6499b4fdebc589730643249120aed5`；Notebook cells=32, code=15, markdown=17, all_code_cells_traversed=True
+  - `Examples/use_stardist/track_stardist_single_mode.ipynb` — category `temporal_linking`；2674609 bytes；SHA-256 `37c0451cf3725cafd5c7bbd8361352a687833a3d814a16f6b70e7799788836e3`；Notebook cells=32, code=15, markdown=17, all_code_cells_traversed=True
+  - `Examples/use_stardist/train_ffn_with_coordinates_csv.ipynb` — category `training`；17757 bytes；SHA-256 `79848d0b26b1e676a0004be7a11b3c71dd4d20c0bc18ec1ae0de2cf27191c807`；Notebook cells=8, code=4, markdown=4, all_code_cells_traversed=True
+  - `Examples/use_stardist/train_ffn_with_label_image.ipynb` — category `training`；17878 bytes；SHA-256 `727bbc8acd0d6f26b9fdbd228f82809a20f2f7f71c553ff79ec3c6e7baaee8e7`；Notebook cells=9, code=5, markdown=4, all_code_cells_traversed=True
+  - `Examples/use_stardist/train_stardist.ipynb` — category `training`；1652540 bytes；SHA-256 `06c19c2dc7257becce778652c6cd57721f020aec5dd24a272e4c5162a1147fba`；Notebook cells=17, code=8, markdown=9, all_code_cells_traversed=True
+  - `Examples/use_stardist/worm3_points_t1.csv` — category `submission_conversion`；4154 bytes；SHA-256 `c54e51c2c93b0ea0572f0dcbc1d27c9fa29f7b59aab0e088b63a6efdd0704d07`
+  - `Examples/use_unet/3D_U_Net_training-clear.ipynb` — category `training`；8503 bytes；SHA-256 `aa4d5b032479b03d4a0620fbfe6903fc27c2728dd78a30b8d5c06c57cda38d6b`；Notebook cells=16, code=8, markdown=8, all_code_cells_traversed=True
+  - `Examples/use_unet/ensemble_mode_worm4-clear.ipynb` — category `relevant_source`；16417 bytes；SHA-256 `7ff2edece20c88d155466c2d31e82e91346ebd8ce22217f4485679f4335fdbdd`；Notebook cells=38, code=18, markdown=20, all_code_cells_traversed=True
+  - `Examples/use_unet/single_mode_worm1-clear.ipynb` — category `relevant_source`；8562003 bytes；SHA-256 `8cb0be4a1bb56a332e73fc769b07d74b4d2618f39af65b364e3359d1693555fc`；Notebook cells=38, code=18, markdown=20, all_code_cells_traversed=True
+  - `LOG.MD` — category `relevant_source`；1429 bytes；SHA-256 `aba72dffe1adae1ed41074bb0d9f82fb77916f760a3a23badca7c6de411dc7a0`
+
+### 5. `elephant-track/elephant-server`
+
+- 固定提交：branch `main`，commit `2c132b3277a5b24468587e4542384788afe71d99`，commit date `2026-05-29T09:07:49+09:00`。
+- 阅读状态：`TARGET_FILES_READ`；完整 tree 214 个 blob；实际读取文件 11 个；missing 0；read error 0。
+- 许可证观察：`BSD-family`。无许可或只有 NOTICE 时，不推定再分发权。
+- 证据路径：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/elephant-track__elephant-server/repo_evidence.json`；tree：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/elephant-track__elephant-server/tree.txt`。
+- 角色：interactive deep-learning tracker。
+- 方法：检测=3D U-Net-like detection/segmentation models；分割=voxel segmentation；时序链接=learned flow fields connect frames；division=temporal affinity/flow design supports lineage reconstruction but no Biohub-specific division scorer observed；优化=model-based flow rather than selected global ILP。
+- 训练/推理/评价：训练=incremental/interactive train script and losses；推理=server inference script；评价=evaluation script。
+- I/O 与后处理：I/O=custom dataset generator；submission=N/A；后处理=flow/segmentation decoding。
+- 判定：scientifically relevant to learned temporal fields; target-file read only, not a ready competition adapter
+- 类别覆盖：data_io=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；data_loader=READ；dependency=READ；division=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；evaluation=READ；inference=READ；license=READ；model=READ；optimization=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；postprocessing=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；readme=READ；submission_conversion=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；temporal_linking=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；training=READ。
+- 实际读取文件：
+
+  - `README.md` — category `readme`；5663 bytes；SHA-256 `895448f922ca9c086af1479fe4a970c49559095d6e087c82cca83a6aef71960e`
+  - `LICENSE` — category `license`；1303 bytes；SHA-256 `d0b4e0eeb51c9191c329c7c80d5cf88bac48cebd8b110d54f97d9fcc831bf73a`
+  - `requirements.txt` — category `dependency`；238 bytes；SHA-256 `62e8583b2de5389415b00d60a9efa3545eb03b76973743bf094bb74ea2ab3d65`
+  - `elephant-core/setup.py` — category `dependency`；2236 bytes；SHA-256 `c1ad391d3527fd2f5c9601dcddf70610f5a95b0bdda44430765a999e73638bf6`
+  - `elephant-core/elephant/datasets.py` — category `data_loader`；48108 bytes；SHA-256 `d3cc6ac407393392b421623ec9f725f4f20ae7bf3da619480ef6073da69c8e08`
+  - `elephant-core/elephant/models.py` — category `model`；13684 bytes；SHA-256 `d936de86afeab3b450250116a81cb48f1f323db7c99305e509c6a4f5f04d7db9`
+  - `elephant-core/elephant/losses.py` — category `training`；15481 bytes；SHA-256 `d663ce0d4e220ee862eae62cef010c30867e0fd8088060237059349ef4c74f42`
+  - `script/train.py` — category `training`；10955 bytes；SHA-256 `d5d2f6b7400fe24912b5eaee293ea95f0d888d61c059bda8fb050bc467d66d1b`
+  - `script/eval.py` — category `evaluation`；2685 bytes；SHA-256 `794a68b8f6c8bd7febc68f0a80bf8c66c7e6e958725dfd82b9a0a1095d530ce8`
+  - `script/run_elephant.py` — category `inference`；5132 bytes；SHA-256 `ce14d4a125b2a279e5b7315ac03a5c9fc42d26ac5c21be410f9ae21e5ff627f8`
+  - `script/dataset_generator.py` — category `data_loader`；2806 bytes；SHA-256 `e62f9e0797e73867b5b49ec42f18de8f87173a24b452366f5fcc51dbe6cae371`
+
+### 6. `live-image-tracking-tools/geff`
+
+- 固定提交：branch `main`，commit `5727ad6e7b2a1fd04ee4a24c9e897939131a15fd`，commit date `2026-08-27T16:28:27-04:00`。
+- 阅读状态：`FULL_RELEVANT_REPO_SOURCE_READ`；完整 tree 102 个 blob；实际读取文件 88 个；missing 0；read error 0。
+- 许可证观察：`MIT`。无许可或只有 NOTICE 时，不推定再分发权。
+- 证据路径：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/live-image-tracking-tools__geff/repo_evidence.json`；tree：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/live-image-tracking-tools__geff/tree.txt`。
+- 角色：interchange format reference。
+- 方法：检测=N/A；分割=N/A；时序链接=N/A；division=track validation checks graph semantics; no tracker；优化=N/A。
+- 训练/推理/评价：训练=N/A；推理=read/write/conversion API；评价=schema and graph/track validation。
+- I/O 与后处理：I/O=Zarr-backed GEFF, schema, NetworkX/rustworkx adapters, CTC conversion；submission=CTC conversion only; not Kaggle submission assembly；后处理=validation/normalization only。
+- 判定：GEFF is an interoperability substrate, not a tracking algorithm
+- 类别覆盖：data_io=READ；data_loader=READ；dependency=READ；division=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；evaluation=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；inference=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；license=READ；model=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；optimization=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；postprocessing=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；readme=READ；submission_conversion=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；temporal_linking=READ；training=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE。
+- 实际读取文件：
+
+  - `README.md` — category `readme`；3652 bytes；SHA-256 `528ca6b2198357d5c75294970d43461132dbd0584cbd4641741989ce2a3fd9fb`
+  - `LICENSE` — category `license`；1065 bytes；SHA-256 `976ad978e72b9cb9d7fbbcf18dee36f2bc83e8e7e05d591c156e7d8de3cc04de`
+  - `pyproject.toml` — category `dependency`；4061 bytes；SHA-256 `a33d6d6090413381fb26b6f872382b0f4f034be2c376ecf6a1b20a903294dff5`
+  - `geff-schema.json` — category `format_schema`；22919 bytes；SHA-256 `74d90e2d477e490df773bb0ed27e863d4685c5d0b4ae8d5d009623d58c3c2204`
+  - `packages/geff/README.md` — category `readme`；1492 bytes；SHA-256 `18dbac4a312f4937d88f72a61526a5b9296e744a1153ff05d291c9577ee9640f`
+  - `packages/geff/pyproject.toml` — category `dependency`；2795 bytes；SHA-256 `01c646e3c8da58f02b21cbfb1a658b77bb510d37b3331028b7b6ccf44b1da1e1`
+  - `packages/geff/src/geff/core_io/_base_read.py` — category `data_io`；13852 bytes；SHA-256 `4de26927313481e81868fbe2e578de7c75b58bb546a9f7c97a57a99c57bd6bd1`
+  - `packages/geff/src/geff/core_io/_base_write.py` — category `data_io`；19218 bytes；SHA-256 `a665bf90b15bb46dc28d0d80641596f38e3f58ec25367612d5a4104583c16a63`
+  - `packages/geff/src/geff/convert/_ctc.py` — category `conversion`；9092 bytes；SHA-256 `05e71ea4d2a6da0c235b1ccc1a5cdc62db3809afcf5b545e285768fa0a1fc9b6`
+  - `packages/geff/src/geff/validate/graph.py` — category `validation`；3636 bytes；SHA-256 `6bc17ced9871ba1e959055c34860ef095b7916b6ddb97bd8f21eae82343ed227`
+  - `packages/geff/src/geff/validate/tracks.py` — category `validation`；5766 bytes；SHA-256 `e8de2aa5ef7d441012a29de0ad833ecc27a2e8f160491d4fea43325352505d38`
+  - `packages/geff/src/geff/_graph_libs/_graph_adapter.py` — category `graph_model`；2596 bytes；SHA-256 `39c610cf68e82a88d6947814c624f64c996b20d68786688d7b50516de6294a96`
+  - `packages/geff-spec/src/geff_spec/_schema.py` — category `format_schema`；17875 bytes；SHA-256 `f47124d7662ca7d0194e70d010e0ce7618d4611c42e9bda140e0c252ad14bad7`
+  - `.pre-commit-config.yaml` — category `relevant_source`；1172 bytes；SHA-256 `66a30048f5f4e89ad35bc4c7ebab69090ad9ef69b3a383680b580f70a5033cbb`
+  - `CONTRIBUTING.md` — category `relevant_source`；5705 bytes；SHA-256 `29e4a24de2d25727915aed00e30b1e9877a6ca6ce7ac6c10f913cf48362825ef`
+  - `docs/_hooks.py` — category `relevant_source`；2299 bytes；SHA-256 `b246ec4f1fc254824384804b6f89f9650ef5e16b16cff4f6dc27f3efd4b807bf`
+  - `docs/command-line-tools.md` — category `relevant_source`；411 bytes；SHA-256 `183852ebb6a7f0918c27016d2792d3be43ad6c14016cd8116ac7c208486438b8`
+  - `docs/compatibility.md` — category `relevant_source`；755 bytes；SHA-256 `3246712d583a8444f398869b41ca54fb14185dab821d025240de4d4ceaf0cdad`
+  - `docs/convert.md` — category `relevant_source`；1818 bytes；SHA-256 `9498ab0abebb761f831c0636a5f2ce4956a4451da29b5d53caa03343c2e94c8c`
+  - `docs/geffception.md` — category `data_io`；4183 bytes；SHA-256 `f20896ebac13009bd72dfdebefd1f168ba7b68e830ab825fe03691380bf01444`
+  - `docs/index.md` — category `relevant_source`；161 bytes；SHA-256 `1d47b95d474c1c2ca1e5f30e46f16b42b17e1041b3384742461378143161ab8c`
+  - `docs/js/mathjax.js` — category `relevant_source`；384 bytes；SHA-256 `5c08877d7224f72c8ec0208e8208e1c225fe7b38f126e48e54ac707da7b0b3f5`
+  - `docs/specification.md` — category `data_io`；12318 bytes；SHA-256 `88604e64ee45721749431b9c71a3dea868b7a59abbb758681f8e83d551557b67`
+  - `docs/tips-and-tricks.md` — category `relevant_source`；2684 bytes；SHA-256 `54c1237301a337d80245f2622731a1b0daca520dd39fea9518adcbc80f66d8e6`
+  - `docs/tracking.md` — category `temporal_linking`；3933 bytes；SHA-256 `609a16fe32a0bb29313fa3ef315696527d7815a903c880eb28fcdf911ac5b70e`
+  - `docs/what-is-geff.md` — category `data_io`；788 bytes；SHA-256 `3c78e34c7fbb4514eee6ce14c3d6630c002562a54b31ad618f1cdbfd2257a62f`
+  - `mkdocs.yml` — category `relevant_source`；2242 bytes；SHA-256 `ebec7ee69f8fedc9f7ae0387744c0984f1443139a03fe4e2c1637b327113b788`
+  - `packages/geff-spec/LICENSE` — category `license`；1065 bytes；SHA-256 `976ad978e72b9cb9d7fbbcf18dee36f2bc83e8e7e05d591c156e7d8de3cc04de`
+  - `packages/geff-spec/README.md` — category `readme`；1040 bytes；SHA-256 `5cd7aa3b2f38490e8a5a31d680f316d45215d19316bf0097c15eb9882e244dbc`
+  - `packages/geff-spec/pyproject.toml` — category `dependency`；971 bytes；SHA-256 `a57d19d73fbca66277036716f646e90268bb3e5a83e0f806e91816a6b1d747bc`
+  - `packages/geff-spec/src/geff_spec/__init__.py` — category `data_io`；736 bytes；SHA-256 `40103587d652943ff5c3f81c512717c3f9173a8ef8a2bc76423a6c88d7ee6258`
+  - `packages/geff-spec/src/geff_spec/_axis.py` — category `data_io`；4269 bytes；SHA-256 `b4c212e73d647ec6e5bedd7aff4adc14e19549f36d4696079b3815510a93696a`
+  - `packages/geff-spec/src/geff_spec/_prop_metadata.py` — category `data_loader`；2539 bytes；SHA-256 `bbf08ebfaf85b7f3ed037d5c823b1824b4259d47f329653242ce4a6adce443c5`
+  - `packages/geff-spec/src/geff_spec/_valid_values.py` — category `data_io`；3733 bytes；SHA-256 `96f6d138131b4824bb1e6e50e94f9f292341c565152bcd81b2406a0c979ce7eb`
+  - `packages/geff-spec/src/geff_spec/utils.py` — category `data_io`；11680 bytes；SHA-256 `df3963bc8b5aa2a0ed645d9d7022f66feec38437cc81760af0129e417e366d46`
+  - `packages/geff-spec/tests/conftest.py` — category `data_io`；259 bytes；SHA-256 `5ee15d577c3fa365ab564bcfe89277d79e3a07b4024397d7859a020be2af11b8`
+  - `packages/geff-spec/tests/test_axis.py` — category `data_io`；2587 bytes；SHA-256 `51cffe66eb65531bd789d5e283d68268fcc111fa9df78105945869434faec4d8`
+  - `packages/geff-spec/tests/test_prop_metadata.py` — category `data_loader`；2843 bytes；SHA-256 `e6e7adae96a58ea45fed7d4d429e42bf1856062b6d2a4ca7c344c89e3e0e7f58`
+  - `packages/geff-spec/tests/test_schema.py` — category `data_io`；18985 bytes；SHA-256 `264870fb1c385ceb1ca02b85e83797da371147ddd9c12e3ce2c630dce044c2fa`
+  - `packages/geff-spec/tests/test_utils.py` — category `data_io`；15451 bytes；SHA-256 `0a6bdd43bc1af345df373256814d22caee4cb66bb73692dca69ea38415cbf9d4`
+  - `packages/geff-spec/tests/test_valid_values.py` — category `data_io`；990 bytes；SHA-256 `6792e83c18740f23647c9a7ad08fd52b0eeb7c4d2bc1e1b8d7ce2957b9530284`
+  - `packages/geff/LICENSE` — category `license`；1065 bytes；SHA-256 `976ad978e72b9cb9d7fbbcf18dee36f2bc83e8e7e05d591c156e7d8de3cc04de`
+  - `packages/geff/src/geff/__init__.py` — category `data_io`；542 bytes；SHA-256 `d1afb04449dcbfc5edaaa61de075ab2bb0ef1392c2c26cdcb4d62886f8c42be5`
+  - `packages/geff/src/geff/_cli.py` — category `data_io`；5311 bytes；SHA-256 `37ea812f569909a1ac0273f8434e5f1e6e8881e4c011562362ec363dd34477ba`
+  - `packages/geff/src/geff/_graph_libs/README.md` — category `readme`；1787 bytes；SHA-256 `0adc9223b18ebba4e620e642cbde6eb60f2aa88d158a928f7d4e375883fbcc88`
+  - `packages/geff/src/geff/_graph_libs/__init__.py` — category `data_io`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `packages/geff/src/geff/_graph_libs/_api_wrapper.py` — category `data_io`；14643 bytes；SHA-256 `fc86a3b6a0cdcad90029aed12879b81bcbb237149362ea12af80e201d1082230`
+  - `packages/geff/src/geff/_graph_libs/_backend_protocol.py` — category `data_io`；2389 bytes；SHA-256 `15c23b5a89ad2a304c1d8311cd8d78c942a3201ecc87d14b7d1dc2695dda31db`
+  - `packages/geff/src/geff/_graph_libs/_errors.py` — category `data_io`；49 bytes；SHA-256 `1b284fbb93557453880926862500beff99b8294b11f898bce33e6541bc6d3047`
+  - `packages/geff/src/geff/_graph_libs/_networkx.py` — category `data_io`；5599 bytes；SHA-256 `6b00146cecd26432b31fa54abff007290948c6b667ef7437125ca670bbbe0f54`
+  - `packages/geff/src/geff/_graph_libs/_rustworkx.py` — category `data_io`；7184 bytes；SHA-256 `61c51d83272618c4f5457cdb5653edf4c60a805612da15dd969b793aa3bec0b5`
+  - `packages/geff/src/geff/_graph_libs/_spatial_graph.py` — category `data_io`；9341 bytes；SHA-256 `936bb49d982e1f77e194cdc4b1d5f71d6a35c11be4be7b5356954681ff304939`
+  - `packages/geff/src/geff/_path.py` — category `data_io`；1155 bytes；SHA-256 `519bc42b7460b2d246129771163f16dd67441be76d340551daf3ab7732add7c2`
+  - `packages/geff/src/geff/_typing.py` — category `data_io`；1723 bytes；SHA-256 `4ae1dcf1a7543bbecfe45db51544ac65d83f8df903153473b2bb14c0ea10744d`
+  - `packages/geff/src/geff/convert/__init__.py` — category `data_io`；1517 bytes；SHA-256 `c04a5d7766bbe51d7c54fdbb4f98cc03e4a55706ebeb48b39aeed94dde16501b`
+  - `packages/geff/src/geff/convert/_dataframe.py` — category `data_loader`；12467 bytes；SHA-256 `0f9a97bc18b7c368cbc2694767daa057b50ad8b4d414f5d8151a61e710636649`
+  - `packages/geff/src/geff/convert/_trackmate_xml.py` — category `data_io`；39738 bytes；SHA-256 `810323683e19f7a9544063f976fc817a50db804ecf7e1dfb97c71232535f013a`
+  - `packages/geff/src/geff/core_io/__init__.py` — category `data_io`；351 bytes；SHA-256 `121caf43f0b30d0513628bc6587f422e2807359736644b23d613110a50dfe50a`
+  - `packages/geff/src/geff/core_io/_serialization.py` — category `data_io`；4998 bytes；SHA-256 `9b8339cc526e268681511895e9c614f8092ed9e1d42f388b2ff2d43a8c7b71f3`
+  - `packages/geff/src/geff/core_io/_utils.py` — category `data_io`；15597 bytes；SHA-256 `82bef899889d690b7d4cd43055d0387edab2607c8568beb019e3438bd2ac10f7`
+  - `packages/geff/src/geff/testing/__init__.py` — category `data_io`；29 bytes；SHA-256 `27ef8e98c44946c5f8d7c7b8f5197efcd81148828247d76c87522aa482052f3d`
+  - `packages/geff/src/geff/testing/_utils.py` — category `data_io`；5351 bytes；SHA-256 `cded8426649b1dce15baf8898b0ec141d883bb6bc87f22787c9882f127466198`
+  - `packages/geff/src/geff/testing/data.py` — category `data_loader`；23640 bytes；SHA-256 `6ee33331808338ab487a6ce7527eae99ba26c586a8a7ba971b8e80a27e6ec8e4`
+  - `packages/geff/src/geff/validate/__init__.py` — category `data_io`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `packages/geff/src/geff/validate/data.py` — category `data_loader`；3226 bytes；SHA-256 `ec4e6fe3c5b70251032048da8c3452a8466db1f5b9bad4670280bc0a3cd4f114`
+  - `packages/geff/src/geff/validate/segmentation.py` — category `data_io`；9659 bytes；SHA-256 `584afc3892c4871bc799af143c6e25909678fa0932d4f0f88f234ee38087172e`
+  - `packages/geff/src/geff/validate/shapes.py` — category `data_io`；2624 bytes；SHA-256 `62c40170d136f43411075427ad84a5fb536bb165513a16f33e9b03b15bdcc673`
+  - `packages/geff/src/geff/validate/structure.py` — category `data_io`；7449 bytes；SHA-256 `f3fb27bbd6873fba39e5015ed151f93de67c345d65f0f85ed253119ac59eee9f`
+  - `packages/geff/tests/__init__.py` — category `data_io`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `packages/geff/tests/data/FakeTracks.xml` — category `data_loader`；271605 bytes；SHA-256 `72fb578c8585c76f2bda5d5e2abd9a8ff8621884e3b068101f4ead39511ce91d`
+  - `packages/geff/tests/test_bench.py` — category `data_io`；4443 bytes；SHA-256 `af8c6d26ce3b2df66f5917dee935817df2be54434501d91378bfc050affa0864`
+  - `packages/geff/tests/test_cli.py` — category `data_io`；3229 bytes；SHA-256 `e5bd6e893c312d1eecd7719ad7630440372a9b0256e774634e3b75b87871b29d`
+  - `packages/geff/tests/test_convert/test_ctc.py` — category `data_io`；11808 bytes；SHA-256 `f3d445a900a91596f7f117e80af50c0d29516a4f20753e82fe6e6d325615d762`
+  - `packages/geff/tests/test_convert/test_dataframe.py` — category `data_loader`；14942 bytes；SHA-256 `95aa8356969ad933939e2fef971f0209e399389e0d2a94a0a75e4571f639d271`
+  - `packages/geff/tests/test_convert/test_trackmate_xml.py` — category `data_io`；40653 bytes；SHA-256 `fbf3c22fe212c000072d7a2735389b41b6b26ed3b0770335ee17c282f7f9b735`
+  - `packages/geff/tests/test_core_io/test_base_read.py` — category `data_io`；10431 bytes；SHA-256 `a35a61c4b70385f73326edcb10001063e9ed59c3df14b42b6b566dc6f75b1f6c`
+  - `packages/geff/tests/test_core_io/test_base_write.py` — category `data_io`；18718 bytes；SHA-256 `0f8065da16f22a05d111ced9ec74585001c8f5a7650a56c2f1b4d1b961cc24c0`
+  - `packages/geff/tests/test_core_io/test_core_utils.py` — category `data_io`；9752 bytes；SHA-256 `a815a4c908d69c031aed462838a92ae5b0531783058c3ac8788715d7429c4bcb`
+  - `packages/geff/tests/test_core_io/test_serialization.py` — category `data_io`；8877 bytes；SHA-256 `0167eb5ec6ae21e2ac00f7849c8b794a7da41a4b9a82bd31863317a00455fe54`
+  - `packages/geff/tests/test_docs/test_specification_json.py` — category `data_io`；3061 bytes；SHA-256 `5f575aac4ef6821a3224f9acd973b77b112fa5951c2fb8cad38330ff89958568`
+  - `packages/geff/tests/test_graph_libs/test_api_wrapper.py` — category `data_io`；14114 bytes；SHA-256 `a255ea5f234339bc240928b28c01247a394273e646bc41a336544695895008da`
+  - `packages/geff/tests/test_testing/test_testing_data.py` — category `data_loader`；28896 bytes；SHA-256 `fa1a580d5343cd0beded90657a623468ce24e3052f8b74d6d5140ae0aba27f02`
+  - `packages/geff/tests/test_validate/test_graph.py` — category `data_io`；3143 bytes；SHA-256 `5342b1659e8e97d94d4bef38258517f425ac326838504cd6c54ae5574cc35ae2`
+  - `packages/geff/tests/test_validate/test_segmentation.py` — category `data_io`；4910 bytes；SHA-256 `5835514659e56ba0ff3b5173f7e4f56cf0c6214ce865f312f49b059cd751c7a8`
+  - `packages/geff/tests/test_validate/test_shapes.py` — category `data_io`；2262 bytes；SHA-256 `6ce992b12a5206a5def519a9badccf972069909e4b7a2c43017f62fc110768ce`
+  - `packages/geff/tests/test_validate/test_structure.py` — category `data_io`；13354 bytes；SHA-256 `625f6459cfc2e3dd91ef40c06a5be367b2a225138e26383730f6b96a63402098`
+  - `packages/geff/tests/test_validate/test_tracks.py` — category `data_io`；5747 bytes；SHA-256 `9407a6749c72d79f74d7c9bbe48549ce55cbcb0b20d274f3528c10a7147d0151`
+  - `packages/geff/tests/test_validate/test_validate_data.py` — category `data_loader`；5347 bytes；SHA-256 `4f90724dcf282333be5ba5bd2f58a42d1518410d9dfccac04dfe19584d15f0d1`
+
+### 7. `live-image-tracking-tools/geff-java`
+
+- 固定提交：branch `main`，commit `2e071f6295c8fe488182d15b7b80c0e366d9c9f4`，commit date `2026-07-19T16:45:20+02:00`。
+- 阅读状态：`FULL_RELEVANT_REPO_SOURCE_READ`；完整 tree 106 个 blob；实际读取文件 31 个；missing 0；read error 0。
+- 许可证观察：`BSD-family`。无许可或只有 NOTICE 时，不推定再分发权。
+- 证据路径：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/live-image-tracking-tools__geff-java/repo_evidence.json`；tree：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/live-image-tracking-tools__geff-java/tree.txt`。
+- 角色：cross-language GEFF implementation。
+- 方法：检测=N/A；分割=N/A；时序链接=N/A；division=N/A；优化=N/A。
+- 训练/推理/评价：训练=N/A；推理=Java read/write/roundtrip API；评价=cross-language round-trip tests。
+- I/O 与后处理：I/O=Zarr v2 GEFF Java structures and variable-length properties；submission=N/A；后处理=validation/round-trip only。
+- 判定：complete relevant-source read confirms interoperability role, not a tracking method
+- 类别覆盖：data_io=READ；data_loader=READ；dependency=READ；division=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；evaluation=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；inference=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；license=READ；model=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；optimization=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；postprocessing=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；readme=READ；submission_conversion=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；temporal_linking=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；training=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE。
+- 实际读取文件：
+
+  - `.pre-commit-ci.yaml` — category `relevant_source`；18 bytes；SHA-256 `c513a62440445a1c76bd8f5c4ee0f27ecb24c85e5438e86bbf3c7732bd1b9067`
+  - `.pre-commit-config.yaml` — category `relevant_source`；11 bytes；SHA-256 `75e9d41dd60fdcd482780ad0af82cc059dcbf5bbe6bd8ba5ec8470b97b641116`
+  - `LICENSE.txt` — category `license`；1306 bytes；SHA-256 `ce7888f3145aeaa68c1b6d3575dd200c3e3bc10df38554f55ecd3fe7522af328`
+  - `README.md` — category `readme`；14268 bytes；SHA-256 `5b6122b498ccdc86109db1f1c9af7df7a0aed2b9f005cbcdc3edd3935ec638fa`
+  - `cross-language-tests/README.md` — category `readme`；2952 bytes；SHA-256 `f22a0985212db88a93f02d0c4c32242c50c03d7f5cbac6d3db839bf758430b6c`
+  - `cross-language-tests/pyproject.toml` — category `dependency`；250 bytes；SHA-256 `9993eafa39a1297c28a22f72ac8ba40fa28bdc5111e6da996956efbbce7c3f01`
+  - `cross-language-tests/run_tests.py` — category `relevant_source`；17062 bytes；SHA-256 `d23b1465421543c063e8ab01c5ef7cf4a725801683931787caa126614eed2449`
+  - `doc/IMPLEMENTATION_PROGRESS.md` — category `data_io`；4371 bytes；SHA-256 `c961ef79714567f4f735cfaaa32b64bea30372e335a0b8239b5fec30c59e831d`
+  - `doc/V1_COMPATIBILITY_SUMMARY.md` — category `relevant_source`；8341 bytes；SHA-256 `19c39ddd5ee4dfc5f6829204e0e41c6168eef2ae6b955c4899018311f887dd80`
+  - `doc/V1_SPEC_COMPATIBILITY_PLAN.md` — category `relevant_source`；11302 bytes；SHA-256 `5acce3ce6ede146e7dac08cbf203bd415e225c59723bd754d4209fc412c932a6`
+  - `doc/VARLENGTH_IMPLEMENTATION.md` — category `data_io`；6741 bytes；SHA-256 `81e25dcc75d76613be7ebbfbf47bc2b03b7486af5744cff8aa24f340320385eb`
+  - `doc/release.md` — category `relevant_source`；1601 bytes；SHA-256 `dc7abaf07c9aa3fca52d6216be7d6e555b7979b1655bb65fceee44a55a87b690`
+  - `imglib2-eclipse-mars-clean-up-formatter-style.xml` — category `relevant_source`；37522 bytes；SHA-256 `5b15fb23c2ad4997f3bcd04643c0e88dfde31e02bcbda3521bcb4c2190c3dcce`
+  - `pom.xml` — category `relevant_source`；8975 bytes；SHA-256 `90a6c76d64ab1c71d47b9f6d378e52454ee78f428a6dceac001e780cd01cff6b`
+  - `src/main/java/org/mastodon/geff/Geff.java` — category `data_io`；5232 bytes；SHA-256 `5d3d97b15a4870b176fb4f5ff42945e37bbc79f51901840ccd9a3a3bcff0e74e`
+  - `src/main/java/org/mastodon/geff/GeffAxis.java` — category `data_io`；7622 bytes；SHA-256 `59606b32133bc89b38ec720066720c2eebeb28f5be7afa882fd7803e6ad08ddc`
+  - `src/main/java/org/mastodon/geff/GeffEdge.java` — category `data_io`；22801 bytes；SHA-256 `076109aad06f3deae9c1a6b011153fb64e85126fd6c1bfa3fda35136c87a912b`
+  - `src/main/java/org/mastodon/geff/GeffMetadata.java` — category `data_loader`；13099 bytes；SHA-256 `1866d72e411a4d7470f4784a774303b749f6822e1de4f9ab3d0dce38fd5ede56`
+  - `src/main/java/org/mastodon/geff/GeffNode.java` — category `data_io`；44131 bytes；SHA-256 `2c28c09d4df156ae32cb8ce1430d04cd433a708234ee0e089ecfa2605baa8027`
+  - `src/main/java/org/mastodon/geff/GeffUtils.java` — category `data_io`；42457 bytes；SHA-256 `49eaf272e232b1e38909bf7b714f784c8133f2cbff1a3aa4765efd5fcdc7c6ea`
+  - `src/main/java/org/mastodon/geff/PropMetadata.java` — category `data_loader`；3810 bytes；SHA-256 `0d2c905e387518a144b77e221e9ddc3c985e04d9ed85848727c72a99ac84572d`
+  - `src/main/java/org/mastodon/geff/RoundTripGeff.java` — category `data_io`；3624 bytes；SHA-256 `6e6c403e5e46ba1614beb91aafbbfa7a55cc0f34cccf916cec0e32d4ef678968`
+  - `src/main/java/org/mastodon/geff/VarlengthProperty.java` — category `data_io`；5671 bytes；SHA-256 `6ff8dd01722eb241ae52dcc18e7a821975dc335675a1f3b8cceafe7f641bbfa1`
+  - `src/main/java/org/mastodon/geff/geom/GeffSerializableVertex.java` — category `data_io`；1674 bytes；SHA-256 `59b59a3ca4c9340d31c2d9f4b2aad89d05507de410ecbbc9eb26a09389b88e92`
+  - `src/test/java/org/mastodon/geff/ChunkedWriteTest.java` — category `data_io`；5033 bytes；SHA-256 `62e7c8b7c3d0331f66a9389b65adb34feb2fbee7de7f4c1c6c0140e5c7b4c5b1`
+  - `src/test/java/org/mastodon/geff/GeffAxisTest.java` — category `data_io`；10891 bytes；SHA-256 `be9a1cde12360488086b478df940159fc9d9b78611536da953f1eeb5c35337d8`
+  - `src/test/java/org/mastodon/geff/GeffCreateTest.java` — category `data_io`；4549 bytes；SHA-256 `4069f865570a27094de2472b1823e6fd49fa9d0e82b359ac31b13ec540b44af6`
+  - `src/test/java/org/mastodon/geff/GeffTest.java` — category `data_io`；16107 bytes；SHA-256 `6a19575867d8876dd795a695a5f12886d12cea60273e2d7fa37c7b98f8be57f5`
+  - `src/test/java/org/mastodon/geff/VarlengthPropertyTest.java` — category `data_io`；5389 bytes；SHA-256 `5031331d9bc2b0b51391838d3fd07a0d82f85ce39e13d7a3ecbc714ce213366e`
+  - `src/test/java/org/mastodon/geff/VarlengthPropertyWriteTest.java` — category `data_io`；6559 bytes；SHA-256 `0b460cb0b536890aac6737266461114a3ab4aa8d58b6f8a085bc864aea9fd627`
+  - `src/test/java/org/mastodon/geff/VersionPatternTest.java` — category `data_io`；3780 bytes；SHA-256 `f4f8522b48f72c81fcf597d9805346c2f2486dd8bfbf2cbe84eb9370dd887ee8`
+
+### 8. `m9h/biohub-starter`
+
+- 固定提交：branch `master`，commit `c3cdf6bcace5708806efbdac61dcdf6691a234bf`，commit date `2026-07-25T17:06:06-07:00`。
+- 阅读状态：`FULL_RELEVANT_REPO_SOURCE_READ`；完整 tree 20 个 blob；实际读取文件 19 个；missing 0；read error 0。
+- 许可证观察：`NO_LICENSE_FILE_OBSERVED`。无许可或只有 NOTICE 时，不推定再分发权。
+- 证据路径：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/m9h__biohub-starter/repo_evidence.json`；tree：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/m9h__biohub-starter/tree.txt`。
+- 角色：competition validation/research starter。
+- 方法：检测=delegates to official baseline；分割=N/A；时序链接=compares official greedy with ILP and post-processing；division=candidate analysis and gradient-boosted division classifier experiments；优化=official ILP plus experiment scripts。
+- 训练/推理/评价：训练=mostly analysis; classifier script trains HistGradientBoostingClassifier；推理=embryo-disjoint validation workflow；评价=local competition metric scripts。
+- I/O 与后处理：I/O=GEFF/official baseline outputs；submission=delegates submission packaging；后处理=short-component filtering, motion relinking, geometric division recovery。
+- 判定：main contribution is split/evaluation design; README scores and leaderboard statements are AUTHOR_CLAIM, not independently rerun
+- 类别覆盖：data_io=READ；data_loader=READ；dependency=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；division=READ；evaluation=READ；inference=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；license=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；model=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；optimization=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；postprocessing=READ；readme=READ；submission_conversion=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；temporal_linking=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；training=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE。
+- 实际读取文件：
+
+  - `README.md` — category `readme`；10334 bytes；SHA-256 `2ae6e8761e7f2bdf350dbeb1092eb529bb3d7018e1be469b32d09b3705b41001`
+  - `FINDINGS.md` — category `experiment_report`；36011 bytes；SHA-256 `2f7f424a6835282940115e8bc04ced3abb45f600c1c3f61fa68f53275a0d256c`
+  - `CV_LB_LOG.md` — category `experiment_report`；3172 bytes；SHA-256 `24a4163f532b2ff2101c1ec1059a5df6af268fb53b104d422120c0db2853965b`
+  - `notebook/embryo_holdout_validation.py` — category `evaluation`；15614 bytes；SHA-256 `47d73463617a3742cd2c0779aa9c8a1965575884574c3bfab341754abbc1ea07`
+  - `scripts/analyze_dataset.py` — category `data_loader`；4881 bytes；SHA-256 `f5c6fa586c96396c43a6e5dc0f2c29541c5d8e7955166ff2541511dafbab6fff`
+  - `scripts/eval_per_sample.py` — category `evaluation`；4381 bytes；SHA-256 `7bd469d56f42c98b9d6537b83f337cad7425641df2000a0105beb4c5449d0fba`
+  - `scripts/make_embryo_splits.py` — category `cv_design`；3486 bytes；SHA-256 `a4c27bf48636d0f50ada4b89dc7d7af99ed5b47d649f4169d015f4a15e96e30a`
+  - `scripts/analyze_candidate_divisions.py` — category `division`；5684 bytes；SHA-256 `3cbf0f24b0c3f140419455e48398be0039a85bf6a29d98df657a439646bb55dc`
+  - `scripts/build_division_classifier.py` — category `division`；7562 bytes；SHA-256 `7f676128e740276aafd189b2cc780caf2537721584ed9cf9481a109d0ea0db57`
+  - `scripts/postprocess.py` — category `postprocessing`；12122 bytes；SHA-256 `5db835e7b89940ec9ad9a1cd828998f35b11592779a9f20c8af35d2d5a4a7ce1`
+  - `notebook/embryo_holdout_validation.ipynb` — category `data_io`；20431 bytes；SHA-256 `75d90b9809174f86bb07fd8919d3fd77cf318b74542f4ff13f09d97e91dad224`；Notebook cells=18, code=5, markdown=13, all_code_cells_traversed=True
+  - `notes/HISTORY_AND_IDEAS.md` — category `relevant_source`；10309 bytes；SHA-256 `4e9d12f0c9b9ba2dac55ad48c9f7eec1d456bab4d4d7abfdf8dbcd1af388aa6d`
+  - `notes/PAPER.md` — category `relevant_source`；12375 bytes；SHA-256 `480bc0aaf3d18f4e49c6eb9cb0087466e114d0820ce43e118f83ce2a2276c2b9`
+  - `notes/READING_LIST.md` — category `relevant_source`；21092 bytes；SHA-256 `801c5c6f5aad05e447d8370bf10f56697486088ac1d89f2c8f12624aeb8153f7`
+  - `notes/SLIDES.md` — category `relevant_source`；7202 bytes；SHA-256 `32c39c0b9eff3da5e57e9a547dd0ba291dc67d110f33e406c6eb9af47b94c2c7`
+  - `scripts/compare_configs.py` — category `relevant_source`；5092 bytes；SHA-256 `6b4eef0b80dce0fdbb0c13f0d5cbe8d2f6795d3b83be5e30d695ee2911608848`
+  - `scripts/diagnose_divisions.py` — category `data_io`；6789 bytes；SHA-256 `551dc89d92e4b3f4d296afb46b79b5b3c912d53376d1408318d0999c149b504c`
+  - `scripts/ot_division_probe.py` — category `data_io`；5272 bytes；SHA-256 `dee014615c6e2775cb644571990d22346e95c3901fb3bcb7b6b4dcabce79b370`
+  - `scripts/ot_probe_detector.py` — category `relevant_source`；5855 bytes；SHA-256 `c1cf4672b3955a43933ce573acadfc4d734b46072472c3f1a0c0dcb3b3b9e7be`
+
+### 9. `matt-ceran/biohub-cell-tracking`
+
+- 固定提交：branch `main`，commit `446589b772f4d98adecc3f6ba15434f0e0d57069`，commit date `2026-08-13T17:43:45-07:00`。
+- 阅读状态：`FULL_RELEVANT_REPO_SOURCE_READ`；完整 tree 84 个 blob；实际读取文件 83 个；missing 0；read error 0。
+- 许可证观察：`NO_LICENSE_FILE_OBSERVED`。无许可或只有 NOTICE 时，不推定再分发权。
+- 证据路径：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/matt-ceran__biohub-cell-tracking/repo_evidence.json`；tree：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/matt-ceran__biohub-cell-tracking/tree.txt`。
+- 角色：competition participant pipeline。
+- 方法：检测=3D DoG adaptive proposals; small 3D CNN appearance filter；分割=N/A: point centers；时序链接=whole-movie min-cost-flow linking；division=geometric and learned division modules exist, but README says geometric repair is disabled and no development winner frozen；优化=min-cost flow。
+- 训练/推理/评价：训练=positive-unlabeled appearance training and separate division-head training；推理=baseline runner；评价=local competition metric implementation; numeric README results remain AUTHOR_CLAIM。
+- I/O 与后处理：I/O=competition arrays/GEFF；submission=validated submission.csv assembly；后处理=minimum-track-length pruning; division experiments。
+- 判定：highly relevant complete participant system; no license file observed, so code reuse is legally constrained
+- 类别覆盖：data_io=READ；data_loader=READ；dependency=READ；division=READ；evaluation=READ；inference=READ；license=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；model=READ；optimization=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；postprocessing=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；readme=READ；submission_conversion=READ；temporal_linking=READ；training=READ。
+- 实际读取文件：
+
+  - `README.md` — category `readme`；12069 bytes；SHA-256 `8efbe8d4570ef1bb48824f8e140d119ab731cb9e734ad561372e38261ab18152`
+  - `pyproject.toml` — category `dependency`；1203 bytes；SHA-256 `41156b54d4d5c5c6e6696de49db8f0120677c9bde0529acb13eaa97390705f2e`
+  - `src/biohub/io.py` — category `data_io`；2973 bytes；SHA-256 `8511fc19f4acd4981d495fb8d1d0f3896824919dc5b1e6f37b60d6192553f289`
+  - `src/biohub/detect.py` — category `detection`；7983 bytes；SHA-256 `b7f4a0a63be077043e5d40fc6b4c8903f8ed5625102c1e3b648e2e1639e0720b`
+  - `src/biohub/appearance_model.py` — category `model`；18941 bytes；SHA-256 `f53e31b116566d0f6a704de316c5ff4f9a5a5963b4882f4a3824ced3a42bb338`
+  - `src/biohub/link.py` — category `temporal_linking`；18865 bytes；SHA-256 `ea74e84df24de799bbf530dae16e11790234b3377e483cf03e78e667eb2b2d92`
+  - `src/biohub/division.py` — category `division`；20884 bytes；SHA-256 `6cc75faab0de69458d2bbc141a8e79e8371d946fcc88a6293af332dbfaec2e13`
+  - `src/biohub/division_model.py` — category `model`；73009 bytes；SHA-256 `53badbdc338c6067bc2aa539fececc56ae89f256c4177e87ebed668439c04443`
+  - `src/biohub/metric.py` — category `evaluation`；9503 bytes；SHA-256 `1e935ceb00e26705ff1ccc7a548547dd4742a8ea5f74ae7e0d03eac29ee03dd2`
+  - `src/biohub/submission.py` — category `submission_conversion`；4607 bytes；SHA-256 `862b5e6fa85e0a308c0a3a341a73874670d5fdc51fdf43a25ba706dab4ead96f`
+  - `scripts/train_appearance.py` — category `training`；32704 bytes；SHA-256 `b1fc3558b17a2188784c3e762690dee664f8aabf9dffff96837ffa1e3323d66c`
+  - `scripts/train_division.py` — category `training`；49047 bytes；SHA-256 `8f100e19fdb2a9417559ed03e5106c6d334e07a4bf5364b270aa0e05e72b66ec`
+  - `scripts/run_baseline.py` — category `inference`；3197 bytes；SHA-256 `57cf99ddc0f2fd5278ca0fea09ab1a26a0aff4d93c6bdc29e22ef7bea11a58c8`
+  - `experiments/2026-08-13-phase11-v2-atlasforge.md` — category `experiment_report`；8022 bytes；SHA-256 `9a77429b073d582e85bf1f10520a0503f4f2cbd9df2e2d3d8909fb2e389dd778`
+  - `configs/README.md` — category `readme`；160 bytes；SHA-256 `02a23bf56b4c855bcbb224a7ac251550f9f17b71fa1a4f20761c84ee98d7e0fc`
+  - `configs/phase11_division_acceptance.json` — category `data_io`；2347 bytes；SHA-256 `6f3678436d9b11f61a1f17b068f8543452d9b3089a9d258360934a59696a9c5c`
+  - `configs/phase11_division_assignment.json` — category `data_io`；2514 bytes；SHA-256 `22bbd5cef2864769ac2b17f7fe9f4275a7ea53d8d4715103cfffce03b4459a35`
+  - `configs/phase11_division_proposal.json` — category `data_io`；4090 bytes；SHA-256 `83ec5cb8818cab4470cc00c90e3d34aa23d01bcd90e2f4619031bc17a7630f80`
+  - `configs/phase11_division_sampling.json` — category `data_io`；2785 bytes；SHA-256 `35cc862afb4c87bcdd975e6662fe3e0716a768bc906eebd3c815fb2c630a3806`
+  - `configs/phase11_division_split.json` — category `data_io`；10249 bytes；SHA-256 `974cda6c2cc907c0ac71af93ee969bcd151bb42b0ad56343a307aa2942ba6ecb`
+  - `configs/phase11_v2_division.json` — category `data_io`；2547 bytes；SHA-256 `046ae0962297b7f4e27643378af0d0a888a589212c40254fd5f698f5ffd09112`
+  - `data/README.md` — category `readme`；442 bytes；SHA-256 `b8b5c85c6dba393626a7112b978f6e66408cda081611cf6292f712dc74aecd1d`
+  - `experiments/2026-08-02-phase11-fixed-head-training.md` — category `training`；5705 bytes；SHA-256 `25c16032896ca6edc01c2dd168f050ad0c049482ff79d7ea49e4d21d2d8ba7e6`
+  - `experiments/2026-08-11-phase11-development-grid.md` — category `relevant_source`；6896 bytes；SHA-256 `7651620e5d31c8a15c681595914f20ee62634328beeda18b1a94e91fec36b21b`
+  - `experiments/2026-08-11-phase11-truth-rank-atlas.md` — category `relevant_source`；9120 bytes；SHA-256 `a731aa0287809a992e331c3b890daa76148cb41c79b586c18371dee1c203c0aa`
+  - `experiments/README.md` — category `readme`；1247 bytes；SHA-256 `f53a84c5cdbb49e6814aca7a5ae1e881507fde5f08085f3b3119097043c4fe58`
+  - `notebooks/README.md` — category `readme`；160 bytes；SHA-256 `35a06898c2a95e78698105e21fa8a3cf0d74d120efc5c3774ca2d4bbb975154c`
+  - `scripts/audit_division_pair_proposals.py` — category `data_io`；49610 bytes；SHA-256 `e5ae0962448a0c9ec8c1215e5c8d203313feaba9eabb3cd62556ad1a42a0158a`
+  - `scripts/audit_division_proposals.py` — category `data_io`；34344 bytes；SHA-256 `9c8251a1069635e7646b5d647ddaa1a4b316964038af8962fcd091a7aeabc255`
+  - `scripts/audit_division_truth_ranks.py` — category `data_io`；40393 bytes；SHA-256 `b9747aa76c6ea0dfbbd4d81c849e7d04c6f0ff7ec25e6cffe5ff648316cc6a1c`
+  - `scripts/audit_division_v2_development.py` — category `data_io`；31462 bytes；SHA-256 `c65c75902900fd35a4caa3ec105e989275280860eee71afd8aa48618d5613976`
+  - `scripts/build_appearance_dataset.py` — category `data_loader`；4703 bytes；SHA-256 `fbbd459f484df27cf58778a4c1fbe1ca18e9e16a09b3d7ed8a4243bae8fb7600`
+  - `scripts/build_division_cache.py` — category `data_io`；67128 bytes；SHA-256 `ab3f351bc6458075346860ecd51acd724ed650145579381eddb087c8c2f05052`
+  - `scripts/build_division_dataset.py` — category `data_loader`；4466 bytes；SHA-256 `65a6bf02b5ac1463e53a4aa91443ce43fdbcafda4462ea90e8c49fc44832027d`
+  - `scripts/calibrate_detection.py` — category `data_io`；4865 bytes；SHA-256 `f28c13340dd9e22d9a2824cb1491586b7f1618859d34aa8460d48f39cd02b4e6`
+  - `scripts/download_data.py` — category `data_loader`；1588 bytes；SHA-256 `4264a4aaa2197338db8b50458a85facea53b0411a8671744187e1afd38ff4d92`
+  - `scripts/evaluate_metric_demo.py` — category `evaluation`；2915 bytes；SHA-256 `9f17ae0331852deab3ffb874aa8fe3dbea676b804fd2cc91bdbc007a27f951f7`
+  - `scripts/freeze_appearance_policy.py` — category `relevant_source`；6123 bytes；SHA-256 `bc715466a4820a598693a93ec60f1bfe6f74712974bc21de2d02501c2bc918e7`
+  - `scripts/freeze_division_contracts.py` — category `data_io`；31384 bytes；SHA-256 `b3d236911f4262e8896464d7a2ea4cc543e87f2e33c4114f1cac29481a6eb006`
+  - `scripts/freeze_division_policy.py` — category `data_io`；13296 bytes；SHA-256 `6fd6c0bcb5be5e6c6e9f69d6165951298b04fb6fa3e26b1b086789271c479973`
+  - `scripts/inspect_dataset.py` — category `data_loader`；1507 bytes；SHA-256 `0ea215237ff89a477dee96120d1942fce002968de13dede57a99e04227ff4c8c`
+  - `scripts/make_smoke_submission.py` — category `data_io`；2101 bytes；SHA-256 `368873daf2be802d3b4fb6c1b4e8e296e393d3e3e8d39f28fa9bb98d614e9568`
+  - `scripts/run_division_v2_fit.py` — category `data_io`；67692 bytes；SHA-256 `e53818883c0be478a52e96b3df7743c76dbbe354ee458c2ac38b582705be9e03`
+  - `scripts/score_appearance.py` — category `relevant_source`；5246 bytes；SHA-256 `34c5fb4aa4359232cc0408a01529524405d1f9f5fed5f31be03d86ec2bfb548d`
+  - `scripts/summarize_appearance_holdout.py` — category `relevant_source`；8475 bytes；SHA-256 `39be6f7b05b058215d14577caf32f7b61bdfa72903df361099040296d0da2930`
+  - `scripts/validate_appearance.py` — category `relevant_source`；22945 bytes；SHA-256 `a32ef0cbed9af45e2a5fbf1fb6392c6f9e22d4360dadec765bd6d76948c088fd`
+  - `scripts/validate_detectors.py` — category `relevant_source`；5181 bytes；SHA-256 `b99b34cd241bf6a37c1b0913c66535d15e51568ded1a71a863e998d25d1d714c`
+  - `scripts/validate_division_model.py` — category `data_io`；56469 bytes；SHA-256 `2920d5f28382265c0d6b305eeb461a7a8c36e83d9918090fd13c8ec7fdf402be`
+  - `scripts/validate_divisions.py` — category `data_io`；4910 bytes；SHA-256 `2187e971c8b67f09f51b1e74cb5ff5eb5d0173e92d9548778c0fecc81a932cd7`
+  - `scripts/validate_linkers.py` — category `temporal_linking`；4166 bytes；SHA-256 `cab365428fca29ffa353c8322c0c318888ba2643d63b80cfb57407cbdd5cce6b`
+  - `scripts/validate_pruning.py` — category `relevant_source`；9781 bytes；SHA-256 `4a660f12122c2c826213b3d67b276129fd4c08f49dfd2fa3eca3c6de87c5c600`
+  - `src/biohub/__init__.py` — category `data_io`；207 bytes；SHA-256 `2ccc68d38f32189b1d996ebee89396952c80e8e7f59e60b5fecc63a463dccdec`
+  - `src/biohub/appearance.py` — category `data_io`；22334 bytes；SHA-256 `37c94513e9b12a2c8e36e8f16dcecd20048794e3a42a1a8539d80fb2ac02fa58`
+  - `src/biohub/appearance_evaluation.py` — category `evaluation`；18277 bytes；SHA-256 `74e0db08d2fe2d951aef9958cd5685c58918003def2cbabdef547a981b1733ef`
+  - `src/biohub/constants.py` — category `data_io`；1728 bytes；SHA-256 `578222c104c3637bf814bb9980833efac19483d3ff9a51894b5c19d3feb9af45`
+  - `src/biohub/division_data.py` — category `data_loader`；59532 bytes；SHA-256 `5463fc33a577ed53decc25c0b05f21a90f2bea04286e1a83a80a7fb1847b1026`
+  - `src/biohub/division_dataset.py` — category `data_loader`；120277 bytes；SHA-256 `33c1c92f578909ddab5c9389348b105069bca2d9782a52952df0e282da4466e5`
+  - `src/biohub/division_inference.py` — category `inference`；61220 bytes；SHA-256 `7a30b6f71fd37e3d7f9003d3cd3c32789b2340ae55a957cc9b5056eab35bc52e`
+  - `src/biohub/division_truth_rank.py` — category `data_io`；8712 bytes；SHA-256 `7b1900f8a2610c626c09fc3c2b1fdfb96c3213d4d80c3bd980a38d3822d4e419`
+  - `src/biohub/division_v2.py` — category `data_io`；25552 bytes；SHA-256 `db2f3a2cc0a8e31a0e58bacaa0fc73c8febc86da5ca4ce034ddcbc2793dd4138`
+  - `src/biohub/split.py` — category `data_io`；1607 bytes；SHA-256 `7ee69af7f226c97d49666fc35ecd2125fbe31e079ca6eebba3bb9422c20a99d8`
+  - `submissions/README.md` — category `readme`；129 bytes；SHA-256 `f5950bae5d68cc04e2dba1be9a23453be699c7c2f5219d5ac5d83821401019c4`
+  - `tests/test_appearance.py` — category `relevant_source`；11222 bytes；SHA-256 `aba19b5bc79c561aeff4cdcc0be769de20c17438e272871c0d1caf3b2d73e76f`
+  - `tests/test_appearance_evaluation.py` — category `evaluation`；5195 bytes；SHA-256 `e2bd20b76dcff05da80e6e2bdfaa4e3088fbc95d4ac6ee6ffb7391658518af07`
+  - `tests/test_detect_link.py` — category `temporal_linking`；15108 bytes；SHA-256 `aea5bd5ec74abb801b2c677380cc57382d34749ae95a2ccd26448e35cf08d738`
+  - `tests/test_division.py` — category `data_io`；13443 bytes；SHA-256 `51fc89383c8662bb9cb637a7f94b3403d01e26724f3761e0dff84c169aef9a6c`
+  - `tests/test_division_data.py` — category `data_loader`；33364 bytes；SHA-256 `362e56b2e7ef04050ea5b9f0bfdc430fe5a4c30c7932d34f67941ed3708c6654`
+  - `tests/test_division_dataset.py` — category `data_loader`；66400 bytes；SHA-256 `190d877ef95c3c61a9a8a9051e507725852d113cff3ac6f7a16369d78ff42708`
+  - `tests/test_division_inference.py` — category `inference`；41698 bytes；SHA-256 `c66ec52d92ee72c8a1137525871dacba437d728bac3d3a740c4cea5b9c4a2fe0`
+  - `tests/test_division_model.py` — category `data_io`；94270 bytes；SHA-256 `178f7be3a56013f28770b029f96bcd6d987fbcf95ae8e30e3fc823b61c2f1a1d`
+  - `tests/test_division_truth_rank.py` — category `data_io`；7221 bytes；SHA-256 `55be07d9114e8faa894532c4c40985846b51146694cadb1bf1bad66af6676566`
+  - `tests/test_division_v2.py` — category `data_io`；10211 bytes；SHA-256 `d0a440dabd46cfd4b9e2683fb9afa76fedf614a57d7874559042d3c03dd3d1d5`
+  - `tests/test_division_validation.py` — category `data_io`；11677 bytes；SHA-256 `7fe31a8d7adfbb4eb31201ae72ea6ac429802dae49cb70110e9fe8ffbcde1db3`
+  - `tests/test_freeze_appearance_policy.py` — category `relevant_source`；5297 bytes；SHA-256 `8d45c749fa98963fdb1bf4ad8a5af245bcb977ca515131c520f32170cbc9ab43`
+  - `tests/test_io.py` — category `data_io`；943 bytes；SHA-256 `79c29d3dd66ed6348f7aa55dfd6755a06e55923eb678b76be38162c45b55d70d`
+  - `tests/test_metric.py` — category `evaluation`；4379 bytes；SHA-256 `8b584c79faddb8521177f41f8c985689932ca08e40997d77add51aac9a525b8b`
+  - `tests/test_split.py` — category `relevant_source`；605 bytes；SHA-256 `decb136afe02a67dc48715c34d32ffafe8f368cbc9168a1f67414a16b136b2bb`
+  - `tests/test_submission.py` — category `data_io`；1111 bytes；SHA-256 `3839735291c322d465b568d1496f0b6f6d061e877cbb9ad36cfab8b8324f168a`
+  - `tests/test_summarize_appearance_holdout.py` — category `relevant_source`；2451 bytes；SHA-256 `2f9f7d5da5360d4e0f93ff80f8b118124ccbb2c69a2ac389f5e0e2d53938d79f`
+  - `tests/test_train_appearance.py` — category `training`；2555 bytes；SHA-256 `a7f6ec13a3d5a8a893d3bc8ad19901aefef86d3152f88da0bcd387fbbacdb1e0`
+  - `tests/test_train_division.py` — category `training`；24621 bytes；SHA-256 `cafa41b64b14db1ea3d5002cc95b020e6ea0bd191f488d881773e4d014e875d9`
+  - `tests/test_validate_appearance.py` — category `relevant_source`；3624 bytes；SHA-256 `88d1ee93328c6b6eca31539153c1649dd0cd8fb67b3ae4b07ec193136cd26f34`
+  - `tests/test_validate_pruning.py` — category `relevant_source`；2885 bytes；SHA-256 `15796f0ad84c783caeb6afe35ea5facc8df6bb2ad1daa218cea457ab4ff95dfb`
+
+### 10. `phucthaiv02/biohub-cell-tracking`
+
+- 固定提交：branch `main`，commit `bb5bd58c15e939ddbb030c4e0d1d4280e9d737ee`，commit date `2026-07-03T16:10:40+07:00`。
+- 阅读状态：`FULL_RELEVANT_REPO_SOURCE_READ`；完整 tree 23 个 blob；实际读取文件 22 个；missing 0；read error 0。
+- 许可证观察：`Apache-2.0`。无许可或只有 NOTICE 时，不推定再分发权。
+- 证据路径：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/phucthaiv02__biohub-cell-tracking/repo_evidence.json`；tree：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/phucthaiv02__biohub-cell-tracking/tree.txt`。
+- 角色：competition baseline derivative。
+- 方法：检测=TemporalUNet3D center heatmap；分割=N/A: point centers；时序链接=same SimpleNodeTransformer bytes as official baseline at compared commit；division=official-style division metric；优化=baseline greedy/ILP path。
+- 训练/推理/评价：训练=official-style training scripts；推理=official-style prediction script；评价=official-style metrics docs/code。
+- I/O 与后处理：I/O=GEFF/tracksdata；submission=visualization and evaluation path; no csv converter in tree；后处理=anisotropic first pooling stage differs from official baseline。
+- 判定：source comparison shows a renamed/modified derivative: node transformer identical, temporal U-Net changed for anisotropic pooling
+- 类别覆盖：data_io=READ；data_loader=READ；dependency=READ；division=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；evaluation=READ；inference=READ；license=READ；model=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；optimization=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；postprocessing=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；readme=READ；submission_conversion=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；temporal_linking=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；training=READ。
+- 实际读取文件：
+
+  - `src/biohub_cell_tracking/metrics` — category `evaluation`；15848 bytes；SHA-256 `7cdaddf1c9a024e847e1fb2f781f7f581fd4227618d4decea6363269180d73f4`
+  - `LICENSE` — category `license`；11357 bytes；SHA-256 `c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4`
+  - `README.md` — category `readme`；365 bytes；SHA-256 `d3e66b8de76c02bb649a6bd31f04e7e27d1f4baa5e30093f8fbb242b77c2acdd`
+  - `docs/CHALLENGE.md` — category `relevant_source`；5217 bytes；SHA-256 `2a07d1e586ce2567a8f3c44aa817746dca91428de675e4da176e4ed8d1f674fc`
+  - `docs/METRICS.md` — category `evaluation`；5045 bytes；SHA-256 `41a6cf2f6113fc5b169539e8b67e7edce9a92b33d1333e97c212df2a3fede88e`
+  - `main.py` — category `relevant_source`；118 bytes；SHA-256 `43121b15498f101e8e13fb0007c8398685775e887d659356e6322d16d5ede4a8`
+  - `pyproject.toml` — category `dependency`；711 bytes；SHA-256 `719c80c2bc37c3f926bdae4a775c0179455f90f203ccb126a206eb66f606721c`
+  - `scripts/augmentations.py` — category `data_io`；1876 bytes；SHA-256 `a929e73a2d6f963f2d9dc7003d96cf7c8ff4476e33601cdc1ea92cbb6604d37b`
+  - `scripts/dataspec.py` — category `data_loader`；1223 bytes；SHA-256 `aea837b0a97a9285f38ce3414d0801626177f19c90932e016843f451c7c4b6a9`
+  - `scripts/evaluate.py` — category `evaluation`；6850 bytes；SHA-256 `90c6011fdfcb458b059c841ecc9980d5d3314eace99f6e9e937cbb409c04853b`
+  - `scripts/predict_unet_transformer.py` — category `inference`；26023 bytes；SHA-256 `47da1e699c9b9a76d31983153f5172db6f82bc2b1ca70a12c1cfda69e035f4e4`
+  - `scripts/train_unet_transformer.py` — category `training`；50237 bytes；SHA-256 `6a314a5fd00332c5cb0ea82bd4798798fbd44ce4da0e4a5c2773a153c2b58c1b`
+  - `src/biohub_cell_tracking/__init__.py` — category `data_io`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `src/biohub_cell_tracking/division_metrics.py` — category `evaluation`；15872 bytes；SHA-256 `d1cf1e0a43009d02174f1699ce2aa28458a2220ac4b521731d3bcf31cf8c76be`
+  - `src/biohub_cell_tracking/img_proc.py` — category `data_io`；5317 bytes；SHA-256 `c07ec286c7f91b32abe74768d30d698fb813652967da580802abd99162571e0d`
+  - `src/biohub_cell_tracking/io.py` — category `data_io`；13484 bytes；SHA-256 `93b4e84fdac739bace565da8408fa2c91c2ead1e17e4bdcea944900ae69298f9`
+  - `src/biohub_cell_tracking/models/__init__.py` — category `data_io`；255 bytes；SHA-256 `3842cef6dedf9ca3babbd72adbfeded9372965fd9a588f0d3225efb2fe806bb3`
+  - `src/biohub_cell_tracking/models/simple_node_transformer.py` — category `data_io`；7229 bytes；SHA-256 `b97209edeb03840e80d903e3e2a8c81c520641c8ef343f6ca2904d0f80db064e`
+  - `src/biohub_cell_tracking/models/temporal_unet.py` — category `data_io`；5767 bytes；SHA-256 `c2c4849db55d6d22a16036730abe7094a4645923caa60a98fb93887c25c213d6`
+  - `visualize/visualize_ground_truth.py` — category `relevant_source`；2496 bytes；SHA-256 `b8444c63e8a15882830642e2d4bfbc46098b3386da99cd087dcd000cccde1997`
+  - `visualize/visualize_predictions.py` — category `inference`；2495 bytes；SHA-256 `dc12a471e5af694fe9da9780ce6a103346692b8b754b32d13a5d1ab1c1a0fc3b`
+  - `visualize/visualize_utils.py` — category `relevant_source`；3356 bytes；SHA-256 `7dc34baec824e8a8a60af98fdb0752b30896a97bceac904d29889af786fe7302`
+
+### 11. `quantumjot/btrack`
+
+- 固定提交：branch `main`，commit `2de42c911253e021b3814191fd1a049a6c0e2628`，commit date `2026-01-09T13:03:17-08:00`。
+- 阅读状态：`FULL_RELEVANT_REPO_SOURCE_READ`；完整 tree 115 个 blob；实际读取文件 100 个；missing 0；read error 0。
+- 许可证观察：`MIT`。无许可或只有 NOTICE 时，不推定再分发权。
+- 证据路径：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/quantumjot__btrack/repo_evidence.json`；tree：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/quantumjot__btrack/tree.txt`。
+- 角色：Bayesian multi-object tracker。
+- 方法：检测=consumes detections；分割=N/A；时序链接=Bayesian belief matrix with motion/appearance and predicted state uncertainty builds tracklets；division=branch/divide hypotheses are explicit fates；优化=multiple-hypothesis global mixed-integer optimization via GLPK。
+- 训练/推理/评价：训练=probabilistic model configuration rather than detector training；推理=C++ tracker with Python API；评价=no native Biohub metric。
+- I/O 与后处理：I/O=object import/export APIs；submission=generic exports; no native Kaggle CSV；后处理=global hypothesis selection repairs tracklets。
+- 判定：mature lineage optimizer candidate, but detector, coordinate bridge, and competition scoring must be supplied
+- 类别覆盖：data_io=READ；data_loader=READ；dependency=READ；division=READ；evaluation=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；inference=READ；license=READ；model=READ；optimization=READ；postprocessing=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；readme=READ；submission_conversion=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；temporal_linking=READ；training=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE。
+- 实际读取文件：
+
+  - `README.md` — category `readme`；5329 bytes；SHA-256 `da8da0ba96b21a760e36ead2ef48a62db45b029ea8efd790e9feb716dbb2a2d3`
+  - `LICENSE.md` — category `license`；1082 bytes；SHA-256 `d88d058215358e1ed3e38474afe070fd31467b0154f957ad71458fe35e5d266f`
+  - `pyproject.toml` — category `dependency`；3780 bytes；SHA-256 `ab9981d7393fe31d07b12bb948c429a56a1a2c36fe5c175652a3f768fba3d74a`
+  - `btrack/core.py` — category `pipeline`；24849 bytes；SHA-256 `54d69666b6072c740205fbcd92704fd2b164673b637e7b58d296a7199a372d31`
+  - `btrack/models.py` — category `model`；10808 bytes；SHA-256 `5a7f1d238058d8a0dd324d324ccfa4e6f09bdd527ac0eb01016223a92875279b`
+  - `btrack/dataio.py` — category `data_io`；213 bytes；SHA-256 `d5ab54dfc24f7332c08b3214fdecc67558f6ffcbb74a345449519d704365e0e6`
+  - `btrack/io/importers.py` — category `data_loader`；1121 bytes；SHA-256 `1460389fc5ba57e6a13d87ff7f7d5f88b7c674025b08cb3b27c0622564151f99`
+  - `btrack/io/exporters.py` — category `export`；3986 bytes；SHA-256 `39b8d8dd7c3c5f2eb966d56b63210857c66737614a9c531c501daa5720498944`
+  - `btrack/optimise/hypothesis.py` — category `optimization`；3097 bytes；SHA-256 `6a98258da77981468efc2d15a98ce0ac12a5ad4162cbcd5e6e37ab565fca1147`
+  - `btrack/optimise/optimiser.py` — category `optimization`；7878 bytes；SHA-256 `c32cd8e6c6cfb5a8b226db8b7838747cc4c426142475cb26519d98bf39f8805d`
+  - `btrack/src/tracker.cc` — category `temporal_linking`；24534 bytes；SHA-256 `6c053649bf89d3b9a2abda104510806865974f7992a3814f95e314f6f09c6bd5`
+  - `btrack/src/hypothesis.cc` — category `division`；24924 bytes；SHA-256 `adb01dca421009a8bbf1b3b46e9ed8fbc760b0a3530c6818f11d2bc9ad5b1453`
+  - `.napari-hub/DESCRIPTION.md` — category `data_io`；2401 bytes；SHA-256 `2f0e741078fdc5e4f567a5f861d821b616ab78f1a7cd8afe1286f223145a9768`
+  - `.napari-hub/config.yml` — category `relevant_source`；250 bytes；SHA-256 `22891dc9d36c91c40ba0e55f8b57ea4ebc400186dd7b266f0b5d0f896c558f64`
+  - `.pre-commit-config.yaml` — category `relevant_source`；964 bytes；SHA-256 `57ef3e3945c0389d97e6ed6f6f8c957a66e3c4e6482d3322663da966e340089b`
+  - `.readthedocs.yaml` — category `relevant_source`；516 bytes；SHA-256 `acd179c0f3cf5c5f2cfa0b88e4b7cb9bcfa10ce9433b3ec767e8794d715e2bc9`
+  - `CHANGELOG.rst` — category `relevant_source`；8560 bytes；SHA-256 `09828975cbed15dc71eae9c2fc7c5202ecbb108b1f591846fdf964883785b904`
+  - `btrack/__init__.py` — category `temporal_linking`；646 bytes；SHA-256 `df5c347bdc69d72054f647facd124bee8475fba6e999fb171dd06e678c847be9`
+  - `btrack/btypes.py` — category `temporal_linking`；18701 bytes；SHA-256 `2006291dc7f78bdcad2fa62569713dac82550e546ca1d33037b4269c38229a73`
+  - `btrack/config.py` — category `temporal_linking`；6133 bytes；SHA-256 `818f5c20ebb5b733ab398ae495c073dedce70e4a18b36213dcb7e4b0377978a4`
+  - `btrack/constants.py` — category `temporal_linking`；1850 bytes；SHA-256 `d315f5e7f61dff950e94c1e403183f959c90066839d4776171dfe0edaa7e8cef`
+  - `btrack/datasets.py` — category `data_loader`；2225 bytes；SHA-256 `169de36cfc0b30401a8cfb20ddb2303c58420855b5f3a4ddc17ee27211cf1b1d`
+  - `btrack/include/bayes.h` — category `temporal_linking`；1051 bytes；SHA-256 `1fee40f8529c2560dce61cca334fb4d0c1aff82caf62fbe055518f49458772a5`
+  - `btrack/include/belief.h` — category `temporal_linking`；993 bytes；SHA-256 `7863c46d04b4116a5a4dbcefba2d0a61c8fe3a4e11e95cf1ef01b8fee74c4601`
+  - `btrack/include/defs.h` — category `temporal_linking`；5205 bytes；SHA-256 `43f7b4b2e888dd49ba0f36b884bba912f1e5cb5877908b29a2ec8766025bc2fd`
+  - `btrack/include/hyperbin.h` — category `temporal_linking`；5868 bytes；SHA-256 `1bb5018b865229b50ee3023dea2c6fd29963a75e6f4fd556addb041915a353e8`
+  - `btrack/include/hypothesis.h` — category `temporal_linking`；8659 bytes；SHA-256 `fdf10fcbaac8700612f13811e63a5b93981bda083bf79822e0559efa0919fbfa`
+  - `btrack/include/inference.h` — category `inference`；1756 bytes；SHA-256 `f6ed133fa9b69bf7ca2d9af724612f4000bbced6c616292f38874f57b37971fb`
+  - `btrack/include/manager.h` — category `temporal_linking`；6264 bytes；SHA-256 `2ca8b1d2134326968db5061afa0d6491c2fbdf1f9414f1113c8eb83c2936427a`
+  - `btrack/include/motion.h` — category `data_io`；2745 bytes；SHA-256 `5fb1f36030495d1a5c587d9da58a88e4d0a4b7ba451f2ccdb6a1c145788b1a11`
+  - `btrack/include/pdf.h` — category `temporal_linking`；1313 bytes；SHA-256 `0c970f8da7729dfecbe4a912c2c45bc9e92e923a1131efa858f4277d3fb23db3`
+  - `btrack/include/tracker.h` — category `temporal_linking`；9065 bytes；SHA-256 `1277c2370e3b5f48b884d8b8d6f87efbe0cf0bafc418406020e2960fd62f4895`
+  - `btrack/include/tracklet.h` — category `temporal_linking`；4746 bytes；SHA-256 `8e14cb3ee8acee5dd4360ef00e2650a57321927b3c6f1508eeae021fa7b334a6`
+  - `btrack/include/types.h` — category `temporal_linking`；7373 bytes；SHA-256 `414f2a78432f668ecfcf35c77e3878523177a50bb2ca48fb975d4660952c228c`
+  - `btrack/include/updates.h` — category `temporal_linking`；1704 bytes；SHA-256 `c787a9811313e1edad1b164a82d2995b04d76fc3dcc4af921f4e135f3d956055`
+  - `btrack/include/wrapper.h` — category `temporal_linking`；4624 bytes；SHA-256 `d3afc19730069eb9e9f3959769f03609027c86590113b60f13c71e481494f765`
+  - `btrack/io/__init__.py` — category `data_io`；514 bytes；SHA-256 `08602d1ba2e1b79baf9d4f6d34f0ce33e310b7556d04c3cf446e943c475e57fe`
+  - `btrack/io/_localization.py` — category `data_io`；10435 bytes；SHA-256 `3b7c4795e9a39741032e09400610ebacc3c83442f4c77536bad80b4c57a2458e`
+  - `btrack/io/hdf.py` — category `data_io`；22419 bytes；SHA-256 `232ecb69d077e0cb3382877ecb45815ca1cdbd2a0350da38ffcea25af45a5e91`
+  - `btrack/io/utils.py` — category `data_io`；2956 bytes；SHA-256 `e000d530cade274ab34d2b8addde3639f319efd92d12bbe1cc188f0a09eca66a`
+  - `btrack/libwrapper.py` — category `temporal_linking`；7227 bytes；SHA-256 `670baf6eea53578f136b4c823beb31e6a30585ea79429f48417d6a17c9528850`
+  - `btrack/napari.yaml` — category `temporal_linking`；726 bytes；SHA-256 `099b8a04f5e1125ada5a2b644bf4173a40a926c0c598124f16f9a9ef073abc9e`
+  - `btrack/napari/__init__.py` — category `temporal_linking`；86 bytes；SHA-256 `f2f3693e3b070b1086202c982ce3ef0406ad0b0a4f26ab8f215527e771bd491a`
+  - `btrack/napari/config.py` — category `temporal_linking`；5674 bytes；SHA-256 `dcc003ae6dd8aa29efbeff8dc19a5c53bf84a1937556a97772a0dd3ef77b8829`
+  - `btrack/napari/constants.py` — category `temporal_linking`；339 bytes；SHA-256 `bfd61b11806c2e3e183935d35e4da9ca47070a0f7b601be667f31dd464611343`
+  - `btrack/napari/examples/show_btrack_widget.py` — category `temporal_linking`；837 bytes；SHA-256 `e449e54d0989aae2e0aa42c621a3ae5635e814a81d3c996a3e61f232073202be`
+  - `btrack/napari/main.py` — category `temporal_linking`；11765 bytes；SHA-256 `344522c3d22cd2ae7f70c34393e7d6b19484bc749e0cad14d6f3fdd8517c84c8`
+  - `btrack/napari/reader.py` — category `temporal_linking`；3675 bytes；SHA-256 `f9e748d1a05c1bdf27fc948b9c8a22039a7a577a8fc0cefc40d47baa55da300d`
+  - `btrack/napari/sync.py` — category `temporal_linking`；4594 bytes；SHA-256 `e633fe30bd2617f12bf49c493eba534c74ed57d8c89070e60466f4e4bbf73dd0`
+  - `btrack/napari/widgets/__init__.py` — category `temporal_linking`；154 bytes；SHA-256 `0775ed2b73ef2d15ba8d1687170e93b9c26fccd3211b4d81db1672fdece6afe5`
+  - `btrack/napari/widgets/_general.py` — category `temporal_linking`；5269 bytes；SHA-256 `22aec7cf2ce670fbadfa1c46c6f35cb9a6497eaa0a9fa8b378f1de4adcb6d793`
+  - `btrack/napari/widgets/_motion.py` — category `data_io`；1620 bytes；SHA-256 `3ba4708ff3ba572ade8f1072c3c166d396457980ce9f844022a2f40d904e9edb`
+  - `btrack/napari/widgets/_optimiser.py` — category `temporal_linking`；5954 bytes；SHA-256 `e130d7a169681db013d5b5c71d8776dc4c446f6251df9629ce31790a132e7fab`
+  - `btrack/napari/widgets/create_ui.py` — category `temporal_linking`；5549 bytes；SHA-256 `c429334e9ce5ebf1e81738519557fb243f7d4ebbe2ca7ec34c2a9af6e9fd1406`
+  - `btrack/napari/widgets/io.py` — category `data_io`；972 bytes；SHA-256 `b6b182e6b8bcdf8c8b94f78fe3c99b00517465bff23c86bed3e441f468eb8140`
+  - `btrack/napari/writer.py` — category `temporal_linking`；594 bytes；SHA-256 `73e78d7193d9b16165584a71a651e6c208a758d40c62480c6494392967ff0920`
+  - `btrack/optimise/__init__.py` — category `temporal_linking`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `btrack/src/bayes.cc` — category `temporal_linking`；1519 bytes；SHA-256 `27f3f5e7d06d7606dda0cf420448c1229be0da1f0b8f52cc22e7cc31061f0319`
+  - `btrack/src/hyperbin.cc` — category `temporal_linking`；10400 bytes；SHA-256 `f19b2b6e1d7c09558c9f0e58c5c848800fed1cb7e4954f42ebd4e586ecd59466`
+  - `btrack/src/inference.cc` — category `inference`；2048 bytes；SHA-256 `ab6d138411087b3c2b872d60d38f2343790721170f2df4b82837c854d38be3bb`
+  - `btrack/src/interface.cc` — category `temporal_linking`；8775 bytes；SHA-256 `6a85453439f7ed9d83847883f27caa07b96d0a383fe3bbfb755dadc24675625e`
+  - `btrack/src/manager.cc` — category `temporal_linking`；15664 bytes；SHA-256 `62573940987dcfc3ca9dedc8691335fd4224969c5b73666e15c75923fab8e932`
+  - `btrack/src/motion.cc` — category `data_io`；2345 bytes；SHA-256 `5f49e2ae6de2f64c5c7c7bc7811753ec4b6f0a99836b4fc7417f02a00c7a4907`
+  - `btrack/src/pdf.cc` — category `temporal_linking`；3411 bytes；SHA-256 `eedd49d982534df014339deab6b959583d58a7223e0376a79515426db9ed0bdd`
+  - `btrack/src/tracklet.cc` — category `temporal_linking`；3833 bytes；SHA-256 `8a45d95cdb0a3a05033e6781544d27811fddbc0e1a5e5355670a1c849bb1620b`
+  - `btrack/src/wrapper.cc` — category `temporal_linking`；10684 bytes；SHA-256 `362bee1236057894adda0074911fd5ebbcda4e221e7316946c094dc8e3e9143b`
+  - `btrack/utils.py` — category `temporal_linking`；14513 bytes；SHA-256 `cd5f2ad4c649d353ae6a2b110ea01acccf65828c083ba56f79643bc3ef509cf0`
+  - `build.sh` — category `relevant_source`；373 bytes；SHA-256 `a79f9885cb8c8dd9f6d1104ae310cf4ae2bae6014e4a70d5f27c506415326468`
+  - `codecov.yml` — category `relevant_source`；156 bytes；SHA-256 `bdf362187bc336f5e9176a33b33d98d6de9f444f734394eee6f0bc2e1eafefbf`
+  - `docs/about.rst` — category `relevant_source`；1010 bytes；SHA-256 `e755d60e77c3a764f129fb372a0604bca36414816057820d05dd3cf449dd5707`
+  - `docs/api.rst` — category `relevant_source`；233 bytes；SHA-256 `d934de35ca48dfa02553cb0e6a5df6d29f8a74903c90b4a786f651c1bd90e3b9`
+  - `docs/conf.py` — category `relevant_source`；2368 bytes；SHA-256 `648368bb697bf0acac8325fdd569519a7cfde9993d58674d292fec97ee51f2fa`
+  - `docs/dev_guide/index.rst` — category `relevant_source`；1085 bytes；SHA-256 `a621f9b29767000e16740f38f12338a2ca4164fb2d876541c59fd5c8f67b61e2`
+  - `docs/index.rst` — category `relevant_source`；1918 bytes；SHA-256 `55e4d59bbd3de1f1ea4b2c84b0b1a10290dee803821b94033bbc8f021930a88b`
+  - `docs/user_guide/configuration.rst` — category `data_io`；4723 bytes；SHA-256 `da3032c406c19216e51f8d1fad1f65632b85680623cf831908dc5716c08b09dc`
+  - `docs/user_guide/index.rst` — category `relevant_source`；266 bytes；SHA-256 `160bce5530993259918a643604fd6265b4de58f47cbd0e8777bdf41d6734502d`
+  - `docs/user_guide/installation.rst` — category `data_io`；1800 bytes；SHA-256 `a56775a96f578d26e9fe7c17fce04e4ddd0e6aa8b09025449cb5feb0dd4d7606`
+  - `docs/user_guide/large_datasets.rst` — category `data_loader`；1285 bytes；SHA-256 `fc80f682001153e1f63fc13141316329a1d824f144ac1b2cdbea04b6a181ebf6`
+  - `docs/user_guide/napari.rst` — category `relevant_source`；982 bytes；SHA-256 `a8437661804f80768fd09127165129710e2bb54fbb80fa9afee81c5bef29f1b1`
+  - `docs/user_guide/saving_tracks.rst` — category `temporal_linking`；929 bytes；SHA-256 `53d662b759ea0e844b5d183496cdfc29ad7f2715e709ed39fcc80226bf474c25`
+  - `docs/user_guide/simple_example.rst` — category `relevant_source`；2088 bytes；SHA-256 `08b3e2b6f05986b9e0107080a4e67ffd2bee47ce6aaa19cee9518936de16e430`
+  - `docs/user_guide/using_features.rst` — category `relevant_source`；4141 bytes；SHA-256 `12f30a5ac936bed668147498ff23fb93ef32f4b6b5df8d373dff98038c218533`
+  - `examples/README.md` — category `readme`；476 bytes；SHA-256 `b62cf5d28e451f3e21005e1634ecd8001a7e72f75a349c8aced05b265413bea5`
+  - `examples/example_tracking_pipeline-features.ipynb` — category `temporal_linking`；235002 bytes；SHA-256 `3f4a33b80a6f98fa856f9d9c225e09ce698674d527e25cc0ffad49a1543bc6c7`；Notebook cells=26, code=13, markdown=13, all_code_cells_traversed=True
+  - `tests/__init__.py` — category `relevant_source`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `tests/_test_data/test_data.csv` — category `data_loader`；37613 bytes；SHA-256 `4de49f229f44da9614b03882a1666a6c2e044b653ee6d3cc2a72d9360325d4fb`
+  - `tests/_test_data/test_graph.json` — category `data_loader`；61 bytes；SHA-256 `42a5d552732e25c69b3bd5aa893bdde368810f5729fea30682fee64ee0b7c44f`
+  - `tests/_test_data/test_ground_truth.json` — category `data_loader`；7334 bytes；SHA-256 `cffa31b088a362efb05c792005b6b33ff475ab8827410b0768077175c1472591`
+  - `tests/_utils.py` — category `relevant_source`；7519 bytes；SHA-256 `ddab7fb56956a6612fef4aa69e6dc82f00de494d1f5b83d49cecf2b5a7f865a1`
+  - `tests/conftest.py` — category `relevant_source`；3014 bytes；SHA-256 `4ee557fda60c2f14269bb7a351697ce79e74cc1af77d92f5acefb8ae4f4333a3`
+  - `tests/napari/test_dock_widget.py` — category `relevant_source`；5597 bytes；SHA-256 `e68f15ccb28f85e5616acb638fa8f8d87643e451b8eac8b85e0850388b2126f2`
+  - `tests/napari/test_reader.py` — category `relevant_source`；456 bytes；SHA-256 `35e7c5e49064c3dc3c62850dedbe1c1247504bdbcdfda40eaf6707489fed3292`
+  - `tests/test_config.py` — category `relevant_source`；3496 bytes；SHA-256 `5e05851d4b500a6f82003ea928bf33d6b01b805b8dfc5fe7e8e467defbcbbd01`
+  - `tests/test_examples.py` — category `relevant_source`；300 bytes；SHA-256 `b52c355f8e1a0bc0b6ec7a1eb8b179198f263abc794c81c171619c8c10b2d011`
+  - `tests/test_io.py` — category `data_io`；6027 bytes；SHA-256 `774a326982d3b7e372dc9c2ba04f179a72802fa3b743069bce4ea1f733b1cd59`
+  - `tests/test_models.py` — category `model`；2640 bytes；SHA-256 `7d8b36f049edd5b012152e379103d40668fb00c20c1f424d5e37e85404395c29`
+  - `tests/test_shared_lib.py` — category `relevant_source`；832 bytes；SHA-256 `8b42ce89cc08ae1333bfcf017371a163301baaf2de8d0fd3b9aa4cddb42ba21b`
+  - `tests/test_tracker.py` — category `temporal_linking`；3181 bytes；SHA-256 `0a98dc0ef4b2759fd541577201fa80f069342dc6738e4d8d83324199c99e8274`
+  - `tests/test_tracklets.py` — category `temporal_linking`；3976 bytes；SHA-256 `5102844d4369098b71bd9e544db85cab4631da8507987b5b54291c72428ddfaa`
+  - `tests/test_utils.py` — category `relevant_source`；11422 bytes；SHA-256 `5f625aabf7d5abbe762d02e2003c23bee6684b62193a6c16a8c2a7d583b10c24`
+
+### 12. `raphaelreme/byotrack`
+
+- 固定提交：branch `main`，commit `57c59a88aedfc968b1cb05b2c84be75d90c34957`，commit date `2026-08-25T14:06:33+02:00`。
+- 阅读状态：`FULL_RELEVANT_REPO_SOURCE_READ`；完整 tree 197 个 blob；实际读取文件 181 个；missing 0；read error 0。
+- 许可证观察：`MIT`。无许可或只有 NOTICE 时，不推定再分发权。
+- 证据路径：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/raphaelreme__byotrack/repo_evidence.json`；tree：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/raphaelreme__byotrack/tree.txt`。
+- 角色：modular tracking framework。
+- 方法：检测=detector interface；分割=segmentation/detection supplied by modular front end；时序链接=greedy LAP, Kalman linker, and Trackastra wrapper；division=depends on selected linker/refiner；优化=framewise assignment; wrapped Trackastra can use its solver。
+- 训练/推理/评价：训练=component-specific；推理=Detector -> Linker -> Refiner API and CTC example；评价=CTC metric wrapper。
+- I/O 与后处理：I/O=CTC dataset + GEFF I/O；submission=N/A native Kaggle CSV；后处理=distance-based stitching and other refiners。
+- 判定：useful integration layer to compare linkers under one API; not a ready Biohub submission
+- 类别覆盖：data_io=READ；data_loader=READ；dependency=READ；division=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；evaluation=READ；inference=READ；license=READ；model=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；optimization=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；postprocessing=READ；readme=READ；submission_conversion=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；temporal_linking=READ；training=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE。
+- 实际读取文件：
+
+  - `README.md` — category `readme`；12634 bytes；SHA-256 `fa48122f2a32db4344d75505ca19a607a4f72f9ebbd973159925618d7a7f524a`
+  - `LICENSE` — category `license`；1068 bytes；SHA-256 `99365c45c419109d966e9fc0d0fd6609e7ad7a648e772974e375f40dbba9335d`
+  - `pyproject.toml` — category `dependency`；3834 bytes；SHA-256 `d35a262306aeb6d7b15378d570f8b1a08181cc995aa24655b22b7201561f52db`
+  - `examples/ctc/link.py` — category `inference`；15311 bytes；SHA-256 `c9165f65102c44927d8f15ef6d0eae751998c0a0a03bad8842c1b09141978856`
+  - `src/byotrack/api/tracker.py` — category `pipeline`；8084 bytes；SHA-256 `2bec3a8221602911c88eb763f57ce432d937921b37d48e4a95ccfe6f36945d25`
+  - `src/byotrack/api/tracking_graph.py` — category `graph_model`；14399 bytes；SHA-256 `cb9950acfc911a1dee6d4f9b78b7517827998fa6ede3e4e864e0880983725700`
+  - `src/byotrack/dataset/ctc.py` — category `data_loader`；17912 bytes；SHA-256 `4d4230ef22fcd0c7601a17afbeb57ac608bae7a8be96a7f60dec4efbc097c953`
+  - `src/byotrack/geff/io.py` — category `data_io`；13946 bytes；SHA-256 `7fd67da338ff5ae194e003c24f520e84db3550454715237c3686adfff2a4ddf3`
+  - `src/byotrack/implementation/linker/frame_by_frame/greedy_lap.py` — category `assignment`；1835 bytes；SHA-256 `22c497e914dfda9df217a5bbe6296ea9388ba8ccb0fe5b992618f7a23e784614`
+  - `src/byotrack/implementation/linker/frame_by_frame/kalman_linker.py` — category `temporal_linking`；34398 bytes；SHA-256 `62543d7a2b90e45d64599471d29f9f37133d2a65d1da3706b250d385f49486ac`
+  - `src/byotrack/implementation/linker/trackastra/trackastra.py` — category `temporal_linking`；5135 bytes；SHA-256 `b47c170a4a257bd87c5b2a8e0d732a9e747f9cb106723065195d91d0fad4b871`
+  - `src/byotrack/implementation/refiner/stitching/dist_stitcher.py` — category `postprocessing`；8961 bytes；SHA-256 `a1cc5febfdc9e432d5d61a499c699e03ddb6405a62b7ad72f053933e030cdd06`
+  - `src/byotrack/metrics/ctc.py` — category `evaluation`；24918 bytes；SHA-256 `a9e31c5e8da11f96e926433e38e218d024539874e33ae2ca63e6bcf150136f2c`
+  - `.pre-commit-config.yaml` — category `relevant_source`；828 bytes；SHA-256 `54e06e61d29fbad020a3a3601f83400c529784c70d27aeea65415bd87bbe7e6e`
+  - `.readthedocs.yaml` — category `relevant_source`；307 bytes；SHA-256 `620ab844d701c313ddbd4d2f01404abc77f99a8d1d0ebf027fae0cd35793fdba`
+  - `CHANGELOG.md` — category `relevant_source`；11773 bytes；SHA-256 `6f5aea91b3bbee5fa7bf5c41ea4ebd49a5c0d8a17b5ef205f1c838e22823d6ab`
+  - `docs/README.md` — category `readme`；536 bytes；SHA-256 `3e84a313e2f6e09c319ce9b2bebd2bbf22b596ecf9656b5b2f9080e8299a5a09`
+  - `docs/source/api/detections.rst` — category `data_io`；455 bytes；SHA-256 `96996df6748d18cde313d0f65f0aa91c08ed1fe5421e20387a9461ad7fa5cb87`
+  - `docs/source/api/detector.rst` — category `relevant_source`；57 bytes；SHA-256 `32a5eb57504beeb20933cbc88bfd15d52c06126931b568a95d00cc3dfd3b5797`
+  - `docs/source/api/linker.rst` — category `temporal_linking`；51 bytes；SHA-256 `3828fe9ef02f167dd0b28cd39c98e981415fbcd108398c18ca1c314419037d3c`
+  - `docs/source/api/optical_flow.rst` — category `relevant_source`；82 bytes；SHA-256 `7050df37c684d992a2c47b3c1e65df405bde69b3b9a387698859ada783d58942`
+  - `docs/source/api/parameters.rst` — category `relevant_source`；103 bytes；SHA-256 `9f34f48ffbea5f031f8c9b62f3753dc5923276b87225b1bc219d7af09647902c`
+  - `docs/source/api/refiner.rst` — category `relevant_source`；54 bytes；SHA-256 `b9b3f0cb016436050116e1d0d449b711215ada81ba7902ac4ff913ea395f90e5`
+  - `docs/source/api/tracker.rst` — category `temporal_linking`；54 bytes；SHA-256 `9bd512fffa155e011296473edf22595ca6a672f2d835583499fe277d11397ef3`
+  - `docs/source/api/tracks.rst` — category `temporal_linking`；126 bytes；SHA-256 `0428d7183b2adf88d51e383eccbfd9a58fc005538a482d8642c6acdfc7247829`
+  - `docs/source/api/video.rst` — category `relevant_source`；673 bytes；SHA-256 `3c55fe8514124bfbf42bbead1366263cc05a948e245dcc4d113dd6092b4eabb3`
+  - `docs/source/conf.py` — category `relevant_source`；1077 bytes；SHA-256 `ba18d9c96eab30782c51230db5a0c734712c52845789ed0cbafe08e810a9eaa8`
+  - `docs/source/datasets/ctc.rst` — category `data_loader`；98 bytes；SHA-256 `d1e382b37f3ac794e00d2740c6f8249217ba36ffe1fc58045e283c7e7920f9d5`
+  - `docs/source/datasets/sinetra.rst` — category `data_loader`；58 bytes；SHA-256 `821c2858b0944d0762e774f264a1518d8b677f60022ce9b27a0dc65ae24d7fb3`
+  - `docs/source/fiji.rst` — category `relevant_source`；200 bytes；SHA-256 `67bee644df3671de9a8fdc9249e462ae43eacd0762146e8e21264cbb3f7f82e7`
+  - `docs/source/icy.rst` — category `relevant_source`；196 bytes；SHA-256 `01ac9f57f3cbea40bd6219ba8e4a24cfa696f3d6d5840b690b8a3886fd43e060`
+  - `docs/source/implementation/detectors/detection_refiners.rst` — category `data_io`；97 bytes；SHA-256 `157fb6c4a1ec4509f9194e44ea18ec3c29462f33a27fe2804e746f1eaf9800eb`
+  - `docs/source/implementation/detectors/detectors.rst` — category `data_io`；106 bytes；SHA-256 `e39e07ef2263257fbba47f9e40fe1ae6f97a7677b72f8ec64cb52d05c90928bd`
+  - `docs/source/implementation/detectors/stardist.rst` — category `data_io`；155 bytes；SHA-256 `75c817df5c303dce7ec913494cfc0159778e37be8d4a3984b7ae52243765f147`
+  - `docs/source/implementation/detectors/wavelet.rst` — category `data_io`；214 bytes；SHA-256 `eaee38661d6036df0b95e139b694b4db2e0e452e939510b7f22295ab147666ee`
+  - `docs/source/implementation/linkers/frame_by_frame.rst` — category `data_io`；313 bytes；SHA-256 `240abf08bb8de016827d35dc91c61adef12fb267408c9af82e508921ec86da64`
+  - `docs/source/implementation/linkers/icy_emht.rst` — category `data_io`；209 bytes；SHA-256 `5799ab071992b92561f2ad6a125eac5e6e83bbb565cd721b3f4eb9d049c4386a`
+  - `docs/source/implementation/linkers/kalman.rst` — category `data_io`；137 bytes；SHA-256 `9278efa9f21fd06e2c591f1e36ec220247d0c1ada342e671c35d72d01f519544`
+  - `docs/source/implementation/linkers/koft.rst` — category `data_io`；306 bytes；SHA-256 `c9f0fc4acdb430e365606ce017cb1c2b87791e95fe3f33abafe3fd8e559c96c3`
+  - `docs/source/implementation/linkers/linkers.rst` — category `data_io`；153 bytes；SHA-256 `fd0699876636d8c8b875d4de39688822ad4be0ea035f44767f31eac96e7aa133`
+  - `docs/source/implementation/linkers/nearest_neighbor.rst` — category `data_io`；128 bytes；SHA-256 `b43fa996e00603491b7df80b8a265d7f28d320d9e4afa4eb24610cc65b4db3ba`
+  - `docs/source/implementation/linkers/trackmate.rst` — category `data_io`；124 bytes；SHA-256 `6cb339976b5539903297a4c103a40c50c409a8732a9cf9bdd132a4632b7e2c69`
+  - `docs/source/implementation/linkers/trackonstra.rst` — category `data_io`；151 bytes；SHA-256 `fde8dca8262777765411fb0d1dea3b97883451a0cf976c595508df84ce963a03`
+  - `docs/source/implementation/optical_flows/opencv.rst` — category `data_io`；75 bytes；SHA-256 `6fcb83f05f0e149f343c63b01741c381ebb4e3bccd4384816029d5dbf8d09039`
+  - `docs/source/implementation/optical_flows/optical_flows.rst` — category `data_io`；90 bytes；SHA-256 `1384cc431c706a1a5a1d2ba5710c61afe49abe95775b18bd0b4a3a5e6dbd5ecc`
+  - `docs/source/implementation/optical_flows/skimage.rst` — category `data_io`；88 bytes；SHA-256 `92c9f002112f328e9bfefe9bf0610e7389229c96f2382488bc11fd7a7042db18`
+  - `docs/source/implementation/refiners/cleaner.rst` — category `data_io`；73 bytes；SHA-256 `e269ab90d83f643a1a1a73bce092c832a3f902ec056147da098aadf7a70bad44`
+  - `docs/source/implementation/refiners/dist_stitcher.rst` — category `data_io`；101 bytes；SHA-256 `45a84d8a6c9e175a7709ceacd803069da2fa9dd7a29886d74856da99c06f2ff8`
+  - `docs/source/implementation/refiners/emc2.rst` — category `data_io`；187 bytes；SHA-256 `1c1fe6ad7c1b21a8b060b882e0b8fc649b926b0a7e945fd4bd6d03ea85b48865`
+  - `docs/source/implementation/refiners/interpolater.rst` — category `data_io`；144 bytes；SHA-256 `41baa552fd9d289d1f50a7a9d92a3e4095d4905bf6b1832e370c9fadb488ab0d`
+  - `docs/source/implementation/refiners/propagation.rst` — category `data_io`；85 bytes；SHA-256 `c4c76d11ddbdbb7748e435cc62f0ae251607abe97911ce068caeb0340029c509`
+  - `docs/source/implementation/refiners/refiners.rst` — category `data_io`；123 bytes；SHA-256 `c9de07a415998d82ac3732e22bd07a5cb98434286f93f029367c7bb1e31cc304`
+  - `docs/source/implementation/refiners/smoother.rst` — category `data_io`；116 bytes；SHA-256 `a16d8b5ac85a07758b215b872d154924e5224c2e2dfa60bce12b2bb0d7ac3910`
+  - `docs/source/index.rst` — category `relevant_source`；5643 bytes；SHA-256 `1b6b6e11d726eb2b8e25278006a7711da02fd48da9727033f97fbc17b6df6700`
+  - `docs/source/install.rst` — category `relevant_source`；1754 bytes；SHA-256 `8c49a9913838f02c72109a44859af637bc7bd493b86301e544a79a3350951017`
+  - `docs/source/metrics/ctc.rst` — category `evaluation`；98 bytes；SHA-256 `45ee6d1d1a6935a9a872e61d15da03eb88413d9164076b9e628a7e1efbcba45a`
+  - `docs/source/napari.rst` — category `relevant_source`；315 bytes；SHA-256 `54d4876e2681e53d7e890e7fe1ae9f23566162ac8231fc6be9c54afdc624a693`
+  - `docs/source/run_examples/ByoTrack fundamental.ipynb` — category `temporal_linking`；3356644 bytes；SHA-256 `dbe894cd9261eb03aedb99734b46bbdeabc0068234cadc9251b3325b96511c60`；Notebook cells=40, code=33, markdown=7, all_code_cells_traversed=True
+  - `docs/source/run_examples/Detectors.ipynb` — category `relevant_source`；1015403 bytes；SHA-256 `82e3e7cfa9ef474cfefc3b966729ff7235f66d3dfd7616a749668c35d041c7e1`；Notebook cells=22, code=17, markdown=5, all_code_cells_traversed=True
+  - `docs/source/run_examples/Linkers.ipynb` — category `temporal_linking`；4597039 bytes；SHA-256 `4bea521ad3013f1ed2744c471d103263621fafad64bba642a1c4f1425a924d3d`；Notebook cells=70, code=60, markdown=10, all_code_cells_traversed=True
+  - `docs/source/run_examples/Video.ipynb` — category `relevant_source`；1602493 bytes；SHA-256 `bcb6f3ebdceb74883c308375a7a43a148f12b03d8ed1b78200c0b8cd2d232fd7`；Notebook cells=34, code=23, markdown=11, all_code_cells_traversed=True
+  - `docs/source/visualize.rst` — category `relevant_source`；629 bytes；SHA-256 `8a2abe77854f5792947932ae289cea8274315efcf17156b32e1fcd6ec7aa8b12`
+  - `examples/ByoTrack fundamental.ipynb` — category `temporal_linking`；16689 bytes；SHA-256 `3f4e521a3375539c4f66ed616b556d34e6ca768ee447dd48dcfd55e6a90b3474`；Notebook cells=40, code=33, markdown=7, all_code_cells_traversed=True
+  - `examples/Detectors.ipynb` — category `relevant_source`；11974 bytes；SHA-256 `ccd0be0cc65f1b3fab40b6c724bddf2851104b71517768d5e003ae9d63fb9cff`；Notebook cells=22, code=17, markdown=5, all_code_cells_traversed=True
+  - `examples/Linkers.ipynb` — category `temporal_linking`；30971 bytes；SHA-256 `88075aa96dfac21a0abda0b3160c4cd821048ed8e25506d3378051b8691128d2`；Notebook cells=70, code=60, markdown=10, all_code_cells_traversed=True
+  - `examples/Video.ipynb` — category `relevant_source`；17416 bytes；SHA-256 `e2c7216521079cc46a8201df2dd90b87ff3c57a1260afe4cb962e9cde72dab2c`；Notebook cells=34, code=23, markdown=11, all_code_cells_traversed=True
+  - `examples/ctc/README.md` — category `readme`；5058 bytes；SHA-256 `fb215f8003f400213da87a3c61d2b7f85ce77d07110dea7796312911b4126a98`
+  - `examples/ctc/hyper_parameters.json` — category `relevant_source`；1017 bytes；SHA-256 `31be7e32f227c687aafa2cb813addd8b5f55d2d2504f3dc60bc7a6806595c165`
+  - `examples/ctc/requirements.txt` — category `dependency`；113 bytes；SHA-256 `93b089e7aee0896e37fe533e35f361422138a5e135e742d6a60bff5392d28062`
+  - `examples/ctc/run_clb.py` — category `relevant_source`；1632 bytes；SHA-256 `08b28836a298d091191d63ed3563ffcbfa7af3c821dbfd63daae38c5e326cf2e`
+  - `src/byotrack/__init__.py` — category `temporal_linking`；5592 bytes；SHA-256 `4ba8fb5e13019d99f5559c16d09c6870e716ae9d007227b4bada284ec1f3d30f`
+  - `src/byotrack/_env.py` — category `temporal_linking`；799 bytes；SHA-256 `ac0aa9a5c9869b4daf3942743e988bff3c6c3a7363fe4347147e115946e8c97d`
+  - `src/byotrack/api/__init__.py` — category `temporal_linking`；28 bytes；SHA-256 `f1ce5927b9863e333507e51dceb69fde5ce6380c7e95891241615bb95709bb85`
+  - `src/byotrack/api/detections/__init__.py` — category `data_io`；533 bytes；SHA-256 `296980232746211a6f62a63cabc7463a06ee73f639a867a9a17cf493543d11db`
+  - `src/byotrack/api/detections/bbox_detections.py` — category `data_io`；8164 bytes；SHA-256 `74deb0991563264af67b635d0783198d1def129a72ad5f54b93b8b8829e9b9c3`
+  - `src/byotrack/api/detections/detections.py` — category `data_io`；27219 bytes；SHA-256 `e19c9c8a534769fc1d9383f413abdff8e7c2e24a0302b44bd351695f330d0a5b`
+  - `src/byotrack/api/detections/point_detections.py` — category `data_io`；8554 bytes；SHA-256 `6addb759f68edc3ee9a672fd9f6e57b6e83898496fde2fe411cd3f84968555a2`
+  - `src/byotrack/api/detections/segmentation_detections.py` — category `data_io`；14464 bytes；SHA-256 `0e56460c86ddc16eb92a1508a55cdca01684a6b33cf0b1e8330d26f4c4998f93`
+  - `src/byotrack/api/detections/statistics.py` — category `data_io`；5997 bytes；SHA-256 `35b7b72cbcfac5181d1e14c0fcafb8d203c48a9e4c3d193f0de5bf9d81cbfb27`
+  - `src/byotrack/api/detector.py` — category `temporal_linking`；8347 bytes；SHA-256 `2928460fbd81c1111a6bd8aee5dc76a82c8b66460084b3885f40dc0403cad558`
+  - `src/byotrack/api/features_extractor.py` — category `temporal_linking`；3660 bytes；SHA-256 `6117d0db5f0f27bf8768aafcbbcdc0a70508ccb1dc388868ea38483b4e1bc531`
+  - `src/byotrack/api/linker.py` — category `temporal_linking`；4895 bytes；SHA-256 `a2bec13b59b23f6b3fa178e9221ce65c9b7ec463796ab2d8f0259ca40d4c0efd`
+  - `src/byotrack/api/optical_flow/__init__.py` — category `temporal_linking`；32 bytes；SHA-256 `a91c6e3f8e47513215d9513aa2cf0adf3edd41afd1bc7fb60cc6f98ece6c4124`
+  - `src/byotrack/api/optical_flow/optical_flow.py` — category `temporal_linking`；8375 bytes；SHA-256 `a8c1a1af3a931d44cdb928c1ebada6202f305a8e4f6b898fd686637701ae177a`
+  - `src/byotrack/api/parameters.py` — category `temporal_linking`；2855 bytes；SHA-256 `4e627694eaf3a827f2097cc6e1ab79567243cfa21c8dce0cc112d3cb12b31b0a`
+  - `src/byotrack/api/refiner.py` — category `temporal_linking`；1071 bytes；SHA-256 `daa93f17e1cd8f7724b99be48ca7f2d6e1f2e0f94db16aebe3113d3d8a5fe6ac`
+  - `src/byotrack/api/tracks.py` — category `temporal_linking`；24984 bytes；SHA-256 `075fd28a666c1061e3bc16c0da070535b49914c906b589acf23fd266bec99ff4`
+  - `src/byotrack/dataset/__init__.py` — category `data_loader`；46 bytes；SHA-256 `bdcae7b7cce4b4d4a73ad182e0e13405c1d8584b9f2358c531c309361491cce5`
+  - `src/byotrack/dataset/sinetra.py` — category `data_loader`；1825 bytes；SHA-256 `6fc5703f93f0da6c0b4db79624ce6f8b7b20d90709388bf472d5a24165c959af`
+  - `src/byotrack/example_data.py` — category `data_loader`；1633 bytes；SHA-256 `42e065802b388716fd8ad3e5616da6afe4a0e5c242fca0178506cec29c5ccfc9`
+  - `src/byotrack/fiji/__init__.py` — category `temporal_linking`；196 bytes；SHA-256 `d5df1144de612bf9e38af9453008d1899c9108ee27d347a71304fc523d3b6ad8`
+  - `src/byotrack/fiji/io.py` — category `data_io`；4162 bytes；SHA-256 `8685dd7762960dac04359ba709625a2ec2eb588e5c7383cbe085916bc50b5c07`
+  - `src/byotrack/fiji/run.py` — category `temporal_linking`；2382 bytes；SHA-256 `b0e8430434bfa8270c0674faa97f02800b1784852396f50338597ad9c4a19d17`
+  - `src/byotrack/geff/__init__.py` — category `data_io`；620 bytes；SHA-256 `d3dab750c4a2b00569b09a3210182696e4c540c8ded5763e4f2a7cb840787dcc`
+  - `src/byotrack/icy/__init__.py` — category `temporal_linking`；216 bytes；SHA-256 `f4721e8dd2dbe28efd5a2342ece377287b4231c090029a91777e5085cb5a9bb9`
+  - `src/byotrack/icy/io.py` — category `data_io`；11439 bytes；SHA-256 `7b9b6deb5b8a220fe4f2b4a0e6889156ac836e242af17d68349de271ee6dc809`
+  - `src/byotrack/icy/run.py` — category `temporal_linking`；1958 bytes；SHA-256 `94920463addddc042676f8196af105a02e65285ffc1e96f457c73ff275dc0518`
+  - `src/byotrack/implementation/__init__.py` — category `data_io`；74 bytes；SHA-256 `984835eb47abd31e6be006a17ace940b89f9222dbeb1a053ddf03ae58e677184`
+  - `src/byotrack/implementation/detector/__init__.py` — category `data_io`；32 bytes；SHA-256 `4a1b90a5ef8820ba3e3e7c45250554bd5ca77f186a9255b761dd1d6d6c8af80e`
+  - `src/byotrack/implementation/detector/refiners.py` — category `data_io`；11595 bytes；SHA-256 `81079107a3ffbb26e8531b6b4147145e8ccecc2b4852bbd7433c39f6566d3b76`
+  - `src/byotrack/implementation/detector/stardist.py` — category `data_io`；4441 bytes；SHA-256 `3eb3db553ce32ad2c5b88b9758f6b43a1ddebde5bb9c36a1df3d2e1d6e354992`
+  - `src/byotrack/implementation/detector/wavelet.py` — category `data_io`；22357 bytes；SHA-256 `298a68a65e67072bedf21bd263bb9e4b28f2d6939c82bc6c1d2f944b2ce01d28`
+  - `src/byotrack/implementation/linker/__init__.py` — category `data_io`；30 bytes；SHA-256 `48e48f68de776ca4096e18423199fc17af43e5c5705321c43b722a2a185effcb`
+  - `src/byotrack/implementation/linker/frame_by_frame/__init__.py` — category `data_io`；30 bytes；SHA-256 `19a5c6908d5a15a66fc72dc74d9dc3a0293fc4f2452af8be7dce59d33aec9ed2`
+  - `src/byotrack/implementation/linker/frame_by_frame/base.py` — category `data_io`；45109 bytes；SHA-256 `b1e5b2643cb0ee198ceb9603a66d052f5f8ec8dc3f0415bc13f3d06356706f70`
+  - `src/byotrack/implementation/linker/frame_by_frame/koft.py` — category `data_io`；27623 bytes；SHA-256 `9a943d5e009c7fbe6c0e70b94804a7f5f9dc7a770dc2d0d57bf63cc1508d3f55`
+  - `src/byotrack/implementation/linker/frame_by_frame/nearest_neighbor.py` — category `data_io`；9347 bytes；SHA-256 `b92bd34757daf0dcae4c324078e3b9002421112bb84c75f2ac647d14db9dfd5e`
+  - `src/byotrack/implementation/linker/frame_by_frame/trackonstra.py` — category `data_io`；15186 bytes；SHA-256 `eec8fe950f03168251fcc82d66de905f23b8b4214947f77171d657f84dcd1c32`
+  - `src/byotrack/implementation/linker/icy_emht/__init__.py` — category `data_io`；193 bytes；SHA-256 `94e14a71e2da5f80a423eb0f0b600e430902f8d0945c32f98ee9957bf40998cf`
+  - `src/byotrack/implementation/linker/icy_emht/emht_protocol.xml` — category `data_io`；6198 bytes；SHA-256 `13e83abf0b65fab2c4b28ec4f60cecc87d0736b60ea348d284b88431a520bee5`
+  - `src/byotrack/implementation/linker/icy_emht/emht_protocol_with_full_specs.xml` — category `data_io`；4772 bytes；SHA-256 `73847652aa72b048d33b83663eb0cf3746d63ab3fc2186ec4f152bd46a72766f`
+  - `src/byotrack/implementation/linker/icy_emht/icy_emht.py` — category `data_io`；13242 bytes；SHA-256 `8ab3e93e0be0b53acf44c197766da2b0336516c2d7f5a67b9b4ab1f42ab16b4b`
+  - `src/byotrack/implementation/linker/trackastra/__init__.py` — category `data_io`；194 bytes；SHA-256 `c17db45565ac6b0de199d0538179e956e5445963fc9a6214a62d5ea3ce7a5d9d`
+  - `src/byotrack/implementation/linker/trackmate/__init__.py` — category `data_io`；197 bytes；SHA-256 `338d8ca3cab64c62cd8db6ad3021a7d86cfa19bfeab5d7e3ec106e0b36f09cce`
+  - `src/byotrack/implementation/linker/trackmate/_trackmate.py` — category `data_io`；2975 bytes；SHA-256 `ca371601bc3719e561d850ba7bc4bb1d0f4908ac1e8dcad7ed7e73985dc8a8de`
+  - `src/byotrack/implementation/linker/trackmate/trackmate.py` — category `data_io`；8414 bytes；SHA-256 `57d9fa8ac145664456194cee8002d27d84988c25fb97ff7b52d5a466dda7c43b`
+  - `src/byotrack/implementation/optical_flow/__init__.py` — category `data_io`；58 bytes；SHA-256 `549709b5d6356702153372bdd352b2dc23eaf584b0c53f80616af6607bbf2508`
+  - `src/byotrack/implementation/optical_flow/opencv.py` — category `data_io`；2474 bytes；SHA-256 `744e848367451a373c76d7fb0bf64e0328ebeb0588107f89ce2eb356ba235b42`
+  - `src/byotrack/implementation/optical_flow/skimage.py` — category `data_io`；2175 bytes；SHA-256 `f2f92cf99794e3939f453208fe64ea0b3a84b6a2f4cd67db5d1d1b12de63a52d`
+  - `src/byotrack/implementation/refiner/__init__.py` — category `data_io`；32 bytes；SHA-256 `413d6fef8af90d53f1b85202d20371fca844d6ffd5b9d990e89b0a6531cb36fe`
+  - `src/byotrack/implementation/refiner/cleaner.py` — category `data_io`；4190 bytes；SHA-256 `ae4441cc3bd73597d5cd7f74de5f5a268705616e9f339da7a6c243120510ca17`
+  - `src/byotrack/implementation/refiner/interpolater.py` — category `data_io`；4160 bytes；SHA-256 `0bc60f4b49333732f016189a6b91c67a66921fad3930f8334d5a77788a26ac06`
+  - `src/byotrack/implementation/refiner/propagation.py` — category `data_io`；12739 bytes；SHA-256 `e59a2347c8537a38e90c6d59dfeed8d8b06664455d3ea76732c138c823831e34`
+  - `src/byotrack/implementation/refiner/smoother.py` — category `data_io`；8086 bytes；SHA-256 `787595097c1a2a02cb363ea88720d377902f42ec2255c0dcfb48a0df9d800204`
+  - `src/byotrack/implementation/refiner/stitching/__init__.py` — category `data_io`；232 bytes；SHA-256 `35f31d499c081226d2b2ed6cb43bb07e312607e0305189b0b34b16d78fe4fec8`
+  - `src/byotrack/implementation/refiner/stitching/emc2.py` — category `data_io`；5150 bytes；SHA-256 `7f445fd5cef0c01f93e057ef9282f9c2c329c0459828983202e020c787bd8f7f`
+  - `src/byotrack/metrics/__init__.py` — category `evaluation`；31 bytes；SHA-256 `3ab6d1486fe6a458dc4ecbc4775f754ee3588f95378099dae740a5ac796d8326`
+  - `src/byotrack/napari/__init__.py` — category `temporal_linking`；711 bytes；SHA-256 `508c975e472431ae452c2f09066c8d5beb60a433ada97f3e591442ae96780ca6`
+  - `src/byotrack/napari/utils.py` — category `temporal_linking`；15703 bytes；SHA-256 `ced364cb41e28c173ccb619c8de2173f0b5036d03bafba7e5ec6e2d3dfd1e507`
+  - `src/byotrack/napari/viewer.py` — category `temporal_linking`；23867 bytes；SHA-256 `42e9b5298d830bfcbd31b05b4e16f86c86c58f413eebaf1c884f068e6649da9b`
+  - `src/byotrack/utils.py` — category `temporal_linking`；595 bytes；SHA-256 `3531f25161942f9efafb3930e9442e604efd43d85448307fe5db0bb5e89ca5a8`
+  - `src/byotrack/video/__init__.py` — category `temporal_linking`；1420 bytes；SHA-256 `b633764159677decba8bad0851989d5797578ed539c128a8438842cc50fa73dd`
+  - `src/byotrack/video/preprocessor/__init__.py` — category `temporal_linking`；74 bytes；SHA-256 `4434c21663082d0318af686b7485f4b1c366e84adac239bc47e9fa6793aea0c2`
+  - `src/byotrack/video/preprocessor/channel_projection.py` — category `data_io`；3417 bytes；SHA-256 `d4143759999f8378934a979ec7aaee7fd86b99d7aceab46e591afb2a5b1d2d9c`
+  - `src/byotrack/video/preprocessor/normalizer.py` — category `temporal_linking`；5208 bytes；SHA-256 `72a26b30f6583e4f026bb1e490d3497e86e308c609a64964954d183fd3489d7b`
+  - `src/byotrack/video/preprocessor/preprocessor.py` — category `temporal_linking`；4152 bytes；SHA-256 `d513fea63b6ea8e270c836d8e65234fb540ae39404c1572ec97bcf28c28de06f`
+  - `src/byotrack/video/preprocessor/registrator.py` — category `temporal_linking`；4787 bytes；SHA-256 `05aa58a0d95b5b31d43cb52a6343891764f8896be214ea2a245646357b6b8582`
+  - `src/byotrack/video/preprocessor/slicer.py` — category `temporal_linking`；2184 bytes；SHA-256 `3d708ba568e1f2857d72aeaf19ab7ffee3f6d0c03e94113aa89bfd9c8673435d`
+  - `src/byotrack/video/preprocessor/spatial_projection.py` — category `data_io`；4456 bytes；SHA-256 `2178546e14b719f9a4e7501b34afdcbbcb69987bd6034554fab2f4dbd3e56deb`
+  - `src/byotrack/video/preprocessor/temporal_equalization.py` — category `data_io`；4744 bytes；SHA-256 `87f7e59ef9bf251cfe8a77c91d5806ef00d43f2492bf6c2da7c276af5005de7b`
+  - `src/byotrack/video/preprocessor/zoom.py` — category `temporal_linking`；7599 bytes；SHA-256 `82cbd9837ae7795c63b1ef4a0cdd80f97e7aa0f5274c2dd36e01e8d83b8f3ce8`
+  - `src/byotrack/video/reader.py` — category `temporal_linking`；31349 bytes；SHA-256 `0c36c9a78a57f896ae6d018a2ad631403393f2fcca53614dfd7aa62268ed7271`
+  - `src/byotrack/video/video.py` — category `temporal_linking`；21953 bytes；SHA-256 `fa05006b1de298555cc083655ed40f5150dcff71948aead9678ee23ef2711ed7`
+  - `src/byotrack/visualize.py` — category `temporal_linking`；26329 bytes；SHA-256 `acaaec1e78673edbc6a1f5687ce3269fb0863cfa6cde5ba1be0254544d06b253`
+  - `tests/__init__.py` — category `relevant_source`；26 bytes；SHA-256 `3e420c12808d6789aa4657ecd17fc26d4d4d9813023d1e98b58030469a33177b`
+  - `tests/api/__init__.py` — category `relevant_source`；30 bytes；SHA-256 `45d1b9baaf3f7cd4b6a7379d346026f2bcb7f4dd969c607c9faa41704f21ca84`
+  - `tests/api/detections/__init__.py` — category `data_io`；41 bytes；SHA-256 `ec31e921d2ec65226928b343b4286acd5df003d78e2f89b208e4c0c8cd4b9a09`
+  - `tests/api/detections/conftest.py` — category `data_io`；791 bytes；SHA-256 `f459a76fcf8cb325a92d248e16678959167f61d430056dfd97625354a3d6f57b`
+  - `tests/api/detections/test_bbox_detections.py` — category `data_io`；12769 bytes；SHA-256 `e9401bd5e439fc90f237049e74d91774c65659b7eabe0f86510c04e8c90c4a46`
+  - `tests/api/detections/test_detections.py` — category `data_io`；17385 bytes；SHA-256 `bea16f7ad71966c1695707c6e303e57b3c4b7b5275efc1d289aca30d0271ae0d`
+  - `tests/api/detections/test_point_detections.py` — category `data_io`；14779 bytes；SHA-256 `c4ccfc9c03149d4c44a2bd7259c9c0e8c8e1dcb79e881e10ef1c0f9b8742bf8c`
+  - `tests/api/detections/test_segmentation_detections.py` — category `data_io`；20157 bytes；SHA-256 `056bef26922798d3932d50e2b5dc117fc6c9fdea774c61bd1da36faf346448f4`
+  - `tests/api/detections/test_statistics.py` — category `data_io`；7301 bytes；SHA-256 `1b05bec5b24bb5e86c8502f836c39e566e3247130677015df43eedb5f95cb22f`
+  - `tests/api/test_detector.py` — category `relevant_source`；6185 bytes；SHA-256 `3b57079abe61f054c980423bc283b01a5096e94a670fbae2c95f5156589836fa`
+  - `tests/api/test_linker.py` — category `temporal_linking`；4724 bytes；SHA-256 `401615601dc9b65a058d87d1910b97d03a932ef6f8f4a491805e8d2e19d2e6f6`
+  - `tests/api/test_optical_flow.py` — category `relevant_source`；7758 bytes；SHA-256 `eb69e88c85fd9550a88ed014146a8ac6b840db626eace6a0aefdc823f5a638c7`
+  - `tests/api/test_tracker.py` — category `temporal_linking`；11876 bytes；SHA-256 `a8fcdaecda9c234be6eee0133c6dd851a3364ad3a459d2ec89356f78f5deae6b`
+  - `tests/api/test_tracking_graph.py` — category `temporal_linking`；18111 bytes；SHA-256 `126a6a973cbbdc2844ae9985aa57b43cbd388fa34deb038bc1c83ae2ee97bf02`
+  - `tests/api/test_tracks.py` — category `temporal_linking`；31436 bytes；SHA-256 `7b4fb70806b730f7efcf7375d67e6a6767ca263bf1d2c2cbd848e54a2f7a1096`
+  - `tests/dataset/__init__.py` — category `data_loader`；34 bytes；SHA-256 `588c6f18816fa7319ba4d437995f45f0839c2d05317bbab01e68f922d112b3bd`
+  - `tests/dataset/test_ctc.py` — category `data_loader`；25529 bytes；SHA-256 `9159c764e03684e6a7238fd4a2ac45a3842b739a0dd72cf973529b426b705988`
+  - `tests/dataset/test_sinetra.py` — category `data_loader`；1993 bytes；SHA-256 `f88e9fa26093fc7d458bd74ae083c097e9581ca6c94104e0a14ea28ebbb0197e`
+  - `tests/fiji/__init__.py` — category `relevant_source`；31 bytes；SHA-256 `ca8171e82c3ef17472c4b6b85faefaf614c11e78bdc075a13276ed49ecc87cc2`
+  - `tests/fiji/conftest.py` — category `relevant_source`；2811 bytes；SHA-256 `a35afeb6eba903b43bb16929e70e7035633e5972e5ce9839b55e5036a31ea111`
+  - `tests/fiji/test_io.py` — category `data_io`；4144 bytes；SHA-256 `d0ecf6d295f9ec608feed9d4cb445d4205947d729705f3b4da1e8f9d5f89cda1`
+  - `tests/fiji/test_run.py` — category `relevant_source`；3392 bytes；SHA-256 `4635d931723687ec5d341e349e6934ba7e7322d2519e72cadb1ae89c7c52c91c`
+  - `tests/geff/__init__.py` — category `data_io`；31 bytes；SHA-256 `19e85091e50acc6d5d7e9f6a3808599bee2ad2da0b5b8d6f366df818ed7d99f4`
+  - `tests/geff/conftest.py` — category `data_io`；1143 bytes；SHA-256 `61e6e636fe185727397509223b53ebc7122f2d7682d3e3c261ad3504573eb281`
+  - `tests/geff/test_io.py` — category `data_io`；13496 bytes；SHA-256 `ba8fb9aa6e0ed21904d39cbb9256928b44d0924511c0fae8e33e0b924d603cdf`
+  - `tests/icy/__init__.py` — category `relevant_source`；30 bytes；SHA-256 `ce43b3bade29ef35be0aa8b31d09dcd063914754555e1da41f35121abb57d09f`
+  - `tests/icy/conftest.py` — category `relevant_source`；887 bytes；SHA-256 `99f7779bca4a692469fe5dbc262d4017a3be46cbf41736fcc7775bec2a12a44d`
+  - `tests/icy/test_io.py` — category `data_io`；9762 bytes；SHA-256 `010368549e3406b876213f589e251329c200c808429cdb1d460269dad3810c5e`
+  - `tests/icy/test_run.py` — category `relevant_source`；4606 bytes；SHA-256 `35736b68150bd8f3835aa9de681646c492645be81025509ef4c81af6481f3d77`
+  - `tests/test_env.py` — category `relevant_source`；1887 bytes；SHA-256 `3c509c23cb38e032b97b13a11dbd29bcc14c1e97dd71e43f680b86dab280061f`
+  - `tests/test_example_data.py` — category `data_loader`；1679 bytes；SHA-256 `dc39f33cc80c1cad97ada257202cfc50e8e215e9be828034a469e6361341eaac`
+  - `tests/test_utils.py` — category `relevant_source`；1389 bytes；SHA-256 `224b4dfdee6d3a7b6e7d526dd86160b0d70c54fc61a8e659b18add8facdf0eb0`
+  - `tests/video/__init__.py` — category `relevant_source`；32 bytes；SHA-256 `0c55f92d16609923d7f39d2e9fd99f48495e09f6d51b3fba9f22362ebd5617ab`
+  - `tests/video/conftest.py` — category `relevant_source`；2829 bytes；SHA-256 `3887cf0452fc75f8b0bb4d6530fbc08aeed296e85ea9ff90363622fb60153889`
+  - `tests/video/test_preprocessors.py` — category `relevant_source`；30380 bytes；SHA-256 `4c5d6d8a70068df79dbee3cbb11b2f7da11e1e6e5299891f8a61a3dc931bfed7`
+  - `tests/video/test_readers.py` — category `relevant_source`；25519 bytes；SHA-256 `a398e78c0c5fa4604df9f9984a09a19b591300f4228758906818ab5bdbb798ec`
+  - `tests/video/test_video.py` — category `relevant_source`；27008 bytes；SHA-256 `29273a171344f699f0bb26ba6923b470a8aac82fa812eac9100097226de86380`
+
+### 13. `royerlab/kaggle-cell-tracking-competition`
+
+- 固定提交：branch `main`，commit `075fc5f5a52d11077f9dc2b074644618f26939e2`，commit date `2026-07-17T17:03:46-07:00`。
+- 阅读状态：`FULL_RELEVANT_REPO_SOURCE_READ`；完整 tree 49 个 blob；实际读取文件 44 个；missing 0；read error 0。
+- 许可证观察：`BSD-3-Clause`。无许可或只有 NOTICE 时，不推定再分发权。
+- 证据路径：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/royerlab__kaggle-cell-tracking-competition/repo_evidence.json`；tree：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/royerlab__kaggle-cell-tracking-competition/tree.txt`。
+- 角色：competition host baseline。
+- 方法：检测=TemporalUNet3D predicts per-voxel cell-center probabilities; physical-space NMS extracts nodes；分割=N/A: point centers rather than instance masks；时序链接=SimpleNodeTransformer scores cross-frame node pairs from image features plus relative 3D coordinates; sliding windows and greedy parent/child-constrained solve, with optional ILP path；division=allows at most two children; dedicated sparse-annotation-aware division scoring and bipartite pairing prevent double credit；优化=greedy constrained selection or optional global ILP。
+- 训练/推理/评价：训练=voxel target + edge BCE restricted to annotated active rows/columns; unannotated sparse regions ignored；推理=0.1/99.9 quantile normalization, overlapping time windows, optional XY-flip TTA, physical NMS；评价=node matching within physical radius; adjusted edge Jaccard plus division Jaccard。
+- I/O 与后处理：I/O=OME-Zarr input; tracksdata/GEFF graph output；submission=GEFF-to-CSV and CSV-to-GEFF scripts；后处理=candidate thresholding, NMS, graph constraint solve。
+- 判定：mandatory starting point and the closest reproducible reference implementation for the competition metric and submission path
+- 类别覆盖：data_io=READ；data_loader=READ；dependency=READ；division=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；evaluation=READ；inference=READ；license=READ；model=READ；optimization=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；postprocessing=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；readme=READ；submission_conversion=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；temporal_linking=READ；training=READ。
+- 实际读取文件：
+
+  - `LICENSE` — category `license`；1507 bytes；SHA-256 `3910a8b578783928cbbf981c1b204591ab3368e70017dc695d6536f71d272796`
+  - `README.md` — category `readme`；7254 bytes；SHA-256 `305222ff29b8b783c95ff2ceb2df3e801c52272633e798ef27af600fbe041812`
+  - `metrics.md` — category `evaluation`；6942 bytes；SHA-256 `d8a2d3ff21b507242dd23e9b7c687d725261d7b4c79cff086cccb4093141d696`
+  - `pyproject.toml` — category `dependency`；1440 bytes；SHA-256 `2e550bd632d68ef6402547489122f01d72c6a6e9842de46ff295f338452fce77`
+  - `scripts/augmentations.py` — category `data_io`；1876 bytes；SHA-256 `a929e73a2d6f963f2d9dc7003d96cf7c8ff4476e33601cdc1ea92cbb6604d37b`
+  - `scripts/csv_to_geffs.py` — category `data_io`；2887 bytes；SHA-256 `914d151495c2c0f6bcab1feeebc6d0452b0ec63175cbce3b8774d20f79fa6f9a`
+  - `scripts/dataspec.py` — category `data_loader`；1215 bytes；SHA-256 `a1454dc5feb9a794dff4e6b0a9f98a75ad69e0bb1d459911de6faa491d18c2f6`
+  - `scripts/evaluate.py` — category `evaluation`；5219 bytes；SHA-256 `03ad4049530d3682c77435194e5d921981f331df3462abcde4a7156d1a57b7d3`
+  - `scripts/geffs_to_csv.py` — category `data_io`；3131 bytes；SHA-256 `ecb8b121effb99f7889e6c9936f495fba6d98ea1bb541a2d1b1fb9f633bc9796`
+  - `scripts/predict_unet_transformer.py` — category `inference`；26011 bytes；SHA-256 `0c0f82844fa212d783bcb942a46d5b5a6cbe30a41ff08f38d22774cf0b47ff26`
+  - `scripts/train_unet_transformer.py` — category `training`；50229 bytes；SHA-256 `83e3f30a3313ea452b5072b118bfd06539302cf6886e317c542a602deb27d281`
+  - `src/tracking_cellmot/__init__.py` — category `temporal_linking`；79 bytes；SHA-256 `f9df2098dd85934d0b0d48d477420b1f9ed20a9a55ca6294a1874b964e9166e6`
+  - `src/tracking_cellmot/division_metrics.py` — category `evaluation`；20488 bytes；SHA-256 `0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9`
+  - `src/tracking_cellmot/img_proc.py` — category `temporal_linking`；5319 bytes；SHA-256 `00e8ef0adc8b39f1aaaa547ea6197b906bf9e8c009e339d3e95f8f8dbf31be3f`
+  - `src/tracking_cellmot/io.py` — category `data_io`；13485 bytes；SHA-256 `efae135b088cecaab463d889f16c885ef6da3ad27b0747327d8ddc28d866b7bd`
+  - `src/tracking_cellmot/metrics.py` — category `evaluation`；19602 bytes；SHA-256 `cfdd596e3f8909cca14db0682889738b19ff75c3808b3773175aba9367ca7444`
+  - `src/tracking_cellmot/models/__init__.py` — category `model`；248 bytes；SHA-256 `0861b0bf0d5a574dd0d582c529b763e75c8d271f4df48df15fae3cf5b5fbb127`
+  - `src/tracking_cellmot/models/simple_node_transformer.py` — category `model`；7229 bytes；SHA-256 `b97209edeb03840e80d903e3e2a8c81c520641c8ef343f6ca2904d0f80db064e`
+  - `src/tracking_cellmot/models/temporal_unet.py` — category `model`；5112 bytes；SHA-256 `d809c35d42f504161074ddeaaa7aee5b407e5bca7f9b4e1d5f9b2ff345666cac`
+  - `tests/__init__.py` — category `relevant_source`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `tests/assets/sandbox_examples/3_division.json` — category `data_io`；1042 bytes；SHA-256 `df0222938ca596065c70ddab036dca97c6dc8f84cfbc863dedfe6faf03fd972c`
+  - `tests/assets/sandbox_examples/complex.json` — category `relevant_source`；3133 bytes；SHA-256 `b8e50ee54f31c36557e65ce43d551fa96500db2290050190647f3b4ecba72f97`
+  - `tests/assets/sandbox_examples/complex2.json` — category `relevant_source`；3131 bytes；SHA-256 `2190e8d561126bc7a16da8b4d8ee3f03f1b636d64d22a8e83be81d3f5fb3c5d1`
+  - `tests/assets/sandbox_examples/division.json` — category `data_io`；1839 bytes；SHA-256 `1f0654706b9c62f1671c303c33307e53bdb5c91f3b7491a1f4f26f9ba825a34b`
+  - `tests/assets/sandbox_examples/division_at_end.json` — category `data_io`；1968 bytes；SHA-256 `b313933430c01a3a9cf3121af24e73e11bf93815fa81b1248d668f5bafd88612`
+  - `tests/assets/sandbox_examples/division_node_stage.json` — category `data_io`；2038 bytes；SHA-256 `cf9772d23cd0be95c4094bdb3b406c3b8dea14e312e9973f203fd7d9f2e75296`
+  - `tests/assets/sandbox_examples/division_test.json` — category `data_io`；1852 bytes；SHA-256 `5c5d8031d15dbf6d683450efa8aca896175ea4169222a9d4abdc97fb7b19c350`
+  - `tests/assets/sandbox_examples/duplicated_division.json` — category `data_io`；2080 bytes；SHA-256 `b1b5058f05e8071e573ed44180a544cba65416b63a1918854622c45764836e44`
+  - `tests/assets/sandbox_examples/edges_wrong_division_ok.json` — category `data_io`；2075 bytes；SHA-256 `a521bdda6050b9ecf9e737ea7eaf79e352b32e58cc8b678b7e3e18ff1055d456`
+  - `tests/assets/sandbox_examples/late_division.json` — category `data_io`；1681 bytes；SHA-256 `42de8f32c5322e2d06fc0f536fb5912ab1b1397c20fa41225ec0c189a6d39780`
+  - `tests/assets/sandbox_examples/merge_delay.json` — category `relevant_source`；1576 bytes；SHA-256 `9eb4dcdcda057841c165a24f34889533e7ca6ceb3b9e86558496066453a63673`
+  - `tests/assets/sandbox_examples/node_conflict.json` — category `relevant_source`；2511 bytes；SHA-256 `385c086733918b0ce363617e7c30ec2a2332d3d89dd23c028a34af3e303dd45c`
+  - `tests/assets/sandbox_examples/simple.json` — category `relevant_source`；2030 bytes；SHA-256 `2c5b6bd676d55deca73700f10572f8b7b4c9c82fccad6bddada407584b1d2655`
+  - `tests/assets/sandbox_examples/successive_div.json` — category `relevant_source`；1829 bytes；SHA-256 `95bb5fc0fba38361265a54cc5c61c51fcdacf33f747f596df9584fc251afcbea`
+  - `tests/conftest.py` — category `relevant_source`；3523 bytes；SHA-256 `03e48a23dc1ca67a4b432f46fcbbfd35be66cd0471976bcd8195db98a3efa75a`
+  - `tests/test_division_metrics.py` — category `evaluation`；39456 bytes；SHA-256 `42cdba8ff668e41206530198e1d188f3d50e7ce256600321f5971a08f480d712`
+  - `tests/test_division_sandbox_examples.py` — category `data_io`；11437 bytes；SHA-256 `2fdc8c6f0847db264e6c1ef5ff3b40bec7089ab7e7a87adc7270d6d90449de90`
+  - `tests/test_img_proc.py` — category `relevant_source`；3207 bytes；SHA-256 `d144a2196525755932540d1264edd54fa68fc323feb503db9d1284b476f6b1e8`
+  - `tests/test_io.py` — category `data_io`；4022 bytes；SHA-256 `6f88111a55cdce88af92fbb53e85b63f650fbaeb6236827de22fc06cd35cd64f`
+  - `tests/test_metrics.py` — category `evaluation`；49117 bytes；SHA-256 `40726020c13fee8aa53ced61a58e6fde356acab41ae6deaf6e879b325bdfdff2`
+  - `tests/test_training_scripts.py` — category `training`；5017 bytes；SHA-256 `27ce1f02f1df181f57c0a4366c787d49fbb8c1bcd7dc6683fc83e7447eedbe8a`
+  - `visualize/visualize_ground_truth.py` — category `relevant_source`；2492 bytes；SHA-256 `79a65af8ee08498f9f6ad220a3a3b59f0afdde4e784baa3904d7480b199639e1`
+  - `visualize/visualize_predictions.py` — category `inference`；11517 bytes；SHA-256 `afd2a739f957fb5e17ef3b9b96108ecf3137128772939aef288ba84134d18ac8`
+  - `visualize/visualize_utils.py` — category `relevant_source`；3356 bytes；SHA-256 `7dc34baec824e8a8a60af98fdb0752b30896a97bceac904d29889af786fe7302`
+
+### 14. `royerlab/tracksdata`
+
+- 固定提交：branch `main`，commit `63a1912f3b6ebd1536a2e8a8adfdf7f5eb84efa4`，commit date `2026-09-02T15:33:20-07:00`。
+- 阅读状态：`FULL_RELEVANT_REPO_SOURCE_READ`；完整 tree 124 个 blob；实际读取文件 117 个；missing 0；read error 0。
+- 许可证观察：`BSD-3-Clause`。无许可或只有 NOTICE 时，不推定再分发权。
+- 证据路径：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/royerlab__tracksdata/repo_evidence.json`；tree：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/royerlab__tracksdata/tree.txt`。
+- 角色：graph data/model toolkit。
+- 方法：检测=N/A；分割=N/A；时序链接=KDTree distance candidate edges; nearest-neighbor and ILP solvers；division=max_children constraint and explicit shift_division utilities；优化=greedy edge ordering or ilpy flow-conservation ILP with appearance/disappearance/division variables。
+- 训练/推理/评价：训练=N/A；推理=library API；评价=distance matching, CTC/traccuracy adapters。
+- I/O 与后处理：I/O=SQL/network graph backends and GEFF read/write/repair；submission=N/A；后处理=graph transforms。
+- 判定：important reusable graph layer, but not a detector or end-to-end competition solution
+- 类别覆盖：data_io=READ；data_loader=READ；dependency=READ；division=READ；evaluation=READ；inference=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；license=READ；model=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；optimization=READ；postprocessing=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；readme=READ；submission_conversion=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；temporal_linking=READ；training=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE。
+- 实际读取文件：
+
+  - `README.md` — category `readme`；2305 bytes；SHA-256 `617ab6a5c8f4df1b76f7986775573d23712b49bbeec37320eb8d269b85626443`
+  - `LICENSE` — category `license`；1534 bytes；SHA-256 `4e459930bb13a7e0ebbf8acc0f0be1bb973d4f0d095a54e1bd52b7cc27101683`
+  - `pyproject.toml` — category `dependency`；4760 bytes；SHA-256 `e361f154bc746d0cb69bf20de322742130f9d6335dbad373516db1353bfe9fa8`
+  - `src/tracksdata/io/_geff.py` — category `data_io`；11822 bytes；SHA-256 `0f70695c4de7f7249ffff9140f650102666ca07d98f9061b848d17520631ba40`
+  - `src/tracksdata/metrics/_matching.py` — category `evaluation`；10914 bytes；SHA-256 `4c07a2cd4635ce0d3a771a1c13c391eef614f31e764df525add29ba82133b69a`
+  - `src/tracksdata/metrics/_ctc_metrics.py` — category `evaluation`；13261 bytes；SHA-256 `69568778615493c2b047469263a01ef73e8865290208b2806c8289c30c8dc912`
+  - `src/tracksdata/metrics/_traccuracy.py` — category `evaluation`；2374 bytes；SHA-256 `70b790391b66dfe77b2a0fefe69533cdd9a08c1f8ef0b1a7d9e8681bbf5b43e4`
+  - `src/tracksdata/functional/_division.py` — category `division`；13883 bytes；SHA-256 `43f0df5eeac4f37e066582bf347e045e98b4e33923f35e35216990097e9c743c`
+  - `src/tracksdata/edges/_distance_edges.py` — category `temporal_linking`；12206 bytes；SHA-256 `588037099daa15d6220e19618b8ad446068f5f37425927aa0977c649d2c0726c`
+  - `src/tracksdata/solvers/_ilp_solver.py` — category `optimization`；16764 bytes；SHA-256 `d80e39f52686f6188781f7d83b9ed4d8c2bffaad3447199c71dfc4e8fe400707`
+  - `src/tracksdata/solvers/_nearest_neighbors_solver.py` — category `optimization`；10644 bytes；SHA-256 `47cba0d7a86d410ebaf5275c0e0edb76f68833327207a6bdc6fd2e8f367d5e0d`
+  - `src/tracksdata/graph/_sql_graph.py` — category `graph_model`；105613 bytes；SHA-256 `78562a33550d9844fa279b04d35dba0b8ae90a023c3663e12bac186f0261eb5c`
+  - `.pre-commit-config.yaml` — category `relevant_source`；1135 bytes；SHA-256 `87a8b3a51fc72a2d4957e6df37fc6d17784691d8da85005b712688b9eba44250`
+  - `asv.conf.json` — category `relevant_source`；537 bytes；SHA-256 `166645152ff5be03f42d7704897060eacc94bb950a5823a355d2ae795ecf3b23`
+  - `benchmarks/__init__.py` — category `relevant_source`；65 bytes；SHA-256 `7d6cfddb4b1bca002278cd4c055d0a6c6af4920b7ebe6c8844df3ae9bfe0cc39`
+  - `benchmarks/chunk_coalescing.py` — category `relevant_source`；5429 bytes；SHA-256 `8f3f46d597a411135ee2c153c61986ac92289d5ca4cd5d5f969770615b4eb182`
+  - `benchmarks/common.py` — category `relevant_source`；1062 bytes；SHA-256 `7aa50a3b003014291fb467d176e6a8c5ef878da21657119368abd3c0fa28f5b2`
+  - `benchmarks/graph_mutations.py` — category `data_io`；7204 bytes；SHA-256 `717f1468ca99c83e32c95d6f9bbbb2b8e9af0df03163e8654b278275b78ae152`
+  - `benchmarks/graph_workflow.py` — category `relevant_source`；4868 bytes；SHA-256 `4956a662b05356345aff73cc8909d3823f333c890ec262f76bd8f584d79311ed`
+  - `benchmarks/tracklet_nodes.py` — category `temporal_linking`；1558 bytes；SHA-256 `9474de9bd2b8fd8dd8fcdd91cb573e8f6f787b7b9b3ffd4cadfc95d290d8183f`
+  - `docs/concepts.md` — category `relevant_source`；2774 bytes；SHA-256 `28fc0d5548766c97acf28c9a487b9cb4a3feb86174c3fe0fa9730ae7720ae91d`
+  - `docs/contributing.md` — category `relevant_source`；1335 bytes；SHA-256 `04cbfa15ad94aef87a8770f26f4f111e72730e3bc009d4dee3e4818beb3347c8`
+  - `docs/examples.md` — category `relevant_source`；1124 bytes；SHA-256 `508e4506dfbe0dbb3272330c461311ed062ee42bb7b1bb059b3c5366806d5768`
+  - `docs/examples/basic.py` — category `relevant_source`；5842 bytes；SHA-256 `7c661465da600cc50cf8c4cd2192ca517a77e2f84241497bb0ad2d2290a110a4`
+  - `docs/faq.md` — category `relevant_source`；2689 bytes；SHA-256 `4a7b1637ee4db4f25d63b1645758868bfd3f7c69912ac15be635c9fca7172a9e`
+  - `docs/getting_started.md` — category `relevant_source`；2054 bytes；SHA-256 `88d2ccf3ac89b1580315b89ec501cd0472384d9d20e84c5c293881cff415d99e`
+  - `docs/index.md` — category `relevant_source`；19 bytes；SHA-256 `db2cc5490d8b5dfe1694595fe0faa2776c2e0e96b0c06a997ca857ab68f9201c`
+  - `docs/installation.md` — category `data_io`；593 bytes；SHA-256 `302a31913fe1d32e53dfa19c55551878a99d38184e091b5d79095f0ce1158346`
+  - `mkdocs.yml` — category `relevant_source`；2874 bytes；SHA-256 `d024fa7b77093e88a900cbf7803db50b0203600db874075850c526d9db737c26`
+  - `src/tracksdata/__init__.py` — category `data_loader`；1054 bytes；SHA-256 `6ae870573104eefd7a8c4e7f1935428d96844c2c5cb12bc79aeff9ce4f28329e`
+  - `src/tracksdata/_test/test_attrs.py` — category `data_loader`；27038 bytes；SHA-256 `2dce4b5f93ed706840fd613012cb25f2e7e9911b9cf631ba5ecb2334eb013d8d`
+  - `src/tracksdata/_test/test_options.py` — category `data_loader`；4782 bytes；SHA-256 `333ceb54ef22a374027915be7d255b4c7930288148a4e195305282cdbcdf5fa4`
+  - `src/tracksdata/array/__init__.py` — category `data_loader`；235 bytes；SHA-256 `b2e6228ba378d9130dc41913449a9294807e3d296239fd63ed5fa662b66efa06`
+  - `src/tracksdata/array/_base_array.py` — category `data_loader`；2345 bytes；SHA-256 `f970b704c3669a08f942613c58d6038157b3b4eb66646d783a5d36201777da0c`
+  - `src/tracksdata/array/_graph_array.py` — category `data_loader`；17582 bytes；SHA-256 `8e968fa9679e4d7d8027ececcd28841aa87ae965ed68eab0c07ec828b5b638fb`
+  - `src/tracksdata/array/_nd_chunk_cache.py` — category `data_loader`；7879 bytes；SHA-256 `4bed75df716a833cac4b2559030311f1267a7d444d60563a4233f06fca1cc77c`
+  - `src/tracksdata/array/_test/test_graph_array.py` — category `data_loader`；29502 bytes；SHA-256 `9fd4780a06ccef7f29909239e4f9c006a264b79b0cd126c14e64070417f413f5`
+  - `src/tracksdata/array/_test/test_nd_chunk_cache.py` — category `data_loader`；4126 bytes；SHA-256 `8b4aa457f1c25a085024b22265ae92246347c2a762ccf76f2407be02bdf18580`
+  - `src/tracksdata/attrs.py` — category `data_loader`；35053 bytes；SHA-256 `ae760ae90a5a0dc91fa9f791fcc435827cfb8f4b2b359fcd9ed8618374c1cc7f`
+  - `src/tracksdata/conftest.py` — category `data_loader`；4143 bytes；SHA-256 `d235a5f797851adefc24cec5f83c4b676c452df056c6cabfb08cad8d7207bf5f`
+  - `src/tracksdata/constants.py` — category `data_loader`；2981 bytes；SHA-256 `2cfe207d9d4f8bb03969dc466ca1685b033815d2e0dd403d121ef0ce1c64c491`
+  - `src/tracksdata/edges/__init__.py` — category `data_loader`；317 bytes；SHA-256 `1aa197f14c05960ec0224574872b40ef77437c79032307dd639b7fa527214de9`
+  - `src/tracksdata/edges/_base_edge_attrs.py` — category `data_loader`；2340 bytes；SHA-256 `91c781238fe6896b54de109ed73be9c713ccbe50ad3fb9ca7d6910f888ba0990`
+  - `src/tracksdata/edges/_base_edges.py` — category `data_loader`；2120 bytes；SHA-256 `3e4688626bba27d64655b1287c0c2fe39cb33fe25c63d2546f1fe1a512201d91`
+  - `src/tracksdata/edges/_generic_edges.py` — category `data_loader`；4543 bytes；SHA-256 `95a43f1287f32afdb70ffbd11c7ff694ecde4159aa28db0abd4fad1eed73d66c`
+  - `src/tracksdata/edges/_iou_edges.py` — category `data_loader`；720 bytes；SHA-256 `4bc81161b6a22f24c995b03e54ac9925e31142aa218aa9555cce03e403c4f751`
+  - `src/tracksdata/edges/_test/test_distance_edges.py` — category `data_loader`；16424 bytes；SHA-256 `ff18292ca6d7dd9f2bbc8339c2b55cb3dd4fdfe03486bba73198da8f400ce977`
+  - `src/tracksdata/edges/_test/test_generic_edges.py` — category `data_loader`；8816 bytes；SHA-256 `a185a4a4bf8e48ab96b019431d2fa41a9e6e346c10ffded0bf38e138311147c3`
+  - `src/tracksdata/edges/_test/test_iou_edges.py` — category `data_loader`；7717 bytes；SHA-256 `b32e298977c754246cbe370f25cda5e170b50b74113ab25f26bb4876ec0d8f34`
+  - `src/tracksdata/functional/__init__.py` — category `data_loader`；677 bytes；SHA-256 `3cb56a5be798a4a624980bb2beeff534108374f92ea33015ec6aba222819950b`
+  - `src/tracksdata/functional/_apply.py` — category `data_loader`；7869 bytes；SHA-256 `3a16ead7f03c5a4141df34263f0a33e56e09a848825e77ca84fb18987be98338`
+  - `src/tracksdata/functional/_edges.py` — category `data_loader`；3515 bytes；SHA-256 `da1095da5497ec181252d4ff123b33e725b56e2d1d82b97dd475855a70d89c21`
+  - `src/tracksdata/functional/_iou.py` — category `data_loader`；3210 bytes；SHA-256 `4de3162f2cd52e3592f4d7bc1c0ac71bcf98ce5e767d137911777ad9130d9349`
+  - `src/tracksdata/functional/_labeling.py` — category `data_loader`；4680 bytes；SHA-256 `0b274cc86c754ac7980c3eaf6b53d1e9de95d8615d432028521d18ae25eb7b61`
+  - `src/tracksdata/functional/_motile.py` — category `data_loader`；2840 bytes；SHA-256 `36b7af35467b31574010e376ebe81df78287a7a8e3ad541f55017b9d0499e9ef`
+  - `src/tracksdata/functional/_napari.py` — category `data_loader`；5190 bytes；SHA-256 `812b2844e187a1ae8527325012efa727e5aa0c60438f80a6154fd498747517d9`
+  - `src/tracksdata/functional/_rx.py` — category `data_loader`；10931 bytes；SHA-256 `c6be3baa71507c72b391a3b148d6b7b829d0ba3597539b635928f18a125f2d44`
+  - `src/tracksdata/functional/_test/test_apply.py` — category `data_loader`；7217 bytes；SHA-256 `1764696080e2ac58f8cdeb82b955a752a7d20e9febd14dcbd8795fb07e26ea26`
+  - `src/tracksdata/functional/_test/test_division.py` — category `data_loader`；26946 bytes；SHA-256 `4d398982ea9322c3484339624d6d1b9a3365023f466c7ce00610d51648da9fa4`
+  - `src/tracksdata/functional/_test/test_functional_edges.py` — category `data_loader`；2489 bytes；SHA-256 `ec740e5da4a3b940fe64b3652118b4483ddee1293391e8dc4c79f63e8cd01881`
+  - `src/tracksdata/functional/_test/test_iou.py` — category `data_loader`；10689 bytes；SHA-256 `29aa42dba5f095aa15251c9e1524c1b6889f87d225f37eec7daca54da4dae90c`
+  - `src/tracksdata/functional/_test/test_labeling.py` — category `data_loader`；2100 bytes；SHA-256 `4aa07ca209fb9b80f4cf43132a9ad3985f3daa219ee26367f3f729a3aff74d30`
+  - `src/tracksdata/functional/_test/test_motile.py` — category `data_loader`；2405 bytes；SHA-256 `10d699cfb8938a9d7e3b8ffc56e5e15483de8bb10e474b554563670de87d16d6`
+  - `src/tracksdata/functional/_test/test_napari.py` — category `data_loader`；2187 bytes；SHA-256 `5afb22be010d4e1b94821ae9f86d6fde685bd43b6fe22e1d671f30b397d42f45`
+  - `src/tracksdata/functional/_test/test_rx.py` — category `data_loader`；6674 bytes；SHA-256 `015febfadde3118129138e74803a13035aad5f06afffba2d50d68d89374a3094`
+  - `src/tracksdata/graph/__init__.py` — category `data_loader`；487 bytes；SHA-256 `eb92d963226d8906a128fbc78be007271b464c4877903552692be451630a1c05`
+  - `src/tracksdata/graph/_base_graph.py` — category `data_loader`；81656 bytes；SHA-256 `3e478c92a21bf185a444144b0f237d39c51fb9fe81545f99b11856f358be89be`
+  - `src/tracksdata/graph/_graph_view.py` — category `data_loader`；46875 bytes；SHA-256 `92947d1e88939686c6cee591cde4f3fb51ef5b7d91d99829381847706a932f5b`
+  - `src/tracksdata/graph/_mapped_graph_mixin.py` — category `data_loader`；9075 bytes；SHA-256 `74cc90df86eabea631404f7e5ca3fafaad322e80f44a0fec90a4acf6395f528d`
+  - `src/tracksdata/graph/_rustworkx_graph.py` — category `data_loader`；74519 bytes；SHA-256 `94d6b2b651c84bf4b814a5f121984b8eb20c115de5912f08161e41695bf90693`
+  - `src/tracksdata/graph/_test/test_graph_backends.py` — category `data_loader`；153167 bytes；SHA-256 `c95df3ba1379909e1a3238a6ea509442aca23d2aab937d0d79acf3aa87a6aa71`
+  - `src/tracksdata/graph/_test/test_graph_view_signals.py` — category `data_loader`；3561 bytes；SHA-256 `b9d7fbe3de414526f4fdfab0573bd73e2b6501508e72056abe47aae3eefe2eb6`
+  - `src/tracksdata/graph/_test/test_index_graph.py` — category `data_loader`；6663 bytes；SHA-256 `507a08b69864fa915b2dc9641f93b337fda4bee432ae80eb9bac5391567d07c4`
+  - `src/tracksdata/graph/_test/test_subgraph.py` — category `data_loader`；87267 bytes；SHA-256 `e5cfc5fbf2b54465e464d23e8cd9e7645b9853af2a409ec38b32927b77f242e0`
+  - `src/tracksdata/graph/filters/__init__.py` — category `data_loader`；136 bytes；SHA-256 `60a7f0098facbe8a86b585f88040c1765f39834e8c93e32848daa376ed8252f9`
+  - `src/tracksdata/graph/filters/_base_filter.py` — category `data_loader`；1779 bytes；SHA-256 `eee411c125a163440047fd338811473e6eba90139a677f6a2406e1920827fb5c`
+  - `src/tracksdata/graph/filters/_indexed_filter.py` — category `data_loader`；2441 bytes；SHA-256 `23d813b53c0eb0ac6b84302cae4400c390893fddb93bbece77d8de9bc06780e7`
+  - `src/tracksdata/graph/filters/_spatial_filter.py` — category `data_loader`；19506 bytes；SHA-256 `a1899ee8bcea1f9ebf3d53dca6c01d04ab0073d42f53d5aa56890d2a62db2b40`
+  - `src/tracksdata/graph/filters/_test/test_spatial_filter.py` — category `data_loader`；23042 bytes；SHA-256 `6c6f4903d586c8a5f69aa78675db7b8a05e3dac2cf66b5dc09172220db83dd3d`
+  - `src/tracksdata/io/__init__.py` — category `data_loader`；540 bytes；SHA-256 `a25d9e570056838f281e8d04665f118d262eefbcd58e2be45a9f9d070917b06f`
+  - `src/tracksdata/io/_ctc.py` — category `data_loader`；8656 bytes；SHA-256 `962680115642db7b86a3061e3f6223f09e5d249f5ec51749801f34b2f4148a08`
+  - `src/tracksdata/io/_numpy_array.py` — category `data_loader`；5129 bytes；SHA-256 `de5d05b7807d17366421690296416512b7c1ecefdc4d47e40110f4a393bec7d1`
+  - `src/tracksdata/io/_test/test_ctc_io.py` — category `data_loader`；2891 bytes；SHA-256 `35d8fdadf95f563d6fe8e82e46b0a6b0f4680fef65de621bbf334a85db6a7f6c`
+  - `src/tracksdata/io/_test/test_geff_dtypes.py` — category `data_loader`；6629 bytes；SHA-256 `f7371b4584f85d330fe6be5dedda4fd6a32bd229d751254cffe15a9f05745f6f`
+  - `src/tracksdata/io/_test/test_geff_metadata.py` — category `data_loader`；6099 bytes；SHA-256 `33aef714ac9823c798fa9e17c9eb85fed9ae24f6b4e0bed2df102589ec60564d`
+  - `src/tracksdata/metrics/__init__.py` — category `evaluation`；645 bytes；SHA-256 `c7562255f6b4dfbd4b6f3240a6ee7a820e933e35705ccabb5ce2e20b86ec04b5`
+  - `src/tracksdata/metrics/_test/test_ctc_metrics.py` — category `evaluation`；4741 bytes；SHA-256 `1938e843b4056ef74be6f9d23bf4cbd2568dd7cf3f79843a18f4069e1fda83de`
+  - `src/tracksdata/metrics/_test/test_matching.py` — category `evaluation`；15647 bytes；SHA-256 `385b0e6b9b9dcef1e301461cb6f8f6a70575dde3945bbd30c75cf3bab9a67498`
+  - `src/tracksdata/metrics/_test/test_metrics_visualize.py` — category `evaluation`；3009 bytes；SHA-256 `59a1fe17d84a6d82316420a19a5aff57bad1ddf1dec204ef79e55a06aff285a3`
+  - `src/tracksdata/metrics/_visualize.py` — category `evaluation`；8191 bytes；SHA-256 `269ab9c7fe3880951cdb594313f7861db91b7af3e4ad6a5695bc7b0208934a39`
+  - `src/tracksdata/nodes/__init__.py` — category `data_loader`；422 bytes；SHA-256 `82f224ad81727be72d515a56111444e916a48d545684c05021af54939c18a2d7`
+  - `src/tracksdata/nodes/_base_node_attrs.py` — category `data_loader`；2459 bytes；SHA-256 `86797a035ea5dbdecaeed250f72a7a61ee9ff26cb8743dd7b8b671d23c92848a`
+  - `src/tracksdata/nodes/_base_nodes.py` — category `data_loader`；846 bytes；SHA-256 `a44dd716e73797d483d5b1432f97782ac27c3e603691a5182f2b37897a39ace1`
+  - `src/tracksdata/nodes/_generic_nodes.py` — category `data_loader`；6101 bytes；SHA-256 `cb72cc9e95bf630f63e0989c1dc6e65fab5eacec160e80cb36ec48cd07a71f8e`
+  - `src/tracksdata/nodes/_mask.py` — category `data_loader`；19471 bytes；SHA-256 `199cfc81764cc6e1590be8ed5ec72be20a7c1e427ef5e4e06742944a20a722b4`
+  - `src/tracksdata/nodes/_random.py` — category `data_loader`；5094 bytes；SHA-256 `ca70604a8e52abd8147232f699a0a2a00887851939ca89e4c38c9e6e8b3d90a1`
+  - `src/tracksdata/nodes/_regionprops.py` — category `data_loader`；12522 bytes；SHA-256 `5b14eda7aecc3293d5e4689177112c4b57d6f624e0a38a3c4772d826bb0dd18f`
+  - `src/tracksdata/nodes/_test/test_generic_nodes.py` — category `data_loader`；16654 bytes；SHA-256 `4f7f64e3ccc80c290a80fdbafc4c75b5b6dd58eea2d399eb1d596196587ae60c`
+  - `src/tracksdata/nodes/_test/test_mask.py` — category `data_loader`；29567 bytes；SHA-256 `335b258c1e63c8422890a2e29ea972df5dfa19163093df705e6e68e347c0dfb4`
+  - `src/tracksdata/nodes/_test/test_random.py` — category `data_loader`；8339 bytes；SHA-256 `2961d88e46c7088883ed32da47d8c5332bb826408ba8bf4f64b64afa79d79e99`
+  - `src/tracksdata/nodes/_test/test_regionprops.py` — category `data_loader`；12376 bytes；SHA-256 `02c18716b38338a35584bcfe1e1f4c1bc2ca6b3fdd4a58a61df9564a51cfdf72`
+  - `src/tracksdata/options.py` — category `data_loader`；4824 bytes；SHA-256 `6c7388c1dff44cd78d238a37b0c44e167fc300a04129507bfce5ac725b5be22a`
+  - `src/tracksdata/solvers/__init__.py` — category `data_loader`；261 bytes；SHA-256 `ece50aa70af4cbb97261291714bb687188293ade0481b7d2b18b0635385751f3`
+  - `src/tracksdata/solvers/_base_solver.py` — category `data_loader`；1288 bytes；SHA-256 `7edf5fad72c57ce62ba090fe15bc783c983913bac1b8aa525c0dd2d62df68015`
+  - `src/tracksdata/solvers/_test/test_ilp_solver.py` — category `data_loader`；31500 bytes；SHA-256 `e1d25c175ac3fd8037fc2d2e68eca805424185c761fc03a36d552f7a56a7a1bb`
+  - `src/tracksdata/solvers/_test/test_nearest_neighbors_solver.py` — category `data_loader`；15968 bytes；SHA-256 `5456370d4475e4cd706e9d770ad19c1412eb64f861f181667c2c383729d46986`
+  - `src/tracksdata/utils/__init__.py` — category `data_loader`；86 bytes；SHA-256 `fdc3788bb47aeec54ef03ceeefe8528959bdf8a29f230466bc9b21e5ab7bb67c`
+  - `src/tracksdata/utils/_cache.py` — category `data_loader`；1902 bytes；SHA-256 `2aa22c8b3b132c4c68c7059ba29f8bd804928b487b19259e74614ee227bf6d2e`
+  - `src/tracksdata/utils/_dataframe.py` — category `data_loader`；2431 bytes；SHA-256 `f368e2007064a2c3d1e3cbf29f3ebecde6c1ca01cc51596c4cd3d0150a94419a`
+  - `src/tracksdata/utils/_dtypes.py` — category `data_loader`；19960 bytes；SHA-256 `2f780fa69d61d0c1f257226c9b70539984914533dca759f6c301e46e61dfaf52`
+  - `src/tracksdata/utils/_logging.py` — category `data_loader`；138 bytes；SHA-256 `29fff25898053e9218d1268dc568ed9a8c71d1a417ac65fa90a0b4ac582278fa`
+  - `src/tracksdata/utils/_multiprocessing.py` — category `data_loader`；2123 bytes；SHA-256 `189d2d53b4cc191924cc36c71eb4cfa6d21ab05f1bd4fa82cb3b3ab7d7311e22`
+  - `src/tracksdata/utils/_signal.py` — category `data_loader`；2969 bytes；SHA-256 `6ff6737edad79b95d12545db7d9c88021803a51603926da3b3a1ca7ea214ac18`
+  - `src/tracksdata/utils/_test/test_attr_key_dtype.py` — category `data_loader`；8976 bytes；SHA-256 `1c11967205c40927dfc057cd22be7ac0d1a8b38cb06e801bf876a90b0fdfa55b`
+  - `src/tracksdata/utils/_test/test_dataframe.py` — category `data_loader`；1789 bytes；SHA-256 `13be961588b11e8ed33b3eb14927a6e78c3d4fffc5b0a5564e5de535ca370e45`
+  - `src/tracksdata/utils/_test/test_dtype_serialization.py` — category `data_loader`；2423 bytes；SHA-256 `4902b05d2f3b543d1b9a68a7574fb051a152365dfc9bd7df82b912cc41b8b1bb`
+  - `src/tracksdata/utils/_test/test_multiprocessing.py` — category `data_loader`；770 bytes；SHA-256 `a432652d86409eb83ce9cb77c41b0ac8e3eeb2089554322e1f5d35910d80c9cf`
+
+### 15. `royerlab/ultrack`
+
+- 固定提交：branch `main`，commit `5c94d845eb0a7b78c8dc24492ef00f218a467995`，commit date `2026-08-13T10:55:23-07:00`。
+- 阅读状态：`TARGET_FILES_READ`；完整 tree 269 个 blob；实际读取文件 183 个；missing 0；read error 66。
+- 许可证观察：`BSD-3-Clause`。无许可或只有 NOTICE 时，不推定再分发权。
+- 证据路径：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/royerlab__ultrack/repo_evidence.json`；tree：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/royerlab__ultrack/tree.txt`。
+- 角色：general 2D/3D tracker。
+- 方法：检测=expects foreground/contour evidence from upstream models；分割=hierarchical oversegmentation proposes mutually exclusive segment candidates；时序链接=KDTree spatial candidates with motion/color features；division=binary division variable in global biological flow constraints；优化=mixed-integer program; Gurobi when available with CBC fallback。
+- 训练/推理/评价：训练=N/A for a fixed detector; tracking parameters configured；推理=segment -> link -> solve pipeline；评价=export/CTC support, no competition adjusted-Jaccard evaluator in selected core。
+- I/O 与后处理：I/O=SQLite working DB and GEFF export；submission=GEFF and CTC exports；后处理=global selection resolves overlapping segments and track links。
+- 判定：particularly relevant because its tree includes a Zebrahub example and joint segmentation/tracking optimization
+- 类别覆盖：data_io=READ；data_loader=READ；dependency=READ；division=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；evaluation=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；inference=READ；license=READ；model=READ；optimization=READ；postprocessing=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；readme=READ；submission_conversion=READ；temporal_linking=READ；training=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE。
+- 实际读取文件：
+
+  - `README.md` — category `readme`；7093 bytes；SHA-256 `5a1baf3200e1ce0b341ac6df89e54f54a0a52aeeacb3db56b79a519f015dc20f`
+  - `LICENSE` — category `license`；1507 bytes；SHA-256 `6dbecb9818fe2888fa84ba8a4cc400c7f75fe4f366dc569493653e9654f50463`
+  - `pyproject.toml` — category `dependency`；4831 bytes；SHA-256 `44ce3b5750c9a99f05748fb693cabc02eae17310dc5030e472fe926fb11ab4f7`
+  - `docs/source/theory.rst` — category `method`；113 bytes；SHA-256 `1ea62786ff48121faceeda061898a7e271255a58790e0963c47c1b6a4c04608f`
+  - `ultrack/core/tracker.py` — category `pipeline`；7122 bytes；SHA-256 `838141e4d5213a8d1107e9cd5eb29b4704e3399e3dcdf62957a98ec5cc393cff`
+  - `ultrack/core/segmentation/processing.py` — category `segmentation`；17319 bytes；SHA-256 `c2e51d14c721f3d00199351ff2f93afa1b685093ea8bab12323f68944147607a`
+  - `ultrack/core/segmentation/hierarchy.py` — category `segmentation`；2798 bytes；SHA-256 `db78690df4ada6747f73f1e6f1f774d26dbf0b4b771e540fe87151280e5a0bec`
+  - `ultrack/core/linking/processing.py` — category `temporal_linking`；11940 bytes；SHA-256 `6c8d60465d2ad2015685df3551d1ebcd25a4889872086d25cc1c55ffd7872fda`
+  - `ultrack/core/linking/features.py` — category `temporal_linking`；2137 bytes；SHA-256 `398f0bf876faa71ae103c98bec4c27b99e4cf3663297f495fcfdd521c0617c2d`
+  - `ultrack/core/solve/processing.py` — category `optimization`；2024 bytes；SHA-256 `25921c9c847c396765c1ab09478c271ad0cce1a30872c789d44f4d9980f3aeae`
+  - `ultrack/core/solve/solver/mip_solver.py` — category `optimization`；14068 bytes；SHA-256 `bc7615a37dc4b5bcce5ded10250ad27406b9531b3a9317f4fc2e869632f2bd89`
+  - `ultrack/core/export/geff.py` — category `submission_conversion`；8852 bytes；SHA-256 `d2560ee44d6f5a74cb355523c918fb66a7bb13427c66135d74e03b0c3ade3d4d`
+  - `ultrack/core/export/ctc.py` — category `submission_conversion`；14046 bytes；SHA-256 `a92725aed72d7385dc75161c6ae26536bb6fc7a7a5771c34d9e65926bb6a7048`
+  - `examples/zebrahub/config.toml` — category `zebrafish_example`；591 bytes；SHA-256 `a8915dcbc45028b150f41f8590aefaa38c35b42c8843327621602782a9a2631a`
+  - `examples/zebrahub/zebrahub.ipynb` — category `zebrafish_example`；2420469 bytes；SHA-256 `20137ca8834a78cfc0b42b2e95b089bac626feb7ae9d0320c71d7607873809d3`；Notebook cells=17, code=8, markdown=9, all_code_cells_traversed=True
+  - `.napari-hub/DESCRIPTION.md` — category `data_io`；461 bytes；SHA-256 `d7d9e8b5df3419757beb636fe17757b96cc8a62b34cc2563bb76bb2590c346b7`
+  - `.napari-hub/config.yml` — category `relevant_source`；542 bytes；SHA-256 `eb6152869538c07c7053c5bda3ecfb8444ba8b80dfd3217db34d8f09318ff5e0`
+  - `.pre-commit-config.yaml` — category `relevant_source`；1792 bytes；SHA-256 `2529418660bb94212de289453563605d930e7485e34a2fd2ad41399cf4e4a6b6`
+  - `benchmarks/README.md` — category `readme`；968 bytes；SHA-256 `765479c8996eb84f2dc07b5a1a76485ba80f5fa13b9eb10e9c9a750036ac6d2e`
+  - `benchmarks/asv.conf.json` — category `relevant_source`；8209 bytes；SHA-256 `c2704d36847f4067ec7729f82a91de561232a0a09095b7e847169d875200d05a`
+  - `benchmarks/benchmarks/__init__.py` — category `relevant_source`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `benchmarks/benchmarks/benchmark_solver.py` — category `relevant_source`；3404 bytes；SHA-256 `7c53e3e4821d6f57abfbc9f8cb9365c83bfe39fc8295beac1618e46e59011310`
+  - `benchmarks/get_profile_results.py` — category `relevant_source`；1021 bytes；SHA-256 `c22ffc5e95a974216b2f9a38aabd5ec1dce9043aa5c97c7f090068a4f929a491`
+  - `docker/README.rst` — category `readme`；4749 bytes；SHA-256 `1f7ee4259854eea752bf77bece713884177a4edbea41112418c6930da4d88934`
+  - `docker/build_containers.py` — category `relevant_source`；4837 bytes；SHA-256 `45923c1133e079b33469e0fe3af7d803c2e465bbf03c542780d7677839ea3298`
+  - `docs/README.md` — category `readme`；437 bytes；SHA-256 `c0db0e262e5568a5eb8a5b11c0b2679f10c53dd35de310a53a8acd2c93b7c44f`
+  - `docs/source/api.rst` — category `relevant_source`；1947 bytes；SHA-256 `7720e3f21d985f4fdba60f9585c038c1bf2006870441ec2726eacb6607b1d17f`
+  - `docs/source/appearances.rst` — category `relevant_source`；1643 bytes；SHA-256 `4ddcfa02906fc8fde72a09bb2289fbffd704e941544c23ef4ab3554796778a97`
+  - `docs/source/cli.rst` — category `relevant_source`；966 bytes；SHA-256 `06e2e1fae5e3e6bd3fe96b6cbf98859f4226e99dd9ac793538ca0058b2612bd6`
+  - `docs/source/conf.py` — category `relevant_source`；4278 bytes；SHA-256 `4291ce7e57f68345381cfa51071f87219a740445a2d934a6783638359616836a`
+  - `docs/source/configuration.rst` — category `data_io`；1140 bytes；SHA-256 `e005c025998f247966811ebd99fb9485815987c035aff778d8cdd34eaf792453`
+  - `docs/source/examples.rst` — category `relevant_source`；171 bytes；SHA-256 `c679419f5fb24456336e19edc19d2ed3af8bb6fe4e01d94348bc6eec59e04813`
+  - `docs/source/faq.rst` — category `relevant_source`；2424 bytes；SHA-256 `26e1c8343e0cdcd6ced8b0efe892eacb2195c09efbfbc2e1a8714d75177260bd`
+  - `docs/source/fiji.rst` — category `relevant_source`；215 bytes；SHA-256 `b546fc1f1a819e85e766af47a0611ff0d6f6b9499092fe804edde23bd3cdf8fc`
+  - `docs/source/getting_started.rst` — category `relevant_source`；6682 bytes；SHA-256 `d6e07f37ac0805a4cb40b46f220bf0e85f609456a3e5bfcd3509d56bcbdb0d54`
+  - `docs/source/index.rst` — category `relevant_source`；3579 bytes；SHA-256 `da093099f98f99868bdd8d4c0bc4c9564d491e3f1037315ef1aafb368fdedf65`
+  - `docs/source/install.rst` — category `relevant_source`；3847 bytes；SHA-256 `04faadc880b696b7c464b43d6f6511d6aa32773d6083b0014a90822062a19db3`
+  - `docs/source/napari.rst` — category `relevant_source`；3064 bytes；SHA-256 `a79a08284fdf99f789d45968e115ef7d517b9cfc31e9ffd6e7eb0be4dadc397c`
+  - `docs/source/optimizing.rst` — category `relevant_source`；7609 bytes；SHA-256 `81d758d690168415df70e7166ef658a0afb2591eeacf7c7ffe700ee517fc3dfe`
+  - `docs/source/quickstart.rst` — category `relevant_source`；2150 bytes；SHA-256 `10d2610c1fff0f08dde885654816e8632c9259e6cdf73b064176f1b343aea281`
+  - `docs/source/rest_api.rst` — category `relevant_source`；11474 bytes；SHA-256 `0a35c3128d0dcabded53eeb183012a41752c9328ea69c5df037de5676148664d`
+  - `examples/README.rst` — category `readme`；2218 bytes；SHA-256 `30774994203838163f17d746a6ecc91fdec70a2490b7f2b52f91d9e67aa7d08c`
+  - `examples/api/api_example.ipynb` — category `relevant_source`；3349338 bytes；SHA-256 `55f58fbaf36a9419c00dc2fad84a035c38194503b45e9c8ac0ef207f9bcd3cd2`；Notebook cells=26, code=13, markdown=13, all_code_cells_traversed=True
+  - `examples/api/environment_cpu.yml` — category `relevant_source`；377 bytes；SHA-256 `99cf4e33916b2a81521748816efe67accf28580db16914eda48379fa5171285e`
+  - `examples/api/environment_gpu.yml` — category `relevant_source`；405 bytes；SHA-256 `fddeb93e9a27dca399bae1f8073703c21c9805f6d1b929106b7b5107d7d23cab`
+  - `examples/flow_field_3d/environment_cpu.yml` — category `relevant_source`；250 bytes；SHA-256 `fdf42dc16b8c4b59ffd6fa9b534e6104bdd590ff9ebe77870ec410d5758cbbec`
+  - `examples/flow_field_3d/environment_gpu.yml` — category `relevant_source`；272 bytes；SHA-256 `da3cda792cb55409ba92ef459daefc78cebf591f8f10a597d23a4c1b17380c51`
+  - `examples/flow_field_3d/tribolium_cartograph.ipynb` — category `relevant_source`；5596406 bytes；SHA-256 `14d30e0f53951d34c5aa0dc78d31a1f77fb1c8772a2b0cb34990560de3a04d8e`；Notebook cells=29, code=14, markdown=15, all_code_cells_traversed=True
+  - `examples/micro_sam/environment_cpu.yml` — category `relevant_source`；256 bytes；SHA-256 `06f4cc367cc153967e7761cdb86ee6f4e243d3f3fd220e67d241c1d291948fed`
+  - `examples/micro_sam/environment_gpu.yml` — category `relevant_source`；278 bytes；SHA-256 `1dd8c3362c63f7753b036ba88ef9ede52b84fce644916fb8d16c2895cc33ab3f`
+  - `examples/micro_sam/micro_sam_tracking.ipynb` — category `temporal_linking`；4035725 bytes；SHA-256 `85ff0c2bf0971a76aac51b62d0115db28e36e3d160b679fc14ba67900a25e739`；Notebook cells=14, code=7, markdown=7, all_code_cells_traversed=True
+  - `examples/multi_color_ensemble/environment_cpu.yml` — category `relevant_source`；288 bytes；SHA-256 `bd94a764d42b8e843c04b5fb244d2bd5e8d3f0cf0145632bcf97fc17aed4fd3b`
+  - `examples/multi_color_ensemble/environment_gpu.yml` — category `relevant_source`；291 bytes；SHA-256 `8027f1fc457b4084a41a52ec43ca4ab0e0d810ddbfb7b36d4b049535736991cb`
+  - `examples/multi_color_ensemble/multi_color_ensemble.ipynb` — category `relevant_source`；10929119 bytes；SHA-256 `98f881eb1c5172fe47b02c00216c363498b991cc7d2a96c1ef15e26864a0d2a5`；Notebook cells=25, code=13, markdown=12, all_code_cells_traversed=True
+  - `examples/neuromast_plantseg/environment_cpu.yml` — category `relevant_source`；249 bytes；SHA-256 `28cfead73b3e4035fb91a0112bdafc8d59afc180ae43c9880bc65df83cb723fc`
+  - `examples/neuromast_plantseg/environment_gpu.yml` — category `relevant_source`；286 bytes；SHA-256 `5551cb5267438044e88a6dc75c85777932f749f9875acaf682be3f67910d5db8`
+  - `examples/neuromast_plantseg/neuromast_plantseg.ipynb` — category `relevant_source`；6172809 bytes；SHA-256 `8f899b1f38daf6de070783154bdcfdb41a2a77112a3e588518b1462656c3aacc`；Notebook cells=17, code=9, markdown=8, all_code_cells_traversed=True
+  - `examples/node_features.py` — category `relevant_source`；2937 bytes；SHA-256 `e550fc80bf65b922c2116eec9fe843864411254ac0fbc3d9f2c5d3da93582662`
+  - `examples/refresh_examples.sh` — category `relevant_source`；1036 bytes；SHA-256 `0b9c64bc5518ac849ecd18fb7c28a249601d4c41fc4d296e1332f675c0329d0f`
+  - `examples/stardist_2d/2d_tracking.ipynb` — category `temporal_linking`；7069205 bytes；SHA-256 `72ea6b0d2647f26a887f5da556ae0c240057a742ed4aa14d8a1a9d9fea5989f7`；Notebook cells=25, code=14, markdown=11, all_code_cells_traversed=True
+  - `examples/stardist_2d/environment_cpu.yml` — category `relevant_source`；262 bytes；SHA-256 `4196508851fea327e40de2ce62d450f9a9ab04f65c797d38b504f43a3bc66d83`
+  - `examples/stardist_2d/environment_gpu.yml` — category `relevant_source`；397 bytes；SHA-256 `bfb24dd1ab4be455ba1456091572e893e3e0769de5e2ac6a9604a297aea0ba4d`
+  - `examples/zebrahub/environment_cpu.yml` — category `relevant_source`；195 bytes；SHA-256 `4ed3fdad48625d27e4c5818ea60e5eb50e07bc77aaa691262c8ff7cf80e42273`
+  - `examples/zebrahub/environment_gpu.yml` — category `relevant_source`；233 bytes；SHA-256 `93125ff78f4ac4bd33c26896dc56c5aa935fc704aefaa4c34952a9ca0f6fa7f2`
+  - `tests/test_project_metadata.py` — category `data_loader`；592 bytes；SHA-256 `82bc612e11acda10f8a281a61fe731f4abd64e390efa21d4ce995f958bd71d7a`
+  - `tox.ini` — category `relevant_source`；1028 bytes；SHA-256 `3694c253000496970b57844bf05944f1b813c5e05d0082745c655fbca83717fc`
+  - `ultrack/__init__.py` — category `temporal_linking`；974 bytes；SHA-256 `60e5be984e625ae6f718264bb4e461965b33513cdffdae2e2913642992a14770`
+  - `ultrack/api/__init__.py` — category `temporal_linking`；104 bytes；SHA-256 `f75b69664843f8a2cd5617b5615ca191e865df95aa286d491c77f1e03c53b8fa`
+  - `ultrack/api/_test/test_api.py` — category `temporal_linking`；14380 bytes；SHA-256 `2ebc0a0b7325ac7e536ff2ed68e1529aa1cf29956e0d0730946091d7ba23b895`
+  - `ultrack/api/app.py` — category `temporal_linking`；21005 bytes；SHA-256 `fc332d4a87e0ebe8e8cbe0cc1c3d4014351195f13b97c32773257878e720c473`
+  - `ultrack/api/database.py` — category `data_loader`；9671 bytes；SHA-256 `40b6b1c3e89d892348f05084c2dcff3b21df885b93332f4e4ce7d7b15a7ee4f3`
+  - `ultrack/api/main.py` — category `temporal_linking`；1298 bytes；SHA-256 `7c9557d73cd4c623856882eb87c82e13229167d867c89343c449cb82661c59ae`
+  - `ultrack/api/settings.py` — category `temporal_linking`；770 bytes；SHA-256 `48effef62cda34b48fcf60b5bf27f4cb19315fb7c09db6a22d662f53df5a1a20`
+  - `ultrack/api/utils/__init__.py` — category `temporal_linking`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `ultrack/api/utils/api.py` — category `temporal_linking`；9727 bytes；SHA-256 `88b9fb26edd025a50ecd1544b5e66a2454e17022e6f87f72c10af158188de0c8`
+  - `ultrack/api/utils/fs.py` — category `temporal_linking`；2116 bytes；SHA-256 `457fba9eb4f2742571161c3a1a56a5a9bfa1534e275535899d287b1ab8e9385c`
+  - `ultrack/api/utils/zarr.py` — category `temporal_linking`；2647 bytes；SHA-256 `76daf24d93abd5cc0132735856b68b050190d1ac26cba72c4b3c17b288f34447`
+  - `ultrack/cli/__init__.py` — category `temporal_linking`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `ultrack/cli/_test/test_cli.py` — category `temporal_linking`；7640 bytes；SHA-256 `d82bea4ecd397153968912688a19ddb6d2650e2b809d4ae78902b268c72f4243`
+  - `ultrack/cli/check_gurobi.py` — category `temporal_linking`；814 bytes；SHA-256 `70f4f1e6b08d39a5a19ebed6a21a35386a002cce620d389418d8e99531bda80f`
+  - `ultrack/cli/clear_database.py` — category `data_loader`；983 bytes；SHA-256 `ef735cfd1f9e2a98b92c1dd03070f44ec355fd70fbeeb89650eda56736bdc85e`
+  - `ultrack/cli/config.py` — category `temporal_linking`；535 bytes；SHA-256 `91cdd0d497ce64aaa0ebd93d1840d11ea31b6086dde95414aaab2de616e12888`
+  - `ultrack/cli/data_summary.py` — category `data_loader`；4008 bytes；SHA-256 `91dbed0ee4becad08a2210a9382d82bf70028dc78187b75371828560fff393b8`
+  - `ultrack/cli/estimate_params.py` — category `temporal_linking`；2370 bytes；SHA-256 `ccba7788b4843e9cd40a488fb17dcc6e0351ec7527973654ea471c298773b8af`
+  - `ultrack/cli/export.py` — category `temporal_linking`；7669 bytes；SHA-256 `a2127b3e841e36edb22fca48756af7660c9808e75dfc62a9c6349dfc8fcddc09`
+  - `ultrack/cli/flow.py` — category `temporal_linking`；1068 bytes；SHA-256 `bf7da35590482ded6f2a384eecef2c2a8c10c3d7817b6c85332499e18bdf1935`
+  - `ultrack/cli/labels_to_edges.py` — category `temporal_linking`；1643 bytes；SHA-256 `27d7c5ebfd3223a1b47c724ba3332b75565f38e272e3da7b8529da6fd90b8cd4`
+  - `ultrack/cli/link.py` — category `temporal_linking`；1472 bytes；SHA-256 `282cd681d0edd848b24ee01d92beb85ae10518073dc6f8a68dea93b5a76f4fe5`
+  - `ultrack/cli/main.py` — category `temporal_linking`；1252 bytes；SHA-256 `6333b02bb00eb6d44128cfcb945b5b06ce29de3a11a2a802b713f5253fb927d2`
+  - `ultrack/cli/match_gt.py` — category `temporal_linking`；4921 bytes；SHA-256 `b965818c02c465588b1cfb906659e57fa45c447fe5c017a0803007e979a64a93`
+  - `ultrack/cli/predict.py` — category `inference`；1370 bytes；SHA-256 `ac260d76cf1d28890df6d193d33ba074eeeee2367f58cbe33f7f73c06e562a97`
+  - `ultrack/cli/segment.py` — category `temporal_linking`；3356 bytes；SHA-256 `57713dc5e6de65af9b86da3be16b98ca2bc0bde0db3e50a5dc5dd68d744ad2ca`
+  - `ultrack/cli/server.py` — category `temporal_linking`；781 bytes；SHA-256 `0be9c4f73d079710588709fcb3880c37cef5fe7a2ea95042f482d156e0dd48d2`
+  - `ultrack/cli/solve.py` — category `temporal_linking`；486 bytes；SHA-256 `a838b6a1aefd399cac4ce8fd0e8af0e092fa91fec31b63af539a377d324f9353`
+  - `ultrack/cli/utils.py` — category `temporal_linking`；4703 bytes；SHA-256 `c2415415ea3fc0ed7f6e36a694f3425483bdb4a94d530329e7eab4d6c371b5ba`
+  - `ultrack/cli/view.py` — category `temporal_linking`；561 bytes；SHA-256 `0cac1a9cfc7c05e17a9f6e5744aabfd60ebe0f5c8f15f734f4551cd854354f80`
+  - `ultrack/config/README.md` — category `readme`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `ultrack/config/__init__.py` — category `temporal_linking`；244 bytes；SHA-256 `d770aafd5025f436a253ba8f99716606119c1f749098c7e1455ba0c100d3a0e4`
+  - `ultrack/config/_test/test_config.py` — category `temporal_linking`；1396 bytes；SHA-256 `350aa609ddd113956f428283394992169adfcc04c5f041bf3f004fdd8f67b784`
+  - `ultrack/config/config.py` — category `temporal_linking`；2453 bytes；SHA-256 `99d412b3b21bed1b283d3a47ee8589b4a6efe94518af0885bfbcb4231a95323f`
+  - `ultrack/config/dataconfig.py` — category `data_loader`；3847 bytes；SHA-256 `b0dfe648a1e63e6eec7854ca865923e572e7165ea058fa41e77aacdf7d0639d4`
+  - `ultrack/config/segmentationconfig.py` — category `data_io`；3449 bytes；SHA-256 `adda45d8347b6704f6abaa1d6d99f81d6247cd6cfb5fd0b33a0754b5a57d8a1b`
+  - `ultrack/config/trackingconfig.py` — category `temporal_linking`；3081 bytes；SHA-256 `4458619ec2e2727178241de858cd69cde243fd66be2b70fa8a4e8041e711b7ac`
+  - `ultrack/conftest.py` — category `temporal_linking`；78 bytes；SHA-256 `835a7f43292902a76dc5395b1ad098740128eea38118b6e122b4de14510df96c`
+  - `ultrack/core/README.md` — category `readme`；1476 bytes；SHA-256 `9f279e2d8d6166185fd5ab5ec9c7f48d5caf7a005993ff000cab7b37e5640f35`
+  - `ultrack/core/__init__.py` — category `temporal_linking`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `ultrack/core/_test/test_database.py` — category `data_loader`；1668 bytes；SHA-256 `faa6d4390f0fcb3c1a281cbd6104919c5865b97b034a464fc82b9f85d95fff08`
+  - `ultrack/core/_test/test_gt_matching.py` — category `temporal_linking`；1071 bytes；SHA-256 `195065bb93a749456dadfef7ea069ceee73422faaf0091b84f4a18a39a1cc8be`
+  - `ultrack/core/_test/test_interactive.py` — category `temporal_linking`；4869 bytes；SHA-256 `6ca9640212561cb2a6e1f8168d29e06e48c3dbfc7a015023a8d10195e5e6b270`
+  - `ultrack/core/_test/test_main.py` — category `temporal_linking`；696 bytes；SHA-256 `ac7bd8ecf8afe310c3859a5c2908bc1a9d171d947e6f775ca2c4a5c91994b793`
+  - `ultrack/core/_test/test_tracker.py` — category `temporal_linking`；7430 bytes；SHA-256 `1ed7fc407b498f39ffb01471a649a2ae1b12d202d292456db85a0687121cedce`
+  - `ultrack/core/database.py` — category `data_loader`；8760 bytes；SHA-256 `795923e73d2c5fb59550713a41f826fa4d0cb3a79c6c4fa2dadc49a86d9b65a3`
+  - `ultrack/core/export/__init__.py` — category `temporal_linking`；453 bytes；SHA-256 `a1ceaa1a1684fc9ba0f7350db374dd12ae2f31904e88614e123233362e3a1ccc`
+  - `ultrack/core/export/_test/test_ctc.py` — category `temporal_linking`；4091 bytes；SHA-256 `91680e5cc8c4b98880cd4b036c74a5608cb8a9e1f6e961abfcfeed8eb7e7cf29`
+  - `ultrack/core/export/_test/test_exporter.py` — category `temporal_linking`；2482 bytes；SHA-256 `d5e567445e74afbd53c2ab5a9e78c5939a8c2f194d7270991b6ae9f82d88b3ec`
+  - `ultrack/core/export/_test/test_geff.py` — category `data_io`；3640 bytes；SHA-256 `8297774bf094ff3a1a762dfe86a923831494eb7bcd13e33e70f1d4c012941ab0`
+  - `ultrack/core/export/_test/test_networkx.py` — category `model`；1800 bytes；SHA-256 `2368f3090a63523207f3948bd9eb2ea4018833dc8c9d4de1790c6c02bf298174`
+  - `ultrack/core/export/_test/test_trackmate.py` — category `temporal_linking`；1213 bytes；SHA-256 `c56d162ddd014876a693e70fe6ac5a6e7d572f2daf8c29d13cade6d4e2d9971c`
+  - `ultrack/core/export/exporter.py` — category `temporal_linking`；3024 bytes；SHA-256 `c53514c21f850e2a1427326953b498bd08fc813e197db52accc6f0bfcd8af368`
+  - `ultrack/core/export/networkx.py` — category `model`；2652 bytes；SHA-256 `cd7843eef74aa919a2560212374af58650f2f75895434fc18d5188e89530475f`
+  - `ultrack/core/export/trackmate.py` — category `temporal_linking`；12599 bytes；SHA-256 `887f34626bcaa68690cfe29b0b26452b8b4877d6516ea47d2d94093254f4666a`
+  - `ultrack/core/export/tracks_layer.py` — category `temporal_linking`；1672 bytes；SHA-256 `950783ba7bd3fef2f79160c64c23dcbf99b230f4ef558d47d0019de01a2e0fd9`
+  - `ultrack/core/export/utils.py` — category `temporal_linking`；6429 bytes；SHA-256 `a16caaa064459629df88d6a28ee83d9729b50a20aed3e4a7478e7ab914eead4d`
+  - `ultrack/core/export/zarr.py` — category `temporal_linking`；2095 bytes；SHA-256 `3f33380a293982472e3c3823dd6d30f6d0f0597d004d899e0b7c9689a0ab3699`
+  - `ultrack/core/interactive.py` — category `temporal_linking`；8205 bytes；SHA-256 `4f51213277f06a367dd3bf480c149c766491c73598787a2492afe86d5a5d8d5d`
+  - `ultrack/core/linking/__init__.py` — category `temporal_linking`；54 bytes；SHA-256 `872ef036c247e90159a6d53c484c2b3652102febe6dd536cf120e0841661c42d`
+  - `ultrack/core/linking/_test/test_link_processing.py` — category `temporal_linking`；4058 bytes；SHA-256 `de3c8d504552eacf1d23a133ee9d23d8c7a7d09d273d17251256ea73f062ecba`
+  - `ultrack/core/linking/_test/test_link_utils.py` — category `temporal_linking`；1073 bytes；SHA-256 `2288a4a62706da713722722cde862101c5712a1c74f5ddbacb6f899df72a673f`
+  - `ultrack/core/linking/utils.py` — category `temporal_linking`；544 bytes；SHA-256 `501b45dfd5192adb9867278254ec20464c69209950f8fbd7dd3c955f7cc38055`
+  - `ultrack/core/main.py` — category `temporal_linking`；4708 bytes；SHA-256 `d9f351f1dd583860565565b66fd2e83d3ab506fee940db0e31577b74e8f8eadb`
+  - `ultrack/core/match_gt.py` — category `temporal_linking`；13878 bytes；SHA-256 `aa83784de426b292b282e58f3ffae69ec08f7075a84e9594c146f5fafd2678a6`
+  - `ultrack/core/segmentation/__init__.py` — category `data_io`；68 bytes；SHA-256 `d48e38f32916123928072f0a10058d108b43dc995189881c262f264aedd77591`
+  - `ultrack/core/segmentation/_test/test_hierarchy.py` — category `data_io`；1065 bytes；SHA-256 `bf732b843f091cc613051c7eb60fafaeb026cc4bb37719263cd69cbaedce9d96`
+  - `ultrack/core/segmentation/_test/test_node.py` — category `data_io`；565 bytes；SHA-256 `a90a8850b01d3ae26788aaf156b3edda360109996dd41e756b049f737b6979ff`
+  - `ultrack/core/segmentation/_test/test_segment_processing.py` — category `data_io`；3331 bytes；SHA-256 `18a18a0ac287eb0931096ce590739a4dc6f1b17e6d0b125cd4cf856fbf1b26a1`
+  - `ultrack/core/segmentation/node.py` — category `data_io`；10912 bytes；SHA-256 `09494b4ffc1111ac2a058e904e327ea4a80239bda2d9d064533f8801b4073a90`
+  - `ultrack/core/segmentation/utils.py` — category `data_io`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `ultrack/core/segmentation/vendored/graph.py` — category `data_io`；2586 bytes；SHA-256 `572e9ac2c9953646ccf55c7724f83b72e83419ccabb4785bb125c1bafbe070ac`
+  - `ultrack/core/segmentation/vendored/hierarchy.py` — category `data_io`；12268 bytes；SHA-256 `0c7d8f010f1e87a716cc612bdfb5f3627de5e3c11c1d9954923d2494378f01b4`
+  - `ultrack/core/segmentation/vendored/node.py` — category `data_io`；4846 bytes；SHA-256 `d7b3b4b6a1361451cc2cadab9bd0c362af44093166f943b02912cd7b672d1213`
+  - `ultrack/core/solve/__init__.py` — category `temporal_linking`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `ultrack/core/solve/_test/test_sql_tracking.py` — category `temporal_linking`；9561 bytes；SHA-256 `83b717abe60395da643f5febf88949a5a1fde8c2b6f197775508e30c6e9bf366`
+  - `ultrack/core/solve/solver/__init__.py` — category `temporal_linking`；140 bytes；SHA-256 `1cf4142bfa57c6deb49bfe80561bc34332f63ca946100fe1dd3cfa1fff5a961d`
+  - `ultrack/core/solve/solver/_test/test_solvers.py` — category `temporal_linking`；10754 bytes；SHA-256 `768e0a637efcbb89785f3fc0330e99859c0cbafa348a4851ca990ec336a3448f`
+  - `ultrack/core/solve/solver/base_solver.py` — category `temporal_linking`；3561 bytes；SHA-256 `d91493ca492f8e41a5dab0458836d2ef7f6b0c54b895e7c16d378e7253de53d5`
+  - `ultrack/core/solve/solver/heuristic/__init__.py` — category `temporal_linking`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `ultrack/core/solve/solver/heuristic/_heap.py` — category `temporal_linking`；5491 bytes；SHA-256 `133864df7328cb93b1f1474fa83c67d8936d5aed51ab9385a5320c00522fcc17`
+  - `ultrack/core/solve/solver/heuristic/_numba_heuristic_solver.py` — category `temporal_linking`；9148 bytes；SHA-256 `92519769cf3e462c10660d571d962b23494596d1431bf0dfb26d57c1b7ae155f`
+  - `ultrack/core/solve/solver/heuristic/_test/test_heap.py` — category `temporal_linking`；1469 bytes；SHA-256 `239963294ab1725db7f0eb26f6820230497bbf0655ded745f01db6870e687561`
+  - `ultrack/core/solve/solver/heuristic/_test/test_heuristic_solver.py` — category `temporal_linking`；7 bytes；SHA-256 `0e478b525adbeeb1b1de7674e1a00353d1d75eee666537ff0c1c13d3187322fe`
+  - `ultrack/core/solve/solver/heuristic/heuristic_solver.py` — category `temporal_linking`；7996 bytes；SHA-256 `7ffc4f6ee93b25f423011b6d3565fcb8520bd1db745900d30383c8865884f29e`
+  - `ultrack/core/solve/sqlgtmatcher.py` — category `temporal_linking`；9701 bytes；SHA-256 `4d9f5b26b16c0529c80aa10fe4fad3c31dd7098787dfd1f55fda3ad016cd7442`
+  - `ultrack/core/solve/sqltracking.py` — category `temporal_linking`；22351 bytes；SHA-256 `d8965f27c821f0197ea6fd770f318d09667d77acbddafbb30269921fb07834a2`
+  - `ultrack/imgproc/__init__.py` — category `temporal_linking`；302 bytes；SHA-256 `e6f6398355bb266a7be19c7e582f76ab6f616926c2da4f402f515f6ccf9a99ad`
+  - `ultrack/imgproc/_test/test_flow.py` — category `temporal_linking`；4567 bytes；SHA-256 `c8eea1a3d1373398d40a637f08c9dc4d5e02a1350cb781bf6da26d59467956b3`
+  - `ultrack/imgproc/_test/test_intensity.py` — category `temporal_linking`；330 bytes；SHA-256 `8f7af54d9a3995caf875cad9ce0622ae67a4d047034895cbcb182ac1bb1b0fc0`
+  - `ultrack/imgproc/_test/test_measure.py` — category `temporal_linking`；2502 bytes；SHA-256 `eabea7dfbd5bff3af76143b1c3e5adba6fc77ea145c56672c5eb54aeaf2bc5ce`
+  - `ultrack/imgproc/_test/test_plantseg.py` — category `temporal_linking`；611 bytes；SHA-256 `772d40b2f061531a98f00586933e005e2adb26d674d4ff6496300ff0be22d2b8`
+  - `ultrack/imgproc/_test/test_register.py` — category `temporal_linking`；1007 bytes；SHA-256 `50d18dc65fd73041ed3dea2511cb8e8fd83b2e129b519a7ea93626381fa2fd69`
+  - `ultrack/imgproc/_test/test_sam.py` — category `temporal_linking`；459 bytes；SHA-256 `764e582826536c261bf9652c2c728a9cd201dd414b85de9e23065bbc64b42529`
+  - `ultrack/imgproc/_test/test_segmentation.py` — category `data_io`；2855 bytes；SHA-256 `48a97092f96ad5405841173d157bb0bf5805c627f5da7ee8efc992be3b32f70c`
+  - `ultrack/imgproc/flow.py` — category `temporal_linking`；23395 bytes；SHA-256 `b18b2d408cc42c31411e9d5e983ef67d4e905b003ee675baa75b699e731821ad`
+  - `ultrack/imgproc/intensity.py` — category `temporal_linking`；3963 bytes；SHA-256 `f7c5a0bf69f01f305124c4a3dc0f96e355d1d27d4acac57a9e79f373311b3179`
+  - `ultrack/imgproc/measure.py` — category `temporal_linking`；7371 bytes；SHA-256 `9bde0d496edde361be01abc24801e330cf4f81ccf8bb65dbca51892beda75af1`
+  - `ultrack/imgproc/plantseg.py` — category `temporal_linking`；5868 bytes；SHA-256 `b84c3e2ef0a3b1fee0a0131999d28df67b2e9a8d41046a435d4662f8e2ce4a0b`
+  - `ultrack/imgproc/register.py` — category `temporal_linking`；3967 bytes；SHA-256 `a547488bd7c6ba3fbf494187e2b337e28aa38e4327eb4c9b49ff4709f3aee05c`
+  - `ultrack/imgproc/sam.py` — category `temporal_linking`；11210 bytes；SHA-256 `fd101196a5d4dd0ca6d523af126d5ea7fe953070cbecb3f8af3d01ea12b5bc83`
+  - `ultrack/imgproc/segmentation.py` — category `data_io`；7370 bytes；SHA-256 `9bc4a11ba4fe91f9e2886baefa1ba2867342e0c94f4d7f26cbe26b91c66d5d96`
+  - `ultrack/imgproc/utils.py` — category `temporal_linking`；984 bytes；SHA-256 `a5e1b043a3031415aa7299858f9e935953b743cc2c77a0eb6c17cd01f291447b`
+  - `ultrack/ml/__init__.py` — category `temporal_linking`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `ultrack/ml/classification.py` — category `data_io`；15117 bytes；SHA-256 `82912b0848e64f44ed55566695b7fe3a1c8074572b3fffa007660c6518ef4f73`
+  - `ultrack/napari.yaml` — category `temporal_linking`；2453 bytes；SHA-256 `cdb15c39c1984021b8c6dd7ec4bca8c588439d740f32ff03ed5fb228ce478ef8`
+  - `ultrack/reader/__init__.py` — category `temporal_linking`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `ultrack/reader/_test/test_napari_reader.py` — category `temporal_linking`；4219 bytes；SHA-256 `148d1433692a85ab1165be12676e4caf87d04ab7b4db47b9093c4b224bb3489c`
+  - `ultrack/reader/napari_reader.py` — category `temporal_linking`；3683 bytes；SHA-256 `465eb3e4859e8862f7353667aa615ecb12ef7b3aa9e8cc85692a4690b8aadcd9`
+  - `ultrack/tracks/__init__.py` — category `temporal_linking`；543 bytes；SHA-256 `9ee75aed2be04ed985eca70a6c0ffbaa775325dd0f90de942f983cc62ce79cdf`
+  - `ultrack/tracks/_test/test_tracks_gap_closing.py` — category `temporal_linking`；2738 bytes；SHA-256 `66dd881b05419d1cf9579103facc71f06ecaa47b2679642bb526cc70b12a9873`
+  - `ultrack/tracks/_test/test_tracks_graph.py` — category `temporal_linking`；5702 bytes；SHA-256 `8f630a2614ad4727e9148b912aa869c9300b8030fd06ed76fea7533cd66f15c5`
+  - `ultrack/tracks/_test/test_tracks_sorting.py` — category `temporal_linking`；3687 bytes；SHA-256 `1fb4821650a9913cb8bc1db772b598b798445a40077afec771f51f5f05a78b40`
+  - `ultrack/tracks/_test/test_tracks_stats.py` — category `temporal_linking`；6352 bytes；SHA-256 `fe69439d4271dcae53658dafc58c9f7714f587e394133aa9cf6e5276a31b2207`
+  - `ultrack/tracks/_test/test_tracks_video.py` — category `temporal_linking`；2150 bytes；SHA-256 `8e293a5e6001a8c4b3e363d2015b406a19a2d2ccc2e4dca1cf6d4f50c4e5cb32`
+  - `ultrack/tracks/gap_closing.py` — category `temporal_linking`；8386 bytes；SHA-256 `5edab74f89ab02f5df3c4281b574234d8e3b4065356add95b2e3b6b8aeceb88e`
+  - `ultrack/tracks/graph.py` — category `temporal_linking`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+
+### 16. `sota1111/biohub-claude`
+
+- 固定提交：branch `main`，commit `503d15ab439a6fb2e27894bc77e9ae4733a4f732`，commit date `2026-08-23T14:34:51+09:00`。
+- 阅读状态：`TARGET_FILES_READ`；完整 tree 465 个 blob；实际读取文件 15 个；missing 0；read error 0。
+- 许可证观察：`LICENSE_FILE_READ_UNCLASSIFIED`。无许可或只有 NOTICE 时，不推定再分发权。
+- 证据路径：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/sota1111__biohub-claude/repo_evidence.json`；tree：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/sota1111__biohub-claude/tree.txt`。
+- 角色：competition experiment system。
+- 方法：检测=multiscale DoG/peak and learned detector modules；分割=N/A: point centers；时序链接=cross-attention edge model and global min-cost-flow linking；division=division overlay creates candidate forks；优化=min-cost flow。
+- 训练/推理/评价：训练=learned detection/edge experiments；推理=submission builder and experiment CLI；评价=official/local score implementations。
+- I/O 与后处理：I/O=competition I/O；submission=submission.csv builder；后处理=division overlay and pruning experiments。
+- 判定：broad experiment repository sampled at target-file level only; NOTICE is not a classified open-source license
+- 类别覆盖：data_io=READ；data_loader=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；dependency=READ；division=READ；evaluation=READ；inference=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；license=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；model=READ；optimization=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；postprocessing=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；readme=READ；submission_conversion=READ；temporal_linking=READ；training=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE。
+- 实际读取文件：
+
+  - `README.md` — category `readme`；7153 bytes；SHA-256 `5af6ac730113e18c5424492d80a42eb37ec029569a49bcc50b1e2ef55fd81cdb`
+  - `NOTICE.md` — category `license_notice`；1653 bytes；SHA-256 `d43c2f4df82261a11724e5d7eb6f034270a87efe723103428e45fb834ec13417`
+  - `pyproject.toml` — category `dependency`；604 bytes；SHA-256 `1dd008ea96eeaf3d2ab4420cfef30b74a80c2242612514d585ec2728d4674bca`
+  - `requirements.txt` — category `dependency`；29 bytes；SHA-256 `51e80be9b1963ef4051b3c71e0fd24749bd846c47f46622298dbc5bef3158be6`
+  - `src/biohub_tracking/io.py` — category `data_io`；7222 bytes；SHA-256 `61b67098045a9071ff8f0fb1480625b552b1a701d1dbac3e7c52acb0368973e2`
+  - `src/biohub_tracking/detect.py` — category `detection`；63857 bytes；SHA-256 `dd423e9586f9f271ded7261a7c6240934145d2017115b39da03b3e8098a79bc9`
+  - `src/biohub_tracking/learned_detect.py` — category `model`；29575 bytes；SHA-256 `ce86407243f545560bfde414347a3524d76571efc3cc64b1e71c1caf627c5d25`
+  - `src/biohub_tracking/link.py` — category `temporal_linking`；125464 bytes；SHA-256 `6d964344e3b1a401f8a1fa1114e7d0572dc0f707b2136232ab64cd8ab80f90fa`
+  - `src/biohub_tracking/xattn_edge.py` — category `model`；19793 bytes；SHA-256 `aff05f7e33e3e1e294a4eefcff01cf0f941524207a16051c3c2f5202433b1809`
+  - `src/biohub_tracking/division_overlay.py` — category `division`；23578 bytes；SHA-256 `58617630ec703058a567fb4a33d7152dece088601fb7e0d4fd082a362ae9b15d`
+  - `src/biohub_tracking/eval/official.py` — category `evaluation`；14020 bytes；SHA-256 `1d4073dc93b04f327858f8a8f3278ba45ac12c120923d65cdd93ec1e9abf507f`
+  - `src/biohub_tracking/eval/score.py` — category `evaluation`；5089 bytes；SHA-256 `1f2e1c7b30f3563be59fac4ae053b26b27678fa6cc2f5d0a04379c5fcf3fe234`
+  - `src/biohub_tracking/build_submission.py` — category `submission_conversion`；2812 bytes；SHA-256 `56204c93750730965a852135c114de0e83629e2f78929210e88e214895479ed9`
+  - `submit/make_submission.py` — category `submission_conversion`；2283 bytes；SHA-256 `608ba71751e9a6c64b754dc8bb0ca85d18af7441d970bb0286d1aa20919432b7`
+  - `docs/ai/sot-2830-global-mincostflow-linking.md` — category `experiment_report`；6802 bytes；SHA-256 `fb31eaf0ef07dbd1374a89252cc6a01b97573e30c47601c41cf8ae5dd71a1b37`
+
+### 17. `tarunn613/biohub-cell-tracking`
+
+- 固定提交：branch `master`，commit `6bbcb87747aa65c531da99f21cb773f0a0fef1cc`，commit date `2026-07-29T02:02:00+05:30`。
+- 阅读状态：`FULL_RELEVANT_REPO_SOURCE_READ`；完整 tree 58 个 blob；实际读取文件 42 个；missing 0；read error 0。
+- 许可证观察：`NO_LICENSE_FILE_OBSERVED`。无许可或只有 NOTICE 时，不推定再分发权。
+- 证据路径：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/tarunn613__biohub-cell-tracking/repo_evidence.json`；tree：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/tarunn613__biohub-cell-tracking/tree.txt`。
+- 角色：competition participant pipeline。
+- 方法：检测=Cellpose-SAM-derived detections；分割=Cellpose masks converted to centers；时序链接=LAP baseline and Motile global tracking；division=Motile graph allows lineage constraints and pruning；优化=Motile/ILP-style global solve plus LAP alternative。
+- 训练/推理/评价：训练=pretrained Cellpose; no verified end-to-end training evidence in this read；推理=baseline CLI；评价=competition score script; reported numbers are AUTHOR_CLAIM。
+- I/O 与后处理：I/O=OME-Zarr/GEFF paths；submission=submission assembler；后处理=track pruning。
+- 判定：direct competition alternative combining foundation segmentation and global tracking; no license file observed
+- 类别覆盖：data_io=READ；data_loader=READ；dependency=READ；division=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；evaluation=READ；inference=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；license=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；model=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；optimization=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；postprocessing=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；readme=READ；submission_conversion=READ；temporal_linking=READ；training=READ。
+- 实际读取文件：
+
+  - `README.md` — category `readme`；15608 bytes；SHA-256 `238b5bba8402648901fef412164414a73b56cc160667bf14cdd1c82b4899c44d`
+  - `requirements.txt` — category `dependency`；1330 bytes；SHA-256 `7e16fb76cc8ff6fe2b66de49cf290262fd09fe246062913c85c4a35dfc379566`
+  - `docs/metric.md` — category `evaluation`；4347 bytes；SHA-256 `4176293e940528cf45554ad658f2c91bf54767903366c45e8047da5a473b2efc`
+  - `docs/results.md` — category `experiment_report`；7119 bytes；SHA-256 `6eae0d97c8680bdad8c9fc22fff22f1108c8e2c60e3c1bd63af8f627995898b9`
+  - `src/baseline.py` — category `pipeline`；6744 bytes；SHA-256 `cbe77582eb8d77b89b31c86b7fef5a24d6bed15e03e05f83c28132765f115546`
+  - `src/detect_cellpose.py` — category `detection`；2559 bytes；SHA-256 `4a69dbe9e210e56785e68e5f5c928dd2364fdcb3922e92cf28041d7ab29271da`
+  - `src/track_lap.py` — category `temporal_linking`；1523 bytes；SHA-256 `026eabf0c189d6bf5394cdda463e525998126fccac713b51d21472947b019f6e`
+  - `src/track_motile.py` — category `temporal_linking`；5116 bytes；SHA-256 `c7e521fc55acea0934d54f01f1f5e910461f175e18a167d032bb5ef037830f8b`
+  - `src/score.py` — category `evaluation`；6060 bytes；SHA-256 `35c80195c5677777813fb8b8480fdd356887aae6ad8663ec3c57e46222fd2049`
+  - `src/assemble_submission.py` — category `submission_conversion`；3268 bytes；SHA-256 `0e06ee0962e3dfae5d5e623e069a24f0d4d4df1ef47457fb1d0cd7a28744507a`
+  - `data/README.md` — category `readme`；1940 bytes；SHA-256 `759b7fc7cbd7b804a9b7bcb321f2fcbe78e55f3c484686f0a4f2be641a1c06a5`
+  - `docs/competition.md` — category `data_io`；7007 bytes；SHA-256 `b8df1d5d2cfef303acfb0a79f78de85dc5ecfa8281953e37b5fb1b87e0bba6f1`
+  - `docs/experiments.md` — category `relevant_source`；11768 bytes；SHA-256 `bb7d6c91d3441b87ceb7d0dbaf9c320580050c09414229ceb0fe7ba9fad3fb00`
+  - `reference/file_manifest.csv` — category `submission_conversion`；1859371 bytes；SHA-256 `b36c100675e4b33dd7919f6aa61619f80034202c2a008f8105c96f4892a2b62d`
+  - `reference/sample_submission.csv` — category `data_io`；890 bytes；SHA-256 `263dec32a126192f0ce4d5443b7432940fbeedf0d7ae4130156bf83657defc40`
+  - `reference/zarr_meta/array0_meta/zarr.json` — category `relevant_source`；760 bytes；SHA-256 `73e3ff105fe0c50983cff97a50bfa95f8c0da16e1cb5adb56968d1cb7e1c41b0`
+  - `reference/zarr_meta/geff_meta/train/44b6_0113de3b.geff/edges/ids/zarr.json` — category `training`；634 bytes；SHA-256 `2349586432c3cf7e57f4b3aa69eb7ec37e94c528cbe1a505f7dcea3dac9653c0`
+  - `reference/zarr_meta/geff_meta/train/44b6_0113de3b.geff/edges/props/zarr.json` — category `training`；99 bytes；SHA-256 `b2aafe033afdbdd48a21781b27e1c90554817d19d1bd973137574d6e8cd0f711`
+  - `reference/zarr_meta/geff_meta/train/44b6_0113de3b.geff/edges/zarr.json` — category `training`；99 bytes；SHA-256 `b2aafe033afdbdd48a21781b27e1c90554817d19d1bd973137574d6e8cd0f711`
+  - `reference/zarr_meta/geff_meta/train/44b6_0113de3b.geff/nodes/ids/zarr.json` — category `training`；616 bytes；SHA-256 `59b49b7e2e0624d3133e0d35124e273c8ba32cd51133a11870e2a5dfb0c944b0`
+  - `reference/zarr_meta/geff_meta/train/44b6_0113de3b.geff/nodes/props/zarr.json` — category `training`；99 bytes；SHA-256 `b2aafe033afdbdd48a21781b27e1c90554817d19d1bd973137574d6e8cd0f711`
+  - `reference/zarr_meta/geff_meta/train/44b6_0113de3b.geff/nodes/zarr.json` — category `training`；99 bytes；SHA-256 `b2aafe033afdbdd48a21781b27e1c90554817d19d1bd973137574d6e8cd0f711`
+  - `reference/zarr_meta/geff_meta/train/44b6_0113de3b.geff/zarr.json` — category `training`；2102 bytes；SHA-256 `881fa7ecfaeeea75f170d28de6f058f616ba3104d87c5b80d655d842448a422b`
+  - `reference/zarr_meta/rel/test/44b6_0113de3b/0/zarr.json` — category `relevant_source`；760 bytes；SHA-256 `73e3ff105fe0c50983cff97a50bfa95f8c0da16e1cb5adb56968d1cb7e1c41b0`
+  - `reference/zarr_meta/rel/test/6bba_05b6850b/0/zarr.json` — category `relevant_source`；760 bytes；SHA-256 `73e3ff105fe0c50983cff97a50bfa95f8c0da16e1cb5adb56968d1cb7e1c41b0`
+  - `reference/zarr_meta/rel/train/44b6_0113de3b/0/zarr.json` — category `training`；760 bytes；SHA-256 `73e3ff105fe0c50983cff97a50bfa95f8c0da16e1cb5adb56968d1cb7e1c41b0`
+  - `reference/zarr_meta/rel/train/6bba_05b6850b/0/zarr.json` — category `training`；760 bytes；SHA-256 `73e3ff105fe0c50983cff97a50bfa95f8c0da16e1cb5adb56968d1cb7e1c41b0`
+  - `reference/zarr_meta/rel/traingeff/44b6_0113de3b/zarr.json` — category `training`；2102 bytes；SHA-256 `881fa7ecfaeeea75f170d28de6f058f616ba3104d87c5b80d655d842448a422b`
+  - `reference/zarr_meta/rel/traingeff/6bba_05b6850b/zarr.json` — category `training`；2099 bytes；SHA-256 `7b17a3db575196097f374ab77ad15213aff88bea16309c497eacf0d89e8f3042`
+  - `reference/zarr_meta/root_meta/zarr.json` — category `relevant_source`；1279 bytes；SHA-256 `c3768f1dfc78a0005d113b174c610c0c6aca375b085ad3b94da28c0a1fbbfda0`
+  - `reference/zarr_meta/verify/train/44b6_0113de3b.geff/edges/ids/zarr.json` — category `training`；634 bytes；SHA-256 `2349586432c3cf7e57f4b3aa69eb7ec37e94c528cbe1a505f7dcea3dac9653c0`
+  - `reference/zarr_meta/verify/train/44b6_0113de3b.geff/nodes/ids/zarr.json` — category `training`；616 bytes；SHA-256 `59b49b7e2e0624d3133e0d35124e273c8ba32cd51133a11870e2a5dfb0c944b0`
+  - `reference/zarr_meta/verify/train/44b6_0113de3b.geff/nodes/props/t/values/zarr.json` — category `training`；615 bytes；SHA-256 `24eeb0a68498390b82331577013f245fe548ab745cfe3ced14056dec664ea4bd`
+  - `tools/animate_compare.py` — category `relevant_source`；5140 bytes；SHA-256 `0ec2a2c5a7ad916a483a7b1ca2e4a635d41aec3e1b275dbf15d99e52b75babb0`
+  - `tools/animate_detections.py` — category `data_io`；3798 bytes；SHA-256 `b1dfde86af7f41c75b23aab99014294b1fb4eba4957a00181034772fc7803206`
+  - `tools/animate_tracks.py` — category `temporal_linking`；5577 bytes；SHA-256 `756b9e2954028fef49e6edc096c5fea5c0ba07476e48f444838d83757e497504`
+  - `tools/animate_zarr.py` — category `relevant_source`；3568 bytes；SHA-256 `6f60b0309ccfbbcafcba252a21358d91f8a94ae423d9647dfe0e4c0faa61f959`
+  - `tools/download_datasets.py` — category `data_loader`；4965 bytes；SHA-256 `91a9de6d8aef0eaa3a81758a16c418cde22a79b94f2ba77a8fa458fd7dcba4e5`
+  - `tools/view_compare_napari.py` — category `relevant_source`；3320 bytes；SHA-256 `b2a0598c9de6bfe12c0d8da259ceac94b6ce89ea29adb600c7b89a54894aad7b`
+  - `tools/view_napari.py` — category `relevant_source`；4584 bytes；SHA-256 `2ae45839511bf78933a4cd495077d4b3bb99acee3cc28046bd2152219d581e5d`
+  - `tools/view_tracks_napari.py` — category `temporal_linking`；5955 bytes；SHA-256 `b2b2713453cc041b88d07a38b8b947e63dbff9ecc7e251e4f9caa741e8739f36`
+  - `tools/visualize_zarr.py` — category `relevant_source`；4480 bytes；SHA-256 `595a8f2bf801cd4554d8526a73e8dcd15e37e41fb7d77b1d5601dbdf5c984915`
+
+### 18. `tossowski/BioHub`
+
+- 固定提交：branch `main`，commit `a0422bcf810cbb6ca10c71dbf828ea6c76fc8c11`，commit date `2026-07-10T15:06:05-07:00`。
+- 阅读状态：`FULL_RELEVANT_REPO_SOURCE_READ`；完整 tree 91 个 blob；实际读取文件 86 个；missing 0；read error 0。
+- 许可证观察：`MIT`。无许可或只有 NOTICE 时，不推定再分发权。
+- 证据路径：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/tossowski__BioHub/repo_evidence.json`；tree：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/tossowski__BioHub/tree.txt`。
+- 角色：competition participant pipeline。
+- 方法：检测=3D learned heatmap detector；分割=N/A: point centers；时序链接=LAP linker or Ultrack-based linker；division=post-processing/graph logic includes division handling；优化=Hungarian/LAP or Ultrack optimization。
+- 训练/推理/评价：训练=detection training script；推理=prediction pipeline；评价=competition metric implementation。
+- I/O 与后处理：I/O=OME-Zarr/GEFF；submission=submission builder；后处理=link pruning/repair。
+- 判定：complete competition-oriented alternative with both lightweight assignment and Ultrack backend
+- 类别覆盖：data_io=READ；data_loader=READ；dependency=READ；division=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；evaluation=READ；inference=READ；license=READ；model=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；optimization=READ；postprocessing=READ；readme=READ；submission_conversion=READ；temporal_linking=READ；training=READ。
+- 实际读取文件：
+
+  - `README.md` — category `readme`；10200 bytes；SHA-256 `0070e04d41557ba8259d534c27c57c0e96b756b8b9e1cd621668a5ccf053c634`
+  - `LICENSE` — category `license`；1065 bytes；SHA-256 `c0263a3e10fe19eac0e9528b0dcbee16e127ed5bb65107dc96c21aaf4ebc67d5`
+  - `pyproject.toml` — category `dependency`；1241 bytes；SHA-256 `00d6e0f612b545e5c0c661ba6dbe27a2a542ed1cca312d1af99e213d3d152a04`
+  - `scripts/train_detection.py` — category `training`；4472 bytes；SHA-256 `775298a2166a88d0783f2e851537473e3c0a39f38a457a70322f07dbc4e5058c`
+  - `scripts/predict.py` — category `inference`；4679 bytes；SHA-256 `c5284dfd37da4b1f543a66678a0a9c5feeb60053fdcdf0eccd84ae273d375869`
+  - `scripts/evaluate.py` — category `evaluation`；2164 bytes；SHA-256 `6d3ffe2e5d7cc2a1fdbacfcc43fb07932a1ba017efe8de6009801b1a75ff6933`
+  - `src/biohub_tracking/dataspec.py` — category `data_loader`；1456 bytes；SHA-256 `fb7367a00846f9d97108bac57c647ea87501734e41251a9701b6717e03ea08b6`
+  - `src/biohub_tracking/io.py` — category `data_io`；4136 bytes；SHA-256 `b7bdc8169e11975a06df40c15db7d659145b9ef2b4d28e63420e6cc24971cb0a`
+  - `src/biohub_tracking/detection/heatmap.py` — category `detection`；39589 bytes；SHA-256 `99cbe0fa05e516a857e357b4d063e4abcee0ff2e5d6b2d87935a062fe5a5b517`
+  - `src/biohub_tracking/linking/lap.py` — category `assignment`；4740 bytes；SHA-256 `bd6c7c43fb819a1d27c7f1e371dcaadfd589bf6519c3e4ddfc47a8435102d93a`
+  - `src/biohub_tracking/linking/ultrack_linker.py` — category `optimization`；2600 bytes；SHA-256 `aab319e62e622fd7c4cf5e3099d09cb8219783099015db56aa0cdcd2a12dbed4`
+  - `src/biohub_tracking/linking/postprocess.py` — category `postprocessing`；6166 bytes；SHA-256 `5967f1383a139bf61d30b56b6dd246dc4b9cb8bee25e9af4eef29cad2d35038c`
+  - `src/biohub_tracking/metrics.py` — category `evaluation`；8793 bytes；SHA-256 `8d425f4d0843d87b39a80be52473c5ecd0a204244bb88c2e69df2f9b9612170c`
+  - `src/biohub_tracking/submission.py` — category `submission_conversion`；5327 bytes；SHA-256 `7421bc31db811d5a296955901be72e2f008a13d6fb7893d76a097a87c4c64559`
+  - `src/biohub_tracking/pipeline.py` — category `pipeline`；4623 bytes；SHA-256 `bda9b94fdb9ce8c0b9ec0f5ae972aa76a66ab7c845f971fd905f0b8b05632300`
+  - `CLAUDE.md` — category `relevant_source`；14657 bytes；SHA-256 `c74bd6b40a79ad6a2c363af85b3d1d1f49d2ff93eedce9920e986714a3f0e607`
+  - `biohub.ipynb` — category `data_io`；95715 bytes；SHA-256 `8d74752622f919f730a2a9b71d3f8f67a38199943bc96780a67e0c03d000afe3`；Notebook cells=17, code=8, markdown=9, all_code_cells_traversed=True
+  - `configs/baseline.yaml` — category `relevant_source`；2367 bytes；SHA-256 `d40b869374c85346b8d7998108b2bdb76c38c4c858df92e83513645fdfa21077`
+  - `kaggle_submit/README.md` — category `readme`；3516 bytes；SHA-256 `89ab24cbd9ccf5db560952e550d8d670f16c962bc32f063e70fbbf9c1616d282`
+  - `kaggle_submit/build_wheelhouse.sh` — category `submission_conversion`；2054 bytes；SHA-256 `d27990c0c748a8c26aae7c231f4879e62b03931a009e443c3a63781e2481745a`
+  - `kaggle_submit/config.sh` — category `submission_conversion`；1803 bytes；SHA-256 `fbfe65d5422764f7cebe6e1d4ae4a4c3d5d7115586c02c7b42c6569bf132e76f`
+  - `kaggle_submit/kernel/kernel-metadata.json` — category `data_loader`；529 bytes；SHA-256 `311e38a40f7cfc61d0d9e4d25ed4783d5b8d8b7440ff52afb6f189e3e6ea96d2`
+  - `kaggle_submit/kernel_lb897/biohub-lb897-repro.ipynb` — category `data_io`；109234 bytes；SHA-256 `2ccbd51f8611f2abcf361cda54bfcc83fdb03c044c9adde22d770e55b79d0168`；Notebook cells=18, code=10, markdown=8, all_code_cells_traversed=True
+  - `kaggle_submit/kernel_lb897/kernel-metadata.json` — category `data_loader`；575 bytes；SHA-256 `688a7f3abcee3d4ab0bf278ac1f2801f18bf825310801177a5be32878f38a945`
+  - `kaggle_submit/kernel_test/biohub.ipynb` — category `data_io`；96542 bytes；SHA-256 `422faf4c1a5f09baff35023791fb9094a3c3a2c7e555fe515e5fa657e925ee6f`；Notebook cells=17, code=8, markdown=9, all_code_cells_traversed=True
+  - `kaggle_submit/kernel_test/kernel-metadata.json` — category `data_loader`；453 bytes；SHA-256 `f91abf1fad36eccfc255a1b7a027bda241f76781f90ad0bb2ac0c32f5b298e8d`
+  - `kaggle_submit/push_and_submit.sh` — category `submission_conversion`；1957 bytes；SHA-256 `e8f0847f119c11346d89690f6e7623310703f0c87903021ece109757a3bc8be1`
+  - `kaggle_submit/stage_model.sh` — category `submission_conversion`；1367 bytes；SHA-256 `3ded4e3af13475f2458897396947344bfaa867a8fe7b9085a272cb8a3e88b7ba`
+  - `kaggle_submit/upload_datasets.sh` — category `data_loader`；1480 bytes；SHA-256 `eb30ec98d434bd5046303d2569ecaa34b7f958107e9eb0101286f676d092e197`
+  - `notebooks/biohub_baseline_submission.ipynb` — category `data_io`；25120 bytes；SHA-256 `f844af87c72cbf8fe1792711b6a185e88bd32a18a7533255b7211f4f01808da2`；Notebook cells=17, code=8, markdown=9, all_code_cells_traversed=True
+  - `plans/plan-A.md` — category `relevant_source`；9452 bytes；SHA-256 `120ed0eb13e21129a5be4113ed9fee299806e30e268fe2c4c1e37e5152f00091`
+  - `research/lb897/lb897-baseline.ipynb` — category `relevant_source`；106920 bytes；SHA-256 `c4d75190ba336623a01f42a239bfb8a915f547d3606aa29a7d666893bf83f087`；Notebook cells=18, code=10, markdown=8, all_code_cells_traversed=True
+  - `research/lb897_out/tracking_repo/kaggle_test_splits_50ep.json` — category `temporal_linking`；155 bytes；SHA-256 `75fccf5fa4771548dc8e53fa96800574cad593528ae022a968f03d481c8d5b52`
+  - `research/lb897_out/tracking_repo/scripts/augmentations.py` — category `data_io`；1958 bytes；SHA-256 `13db09817bf492f8d0f710a0a4d09776320b262060167055090a303fc6057f4e`
+  - `research/lb897_out/tracking_repo/scripts/dataspec.py` — category `data_loader`；1229 bytes；SHA-256 `e69bf952fb985477ac50ff8598a35020c95d20a035a09b81ab4056e655dd311f`
+  - `research/lb897_out/tracking_repo/scripts/evaluate.py` — category `evaluation`；6835 bytes；SHA-256 `614813cc51c3581c6ccda4bb20725a19da8ecac4a27620654bfca58319cffa3c`
+  - `research/lb897_out/tracking_repo/scripts/predict_unet_transformer.py` — category `inference`；26008 bytes；SHA-256 `c44e771ba5980b820f93091e03a303c25dfe8f3232e501f54dc9565731c234b9`
+  - `research/lb897_out/tracking_repo/scripts/train_unet_transformer.py` — category `training`；49438 bytes；SHA-256 `c4f6317736bb3bb1ec8f3f6e9a6d935a463e3f0f1f685481b2d13218d35dc9ea`
+  - `research/lb897_out/tracking_repo/src/biohub_tracking/__init__.py` — category `data_io`；86 bytes；SHA-256 `26a18d8da84e40da73281a48ebc3017d847a2e57431ab63e8629d2109e6e8571`
+  - `research/lb897_out/tracking_repo/src/biohub_tracking/division_metrics.py` — category `evaluation`；15872 bytes；SHA-256 `d1cf1e0a43009d02174f1699ce2aa28458a2220ac4b521731d3bcf31cf8c76be`
+  - `research/lb897_out/tracking_repo/src/biohub_tracking/img_proc.py` — category `data_io`；5319 bytes；SHA-256 `00e8ef0adc8b39f1aaaa547ea6197b906bf9e8c009e339d3e95f8f8dbf31be3f`
+  - `research/lb897_out/tracking_repo/src/biohub_tracking/io.py` — category `data_io`；13485 bytes；SHA-256 `efae135b088cecaab463d889f16c885ef6da3ad27b0747327d8ddc28d866b7bd`
+  - `research/lb897_out/tracking_repo/src/biohub_tracking/metrics.py` — category `evaluation`；15843 bytes；SHA-256 `31baf45b54c78f68bab4f65dd8f4b38bca702abb644171c6df7c46cdeef55d83`
+  - `research/lb897_out/tracking_repo/src/biohub_tracking/models/__init__.py` — category `data_io`；246 bytes；SHA-256 `ab7587ef79856bae50d24b62e5805092d0459ee1c586522b763f9ef70c093e1d`
+  - `research/lb897_out/tracking_repo/src/biohub_tracking/models/simple_node_transformer.py` — category `data_io`；7229 bytes；SHA-256 `b97209edeb03840e80d903e3e2a8c81c520641c8ef343f6ca2904d0f80db064e`
+  - `research/lb897_out/tracking_repo/src/biohub_tracking/models/temporal_unet.py` — category `data_io`；5112 bytes；SHA-256 `d809c35d42f504161074ddeaaa7aee5b407e5bca7f9b4e1d5f9b2ff345666cac`
+  - `research/lb897_out2/run_stats.csv` — category `submission_conversion`；2090 bytes；SHA-256 `4b2d97afcc329a21b7796e177594b0322f7f1695825f4290a9de8b68b5c9c1eb`
+  - `research/lb897_out2/tracking_repo/kaggle_test_splits_50ep.json` — category `temporal_linking`；155 bytes；SHA-256 `75fccf5fa4771548dc8e53fa96800574cad593528ae022a968f03d481c8d5b52`
+  - `research/lb897_out2/tracking_repo/scripts/augmentations.py` — category `data_io`；1958 bytes；SHA-256 `13db09817bf492f8d0f710a0a4d09776320b262060167055090a303fc6057f4e`
+  - `research/lb897_out2/tracking_repo/scripts/dataspec.py` — category `data_loader`；1229 bytes；SHA-256 `e69bf952fb985477ac50ff8598a35020c95d20a035a09b81ab4056e655dd311f`
+  - `research/lb897_out2/tracking_repo/scripts/evaluate.py` — category `evaluation`；6835 bytes；SHA-256 `614813cc51c3581c6ccda4bb20725a19da8ecac4a27620654bfca58319cffa3c`
+  - `research/lb897_out2/tracking_repo/scripts/predict_unet_transformer.py` — category `inference`；26008 bytes；SHA-256 `c44e771ba5980b820f93091e03a303c25dfe8f3232e501f54dc9565731c234b9`
+  - `research/lb897_out2/tracking_repo/scripts/train_unet_transformer.py` — category `training`；49438 bytes；SHA-256 `c4f6317736bb3bb1ec8f3f6e9a6d935a463e3f0f1f685481b2d13218d35dc9ea`
+  - `research/lb897_out2/tracking_repo/src/biohub_tracking/__init__.py` — category `data_io`；86 bytes；SHA-256 `26a18d8da84e40da73281a48ebc3017d847a2e57431ab63e8629d2109e6e8571`
+  - `research/lb897_out2/tracking_repo/src/biohub_tracking/division_metrics.py` — category `evaluation`；15872 bytes；SHA-256 `d1cf1e0a43009d02174f1699ce2aa28458a2220ac4b521731d3bcf31cf8c76be`
+  - `research/lb897_out2/tracking_repo/src/biohub_tracking/img_proc.py` — category `data_io`；5319 bytes；SHA-256 `00e8ef0adc8b39f1aaaa547ea6197b906bf9e8c009e339d3e95f8f8dbf31be3f`
+  - `research/lb897_out2/tracking_repo/src/biohub_tracking/io.py` — category `data_io`；13485 bytes；SHA-256 `efae135b088cecaab463d889f16c885ef6da3ad27b0747327d8ddc28d866b7bd`
+  - `research/lb897_out2/tracking_repo/src/biohub_tracking/metrics.py` — category `evaluation`；15843 bytes；SHA-256 `31baf45b54c78f68bab4f65dd8f4b38bca702abb644171c6df7c46cdeef55d83`
+  - `research/lb897_out2/tracking_repo/src/biohub_tracking/models/__init__.py` — category `data_io`；246 bytes；SHA-256 `ab7587ef79856bae50d24b62e5805092d0459ee1c586522b763f9ef70c093e1d`
+  - `research/lb897_out2/tracking_repo/src/biohub_tracking/models/simple_node_transformer.py` — category `data_io`；7229 bytes；SHA-256 `b97209edeb03840e80d903e3e2a8c81c520641c8ef343f6ca2904d0f80db064e`
+  - `research/lb897_out2/tracking_repo/src/biohub_tracking/models/temporal_unet.py` — category `data_io`；5112 bytes；SHA-256 `d809c35d42f504161074ddeaaa7aee5b407e5bca7f9b4e1d5f9b2ff345666cac`
+  - `research/pilkwang_graph/biohub-cell-tracking-learned-graph-w-gap-recovery.ipynb` — category `data_io`；83640 bytes；SHA-256 `5d616f969bed8800076b9213f39c4f89791fc9855a0c65efc626bf0b740b4c42`；Notebook cells=11, code=5, markdown=6, all_code_cells_traversed=True
+  - `research/rule857/lb-0-857-rule-based-v14.ipynb` — category `relevant_source`；41867 bytes；SHA-256 `c174e372d91fc3a6baf0dbae78ca228af64ba9b1774b21c71849f5ba2f5b9298`；Notebook cells=2, code=1, markdown=1, all_code_cells_traversed=True
+  - `research/support_pack_meta/ARTIFACT_MANIFEST.json` — category `relevant_source`；4376 bytes；SHA-256 `bc20f1f04cfb682af3b27a836ce9a57f44a2fe27508dc59039200b2a23188103`
+  - `research/support_pack_meta/kaggle_dependency_install_command.txt` — category `relevant_source`；119 bytes；SHA-256 `91af38b05a2f70ff62424a1ce0cc885f88b0e481b0f67b45ed90c9469a14d770`
+  - `research/support_pack_meta/requirements-unet-ilp-kaggle-predownload.txt` — category `dependency`；439 bytes；SHA-256 `6273c02435d1c14800012ce083b0f5e8c7487670de335ab04282be190aded474`
+  - `scripts/download_data.py` — category `data_loader`；1980 bytes；SHA-256 `933da118ea13c7889ac20726a200b8e3f5a5d473c4961092b66665ed9e98e042`
+  - `scripts/eval_detection.py` — category `evaluation`；6128 bytes；SHA-256 `6403f0a5397ab9bf01313207da403483269de5e51f0b5860e37184dabec1e7a1`
+  - `scripts/make_submission.py` — category `data_io`；852 bytes；SHA-256 `97e4dd73ee68e392b59796dacc1add214684b9a10d19943da9442e7a7ecb5bfd`
+  - `scripts/run_eda.py` — category `relevant_source`；2014 bytes；SHA-256 `34f64af311b11db38ace742144d80cf59cda91cd54bcb615eabdee8d8a1c0588`
+  - `scripts/train_all.py` — category `training`；4560 bytes；SHA-256 `fe52ab5c9169dcdab0223e3373204c009afbc3878d85b08e5a9057327153de58`
+  - `src/biohub_tracking/__init__.py` — category `data_io`；440 bytes；SHA-256 `8d32d15069d1e9d528f943f0140185132638e7c820641322c43b70c288a54aa2`
+  - `src/biohub_tracking/_graph_eval.py` — category `evaluation`；4610 bytes；SHA-256 `caf8821229521181c25595d1eae167967c09c8c1a4f95ab3a5be65a5d022e574`
+  - `src/biohub_tracking/detection/__init__.py` — category `data_io`；1563 bytes；SHA-256 `aef4c3f4c0dc2ee24ba571e4153ef7d0c90ebbe8b5d56097d009847205a90712`
+  - `src/biohub_tracking/detection/blob.py` — category `data_io`；7931 bytes；SHA-256 `b9e95963fca197a6944c4712a6f762ee85a482a63d52213a8a7a1fcc73416f29`
+  - `src/biohub_tracking/detection/eval.py` — category `evaluation`；6692 bytes；SHA-256 `13178b344d80993bd3d9b1d99b7f74efd20ef2426580c68280260047a71af52b`
+  - `src/biohub_tracking/eda.py` — category `data_io`；3882 bytes；SHA-256 `ef8a6025abb17c750c32c82d9016a6c8162d2e1c33596114b06da8adaa6b791e`
+  - `src/biohub_tracking/linking/__init__.py` — category `data_io`；1020 bytes；SHA-256 `0ad238917845469985adbf0efd7b290d49951e11a2bf424e6673b47ea78a3d3f`
+  - `src/biohub_tracking/linking/nn.py` — category `data_io`；2484 bytes；SHA-256 `0eb1cd0827c6ca8871a2b435de81f2c4c057799f435916dfe7e54bf5e75e6bcc`
+  - `src/biohub_tracking/track_graph.py` — category `data_io`；2275 bytes；SHA-256 `5f54aa5057b3bf1ba48b6946972bddf5037a3597d5fc8e8a6e2d881139d5bde8`
+  - `tests/__init__.py` — category `relevant_source`；0 bytes；SHA-256 `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+  - `tests/test_augmentation.py` — category `data_io`；3102 bytes；SHA-256 `664aec9fe56dc689f3e3cfe1d77149d7a92a22a91f1cfebfc7c44f9e4e56f9af`
+  - `tests/test_detection_eval.py` — category `evaluation`；2828 bytes；SHA-256 `0c611ad2fbe6b99e9dac91068d80e9370f9f7160db4ebc0675f66f4b8feb2eed`
+  - `tests/test_heatmap.py` — category `relevant_source`；6364 bytes；SHA-256 `2272bebebb4afbbb3f110848af19e97203e428f0cbf29de8a75be217ba6cc93b`
+  - `tests/test_metrics.py` — category `evaluation`；3957 bytes；SHA-256 `18e0541562c04e64ac00648cc80f6a85292ae741e57f3b54dfa4ed8db278f302`
+  - `tests/test_pipeline.py` — category `relevant_source`；6764 bytes；SHA-256 `f1a80531db9a1dd1c6a1e0a228eaaf0bb35b994cf12265fa6d8588849810697a`
+
+### 19. `weigertlab/trackastra`
+
+- 固定提交：branch `main`，commit `6a8ce94ee7c5a1f22c8eb77229ea5a0bc95a7b5b`，commit date `2026-08-07T11:57:45-07:00`。
+- 阅读状态：`FULL_RELEVANT_REPO_SOURCE_READ`；完整 tree 66 个 blob；实际读取文件 44 个；missing 0；read error 0。
+- 许可证观察：`BSD-3-Clause`。无许可或只有 NOTICE 时，不推定再分发权。
+- 证据路径：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/weigertlab__trackastra/repo_evidence.json`；tree：`research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/evidence/weigertlab__trackastra/tree.txt`。
+- 角色：learned association tracker。
+- 方法：检测=N/A: consumes instance masks；分割=upstream instance segmentation required；时序链接=transformer predicts association matrix from object coordinates, region/image features, and time windows；division=greedy mode supports divisions; greedy_nodiv disables them; ILP mode available；优化=greedy or ILP graph selection。
+- 训练/推理/评价：训练=training script builds windows and association supervision；推理=pretrained 2D/3D models; predicts candidates then applies graph solver；评价=tracking graph outputs; no native Biohub metric。
+- I/O 与后处理：I/O=TIFF images + label masks；submission=N/A native Kaggle converter；后处理=applies solved graph to masks。
+- 判定：strong association component but requires a segmentation/front-end and Biohub-format bridge
+- 类别覆盖：data_io=READ；data_loader=READ；dependency=READ；division=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；evaluation=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；inference=READ；license=READ；model=READ；optimization=READ；postprocessing=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；readme=READ；submission_conversion=N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE；temporal_linking=READ；training=READ。
+- 实际读取文件：
+
+  - `README.md` — category `readme`；10603 bytes；SHA-256 `0366a54f45973797aaffdac8b0082e388da691e43a1ad030e442a9692e7b9676`
+  - `LICENSE` — category `license`；1521 bytes；SHA-256 `cc9ea92a72a63101ff425cc525faeace28ec9fc9c658a0fc01daf236e06326c9`
+  - `pyproject.toml` — category `dependency`；1472 bytes；SHA-256 `a5a149405bff4d99722df2ab757f041e27bbce21ae60d7fe7d32d3c0d5f3bffd`
+  - `scripts/train.py` — category `training`；41924 bytes；SHA-256 `cfa20e341adce143bd58acaf1f000045072fb01b73092580f17e32c922e2e762`
+  - `trackastra/data/data.py` — category `data_loader`；55147 bytes；SHA-256 `21828a47c9ba5bb09c24d359f6aa59416e73c9f82d1d9dddc232e7ba1f86e2fb`
+  - `trackastra/data/features.py` — category `features`；4011 bytes；SHA-256 `21eff8db321ed8ece7a3ddd9b0c5216063c4e863ace8c8f1bfce7dc20fb26e48`
+  - `trackastra/data/matching.py` — category `assignment`；9241 bytes；SHA-256 `57e1ba1e0ae8c97c56eb7685bde1bab6ee5efdec2ceb3e5e722741b027919070`
+  - `trackastra/model/model.py` — category `model`；17395 bytes；SHA-256 `bd7af2f44ee35ba978c284295775e11e53ddd55c631f01c74e0fa1332d721f41`
+  - `trackastra/model/model_api.py` — category `inference`；14880 bytes；SHA-256 `1cde6283653b55c1eeec6c6c25ef227c4b147462a7f846caa80058bb34c44a33`
+  - `trackastra/model/predict.py` — category `inference`；8149 bytes；SHA-256 `8e4dbdc7754a69b3c3a269560baa1d571480024c0f5874db3426e4f19841e880`
+  - `trackastra/tracking/tracking.py` — category `temporal_linking`；5533 bytes；SHA-256 `cccc913c2bfcc9ef1f802ad71efe306509784c34b54802d831d373ce7ed997e0`
+  - `trackastra/tracking/ilp.py` — category `optimization`；4855 bytes；SHA-256 `7b09eead5fbc0bba15dcd479ee083e9dd1541784c7904c19c49ab31e900cf544`
+  - `trackastra/tracking/track_graph.py` — category `graph_model`；5346 bytes；SHA-256 `fbac6f207f789f0036511b64995df61fefd850af6746daf59ffd060be24c103a`
+  - `trackastra/model/pretrained.json` — category `weights_metadata`；11078 bytes；SHA-256 `829cbecf6d6e0740a8bb90b05ec7fb536ee4002d3dbe0146ba4140c4027a9530`
+  - `.pre-commit-config.yaml` — category `relevant_source`；361 bytes；SHA-256 `3173b0de2db0d65f403a7aa3f29ac453731c4420a4f55136694e5a5962814f88`
+  - `scripts/example_config.yaml` — category `relevant_source`；313 bytes；SHA-256 `c1f900c65e69b6ead54609222f95de4c17bf3687fcf42aeb89fd1f11653865b3`
+  - `setup.cfg` — category `dependency`；1642 bytes；SHA-256 `196762242a331124965290f9201ae3ee5135b2b73905028d6041f29f2394efa5`
+  - `tests/test_augmentations.py` — category `data_io`；2134 bytes；SHA-256 `342637319d55f04677ed299b3bf8f44cc880bf599bb5e334b0d198084ddc6c89`
+  - `tests/test_cli.py` — category `relevant_source`；1325 bytes；SHA-256 `6eecad5078a46ab93f08bf7ad69b88643a27d3e5cd1ab30e74745f44f8c678fa`
+  - `tests/test_data.py` — category `data_loader`；7735 bytes；SHA-256 `93199dd6c11ef829ab9abbbbfb3f788e801d2d8c9cbbb446b34598620d7ddb88`
+  - `tests/test_features.py` — category `relevant_source`；2462 bytes；SHA-256 `8c7c195773887eb5fa1f6ca1b4b09da06cb69bcb8b4667a5c5763f59bbcbfb48`
+  - `tests/test_inference_api.py` — category `inference`；3530 bytes；SHA-256 `7f71013c03813d3568e94cda24709b6f2d936062df0a2d4328d19071e317064c`
+  - `tests/test_matching.py` — category `relevant_source`；663 bytes；SHA-256 `78eecf95ab4cb872ffca7f3f66485efbccfb63bc3715ec8b73b9bda9f900be31`
+  - `tests/test_model.py` — category `model`；612 bytes；SHA-256 `36194d8f717ab81d117d38536dc397bff61d77028ca868dae25b70fba0f40fef`
+  - `tests/test_pretrained.py` — category `training`；4209 bytes；SHA-256 `80005da552530b4a8a1aa373784d5784ee4e96661a447df5c11cffc4ba617898`
+  - `tests/test_train.py` — category `training`；1427 bytes；SHA-256 `6e9670e8efc83682ad101d7e1229a3f8c33c6c27cc3d58e8e4d55039b9daf747`
+  - `trackastra/__init__.py` — category `temporal_linking`；261 bytes；SHA-256 `52fb0c76f68d2fbe003d2841dd900cf7be3a5f6287c3a70a1e059c6de11e5a84`
+  - `trackastra/cli.py` — category `temporal_linking`；4001 bytes；SHA-256 `d0991132a23678ddb6c4a58cf2bea42f79ba119c06e67f2c0934fbfa4511746e`
+  - `trackastra/data/__init__.py` — category `data_loader`；755 bytes；SHA-256 `6a60aa6dda0ac55f8d21b943ff57fd4df1990cf7cf92a7399be8a8bcf8298c5b`
+  - `trackastra/data/_check_ctc.py` — category `data_loader`；4503 bytes；SHA-256 `f58cb7cc1b9bbf05818b78820f7b3523f7f864bee8e4c36c621ae47d5c38f9f8`
+  - `trackastra/data/_compute_overlap.py` — category `data_loader`；7306 bytes；SHA-256 `a53f4bfb18139036e212ace492321e2b893027b96373f543bb5421772d30041b`
+  - `trackastra/data/augmentations.py` — category `data_loader`；19155 bytes；SHA-256 `b38b77ade293968ec2a3c0ca0c845c48f615f5590dd972a9169ec5a4080ec0a8`
+  - `trackastra/data/distributed.py` — category `data_loader`；10714 bytes；SHA-256 `dde318e8bbe58474b0478f51ee26989ac835eea44309ab8371f5e4cfaf676dfe`
+  - `trackastra/data/example_data.py` — category `data_loader`；1331 bytes；SHA-256 `0613c479e86f98aabb56a01d4b77f2c25a1c9f876f6681c2ea93fd2ad1ae8604`
+  - `trackastra/data/utils.py` — category `data_loader`；7520 bytes；SHA-256 `6d88f8667820d92c95246e82d6c34ab982c1480581641bd690733298ea874ed1`
+  - `trackastra/data/wrfeat.py` — category `data_loader`；21514 bytes；SHA-256 `9871bff4bd52fc254e3acc639c547c18fbc78399ca7c0ba3604d24f92ceec263`
+  - `trackastra/model/__init__.py` — category `model`；153 bytes；SHA-256 `d2771f58359bf39eb7aeb932014fdf6b6e692dc1bfb75f98d5ddb509c48b11c2`
+  - `trackastra/model/model_parts.py` — category `model`；10096 bytes；SHA-256 `de932eaac7be9ba015550b2b3f069a3e862c7a3f263ea9b6d2500e4f9063353b`
+  - `trackastra/model/pretrained.py` — category `training`；2247 bytes；SHA-256 `116acfd1bac9412d6a96b89058655a8766f11abe6be6b3fe22f9c529d3257d87`
+  - `trackastra/model/rope.py` — category `model`；3060 bytes；SHA-256 `586af2026bb26ce38e4dccf8ec7f3ff8d64f9a718e22a08f90d13e42f9628f04`
+  - `trackastra/tracking/__init__.py` — category `temporal_linking`；328 bytes；SHA-256 `9e295ec1d4c661f8b815a4bf0d2a587d87e40426916efe7825fa9ea7bb2454c2`
+  - `trackastra/tracking/utils.py` — category `temporal_linking`；17013 bytes；SHA-256 `fd82e42f322c9424a20abb8da6a51398ab047e4ee27adc04619d57fc27a7c512`
+  - `trackastra/utils/__init__.py` — category `temporal_linking`；242 bytes；SHA-256 `ef19bce254c7e7a780a41124616780fe1b4c955958720207efd9a6ffc84ca1c8`
+  - `trackastra/utils/utils.py` — category `temporal_linking`；15574 bytes；SHA-256 `27ec711748eb9c30ce0ee5a9ec83bbf904d1216c4b814880e42eddccf96d29a4`
+
+## 组合建议（推断，不是已验证性能结论）
+
+- 最小风险基线：保留官方数据/指标/submission 合同，只在 detector、edge scorer 或 solver 单点替换；每次用同一稀疏标注 evaluator 比较。
+- 分割前端试验：Cellpose、3Dee 或 Ultrack segmentation 可产生实例/候选，但必须先定义 mask/center 到物理 `(z,y,x)` 与 GEFF node 的确定性转换。
+- 关联后端试验：Trackastra 适合从实例 mask 学习关联；btrack 适合概率 tracklet + division hypothesis；Ultrack 适合将层级分割候选与全局流约束联合求解。三者不能仅凭 README 断言优于官方。
+- 数据交换：以 GEFF/tracksdata 作为图中间层有利于组件解耦；必须保留 directed axes、node/edge property schema、solution edge 和坐标单位。
+
+## 未解决与阻断
+
+- 本子任务早期在默认隔离上下文调用 `gh auth status` / `gh api` 时得到 `LOGIN_REQUIRED`；这只是该隔离调用的访问失败，不能外推为主环境当前凭据无效。根任务随后已在获批环境独立验证 `gh api user` 为 SailorRen 且可用，二者按执行上下文并存记录。匿名 REST 调用另触发出口 IP rate limit。深读使用只读 Git 协议固定 SHA，搜索使用已登录的应用内 GitHub 页面。
+- Code Search 与 `tracksdata in:name` 未全分页，故本报告是冻结查询集内的系统性侦察，不是 GitHub 全宇宙穷举。
+- 未运行任何第三方仓库，依赖可安装性、GPU/内存、模型权重可获得性、Kaggle 无网兼容性均 `NOT_RUN`。
+- 未读取或复制无许可仓库的完整源码到持久产物；仅保存固定 URL、tree、哈希、结构统计和自写摘要。

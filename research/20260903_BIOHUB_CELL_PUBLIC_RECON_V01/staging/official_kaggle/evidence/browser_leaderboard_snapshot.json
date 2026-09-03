@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "source": "logged_in_in_app_browser",
+  "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/leaderboard",
+  "captured_at_utc": "2026-09-03T08:32:44.130Z",
+  "captured_at_asia_singapore": "2026-09-03, 16:32:44 GMT+8",
+  "initial_visible_main": {
+    "chars": 2606,
+    "bytes": 2633,
+    "sha256": "c49ab4276b24b8de116660e223672db25c0245205db8f983060dbcc063101829",
+    "last_rank_range_text": "1822 - 3032"
+  },
+  "expanded_1_99_main": {
+    "chars": 3277,
+    "bytes": 3290,
+    "sha256": "4cb7358c2605538c65fb6fa76c35573d66afd022c6761928d567093713adb4f3"
+  },
+  "virtual_scrolled_100_149_main": {
+    "chars": 3392,
+    "bytes": 3405,
+    "sha256": "659c23ea56abcc0998c60a150784e87bc8ecefcea9765bcdc446bdbcf6f3468b"
+  },
+  "public_fraction_approx": "29%",
+  "private_fraction": "71%",
+  "dynamic_team_count_observed": 3032,
+  "selected_ranks": [
+    {
+      "rank": 1,
+      "score": 0.963
+    },
+    {
+      "rank": 5,
+      "score": 0.955
+    },
+    {
+      "rank": 10,
+      "score": 0.949
+    },
+    {
+      "rank": 25,
+      "score": 0.944
+    },
+    {
+      "rank": 50,
+      "score": 0.94
+    },
+    {
+      "rank": 100,
+      "score": 0.937
+    }
+  ],
+  "tie_clusters_observed": [
+    {
+      "score": 0.944,
+      "rank_start": 25,
+      "rank_end": 31,
+      "count": 7
+    },
+    {
+      "score": 0.94,
+      "rank_start": 50,
+      "rank_end": 55,
+      "count": 6
+    },
+    {
+      "score": 0.938,
+      "rank_start": 64,
+      "rank_end": 99,
+      "count": 36
+    }
+  ],
+  "note": "Team count and scores are dynamic snapshot values. Existing account submission/scoring text was visible but no submission was made in this run. Code card values 0.966/0.965/0.964 exceed this snapshot rank-1 value and remain unbound/stale-risk, not current verified scores."
+}

@@ -1,0 +1,1242 @@
+{
+  "schema_version": "1.0",
+  "source_id": "GH-DEEP-weigertlab__trackastra",
+  "repo": "weigertlab/trackastra",
+  "url": "https://github.com/weigertlab/trackastra",
+  "relation_to_competition": "transformer_cell_tracking",
+  "access_time_utc": "2026-09-03T08:47:12.250323+00:00",
+  "fixed_branch": "main",
+  "fixed_commit_sha": "6a8ce94ee7c5a1f22c8eb77229ea5a0bc95a7b5b",
+  "latest_commit_date": "2026-08-07T11:57:45-07:00",
+  "tree_file_count": 66,
+  "tree_bytes": 5297,
+  "tree_sha256": "fc4c7adbe5f52f7c927bafe89bcfed3b715261f908ae5ee71b2c8828f527012c",
+  "tree_evidence_path": "staging/github_ecosystem/evidence/weigertlab__trackastra/tree.txt",
+  "read_status": "FULL_RELEVANT_REPO_SOURCE_READ",
+  "files_requested": 44,
+  "relevant_source_paths_selected": 44,
+  "relevant_source_selection_coverage": 1.0,
+  "files_actually_read_count": 44,
+  "files_actually_read": [
+    {
+      "path": "README.md",
+      "bytes": 10603,
+      "sha256": "0366a54f45973797aaffdac8b0082e388da691e43a1ad030e442a9692e7b9676",
+      "line_count": 249,
+      "keyword_counts": {
+        "detect": 2,
+        "segment": 4,
+        "track": 110,
+        "link": 9,
+        "division": 2,
+        "flow": 2,
+        "transformer": 4,
+        "geff": 4,
+        "zarr": 1,
+        "ctc": 13,
+        "train": 18,
+        "infer": 1,
+        "predict": 3,
+        "ilp": 7,
+        "gurobi": 5
+      },
+      "symbols": [],
+      "headings": [
+        "# *Trackastra* - Tracking by Association with Transformers",
+        "## Tracking results",
+        "## Installation",
+        "### Simple installation",
+        "### 🆕😎 With pretrained features",
+        "### Installation with training support",
+        "## Usage: Tracking with a pretrained model",
+        "# load some test data images and masks",
+        "# Load a pretrained model",
+        "# or from a local folder",
+        "# model = Trackastra.from_folder('path/my_model_folder/', device=device)",
+        "# Track the cells",
+        "# Relabel the masks and write to cell tracking challenge format (CTC),",
+        "# Or write to the graph exchange file format (GEFF)",
+        "# Visualise in napari",
+        "## Usage: Training a model on your own data",
+        "## Reference"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1521,
+      "sha256": "cc9ea92a72a63101ff425cc525faeace28ec9fc9c658a0fc01daf236e06326c9",
+      "line_count": 29,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "license"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 1472,
+      "sha256": "a5a149405bff4d99722df2ab757f041e27bbce21ae60d7fe7d32d3c0d5f3bffd",
+      "line_count": 51,
+      "keyword_counts": {
+        "track": 2,
+        "train": 2,
+        "infer": 1
+      },
+      "symbols": [],
+      "category": "dependency"
+    },
+    {
+      "path": "scripts/train.py",
+      "bytes": 41924,
+      "sha256": "cfa20e341adce143bd58acaf1f000045072fb01b73092580f17e32c922e2e762",
+      "line_count": 1177,
+      "keyword_counts": {
+        "detect": 9,
+        "track": 45,
+        "division": 6,
+        "transformer": 7,
+        "ctc": 6,
+        "train": 65,
+        "predict": 4,
+        "ilp": 1
+      },
+      "symbols": [
+        "_process_memory",
+        "_git_commit",
+        "WarmupCosineLRScheduler",
+        "__init__",
+        "get_lr",
+        "log_tracking_metrics",
+        "WrappedLightningModule",
+        "__init__",
+        "_common_step",
+        "checkpoint_path",
+        "configure_optimizers",
+        "training_step",
+        "validation_step",
+        "on_validation_epoch_end",
+        "ExampleImages",
+        "__init__",
+        "on_train_start",
+        "MyModelCheckpoint",
+        "__init__",
+        "on_fit_start",
+        "on_validation_end",
+        "create_run_name",
+        "find_val_batch",
+        "_init_wandb",
+        "train",
+        "parse_train_args"
+      ],
+      "category": "training"
+    },
+    {
+      "path": "trackastra/data/data.py",
+      "bytes": 55147,
+      "sha256": "21828a47c9ba5bb09c24d359f6aa59416e73c9f82d1d9dddc232e7ba1f86e2fb",
+      "line_count": 1525,
+      "keyword_counts": {
+        "detect": 42,
+        "segment": 3,
+        "track": 70,
+        "link": 3,
+        "division": 2,
+        "lineage": 8,
+        "transformer": 1,
+        "ctc": 20,
+        "csv": 1,
+        "train": 6
+      },
+      "symbols": [
+        "_filter_track_df",
+        "_CompressedArray",
+        "__init__",
+        "decompress",
+        "debug_function",
+        "wrapper",
+        "CTCData",
+        "__init__",
+        "from_arrays",
+        "_get_ndivs",
+        "_setup_features_augs",
+        "_compress_data",
+        "_guess_root_and_gt_tra_folder",
+        "_guess_img_folder",
+        "_guess_mask_folder",
+        "_guess_det_folder",
+        "__len__",
+        "_load_gt",
+        "_correct_gt_with_st",
+        "_load_tiffs",
+        "_masks2properties",
+        "_load_tracklet_links",
+        "_build_tracklets_without_gt",
+        "_check_dimensions",
+        "_load",
+        "_build_windows",
+        "__getitem__",
+        "_setup_features_augs_wrfeat",
+        "_load_wrfeat",
+        "_build_windows_wrfeat",
+        "_getitem_wrfeat",
+        "_ctc_lineages",
+        "_assoc",
+        "_ctc_assoc_matrix",
+        "sigmoid",
+        "_compress_img_mask_preproc",
+        "pad_tensor",
+        "collate_sequence_padding"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "trackastra/data/features.py",
+      "bytes": 4011,
+      "sha256": "21eff8db321ed8ece7a3ddd9b0c5216063c4e863ace8c8f1bfce7dc20fb26e48",
+      "line_count": 149,
+      "keyword_counts": {
+        "detect": 2
+      },
+      "symbols": [
+        "extract_features_regionprops",
+        "extract_features_patch"
+      ],
+      "category": "features"
+    },
+    {
+      "path": "trackastra/data/matching.py",
+      "bytes": 9241,
+      "sha256": "57e1ba1e0ae8c97c56eb7685bde1bab6ee5efdec2ceb3e5e722741b027919070",
+      "line_count": 252,
+      "keyword_counts": {
+        "segment": 1,
+        "assign": 2,
+        "linear_sum_assignment": 2,
+        "flow": 1,
+        "stardist": 3,
+        "predict": 1
+      },
+      "symbols": [
+        "label_are_sequential",
+        "is_array_of_integers",
+        "_check_label_array",
+        "label_overlap",
+        "_label_overlap",
+        "_safe_divide",
+        "intersection_over_union",
+        "dist_score",
+        "relabel_sequential",
+        "matching"
+      ],
+      "category": "assignment"
+    },
+    {
+      "path": "trackastra/model/model.py",
+      "bytes": 17395,
+      "sha256": "bd7af2f44ee35ba978c284295775e11e53ddd55c631f01c74e0fa1332d721f41",
+      "line_count": 540,
+      "keyword_counts": {
+        "track": 8,
+        "transformer": 5,
+        "attention": 13,
+        "train": 17
+      },
+      "symbols": [
+        "EncoderLayer",
+        "__init__",
+        "forward",
+        "DecoderLayer",
+        "__init__",
+        "forward",
+        "TrackingTransformer",
+        "__init__",
+        "forward",
+        "normalize_output",
+        "save",
+        "create",
+        "from_folder"
+      ],
+      "category": "model"
+    },
+    {
+      "path": "trackastra/model/model_api.py",
+      "bytes": 14880,
+      "sha256": "1cde6283653b55c1eeec6c6c25ef227c4b147462a7f846caa80058bb34c44a33",
+      "line_count": 410,
+      "keyword_counts": {
+        "detect": 1,
+        "segment": 4,
+        "track": 53,
+        "link": 11,
+        "division": 7,
+        "transformer": 17,
+        "train": 40,
+        "predict": 19,
+        "ilp": 11
+      },
+      "symbols": [
+        "_default_batch_size",
+        "Trackastra",
+        "__init__",
+        "from_folder",
+        "from_pretrained",
+        "_predict",
+        "_track_from_predictions",
+        "track",
+        "track_from_disk"
+      ],
+      "category": "inference"
+    },
+    {
+      "path": "trackastra/model/predict.py",
+      "bytes": 8149,
+      "sha256": "8e4dbdc7754a69b3c3a269560baa1d571480024c0f5874db3426e4f19841e880",
+      "line_count": 231,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 8,
+        "transformer": 5,
+        "sparse": 3,
+        "train": 11,
+        "predict": 9
+      },
+      "symbols": [
+        "predict",
+        "predict_windows"
+      ],
+      "category": "inference"
+    },
+    {
+      "path": "trackastra/tracking/tracking.py",
+      "bytes": 5533,
+      "sha256": "cccc913c2bfcc9ef1f802ad71efe306509784c34b54802d831d373ce7ed997e0",
+      "line_count": 180,
+      "keyword_counts": {
+        "track": 15,
+        "division": 4,
+        "ctc": 2
+      },
+      "symbols": [
+        "copy_edge",
+        "track_greedy",
+        "build_graph"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "trackastra/tracking/ilp.py",
+      "bytes": 4855,
+      "sha256": "7b09eead5fbc0bba15dcd479ee083e9dd1541784c7904c19c49ab31e900cf544",
+      "line_count": 185,
+      "keyword_counts": {
+        "track": 2,
+        "division": 7,
+        "train": 6,
+        "ilp": 15
+      },
+      "symbols": [
+        "track_ilp",
+        "solve_full_ilp",
+        "solution_to_graph",
+        "print_solution_stats"
+      ],
+      "category": "optimization"
+    },
+    {
+      "path": "trackastra/tracking/track_graph.py",
+      "bytes": 5346,
+      "sha256": "fbac6f207f789f0036511b64995df61fefd850af6746daf59ffd060be24c103a",
+      "line_count": 165,
+      "keyword_counts": {
+        "track": 4
+      },
+      "symbols": [
+        "TrackGraph",
+        "__init__",
+        "prev_edges",
+        "next_edges",
+        "get_frames",
+        "nodes_by_frame",
+        "_update_metadata",
+        "add_node",
+        "add_nodes_from",
+        "remove_node",
+        "remove_nodes_from",
+        "add_edge",
+        "add_edges_from",
+        "add_weighted_edges_From",
+        "remove_edge",
+        "update",
+        "clear",
+        "clear_edges"
+      ],
+      "category": "graph_model"
+    },
+    {
+      "path": "trackastra/model/pretrained.json",
+      "bytes": 11078,
+      "sha256": "829cbecf6d6e0740a8bb90b05ec7fb536ee4002d3dbe0146ba4140c4027a9530",
+      "line_count": 148,
+      "keyword_counts": {
+        "segment": 6,
+        "track": 41,
+        "link": 2,
+        "lineage": 6,
+        "flow": 2,
+        "transformer": 2,
+        "ctc": 4,
+        "bayes": 2
+      },
+      "symbols": [],
+      "category": "weights_metadata"
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "bytes": 361,
+      "sha256": "3173b0de2db0d65f403a7aa3f29ac453731c4420a4f55136694e5a5962814f88",
+      "line_count": 14,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "scripts/example_config.yaml",
+      "bytes": 313,
+      "sha256": "c1f900c65e69b6ead54609222f95de4c17bf3687fcf42aeb89fd1f11653865b3",
+      "line_count": 21,
+      "keyword_counts": {
+        "detect": 1,
+        "ctc": 2,
+        "train": 1
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "setup.cfg",
+      "bytes": 1642,
+      "sha256": "196762242a331124965290f9201ae3ee5135b2b73905028d6041f29f2394efa5",
+      "line_count": 76,
+      "keyword_counts": {
+        "track": 8,
+        "transformer": 1,
+        "geff": 1,
+        "zarr": 1,
+        "train": 4,
+        "ilp": 2,
+        "gurobi": 2
+      },
+      "symbols": [],
+      "category": "dependency"
+    },
+    {
+      "path": "tests/test_augmentations.py",
+      "bytes": 2134,
+      "sha256": "342637319d55f04677ed299b3bf8f44cc880bf599bb5e334b0d198084ddc6c89",
+      "line_count": 76,
+      "keyword_counts": {
+        "track": 1,
+        "train": 3
+      },
+      "symbols": [
+        "plot_augs",
+        "generate_data",
+        "test_augpipeline"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "tests/test_cli.py",
+      "bytes": 1325,
+      "sha256": "6eecad5078a46ab93f08bf7ad69b88643a27d3e5cd1ab30e74745f44f8c678fa",
+      "line_count": 41,
+      "keyword_counts": {
+        "track": 14,
+        "ctc": 5,
+        "csv": 3,
+        "train": 2,
+        "infer": 1
+      },
+      "symbols": [
+        "test_cli_parser",
+        "test_cli_tracking_from_folder",
+        "test_cli_tracking_from_file"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/test_data.py",
+      "bytes": 7735,
+      "sha256": "93199dd6c11ef829ab9abbbbfb3f788e801d2d8c9cbbb446b34598620d7ddb88",
+      "line_count": 301,
+      "keyword_counts": {
+        "detect": 8,
+        "track": 6,
+        "ctc": 15,
+        "train": 9
+      },
+      "symbols": [
+        "example_dataset",
+        "test_ctc_assoc_matrix_emtpy",
+        "test_ctc_assoc_matrix_single_detection",
+        "test_ctc_assoc_matrix_toy_example",
+        "test_ctc_assoc_matrix_toy_example_slice",
+        "assert_dims",
+        "test_custom_data_mw",
+        "test_memory",
+        "test_compress"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "tests/test_features.py",
+      "bytes": 2462,
+      "sha256": "8c7c195773887eb5fa1f6ca1b4b09da06cb69bcb8b4667a5c5763f59bbcbfb48",
+      "line_count": 85,
+      "keyword_counts": {
+        "track": 2
+      },
+      "symbols": [
+        "generate_data",
+        "test_features"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/test_inference_api.py",
+      "bytes": 3530,
+      "sha256": "7f71013c03813d3568e94cda24709b6f2d936062df0a2d4328d19071e317064c",
+      "line_count": 159,
+      "keyword_counts": {
+        "detect": 2,
+        "track": 37,
+        "transformer": 2,
+        "geff": 4,
+        "zarr": 1,
+        "ctc": 5,
+        "train": 7,
+        "infer": 1,
+        "predict": 4,
+        "ilp": 5
+      },
+      "symbols": [
+        "test_api",
+        "test_write_to_geff",
+        "test_empty_frame",
+        "test_empty_window_greedy",
+        "test_empty_window_ilp",
+        "test_empty_sequence_greedy",
+        "test_empty_sequence_ilp"
+      ],
+      "category": "inference"
+    },
+    {
+      "path": "tests/test_matching.py",
+      "bytes": 663,
+      "sha256": "78eecf95ab4cb872ffca7f3f66485efbccfb63bc3715ec8b73b9bda9f900be31",
+      "line_count": 30,
+      "keyword_counts": {
+        "track": 1,
+        "infer": 1
+      },
+      "symbols": [
+        "repeat_tile",
+        "test_matching"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "tests/test_model.py",
+      "bytes": 612,
+      "sha256": "36194d8f717ab81d117d38536dc397bff61d77028ca868dae25b70fba0f40fef",
+      "line_count": 23,
+      "keyword_counts": {
+        "track": 3,
+        "transformer": 2,
+        "infer": 1
+      },
+      "symbols": [
+        "test_model"
+      ],
+      "category": "model"
+    },
+    {
+      "path": "tests/test_pretrained.py",
+      "bytes": 4209,
+      "sha256": "80005da552530b4a8a1aa373784d5784ee4e96661a447df5c11cffc4ba617898",
+      "line_count": 132,
+      "keyword_counts": {
+        "track": 17,
+        "ctc": 3,
+        "train": 8,
+        "infer": 1,
+        "predict": 5
+      },
+      "symbols": [
+        "test_pretrained",
+        "run_predictions",
+        "test_integration",
+        "limit_mps_memory",
+        "test_integration_SAM2"
+      ],
+      "category": "training"
+    },
+    {
+      "path": "tests/test_train.py",
+      "bytes": 1427,
+      "sha256": "6e9670e8efc83682ad101d7e1229a3f8c33c6c27cc3d58e8e4d55039b9daf747",
+      "line_count": 54,
+      "keyword_counts": {
+        "track": 1,
+        "ctc": 5,
+        "train": 7
+      },
+      "symbols": [
+        "download_gt_data",
+        "download_gt_example_ctc",
+        "test_train_dry_run"
+      ],
+      "category": "training"
+    },
+    {
+      "path": "trackastra/__init__.py",
+      "bytes": 261,
+      "sha256": "52fb0c76f68d2fbe003d2841dd900cf7be3a5f6287c3a70a1e059c6de11e5a84",
+      "line_count": 8,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "trackastra/cli.py",
+      "bytes": 4001,
+      "sha256": "d0991132a23678ddb6c4a58cf2bea42f79ba119c06e67f2c0934fbfa4511746e",
+      "line_count": 154,
+      "keyword_counts": {
+        "track": 32,
+        "link": 1,
+        "ctc": 6,
+        "csv": 1,
+        "train": 7,
+        "infer": 1,
+        "ilp": 1
+      },
+      "symbols": [
+        "cli",
+        "_track_from_disk"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "trackastra/data/__init__.py",
+      "bytes": 755,
+      "sha256": "6a60aa6dda0ac55f8d21b943ff57fd4df1990cf7cf92a7399be8a8bcf8298c5b",
+      "line_count": 19,
+      "keyword_counts": {
+        "track": 4,
+        "link": 1,
+        "lineage": 1,
+        "ctc": 3,
+        "train": 3
+      },
+      "symbols": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "trackastra/data/_check_ctc.py",
+      "bytes": 4503,
+      "sha256": "f58cb7cc1b9bbf05818b78820f7b3523f7f864bee8e4c36c621ae47d5c38f9f8",
+      "line_count": 115,
+      "keyword_counts": {
+        "detect": 12,
+        "segment": 7,
+        "track": 43,
+        "ctc": 5
+      },
+      "symbols": [
+        "_check_ctc",
+        "_get_node_attributes",
+        "_detections_from_image"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "trackastra/data/_compute_overlap.py",
+      "bytes": 7306,
+      "sha256": "a53f4bfb18139036e212ace492321e2b893027b96373f543bb5421772d30041b",
+      "line_count": 210,
+      "keyword_counts": {
+        "segment": 2
+      },
+      "symbols": [
+        "_union_slice",
+        "get_labels_with_overlap",
+        "compute_overlap",
+        "compute_overlap_3D"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "trackastra/data/augmentations.py",
+      "bytes": 19155,
+      "sha256": "b38b77ade293968ec2a3c0ca0c845c48f615f5590dd972a9169ec5a4080ec0a8",
+      "line_count": 558,
+      "keyword_counts": {},
+      "symbols": [
+        "default_augmenter",
+        "_rotate",
+        "_filter_points",
+        "ConcatAffine",
+        "__init__",
+        "merge_params",
+        "_torchmax",
+        "forward_parameters",
+        "RandomIntensityScaleShift",
+        "__init__",
+        "apply_transform",
+        "RandomTemporalAffine",
+        "__init__",
+        "forward_parameters",
+        "BasicPipeline",
+        "__init__",
+        "__call__",
+        "RandomCrop",
+        "__init__",
+        "crop_img",
+        "crop_points",
+        "__call__",
+        "AugmentationPipeline",
+        "__init__"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "trackastra/data/distributed.py",
+      "bytes": 10714,
+      "sha256": "dde318e8bbe58474b0478f51ee26989ac835eea44309ab8371f5e4cfaf676dfe",
+      "line_count": 317,
+      "keyword_counts": {
+        "division": 1,
+        "ctc": 9,
+        "train": 14
+      },
+      "symbols": [
+        "cache_class",
+        "make_hashable",
+        "hash_args_kwargs",
+        "_wrapped",
+        "BalancedBatchSampler",
+        "__init__",
+        "get_probs",
+        "sample_batches",
+        "__iter__",
+        "__len__",
+        "BalancedDistributedSampler",
+        "__init__",
+        "__len__",
+        "__iter__",
+        "BalancedDataModule",
+        "__init__",
+        "prepare_data",
+        "setup",
+        "train_dataloader",
+        "val_dataloader"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "trackastra/data/example_data.py",
+      "bytes": 1331,
+      "sha256": "0613c479e86f98aabb56a01d4b77f2c25a1c9f876f6681c2ea93fd2ad1ae8604",
+      "line_count": 43,
+      "keyword_counts": {
+        "track": 3,
+        "division": 1,
+        "lineage": 1,
+        "train": 2
+      },
+      "symbols": [
+        "example_data_bacteria",
+        "example_data_hela",
+        "example_data_fluo_3d"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "trackastra/data/utils.py",
+      "bytes": 7520,
+      "sha256": "6d88f8667820d92c95246e82d6c34ab982c1480581641bd690733298ea874ed1",
+      "line_count": 232,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 11,
+        "link": 3,
+        "division": 1,
+        "ctc": 4,
+        "csv": 5
+      },
+      "symbols": [
+        "load_tiff_timeseries",
+        "load_tracklet_links",
+        "filter_track_df"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "trackastra/data/wrfeat.py",
+      "bytes": 21514,
+      "sha256": "9871bff4bd52fc254e3acc639c547c18fbc78399ca7c0ba3604d24f92ceec263",
+      "line_count": 674,
+      "keyword_counts": {
+        "detect": 8,
+        "track": 11,
+        "ctc": 4,
+        "train": 25
+      },
+      "symbols": [
+        "_filter_points",
+        "_border_dist",
+        "_border_dist_fast",
+        "WRFeatures",
+        "__init__",
+        "__repr__",
+        "features_stacked",
+        "pretrained_feats",
+        "__len__",
+        "__getitem__",
+        "concat",
+        "__add__",
+        "from_mask_img",
+        "WRRandomCrop",
+        "__init__",
+        "__call__",
+        "WRBaseAugmentation",
+        "__init__",
+        "__call__",
+        "_augment",
+        "WRRandomFlip",
+        "_augment",
+        "_scale_matrix",
+        "_shear_matrix",
+        "_rotation_matrix",
+        "_transform_affine",
+        "WRRandomAffine",
+        "__init__",
+        "_augment",
+        "WRRandomBrightness",
+        "__init__",
+        "_augment",
+        "WRRandomOffset",
+        "__init__",
+        "_augment",
+        "WRRandomMovement",
+        "__init__",
+        "_augment",
+        "WRAugmentationPipeline",
+        "__init__",
+        "__call__",
+        "get_features",
+        "_check_dimensions",
+        "build_windows"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "trackastra/model/__init__.py",
+      "bytes": 153,
+      "sha256": "d2771f58359bf39eb7aeb932014fdf6b6e692dc1bfb75f98d5ddb509c48b11c2",
+      "line_count": 9,
+      "keyword_counts": {
+        "track": 2,
+        "transformer": 1
+      },
+      "symbols": [],
+      "category": "model"
+    },
+    {
+      "path": "trackastra/model/model_parts.py",
+      "bytes": 10096,
+      "sha256": "de932eaac7be9ba015550b2b3f069a3e862c7a3f263ea9b6d2500e4f9063353b",
+      "line_count": 287,
+      "keyword_counts": {
+        "transformer": 2,
+        "attention": 5,
+        "train": 1,
+        "infer": 1
+      },
+      "symbols": [
+        "_pos_embed_fourier1d_init",
+        "FeedForward",
+        "__init__",
+        "forward",
+        "PositionalEncoding",
+        "__init__",
+        "forward",
+        "NoPositionalEncoding",
+        "__init__",
+        "forward",
+        "_bin_init_exp",
+        "_bin_init_linear",
+        "RelativePositionalBias",
+        "__init__",
+        "forward",
+        "RelativePositionalAttention",
+        "__init__",
+        "forward"
+      ],
+      "category": "model"
+    },
+    {
+      "path": "trackastra/model/pretrained.py",
+      "bytes": 2247,
+      "sha256": "116acfd1bac9412d6a96b89058655a8766f11abe6be6b3fe22f9c529d3257d87",
+      "line_count": 78,
+      "keyword_counts": {
+        "track": 4,
+        "ctc": 2,
+        "train": 2
+      },
+      "symbols": [
+        "download_and_unzip",
+        "download",
+        "download_pretrained"
+      ],
+      "category": "training"
+    },
+    {
+      "path": "trackastra/model/rope.py",
+      "bytes": 3060,
+      "sha256": "586af2026bb26ce38e4dccf8ec7f3ff8d64f9a718e22a08f90d13e42f9628f04",
+      "line_count": 94,
+      "keyword_counts": {
+        "transformer": 1,
+        "infer": 1
+      },
+      "symbols": [
+        "_pos_embed_fourier1d_init",
+        "_rotate_half",
+        "RotaryPositionalEncoding",
+        "__init__",
+        "get_co_si",
+        "forward"
+      ],
+      "category": "model"
+    },
+    {
+      "path": "trackastra/tracking/__init__.py",
+      "bytes": 328,
+      "sha256": "9e295ec1d4c661f8b815a4bf0d2a587d87e40426916efe7825fa9ea7bb2454c2",
+      "line_count": 18,
+      "keyword_counts": {
+        "track": 6,
+        "geff": 1,
+        "ctc": 3
+      },
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "trackastra/tracking/utils.py",
+      "bytes": 17013,
+      "sha256": "fd82e42f322c9424a20abb8da6a51398ab047e4ee27adc04619d57fc27a7c512",
+      "line_count": 527,
+      "keyword_counts": {
+        "segment": 7,
+        "track": 80,
+        "division": 2,
+        "geff": 10,
+        "zarr": 5,
+        "ctc": 20,
+        "csv": 3
+      },
+      "symbols": [
+        "FoundTracks",
+        "ctc_to_napari_tracks",
+        "CtcTracklet",
+        "__init__",
+        "__lt__",
+        "__str__",
+        "__repr__",
+        "ctc_tracklets",
+        "linear_chains",
+        "graph_to_napari_tracks",
+        "_check_ctc_df",
+        "graph_to_edge_table",
+        "graph_to_ctc",
+        "ctc_to_graph",
+        "apply_solution_graph_to_masks",
+        "split_coords_attr",
+        "write_to_geff"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "trackastra/utils/__init__.py",
+      "bytes": 242,
+      "sha256": "ef19bce254c7e7a780a41124616780fe1b4c955958720207efd9a6ffc84ca1c8",
+      "line_count": 16,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "trackastra/utils/utils.py",
+      "bytes": 15574,
+      "sha256": "27ec711748eb9c30ce0ee5a9ec83bbf904d1216c4b814880e42eddccf96d29a4",
+      "line_count": 494,
+      "keyword_counts": {
+        "segment": 1,
+        "train": 4
+      },
+      "symbols": [
+        "_single_color_integer_cmap",
+        "BinaryMap",
+        "__init__",
+        "__call__",
+        "render_label",
+        "random_label_cmap",
+        "_blockwise_sum_with_bounds",
+        "_bounds_from_timepoints",
+        "blockwise_sum",
+        "blockwise_causal_norm",
+        "normalize_tensor",
+        "normalize",
+        "batched",
+        "preallocate_memory",
+        "seed",
+        "str2bool",
+        "str2path",
+        "none_or_str",
+        "none_or_path"
+      ],
+      "category": "temporal_linking"
+    }
+  ],
+  "target_paths_missing": [],
+  "read_errors": [],
+  "checkout_exit": 0,
+  "checkout_stderr_excerpt": "",
+  "checkout_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "license": "BSD-3-Clause",
+  "categories_observed": [
+    "assignment",
+    "data_io",
+    "data_loader",
+    "dependency",
+    "features",
+    "graph_model",
+    "inference",
+    "license",
+    "model",
+    "optimization",
+    "readme",
+    "relevant_source",
+    "temporal_linking",
+    "training",
+    "weights_metadata"
+  ],
+  "categories_not_present_in_selected_files": [
+    "division",
+    "evaluation",
+    "postprocessing",
+    "submission_conversion"
+  ],
+  "category_coverage": {
+    "data_io": {
+      "status": "READ",
+      "paths": [
+        "tests/test_augmentations.py"
+      ]
+    },
+    "data_loader": {
+      "status": "READ",
+      "paths": [
+        "trackastra/data/data.py",
+        "tests/test_data.py",
+        "trackastra/data/__init__.py",
+        "trackastra/data/_check_ctc.py",
+        "trackastra/data/_compute_overlap.py",
+        "trackastra/data/augmentations.py",
+        "trackastra/data/distributed.py",
+        "trackastra/data/example_data.py",
+        "trackastra/data/utils.py",
+        "trackastra/data/wrfeat.py"
+      ]
+    },
+    "dependency": {
+      "status": "READ",
+      "paths": [
+        "pyproject.toml",
+        "setup.cfg"
+      ]
+    },
+    "division": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "evaluation": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "inference": {
+      "status": "READ",
+      "paths": [
+        "trackastra/model/model_api.py",
+        "trackastra/model/predict.py",
+        "tests/test_inference_api.py"
+      ]
+    },
+    "license": {
+      "status": "READ",
+      "paths": [
+        "LICENSE"
+      ]
+    },
+    "model": {
+      "status": "READ",
+      "paths": [
+        "trackastra/model/model.py",
+        "tests/test_model.py",
+        "trackastra/model/__init__.py",
+        "trackastra/model/model_parts.py",
+        "trackastra/model/rope.py"
+      ]
+    },
+    "optimization": {
+      "status": "READ",
+      "paths": [
+        "trackastra/tracking/ilp.py"
+      ]
+    },
+    "postprocessing": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "readme": {
+      "status": "READ",
+      "paths": [
+        "README.md"
+      ]
+    },
+    "submission_conversion": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "temporal_linking": {
+      "status": "READ",
+      "paths": [
+        "trackastra/tracking/tracking.py",
+        "trackastra/__init__.py",
+        "trackastra/cli.py",
+        "trackastra/tracking/__init__.py",
+        "trackastra/tracking/utils.py",
+        "trackastra/utils/__init__.py",
+        "trackastra/utils/utils.py"
+      ]
+    },
+    "training": {
+      "status": "READ",
+      "paths": [
+        "scripts/train.py",
+        "tests/test_pretrained.py",
+        "tests/test_train.py",
+        "trackastra/model/pretrained.py"
+      ]
+    }
+  },
+  "selection_policy": {
+    "included": "all human-readable code, notebooks, documentation, dependency/runtime configuration, schemas, tests, and license/notices at the fixed commit",
+    "excluded": "repository-hosting automation, generated/cache directories, and binary/non-source artefacts",
+    "excluded_path_count": 22,
+    "excluded_paths": [
+      {
+        "path": ".github/workflows/python-package-conda.yml",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".gitignore",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "CITATION.cff",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "MANIFEST.in",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "artwork/icon.pdf",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "artwork/icon.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "artwork/icon.svg",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "artwork/icon_squared.pdf",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "artwork/icon_squared.svg",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "artwork/trackastra_logo.pdf",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "artwork/trackastra_logo.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "artwork/trackastra_logo.svg",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "docs/ctc_2024-05-27.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "docs/icons/docker-mark-blue.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "docs/icons/terminal-cli-fill.256x224.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "overview.png",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "trackastra/data/resources/Fluo-N3DH-CHO_02_ERR_SEG.tif",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "trackastra/data/resources/Fluo-N3DH-CHO_02_img.tif",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "trackastra/data/resources/Fluo_Hela_02_ERR_SEG.tif",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "trackastra/data/resources/Fluo_Hela_02_img.tif",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "trackastra/data/resources/trpL_150310-11_img.tif",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "trackastra/data/resources/trpL_150310-11_mask.tif",
+        "reason": "non_text_or_non_source_extension"
+      }
+    ]
+  },
+  "scope_note": "Full bytes were read for every listed relevant-source path; only hashes, structure, notebook-cell hashes, and symbol/keyword summaries are persisted. The complete tree and per-path exclusions preserve the coverage boundary."
+}

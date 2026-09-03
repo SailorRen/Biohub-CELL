@@ -1,0 +1,19 @@
+{
+  "manifest_records": 647,
+  "manifest_status_counts": {
+    "BLOCKED": 5,
+    "FULL_NOTEBOOK_SOURCE_READ": 30,
+    "FULL_PAGE_BODY_READ": 77,
+    "FULL_RELEVANT_REPO_SOURCE_READ": 15,
+    "FULL_THREAD_READ": 35,
+    "METADATA_ONLY": 249,
+    "PARTIAL_THREAD_READ": 1,
+    "RATE_LIMITED": 6,
+    "README_ONLY": 2,
+    "TARGET_FILES_READ": 4,
+    "TITLE_SNIPPET_ONLY": 223
+  },
+  "queries": 293,
+  "claims": 51,
+  "blocked_records": 11
+}

@@ -1,0 +1,358 @@
+{
+  "schema_version": "1.0",
+  "source_id": "GH-DEEP-elephant-track__elephant-server",
+  "repo": "elephant-track/elephant-server",
+  "url": "https://github.com/elephant-track/elephant-server",
+  "relation_to_competition": "incremental_deep_learning_3d_tracking",
+  "access_time_utc": "2026-09-03T08:47:13.807992+00:00",
+  "fixed_branch": "main",
+  "fixed_commit_sha": "2c132b3277a5b24468587e4542384788afe71d99",
+  "latest_commit_date": "2026-05-29T09:07:49+09:00",
+  "tree_file_count": 214,
+  "tree_bytes": 20209,
+  "tree_sha256": "37a72e11ae2471c57f17f84848927351f311c622604a66e9de9cb01607008449",
+  "tree_evidence_path": "staging/github_ecosystem/evidence/elephant-track__elephant-server/tree.txt",
+  "read_status": "TARGET_FILES_READ",
+  "files_requested": 11,
+  "relevant_source_paths_selected": null,
+  "relevant_source_selection_coverage": null,
+  "files_actually_read_count": 11,
+  "files_actually_read": [
+    {
+      "path": "README.md",
+      "bytes": 5663,
+      "sha256": "895448f922ca9c086af1479fe4a970c49559095d6e087c82cca83a6aef71960e",
+      "line_count": 100,
+      "keyword_counts": {
+        "track": 20,
+        "lineage": 6,
+        "train": 4,
+        "predict": 3
+      },
+      "symbols": [],
+      "headings": [
+        "## ELEPHANT: Tracking cell lineages in 3D by incremental deep learning",
+        "### Setting up the ELEPHANT Server",
+        "## Acknowledgements",
+        "## Citation",
+        "## License"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1303,
+      "sha256": "d0b4e0eeb51c9191c329c7c80d5cf88bac48cebd8b110d54f97d9fcc831bf73a",
+      "line_count": 23,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "license"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 238,
+      "sha256": "62e8583b2de5389415b00d60a9efa3545eb03b76973743bf094bb74ea2ab3d65",
+      "line_count": 15,
+      "keyword_counts": {
+        "flow": 1,
+        "zarr": 1
+      },
+      "symbols": [],
+      "category": "dependency"
+    },
+    {
+      "path": "elephant-core/setup.py",
+      "bytes": 2236,
+      "sha256": "c1ad391d3527fd2f5c9601dcddf70610f5a95b0bdda44430765a999e73638bf6",
+      "line_count": 57,
+      "keyword_counts": {},
+      "symbols": [
+        "read",
+        "get_version"
+      ],
+      "category": "dependency"
+    },
+    {
+      "path": "elephant-core/elephant/datasets.py",
+      "bytes": 48108,
+      "sha256": "d3cc6ac407393392b421623ec9f725f4f20ae7bf3da619480ef6073da69c8e08",
+      "line_count": 1089,
+      "keyword_counts": {
+        "segment": 11,
+        "flow": 17,
+        "zarr": 19,
+        "ctc": 1,
+        "train": 9,
+        "predict": 1
+      },
+      "symbols": [
+        "profile",
+        "_load_image",
+        "_get_memmap_or_load",
+        "get_input_at",
+        "get_inputs_at",
+        "DatasetPrediction",
+        "__init__",
+        "__len__",
+        "__getitem__",
+        "SegmentationDatasetBase",
+        "__init__",
+        "_generate_item",
+        "SegmentationDatasetZarr",
+        "__init__",
+        "__len__",
+        "_get_memmap_or_load_label",
+        "_get_label_at",
+        "__getitem__",
+        "SegmentationDatasetNumpy",
+        "__init__",
+        "__len__",
+        "__getitem__",
+        "AutoencoderDatasetZarr",
+        "__init__",
+        "FlowDatasetZarr",
+        "__init__",
+        "__len__",
+        "_get_memmap_or_load_label",
+        "_get_label_at",
+        "__getitem__"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "elephant-core/elephant/models.py",
+      "bytes": 13684,
+      "sha256": "d936de86afeab3b450250116a81cb48f1f323db7c99305e509c6a4f5f04d7db9",
+      "line_count": 351,
+      "keyword_counts": {
+        "segment": 3,
+        "division": 1,
+        "flow": 4,
+        "unet": 5,
+        "train": 2
+      },
+      "symbols": [
+        "Interpolate",
+        "__init__",
+        "forward",
+        "UNet",
+        "_conv_block",
+        "_encoder_block",
+        "_decoder_block",
+        "_pooler",
+        "_upsampler",
+        "__init__",
+        "_conform",
+        "forward",
+        "three_class_segmentation",
+        "ResUNet",
+        "_res_block",
+        "_encoder_block",
+        "three_class_segmentation",
+        "ResBlock",
+        "__init__",
+        "forward",
+        "ResBlockFlow",
+        "__init__",
+        "forward",
+        "FlowResNet",
+        "_res_block",
+        "_conv_block",
+        "_encoder_block",
+        "three_dimensional_flow"
+      ],
+      "category": "model"
+    },
+    {
+      "path": "elephant-core/elephant/losses.py",
+      "bytes": 15481,
+      "sha256": "d663ce0d4e220ee862eae62cef010c30867e0fd8088060237059349ef4c74f42",
+      "line_count": 338,
+      "keyword_counts": {
+        "segment": 3,
+        "flow": 31,
+        "train": 1,
+        "predict": 34
+      },
+      "symbols": [
+        "SegmentationLoss",
+        "__init__",
+        "forward",
+        "AutoencoderLoss",
+        "__init__",
+        "forward",
+        "FlowLoss",
+        "__init__",
+        "forward"
+      ],
+      "category": "training"
+    },
+    {
+      "path": "script/train.py",
+      "bytes": 10955,
+      "sha256": "d5d2f6b7400fe24912b5eaee293ea95f0d888d61c059bda8fb050bc467d66d1b",
+      "line_count": 255,
+      "keyword_counts": {
+        "segment": 7,
+        "flow": 21,
+        "zarr": 10,
+        "train": 29
+      },
+      "symbols": [
+        "main",
+        "load_models"
+      ],
+      "category": "training"
+    },
+    {
+      "path": "script/eval.py",
+      "bytes": 2685,
+      "sha256": "794a68b8f6c8bd7febc68f0a80bf8c66c7e6e958725dfd82b9a0a1095d530ce8",
+      "line_count": 62,
+      "keyword_counts": {
+        "detect": 3,
+        "segment": 2,
+        "predict": 2
+      },
+      "symbols": [
+        "main"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "script/run_elephant.py",
+      "bytes": 5132,
+      "sha256": "ce14d4a125b2a279e5b7315ac03a5c9fc42d26ac5c21be410f9ae21e5ff627f8",
+      "line_count": 116,
+      "keyword_counts": {
+        "detect": 4,
+        "segment": 2,
+        "link": 2,
+        "flow": 5,
+        "ctc": 2,
+        "predict": 2
+      },
+      "symbols": [
+        "main"
+      ],
+      "category": "inference"
+    },
+    {
+      "path": "script/dataset_generator.py",
+      "bytes": 2806,
+      "sha256": "e62f9e0797e73867b5b49ec42f18de8f87173a24b452366f5fcc51dbe6cae371",
+      "line_count": 81,
+      "keyword_counts": {
+        "zarr": 1
+      },
+      "symbols": [
+        "parse_args",
+        "main"
+      ],
+      "category": "data_loader"
+    }
+  ],
+  "target_paths_missing": [],
+  "read_errors": [],
+  "checkout_exit": 0,
+  "checkout_stderr_excerpt": "",
+  "checkout_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "license": "BSD-family",
+  "categories_observed": [
+    "data_loader",
+    "dependency",
+    "evaluation",
+    "inference",
+    "license",
+    "model",
+    "readme",
+    "training"
+  ],
+  "categories_not_present_in_selected_files": [
+    "data_io",
+    "division",
+    "optimization",
+    "postprocessing",
+    "submission_conversion",
+    "temporal_linking"
+  ],
+  "category_coverage": {
+    "data_io": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "data_loader": {
+      "status": "READ",
+      "paths": [
+        "elephant-core/elephant/datasets.py",
+        "script/dataset_generator.py"
+      ]
+    },
+    "dependency": {
+      "status": "READ",
+      "paths": [
+        "requirements.txt",
+        "elephant-core/setup.py"
+      ]
+    },
+    "division": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "evaluation": {
+      "status": "READ",
+      "paths": [
+        "script/eval.py"
+      ]
+    },
+    "inference": {
+      "status": "READ",
+      "paths": [
+        "script/run_elephant.py"
+      ]
+    },
+    "license": {
+      "status": "READ",
+      "paths": [
+        "LICENSE"
+      ]
+    },
+    "model": {
+      "status": "READ",
+      "paths": [
+        "elephant-core/elephant/models.py"
+      ]
+    },
+    "optimization": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "postprocessing": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "readme": {
+      "status": "READ",
+      "paths": [
+        "README.md"
+      ]
+    },
+    "submission_conversion": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "temporal_linking": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "training": {
+      "status": "READ",
+      "paths": [
+        "elephant-core/elephant/losses.py",
+        "script/train.py"
+      ]
+    }
+  },
+  "selection_policy": null,
+  "scope_note": "Full bytes were read for every listed relevant-source path; only hashes, structure, notebook-cell hashes, and symbol/keyword summaries are persisted. The complete tree and per-path exclusions preserve the coverage boundary."
+}

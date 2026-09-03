@@ -1,0 +1,3250 @@
+{
+  "schema_version": "1.0",
+  "source_id": "GH-DEEP-royerlab__tracksdata",
+  "repo": "royerlab/tracksdata",
+  "url": "https://github.com/royerlab/tracksdata",
+  "relation_to_competition": "competition_graph_library",
+  "access_time_utc": "2026-09-03T08:47:12.250063+00:00",
+  "fixed_branch": "main",
+  "fixed_commit_sha": "63a1912f3b6ebd1536a2e8a8adfdf7f5eb84efa4",
+  "latest_commit_date": "2026-09-02T15:33:20-07:00",
+  "tree_file_count": 124,
+  "tree_bytes": 11034,
+  "tree_sha256": "1338ecd4fb2430bd08390dcff55fb227f7d8d08f695f6aaf1336f5fbe9dc6755",
+  "tree_evidence_path": "staging/github_ecosystem/evidence/royerlab__tracksdata/tree.txt",
+  "read_status": "FULL_RELEVANT_REPO_SOURCE_READ",
+  "files_requested": 117,
+  "relevant_source_paths_selected": 117,
+  "relevant_source_selection_coverage": 1.0,
+  "files_actually_read_count": 117,
+  "files_actually_read": [
+    {
+      "path": "README.md",
+      "bytes": 2305,
+      "sha256": "617ab6a5c8f4df1b76f7986775573d23712b49bbeec37320eb8d269b85626443",
+      "line_count": 48,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 29,
+        "flow": 2,
+        "ctc": 1
+      },
+      "symbols": [],
+      "headings": [
+        "# TracksData",
+        "## Features",
+        "## Installation",
+        "## Why tracksdata?",
+        "## Documentation"
+      ],
+      "category": "readme"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1534,
+      "sha256": "4e459930bb13a7e0ebbf8acc0f0be1bb973d4f0d095a54e1bd52b7cc27101683",
+      "line_count": 14,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "license"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 4760,
+      "sha256": "e361f154bc746d0cb69bf20de322742130f9d6335dbad373516db1353bfe9fa8",
+      "line_count": 166,
+      "keyword_counts": {
+        "track": 12,
+        "geff": 2,
+        "zarr": 3,
+        "ctc": 1,
+        "ilp": 1
+      },
+      "symbols": [],
+      "category": "dependency"
+    },
+    {
+      "path": "src/tracksdata/io/_geff.py",
+      "bytes": 11822,
+      "sha256": "0f70695c4de7f7249ffff9140f650102666ca07d98f9061b848d17520631ba40",
+      "line_count": 335,
+      "keyword_counts": {
+        "segment": 2,
+        "track": 21,
+        "assign": 1,
+        "geff": 69,
+        "zarr": 15
+      },
+      "symbols": [
+        "read_graph_metadata",
+        "append_graph_metadata",
+        "remove_graph_metadata",
+        "geff_prop_dtype",
+        "convert_geff_prop_dtype",
+        "_copy_geff",
+        "_as_path",
+        "_copy_store_contents",
+        "_overwrite_array",
+        "_set_prop_metadata_dtype"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "src/tracksdata/metrics/_matching.py",
+      "bytes": 10914,
+      "sha256": "4c07a2cd4635ce0d3a771a1c13c391eef614f31e764df525add29ba82133b69a",
+      "line_count": 316,
+      "keyword_counts": {
+        "track": 2,
+        "ctc": 2,
+        "sparse": 3
+      },
+      "symbols": [
+        "Matching",
+        "__init__",
+        "compute_weights",
+        "get_required_attrs",
+        "MaskMatching",
+        "__init__",
+        "compute_weights",
+        "get_required_attrs",
+        "DistanceMatching",
+        "__init__",
+        "compute_weights",
+        "get_required_attrs"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "src/tracksdata/metrics/_ctc_metrics.py",
+      "bytes": 13261,
+      "sha256": "69568778615493c2b047469263a01ef73e8865290208b2806c8289c30c8dc912",
+      "line_count": 360,
+      "keyword_counts": {
+        "track": 68,
+        "assign": 4,
+        "linear_sum_assignment": 2,
+        "ctc": 19,
+        "sparse": 2,
+        "evaluate": 9
+      },
+      "symbols": [
+        "_fill_empty",
+        "_match_single_frame",
+        "_matching_data",
+        "compute_ctc_metrics_data",
+        "evaluate_ctc_metrics"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "src/tracksdata/metrics/_traccuracy.py",
+      "bytes": 2374,
+      "sha256": "70b790391b66dfe77b2a0fefe69533cdd9a08c1f8ef0b1a7d9e8681bbf5b43e4",
+      "line_count": 69,
+      "keyword_counts": {
+        "segment": 5,
+        "track": 10,
+        "infer": 1,
+        "evaluate": 1
+      },
+      "symbols": [
+        "to_traccuracy_graph"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "src/tracksdata/functional/_division.py",
+      "bytes": 13883,
+      "sha256": "43f0df5eeac4f37e066582bf347e045e98b4e33923f35e35216990097e9c743c",
+      "line_count": 364,
+      "keyword_counts": {
+        "detect": 1,
+        "track": 4,
+        "link": 1,
+        "division": 29
+      },
+      "symbols": [
+        "_avg_df",
+        "_avg_node_attrs",
+        "_get_edge_custom_attrs",
+        "_avg_edge_attrs",
+        "_shift_division_ahead_once",
+        "_shift_division_behind_once",
+        "shift_division"
+      ],
+      "category": "division"
+    },
+    {
+      "path": "src/tracksdata/edges/_distance_edges.py",
+      "bytes": 12206,
+      "sha256": "588037099daa15d6220e19618b8ad446068f5f37425927aa0977c649d2c0726c",
+      "line_count": 340,
+      "keyword_counts": {
+        "track": 6
+      },
+      "symbols": [
+        "DistanceEdges",
+        "__init__",
+        "_init_edge_attrs",
+        "_get_spatial_attr_keys",
+        "_build_kdtree_data",
+        "_query_neighbors_single_kdtree",
+        "_add_edges_per_time"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "src/tracksdata/solvers/_ilp_solver.py",
+      "bytes": 16764,
+      "sha256": "d80e39f52686f6188781f7d83b9ed4d8c2bffaad3447199c71dfc4e8fe400707",
+      "line_count": 437,
+      "keyword_counts": {
+        "detect": 3,
+        "track": 33,
+        "division": 21,
+        "flow": 8,
+        "train": 23,
+        "evaluate": 14,
+        "ilp": 14,
+        "gurobi": 3
+      },
+      "symbols": [
+        "ILPSolver",
+        "__init__",
+        "reset_model",
+        "_evaluate_expr",
+        "_evaluate_inf_expr",
+        "_add_objective_and_variables",
+        "_add_continuous_flow_constraints",
+        "_add_overlap_constraints",
+        "_solve",
+        "solve"
+      ],
+      "category": "optimization"
+    },
+    {
+      "path": "src/tracksdata/solvers/_nearest_neighbors_solver.py",
+      "bytes": 10644,
+      "sha256": "47cba0d7a86d410ebaf5275c0e0edb76f68833327207a6bdc6fd2e8f367d5e0d",
+      "line_count": 312,
+      "keyword_counts": {
+        "track": 17,
+        "division": 2,
+        "train": 15,
+        "evaluate": 1
+      },
+      "symbols": [
+        "_constrained_nearest_neighbors",
+        "_build_constraint_dict",
+        "NearestNeighborsSolver",
+        "__init__",
+        "solve"
+      ],
+      "category": "optimization"
+    },
+    {
+      "path": "src/tracksdata/graph/_sql_graph.py",
+      "bytes": 105613,
+      "sha256": "78562a33550d9844fa279b04d35dba0b8ae90a023c3663e12bac186f0261eb5c",
+      "line_count": 2703,
+      "keyword_counts": {
+        "track": 72,
+        "assign": 4,
+        "flow": 2,
+        "train": 1,
+        "infer": 1
+      },
+      "symbols": [
+        "_is_builtin",
+        "_data_numpy_to_native",
+        "_resolve_attr_filter_column",
+        "_to_sql_clause",
+        "_drop_scratch_table",
+        "_SQLIDSet",
+        "__init__",
+        "uses_scratch_table",
+        "in_clause",
+        "close",
+        "_close_id_set",
+        "_filter_query",
+        "SQLFilter",
+        "__init__",
+        "_uses_scratch_table",
+        "node_ids",
+        "edge_ids",
+        "num_nodes",
+        "num_edges",
+        "node_attrs",
+        "_query_from_attr_keys",
+        "edge_attrs",
+        "subgraph",
+        "blob_default",
+        "SQLGraph",
+        "__init__",
+        "supports_custom_indices",
+        "_define_schema",
+        "Base",
+        "Node",
+        "Edge",
+        "Overlap",
+        "Metadata",
+        "_default_node_attr_schemas",
+        "_default_edge_attr_schemas",
+        "_attr_schemas_from_metadata",
+        "_attr_schemas_for_table",
+        "_is_pickled_sql_type",
+        "__node_attr_schemas",
+        "__node_attr_schemas",
+        "__edge_attr_schemas",
+        "__edge_attr_schemas",
+        "_restore_pickled_column_types",
+        "_read_database",
+        "_database_column_dtypes",
+        "_reconstruct_struct_columns",
+        "_build_struct_expr",
+        "_update_max_id_per_time",
+        "filter",
+        "_flatten_attrs_for_write",
+        "bulk_add_nodes",
+        "bulk_remove_nodes",
+        "bulk_add_edges",
+        "add_overlap",
+        "bulk_add_overlaps",
+        "overlaps",
+        "has_overlaps",
+        "_get_neighbors",
+        "successors",
+        "predecessors",
+        "node_ids",
+        "edge_ids",
+        "time_points",
+        "_reorder_by_indices",
+        "_raw_query",
+        "node_attrs",
+        "edge_attrs",
+        "_node_attr_schemas",
+        "_edge_attr_schemas",
+        "_leaf_column_names",
+        "_physical_column_names",
+        "_physical_cols_for_query",
+        "_mode_for_table",
+        "node_attr_keys",
+        "edge_attr_keys",
+        "_resolve_attr_keys",
+        "_create_attr_index",
+        "_drop_attr_index",
+        "create_node_attr_index",
+        "create_edge_attr_index"
+      ],
+      "category": "graph_model"
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "bytes": 1135,
+      "sha256": "87a8b3a51fc72a2d4957e6df37fc6d17784691d8da85005b712688b9eba44250",
+      "line_count": 48,
+      "keyword_counts": {
+        "detect": 1
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "asv.conf.json",
+      "bytes": 537,
+      "sha256": "166645152ff5be03f42d7704897060eacc94bb950a5823a355d2ae795ecf3b23",
+      "line_count": 24,
+      "keyword_counts": {
+        "track": 3
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "benchmarks/__init__.py",
+      "bytes": 65,
+      "sha256": "7d6cfddb4b1bca002278cd4c055d0a6c6af4920b7ebe6c8844df3ae9bfe0cc39",
+      "line_count": 4,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "benchmarks/chunk_coalescing.py",
+      "bytes": 5429,
+      "sha256": "8f3f46d597a411135ee2c153c61986ac92289d5ca4cd5d5f969770615b4eb182",
+      "line_count": 152,
+      "keyword_counts": {
+        "track": 10
+      },
+      "symbols": [
+        "_build_graph",
+        "ChunkCoalescingBenchmark",
+        "setup",
+        "_count",
+        "_make_view",
+        "time_cold_whole_frame",
+        "time_cached_whole_frame",
+        "time_cold_single_chunk",
+        "track_executes_cold_whole_frame",
+        "track_executes_cached_whole_frame",
+        "track_executes_cold_single_chunk"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "benchmarks/common.py",
+      "bytes": 1062,
+      "sha256": "7aa50a3b003014291fb467d176e6a8c5ef878da21657119368abd3c0fa28f5b2",
+      "line_count": 40,
+      "keyword_counts": {
+        "track": 2
+      },
+      "symbols": [
+        "SQLGraphWithMemory",
+        "__init__",
+        "time_points",
+        "SQLGraphDisk",
+        "__init__",
+        "time_points"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "benchmarks/graph_mutations.py",
+      "bytes": 7204,
+      "sha256": "717f1468ca99c83e32c95d6f9bbbb2b8e9af0df03163e8654b278275b78ae152",
+      "line_count": 167,
+      "keyword_counts": {
+        "track": 6,
+        "lineage": 13,
+        "assign": 1,
+        "flow": 1
+      },
+      "symbols": [
+        "_noop",
+        "_build_graph",
+        "GraphMutationsBenchmark",
+        "setup",
+        "time_remove_node_root",
+        "time_remove_node_view",
+        "time_update_node_attrs_root",
+        "time_update_node_attrs_view",
+        "time_update_node_attrs_view_with_listener",
+        "time_filter_node_ids",
+        "_build_bbox_graph",
+        "SpatialFilterUpdateBenchmark",
+        "setup",
+        "time_update_non_spatial_attr_with_filter",
+        "time_update_bbox_attr_with_filter"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "benchmarks/graph_workflow.py",
+      "bytes": 4868,
+      "sha256": "4956a662b05356345aff73cc8909d3823f333c890ec262f76bd8f584d79311ed",
+      "line_count": 130,
+      "keyword_counts": {
+        "track": 15,
+        "assign": 7
+      },
+      "symbols": [
+        "_get_subgraph",
+        "_assign_tracks",
+        "_build_pipeline",
+        "_fresh_graph",
+        "GraphBackendsBenchmark",
+        "setup_cache",
+        "setup",
+        "time_graph_init",
+        "time_random_nodes",
+        "time_distance_edges",
+        "time_nearest_neighbors_solver",
+        "time_subgraph",
+        "time_assign_tracks"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "benchmarks/tracklet_nodes.py",
+      "bytes": 1558,
+      "sha256": "9474de9bd2b8fd8dd8fcdd91cb573e8f6f787b7b9b3ffd4cadfc95d290d8183f",
+      "line_count": 56,
+      "keyword_counts": {
+        "track": 6,
+        "lineage": 4
+      },
+      "symbols": [
+        "TrackletNodesBenchmark",
+        "setup",
+        "time_tracklet_nodes"
+      ],
+      "category": "temporal_linking"
+    },
+    {
+      "path": "docs/concepts.md",
+      "bytes": 2774,
+      "sha256": "28fc0d5548766c97acf28c9a487b9cb4a3feb86174c3fe0fa9730ae7720ae91d",
+      "line_count": 87,
+      "keyword_counts": {
+        "detect": 2,
+        "segment": 1,
+        "track": 12,
+        "flow": 2
+      },
+      "symbols": [],
+      "headings": [
+        "# Core Concepts",
+        "## Graph-Based Tracking",
+        "## Graph Backends",
+        "### RustWorkXGraph",
+        "### SQLGraph",
+        "### GraphView",
+        "## Graph Operators",
+        "## Attribute System",
+        "### Node Attributes",
+        "### Edge Attributes",
+        "### Attribute Expressions",
+        "# Simple attribute access",
+        "# Mathematical expressions",
+        "# Comparison operations for filtering",
+        "## Data Flow"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/contributing.md",
+      "bytes": 1335,
+      "sha256": "04cbfa15ad94aef87a8770f26f4f111e72730e3bc009d4dee3e4818beb3347c8",
+      "line_count": 55,
+      "keyword_counts": {
+        "track": 3
+      },
+      "symbols": [],
+      "headings": [
+        "# Contributing to Documentation",
+        "## Documentation Versioning",
+        "### Automatic Deployment",
+        "### Manual Version Management",
+        "# Install dependencies",
+        "# Deploy a new version",
+        "# Set default version",
+        "# List all versions",
+        "# Delete a version",
+        "### Local Development",
+        "# Serve with live reload",
+        "# Build static site",
+        "### Version Structure"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/examples.md",
+      "bytes": 1124,
+      "sha256": "508e4506dfbe0dbb3272330c461311ed062ee42bb7b1bb059b3c5366806d5768",
+      "line_count": 26,
+      "keyword_counts": {
+        "segment": 1,
+        "track": 5,
+        "assign": 1,
+        "flow": 1,
+        "ilp": 1
+      },
+      "symbols": [],
+      "headings": [
+        "# Examples",
+        "## Basic Tracking Example",
+        "## Key Components Explained",
+        "## Next Steps"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/examples/basic.py",
+      "bytes": 5842,
+      "sha256": "7c661465da600cc50cf8c4cd2192ca517a77e2f84241497bb0ad2d2290a110a4",
+      "line_count": 161,
+      "keyword_counts": {
+        "segment": 3,
+        "track": 40,
+        "division": 3,
+        "lineage": 1,
+        "assign": 1,
+        "flow": 3,
+        "ctc": 2,
+        "train": 1,
+        "ilp": 3
+      },
+      "symbols": [
+        "basic_tracking_example",
+        "main"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/faq.md",
+      "bytes": 2689,
+      "sha256": "4a7b1637ee4db4f25d63b1645758868bfd3f7c69912ac15be635c9fca7172a9e",
+      "line_count": 83,
+      "keyword_counts": {
+        "track": 28,
+        "division": 3,
+        "lineage": 1,
+        "ilp": 1
+      },
+      "symbols": [
+        "CustomNodes",
+        "add_nodes"
+      ],
+      "headings": [
+        "# Frequently Asked Questions",
+        "## General Questions",
+        "### What is TracksData?",
+        "### When should I use TracksData?",
+        "### How does TracksData differ from other tracking libraries?",
+        "### Which graph backend should I use?",
+        "### Can TracksData handle cell divisions?",
+        "### How do I add custom attributes?",
+        "# Add new attribute keys to the graph",
+        "# Use them when adding nodes/edges",
+        "### How do I create custom operators?",
+        "# Your custom logic here to add nodes to the graph",
+        "### How do I visualize results?"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/getting_started.md",
+      "bytes": 2054,
+      "sha256": "88d2ccf3ac89b1580315b89ec501cd0472384d9d20e84c5c293881cff415d99e",
+      "line_count": 65,
+      "keyword_counts": {
+        "detect": 2,
+        "segment": 1,
+        "track": 8,
+        "ilp": 1
+      },
+      "symbols": [],
+      "headings": [
+        "# Getting Started",
+        "## Basic Concepts",
+        "## Quick Example",
+        "# Create a graph",
+        "# Generate random nodes for testing",
+        "# Connect nearby nodes across time",
+        "# Solve the tracking problem",
+        "## Working with Real Data",
+        "# Extract nodes from labeled images",
+        "# Filter nodes by time",
+        "## Next Steps"
+      ],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/index.md",
+      "bytes": 19,
+      "sha256": "db2cc5490d8b5dfe1694595fe0faa2776c2e0e96b0c06a997ca857ab68f9201c",
+      "line_count": 2,
+      "keyword_counts": {},
+      "symbols": [],
+      "headings": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "docs/installation.md",
+      "bytes": 593,
+      "sha256": "302a31913fe1d32e53dfa19c55551878a99d38184e091b5d79095f0ce1158346",
+      "line_count": 46,
+      "keyword_counts": {
+        "track": 6
+      },
+      "symbols": [],
+      "headings": [
+        "# Installation",
+        "## Requirements",
+        "## Install TracksData",
+        "### From pypi",
+        "### From Source (Development)",
+        "### With Optional Dependencies",
+        "## Verify Installation"
+      ],
+      "category": "data_io"
+    },
+    {
+      "path": "mkdocs.yml",
+      "bytes": 2874,
+      "sha256": "d024fa7b77093e88a900cbf7803db50b0203600db874075850c526d9db737c26",
+      "line_count": 107,
+      "keyword_counts": {
+        "track": 6,
+        "link": 5
+      },
+      "symbols": [],
+      "category": "relevant_source"
+    },
+    {
+      "path": "src/tracksdata/__init__.py",
+      "bytes": 1054,
+      "sha256": "6ae870573104eefd7a8c4e7f1935428d96844c2c5cb12bc79aeff9ce4f28329e",
+      "line_count": 42,
+      "keyword_counts": {
+        "track": 16
+      },
+      "symbols": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/_test/test_attrs.py",
+      "bytes": 27038,
+      "sha256": "2dce4b5f93ed706840fd613012cb25f2e7e9911b9cf631ba5ecb2334eb013d8d",
+      "line_count": 796,
+      "keyword_counts": {
+        "track": 7,
+        "evaluate": 39
+      },
+      "symbols": [
+        "test_attr_expr_init_with_string",
+        "test_attr_expr_init_with_scalar",
+        "test_attr_expr_init_with_attr_expr",
+        "test_attr_expr_init_with_polars_expr",
+        "test_attr_expr_evaluate",
+        "test_attr_expr_column_names",
+        "test_attr_expr_unary_operators",
+        "test_attr_expr_binary_operators",
+        "test_attr_expr_alias",
+        "test_attr_expr_method_delegation",
+        "test_attr_expr_struct_field_method_delegation",
+        "test_attr_comparison_struct_field",
+        "test_attr_expr_complex_expression",
+        "test_attr_expr_with_infinity",
+        "test_attr_expr_multiple_positive_infinity",
+        "test_attr_expr_multiple_negative_infinity",
+        "test_attr_expr_only_infinity_terms",
+        "test_attr_expr_complex_infinity_expressions",
+        "test_attr_expr_nested_infinity_operations",
+        "test_attr_expr_infinity_column_name_tracking",
+        "test_attr_expr_no_infinity_terms",
+        "test_attr_expr_scalar_operations",
+        "test_attr_expr_boolean_operations",
+        "test_duplicated_columns",
+        "test_attr_reverse_comparison",
+        "test_attr_numpy_comparison",
+        "test_attr_comparison_repr",
+        "test_attr_comparison_to_attr",
+        "test_attr_comparison_getattr_delegation",
+        "test_attr_comparison_operator_delegation",
+        "test_attr_comparison_init_with_infinity_attr",
+        "test_attr_comparison_init_with_attr_other",
+        "test_attr_comparison_init_with_empty_columns",
+        "test_attr_comparison_init_with_multiple_columns",
+        "test_attr_comparison_comparison_operators",
+        "test_attr_comparison_binary_operators",
+        "test_attr_comparison_reverse_operators",
+        "test_split_attr_comps",
+        "test_split_attr_comps_empty",
+        "test_split_attr_comps_only_node",
+        "test_split_attr_comps_only_edge",
+        "test_split_attr_comps_invalid_type",
+        "test_attr_comps_to_strs",
+        "test_attr_comps_to_strs_empty",
+        "test_polars_reduce_attr_comps",
+        "test_polars_reduce_attr_comps_empty",
+        "test_polars_reduce_attr_comps_single",
+        "test_attr_comparison_complex_operations",
+        "test_attr_comparison_method_delegation",
+        "test_attr_is_in_creates_membership_expression",
+        "test_attr_is_in_errors",
+        "test_attr_is_in_accepts_numpy_arrays",
+        "test_attr_filter_or_operator_returns_filter",
+        "test_attr_filter_xor_and_invert_operators",
+        "test_attr_filter_and_operator_between_comparisons",
+        "test_attr_filter_logical_op_with_non_filter_raises",
+        "test_attr_filter_nested_composition",
+        "test_attr_filter_mixed_node_and_edge_raises_on_split",
+        "test_attr_filter_split_attr_comps_with_compounds",
+        "test_attr_filter_invalid_op_raises",
+        "test_attr_filter_not_with_multiple_operands_raises",
+        "test_attr_filter_or_with_single_operand_raises",
+        "test_attr_filter_rejects_non_filter_operands",
+        "test_attr_filter_polars_reduce_or",
+        "test_attr_filter_polars_reduce_xor",
+        "test_attr_filter_polars_reduce_not",
+        "test_attr_filter_attr_comps_to_strs_with_compound"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/_test/test_options.py",
+      "bytes": 4782,
+      "sha256": "333ceb54ef22a374027915be7d255b4c7930288148a4e195305282cdbcdf5fa4",
+      "line_count": 150,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [
+        "test_default_options",
+        "test_get_options",
+        "test_set_options",
+        "test_set_options_with_kwargs",
+        "test_set_options_error_both_provided",
+        "test_set_options_error_neither_provided",
+        "test_options_context_manager",
+        "test_options_context_manager_nested",
+        "test_options_context_function",
+        "test_options_context_function_nested",
+        "test_options_context_exception"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/array/__init__.py",
+      "bytes": 235,
+      "sha256": "b2e6228ba378d9130dc41913449a9294807e3d296239fd63ed5fa662b66efa06",
+      "line_count": 10,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/array/_base_array.py",
+      "bytes": 2345,
+      "sha256": "f970b704c3669a08f942613c58d6038157b3b4eb66646d783a5d36201777da0c",
+      "line_count": 76,
+      "keyword_counts": {},
+      "symbols": [
+        "BaseReadOnlyArray",
+        "__array_ufunc__",
+        "__len__",
+        "ndim",
+        "shape",
+        "dtype",
+        "__getitem__",
+        "size",
+        "BaseWritableArray",
+        "__setitem__",
+        "commit"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/array/_graph_array.py",
+      "bytes": 17582,
+      "sha256": "8e968fa9679e4d7d8027ececcd28841aa87ae965ed68eab0c07ec828b5b638fb",
+      "line_count": 493,
+      "keyword_counts": {
+        "track": 7,
+        "zarr": 2,
+        "infer": 2
+      },
+      "symbols": [
+        "_validate_shape",
+        "chain_indices",
+        "_get_size",
+        "GraphArrayView",
+        "__init__",
+        "shape",
+        "size",
+        "ndim",
+        "dtype",
+        "__getitem__",
+        "reindex",
+        "__array__",
+        "_fill_array",
+        "_offset_as_array",
+        "_bbox_to_slices",
+        "_invalidate_bbox",
+        "_on_node_added",
+        "_on_node_removed",
+        "_on_node_updated",
+        "_mask_changed"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/array/_nd_chunk_cache.py",
+      "bytes": 7879,
+      "sha256": "4bed75df716a833cac4b2559030311f1267a7d444d60563a4233f06fca1cc77c",
+      "line_count": 221,
+      "keyword_counts": {
+        "division": 1
+      },
+      "symbols": [
+        "_to_slice",
+        "CacheEntry",
+        "NDChunkCache",
+        "__init__",
+        "_ensure_buffer",
+        "_chunk_bounds",
+        "_chunk_slice",
+        "get",
+        "invalidate"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/array/_test/test_graph_array.py",
+      "bytes": 29502,
+      "sha256": "9fd4780a06ccef7f29909239e4f9c006a264b79b0cd126c14e64070417f413f5",
+      "line_count": 752,
+      "keyword_counts": {
+        "track": 9,
+        "infer": 3
+      },
+      "symbols": [
+        "test_chain_indices",
+        "test_graph_array_view_init",
+        "test_graph_array_view_init_invalid_attr_key",
+        "test_graph_array_view_getitem_empty_time",
+        "test_graph_array_view_getitem_with_nodes",
+        "test_graph_array_view_getitem_multiple_nodes",
+        "test_graph_array_view_getitem_boolean_dtype",
+        "test_graph_array_view_dtype_inference",
+        "multi_node_graph_from_image",
+        "test_graph_array_view_equal",
+        "test_graph_array_view_numpy_operators",
+        "test_graph_array_view_getitem_multi_slices",
+        "test_graph_array_view_getitem_time_index_nested",
+        "test_graph_array_set_options",
+        "test_graph_array_raise_error_on_absent_attr_key",
+        "test_graph_array_raise_error_on_non_scalar_attr_key",
+        "_add_graph_array_node_attrs",
+        "_make_square_mask",
+        "test_graph_array_view_invalidates_only_affected_chunk_on_add",
+        "test_graph_array_view_invalidates_old_and_new_chunks_on_update",
+        "test_graph_array_view_invalidates_once_when_attr_key_changes_but_bbox_unchanged",
+        "test_graph_array_view_invalidates_twice_when_attr_key_and_bbox_change",
+        "test_graph_array_view_no_invalidation_when_unrelated_attr_changes",
+        "test_graph_array_view_invalidates_chunk_on_remove",
+        "test_graph_array_view_raises_when_bbox_missing",
+        "test_graph_array_view_invalidates_once_when_mask_changes_but_bbox_unchanged",
+        "test_graph_array_view_no_invalidation_when_mask_unchanged"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/array/_test/test_nd_chunk_cache.py",
+      "bytes": 4126,
+      "sha256": "8b4aa457f1c25a085024b22265ae92246347c2a762ccf76f2407be02bdf18580",
+      "line_count": 119,
+      "keyword_counts": {
+        "track": 1,
+        "division": 1
+      },
+      "symbols": [
+        "simple_compute_func",
+        "test_nd_chunk_cache_checks_dim",
+        "test_nd_chunk_cache_data_integrity_non_divisible",
+        "test_nd_chunk_cache_various_non_divisible",
+        "array_nd_chunk_cache",
+        "test_nd_chunk_cache_correctly_slice"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/attrs.py",
+      "bytes": 35053,
+      "sha256": "ae760ae90a5a0dc91fa9f791fcc435827cfb8f4b2b359fcd9ed8618374c1cc7f",
+      "line_count": 978,
+      "keyword_counts": {
+        "track": 28,
+        "evaluate": 5
+      },
+      "symbols": [
+        "_is_in_op",
+        "_is_membership_expr_input",
+        "Filter",
+        "to_attr",
+        "columns",
+        "_combine",
+        "__and__",
+        "__rand__",
+        "__or__",
+        "__ror__",
+        "__xor__",
+        "__rxor__",
+        "__invert__",
+        "AttrComparison",
+        "__init__",
+        "__repr__",
+        "to_attr",
+        "columns",
+        "__getattr__",
+        "_delegate_operator",
+        "__add__",
+        "__sub__",
+        "__mul__",
+        "__truediv__",
+        "__floordiv__",
+        "__mod__",
+        "__pow__",
+        "__radd__",
+        "__rsub__",
+        "__rmul__",
+        "__rtruediv__",
+        "__rfloordiv__",
+        "__rmod__",
+        "__rpow__",
+        "__eq__",
+        "__ne__",
+        "__lt__",
+        "__le__",
+        "__gt__",
+        "__ge__",
+        "_StructNamespace",
+        "__init__",
+        "field",
+        "__getattr__",
+        "_wrapped",
+        "Attr",
+        "__init__",
+        "_wrap",
+        "_delegate_operator",
+        "_delegate_comparison_operator",
+        "alias",
+        "evaluate",
+        "columns",
+        "root_column",
+        "field_path",
+        "inf_exprs",
+        "neg_inf_exprs",
+        "expr_columns",
+        "inf_columns",
+        "neg_inf_columns",
+        "has_inf",
+        "has_pos_inf",
+        "has_neg_inf",
+        "is_in",
+        "__invert__",
+        "__neg__",
+        "__pos__",
+        "__abs__",
+        "__getattr__",
+        "_wrapped",
+        "_append_field_path",
+        "__repr__",
+        "__add__",
+        "__sub__",
+        "__mul__",
+        "__truediv__",
+        "__floordiv__",
+        "__mod__",
+        "__pow__",
+        "__and__"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/conftest.py",
+      "bytes": 4143,
+      "sha256": "d235a5f797851adefc24cec5f83c4b676c452df056c6cabfb08cad8d7207bf5f",
+      "line_count": 124,
+      "keyword_counts": {
+        "track": 4,
+        "ctc": 3,
+        "train": 1
+      },
+      "symbols": [
+        "graph_backend",
+        "_add_node_with_index",
+        "_bulk_add_nodes_with_index",
+        "_download_to",
+        "ctc_data_dir",
+        "pytest_addoption",
+        "pytest_configure",
+        "pytest_collection_modifyitems"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/constants.py",
+      "bytes": 2981,
+      "sha256": "2cfe207d9d4f8bb03969dc466ca1685b033815d2e0dd403d121ef0ce1c64c491",
+      "line_count": 101,
+      "keyword_counts": {
+        "segment": 2,
+        "track": 7,
+        "ctc": 1
+      },
+      "symbols": [
+        "DefaultAttrKeys",
+        "DefaultMetadataKeys"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/edges/__init__.py",
+      "bytes": 317,
+      "sha256": "1aa197f14c05960ec0224574872b40ef77437c79032307dd639b7fa527214de9",
+      "line_count": 8,
+      "keyword_counts": {
+        "track": 3
+      },
+      "symbols": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/edges/_base_edge_attrs.py",
+      "bytes": 2340,
+      "sha256": "91c781238fe6896b54de109ed73be9c713ccbe50ad3fb9ca7d6910f888ba0990",
+      "line_count": 83,
+      "keyword_counts": {
+        "track": 2
+      },
+      "symbols": [
+        "BaseEdgeAttrsOperator",
+        "__init__",
+        "_init_edge_attrs",
+        "add_edge_attrs",
+        "_edge_attrs_per_time"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/edges/_base_edges.py",
+      "bytes": 2120,
+      "sha256": "3e4688626bba27d64655b1287c0c2fe39cb33fe25c63d2546f1fe1a512201d91",
+      "line_count": 79,
+      "keyword_counts": {
+        "track": 2
+      },
+      "symbols": [
+        "BaseEdgesOperator",
+        "__init__",
+        "_init_edge_attrs",
+        "add_edges",
+        "_add_edges_per_time"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/edges/_generic_edges.py",
+      "bytes": 4543,
+      "sha256": "95a43f1287f32afdb70ffbd11c7ff694ecde4159aa28db0abd4fad1eed73d66c",
+      "line_count": 129,
+      "keyword_counts": {
+        "track": 5
+      },
+      "symbols": [
+        "GenericFuncEdgeAttrs",
+        "__init__",
+        "_init_edge_attrs",
+        "_edge_attrs_per_time"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/edges/_iou_edges.py",
+      "bytes": 720,
+      "sha256": "4bc81161b6a22f24c995b03e54ac9925e31142aa218aa9555cce03e403c4f751",
+      "line_count": 29,
+      "keyword_counts": {
+        "track": 3
+      },
+      "symbols": [
+        "IoUEdgeAttr",
+        "__init__"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/edges/_test/test_distance_edges.py",
+      "bytes": 16424,
+      "sha256": "ff18292ca6d7dd9f2bbc8339c2b55cb3dd4fdfe03486bba73198da8f400ce977",
+      "line_count": 479,
+      "keyword_counts": {
+        "track": 4
+      },
+      "symbols": [
+        "test_distance_edges_init_default_params",
+        "test_distance_edges_init_custom_params",
+        "test_distance_edges_add_edges_empty_graph",
+        "test_distance_edges_add_edges_single_timepoint_no_previous",
+        "test_distance_edges_add_edges_single_timepoint_no_current",
+        "test_distance_edges_add_edges_2d_coordinates",
+        "test_distance_edges_add_edges_3d_coordinates",
+        "test_distance_edges_add_edges_custom_attr_keys",
+        "test_distance_edges_add_edges_distance_threshold",
+        "test_distance_edges_add_edges_multiple_timepoints",
+        "test_distance_edges_add_edges_custom_weight_key",
+        "test_distance_edges_n_neighbors_limit",
+        "test_distance_edges_add_edges_with_delta_t",
+        "test_distance_edges_invalid_delta_t",
+        "test_distance_edges_multiprocessing_isolation",
+        "test_distance_edges_neighbors_per_frame_false",
+        "test_distance_edges_neighbors_per_frame_true",
+        "test_distance_edges_neighbors_per_frame_with_distance_threshold",
+        "test_distance_edges_neighbors_per_frame_single_delta_t"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/edges/_test/test_generic_edges.py",
+      "bytes": 8816,
+      "sha256": "a185a4a4bf8e48ab96b019431d2fa41a9e6e346c10ffded0bf38e138311147c3",
+      "line_count": 233,
+      "keyword_counts": {
+        "track": 3
+      },
+      "symbols": [
+        "_scalar_distance_func",
+        "test_generic_edges_init_single_attr_key",
+        "test_generic_edges_init_multiple_attr_keys",
+        "_euclidean_distance",
+        "test_generic_edges_add_weights_single_attr_key",
+        "test_generic_edges_add_weights_multiple_attr_keys",
+        "euclidean_distance",
+        "test_generic_edges_add_weights_all_time_points",
+        "test_generic_edges_no_edges_at_time_point",
+        "test_generic_edges_creates_output_key",
+        "test_generic_edges_dict_input_function",
+        "weighted_difference",
+        "test_generic_edges_empty_graph"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/edges/_test/test_iou_edges.py",
+      "bytes": 7717,
+      "sha256": "b32e298977c754246cbe370f25cda5e170b50b74113ab25f26bb4876ec0d8f34",
+      "line_count": 202,
+      "keyword_counts": {
+        "track": 5
+      },
+      "symbols": [
+        "test_iou_edges_init_default",
+        "test_iou_edges_init_custom",
+        "test_iou_edges_add_weights",
+        "test_iou_edges_no_overlap",
+        "test_iou_edges_perfect_overlap",
+        "test_iou_edges_custom_mask_key",
+        "test_iou_edges_multiprocessing_isolation"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/functional/__init__.py",
+      "bytes": 677,
+      "sha256": "3cb56a5be798a4a624980bb2beeff534108374f92ea33015ec6aba222819950b",
+      "line_count": 20,
+      "keyword_counts": {
+        "track": 6,
+        "division": 3
+      },
+      "symbols": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/functional/_apply.py",
+      "bytes": 7869,
+      "sha256": "3a16ead7f03c5a4141df34263f0a33e56e09a848825e77ca84fb18987be98338",
+      "line_count": 253,
+      "keyword_counts": {
+        "track": 4
+      },
+      "symbols": [
+        "Tile",
+        "TilingScheme",
+        "__post_init__",
+        "apply_tiled",
+        "apply_tiled",
+        "_get_tiles_corner",
+        "_yield_apply_tiled",
+        "apply_tiled"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/functional/_edges.py",
+      "bytes": 3515,
+      "sha256": "da1095da5497ec181252d4ff123b33e725b56e2d1d82b97dd475855a70d89c21",
+      "line_count": 81,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [
+        "join_node_attrs_to_edges"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/functional/_iou.py",
+      "bytes": 3210,
+      "sha256": "4de3162f2cd52e3592f4d7bc1c0ac71bcf98ce5e767d137911777ad9130d9349",
+      "line_count": 101,
+      "keyword_counts": {},
+      "symbols": [
+        "intersects",
+        "intersection_with_bbox_2d",
+        "intersection_with_bbox_3d",
+        "fast_intersection_with_bbox",
+        "fast_iou_with_bbox"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/functional/_labeling.py",
+      "bytes": 4680,
+      "sha256": "0b274cc86c754ac7980c3eaf6b53d1e9de95d8615d432028521d18ae25eb7b61",
+      "line_count": 142,
+      "keyword_counts": {
+        "track": 36,
+        "assign": 1
+      },
+      "symbols": [
+        "_ancestral_edges",
+        "_input_graph_ancestral_edges",
+        "ancestral_connected_edges"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/functional/_motile.py",
+      "bytes": 2840,
+      "sha256": "36b7af35467b31574010e376ebe81df78287a7a8e3ad541f55017b9d0499e9ef",
+      "line_count": 81,
+      "keyword_counts": {
+        "track": 9
+      },
+      "symbols": [
+        "to_motile_graph"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/functional/_napari.py",
+      "bytes": 5190,
+      "sha256": "812b2844e187a1ae8527325012efa727e5aa0c60438f80a6154fd498747517d9",
+      "line_count": 162,
+      "keyword_counts": {
+        "track": 40,
+        "assign": 2,
+        "infer": 1
+      },
+      "symbols": [
+        "to_napari_format",
+        "to_napari_format",
+        "to_napari_format",
+        "rx_digraph_to_napari_dict"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/functional/_rx.py",
+      "bytes": 10931,
+      "sha256": "c6be3baa71507c72b391a3b148d6b7b829d0ba3597539b635928f18a125f2d44",
+      "line_count": 327,
+      "keyword_counts": {
+        "track": 95,
+        "division": 3,
+        "lineage": 1,
+        "assign": 4
+      },
+      "symbols": [
+        "_fast_path_transverse",
+        "_fast_dag_transverse",
+        "_numba_build_dict",
+        "_rx_graph_to_dict_dag",
+        "_tracklet_id_edges_from_long_edges",
+        "_assign_tracklet_ids"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/functional/_test/test_apply.py",
+      "bytes": 7217,
+      "sha256": "1764696080e2ac58f8cdeb82b955a752a7d20e9febd14dcbd8795fb07e26ea26",
+      "line_count": 228,
+      "keyword_counts": {
+        "track": 3
+      },
+      "symbols": [
+        "sample_graph",
+        "test_tiling_scheme_validation",
+        "test_apply_tiled_no_aggregation",
+        "test_apply_tiled_with_aggregation",
+        "test_apply_tiled_default_attrs",
+        "test_apply_tiled_2d_tiling",
+        "test_apply_tile_scale_invariance"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/functional/_test/test_division.py",
+      "bytes": 26946,
+      "sha256": "4d398982ea9322c3484339624d6d1b9a3365023f466c7ce00610d51648da9fa4",
+      "line_count": 741,
+      "keyword_counts": {
+        "track": 5,
+        "division": 47
+      },
+      "symbols": [
+        "_make_simple_graph",
+        "_make_deep_graph",
+        "_node_attrs",
+        "test_shift_division_zero_frames_returns_copy",
+        "test_shift_division_does_not_modify_original",
+        "test_shift_division_ahead_1_frame",
+        "test_shift_division_ahead_2_frames",
+        "test_shift_division_ahead_at_penultimate_frame",
+        "test_shift_division_behind_1_frame",
+        "test_shift_division_behind_2_frames",
+        "test_shift_division_ahead_preserves_edge_attrs",
+        "test_shift_division_behind_preserves_edge_attrs",
+        "test_shift_division_ahead_raises_if_not_two_children",
+        "test_shift_division_behind_raises_if_no_parent",
+        "test_shift_division_behind_raises_if_not_two_children",
+        "_make_graph_with_dividing_children",
+        "_make_graph_with_dividing_parent",
+        "test_shift_ahead_one_dividing_child_no_conflict",
+        "test_shift_ahead_conflict_raises",
+        "test_shift_ahead_conflict_merge",
+        "test_shift_behind_conflict_raises",
+        "test_shift_behind_conflict_merge",
+        "_make_graph_with_bbox",
+        "_make_graph_with_mask",
+        "test_shift_division_ahead_bbox",
+        "test_shift_division_behind_bbox_is_interpolated",
+        "test_shift_division_ahead_mask",
+        "test_shift_division_behind_mask"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/functional/_test/test_functional_edges.py",
+      "bytes": 2489,
+      "sha256": "ec740e5da4a3b940fe64b3652118b4483ddee1293391e8dc4c79f63e8cd01881",
+      "line_count": 73,
+      "keyword_counts": {
+        "track": 2
+      },
+      "symbols": [
+        "test_node_attr_to_edges_basic",
+        "test_node_attr_to_edges_custom_keys",
+        "test_node_attr_to_edges_custom_prefixes",
+        "test_node_attr_to_edges_inner_join"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/functional/_test/test_iou.py",
+      "bytes": 10689,
+      "sha256": "29aa42dba5f095aa15251c9e1524c1b6889f87d225f37eec7daca54da4dae90c",
+      "line_count": 305,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [
+        "test_intersects_2d_overlapping",
+        "test_intersects_2d_non_overlapping",
+        "test_intersects_2d_touching",
+        "test_intersects_2d_edge_touching",
+        "test_intersects_2d_contained",
+        "test_intersects_3d_overlapping",
+        "test_intersects_3d_non_overlapping",
+        "test_intersects_3d_partial_overlap",
+        "test_intersection_with_bbox_2d_basic",
+        "test_intersection_with_bbox_2d_no_mask_overlap",
+        "test_intersection_with_bbox_2d_partial_mask_overlap",
+        "test_intersection_with_bbox_3d_basic",
+        "test_intersection_with_bbox_3d_no_mask_overlap",
+        "test_fast_iou_with_bbox_2d_no_intersection",
+        "test_fast_iou_with_bbox_2d_perfect_overlap",
+        "test_fast_iou_with_bbox_2d_partial_overlap",
+        "test_fast_iou_with_bbox_3d_basic",
+        "test_fast_iou_with_bbox_zero_intersection",
+        "test_fast_iou_with_bbox_unsupported_dimensions",
+        "test_fast_iou_with_bbox_empty_masks",
+        "test_fast_iou_with_bbox_identical_masks",
+        "test_intersects_edge_cases"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/functional/_test/test_labeling.py",
+      "bytes": 2100,
+      "sha256": "4aa07ca209fb9b80f4cf43132a9ad3985f3daa219ee26367f3f729a3aff74d30",
+      "line_count": 78,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [
+        "test_ancestral_connected_edges"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/functional/_test/test_motile.py",
+      "bytes": 2405,
+      "sha256": "10d699cfb8938a9d7e3b8ffc56e5e15483de8bb10e474b554563670de87d16d6",
+      "line_count": 65,
+      "keyword_counts": {
+        "track": 20
+      },
+      "symbols": [
+        "_build_graph",
+        "test_to_motile_graph",
+        "test_to_motile_graph_subset_of_attrs",
+        "test_to_motile_graph_method"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/functional/_test/test_napari.py",
+      "bytes": 2187,
+      "sha256": "5afb22be010d4e1b94821ae9f86d6fde685bd43b6fe22e1d671f30b397d42f45",
+      "line_count": 73,
+      "keyword_counts": {
+        "track": 14
+      },
+      "symbols": [
+        "test_napari_conversion"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/functional/_test/test_rx.py",
+      "bytes": 6674,
+      "sha256": "015febfadde3118129138e74803a13035aad5f06afffba2d50d68d89374a3094",
+      "line_count": 198,
+      "keyword_counts": {
+        "track": 76,
+        "assign": 9
+      },
+      "symbols": [
+        "test_empty_graph",
+        "test_single_path",
+        "test_symmetric_branching_path",
+        "test_asymmetric_branching_path",
+        "test_invalid_multiple_parents",
+        "test_complex_valid_branching",
+        "test_three_children",
+        "test_multiple_roots"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/graph/__init__.py",
+      "bytes": 487,
+      "sha256": "eb92d963226d8906a128fbc78be007271b464c4877903552692be451630a1c05",
+      "line_count": 11,
+      "keyword_counts": {
+        "track": 5
+      },
+      "symbols": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/graph/_base_graph.py",
+      "bytes": 81656,
+      "sha256": "3e478c92a21bf185a444144b0f237d39c51fb9fe81545f99b11856f358be89be",
+      "line_count": 2437,
+      "keyword_counts": {
+        "segment": 4,
+        "track": 149,
+        "division": 1,
+        "lineage": 1,
+        "assign": 12,
+        "geff": 56,
+        "zarr": 6,
+        "ctc": 26,
+        "infer": 6
+      },
+      "symbols": [
+        "MetadataView",
+        "__init__",
+        "__setitem__",
+        "__delitem__",
+        "pop",
+        "popitem",
+        "clear",
+        "setdefault",
+        "update",
+        "BaseGraph",
+        "__init__",
+        "supports_custom_indices",
+        "_validate_attributes",
+        "_validate_attr_keys",
+        "add_node",
+        "bulk_add_nodes",
+        "_validate_indices_length",
+        "remove_node",
+        "bulk_remove_nodes",
+        "add_edge",
+        "remove_edge",
+        "bulk_remove_edges",
+        "bulk_add_edges",
+        "bulk_add_edges",
+        "bulk_add_edges",
+        "add_overlap",
+        "bulk_add_overlaps",
+        "overlaps",
+        "has_overlaps",
+        "successors",
+        "successors",
+        "successors",
+        "successors",
+        "successors",
+        "predecessors",
+        "predecessors",
+        "predecessors",
+        "predecessors",
+        "predecessors",
+        "_validate_subgraph_args",
+        "node_ids",
+        "edge_ids",
+        "filter",
+        "time_points",
+        "node_attrs",
+        "edge_attrs",
+        "node_attr_keys",
+        "edge_attr_keys",
+        "add_node_attr_key",
+        "add_node_attr_key",
+        "add_node_attr_key",
+        "remove_node_attr_key",
+        "add_edge_attr_key",
+        "add_edge_attr_key",
+        "add_edge_attr_key",
+        "remove_edge_attr_key",
+        "num_edges",
+        "num_nodes",
+        "update_node_attrs",
+        "update_edge_attrs",
+        "from_ctc",
+        "to_ctc",
+        "from_array",
+        "in_degree",
+        "in_degree",
+        "out_degree",
+        "out_degree",
+        "in_degree",
+        "out_degree",
+        "dividing_nodes",
+        "match",
+        "from_other",
+        "compute_overlaps",
+        "_estimate_overlaps",
+        "summary",
+        "clear_cache",
+        "spatial_filter",
+        "bbox_spatial_filter",
+        "assign_tracklet_ids",
+        "assign_tracklet_ids"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/graph/_graph_view.py",
+      "bytes": 46875,
+      "sha256": "92947d1e88939686c6cee591cde4f3fb51ef5b7d91d99829381847706a932f5b",
+      "line_count": 1241,
+      "keyword_counts": {
+        "track": 15
+      },
+      "symbols": [
+        "GraphView",
+        "__init__",
+        "_node_attr_schemas",
+        "_edge_attr_schemas",
+        "supports_custom_indices",
+        "__getstate__",
+        "__setstate__",
+        "sync",
+        "sync",
+        "node_ids",
+        "edge_ids",
+        "add_overlap",
+        "bulk_add_overlaps",
+        "overlaps",
+        "filter",
+        "node_attr_keys",
+        "edge_attr_keys",
+        "add_node_attr_key",
+        "remove_node_attr_key",
+        "add_edge_attr_key",
+        "remove_edge_attr_key",
+        "add_node",
+        "bulk_add_nodes",
+        "_remove_node_local",
+        "bulk_remove_nodes",
+        "remove_node_from_view",
+        "_add_node_local",
+        "add_node_to_view",
+        "add_edge",
+        "bulk_add_edges",
+        "_remove_edge_local",
+        "bulk_remove_edges",
+        "remove_edge_from_view",
+        "_add_edge_local",
+        "add_edge_to_view",
+        "_get_neighbors",
+        "successors",
+        "predecessors",
+        "_node_attrs_from_node_ids",
+        "node_attrs",
+        "edge_attrs",
+        "update_node_attrs",
+        "update_edge_attrs",
+        "in_degree",
+        "out_degree",
+        "dividing_nodes",
+        "_replace_parent_graph_with_root",
+        "contract_nodes",
+        "detach",
+        "detach",
+        "detach",
+        "_rx_subgraph_with_nodemap",
+        "edge_id",
+        "copy",
+        "_metadata",
+        "_update_metadata",
+        "_remove_metadata"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/graph/_mapped_graph_mixin.py",
+      "bytes": 9075,
+      "sha256": "74cc90df86eabea631404f7e5ca3fafaad322e80f44a0fec90a4acf6395f528d",
+      "line_count": 285,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [
+        "MappedGraphMixin",
+        "__init__",
+        "__getstate__",
+        "__setstate__",
+        "_map_to_external",
+        "_map_to_external",
+        "_map_to_external",
+        "_map_to_external",
+        "_map_to_local",
+        "_map_to_local",
+        "_map_to_local",
+        "_map_to_local",
+        "_map_df_to_external",
+        "_vectorized_map_to_external",
+        "_vectorized_map_to_local",
+        "_add_id_mapping",
+        "_add_id_mappings",
+        "_remove_id_mapping",
+        "_get_external_ids",
+        "_get_local_ids",
+        "has_node",
+        "has_edge",
+        "edge_list"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/graph/_rustworkx_graph.py",
+      "bytes": 74519,
+      "sha256": "94d6b2b651c84bf4b814a5f121984b8eb20c115de5912f08161e41695bf90693",
+      "line_count": 2094,
+      "keyword_counts": {
+        "track": 64,
+        "lineage": 1,
+        "assign": 4,
+        "train": 1,
+        "infer": 11,
+        "evaluate": 2
+      },
+      "symbols": [
+        "_pop_time_eq",
+        "_maybe_fill_null",
+        "_list_to_pl_series",
+        "_extract_field_path",
+        "_eval_filter",
+        "_create_filter_func",
+        "_filter",
+        "RXFilter",
+        "__init__",
+        "_current_node_ids",
+        "node_ids",
+        "_edge_attrs",
+        "edge_ids",
+        "num_nodes",
+        "num_edges",
+        "node_attrs",
+        "edge_attrs",
+        "subgraph",
+        "RustWorkXGraph",
+        "__init__",
+        "_node_attr_schemas",
+        "_edge_attr_schemas",
+        "rx_graph",
+        "filter",
+        "_bulk_add_nodes_local",
+        "_bulk_remove_nodes_local",
+        "_add_edge_local",
+        "_bulk_add_edges_local",
+        "_bulk_remove_edges_local",
+        "bulk_add_nodes",
+        "bulk_remove_nodes",
+        "bulk_add_edges",
+        "bulk_remove_edges",
+        "add_overlap",
+        "overlaps",
+        "has_overlaps",
+        "_get_neighbors",
+        "successors",
+        "predecessors",
+        "_filter_nodes_by_attrs",
+        "node_ids",
+        "edge_ids",
+        "time_points",
+        "node_attr_keys",
+        "edge_attr_keys",
+        "add_node_attr_key",
+        "remove_node_attr_key",
+        "add_edge_attr_key",
+        "remove_edge_attr_key",
+        "_node_attrs_from_node_ids",
+        "node_attrs",
+        "edge_attrs",
+        "num_edges",
+        "num_nodes",
+        "update_node_attrs",
+        "update_edge_attrs",
+        "assign_tracklet_ids",
+        "in_degree",
+        "out_degree",
+        "dividing_nodes",
+        "contract_nodes",
+        "_rx_subgraph_with_nodemap",
+        "has_node",
+        "has_edge",
+        "edge_id",
+        "_metadata",
+        "_update_metadata",
+        "_remove_metadata",
+        "edge_list",
+        "IndexedRXGraph",
+        "__init__",
+        "_get_next_available_external_id",
+        "supports_custom_indices",
+        "bulk_add_nodes",
+        "_rx_subgraph_with_nodemap",
+        "node_ids",
+        "_node_attrs_from_node_ids",
+        "node_attrs",
+        "edge_attrs",
+        "in_degree"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/graph/_test/test_graph_backends.py",
+      "bytes": 153167,
+      "sha256": "c95df3ba1379909e1a3238a6ea509442aca23d2aab937d0d79acf3aa87a6aa71",
+      "line_count": 3678,
+      "keyword_counts": {
+        "track": 200,
+        "assign": 56,
+        "flow": 2,
+        "geff": 88,
+        "zarr": 2,
+        "ctc": 13,
+        "csv": 1,
+        "sparse": 1,
+        "train": 2,
+        "infer": 1
+      },
+      "symbols": [
+        "test_already_existing_keys",
+        "testing_empty_graph",
+        "test_node_validation",
+        "test_edge_validation",
+        "_one_edge_graph",
+        "test_missing_attr_key_raises_key_error",
+        "test_missing_attr_key_error_message",
+        "test_filter_missing_attr_key_raises_eagerly",
+        "test_missing_attr_key_among_valid_ones_raises",
+        "test_valid_attr_keys_are_not_rejected",
+        "test_add_node",
+        "test_add_edge",
+        "test_array_attr_read_honors_declared_dtype",
+        "test_add_node_and_edge_with_numpy_scalars",
+        "test_sql_node_ids_from_narrow_numpy_time",
+        "test_add_node_with_numpy_scalars_in_struct",
+        "test_update_attrs_with_numpy_scalars",
+        "test_remove_edge_by_id",
+        "test_remove_edge_by_nodes",
+        "test_node_ids",
+        "test_filter_nodes_by_attribute",
+        "test_filter_nodes_by_membership",
+        "test_filter_nodes_by_struct_field",
+        "test_time_points",
+        "test_node_attrs",
+        "test_edge_attrs",
+        "test_edge_attrs_subgraph_edge_ids",
+        "test_subgraph_with_node_and_edge_attr_filters",
+        "test_subgraph_with_node_ids_and_filters",
+        "test_add_node_attr_key",
+        "test_remove_node_attr_key",
+        "test_add_edge_attr_key",
+        "test_remove_edge_attr_key",
+        "test_update_node_attrs",
+        "test_bulk_add_nodes_emits_batched_node_added_callback",
+        "test_update_node_attrs_emits_batched_node_updated_callback",
+        "test_update_node_attrs_node_updated_carries_changed_keys",
+        "test_update_edge_attrs",
+        "test_num_edges",
+        "test_num_nodes",
+        "test_edge_attrs_include_targets",
+        "test_edge_attrs_include_sources",
+        "test_filter_node_ids_with_include_flags",
+        "test_from_ctc",
+        "test_sucessors_and_degree",
+        "test_predecessors_and_degree",
+        "test_sucessors_with_attr_keys",
+        "test_predecessors_with_attr_keys",
+        "test_sucessors_predecessors_edge_cases",
+        "test_match_method",
+        "test_attrs_with_duplicated_attr_keys",
+        "test_add_overlap",
+        "test_bulk_add_overlaps",
+        "test_overlaps_with_node_filtering",
+        "test_overlaps_empty_graph",
+        "test_overlaps_edge_cases",
+        "test_from_numpy_array_basic",
+        "test_from_numpy_array_3d",
+        "test_from_numpy_array_validation_errors",
+        "test_from_other_with_edges",
+        "test_from_other_preserves_schema_roundtrip",
+        "test_from_other_with_array_no_shape",
+        "test_form_other_regionprops_nodes",
+        "build_node_map",
+        "test_compute_overlaps_basic",
+        "test_compute_overlaps_with_threshold",
+        "test_compute_overlaps_multiple_timepoints",
+        "test_sql_graph_mask_update_survives_reload",
+        "test_sql_graph_struct_dtype_survives_reload",
+        "test_sql_graph_max_id_restored_per_timepoint",
+        "test_sql_graph_schema_defaults_survive_reload",
+        "test_sql_schema_metadata_not_copied_to_in_memory_graphs",
+        "test_compute_overlaps_invalid_threshold",
+        "test_compute_overlaps_empty_graph",
+        "test_summary",
+        "test_spatial_filter_basic",
+        "_check_id_update_df",
+        "test_assign_tracklet_ids",
+        "test_assign_tracklet_ids_allow_frame_skip",
+        "_compare_tracklet_id_assignments"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/graph/_test/test_graph_view_signals.py",
+      "bytes": 3561,
+      "sha256": "b9d7fbe3de414526f4fdfab0573bd73e2b6501508e72056abe47aae3eefe2eb6",
+      "line_count": 87,
+      "keyword_counts": {
+        "track": 2
+      },
+      "symbols": [
+        "test_view_node_signals_fire_with_consistent_state",
+        "make_slot",
+        "slot",
+        "test_view_update_node_attrs_signal_fires_with_consistent_value",
+        "attr_value",
+        "make_slot",
+        "slot"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/graph/_test/test_index_graph.py",
+      "bytes": 6663,
+      "sha256": "507a08b69864fa915b2dc9641f93b337fda4bee432ae80eb9bac5391567d07c4",
+      "line_count": 201,
+      "keyword_counts": {
+        "track": 2
+      },
+      "symbols": [
+        "test_index_rx_graph_with_mapping",
+        "test_duplicate_index_map",
+        "test_add_node_with_none_index_avoids_collision",
+        "test_add_node_none_index_empty_graph",
+        "test_counter_updates_with_explicit_high_indices",
+        "test_indexed_rx_graph_initialization_with_existing_mapping"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/graph/_test/test_subgraph.py",
+      "bytes": 87267,
+      "sha256": "e5cfc5fbf2b54465e464d23e8cd9e7645b9853af2a409ec38b32927b77f242e0",
+      "line_count": 2065,
+      "keyword_counts": {
+        "track": 9,
+        "evaluate": 4
+      },
+      "symbols": [
+        "parametrize_subgraph_tests",
+        "create_test_graph",
+        "test_node_ids_with_data",
+        "test_filter_nodes_and_edges_by_attr_with_data",
+        "test_time_points_with_data",
+        "test_node_attrs_with_data",
+        "test_edge_attrs_with_data",
+        "test_add_node_attr_key_with_data",
+        "test_add_edge_attr_key_with_data",
+        "test_update_node_attrs_with_data",
+        "test_update_edge_attrs_with_data",
+        "test_num_edges_with_data",
+        "test_num_nodes_with_data",
+        "test_subgraph_creation",
+        "test_subgraph_edge_preservation",
+        "test_subgraph_attr_consistency",
+        "test_subgraph_with_unsorted_node_ids",
+        "test_subgraph_add_node",
+        "test_subgraph_bulk_add_nodes_emits_batched_node_added_callbacks",
+        "test_subgraph_update_node_attrs_emits_batched_node_updated_callback",
+        "test_subgraph_add_edge",
+        "test_subgraph_add_node_then_edge",
+        "test_nested_subgraph_creation",
+        "test_nested_subgraph_edge_preservation",
+        "test_nested_subgraph_modifications",
+        "test_subgraph_node_attr_filter",
+        "test_subgraph_edge_attr_filter",
+        "test_subgraph_attr_filter_edge_preservation",
+        "test_subgraph_attr_filter_empty_results",
+        "test_homemorphism",
+        "test_filter_nodes_with_or_attr_filter",
+        "test_filter_nodes_with_not_attr_filter",
+        "test_filter_nodes_with_xor_attr_filter",
+        "test_filter_nodes_with_nested_compound",
+        "test_filter_edges_with_or_attr_filter",
+        "test_filter_subgraph_with_or_attr_filter",
+        "test_filter_compound_mixed_node_and_edge_raises",
+        "test_subgraph_overlaps_basic",
+        "test_subgraph_overlaps_propagation",
+        "test_sucessors_with_data",
+        "test_predecessors_with_data",
+        "test_bulk_add_nodes_returned_ids",
+        "test_bulk_add_edges_returned_ids",
+        "test_custom_indices_subgraph",
+        "test_remove_node_basic",
+        "test_remove_node_with_overlaps",
+        "test_remove_node_updates_time_points",
+        "test_graph_view_remove_edge",
+        "test_remove_node_from_view_basic",
+        "test_remove_node_from_view_traversals_still_work",
+        "test_remove_node_from_view_signals",
+        "_record",
+        "test_remove_node_from_view_validation",
+        "test_remove_edge_from_view_basic",
+        "test_remove_edge_from_view_traversals_still_work",
+        "test_remove_edge_from_view_validation",
+        "test_add_node_to_view_basic",
+        "test_add_node_to_view_roundtrip_identity",
+        "test_add_node_to_view_signals",
+        "_record",
+        "test_add_node_to_view_validation",
+        "test_view_only_helpers_emit_batched_signal",
+        "on_removed",
+        "on_added",
+        "test_add_nodes_via_view_shares_storage_with_root",
+        "test_add_edge_to_view_basic",
+        "test_add_edge_to_view_keeps_edge_id",
+        "test_add_edge_to_view_validation",
+        "test_has_node",
+        "test_has_edge",
+        "_ignore_index_map_warnings",
+        "flt",
+        "test_edge_id",
+        "test_graph_copy",
+        "_evaluate_bidict_maps",
+        "test_picking_graph_mappings",
+        "test_dividing_nodes",
+        "test_filter_num_nodes_and_edges",
+        "test_edge_list",
+        "test_subgraph_bulk_remove_nodes"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/graph/filters/__init__.py",
+      "bytes": 136,
+      "sha256": "60a7f0098facbe8a86b585f88040c1765f39834e8c93e32848daa376ed8252f9",
+      "line_count": 4,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/graph/filters/_base_filter.py",
+      "bytes": 1779,
+      "sha256": "eee411c125a163440047fd338811473e6eba90139a677f6a2406e1920827fb5c",
+      "line_count": 68,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [
+        "BaseFilter",
+        "__init__",
+        "clear_cache",
+        "is_empty",
+        "node_attrs",
+        "edge_attrs",
+        "node_ids",
+        "edge_ids",
+        "subgraph",
+        "num_edges",
+        "num_nodes"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/graph/filters/_indexed_filter.py",
+      "bytes": 2441,
+      "sha256": "23d813b53c0eb0ac6b84302cae4400c390893fddb93bbece77d8de9bc06780e7",
+      "line_count": 80,
+      "keyword_counts": {
+        "track": 6
+      },
+      "symbols": [
+        "IndexRXFilter",
+        "__init__",
+        "edge_attrs",
+        "node_ids",
+        "subgraph"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/graph/filters/_spatial_filter.py",
+      "bytes": 19506,
+      "sha256": "a1899ee8bcea1f9ebf3d53dca6c01d04ab0073d42f53d5aa56890d2a62db2b40",
+      "line_count": 523,
+      "keyword_counts": {
+        "track": 4
+      },
+      "symbols": [
+        "_rstar_coordinates",
+        "_rstar_window",
+        "DataFrameSpatialFilter",
+        "__init__",
+        "__getitem__",
+        "SpatialFilter",
+        "__init__",
+        "__getitem__",
+        "_attrs_to_point",
+        "_add_node",
+        "_remove_node",
+        "_update_node",
+        "BBoxSpatialFilter",
+        "__init__",
+        "__getitem__",
+        "_attrs_to_bb_window",
+        "_add_node",
+        "_remove_node",
+        "_update_node",
+        "_bboxes_to_array"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/graph/filters/_test/test_spatial_filter.py",
+      "bytes": 23042,
+      "sha256": "6c6f4903d586c8a5f69aa78675db7b8a05e3dac2cf66b5dc09172220db83dd3d",
+      "line_count": 573,
+      "keyword_counts": {
+        "track": 13,
+        "assign": 1
+      },
+      "symbols": [
+        "sample_graph",
+        "sample_bbox_graph",
+        "test_spatial_filter_initialization",
+        "test_spatial_filter_caches_filters",
+        "DummySpatialFilter",
+        "__init__",
+        "test_bbox_spatial_filter_caches_filters",
+        "DummyBBoxSpatialFilter",
+        "__init__",
+        "test_spatial_filter_querying",
+        "test_spatial_filter_dimensions",
+        "test_spatial_filter_supports_one_dimension",
+        "test_spatial_filter_error_handling",
+        "test_spatial_filter_with_edges",
+        "test_bbox_spatial_filter_overlaps",
+        "test_bbox_spatial_filter_with_edges",
+        "test_bbox_spatial_filter_initialization",
+        "test_bbox_spatial_filter_querying",
+        "test_bbox_spatial_filter_dimensions",
+        "test_bbox_spatial_filter_supports_one_dimension",
+        "test_bbox_spatial_filter_error_handling",
+        "test_add_and_remove_node",
+        "test_spatial_filter_add_update_and_remove_node",
+        "test_spatial_filter_removes_exact_coincident_node",
+        "test_bbox_spatial_filter_removes_exact_coincident_node",
+        "test_bbox_spatial_filter_updates_node_position",
+        "test_bbox_spatial_filter_update_non_bbox_attr_no_error",
+        "_spy_calls",
+        "wrapper",
+        "test_bbox_spatial_filter_skips_reindex_on_non_spatial_update",
+        "test_bbox_spatial_filter_reindexes_on_bbox_update",
+        "test_point_spatial_filter_skips_reindex_on_non_spatial_update",
+        "test_bbox_spatial_filter_handles_list_dtype",
+        "_list_dtype_node_attrs"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/io/__init__.py",
+      "bytes": 540,
+      "sha256": "a25d9e570056838f281e8d04665f118d262eefbcd58e2be45a9f9d070917b06f",
+      "line_count": 22,
+      "keyword_counts": {
+        "track": 5,
+        "geff": 5,
+        "ctc": 5
+      },
+      "symbols": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/io/_ctc.py",
+      "bytes": 8656,
+      "sha256": "962680115642db7b86a3061e3f6223f09e5d249f5ec51749801f34b2f4148a08",
+      "line_count": 303,
+      "keyword_counts": {
+        "segment": 1,
+        "track": 92,
+        "ctc": 18,
+        "csv": 3,
+        "infer": 1
+      },
+      "symbols": [
+        "compressed_tracks_table",
+        "_load_tracks_file",
+        "from_ctc",
+        "to_ctc",
+        "_write_tiff"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/io/_numpy_array.py",
+      "bytes": 5129,
+      "sha256": "de5d05b7807d17366421690296416512b7c1ecefdc4d47e40110f4a393bec7d1",
+      "line_count": 158,
+      "keyword_counts": {
+        "track": 63,
+        "division": 3
+      },
+      "symbols": [
+        "_add_edges_from_tracklet_ids",
+        "from_array"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/io/_test/test_ctc_io.py",
+      "bytes": 2891,
+      "sha256": "35d8fdadf95f563d6fe8e82e46b0a6b0f4680fef65de621bbf334a85db6a7f6c",
+      "line_count": 87,
+      "keyword_counts": {
+        "track": 9,
+        "ctc": 4
+      },
+      "symbols": [
+        "test_export_from_ctc_roundtrip"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/io/_test/test_geff_dtypes.py",
+      "bytes": 6629,
+      "sha256": "f7371b4584f85d330fe6be5dedda4fd6a32bd229d751254cffe15a9f05745f6f",
+      "line_count": 156,
+      "keyword_counts": {
+        "track": 5,
+        "geff": 93,
+        "zarr": 6
+      },
+      "symbols": [
+        "_make_masked_geff",
+        "test_convert_geff_mask_to_bool_roundtrip",
+        "test_convert_is_noop_when_already_bool",
+        "test_convert_is_idempotent",
+        "test_missing_mask_key_raises",
+        "test_output_path_leaves_original_untouched",
+        "test_explicit_named_mask_key",
+        "test_output_path_to_memory_store",
+        "test_convert_fixed_length_prop_dtype",
+        "test_set_prop_metadata_dtype_without_geff_attrs"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/io/_test/test_geff_metadata.py",
+      "bytes": 6099,
+      "sha256": "33aef714ac9823c798fa9e17c9eb85fed9ae24f6b4e0bed2df102589ec60564d",
+      "line_count": 182,
+      "keyword_counts": {
+        "track": 11,
+        "geff": 55,
+        "zarr": 1
+      },
+      "symbols": [
+        "_make_graph",
+        "_minimal_geff_metadata",
+        "test_read_graph_metadata_from_path",
+        "test_read_graph_metadata_custom_geff_metadata",
+        "test_read_graph_metadata_from_geff_metadata_instance",
+        "test_read_graph_metadata_without_tracksdata_extras",
+        "test_read_graph_metadata_excludes_private_keys",
+        "test_append_graph_metadata_from_path",
+        "test_append_graph_metadata_merges_with_existing_keys",
+        "test_append_graph_metadata_overwrites_existing_key",
+        "test_append_graph_metadata_on_store_without_tracksdata_extras",
+        "test_append_graph_metadata_rejects_private_keys",
+        "test_remove_graph_metadata_from_path",
+        "test_remove_graph_metadata_is_noop_if_missing",
+        "test_remove_graph_metadata_rejects_private_keys"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/metrics/__init__.py",
+      "bytes": 645,
+      "sha256": "c7562255f6b4dfbd4b6f3240a6ee7a820e933e35705ccabb5ce2e20b86ec04b5",
+      "line_count": 13,
+      "keyword_counts": {
+        "track": 6,
+        "ctc": 5,
+        "evaluate": 2
+      },
+      "symbols": [],
+      "category": "evaluation"
+    },
+    {
+      "path": "src/tracksdata/metrics/_test/test_ctc_metrics.py",
+      "bytes": 4741,
+      "sha256": "1938e843b4056ef74be6f9d23bf4cbd2568dd7cf3f79843a18f4069e1fda83de",
+      "line_count": 128,
+      "keyword_counts": {
+        "segment": 1,
+        "track": 22,
+        "ctc": 40,
+        "train": 1,
+        "evaluate": 6
+      },
+      "symbols": [
+        "test_replicating_ctc_metrics_test",
+        "test_ctc_metrics",
+        "test_graph_match"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "src/tracksdata/metrics/_test/test_matching.py",
+      "bytes": 15647,
+      "sha256": "385b0e6b9b9dcef1e301461cb6f8f6a70575dde3945bbd30c75cf3bab9a67498",
+      "line_count": 350,
+      "keyword_counts": {
+        "detect": 3,
+        "track": 4
+      },
+      "symbols": [
+        "create_2d_mask_from_coords",
+        "TestMaskMatching",
+        "test_initialization_and_validation",
+        "test_compute_weights_various_overlaps",
+        "TestDistanceMatching",
+        "test_initialization",
+        "test_compute_weights_2d_and_3d",
+        "test_anisotropic_scaling",
+        "test_auto_detection_of_coordinates",
+        "test_scale_validation",
+        "TestMatchingIntegration",
+        "test_graph_match_integration"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "src/tracksdata/metrics/_test/test_metrics_visualize.py",
+      "bytes": 3009,
+      "sha256": "59a1fe17d84a6d82316420a19a5aff57bad1ddf1dec204ef79e55a06aff285a3",
+      "line_count": 99,
+      "keyword_counts": {
+        "track": 22,
+        "predict": 1
+      },
+      "symbols": [
+        "test_visualize_matches"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "src/tracksdata/metrics/_visualize.py",
+      "bytes": 8191,
+      "sha256": "269ab9c7fe3880951cdb594313f7861db91b7af3e4ad6a5695bc7b0208934a39",
+      "line_count": 260,
+      "keyword_counts": {
+        "track": 4,
+        "predict": 2
+      },
+      "symbols": [
+        "_vector_kwargs_defaults",
+        "_points_kwargs_defaults",
+        "_add_matching_text_and_color",
+        "visualize_matches"
+      ],
+      "category": "evaluation"
+    },
+    {
+      "path": "src/tracksdata/nodes/__init__.py",
+      "bytes": 422,
+      "sha256": "82f224ad81727be72d515a56111444e916a48d545684c05021af54939c18a2d7",
+      "line_count": 9,
+      "keyword_counts": {
+        "track": 4
+      },
+      "symbols": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/nodes/_base_node_attrs.py",
+      "bytes": 2459,
+      "sha256": "86797a035ea5dbdecaeed250f72a7a61ee9ff26cb8743dd7b8b671d23c92848a",
+      "line_count": 86,
+      "keyword_counts": {
+        "track": 2
+      },
+      "symbols": [
+        "BaseNodeAttrsOperator",
+        "__init__",
+        "_init_node_attrs",
+        "add_node_attrs",
+        "_node_attrs_per_time"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/nodes/_base_nodes.py",
+      "bytes": 846,
+      "sha256": "a44dd716e73797d483d5b1432f97782ac27c3e603691a5182f2b37897a39ace1",
+      "line_count": 33,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [
+        "BaseNodesOperator",
+        "add_nodes"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/nodes/_generic_nodes.py",
+      "bytes": 6101,
+      "sha256": "cb72cc9e95bf630f63e0989c1dc6e65fab5eacec160e80cb36ec48cd07a71f8e",
+      "line_count": 194,
+      "keyword_counts": {
+        "track": 5
+      },
+      "symbols": [
+        "GenericFuncNodeAttrs",
+        "intensity_median_times_t",
+        "intensity_median_times_t",
+        "__init__",
+        "_init_node_attrs",
+        "add_node_attrs",
+        "_node_attrs_per_time"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/nodes/_mask.py",
+      "bytes": 19471,
+      "sha256": "199cfc81764cc6e1590be8ed5ec72be20a7c1e427ef5e4e06742944a20a722b4",
+      "line_count": 599,
+      "keyword_counts": {
+        "detect": 1,
+        "segment": 1,
+        "track": 4,
+        "assign": 1
+      },
+      "symbols": [
+        "_nd_sphere",
+        "Mask",
+        "__init__",
+        "__getstate__",
+        "__setstate__",
+        "mask",
+        "bbox",
+        "bbox",
+        "crop",
+        "mask_indices",
+        "paint_buffer",
+        "iou",
+        "intersection",
+        "__or__",
+        "_overlap_slicing",
+        "__sub__",
+        "__isub__",
+        "_crop_overhang",
+        "dilate",
+        "move",
+        "regionprops",
+        "size",
+        "__repr__",
+        "from_coordinates",
+        "__eq__",
+        "MaskDiskAttrs",
+        "__init__",
+        "_init_node_attrs"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/nodes/_random.py",
+      "bytes": 5094,
+      "sha256": "ca70604a8e52abd8147232f699a0a2a00887851939ca89e4c38c9e6e8b3d90a1",
+      "line_count": 175,
+      "keyword_counts": {
+        "segment": 1,
+        "track": 8
+      },
+      "symbols": [
+        "RandomNodes",
+        "__init__",
+        "add_nodes",
+        "_nodes_per_time"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/nodes/_regionprops.py",
+      "bytes": 12522,
+      "sha256": "5b14eda7aecc3293d5e4689177112c4b57d6f624e0a38a3c4772d826bb0dd18f",
+      "line_count": 346,
+      "keyword_counts": {
+        "track": 7,
+        "assign": 1
+      },
+      "symbols": [
+        "RegionPropsNodes",
+        "custom_property",
+        "__init__",
+        "_axis_names",
+        "_init_node_attrs",
+        "attr_keys",
+        "add_nodes",
+        "_nodes_per_time"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/nodes/_test/test_generic_nodes.py",
+      "bytes": 16654,
+      "sha256": "4f7f64e3ccc80c290a80fdbafc4c75b5b6dd58eea2d399eb1d596196587ae60c",
+      "line_count": 499,
+      "keyword_counts": {
+        "track": 4
+      },
+      "symbols": [
+        "test_crop_func_attrs_init_default",
+        "dummy_func",
+        "test_crop_func_attrs_init_with_attr_keys",
+        "dummy_func",
+        "test_crop_func_attrs_init_with_sequence_output_key",
+        "dummy_func",
+        "test_crop_func_attrs_simple_function_no_frames",
+        "double_value",
+        "test_crop_func_attrs_function_with_frames",
+        "intensity_sum",
+        "test_crop_func_attrs_function_with_frames_and_attrs",
+        "intensity_sum_times_multiplier",
+        "test_crop_func_attrs_function_returns_different_types",
+        "return_string",
+        "return_list",
+        "return_dict",
+        "return_array",
+        "test_crop_func_attrs_error_handling_missing_attr_key",
+        "double_mask_sum",
+        "test_crop_func_attrs_function_with_frames_multiprocessing",
+        "intensity_sum",
+        "test_crop_func_attrs_empty_graph",
+        "dummy_func",
+        "test_crop_func_attrs_multiprocessing_isolation",
+        "test_crop_func_attrs_batch_processing_without_frames",
+        "batch_double_value",
+        "test_crop_func_attrs_batch_processing_with_frames",
+        "batch_intensity_sum"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/nodes/_test/test_mask.py",
+      "bytes": 29567,
+      "sha256": "335b258c1e63c8422890a2e29ea972df5dfa19163093df705e6e68e347c0dfb4",
+      "line_count": 832,
+      "keyword_counts": {
+        "track": 1,
+        "sparse": 2
+      },
+      "symbols": [
+        "test_mask_init",
+        "test_mask_regionprops_spacing_aware",
+        "test_mask_regionprops_bbox_aware",
+        "test_mask_regionprops_bbox_aware_3d",
+        "test_mask_regionprops_empty",
+        "test_mask_regionprops_intensity_image",
+        "test_mask_getstate_setstate",
+        "test_mask_indices_no_offset",
+        "test_mask_indices_with_scalar_offset",
+        "test_mask_indices_with_array_offset",
+        "test_mask_indices_3d",
+        "test_paint_buffer",
+        "test_paint_buffer_with_offset",
+        "test_paint_buffer_bbox_completely_outside_positive",
+        "test_paint_buffer_bbox_completely_outside_negative",
+        "test_paint_buffer_bbox_touching_positive_edge",
+        "test_paint_buffer_bbox_on_positive_edge_overhang",
+        "test_paint_buffer_bbox_on_negative_edge_overhang",
+        "test_paint_buffer_bbox_on_negative_edge_with_sparse_mask",
+        "test_mask_iou",
+        "test_mask_iou_no_overlap",
+        "test_mask_iou_identical",
+        "test_mask_union_dimension_mismatch",
+        "test_mask_union_overlapping",
+        "test_mask_union_disjoint",
+        "test_mask_empty",
+        "test_mask_all_true",
+        "test_mask_repr",
+        "test_mask_crop",
+        "test_mask_crop_with_shape",
+        "test_mask_from_coordinates_2d_basic",
+        "test_mask_from_coordinates_3d_basic",
+        "test_mask_from_coordinates_cropping",
+        "test_mask_simple_difference",
+        "test_mask_difference_no_overlap",
+        "test_mask_difference_complex_overlap",
+        "test_dilation_simple",
+        "test_dilation_on_border",
+        "test_mask_move",
+        "_subtract_via_canvas",
+        "test_mask_sub_returns_new_mask_without_mutating_operands",
+        "test_mask_sub_no_overlap_copies_input",
+        "test_mask_sub_bbox_touching_but_not_overlapping",
+        "test_mask_sub_other_fully_contains_self",
+        "test_mask_sub_self_fully_contains_other",
+        "test_mask_sub_partial_overlap_3d",
+        "test_mask_sub_dimension_mismatch",
+        "test_mask_isub_mutates_in_place",
+        "test_mask_isub_no_overlap_is_noop",
+        "test_mask_isub_does_not_mutate_other",
+        "test_mask_sub_and_isub_agree",
+        "test_mask_sub_matches_canvas_subtraction_2d",
+        "test_mask_sub_matches_canvas_subtraction_3d"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/nodes/_test/test_random.py",
+      "bytes": 8339,
+      "sha256": "2961d88e46c7088883ed32da47d8c5332bb826408ba8bf4f64b64afa79d79e99",
+      "line_count": 265,
+      "keyword_counts": {
+        "track": 4
+      },
+      "symbols": [
+        "test_random_nodes_init_2d",
+        "test_random_nodes_init_3d",
+        "test_random_nodes_init_invalid_dimension",
+        "test_random_nodes_add_nodes_single_time_point_2d",
+        "test_random_nodes_add_nodes_single_time_point_3d",
+        "test_random_nodes_add_nodes_all_time_points",
+        "test_random_nodes_variable_node_count",
+        "test_random_nodes_reproducible_with_same_seed",
+        "test_random_nodes_different_with_different_seed",
+        "test_random_nodes_attr_keys_registration",
+        "test_random_nodes_empty_time_points",
+        "test_random_nodes_multiprocessing_isolation"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/nodes/_test/test_regionprops.py",
+      "bytes": 12376,
+      "sha256": "02c18716b38338a35584bcfe1e1f4c1bc2ca6b3fdd4a58a61df9564a51cfdf72",
+      "line_count": 375,
+      "keyword_counts": {
+        "track": 4
+      },
+      "symbols": [
+        "test_regionprops_init_default",
+        "test_regionprops_init_custom",
+        "test_regionprops_attr_keys",
+        "custom_prop",
+        "test_regionprops_add_nodes_2d",
+        "test_regionprops_add_nodes_sets_scale_from_spacing",
+        "test_regionprops_add_nodes_matching_existing_scale_is_a_noop",
+        "test_regionprops_add_nodes_raises_on_scale_mismatch",
+        "test_regionprops_add_nodes_3d",
+        "test_regionprops_add_nodes_with_intensity",
+        "test_regionprops_add_nodes_timelapse",
+        "test_regionprops_add_nodes_timelapse_with_intensity",
+        "test_regionprops_custom_properties",
+        "double_area",
+        "test_regionprops_invalid_dimensions",
+        "test_regionprops_mask_creation",
+        "test_regionprops_spacing",
+        "test_regionprops_empty_labels",
+        "test_regionprops_multiprocessing_isolation"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/options.py",
+      "bytes": 4824,
+      "sha256": "6c7388c1dff44cd78d238a37b0c44e167fc300a04129507bfce5ac725b5be22a",
+      "line_count": 166,
+      "keyword_counts": {
+        "track": 5
+      },
+      "symbols": [
+        "Options",
+        "__enter__",
+        "__exit__",
+        "update",
+        "copy",
+        "get_options",
+        "set_options",
+        "options_context"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/solvers/__init__.py",
+      "bytes": 261,
+      "sha256": "ece50aa70af4cbb97261291714bb687188293ade0481b7d2b18b0635385751f3",
+      "line_count": 7,
+      "keyword_counts": {
+        "track": 3,
+        "ilp": 3
+      },
+      "symbols": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/solvers/_base_solver.py",
+      "bytes": 1288,
+      "sha256": "7edf5fad72c57ce62ba090fe15bc783c983913bac1b8aa525c0dd2d62df68015",
+      "line_count": 49,
+      "keyword_counts": {
+        "track": 5
+      },
+      "symbols": [
+        "BaseSolver",
+        "__init__",
+        "solve"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/solvers/_test/test_ilp_solver.py",
+      "bytes": 31500,
+      "sha256": "e1d25c175ac3fd8037fc2d2e68eca805424185c761fc03a36d552f7a56a7a1bb",
+      "line_count": 836,
+      "keyword_counts": {
+        "track": 24,
+        "division": 34,
+        "flow": 1,
+        "train": 9,
+        "evaluate": 6,
+        "ilp": 67
+      },
+      "symbols": [
+        "test_ilp_solver_init_default",
+        "test_ilp_solver_init_custom",
+        "test_ilp_solver_init_with_attr_expr",
+        "test_ilp_solver_reset_model",
+        "test_ilp_solver_solve_empty_graph",
+        "test_ilp_solver_solve_no_edges",
+        "test_ilp_solver_solve_simple_case",
+        "test_ilp_solver_solve_with_appearance_weight",
+        "test_ilp_solver_solve_with_disappearance_weight",
+        "test_ilp_solver_solve_with_division_weight",
+        "test_ilp_solver_solve_custom_edge_weight_expr",
+        "test_ilp_solver_solve_custom_node_weight_expr",
+        "test_ilp_solver_solve_custom_output_key",
+        "test_ilp_solver_solve_with_all_weights",
+        "test_ilp_solver_evaluate_expr_scalar",
+        "test_ilp_solver_evaluate_expr_column",
+        "test_ilp_solver_division_constraint",
+        "test_ilp_solver_solve_with_inf_expr",
+        "test_ilp_solver_solve_with_pos_inf_rejection",
+        "test_ilp_solver_solve_with_neg_inf_node_weight",
+        "test_ilp_solver_solve_with_inf_edge_weight",
+        "test_ilp_solver_solve_with_overlaps",
+        "test_ilp_solver_solve_with_merge_weight",
+        "test_ilp_solver_solve_with_positive_merge_weight",
+        "test_ilp_solver_solve_with_merge_expression",
+        "test_ilp_solver_solve_merge_and_division_combined",
+        "test_ilp_solver_init_with_merge_weight"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/solvers/_test/test_nearest_neighbors_solver.py",
+      "bytes": 15968,
+      "sha256": "5456370d4475e4cd706e9d770ad19c1412eb64f861f181667c2c383729d46986",
+      "line_count": 409,
+      "keyword_counts": {
+        "track": 4,
+        "train": 11
+      },
+      "symbols": [
+        "test_nearest_neighbors_solver_init_default",
+        "test_nearest_neighbors_solver_init_custom",
+        "test_nearest_neighbors_solver_init_with_attr_expr",
+        "test_nearest_neighbors_solver_solve_empty_graph",
+        "test_nearest_neighbors_solver_solve_no_edges",
+        "test_nearest_neighbors_solver_solve_simple_case",
+        "test_nearest_neighbors_solver_solve_max_children_constraint",
+        "test_nearest_neighbors_solver_solve_one_parent_constraint",
+        "test_nearest_neighbors_solver_solve_custom_weight_expr",
+        "test_nearest_neighbors_solver_solve_complex_expression",
+        "test_nearest_neighbors_solver_solve_custom_output_key",
+        "test_nearest_neighbors_solver_solve_with_overlaps",
+        "test_nearest_neighbors_solver_solve_large_graph",
+        "test_nearest_neighbors_solver_reset_node_solution"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/utils/__init__.py",
+      "bytes": 86,
+      "sha256": "fdc3788bb47aeec54ef03ceeefe8528959bdf8a29f230466bc9b21e5ab7bb67c",
+      "line_count": 2,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/utils/_cache.py",
+      "bytes": 1902,
+      "sha256": "2aa22c8b3b132c4c68c7059ba29f8bd804928b487b19259e74614ee227bf6d2e",
+      "line_count": 67,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [
+        "_make_hashable",
+        "cache_method",
+        "_wrapper"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/utils/_dataframe.py",
+      "bytes": 2431,
+      "sha256": "f368e2007064a2c3d1e3cbf29f3ebecde6c1ca01cc51596c4cd3d0150a94419a",
+      "line_count": 76,
+      "keyword_counts": {
+        "infer": 3
+      },
+      "symbols": [
+        "unpack_array_attrs",
+        "unpickle_bytes_columns"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/utils/_dtypes.py",
+      "bytes": 19960,
+      "sha256": "2f780fa69d61d0c1f257226c9b70539984914533dca759f6c301e46e61dfaf52",
+      "line_count": 676,
+      "keyword_counts": {
+        "infer": 12
+      },
+      "symbols": [
+        "polars_dtype_to_numpy_dtype",
+        "column_to_bytes",
+        "column_from_bytes",
+        "column_to_numpy",
+        "AttrSchema",
+        "__post_init__",
+        "copy",
+        "__eq__",
+        "_values_equal",
+        "process_attr_key_args",
+        "infer_default_value_from_dtype",
+        "flatten_struct_dtype",
+        "flatten_struct_value",
+        "polars_dtype_to_sqlalchemy_type",
+        "sqlalchemy_type_to_polars_dtype",
+        "_normalize_default_for_dtype",
+        "_normalize_deserialized_default",
+        "serialize_attr_schema",
+        "deserialize_attr_schema",
+        "validate_default_value_dtype_compatibility"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/utils/_logging.py",
+      "bytes": 138,
+      "sha256": "29fff25898053e9218d1268dc568ed9a8c71d1a417ac65fa90a0b4ac582278fa",
+      "line_count": 7,
+      "keyword_counts": {},
+      "symbols": [],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/utils/_multiprocessing.py",
+      "bytes": 2123,
+      "sha256": "189d2d53b4cc191924cc36c71eb4cfa6d21ab05f1bd4fa82cb3b3ab7d7311e22",
+      "line_count": 78,
+      "keyword_counts": {
+        "track": 1,
+        "flow": 1
+      },
+      "symbols": [
+        "multiprocessing_apply"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/utils/_signal.py",
+      "bytes": 2969,
+      "sha256": "6ff6737edad79b95d12545db7d9c88021803a51603926da3b3a1ca7ea214ac18",
+      "line_count": 92,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [
+        "is_signal_on",
+        "emit_node_added_events",
+        "emit_node_updated_events",
+        "emit_node_removed_events"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/utils/_test/test_attr_key_dtype.py",
+      "bytes": 8976,
+      "sha256": "1c11967205c40927dfc057cd22be7ac0d1a8b38cb06e801bf876a90b0fdfa55b",
+      "line_count": 249,
+      "keyword_counts": {
+        "track": 2,
+        "infer": 1
+      },
+      "symbols": [
+        "TestRustWorkXGraphDtype",
+        "test_add_node_attr_key_with_dtype_only",
+        "test_add_node_attr_key_with_dtype_and_default",
+        "test_add_node_attr_key_with_array_dtype",
+        "test_add_node_attr_key_with_nd_array_dtype",
+        "test_add_node_attr_key_with_schema_object",
+        "test_add_node_attr_key_missing_dtype_raises",
+        "test_add_node_attr_key_duplicate_raises",
+        "test_add_node_attr_key_incompatible_default_raises",
+        "test_defaults_applied_to_existing_nodes",
+        "test_add_edge_attr_key_with_dtype_only",
+        "test_add_edge_attr_key_with_schema",
+        "test_defaults_applied_to_existing_edges",
+        "test_node_attr_keys_returns_keys",
+        "test_edge_attr_keys_returns_keys",
+        "test_signed_vs_unsigned_int_defaults",
+        "test_schema_defensive_copy",
+        "test_schema_copy_method"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/utils/_test/test_dataframe.py",
+      "bytes": 1789,
+      "sha256": "13be961588b11e8ed33b3eb14927a6e78c3d4fffc5b0a5564e5de535ca370e45",
+      "line_count": 52,
+      "keyword_counts": {
+        "track": 1,
+        "geff": 1,
+        "zarr": 1,
+        "infer": 1
+      },
+      "symbols": [
+        "test_unpack_array_attrs",
+        "test_unpickle_bytes_columns_variable_size_arrays"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/utils/_test/test_dtype_serialization.py",
+      "bytes": 2423,
+      "sha256": "4902b05d2f3b543d1b9a68a7574fb051a152365dfc9bd7df82b912cc41b8b1bb",
+      "line_count": 84,
+      "keyword_counts": {
+        "track": 1
+      },
+      "symbols": [
+        "test_serialize_deserialize_attr_schema_dtype_roundtrip",
+        "test_deserialize_attr_schema_invalid_base64_raises",
+        "test_deserialize_attr_schema_non_ipc_payload_raises",
+        "test_serialize_deserialize_attr_schema_roundtrip",
+        "test_serialize_attr_schema_stores_default_in_dummy_row"
+      ],
+      "category": "data_loader"
+    },
+    {
+      "path": "src/tracksdata/utils/_test/test_multiprocessing.py",
+      "bytes": 770,
+      "sha256": "a432652d86409eb83ce9cb77c41b0ac8e3eeb2089554322e1f5d35910d80c9cf",
+      "line_count": 23,
+      "keyword_counts": {
+        "track": 2
+      },
+      "symbols": [
+        "_square",
+        "test_multiprocessing_apply_empty_sequence",
+        "test_multiprocessing_apply_results"
+      ],
+      "category": "data_loader"
+    }
+  ],
+  "target_paths_missing": [],
+  "read_errors": [],
+  "checkout_exit": 0,
+  "checkout_stderr_excerpt": "",
+  "checkout_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "license": "BSD-3-Clause",
+  "categories_observed": [
+    "data_io",
+    "data_loader",
+    "dependency",
+    "division",
+    "evaluation",
+    "graph_model",
+    "license",
+    "optimization",
+    "readme",
+    "relevant_source",
+    "temporal_linking"
+  ],
+  "categories_not_present_in_selected_files": [
+    "inference",
+    "model",
+    "postprocessing",
+    "submission_conversion",
+    "training"
+  ],
+  "category_coverage": {
+    "data_io": {
+      "status": "READ",
+      "paths": [
+        "src/tracksdata/io/_geff.py",
+        "benchmarks/graph_mutations.py",
+        "docs/installation.md"
+      ]
+    },
+    "data_loader": {
+      "status": "READ",
+      "paths": [
+        "src/tracksdata/__init__.py",
+        "src/tracksdata/_test/test_attrs.py",
+        "src/tracksdata/_test/test_options.py",
+        "src/tracksdata/array/__init__.py",
+        "src/tracksdata/array/_base_array.py",
+        "src/tracksdata/array/_graph_array.py",
+        "src/tracksdata/array/_nd_chunk_cache.py",
+        "src/tracksdata/array/_test/test_graph_array.py",
+        "src/tracksdata/array/_test/test_nd_chunk_cache.py",
+        "src/tracksdata/attrs.py",
+        "src/tracksdata/conftest.py",
+        "src/tracksdata/constants.py",
+        "src/tracksdata/edges/__init__.py",
+        "src/tracksdata/edges/_base_edge_attrs.py",
+        "src/tracksdata/edges/_base_edges.py",
+        "src/tracksdata/edges/_generic_edges.py",
+        "src/tracksdata/edges/_iou_edges.py",
+        "src/tracksdata/edges/_test/test_distance_edges.py",
+        "src/tracksdata/edges/_test/test_generic_edges.py",
+        "src/tracksdata/edges/_test/test_iou_edges.py",
+        "src/tracksdata/functional/__init__.py",
+        "src/tracksdata/functional/_apply.py",
+        "src/tracksdata/functional/_edges.py",
+        "src/tracksdata/functional/_iou.py",
+        "src/tracksdata/functional/_labeling.py",
+        "src/tracksdata/functional/_motile.py",
+        "src/tracksdata/functional/_napari.py",
+        "src/tracksdata/functional/_rx.py",
+        "src/tracksdata/functional/_test/test_apply.py",
+        "src/tracksdata/functional/_test/test_division.py",
+        "src/tracksdata/functional/_test/test_functional_edges.py",
+        "src/tracksdata/functional/_test/test_iou.py",
+        "src/tracksdata/functional/_test/test_labeling.py",
+        "src/tracksdata/functional/_test/test_motile.py",
+        "src/tracksdata/functional/_test/test_napari.py",
+        "src/tracksdata/functional/_test/test_rx.py",
+        "src/tracksdata/graph/__init__.py",
+        "src/tracksdata/graph/_base_graph.py",
+        "src/tracksdata/graph/_graph_view.py",
+        "src/tracksdata/graph/_mapped_graph_mixin.py",
+        "src/tracksdata/graph/_rustworkx_graph.py",
+        "src/tracksdata/graph/_test/test_graph_backends.py",
+        "src/tracksdata/graph/_test/test_graph_view_signals.py",
+        "src/tracksdata/graph/_test/test_index_graph.py",
+        "src/tracksdata/graph/_test/test_subgraph.py",
+        "src/tracksdata/graph/filters/__init__.py",
+        "src/tracksdata/graph/filters/_base_filter.py",
+        "src/tracksdata/graph/filters/_indexed_filter.py",
+        "src/tracksdata/graph/filters/_spatial_filter.py",
+        "src/tracksdata/graph/filters/_test/test_spatial_filter.py",
+        "src/tracksdata/io/__init__.py",
+        "src/tracksdata/io/_ctc.py",
+        "src/tracksdata/io/_numpy_array.py",
+        "src/tracksdata/io/_test/test_ctc_io.py",
+        "src/tracksdata/io/_test/test_geff_dtypes.py",
+        "src/tracksdata/io/_test/test_geff_metadata.py",
+        "src/tracksdata/nodes/__init__.py",
+        "src/tracksdata/nodes/_base_node_attrs.py",
+        "src/tracksdata/nodes/_base_nodes.py",
+        "src/tracksdata/nodes/_generic_nodes.py",
+        "src/tracksdata/nodes/_mask.py",
+        "src/tracksdata/nodes/_random.py",
+        "src/tracksdata/nodes/_regionprops.py",
+        "src/tracksdata/nodes/_test/test_generic_nodes.py",
+        "src/tracksdata/nodes/_test/test_mask.py",
+        "src/tracksdata/nodes/_test/test_random.py",
+        "src/tracksdata/nodes/_test/test_regionprops.py",
+        "src/tracksdata/options.py",
+        "src/tracksdata/solvers/__init__.py",
+        "src/tracksdata/solvers/_base_solver.py",
+        "src/tracksdata/solvers/_test/test_ilp_solver.py",
+        "src/tracksdata/solvers/_test/test_nearest_neighbors_solver.py",
+        "src/tracksdata/utils/__init__.py",
+        "src/tracksdata/utils/_cache.py",
+        "src/tracksdata/utils/_dataframe.py",
+        "src/tracksdata/utils/_dtypes.py",
+        "src/tracksdata/utils/_logging.py",
+        "src/tracksdata/utils/_multiprocessing.py",
+        "src/tracksdata/utils/_signal.py",
+        "src/tracksdata/utils/_test/test_attr_key_dtype.py",
+        "src/tracksdata/utils/_test/test_dataframe.py",
+        "src/tracksdata/utils/_test/test_dtype_serialization.py",
+        "src/tracksdata/utils/_test/test_multiprocessing.py"
+      ]
+    },
+    "dependency": {
+      "status": "READ",
+      "paths": [
+        "pyproject.toml"
+      ]
+    },
+    "division": {
+      "status": "READ",
+      "paths": [
+        "src/tracksdata/functional/_division.py"
+      ]
+    },
+    "evaluation": {
+      "status": "READ",
+      "paths": [
+        "src/tracksdata/metrics/_matching.py",
+        "src/tracksdata/metrics/_ctc_metrics.py",
+        "src/tracksdata/metrics/_traccuracy.py",
+        "src/tracksdata/metrics/__init__.py",
+        "src/tracksdata/metrics/_test/test_ctc_metrics.py",
+        "src/tracksdata/metrics/_test/test_matching.py",
+        "src/tracksdata/metrics/_test/test_metrics_visualize.py",
+        "src/tracksdata/metrics/_visualize.py"
+      ]
+    },
+    "inference": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "license": {
+      "status": "READ",
+      "paths": [
+        "LICENSE"
+      ]
+    },
+    "model": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "optimization": {
+      "status": "READ",
+      "paths": [
+        "src/tracksdata/solvers/_ilp_solver.py",
+        "src/tracksdata/solvers/_nearest_neighbors_solver.py"
+      ]
+    },
+    "postprocessing": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "readme": {
+      "status": "READ",
+      "paths": [
+        "README.md"
+      ]
+    },
+    "submission_conversion": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    },
+    "temporal_linking": {
+      "status": "READ",
+      "paths": [
+        "src/tracksdata/edges/_distance_edges.py",
+        "benchmarks/tracklet_nodes.py"
+      ]
+    },
+    "training": {
+      "status": "N/A_NO_DEDICATED_FILE_OBSERVED_IN_FIXED_TREE",
+      "paths": []
+    }
+  },
+  "selection_policy": {
+    "included": "all human-readable code, notebooks, documentation, dependency/runtime configuration, schemas, tests, and license/notices at the fixed commit",
+    "excluded": "repository-hosting automation, generated/cache directories, and binary/non-source artefacts",
+    "excluded_path_count": 7,
+    "excluded_paths": [
+      {
+        "path": ".github/workflows/benchmarks.yml",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".github/workflows/docs.yml",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".github/workflows/release.yml",
+        "reason": "repository_hosting_infrastructure"
+      },
+      {
+        "path": ".gitignore",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "Makefile",
+        "reason": "non_text_or_non_source_extension"
+      },
+      {
+        "path": "benchmarks/outputs/.gitkeep",
+        "reason": "non_text_or_non_source_extension"
+      }
+    ]
+  },
+  "scope_note": "Full bytes were read for every listed relevant-source path; only hashes, structure, notebook-cell hashes, and symbol/keyword summaries are persisted. The complete tree and per-path exclusions preserve the coverage boundary."
+}

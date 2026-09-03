@@ -1,0 +1,366 @@
+[
+  {
+    "page": 1,
+    "access_time_utc": "2026-09-03T08:30:43.107Z",
+    "bytes": 4295,
+    "sha256": "7888db8e195f6218ef66cd79591a041f7c9db17c74eb6f7fe474ffd721e0e570",
+    "items": [
+      {
+        "id": "738833",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/738833",
+        "text": "Cell Tracking In-Person Workshop"
+      },
+      {
+        "id": "728620",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/728620",
+        "text": "What if we want the raw data, and/or want to use a language other than Python?"
+      },
+      {
+        "id": "716062",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/716062",
+        "text": "Welcome to the Biohub - Cell Tracking During Development Challenge"
+      },
+      {
+        "id": "714101",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/714101",
+        "text": "How to get started + Competition's Official Discord"
+      },
+      {
+        "id": "738217",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/738217",
+        "text": "focus3d : one of the best 3d cell segmentation\nhengck23 · Last comment 20h ago by hengck23"
+      },
+      {
+        "id": "739018",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/739018",
+        "text": "Question about the node-count adjustment in the metric (adj_edge_jaccard can exceed 1)\nMichael Hernandez · Last comment 18h ago by TWEAK"
+      },
+      {
+        "id": "738276",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/738276",
+        "text": "emoji_people\nQuick question for anyone above the 0.94 line — is the detector still a 3D UNet heatmap for you, or did you move to something else ?\nRishabh Roy · Last comment 9h ago by hengck23"
+      },
+      {
+        "id": "738773",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/738773",
+        "text": "Detector overfits past ~epoch 10 on fixed sparse-GT frames -- anyone else see this?\nnusrati · Last comment 14h ago by hengck23"
+      },
+      {
+        "id": "739220",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/739220",
+        "text": "How can i reach a 0.9 score at least?\nAbhirup Choudhury · Last comment 16m ago by Rustam Bazarbayev"
+      },
+      {
+        "id": "739221",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/739221",
+        "text": "Tried traiing on ony a 3DTemporalUnet + deterministic linking, loss starts climbing up after 10 epochs\nAbhirup Choudhury · Posted 33m ago"
+      },
+      {
+        "id": "737103",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/737103",
+        "text": "Hand labeling - is it external data?\nTim Krige · Last comment 18h ago by Muhammad Haseeb Ahmad"
+      },
+      {
+        "id": "738778",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/738778",
+        "text": "emoji_people\nI think we should use GNN for higher scores\nZenpai1977 · Last comment 1d ago by Shrey Gandhi"
+      },
+      {
+        "id": "738970",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/738970",
+        "text": "Any advice for starters?\nRustam Bazarbayev · Last comment 21h ago by อธิคม หวังเจริญวงศ์"
+      },
+      {
+        "id": "737101",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/737101",
+        "text": "emoji_people\nStuck at 0.928\nmikelou1 · Last comment 4d ago by Abhirup Choudhury"
+      },
+      {
+        "id": "737543",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/737543",
+        "text": "emoji_people\nwhat layer did ur gains actually come from\nkevin park · Last comment 3d ago by Rishabh Roy"
+      },
+      {
+        "id": "737896",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/737896",
+        "text": "Very dim nodes?\nweke · Last comment 3d ago by hengck23"
+      },
+      {
+        "id": "738210",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/738210",
+        "text": "Cannot find any good notebook which shows the training method\nAbhirup Choudhury · Posted 4d ago"
+      },
+      {
+        "id": "736937",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/736937",
+        "text": "Public Notebook Rankings Need a Metric Refresh\nYunus Gümüşsoy · Last comment 4d ago by jazivxt"
+      },
+      {
+        "id": "737659",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/737659",
+        "text": "Scoring after notebook ran\nAlex Amirkhanyan · Last comment 2d ago by X.X"
+      },
+      {
+        "id": "737438",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/737438",
+        "text": "emoji_people\ndoes anyone have a different design for divisions\nkevin park · Posted 9d ago"
+      },
+      {
+        "id": "737577",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/737577",
+        "text": "division jaccard\nnusrati · Last comment 8d ago by nusrati"
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "access_time_utc": "2026-09-03T08:30:48.773Z",
+    "bytes": 4352,
+    "sha256": "e78000ba098ee54fdd7fdb4cc5dbdcdf6168a32aa332d0beeb312c1bc4d4ae0b",
+    "items": [
+      {
+        "id": "738833",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/738833",
+        "text": "Cell Tracking In-Person Workshop"
+      },
+      {
+        "id": "728620",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/728620",
+        "text": "What if we want the raw data, and/or want to use a language other than Python?"
+      },
+      {
+        "id": "716062",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/716062",
+        "text": "Welcome to the Biohub - Cell Tracking During Development Challenge"
+      },
+      {
+        "id": "714101",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/714101",
+        "text": "How to get started + Competition's Official Discord"
+      },
+      {
+        "id": "735352",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/735352",
+        "text": "emoji_people\nPossible big leaderboard shakeup\nmikelou1 · Last comment 14d ago by Komil Parmar"
+      },
+      {
+        "id": "734604",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/734604",
+        "text": "What is the best model for this domain so far?\nMoawiz · Last comment 15d ago by Tang"
+      },
+      {
+        "id": "735307",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/735307",
+        "text": "What is happening after submitting the notebook for the first time?\nDeveloper kgf · Last comment 14d ago by NurpeyisRiskeldi"
+      },
+      {
+        "id": "734237",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/734237",
+        "text": "how long does the submission take?\nMoawiz · Last comment 14d ago by Tim Krige"
+      },
+      {
+        "id": "734330",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/734330",
+        "text": "Is public Zebrahub data allowed as external training data?\nmarumarukun · Last comment 20d ago by Navneet"
+      },
+      {
+        "id": "735531",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/735531",
+        "text": "so to get a score above the public baseline is training?\nBharath Varma · Last comment 17d ago by nusrati"
+      },
+      {
+        "id": "732474",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/732474",
+        "text": "Errors on GT cell traces\nTim Krige · Last comment 16d ago by Tim Krige"
+      },
+      {
+        "id": "724130",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/724130",
+        "text": "Share a custom napari visualizer\nTom · Last comment 10d ago by Joseph Adamski"
+      },
+      {
+        "id": "732103",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/732103",
+        "text": "[Free Dataset] 18.5 GB of fully-labelled synthetic 3D microscopy — 165k labelled divisions\nJosé Freitas · Last comment 25d ago by José Freitas"
+      },
+      {
+        "id": "734192",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/734192",
+        "text": "emoji_people\nHow much points are you guys getting\nmikelou1 · Last comment 24d ago by mikelou1"
+      },
+      {
+        "id": "734093",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/734093",
+        "text": "Public case study: From Detection to Identity — 3D cell tracking reasoning and aggregate evidence\nLuis Rosar · Last comment 23d ago by Ragheb haddara"
+      },
+      {
+        "id": "733877",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/733877",
+        "text": "A one-to-one linker scores 0.000 on divisions - four measurements on the metric itself\nLuka Duvanov · Posted 1mo ago"
+      },
+      {
+        "id": "734053",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/734053",
+        "text": "The voxels are 4:1 anisotropic in Z, and two other things sitting in zarr.json\nmaximo lorenzo y losada · Posted 25d ago"
+      },
+      {
+        "id": "734015",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/734015",
+        "text": "training on patches or whole volume?\nRajmukund mehta · Posted 25d ago"
+      },
+      {
+        "id": "733973",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/733973",
+        "text": "The linking radius is 8.4 µm, and divisions are one link in 853\nLuka Duvanov · Posted 25d ago"
+      },
+      {
+        "id": "733389",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/733389",
+        "text": "GEFF node coordinates alignment with Zarr image volume\nEstee · Last comment 1mo ago by Shree Dharshan"
+      },
+      {
+        "id": "732674",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/732674",
+        "text": "Every submission except the unmodified sample_submission.csv gets \"Submission Scoring Error\" (7/7 reproducible)\nKrish Rakholiya · Last comment 1mo ago by Surya Bhattiprol"
+      },
+      {
+        "id": "732345",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/732345",
+        "text": "could someone share training time per epoch of baseline model? Mine is around 2h, batch size=16. Thanks\nDavit Khantadze · Last comment 1mo ago by Davit Khantadze"
+      },
+      {
+        "id": "730160",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/730160",
+        "text": "Does CV match LB in this competition?\nChester Yuan · Last comment 1mo ago by Mark_RowSet"
+      },
+      {
+        "id": "724283",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/724283",
+        "text": "beware of jumps in ground truth track\nhengck23 · Last comment 1mo ago by Ace"
+      }
+    ]
+  },
+  {
+    "page": 3,
+    "access_time_utc": "2026-09-03T08:30:54.387Z",
+    "bytes": 4167,
+    "sha256": "7fee49999324e761250fce1ef2f4889515927e5d50cef63c1a20c279e61e1675",
+    "items": [
+      {
+        "id": "738833",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/738833",
+        "text": "Cell Tracking In-Person Workshop"
+      },
+      {
+        "id": "728620",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/728620",
+        "text": "What if we want the raw data, and/or want to use a language other than Python?"
+      },
+      {
+        "id": "716062",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/716062",
+        "text": "Welcome to the Biohub - Cell Tracking During Development Challenge"
+      },
+      {
+        "id": "714101",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/714101",
+        "text": "How to get started + Competition's Official Discord"
+      },
+      {
+        "id": "730924",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/730924",
+        "text": "What model/feature diversity helped beyond the two-seed logit-blend plateau (~0.91)?\nmige551 · Last comment 1mo ago by mige551"
+      },
+      {
+        "id": "729930",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/729930",
+        "text": "How to minimize training time\nRajmukund mehta · Last comment 1mo ago by mikelou1"
+      },
+      {
+        "id": "726924",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/726924",
+        "text": "Cotracker and other methods\nBharat · Last comment 1mo ago by hengck23"
+      },
+      {
+        "id": "730486",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/730486",
+        "text": "A 3D spatiotemporal cell tracking and lineage graph extraction engine leveraging Graph Exchange File Format (GEFF) data to track embryonic cell nuclei across 4D developmental microscopy volumes.\nHayford Kofi Quaye · Posted 1mo ago"
+      },
+      {
+        "id": "729082",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/729082",
+        "text": "Exact duplicate volumes, but GT edge moves 8.9 µm\ng john rao · Last comment 1mo ago by Bharat"
+      },
+      {
+        "id": "728613",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/728613",
+        "text": "Submission scores 0.0 despite ~0.57 locally with the official evaluate()\nDiana Daher · Last comment 1mo ago by Diana Daher"
+      },
+      {
+        "id": "729053",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/729053",
+        "text": "not all sparse GT edge are correct\nhengck23 · Last comment 1mo ago by Bharat"
+      },
+      {
+        "id": "728551",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/728551",
+        "text": "Post-patch: is the 0.91+ frontier separated by the edge term or by divisions?\nArul Prasad S P · Last comment 1mo ago by Arul Prasad S P"
+      },
+      {
+        "id": "730054",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/730054",
+        "text": "emoji_people\nHow to Save n Run All with AI tools\nAdarsh · Last comment 1mo ago by KevinYongxin"
+      },
+      {
+        "id": "729057",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/729057",
+        "text": "Cell Tracking Challenge dataset\nMikhail Kotyushev · Posted 1mo ago"
+      },
+      {
+        "id": "730149",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/730149",
+        "text": "Submission Time\nSanath S Srivatsa · Last comment 1mo ago by mikelou1"
+      },
+      {
+        "id": "728324",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/728324",
+        "text": "COMPLETED: Rescore Underway\ninversion · Last comment 1mo ago by KevinYongxin"
+      },
+      {
+        "id": "727154",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/727154",
+        "text": "Division Metric exploit and patch.\nThibgolds · Last comment 1mo ago by Navneet"
+      },
+      {
+        "id": "729420",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/729420",
+        "text": "Training Data Update and Version Status\nZhu Chen 96 · Posted 1mo ago"
+      },
+      {
+        "id": "729878",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/729878",
+        "text": "How many test samples?\nTaneti Sanjay · Posted 1mo ago"
+      },
+      {
+        "id": "727957",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/727957",
+        "text": "Any update on the re-scoring timeline?\nSimon Rüba · Last comment 1mo ago by Navneet"
+      },
+      {
+        "id": "728300",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/728300",
+        "text": "You can score on train locally, and why a clean prediction can go above 1.0\nBusya PRIME · Posted 1mo ago"
+      },
+      {
+        "id": "727881",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/727881",
+        "text": "zarr import error in submitted notebook\nVARADA N M · Last comment 1mo ago by Antonoof"
+      },
+      {
+        "id": "727051",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/727051",
+        "text": "I made a video about this competition!\nThiago Munhoz da Nóbrega · Last comment 1mo ago by VARADA N M"
+      }
+    ]
+  }
+]
