@@ -1,0 +1,13 @@
+notebook_role,cell_index,cell_type,source_bytes,source_sha256,checked,matches_public_cell,method_tags,notes
+USER_COPY,0,markdown,296,6fbe3c4f29ec63da7b9b8c030325dc16777a56ccb77452347a7577443440c5ef,true,true,division_detection|optimization_ilp_motile,Title and claimed lineage read; claim not treated as platform provenance
+USER_COPY,1,markdown,3593,376f423e69760fabcc8f829a0e3b2ddc0fcd03ce1d3320893fc7d80ec6ba3f2b,true,true,dual_seed_detection|transformer_linking|ILP|division_postprocessing|submission_generation,Pipeline narrative checked against code and runtime
+USER_COPY,2,code,4380,d9207bf4a2fad8b113e497af12ae2042f169bf1206c972e3d2c5cc2831a5a3e9,true,true,configuration|detection_threshold|gap_closing|track_filtering,AST parse PASS; active environment assignments reviewed
+USER_COPY,3,code,1399,99e830901eddca96d861cbf3f9ed210954e627a6d44c4668fd8b227fa5cba900,true,true,configuration_guard|fail_fast,AST parse PASS; guard assertions reviewed
+USER_COPY,4,code,14117,6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643,true,true,setup|artifact_loading|integrity_receipt,AST parse PASS; paths and weight checks reviewed
+USER_COPY,5,code,27274,681232942fbb971dc1b999816b32c6d91da819e55d123b359b601169dd5982fb,true,true,offline_dependencies|source_materialization,AST parse PASS; subprocess use is dependency materialization and import setup
+USER_COPY,6,code,35835,2c60405c2ad411a4eaebe59defaef6a79185c3119874905edee685c264335d8b,true,true,CUDA_gate|dual_gpu_inference|bidirectional_fusion|retention_guard,AST parse PASS; no training call found
+USER_COPY,7,code,71299,a5da2a79ceb6383c66b543dd98280c83ccd3815f4becd26a4ab873ad74d82c8a,true,true,graph_postprocessing|Hungarian|KDTree|motion_relink|ILP|gap_closing|safe_division|DeepCenter|track_filter|linefit,AST parse PASS; main tracking and graph-repair implementation
+USER_COPY,8,code,7409,239f51c30606f090e1fbc939a541891cef2dbea45d7b1c4a6fef53352e94759d,true,true,output_integrity|retention_audit|submission_schema,AST parse PASS; generated-output audit only
+USER_COPY,9,code,8730,0083b9cd0b94cabba7c28f12bf8d80f6eda4a982d1f6f44ead0975ea0de89e92,true,true,heldout_validator|inference|sample_selection,AST parse PASS; held-out train inference validator
+USER_COPY,10,code,16964,b5d95f2743bc317426eb4bab90da3855450a8a30902a5575e5378afefd8bca2a,true,true,official_metric_formula|edge_jaccard|division_jaccard|diagnostics,AST parse PASS; local proxy is not public score
+USER_COPY,11,code,2528,974767da6156ddf12c5b2d1351b13658f160d0b859a36deb9614441c006537ba,true,true,resolved_pipeline_manifest|runtime_assertions,AST parse PASS; prints resolved optional mechanisms

@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260904_BIOHUB_V19C_COPY_AUDIT_SYNC_V01",
+  "status": "PASS",
+  "status_scope": "LOCAL_EVIDENCE_CONTENT_AUDIT",
+  "target": {
+    "competition": "biohub-cell-tracking-during-development",
+    "notebook_ref": "sailorren/biohub-v19c-public0939-sis14-only",
+    "version_number": 1,
+    "kernel_id": 132979728,
+    "kernel_status": "COMPLETE",
+    "script_version_id": "UNKNOWN_NOT_EXPOSED"
+  },
+  "public_original": {
+    "notebook_ref": "alioman/biohub-v19c-public0939-sis14-only",
+    "version_number": 1,
+    "prior_fixed_capture_status": "FULL_NOTEBOOK_SOURCE_READ",
+    "current_reread_status": "BLOCKED_HTTP_403",
+    "license": "UNKNOWN_NOT_EXPOSED"
+  },
+  "source_audit": {
+    "read_status": "FULL_NOTEBOOK_SOURCE_READ",
+    "copy_source_bytes": 213952,
+    "copy_source_sha256": "92bf632410fedc9eb7e0984a20525590b5583d5abb002d8239ff65d9f51fbf57",
+    "public_capture_bytes": 213952,
+    "public_capture_sha256": "363139b1f15ebd4b822b286019c0ce46533d0e045cdb31a99a9ffe0d7c208fd9",
+    "copy_cells": 12,
+    "copy_markdown_cells": 2,
+    "copy_code_cells": 10,
+    "copy_cell_source_bytes": 193824,
+    "all_copy_cells_checked": true,
+    "all_code_cells_ast_parse": true,
+    "exact_public_cell_matches": 12,
+    "exact_public_code_cell_matches": 10,
+    "raw_container_hashes_equal": false,
+    "comparison_unit": "ordered canonical cell source bytes",
+    "platform_declared_fork_parent": false,
+    "training_calls_found_in_notebook": false
+  },
+  "runtime_log": {
+    "read_status": "FULL_LOG_READ",
+    "bytes": 111209,
+    "sha256": "a3d3de4a9644f943f37a4804740cd4c44ed0d658d76a47df62a1793fb868634d",
+    "event_count": 622,
+    "stdout_events": 547,
+    "stderr_events": 75,
+    "error_events": 0,
+    "warning_header_events": 32,
+    "first_event_seconds": 6.0456,
+    "last_event_seconds": 1904.138,
+    "covered_duration_seconds": 1898.092,
+    "secret_pattern_hits": 0,
+    "retained_copy_redactions": 0
+  },
+  "runtime_outputs": {
+    "unique_paths_listed": 307,
+    "small_files_fully_read": 4,
+    "test_video_count": 4,
+    "visible_gpu_count": 2,
+    "prediction_minutes": 8.85,
+    "submission_rows": 234482,
+    "node_rows": 119358,
+    "edge_rows": 115124,
+    "submission_content_sha256": "b4d8319bcbcbb53d60ca723346fbe3a93cfe60f7a1d5c420a5cfe5ad31943feb",
+    "submission_file_downloaded": false,
+    "large_geff_or_zarr_downloaded": false
+  },
+  "resolved_pipeline": {
+    "dual_seed_requested": true,
+    "dual_seed_weights_found": true,
+    "bidirectional_fusion_active": true,
+    "bidirectional_fusion_weight": 0.15,
+    "bidirectional_fusion_mode": "harmonic_probability",
+    "deepcenter_requested": true,
+    "deepcenter_loaded": true,
+    "safe_div_parent_max_um": 7.0,
+    "safe_div_sister_max_um": 14.0,
+    "safe_div_global_cap": 0.00375,
+    "safe_div_frame_cap": 0.0076
+  },
+  "validator": {
+    "held_out_samples": 4,
+    "prediction_minutes": 7.68,
+    "adjusted_edge_jaccard": 0.9214,
+    "division_jaccard": 0.2,
+    "proxy_score": 0.9414,
+    "public_score_equivalence": false,
+    "limitations": "Selected four-sample protocol; estimated node counts; no frozen multi-fold comparison."
+  },
+  "score_binding": {
+    "submission_id": "55978992",
+    "notebook_ref": "sailorren/biohub-v19c-public0939-sis14-only",
+    "version_number": 1,
+    "description": "Notebook biohub-v19c-public0939-sis14-only | Version 1",
+    "status": "COMPLETE",
+    "public_score": "0.939",
+    "private_score": "UNKNOWN_NOT_EXPOSED",
+    "scope": "highest among four user submission records returned during this read; not global leaderboard maximum"
+  },
+  "known_conflicts": [
+    "Kernels list and GetKernel lastRunTime fields differ",
+    "Early log says reverse weight 0.200 while applied and resolved state is 0.15",
+    "Guard report has detector 0.96875 vs active 0.965",
+    "Guard report has secondary detection 0.475 vs runtime 0.800",
+    "Guard report has ILP disappearance 1.5 vs source guard 2.0",
+    "Guard report has bidirectional primary weight 0.3 vs resolved active fusion 0.15"
+  ],
+  "redistribution": {
+    "full_notebook_source_committed": false,
+    "source_excerpt_committed": false,
+    "reason": "License not exposed; retain hashes, structure and original analysis only."
+  },
+  "external_actions": {
+    "kaggle_submission_create_count": 0,
+    "kaggle_notebook_write_count": 0,
+    "training_task_count": 0,
+    "kaggle_dataset_create_count": 0,
+    "competition_join_or_rule_accept_count": 0,
+    "large_dataset_download_count": 0
+  },
+  "access_time_utc": "2026-09-03T17:13:16Z",
+  "access_time_asia_shanghai": "2026-09-04T01:13:16+08:00"
+}

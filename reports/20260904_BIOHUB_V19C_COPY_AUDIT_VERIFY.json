@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260904_BIOHUB_V19C_COPY_AUDIT_SYNC_V01",
+  "status": "PASS",
+  "summary": {
+    "passed": 8,
+    "failed": 0,
+    "total": 8
+  },
+  "checks": [
+    {
+      "check_id": "required_files_present_nonempty",
+      "status": "PASS",
+      "details": {
+        "missing": [],
+        "empty": []
+      }
+    },
+    {
+      "check_id": "source_manifest_complete",
+      "status": "PASS",
+      "details": {
+        "records": 11,
+        "errors": []
+      }
+    },
+    {
+      "check_id": "all_copy_cells_audited",
+      "status": "PASS",
+      "details": {
+        "rows": 12,
+        "copy_cells": 12,
+        "copy_code_cells": 10,
+        "errors": []
+      }
+    },
+    {
+      "check_id": "runtime_log_fully_read",
+      "status": "PASS",
+      "details": {
+        "records": 5,
+        "full_logs": 1,
+        "errors": []
+      }
+    },
+    {
+      "check_id": "audit_summary_semantics",
+      "status": "PASS",
+      "details": {
+        "errors": []
+      }
+    },
+    {
+      "check_id": "forbidden_external_actions_zero",
+      "status": "PASS",
+      "details": {
+        "fields": [
+          "kaggle_submission_create_count",
+          "kaggle_notebook_write_count",
+          "training_task_count",
+          "kaggle_dataset_create_count",
+          "competition_join_or_rule_accept_count",
+          "large_dataset_download_count"
+        ],
+        "errors": []
+      }
+    },
+    {
+      "check_id": "no_large_prohibited_or_secret_artifacts",
+      "status": "PASS",
+      "details": {
+        "errors": []
+      }
+    },
+    {
+      "check_id": "reports_have_required_evidence_sections",
+      "status": "PASS",
+      "details": {
+        "errors": []
+      }
+    }
+  ]
+}

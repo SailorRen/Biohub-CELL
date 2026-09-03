@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "source_id": "V19C_USER_SCREENSHOT",
+  "source_type": "user_provided_screenshot",
+  "file_name": "截屏2026-09-04 00.56.05.png",
+  "bytes": 119411,
+  "sha256": "2d6e2b21bfc6d01ac45bab4d1ec2251e7d2e884cd26f6ae1fdbac79e5a4c069e",
+  "dimensions_pixels": {
+    "width": 1159,
+    "height": 669
+  },
+  "observed_page": "Kaggle competition Submissions tab",
+  "competition": "Biohub - Cell Tracking During Development",
+  "visible_target_record": {
+    "submission_description": "biohub-v19c-public0939-sis14-only - Version 1",
+    "status": "Succeeded",
+    "notebook": "biohub-v19c-public0939-sis14-only",
+    "version_number": 1,
+    "public_score": "0.939",
+    "relative_time_text": "7h ago"
+  },
+  "other_visible_public_scores": [
+    "0.938",
+    "0.938",
+    "0.885"
+  ],
+  "interpretation": "截图支持用户界面观察，但不单独证明 submission ID、ScriptVersionId、源码、日志内容或分数与源码版本的机器绑定。",
+  "access_time_utc": "2026-09-03T17:13:16Z",
+  "access_time_asia_shanghai": "2026-09-04T01:13:16+08:00"
+}

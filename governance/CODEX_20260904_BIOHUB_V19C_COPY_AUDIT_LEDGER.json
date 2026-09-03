@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260904_BIOHUB_V19C_COPY_AUDIT_SYNC_V01",
+  "mode": "READ_ONLY_KAGGLE_AND_AUTHORIZED_GITHUB_SYNC",
+  "kaggle_submission_create_count": 0,
+  "kaggle_notebook_write_count": 0,
+  "training_task_count": 0,
+  "kaggle_dataset_create_count": 0,
+  "competition_join_or_rule_accept_count": 0,
+  "large_dataset_download_count": 0,
+  "kaggle_model_create_count": 0,
+  "kaggle_submission_retry_count": 0,
+  "final_submission_selection_count": 0,
+  "competition_data_download_count": 0,
+  "model_weight_download_count": 0,
+  "submission_csv_download_count": 0,
+  "geff_or_zarr_download_count": 0,
+  "small_notebook_source_temporary_read_count": 1,
+  "full_runtime_log_read_count": 1,
+  "small_named_output_file_read_count": 4,
+  "github_target_repository": "SailorRen/Biohub-CELL",
+  "github_target_branch": "main",
+  "github_sync_authorized_by_user": true,
+  "preexisting_submission": {
+    "submission_id": "55978992",
+    "status": "COMPLETE",
+    "public_score": "0.939",
+    "created_before_this_task": true,
+    "action_in_this_task": "READ_ONLY_STATUS_AND_SCORE_BINDING"
+  },
+  "notes": [
+    "Notebook source and runtime log were read into a temporary directory for audit.",
+    "Only four explicitly named small runtime audit outputs were downloaded.",
+    "No Kaggle object was created, modified, retried, selected or rerun.",
+    "GitHub writes are limited to the user-requested Biohub-CELL report synchronization."
+  ]
+}

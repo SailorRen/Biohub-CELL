@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260904_BIOHUB_V19C_COPY_AUDIT_SYNC_V01",
+  "mode": "READ_ONLY",
+  "reads": [
+    {
+      "operation": "kernels list --mine --search",
+      "result": "target ref found"
+    },
+    {
+      "operation": "kernels status",
+      "result": "KernelWorkerStatus.COMPLETE"
+    },
+    {
+      "operation": "kernels pull",
+      "result": "Version 1 source and metadata read in temporary directory"
+    },
+    {
+      "operation": "KernelsApiService GetKernel",
+      "result": "metadata and full target source read"
+    },
+    {
+      "operation": "kernels output log-only",
+      "result": "622-event full log read; output payload files excluded by file pattern"
+    },
+    {
+      "operation": "kernel output file listing",
+      "result": "307 unique paths listed over 4 pages"
+    },
+    {
+      "operation": "four explicit small output-file reads",
+      "result": "runtime integrity, guard report, run_stats and validator_results read"
+    },
+    {
+      "operation": "competitions submissions",
+      "result": "target submission bound to Version 1 and public score 0.939"
+    }
+  ],
+  "target_notebook": {
+    "ref": "sailorren/biohub-v19c-public0939-sis14-only",
+    "version_number": 1,
+    "status": "COMPLETE",
+    "source_bytes": 213952,
+    "source_sha256": "92bf632410fedc9eb7e0984a20525590b5583d5abb002d8239ff65d9f51fbf57"
+  },
+  "public_source": {
+    "ref": "alioman/biohub-v19c-public0939-sis14-only",
+    "version_number": 1,
+    "prior_fixed_capture_status": "FULL_NOTEBOOK_SOURCE_READ",
+    "prior_capture_bytes": 213952,
+    "prior_capture_sha256": "363139b1f15ebd4b822b286019c0ce46533d0e045cdb31a99a9ffe0d7c208fd9",
+    "current_reread_result": "HTTP_403_FORBIDDEN",
+    "comparison_basis": "12 canonical cell source byte strings from the prior fixed capture"
+  },
+  "score_binding": {
+    "submission_id": "55978992",
+    "notebook_ref": "sailorren/biohub-v19c-public0939-sis14-only",
+    "version_number": 1,
+    "status": "COMPLETE",
+    "public_score": "0.939",
+    "scope": "highest public score among the four user submissions returned in this read; not a global leaderboard maximum"
+  },
+  "external_writes": {
+    "kaggle_submission_create_count": 0,
+    "kaggle_notebook_write_count": 0,
+    "training_task_count": 0,
+    "kaggle_dataset_create_count": 0,
+    "competition_join_or_rule_accept_count": 0,
+    "large_dataset_download_count": 0
+  },
+  "access_time_utc": "2026-09-03T17:13:16Z",
+  "access_time_asia_shanghai": "2026-09-04T01:13:16+08:00"
+}

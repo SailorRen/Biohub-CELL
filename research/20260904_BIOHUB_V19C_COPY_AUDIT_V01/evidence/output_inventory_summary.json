@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "notebook_ref": "sailorren/biohub-v19c-public0939-sis14-only",
+  "version_number": 1,
+  "api_pages_read": 4,
+  "unique_output_paths": 307,
+  "nonexclusive_path_class_counts": {
+    "geff_members": 264,
+    "json_or_zarr_metadata": 192,
+    "python_source": 13,
+    "python_bytecode": 10,
+    "jsonl": 6,
+    "csv": 4,
+    "weight_files": 2,
+    "submission_csv": 1,
+    "root_level": 11
+  },
+  "root_level_paths": [
+    "bidirectional_production_runtime_integrity.json",
+    "dual_seed_detector_coords_44b6_0113de3b.jsonl",
+    "dual_seed_detector_coords_44b6_0b24845f.jsonl",
+    "dual_seed_detector_coords_6bba_05b6850b.jsonl",
+    "dual_seed_frame_retention_guard_report.json",
+    "dual_seed_frame_retention_44b6_0113de3b.jsonl",
+    "dual_seed_frame_retention_44b6_0b24845f.jsonl",
+    "dual_seed_frame_retention_6bba_05b6850b.jsonl",
+    "run_stats.csv",
+    "submission.csv",
+    "validator_results.csv"
+  ],
+  "downloaded_small_files": [
+    "bidirectional_production_runtime_integrity.json",
+    "dual_seed_frame_retention_guard_report.json",
+    "run_stats.csv",
+    "validator_results.csv"
+  ],
+  "explicitly_not_downloaded": [
+    "submission.csv",
+    "weight files",
+    "GEFF/Zarr outputs",
+    "competition data"
+  ],
+  "notes": "Class counts overlap and therefore do not sum to 307. The first log retrieval used an exclude-all file pattern so no output payload was downloaded; only four later, explicitly named small audit files were read."
+}

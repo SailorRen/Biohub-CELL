@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "collection_mode": "KAGGLE_READ_ONLY",
+  "competition": "biohub-cell-tracking-during-development",
+  "target": {
+    "notebook_ref": "sailorren/biohub-v19c-public0939-sis14-only",
+    "title": "biohub-v19c-public0939-sis14-only",
+    "kernel_id": 132979728,
+    "kernel_type": "notebook",
+    "language": "python",
+    "current_version_number": 1,
+    "is_private": true,
+    "status": "COMPLETE",
+    "machine_shape": "NvidiaTeslaT4",
+    "enable_gpu": true,
+    "enable_internet": false,
+    "enable_tpu": false,
+    "competition_sources": [
+      "biohub-cell-tracking-during-development"
+    ],
+    "dataset_sources": [
+      "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+      "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+      "pilkwang/biohub-tracking-support-pack-50ep-v1"
+    ],
+    "kernel_sources": [],
+    "script_version_id": "UNKNOWN_NOT_EXPOSED",
+    "source_bytes": 213952,
+    "pulled_ipynb_sha256": "92bf632410fedc9eb7e0984a20525590b5583d5abb002d8239ff65d9f51fbf57",
+    "pulled_kernel_metadata_bytes": 842,
+    "pulled_kernel_metadata_sha256": "363f7c4748ae3428bf1c6245f1b42ff0a8564c639b9fba8380b001c31848de6f"
+  },
+  "time_fields": {
+    "kernels_list_last_run_time": "2026-09-03 09:54:55.453000",
+    "get_kernel_last_run_time": "2026-08-31T17:09:53.551Z",
+    "assessment": "ANOMALOUS_OR_DIFFERENT_SEMANTICS_DO_NOT_USE_AS_RUNTIME_BINDING"
+  },
+  "submission_binding": {
+    "submission_id": "55978992",
+    "file_name": "submission.csv",
+    "description": "Notebook biohub-v19c-public0939-sis14-only | Version 1",
+    "date_as_returned_by_cli": "2026-09-03 09:54:56.607000",
+    "status": "COMPLETE",
+    "public_score": "0.939",
+    "private_score": "UNKNOWN_NOT_EXPOSED"
+  },
+  "lineage_assessment": {
+    "public_candidate_ref": "alioman/biohub-v19c-public0939-sis14-only",
+    "platform_declared_kernel_source": false,
+    "copy_cells_compared": 12,
+    "exact_cell_matches": 12,
+    "exact_code_cell_matches": 10,
+    "conclusion": "CONTENT_IDENTICAL_TO_PRIOR_FIXED_PUBLIC_CAPTURE_USER_REPORTS_COPY_PLATFORM_FORK_LINK_UNKNOWN"
+  },
+  "access_time_utc": "2026-09-03T17:13:16Z",
+  "access_time_asia_shanghai": "2026-09-04T01:13:16+08:00"
+}
