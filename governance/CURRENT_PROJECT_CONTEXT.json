@@ -14,9 +14,12 @@
   "github_visibility": "PUBLIC",
   "github_default_branch": "main",
   "initial_remote_commit_sha": "ff0abce0f8d033745a58cdcab1639c65c94d4520",
+  "substantive_evidence_commit_sha": "a389c79c9081886107bb1c92a0c9ef8ee9fa9706",
+  "substantive_evidence_remote_readback": "PASS_13_OF_13_SHA256_MATCH",
   "preexisting_kaggle_state_observed": true,
   "preexisting_kaggle_state_scope": "A public leaderboard row and an in-progress scoring indicator were visible after this task started; neither was created by this task and neither is yet bound to an audited version or submission ID.",
-  "completion_status": "IN_PROGRESS",
-  "updated_at_utc": "2026-09-03T07:52:00Z",
-  "updated_at_asia_singapore": "2026-09-03T15:52:00+08:00"
+  "completion_status": "COMPLETED_VERIFIED",
+  "completion_effective_condition": "The closeout commit carrying this declaration must be pushed to main and pass the frozen contract, clean-tree, HEAD-equality and 13-file authoritative readback checks; those post-push results are reported externally because a commit cannot contain its own SHA.",
+  "updated_at_utc": "2026-09-03T09:13:22Z",
+  "updated_at_asia_singapore": "2026-09-03T17:13:22+08:00"
 }

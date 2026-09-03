@@ -2,7 +2,8 @@
   "schema_version": "1.0",
   "task_id": "CODEX_20260903_BIOHUB_CELL_INITIAL_RECON_V01",
   "github_repository_create_count": 1,
-  "github_push_count": 1,
+  "github_push_count": 2,
+  "github_push_count_scope": "Completed pushes before the closeout carrier commit: initial contract push plus substantive evidence push. The carrier push cannot truthfully count itself inside its own immutable content.",
   "github_repository_created": "SailorRen/Biohub-CELL",
   "kaggle_submission_count": 0,
   "kaggle_notebook_write_count": 0,
@@ -10,5 +11,5 @@
   "kaggle_dataset_create_count": 0,
   "competition_join_or_rule_accept_count": 0,
   "large_dataset_download_count": 0,
-  "notes": "At this pre-closeout snapshot, only the authorized repository creation and initial contract push have occurred. The substantive evidence and closeout pushes are not counted until executed. All Kaggle and training write counters remain zero."
+  "notes": "The substantive evidence push completed and was read back from GitHub. The closeout carrier push is verified after the commit exists and is reported in the final external receipt. All Kaggle and training write counters remain zero."
 }

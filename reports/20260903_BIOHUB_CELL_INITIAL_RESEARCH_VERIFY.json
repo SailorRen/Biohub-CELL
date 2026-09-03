@@ -3,9 +3,9 @@
   "task_id": "CODEX_20260903_BIOHUB_CELL_INITIAL_RECON_V01",
   "status": "PASS",
   "summary": {
-    "passed": 18,
+    "passed": 19,
     "failed": 0,
-    "total": 18
+    "total": 19
   },
   "counts": {
     "manifest_records": 647,
@@ -190,6 +190,17 @@
         "kaggle_dataset_create_count": 0,
         "competition_join_or_rule_accept_count": 0,
         "large_dataset_download_count": 0
+      }
+    },
+    {
+      "check_id": "github_authoritative_remote_readback",
+      "status": "PASS",
+      "details": {
+        "local_head": "a389c79c9081886107bb1c92a0c9ef8ee9fa9706",
+        "remote_head": "a389c79c9081886107bb1c92a0c9ef8ee9fa9706",
+        "matched": 13,
+        "expected": 13,
+        "failures": []
       }
     }
   ]
