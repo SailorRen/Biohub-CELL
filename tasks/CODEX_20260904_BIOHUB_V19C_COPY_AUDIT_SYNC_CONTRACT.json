@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260904_BIOHUB_V19C_COPY_AUDIT_SYNC_V01",
+  "goal": "只读取得并完整审计 sailorren/biohub-v19c-public0939-sis14-only Version 1 的实际源码和最新运行日志，将 0.939 绑定具体 Kaggle submission，在不进行任何 Kaggle 写入、训练、大型下载或未经许可源码再分发的前提下，把审计报告和小型证据同步至 SailorRen/Biohub-CELL main 并完成权威远端回读。",
+  "scope": {
+    "in_scope": [
+      "Kaggle Notebook、status、source、output/log 和本人 submission 历史的只读访问",
+      "临时目录中的小型 Notebook 源码与日志下载及逐单元、逐行审计",
+      "当前 Biohub-CELL 仓库内的任务、治理、研究、报告和验证文件",
+      "SailorRen/Biohub-CELL main 的提交、推送和只读远端回读"
+    ],
+    "out_of_scope": [
+      "Kaggle submission 创建或 retry",
+      "Kaggle Notebook Version 创建、保存或重跑",
+      "训练、长时间推理、Dataset 或 Model 创建",
+      "规则接受、报名、组队或最终 submission 选择",
+      "完整比赛数据、大型外部数据、模型权重、GEFF、Zarr 或 submission.csv 下载",
+      "提交凭据、Cookie、Token、环境变量、签名 URL、原始数据或模型权重",
+      "在许可证未确认时再分发完整 Notebook 或源码正文",
+      "修改其他 GitHub 仓库"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": true
+  },
+  "acceptance": [
+    {
+      "id": "task-source-preserved",
+      "type": "file",
+      "required": true,
+      "path": "tasks/CODEX_20260904_BIOHUB_V19C_COPY_AUDIT_SYNC_TASK.md",
+      "min_bytes": 3000,
+      "sha256": "17cf516c00d94c63641959cfa4e8089ceab59a3ad864b36b634f19e3fc5c2ec0",
+      "contains_all": [
+        "sailorren/biohub-v19c-public0939-sis14-only",
+        "alioman/biohub-v19c-public0939-sis14-only",
+        "0.939",
+        "不得创建或保存新的 Kaggle Notebook Version"
+      ]
+    },
+    {
+      "id": "verifier-frozen",
+      "type": "file",
+      "required": true,
+      "path": "scripts/verify_v19c_copy_audit.py",
+      "min_bytes": 12000,
+      "sha256": "f42489004bad2906ac66e0ce9999450d7b4d36fe4b984b140f18b6bdd46af1cf",
+      "contains_all": [
+        "V19C_LOCAL_AUDIT_PASS",
+        "V19C_REMOTE_READBACK_PASS",
+        "V19C_VERIFICATION_PASS"
+      ]
+    },
+    {
+      "id": "audit-summary",
+      "type": "json",
+      "required": true,
+      "path": "research/20260904_BIOHUB_V19C_COPY_AUDIT_V01/audit_summary.json",
+      "assertions": [
+        {"pointer": "/status", "op": "equals", "value": "PASS"},
+        {"pointer": "/target/notebook_ref", "op": "equals", "value": "sailorren/biohub-v19c-public0939-sis14-only"},
+        {"pointer": "/target/version_number", "op": "equals", "value": 1},
+        {"pointer": "/source_audit/all_copy_cells_checked", "op": "equals", "value": true},
+        {"pointer": "/runtime_log/read_status", "op": "equals", "value": "FULL_LOG_READ"},
+        {"pointer": "/score_binding/public_score", "op": "equals", "value": "0.939"},
+        {"pointer": "/score_binding/submission_id", "op": "not_empty"},
+        {"pointer": "/redistribution/full_notebook_source_committed", "op": "equals", "value": false}
+      ]
+    },
+    {
+      "id": "external-action-zero-writes",
+      "type": "json",
+      "required": true,
+      "path": "governance/CODEX_20260904_BIOHUB_V19C_COPY_AUDIT_LEDGER.json",
+      "assertions": [
+        {"pointer": "/kaggle_submission_create_count", "op": "equals", "value": 0},
+        {"pointer": "/kaggle_notebook_write_count", "op": "equals", "value": 0},
+        {"pointer": "/training_task_count", "op": "equals", "value": 0},
+        {"pointer": "/kaggle_dataset_create_count", "op": "equals", "value": 0},
+        {"pointer": "/competition_join_or_rule_accept_count", "op": "equals", "value": 0},
+        {"pointer": "/large_dataset_download_count", "op": "equals", "value": 0}
+      ]
+    },
+    {
+      "id": "audit-report",
+      "type": "file",
+      "required": true,
+      "path": "reports/20260904_BIOHUB_V19C_COPY_AUDIT_REPORT_V01.md",
+      "min_bytes": 5000,
+      "contains_all": [
+        "结论",
+        "Notebook 身份与血缘",
+        "源码结构",
+        "运行日志",
+        "分数绑定",
+        "局限",
+        "SOURCE_CODE_VERIFIED",
+        "MEASURED",
+        "UNKNOWN"
+      ],
+      "not_contains": [
+        "TODO",
+        "TBD",
+        "PLACEHOLDER",
+        "待补充"
+      ]
+    },
+    {
+      "id": "audit-verification-report",
+      "type": "json",
+      "required": true,
+      "path": "reports/20260904_BIOHUB_V19C_COPY_AUDIT_VERIFY.json",
+      "assertions": [
+        {"pointer": "/status", "op": "equals", "value": "PASS"},
+        {"pointer": "/summary/failed", "op": "equals", "value": 0},
+        {"pointer": "/summary/passed", "op": "equals", "value": 8}
+      ]
+    },
+    {
+      "id": "deterministic-v19c-audit-check",
+      "type": "command",
+      "required": true,
+      "argv": [
+        "python3",
+        "scripts/verify_v19c_copy_audit.py",
+        "--project-root",
+        ".",
+        "--verify-only"
+      ],
+      "cwd": ".",
+      "expected_exit": 0,
+      "stdout_contains_all": [
+        "V19C_LOCAL_AUDIT_PASS",
+        "V19C_VERIFICATION_PASS"
+      ],
+      "timeout_seconds": 300
+    },
+    {
+      "id": "initial-recon-regression-check",
+      "type": "command",
+      "required": true,
+      "argv": [
+        "python3",
+        "scripts/verify_research_bundle.py",
+        "--project-root",
+        ".",
+        "--verify-only"
+      ],
+      "cwd": ".",
+      "expected_exit": 0,
+      "stdout_contains_all": [
+        "LOCAL_BUNDLE_PASS",
+        "VERIFICATION_PASS"
+      ],
+      "timeout_seconds": 600
+    },
+    {
+      "id": "authoritative-github-readback",
+      "type": "command",
+      "required": true,
+      "argv": [
+        "python3",
+        "scripts/verify_v19c_copy_audit.py",
+        "--project-root",
+        ".",
+        "--verify-only",
+        "--remote-readback"
+      ],
+      "cwd": ".",
+      "expected_exit": 0,
+      "stdout_contains_all": [
+        "V19C_LOCAL_AUDIT_PASS",
+        "V19C_REMOTE_READBACK_PASS",
+        "V19C_VERIFICATION_PASS"
+      ],
+      "timeout_seconds": 600
+    },
+    {
+      "id": "git-clean-and-remote-head",
+      "type": "git",
+      "required": true,
+      "repository": ".",
+      "require_commit": true,
+      "require_clean": true,
+      "require_remote": true,
+      "remote": "origin",
+      "require_remote_head": true
+    }
+  ]
+}
