@@ -1,0 +1,32 @@
+gate_id=GITHUB_PREWRITE_GATE_20260903
+access_time_utc=2026-09-03T07:52:00Z
+access_time_asia_singapore=2026-09-03T15:52:00+08:00
+
+command=gh auth status
+exit_code=0
+output_begin
+github.com
+  Logged in to github.com account SailorRen (keyring)
+  Active account: true
+  Git operations protocol: https
+  Token: MASKED_BY_GH
+  Token scopes: gist, read:org, repo, workflow
+output_end
+
+command=gh api user --jq .login
+exit_code=0
+output_begin
+SailorRen
+output_end
+
+command=gh repo view SailorRen/Biohub-CELL --json nameWithOwner,url,visibility,defaultBranchRef
+exit_code=1
+output_begin
+GraphQL: Could not resolve to a Repository with the name 'SailorRen/Biohub-CELL'. (repository)
+output_end
+
+principal_exact_match=true
+target_repository_exists=false
+write_gate=PASS
+notes=Authentication output was normalized to avoid recording any credential material. The account, scopes, command results, and repository-not-found response are preserved.
+

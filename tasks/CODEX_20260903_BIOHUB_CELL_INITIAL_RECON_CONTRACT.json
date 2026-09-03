@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260903_BIOHUB_CELL_INITIAL_RECON_V01",
+  "goal": "创建 SailorRen/Biohub-CELL 公开 GitHub 仓库，完成任务原文规定的第一轮公开资料检索、逐源深读、证据固化、机器验收、GitHub 同步及权威远端回读，并且不执行任何 Kaggle 写入、训练或大型数据下载。",
+  "scope": {
+    "in_scope": [
+      "当前项目工作区内的治理、任务、研究、证据、报告和验证文件",
+      "SailorRen/Biohub-CELL 公开 GitHub 仓库的创建、提交、推送和只读回读",
+      "Kaggle、GitHub、Reddit、论文及官方软件网站的公开只读检索",
+      "在许可证允许时下载小型公开 Notebook 源码用于逐单元审查"
+    ],
+    "out_of_scope": [
+      "Kaggle submission",
+      "Kaggle Notebook Version 创建或保存",
+      "训练或长时间推理",
+      "比赛报名、规则接受或组队操作",
+      "Kaggle Dataset 创建",
+      "完整比赛数据或大型外部数据集下载",
+      "修改其他 GitHub 仓库",
+      "提交凭据、原始数据、模型权重或 submission.csv"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": true
+  },
+  "acceptance": [
+    {
+      "id": "task-source-preserved",
+      "type": "file",
+      "required": true,
+      "path": "tasks/CODEX_20260903_BIOHUB_CELL_INITIAL_RECON_TASK.md",
+      "min_bytes": 10000,
+      "sha256": "fa5bcafb1038602e9380e448d0ec22f6b3918a527658e413018849ed7e0ef919",
+      "contains_all": [
+        "Biohub - Cell Tracking During Development",
+        "COMPLETED_VERIFIED",
+        "PARTIAL_RESEARCH_BLOCKED"
+      ]
+    },
+    {
+      "id": "governance-final-state",
+      "type": "json",
+      "required": true,
+      "path": "governance/CURRENT_PROJECT_CONTEXT.json",
+      "assertions": [
+        {"pointer": "/project", "op": "equals", "value": "Biohub-CELL"},
+        {"pointer": "/competition_slug", "op": "equals", "value": "biohub-cell-tracking-during-development"},
+        {"pointer": "/kaggle_submission_authorized", "op": "equals", "value": false},
+        {"pointer": "/training_authorized", "op": "equals", "value": false},
+        {"pointer": "/notebook_write_authorized", "op": "equals", "value": false},
+        {"pointer": "/github_repository", "op": "equals", "value": "SailorRen/Biohub-CELL"},
+        {"pointer": "/completion_status", "op": "equals", "value": "COMPLETED_VERIFIED"}
+      ]
+    },
+    {
+      "id": "external-action-zero-writes",
+      "type": "json",
+      "required": true,
+      "path": "governance/EXTERNAL_ACTION_LEDGER.json",
+      "assertions": [
+        {"pointer": "/kaggle_submission_count", "op": "equals", "value": 0},
+        {"pointer": "/kaggle_notebook_write_count", "op": "equals", "value": 0},
+        {"pointer": "/training_task_count", "op": "equals", "value": 0},
+        {"pointer": "/kaggle_dataset_create_count", "op": "equals", "value": 0}
+      ]
+    },
+    {
+      "id": "research-report",
+      "type": "file",
+      "required": true,
+      "path": "reports/20260903_BIOHUB_CELL_INITIAL_RESEARCH_REPORT_V01.md",
+      "min_bytes": 5000,
+      "contains_all": [
+        "Executive Summary",
+        "本轮实际读取范围",
+        "评分补丁和旧分数风险",
+        "当前未知事项",
+        "下一阶段建议调查事项"
+      ],
+      "not_contains": [
+        "TODO",
+        "TBD",
+        "PLACEHOLDER",
+        "待补充"
+      ]
+    },
+    {
+      "id": "bundle-verification-report",
+      "type": "json",
+      "required": true,
+      "path": "reports/20260903_BIOHUB_CELL_INITIAL_RESEARCH_VERIFY.json",
+      "assertions": [
+        {"pointer": "/status", "op": "equals", "value": "PASS"},
+        {"pointer": "/summary/failed", "op": "equals", "value": 0},
+        {"pointer": "/summary/passed", "op": "not_empty"}
+      ]
+    },
+    {
+      "id": "completion-claim",
+      "type": "json",
+      "required": true,
+      "path": "reports/completion_claim.json",
+      "assertions": [
+        {"pointer": "/status", "op": "equals", "value": "COMPLETED_VERIFIED"},
+        {"pointer": "/contract_sha256", "op": "not_empty"},
+        {"pointer": "/final_commit_sha", "op": "not_empty"}
+      ]
+    },
+    {
+      "id": "deterministic-research-bundle-check",
+      "type": "command",
+      "required": true,
+      "argv": [
+        "python3",
+        "scripts/verify_research_bundle.py",
+        "--project-root",
+        ".",
+        "--verify-only"
+      ],
+      "cwd": ".",
+      "expected_exit": 0,
+      "stdout_contains_all": [
+        "LOCAL_BUNDLE_PASS",
+        "VERIFICATION_PASS"
+      ],
+      "timeout_seconds": 600
+    },
+    {
+      "id": "authoritative-github-readback",
+      "type": "command",
+      "required": true,
+      "argv": [
+        "python3",
+        "scripts/verify_research_bundle.py",
+        "--project-root",
+        ".",
+        "--verify-only",
+        "--remote-readback"
+      ],
+      "cwd": ".",
+      "expected_exit": 0,
+      "stdout_contains_all": [
+        "LOCAL_BUNDLE_PASS",
+        "REMOTE_READBACK_PASS",
+        "VERIFICATION_PASS"
+      ],
+      "timeout_seconds": 600
+    },
+    {
+      "id": "git-clean-and-remote-head",
+      "type": "git",
+      "required": true,
+      "repository": ".",
+      "require_commit": true,
+      "require_clean": true,
+      "require_remote": true,
+      "remote": "origin",
+      "require_remote_head": true
+    }
+  ]
+}
