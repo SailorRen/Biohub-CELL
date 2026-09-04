@@ -126,6 +126,9 @@ def collect(args: argparse.Namespace) -> dict[str, Any]:
     # The public package authenticates during this import.  Keep it here so one
     # process performs exactly one authentication flow for the whole receipt.
     from kaggle import api  # type: ignore[import-not-found]  # noqa: PLC0415
+    from kagglesdk.competitions.types.competition_api_service import (  # noqa: PLC0415
+        ApiGetCompetitionRequest,
+    )
 
     principal = api.get_config_value(api.CONFIG_NAME_USER)
     quota = quota_payload(api.quota_view())
@@ -157,14 +160,21 @@ def collect(args: argparse.Namespace) -> dict[str, Any]:
             }
         )
 
-    comp_response = api.competitions_list(
-        search=COMPETITION, page=1, page_size=100
+    competition_request = ApiGetCompetitionRequest()
+    competition_request.competition_name = COMPETITION
+    with api.build_kaggle_client() as client:
+        direct_competition = (
+            client.competitions.competition_api_client.get_competition(
+                competition_request
+            )
+        )
+    exact_competitions = (
+        [direct_competition] if direct_competition.ref == COMPETITION else []
     )
-    competitions = [item for item in (comp_response.competitions or []) if item is not None]
-    exact_competitions = [item for item in competitions if item.ref == COMPETITION]
     competition_rows = [
         {
             "ref": item.ref,
+            "identity_method": "OFFICIAL_DIRECT_SLUG_GET_COMPETITION",
             "title": item.title,
             "deadline_utc": iso(item.deadline),
             "max_daily_submissions": item.max_daily_submissions,

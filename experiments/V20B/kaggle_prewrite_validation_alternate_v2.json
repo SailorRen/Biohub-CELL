@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS",
+  "operation": "READ_ONLY_KAGGLE_PREWRITE",
+  "phase": "validation",
+  "observed_at_utc": "2026-09-04T10:42:12.031152Z",
+  "status": "FAIL",
+  "error_type": "PrewriteError",
+  "error": "canonical competition match count must equal 1",
+  "external_write_counts": {
+    "save_kernel": 0,
+    "dataset_write": 0,
+    "model_write": 0,
+    "competition_submission": 0
+  }
+}
