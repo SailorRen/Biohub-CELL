@@ -158,7 +158,7 @@ def collect(args: argparse.Namespace) -> dict[str, Any]:
         )
 
     comp_response = api.competitions_list(
-        group="all", search=COMPETITION, page=1, page_size=100
+        search=COMPETITION, page=1, page_size=100
     )
     competitions = [item for item in (comp_response.competitions or []) if item is not None]
     exact_competitions = [item for item in competitions if item.ref == COMPETITION]
