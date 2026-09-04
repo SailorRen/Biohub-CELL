@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS",
+  "operation": "READ_ONLY_KAGGLE_PREWRITE",
+  "phase": "validation",
+  "observed_at_utc": "2026-09-04T10:50:02Z",
+  "status": "PASS_WITH_UI_READBACK",
+  "decision_scope": "VALIDATION_SAVE_KERNEL_ONLY",
+  "evidence_method": "LOGGED_IN_CHROME_UI_AUTHORITATIVE_READBACK_AFTER_KAGGLE_API_SCHEMA_GAPS",
+  "ui_scope": {
+    "browser": "Google Chrome",
+    "host": "www.kaggle.com",
+    "read_only": true,
+    "clicks_that_create_or_submit_platform_objects": 0,
+    "account_or_platform_modifications": 0,
+    "screenshots_persisted": false,
+    "sensitive_account_fields_persisted": false
+  },
+  "principal": {
+    "username": "sailorren",
+    "source": "KAGGLE_LOGGED_IN_SETTINGS_UI",
+    "match_expected": true
+  },
+  "gpu_quota": {
+    "displayed_used_hours": 5.6,
+    "displayed_total_hours": 30.0,
+    "derived_remaining_hours": 24.4,
+    "display_text": "05:36 / 30 hrs",
+    "source": "KAGGLE_LOGGED_IN_SETTINGS_UI",
+    "sufficient_for_validation_budget": true
+  },
+  "competition": {
+    "ref": "biohub-cell-tracking-during-development",
+    "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development",
+    "page_title": "Biohub - Cell Tracking During Development | Kaggle",
+    "visible_heading": "Biohub - Cell Tracking During Development",
+    "submit_prediction_control_visible": true,
+    "open_for_entry_and_submission": true,
+    "source": "KAGGLE_LOGGED_IN_COMPETITION_UI",
+    "match_expected": true
+  },
+  "datasets": [
+    {
+      "ref": "sailorren/biohub-deepcenter-unet-weights",
+      "required_version": 5,
+      "displayed_version": 5,
+      "match_expected": true,
+      "source": "KAGGLE_LOGGED_IN_DATASET_UI"
+    },
+    {
+      "ref": "sailorren/biohub-temporalunet-0310-weights",
+      "required_version": 2,
+      "displayed_version": 2,
+      "match_expected": true,
+      "source": "KAGGLE_LOGGED_IN_DATASET_UI"
+    },
+    {
+      "ref": "sailorren/biohub-tracking-support-pack",
+      "required_version": 10,
+      "displayed_version": 10,
+      "match_expected": true,
+      "source": "KAGGLE_LOGGED_IN_DATASET_UI"
+    }
+  ],
+  "target_slugs": {
+    "validation": {
+      "ref": "sailorren/biohub-v20b-two-embryo-radius-validation",
+      "exact_url_result": "WE_CANT_FIND_THAT_PAGE",
+      "preexisting_object_observed": false,
+      "source": "KAGGLE_LOGGED_IN_CODE_UI"
+    },
+    "production": {
+      "ref": "sailorren/biohub-v20b-two-embryo-radius-production",
+      "exact_url_result": "WE_CANT_FIND_THAT_PAGE",
+      "preexisting_object_observed": false,
+      "source": "KAGGLE_LOGGED_IN_CODE_UI"
+    }
+  },
+  "baseline": {
+    "ref": "sailorren/biohub-v19c-public0939-sis14-only",
+    "notebook_version": 1,
+    "script_version_id": 346969653,
+    "worker_status": "COMPLETE",
+    "visible_runtime": "31m45s",
+    "visible_accelerator": "GPU T4x2",
+    "historical_public_score": 0.939,
+    "source": "KAGGLE_LOGGED_IN_CODE_UI",
+    "match_expected": true
+  },
+  "submission_duplicate_check": {
+    "page": "KAGGLE_LOGGED_IN_COMPETITION_SUBMISSIONS_UI",
+    "visible_account_submission_rows": 5,
+    "visible_v20b_matches": 0,
+    "duplicate_v20b_submission_observed": false
+  },
+  "api_evidence_boundary": {
+    "status": "SCHEMA_OR_ENDPOINT_GAPS_RECORDED_SEPARATELY",
+    "receipts": [
+      "experiments/V20B/kaggle_prewrite_validation.json",
+      "experiments/V20B/kaggle_prewrite_validation_alternate.json",
+      "experiments/V20B/kaggle_prewrite_validation_alternate_v2.json",
+      "experiments/V20B/kaggle_prewrite_validation_direct.json"
+    ],
+    "claim": "The logged-in UI readback closes the validation prewrite identity gate only; it does not prove a Kaggle run, score, or submission."
+  },
+  "external_write_counts": {
+    "save_kernel": 0,
+    "dataset_write": 0,
+    "model_write": 0,
+    "competition_submission": 0
+  },
+  "physical_writes_confirmed_zero_before_call": true
+}
