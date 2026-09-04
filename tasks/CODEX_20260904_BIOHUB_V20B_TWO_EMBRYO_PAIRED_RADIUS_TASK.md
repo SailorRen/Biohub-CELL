@@ -95,3 +95,28 @@ Git clean、local/remote/GitHub HEAD 一致及固定 commit blob 回读全部通
 属于范围外历史状态，不是 V20B 基线或结果。比赛元数据刷新在第 31 页发生一次
 SSL EOF，依 `retry=0` 未重试；V20B 使用同日已冻结的 125 页/24,886 路径身份，
 并把 Kaggle mount 内 199/199 payload 实读作为更强的运行门。
+
+## 执行终态（2026-09-04）
+
+唯一一次 validation SaveKernel 已创建私有 Notebook Version 1 / ScriptVersionId
+`347223762`，随后 Kaggle worker
+终态为 `KernelWorkerStatus.ERROR`。运行在 `PREDICTOR_PATCHES` 阶段 fail-closed：
+`Calibrated dual-seed patch 2 expected one match, found 0`。墙钟收据为
+223.33421959 秒，`predictor_runs_started=0`；因此 199 个 payload 的实读门、两个
+anchor 的 determinism/cache equivalence、R70/R80/R90 指标和唯一胜者裁决均未执行。
+
+根因已定位为 validation builder 的 try-guard 机械缩进改变了继承 V19C 单元中
+triple-quoted TTA patch sentinel 的字符串内容。V19C sentinel 为 436 bytes、SHA-256
+`7d08c964ec364537dc3fb5b2c2d6e705050c2a45f198e904e329f5eb218678ab`；V20B 生成值为
+472 bytes、SHA-256
+`58dc628c13139db2e55577a5faad48373576e7970599f2ce42d138fe74d8c537`，9 个续行均多
+4 个前导空格。故首次 TTA replacement 未发生，后续要求 `_nv` 的 dual-seed
+replacement 2 必然匹配 0 次。静态 `--validate-only` 未执行这条动态 patch 链，
+所以此前 PASS 不等于平台运行可执行性。
+
+冻结 `retry=0` 已生效：validation SaveKernel=1、notebook run=1、production
+SaveKernel=0、formal submission=0、Dataset write=0、Model write=0、retry=0。
+最终领域状态为 `BLOCKED_VALIDATION_PAYLOAD_OR_RUNTIME`，selected radius=`null`，
+Public Score=`null`。没有 submission，因此 30 分钟提交监控不适用；未来也没有
+本任务分数可读取。V20A 的 `BLOCKED_INSUFFICIENT_EMBRYO_GROUPS` 与三个
+`NOT_RUN_HARD_GATE` 历史状态保持不变。

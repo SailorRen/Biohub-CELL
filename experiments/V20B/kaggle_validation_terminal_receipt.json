@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS",
+  "observed_at_utc": "2026-09-04T11:02:51Z",
+  "notebook": {
+    "slug": "sailorren/biohub-v20b-two-embryo-radius-validation",
+    "url": "https://www.kaggle.com/code/sailorren/biohub-v20b-two-embryo-radius-validation",
+    "notebook_version": 1,
+    "script_version_id": 347223762,
+    "script_version_id_evidence": "KAGGLE_AUTHENTICATED_UI_EDIT_LINK_/edit/run/347223762"
+  },
+  "platform": {
+    "worker_status": "KernelWorkerStatus.ERROR",
+    "cli_terminal_readback": true,
+    "independent_monitor_terminal_readback": true,
+    "terminal_observations_asia_shanghai": [
+      "2026-09-04T19:00:05+08:00",
+      "2026-09-04T19:02:51+08:00"
+    ],
+    "authenticated_ui_readback_at_utc": "2026-09-04T11:14:32Z",
+    "authenticated_ui_notebook_version": "Version 1 of 1",
+    "authenticated_ui_edit_run_id": 347223762,
+    "authenticated_ui_runtime": "4m 3s GPU T4 x2",
+    "authenticated_ui_log_summary": "242.6 second run - failure",
+    "authenticated_ui_output_file_count": 24
+  },
+  "failure": {
+    "decision": "BLOCKED_VALIDATION_PAYLOAD_OR_RUNTIME",
+    "failed_stage": "PREDICTOR_PATCHES",
+    "error_type": "RuntimeError",
+    "error": "Calibrated dual-seed patch 2 expected one match, found 0",
+    "validation_wall_clock_seconds": 223.33421959000003,
+    "platform_log_runtime_seconds": 242.6,
+    "predictor_runs_started": 0,
+    "full_sample_payload_preflight_completed": false,
+    "arm_metrics_produced": false,
+    "unique_offline_winner_evaluated": false
+  },
+  "download": {
+    "mode": "READ_ONLY_KAGGLE_KERNEL_OUTPUT_FILTERED",
+    "file_pattern": "(^|/)(promotion_decision\\.json|runtime_receipts\\.json|artifact_manifest\\.json)$",
+    "requested_small_output_count": 3,
+    "large_cache_or_prediction_downloaded": false,
+    "files": [
+      {
+        "path": "experiments/V20B/promotion_decision.json",
+        "bytes": 433,
+        "sha256": "285bd63a443a097f4ab902d03bb61d7ef8d41a9379dad2914e8024c05551b08a"
+      },
+      {
+        "path": "experiments/V20B/runtime_receipts.json",
+        "bytes": 1706,
+        "sha256": "8d8aa49c1c391fa4bdc7642175d04a1039333729ea762492aaf5afe90c4bdf7b"
+      },
+      {
+        "path": "experiments/V20B/artifact_manifest.json",
+        "bytes": 617,
+        "sha256": "39eaf37a9210df99a03a69b0f2328e8563af9f19626cfe1c8d92d3a1871e84d0"
+      },
+      {
+        "path": "experiments/V20B/kaggle_validation_v1_log.txt",
+        "bytes": 18355,
+        "sha256": "0fb7fc3b61d556f60dc477030a7cc9fb17c9d1f950b78fc5543a14a08f0f707e"
+      }
+    ]
+  },
+  "write_boundary": {
+    "validation_save_kernel": 1,
+    "production_save_kernel": 0,
+    "save_kernel_total": 1,
+    "notebook_run": 1,
+    "competition_submit": 0,
+    "dataset_write": 0,
+    "model_write": 0,
+    "duplicate_submit": 0,
+    "retry": 0
+  },
+  "next_action": "NO_RETRY; NO_PRODUCTION; NO_SUBMISSION; BUILD_BLOCKED_REPORT_AND_VERIFY"
+}

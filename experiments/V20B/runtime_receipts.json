@@ -1,0 +1,52 @@
+{
+  "all_pass": false,
+  "cell_stage_rows": [
+    {
+      "checkpoint": "ENVIRONMENT:BEFORE",
+      "elapsed_seconds_from_bootstrap": 0.03750531299999693
+    },
+    {
+      "checkpoint": "ENVIRONMENT:AFTER",
+      "elapsed_seconds_from_bootstrap": 0.03772488700002441
+    },
+    {
+      "checkpoint": "RUNTIME_CONFIG:BEFORE",
+      "elapsed_seconds_from_bootstrap": 0.08536107800000536
+    },
+    {
+      "checkpoint": "RUNTIME_CONFIG:AFTER",
+      "elapsed_seconds_from_bootstrap": 0.7497552580000502
+    },
+    {
+      "checkpoint": "DEPENDENCIES_AND_IDENTITIES:BEFORE",
+      "elapsed_seconds_from_bootstrap": 0.875117562000014
+    },
+    {
+      "checkpoint": "DEPENDENCIES_AND_IDENTITIES:AFTER",
+      "elapsed_seconds_from_bootstrap": 219.432178098
+    },
+    {
+      "checkpoint": "PREDICTOR_PATCHES:BEFORE",
+      "elapsed_seconds_from_bootstrap": 219.483471306
+    }
+  ],
+  "error": "Calibrated dual-seed patch 2 expected one match, found 0",
+  "error_type": "RuntimeError",
+  "failed_stage": "PREDICTOR_PATCHES",
+  "notebook_wall_clock_started_at": "BOOTSTRAP_FIRST_CODE_CELL",
+  "predictor_run_count_semantics": "LOGICAL_RUN_COUNT_INCREMENTED_BEFORE_FIRST_SUBPROCESS_START",
+  "predictor_run_start_events": [],
+  "predictor_runs_started": 0,
+  "retry_count": 0,
+  "schema_version": "1.0",
+  "status": "FAIL_CLOSED",
+  "task_id": "CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS",
+  "validation_wall_clock_budget_seconds": 39600.0,
+  "validation_wall_clock_seconds": 223.33421959000003,
+  "wall_clock_guard": {
+    "deadline_monotonic_shared_across_cells": true,
+    "deadline_origin": "BOOTSTRAP_FIRST_CODE_CELL",
+    "hard_stop_seconds": 39300.0,
+    "receipt_reserve_seconds": 300.0
+  }
+}

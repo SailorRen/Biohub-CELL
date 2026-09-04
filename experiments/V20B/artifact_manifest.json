@@ -1,0 +1,20 @@
+{
+  "artifact_count": 2,
+  "artifacts": [
+    {
+      "bytes": 433,
+      "path": "promotion_decision.json",
+      "sha256": "285bd63a443a097f4ab902d03bb61d7ef8d41a9379dad2914e8024c05551b08a"
+    },
+    {
+      "bytes": 1706,
+      "path": "runtime_receipts.json",
+      "sha256": "8d8aa49c1c391fa4bdc7642175d04a1039333729ea762492aaf5afe90c4bdf7b"
+    }
+  ],
+  "identity_declaration_scope": "FROZEN_EXPECTED_IDENTITIES_NOT_RUNTIME_VERIFICATION",
+  "schema_version": "1.0",
+  "status": "PARTIAL_FAIL_CLOSED",
+  "task_id": "CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS",
+  "validation_script_version_id": null
+}

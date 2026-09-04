@@ -1,0 +1,13 @@
+{
+  "competition_submission_count": 0,
+  "decision": "BLOCKED_VALIDATION_PAYLOAD_OR_RUNTIME",
+  "error": "Calibrated dual-seed patch 2 expected one match, found 0",
+  "error_type": "RuntimeError",
+  "failed_stage": "PREDICTOR_PATCHES",
+  "retry_count": 0,
+  "schema_version": "1.0",
+  "selected_arm": null,
+  "selected_radius_um": null,
+  "status": "FAIL_CLOSED",
+  "task_id": "CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS"
+}

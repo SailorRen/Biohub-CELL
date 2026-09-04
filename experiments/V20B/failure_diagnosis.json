@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS",
+  "diagnosed_at_utc": "2026-09-04T11:11:53Z",
+  "status": "ROOT_CAUSE_IDENTIFIED_NO_RETRY",
+  "evidence_class": "SOURCE_CODE_VERIFIED_AND_RUNTIME_LOG_OBSERVED",
+  "terminal_domain_status": "BLOCKED_VALIDATION_PAYLOAD_OR_RUNTIME",
+  "runtime_failure": {
+    "notebook_version": 1,
+    "script_version_id": 347223762,
+    "worker_status": "KernelWorkerStatus.ERROR",
+    "failed_stage": "PREDICTOR_PATCHES",
+    "error_type": "RuntimeError",
+    "error": "Calibrated dual-seed patch 2 expected one match, found 0",
+    "validation_wall_clock_seconds": 223.33421959000003,
+    "predictor_runs_started": 0,
+    "runtime_log_path": "experiments/V20B/kaggle_validation_v1_log.txt",
+    "runtime_log_sha256": "0fb7fc3b61d556f60dc477030a7cc9fb17c9d1f950b78fc5543a14a08f0f707e"
+  },
+  "root_cause": {
+    "code": "GUARD_WRAPPER_INDENTED_MULTILINE_PATCH_SENTINEL",
+    "summary": "The validation builder wrapped inherited V19C code in a try block by adding four leading spaces to every physical source line. That mechanical indentation also changed the content of the triple-quoted `_old` TTA patch sentinel. The pinned support source therefore did not match the altered sentinel; the optional TTA patch emitted a warning, and mandatory dual-seed patch 2 then found zero `_nv` blocks and failed closed.",
+    "first_observed_precursor": "TTA WARNING: block not found - using default 4-way",
+    "causal_sequence": [
+      "The frozen support Python manifest matched 978b626d1fd1e7397435a437dfe68691defe1572fc3c20e61012d7c9b52ed029.",
+      "The generated guard wrapper changed the embedded TTA search literal rather than only changing executable indentation.",
+      "The TTA replacement did not run, so `_nv` was absent from the in-memory predictor source.",
+      "Calibrated dual-seed replacement 1 matched; replacement 2 required an `_nv` block and matched zero times.",
+      "The notebook emitted fail-closed receipts before any predictor subprocess started."
+    ]
+  },
+  "source_comparison": {
+    "v19c_source_notebook_sha256": "92bf632410fedc9eb7e0984a20525590b5583d5abb002d8239ff65d9f51fbf57",
+    "v20b_validation_notebook_sha256": "8bea7c6c7bdd147a116603337421a1035073679799b72991bd7b045ee245d67f",
+    "v19c_tta_old_literal": {
+      "bytes": 436,
+      "sha256": "7d08c964ec364537dc3fb5b2c2d6e705050c2a45f198e904e329f5eb218678ab",
+      "continuation_line_indent_delta": 0
+    },
+    "v20b_generated_tta_old_literal": {
+      "bytes": 472,
+      "sha256": "58dc628c13139db2e55577a5faad48373576e7970599f2ce42d138fe74d8c537",
+      "continuation_line_indent_delta": 4
+    },
+    "literal_values_equal": false,
+    "affected_continuation_line_count": 9
+  },
+  "validation_gap": {
+    "builder_validate_only_status": "PASS_BEFORE_PLATFORM_RUN",
+    "missed_condition": "VALIDATE_ONLY_DID_NOT_EXECUTE_THE_DYNAMIC_PATCH_CHAIN_AGAINST_THE_PINNED_SUPPORT_SOURCE",
+    "interpretation": "Static bundle identity and syntax checks passed, but they did not prove runtime patch applicability."
+  },
+  "evidence_boundary": {
+    "payload_preflight_completed": false,
+    "full_199_sample_run_completed": false,
+    "anchor_determinism_test_completed": false,
+    "cache_equivalence_test_completed": false,
+    "R70_metrics": "NOT_RUN",
+    "R80_metrics": "NOT_RUN",
+    "R90_metrics": "NOT_RUN",
+    "unique_offline_winner": null,
+    "production_notebook_allowed": false,
+    "formal_submission_allowed": false,
+    "public_score": null
+  },
+  "write_boundary": {
+    "validation_save_kernel": 1,
+    "production_save_kernel": 0,
+    "competition_submit": 0,
+    "retry": 0,
+    "disposition": "The frozen no-retry rule is controlling; diagnosis does not authorize a corrected second version."
+  }
+}

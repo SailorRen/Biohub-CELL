@@ -52,7 +52,10 @@
       "target": "sailorren/biohub-v20b-two-embryo-radius-validation",
       "outcome": "SUCCESS",
       "returned_status": "KERNEL_VERSION_PUSH_ACCEPTED",
-      "returned_version": 1,
+      "returned_version": 347223762,
+      "returned_version_semantics": "KAGGLE_SCRIPT_VERSION_ID_FROM_AUTHENTICATED_UI_EDIT_RUN_LINK",
+      "returned_notebook_version": 1,
+      "returned_script_version_id": 347223762,
       "returned_url": "https://www.kaggle.com/code/sailorren/biohub-v20b-two-embryo-radius-validation",
       "cli_exit_code": 0,
       "retry_count": 0,
@@ -73,7 +76,22 @@
     "principal": "sailorren",
     "quota_refresh_at_utc": "2026-09-05T00:00:00Z"
   },
+  "validation_terminal_readback": {
+    "observed_at_utc": "2026-09-04T11:02:51Z",
+    "notebook_slug": "sailorren/biohub-v20b-two-embryo-radius-validation",
+    "notebook_version": 1,
+    "script_version_id": 347223762,
+    "script_version_id_source": "KAGGLE_AUTHENTICATED_UI_EDIT_RUN_LINK",
+    "worker_status": "KernelWorkerStatus.ERROR",
+    "failure_stage": "PREDICTOR_PATCHES",
+    "error_type": "RuntimeError",
+    "error": "Calibrated dual-seed patch 2 expected one match, found 0",
+    "predictor_runs_started": 0,
+    "retry_count": 0,
+    "read_only_status_poll_count": 4,
+    "evidence_path": "experiments/V20B/kaggle_validation_terminal_receipt.json"
+  },
   "schema_version": "1.0",
-  "status": "VALIDATION_VERSION_1_ACCEPTED_RUNNING",
+  "status": "VALIDATION_VERSION_1_ERROR_NO_RETRY",
   "task_id": "CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS"
 }
