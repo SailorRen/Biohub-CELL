@@ -1,0 +1,231 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_AUDIT_SYNC_V01",
+  "goal": "只读取得并审计 sailorren/biohub-v19c-public0939-sis14-only 的固定 ScriptVersionId 346969653 源码、完整运行日志与安全的小型输出，形成不夸大效果的优化可行性、候选优先级和冻结验证计划，将报告同步至 SailorRen/Biohub-CELL main 并完成权威远端回读。",
+  "scope": {
+    "in_scope": [
+      "Kaggle Notebook 固定版本、source、status、output inventory、runtime log 和本人 submission 历史的只读访问",
+      "临时目录中的小型 Notebook 源码、日志与明确命名的小型 JSON/CSV 文件读取",
+      "逐 cell 源码审计、日志统计、优化候选与验证门设计",
+      "Biohub-CELL 内任务、治理、研究、报告和验证文件的提交与 GitHub main 推送",
+      "固定 GitHub commit 的只读远端回读"
+    ],
+    "out_of_scope": [
+      "Kaggle Notebook 创建、保存、重跑或新 Version",
+      "训练、长时间推理、超参数搜索或消融实验",
+      "Kaggle submission 创建、retry 或最终选择",
+      "Kaggle Dataset、Model、规则接受、报名或组队",
+      "比赛数据、完整 Dataset、模型权重、GEFF、Zarr 或 submission.csv 下载",
+      "把候选优化写成已实现、已验证或已提分",
+      "提交完整 ipynb、凭据、Cookie、Token、环境变量、签名 URL 或未经许可源码",
+      "修改其他 GitHub 仓库"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": true
+  },
+  "acceptance": [
+    {
+      "id": "task-source-preserved",
+      "type": "file",
+      "required": true,
+      "path": "tasks/CODEX_20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_AUDIT_SYNC_TASK.md",
+      "min_bytes": 6000,
+      "sha256": "670ef15979b25200c85a7cd3a2606422693352f299d20c161a6cba13d20f9daf",
+      "contains_all": [
+        "346969653",
+        "CANDIDATE_NOT_EXECUTED",
+        "不得启动、重跑或保存 Kaggle Notebook Version",
+        "固定远端 commit"
+      ]
+    },
+    {
+      "id": "verifier-frozen",
+      "type": "file",
+      "required": true,
+      "path": "scripts/verify_v19c_sv346969653_optimization_audit.py",
+      "min_bytes": 18000,
+      "sha256": "185b6c61f7773fba08eab4b34f676c27dffafcfcc4db9361a2b3c4301b70e835",
+      "contains_all": [
+        "V19C_SV346969653_LOCAL_AUDIT_PASS",
+        "V19C_SV346969653_REMOTE_READBACK_PASS",
+        "V19C_SV346969653_OPTIMIZATION_VERIFICATION_PASS"
+      ]
+    },
+    {
+      "id": "audit-summary",
+      "type": "json",
+      "required": true,
+      "path": "research/20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_AUDIT_V01/audit_summary.json",
+      "assertions": [
+        {"pointer": "/status", "op": "equals", "value": "PASS"},
+        {"pointer": "/target/notebook_ref", "op": "equals", "value": "sailorren/biohub-v19c-public0939-sis14-only"},
+        {"pointer": "/target/script_version_id", "op": "equals", "value": 346969653},
+        {"pointer": "/source_audit/all_cells_checked", "op": "equals", "value": true},
+        {"pointer": "/runtime_log/read_status", "op": "equals", "value": "FULL_LOG_READ"},
+        {"pointer": "/optimization/decision", "op": "not_empty"},
+        {"pointer": "/optimization/top_candidate_id", "op": "not_empty"},
+        {"pointer": "/optimization/experiment_executed", "op": "equals", "value": false},
+        {"pointer": "/redistribution/full_notebook_source_committed", "op": "equals", "value": false}
+      ]
+    },
+    {
+      "id": "external-action-zero-writes",
+      "type": "json",
+      "required": true,
+      "path": "governance/CODEX_20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_AUDIT_LEDGER.json",
+      "assertions": [
+        {"pointer": "/kaggle_submission_create_count", "op": "equals", "value": 0},
+        {"pointer": "/kaggle_notebook_write_count", "op": "equals", "value": 0},
+        {"pointer": "/training_task_count", "op": "equals", "value": 0},
+        {"pointer": "/kaggle_dataset_create_count", "op": "equals", "value": 0},
+        {"pointer": "/kaggle_model_create_count", "op": "equals", "value": 0},
+        {"pointer": "/competition_join_or_rule_accept_count", "op": "equals", "value": 0},
+        {"pointer": "/large_dataset_download_count", "op": "equals", "value": 0}
+      ]
+    },
+    {
+      "id": "optimization-report",
+      "type": "file",
+      "required": true,
+      "path": "reports/20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_REPORT_V01.md",
+      "min_bytes": 8000,
+      "contains_all": [
+        "结论",
+        "版本身份",
+        "源码结构",
+        "运行日志",
+        "优化判断",
+        "优先级",
+        "验证计划",
+        "局限",
+        "SOURCE_CODE_VERIFIED",
+        "MEASURED",
+        "INFERENCE",
+        "UNKNOWN",
+        "CANDIDATE_NOT_EXECUTED"
+      ],
+      "not_contains": [
+        "TODO",
+        "TBD",
+        "PLACEHOLDER",
+        "待补充",
+        "已经提分",
+        "保证提升"
+      ]
+    },
+    {
+      "id": "optimization-candidate-table",
+      "type": "file",
+      "required": true,
+      "path": "research/20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_AUDIT_V01/05_optimization_opportunities.csv",
+      "min_bytes": 1000,
+      "contains_all": [
+        "candidate_id",
+        "validation_gate",
+        "stop_condition",
+        "CANDIDATE_NOT_EXECUTED"
+      ]
+    },
+    {
+      "id": "audit-verification-report",
+      "type": "json",
+      "required": true,
+      "path": "reports/20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_VERIFY.json",
+      "assertions": [
+        {"pointer": "/status", "op": "equals", "value": "PASS"},
+        {"pointer": "/summary/failed", "op": "equals", "value": 0},
+        {"pointer": "/summary/passed", "op": "equals", "value": 9}
+      ]
+    },
+    {
+      "id": "deterministic-optimization-audit-check",
+      "type": "command",
+      "required": true,
+      "argv": [
+        "python3",
+        "scripts/verify_v19c_sv346969653_optimization_audit.py",
+        "--project-root",
+        ".",
+        "--verify-only"
+      ],
+      "cwd": ".",
+      "expected_exit": 0,
+      "stdout_contains_all": [
+        "V19C_SV346969653_LOCAL_AUDIT_PASS",
+        "V19C_SV346969653_OPTIMIZATION_VERIFICATION_PASS"
+      ],
+      "timeout_seconds": 300
+    },
+    {
+      "id": "prior-v19c-audit-regression-check",
+      "type": "command",
+      "required": true,
+      "argv": [
+        "python3",
+        "scripts/verify_v19c_copy_audit.py",
+        "--project-root",
+        ".",
+        "--verify-only"
+      ],
+      "cwd": ".",
+      "expected_exit": 0,
+      "stdout_contains_all": [
+        "V19C_LOCAL_AUDIT_PASS",
+        "V19C_VERIFICATION_PASS"
+      ],
+      "timeout_seconds": 300
+    },
+    {
+      "id": "initial-recon-regression-check",
+      "type": "command",
+      "required": true,
+      "argv": [
+        "python3",
+        "scripts/verify_research_bundle.py",
+        "--project-root",
+        ".",
+        "--verify-only"
+      ],
+      "cwd": ".",
+      "expected_exit": 0,
+      "stdout_contains_all": [
+        "LOCAL_BUNDLE_PASS",
+        "VERIFICATION_PASS"
+      ],
+      "timeout_seconds": 600
+    },
+    {
+      "id": "authoritative-github-readback",
+      "type": "command",
+      "required": true,
+      "argv": [
+        "python3",
+        "scripts/verify_v19c_sv346969653_optimization_audit.py",
+        "--project-root",
+        ".",
+        "--verify-only",
+        "--remote-readback"
+      ],
+      "cwd": ".",
+      "expected_exit": 0,
+      "stdout_contains_all": [
+        "V19C_SV346969653_LOCAL_AUDIT_PASS",
+        "V19C_SV346969653_REMOTE_READBACK_PASS",
+        "V19C_SV346969653_OPTIMIZATION_VERIFICATION_PASS"
+      ],
+      "timeout_seconds": 600
+    },
+    {
+      "id": "git-clean-and-remote-head",
+      "type": "git",
+      "required": true,
+      "repository": ".",
+      "require_commit": true,
+      "require_clean": true,
+      "require_remote": true,
+      "remote": "origin",
+      "require_remote_head": true
+    }
+  ]
+}
