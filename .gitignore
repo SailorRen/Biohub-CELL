@@ -16,6 +16,7 @@ downloads/
 *.ckpt
 *.onnx
 submission.csv
+experiments/V20B/validation_rows_*.csv
 kaggle.json
 .env
 .env.*
@@ -23,4 +24,3 @@ cookies*
 __pycache__/
 .ipynb_checkpoints/
 .DS_Store
-

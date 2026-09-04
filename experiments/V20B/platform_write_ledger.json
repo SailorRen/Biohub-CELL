@@ -12,6 +12,7 @@
     "unauthorized_kaggle_write": 0,
     "validation_save_kernel": 0
   },
+  "count_semantics": "PHYSICAL_API_CALL_COUNTED_AT_STARTED_BEFORE_INVOCATION",
   "events": [],
   "read_only_preflight": {
     "baseline_kernel_status": "KernelWorkerStatus.COMPLETE",

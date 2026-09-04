@@ -1,0 +1,41 @@
+{
+  "artifacts": {
+    "build_manifest.json": {
+      "bytes": 12112,
+      "sha256": "cbfbab546c56814859e4773fc8bdd7ce2ed80513bd83b4148af85464fddb00a9"
+    },
+    "kernel-metadata.json": {
+      "bytes": 824,
+      "sha256": "5efb62aa4009201d50e97a64bcc480c5d458692e46f97a28d54baf91580f267d"
+    },
+    "v20b_validation.ipynb": {
+      "bytes": 522828,
+      "sha256": "8bea7c6c7bdd147a116603337421a1035073679799b72991bd7b045ee245d67f"
+    }
+  },
+  "build_status": "BUILT_STATICALLY_VERIFIED_NOT_EXECUTED",
+  "built_at_asia_shanghai": "2026-09-04T18:13:55+08:00",
+  "built_at_utc": "2026-09-04T10:13:55Z",
+  "dataset_sources": [
+    "pilkwang/biohub-deepcenter-unet3d-center-prior-v1/5",
+    "pilkwang/biohub-temporal-unet3d-seed314159-v1/2",
+    "pilkwang/biohub-tracking-support-pack-50ep-v1/10"
+  ],
+  "external_actions": {
+    "git_write": 0,
+    "inference_runs": 0,
+    "kaggle_read": 0,
+    "kaggle_write": 0,
+    "network_access": 0
+  },
+  "inputs": {
+    "builder_script_sha256": "5f01fed4eda31d2095f1cd5791fe2ccb1a55d149c9b54c18720051b7a154b9e3",
+    "contract_file_sha256": "ea46844436142e61c3bc570b4e616531b69eca2cbc609935cf84ce768d41a40b",
+    "resolved_config_checker_sha256": "9acf46b55fe4c1601cd151c3cbb52de9a6c1e221d7cf5493342a7289b37c9121",
+    "sample_manifest_file_sha256": "7b028996131fc189f8a480b8e1c01f26f72131877758680af9ed1b7c9edce842",
+    "v19c_source_sha256": "92bf632410fedc9eb7e0984a20525590b5583d5abb002d8239ff65d9f51fbf57"
+  },
+  "kernel_slug": "sailorren/biohub-v20b-two-embryo-radius-validation",
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS"
+}
