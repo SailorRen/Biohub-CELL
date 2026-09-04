@@ -1,0 +1,44 @@
+{
+  "allowed_fact_classes": [
+    "OFFICIAL_FACT",
+    "HOST_CONFIRMED",
+    "SOURCE_CODE_VERIFIED",
+    "MEASURED",
+    "AUTHOR_CLAIM",
+    "COMMUNITY_REPORT",
+    "INFERENCE",
+    "UNKNOWN"
+  ],
+  "biological_independence": {
+    "field_of_view_count_is_not_embryo_count": true,
+    "independent_embryo_strata": [
+      "44b6",
+      "6bba"
+    ],
+    "multi_fold_cv_claim_allowed": false,
+    "sample_independence_claim_allowed": false,
+    "sample_level_significance_for_cross_embryo_generalization_allowed": false
+  },
+  "checkpoint_overlap": {
+    "must_remain_explicit": true,
+    "status": "CHECKPOINT_TRAINING_OVERLAP_UNKNOWN"
+  },
+  "delivery_completion_is_performance_improvement": false,
+  "experiment_label": "TWO_EMBRYO_PAIRED_SENSITIVITY_SCREEN",
+  "hidden_test_gain_evidence": "NEW_KAGGLE_SUBMISSION_PUBLIC_SCORE_ONLY",
+  "historical_invariants": {
+    "v20a_arm_statuses": {
+      "R70": "NOT_RUN_HARD_GATE",
+      "R80": "NOT_RUN_HARD_GATE",
+      "R90": "NOT_RUN_HARD_GATE"
+    },
+    "v20a_domain_status": "BLOCKED_INSUFFICIENT_EMBRYO_GROUPS",
+    "v20a_files_must_not_be_modified": true,
+    "v20b_is_new_contract_not_v20a_backfill": true
+  },
+  "historical_other_notebook_submission_56002593": "OUT_OF_SCOPE_NOT_V20B_EVIDENCE",
+  "offline_result_scope": "KAGGLE_TEST_CANDIDATE_SELECTION_ONLY",
+  "schema_version": "1.0",
+  "score_prediction_allowed": false,
+  "task_id": "CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS"
+}

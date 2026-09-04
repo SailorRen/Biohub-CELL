@@ -1,0 +1,38 @@
+{
+  "conditional_rules": {
+    "any_platform_write_error_means_no_retry": true,
+    "no_unique_candidate_means_production_and_submission_zero": true,
+    "production_and_submission_allowed_decisions": [
+      "PROMOTE_R80_FOR_KAGGLE_TEST",
+      "PROMOTE_R90_FOR_KAGGLE_TEST"
+    ]
+  },
+  "limits": {
+    "dataset_write": 0,
+    "duplicate_submission": 0,
+    "formal_competition_submission": 1,
+    "model_write": 0,
+    "notebook_runs_total": 2,
+    "production_save_kernel": 1,
+    "retry": 0,
+    "save_kernel_total": 2,
+    "validation_save_kernel": 1
+  },
+  "monitoring": {
+    "background_sleep_or_cron": false,
+    "future_score_read_requires_explicit_user_request": true,
+    "maximum_minutes_after_submission_id": 30,
+    "suggested_offsets_minutes": [
+      0,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30
+    ]
+  },
+  "schema_version": "1.0",
+  "status": "FROZEN_UNUSED",
+  "task_id": "CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS"
+}

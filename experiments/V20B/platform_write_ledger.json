@@ -1,0 +1,29 @@
+{
+  "counts": {
+    "competition_submit": 0,
+    "dataset_write": 0,
+    "duplicate_submit": 0,
+    "model_write": 0,
+    "notebook_run": 0,
+    "production_save_kernel": 0,
+    "retry": 0,
+    "save_kernel_total": 0,
+    "submission_status_poll": 0,
+    "unauthorized_kaggle_write": 0,
+    "validation_save_kernel": 0
+  },
+  "events": [],
+  "read_only_preflight": {
+    "baseline_kernel_status": "KernelWorkerStatus.COMPLETE",
+    "competition_full_metadata_refresh": "PARTIAL_READ_FAILED_SSL_EOF_AT_PAGE_31_NO_RETRY",
+    "dataset_identity_check": "PASS_UNCHANGED",
+    "fallback_identity": "V20A_SAME_DAY_125_PAGE_24886_PATH_FREEZE",
+    "gpu_quota_remaining_hours": 24.45,
+    "gpu_quota_used_hours": 5.55,
+    "principal": "sailorren",
+    "quota_refresh_at_utc": "2026-09-05T00:00:00Z"
+  },
+  "schema_version": "1.0",
+  "status": "PRE_RUN_ZERO_WRITES",
+  "task_id": "CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS"
+}

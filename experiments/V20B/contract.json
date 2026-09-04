@@ -1,0 +1,538 @@
+{
+  "acceptance": [
+    {
+      "contains_all": [
+        "CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS",
+        "TWO_EMBRYO_PAIRED_SENSITIVITY_SCREEN",
+        "CHECKPOINT_TRAINING_OVERLAP_UNKNOWN",
+        "BLOCKED_INSUFFICIENT_EMBRYO_GROUPS"
+      ],
+      "id": "task-record",
+      "min_bytes": 4000,
+      "path": "tasks/CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS_TASK.md",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "assertions": [
+        {
+          "op": "equals",
+          "pointer": "/sample_count",
+          "value": 199
+        },
+        {
+          "op": "equals",
+          "pointer": "/embryo_count",
+          "value": 2
+        },
+        {
+          "op": "equals",
+          "pointer": "/sample_rows_canonical_sha256",
+          "value": "bdadf6c675db8315842026651e440047da838f684d14a2b8a99acac0d0131e42"
+        }
+      ],
+      "id": "sample-manifest",
+      "path": "experiments/V20B/sample_manifest.json",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "assertions": [
+        {
+          "op": "equals",
+          "pointer": "/experiment_label",
+          "value": "TWO_EMBRYO_PAIRED_SENSITIVITY_SCREEN"
+        },
+        {
+          "op": "equals",
+          "pointer": "/checkpoint_overlap/status",
+          "value": "CHECKPOINT_TRAINING_OVERLAP_UNKNOWN"
+        },
+        {
+          "op": "equals",
+          "pointer": "/historical_invariants/v20a_domain_status",
+          "value": "BLOCKED_INSUFFICIENT_EMBRYO_GROUPS"
+        }
+      ],
+      "id": "evidence-boundary",
+      "path": "experiments/V20B/evidence_boundary.json",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "assertions": [
+        {
+          "op": "equals",
+          "pointer": "/limits/save_kernel_total",
+          "value": 2
+        },
+        {
+          "op": "equals",
+          "pointer": "/limits/formal_competition_submission",
+          "value": 1
+        },
+        {
+          "op": "equals",
+          "pointer": "/limits/retry",
+          "value": 0
+        },
+        {
+          "op": "equals",
+          "pointer": "/limits/dataset_write",
+          "value": 0
+        },
+        {
+          "op": "equals",
+          "pointer": "/limits/model_write",
+          "value": 0
+        }
+      ],
+      "id": "write-budget",
+      "path": "experiments/V20B/write_budget.json",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "experiments/V20B/verify_resolved_config.py",
+        "--self-test"
+      ],
+      "cwd": ".",
+      "expected_exit": 0,
+      "id": "resolved-config-checker-self-test",
+      "required": true,
+      "stdout_contains_all": [
+        "V20B_RESOLVED_CONFIG_SELF_TEST_PASS"
+      ],
+      "timeout_seconds": 120,
+      "type": "command"
+    },
+    {
+      "argv": [
+        "python3",
+        "-B",
+        "scripts/verify_v20b_two_embryo_radius.py",
+        "--project-root",
+        ".",
+        "--verify-only"
+      ],
+      "cwd": ".",
+      "expected_exit": 0,
+      "id": "v20b-domain-verifier",
+      "required": true,
+      "stdout_contains_all": [
+        "V20B_LOCAL_EVIDENCE_PASS",
+        "V20B_TWO_EMBRYO_RADIUS_VERIFICATION_PASS"
+      ],
+      "timeout_seconds": 600,
+      "type": "command"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/verify_v20a_safe_div_radius.py",
+        "--project-root",
+        ".",
+        "--verify-only"
+      ],
+      "cwd": ".",
+      "expected_exit": 0,
+      "id": "v20a-history-regression",
+      "required": true,
+      "stdout_contains_all": [
+        "V20A_LOCAL_EVIDENCE_PASS",
+        "V20A_SAFE_DIV_RADIUS_VERIFICATION_PASS"
+      ],
+      "timeout_seconds": 300,
+      "type": "command"
+    },
+    {
+      "contains_all": [
+        "最终领域状态",
+        "44b6",
+        "6bba",
+        "R70",
+        "R80",
+        "R90",
+        "Public Score",
+        "CHECKPOINT_TRAINING_OVERLAP_UNKNOWN"
+      ],
+      "id": "final-report",
+      "min_bytes": 8000,
+      "path": "reports/20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS_REPORT_V01.md",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "contains_all": [
+        "Biohub V20B",
+        "TWO_EMBRYO_PAIRED_SENSITIVITY_SCREEN"
+      ],
+      "id": "final-html-report",
+      "min_bytes": 10000,
+      "path": "reports/20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS_REPORT_V01.html",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "assertions": [
+        {
+          "op": "not_empty",
+          "pointer": "/status"
+        },
+        {
+          "op": "not_empty",
+          "pointer": "/domain_status"
+        },
+        {
+          "op": "equals",
+          "pointer": "/summary/failed",
+          "value": 0
+        }
+      ],
+      "id": "final-verification-receipt",
+      "path": "reports/20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS_VERIFY.json",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "id": "git-clean-and-remote-head",
+      "remote": "origin",
+      "repository": ".",
+      "require_clean": true,
+      "require_commit": true,
+      "require_remote": true,
+      "require_remote_head": true,
+      "required": true,
+      "type": "git"
+    }
+  ],
+  "authorization": {
+    "competition_submission": "AUTHORIZED_ONLY_AFTER_UNIQUE_OFFLINE_WINNER",
+    "dataset_write": false,
+    "model_write": false,
+    "notebook_write": "CONDITIONALLY_AUTHORIZED_WITHIN_FROZEN_BUDGET",
+    "source": "user_attachment_d4ef009e-1c3b-4635-8c72-03c28a078eac",
+    "training": false
+  },
+  "experiment_freeze": {
+    "active_parameters": {
+      "adaptive_short_track_rescue": true,
+      "allow_artifact_fallback": false,
+      "bidirectional_weight": 0.15,
+      "deepcenter_enabled": true,
+      "deepcenter_expected_epoch": 2,
+      "deepcenter_gap_confirm_min_span_um": 8.5,
+      "deepcenter_gap_threshold": 0.25,
+      "deepcenter_gap_veto": true,
+      "deepcenter_required": true,
+      "deepcenter_safe_div_threshold": 0.12,
+      "deepcenter_safe_div_veto": true,
+      "detector_threshold": 0.965,
+      "division_drop_to_single_if_bad": true,
+      "division_geometry_parent_max_um": 10.5,
+      "division_geometry_sister_max_um": 8.0,
+      "edge_threshold": 0.48,
+      "fusion_mode": "harmonic_probability",
+      "gap2_frame_frac_cap": 0.006,
+      "gap2_max_links_abs": 180,
+      "gap2_max_links_frac": 0.0045,
+      "gap2_max_step_um": 4.4,
+      "gap2_max_total_um": 10.2,
+      "gap2_recovery": true,
+      "gap2_require_context": true,
+      "gap_close_distance_um": 5.8,
+      "gap_close_max_added_abs": 2000,
+      "gap_close_max_added_frac": 0.05,
+      "gap_close_max_gap_configured": 2,
+      "gap_close_max_gap_effective": 1,
+      "gap_close_reuse_existing": true,
+      "gap_close_reuse_um": 3.2,
+      "gap_density_adaptive": true,
+      "gap_density_gain": 0.04,
+      "gap_density_max_step_delta_um": 0.125,
+      "gap_density_neighbors": 3,
+      "gap_density_reference_um": 6.5,
+      "gap_refine_max_shift_um": 3.2,
+      "gap_refine_synthetic": true,
+      "gap_refine_win_yx": 3,
+      "gap_refine_win_z": 1,
+      "ilp_appearance_weight": 0.0,
+      "ilp_disappearance_weight": 2.0,
+      "ilp_division_weight": 1.2,
+      "ilp_edge_weight": -1.0,
+      "ilp_enabled": true,
+      "minimum_track_length": 6,
+      "motion_relink_learned_bonus": 1.0,
+      "motion_relink_max_frame_nodes": 2600,
+      "motion_relink_relaxed_um": 10.0,
+      "motion_relink_tight_um": 6.0,
+      "motion_relink_velocity_weight": 0.5,
+      "output_division_geometry_filter": false,
+      "output_edge_max_um": 14.0,
+      "output_enforce_next_frame": true,
+      "output_filter_short_tracks": true,
+      "output_keep_division_components": true,
+      "output_linefit_smooth": true,
+      "output_linefit_weight": 0.8,
+      "output_linefit_window": 2,
+      "output_motion_relink": true,
+      "output_prune_isolated": true,
+      "output_single_child_repair": false,
+      "output_single_parent_repair": true,
+      "random_seed": "UNKNOWN_NOT_EXPLICIT_IN_SOURCE",
+      "retention_threshold": 0.9,
+      "run_output_diagnostics": false,
+      "safe_div_divergence_um": 2.25,
+      "safe_div_existing_child_max_um": 10.0,
+      "safe_div_frame_cap": 0.0076,
+      "safe_div_global_cap": 0.00375,
+      "safe_div_parent_radius_um": "ARM_VALUE_ONLY",
+      "safe_div_require_divergence": true,
+      "safe_div_require_mutual_nn": true,
+      "safe_div_sister_radius_um": 14.0,
+      "safe_div_sister_symmetry_tau": 0.6,
+      "safe_divisions_enabled": true,
+      "secondary_detection_weight": 0.8,
+      "secondary_edge_weight": 0.15,
+      "secondary_link_mode": "low_margin_consensus",
+      "secondary_low_margin_max": 0.35,
+      "secondary_mix_temperature": 1.0,
+      "short_track_rescue_max_mean_edge_dist_um": 3.0,
+      "short_track_rescue_max_nodes_abs": 120,
+      "short_track_rescue_max_nodes_frac": 0.012,
+      "short_track_rescue_min_len": 4,
+      "short_track_rescue_min_mean_edge_prob": 0.88,
+      "short_track_rescue_trigger_removed_frac": 0.1,
+      "unet_batch_size": 4
+    },
+    "arms": {
+      "R70": {
+        "role": "control",
+        "safe_div_parent_radius_um": 7.0
+      },
+      "R80": {
+        "role": "candidate",
+        "safe_div_parent_radius_um": 8.0
+      },
+      "R90": {
+        "role": "candidate",
+        "safe_div_parent_radius_um": 9.0
+      }
+    },
+    "base_git": {
+      "branch": "main",
+      "commit": "48e54c543afaac8ef01b628c8833b89b4fa5d7bc",
+      "repository": "SailorRen/Biohub-CELL",
+      "task_branch": "codex/biohub-v20b-two-embryo-radius-20260904"
+    },
+    "baseline": {
+      "competition": "biohub-cell-tracking-during-development",
+      "historical_public_score": 0.939,
+      "notebook_ref": "sailorren/biohub-v19c-public0939-sis14-only",
+      "score_scope": "OBSERVED_HISTORICAL_PUBLIC_SCORE_ONLY",
+      "script_version_id": 346969653,
+      "submission_id": 55978992,
+      "version_number": 1
+    },
+    "cache_boundary": {
+      "cache_capture_point": "AFTER_GAP2_BEFORE_ADD_SAFE_DIVISIONS_POSTLINK",
+      "cache_content": [
+        "canonical nodes",
+        "canonical edges",
+        "pre-division stats"
+      ],
+      "same_cache_sha_required_for_all_arms": true,
+      "single_execution_stages": [
+        "detection",
+        "association",
+        "ILP",
+        "edge_filter",
+        "motion_relink",
+        "single_parent_repair",
+        "single_frame_gap",
+        "gap2_recovery"
+      ]
+    },
+    "comparison_tolerances": {
+      "graph_coordinate_absolute": 1e-09,
+      "material_embryo_division_jaccard_drop": 0.0001,
+      "material_frame_cap_saturation_rate_increase": 0.005,
+      "reported_score_absolute": 0.0001,
+      "runtime_equivalence_relative": 0.2,
+      "strict_positive_epsilon": 1e-12
+    },
+    "determinism": {
+      "exact_pre_division_topology_required": true,
+      "global_random_seed_status": "UNKNOWN_NOT_EXPLICIT_IN_SOURCE",
+      "r70_anchor_upstream_repetitions": 2,
+      "shared_cache_required_if_upstream_repeat_drifts": true,
+      "unexplained_drift_decision": "BLOCKED_RUNTIME_NONDETERMINISM"
+    },
+    "future_score_read_requires_explicit_user_request": true,
+    "identities": {
+      "base_source_sha256": "92bf632410fedc9eb7e0984a20525590b5583d5abb002d8239ff65d9f51fbf57",
+      "checkpoints": {
+        "deepcenter_sha256": "8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0",
+        "primary_sha256": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+        "secondary_sha256": "9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f"
+      },
+      "input_datasets": [
+        {
+          "canonical_file_metadata_sha256": "89f363d37bb6e5e710c8aeaac32d8985f9cbc49477e156732291c238b3a5638f",
+          "dataset_id": 11061989,
+          "dataset_version_id": "UNKNOWN_NOT_EXPOSED_BY_LIST_API",
+          "ref": "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+          "role": "deepcenter",
+          "version": 5
+        },
+        {
+          "canonical_file_metadata_sha256": "9bd5b1a2ae2db31d1895f69d708648afc27f973bc419bef9c1917808e65ded1a",
+          "dataset_id": 11184174,
+          "dataset_version_id": "UNKNOWN_NOT_EXPOSED_BY_LIST_API",
+          "ref": "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+          "role": "secondary",
+          "version": 2
+        },
+        {
+          "canonical_file_metadata_sha256": "ded6cc4648111c3ca1434b9708404ffdb0083132e3e49687b69b4cf85d1e07fe",
+          "dataset_id": 10999845,
+          "dataset_version_id": "UNKNOWN_NOT_EXPOSED_BY_LIST_API",
+          "ref": "pilkwang/biohub-tracking-support-pack-50ep-v1",
+          "role": "primary_and_support",
+          "version": 10
+        },
+        {
+          "canonical_file_metadata_sha256": "260313bb5f12accebd9a70c0b0be43c659090de81f1839c7d06971b11bde3dc6",
+          "ref": "biohub-cell-tracking-during-development",
+          "role": "competition_data",
+          "version": "UNKNOWN_NOT_EXPOSED_BY_LIST_API"
+        }
+      ],
+      "scorer": {
+        "commit": "075fc5f5a52d11077f9dc2b074644618f26939e2",
+        "division_metrics_sha256": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9",
+        "evaluate_sha256": "03ad4049530d3682c77435194e5d921981f331df3462abcde4a7156d1a57b7d3",
+        "metrics_sha256": "cfdd596e3f8909cca14db0682889738b19ff75c3808b3773175aba9367ca7444",
+        "repository": "https://github.com/royerlab/kaggle-cell-tracking-competition"
+      },
+      "support_code_manifest_sha256": "978b626d1fd1e7397435a437dfe68691defe1572fc3c20e61012d7c9b52ed029"
+    },
+    "platform_write_ledger_path": "experiments/V20B/platform_write_ledger.json",
+    "promotion_rule": {
+      "allowed_decisions": [
+        "PROMOTE_R80_FOR_KAGGLE_TEST",
+        "PROMOTE_R90_FOR_KAGGLE_TEST",
+        "NO_PROMOTION_KEEP_V19C_R70",
+        "NO_UNIQUE_WINNER_NO_SUBMISSION",
+        "BLOCKED_BASELINE_REPRODUCTION",
+        "BLOCKED_VALIDATION_PAYLOAD_OR_RUNTIME",
+        "BLOCKED_CACHE_EQUIVALENCE",
+        "BLOCKED_RUNTIME_NONDETERMINISM",
+        "BLOCKED_CONFIG_IDENTITY",
+        "BLOCKED_PLATFORM_ERROR"
+      ],
+      "candidate_order": [
+        "R80",
+        "R90"
+      ],
+      "required_gates": [
+        "each embryo official score noninferior to R70 within 0.0001",
+        "at least one embryo official score strictly improves",
+        "embryo-equal macro official score strictly improves",
+        "pooled micro official score is noninferior to R70 within 0.0001",
+        "pooled division Jaccard strictly improves",
+        "no embryo division Jaccard materially declines beyond 0.0001",
+        "division FP increase is compensated by new TP and official total gain",
+        "all topology and schema checks pass",
+        "cap saturation does not materially worsen",
+        "node-count penalty has no unexplained degradation",
+        "benefit is not entirely driven by one sample",
+        "all source/cache/checkpoint/input/support/scorer identities match",
+        "only parent radius differs",
+        "runtime is within frozen budget"
+      ],
+      "screen_name": "TWO_EMBRYO_PAIRED_SENSITIVITY_SCREEN",
+      "tie_break_order": [
+        "maximin embryo official-score delta",
+        "embryo-equal macro delta",
+        "pooled micro delta",
+        "pooled division Jaccard",
+        "fewer added division false positives",
+        "lower cap saturation",
+        "shorter runtime"
+      ]
+    },
+    "read_scope_sha256": {
+      "AGENTS.md": "3d93338818c2e4ecbaad66a77abc47b9512c0e19fecdf0499868e11a27cdadcf",
+      "experiments/V20A/contract.json": "85f78b97015fa2d16cf4ab8fa6c8526fe8cc302da81d215a886940316daa3c68",
+      "experiments/V20A/frozen_embryo_inventory.csv": "0696842719c579bab6afb4dacd5982ac185dd2a5642cf48facfe25128da7360a",
+      "experiments/V20A/frozen_split.json": "9185ef6812363d82bfc20a694f9de27cee00a5901071e0684c053bc7de004de8",
+      "experiments/V20A/promotion_decision.json": "3ca4fb98ba825454a564bc8598af87be31f1aad491d1e839b8877429dc9ed1e4",
+      "experiments/V20A/safe_div_parent_radius_call_chain.md": "59976a5d2249209bf20e8e01ecb241ad577f0abe29bd66c27be98ca255505ac3",
+      "experiments/V20A/verify_resolved_config.py": "65d2229ba16130db9c07e53e8173d876b7e82007ffabd29c289c184acd5e70ec",
+      "governance/CURRENT_PROJECT_CONTEXT.json": "6a9b84bacbb52b9128d98856d3573342f8f5e44d4fa39477375d41e93829ecfc",
+      "reports/20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_REPORT_V01.md": "a4033313b87e0a6b1876e17996f484a61637b4696c59967a552267d7336013a1",
+      "reports/20260904_BIOHUB_V20A_SAFE_DIV_RADIUS_OPTIMIZATION_REPORT_V01.md": "a70e787312a497bf9f76c25f45fe7db31b1bdb0a2f98d2d84f70e8b22dad130e",
+      "research/20260904_BIOHUB_V19C_COPY_AUDIT_V01/evidence/bidirectional_production_runtime_integrity.json": "ae41130ee035d3ddcbaf2d0977f721429a52ffda8133fe1b877f51de5926278d",
+      "research/20260904_BIOHUB_V19C_COPY_AUDIT_V01/evidence/dual_seed_frame_retention_guard_report.json": "b5d3c53c932fe5811fadd190695b1dc3313248840b23b358b02b67d2969218b2",
+      "research/20260904_BIOHUB_V19C_COPY_AUDIT_V01/evidence/run_stats.csv": "469016975e85dc954275241ce3a5f363d47abe78f661a59ba564911c69cd8adf",
+      "research/20260904_BIOHUB_V19C_COPY_AUDIT_V01/evidence/validator_results.csv": "ca444b158cb19f8dfc182e38fcd3aab7f2a05eb81d7fa52399ba0eeda5b303fe",
+      "research/20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_AUDIT_V01/05_optimization_opportunities.csv": "45ddae00221d71719a04c8ff9bca0c996875e0987ddf011cc76209cdb02a1368",
+      "research/20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_AUDIT_V01/07_risks_and_unknowns.md": "51982a4baedab1a8d5c5bbe058e4a0452ef901f4e53b60324e4b6b058e160373"
+    },
+    "runtime_budget": {
+      "all_199_samples_preferred_and_required_unless_symmetric_payload_exclusion": true,
+      "minimum_embryos_after_exclusion": 2,
+      "production_wall_clock_seconds_max": 2700,
+      "validation_wall_clock_seconds_max": 39600
+    },
+    "sample_manifest": {
+      "anchor_sample_ids": [
+        "44b6_0c582fdc",
+        "6bba_062c8d37"
+      ],
+      "embryo_sample_counts": {
+        "44b6": 71,
+        "6bba": 128
+      },
+      "path": "experiments/V20B/sample_manifest.json",
+      "sample_count": 199,
+      "sample_rows_canonical_sha256": "bdadf6c675db8315842026651e440047da838f684d14a2b8a99acac0d0131e42"
+    },
+    "submission_monitor_minutes": 30,
+    "wait_for_public_score": false,
+    "write_budget_path": "experiments/V20B/write_budget.json"
+  },
+  "freeze": {
+    "require_git_tracked": true
+  },
+  "goal": "Run the preregistered R70/R80/R90 safe-division parent-radius-only screen on both labeled embryos with one shared post-gap pre-division cache, promote only a unique rule-compliant Kaggle test candidate, and conditionally create at most one production version and one submission.",
+  "schema_version": "1.0",
+  "scope": {
+    "in_scope": [
+      "Freeze and validate all 199 labeled train sample identities",
+      "One validation Notebook Version with full payload read and shared upstream cache",
+      "R70=7.0, R80=8.0, R90=9.0 with parent radius as the sole algorithm variable",
+      "Two-embryo per-stratum, embryo-equal macro, pooled micro and paired-sample metrics",
+      "Anchor full-run/cache equivalence and repeated-R70 determinism checks",
+      "Conditional one production Notebook Version and one formal competition submission",
+      "At most 30 minutes of post-submission health monitoring",
+      "Reports, deterministic verification, GitHub push and authoritative blob readback"
+    ],
+    "out_of_scope": [
+      "Training or fine-tuning",
+      "Checkpoint replacement",
+      "Any non-radius algorithm change",
+      "Sample or embryo identity special cases",
+      "Sample-level significance claims or CV claims",
+      "Kaggle Dataset or Model writes",
+      "Any retry or duplicate submission",
+      "Waiting about ten hours for a Public Score",
+      "Publishing raw data, weights, submission.csv, credentials or unlicensed full source to GitHub"
+    ]
+  },
+  "task_id": "CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS"
+}
