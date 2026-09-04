@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_AUDIT_SYNC_V01",
+  "evidence_snapshot_finalized_at_utc": "2026-09-04T03:10:33Z",
+  "evidence_snapshot_finalized_at_asia_shanghai": "2026-09-04T11:10:33+08:00",
+  "target": {
+    "competition": "biohub-cell-tracking-during-development",
+    "notebook_ref": "sailorren/biohub-v19c-public0939-sis14-only",
+    "kernel_id": 132979728,
+    "version_number": 1,
+    "script_version_id": 346969653,
+    "exact_user_url": "https://www.kaggle.com/code/sailorren/biohub-v19c-public0939-sis14-only?scriptVersionId=346969653"
+  },
+  "kaggle_page_observation": {
+    "evidence_class": "HOST_CONFIRMED",
+    "page_url_matches_user_url": true,
+    "title": "biohub-v19c-public0939-sis14-only",
+    "visibility": "PRIVATE",
+    "version_display": "Version 1 of 1",
+    "edit_run_path": "/code/sailorren/biohub-v19c-public0939-sis14-only/edit/run/346969653",
+    "score_link_script_version_id": 346969653,
+    "public_score_display": "0.939",
+    "score_badge": "Best Score",
+    "runtime_display": "31m 45s · GPU T4 x2",
+    "logs_display": "1904.8 second run - successful",
+    "output_file_count_display": 307,
+    "updated_help_text": "Thu Sep 03 2026 17:54:53 GMT+0800 (China Standard Time)",
+    "copied_from_display": "Copied from private notebook (+0,-0)",
+    "write_controls_used": false
+  },
+  "kaggle_api_observation": {
+    "evidence_class": "HOST_CONFIRMED",
+    "kernel_status": "KernelWorkerStatus.COMPLETE",
+    "current_version_number": 1,
+    "is_private": true,
+    "language": "python",
+    "kernel_type": "notebook",
+    "enable_gpu": true,
+    "enable_internet": false,
+    "enable_tpu": false,
+    "machine_shape": "NvidiaTeslaT4",
+    "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+    "get_kernel_last_run_time_returned": "2026-09-01 03:06:29.998000",
+    "kernels_list_last_run_time_returned": "2026-09-03 09:54:55.453000",
+    "competition_sources": [
+      "biohub-cell-tracking-during-development"
+    ],
+    "dataset_sources": [
+      "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+      "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+      "pilkwang/biohub-tracking-support-pack-50ep-v1"
+    ],
+    "kernel_sources": [],
+    "model_sources": []
+  },
+  "version_binding": {
+    "status": "HOST_CONFIRMED_PAGE_PLUS_CURRENT_VERSION_1_GUARD",
+    "page_query_script_version_id": 346969653,
+    "page_edit_run_script_version_id": 346969653,
+    "page_score_link_script_version_id": 346969653,
+    "page_version_number": 1,
+    "api_current_version_number": 1,
+    "direct_api_script_version_id_field_exposed": false,
+    "fixed_version_get_kernel_request": {
+      "version_label": "1",
+      "status": "UNAVAILABLE_HTTP_404"
+    },
+    "fixed_version_output_request": {
+      "version_label": "1",
+      "status": "UNAVAILABLE_HTTP_404"
+    },
+    "fallback": "Current-source and current-output reads were permitted only after the API returned current_version_number=1 and the page displayed Version 1 of 1.",
+    "fail_closed_condition": "If current_version_number is not 1, do not use the current-version fallback."
+  },
+  "source": {
+    "read_status": "FULL_NOTEBOOK_SOURCE_READ",
+    "access_mode": "CURRENT_VERSION_WITH_VERSION_1_GUARD",
+    "bytes": 213952,
+    "sha256": "92bf632410fedc9eb7e0984a20525590b5583d5abb002d8239ff65d9f51fbf57",
+    "cell_count": 12,
+    "markdown_cells": 2,
+    "code_cells": 10,
+    "cell_source_bytes": 193824,
+    "all_cells_checked": true,
+    "all_code_cells_ast_parse": true,
+    "training_like_calls_found": 0,
+    "raw_source_committed": false,
+    "license": "UNKNOWN_NOT_EXPOSED"
+  },
+  "runtime_log": {
+    "read_status": "FULL_LOG_READ",
+    "access_mode": "CURRENT_VERSION_WITH_VERSION_1_GUARD",
+    "bytes": 111209,
+    "sha256": "a3d3de4a9644f943f37a4804740cd4c44ed0d658d76a47df62a1793fb868634d",
+    "event_count": 622,
+    "stdout_events": 547,
+    "stderr_events": 75,
+    "warning_header_events": 32,
+    "runtime_error_events": 0,
+    "first_event_seconds": 6.04564465,
+    "last_event_seconds": 1904.137987524,
+    "covered_duration_seconds": 1898.092342874,
+    "secret_pattern_hits": 0,
+    "retained_copy_redactions": 0
+  },
+  "output_inventory": {
+    "read_status": "FULL_OUTPUT_INVENTORY_READ",
+    "access_mode": "CURRENT_VERSION_WITH_VERSION_1_GUARD",
+    "pages_read": 4,
+    "unique_paths": 307,
+    "temporary_inventory_bytes": 34043,
+    "temporary_inventory_sha256": "495859ef05fcbb7098e941c34a4a8d756046fde89157fe8a3cec83b4166cb5d1",
+    "selected_small_files_fully_read": 4,
+    "selected_small_files": [
+      {
+        "name": "bidirectional_production_runtime_integrity.json",
+        "bytes": 2387,
+        "sha256": "ae41130ee035d3ddcbaf2d0977f721429a52ffda8133fe1b877f51de5926278d"
+      },
+      {
+        "name": "dual_seed_frame_retention_guard_report.json",
+        "bytes": 3344,
+        "sha256": "b5d3c53c932fe5811fadd190695b1dc3313248840b23b358b02b67d2969218b2"
+      },
+      {
+        "name": "run_stats.csv",
+        "bytes": 3102,
+        "sha256": "469016975e85dc954275241ce3a5f363d47abe78f661a59ba564911c69cd8adf"
+      },
+      {
+        "name": "validator_results.csv",
+        "bytes": 789,
+        "sha256": "ca444b158cb19f8dfc182e38fcd3aab7f2a05eb81d7fa52399ba0eeda5b303fe"
+      }
+    ],
+    "selected_files_match_prior_committed_evidence": true,
+    "submission_csv_downloaded": false,
+    "weights_or_large_outputs_downloaded": false,
+    "signed_urls_persisted": false
+  },
+  "score_binding": {
+    "evidence_class": "HOST_CONFIRMED",
+    "submission_id": 55978992,
+    "description": "Notebook biohub-v19c-public0939-sis14-only | Version 1",
+    "status": "SubmissionStatus.COMPLETE",
+    "public_score": "0.939",
+    "private_score": "UNKNOWN_NOT_EXPOSED",
+    "scope": "Highest COMPLETE score among five user submission records returned at the snapshot time; another unrelated submission 56002593 was PENDING and was not polled or modified.",
+    "global_leaderboard_best_claimed": false
+  },
+  "lineage": {
+    "user_statement": "Copied from public code area",
+    "current_page_display": "Copied from private notebook (+0,-0)",
+    "source_markdown_claims": [
+      "fork of Rishabh Roy's public biohub-div45-stack",
+      "standalone notebook"
+    ],
+    "api_kernel_sources": [],
+    "prior_fixed_public_cell_comparison": "12 of 12 ordered cell sources matched the prior alioman public capture",
+    "platform_parent_identity": "UNKNOWN"
+  }
+}

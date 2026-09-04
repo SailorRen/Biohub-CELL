@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_AUDIT_SYNC_V01",
+  "mode": "READ_ONLY_KAGGLE_AND_AUTHORIZED_GITHUB_REPORT_SYNC",
+  "kaggle_submission_create_count": 0,
+  "kaggle_submission_retry_count": 0,
+  "final_submission_selection_count": 0,
+  "kaggle_notebook_write_count": 0,
+  "kaggle_notebook_run_or_save_count": 0,
+  "training_task_count": 0,
+  "inference_rerun_count": 0,
+  "hyperparameter_search_count": 0,
+  "kaggle_dataset_create_count": 0,
+  "kaggle_model_create_count": 0,
+  "competition_join_or_rule_accept_count": 0,
+  "large_dataset_download_count": 0,
+  "competition_data_download_count": 0,
+  "model_weight_download_count": 0,
+  "submission_csv_download_count": 0,
+  "geff_or_zarr_download_count": 0,
+  "temporary_notebook_source_read_count": 1,
+  "full_runtime_log_read_count": 1,
+  "full_output_inventory_read_count": 1,
+  "small_named_output_file_read_count": 4,
+  "browser_read_only_page_count": 1,
+  "github_target_repository": "SailorRen/Biohub-CELL",
+  "github_target_branch": "main",
+  "github_sync_authorized_by_user": true,
+  "preexisting_submission": {
+    "submission_id": 55978992,
+    "status": "COMPLETE",
+    "public_score": "0.939",
+    "created_before_this_task": true,
+    "action_in_this_task": "READ_ONLY_STATUS_AND_SCORE_BINDING"
+  },
+  "unrelated_pending_submission": {
+    "submission_id": 56002593,
+    "observed_status": "PENDING",
+    "created_before_this_task": true,
+    "action_in_this_task": "NONE_NO_POLL_NO_RETRY_NO_SELECTION"
+  },
+  "notes": [
+    "Exact ScriptVersionId page, current Version 1 source, complete log and output inventory were read without modifying Kaggle state.",
+    "Only four explicitly named small diagnostic outputs were downloaded; their bytes matched evidence already committed by the prior audit.",
+    "No candidate optimization was executed. All candidates remain CANDIDATE_NOT_EXECUTED.",
+    "GitHub writes are limited to the user-requested report synchronization; final delivery is proven by fixed-commit remote readback rather than a self-count inside this ledger."
+  ]
+}
