@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260904_BIOHUB_V20A_SAFE_DIV_RADIUS",
+  "captured_at_asia_shanghai": "2026-09-04T12:29:09+08:00",
+  "status": "ZERO_WRITES_CONFIRMED_FOR_TASK_TO_FREEZE_POINT",
+  "counts": {
+    "dataset_create_or_update": 0,
+    "model_create_or_update": 0,
+    "notebook_create": 0,
+    "save_kernel": 0,
+    "notebook_run": 0,
+    "competition_submit": 0,
+    "retry": 0,
+    "cancel": 0,
+    "delete": 0,
+    "submission_status_poll": 0
+  },
+  "read_only_calls": {
+    "competition_file_metadata_pages": 125,
+    "dataset_metadata_records": 3,
+    "payload_downloads": 0
+  },
+  "events": []
+}

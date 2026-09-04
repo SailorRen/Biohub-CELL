@@ -1,0 +1,390 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260904_BIOHUB_V20A_SAFE_DIV_RADIUS",
+  "goal": "Freeze and enforce the embryo-disjoint validation gate for the V19C safe-division parent-radius-only experiment; if fewer than three effective embryo groups exist, stop all arms and Kaggle writes, publish an evidence-backed blocked decision, and verify GitHub delivery.",
+  "scope": {
+    "in_scope": [
+      "Read fixed V19C source/log/audit evidence and hash identities",
+      "Read-only Kaggle competition and attached Dataset metadata inventory",
+      "Pin the official scorer repository commit and file hashes",
+      "Freeze the R70/R80/R90 single-variable design and promotion gates",
+      "Enforce the minimum-three-embryo-group pre-run hard gate",
+      "Create blocked decision, audit ledgers, Markdown/HTML report, verifier, Git commit, push, and remote readback"
+    ],
+    "out_of_scope": [
+      "Training or fine-tuning",
+      "Any parameter change other than the preregistered parent radius",
+      "Any arm execution after an insufficient-embryo-group result",
+      "Kaggle Notebook create, SaveKernel, version, or run after the hard gate fails",
+      "Kaggle Dataset or Model write",
+      "Competition submission, retry, cancel, delete, or score polling after the hard gate fails",
+      "Image, GEFF, Zarr, checkpoint, submission.csv, secret, or unlicensed full third-party source publication"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": true
+  },
+  "experiment_freeze": {
+    "base_git": {
+      "repository": "SailorRen/Biohub-CELL",
+      "branch": "main",
+      "commit": "f4af9bc5bbdf79e478e1ccba9897c632fd68c659"
+    },
+    "baseline": {
+      "competition": "biohub-cell-tracking-during-development",
+      "notebook_ref": "sailorren/biohub-v19c-public0939-sis14-only",
+      "version_number": 1,
+      "script_version_id": 346969653,
+      "submission_id": 55978992,
+      "historical_public_score": 0.939,
+      "score_scope": "OBSERVED_HISTORICAL_PUBLIC_SCORE_ONLY"
+    },
+    "identities": {
+      "base_source_sha256": "92bf632410fedc9eb7e0984a20525590b5583d5abb002d8239ff65d9f51fbf57",
+      "support_code_manifest_sha256": "978b626d1fd1e7397435a437dfe68691defe1572fc3c20e61012d7c9b52ed029",
+      "checkpoints": {
+        "primary_sha256": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+        "secondary_sha256": "9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f",
+        "deepcenter_sha256": "8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0"
+      },
+      "input_datasets": [
+        {
+          "role": "deepcenter",
+          "ref": "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+          "dataset_id": 11061989,
+          "version": 5,
+          "dataset_version_id": "UNKNOWN_NOT_EXPOSED_BY_LIST_API",
+          "canonical_file_metadata_sha256": "89f363d37bb6e5e710c8aeaac32d8985f9cbc49477e156732291c238b3a5638f"
+        },
+        {
+          "role": "secondary",
+          "ref": "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+          "dataset_id": 11184174,
+          "version": 2,
+          "dataset_version_id": "UNKNOWN_NOT_EXPOSED_BY_LIST_API",
+          "canonical_file_metadata_sha256": "9bd5b1a2ae2db31d1895f69d708648afc27f973bc419bef9c1917808e65ded1a"
+        },
+        {
+          "role": "primary_and_support",
+          "ref": "pilkwang/biohub-tracking-support-pack-50ep-v1",
+          "dataset_id": 10999845,
+          "version": 10,
+          "dataset_version_id": "UNKNOWN_NOT_EXPOSED_BY_LIST_API",
+          "canonical_file_metadata_sha256": "ded6cc4648111c3ca1434b9708404ffdb0083132e3e49687b69b4cf85d1e07fe"
+        },
+        {
+          "role": "competition_data",
+          "ref": "biohub-cell-tracking-during-development",
+          "version": "UNKNOWN_NOT_EXPOSED_BY_LIST_API",
+          "canonical_file_metadata_sha256": "260313bb5f12accebd9a70c0b0be43c659090de81f1839c7d06971b11bde3dc6"
+        }
+      ],
+      "scorer": {
+        "repository": "https://github.com/royerlab/kaggle-cell-tracking-competition",
+        "commit": "075fc5f5a52d11077f9dc2b074644618f26939e2",
+        "metrics_sha256": "cfdd596e3f8909cca14db0682889738b19ff75c3808b3773175aba9367ca7444",
+        "division_metrics_sha256": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9",
+        "evaluate_sha256": "03ad4049530d3682c77435194e5d921981f331df3462abcde4a7156d1a57b7d3"
+      }
+    },
+    "active_parameters": {
+      "detector_threshold": 0.965,
+      "secondary_detection_weight": 0.8,
+      "retention_threshold": 0.9,
+      "edge_threshold": 0.48,
+      "secondary_edge_weight": 0.15,
+      "secondary_link_mode": "low_margin_consensus",
+      "secondary_mix_temperature": 1.0,
+      "secondary_low_margin_max": 0.35,
+      "bidirectional_weight": 0.15,
+      "fusion_mode": "harmonic_probability",
+      "unet_batch_size": 4,
+      "ilp_enabled": true,
+      "ilp_edge_weight": -1.0,
+      "ilp_appearance_weight": 0.0,
+      "ilp_disappearance_weight": 2.0,
+      "ilp_division_weight": 1.2,
+      "gap_close_max_gap_configured": 2,
+      "gap_close_max_gap_effective": 1,
+      "gap_close_distance_um": 5.8,
+      "gap_density_adaptive": true,
+      "gap_density_reference_um": 6.5,
+      "gap_density_gain": 0.04,
+      "gap_density_max_step_delta_um": 0.125,
+      "gap_density_neighbors": 3,
+      "gap_close_reuse_existing": true,
+      "gap_close_reuse_um": 3.2,
+      "gap_close_max_added_frac": 0.05,
+      "gap_close_max_added_abs": 2000,
+      "gap_refine_synthetic": true,
+      "gap_refine_win_z": 1,
+      "gap_refine_win_yx": 3,
+      "gap_refine_max_shift_um": 3.2,
+      "minimum_track_length": 6,
+      "output_filter_short_tracks": true,
+      "output_keep_division_components": true,
+      "adaptive_short_track_rescue": true,
+      "short_track_rescue_trigger_removed_frac": 0.1,
+      "short_track_rescue_min_len": 4,
+      "short_track_rescue_min_mean_edge_prob": 0.88,
+      "short_track_rescue_max_mean_edge_dist_um": 3.0,
+      "short_track_rescue_max_nodes_frac": 0.012,
+      "short_track_rescue_max_nodes_abs": 120,
+      "output_linefit_smooth": true,
+      "output_linefit_weight": 0.8,
+      "output_linefit_window": 2,
+      "gap2_recovery": true,
+      "gap2_max_total_um": 10.2,
+      "gap2_max_step_um": 4.4,
+      "gap2_max_links_frac": 0.0045,
+      "gap2_max_links_abs": 180,
+      "gap2_require_context": true,
+      "gap2_frame_frac_cap": 0.006,
+      "safe_divisions_enabled": true,
+      "safe_div_parent_radius_um": "ARM_VALUE_ONLY",
+      "safe_div_sister_radius_um": 14.0,
+      "safe_div_sister_symmetry_tau": 0.6,
+      "safe_div_divergence_um": 2.25,
+      "safe_div_require_divergence": true,
+      "safe_div_require_mutual_nn": true,
+      "safe_div_existing_child_max_um": 10.0,
+      "safe_div_frame_cap": 0.0076,
+      "safe_div_global_cap": 0.00375,
+      "deepcenter_enabled": true,
+      "deepcenter_required": true,
+      "deepcenter_expected_epoch": 2,
+      "deepcenter_gap_veto": true,
+      "deepcenter_gap_threshold": 0.25,
+      "deepcenter_gap_confirm_min_span_um": 8.5,
+      "deepcenter_safe_div_veto": true,
+      "deepcenter_safe_div_threshold": 0.12,
+      "output_edge_max_um": 14.0,
+      "output_enforce_next_frame": true,
+      "output_single_parent_repair": true,
+      "output_single_child_repair": false,
+      "output_prune_isolated": true,
+      "output_motion_relink": true,
+      "motion_relink_tight_um": 6.0,
+      "motion_relink_relaxed_um": 10.0,
+      "motion_relink_velocity_weight": 0.5,
+      "motion_relink_learned_bonus": 1.0,
+      "motion_relink_max_frame_nodes": 2600,
+      "output_division_geometry_filter": false,
+      "division_geometry_parent_max_um": 10.5,
+      "division_geometry_sister_max_um": 8.0,
+      "division_drop_to_single_if_bad": true,
+      "allow_artifact_fallback": false,
+      "run_output_diagnostics": false,
+      "random_seed": "UNKNOWN_NOT_EXPLICIT_IN_SOURCE"
+    },
+    "arms": {
+      "R70": {"safe_div_parent_radius_um": 7.0, "role": "control"},
+      "R80": {"safe_div_parent_radius_um": 8.0, "role": "candidate"},
+      "R90": {"safe_div_parent_radius_um": 9.0, "role": "candidate"}
+    },
+    "fold_manifest": {
+      "json_path": "experiments/V20A/frozen_split.json",
+      "json_sha256": "9185ef6812363d82bfc20a694f9de27cee00a5901071e0684c053bc7de004de8",
+      "csv_path": "experiments/V20A/frozen_split.csv",
+      "csv_sha256": "9b78064ee23c5d557df6549adda241180dd23b71a30434dfc99777c4558d132e",
+      "status": "BLOCKED_INSUFFICIENT_EMBRYO_GROUPS",
+      "fold_count": null
+    },
+    "scorer_output_precision": ".4f",
+    "comparison_tolerance": 0.0001,
+    "promotion_gates": [
+      "all frozen folds complete",
+      "canonical resolved config passes",
+      "source checkpoint support input scorer identities match",
+      "only parent radius differs",
+      "fold mean official total score above R70",
+      "fold median official total score not below R70",
+      "worst-prefix score not below R70 beyond 0.0001",
+      "micro division Jaccard above R70",
+      "new division false positives compensated by new true positives and total-score gain",
+      "no topology invalid output",
+      "frame/global cap saturation not materially worse",
+      "benefit not concentrated in one sample or prefix",
+      "no unexplained node-count penalty degradation",
+      "runtime competition-safe",
+      "frozen contract and hashes reproduce the result"
+    ],
+    "winner_tie_break_order": [
+      "fold mean official total score",
+      "worst-prefix official total score",
+      "micro division Jaccard",
+      "fewer division false positives",
+      "lower cap saturation",
+      "shorter runtime"
+    ],
+    "write_budget": {
+      "validation_notebook_versions_max": 3,
+      "production_notebook_versions_max": 1,
+      "save_kernel_total_max": 4,
+      "formal_competition_submissions_max": 1,
+      "retry_max": 0
+    },
+    "submission_monitor_minutes": 30,
+    "wait_for_public_score": false,
+    "future_score_read_requires_explicit_user_request": true
+  },
+  "acceptance": [
+    {
+      "id": "task-record",
+      "type": "file",
+      "required": true,
+      "path": "tasks/CODEX_20260904_BIOHUB_V20A_SAFE_DIV_RADIUS_TASK.md",
+      "min_bytes": 5000,
+      "contains_all": ["BLOCKED_INSUFFICIENT_EMBRYO_GROUPS", "346969653", "NOT_EVALUABLE_NO_FOLDS_CREATED", "Kaggle Notebook/SaveKernel/submission"]
+    },
+    {
+      "id": "frozen-split-hard-gate",
+      "type": "json",
+      "required": true,
+      "path": "experiments/V20A/frozen_split.json",
+      "assertions": [
+        {"pointer": "/status", "op": "equals", "value": "BLOCKED_INSUFFICIENT_EMBRYO_GROUPS"},
+        {"pointer": "/effective_embryo_group_count", "op": "equals", "value": 2},
+        {"pointer": "/selected_sample_count", "op": "equals", "value": 199},
+        {"pointer": "/fold_count", "op": "equals", "value": null},
+        {"pointer": "/candidate_runs_allowed", "op": "equals", "value": false},
+        {"pointer": "/kaggle_submission_allowed", "op": "equals", "value": false}
+      ]
+    },
+    {
+      "id": "frozen-split-hashes",
+      "type": "file",
+      "required": true,
+      "path": "experiments/V20A/frozen_split_sha256.txt",
+      "min_bytes": 250,
+      "contains_all": ["9185ef6812363d82bfc20a694f9de27cee00a5901071e0684c053bc7de004de8", "9b78064ee23c5d557df6549adda241180dd23b71a30434dfc99777c4558d132e", "0696842719c579bab6afb4dacd5982ac185dd2a5642cf48facfe25128da7360a"]
+    },
+    {
+      "id": "scorer-pinned",
+      "type": "json",
+      "required": true,
+      "path": "experiments/V20A/scorer_identity.json",
+      "assertions": [
+        {"pointer": "/commit", "op": "equals", "value": "075fc5f5a52d11077f9dc2b074644618f26939e2"},
+        {"pointer": "/cli_summary_output_precision/format", "op": "equals", "value": ".4f"},
+        {"pointer": "/cli_summary_output_precision/maximum_comparison_tolerance", "op": "equals", "value": 0.0001}
+      ]
+    },
+    {
+      "id": "no-run-manifest",
+      "type": "json",
+      "required": true,
+      "path": "experiments/V20A/no_run_manifest.json",
+      "assertions": [
+        {"pointer": "/status", "op": "equals", "value": "BLOCKED_INSUFFICIENT_EMBRYO_GROUPS"},
+        {"pointer": "/arms/R70/status", "op": "equals", "value": "NOT_RUN_HARD_GATE"},
+        {"pointer": "/arms/R80/status", "op": "equals", "value": "NOT_RUN_HARD_GATE"},
+        {"pointer": "/arms/R90/status", "op": "equals", "value": "NOT_RUN_HARD_GATE"},
+        {"pointer": "/submission_id", "op": "equals", "value": null}
+      ]
+    },
+    {
+      "id": "platform-write-ledger",
+      "type": "json",
+      "required": true,
+      "path": "experiments/V20A/platform_write_ledger.json",
+      "assertions": [
+        {"pointer": "/counts/save_kernel", "op": "equals", "value": 0},
+        {"pointer": "/counts/notebook_run", "op": "equals", "value": 0},
+        {"pointer": "/counts/competition_submit", "op": "equals", "value": 0},
+        {"pointer": "/counts/retry", "op": "equals", "value": 0},
+        {"pointer": "/counts/submission_status_poll", "op": "equals", "value": 0},
+        {"pointer": "/counts/unauthorized_kaggle_write", "op": "equals", "value": 0}
+      ]
+    },
+    {
+      "id": "promotion-decision",
+      "type": "json",
+      "required": true,
+      "path": "experiments/V20A/promotion_decision.json",
+      "assertions": [
+        {"pointer": "/decision", "op": "equals", "value": "BLOCKED_INSUFFICIENT_EMBRYO_GROUPS"},
+        {"pointer": "/selected_radius_um", "op": "equals", "value": null},
+        {"pointer": "/kaggle_submission_created", "op": "equals", "value": false}
+      ]
+    },
+    {
+      "id": "final-markdown-report",
+      "type": "file",
+      "required": true,
+      "path": "reports/20260904_BIOHUB_V20A_SAFE_DIV_RADIUS_OPTIMIZATION_REPORT_V01.md",
+      "min_bytes": 9000,
+      "contains_all": ["BLOCKED_INSUFFICIENT_EMBRYO_GROUPS", "199", "44b6", "6bba", "R70", "R80", "R90", "NOT_RUN", "submission", "Public Score"]
+    },
+    {
+      "id": "final-portable-html-report",
+      "type": "file",
+      "required": true,
+      "path": "reports/20260904_BIOHUB_V20A_SAFE_DIV_RADIUS_OPTIMIZATION_REPORT_V01.html",
+      "min_bytes": 50000,
+      "contains_all": ["BLOCKED_INSUFFICIENT_EMBRYO_GROUPS", "Portable artifact delivery", "199"]
+    },
+    {
+      "id": "custom-verification-receipt",
+      "type": "json",
+      "required": true,
+      "path": "reports/20260904_BIOHUB_V20A_SAFE_DIV_RADIUS_OPTIMIZATION_VERIFY.json",
+      "assertions": [
+        {"pointer": "/status", "op": "equals", "value": "PASS"},
+        {"pointer": "/domain_status", "op": "equals", "value": "BLOCKED_INSUFFICIENT_EMBRYO_GROUPS"},
+        {"pointer": "/summary/failed", "op": "equals", "value": 0}
+      ]
+    },
+    {
+      "id": "resolved-config-checker-self-test",
+      "type": "command",
+      "required": true,
+      "argv": ["python3", "experiments/V20A/verify_resolved_config.py", "--self-test"],
+      "cwd": ".",
+      "expected_exit": 0,
+      "stdout_contains_all": ["V20A_RESOLVED_CONFIG_SELF_TEST_PASS"],
+      "timeout_seconds": 120
+    },
+    {
+      "id": "deterministic-domain-verifier",
+      "type": "command",
+      "required": true,
+      "argv": ["python3", "scripts/verify_v20a_safe_div_radius.py", "--project-root", ".", "--verify-only"],
+      "cwd": ".",
+      "expected_exit": 0,
+      "stdout_contains_all": ["V20A_LOCAL_EVIDENCE_PASS", "V20A_SAFE_DIV_RADIUS_VERIFICATION_PASS"],
+      "timeout_seconds": 300
+    },
+    {
+      "id": "prior-v19c-audit-regression",
+      "type": "command",
+      "required": true,
+      "argv": ["python3", "scripts/verify_v19c_sv346969653_optimization_audit.py", "--project-root", ".", "--verify-only"],
+      "cwd": ".",
+      "expected_exit": 0,
+      "stdout_contains_all": ["V19C_SV346969653_LOCAL_AUDIT_PASS", "V19C_SV346969653_OPTIMIZATION_VERIFICATION_PASS"],
+      "timeout_seconds": 300
+    },
+    {
+      "id": "authoritative-github-readback",
+      "type": "command",
+      "required": true,
+      "argv": ["python3", "scripts/verify_v20a_safe_div_radius.py", "--project-root", ".", "--verify-only", "--remote-readback"],
+      "cwd": ".",
+      "expected_exit": 0,
+      "stdout_contains_all": ["V20A_LOCAL_EVIDENCE_PASS", "V20A_REMOTE_READBACK_PASS", "V20A_SAFE_DIV_RADIUS_VERIFICATION_PASS"],
+      "timeout_seconds": 600
+    },
+    {
+      "id": "git-clean-and-remote-head",
+      "type": "git",
+      "required": true,
+      "repository": ".",
+      "require_commit": true,
+      "require_clean": true,
+      "require_remote": true,
+      "remote": "origin",
+      "require_remote_head": true
+    }
+  ]
+}

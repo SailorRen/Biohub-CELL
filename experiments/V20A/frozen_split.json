@@ -1,0 +1,49 @@
+{
+  "candidate_runs_allowed": false,
+  "decision_rule": {
+    "if_insufficient": "stop all candidate arms and forbid Kaggle Notebook/version/submission writes",
+    "if_sufficient": "K=min(5, embryo_group_count)",
+    "minimum_effective_embryo_groups": 3
+  },
+  "effective_embryo_group_count": 2,
+  "effective_group_count_is_upper_bound": "All labeled train stems in the authoritative listing use only these two prefixes; payload-level ineligibility could reduce but cannot increase the count.",
+  "embryo_groups": [
+    {
+      "embryo_group": "44b6",
+      "sample_count": 71
+    },
+    {
+      "embryo_group": "6bba",
+      "sample_count": 128
+    }
+  ],
+  "embryo_leakage_status": "NOT_EVALUABLE_NO_FOLDS_CREATED",
+  "excluded_sample_count": 0,
+  "fold_assignment_status": "NOT_CREATED_HARD_GATE",
+  "fold_count": null,
+  "folds": [],
+  "grouping": {
+    "field": "first underscore-delimited segment of the sample folder name",
+    "meaning": "embryo_id",
+    "official_rule_evidence_path": "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/official_kaggle/evidence/browser_official_routes.json",
+    "official_rule_evidence_sha256": "86dce5c34f8e17df231ae6f67486aa950ad61972f06418b5030c0f4c5eb1ebaf",
+    "official_rule_excerpt_paraphrase": "The first folder-name segment identifies the embryo; multiple samples may share an embryo and train/test embryos are disjoint."
+  },
+  "inventory": {
+    "competition_file_metadata_sha256": "260313bb5f12accebd9a70c0b0be43c659090de81f1839c7d06971b11bde3dc6",
+    "eligibility_boundary": "Paired train image/GT directories and all required schema metadata paths are present in the authoritative file listing; GEFF metadata contents were not downloaded.",
+    "eligible_sample_count": 199,
+    "image_or_geff_payload_download_count": 0,
+    "path": "experiments/V20A/frozen_embryo_inventory.csv",
+    "sha256": "0696842719c579bab6afb4dacd5982ac185dd2a5642cf48facfe25128da7360a"
+  },
+  "kaggle_submission_allowed": false,
+  "schema_version": "1.0",
+  "selected_sample_count": 199,
+  "split_csv_path": "experiments/V20A/frozen_split.csv",
+  "split_csv_sha256": "9b78064ee23c5d557df6549adda241180dd23b71a30434dfc99777c4558d132e",
+  "status": "BLOCKED_INSUFFICIENT_EMBRYO_GROUPS",
+  "task_id": "CODEX_20260904_BIOHUB_V20A_SAFE_DIV_RADIUS",
+  "test_identity_used_for_split": false,
+  "test_isolation_check": "PASS_TEST_IDENTITIES_NOT_USED_FOR_ASSIGNMENT"
+}

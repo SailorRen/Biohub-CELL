@@ -1,0 +1,25 @@
+{
+  "access_mode": "KAGGLE_COMPETITION_LIST_FILES_METADATA_ONLY",
+  "access_time_asia_shanghai": "2026-09-04T12:16:34.114443+08:00",
+  "access_time_utc": "2026-09-04T04:16:34.114443+00:00",
+  "canonical_file_metadata_sha256": "260313bb5f12accebd9a70c0b0be43c659090de81f1839c7d06971b11bde3dc6",
+  "competition": "biohub-cell-tracking-during-development",
+  "eligibility_boundary": "Paired train image/GT directories and all required schema metadata paths are present in the authoritative file listing; GEFF metadata contents were not downloaded.",
+  "eligible_train_stem_count": 199,
+  "embryo_group_count": 2,
+  "embryo_groups": [
+    "44b6",
+    "6bba"
+  ],
+  "image_or_geff_payload_download_count": 0,
+  "inventory_sha256": "0696842719c579bab6afb4dacd5982ac185dd2a5642cf48facfe25128da7360a",
+  "page_size": 200,
+  "pages_read": 125,
+  "pagination_tokens_persisted": false,
+  "raw_payload_persisted": false,
+  "schema_version": "1.0",
+  "test_stem_count": 4,
+  "train_stem_count": 199,
+  "unique_file_metadata_rows": 24886,
+  "unique_file_metadata_total_bytes": 87609892618
+}

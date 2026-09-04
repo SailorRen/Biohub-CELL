@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260904_BIOHUB_V20A_SAFE_DIV_RADIUS",
+  "status": "FROZEN",
+  "limits": {
+    "validation_notebook_versions": 3,
+    "production_notebook_versions": 1,
+    "save_kernel_total": 4,
+    "formal_competition_submissions": 1,
+    "submission_retries": 0,
+    "duplicate_submissions": 0,
+    "unauthorized_kaggle_writes": 0
+  },
+  "conditional_authority": {
+    "validation_write_allowed_only_after_embryo_group_gate": true,
+    "production_write_allowed_only_for": [
+      "PROMOTE_R80",
+      "PROMOTE_R90"
+    ],
+    "current_gate_status": "BLOCKED_INSUFFICIENT_EMBRYO_GROUPS",
+    "writes_currently_allowed": false
+  },
+  "retry_policy": "NO_AUTOMATIC_OR_MANUAL_RETRY_WITHIN_THIS_TASK"
+}

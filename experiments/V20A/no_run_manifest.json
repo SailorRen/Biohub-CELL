@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260904_BIOHUB_V20A_SAFE_DIV_RADIUS",
+  "status": "BLOCKED_INSUFFICIENT_EMBRYO_GROUPS",
+  "hard_gate": {
+    "required_effective_embryo_groups": 3,
+    "observed_effective_embryo_groups": 2,
+    "candidate_execution_allowed": false
+  },
+  "arms": {
+    "R70": {
+      "safe_div_parent_radius_um": 7.0,
+      "status": "NOT_RUN_HARD_GATE",
+      "baseline_reproduction": "NOT_RUN"
+    },
+    "R80": {
+      "safe_div_parent_radius_um": 8.0,
+      "status": "NOT_RUN_HARD_GATE"
+    },
+    "R90": {
+      "safe_div_parent_radius_um": 9.0,
+      "status": "NOT_RUN_HARD_GATE"
+    }
+  },
+  "arm_output_files": "NOT_CREATED_HARD_GATE",
+  "per_sample_metrics": "NOT_RUN",
+  "per_fold_metrics": "NOT_RUN",
+  "per_prefix_metrics": "NOT_RUN",
+  "paired_deltas": "NOT_RUN",
+  "aggregate_comparison": "NOT_RUN",
+  "cache": {
+    "used": false,
+    "sha256": null,
+    "equivalence_test": "NOT_RUN"
+  },
+  "kaggle_notebook_version": null,
+  "script_version_id": null,
+  "submission_id": null,
+  "public_score": null,
+  "monitoring_30m": "NOT_APPLICABLE_NO_SUBMISSION"
+}

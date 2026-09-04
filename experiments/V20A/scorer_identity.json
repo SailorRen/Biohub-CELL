@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "status": "PINNED_SOURCE_READ",
+  "evidence_class": "SOURCE_CODE_VERIFIED",
+  "repository": "https://github.com/royerlab/kaggle-cell-tracking-competition",
+  "branch": "main",
+  "commit": "075fc5f5a52d11077f9dc2b074644618f26939e2",
+  "commit_time": "2026-07-17T17:03:46-07:00",
+  "commit_subject": "Merge pull request #2 from royerlab/metrics-fix",
+  "files": {
+    "src/tracking_cellmot/metrics.py": "cfdd596e3f8909cca14db0682889738b19ff75c3808b3773175aba9367ca7444",
+    "src/tracking_cellmot/division_metrics.py": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9",
+    "scripts/evaluate.py": "03ad4049530d3682c77435194e5d921981f331df3462abcde4a7156d1a57b7d3",
+    "metrics.md": "d8a2d3ff21b507242dd23e9b7c687d725261d7b4c79cff086cccb4093141d696",
+    "tests/test_metrics.py": "40726020c13fee8aa53ced61a58e6fde356acab41ae6deaf6e879b325bdfdff2",
+    "tests/test_division_metrics.py": "42cdba8ff668e41206530198e1d188f3d50e7ce256600321f5971a08f480d712",
+    "LICENSE": "3910a8b578783928cbbf981c1b204591ab3368e70017dc695d6536f71d272796"
+  },
+  "score_definition": {
+    "adjustment_alpha": 0.1,
+    "division_weight": 0.1,
+    "formula": "adjusted_edge_jaccard + 0.1 * division_jaccard",
+    "aggregation": "sample-size-weighted adjusted edge Jaccard plus micro division Jaccard"
+  },
+  "cli_summary_output_precision": {
+    "format": ".4f",
+    "decimal_places": 4,
+    "maximum_comparison_tolerance": 0.0001
+  },
+  "local_clone_retained": false,
+  "redistribution": "Only commit identity, file hashes, metric constants, and original analysis are retained."
+}

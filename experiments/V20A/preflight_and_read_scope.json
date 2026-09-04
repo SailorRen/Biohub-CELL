@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260904_BIOHUB_V20A_SAFE_DIV_RADIUS",
+  "captured_at_asia_shanghai": "2026-09-04T12:29:09+08:00",
+  "git_preflight": {
+    "working_tree_before_task": "CLEAN",
+    "branch": "main",
+    "local_head": "f4af9bc5bbdf79e478e1ccba9897c632fd68c659",
+    "origin_main": "f4af9bc5bbdf79e478e1ccba9897c632fd68c659",
+    "ls_remote_main": "f4af9bc5bbdf79e478e1ccba9897c632fd68c659",
+    "ahead": 0,
+    "behind": 0,
+    "remote_fixed_commit_exists": true,
+    "divergence": false,
+    "separate_worktree_required": false
+  },
+  "required_files_read_in_full": [
+    {"path": "AGENTS.md", "sha256": "3d93338818c2e4ecbaad66a77abc47b9512c0e19fecdf0499868e11a27cdadcf"},
+    {"path": "governance/CURRENT_PROJECT_CONTEXT.json", "sha256": "6a9b84bacbb52b9128d98856d3573342f8f5e44d4fa39477375d41e93829ecfc"},
+    {"path": "reports/20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_REPORT_V01.md", "sha256": "a4033313b87e0a6b1876e17996f484a61637b4696c59967a552267d7336013a1"},
+    {"path": "research/20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_AUDIT_V01/05_optimization_opportunities.csv", "sha256": "45ddae00221d71719a04c8ff9bca0c996875e0987ddf011cc76209cdb02a1368"},
+    {"path": "research/20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_AUDIT_V01/06_prioritized_optimization_plan.md", "sha256": "0703866348c15ea947df272caa493bc1fd0dc7b5cb602aa0054abf24570e8246"},
+    {"path": "research/20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_AUDIT_V01/07_risks_and_unknowns.md", "sha256": "51982a4baedab1a8d5c5bbe058e4a0452ef901f4e53b60324e4b6b058e160373"},
+    {"path": "research/20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_AUDIT_V01/audit_summary.json", "sha256": "327d9a368d99076c8fcd216df299f1f323a81e4b3d71d723081095949dd4ece3"},
+    {"path": "research/20260904_BIOHUB_V19C_COPY_AUDIT_V01/evidence/validator_results.csv", "sha256": "ca444b158cb19f8dfc182e38fcd3aab7f2a05eb81d7fa52399ba0eeda5b303fe"},
+    {"path": "research/20260904_BIOHUB_V19C_COPY_AUDIT_V01/evidence/bidirectional_production_runtime_integrity.json", "sha256": "ae41130ee035d3ddcbaf2d0977f721429a52ffda8133fe1b877f51de5926278d"},
+    {"path": "research/20260904_BIOHUB_V19C_COPY_AUDIT_V01/evidence/dual_seed_frame_retention_guard_report.json", "sha256": "b5d3c53c932fe5811fadd190695b1dc3313248840b23b358b02b67d2969218b2"},
+    {"path": "research/20260904_BIOHUB_V19C_COPY_AUDIT_V01/evidence/run_stats.csv", "sha256": "469016975e85dc954275241ce3a5f363d47abe78f661a59ba564911c69cd8adf"},
+    {"path": "research/20260904_BIOHUB_V19C_COPY_AUDIT_V01/00_source_manifest.jsonl", "sha256": "315b7fc77cec3c4058d5c8381dcc19e3431399175f99cc52e25eb4d0f2d91c90"},
+    {"path": "research/20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_AUDIT_V01/00_source_manifest.jsonl", "sha256": "718e95da10d4170aac29dff93ec514f47966be0191faf923d3ff08041a332c4c"}
+  ],
+  "fixed_v19c_source": {
+    "read_status": "FULL_NOTEBOOK_SOURCE_READ",
+    "notebook_ref": "sailorren/biohub-v19c-public0939-sis14-only",
+    "script_version_id": 346969653,
+    "version_number": 1,
+    "bytes": 213952,
+    "sha256": "92bf632410fedc9eb7e0984a20525590b5583d5abb002d8239ff65d9f51fbf57",
+    "cells": 12,
+    "code_cells": 10,
+    "all_cells_checked": true,
+    "all_code_cells_ast_parse": true,
+    "full_source_committed": false
+  },
+  "fixed_v19c_log": {
+    "read_status": "FULL_LOG_READ",
+    "bytes": 111209,
+    "sha256": "a3d3de4a9644f943f37a4804740cd4c44ed0d658d76a47df62a1793fb868634d",
+    "event_count": 622,
+    "runtime_error_events": 0,
+    "secret_pattern_hits": 0,
+    "full_log_committed": false,
+    "sanitized_log_evidence_path": "research/20260904_BIOHUB_V19C_COPY_AUDIT_V01/evidence/runtime_log_sanitized.log"
+  }
+}
