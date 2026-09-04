@@ -4,16 +4,47 @@
     "dataset_write": 0,
     "duplicate_submit": 0,
     "model_write": 0,
-    "notebook_run": 0,
+    "notebook_run": 1,
     "production_save_kernel": 0,
     "retry": 0,
-    "save_kernel_total": 0,
+    "save_kernel_total": 1,
     "submission_status_poll": 0,
     "unauthorized_kaggle_write": 0,
-    "validation_save_kernel": 0
+    "validation_save_kernel": 1
   },
   "count_semantics": "PHYSICAL_API_CALL_COUNTED_AT_STARTED_BEFORE_INVOCATION",
-  "events": [],
+  "events": [
+    {
+      "attempt_id": "v20b-validation-savekernel-001",
+      "operation": "VALIDATION_SAVE_KERNEL",
+      "phase": "STARTED",
+      "invoked_at_utc": "2026-09-04T10:51:50Z",
+      "target": "sailorren/biohub-v20b-two-embryo-radius-validation",
+      "counter_keys": [
+        "validation_save_kernel",
+        "save_kernel_total",
+        "notebook_run"
+      ],
+      "pre_call_principal": "sailorren",
+      "pre_call_gpu_quota": {
+        "displayed_used_hours": 5.6,
+        "displayed_total_hours": 30.0,
+        "derived_remaining_hours": 24.4
+      },
+      "pre_call_external_write_counts": {
+        "save_kernel": 0,
+        "dataset_write": 0,
+        "model_write": 0,
+        "competition_submission": 0
+      },
+      "prewrite_evidence_path": "experiments/V20B/kaggle_prewrite_validation_ui.json",
+      "prewrite_git_commit": "288c4d88c9ba5612844d9427da468a806a6551fb",
+      "validation_builder_sha256": "5f01fed4eda31d2095f1cd5791fe2ccb1a55d149c9b54c18720051b7a154b9e3",
+      "validation_notebook_sha256": "8bea7c6c7bdd147a116603337421a1035073679799b72991bd7b045ee245d67f",
+      "validation_build_manifest_sha256": "cbfbab546c56814859e4773fc8bdd7ce2ed80513bd83b4148af85464fddb00a9",
+      "validation_kernel_metadata_sha256": "5efb62aa4009201d50e97a64bcc480c5d458692e46f97a28d54baf91580f267d"
+    }
+  ],
   "read_only_preflight": {
     "baseline_kernel_status": "KernelWorkerStatus.COMPLETE",
     "competition_full_metadata_refresh": "PARTIAL_READ_FAILED_SSL_EOF_AT_PAGE_31_NO_RETRY",
@@ -25,6 +56,6 @@
     "quota_refresh_at_utc": "2026-09-05T00:00:00Z"
   },
   "schema_version": "1.0",
-  "status": "PRE_RUN_ZERO_WRITES",
+  "status": "VALIDATION_CALL_STARTED",
   "task_id": "CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS"
 }
