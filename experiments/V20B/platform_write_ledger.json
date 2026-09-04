@@ -43,6 +43,24 @@
       "validation_notebook_sha256": "8bea7c6c7bdd147a116603337421a1035073679799b72991bd7b045ee245d67f",
       "validation_build_manifest_sha256": "cbfbab546c56814859e4773fc8bdd7ce2ed80513bd83b4148af85464fddb00a9",
       "validation_kernel_metadata_sha256": "5efb62aa4009201d50e97a64bcc480c5d458692e46f97a28d54baf91580f267d"
+    },
+    {
+      "attempt_id": "v20b-validation-savekernel-001",
+      "operation": "VALIDATION_SAVE_KERNEL",
+      "phase": "RESULT",
+      "completed_at_utc": "2026-09-04T10:53:21Z",
+      "target": "sailorren/biohub-v20b-two-embryo-radius-validation",
+      "outcome": "SUCCESS",
+      "returned_status": "KERNEL_VERSION_PUSH_ACCEPTED",
+      "returned_version": 1,
+      "returned_url": "https://www.kaggle.com/code/sailorren/biohub-v20b-two-embryo-radius-validation",
+      "cli_exit_code": 0,
+      "retry_count": 0,
+      "counter_keys": [],
+      "validation_builder_sha256": "5f01fed4eda31d2095f1cd5791fe2ccb1a55d149c9b54c18720051b7a154b9e3",
+      "validation_notebook_sha256": "8bea7c6c7bdd147a116603337421a1035073679799b72991bd7b045ee245d67f",
+      "validation_build_manifest_sha256": "cbfbab546c56814859e4773fc8bdd7ce2ed80513bd83b4148af85464fddb00a9",
+      "validation_kernel_metadata_sha256": "5efb62aa4009201d50e97a64bcc480c5d458692e46f97a28d54baf91580f267d"
     }
   ],
   "read_only_preflight": {
@@ -56,6 +74,6 @@
     "quota_refresh_at_utc": "2026-09-05T00:00:00Z"
   },
   "schema_version": "1.0",
-  "status": "VALIDATION_CALL_STARTED",
+  "status": "VALIDATION_VERSION_1_ACCEPTED_RUNNING",
   "task_id": "CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS"
 }
