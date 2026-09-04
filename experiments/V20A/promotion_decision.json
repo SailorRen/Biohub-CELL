@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260904_BIOHUB_V20A_SAFE_DIV_RADIUS",
+  "decision": "BLOCKED_INSUFFICIENT_EMBRYO_GROUPS",
+  "decision_stage": "PRE_RUN_FROZEN_SPLIT_GATE",
+  "selected_arm": null,
+  "selected_radius_um": null,
+  "no_promotion": true,
+  "reason": "The authoritative competition file inventory contains 199 structurally eligible labeled train samples but only two embryo groups (44b6 and 6bba); the frozen contract requires at least three effective groups before any candidate run.",
+  "evidence": {
+    "inventory_path": "experiments/V20A/frozen_embryo_inventory.csv",
+    "inventory_sha256": "0696842719c579bab6afb4dacd5982ac185dd2a5642cf48facfe25128da7360a",
+    "split_path": "experiments/V20A/frozen_split.json",
+    "split_sha256": "9185ef6812363d82bfc20a694f9de27cee00a5901071e0684c053bc7de004de8",
+    "eligible_sample_count": 199,
+    "effective_embryo_group_count": 2,
+    "minimum_required_group_count": 3,
+    "groups": {
+      "44b6": 71,
+      "6bba": 128
+    }
+  },
+  "baseline_reproduction": "NOT_RUN_HARD_GATE",
+  "candidate_results": {
+    "R70": "NOT_RUN_HARD_GATE",
+    "R80": "NOT_RUN_HARD_GATE",
+    "R90": "NOT_RUN_HARD_GATE"
+  },
+  "promotion_gates": [
+    {"id": "minimum_three_embryo_groups", "status": "FAIL", "observed": 2, "required": 3},
+    {"id": "all_frozen_folds_complete", "status": "NOT_EVALUATED_HARD_GATE"},
+    {"id": "canonical_config", "status": "NOT_EVALUATED_NO_ARM_RUNTIME"},
+    {"id": "identity_match", "status": "NOT_EVALUATED_NO_ARM_RUNTIME"},
+    {"id": "single_variable_only", "status": "NOT_EVALUATED_NO_ARM_RUNTIME"},
+    {"id": "fold_mean_improves", "status": "NOT_EVALUATED_NO_FOLDS"},
+    {"id": "fold_median_noninferior", "status": "NOT_EVALUATED_NO_FOLDS"},
+    {"id": "worst_prefix_noninferior", "status": "NOT_EVALUATED_NO_FOLDS"},
+    {"id": "micro_division_jaccard_improves", "status": "NOT_EVALUATED_NO_RUN"},
+    {"id": "division_fp_compensated", "status": "NOT_EVALUATED_NO_RUN"},
+    {"id": "topology_valid", "status": "NOT_EVALUATED_NO_RUN"},
+    {"id": "cap_saturation_not_worse", "status": "NOT_EVALUATED_NO_RUN"},
+    {"id": "benefit_not_concentrated", "status": "NOT_EVALUATED_NO_RUN"},
+    {"id": "node_penalty_explained", "status": "NOT_EVALUATED_NO_RUN"},
+    {"id": "runtime_safe", "status": "NOT_EVALUATED_NO_RUN"},
+    {"id": "reproducible_from_frozen_contract", "status": "NOT_EVALUATED_NO_RUN"}
+  ],
+  "kaggle_notebook_version_created": false,
+  "kaggle_notebook_version": null,
+  "script_version_id": null,
+  "kaggle_submission_created": false,
+  "submission_id": null,
+  "submission_public_score": null,
+  "monitoring_30m": "NOT_APPLICABLE_NO_SUBMISSION",
+  "retry_count": 0
+}

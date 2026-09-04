@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260904_BIOHUB_V20A_SAFE_DIV_RADIUS",
+  "status": "PLANNED_FROZEN_BEFORE_ANY_CANDIDATE_RUN",
+  "contract_path": "experiments/V20A/contract.json",
+  "contract_sha256": "85f78b97015fa2d16cf4ab8fa6c8526fe8cc302da81d215a886940316daa3c68",
+  "freeze_git_commit": "0feb0e4b7f09b390b5ff1397ac672993fd9482a4",
+  "freeze_integrity_scope": "git-tracked-and-sha256",
+  "prepared_state": "PLANNED",
+  "candidate_run_count_before_freeze": 0,
+  "kaggle_write_count_before_freeze": 0,
+  "note": "The embryo inventory was collected before freeze, but no R70/R80/R90 candidate run or Kaggle write occurred before the contract was frozen."
+}

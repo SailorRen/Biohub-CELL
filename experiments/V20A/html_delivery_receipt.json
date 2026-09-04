@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260904_BIOHUB_V20A_SAFE_DIV_RADIUS",
+  "status": "PASS_WITH_BROWSER_QA_LIMITATION",
+  "builder": "data-analytics build-report portable artifact delivery",
+  "stages": {
+    "validation": "passed",
+    "package": "passed",
+    "verification": "structural_only"
+  },
+  "counts": {
+    "blocks": 11,
+    "charts": 1,
+    "metric_cards": 4,
+    "tables": 3,
+    "custom_html_blocks": 0
+  },
+  "files": {
+    "reports/20260904_BIOHUB_V20A_SAFE_DIV_RADIUS_OPTIMIZATION_REPORT_V01.md": "a70e787312a497bf9f76c25f45fe7db31b1bdb0a2f98d2d84f70e8b22dad130e",
+    "reports/20260904_BIOHUB_V20A_SAFE_DIV_RADIUS_OPTIMIZATION_REPORT_V01.artifact.json": "9dd36513c40e8f27b45eb726e2dbe18b56c42a98be41239078de26592773462c",
+    "reports/20260904_BIOHUB_V20A_SAFE_DIV_RADIUS_OPTIMIZATION_REPORT_V01.html": "27c9df7bf7c8178dbae0082d5ae9d5440ccfc4040b4eef4780829eef81d42d85"
+  },
+  "browser_qa": {
+    "status": "NOT_RUN_BROWSER_SECURITY_POLICY",
+    "packager_headless_browser": "UNAVAILABLE",
+    "manual_browser_attempt": "BLOCKED_BY_BROWSER_URL_POLICY_FOR_LOCAL_FILE",
+    "source_dialog": "NOT_VERIFIED",
+    "source_interaction": "NOT_VERIFIED",
+    "viewports": [],
+    "limitation": "The canonical artifact and semantic fallback passed structural checks, but visual interaction and viewport QA were not observable in this environment."
+  },
+  "chart_scope": "A two-bar sample-count view only; no score trend or performance inference is displayed."
+}
