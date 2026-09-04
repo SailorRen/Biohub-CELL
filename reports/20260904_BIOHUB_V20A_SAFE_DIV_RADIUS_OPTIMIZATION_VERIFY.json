@@ -1,0 +1,456 @@
+{
+  "checks": [
+    {
+      "detail": "13/13 match",
+      "id": "fixed_read_scope_hashes",
+      "status": "PASS"
+    },
+    {
+      "detail": "85f78b97015fa2d16cf4ab8fa6c8526fe8cc302da81d215a886940316daa3c68",
+      "id": "contract_sha256",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "candidate_run_count_before_freeze": 0,
+        "contract_path": "experiments/V20A/contract.json",
+        "contract_sha256": "85f78b97015fa2d16cf4ab8fa6c8526fe8cc302da81d215a886940316daa3c68",
+        "freeze_git_commit": "0feb0e4b7f09b390b5ff1397ac672993fd9482a4",
+        "freeze_integrity_scope": "git-tracked-and-sha256",
+        "kaggle_write_count_before_freeze": 0,
+        "note": "The embryo inventory was collected before freeze, but no R70/R80/R90 candidate run or Kaggle write occurred before the contract was frozen.",
+        "prepared_state": "PLANNED",
+        "schema_version": "1.0",
+        "status": "PLANNED_FROZEN_BEFORE_ANY_CANDIDATE_RUN",
+        "task_id": "CODEX_20260904_BIOHUB_V20A_SAFE_DIV_RADIUS"
+      },
+      "id": "contract_pre_run_freeze",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "contract_sha256": "85f78b97015fa2d16cf4ab8fa6c8526fe8cc302da81d215a886940316daa3c68",
+        "status": "PLANNED"
+      },
+      "id": "independent_prepare_state",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "eligible": 199,
+        "groups": {
+          "44b6": 71,
+          "6bba": 128
+        },
+        "rows": 199
+      },
+      "id": "full_train_inventory",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "candidate_runs_allowed": false,
+        "decision_rule": {
+          "if_insufficient": "stop all candidate arms and forbid Kaggle Notebook/version/submission writes",
+          "if_sufficient": "K=min(5, embryo_group_count)",
+          "minimum_effective_embryo_groups": 3
+        },
+        "effective_embryo_group_count": 2,
+        "effective_group_count_is_upper_bound": "All labeled train stems in the authoritative listing use only these two prefixes; payload-level ineligibility could reduce but cannot increase the count.",
+        "embryo_groups": [
+          {
+            "embryo_group": "44b6",
+            "sample_count": 71
+          },
+          {
+            "embryo_group": "6bba",
+            "sample_count": 128
+          }
+        ],
+        "embryo_leakage_status": "NOT_EVALUABLE_NO_FOLDS_CREATED",
+        "excluded_sample_count": 0,
+        "fold_assignment_status": "NOT_CREATED_HARD_GATE",
+        "fold_count": null,
+        "folds": [],
+        "grouping": {
+          "field": "first underscore-delimited segment of the sample folder name",
+          "meaning": "embryo_id",
+          "official_rule_evidence_path": "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/official_kaggle/evidence/browser_official_routes.json",
+          "official_rule_evidence_sha256": "86dce5c34f8e17df231ae6f67486aa950ad61972f06418b5030c0f4c5eb1ebaf",
+          "official_rule_excerpt_paraphrase": "The first folder-name segment identifies the embryo; multiple samples may share an embryo and train/test embryos are disjoint."
+        },
+        "inventory": {
+          "competition_file_metadata_sha256": "260313bb5f12accebd9a70c0b0be43c659090de81f1839c7d06971b11bde3dc6",
+          "eligibility_boundary": "Paired train image/GT directories and all required schema metadata paths are present in the authoritative file listing; GEFF metadata contents were not downloaded.",
+          "eligible_sample_count": 199,
+          "image_or_geff_payload_download_count": 0,
+          "path": "experiments/V20A/frozen_embryo_inventory.csv",
+          "sha256": "0696842719c579bab6afb4dacd5982ac185dd2a5642cf48facfe25128da7360a"
+        },
+        "kaggle_submission_allowed": false,
+        "schema_version": "1.0",
+        "selected_sample_count": 199,
+        "split_csv_path": "experiments/V20A/frozen_split.csv",
+        "split_csv_sha256": "9b78064ee23c5d557df6549adda241180dd23b71a30434dfc99777c4558d132e",
+        "status": "BLOCKED_INSUFFICIENT_EMBRYO_GROUPS",
+        "task_id": "CODEX_20260904_BIOHUB_V20A_SAFE_DIV_RADIUS",
+        "test_identity_used_for_split": false,
+        "test_isolation_check": "PASS_TEST_IDENTITIES_NOT_USED_FOR_ASSIGNMENT"
+      },
+      "id": "frozen_split_hard_stop",
+      "status": "PASS"
+    },
+    {
+      "detail": "rows=199",
+      "id": "no_fold_assignments",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "access_mode": "KAGGLE_COMPETITION_LIST_FILES_METADATA_ONLY",
+        "access_time_asia_shanghai": "2026-09-04T12:16:34.114443+08:00",
+        "access_time_utc": "2026-09-04T04:16:34.114443+00:00",
+        "canonical_file_metadata_sha256": "260313bb5f12accebd9a70c0b0be43c659090de81f1839c7d06971b11bde3dc6",
+        "competition": "biohub-cell-tracking-during-development",
+        "eligibility_boundary": "Paired train image/GT directories and all required schema metadata paths are present in the authoritative file listing; GEFF metadata contents were not downloaded.",
+        "eligible_train_stem_count": 199,
+        "embryo_group_count": 2,
+        "embryo_groups": [
+          "44b6",
+          "6bba"
+        ],
+        "image_or_geff_payload_download_count": 0,
+        "inventory_sha256": "0696842719c579bab6afb4dacd5982ac185dd2a5642cf48facfe25128da7360a",
+        "page_size": 200,
+        "pages_read": 125,
+        "pagination_tokens_persisted": false,
+        "raw_payload_persisted": false,
+        "schema_version": "1.0",
+        "test_stem_count": 4,
+        "train_stem_count": 199,
+        "unique_file_metadata_rows": 24886,
+        "unique_file_metadata_total_bytes": 87609892618
+      },
+      "id": "competition_inventory_receipt",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "branch": "main",
+        "cli_summary_output_precision": {
+          "decimal_places": 4,
+          "format": ".4f",
+          "maximum_comparison_tolerance": 0.0001
+        },
+        "commit": "075fc5f5a52d11077f9dc2b074644618f26939e2",
+        "commit_subject": "Merge pull request #2 from royerlab/metrics-fix",
+        "commit_time": "2026-07-17T17:03:46-07:00",
+        "evidence_class": "SOURCE_CODE_VERIFIED",
+        "files": {
+          "LICENSE": "3910a8b578783928cbbf981c1b204591ab3368e70017dc695d6536f71d272796",
+          "metrics.md": "d8a2d3ff21b507242dd23e9b7c687d725261d7b4c79cff086cccb4093141d696",
+          "scripts/evaluate.py": "03ad4049530d3682c77435194e5d921981f331df3462abcde4a7156d1a57b7d3",
+          "src/tracking_cellmot/division_metrics.py": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9",
+          "src/tracking_cellmot/metrics.py": "cfdd596e3f8909cca14db0682889738b19ff75c3808b3773175aba9367ca7444",
+          "tests/test_division_metrics.py": "42cdba8ff668e41206530198e1d188f3d50e7ce256600321f5971a08f480d712",
+          "tests/test_metrics.py": "40726020c13fee8aa53ced61a58e6fde356acab41ae6deaf6e879b325bdfdff2"
+        },
+        "local_clone_retained": false,
+        "redistribution": "Only commit identity, file hashes, metric constants, and original analysis are retained.",
+        "repository": "https://github.com/royerlab/kaggle-cell-tracking-competition",
+        "schema_version": "1.0",
+        "score_definition": {
+          "adjustment_alpha": 0.1,
+          "aggregation": "sample-size-weighted adjusted edge Jaccard plus micro division Jaccard",
+          "division_weight": 0.1,
+          "formula": "adjusted_edge_jaccard + 0.1 * division_jaccard"
+        },
+        "status": "PINNED_SOURCE_READ"
+      },
+      "id": "official_scorer_identity",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "pilkwang/biohub-deepcenter-unet3d-center-prior-v1": [
+          11061989,
+          5,
+          "89f363d37bb6e5e710c8aeaac32d8985f9cbc49477e156732291c238b3a5638f"
+        ],
+        "pilkwang/biohub-temporal-unet3d-seed314159-v1": [
+          11184174,
+          2,
+          "9bd5b1a2ae2db31d1895f69d708648afc27f973bc419bef9c1917808e65ded1a"
+        ],
+        "pilkwang/biohub-tracking-support-pack-50ep-v1": [
+          10999845,
+          10,
+          "ded6cc4648111c3ca1434b9708404ffdb0083132e3e49687b69b4cf85d1e07fe"
+        ]
+      },
+      "id": "input_dataset_identities",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "baseline_reproduction": "NOT_RUN_HARD_GATE",
+        "candidate_results": {
+          "R70": "NOT_RUN_HARD_GATE",
+          "R80": "NOT_RUN_HARD_GATE",
+          "R90": "NOT_RUN_HARD_GATE"
+        },
+        "decision": "BLOCKED_INSUFFICIENT_EMBRYO_GROUPS",
+        "decision_stage": "PRE_RUN_FROZEN_SPLIT_GATE",
+        "evidence": {
+          "effective_embryo_group_count": 2,
+          "eligible_sample_count": 199,
+          "groups": {
+            "44b6": 71,
+            "6bba": 128
+          },
+          "inventory_path": "experiments/V20A/frozen_embryo_inventory.csv",
+          "inventory_sha256": "0696842719c579bab6afb4dacd5982ac185dd2a5642cf48facfe25128da7360a",
+          "minimum_required_group_count": 3,
+          "split_path": "experiments/V20A/frozen_split.json",
+          "split_sha256": "9185ef6812363d82bfc20a694f9de27cee00a5901071e0684c053bc7de004de8"
+        },
+        "kaggle_notebook_version": null,
+        "kaggle_notebook_version_created": false,
+        "kaggle_submission_created": false,
+        "monitoring_30m": "NOT_APPLICABLE_NO_SUBMISSION",
+        "no_promotion": true,
+        "promotion_gates": [
+          {
+            "id": "minimum_three_embryo_groups",
+            "observed": 2,
+            "required": 3,
+            "status": "FAIL"
+          },
+          {
+            "id": "all_frozen_folds_complete",
+            "status": "NOT_EVALUATED_HARD_GATE"
+          },
+          {
+            "id": "canonical_config",
+            "status": "NOT_EVALUATED_NO_ARM_RUNTIME"
+          },
+          {
+            "id": "identity_match",
+            "status": "NOT_EVALUATED_NO_ARM_RUNTIME"
+          },
+          {
+            "id": "single_variable_only",
+            "status": "NOT_EVALUATED_NO_ARM_RUNTIME"
+          },
+          {
+            "id": "fold_mean_improves",
+            "status": "NOT_EVALUATED_NO_FOLDS"
+          },
+          {
+            "id": "fold_median_noninferior",
+            "status": "NOT_EVALUATED_NO_FOLDS"
+          },
+          {
+            "id": "worst_prefix_noninferior",
+            "status": "NOT_EVALUATED_NO_FOLDS"
+          },
+          {
+            "id": "micro_division_jaccard_improves",
+            "status": "NOT_EVALUATED_NO_RUN"
+          },
+          {
+            "id": "division_fp_compensated",
+            "status": "NOT_EVALUATED_NO_RUN"
+          },
+          {
+            "id": "topology_valid",
+            "status": "NOT_EVALUATED_NO_RUN"
+          },
+          {
+            "id": "cap_saturation_not_worse",
+            "status": "NOT_EVALUATED_NO_RUN"
+          },
+          {
+            "id": "benefit_not_concentrated",
+            "status": "NOT_EVALUATED_NO_RUN"
+          },
+          {
+            "id": "node_penalty_explained",
+            "status": "NOT_EVALUATED_NO_RUN"
+          },
+          {
+            "id": "runtime_safe",
+            "status": "NOT_EVALUATED_NO_RUN"
+          },
+          {
+            "id": "reproducible_from_frozen_contract",
+            "status": "NOT_EVALUATED_NO_RUN"
+          }
+        ],
+        "reason": "The authoritative competition file inventory contains 199 structurally eligible labeled train samples but only two embryo groups (44b6 and 6bba); the frozen contract requires at least three effective groups before any candidate run.",
+        "retry_count": 0,
+        "schema_version": "1.0",
+        "script_version_id": null,
+        "selected_arm": null,
+        "selected_radius_um": null,
+        "submission_id": null,
+        "submission_public_score": null,
+        "task_id": "CODEX_20260904_BIOHUB_V20A_SAFE_DIV_RADIUS"
+      },
+      "id": "promotion_decision_recomputed",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "aggregate_comparison": "NOT_RUN",
+        "arm_output_files": "NOT_CREATED_HARD_GATE",
+        "arms": {
+          "R70": {
+            "baseline_reproduction": "NOT_RUN",
+            "safe_div_parent_radius_um": 7.0,
+            "status": "NOT_RUN_HARD_GATE"
+          },
+          "R80": {
+            "safe_div_parent_radius_um": 8.0,
+            "status": "NOT_RUN_HARD_GATE"
+          },
+          "R90": {
+            "safe_div_parent_radius_um": 9.0,
+            "status": "NOT_RUN_HARD_GATE"
+          }
+        },
+        "cache": {
+          "equivalence_test": "NOT_RUN",
+          "sha256": null,
+          "used": false
+        },
+        "hard_gate": {
+          "candidate_execution_allowed": false,
+          "observed_effective_embryo_groups": 2,
+          "required_effective_embryo_groups": 3
+        },
+        "kaggle_notebook_version": null,
+        "monitoring_30m": "NOT_APPLICABLE_NO_SUBMISSION",
+        "paired_deltas": "NOT_RUN",
+        "per_fold_metrics": "NOT_RUN",
+        "per_prefix_metrics": "NOT_RUN",
+        "per_sample_metrics": "NOT_RUN",
+        "public_score": null,
+        "schema_version": "1.0",
+        "script_version_id": null,
+        "status": "BLOCKED_INSUFFICIENT_EMBRYO_GROUPS",
+        "submission_id": null,
+        "task_id": "CODEX_20260904_BIOHUB_V20A_SAFE_DIV_RADIUS"
+      },
+      "id": "all_arms_not_run",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "cancel": 0,
+        "competition_submit": 0,
+        "dataset_create_or_update": 0,
+        "delete": 0,
+        "duplicate_submit": 0,
+        "model_create_or_update": 0,
+        "notebook_create": 0,
+        "notebook_run": 0,
+        "retry": 0,
+        "save_kernel": 0,
+        "submission_status_poll": 0,
+        "unauthorized_kaggle_write": 0
+      },
+      "id": "platform_zero_writes",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "duplicate_submissions": 0,
+        "formal_competition_submissions": 1,
+        "production_notebook_versions": 1,
+        "save_kernel_total": 4,
+        "submission_retries": 0,
+        "unauthorized_kaggle_writes": 0,
+        "validation_notebook_versions": 3
+      },
+      "id": "write_budget_frozen_and_unspent",
+      "status": "PASS"
+    },
+    {
+      "detail": "no arm/submission/poll outputs",
+      "id": "forbidden_run_artifacts_absent",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "background_monitor_process_created": false,
+        "fatal_error_observed": null,
+        "history_file_status": "NOT_CREATED_BECAUSE_NO_SUBMISSION_EXISTS",
+        "history_path": null,
+        "monitor_end": null,
+        "monitor_start": null,
+        "next_action": "NO_SCORE_EXISTS_FOR_THIS_TASK; ANY_FUTURE_SCORE_READ_REQUIRES_EXPLICIT_USER_REQUEST",
+        "poll_count": 0,
+        "public_score": null,
+        "schema_version": "1.0",
+        "status": "NOT_RUN_NO_SUBMISSION",
+        "submission_id": null,
+        "task_id": "CODEX_20260904_BIOHUB_V20A_SAFE_DIV_RADIUS"
+      },
+      "id": "monitoring_not_started",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "bytes": 21990,
+        "required_terms": 9
+      },
+      "id": "markdown_report",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "bytes": 496931
+      },
+      "id": "portable_html_report",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "surface": "report"
+      },
+      "id": "canonical_report_artifact",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "returncode": 0,
+        "stdout": "V20A_RESOLVED_CONFIG_SELF_TEST_PASS"
+      },
+      "id": "resolved_config_checker_self_test",
+      "status": "PASS"
+    },
+    {
+      "detail": "29 tracked files clean",
+      "id": "sensitive_material_scan",
+      "status": "PASS"
+    },
+    {
+      "detail": "f4af9bc5bbdf79e478e1ccba9897c632fd68c659",
+      "id": "base_commit_ancestor",
+      "status": "PASS"
+    }
+  ],
+  "domain_status": "BLOCKED_INSUFFICIENT_EMBRYO_GROUPS",
+  "interpretation": "PASS verifies the hard-stop evidence and delivery mechanics only; it does not verify an arm run, Kaggle runtime, submission, score, or performance gain.",
+  "remote": null,
+  "schema_version": "1.0",
+  "status": "PASS",
+  "summary": {
+    "failed": 0,
+    "passed": 22
+  },
+  "task_id": "CODEX_20260904_BIOHUB_V20A_SAFE_DIV_RADIUS",
+  "verification_scope": "LOCAL_EVIDENCE_ONLY",
+  "verified_at_asia_shanghai": "2026-09-04T12:53:36+08:00"
+}
