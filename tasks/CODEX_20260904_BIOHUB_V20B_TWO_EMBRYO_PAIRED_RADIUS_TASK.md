@@ -130,9 +130,12 @@ Public Score=`null`。没有 submission，因此 30 分钟提交监控不适用�
 领域验证器仅对“精确相对路径 + 精确文件 SHA-256 + 精确单个占位字面量”
 三者同时匹配时做扫描前替换；路径或 SHA 任一不同的自测均确认仍会拦截。
 修复后领域验证器 SHA-256 为
-`86f929705c754aac3c0d8558305051cc9eb55eeb5a233c23bc23061974af6f58`；其秘密扫描、
+`e9a927f7b271944c0397ec2d04ee639b1f2825959bc360b2cc56851662a776da`；其秘密扫描、
 预算、晋升规则与 blocked 结论未放宽。修复后无写入复核为 18 PASS / 0 FAIL，
 后续又将报告证据校验器的只读 `--check-only` 结果纳入必须门，最终为
 19 PASS / 0 FAIL。该门结构化校验 terminal receipt、failure diagnosis 与
 ledger 的 Notebook Version / ScriptVersionId 绑定，并将三者及运行日志纳入最终收据哈希。
 领域状态仍为 `BLOCKED_VALIDATION_PAYLOAD_OR_RUNTIME`。
+外层 `verify-task-completion` 执行合同命令时会将本地任务状态短暂设为
+`VERIFYING`；领域验证器仅将这一框架过渡状态加入允许集，仍要求任务 ID、合同 SHA、
+冻结 HEAD 及合同已跟踪/与冻结 HEAD 一致全部通过。

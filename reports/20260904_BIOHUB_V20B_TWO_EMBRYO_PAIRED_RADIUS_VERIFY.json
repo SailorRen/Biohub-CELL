@@ -21,7 +21,7 @@
         "contract_sha256": "ea46844436142e61c3bc570b4e616531b69eca2cbc609935cf84ce768d41a40b",
         "freeze_head": "569bd65a0c367e7be5a8097101cd4bd288835a53",
         "prepared_at": "2026-09-04T16:30:35+08:00",
-        "status": "PLANNED"
+        "status": "VERIFYING"
       },
       "id": "contract_pre_run_prepare_state",
       "status": "PASS"
@@ -279,8 +279,8 @@
     "reports/20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS_REPORT_V01.md": "f65989300fe408a2df78f9b88a3831ce140e6d5d9bff70a70150186cc6d5fde1",
     "scripts/build_v20b_final_report.py": "ee5b8020285dac6878e7cef8a93d02f49dd16f362fb550b58caab19c98794521",
     "scripts/build_v20b_validation_notebook.py": "5f01fed4eda31d2095f1cd5791fe2ccb1a55d149c9b54c18720051b7a154b9e3",
-    "scripts/verify_v20b_two_embryo_radius.py": "86f929705c754aac3c0d8558305051cc9eb55eeb5a233c23bc23061974af6f58",
-    "tasks/CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS_TASK.md": "35534ba04cedc6deea991d21c450e17ad369929fcfbc38e2748c80ed89da8d3b"
+    "scripts/verify_v20b_two_embryo_radius.py": "e9a927f7b271944c0397ec2d04ee639b1f2825959bc360b2cc56851662a776da",
+    "tasks/CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS_TASK.md": "c097dc8ad2ecf8aa4ab0f6530d570e1dbe6f678d8c48ca292f215345e30bb675"
   },
   "offline_recomputation": null,
   "platform_counts": {

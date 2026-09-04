@@ -453,6 +453,12 @@ SUCCESS_TEXT = {
     "OK",
     "VALID",
 }
+TASK_STATE_ACCEPTED_STATUSES = {
+    "PLANNED",
+    "CLAIMED_COMPLETE",
+    "VERIFYING",
+    "COMPLETED_VERIFIED",
+}
 FAIL_TEXT = {
     "FAIL",
     "FAILED",
@@ -986,7 +992,7 @@ def check_contract_and_frozen_inputs(
     state_ok = (
         state.get("task_id") == TASK_ID
         and state.get("contract_sha256") == CONTRACT_SHA256
-        and state.get("status") in {"PLANNED", "CLAIMED_COMPLETE", "COMPLETED_VERIFIED"}
+        and state.get("status") in TASK_STATE_ACCEPTED_STATUSES
         and state.get("baseline", {}).get("contract_tracked") is True
         and state.get("baseline", {}).get("contract_matches_head") is True
         and HEX_GIT_COMMIT.fullmatch(str(state_head)) is not None
