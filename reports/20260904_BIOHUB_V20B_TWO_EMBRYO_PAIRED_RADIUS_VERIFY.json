@@ -1,0 +1,506 @@
+{
+  "checks": [
+    {
+      "detail": {
+        "actual": "ea46844436142e61c3bc570b4e616531b69eca2cbc609935cf84ce768d41a40b",
+        "expected": "ea46844436142e61c3bc570b4e616531b69eca2cbc609935cf84ce768d41a40b"
+      },
+      "id": "frozen_contract_sha256",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "screen_name": "TWO_EMBRYO_PAIRED_SENSITIVITY_SCREEN",
+        "task_id": "CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS"
+      },
+      "id": "frozen_contract_identity",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "contract_sha256": "ea46844436142e61c3bc570b4e616531b69eca2cbc609935cf84ce768d41a40b",
+        "freeze_head": "569bd65a0c367e7be5a8097101cd4bd288835a53",
+        "prepared_at": "2026-09-04T16:30:35+08:00",
+        "status": "PLANNED"
+      },
+      "id": "contract_pre_run_prepare_state",
+      "status": "PASS"
+    },
+    {
+      "detail": "3/3 match",
+      "id": "frozen_control_files_sha256",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "actual": "5f01fed4eda31d2095f1cd5791fe2ccb1a55d149c9b54c18720051b7a154b9e3",
+        "expected": "5f01fed4eda31d2095f1cd5791fe2ccb1a55d149c9b54c18720051b7a154b9e3"
+      },
+      "id": "frozen_validation_builder_sha256",
+      "status": "PASS"
+    },
+    {
+      "detail": "16/16 match",
+      "id": "frozen_read_scope_sha256",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "anchors": [
+          "44b6_0c582fdc",
+          "6bba_062c8d37"
+        ],
+        "embryos": {
+          "44b6": 71,
+          "6bba": 128
+        },
+        "samples": 199,
+        "unique_samples": 199
+      },
+      "id": "frozen_sample_identity",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "allowed_fact_classes": [
+          "OFFICIAL_FACT",
+          "HOST_CONFIRMED",
+          "SOURCE_CODE_VERIFIED",
+          "MEASURED",
+          "AUTHOR_CLAIM",
+          "COMMUNITY_REPORT",
+          "INFERENCE",
+          "UNKNOWN"
+        ],
+        "biological_independence": {
+          "field_of_view_count_is_not_embryo_count": true,
+          "independent_embryo_strata": [
+            "44b6",
+            "6bba"
+          ],
+          "multi_fold_cv_claim_allowed": false,
+          "sample_independence_claim_allowed": false,
+          "sample_level_significance_for_cross_embryo_generalization_allowed": false
+        },
+        "checkpoint_overlap": {
+          "must_remain_explicit": true,
+          "status": "CHECKPOINT_TRAINING_OVERLAP_UNKNOWN"
+        },
+        "delivery_completion_is_performance_improvement": false,
+        "experiment_label": "TWO_EMBRYO_PAIRED_SENSITIVITY_SCREEN",
+        "hidden_test_gain_evidence": "NEW_KAGGLE_SUBMISSION_PUBLIC_SCORE_ONLY",
+        "historical_invariants": {
+          "v20a_arm_statuses": {
+            "R70": "NOT_RUN_HARD_GATE",
+            "R80": "NOT_RUN_HARD_GATE",
+            "R90": "NOT_RUN_HARD_GATE"
+          },
+          "v20a_domain_status": "BLOCKED_INSUFFICIENT_EMBRYO_GROUPS",
+          "v20a_files_must_not_be_modified": true,
+          "v20b_is_new_contract_not_v20a_backfill": true
+        },
+        "historical_other_notebook_submission_56002593": "OUT_OF_SCOPE_NOT_V20B_EVIDENCE",
+        "offline_result_scope": "KAGGLE_TEST_CANDIDATE_SELECTION_ONLY",
+        "schema_version": "1.0",
+        "score_prediction_allowed": false,
+        "task_id": "CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS"
+      },
+      "id": "evidence_boundary",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "core_complete": false,
+        "declared_decision": "BLOCKED_VALIDATION_PAYLOAD_OR_RUNTIME",
+        "domain_status": "BLOCKED_VALIDATION_PAYLOAD_OR_RUNTIME",
+        "reason": "payload, scoring, topology, anchor, or runtime evidence did not pass"
+      },
+      "id": "terminal_state_consistency",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "detail": {
+          "decision": "BLOCKED_VALIDATION_PAYLOAD_OR_RUNTIME",
+          "selected_arm": null,
+          "selected_radius_um": null,
+          "sha256": "285bd63a443a097f4ab902d03bb61d7ef8d41a9379dad2914e8024c05551b08a"
+        },
+        "outcome": "PASS"
+      },
+      "id": "promotion_verified",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "detail": {
+          "decision": "BLOCKED_VALIDATION_PAYLOAD_OR_RUNTIME",
+          "failed_stage": "PREDICTOR_PATCHES",
+          "predictor_runs_started": 0,
+          "promotion_sha256": "285bd63a443a097f4ab902d03bb61d7ef8d41a9379dad2914e8024c05551b08a",
+          "runtime_sha256": "8d8aa49c1c391fa4bdc7642175d04a1039333729ea762492aaf5afe90c4bdf7b"
+        },
+        "outcome": "PASS"
+      },
+      "id": "failure_receipts_verified",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "detail": {
+          "counts": {
+            "competition_submit": 0,
+            "dataset_write": 0,
+            "duplicate_submit": 0,
+            "model_write": 0,
+            "notebook_run": 1,
+            "production_save_kernel": 0,
+            "retry": 0,
+            "save_kernel_total": 1,
+            "submission_status_poll": 0,
+            "unauthorized_kaggle_write": 0,
+            "validation_save_kernel": 1
+          },
+          "event_count": 2,
+          "ledger_sha256": "062a9553aeee82334b28ec4225e687751d34380b34ce23a8f5d8e9a5ead9bc85",
+          "ledger_status": "VALIDATION_VERSION_1_ERROR_NO_RETRY",
+          "platform_error_evidenced": false,
+          "started_attempt_count": 1
+        },
+        "outcome": "PASS"
+      },
+      "id": "write_budget_and_ledger_verified",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "detail": {
+          "bundle_sha256": {
+            "validation_build_manifest_sha256": "cbfbab546c56814859e4773fc8bdd7ce2ed80513bd83b4148af85464fddb00a9",
+            "validation_builder_sha256": "5f01fed4eda31d2095f1cd5791fe2ccb1a55d149c9b54c18720051b7a154b9e3",
+            "validation_kernel_metadata_sha256": "5efb62aa4009201d50e97a64bcc480c5d458692e46f97a28d54baf91580f267d",
+            "validation_notebook_sha256": "8bea7c6c7bdd147a116603337421a1035073679799b72991bd7b045ee245d67f"
+          },
+          "required": false,
+          "validation_save_kernel_count": 1,
+          "validation_script_version_id": 347223762
+        },
+        "outcome": "PASS"
+      },
+      "id": "validation_bundle_provenance_verified",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "detail": {
+          "domain_status": "BLOCKED_VALIDATION_PAYLOAD_OR_RUNTIME",
+          "poll_count": 0,
+          "public_score": null,
+          "submitted": false
+        },
+        "outcome": "PASS"
+      },
+      "id": "submission_and_monitoring_verified",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "detail": {
+          "artifact_count": 2,
+          "complete_required": false,
+          "manifest_sha256": "39eaf37a9210df99a03a69b0f2328e8563af9f19626cfe1c8d92d3a1871e84d0",
+          "validation_script_version_id": null
+        },
+        "outcome": "PASS"
+      },
+      "id": "artifact_manifest_verified",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "detail": {
+          "builder_sha256": "ee5b8020285dac6878e7cef8a93d02f49dd16f362fb550b58caab19c98794521",
+          "html_sha256": "9f9c86a48818e994eea080c65d99dff248393f886cb7f440e1802edb44f4867c",
+          "markdown_sha256": "f65989300fe408a2df78f9b88a3831ce140e6d5d9bff70a70150186cc6d5fde1",
+          "terminal_failure_evidence_checked": true,
+          "written": false
+        },
+        "outcome": "PASS"
+      },
+      "id": "final_report_builder_verified",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "detail": {
+          "html_bytes": 23043,
+          "html_sha256": "9f9c86a48818e994eea080c65d99dff248393f886cb7f440e1802edb44f4867c",
+          "markdown_bytes": 18507,
+          "markdown_sha256": "f65989300fe408a2df78f9b88a3831ce140e6d5d9bff70a70150186cc6d5fde1"
+        },
+        "outcome": "PASS"
+      },
+      "id": "reports_verified",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "detail": {
+          "files_scanned": 23,
+          "findings": 0,
+          "forbidden_artifacts": 0,
+          "known_negative_self_test_fixture_redactions": 1
+        },
+        "outcome": "PASS"
+      },
+      "id": "secret_scan_verified",
+      "status": "PASS"
+    },
+    {
+      "detail": {},
+      "id": "no_unhandled_evidence_errors",
+      "status": "PASS"
+    }
+  ],
+  "domain_status": "BLOCKED_VALIDATION_PAYLOAD_OR_RUNTIME",
+  "input_sha256": {
+    "experiments/V20B/artifact_manifest.json": "39eaf37a9210df99a03a69b0f2328e8563af9f19626cfe1c8d92d3a1871e84d0",
+    "experiments/V20B/contract.json": "ea46844436142e61c3bc570b4e616531b69eca2cbc609935cf84ce768d41a40b",
+    "experiments/V20B/evidence_boundary.json": "48fc1b23c0930e05c0371d9d6d0a85dd595bb440c85b11aff5910d589c7d548f",
+    "experiments/V20B/failure_diagnosis.json": "705c4fdd24ab7923386baafcb11b3c3a1a43ac42474eb9d1025de70f57d79c15",
+    "experiments/V20B/kaggle_validation_terminal_receipt.json": "3f8e73a0137508a3323b94e5c83714aa1051acda5afca1ba6478c3265c5f7f50",
+    "experiments/V20B/kaggle_validation_v1_log.txt": "0fb7fc3b61d556f60dc477030a7cc9fb17c9d1f950b78fc5543a14a08f0f707e",
+    "experiments/V20B/platform_write_ledger.json": "062a9553aeee82334b28ec4225e687751d34380b34ce23a8f5d8e9a5ead9bc85",
+    "experiments/V20B/promotion_decision.json": "285bd63a443a097f4ab902d03bb61d7ef8d41a9379dad2914e8024c05551b08a",
+    "experiments/V20B/runtime_receipts.json": "8d8aa49c1c391fa4bdc7642175d04a1039333729ea762492aaf5afe90c4bdf7b",
+    "experiments/V20B/sample_manifest.json": "7b028996131fc189f8a480b8e1c01f26f72131877758680af9ed1b7c9edce842",
+    "experiments/V20B/write_budget.json": "2ee55ca9d1a39b077d116800f0af7240780cdc56e68d22ffb973e632f9ec8186",
+    "reports/20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS_REPORT_V01.html": "9f9c86a48818e994eea080c65d99dff248393f886cb7f440e1802edb44f4867c",
+    "reports/20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS_REPORT_V01.md": "f65989300fe408a2df78f9b88a3831ce140e6d5d9bff70a70150186cc6d5fde1",
+    "scripts/build_v20b_final_report.py": "ee5b8020285dac6878e7cef8a93d02f49dd16f362fb550b58caab19c98794521",
+    "scripts/build_v20b_validation_notebook.py": "5f01fed4eda31d2095f1cd5791fe2ccb1a55d149c9b54c18720051b7a154b9e3",
+    "scripts/verify_v20b_two_embryo_radius.py": "86f929705c754aac3c0d8558305051cc9eb55eeb5a233c23bc23061974af6f58",
+    "tasks/CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS_TASK.md": "35534ba04cedc6deea991d21c450e17ad369929fcfbc38e2748c80ed89da8d3b"
+  },
+  "offline_recomputation": null,
+  "platform_counts": {
+    "competition_submit": 0,
+    "dataset_write": 0,
+    "duplicate_submit": 0,
+    "model_write": 0,
+    "notebook_run": 1,
+    "production_save_kernel": 0,
+    "retry": 0,
+    "save_kernel_total": 1,
+    "submission_status_poll": 0,
+    "unauthorized_kaggle_write": 0,
+    "validation_save_kernel": 1
+  },
+  "promotion_decision": "BLOCKED_VALIDATION_PAYLOAD_OR_RUNTIME",
+  "schema_version": "1.0",
+  "selected_arm": null,
+  "selected_radius_um": null,
+  "stages": {
+    "artifact_manifest": {
+      "detail": {
+        "artifact_count": 2,
+        "complete_required": false,
+        "manifest_sha256": "39eaf37a9210df99a03a69b0f2328e8563af9f19626cfe1c8d92d3a1871e84d0",
+        "validation_script_version_id": null
+      },
+      "outcome": "PASS"
+    },
+    "cache_equivalence": {
+      "detail": {
+        "reason": "config/cache identity not PASS"
+      },
+      "outcome": "NOT_RUN"
+    },
+    "config_and_shared_cache": {
+      "detail": {
+        "reason": "payload not PASS"
+      },
+      "outcome": "NOT_RUN"
+    },
+    "division_confusion": {
+      "detail": {
+        "reason": "per-sample metrics unavailable"
+      },
+      "outcome": "NOT_RUN"
+    },
+    "failure_receipts": {
+      "detail": {
+        "decision": "BLOCKED_VALIDATION_PAYLOAD_OR_RUNTIME",
+        "failed_stage": "PREDICTOR_PATCHES",
+        "predictor_runs_started": 0,
+        "promotion_sha256": "285bd63a443a097f4ab902d03bb61d7ef8d41a9379dad2914e8024c05551b08a",
+        "runtime_sha256": "8d8aa49c1c391fa4bdc7642175d04a1039333729ea762492aaf5afe90c4bdf7b"
+      },
+      "outcome": "PASS"
+    },
+    "final_report_builder": {
+      "detail": {
+        "builder_sha256": "ee5b8020285dac6878e7cef8a93d02f49dd16f362fb550b58caab19c98794521",
+        "html_sha256": "9f9c86a48818e994eea080c65d99dff248393f886cb7f440e1802edb44f4867c",
+        "markdown_sha256": "f65989300fe408a2df78f9b88a3831ce140e6d5d9bff70a70150186cc6d5fde1",
+        "terminal_failure_evidence_checked": true,
+        "written": false
+      },
+      "outcome": "PASS"
+    },
+    "micro_macro": {
+      "detail": {
+        "reason": "per-sample metrics unavailable"
+      },
+      "outcome": "NOT_RUN"
+    },
+    "paired_deltas": {
+      "detail": {
+        "reason": "per-sample metrics unavailable"
+      },
+      "outcome": "NOT_RUN"
+    },
+    "payload": {
+      "detail": {
+        "inventory_exists": false,
+        "manifest_exists": false
+      },
+      "outcome": "MISSING"
+    },
+    "per_embryo_metrics": {
+      "detail": {
+        "reason": "per-sample metrics unavailable"
+      },
+      "outcome": "NOT_RUN"
+    },
+    "per_sample_metrics": {
+      "detail": {
+        "reason": "config/cache identity not PASS"
+      },
+      "outcome": "NOT_RUN"
+    },
+    "promotion": {
+      "detail": {
+        "decision": "BLOCKED_VALIDATION_PAYLOAD_OR_RUNTIME",
+        "selected_arm": null,
+        "selected_radius_um": null,
+        "sha256": "285bd63a443a097f4ab902d03bb61d7ef8d41a9379dad2914e8024c05551b08a"
+      },
+      "outcome": "PASS"
+    },
+    "reports": {
+      "detail": {
+        "html_bytes": 23043,
+        "html_sha256": "9f9c86a48818e994eea080c65d99dff248393f886cb7f440e1802edb44f4867c",
+        "markdown_bytes": 18507,
+        "markdown_sha256": "f65989300fe408a2df78f9b88a3831ce140e6d5d9bff70a70150186cc6d5fde1"
+      },
+      "outcome": "PASS"
+    },
+    "runtime": {
+      "detail": {
+        "baseline_reproduction": "MISSING",
+        "declared_outcome": "FAIL",
+        "failed_stage": "PREDICTOR_PATCHES",
+        "hard_stop_seconds": 39300.0,
+        "receipt_reserve_seconds": 300.0,
+        "sha256": "8d8aa49c1c391fa4bdc7642175d04a1039333729ea762492aaf5afe90c4bdf7b",
+        "validation_limit_seconds": 39600.0,
+        "validation_wall_clock_seconds": 223.33421959000003
+      },
+      "outcome": "FAIL"
+    },
+    "runtime_determinism": {
+      "detail": {
+        "reason": "config/cache identity not PASS"
+      },
+      "outcome": "NOT_RUN"
+    },
+    "runtime_identity": {
+      "detail": {
+        "reason": "full successful identity chain not expected"
+      },
+      "outcome": "NOT_RUN"
+    },
+    "secret_scan": {
+      "detail": {
+        "files_scanned": 23,
+        "findings": 0,
+        "forbidden_artifacts": 0,
+        "known_negative_self_test_fixture_redactions": 1
+      },
+      "outcome": "PASS"
+    },
+    "submission_and_monitoring": {
+      "detail": {
+        "domain_status": "BLOCKED_VALIDATION_PAYLOAD_OR_RUNTIME",
+        "poll_count": 0,
+        "public_score": null,
+        "submitted": false
+      },
+      "outcome": "PASS"
+    },
+    "topology": {
+      "detail": {
+        "reason": "per-sample metrics unavailable"
+      },
+      "outcome": "NOT_RUN"
+    },
+    "validation_bundle_provenance": {
+      "detail": {
+        "bundle_sha256": {
+          "validation_build_manifest_sha256": "cbfbab546c56814859e4773fc8bdd7ce2ed80513bd83b4148af85464fddb00a9",
+          "validation_builder_sha256": "5f01fed4eda31d2095f1cd5791fe2ccb1a55d149c9b54c18720051b7a154b9e3",
+          "validation_kernel_metadata_sha256": "5efb62aa4009201d50e97a64bcc480c5d458692e46f97a28d54baf91580f267d",
+          "validation_notebook_sha256": "8bea7c6c7bdd147a116603337421a1035073679799b72991bd7b045ee245d67f"
+        },
+        "required": false,
+        "validation_save_kernel_count": 1,
+        "validation_script_version_id": 347223762
+      },
+      "outcome": "PASS"
+    },
+    "validation_rows": {
+      "detail": {
+        "reason": "config/cache identity not PASS"
+      },
+      "outcome": "NOT_RUN"
+    },
+    "write_budget_and_ledger": {
+      "detail": {
+        "counts": {
+          "competition_submit": 0,
+          "dataset_write": 0,
+          "duplicate_submit": 0,
+          "model_write": 0,
+          "notebook_run": 1,
+          "production_save_kernel": 0,
+          "retry": 0,
+          "save_kernel_total": 1,
+          "submission_status_poll": 0,
+          "unauthorized_kaggle_write": 0,
+          "validation_save_kernel": 1
+        },
+        "event_count": 2,
+        "ledger_sha256": "062a9553aeee82334b28ec4225e687751d34380b34ce23a8f5d8e9a5ead9bc85",
+        "ledger_status": "VALIDATION_VERSION_1_ERROR_NO_RETRY",
+        "platform_error_evidenced": false,
+        "started_attempt_count": 1
+      },
+      "outcome": "PASS"
+    }
+  },
+  "status": "COMPLETED_VERIFIED",
+  "submission": {
+    "domain_status": "BLOCKED_VALIDATION_PAYLOAD_OR_RUNTIME",
+    "public_score": null,
+    "submission_id": null,
+    "submitted": false
+  },
+  "summary": {
+    "failed": 0,
+    "passed": 19
+  },
+  "task_id": "CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS",
+  "timestamp_policy": "OMITTED_FOR_DETERMINISTIC_RECEIPT"
+}

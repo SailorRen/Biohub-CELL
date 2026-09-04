@@ -120,3 +120,19 @@ SaveKernel=0、formal submission=0、Dataset write=0、Model write=0、retry=0�
 Public Score=`null`。没有 submission，因此 30 分钟提交监控不适用；未来也没有
 本任务分数可读取。V20A 的 `BLOCKED_INSUFFICIENT_EMBRYO_GROUPS` 与三个
 `NOT_RUN_HARD_GATE` 历史状态保持不变。
+
+## 终态验证器修复边界
+
+终态 secret scan 首次将已冻结的
+`experiments/V20B/verify_resolved_config.py` 内负向自测占位字符串误判为凭据泄漏。
+该文件 SHA-256 仍为
+`9acf46b55fe4c1601cd151c3cbb52de9a6c1e221d7cf5493342a7289b37c9121`，内容未改动。
+领域验证器仅对“精确相对路径 + 精确文件 SHA-256 + 精确单个占位字面量”
+三者同时匹配时做扫描前替换；路径或 SHA 任一不同的自测均确认仍会拦截。
+修复后领域验证器 SHA-256 为
+`86f929705c754aac3c0d8558305051cc9eb55eeb5a233c23bc23061974af6f58`；其秘密扫描、
+预算、晋升规则与 blocked 结论未放宽。修复后无写入复核为 18 PASS / 0 FAIL，
+后续又将报告证据校验器的只读 `--check-only` 结果纳入必须门，最终为
+19 PASS / 0 FAIL。该门结构化校验 terminal receipt、failure diagnosis 与
+ledger 的 Notebook Version / ScriptVersionId 绑定，并将三者及运行日志纳入最终收据哈希。
+领域状态仍为 `BLOCKED_VALIDATION_PAYLOAD_OR_RUNTIME`。

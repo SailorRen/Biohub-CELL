@@ -84,6 +84,15 @@ SUBMISSION_RECEIPT_PATH = EXPERIMENT_DIR / "kaggle_submission_receipt.json"
 STATUS_HISTORY_PATH = EXPERIMENT_DIR / "kaggle_status_history_30m.jsonl"
 HEALTH_SUMMARY_PATH = EXPERIMENT_DIR / "kaggle_30m_health_summary.json"
 VALIDATION_BUILDER_PATH = Path("scripts/build_v20b_validation_notebook.py")
+FINAL_REPORT_BUILDER_PATH = Path("scripts/build_v20b_final_report.py")
+TASK_RECORD_PATH = Path(
+    "tasks/CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS_TASK.md"
+)
+VALIDATION_TERMINAL_RECEIPT_PATH = (
+    EXPERIMENT_DIR / "kaggle_validation_terminal_receipt.json"
+)
+FAILURE_DIAGNOSIS_PATH = EXPERIMENT_DIR / "failure_diagnosis.json"
+VALIDATION_LOG_PATH = EXPERIMENT_DIR / "kaggle_validation_v1_log.txt"
 
 PROMOTION_EVIDENCE_PATHS = {
     str(EXPERIMENT_DIR / name)
@@ -476,9 +485,41 @@ SECRET_PATTERNS = {
     ),
 }
 
+RESOLVED_CONFIG_CHECKER_PATH = "experiments/V20B/verify_resolved_config.py"
+RESOLVED_CONFIG_CHECKER_SHA256 = (
+    "9acf46b55fe4c1601cd151c3cbb52de9a6c1e221d7cf5493342a7289b37c9121"
+)
+KNOWN_NEGATIVE_SELF_TEST_CREDENTIAL_FIXTURE = (
+    "/Users/example/" + ".kaggle/" + "kaggle" + ".json"
+)
+
 
 class EvidenceError(RuntimeError):
     """Raised when evidence is missing, malformed, or internally inconsistent."""
+
+
+def redact_frozen_negative_self_test_fixture(
+    *, relative_path: str, file_sha256: str, text_value: str
+) -> tuple[str, int]:
+    """Redact one frozen negative-test literal without weakening the general scan."""
+    if (
+        relative_path != RESOLVED_CONFIG_CHECKER_PATH
+        or file_sha256 != RESOLVED_CONFIG_CHECKER_SHA256
+    ):
+        return text_value, 0
+    occurrence_count = text_value.count(KNOWN_NEGATIVE_SELF_TEST_CREDENTIAL_FIXTURE)
+    if occurrence_count != 1:
+        raise EvidenceError(
+            "frozen resolved-config checker no longer has exactly one known "
+            "negative self-test credential fixture"
+        )
+    return (
+        text_value.replace(
+            KNOWN_NEGATIVE_SELF_TEST_CREDENTIAL_FIXTURE,
+            "<KNOWN_NEGATIVE_SELF_TEST_FIXTURE_REDACTED>",
+        ),
+        1,
+    )
 
 
 @dataclass
@@ -5443,6 +5484,74 @@ def require_terms(text: str, groups: Sequence[Sequence[str]], label: str) -> Non
         raise EvidenceError(f"{label} lacks required subjects: {missing}")
 
 
+def validate_final_report_builder(
+    root: Path,
+    *,
+    domain_status: str,
+    promotion_decision: str,
+    submitted: bool,
+) -> StageEvidence:
+    builder_path = root / FINAL_REPORT_BUILDER_PATH
+    if not builder_path.is_file():
+        return StageEvidence("MISSING", {"path": FINAL_REPORT_BUILDER_PATH.as_posix()})
+    completed = subprocess.run(
+        [
+            sys.executable,
+            "-B",
+            str(builder_path),
+            "--project-root",
+            str(root),
+            "--check-only",
+        ],
+        cwd=root,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        check=False,
+        timeout=180,
+    )
+    stdout = completed.stdout.decode("utf-8", errors="replace")
+    if completed.returncode != 0:
+        raise EvidenceError(
+            "final report builder rejected terminal evidence "
+            f"with return code {completed.returncode}"
+        )
+    lines = [line for line in stdout.splitlines() if line.strip()]
+    if len(lines) != 2 or lines[1] != "V20B_FINAL_REPORT_BUILD_PASS":
+        raise EvidenceError("final report builder emitted an unexpected receipt")
+    try:
+        receipt = json.loads(lines[0])
+    except json.JSONDecodeError as exc:
+        raise EvidenceError("final report builder receipt is not valid JSON") from exc
+    expected = {
+        "status": "REPORT_INPUTS_VALIDATED",
+        "domain_status": domain_status,
+        "promotion_decision": promotion_decision,
+        "submitted": submitted,
+        "written": False,
+    }
+    if not isinstance(receipt, dict) or any(
+        receipt.get(key) != value for key, value in expected.items()
+    ):
+        raise EvidenceError(
+            "final report builder receipt disagrees with terminal state"
+        )
+    report_hashes = {
+        "markdown_sha256": sha256_file(root / REPORT_MD_PATH),
+        "html_sha256": sha256_file(root / REPORT_HTML_PATH),
+    }
+    if any(receipt.get(key) != value for key, value in report_hashes.items()):
+        raise EvidenceError("final report builder hashes disagree with report files")
+    return StageEvidence(
+        "PASS",
+        {
+            "builder_sha256": sha256_file(builder_path),
+            **report_hashes,
+            "terminal_failure_evidence_checked": True,
+            "written": False,
+        },
+    )
+
+
 def validate_reports_and_secrets(
     root: Path,
     *,
@@ -5522,9 +5631,9 @@ def validate_reports_and_secrets(
     scan_paths: set[Path] = {
         md_path,
         html_path,
-        root
-        / Path("tasks/CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS_TASK.md"),
+        root / TASK_RECORD_PATH,
         root / Path("scripts/verify_v20b_two_embryo_radius.py"),
+        root / FINAL_REPORT_BUILDER_PATH,
     }
     experiment_root = root / EXPERIMENT_DIR
     if experiment_root.is_dir():
@@ -5537,6 +5646,7 @@ def validate_reports_and_secrets(
     ]
     findings: list[dict[str, Any]] = []
     scanned = 0
+    known_fixture_redactions = 0
     text_suffixes = {
         ".json",
         ".jsonl",
@@ -5557,17 +5667,32 @@ def validate_reports_and_secrets(
         except (UnicodeDecodeError, OSError):
             continue
         scanned += 1
+        relative_path = path.relative_to(root).as_posix()
+        text_value, redaction_count = redact_frozen_negative_self_test_fixture(
+            relative_path=relative_path,
+            file_sha256=sha256_file(path),
+            text_value=text_value,
+        )
+        known_fixture_redactions += redaction_count
         for pattern_name, pattern in SECRET_PATTERNS.items():
             if pattern.search(text_value):
-                findings.append(
-                    {"path": str(path.relative_to(root)), "pattern": pattern_name}
-                )
+                findings.append({"path": relative_path, "pattern": pattern_name})
+    if known_fixture_redactions != 1:
+        raise EvidenceError(
+            "secret scan did not redact exactly one frozen negative self-test fixture"
+        )
     if findings or forbidden:
         raise EvidenceError(
             f"secret/forbidden artifact scan failed: findings={findings}, forbidden={forbidden}"
         )
     return report_stage, StageEvidence(
-        "PASS", {"files_scanned": scanned, "findings": 0, "forbidden_artifacts": 0}
+        "PASS",
+        {
+            "files_scanned": scanned,
+            "findings": 0,
+            "forbidden_artifacts": 0,
+            "known_negative_self_test_fixture_redactions": known_fixture_redactions,
+        },
     )
 
 
@@ -5587,6 +5712,11 @@ def relevant_input_hashes(root: Path) -> dict[str, str]:
         REPORT_MD_PATH,
         REPORT_HTML_PATH,
         VALIDATION_BUILDER_PATH,
+        FINAL_REPORT_BUILDER_PATH,
+        TASK_RECORD_PATH,
+        VALIDATION_TERMINAL_RECEIPT_PATH,
+        FAILURE_DIAGNOSIS_PATH,
+        VALIDATION_LOG_PATH,
         Path("scripts/verify_v20b_two_embryo_radius.py"),
     }
     paths.update(EXPERIMENT_DIR / name for name in RUNTIME_ARTIFACT_NAMES)
@@ -6022,6 +6152,15 @@ def verify(root: Path) -> tuple[dict[str, Any], int]:
             ),
         ),
     )
+    run(
+        "final_report_builder",
+        lambda: validate_final_report_builder(
+            root,
+            domain_status=domain_status,
+            promotion_decision=decision or "UNKNOWN",
+            submitted=bool(submission_info.get("submitted")),
+        ),
+    )
     reports_result = run(
         "reports_and_secrets",
         lambda: validate_reports_and_secrets(
@@ -6048,6 +6187,7 @@ def verify(root: Path) -> tuple[dict[str, Any], int]:
         "validation_bundle_provenance",
         "submission_and_monitoring",
         "artifact_manifest",
+        "final_report_builder",
         "reports",
         "secret_scan",
     ]
@@ -6157,6 +6297,48 @@ def synthetic_metric_row(arm: str, sample_id: str, embryo: str) -> dict[str, Any
 
 
 def self_test() -> None:
+    redacted, redaction_count = redact_frozen_negative_self_test_fixture(
+        relative_path=RESOLVED_CONFIG_CHECKER_PATH,
+        file_sha256=RESOLVED_CONFIG_CHECKER_SHA256,
+        text_value=KNOWN_NEGATIVE_SELF_TEST_CREDENTIAL_FIXTURE,
+    )
+    if redaction_count != 1 or any(
+        pattern.search(redacted) for pattern in SECRET_PATTERNS.values()
+    ):
+        raise AssertionError("frozen negative self-test fixture redaction failed")
+    for wrong_path, wrong_sha in (
+        ("experiments/V20B/other.py", RESOLVED_CONFIG_CHECKER_SHA256),
+        (RESOLVED_CONFIG_CHECKER_PATH, "0" * 64),
+    ):
+        unredacted, redaction_count = redact_frozen_negative_self_test_fixture(
+            relative_path=wrong_path,
+            file_sha256=wrong_sha,
+            text_value=KNOWN_NEGATIVE_SELF_TEST_CREDENTIAL_FIXTURE,
+        )
+        if redaction_count != 0 or not SECRET_PATTERNS["credential_path"].search(
+            unredacted
+        ):
+            raise AssertionError("secret fixture redaction scope widened")
+    extra_credential = "/Users/real/" + ".kaggle/" + "other" + ".json"
+    partially_redacted, redaction_count = redact_frozen_negative_self_test_fixture(
+        relative_path=RESOLVED_CONFIG_CHECKER_PATH,
+        file_sha256=RESOLVED_CONFIG_CHECKER_SHA256,
+        text_value=(KNOWN_NEGATIVE_SELF_TEST_CREDENTIAL_FIXTURE + extra_credential),
+    )
+    if redaction_count != 1 or not SECRET_PATTERNS["credential_path"].search(
+        partially_redacted
+    ):
+        raise AssertionError("fixture redaction concealed a separate credential path")
+    try:
+        redact_frozen_negative_self_test_fixture(
+            relative_path=RESOLVED_CONFIG_CHECKER_PATH,
+            file_sha256=RESOLVED_CONFIG_CHECKER_SHA256,
+            text_value=KNOWN_NEGATIVE_SELF_TEST_CREDENTIAL_FIXTURE * 2,
+        )
+    except EvidenceError:
+        pass
+    else:
+        raise AssertionError("duplicate frozen fixture did not fail closed")
     for name, columns in {
         "payload": PAYLOAD_COLUMNS,
         "per_sample": PER_SAMPLE_COLUMNS,
