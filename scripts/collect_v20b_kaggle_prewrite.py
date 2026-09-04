@@ -132,14 +132,25 @@ def collect(args: argparse.Namespace) -> dict[str, Any]:
 
     dataset_rows: list[dict[str, Any]] = []
     for ref, version in EXPECTED_DATASETS:
-        status = json.loads(api.dataset_status(ref, format="json"))
+        owner, slug = ref.split("/", 1)
+        listed = api.dataset_list(search=slug, user=owner, page=1) or []
+        exact_listed = [
+            item for item in listed if item is not None and item.ref == ref
+        ]
+        require(len(exact_listed) == 1, f"canonical Dataset match count is not one: {ref}")
+        current_version = exact_listed[0].current_version_number
+        require(
+            isinstance(current_version, int) and current_version >= version,
+            f"canonical Dataset current version is below pinned version: {ref}/{version}",
+        )
         files, page_count = read_pinned_dataset_inventory(api, ref, version)
         dataset_rows.append(
             {
                 "ref": ref,
                 "pinned_version": version,
-                "current_version_number": status["current_version_number"],
-                "status": status["status"],
+                "current_version_number": current_version,
+                "identity_method": "EXACT_DATASET_LIST_MATCH_PLUS_PINNED_VERSION_FILE_INVENTORY",
+                "status": "PINNED_VERSION_READABLE",
                 "pinned_version_inventory_pages": page_count,
                 "pinned_version_file_count": len(files),
                 "pinned_version_file_inventory_sha256": sha256_json(files),
@@ -233,8 +244,8 @@ def collect(args: argparse.Namespace) -> dict[str, Any]:
     require(competition["submissions_disabled"] is False, "competition submissions are disabled")
     require(competition["user_has_entered"] is True, "principal is not entered in competition")
     require(
-        all(row["status"] == "ready" for row in dataset_rows),
-        "one or more pinned Dataset identities are not ready",
+        all(row["status"] == "PINNED_VERSION_READABLE" for row in dataset_rows),
+        "one or more pinned Dataset identities are not readable",
     )
     require(str(baseline_status.status).endswith("COMPLETE"), "V19C baseline is not COMPLETE")
     require(not baseline_status.failure_message, "V19C baseline has a failure message")

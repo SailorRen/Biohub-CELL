@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS",
+  "operation": "READ_ONLY_KAGGLE_PREWRITE",
+  "phase": "validation",
+  "observed_at_utc": "2026-09-04T10:39:33.601348Z",
+  "status": "FAIL",
+  "error_type": "HTTPError",
+  "error": "404 Client Error: Not Found for url: https://api.kaggle.com/v1/datasets.DatasetApiService/GetDatasetStatus",
+  "external_write_counts": {
+    "save_kernel": 0,
+    "dataset_write": 0,
+    "model_write": 0,
+    "competition_submission": 0
+  }
+}
