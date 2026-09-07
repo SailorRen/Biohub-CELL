@@ -1,0 +1,163 @@
+{
+  "task_id": "CODEX_20260907_BIOHUB_V21A_TWO_PARAMETER_SCORE_TEST",
+  "observed_at_utc": "2026-09-07T05:10:33.593100+00:00",
+  "checked_commit": "6e9e53dda73a594fc2c89610e85ac335d8ca7439",
+  "contract_sha256": "35f41aa91c95dcc9a9dd03c60e5f125a7eedac1b9a0f24edd8b217d6dfff8de9",
+  "completion_claim": "NOT_CLAIMED_COMPLETE",
+  "audit_kind": "Partial progress audit using existing verify-task-completion run_check; does not fabricate a completed-task claim",
+  "overall_contract_status": "BLOCKED",
+  "checks": [
+    {
+      "id": "task-original",
+      "type": "file",
+      "required": true,
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "details": {
+        "path": "tasks/CODEX_20260907_BIOHUB_V21A_TWO_PARAMETER_SCORE_TEST.md",
+        "bytes": 8690,
+        "sha256": "f41e9fcd61575b926d9633b8271e99d6cbe0ba71d33547eafc7a1346f57fba86"
+      }
+    },
+    {
+      "id": "candidate-scope-budget-and-evidence",
+      "type": "command",
+      "required": true,
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "details": {
+        "executable": "python3",
+        "argument_count": 2,
+        "argv_sha256": "10ffd0588ab64ae2192099abdbf8e1d7188729589a7e04e2c23509ce60582d3d",
+        "raw_output_stored": false,
+        "cwd": ".",
+        "returncode": 0,
+        "expected_exit": 0,
+        "stdout": {
+          "bytes": 285,
+          "sha256": "103b17b0793ab077e1b21f960e7eb5a23b660b87900005d050c79973ad9464dc"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout_text_checks": 1,
+        "missing_stdout_text_checks": 0,
+        "stderr_text_checks": 0,
+        "missing_stderr_text_checks": 0
+      }
+    },
+    {
+      "id": "formal-terminal-score",
+      "type": "json",
+      "required": true,
+      "outcome": "FAIL",
+      "reason": "one or more JSON assertions failed",
+      "details": {
+        "path": "experiments/V21A/evidence.json",
+        "sha256": "adc760c4d8979fd481bcc7b92f6a561e9f78bc1aabdaa67b52b5661fb9523729",
+        "assertions": [
+          {
+            "pointer": "/candidate/submission/status",
+            "op": "equals",
+            "passed": false
+          },
+          {
+            "pointer": "/candidate/submission/public_score",
+            "op": "not_empty",
+            "passed": false
+          },
+          {
+            "pointer": "/candidate/submission/id",
+            "op": "not_empty",
+            "passed": true
+          },
+          {
+            "pointer": "/candidate/script_version_id",
+            "op": "not_empty",
+            "passed": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "report",
+      "type": "file",
+      "required": true,
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "details": {
+        "path": "reports/20260907_V21A_双参数实测报告.md",
+        "bytes": 9036,
+        "sha256": "5215ea1f170f43cfb3fb309843167137c40cae57ab1b11d6ab41d8fc16c04610",
+        "required_text_checks": 4,
+        "missing_required_text_checks": 0,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0
+      }
+    },
+    {
+      "id": "fixed-commit-remote-readback",
+      "type": "command",
+      "required": true,
+      "outcome": "FAIL",
+      "reason": "exit code did not match; required stdout text was missing",
+      "details": {
+        "executable": "python3",
+        "argument_count": 3,
+        "argv_sha256": "b636a005a9d0233cabb4ac32bd2e9936dc1e91e9c369663e112bfa0a700bbd25",
+        "raw_output_stored": false,
+        "cwd": ".",
+        "returncode": 1,
+        "expected_exit": 0,
+        "stdout": {
+          "bytes": 285,
+          "sha256": "103b17b0793ab077e1b21f960e7eb5a23b660b87900005d050c79973ad9464dc"
+        },
+        "stderr": {
+          "bytes": 3106,
+          "sha256": "b47bd15a10cbc8072aa1d30e39bb318689380cf2c89869c637c7882e9b0aabb4"
+        },
+        "stdout_text_checks": 1,
+        "missing_stdout_text_checks": 1,
+        "stderr_text_checks": 0,
+        "missing_stderr_text_checks": 0
+      }
+    },
+    {
+      "id": "git-clean-authoritative-head",
+      "type": "git",
+      "required": true,
+      "outcome": "PASS",
+      "reason": "Git evidence passed",
+      "details": {
+        "repository": ".",
+        "head": "6e9e53dda73a594fc2c89610e85ac335d8ca7439",
+        "dirty_entry_count": 0,
+        "remote": "origin",
+        "remote_exists": true,
+        "remote_url_sha256": "294339ae4bf28ec437260f32bd064c06212de22a7026887c59e47f72ef414b8e",
+        "branch": "main",
+        "remote_head": "6e9e53dda73a594fc2c89610e85ac335d8ca7439"
+      }
+    }
+  ],
+  "follow_up_checks": [
+    {
+      "id": "fixed-commit-remote-readback",
+      "outcome": "PASS",
+      "observed_at_utc": "2026-09-07T05:15:01.358388+00:00",
+      "checked_commit": "6e9e53dda73a594fc2c89610e85ac335d8ca7439",
+      "authoritative_remote_main": "6e9e53dda73a594fc2c89610e85ac335d8ca7439",
+      "files_read_back": 18,
+      "capture_sha256": "ed0178b93dc20d0e5222a1ac87b115970dd214408eb02d10203e3e50c431e340",
+      "method": "Same verify.py --remote, no contract or candidate changes",
+      "first_failure_preserved": true,
+      "first_failure_root_cause": "UNKNOWN: initial runner retained only stdout/stderr hashes; do not infer a cause"
+    }
+  ],
+  "remaining_required_failures": [
+    "formal-terminal-score"
+  ],
+  "final_progress_status": "BLOCKED_PENDING_FORMAL_SCORE"
+}
