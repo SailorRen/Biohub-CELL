@@ -1,0 +1,118 @@
+{
+  "status": "PASS",
+  "scope": "独立静态复核报告、三份下载源码、先前run77审读；未执行模型、未重新打开公共网页。",
+  "report_path": "reports/20260907_两份公共方案与V19C对比.md",
+  "report_sha256": "e4f5e4165cc25b29f0f51a533fba61680acdd787931b6a813ee57574c659a3b4",
+  "checks": [
+    {
+      "claim": "run77 cell2 vs V19C cell4 AST identical",
+      "pass": true,
+      "source_bytes_equal": true
+    },
+    {
+      "claim": "run77 cell3 vs V19C cell5 AST identical",
+      "pass": true,
+      "source_bytes_equal": true
+    },
+    {
+      "claim": "run77 cell4 vs V19C cell6 AST identical",
+      "pass": true,
+      "source_bytes_equal": true
+    },
+    {
+      "claim": "run77 cell5 vs V19C cell7 AST identical",
+      "pass": true,
+      "source_bytes_equal": false
+    },
+    {
+      "claim": "run77 cell6 vs V19C cell8 AST identical",
+      "pass": true,
+      "source_bytes_equal": true
+    },
+    {
+      "claim": "run77 cell7 vs V19C cell9 AST identical",
+      "pass": true,
+      "source_bytes_equal": false
+    },
+    {
+      "claim": "run77 cell8 vs V19C cell10 AST identical",
+      "pass": true,
+      "source_bytes_equal": false
+    },
+    {
+      "claim": "run77 cell9 vs V19C cell11 AST identical",
+      "pass": true,
+      "source_bytes_equal": false
+    },
+    {
+      "claim": "还原parent9为7并删除新增DC0.26环境赋值后，run77 cell0与V19C cell2 AST完全一致",
+      "pass": true
+    },
+    {
+      "claim": "删除对应DC0.26配置guard键后，run77 cell1与V19C cell3 AST完全一致",
+      "pass": true
+    },
+    {
+      "claim": "GAP_CLOSE_UM为每步距离尺度，普通gap有效max=min(config,1)，单缺帧端点门=2*GAP_CLOSE_UM，再加密度修正",
+      "pass": true,
+      "evidence": "run77 cell5 L627-637,L673-675；三者该函数相同"
+    },
+    {
+      "claim": "LB942搜索选择margin最终0.001，adj损失<=0.0005，7个单参数候选和最终有选中配置才重写submission",
+      "pass": true,
+      "evidence": "LB942 cell0 L67-68；cell10 L4-14,L67-77,L99-110"
+    },
+    {
+      "claim": "报告区分页面分数、历史分数、NOT_RUN、非因果差异和非独立embryo holdout",
+      "pass": true,
+      "evidence": "已通读完整报告"
+    },
+    {
+      "claim": "三个源码SHA与报告一致",
+      "pass": true,
+      "evidence": {
+        "v19c": "92bf632410fedc9eb7e0984a20525590b5583d5abb002d8239ff65d9f51fbf57",
+        "run77": "22d75fa685be276c19dfa7796bffc9b15526e83fbe974b33e62fdb4f8645b266",
+        "lb942": "e59373ea569332e4ce34a94d8579507970345a62d38b99fe900c2c438b4220fc"
+      }
+    },
+    {
+      "claim": "净计数与实际节点/边编辑数量严格区分，已回读修订文本",
+      "pass": true
+    }
+  ],
+  "issues": [
+    {
+      "id": "NET_COUNTS_DO_NOT_PROVE_STRUCTURAL_OVERLAP",
+      "priority": "P2",
+      "quote": "事实支持输出图改变集中在少量节点/连边及分裂处理",
+      "reason": "净节点/边数量接近，不证明两次图的节点/边身份重叠高或改动仅涉及少量元素；需要图匹配或边集合差异证据。",
+      "suggested_replacement": "输出规模的净变化较小，分裂父节点数量下降；未做节点/边逐项匹配，尚不能确定实际改动集中于多少节点或连边。",
+      "resolution_status": "RESOLVED",
+      "resolution_verified": true,
+      "resolution_evidence": "分裂父节点减少 31 和 38 个，节点数分别减少 79 和 43 个。输出规模的净变化较小，分裂父节点数量下降；本轮未逐项匹配节点和边，不能由净计数确定实际改动了多少节点或连边。这些计数没有真实标签对照，不能据此认定删掉的全是假分裂。某些视频反而增加了分裂，符合几何扩张与证据收紧同时作用的情况。"
+    }
+  ],
+  "not_independently_reverified": [
+    "页面分数/版本/完整权重哈希输出和计数原始网页回执未在本agent当前复核读取，依据报告标明的父agent平台观察。"
+  ],
+  "limitations": [
+    "当前research/20260907_公共方案对比目录尚未存在；报告仍在制作中，不作为最终交付缺陷。"
+  ],
+  "production_algorithm_difference_count_run77_vs_v19c": 2,
+  "run77_algorithm_differences": [
+    {
+      "parameter": "BIOHUB_SAFE_DIV_MAX_UM",
+      "v19c": 7.0,
+      "run77": 9.0
+    },
+    {
+      "parameter": "BIOHUB_DEEPCENTER_SAFE_DIV_THRESHOLD",
+      "v19c": 0.12,
+      "run77": 0.26
+    }
+  ],
+  "reproduction_status": "NOT_RUN",
+  "original_report_sha256": "e4f5e4165cc25b29f0f51a533fba61680acdd787931b6a813ee57574c659a3b4",
+  "open_issues": []
+}

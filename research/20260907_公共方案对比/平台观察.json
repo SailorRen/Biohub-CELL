@@ -1,0 +1,98 @@
+{
+  "evidence_class": "HOST_CONFIRMED",
+  "method": "CUA read-only browser visible DOM and rendered Notebook body; selected runtime observations, not full log audit",
+  "recorded_at_asia_shanghai": "2026-09-07T09:54:37.144644+08:00",
+  "full_raw_page_saved": false,
+  "signed_iframe_urls_persisted": false,
+  "public_scores_scope": "Version-associated Public/Best Score display; formal submission receipt and patch-valid current leaderboard unverified",
+  "lb942": {
+    "url": "https://www.kaggle.com/code/analyticaobscura/biohub-lb-942?scriptVersionId=347259317",
+    "version_display": "Version 1 of 1",
+    "public_score_display": "0.942",
+    "score_link_version": 1,
+    "runtime_display": "1h 13m 35s · GPU T4 x2",
+    "license_display": "Apache 2.0",
+    "production_prediction_minutes_display": 9.62,
+    "validator_fov_count": 8,
+    "embryo_prefix_count": 2,
+    "selected": "base",
+    "overrides": {},
+    "base_proxy_display": "0.9605",
+    "tight55_proxy_display": "0.9615",
+    "tight55_delta_display": "+0.0010",
+    "unrounded_proxy_values": null,
+    "final_rows": 234288,
+    "dataset_counts": [
+      {
+        "dataset": "44b6_0113de3b",
+        "nodes": 25463,
+        "edges": 24742,
+        "divisions": 51
+      },
+      {
+        "dataset": "44b6_0b24845f",
+        "nodes": 18518,
+        "edges": 17294,
+        "divisions": 10
+      },
+      {
+        "dataset": "6bba_05b6850b",
+        "nodes": 6033,
+        "edges": 5835,
+        "divisions": 6
+      },
+      {
+        "dataset": "6bba_05db0fb1",
+        "nodes": 69265,
+        "edges": 67138,
+        "divisions": 27
+      }
+    ]
+  },
+  "run77": {
+    "url": "https://www.kaggle.com/code/rogerrogerroger3r/biohub-run77?scriptVersionId=347708853",
+    "version_display": "Version 2 of 2",
+    "public_score_display": "0.942",
+    "score_link_version": 2,
+    "runtime_display": "38m 17s · GPU T4 x2",
+    "license_display": "Apache 2.0",
+    "production_prediction_minutes_display": 8.88,
+    "validator_fov_count": 4,
+    "embryo_prefix_count": 2,
+    "proxy_display": "0.9414",
+    "final_rows": 234368,
+    "dataset_counts": [
+      {
+        "dataset": "44b6_0113de3b",
+        "nodes": 25473,
+        "edges": 24752,
+        "divisions": 47
+      },
+      {
+        "dataset": "44b6_0b24845f",
+        "nodes": 18532,
+        "edges": 17313,
+        "divisions": 9
+      },
+      {
+        "dataset": "6bba_05b6850b",
+        "nodes": 6039,
+        "edges": 5842,
+        "divisions": 6
+      },
+      {
+        "dataset": "6bba_05db0fb1",
+        "nodes": 69271,
+        "edges": 67146,
+        "divisions": 25
+      }
+    ]
+  },
+  "common_runtime_weight_sha256": {
+    "primary": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+    "secondary": "9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f",
+    "deepcenter": "8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0"
+  },
+  "artifact_name_display": "biohub-tracking-support-pack-400ep-snapshot-v1",
+  "support_repo_python_manifest_sha256": "978b626d1fd1e7397435a437dfe68691defe1572fc3c20e61012d7c9b52ed029"
+}

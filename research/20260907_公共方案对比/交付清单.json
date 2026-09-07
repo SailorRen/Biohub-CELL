@@ -1,0 +1,17 @@
+{
+  "scope": "本轮新增文件及固定 SHA 权威回读列表；不含 raw source/weights/data/submission",
+  "files": [
+    "reports/20260907_两份公共方案与V19C对比.md",
+    "reports/20260907_公共方案对比_VERIFY.json",
+    "research/20260907_公共方案对比/lb942_逐单元审读.json",
+    "research/20260907_公共方案对比/run77_逐单元审读.json",
+    "research/20260907_公共方案对比/v19c_逐单元审读.json",
+    "research/20260907_公共方案对比/交付清单.json",
+    "research/20260907_公共方案对比/平台观察.json",
+    "research/20260907_公共方案对比/来源身份.json",
+    "research/20260907_公共方案对比/源码机械对照.json",
+    "research/20260907_公共方案对比/独立复核.json",
+    "scripts/verify_20260907_notebook_comparison.py",
+    "tasks/CODEX_20260907_BIOHUB_TWO_NOTEBOOK_COMPARISON_CONTRACT.json"
+  ]
+}

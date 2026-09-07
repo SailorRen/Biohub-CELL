@@ -1,0 +1,76 @@
+{
+  "task_id": "CODEX_20260907_BIOHUB_TWO_NOTEBOOK_COMPARISON",
+  "recorded_at_asia_shanghai": "2026-09-07T09:57:19.292173+08:00",
+  "not_overall_completion": true,
+  "contract_sha256": "1339333cf0e66a96c7f20c1f631e192072e7668d0759668bbc4cc07a5f965c59",
+  "read_coverage": {
+    "public_code_cells": 22,
+    "v19c_code_cells": 10,
+    "all_cells": 34,
+    "code_ast_pass": 32
+  },
+  "checks": [
+    "three exact source hashes and guarded versions",
+    "all cell review hashes and line references",
+    "shared predictor source equality",
+    "run77 postprocessing AST equality",
+    "effective env assignments and exact two-parameter run77 delta",
+    "observed output count arithmetic",
+    "independent semantic review PASS with resolved finding"
+  ],
+  "verification_stdout": "COMPARISON_EVIDENCE_PASS: 34 cells, 32 code AST; identity/hash/line coverage/config/AST/arithmetic/peer review",
+  "reproduction_status": "NOT_RUN",
+  "kaggle_writes": 0,
+  "files_sha256_before_commit": {
+    "reports/20260907_两份公共方案与V19C对比.md": "e4f5e4165cc25b29f0f51a533fba61680acdd787931b6a813ee57574c659a3b4",
+    "research/20260907_公共方案对比/lb942_逐单元审读.json": "2fa86103e574a92a25ae352bf6d002269b5d5d2714ff15a96ac8b19851be1669",
+    "research/20260907_公共方案对比/run77_逐单元审读.json": "197941631a02bf4c08539341e47a1c03344786230cda4056d810399a56cc44e7",
+    "research/20260907_公共方案对比/v19c_逐单元审读.json": "ff9eaf9d48091cf26b3ffe3a4dc3be7153c1cec42d54c5611e86ccd9033672c3",
+    "research/20260907_公共方案对比/交付清单.json": "c814a2dc27e7fbe09448e4f49764e460d4bdf8be802d26a551170de0f1d5fba2",
+    "research/20260907_公共方案对比/平台观察.json": "383d595338138c40f90c6abe65b9891f252c9c3886497371fa8c01048f67fd5d",
+    "research/20260907_公共方案对比/来源身份.json": "6a75744cc2b7f1a4d1776d7de34fa490f7399d723f8fa99d190e5dfe9976b962",
+    "research/20260907_公共方案对比/源码机械对照.json": "2e03e742a9fd6bb7643e20f394aae0767d8e8b89bafa66b1f86ded2614dd25e0",
+    "research/20260907_公共方案对比/独立复核.json": "8c0a0dd9afe75ff939c5be318fce5330366d669fa1add52b973952b0e2e1f2fa",
+    "scripts/verify_20260907_notebook_comparison.py": "c88321062a0da9c89ad556b946b7e602fc7dfa5b42443037d47cd04d5373e20d",
+    "tasks/CODEX_20260907_BIOHUB_TWO_NOTEBOOK_COMPARISON_CONTRACT.json": "1339333cf0e66a96c7f20c1f631e192072e7668d0759668bbc4cc07a5f965c59"
+  },
+  "history": [
+    {
+      "stage": "20260907_initial_authorization_block",
+      "record": {
+        "status": "LOCAL_EVIDENCE_PASS_REMOTE_SYNC_BLOCKED_AUTO_REVIEW",
+        "remote_readback": "FAILED_AFTER_READ_ONLY_CHECK: new delivery is not present at unchanged remote HEAD",
+        "approval_block": {
+          "action": "git add + commit + push 12 task files to SailorRen/Biohub-CELL main",
+          "reason": "Automatic approval review requires explicit authorization for this concrete default-main write despite standing project sync rule",
+          "execution_started": false,
+          "commit_created": false,
+          "push_executed": false,
+          "previous_remote_main_readback": "42836ad1599a54ea7acc319d7342896f0a7cccf8"
+        },
+        "outer_verifier": {
+          "status": "BLOCKED",
+          "passed": [
+            "comparison-report",
+            "two-full-sources-and-review"
+          ],
+          "failed": [
+            "remote-content-readback",
+            "git-state"
+          ],
+          "report_path": ".task-verification/CODEX_20260907_BIOHUB_TWO_NOTEBOOK_COMPARISON/runs/20260907T095857+0800-120cdef8.json",
+          "local_and_remote_head": "42836ad1599a54ea7acc319d7342896f0a7cccf8",
+          "untracked_delivery_files": 12
+        }
+      }
+    }
+  ],
+  "status": "LOCAL_EVIDENCE_PASS_SYNC_AUTHORIZED",
+  "sync_authorization": {
+    "user_instruction": "报告同步github",
+    "scope": "Commit and push the reviewed 12-file bundle to SailorRen/Biohub-CELL main, as explicitly requested after the concrete approval question",
+    "recorded_at_asia_shanghai": "2026-09-07T10:09:35.478588+08:00",
+    "prior_auto_review_block_resolved_by_user_authorization": true
+  },
+  "remote_readback": "PENDING_POST_PUSH: fixed-commit byte verification required before completion"
+}

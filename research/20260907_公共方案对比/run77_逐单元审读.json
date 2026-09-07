@@ -1,0 +1,436 @@
+{
+  "source_url": "https://www.kaggle.com/code/rogerrogerroger3r/biohub-run77/notebook",
+  "notebook_path": "downloads/20260907_public_comparison/run77/biohub-run77.ipynb",
+  "notebook_sha256": "22d75fa685be276c19dfa7796bffc9b15526e83fbe974b33e62fdb4f8645b266",
+  "source_status": "FULL_NOTEBOOK_SOURCE_READ",
+  "fact_class": "SOURCE_CODE_VERIFIED",
+  "code_cells_read": 10,
+  "code_cells_total": 10,
+  "lines_read": 3900,
+  "executed_by_reviewer": false,
+  "reproduction_status": "NOT_RUN",
+  "score_status": "UNKNOWN_VERSION_BOUND_SCORE",
+  "notebook_outputs_present": false,
+  "support_repo_read_status": "NOT_READ_BY_THIS_AGENT",
+  "cells": [
+    {
+      "index": 0,
+      "cell_type": "code",
+      "sha256": "4f04c020a8c6663822ed02f0d343f85c26d5090d054adc2914e4b67c2be0b8fd",
+      "line_count": 59,
+      "coverage": "FULL_READ",
+      "summary": "环境配置最终初值：检测0.965、DeepCenter safe-div 0.26、运动重连、gap、短轨迹救援、宽分裂门、双向harmonic 0.15。注释中的LB与GT统计仅AUTHOR_CLAIM。",
+      "evidence": [
+        {
+          "line_start": 7,
+          "line_end": 8,
+          "finding": "实际检测阈值0.965与DeepCenter safe-div 0.26"
+        },
+        {
+          "line_start": 22,
+          "line_end": 35,
+          "finding": "parent9/sister14/symmetry0.6/divergence2.25/existing-child10与数量cap"
+        },
+        {
+          "line_start": 44,
+          "line_end": 55,
+          "finding": "启用DeepCenter epoch2；gap veto0.25、宽距8.5；bidir0.15、harmonic、retention0.90"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "cell_type": "code",
+      "sha256": "5ce922bc617cba312e742052a093c645f8ca67e75c686f33707b083c9f45f59c",
+      "line_count": 44,
+      "coverage": "FULL_READ",
+      "summary": "配置guard校验所列env，末尾打印文案陈旧；Reverse-time 0.200不能作为有效参数。",
+      "evidence": [
+        {
+          "line_start": 6,
+          "line_end": 19,
+          "finding": "实际guard字典"
+        },
+        {
+          "line_start": 36,
+          "line_end": 44,
+          "finding": "失败停止；L44打印0.200与env0.15矛盾"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "cell_type": "code",
+      "sha256": "6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643",
+      "line_count": 238,
+      "coverage": "FULL_READ",
+      "summary": "解析默认配置与cell0环境覆盖；主路径competition test、unet_transformer、ILP；定义全部图后处理参数。没有训练。",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 50,
+          "finding": "输入路径、主资产slug/weights与ILP配置"
+        },
+        {
+          "line_start": 59,
+          "line_end": 127,
+          "finding": "输出过滤、Hungarian参数、gap/short-track/linefit/safe-div默认"
+        },
+        {
+          "line_start": 129,
+          "line_end": 149,
+          "finding": "DeepCenter启用；L129 disabled注释与实际1冲突"
+        },
+        {
+          "line_start": 184,
+          "line_end": 184,
+          "finding": "普通gap有效max=min(配置2,1)"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "cell_type": "code",
+      "sha256": "681232942fbb971dc1b999816b32c6d91da819e55d123b359b601169dd5982fb",
+      "line_count": 682,
+      "coverage": "FULL_READ",
+      "summary": "定位三种模型资产并检查固定哈希；构建离线依赖与materialize支持repo；主与副都用edge_predictor_best.pth。secondary detection最终0.80，而edge仅0.15 low-margin-consensus。只从notebook读到检查逻辑，未读/执行外部资产。",
+      "evidence": [
+        {
+          "line_start": 425,
+          "line_end": 466,
+          "finding": "主资产、13个support Python sha和三checkpoint期望sha"
+        },
+        {
+          "line_start": 477,
+          "line_end": 528,
+          "finding": "检查支持文件集合/逐文件字节与主权重实际字节"
+        },
+        {
+          "line_start": 530,
+          "line_end": 567,
+          "finding": "DeepCenter best.pt固定sha"
+        },
+        {
+          "line_start": 570,
+          "line_end": 642,
+          "finding": "secondary seed314159固定sha与config存在检查"
+        },
+        {
+          "line_start": 644,
+          "line_end": 655,
+          "finding": "副模型edge0.15/detection0.80/low_margin_consensus/margin0.35/edge threshold0.48"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "cell_type": "code",
+      "sha256": "2c60405c2ad411a4eaebe59defaef6a79185c3119874905edee685c264335d8b",
+      "line_count": 425,
+      "coverage": "FULL_READ",
+      "summary": "动态字符串补丁：双模型检测TTA及尺度校准融合、90%逐帧候选保留回退；主模型反向关联harmonic概率融合，然后副模型低margin同父一致才加权；并行最多2张GPU视频分片、完整test覆盖、运行predict生成geff。",
+      "evidence": [
+        {
+          "line_start": 10,
+          "line_end": 57,
+          "finding": "八次planar编码，但rot90再transpose等价已有x翻转，因此七种独立变换"
+        },
+        {
+          "line_start": 59,
+          "line_end": 81,
+          "finding": "副模型与校准融合补丁，必须exact-one-match"
+        },
+        {
+          "line_start": 84,
+          "line_end": 165,
+          "finding": "逐帧 blended/primary候选<0.90时回退primary"
+        },
+        {
+          "line_start": 167,
+          "line_end": 208,
+          "finding": "反向主关联权重严格0.15；harmonic概率融合并校准回forward logit尺度"
+        },
+        {
+          "line_start": 228,
+          "line_end": 253,
+          "finding": "传入ILP edge-1/appearance0/disappearance2/division1.2"
+        },
+        {
+          "line_start": 379,
+          "line_end": 425,
+          "finding": "最多2 GPU独立视频分片和合并或单进程"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "cell_type": "code",
+      "sha256": "49bed1d06ba5b4111c789704607a4d699976f1fe2a9f2ff45f8e3bdba8a15e5f",
+      "line_count": 1659,
+      "coverage": "FULL_READ",
+      "summary": "定义并执行核心后处理及submission写出。DeepCenter为三层3D U-Net，辅助新增修复点门控。原ILP边经筛选后被运动Hungarian重连整体替换；继而gap1/gap2、安全分裂、孤点/短component过滤和线性平滑。",
+      "evidence": [
+        {
+          "line_start": 9,
+          "line_end": 9,
+          "finding": "voxel scale=(1.625,0.40625,0.40625)um"
+        },
+        {
+          "line_start": 117,
+          "line_end": 138,
+          "finding": "DeepCenter xy平均池化与percentile归一化"
+        },
+        {
+          "line_start": 239,
+          "line_end": 266,
+          "finding": "DeepCenter架构Conv3d+GroupNorm+SiLU，3层MaxPool/ConvTranspose"
+        },
+        {
+          "line_start": 271,
+          "line_end": 318,
+          "finding": "载入model_state并要求epoch2"
+        },
+        {
+          "line_start": 329,
+          "line_end": 411,
+          "finding": "DeepCenter单帧热图、局部最大值；score missing时return True"
+        },
+        {
+          "line_start": 420,
+          "line_end": 538,
+          "finding": "运动重连两段6/10um；cost=motion+0.05raw-learned_bonus*prob"
+        },
+        {
+          "line_start": 627,
+          "line_end": 805,
+          "finding": "普通gap实际只补1个缺帧，密度自适应阈值、复用孤点或灰度质心refine；宽距合成点DC确认"
+        },
+        {
+          "line_start": 823,
+          "line_end": 970,
+          "finding": "gap2跨3步插2点、上下文/数量上限；没有调用DeepCenter"
+        },
+        {
+          "line_start": 973,
+          "line_end": 1122,
+          "finding": "safe-div：one-child父接无入边candidate；parent9/sister14/已有child10，nearest orphan、前向分离增量2.25、DC0.26、symmetry0.6"
+        },
+        {
+          "line_start": 1125,
+          "line_end": 1246,
+          "finding": "短连通component>=6或有division保留；删节点比例>=10%后救援4-5节点、高prob/短距component"
+        },
+        {
+          "line_start": 1249,
+          "line_end": 1320,
+          "finding": "窗口±2线性拟合，0.8融合，拓扑不变"
+        },
+        {
+          "line_start": 1409,
+          "line_end": 1427,
+          "finding": "motion_edges非空则整体替换ILP边；否则raw fallback"
+        },
+        {
+          "line_start": 1454,
+          "line_end": 1535,
+          "finding": "后处理调用顺序"
+        },
+        {
+          "line_start": 1538,
+          "line_end": 1659,
+          "finding": "载入DC、逐geff处理、写submission整数坐标并保存run_stats"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "cell_type": "code",
+      "sha256": "239f51c30606f090e1fbc939a541891cef2dbea45d7b1c4a6fef53352e94759d",
+      "line_count": 178,
+      "coverage": "FULL_READ",
+      "summary": "独立拓扑/retention诊断代码，在validator前审计当时submission；没有质量证明。报告configuration是陈旧硬编码，与实际env四处冲突，不能照抄。",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 63,
+          "finding": "schema/id/dataset/retention诊断检验"
+        },
+        {
+          "line_start": 65,
+          "line_end": 103,
+          "finding": "next-frame、非负、indegree<=1/outdegree<=2"
+        },
+        {
+          "line_start": 123,
+          "line_end": 149,
+          "finding": "报告硬编码det.96875/secondarydet.475/bidir.30/disappearance1.5，实际.965/.80/.15/2"
+        },
+        {
+          "line_start": 167,
+          "line_end": 178,
+          "finding": "候选quality-unverified状态和报告输出"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "cell_type": "code",
+      "sha256": "082c333402a4f10b81db5f3cf07c02beb70c8b575f5f948f81b4f58d20e9e21d",
+      "line_count": 166,
+      "coverage": "FULL_READ",
+      "summary": "默认开启train局部验证：排除与test同名stem，按stem前缀每类选2个且优先有GT division；读取train geff标注，另做主/副推理。自称held-out没有模型训练样本集合核验，也没有独立embryo分组证明。",
+      "evidence": [
+        {
+          "line_start": 3,
+          "line_end": 49,
+          "finding": "validator默认1；选择按prefix/含GT division排序，2每prefix"
+        },
+        {
+          "line_start": 123,
+          "line_end": 166,
+          "finding": "训练目录样本推理，最多2GPU；不改submission"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "cell_type": "code",
+      "sha256": "54ff3e88b8e8222433179df53be137cf35dde1d286c9ae48d835e1957065b7da",
+      "line_count": 414,
+      "coverage": "FULL_READ",
+      "summary": "局部proxy验证评分与错误分解：逐帧7um匈牙利节点匹配、edge/division混淆、node-count修正与0.1division Jaccard；按样本聚合。暂时TEST_DIR切到TRAIN_DIR做同样postprocess并finally恢复；只写validator_results.csv。函数名official不等于此实现已对官方独立校验。",
+      "evidence": [
+        {
+          "line_start": 6,
+          "line_end": 33,
+          "finding": "7um节点一对一匹配"
+        },
+        {
+          "line_start": 36,
+          "line_end": 72,
+          "finding": "edge confusion/Jaccard/node-count调整"
+        },
+        {
+          "line_start": 95,
+          "line_end": 182,
+          "finding": "division连通component匹配"
+        },
+        {
+          "line_start": 185,
+          "line_end": 223,
+          "finding": "detection/fragmentation/wrong-association分解"
+        },
+        {
+          "line_start": 242,
+          "line_end": 256,
+          "finding": "从GT geff metadata读取estimated_number_of_nodes"
+        },
+        {
+          "line_start": 274,
+          "line_end": 313,
+          "finding": "proxy公式与聚合"
+        },
+        {
+          "line_start": 357,
+          "line_end": 365,
+          "finding": "仅validator临时替换TEST_DIR后恢复"
+        },
+        {
+          "line_start": 369,
+          "line_end": 414,
+          "finding": "proxy打印/CSV输出，无提交覆盖"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "cell_type": "code",
+      "sha256": "325878ba81cc45ed645e42ba60c681a9a8cfe0c2bb53b8cca6c134569f52f954",
+      "line_count": 35,
+      "coverage": "FULL_READ",
+      "summary": "仅打印当前env与载入bundle的manifest，包括dual-seed/bidir/DC/safe-div/validator；不重写参数或submission，也没有新的后处理。",
+      "evidence": [
+        {
+          "line_start": 6,
+          "line_end": 35,
+          "finding": "resolved-state打印而非配置覆盖"
+        }
+      ]
+    }
+  ],
+  "resolved_config_assumption": "源码从cell0顺序运行，除notebook显式设置外没有外部env覆盖；这些是静态有效参数，不是已观测运行参数。",
+  "resolved_config": {
+    "BIOHUB_DET_THRESHOLD": 0.965,
+    "BIOHUB_UNET_BATCH_SIZE": 4,
+    "BIOHUB_SECONDARY_DETECTION_WEIGHT": 0.8,
+    "BIOHUB_SECONDARY_EDGE_WEIGHT": 0.15,
+    "BIOHUB_SECONDARY_LINK_MODE": "low_margin_consensus",
+    "BIOHUB_SECONDARY_LOW_MARGIN_MAX": 0.35,
+    "BIOHUB_SECONDARY_MIX_TEMPERATURE": 1,
+    "BIOHUB_DUAL_SEED_EDGE_THRESHOLD": 0.48,
+    "BIOHUB_DUAL_SEED_MIN_CANDIDATE_RETENTION": 0.9,
+    "BIOHUB_BIDIRECTIONAL_EDGE_WEIGHT": 0.15,
+    "BIOHUB_BIDIRECTIONAL_FUSION_MODE": "harmonic_probability",
+    "BIOHUB_USE_ILP": true,
+    "BIOHUB_ILP_EDGE_WEIGHT": -1.0,
+    "BIOHUB_ILP_APPEARANCE_WEIGHT": 0.0,
+    "BIOHUB_ILP_DISAPPEARANCE_WEIGHT": 2.0,
+    "BIOHUB_ILP_DIVISION_WEIGHT": 1.2,
+    "BIOHUB_OUTPUT_MOTION_RELINK": true,
+    "BIOHUB_MOTION_RELINK_TIGHT_UM": 6.0,
+    "BIOHUB_MOTION_RELINK_RELAXED_UM": 10.0,
+    "BIOHUB_MOTION_RELINK_VELOCITY_WEIGHT": 0.5,
+    "BIOHUB_MOTION_RELINK_LEARNED_BONUS": 1.0,
+    "BIOHUB_GAP_CLOSE_MAX_GAP": 2,
+    "gap_close_effective_max_gap": 1,
+    "BIOHUB_GAP_CLOSE_UM": 5.8,
+    "BIOHUB_GAP_DENSITY_ADAPTIVE": true,
+    "BIOHUB_GAP_DENSITY_GAIN": 0.04,
+    "BIOHUB_GAP_DENSITY_MAX_STEP_DELTA_UM": 0.125,
+    "BIOHUB_OUTPUT_GAP2_RECOVERY": true,
+    "BIOHUB_GAP2_MAX_TOTAL_UM": 10.2,
+    "BIOHUB_GAP2_MAX_STEP_UM": 4.4,
+    "BIOHUB_SAFE_DIV_MAX_UM": 9.0,
+    "BIOHUB_SAFE_DIV_SISTER_MAX_UM": 14.0,
+    "BIOHUB_SAFE_DIV_SISTER_SYMMETRY_TAU": 0.6,
+    "BIOHUB_SAFE_DIV_DIVERGE_UM": 2.25,
+    "BIOHUB_SAFE_DIV_EXISTING_CHILD_MAX_UM": 10.0,
+    "BIOHUB_SAFE_DIV_FRAME_FRAC_CAP": 0.0076,
+    "BIOHUB_SAFE_DIV_GLOBAL_FRAC_CAP": 0.00375,
+    "BIOHUB_USE_DEEPCENTER_VETO": true,
+    "BIOHUB_REQUIRE_DEEPCENTER_VETO": true,
+    "BIOHUB_DEEPCENTER_EXPECTED_EPOCH": 2,
+    "BIOHUB_DEEPCENTER_GAP_THRESHOLD": 0.25,
+    "BIOHUB_DEEPCENTER_GAP_CONFIRM_MIN_SPAN_UM": 8.5,
+    "BIOHUB_DEEPCENTER_SAFE_DIV_THRESHOLD": 0.26,
+    "BIOHUB_OUTPUT_MIN_TRACK_LEN": 6,
+    "BIOHUB_OUTPUT_KEEP_DIVISION_COMPONENTS": true,
+    "BIOHUB_ADAPTIVE_SHORT_TRACK_RESCUE": true,
+    "BIOHUB_SHORT_TRACK_RESCUE_MIN_LEN": 4,
+    "BIOHUB_SHORT_TRACK_RESCUE_MIN_MEAN_EDGE_PROB": 0.88,
+    "BIOHUB_SHORT_TRACK_RESCUE_MAX_MEAN_EDGE_DIST_UM": 3.0,
+    "BIOHUB_SHORT_TRACK_RESCUE_MAX_NODES_FRAC": 0.012,
+    "BIOHUB_SHORT_TRACK_RESCUE_MAX_NODES_ABS": 120,
+    "BIOHUB_OUTPUT_LINEFIT_WEIGHT": 0.8,
+    "BIOHUB_OUTPUT_LINEFIT_WINDOW": 2,
+    "BIOHUB_VALIDATOR_ENABLE": true,
+    "BIOHUB_VALIDATOR_N_PER_TYPE": 2
+  },
+  "checkpoint_expected_sha256": {
+    "primary": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+    "secondary": "9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f",
+    "deepcenter": "8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0"
+  },
+  "method_conclusion": "预训练双seed temporal UNet/node-transformer候选检测与关联；检测副模型80%融合且90%候选保留回退；主关联15%反向harmonic再副模型低margin同父一致融合；ILP后运动Hungarian重连覆盖边；gap1/gap2、安全分裂、短连通组件过滤和线性平滑。最后附训练集小样本proxy validator，不更改submission。",
+  "material_caveats": [
+    "LB数值只在注释/文案出现，本notebook没有绑定版本的评分回执。",
+    "cell6报告硬编码配置陈旧，不能作为当前参数证据。",
+    "cell3 runtime receipt ground_truth_accessed=false仅其前置asset完整性阶段；cell7/8默认明确读取train GT。",
+    "按stem前缀选2样本不是独立embryo验证；源码未查checkpoint训练名单，held-out称谓未独立成立。",
+    "八次TTA实际七种独立变换，rot90(...,1).transpose(-1,-2)与x翻转重复；不由此推断分数下降。",
+    "普通gap max env2但实现min(...,1)，真正双缺帧补偿走单独gap2函数。",
+    "DeepCenter gate score missing返回True；gap2没有DC确认。",
+    "仅完整阅读notebook源码；外部support repo/模型字节未由本agent加载读取。"
+  ]
+}

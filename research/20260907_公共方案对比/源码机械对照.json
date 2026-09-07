@@ -1,0 +1,97 @@
+{
+  "evidence_class": "SOURCE_CODE_VERIFIED",
+  "cell_index_base": 0,
+  "checks": [
+    {
+      "source": "lb942",
+      "cell": 2,
+      "v19c_cell": 4,
+      "text_equal": true,
+      "ast_equal": true
+    },
+    {
+      "source": "lb942",
+      "cell": 3,
+      "v19c_cell": 5,
+      "text_equal": true,
+      "ast_equal": true
+    },
+    {
+      "source": "lb942",
+      "cell": 4,
+      "v19c_cell": 6,
+      "text_equal": true,
+      "ast_equal": true
+    },
+    {
+      "source": "lb942",
+      "cell": 6,
+      "v19c_cell": 8,
+      "text_equal": true,
+      "ast_equal": true
+    },
+    {
+      "source": "lb942",
+      "cell": 7,
+      "v19c_cell": 9,
+      "text_equal": true,
+      "ast_equal": true
+    },
+    {
+      "source": "lb942",
+      "cell": 11,
+      "v19c_cell": 11,
+      "text_equal": true,
+      "ast_equal": true
+    },
+    {
+      "source": "run77",
+      "cell": 2,
+      "v19c_cell": 4,
+      "text_equal": true,
+      "ast_equal": true
+    },
+    {
+      "source": "run77",
+      "cell": 3,
+      "v19c_cell": 5,
+      "text_equal": true,
+      "ast_equal": true
+    },
+    {
+      "source": "run77",
+      "cell": 4,
+      "v19c_cell": 6,
+      "text_equal": true,
+      "ast_equal": true
+    },
+    {
+      "source": "run77",
+      "cell": 5,
+      "v19c_cell": 7,
+      "text_equal": false,
+      "ast_equal": true
+    },
+    {
+      "source": "run77",
+      "cell": 6,
+      "v19c_cell": 8,
+      "text_equal": true,
+      "ast_equal": true
+    },
+    {
+      "source": "run77",
+      "cell": 7,
+      "v19c_cell": 9,
+      "text_equal": false,
+      "ast_equal": true
+    },
+    {
+      "source": "run77",
+      "cell": 8,
+      "v19c_cell": 10,
+      "text_equal": false,
+      "ast_equal": true
+    }
+  ]
+}

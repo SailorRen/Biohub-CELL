@@ -1,0 +1,584 @@
+{
+  "source_url": "https://www.kaggle.com/code/analyticaobscura/biohub-lb-942",
+  "source_file": "downloads/20260907_public_comparison/lb942/biohub-lb-942.ipynb",
+  "notebook_sha256": "e59373ea569332e4ce34a94d8579507970345a62d38b99fe900c2c438b4220fc",
+  "coverage_status": "FULL_NOTEBOOK_SOURCE_READ",
+  "code_cells_read": 12,
+  "code_cells_total": 12,
+  "total_source_lines": 4135,
+  "reproduction_status": "NOT_RUN",
+  "external_asset_source_read_status": "NOT_READ_BY_THIS_SUBAGENT",
+  "actual_selected_postprocess": "UNKNOWN",
+  "score_status": "NO_PLATFORM_SCORE_READ_BY_THIS_SUBAGENT",
+  "assumption": "有效base值指源码按顺序执行且未被额外外部BIOHUB环境变量覆盖；不能证明实际运行值。",
+  "cells": [
+    {
+      "index_zero_based": 0,
+      "cell_number_one_based": 1,
+      "type": "code",
+      "sha256_utf8_source": "4287b1b08b202ca561790489b6cf5941381b3fccfca40bf060239ae22ea3b132",
+      "line_count": 72,
+      "char_count": 4601,
+      "reading_status": "FULL_CODE_CELL_READ",
+      "execution_status": "NOT_RUN",
+      "provided_outputs_count": 0,
+      "summary_zh": "先设置生产base preset环境变量；注释中的LB/holdout结论仅为作者自述。有效检测阈值0.965、reverse harmonic权重0.15、ILP appearance0/disappearance2/division1.2；safe-div parent9/sister14、对称tau0.6、发散2.25；DC epoch2且必须加载；验证每prefix4条。",
+      "evidence": [
+        {
+          "line_start": 16,
+          "line_end": 70,
+          "note_zh": "显式环境变量配置"
+        },
+        {
+          "line_start": 31,
+          "line_end": 44,
+          "note_zh": "分裂几何参数与作者分数声明"
+        },
+        {
+          "line_start": 62,
+          "line_end": 68,
+          "note_zh": "双向融合和validator设置"
+        }
+      ]
+    },
+    {
+      "index_zero_based": 1,
+      "cell_number_one_based": 2,
+      "type": "code",
+      "sha256_utf8_source": "64bf335d2ea9f1dea62e2e7b3ad3b94205a775e8c5a53515d94bea3b6c655ba2",
+      "line_count": 43,
+      "char_count": 1399,
+      "reading_status": "FULL_CODE_CELL_READ",
+      "execution_status": "NOT_RUN",
+      "provided_outputs_count": 0,
+      "summary_zh": "配置守卫只校验列出的少数环境键；末行打印reverse weight0.200与实际0.15不符。baseline0.913是作者自述。",
+      "evidence": [
+        {
+          "line_start": 6,
+          "line_end": 18,
+          "note_zh": "守卫期望值"
+        },
+        {
+          "line_start": 40,
+          "line_end": 43,
+          "note_zh": "打印信息含陈旧数值"
+        }
+      ]
+    },
+    {
+      "index_zero_based": 2,
+      "cell_number_one_based": 3,
+      "type": "code",
+      "sha256_utf8_source": "6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643",
+      "line_count": 238,
+      "char_count": 14117,
+      "reading_status": "FULL_CODE_CELL_READ",
+      "execution_status": "NOT_RUN",
+      "provided_outputs_count": 0,
+      "summary_zh": "读取环境变量生成全局配置。test目录绑定与全量SLICE；依赖默认离线，ILP默认开启。图后处理缺省启用motion relink、单parent修复、gap close、短轨过滤、safe-div、smooth。普通gap配置2但有效clamp到1，gap2独立处理。DeepCenter disabled注释与有效开启值矛盾。",
+      "evidence": [
+        {
+          "line_start": 19,
+          "line_end": 52,
+          "note_zh": "路径/模型/ILP"
+        },
+        {
+          "line_start": 59,
+          "line_end": 127,
+          "note_zh": "后处理参数默认与显式变量"
+        },
+        {
+          "line_start": 129,
+          "line_end": 149,
+          "note_zh": "DeepCenter配置及陈旧注释"
+        },
+        {
+          "line_start": 184,
+          "line_end": 184,
+          "note_zh": "gap有效上限为1"
+        }
+      ]
+    },
+    {
+      "index_zero_based": 3,
+      "cell_number_one_based": 4,
+      "type": "code",
+      "sha256_utf8_source": "681232942fbb971dc1b999816b32c6d91da819e55d123b359b601169dd5982fb",
+      "line_count": 682,
+      "char_count": 27274,
+      "reading_status": "FULL_CODE_CELL_READ",
+      "execution_status": "NOT_RUN",
+      "provided_outputs_count": 0,
+      "summary_zh": "定位主support50ep包，复制/解压推理repo，依赖恢复，校验13个support Python文件及主/次/DC checkpoint字节hash。次模型seed314159只提取weights/config，effective detection mix0.80，edge0.15、low_margin_consensus、margin0.35、temperature1、edge candidate0.48。没有执行Notebook；这里只验证源内写有这些准入检查。",
+      "evidence": [
+        {
+          "line_start": 425,
+          "line_end": 466,
+          "note_zh": "主资产与13源文件/hash"
+        },
+        {
+          "line_start": 522,
+          "line_end": 563,
+          "note_zh": "主/DC真实字节checksum代码"
+        },
+        {
+          "line_start": 570,
+          "line_end": 649,
+          "note_zh": "次模型定位和校验"
+        },
+        {
+          "line_start": 651,
+          "line_end": 655,
+          "note_zh": "有效secondary检测/关联参数"
+        }
+      ]
+    },
+    {
+      "index_zero_based": 4,
+      "cell_number_one_based": 5,
+      "type": "code",
+      "sha256_utf8_source": "2c60405c2ad411a4eaebe59defaef6a79185c3119874905edee685c264335d8b",
+      "line_count": 425,
+      "char_count": 35835,
+      "reading_status": "FULL_CODE_CELL_READ",
+      "execution_status": "NOT_RUN",
+      "provided_outputs_count": 0,
+      "summary_zh": "先补丁主模型检测8次平面TTA、再双seed、0.90逐帧候选保留回退，再主模型正反向harmonic probability融合；随后启动最多2GPU视频分片推理并检查覆盖后合并。两模型检测logits对齐mean/std后0.2主+0.8次；若候选<主的90%则该帧退回主。关联先主模型reverse校准和harmonic，再次模型低margin同parent条件融合。",
+      "evidence": [
+        {
+          "line_start": 10,
+          "line_end": 57,
+          "note_zh": "8pass TTA变换代码"
+        },
+        {
+          "line_start": 62,
+          "line_end": 67,
+          "note_zh": "escaped字符串内完整双seed patch"
+        },
+        {
+          "line_start": 84,
+          "line_end": 165,
+          "note_zh": "逐帧retention guard"
+        },
+        {
+          "line_start": 171,
+          "line_end": 208,
+          "note_zh": "reverse权重守卫与harmonic patch"
+        },
+        {
+          "line_start": 228,
+          "line_end": 255,
+          "note_zh": "实际predict命令"
+        },
+        {
+          "line_start": 379,
+          "line_end": 425,
+          "note_zh": "执行推理/最多2GPU"
+        }
+      ]
+    },
+    {
+      "index_zero_based": 5,
+      "cell_number_one_based": 6,
+      "type": "code",
+      "sha256_utf8_source": "ab3be142f357c1eb8e25c40537af64d1b95e4d60b8735afdd533781f6dfb7f9c",
+      "line_count": 1685,
+      "char_count": 71976,
+      "reading_status": "FULL_CODE_CELL_READ",
+      "execution_status": "NOT_RUN",
+      "provided_outputs_count": 0,
+      "summary_zh": "定义并调用生产后处理：读GEFF→过滤原edges→motion两段Hungarian重连整体替换edges→单parent修复→单帧补gap→严格gap2→safe-div→可选几何过滤(缺省关)→孤点剪枝→短组件过滤/有限救回→linefit平滑→CSV。DeepCenter小UNet3D sigmoid图仅否决新增gap/safe-div点；gap2无DC gate。",
+      "evidence": [
+        {
+          "line_start": 222,
+          "line_end": 266,
+          "note_zh": "DC UNet3D架构"
+        },
+        {
+          "line_start": 271,
+          "line_end": 410,
+          "note_zh": "加载epoch检查、percentile归一化、局部max门禁及missing可通过"
+        },
+        {
+          "line_start": 457,
+          "line_end": 538,
+          "note_zh": "motion Hungarian和代价"
+        },
+        {
+          "line_start": 627,
+          "line_end": 806,
+          "note_zh": "gap1 clamped+DC只约束synthetic且span>=8.5"
+        },
+        {
+          "line_start": 823,
+          "line_end": 970,
+          "note_zh": "严格gap2及插入2个点"
+        },
+        {
+          "line_start": 973,
+          "line_end": 1141,
+          "note_zh": "safe-div全部门禁"
+        },
+        {
+          "line_start": 1144,
+          "line_end": 1265,
+          "note_zh": "短轨与救回"
+        },
+        {
+          "line_start": 1268,
+          "line_end": 1339,
+          "note_zh": "linefit平滑"
+        },
+        {
+          "line_start": 1428,
+          "line_end": 1446,
+          "note_zh": "motion有边则整体替换ILP edges"
+        },
+        {
+          "line_start": 1473,
+          "line_end": 1554,
+          "note_zh": "后处理调用顺序"
+        },
+        {
+          "line_start": 1557,
+          "line_end": 1684,
+          "note_zh": "加载DC并写base submission"
+        }
+      ]
+    },
+    {
+      "index_zero_based": 6,
+      "cell_number_one_based": 7,
+      "type": "code",
+      "sha256_utf8_source": "239f51c30606f090e1fbc939a541891cef2dbea45d7b1c4a6fef53352e94759d",
+      "line_count": 178,
+      "char_count": 7409,
+      "reading_status": "FULL_CODE_CELL_READ",
+      "execution_status": "NOT_RUN",
+      "provided_outputs_count": 0,
+      "summary_zh": "对当时base submission、retention logs及拓扑做结构审计，生成report。但是configuration字典硬编码与真实配置不一致；报告位于后续sweep前，其hash不代表最终可能重写的submission。",
+      "evidence": [
+        {
+          "line_start": 49,
+          "line_end": 63,
+          "note_zh": "retention0.9逻辑检查"
+        },
+        {
+          "line_start": 65,
+          "line_end": 103,
+          "note_zh": "拓扑检查"
+        },
+        {
+          "line_start": 123,
+          "line_end": 150,
+          "note_zh": "base哈希与陈旧config值"
+        },
+        {
+          "line_start": 167,
+          "line_end": 173,
+          "note_zh": "内部quality promotion声明"
+        }
+      ]
+    },
+    {
+      "index_zero_based": 7,
+      "cell_number_one_based": 8,
+      "type": "code",
+      "sha256_utf8_source": "0083b9cd0b94cabba7c28f12bf8d80f6eda4a982d1f6f44ead0975ea0de89e92",
+      "line_count": 178,
+      "char_count": 8730,
+      "reading_status": "FULL_CODE_CELL_READ",
+      "execution_status": "NOT_RUN",
+      "provided_outputs_count": 0,
+      "summary_zh": "默认开启验证器，读取train GEFF选择GT有division优先的样本，每prefix4条；只排除与test同名stem，未从模型训练split证明held-out。在train图像上用同检测/关联/ILP运行预测，可2GPU。",
+      "evidence": [
+        {
+          "line_start": 9,
+          "line_end": 25,
+          "note_zh": "默认开启与train/test stem排除"
+        },
+        {
+          "line_start": 27,
+          "line_end": 61,
+          "note_zh": "按GT分裂优先选样，每prefix取N"
+        },
+        {
+          "line_start": 135,
+          "line_end": 178,
+          "note_zh": "train推理"
+        }
+      ]
+    },
+    {
+      "index_zero_based": 8,
+      "cell_number_one_based": 9,
+      "type": "code",
+      "sha256_utf8_source": "3988c72818365e0cf42169df1d42d3d64e64a6f2815a42255a04222523936349",
+      "line_count": 318,
+      "char_count": 11609,
+      "reading_status": "FULL_CODE_CELL_READ",
+      "execution_status": "NOT_RUN",
+      "provided_outputs_count": 0,
+      "summary_zh": "自行实现节点匈牙利7um匹配、edge confusion/Jaccard、estimated node count调整、connected-component/anchor/两女儿lineage/fork division proxy、错误分解。聚合proxy=weighted adjusted edge Jaccard+0.1 division Jaccard。源码自称官方公式，但此任务未独立核验与官方当前实现等价。",
+      "evidence": [
+        {
+          "line_start": 10,
+          "line_end": 38,
+          "note_zh": "节点匹配"
+        },
+        {
+          "line_start": 41,
+          "line_end": 77,
+          "note_zh": "edge与数量调整"
+        },
+        {
+          "line_start": 100,
+          "line_end": 187,
+          "note_zh": "division proxy实现"
+        },
+        {
+          "line_start": 247,
+          "line_end": 261,
+          "note_zh": "读取estimated节点数"
+        },
+        {
+          "line_start": 279,
+          "line_end": 318,
+          "note_zh": "每样本评分和聚合"
+        }
+      ]
+    },
+    {
+      "index_zero_based": 9,
+      "cell_number_one_based": 10,
+      "type": "code",
+      "sha256_utf8_source": "2e658927d77b92f79dbb5ac701cdb25ea0eef35e5c4901ed69d00a5aa932eae4",
+      "line_count": 146,
+      "char_count": 6838,
+      "reading_status": "FULL_CODE_CELL_READ",
+      "execution_status": "NOT_RUN",
+      "provided_outputs_count": 0,
+      "summary_zh": "缓存validator预测与train GT；score_validator_config通过暂改全局参数并把TEST_DIR改到TRAIN_DIR调用同后处理，再恢复；记录base proxy与每样本指标。无实际输出可证明运行结果。",
+      "evidence": [
+        {
+          "line_start": 7,
+          "line_end": 35,
+          "note_zh": "可覆盖keys及globals机制"
+        },
+        {
+          "line_start": 41,
+          "line_end": 77,
+          "note_zh": "读取train GT与预测"
+        },
+        {
+          "line_start": 80,
+          "line_end": 121,
+          "note_zh": "验证后处理和restore"
+        },
+        {
+          "line_start": 128,
+          "line_end": 146,
+          "note_zh": "base scoring"
+        }
+      ]
+    },
+    {
+      "index_zero_based": 10,
+      "cell_number_one_based": 11,
+      "type": "code",
+      "sha256_utf8_source": "035037debb8d20a189d59efb74e42b59165172bd0a181e16947ff79c6d6f3c2f",
+      "line_count": 126,
+      "char_count": 6288,
+      "reading_status": "FULL_CODE_CELL_READ",
+      "execution_status": "NOT_RUN",
+      "provided_outputs_count": 0,
+      "summary_zh": "在同缓存validator图上测试7个单参数候选，合并改善>=0.0005且adj损失<=0.0005的候选后再测combo。最终最优相对base改善>=0.001且adj损失<=0.0005才重写test submission；若无validator则base。选中后环境变量更新，但函数全局参数恢复base；最终实际选择未知。",
+      "evidence": [
+        {
+          "line_start": 4,
+          "line_end": 16,
+          "note_zh": "7候选和选择阈值"
+        },
+        {
+          "line_start": 31,
+          "line_end": 49,
+          "note_zh": "greedy combo"
+        },
+        {
+          "line_start": 67,
+          "line_end": 80,
+          "note_zh": "最终选择门槛"
+        },
+        {
+          "line_start": 91,
+          "line_end": 110,
+          "note_zh": "保存选中配置及重写submission"
+        },
+        {
+          "line_start": 112,
+          "line_end": 126,
+          "note_zh": "最终结构审计"
+        }
+      ]
+    },
+    {
+      "index_zero_based": 11,
+      "cell_number_one_based": 12,
+      "type": "code",
+      "sha256_utf8_source": "974767da6156ddf12c5b2d1351b13658f160d0b859a36deb9614441c006537ba",
+      "line_count": 44,
+      "char_count": 2528,
+      "reading_status": "FULL_CODE_CELL_READ",
+      "execution_status": "NOT_RUN",
+      "provided_outputs_count": 0,
+      "summary_zh": "打印来源于环境变量/全局状态的简要manifest，无额外模型/后处理执行。不能用该打印定义补齐真实运行事实。",
+      "evidence": [
+        {
+          "line_start": 15,
+          "line_end": 39,
+          "note_zh": "asset/reverse/DC/safe-div状态打印"
+        },
+        {
+          "line_start": 41,
+          "line_end": 42,
+          "note_zh": "validator状态打印"
+        }
+      ]
+    }
+  ],
+  "base_effective_config": {
+    "detection_threshold": 0.965,
+    "secondary_detection_weight": 0.8,
+    "secondary_edge_weight": 0.15,
+    "secondary_link_mode": "low_margin_consensus",
+    "secondary_low_margin_max": 0.35,
+    "secondary_mix_temperature": 1,
+    "edge_candidate_threshold": 0.48,
+    "minimum_candidate_retention": 0.9,
+    "bidirectional_primary_weight": 0.15,
+    "bidirectional_fusion": "harmonic_probability",
+    "ilp_weights": {
+      "edge": -1,
+      "appearance": 0,
+      "disappearance": 2,
+      "division": 1.2
+    },
+    "motion_relink": {
+      "tight_um": 6,
+      "relaxed_um": 10,
+      "velocity_weight": 0.5,
+      "learned_bonus": 1,
+      "max_frame_nodes": 2600
+    },
+    "gap_close": {
+      "configured_max_gap": 2,
+      "effective_max_gap": 1,
+      "per_step_um": 5,
+      "density_adaptive": true,
+      "reference_um": 6.5,
+      "gain": 0.04,
+      "max_step_delta_um": 0.125,
+      "neighbors": 3,
+      "reuse_um": 3.2,
+      "max_added_frac": 0.05,
+      "max_added_abs": 2000
+    },
+    "gap2": {
+      "enabled": true,
+      "max_total_um": 10.2,
+      "max_step_um": 4.4,
+      "max_links_frac": 0.0045,
+      "max_links_abs": 180,
+      "require_context": true,
+      "frame_frac_cap": 0.006
+    },
+    "safe_div": {
+      "enabled": true,
+      "parent_um": 9,
+      "sister_um": 14,
+      "existing_child_um": 10,
+      "symmetry_tau": 0.6,
+      "diverge_um": 2.25,
+      "require_divergence": true,
+      "require_nearest_orphan": true,
+      "frame_frac_cap": 0.0076,
+      "global_frac_cap": 0.00375
+    },
+    "deepcenter": {
+      "enabled": true,
+      "required": true,
+      "expected_epoch": 2,
+      "gap_threshold": 0.25,
+      "gap_min_span_um": 8.5,
+      "safe_div_threshold": 0.25,
+      "gap2_gate": false
+    },
+    "short_tracks": {
+      "min_length": 6,
+      "keep_division_components": true,
+      "adaptive_rescue": true,
+      "rescue_trigger_removed_frac": 0.1,
+      "rescue_min_length": 4,
+      "rescue_min_edge_prob": 0.88,
+      "rescue_max_edge_distance_um": 3,
+      "rescue_nodes_frac": 0.012,
+      "rescue_nodes_abs": 120
+    },
+    "linefit": {
+      "enabled": true,
+      "weight": 0.8,
+      "window": 2
+    },
+    "validator": {
+      "enabled_by_default": true,
+      "n_per_type": 4,
+      "selection": "GT division优先，再stem排序，只剔除test同名stem",
+      "model_training_overlap": "UNKNOWN"
+    },
+    "sweep": {
+      "selection_margin": 0.001,
+      "max_adjusted_edge_loss": 0.0005,
+      "candidates": {
+        "gap45": {
+          "GAP_CLOSE_UM": 4.5
+        },
+        "tight55": {
+          "MOTION_RELINK_TIGHT_UM": 5.5
+        },
+        "relaxed9": {
+          "MOTION_RELINK_RELAXED_UM": 9
+        },
+        "bonus125": {
+          "MOTION_RELINK_LEARNED_BONUS": 1.25
+        },
+        "gap2step40": {
+          "GAP2_MAX_STEP_UM": 4
+        },
+        "reuse28": {
+          "GAP_CLOSE_REUSE_UM": 2.8
+        },
+        "dcgap035": {
+          "DEEPCENTER_GAP_THRESHOLD": 0.35
+        }
+      },
+      "combo_possible": true
+    }
+  },
+  "checkpoints_declared_sha256": {
+    "primary": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+    "secondary": "9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f",
+    "deepcenter": "8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0"
+  },
+  "critical_interpretation": [
+    "源里出现0.913/0.915/0.939/标题0.942等分数或历史注释，不能替代绑定Version/ScriptVersionId的平台分数回读。",
+    "第6号cell审计硬编码det0.96875/secondary0.475/reverse0.30/disappearance1.5/gap5.8，与真正base0.965/0.80/0.15/2/5不符。",
+    "TTA执行8遍但最后rot90(k=1).transpose等价于已存在的单轴flip，因此只有7种唯一平面变换，缺一个真正anti-diagonal view；不可当作完整D4。",
+    "所谓mutual NN实际只查existing daughter最近的unclaimed orphan，无反向近邻一致性查询。",
+    "若motion重连产生边，则整个ILP edges被替换，原生division不一定保留；ILP仍可能影响节点和可用learned probabilities。",
+    "DeepCenter被required加载，但单点score返回None或缺bundle时accept_repair_point默认True；gap2完全没有DC否决。",
+    "全Notebook默认访问train标签并基于proxy选后处理，不能称为全流程label-free/test-only；主推理阶段及预sweep完整性receipt只描述该阶段。",
+    "所有outputs为空且execution_count=None；最终sweep选中参数、运行耗时、验证分和平台分均UNKNOWN。",
+    "所谓held-out仅为作者命名，代码未证明所选train视频不在两个模型训练集中。",
+    "对比V19C需以主代理读取的固定版本配置为准；本子任务未读取V19C，不直接断言差值。"
+  ]
+}

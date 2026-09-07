@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260907_BIOHUB_TWO_NOTEBOOK_COMPARISON",
+  "goal": "完整读取用户指定两个公共 Notebook 的实际源码并固定版本身份，对比本仓库 V19C 实际实现及 V20 验证边界，形成中文报告并同步本仓库 GitHub；不运行 Notebook 或实施方案。",
+  "scope": {
+    "in_scope": [
+      "指定两个公共 Kaggle Notebook 的只读源码、元数据和输出日志读取",
+      "本仓库固定 HEAD 42836ad1599a54ea7acc319d7342896f0a7cccf8 的实际代码与证据",
+      "新增本任务合同、源码清单、逐单元审读、差异报告、验证器；提交推送 SailorRen/Biohub-CELL main 并固定 SHA 回读"
+    ],
+    "out_of_scope": [
+      "Kaggle 写入、Notebook Version、训练、推理、提交、Dataset 或 Model 创建",
+      "比赛数据和权重下载",
+      "修改已有实验、治理状态、历史合同或其他仓库"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "acceptance": [
+    {
+      "id": "comparison-report",
+      "type": "file",
+      "path": "reports/20260907_两份公共方案与V19C对比.md",
+      "min_bytes": 3000,
+      "contains_all": [
+        "结论",
+        "SOURCE_CODE_VERIFIED",
+        "UNKNOWN",
+        "NOT_RUN",
+        "scriptVersionId",
+        "V20B"
+      ]
+    },
+    {
+      "id": "two-full-sources-and-review",
+      "type": "command",
+      "argv": [
+        "python3",
+        "scripts/verify_20260907_notebook_comparison.py"
+      ],
+      "expected_exit": 0,
+      "stdout_contains_all": [
+        "COMPARISON_EVIDENCE_PASS"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "id": "remote-content-readback",
+      "type": "command",
+      "argv": [
+        "python3",
+        "scripts/verify_20260907_notebook_comparison.py",
+        "--remote"
+      ],
+      "expected_exit": 0,
+      "stdout_contains_all": [
+        "REMOTE_READBACK_PASS"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "id": "git-state",
+      "type": "git",
+      "repository": ".",
+      "require_commit": true,
+      "require_clean": true,
+      "require_remote": true,
+      "remote": "origin",
+      "require_remote_head": true
+    }
+  ]
+}

@@ -1,0 +1,770 @@
+{
+  "schema_version": "1.0",
+  "source_role": "OUR_FIXED_V19C_BASELINE",
+  "read_status": "FULL_NOTEBOOK_SOURCE_READ",
+  "reviewed_at_asia_shanghai": "2026-09-07T09:54:00.663744+08:00",
+  "notebook_path": "downloads/20260907_public_comparison/v19c/biohub-v19c-public0939-sis14-only.ipynb",
+  "notebook_sha256": "92bf632410fedc9eb7e0984a20525590b5583d5abb002d8239ff65d9f51fbf57",
+  "historical_source_sha256_match": true,
+  "notebook_execution": "NOT_RUN",
+  "training": "NOT_RUN",
+  "dependency_source_full_read": "NOT_RUN_EXTERNAL_SUPPORT_FILES_NOT_DOWNLOADED",
+  "cell_count": 12,
+  "code_cell_count": 10,
+  "cells": [
+    {
+      "index": 0,
+      "cell_type": "markdown",
+      "sha256": "6fbe3c4f29ec63da7b9b8c030325dc16777a56ccb77452347a7577443440c5ef",
+      "source_bytes": 296,
+      "line_count": 3,
+      "read_status": "FULL_CELL_SOURCE_READ",
+      "coverage": {
+        "first_line": 1,
+        "last_line": 3,
+        "truncated": false
+      },
+      "ast_parse": "NOT_APPLICABLE",
+      "summary": "完整阅读标题与父来源叙述；源自公开fork等只为AUTHOR_CLAIM，不能证明平台父版本。",
+      "evidence": [
+        {
+          "lines": [
+            1,
+            3
+          ],
+          "claim": "标题与来源叙述"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "cell_type": "markdown",
+      "sha256": "376f423e69760fabcc8f829a0e3b2ddc0fcd03ce1d3320893fc7d80ec6ba3f2b",
+      "source_bytes": 3593,
+      "line_count": 33,
+      "read_status": "FULL_CELL_SOURCE_READ",
+      "coverage": {
+        "first_line": 1,
+        "last_line": 33,
+        "truncated": false
+      },
+      "ast_parse": "NOT_APPLICABLE",
+      "summary": "完整阅读方法和历史分数/参数叙述；parent9、divergence4.5与随后有效7、2.25冲突，采用后者。",
+      "evidence": [
+        {
+          "lines": [
+            18,
+            33
+          ],
+          "claim": "历史arm及stack叙述与实际赋值区分"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "cell_type": "code",
+      "sha256": "d9207bf4a2fad8b113e497af12ae2042f169bf1206c972e3d2c5cc2831a5a3e9",
+      "source_bytes": 4380,
+      "line_count": 68,
+      "read_status": "FULL_CELL_SOURCE_READ",
+      "coverage": {
+        "first_line": 1,
+        "last_line": 68,
+        "truncated": false
+      },
+      "ast_parse": "PASS",
+      "summary": "完整阅读环境赋值；det0.965、gap5.8、safe parent7/sister14/divergence2.25、caps0.00375/0.0076、DeepCenter best epoch2、bidirectional0.15。",
+      "evidence": [
+        {
+          "lines": [
+            16,
+            65
+          ],
+          "claim": "主配置实际环境赋值"
+        },
+        {
+          "lines": [
+            31,
+            39
+          ],
+          "claim": "parent7、sister14、symmetry0.6、divergence2.25"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "cell_type": "code",
+      "sha256": "99e830901eddca96d861cbf3f9ed210954e627a6d44c4668fd8b227fa5cba900",
+      "source_bytes": 1399,
+      "line_count": 43,
+      "read_status": "FULL_CELL_SOURCE_READ",
+      "coverage": {
+        "first_line": 1,
+        "last_line": 43,
+        "truncated": false
+      },
+      "ast_parse": "PASS",
+      "summary": "完整阅读有限配置guard；只检查列出的subset，末行reverse0.200为陈旧打印，实际expected0.15。",
+      "evidence": [
+        {
+          "lines": [
+            6,
+            18
+          ],
+          "claim": "guard检查范围"
+        },
+        {
+          "lines": [
+            40,
+            43
+          ],
+          "claim": "reverse0.200打印不对应实际0.15"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "cell_type": "code",
+      "sha256": "6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643",
+      "source_bytes": 14117,
+      "line_count": 238,
+      "read_status": "FULL_CELL_SOURCE_READ",
+      "coverage": {
+        "first_line": 1,
+        "last_line": 238,
+        "truncated": false
+      },
+      "ast_parse": "PASS",
+      "summary": "完整阅读路径、参数解析、全部默认与CONFIG_DISPLAY；DeepCenter safe-div threshold没有前置赋值时默认0.12；部分变量读取环境优先于默认。",
+      "evidence": [
+        {
+          "lines": [
+            43,
+            49
+          ],
+          "claim": "detector/ILP解析"
+        },
+        {
+          "lines": [
+            116,
+            148
+          ],
+          "claim": "safe division/DeepCenter defaults和环境优先级"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "cell_type": "code",
+      "sha256": "681232942fbb971dc1b999816b32c6d91da819e55d123b359b601169dd5982fb",
+      "source_bytes": 27274,
+      "line_count": 682,
+      "read_status": "FULL_CELL_SOURCE_READ",
+      "coverage": {
+        "first_line": 1,
+        "last_line": 682,
+        "truncated": false
+      },
+      "ast_parse": "PASS",
+      "summary": "完整阅读离线依赖、artifact定位、源码与三checkpoint哈希完整性、materialization、secondary参数末次赋值；detector和Transformer完整定义在外部support源码，Notebook只固定其hash。",
+      "evidence": [
+        {
+          "lines": [
+            449,
+            466
+          ],
+          "claim": "13个support源码与primary、DeepCenter哈希"
+        },
+        {
+          "lines": [
+            573,
+            577
+          ],
+          "claim": "secondary身份"
+        },
+        {
+          "lines": [
+            644,
+            655
+          ],
+          "claim": "secondary参数最后赋值"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "cell_type": "code",
+      "sha256": "2c60405c2ad411a4eaebe59defaef6a79185c3119874905edee685c264335d8b",
+      "source_bytes": 35835,
+      "line_count": 425,
+      "read_status": "FULL_CELL_SOURCE_READ",
+      "coverage": {
+        "first_line": 1,
+        "last_line": 425,
+        "truncated": false
+      },
+      "ast_parse": "PASS",
+      "summary": "完整阅读全部原始源码和内嵌字符串patch；双seed标准差/均值校准；0.90逐帧retention回退；harmonic先于secondary低margin融合；TTA条件路径8次累积/7unique；双GPU按视频穷尽分片；未执行。",
+      "evidence": [
+        {
+          "lines": [
+            10,
+            57
+          ],
+          "claim": "条件TTA累积8次，第8次与x-flip重复"
+        },
+        {
+          "lines": [
+            61,
+            81
+          ],
+          "claim": "dual-seed calibrate/low-margin内嵌patch"
+        },
+        {
+          "lines": [
+            84,
+            165
+          ],
+          "claim": "retention0.90覆盖"
+        },
+        {
+          "lines": [
+            167,
+            209
+          ],
+          "claim": "harmonic融合与preILP坐标manifest"
+        },
+        {
+          "lines": [
+            379,
+            425
+          ],
+          "claim": "GPU分片实际启动与等待代码"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "cell_type": "code",
+      "sha256": "a5da2a79ceb6383c66b543dd98280c83ccd3815f4becd26a4ab873ad74d82c8a",
+      "source_bytes": 71299,
+      "line_count": 1678,
+      "read_status": "FULL_CELL_SOURCE_READ",
+      "coverage": {
+        "first_line": 1,
+        "last_line": 1678,
+        "truncated": false
+      },
+      "ast_parse": "PASS",
+      "summary": "完整阅读所有1678行；图坐标尺度、读帧、DeepCenter结构和预处理、motion-relink覆盖原边、gap/gap2、safe division全部gate、短component过滤救援、linefit、最终CSV写出。",
+      "evidence": [
+        {
+          "lines": [
+            7,
+            9
+          ],
+          "claim": "固定体素尺度z/y/x=1.625/0.40625/0.40625um"
+        },
+        {
+          "lines": [
+            117,
+            138
+          ],
+          "claim": "DeepCenter pool/normalization；cfg可覆盖默认"
+        },
+        {
+          "lines": [
+            239,
+            301
+          ],
+          "claim": "DeepCenter UNet结构与checkpoint config"
+        },
+        {
+          "lines": [
+            627,
+            675
+          ],
+          "claim": "单gap端点门=GAP_CLOSE_UM*(gap+1)+density correction"
+        },
+        {
+          "lines": [
+            973,
+            1141
+          ],
+          "claim": "safe division完整规则"
+        },
+        {
+          "lines": [
+            1428,
+            1446
+          ],
+          "claim": "motion非空时替换原边"
+        },
+        {
+          "lines": [
+            1473,
+            1552
+          ],
+          "claim": "后处理调用顺序"
+        },
+        {
+          "lines": [
+            1572,
+            1678
+          ],
+          "claim": "CSV写出和检查"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "cell_type": "code",
+      "sha256": "239f51c30606f090e1fbc939a541891cef2dbea45d7b1c4a6fef53352e94759d",
+      "source_bytes": 7409,
+      "line_count": 178,
+      "read_status": "FULL_CELL_SOURCE_READ",
+      "coverage": {
+        "first_line": 1,
+        "last_line": 178,
+        "truncated": false
+      },
+      "ast_parse": "PASS",
+      "summary": "完整阅读schema、完整性、retention与拓扑检查；报告configuration含多个硬编码陈旧值；不作为实际配置权威。",
+      "evidence": [
+        {
+          "lines": [
+            65,
+            103
+          ],
+          "claim": "indegree<=1/outdegree<=2"
+        },
+        {
+          "lines": [
+            124,
+            173
+          ],
+          "claim": "陈旧config和unverified质量声明"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "cell_type": "code",
+      "sha256": "0083b9cd0b94cabba7c28f12bf8d80f6eda4a982d1f6f44ead0975ea0de89e92",
+      "source_bytes": 8730,
+      "line_count": 178,
+      "read_status": "FULL_CELL_SOURCE_READ",
+      "coverage": {
+        "first_line": 1,
+        "last_line": 178,
+        "truncated": false
+      },
+      "ast_parse": "PASS",
+      "summary": "完整阅读训练侧验证选择和推理启动代码；默认每prefix2，优先含GT division样本；排除test同名但未证明checkpoint训练排除。",
+      "evidence": [
+        {
+          "lines": [
+            11,
+            15
+          ],
+          "claim": "validator defaults"
+        },
+        {
+          "lines": [
+            27,
+            61
+          ],
+          "claim": "GT-division-enriched选择"
+        },
+        {
+          "lines": [
+            135,
+            178
+          ],
+          "claim": "验证侧预测代码"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "cell_type": "code",
+      "sha256": "b5d95f2743bc317426eb4bab90da3855450a8a30902a5575e5378afefd8bca2a",
+      "source_bytes": 16964,
+      "line_count": 424,
+      "read_status": "FULL_CELL_SOURCE_READ",
+      "coverage": {
+        "first_line": 1,
+        "last_line": 424,
+        "truncated": false
+      },
+      "ast_parse": "PASS",
+      "summary": "完整阅读全部proxy评分和执行；使用estimated_number_of_nodes、7um匹配、自实现edge/division metric；强制临时TEST_DIR=TRAIN_DIR并finally恢复；非已验证official scorer等价。",
+      "evidence": [
+        {
+          "lines": [
+            11,
+            38
+          ],
+          "claim": "bipartite节点匹配"
+        },
+        {
+          "lines": [
+            74,
+            77
+          ],
+          "claim": "node count adjustment"
+        },
+        {
+          "lines": [
+            100,
+            187
+          ],
+          "claim": "division proxy实现"
+        },
+        {
+          "lines": [
+            247,
+            261
+          ],
+          "claim": "estimated node metadata"
+        },
+        {
+          "lines": [
+            279,
+            318
+          ],
+          "claim": "评分聚合"
+        },
+        {
+          "lines": [
+            361,
+            375
+          ],
+          "claim": "TEST_DIR临时切换train并恢复"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "cell_type": "code",
+      "sha256": "974767da6156ddf12c5b2d1351b13658f160d0b859a36deb9614441c006537ba",
+      "source_bytes": 2528,
+      "line_count": 44,
+      "read_status": "FULL_CELL_SOURCE_READ",
+      "coverage": {
+        "first_line": 1,
+        "last_line": 44,
+        "truncated": false
+      },
+      "ast_parse": "PASS",
+      "summary": "完整阅读resolved打印；输出仅部分配置，不验证全部参数；读取当前环境而非完整计算图。",
+      "evidence": [
+        {
+          "lines": [
+            15,
+            42
+          ],
+          "claim": "有限resolved manifest内容"
+        }
+      ]
+    }
+  ],
+  "comparison_mapping": {
+    "lb942": {
+      "matched_code_cells": [
+        {
+          "v19c_index": 2,
+          "other_index": 0,
+          "v19c_sha256": "d9207bf4a2fad8b113e497af12ae2042f169bf1206c972e3d2c5cc2831a5a3e9",
+          "other_sha256": "4287b1b08b202ca561790489b6cf5941381b3fccfca40bf060239ae22ea3b132",
+          "exact_source_equal": false,
+          "ast_equal_ignoring_comments_and_locations": false,
+          "line_sequence_similarity": 0.9285714285714286
+        },
+        {
+          "v19c_index": 3,
+          "other_index": 1,
+          "v19c_sha256": "99e830901eddca96d861cbf3f9ed210954e627a6d44c4668fd8b227fa5cba900",
+          "other_sha256": "64bf335d2ea9f1dea62e2e7b3ad3b94205a775e8c5a53515d94bea3b6c655ba2",
+          "exact_source_equal": false,
+          "ast_equal_ignoring_comments_and_locations": false,
+          "line_sequence_similarity": 0.9767441860465116
+        },
+        {
+          "v19c_index": 4,
+          "other_index": 2,
+          "v19c_sha256": "6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643",
+          "other_sha256": "6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643",
+          "exact_source_equal": true,
+          "ast_equal_ignoring_comments_and_locations": true,
+          "line_sequence_similarity": 1.0
+        },
+        {
+          "v19c_index": 5,
+          "other_index": 3,
+          "v19c_sha256": "681232942fbb971dc1b999816b32c6d91da819e55d123b359b601169dd5982fb",
+          "other_sha256": "681232942fbb971dc1b999816b32c6d91da819e55d123b359b601169dd5982fb",
+          "exact_source_equal": true,
+          "ast_equal_ignoring_comments_and_locations": true,
+          "line_sequence_similarity": 1.0
+        },
+        {
+          "v19c_index": 6,
+          "other_index": 4,
+          "v19c_sha256": "2c60405c2ad411a4eaebe59defaef6a79185c3119874905edee685c264335d8b",
+          "other_sha256": "2c60405c2ad411a4eaebe59defaef6a79185c3119874905edee685c264335d8b",
+          "exact_source_equal": true,
+          "ast_equal_ignoring_comments_and_locations": true,
+          "line_sequence_similarity": 1.0
+        },
+        {
+          "v19c_index": 7,
+          "other_index": 5,
+          "v19c_sha256": "a5da2a79ceb6383c66b543dd98280c83ccd3815f4becd26a4ab873ad74d82c8a",
+          "other_sha256": "ab3be142f357c1eb8e25c40537af64d1b95e4d60b8735afdd533781f6dfb7f9c",
+          "exact_source_equal": false,
+          "ast_equal_ignoring_comments_and_locations": false,
+          "line_sequence_similarity": 0.9342848647041332
+        },
+        {
+          "v19c_index": 8,
+          "other_index": 6,
+          "v19c_sha256": "239f51c30606f090e1fbc939a541891cef2dbea45d7b1c4a6fef53352e94759d",
+          "other_sha256": "239f51c30606f090e1fbc939a541891cef2dbea45d7b1c4a6fef53352e94759d",
+          "exact_source_equal": true,
+          "ast_equal_ignoring_comments_and_locations": true,
+          "line_sequence_similarity": 1.0
+        },
+        {
+          "v19c_index": 9,
+          "other_index": 7,
+          "v19c_sha256": "0083b9cd0b94cabba7c28f12bf8d80f6eda4a982d1f6f44ead0975ea0de89e92",
+          "other_sha256": "0083b9cd0b94cabba7c28f12bf8d80f6eda4a982d1f6f44ead0975ea0de89e92",
+          "exact_source_equal": true,
+          "ast_equal_ignoring_comments_and_locations": true,
+          "line_sequence_similarity": 1.0
+        },
+        {
+          "v19c_index": 10,
+          "other_index": 8,
+          "v19c_sha256": "b5d95f2743bc317426eb4bab90da3855450a8a30902a5575e5378afefd8bca2a",
+          "other_sha256": "3988c72818365e0cf42169df1d42d3d64e64a6f2815a42255a04222523936349",
+          "exact_source_equal": false,
+          "ast_equal_ignoring_comments_and_locations": false,
+          "line_sequence_similarity": 0.8571428571428571
+        },
+        {
+          "v19c_index": 11,
+          "other_index": 11,
+          "v19c_sha256": "974767da6156ddf12c5b2d1351b13658f160d0b859a36deb9614441c006537ba",
+          "other_sha256": "974767da6156ddf12c5b2d1351b13658f160d0b859a36deb9614441c006537ba",
+          "exact_source_equal": true,
+          "ast_equal_ignoring_comments_and_locations": true,
+          "line_sequence_similarity": 1.0
+        }
+      ],
+      "v19c_markdown_cells_absent": [
+        0,
+        1
+      ],
+      "additional_cells": [
+        9,
+        10
+      ],
+      "exact_source_equal_count": 6,
+      "ast_equal_count": 6
+    },
+    "run77": {
+      "matched_code_cells": [
+        {
+          "v19c_index": 2,
+          "other_index": 0,
+          "v19c_sha256": "d9207bf4a2fad8b113e497af12ae2042f169bf1206c972e3d2c5cc2831a5a3e9",
+          "other_sha256": "4f04c020a8c6663822ed02f0d343f85c26d5090d054adc2914e4b67c2be0b8fd",
+          "exact_source_equal": false,
+          "ast_equal_ignoring_comments_and_locations": false,
+          "line_sequence_similarity": 0.8661417322834646
+        },
+        {
+          "v19c_index": 3,
+          "other_index": 1,
+          "v19c_sha256": "99e830901eddca96d861cbf3f9ed210954e627a6d44c4668fd8b227fa5cba900",
+          "other_sha256": "5ce922bc617cba312e742052a093c645f8ca67e75c686f33707b083c9f45f59c",
+          "exact_source_equal": false,
+          "ast_equal_ignoring_comments_and_locations": false,
+          "line_sequence_similarity": 0.9885057471264368
+        },
+        {
+          "v19c_index": 4,
+          "other_index": 2,
+          "v19c_sha256": "6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643",
+          "other_sha256": "6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643",
+          "exact_source_equal": true,
+          "ast_equal_ignoring_comments_and_locations": true,
+          "line_sequence_similarity": 1.0
+        },
+        {
+          "v19c_index": 5,
+          "other_index": 3,
+          "v19c_sha256": "681232942fbb971dc1b999816b32c6d91da819e55d123b359b601169dd5982fb",
+          "other_sha256": "681232942fbb971dc1b999816b32c6d91da819e55d123b359b601169dd5982fb",
+          "exact_source_equal": true,
+          "ast_equal_ignoring_comments_and_locations": true,
+          "line_sequence_similarity": 1.0
+        },
+        {
+          "v19c_index": 6,
+          "other_index": 4,
+          "v19c_sha256": "2c60405c2ad411a4eaebe59defaef6a79185c3119874905edee685c264335d8b",
+          "other_sha256": "2c60405c2ad411a4eaebe59defaef6a79185c3119874905edee685c264335d8b",
+          "exact_source_equal": true,
+          "ast_equal_ignoring_comments_and_locations": true,
+          "line_sequence_similarity": 1.0
+        },
+        {
+          "v19c_index": 7,
+          "other_index": 5,
+          "v19c_sha256": "a5da2a79ceb6383c66b543dd98280c83ccd3815f4becd26a4ab873ad74d82c8a",
+          "other_sha256": "49bed1d06ba5b4111c789704607a4d699976f1fe2a9f2ff45f8e3bdba8a15e5f",
+          "exact_source_equal": false,
+          "ast_equal_ignoring_comments_and_locations": true,
+          "line_sequence_similarity": 0.9943062631105783
+        },
+        {
+          "v19c_index": 8,
+          "other_index": 6,
+          "v19c_sha256": "239f51c30606f090e1fbc939a541891cef2dbea45d7b1c4a6fef53352e94759d",
+          "other_sha256": "239f51c30606f090e1fbc939a541891cef2dbea45d7b1c4a6fef53352e94759d",
+          "exact_source_equal": true,
+          "ast_equal_ignoring_comments_and_locations": true,
+          "line_sequence_similarity": 1.0
+        },
+        {
+          "v19c_index": 9,
+          "other_index": 7,
+          "v19c_sha256": "0083b9cd0b94cabba7c28f12bf8d80f6eda4a982d1f6f44ead0975ea0de89e92",
+          "other_sha256": "082c333402a4f10b81db5f3cf07c02beb70c8b575f5f948f81b4f58d20e9e21d",
+          "exact_source_equal": false,
+          "ast_equal_ignoring_comments_and_locations": true,
+          "line_sequence_similarity": 0.9534883720930233
+        },
+        {
+          "v19c_index": 10,
+          "other_index": 8,
+          "v19c_sha256": "b5d95f2743bc317426eb4bab90da3855450a8a30902a5575e5378afefd8bca2a",
+          "other_sha256": "54ff3e88b8e8222433179df53be137cf35dde1d286c9ae48d835e1957065b7da",
+          "exact_source_equal": false,
+          "ast_equal_ignoring_comments_and_locations": true,
+          "line_sequence_similarity": 0.9832935560859188
+        },
+        {
+          "v19c_index": 11,
+          "other_index": 9,
+          "v19c_sha256": "974767da6156ddf12c5b2d1351b13658f160d0b859a36deb9614441c006537ba",
+          "other_sha256": "325878ba81cc45ed645e42ba60c681a9a8cfe0c2bb53b8cca6c134569f52f954",
+          "exact_source_equal": false,
+          "ast_equal_ignoring_comments_and_locations": true,
+          "line_sequence_similarity": 0.8860759493670886
+        }
+      ],
+      "v19c_markdown_cells_absent": [
+        0,
+        1
+      ],
+      "additional_cells": [],
+      "exact_source_equal_count": 4,
+      "ast_equal_count": 8
+    }
+  },
+  "config_differences": [
+    {
+      "parameter": "BIOHUB_SAFE_DIV_MAX_UM",
+      "v19c": 7.0,
+      "lb942_base": 9.0,
+      "run77": 9.0,
+      "classification": "SOURCE_CODE_VERIFIED"
+    },
+    {
+      "parameter": "BIOHUB_DEEPCENTER_SAFE_DIV_THRESHOLD",
+      "v19c": 0.12,
+      "lb942_base": 0.25,
+      "run77": 0.26,
+      "v19c_resolution": "default in cell4 line146; no preceding environment override",
+      "classification": "SOURCE_CODE_VERIFIED"
+    },
+    {
+      "parameter": "BIOHUB_GAP_CLOSE_UM",
+      "v19c": 5.8,
+      "lb942_base": 5.0,
+      "run77": 5.8,
+      "semantics": "per-step base; single missing frame endpoint gate multiplies by2 and may adjust density",
+      "classification": "SOURCE_CODE_VERIFIED"
+    },
+    {
+      "parameter": "BIOHUB_VALIDATOR_N_PER_TYPE",
+      "v19c": 2,
+      "lb942_base": 4,
+      "run77": 2,
+      "classification": "SOURCE_CODE_VERIFIED"
+    },
+    {
+      "parameter": "BIOHUB_DET_THRESHOLD",
+      "v19c": 0.965,
+      "lb942_base": 0.965,
+      "run77": 0.965,
+      "warning": "run77 comment references0.975 old experiment; executable assignment remains0.965",
+      "classification": "SOURCE_CODE_VERIFIED"
+    }
+  ],
+  "last_override_analysis": {
+    "shared_late_assignments": "V19C cell5 lines644-655 shared exactly by lb942 cell3 and run77 cell3 sets secondary edge0.15, detection0.80, low_margin_consensus, temperature1, low_margin_max0.35, edge_threshold0.48; cell6 line85 sets retention0.90.",
+    "v19c_and_run77": "No later postprocess sweep; graph/validator/manifest code AST identical between V19C and run77. Only executable config/guard differences in run77 are parent7->9 and DeepCenter safe threshold0.12->0.26 (plus asserting threshold0.26).",
+    "lb942": "Graph helper definitions shared; immediate writer wrapped into write_test_submission(tag). New cells9/10 cache train raw graphs and allow conditional postprocess overrides. Code defaults selected_label=base and empty overrides; actual branch selection requires runtime evidence from root agent.",
+    "lb942_candidate_keys": [
+      "GAP_CLOSE_UM=4.5",
+      "MOTION_RELINK_TIGHT_UM=5.5",
+      "MOTION_RELINK_RELAXED_UM=9.0",
+      "MOTION_RELINK_LEARNED_BONUS=1.25",
+      "GAP2_MAX_STEP_UM=4.0",
+      "GAP_CLOSE_REUSE_UM=2.8",
+      "DEEPCENTER_GAP_THRESHOLD=0.35"
+    ],
+    "lb942_promotion": "single candidates qualify for combo at proxy>=base+0.0005 and adjusted>=base-0.0005; final nonbase choice needs proxy>=base+0.001 and adjusted>=base-0.0005. Selected overrides applied only for rewrite then module globals restored; environment update is separate."
+  },
+  "clarifications": [
+    {
+      "id": "TTA_SHARED_DUPLICATE_VIEW",
+      "classification": "SOURCE_CODE_VERIFIED",
+      "evidence": "V19C cell6 lines23-52; exactly shared public predictor cell4",
+      "detail": "Conditional cfg.det_tta path has8 accumulation passes but7 unique XY transforms; rot90(k=1).transpose repeats x flip, which gets2/8 weight. Symbolic 3x3 integer-matrix check, no Notebook or Torch execution. cfg.det_tta effective value depends on external config."
+    },
+    {
+      "id": "MOTION_REPLACES_ILP_EDGES",
+      "classification": "SOURCE_CODE_VERIFIED",
+      "evidence": "V19C cell7 lines1428-1446",
+      "detail": "nonempty motion_edges replace filtered raw/ILP edges; learned original edge probabilities remain cost bonuses. Thus final graph cannot be described as unmodified ILP result."
+    },
+    {
+      "id": "DEEPCENTER_PREPROCESS_DEFAULTS",
+      "classification": "SOURCE_CODE_VERIFIED",
+      "evidence": "V19C cell7 lines117-138,239-301,346-352",
+      "detail": "DeepCenter XY mean-pool factor defaults4; normalization defaults p50/p99.5 clip[-0.5,6.0]; config comes from checkpoint and can override. DeepCenter UNet conv blocks useConv3d/GroupNorm/SiLU and3 downsampling stages, base_channels defaults24, sigmoid center output. These are not verified detector preprocessing or runtime checkpoint config."
+    },
+    {
+      "id": "DECLARED_MUTUAL_NN_ONE_DIRECTION",
+      "classification": "SOURCE_CODE_VERIFIED",
+      "evidence": "V19C cell7 lines1012-1042,1055-1058",
+      "detail": "Code called mutual nearest orphan requires candidate be nearest unclaimed node to existing first daughter; no reverse nearest check is visible in this function."
+    },
+    {
+      "id": "NO_CAUSAL_SCORE_ATTRIBUTION",
+      "classification": "UNKNOWN",
+      "detail": "Multiple configuration knobs differ and public versions not independently rerun. Same checkpoint/source backbone does not identify cause of score differences."
+    }
+  ],
+  "limitations": [
+    "No Notebook execution, inference, training, model loading or external action by this reviewer.",
+    "External support model definitions/checkpoint configs are hash-pinned but not fully read in this subtask.",
+    "V19C historical platform score facts are separate from present source comparison; public current runtime/score binding owned by root agent."
+  ]
+}
