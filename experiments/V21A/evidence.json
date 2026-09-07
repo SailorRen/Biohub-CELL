@@ -2,7 +2,7 @@
   "task_id": "CODEX_20260907_BIOHUB_V21A_TWO_PARAMETER_SCORE_TEST",
   "experiment_status": "FORMAL_PENDING",
   "score_conclusion": "UNKNOWN_PENDING_FORMAL_SCORE",
-  "delivery_status": "NOT_SYNCED",
+  "delivery_status": "VERIFIED_FIXED_CONTENT_COMMIT",
   "baseline": {
     "ref": "sailorren/biohub-v19c-public0939-sis14-only",
     "version": 1,
@@ -17,7 +17,7 @@
       "description": "Notebook biohub-v19c-public0939-sis14-only | Version 1",
       "date_utc": "2026-09-03 09:54:56.607000",
       "error_description": "",
-      "observed_at_utc": "2026-09-07T04:57:16.472260+00:00"
+      "observed_at_utc": "2026-09-07T05:07:36.878831+00:00"
     },
     "input_binding": {
       "observed_at_utc": "2026-09-07T04:10:08.330001+00:00",
@@ -51,7 +51,7 @@
       "description": "V21A parent9 dc026 | Version 1 | SV 347862850 | SHA256 9537aa87092fe2e0d130b9b23ffffb9796b6d6ee2d29b366c09bebce044223e0",
       "date_utc": "2026-09-07 04:56:50.697000",
       "error_description": "",
-      "observed_at_utc": "2026-09-07T04:57:16.472260+00:00",
+      "observed_at_utc": "2026-09-07T05:07:36.878831+00:00",
       "ui_status": "Notebook Running",
       "ui_version": 1,
       "ui_script_version_id": 347862850,
@@ -608,6 +608,33 @@
           "observed_at_utc": "2026-09-07T04:57:16.472260+00:00"
         }
       ]
+    },
+    {
+      "operation": "READ_STATUS",
+      "observed_at_utc": "2026-09-07T05:07:36.878831+00:00",
+      "ref": "sailorren/biohub-v21a-parent9-dc026",
+      "version": 1,
+      "script_version_id": 347862850,
+      "submissions": [
+        {
+          "id": 56069192,
+          "status": "PENDING",
+          "public_score": null,
+          "description": "V21A parent9 dc026 | Version 1 | SV 347862850 | SHA256 9537aa87092fe2e0d130b9b23ffffb9796b6d6ee2d29b366c09bebce044223e0",
+          "date_utc": "2026-09-07 04:56:50.697000",
+          "error_description": "",
+          "observed_at_utc": "2026-09-07T05:07:36.878831+00:00"
+        },
+        {
+          "id": 55978992,
+          "status": "COMPLETE",
+          "public_score": "0.939",
+          "description": "Notebook biohub-v19c-public0939-sis14-only | Version 1",
+          "date_utc": "2026-09-03 09:54:56.607000",
+          "error_description": "",
+          "observed_at_utc": "2026-09-07T05:07:36.878831+00:00"
+        }
+      ]
     }
   ],
   "limitations": [],
@@ -640,6 +667,10 @@
       "result": "PASS",
       "check": "verify.py --ordinary",
       "correction": "Require exactly one fold, then check train empty and full test equality."
+    },
+    {
+      "result": "REMOTE_CHECKER_PATH_FORMAT_ERROR_RESOLVED",
+      "reason": "git ls-tree default quoted Chinese filename was incorrectly treated as literal path; changed path enumeration to NUL-delimited output. Fixed-commit raw readback then passed all 18 files. No candidate/runtime change."
     }
   ],
   "delta_public": null,
@@ -652,5 +683,108 @@
       "source diff re-rendered with zero context; unchanged source/container differences"
     ],
     "platform_writes": 0
+  },
+  "delivery": {
+    "observed_at_utc": "2026-09-07T05:08:56.527944+00:00",
+    "status": "PASS",
+    "method": "fixed-commit raw.githubusercontent.com byte hashes plus authoritative git ls-remote main",
+    "receipt": {
+      "commit": "f0130b4171f15836f0ad591fd9181ffba6516e7e",
+      "branch": "main",
+      "remote_main": "f0130b4171f15836f0ad591fd9181ffba6516e7e",
+      "files": [
+        {
+          "path": "experiments/V21A/bidirectional_production_runtime_integrity.json",
+          "sha256": "ae41130ee035d3ddcbaf2d0977f721429a52ffda8133fe1b877f51de5926278d",
+          "bytes": 2387
+        },
+        {
+          "path": "experiments/V21A/candidate.ipynb",
+          "sha256": "abd41b73fec6c17f1024a408b0023458273ef7159935062f192d11ffa6f8ae6c",
+          "bytes": 205292
+        },
+        {
+          "path": "experiments/V21A/contract.json",
+          "sha256": "35f41aa91c95dcc9a9dd03c60e5f125a7eedac1b9a0f24edd8b217d6dfff8de9",
+          "bytes": 3866
+        },
+        {
+          "path": "experiments/V21A/dual_seed_frame_retention_guard_report.json",
+          "sha256": "5a7b3e989b4d990f524a8731e56b4e21d5325e92ab76053acd1ec01640740509",
+          "bytes": 3343
+        },
+        {
+          "path": "experiments/V21A/evidence.json",
+          "sha256": "adf6b0b7b2df847a15a8b45604701c442f93e2314bf6a0bb9f4a24156d047fed",
+          "bytes": 24414
+        },
+        {
+          "path": "experiments/V21A/execute_once.py",
+          "sha256": "fadcfa902915ef4aea40678cc33adf78087d6b95db7c4f2d2ba60535603d3a32",
+          "bytes": 3704
+        },
+        {
+          "path": "experiments/V21A/kaggle_test_splits_50ep.json",
+          "sha256": "75fccf5fa4771548dc8e53fa96800574cad593528ae022a968f03d481c8d5b52",
+          "bytes": 155
+        },
+        {
+          "path": "experiments/V21A/kernel-metadata.json",
+          "sha256": "4e72fe237e6d099000a51bffc762935590deaf0b9e42ddb7d1419ff0399fbb9f",
+          "bytes": 800
+        },
+        {
+          "path": "experiments/V21A/ordinary.log",
+          "sha256": "d75ab449e243ebe836cb5f5bb55eac43020b036ddc5b7734d4e0bbd1ed0db233",
+          "bytes": 111316
+        },
+        {
+          "path": "experiments/V21A/read_platform.py",
+          "sha256": "6413d8adbd3086fcc358a3243c582ad8450a776009878c971e5261a1b7440164",
+          "bytes": 3215
+        },
+        {
+          "path": "experiments/V21A/read_status.py",
+          "sha256": "438811ffcd3e4b12923f3767f86c5e34b01cbbaba6a7cd2cf1bb1bbbac2878b0",
+          "bytes": 2713
+        },
+        {
+          "path": "experiments/V21A/run_stats.csv",
+          "sha256": "f7518cc87997e403f0f52e536e2cc1447b7eb36882debc7527d874dfa162b49b",
+          "bytes": 3108
+        },
+        {
+          "path": "experiments/V21A/source.diff",
+          "sha256": "7766d46ad604d5fe1a0ce9904d584017050c89f053e0caaf968980bfc3fabfd6",
+          "bytes": 15778
+        },
+        {
+          "path": "experiments/V21A/source_review.json",
+          "sha256": "629d6a9c6b6abffab35bb43ed48a43efc5ff255557abb7807510784932c6783d",
+          "bytes": 19592
+        },
+        {
+          "path": "experiments/V21A/validator_results.csv",
+          "sha256": "10f331632887d410c21e3dc9d09954d39b415bff90bc11259fc0de0e91e70570",
+          "bytes": 784
+        },
+        {
+          "path": "experiments/V21A/verify.py",
+          "sha256": "7d9d3bea61a2fcdb6715451ae9532d8b8a09f77bd189d8b8309074e2d668a6cd",
+          "bytes": 8993
+        },
+        {
+          "path": "reports/20260907_V21A_双参数实测报告.md",
+          "sha256": "602882dfab047d6b80911a600f6299b994b28921e17b686c0895a32aa11d11e7",
+          "bytes": 8420
+        },
+        {
+          "path": "tasks/CODEX_20260907_BIOHUB_V21A_TWO_PARAMETER_SCORE_TEST.md",
+          "sha256": "f41e9fcd61575b926d9633b8271e99d6cbe0ba71d33547eafc7a1346f57fba86",
+          "bytes": 8690
+        }
+      ]
+    },
+    "scope": "Content commit verified. This receipt and local read-only verifier correction are delivered in a subsequent commit, verified separately."
   }
 }

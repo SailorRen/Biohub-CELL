@@ -83,7 +83,7 @@ def check_source():
 
 def check_remote():
     commit = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
-    paths = subprocess.check_output(["git", "ls-tree", "-r", "--name-only", commit, "experiments/V21A", "tasks/CODEX_20260907_BIOHUB_V21A_TWO_PARAMETER_SCORE_TEST.md", "reports/20260907_V21A_双参数实测报告.md"], cwd=ROOT, text=True).splitlines()
+    paths = [p for p in subprocess.check_output(["git", "ls-tree", "-r", "--name-only", "-z", commit, "experiments/V21A", "tasks/CODEX_20260907_BIOHUB_V21A_TWO_PARAMETER_SCORE_TEST.md", "reports/20260907_V21A_双参数实测报告.md"], cwd=ROOT, text=True).split("\0") if p]
     assert len(paths) >= 8
     results = []
     for path in paths:
