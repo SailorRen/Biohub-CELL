@@ -1,7 +1,6 @@
 {
   "task_id": "CODEX_20260907_BIOHUB_TWO_NOTEBOOK_COMPARISON",
   "recorded_at_asia_shanghai": "2026-09-07T09:57:19.292173+08:00",
-  "not_overall_completion": true,
   "contract_sha256": "1339333cf0e66a96c7f20c1f631e192072e7668d0759668bbc4cc07a5f965c59",
   "read_coverage": {
     "public_code_cells": 22,
@@ -65,12 +64,146 @@
       }
     }
   ],
-  "status": "LOCAL_EVIDENCE_PASS_SYNC_AUTHORIZED",
+  "status": "COMPLETED_VERIFIED",
   "sync_authorization": {
     "user_instruction": "报告同步github",
     "scope": "Commit and push the reviewed 12-file bundle to SailorRen/Biohub-CELL main, as explicitly requested after the concrete approval question",
     "recorded_at_asia_shanghai": "2026-09-07T10:09:35.478588+08:00",
     "prior_auto_review_block_resolved_by_user_authorization": true
   },
-  "remote_readback": "PENDING_POST_PUSH: fixed-commit byte verification required before completion"
+  "remote_readback": {
+    "status": "PASS",
+    "method": "git ls-remote main plus raw.githubusercontent.com fixed-commit bytes SHA256 comparison",
+    "evidence_commit_sha": "e5a85495de5cf432681e3cda6a28cc655fd66982",
+    "files_matched": 12,
+    "files_total": 12,
+    "git_tree_clean_at_verification": true
+  },
+  "completion_scope": "本任务合同范围内的源码比较报告和GitHub交付；不代表模型复现、性能或整个项目完成",
+  "updated_at_asia_shanghai": "2026-09-07T10:11:26.964443+08:00",
+  "outer_verifier": {
+    "checks": [
+      {
+        "details": {
+          "bytes": 11501,
+          "forbidden_text_checks": 0,
+          "matched_forbidden_text_checks": 0,
+          "missing_required_text_checks": 0,
+          "path": "reports/20260907_两份公共方案与V19C对比.md",
+          "required_text_checks": 6,
+          "sha256": "e4f5e4165cc25b29f0f51a533fba61680acdd787931b6a813ee57574c659a3b4"
+        },
+        "id": "comparison-report",
+        "outcome": "PASS",
+        "reason": "file evidence passed",
+        "required": true,
+        "type": "file"
+      },
+      {
+        "details": {
+          "argument_count": 2,
+          "argv_sha256": "d6188271e53b87e0bcdbca3dc74c3d32e8b2153123105618486554006104fd9a",
+          "cwd": ".",
+          "executable": "python3",
+          "expected_exit": 0,
+          "missing_stderr_text_checks": 0,
+          "missing_stdout_text_checks": 0,
+          "raw_output_stored": false,
+          "returncode": 0,
+          "stderr": {
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "stderr_text_checks": 0,
+          "stdout": {
+            "bytes": 111,
+            "sha256": "57c36a5c5dc275a5278f7adc225e876c68bbd73b3d6f16c77ba8bca8b828cc7f"
+          },
+          "stdout_text_checks": 1
+        },
+        "id": "two-full-sources-and-review",
+        "outcome": "PASS",
+        "reason": "command evidence passed",
+        "required": true,
+        "type": "command"
+      },
+      {
+        "details": {
+          "argument_count": 3,
+          "argv_sha256": "483c99ff8da6780496a58ca2b9944ab2fb5d25dfe76dbce9c90daf8623f39f42",
+          "cwd": ".",
+          "executable": "python3",
+          "expected_exit": 0,
+          "missing_stderr_text_checks": 0,
+          "missing_stdout_text_checks": 0,
+          "raw_output_stored": false,
+          "returncode": 0,
+          "stderr": {
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "stderr_text_checks": 0,
+          "stdout": {
+            "bytes": 200,
+            "sha256": "4ef390e4c1623fd826957ba74b7f6f6395b52f21bed4813b16c42dfba7dd8b8a"
+          },
+          "stdout_text_checks": 1
+        },
+        "id": "remote-content-readback",
+        "outcome": "PASS",
+        "reason": "command evidence passed",
+        "required": true,
+        "type": "command"
+      },
+      {
+        "details": {
+          "branch": "main",
+          "dirty_entry_count": 0,
+          "head": "e5a85495de5cf432681e3cda6a28cc655fd66982",
+          "remote": "origin",
+          "remote_exists": true,
+          "remote_head": "e5a85495de5cf432681e3cda6a28cc655fd66982",
+          "remote_url_sha256": "294339ae4bf28ec437260f32bd064c06212de22a7026887c59e47f72ef414b8e",
+          "repository": "."
+        },
+        "id": "git-state",
+        "outcome": "PASS",
+        "reason": "Git evidence passed",
+        "required": true,
+        "type": "git"
+      }
+    ],
+    "claimed_at": "2026-09-07T09:58:57+08:00",
+    "claimed_status": "CLAIMED_COMPLETE",
+    "contract_path": "tasks/CODEX_20260907_BIOHUB_TWO_NOTEBOOK_COMPARISON_CONTRACT.json",
+    "contract_sha256": "1339333cf0e66a96c7f20c1f631e192072e7668d0759668bbc4cc07a5f965c59",
+    "final_status": "COMPLETED_VERIFIED",
+    "finished_at": "2026-09-07T10:10:23+08:00",
+    "integrity_scope": "local-sha256-only",
+    "limitations": [
+      "The conclusion is limited to the frozen contract and the implemented checks.",
+      "The verifier does not prove omitted requirements or future stability.",
+      "A local or Git hash is not a trusted signature against a malicious writer."
+    ],
+    "optional_warning_check_ids": [],
+    "reason": "all required automated checks passed",
+    "required_summary": {
+      "failed_or_blocked": 0,
+      "human_review": 0,
+      "passed": 4
+    },
+    "run_id": "20260907T101007+0800-2b10e4b5",
+    "schema_version": "1.0",
+    "started_at": "2026-09-07T10:10:07+08:00",
+    "task_id": "CODEX_20260907_BIOHUB_TWO_NOTEBOOK_COMPARISON"
+  },
+  "sync_boundary_independent_review": {
+    "status": "PASS",
+    "files": 12,
+    "report_sha256_unchanged": true,
+    "contract_sha256_unchanged": true,
+    "raw_notebook_data_weights_submission_credentials_in_delivery": false,
+    "scope": "local read-only review; no external actions"
+  },
+  "closeout_condition": "This receipt records a completed authoritative readback of the substantive evidence commit. Its own closeout commit must be pushed and independently pass the same frozen four checks, including current HEAD equality and 12 fixed-commit byte comparisons. The closeout SHA and result are reported in the task because a commit cannot contain its own SHA."
 }
