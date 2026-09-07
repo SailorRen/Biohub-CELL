@@ -1,0 +1,330 @@
+--- V19C/cell_00
++++ V21A/cell_00
+@@ -0,0 +1,4 @@
++# V21A：双参数正式评分候选
++
++基于 sailorren/biohub-v19c-public0939-sis14-only Version 1 / ScriptVersionId 346969653。仅将 safe-div 父子距离 7.0 → 9.0 µm、DeepCenter safe-div 确认阈值 0.12 → 0.26；GAP_CLOSE_UM 保持 5.8，其余生产代码与执行顺序不变。历史说明和原作者归属保留在下方；其中旧成绩、参数及验证表述不代表本候选的实际结果。
++
+--- V19C/cell_02
++++ V21A/cell_02
+@@ -31 +31 @@
+-os.environ["BIOHUB_SAFE_DIV_MAX_UM"] = "7.0"  # Max parent-to-daughter separation for an accepted division.
++os.environ["BIOHUB_SAFE_DIV_MAX_UM"] = "9.0"  # Max parent-to-daughter separation for an accepted division.
+@@ -60,0 +61 @@
++os.environ["BIOHUB_DEEPCENTER_SAFE_DIV_THRESHOLD"] = "0.26"
+--- V19C/cell_03
++++ V21A/cell_03
+@@ -10,0 +11,2 @@
++    "BIOHUB_SAFE_DIV_MAX_UM": 9.0,
++    "BIOHUB_DEEPCENTER_SAFE_DIV_THRESHOLD": 0.26,
+--- V19C/notebook_container_without_source
++++ V21A/notebook_container_without_source
+@@ -14,10 +14 @@
+-      "metadata": {
+-        "execution": {
+-          "iopub.execute_input": "2026-08-20T22:09:07.594241Z",
+-          "iopub.status.busy": "2026-08-20T22:09:07.593979Z",
+-          "iopub.status.idle": "2026-08-20T22:09:08.121745Z",
+-          "shell.execute_reply": "2026-08-20T22:09:08.121074Z",
+-          "shell.execute_reply.started": "2026-08-20T22:09:07.594219Z"
+-        },
+-        "trusted": true
+-      },
++      "metadata": {},
+@@ -29,10 +20 @@
+-      "metadata": {
+-        "execution": {
+-          "iopub.execute_input": "2026-08-20T22:09:08.123214Z",
+-          "iopub.status.busy": "2026-08-20T22:09:08.122794Z",
+-          "iopub.status.idle": "2026-08-20T22:09:08.130943Z",
+-          "shell.execute_reply": "2026-08-20T22:09:08.13034Z",
+-          "shell.execute_reply.started": "2026-08-20T22:09:08.12319Z"
+-        },
+-        "trusted": true
+-      },
++      "metadata": {},
+@@ -44,10 +26 @@
+-      "metadata": {
+-        "execution": {
+-          "iopub.execute_input": "2026-08-20T22:09:08.132082Z",
+-          "iopub.status.busy": "2026-08-20T22:09:08.1319Z",
+-          "iopub.status.idle": "2026-08-20T22:09:08.457083Z",
+-          "shell.execute_reply": "2026-08-20T22:09:08.456438Z",
+-          "shell.execute_reply.started": "2026-08-20T22:09:08.132063Z"
+-        },
+-        "trusted": true
+-      },
++      "metadata": {},
+@@ -59,10 +32 @@
+-      "metadata": {
+-        "execution": {
+-          "iopub.execute_input": "2026-08-20T22:09:08.459265Z",
+-          "iopub.status.busy": "2026-08-20T22:09:08.458932Z",
+-          "iopub.status.idle": "2026-08-20T22:13:50.556333Z",
+-          "shell.execute_reply": "2026-08-20T22:13:50.55557Z",
+-          "shell.execute_reply.started": "2026-08-20T22:09:08.459242Z"
+-        },
+-        "trusted": true
+-      },
++      "metadata": {},
+@@ -74,10 +38 @@
+-      "metadata": {
+-        "execution": {
+-          "iopub.execute_input": "2026-08-20T22:13:50.558171Z",
+-          "iopub.status.busy": "2026-08-20T22:13:50.557399Z",
+-          "iopub.status.idle": "2026-08-20T22:23:16.435006Z",
+-          "shell.execute_reply": "2026-08-20T22:23:16.434226Z",
+-          "shell.execute_reply.started": "2026-08-20T22:13:50.558146Z"
+-        },
+-        "trusted": true
+-      },
++      "metadata": {},
+@@ -89,10 +44 @@
+-      "metadata": {
+-        "execution": {
+-          "iopub.execute_input": "2026-08-20T22:23:16.437096Z",
+-          "iopub.status.busy": "2026-08-20T22:23:16.436284Z",
+-          "iopub.status.idle": "2026-08-20T22:32:39.935557Z",
+-          "shell.execute_reply": "2026-08-20T22:32:39.934937Z",
+-          "shell.execute_reply.started": "2026-08-20T22:23:16.43707Z"
+-        },
+-        "trusted": true
+-      },
++      "metadata": {},
+@@ -104,10 +50 @@
+-      "metadata": {
+-        "execution": {
+-          "iopub.execute_input": "2026-08-20T22:32:39.937053Z",
+-          "iopub.status.busy": "2026-08-20T22:32:39.936723Z",
+-          "iopub.status.idle": "2026-08-20T22:32:40.610683Z",
+-          "shell.execute_reply": "2026-08-20T22:32:40.609905Z",
+-          "shell.execute_reply.started": "2026-08-20T22:32:39.937027Z"
+-        },
+-        "trusted": true
+-      },
++      "metadata": {},
+@@ -119,10 +56 @@
+-      "metadata": {
+-        "execution": {
+-          "iopub.execute_input": "2026-08-20T22:32:40.612257Z",
+-          "iopub.status.busy": "2026-08-20T22:32:40.611703Z",
+-          "iopub.status.idle": "2026-08-20T22:41:22.67348Z",
+-          "shell.execute_reply": "2026-08-20T22:41:22.672832Z",
+-          "shell.execute_reply.started": "2026-08-20T22:32:40.612232Z"
+-        },
+-        "trusted": true
+-      },
++      "metadata": {},
+@@ -134,10 +62 @@
+-      "metadata": {
+-        "execution": {
+-          "iopub.execute_input": "2026-08-20T22:41:22.674757Z",
+-          "iopub.status.busy": "2026-08-20T22:41:22.674428Z",
+-          "iopub.status.idle": "2026-08-20T22:43:51.846461Z",
+-          "shell.execute_reply": "2026-08-20T22:43:51.845573Z",
+-          "shell.execute_reply.started": "2026-08-20T22:41:22.674704Z"
+-        },
+-        "trusted": true
+-      },
++      "metadata": {},
+@@ -149,10 +68 @@
+-      "metadata": {
+-        "execution": {
+-          "iopub.execute_input": "2026-08-20T22:43:51.848551Z",
+-          "iopub.status.busy": "2026-08-20T22:43:51.848247Z",
+-          "iopub.status.idle": "2026-08-20T22:43:51.856708Z",
+-          "shell.execute_reply": "2026-08-20T22:43:51.855941Z",
+-          "shell.execute_reply.started": "2026-08-20T22:43:51.848528Z"
+-        },
+-        "trusted": true
+-      },
++      "metadata": {},
+@@ -163,182 +72,0 @@
+-    "codex": {
+-      "authorization": {
+-        "authorized": false,
+-        "execute": "FORBIDDEN_UNLESS_DIAGNOSTIC_RECEIPT_PROMOTE_TRUE",
+-        "push": "FORBIDDEN_UNLESS_DIAGNOSTIC_RECEIPT_PROMOTE_TRUE",
+-        "receipt_content": null,
+-        "receipt_observed_by_builder": false,
+-        "receipt_path": null,
+-        "receipt_sha256": null,
+-        "receipt_text_utf8": null,
+-        "receipt_validated": false,
+-        "required_condition": "promote=true",
+-        "required_receipt": "bidirectional_blend_union13_receipt.json",
+-        "rule": "Execution, Kaggle push, and competition submission are FORBIDDEN unless the sealed bidirectional diagnostic receipt has promote=true.",
+-        "runtime_preregistration_content": null,
+-        "runtime_preregistration_path": null,
+-        "runtime_preregistration_sha256": null,
+-        "runtime_preregistration_text_utf8": null,
+-        "submit": "FORBIDDEN_UNLESS_DIAGNOSTIC_RECEIPT_PROMOTE_TRUE",
+-        "validation_contract": {
+-          "association_patch_source_sha256": "8fe651af1132cfc946102c7b5779aedd5aa173f29a85afc62a72c43e1147a1e4",
+-          "canonical_control_sha256": "a5b30de69711cb06a636853b41ed9695686de065bfed8e4924f1e1ba346c5bf2",
+-          "checkpoint_sha256": {
+-            "primary": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+-            "secondary": "9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f"
+-          },
+-          "coordinate_manifest_arms": [
+-            "bidirectional",
+-            "forward_control"
+-          ],
+-          "pinned_official_scorer": {
+-            "commit": "075fc5f5a52d11077f9dc2b074644618f26939e2",
+-            "named_driver_sha256": "b78682ff6333624d5a3836497d54b136f73448e8a2f585c7690c4853feeeaf86",
+-            "source_sha256": {
+-              "division_metrics.py": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9",
+-              "metrics.py": "cfdd596e3f8909cca14db0682889738b19ff75c3808b3773175aba9367ca7444"
+-            }
+-          },
+-          "required_experiment": "paired_bidirectional_primary_weight020_vs_forward_v1",
+-          "required_promote_identity": true,
+-          "required_receipt": "bidirectional_blend_union13_receipt.json",
+-          "required_status": "complete",
+-          "required_true_fields": [
+-            "pre_ilp_detector_coordinates_canonical_equal",
+-            "close_after_one_failure",
+-            "public4_and_per_movie_report_only",
+-            "sealed_transfer",
+-            "both_full_predictions_and_all_scoring_inputs_preceded_label_access"
+-          ],
+-          "runtime_preregistration": {
+-            "derivation_builder_sha256": "6b25b0fd2b9ea8368d9179ebb6a796b57b3347cad1b78461cbf473842d22020b",
+-            "experiment": "bidirectional_primary_association_weight020_v1",
+-            "required_file": "bidirectional_blend_preregistration.json",
+-            "source_notebook_sha256": "68105bef564b7af0d36646332bd95a3103b2793e8c6942514ae55a3ec881fc6c",
+-            "status": "frozen_before_ground_truth_access"
+-          }
+-        }
+-      },
+-      "build_actions": {
+-        "executed": false,
+-        "ground_truth_accessed": false,
+-        "pushed": false,
+-        "submitted": false
+-      },
+-      "candidate_cell_manifest": [
+-        {
+-          "output_cell_id": "bidirectional-production-preset",
+-          "output_index": 2,
+-          "output_sha256": "35bbf7d0ac2a478bd272d1e1ff80235264cb0afd89bdf12addfe3938872c138d",
+-          "semantic_change": "candidate environment moved from removed diagnostic harness",
+-          "source_cell_id": "ff65b520",
+-          "source_index": 5,
+-          "source_sha256": "a13a22561514e0fd356a065c09e573b78095fa6316aa755aa69f65aaafca3121"
+-        },
+-        {
+-          "output_cell_id": "bidirectional-production-runtime",
+-          "output_index": 3,
+-          "output_sha256": "7f498824742c21a8483e7e9e298ef6bf2e02da88d4164af76e4d55c44d0a0d5f",
+-          "semantic_change": "hard-bind competition test/full slice and restore explicit display import",
+-          "source_cell_id": "22d9fcd5",
+-          "source_index": 7,
+-          "source_sha256": "fa0c819628d8fd70f3c29e9731f17f62979427600d65d4bd9e77e92a39b5d48f"
+-        },
+-        {
+-          "output_cell_id": "bidirectional-production-dependencies",
+-          "output_index": 4,
+-          "output_sha256": "35ac60a9007881e99084188f7f4f27b6101005f9e73ecbc708066805d6791e46",
+-          "semantic_change": "verify exact materialized support repo and checkpoint bytes before dynamic patching; emit label-free receipt",
+-          "source_cell_id": "e650fb57",
+-          "source_index": 9,
+-          "source_sha256": "5ff42b4191c07a1ccb217323900e9fb76439b094eca34bc4b5b19690c915c125"
+-        },
+-        {
+-          "output_cell_id": "bidirectional-production-inference",
+-          "output_index": 5,
+-          "output_sha256": "45e172dad6618d7f5534a8714a21f6d29ce12652e48e7d483e82b98b03aaddcb",
+-          "semantic_change": "none_exact_source_cell",
+-          "source_cell_id": null,
+-          "source_index": 11,
+-          "source_sha256": "45e172dad6618d7f5534a8714a21f6d29ce12652e48e7d483e82b98b03aaddcb"
+-        },
+-        {
+-          "output_cell_id": "bidirectional-production-postprocess",
+-          "output_index": 6,
+-          "output_sha256": "7a68b5f586881950fa34c59d17861212166160474bbde92c4ac7fbb484a701fd",
+-          "semantic_change": "none_exact_source_cell",
+-          "source_cell_id": "57bca15b",
+-          "source_index": 13,
+-          "source_sha256": "7a68b5f586881950fa34c59d17861212166160474bbde92c4ac7fbb484a701fd"
+-        },
+-        {
+-          "output_cell_id": "bidirectional-production-clean-audit",
+-          "output_index": 7,
+-          "output_sha256": "34ab2a1c940d2e0d62e927b518e6e24c61239886369538be677f49cce749710e",
+-          "semantic_change": "audit provenance only; graph checks unchanged",
+-          "source_cell_id": null,
+-          "source_index": 15,
+-          "source_sha256": "17f3d7770d74827dbb3c1a415066266f89b340a4b486a8941e279b36fefe9010"
+-        }
+-      ],
+-      "checkpoint_sha256": {
+-        "deepcenter": "8164d1ffa07f87e0506027a0392edeab7939a32bd5e3f756377c0d72885cf127",
+-        "primary": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+-        "secondary": "9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f"
+-      },
+-      "frozen_candidate": {
+-        "bidirectional_patch_position": "before secondary association",
+-        "bidirectional_primary_weight": 0.2,
+-        "clean_graph_audit": true,
+-        "detector_fusion": "exact canonical aligned weighted-logit",
+-        "detector_threshold": 0.96875,
+-        "edge_candidate_threshold": 0.48,
+-        "ilp_weights": [
+-          -1,
+-          0,
+-          1.5,
+-          1
+-        ],
+-        "minimum_candidate_retention": 0.9,
+-        "postprocess": "exact diagnostic candidate cell",
+-        "secondary_detection_weight": 0.475,
+-        "secondary_edge_weight": 0.15,
+-        "secondary_link_mode": "low_margin_consensus",
+-        "secondary_low_margin_max": 0.35
+-      },
+-      "public_patch_source_sha256": "8fe651af1132cfc946102c7b5779aedd5aa173f29a85afc62a72c43e1147a1e4",
+-      "runtime_integrity": {
+-        "receipt": "/kaggle/working/bidirectional_production_runtime_integrity.json",
+-        "support_repo_python_file_count": 13,
+-        "support_repo_python_manifest_sha256": "978b626d1fd1e7397435a437dfe68691defe1572fc3c20e61012d7c9b52ed029",
+-        "support_repo_python_sha256": {
+-          "scripts/augmentations.py": "13db09817bf492f8d0f710a0a4d09776320b262060167055090a303fc6057f4e",
+-          "scripts/dataspec.py": "e69bf952fb985477ac50ff8598a35020c95d20a035a09b81ab4056e655dd311f",
+-          "scripts/evaluate.py": "614813cc51c3581c6ccda4bb20725a19da8ecac4a27620654bfca58319cffa3c",
+-          "scripts/predict_unet_transformer.py": "c44e771ba5980b820f93091e03a303c25dfe8f3232e501f54dc9565731c234b9",
+-          "scripts/train_unet_transformer.py": "c4f6317736bb3bb1ec8f3f6e9a6d935a463e3f0f1f685481b2d13218d35dc9ea",
+-          "src/biohub_tracking/__init__.py": "26a18d8da84e40da73281a48ebc3017d847a2e57431ab63e8629d2109e6e8571",
+-          "src/biohub_tracking/division_metrics.py": "d1cf1e0a43009d02174f1699ce2aa28458a2220ac4b521731d3bcf31cf8c76be",
+-          "src/biohub_tracking/img_proc.py": "00e8ef0adc8b39f1aaaa547ea6197b906bf9e8c009e339d3e95f8f8dbf31be3f",
+-          "src/biohub_tracking/io.py": "efae135b088cecaab463d889f16c885ef6da3ad27b0747327d8ddc28d866b7bd",
+-          "src/biohub_tracking/metrics.py": "31baf45b54c78f68bab4f65dd8f4b38bca702abb644171c6df7c46cdeef55d83",
+-          "src/biohub_tracking/models/__init__.py": "ab7587ef79856bae50d24b62e5805092d0459ee1c586522b763f9ef70c093e1d",
+-          "src/biohub_tracking/models/simple_node_transformer.py": "b97209edeb03840e80d903e3e2a8c81c520641c8ef343f6ca2904d0f80db064e",
+-          "src/biohub_tracking/models/temporal_unet.py": "d809c35d42f504161074ddeaaa7aee5b407e5bca7f9b4e1d5f9b2ff345666cac"
+-        },
+-        "verified_before_dynamic_source_patch": true
+-      },
+-      "runtime_scope": {
+-        "dynamic_test_enumeration": true,
+-        "external_slice": "full_only_empty_string",
+-        "test_dir": "COMP_DIR / test",
+-        "uses_cohorts": false,
+-        "uses_control_arm": false,
+-        "uses_ground_truth": false,
+-        "uses_scorer": false,
+-        "uses_train": false
+-      },
+-      "source_metadata_sha256": "2780700e27ef1bb760bfacb39c104768c6a4d0dfd99e932e202f236c819c3894",
+-      "source_notebook_sha256": "3e65ca691941949196bf417030ea84fccafe16baaec174b2a63540451bb937e8",
+-      "source_preregistration_sha256": "015ad349ed94791e28e321b1707ec177b5e7a79f65075f5f69f09d4fb8c98bd3",
+-      "status": "candidate_unverified_locked"
+-    },
+@@ -346 +74 @@
+-      "title": "Biohub Bidirectional Primary Production V1"
++      "title": "biohub-v21a-parent9-dc026"
+@@ -365 +93 @@
+-    "title": "Biohub Bidirectional Primary Production V1"
++    "title": "biohub-v21a-parent9-dc026"

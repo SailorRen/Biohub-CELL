@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260907_BIOHUB_V21A_TWO_PARAMETER_SCORE_TEST",
+  "goal": "在冻结V19C上仅改parent9和DeepCenter0.26，实际运行一个候选并唯一正式提交；分别报告实验、可比成绩和GitHub交付。",
+  "scope": {
+    "in_scope": [
+      "仅tasks中V21A原文、experiments/V21A及指定报告",
+      "sailorren/biohub-v21a-parent9-dc026 私有候选：SaveKernel请求<=2，仅明确拒绝/局部执行失败可用一次修复",
+      "正式submission请求<=1，含失败/不确定响应；只读查询已创建对象",
+      "SailorRen/Biohub-CELL正常GitHub同步，默认main，发生并发冲突可任务分支"
+    ],
+    "out_of_scope": [
+      "修改V19C/V20历史",
+      "训练、Dataset/Model写入、接受规则、baseline重跑、第二候选、其他算法变化",
+      "后台监控、原始数据权重submission.csv或认证信息上传GitHub"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "acceptance": [
+    {
+      "id": "task-original",
+      "type": "file",
+      "path": "tasks/CODEX_20260907_BIOHUB_V21A_TWO_PARAMETER_SCORE_TEST.md",
+      "sha256": "f41e9fcd61575b926d9633b8271e99d6cbe0ba71d33547eafc7a1346f57fba86"
+    },
+    {
+      "id": "candidate-scope-budget-and-evidence",
+      "type": "command",
+      "argv": [
+        "python3",
+        "experiments/V21A/verify.py"
+      ],
+      "expected_exit": 0,
+      "stdout_contains_all": [
+        "V21A_EVIDENCE_PASS"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "id": "formal-terminal-score",
+      "type": "json",
+      "path": "experiments/V21A/evidence.json",
+      "assertions": [
+        {
+          "pointer": "/candidate/submission/status",
+          "op": "equals",
+          "value": "COMPLETE"
+        },
+        {
+          "pointer": "/candidate/submission/public_score",
+          "op": "not_empty"
+        },
+        {
+          "pointer": "/candidate/submission/id",
+          "op": "not_empty"
+        },
+        {
+          "pointer": "/candidate/script_version_id",
+          "op": "not_empty"
+        }
+      ]
+    },
+    {
+      "id": "report",
+      "type": "file",
+      "path": "reports/20260907_V21A_双参数实测报告.md",
+      "min_bytes": 1000,
+      "contains_all": [
+        "实验状态",
+        "得分结论",
+        "交付验收",
+        "NOT_RUN"
+      ]
+    },
+    {
+      "id": "fixed-commit-remote-readback",
+      "type": "command",
+      "argv": [
+        "python3",
+        "experiments/V21A/verify.py",
+        "--remote"
+      ],
+      "expected_exit": 0,
+      "stdout_contains_all": [
+        "V21A_REMOTE_READBACK_PASS"
+      ],
+      "timeout_seconds": 180
+    },
+    {
+      "id": "git-clean-authoritative-head",
+      "type": "git",
+      "require_commit": true,
+      "require_clean": true,
+      "require_remote": true,
+      "remote": "origin",
+      "require_remote_head": true
+    }
+  ],
+  "baseline": {
+    "ref": "sailorren/biohub-v19c-public0939-sis14-only",
+    "version": 1,
+    "script_version_id": 346969653,
+    "submission_id": 55978992,
+    "source_sha256": "92bf632410fedc9eb7e0984a20525590b5583d5abb002d8239ff65d9f51fbf57",
+    "research_commit": "c20b791b36aeabf208c8db7106ef6925d6b2e51f"
+  },
+  "candidate": {
+    "ref": "sailorren/biohub-v21a-parent9-dc026",
+    "parameters": {
+      "BIOHUB_SAFE_DIV_MAX_UM": 9.0,
+      "BIOHUB_DEEPCENTER_SAFE_DIV_THRESHOLD": 0.26
+    },
+    "gap_close_um": 5.8,
+    "input_versions": "must match fixed baseline; bind actual identities in evidence before save"
+  },
+  "budget": {
+    "save_requests_max": 2,
+    "actual_versions_max": 2,
+    "local_execution_or_metadata_repair_max": 1,
+    "submission_requests_max": 1,
+    "candidates_max": 1,
+    "training": 0,
+    "dataset_model_writes": 0,
+    "write_uncertainty_action": "READ_ONLY_RECONCILE_NO_DUPLICATE_WRITE"
+  }
+}
