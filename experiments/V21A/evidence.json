@@ -978,5 +978,13 @@
     "causal_claim": "UNKNOWN: combined two-parameter result only; no single-parameter attribution",
     "score_source": "User-requested right browser submission details plus API IDs receipt",
     "browser_receipt": "research/20260908_正式成绩与公开946对比/平台观察.json"
+  },
+  "completion_verification": {
+    "status": "COMPLETED_VERIFIED",
+    "checks_passed": 6,
+    "contract_sha256": "35f41aa91c95dcc9a9dd03c60e5f125a7eedac1b9a0f24edd8b217d6dfff8de9",
+    "checked_commit": "d314273786c73ad8f2a934298e7fead798c20550",
+    "report": "experiments/V21A/terminal_verification_20260908.json",
+    "scope": "Original frozen V21A execution, terminal score and delivery checks. Improved vs current .939 baseline; tied with existing .942 best, not a new experiment."
   }
 }

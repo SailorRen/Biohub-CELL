@@ -1,0 +1,158 @@
+{
+  "checks": [
+    {
+      "details": {
+        "bytes": 5754,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "research/20260908_正式成绩与公开946对比/平台观察.json",
+        "required_text_checks": 4,
+        "sha256": "0c201ae47afabba7f9654e24c62e64a7b53622de5ef7f363acfa23372426911c"
+      },
+      "id": "browser-score-evidence",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "bytes": 28433,
+        "path": "research/20260908_正式成绩与公开946对比/tta_源码审读.json",
+        "sha256": "0c78760cdb15a822cd5e662f0cc208dd1a35493ccf718ea02ec8f5526ec04e14"
+      },
+      "id": "tta-source-audit",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "bytes": 37149,
+        "path": "research/20260908_正式成绩与公开946对比/harmonic_源码审读.json",
+        "sha256": "71fb95ad5e1ee194ecbe073a1abaca146e203dad6dc80f919fce1659c4710218"
+      },
+      "id": "harmonic-source-audit",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "bytes": 7709,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "reports/20260908_正式成绩与公开946方案对比.md",
+        "required_text_checks": 5,
+        "sha256": "39529c310fd4d32e32a2cb436928026db5d5e611f86907affebc1fee87b3562a"
+      },
+      "id": "comparison-report",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "argument_count": 2,
+        "argv_sha256": "7d77c7914cb41ce986fe64f54532d76f4df5dd443b076542cc1b0389033e236f",
+        "cwd": ".",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 305,
+          "sha256": "72ddb79f3e0765b1548da9585a539aec402a920b71bdf8190d55dbbfc92fcfb9"
+        },
+        "stdout_text_checks": 0
+      },
+      "id": "source-and-score-validation",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "argument_count": 3,
+        "argv_sha256": "bf583efa87e99f90ab6eeb540f6812ad5064d40726ec78aab6b03d2383b70fd0",
+        "cwd": ".",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 4418,
+          "sha256": "2df7185dc7779ff622a68357496c8074bcfb3e7de377becfbdfb94365e3081b2"
+        },
+        "stdout_text_checks": 0
+      },
+      "id": "fixed-commit-readback",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "branch": "main",
+        "dirty_entry_count": 0,
+        "head": "d314273786c73ad8f2a934298e7fead798c20550",
+        "remote": "origin",
+        "remote_exists": true,
+        "remote_head": "d314273786c73ad8f2a934298e7fead798c20550",
+        "remote_url_sha256": "294339ae4bf28ec437260f32bd064c06212de22a7026887c59e47f72ef414b8e",
+        "repository": "."
+      },
+      "id": "git-authoritative",
+      "outcome": "PASS",
+      "reason": "Git evidence passed",
+      "required": true,
+      "type": "git"
+    }
+  ],
+  "claimed_at": "2026-09-08T09:29:36+08:00",
+  "claimed_status": "CLAIMED_COMPLETE",
+  "contract_path": "tasks/CODEX_20260908_BIOHUB_SCORE_PUBLIC946_CONTRACT.json",
+  "contract_sha256": "fd238a491532c024730f8ce1fb5abf151651ddd0a59bcf20f4d91ba1b74b2800",
+  "final_status": "COMPLETED_VERIFIED",
+  "finished_at": "2026-09-08T09:30:01+08:00",
+  "integrity_scope": "local-sha256-only",
+  "limitations": [
+    "The conclusion is limited to the frozen contract and the implemented checks.",
+    "The verifier does not prove omitted requirements or future stability.",
+    "A local or Git hash is not a trusted signature against a malicious writer."
+  ],
+  "optional_warning_check_ids": [],
+  "reason": "all required automated checks passed",
+  "required_summary": {
+    "failed_or_blocked": 0,
+    "human_review": 0,
+    "passed": 7
+  },
+  "run_id": "20260908T092953+0800-bcafd14a",
+  "schema_version": "1.0",
+  "started_at": "2026-09-08T09:29:53+08:00",
+  "task_id": "CODEX_20260908_BIOHUB_SCORE_PUBLIC946",
+  "checked_commit": "d314273786c73ad8f2a934298e7fead798c20550",
+  "delivery_note": "Frozen acceptance passed on this already-pushed content commit. Receipt itself is added in the follow-up delivery commit; final reply verifies that commit separately."
+}
