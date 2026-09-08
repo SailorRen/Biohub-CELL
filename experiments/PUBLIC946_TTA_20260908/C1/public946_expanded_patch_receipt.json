@@ -1,0 +1,71 @@
+{
+  "algorithm_sha256": "ab2dbfc1b6a078d088b29b912f0cd28dbb84fdb8c024cb09d54030eb15325b72",
+  "arm": "C1",
+  "audit_enabled": true,
+  "expanded_sha256": "a4a107c2e48818fa736baca84cf940bc595a0f92da93e9039bdbac62ff47a9da",
+  "parent_sha256": "49613ad0b50ac90c3e07e3f8a803f2adf0926203be3f4a97d577c60b8f756178",
+  "replacements": [
+    {
+      "label": "primary_input_antidiagonal",
+      "matches": 1,
+      "new_sha256": "916a89b102479fddaa703c8cc675c8799e0e5107bb191fb638775272b93565d8",
+      "old_sha256": "e04071cd68f44e87c23704c6e57b54d1ed3ba6c7e043412640c49d1a2d0b0d36"
+    },
+    {
+      "label": "primary_detection_inverse_antidiagonal",
+      "matches": 1,
+      "new_sha256": "99153fb1834c90c6c1670673897a54ba3ce7ad3910d8860ed74c9ef649723b83",
+      "old_sha256": "c8fc4785872ba2090ae0fff1b12ae483b676a9526ba53e7c54b368a56e5c848c"
+    },
+    {
+      "label": "primary_feature_inverse_antidiagonal",
+      "matches": 1,
+      "new_sha256": "e11d357ed56753e3794607fd56227661770d1cc0431148546f0e41dc3f8afeef",
+      "old_sha256": "fce1baca5bd003ed814760aabec4e66b2252abc1641672d8df240efa5834dbd6"
+    },
+    {
+      "label": "secondary_input_antidiagonal",
+      "matches": 1,
+      "new_sha256": "dfe8f862366c1c9ced3bb082aacd8158d2cef6e39538f03f0fc7b9702b1f572c",
+      "old_sha256": "06585efe8c11d19c7e834e7855ef7c6755e990399b79e3f6b4480b293522febe"
+    },
+    {
+      "label": "secondary_detection_inverse_antidiagonal",
+      "matches": 1,
+      "new_sha256": "67f3d41aa8215b423b5c50d4cef170f1aff11ea0fbeacc4a1a3b55d79c70327e",
+      "old_sha256": "5b91cdae736c14f58629c66b34676f304556ffe7d4ce9589fdf6951000204bad"
+    },
+    {
+      "label": "audit_window_begin",
+      "matches": 1,
+      "new_sha256": "15a05fd983ee03bf3d1f321751671bfaabb777ce047768be312a863b9fff7594",
+      "old_sha256": "e30e3c579178ffd9f888ad0c30d899f00429f09d20c6ee06a66ae1fa1cbae105"
+    },
+    {
+      "label": "audit_secondary_encode_sites",
+      "matches": 5
+    },
+    {
+      "label": "audit_primary_encode_sites",
+      "matches": 5
+    },
+    {
+      "label": "audit_encoding_output",
+      "matches": 1,
+      "new_sha256": "0060e0cadfcb04b86892e2d7548095fb168e0e64e823fa09f4567087933200ad",
+      "old_sha256": "866643849d4d31edcdd7068dddd89da03943304de8bcc7832bd3fec6b829b4ec"
+    },
+    {
+      "label": "audit_actual_secondary_association",
+      "matches": 1,
+      "new_sha256": "0198e40d8c3ec9d49f371a65ebe2146833ea28cb9887c223ce595d9d4f3c726d",
+      "old_sha256": "a2d59a65deaeef505b8579e262d959d8275740abe398741cada615a24423263c"
+    },
+    {
+      "label": "audit_window_end",
+      "matches": 1,
+      "new_sha256": "7944c4f5b5519d56b68a68ba63d8b0c3a090fce779862fd4c9111a1988b157de",
+      "old_sha256": "0e5f87efdcfd12c404b23711e9b09e1fa5d02b421dc3bc098826407b0839595a"
+    }
+  ]
+}

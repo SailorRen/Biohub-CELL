@@ -1,7 +1,7 @@
 {
   "task_id": "PUBLIC946_TTA_20260908",
-  "save_requests": 2,
-  "submission_requests": 1,
+  "save_requests": 3,
+  "submission_requests": 2,
   "repair_requests": 0,
   "operations": [
     {
@@ -199,6 +199,145 @@
         "invalid_model_sources": []
       },
       "completed_at_utc": "2026-09-08T05:22:44.738081+00:00"
+    },
+    {
+      "action": "CreateCodeSubmission",
+      "arm": "C1",
+      "ref": "sailorren/biohub-946-c1-xy8-20260908",
+      "attempt": 1,
+      "at_utc": "2026-09-08T06:49:00.982426+00:00",
+      "status": "RESPONSE_RECEIVED_READBACK_REQUIRED",
+      "manifest_sha256": "e126e7fff52941518b70a3dc3c8e9523a804f7fcffdd511079c63f6f098831e7",
+      "source_sha256": "d3264807b20259b86a297a96f258640e7f752830c21f990f52be4c883a628341",
+      "metadata_sha256": "706b027b03949080e1c014ca35b0d01a120772fce7972e8660673e8d081e71aa",
+      "submitted_source_sha256": "accb328eeae3732101711c8d9b7e7a2c267ccd787c7228e72244b55f5488331f",
+      "preflight": {
+        "observed_at_utc": "2026-09-08T06:48:57.549831+00:00",
+        "principal": "sailorren",
+        "competition": {
+          "max_daily_submissions": 5,
+          "submissions_disabled": false,
+          "user_has_entered": true,
+          "is_kernels_submissions_only": true
+        },
+        "gpu_quota": {
+          "used_hours": 9.792714722222222,
+          "total_hours": 30.0,
+          "remaining_hours": 20.20728527777778,
+          "refresh_at": "2026-09-12 00:00:00"
+        },
+        "today_utc": "2026-09-08",
+        "today_submission_ids": [
+          56091397,
+          56087974
+        ],
+        "today_submission_count": 2,
+        "submission_remaining": 3,
+        "current_own_best": {
+          "id": 56069192,
+          "status": "COMPLETE",
+          "public_score": "0.942",
+          "description": "V21A parent9 dc026 | Version 1 | SV 347862850 | SHA256 9537aa87092fe2e0d130b9b23ffffb9796b6d6ee2d29b366c09bebce044223e0",
+          "date_utc": "2026-09-07 04:56:50.697000",
+          "observed_at_utc": "2026-09-08T06:48:59.391191+00:00",
+          "scope": "Live completed submissions before this write"
+        },
+        "kernel_get": {
+          "ref": "sailorren/biohub-946-c1-xy8-20260908",
+          "kernel_id": 133505731,
+          "version": 1,
+          "remote_source_sha256": "f40f45ff76d0017442287524f7b149b913439d3d341150f728135ea66bb701c9",
+          "cell_sources_equal": true,
+          "script_version_id_from_verified_binding": 348131494
+        },
+        "status": "PASS"
+      },
+      "quota_remaining_before": 3,
+      "version": 1,
+      "script_version_id": 348131494,
+      "description": "PUBLIC946_TTA_20260908 C1 | V1 | SV348131494 | SHA256 accb328eeae3732101711c8d9b7e7a2c267ccd787c7228e72244b55f5488331f",
+      "transport": {
+        "max_retries": 0,
+        "allow_redirects": false,
+        "max_write_sends": 1,
+        "send_calls": 1
+      },
+      "response": {
+        "id": 56092872,
+        "ref": 56092872,
+        "message": ""
+      },
+      "completed_at_utc": "2026-09-08T06:49:03.665403+00:00"
+    },
+    {
+      "action": "SaveKernel",
+      "arm": "C2",
+      "ref": "sailorren/biohub-946-c2-secondary-edge-tta-20260908",
+      "attempt": 1,
+      "at_utc": "2026-09-08T06:51:06.629761+00:00",
+      "status": "RESPONSE_RECEIVED_READBACK_REQUIRED",
+      "manifest_sha256": "e126e7fff52941518b70a3dc3c8e9523a804f7fcffdd511079c63f6f098831e7",
+      "source_sha256": "a7177ccf303152180357ac6f7d23efefec1aa8ab8206bd3bdc99d1efa19b1de6",
+      "metadata_sha256": "7ebfe86f43956074cc73a7b6ba8847b0fc0e60add06dd0016ee936fa23c35fd3",
+      "submitted_source_sha256": "2f714f4159667aed98d4fa9b49256da2e44c29b8697c703f253a4ab765d04759",
+      "preflight": {
+        "observed_at_utc": "2026-09-08T06:51:03.273566+00:00",
+        "principal": "sailorren",
+        "competition": {
+          "max_daily_submissions": 5,
+          "submissions_disabled": false,
+          "user_has_entered": true,
+          "is_kernels_submissions_only": true
+        },
+        "gpu_quota": {
+          "used_hours": 9.792714722222222,
+          "total_hours": 30.0,
+          "remaining_hours": 20.20728527777778,
+          "refresh_at": "2026-09-12 00:00:00"
+        },
+        "today_utc": "2026-09-08",
+        "today_submission_ids": [
+          56092872,
+          56091397,
+          56087974
+        ],
+        "today_submission_count": 3,
+        "submission_remaining": 2,
+        "current_own_best": {
+          "id": 56069192,
+          "status": "COMPLETE",
+          "public_score": "0.942",
+          "description": "V21A parent9 dc026 | Version 1 | SV 347862850 | SHA256 9537aa87092fe2e0d130b9b23ffffb9796b6d6ee2d29b366c09bebce044223e0",
+          "date_utc": "2026-09-07 04:56:50.697000",
+          "observed_at_utc": "2026-09-08T06:51:05.304972+00:00",
+          "scope": "Live completed submissions before this write"
+        },
+        "kernel_get": {
+          "error_type": "HTTPError",
+          "http_status": 403
+        },
+        "own_exact_ref_matches": [],
+        "absence_evidence": "Live authenticated own-kernel list with no exact match plus frozen direct-browser missing page; 403 alone not absence",
+        "status": "PASS"
+      },
+      "quota_remaining_before": 2,
+      "transport": {
+        "max_retries": 0,
+        "allow_redirects": false,
+        "max_write_sends": 1,
+        "send_calls": 1
+      },
+      "response": {
+        "ref": "/code/sailorren/biohub-946-c2-secondary-edge-tta-20260908",
+        "version_number": 1,
+        "kernel_id": 133513708,
+        "error": "",
+        "invalid_dataset_sources": [],
+        "invalid_competition_sources": [],
+        "invalid_kernel_sources": [],
+        "invalid_model_sources": []
+      },
+      "completed_at_utc": "2026-09-08T06:51:13.419750+00:00"
     }
   ]
 }
