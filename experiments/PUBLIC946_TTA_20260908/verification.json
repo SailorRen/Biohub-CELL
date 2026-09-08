@@ -1,0 +1,149 @@
+{
+  "checks": [
+    {
+      "check": "source_parent_and_code_differences",
+      "evidence": {
+        "arms": {
+          "B0": {
+            "algorithm_sha256": "49613ad0b50ac90c3e07e3f8a803f2adf0926203be3f4a97d577c60b8f756178",
+            "candidate_sha256": "c4bfcd8d765c67d35435876b3f3eb7bb810e20556479a918143451e2c61f849c",
+            "ref": "sailorren/biohub-946-b0-repro-20260908"
+          },
+          "C1": {
+            "algorithm_sha256": "ab2dbfc1b6a078d088b29b912f0cd28dbb84fdb8c024cb09d54030eb15325b72",
+            "candidate_sha256": "d3264807b20259b86a297a96f258640e7f752830c21f990f52be4c883a628341",
+            "ref": "sailorren/biohub-946-c1-xy8-20260908"
+          },
+          "C2": {
+            "algorithm_sha256": "f21ed2d7e60fb33789161631ee4a64d363634dac90902851595d2898e75c12d2",
+            "candidate_sha256": "a7177ccf303152180357ac6f7d23efefec1aa8ab8206bd3bdc99d1efa19b1de6",
+            "ref": "sailorren/biohub-946-c2-secondary-edge-tta-20260908"
+          }
+        },
+        "original_twelve_cells_restored": true,
+        "public_sha256": "521cb97f0f457643379a51b60c4f71e3f4cc7d1823fd98cbb97633ffaa515ec4"
+      },
+      "scope": "experiment",
+      "status": "PASS"
+    },
+    {
+      "check": "frozen_manifest_and_assets",
+      "evidence": {
+        "frozen_at_utc": "2026-09-08T03:32:55.915796+00:00",
+        "frozen_files_checked": 22,
+        "manifest_sha256": "e126e7fff52941518b70a3dc3c8e9523a804f7fcffdd511079c63f6f098831e7"
+      },
+      "scope": "experiment",
+      "status": "PASS"
+    },
+    {
+      "check": "executed_synthetic_tests",
+      "evidence": {
+        "final_csv_cases": 16,
+        "gpu_scope": "NOT_PROVEN_BY_LOCAL_TESTS",
+        "test_results_sha256": "e1123c326160f68bc5fa3ec90f2d6586184612190c9d350a8da0f6bdf238e772",
+        "transform_cases": 30
+      },
+      "scope": "experiment",
+      "status": "PASS"
+    },
+    {
+      "check": "authorization_write_budget",
+      "evidence": {
+        "object_refs": {
+          "B0": "sailorren/biohub-946-b0-repro-20260908",
+          "C1": "sailorren/biohub-946-c1-xy8-20260908",
+          "C2": "sailorren/biohub-946-c2-secondary-edge-tta-20260908"
+        },
+        "repair_requests": 0,
+        "save_requests": 3,
+        "submission_requests": 3
+      },
+      "scope": "experiment",
+      "status": "PASS"
+    },
+    {
+      "check": "B0_final_output_and_gpu_smoke",
+      "evidence": {
+        "association_examples": 4,
+        "final_sha256": "a852d1d07ff8c9307d9b10db7f9b4b12e8b1882f14c5dbeb1316d099f0795b3e",
+        "rows": 241400,
+        "runtime_production_windows": 396,
+        "selected_pp": "tight55"
+      },
+      "scope": "experiment",
+      "status": "PASS"
+    },
+    {
+      "check": "B0_formal_terminal_score",
+      "error": "AssertionError: B0 formal terminal score pending/failed: PENDING",
+      "scope": "experiment",
+      "status": "FAIL"
+    },
+    {
+      "check": "C1_final_output_and_gpu_smoke",
+      "evidence": {
+        "association_examples": 4,
+        "final_sha256": "e0f76698c0de55be2d5e7eefcd6f87f3805621716b45c6b6e047fe1268851873",
+        "rows": 239612,
+        "runtime_production_windows": 396,
+        "selected_pp": "relaxed9"
+      },
+      "scope": "experiment",
+      "status": "PASS"
+    },
+    {
+      "check": "C1_formal_terminal_score",
+      "error": "AssertionError: C1 formal terminal score pending/failed: PENDING",
+      "scope": "experiment",
+      "status": "FAIL"
+    },
+    {
+      "check": "C2_final_output_and_gpu_smoke",
+      "evidence": {
+        "association_examples": 4,
+        "final_sha256": "8e0d91777cb1303ddeed68184debe14c260c6ad75a63b9ec2337a8f578c981bf",
+        "rows": 241300,
+        "runtime_production_windows": 396,
+        "selected_pp": "tight55"
+      },
+      "scope": "experiment",
+      "status": "PASS"
+    },
+    {
+      "check": "C2_formal_terminal_score",
+      "error": "AssertionError: C2 formal terminal score pending/failed: PENDING",
+      "scope": "experiment",
+      "status": "FAIL"
+    },
+    {
+      "check": "score_comparison_and_boundaries",
+      "evidence": {
+        "B0_actual": null,
+        "current_own_best": "0.942",
+        "own_best_at_start": "0.942",
+        "public_reference": "0.946"
+      },
+      "scope": "experiment",
+      "status": "PASS"
+    },
+    {
+      "check": "github_authoritative_remote_delivery",
+      "evidence": {
+        "commit": "a11a3e8cb02f725a7b835e6669e511a0194b391c",
+        "observed_clean": true,
+        "remote_files": 61,
+        "remote_head_equal": true
+      },
+      "scope": "delivery",
+      "status": "PASS"
+    }
+  ],
+  "delivery_checks_pass": true,
+  "experiment_checks_pass": false,
+  "limitations": "File receipts and platform observations are verified separately; no fresh Kaggle or network query is issued by this validator.",
+  "mode": "final",
+  "observed_at_utc": "2026-09-08T08:40:49.629339+00:00",
+  "status": "PARTIAL_SCORE_PENDING",
+  "task_id": "PUBLIC946_TTA_20260908"
+}
