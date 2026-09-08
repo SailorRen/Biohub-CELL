@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "task_id": "CODEX_20260908_BIOHUB_SCORE_PUBLIC946",
+  "goal": "通过用户指定右侧浏览器核实V21A与baseline正式分数，深读两份指定公开Notebook并比较差异，更新报告与GitHub远端验收。",
+  "scope": {
+    "in_scope": [
+      "read-only Kaggle browser and API source retrieval",
+      "update V21A score receipts/report without source changes",
+      "research/20260908_正式成绩与公开946对比",
+      "reports/20260908_正式成绩与公开946方案对比.md",
+      "GitHub project sync"
+    ],
+    "out_of_scope": [
+      "Kaggle saves, training, inference, submissions or other platform mutations",
+      "new candidates or parameter search",
+      "modify frozen V21A contract/source",
+      "modify other repositories"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "acceptance": [
+    {
+      "id": "browser-score-evidence",
+      "type": "file",
+      "required": true,
+      "path": "research/20260908_正式成绩与公开946对比/平台观察.json",
+      "min_bytes": 500,
+      "contains_all": [
+        "347862850",
+        "0.942",
+        "0.939",
+        "browser"
+      ]
+    },
+    {
+      "id": "tta-source-audit",
+      "type": "file",
+      "required": true,
+      "path": "research/20260908_正式成绩与公开946对比/tta_源码审读.json",
+      "min_bytes": 1000
+    },
+    {
+      "id": "harmonic-source-audit",
+      "type": "file",
+      "required": true,
+      "path": "research/20260908_正式成绩与公开946对比/harmonic_源码审读.json",
+      "min_bytes": 1000
+    },
+    {
+      "id": "comparison-report",
+      "type": "file",
+      "required": true,
+      "path": "reports/20260908_正式成绩与公开946方案对比.md",
+      "min_bytes": 1800,
+      "contains_all": [
+        "0.942",
+        "0.939",
+        "0.946",
+        "NOT_RUN",
+        "UNKNOWN"
+      ]
+    },
+    {
+      "id": "source-and-score-validation",
+      "type": "command",
+      "required": true,
+      "argv": [
+        "python3",
+        "research/20260908_正式成绩与公开946对比/verify.py"
+      ],
+      "cwd": ".",
+      "expected_exit": 0,
+      "timeout_seconds": 120,
+      "stdout_contains": [
+        "SCORE_RESEARCH_PASS"
+      ]
+    },
+    {
+      "id": "fixed-commit-readback",
+      "type": "command",
+      "required": true,
+      "argv": [
+        "python3",
+        "research/20260908_正式成绩与公开946对比/verify.py",
+        "--remote"
+      ],
+      "cwd": ".",
+      "expected_exit": 0,
+      "timeout_seconds": 180,
+      "stdout_contains": [
+        "REMOTE_READBACK_PASS"
+      ]
+    },
+    {
+      "id": "git-authoritative",
+      "type": "git",
+      "required": true,
+      "repository": ".",
+      "require_commit": true,
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true,
+      "remote": "origin",
+      "branch": "main"
+    }
+  ]
+}

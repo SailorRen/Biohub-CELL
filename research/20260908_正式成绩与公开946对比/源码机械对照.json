@@ -1,0 +1,94 @@
+{
+  "scope": "Read-only AST comparison, source never executed",
+  "fact_class": "SOURCE_CODE_VERIFIED",
+  "tta_source_sha256": "521cb97f0f457643379a51b60c4f71e3f4cc7d1823fd98cbb97633ffaa515ec4",
+  "harmonic_source_sha256": "6e1f25c4db92ca05084a3cab39ff083d10c3f43a730581c141363301c0e985bb",
+  "cells": [
+    {
+      "index": 0,
+      "tta_source_sha256": "4287b1b08b202ca561790489b6cf5941381b3fccfca40bf060239ae22ea3b132",
+      "harmonic_source_sha256": "6304cc33cea763baf0db4e2e1f3b86d363e7849abdf1edfd52e29812adc449a8",
+      "source_bytes_equal": false,
+      "ast_equal_excluding_module_docstring": true
+    },
+    {
+      "index": 1,
+      "tta_source_sha256": "64bf335d2ea9f1dea62e2e7b3ad3b94205a775e8c5a53515d94bea3b6c655ba2",
+      "harmonic_source_sha256": "99198956a4c7725d85c6aab0d478368749824801716c6d39cf5bf915187ac500",
+      "source_bytes_equal": false,
+      "ast_equal_excluding_module_docstring": true
+    },
+    {
+      "index": 2,
+      "tta_source_sha256": "6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643",
+      "harmonic_source_sha256": "77fdadffbd02c87e8f686e55944b6741312be552f34c8dc615e6391a1959a2dc",
+      "source_bytes_equal": false,
+      "ast_equal_excluding_module_docstring": true
+    },
+    {
+      "index": 3,
+      "tta_source_sha256": "681232942fbb971dc1b999816b32c6d91da819e55d123b359b601169dd5982fb",
+      "harmonic_source_sha256": "0f62c46bbec00a2d3d6bbde0efb89d5713204983d51c9c3cf73df1869cf12f8f",
+      "source_bytes_equal": false,
+      "ast_equal_excluding_module_docstring": true
+    },
+    {
+      "index": 4,
+      "tta_source_sha256": "a3a9827b4c0119e90111a091083658317e6b2542320d03ef69ffd031c0a64684",
+      "harmonic_source_sha256": "21ec8a8130fe1280e16897cd6ce2be304631774e17621f6927fcb51b4d5ed69c",
+      "source_bytes_equal": false,
+      "ast_equal_excluding_module_docstring": true
+    },
+    {
+      "index": 5,
+      "tta_source_sha256": "ab3be142f357c1eb8e25c40537af64d1b95e4d60b8735afdd533781f6dfb7f9c",
+      "harmonic_source_sha256": "93c9742433b4dec4332bd1ddae3fce07892a318b265b36f7c10e2f3174417a34",
+      "source_bytes_equal": false,
+      "ast_equal_excluding_module_docstring": true
+    },
+    {
+      "index": 6,
+      "tta_source_sha256": "239f51c30606f090e1fbc939a541891cef2dbea45d7b1c4a6fef53352e94759d",
+      "harmonic_source_sha256": "c300805e0268602d76042dd271bcc3224fda6af2a52569e16bebc446701d66a5",
+      "source_bytes_equal": false,
+      "ast_equal_excluding_module_docstring": true
+    },
+    {
+      "index": 7,
+      "tta_source_sha256": "0083b9cd0b94cabba7c28f12bf8d80f6eda4a982d1f6f44ead0975ea0de89e92",
+      "harmonic_source_sha256": "7400441b355cbe09311e9c638c44264e374ad448d9ab1020b9d5866746e84ee7",
+      "source_bytes_equal": false,
+      "ast_equal_excluding_module_docstring": true
+    },
+    {
+      "index": 8,
+      "tta_source_sha256": "3988c72818365e0cf42169df1d42d3d64e64a6f2815a42255a04222523936349",
+      "harmonic_source_sha256": "54ed30a2f73355f369c112057570e9dd6a37e7f5521a6baf9ccdf4a8fc4ba6f8",
+      "source_bytes_equal": false,
+      "ast_equal_excluding_module_docstring": true
+    },
+    {
+      "index": 9,
+      "tta_source_sha256": "2e658927d77b92f79dbb5ac701cdb25ea0eef35e5c4901ed69d00a5aa932eae4",
+      "harmonic_source_sha256": "3986eaba6600507225a7140c033c14ae039a4fa95b3602806b43a8f2f11d90a0",
+      "source_bytes_equal": false,
+      "ast_equal_excluding_module_docstring": true
+    },
+    {
+      "index": 10,
+      "tta_source_sha256": "035037debb8d20a189d59efb74e42b59165172bd0a181e16947ff79c6d6f3c2f",
+      "harmonic_source_sha256": "ece3664cf924f36f3b838bac34fa636e67a5c865e6bf21ab61ff086bd1f87dfb",
+      "source_bytes_equal": false,
+      "ast_equal_excluding_module_docstring": true
+    },
+    {
+      "index": 11,
+      "tta_source_sha256": "974767da6156ddf12c5b2d1351b13658f160d0b859a36deb9614441c006537ba",
+      "harmonic_source_sha256": "1b69f438acf6f21117acb50f1b42816a5da627c4dcec80b8e76372ef11793f15",
+      "source_bytes_equal": false,
+      "ast_equal_excluding_module_docstring": true
+    }
+  ],
+  "effective_algorithm_difference_found": false,
+  "limit": "Module docstrings and comments are excluded; runtime package/platform differences are not proved equal by AST. No model/data execution."
+}

@@ -1,0 +1,146 @@
+{
+  "task_id": "CODEX_20260908_BIOHUB_SCORE_PUBLIC946",
+  "observation_method": "cua_repl browser visible DOM/AX and submission detail; API read receipt used for submission IDs",
+  "time_precision_note": "Browser observations were captured in this turn before recorded_at_utc; API receipt carries the exact observation timestamp. No exact browser first-read timestamp was captured.",
+  "browser": "Codex In-app Browser id1, existing user submissions tab1",
+  "fact_class": "MEASURED",
+  "kaggle_writes_this_turn": 0,
+  "submissions_url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/submissions",
+  "own_scores": [
+    {
+      "ref": "sailorren/biohub-v21a-parent9-dc026",
+      "version": 1,
+      "script_version_id": 347862850,
+      "submission_id": 56069192,
+      "status_ui": "Succeeded",
+      "score": "0.942",
+      "detail_opened": true,
+      "detail_url": "https://www.kaggle.com/code/sailorren/biohub-v21a-parent9-dc026?scriptVersionId=347862850",
+      "submitted_source_sha256": "9537aa87092fe2e0d130b9b23ffffb9796b6d6ee2d29b366c09bebce044223e0"
+    },
+    {
+      "ref": "sailorren/biohub-v19c-public0939-sis14-only",
+      "version": 1,
+      "script_version_id": 346969653,
+      "submission_id": 55978992,
+      "status_ui": "Succeeded",
+      "score": "0.939",
+      "detail_opened": false
+    },
+    {
+      "ref": "sailorren/biohub-lb-942",
+      "version": 1,
+      "status_ui": "Succeeded",
+      "score": "0.942",
+      "submission_id": null,
+      "script_version_id": null
+    },
+    {
+      "ref": "sailorren/biohub-run77",
+      "version": 1,
+      "status_ui": "Succeeded",
+      "score": "0.942",
+      "submission_id": null,
+      "script_version_id": null
+    }
+  ],
+  "public_notebooks": [
+    {
+      "key": "tta",
+      "ref": "redoctopusk/biohub-942tta",
+      "version": 1,
+      "version_count": 1,
+      "script_version_id": 347821442,
+      "public_score": "0.946",
+      "best_score": "0.946",
+      "best_score_version": 1,
+      "score_url": "https://www.kaggle.com/code/redoctopusk/biohub-942tta?scriptVersionId=347821442",
+      "ordinary_runtime_seconds": 4901.5,
+      "accelerator": "GPU T4 x2",
+      "license": "Apache 2.0",
+      "formal_submission_id": null
+    },
+    {
+      "key": "harmonic",
+      "ref": "flexonafft/biohub-harmonic-fusion",
+      "version": 29,
+      "version_count": 29,
+      "script_version_id": 347965685,
+      "public_score": "0.946",
+      "best_score": "0.946",
+      "best_score_version": 29,
+      "score_url": "https://www.kaggle.com/code/flexonafft/biohub-harmonic-fusion?scriptVersionId=347965685",
+      "ordinary_runtime_seconds": 5159.6,
+      "accelerator": "GPU T4 x2",
+      "license": "Apache 2.0",
+      "formal_submission_id": null
+    }
+  ],
+  "public_score_limit": "Current notebook Public Score and exact score-version links observed; third-party submission IDs and private leaderboard UNKNOWN. Not an independent reproduction.",
+  "research_reproduction": "NOT_RUN",
+  "api_receipt": {
+    "observed_at_utc": "2026-09-08T01:21:52.173328+00:00",
+    "candidate": {
+      "id": 56069192,
+      "status": "COMPLETE",
+      "public_score": "0.942",
+      "description": "V21A parent9 dc026 | Version 1 | SV 347862850 | SHA256 9537aa87092fe2e0d130b9b23ffffb9796b6d6ee2d29b366c09bebce044223e0",
+      "date_utc": "2026-09-07 04:56:50.697000",
+      "error_description": "",
+      "observed_at_utc": "2026-09-08T01:21:52.173328+00:00",
+      "ui_status": "Notebook Running",
+      "ui_version": 1,
+      "ui_script_version_id": 347862850,
+      "ui_observed_at_utc": "2026-09-07T05:00:17.356745+00:00",
+      "ui_version_url": "https://www.kaggle.com/code/sailorren/biohub-v21a-parent9-dc026?scriptVersionId=347862850",
+      "historical_ui_binding": true,
+      "current_ui_observation": {
+        "status": "Succeeded",
+        "public_score": "0.942",
+        "version": 1,
+        "script_version_id": 347862850,
+        "method": "Right in-app browser submissions detail during 2026-09-08 read-only task",
+        "receipt_path": "research/20260908_正式成绩与公开946对比/平台观察.json"
+      }
+    },
+    "baseline": {
+      "id": 55978992,
+      "status": "COMPLETE",
+      "public_score": "0.939",
+      "description": "Notebook biohub-v19c-public0939-sis14-only | Version 1",
+      "date_utc": "2026-09-03 09:54:56.607000",
+      "error_description": "",
+      "observed_at_utc": "2026-09-08T01:21:52.173328+00:00"
+    },
+    "binding_note": "status/score/id/observed_at are API facts; retained UI fields are explicitly historical, latest browser detail is current_ui_observation."
+  },
+  "recorded_at_utc": "2026-09-08T01:23:22.822024+00:00",
+  "runtime_browser_observations": {
+    "recorded_at_utc": "2026-09-08T01:24:23.367666+00:00",
+    "tta": {
+      "script_version_id": 347821442,
+      "edge_tta_active_views": 8,
+      "selected": "tight55",
+      "overrides": {
+        "MOTION_RELINK_TIGHT_UM": 5.5
+      },
+      "proxy_base": "0.9492",
+      "proxy_selected": "0.9512",
+      "final_submission_rows": 241400,
+      "production_graph_count": 4,
+      "source": "Notebook rendered output in right browser, AX full observation partially truncated elsewhere; these facts were visible"
+    },
+    "harmonic": {
+      "script_version_id": 347965685,
+      "selected": "tight55",
+      "overrides": {
+        "MOTION_RELINK_TIGHT_UM": 5.5
+      },
+      "proxy_base": "0.9492",
+      "proxy_selected": "0.9512",
+      "production_graph_count": 4,
+      "source": "Browser frame Main Notebook Content, visible SELECTED output and rewrite message, bounded DOM read"
+    },
+    "interpretation": "Existing source author ordinary run outputs; not our reproduction or formal score decomposition."
+  }
+}

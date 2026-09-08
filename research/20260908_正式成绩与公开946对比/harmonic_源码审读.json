@@ -1,0 +1,999 @@
+{
+  "recorded_at_asia_shanghai": "2026-09-08T09:28:14.761663+08:00",
+  "scope": "用户指定公开Notebook只读源码和已有日志研究；本子任务不运行、不保存Notebook Version、不提交、不下载模型/预测文件",
+  "fact_classification": "SOURCE_CODE_VERIFIED",
+  "notebook_read_status": "FULL_NOTEBOOK_SOURCE_REVIEWED",
+  "reproduction_status": "NOT_RUN",
+  "identity": {
+    "id": 131620291,
+    "ref": "flexonafft/biohub-harmonic-fusion",
+    "title": "Biohub Harmonic Fusion",
+    "author": "Igor Zharov",
+    "current_version_number": 29,
+    "is_private": false,
+    "enable_gpu": true,
+    "enable_internet": false,
+    "machine_shape": "NvidiaTeslaT4",
+    "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+    "dataset_data_sources": [
+      "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+      "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+      "pilkwang/biohub-tracking-support-pack-50ep-v1"
+    ],
+    "competition_data_sources": [
+      "biohub-cell-tracking-during-development"
+    ],
+    "observed_at_asia_shanghai": "2026-09-08T09:21:46.674524+08:00",
+    "response_source_sha256": "6e1f25c4db92ca05084a3cab39ff083d10c3f43a730581c141363301c0e985bb",
+    "source_bytes": 211555
+  },
+  "script_version_binding": {
+    "script_version_id": 347965685,
+    "version": 29,
+    "source": "root于右侧浏览器读取Version29 of29及BestScore0.946链接，并在 research/20260908_正式成绩与公开946对比/平台观察.json 保存页面观察",
+    "page_url": "https://www.kaggle.com/code/flexonafft/biohub-harmonic-fusion?scriptVersionId=347965685",
+    "api_limitation": "GetKernel metadata没有ScriptVersionId；显式version_label=29调用HTTP404。使用默认current Version29的完整源字节+日志前后版本哈希一致+浏览器同版本SV绑定。不得写成API直接读取精确历史SV。"
+  },
+  "source_recheck": {
+    "operation": "READ_ONLY_CURRENT_SOURCE_RECHECK_AFTER_LOG_READ",
+    "observed_at_asia_shanghai": "2026-09-08T09:26:29.161056+08:00",
+    "version_label_29_attempt": "HTTP404; no source returned; no mutations",
+    "current_version_number": 29,
+    "source_sha256": "6e1f25c4db92ca05084a3cab39ff083d10c3f43a730581c141363301c0e985bb",
+    "matches_initial_pull": true
+  },
+  "input_dataset_version_ids_from_notebook_metadata": [
+    {
+      "sourceType": "competition",
+      "sourceId": 136605
+    },
+    {
+      "sourceType": "datasetVersion",
+      "sourceId": 17751825
+    },
+    {
+      "sourceType": "datasetVersion",
+      "sourceId": 18187037
+    },
+    {
+      "sourceType": "datasetVersion",
+      "sourceId": 17804310
+    }
+  ],
+  "cell_count": 12,
+  "code_cell_count": 12,
+  "total_source_lines": 4150,
+  "cells": [
+    {
+      "index": 0,
+      "cell_type": "code",
+      "line_count": 71,
+      "source_utf8_bytes": 3032,
+      "source_sha256": "6304cc33cea763baf0db4e2e1f3b86d363e7849abdf1edfd52e29812adc449a8",
+      "read_coverage": "FULL_CELL_SOURCE_REVIEWED",
+      "parse_compile": "PASS_NOT_EXECUTED",
+      "role": "运行配置",
+      "review": "设置9µm parent、14µm sister、DeepCenter safe阈值0.25、gap5.0、disappearance2、division1.2；保持主/副检测与边混合、短轨过滤、gap2、密度自适应等。validator每prefix4样本，PP选择margin0.001。",
+      "differences": "对V21A执行参数：gap5.8→5.0、DCsafe0.26→0.25；parent同为9。ILP各值未变。对LB942的配置语句全部相同，只有新增展示性模块docstring。",
+      "top_level_functions_classes": [],
+      "ast_sha256": "ba5b818a6a093b70c475ef8749b6e1815ef7ddfdaf904d03e5a3b7ec036d273c",
+      "same_ast_as_lb942_same_index": false,
+      "same_executable_ast_as_942tta_same_index_excluding_module_docstring": true,
+      "V21A_corresponding_cell": 2,
+      "same_ast_as_V21A_corresponding_cell": false
+    },
+    {
+      "index": 1,
+      "cell_type": "code",
+      "line_count": 43,
+      "source_utf8_bytes": 1330,
+      "source_sha256": "99198956a4c7725d85c6aab0d478368749824801716c6d39cf5bf915187ac500",
+      "read_coverage": "FULL_CELL_SOURCE_REVIEWED",
+      "parse_compile": "PASS_NOT_EXECUTED",
+      "role": "配置门禁",
+      "review": "检查det0.965、appearance0、disappearance2、gap5.0、minlen6、bidir0.15及harmonic_probability、retention0.90。",
+      "differences": "对LB942/942tta AST相同。旧输出Reverse-time association weight0.200不是实际0.15，不能从打印文案推导配置。",
+      "top_level_functions_classes": [],
+      "ast_sha256": "a846d75a5e5d34383cc8518619a1e0dc0fa183fab8e28670c85bf455f593cbf7",
+      "same_ast_as_lb942_same_index": true,
+      "same_executable_ast_as_942tta_same_index_excluding_module_docstring": true,
+      "V21A_corresponding_cell": 3,
+      "same_ast_as_V21A_corresponding_cell": false
+    },
+    {
+      "index": 2,
+      "cell_type": "code",
+      "line_count": 238,
+      "source_utf8_bytes": 13642,
+      "source_sha256": "77fdadffbd02c87e8f686e55944b6741312be552f34c8dc615e6391a1959a2dc",
+      "read_coverage": "FULL_CELL_SOURCE_REVIEWED",
+      "parse_compile": "PASS_NOT_EXECUTED",
+      "role": "路径与参数解析",
+      "review": "从BIOHUB环境读取全参数；生产固定competition/test，完整SLICE；batch4；gap_close_effective_max_gap=min(max_gap,1)，独立gap2恢复仍存在。",
+      "differences": "与V21A cell4 AST完全相同，变化来自前置环境值。",
+      "top_level_functions_classes": [],
+      "ast_sha256": "8d785bc245573e0fad6355d49e57525a52b0b43e9034c0ece732526eb0d13436",
+      "same_ast_as_lb942_same_index": true,
+      "same_executable_ast_as_942tta_same_index_excluding_module_docstring": true,
+      "V21A_corresponding_cell": 4,
+      "same_ast_as_V21A_corresponding_cell": true
+    },
+    {
+      "index": 3,
+      "cell_type": "code",
+      "line_count": 682,
+      "source_utf8_bytes": 26734,
+      "source_sha256": "0f62c46bbec00a2d3d6bbde0efb89d5713204983d51c9c3cf73df1869cf12f8f",
+      "read_coverage": "FULL_CELL_SOURCE_REVIEWED",
+      "parse_compile": "PASS_NOT_EXECUTED",
+      "role": "离线依赖与资产",
+      "review": "离线wheel优先；support包13个Python源码清单、主模型、DeepCenter、secondary逐字节SHA门禁；secondary检测0.80，边0.15，low_margin_consensus0.35，threshold0.48。",
+      "differences": "与V21A cell5、LB942 cell3、942tta cell3 AST完全相同。没有换checkpoint或新训练。",
+      "top_level_functions_classes": [
+        {
+          "name": "module_missing",
+          "line_start": 75,
+          "line_end": 76
+        },
+        {
+          "name": "has_model_artifact",
+          "line_start": 79,
+          "line_end": 84
+        },
+        {
+          "name": "artifact_manifest",
+          "line_start": 87,
+          "line_end": 94
+        },
+        {
+          "name": "artifact_matches_target",
+          "line_start": 97,
+          "line_end": 103
+        },
+        {
+          "name": "candidate_roots_for_slug",
+          "line_start": 106,
+          "line_end": 112
+        },
+        {
+          "name": "find_artifacts_root",
+          "line_start": 115,
+          "line_end": 157
+        },
+        {
+          "name": "_has_package_file",
+          "line_start": 160,
+          "line_end": 164
+        },
+        {
+          "name": "find_offline_package_dirs",
+          "line_start": 167,
+          "line_end": 192
+        },
+        {
+          "name": "purge_imported_modules",
+          "line_start": 195,
+          "line_end": 206
+        },
+        {
+          "name": "polars_runtime_ready",
+          "line_start": 209,
+          "line_end": 217
+        },
+        {
+          "name": "packages_requiring_refresh",
+          "line_start": 220,
+          "line_end": 234
+        },
+        {
+          "name": "dependency_specs_for",
+          "line_start": 237,
+          "line_end": 252
+        },
+        {
+          "name": "import_failures",
+          "line_start": 255,
+          "line_end": 262
+        },
+        {
+          "name": "missing_names_from_failures",
+          "line_start": 265,
+          "line_end": 280
+        },
+        {
+          "name": "install_missing_dependencies",
+          "line_start": 283,
+          "line_end": 330
+        },
+        {
+          "name": "ensure_dependencies",
+          "line_start": 333,
+          "line_end": 367
+        },
+        {
+          "name": "remove_path",
+          "line_start": 370,
+          "line_end": 374
+        },
+        {
+          "name": "copy_or_extract_tree",
+          "line_start": 377,
+          "line_end": 387
+        },
+        {
+          "name": "link_or_copy_tree",
+          "line_start": 390,
+          "line_end": 395
+        },
+        {
+          "name": "materialize_inference_repo",
+          "line_start": 398,
+          "line_end": 422
+        },
+        {
+          "name": "_integrity_sha256_file",
+          "line_start": 469,
+          "line_end": 474
+        },
+        {
+          "name": "_find_secondary_artifact_root",
+          "line_start": 581,
+          "line_end": 607
+        },
+        {
+          "name": "_sha256_file",
+          "line_start": 629,
+          "line_end": 634
+        }
+      ],
+      "ast_sha256": "fb64a174d4599025e0c6c287dff273a14a87f7f7bc4f3be5b6b388cfdf856e6a",
+      "same_ast_as_lb942_same_index": true,
+      "same_executable_ast_as_942tta_same_index_excluding_module_docstring": true,
+      "V21A_corresponding_cell": 5,
+      "same_ast_as_V21A_corresponding_cell": true
+    },
+    {
+      "index": 4,
+      "cell_type": "code",
+      "line_count": 441,
+      "source_utf8_bytes": 40166,
+      "source_sha256": "21ec8a8130fe1280e16897cd6ce2be304631774e17621f6927fcb51b4d5ed69c",
+      "read_coverage": "FULL_CELL_SOURCE_REVIEWED",
+      "parse_compile": "PASS_NOT_EXECUTED",
+      "role": "推理补丁与分片",
+      "review": "完整读取D4-style检测TTA、双种子校准混合、保留率0.90、主模型正反时间harmonic概率融合0.15、坐标manifest、新增主模型edge feature TTA、双GPU穷尽视频分片及合并门禁。",
+      "differences": "相对LB942/V21A唯一模型路径增量为_edge_tta：主模型8个encode pass的unet_out逆变换后平均，再供主模型正向/反向predict_edges使用。secondary_unet_out仍来自其原始单次encode，dual-seed融合仍线性/低margin共识，不是新的dual-seed harmonic。与942tta对应cell执行AST相同。",
+      "top_level_functions_classes": [
+        {
+          "name": "list_test_stems",
+          "line_start": 227,
+          "line_end": 233
+        },
+        {
+          "name": "_visible_cuda_tokens",
+          "line_start": 273,
+          "line_end": 282
+        },
+        {
+          "name": "_prediction_dir_for_method",
+          "line_start": 285,
+          "line_end": 291
+        },
+        {
+          "name": "_wait_for_prediction_shards",
+          "line_start": 294,
+          "line_end": 323
+        },
+        {
+          "name": "_merge_prediction_shards",
+          "line_start": 326,
+          "line_end": 392
+        }
+      ],
+      "ast_sha256": "c23679c66bd82bb11895acc95ef33be03139091e1124e8c3f0a45c4e192b09ae",
+      "same_ast_as_lb942_same_index": false,
+      "same_executable_ast_as_942tta_same_index_excluding_module_docstring": true,
+      "V21A_corresponding_cell": 6,
+      "same_ast_as_V21A_corresponding_cell": false
+    },
+    {
+      "index": 5,
+      "cell_type": "code",
+      "line_count": 1685,
+      "source_utf8_bytes": 70441,
+      "source_sha256": "93c9742433b4dec4332bd1ddae3fce07892a318b265b36f7c10e2f3174417a34",
+      "read_coverage": "FULL_CELL_SOURCE_REVIEWED",
+      "parse_compile": "PASS_NOT_EXECUTED",
+      "role": "图修复与提交",
+      "review": "完整读取DeepCenter结构/归一化、motion Hungarian两阶段匹配、单帧gap/density/DC确认、gap2上下文插点、safe-div几何/近邻/分离/对称/DC确认、短轨救援、linefit平滑、CSV写出与统计。",
+      "differences": "所有共有图处理函数及DeepCenter模型类与V21A cell7 AST相同。写出段封装write_test_submission供后续sweep选中配置后重写，函数本身与LB942同。",
+      "top_level_functions_classes": [
+        {
+          "name": "graph_from_geff",
+          "line_start": 12,
+          "line_end": 14
+        },
+        {
+          "name": "edge_distance_um",
+          "line_start": 17,
+          "line_end": 21
+        },
+        {
+          "name": "point_distance_um",
+          "line_start": 24,
+          "line_end": 28
+        },
+        {
+          "name": "node_point",
+          "line_start": 31,
+          "line_end": 32
+        },
+        {
+          "name": "edge_sort_key",
+          "line_start": 35,
+          "line_end": 38
+        },
+        {
+          "name": "_next_node_id",
+          "line_start": 41,
+          "line_end": 42
+        },
+        {
+          "name": "read_test_frame",
+          "line_start": 46,
+          "line_end": 67
+        },
+        {
+          "name": "refine_synthetic_midpoint",
+          "line_start": 70,
+          "line_end": 113
+        },
+        {
+          "name": "_dc_pool_frame_xy",
+          "line_start": 117,
+          "line_end": 124
+        },
+        {
+          "name": "_dc_normalize_dynamic_range",
+          "line_start": 127,
+          "line_end": 138
+        },
+        {
+          "name": "_dc_manifest_weight_paths",
+          "line_start": 141,
+          "line_end": 174
+        },
+        {
+          "name": "_dc_checkpoint_candidates",
+          "line_start": 177,
+          "line_end": 212
+        },
+        {
+          "name": "load_deepcenter_veto_detector",
+          "line_start": 271,
+          "line_end": 320
+        },
+        {
+          "name": "_dc_cache_trim",
+          "line_start": 323,
+          "line_end": 326
+        },
+        {
+          "name": "deepcenter_heatmap_for_frame",
+          "line_start": 329,
+          "line_end": 355
+        },
+        {
+          "name": "deepcenter_score_point",
+          "line_start": 358,
+          "line_end": 383
+        },
+        {
+          "name": "deepcenter_accept_repair_point",
+          "line_start": 386,
+          "line_end": 411
+        },
+        {
+          "name": "_position_um",
+          "line_start": 413,
+          "line_end": 417
+        },
+        {
+          "name": "motion_relink_edges",
+          "line_start": 420,
+          "line_end": 538
+        },
+        {
+          "name": "close_single_frame_gaps",
+          "line_start": 540,
+          "line_end": 806
+        },
+        {
+          "name": "_single_successor_map",
+          "line_start": 809,
+          "line_end": 813
+        },
+        {
+          "name": "_single_predecessor_map",
+          "line_start": 816,
+          "line_end": 820
+        },
+        {
+          "name": "recover_strict_gap2",
+          "line_start": 823,
+          "line_end": 970
+        },
+        {
+          "name": "add_safe_divisions_postlink",
+          "line_start": 973,
+          "line_end": 1141
+        },
+        {
+          "name": "filter_short_track_components",
+          "line_start": 1144,
+          "line_end": 1265
+        },
+        {
+          "name": "linefit_smooth_output_graph",
+          "line_start": 1268,
+          "line_end": 1339
+        },
+        {
+          "name": "filter_output_graph",
+          "line_start": 1342,
+          "line_end": 1554
+        },
+        {
+          "name": "write_test_submission",
+          "line_start": 1559,
+          "line_end": 1681
+        }
+      ],
+      "ast_sha256": "f56aea233c09540c90169f73854b2a71a635681e4c6c3b99b4f478e2fac7ef38",
+      "same_ast_as_lb942_same_index": true,
+      "same_executable_ast_as_942tta_same_index_excluding_module_docstring": true,
+      "V21A_corresponding_cell": 7,
+      "same_ast_as_V21A_corresponding_cell": false
+    },
+    {
+      "index": 6,
+      "cell_type": "code",
+      "line_count": 178,
+      "source_utf8_bytes": 7352,
+      "source_sha256": "c300805e0268602d76042dd271bcc3224fda6af2a52569e16bebc446701d66a5",
+      "read_coverage": "FULL_CELL_SOURCE_REVIEWED",
+      "parse_compile": "PASS_NOT_EXECUTED",
+      "role": "保留率与图结构审计",
+      "review": "读初版submission与生产retention JSONL，检查全部dataset、唯一帧记录、回退公式、连续行号、节点/边schema、边时间、入出度，写旧模板receipt。",
+      "differences": "与V21A cell8、LB942/942tta对应cell AST相同。该receipt的硬编码配置及源码归属过时；CSV hash是cell10最终重写前base版本，不能当最终提交hash。",
+      "top_level_functions_classes": [],
+      "ast_sha256": "6f7f119df682dba9090a9c43943ad7ec77b44d20eb3a2f5eaef2c4cb70830f8a",
+      "same_ast_as_lb942_same_index": true,
+      "same_executable_ast_as_942tta_same_index_excluding_module_docstring": true,
+      "V21A_corresponding_cell": 8,
+      "same_ast_as_V21A_corresponding_cell": true
+    },
+    {
+      "index": 7,
+      "cell_type": "code",
+      "line_count": 178,
+      "source_utf8_bytes": 7754,
+      "source_sha256": "7400441b355cbe09311e9c638c44264e374ad448d9ab1020b9d5866746e84ee7",
+      "read_coverage": "FULL_CELL_SOURCE_REVIEWED",
+      "parse_compile": "PASS_NOT_EXECUTED",
+      "role": "本地验证样本与推理",
+      "review": "排除与test同stem的train视频，按prefix分组、GT有分裂优先，各选4个；调用同预测器双GPU推理，合并检查不重不漏。",
+      "differences": "与V21A cell9 AST相同但前置env使4个样本变8个。只是2个prefix/8FOV；不证明8个独立胚胎，也未验证权重训练集排除这些样本。",
+      "top_level_functions_classes": [
+        {
+          "name": "_merge_validator_shards",
+          "line_start": 69,
+          "line_end": 132
+        }
+      ],
+      "ast_sha256": "1c1d2aad02d8fd8d2307361b5dc73783e043f9fa45f401aa911474b783055906",
+      "same_ast_as_lb942_same_index": true,
+      "same_executable_ast_as_942tta_same_index_excluding_module_docstring": true,
+      "V21A_corresponding_cell": 9,
+      "same_ast_as_V21A_corresponding_cell": true
+    },
+    {
+      "index": 8,
+      "cell_type": "code",
+      "line_count": 318,
+      "source_utf8_bytes": 11193,
+      "source_sha256": "54ed30a2f73355f369c112057570e9dd6a37e7f5521a6baf9ccdf4a8fc4ba6f8",
+      "read_coverage": "FULL_CELL_SOURCE_REVIEWED",
+      "parse_compile": "PASS_NOT_EXECUTED",
+      "role": "proxy计分函数",
+      "review": "逐帧物理7µm阈值Hungarian节点匹配；edge TP/FP/FN、节点数量惩罚、弱连通谱系division计算、错误归因；聚合proxy=weighted_adj+0.1divisionJ。",
+      "differences": "所有共有评分函数与V21A cell10 AST相同；与LB942对应cell AST相同。函数名aggregate_official/注释不等于本次独立核验官方评分实现。",
+      "top_level_functions_classes": [
+        {
+          "name": "match_nodes_bipartite",
+          "line_start": 11,
+          "line_end": 38
+        },
+        {
+          "name": "compute_edge_confusion",
+          "line_start": 41,
+          "line_end": 66
+        },
+        {
+          "name": "edge_jaccard",
+          "line_start": 69,
+          "line_end": 71
+        },
+        {
+          "name": "adjusted_jaccard",
+          "line_start": 74,
+          "line_end": 77
+        },
+        {
+          "name": "weakly_connected_components",
+          "line_start": 80,
+          "line_end": 97
+        },
+        {
+          "name": "compute_division_confusion",
+          "line_start": 100,
+          "line_end": 187
+        },
+        {
+          "name": "decompose_errors",
+          "line_start": 190,
+          "line_end": 228
+        },
+        {
+          "name": "_find_key_recursive",
+          "line_start": 231,
+          "line_end": 244
+        },
+        {
+          "name": "read_estimated_true_node_count",
+          "line_start": 247,
+          "line_end": 261
+        },
+        {
+          "name": "graph_to_plain",
+          "line_start": 264,
+          "line_end": 272
+        },
+        {
+          "name": "nodes_by_id_to_plain",
+          "line_start": 275,
+          "line_end": 276
+        },
+        {
+          "name": "score_sample",
+          "line_start": 279,
+          "line_end": 297
+        },
+        {
+          "name": "aggregate_official",
+          "line_start": 300,
+          "line_end": 318
+        }
+      ],
+      "ast_sha256": "1ee1e77a3d4aa065fee6bcd10fec9553bddbb2cbe20011b0fabc0eb5593ca210",
+      "same_ast_as_lb942_same_index": true,
+      "same_executable_ast_as_942tta_same_index_excluding_module_docstring": true,
+      "V21A_corresponding_cell": 10,
+      "same_ast_as_V21A_corresponding_cell": false
+    },
+    {
+      "index": 9,
+      "cell_type": "code",
+      "line_count": 146,
+      "source_utf8_bytes": 6552,
+      "source_sha256": "3986eaba6600507225a7140c033c14ae039a4fa95b3602806b43a8f2f11d90a0",
+      "read_coverage": "FULL_CELL_SOURCE_REVIEWED",
+      "parse_compile": "PASS_NOT_EXECUTED",
+      "role": "缓存验证图并评分",
+      "review": "缓存8个train预测原始图及GT，deepcopy后按临时配置重做图后处理，TEST_DIR仅此过程临时指向TRAIN_DIR且finally恢复，记录base proxy。",
+      "differences": "V21A不具备这些PP_CONFIG和循环评分入口；与LB942/942tta AST相同。读取训练GT并用于最终配置选择，不可表述整个Notebook label-free。",
+      "top_level_functions_classes": [
+        {
+          "name": "pp_apply",
+          "line_start": 24,
+          "line_end": 30
+        },
+        {
+          "name": "pp_restore",
+          "line_start": 33,
+          "line_end": 35
+        },
+        {
+          "name": "score_validator_config",
+          "line_start": 80,
+          "line_end": 121
+        }
+      ],
+      "ast_sha256": "1ef6ea7703e2449b6b81eaa52ab12de580f681543df398996c77aee0c6efcd8f",
+      "same_ast_as_lb942_same_index": true,
+      "same_executable_ast_as_942tta_same_index_excluding_module_docstring": true
+    },
+    {
+      "index": 10,
+      "cell_type": "code",
+      "line_count": 126,
+      "source_utf8_bytes": 5847,
+      "source_sha256": "ece3664cf924f36f3b838bac34fa636e67a5c865e6bf21ab61ff086bd1f87dfb",
+      "read_coverage": "FULL_CELL_SOURCE_REVIEWED",
+      "parse_compile": "PASS_NOT_EXECUTED",
+      "role": "后处理候选选择与最终重写",
+      "review": "7个候选：gap4.5、tight5.5、relaxed9、bonus1.25、gap2step4、reuse2.8、DCgap0.35；若至少2个proxy改进候选可加combo。最终要求proxy提升≥0.001且adj下降≤0.0005，选中后重写test submission并检查行号、dataset、下一帧边、入出度。",
+      "differences": "现有日志实选tight55即MOTION_RELINK_TIGHT_UM6.0→5.5，并重新生成4个test图的CSV。V21A没有此选择/重写，LB942/942tta具备相同逻辑。",
+      "top_level_functions_classes": [],
+      "ast_sha256": "441a521ce174edbb2f4e2f16ad0d09b7a1446b4ac4af91b9b0d7a9cb2bccfe00",
+      "same_ast_as_lb942_same_index": true,
+      "same_executable_ast_as_942tta_same_index_excluding_module_docstring": true
+    },
+    {
+      "index": 11,
+      "cell_type": "code",
+      "line_count": 44,
+      "source_utf8_bytes": 2004,
+      "source_sha256": "1b69f438acf6f21117acb50f1b42816a5da627c4dcec80b8e76372ef11793f15",
+      "read_coverage": "FULL_CELL_SOURCE_REVIEWED",
+      "parse_compile": "PASS_NOT_EXECUTED",
+      "role": "最终运行摘要",
+      "review": "以权重存在、DC bundle loaded、环境值和validator样本数输出runtime manifest。",
+      "differences": "与LB942/942tta AST相同；与V21A主要是注释/显示差别。不能把这个打印摘要单独等同精确submission评分绑定。",
+      "top_level_functions_classes": [],
+      "ast_sha256": "3c0f9aa9d7beac03612824041d981c0706a43e583ac131c02df3e2e662f247e3",
+      "same_ast_as_lb942_same_index": true,
+      "same_executable_ast_as_942tta_same_index_excluding_module_docstring": true,
+      "V21A_corresponding_cell": 11,
+      "same_ast_as_V21A_corresponding_cell": true
+    }
+  ],
+  "comparison_sources": [
+    {
+      "label": "V21A",
+      "path": "experiments/V21A/candidate.ipynb",
+      "sha256": "abd41b73fec6c17f1024a408b0023458273ef7159935062f192d11ffa6f8ae6c"
+    },
+    {
+      "label": "LB942",
+      "path": "downloads/20260907_public_comparison/lb942/biohub-lb-942.ipynb",
+      "sha256": "e59373ea569332e4ce34a94d8579507970345a62d38b99fe900c2c438b4220fc"
+    },
+    {
+      "label": "run77",
+      "path": "downloads/20260907_public_comparison/run77/biohub-run77.ipynb",
+      "sha256": "22d75fa685be276c19dfa7796bffc9b15526e83fbe974b33e62fdb4f8645b266"
+    },
+    {
+      "label": "942tta",
+      "path": "downloads/20260908_public946/tta/biohub-942tta.ipynb",
+      "sha256": "521cb97f0f457643379a51b60c4f71e3f4cc7d1823fd98cbb97633ffaa515ec4"
+    }
+  ],
+  "effective_initial_env_differences_vs_V21A": [
+    {
+      "key": "BIOHUB_DEEPCENTER_SAFE_DIV_THRESHOLD",
+      "V21A": "0.26",
+      "harmonic": "0.25"
+    },
+    {
+      "key": "BIOHUB_GAP_CLOSE_UM",
+      "V21A": "5.8",
+      "harmonic": "5.0"
+    },
+    {
+      "key": "BIOHUB_PPSWEEP_MAX_ADJ_LOSS",
+      "V21A": null,
+      "harmonic": "0.0005"
+    },
+    {
+      "key": "BIOHUB_PPSWEEP_SELECT_MARGIN",
+      "V21A": null,
+      "harmonic": "0.001"
+    },
+    {
+      "key": "BIOHUB_VALIDATOR_N_PER_TYPE",
+      "V21A": null,
+      "harmonic": "4"
+    }
+  ],
+  "same_initial_env_as_LB942": true,
+  "comparison_942tta": {
+    "source_sha256": "521cb97f0f457643379a51b60c4f71e3f4cc7d1823fd98cbb97633ffaa515ec4",
+    "same_effective_initial_env": true,
+    "same_code_cell_count": true,
+    "same_ast_cells_1_through_11": true,
+    "cell0_difference": "仅Harmonic多展示性模块docstring；剥离模块docstring后AST相同；其余文本差异为注释/空白",
+    "same_executable_ast_all_12_cells_excluding_module_docstring": true,
+    "conclusion": "两者执行算法相同，应视作同一实现的两个公开版本，不是两套独立新方法；运行环境/状态或平台输出仍需各自绑定，不由AST相同自动推出得分相同。"
+  },
+  "comparison_LB942": {
+    "same_ast_cells": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "cell0_same_after_module_docstring_removed": true,
+    "sole_model_path_delta": "cell4新加主模型edge feature TTA平均，保留所有原有检测融合/反向harmonic/ILP/后处理/PP选择。"
+  },
+  "key_methods": {
+    "harmonic_exact_location": {
+      "cell": 4,
+      "source_lines": [
+        184,
+        207
+      ],
+      "formula": "p_h=normalize(1/((1-w)/p_forward+w/p_reverse_aligned)); w=0.15；随后log并校准回正向logit尺度",
+      "ordering": "主模型forward/reverse association概率harmonic → secondary low_margin_consensus校准线性logit融合 → edge阈值/graph/ILP",
+      "novel_to_V21A": false
+    },
+    "edge_feature_tta": {
+      "cell": 4,
+      "source_lines": [
+        213,
+        225
+      ],
+      "enabled": true,
+      "scope": "primary model unet_out only; both forward and reverse main-model edge prediction consume the averaged feature map",
+      "views_label_in_source": 8,
+      "gates": [
+        "唯一锚点替换",
+        "compile",
+        "patch写入后marker存在",
+        "平均特征shape与原特征一致",
+        "平均特征与原特征差异非零"
+      ],
+      "secondary_feature_map_tta": false,
+      "detector_logits_fusion_changed": false,
+      "planar_transform_caveat": {
+        "classification": "MEASURED",
+        "receipt": "downloads/20260908_public946/tta/平面变换核验.json",
+        "same_transform_code_as_942tta": true,
+        "encode_passes": 8,
+        "unique_planar_transforms": 7,
+        "duplicate": "rot90_then_transpose 等价 flip_x",
+        "missing": "真正anti-diagonal",
+        "interpretation": "准确称8次pass特征平均；不要声称严格8个不同D4元素。重复视图亦存在于共同的检测TTA实现。"
+      }
+    },
+    "models": {
+      "primary_sha256": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+      "secondary_sha256": "9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f",
+      "deepcenter_sha256": "8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0",
+      "support13py_manifest_sha256": "978b626d1fd1e7397435a437dfe68691defe1572fc3c20e61012d7c9b52ed029",
+      "comparison": "源码预期hash与现有日志实读hash完全相同，且与V21A一致；未独立下载权重再验算"
+    },
+    "effective_final_differences_vs_V21A": [
+      {
+        "name": "primary_edge_feature_tta",
+        "V21A": false,
+        "harmonic": true
+      },
+      {
+        "name": "GAP_CLOSE_UM",
+        "V21A": 5.8,
+        "harmonic": 5.0
+      },
+      {
+        "name": "DEEPCENTER_SAFE_DIV_THRESHOLD",
+        "V21A": 0.26,
+        "harmonic": 0.25
+      },
+      {
+        "name": "MOTION_RELINK_TIGHT_UM",
+        "V21A": 6.0,
+        "harmonic": 5.5,
+        "source": "cell10本次现有运行选择tight55"
+      },
+      {
+        "name": "validator_FOV_count",
+        "V21A": 4,
+        "harmonic": 8
+      },
+      {
+        "name": "PP_selection_rewrites_test_submission",
+        "V21A": false,
+        "harmonic": true
+      }
+    ],
+    "unchanged_examples": [
+      "safe-div parent9/sister14",
+      "det阈值0.965",
+      "secondary detection0.80",
+      "secondary edge0.15 low_margin_consensus0.35",
+      "reverse harmonic0.15",
+      "retention0.90",
+      "ILP appearance0 disappearance2 division1.2 edge-1",
+      "batch4/T4x2",
+      "相同DeepCenter epoch2",
+      "短轨过滤minlen6及救援",
+      "全部共有graph后处理与proxy评分函数AST相同"
+    ]
+  },
+  "existing_log_read": {
+    "operation": "READ_ONLY_EXISTING_LATEST_SESSION_LOG",
+    "observed_at_asia_shanghai": "2026-09-08T09:23:37.058106+08:00",
+    "sha256": "a0393c5b028a473dc0cb7ed1ef312af644f0ba2ae74220048b3be8833afef3fa",
+    "bytes": 505228,
+    "version_argument_supported": false,
+    "path": "downloads/20260908_public946/harmonic/latest.log",
+    "event_count": 3641,
+    "last_event_elapsed_seconds": 5158.92303081,
+    "identity_caveat": "SDK文档明确仅latest session；取日志前后GetKernel current Version29及源码哈希相同，另由root浏览器绑定同版本日志。并非新运行或独立重现实测。",
+    "classification": "MEASURED",
+    "evidence_snippets": [
+      {
+        "event_index_zero_based": 125,
+        "elapsed_seconds": 53.043735298,
+        "lines": [
+          "Support repo Python manifest SHA256: 978b626d1fd1e7397435a437dfe68691defe1572fc3c20e61012d7c9b52ed029"
+        ]
+      },
+      {
+        "event_index_zero_based": 126,
+        "elapsed_seconds": 53.043776576,
+        "lines": [
+          "Primary materialized SHA256: 12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771"
+        ]
+      },
+      {
+        "event_index_zero_based": 127,
+        "elapsed_seconds": 53.043783485,
+        "lines": [
+          "DeepCenter materialized SHA256: 8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0"
+        ]
+      },
+      {
+        "event_index_zero_based": 130,
+        "elapsed_seconds": 466.147690272,
+        "lines": [
+          "Secondary SHA256: 9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f"
+        ]
+      },
+      {
+        "event_index_zero_based": 170,
+        "elapsed_seconds": 477.064315676,
+        "lines": [
+          "Secondary model: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth | edge weight=0.150 | detection weight=0.800 | link mode=low_margin_consensus | temperature=1.000 | low-margin max=0.350 | edge threshold=0.480"
+        ]
+      },
+      {
+        "event_index_zero_based": 139,
+        "elapsed_seconds": 470.901414502,
+        "lines": [
+          "EDGE_TTA patch installed and enabled in /kaggle/working/tracking_repo/scripts/predict_unet_transformer.py"
+        ]
+      },
+      {
+        "event_index_zero_based": 178,
+        "elapsed_seconds": 479.072367556,
+        "lines": [
+          "EDGE_TTA_ACTIVE views= 8 mean_abs_feat_delta= 0.323238"
+        ]
+      },
+      {
+        "event_index_zero_based": 1105,
+        "elapsed_seconds": 1023.997097312,
+        "lines": [
+          "Prediction completed in 9.22 minutes"
+        ]
+      },
+      {
+        "event_index_zero_based": 1246,
+        "elapsed_seconds": 1548.363264257,
+        "lines": [
+          "VALIDATOR: selected 8 held-out TRAIN samples (4 per embryo-type prefix, 2 prefixes found, 8 contain a GT division)"
+        ]
+      },
+      {
+        "event_index_zero_based": 3221,
+        "elapsed_seconds": 2819.608249654,
+        "lines": [
+          "[base] n=8 adjusted_edge_jaccard=0.9261 division_jaccard=0.2308 (tp/fp/fn=3/1/9) PROXY_SCORE=0.9492  [5.0 min]"
+        ]
+      },
+      {
+        "event_index_zero_based": 3323,
+        "elapsed_seconds": 3411.336340094,
+        "lines": [
+          "[tight55] n=8 adjusted_edge_jaccard=0.9282 division_jaccard=0.2308 (tp/fp/fn=3/1/9) PROXY_SCORE=0.9512  [5.0 min]"
+        ]
+      },
+      {
+        "event_index_zero_based": 3582,
+        "elapsed_seconds": 4889.428588244,
+        "lines": [
+          "SELECTED: tight55  overrides={'MOTION_RELINK_TIGHT_UM': 5.5}  (margin rule: >= +0.001 proxy and adj loss <= 0.0005)"
+        ]
+      },
+      {
+        "event_index_zero_based": 3619,
+        "elapsed_seconds": 5148.186923017,
+        "lines": [
+          "Final submission.csv rows=241400  config=tight55"
+        ]
+      },
+      {
+        "event_index_zero_based": 3623,
+        "elapsed_seconds": 5148.318357014,
+        "lines": [
+          "Dual-seed ensemble:      requested=True  weights_found=True"
+        ]
+      },
+      {
+        "event_index_zero_based": 3624,
+        "elapsed_seconds": 5148.318363546,
+        "lines": [
+          "Bidirectional fusion:    weight=0.15  active=True  mode=harmonic_probability"
+        ]
+      },
+      {
+        "event_index_zero_based": 3625,
+        "elapsed_seconds": 5148.318368571,
+        "lines": [
+          "DeepCenter veto:         requested=True  loaded=True"
+        ]
+      }
+    ],
+    "resolved": {
+      "edge_tta_active_marker_present": true,
+      "primary_feature_delta_first": 0.323238,
+      "secondary_weights_found": true,
+      "deepcenter_loaded": true,
+      "production_retention_fallback_frames": 65,
+      "production_retention_fallback_scope": "individual_frame detection; 非整个secondary模型未启用",
+      "validator_selected_FOV_count": 8,
+      "validator_prefix_count": 2,
+      "validator_all_selected_have_GT_division": true,
+      "selected_postprocess": "tight55",
+      "selected_overrides": {
+        "MOTION_RELINK_TIGHT_UM": 5.5
+      },
+      "base_proxy_rounded": 0.9492,
+      "selected_proxy_rounded": 0.9512,
+      "proxy_delta_rounded": 0.0021,
+      "proxy_not_public_score": true,
+      "final_submission_rows": 241400,
+      "final_nodes": 122841,
+      "final_edges": 118559,
+      "final_division_parents": 102,
+      "test_video_count": 4,
+      "proxy_delta_basis": "+0.0021来自作者日志使用未四舍五入内部值计算的sweep表；0.9492与0.9512各为四位显示值，不能直接以这两个显示值重算精确差值。"
+    },
+    "absent_markers": [
+      "TTA WARNING",
+      "FALLING BACK",
+      "Skipping incompatible DeepCenter"
+    ],
+    "warning": "日志含重复stdout事件；EDGE_TTA_ACTIVE事件数量不能解释为独立帧或新运行数。"
+  },
+  "unknowns_and_limits": [
+    "作者formal submission ID与其终态列表不可见；root页面的0.946是Version/SV绑定公共分数，不冒充已读作者submission终态。",
+    "未进行独立推理或submission，无法把0.946与V21A差距因果拆分到edge feature TTA、gap、DC或tight阈值。",
+    "8个validator样本只是2prefix的8个train FOV；不能视作8个独立胚胎。",
+    "源码排除了与test同stem的train样本，但未核实它们未用于三个checkpoint训练，严格held-out资格UNKNOWN。",
+    "proxy评分函数来自源码，本次未逐条对照当前官方metrics实现，不把其aggregate_official命名当官方验收。",
+    "cell6保留率receipt的硬编码det0.96875/secondary0.475/bidir0.30/disappearance1.5/gap5.8及旧source_kernel并非当前实参；其CSV hash属于最终PP重写前base。",
+    "cell3 ground_truth_accessed=false只对早期资产校验阶段成立；后续cells7–10确实读取train GT并选择参数。",
+    "Notebook嵌入旧papermill起止时间/duration不用于当前版本runtime绑定。",
+    "这里只证明源码与现有日志方法链；不自动批准或开展下一轮候选。"
+  ],
+  "external_writes": {
+    "notebook_create_or_save": 0,
+    "inference_started": 0,
+    "submission": 0,
+    "training": 0,
+    "dataset_or_model_create": 0
+  },
+  "local_changes_scope": [
+    "ignored downloads/20260908_public946/harmonic/",
+    "research/20260908_正式成绩与公开946对比/harmonic_源码审读.json"
+  ]
+}

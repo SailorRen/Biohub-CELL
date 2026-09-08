@@ -1,7 +1,7 @@
 {
   "task_id": "CODEX_20260907_BIOHUB_V21A_TWO_PARAMETER_SCORE_TEST",
-  "experiment_status": "FORMAL_PENDING",
-  "score_conclusion": "UNKNOWN_PENDING_FORMAL_SCORE",
+  "experiment_status": "FORMAL_COMPLETE",
+  "score_conclusion": "HIGHER_THAN_CURRENT_V19C_TIED_WITH_EXISTING_BEST_0942",
   "delivery_status": "VERIFIED_FIXED_CONTENT_COMMIT",
   "baseline": {
     "ref": "sailorren/biohub-v19c-public0939-sis14-only",
@@ -17,7 +17,7 @@
       "description": "Notebook biohub-v19c-public0939-sis14-only | Version 1",
       "date_utc": "2026-09-03 09:54:56.607000",
       "error_description": "",
-      "observed_at_utc": "2026-09-07T05:14:15.096642+00:00"
+      "observed_at_utc": "2026-09-08T01:21:52.173328+00:00"
     },
     "input_binding": {
       "observed_at_utc": "2026-09-07T04:10:08.330001+00:00",
@@ -46,17 +46,26 @@
     "script_version_id": 347862850,
     "submission": {
       "id": 56069192,
-      "status": "PENDING",
-      "public_score": null,
+      "status": "COMPLETE",
+      "public_score": "0.942",
       "description": "V21A parent9 dc026 | Version 1 | SV 347862850 | SHA256 9537aa87092fe2e0d130b9b23ffffb9796b6d6ee2d29b366c09bebce044223e0",
       "date_utc": "2026-09-07 04:56:50.697000",
       "error_description": "",
-      "observed_at_utc": "2026-09-07T05:14:15.096642+00:00",
+      "observed_at_utc": "2026-09-08T01:21:52.173328+00:00",
       "ui_status": "Notebook Running",
       "ui_version": 1,
       "ui_script_version_id": 347862850,
       "ui_observed_at_utc": "2026-09-07T05:00:17.356745+00:00",
-      "ui_version_url": "https://www.kaggle.com/code/sailorren/biohub-v21a-parent9-dc026?scriptVersionId=347862850"
+      "ui_version_url": "https://www.kaggle.com/code/sailorren/biohub-v21a-parent9-dc026?scriptVersionId=347862850",
+      "historical_ui_binding": true,
+      "current_ui_observation": {
+        "status": "Succeeded",
+        "public_score": "0.942",
+        "version": 1,
+        "script_version_id": 347862850,
+        "method": "Right in-app browser submissions detail during 2026-09-08 read-only task",
+        "receipt_path": "research/20260908_正式成绩与公开946对比/平台观察.json"
+      }
     },
     "file_sha256": "abd41b73fec6c17f1024a408b0023458273ef7159935062f192d11ffa6f8ae6c",
     "metadata_sha256": "4e72fe237e6d099000a51bffc762935590deaf0b9e42ddb7d1419ff0399fbb9f",
@@ -662,6 +671,33 @@
           "observed_at_utc": "2026-09-07T05:14:15.096642+00:00"
         }
       ]
+    },
+    {
+      "operation": "READ_STATUS",
+      "observed_at_utc": "2026-09-08T01:21:52.173328+00:00",
+      "ref": "sailorren/biohub-v21a-parent9-dc026",
+      "version": 1,
+      "script_version_id": 347862850,
+      "submissions": [
+        {
+          "id": 56069192,
+          "status": "COMPLETE",
+          "public_score": "0.942",
+          "description": "V21A parent9 dc026 | Version 1 | SV 347862850 | SHA256 9537aa87092fe2e0d130b9b23ffffb9796b6d6ee2d29b366c09bebce044223e0",
+          "date_utc": "2026-09-07 04:56:50.697000",
+          "error_description": "",
+          "observed_at_utc": "2026-09-08T01:21:52.173328+00:00"
+        },
+        {
+          "id": 55978992,
+          "status": "COMPLETE",
+          "public_score": "0.939",
+          "description": "Notebook biohub-v19c-public0939-sis14-only | Version 1",
+          "date_utc": "2026-09-03 09:54:56.607000",
+          "error_description": "",
+          "observed_at_utc": "2026-09-08T01:21:52.173328+00:00"
+        }
+      ]
     }
   ],
   "limitations": [],
@@ -700,8 +736,8 @@
       "reason": "git ls-tree default quoted Chinese filename was incorrectly treated as literal path; changed path enumeration to NUL-delimited output. Fixed-commit raw readback then passed all 18 files. No candidate/runtime change."
     }
   ],
-  "delta_public": null,
-  "baseline_comparability": "CURRENT_BASELINE_VERIFIED_CANDIDATE_PENDING",
+  "delta_public": "0.003",
+  "baseline_comparability": "BOTH_CURRENT_FORMAL_COMPLETE_SAME_COMPETITION",
   "repository_format_adjustments": {
     "at_utc": "2026-09-07T05:02:01.392368+00:00",
     "candidate_notebook_changed": false,
@@ -929,6 +965,18 @@
     "remaining_required_failures": [
       "formal-terminal-score"
     ],
-    "final_progress_status": "BLOCKED_PENDING_FORMAL_SCORE"
+    "final_progress_status": "BLOCKED_PENDING_FORMAL_SCORE",
+    "historical_snapshot": true,
+    "superseded_score_condition_at_utc": "2026-09-08T01:21:52.173328+00:00"
+  },
+  "score_comparison": {
+    "observed_at_utc": "2026-09-08T01:21:52.173328+00:00",
+    "baseline_delta": "0.003",
+    "existing_best_score_browser": "0.942",
+    "delta_to_existing_best": "0.000",
+    "gap_to_observed_public_notebooks": "0.004",
+    "causal_claim": "UNKNOWN: combined two-parameter result only; no single-parameter attribution",
+    "score_source": "User-requested right browser submission details plus API IDs receipt",
+    "browser_receipt": "research/20260908_正式成绩与公开946对比/平台观察.json"
   }
 }
