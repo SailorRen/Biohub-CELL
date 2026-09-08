@@ -16,6 +16,7 @@ import os
 import re
 import tempfile
 from datetime import datetime, timezone
+from decimal import Decimal
 from pathlib import Path
 
 P = Path(__file__).resolve().parent
@@ -172,6 +173,14 @@ def live_preflight(api, arm, action, manifest, candidate, notebook):
     out["today_submission_ids"] = [int(row.ref) for row in today_rows]
     out["today_submission_count"] = len(today_rows)
     out["submission_remaining"] = max(0, maximum - len(today_rows))
+    scored = [row for row in rows if str(row.status).split(".")[-1] == "COMPLETE"
+              and row.public_score not in (None, "") and Decimal(str(row.public_score)).is_finite()]
+    if scored:
+        best = max(scored, key=lambda row: Decimal(str(row.public_score)))
+        out["current_own_best"] = {"id": int(best.ref), "status": "COMPLETE",
+            "public_score": str(best.public_score), "description": safe_text(best.description),
+            "date_utc": str(best.date), "observed_at_utc": now(),
+            "scope": "Live completed submissions before this write"}
     if action == "submit":
         require(out["submission_remaining"] > 0, "No formal submission quota remains")
         marker = f"{TASK} {arm} |"
@@ -293,6 +302,7 @@ def main():
             "submitted_source_sha256": submitted_source_hash(notebook), "preflight": preflight,
             "quota_remaining_before": preflight["submission_remaining"]}
         if args.action == "submit":
+            candidate["own_best_before_submission"] = preflight.get("current_own_best")
             operation.update(version=candidate["version"], script_version_id=candidate["script_version_id"])
             operation["description"] = (f"{TASK} {args.arm} | V{candidate['version']} | "
                 f"SV{candidate['script_version_id']} | SHA256 {operation['submitted_source_sha256']}")

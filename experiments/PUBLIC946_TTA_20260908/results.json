@@ -1,7 +1,7 @@
 {
   "task_id": "PUBLIC946_TTA_20260908",
   "status": "ORDINARY_RUNNING",
-  "updated_at_utc": "2026-09-08T03:43:29.099724+00:00",
+  "updated_at_utc": "2026-09-08T05:23:52.680244+00:00",
   "own_best_at_start": {
     "id": 56069192,
     "date_utc": "2026-09-07 04:56:50.697000",
@@ -19,8 +19,8 @@
     "public_score": "0.942",
     "private_score": null,
     "error_description": "",
-    "observed_at_utc": "2026-09-08T03:43:29.093443+00:00",
-    "observed_at_shanghai": "2026-09-08T11:43:29.093443+08:00",
+    "observed_at_utc": "2026-09-08T05:23:52.675448+00:00",
+    "observed_at_shanghai": "2026-09-08T13:23:52.675448+08:00",
     "listing_complete": true,
     "same_score_submission_ids": [
       56066312,
@@ -62,8 +62,8 @@
       "script_version_id": 348114666,
       "kernel_id": 133498982,
       "remote_binding": {
-        "verified": false,
-        "status": "BINDING_EVIDENCE_PENDING_OR_MISMATCH",
+        "verified": true,
+        "status": "SOURCE_VERSION_INPUTS_VERIFIED",
         "checks": {
           "local_source_matches_frozen_hash": true,
           "local_metadata_matches_frozen_hash": true,
@@ -84,11 +84,9 @@
           "kernel_sources_match": true,
           "model_sources_match": true,
           "dataset_slugs_match": true,
-          "fixed_input_versions_verified": false
+          "fixed_input_versions_verified": true
         },
-        "unmet_checks": [
-          "fixed_input_versions_verified"
-        ],
+        "unmet_checks": [],
         "ref": "sailorren/biohub-946-b0-repro-20260908",
         "version": 1,
         "script_version_id": 348114666,
@@ -113,7 +111,23 @@
           "de5b8e39238b894f8d2aed2660e7e3e2ac74b4edfea04dd6ccee470555e9d58a"
         ],
         "serialization_note": "File byte equality and ordered executable-cell equality are recorded separately; metadata/outputs are not execution source.",
-        "input_version_evidence": "API_INPUT_VERSIONS_NOT_EXPOSED_OR_DIFFERENT",
+        "input_version_evidence": {
+          "verified": true,
+          "version": 1,
+          "script_version_id": 348114666,
+          "dataset_sources": [
+            "pilkwang/biohub-deepcenter-unet3d-center-prior-v1/5",
+            "pilkwang/biohub-temporal-unet3d-seed314159-v1/2",
+            "pilkwang/biohub-tracking-support-pack-50ep-v1/10"
+          ],
+          "observed_at_utc": "2026-09-08T05:19:54.416265+00:00",
+          "source": "Kaggle fixed-Version Inputs UI https://www.kaggle.com/code/sailorren/biohub-946-b0-repro-20260908/input?scriptVersionId=348114666",
+          "observed_labels": [
+            "Biohub DeepCenterUNet3D Center Prior V1: Version 5",
+            "Biohub TemporalUNet3D Seed 314159 V1: Version 2",
+            "Biohub Tracking Support Pack: Version 10"
+          ]
+        },
         "metadata": {
           "ref": "sailorren/biohub-946-b0-repro-20260908",
           "kernel_id": 133498982,
@@ -135,29 +149,268 @@
           "kernel_sources": [],
           "model_sources": []
         },
-        "observed_at_utc": "2026-09-08T03:43:20.125708+00:00",
-        "observed_at_shanghai": "2026-09-08T11:43:20.125708+08:00"
+        "observed_at_utc": "2026-09-08T05:22:11.951739+00:00",
+        "observed_at_shanghai": "2026-09-08T13:22:11.951739+08:00"
       },
       "ordinary": {
-        "status": "RUNNING",
-        "verified": false,
+        "status": "COMPLETE",
+        "verified": true,
         "failure_message": "",
-        "observed_at_utc": "2026-09-08T03:43:22.674778+00:00",
-        "observed_at_shanghai": "2026-09-08T11:43:22.674778+08:00",
+        "observed_at_utc": "2026-09-08T05:22:13.255722+00:00",
+        "observed_at_shanghai": "2026-09-08T13:22:13.255722+08:00",
         "scope": "Latest ordinary run for ref; exact version requires remote_binding",
-        "output_validation": "NOT_PERFORMED_BY_THIS_READER"
+        "output_validation": "NOT_PERFORMED_BY_THIS_READER",
+        "ui_runtime_seconds": 5560.4,
+        "final_audit_verified": true,
+        "output_binding": {
+          "before": {
+            "version": 1,
+            "source_sha256": "703278ee6dfb3792f8a0049f7a295d68b7e6bb1df6de49115355fe415dc91a54"
+          },
+          "after": {
+            "version": 1,
+            "source_sha256": "703278ee6dfb3792f8a0049f7a295d68b7e6bb1df6de49115355fe415dc91a54"
+          },
+          "method": "current session output with matching exact source/version before and after"
+        },
+        "final_audit": {
+          "path": "experiments/PUBLIC946_TTA_20260908/B0/public946_final_audit.json",
+          "sha256": "429bcce13bbfaa694da0fc756672d4801c3b7e7c168bc43b820a26cfc63b8696"
+        },
+        "runtime_files": [
+          {
+            "path": "experiments/PUBLIC946_TTA_20260908/B0/runtime_summary.json",
+            "sha256": "826663880f347bb38d479203a93fcb8290ca4ea30c89791ea0fdfda5bbee6f98"
+          }
+        ],
+        "artifacts": [
+          {
+            "path": "experiments/PUBLIC946_TTA_20260908/B0/ppsweep_results.csv",
+            "sha256": "120727ef0afe612e02cbf30e75bba60fc8a460e3d12b0038cc7dd05411a3568d",
+            "bytes": 1401
+          },
+          {
+            "path": "experiments/PUBLIC946_TTA_20260908/B0/ppsweep_selected.json",
+            "sha256": "5f6fe577421f72dbf374b02387a0006b58508f2943e2e42c36caf3001691a8b5",
+            "bytes": 353
+          },
+          {
+            "path": "experiments/PUBLIC946_TTA_20260908/B0/public946_expanded_patch_receipt.json",
+            "sha256": "51c22155da6ca1cd3f5e6dfaf4e10babf90f418c78ebfcee2546f354f6d82936",
+            "bytes": 1486
+          },
+          {
+            "path": "experiments/PUBLIC946_TTA_20260908/B0/public946_final_audit.json",
+            "sha256": "429bcce13bbfaa694da0fc756672d4801c3b7e7c168bc43b820a26cfc63b8696",
+            "bytes": 16736
+          },
+          {
+            "path": "experiments/PUBLIC946_TTA_20260908/B0/run_stats.csv",
+            "sha256": "5a93cd293bffc7bb4180e100dd0c4199381ed4acab70912d7c609644393a43bc",
+            "bytes": 3133
+          },
+          {
+            "path": "experiments/PUBLIC946_TTA_20260908/B0/validator_results.csv",
+            "sha256": "9d28929631425afb5c4dc2595670ccb2f12e342360bd0ffce45e5837416a0ec0",
+            "bytes": 7809
+          }
+        ],
+        "independent_check": {
+          "final_sha256": "a852d1d07ff8c9307d9b10db7f9b4b12e8b1882f14c5dbeb1316d099f0795b3e",
+          "rows": 241400,
+          "selected_pp": "tight55",
+          "runtime_production_windows": 396,
+          "association_examples": 4
+        }
       },
       "submission": {
-        "id": null,
-        "status": "NOT_REQUESTED",
-        "public_score": null
+        "id": 56091397,
+        "status": "PENDING",
+        "public_score": null,
+        "description": "PUBLIC946_TTA_20260908 B0 | V1 | SV348114666 | SHA256 1ae0ac1beb9599308119c380056c05ebc69c230395b37bc3d0966c3107153f19",
+        "requested_at_utc": "2026-09-08T05:21:47.226217+00:00",
+        "date_utc": "2026-09-08 05:21:50.403000",
+        "read_location": "Kaggle competition submissions API: biohub-cell-tracking-during-development; exact submission ID 56091397",
+        "private_score": null,
+        "error_description": "",
+        "observed_at_utc": "2026-09-08T05:22:17.749473+00:00",
+        "observed_at_shanghai": "2026-09-08T13:22:17.749473+08:00"
       },
-      "actual_postprocess": null,
+      "actual_postprocess": {
+        "base_configuration": {
+          "ADAPTIVE_SHORT_TRACK_RESCUE": true,
+          "DEEPCENTER_EXPECTED_EPOCH": 2,
+          "DEEPCENTER_GAP_CONFIRM_MIN_SPAN_UM": 8.5,
+          "DEEPCENTER_GAP_THRESHOLD": 0.25,
+          "DEEPCENTER_GAP_VETO": true,
+          "DEEPCENTER_SAFE_DIV_THRESHOLD": 0.25,
+          "DEEPCENTER_SAFE_DIV_VETO": true,
+          "DEEPCENTER_SCORE_CACHE_MAX_FRAMES": 8,
+          "DEEPCENTER_SCORE_WIN_YX": 2,
+          "DEEPCENTER_SCORE_WIN_Z": 1,
+          "DIV_DROP_TO_SINGLE_IF_BAD": true,
+          "DIV_PARENT_MAX_UM": 10.5,
+          "DIV_SISTER_MAX_UM": 8.0,
+          "GAP2_FRAME_FRAC_CAP": 0.006,
+          "GAP2_MAX_LINKS_ABS": 180,
+          "GAP2_MAX_LINKS_FRAC": 0.0045,
+          "GAP2_MAX_STEP_UM": 4.4,
+          "GAP2_MAX_TOTAL_UM": 10.2,
+          "GAP2_REQUIRE_CONTEXT": true,
+          "GAP_CLOSE_MAX_ADDED_ABS": 2000,
+          "GAP_CLOSE_MAX_ADDED_FRAC": 0.05,
+          "GAP_CLOSE_MAX_GAP": 2,
+          "GAP_CLOSE_REUSE_EXISTING": true,
+          "GAP_CLOSE_REUSE_UM": 3.2,
+          "GAP_CLOSE_UM": 5.0,
+          "GAP_DENSITY_ADAPTIVE": true,
+          "GAP_DENSITY_GAIN": 0.04,
+          "GAP_DENSITY_MAX_STEP_DELTA_UM": 0.125,
+          "GAP_DENSITY_NEIGHBORS": 3,
+          "GAP_DENSITY_REFERENCE_UM": 6.5,
+          "GAP_REFINE_MAX_SHIFT_UM": 3.2,
+          "GAP_REFINE_SYNTHETIC": true,
+          "GAP_REFINE_WIN_YX": 3,
+          "GAP_REFINE_WIN_Z": 1,
+          "MOTION_RELINK_LEARNED_BONUS": 1.0,
+          "MOTION_RELINK_MAX_FRAME_NODES": 2600,
+          "MOTION_RELINK_RELAXED_UM": 10.0,
+          "MOTION_RELINK_TIGHT_UM": 6.0,
+          "MOTION_RELINK_VELOCITY_WEIGHT": 0.5,
+          "OUTPUT_DIVISION_GEOMETRY_FILTER": false,
+          "OUTPUT_EDGE_MAX_UM": 14.0,
+          "OUTPUT_ENFORCE_NEXT_FRAME": true,
+          "OUTPUT_FILTER_SHORT_TRACKS": true,
+          "OUTPUT_GAP2_RECOVERY": true,
+          "OUTPUT_GAP_CLOSE": true,
+          "OUTPUT_KEEP_DIVISION_COMPONENTS": true,
+          "OUTPUT_LINEFIT_SMOOTH": true,
+          "OUTPUT_LINEFIT_WEIGHT": 0.8,
+          "OUTPUT_LINEFIT_WINDOW": 2,
+          "OUTPUT_MIN_TRACK_LEN": 6,
+          "OUTPUT_MOTION_RELINK": true,
+          "OUTPUT_PRUNE_ISOLATED": true,
+          "OUTPUT_SAFE_DIVISIONS": true,
+          "OUTPUT_SINGLE_CHILD_REPAIR": false,
+          "OUTPUT_SINGLE_PARENT_REPAIR": true,
+          "REQUIRE_DEEPCENTER_VETO": true,
+          "SAFE_DIV_DIVERGE_UM": 2.25,
+          "SAFE_DIV_EXISTING_CHILD_MAX_UM": 10.0,
+          "SAFE_DIV_FRAME_FRAC_CAP": 0.0076,
+          "SAFE_DIV_GLOBAL_FRAC_CAP": 0.00375,
+          "SAFE_DIV_MAX_UM": 9.0,
+          "SAFE_DIV_REQUIRE_DIVERGENCE": true,
+          "SAFE_DIV_REQUIRE_MUTUAL_NN": true,
+          "SAFE_DIV_SISTER_MAX_UM": 14.0,
+          "SAFE_DIV_SISTER_SYMMETRY_TAU": 0.6,
+          "SHORT_TRACK_RESCUE_MAX_MEAN_EDGE_DIST_UM": 3.0,
+          "SHORT_TRACK_RESCUE_MAX_NODES_ABS": 120,
+          "SHORT_TRACK_RESCUE_MAX_NODES_FRAC": 0.012,
+          "SHORT_TRACK_RESCUE_MIN_LEN": 4,
+          "SHORT_TRACK_RESCUE_MIN_MEAN_EDGE_PROB": 0.88,
+          "SHORT_TRACK_RESCUE_TRIGGER_REMOVED_FRAC": 0.1,
+          "USE_DEEPCENTER_VETO": true,
+          "VOXEL_SCALE_UM": [
+            1.625,
+            0.40625,
+            0.40625
+          ]
+        },
+        "clamped_gap_close_max_gap": 1,
+        "configured_gap_close_max_gap": 2,
+        "effective_final_configuration": {
+          "ADAPTIVE_SHORT_TRACK_RESCUE": true,
+          "DEEPCENTER_EXPECTED_EPOCH": 2,
+          "DEEPCENTER_GAP_CONFIRM_MIN_SPAN_UM": 8.5,
+          "DEEPCENTER_GAP_THRESHOLD": 0.25,
+          "DEEPCENTER_GAP_VETO": true,
+          "DEEPCENTER_SAFE_DIV_THRESHOLD": 0.25,
+          "DEEPCENTER_SAFE_DIV_VETO": true,
+          "DEEPCENTER_SCORE_CACHE_MAX_FRAMES": 8,
+          "DEEPCENTER_SCORE_WIN_YX": 2,
+          "DEEPCENTER_SCORE_WIN_Z": 1,
+          "DIV_DROP_TO_SINGLE_IF_BAD": true,
+          "DIV_PARENT_MAX_UM": 10.5,
+          "DIV_SISTER_MAX_UM": 8.0,
+          "GAP2_FRAME_FRAC_CAP": 0.006,
+          "GAP2_MAX_LINKS_ABS": 180,
+          "GAP2_MAX_LINKS_FRAC": 0.0045,
+          "GAP2_MAX_STEP_UM": 4.4,
+          "GAP2_MAX_TOTAL_UM": 10.2,
+          "GAP2_REQUIRE_CONTEXT": true,
+          "GAP_CLOSE_MAX_ADDED_ABS": 2000,
+          "GAP_CLOSE_MAX_ADDED_FRAC": 0.05,
+          "GAP_CLOSE_MAX_GAP": 2,
+          "GAP_CLOSE_REUSE_EXISTING": true,
+          "GAP_CLOSE_REUSE_UM": 3.2,
+          "GAP_CLOSE_UM": 5.0,
+          "GAP_DENSITY_ADAPTIVE": true,
+          "GAP_DENSITY_GAIN": 0.04,
+          "GAP_DENSITY_MAX_STEP_DELTA_UM": 0.125,
+          "GAP_DENSITY_NEIGHBORS": 3,
+          "GAP_DENSITY_REFERENCE_UM": 6.5,
+          "GAP_REFINE_MAX_SHIFT_UM": 3.2,
+          "GAP_REFINE_SYNTHETIC": true,
+          "GAP_REFINE_WIN_YX": 3,
+          "GAP_REFINE_WIN_Z": 1,
+          "MOTION_RELINK_LEARNED_BONUS": 1.0,
+          "MOTION_RELINK_MAX_FRAME_NODES": 2600,
+          "MOTION_RELINK_RELAXED_UM": 10.0,
+          "MOTION_RELINK_TIGHT_UM": 5.5,
+          "MOTION_RELINK_VELOCITY_WEIGHT": 0.5,
+          "OUTPUT_DIVISION_GEOMETRY_FILTER": false,
+          "OUTPUT_EDGE_MAX_UM": 14.0,
+          "OUTPUT_ENFORCE_NEXT_FRAME": true,
+          "OUTPUT_FILTER_SHORT_TRACKS": true,
+          "OUTPUT_GAP2_RECOVERY": true,
+          "OUTPUT_GAP_CLOSE": true,
+          "OUTPUT_KEEP_DIVISION_COMPONENTS": true,
+          "OUTPUT_LINEFIT_SMOOTH": true,
+          "OUTPUT_LINEFIT_WEIGHT": 0.8,
+          "OUTPUT_LINEFIT_WINDOW": 2,
+          "OUTPUT_MIN_TRACK_LEN": 6,
+          "OUTPUT_MOTION_RELINK": true,
+          "OUTPUT_PRUNE_ISOLATED": true,
+          "OUTPUT_SAFE_DIVISIONS": true,
+          "OUTPUT_SINGLE_CHILD_REPAIR": false,
+          "OUTPUT_SINGLE_PARENT_REPAIR": true,
+          "REQUIRE_DEEPCENTER_VETO": true,
+          "SAFE_DIV_DIVERGE_UM": 2.25,
+          "SAFE_DIV_EXISTING_CHILD_MAX_UM": 10.0,
+          "SAFE_DIV_FRAME_FRAC_CAP": 0.0076,
+          "SAFE_DIV_GLOBAL_FRAC_CAP": 0.00375,
+          "SAFE_DIV_MAX_UM": 9.0,
+          "SAFE_DIV_REQUIRE_DIVERGENCE": true,
+          "SAFE_DIV_REQUIRE_MUTUAL_NN": true,
+          "SAFE_DIV_SISTER_MAX_UM": 14.0,
+          "SAFE_DIV_SISTER_SYMMETRY_TAU": 0.6,
+          "SHORT_TRACK_RESCUE_MAX_MEAN_EDGE_DIST_UM": 3.0,
+          "SHORT_TRACK_RESCUE_MAX_NODES_ABS": 120,
+          "SHORT_TRACK_RESCUE_MAX_NODES_FRAC": 0.012,
+          "SHORT_TRACK_RESCUE_MIN_LEN": 4,
+          "SHORT_TRACK_RESCUE_MIN_MEAN_EDGE_PROB": 0.88,
+          "SHORT_TRACK_RESCUE_TRIGGER_REMOVED_FRAC": 0.1,
+          "USE_DEEPCENTER_VETO": true,
+          "VOXEL_SCALE_UM": [
+            1.625,
+            0.40625,
+            0.40625
+          ]
+        },
+        "resolution": "PP_BASE_CONFIG plus selected_config converted exactly as pp_apply; globals restored after final write",
+        "selected_label": "tight55",
+        "selected_overrides": {
+          "MOTION_RELINK_TIGHT_UM": 5.5
+        },
+        "typed_overrides_actually_applied": {
+          "MOTION_RELINK_TIGHT_UM": 5.5
+        }
+      },
       "delta_vs_B0": null,
       "delta_vs_own_best_at_start": null,
       "delta_vs_current_own_best": null,
       "submitted_source_sha256": "1ae0ac1beb9599308119c380056c05ebc69c230395b37bc3d0966c3107153f19",
-      "write_status": "ORDINARY_REQUESTED_READBACK_REQUIRED",
+      "write_status": "FORMAL_REQUESTED_READBACK_REQUIRED",
       "identity_ui": {
         "version": 1,
         "script_version_id": 348114666,
@@ -171,12 +424,12 @@
         "operation": "READ_ONLY_BATCH_SNAPSHOT",
         "arm": "B0",
         "ref": "sailorren/biohub-946-b0-repro-20260908",
-        "observed_at_utc": "2026-09-08T03:43:17.285318+00:00",
-        "observed_at_shanghai": "2026-09-08T11:43:17.285318+08:00",
+        "observed_at_utc": "2026-09-08T05:22:09.581292+00:00",
+        "observed_at_shanghai": "2026-09-08T13:22:09.581292+08:00",
         "kernel": {
           "status": "READ_SUCCESS",
-          "observed_at_utc": "2026-09-08T03:43:20.125708+00:00",
-          "observed_at_shanghai": "2026-09-08T11:43:20.125708+08:00",
+          "observed_at_utc": "2026-09-08T05:22:11.951739+00:00",
+          "observed_at_shanghai": "2026-09-08T13:22:11.951739+08:00",
           "source_sha256": "703278ee6dfb3792f8a0049f7a295d68b7e6bb1df6de49115355fe415dc91a54",
           "source_bytes": 255581,
           "cells": [
@@ -256,27 +509,12 @@
           }
         },
         "ordinary": {
-          "status": "RUNNING",
+          "status": "COMPLETE",
           "failure_message": "",
-          "observed_at_utc": "2026-09-08T03:43:22.674778+00:00",
-          "observed_at_shanghai": "2026-09-08T11:43:22.674778+08:00",
+          "observed_at_utc": "2026-09-08T05:22:13.255722+00:00",
+          "observed_at_shanghai": "2026-09-08T13:22:13.255722+08:00",
           "scope": "Latest ordinary run for ref; exact version requires remote_binding",
           "output_validation": "NOT_PERFORMED_BY_THIS_READER"
-        },
-        "log": {
-          "status": "READ_SUCCESS",
-          "bytes": 0,
-          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "observed_at_utc": "2026-09-08T03:43:24.812983+00:00",
-          "observed_at_shanghai": "2026-09-08T11:43:24.812983+08:00",
-          "scope": "Ordinary log; not formal hidden-run output",
-          "tracked_path": "experiments/PUBLIC946_TTA_20260908/B0/ordinary.log",
-          "stored_bytes": 0,
-          "stored_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "redacted": false,
-          "truncated_tail": false,
-          "complete_raw_path": "downloads/PUBLIC946_TTA_20260908/B0/ordinary.log",
-          "summary_tail": ""
         },
         "competition": {
           "ref": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development",
@@ -287,23 +525,34 @@
           "user_has_entered": true
         },
         "gpu_quota": {
-          "used_hours": 6.926951780833333,
+          "used_hours": 8.44344888888889,
           "total_hours": 30.0,
-          "remaining_hours": 23.073048219166665,
+          "remaining_hours": 21.556551111111112,
           "refresh_at": "2026-09-12 00:00:00"
         },
         "submission_listing": {
-          "rows": 10,
+          "rows": 11,
           "pages": 1,
           "complete": true,
-          "observed_at_utc": "2026-09-08T03:43:29.093443+00:00",
-          "observed_at_shanghai": "2026-09-08T11:43:29.093443+08:00",
+          "observed_at_utc": "2026-09-08T05:22:17.749473+00:00",
+          "observed_at_shanghai": "2026-09-08T13:22:17.749473+08:00",
           "utc_day": "2026-09-08",
-          "today_observed_count": 1,
-          "remaining_from_complete_listing": 4,
+          "today_observed_count": 2,
+          "remaining_from_complete_listing": 3,
           "remaining_provenance": "Computed from current max_daily_submissions minus all observed UTC-today submissions; no separate server remaining-allowance field is exposed; final UI pre-submit allowance is separate.",
           "matched_batch_submissions": {
-            "B0": [],
+            "B0": [
+              {
+                "id": 56091397,
+                "date_utc": "2026-09-08 05:21:50.403000",
+                "read_location": "Kaggle competition submissions API: biohub-cell-tracking-during-development; exact submission ID 56091397",
+                "description": "PUBLIC946_TTA_20260908 B0 | V1 | SV348114666 | SHA256 1ae0ac1beb9599308119c380056c05ebc69c230395b37bc3d0966c3107153f19",
+                "status": "PENDING",
+                "public_score": null,
+                "private_score": null,
+                "error_description": ""
+              }
+            ],
             "C1": [],
             "C2": []
           }
@@ -317,8 +566,8 @@
           "public_score": "0.942",
           "private_score": null,
           "error_description": "",
-          "observed_at_utc": "2026-09-08T03:43:29.093443+00:00",
-          "observed_at_shanghai": "2026-09-08T11:43:29.093443+08:00",
+          "observed_at_utc": "2026-09-08T05:22:17.749473+00:00",
+          "observed_at_shanghai": "2026-09-08T13:22:17.749473+08:00",
           "listing_complete": true,
           "same_score_submission_ids": [
             56066312,
@@ -332,13 +581,44 @@
             "path": "downloads/PUBLIC946_TTA_20260908/B0/remote.ipynb",
             "bytes": 255581,
             "sha256": "703278ee6dfb3792f8a0049f7a295d68b7e6bb1df6de49115355fe415dc91a54"
-          },
-          "log": {
-            "path": "downloads/PUBLIC946_TTA_20260908/B0/ordinary.log",
-            "bytes": 0,
-            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
           }
         }
+      },
+      "input_versions_readback": {
+        "verified": true,
+        "version": 1,
+        "script_version_id": 348114666,
+        "dataset_sources": [
+          "pilkwang/biohub-deepcenter-unet3d-center-prior-v1/5",
+          "pilkwang/biohub-temporal-unet3d-seed314159-v1/2",
+          "pilkwang/biohub-tracking-support-pack-50ep-v1/10"
+        ],
+        "observed_at_utc": "2026-09-08T05:19:54.416265+00:00",
+        "source": "Kaggle fixed-Version Inputs UI https://www.kaggle.com/code/sailorren/biohub-946-b0-repro-20260908/input?scriptVersionId=348114666",
+        "observed_labels": [
+          "Biohub DeepCenterUNet3D Center Prior V1: Version 5",
+          "Biohub TemporalUNet3D Seed 314159 V1: Version 2",
+          "Biohub Tracking Support Pack: Version 10"
+        ]
+      },
+      "formal_hidden_output": "UNKNOWN",
+      "submission_quota_ui_before": {
+        "remaining": 4,
+        "observed_at_utc": "2026-09-08T05:21:34.258462+00:00",
+        "read_location": "Kaggle submissions > Submit to Competition form; read only",
+        "notebook": "biohub-946-b0-repro-20260908",
+        "version": 1,
+        "output": "submission.csv",
+        "ui_final_submit_clicked": false
+      },
+      "own_best_before_submission": {
+        "id": 56069192,
+        "status": "COMPLETE",
+        "public_score": "0.942",
+        "description": "V21A parent9 dc026 | Version 1 | SV 347862850 | SHA256 9537aa87092fe2e0d130b9b23ffffb9796b6d6ee2d29b366c09bebce044223e0",
+        "date_utc": "2026-09-07 04:56:50.697000",
+        "observed_at_utc": "2026-09-08T05:21:45.024497+00:00",
+        "scope": "Live completed submissions before this write"
       }
     },
     "C1": {
@@ -361,15 +641,94 @@
         "974767da6156ddf12c5b2d1351b13658f160d0b859a36deb9614441c006537ba",
         "de5b8e39238b894f8d2aed2660e7e3e2ac74b4edfea04dd6ccee470555e9d58a"
       ],
-      "version": null,
-      "script_version_id": null,
-      "kernel_id": null,
+      "version": 1,
+      "script_version_id": 348131494,
+      "kernel_id": 133505731,
       "remote_binding": {
-        "verified": false
+        "verified": false,
+        "status": "BINDING_EVIDENCE_PENDING_OR_MISMATCH",
+        "checks": {
+          "local_source_matches_frozen_hash": true,
+          "local_metadata_matches_frozen_hash": true,
+          "local_cells_match_frozen_hashes": true,
+          "exact_thirteen_code_cells": true,
+          "all_execution_cells_equal": true,
+          "ref_matches": true,
+          "ordinal_version_matches": true,
+          "script_version_id_supplied_by_reviewer": true,
+          "kernel_id_matches": true,
+          "docker_image_matches": true,
+          "machine_shape_matches": true,
+          "is_private_matches": true,
+          "enable_gpu_matches": true,
+          "enable_internet_matches": true,
+          "enable_tpu_matches": true,
+          "competition_sources_match": true,
+          "kernel_sources_match": true,
+          "model_sources_match": true,
+          "dataset_slugs_match": true,
+          "fixed_input_versions_verified": false
+        },
+        "unmet_checks": [
+          "fixed_input_versions_verified"
+        ],
+        "ref": "sailorren/biohub-946-c1-xy8-20260908",
+        "version": 1,
+        "script_version_id": 348131494,
+        "script_version_id_provenance": "Root reviewer fixed-Version UI; not exposed by GetKernel",
+        "remote_source_sha256": "f40f45ff76d0017442287524f7b149b913439d3d341150f728135ea66bb701c9",
+        "remote_source_bytes": 255581,
+        "local_source_sha256": "d3264807b20259b86a297a96f258640e7f752830c21f990f52be4c883a628341",
+        "source_file_bytes_equal": false,
+        "source_cell_hashes": [
+          "4287b1b08b202ca561790489b6cf5941381b3fccfca40bf060239ae22ea3b132",
+          "64bf335d2ea9f1dea62e2e7b3ad3b94205a775e8c5a53515d94bea3b6c655ba2",
+          "6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643",
+          "681232942fbb971dc1b999816b32c6d91da819e55d123b359b601169dd5982fb",
+          "26eebf062c90c29ad13a6b99803cdeeebbedf02102b78b0d5a2b2c0266d0679e",
+          "ab3be142f357c1eb8e25c40537af64d1b95e4d60b8735afdd533781f6dfb7f9c",
+          "239f51c30606f090e1fbc939a541891cef2dbea45d7b1c4a6fef53352e94759d",
+          "0083b9cd0b94cabba7c28f12bf8d80f6eda4a982d1f6f44ead0975ea0de89e92",
+          "3988c72818365e0cf42169df1d42d3d64e64a6f2815a42255a04222523936349",
+          "2e658927d77b92f79dbb5ac701cdb25ea0eef35e5c4901ed69d00a5aa932eae4",
+          "035037debb8d20a189d59efb74e42b59165172bd0a181e16947ff79c6d6f3c2f",
+          "974767da6156ddf12c5b2d1351b13658f160d0b859a36deb9614441c006537ba",
+          "de5b8e39238b894f8d2aed2660e7e3e2ac74b4edfea04dd6ccee470555e9d58a"
+        ],
+        "serialization_note": "File byte equality and ordered executable-cell equality are recorded separately; metadata/outputs are not execution source.",
+        "input_version_evidence": "API_INPUT_VERSIONS_NOT_EXPOSED_OR_DIFFERENT",
+        "metadata": {
+          "ref": "sailorren/biohub-946-c1-xy8-20260908",
+          "kernel_id": 133505731,
+          "version": 1,
+          "is_private": true,
+          "enable_gpu": true,
+          "enable_tpu": false,
+          "enable_internet": false,
+          "machine_shape": "NvidiaTeslaT4",
+          "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+          "dataset_sources": [
+            "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+            "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+            "pilkwang/biohub-tracking-support-pack-50ep-v1"
+          ],
+          "competition_sources": [
+            "biohub-cell-tracking-during-development"
+          ],
+          "kernel_sources": [],
+          "model_sources": []
+        },
+        "observed_at_utc": "2026-09-08T05:23:50.104556+00:00",
+        "observed_at_shanghai": "2026-09-08T13:23:50.104556+08:00"
       },
       "ordinary": {
-        "status": "NOT_RUN",
-        "verified": false
+        "status": "RUNNING",
+        "verified": false,
+        "failure_message": "",
+        "observed_at_utc": "2026-09-08T05:23:50.669011+00:00",
+        "observed_at_shanghai": "2026-09-08T13:23:50.669011+08:00",
+        "scope": "Latest ordinary run for ref; exact version requires remote_binding",
+        "output_validation": "NOT_PERFORMED_BY_THIS_READER"
       },
       "submission": {
         "id": null,
@@ -379,7 +738,178 @@
       "actual_postprocess": null,
       "delta_vs_B0": null,
       "delta_vs_own_best_at_start": null,
-      "delta_vs_current_own_best": null
+      "delta_vs_current_own_best": null,
+      "submitted_source_sha256": "accb328eeae3732101711c8d9b7e7a2c267ccd787c7228e72244b55f5488331f",
+      "write_status": "ORDINARY_REQUESTED_READBACK_REQUIRED",
+      "identity_ui": {
+        "edit_run_url": "https://www.kaggle.com/code/sailorren/biohub-946-c1-xy8-20260908/edit/run/348131494",
+        "observed_at_utc": "2026-09-08T05:23:43.572581+00:00",
+        "source": "Own notebook visible Edit link in browser DOM"
+      },
+      "last_platform_read": {
+        "operation": "READ_ONLY_BATCH_SNAPSHOT",
+        "arm": "C1",
+        "ref": "sailorren/biohub-946-c1-xy8-20260908",
+        "observed_at_utc": "2026-09-08T05:23:48.872690+00:00",
+        "observed_at_shanghai": "2026-09-08T13:23:48.872690+08:00",
+        "kernel": {
+          "status": "READ_SUCCESS",
+          "observed_at_utc": "2026-09-08T05:23:50.104556+00:00",
+          "observed_at_shanghai": "2026-09-08T13:23:50.104556+08:00",
+          "source_sha256": "f40f45ff76d0017442287524f7b149b913439d3d341150f728135ea66bb701c9",
+          "source_bytes": 255581,
+          "cells": [
+            {
+              "cell_type": "code",
+              "source_sha256": "4287b1b08b202ca561790489b6cf5941381b3fccfca40bf060239ae22ea3b132"
+            },
+            {
+              "cell_type": "code",
+              "source_sha256": "64bf335d2ea9f1dea62e2e7b3ad3b94205a775e8c5a53515d94bea3b6c655ba2"
+            },
+            {
+              "cell_type": "code",
+              "source_sha256": "6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643"
+            },
+            {
+              "cell_type": "code",
+              "source_sha256": "681232942fbb971dc1b999816b32c6d91da819e55d123b359b601169dd5982fb"
+            },
+            {
+              "cell_type": "code",
+              "source_sha256": "26eebf062c90c29ad13a6b99803cdeeebbedf02102b78b0d5a2b2c0266d0679e"
+            },
+            {
+              "cell_type": "code",
+              "source_sha256": "ab3be142f357c1eb8e25c40537af64d1b95e4d60b8735afdd533781f6dfb7f9c"
+            },
+            {
+              "cell_type": "code",
+              "source_sha256": "239f51c30606f090e1fbc939a541891cef2dbea45d7b1c4a6fef53352e94759d"
+            },
+            {
+              "cell_type": "code",
+              "source_sha256": "0083b9cd0b94cabba7c28f12bf8d80f6eda4a982d1f6f44ead0975ea0de89e92"
+            },
+            {
+              "cell_type": "code",
+              "source_sha256": "3988c72818365e0cf42169df1d42d3d64e64a6f2815a42255a04222523936349"
+            },
+            {
+              "cell_type": "code",
+              "source_sha256": "2e658927d77b92f79dbb5ac701cdb25ea0eef35e5c4901ed69d00a5aa932eae4"
+            },
+            {
+              "cell_type": "code",
+              "source_sha256": "035037debb8d20a189d59efb74e42b59165172bd0a181e16947ff79c6d6f3c2f"
+            },
+            {
+              "cell_type": "code",
+              "source_sha256": "974767da6156ddf12c5b2d1351b13658f160d0b859a36deb9614441c006537ba"
+            },
+            {
+              "cell_type": "code",
+              "source_sha256": "de5b8e39238b894f8d2aed2660e7e3e2ac74b4edfea04dd6ccee470555e9d58a"
+            }
+          ],
+          "metadata": {
+            "ref": "sailorren/biohub-946-c1-xy8-20260908",
+            "kernel_id": 133505731,
+            "version": 1,
+            "is_private": true,
+            "enable_gpu": true,
+            "enable_tpu": false,
+            "enable_internet": false,
+            "machine_shape": "NvidiaTeslaT4",
+            "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+            "dataset_sources": [
+              "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+              "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+              "pilkwang/biohub-tracking-support-pack-50ep-v1"
+            ],
+            "competition_sources": [
+              "biohub-cell-tracking-during-development"
+            ],
+            "kernel_sources": [],
+            "model_sources": []
+          }
+        },
+        "ordinary": {
+          "status": "RUNNING",
+          "failure_message": "",
+          "observed_at_utc": "2026-09-08T05:23:50.669011+00:00",
+          "observed_at_shanghai": "2026-09-08T13:23:50.669011+08:00",
+          "scope": "Latest ordinary run for ref; exact version requires remote_binding",
+          "output_validation": "NOT_PERFORMED_BY_THIS_READER"
+        },
+        "competition": {
+          "ref": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development",
+          "title": "Biohub - Cell Tracking During Development",
+          "max_daily_submissions": 5,
+          "is_kernels_submissions_only": true,
+          "submissions_disabled": false,
+          "user_has_entered": true
+        },
+        "gpu_quota": {
+          "used_hours": 8.461677961666666,
+          "total_hours": 30.0,
+          "remaining_hours": 21.538322038333334,
+          "refresh_at": "2026-09-12 00:00:00"
+        },
+        "submission_listing": {
+          "rows": 11,
+          "pages": 1,
+          "complete": true,
+          "observed_at_utc": "2026-09-08T05:23:52.675448+00:00",
+          "observed_at_shanghai": "2026-09-08T13:23:52.675448+08:00",
+          "utc_day": "2026-09-08",
+          "today_observed_count": 2,
+          "remaining_from_complete_listing": 3,
+          "remaining_provenance": "Computed from current max_daily_submissions minus all observed UTC-today submissions; no separate server remaining-allowance field is exposed; final UI pre-submit allowance is separate.",
+          "matched_batch_submissions": {
+            "B0": [
+              {
+                "id": 56091397,
+                "date_utc": "2026-09-08 05:21:50.403000",
+                "read_location": "Kaggle competition submissions API: biohub-cell-tracking-during-development; exact submission ID 56091397",
+                "description": "PUBLIC946_TTA_20260908 B0 | V1 | SV348114666 | SHA256 1ae0ac1beb9599308119c380056c05ebc69c230395b37bc3d0966c3107153f19",
+                "status": "PENDING",
+                "public_score": null,
+                "private_score": null,
+                "error_description": ""
+              }
+            ],
+            "C1": [],
+            "C2": []
+          }
+        },
+        "current_own_best": {
+          "id": 56069192,
+          "date_utc": "2026-09-07 04:56:50.697000",
+          "read_location": "Kaggle competition submissions API: biohub-cell-tracking-during-development; exact submission ID 56069192",
+          "description": "V21A parent9 dc026 | Version 1 | SV 347862850 | SHA256 9537aa87092fe2e0d130b9b23ffffb9796b6d6ee2d29b366c09bebce044223e0",
+          "status": "COMPLETE",
+          "public_score": "0.942",
+          "private_score": null,
+          "error_description": "",
+          "observed_at_utc": "2026-09-08T05:23:52.675448+00:00",
+          "observed_at_shanghai": "2026-09-08T13:23:52.675448+08:00",
+          "listing_complete": true,
+          "same_score_submission_ids": [
+            56066312,
+            56066361,
+            56069192
+          ],
+          "interpretation": "CURRENT_OWN_BEST_VERIFIED"
+        },
+        "artifacts": {
+          "source": {
+            "path": "downloads/PUBLIC946_TTA_20260908/C1/remote.ipynb",
+            "bytes": 255581,
+            "sha256": "f40f45ff76d0017442287524f7b149b913439d3d341150f728135ea66bb701c9"
+          }
+        }
+      }
     },
     "C2": {
       "ref": "sailorren/biohub-946-c2-secondary-edge-tta-20260908",
@@ -423,6 +953,17 @@
     }
   },
   "git_delivery": {
-    "status": "NOT_SYNCED"
+    "status": "CHECKPOINT_REMOTE_VERIFIED_EXPERIMENT_RUNNING",
+    "checkpoint_commit": "e974d53179625e3a3ea43dc6ea915f410d93a39d",
+    "checkpoint_receipt": "downloads/PUBLIC946_TTA_20260908/checkpoint_remote_readback.json",
+    "verified_files": 32,
+    "path": "downloads/PUBLIC946_TTA_20260908/final_remote_readback.json"
+  },
+  "write_entry_local_checks": {
+    "observed_at_utc": "2026-09-08T03:56:36.936740+00:00",
+    "executed": true,
+    "duplicate_B0_save": "REJECTED_ALREADY_ATTEMPTED",
+    "premature_B0_submission": "REJECTED_FINAL_AUDIT_NOT_VERIFIED",
+    "platform_write_requests": 0
   }
 }

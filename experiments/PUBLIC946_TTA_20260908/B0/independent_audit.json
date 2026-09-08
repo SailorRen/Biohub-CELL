@@ -1,0 +1,208 @@
+{
+  "task_id": "PUBLIC946_TTA_20260908",
+  "arm": "B0",
+  "observed_at_utc": "2026-09-08T05:23:20.302577+00:00",
+  "audit_status": "ORDINARY_SOURCE_INPUT_OUTPUT_RUNTIME_VERIFIED",
+  "scope": "Independent read-only review of locally retrieved platform receipts and actual runtime JSONL; no model inference or Kaggle calls in this audit",
+  "identity": {
+    "ref": "sailorren/biohub-946-b0-repro-20260908",
+    "version": 1,
+    "script_version_id": 348114666,
+    "kernel_id": 133498982,
+    "source_sha256": "c4bfcd8d765c67d35435876b3f3eb7bb810e20556479a918143451e2c61f849c",
+    "submitted_source_sha256": "1ae0ac1beb9599308119c380056c05ebc69c230395b37bc3d0966c3107153f19"
+  },
+  "remote_source_sha256": "703278ee6dfb3792f8a0049f7a295d68b7e6bb1df6de49115355fe415dc91a54",
+  "remote_file_bytes_equal": false,
+  "all_13_ordered_cell_sources_equal": true,
+  "fixed_input_versions": {
+    "verified": true,
+    "version": 1,
+    "script_version_id": 348114666,
+    "dataset_sources": [
+      "pilkwang/biohub-deepcenter-unet3d-center-prior-v1/5",
+      "pilkwang/biohub-temporal-unet3d-seed314159-v1/2",
+      "pilkwang/biohub-tracking-support-pack-50ep-v1/10"
+    ],
+    "observed_at_utc": "2026-09-08T05:19:54.416265+00:00",
+    "source": "Kaggle fixed-Version Inputs UI https://www.kaggle.com/code/sailorren/biohub-946-b0-repro-20260908/input?scriptVersionId=348114666",
+    "observed_labels": [
+      "Biohub DeepCenterUNet3D Center Prior V1: Version 5",
+      "Biohub TemporalUNet3D Seed 314159 V1: Version 2",
+      "Biohub Tracking Support Pack: Version 10"
+    ]
+  },
+  "ordinary_gate": {
+    "final_sha256": "a852d1d07ff8c9307d9b10db7f9b4b12e8b1882f14c5dbeb1316d099f0795b3e",
+    "rows": 241400,
+    "selected_pp": "tight55",
+    "runtime_production_windows": 396,
+    "association_examples": 4
+  },
+  "final_submission": {
+    "sha256": "a852d1d07ff8c9307d9b10db7f9b4b12e8b1882f14c5dbeb1316d099f0795b3e",
+    "rows": 241400,
+    "nodes": 122841,
+    "edges": 118559,
+    "expected_test_datasets": [
+      "44b6_0113de3b",
+      "44b6_0b24845f",
+      "6bba_05b6850b",
+      "6bba_05db0fb1"
+    ]
+  },
+  "division_parents": 102,
+  "before_selection_submission": {
+    "datasets": [
+      "44b6_0113de3b",
+      "44b6_0b24845f",
+      "6bba_05b6850b",
+      "6bba_05db0fb1"
+    ],
+    "rows": 241282,
+    "sha256": "0319ba6d8e864335d3573f6b1a6227c546f17e9247a0c2858fa09b6c2422db3f"
+  },
+  "postprocess": {
+    "base_motion_relink_tight_um": 6.0,
+    "selected": "tight55",
+    "overrides": {
+      "MOTION_RELINK_TIGHT_UM": 5.5
+    },
+    "base_proxy": 0.9491896335339407,
+    "selected_proxy": 0.951247367385682,
+    "proxy_is_formal_score": false,
+    "single_candidate_positives": [
+      "tight55"
+    ],
+    "original_combo_not_triggered": true,
+    "all_other_final_pp_values_equal_base": true
+  },
+  "runtime": {
+    "all_windows": 1188,
+    "test_windows": 396,
+    "train_validator_windows": 792,
+    "test_association_examples": 4,
+    "all_association_examples": 12,
+    "encoder_calls_per_model_per_window": 8,
+    "extra_encoder_calls": 0,
+    "extra_edge_head_calls": 12,
+    "gpu_names": [
+      "Tesla T4"
+    ],
+    "primary_feature_dtype": [
+      "torch.float32"
+    ],
+    "secondary_B0_delta_zero_all_observed_examples": true,
+    "max_process_gpu_allocated_bytes": 728221696,
+    "max_process_gpu_reserved_bytes": 981467136,
+    "production_predict_seconds": 575.0971596240997,
+    "validation_predict_seconds": 988.1451001167297
+  },
+  "checks": [
+    {
+      "check": "independent_call_to_actual_ordinary_gate",
+      "status": "PASS"
+    },
+    {
+      "check": "source_file_matches_frozen_arm",
+      "status": "PASS"
+    },
+    {
+      "check": "all_remote_cell_sources_match_frozen_order",
+      "status": "PASS"
+    },
+    {
+      "check": "remote_identity_inputs_all_checks",
+      "status": "PASS"
+    },
+    {
+      "check": "exact_platform_identity",
+      "status": "PASS"
+    },
+    {
+      "check": "selected_overrides_bind_actual_final_configuration",
+      "status": "PASS"
+    },
+    {
+      "check": "restored_base_differs_from_effective_final",
+      "status": "PASS"
+    },
+    {
+      "check": "seven_original_candidates_and_base_only",
+      "status": "PASS"
+    },
+    {
+      "check": "original_conditional_combo_correctly_not_triggered",
+      "status": "PASS"
+    },
+    {
+      "check": "selected_is_original_margin_rule_winner",
+      "status": "PASS"
+    },
+    {
+      "check": "final_stats_counts_bind_cloud_final_audit",
+      "status": "PASS"
+    },
+    {
+      "check": "raw_file_sha256_public946_runtime_187.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw_file_sha256_public946_runtime_188.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw_file_sha256_public946_runtime_71.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw_file_sha256_public946_runtime_72.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "no_duplicate_raw_runtime_windows",
+      "status": "PASS"
+    },
+    {
+      "check": "summary_counts_match_raw_scope",
+      "status": "PASS"
+    },
+    {
+      "check": "exactly_one_diagnostic_edge_head_per_observed_video",
+      "status": "PASS"
+    },
+    {
+      "check": "no_extra_encoder_and_original_features_unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "B0_secondary_remains_single_pass_in_actual_gpu_consumption",
+      "status": "PASS"
+    },
+    {
+      "check": "stdout_duplicate_smoke_not_extra_calls",
+      "status": "PASS"
+    }
+  ],
+  "receipt_sha256": {
+    "candidate.ipynb": "c4bfcd8d765c67d35435876b3f3eb7bb810e20556479a918143451e2c61f849c",
+    "kernel-metadata.json": "de8a3c54a515315b1c18803d3a1b5fbf9c42777f9fbc400aed66d169797889e2",
+    "public946_final_audit.json": "429bcce13bbfaa694da0fc756672d4801c3b7e7c168bc43b820a26cfc63b8696",
+    "runtime_summary.json": "826663880f347bb38d479203a93fcb8290ca4ea30c89791ea0fdfda5bbee6f98",
+    "run_stats.csv": "5a93cd293bffc7bb4180e100dd0c4199381ed4acab70912d7c609644393a43bc",
+    "ppsweep_selected.json": "5f6fe577421f72dbf374b02387a0006b58508f2943e2e42c36caf3001691a8b5",
+    "ppsweep_results.csv": "120727ef0afe612e02cbf30e75bba60fc8a460e3d12b0038cc7dd05411a3568d",
+    "ordinary.log": "19f8295736c11ec8a60b75fa3a26d848a8dff6cb31aed4b18a719e48f2d88f99"
+  },
+  "limits": {
+    "raw_submission_csv_downloaded": false,
+    "independent_local_full_csv_rerun": "NOT_RUN; schema/topology validated by source-bound executed final cloud hook and cross-checked with small statistics",
+    "formal_hidden_prediction": "UNKNOWN",
+    "formal_score_scope": "NOT_ASSESSED_BY_THIS_ORDINARY_AUDIT",
+    "stdout_smoke_duplicate_records": {
+      "log_lines": 24,
+      "unique_records": 12,
+      "raw_jsonl_records_are_authoritative": true
+    }
+  }
+}
