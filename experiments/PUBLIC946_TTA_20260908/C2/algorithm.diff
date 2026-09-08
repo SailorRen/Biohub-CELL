@@ -1,0 +1,66 @@
+--- public_expanded_predictor.py
++++ C2_expanded_predictor.py
+@@ -443,46 +443,55 @@
+             if secondary_detection_weight > 0.0:
+                 if cfg.det_tta:
+                     _secondary_nv = 1
++                    _secondary_feature_acc = secondary_unet_out.clone()
+                     for dims in [(-1,), (-2,), (-2, -1)]:
+                         secondary_imgs_flip = imgs.flip(dims)
+-                        _, secondary_det_flip = secondary_model.encode(secondary_imgs_flip)
++                        _secondary_u_flip, secondary_det_flip = secondary_model.encode(secondary_imgs_flip)
+                         for f in range(W):
+                             secondary_det_logits[f] = (
+                                 secondary_det_logits[f] + secondary_det_flip[f].flip(dims)
+                             )
+-                        del secondary_imgs_flip, secondary_det_flip
++                        _secondary_feature_acc.add_(_secondary_u_flip.flip(dims))
++                        del secondary_imgs_flip, secondary_det_flip, _secondary_u_flip
+                         _secondary_nv += 1
+                     for _k in (1, 3):
+                         secondary_imgs_rot = torch.rot90(imgs, _k, dims=(-2, -1))
+-                        _, secondary_det_rot = secondary_model.encode(secondary_imgs_rot)
++                        _secondary_u_rot, secondary_det_rot = secondary_model.encode(secondary_imgs_rot)
+                         for f in range(W):
+                             secondary_det_logits[f] = secondary_det_logits[f] + torch.rot90(
+                                 secondary_det_rot[f], -_k, dims=(-2, -1)
+                             )
+-                        del secondary_imgs_rot, secondary_det_rot
++                        _secondary_feature_acc.add_(torch.rot90(_secondary_u_rot, -_k, dims=(-2, -1)))
++                        del secondary_imgs_rot, secondary_det_rot, _secondary_u_rot
+                         _secondary_nv += 1
+                     secondary_imgs_t = imgs.transpose(-1, -2)
+-                    _, secondary_det_t = secondary_model.encode(secondary_imgs_t)
++                    _secondary_u_t, secondary_det_t = secondary_model.encode(secondary_imgs_t)
+                     for f in range(W):
+                         secondary_det_logits[f] = (
+                             secondary_det_logits[f] + secondary_det_t[f].transpose(-1, -2)
+                         )
+-                    del secondary_imgs_t, secondary_det_t
++                    _secondary_feature_acc.add_(_secondary_u_t.transpose(-1, -2))
++                    del secondary_imgs_t, secondary_det_t, _secondary_u_t
+                     _secondary_nv += 1
+                     secondary_imgs_at = torch.rot90(
+                         imgs, 1, dims=(-2, -1)
+                     ).transpose(-1, -2)
+-                    _, secondary_det_at = secondary_model.encode(secondary_imgs_at)
++                    _secondary_u_at, secondary_det_at = secondary_model.encode(secondary_imgs_at)
+                     for f in range(W):
+                         secondary_det_logits[f] = secondary_det_logits[f] + torch.rot90(
+                             secondary_det_at[f].transpose(-1, -2),
+                             -1,
+                             dims=(-2, -1),
+                         )
+-                    del secondary_imgs_at, secondary_det_at
++                    _secondary_feature_acc.add_(torch.rot90(_secondary_u_at.transpose(-1, -2), -1, dims=(-2, -1)))
++                    del secondary_imgs_at, secondary_det_at, _secondary_u_at
+                     _secondary_nv += 1
+                     for f in range(W):
+                         secondary_det_logits[f] = secondary_det_logits[f] / _secondary_nv
++                    if _secondary_feature_acc.shape != secondary_unet_out.shape:
++                        raise RuntimeError('SECONDARY EDGE TTA shape mismatch')
++                    secondary_unet_out = _secondary_feature_acc.div_(_secondary_nv)
++                    del _secondary_feature_acc
+ 
+                 for f in range(W):
+                     primary_det = det_logits[f]

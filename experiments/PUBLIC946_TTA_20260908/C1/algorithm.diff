@@ -1,0 +1,37 @@
+--- public_expanded_predictor.py
++++ C1_expanded_predictor.py
+@@ -412,12 +412,12 @@
+                 _unet_acc = _unet_acc + _u_t.transpose(-1, -2)
+             del imgs_t, det_t, _u_t
+             _nv += 1
+-            imgs_at = torch.rot90(imgs, 1, dims=(-2, -1)).transpose(-1, -2)
++            imgs_at = imgs.flip((-2, -1)).transpose(-1, -2)
+             _u_at, det_at = model.encode(imgs_at)
+             for f in range(W):
+-                det_logits[f] = det_logits[f] + torch.rot90(det_at[f].transpose(-1, -2), -1, dims=(-2, -1))
++                det_logits[f] = det_logits[f] + det_at[f].transpose(-1, -2).flip((-2, -1))
+             if _edge_tta:
+-                _unet_acc = _unet_acc + torch.rot90(_u_at.transpose(-1, -2), -1, dims=(-2, -1))
++                _unet_acc = _unet_acc + _u_at.transpose(-1, -2).flip((-2, -1))
+             del imgs_at, det_at, _u_at
+             _nv += 1
+             for f in range(W):
+@@ -469,16 +469,10 @@
+                         )
+                     del secondary_imgs_t, secondary_det_t
+                     _secondary_nv += 1
+-                    secondary_imgs_at = torch.rot90(
+-                        imgs, 1, dims=(-2, -1)
+-                    ).transpose(-1, -2)
++                    secondary_imgs_at = imgs.flip((-2, -1)).transpose(-1, -2)
+                     _, secondary_det_at = secondary_model.encode(secondary_imgs_at)
+                     for f in range(W):
+-                        secondary_det_logits[f] = secondary_det_logits[f] + torch.rot90(
+-                            secondary_det_at[f].transpose(-1, -2),
+-                            -1,
+-                            dims=(-2, -1),
+-                        )
++                        secondary_det_logits[f] = secondary_det_logits[f] + secondary_det_at[f].transpose(-1, -2).flip((-2, -1))
+                     del secondary_imgs_at, secondary_det_at
+                     _secondary_nv += 1
+                     for f in range(W):

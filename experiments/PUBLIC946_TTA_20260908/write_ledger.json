@@ -1,0 +1,67 @@
+{
+  "task_id": "PUBLIC946_TTA_20260908",
+  "save_requests": 1,
+  "submission_requests": 0,
+  "repair_requests": 0,
+  "operations": [
+    {
+      "action": "SaveKernel",
+      "arm": "B0",
+      "ref": "sailorren/biohub-946-b0-repro-20260908",
+      "attempt": 1,
+      "at_utc": "2026-09-08T03:41:41.318467+00:00",
+      "status": "RESPONSE_RECEIVED_READBACK_REQUIRED",
+      "manifest_sha256": "e126e7fff52941518b70a3dc3c8e9523a804f7fcffdd511079c63f6f098831e7",
+      "source_sha256": "c4bfcd8d765c67d35435876b3f3eb7bb810e20556479a918143451e2c61f849c",
+      "metadata_sha256": "de8a3c54a515315b1c18803d3a1b5fbf9c42777f9fbc400aed66d169797889e2",
+      "submitted_source_sha256": "1ae0ac1beb9599308119c380056c05ebc69c230395b37bc3d0966c3107153f19",
+      "preflight": {
+        "observed_at_utc": "2026-09-08T03:41:36.152409+00:00",
+        "principal": "sailorren",
+        "competition": {
+          "max_daily_submissions": 5,
+          "submissions_disabled": false,
+          "user_has_entered": true,
+          "is_kernels_submissions_only": true
+        },
+        "gpu_quota": {
+          "used_hours": 6.8988852777777785,
+          "total_hours": 30.0,
+          "remaining_hours": 23.101114722222224,
+          "refresh_at": "2026-09-12 00:00:00"
+        },
+        "today_utc": "2026-09-08",
+        "today_submission_ids": [
+          56087974
+        ],
+        "today_submission_count": 1,
+        "submission_remaining": 4,
+        "kernel_get": {
+          "error_type": "HTTPError",
+          "http_status": 403
+        },
+        "own_exact_ref_matches": [],
+        "absence_evidence": "Live authenticated own-kernel list with no exact match plus frozen direct-browser missing page; 403 alone not absence",
+        "status": "PASS"
+      },
+      "quota_remaining_before": 4,
+      "transport": {
+        "max_retries": 0,
+        "allow_redirects": false,
+        "max_write_sends": 1,
+        "send_calls": 1
+      },
+      "response": {
+        "ref": "/code/sailorren/biohub-946-b0-repro-20260908",
+        "version_number": 1,
+        "kernel_id": 133498982,
+        "error": "",
+        "invalid_dataset_sources": [],
+        "invalid_competition_sources": [],
+        "invalid_kernel_sources": [],
+        "invalid_model_sources": []
+      },
+      "completed_at_utc": "2026-09-08T03:41:46.751707+00:00"
+    }
+  ]
+}

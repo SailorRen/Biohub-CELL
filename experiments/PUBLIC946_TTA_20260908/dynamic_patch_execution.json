@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "scope": "actual unchanged public cell 4 patch statements executed in isolated temporary directory; no CUDA or inference",
+  "actual_expanded_sha256": "49613ad0b50ac90c3e07e3f8a803f2adf0926203be3f4a97d577c60b8f756178",
+  "independent_literal_expansion_sha256": "49613ad0b50ac90c3e07e3f8a803f2adf0926203be3f4a97d577c60b8f756178",
+  "equal_bytes": true,
+  "executed_top_level_statement_count": 50,
+  "original_patch_stdout": [
+    "TTA patch applied (400ep spatial D4-style)",
+    "Calibrated dual-seed runtime patch applied",
+    "Frozen frame retention guard applied at 0.90",
+    "Bidirectional harmonic-probability association fusion applied | weight= 0.15",
+    "Pre-ILP detector-coordinate manifest hook applied",
+    "EDGE_TTA patch installed and enabled in /var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/public946_dynamic_patch_emqam5va/scripts/predict_unet_transformer.py"
+  ]
+}

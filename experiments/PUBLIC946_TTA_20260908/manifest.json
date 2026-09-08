@@ -1,0 +1,261 @@
+{
+  "schema_version": "1.0",
+  "task_id": "PUBLIC946_TTA_20260908",
+  "goal": "实际执行固定公开母版的 B0/C1/C2，取得各自可绑定的正式成绩并如实交付 GitHub 证据；无分或无收益不得宣称完成或提分。",
+  "scope": {
+    "in_scope": [
+      "本任务3个Notebook代码、CPU测试、GPU推理、正式提交、项目GitHub同步"
+    ],
+    "out_of_scope": [
+      "训练",
+      "Dataset或Model创建更新",
+      "C1+C2组合",
+      "扩展参数搜索",
+      "最终提交选择更改",
+      "自动重试",
+      "后台监控"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "frozen": true,
+  "frozen_at_utc": "2026-09-08T03:32:55.915796+00:00",
+  "task_sha256": "e139b3656f37e879cba37d3da214da8001454cbac56b9473b8f99bbc175ea630",
+  "task_commit": "a0e63708a60d72e2eab907c03a8cb9c47abe378a",
+  "research_commit": "bf0cda3012f9885587c0ee0da0af348d0ab11c8b",
+  "master": {
+    "ref": "redoctopusk/biohub-942tta",
+    "kernel_id": 133372183,
+    "version": 1,
+    "sha256": "521cb97f0f457643379a51b60c4f71e3f4cc7d1823fd98cbb97633ffaa515ec4",
+    "bytes": 213474,
+    "dataset_sources": [
+      "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+      "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+      "pilkwang/biohub-tracking-support-pack-50ep-v1"
+    ],
+    "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+    "machine_shape": "NvidiaTeslaT4",
+    "enable_internet": false,
+    "script_version_id": 347821442,
+    "source_status": "FULL_NOTEBOOK_SOURCE_VERIFIED_ALL_12_CODE_CELLS"
+  },
+  "reference_evidence": {
+    "reports/20260908_正式成绩与公开946方案对比.md": "c18ccc3b1d48dbcec505ddbfdfe4b67e470641b12b6c42bd5148d30501f4a69c",
+    "research/20260908_正式成绩与公开946对比/tta_源码审读.json": "0c78760cdb15a822cd5e662f0cc208dd1a35493ccf718ea02ec8f5526ec04e14",
+    "research/20260908_正式成绩与公开946对比/源码机械对照.json": "c9f8394cb9afb82f7b03733b5046e4e83eb784defc7658be3f334b44f1a3d9d0",
+    "research/20260908_正式成绩与公开946对比/平台观察.json": "0c201ae47afabba7f9654e24c62e64a7b53622de5ef7f363acfa23372426911c",
+    "experiments/V21A/evidence.json": "d25c11c7817883510312a85ca409bf4f22fc37d8b729b718ed5900cac996364a"
+  },
+  "budget_limits": {
+    "new_notebooks": 3,
+    "save_requests": 4,
+    "submission_requests": 3,
+    "shared_repairs": 1,
+    "per_object_submission": 1
+  },
+  "budget_policy": "请求前原子落账；不确定响应只读核实；最多一次已确定工程故障的最小修复，预算含失败。实时平台剩余额度为更低硬上限。",
+  "execution_order": [
+    "B0",
+    "C1",
+    "C2"
+  ],
+  "hypotheses": {
+    "B0": "公开原版复现；自己的正式成绩才是基线",
+    "C1": "仅将重复XY视角改为反对角线，同步两检测和主特征逆变换",
+    "C2": "B0视角不变，复用已有次模型编码做次特征逆变换均值，原权重不变"
+  },
+  "arms": {
+    "B0": {
+      "ref": "sailorren/biohub-946-b0-repro-20260908",
+      "source_sha256": "c4bfcd8d765c67d35435876b3f3eb7bb810e20556479a918143451e2c61f849c",
+      "metadata_sha256": "de8a3c54a515315b1c18803d3a1b5fbf9c42777f9fbc400aed66d169797889e2",
+      "algorithm_sha256": "49613ad0b50ac90c3e07e3f8a803f2adf0926203be3f4a97d577c60b8f756178",
+      "cell_source_sha256": [
+        "4287b1b08b202ca561790489b6cf5941381b3fccfca40bf060239ae22ea3b132",
+        "64bf335d2ea9f1dea62e2e7b3ad3b94205a775e8c5a53515d94bea3b6c655ba2",
+        "6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643",
+        "681232942fbb971dc1b999816b32c6d91da819e55d123b359b601169dd5982fb",
+        "0c9219ab51b8793a8d05c469221a29ebc4d1379458c28d1ba41db08bd57575a6",
+        "ab3be142f357c1eb8e25c40537af64d1b95e4d60b8735afdd533781f6dfb7f9c",
+        "239f51c30606f090e1fbc939a541891cef2dbea45d7b1c4a6fef53352e94759d",
+        "0083b9cd0b94cabba7c28f12bf8d80f6eda4a982d1f6f44ead0975ea0de89e92",
+        "3988c72818365e0cf42169df1d42d3d64e64a6f2815a42255a04222523936349",
+        "2e658927d77b92f79dbb5ac701cdb25ea0eef35e5c4901ed69d00a5aa932eae4",
+        "035037debb8d20a189d59efb74e42b59165172bd0a181e16947ff79c6d6f3c2f",
+        "974767da6156ddf12c5b2d1351b13658f160d0b859a36deb9614441c006537ba",
+        "de5b8e39238b894f8d2aed2660e7e3e2ac74b4edfea04dd6ccee470555e9d58a"
+      ]
+    },
+    "C1": {
+      "ref": "sailorren/biohub-946-c1-xy8-20260908",
+      "source_sha256": "d3264807b20259b86a297a96f258640e7f752830c21f990f52be4c883a628341",
+      "metadata_sha256": "706b027b03949080e1c014ca35b0d01a120772fce7972e8660673e8d081e71aa",
+      "algorithm_sha256": "ab2dbfc1b6a078d088b29b912f0cd28dbb84fdb8c024cb09d54030eb15325b72",
+      "cell_source_sha256": [
+        "4287b1b08b202ca561790489b6cf5941381b3fccfca40bf060239ae22ea3b132",
+        "64bf335d2ea9f1dea62e2e7b3ad3b94205a775e8c5a53515d94bea3b6c655ba2",
+        "6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643",
+        "681232942fbb971dc1b999816b32c6d91da819e55d123b359b601169dd5982fb",
+        "26eebf062c90c29ad13a6b99803cdeeebbedf02102b78b0d5a2b2c0266d0679e",
+        "ab3be142f357c1eb8e25c40537af64d1b95e4d60b8735afdd533781f6dfb7f9c",
+        "239f51c30606f090e1fbc939a541891cef2dbea45d7b1c4a6fef53352e94759d",
+        "0083b9cd0b94cabba7c28f12bf8d80f6eda4a982d1f6f44ead0975ea0de89e92",
+        "3988c72818365e0cf42169df1d42d3d64e64a6f2815a42255a04222523936349",
+        "2e658927d77b92f79dbb5ac701cdb25ea0eef35e5c4901ed69d00a5aa932eae4",
+        "035037debb8d20a189d59efb74e42b59165172bd0a181e16947ff79c6d6f3c2f",
+        "974767da6156ddf12c5b2d1351b13658f160d0b859a36deb9614441c006537ba",
+        "de5b8e39238b894f8d2aed2660e7e3e2ac74b4edfea04dd6ccee470555e9d58a"
+      ]
+    },
+    "C2": {
+      "ref": "sailorren/biohub-946-c2-secondary-edge-tta-20260908",
+      "source_sha256": "a7177ccf303152180357ac6f7d23efefec1aa8ab8206bd3bdc99d1efa19b1de6",
+      "metadata_sha256": "7ebfe86f43956074cc73a7b6ba8847b0fc0e60add06dd0016ee936fa23c35fd3",
+      "algorithm_sha256": "f21ed2d7e60fb33789161631ee4a64d363634dac90902851595d2898e75c12d2",
+      "cell_source_sha256": [
+        "4287b1b08b202ca561790489b6cf5941381b3fccfca40bf060239ae22ea3b132",
+        "64bf335d2ea9f1dea62e2e7b3ad3b94205a775e8c5a53515d94bea3b6c655ba2",
+        "6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643",
+        "681232942fbb971dc1b999816b32c6d91da819e55d123b359b601169dd5982fb",
+        "f558e92e7bc7278faa056d6bdc432f26869dfaf8c34ebc1f079e329e98bd1017",
+        "ab3be142f357c1eb8e25c40537af64d1b95e4d60b8735afdd533781f6dfb7f9c",
+        "239f51c30606f090e1fbc939a541891cef2dbea45d7b1c4a6fef53352e94759d",
+        "0083b9cd0b94cabba7c28f12bf8d80f6eda4a982d1f6f44ead0975ea0de89e92",
+        "3988c72818365e0cf42169df1d42d3d64e64a6f2815a42255a04222523936349",
+        "2e658927d77b92f79dbb5ac701cdb25ea0eef35e5c4901ed69d00a5aa932eae4",
+        "035037debb8d20a189d59efb74e42b59165172bd0a181e16947ff79c6d6f3c2f",
+        "974767da6156ddf12c5b2d1351b13658f160d0b859a36deb9614441c006537ba",
+        "de5b8e39238b894f8d2aed2660e7e3e2ac74b4edfea04dd6ccee470555e9d58a"
+      ]
+    }
+  },
+  "fixed_inputs": {
+    "id": "sailorren/biohub-946-b0-repro-20260908",
+    "title": "biohub-946-b0-repro-20260908",
+    "code_file": "candidate.ipynb",
+    "language": "python",
+    "kernel_type": "notebook",
+    "is_private": true,
+    "enable_gpu": true,
+    "enable_tpu": false,
+    "enable_internet": false,
+    "machine_shape": "NvidiaTeslaT4",
+    "docker_image_pinning_type": "original",
+    "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+    "dataset_sources": [
+      "pilkwang/biohub-deepcenter-unet3d-center-prior-v1/5",
+      "pilkwang/biohub-temporal-unet3d-seed314159-v1/2",
+      "pilkwang/biohub-tracking-support-pack-50ep-v1/10"
+    ],
+    "competition_sources": [
+      "biohub-cell-tracking-during-development"
+    ],
+    "kernel_sources": [],
+    "model_sources": []
+  },
+  "common_algorithm": {
+    "primary_detection_threshold": 0.965,
+    "secondary_detection_weight": 0.8,
+    "secondary_edge_weight": 0.15,
+    "secondary_edge_mode": "low_margin_consensus",
+    "frame_retention": 0.9,
+    "harmonic_reverse_weight": 0.15,
+    "GAP_CLOSE_UM": 5.0,
+    "deepcenter_safe_div_threshold": 0.25,
+    "safe_div_parent_um": 9.0,
+    "safe_div_sister_um": 14.0,
+    "ILP_costs": [
+      -1.0,
+      0.0,
+      2.0,
+      1.2
+    ],
+    "base_motion_tight_um": 6.0,
+    "postprocessing": "原8 FOV、7单候选、原条件组合、原自动选择及最终重写保留；不写死5.5",
+    "selection_margin": 0.001,
+    "max_adjusted_loss": 0.0005
+  },
+  "comparison_policy": {
+    "own_best_at_start": {
+      "id": 56069192,
+      "date_utc": "2026-09-07 04:56:50.697000",
+      "description": "V21A parent9 dc026 | Version 1 | SV 347862850 | SHA256 9537aa87092fe2e0d130b9b23ffffb9796b6d6ee2d29b366c09bebce044223e0",
+      "status": "COMPLETE",
+      "public_score": "0.942",
+      "error_description": ""
+    },
+    "also_refresh_current_own_best": true,
+    "public_score_reference": 0.946,
+    "public_reference_is_not_own_baseline": true,
+    "no_score_gain_claim_without_formal_score": true,
+    "postprocessing_interaction": "报告各对象实际选择；跨对象分差不能自动归因于纯边概率变化"
+  },
+  "audit_scope": "相同审计每视频前3窗内首次可用关联做1次额外edge-head诊断，0新增encoder；不用于生产预测。原12cell除共同注入可逐字恢复。",
+  "frozen_files": {
+    "experiments/PUBLIC946_TTA_20260908/build_candidates.py": "b3d3242ba98f56d2de25de692e606b80e1d6eebf27f4e947e06a97766f84f88b",
+    "experiments/PUBLIC946_TTA_20260908/tta_patch.py": "23787f55efecbc5676470ef32fa56a51c4b2f8b0343fcb8f909bb1771cf5ae04",
+    "experiments/PUBLIC946_TTA_20260908/runtime_audit.py": "725438b33f64f77617713c4ce20b5fdb2c16b24ecec452cfa7ded9af786d5ce1",
+    "experiments/PUBLIC946_TTA_20260908/final_audit.py": "111ceddb7bdd29acfbd05ee7ff269d610ee9d84d57690d6e406846f5ede18b0b",
+    "experiments/PUBLIC946_TTA_20260908/tests/test_tta_transforms.py": "7976a9b8d1c2949369fca8ec608605a399f90b110c34ebccafaed1192f02ed8c",
+    "experiments/PUBLIC946_TTA_20260908/test_results.json": "e1123c326160f68bc5fa3ec90f2d6586184612190c9d350a8da0f6bdf238e772",
+    "experiments/PUBLIC946_TTA_20260908/final_audit_self_test.json": "821cff896b71722662b7787085b4997291078f8d17851e328272cad31984fd63",
+    "experiments/PUBLIC946_TTA_20260908/dynamic_patch_execution.json": "b22e38de24d51451ad6fb27ecf5a3a26cbd92dac051eaf4f22ef9e349236f92e",
+    "experiments/PUBLIC946_TTA_20260908/build_receipt.json": "008ba0b200a3a0ba07073b04e892e31808a55327b3f879ae5968f02a34bb77d4",
+    "experiments/PUBLIC946_TTA_20260908/preflight.json": "965e5fe6596ecc9f755258421a71fb69fb957886d9af96798fccc433dd0363eb",
+    "experiments/PUBLIC946_TTA_20260908/B0/candidate.ipynb": "c4bfcd8d765c67d35435876b3f3eb7bb810e20556479a918143451e2c61f849c",
+    "experiments/PUBLIC946_TTA_20260908/B0/kernel-metadata.json": "de8a3c54a515315b1c18803d3a1b5fbf9c42777f9fbc400aed66d169797889e2",
+    "experiments/PUBLIC946_TTA_20260908/B0/source_review.json": "6a77f5fd863643c17e8538b508f0bf5691d444fa123079a3caba17071507eba4",
+    "experiments/PUBLIC946_TTA_20260908/B0/algorithm.diff": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/PUBLIC946_TTA_20260908/C1/candidate.ipynb": "d3264807b20259b86a297a96f258640e7f752830c21f990f52be4c883a628341",
+    "experiments/PUBLIC946_TTA_20260908/C1/kernel-metadata.json": "706b027b03949080e1c014ca35b0d01a120772fce7972e8660673e8d081e71aa",
+    "experiments/PUBLIC946_TTA_20260908/C1/source_review.json": "0dd50777558b65bc503c74d0003a7f91e20329b4af075b61d0a632a61c3d64e5",
+    "experiments/PUBLIC946_TTA_20260908/C1/algorithm.diff": "66ee99e9c96b037e75215bfe2a939a00df2f8605671ebd8e762e48aca6b3f339",
+    "experiments/PUBLIC946_TTA_20260908/C2/candidate.ipynb": "a7177ccf303152180357ac6f7d23efefec1aa8ab8206bd3bdc99d1efa19b1de6",
+    "experiments/PUBLIC946_TTA_20260908/C2/kernel-metadata.json": "7ebfe86f43956074cc73a7b6ba8847b0fc0e60add06dd0016ee936fa23c35fd3",
+    "experiments/PUBLIC946_TTA_20260908/C2/source_review.json": "f57bc048057320e3796d20751be33a692330fce187fd6d339a1d5ab7955a77cb",
+    "experiments/PUBLIC946_TTA_20260908/C2/algorithm.diff": "2bdc857ae0b16c25b22a34bc6553789ec744bfd4d4551e2a625380343e8fde28"
+  },
+  "acceptance": [
+    {
+      "id": "six-task-gates",
+      "type": "command",
+      "required": true,
+      "argv": [
+        "python3",
+        "experiments/PUBLIC946_TTA_20260908/verify.py",
+        "--final"
+      ],
+      "cwd": ".",
+      "expected_exit": 0,
+      "timeout_seconds": 120
+    },
+    {
+      "id": "report",
+      "type": "file",
+      "required": true,
+      "path": "reports/20260908_PUBLIC946_TTA_OPTIMIZATION_RESULT.md",
+      "min_bytes": 1000,
+      "contains_all": [
+        "B0",
+        "C1",
+        "C2",
+        "正式",
+        "后处理",
+        "GitHub"
+      ]
+    },
+    {
+      "id": "git-remote",
+      "type": "git",
+      "required": true,
+      "repository": ".",
+      "require_commit": true,
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true,
+      "remote": "origin"
+    }
+  ]
+}

@@ -1,0 +1,683 @@
+{
+  "operation": "READ_ONLY_PREFLIGHT",
+  "observed_at_utc": "2026-09-08T03:18:40.447196+00:00",
+  "principal": "sailorren",
+  "initial_read_error": "Earlier sandbox-only import attempted auth introspection and failed DNS; no platform write was attempted.",
+  "master": {
+    "ref": "redoctopusk/biohub-942tta",
+    "kernel_id": 133372183,
+    "version": 1,
+    "sha256": "521cb97f0f457643379a51b60c4f71e3f4cc7d1823fd98cbb97633ffaa515ec4",
+    "bytes": 213474,
+    "dataset_sources": [
+      "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+      "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+      "pilkwang/biohub-tracking-support-pack-50ep-v1"
+    ],
+    "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+    "machine_shape": "NvidiaTeslaT4",
+    "enable_internet": false
+  },
+  "gpu_quota": {
+    "used_hours": 6.8988852777777785,
+    "total_hours": 30.0,
+    "remaining_hours": 23.101114722222224,
+    "refresh_at": "2026-09-12 00:00:00"
+  },
+  "competition": {
+    "ref": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development",
+    "title": "Biohub - Cell Tracking During Development",
+    "max_daily_submissions": 5,
+    "submissions_disabled": false,
+    "user_has_entered": true,
+    "is_kernels_submissions_only": true
+  },
+  "submissions": [
+    {
+      "id": 56087974,
+      "date_utc": "2026-09-08 01:20:28",
+      "description": "Notebook Biohub Harmonic Fusion | Version 1",
+      "status": "PENDING",
+      "public_score": null,
+      "error_description": ""
+    },
+    {
+      "id": 56069192,
+      "date_utc": "2026-09-07 04:56:50.697000",
+      "description": "V21A parent9 dc026 | Version 1 | SV 347862850 | SHA256 9537aa87092fe2e0d130b9b23ffffb9796b6d6ee2d29b366c09bebce044223e0",
+      "status": "COMPLETE",
+      "public_score": "0.942",
+      "error_description": ""
+    },
+    {
+      "id": 56066361,
+      "date_utc": "2026-09-07 01:33:01.517000",
+      "description": "Notebook Biohub  LB 942 | Version 1",
+      "status": "COMPLETE",
+      "public_score": "0.942",
+      "error_description": ""
+    },
+    {
+      "id": 56066312,
+      "date_utc": "2026-09-07 01:29:36.053000",
+      "description": "Notebook biohub-run77 | Version 1",
+      "status": "COMPLETE",
+      "public_score": "0.942",
+      "error_description": ""
+    },
+    {
+      "id": 56025033,
+      "date_utc": "2026-09-05 04:44:43.573000",
+      "description": "Notebook .941_biohub-fresh-adaptive-assoc | Version 1",
+      "status": "COMPLETE",
+      "public_score": "0.941",
+      "error_description": ""
+    },
+    {
+      "id": 56002593,
+      "date_utc": "2026-09-04 01:46:40.747000",
+      "description": "Notebook biohub-v19c-dualwide-9-14-2-25 | Version 1",
+      "status": "COMPLETE",
+      "public_score": "0.940",
+      "error_description": ""
+    },
+    {
+      "id": 55978992,
+      "date_utc": "2026-09-03 09:54:56.607000",
+      "description": "Notebook biohub-v19c-public0939-sis14-only | Version 1",
+      "status": "COMPLETE",
+      "public_score": "0.939",
+      "error_description": ""
+    },
+    {
+      "id": 55976559,
+      "date_utc": "2026-09-03 07:05:14.430000",
+      "description": "Notebook biohub-div45-stack | Version 1",
+      "status": "COMPLETE",
+      "public_score": "0.938",
+      "error_description": ""
+    },
+    {
+      "id": 55976471,
+      "date_utc": "2026-09-03 06:59:30.487000",
+      "description": "Notebook skkd | Version 1",
+      "status": "COMPLETE",
+      "public_score": "0.938",
+      "error_description": ""
+    },
+    {
+      "id": 55311118,
+      "date_utc": "2026-08-07 01:34:26.140000",
+      "description": "Notebook Biohub Solution | Version 1",
+      "status": "COMPLETE",
+      "public_score": "0.885",
+      "error_description": ""
+    }
+  ],
+  "current_own_best": {
+    "id": 56069192,
+    "date_utc": "2026-09-07 04:56:50.697000",
+    "description": "V21A parent9 dc026 | Version 1 | SV 347862850 | SHA256 9537aa87092fe2e0d130b9b23ffffb9796b6d6ee2d29b366c09bebce044223e0",
+    "status": "COMPLETE",
+    "public_score": "0.942",
+    "error_description": ""
+  },
+  "today_submission_count_utc": 1,
+  "duplicate_checks": {
+    "B0": {
+      "exists": null,
+      "error_type": "HTTPError",
+      "http_status": 403
+    },
+    "C1": {
+      "exists": null,
+      "error_type": "HTTPError",
+      "http_status": 403
+    },
+    "C2": {
+      "exists": null,
+      "error_type": "HTTPError",
+      "http_status": 403
+    }
+  },
+  "support_file_inventory": {
+    "datasetFiles": [
+      {
+        "name": "ARTIFACT_MANIFEST.json",
+        "creationDate": "2026-07-08T22:42:14.487Z",
+        "totalBytes": 4376
+      },
+      {
+        "name": "README.md",
+        "creationDate": "2026-07-08T22:42:14.701Z",
+        "totalBytes": 1729
+      },
+      {
+        "name": "kaggle_dependency_install_command.txt",
+        "creationDate": "2026-07-08T22:42:14.593Z",
+        "totalBytes": 119
+      },
+      {
+        "name": "repo/scripts/augmentations.py",
+        "creationDate": "2026-07-08T22:42:14.739Z",
+        "totalBytes": 1958
+      },
+      {
+        "name": "repo/scripts/dataspec.py",
+        "creationDate": "2026-07-08T22:42:14.712Z",
+        "totalBytes": 1229
+      },
+      {
+        "name": "repo/scripts/evaluate.py",
+        "creationDate": "2026-07-08T22:42:14.712Z",
+        "totalBytes": 6835
+      },
+      {
+        "name": "repo/scripts/predict_unet_transformer.py",
+        "creationDate": "2026-07-08T22:42:14.759Z",
+        "totalBytes": 26008
+      },
+      {
+        "name": "repo/scripts/train_unet_transformer.py",
+        "creationDate": "2026-07-08T22:42:14.723Z",
+        "totalBytes": 49438
+      },
+      {
+        "name": "repo/src/biohub_tracking/__init__.py",
+        "creationDate": "2026-07-08T22:42:14.746Z",
+        "totalBytes": 86
+      },
+      {
+        "name": "repo/src/biohub_tracking/division_metrics.py",
+        "creationDate": "2026-07-08T22:42:14.718Z",
+        "totalBytes": 15872
+      },
+      {
+        "name": "repo/src/biohub_tracking/img_proc.py",
+        "creationDate": "2026-07-08T22:42:14.722Z",
+        "totalBytes": 5319
+      },
+      {
+        "name": "repo/src/biohub_tracking/io.py",
+        "creationDate": "2026-07-08T22:42:14.781Z",
+        "totalBytes": 13485
+      },
+      {
+        "name": "repo/src/biohub_tracking/metrics.py",
+        "creationDate": "2026-07-08T22:42:15.479Z",
+        "totalBytes": 15843
+      },
+      {
+        "name": "repo/src/biohub_tracking/models/__init__.py",
+        "creationDate": "2026-07-08T22:42:14.785Z",
+        "totalBytes": 246
+      },
+      {
+        "name": "repo/src/biohub_tracking/models/simple_node_transformer.py",
+        "creationDate": "2026-07-08T22:42:14.852Z",
+        "totalBytes": 7229
+      },
+      {
+        "name": "repo/src/biohub_tracking/models/temporal_unet.py",
+        "creationDate": "2026-07-08T22:42:14.829Z",
+        "totalBytes": 5112
+      },
+      {
+        "name": "requirements-unet-ilp-kaggle-predownload.txt",
+        "creationDate": "2026-07-08T22:42:14.603Z",
+        "totalBytes": 439
+      },
+      {
+        "name": "requirements-unet-ilp.txt",
+        "creationDate": "2026-07-08T22:42:14.667Z",
+        "totalBytes": 572
+      },
+      {
+        "name": "source_scripts/build_biohub_support_pack.py",
+        "creationDate": "2026-07-08T22:42:14.746Z",
+        "totalBytes": 16869
+      },
+      {
+        "name": "source_scripts/package_and_upload_support_pack_version.sh",
+        "creationDate": "2026-07-08T22:42:14.712Z",
+        "totalBytes": 5072
+      },
+      {
+        "name": "source_scripts/run_full_frame_center_training.sh",
+        "creationDate": "2026-07-08T22:42:14.692Z",
+        "totalBytes": 9458
+      },
+      {
+        "name": "source_scripts/train_full_frame_center_detector.py",
+        "creationDate": "2026-07-08T22:42:14.741Z",
+        "totalBytes": 43133
+      },
+      {
+        "name": "weights/unet_transformer/split_0/checkpoint_last.pth",
+        "creationDate": "2026-07-08T22:42:16.375Z",
+        "totalBytes": 25069651
+      },
+      {
+        "name": "weights/unet_transformer/split_0/config.json",
+        "creationDate": "2026-07-08T22:42:15.782Z",
+        "totalBytes": 165
+      },
+      {
+        "name": "weights/unet_transformer/split_0/edge_predictor_best.pth",
+        "creationDate": "2026-07-08T22:42:15.571Z",
+        "totalBytes": 8363159
+      },
+      {
+        "name": "wheels/annotated_doc-0.0.4-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:18.592Z",
+        "totalBytes": 5303
+      },
+      {
+        "name": "wheels/annotated_types-0.7.0-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:18.597Z",
+        "totalBytes": 13643
+      },
+      {
+        "name": "wheels/bidict-0.23.1-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:18.611Z",
+        "totalBytes": 32764
+      },
+      {
+        "name": "wheels/blosc2-4.7.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:18.786Z",
+        "totalBytes": 6753294
+      },
+      {
+        "name": "wheels/certifi-2026.6.17-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:18.638Z",
+        "totalBytes": 133289
+      },
+      {
+        "name": "wheels/charset_normalizer-3.4.7-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:18.632Z",
+        "totalBytes": 216589
+      },
+      {
+        "name": "wheels/click-8.4.2-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:18.649Z",
+        "totalBytes": 119243
+      },
+      {
+        "name": "wheels/cloudpickle-3.1.2-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:18.696Z",
+        "totalBytes": 22228
+      },
+      {
+        "name": "wheels/dask-2026.6.0-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:18.739Z",
+        "totalBytes": 1488995
+      },
+      {
+        "name": "wheels/deprecated-1.3.1-py2.py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:18.704Z",
+        "totalBytes": 11298
+      },
+      {
+        "name": "wheels/donfig-0.8.1.post1-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:18.707Z",
+        "totalBytes": 21592
+      },
+      {
+        "name": "wheels/fsspec-2026.6.0-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:18.709Z",
+        "totalBytes": 203949
+      },
+      {
+        "name": "wheels/geff-1.2.0.1.1-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:18.696Z",
+        "totalBytes": 68963
+      },
+      {
+        "name": "wheels/geff_spec-1.1.1-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:18.687Z",
+        "totalBytes": 14807
+      },
+      {
+        "name": "wheels/google_crc32c-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_5_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:18.693Z",
+        "totalBytes": 33364
+      },
+      {
+        "name": "wheels/greenlet-3.5.3-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:18.796Z",
+        "totalBytes": 614244
+      },
+      {
+        "name": "wheels/idna-3.18-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:18.700Z",
+        "totalBytes": 65455
+      },
+      {
+        "name": "wheels/ilpy-0.6.0-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:18.696Z",
+        "totalBytes": 32126
+      },
+      {
+        "name": "wheels/imagecodecs-2026.6.26-cp312-abi3-manylinux_2_28_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:19.445Z",
+        "totalBytes": 28855566
+      },
+      {
+        "name": "wheels/imageio-2.37.3-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:18.936Z",
+        "totalBytes": 317646
+      },
+      {
+        "name": "wheels/lazy_loader-0.5-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:18.916Z",
+        "totalBytes": 8044
+      },
+      {
+        "name": "wheels/llvmlite-0.47.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:20.390Z",
+        "totalBytes": 56275178
+      },
+      {
+        "name": "wheels/locket-1.0.0-py2.py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:19.459Z",
+        "totalBytes": 4398
+      },
+      {
+        "name": "wheels/markdown_it_py-4.2.0-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:19.204Z",
+        "totalBytes": 91687
+      },
+      {
+        "name": "wheels/mdurl-0.1.2-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:19.233Z",
+        "totalBytes": 9979
+      },
+      {
+        "name": "wheels/msgpack-1.2.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:19.202Z",
+        "totalBytes": 419989
+      },
+      {
+        "name": "wheels/ndindex-1.10.1-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:19.228Z",
+        "totalBytes": 546875
+      },
+      {
+        "name": "wheels/networkx-3.6.1-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:19.240Z",
+        "totalBytes": 2068504
+      },
+      {
+        "name": "wheels/numba-0.65.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:19.310Z",
+        "totalBytes": 3802467
+      },
+      {
+        "name": "wheels/numcodecs-0.15.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:19.417Z",
+        "totalBytes": 8879163
+      },
+      {
+        "name": "wheels/numexpr-2.14.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:19.351Z",
+        "totalBytes": 443631
+      },
+      {
+        "name": "wheels/numpy-2.4.6-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:19.716Z",
+        "totalBytes": 16645538
+      },
+      {
+        "name": "wheels/packaging-26.2-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:19.488Z",
+        "totalBytes": 100195
+      },
+      {
+        "name": "wheels/partd-1.4.2-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:19.585Z",
+        "totalBytes": 18905
+      },
+      {
+        "name": "wheels/pillow-12.2.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:19.592Z",
+        "totalBytes": 7087215
+      },
+      {
+        "name": "wheels/polars-1.42.0-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:19.533Z",
+        "totalBytes": 836855
+      },
+      {
+        "name": "wheels/polars_runtime_32-1.42.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:22.053Z",
+        "totalBytes": 57299346
+      },
+      {
+        "name": "wheels/psygnal-0.15.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:20.006Z",
+        "totalBytes": 889770
+      },
+      {
+        "name": "wheels/pyarrow-24.0.0-cp312-cp312-manylinux_2_28_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:21.309Z",
+        "totalBytes": 48863122
+      },
+      {
+        "name": "wheels/pydantic-2.13.4-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:20.296Z",
+        "totalBytes": 472262
+      },
+      {
+        "name": "wheels/pydantic_core-2.46.4-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:20.318Z",
+        "totalBytes": 2094516
+      },
+      {
+        "name": "wheels/pygments-2.20.0-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:20.318Z",
+        "totalBytes": 1231151
+      },
+      {
+        "name": "wheels/pyscipopt-6.2.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:20.768Z",
+        "totalBytes": 17566755
+      },
+      {
+        "name": "wheels/pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:20.447Z",
+        "totalBytes": 807870
+      },
+      {
+        "name": "wheels/requests-2.34.2-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:20.438Z",
+        "totalBytes": 73075
+      },
+      {
+        "name": "wheels/rich-15.0.0-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:20.440Z",
+        "totalBytes": 310654
+      },
+      {
+        "name": "wheels/rustworkx-0.18.0-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:20.489Z",
+        "totalBytes": 2391659
+      },
+      {
+        "name": "wheels/scikit_image-0.26.0-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:20.835Z",
+        "totalBytes": 13561683
+      },
+      {
+        "name": "wheels/scipy-1.18.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:21.472Z",
+        "totalBytes": 35287115
+      },
+      {
+        "name": "wheels/shellingham-1.5.4-py2.py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:20.792Z",
+        "totalBytes": 9755
+      },
+      {
+        "name": "wheels/sqlalchemy-2.0.51-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:21.272Z",
+        "totalBytes": 3358470
+      },
+      {
+        "name": "wheels/threadpoolctl-3.6.0-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:20.800Z",
+        "totalBytes": 18638
+      },
+      {
+        "name": "wheels/tifffile-2026.6.1-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:20.796Z",
+        "totalBytes": 267108
+      },
+      {
+        "name": "wheels/toolz-1.1.0-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:20.805Z",
+        "totalBytes": 58093
+      },
+      {
+        "name": "wheels/tqdm-4.68.3-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:21.391Z",
+        "totalBytes": 78337
+      },
+      {
+        "name": "wheels/tracksdata-0.1.0rc6.dev3+g980c2d30a-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:20.796Z",
+        "totalBytes": 278481
+      },
+      {
+        "name": "wheels/typer-0.26.8-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:20.882Z",
+        "totalBytes": 122564
+      },
+      {
+        "name": "wheels/typing_extensions-4.15.0-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:20.797Z",
+        "totalBytes": 44614
+      },
+      {
+        "name": "wheels/typing_inspection-0.4.2-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:20.792Z",
+        "totalBytes": 14611
+      },
+      {
+        "name": "wheels/urllib3-2.7.0-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:20.830Z",
+        "totalBytes": 131087
+      },
+      {
+        "name": "wheels/wrapt-2.2.2-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl",
+        "creationDate": "2026-07-08T22:42:20.848Z",
+        "totalBytes": 169828
+      },
+      {
+        "name": "wheels/zarr-3.2.1-py3-none-any.whl",
+        "creationDate": "2026-07-08T22:42:20.827Z",
+        "totalBytes": 319617
+      }
+    ]
+  },
+  "support_source_readback": {
+    "version": 10,
+    "observed_at_utc": "2026-09-08T03:20:44.884056+00:00",
+    "files": [
+      {
+        "name": "ARTIFACT_MANIFEST.json",
+        "sha256": "bc20f1f04cfb682af3b27a836ce9a57f44a2fe27508dc59039200b2a23188103",
+        "bytes": 4376
+      },
+      {
+        "name": "repo/scripts/augmentations.py",
+        "sha256": "13db09817bf492f8d0f710a0a4d09776320b262060167055090a303fc6057f4e",
+        "bytes": 1958
+      },
+      {
+        "name": "repo/scripts/dataspec.py",
+        "sha256": "e69bf952fb985477ac50ff8598a35020c95d20a035a09b81ab4056e655dd311f",
+        "bytes": 1229
+      },
+      {
+        "name": "repo/scripts/evaluate.py",
+        "sha256": "614813cc51c3581c6ccda4bb20725a19da8ecac4a27620654bfca58319cffa3c",
+        "bytes": 6835
+      },
+      {
+        "name": "repo/scripts/predict_unet_transformer.py",
+        "sha256": "c44e771ba5980b820f93091e03a303c25dfe8f3232e501f54dc9565731c234b9",
+        "bytes": 26008
+      },
+      {
+        "name": "repo/scripts/train_unet_transformer.py",
+        "sha256": "c4f6317736bb3bb1ec8f3f6e9a6d935a463e3f0f1f685481b2d13218d35dc9ea",
+        "bytes": 49438
+      },
+      {
+        "name": "repo/src/biohub_tracking/__init__.py",
+        "sha256": "26a18d8da84e40da73281a48ebc3017d847a2e57431ab63e8629d2109e6e8571",
+        "bytes": 86
+      },
+      {
+        "name": "repo/src/biohub_tracking/division_metrics.py",
+        "sha256": "d1cf1e0a43009d02174f1699ce2aa28458a2220ac4b521731d3bcf31cf8c76be",
+        "bytes": 15872
+      },
+      {
+        "name": "repo/src/biohub_tracking/img_proc.py",
+        "sha256": "00e8ef0adc8b39f1aaaa547ea6197b906bf9e8c009e339d3e95f8f8dbf31be3f",
+        "bytes": 5319
+      },
+      {
+        "name": "repo/src/biohub_tracking/io.py",
+        "sha256": "efae135b088cecaab463d889f16c885ef6da3ad27b0747327d8ddc28d866b7bd",
+        "bytes": 13485
+      },
+      {
+        "name": "repo/src/biohub_tracking/metrics.py",
+        "sha256": "31baf45b54c78f68bab4f65dd8f4b38bca702abb644171c6df7c46cdeef55d83",
+        "bytes": 15843
+      },
+      {
+        "name": "repo/src/biohub_tracking/models/__init__.py",
+        "sha256": "ab7587ef79856bae50d24b62e5805092d0459ee1c586522b763f9ef70c093e1d",
+        "bytes": 246
+      },
+      {
+        "name": "repo/src/biohub_tracking/models/simple_node_transformer.py",
+        "sha256": "b97209edeb03840e80d903e3e2a8c81c520641c8ef343f6ca2904d0f80db064e",
+        "bytes": 7229
+      },
+      {
+        "name": "repo/src/biohub_tracking/models/temporal_unet.py",
+        "sha256": "d809c35d42f504161074ddeaaa7aee5b407e5bca7f9b4e1d5f9b2ff345666cac",
+        "bytes": 5112
+      }
+    ]
+  },
+  "duplicate_list_check": {
+    "query": "mine=true search=biohub-946-",
+    "matches": []
+  },
+  "browser_readback": {
+    "observed_at_utc": "2026-09-08T03:31:32.373961+00:00",
+    "method": "CUA visible DOM / accessibility, Codex in-app browser",
+    "master": {
+      "url": "https://www.kaggle.com/code/redoctopusk/biohub-942tta/input?scriptVersionId=347821442",
+      "version": 1,
+      "script_version_id": 347821442,
+      "score_display": "0.946",
+      "dataset_versions": [
+        5,
+        2,
+        10
+      ]
+    },
+    "duplicate_refs": {
+      "B0": "We can't find that page.",
+      "C1": "We can't find that page.",
+      "C2": "We can't find that page."
+    },
+    "caveat": "403 alone was not treated as absence proof; combined own-kernel list and each direct UI page were read."
+  }
+}

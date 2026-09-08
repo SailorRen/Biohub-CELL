@@ -1,0 +1,24 @@
+{
+  "id": "sailorren/biohub-946-c2-secondary-edge-tta-20260908",
+  "title": "biohub-946-c2-secondary-edge-tta-20260908",
+  "code_file": "candidate.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "docker_image_pinning_type": "original",
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "dataset_sources": [
+    "pilkwang/biohub-deepcenter-unet3d-center-prior-v1/5",
+    "pilkwang/biohub-temporal-unet3d-seed314159-v1/2",
+    "pilkwang/biohub-tracking-support-pack-50ep-v1/10"
+  ],
+  "competition_sources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "kernel_sources": [],
+  "model_sources": []
+}

@@ -1,0 +1,136 @@
+{
+  "cases": [
+    {
+      "actual_accept": true,
+      "case": "division_plus_isolated_node_and_reused_id_across_datasets",
+      "expected_accept": true,
+      "rejection": null,
+      "status": "PASS"
+    },
+    {
+      "actual_accept": false,
+      "case": "nonfinite_coordinate",
+      "expected_accept": false,
+      "rejection": "PUBLIC946_FINAL_AUDIT: nonfinite/negative coordinate",
+      "status": "PASS"
+    },
+    {
+      "actual_accept": false,
+      "case": "negative_coordinate",
+      "expected_accept": false,
+      "rejection": "PUBLIC946_FINAL_AUDIT: nonfinite/negative coordinate",
+      "status": "PASS"
+    },
+    {
+      "actual_accept": false,
+      "case": "fractional_time",
+      "expected_accept": false,
+      "rejection": "PUBLIC946_FINAL_AUDIT: invalid integer node time",
+      "status": "PASS"
+    },
+    {
+      "actual_accept": false,
+      "case": "duplicate_node_id",
+      "expected_accept": false,
+      "rejection": "PUBLIC946_FINAL_AUDIT: duplicate node id within dataset",
+      "status": "PASS"
+    },
+    {
+      "actual_accept": false,
+      "case": "dangling_endpoint",
+      "expected_accept": false,
+      "rejection": "PUBLIC946_FINAL_AUDIT: test_a: dangling edge",
+      "status": "PASS"
+    },
+    {
+      "actual_accept": false,
+      "case": "backward_edge",
+      "expected_accept": false,
+      "rejection": "PUBLIC946_FINAL_AUDIT: test_a: edge time is not next frame",
+      "status": "PASS"
+    },
+    {
+      "actual_accept": false,
+      "case": "nonconsecutive_time",
+      "expected_accept": false,
+      "rejection": "PUBLIC946_FINAL_AUDIT: test_a: edge time is not next frame",
+      "status": "PASS"
+    },
+    {
+      "actual_accept": false,
+      "case": "invalid_row_type",
+      "expected_accept": false,
+      "rejection": "PUBLIC946_FINAL_AUDIT: unexpected row_type",
+      "status": "PASS"
+    },
+    {
+      "actual_accept": false,
+      "case": "noncontiguous_row_id",
+      "expected_accept": false,
+      "rejection": "PUBLIC946_FINAL_AUDIT: row IDs not contiguous",
+      "status": "PASS"
+    },
+    {
+      "actual_accept": false,
+      "case": "train_only_output",
+      "expected_accept": false,
+      "rejection": "PUBLIC946_FINAL_AUDIT: {'expected_test': ['test_a', 'test_b'], 'actual': ['test_a', 'train_only']}",
+      "status": "PASS"
+    },
+    {
+      "actual_accept": false,
+      "case": "duplicate_semantic_edge_row",
+      "expected_accept": false,
+      "rejection": "PUBLIC946_FINAL_AUDIT: duplicate row excluding row id",
+      "status": "PASS"
+    },
+    {
+      "actual_accept": false,
+      "case": "multi_parent",
+      "expected_accept": false,
+      "rejection": "PUBLIC946_FINAL_AUDIT: test_a: invalid lineage degree",
+      "status": "PASS"
+    },
+    {
+      "actual_accept": false,
+      "case": "outdegree_three",
+      "expected_accept": false,
+      "rejection": "PUBLIC946_FINAL_AUDIT: test_a: invalid lineage degree",
+      "status": "PASS"
+    },
+    {
+      "actual_accept": false,
+      "case": "schema_order",
+      "expected_accept": false,
+      "rejection": "PUBLIC946_FINAL_AUDIT: CSV columns/order differ",
+      "status": "PASS"
+    },
+    {
+      "actual_accept": false,
+      "case": "missing_test_dataset",
+      "expected_accept": false,
+      "rejection": "PUBLIC946_FINAL_AUDIT: {'expected_test': ['test_a', 'test_b', 'test_c'], 'actual': ['test_a', 'test_b']}",
+      "status": "PASS"
+    }
+  ],
+  "postprocess_configuration_test": {
+    "base_global_unchanged": 6.0,
+    "configured_gap": 2,
+    "original_clamp": 1,
+    "selected_final_typed_value": 5.5,
+    "status": "PASS"
+  },
+  "scope": "actual shared CSV/config validators; no models or platform calls",
+  "status": "PASS",
+  "whole_hook_synthetic_integration": {
+    "status": "PASS",
+    "unchanged_submission": true,
+    "unchanged_config": true,
+    "final_rows": 3,
+    "final_pp_override": 5.5,
+    "temporary_receipt_json_bytes": 9436,
+    "test_assets": "synthetic temporary files only",
+    "model_or_platform_calls": 0
+  },
+  "source_sha256": "111ceddb7bdd29acfbd05ee7ff269d610ee9d84d57690d6e406846f5ede18b0b"
+}

@@ -1,0 +1,5350 @@
+{
+  "task_id": "PUBLIC946_TTA_20260908",
+  "observed_at_utc": "2026-09-08T03:28:08.891561+00:00",
+  "status": "PASS",
+  "python": "3.11.14 (main, Oct 21 2025, 18:27:30) [Clang 20.1.8 ]",
+  "torch": "2.10.0",
+  "numpy": "2.4.2",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "device": "cpu",
+  "gpu_smoke": "NOT_RUN_LOCAL_CPU_TEST",
+  "environment_resolution": {
+    "initial_default_import": "FAILED_DUPLICATE_OPENMP_RUNTIME",
+    "resolution": "Process-only DYLD_LIBRARY_PATH=/opt/anaconda3/envs/ml/lib selects one existing libomp; no packages or global settings changed.",
+    "KMP_DUPLICATE_LIB_OK": "NOT_USED"
+  },
+  "checks": {
+    "dynamic_expansion": {
+      "status": "PASS",
+      "public": [
+        {
+          "label": "eight_detection_views",
+          "matches": 1,
+          "old_sha256": "7d08c964ec364537dc3fb5b2c2d6e705050c2a45f198e904e329f5eb218678ab",
+          "new_sha256": "c60c2a2ec688b1de8e60d7731cf07a86a02bf08097c9bda1801722e35f4b75f7",
+          "result_sha256": "8fabe4c7c8dca4794c6ac22094ee28cb5dea8e055a6c6b01d40252bc3477f2d8"
+        },
+        {
+          "label": "ensemble_1",
+          "matches": 1,
+          "old_sha256": "1d801982990f9e4c77b6ad71027a5c751cf13e472eee0b01a01052baa1a0e3dc",
+          "new_sha256": "3595018564e44a44f6fe21a6e5cb92e715e56ab8ff4dffacbd7ec6e1d35d3a64",
+          "result_sha256": "7927c9647382ad0dcd14202bfd19e08c5d162b4257e845a14885dc9e5cc050c7"
+        },
+        {
+          "label": "ensemble_2",
+          "matches": 1,
+          "old_sha256": "4c24b9e617d82c9351a7f11d0f4df7325ad0af52325bba42ffbbc4c0b3358714",
+          "new_sha256": "7016356da30a07be020e5028def301ea9a479bd09c76bdcacd6fcdf941d469e6",
+          "result_sha256": "ab17cf53af28f77c7fe1bdf5045cea2dfcaf844ee2368c5662e5cea319cfe048"
+        },
+        {
+          "label": "ensemble_3",
+          "matches": 1,
+          "old_sha256": "e08b91bf3841e904f42e2a550868a26046e03697d8d7d6af7eb1f7b932a44e17",
+          "new_sha256": "495b5eb7a60d25119043d136d680aa162dfc9253a6979de6311a62e897c83f64",
+          "result_sha256": "60bfc6308050f0b8bd49c8f852a25801fe3855e7bbaf2392f1ec78ca214640c1"
+        },
+        {
+          "label": "ensemble_4",
+          "matches": 1,
+          "old_sha256": "0e5f87efdcfd12c404b23711e9b09e1fa5d02b421dc3bc098826407b0839595a",
+          "new_sha256": "b5bfce8a6be2cf4dceb9e520a30ba30bfa1274d41ba28039e6ec76e338bf90a0",
+          "result_sha256": "ecbdf5f895fd315ea64be18a6538169f4da42b81af523cec962b1c32377f280f"
+        },
+        {
+          "label": "ensemble_5",
+          "matches": 1,
+          "old_sha256": "de301b59b86228638fc1c3d7fee529d381b567d54c8ad7d5272c2434cf9265df",
+          "new_sha256": "47f23e3a40f7996ed55a05faf348a1fcee7086af993376a2f061b93a4f1d8f7d",
+          "result_sha256": "4c3d0e82bfcd76091404c6e709cee90e4072ad5a9a70a3ada21c0d22a8677f85"
+        },
+        {
+          "label": "ensemble_6",
+          "matches": 1,
+          "old_sha256": "bb394ccc902e35c2aea8c899b1c0f737d97ae9dd10e94d33da0f35396ea5529e",
+          "new_sha256": "c5048c16af0188a1a6bcdeb839183dc78e5ce559fc9fe2d854a7e958dfe11cbd",
+          "result_sha256": "797ecf2875a1407b7ec0dc128ea0d121d0e72bae7c9ee801bbadd2d5be7f137c"
+        },
+        {
+          "label": "frame_retention",
+          "matches": 1,
+          "old_sha256": "4eb0a8df00c2a89867822550dd2ed8c11dfd2599365d17f0a478a1cd2ce31b42",
+          "new_sha256": "065c0130a4a65340bbe00603076b1a80442061e6583eb339025abd79d1799bb7",
+          "result_sha256": "487010ee2751ea128af438e69400a0c17bee8ec62ff3ebc2d1e97e6ed4ff111f"
+        },
+        {
+          "label": "harmonic_bidirectional",
+          "matches": 1,
+          "old_sha256": "254f202dd4633c97e31c9ce9f1027c0c01c9c42149e4c52d796ffbb6a898166d",
+          "new_sha256": "945bd3bade9d5f785a61f05d91b449d8cd4a1ce3cbf4ea511c3ab8656d4c19f7",
+          "result_sha256": "25b3ebfd8849dcf5abeff9ed3f0d57269a4b979365c989d6f78db1e5002d5219"
+        },
+        {
+          "label": "coordinate_manifest",
+          "matches": 1,
+          "old_sha256": "fd3d141c5995639525d20860200eed991273cfa20cbcbe5dc3eab820a6e3196c",
+          "new_sha256": "89a3fcd46cdf5cd5779f12d7d98616831a228d63d88694759e374e010b4349fa",
+          "result_sha256": "8e7ac19e8b436d6777576b7ea2269464c4ed8842990b45448d40bf178f8f62de"
+        },
+        {
+          "label": "primary_edge_feature_tta",
+          "matches": 1,
+          "old_sha256": "971fd35aa5ad0491860b2b7caea167f472e02332adac4eacd04b10b16ad3d217",
+          "new_sha256": "af74cd95b69d74bca0e367cddaeeb2ab91f44589d3c0bf5d97c4ac8fb5f9294e",
+          "result_sha256": "49613ad0b50ac90c3e07e3f8a803f2adf0926203be3f4a97d577c60b8f756178"
+        }
+      ],
+      "candidates": {
+        "B0": {
+          "arm": "B0",
+          "parent_sha256": "49613ad0b50ac90c3e07e3f8a803f2adf0926203be3f4a97d577c60b8f756178",
+          "algorithm_sha256": "49613ad0b50ac90c3e07e3f8a803f2adf0926203be3f4a97d577c60b8f756178",
+          "expanded_sha256": "49613ad0b50ac90c3e07e3f8a803f2adf0926203be3f4a97d577c60b8f756178",
+          "audit_enabled": false,
+          "replacements": [],
+          "audited_expanded_sha256": "7061abcc02b7c7201b34c6f7673fe4d38399a863cd2f25b08944ea496586b027",
+          "audited_replacements": [
+            {
+              "label": "audit_window_begin",
+              "matches": 1,
+              "old_sha256": "e30e3c579178ffd9f888ad0c30d899f00429f09d20c6ee06a66ae1fa1cbae105",
+              "new_sha256": "15a05fd983ee03bf3d1f321751671bfaabb777ce047768be312a863b9fff7594"
+            },
+            {
+              "label": "audit_secondary_encode_sites",
+              "matches": 5
+            },
+            {
+              "label": "audit_primary_encode_sites",
+              "matches": 5
+            },
+            {
+              "label": "audit_encoding_output",
+              "matches": 1,
+              "old_sha256": "866643849d4d31edcdd7068dddd89da03943304de8bcc7832bd3fec6b829b4ec",
+              "new_sha256": "0060e0cadfcb04b86892e2d7548095fb168e0e64e823fa09f4567087933200ad"
+            },
+            {
+              "label": "audit_actual_secondary_association",
+              "matches": 1,
+              "old_sha256": "a2d59a65deaeef505b8579e262d959d8275740abe398741cada615a24423263c",
+              "new_sha256": "0198e40d8c3ec9d49f371a65ebe2146833ea28cb9887c223ce595d9d4f3c726d"
+            },
+            {
+              "label": "audit_window_end",
+              "matches": 1,
+              "old_sha256": "0e5f87efdcfd12c404b23711e9b09e1fa5d02b421dc3bc098826407b0839595a",
+              "new_sha256": "7944c4f5b5519d56b68a68ba63d8b0c3a090fce779862fd4c9111a1988b157de"
+            }
+          ]
+        },
+        "C1": {
+          "arm": "C1",
+          "parent_sha256": "49613ad0b50ac90c3e07e3f8a803f2adf0926203be3f4a97d577c60b8f756178",
+          "algorithm_sha256": "ab2dbfc1b6a078d088b29b912f0cd28dbb84fdb8c024cb09d54030eb15325b72",
+          "expanded_sha256": "ab2dbfc1b6a078d088b29b912f0cd28dbb84fdb8c024cb09d54030eb15325b72",
+          "audit_enabled": false,
+          "replacements": [
+            {
+              "label": "primary_input_antidiagonal",
+              "matches": 1,
+              "old_sha256": "e04071cd68f44e87c23704c6e57b54d1ed3ba6c7e043412640c49d1a2d0b0d36",
+              "new_sha256": "916a89b102479fddaa703c8cc675c8799e0e5107bb191fb638775272b93565d8"
+            },
+            {
+              "label": "primary_detection_inverse_antidiagonal",
+              "matches": 1,
+              "old_sha256": "c8fc4785872ba2090ae0fff1b12ae483b676a9526ba53e7c54b368a56e5c848c",
+              "new_sha256": "99153fb1834c90c6c1670673897a54ba3ce7ad3910d8860ed74c9ef649723b83"
+            },
+            {
+              "label": "primary_feature_inverse_antidiagonal",
+              "matches": 1,
+              "old_sha256": "fce1baca5bd003ed814760aabec4e66b2252abc1641672d8df240efa5834dbd6",
+              "new_sha256": "e11d357ed56753e3794607fd56227661770d1cc0431148546f0e41dc3f8afeef"
+            },
+            {
+              "label": "secondary_input_antidiagonal",
+              "matches": 1,
+              "old_sha256": "06585efe8c11d19c7e834e7855ef7c6755e990399b79e3f6b4480b293522febe",
+              "new_sha256": "dfe8f862366c1c9ced3bb082aacd8158d2cef6e39538f03f0fc7b9702b1f572c"
+            },
+            {
+              "label": "secondary_detection_inverse_antidiagonal",
+              "matches": 1,
+              "old_sha256": "5b91cdae736c14f58629c66b34676f304556ffe7d4ce9589fdf6951000204bad",
+              "new_sha256": "67f3d41aa8215b423b5c50d4cef170f1aff11ea0fbeacc4a1a3b55d79c70327e"
+            }
+          ],
+          "audited_expanded_sha256": "a4a107c2e48818fa736baca84cf940bc595a0f92da93e9039bdbac62ff47a9da",
+          "audited_replacements": [
+            {
+              "label": "primary_input_antidiagonal",
+              "matches": 1,
+              "old_sha256": "e04071cd68f44e87c23704c6e57b54d1ed3ba6c7e043412640c49d1a2d0b0d36",
+              "new_sha256": "916a89b102479fddaa703c8cc675c8799e0e5107bb191fb638775272b93565d8"
+            },
+            {
+              "label": "primary_detection_inverse_antidiagonal",
+              "matches": 1,
+              "old_sha256": "c8fc4785872ba2090ae0fff1b12ae483b676a9526ba53e7c54b368a56e5c848c",
+              "new_sha256": "99153fb1834c90c6c1670673897a54ba3ce7ad3910d8860ed74c9ef649723b83"
+            },
+            {
+              "label": "primary_feature_inverse_antidiagonal",
+              "matches": 1,
+              "old_sha256": "fce1baca5bd003ed814760aabec4e66b2252abc1641672d8df240efa5834dbd6",
+              "new_sha256": "e11d357ed56753e3794607fd56227661770d1cc0431148546f0e41dc3f8afeef"
+            },
+            {
+              "label": "secondary_input_antidiagonal",
+              "matches": 1,
+              "old_sha256": "06585efe8c11d19c7e834e7855ef7c6755e990399b79e3f6b4480b293522febe",
+              "new_sha256": "dfe8f862366c1c9ced3bb082aacd8158d2cef6e39538f03f0fc7b9702b1f572c"
+            },
+            {
+              "label": "secondary_detection_inverse_antidiagonal",
+              "matches": 1,
+              "old_sha256": "5b91cdae736c14f58629c66b34676f304556ffe7d4ce9589fdf6951000204bad",
+              "new_sha256": "67f3d41aa8215b423b5c50d4cef170f1aff11ea0fbeacc4a1a3b55d79c70327e"
+            },
+            {
+              "label": "audit_window_begin",
+              "matches": 1,
+              "old_sha256": "e30e3c579178ffd9f888ad0c30d899f00429f09d20c6ee06a66ae1fa1cbae105",
+              "new_sha256": "15a05fd983ee03bf3d1f321751671bfaabb777ce047768be312a863b9fff7594"
+            },
+            {
+              "label": "audit_secondary_encode_sites",
+              "matches": 5
+            },
+            {
+              "label": "audit_primary_encode_sites",
+              "matches": 5
+            },
+            {
+              "label": "audit_encoding_output",
+              "matches": 1,
+              "old_sha256": "866643849d4d31edcdd7068dddd89da03943304de8bcc7832bd3fec6b829b4ec",
+              "new_sha256": "0060e0cadfcb04b86892e2d7548095fb168e0e64e823fa09f4567087933200ad"
+            },
+            {
+              "label": "audit_actual_secondary_association",
+              "matches": 1,
+              "old_sha256": "a2d59a65deaeef505b8579e262d959d8275740abe398741cada615a24423263c",
+              "new_sha256": "0198e40d8c3ec9d49f371a65ebe2146833ea28cb9887c223ce595d9d4f3c726d"
+            },
+            {
+              "label": "audit_window_end",
+              "matches": 1,
+              "old_sha256": "0e5f87efdcfd12c404b23711e9b09e1fa5d02b421dc3bc098826407b0839595a",
+              "new_sha256": "7944c4f5b5519d56b68a68ba63d8b0c3a090fce779862fd4c9111a1988b157de"
+            }
+          ]
+        },
+        "C2": {
+          "arm": "C2",
+          "parent_sha256": "49613ad0b50ac90c3e07e3f8a803f2adf0926203be3f4a97d577c60b8f756178",
+          "algorithm_sha256": "f21ed2d7e60fb33789161631ee4a64d363634dac90902851595d2898e75c12d2",
+          "expanded_sha256": "f21ed2d7e60fb33789161631ee4a64d363634dac90902851595d2898e75c12d2",
+          "audit_enabled": false,
+          "replacements": [
+            {
+              "label": "secondary_accumulator_clone_preserves_original",
+              "matches": 1,
+              "old_sha256": "d8499b452942b3c50704eab3460acadc1311fcd8972b694b32ef41d9878c859a",
+              "new_sha256": "e5d3deda1190fb59ac9be1432db74287712902a33825d5cf55ae4a4548855d93"
+            },
+            {
+              "label": "secondary_reuse_existing_encode_flip",
+              "matches": 1,
+              "old_sha256": "a3ce9c4794d7743e6e264db56bed9a44b3d759539b8845826b3a906501553bc4",
+              "new_sha256": "ff038d1308230755bf11cee5f012fa0d976247fc49d8e0bf6bb275aa713588ba"
+            },
+            {
+              "label": "secondary_accumulate_release_flip",
+              "matches": 1,
+              "old_sha256": "4c3f2368b5c4bf9e31eac4b388dc78caf9b812240545aa572326f74bc541f073",
+              "new_sha256": "46afcb2e733e1ec97a2df581f6c9cabc506ed12cc8c47395ccbedd69da08255f"
+            },
+            {
+              "label": "secondary_reuse_existing_encode_rot",
+              "matches": 1,
+              "old_sha256": "72daa856950c9e38b1ab5840d4aa4fd8b94714e3dcb01fa2d51a8759fffbe3d0",
+              "new_sha256": "79655a6a2675e607e94506c2d23f47716fc673ffb34aebd7110a42e45137f9df"
+            },
+            {
+              "label": "secondary_accumulate_release_rot",
+              "matches": 1,
+              "old_sha256": "83769c1a65acc18e56e7a420f112fa8c89e4d69e4f9ba0f22446943a776655dd",
+              "new_sha256": "7caafb95921b4c46c328e74078ca4c833ce022618f560e78cd484d5a04cac2d4"
+            },
+            {
+              "label": "secondary_reuse_existing_encode_t",
+              "matches": 1,
+              "old_sha256": "edb721fedf265494ee5e5c13ff9b18eda8af18ca7d11046907615c4fb7228740",
+              "new_sha256": "f8dcff3689f80e74d009e31fd8067b31ae5b5c585150af8aad04d7414cd5d925"
+            },
+            {
+              "label": "secondary_accumulate_release_t",
+              "matches": 1,
+              "old_sha256": "9cd4c41df976133176d34f2c51d9723d12d2402454f678b5d3490f8d0e250cc9",
+              "new_sha256": "75931f141c4589854a539c4100762c382ed895a761fce0e33d7c2e3f3695a56b"
+            },
+            {
+              "label": "secondary_reuse_existing_encode_at",
+              "matches": 1,
+              "old_sha256": "6ea6fd57913b02eb1fffc4c0d745d0cdb76a7aea6593207d0026ce010168635b",
+              "new_sha256": "1ed44aa41d3067c968202f7daf8abd20d31b770347028cfb997ba1f3538c87c8"
+            },
+            {
+              "label": "secondary_accumulate_release_at",
+              "matches": 1,
+              "old_sha256": "e3872595855eb4d9d20e6bd437e14d170b3ae9db70f2158e137b6d4518336d9c",
+              "new_sha256": "3792553b45687b84db200761451b52787e80503ce2865d230f5ad464edcb45d9"
+            },
+            {
+              "label": "secondary_average_consumed_by_existing_association",
+              "matches": 1,
+              "old_sha256": "7530c43ea00c3369bea97ebd8d8a8534afc4541d645b67b0fa7ecdee401842f7",
+              "new_sha256": "d7995df2c70b1df78e5c1139ee8d311dffad222a9f803130ac480b8ba83845f6"
+            }
+          ],
+          "audited_expanded_sha256": "2e500cfda31d519ece0b2862f51984ac111eec1358549aeaa7884eca91a96ba5",
+          "audited_replacements": [
+            {
+              "label": "secondary_accumulator_clone_preserves_original",
+              "matches": 1,
+              "old_sha256": "d8499b452942b3c50704eab3460acadc1311fcd8972b694b32ef41d9878c859a",
+              "new_sha256": "e5d3deda1190fb59ac9be1432db74287712902a33825d5cf55ae4a4548855d93"
+            },
+            {
+              "label": "secondary_reuse_existing_encode_flip",
+              "matches": 1,
+              "old_sha256": "a3ce9c4794d7743e6e264db56bed9a44b3d759539b8845826b3a906501553bc4",
+              "new_sha256": "ff038d1308230755bf11cee5f012fa0d976247fc49d8e0bf6bb275aa713588ba"
+            },
+            {
+              "label": "secondary_accumulate_release_flip",
+              "matches": 1,
+              "old_sha256": "4c3f2368b5c4bf9e31eac4b388dc78caf9b812240545aa572326f74bc541f073",
+              "new_sha256": "46afcb2e733e1ec97a2df581f6c9cabc506ed12cc8c47395ccbedd69da08255f"
+            },
+            {
+              "label": "secondary_reuse_existing_encode_rot",
+              "matches": 1,
+              "old_sha256": "72daa856950c9e38b1ab5840d4aa4fd8b94714e3dcb01fa2d51a8759fffbe3d0",
+              "new_sha256": "79655a6a2675e607e94506c2d23f47716fc673ffb34aebd7110a42e45137f9df"
+            },
+            {
+              "label": "secondary_accumulate_release_rot",
+              "matches": 1,
+              "old_sha256": "83769c1a65acc18e56e7a420f112fa8c89e4d69e4f9ba0f22446943a776655dd",
+              "new_sha256": "7caafb95921b4c46c328e74078ca4c833ce022618f560e78cd484d5a04cac2d4"
+            },
+            {
+              "label": "secondary_reuse_existing_encode_t",
+              "matches": 1,
+              "old_sha256": "edb721fedf265494ee5e5c13ff9b18eda8af18ca7d11046907615c4fb7228740",
+              "new_sha256": "f8dcff3689f80e74d009e31fd8067b31ae5b5c585150af8aad04d7414cd5d925"
+            },
+            {
+              "label": "secondary_accumulate_release_t",
+              "matches": 1,
+              "old_sha256": "9cd4c41df976133176d34f2c51d9723d12d2402454f678b5d3490f8d0e250cc9",
+              "new_sha256": "75931f141c4589854a539c4100762c382ed895a761fce0e33d7c2e3f3695a56b"
+            },
+            {
+              "label": "secondary_reuse_existing_encode_at",
+              "matches": 1,
+              "old_sha256": "6ea6fd57913b02eb1fffc4c0d745d0cdb76a7aea6593207d0026ce010168635b",
+              "new_sha256": "1ed44aa41d3067c968202f7daf8abd20d31b770347028cfb997ba1f3538c87c8"
+            },
+            {
+              "label": "secondary_accumulate_release_at",
+              "matches": 1,
+              "old_sha256": "e3872595855eb4d9d20e6bd437e14d170b3ae9db70f2158e137b6d4518336d9c",
+              "new_sha256": "3792553b45687b84db200761451b52787e80503ce2865d230f5ad464edcb45d9"
+            },
+            {
+              "label": "secondary_average_consumed_by_existing_association",
+              "matches": 1,
+              "old_sha256": "7530c43ea00c3369bea97ebd8d8a8534afc4541d645b67b0fa7ecdee401842f7",
+              "new_sha256": "d7995df2c70b1df78e5c1139ee8d311dffad222a9f803130ac480b8ba83845f6"
+            },
+            {
+              "label": "audit_window_begin",
+              "matches": 1,
+              "old_sha256": "e30e3c579178ffd9f888ad0c30d899f00429f09d20c6ee06a66ae1fa1cbae105",
+              "new_sha256": "15a05fd983ee03bf3d1f321751671bfaabb777ce047768be312a863b9fff7594"
+            },
+            {
+              "label": "audit_secondary_encode_sites",
+              "matches": 5
+            },
+            {
+              "label": "audit_primary_encode_sites",
+              "matches": 5
+            },
+            {
+              "label": "audit_encoding_output",
+              "matches": 1,
+              "old_sha256": "866643849d4d31edcdd7068dddd89da03943304de8bcc7832bd3fec6b829b4ec",
+              "new_sha256": "0060e0cadfcb04b86892e2d7548095fb168e0e64e823fa09f4567087933200ad"
+            },
+            {
+              "label": "audit_actual_secondary_association",
+              "matches": 1,
+              "old_sha256": "a2d59a65deaeef505b8579e262d959d8275740abe398741cada615a24423263c",
+              "new_sha256": "0198e40d8c3ec9d49f371a65ebe2146833ea28cb9887c223ce595d9d4f3c726d"
+            },
+            {
+              "label": "audit_window_end",
+              "matches": 1,
+              "old_sha256": "0e5f87efdcfd12c404b23711e9b09e1fa5d02b421dc3bc098826407b0839595a",
+              "new_sha256": "7944c4f5b5519d56b68a68ba63d8b0c3a090fce779862fd4c9111a1988b157de"
+            }
+          ]
+        }
+      },
+      "B0_algorithm_byte_equal_public_expansion": true,
+      "all_full_predictors_compile": true
+    },
+    "actual_transform_expressions": {
+      "status": "PASS",
+      "cases": [
+        {
+          "arm": "B0",
+          "role": "primary",
+          "shape": [
+            3,
+            5
+          ],
+          "passes": 8,
+          "unique": 7,
+          "duplicate_groups_zero_based": [
+            [
+              1,
+              7
+            ]
+          ],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 8
+        },
+        {
+          "arm": "B0",
+          "role": "primary",
+          "shape": [
+            5,
+            5
+          ],
+          "passes": 8,
+          "unique": 7,
+          "duplicate_groups_zero_based": [
+            [
+              1,
+              7
+            ]
+          ],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 8
+        },
+        {
+          "arm": "B0",
+          "role": "primary",
+          "shape": [
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "passes": 8,
+          "unique": 7,
+          "duplicate_groups_zero_based": [
+            [
+              1,
+              7
+            ]
+          ],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 8
+        },
+        {
+          "arm": "B0",
+          "role": "primary",
+          "shape": [
+            2,
+            3,
+            2,
+            4,
+            3,
+            5
+          ],
+          "passes": 8,
+          "unique": 7,
+          "duplicate_groups_zero_based": [
+            [
+              1,
+              7
+            ]
+          ],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 8
+        },
+        {
+          "arm": "B0",
+          "role": "primary",
+          "shape": [
+            2,
+            3,
+            2,
+            4,
+            7,
+            11
+          ],
+          "passes": 8,
+          "unique": 7,
+          "duplicate_groups_zero_based": [
+            [
+              1,
+              7
+            ]
+          ],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 8
+        },
+        {
+          "arm": "B0",
+          "role": "secondary",
+          "shape": [
+            3,
+            5
+          ],
+          "passes": 8,
+          "unique": 7,
+          "duplicate_groups_zero_based": [
+            [
+              1,
+              7
+            ]
+          ],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 1
+        },
+        {
+          "arm": "B0",
+          "role": "secondary",
+          "shape": [
+            5,
+            5
+          ],
+          "passes": 8,
+          "unique": 7,
+          "duplicate_groups_zero_based": [
+            [
+              1,
+              7
+            ]
+          ],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 1
+        },
+        {
+          "arm": "B0",
+          "role": "secondary",
+          "shape": [
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "passes": 8,
+          "unique": 7,
+          "duplicate_groups_zero_based": [
+            [
+              1,
+              7
+            ]
+          ],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 1
+        },
+        {
+          "arm": "B0",
+          "role": "secondary",
+          "shape": [
+            2,
+            3,
+            2,
+            4,
+            3,
+            5
+          ],
+          "passes": 8,
+          "unique": 7,
+          "duplicate_groups_zero_based": [
+            [
+              1,
+              7
+            ]
+          ],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 1
+        },
+        {
+          "arm": "B0",
+          "role": "secondary",
+          "shape": [
+            2,
+            3,
+            2,
+            4,
+            7,
+            11
+          ],
+          "passes": 8,
+          "unique": 7,
+          "duplicate_groups_zero_based": [
+            [
+              1,
+              7
+            ]
+          ],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 1
+        },
+        {
+          "arm": "C1",
+          "role": "primary",
+          "shape": [
+            3,
+            5
+          ],
+          "passes": 8,
+          "unique": 8,
+          "duplicate_groups_zero_based": [],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 8
+        },
+        {
+          "arm": "C1",
+          "role": "primary",
+          "shape": [
+            5,
+            5
+          ],
+          "passes": 8,
+          "unique": 8,
+          "duplicate_groups_zero_based": [],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 8
+        },
+        {
+          "arm": "C1",
+          "role": "primary",
+          "shape": [
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "passes": 8,
+          "unique": 8,
+          "duplicate_groups_zero_based": [],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 8
+        },
+        {
+          "arm": "C1",
+          "role": "primary",
+          "shape": [
+            2,
+            3,
+            2,
+            4,
+            3,
+            5
+          ],
+          "passes": 8,
+          "unique": 8,
+          "duplicate_groups_zero_based": [],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 8
+        },
+        {
+          "arm": "C1",
+          "role": "primary",
+          "shape": [
+            2,
+            3,
+            2,
+            4,
+            7,
+            11
+          ],
+          "passes": 8,
+          "unique": 8,
+          "duplicate_groups_zero_based": [],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 8
+        },
+        {
+          "arm": "C1",
+          "role": "secondary",
+          "shape": [
+            3,
+            5
+          ],
+          "passes": 8,
+          "unique": 8,
+          "duplicate_groups_zero_based": [],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 1
+        },
+        {
+          "arm": "C1",
+          "role": "secondary",
+          "shape": [
+            5,
+            5
+          ],
+          "passes": 8,
+          "unique": 8,
+          "duplicate_groups_zero_based": [],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 1
+        },
+        {
+          "arm": "C1",
+          "role": "secondary",
+          "shape": [
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "passes": 8,
+          "unique": 8,
+          "duplicate_groups_zero_based": [],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 1
+        },
+        {
+          "arm": "C1",
+          "role": "secondary",
+          "shape": [
+            2,
+            3,
+            2,
+            4,
+            3,
+            5
+          ],
+          "passes": 8,
+          "unique": 8,
+          "duplicate_groups_zero_based": [],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 1
+        },
+        {
+          "arm": "C1",
+          "role": "secondary",
+          "shape": [
+            2,
+            3,
+            2,
+            4,
+            7,
+            11
+          ],
+          "passes": 8,
+          "unique": 8,
+          "duplicate_groups_zero_based": [],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 1
+        },
+        {
+          "arm": "C2",
+          "role": "primary",
+          "shape": [
+            3,
+            5
+          ],
+          "passes": 8,
+          "unique": 7,
+          "duplicate_groups_zero_based": [
+            [
+              1,
+              7
+            ]
+          ],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 8
+        },
+        {
+          "arm": "C2",
+          "role": "primary",
+          "shape": [
+            5,
+            5
+          ],
+          "passes": 8,
+          "unique": 7,
+          "duplicate_groups_zero_based": [
+            [
+              1,
+              7
+            ]
+          ],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 8
+        },
+        {
+          "arm": "C2",
+          "role": "primary",
+          "shape": [
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "passes": 8,
+          "unique": 7,
+          "duplicate_groups_zero_based": [
+            [
+              1,
+              7
+            ]
+          ],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 8
+        },
+        {
+          "arm": "C2",
+          "role": "primary",
+          "shape": [
+            2,
+            3,
+            2,
+            4,
+            3,
+            5
+          ],
+          "passes": 8,
+          "unique": 7,
+          "duplicate_groups_zero_based": [
+            [
+              1,
+              7
+            ]
+          ],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 8
+        },
+        {
+          "arm": "C2",
+          "role": "primary",
+          "shape": [
+            2,
+            3,
+            2,
+            4,
+            7,
+            11
+          ],
+          "passes": 8,
+          "unique": 7,
+          "duplicate_groups_zero_based": [
+            [
+              1,
+              7
+            ]
+          ],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 8
+        },
+        {
+          "arm": "C2",
+          "role": "secondary",
+          "shape": [
+            3,
+            5
+          ],
+          "passes": 8,
+          "unique": 7,
+          "duplicate_groups_zero_based": [
+            [
+              1,
+              7
+            ]
+          ],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 8
+        },
+        {
+          "arm": "C2",
+          "role": "secondary",
+          "shape": [
+            5,
+            5
+          ],
+          "passes": 8,
+          "unique": 7,
+          "duplicate_groups_zero_based": [
+            [
+              1,
+              7
+            ]
+          ],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 8
+        },
+        {
+          "arm": "C2",
+          "role": "secondary",
+          "shape": [
+            2,
+            3,
+            4,
+            5,
+            7
+          ],
+          "passes": 8,
+          "unique": 7,
+          "duplicate_groups_zero_based": [
+            [
+              1,
+              7
+            ]
+          ],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 8
+        },
+        {
+          "arm": "C2",
+          "role": "secondary",
+          "shape": [
+            2,
+            3,
+            2,
+            4,
+            3,
+            5
+          ],
+          "passes": 8,
+          "unique": 7,
+          "duplicate_groups_zero_based": [
+            [
+              1,
+              7
+            ]
+          ],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 8
+        },
+        {
+          "arm": "C2",
+          "role": "secondary",
+          "shape": [
+            2,
+            3,
+            2,
+            4,
+            7,
+            11
+          ],
+          "passes": 8,
+          "unique": 7,
+          "duplicate_groups_zero_based": [
+            [
+              1,
+              7
+            ]
+          ],
+          "all_inverse_exact": true,
+          "leading_axes_preserved": true,
+          "feature_inverse_checks": 8
+        }
+      ]
+    },
+    "actual_encode_and_association_blocks": {
+      "status": "PASS",
+      "arms": {
+        "B0": {
+          "primary_encode_calls": 8,
+          "secondary_encode_calls": 8,
+          "primary_association_calls": 2,
+          "secondary_association_calls": 1,
+          "input_shape": [
+            1,
+            2,
+            4,
+            5,
+            7
+          ],
+          "input_axes": [
+            "batch",
+            "window_time",
+            "Z",
+            "Y",
+            "X"
+          ],
+          "feature_shape": [
+            1,
+            2,
+            2,
+            4,
+            5,
+            7
+          ],
+          "feature_axes": [
+            "batch",
+            "window_time",
+            "channel",
+            "Z",
+            "Y",
+            "X"
+          ],
+          "dtype": "torch.float32",
+          "device": "cpu",
+          "secondary_mean_abs_feature_delta": 0.0,
+          "raw_feature_and_logits_unmutated": true,
+          "actual_coordinate_indexing_consumed": true,
+          "finite": true,
+          "association_mode": "low_margin_consensus",
+          "edge_weight": 0.15
+        },
+        "C1": {
+          "primary_encode_calls": 8,
+          "secondary_encode_calls": 8,
+          "primary_association_calls": 2,
+          "secondary_association_calls": 1,
+          "input_shape": [
+            1,
+            2,
+            4,
+            5,
+            7
+          ],
+          "input_axes": [
+            "batch",
+            "window_time",
+            "Z",
+            "Y",
+            "X"
+          ],
+          "feature_shape": [
+            1,
+            2,
+            2,
+            4,
+            5,
+            7
+          ],
+          "feature_axes": [
+            "batch",
+            "window_time",
+            "channel",
+            "Z",
+            "Y",
+            "X"
+          ],
+          "dtype": "torch.float32",
+          "device": "cpu",
+          "secondary_mean_abs_feature_delta": 0.0,
+          "raw_feature_and_logits_unmutated": true,
+          "actual_coordinate_indexing_consumed": true,
+          "finite": true,
+          "association_mode": "low_margin_consensus",
+          "edge_weight": 0.15
+        },
+        "C2": {
+          "primary_encode_calls": 8,
+          "secondary_encode_calls": 8,
+          "primary_association_calls": 2,
+          "secondary_association_calls": 1,
+          "input_shape": [
+            1,
+            2,
+            4,
+            5,
+            7
+          ],
+          "input_axes": [
+            "batch",
+            "window_time",
+            "Z",
+            "Y",
+            "X"
+          ],
+          "feature_shape": [
+            1,
+            2,
+            2,
+            4,
+            5,
+            7
+          ],
+          "feature_axes": [
+            "batch",
+            "window_time",
+            "channel",
+            "Z",
+            "Y",
+            "X"
+          ],
+          "dtype": "torch.float32",
+          "device": "cpu",
+          "secondary_mean_abs_feature_delta": 0.20400922000408173,
+          "raw_feature_and_logits_unmutated": true,
+          "actual_coordinate_indexing_consumed": true,
+          "finite": true,
+          "association_mode": "low_margin_consensus",
+          "edge_weight": 0.15
+        }
+      },
+      "C2_primary_features_equal_B0": true,
+      "C2_detection_logits_equal_B0": true,
+      "C2_average_exact": true,
+      "C2_secondary_probability_mean_abs_delta": 0.0005686514778062701,
+      "C2_uniform_secondary_zero_delta_allowed": true,
+      "limitation": "Deterministic CPU doubles replace pretrained UNet and edge-transformer weights; this proves data flow and arithmetic, not GPU/model quality or score."
+    },
+    "identical_common_runtime_hooks": {
+      "status": "PASS",
+      "arms": {
+        "B0": {
+          "status": "PASS",
+          "prediction_tensors_equal_unaudited": true,
+          "rng_state_unchanged": true,
+          "retained_baseline_features_released": true,
+          "runtime_record": {
+            "arm": "B0",
+            "association": {
+              "actual_primary_logits_after_original_harmonic_fusion": {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 9,
+                "shape": [
+                  1,
+                  3,
+                  3
+                ],
+                "stride": [
+                  9,
+                  3,
+                  1
+                ]
+              },
+              "actual_secondary_feature_consumed": true,
+              "actual_secondary_logits": {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 9,
+                "shape": [
+                  1,
+                  3,
+                  3
+                ],
+                "stride": [
+                  9,
+                  3,
+                  1
+                ]
+              },
+              "coordinate_grid": {
+                "downsample": [
+                  1,
+                  4,
+                  4
+                ],
+                "source": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 9,
+                  "shape": [
+                    1,
+                    3,
+                    3
+                  ],
+                  "stride": [
+                    9,
+                    3,
+                    1
+                  ]
+                },
+                "target": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 9,
+                  "shape": [
+                    1,
+                    3,
+                    3
+                  ],
+                  "stride": [
+                    9,
+                    3,
+                    1
+                  ]
+                }
+              },
+              "diagnostic_edge_head_calls": 1,
+              "diagnostic_encoder_calls": 0,
+              "diagnostic_probabilities_used_in_production": false,
+              "diagnostic_seconds": 0.00022645799981546588,
+              "frame_pair_index": 0,
+              "primary_source_sampled_features": {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 6,
+                "shape": [
+                  1,
+                  3,
+                  2
+                ],
+                "stride": [
+                  6,
+                  2,
+                  1
+                ]
+              },
+              "primary_target_sampled_features": {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 6,
+                "shape": [
+                  1,
+                  3,
+                  2
+                ],
+                "stride": [
+                  6,
+                  2,
+                  1
+                ]
+              },
+              "probability_comparison_stage": "secondary edge-head softmax over parents, before original calibration and low-margin mixing",
+              "probability_delta_vs_single_pass_same_coordinates": {
+                "sample_elements": 9,
+                "sample_equal": true,
+                "sample_max_abs_delta": 0.0,
+                "sample_mean_abs_delta": 0.0,
+                "sample_stride": 1
+              },
+              "production_calls": 1,
+              "same_low_margin_config": {
+                "secondary_detection_weight": 0.8,
+                "secondary_edge_weight": 0.15,
+                "secondary_link_mode": "low_margin_consensus"
+              },
+              "source_delta_vs_single_pass": {
+                "sample_elements": 6,
+                "sample_equal": true,
+                "sample_max_abs_delta": 0.0,
+                "sample_mean_abs_delta": 0.0,
+                "sample_stride": 1
+              },
+              "source_sampled_features": {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 6,
+                "shape": [
+                  1,
+                  3,
+                  2
+                ],
+                "stride": [
+                  6,
+                  2,
+                  1
+                ]
+              },
+              "target_delta_vs_single_pass": {
+                "sample_elements": 6,
+                "sample_equal": true,
+                "sample_max_abs_delta": 0.0,
+                "sample_mean_abs_delta": 0.0,
+                "sample_stride": 1
+              },
+              "target_sampled_features": {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 6,
+                "shape": [
+                  1,
+                  3,
+                  2
+                ],
+                "stride": [
+                  6,
+                  2,
+                  1
+                ]
+              }
+            },
+            "association_calls": 1,
+            "config": {
+              "secondary_detection_weight": 0.8,
+              "secondary_edge_weight": 0.15,
+              "secondary_link_mode": "low_margin_consensus"
+            },
+            "consumed_features": {
+              "primary": {
+                "all_finite": true,
+                "delta_vs_single_pass": {
+                  "sample_elements": 560,
+                  "sample_equal": false,
+                  "sample_max_abs_delta": 1.1619231700897217,
+                  "sample_mean_abs_delta": 0.22969360649585724,
+                  "sample_stride": 1
+                },
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 560,
+                "original_encoded_feature_sample_unchanged": true,
+                "same_storage_as_original": false,
+                "shape": [
+                  1,
+                  2,
+                  2,
+                  4,
+                  5,
+                  7
+                ],
+                "single_pass": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "stride": [
+                  560,
+                  280,
+                  140,
+                  35,
+                  7,
+                  1
+                ]
+              },
+              "secondary": {
+                "all_finite": true,
+                "delta_vs_single_pass": {
+                  "sample_elements": 560,
+                  "sample_equal": true,
+                  "sample_max_abs_delta": 0.0,
+                  "sample_mean_abs_delta": 0.0,
+                  "sample_stride": 1
+                },
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 560,
+                "original_encoded_feature_sample_unchanged": true,
+                "same_storage_as_original": true,
+                "shape": [
+                  1,
+                  2,
+                  2,
+                  4,
+                  5,
+                  7
+                ],
+                "single_pass": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "stride": [
+                  560,
+                  280,
+                  140,
+                  35,
+                  7,
+                  1
+                ]
+              }
+            },
+            "consumed_heatmaps": [
+              {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 140,
+                "shape": [
+                  1,
+                  1,
+                  4,
+                  5,
+                  7
+                ],
+                "stride": [
+                  140,
+                  140,
+                  35,
+                  7,
+                  1
+                ]
+              },
+              {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 140,
+                "shape": [
+                  1,
+                  1,
+                  4,
+                  5,
+                  7
+                ],
+                "stride": [
+                  140,
+                  140,
+                  35,
+                  7,
+                  1
+                ]
+              }
+            ],
+            "cuda_peak_allocated_bytes_process": null,
+            "cuda_peak_reserved_bytes_process": null,
+            "dataset": "synthetic",
+            "encode_calls": {
+              "primary": 8,
+              "secondary": 8
+            },
+            "encode_seconds": {
+              "primary": 0.00038941700040595606,
+              "secondary": 0.001238334003573982
+            },
+            "encode_views": [
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 1,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 2,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 3,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 4,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    1,
+                    7
+                  ]
+                },
+                "pass": 5,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    1,
+                    7
+                  ]
+                },
+                "pass": 6,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    1,
+                    7
+                  ]
+                },
+                "pass": 7,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 8,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 1,
+                "role": "secondary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 2,
+                "role": "secondary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 3,
+                "role": "secondary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 4,
+                "role": "secondary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    1,
+                    7
+                  ]
+                },
+                "pass": 5,
+                "role": "secondary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    1,
+                    7
+                  ]
+                },
+                "pass": 6,
+                "role": "secondary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    1,
+                    7
+                  ]
+                },
+                "pass": 7,
+                "role": "secondary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 8,
+                "role": "secondary"
+              }
+            ],
+            "event": "actual_predictor_window",
+            "frames": [
+              0,
+              1
+            ],
+            "input": {
+              "all_finite": true,
+              "device": "cpu",
+              "dtype": "torch.float32",
+              "numel": 280,
+              "shape": [
+                1,
+                2,
+                4,
+                5,
+                7
+              ],
+              "stride": [
+                280,
+                140,
+                35,
+                7,
+                1
+              ]
+            },
+            "input_parent": ".",
+            "seconds_including_common_audit": 0.009006416001284379,
+            "window_index": 1,
+            "worker_execution_settings": {
+              "autocast_enabled": false,
+              "cuda_runtime": null,
+              "cudnn_allow_tf32": true,
+              "cudnn_benchmark": false,
+              "cudnn_deterministic": false,
+              "default_dtype": "torch.float32",
+              "deterministic_algorithms": false,
+              "float32_matmul_precision": "highest",
+              "gpu_name": null,
+              "grad_enabled": true,
+              "matmul_allow_tf32": false,
+              "torch_initial_seed": 2867272356856329991,
+              "torch_version": "2.10.0"
+            }
+          }
+        },
+        "C1": {
+          "status": "PASS",
+          "prediction_tensors_equal_unaudited": true,
+          "rng_state_unchanged": true,
+          "retained_baseline_features_released": true,
+          "runtime_record": {
+            "arm": "C1",
+            "association": {
+              "actual_primary_logits_after_original_harmonic_fusion": {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 9,
+                "shape": [
+                  1,
+                  3,
+                  3
+                ],
+                "stride": [
+                  9,
+                  3,
+                  1
+                ]
+              },
+              "actual_secondary_feature_consumed": true,
+              "actual_secondary_logits": {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 9,
+                "shape": [
+                  1,
+                  3,
+                  3
+                ],
+                "stride": [
+                  9,
+                  3,
+                  1
+                ]
+              },
+              "coordinate_grid": {
+                "downsample": [
+                  1,
+                  4,
+                  4
+                ],
+                "source": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 9,
+                  "shape": [
+                    1,
+                    3,
+                    3
+                  ],
+                  "stride": [
+                    9,
+                    3,
+                    1
+                  ]
+                },
+                "target": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 9,
+                  "shape": [
+                    1,
+                    3,
+                    3
+                  ],
+                  "stride": [
+                    9,
+                    3,
+                    1
+                  ]
+                }
+              },
+              "diagnostic_edge_head_calls": 1,
+              "diagnostic_encoder_calls": 0,
+              "diagnostic_probabilities_used_in_production": false,
+              "diagnostic_seconds": 0.00023029099975246936,
+              "frame_pair_index": 0,
+              "primary_source_sampled_features": {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 6,
+                "shape": [
+                  1,
+                  3,
+                  2
+                ],
+                "stride": [
+                  6,
+                  2,
+                  1
+                ]
+              },
+              "primary_target_sampled_features": {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 6,
+                "shape": [
+                  1,
+                  3,
+                  2
+                ],
+                "stride": [
+                  6,
+                  2,
+                  1
+                ]
+              },
+              "probability_comparison_stage": "secondary edge-head softmax over parents, before original calibration and low-margin mixing",
+              "probability_delta_vs_single_pass_same_coordinates": {
+                "sample_elements": 9,
+                "sample_equal": true,
+                "sample_max_abs_delta": 0.0,
+                "sample_mean_abs_delta": 0.0,
+                "sample_stride": 1
+              },
+              "production_calls": 1,
+              "same_low_margin_config": {
+                "secondary_detection_weight": 0.8,
+                "secondary_edge_weight": 0.15,
+                "secondary_link_mode": "low_margin_consensus"
+              },
+              "source_delta_vs_single_pass": {
+                "sample_elements": 6,
+                "sample_equal": true,
+                "sample_max_abs_delta": 0.0,
+                "sample_mean_abs_delta": 0.0,
+                "sample_stride": 1
+              },
+              "source_sampled_features": {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 6,
+                "shape": [
+                  1,
+                  3,
+                  2
+                ],
+                "stride": [
+                  6,
+                  2,
+                  1
+                ]
+              },
+              "target_delta_vs_single_pass": {
+                "sample_elements": 6,
+                "sample_equal": true,
+                "sample_max_abs_delta": 0.0,
+                "sample_mean_abs_delta": 0.0,
+                "sample_stride": 1
+              },
+              "target_sampled_features": {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 6,
+                "shape": [
+                  1,
+                  3,
+                  2
+                ],
+                "stride": [
+                  6,
+                  2,
+                  1
+                ]
+              }
+            },
+            "association_calls": 1,
+            "config": {
+              "secondary_detection_weight": 0.8,
+              "secondary_edge_weight": 0.15,
+              "secondary_link_mode": "low_margin_consensus"
+            },
+            "consumed_features": {
+              "primary": {
+                "all_finite": true,
+                "delta_vs_single_pass": {
+                  "sample_elements": 560,
+                  "sample_equal": false,
+                  "sample_max_abs_delta": 1.2003846168518066,
+                  "sample_mean_abs_delta": 0.22127079963684082,
+                  "sample_stride": 1
+                },
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 560,
+                "original_encoded_feature_sample_unchanged": true,
+                "same_storage_as_original": false,
+                "shape": [
+                  1,
+                  2,
+                  2,
+                  4,
+                  5,
+                  7
+                ],
+                "single_pass": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "stride": [
+                  560,
+                  280,
+                  140,
+                  35,
+                  7,
+                  1
+                ]
+              },
+              "secondary": {
+                "all_finite": true,
+                "delta_vs_single_pass": {
+                  "sample_elements": 560,
+                  "sample_equal": true,
+                  "sample_max_abs_delta": 0.0,
+                  "sample_mean_abs_delta": 0.0,
+                  "sample_stride": 1
+                },
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 560,
+                "original_encoded_feature_sample_unchanged": true,
+                "same_storage_as_original": true,
+                "shape": [
+                  1,
+                  2,
+                  2,
+                  4,
+                  5,
+                  7
+                ],
+                "single_pass": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "stride": [
+                  560,
+                  280,
+                  140,
+                  35,
+                  7,
+                  1
+                ]
+              }
+            },
+            "consumed_heatmaps": [
+              {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 140,
+                "shape": [
+                  1,
+                  1,
+                  4,
+                  5,
+                  7
+                ],
+                "stride": [
+                  140,
+                  140,
+                  35,
+                  7,
+                  1
+                ]
+              },
+              {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 140,
+                "shape": [
+                  1,
+                  1,
+                  4,
+                  5,
+                  7
+                ],
+                "stride": [
+                  140,
+                  140,
+                  35,
+                  7,
+                  1
+                ]
+              }
+            ],
+            "cuda_peak_allocated_bytes_process": null,
+            "cuda_peak_reserved_bytes_process": null,
+            "dataset": "synthetic",
+            "encode_calls": {
+              "primary": 8,
+              "secondary": 8
+            },
+            "encode_seconds": {
+              "primary": 0.00036483399708231445,
+              "secondary": 0.0003370420017745346
+            },
+            "encode_views": [
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 1,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 2,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 3,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 4,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    1,
+                    7
+                  ]
+                },
+                "pass": 5,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    1,
+                    7
+                  ]
+                },
+                "pass": 6,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    1,
+                    7
+                  ]
+                },
+                "pass": 7,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    1,
+                    7
+                  ]
+                },
+                "pass": 8,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 1,
+                "role": "secondary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 2,
+                "role": "secondary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 3,
+                "role": "secondary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 4,
+                "role": "secondary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    1,
+                    7
+                  ]
+                },
+                "pass": 5,
+                "role": "secondary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    1,
+                    7
+                  ]
+                },
+                "pass": 6,
+                "role": "secondary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    1,
+                    7
+                  ]
+                },
+                "pass": 7,
+                "role": "secondary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    1,
+                    7
+                  ]
+                },
+                "pass": 8,
+                "role": "secondary"
+              }
+            ],
+            "event": "actual_predictor_window",
+            "frames": [
+              0,
+              1
+            ],
+            "input": {
+              "all_finite": true,
+              "device": "cpu",
+              "dtype": "torch.float32",
+              "numel": 280,
+              "shape": [
+                1,
+                2,
+                4,
+                5,
+                7
+              ],
+              "stride": [
+                280,
+                140,
+                35,
+                7,
+                1
+              ]
+            },
+            "input_parent": ".",
+            "seconds_including_common_audit": 0.008203291999961948,
+            "window_index": 1,
+            "worker_execution_settings": {
+              "autocast_enabled": false,
+              "cuda_runtime": null,
+              "cudnn_allow_tf32": true,
+              "cudnn_benchmark": false,
+              "cudnn_deterministic": false,
+              "default_dtype": "torch.float32",
+              "deterministic_algorithms": false,
+              "float32_matmul_precision": "highest",
+              "gpu_name": null,
+              "grad_enabled": true,
+              "matmul_allow_tf32": false,
+              "torch_initial_seed": 2867272356856329991,
+              "torch_version": "2.10.0"
+            }
+          }
+        },
+        "C2": {
+          "status": "PASS",
+          "prediction_tensors_equal_unaudited": true,
+          "rng_state_unchanged": true,
+          "retained_baseline_features_released": true,
+          "runtime_record": {
+            "arm": "C2",
+            "association": {
+              "actual_primary_logits_after_original_harmonic_fusion": {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 9,
+                "shape": [
+                  1,
+                  3,
+                  3
+                ],
+                "stride": [
+                  9,
+                  3,
+                  1
+                ]
+              },
+              "actual_secondary_feature_consumed": true,
+              "actual_secondary_logits": {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 9,
+                "shape": [
+                  1,
+                  3,
+                  3
+                ],
+                "stride": [
+                  9,
+                  3,
+                  1
+                ]
+              },
+              "coordinate_grid": {
+                "downsample": [
+                  1,
+                  4,
+                  4
+                ],
+                "source": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 9,
+                  "shape": [
+                    1,
+                    3,
+                    3
+                  ],
+                  "stride": [
+                    9,
+                    3,
+                    1
+                  ]
+                },
+                "target": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 9,
+                  "shape": [
+                    1,
+                    3,
+                    3
+                  ],
+                  "stride": [
+                    9,
+                    3,
+                    1
+                  ]
+                }
+              },
+              "diagnostic_edge_head_calls": 1,
+              "diagnostic_encoder_calls": 0,
+              "diagnostic_probabilities_used_in_production": false,
+              "diagnostic_seconds": 0.00022924999939277768,
+              "frame_pair_index": 0,
+              "primary_source_sampled_features": {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 6,
+                "shape": [
+                  1,
+                  3,
+                  2
+                ],
+                "stride": [
+                  6,
+                  2,
+                  1
+                ]
+              },
+              "primary_target_sampled_features": {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 6,
+                "shape": [
+                  1,
+                  3,
+                  2
+                ],
+                "stride": [
+                  6,
+                  2,
+                  1
+                ]
+              },
+              "probability_comparison_stage": "secondary edge-head softmax over parents, before original calibration and low-margin mixing",
+              "probability_delta_vs_single_pass_same_coordinates": {
+                "sample_elements": 9,
+                "sample_equal": false,
+                "sample_max_abs_delta": 0.0015464723110198975,
+                "sample_mean_abs_delta": 0.0005686514778062701,
+                "sample_stride": 1
+              },
+              "production_calls": 1,
+              "same_low_margin_config": {
+                "secondary_detection_weight": 0.8,
+                "secondary_edge_weight": 0.15,
+                "secondary_link_mode": "low_margin_consensus"
+              },
+              "source_delta_vs_single_pass": {
+                "sample_elements": 6,
+                "sample_equal": false,
+                "sample_max_abs_delta": 0.39953505992889404,
+                "sample_mean_abs_delta": 0.11448546499013901,
+                "sample_stride": 1
+              },
+              "source_sampled_features": {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 6,
+                "shape": [
+                  1,
+                  3,
+                  2
+                ],
+                "stride": [
+                  6,
+                  2,
+                  1
+                ]
+              },
+              "target_delta_vs_single_pass": {
+                "sample_elements": 6,
+                "sample_equal": false,
+                "sample_max_abs_delta": 0.9643967151641846,
+                "sample_mean_abs_delta": 0.47351953387260437,
+                "sample_stride": 1
+              },
+              "target_sampled_features": {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 6,
+                "shape": [
+                  1,
+                  3,
+                  2
+                ],
+                "stride": [
+                  6,
+                  2,
+                  1
+                ]
+              }
+            },
+            "association_calls": 1,
+            "config": {
+              "secondary_detection_weight": 0.8,
+              "secondary_edge_weight": 0.15,
+              "secondary_link_mode": "low_margin_consensus"
+            },
+            "consumed_features": {
+              "primary": {
+                "all_finite": true,
+                "delta_vs_single_pass": {
+                  "sample_elements": 560,
+                  "sample_equal": false,
+                  "sample_max_abs_delta": 1.1619231700897217,
+                  "sample_mean_abs_delta": 0.22969360649585724,
+                  "sample_stride": 1
+                },
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 560,
+                "original_encoded_feature_sample_unchanged": true,
+                "same_storage_as_original": false,
+                "shape": [
+                  1,
+                  2,
+                  2,
+                  4,
+                  5,
+                  7
+                ],
+                "single_pass": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "stride": [
+                  560,
+                  280,
+                  140,
+                  35,
+                  7,
+                  1
+                ]
+              },
+              "secondary": {
+                "all_finite": true,
+                "delta_vs_single_pass": {
+                  "sample_elements": 560,
+                  "sample_equal": false,
+                  "sample_max_abs_delta": 0.9643967151641846,
+                  "sample_mean_abs_delta": 0.20400922000408173,
+                  "sample_stride": 1
+                },
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 560,
+                "original_encoded_feature_sample_unchanged": true,
+                "same_storage_as_original": false,
+                "shape": [
+                  1,
+                  2,
+                  2,
+                  4,
+                  5,
+                  7
+                ],
+                "single_pass": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "stride": [
+                  560,
+                  280,
+                  140,
+                  35,
+                  7,
+                  1
+                ]
+              }
+            },
+            "consumed_heatmaps": [
+              {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 140,
+                "shape": [
+                  1,
+                  1,
+                  4,
+                  5,
+                  7
+                ],
+                "stride": [
+                  140,
+                  140,
+                  35,
+                  7,
+                  1
+                ]
+              },
+              {
+                "all_finite": true,
+                "device": "cpu",
+                "dtype": "torch.float32",
+                "numel": 140,
+                "shape": [
+                  1,
+                  1,
+                  4,
+                  5,
+                  7
+                ],
+                "stride": [
+                  140,
+                  140,
+                  35,
+                  7,
+                  1
+                ]
+              }
+            ],
+            "cuda_peak_allocated_bytes_process": null,
+            "cuda_peak_reserved_bytes_process": null,
+            "dataset": "synthetic",
+            "encode_calls": {
+              "primary": 8,
+              "secondary": 8
+            },
+            "encode_seconds": {
+              "primary": 0.00037158299892325886,
+              "secondary": 0.00035770800423051696
+            },
+            "encode_views": [
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 1,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 2,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 3,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 4,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    1,
+                    7
+                  ]
+                },
+                "pass": 5,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    1,
+                    7
+                  ]
+                },
+                "pass": 6,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    1,
+                    7
+                  ]
+                },
+                "pass": 7,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 8,
+                "role": "primary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 1,
+                "role": "secondary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 2,
+                "role": "secondary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 3,
+                "role": "secondary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 4,
+                "role": "secondary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    1,
+                    7
+                  ]
+                },
+                "pass": 5,
+                "role": "secondary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    1,
+                    7
+                  ]
+                },
+                "pass": 6,
+                "role": "secondary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    5,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    7,
+                    5
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    1,
+                    7
+                  ]
+                },
+                "pass": 7,
+                "role": "secondary"
+              },
+              {
+                "feature": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 560,
+                  "shape": [
+                    1,
+                    2,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    560,
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "heatmap0": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 140,
+                  "shape": [
+                    1,
+                    1,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    140,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "input": {
+                  "device": "cpu",
+                  "dtype": "torch.float32",
+                  "numel": 280,
+                  "shape": [
+                    1,
+                    2,
+                    4,
+                    5,
+                    7
+                  ],
+                  "stride": [
+                    280,
+                    140,
+                    35,
+                    7,
+                    1
+                  ]
+                },
+                "pass": 8,
+                "role": "secondary"
+              }
+            ],
+            "event": "actual_predictor_window",
+            "frames": [
+              0,
+              1
+            ],
+            "input": {
+              "all_finite": true,
+              "device": "cpu",
+              "dtype": "torch.float32",
+              "numel": 280,
+              "shape": [
+                1,
+                2,
+                4,
+                5,
+                7
+              ],
+              "stride": [
+                280,
+                140,
+                35,
+                7,
+                1
+              ]
+            },
+            "input_parent": ".",
+            "seconds_including_common_audit": 0.013830290999976569,
+            "window_index": 1,
+            "worker_execution_settings": {
+              "autocast_enabled": false,
+              "cuda_runtime": null,
+              "cudnn_allow_tf32": true,
+              "cudnn_benchmark": false,
+              "cudnn_deterministic": false,
+              "default_dtype": "torch.float32",
+              "deterministic_algorithms": false,
+              "float32_matmul_precision": "highest",
+              "gpu_name": null,
+              "grad_enabled": true,
+              "matmul_allow_tf32": false,
+              "torch_initial_seed": 2867272356856329991,
+              "torch_version": "2.10.0"
+            }
+          }
+        }
+      }
+    }
+  },
+  "seconds": 0.3571317080004519,
+  "test_script_sha256": "7976a9b8d1c2949369fca8ec608605a399f90b110c34ebccafaed1192f02ed8c",
+  "source_file_sha256": {
+    "downloads/PUBLIC946_TTA_20260908/support_v10/repo/scripts/predict_unet_transformer.py": "c44e771ba5980b820f93091e03a303c25dfe8f3232e501f54dc9565731c234b9",
+    "downloads/PUBLIC946_TTA_20260908/support_v10/repo/scripts/train_unet_transformer.py": "c4f6317736bb3bb1ec8f3f6e9a6d935a463e3f0f1f685481b2d13218d35dc9ea",
+    "experiments/PUBLIC946_TTA_20260908/tta_patch.py": "23787f55efecbc5676470ef32fa56a51c4b2f8b0343fcb8f909bb1771cf5ae04",
+    "experiments/PUBLIC946_TTA_20260908/runtime_audit.py": "725438b33f64f77617713c4ce20b5fdb2c16b24ecec452cfa7ded9af786d5ce1"
+  }
+}
