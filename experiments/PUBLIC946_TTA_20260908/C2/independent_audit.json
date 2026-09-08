@@ -1,0 +1,668 @@
+{
+  "task_id": "PUBLIC946_TTA_20260908",
+  "arm": "C2",
+  "observed_at_utc": "2026-09-08T08:28:59.660191+00:00",
+  "audit_status": "ORDINARY_SOURCE_INPUT_OUTPUT_RUNTIME_VERIFIED",
+  "scope": "Independent read-only cross-review of C2 ordinary receipts and raw actual runtime JSONL; no formal score inference",
+  "identity": {
+    "ref": "sailorren/biohub-946-c2-secondary-edge-tta-20260908",
+    "version": 1,
+    "script_version_id": 348150127,
+    "kernel_id": 133513708,
+    "source_sha256": "a7177ccf303152180357ac6f7d23efefec1aa8ab8206bd3bdc99d1efa19b1de6",
+    "submitted_source_sha256": "2f714f4159667aed98d4fa9b49256da2e44c29b8697c703f253a4ab765d04759"
+  },
+  "remote_source_sha256": "833a3c71238ed24bc94e1259eb2f15df271fd47e38df446f68e15a2e71e44bde",
+  "remote_file_bytes_equal": false,
+  "all_13_ordered_cell_sources_equal": true,
+  "fixed_input_versions": {
+    "verified": true,
+    "version": 1,
+    "script_version_id": 348150127,
+    "dataset_sources": [
+      "pilkwang/biohub-deepcenter-unet3d-center-prior-v1/5",
+      "pilkwang/biohub-temporal-unet3d-seed314159-v1/2",
+      "pilkwang/biohub-tracking-support-pack-50ep-v1/10"
+    ],
+    "observed_at_utc": "2026-09-08T08:25:01.338265+00:00",
+    "source": "Kaggle fixed-Version Inputs UI https://www.kaggle.com/code/sailorren/biohub-946-c2-secondary-edge-tta-20260908/input?scriptVersionId=348150127",
+    "observed_labels": [
+      "Biohub DeepCenterUNet3D Center Prior V1: Version 5",
+      "Biohub TemporalUNet3D Seed 314159 V1: Version 2",
+      "Biohub Tracking Support Pack: Version 10"
+    ]
+  },
+  "ordinary_gate": {
+    "final_sha256": "8e0d91777cb1303ddeed68184debe14c260c6ad75a63b9ec2337a8f578c981bf",
+    "rows": 241300,
+    "selected_pp": "tight55",
+    "runtime_production_windows": 396,
+    "association_examples": 4
+  },
+  "final_submission": {
+    "sha256": "8e0d91777cb1303ddeed68184debe14c260c6ad75a63b9ec2337a8f578c981bf",
+    "rows": 241300,
+    "nodes": 122791,
+    "edges": 118509,
+    "expected_test_datasets": [
+      "44b6_0113de3b",
+      "44b6_0b24845f",
+      "6bba_05b6850b",
+      "6bba_05db0fb1"
+    ]
+  },
+  "division_parents": 101,
+  "before_selection_submission": {
+    "datasets": [
+      "44b6_0113de3b",
+      "44b6_0b24845f",
+      "6bba_05b6850b",
+      "6bba_05db0fb1"
+    ],
+    "rows": 241170,
+    "sha256": "0ab47be69f260079cb951635be5978e548542700d2575659edca2de95315f004"
+  },
+  "postprocess": {
+    "selected": "tight55",
+    "overrides": {
+      "MOTION_RELINK_TIGHT_UM": 5.5
+    },
+    "base_proxy": 0.9490375142036066,
+    "selected_proxy": 0.9510953406785806,
+    "proxy_is_formal_score": false,
+    "single_candidate_positives": [
+      "tight55"
+    ],
+    "original_combo_not_triggered": true
+  },
+  "comparison_with_B0_ordinary_only": {
+    "B0_final_sha256": "a852d1d07ff8c9307d9b10db7f9b4b12e8b1882f14c5dbeb1316d099f0795b3e",
+    "count_changes_C2_minus_B0": {
+      "rows": -100,
+      "nodes": -50,
+      "edges": -50
+    },
+    "division_parent_change": -1,
+    "effective_postprocess_differences": {},
+    "same_ordinary_selected_PP": true,
+    "base_postprocess_weights_inputs_dependencies_common": true,
+    "interpretation": "Observed ordinary outputs differ while both choose tight55. Numerical feature and pre-calibration probability effects demonstrate consumption, not accuracy, formal score benefit, hidden-output equality or stable generalization."
+  },
+  "runtime": {
+    "all_windows": 1188,
+    "test_windows": 396,
+    "train_validator_windows": 792,
+    "test_association_examples": 4,
+    "all_association_examples": 12,
+    "encoder_calls_per_model_per_window": 8,
+    "extra_encoder_calls": 0,
+    "extra_edge_head_calls": 12,
+    "gpu_names": [
+      "Tesla T4"
+    ],
+    "primary_feature_dtype": [
+      "torch.float32"
+    ],
+    "original_feature_samples_unchanged": true,
+    "primary_vs_B0_delta_summary_equal": true,
+    "observed_nonzero_secondary_feature_delta_examples": 12,
+    "observed_nonzero_secondary_probability_delta_examples": 12,
+    "zero_delta_is_not_failure_criterion": true,
+    "per_video_diagnostic_samples": [
+      {
+        "dataset": "44b6_12dfb391",
+        "scope": "train",
+        "window_index": 1,
+        "frames": [
+          0,
+          1
+        ],
+        "secondary_feature_shape": [
+          1,
+          2,
+          32,
+          64,
+          64,
+          64
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0",
+        "feature_delta_vs_single_pass": {
+          "sample_elements": 65536,
+          "sample_equal": false,
+          "sample_max_abs_delta": 1.1324741840362549,
+          "sample_mean_abs_delta": 0.2307649850845337,
+          "sample_stride": 256
+        },
+        "probability_delta_vs_single_pass_same_coordinates": {
+          "sample_elements": 65536,
+          "sample_equal": false,
+          "sample_max_abs_delta": 0.8438096046447754,
+          "sample_mean_abs_delta": 0.0002964520244859159,
+          "sample_stride": 2
+        },
+        "probability_comparison_stage": "secondary edge-head softmax over parents, before original calibration and low-margin mixing",
+        "consumed_by_actual_association": true
+      },
+      {
+        "dataset": "44b6_2a2eff9f",
+        "scope": "train",
+        "window_index": 1,
+        "frames": [
+          0,
+          1
+        ],
+        "secondary_feature_shape": [
+          1,
+          2,
+          32,
+          64,
+          64,
+          64
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0",
+        "feature_delta_vs_single_pass": {
+          "sample_elements": 65536,
+          "sample_equal": false,
+          "sample_max_abs_delta": 1.2723503112792969,
+          "sample_mean_abs_delta": 0.21782457828521729,
+          "sample_stride": 256
+        },
+        "probability_delta_vs_single_pass_same_coordinates": {
+          "sample_elements": 65536,
+          "sample_equal": false,
+          "sample_max_abs_delta": 0.6191383600234985,
+          "sample_mean_abs_delta": 0.00039581485907547176,
+          "sample_stride": 4
+        },
+        "probability_comparison_stage": "secondary edge-head softmax over parents, before original calibration and low-margin mixing",
+        "consumed_by_actual_association": true
+      },
+      {
+        "dataset": "6bba_062c8d37",
+        "scope": "train",
+        "window_index": 1,
+        "frames": [
+          0,
+          1
+        ],
+        "secondary_feature_shape": [
+          1,
+          2,
+          32,
+          64,
+          64,
+          64
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0",
+        "feature_delta_vs_single_pass": {
+          "sample_elements": 65536,
+          "sample_equal": false,
+          "sample_max_abs_delta": 1.1141284704208374,
+          "sample_mean_abs_delta": 0.23588082194328308,
+          "sample_stride": 256
+        },
+        "probability_delta_vs_single_pass_same_coordinates": {
+          "sample_elements": 7832,
+          "sample_equal": false,
+          "sample_max_abs_delta": 0.3597915768623352,
+          "sample_mean_abs_delta": 0.0009964143391698599,
+          "sample_stride": 1
+        },
+        "probability_comparison_stage": "secondary edge-head softmax over parents, before original calibration and low-margin mixing",
+        "consumed_by_actual_association": true
+      },
+      {
+        "dataset": "6bba_085bf656",
+        "scope": "train",
+        "window_index": 1,
+        "frames": [
+          0,
+          1
+        ],
+        "secondary_feature_shape": [
+          1,
+          2,
+          32,
+          64,
+          64,
+          64
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0",
+        "feature_delta_vs_single_pass": {
+          "sample_elements": 65536,
+          "sample_equal": false,
+          "sample_max_abs_delta": 1.2761400938034058,
+          "sample_mean_abs_delta": 0.2964685559272766,
+          "sample_stride": 256
+        },
+        "probability_delta_vs_single_pass_same_coordinates": {
+          "sample_elements": 22499,
+          "sample_equal": false,
+          "sample_max_abs_delta": 0.4903956651687622,
+          "sample_mean_abs_delta": 0.0007680580019950867,
+          "sample_stride": 1
+        },
+        "probability_comparison_stage": "secondary edge-head softmax over parents, before original calibration and low-margin mixing",
+        "consumed_by_actual_association": true
+      },
+      {
+        "dataset": "44b6_267148e4",
+        "scope": "train",
+        "window_index": 1,
+        "frames": [
+          0,
+          1
+        ],
+        "secondary_feature_shape": [
+          1,
+          2,
+          32,
+          64,
+          64,
+          64
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0",
+        "feature_delta_vs_single_pass": {
+          "sample_elements": 65536,
+          "sample_equal": false,
+          "sample_max_abs_delta": 1.020381212234497,
+          "sample_mean_abs_delta": 0.2501334547996521,
+          "sample_stride": 256
+        },
+        "probability_delta_vs_single_pass_same_coordinates": {
+          "sample_elements": 35156,
+          "sample_equal": false,
+          "sample_max_abs_delta": 0.6011918783187866,
+          "sample_mean_abs_delta": 0.0007786832866258919,
+          "sample_stride": 1
+        },
+        "probability_comparison_stage": "secondary edge-head softmax over parents, before original calibration and low-margin mixing",
+        "consumed_by_actual_association": true
+      },
+      {
+        "dataset": "44b6_341df25f",
+        "scope": "train",
+        "window_index": 1,
+        "frames": [
+          0,
+          1
+        ],
+        "secondary_feature_shape": [
+          1,
+          2,
+          32,
+          64,
+          64,
+          64
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0",
+        "feature_delta_vs_single_pass": {
+          "sample_elements": 65536,
+          "sample_equal": false,
+          "sample_max_abs_delta": 0.7684299945831299,
+          "sample_mean_abs_delta": 0.23054228723049164,
+          "sample_stride": 256
+        },
+        "probability_delta_vs_single_pass_same_coordinates": {
+          "sample_elements": 11448,
+          "sample_equal": false,
+          "sample_max_abs_delta": 0.3708154559135437,
+          "sample_mean_abs_delta": 0.0009779272368177772,
+          "sample_stride": 1
+        },
+        "probability_comparison_stage": "secondary edge-head softmax over parents, before original calibration and low-margin mixing",
+        "consumed_by_actual_association": true
+      },
+      {
+        "dataset": "6bba_07e24132",
+        "scope": "train",
+        "window_index": 1,
+        "frames": [
+          0,
+          1
+        ],
+        "secondary_feature_shape": [
+          1,
+          2,
+          32,
+          64,
+          64,
+          64
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0",
+        "feature_delta_vs_single_pass": {
+          "sample_elements": 65536,
+          "sample_equal": false,
+          "sample_max_abs_delta": 1.3501962423324585,
+          "sample_mean_abs_delta": 0.24907130002975464,
+          "sample_stride": 256
+        },
+        "probability_delta_vs_single_pass_same_coordinates": {
+          "sample_elements": 65536,
+          "sample_equal": false,
+          "sample_max_abs_delta": 0.7088044285774231,
+          "sample_mean_abs_delta": 0.0007277010008692741,
+          "sample_stride": 2
+        },
+        "probability_comparison_stage": "secondary edge-head softmax over parents, before original calibration and low-margin mixing",
+        "consumed_by_actual_association": true
+      },
+      {
+        "dataset": "6bba_09961292",
+        "scope": "train",
+        "window_index": 1,
+        "frames": [
+          0,
+          1
+        ],
+        "secondary_feature_shape": [
+          1,
+          2,
+          32,
+          64,
+          64,
+          64
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0",
+        "feature_delta_vs_single_pass": {
+          "sample_elements": 65536,
+          "sample_equal": false,
+          "sample_max_abs_delta": 1.11572265625,
+          "sample_mean_abs_delta": 0.2613857090473175,
+          "sample_stride": 256
+        },
+        "probability_delta_vs_single_pass_same_coordinates": {
+          "sample_elements": 65536,
+          "sample_equal": false,
+          "sample_max_abs_delta": 0.2850412428379059,
+          "sample_mean_abs_delta": 0.00026115571381524205,
+          "sample_stride": 2
+        },
+        "probability_comparison_stage": "secondary edge-head softmax over parents, before original calibration and low-margin mixing",
+        "consumed_by_actual_association": true
+      },
+      {
+        "dataset": "44b6_0113de3b",
+        "scope": "test",
+        "window_index": 1,
+        "frames": [
+          0,
+          1
+        ],
+        "secondary_feature_shape": [
+          1,
+          2,
+          32,
+          64,
+          64,
+          64
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0",
+        "feature_delta_vs_single_pass": {
+          "sample_elements": 65536,
+          "sample_equal": false,
+          "sample_max_abs_delta": 0.8459904193878174,
+          "sample_mean_abs_delta": 0.3148181736469269,
+          "sample_stride": 256
+        },
+        "probability_delta_vs_single_pass_same_coordinates": {
+          "sample_elements": 50176,
+          "sample_equal": false,
+          "sample_max_abs_delta": 0.6182000041007996,
+          "sample_mean_abs_delta": 0.0004000544431619346,
+          "sample_stride": 1
+        },
+        "probability_comparison_stage": "secondary edge-head softmax over parents, before original calibration and low-margin mixing",
+        "consumed_by_actual_association": true
+      },
+      {
+        "dataset": "6bba_05b6850b",
+        "scope": "test",
+        "window_index": 1,
+        "frames": [
+          0,
+          1
+        ],
+        "secondary_feature_shape": [
+          1,
+          2,
+          32,
+          64,
+          64,
+          64
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0",
+        "feature_delta_vs_single_pass": {
+          "sample_elements": 65536,
+          "sample_equal": false,
+          "sample_max_abs_delta": 0.9248446226119995,
+          "sample_mean_abs_delta": 0.20993147790431976,
+          "sample_stride": 256
+        },
+        "probability_delta_vs_single_pass_same_coordinates": {
+          "sample_elements": 7395,
+          "sample_equal": false,
+          "sample_max_abs_delta": 0.30973726511001587,
+          "sample_mean_abs_delta": 0.0016969299176707864,
+          "sample_stride": 1
+        },
+        "probability_comparison_stage": "secondary edge-head softmax over parents, before original calibration and low-margin mixing",
+        "consumed_by_actual_association": true
+      },
+      {
+        "dataset": "44b6_0b24845f",
+        "scope": "test",
+        "window_index": 1,
+        "frames": [
+          0,
+          1
+        ],
+        "secondary_feature_shape": [
+          1,
+          2,
+          32,
+          64,
+          64,
+          64
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0",
+        "feature_delta_vs_single_pass": {
+          "sample_elements": 65536,
+          "sample_equal": false,
+          "sample_max_abs_delta": 0.9709262847900391,
+          "sample_mean_abs_delta": 0.22482901811599731,
+          "sample_stride": 256
+        },
+        "probability_delta_vs_single_pass_same_coordinates": {
+          "sample_elements": 65536,
+          "sample_equal": false,
+          "sample_max_abs_delta": 0.7195019721984863,
+          "sample_mean_abs_delta": 0.000851439603138715,
+          "sample_stride": 3
+        },
+        "probability_comparison_stage": "secondary edge-head softmax over parents, before original calibration and low-margin mixing",
+        "consumed_by_actual_association": true
+      },
+      {
+        "dataset": "6bba_05db0fb1",
+        "scope": "test",
+        "window_index": 1,
+        "frames": [
+          0,
+          1
+        ],
+        "secondary_feature_shape": [
+          1,
+          2,
+          32,
+          64,
+          64,
+          64
+        ],
+        "dtype": "torch.float32",
+        "device": "cuda:0",
+        "feature_delta_vs_single_pass": {
+          "sample_elements": 65536,
+          "sample_equal": false,
+          "sample_max_abs_delta": 1.2861735820770264,
+          "sample_mean_abs_delta": 0.20930975675582886,
+          "sample_stride": 256
+        },
+        "probability_delta_vs_single_pass_same_coordinates": {
+          "sample_elements": 65536,
+          "sample_equal": false,
+          "sample_max_abs_delta": 0.6999394297599792,
+          "sample_mean_abs_delta": 0.00020723954366985708,
+          "sample_stride": 9
+        },
+        "probability_comparison_stage": "secondary edge-head softmax over parents, before original calibration and low-margin mixing",
+        "consumed_by_actual_association": true
+      }
+    ],
+    "max_process_gpu_allocated_bytes": 728221696,
+    "max_process_gpu_reserved_bytes": 981467136,
+    "production_predict_seconds": 586.0889825820923,
+    "validation_predict_seconds": 984.1488494873047,
+    "ordinary_ui_runtime_seconds": 5432.6,
+    "resource_comparison_scope": "One ordinary run each; process allocation peak is not total GPU utilization or stable speed gain"
+  },
+  "checks": [
+    {
+      "check": "independent_call_to_actual_ordinary_gate",
+      "status": "PASS"
+    },
+    {
+      "check": "source_file_matches_frozen_C2",
+      "status": "PASS"
+    },
+    {
+      "check": "all_remote_cell_sources_match_frozen_order",
+      "status": "PASS"
+    },
+    {
+      "check": "remote_identity_inputs_all_checks",
+      "status": "PASS"
+    },
+    {
+      "check": "exact_platform_identity",
+      "status": "PASS"
+    },
+    {
+      "check": "C2_algorithm_only_secondary_reuse_and_average",
+      "status": "PASS"
+    },
+    {
+      "check": "selected_overrides_bind_actual_final_configuration",
+      "status": "PASS"
+    },
+    {
+      "check": "seven_original_candidates_and_base_only",
+      "status": "PASS"
+    },
+    {
+      "check": "original_conditional_combo_correctly_not_triggered",
+      "status": "PASS"
+    },
+    {
+      "check": "selected_is_original_margin_rule_winner",
+      "status": "PASS"
+    },
+    {
+      "check": "final_stats_counts_bind_cloud_final_audit",
+      "status": "PASS"
+    },
+    {
+      "check": "B0_C2_base_and_final_PP_identical",
+      "status": "PASS"
+    },
+    {
+      "check": "B0_C2_common_inference_weights_inputs_dependencies_equal",
+      "status": "PASS"
+    },
+    {
+      "check": "raw_file_sha256_public946_runtime_186.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw_file_sha256_public946_runtime_187.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw_file_sha256_public946_runtime_70.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "raw_file_sha256_public946_runtime_71.jsonl",
+      "status": "PASS"
+    },
+    {
+      "check": "no_duplicate_raw_runtime_windows",
+      "status": "PASS"
+    },
+    {
+      "check": "all_observed_windows_eight_plus_eight",
+      "status": "PASS"
+    },
+    {
+      "check": "summary_counts_match_raw_scope",
+      "status": "PASS"
+    },
+    {
+      "check": "exactly_one_diagnostic_edge_head_per_observed_video",
+      "status": "PASS"
+    },
+    {
+      "check": "no_extra_encoder_and_original_features_samples_unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "C2_distinct_accumulator_storage_consumed_in_actual_secondary_association",
+      "status": "PASS"
+    },
+    {
+      "check": "primary_feature_delta_summaries_equal_B0_all_sampled_videos",
+      "status": "PASS"
+    },
+    {
+      "check": "actual_low_margin_consensus_weights_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "stdout_duplicate_smoke_not_extra_calls",
+      "status": "PASS"
+    }
+  ],
+  "receipt_sha256": {
+    "candidate.ipynb": "a7177ccf303152180357ac6f7d23efefec1aa8ab8206bd3bdc99d1efa19b1de6",
+    "kernel-metadata.json": "7ebfe86f43956074cc73a7b6ba8847b0fc0e60add06dd0016ee936fa23c35fd3",
+    "public946_final_audit.json": "3c9433df8225220329e2765558d8b962df1d35a80ef62c3b4c6226cf09288277",
+    "runtime_summary.json": "f085eb0e7eb9599c00b1339705f21c1515947bb914c8ce6d72751c58fefb1c16",
+    "run_stats.csv": "36759831460f44a4af7df4845ae3fb7319839779ec284bfd4801fba2497f09ba",
+    "ppsweep_selected.json": "fe08eb15f4ff9de0832720729fccc095cd6b34c38fa095f412509e6f56d9cb2c",
+    "ppsweep_results.csv": "f079c14db5415a3b45458600263e0a0ee88d6da930bb8c91bf51fd8767effa30",
+    "ordinary.log": "9d5701eb166a9b37fe204bc4c6e1ffd7cb8904fd19991c72a02e71e91d8bf70f"
+  },
+  "limits": {
+    "raw_submission_csv_downloaded": false,
+    "independent_local_full_csv_rerun": "NOT_RUN; source-bound cloud final audit cross-checked with small statistics",
+    "formal_hidden_prediction": "UNKNOWN",
+    "formal_score_scope": "NOT_ASSESSED_BY_THIS_ORDINARY_AUDIT",
+    "inplace_pollution_scope": "Actual sampled original features unchanged, plus frozen full synthetic no-pollution test; no claim that sampled checks hash every real tensor element",
+    "stdout_smoke_duplicate_records": {
+      "log_lines": 24,
+      "unique_records": 12,
+      "raw_jsonl_records_are_authoritative": true
+    }
+  }
+}
