@@ -1,0 +1,116 @@
+{
+  "checks": [
+    {
+      "details": {
+        "argument_count": 4,
+        "argv_sha256": "79fc68550e19c53eedbbf84fedbd3a6f5df433bea9b70e4ed184dca3f50093c7",
+        "cwd": ".",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 2357,
+          "sha256": "1994d9491a52fa772cfa09e08a85353782e00a5edf40e3d5d63dd1d53337abfe"
+        },
+        "stdout_text_checks": 0
+      },
+      "id": "local-tests-and-identity",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/formal/status"
+          },
+          {
+            "op": "not_empty",
+            "passed": true,
+            "pointer": "/formal/public_score"
+          },
+          {
+            "op": "not_empty",
+            "passed": true,
+            "pointer": "/formal/id"
+          }
+        ],
+        "path": "experiments/LINEFIT_BOUNDARY_20260909/results.json",
+        "sha256": "47ab066c7f3323302b3e1a2d576f18f77c14865f8749fdee6c8c289960749227"
+      },
+      "id": "formal-score",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "bytes": 8313,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "reports/20260909_LINEFIT_BOUNDARY_实测报告.md",
+        "required_text_checks": 4,
+        "sha256": "8673dad0798248f220bf67ca34de2cc71909306360016a995ba4374bd58505b8"
+      },
+      "id": "report",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "branch": "main",
+        "dirty_entry_count": 0,
+        "head": "fb152eae5969c70c33fb3105e2729cced82a1452",
+        "remote": "origin",
+        "remote_exists": true,
+        "remote_head": "fb152eae5969c70c33fb3105e2729cced82a1452",
+        "remote_url_sha256": "294339ae4bf28ec437260f32bd064c06212de22a7026887c59e47f72ef414b8e",
+        "repository": "."
+      },
+      "id": "git-remote",
+      "outcome": "PASS",
+      "reason": "Git evidence passed",
+      "required": true,
+      "type": "git"
+    }
+  ],
+  "claimed_at": "2026-09-09T22:38:11+08:00",
+  "claimed_status": "CLAIMED_COMPLETE",
+  "contract_path": "tasks/CODEX_20260909_BIOHUB_LINEFIT_BOUNDARY_CONTRACT.json",
+  "contract_sha256": "38ef065b940817d544c3d75de505f955473583a1f9dbf6a7a01019af5fb97bfd",
+  "final_status": "COMPLETED_VERIFIED",
+  "finished_at": "2026-09-09T22:38:31+08:00",
+  "integrity_scope": "local-sha256-only",
+  "limitations": [
+    "The conclusion is limited to the frozen contract and the implemented checks.",
+    "The verifier does not prove omitted requirements or future stability.",
+    "A local or Git hash is not a trusted signature against a malicious writer."
+  ],
+  "optional_warning_check_ids": [],
+  "reason": "all required automated checks passed",
+  "required_summary": {
+    "failed_or_blocked": 0,
+    "human_review": 0,
+    "passed": 4
+  },
+  "run_id": "20260909T223829+0800-37818ba4",
+  "schema_version": "1.0",
+  "started_at": "2026-09-09T22:38:29+08:00",
+  "task_id": "LINEFIT_BOUNDARY_20260909"
+}
