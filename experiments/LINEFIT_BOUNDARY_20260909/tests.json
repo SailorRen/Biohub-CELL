@@ -1,0 +1,239 @@
+{
+  "task_id": "LINEFIT_BOUNDARY_20260909",
+  "status": "PASS",
+  "executed_at_utc": "2026-09-09T02:21:45.104781+00:00",
+  "runtime": {
+    "python": "3.11.14 (main, Oct 21 2025, 18:27:30) [Clang 20.1.8 ]",
+    "executable": "/opt/anaconda3/envs/ml/bin/python3",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "numpy": "2.4.2"
+  },
+  "scope": "CPU synthetic execution of real extracted notebook functions; no models, real graphs or Kaggle runs",
+  "candidate_notebook_sha256": "2476eae2ff6f95d79a18c8a1294e14e10e5309c61ec86872cbc4962687b852a5",
+  "baseline_notebook_sha256": "c4bfcd8d765c67d35435876b3f3eb7bb810e20556479a918143451e2c61f849c",
+  "source_hashes": {
+    "build_candidate.py": "db815cd3a29cad9923a9cede6ae9fe8cbb5bef8d394fed0cbc1e030a4c53c82b",
+    "linefit_patch.py": "97ea8b0d1bda9a694b91b82cb55d4c2f2ddcd0e1d8df171b2e3dc6e3d2fe0451",
+    "test_linefit.py": "d90c7c5ac27500e6be40285ea08bdfb0dc22bd233fb91721d0726c5b3b4f8660",
+    "candidate.ipynb": "2476eae2ff6f95d79a18c8a1294e14e10e5309c61ec86872cbc4962687b852a5"
+  },
+  "tests": [
+    {
+      "name": "straight_chain_1_bitwise_B0",
+      "status": "PASS",
+      "detail": {
+        "nodes": 1,
+        "coordinate_bytes_equal": true,
+        "coordinate_sha256": "ec9090d25b630e266c625b6cca21ec0ff378164ce8c4c34653224c85b90325dd"
+      },
+      "seconds": 0.018858334000469767
+    },
+    {
+      "name": "straight_chain_2_bitwise_B0",
+      "status": "PASS",
+      "detail": {
+        "nodes": 2,
+        "coordinate_bytes_equal": true,
+        "coordinate_sha256": "8e6102255760fc8d032958a2b91ffe1c4959634ad7cbc31aaa7278b626f9f7a1"
+      },
+      "seconds": 0.015821540999240824
+    },
+    {
+      "name": "straight_chain_3_bitwise_B0",
+      "status": "PASS",
+      "detail": {
+        "nodes": 3,
+        "coordinate_bytes_equal": true,
+        "coordinate_sha256": "ebce8b058ef8bdf2b31e3ea7d2b29e00ebb6f75eca162c40e871710f582e5564"
+      },
+      "seconds": 0.018157041999074863
+    },
+    {
+      "name": "straight_chain_9_bitwise_B0",
+      "status": "PASS",
+      "detail": {
+        "nodes": 9,
+        "coordinate_bytes_equal": true,
+        "coordinate_sha256": "d168d69874ca6f29c311edffb73ff1538f60822cae3d431d8f77f10197400ee5"
+      },
+      "seconds": 0.016250167000180227
+    },
+    {
+      "name": "curved_chain_1_bitwise_B0",
+      "status": "PASS",
+      "detail": {
+        "nodes": 1,
+        "coordinate_bytes_equal": true,
+        "coordinate_sha256": "ec9090d25b630e266c625b6cca21ec0ff378164ce8c4c34653224c85b90325dd"
+      },
+      "seconds": 0.017827542000304675
+    },
+    {
+      "name": "curved_chain_2_bitwise_B0",
+      "status": "PASS",
+      "detail": {
+        "nodes": 2,
+        "coordinate_bytes_equal": true,
+        "coordinate_sha256": "b31eb02ae1dabcf741fc379fcd5e420992ba8372962513076c5a78af2c7d7681"
+      },
+      "seconds": 0.014970457999879727
+    },
+    {
+      "name": "curved_chain_3_bitwise_B0",
+      "status": "PASS",
+      "detail": {
+        "nodes": 3,
+        "coordinate_bytes_equal": true,
+        "coordinate_sha256": "a5713ec761f4838d8eb9810fb5299b164f2a7802fae4b91202f643b40733b5ed"
+      },
+      "seconds": 0.018478709000191884
+    },
+    {
+      "name": "curved_chain_9_bitwise_B0",
+      "status": "PASS",
+      "detail": {
+        "nodes": 9,
+        "coordinate_bytes_equal": true,
+        "coordinate_sha256": "e9eea590a349f6a9ccd877ae734eda6f8fcd74aae997da165d2c2e2dbd5921d4"
+      },
+      "seconds": 0.016447916999823065
+    },
+    {
+      "name": "fork_daughters_ignore_parent_side_perturbation",
+      "status": "PASS",
+      "detail": {
+        "daughter_nodes": 8,
+        "candidate_invariant": true,
+        "B0_fixture_sensitive": true,
+        "actual_counters": {
+          "linefit_skipped_nodes": 0,
+          "linefit_smoothed_nodes": 11,
+          "linefit_boundary_backward_stops": 4,
+          "linefit_boundary_nodes": 4,
+          "linefit_boundary_smoothed_nodes": 4,
+          "linefit_boundary_shift_um_sum": 0.7570207534642301,
+          "linefit_boundary_shift_um_max": 0.288202992697856
+        }
+      },
+      "seconds": 0.03613962500094203
+    },
+    {
+      "name": "fork_parent_side_ignores_daughter_perturbation",
+      "status": "PASS",
+      "detail": {
+        "candidate_parent_side_invariant": true,
+        "forward_traversal_unchanged": true
+      },
+      "seconds": 0.016010042001653346
+    },
+    {
+      "name": "observation_purity_and_physical_movement_counters",
+      "status": "PASS",
+      "detail": {
+        "audited_vs_unaudited_coordinate_bytes_equal": true,
+        "numpy_rng_unchanged": true,
+        "counters": {
+          "linefit_skipped_nodes": 0,
+          "linefit_smoothed_nodes": 11,
+          "linefit_boundary_backward_stops": 4,
+          "linefit_boundary_nodes": 4,
+          "linefit_boundary_smoothed_nodes": 4,
+          "linefit_boundary_shift_um_sum": 0.7570207534642301,
+          "linefit_boundary_shift_um_max": 0.288202992697856
+        },
+        "movement_scope": "candidate output versus original graph input"
+      },
+      "seconds": 0.04006170899992867
+    },
+    {
+      "name": "no_duplicate_linefit_execution_for_diagnostics",
+      "status": "PASS",
+      "detail": {
+        "algorithm_polyfit_calls": 33,
+        "observed_polyfit_calls": 33,
+        "extra_old_algorithm_runs": 0
+      },
+      "seconds": 0.016151792000528076
+    },
+    {
+      "name": "short_fork_neighborhood_records_no_invented_displacement",
+      "status": "PASS",
+      "detail": {
+        "blocked_nodes": 2,
+        "smoothed_blocked_nodes": 0,
+        "demonstrates_blocked_does_not_mean_changed": true
+      },
+      "seconds": 0.009734957999171456
+    },
+    {
+      "name": "nonconsecutive_edges_do_not_create_false_fork",
+      "status": "PASS",
+      "detail": {
+        "nonconsecutive_backward_and_missing_endpoint_edges_ignored": true
+      },
+      "seconds": 0.015950667000652174
+    },
+    {
+      "name": "disabled_flag",
+      "status": "PASS",
+      "detail": {
+        "input_unchanged": true
+      },
+      "seconds": 0.018007750000833767
+    },
+    {
+      "name": "disabled_zero_weight",
+      "status": "PASS",
+      "detail": {
+        "input_unchanged": true
+      },
+      "seconds": 0.01485300000058487
+    },
+    {
+      "name": "disabled_negative_weight",
+      "status": "PASS",
+      "detail": {
+        "input_unchanged": true
+      },
+      "seconds": 0.014877625000735861
+    },
+    {
+      "name": "disabled_zero_window",
+      "status": "PASS",
+      "detail": {
+        "input_unchanged": true
+      },
+      "seconds": 0.01671183399957954
+    },
+    {
+      "name": "disabled_no_edges",
+      "status": "PASS",
+      "detail": {
+        "input_unchanged": true
+      },
+      "seconds": 0.014949290998629294
+    },
+    {
+      "name": "notebook_identity_and_single_algorithm_change",
+      "status": "PASS",
+      "detail": {
+        "changed_cells": [
+          5
+        ],
+        "algorithm_replacement_count": 1,
+        "observation_replacement_count": 4,
+        "metadata_changed_keys": [
+          "id",
+          "title"
+        ],
+        "original_13_cells_preserved": true
+      },
+      "seconds": 5.508399954123888e-05
+    }
+  ],
+  "passed": 20,
+  "total": 20,
+  "actual_model_inference": "NOT_RUN",
+  "kaggle_writes": 0,
+  "score_claim": "UNKNOWN; synthetic pass does not imply formal score gain"
+}

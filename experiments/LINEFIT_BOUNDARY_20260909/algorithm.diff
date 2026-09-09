@@ -1,0 +1,53 @@
+--- B0/cell5
++++ LINEFIT_BOUNDARY_20260909/cell5
+@@ -1271,6 +1271,11 @@
+     stats: dict[str, int],
+ ) -> dict[int, dict[str, object]]:
+     """Smooth linear track interiors without changing graph topology."""
++    stats["linefit_boundary_backward_stops"] = 0
++    stats["linefit_boundary_nodes"] = 0
++    stats["linefit_boundary_smoothed_nodes"] = 0
++    stats["linefit_boundary_shift_um_sum"] = 0.0
++    stats["linefit_boundary_shift_um_max"] = 0.0
+     if not OUTPUT_LINEFIT_SMOOTH or OUTPUT_LINEFIT_WEIGHT <= 0 or OUTPUT_LINEFIT_WINDOW <= 0 or not edges:
+         return nodes_by_id
+ 
+@@ -1297,13 +1302,20 @@
+ 
+     for node_id in sorted(nodes_by_id):
+         neighbourhood: list[tuple[int, int]] = [(0, node_id)]
++        _linefit_boundary_stopped = False
+ 
+         current = node_id
+         for step in range(1, OUTPUT_LINEFIT_WINDOW + 1):
+             prev_ids = predecessor.get(current, [])
+             if len(prev_ids) != 1:
+                 break
+-            current = prev_ids[0]
++            prev_id = prev_ids[0]
++            if len(successor.get(prev_id, [])) != 1:
++                stats["linefit_boundary_backward_stops"] += 1
++                stats["linefit_boundary_nodes"] += 1
++                _linefit_boundary_stopped = True
++                break
++            current = prev_id
+             if current not in original_pos:
+                 break
+             neighbourhood.append((-step, current))
+@@ -1329,6 +1341,16 @@
+             stats["linefit_skipped_nodes"] += 1
+             continue
+         updated_pos[node_id] = (1.0 - weight) * original_pos[node_id] + weight * fitted
++        if _linefit_boundary_stopped:
++            stats["linefit_boundary_smoothed_nodes"] += 1
++            _linefit_shift_um = float(np.linalg.norm(
++                (updated_pos[node_id] - original_pos[node_id])
++                * np.asarray(VOXEL_SCALE_UM, dtype=np.float64)
++            ))
++            stats["linefit_boundary_shift_um_sum"] += _linefit_shift_um
++            stats["linefit_boundary_shift_um_max"] = max(
++                stats["linefit_boundary_shift_um_max"], _linefit_shift_um
++            )
+ 
+     for node_id, pos in updated_pos.items():
+         nodes_by_id[node_id]["z"] = float(pos[0])

@@ -1,0 +1,63 @@
+{
+  "task_id": "LINEFIT_BOUNDARY_20260909",
+  "phase": "preflight",
+  "status": "PASS",
+  "passed": 10,
+  "total": 10,
+  "checks": [
+    {
+      "id": "contract",
+      "passed": true,
+      "detail": "Frozen scope and 1/1/1 request budget"
+    },
+    {
+      "id": "baseline",
+      "passed": true,
+      "detail": "Unchanged B0 notebook"
+    },
+    {
+      "id": "single-cell",
+      "passed": true,
+      "detail": {
+        "changed_cells": [
+          5
+        ]
+      }
+    },
+    {
+      "id": "exact-linefit-patch",
+      "passed": true,
+      "detail": "Only authorized backward fork-boundary check plus pure observation counters"
+    },
+    {
+      "id": "compile",
+      "passed": true,
+      "detail": "All 13 cells parse; no notebook execution"
+    },
+    {
+      "id": "fixed-inputs-runtime",
+      "passed": true,
+      "detail": "Only ref/title differ; B0 input versions and runtime retained"
+    },
+    {
+      "id": "actual-synthetic-tests",
+      "passed": true,
+      "detail": "20 actual extracted-function tests; no gain claim"
+    },
+    {
+      "id": "tested-source-hashes",
+      "passed": true,
+      "detail": "Test receipt bound to current source"
+    },
+    {
+      "id": "manifest-files",
+      "passed": true,
+      "detail": "All frozen files match"
+    },
+    {
+      "id": "write-budget",
+      "passed": true,
+      "detail": "At most one action and one transport send each"
+    }
+  ]
+}

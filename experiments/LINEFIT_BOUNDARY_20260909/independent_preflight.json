@@ -1,0 +1,325 @@
+{
+  "task_id": "LINEFIT_BOUNDARY_20260909",
+  "status": "PASS",
+  "scope": "Independent local candidate and write-helper preflight; not platform execution/score/completion",
+  "observed_at_utc": "2026-09-09T02:31:05.624301+00:00",
+  "checks": [
+    {
+      "name": "independent_notebook_single_function_scope",
+      "status": "PASS",
+      "detail": {
+        "changed_cells": [
+          5
+        ],
+        "only_changed_function": "linefit_smooth_output_graph",
+        "other12_cells_and_notebook_metadata": "BYTE_VALUE_EQUAL",
+        "original_PP_cells9_10_11": "BYTE_EQUAL",
+        "primary_secondary_DC_and_TTA_cells0_4": "BYTE_EQUAL",
+        "13_cell_compile": "PASS_NOT_EXECUTED"
+      }
+    },
+    {
+      "name": "independent_fixed_metadata",
+      "status": "PASS",
+      "detail": {
+        "changed_keys": [
+          "id",
+          "title"
+        ],
+        "fixed_inputs_versions": [
+          5,
+          2,
+          10
+        ],
+        "runtime_and_input_metadata_matches_B0": true
+      }
+    },
+    {
+      "name": "actual_function_no_fork_equal_False_1",
+      "status": "PASS",
+      "detail": {
+        "size": 1,
+        "curved": false,
+        "bitwise_coordinates": true
+      }
+    },
+    {
+      "name": "actual_function_no_fork_equal_False_2",
+      "status": "PASS",
+      "detail": {
+        "size": 2,
+        "curved": false,
+        "bitwise_coordinates": true
+      }
+    },
+    {
+      "name": "actual_function_no_fork_equal_False_3",
+      "status": "PASS",
+      "detail": {
+        "size": 3,
+        "curved": false,
+        "bitwise_coordinates": true
+      }
+    },
+    {
+      "name": "actual_function_no_fork_equal_False_9",
+      "status": "PASS",
+      "detail": {
+        "size": 9,
+        "curved": false,
+        "bitwise_coordinates": true
+      }
+    },
+    {
+      "name": "actual_function_no_fork_equal_True_1",
+      "status": "PASS",
+      "detail": {
+        "size": 1,
+        "curved": true,
+        "bitwise_coordinates": true
+      }
+    },
+    {
+      "name": "actual_function_no_fork_equal_True_2",
+      "status": "PASS",
+      "detail": {
+        "size": 2,
+        "curved": true,
+        "bitwise_coordinates": true
+      }
+    },
+    {
+      "name": "actual_function_no_fork_equal_True_3",
+      "status": "PASS",
+      "detail": {
+        "size": 3,
+        "curved": true,
+        "bitwise_coordinates": true
+      }
+    },
+    {
+      "name": "actual_function_no_fork_equal_True_9",
+      "status": "PASS",
+      "detail": {
+        "size": 9,
+        "curved": true,
+        "bitwise_coordinates": true
+      }
+    },
+    {
+      "name": "independent_actual_fork_boundary_isolation",
+      "status": "PASS",
+      "detail": {
+        "candidate_daughters_parent_perturbation_invariant": true,
+        "B0_control_responds": true,
+        "node_edge_topology_preserved_by_test_run": true
+      }
+    },
+    {
+      "name": "independent_actual_observation_purity",
+      "status": "PASS",
+      "detail": {
+        "observations_do_not_change_coordinate_bytes": true,
+        "numpy_rng_unchanged": true,
+        "physical_um_movement_recomputed": true,
+        "boundary_nodes_counter_is_not_claimed_as_changed_coordinate_count": true
+      }
+    },
+    {
+      "name": "prior_actual_20_tests_receipt_bound_to_current_files",
+      "status": "PASS",
+      "detail": {
+        "original_executed_suite_passed": 20,
+        "receipt_source_hashes_match": true,
+        "suite_source_reviewed": true,
+        "did_not_call_suite_main_or_rebuild_candidate": true
+      }
+    },
+    {
+      "name": "actual_transport_mock_save",
+      "status": "PASS",
+      "detail": {
+        "underlying_mock_sends": 1,
+        "second_send_blocked": true,
+        "redirect_blocked": false,
+        "max_retries": 0,
+        "restored_builder": true,
+        "actual_network_requests": 0
+      }
+    },
+    {
+      "name": "actual_transport_mock_submit",
+      "status": "PASS",
+      "detail": {
+        "underlying_mock_sends": 1,
+        "second_send_blocked": true,
+        "redirect_blocked": false,
+        "max_retries": 0,
+        "restored_builder": true,
+        "actual_network_requests": 0
+      }
+    },
+    {
+      "name": "actual_transport_mock_redirect_rejected",
+      "status": "PASS",
+      "detail": {
+        "underlying_mock_sends": 1,
+        "second_send_blocked": false,
+        "redirect_blocked": true,
+        "max_retries": 0,
+        "restored_builder": true,
+        "actual_network_requests": 0
+      }
+    },
+    {
+      "name": "actual_helper_unknown_outcome_nonzero_and_no_retry",
+      "status": "PASS",
+      "detail": {
+        "unknown_outcome_returns": 3,
+        "attempt_remains_booked": true,
+        "second_attempt_blocked_before_preflight": true,
+        "actual_Kaggle_writes": 0,
+        "scope": "local mocks; no API authentication; this probe stubs manifest checks only to isolate bookkeeping"
+      }
+    },
+    {
+      "name": "corrected_writegate_static_review",
+      "status": "PASS",
+      "detail": {
+        "all_previous_blockers_resolved": true,
+        "checked_markers": [
+          "m['frozen'] is True",
+          "Required frozen file omitted",
+          "Metadata differs beyond authorized id/title",
+          "SDK serialized source mismatch",
+          "Exact Version/SV or formal identity missing",
+          "Candidate not bound to unique save receipt",
+          "Invalid saved input sources",
+          "receipt['kernel_id'] > 0",
+          "return 0 if op['status'] == 'RESPONSE_RECEIVED_READBACK_REQUIRED' else 3",
+          "raise SystemExit(main())"
+        ]
+      }
+    },
+    {
+      "name": "tls_delta_always_tls",
+      "status": "PASS",
+      "detail": {
+        "calls": 3,
+        "returned": null,
+        "error_type": "SSLError",
+        "network_calls": 0
+      }
+    },
+    {
+      "name": "tls_delta_success_on_third",
+      "status": "PASS",
+      "detail": {
+        "calls": 3,
+        "returned": "ok",
+        "error_type": null,
+        "network_calls": 0
+      }
+    },
+    {
+      "name": "tls_delta_non_tls",
+      "status": "PASS",
+      "detail": {
+        "calls": 1,
+        "returned": null,
+        "error_type": "ValueError",
+        "network_calls": 0
+      }
+    },
+    {
+      "name": "tls_delta_actual_snapshot_kernel_nesting_nine_read_attempts",
+      "status": "PASS",
+      "detail": {
+        "actual_snapshot_and_kernel_wrappers_executed": true,
+        "mock_read_calls": {
+          "get_kernel": 9,
+          "get_competition": 3,
+          "list_submissions": 3
+        },
+        "meaning": "Each decorator allows3 attempts; nested snapshot->kernel permits9 kernel reads, not3 total.",
+        "network_calls": 0
+      }
+    },
+    {
+      "name": "tls_delta_write_SSLError_remains_single_attempt",
+      "status": "PASS",
+      "detail": {
+        "mock_SDK_write_method_calls": 1,
+        "actual_network_sends": 0,
+        "unknown_exit": 3,
+        "second_attempt_blocked": true,
+        "write_TLS_error_not_retried": true
+      }
+    },
+    {
+      "name": "tls_delta_static_retry_scope_excludes_write",
+      "status": "PASS",
+      "detail": {
+        "decorated_functions": [
+          "kernel",
+          "snapshot",
+          "main.authenticate_readonly"
+        ],
+        "write_undecorated": true,
+        "snapshot_and_kernel_have_no_platform_write_calls": true,
+        "authentication_wrapper_body_only_import_and_return": true,
+        "single_write_transport_source_unchanged": true,
+        "policy": "Read TLS recovery only; per-wrapper3, nestedkernelworst9; write transport max1 send with0 retries."
+      }
+    }
+  ],
+  "passed": 24,
+  "total": 24,
+  "file_sha256": {
+    "experiments/LINEFIT_BOUNDARY_20260909/candidate.ipynb": "2476eae2ff6f95d79a18c8a1294e14e10e5309c61ec86872cbc4962687b852a5",
+    "experiments/LINEFIT_BOUNDARY_20260909/kernel-metadata.json": "5f457b08159866f7f12ba951a34847b3cdce2987a685360d5fef05d85de0d611",
+    "experiments/LINEFIT_BOUNDARY_20260909/algorithm.diff": "a911be1d6918cb487b13dc95b2337bee69f0da8b34ac5e383c2559f288804675",
+    "experiments/LINEFIT_BOUNDARY_20260909/build_receipt.json": "a9d669318205fc970128f37490ba8ef38d028a399c38a866b33ef76e0cd30263",
+    "experiments/LINEFIT_BOUNDARY_20260909/tests.json": "2ab191b018398a708566e046aba490d83e6bf0d12dfb9a1bb492b450cbed0e2a",
+    "experiments/LINEFIT_BOUNDARY_20260909/build_candidate.py": "db815cd3a29cad9923a9cede6ae9fe8cbb5bef8d394fed0cbc1e030a4c53c82b",
+    "experiments/LINEFIT_BOUNDARY_20260909/linefit_patch.py": "97ea8b0d1bda9a694b91b82cb55d4c2f2ddcd0e1d8df171b2e3dc6e3d2fe0451",
+    "experiments/LINEFIT_BOUNDARY_20260909/test_linefit.py": "d90c7c5ac27500e6be40285ea08bdfb0dc22bd233fb91721d0726c5b3b4f8660",
+    "experiments/LINEFIT_BOUNDARY_20260909/kaggle_io.py": "ebbee458e1dcb9e71892ea4d7aed3042432ac7492e4939b7b22ec457305bc289",
+    "experiments/PUBLIC946_TTA_20260908/B0/candidate.ipynb": "c4bfcd8d765c67d35435876b3f3eb7bb810e20556479a918143451e2c61f849c",
+    "experiments/PUBLIC946_TTA_20260908/B0/kernel-metadata.json": "de8a3c54a515315b1c18803d3a1b5fbf9c42777f9fbc400aed66d169797889e2",
+    "experiments/PUBLIC946_TTA_20260908/execute_once.py": "cf8cb5f595e8bcb70ab3e1b82f646a87c9efaadeb5190c96dcb139c7e11e625f",
+    "tasks/CODEX_20260909_BIOHUB_LINEFIT_BOUNDARY_CONTRACT.json": "38ef065b940817d544c3d75de505f955473583a1f9dbf6a7a01019af5fb97bfd"
+  },
+  "candidate_source_sha256": "2476eae2ff6f95d79a18c8a1294e14e10e5309c61ec86872cbc4962687b852a5",
+  "candidate_sdk_submitted_sha256": "4271519ed44e28da93e89128fc6e39515f954e96b8c2d0a9b102c23f3e08f11b",
+  "frozen_manifest_state": "ROOT_WILL_FREEZE_AFTER_THIS_REVIEW",
+  "remaining_platform_requirements": [
+    "freeze manifest including this receipt and source/tests/helpers/contract",
+    "live principal/availability/quota/absence checks immediately before sole save",
+    "ordinary output and exact Version/ScriptVersionId/input readback before sole formal submission",
+    "official terminal score remains UNKNOWN until obtained"
+  ],
+  "external_writes": {
+    "Kaggle": 0,
+    "training": 0,
+    "Dataset_Model": 0
+  },
+  "notes": [
+    "Independent probes execute only extracted linefit function on tiny synthetic graphs and SDK transport/state mocks; no Notebook model code or inference.",
+    "No existing candidate/source/tests files were modified.",
+    "B0 existing common audit labels retained per build receipt; candidate identity must use new metadata and external precise-version receipts.",
+    "API Submission rows lack Version/SV fields; before formal submit root should also inspect same-object UI for differently described manual submissions."
+  ],
+  "review_updates": [
+    {
+      "kind": "READ_ONLY_TLS_RETRY_DELTA",
+      "previous_receipt_sha256": "f61e8578c231d41b3e96e6bd9be127f39308dc43bb0ba085148fd4c1a7475b75",
+      "previous_checks_preserved": 18,
+      "additional_checks": 6,
+      "new_helper_sha256": "ebbee458e1dcb9e71892ea4d7aed3042432ac7492e4939b7b22ec457305bc289",
+      "scope": "Only local synthetic mocks and AST review; no actual Kaggle network or writes",
+      "read_retry_bound": "At most3 attempts per decorated call; nested snapshot->kernel at most9 kernel attempts; not3 global.",
+      "write_retry_bound": "One attempted SDK write, one underlyingsendmaximum, transportretries0; TLSwritefailureUNKNOWN with exit3 and no retry."
+    }
+  ]
+}

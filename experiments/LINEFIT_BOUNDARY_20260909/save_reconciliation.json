@@ -1,0 +1,42 @@
+{
+  "status": "SAVED_VERSION_CONFIRMED_BY_READBACK",
+  "observed_at_utc": "2026-09-09T02:33:22.303139+00:00",
+  "method": "Official GetKernel exact ref/kernel ID/Version and all13 cell hashes; CUA also shows running GPU notebook",
+  "kernel": {
+    "ref": "sailorren/biohub-946-linefit-boundary-20260909",
+    "kernel_id": 133664101,
+    "version": 1,
+    "is_private": true,
+    "enable_gpu": true,
+    "enable_internet": false,
+    "machine_shape": "NvidiaTeslaT4",
+    "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+    "datasets": [
+      "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+      "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+      "pilkwang/biohub-tracking-support-pack-50ep-v1"
+    ],
+    "source_sha256": "b6ca06e5fee8d7374cfe2351fab47101d6f31629e78359d2f377e00242e803f6",
+    "cell_sha256": [
+      "4287b1b08b202ca561790489b6cf5941381b3fccfca40bf060239ae22ea3b132",
+      "64bf335d2ea9f1dea62e2e7b3ad3b94205a775e8c5a53515d94bea3b6c655ba2",
+      "6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643",
+      "681232942fbb971dc1b999816b32c6d91da819e55d123b359b601169dd5982fb",
+      "0c9219ab51b8793a8d05c469221a29ebc4d1379458c28d1ba41db08bd57575a6",
+      "67a3fcf7dab1a9073a1eb25f6b884c6fafbb36dd2b1f22ed69b1734f3c313102",
+      "239f51c30606f090e1fbc939a541891cef2dbea45d7b1c4a6fef53352e94759d",
+      "0083b9cd0b94cabba7c28f12bf8d80f6eda4a982d1f6f44ead0975ea0de89e92",
+      "3988c72818365e0cf42169df1d42d3d64e64a6f2815a42255a04222523936349",
+      "2e658927d77b92f79dbb5ac701cdb25ea0eef35e5c4901ed69d00a5aa932eae4",
+      "035037debb8d20a189d59efb74e42b59165172bd0a181e16947ff79c6d6f3c2f",
+      "974767da6156ddf12c5b2d1351b13658f160d0b859a36deb9614441c006537ba",
+      "de5b8e39238b894f8d2aed2660e7e3e2ac74b4edfea04dd6ccee470555e9d58a"
+    ]
+  },
+  "snapshot_path": "experiments/LINEFIT_BOUNDARY_20260909/read_20260909T023332Z.json",
+  "submitted_source_sha256": "4271519ed44e28da93e89128fc6e39515f954e96b8c2d0a9b102c23f3e08f11b",
+  "save_requests": 1,
+  "second_save_requested": false,
+  "original_local_error": "SaveKernel returned relative /code/ path; strict local normalizer expected owner/slug. Response itself had Version1, positive kernelID, empty error and no invalid input sources.",
+  "source_serialization_note": "Kaggle stores different notebook JSON bytes; every cell source matches exactly, SDK wire SHA is separately bound to the sole request."
+}

@@ -1,0 +1,94 @@
+{
+  "task_id": "LINEFIT_BOUNDARY_20260909",
+  "status": "BUILT_NOT_RUN",
+  "baseline_ref": "sailorren/biohub-946-b0-repro-20260908",
+  "baseline_version": 1,
+  "baseline_script_version_id": 348114666,
+  "baseline_submission_id": 56091397,
+  "baseline_notebook_sha256": "c4bfcd8d765c67d35435876b3f3eb7bb810e20556479a918143451e2c61f849c",
+  "candidate_ref": "sailorren/biohub-946-linefit-boundary-20260909",
+  "candidate_notebook_sha256": "2476eae2ff6f95d79a18c8a1294e14e10e5309c61ec86872cbc4962687b852a5",
+  "metadata_sha256": "5f457b08159866f7f12ba951a34847b3cdce2987a685360d5fef05d85de0d611",
+  "algorithm_diff_sha256": "a911be1d6918cb487b13dc95b2337bee69f0da8b34ac5e383c2559f288804675",
+  "changed_cell_indices": [
+    5
+  ],
+  "metadata_changed_keys": [
+    "id",
+    "title"
+  ],
+  "all_other_cells_and_notebook_metadata_equal": true,
+  "cell_source_sha256": [
+    "4287b1b08b202ca561790489b6cf5941381b3fccfca40bf060239ae22ea3b132",
+    "64bf335d2ea9f1dea62e2e7b3ad3b94205a775e8c5a53515d94bea3b6c655ba2",
+    "6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643",
+    "681232942fbb971dc1b999816b32c6d91da819e55d123b359b601169dd5982fb",
+    "0c9219ab51b8793a8d05c469221a29ebc4d1379458c28d1ba41db08bd57575a6",
+    "67a3fcf7dab1a9073a1eb25f6b884c6fafbb36dd2b1f22ed69b1734f3c313102",
+    "239f51c30606f090e1fbc939a541891cef2dbea45d7b1c4a6fef53352e94759d",
+    "0083b9cd0b94cabba7c28f12bf8d80f6eda4a982d1f6f44ead0975ea0de89e92",
+    "3988c72818365e0cf42169df1d42d3d64e64a6f2815a42255a04222523936349",
+    "2e658927d77b92f79dbb5ac701cdb25ea0eef35e5c4901ed69d00a5aa932eae4",
+    "035037debb8d20a189d59efb74e42b59165172bd0a181e16947ff79c6d6f3c2f",
+    "974767da6156ddf12c5b2d1351b13658f160d0b859a36deb9614441c006537ba",
+    "de5b8e39238b894f8d2aed2660e7e3e2ac74b4edfea04dd6ccee470555e9d58a"
+  ],
+  "patch": {
+    "function": "linefit_smooth_output_graph",
+    "only_function_changed": true,
+    "original_function_sha256": "6644f92ef816d67970d49e9ac30a78eba7676e6ea035c19afa4bfa2152baa050",
+    "algorithm_function_sha256": "bac2413acc4d69369cfc2ba6dbfaeef8ab9fe5524607ce57b36914ebbd902571",
+    "candidate_function_sha256": "2bb1868a3bc3ea3a56c406392cd0e739c1296b4081487bde4fd7ec4c0e464a1c",
+    "replacements": [
+      {
+        "label": "stop_backward_traversal_before_fork_parent",
+        "category": "algorithm",
+        "matches": 1,
+        "before_sha256": "6a05b87ec6838f23f43478b98e7294177859ec8d9be56e66e86bbedb3ea723cc",
+        "after_sha256": "4617312ba2395a5b0ea8e3f14801b4e660a1056da2a63ae979c0fd5a5b1d22a0"
+      },
+      {
+        "label": "initialize_observation_counters",
+        "category": "observation_only",
+        "matches": 1,
+        "before_sha256": "6624ce9d12c12a2619746e7a85635e90e147ddbb04094c80ad112895a0196c31",
+        "after_sha256": "df04d745f03fec4c5802e0058c80fa583991b31e0fe4300afc4592435ed44064"
+      },
+      {
+        "label": "initialize_per_node_boundary_flag",
+        "category": "observation_only",
+        "matches": 1,
+        "before_sha256": "108015e2750c7fa5e9aa621d279ebe2523a0c5d8b8709dfd3e06f628be700d5f",
+        "after_sha256": "e0801fb4caccf76b3432236686a31575034f0ed6115e28073520c620a497021e"
+      },
+      {
+        "label": "count_boundary_stop_once_per_node",
+        "category": "observation_only",
+        "matches": 1,
+        "before_sha256": "eaab9854d59f5e3dade3d3471eb6df8cc9c2fd95673f19619b4c3d19c9cf9288",
+        "after_sha256": "5598ca35e81d1284c6eaf0fd9885a2722ef6742fce641ed49923f5a57cc635d5"
+      },
+      {
+        "label": "measure_actual_candidate_movement_of_boundary_nodes",
+        "category": "observation_only",
+        "matches": 1,
+        "before_sha256": "07d94afbae4e9f1babbaa238d5fea5e3bdc25e25375b5202e3345b7bee13579f",
+        "after_sha256": "36cca334a699cbd07cc5a7c6121948bc3b285970563bb64064b63bd223c5bd58"
+      }
+    ],
+    "diagnostic_keys": [
+      "linefit_boundary_backward_stops",
+      "linefit_boundary_nodes",
+      "linefit_boundary_smoothed_nodes",
+      "linefit_boundary_shift_um_sum",
+      "linefit_boundary_shift_um_max"
+    ],
+    "movement_scope": "candidate output minus input position, physical micrometers; not a B0 prediction difference",
+    "boundary_nodes_scope": "nodes whose backward neighborhood hits a fork; not necessarily nodes with changed final coordinates",
+    "baseline_algorithm_rerun_inside_candidate": false
+  },
+  "preserved_audit_scope": "B0/PUBLIC946 original observational audit retained unchanged; candidate identity comes from new kernel metadata and external exact-version receipts",
+  "algorithm_change": "backward linefit traversal requires predecessor successor count exactly one; forward traversal unchanged",
+  "postprocess_policy": "weight=.8/window=2 and original automatic PP candidate list/selection unchanged",
+  "kaggle_writes": 0
+}

@@ -1,0 +1,39 @@
+{
+  "task_id": "LINEFIT_BOUNDARY_20260909",
+  "operations": [
+    {
+      "action": "save",
+      "at_utc": "2026-09-09T02:32:38.901066+00:00",
+      "ref": "sailorren/biohub-946-linefit-boundary-20260909",
+      "manifest_sha256": "eb45073c9ab58005c603353d59782b4d6c879b03027c15e27bd91573279cbdda",
+      "submitted_source_sha256": "4271519ed44e28da93e89128fc6e39515f954e96b8c2d0a9b102c23f3e08f11b",
+      "status": "WRITE_OUTCOME_UNKNOWN_READ_ONLY_RECONCILE_REQUIRED",
+      "version": null,
+      "script_version_id": null,
+      "transport": {
+        "max_retries": 0,
+        "allow_redirects": false,
+        "max_write_sends": 1,
+        "send_calls": 1
+      },
+      "response": {
+        "ref": "/code/sailorren/biohub-946-linefit-boundary-20260909",
+        "kernel_id": 133664101,
+        "version": 1,
+        "error": "",
+        "invalid_dataset_sources": [],
+        "invalid_competition_sources": [],
+        "invalid_kernel_sources": [],
+        "invalid_model_sources": []
+      },
+      "error_type": "RuntimeError",
+      "http_status": null,
+      "completed_at_utc": "2026-09-09T02:32:42.559842+00:00",
+      "readback_reconciliation": {
+        "status": "SAVED_VERSION_CONFIRMED_BY_READBACK",
+        "path": "experiments/LINEFIT_BOUNDARY_20260909/save_reconciliation.json",
+        "at_utc": "2026-09-09T02:33:22.303139+00:00"
+      }
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "task_id": "LINEFIT_BOUNDARY_20260909",
+  "ref": "sailorren/biohub-946-linefit-boundary-20260909",
+  "frozen": true,
+  "frozen_at_utc": "2026-09-09T02:32:13.934690+00:00",
+  "basis_commit": "add2018e9ab1142d170625cd960298974cffaaa8",
+  "candidate_notebook_sha256": "2476eae2ff6f95d79a18c8a1294e14e10e5309c61ec86872cbc4962687b852a5",
+  "submitted_source_sha256": "4271519ed44e28da93e89128fc6e39515f954e96b8c2d0a9b102c23f3e08f11b",
+  "cell_sha256": [
+    "4287b1b08b202ca561790489b6cf5941381b3fccfca40bf060239ae22ea3b132",
+    "64bf335d2ea9f1dea62e2e7b3ad3b94205a775e8c5a53515d94bea3b6c655ba2",
+    "6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643",
+    "681232942fbb971dc1b999816b32c6d91da819e55d123b359b601169dd5982fb",
+    "0c9219ab51b8793a8d05c469221a29ebc4d1379458c28d1ba41db08bd57575a6",
+    "67a3fcf7dab1a9073a1eb25f6b884c6fafbb36dd2b1f22ed69b1734f3c313102",
+    "239f51c30606f090e1fbc939a541891cef2dbea45d7b1c4a6fef53352e94759d",
+    "0083b9cd0b94cabba7c28f12bf8d80f6eda4a982d1f6f44ead0975ea0de89e92",
+    "3988c72818365e0cf42169df1d42d3d64e64a6f2815a42255a04222523936349",
+    "2e658927d77b92f79dbb5ac701cdb25ea0eef35e5c4901ed69d00a5aa932eae4",
+    "035037debb8d20a189d59efb74e42b59165172bd0a181e16947ff79c6d6f3c2f",
+    "974767da6156ddf12c5b2d1351b13658f160d0b859a36deb9614441c006537ba",
+    "de5b8e39238b894f8d2aed2660e7e3e2ac74b4edfea04dd6ccee470555e9d58a"
+  ],
+  "frozen_files": {
+    "experiments/LINEFIT_BOUNDARY_20260909/candidate.ipynb": "2476eae2ff6f95d79a18c8a1294e14e10e5309c61ec86872cbc4962687b852a5",
+    "experiments/LINEFIT_BOUNDARY_20260909/kernel-metadata.json": "5f457b08159866f7f12ba951a34847b3cdce2987a685360d5fef05d85de0d611",
+    "experiments/LINEFIT_BOUNDARY_20260909/build_candidate.py": "db815cd3a29cad9923a9cede6ae9fe8cbb5bef8d394fed0cbc1e030a4c53c82b",
+    "experiments/LINEFIT_BOUNDARY_20260909/linefit_patch.py": "97ea8b0d1bda9a694b91b82cb55d4c2f2ddcd0e1d8df171b2e3dc6e3d2fe0451",
+    "experiments/LINEFIT_BOUNDARY_20260909/test_linefit.py": "d90c7c5ac27500e6be40285ea08bdfb0dc22bd233fb91721d0726c5b3b4f8660",
+    "experiments/LINEFIT_BOUNDARY_20260909/tests.json": "2ab191b018398a708566e046aba490d83e6bf0d12dfb9a1bb492b450cbed0e2a",
+    "experiments/LINEFIT_BOUNDARY_20260909/build_receipt.json": "a9d669318205fc970128f37490ba8ef38d028a399c38a866b33ef76e0cd30263",
+    "experiments/LINEFIT_BOUNDARY_20260909/algorithm.diff": "a911be1d6918cb487b13dc95b2337bee69f0da8b34ac5e383c2559f288804675",
+    "experiments/LINEFIT_BOUNDARY_20260909/kaggle_io.py": "ebbee458e1dcb9e71892ea4d7aed3042432ac7492e4939b7b22ec457305bc289",
+    "experiments/LINEFIT_BOUNDARY_20260909/verify.py": "541afbe214d07a3fd08a45d05be647cdbd09e4f8cca9bd46189ee45eae795c66",
+    "experiments/LINEFIT_BOUNDARY_20260909/collect_output.py": "47a52b5fc878ba55cdf82fba155bb0faf0c8dfaf3bd4bee0010f9eef86a78729",
+    "experiments/LINEFIT_BOUNDARY_20260909/independent_preflight.json": "0120869e357e39cac022163d6347951af4a09fdb9bc691ac31668b66e53ad75a",
+    "experiments/LINEFIT_BOUNDARY_20260909/scorer_diagnostic.py": "e2a46eab2f106be3dbd58473b065b38d0ddc1e6eff25f90cbe05d71eaf3041d5",
+    "experiments/LINEFIT_BOUNDARY_20260909/scorer_diagnostic.json": "cb66992d3b268068ad011d32db16dd6c6c5ceea061a4b4334258a6ad269e8c77",
+    "experiments/LINEFIT_BOUNDARY_20260909/scorer_diagnostic.md": "1a0480414941d29249ed2065680a417d7c215d0bfaaffbd26f0d65a179ef5cb2",
+    "experiments/PUBLIC946_TTA_20260908/execute_once.py": "cf8cb5f595e8bcb70ab3e1b82f646a87c9efaadeb5190c96dcb139c7e11e625f",
+    "experiments/PUBLIC946_TTA_20260908/B0/candidate.ipynb": "c4bfcd8d765c67d35435876b3f3eb7bb810e20556479a918143451e2c61f849c",
+    "experiments/PUBLIC946_TTA_20260908/B0/kernel-metadata.json": "de8a3c54a515315b1c18803d3a1b5fbf9c42777f9fbc400aed66d169797889e2",
+    "tasks/CODEX_20260909_BIOHUB_LINEFIT_BOUNDARY_CONTRACT.json": "38ef065b940817d544c3d75de505f955473583a1f9dbf6a7a01019af5fb97bfd"
+  },
+  "algorithm_scope": "linefit backward neighborhood stops before fork parent; observations only otherwise; B0 original selector unchanged",
+  "budget_limits": {
+    "new_notebooks": 1,
+    "save_requests": 1,
+    "formal_submission_requests": 1
+  },
+  "local_tests": {
+    "linefit_passed": 20,
+    "scorer_assertions_passed": 83,
+    "independent_preflight_passed": 24
+  },
+  "read_retry_scope": "each decorated read at most3 attempts; nested snapshot/kernel at most9; write is one attempt with zero transport retries"
+}

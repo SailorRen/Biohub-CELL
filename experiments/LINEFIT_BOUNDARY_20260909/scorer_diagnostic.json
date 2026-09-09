@@ -1,0 +1,1266 @@
+{
+  "aggregation": {
+    "convenience_minus_full": 0.0714285714285714,
+    "missing_metadata_official_adjusted": null,
+    "missing_metadata_proxy_adjusted": 1.0,
+    "official_convenience": {
+      "division_jaccard": 1.0,
+      "edge_jaccard": 1.0,
+      "score": 1.1
+    },
+    "official_full": {
+      "adj_edge_jaccard": 0.9285714285714286,
+      "division_fn": 0,
+      "division_fp": 0,
+      "division_jaccard": 1.0,
+      "division_tp": 1,
+      "edge_jaccard": 1.0,
+      "n": 2,
+      "n_adj": 2,
+      "node_recall": 1.0,
+      "score": 1.0285714285714287
+    },
+    "official_per_sample": [
+      {
+        "adj_edge_jaccard": 0.9,
+        "division_fn": 0,
+        "division_fp": 0,
+        "division_tp": 1,
+        "edge_fn": 0,
+        "edge_fp": 0,
+        "edge_jaccard": 1.0,
+        "edge_tp": 5,
+        "node_recall": 1.0,
+        "num_pred_nodes": 12,
+        "total_node_ratio": 1.0
+      },
+      {
+        "adj_edge_jaccard": 1.0,
+        "division_fn": 0,
+        "division_fp": 0,
+        "division_tp": 0,
+        "edge_fn": 0,
+        "edge_fp": 0,
+        "edge_jaccard": 1.0,
+        "edge_tp": 2,
+        "node_recall": 1.0,
+        "num_pred_nodes": 3,
+        "total_node_ratio": 0.0
+      }
+    ],
+    "proxy": {
+      "adjusted_edge_jaccard": 0.9285714285714286,
+      "div_fn": 0,
+      "div_fp": 0,
+      "div_tp": 1,
+      "division_jaccard": 1.0,
+      "edges_fragmented": 0,
+      "edges_lost_to_detection": 0,
+      "edges_recovered": 7,
+      "missed_gt_nodes": 0,
+      "proxy_score": 1.0285714285714287,
+      "spurious_pred_nodes": 6,
+      "wrong_association_edges": 0
+    }
+  },
+  "cases": [
+    {
+      "id": "perfect_division",
+      "input_sha256": "ba4976aba4a84f822c3ed0e45481540adf054c94d9f423c84bddc10ff8e3a6cc",
+      "official_counts": [
+        5,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "official_per_sample": {
+        "adj_edge_jaccard": 1.0,
+        "division_fn": 0,
+        "division_fp": 0,
+        "division_tp": 1,
+        "edge_fn": 0,
+        "edge_fp": 0,
+        "edge_jaccard": 1.0,
+        "edge_tp": 5,
+        "node_recall": 1.0,
+        "num_pred_nodes": 6,
+        "total_node_ratio": 0.0
+      },
+      "official_summary": {
+        "adj_edge_jaccard": 1.0,
+        "division_fn": 0,
+        "division_fp": 0,
+        "division_jaccard": 1.0,
+        "division_tp": 1,
+        "edge_jaccard": 1.0,
+        "n": 1,
+        "n_adj": 1,
+        "node_recall": 1.0,
+        "score": 1.1
+      },
+      "proxy_counts": [
+        5,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "proxy_minus_official_score": 0.0,
+      "proxy_per_sample": {
+        "adjusted_edge_jaccard": 1.0,
+        "div_fn": 0,
+        "div_fp": 0,
+        "div_jaccard": 1.0,
+        "div_tp": 1,
+        "edge_fn": 0,
+        "edge_fp": 0,
+        "edge_jaccard": 1.0,
+        "edge_tp": 5,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 0,
+        "edges_recovered": 5,
+        "missed_gt_nodes": 0,
+        "spurious_pred_nodes": 0,
+        "t_pred": 6,
+        "t_true": 6,
+        "weight": 5,
+        "wrong_association_edges": 0
+      },
+      "proxy_summary": {
+        "adjusted_edge_jaccard": 1.0,
+        "div_fn": 0,
+        "div_fp": 0,
+        "div_tp": 1,
+        "division_jaccard": 1.0,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 0,
+        "edges_recovered": 5,
+        "missed_gt_nodes": 0,
+        "proxy_score": 1.1,
+        "spurious_pred_nodes": 0,
+        "wrong_association_edges": 0
+      },
+      "purpose": "正常分裂阳性对照"
+    },
+    {
+      "id": "weak_component_same_branch",
+      "input_sha256": "6c69b8def9d32bc5c2181709e25915ee99f369db9718e045390f9fd782b81ed1",
+      "official_counts": [
+        2,
+        2,
+        3,
+        0,
+        1,
+        1
+      ],
+      "official_per_sample": {
+        "adj_edge_jaccard": 0.29047619047619044,
+        "division_fn": 1,
+        "division_fp": 1,
+        "division_tp": 0,
+        "edge_fn": 3,
+        "edge_fp": 2,
+        "edge_jaccard": 0.2857142857142857,
+        "edge_tp": 2,
+        "node_recall": 0.6666666666666666,
+        "num_pred_nodes": 5,
+        "total_node_ratio": -0.16666666666666666
+      },
+      "official_summary": {
+        "adj_edge_jaccard": 0.29047619047619044,
+        "division_fn": 1,
+        "division_fp": 1,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "edge_jaccard": 0.2857142857142857,
+        "n": 1,
+        "n_adj": 1,
+        "node_recall": 0.6666666666666666,
+        "score": 0.29047619047619044
+      },
+      "proxy_counts": [
+        2,
+        2,
+        3,
+        1,
+        0,
+        0
+      ],
+      "proxy_minus_official_score": 0.09999999999999998,
+      "proxy_per_sample": {
+        "adjusted_edge_jaccard": 0.29047619047619044,
+        "div_fn": 0,
+        "div_fp": 0,
+        "div_jaccard": 1.0,
+        "div_tp": 1,
+        "edge_fn": 3,
+        "edge_fp": 2,
+        "edge_jaccard": 0.2857142857142857,
+        "edge_tp": 2,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 3,
+        "edges_recovered": 2,
+        "missed_gt_nodes": 2,
+        "spurious_pred_nodes": 1,
+        "t_pred": 5,
+        "t_true": 6,
+        "weight": 7,
+        "wrong_association_edges": 1
+      },
+      "proxy_summary": {
+        "adjusted_edge_jaccard": 0.29047619047619044,
+        "div_fn": 0,
+        "div_fp": 0,
+        "div_tp": 1,
+        "division_jaccard": 1.0,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 3,
+        "edges_recovered": 2,
+        "missed_gt_nodes": 2,
+        "proxy_score": 0.3904761904761904,
+        "spurious_pred_nodes": 1,
+        "wrong_association_edges": 1
+      },
+      "purpose": "同一弱连通块包含两条GT女儿，但命中同一有向预测分支"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions",
+      "input_sha256": "5361531689ec221511afbbf4ac5404d37d5572cb52409527f06c77e796d90448",
+      "official_counts": [
+        6,
+        1,
+        5,
+        1,
+        0,
+        1
+      ],
+      "official_per_sample": {
+        "adj_edge_jaccard": 0.5166666666666667,
+        "division_fn": 1,
+        "division_fp": 0,
+        "division_tp": 1,
+        "edge_fn": 5,
+        "edge_fp": 1,
+        "edge_jaccard": 0.5,
+        "edge_tp": 6,
+        "node_recall": 0.6666666666666666,
+        "num_pred_nodes": 8,
+        "total_node_ratio": -0.3333333333333333
+      },
+      "official_summary": {
+        "adj_edge_jaccard": 0.5166666666666667,
+        "division_fn": 1,
+        "division_fp": 0,
+        "division_jaccard": 0.5,
+        "division_tp": 1,
+        "edge_jaccard": 0.5,
+        "n": 1,
+        "n_adj": 1,
+        "node_recall": 0.6666666666666666,
+        "score": 0.5666666666666668
+      },
+      "proxy_counts": [
+        6,
+        1,
+        5,
+        2,
+        0,
+        0
+      ],
+      "proxy_minus_official_score": 0.04999999999999993,
+      "proxy_per_sample": {
+        "adjusted_edge_jaccard": 0.5166666666666667,
+        "div_fn": 0,
+        "div_fp": 0,
+        "div_jaccard": 1.0,
+        "div_tp": 2,
+        "edge_fn": 5,
+        "edge_fp": 1,
+        "edge_jaccard": 0.5,
+        "edge_tp": 6,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 5,
+        "edges_recovered": 6,
+        "missed_gt_nodes": 4,
+        "spurious_pred_nodes": 0,
+        "t_pred": 8,
+        "t_true": 12,
+        "weight": 12,
+        "wrong_association_edges": 1
+      },
+      "proxy_summary": {
+        "adjusted_edge_jaccard": 0.5166666666666667,
+        "div_fn": 0,
+        "div_fp": 0,
+        "div_tp": 2,
+        "division_jaccard": 1.0,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 5,
+        "edges_recovered": 6,
+        "missed_gt_nodes": 4,
+        "proxy_score": 0.6166666666666667,
+        "spurious_pred_nodes": 0,
+        "wrong_association_edges": 1
+      },
+      "purpose": "仅一个预测fork，被B0弱连通规则重复计为两个GT分裂"
+    },
+    {
+      "id": "unmatched_fork_cross_components",
+      "input_sha256": "195aeb0481a478d0c3b810c7ea58ec02dcbae30b1427d7170f18276f0039fcbc",
+      "official_counts": [
+        0,
+        2,
+        2,
+        0,
+        1,
+        0
+      ],
+      "official_per_sample": {
+        "adj_edge_jaccard": 0.0,
+        "division_fn": 0,
+        "division_fp": 1,
+        "division_tp": 0,
+        "edge_fn": 2,
+        "edge_fp": 2,
+        "edge_jaccard": 0.0,
+        "edge_tp": 0,
+        "node_recall": 0.5,
+        "num_pred_nodes": 3,
+        "total_node_ratio": -0.25
+      },
+      "official_summary": {
+        "adj_edge_jaccard": 0.0,
+        "division_fn": 0,
+        "division_fp": 1,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "edge_jaccard": 0.0,
+        "n": 1,
+        "n_adj": 1,
+        "node_recall": 0.5,
+        "score": 0.0
+      },
+      "proxy_counts": [
+        0,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      "proxy_minus_official_score": 0.0,
+      "proxy_per_sample": {
+        "adjusted_edge_jaccard": 0.0,
+        "div_fn": 0,
+        "div_fp": 0,
+        "div_jaccard": 0.0,
+        "div_tp": 0,
+        "edge_fn": 2,
+        "edge_fp": 2,
+        "edge_jaccard": 0.0,
+        "edge_tp": 0,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 2,
+        "edges_recovered": 0,
+        "missed_gt_nodes": 2,
+        "spurious_pred_nodes": 1,
+        "t_pred": 3,
+        "t_true": 4,
+        "weight": 4,
+        "wrong_association_edges": 0
+      },
+      "proxy_summary": {
+        "adjusted_edge_jaccard": 0.0,
+        "div_fn": 0,
+        "div_fp": 0,
+        "div_tp": 0,
+        "division_jaccard": 0.0,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 2,
+        "edges_recovered": 0,
+        "missed_gt_nodes": 2,
+        "proxy_score": 0.0,
+        "spurious_pred_nodes": 1,
+        "wrong_association_edges": 0
+      },
+      "purpose": "未匹配预测fork的女儿分别命中不同GT连通分量"
+    },
+    {
+      "id": "delayed_local_division",
+      "input_sha256": "f04567f2c74df0bb4571da3487f878e9ca645dfc828054dcebf82d6bb58a7f4e",
+      "official_counts": [
+        1,
+        3,
+        4,
+        1,
+        0,
+        0
+      ],
+      "official_per_sample": {
+        "adj_edge_jaccard": 0.12708333333333333,
+        "division_fn": 0,
+        "division_fp": 0,
+        "division_tp": 1,
+        "edge_fn": 4,
+        "edge_fp": 3,
+        "edge_jaccard": 0.125,
+        "edge_tp": 1,
+        "node_recall": 0.6666666666666666,
+        "num_pred_nodes": 5,
+        "total_node_ratio": -0.16666666666666666
+      },
+      "official_summary": {
+        "adj_edge_jaccard": 0.12708333333333333,
+        "division_fn": 0,
+        "division_fp": 0,
+        "division_jaccard": 1.0,
+        "division_tp": 1,
+        "edge_jaccard": 0.125,
+        "n": 1,
+        "n_adj": 1,
+        "node_recall": 0.6666666666666666,
+        "score": 0.22708333333333333
+      },
+      "proxy_counts": [
+        1,
+        3,
+        4,
+        1,
+        0,
+        0
+      ],
+      "proxy_minus_official_score": 0.0,
+      "proxy_per_sample": {
+        "adjusted_edge_jaccard": 0.12708333333333333,
+        "div_fn": 0,
+        "div_fp": 0,
+        "div_jaccard": 1.0,
+        "div_tp": 1,
+        "edge_fn": 4,
+        "edge_fp": 3,
+        "edge_jaccard": 0.125,
+        "edge_tp": 1,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 4,
+        "edges_recovered": 1,
+        "missed_gt_nodes": 2,
+        "spurious_pred_nodes": 1,
+        "t_pred": 5,
+        "t_true": 6,
+        "weight": 8,
+        "wrong_association_edges": 0
+      },
+      "proxy_summary": {
+        "adjusted_edge_jaccard": 0.12708333333333333,
+        "div_fn": 0,
+        "div_fp": 0,
+        "div_tp": 1,
+        "division_jaccard": 1.0,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 4,
+        "edges_recovered": 1,
+        "missed_gt_nodes": 2,
+        "proxy_score": 0.22708333333333333,
+        "spurious_pred_nodes": 1,
+        "wrong_association_edges": 0
+      },
+      "purpose": "分裂延后一帧且保持两条有向分支的阳性对照"
+    },
+    {
+      "id": "merged_child_reject",
+      "input_sha256": "119a159c2674dad4d38ec1b3379e26db6e7a8847330e12c0ea09a1b5672861f3",
+      "official_counts": [
+        5,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "official_per_sample": {
+        "adj_edge_jaccard": 0.8194444444444444,
+        "division_fn": 1,
+        "division_fp": 1,
+        "division_tp": 0,
+        "edge_fn": 0,
+        "edge_fp": 1,
+        "edge_jaccard": 0.8333333333333334,
+        "edge_tp": 5,
+        "node_recall": 1.0,
+        "num_pred_nodes": 7,
+        "total_node_ratio": 0.16666666666666666
+      },
+      "official_summary": {
+        "adj_edge_jaccard": 0.8194444444444443,
+        "division_fn": 1,
+        "division_fp": 1,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "edge_jaccard": 0.8333333333333334,
+        "n": 1,
+        "n_adj": 1,
+        "node_recall": 1.0,
+        "score": 0.8194444444444443
+      },
+      "proxy_counts": [
+        5,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "proxy_minus_official_score": 0.09999999999999998,
+      "proxy_per_sample": {
+        "adjusted_edge_jaccard": 0.8194444444444444,
+        "div_fn": 0,
+        "div_fp": 0,
+        "div_jaccard": 1.0,
+        "div_tp": 1,
+        "edge_fn": 0,
+        "edge_fp": 1,
+        "edge_jaccard": 0.8333333333333334,
+        "edge_tp": 5,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 0,
+        "edges_recovered": 5,
+        "missed_gt_nodes": 0,
+        "spurious_pred_nodes": 1,
+        "t_pred": 7,
+        "t_true": 6,
+        "weight": 6,
+        "wrong_association_edges": 0
+      },
+      "proxy_summary": {
+        "adjusted_edge_jaccard": 0.8194444444444443,
+        "div_fn": 0,
+        "div_fp": 0,
+        "div_tp": 1,
+        "division_jaccard": 1.0,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 0,
+        "edges_recovered": 5,
+        "missed_gt_nodes": 0,
+        "proxy_score": 0.9194444444444443,
+        "spurious_pred_nodes": 1,
+        "wrong_association_edges": 0
+      },
+      "purpose": "女儿有两个入边的非法拓扑反例；不声称B0正式图有此问题"
+    }
+  ],
+  "check_summary": {
+    "failed": 0,
+    "passed": 83,
+    "total": 83
+  },
+  "checks": [
+    {
+      "actual": 5,
+      "expected": 5,
+      "id": "perfect_division.official.edge_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 5,
+      "expected": 5,
+      "id": "perfect_division.proxy.edge_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "perfect_division.official.edge_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "perfect_division.proxy.edge_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "perfect_division.official.edge_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "perfect_division.proxy.edge_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "id": "perfect_division.official.division_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "id": "perfect_division.proxy.division_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "perfect_division.official.division_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "perfect_division.proxy.division_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "perfect_division.official.division_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "perfect_division.proxy.division_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 2,
+      "expected": 2,
+      "id": "weak_component_same_branch.official.edge_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 2,
+      "expected": 2,
+      "id": "weak_component_same_branch.proxy.edge_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 2,
+      "expected": 2,
+      "id": "weak_component_same_branch.official.edge_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 2,
+      "expected": 2,
+      "id": "weak_component_same_branch.proxy.edge_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 3,
+      "expected": 3,
+      "id": "weak_component_same_branch.official.edge_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 3,
+      "expected": 3,
+      "id": "weak_component_same_branch.proxy.edge_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "weak_component_same_branch.official.division_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "id": "weak_component_same_branch.proxy.division_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "id": "weak_component_same_branch.official.division_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "weak_component_same_branch.proxy.division_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "id": "weak_component_same_branch.official.division_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "weak_component_same_branch.proxy.division_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 6,
+      "expected": 6,
+      "id": "one_pred_fork_two_gt_divisions.official.edge_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 6,
+      "expected": 6,
+      "id": "one_pred_fork_two_gt_divisions.proxy.edge_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "id": "one_pred_fork_two_gt_divisions.official.edge_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "id": "one_pred_fork_two_gt_divisions.proxy.edge_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 5,
+      "expected": 5,
+      "id": "one_pred_fork_two_gt_divisions.official.edge_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 5,
+      "expected": 5,
+      "id": "one_pred_fork_two_gt_divisions.proxy.edge_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "id": "one_pred_fork_two_gt_divisions.official.division_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 2,
+      "expected": 2,
+      "id": "one_pred_fork_two_gt_divisions.proxy.division_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "one_pred_fork_two_gt_divisions.official.division_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "one_pred_fork_two_gt_divisions.proxy.division_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "id": "one_pred_fork_two_gt_divisions.official.division_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "one_pred_fork_two_gt_divisions.proxy.division_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "unmatched_fork_cross_components.official.edge_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "unmatched_fork_cross_components.proxy.edge_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 2,
+      "expected": 2,
+      "id": "unmatched_fork_cross_components.official.edge_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 2,
+      "expected": 2,
+      "id": "unmatched_fork_cross_components.proxy.edge_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 2,
+      "expected": 2,
+      "id": "unmatched_fork_cross_components.official.edge_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 2,
+      "expected": 2,
+      "id": "unmatched_fork_cross_components.proxy.edge_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "unmatched_fork_cross_components.official.division_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "unmatched_fork_cross_components.proxy.division_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "id": "unmatched_fork_cross_components.official.division_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "unmatched_fork_cross_components.proxy.division_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "unmatched_fork_cross_components.official.division_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "unmatched_fork_cross_components.proxy.division_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "id": "delayed_local_division.official.edge_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "id": "delayed_local_division.proxy.edge_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 3,
+      "expected": 3,
+      "id": "delayed_local_division.official.edge_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 3,
+      "expected": 3,
+      "id": "delayed_local_division.proxy.edge_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 4,
+      "expected": 4,
+      "id": "delayed_local_division.official.edge_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 4,
+      "expected": 4,
+      "id": "delayed_local_division.proxy.edge_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "id": "delayed_local_division.official.division_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "id": "delayed_local_division.proxy.division_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "delayed_local_division.official.division_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "delayed_local_division.proxy.division_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "delayed_local_division.official.division_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "delayed_local_division.proxy.division_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 5,
+      "expected": 5,
+      "id": "merged_child_reject.official.edge_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 5,
+      "expected": 5,
+      "id": "merged_child_reject.proxy.edge_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "id": "merged_child_reject.official.edge_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "id": "merged_child_reject.proxy.edge_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "merged_child_reject.official.edge_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "merged_child_reject.proxy.edge_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "merged_child_reject.official.division_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "id": "merged_child_reject.proxy.division_tp",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "id": "merged_child_reject.official.division_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "merged_child_reject.proxy.division_fp",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "expected": 1,
+      "id": "merged_child_reject.official.division_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 0,
+      "expected": 0,
+      "id": "merged_child_reject.proxy.division_fn",
+      "status": "PASS"
+    },
+    {
+      "actual": 0.9285714285714286,
+      "expected": 0.9285714285714286,
+      "id": "aggregation.full.adjusted_edge",
+      "status": "PASS"
+    },
+    {
+      "actual": 1.0285714285714287,
+      "expected": 1.0285714285714287,
+      "id": "aggregation.full.score",
+      "status": "PASS"
+    },
+    {
+      "actual": 1.0285714285714287,
+      "expected": 1.0285714285714287,
+      "id": "aggregation.proxy_matches_full",
+      "status": "PASS"
+    },
+    {
+      "actual": 1.1,
+      "expected": 1.1,
+      "id": "aggregation.convenience.score",
+      "status": "PASS"
+    },
+    {
+      "actual": 0.0714285714285714,
+      "expected": 0.07142857142857142,
+      "id": "aggregation.convenience_omits_adjustment",
+      "status": "PASS"
+    },
+    {
+      "actual": true,
+      "expected": true,
+      "id": "metadata_missing.official_is_nan",
+      "status": "PASS"
+    },
+    {
+      "actual": 1.0,
+      "expected": 1.0,
+      "id": "metadata_missing.proxy_uses_unadjusted",
+      "status": "PASS"
+    },
+    {
+      "actual": 0.0,
+      "expected": 0.0,
+      "id": "normal_division_equal",
+      "status": "PASS"
+    },
+    {
+      "actual": 0.09999999999999998,
+      "expected": 0.1,
+      "id": "same_branch_proxy_inflation",
+      "status": "PASS"
+    },
+    {
+      "actual": 0.04999999999999993,
+      "expected": 0.05,
+      "id": "one_fork_two_gt_proxy_inflation",
+      "status": "PASS"
+    },
+    {
+      "actual": 0.0,
+      "expected": 0.0,
+      "id": "delayed_division_equal",
+      "status": "PASS"
+    }
+  ],
+  "command": "downloads/LINEFIT_BOUNDARY_20260909/scorer/venv/bin/python experiments/LINEFIT_BOUNDARY_20260909/scorer_diagnostic.py",
+  "environment_commands": [
+    {
+      "command": "python3 -m venv --system-site-packages downloads/LINEFIT_BOUNDARY_20260909/scorer/venv",
+      "exit_code": 0
+    },
+    {
+      "command": "downloads/LINEFIT_BOUNDARY_20260909/scorer/venv/bin/python -m pip install --no-cache-dir 'tracksdata @ git+https://github.com/royerlab/tracksdata.git@980c2d30a' 'polars==1.42.0'",
+      "exit_code": 1,
+      "result": "Git clone TLS failure; no installation completed."
+    },
+    {
+      "command": "curl -fsSL --retry 1 --max-time 45 https://codeload.github.com/royerlab/tracksdata/tar.gz/980c2d30a -o downloads/LINEFIT_BOUNDARY_20260909/scorer/tracksdata_980c2d30a.tar.gz",
+      "exit_code": 0
+    },
+    {
+      "command": "SETUPTOOLS_SCM_PRETEND_VERSION_FOR_TRACKSDATA=0.1.0rc6.dev3+g980c2d30a downloads/LINEFIT_BOUNDARY_20260909/scorer/venv/bin/python -m pip install --no-cache-dir downloads/LINEFIT_BOUNDARY_20260909/scorer/tracksdata_980c2d30a.tar.gz 'polars==1.42.0'",
+      "exit_code": 1,
+      "result": "Archive lacked VCS version metadata; per-distribution override did not apply."
+    },
+    {
+      "command": "SETUPTOOLS_SCM_PRETEND_VERSION=0.1.0rc6.dev3+g980c2d30a downloads/LINEFIT_BOUNDARY_20260909/scorer/venv/bin/python -m pip install --no-cache-dir downloads/LINEFIT_BOUNDARY_20260909/scorer/tracksdata_980c2d30a.tar.gz 'polars==1.42.0'",
+      "exit_code": 0,
+      "result": "Installed only in task-local venv; subprocess-scoped version metadata supplied."
+    },
+    {
+      "command": "gh api repos/royerlab/tracksdata/commits/980c2d30a --jq .sha",
+      "exit_code": 0,
+      "result": "980c2d30aeca76b86eddef0aeadb4d10dee8530d"
+    }
+  ],
+  "evidence_class": "MEASURED",
+  "executed": true,
+  "input": {
+    "aggregation_sample_count": 2,
+    "fixture_count": 6,
+    "kind": "Original hand-constructed tiny synthetic graphs",
+    "max_distance_um": 7.0,
+    "node_count_metadata": "Known exact synthetic n_total supplied; no real estimated_number_of_nodes inferred.",
+    "path": "downloads/LINEFIT_BOUNDARY_20260909/scorer/synthetic_inputs.json",
+    "scale_zyx_um": [
+      1.625,
+      0.40625,
+      0.40625
+    ],
+    "sha256": "3dc7d5a620d37a118c17bc02edf0b460da8adf6e4c8f5db7d13d8b317d634782"
+  },
+  "observed_at_shanghai": "2026-09-09T10:30:01.584892+08:00",
+  "official": {
+    "branch": "main",
+    "cli_io_entrypoint": "scripts/evaluate.py read and hashed; not executed because no GEFF fixtures required. Same evaluate→per_sample_metrics→summarise computation called directly.",
+    "commit": "075fc5f5a52d11077f9dc2b074644618f26939e2",
+    "entrypoints_executed": [
+      "evaluate",
+      "node_recall",
+      "per_sample_metrics",
+      "summarise",
+      "evaluate_datasets"
+    ],
+    "files": [
+      {
+        "path": "downloads/20260909_public_research/github/royerlab__kaggle-cell-tracking-competition/source/src/tracking_cellmot/metrics.py",
+        "sha256": "cfdd596e3f8909cca14db0682889738b19ff75c3808b3773175aba9367ca7444",
+        "url": "https://github.com/royerlab/kaggle-cell-tracking-competition/blob/075fc5f5a52d11077f9dc2b074644618f26939e2/src/tracking_cellmot/metrics.py"
+      },
+      {
+        "path": "downloads/20260909_public_research/github/royerlab__kaggle-cell-tracking-competition/source/src/tracking_cellmot/division_metrics.py",
+        "sha256": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9",
+        "url": "https://github.com/royerlab/kaggle-cell-tracking-competition/blob/075fc5f5a52d11077f9dc2b074644618f26939e2/src/tracking_cellmot/division_metrics.py"
+      },
+      {
+        "path": "downloads/20260909_public_research/github/royerlab__kaggle-cell-tracking-competition/source/scripts/evaluate.py",
+        "sha256": "03ad4049530d3682c77435194e5d921981f331df3462abcde4a7156d1a57b7d3",
+        "url": "https://github.com/royerlab/kaggle-cell-tracking-competition/blob/075fc5f5a52d11077f9dc2b074644618f26939e2/scripts/evaluate.py"
+      }
+    ],
+    "repository": "royerlab/kaggle-cell-tracking-competition"
+  },
+  "phase": "P0_SCORER_DIAGNOSTIC",
+  "proxy": {
+    "cell_sha256": "3988c72818365e0cf42169df1d42d3d64e64a6f2815a42255a04222523936349",
+    "executed_functions": [
+      "match_nodes_bipartite",
+      "compute_edge_confusion",
+      "edge_jaccard",
+      "adjusted_jaccard",
+      "weakly_connected_components",
+      "compute_division_confusion",
+      "decompose_errors",
+      "score_sample",
+      "aggregate_official"
+    ],
+    "execution": "Original AST function definitions only; no notebook top-level cell executed.",
+    "path": "experiments/PUBLIC946_TTA_20260908/B0/candidate.ipynb",
+    "sha256": "c4bfcd8d765c67d35435876b3f3eb7bb810e20556479a918143451e2c61f849c",
+    "zero_based_cell": 8
+  },
+  "runtime": {
+    "archive_version_metadata_override": "SETUPTOOLS_SCM_PRETEND_VERSION=0.1.0rc6.dev3+g980c2d30a; only builds missing archive metadata; source not changed.",
+    "compatibility_limit": "tracksdata source and polars match recorded B0; NumPy 2.4.2/SciPy 1.17.1 differ from B0 NumPy 2.0.2/SciPy 1.16.3. This is not a bitwise Kaggle environment reproduction.",
+    "dependencies": {
+      "geff": "1.3.1.1.3",
+      "numba": "0.67.0",
+      "numpy": "2.4.2",
+      "polars": "1.42.0",
+      "rustworkx": "0.18.1",
+      "scipy": "1.17.1",
+      "tracksdata": "0.1.0rc6.dev3+g980c2d30a",
+      "zarr": "3.1.6"
+    },
+    "environment": "Task-local venv --system-site-packages; added/updated packages confined to venv.",
+    "executable": "/Users/sailor/kaggle/项目/Biohub - CELL/downloads/LINEFIT_BOUNDARY_20260909/scorer/venv/bin/python",
+    "install_logs": [
+      {
+        "bytes": 1588,
+        "path": "downloads/LINEFIT_BOUNDARY_20260909/scorer/install.log",
+        "sha256": "fe8025649522038a60e117ff2c2d79f1e7fe6cbbe29eca282a3c5f15a6077ed2"
+      },
+      {
+        "bytes": 4460,
+        "path": "downloads/LINEFIT_BOUNDARY_20260909/scorer/install_archive.log",
+        "sha256": "9946d78b94dfe3d6da4225352ec876594e3a0c18fa0a05172ff6534aa2756ef8"
+      },
+      {
+        "bytes": 19320,
+        "path": "downloads/LINEFIT_BOUNDARY_20260909/scorer/install_archive_version.log",
+        "sha256": "bce946d56be458c4ebf7c0609f3651ed660be58fade293e31c636b246e38e06c"
+      }
+    ],
+    "pip_freeze_sha256": "853d5d9cd550b9b558c84be20d1baca1f088b24eadcb6f1e7ef813b6410290d3",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.11.14",
+    "tracksdata_source_archive_sha256": "8e0392008916a156d1f10a22eb56dbde9e9b386ce32248bff4c0dfac966f9e0e",
+    "tracksdata_source_commit": "980c2d30aeca76b86eddef0aeadb4d10dee8530d",
+    "tracksdata_source_commit_ref": "980c2d30a"
+  },
+  "same_prediction_rescore": {
+    "candidate_files": [
+      {
+        "bytes": 3108,
+        "path": "downloads/V21A/output/run_stats.csv"
+      },
+      {
+        "bytes": 789,
+        "path": "downloads/V21A/output/validator_results.csv"
+      },
+      {
+        "bytes": 1400,
+        "path": "downloads/PUBLIC946_TTA_20260908/C1/ordinary_output/ppsweep_results.csv"
+      },
+      {
+        "bytes": 3137,
+        "path": "downloads/PUBLIC946_TTA_20260908/C1/ordinary_output/run_stats.csv"
+      },
+      {
+        "bytes": 7953,
+        "path": "downloads/PUBLIC946_TTA_20260908/C1/ordinary_output/validator_results.csv"
+      },
+      {
+        "bytes": 1401,
+        "path": "downloads/PUBLIC946_TTA_20260908/B0/ordinary_output/ppsweep_results.csv"
+      },
+      {
+        "bytes": 3133,
+        "path": "downloads/PUBLIC946_TTA_20260908/B0/ordinary_output/run_stats.csv"
+      },
+      {
+        "bytes": 7809,
+        "path": "downloads/PUBLIC946_TTA_20260908/B0/ordinary_output/validator_results.csv"
+      },
+      {
+        "bytes": 1404,
+        "path": "downloads/PUBLIC946_TTA_20260908/C2/ordinary_output/ppsweep_results.csv"
+      },
+      {
+        "bytes": 3130,
+        "path": "downloads/PUBLIC946_TTA_20260908/C2/ordinary_output/run_stats.csv"
+      },
+      {
+        "bytes": 7926,
+        "path": "downloads/PUBLIC946_TTA_20260908/C2/ordinary_output/validator_results.csv"
+      }
+    ],
+    "existing_roots": [
+      "downloads"
+    ],
+    "production_rescore": "NOT_RUN",
+    "reason": "Only aggregate run_stats/validator_results/ppsweep CSVs found; no paired original B0 prediction graph and exact GT graph. No competition graph downloaded.",
+    "scanned_roots": [
+      "downloads",
+      "data",
+      "artifacts"
+    ],
+    "status": "NO_SAME_PREDICTION_GRAPHS"
+  },
+  "schema_version": "1.0",
+  "scope_limits": [
+    "This is a local synthetic scorer execution, not a Kaggle submission or formal score.",
+    "Source commit identity does not independently prove Kaggle private deployed evaluator version.",
+    "Fixtures prove non-equivalence and specific count differences, not the prevalence of these patterns in B0.",
+    "No real original B0 prediction+GT rescore; no improvement or actual PP ranking change established.",
+    "Candidate and original PP selection are unchanged by this diagnostic.",
+    "No training, model inference, Kaggle write, or Git operation performed by this script."
+  ],
+  "script_sha256": "e2a46eab2f106be3dbd58473b065b38d0ddc1e6eff25f90cbe05d71eaf3041d5",
+  "status": "PASS",
+  "task_id": "LINEFIT_BOUNDARY_20260909"
+}

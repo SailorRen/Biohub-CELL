@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "task_id": "LINEFIT_BOUNDARY_20260909",
+  "goal": "执行B0分裂边界内linefit单候选：实际合成/必要测试、单次Kaggle推理与唯一正式提交，报告终态和同版本基线差值，GitHub同步并权威回读；不以提分为完成条件。",
+  "scope": {
+    "baseline_commit": "add2018e9ab1142d170625cd960298974cffaaa8",
+    "baseline": {
+      "ref": "sailorren/biohub-946-b0-repro-20260908",
+      "version": 1,
+      "script_version_id": 348114666,
+      "submission_id": 56091397
+    },
+    "candidate_ref": "sailorren/biohub-946-linefit-boundary-20260909",
+    "algorithm_change": "Only linefit neighborhood traversal stops at division boundaries; keep weight=.8/window=2 and B0 model/input/fusion/TTA/ILP/motion/gap/safe-div/short-track/original automatic PP selection unchanged.",
+    "diagnostics": "Official-vs-proxy synthetic graph comparison separately; existing same-prediction comparison only if exact graphs are available. It does not replace the candidate selector or gate submission on proxy gains. Observational hooks may record affected nodes and movement without altering predictions.",
+    "forbidden": [
+      "training",
+      "new or updated Dataset/Model",
+      "additional candidate",
+      "parameter search",
+      "ILP branch preservation modification",
+      "final submission selection changes",
+      "automatic write retries",
+      "change of other repositories"
+    ],
+    "authorization": "User accepted the immediately preceding single-candidate experiment proposal with 就按这个方案试下.",
+    "budget_limits": {
+      "new_notebooks": 1,
+      "save_requests": 1,
+      "formal_submission_requests": 1,
+      "per_object_submission": 1,
+      "repair_requests": 0
+    },
+    "observation_bounds": {
+      "ordinary_hours": 3,
+      "formal_hours": 3,
+      "pending_policy": "If still pending at bounded observation end, save IDs/time/state and report PARTIAL; do not claim score/completion or promise background completion."
+    }
+  },
+  "acceptance": [
+    {
+      "id": "local-tests-and-identity",
+      "type": "command",
+      "argv": [
+        "python3",
+        "experiments/LINEFIT_BOUNDARY_20260909/verify.py",
+        "--phase",
+        "final"
+      ],
+      "cwd": ".",
+      "timeout_seconds": 60,
+      "expected_exit": 0
+    },
+    {
+      "id": "formal-score",
+      "type": "json",
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/results.json",
+      "assertions": [
+        {
+          "pointer": "/formal/status",
+          "op": "equals",
+          "value": "COMPLETE"
+        },
+        {
+          "pointer": "/formal/public_score",
+          "op": "not_empty"
+        },
+        {
+          "pointer": "/formal/id",
+          "op": "not_empty"
+        }
+      ]
+    },
+    {
+      "id": "report",
+      "type": "file",
+      "path": "reports/20260909_LINEFIT_BOUNDARY_实测报告.md",
+      "min_bytes": 1500,
+      "contains_all": [
+        "ScriptVersionId",
+        "正式",
+        "自动",
+        "GitHub"
+      ]
+    },
+    {
+      "id": "git-remote",
+      "type": "git",
+      "repository": ".",
+      "require_commit": true,
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true,
+      "remote": "origin"
+    }
+  ]
+}

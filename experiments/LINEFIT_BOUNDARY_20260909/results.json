@@ -1,0 +1,50 @@
+{
+  "task_id": "LINEFIT_BOUNDARY_20260909",
+  "ref": "sailorren/biohub-946-linefit-boundary-20260909",
+  "version": 1,
+  "kernel_id": 133664101,
+  "script_version_id": null,
+  "ordinary": {
+    "verified": false,
+    "last_status": "RUNNING",
+    "observed_at_utc": "2026-09-09T02:38:12.036345+00:00"
+  },
+  "remote_binding": {
+    "verified": false,
+    "cells_verified": true,
+    "script_version_id_status": "PENDING_VERSION_UI_AFTER_RUN",
+    "source_sha256": "b6ca06e5fee8d7374cfe2351fab47101d6f31629e78359d2f377e00242e803f6",
+    "submitted_source_sha256": "4271519ed44e28da93e89128fc6e39515f954e96b8c2d0a9b102c23f3e08f11b"
+  },
+  "formal": {
+    "id": null,
+    "status": "NOT_RUN",
+    "public_score": null,
+    "private_score": null
+  },
+  "new_training": "NOT_RUN",
+  "actual_postprocess": "UNKNOWN",
+  "formal_hidden_postprocess": "UNKNOWN",
+  "status": "ORDINARY_RUNNING",
+  "baseline_latest": {
+    "id": 56091397,
+    "date_utc": "2026-09-08 05:21:50.403000",
+    "description": "PUBLIC946_TTA_20260908 B0 | V1 | SV348114666 | SHA256 1ae0ac1beb9599308119c380056c05ebc69c230395b37bc3d0966c3107153f19",
+    "status": "COMPLETE",
+    "public_score": "0.946",
+    "private_score": null,
+    "error_description": ""
+  },
+  "current_own_best": {
+    "id": 56094423,
+    "date_utc": "2026-09-08 08:27:17.703000",
+    "description": "PUBLIC946_TTA_20260908 C2 | V1 | SV348150127 | SHA256 2f714f4159667aed98d4fa9b49256da2e44c29b8697c703f253a4ab765d04759",
+    "status": "COMPLETE",
+    "public_score": "0.946",
+    "private_score": null,
+    "error_description": ""
+  },
+  "updated_at_utc": "2026-09-09T02:32:42.562120+00:00",
+  "source_sha256": "2476eae2ff6f95d79a18c8a1294e14e10e5309c61ec86872cbc4962687b852a5",
+  "submitted_source_sha256": "4271519ed44e28da93e89128fc6e39515f954e96b8c2d0a9b102c23f3e08f11b"
+}

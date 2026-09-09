@@ -1,0 +1,189 @@
+{
+  "task_id": "LINEFIT_BOUNDARY_20260909",
+  "observed_at_utc": "2026-09-09T02:21:30.306708+00:00",
+  "read_only": true,
+  "principal": "sailorren",
+  "competition": {
+    "max_daily_submissions": 5,
+    "submissions_disabled": false,
+    "user_has_entered": true,
+    "is_kernels_submissions_only": true
+  },
+  "gpu_remaining_hours": 12.363484166666666,
+  "submissions_complete": true,
+  "submission_rows": [
+    {
+      "id": 56094423,
+      "date_utc": "2026-09-08 08:27:17.703000",
+      "description": "PUBLIC946_TTA_20260908 C2 | V1 | SV348150127 | SHA256 2f714f4159667aed98d4fa9b49256da2e44c29b8697c703f253a4ab765d04759",
+      "status": "COMPLETE",
+      "public_score": "0.946",
+      "private_score": null,
+      "error_description": ""
+    },
+    {
+      "id": 56092872,
+      "date_utc": "2026-09-08 06:49:04.480000",
+      "description": "PUBLIC946_TTA_20260908 C1 | V1 | SV348131494 | SHA256 accb328eeae3732101711c8d9b7e7a2c267ccd787c7228e72244b55f5488331f",
+      "status": "COMPLETE",
+      "public_score": "0.940",
+      "private_score": null,
+      "error_description": ""
+    },
+    {
+      "id": 56091397,
+      "date_utc": "2026-09-08 05:21:50.403000",
+      "description": "PUBLIC946_TTA_20260908 B0 | V1 | SV348114666 | SHA256 1ae0ac1beb9599308119c380056c05ebc69c230395b37bc3d0966c3107153f19",
+      "status": "COMPLETE",
+      "public_score": "0.946",
+      "private_score": null,
+      "error_description": ""
+    },
+    {
+      "id": 56087974,
+      "date_utc": "2026-09-08 01:20:28",
+      "description": "Notebook Biohub Harmonic Fusion | Version 1",
+      "status": "COMPLETE",
+      "public_score": "0.946",
+      "private_score": null,
+      "error_description": ""
+    },
+    {
+      "id": 56069192,
+      "date_utc": "2026-09-07 04:56:50.697000",
+      "description": "V21A parent9 dc026 | Version 1 | SV 347862850 | SHA256 9537aa87092fe2e0d130b9b23ffffb9796b6d6ee2d29b366c09bebce044223e0",
+      "status": "COMPLETE",
+      "public_score": "0.942",
+      "private_score": null,
+      "error_description": ""
+    },
+    {
+      "id": 56066361,
+      "date_utc": "2026-09-07 01:33:01.517000",
+      "description": "Notebook Biohub  LB 942 | Version 1",
+      "status": "COMPLETE",
+      "public_score": "0.942",
+      "private_score": null,
+      "error_description": ""
+    },
+    {
+      "id": 56066312,
+      "date_utc": "2026-09-07 01:29:36.053000",
+      "description": "Notebook biohub-run77 | Version 1",
+      "status": "COMPLETE",
+      "public_score": "0.942",
+      "private_score": null,
+      "error_description": ""
+    },
+    {
+      "id": 56025033,
+      "date_utc": "2026-09-05 04:44:43.573000",
+      "description": "Notebook .941_biohub-fresh-adaptive-assoc | Version 1",
+      "status": "COMPLETE",
+      "public_score": "0.941",
+      "private_score": null,
+      "error_description": ""
+    },
+    {
+      "id": 56002593,
+      "date_utc": "2026-09-04 01:46:40.747000",
+      "description": "Notebook biohub-v19c-dualwide-9-14-2-25 | Version 1",
+      "status": "COMPLETE",
+      "public_score": "0.940",
+      "private_score": null,
+      "error_description": ""
+    },
+    {
+      "id": 55978992,
+      "date_utc": "2026-09-03 09:54:56.607000",
+      "description": "Notebook biohub-v19c-public0939-sis14-only | Version 1",
+      "status": "COMPLETE",
+      "public_score": "0.939",
+      "private_score": null,
+      "error_description": ""
+    },
+    {
+      "id": 55976559,
+      "date_utc": "2026-09-03 07:05:14.430000",
+      "description": "Notebook biohub-div45-stack | Version 1",
+      "status": "COMPLETE",
+      "public_score": "0.938",
+      "private_score": null,
+      "error_description": ""
+    },
+    {
+      "id": 55976471,
+      "date_utc": "2026-09-03 06:59:30.487000",
+      "description": "Notebook skkd | Version 1",
+      "status": "COMPLETE",
+      "public_score": "0.938",
+      "private_score": null,
+      "error_description": ""
+    },
+    {
+      "id": 55311118,
+      "date_utc": "2026-08-07 01:34:26.140000",
+      "description": "Notebook Biohub Solution | Version 1",
+      "status": "COMPLETE",
+      "public_score": "0.885",
+      "private_score": null,
+      "error_description": ""
+    }
+  ],
+  "submission_remaining": 5,
+  "baseline_submission": {
+    "id": 56091397,
+    "date_utc": "2026-09-08 05:21:50.403000",
+    "description": "PUBLIC946_TTA_20260908 B0 | V1 | SV348114666 | SHA256 1ae0ac1beb9599308119c380056c05ebc69c230395b37bc3d0966c3107153f19",
+    "status": "COMPLETE",
+    "public_score": "0.946",
+    "private_score": null,
+    "error_description": ""
+  },
+  "current_own_best": {
+    "id": 56094423,
+    "date_utc": "2026-09-08 08:27:17.703000",
+    "description": "PUBLIC946_TTA_20260908 C2 | V1 | SV348150127 | SHA256 2f714f4159667aed98d4fa9b49256da2e44c29b8697c703f253a4ab765d04759",
+    "status": "COMPLETE",
+    "public_score": "0.946",
+    "private_score": null,
+    "error_description": ""
+  },
+  "baseline_kernel": {
+    "ref": "sailorren/biohub-946-b0-repro-20260908",
+    "kernel_id": 133498982,
+    "version": 1,
+    "is_private": true,
+    "enable_gpu": true,
+    "enable_internet": false,
+    "machine_shape": "NvidiaTeslaT4",
+    "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+    "datasets": [
+      "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+      "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+      "pilkwang/biohub-tracking-support-pack-50ep-v1"
+    ],
+    "source_sha256": "703278ee6dfb3792f8a0049f7a295d68b7e6bb1df6de49115355fe415dc91a54",
+    "cell_sha256": [
+      "4287b1b08b202ca561790489b6cf5941381b3fccfca40bf060239ae22ea3b132",
+      "64bf335d2ea9f1dea62e2e7b3ad3b94205a775e8c5a53515d94bea3b6c655ba2",
+      "6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643",
+      "681232942fbb971dc1b999816b32c6d91da819e55d123b359b601169dd5982fb",
+      "0c9219ab51b8793a8d05c469221a29ebc4d1379458c28d1ba41db08bd57575a6",
+      "ab3be142f357c1eb8e25c40537af64d1b95e4d60b8735afdd533781f6dfb7f9c",
+      "239f51c30606f090e1fbc939a541891cef2dbea45d7b1c4a6fef53352e94759d",
+      "0083b9cd0b94cabba7c28f12bf8d80f6eda4a982d1f6f44ead0975ea0de89e92",
+      "3988c72818365e0cf42169df1d42d3d64e64a6f2815a42255a04222523936349",
+      "2e658927d77b92f79dbb5ac701cdb25ea0eef35e5c4901ed69d00a5aa932eae4",
+      "035037debb8d20a189d59efb74e42b59165172bd0a181e16947ff79c6d6f3c2f",
+      "974767da6156ddf12c5b2d1351b13658f160d0b859a36deb9614441c006537ba",
+      "de5b8e39238b894f8d2aed2660e7e3e2ac74b4edfea04dd6ccee470555e9d58a"
+    ]
+  },
+  "candidate_read_error": {
+    "error_type": "SSLError",
+    "http_status": null
+  },
+  "own_list_complete": true,
+  "own_exact_matches": []
+}

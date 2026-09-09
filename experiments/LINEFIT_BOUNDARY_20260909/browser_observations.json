@@ -1,0 +1,18 @@
+{
+  "task_id": "LINEFIT_BOUNDARY_20260909",
+  "candidate_absence": {
+    "url": "https://www.kaggle.com/code/sailorren/biohub-946-linefit-boundary-20260909",
+    "visible_text": "We can't find that page.",
+    "read_method": "CUA in-app browser rendered text",
+    "recorded_at_utc": "2026-09-09T02:20:07.877120+00:00"
+  },
+  "baseline_submission_page": {
+    "ref": "sailorren/biohub-946-b0-repro-20260908",
+    "version": 1,
+    "script_version_id": 348114666,
+    "visible_status": "Succeeded",
+    "public_score": "0.946",
+    "auto_selection_candidates": "0/2",
+    "read_method": "CUA existing user submissions tab; selection not changed"
+  }
+}
