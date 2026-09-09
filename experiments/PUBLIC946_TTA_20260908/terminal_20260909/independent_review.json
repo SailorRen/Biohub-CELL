@@ -1,0 +1,282 @@
+{
+  "task_id": "PUBLIC946_TTA_20260908",
+  "scope": "Independent local cross-check of root-collected official terminal API receipts, frozen identity, existing formal validator, Decimal comparisons and unchanged write budget. No platform or Git writes performed by reviewer. GitHub delivery is outside this review.",
+  "reviewed_at_utc": "2026-09-09T01:24:52.024262+00:00",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "write_budget",
+      "status": "PASS",
+      "detail": {
+        "save_requests": 3,
+        "submission_requests": 3,
+        "repair_requests": 0,
+        "object_refs": {
+          "B0": "sailorren/biohub-946-b0-repro-20260908",
+          "C1": "sailorren/biohub-946-c1-xy8-20260908",
+          "C2": "sailorren/biohub-946-c2-secondary-edge-tta-20260908"
+        }
+      }
+    },
+    {
+      "check": "write_ledger_bytes_unchanged",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "manifest_bytes_unchanged",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "validator_bytes_unchanged",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "six_unique_one_send_transports",
+      "status": "PASS",
+      "detail": true
+    },
+    {
+      "check": "B0_formal_verifier",
+      "status": "PASS",
+      "detail": {
+        "id": 56091397,
+        "version": 1,
+        "script_version_id": 348114666,
+        "ref": "sailorren/biohub-946-b0-repro-20260908",
+        "public_score": "0.946"
+      }
+    },
+    {
+      "check": "B0_independent_raw_and_tracked_identity",
+      "status": "PASS",
+      "detail": {
+        "submission_id": 56091397,
+        "version": 1,
+        "script_version_id": 348114666,
+        "public_score": "0.946",
+        "read_at_utc": "2026-09-09T01:21:13.601537+00:00",
+        "readback_sha256": "beae53db8f2a16e7e5b379c2877fae18f3843d5169a4e5de186b5170fd032a54",
+        "ordered_code_cells": 13,
+        "local_source_sha256": "c4bfcd8d765c67d35435876b3f3eb7bb810e20556479a918143451e2c61f849c",
+        "remote_source_sha256": "703278ee6dfb3792f8a0049f7a295d68b7e6bb1df6de49115355fe415dc91a54"
+      }
+    },
+    {
+      "check": "B0_five_decimal_deltas",
+      "status": "PASS",
+      "detail": {
+        "delta_vs_B0": "0.000",
+        "delta_vs_own_best_at_start": "0.004",
+        "delta_vs_current_own_best": "0.000",
+        "delta_vs_public_0946": "0.000",
+        "delta_vs_own_best_before_submission": "0.004"
+      }
+    },
+    {
+      "check": "C1_formal_verifier",
+      "status": "PASS",
+      "detail": {
+        "id": 56092872,
+        "version": 1,
+        "script_version_id": 348131494,
+        "ref": "sailorren/biohub-946-c1-xy8-20260908",
+        "public_score": "0.940"
+      }
+    },
+    {
+      "check": "C1_independent_raw_and_tracked_identity",
+      "status": "PASS",
+      "detail": {
+        "submission_id": 56092872,
+        "version": 1,
+        "script_version_id": 348131494,
+        "public_score": "0.940",
+        "read_at_utc": "2026-09-09T01:21:23.661383+00:00",
+        "readback_sha256": "7febe504550c16e34d9de01d1d7ce90c2ac47d3b138cf3d2c40e835f2dc624a7",
+        "ordered_code_cells": 13,
+        "local_source_sha256": "d3264807b20259b86a297a96f258640e7f752830c21f990f52be4c883a628341",
+        "remote_source_sha256": "f40f45ff76d0017442287524f7b149b913439d3d341150f728135ea66bb701c9"
+      }
+    },
+    {
+      "check": "C1_five_decimal_deltas",
+      "status": "PASS",
+      "detail": {
+        "delta_vs_B0": "-0.006",
+        "delta_vs_own_best_at_start": "-0.002",
+        "delta_vs_current_own_best": "-0.006",
+        "delta_vs_public_0946": "-0.006",
+        "delta_vs_own_best_before_submission": "-0.002"
+      }
+    },
+    {
+      "check": "C2_formal_verifier",
+      "status": "PASS",
+      "detail": {
+        "id": 56094423,
+        "version": 1,
+        "script_version_id": 348150127,
+        "ref": "sailorren/biohub-946-c2-secondary-edge-tta-20260908",
+        "public_score": "0.946"
+      }
+    },
+    {
+      "check": "C2_independent_raw_and_tracked_identity",
+      "status": "PASS",
+      "detail": {
+        "submission_id": 56094423,
+        "version": 1,
+        "script_version_id": 348150127,
+        "public_score": "0.946",
+        "read_at_utc": "2026-09-09T01:21:35.847478+00:00",
+        "readback_sha256": "c25ce57d43e668c18a19b0685a6b2b127e4f9ba98257267b4dc0df33c34856b6",
+        "ordered_code_cells": 13,
+        "local_source_sha256": "a7177ccf303152180357ac6f7d23efefec1aa8ab8206bd3bdc99d1efa19b1de6",
+        "remote_source_sha256": "833a3c71238ed24bc94e1259eb2f15df271fd47e38df446f68e15a2e71e44bde"
+      }
+    },
+    {
+      "check": "C2_five_decimal_deltas",
+      "status": "PASS",
+      "detail": {
+        "delta_vs_B0": "0.000",
+        "delta_vs_own_best_at_start": "0.004",
+        "delta_vs_current_own_best": "0.000",
+        "delta_vs_public_0946": "0.000",
+        "delta_vs_own_best_before_submission": "0.004"
+      }
+    },
+    {
+      "check": "existing_comparison_verifier",
+      "status": "PASS",
+      "detail": {
+        "own_best_at_start": "0.942",
+        "current_own_best": "0.946",
+        "B0_actual": "0.946",
+        "public_reference": "0.946"
+      }
+    },
+    {
+      "check": "baseline_scope_and_current_ties",
+      "status": "PASS",
+      "detail": {
+        "starting_submission": 56069192,
+        "starting_score": "0.942",
+        "current_best_score": "0.946",
+        "current_best_tied_ids": [
+          56087974,
+          56091397,
+          56094423
+        ],
+        "56087974_scope": "pre-existing user Harmonic submission, not batch"
+      }
+    },
+    {
+      "check": "postprocessing_scope",
+      "status": "PASS",
+      "detail": {
+        "scope": "ordinary final output only",
+        "C1_vs_B0_effective_config_differences": {
+          "MOTION_RELINK_RELAXED_UM": [
+            10.0,
+            9.0
+          ],
+          "MOTION_RELINK_TIGHT_UM": [
+            5.5,
+            6.0
+          ]
+        },
+        "formal_hidden_pp": "UNKNOWN",
+        "interpretation": "C1 score loss is the code change under unchanged original selection procedure, not fixed-postprocessing causal attribution."
+      }
+    }
+  ],
+  "summary": {
+    "B0": {
+      "id": 56091397,
+      "version": 1,
+      "script_version_id": 348114666,
+      "formal_status": "COMPLETE",
+      "public_score": "0.946",
+      "private_score": null,
+      "ordinary_pp_label": "tight55",
+      "ordinary_pp_overrides": {
+        "MOTION_RELINK_TIGHT_UM": 5.5
+      },
+      "formal_hidden_pp": "UNKNOWN",
+      "deltas": {
+        "delta_vs_B0": "0.000",
+        "delta_vs_own_best_at_start": "0.004",
+        "delta_vs_current_own_best": "0.000",
+        "delta_vs_public_0946": "0.000",
+        "delta_vs_own_best_before_submission": "0.004"
+      }
+    },
+    "C1": {
+      "id": 56092872,
+      "version": 1,
+      "script_version_id": 348131494,
+      "formal_status": "COMPLETE",
+      "public_score": "0.940",
+      "private_score": null,
+      "ordinary_pp_label": "relaxed9",
+      "ordinary_pp_overrides": {
+        "MOTION_RELINK_RELAXED_UM": 9.0
+      },
+      "formal_hidden_pp": "UNKNOWN",
+      "deltas": {
+        "delta_vs_B0": "-0.006",
+        "delta_vs_own_best_at_start": "-0.002",
+        "delta_vs_current_own_best": "-0.006",
+        "delta_vs_public_0946": "-0.006",
+        "delta_vs_own_best_before_submission": "-0.002"
+      }
+    },
+    "C2": {
+      "id": 56094423,
+      "version": 1,
+      "script_version_id": 348150127,
+      "formal_status": "COMPLETE",
+      "public_score": "0.946",
+      "private_score": null,
+      "ordinary_pp_label": "tight55",
+      "ordinary_pp_overrides": {
+        "MOTION_RELINK_TIGHT_UM": 5.5
+      },
+      "formal_hidden_pp": "UNKNOWN",
+      "deltas": {
+        "delta_vs_B0": "0.000",
+        "delta_vs_own_best_at_start": "0.004",
+        "delta_vs_current_own_best": "0.000",
+        "delta_vs_public_0946": "0.000",
+        "delta_vs_own_best_before_submission": "0.004"
+      }
+    }
+  },
+  "source_files": [
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/results.json",
+      "sha256": "07028b64d70922065fc3902843f5b0a511607111f648536c9cbeec658cd7807a"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/write_ledger.json",
+      "sha256": "9306b7deecff670e5d14ea0bc08dcdd41becacbd9c39bfd87dba9cc0477ad9c3"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/manifest.json",
+      "sha256": "e126e7fff52941518b70a3dc3c8e9523a804f7fcffdd511079c63f6f098831e7"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/verify.py",
+      "sha256": "4d2b544cb3016d3bd980d3f52fdf03f76777626bb2c47c850ccf901a61ca404a"
+    }
+  ],
+  "limits": [
+    "Public score matches displayed/API precision; equal public scores do not prove identical predictions or private performance.",
+    "C2 competition metadata read had SSLError while source and complete formal submission listing reads succeeded; this is not a formal scoring failure.",
+    "GitHub fixed-commit readback remains the root task responsibility."
+  ]
+}

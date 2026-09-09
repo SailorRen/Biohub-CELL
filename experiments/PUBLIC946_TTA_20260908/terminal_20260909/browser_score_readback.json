@@ -1,0 +1,59 @@
+{
+  "task_id": "PUBLIC946_TTA_20260908",
+  "classification": "OFFICIAL_FACT",
+  "source": "Kaggle competition submissions UI via CUA, list rows and exact descriptions",
+  "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/submissions",
+  "observed_date_shanghai": "2026-09-09",
+  "time_scope": "Read before API snapshots at 09:21 Shanghai; exact UI timestamp not recorded",
+  "rows": [
+    {
+      "arm": "B0",
+      "ref": "sailorren/biohub-946-b0-repro-20260908",
+      "version": 1,
+      "script_version_id": 348114666,
+      "description": "PUBLIC946_TTA_20260908 B0 | V1 | SV348114666 | SHA256 1ae0ac1beb9599308119c380056c05ebc69c230395b37bc3d0966c3107153f19",
+      "ui_status": "Succeeded",
+      "public_score": "0.946",
+      "fixed_version_link": "https://www.kaggle.com/code/sailorren/biohub-946-b0-repro-20260908?scriptVersionId=348114666",
+      "details_status": "Succeeded",
+      "final_selection_checkbox": false,
+      "formal_hidden_log_or_output_link_visible": false
+    },
+    {
+      "arm": "C1",
+      "ref": "sailorren/biohub-946-c1-xy8-20260908",
+      "version": 1,
+      "script_version_id": 348131494,
+      "description": "PUBLIC946_TTA_20260908 C1 | V1 | SV348131494 | SHA256 accb328eeae3732101711c8d9b7e7a2c267ccd787c7228e72244b55f5488331f",
+      "ui_status": "Succeeded",
+      "public_score": "0.940",
+      "fixed_version_link": "https://www.kaggle.com/code/sailorren/biohub-946-c1-xy8-20260908?scriptVersionId=348131494",
+      "details_status": "Succeeded",
+      "final_selection_checkbox": false,
+      "formal_hidden_log_or_output_link_visible": false
+    },
+    {
+      "arm": "C2",
+      "ref": "sailorren/biohub-946-c2-secondary-edge-tta-20260908",
+      "version": 1,
+      "script_version_id": 348150127,
+      "description": "PUBLIC946_TTA_20260908 C2 | V1 | SV348150127 | SHA256 2f714f4159667aed98d4fa9b49256da2e44c29b8697c703f253a4ab765d04759",
+      "ui_status": "Succeeded",
+      "public_score": "0.946",
+      "fixed_version_link": "https://www.kaggle.com/code/sailorren/biohub-946-c2-secondary-edge-tta-20260908?scriptVersionId=348150127",
+      "details_status": "Succeeded",
+      "final_selection_checkbox": false,
+      "formal_hidden_log_or_output_link_visible": false
+    }
+  ],
+  "additional_visible_row": {
+    "title": "Biohub Harmonic Fusion - Version 1",
+    "public_score": "0.946",
+    "belongs_to_batch": false
+  },
+  "final_selection_ui": "0/2",
+  "ui_writes": 0,
+  "details_read_completed_at_utc": "2026-09-09T01:26:15.414Z",
+  "details_read_completed_at_shanghai": "2026-09-09T09:26:15.414+08:00",
+  "details_read_scope": "Opened all three exact submission row detail dialogs, read score/version/description and closed Cancel; no form edits or selection changes"
+}
