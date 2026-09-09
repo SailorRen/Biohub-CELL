@@ -1,8 +1,8 @@
 {
   "task_id": "LINEFIT_BOUNDARY_20260909",
   "phase": "final",
-  "status": "PASS",
-  "passed": 16,
+  "status": "FAIL",
+  "passed": 15,
   "total": 16,
   "checks": [
     {
@@ -81,7 +81,7 @@
     },
     {
       "id": "one-formal-score",
-      "passed": true,
+      "passed": false,
       "detail": "Exact submission terminal score; ordinary COMPLETE not substituted"
     },
     {

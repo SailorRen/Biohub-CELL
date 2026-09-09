@@ -1,0 +1,269 @@
+{
+  "schema_version": 1,
+  "task_id": "LINEFIT_BOUNDARY_20260909",
+  "reviewer": "independent_public_notebook_research_agent",
+  "observed_at_utc": "2026-09-09T14:32:52.343740+00:00",
+  "classification": "MEASURED",
+  "status": "INDEPENDENT_FORMAL_SCORE_CHAIN_VERIFIED",
+  "scope": "只读本地既有官方 API/浏览器回执、源码哈希、唯一写账本、报告全文、历史截止快照和本地 Git 旧报告；独立以 Decimal 重算正式差值。无网络查询、无新测试或实验。",
+  "formal_result": {
+    "ref": "sailorren/biohub-946-linefit-boundary-20260909",
+    "kernel_id": 133664101,
+    "version": 1,
+    "script_version_id": 348415815,
+    "submission_id": 56113466,
+    "status": "COMPLETE",
+    "public_score": "0.946",
+    "private_score": null,
+    "source_notebook_sha256": "2476eae2ff6f95d79a18c8a1294e14e10e5309c61ec86872cbc4962687b852a5",
+    "submitted_source_sha256": "4271519ed44e28da93e89128fc6e39515f954e96b8c2d0a9b102c23f3e08f11b",
+    "official_observed_at_utc": "2026-09-09T14:27:24.065891+00:00",
+    "official_observed_at_shanghai": "2026-09-09T22:27:24.065891+08:00",
+    "official_scoring_completion_time": "UNKNOWN"
+  },
+  "comparison": {
+    "B0_submission_id": 56091397,
+    "B0_same_snapshot_public_score": "0.946",
+    "pre_submission_own_best_id": 56094423,
+    "pre_submission_own_best_public_score": "0.946",
+    "delta_vs_B0": "0.000",
+    "delta_vs_pre_submission_own_best": "0.000",
+    "verdict": "本次正式 Public 与 B0 及提交前自有最好成绩持平，未观察到提分；不证明隐藏分项相同或稳定泛化收益。"
+  },
+  "checks_total": 33,
+  "checks_passed": 33,
+  "checks": [
+    {
+      "id": "latest_complete_official_snapshot_selected",
+      "passed": true
+    },
+    {
+      "id": "ledger_response_results_official_row_report_exact_submission_ID",
+      "passed": true
+    },
+    {
+      "id": "submission_exact_V1_SV_wireSHA_description",
+      "passed": true
+    },
+    {
+      "id": "formal_COMPLETE_finite_exact_0946",
+      "passed": true
+    },
+    {
+      "id": "formal_state_all_API_fields_and_timestamp_match",
+      "passed": true
+    },
+    {
+      "id": "private_score_and_hidden_postprocess_unknown",
+      "passed": true
+    },
+    {
+      "id": "simultaneous_B0_COMPLETE_0946_identity",
+      "passed": true
+    },
+    {
+      "id": "pre_submission_best_preserved_instead_of_current_tied_best",
+      "passed": true
+    },
+    {
+      "id": "pre_submission_best_is_actual_pre_snapshot_max",
+      "passed": true
+    },
+    {
+      "id": "Decimal_deltas_both_zero_match_results_score_chain",
+      "passed": true
+    },
+    {
+      "id": "current_own_best_tie_is_not_claimed_as_gain",
+      "passed": true
+    },
+    {
+      "id": "only_one_task_submission_row",
+      "passed": true
+    },
+    {
+      "id": "one_save_one_submit_and_one_send_each",
+      "passed": true
+    },
+    {
+      "id": "write_ledger_identical_to_original_pending_cutoff",
+      "passed": true
+    },
+    {
+      "id": "zero_new_Kaggle_write_requests_in_user_triggered_recovery",
+      "passed": true
+    },
+    {
+      "id": "frozen_manifest_and_all_19_files_unchanged",
+      "passed": true
+    },
+    {
+      "id": "candidate_local_hash_wirehash_and_latest_kernel_cells_match",
+      "passed": true
+    },
+    {
+      "id": "fixed_inputs_V1_SV_remote_binding_preserved",
+      "passed": true
+    },
+    {
+      "id": "browser_receipt_crosschecks_terminal_API_identity_and_score",
+      "passed": true
+    },
+    {
+      "id": "current_frozen_final_verifier_all_16_pass",
+      "passed": true
+    },
+    {
+      "id": "current_score_chain_PASS_bound_to_current_artifacts",
+      "passed": true
+    },
+    {
+      "id": "results_at_cutoff.json_preserves_original_cutoff_bytes",
+      "passed": true
+    },
+    {
+      "id": "final_verification_at_cutoff.json_preserves_original_cutoff_bytes",
+      "passed": true
+    },
+    {
+      "id": "score_chain_verification_at_cutoff.json_preserves_original_cutoff_bytes",
+      "passed": true
+    },
+    {
+      "id": "historical_cutoff_remains_PENDING_15of16_WAITING",
+      "passed": true
+    },
+    {
+      "id": "original_independent_pending_receipt_unchanged",
+      "passed": true
+    },
+    {
+      "id": "observation_window_preserved_not_backdated",
+      "passed": true
+    },
+    {
+      "id": "pending_report_preserved_at_prior_fixed_Git_commit",
+      "passed": true
+    },
+    {
+      "id": "report_terminal_result_double_zero_and_no_gain",
+      "passed": true
+    },
+    {
+      "id": "report_ordinary_summary_and_hidden_causality_limits",
+      "passed": true
+    },
+    {
+      "id": "report_cutoff_history_and_later_user_triggered_read_distinguished",
+      "passed": true
+    },
+    {
+      "id": "report_and_state_separate_GitHub_completion_from_formal_score",
+      "passed": true
+    },
+    {
+      "id": "report_no_automatic_additional_experiment",
+      "passed": true
+    }
+  ],
+  "new_platform_write_requests_this_recovery": 0,
+  "cumulative_task_write_requests": {
+    "save": 1,
+    "submit": 1,
+    "transport_send_each": 1,
+    "automatic_write_retries": 0
+  },
+  "pending_history_preserved": {
+    "cutoff_results_file": "experiments/LINEFIT_BOUNDARY_20260909/results_at_cutoff.json",
+    "cutoff_final_verification_file": "experiments/LINEFIT_BOUNDARY_20260909/final_verification_at_cutoff.json",
+    "cutoff_score_chain_file": "experiments/LINEFIT_BOUNDARY_20260909/score_chain_verification_at_cutoff.json",
+    "original_independent_receipt": "experiments/LINEFIT_BOUNDARY_20260909/independent_final_state_verification.json",
+    "old_report_commit": "05a601b627618f88606c35652f1583ed2a087a42",
+    "old_report_sha256": "7ddff9fd056a2a2ba87de89211fed2bf06f80aa0a87148dab278b2887c4df204",
+    "interpretation": "旧3小时截止时 PENDING 的事实保持；此次终态由用户新消息触发的后续只读回收证明。"
+  },
+  "evidence_bindings": [
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/results.json",
+      "sha256": "47ab066c7f3323302b3e1a2d576f18f77c14865f8749fdee6c8c289960749227",
+      "bytes": 12663
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/write_ledger.json",
+      "sha256": "248e7607c28e363873aa13bb7df84cca573496a9dceab2555bfe4b85463fce13",
+      "bytes": 2258
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/manifest.json",
+      "sha256": "eb45073c9ab58005c603353d59782b4d6c879b03027c15e27bd91573279cbdda",
+      "bytes": 4424
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/candidate.ipynb",
+      "sha256": "2476eae2ff6f95d79a18c8a1294e14e10e5309c61ec86872cbc4962687b852a5",
+      "bytes": 257509
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/read_20260909T142737Z.json",
+      "sha256": "865501453c8b4acd2416feadd7a0b4e19e6f0692654c8a6b1bcb514f20c80244",
+      "bytes": 8609
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/pre_submit.json",
+      "sha256": "10246a78e45db1e343cd899709bd09201df09d6424b501b9a9e8f3fd11493568",
+      "bytes": 8265
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/score_chain_verification.json",
+      "sha256": "2319f454181771102bea6f2b57a19c6c9277b41dcd73ccce449a4139a5aac871",
+      "bytes": 1891
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/final_verification.json",
+      "sha256": "1994d9491a52fa772cfa09e08a85353782e00a5edf40e3d5d63dd1d53337abfe",
+      "bytes": 2357
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/results_at_cutoff.json",
+      "sha256": "2c52967e19905d4ca06711979b0b4d0d1592ebc3e39804ab0a5c6558b5445d47",
+      "bytes": 12087
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/final_verification_at_cutoff.json",
+      "sha256": "5b40fc08249c8b2a146133e851e806103def9a724dce0bece0efb8284451cfb2",
+      "bytes": 2358
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/score_chain_verification_at_cutoff.json",
+      "sha256": "0f56e1a6bb03a9c4351e300159ba645f4aa64a29c4195ffd895b21cb49b78fe1",
+      "bytes": 1483
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/independent_final_state_verification.json",
+      "sha256": "15e8da3a0c35b49803c95081f4ac33ccb74110df2e17e1bd009e919918b0423a",
+      "bytes": 8568
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/terminal_browser_receipt.json",
+      "sha256": "61af88931314996e39c92cd3057f874a2a959bdfbf0b5b324a6a28e9c617da1d",
+      "bytes": 650
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/observation_window.json",
+      "sha256": "8d848cd41affda0adf1f8691276a5a9479938dbefca5c3e9c90c324e178db6b4",
+      "bytes": 1031
+    },
+    {
+      "path": "reports/20260909_LINEFIT_BOUNDARY_实测报告.md",
+      "sha256": "8673dad0798248f220bf67ca34de2cc71909306360016a995ba4374bd58505b8",
+      "bytes": 8313
+    }
+  ],
+  "report_review": "正式持平、ordinary 局部观测、隐藏因果未知与 GitHub 交付分开叙述；未将本地状态检查 PASS 当完整任务或远端同步完成。",
+  "task_wide_completion_verified": false,
+  "GitHub_delivery_status": "NOT_REVIEWED — 由后续固定提交与权威远端回读独立闭合。",
+  "network_queries_performed": 0,
+  "frozen_files_modified": [],
+  "existing_reports_or_evidence_modified": [],
+  "new_tests_or_experiments_performed": 0
+}

@@ -7,7 +7,7 @@
   "ordinary": {
     "verified": true,
     "last_status": "COMPLETE",
-    "observed_at_utc": "2026-09-09T14:27:24.065891+00:00"
+    "observed_at_utc": "2026-09-09T07:27:22.790254+00:00"
   },
   "remote_binding": {
     "verified": true,
@@ -30,13 +30,13 @@
   },
   "formal": {
     "id": 56113466,
-    "status": "COMPLETE",
-    "public_score": "0.946",
+    "status": "PENDING",
+    "public_score": null,
     "private_score": null,
     "description": "LINEFIT_BOUNDARY_20260909 | V1 | SV348415815 | SHA256 4271519ed44e28da93e89128fc6e39515f954e96b8c2d0a9b102c23f3e08f11b",
     "date_utc": "2026-09-09 04:27:08.340000",
     "error_description": "",
-    "observed_at_utc": "2026-09-09T14:27:24.065891+00:00"
+    "observed_at_utc": "2026-09-09T07:27:22.790254+00:00"
   },
   "new_training": "NOT_RUN",
   "actual_postprocess": {
@@ -210,7 +210,7 @@
     }
   },
   "formal_hidden_postprocess": "UNKNOWN",
-  "status": "FORMAL_SCORED_NO_GAIN",
+  "status": "PARTIAL_SCORE_PENDING",
   "baseline_latest": {
     "id": 56091397,
     "date_utc": "2026-09-08 05:21:50.403000",
@@ -221,15 +221,15 @@
     "error_description": ""
   },
   "current_own_best": {
-    "id": 56113466,
-    "date_utc": "2026-09-09 04:27:08.340000",
-    "description": "LINEFIT_BOUNDARY_20260909 | V1 | SV348415815 | SHA256 4271519ed44e28da93e89128fc6e39515f954e96b8c2d0a9b102c23f3e08f11b",
+    "id": 56094423,
+    "date_utc": "2026-09-08 08:27:17.703000",
+    "description": "PUBLIC946_TTA_20260908 C2 | V1 | SV348150127 | SHA256 2f714f4159667aed98d4fa9b49256da2e44c29b8697c703f253a4ab765d04759",
     "status": "COMPLETE",
     "public_score": "0.946",
     "private_score": null,
     "error_description": ""
   },
-  "updated_at_utc": "2026-09-09T14:29:13.451931+00:00",
+  "updated_at_utc": "2026-09-09T07:28:19.032454+00:00",
   "source_sha256": "2476eae2ff6f95d79a18c8a1294e14e10e5309c61ec86872cbc4962687b852a5",
   "submitted_source_sha256": "4271519ed44e28da93e89128fc6e39515f954e96b8c2d0a9b102c23f3e08f11b",
   "readback_blocker": {
@@ -286,17 +286,10 @@
     "final_query_note": "One final authoritative snapshot at the observation boundary; recorded 15.4 seconds after the planned deadline due to query startup and network latency. No later Kaggle polls scheduled.",
     "automatic_followup_created": false
   },
-  "delta_vs_B0": "0.000",
-  "delta_vs_pre_submission_own_best": "0.000",
-  "improvement_observed": false,
-  "terminal_recovery": {
-    "trigger": "User reported final score unchanged; new read-only recovery, not continued background polling",
-    "user_message": "最终得分并没有变化",
-    "observed_at_utc": "2026-09-09T14:27:24.065891+00:00",
-    "new_kaggle_write_requests": 0,
-    "previous_state_commit": "05a601b627618f88606c35652f1583ed2a087a42",
-    "official_scoring_completion_time": "UNKNOWN",
-    "note": "UI relative age is not treated as exact scoring completion time."
-  },
-  "completion_status_reference": "completion_verification.json; generated separately after content commit and authoritative GitHub readback. Formal scoring status is not the task-wide completion status."
+  "completion_claim": "NOT_MADE",
+  "remaining_required_work": [
+    "Exact formal submission 56113466 has no terminal COMPLETE score at observation cutoff."
+  ],
+  "delta_vs_B0": null,
+  "delta_vs_pre_submission_own_best": null
 }

@@ -1,25 +1,15 @@
 {
   "task_id": "LINEFIT_BOUNDARY_20260909",
   "scope": "LOCAL_EVIDENCE_ONLY_NOT_PLATFORM_QUERY",
-  "status": "PASS",
-  "submission_id": 56113466,
-  "version": 1,
-  "script_version_id": 348415815,
-  "wire_sha256": "4271519ed44e28da93e89128fc6e39515f954e96b8c2d0a9b102c23f3e08f11b",
-  "public_score": "0.946",
-  "baseline_id": 56091397,
-  "baseline_public_score": "0.946",
-  "pre_submission_best_id": 56094423,
-  "pre_submission_best_score": "0.946",
-  "delta_vs_same_read_B0": "0.000",
-  "delta_vs_pre_submission_own_best": "0.000",
-  "observed_at_utc": "2026-09-09T14:27:24.065891+00:00",
-  "id_chain": "LEDGER_RESPONSE_OR_EXPLICIT_READBACK = RESULTS = LATEST_API_ROW = REPORT",
-  "verdict": "与B0持平",
+  "status": "WAITING_FORMAL_TERMINAL_SCORE",
+  "formal_id": 56113466,
+  "formal_status": "PENDING",
+  "public_score": null,
+  "reason": "No terminal COMPLETE score; no real PASS or improvement claim.",
   "artifacts": {
     "state": {
       "path": "experiments/LINEFIT_BOUNDARY_20260909/results.json",
-      "sha256": "47ab066c7f3323302b3e1a2d576f18f77c14865f8749fdee6c8c289960749227"
+      "sha256": "2c52967e19905d4ca06711979b0b4d0d1592ebc3e39804ab0a5c6558b5445d47"
     },
     "ledger": {
       "path": "experiments/LINEFIT_BOUNDARY_20260909/write_ledger.json",
@@ -30,12 +20,12 @@
       "sha256": "eb45073c9ab58005c603353d59782b4d6c879b03027c15e27bd91573279cbdda"
     },
     "snapshot": {
-      "path": "experiments/LINEFIT_BOUNDARY_20260909/read_20260909T142737Z.json",
-      "sha256": "865501453c8b4acd2416feadd7a0b4e19e6f0692654c8a6b1bcb514f20c80244"
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/read_20260909T072732Z.json",
+      "sha256": "bb0527be9e38de04084ef0790efa502ba4b522a853452dfd3b7ead1109647b2e"
     },
     "report": {
       "path": "reports/20260909_LINEFIT_BOUNDARY_实测报告.md",
-      "sha256": "8673dad0798248f220bf67ca34de2cc71909306360016a995ba4374bd58505b8"
+      "sha256": "7ddff9fd056a2a2ba87de89211fed2bf06f80aa0a87148dab278b2887c4df204"
     },
     "pre_submit": {
       "path": "experiments/LINEFIT_BOUNDARY_20260909/pre_submit.json",

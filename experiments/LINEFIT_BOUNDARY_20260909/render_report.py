@@ -22,8 +22,15 @@ verdict = ('高于B0' if Decimal(delta) > 0 else '与B0持平' if Decimal(delta)
 status = '已取得正式终态成绩' if scored else '尚未取得正式终态成绩；本任务未完成'
 window = s.get('formal_observation_window', {})
 observation_note = (f"正式观察窗口按冻结合同为3小时，起点UTC `{window.get('formal_start_at_utc')}`，计划截止UTC `{window.get('deadline_at_utc')}`；截止边界最后官方快照为UTC `{window.get('last_official_observation_at_utc')}`，状态仍为 `{f['status']}`。最后请求因启动与网络耗时在计划截止后约15秒记录，不继续轮询。当前为 `PARTIAL_SCORE_PENDING`，未作完成声明，分数及两项差值均为null；没有创建自动后续任务或承诺后台完成。" if window.get('status') == 'ENDED_SCORE_PENDING' and not scored else '正式观察以实际平台回执为准。')
+if scored and s.get('terminal_recovery'):
+    observation_note = (f"原3小时观察截止UTC `{window.get('last_official_observation_at_utc')}` 时确为PENDING，原记录和15/16验收分别保存在results_at_cutoff.json、final_verification_at_cutoff.json，未将旧等待状态倒写为已评分。用户随后反馈最终得分没有变化，本轮只读回收原submission，在UTC `{f['observed_at_utc']}`（上海时间22:27）取得COMPLETE / {f['public_score']}，并与浏览器Succeeded / 0.946交叉核对。本轮新增Kaggle写入请求为0。平台准确评分结束时间未取得，记为UNKNOWN；页面相对时间不作结束时间证据。")
 validation = json.loads((P / 'final_verification.json').read_text()) if (P / 'final_verification.json').exists() else {}
 validation_note = (f"最终冻结验收：{validation.get('passed')}/{validation.get('total')}项通过，状态`{validation.get('status')}`。未通过项：{', '.join(x['id'] for x in validation.get('checks', []) if not x['passed']) or '无'}。缺少正式终态分数时，这表示整体任务尚未验收通过，不表示已通过的20项合成测试失败。详见final_verification.json；成绩链独立状态见score_chain_verification.json。" if validation else '最终验收回执尚未生成。')
+if validation.get('status') == 'PASS':
+    validation_note = f"最终冻结验收：{validation['passed']}/{validation['total']}项通过，状态PASS；正式成绩链见score_chain_verification.json。验收通过证明冻结范围内的执行和证据满足要求，不代表性能提高。"
+outcome_note = ''
+if scored and delta == '0.000':
+    outcome_note = ('本次正式Public持平，未观察到提分，不将此候选列为已验证的提分方案。普通运行确实修改了输出坐标文件，但节点/边数量及已记录的拓扑摘要与B0一致；边界命中408个节点，占122841个输出节点约0.33%。这些事实说明改动在普通输出中的影响范围有限，但不能证明隐藏运行的匹配关系完全相同，也不能据此断言持平的具体原因。隐藏运行图、分项成绩与后处理选择均未取得；无法判断是否存在显示精度以下的差异。本候选结束，不自动扩展linefit参数或追加实验。')
 text = f'''# LINEFIT_BOUNDARY 单候选实测报告
 
 **{status}。{verdict}。** 本报告的实验状态、成绩比较与 GitHub 交付分别举证。当前记录时间来自下方平台回执，不把普通 COMPLETE、局部测试或 proxy 当正式成绩。
@@ -42,6 +49,8 @@ text = f'''# LINEFIT_BOUNDARY 单候选实测报告
 候选 kernel ID：`{s.get('kernel_id')}`。本地 Notebook SHA256：`{m['candidate_notebook_sha256']}`；实际SDK序列化写入源码 SHA256：`{m['submitted_source_sha256']}`。Kaggle返回JSON排版可能不同，平台字节hash与13cell源hash另存 read 快照及 remote_binding；不混淆文件hash与wire hash。
 
 正式相对B0变化：`{delta}`；相对提交前自有最好成绩 `{best.get('public_score','UNKNOWN')}` 的变化：`{best_delta}`。基线当前读取状态来自本轮官方 submissions API 的 submission56091397，并与浏览器 Version1/SV348114666描述核对，不使用历史标题分数。
+
+{outcome_note}
 
 ## 实际执行与测试
 
@@ -77,6 +86,6 @@ text = f'''# LINEFIT_BOUNDARY 单候选实测报告
 
 本轮GitHub交付范围为代码、配置、哈希、合成测试、评分诊断、平台小型回执和本报告，目标仓库为 SailorRen/Biohub-CELL。是否完成须以对应固定提交的远端回读为准。原始源码下载、依赖环境与完整日志留ignored downloads，未提交比赛数据、模型权重或submission.csv。
 
-内容提交与最终回执提交的固定SHA、逐文件远端回读以 delivery_receipt.json及最终交付输出为准。当前文件本身不自证远端完成。冻结合同要求实际正式终态成绩、验收通过、干净Git与GitHub权威远端回读；评分未结束时只记录实际状态，不承诺后台完成。
+终态内容提交与最终回执提交的固定SHA、逐文件远端回读以 terminal_delivery_receipt.json及最终交付输出为准；delivery_receipt.json保留原PENDING阶段的历史交付证明。当前文件本身不自证远端完成。冻结合同要求实际正式终态成绩、验收通过、干净Git与GitHub权威远端回读；本次成绩持平与任务交付是否完成分别判断。
 '''
 (ROOT / 'reports/20260909_LINEFIT_BOUNDARY_实测报告.md').write_text(text)
