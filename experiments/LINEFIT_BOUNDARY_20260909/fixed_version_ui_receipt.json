@@ -1,0 +1,34 @@
+{
+  "ref": "sailorren/biohub-946-linefit-boundary-20260909",
+  "version": 1,
+  "script_version_id": 348415815,
+  "version_url": "https://www.kaggle.com/code/sailorren/biohub-946-linefit-boundary-20260909/notebook?scriptVersionId=348415815",
+  "dataset_sources": [
+    "pilkwang/biohub-deepcenter-unet3d-center-prior-v1/5",
+    "pilkwang/biohub-temporal-unet3d-seed314159-v1/2",
+    "pilkwang/biohub-tracking-support-pack-50ep-v1/10"
+  ],
+  "source": "CUA_FIXED_VERSION_AND_INPUTS_UI",
+  "observed_at_utc": "2026-09-09T04:14:14.722544+00:00",
+  "visible_version_label": "Version 1 of 1",
+  "visible_runtime": "1h 31m 38s; GPU T4 x2",
+  "visible_output_summary": "449 files; 5498.2 second run - successful",
+  "input_card_evidence": [
+    {
+      "title": "Biohub DeepCenterUNet3D Center Prior V1",
+      "href": "/datasets/pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+      "version_label": "Version 5"
+    },
+    {
+      "title": "Biohub TemporalUNet3D Seed 314159 V1",
+      "href": "/datasets/pilkwang/biohub-temporal-unet3d-seed314159-v1",
+      "version_label": "Version 2"
+    },
+    {
+      "title": "Biohub Tracking Support Pack",
+      "href": "/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1",
+      "version_label": "Version 10"
+    }
+  ],
+  "notes": "Read from the completed fixed-Version input cards and Notebook header. Earlier blocked whole-log read not retried further; input card UI read succeeded. A file tooltip occluded the Support Pack row; moving pointer away and selecting the visible root revealed Version10."
+}

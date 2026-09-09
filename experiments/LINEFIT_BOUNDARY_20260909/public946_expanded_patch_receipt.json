@@ -1,0 +1,41 @@
+{
+  "algorithm_sha256": "49613ad0b50ac90c3e07e3f8a803f2adf0926203be3f4a97d577c60b8f756178",
+  "arm": "B0",
+  "audit_enabled": true,
+  "expanded_sha256": "7061abcc02b7c7201b34c6f7673fe4d38399a863cd2f25b08944ea496586b027",
+  "parent_sha256": "49613ad0b50ac90c3e07e3f8a803f2adf0926203be3f4a97d577c60b8f756178",
+  "replacements": [
+    {
+      "label": "audit_window_begin",
+      "matches": 1,
+      "new_sha256": "15a05fd983ee03bf3d1f321751671bfaabb777ce047768be312a863b9fff7594",
+      "old_sha256": "e30e3c579178ffd9f888ad0c30d899f00429f09d20c6ee06a66ae1fa1cbae105"
+    },
+    {
+      "label": "audit_secondary_encode_sites",
+      "matches": 5
+    },
+    {
+      "label": "audit_primary_encode_sites",
+      "matches": 5
+    },
+    {
+      "label": "audit_encoding_output",
+      "matches": 1,
+      "new_sha256": "0060e0cadfcb04b86892e2d7548095fb168e0e64e823fa09f4567087933200ad",
+      "old_sha256": "866643849d4d31edcdd7068dddd89da03943304de8bcc7832bd3fec6b829b4ec"
+    },
+    {
+      "label": "audit_actual_secondary_association",
+      "matches": 1,
+      "new_sha256": "0198e40d8c3ec9d49f371a65ebe2146833ea28cb9887c223ce595d9d4f3c726d",
+      "old_sha256": "a2d59a65deaeef505b8579e262d959d8275740abe398741cada615a24423263c"
+    },
+    {
+      "label": "audit_window_end",
+      "matches": 1,
+      "new_sha256": "7944c4f5b5519d56b68a68ba63d8b0c3a090fce779862fd4c9111a1988b157de",
+      "old_sha256": "0e5f87efdcfd12c404b23711e9b09e1fa5d02b421dc3bc098826407b0839595a"
+    }
+  ]
+}

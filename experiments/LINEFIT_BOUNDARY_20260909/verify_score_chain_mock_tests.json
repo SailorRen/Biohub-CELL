@@ -1,0 +1,71 @@
+{
+  "task_id": "LINEFIT_BOUNDARY_20260909",
+  "scope": "SYNTHETIC_MOCKS_ONLY_NOT_REAL_SCORE_ACCEPTANCE",
+  "executed": true,
+  "observed_at_utc": "2026-09-09T03:07:25.011955+00:00",
+  "status": "PASS",
+  "passed": 8,
+  "total": 8,
+  "tests": [
+    {
+      "name": "normal_complete",
+      "expected": "PASS",
+      "actual": "PASS",
+      "status": "PASS",
+      "reason": null
+    },
+    {
+      "name": "wrong_ledger_submission_id",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "status": "PASS",
+      "reason": "Ledger/results submission ID mismatch"
+    },
+    {
+      "name": "wrong_results_SV",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "status": "PASS",
+      "reason": "Ledger Version/SV/ref mismatch"
+    },
+    {
+      "name": "pending_never_passes",
+      "expected": "WAITING_FORMAL_TERMINAL_SCORE",
+      "actual": "WAITING_FORMAL_TERMINAL_SCORE",
+      "status": "PASS",
+      "reason": "No terminal COMPLETE score; no real PASS or improvement claim."
+    },
+    {
+      "name": "wrong_report_ID",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "status": "PASS",
+      "reason": "Report candidate ID/Version/SV/status/score mismatch"
+    },
+    {
+      "name": "wrong_report_delta",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "status": "PASS",
+      "reason": "Report Decimal score differences are wrong"
+    },
+    {
+      "name": "nonfinite_public_score",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "status": "PASS",
+      "reason": "Non-finite score"
+    },
+    {
+      "name": "mismatched_read_timestamp",
+      "expected": "FAIL",
+      "actual": "FAIL",
+      "status": "PASS",
+      "reason": "Results do not match latest API read time"
+    }
+  ],
+  "script_sha256": "a6c2c3ecda51bcd4fc2475e1568b36e9d13e2aa640f404addca3eae4f2172ee4",
+  "platform_reads": 0,
+  "platform_writes": 0,
+  "real_formal_acceptance": "NOT_EVALUATED_BY_MOCK_TESTS"
+}

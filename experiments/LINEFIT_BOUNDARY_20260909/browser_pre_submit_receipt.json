@@ -1,0 +1,25 @@
+{
+  "task_id": "LINEFIT_BOUNDARY_20260909",
+  "observed_at_utc": "2026-09-09T04:25:40.408676+00:00",
+  "source": "CUA existing in-app browser submission list; prior read-only submit dialog cancelled",
+  "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/submissions#",
+  "candidate_absent_in_13_visible_all_rows": true,
+  "baseline": {
+    "version": 1,
+    "script_version_id": 348114666,
+    "public_score": "0.946"
+  },
+  "best_visible_score": "0.946",
+  "final_selection_count": "0/2",
+  "dialog_prior_observation": {
+    "time_utc_approx": "2026-09-09T04:18:00Z",
+    "quota_remaining_today": 5,
+    "candidate_slug": "biohub-946-linefit-boundary-20260909",
+    "version": 1,
+    "file_name": "submission.csv",
+    "action": "CANCELLED",
+    "submit_clicked": false
+  },
+  "formal_requests_at_observation": 0,
+  "changed_final_selection": false
+}

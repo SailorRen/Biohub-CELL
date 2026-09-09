@@ -1,0 +1,416 @@
+{
+  "task_id": "LINEFIT_BOUNDARY_20260909",
+  "operation": "READ_ONLY_FIXED_B0_OUTPUT_FILE_INVENTORY",
+  "queried_at_shanghai": "2026-09-09T10:54:57.568552+08:00",
+  "scope": "API metadata and filenames/sizes only; no artifact download",
+  "before": {
+    "ref": "sailorren/biohub-946-b0-repro-20260908",
+    "kernel_id": 133498982,
+    "version": 1,
+    "source_sha256": "703278ee6dfb3792f8a0049f7a295d68b7e6bb1df6de49115355fe415dc91a54",
+    "cell_source_sha256": [
+      "4287b1b08b202ca561790489b6cf5941381b3fccfca40bf060239ae22ea3b132",
+      "64bf335d2ea9f1dea62e2e7b3ad3b94205a775e8c5a53515d94bea3b6c655ba2",
+      "6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643",
+      "681232942fbb971dc1b999816b32c6d91da819e55d123b359b601169dd5982fb",
+      "0c9219ab51b8793a8d05c469221a29ebc4d1379458c28d1ba41db08bd57575a6",
+      "ab3be142f357c1eb8e25c40537af64d1b95e4d60b8735afdd533781f6dfb7f9c",
+      "239f51c30606f090e1fbc939a541891cef2dbea45d7b1c4a6fef53352e94759d",
+      "0083b9cd0b94cabba7c28f12bf8d80f6eda4a982d1f6f44ead0975ea0de89e92",
+      "3988c72818365e0cf42169df1d42d3d64e64a6f2815a42255a04222523936349",
+      "2e658927d77b92f79dbb5ac701cdb25ea0eef35e5c4901ed69d00a5aa932eae4",
+      "035037debb8d20a189d59efb74e42b59165172bd0a181e16947ff79c6d6f3c2f",
+      "974767da6156ddf12c5b2d1351b13658f160d0b859a36deb9614441c006537ba",
+      "de5b8e39238b894f8d2aed2660e7e3e2ac74b4edfea04dd6ccee470555e9d58a"
+    ],
+    "matches_local_frozen_cells": true
+  },
+  "pages": [
+    {
+      "page": 1,
+      "endpoint": "ListKernelFiles",
+      "count": 100,
+      "has_next": true
+    },
+    {
+      "page": 2,
+      "endpoint": "ListKernelSessionOutput",
+      "count": 100,
+      "has_next": true
+    },
+    {
+      "page": 3,
+      "endpoint": "ListKernelSessionOutput",
+      "count": 100,
+      "has_next": true
+    },
+    {
+      "page": 4,
+      "endpoint": "ListKernelSessionOutput",
+      "count": 100,
+      "has_next": true
+    },
+    {
+      "page": 5,
+      "endpoint": "ListKernelSessionOutput",
+      "count": 49,
+      "has_next": false
+    }
+  ],
+  "query_errors": [
+    {
+      "endpoint": "ListKernelFiles",
+      "version_label": "1",
+      "status": "HTTP404",
+      "note": "First explicit version-label call returned 404; no output data downloaded."
+    },
+    {
+      "endpoint": "ListKernelFiles",
+      "version_label": null,
+      "status": "SSLError",
+      "message": "HTTPSConnectionPool(host='api.kaggle.com', port=443): Max retries exceeded with url: /v1/kernels.KernelsApiService/ListKernelFiles (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1"
+    },
+    {
+      "endpoint": "OAuthService/IntrospectToken",
+      "operation": "Attempt fresh homogeneous SessionOutput listing from empty token",
+      "status": "SSLError_SSL_UNEXPECTED_EOF",
+      "result": "Read failed before list request; no new rows obtained."
+    }
+  ],
+  "after": {
+    "ref": "sailorren/biohub-946-b0-repro-20260908",
+    "kernel_id": 133498982,
+    "version": 1,
+    "source_sha256": "703278ee6dfb3792f8a0049f7a295d68b7e6bb1df6de49115355fe415dc91a54",
+    "cell_source_sha256": [
+      "4287b1b08b202ca561790489b6cf5941381b3fccfca40bf060239ae22ea3b132",
+      "64bf335d2ea9f1dea62e2e7b3ad3b94205a775e8c5a53515d94bea3b6c655ba2",
+      "6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643",
+      "681232942fbb971dc1b999816b32c6d91da819e55d123b359b601169dd5982fb",
+      "0c9219ab51b8793a8d05c469221a29ebc4d1379458c28d1ba41db08bd57575a6",
+      "ab3be142f357c1eb8e25c40537af64d1b95e4d60b8735afdd533781f6dfb7f9c",
+      "239f51c30606f090e1fbc939a541891cef2dbea45d7b1c4a6fef53352e94759d",
+      "0083b9cd0b94cabba7c28f12bf8d80f6eda4a982d1f6f44ead0975ea0de89e92",
+      "3988c72818365e0cf42169df1d42d3d64e64a6f2815a42255a04222523936349",
+      "2e658927d77b92f79dbb5ac701cdb25ea0eef35e5c4901ed69d00a5aa932eae4",
+      "035037debb8d20a189d59efb74e42b59165172bd0a181e16947ff79c6d6f3c2f",
+      "974767da6156ddf12c5b2d1351b13658f160d0b859a36deb9614441c006537ba",
+      "de5b8e39238b894f8d2aed2660e7e3e2ac74b4edfea04dd6ccee470555e9d58a"
+    ],
+    "matches_local_frozen_cells": true
+  },
+  "enumeration_complete": false,
+  "status": "PARTIAL_DIRECTORY_READ_SOURCE_SAVE_BOUNDARY_VERIFIED",
+  "total_listed_files": 449,
+  "version_binding": "Successful mixed listing was bracketed by identical current GetKernel Version1 and all13 frozen cell hashes. No claim of full output enumeration; explicit version_label=1 query failed404.",
+  "completed_at_shanghai": "2026-09-09T10:59:48.655524+08:00",
+  "evidence_classes": [
+    "OFFICIAL_FACT",
+    "SOURCE_CODE_VERIFIED",
+    "MEASURED",
+    "INFERENCE",
+    "UNKNOWN"
+  ],
+  "baseline": {
+    "ref": "sailorren/biohub-946-b0-repro-20260908",
+    "version": 1,
+    "script_version_id": 348114666,
+    "submission_id": 56091397,
+    "identity_provenance": "SV/submission from frozen PUBLIC946 results and prior browser binding; this additional read freshly confirms current V1 and all13 source hashes, not a new score read."
+  },
+  "local_notebook": {
+    "path": "experiments/PUBLIC946_TTA_20260908/B0/candidate.ipynb",
+    "sha256": "c4bfcd8d765c67d35435876b3f3eb7bb810e20556479a918143451e2c61f849c"
+  },
+  "selected_pp_receipt": {
+    "path": "experiments/PUBLIC946_TTA_20260908/B0/ppsweep_selected.json",
+    "sha256": "5f6fe577421f72dbf374b02387a0006b58508f2943e2e42c36caf3001691a8b5",
+    "selected": "tight55",
+    "held_out_stems": [
+      "44b6_12dfb391",
+      "44b6_267148e4",
+      "44b6_2a2eff9f",
+      "44b6_341df25f",
+      "6bba_062c8d37",
+      "6bba_07e24132",
+      "6bba_085bf656",
+      "6bba_09961292"
+    ]
+  },
+  "raw_validator_graph_inventory": [
+    {
+      "stem": "44b6_12dfb391",
+      "output_relative_path": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff",
+      "kaggle_absolute_path": "/kaggle/working/tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff",
+      "listed_file_count": 33,
+      "all_bytes": null,
+      "size_status": "UNKNOWN: suspicious ListKernelFiles size fields discarded; SessionOutput does not expose size.",
+      "format_reference": "source_format.common_val_relative_members"
+    },
+    {
+      "stem": "44b6_267148e4",
+      "output_relative_path": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff",
+      "kaggle_absolute_path": "/kaggle/working/tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff",
+      "listed_file_count": 33,
+      "all_bytes": null,
+      "size_status": "UNKNOWN: suspicious ListKernelFiles size fields discarded; SessionOutput does not expose size.",
+      "format_reference": "source_format.common_val_relative_members"
+    },
+    {
+      "stem": "44b6_2a2eff9f",
+      "output_relative_path": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff",
+      "kaggle_absolute_path": "/kaggle/working/tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff",
+      "listed_file_count": 33,
+      "all_bytes": null,
+      "size_status": "UNKNOWN: suspicious ListKernelFiles size fields discarded; SessionOutput does not expose size.",
+      "format_reference": "source_format.common_val_relative_members"
+    },
+    {
+      "stem": "44b6_341df25f",
+      "output_relative_path": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff",
+      "kaggle_absolute_path": "/kaggle/working/tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff",
+      "listed_file_count": 33,
+      "all_bytes": null,
+      "size_status": "UNKNOWN: suspicious ListKernelFiles size fields discarded; SessionOutput does not expose size.",
+      "format_reference": "source_format.common_val_relative_members"
+    },
+    {
+      "stem": "6bba_062c8d37",
+      "output_relative_path": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff",
+      "kaggle_absolute_path": "/kaggle/working/tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff",
+      "listed_file_count": 33,
+      "all_bytes": null,
+      "size_status": "UNKNOWN: suspicious ListKernelFiles size fields discarded; SessionOutput does not expose size.",
+      "format_reference": "source_format.common_val_relative_members"
+    },
+    {
+      "stem": "6bba_07e24132",
+      "output_relative_path": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff",
+      "kaggle_absolute_path": "/kaggle/working/tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff",
+      "listed_file_count": 33,
+      "all_bytes": null,
+      "size_status": "UNKNOWN: suspicious ListKernelFiles size fields discarded; SessionOutput does not expose size.",
+      "format_reference": "source_format.common_val_relative_members"
+    },
+    {
+      "stem": "6bba_085bf656",
+      "output_relative_path": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff",
+      "kaggle_absolute_path": "/kaggle/working/tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff",
+      "listed_file_count": 33,
+      "all_bytes": null,
+      "size_status": "UNKNOWN: suspicious ListKernelFiles size fields discarded; SessionOutput does not expose size.",
+      "format_reference": "source_format.common_val_relative_members"
+    },
+    {
+      "stem": "6bba_09961292",
+      "output_relative_path": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff",
+      "kaggle_absolute_path": "/kaggle/working/tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff",
+      "listed_file_count": 33,
+      "all_bytes": null,
+      "size_status": "UNKNOWN: suspicious ListKernelFiles size fields discarded; SessionOutput does not expose size.",
+      "format_reference": "source_format.common_val_relative_members"
+    }
+  ],
+  "inventory_limits": {
+    "listing_complete": false,
+    "observed_rows_across_mixed_interfaces": 449,
+    "session_output_pages_observed": 4,
+    "observed_8_val_full_paths": true,
+    "failure_zh": "ListKernelFiles第1页返回basename和疑似异常size，第2页TLS失败；切换SessionOutput时沿用token，因此跨接口全目录完整性不能成立。随后尝试从空token重列SessionOutput，在OAuth只读鉴权阶段TLS失败，已收束，不再重试。",
+    "what_remains_valid_zh": "SessionOutput实际返回8个val GEFF的完整路径，每个33个成员；只保留这些正向文件存在证据。不能用混合分页证明GT或其他文件在完整输出目录中不存在。",
+    "sizes": "UNKNOWN; all suspicious API size values discarded; no GET/HEAD downloads.",
+    "signed_urls_persisted": false
+  },
+  "source_findings": [
+    {
+      "claim": "TRAIN_DIR resolves under competition input/train; GT is read from <stem>.geff, not copied to working output by the validator.",
+      "classification": "SOURCE_CODE_VERIFIED",
+      "evidence": [
+        {
+          "zero_based_cell": 2,
+          "cell_sha256": "6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643",
+          "lines": [
+            19,
+            29
+          ]
+        },
+        {
+          "zero_based_cell": 7,
+          "cell_sha256": "0083b9cd0b94cabba7c28f12bf8d80f6eda4a982d1f6f44ead0975ea0de89e92",
+          "lines": [
+            9,
+            44
+          ]
+        },
+        {
+          "zero_based_cell": 9,
+          "cell_sha256": "2e658927d77b92f79dbb5ac701cdb25ea0eef35e5c4901ed69d00a5aa932eae4",
+          "lines": [
+            41,
+            59
+          ]
+        }
+      ]
+    },
+    {
+      "claim": "The reviewed merge function places eight raw validator GEFFs under predictions/unknown/unet_transformer_val/split_0. Actual SessionOutput rows positively identify all eight directory paths, but full global enumeration is unverified.",
+      "classification": "SOURCE_CODE_VERIFIED",
+      "evidence": [
+        {
+          "zero_based_cell": 7,
+          "cell_sha256": "0083b9cd0b94cabba7c28f12bf8d80f6eda4a982d1f6f44ead0975ea0de89e92",
+          "lines": [
+            69,
+            132
+          ]
+        },
+        {
+          "zero_based_cell": 7,
+          "cell_sha256": "0083b9cd0b94cabba7c28f12bf8d80f6eda4a982d1f6f44ead0975ea0de89e92",
+          "lines": [
+            135,
+            178
+          ]
+        }
+      ]
+    },
+    {
+      "claim": "VAL_RAW_GRAPHS and VAL_GT are in-memory dictionaries. Each PP candidate deep-copies raw graphs, computes processed_nodes/edges, scores them, and returns aggregate/sample rows without persisting the processed graph.",
+      "classification": "SOURCE_CODE_VERIFIED",
+      "evidence": [
+        {
+          "zero_based_cell": 9,
+          "cell_sha256": "2e658927d77b92f79dbb5ac701cdb25ea0eef35e5c4901ed69d00a5aa932eae4",
+          "lines": [
+            38,
+            77
+          ]
+        },
+        {
+          "zero_based_cell": 9,
+          "cell_sha256": "2e658927d77b92f79dbb5ac701cdb25ea0eef35e5c4901ed69d00a5aa932eae4",
+          "lines": [
+            80,
+            121
+          ]
+        }
+      ]
+    },
+    {
+      "claim": "PP sweep writes validator_results.csv, ppsweep_results.csv, ppsweep_selected.json; the final submission rewrite loops test GEFFs, not eight validator FOVs. The reviewed PP function does not persist processed validator nodes/edges.",
+      "classification": "SOURCE_CODE_VERIFIED",
+      "evidence": [
+        {
+          "zero_based_cell": 9,
+          "cell_sha256": "2e658927d77b92f79dbb5ac701cdb25ea0eef35e5c4901ed69d00a5aa932eae4",
+          "lines": [
+            124,
+            144
+          ]
+        },
+        {
+          "zero_based_cell": 10,
+          "cell_sha256": "035037debb8d20a189d59efb74e42b59165172bd0a181e16947ff79c6d6f3c2f",
+          "lines": [
+            61,
+            108
+          ]
+        },
+        {
+          "zero_based_cell": 5,
+          "cell_sha256": "ab3be142f357c1eb8e25c40537af64d1b95e4d60b8735afdd533781f6dfb7f9c",
+          "lines": [
+            1562,
+            1585
+          ]
+        }
+      ]
+    }
+  ],
+  "existing_log_evidence": {
+    "path": "downloads/PUBLIC946_TTA_20260908/B0/ordinary.log",
+    "sha256": "19f8295736c11ec8a60b75fa3a26d848a8dff6cb31aed4b18a719e48f2d88f99",
+    "observations": [
+      {
+        "line": 3162,
+        "text": "VALIDATOR: merged 8 prediction graphs into /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_val/split_0"
+      },
+      {
+        "line": 3185,
+        "text": "VALIDATOR: cached 8 raw prediction graphs + GT"
+      }
+    ],
+    "classification": "MEASURED"
+  },
+  "availability": {
+    "raw_val_geff": "ALL_8_EXPLICIT_OUTPUT_PATHS_LISTED",
+    "raw_val_geff_contents": "NOT_DOWNLOADED_OR_VALIDATED",
+    "paired_gt_in_ordinary_outputs": "NO_IDENTIFIABLE_GT_GRAPH_PAIR_FOUND_IN_OBSERVED_ROWS; global directory enumeration incomplete. Source reads GT from competition input without validator output save.",
+    "exact_selected_postprocessed_8_fov_graphs": "NOT_PERSISTED_BY_REVIEWED_PP_CODE; no explicit artifact path identified in observed rows. Not an exhaustive output content absence proof.",
+    "can_directly_rescore_same_selected_8_fov_graphs": false,
+    "decision": "NO_SAME_PREDICTION_GRAPHS_FOR_ACTUAL_PP_SELECTION",
+    "reason_zh": "B0 V1输出已正向识别8个后处理前val GEFF。代码显示自动选参实际评分的后处理图只在内存；GT从比赛input读取，当前也未取得可配对副本。当前不能直接对自动选参所用同一批图重评分。目录枚举受TLS/跨接口分页影响为PARTIAL，不能把未看见GT等同于完整目录证明不存在。",
+    "conditional_future_zh": "若另行取得固定GT并按原参数复现后处理，可研究重评分，但需要额外执行且不是回收现存选择图；本附加排查没有执行或授权扩展此步骤。"
+  },
+  "external_actions": {
+    "successful_get_kernel_reads": 3,
+    "list_files_requests": 3,
+    "list_session_output_pages": 4,
+    "fresh_restart_failed_before_listing": true,
+    "downloaded_artifacts": 0,
+    "file_get_or_head_requests": 0,
+    "model_or_pp_runs": 0,
+    "notebook_save_requests": 0,
+    "formal_submission_requests": 0,
+    "git_operations": 0
+  },
+  "preserved_diagnostic_hashes": {
+    "scorer_diagnostic.py": "e2a46eab2f106be3dbd58473b065b38d0ddc1e6eff25f90cbe05d71eaf3041d5",
+    "scorer_diagnostic.json": "cb66992d3b268068ad011d32db16dd6c6c5ceea061a4b4334258a6ad269e8c77",
+    "scorer_diagnostic.md": "1a0480414941d29249ed2065680a417d7c215d0bfaaffbd26f0d65a179ef5cb2"
+  },
+  "not_completion_claim": "This is only an availability readback; it does not assert formal score, performance gain, GitHub delivery, or remote verification.",
+  "source_format": {
+    "kind": "GEFF/Zarr-style directory layout observed from filenames only",
+    "common_val_relative_members": [
+      "edges/ids/c/0/0",
+      "edges/ids/zarr.json",
+      "edges/props/edge_dist/values/c/0",
+      "edges/props/edge_dist/values/zarr.json",
+      "edges/props/edge_dist/zarr.json",
+      "edges/props/edge_prob/values/c/0",
+      "edges/props/edge_prob/values/zarr.json",
+      "edges/props/edge_prob/zarr.json",
+      "edges/props/solution/values/c/0",
+      "edges/props/solution/values/zarr.json",
+      "edges/props/solution/zarr.json",
+      "edges/props/zarr.json",
+      "edges/zarr.json",
+      "nodes/ids/c/0",
+      "nodes/ids/zarr.json",
+      "nodes/props/solution/values/c/0",
+      "nodes/props/solution/values/zarr.json",
+      "nodes/props/solution/zarr.json",
+      "nodes/props/t/values/c/0",
+      "nodes/props/t/values/zarr.json",
+      "nodes/props/t/zarr.json",
+      "nodes/props/x/values/c/0",
+      "nodes/props/x/values/zarr.json",
+      "nodes/props/x/zarr.json",
+      "nodes/props/y/values/c/0",
+      "nodes/props/y/values/zarr.json",
+      "nodes/props/y/zarr.json",
+      "nodes/props/z/values/c/0",
+      "nodes/props/z/values/zarr.json",
+      "nodes/props/z/zarr.json",
+      "nodes/props/zarr.json",
+      "nodes/zarr.json",
+      "zarr.json"
+    ],
+    "all_8_val_member_sets_equal": true,
+    "content_validation": "NOT_RUN; no graph payload or metadata JSON downloaded",
+    "bytes": null,
+    "size_status": "UNKNOWN"
+  },
+  "no_direct_rescore_reason": "Missing exact selected postprocessed validator graph plus matching GT; raw pre-PP GEFF alone cannot stand in for actual selector scoring graphs."
+}

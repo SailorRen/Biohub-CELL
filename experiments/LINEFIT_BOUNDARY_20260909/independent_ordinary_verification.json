@@ -1,0 +1,509 @@
+{
+  "schema_version": 1,
+  "task_id": "LINEFIT_BOUNDARY_20260909",
+  "reviewer": "independent_public_notebook_research_agent",
+  "observed_at_utc": "2026-09-09T04:31:17.822614+00:00",
+  "classification": "MEASURED",
+  "status": "INDEPENDENT_ORDINARY_EVIDENCE_VERIFIED",
+  "scope": "只读本地恢复下载的十份小证据；全量检查四 runtime 文件及 run_stats。原四文件十四项的结论和哈希重验。未独立重新读取平台或下载 submission.csv。",
+  "pre_submission_blockers_in_reviewed_ordinary_scope": [],
+  "candidate": {
+    "ref": "sailorren/biohub-946-linefit-boundary-20260909",
+    "version": 1,
+    "script_version_id": 348415815,
+    "kernel_id": 133664101,
+    "candidate_notebook_sha256": "2476eae2ff6f95d79a18c8a1294e14e10e5309c61ec86872cbc4962687b852a5",
+    "submitted_source_sha256": "4271519ed44e28da93e89128fc6e39515f954e96b8c2d0a9b102c23f3e08f11b"
+  },
+  "checks_total": 35,
+  "checks_passed": 35,
+  "checks": [
+    {
+      "id": "ten_unique_HTTP200_successful_downloads",
+      "passed": true
+    },
+    {
+      "id": "all_downloaded_bytes_and_hashes_equal_curl_receipt",
+      "passed": true
+    },
+    {
+      "id": "local_small_file_set_equals_download_receipt",
+      "passed": true
+    },
+    {
+      "id": "six_required_receipts_and_four_runtime_files_present",
+      "passed": true
+    },
+    {
+      "id": "run_stats.csv_matches_inrun_audit_bytes_and_hash",
+      "passed": true
+    },
+    {
+      "id": "ppsweep_selected.json_matches_inrun_audit_bytes_and_hash",
+      "passed": true
+    },
+    {
+      "id": "all_previous_four_file_14_checks_and_source_hashes_still_valid",
+      "passed": true
+    },
+    {
+      "id": "run_stats_exact_four_unique_test_videos",
+      "passed": true
+    },
+    {
+      "id": "run_stats_nodes_edges_equal_audit_per_video_and_total",
+      "passed": true
+    },
+    {
+      "id": "boundary_metrics_finite_nonnegative_and_bounded",
+      "passed": true
+    },
+    {
+      "id": "independently_recomputed_boundary_aggregates_equal_summary",
+      "passed": true
+    },
+    {
+      "id": "boundary_encountered_and_smoothing_occurred",
+      "passed": true
+    },
+    {
+      "id": "exact_four_test_eight_selected_train_videos",
+      "passed": true
+    },
+    {
+      "id": "runtime_video_coverage_equals_B0",
+      "passed": true
+    },
+    {
+      "id": "all_runtime_window_keys_unique",
+      "passed": true
+    },
+    {
+      "id": "test_frame_coverage_matches_final_audit",
+      "passed": true
+    },
+    {
+      "id": "every_video_window_and_frame_pairs_equal_B0_coverage",
+      "passed": true
+    },
+    {
+      "id": "every_video_99_consecutive_windows_covers_100_frames",
+      "passed": true
+    },
+    {
+      "id": "1188_actual_windows_matches_summary",
+      "passed": true
+    },
+    {
+      "id": "all_windows_actual_B0_8plus8_CUDA",
+      "passed": true
+    },
+    {
+      "id": "association_calls_and_fusion_unchanged",
+      "passed": true
+    },
+    {
+      "id": "twelve_first_window_diagnostics_one_per_video",
+      "passed": true
+    },
+    {
+      "id": "primary_secondary_actual_encode_views_each_1_to_8",
+      "passed": true
+    },
+    {
+      "id": "diagnostic_encoder_calls_zero_and_probabilities_not_consumed",
+      "passed": true
+    },
+    {
+      "id": "secondary_feature_and_edge_behavior_matches_B0",
+      "passed": true
+    },
+    {
+      "id": "all_logged_tensor_finiteness_flags_pass",
+      "passed": true
+    },
+    {
+      "id": "logged_FP32_no_grad_no_autocast",
+      "passed": true
+    },
+    {
+      "id": "validator_64_unique_config_stem_rows",
+      "passed": true
+    },
+    {
+      "id": "validator_results_equal_B0",
+      "passed": true
+    },
+    {
+      "id": "automatic_PP_selection_and_configuration_equal_B0",
+      "passed": true
+    },
+    {
+      "id": "six_copied_evidence_file_bytes_and_hashes_match_summary",
+      "passed": true
+    },
+    {
+      "id": "ordinary_source_before_after_equal_frozen_cells",
+      "passed": true
+    },
+    {
+      "id": "fixed_V1_SV348415815_binding_consistent",
+      "passed": true
+    },
+    {
+      "id": "collector_frozen_hash_unchanged",
+      "passed": true
+    },
+    {
+      "id": "manifest_frozen_hash_unchanged",
+      "passed": true
+    }
+  ],
+  "downloaded_files": [
+    {
+      "path": "downloads/LINEFIT_BOUNDARY_20260909/ordinary_output/ppsweep_results.csv",
+      "bytes": 1399,
+      "sha256": "281ca967bec5187cee9a72518a8af28ea646821e13cb4cf2b2227d1b7668ecd2",
+      "name": "ppsweep_results.csv"
+    },
+    {
+      "path": "downloads/LINEFIT_BOUNDARY_20260909/ordinary_output/ppsweep_selected.json",
+      "bytes": 353,
+      "sha256": "5f6fe577421f72dbf374b02387a0006b58508f2943e2e42c36caf3001691a8b5",
+      "name": "ppsweep_selected.json"
+    },
+    {
+      "path": "downloads/LINEFIT_BOUNDARY_20260909/ordinary_output/public946_expanded_patch_receipt.json",
+      "bytes": 1486,
+      "sha256": "51c22155da6ca1cd3f5e6dfaf4e10babf90f418c78ebfcee2546f354f6d82936",
+      "name": "public946_expanded_patch_receipt.json"
+    },
+    {
+      "path": "downloads/LINEFIT_BOUNDARY_20260909/ordinary_output/public946_final_audit.json",
+      "bytes": 16735,
+      "sha256": "c481ab2914744c2421a18fc610afe327b60d8cfdc517cae22111a8fce5c2d8d5",
+      "name": "public946_final_audit.json"
+    },
+    {
+      "path": "downloads/LINEFIT_BOUNDARY_20260909/ordinary_output/public946_runtime_188.jsonl",
+      "bytes": 325854,
+      "sha256": "8f72e161eb66c3e1c4df94884ba23e622ab47b3edb8e8ee4ed4996808221f801",
+      "name": "public946_runtime_188.jsonl"
+    },
+    {
+      "path": "downloads/LINEFIT_BOUNDARY_20260909/ordinary_output/public946_runtime_189.jsonl",
+      "bytes": 325926,
+      "sha256": "dcf5b7534cbd324054132c3de98d599bd562d6e5cb0c71f67d1010f07aa2dd64",
+      "name": "public946_runtime_189.jsonl"
+    },
+    {
+      "path": "downloads/LINEFIT_BOUNDARY_20260909/ordinary_output/public946_runtime_72.jsonl",
+      "bytes": 162692,
+      "sha256": "f880e84922d3d2638cde8a2ff12012eac760549ddd376e5a19e3e0ec7e42a08b",
+      "name": "public946_runtime_72.jsonl"
+    },
+    {
+      "path": "downloads/LINEFIT_BOUNDARY_20260909/ordinary_output/public946_runtime_73.jsonl",
+      "bytes": 162764,
+      "sha256": "3952932b4eef924a57d9ec5d4849b53629b76dafa01c84d3a0079836ec330fea",
+      "name": "public946_runtime_73.jsonl"
+    },
+    {
+      "path": "downloads/LINEFIT_BOUNDARY_20260909/ordinary_output/run_stats.csv",
+      "bytes": 3472,
+      "sha256": "354b5a479979a1fb1b5649bb0ea68a9b1b0a3358a457d21ebb025a56495a2c67",
+      "name": "run_stats.csv"
+    },
+    {
+      "path": "downloads/LINEFIT_BOUNDARY_20260909/ordinary_output/validator_results.csv",
+      "bytes": 7809,
+      "sha256": "9d28929631425afb5c4dc2595670ccb2f12e342360bd0ffce45e5837416a0ec0",
+      "name": "validator_results.csv"
+    }
+  ],
+  "runtime_files": [
+    {
+      "path": "downloads/LINEFIT_BOUNDARY_20260909/ordinary_output/public946_runtime_188.jsonl",
+      "bytes": 325854,
+      "sha256": "8f72e161eb66c3e1c4df94884ba23e622ab47b3edb8e8ee4ed4996808221f801",
+      "records": 396,
+      "datasets": [
+        "44b6_12dfb391",
+        "44b6_2a2eff9f",
+        "6bba_062c8d37",
+        "6bba_085bf656"
+      ]
+    },
+    {
+      "path": "downloads/LINEFIT_BOUNDARY_20260909/ordinary_output/public946_runtime_189.jsonl",
+      "bytes": 325926,
+      "sha256": "dcf5b7534cbd324054132c3de98d599bd562d6e5cb0c71f67d1010f07aa2dd64",
+      "records": 396,
+      "datasets": [
+        "44b6_267148e4",
+        "44b6_341df25f",
+        "6bba_07e24132",
+        "6bba_09961292"
+      ]
+    },
+    {
+      "path": "downloads/LINEFIT_BOUNDARY_20260909/ordinary_output/public946_runtime_72.jsonl",
+      "bytes": 162692,
+      "sha256": "f880e84922d3d2638cde8a2ff12012eac760549ddd376e5a19e3e0ec7e42a08b",
+      "records": 198,
+      "datasets": [
+        "44b6_0113de3b",
+        "6bba_05b6850b"
+      ]
+    },
+    {
+      "path": "downloads/LINEFIT_BOUNDARY_20260909/ordinary_output/public946_runtime_73.jsonl",
+      "bytes": 162764,
+      "sha256": "3952932b4eef924a57d9ec5d4849b53629b76dafa01c84d3a0079836ec330fea",
+      "records": 198,
+      "datasets": [
+        "44b6_0b24845f",
+        "6bba_05db0fb1"
+      ]
+    }
+  ],
+  "runtime_total": 1188,
+  "association_samples": 12,
+  "runtime_coverage": [
+    {
+      "split": "test",
+      "dataset": "44b6_0113de3b",
+      "records": 99,
+      "window_index_range": [
+        1,
+        99
+      ],
+      "frames_range": [
+        0,
+        99
+      ]
+    },
+    {
+      "split": "test",
+      "dataset": "44b6_0b24845f",
+      "records": 99,
+      "window_index_range": [
+        1,
+        99
+      ],
+      "frames_range": [
+        0,
+        99
+      ]
+    },
+    {
+      "split": "test",
+      "dataset": "6bba_05b6850b",
+      "records": 99,
+      "window_index_range": [
+        1,
+        99
+      ],
+      "frames_range": [
+        0,
+        99
+      ]
+    },
+    {
+      "split": "test",
+      "dataset": "6bba_05db0fb1",
+      "records": 99,
+      "window_index_range": [
+        1,
+        99
+      ],
+      "frames_range": [
+        0,
+        99
+      ]
+    },
+    {
+      "split": "train",
+      "dataset": "44b6_12dfb391",
+      "records": 99,
+      "window_index_range": [
+        1,
+        99
+      ],
+      "frames_range": [
+        0,
+        99
+      ]
+    },
+    {
+      "split": "train",
+      "dataset": "44b6_267148e4",
+      "records": 99,
+      "window_index_range": [
+        1,
+        99
+      ],
+      "frames_range": [
+        0,
+        99
+      ]
+    },
+    {
+      "split": "train",
+      "dataset": "44b6_2a2eff9f",
+      "records": 99,
+      "window_index_range": [
+        1,
+        99
+      ],
+      "frames_range": [
+        0,
+        99
+      ]
+    },
+    {
+      "split": "train",
+      "dataset": "44b6_341df25f",
+      "records": 99,
+      "window_index_range": [
+        1,
+        99
+      ],
+      "frames_range": [
+        0,
+        99
+      ]
+    },
+    {
+      "split": "train",
+      "dataset": "6bba_062c8d37",
+      "records": 99,
+      "window_index_range": [
+        1,
+        99
+      ],
+      "frames_range": [
+        0,
+        99
+      ]
+    },
+    {
+      "split": "train",
+      "dataset": "6bba_07e24132",
+      "records": 99,
+      "window_index_range": [
+        1,
+        99
+      ],
+      "frames_range": [
+        0,
+        99
+      ]
+    },
+    {
+      "split": "train",
+      "dataset": "6bba_085bf656",
+      "records": 99,
+      "window_index_range": [
+        1,
+        99
+      ],
+      "frames_range": [
+        0,
+        99
+      ]
+    },
+    {
+      "split": "train",
+      "dataset": "6bba_09961292",
+      "records": 99,
+      "window_index_range": [
+        1,
+        99
+      ],
+      "frames_range": [
+        0,
+        99
+      ]
+    }
+  ],
+  "boundary": {
+    "boundary_nodes": 408,
+    "smoothed_boundary_nodes": 406,
+    "boundary_shift_um_sum": 319.69085400586386,
+    "boundary_shift_um_max": 3.799026191012641
+  },
+  "boundary_movement_scope": "候选 linefit 输出相对函数输入坐标的物理位移；不是相对 B0 预测差异。",
+  "actual_postprocess": {
+    "selected": "tight55",
+    "overrides": {
+      "MOTION_RELINK_TIGHT_UM": 5.5
+    },
+    "entire_configuration_equal_B0": true,
+    "proxy_equals_B0": true,
+    "proxy_is_formal_score": false
+  },
+  "evidence_bindings": [
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/manifest.json",
+      "bytes": 4424,
+      "sha256": "eb45073c9ab58005c603353d59782b4d6c879b03027c15e27bd91573279cbdda"
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/collect_output.py",
+      "bytes": 4787,
+      "sha256": "47a52b5fc878ba55cdf82fba155bb0faf0c8dfaf3bd4bee0010f9eef86a78729"
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/collect_curl_recovery.py",
+      "bytes": 3540,
+      "sha256": "97f1f2502c230203a8e999c28d6d98621b9d3d9a227cf22c0dedd9990efd8788"
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/curl_collection_receipt.json",
+      "bytes": 3388,
+      "sha256": "b9ed12108e4b2a6ddebbd262b8e8d1eaef7e780a657a6102e9b64c6fbb8be9f3"
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/ordinary_summary.json",
+      "bytes": 24189,
+      "sha256": "22b890d2cf7583529003d8efaf03481409e4975022c4ff0b0aa378d03f4fce5d"
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/independent_ordinary_partial.json",
+      "bytes": 10550,
+      "sha256": "58de57dab59e9473dbd742f184b729e6efc1659c9d5dfbd9073b932c9967c748"
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/fixed_version_ui_receipt.json",
+      "bytes": 1550,
+      "sha256": "7285060a677e16739fce32d1583d08c487492c09cddd5dc7e7f4ae0eed444bd1"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/validator_results.csv",
+      "bytes": 7809,
+      "sha256": "9d28929631425afb5c4dc2595670ccb2f12e342360bd0ffce45e5837416a0ec0"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/runtime_summary.json",
+      "bytes": 362591,
+      "sha256": "826663880f347bb38d479203a93fcb8290ca4ea30c89791ea0fdfda5bbee6f98"
+    }
+  ],
+  "collector_completeness_gap_resolution": "冻结 collector 本身仍有部分回执记载的数量和集合验收缺口。本候选已由本回执实际执行的十文件哈希集合、四测试 run_stats 及十二视频连续唯一 1188 窗覆盖检查补齐。未修改冻结实现。",
+  "platform_writes_performed": 0,
+  "frozen_files_modified": [],
+  "formal_state_observed_from_local_results": {
+    "id": 56113466,
+    "status": "PENDING",
+    "public_score": null,
+    "private_score": null,
+    "description": "LINEFIT_BOUNDARY_20260909 | V1 | SV348415815 | SHA256 4271519ed44e28da93e89128fc6e39515f954e96b8c2d0a9b102c23f3e08f11b",
+    "date_utc": "2026-09-09 04:27:08.340000",
+    "error_description": "",
+    "observed_at_utc": "2026-09-09T04:30:55.518611+00:00"
+  },
+  "formal_score_verified_by_this_review": false,
+  "formal_hidden_output": "UNKNOWN",
+  "performance_verdict": "UNKNOWN — 普通运行验收不是正式成绩，本回执不声明正式终态或提分。"
+}

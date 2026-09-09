@@ -1,0 +1,28 @@
+{
+  "task_id": "LINEFIT_BOUNDARY_20260909",
+  "observed_at_utc": "2026-09-09T04:04:54.188473+00:00",
+  "status": "RESOLVED",
+  "browser": {
+    "operation": "Read latest final postprocess selection from visible logs",
+    "initial_attempt": "AUTOMATIC_APPROVAL_TIMEOUT",
+    "one_allowed_retry": "AUTOMATIC_APPROVAL_TIMEOUT",
+    "further_attempts": 0
+  },
+  "api": {
+    "operation": "Existing narrow read-only candidate status observer",
+    "failure": "SSL_UNEXPECTED_EOF at OAuthService/IntrospectToken after bounded read retries",
+    "latest_status_not_obtained": true
+  },
+  "last_successful_browser_read_utc": "2026-09-09T03:56:28.102Z",
+  "last_successful_api_read_utc": "2026-09-09T03:42:05.245501+00:00",
+  "formal_requests": 0,
+  "notebook_save_requests": 1,
+  "note": "No failure of the actual Kaggle run is established by these observation failures. Version/input UI binding and final output acceptance are pending; no formal submission sent.",
+  "resolution": {
+    "at_utc": "2026-09-09T04:14:14.722544+00:00",
+    "api_status_recovered": "2026-09-09T04:08:36.607430+00:00",
+    "browser_fixed_version_inputs_verified": true,
+    "small_output_audit_verified_at_utc": "2026-09-09T04:25:32.380215+00:00",
+    "method": "System curl artifact GETs with TLS verification; frozen collector unchanged"
+  }
+}

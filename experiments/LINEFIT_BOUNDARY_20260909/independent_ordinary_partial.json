@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "task_id": "LINEFIT_BOUNDARY_20260909",
+  "reviewer": "independent_public_notebook_research_agent",
+  "observed_at_utc": "2026-09-09T04:26:57.233594+00:00",
+  "status": "PARTIAL_ORDINARY_FOUR_FILE_REVIEW_PASS",
+  "classification": "MEASURED",
+  "complete_ordinary_acceptance": false,
+  "authorizes_submission": false,
+  "scope": "只读比对候选已下载的四份小文件与 B0；未读取候选 submission.csv，不代替冻结 collector 或正式评分验收。",
+  "identity_from_local_results": {
+    "kernel_ref": "sailorren/biohub-946-linefit-boundary-20260909",
+    "version": 1,
+    "script_version_id": 348415815,
+    "provenance": "本地 results.json；本回执不独立重读平台身份"
+  },
+  "source_files": [
+    {
+      "role": "candidate",
+      "path": "downloads/LINEFIT_BOUNDARY_20260909/ordinary_output/ppsweep_selected.json",
+      "bytes": 353,
+      "sha256": "5f6fe577421f72dbf374b02387a0006b58508f2943e2e42c36caf3001691a8b5"
+    },
+    {
+      "role": "baseline",
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/ppsweep_selected.json",
+      "bytes": 353,
+      "sha256": "5f6fe577421f72dbf374b02387a0006b58508f2943e2e42c36caf3001691a8b5"
+    },
+    {
+      "role": "candidate",
+      "path": "downloads/LINEFIT_BOUNDARY_20260909/ordinary_output/public946_expanded_patch_receipt.json",
+      "bytes": 1486,
+      "sha256": "51c22155da6ca1cd3f5e6dfaf4e10babf90f418c78ebfcee2546f354f6d82936"
+    },
+    {
+      "role": "baseline",
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/public946_expanded_patch_receipt.json",
+      "bytes": 1486,
+      "sha256": "51c22155da6ca1cd3f5e6dfaf4e10babf90f418c78ebfcee2546f354f6d82936"
+    },
+    {
+      "role": "candidate",
+      "path": "downloads/LINEFIT_BOUNDARY_20260909/ordinary_output/ppsweep_results.csv",
+      "bytes": 1399,
+      "sha256": "281ca967bec5187cee9a72518a8af28ea646821e13cb4cf2b2227d1b7668ecd2"
+    },
+    {
+      "role": "baseline",
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/ppsweep_results.csv",
+      "bytes": 1401,
+      "sha256": "120727ef0afe612e02cbf30e75bba60fc8a460e3d12b0038cc7dd05411a3568d"
+    },
+    {
+      "role": "candidate",
+      "path": "downloads/LINEFIT_BOUNDARY_20260909/ordinary_output/public946_final_audit.json",
+      "bytes": 16735,
+      "sha256": "c481ab2914744c2421a18fc610afe327b60d8cfdc517cae22111a8fce5c2d8d5"
+    },
+    {
+      "role": "baseline",
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/public946_final_audit.json",
+      "bytes": 16736,
+      "sha256": "429bcce13bbfaa694da0fc756672d4801c3b7e7c168bc43b820a26cfc63b8696"
+    }
+  ],
+  "checks": [
+    {
+      "id": "final_audit_and_submission_pass",
+      "passed": true
+    },
+    {
+      "id": "all_actual_checkpoint_hashes_equal_B0",
+      "passed": true
+    },
+    {
+      "id": "all_support_python_after_patch_hashes_equal_B0",
+      "passed": true
+    },
+    {
+      "id": "entire_postprocess_object_equal_B0",
+      "passed": true
+    },
+    {
+      "id": "all_topology_summary_and_framecounts_equal_B0",
+      "passed": true
+    },
+    {
+      "id": "test_sets_equal_B0",
+      "passed": true
+    },
+    {
+      "id": "rows_nodes_edges_equal_B0",
+      "passed": true
+    },
+    {
+      "id": "final_csv_hash_different_B0",
+      "passed": true
+    },
+    {
+      "id": "selected_pp_file_hash_matches_inrun_audit",
+      "passed": true
+    },
+    {
+      "id": "selected_pp_contents_equal_B0",
+      "passed": true
+    },
+    {
+      "id": "expanded_patch_receipt_equal_B0",
+      "passed": true
+    },
+    {
+      "id": "dependencies_equal_B0",
+      "passed": true
+    },
+    {
+      "id": "inference_configuration_equal_B0",
+      "passed": true
+    },
+    {
+      "id": "entire_sweep_equal_except_runtime_seconds",
+      "passed": true
+    }
+  ],
+  "checks_passed": 14,
+  "checks_total": 14,
+  "observations": {
+    "actual_postprocess_selected": "tight55",
+    "actual_postprocess_overrides": {
+      "MOTION_RELINK_TIGHT_UM": 5.5
+    },
+    "entire_postprocess_equal_B0": true,
+    "proxy_selected": 0.951247367385682,
+    "proxy_base": 0.9491896335339407,
+    "proxy_equals_B0": true,
+    "proxy_is_formal_score": false,
+    "final_rows_nodes_edges": {
+      "rows": 241400,
+      "nodes": 122841,
+      "edges": 118559
+    },
+    "candidate_csv_sha256_in_audit": "ded76f34aab4ee096ab2790e4e9057d6ae4bfd26e4344b04dfbd50b8e1fffead",
+    "B0_csv_sha256_in_audit": "a852d1d07ff8c9307d9b10db7f9b4b12e8b1882f14c5dbeb1316d099f0795b3e",
+    "csv_hash_difference_interpretation": "仅证明 audit 所记录的输出字节哈希不同；未独立比较 CSV 坐标或 edge ID。",
+    "expanded_receipt_arm": "B0",
+    "expanded_receipt_arm_interpretation": "继承的 B0 predictor 审计标签；linefit 改动位于 notebook cell 5，不以该标签识别候选。"
+  },
+  "not_reviewed": {
+    "candidate_run_stats_csv": true,
+    "candidate_runtime_jsonl": true,
+    "candidate_submission_csv": true,
+    "formal_hidden_output": true,
+    "formal_score": true
+  },
+  "candidate_files_present_at_receipt": [
+    "biohub-946-linefit-boundary-20260909.log",
+    "ppsweep_results.csv",
+    "ppsweep_selected.json",
+    "public946_expanded_patch_receipt.json",
+    "public946_final_audit.json",
+    "public946_runtime_188.jsonl",
+    "public946_runtime_189.jsonl",
+    "public946_runtime_72.jsonl",
+    "public946_runtime_73.jsonl",
+    "run_stats.csv",
+    "validator_results.csv"
+  ],
+  "candidate_runtime_files_present_at_receipt": [
+    "public946_runtime_188.jsonl",
+    "public946_runtime_189.jsonl",
+    "public946_runtime_72.jsonl",
+    "public946_runtime_73.jsonl"
+  ],
+  "candidate_run_stats_present_at_receipt": true,
+  "pending_evidence": "原四文件审查时 run_stats.csv 和 runtime JSONL 尚未取得；本回执范围不含它们。即使恢复进程随后下载成功，仍需额外完整性和实际边界统计验收。",
+  "run_stats_expected_from_actual_audit": {
+    "bytes": 3472,
+    "sha256": "354b5a479979a1fb1b5649bb0ea68a9b1b0a3358a457d21ebb025a56495a2c67"
+  },
+  "collector_review": {
+    "path": "experiments/LINEFIT_BOUNDARY_20260909/collect_output.py",
+    "sha256": "47a52b5fc878ba55cdf82fba155bb0faf0c8dfaf3bd4bee0010f9eef86a78729",
+    "implementation_modified": false,
+    "findings": [
+      {
+        "id": "runtime_coverage_not_required",
+        "severity": "acceptance_gap",
+        "lines": [
+          40,
+          43
+        ],
+        "detail": "仅 records 非空且每条 arm/8+8/CUDA 合法；没有要求视频集合、每视频 window_index 完整唯一、总记录数。单条合法记录即可通过此谓词。"
+      },
+      {
+        "id": "download_file_set_not_bound",
+        "severity": "acceptance_gap",
+        "lines": [
+          26,
+          40
+        ],
+        "detail": "丢弃 kernels_output 返回文件列表并 glob 已存在目录；无远端已枚举文件集合与本地文件集合/哈希对照，残留或缺失 runtime 文件未由集合验收排除。"
+      },
+      {
+        "id": "run_stats_coverage_and_hash_not_checked",
+        "severity": "acceptance_gap",
+        "lines": [
+          36,
+          39
+        ],
+        "detail": "run_stats 只检查非空和四列存在，未核对 audit 中 SHA/bytes，也未要求完整且不重复的四个测试数据集。"
+      },
+      {
+        "id": "small_file_bundle_not_required",
+        "severity": "evidence_completeness_gap",
+        "lines": [
+          26,
+          49
+        ],
+        "detail": "selected/expanded/sweep/validator 不是必须存在的文件集合；复制本地现有 JSON/CSV。当前四文件已实际阅读的部分不受此发现否定。"
+      }
+    ],
+    "actual_in_memory_predicate_probe": {
+      "baseline_runtime_source_files": [
+        {
+          "path": "downloads/PUBLIC946_TTA_20260908/B0/ordinary_output/public946_runtime_187.jsonl",
+          "sha256": "b92d55d3ed4008eb0500cdb04a68d5919fddcaf78a298d2fd8988527383d16a7"
+        },
+        {
+          "path": "downloads/PUBLIC946_TTA_20260908/B0/ordinary_output/public946_runtime_188.jsonl",
+          "sha256": "88546796210d16e60053a386d59156c5f6bf83e6a230ce00991e4d5827381ff9"
+        },
+        {
+          "path": "downloads/PUBLIC946_TTA_20260908/B0/ordinary_output/public946_runtime_71.jsonl",
+          "sha256": "7b7b1de9fbc05966d875784455e920bd087e7190899042341387dad180243785"
+        },
+        {
+          "path": "downloads/PUBLIC946_TTA_20260908/B0/ordinary_output/public946_runtime_72.jsonl",
+          "sha256": "555a5218533c1d05110d7ccffc8d5bf3af9c1d0313d29c9a0939c2a049822957"
+        }
+      ],
+      "baseline_records": 1188,
+      "baseline_per_dataset_records": {
+        "44b6_12dfb391": 99,
+        "44b6_2a2eff9f": 99,
+        "6bba_062c8d37": 99,
+        "6bba_085bf656": 99,
+        "44b6_267148e4": 99,
+        "44b6_341df25f": 99,
+        "6bba_07e24132": 99,
+        "6bba_09961292": 99,
+        "44b6_0113de3b": 99,
+        "6bba_05b6850b": 99,
+        "44b6_0b24845f": 99,
+        "6bba_05db0fb1": 99
+      },
+      "tested_input_records": 1,
+      "tested_predicate_result": true,
+      "interpretation": "从 B0 实际 runtime 取一条合法记录，原 collector 的 runtime 谓词返回 True；这是本地截断反例，不是候选 runtime 实际缺失的结论。"
+    },
+    "recommended_supplementary_readonly_checks": [
+      "冻结 collector 保持不变；补充本地完整性验收回执。",
+      "run_stats SHA/bytes 必须等于候选 final_audit.small_receipts 声明，数据集集合必须等于 final audit 的四个测试数据集且每个唯一。",
+      "以平台只读输出列表的安全文件名/字节数及实际本地 SHA 绑定文件集合；不要把签名下载 URL 写入 Git。",
+      "runtime 必须覆盖实际四个测试视频和已选八个验证视频，核对每视频连续唯一 window_index 和帧窗；由实际帧数与继承窗口规则推导数量。B0 对照为 12 视频各 99 窗，共 1188 条，不能仅用单一总数代替逐视频覆盖。",
+      "核对每条 CUDA 和 primary/secondary 各 8 次编码，以及每视频首条 association 诊断；补齐必要小文件集合。"
+    ],
+    "risk_boundary": "TLS 下载失败会在 collector 验收状态更新前抛出，现有失败不等于误标已验收；完整性缺口需要在下载恢复后通过额外只读验收闭合。"
+  },
+  "platform_writes_performed": 0,
+  "frozen_files_modified": [],
+  "formal_score": null,
+  "performance_verdict": "UNKNOWN — 本回执不是正式成绩，不声明提分。"
+}
