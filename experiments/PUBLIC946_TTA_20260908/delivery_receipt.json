@@ -1,0 +1,508 @@
+{
+  "task_id": "PUBLIC946_TTA_20260908",
+  "status": "REMOTE_BYTES_VERIFIED",
+  "observed_at_utc": "2026-09-09T01:30:37.203118+00:00",
+  "commit": "65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b",
+  "remote_head": "65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b",
+  "git_status_porcelain": "",
+  "authority": "GitHub codeload HTTPS fixed-commit archive GET and live git ls-remote",
+  "archive_url": "https://codeload.github.com/SailorRen/Biohub-CELL/zip/65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b",
+  "archive_sha256": "298234bf39821d494059386ee68e0d3d4c04a06bf0ed2b3f44b52e3bc151f567",
+  "archive_bytes": 3419071,
+  "transport_exit_code": 0,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 2227,
+      "local_sha256": "3d93338818c2e4ecbaad66a77abc47b9512c0e19fecdf0499868e11a27cdadcf",
+      "remote_sha256": "3d93338818c2e4ecbaad66a77abc47b9512c0e19fecdf0499868e11a27cdadcf",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/AGENTS.md"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/algorithm.diff",
+      "bytes": 0,
+      "local_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "remote_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/B0/algorithm.diff"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/candidate.ipynb",
+      "bytes": 256098,
+      "local_sha256": "c4bfcd8d765c67d35435876b3f3eb7bb810e20556479a918143451e2c61f849c",
+      "remote_sha256": "c4bfcd8d765c67d35435876b3f3eb7bb810e20556479a918143451e2c61f849c",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/B0/candidate.ipynb"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/independent_audit.json",
+      "bytes": 6751,
+      "local_sha256": "8c5f88e559405c2c8401b2e4f5a3289f6b578277f52c219e1b8553a335e3b0d8",
+      "remote_sha256": "8c5f88e559405c2c8401b2e4f5a3289f6b578277f52c219e1b8553a335e3b0d8",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/B0/independent_audit.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/kernel-metadata.json",
+      "bytes": 806,
+      "local_sha256": "de8a3c54a515315b1c18803d3a1b5fbf9c42777f9fbc400aed66d169797889e2",
+      "remote_sha256": "de8a3c54a515315b1c18803d3a1b5fbf9c42777f9fbc400aed66d169797889e2",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/B0/kernel-metadata.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/ordinary.log",
+      "bytes": 850777,
+      "local_sha256": "19f8295736c11ec8a60b75fa3a26d848a8dff6cb31aed4b18a719e48f2d88f99",
+      "remote_sha256": "19f8295736c11ec8a60b75fa3a26d848a8dff6cb31aed4b18a719e48f2d88f99",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/B0/ordinary.log"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/ppsweep_results.csv",
+      "bytes": 1401,
+      "local_sha256": "120727ef0afe612e02cbf30e75bba60fc8a460e3d12b0038cc7dd05411a3568d",
+      "remote_sha256": "120727ef0afe612e02cbf30e75bba60fc8a460e3d12b0038cc7dd05411a3568d",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/B0/ppsweep_results.csv"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/ppsweep_selected.json",
+      "bytes": 353,
+      "local_sha256": "5f6fe577421f72dbf374b02387a0006b58508f2943e2e42c36caf3001691a8b5",
+      "remote_sha256": "5f6fe577421f72dbf374b02387a0006b58508f2943e2e42c36caf3001691a8b5",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/B0/ppsweep_selected.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/public946_expanded_patch_receipt.json",
+      "bytes": 1486,
+      "local_sha256": "51c22155da6ca1cd3f5e6dfaf4e10babf90f418c78ebfcee2546f354f6d82936",
+      "remote_sha256": "51c22155da6ca1cd3f5e6dfaf4e10babf90f418c78ebfcee2546f354f6d82936",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/B0/public946_expanded_patch_receipt.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/public946_final_audit.json",
+      "bytes": 16736,
+      "local_sha256": "429bcce13bbfaa694da0fc756672d4801c3b7e7c168bc43b820a26cfc63b8696",
+      "remote_sha256": "429bcce13bbfaa694da0fc756672d4801c3b7e7c168bc43b820a26cfc63b8696",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/B0/public946_final_audit.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/run_stats.csv",
+      "bytes": 3133,
+      "local_sha256": "5a93cd293bffc7bb4180e100dd0c4199381ed4acab70912d7c609644393a43bc",
+      "remote_sha256": "5a93cd293bffc7bb4180e100dd0c4199381ed4acab70912d7c609644393a43bc",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/B0/run_stats.csv"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/runtime_summary.json",
+      "bytes": 362591,
+      "local_sha256": "826663880f347bb38d479203a93fcb8290ca4ea30c89791ea0fdfda5bbee6f98",
+      "remote_sha256": "826663880f347bb38d479203a93fcb8290ca4ea30c89791ea0fdfda5bbee6f98",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/B0/runtime_summary.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/source_review.json",
+      "bytes": 3251,
+      "local_sha256": "6a77f5fd863643c17e8538b508f0bf5691d444fa123079a3caba17071507eba4",
+      "remote_sha256": "6a77f5fd863643c17e8538b508f0bf5691d444fa123079a3caba17071507eba4",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/B0/source_review.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/validator_results.csv",
+      "bytes": 7809,
+      "local_sha256": "9d28929631425afb5c4dc2595670ccb2f12e342360bd0ffce45e5837416a0ec0",
+      "remote_sha256": "9d28929631425afb5c4dc2595670ccb2f12e342360bd0ffce45e5837416a0ec0",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/B0/validator_results.csv"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C1/algorithm.diff",
+      "bytes": 1955,
+      "local_sha256": "66ee99e9c96b037e75215bfe2a939a00df2f8605671ebd8e762e48aca6b3f339",
+      "remote_sha256": "66ee99e9c96b037e75215bfe2a939a00df2f8605671ebd8e762e48aca6b3f339",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C1/algorithm.diff"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C1/candidate.ipynb",
+      "bytes": 256098,
+      "local_sha256": "d3264807b20259b86a297a96f258640e7f752830c21f990f52be4c883a628341",
+      "remote_sha256": "d3264807b20259b86a297a96f258640e7f752830c21f990f52be4c883a628341",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C1/candidate.ipynb"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C1/independent_audit.json",
+      "bytes": 8125,
+      "local_sha256": "775afb8b80b2d5a98647cc6472b9ec4be71dd7849713b5674d2fde85cdcc2d7e",
+      "remote_sha256": "775afb8b80b2d5a98647cc6472b9ec4be71dd7849713b5674d2fde85cdcc2d7e",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C1/independent_audit.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C1/kernel-metadata.json",
+      "bytes": 802,
+      "local_sha256": "706b027b03949080e1c014ca35b0d01a120772fce7972e8660673e8d081e71aa",
+      "remote_sha256": "706b027b03949080e1c014ca35b0d01a120772fce7972e8660673e8d081e71aa",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C1/kernel-metadata.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C1/ordinary.log",
+      "bytes": 858495,
+      "local_sha256": "68e880524e8f6125dcb9cb72e466f6c1573064af6288aa764fb1a7713ea9f129",
+      "remote_sha256": "68e880524e8f6125dcb9cb72e466f6c1573064af6288aa764fb1a7713ea9f129",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C1/ordinary.log"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C1/ppsweep_results.csv",
+      "bytes": 1400,
+      "local_sha256": "f7e5168ddbe9b05e41c0e3c767ce37ee31459d0f5d93e5777156af93df94864f",
+      "remote_sha256": "f7e5168ddbe9b05e41c0e3c767ce37ee31459d0f5d93e5777156af93df94864f",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C1/ppsweep_results.csv"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C1/ppsweep_selected.json",
+      "bytes": 357,
+      "local_sha256": "3e78319c7b8ce6673ea249cd0f0c5f67a6056c7e2d4e305a2b8f57e530a85c0e",
+      "remote_sha256": "3e78319c7b8ce6673ea249cd0f0c5f67a6056c7e2d4e305a2b8f57e530a85c0e",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C1/ppsweep_selected.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C1/public946_expanded_patch_receipt.json",
+      "bytes": 2789,
+      "local_sha256": "c201ab8e305f34444c4d0525559b6aeab92c540f692f677697678bd7014fa14e",
+      "remote_sha256": "c201ab8e305f34444c4d0525559b6aeab92c540f692f677697678bd7014fa14e",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C1/public946_expanded_patch_receipt.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C1/public946_final_audit.json",
+      "bytes": 16740,
+      "local_sha256": "b6f10c2eec2c21c15b6f6b6350045958dbd2986808cfd9d98064ee1b94b923fc",
+      "remote_sha256": "b6f10c2eec2c21c15b6f6b6350045958dbd2986808cfd9d98064ee1b94b923fc",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C1/public946_final_audit.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C1/run_stats.csv",
+      "bytes": 3137,
+      "local_sha256": "502e83da9180019fecad5a12ab416429f44127f724926b34754f94aead0b4a3c",
+      "remote_sha256": "502e83da9180019fecad5a12ab416429f44127f724926b34754f94aead0b4a3c",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C1/run_stats.csv"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C1/runtime_summary.json",
+      "bytes": 362596,
+      "local_sha256": "52168918a6a1c085e93bea5484db60fa334530fbef1a5579b80f1332b941f1d3",
+      "remote_sha256": "52168918a6a1c085e93bea5484db60fa334530fbef1a5579b80f1332b941f1d3",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C1/runtime_summary.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C1/source_review.json",
+      "bytes": 5981,
+      "local_sha256": "0dd50777558b65bc503c74d0003a7f91e20329b4af075b61d0a632a61c3d64e5",
+      "remote_sha256": "0dd50777558b65bc503c74d0003a7f91e20329b4af075b61d0a632a61c3d64e5",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C1/source_review.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C1/validator_results.csv",
+      "bytes": 7953,
+      "local_sha256": "a627cd27a8f5ec81d9492f6c0cc74d389ce879c0b6d5cf150d05556a51db8eb1",
+      "remote_sha256": "a627cd27a8f5ec81d9492f6c0cc74d389ce879c0b6d5cf150d05556a51db8eb1",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C1/validator_results.csv"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C2/algorithm.diff",
+      "bytes": 4122,
+      "local_sha256": "2bdc857ae0b16c25b22a34bc6553789ec744bfd4d4551e2a625380343e8fde28",
+      "remote_sha256": "2bdc857ae0b16c25b22a34bc6553789ec744bfd4d4551e2a625380343e8fde28",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C2/algorithm.diff"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C2/candidate.ipynb",
+      "bytes": 256098,
+      "local_sha256": "a7177ccf303152180357ac6f7d23efefec1aa8ab8206bd3bdc99d1efa19b1de6",
+      "remote_sha256": "a7177ccf303152180357ac6f7d23efefec1aa8ab8206bd3bdc99d1efa19b1de6",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C2/candidate.ipynb"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C2/independent_audit.json",
+      "bytes": 21405,
+      "local_sha256": "f0bea847a63c8bccfbb189948c06c0020b9c9fab4311960db3a34504821d517c",
+      "remote_sha256": "f0bea847a63c8bccfbb189948c06c0020b9c9fab4311960db3a34504821d517c",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C2/independent_audit.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C2/kernel-metadata.json",
+      "bytes": 832,
+      "local_sha256": "7ebfe86f43956074cc73a7b6ba8847b0fc0e60add06dd0016ee936fa23c35fd3",
+      "remote_sha256": "7ebfe86f43956074cc73a7b6ba8847b0fc0e60add06dd0016ee936fa23c35fd3",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C2/kernel-metadata.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C2/ordinary.log",
+      "bytes": 856308,
+      "local_sha256": "9d5701eb166a9b37fe204bc4c6e1ffd7cb8904fd19991c72a02e71e91d8bf70f",
+      "remote_sha256": "9d5701eb166a9b37fe204bc4c6e1ffd7cb8904fd19991c72a02e71e91d8bf70f",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C2/ordinary.log"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C2/ppsweep_results.csv",
+      "bytes": 1404,
+      "local_sha256": "f079c14db5415a3b45458600263e0a0ee88d6da930bb8c91bf51fd8767effa30",
+      "remote_sha256": "f079c14db5415a3b45458600263e0a0ee88d6da930bb8c91bf51fd8767effa30",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C2/ppsweep_results.csv"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C2/ppsweep_selected.json",
+      "bytes": 354,
+      "local_sha256": "fe08eb15f4ff9de0832720729fccc095cd6b34c38fa095f412509e6f56d9cb2c",
+      "remote_sha256": "fe08eb15f4ff9de0832720729fccc095cd6b34c38fa095f412509e6f56d9cb2c",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C2/ppsweep_selected.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C2/public946_expanded_patch_receipt.json",
+      "bytes": 4116,
+      "local_sha256": "84fe20c5de5ad02293585052b43f4bb822fe3872f63471a2d3035154cf4edf98",
+      "remote_sha256": "84fe20c5de5ad02293585052b43f4bb822fe3872f63471a2d3035154cf4edf98",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C2/public946_expanded_patch_receipt.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C2/public946_final_audit.json",
+      "bytes": 16735,
+      "local_sha256": "3c9433df8225220329e2765558d8b962df1d35a80ef62c3b4c6226cf09288277",
+      "remote_sha256": "3c9433df8225220329e2765558d8b962df1d35a80ef62c3b4c6226cf09288277",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C2/public946_final_audit.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C2/run_stats.csv",
+      "bytes": 3130,
+      "local_sha256": "36759831460f44a4af7df4845ae3fb7319839779ec284bfd4801fba2497f09ba",
+      "remote_sha256": "36759831460f44a4af7df4845ae3fb7319839779ec284bfd4801fba2497f09ba",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C2/run_stats.csv"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C2/runtime_summary.json",
+      "bytes": 364149,
+      "local_sha256": "f085eb0e7eb9599c00b1339705f21c1515947bb914c8ce6d72751c58fefb1c16",
+      "remote_sha256": "f085eb0e7eb9599c00b1339705f21c1515947bb914c8ce6d72751c58fefb1c16",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C2/runtime_summary.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C2/source_review.json",
+      "bytes": 8755,
+      "local_sha256": "f57bc048057320e3796d20751be33a692330fce187fd6d339a1d5ab7955a77cb",
+      "remote_sha256": "f57bc048057320e3796d20751be33a692330fce187fd6d339a1d5ab7955a77cb",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C2/source_review.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C2/validator_results.csv",
+      "bytes": 7926,
+      "local_sha256": "846dfaf47cb682b91b136bc9a6a6a5e2cb6373cc79aaec7bf5ecbfae385c9bd5",
+      "remote_sha256": "846dfaf47cb682b91b136bc9a6a6a5e2cb6373cc79aaec7bf5ecbfae385c9bd5",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/C2/validator_results.csv"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/build_candidates.py",
+      "bytes": 9395,
+      "local_sha256": "b3d3242ba98f56d2de25de692e606b80e1d6eebf27f4e947e06a97766f84f88b",
+      "remote_sha256": "b3d3242ba98f56d2de25de692e606b80e1d6eebf27f4e947e06a97766f84f88b",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/build_candidates.py"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/build_receipt.json",
+      "bytes": 24805,
+      "local_sha256": "008ba0b200a3a0ba07073b04e892e31808a55327b3f879ae5968f02a34bb77d4",
+      "remote_sha256": "008ba0b200a3a0ba07073b04e892e31808a55327b3f879ae5968f02a34bb77d4",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/build_receipt.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/collect_output.py",
+      "bytes": 6824,
+      "local_sha256": "e7fbf077c8d7caa3bc5cbefcb9cee4555c40e7d47d9cd0745901aadcca7a6d76",
+      "remote_sha256": "e7fbf077c8d7caa3bc5cbefcb9cee4555c40e7d47d9cd0745901aadcca7a6d76",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/collect_output.py"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/dynamic_patch_execution.json",
+      "bytes": 912,
+      "local_sha256": "b22e38de24d51451ad6fb27ecf5a3a26cbd92dac051eaf4f22ef9e349236f92e",
+      "remote_sha256": "b22e38de24d51451ad6fb27ecf5a3a26cbd92dac051eaf4f22ef9e349236f92e",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/dynamic_patch_execution.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/execute_once.py",
+      "bytes": 21138,
+      "local_sha256": "cf8cb5f595e8bcb70ab3e1b82f646a87c9efaadeb5190c96dcb139c7e11e625f",
+      "remote_sha256": "cf8cb5f595e8bcb70ab3e1b82f646a87c9efaadeb5190c96dcb139c7e11e625f",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/execute_once.py"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/final_audit.py",
+      "bytes": 20645,
+      "local_sha256": "111ceddb7bdd29acfbd05ee7ff269d610ee9d84d57690d6e406846f5ede18b0b",
+      "remote_sha256": "111ceddb7bdd29acfbd05ee7ff269d610ee9d84d57690d6e406846f5ede18b0b",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/final_audit.py"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/final_audit_self_test.json",
+      "bytes": 4105,
+      "local_sha256": "821cff896b71722662b7787085b4997291078f8d17851e328272cad31984fd63",
+      "remote_sha256": "821cff896b71722662b7787085b4997291078f8d17851e328272cad31984fd63",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/final_audit_self_test.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/independent_batch_review.json",
+      "bytes": 12036,
+      "local_sha256": "72674e0c4e8ebaf6ce89e6968d56c9f9b4248e7f18659f19b65804168ed14646",
+      "remote_sha256": "72674e0c4e8ebaf6ce89e6968d56c9f9b4248e7f18659f19b65804168ed14646",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/independent_batch_review.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/local_verification.json",
+      "bytes": 2734,
+      "local_sha256": "637ca368f8ab7402c4e45fd447158b54b5d44a15970092b44d546dee4b8688f2",
+      "remote_sha256": "637ca368f8ab7402c4e45fd447158b54b5d44a15970092b44d546dee4b8688f2",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/local_verification.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/manifest.json",
+      "bytes": 13361,
+      "local_sha256": "e126e7fff52941518b70a3dc3c8e9523a804f7fcffdd511079c63f6f098831e7",
+      "remote_sha256": "e126e7fff52941518b70a3dc3c8e9523a804f7fcffdd511079c63f6f098831e7",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/manifest.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/preflight.json",
+      "bytes": 22817,
+      "local_sha256": "965e5fe6596ecc9f755258421a71fb69fb957886d9af96798fccc433dd0363eb",
+      "remote_sha256": "965e5fe6596ecc9f755258421a71fb69fb957886d9af96798fccc433dd0363eb",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/preflight.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/read_platform.py",
+      "bytes": 18897,
+      "local_sha256": "cd32235fb393799f2672d5654a73b82e8f5e0f25f50b3173f29a58341a1b2c71",
+      "remote_sha256": "cd32235fb393799f2672d5654a73b82e8f5e0f25f50b3173f29a58341a1b2c71",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/read_platform.py"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/results.json",
+      "bytes": 87586,
+      "local_sha256": "07028b64d70922065fc3902843f5b0a511607111f648536c9cbeec658cd7807a",
+      "remote_sha256": "07028b64d70922065fc3902843f5b0a511607111f648536c9cbeec658cd7807a",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/results.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/runtime_audit.py",
+      "bytes": 10945,
+      "local_sha256": "725438b33f64f77617713c4ce20b5fdb2c16b24ecec452cfa7ded9af786d5ce1",
+      "remote_sha256": "725438b33f64f77617713c4ce20b5fdb2c16b24ecec452cfa7ded9af786d5ce1",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/runtime_audit.py"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/terminal_20260909/browser_score_readback.json",
+      "bytes": 2769,
+      "local_sha256": "4fb86b325140d68ce61345494da4e07daf5b8e8d54e98aba40733f007389c4f6",
+      "remote_sha256": "4fb86b325140d68ce61345494da4e07daf5b8e8d54e98aba40733f007389c4f6",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/terminal_20260909/browser_score_readback.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/terminal_20260909/independent_review.json",
+      "bytes": 9058,
+      "local_sha256": "8357d26410bdb36e4ff15658241d644a7cedebcd2e5ede9e82add2ed6e5c6ef1",
+      "remote_sha256": "8357d26410bdb36e4ff15658241d644a7cedebcd2e5ede9e82add2ed6e5c6ef1",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/terminal_20260909/independent_review.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/terminal_20260909/platform_readback_B0.json",
+      "bytes": 11267,
+      "local_sha256": "beae53db8f2a16e7e5b379c2877fae18f3843d5169a4e5de186b5170fd032a54",
+      "remote_sha256": "beae53db8f2a16e7e5b379c2877fae18f3843d5169a4e5de186b5170fd032a54",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/terminal_20260909/platform_readback_B0.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/terminal_20260909/platform_readback_C1.json",
+      "bytes": 11257,
+      "local_sha256": "7febe504550c16e34d9de01d1d7ce90c2ac47d3b138cf3d2c40e835f2dc624a7",
+      "remote_sha256": "7febe504550c16e34d9de01d1d7ce90c2ac47d3b138cf3d2c40e835f2dc624a7",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/terminal_20260909/platform_readback_C1.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/terminal_20260909/platform_readback_C2.json",
+      "bytes": 11132,
+      "local_sha256": "c25ce57d43e668c18a19b0685a6b2b127e4f9ba98257267b4dc0df33c34856b6",
+      "remote_sha256": "c25ce57d43e668c18a19b0685a6b2b127e4f9ba98257267b4dc0df33c34856b6",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/terminal_20260909/platform_readback_C2.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/terminal_20260909/previous_pending_delivery_receipt.json",
+      "bytes": 19660,
+      "local_sha256": "60175138eff6c0a1a60c236cd792602ef72d1871049db096c313f0a5ccef59cd",
+      "remote_sha256": "60175138eff6c0a1a60c236cd792602ef72d1871049db096c313f0a5ccef59cd",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/terminal_20260909/previous_pending_delivery_receipt.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/terminal_20260909/previous_pending_final_remote_readback.json",
+      "bytes": 20603,
+      "local_sha256": "eca8a2a789368f3c46e4e0f426dba73c159ee8733923ffbb6e9c0053fd4bed33",
+      "remote_sha256": "eca8a2a789368f3c46e4e0f426dba73c159ee8733923ffbb6e9c0053fd4bed33",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/terminal_20260909/previous_pending_final_remote_readback.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/terminal_20260909/previous_pending_verification.json",
+      "bytes": 4979,
+      "local_sha256": "b228322446913c00421f018f969da54eb23324e5ff5af84d94ec3a5cabe49e2c",
+      "remote_sha256": "b228322446913c00421f018f969da54eb23324e5ff5af84d94ec3a5cabe49e2c",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/terminal_20260909/previous_pending_verification.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/test_results.json",
+      "bytes": 149279,
+      "local_sha256": "e1123c326160f68bc5fa3ec90f2d6586184612190c9d350a8da0f6bdf238e772",
+      "remote_sha256": "e1123c326160f68bc5fa3ec90f2d6586184612190c9d350a8da0f6bdf238e772",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/test_results.json"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/tests/test_tta_transforms.py",
+      "bytes": 23964,
+      "local_sha256": "7976a9b8d1c2949369fca8ec608605a399f90b110c34ebccafaed1192f02ed8c",
+      "remote_sha256": "7976a9b8d1c2949369fca8ec608605a399f90b110c34ebccafaed1192f02ed8c",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/tests/test_tta_transforms.py"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/tta_patch.py",
+      "bytes": 6930,
+      "local_sha256": "23787f55efecbc5676470ef32fa56a51c4b2f8b0343fcb8f909bb1771cf5ae04",
+      "remote_sha256": "23787f55efecbc5676470ef32fa56a51c4b2f8b0343fcb8f909bb1771cf5ae04",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/tta_patch.py"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/verify.py",
+      "bytes": 29575,
+      "local_sha256": "4d2b544cb3016d3bd980d3f52fdf03f76777626bb2c47c850ccf901a61ca404a",
+      "remote_sha256": "4d2b544cb3016d3bd980d3f52fdf03f76777626bb2c47c850ccf901a61ca404a",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/verify.py"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/verify_remote_delivery.py",
+      "bytes": 2733,
+      "local_sha256": "355a3aff011967de9f278feb91e47b0b171c6d90f36443875a4540a440f5827b",
+      "remote_sha256": "355a3aff011967de9f278feb91e47b0b171c6d90f36443875a4540a440f5827b",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/verify_remote_delivery.py"
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/write_ledger.json",
+      "bytes": 15984,
+      "local_sha256": "9306b7deecff670e5d14ea0bc08dcdd41becacbd9c39bfd87dba9cc0477ad9c3",
+      "remote_sha256": "9306b7deecff670e5d14ea0bc08dcdd41becacbd9c39bfd87dba9cc0477ad9c3",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/experiments/PUBLIC946_TTA_20260908/write_ledger.json"
+    },
+    {
+      "path": "reports/20260908_PUBLIC946_TTA_OPTIMIZATION_RESULT.md",
+      "bytes": 17832,
+      "local_sha256": "7f8e9b9251b3c41dc9e4c9009658849143d274de893897dcff66863968a7fc81",
+      "remote_sha256": "7f8e9b9251b3c41dc9e4c9009658849143d274de893897dcff66863968a7fc81",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/reports/20260908_PUBLIC946_TTA_OPTIMIZATION_RESULT.md"
+    },
+    {
+      "path": "tasks/CODEX_20260908_BIOHUB_PUBLIC946_TTA_OPTIMIZATION_TASK.md",
+      "bytes": 25456,
+      "local_sha256": "e139b3656f37e879cba37d3da214da8001454cbac56b9473b8f99bbc175ea630",
+      "remote_sha256": "e139b3656f37e879cba37d3da214da8001454cbac56b9473b8f99bbc175ea630",
+      "archive_member": "Biohub-CELL-65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b/tasks/CODEX_20260908_BIOHUB_PUBLIC946_TTA_OPTIMIZATION_TASK.md"
+    }
+  ],
+  "files_verified": 70,
+  "scope": "All task files checked byte for byte; scoring evidence is separately recorded in results.json",
+  "fallback_reason": "Two raw.githubusercontent.com multi-file attempts failed with TLS EOF; no validation checks relaxed"
+}

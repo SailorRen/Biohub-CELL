@@ -1,0 +1,88 @@
+{
+  "checks": [
+    {
+      "details": {
+        "argument_count": 3,
+        "argv_sha256": "8b007069c7e1040eedfad759904e1fdb4aa1b300f10ec93196f343d61641f7ff",
+        "cwd": ".",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 5352,
+          "sha256": "44b08eda46c87183ace25496048e0d2d82a294340c7d066c509c09c974126d0b"
+        },
+        "stdout_text_checks": 0
+      },
+      "id": "six-task-gates",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "bytes": 17832,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "reports/20260908_PUBLIC946_TTA_OPTIMIZATION_RESULT.md",
+        "required_text_checks": 6,
+        "sha256": "7f8e9b9251b3c41dc9e4c9009658849143d274de893897dcff66863968a7fc81"
+      },
+      "id": "report",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "branch": "main",
+        "dirty_entry_count": 0,
+        "head": "65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b",
+        "remote": "origin",
+        "remote_exists": true,
+        "remote_head": "65e68f5f30e1a90b3fcd6a1dcf7b3fbbc3cc113b",
+        "remote_url_sha256": "294339ae4bf28ec437260f32bd064c06212de22a7026887c59e47f72ef414b8e",
+        "repository": "."
+      },
+      "id": "git-remote",
+      "outcome": "PASS",
+      "reason": "Git evidence passed",
+      "required": true,
+      "type": "git"
+    }
+  ],
+  "claimed_at": "2026-09-09T09:31:14+08:00",
+  "claimed_status": "CLAIMED_COMPLETE",
+  "contract_path": "experiments/PUBLIC946_TTA_20260908/manifest.json",
+  "contract_sha256": "e126e7fff52941518b70a3dc3c8e9523a804f7fcffdd511079c63f6f098831e7",
+  "final_status": "COMPLETED_VERIFIED",
+  "finished_at": "2026-09-09T09:31:15+08:00",
+  "integrity_scope": "local-sha256-only",
+  "limitations": [
+    "The conclusion is limited to the frozen contract and the implemented checks.",
+    "The verifier does not prove omitted requirements or future stability.",
+    "A local or Git hash is not a trusted signature against a malicious writer."
+  ],
+  "optional_warning_check_ids": [],
+  "reason": "all required automated checks passed",
+  "required_summary": {
+    "failed_or_blocked": 0,
+    "human_review": 0,
+    "passed": 3
+  },
+  "run_id": "20260909T093114+0800-7e7de907",
+  "schema_version": "1.0",
+  "started_at": "2026-09-09T09:31:14+08:00",
+  "task_id": "PUBLIC946_TTA_20260908"
+}
