@@ -1,0 +1,1623 @@
+{
+  "schema_version": "1.0",
+  "task_id": "PUBLIC_OPTIMIZATION_RESEARCH_20260909",
+  "observed_at_utc": "2026-09-09T01:53:56.690360+00:00",
+  "fact_class": "SOURCE_CODE_VERIFIED",
+  "inventory": {
+    "requests": [
+      {
+        "sort": "dateRun",
+        "page": 1,
+        "page_size": 30,
+        "returned": 30,
+        "observed_at_utc": "2026-09-09T01:46:03.439611+00:00"
+      },
+      {
+        "sort": "voteCount",
+        "page": 1,
+        "page_size": 30,
+        "returned": 30,
+        "observed_at_utc": "2026-09-09T01:46:05.188439+00:00"
+      }
+    ],
+    "unique_refs": 59,
+    "complete_public_catalog": false,
+    "raw_path": "downloads/20260909_public_research/notebooks/inventory_raw.json",
+    "raw_sha256": "8667afcd2a82eb19ce017220a585ce693f2f506f6ac08c588ae67a555987046f",
+    "entries": [
+      {
+        "ref": "sjlee101/biohub-lineage-forge-fork",
+        "title": "biohub-lineage-forge-fork",
+        "last_run_time": "2026-09-08T23:05:10.747Z",
+        "total_votes": null,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "sushanthtiruvaipati/biohub-tight55-nodeidfix-passthrough-v1",
+        "title": "biohub-tight55-nodeidfix-passthrough-v1",
+        "last_run_time": "2026-09-08T20:43:20.570Z",
+        "total_votes": null,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "tharunkumar369/biohub-cell-tracking-lineage-submission",
+        "title": "Biohub Cell Tracking Lineage Submission",
+        "last_run_time": "2026-09-08T19:04:50.517Z",
+        "total_votes": 6,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "sjlee101/biohub-hf-divw05",
+        "title": "biohub-hf-divw05",
+        "last_run_time": "2026-09-08T17:46:09.317Z",
+        "total_votes": null,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "sjlee101/biohub-hf-divw07",
+        "title": "biohub-hf-divw07",
+        "last_run_time": "2026-09-08T16:54:59.390Z",
+        "total_votes": null,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "sjlee101/biohub-harmonic-fusion-fork",
+        "title": "biohub-harmonic-fusion-fork",
+        "last_run_time": "2026-09-08T16:20:19.057Z",
+        "total_votes": null,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "mohit98765/biohub-cell-tracking-v1-baseline",
+        "title": "BioHub Cell Tracking v1 Baseline",
+        "last_run_time": "2026-09-08T16:11:15.253Z",
+        "total_votes": 8,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "anhadmahajan06/biohub-track-your-cells",
+        "title": "Biohub - Track Your Cells",
+        "last_run_time": "2026-09-08T14:48:39.823Z",
+        "total_votes": 2,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "evgendvorkin/biohub-0-942-lb-proxy-score-0-9417",
+        "title": "Biohub  0.942 LB PROXY_SCORE=0.9417",
+        "last_run_time": "2026-09-08T14:34:09.357Z",
+        "total_votes": 93,
+        "found_in": [
+          "dateRun",
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "sushanthtiruvaipati/biohub-mrtight55-v1",
+        "title": "biohub-mrtight55-v1",
+        "last_run_time": "2026-09-08T13:34:11.223Z",
+        "total_votes": 1,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "rogerrogerroger3r/notebook056f88d31d",
+        "title": "notebook056f88d31d",
+        "last_run_time": "2026-09-08T12:47:56.143Z",
+        "total_votes": null,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "legtarrr/biohub-v6-morenodes",
+        "title": "biohub v6 morenodes",
+        "last_run_time": "2026-09-08T12:22:05.763Z",
+        "total_votes": null,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "reyhanksatria/biohub-cell-tracking-0-946-lb",
+        "title": "Biohub Cell Tracking: 0.946 LB",
+        "last_run_time": "2026-09-08T12:13:04.900Z",
+        "total_votes": 15,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "rogerrogerroger3r/the-number-in-the-title-is-a-name-not-a-score",
+        "title": "The number in the title is a name, not a score",
+        "last_run_time": "2026-09-08T11:31:16.300Z",
+        "total_votes": 2,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "gopikapriyanka/module-3",
+        "title": "module 3",
+        "last_run_time": "2026-09-08T11:31:00.057Z",
+        "total_votes": null,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "flexonafft/biohub-lineage-forge-precision-tracking",
+        "title": "Biohub Lineage Forge — Precision Tracking",
+        "last_run_time": "2026-09-08T11:06:28.607Z",
+        "total_votes": 21,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "rogerrogerroger3r/biohub-run84",
+        "title": "biohub-run84",
+        "last_run_time": "2026-09-08T10:23:15.857Z",
+        "total_votes": 1,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "sushanthtiruvaipati/biohub-velproj-gapclose-v1",
+        "title": "biohub-velproj-gapclose-v1",
+        "last_run_time": "2026-09-08T09:55:53.997Z",
+        "total_votes": null,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "salemali7/biohub-cell-tracking-92-6",
+        "title": "Biohub Cell Tracking 92.6% ",
+        "last_run_time": "2026-09-08T09:50:50.823Z",
+        "total_votes": 45,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "gopikapriyanka/module-2",
+        "title": "Module 2",
+        "last_run_time": "2026-09-08T09:47:36.627Z",
+        "total_votes": 1,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "rogerrogerroger3r/biohub-run83",
+        "title": "biohub-run83",
+        "last_run_time": "2026-09-08T09:45:34.313Z",
+        "total_votes": null,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "rogerrogerroger3r/biohub-run82",
+        "title": "biohub-run82",
+        "last_run_time": "2026-09-08T09:45:28.480Z",
+        "total_votes": null,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "sushanthtiruvaipati/biohub-942tta-eval-v1",
+        "title": "biohub-942tta-eval-v1",
+        "last_run_time": "2026-09-08T09:42:52.063Z",
+        "total_votes": 3,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "sushanthtiruvaipati/biohub-942-oneknob-repro-v1",
+        "title": "biohub-942-oneknob-repro-v1",
+        "last_run_time": "2026-09-08T08:25:28.493Z",
+        "total_votes": null,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "zhincez/the-metric-pays-you-to-delete-nodes",
+        "title": "The metric pays you to delete nodes",
+        "last_run_time": "2026-09-08T08:00:27.863Z",
+        "total_votes": 11,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "mtoshidesu/test-biohub-run77",
+        "title": "Test biohub-run77",
+        "last_run_time": "2026-09-08T07:10:52.417Z",
+        "total_votes": 1,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "sjlee101/biohub-lb942-divveto015",
+        "title": "biohub-lb942-divveto015",
+        "last_run_time": "2026-09-08T02:46:28.767Z",
+        "total_votes": null,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "legtarrr/biohub-clean-0908-cpu-fallback",
+        "title": "biohub clean 0908 cpu fallback",
+        "last_run_time": "2026-09-08T02:05:05.093Z",
+        "total_votes": null,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "sjlee101/biohub-lb942-divglobalcap",
+        "title": "biohub-lb942-divglobalcap",
+        "last_run_time": "2026-09-08T01:30:56.793Z",
+        "total_votes": null,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "sjlee101/biohub-lb942-divmax-14-18",
+        "title": "biohub-lb942-divmax-14-18",
+        "last_run_time": "2026-09-08T00:06:33.313Z",
+        "total_votes": null,
+        "found_in": [
+          "dateRun"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "inversion/cell-tracking-getting-started-w-nearest-neighbor",
+        "title": "Cell Tracking Getting Started w/ Nearest Neighbor",
+        "last_run_time": "2026-06-23T21:23:55.067Z",
+        "total_votes": 547,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "xiaoleilian/biohub-ct-mix-divaug",
+        "title": "biohub ct mix divaug",
+        "last_run_time": "2026-07-20T07:41:33.157Z",
+        "total_votes": 246,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "kaiwalyaatulraut/biohub-cell-tracking-solution",
+        "title": "Biohub Cell Tracking Solution",
+        "last_run_time": "2026-07-22T05:06:14.940Z",
+        "total_votes": 215,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "yusuketogashi/clean-approach-lightweight-local-cv-no-hack",
+        "title": "🧬Clean Approach + Lightweight Local CV | No Hack",
+        "last_run_time": "2026-07-23T00:37:05.277Z",
+        "total_votes": 204,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "pilkwang/biohub-cell-tracking-learned-graph-w-gap-recovery",
+        "title": "Biohub Cell Tracking: Learned Graph w Gap Recovery",
+        "last_run_time": "2026-07-06T20:57:16.197Z",
+        "total_votes": 198,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "pilkwang/biohub-cell-tracking-two-seeds-logit-blend",
+        "title": "Biohub Cell Tracking: Two Seeds Logit Blend",
+        "last_run_time": "2026-07-25T06:33:27.397Z",
+        "total_votes": 193,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "yusuketogashi/lb897-baseline",
+        "title": "🧬LB897  BaseLine",
+        "last_run_time": "2026-07-08T02:16:49.557Z",
+        "total_votes": 161,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "pilkwang/biohub-cell-tracking-data-model-eda-baseline",
+        "title": "Biohub Cell Tracking: Data Model, EDA, Baseline",
+        "last_run_time": "2026-07-01T09:15:49.707Z",
+        "total_votes": 157,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "pilkwang/biohub-cell-tracking-blend-preprocessings",
+        "title": "Biohub Cell Tracking: Blend Preprocessings",
+        "last_run_time": "2026-07-14T09:30:02.303Z",
+        "total_votes": 156,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "yusuketogashi/no-hack-biohub-cell-another-approch-3rd",
+        "title": "No-Hack | Biohub Cell Another Approch 3rd",
+        "last_run_time": "2026-08-05T13:40:18.037Z",
+        "total_votes": 151,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "amanatar/improved-metric-hack-last-call",
+        "title": "improved-metric-hack-last-call",
+        "last_run_time": "2026-07-20T16:25:21.587Z",
+        "total_votes": 142,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "kirneo/metric-hack-last-call-update",
+        "title": "Metric_hack_last_call_update",
+        "last_run_time": "2026-07-22T09:50:39.617Z",
+        "total_votes": 141,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "flexonafft/biohub-harmonic-fusion",
+        "title": "Biohub Harmonic Fusion",
+        "last_run_time": "2026-09-07T12:28:54.593Z",
+        "total_votes": 139,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "yaroslavkholmirzayev/biohub-cell-tracking-v4-unet-ilp-reproduction",
+        "title": "Biohub Cell Tracking V4 UNet ILP Reproduction",
+        "last_run_time": "2026-07-09T10:18:56.190Z",
+        "total_votes": 131,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "anhadmahajan06/biohub-track-your-cells-development",
+        "title": "Biohub - Track Your Cells Development",
+        "last_run_time": "2026-09-06T11:11:28.377Z",
+        "total_votes": 112,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "yunusgmsoy/kimi-notebook-v17",
+        "title": "Kimi Notebook v17",
+        "last_run_time": "2026-08-22T13:24:43.877Z",
+        "total_votes": 112,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "kunaldesale2408/biohub-cell-tracking",
+        "title": "Biohub Cell Tracking",
+        "last_run_time": "2026-09-04T05:45:00.917Z",
+        "total_votes": 102,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "redoctopusk/biohub-942tta",
+        "title": "biohub-942tta",
+        "last_run_time": "2026-09-06T23:07:11.517Z",
+        "total_votes": 99,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "boristown/dark-agi-biohub-cell-tracking-solution",
+        "title": "Dark-AGI-Biohub Cell Tracking Solution",
+        "last_run_time": "2026-07-19T04:05:18.617Z",
+        "total_votes": 97,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "seshurajup/lb-0-857-best-rule-base-v14",
+        "title": "[LB 0.857]Best Rule Base V14",
+        "last_run_time": "2026-07-03T23:09:15.947Z",
+        "total_votes": 97,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "thibautgoldsborough/unet-baseline-inference-submission",
+        "title": "UNet baseline - inference & submission",
+        "last_run_time": "2026-06-30T02:53:23.357Z",
+        "total_votes": 92,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "analyticaobscura/biohub-lb-941",
+        "title": "🧬 Biohub LB : 941",
+        "last_run_time": "2026-09-04T07:05:21.640Z",
+        "total_votes": 91,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "isakatsuyoshi/biohub-rule-based-baseline",
+        "title": "[Biohub] Rule-Based Baseline",
+        "last_run_time": "2026-07-01T07:41:30.703Z",
+        "total_votes": 90,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "outwrest/metric-hack-minimal-baseline-tta-2gpu",
+        "title": "metric hack - minimal baseline-tta-2gpu",
+        "last_run_time": "2026-07-17T05:10:13.807Z",
+        "total_votes": 87,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "raykkretzschmar/biohub-harmonic-bidirectional-association-v1",
+        "title": "Biohub Harmonic Bidirectional Association V1",
+        "last_run_time": "2026-08-04T14:24:02.710Z",
+        "total_votes": 86,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "abhijithneilabraham/solution",
+        "title": "solution",
+        "last_run_time": "2026-07-11T05:35:16.910Z",
+        "total_votes": 83,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "kaiwalyaatulraut/biohub-competition-solution",
+        "title": "Biohub Competition Solution",
+        "last_run_time": "2026-07-21T04:18:44.360Z",
+        "total_votes": 81,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "nusrati/0-936",
+        "title": "0.936",
+        "last_run_time": "2026-09-01T16:54:59.170Z",
+        "total_votes": 79,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      },
+      {
+        "ref": "romanrozen/strong-start-dog-band-pass-lb-0-73",
+        "title": "[STRONG START🔥]: DoG BAND-PASS | LB 0.73+",
+        "last_run_time": "2026-06-30T18:58:02.770Z",
+        "total_votes": 79,
+        "found_in": [
+          "voteCount"
+        ],
+        "evidence_scope": "DISCOVERY_ONLY_NOT_SOURCE_OR_SCORE"
+      }
+    ]
+  },
+  "notebooks": [
+    {
+      "ref": "redoctopusk/biohub-942tta",
+      "kernel_id": 133372183,
+      "version": 1,
+      "observed_at_utc": "2026-09-09T01:46:46.222329+00:00",
+      "sha256": "521cb97f0f457643379a51b60c4f71e3f4cc7d1823fd98cbb97633ffaa515ec4",
+      "bytes": 213474,
+      "cells": [
+        {
+          "index": 0,
+          "cell_type": "code",
+          "line_count": 72,
+          "source_sha256": "4287b1b08b202ca561790489b6cf5941381b3fccfca40bf060239ae22ea3b132",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "e080025f243670e5fa4860617f1ca6af54c57cddec1722eb4ebfc8c722fde214",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "显式preset：检测0.965，gap5.0，safe-div parent9/sister14/DC0.25，主反向harmonic0.15，retention0.90，validator每prefix4及PP选参门槛0.001。与V21A的parent9相同；gap5.8和DC0.26不同。"
+        },
+        {
+          "index": 1,
+          "cell_type": "code",
+          "line_count": 43,
+          "source_sha256": "64bf335d2ea9f1dea62e2e7b3ad3b94205a775e8c5a53515d94bea3b6c655ba2",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "a846d75a5e5d34383cc8518619a1e0dc0fa183fab8e28670c85bf455f593cbf7",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "配置guard只检查列出的环境键。打印reverse0.200与实际0.15不符；historical LB0.913及single model change文案不是当前方法或成绩依据。"
+        },
+        {
+          "index": 2,
+          "cell_type": "code",
+          "line_count": 238,
+          "source_sha256": "6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "8d785bc245573e0fad6355d49e57525a52b0b43e9034c0ece732526eb0d13436",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "配置读取与V21A cell4逐字相同。生产test目录、全量slice、batch4、ILP默认启用；motion/gap/gap2/safe-div/短轨救回/smooth/DC参数在此解释环境。gap configured2实际clamp1；DC disabled注释与启用值矛盾。"
+        },
+        {
+          "index": 3,
+          "cell_type": "code",
+          "line_count": 682,
+          "source_sha256": "681232942fbb971dc1b999816b32c6d91da819e55d123b359b601169dd5982fb",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "fb64a174d4599025e0c6c287dff273a14a87f7f7bc4f3be5b6b388cfdf856e6a",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "依赖恢复、三个资产定位与字节hash准入；与V21A cell5逐字相同。support repo含13个py，主/次/DC声明hash完全相同，未增加训练或模型。次检测权重0.8、edge0.15、low_margin_consensus、margin0.35、temperature1、edge阈值0.48。"
+        },
+        {
+          "index": 4,
+          "cell_type": "code",
+          "line_count": 441,
+          "source_sha256": "a3a9827b4c0119e90111a091083658317e6b2542320d03ef69ffd031c0a64684",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "c23679c66bd82bb11895acc95ef33be03139091e1124e8c3f0a45c4e192b09ae",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "先原有两模型8pass检测TTA、逐帧0.90候选保留和主正反向harmonic0.15，再新增主模型edge-feature TTA：保留既有增强encode特征，逆变换后8pass等权平均unet_out，供后续主模型正向/反向边预测。secondary_unet_out仍只来自原图encode。含唯一锚点、compile、persist、shape/no-op守卫。GPU最多2个按video分片覆盖检查及实际predict调用定义。"
+        },
+        {
+          "index": 5,
+          "cell_type": "code",
+          "line_count": 1685,
+          "source_sha256": "ab3be142f357c1eb8e25c40537af64d1b95e4d60b8735afdd533781f6dfb7f9c",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "f56aea233c09540c90169f73854b2a71a635681e4c6c3b99b4f478e2fac7ef38",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "生产后处理核心1-1557行与V21A cell7逐字相同：motion两阶段Hungarian重连替换原edges、单parent、gap1+DC、gap2、safe-div几何/DC/对称/发散/单向nearest-orphan、孤点剪枝、短组件过滤/有限救回、linefit。将最终submission生成包为write_test_submission函数，允许后续PP选参后重写，基础仍先写一次。"
+        },
+        {
+          "index": 6,
+          "cell_type": "code",
+          "line_count": 178,
+          "source_sha256": "239f51c30606f090e1fbc939a541891cef2dbea45d7b1c4a6fef53352e94759d",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "6f7f119df682dba9090a9c43943ad7ec77b44d20eb3a2f5eaef2c4cb70830f8a",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "与V21A cell8逐字相同，审计base submission的schema、覆盖、retention、拓扑、hash；configuration含陈旧硬编码det0.96875/secondary0.475/reverse0.30/disappearance1.5/gap5.8，应以有效配置为准。该receipt先于PP重写，不能代表最终文件hash。"
+        },
+        {
+          "index": 7,
+          "cell_type": "code",
+          "line_count": 178,
+          "source_sha256": "0083b9cd0b94cabba7c28f12bf8d80f6eda4a982d1f6f44ead0975ea0de89e92",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "1c1d2aad02d8fd8d2307361b5dc73783e043f9fa45f401aa911474b783055906",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "与V21A cell9逐字相同，但cell0将N_PER_TYPE从默认2设4。按train样本GT是否有division排序，每stem首段prefix取前N；只排除test同名stem，未证明模型训练集外独立验证。默认实际定义train图像推理。"
+        },
+        {
+          "index": 8,
+          "cell_type": "code",
+          "line_count": 318,
+          "source_sha256": "3988c72818365e0cf42169df1d42d3d64e64a6f2815a42255a04222523936349",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "1ee1e77a3d4aa065fee6bcd10fec9553bddbb2cbe20011b0fabc0eb5593ca210",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "7um节点Hungarian匹配、edge confusion/Jaccard、estimated node调整、组件/anchor/两女儿后代/fork division proxy和错误分解；与V21A cell10前318行逐字相同。源码所称official尚不等于此子任务独立核验最新官方实现。"
+        },
+        {
+          "index": 9,
+          "cell_type": "code",
+          "line_count": 146,
+          "source_sha256": "2e658927d77b92f79dbb5ac701cdb25ea0eef35e5c4901ed69d00a5aa932eae4",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "1ef6ea7703e2449b6b81eaa52ab12de580f681543df398996c77aee0c6efcd8f",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "新增缓存train预测图及GT，支持暂改PP全局常量并在finally恢复；将TEST_DIR暂指TRAIN_DIR供DC等后处理，恢复真实test。base proxy用于后续同批样本选参；不存在训练split独立性证明。"
+        },
+        {
+          "index": 10,
+          "cell_type": "code",
+          "line_count": 126,
+          "source_sha256": "035037debb8d20a189d59efb74e42b59165172bd0a181e16947ff79c6d6f3c2f",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "441a521ce174edbb2f4e2f16ad0d09b7a1446b4ac4af91b9b0d7a9cb2bccfe00",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "新增7个单参数PP候选和可选greedy组合；单项proxy增幅>=0.0005且adj loss<=0.0005入组合。最终best需比base proxy>=0.001且adj loss<=0.0005才选，重写test submission并审计最终拓扑。实际选中tight55由root本轮浏览器日志证据提供，不从源码推断。"
+        },
+        {
+          "index": 11,
+          "cell_type": "code",
+          "line_count": 44,
+          "source_sha256": "974767da6156ddf12c5b2d1351b13658f160d0b859a36deb9614441c006537ba",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "3c0f9aa9d7beac03612824041d981c0706a43e583ac131c02df3e2e662f247e3",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "与V21A cell11逐字相同；打印已解析的secondary、reverse、DC、safe-div、validator状态。全Notebook主流程和后续train GT诊断/选参应分层，不能仅凭早期ground_truth_accessed=false称全部label-free。"
+        }
+      ],
+      "dataset_sources": [
+        "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+        "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+        "pilkwang/biohub-tracking-support-pack-50ep-v1"
+      ],
+      "kernel_sources": [],
+      "model_sources": [],
+      "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "url": "https://www.kaggle.com/code/redoctopusk/biohub-942tta",
+      "source_path": "downloads/20260909_public_research/notebooks/redoctopusk__biohub-942tta/source.ipynb",
+      "fact_class": "SOURCE_CODE_VERIFIED",
+      "script_version_id": 347821442,
+      "script_version_id_status": "CUA_VERSION_SCORE_LINK_VERIFIED",
+      "score": "0.946",
+      "code_cells_total": 12,
+      "execution_status": "NOT_RUN",
+      "coverage_status": "FULL_NOTEBOOK_SOURCE_REVERIFIED",
+      "code_cells_read": 12,
+      "prior_full_read_evidence": "research/20260908_正式成绩与公开946对比/tta_源码审读.json",
+      "prior_full_read_commit": "175054cb891e2f7981d196a6c1cb6d26f8d6abcf",
+      "review_method": "本轮GetKernel下载全部源码，12/12cell逐字hash与已全读审计锚定一致并全部AST/compile检查；本轮重读配置、动态补丁、motion/safe-div、proxy和PP。复用已有全读证据，不声称本轮逐字重读4151行。",
+      "platform_evidence_path": "research/20260909_公开来源优化研究/platform_observations.json",
+      "platform_observation": {
+        "ref": "redoctopusk/biohub-942tta",
+        "version": 1,
+        "script_version_id": 347821442,
+        "public_score": "0.946",
+        "url": "https://www.kaggle.com/code/redoctopusk/biohub-942tta?scriptVersionId=347821442",
+        "observed_at_utc": "2026-09-09T01:54:14.124Z",
+        "visible_labels": [
+          "Version 1 of 1",
+          "Public Score 0.946",
+          "Best Score 0.946 V1",
+          "Apache 2.0"
+        ],
+        "ordinary_runtime_seconds": 4901.5,
+        "formal_submission_id": null,
+        "fact_class": "OFFICIAL_FACT"
+      }
+    },
+    {
+      "ref": "flexonafft/biohub-harmonic-fusion",
+      "kernel_id": 131620291,
+      "version": 29,
+      "observed_at_utc": "2026-09-09T01:46:49.004958+00:00",
+      "sha256": "6e1f25c4db92ca05084a3cab39ff083d10c3f43a730581c141363301c0e985bb",
+      "bytes": 211555,
+      "cells": [
+        {
+          "index": 0,
+          "cell_type": "code",
+          "line_count": 71,
+          "source_sha256": "6304cc33cea763baf0db4e2e1f3b86d363e7849abdf1edfd52e29812adc449a8",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "ba5b818a6a093b70c475ef8749b6e1815ef7ddfdaf904d03e5a3b7ec036d273c",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "设置9µm parent、14µm sister、DeepCenter safe阈值0.25、gap5.0、disappearance2、division1.2；保持主/副检测与边混合、短轨过滤、gap2、密度自适应等。validator每prefix4样本，PP选择margin0.001。"
+        },
+        {
+          "index": 1,
+          "cell_type": "code",
+          "line_count": 43,
+          "source_sha256": "99198956a4c7725d85c6aab0d478368749824801716c6d39cf5bf915187ac500",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "a846d75a5e5d34383cc8518619a1e0dc0fa183fab8e28670c85bf455f593cbf7",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "检查det0.965、appearance0、disappearance2、gap5.0、minlen6、bidir0.15及harmonic_probability、retention0.90。"
+        },
+        {
+          "index": 2,
+          "cell_type": "code",
+          "line_count": 238,
+          "source_sha256": "77fdadffbd02c87e8f686e55944b6741312be552f34c8dc615e6391a1959a2dc",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "8d785bc245573e0fad6355d49e57525a52b0b43e9034c0ece732526eb0d13436",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "从BIOHUB环境读取全参数；生产固定competition/test，完整SLICE；batch4；gap_close_effective_max_gap=min(max_gap,1)，独立gap2恢复仍存在。"
+        },
+        {
+          "index": 3,
+          "cell_type": "code",
+          "line_count": 682,
+          "source_sha256": "0f62c46bbec00a2d3d6bbde0efb89d5713204983d51c9c3cf73df1869cf12f8f",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "fb64a174d4599025e0c6c287dff273a14a87f7f7bc4f3be5b6b388cfdf856e6a",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "离线wheel优先；support包13个Python源码清单、主模型、DeepCenter、secondary逐字节SHA门禁；secondary检测0.80，边0.15，low_margin_consensus0.35，threshold0.48。"
+        },
+        {
+          "index": 4,
+          "cell_type": "code",
+          "line_count": 441,
+          "source_sha256": "21ec8a8130fe1280e16897cd6ce2be304631774e17621f6927fcb51b4d5ed69c",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "c23679c66bd82bb11895acc95ef33be03139091e1124e8c3f0a45c4e192b09ae",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "完整读取D4-style检测TTA、双种子校准混合、保留率0.90、主模型正反时间harmonic概率融合0.15、坐标manifest、新增主模型edge feature TTA、双GPU穷尽视频分片及合并门禁。"
+        },
+        {
+          "index": 5,
+          "cell_type": "code",
+          "line_count": 1685,
+          "source_sha256": "93c9742433b4dec4332bd1ddae3fce07892a318b265b36f7c10e2f3174417a34",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "f56aea233c09540c90169f73854b2a71a635681e4c6c3b99b4f478e2fac7ef38",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "完整读取DeepCenter结构/归一化、motion Hungarian两阶段匹配、单帧gap/density/DC确认、gap2上下文插点、safe-div几何/近邻/分离/对称/DC确认、短轨救援、linefit平滑、CSV写出与统计。"
+        },
+        {
+          "index": 6,
+          "cell_type": "code",
+          "line_count": 178,
+          "source_sha256": "c300805e0268602d76042dd271bcc3224fda6af2a52569e16bebc446701d66a5",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "6f7f119df682dba9090a9c43943ad7ec77b44d20eb3a2f5eaef2c4cb70830f8a",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "读初版submission与生产retention JSONL，检查全部dataset、唯一帧记录、回退公式、连续行号、节点/边schema、边时间、入出度，写旧模板receipt。"
+        },
+        {
+          "index": 7,
+          "cell_type": "code",
+          "line_count": 178,
+          "source_sha256": "7400441b355cbe09311e9c638c44264e374ad448d9ab1020b9d5866746e84ee7",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "1c1d2aad02d8fd8d2307361b5dc73783e043f9fa45f401aa911474b783055906",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "排除与test同stem的train视频，按prefix分组、GT有分裂优先，各选4个；调用同预测器双GPU推理，合并检查不重不漏。"
+        },
+        {
+          "index": 8,
+          "cell_type": "code",
+          "line_count": 318,
+          "source_sha256": "54ed30a2f73355f369c112057570e9dd6a37e7f5521a6baf9ccdf4a8fc4ba6f8",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "1ee1e77a3d4aa065fee6bcd10fec9553bddbb2cbe20011b0fabc0eb5593ca210",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "逐帧物理7µm阈值Hungarian节点匹配；edge TP/FP/FN、节点数量惩罚、弱连通谱系division计算、错误归因；聚合proxy=weighted_adj+0.1divisionJ。"
+        },
+        {
+          "index": 9,
+          "cell_type": "code",
+          "line_count": 146,
+          "source_sha256": "3986eaba6600507225a7140c033c14ae039a4fa95b3602806b43a8f2f11d90a0",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "1ef6ea7703e2449b6b81eaa52ab12de580f681543df398996c77aee0c6efcd8f",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "缓存8个train预测原始图及GT，deepcopy后按临时配置重做图后处理，TEST_DIR仅此过程临时指向TRAIN_DIR且finally恢复，记录base proxy。"
+        },
+        {
+          "index": 10,
+          "cell_type": "code",
+          "line_count": 126,
+          "source_sha256": "ece3664cf924f36f3b838bac34fa636e67a5c865e6bf21ab61ff086bd1f87dfb",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "441a521ce174edbb2f4e2f16ad0d09b7a1446b4ac4af91b9b0d7a9cb2bccfe00",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "7个候选：gap4.5、tight5.5、relaxed9、bonus1.25、gap2step4、reuse2.8、DCgap0.35；若至少2个proxy改进候选可加combo。最终要求proxy提升≥0.001且adj下降≤0.0005，选中后重写test submission并检查行号、dataset、下一帧边、入出度。"
+        },
+        {
+          "index": 11,
+          "cell_type": "code",
+          "line_count": 44,
+          "source_sha256": "1b69f438acf6f21117acb50f1b42816a5da627c4dcec80b8e76372ef11793f15",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "3c0f9aa9d7beac03612824041d981c0706a43e583ac131c02df3e2e662f247e3",
+          "coverage": "PRIOR_FULL_READ_BYTE_REVERIFIED",
+          "summary": "以权重存在、DC bundle loaded、环境值和validator样本数输出runtime manifest。"
+        }
+      ],
+      "dataset_sources": [
+        "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+        "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+        "pilkwang/biohub-tracking-support-pack-50ep-v1"
+      ],
+      "kernel_sources": [],
+      "model_sources": [],
+      "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "url": "https://www.kaggle.com/code/flexonafft/biohub-harmonic-fusion?scriptVersionId=347965685",
+      "source_path": "downloads/20260909_public_research/notebooks/flexonafft__biohub-harmonic-fusion/source.ipynb",
+      "fact_class": "SOURCE_CODE_VERIFIED",
+      "script_version_id": 347965685,
+      "script_version_id_status": "FIXED_VERSION_UI_VERIFIED",
+      "score": {
+        "value": "0.946",
+        "version": 29,
+        "script_version_id": 347965685,
+        "status": "FIXED_VERSION_PUBLIC_SCORE_UI",
+        "fact_class": "OFFICIAL_FACT",
+        "formal_submission_id": null,
+        "caveat": "公开Version/SV绑定分数；未取得作者submission列表，不冒充独立复现。"
+      },
+      "code_cells_total": 12,
+      "execution_status": "NOT_RUN",
+      "coverage_status": "FULL_NOTEBOOK_SOURCE_REVERIFIED",
+      "code_cells_read": 12,
+      "prior_full_read_evidence": "research/20260908_正式成绩与公开946对比/harmonic_源码审读.json",
+      "prior_full_read_commit": "175054cb891e2f7981d196a6c1cb6d26f8d6abcf",
+      "review_method": "本轮GetKernel全部源码SHA与9/8全读锚一致，12/12cellhash及AST复核；与TTA逐cellAST对照(剥离cell0展示docstring后全等)。",
+      "platform_evidence_path": "research/20260909_公开来源优化研究/platform_observations.json",
+      "platform_observation": {
+        "ref": "flexonafft/biohub-harmonic-fusion",
+        "version": 29,
+        "script_version_id": 347965685,
+        "public_score": "0.946",
+        "url": "https://www.kaggle.com/code/flexonafft/biohub-harmonic-fusion?scriptVersionId=347965685",
+        "observed_at_utc": "2026-09-09T01:51:55.415Z",
+        "visible_labels": [
+          "Version 29 of 29",
+          "Public Score 0.946",
+          "Best Score 0.946 V29",
+          "Apache 2.0"
+        ],
+        "ordinary_runtime_seconds": 5159.6,
+        "formal_submission_id": null,
+        "fact_class": "OFFICIAL_FACT"
+      }
+    },
+    {
+      "ref": "flexonafft/biohub-lineage-forge-precision-tracking",
+      "kernel_id": 133330467,
+      "version": 7,
+      "observed_at_utc": "2026-09-09T01:46:50.984961+00:00",
+      "sha256": "df7eacbb6936fc1767755c154a3047899d2641c1c69070c4d3dac83dca772db3",
+      "bytes": 220793,
+      "cells": [
+        {
+          "index": 0,
+          "cell_type": "code",
+          "line_count": 71,
+          "source_sha256": "ee771676ee3891d9614827dad820229fa6f485dfe522be59e3ee07c4a343c34b",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "18144e91017114c724615d8f9e437256308b01973f0eb5c00500e1d5a3cd61fd",
+          "byte_equal_harmonic_same_cell": false,
+          "coverage": "ALL_DIFFERENCES_READ_AND_STATIC_PATCH_EXPANDED",
+          "summary": "仅展示docstring变化"
+        },
+        {
+          "index": 1,
+          "cell_type": "code",
+          "line_count": 43,
+          "source_sha256": "99198956a4c7725d85c6aab0d478368749824801716c6d39cf5bf915187ac500",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "a846d75a5e5d34383cc8518619a1e0dc0fa183fab8e28670c85bf455f593cbf7",
+          "byte_equal_harmonic_same_cell": true,
+          "coverage": "IDENTICAL_TO_FULL_READ_HARMONIC_CELL_REVERIFIED",
+          "summary": "检查det0.965、appearance0、disappearance2、gap5.0、minlen6、bidir0.15及harmonic_probability、retention0.90。"
+        },
+        {
+          "index": 2,
+          "cell_type": "code",
+          "line_count": 238,
+          "source_sha256": "77fdadffbd02c87e8f686e55944b6741312be552f34c8dc615e6391a1959a2dc",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "8d785bc245573e0fad6355d49e57525a52b0b43e9034c0ece732526eb0d13436",
+          "byte_equal_harmonic_same_cell": true,
+          "coverage": "IDENTICAL_TO_FULL_READ_HARMONIC_CELL_REVERIFIED",
+          "summary": "从BIOHUB环境读取全参数；生产固定competition/test，完整SLICE；batch4；gap_close_effective_max_gap=min(max_gap,1)，独立gap2恢复仍存在。"
+        },
+        {
+          "index": 3,
+          "cell_type": "code",
+          "line_count": 682,
+          "source_sha256": "0f62c46bbec00a2d3d6bbde0efb89d5713204983d51c9c3cf73df1869cf12f8f",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "fb64a174d4599025e0c6c287dff273a14a87f7f7bc4f3be5b6b388cfdf856e6a",
+          "byte_equal_harmonic_same_cell": true,
+          "coverage": "IDENTICAL_TO_FULL_READ_HARMONIC_CELL_REVERIFIED",
+          "summary": "离线wheel优先；support包13个Python源码清单、主模型、DeepCenter、secondary逐字节SHA门禁；secondary检测0.80，边0.15，low_margin_consensus0.35，threshold0.48。"
+        },
+        {
+          "index": 4,
+          "cell_type": "code",
+          "line_count": 460,
+          "source_sha256": "768bd13fbf10d26731819e0d19f79c11d5a1d0fad7065ec5f5f66c2c5fc3187c",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "8a12daedf29b75dc48fd12725858d9a19a5cdc097b532c1307b75abbb94bf9d9",
+          "byte_equal_harmonic_same_cell": false,
+          "coverage": "ALL_DIFFERENCES_READ_AND_STATIC_PATCH_EXPANDED",
+          "summary": "保留全母版动态补丁，新增次模型8pass特征TTA，0.25原始特征+0.75增强均值；全部新增old47/new99行字符串已展开审读，B0展开源码上锚点恰1且compile通过。"
+        },
+        {
+          "index": 5,
+          "cell_type": "code",
+          "line_count": 1685,
+          "source_sha256": "93c9742433b4dec4332bd1ddae3fce07892a318b265b36f7c10e2f3174417a34",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "f56aea233c09540c90169f73854b2a71a635681e4c6c3b99b4f478e2fac7ef38",
+          "byte_equal_harmonic_same_cell": true,
+          "coverage": "IDENTICAL_TO_FULL_READ_HARMONIC_CELL_REVERIFIED",
+          "summary": "完整读取DeepCenter结构/归一化、motion Hungarian两阶段匹配、单帧gap/density/DC确认、gap2上下文插点、safe-div几何/近邻/分离/对称/DC确认、短轨救援、linefit平滑、CSV写出与统计。"
+        },
+        {
+          "index": 6,
+          "cell_type": "code",
+          "line_count": 178,
+          "source_sha256": "c300805e0268602d76042dd271bcc3224fda6af2a52569e16bebc446701d66a5",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "6f7f119df682dba9090a9c43943ad7ec77b44d20eb3a2f5eaef2c4cb70830f8a",
+          "byte_equal_harmonic_same_cell": true,
+          "coverage": "IDENTICAL_TO_FULL_READ_HARMONIC_CELL_REVERIFIED",
+          "summary": "读初版submission与生产retention JSONL，检查全部dataset、唯一帧记录、回退公式、连续行号、节点/边schema、边时间、入出度，写旧模板receipt。"
+        },
+        {
+          "index": 7,
+          "cell_type": "code",
+          "line_count": 178,
+          "source_sha256": "7400441b355cbe09311e9c638c44264e374ad448d9ab1020b9d5866746e84ee7",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "1c1d2aad02d8fd8d2307361b5dc73783e043f9fa45f401aa911474b783055906",
+          "byte_equal_harmonic_same_cell": true,
+          "coverage": "IDENTICAL_TO_FULL_READ_HARMONIC_CELL_REVERIFIED",
+          "summary": "排除与test同stem的train视频，按prefix分组、GT有分裂优先，各选4个；调用同预测器双GPU推理，合并检查不重不漏。"
+        },
+        {
+          "index": 8,
+          "cell_type": "code",
+          "line_count": 318,
+          "source_sha256": "54ed30a2f73355f369c112057570e9dd6a37e7f5521a6baf9ccdf4a8fc4ba6f8",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "1ee1e77a3d4aa065fee6bcd10fec9553bddbb2cbe20011b0fabc0eb5593ca210",
+          "byte_equal_harmonic_same_cell": true,
+          "coverage": "IDENTICAL_TO_FULL_READ_HARMONIC_CELL_REVERIFIED",
+          "summary": "逐帧物理7µm阈值Hungarian节点匹配；edge TP/FP/FN、节点数量惩罚、弱连通谱系division计算、错误归因；聚合proxy=weighted_adj+0.1divisionJ。"
+        },
+        {
+          "index": 9,
+          "cell_type": "code",
+          "line_count": 146,
+          "source_sha256": "3986eaba6600507225a7140c033c14ae039a4fa95b3602806b43a8f2f11d90a0",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "1ef6ea7703e2449b6b81eaa52ab12de580f681543df398996c77aee0c6efcd8f",
+          "byte_equal_harmonic_same_cell": true,
+          "coverage": "IDENTICAL_TO_FULL_READ_HARMONIC_CELL_REVERIFIED",
+          "summary": "缓存8个train预测原始图及GT，deepcopy后按临时配置重做图后处理，TEST_DIR仅此过程临时指向TRAIN_DIR且finally恢复，记录base proxy。"
+        },
+        {
+          "index": 10,
+          "cell_type": "code",
+          "line_count": 126,
+          "source_sha256": "ece3664cf924f36f3b838bac34fa636e67a5c865e6bf21ab61ff086bd1f87dfb",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "441a521ce174edbb2f4e2f16ad0d09b7a1446b4ac4af91b9b0d7a9cb2bccfe00",
+          "byte_equal_harmonic_same_cell": true,
+          "coverage": "IDENTICAL_TO_FULL_READ_HARMONIC_CELL_REVERIFIED",
+          "summary": "7个候选：gap4.5、tight5.5、relaxed9、bonus1.25、gap2step4、reuse2.8、DCgap0.35；若至少2个proxy改进候选可加combo。最终要求proxy提升≥0.001且adj下降≤0.0005，选中后重写test submission并检查行号、dataset、下一帧边、入出度。"
+        },
+        {
+          "index": 11,
+          "cell_type": "code",
+          "line_count": 44,
+          "source_sha256": "1b69f438acf6f21117acb50f1b42816a5da627c4dcec80b8e76372ef11793f15",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "3c0f9aa9d7beac03612824041d981c0706a43e583ac131c02df3e2e662f247e3",
+          "byte_equal_harmonic_same_cell": true,
+          "coverage": "IDENTICAL_TO_FULL_READ_HARMONIC_CELL_REVERIFIED",
+          "summary": "以权重存在、DC bundle loaded、环境值和validator样本数输出runtime manifest。"
+        }
+      ],
+      "dataset_sources": [
+        "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+        "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+        "pilkwang/biohub-tracking-support-pack-50ep-v1"
+      ],
+      "kernel_sources": [],
+      "model_sources": [],
+      "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "url": "https://www.kaggle.com/code/flexonafft/biohub-lineage-forge-precision-tracking?scriptVersionId=348210665",
+      "source_path": "downloads/20260909_public_research/notebooks/flexonafft__biohub-lineage-forge-precision-tracking/source.ipynb",
+      "fact_class": "SOURCE_CODE_VERIFIED",
+      "script_version_id": 348210665,
+      "script_version_id_status": "FIXED_VERSION_UI_VERIFIED",
+      "score": {
+        "value": "0.946",
+        "version": 7,
+        "script_version_id": 348210665,
+        "status": "FIXED_VERSION_PUBLIC_SCORE_UI",
+        "fact_class": "OFFICIAL_FACT",
+        "formal_submission_id": null,
+        "caveat": "公开Version/SV绑定分数；未取得作者submission列表，不冒充独立复现。"
+      },
+      "code_cells_total": 12,
+      "execution_status": "NOT_RUN",
+      "coverage_status": "FULL_NOTEBOOK_SOURCE_DIFFERENTIAL_READ",
+      "code_cells_read": 12,
+      "review_method": "下载全部12cell；10cell逐字等于本轮重核全读Harmonic，另2cell全部差异读取。新增动态patch47→99行展开检查，唯一锚点替换B0完整展开源码并compile；未执行Notebook/模型。",
+      "new_model_weights": false,
+      "training_added": false,
+      "association_fusion_weights_changed": false,
+      "pp_selection_changed": false,
+      "secondary_feature_formula": "0.25 * original_features + 0.75 * eight_pass_inverse_aligned_mean",
+      "comparison_to_our_C2": "C2 uses mean only (weight1.0); Forge interpolates weight0.75. Same original duplicate-XY view set, no C1 view correction. Public displayed score does not exceed own B0/C2 .946.",
+      "platform_evidence_path": "research/20260909_公开来源优化研究/platform_observations.json",
+      "platform_observation": {
+        "ref": "flexonafft/biohub-lineage-forge-precision-tracking",
+        "version": 7,
+        "script_version_id": 348210665,
+        "public_score": "0.946",
+        "url": "https://www.kaggle.com/code/flexonafft/biohub-lineage-forge-precision-tracking?scriptVersionId=348210665",
+        "observed_at_date_shanghai": "2026-09-09",
+        "observed_before_utc": "2026-09-09T01:51:55.415Z",
+        "time_precision": "Observed in preceding CUA read; exact first-read timestamp not recorded",
+        "visible_labels": [
+          "Version 7 of 7",
+          "Public Score 0.946",
+          "Best Score 0.946 V7",
+          "Apache 2.0"
+        ],
+        "ordinary_runtime_seconds": 6041.4,
+        "own_reproduction": "NOT_RUN",
+        "formal_submission_id": null,
+        "fact_class": "OFFICIAL_FACT"
+      }
+    },
+    {
+      "ref": "zhincez/the-metric-pays-you-to-delete-nodes",
+      "kernel_id": 133516745,
+      "version": 4,
+      "observed_at_utc": "2026-09-09T01:46:52.873948+00:00",
+      "sha256": "bc611d789aba74a30b7085ae9d4a614afad2d8af5abdc3ff2f2fe394394efcf7",
+      "bytes": 7406,
+      "cells": [
+        {
+          "index": 0,
+          "cell_type": "markdown",
+          "line_count": 9,
+          "source_sha256": "6570ffbfb2d1fe33ed3afc2d3423564e53230364214610352bd615d3f2294e98",
+          "coverage": "FULL_CELL_TEXT_READ"
+        },
+        {
+          "index": 1,
+          "cell_type": "markdown",
+          "line_count": 13,
+          "source_sha256": "0662c1b90023da0ba716f14c1c7181566369fa45f5631ebe992dd757a8a05169",
+          "coverage": "FULL_CELL_TEXT_READ"
+        },
+        {
+          "index": 2,
+          "cell_type": "markdown",
+          "line_count": 16,
+          "source_sha256": "94918431d4622c84a68088f51e570858c350264e6f85ae7f2c53130fc10a244f",
+          "coverage": "FULL_CELL_TEXT_READ"
+        },
+        {
+          "index": 3,
+          "cell_type": "markdown",
+          "line_count": 14,
+          "source_sha256": "4c439fdd216ce7987827c9bd2f4512aaa42865ef71d87fa4ced3a458463bdfc3",
+          "coverage": "FULL_CELL_TEXT_READ"
+        },
+        {
+          "index": 4,
+          "cell_type": "markdown",
+          "line_count": 13,
+          "source_sha256": "69fef68469e8c3f722399bddb772e13edb5035c442e1ab8a2268b66987b73b1d",
+          "coverage": "FULL_CELL_TEXT_READ"
+        },
+        {
+          "index": 5,
+          "cell_type": "markdown",
+          "line_count": 9,
+          "source_sha256": "5fed322373a50daad8a24e3e1d768bda47c795822426d704542cdc17b5b5b1a4",
+          "coverage": "FULL_CELL_TEXT_READ"
+        },
+        {
+          "index": 6,
+          "cell_type": "markdown",
+          "line_count": 5,
+          "source_sha256": "1f18ba0d1b23ad5a53ba36c7a047e47523ce818e4b8166c63f76ef8b2823ff21",
+          "coverage": "FULL_CELL_TEXT_READ"
+        },
+        {
+          "index": 7,
+          "cell_type": "code",
+          "line_count": 36,
+          "source_sha256": "4b11cb7b5176e3750cc1bbb7812a6e8ea07a91eceab25be38eb838b7dfeb6014",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "f0f29bafa1c52ce44405b419b4c5b575386cd566711e646b42ed6f0fbc34570a",
+          "coverage": "FULL_CELL_TEXT_READ"
+        },
+        {
+          "index": 8,
+          "cell_type": "markdown",
+          "line_count": 9,
+          "source_sha256": "d5e55c4df5a35afa6c7609a7450475b678a6690cb72fa3610bf65ed90e65a8b5",
+          "coverage": "FULL_CELL_TEXT_READ"
+        }
+      ],
+      "dataset_sources": [],
+      "kernel_sources": [],
+      "model_sources": [],
+      "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+      "url": "https://www.kaggle.com/code/zhincez/the-metric-pays-you-to-delete-nodes",
+      "source_path": "downloads/20260909_public_research/notebooks/zhincez__the-metric-pays-you-to-delete-nodes/source.ipynb",
+      "fact_class": "SOURCE_CODE_VERIFIED",
+      "script_version_id": null,
+      "script_version_id_status": "UNKNOWN_NO_VISIBLE_LINK",
+      "score": null,
+      "code_cells_total": 1,
+      "execution_status": "NOT_RUN",
+      "coverage_status": "FULL_NOTEBOOK_SOURCE_READ",
+      "code_cells_read": 1,
+      "markdown_cells_read": 8,
+      "review_method": "本轮实际读取全部9cell全文，唯一codecell7共36行，numpy演示不含模型推理。",
+      "score_claims": {
+        "fact_class": "AUTHOR_CLAIM",
+        "baseline_lb": "0.938",
+        "bundled_deletion_lb": "0.934",
+        "baseline_four_fov_proxy": "0.9368",
+        "bundled_deletion_proxy": "0.9495",
+        "formal_submission_ids": "UNKNOWN",
+        "claims_verified_as_scores": false
+      },
+      "method_caveat": "compare()的abs(delta_M)/(abs(delta_J)+abs(delta_M))并不是J*M的精确归因，不能照抄为真实贡献百分比；应分别记录J,M或用乘积精确分解。",
+      "platform_evidence_path": "research/20260909_公开来源优化研究/platform_observations.json",
+      "platform_observation": {
+        "ref": "zhincez/the-metric-pays-you-to-delete-nodes",
+        "version": 4,
+        "script_version_id": null,
+        "public_score": null,
+        "url": "https://www.kaggle.com/code/zhincez/the-metric-pays-you-to-delete-nodes",
+        "observed_at_utc": "2026-09-09T01:58:10.961Z",
+        "visible_labels": [
+          "Version 4 of 4",
+          "23s",
+          "Apache 2.0"
+        ],
+        "no_visible_public_score_or_script_version_link": true,
+        "formal_submission_id": null,
+        "fact_class": "OFFICIAL_FACT"
+      }
+    },
+    {
+      "ref": "rogerrogerroger3r/biohub-run84",
+      "kernel_id": 133532578,
+      "version": 1,
+      "observed_at_utc": "2026-09-09T01:46:54.325346+00:00",
+      "sha256": "42bd6ec98fda58f8617eecded7e7e8c0671f567b7eee597a343386550438380d",
+      "bytes": 200725,
+      "cells": [
+        {
+          "index": 0,
+          "cell_type": "code",
+          "line_count": 61,
+          "source_sha256": "70b80d2a29b46ddb5a8fd25ebe324f0154371893be8e5f85f477d61ce5787c5f",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "85190c623a50a6eb74ab16c040965e4eb2f40221da2af5beeeeb863896eb8a95",
+          "coverage": "STATIC_AST_AND_PARTIAL_SOURCE_DIFF_REVIEW"
+        },
+        {
+          "index": 1,
+          "cell_type": "code",
+          "line_count": 44,
+          "source_sha256": "efac330af683a50b12bd541599c782b9538c159a55d6eacd36d5bebe7255cc94",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "823d659acc3dff6cb76638075e794e5eef7427a05c113d0fbba8e849b3be6d17",
+          "coverage": "STATIC_AST_AND_PARTIAL_SOURCE_DIFF_REVIEW"
+        },
+        {
+          "index": 2,
+          "cell_type": "code",
+          "line_count": 238,
+          "source_sha256": "6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "8d785bc245573e0fad6355d49e57525a52b0b43e9034c0ece732526eb0d13436",
+          "coverage": "STATIC_AST_AND_PARTIAL_SOURCE_DIFF_REVIEW"
+        },
+        {
+          "index": 3,
+          "cell_type": "code",
+          "line_count": 682,
+          "source_sha256": "681232942fbb971dc1b999816b32c6d91da819e55d123b359b601169dd5982fb",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "fb64a174d4599025e0c6c287dff273a14a87f7f7bc4f3be5b6b388cfdf856e6a",
+          "coverage": "STATIC_AST_AND_PARTIAL_SOURCE_DIFF_REVIEW"
+        },
+        {
+          "index": 4,
+          "cell_type": "code",
+          "line_count": 439,
+          "source_sha256": "7acc1e33063ae2c944e8f63b188227603005158e8af6a036450fce22ed54ade5",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "c76c9b754f4f3c14fcbec6671afd08c1b66b337b46920fcc6dd7cb9e2baedffa",
+          "coverage": "STATIC_AST_AND_PARTIAL_SOURCE_DIFF_REVIEW"
+        },
+        {
+          "index": 5,
+          "cell_type": "code",
+          "line_count": 1659,
+          "source_sha256": "49bed1d06ba5b4111c789704607a4d699976f1fe2a9f2ff45f8e3bdba8a15e5f",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "bcb266d176e4ccf3adfbedd836fda1a66492dcf575b57a4d84993204a47bfd16",
+          "coverage": "STATIC_AST_AND_PARTIAL_SOURCE_DIFF_REVIEW"
+        },
+        {
+          "index": 6,
+          "cell_type": "code",
+          "line_count": 178,
+          "source_sha256": "239f51c30606f090e1fbc939a541891cef2dbea45d7b1c4a6fef53352e94759d",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "6f7f119df682dba9090a9c43943ad7ec77b44d20eb3a2f5eaef2c4cb70830f8a",
+          "coverage": "STATIC_AST_AND_PARTIAL_SOURCE_DIFF_REVIEW"
+        },
+        {
+          "index": 7,
+          "cell_type": "code",
+          "line_count": 166,
+          "source_sha256": "082c333402a4f10b81db5f3cf07c02beb70c8b575f5f948f81b4f58d20e9e21d",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "1c1d2aad02d8fd8d2307361b5dc73783e043f9fa45f401aa911474b783055906",
+          "coverage": "STATIC_AST_AND_PARTIAL_SOURCE_DIFF_REVIEW"
+        },
+        {
+          "index": 8,
+          "cell_type": "code",
+          "line_count": 414,
+          "source_sha256": "54ff3e88b8e8222433179df53be137cf35dde1d286c9ae48d835e1957065b7da",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "bbdcb2dc0388229e02f9cb8556a61c8f44cd13ba08fb34f776b156866178f216",
+          "coverage": "STATIC_AST_AND_PARTIAL_SOURCE_DIFF_REVIEW"
+        },
+        {
+          "index": 9,
+          "cell_type": "code",
+          "line_count": 35,
+          "source_sha256": "325878ba81cc45ed645e42ba60c681a9a8cfe0c2bb53b8cca6c134569f52f954",
+          "parse_compile": "PASS_NOT_EXECUTED",
+          "ast_sha256": "3c0f9aa9d7beac03612824041d981c0706a43e583ac131c02df3e2e662f247e3",
+          "coverage": "STATIC_AST_AND_PARTIAL_SOURCE_DIFF_REVIEW"
+        }
+      ],
+      "dataset_sources": [
+        "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+        "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+        "pilkwang/biohub-tracking-support-pack-50ep-v1",
+        "pilkwang/pilkwang-public-dataset-for-notebooks-figures"
+      ],
+      "kernel_sources": [],
+      "model_sources": [],
+      "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "url": "https://www.kaggle.com/code/rogerrogerroger3r/biohub-run84",
+      "source_path": "downloads/20260909_public_research/notebooks/rogerrogerroger3r__biohub-run84/source.ipynb",
+      "fact_class": "SOURCE_CODE_VERIFIED",
+      "script_version_id": null,
+      "script_version_id_status": "UNKNOWN_PENDING_ROOT_UI",
+      "score": {
+        "value": null,
+        "status": "UNKNOWN_PENDING_ROOT_UI",
+        "formal_submission_id": null
+      },
+      "code_cells_total": 10,
+      "execution_status": "NOT_RUN",
+      "coverage_status": "PARTIAL_NOTEBOOK_SOURCE_READ",
+      "code_cells_read": 0,
+      "review_method": "全部10cell已取得并AST解析；重点读cell0/cell4及与B0差异，未声明所有cell已人工全读。",
+      "main_difference": "learned relink bonus3.0/tight7.0/relaxed11.0；移除B0末端PP自动选参，validator回默认每prefix2。",
+      "upstream_claim": {
+        "ref": "mianwang1024/biohub-relink-v1",
+        "lb_in_comment": "0.946",
+        "cv_in_comment": "0.91944 on199movies",
+        "fact_class": "AUTHOR_CLAIM",
+        "source_access": "GET_KERNEL_HTTP_ERROR",
+        "version": "UNKNOWN",
+        "script_version_id": "UNKNOWN"
+      }
+    }
+  ],
+  "coverage": {
+    "full_fresh_notebooks": 1,
+    "full_differential_notebooks": 1,
+    "prior_full_read_byte_reverified_notebooks": 2,
+    "partial_notebooks": 1,
+    "effective_all_code_cell_review_count": 4,
+    "note": "不把发现列表或仅AST解析的run84计入全读；两既有母版以完整源hash+12cellhash复用已全读证据，明确非本轮重新逐字全文审读。"
+  },
+  "mechanical_comparisons": {
+    "tta_vs_harmonic_same_executable_ast_all12": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "forge_different_cells_vs_harmonic": [
+      0,
+      4
+    ],
+    "forge_patch_anchor_in_B0_expanded": 1,
+    "forge_patch_old_lines": 47,
+    "forge_patch_new_lines": 99,
+    "forge_expanded_compile": "PASS_NOT_EXECUTED",
+    "forge_expanded_sha256": "ddca518b0e838b2123f30cfcb31819fb159b4e68fc20ef6b3a42003cc2d528ed"
+  },
+  "own_B0_observable_diagnostics": {
+    "fact_class": "MEASURED",
+    "scope": "已有B0 ordinary8FOV手写proxy报告计数；division实现未等价官方，不是官方或hiddenformal评分细项。",
+    "selected_pp": "tight55",
+    "validator_results_path": "experiments/PUBLIC946_TTA_20260908/B0/validator_results.csv",
+    "validator_results_sha256": "9d28929631425afb5c4dc2595670ccb2f12e342360bd0ffce45e5837416a0ec0",
+    "selected_counts": {
+      "edges_recovered": 5542,
+      "edges_fragmented": 136,
+      "edges_lost_to_detection": 73,
+      "wrong_association_edges": 0,
+      "missed_gt_nodes": 58,
+      "spurious_pred_nodes": 183084,
+      "div_tp": 3,
+      "div_fp": 1,
+      "div_fn": 9,
+      "t_pred": 188961,
+      "t_true": 208700
+    },
+    "run_stats_path": "experiments/PUBLIC946_TTA_20260908/B0/run_stats.csv",
+    "run_stats_sha256": "5a93cd293bffc7bb4180e100dd0c4199381ed4acab70912d7c609644393a43bc",
+    "production_motion_reset": [
+      {
+        "dataset": "44b6_0113de3b",
+        "replaced_raw_edges": 24995,
+        "final_division_sources": 51,
+        "safe_divisions_added": 51
+      },
+      {
+        "dataset": "44b6_0b24845f",
+        "replaced_raw_edges": 20161,
+        "final_division_sources": 15,
+        "safe_divisions_added": 15
+      },
+      {
+        "dataset": "6bba_05b6850b",
+        "replaced_raw_edges": 6010,
+        "final_division_sources": 9,
+        "safe_divisions_added": 9
+      },
+      {
+        "dataset": "6bba_05db0fb1",
+        "replaced_raw_edges": 67249,
+        "final_division_sources": 27,
+        "safe_divisions_added": 27
+      }
+    ],
+    "sparse_annotation_limit": "spurious_pred_nodes不是可确认真实假阳性；wrong_association_edges=0不代表hidden没有误关联；8FOV不等于8独立胚胎。 division TP/FP/FN须先对齐官方matcher后再解释实际错误；现有3/1/9仅证明本地程序如此报告。"
+  },
+  "findings": [
+    {
+      "id": "same_family",
+      "fact_class": "SOURCE_CODE_VERIFIED",
+      "text": "Harmonic当前V29与942ttaV1算法AST全等，应去重为同实现家族，标题不是新的模型方案。"
+    },
+    {
+      "id": "forge",
+      "fact_class": "SOURCE_CODE_VERIFIED",
+      "text": "LineageForgeV7核心是次特征TTA权重0.75；自有C2权重1.0。无新权重/训练/关联融合/PP算法，本轮公开显示仍.946。"
+    },
+    {
+      "id": "motion_resets_divisions",
+      "fact_class": "SOURCE_CODE_VERIFIED",
+      "source": "redoctopusk/biohub-942tta cell5 lines420-551,1428-1445",
+      "text": "motion_relink_edges每帧两轮一对一Hungarian；非空时edges=motion_edges覆盖原ILP拓扑，原边概率仅作为motion代价的learned bonus输入。"
+    },
+    {
+      "id": "divisions_in_output",
+      "fact_class": "MEASURED",
+      "text": "B0普通四视频最终division51/15/9/27恰等safe_divisions_added；原分裂拓扑没有直接保留。不是ILP完全无效的证明。"
+    },
+    {
+      "id": "safe_div_bottleneck",
+      "fact_class": "SOURCE_CODE_VERIFIED",
+      "source": "redoctopusk/biohub-942tta cell5 lines973-1141",
+      "text": "safe-div要求parent现有一女儿+下一帧无parent孤儿，单向nearest orphan、两女儿各有t+2唯一后继且分离增加>=2.25um，才进入DC和symmetry检查；这是具体候选召回限制，但不能凭门槛存在就判定放宽提分。"
+    },
+    {
+      "id": "deletion_failure",
+      "fact_class": "AUTHOR_CLAIM",
+      "text": "公开作者称删短轨/提检测阈值/按类型阈值组合让4FOVproxy .9368→.9495而LB .938→.934；版本源码确认这些文字存在，提交ID不可得，非独立复现。"
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": 1,
+      "label": "先对齐官方评分，再解释已有验证诊断",
+      "fact_class": "INFERENCE",
+      "status": "NOT_RUN",
+      "mechanism": "母版cell8是手写proxy，必须核验其division matcher、匹配/聚合规则和官方固定提交一致后，才用其FN/FP指导修改；重用已有运行预测做评分对照即可，不以重跑全部模型为前置。",
+      "basis": [
+        "母版cell8完整源及项目官方GitHub审读待根整合"
+      ],
+      "risks": "此项提升诊断可信度，不承诺提升正式成绩；B0既有正式0.946不受其影响。"
+    },
+    {
+      "priority": 2,
+      "label": "保护有证据的分裂拓扑，再做剩余节点匹配",
+      "fact_class": "INFERENCE",
+      "status": "NOT_RUN",
+      "mechanism": "从B0保留通过图像支持、多帧持续性和单parent约束的高置信ILP分裂；motion匹配只处理剩余节点，避免先抹去全部分裂再靠safe-div重建。",
+      "basis": [
+        "motion_resets_divisions",
+        "divisions_in_output",
+        "own_B0_observable_diagnostics (手写proxy报告的3/1/9未视为官方真值)"
+      ],
+      "risks": "错误分裂会伤division精度；必须检查锚点及两女儿谱系连接，不能只增加fork数。",
+      "comparison": "未来若授权，仅与B0精确同det/weights/TTA/PP政策作单机制正式对照；不得与新阈值搜索捆绑。"
+    },
+    {
+      "priority": 3,
+      "label": "先拆解分裂FN与断轨，再验证目标性修复",
+      "fact_class": "INFERENCE",
+      "status": "NOT_RUN",
+      "mechanism": "先对齐官方matcher，再将实际可核验divisionFN按候选缺失、ILP后丢失、motion覆盖、safe-div拒绝、两女儿后继缺失、末端过滤分类；136断边按已有节点未关联和缺检测区分。",
+      "basis": [
+        "safe_div_bottleneck",
+        "own_B0_observable_diagnostics"
+      ],
+      "risks": "稀疏标注验证只能定位已观测失败，不能作为hidden收益替代。"
+    },
+    {
+      "priority": 4,
+      "label": "不优先扫次特征TTA插值或补齐D4",
+      "fact_class": "INFERENCE",
+      "status": "NOT_RUN",
+      "mechanism": "C1正式.940，C2正式.946，Forge0.75公开.946；公开证据未给出超越母版的信号。",
+      "basis": [
+        "forge",
+        "same_family"
+      ],
+      "risks": "显示三位持平不等于内部分完全一致，也不证明所有TTA变体都无用。"
+    },
+    {
+      "priority": 5,
+      "label": "不以删节点带来的proxy涨分驱动优化",
+      "fact_class": "INFERENCE",
+      "status": "NOT_RUN",
+      "mechanism": "分别报raw edge Jaccard、node-count multiplier、divisionTP/FP/FN、保留率；不要把未匹配稀疏GT节点视作应删除FP。",
+      "basis": [
+        "deletion_failure"
+      ],
+      "risks": "作者单例非普遍定律，但足以否定proxy单一前置目标。"
+    }
+  ],
+  "external_writes": {
+    "notebook_create_or_save": 0,
+    "inference_started": 0,
+    "formal_submission": 0,
+    "training": 0,
+    "dataset_or_model_write": 0
+  },
+  "read_errors": [
+    {
+      "operation": "initial SDK authentication read",
+      "error": "SSL_UNEXPECTED_EOF",
+      "resolved_by": "subsequent read-only query succeeded"
+    },
+    {
+      "operation": "GetKernel mianwang1024/biohub-relink-v1",
+      "error": "HTTPError",
+      "status": "SOURCE_UNAVAILABLE"
+    }
+  ],
+  "declared_asset_identity": {
+    "scope": "母版/Harmonic/Forge完整源码cell3的预期hash相同；本轮没有下载模型权重，不能称本轮独立验算checkpoint",
+    "primary_sha256": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+    "secondary_sha256": "9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f",
+    "deepcenter_sha256": "8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0",
+    "support13py_manifest_sha256": "978b626d1fd1e7397435a437dfe68691defe1572fc3c20e61012d7c9b52ed029",
+    "dataset_version_numbers_this_read": "UNKNOWN_API_ONLY_SLUGS",
+    "model_weight_downloads": 0
+  }
+}

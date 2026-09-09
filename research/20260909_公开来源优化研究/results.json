@@ -1,0 +1,71 @@
+{
+  "task_id": "PUBLIC_OPTIMIZATION_RESEARCH_20260909",
+  "as_of_shanghai": "2026-09-09T10:07:15.225276+08:00",
+  "research_status": "SOURCE_AUDIT_PASS",
+  "delivery_status": "SEPARATE_RECEIPT_REQUIRED",
+  "frozen_contract_sha256": "ac37e6ae3eef37bbe281082beb72508677575962df6ac180a43617824df92da0",
+  "baseline_commit": "175054cb891e2f7981d196a6c1cb6d26f8d6abcf",
+  "own_official_scores": {
+    "B0": "0.946",
+    "C1": "0.940",
+    "C2": "0.946"
+  },
+  "current_own_best": "0.946",
+  "kaggle_write_requests": {
+    "notebook_save_or_run": 0,
+    "formal_submission": 0,
+    "dataset_or_model_write": 0,
+    "training": 0,
+    "final_selection_change": 0
+  },
+  "executed": [
+    "Source inspection and cell/hash reverification",
+    "Existing 24 sweep aggregate arithmetic and leave-one-FOV aggregation",
+    "Evidence consistency verifier; no algorithm/model execution"
+  ],
+  "priorities": [
+    {
+      "id": "P0",
+      "work": "Official scorer equivalence and stage-specific failure diagnosis",
+      "fact_class": "INFERENCE",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "P1a",
+      "work": "Single candidate: linefit stops at division boundary, otherwise preserve B0 including automatic PP",
+      "fact_class": "INFERENCE",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "P1b",
+      "work": "Only after event evidence, independent high-confidence ILP division preservation",
+      "fact_class": "INFERENCE",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "P2",
+      "work": "Real detection peak subgrid refinement",
+      "fact_class": "INFERENCE",
+      "status": "NOT_RUN"
+    },
+    {
+      "id": "P3",
+      "work": "Different-neighbor temporal context or admitted external data/FOCUS distillation/longer-window tracker",
+      "fact_class": "INFERENCE",
+      "status": "NOT_RUN"
+    }
+  ],
+  "unknown": [
+    "Hidden formal PP/score decomposition/private scores",
+    "Actual official vs proxy numerical difference on same predictions",
+    "Whether any proposed change improves formal score",
+    "C1 decline and C2 tie causal explanation",
+    "Metric Notebook ScriptVersionId and author submission IDs",
+    "Partial run84 and discussion739516; images not audited"
+  ],
+  "scope_limits": [
+    "Not full-site or full-repository review",
+    "Four all-cell covered notebooks include two byte-reverified prior full reads and one complete differential read",
+    "Current official public scorer source is not proof of private deployment byte identity"
+  ]
+}

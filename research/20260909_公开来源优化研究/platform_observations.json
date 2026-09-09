@@ -1,0 +1,85 @@
+{
+  "read_method": "CUA in-app browser rendered Notebook Public Score and matching fixed-Version Best Score link",
+  "platform_writes": 0,
+  "observations": [
+    {
+      "ref": "flexonafft/biohub-lineage-forge-precision-tracking",
+      "version": 7,
+      "script_version_id": 348210665,
+      "public_score": "0.946",
+      "url": "https://www.kaggle.com/code/flexonafft/biohub-lineage-forge-precision-tracking?scriptVersionId=348210665",
+      "observed_at_date_shanghai": "2026-09-09",
+      "observed_before_utc": "2026-09-09T01:51:55.415Z",
+      "time_precision": "Observed in preceding CUA read; exact first-read timestamp not recorded",
+      "visible_labels": [
+        "Version 7 of 7",
+        "Public Score 0.946",
+        "Best Score 0.946 V7",
+        "Apache 2.0"
+      ],
+      "ordinary_runtime_seconds": 6041.4,
+      "own_reproduction": "NOT_RUN",
+      "formal_submission_id": null,
+      "fact_class": "OFFICIAL_FACT"
+    },
+    {
+      "ref": "flexonafft/biohub-harmonic-fusion",
+      "version": 29,
+      "script_version_id": 347965685,
+      "public_score": "0.946",
+      "url": "https://www.kaggle.com/code/flexonafft/biohub-harmonic-fusion?scriptVersionId=347965685",
+      "observed_at_utc": "2026-09-09T01:51:55.415Z",
+      "visible_labels": [
+        "Version 29 of 29",
+        "Public Score 0.946",
+        "Best Score 0.946 V29",
+        "Apache 2.0"
+      ],
+      "ordinary_runtime_seconds": 5159.6,
+      "formal_submission_id": null,
+      "fact_class": "OFFICIAL_FACT"
+    },
+    {
+      "ref": "redoctopusk/biohub-942tta",
+      "version": 1,
+      "script_version_id": 347821442,
+      "public_score": "0.946",
+      "url": "https://www.kaggle.com/code/redoctopusk/biohub-942tta?scriptVersionId=347821442",
+      "observed_at_utc": "2026-09-09T01:54:14.124Z",
+      "visible_labels": [
+        "Version 1 of 1",
+        "Public Score 0.946",
+        "Best Score 0.946 V1",
+        "Apache 2.0"
+      ],
+      "ordinary_runtime_seconds": 4901.5,
+      "formal_submission_id": null,
+      "fact_class": "OFFICIAL_FACT"
+    },
+    {
+      "ref": "zhincez/the-metric-pays-you-to-delete-nodes",
+      "version": 4,
+      "script_version_id": null,
+      "public_score": null,
+      "url": "https://www.kaggle.com/code/zhincez/the-metric-pays-you-to-delete-nodes",
+      "observed_at_utc": "2026-09-09T01:58:10.961Z",
+      "visible_labels": [
+        "Version 4 of 4",
+        "23s",
+        "Apache 2.0"
+      ],
+      "no_visible_public_score_or_script_version_link": true,
+      "formal_submission_id": null,
+      "fact_class": "OFFICIAL_FACT"
+    }
+  ],
+  "host_identity_observation": {
+    "topic_id": 734330,
+    "comment_id": 3512606,
+    "author": "Thibgolds",
+    "visible_badge": "COMPETITION HOST",
+    "observed_at_utc": "2026-09-09T01:54:14.124Z",
+    "fact_class": "HOST_CONFIRMED",
+    "claim_scope": "Zebrahub data/resources are allowed; host says no test overlap. Specific assets still need lineage/license verification."
+  }
+}

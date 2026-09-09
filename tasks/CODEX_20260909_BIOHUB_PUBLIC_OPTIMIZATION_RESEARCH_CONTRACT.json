@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "task_id": "PUBLIC_OPTIMIZATION_RESEARCH_20260909",
+  "goal": "只读刷新Kaggle公开讨论、代码和GitHub，基于实得B0 .946/C1 .940/C2 .946提出有来源和可检验假设的优化建议，并同步本仓库。",
+  "scope": {
+    "baseline_commit": "175054cb891e2f7981d196a6c1cb6d26f8d6abcf",
+    "allowed": [
+      "read public discussions/code/GitHub",
+      "local static source review and report",
+      "synchronize task-related small files to SailorRen/Biohub-CELL"
+    ],
+    "forbidden": [
+      "Kaggle Notebook save/run/submission",
+      "training",
+      "Dataset/Model writes",
+      "final submission selection changes",
+      "other repository writes"
+    ]
+  },
+  "coverage_minimum": {
+    "discussion_threads_body_read": 3,
+    "notebooks_all_code_cells_read": 3,
+    "github_repositories_core_source_read": 2
+  },
+  "evidence_policy": [
+    "Source titles are discovery only",
+    "Record actual page/source/commit/version identity and read coverage",
+    "Distinguish official/host/source/measured/author/community/inference/unknown",
+    "Proposed improvements are NOT_RUN and not causal gains",
+    "Missing coverage is PARTIAL_RESEARCH_BLOCKED; no quota or source fabrication"
+  ],
+  "acceptance": [
+    {
+      "id": "research-evidence",
+      "type": "command",
+      "required": true,
+      "argv": [
+        "python3",
+        "research/20260909_公开来源优化研究/verify.py"
+      ],
+      "cwd": ".",
+      "expected_exit": 0,
+      "timeout_seconds": 60
+    },
+    {
+      "id": "report",
+      "type": "file",
+      "required": true,
+      "path": "reports/20260909_公开来源优化建议.md",
+      "min_bytes": 1500,
+      "contains_all": [
+        "0.946",
+        "0.940",
+        "讨论",
+        "GitHub",
+        "NOT_RUN"
+      ]
+    },
+    {
+      "id": "git-remote",
+      "type": "git",
+      "required": true,
+      "repository": ".",
+      "require_commit": true,
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true,
+      "remote": "origin"
+    }
+  ]
+}
