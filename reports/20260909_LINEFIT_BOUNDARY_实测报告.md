@@ -31,9 +31,9 @@
 
 ## 普通运行与正式结果分离
 
-普通最近状态：`COMPLETE`，读取时间UTC `2026-09-09T04:27:39.697947+00:00`；输出验收：`True`。
+普通最近状态：`COMPLETE`，读取时间UTC `2026-09-09T07:27:22.790254+00:00`；输出验收：`True`。
 
-回收状态：`FORMAL_SCORE_PENDING`。普通运行结束后的固定Version、三个输入版本及13cell源码已核对。早前浏览器日志读取遇自动审批超时，API/输出下载另遇TLS连接错误，均保存历史回执。随后以固定Version输入页面及官方API完成身份核对，系统curl在TLS验证开启、无自动重试条件下回读10个小型审计文件，冻结collector完整执行通过。详见readback_interruption.json、fixed_version_ui_receipt.json及curl_collection_receipt.json。下载恢复没有触发Notebook重跑或改变候选。
+回收状态：`PARTIAL_SCORE_PENDING`。普通运行结束后的固定Version、三个输入版本及13cell源码已核对。早前浏览器日志读取遇自动审批超时，API/输出下载另遇TLS连接错误，均保存历史回执。随后以固定Version输入页面及官方API完成身份核对，系统curl在TLS验证开启、无自动重试条件下回读10个小型审计文件，冻结collector完整执行通过。详见readback_interruption.json、fixed_version_ui_receipt.json及curl_collection_receipt.json。下载恢复没有触发Notebook重跑或改变候选。
 
 普通自动后处理选择：`tight55`，完整实际配置保存在 ordinary_summary.json。正式隐藏运行的后处理选择、分项及Private Score仍为UNKNOWN，不能从普通输出推断。
 
@@ -41,7 +41,11 @@
 
 普通边界命中节点数：`408`；其中实际平滑：`406`；候选相对输入坐标位移总和/最大值：`319.69085400586386` / `3.799026191012641` µm。边界命中不等于最终坐标改变，此位移也不是与B0预测的差值。
 
-正式状态：`PENDING`；读取时间UTC：`2026-09-09T04:30:55.518611+00:00`；正式错误说明：``。只有准确绑定的submission为COMPLETE且有数值Public才判断收益；持平/下降也如实交付，不追加实验。
+正式状态：`PENDING`；读取时间UTC：`2026-09-09T07:27:22.790254+00:00`；正式错误说明：``。只有准确绑定的submission为COMPLETE且有数值Public才判断收益；持平/下降也如实交付，不追加实验。
+
+正式观察窗口按冻结合同为3小时，起点UTC `2026-09-09T04:27:07.384470+00:00`，计划截止UTC `2026-09-09T07:27:07.384470+00:00`；截止边界最后官方快照为UTC `2026-09-09T07:27:22.790254+00:00`，状态仍为 `PENDING`。最后请求因启动与网络耗时在计划截止后约15秒记录，不继续轮询。当前为 `PARTIAL_SCORE_PENDING`，未作完成声明，分数及两项差值均为null；没有创建自动后续任务或承诺后台完成。
+
+最终冻结验收：15/16项通过，状态`FAIL`。未通过项：one-formal-score。缺少正式终态分数时，这表示整体任务尚未验收通过，不表示已通过的20项合成测试失败。详见final_verification.json；成绩链独立状态见score_chain_verification.json。
 
 ## GitHub交付
 

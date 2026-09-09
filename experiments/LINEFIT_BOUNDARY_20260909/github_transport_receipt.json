@@ -1,0 +1,35 @@
+{
+  "task_id": "LINEFIT_BOUNDARY_20260909",
+  "purpose": "Task-scoped connection recovery",
+  "global_network_settings_modified": false,
+  "tls_verification_disabled": false,
+  "git_events": [
+    {
+      "operation": "push",
+      "transport": "HTTP/1.1 direct",
+      "status": "TLS_ERROR",
+      "readback_after": "remote main remained 8726631b21b238c3cf4befc847d8be86f20cef23"
+    },
+    {
+      "operation": "push",
+      "transport": "Existing local proxy, per-command setting",
+      "status": "FAST_FORWARD_CONFIRMED",
+      "commit": "363df2eb69cd53e8ae79c1a68cd151e908790182"
+    },
+    {
+      "operation": "fixed_commit_readback",
+      "attempt": 1,
+      "status": "TLS_ERROR"
+    },
+    {
+      "operation": "fixed_commit_readback",
+      "attempt": 2,
+      "status": "REMOTE_BYTES_VERIFIED",
+      "matched": 61,
+      "total": 61,
+      "at_utc": "2026-09-09T04:34:51.717296+00:00"
+    }
+  ],
+  "kaggle_writes": 0,
+  "write_scope_note": "GitHub pushes are authorized project writes; zero applies to Kaggle writes in this transport recovery."
+}

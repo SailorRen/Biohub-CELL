@@ -7,7 +7,7 @@
   "ordinary": {
     "verified": true,
     "last_status": "COMPLETE",
-    "observed_at_utc": "2026-09-09T04:27:39.697947+00:00"
+    "observed_at_utc": "2026-09-09T07:27:22.790254+00:00"
   },
   "remote_binding": {
     "verified": true,
@@ -36,7 +36,7 @@
     "description": "LINEFIT_BOUNDARY_20260909 | V1 | SV348415815 | SHA256 4271519ed44e28da93e89128fc6e39515f954e96b8c2d0a9b102c23f3e08f11b",
     "date_utc": "2026-09-09 04:27:08.340000",
     "error_description": "",
-    "observed_at_utc": "2026-09-09T04:30:55.518611+00:00"
+    "observed_at_utc": "2026-09-09T07:27:22.790254+00:00"
   },
   "new_training": "NOT_RUN",
   "actual_postprocess": {
@@ -210,7 +210,7 @@
     }
   },
   "formal_hidden_postprocess": "UNKNOWN",
-  "status": "FORMAL_SCORE_PENDING",
+  "status": "PARTIAL_SCORE_PENDING",
   "baseline_latest": {
     "id": 56091397,
     "date_utc": "2026-09-08 05:21:50.403000",
@@ -229,7 +229,7 @@
     "private_score": null,
     "error_description": ""
   },
-  "updated_at_utc": "2026-09-09T04:30:55.518611+00:00",
+  "updated_at_utc": "2026-09-09T07:28:19.032454+00:00",
   "source_sha256": "2476eae2ff6f95d79a18c8a1294e14e10e5309c61ec86872cbc4962687b852a5",
   "submitted_source_sha256": "4271519ed44e28da93e89128fc6e39515f954e96b8c2d0a9b102c23f3e08f11b",
   "readback_blocker": {
@@ -268,5 +268,28 @@
     "public_score": "0.946",
     "private_score": null,
     "error_description": ""
-  }
+  },
+  "formal_observation_window": {
+    "task_id": "LINEFIT_BOUNDARY_20260909",
+    "source": "Frozen contract scope.observation_bounds.formal_hours and durable submit ledger",
+    "formal_start_at_utc": "2026-09-09T04:27:07.384470+00:00",
+    "formal_observation_hours": 3,
+    "deadline_at_utc": "2026-09-09T07:27:07.384470+00:00",
+    "status": "ENDED_SCORE_PENDING",
+    "created_at_utc": "2026-09-09T07:18:19.007198+00:00",
+    "submission_id": 56113466,
+    "pending_policy": "If still pending at bounded observation end, save IDs/time/state and report PARTIAL; do not claim score/completion or promise background completion.",
+    "ended_recorded_at_utc": "2026-09-09T07:28:19.032454+00:00",
+    "last_official_observation_at_utc": "2026-09-09T07:27:22.790254+00:00",
+    "last_official_status": "PENDING",
+    "public_score": null,
+    "final_query_note": "One final authoritative snapshot at the observation boundary; recorded 15.4 seconds after the planned deadline due to query startup and network latency. No later Kaggle polls scheduled.",
+    "automatic_followup_created": false
+  },
+  "completion_claim": "NOT_MADE",
+  "remaining_required_work": [
+    "Exact formal submission 56113466 has no terminal COMPLETE score at observation cutoff."
+  ],
+  "delta_vs_B0": null,
+  "delta_vs_pre_submission_own_best": null
 }

@@ -1,0 +1,503 @@
+{
+  "task_id": "LINEFIT_BOUNDARY_20260909",
+  "observed_at_utc": "2026-09-09T04:34:51.717296+00:00",
+  "method": "Authoritative GitHub codeload fixed-commit archive + live ls-remote main",
+  "commit": "363df2eb69cd53e8ae79c1a68cd151e908790182",
+  "live_remote_main": "363df2eb69cd53e8ae79c1a68cd151e908790182",
+  "worktree_clean": true,
+  "archive_sha256": "a90ffa7ac36a7bc762c65ce12c4ca272c19d17e838dea33e84a682248cdcccf7",
+  "archive_url": "https://codeload.github.com/SailorRen/Biohub-CELL/zip/363df2eb69cd53e8ae79c1a68cd151e908790182",
+  "matched": 61,
+  "total": 61,
+  "files": [
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/algorithm.diff",
+      "bytes": 2227,
+      "local_sha256": "a911be1d6918cb487b13dc95b2337bee69f0da8b34ac5e383c2559f288804675",
+      "remote_sha256": "a911be1d6918cb487b13dc95b2337bee69f0da8b34ac5e383c2559f288804675",
+      "fixed_commit_sha256": "a911be1d6918cb487b13dc95b2337bee69f0da8b34ac5e383c2559f288804675",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/bind_version.py",
+      "bytes": 2456,
+      "local_sha256": "8d98cbe12bf0cec262d24d73ed09523e6496ac1a1b23876281c5e85c7aab8376",
+      "remote_sha256": "8d98cbe12bf0cec262d24d73ed09523e6496ac1a1b23876281c5e85c7aab8376",
+      "fixed_commit_sha256": "8d98cbe12bf0cec262d24d73ed09523e6496ac1a1b23876281c5e85c7aab8376",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/browser_formal_observations.jsonl",
+      "bytes": 641,
+      "local_sha256": "3d1ec347808de1942779c64694ea65f3a994ae529a09e562b265f0b964f8736c",
+      "remote_sha256": "3d1ec347808de1942779c64694ea65f3a994ae529a09e562b265f0b964f8736c",
+      "fixed_commit_sha256": "3d1ec347808de1942779c64694ea65f3a994ae529a09e562b265f0b964f8736c",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/browser_observations.json",
+      "bytes": 651,
+      "local_sha256": "113f8615036eb111a262d4d94017d39c3a6cea9d4024bdf791a92e9d78f4bbfa",
+      "remote_sha256": "113f8615036eb111a262d4d94017d39c3a6cea9d4024bdf791a92e9d78f4bbfa",
+      "fixed_commit_sha256": "113f8615036eb111a262d4d94017d39c3a6cea9d4024bdf791a92e9d78f4bbfa",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/browser_pre_submit_receipt.json",
+      "bytes": 885,
+      "local_sha256": "adbfe2d00677da718754e41bbe7c7b964c6a84cb9c9c45091ef32200416fc3b1",
+      "remote_sha256": "adbfe2d00677da718754e41bbe7c7b964c6a84cb9c9c45091ef32200416fc3b1",
+      "fixed_commit_sha256": "adbfe2d00677da718754e41bbe7c7b964c6a84cb9c9c45091ef32200416fc3b1",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/browser_run_observations.jsonl",
+      "bytes": 1358,
+      "local_sha256": "e15b8f70da6c5af167cbe64eb6d47b6995095d45eaf8ea228d508d1f8c1ce9d3",
+      "remote_sha256": "e15b8f70da6c5af167cbe64eb6d47b6995095d45eaf8ea228d508d1f8c1ce9d3",
+      "fixed_commit_sha256": "e15b8f70da6c5af167cbe64eb6d47b6995095d45eaf8ea228d508d1f8c1ce9d3",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/build_candidate.py",
+      "bytes": 4235,
+      "local_sha256": "db815cd3a29cad9923a9cede6ae9fe8cbb5bef8d394fed0cbc1e030a4c53c82b",
+      "remote_sha256": "db815cd3a29cad9923a9cede6ae9fe8cbb5bef8d394fed0cbc1e030a4c53c82b",
+      "fixed_commit_sha256": "db815cd3a29cad9923a9cede6ae9fe8cbb5bef8d394fed0cbc1e030a4c53c82b",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/build_receipt.json",
+      "bytes": 4802,
+      "local_sha256": "a9d669318205fc970128f37490ba8ef38d028a399c38a866b33ef76e0cd30263",
+      "remote_sha256": "a9d669318205fc970128f37490ba8ef38d028a399c38a866b33ef76e0cd30263",
+      "fixed_commit_sha256": "a9d669318205fc970128f37490ba8ef38d028a399c38a866b33ef76e0cd30263",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/candidate.ipynb",
+      "bytes": 257509,
+      "local_sha256": "2476eae2ff6f95d79a18c8a1294e14e10e5309c61ec86872cbc4962687b852a5",
+      "remote_sha256": "2476eae2ff6f95d79a18c8a1294e14e10e5309c61ec86872cbc4962687b852a5",
+      "fixed_commit_sha256": "2476eae2ff6f95d79a18c8a1294e14e10e5309c61ec86872cbc4962687b852a5",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/collect_curl_recovery.py",
+      "bytes": 3540,
+      "local_sha256": "97f1f2502c230203a8e999c28d6d98621b9d3d9a227cf22c0dedd9990efd8788",
+      "remote_sha256": "97f1f2502c230203a8e999c28d6d98621b9d3d9a227cf22c0dedd9990efd8788",
+      "fixed_commit_sha256": "97f1f2502c230203a8e999c28d6d98621b9d3d9a227cf22c0dedd9990efd8788",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/collect_output.py",
+      "bytes": 4787,
+      "local_sha256": "47a52b5fc878ba55cdf82fba155bb0faf0c8dfaf3bd4bee0010f9eef86a78729",
+      "remote_sha256": "47a52b5fc878ba55cdf82fba155bb0faf0c8dfaf3bd4bee0010f9eef86a78729",
+      "fixed_commit_sha256": "47a52b5fc878ba55cdf82fba155bb0faf0c8dfaf3bd4bee0010f9eef86a78729",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/collect_readonly.py",
+      "bytes": 1826,
+      "local_sha256": "5e08f081d9636786e49fca7526b64efe7f033061481b4cbe59abfecd22dfd713",
+      "remote_sha256": "5e08f081d9636786e49fca7526b64efe7f033061481b4cbe59abfecd22dfd713",
+      "fixed_commit_sha256": "5e08f081d9636786e49fca7526b64efe7f033061481b4cbe59abfecd22dfd713",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/collection_read_receipt.json",
+      "bytes": 921,
+      "local_sha256": "33e92d835250cf7491c2434a397ba5bd7a532e18dba9a1b66a2cb01ed70e0871",
+      "remote_sha256": "33e92d835250cf7491c2434a397ba5bd7a532e18dba9a1b66a2cb01ed70e0871",
+      "fixed_commit_sha256": "33e92d835250cf7491c2434a397ba5bd7a532e18dba9a1b66a2cb01ed70e0871",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/curl_collection_receipt.json",
+      "bytes": 3388,
+      "local_sha256": "b9ed12108e4b2a6ddebbd262b8e8d1eaef7e780a657a6102e9b64c6fbb8be9f3",
+      "remote_sha256": "b9ed12108e4b2a6ddebbd262b8e8d1eaef7e780a657a6102e9b64c6fbb8be9f3",
+      "fixed_commit_sha256": "b9ed12108e4b2a6ddebbd262b8e8d1eaef7e780a657a6102e9b64c6fbb8be9f3",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/error_20260909T022609Z.json",
+      "bytes": 192,
+      "local_sha256": "af39561a05e8ad4c6ca40bae1cd450d3945149f2634afbd62ff231d1af8b62a6",
+      "remote_sha256": "af39561a05e8ad4c6ca40bae1cd450d3945149f2634afbd62ff231d1af8b62a6",
+      "fixed_commit_sha256": "af39561a05e8ad4c6ca40bae1cd450d3945149f2634afbd62ff231d1af8b62a6",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/fixed_version_ui_receipt.json",
+      "bytes": 1550,
+      "local_sha256": "7285060a677e16739fce32d1583d08c487492c09cddd5dc7e7f4ae0eed444bd1",
+      "remote_sha256": "7285060a677e16739fce32d1583d08c487492c09cddd5dc7e7f4ae0eed444bd1",
+      "fixed_commit_sha256": "7285060a677e16739fce32d1583d08c487492c09cddd5dc7e7f4ae0eed444bd1",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/formal_observations.jsonl",
+      "bytes": 692,
+      "local_sha256": "1eed6173c83da3376255d813d7e5a8eb5c9475e5353a3bd887e627714e7d8e11",
+      "remote_sha256": "1eed6173c83da3376255d813d7e5a8eb5c9475e5353a3bd887e627714e7d8e11",
+      "fixed_commit_sha256": "1eed6173c83da3376255d813d7e5a8eb5c9475e5353a3bd887e627714e7d8e11",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/independent_ordinary_partial.json",
+      "bytes": 10550,
+      "local_sha256": "58de57dab59e9473dbd742f184b729e6efc1659c9d5dfbd9073b932c9967c748",
+      "remote_sha256": "58de57dab59e9473dbd742f184b729e6efc1659c9d5dfbd9073b932c9967c748",
+      "fixed_commit_sha256": "58de57dab59e9473dbd742f184b729e6efc1659c9d5dfbd9073b932c9967c748",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/independent_ordinary_verification.json",
+      "bytes": 14084,
+      "local_sha256": "1846df090a7ca4c40dd2812a533d738ed44112ba942aa9dbb9ee036494b43aea",
+      "remote_sha256": "1846df090a7ca4c40dd2812a533d738ed44112ba942aa9dbb9ee036494b43aea",
+      "fixed_commit_sha256": "1846df090a7ca4c40dd2812a533d738ed44112ba942aa9dbb9ee036494b43aea",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/independent_preflight.json",
+      "bytes": 11360,
+      "local_sha256": "0120869e357e39cac022163d6347951af4a09fdb9bc691ac31668b66e53ad75a",
+      "remote_sha256": "0120869e357e39cac022163d6347951af4a09fdb9bc691ac31668b66e53ad75a",
+      "fixed_commit_sha256": "0120869e357e39cac022163d6347951af4a09fdb9bc691ac31668b66e53ad75a",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/kaggle_io.py",
+      "bytes": 14789,
+      "local_sha256": "ebbee458e1dcb9e71892ea4d7aed3042432ac7492e4939b7b22ec457305bc289",
+      "remote_sha256": "ebbee458e1dcb9e71892ea4d7aed3042432ac7492e4939b7b22ec457305bc289",
+      "fixed_commit_sha256": "ebbee458e1dcb9e71892ea4d7aed3042432ac7492e4939b7b22ec457305bc289",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/kernel-metadata.json",
+      "bytes": 822,
+      "local_sha256": "5f457b08159866f7f12ba951a34847b3cdce2987a685360d5fef05d85de0d611",
+      "remote_sha256": "5f457b08159866f7f12ba951a34847b3cdce2987a685360d5fef05d85de0d611",
+      "fixed_commit_sha256": "5f457b08159866f7f12ba951a34847b3cdce2987a685360d5fef05d85de0d611",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/linefit_patch.py",
+      "bytes": 5582,
+      "local_sha256": "97ea8b0d1bda9a694b91b82cb55d4c2f2ddcd0e1d8df171b2e3dc6e3d2fe0451",
+      "remote_sha256": "97ea8b0d1bda9a694b91b82cb55d4c2f2ddcd0e1d8df171b2e3dc6e3d2fe0451",
+      "fixed_commit_sha256": "97ea8b0d1bda9a694b91b82cb55d4c2f2ddcd0e1d8df171b2e3dc6e3d2fe0451",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/manifest.json",
+      "bytes": 4424,
+      "local_sha256": "eb45073c9ab58005c603353d59782b4d6c879b03027c15e27bd91573279cbdda",
+      "remote_sha256": "eb45073c9ab58005c603353d59782b4d6c879b03027c15e27bd91573279cbdda",
+      "fixed_commit_sha256": "eb45073c9ab58005c603353d59782b4d6c879b03027c15e27bd91573279cbdda",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/observe_formal_once.py",
+      "bytes": 2356,
+      "local_sha256": "ccad97ebebcae9ce75170bb761228852299f63e11ae5106c619d215f967d5b3f",
+      "remote_sha256": "ccad97ebebcae9ce75170bb761228852299f63e11ae5106c619d215f967d5b3f",
+      "fixed_commit_sha256": "ccad97ebebcae9ce75170bb761228852299f63e11ae5106c619d215f967d5b3f",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/observe_once.py",
+      "bytes": 1795,
+      "local_sha256": "a71ee04fb549c5dad9977a3bf416926018e299d1a7d91a72a4bccb446c8adf3a",
+      "remote_sha256": "a71ee04fb549c5dad9977a3bf416926018e299d1a7d91a72a4bccb446c8adf3a",
+      "fixed_commit_sha256": "a71ee04fb549c5dad9977a3bf416926018e299d1a7d91a72a4bccb446c8adf3a",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/ordinary_audit.json",
+      "bytes": 16735,
+      "local_sha256": "c481ab2914744c2421a18fc610afe327b60d8cfdc517cae22111a8fce5c2d8d5",
+      "remote_sha256": "c481ab2914744c2421a18fc610afe327b60d8cfdc517cae22111a8fce5c2d8d5",
+      "fixed_commit_sha256": "c481ab2914744c2421a18fc610afe327b60d8cfdc517cae22111a8fce5c2d8d5",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/ordinary_observations.jsonl",
+      "bytes": 1308,
+      "local_sha256": "5c0c23503f042355e5fa11bb8bb05028171691932bd18a5fa8c9097595189753",
+      "remote_sha256": "5c0c23503f042355e5fa11bb8bb05028171691932bd18a5fa8c9097595189753",
+      "fixed_commit_sha256": "5c0c23503f042355e5fa11bb8bb05028171691932bd18a5fa8c9097595189753",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/ordinary_summary.json",
+      "bytes": 24189,
+      "local_sha256": "22b890d2cf7583529003d8efaf03481409e4975022c4ff0b0aa378d03f4fce5d",
+      "remote_sha256": "22b890d2cf7583529003d8efaf03481409e4975022c4ff0b0aa378d03f4fce5d",
+      "fixed_commit_sha256": "22b890d2cf7583529003d8efaf03481409e4975022c4ff0b0aa378d03f4fce5d",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/post_submit_local_verification.json",
+      "bytes": 1423,
+      "local_sha256": "721450b037f12d1e8d4609e66eeb9144544828646ed640d78b1e38451fd17bf3",
+      "remote_sha256": "721450b037f12d1e8d4609e66eeb9144544828646ed640d78b1e38451fd17bf3",
+      "fixed_commit_sha256": "721450b037f12d1e8d4609e66eeb9144544828646ed640d78b1e38451fd17bf3",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/ppsweep_results.csv",
+      "bytes": 1399,
+      "local_sha256": "281ca967bec5187cee9a72518a8af28ea646821e13cb4cf2b2227d1b7668ecd2",
+      "remote_sha256": "281ca967bec5187cee9a72518a8af28ea646821e13cb4cf2b2227d1b7668ecd2",
+      "fixed_commit_sha256": "281ca967bec5187cee9a72518a8af28ea646821e13cb4cf2b2227d1b7668ecd2",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/ppsweep_selected.json",
+      "bytes": 353,
+      "local_sha256": "5f6fe577421f72dbf374b02387a0006b58508f2943e2e42c36caf3001691a8b5",
+      "remote_sha256": "5f6fe577421f72dbf374b02387a0006b58508f2943e2e42c36caf3001691a8b5",
+      "fixed_commit_sha256": "5f6fe577421f72dbf374b02387a0006b58508f2943e2e42c36caf3001691a8b5",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/pre_save.json",
+      "bytes": 6698,
+      "local_sha256": "20bfd9ca8bd19b1c1d8a33de3f0dc0e37290bb67f33c8a96448d32d0c326a861",
+      "remote_sha256": "20bfd9ca8bd19b1c1d8a33de3f0dc0e37290bb67f33c8a96448d32d0c326a861",
+      "fixed_commit_sha256": "20bfd9ca8bd19b1c1d8a33de3f0dc0e37290bb67f33c8a96448d32d0c326a861",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/pre_submit.json",
+      "bytes": 8265,
+      "local_sha256": "10246a78e45db1e343cd899709bd09201df09d6424b501b9a9e8f3fd11493568",
+      "remote_sha256": "10246a78e45db1e343cd899709bd09201df09d6424b501b9a9e8f3fd11493568",
+      "fixed_commit_sha256": "10246a78e45db1e343cd899709bd09201df09d6424b501b9a9e8f3fd11493568",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/preflight_verification.json",
+      "bytes": 1423,
+      "local_sha256": "721450b037f12d1e8d4609e66eeb9144544828646ed640d78b1e38451fd17bf3",
+      "remote_sha256": "721450b037f12d1e8d4609e66eeb9144544828646ed640d78b1e38451fd17bf3",
+      "fixed_commit_sha256": "721450b037f12d1e8d4609e66eeb9144544828646ed640d78b1e38451fd17bf3",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/production_graph_availability.json",
+      "bytes": 18528,
+      "local_sha256": "8dc6ab3ded65c9680718e0d71afab9090e92542ee79c6bdcf33697f0dcd0197e",
+      "remote_sha256": "8dc6ab3ded65c9680718e0d71afab9090e92542ee79c6bdcf33697f0dcd0197e",
+      "fixed_commit_sha256": "8dc6ab3ded65c9680718e0d71afab9090e92542ee79c6bdcf33697f0dcd0197e",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/public946_expanded_patch_receipt.json",
+      "bytes": 1486,
+      "local_sha256": "51c22155da6ca1cd3f5e6dfaf4e10babf90f418c78ebfcee2546f354f6d82936",
+      "remote_sha256": "51c22155da6ca1cd3f5e6dfaf4e10babf90f418c78ebfcee2546f354f6d82936",
+      "fixed_commit_sha256": "51c22155da6ca1cd3f5e6dfaf4e10babf90f418c78ebfcee2546f354f6d82936",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/read_20260909T022140Z.json",
+      "bytes": 6698,
+      "local_sha256": "5a2959cdf2fdd095c085021d2081be2edeece4c3f66824ecdb96882baa001e21",
+      "remote_sha256": "5a2959cdf2fdd095c085021d2081be2edeece4c3f66824ecdb96882baa001e21",
+      "fixed_commit_sha256": "5a2959cdf2fdd095c085021d2081be2edeece4c3f66824ecdb96882baa001e21",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/read_20260909T022823Z.json",
+      "bytes": 6698,
+      "local_sha256": "23996213e7730d878c1c34ae7a9f01830190d5163866addd6551980e4a1b0a71",
+      "remote_sha256": "23996213e7730d878c1c34ae7a9f01830190d5163866addd6551980e4a1b0a71",
+      "fixed_commit_sha256": "23996213e7730d878c1c34ae7a9f01830190d5163866addd6551980e4a1b0a71",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/read_20260909T023332Z.json",
+      "bytes": 8264,
+      "local_sha256": "337ddd684b150c143e63c5a8d6c3d82732be8d71d610f038916acd6360d58998",
+      "remote_sha256": "337ddd684b150c143e63c5a8d6c3d82732be8d71d610f038916acd6360d58998",
+      "fixed_commit_sha256": "337ddd684b150c143e63c5a8d6c3d82732be8d71d610f038916acd6360d58998",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/read_20260909T040845Z.json",
+      "bytes": 8265,
+      "local_sha256": "1d28c39ef27f15d5f9ddc256365b3f6a42244ab376c71faebabcf35ad9564598",
+      "remote_sha256": "1d28c39ef27f15d5f9ddc256365b3f6a42244ab376c71faebabcf35ad9564598",
+      "fixed_commit_sha256": "1d28c39ef27f15d5f9ddc256365b3f6a42244ab376c71faebabcf35ad9564598",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/read_20260909T042748Z.json",
+      "bytes": 8605,
+      "local_sha256": "6bf9456e79bf1fad69ee5a2b5ff249da85e5a59b73ed05e388069e56e91c3c92",
+      "remote_sha256": "6bf9456e79bf1fad69ee5a2b5ff249da85e5a59b73ed05e388069e56e91c3c92",
+      "fixed_commit_sha256": "6bf9456e79bf1fad69ee5a2b5ff249da85e5a59b73ed05e388069e56e91c3c92",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/readback_interruption.json",
+      "bytes": 1318,
+      "local_sha256": "72401e8fbb4e0144af33d18c4ed5329273de2280e9fd79e9db0bd294c92bced3",
+      "remote_sha256": "72401e8fbb4e0144af33d18c4ed5329273de2280e9fd79e9db0bd294c92bced3",
+      "fixed_commit_sha256": "72401e8fbb4e0144af33d18c4ed5329273de2280e9fd79e9db0bd294c92bced3",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/recovery_transport_verification.json",
+      "bytes": 34756,
+      "local_sha256": "6ad2cb8b46c0c12a378f82916d6e497b532a25c511f568500338c5dd06bd15a4",
+      "remote_sha256": "6ad2cb8b46c0c12a378f82916d6e497b532a25c511f568500338c5dd06bd15a4",
+      "fixed_commit_sha256": "6ad2cb8b46c0c12a378f82916d6e497b532a25c511f568500338c5dd06bd15a4",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/render_report.py",
+      "bytes": 9119,
+      "local_sha256": "db1ad1f28d13422f3704524b5ae098986d9362abec720c30e8ef89aab8207e88",
+      "remote_sha256": "db1ad1f28d13422f3704524b5ae098986d9362abec720c30e8ef89aab8207e88",
+      "fixed_commit_sha256": "db1ad1f28d13422f3704524b5ae098986d9362abec720c30e8ef89aab8207e88",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/results.json",
+      "bytes": 10761,
+      "local_sha256": "d3f07a7a294c43527d9e2bbbb6c02acd40735a280fa5c63a39c2d3c1194430c2",
+      "remote_sha256": "d3f07a7a294c43527d9e2bbbb6c02acd40735a280fa5c63a39c2d3c1194430c2",
+      "fixed_commit_sha256": "d3f07a7a294c43527d9e2bbbb6c02acd40735a280fa5c63a39c2d3c1194430c2",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/run_stats.csv",
+      "bytes": 3472,
+      "local_sha256": "354b5a479979a1fb1b5649bb0ea68a9b1b0a3358a457d21ebb025a56495a2c67",
+      "remote_sha256": "354b5a479979a1fb1b5649bb0ea68a9b1b0a3358a457d21ebb025a56495a2c67",
+      "fixed_commit_sha256": "354b5a479979a1fb1b5649bb0ea68a9b1b0a3358a457d21ebb025a56495a2c67",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/save_reconciliation.json",
+      "bytes": 2488,
+      "local_sha256": "3273bebae386573578cb430d1ecce463ac19578e764f578be96afdc97fbf1234",
+      "remote_sha256": "3273bebae386573578cb430d1ecce463ac19578e764f578be96afdc97fbf1234",
+      "fixed_commit_sha256": "3273bebae386573578cb430d1ecce463ac19578e764f578be96afdc97fbf1234",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/scorer_diagnostic.json",
+      "bytes": 34989,
+      "local_sha256": "cb66992d3b268068ad011d32db16dd6c6c5ceea061a4b4334258a6ad269e8c77",
+      "remote_sha256": "cb66992d3b268068ad011d32db16dd6c6c5ceea061a4b4334258a6ad269e8c77",
+      "fixed_commit_sha256": "cb66992d3b268068ad011d32db16dd6c6c5ceea061a4b4334258a6ad269e8c77",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/scorer_diagnostic.md",
+      "bytes": 4090,
+      "local_sha256": "1a0480414941d29249ed2065680a417d7c215d0bfaaffbd26f0d65a179ef5cb2",
+      "remote_sha256": "1a0480414941d29249ed2065680a417d7c215d0bfaaffbd26f0d65a179ef5cb2",
+      "fixed_commit_sha256": "1a0480414941d29249ed2065680a417d7c215d0bfaaffbd26f0d65a179ef5cb2",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/scorer_diagnostic.py",
+      "bytes": 23316,
+      "local_sha256": "e2a46eab2f106be3dbd58473b065b38d0ddc1e6eff25f90cbe05d71eaf3041d5",
+      "remote_sha256": "e2a46eab2f106be3dbd58473b065b38d0ddc1e6eff25f90cbe05d71eaf3041d5",
+      "fixed_commit_sha256": "e2a46eab2f106be3dbd58473b065b38d0ddc1e6eff25f90cbe05d71eaf3041d5",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/test_linefit.py",
+      "bytes": 12483,
+      "local_sha256": "d90c7c5ac27500e6be40285ea08bdfb0dc22bd233fb91721d0726c5b3b4f8660",
+      "remote_sha256": "d90c7c5ac27500e6be40285ea08bdfb0dc22bd233fb91721d0726c5b3b4f8660",
+      "fixed_commit_sha256": "d90c7c5ac27500e6be40285ea08bdfb0dc22bd233fb91721d0726c5b3b4f8660",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/tests.json",
+      "bytes": 7356,
+      "local_sha256": "2ab191b018398a708566e046aba490d83e6bf0d12dfb9a1bb492b450cbed0e2a",
+      "remote_sha256": "2ab191b018398a708566e046aba490d83e6bf0d12dfb9a1bb492b450cbed0e2a",
+      "fixed_commit_sha256": "2ab191b018398a708566e046aba490d83e6bf0d12dfb9a1bb492b450cbed0e2a",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/validator_results.csv",
+      "bytes": 7809,
+      "local_sha256": "9d28929631425afb5c4dc2595670ccb2f12e342360bd0ffce45e5837416a0ec0",
+      "remote_sha256": "9d28929631425afb5c4dc2595670ccb2f12e342360bd0ffce45e5837416a0ec0",
+      "fixed_commit_sha256": "9d28929631425afb5c4dc2595670ccb2f12e342360bd0ffce45e5837416a0ec0",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/verify.py",
+      "bytes": 5465,
+      "local_sha256": "541afbe214d07a3fd08a45d05be647cdbd09e4f8cca9bd46189ee45eae795c66",
+      "remote_sha256": "541afbe214d07a3fd08a45d05be647cdbd09e4f8cca9bd46189ee45eae795c66",
+      "fixed_commit_sha256": "541afbe214d07a3fd08a45d05be647cdbd09e4f8cca9bd46189ee45eae795c66",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/verify_remote.py",
+      "bytes": 3024,
+      "local_sha256": "37867a0599e17c20e13eb95124c5d2a31e86280551a6c42e0b062c833a8cbb9d",
+      "remote_sha256": "37867a0599e17c20e13eb95124c5d2a31e86280551a6c42e0b062c833a8cbb9d",
+      "fixed_commit_sha256": "37867a0599e17c20e13eb95124c5d2a31e86280551a6c42e0b062c833a8cbb9d",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/verify_score_chain.py",
+      "bytes": 15182,
+      "local_sha256": "a6c2c3ecda51bcd4fc2475e1568b36e9d13e2aa640f404addca3eae4f2172ee4",
+      "remote_sha256": "a6c2c3ecda51bcd4fc2475e1568b36e9d13e2aa640f404addca3eae4f2172ee4",
+      "fixed_commit_sha256": "a6c2c3ecda51bcd4fc2475e1568b36e9d13e2aa640f404addca3eae4f2172ee4",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/verify_score_chain_mock_tests.json",
+      "bytes": 1923,
+      "local_sha256": "c76954dfab512d16e3277beafcafca4cb191b1393279bfd1f8fb067b211400d2",
+      "remote_sha256": "c76954dfab512d16e3277beafcafca4cb191b1393279bfd1f8fb067b211400d2",
+      "fixed_commit_sha256": "c76954dfab512d16e3277beafcafca4cb191b1393279bfd1f8fb067b211400d2",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/write_ledger.json",
+      "bytes": 2258,
+      "local_sha256": "248e7607c28e363873aa13bb7df84cca573496a9dceab2555bfe4b85463fce13",
+      "remote_sha256": "248e7607c28e363873aa13bb7df84cca573496a9dceab2555bfe4b85463fce13",
+      "fixed_commit_sha256": "248e7607c28e363873aa13bb7df84cca573496a9dceab2555bfe4b85463fce13",
+      "match": true
+    },
+    {
+      "path": "reports/20260909_LINEFIT_BOUNDARY_实测报告.md",
+      "bytes": 6889,
+      "local_sha256": "3da06c1905cc33658361e81fad8528ff746deee77870e9c4f621443456832f66",
+      "remote_sha256": "3da06c1905cc33658361e81fad8528ff746deee77870e9c4f621443456832f66",
+      "fixed_commit_sha256": "3da06c1905cc33658361e81fad8528ff746deee77870e9c4f621443456832f66",
+      "match": true
+    },
+    {
+      "path": "tasks/CODEX_20260909_BIOHUB_LINEFIT_BOUNDARY_CONTRACT.json",
+      "bytes": 3299,
+      "local_sha256": "38ef065b940817d544c3d75de505f955473583a1f9dbf6a7a01019af5fb97bfd",
+      "remote_sha256": "38ef065b940817d544c3d75de505f955473583a1f9dbf6a7a01019af5fb97bfd",
+      "fixed_commit_sha256": "38ef065b940817d544c3d75de505f955473583a1f9dbf6a7a01019af5fb97bfd",
+      "match": true
+    }
+  ],
+  "status": "REMOTE_BYTES_VERIFIED"
+}

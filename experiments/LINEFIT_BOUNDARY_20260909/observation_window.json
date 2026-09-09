@@ -1,0 +1,17 @@
+{
+  "task_id": "LINEFIT_BOUNDARY_20260909",
+  "source": "Frozen contract scope.observation_bounds.formal_hours and durable submit ledger",
+  "formal_start_at_utc": "2026-09-09T04:27:07.384470+00:00",
+  "formal_observation_hours": 3,
+  "deadline_at_utc": "2026-09-09T07:27:07.384470+00:00",
+  "status": "ENDED_SCORE_PENDING",
+  "created_at_utc": "2026-09-09T07:18:19.007198+00:00",
+  "submission_id": 56113466,
+  "pending_policy": "If still pending at bounded observation end, save IDs/time/state and report PARTIAL; do not claim score/completion or promise background completion.",
+  "ended_recorded_at_utc": "2026-09-09T07:28:19.032454+00:00",
+  "last_official_observation_at_utc": "2026-09-09T07:27:22.790254+00:00",
+  "last_official_status": "PENDING",
+  "public_score": null,
+  "final_query_note": "One final authoritative snapshot at the observation boundary; recorded 15.4 seconds after the planned deadline due to query startup and network latency. No later Kaggle polls scheduled.",
+  "automatic_followup_created": false
+}

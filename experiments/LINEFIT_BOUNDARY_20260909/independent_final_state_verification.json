@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "task_id": "LINEFIT_BOUNDARY_20260909",
+  "reviewer": "independent_public_notebook_research_agent",
+  "observed_at_utc": "2026-09-09T07:31:07.273680+00:00",
+  "classification": "MEASURED",
+  "status": "INDEPENDENT_FINAL_PENDING_STATE_VERIFIED",
+  "task_completion_status": "PARTIAL_SCORE_PENDING",
+  "completion_verified": false,
+  "scope": "截止阶段仅检查本地已保存官方快照、一次写账本、冻结哈希、状态及报告全文。未重新查询 Kaggle，未执行模型、测试或新实验；本回执只验证未完成状态表述和现有证据一致。",
+  "checks_total": 29,
+  "checks_passed": 29,
+  "checks": [
+    {
+      "id": "frozen_contract_manifest_and_19_files_unchanged",
+      "passed": true
+    },
+    {
+      "id": "one_notebook_save_and_one_formal_request_only",
+      "passed": true
+    },
+    {
+      "id": "zero_write_retry_redirect_and_one_transport_send_each",
+      "passed": true
+    },
+    {
+      "id": "all_write_manifest_and_wire_hashes_match_frozen_source",
+      "passed": true
+    },
+    {
+      "id": "save_response_V1_kernel_and_readonly_reconciliation_preserved",
+      "passed": true
+    },
+    {
+      "id": "submit_response_ID_equals_results_and_exact_official_row",
+      "passed": true
+    },
+    {
+      "id": "exact_V1_SV_and_description_match_across_submit_state_snapshot",
+      "passed": true
+    },
+    {
+      "id": "latest_candidate_kernel_matches_fixed_object_and_cell_hashes",
+      "passed": true
+    },
+    {
+      "id": "fixed_input_binding_and_UI_receipt_hash_still_valid",
+      "passed": true
+    },
+    {
+      "id": "pre_submit_quota_sufficient_and_same_own_best_preserved",
+      "passed": true
+    },
+    {
+      "id": "selected_cutoff_snapshot_is_latest_available_complete_official_read",
+      "passed": true
+    },
+    {
+      "id": "formal_PENDING_null_in_cutoff_snapshot_and_state",
+      "passed": true
+    },
+    {
+      "id": "only_one_task_description_in_complete_cutoff_submission_list",
+      "passed": true
+    },
+    {
+      "id": "simultaneous_B0_formal_COMPLETE_0946_identity_preserved",
+      "passed": true
+    },
+    {
+      "id": "simultaneous_current_own_best_0946_preserved",
+      "passed": true
+    },
+    {
+      "id": "three_hour_observation_deadline_derived_from_unique_submit",
+      "passed": true
+    },
+    {
+      "id": "observation_end_pending_and_last_read_time_consistent",
+      "passed": true
+    },
+    {
+      "id": "partial_state_no_completion_or_performance_claim",
+      "passed": true
+    },
+    {
+      "id": "ordinary_COMPLETE_and_formal_PENDING_explicitly_separate",
+      "passed": true
+    },
+    {
+      "id": "frozen_final_verifier_failed_only_missing_formal_terminal_score",
+      "passed": true
+    },
+    {
+      "id": "score_chain_waiting_never_real_PASS",
+      "passed": true
+    },
+    {
+      "id": "score_chain_receipt_bound_to_current_artifacts",
+      "passed": true
+    },
+    {
+      "id": "report_opens_with_task_incomplete_and_no_gain_determined",
+      "passed": true
+    },
+    {
+      "id": "report_exact_candidate_submission_V1_SV_source_and_null_score",
+      "passed": true
+    },
+    {
+      "id": "report_both_score_deltas_UNKNOWN_and_no_hidden_PP_inference",
+      "passed": true
+    },
+    {
+      "id": "report_explicit_cutoff_partial_and_no_background_promise",
+      "passed": true
+    },
+    {
+      "id": "report_supplementary_ordinary_review_timestamp_not_backdated",
+      "passed": true
+    },
+    {
+      "id": "report_does_not_self_certify_GitHub_delivery",
+      "passed": true
+    },
+    {
+      "id": "observation_window_has_no_automatic_followup",
+      "passed": true
+    }
+  ],
+  "identity": {
+    "ref": "sailorren/biohub-946-linefit-boundary-20260909",
+    "kernel_id": 133664101,
+    "version": 1,
+    "script_version_id": 348415815,
+    "submission_id": 56113466,
+    "candidate_notebook_sha256": "2476eae2ff6f95d79a18c8a1294e14e10e5309c61ec86872cbc4962687b852a5",
+    "submitted_source_sha256": "4271519ed44e28da93e89128fc6e39515f954e96b8c2d0a9b102c23f3e08f11b"
+  },
+  "actual_write_budget": {
+    "new_notebooks": 1,
+    "save_requests": 1,
+    "formal_submission_requests": 1,
+    "save_transport_sends": 1,
+    "formal_transport_sends": 1,
+    "repair_requests": 0,
+    "write_retries": 0,
+    "scope": "本任务一次写账本及完整快照，仅此候选"
+  },
+  "cutoff": {
+    "planned_deadline_at_utc": "2026-09-09T07:27:07.384470+00:00",
+    "last_official_observation_at_utc": "2026-09-09T07:27:22.790254+00:00",
+    "last_official_observation_at_shanghai": "2026-09-09T15:27:22.790254+08:00",
+    "observation_recorded_after_planned_deadline_seconds": 15.405784,
+    "formal_status": "PENDING",
+    "formal_public_score": null,
+    "formal_private_score": null,
+    "B0_submission_id": 56091397,
+    "B0_public_score": "0.946",
+    "pre_submission_own_best_public_score": "0.946",
+    "delta_vs_B0": null,
+    "delta_vs_pre_submission_own_best": null
+  },
+  "frozen_final_verifier": {
+    "status": "FAIL",
+    "passed": 15,
+    "total": 16,
+    "failed_checks": [
+      "one-formal-score"
+    ]
+  },
+  "score_chain_status": "WAITING_FORMAL_TERMINAL_SCORE",
+  "report_manual_full_read": {
+    "path": "reports/20260909_LINEFIT_BOUNDARY_实测报告.md",
+    "sha256": "7ddff9fd056a2a2ba87de89211fed2bf06f80aa0a87148dab278b2887c4df204",
+    "finding": "全文明确未取得正式终态、本任务未完成、收益 UNKNOWN；未把普通 COMPLETE 或独立验收 PASS 当成绩，未宣称当前远端交付完成。"
+  },
+  "required_work_not_completed": [
+    "精确正式 submission 56113466 尚无 COMPLETE 数值成绩，因而不能计算收益或通过任务完成验收。"
+  ],
+  "GitHub_delivery_review": "NOT_REVIEWED — 根代理后续固定提交和权威远端回读单独举证；本回执不证明远端同步。",
+  "evidence_bindings": [
+    {
+      "path": "tasks/CODEX_20260909_BIOHUB_LINEFIT_BOUNDARY_CONTRACT.json",
+      "sha256": "38ef065b940817d544c3d75de505f955473583a1f9dbf6a7a01019af5fb97bfd",
+      "bytes": 3299
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/manifest.json",
+      "sha256": "eb45073c9ab58005c603353d59782b4d6c879b03027c15e27bd91573279cbdda",
+      "bytes": 4424
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/candidate.ipynb",
+      "sha256": "2476eae2ff6f95d79a18c8a1294e14e10e5309c61ec86872cbc4962687b852a5",
+      "bytes": 257509
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/write_ledger.json",
+      "sha256": "248e7607c28e363873aa13bb7df84cca573496a9dceab2555bfe4b85463fce13",
+      "bytes": 2258
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/read_20260909T072732Z.json",
+      "sha256": "bb0527be9e38de04084ef0790efa502ba4b522a853452dfd3b7ead1109647b2e",
+      "bytes": 8605
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/results.json",
+      "sha256": "2c52967e19905d4ca06711979b0b4d0d1592ebc3e39804ab0a5c6558b5445d47",
+      "bytes": 12087
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/observation_window.json",
+      "sha256": "8d848cd41affda0adf1f8691276a5a9479938dbefca5c3e9c90c324e178db6b4",
+      "bytes": 1031
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/final_verification.json",
+      "sha256": "5b40fc08249c8b2a146133e851e806103def9a724dce0bece0efb8284451cfb2",
+      "bytes": 2358
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/score_chain_verification.json",
+      "sha256": "0f56e1a6bb03a9c4351e300159ba645f4aa64a29c4195ffd895b21cb49b78fe1",
+      "bytes": 1483
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/pre_submit.json",
+      "sha256": "10246a78e45db1e343cd899709bd09201df09d6424b501b9a9e8f3fd11493568",
+      "bytes": 8265
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/ordinary_summary.json",
+      "sha256": "22b890d2cf7583529003d8efaf03481409e4975022c4ff0b0aa378d03f4fce5d",
+      "bytes": 24189
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/independent_ordinary_verification.json",
+      "sha256": "1846df090a7ca4c40dd2812a533d738ed44112ba942aa9dbb9ee036494b43aea",
+      "bytes": 14084
+    },
+    {
+      "path": "reports/20260909_LINEFIT_BOUNDARY_实测报告.md",
+      "sha256": "7ddff9fd056a2a2ba87de89211fed2bf06f80aa0a87148dab278b2887c4df204",
+      "bytes": 7667
+    }
+  ],
+  "network_queries_performed": 0,
+  "platform_writes_performed": 0,
+  "frozen_files_modified": [],
+  "report_modified": false,
+  "new_tests_or_experiments_performed": 0
+}

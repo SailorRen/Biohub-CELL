@@ -20,6 +20,10 @@ selection_comparison = ('普通运行与B0同选tight55。' if selected == 'tigh
                         '普通运行选择与B0的tight55不同；这是保留原自动选择器后产生的实际结果，不能把最终差值单独归因于坐标平滑而排除后处理选择变化。')
 verdict = ('高于B0' if Decimal(delta) > 0 else '与B0持平' if Decimal(delta) == 0 else '低于B0') if delta != 'UNKNOWN' else '尚不能判断是否提分'
 status = '已取得正式终态成绩' if scored else '尚未取得正式终态成绩；本任务未完成'
+window = s.get('formal_observation_window', {})
+observation_note = (f"正式观察窗口按冻结合同为3小时，起点UTC `{window.get('formal_start_at_utc')}`，计划截止UTC `{window.get('deadline_at_utc')}`；截止边界最后官方快照为UTC `{window.get('last_official_observation_at_utc')}`，状态仍为 `{f['status']}`。最后请求因启动与网络耗时在计划截止后约15秒记录，不继续轮询。当前为 `PARTIAL_SCORE_PENDING`，未作完成声明，分数及两项差值均为null；没有创建自动后续任务或承诺后台完成。" if window.get('status') == 'ENDED_SCORE_PENDING' and not scored else '正式观察以实际平台回执为准。')
+validation = json.loads((P / 'final_verification.json').read_text()) if (P / 'final_verification.json').exists() else {}
+validation_note = (f"最终冻结验收：{validation.get('passed')}/{validation.get('total')}项通过，状态`{validation.get('status')}`。未通过项：{', '.join(x['id'] for x in validation.get('checks', []) if not x['passed']) or '无'}。缺少正式终态分数时，这表示整体任务尚未验收通过，不表示已通过的20项合成测试失败。详见final_verification.json；成绩链独立状态见score_chain_verification.json。" if validation else '最终验收回执尚未生成。')
 text = f'''# LINEFIT_BOUNDARY 单候选实测报告
 
 **{status}。{verdict}。** 本报告的实验状态、成绩比较与 GitHub 交付分别举证。当前记录时间来自下方平台回执，不把普通 COMPLETE、局部测试或 proxy 当正式成绩。
@@ -64,6 +68,10 @@ text = f'''# LINEFIT_BOUNDARY 单候选实测报告
 普通边界命中节点数：`{summary.get('boundary_nodes','UNKNOWN')}`；其中实际平滑：`{summary.get('smoothed_boundary_nodes','UNKNOWN')}`；候选相对输入坐标位移总和/最大值：`{summary.get('boundary_shift_um_sum','UNKNOWN')}` / `{summary.get('boundary_shift_um_max','UNKNOWN')}` µm。边界命中不等于最终坐标改变，此位移也不是与B0预测的差值。
 
 正式状态：`{f['status']}`；读取时间UTC：`{f.get('observed_at_utc','UNKNOWN')}`；正式错误说明：`{f.get('error_description','')}`。只有准确绑定的submission为COMPLETE且有数值Public才判断收益；持平/下降也如实交付，不追加实验。
+
+{observation_note}
+
+{validation_note}
 
 ## GitHub交付
 

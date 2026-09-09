@@ -1,0 +1,10 @@
+{
+  "task_id": "LINEFIT_BOUNDARY_20260909",
+  "kaggle_writes": 0,
+  "global_network_settings_modified": false,
+  "tls_verification_disabled": false,
+  "read_transport_change_at_utc": "2026-09-09T06:21:48.955671+00:00",
+  "change": "Task-process HTTPS_PROXY and HTTP_PROXY use the existing local proxy after intermittent direct TLS errors. No new service or global setting was created.",
+  "result": "Official list read succeeded; submission 56113466 remained PENDING with public_score null.",
+  "source_evidence": "formal_observations.jsonl"
+}
