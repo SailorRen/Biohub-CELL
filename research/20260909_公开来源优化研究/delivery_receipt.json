@@ -1,0 +1,154 @@
+{
+  "task_id": "PUBLIC_OPTIMIZATION_RESEARCH_20260909",
+  "observed_at_utc": "2026-09-09T02:08:51.574742+00:00",
+  "method": "Authoritative GitHub codeload fixed-commit archive + live ls-remote main",
+  "commit": "e0e86471594adcc075d2953983df679c25f314b4",
+  "live_remote_main": "e0e86471594adcc075d2953983df679c25f314b4",
+  "worktree_clean": true,
+  "archive_sha256": "8093c9ba3d244058c46fa4a450ee6a4a0aed7e7ccc9c2f430a0b23c3d102d330",
+  "archive_url": "https://codeload.github.com/SailorRen/Biohub-CELL/zip/e0e86471594adcc075d2953983df679c25f314b4",
+  "matched": 17,
+  "total": 17,
+  "files": [
+    {
+      "path": "reports/20260909_公开来源优化建议.md",
+      "bytes": 13314,
+      "local_sha256": "4514418f26ee259cd40b68130c326c50bb98976ad50c079bf5cfc4ee8986c753",
+      "remote_sha256": "4514418f26ee259cd40b68130c326c50bb98976ad50c079bf5cfc4ee8986c753",
+      "fixed_commit_sha256": "4514418f26ee259cd40b68130c326c50bb98976ad50c079bf5cfc4ee8986c753",
+      "match": true
+    },
+    {
+      "path": "research/20260909_公开来源优化研究/baseline_diagnostics.json",
+      "bytes": 112080,
+      "local_sha256": "90d8f17bf9fb35104bde7e8d359350681551cd29a5943f039a3ba652af1b9537",
+      "remote_sha256": "90d8f17bf9fb35104bde7e8d359350681551cd29a5943f039a3ba652af1b9537",
+      "fixed_commit_sha256": "90d8f17bf9fb35104bde7e8d359350681551cd29a5943f039a3ba652af1b9537",
+      "match": true
+    },
+    {
+      "path": "research/20260909_公开来源优化研究/baseline_diagnostics.md",
+      "bytes": 11461,
+      "local_sha256": "e79b29ad588738b0c1eb6adc3b821f9c926338073f12169ff7042f489ccf9532",
+      "remote_sha256": "e79b29ad588738b0c1eb6adc3b821f9c926338073f12169ff7042f489ccf9532",
+      "fixed_commit_sha256": "e79b29ad588738b0c1eb6adc3b821f9c926338073f12169ff7042f489ccf9532",
+      "match": true
+    },
+    {
+      "path": "research/20260909_公开来源优化研究/discussion_acquisition.json",
+      "bytes": 4644,
+      "local_sha256": "1de83f70bf51f7cfcf207f89071a7244c306e63fab423621ca29a9f20a3f0335",
+      "remote_sha256": "1de83f70bf51f7cfcf207f89071a7244c306e63fab423621ca29a9f20a3f0335",
+      "fixed_commit_sha256": "1de83f70bf51f7cfcf207f89071a7244c306e63fab423621ca29a9f20a3f0335",
+      "match": true
+    },
+    {
+      "path": "research/20260909_公开来源优化研究/discussion_findings.json",
+      "bytes": 11779,
+      "local_sha256": "381ff5f3e4c239b910018adaaa8c0a8322795768a48536c81192d457f7435bd1",
+      "remote_sha256": "381ff5f3e4c239b910018adaaa8c0a8322795768a48536c81192d457f7435bd1",
+      "fixed_commit_sha256": "381ff5f3e4c239b910018adaaa8c0a8322795768a48536c81192d457f7435bd1",
+      "match": true
+    },
+    {
+      "path": "research/20260909_公开来源优化研究/discussion_findings.md",
+      "bytes": 4614,
+      "local_sha256": "e0ce4bbb97e14776f39bd12a5af056a0e55b76c1359f9aa5b1a397517041ec07",
+      "remote_sha256": "e0ce4bbb97e14776f39bd12a5af056a0e55b76c1359f9aa5b1a397517041ec07",
+      "fixed_commit_sha256": "e0ce4bbb97e14776f39bd12a5af056a0e55b76c1359f9aa5b1a397517041ec07",
+      "match": true
+    },
+    {
+      "path": "research/20260909_公开来源优化研究/github_findings.json",
+      "bytes": 43027,
+      "local_sha256": "805ae195f7b13353fdc365cca79310e0390ceb974122f8ad618d71e0521c60fb",
+      "remote_sha256": "805ae195f7b13353fdc365cca79310e0390ceb974122f8ad618d71e0521c60fb",
+      "fixed_commit_sha256": "805ae195f7b13353fdc365cca79310e0390ceb974122f8ad618d71e0521c60fb",
+      "match": true
+    },
+    {
+      "path": "research/20260909_公开来源优化研究/github_findings.md",
+      "bytes": 11875,
+      "local_sha256": "d308eb74b1db6dd2a811f33863ba8b34b408384968158b05890e09491d7a65ff",
+      "remote_sha256": "d308eb74b1db6dd2a811f33863ba8b34b408384968158b05890e09491d7a65ff",
+      "fixed_commit_sha256": "d308eb74b1db6dd2a811f33863ba8b34b408384968158b05890e09491d7a65ff",
+      "match": true
+    },
+    {
+      "path": "research/20260909_公开来源优化研究/independent_review.json",
+      "bytes": 30601,
+      "local_sha256": "42c820d4206bd4eba944dfb64930536ac3690138bd0f663ea53667d935b7b7aa",
+      "remote_sha256": "42c820d4206bd4eba944dfb64930536ac3690138bd0f663ea53667d935b7b7aa",
+      "fixed_commit_sha256": "42c820d4206bd4eba944dfb64930536ac3690138bd0f663ea53667d935b7b7aa",
+      "match": true
+    },
+    {
+      "path": "research/20260909_公开来源优化研究/notebook_findings.json",
+      "bytes": 70946,
+      "local_sha256": "f7934f54778206f401187c2dcdde40acd4228269102c97637fa50542b6c97d48",
+      "remote_sha256": "f7934f54778206f401187c2dcdde40acd4228269102c97637fa50542b6c97d48",
+      "fixed_commit_sha256": "f7934f54778206f401187c2dcdde40acd4228269102c97637fa50542b6c97d48",
+      "match": true
+    },
+    {
+      "path": "research/20260909_公开来源优化研究/notebook_findings.md",
+      "bytes": 8189,
+      "local_sha256": "26d129ce2fe3cccac8da37003868b8828fbe8a9c9a17bac176dd36e9cb76157f",
+      "remote_sha256": "26d129ce2fe3cccac8da37003868b8828fbe8a9c9a17bac176dd36e9cb76157f",
+      "fixed_commit_sha256": "26d129ce2fe3cccac8da37003868b8828fbe8a9c9a17bac176dd36e9cb76157f",
+      "match": true
+    },
+    {
+      "path": "research/20260909_公开来源优化研究/platform_observations.json",
+      "bytes": 2985,
+      "local_sha256": "e53e9c556848ed35f00ccce835ef5bbbba9f9f8992bd6d889b82837d032621fd",
+      "remote_sha256": "e53e9c556848ed35f00ccce835ef5bbbba9f9f8992bd6d889b82837d032621fd",
+      "fixed_commit_sha256": "e53e9c556848ed35f00ccce835ef5bbbba9f9f8992bd6d889b82837d032621fd",
+      "match": true
+    },
+    {
+      "path": "research/20260909_公开来源优化研究/read_discussions.py",
+      "bytes": 2806,
+      "local_sha256": "f7585cdaa8fb77290e0baa47893652972bfdbb238992000eebd21069fea94dd0",
+      "remote_sha256": "f7585cdaa8fb77290e0baa47893652972bfdbb238992000eebd21069fea94dd0",
+      "fixed_commit_sha256": "f7585cdaa8fb77290e0baa47893652972bfdbb238992000eebd21069fea94dd0",
+      "match": true
+    },
+    {
+      "path": "research/20260909_公开来源优化研究/results.json",
+      "bytes": 2492,
+      "local_sha256": "cd371afcc96b7484524ca895d779e2a2b2e5ba91dca239be169f1f86a2401f58",
+      "remote_sha256": "cd371afcc96b7484524ca895d779e2a2b2e5ba91dca239be169f1f86a2401f58",
+      "fixed_commit_sha256": "cd371afcc96b7484524ca895d779e2a2b2e5ba91dca239be169f1f86a2401f58",
+      "match": true
+    },
+    {
+      "path": "research/20260909_公开来源优化研究/verify.py",
+      "bytes": 5886,
+      "local_sha256": "dbe87fa536a034fb8b43cf45514d8804182d363ef7c36bee1424c8d4374e0bc0",
+      "remote_sha256": "dbe87fa536a034fb8b43cf45514d8804182d363ef7c36bee1424c8d4374e0bc0",
+      "fixed_commit_sha256": "dbe87fa536a034fb8b43cf45514d8804182d363ef7c36bee1424c8d4374e0bc0",
+      "match": true
+    },
+    {
+      "path": "research/20260909_公开来源优化研究/verify_remote.py",
+      "bytes": 3027,
+      "local_sha256": "b0a567112203ee7b3fc318b6c075e00f3f012ddddba2caf8c9e0b0c0c076cff0",
+      "remote_sha256": "b0a567112203ee7b3fc318b6c075e00f3f012ddddba2caf8c9e0b0c0c076cff0",
+      "fixed_commit_sha256": "b0a567112203ee7b3fc318b6c075e00f3f012ddddba2caf8c9e0b0c0c076cff0",
+      "match": true
+    },
+    {
+      "path": "tasks/CODEX_20260909_BIOHUB_PUBLIC_OPTIMIZATION_RESEARCH_CONTRACT.json",
+      "bytes": 2089,
+      "local_sha256": "ac37e6ae3eef37bbe281082beb72508677575962df6ac180a43617824df92da0",
+      "remote_sha256": "ac37e6ae3eef37bbe281082beb72508677575962df6ac180a43617824df92da0",
+      "fixed_commit_sha256": "ac37e6ae3eef37bbe281082beb72508677575962df6ac180a43617824df92da0",
+      "match": true
+    }
+  ],
+  "status": "REMOTE_BYTES_VERIFIED",
+  "receipt_scope": "This receipt verifies the 17-file content commit. The later receipt-only commit requires a final authoritative readback recorded in final task output; no self-referential hash claim.",
+  "research_status": "COMPLETED_VERIFIED_WITHIN_FROZEN_RESEARCH_CONTRACT",
+  "new_optimization_execution": "NOT_RUN"
+}

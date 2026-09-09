@@ -1,0 +1,88 @@
+{
+  "checks": [
+    {
+      "details": {
+        "argument_count": 2,
+        "argv_sha256": "84a3c63a51fe4a46cf89c8c6faa6d81b9971afc632e7f992c8eacdbdad7557a8",
+        "cwd": ".",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 2952,
+          "sha256": "94ca3f989c40afd9f544201e2e5452f0af29b307c2a4564e70ae523d03e7e949"
+        },
+        "stdout_text_checks": 0
+      },
+      "id": "research-evidence",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "bytes": 13314,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "reports/20260909_公开来源优化建议.md",
+        "required_text_checks": 5,
+        "sha256": "4514418f26ee259cd40b68130c326c50bb98976ad50c079bf5cfc4ee8986c753"
+      },
+      "id": "report",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "branch": "main",
+        "dirty_entry_count": 0,
+        "head": "e0e86471594adcc075d2953983df679c25f314b4",
+        "remote": "origin",
+        "remote_exists": true,
+        "remote_head": "e0e86471594adcc075d2953983df679c25f314b4",
+        "remote_url_sha256": "294339ae4bf28ec437260f32bd064c06212de22a7026887c59e47f72ef414b8e",
+        "repository": "."
+      },
+      "id": "git-remote",
+      "outcome": "PASS",
+      "reason": "Git evidence passed",
+      "required": true,
+      "type": "git"
+    }
+  ],
+  "claimed_at": "2026-09-09T10:09:01+08:00",
+  "claimed_status": "CLAIMED_COMPLETE",
+  "contract_path": "tasks/CODEX_20260909_BIOHUB_PUBLIC_OPTIMIZATION_RESEARCH_CONTRACT.json",
+  "contract_sha256": "ac37e6ae3eef37bbe281082beb72508677575962df6ac180a43617824df92da0",
+  "final_status": "COMPLETED_VERIFIED",
+  "finished_at": "2026-09-09T10:09:19+08:00",
+  "integrity_scope": "local-sha256-only",
+  "limitations": [
+    "The conclusion is limited to the frozen contract and the implemented checks.",
+    "The verifier does not prove omitted requirements or future stability.",
+    "A local or Git hash is not a trusted signature against a malicious writer."
+  ],
+  "optional_warning_check_ids": [],
+  "reason": "all required automated checks passed",
+  "required_summary": {
+    "failed_or_blocked": 0,
+    "human_review": 0,
+    "passed": 3
+  },
+  "run_id": "20260909T100918+0800-42ebadf0",
+  "schema_version": "1.0",
+  "started_at": "2026-09-09T10:09:18+08:00",
+  "task_id": "PUBLIC_OPTIMIZATION_RESEARCH_20260909"
+}

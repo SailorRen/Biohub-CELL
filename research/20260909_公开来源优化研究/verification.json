@@ -1,0 +1,100 @@
+{
+  "status": "SOURCE_AUDIT_PASS",
+  "scope": "Evidence consistency and coverage only; Git delivery is separately verified",
+  "passed": 15,
+  "total": 15,
+  "checks": [
+    {
+      "id": "frozen-contract",
+      "passed": true,
+      "detail": "Contract bytes unchanged"
+    },
+    {
+      "id": "discussion-coverage",
+      "passed": true,
+      "detail": {
+        "discussion_threads_body_read": 8,
+        "all_available_text_threads": 8,
+        "partial_threads": 1,
+        "figures_read": 0
+      }
+    },
+    {
+      "id": "discussion-raw-digests",
+      "passed": true,
+      "detail": "9 acquired payloads; partial explicitly excluded"
+    },
+    {
+      "id": "discussion-pagination",
+      "passed": true,
+      "detail": "Returned deleted records included; images NOT_AUDITED"
+    },
+    {
+      "id": "host-role-binding",
+      "passed": true,
+      "detail": "Live CUA observation; not inferred from author name"
+    },
+    {
+      "id": "notebook-coverage",
+      "passed": true,
+      "detail": {
+        "full_fresh_notebooks": 1,
+        "full_differential_notebooks": 1,
+        "prior_full_read_byte_reverified_notebooks": 2,
+        "partial_notebooks": 1,
+        "effective_all_code_cell_review_count": 4,
+        "note": "不把发现列表或仅AST解析的run84计入全读；两既有母版以完整源hash+12cellhash复用已全读证据，明确非本轮重新逐字全文审读。"
+      }
+    },
+    {
+      "id": "notebook-source-cell-digests",
+      "passed": true,
+      "detail": "5 notebook payloads plus every cell"
+    },
+    {
+      "id": "prior-full-read-binding",
+      "passed": true,
+      "detail": "Full-source hashes found in prior committed full-read evidence"
+    },
+    {
+      "id": "public-score-version-binding",
+      "passed": true,
+      "detail": "Three notebook Public Score/Version links; no unbound best-score comparison"
+    },
+    {
+      "id": "github-core-coverage",
+      "passed": true,
+      "detail": {
+        "fixed_repositories": 6,
+        "github_repositories_core_source_read": 4,
+        "selected_files_full_read": 39,
+        "counting_rule": "仅CORE_SOURCE_READ四仓计最低要求；FOCUS wrapper和ultrack C++未读保持部分覆盖。"
+      }
+    },
+    {
+      "id": "github-fixed-source-digests",
+      "passed": true,
+      "detail": "39 fixed-commit files"
+    },
+    {
+      "id": "own-baseline-unchanged",
+      "passed": true,
+      "detail": "31 source digests; historical tracked material compared with fixed commit"
+    },
+    {
+      "id": "own-official-identity",
+      "passed": true,
+      "detail": "Reads frozen official receipts; no new submission or model run"
+    },
+    {
+      "id": "new-hypotheses-not-run",
+      "passed": true,
+      "detail": "No proposal is called a measured gain"
+    },
+    {
+      "id": "report-boundaries",
+      "passed": true,
+      "detail": "Explicit score, causal, coverage and execution limitations"
+    }
+  ]
+}
