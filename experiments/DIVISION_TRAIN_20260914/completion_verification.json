@@ -1,0 +1,155 @@
+{
+  "checks": [
+    {
+      "details": {
+        "argument_count": 3,
+        "argv_sha256": "992132ea65031285eee0207da88f89de3b0a173fbe46bed114b284f3ef219bfc",
+        "cwd": ".",
+        "executable": "python",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 1056,
+          "sha256": "8450a273e6eb61ab4760a3933b4e1b1de1e541c3e8a45660e1a2f50c3d63a761"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout_text_checks": 0
+      },
+      "id": "meaningful-tests",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/training_completed"
+          },
+          {
+            "op": "not_empty",
+            "passed": true,
+            "pointer": "/weights_sha256"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/embryo_overlap"
+          }
+        ],
+        "path": "experiments/DIVISION_TRAIN_20260914/training_receipt.json",
+        "sha256": "7f151fc5522e9bf4e8d96904a888a9558a4b7fbfbf28185120138396334a1448"
+      },
+      "id": "training-runtime",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/identity_readback_verified"
+          },
+          {
+            "op": "not_empty",
+            "passed": true,
+            "pointer": "/submission_id"
+          },
+          {
+            "op": "not_empty",
+            "passed": true,
+            "pointer": "/script_version_id"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/score_read"
+          }
+        ],
+        "path": "experiments/DIVISION_TRAIN_20260914/submission_receipt.json",
+        "sha256": "44cfa55b5e6369906542895a2132b8d36a36108315f70ab0477a0a2483b6c8a1"
+      },
+      "id": "formal-identity",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/all_files_match"
+          },
+          {
+            "op": "not_empty",
+            "passed": true,
+            "pointer": "/commit"
+          }
+        ],
+        "path": "experiments/DIVISION_TRAIN_20260914/delivery_receipt.json",
+        "sha256": "28a76a7acac371799c161a6572647bcc018f7591fdf573061a574ca57c8e238c"
+      },
+      "id": "remote-bytes",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "bytes": 8246,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "reports/20260914_分裂判别器训练与提交.md",
+        "required_text_checks": 3,
+        "sha256": "7db292a328d74b7ffc01b31806acd6d2bc555af2a25c171d3b444ed1f01e3207"
+      },
+      "id": "task-report",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    }
+  ],
+  "claimed_at": "2026-09-14T16:34:58+08:00",
+  "claimed_status": "CLAIMED_COMPLETE",
+  "contract_path": "tasks/CODEX_20260914_BIOHUB_DIVISION_TRAIN_CONTRACT.json",
+  "contract_sha256": "611268c30131fad155992ccaa39c62f947aca02b189d87eb7b7a16a3d9615488",
+  "final_status": "COMPLETED_VERIFIED",
+  "finished_at": "2026-09-14T16:34:58+08:00",
+  "integrity_scope": "local-sha256-only",
+  "limitations": [
+    "The conclusion is limited to the frozen contract and the implemented checks.",
+    "The verifier does not prove omitted requirements or future stability.",
+    "A local or Git hash is not a trusted signature against a malicious writer."
+  ],
+  "optional_warning_check_ids": [],
+  "reason": "all required automated checks passed",
+  "required_summary": {
+    "failed_or_blocked": 0,
+    "human_review": 0,
+    "passed": 5
+  },
+  "run_id": "20260914T163458+0800-1f5c4e38",
+  "schema_version": "1.0",
+  "started_at": "2026-09-14T16:34:58+08:00",
+  "task_id": "DIVISION_TRAIN_20260914"
+}
