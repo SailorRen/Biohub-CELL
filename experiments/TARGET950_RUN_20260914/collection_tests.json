@@ -1,0 +1,160 @@
+{
+  "task_id": "TARGET950_RUN_20260914",
+  "status": "PASS",
+  "executed": true,
+  "observed_at_utc": "2026-09-14T03:06:58.964485+00:00",
+  "scope": "Synthetic ordinary collector guards only; no SDK, network, model or Kaggle writes",
+  "checks": [
+    {
+      "id": "valid_bundle_base_is_submittable_without_local_gain",
+      "passed": true,
+      "result": "returned"
+    },
+    {
+      "id": "valid_bundle_changed_pp",
+      "passed": true,
+      "result": "returned"
+    },
+    {
+      "id": "original_conditional_combo_preserved",
+      "passed": true,
+      "result": "returned"
+    },
+    {
+      "id": "missing_column",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "noncontiguous_row_ids",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "unknown_dataset",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "duplicate_node",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "nonfinite_coordinate",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "noninteger_coordinate",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "node_wrong_sentinel",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "edge_wrong_sentinel",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "dangling_edge",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "bad_edge_time",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "duplicate_edge",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "official_source_drift",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "duplicate_cohort",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "duplicate_per_sample",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "selected_override_drift",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "missing_same_graph_summary",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "wrong_input_scale",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "wrong_model_feature_weight",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "csv_hash_mismatch",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "missing_dataset",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "missing_heldout",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "complete_two_page_inventory",
+      "passed": true,
+      "result": "returned"
+    },
+    {
+      "id": "duplicate_inventory_file",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "repeated_inventory_token",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "bounded_incomplete_inventory",
+      "passed": true,
+      "result": "RuntimeError"
+    },
+    {
+      "id": "redacted_urls",
+      "passed": true,
+      "result": "returned"
+    }
+  ],
+  "passed": 29,
+  "total": 29,
+  "source_sha256": {
+    "collect_output.py": "5782486ebf71464b83c20a592487d250b924585cdde6a47ddd9f942118b5376f",
+    "test_collection.py": "0a00fa9022c49e0bf31c46082e7df4ef2a0abccc9402ae9dbba351d4eb5a10c0"
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "task_id": "TARGET950_RUN_20260914",
+  "status": "PASS",
+  "executed": true,
+  "observed_at_utc": "2026-09-14T03:08:47.238741+00:00",
+  "scope": "Actual write() and inherited single_write_transport() with fake API/HTTP session and isolated temporary state. local_gate and snapshot mocked; frozen-file and real platform identity checks are separate.",
+  "network_requests": 0,
+  "kaggle_write_requests": 0,
+  "production_ledger_mutations": 0,
+  "checks_total": 71,
+  "checks_passed": 71,
+  "checks": [
+    {
+      "name": "save_accepted_exact_arguments_durable_booking_zero_retry_transport",
+      "passed": true
+    },
+    {
+      "name": "save_repeat_ATTEMPTED_hard_refusal",
+      "passed": true
+    },
+    {
+      "name": "save_repeat_RESPONSE_RECEIVED_READBACK_REQUIRED_hard_refusal",
+      "passed": true
+    },
+    {
+      "name": "save_repeat_WRITE_OUTCOME_UNKNOWN_READ_ONLY_RECONCILE_REQUIRED_hard_refusal",
+      "passed": true
+    },
+    {
+      "name": "save_timeout_retains_attempt_and_blocks_retry",
+      "passed": true
+    },
+    {
+      "name": "save_redirect_retains_attempt_and_blocks_retry",
+      "passed": true
+    },
+    {
+      "name": "save_double_retains_attempt_and_blocks_retry",
+      "passed": true
+    },
+    {
+      "name": "submit_accepted_exact_arguments_durable_booking_zero_retry_transport",
+      "passed": true
+    },
+    {
+      "name": "submit_repeat_ATTEMPTED_hard_refusal",
+      "passed": true
+    },
+    {
+      "name": "submit_repeat_RESPONSE_RECEIVED_READBACK_REQUIRED_hard_refusal",
+      "passed": true
+    },
+    {
+      "name": "submit_repeat_WRITE_OUTCOME_UNKNOWN_READ_ONLY_RECONCILE_REQUIRED_hard_refusal",
+      "passed": true
+    },
+    {
+      "name": "submit_timeout_retains_attempt_and_blocks_retry",
+      "passed": true
+    },
+    {
+      "name": "submit_redirect_retains_attempt_and_blocks_retry",
+      "passed": true
+    },
+    {
+      "name": "submit_double_retains_attempt_and_blocks_retry",
+      "passed": true
+    },
+    {
+      "name": "save_unexpected_version_response_keeps_budget_spent",
+      "passed": true
+    },
+    {
+      "name": "reject_invalid_direct_action",
+      "passed": true
+    },
+    {
+      "name": "save_403_requires_and_accepts_own_list_plus_exact_browser_absence",
+      "passed": true
+    },
+    {
+      "name": "submit_accepts_all_explicit_fixed_input_versions",
+      "passed": true
+    },
+    {
+      "name": "submit_accepts_mixed_slug_and_correct_explicit_input_versions",
+      "passed": true
+    },
+    {
+      "name": "preflight_mutable_task_drift",
+      "passed": true
+    },
+    {
+      "name": "preflight_mutable_ref_drift",
+      "passed": true
+    },
+    {
+      "name": "preflight_ledger_task_drift",
+      "passed": true
+    },
+    {
+      "name": "preflight_wrong_account",
+      "passed": true
+    },
+    {
+      "name": "preflight_wrong_day",
+      "passed": true
+    },
+    {
+      "name": "preflight_zero_formal_quota",
+      "passed": true
+    },
+    {
+      "name": "preflight_incomplete_formal_list",
+      "passed": true
+    },
+    {
+      "name": "preflight_zero_gpu",
+      "passed": true
+    },
+    {
+      "name": "preflight_baseline_unscored",
+      "passed": true
+    },
+    {
+      "name": "preflight_competition_disabled",
+      "passed": true
+    },
+    {
+      "name": "save_preflight_exists",
+      "passed": true
+    },
+    {
+      "name": "save_preflight_500_not_absence",
+      "passed": true
+    },
+    {
+      "name": "save_preflight_own_exact_collision",
+      "passed": true
+    },
+    {
+      "name": "save_preflight_own_list_incomplete",
+      "passed": true
+    },
+    {
+      "name": "save_preflight_browser_not_missing",
+      "passed": true
+    },
+    {
+      "name": "save_preflight_browser_wrong_ref",
+      "passed": true
+    },
+    {
+      "name": "save_preflight_browser_wrong_url",
+      "passed": true
+    },
+    {
+      "name": "save_preflight_browser_wrong_date",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_ordinary_unverified",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_binding_unverified",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_missing_audit",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_missing_sv",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_not_v1",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_already_has_id",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_no_save",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_save_kernel_mismatch",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_live_kernel_mismatch",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_live_version_mismatch",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_live_cell_mismatch",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_live_wire_sha_mismatch",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_live_public",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_live_internet",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_live_docker_drift",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_live_dataset_drift",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_live_all_input_versions_drift",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_live_mixed_input_versions_drift",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_input_version_drift",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_binding_sv_drift",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_audit_sv_drift",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_audit_status_drift",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_audit_csv_not_pass",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_audit_output_source_unverified",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_audit_source_before_drift",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_audit_source_after_drift",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_artifact_hash_drift",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_artifact_path_outside_task",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_artifact_count_incomplete",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_run_not_complete",
+      "passed": true
+    },
+    {
+      "name": "submit_preflight_existing_task_submission",
+      "passed": true
+    },
+    {
+      "name": "transport_reject_wrong_endpoint_before_send",
+      "passed": true
+    },
+    {
+      "name": "transport_reject_wrong_http_method_before_send",
+      "passed": true
+    },
+    {
+      "name": "transport_shared_single_send_budget_across_two_clients",
+      "passed": true
+    }
+  ],
+  "source_sha256": {
+    "experiments/TARGET950_RUN_20260914/kaggle_io.py": "a4c72ece166fdc25f0722cbaa4b98d0112f3dac79cb118d9bca3b973934391b1",
+    "experiments/TARGET950_RUN_20260914/test_write_gate.py": "f3b2072cca6762bcb38d5d37d11cd79253b0eb4336d9db64bf10be648762185e",
+    "experiments/PUBLIC946_TTA_20260908/execute_once.py": "cf8cb5f595e8bcb70ab3e1b82f646a87c9efaadeb5190c96dcb139c7e11e625f"
+  }
+}

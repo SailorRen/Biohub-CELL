@@ -1,0 +1,14 @@
+{
+  "task_id": "TARGET950_RUN_20260914",
+  "operation": "read_only_ls_remote_main",
+  "first_attempt": {
+    "transport": "direct HTTP/1.1",
+    "result": "Empty reply from server"
+  },
+  "second_attempt": {
+    "transport": "local existing proxy HTTP/1.1",
+    "result": "READ_SUCCESS",
+    "remote_main": "efd4d9f12c794158003319e33bb9d3aa87407647"
+  },
+  "github_write_requests": 0
+}

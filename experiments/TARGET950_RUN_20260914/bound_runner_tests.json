@@ -1,0 +1,151 @@
+{
+  "task_id": "TARGET950_RUN_20260914",
+  "status": "PASS",
+  "executed": true,
+  "observed_at_utc": "2026-09-14T03:23:36.867602+00:00",
+  "checks_total": 32,
+  "checks_passed": 32,
+  "checks": [
+    {
+      "name": "canonical_submit_exact_arguments_dual_hashes_and_original_save_preserved",
+      "passed": true
+    },
+    {
+      "name": "submit_timeout_retains_budget_and_blocks_second_send",
+      "passed": true
+    },
+    {
+      "name": "submit_double_retains_budget_and_blocks_second_send",
+      "passed": true
+    },
+    {
+      "name": "submit_redirect_retains_budget_and_blocks_second_send",
+      "passed": true
+    },
+    {
+      "name": "requested_ref_drift",
+      "passed": true
+    },
+    {
+      "name": "canonical_ref_drift",
+      "passed": true
+    },
+    {
+      "name": "kernel_drift",
+      "passed": true
+    },
+    {
+      "name": "sv_drift",
+      "passed": true
+    },
+    {
+      "name": "ordinary_unverified",
+      "passed": true
+    },
+    {
+      "name": "binding_unverified",
+      "passed": true
+    },
+    {
+      "name": "zero_quota",
+      "passed": true
+    },
+    {
+      "name": "account_drift",
+      "passed": true
+    },
+    {
+      "name": "input_version_drift",
+      "passed": true
+    },
+    {
+      "name": "explicit_input_version_drift",
+      "passed": true
+    },
+    {
+      "name": "sdk_hash_cannot_replace_raw_output_hash",
+      "passed": true
+    },
+    {
+      "name": "artifact_bytes_drift",
+      "passed": true
+    },
+    {
+      "name": "ordinary_not_complete",
+      "passed": true
+    },
+    {
+      "name": "existing_submission_marker",
+      "passed": true
+    },
+    {
+      "name": "live_actual_json_format_difference_preserves_entire_notebook_and_13_cells",
+      "passed": true
+    },
+    {
+      "name": "live_wrong_kernel",
+      "passed": true
+    },
+    {
+      "name": "live_wrong_version",
+      "passed": true
+    },
+    {
+      "name": "live_wrong_raw_hash",
+      "passed": true
+    },
+    {
+      "name": "live_changed_notebook_metadata",
+      "passed": true
+    },
+    {
+      "name": "live_changed_cell_hash",
+      "passed": true
+    },
+    {
+      "name": "collector_uses_raw_hash_copy_and_canonical_ref_without_changing_frozen_module",
+      "passed": true
+    },
+    {
+      "name": "real_alias_gate_accepts_original_save_and_frozen_mapping",
+      "passed": true
+    },
+    {
+      "name": "alias_wrong_object",
+      "passed": true
+    },
+    {
+      "name": "alias_wrong_ref",
+      "passed": true
+    },
+    {
+      "name": "alias_source_drift",
+      "passed": true
+    },
+    {
+      "name": "alias_original_save_rewritten",
+      "passed": true
+    },
+    {
+      "name": "alias_missing_frozen_file",
+      "passed": true
+    },
+    {
+      "name": "no_save_entry_point_before_authentication",
+      "passed": true
+    }
+  ],
+  "scope": "Offline fake API and HTTP with isolated state; live saved-source bytes used only for parsed JSON equality tests. No Kaggle import/auth or network. Real alias-gate fixtures call original frozen-byte gate through a mock; original real manifest has separate verification.",
+  "network_requests": 0,
+  "kaggle_write_requests": 0,
+  "production_ledger_mutations": 0,
+  "source_sha256": {
+    "experiments/TARGET950_RUN_20260914/bound_runner.py": "7293e31ea2edfb36458689aa5fce751ee1abc5bbfb3d0ce08e0bff330d3d8eb3",
+    "experiments/TARGET950_RUN_20260914/test_bound_runner.py": "8ecf4cce489f0e051dc192761c40542b7ec41584529bebb22632ae918424c9cc",
+    "experiments/TARGET950_RUN_20260914/kaggle_io.py": "a4c72ece166fdc25f0722cbaa4b98d0112f3dac79cb118d9bca3b973934391b1",
+    "experiments/TARGET950_RUN_20260914/test_write_gate.py": "f3b2072cca6762bcb38d5d37d11cd79253b0eb4336d9db64bf10be648762185e",
+    "experiments/TARGET950_RUN_20260914/collect_output.py": "5782486ebf71464b83c20a592487d250b924585cdde6a47ddd9f942118b5376f",
+    "experiments/TARGET950_RUN_20260914/platform_source.ipynb": "5c5f9758b778f38a2034a349311bb7bbb9f44b577ac83a9aca3396d09092b340"
+  },
+  "saved_platform_source_sha256": "5c5f9758b778f38a2034a349311bb7bbb9f44b577ac83a9aca3396d09092b340"
+}

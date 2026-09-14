@@ -1,0 +1,54 @@
+{
+  "task_id": "TARGET950_RUN_20260914",
+  "ref": "sailorren/biohub-947-official-selector-20260914",
+  "source_sha256": "c38460def079f45749a8a3d85d6549dada0ec0343e2eed66bee3c7c40db4ae43",
+  "version": 1,
+  "kernel_id": 134280472,
+  "script_version_id": 349666428,
+  "ordinary": {
+    "status": "RUNNING",
+    "verified": false,
+    "observed_at_utc": "2026-09-14T03:25:36.297739+00:00",
+    "requested_at_utc": "2026-09-14T03:10:10.354682+00:00"
+  },
+  "remote_binding": {
+    "verified": false,
+    "source_cells_equal": true,
+    "entire_notebook_json_equal": true,
+    "remote_raw_sha256": "5c5f9758b778f38a2034a349311bb7bbb9f44b577ac83a9aca3396d09092b340",
+    "version": 1,
+    "script_version_id": 349666428,
+    "script_version_id_provenance": "CUA actual created Notebook Edit link /edit/run/349666428 paired with authenticated GetKernel V1/kernel134280472; fixed Inputs page unavailable while actively running",
+    "input_versions_status": "PENDING_FIXED_VERSION_UI_AFTER_ORDINARY"
+  },
+  "submission": {
+    "id": null,
+    "status": "NOT_RUN",
+    "public_score": null,
+    "private_score": null,
+    "score_verified": false
+  },
+  "target_0950_achieved": false,
+  "training_executed": false,
+  "training_reason": "Frozen candidate reuses weights; inference and original PP selection only.",
+  "baseline_latest": {
+    "id": 56160258,
+    "date_utc": "2026-09-11 06:32:14.947000",
+    "description": "Notebook Biohub Lineage Forge — Precision Tracking | Version 1",
+    "status": "COMPLETE",
+    "public_score": "0.947",
+    "private_score": null,
+    "error_description": ""
+  },
+  "current_own_best": {
+    "id": 56160258,
+    "date_utc": "2026-09-11 06:32:14.947000",
+    "description": "Notebook Biohub Lineage Forge — Precision Tracking | Version 1",
+    "status": "COMPLETE",
+    "public_score": "0.947",
+    "private_score": null,
+    "error_description": ""
+  },
+  "updated_at_utc": "2026-09-14T03:25:44.968662+00:00",
+  "canonical_ref": "sailorren/biohub-0-947-official-selector-20260914"
+}

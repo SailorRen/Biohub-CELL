@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "task_id": "TARGET950_RUN_20260914",
+  "goal": "运行已冻结的0.947官方评分选参单候选，普通输出核验通过后唯一正式提交，取得实际终态成绩并与当前baseline及自有最好比较；同步GitHub。成绩未提高也如实交付，0.950不是预设结果。",
+  "scope": {
+    "authorization": "用户在已说明单候选1 Notebook、1 Save+Run、1 submission、无修复/重试后回复：训练后，提交kaggle平台一版，跑分看看效果。候选复用原权重，实际为推理与选参，不另起模型训练。",
+    "preparation_commit": "efd4d9f12c794158003319e33bb9d3aa87407647",
+    "preparation_manifest_sha256": "1711a8a96864f281ef8f44497742586c0702a9988f578d1b2a5e7c9e70511781",
+    "candidate_ref": "sailorren/biohub-947-official-selector-20260914",
+    "candidate_sha256": "c38460def079f45749a8a3d85d6549dada0ec0343e2eed66bee3c7c40db4ae43",
+    "expected_sdk_source_sha256": "cdefc823f59d0490e2ced01959e026ebfdd5c4b6f41d74ccb1c7bac4f61a6230",
+    "baseline_submission_id": 56160258,
+    "baseline_script_version_id": 348960877,
+    "budget": {"new_notebooks": 1, "save_requests": 1, "submission_requests": 1, "repairs": 0, "retries": 0, "training": 0, "dataset_model_writes": 0},
+    "ordinary_observation_max_hours": 3,
+    "formal_observation_max_hours": 3,
+    "rules": [
+      "原准备合同、manifest、代码、配置、测试和历史结果均不改动；运行回执独立保存。",
+      "写前先刷新账户、当前baseline、剩余额度及精确源码身份；冻结本轮执行脚本并独立审查。",
+      "请求先落账再发送，HTTP重试和重定向重发关闭；任何写入不确定只读核实，严禁重复发送。",
+      "不覆盖原0.947，不增加候选或参数，不新训练、不写Dataset/Model，不改变比赛最终提交选择。",
+      "普通运行通过精确版本绑定、实际审计和输出结构核验后提交，不以proxy提升或PP必须改变作为门槛。",
+      "只有正式submission终态分数作为收益；运行COMPLETE、proxy、合成PASS与文件同步不等于正式提分。",
+      "若运行失败或截止时仍未终态，保留实际ID、最后状态与上海时间并交付未完成；不追加修复或承诺后台完成。"
+    ]
+  },
+  "acceptance": [
+    {"id": "local-frozen-code-budget-and-evidence", "type": "command", "argv": ["python3", "experiments/TARGET950_RUN_20260914/verify.py"], "cwd": ".", "timeout_seconds": 120, "expected_exit": 0},
+    {"id": "ordinary-output", "type": "json", "path": "experiments/TARGET950_RUN_20260914/results.json", "assertions": [{"pointer": "/ordinary/status", "op": "equals", "value": "COMPLETE"}, {"pointer": "/ordinary/verified", "op": "equals", "value": true}]},
+    {"id": "formal-terminal-score", "type": "json", "path": "experiments/TARGET950_RUN_20260914/results.json", "assertions": [{"pointer": "/submission/status", "op": "equals", "value": "COMPLETE"}, {"pointer": "/submission/score_verified", "op": "equals", "value": true}]},
+    {"id": "independent-terminal-review", "type": "json", "path": "experiments/TARGET950_RUN_20260914/independent_review.json", "assertions": [{"pointer": "/status", "op": "equals", "value": "PASS"}]},
+    {"id": "report", "type": "file", "path": "reports/20260914_TARGET950_正式实测报告.md", "min_bytes": 1500, "contains_all": ["0.947", "正式", "GitHub", "预算"]},
+    {"id": "git-delivery", "type": "git", "repository": ".", "require_commit": true, "require_clean": true, "require_remote": true, "require_remote_head": true, "remote": "origin"}
+  ]
+}

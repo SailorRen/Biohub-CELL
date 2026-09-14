@@ -1,0 +1,51 @@
+{
+  "task_id": "TARGET950_RUN_20260914",
+  "observed_at_utc": "2026-09-14T03:13:07.074805+00:00",
+  "requested_ref": "sailorren/biohub-947-official-selector-20260914",
+  "canonical_ref": "sailorren/biohub-0-947-official-selector-20260914",
+  "kernel": {
+    "ref": "sailorren/biohub-0-947-official-selector-20260914",
+    "kernel_id": 134280472,
+    "version": 1,
+    "is_private": true,
+    "enable_gpu": true,
+    "enable_internet": false,
+    "machine_shape": "NvidiaTeslaT4",
+    "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+    "datasets": [
+      "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+      "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+      "pilkwang/biohub-tracking-support-pack-50ep-v1"
+    ],
+    "source_sha256": "5c5f9758b778f38a2034a349311bb7bbb9f44b577ac83a9aca3396d09092b340",
+    "cell_sha256": [
+      "545339ff52ac4315bffaf1131fcf769bb1a260ca523e988f19af9432979fc4bd",
+      "99198956a4c7725d85c6aab0d478368749824801716c6d39cf5bf915187ac500",
+      "77fdadffbd02c87e8f686e55944b6741312be552f34c8dc615e6391a1959a2dc",
+      "0f62c46bbec00a2d3d6bbde0efb89d5713204983d51c9c3cf73df1869cf12f8f",
+      "768bd13fbf10d26731819e0d19f79c11d5a1d0fad7065ec5f5f66c2c5fc3187c",
+      "1cdeb9eb90a61b62198a48a3b9c1e9d7c271ee0b18a57159c56f3498d3a3491c",
+      "c300805e0268602d76042dd271bcc3224fda6af2a52569e16bebc446701d66a5",
+      "7400441b355cbe09311e9c638c44264e374ad448d9ab1020b9d5866746e84ee7",
+      "87eb743013ca8681126299d0adc445d523ae017e727fe700ae3ce2ee0c1b3603",
+      "3986eaba6600507225a7140c033c14ae039a4fa95b3602806b43a8f2f11d90a0",
+      "ece3664cf924f36f3b838bac34fa636e67a5c865e6bf21ab61ff086bd1f87dfb",
+      "1b69f438acf6f21117acb50f1b42816a5da627c4dcec80b8e76372ef11793f15",
+      "b7b2f1de006a9f151128c85695881c7d85fb0a14669fe7a3876751061843aaad"
+    ]
+  },
+  "expected_source_sha256": "cdefc823f59d0490e2ced01959e026ebfdd5c4b6f41d74ccb1c7bac4f61a6230",
+  "cell_diff_indices": [],
+  "remote_cell_count": 13,
+  "local_cell_count": 13,
+  "top_level_keys": [
+    "metadata",
+    "nbformat_minor",
+    "nbformat",
+    "cells"
+  ],
+  "ordinary_status": "RUNNING",
+  "ordinary_failure": "",
+  "save_requests_sent": 1,
+  "additional_save_requests": 0
+}

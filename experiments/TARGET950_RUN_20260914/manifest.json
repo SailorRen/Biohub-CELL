@@ -1,0 +1,45 @@
+{
+  "task_id": "TARGET950_RUN_20260914",
+  "ref": "sailorren/biohub-947-official-selector-20260914",
+  "frozen": true,
+  "candidate_directory": "experiments/TARGET950_20260914",
+  "notebook_sha256": "c38460def079f45749a8a3d85d6549dada0ec0343e2eed66bee3c7c40db4ae43",
+  "submitted_source_sha256": "cdefc823f59d0490e2ced01959e026ebfdd5c4b6f41d74ccb1c7bac4f61a6230",
+  "cell_sha256": [
+    "545339ff52ac4315bffaf1131fcf769bb1a260ca523e988f19af9432979fc4bd",
+    "99198956a4c7725d85c6aab0d478368749824801716c6d39cf5bf915187ac500",
+    "77fdadffbd02c87e8f686e55944b6741312be552f34c8dc615e6391a1959a2dc",
+    "0f62c46bbec00a2d3d6bbde0efb89d5713204983d51c9c3cf73df1869cf12f8f",
+    "768bd13fbf10d26731819e0d19f79c11d5a1d0fad7065ec5f5f66c2c5fc3187c",
+    "1cdeb9eb90a61b62198a48a3b9c1e9d7c271ee0b18a57159c56f3498d3a3491c",
+    "c300805e0268602d76042dd271bcc3224fda6af2a52569e16bebc446701d66a5",
+    "7400441b355cbe09311e9c638c44264e374ad448d9ab1020b9d5866746e84ee7",
+    "87eb743013ca8681126299d0adc445d523ae017e727fe700ae3ce2ee0c1b3603",
+    "3986eaba6600507225a7140c033c14ae039a4fa95b3602806b43a8f2f11d90a0",
+    "ece3664cf924f36f3b838bac34fa636e67a5c865e6bf21ab61ff086bd1f87dfb",
+    "1b69f438acf6f21117acb50f1b42816a5da627c4dcec80b8e76372ef11793f15",
+    "b7b2f1de006a9f151128c85695881c7d85fb0a14669fe7a3876751061843aaad"
+  ],
+  "budget": {
+    "save": 1,
+    "submit": 1,
+    "repairs": 0,
+    "write_retries": 0
+  },
+  "frozen_files": {
+    "experiments/PUBLIC946_TTA_20260908/execute_once.py": "cf8cb5f595e8bcb70ab3e1b82f646a87c9efaadeb5190c96dcb139c7e11e625f",
+    "experiments/TARGET950_20260914/candidate.ipynb": "c38460def079f45749a8a3d85d6549dada0ec0343e2eed66bee3c7c40db4ae43",
+    "experiments/TARGET950_20260914/kernel-metadata.json": "01977ca82b645206d052436181cf5dda5321780800dd36e5d7615d8e315deac3",
+    "experiments/TARGET950_20260914/manifest.json": "1711a8a96864f281ef8f44497742586c0702a9988f578d1b2a5e7c9e70511781",
+    "experiments/TARGET950_RUN_20260914/browser_observations.json": "4a07e1455c5a9589053f143228fad824d1b59d667afaa05c1806df8675af82c9",
+    "experiments/TARGET950_RUN_20260914/collect_output.py": "5782486ebf71464b83c20a592487d250b924585cdde6a47ddd9f942118b5376f",
+    "experiments/TARGET950_RUN_20260914/collection_tests.json": "fd00b39aedbbcdbf872ef12cb9330ca156bdcbf725451d81fed57664cb08444f",
+    "experiments/TARGET950_RUN_20260914/kaggle_io.py": "a4c72ece166fdc25f0722cbaa4b98d0112f3dac79cb118d9bca3b973934391b1",
+    "experiments/TARGET950_RUN_20260914/sdk_inspection.json": "8d1c4751616cc80755f851d4d99120a3543b40eb3b1b4466e88431d8dfc9ef2a",
+    "experiments/TARGET950_RUN_20260914/test_collection.py": "0a00fa9022c49e0bf31c46082e7df4ef2a0abccc9402ae9dbba351d4eb5a10c0",
+    "experiments/TARGET950_RUN_20260914/test_write_gate.py": "f3b2072cca6762bcb38d5d37d11cd79253b0eb4336d9db64bf10be648762185e",
+    "experiments/TARGET950_RUN_20260914/verify.py": "1caba72e31886bcc0af6b7ed66118edcdf8ef35fcb00f0d2389f9330ebf1a9f0",
+    "experiments/TARGET950_RUN_20260914/write_gate_tests.json": "cc644277e3b7c39d026315afb6b83551cba9a14f3181f9166586b9bd176d9bf4",
+    "tasks/CODEX_20260914_BIOHUB_TARGET950_RUN_CONTRACT.json": "ec12ddf6f6982aa4573300d599370481ceabe30b749556f194169c4e5e4f3b80"
+  }
+}

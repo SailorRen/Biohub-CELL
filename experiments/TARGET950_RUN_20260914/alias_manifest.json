@@ -1,0 +1,26 @@
+{
+  "task_id": "TARGET950_RUN_20260914",
+  "frozen": true,
+  "scope": "Only canonical identity and JSON representation mapping for the existing sole SaveKernel; no Notebook or source changes and no save/repair budget.",
+  "original_manifest_sha256": "25b8c49345e0b5b7a31d82b7d9e1661178b35d04aad04149bac11ddd6e09450c",
+  "requested_ref": "sailorren/biohub-947-official-selector-20260914",
+  "canonical_ref": "sailorren/biohub-0-947-official-selector-20260914",
+  "kernel_id": 134280472,
+  "version": 1,
+  "script_version_id": 349666428,
+  "sdk_source_sha256": "cdefc823f59d0490e2ced01959e026ebfdd5c4b6f41d74ccb1c7bac4f61a6230",
+  "remote_source_sha256": "5c5f9758b778f38a2034a349311bb7bbb9f44b577ac83a9aca3396d09092b340",
+  "save_operation_sha256": "01f0d4d7a0f1d9cdad78ee30160c8f07abd834d46267654645aea3b349fb834b",
+  "save_operation_hash_schema": "sha256(json.dumps(operation, ensure_ascii=False, sort_keys=True, separators=(comma, colon), allow_nan=False))",
+  "frozen_files": {
+    "experiments/TARGET950_RUN_20260914/bound_runner.py": "7293e31ea2edfb36458689aa5fce751ee1abc5bbfb3d0ce08e0bff330d3d8eb3",
+    "experiments/TARGET950_RUN_20260914/bound_runner_tests.json": "fedadebbc1531022a991402e4616815e6286be50b1e58c1d23d52e50e9ac2986",
+    "experiments/TARGET950_RUN_20260914/manifest.json": "25b8c49345e0b5b7a31d82b7d9e1661178b35d04aad04149bac11ddd6e09450c",
+    "experiments/TARGET950_RUN_20260914/platform_serialization_readback.json": "5a60c45bb1bbd2f8236bb8d42b559c4b65583303c367b94d42272b6454282139",
+    "experiments/TARGET950_RUN_20260914/platform_source.ipynb": "5c5f9758b778f38a2034a349311bb7bbb9f44b577ac83a9aca3396d09092b340",
+    "experiments/TARGET950_RUN_20260914/save_alias_initial_readback.json": "50c4f47c9070791f2183679f16b2e316cb6d5e0e0fafa05997eebd970df25f54",
+    "experiments/TARGET950_RUN_20260914/save_alias_readback.json": "3dfa5c09459c58889576e4a7f17d337dabffb681b933ade1a6a57bc5ca0ea8ff",
+    "experiments/TARGET950_RUN_20260914/test_bound_runner.py": "8ecf4cce489f0e051dc192761c40542b7ec41584529bebb22632ae918424c9cc",
+    "tasks/CODEX_20260914_BIOHUB_TARGET950_PLATFORM_BINDING.json": "7fdcaacd0040bc1479e52544a53695e070f1e730d5714289a962aced98f4a821"
+  }
+}

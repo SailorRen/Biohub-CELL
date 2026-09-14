@@ -1,0 +1,20 @@
+{
+  "observed_at_utc": "2026-09-14T03:03:13.637301+00:00",
+  "source_path": "/opt/anaconda3/envs/ml/lib/python3.11/site-packages/kaggle/api/kaggle_api_extended.py",
+  "file_sha256": "ba0cbbcfcbce9b7b42997de0b3ffa759144d95110cb073483a64e6b7d2fa4c96",
+  "methods": {
+    "competition_submit_code": {
+      "sha256": "65f2b24a2953a0fa634f78646addfebcbaca87c5c67f3f59785d1d9a3d7146e0",
+      "decorators": []
+    },
+    "kernels_push": {
+      "sha256": "a4e1e2aeff5d25db1fb7edec749ea14c77db3424b4de90a6a78fd036fcd0712f",
+      "decorators": []
+    },
+    "validate_dataset_string": {
+      "sha256": "50c504120615c52dc0a271cf0eb784122907830d349e3b2d9ce03d7a25fcf655",
+      "decorators": []
+    }
+  },
+  "inspection": "Both write methods have no retry decorator and call their generated SDK write method exactly once. Source list serialization and owner/slug/version inputs supported. No authentication or network in this inspection."
+}

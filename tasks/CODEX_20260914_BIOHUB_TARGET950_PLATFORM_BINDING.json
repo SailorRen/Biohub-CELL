@@ -1,0 +1,29 @@
+{
+  "task_id": "TARGET950_RUN_20260914",
+  "kind": "Observed platform identity and serialization binding supplement",
+  "original_contract_sha256": "ec12ddf6f6982aa4573300d599370481ceabe30b749556f194169c4e5e4f3b80",
+  "original_execution_manifest_sha256": "25b8c49345e0b5b7a31d82b7d9e1661178b35d04aad04149bac11ddd6e09450c",
+  "requested_ref": "sailorren/biohub-947-official-selector-20260914",
+  "canonical_ref": "sailorren/biohub-0-947-official-selector-20260914",
+  "kernel_id": 134280472,
+  "version": 1,
+  "script_version_id": 349666428,
+  "sdk_source_sha256": "cdefc823f59d0490e2ced01959e026ebfdd5c4b6f41d74ccb1c7bac4f61a6230",
+  "remote_source_sha256": "5c5f9758b778f38a2034a349311bb7bbb9f44b577ac83a9aca3396d09092b340",
+  "observations": [
+    "唯一SaveKernel返回真实kernel ID与Version1，error为空，所有invalid输入列表为空；返回canonical地址按标题生成，包含0-947。",
+    "只读GetKernel核实相同kernel134280472/V1，13/13执行代码单元相等，解析后的整个Notebook对象与SDK提交对象完全相等。原始返回JSON字节排版不同，因此分别保存SDK和平台源码哈希。",
+    "CUA当前实际对象的Edit链接为/edit/run/349666428，结合GetKernel V1绑定SV；固定输入版本页面运行期间不可用，仍须在正式提交前核实。"
+  ],
+  "unchanged_requirements": [
+    "原合同、执行manifest、候选Notebook、代码、权重、输入要求、模型运行与正式验收标准均不变。",
+    "保留原始保存操作及本地UNKNOWN响应状态作为历史回执，补充只读解析证据，不改写成从未出错。",
+    "保存请求已用1/1，没有第二次save，没有Notebook工程修复，没有新增候选或训练。",
+    "只有经过真实源码与精确kernel/Version/SV绑定的canonical对象可用于剩余唯一一次submission，使用同一ledger和互斥锁，保持先落账、单次HTTP发送与无重试。",
+    "results.ref及提交描述中的SDK哈希保留原冻结身份，另记canonical_ref、remote_source_sha256；双哈希必须经整体JSON及13单元相等核对，不能放宽为仅标题相同。",
+    "补充bound_runner和alias_manifest只处理平台身份映射和回执，不修改或重新运行Notebook；输出收集仍执行原冻结collector的全部检查。"
+  ],
+  "authorization_scope_unchanged": true,
+  "new_authority_inferred_from_platform_response": false,
+  "additional_save_or_repair_budget": 0
+}

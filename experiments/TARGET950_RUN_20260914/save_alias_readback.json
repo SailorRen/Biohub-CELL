@@ -1,0 +1,24 @@
+{
+  "task_id": "TARGET950_RUN_20260914",
+  "observed_at_utc": "2026-09-14T03:17:32.040548+00:00",
+  "same_candidate_verified": true,
+  "requested_ref": "sailorren/biohub-947-official-selector-20260914",
+  "canonical_ref": "sailorren/biohub-0-947-official-selector-20260914",
+  "kernel_id": 134280472,
+  "version": 1,
+  "script_version_id": 349666428,
+  "sdk_source_sha256": "cdefc823f59d0490e2ced01959e026ebfdd5c4b6f41d74ccb1c7bac4f61a6230",
+  "remote_source_sha256": "5c5f9758b778f38a2034a349311bb7bbb9f44b577ac83a9aca3396d09092b340",
+  "notebook_parsed_equal": true,
+  "all_13_execution_cells_equal": true,
+  "save_operation_sha256": "01f0d4d7a0f1d9cdad78ee30160c8f07abd834d46267654645aea3b349fb834b",
+  "only_observed_differences": [
+    "Kaggle generated canonical slug from title including0.947",
+    "Returned JSON textual formatting differs; entire parsed Notebook equal"
+  ],
+  "notebook_repairs": 0,
+  "additional_save_requests": 0,
+  "submission_requests": 0,
+  "original_frozen_files_changed": false,
+  "first_strict_raw_hash_assertion": "Read-only assertion failed after the sole SaveKernel, before any further write; preserved initial comparison then resolved by full parsed Notebook equality and fixed remote raw hash."
+}

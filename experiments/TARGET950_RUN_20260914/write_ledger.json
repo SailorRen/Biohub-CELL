@@ -1,0 +1,34 @@
+{
+  "task_id": "TARGET950_RUN_20260914",
+  "operations": [
+    {
+      "action": "save",
+      "at_utc": "2026-09-14T03:10:10.354682+00:00",
+      "ref": "sailorren/biohub-947-official-selector-20260914",
+      "manifest_sha256": "25b8c49345e0b5b7a31d82b7d9e1661178b35d04aad04149bac11ddd6e09450c",
+      "submitted_source_sha256": "cdefc823f59d0490e2ced01959e026ebfdd5c4b6f41d74ccb1c7bac4f61a6230",
+      "status": "WRITE_OUTCOME_UNKNOWN_READ_ONLY_RECONCILE_REQUIRED",
+      "version": null,
+      "script_version_id": null,
+      "transport": {
+        "max_retries": 0,
+        "allow_redirects": false,
+        "max_write_sends": 1,
+        "send_calls": 1
+      },
+      "response": {
+        "ref": "/code/sailorren/biohub-0-947-official-selector-20260914",
+        "kernel_id": 134280472,
+        "version": 1,
+        "error": "",
+        "invalid_dataset_sources": [],
+        "invalid_competition_sources": [],
+        "invalid_kernel_sources": [],
+        "invalid_model_sources": []
+      },
+      "error_type": "RuntimeError",
+      "http_status": null,
+      "completed_at_utc": "2026-09-14T03:10:14.698653+00:00"
+    }
+  ]
+}

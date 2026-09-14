@@ -1,0 +1,20 @@
+{
+  "task_id": "TARGET950_RUN_20260914",
+  "status": "PASS",
+  "scope": "Local alias execution preparation only; current Kaggle run and formal score not certified here.",
+  "observed_at_utc": "2026-09-14T03:24:26.420247+00:00",
+  "original_manifest_sha256": "25b8c49345e0b5b7a31d82b7d9e1661178b35d04aad04149bac11ddd6e09450c",
+  "alias_manifest_sha256": "a0ef856e63d828327d2a25381cc94817d9ebeb44b97d5e3fcfda51118cf0d6d6",
+  "checks": {
+    "original_and_alias_local_gates": true,
+    "actual_mock_tests_32_of_32": true,
+    "mock_source_hashes_current": true,
+    "original_save_unchanged": true,
+    "actual_saved_json_equal": true,
+    "actual_saved_raw_hash_bound": true,
+    "original_module_ref_unchanged": true
+  },
+  "checks_total": 7,
+  "checks_passed": 7,
+  "kaggle_write_requests": 0
+}
