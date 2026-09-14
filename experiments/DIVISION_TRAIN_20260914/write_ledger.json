@@ -24,6 +24,24 @@
         "invalid_model_sources": []
       },
       "returned_at_utc": "2026-09-14T06:42:49.860972+00:00"
+    },
+    {
+      "action": "submit",
+      "attempted_at_utc": "2026-09-14T08:30:00.719175+00:00",
+      "status": "RESPONSE_RECEIVED_READBACK_REQUIRED",
+      "candidate_sha256": "35ec0b376b94843722ac9e8107a0929ccf9a49f94d7bbac99b3093c4618ee123",
+      "transport": {
+        "max_retries": 0,
+        "allow_redirects": false,
+        "max_write_sends": 1,
+        "send_calls": 1
+      },
+      "response": {
+        "submission_id": 56226396,
+        "message": "",
+        "description": "DIVISION_TRAIN_20260914 | V1 | SV349707105 | SHA256 35ec0b376b94843722ac9e8107a0929ccf9a49f94d7bbac99b3093c4618ee123"
+      },
+      "returned_at_utc": "2026-09-14T08:30:02.649001+00:00"
     }
   ]
 }

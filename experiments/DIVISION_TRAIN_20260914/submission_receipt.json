@@ -1,0 +1,17 @@
+{
+  "submission_id": 56226396,
+  "description": "DIVISION_TRAIN_20260914 | V1 | SV349707105 | SHA256 35ec0b376b94843722ac9e8107a0929ccf9a49f94d7bbac99b3093c4618ee123",
+  "file_name": "submission.csv",
+  "submitted_at_utc": "2026-09-14 08:30:01.713000",
+  "task_id": "DIVISION_TRAIN_20260914",
+  "identity_readback_verified": true,
+  "ref": "sailorren/biohub-division-train-20260914",
+  "version": 1,
+  "script_version_id": 349707105,
+  "source_sha256": "35ec0b376b94843722ac9e8107a0929ccf9a49f94d7bbac99b3093c4618ee123",
+  "observed_at_utc": "2026-09-14T08:30:21.737012+00:00",
+  "score_read": false,
+  "scoring_status_read": false,
+  "version_binding_basis": "Exact CreateCodeSubmission kernel/version arguments, pre-submit Notebook readback, and matching returned submission description; GetSubmission does not expose ScriptVersionId.",
+  "note": "Only this newly created submission ID, description, file name and creation date were inspected."
+}

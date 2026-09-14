@@ -1,0 +1,1492 @@
+{
+  "task_id": "DIVISION_TRAIN_20260914",
+  "training_completed": true,
+  "weights_sha256": "0a1f9b93bb529e70f4f7c2ba0907eea8b4cecd2befccc8ba1fb75e569edf77a0",
+  "model_type": "L2 logistic regression with squared standardized features",
+  "embryo_overlap": false,
+  "embryo_groups": [
+    "44b6",
+    "6bba"
+  ],
+  "folds": [
+    {
+      "held_out_embryo": "44b6",
+      "training_embryos": [
+        "6bba"
+      ],
+      "embryo_overlap": false,
+      "fit": {
+        "n_positive": 122,
+        "n_negative": 1458,
+        "augmented_rows": 6320,
+        "initial_loss": 0.6931471805599452,
+        "final_loss": 0.2762832909149402,
+        "optimizer_steps": 74,
+        "coefficient_norm": 3.3311381131043527,
+        "converged": true
+      },
+      "pair_metrics": {
+        "tp": 8,
+        "fp": 8,
+        "fn": 17,
+        "tn": 1410,
+        "precision": 0.5,
+        "recall": 0.32,
+        "negative_acceptance_rate": 0.005641748942172073,
+        "threshold": 0.95
+      }
+    },
+    {
+      "held_out_embryo": "6bba",
+      "training_embryos": [
+        "44b6"
+      ],
+      "embryo_overlap": false,
+      "fit": {
+        "n_positive": 25,
+        "n_negative": 1418,
+        "augmented_rows": 5772,
+        "initial_loss": 0.6931471805599453,
+        "final_loss": 0.30277230343685185,
+        "optimizer_steps": 74,
+        "coefficient_norm": 2.7717882210237823,
+        "converged": true
+      },
+      "pair_metrics": {
+        "tp": 61,
+        "fp": 42,
+        "fn": 61,
+        "tn": 1416,
+        "precision": 0.5922330097087378,
+        "recall": 0.5,
+        "negative_acceptance_rate": 0.02880658436213992,
+        "threshold": 0.95
+      }
+    }
+  ],
+  "final_fit": {
+    "n_positive": 147,
+    "n_negative": 2876,
+    "augmented_rows": 12092,
+    "initial_loss": 0.6931471805599452,
+    "final_loss": 0.2725900686362126,
+    "optimizer_steps": 76,
+    "coefficient_norm": 3.32369325589017,
+    "converged": true
+  },
+  "gt_inventory": [
+    {
+      "stem": "44b6_0113de3b",
+      "embryo": "44b6",
+      "gt_sha256": "643633db6bab938d8ee6d0752e427cb9f3d0736910c9f0adc0da8caa3fe19694",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_0b24845f",
+      "embryo": "44b6",
+      "gt_sha256": "4e367a2d322a888669a4bcf6244033a3be6c774dd4435fc41964ff0d31170ff3",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_0c582fdc",
+      "embryo": "44b6",
+      "gt_sha256": "e81960f55c8ae0097d499816075099ab815e8a1de3da7b91c13abc9fb14edb59",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_0db75fae",
+      "embryo": "44b6",
+      "gt_sha256": "793ffe1246dc8fcabb3a9011c854bb584e3fdaf8eca88a86cb9042b2eeb796a0",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_12dfb391",
+      "embryo": "44b6",
+      "gt_sha256": "7dc00ee1a85ffca5367650b9d30487bdfc8e03e420d95ee038ab303a1c929a6b",
+      "positives": 1,
+      "negatives": 1
+    },
+    {
+      "stem": "44b6_144b256d",
+      "embryo": "44b6",
+      "gt_sha256": "d7a522f7cadaeebf8b24fbd6fd33b4495569111ad30c2879f69e01ee0357c919",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_1574802b",
+      "embryo": "44b6",
+      "gt_sha256": "73496e84af5f0eb225abe353c04359aa6414df2a132eb018b23f2aec8bcce707",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_18ced818",
+      "embryo": "44b6",
+      "gt_sha256": "0733f77894c11539ca7f1be9ef74f2ba47aeaf74542684b04718d0f76bc526de",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_1d530831",
+      "embryo": "44b6",
+      "gt_sha256": "bf41acdf1cecc06a20755bd9cb1ccd9e1b84a06e6b43ab6350af15c54762834e",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_24264f12",
+      "embryo": "44b6",
+      "gt_sha256": "311b050ef946b7bb19d751caceac5cffff191ce591cf574b8ad27d7e5adfdfae",
+      "positives": 0,
+      "negatives": 12
+    },
+    {
+      "stem": "44b6_267148e4",
+      "embryo": "44b6",
+      "gt_sha256": "62785e69bc6b0bde3f5a6de0b7999dd29a915d5dd7c53628379ad3d048a6e0f6",
+      "positives": 1,
+      "negatives": 1
+    },
+    {
+      "stem": "44b6_2a2eff9f",
+      "embryo": "44b6",
+      "gt_sha256": "ae85be7ed9ddf4239bcc55f39821660437391c0ec1e6752e0a066e41810fb502",
+      "positives": 1,
+      "negatives": 3
+    },
+    {
+      "stem": "44b6_2f31fc2f",
+      "embryo": "44b6",
+      "gt_sha256": "7547e442da9c3375147daa9bd3a9e7ad2cdeae2933d4460f560519355977abc2",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_33b596bf",
+      "embryo": "44b6",
+      "gt_sha256": "7ca538d7b46bca742696a1a8a3f4de716271dc9174cb8c9f6699eab1770e88a1",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_341df25f",
+      "embryo": "44b6",
+      "gt_sha256": "3c73e5e35abc30110b502fb902df695bbc0465b0852193d94ff14d8810cbc5ad",
+      "positives": 1,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_3a861e03",
+      "embryo": "44b6",
+      "gt_sha256": "4220da8adea86c34876fbf01e05a954274f71b2aa158d69f9d5f696f2eda1613",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_3bb3690f",
+      "embryo": "44b6",
+      "gt_sha256": "c2a8c0a6eb09e224b62f00772a10752493713fbe005c839e3fa8422a2d3606a4",
+      "positives": 0,
+      "negatives": 65
+    },
+    {
+      "stem": "44b6_40c45f5a",
+      "embryo": "44b6",
+      "gt_sha256": "b1ae45d5cef6ba74e5014e7d8c89e387b8bc35b61b0904815b90d9a9468feef3",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_415c0a3a",
+      "embryo": "44b6",
+      "gt_sha256": "b68dd6ba5a4b9f50b2a143c5feac3d5e4205a50c84e75b354257daab46dd5b05",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_53f95252",
+      "embryo": "44b6",
+      "gt_sha256": "0fd83a9c7287feab35feae3bdd9a12adbbfa066332930fa70b96f28f19722c69",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_551a5dba",
+      "embryo": "44b6",
+      "gt_sha256": "d06904bad2eaa5cd658105fbbe02f23040a5252bb546cd611e961989e9030f78",
+      "positives": 0,
+      "negatives": 82
+    },
+    {
+      "stem": "44b6_5740d24b",
+      "embryo": "44b6",
+      "gt_sha256": "dca6f1f4c7a6325ae981c2653eb37a6f2f48f61b6ce6fce2719a57bb0de69f40",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_587a1e22",
+      "embryo": "44b6",
+      "gt_sha256": "8593875a148c8156dffcb34ae213423aa0b794fc51d33b206c0977cc051719d0",
+      "positives": 1,
+      "negatives": 3
+    },
+    {
+      "stem": "44b6_5f15d135",
+      "embryo": "44b6",
+      "gt_sha256": "c0813761b8f793530ee9481a2dccc59e82516e4cf370feae13be067f59b174da",
+      "positives": 1,
+      "negatives": 1
+    },
+    {
+      "stem": "44b6_668e0cc7",
+      "embryo": "44b6",
+      "gt_sha256": "cb120a8d788d834fd450034f88ffd320aa8599ebffc697ef0a8ffa32ad63fdd4",
+      "positives": 0,
+      "negatives": 139
+    },
+    {
+      "stem": "44b6_66f9292d",
+      "embryo": "44b6",
+      "gt_sha256": "3e2af78ebfb4873edb9b1f7f9b155e64aeee95c9792dfce186b204077ce67625",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_706092f0",
+      "embryo": "44b6",
+      "gt_sha256": "d914c5adf47ca15787f97bcd9c9211c65ffaa3bfc57011685199d80a93e5acba",
+      "positives": 1,
+      "negatives": 32
+    },
+    {
+      "stem": "44b6_71a4179f",
+      "embryo": "44b6",
+      "gt_sha256": "6abfc91ab68dce2ac96e9963cc94375418c42f54442c49484678dbce02bfd662",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_74d0c52e",
+      "embryo": "44b6",
+      "gt_sha256": "a69a4f58bb17efd379eee91f9bb8b1d10c294fa1c6efdbd249a9f0b79be7548e",
+      "positives": 1,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_7a302da0",
+      "embryo": "44b6",
+      "gt_sha256": "6e57f3852e09619b8c70e7d258bf252d6c7113540856105b17031a696daae361",
+      "positives": 1,
+      "negatives": 1
+    },
+    {
+      "stem": "44b6_7e557709",
+      "embryo": "44b6",
+      "gt_sha256": "f6fab47284261168cd298ff627b16c6805d3b157ea1e9d786ad6828af4624c94",
+      "positives": 0,
+      "negatives": 118
+    },
+    {
+      "stem": "44b6_808952d6",
+      "embryo": "44b6",
+      "gt_sha256": "00da6681796627d088e424b3ba4ec7ec3d36cafc08d019c6c3e36ba95ff2bd86",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_81c256f0",
+      "embryo": "44b6",
+      "gt_sha256": "2b5e73d814cae497b48612a9f25889bf8a4bf6961c9618e13d71b2a2d3668bc6",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_87bba6c4",
+      "embryo": "44b6",
+      "gt_sha256": "785284100eb8d8e61fc3d887e6ad19786d439caa5bdd34e55dd3121d750914c2",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_8cc6506c",
+      "embryo": "44b6",
+      "gt_sha256": "999905804ab81cafc42eb3851a3ba0f511e9cdbd3c37b9efd269bdc6db987bbc",
+      "positives": 0,
+      "negatives": 73
+    },
+    {
+      "stem": "44b6_8f5ab931",
+      "embryo": "44b6",
+      "gt_sha256": "c5b63fd868aff95b1895f260523ea03149a71285acae7bb4a442b6afc185854f",
+      "positives": 0,
+      "negatives": 1
+    },
+    {
+      "stem": "44b6_8f9ecab4",
+      "embryo": "44b6",
+      "gt_sha256": "6ceab58883d6c10942a763a82f5bf00f9ed18715e2a5ebcb89a569daa8eef235",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_90724892",
+      "embryo": "44b6",
+      "gt_sha256": "a6d522d539bc0ed9b423777357117a17f73870dca0343773b41370e3bd0f8412",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_949adeb1",
+      "embryo": "44b6",
+      "gt_sha256": "2aa62417ffeb79c90cdb51b0c4486a8cd1511522716b406b89564761b2f18f88",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_95029e92",
+      "embryo": "44b6",
+      "gt_sha256": "1fcc211ed5176c80f3d0d4bb7d5cd3d74f8e95ea386990f9ec29698d84b055aa",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_97725144",
+      "embryo": "44b6",
+      "gt_sha256": "e25d70fca6b1ba087fef3859f27eebeb88cfce5e8824901e658fa3951302001d",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_996155de",
+      "embryo": "44b6",
+      "gt_sha256": "090fe0e1d85d015ab2a7086353b4655d0fde218f56bbe4a6ff5cefe2b52e871d",
+      "positives": 1,
+      "negatives": 12
+    },
+    {
+      "stem": "44b6_9be80b04",
+      "embryo": "44b6",
+      "gt_sha256": "988825e31684cce831e67a127edd559889b175fe27ef27cf58943868e09d9eab",
+      "positives": 1,
+      "negatives": 166
+    },
+    {
+      "stem": "44b6_9bfa6a0a",
+      "embryo": "44b6",
+      "gt_sha256": "268705f06f5baec2744b995053bb328bbf9e5a85a1c435c6eeaa05f217b074cc",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_a21120c2",
+      "embryo": "44b6",
+      "gt_sha256": "eb5a60f80cc3a0ab810928660c76090a12a3533b2cb7ea1067a08d66abd8f5b6",
+      "positives": 2,
+      "negatives": 1
+    },
+    {
+      "stem": "44b6_a2bb48bb",
+      "embryo": "44b6",
+      "gt_sha256": "a9809302e78cc42d4dc8c6e4b5a1fded34dff16832dd48cd8aff8d8c6782abbe",
+      "positives": 0,
+      "negatives": 176
+    },
+    {
+      "stem": "44b6_aaf8b0ea",
+      "embryo": "44b6",
+      "gt_sha256": "b6565d0c6ae766a12766350468cbc156b36efb92970da369d34e984e5db311c2",
+      "positives": 1,
+      "negatives": 12
+    },
+    {
+      "stem": "44b6_abf82518",
+      "embryo": "44b6",
+      "gt_sha256": "c6c74c5b81e81ff21c3e0aefbce949f5b7a79323b2d3fa2219b9651c6f974291",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_b2c44266",
+      "embryo": "44b6",
+      "gt_sha256": "f56573c739fe36ee076f1398880fcdb420a585c0aef052ad89f93f0513aa54d5",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_c15fded2",
+      "embryo": "44b6",
+      "gt_sha256": "5cde23d384c6a41836b79219f03387f5571b342987539d8731833f9e2dc7fb74",
+      "positives": 0,
+      "negatives": 7
+    },
+    {
+      "stem": "44b6_c50204e0",
+      "embryo": "44b6",
+      "gt_sha256": "0edf25c2e19168511499bb44c435861d9913770f65c76b359dceb5bce448f172",
+      "positives": 2,
+      "negatives": 10
+    },
+    {
+      "stem": "44b6_c771cb04",
+      "embryo": "44b6",
+      "gt_sha256": "cf63f239ac75bff499f4941a9663afa9a251a8b66f500e0f8673917969819e79",
+      "positives": 0,
+      "negatives": 3
+    },
+    {
+      "stem": "44b6_c8e2a523",
+      "embryo": "44b6",
+      "gt_sha256": "411097f57d03485ad9393f754b94e1aeac70bed26a69bc546e82ddf0edffd16a",
+      "positives": 1,
+      "negatives": 4
+    },
+    {
+      "stem": "44b6_c96cfa10",
+      "embryo": "44b6",
+      "gt_sha256": "057d247b7023538fc3ef34be6e51258a7c7572c197b7ef5119c345f18a369dbb",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_cf2536e8",
+      "embryo": "44b6",
+      "gt_sha256": "7b01aaa474684d26ca07afa0f7c5b9d36dfe0d6ca6e996ae326233635500881d",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_cf8fed6b",
+      "embryo": "44b6",
+      "gt_sha256": "a9ea22ff2c7ea07910d2980c23e710091099ec4f9112af803355cd68166871ef",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_d29c9ab2",
+      "embryo": "44b6",
+      "gt_sha256": "1240341f6468f158d0c5bb078468eae5d350a8904d05a311b7f7466f5ccaf7b0",
+      "positives": 0,
+      "negatives": 147
+    },
+    {
+      "stem": "44b6_d2f34f90",
+      "embryo": "44b6",
+      "gt_sha256": "b667abb9be882bed93ae9203c2927898a5e41a04fc29def5b2637d0c9a7d7118",
+      "positives": 2,
+      "negatives": 5
+    },
+    {
+      "stem": "44b6_d5e7d891",
+      "embryo": "44b6",
+      "gt_sha256": "8eb04a1781c3a49ab7094f014b989566217f6b51133a4e8daea5c6ec2af77735",
+      "positives": 1,
+      "negatives": 54
+    },
+    {
+      "stem": "44b6_d754aa59",
+      "embryo": "44b6",
+      "gt_sha256": "d117ee046f987a71f582ec807adb5979c66836eaff330f4373e9a235ee6c9ae0",
+      "positives": 1,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_d78e09d9",
+      "embryo": "44b6",
+      "gt_sha256": "a7fbf051a114cc70e80cf3f57de1586e1e599bb147c8cb8b2aa7db84d8cf516c",
+      "positives": 0,
+      "negatives": 1
+    },
+    {
+      "stem": "44b6_db3c847b",
+      "embryo": "44b6",
+      "gt_sha256": "362db639a79b14cbcb922fe2f67dd569092e284bfb72a04e71ce81eba0fb385d",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_ddf577ad",
+      "embryo": "44b6",
+      "gt_sha256": "102bb8cd3ca3e4b8aad4b2379005bf2a91ac1cfb8ac834d9c190d962ac2f212c",
+      "positives": 0,
+      "negatives": 100
+    },
+    {
+      "stem": "44b6_deabac95",
+      "embryo": "44b6",
+      "gt_sha256": "ebd2c0a46fabb7d94dd6665d632f366593dd5e920404e88557d0fde3196b9e52",
+      "positives": 1,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_e28840c6",
+      "embryo": "44b6",
+      "gt_sha256": "afad5af6b6da4ff80a054b541551cd2eb41ae1ffcbc704d88461315ebc6927c7",
+      "positives": 2,
+      "negatives": 184
+    },
+    {
+      "stem": "44b6_e29f0176",
+      "embryo": "44b6",
+      "gt_sha256": "d3ffb6812e3dac39b875fd68cacd55c671a3f5edcc767b8591a1f6fe0f368834",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_e31261b4",
+      "embryo": "44b6",
+      "gt_sha256": "e2657ab7769a2b5c98b1d9f7bd830321303e64d6097f019256c031af153e3913",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_e35b117d",
+      "embryo": "44b6",
+      "gt_sha256": "90b7e2de2924f4f2c6ec3c75512184760dea9e09a7f35a5e9f34181c3ae8164c",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_e57ff5c6",
+      "embryo": "44b6",
+      "gt_sha256": "1319ffb5371619f9d395ca7e087f1c07dc7376c1cb41300fc9ac0306f80d3f9e",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "44b6_eb2880fc",
+      "embryo": "44b6",
+      "gt_sha256": "985952e6ee6fbd30c583179353d1577ac412ccfc3c26c70cee9ce9dd96bb8135",
+      "positives": 1,
+      "negatives": 4
+    },
+    {
+      "stem": "44b6_f28707c6",
+      "embryo": "44b6",
+      "gt_sha256": "8f8e6503ec4ba82dcae048a8d250545e0b7893d6eb4e9617d04976bad4842a6c",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_05b6850b",
+      "embryo": "6bba",
+      "gt_sha256": "dfa13b910152704fba843bc61bd474358d3304a9baa7b66f5526c9e6cf4a68c2",
+      "positives": 0,
+      "negatives": 3
+    },
+    {
+      "stem": "6bba_05db0fb1",
+      "embryo": "6bba",
+      "gt_sha256": "deb900cad2ce25996fa18a265e37904d30fc9ae8162c127523b9229f6ad5aefe",
+      "positives": 3,
+      "negatives": 17
+    },
+    {
+      "stem": "6bba_062c8d37",
+      "embryo": "6bba",
+      "gt_sha256": "fdb7fe7ab9cc0ad754671ad894cbd207f7c792c6a2b930b4a6ebd5c8d7f3d221",
+      "positives": 1,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_07477033",
+      "embryo": "6bba",
+      "gt_sha256": "ffb092705bc208d611ce38d0b06fd8dae6c52cc6d1be011af8b3a44a246b899a",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_07e24132",
+      "embryo": "6bba",
+      "gt_sha256": "c303515cb32921f87d904eeac82b1102ca69d68a57246a8057e31fbde73ef603",
+      "positives": 2,
+      "negatives": 35
+    },
+    {
+      "stem": "6bba_085bf656",
+      "embryo": "6bba",
+      "gt_sha256": "a4f43134a43d243cbbad71a62451274df4c9b4b456e3c6d7bd481effb554f614",
+      "positives": 1,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_09961292",
+      "embryo": "6bba",
+      "gt_sha256": "091e1b365f9d645adeb2e3c30ea83561bb4cb0369f0d066503f376dc83737f51",
+      "positives": 4,
+      "negatives": 89
+    },
+    {
+      "stem": "6bba_0c7fa718",
+      "embryo": "6bba",
+      "gt_sha256": "af8de3b81119960278f6bd92c7d299b46d632762f6a2fea43e0828f7f8d35e9e",
+      "positives": 0,
+      "negatives": 5
+    },
+    {
+      "stem": "6bba_0e7c0d07",
+      "embryo": "6bba",
+      "gt_sha256": "e81e92e3d3a9835d790f24fe02bda9f8ff7275bcc1873581dbbd9383cf3ec0e7",
+      "positives": 1,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_12665c0e",
+      "embryo": "6bba",
+      "gt_sha256": "3b69d1c9c820c7a8dd9dbf9c29bd7a2e38579f0963cfba14a3bf9851e6f4ffc2",
+      "positives": 3,
+      "negatives": 59
+    },
+    {
+      "stem": "6bba_13f19531",
+      "embryo": "6bba",
+      "gt_sha256": "226141d5e11df69d5650272688bd2f9da5a36007d5e71a3c47ebb7f022c51752",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_15403b9a",
+      "embryo": "6bba",
+      "gt_sha256": "7f66dd95b18c804cd363a0f68f3ab9f470fc1665d9795ef4b76d703d1a5601bb",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_1d0d8384",
+      "embryo": "6bba",
+      "gt_sha256": "4b2d166c54cdf7108bd883aa337d932715340973e51ed405f5e45c5c37bc76fa",
+      "positives": 1,
+      "negatives": 171
+    },
+    {
+      "stem": "6bba_1ebfb80d",
+      "embryo": "6bba",
+      "gt_sha256": "4dfdda2327640adf7324efaa60c3bce9ac73a5a9c38170363ef408e92cd79a7b",
+      "positives": 0,
+      "negatives": 1
+    },
+    {
+      "stem": "6bba_1f58c2f6",
+      "embryo": "6bba",
+      "gt_sha256": "85c7561a96aea8f4cd0ef0da548c31c1178809480445bc2c3ec0b19a786fbe2e",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_207c6aaf",
+      "embryo": "6bba",
+      "gt_sha256": "c79509032f00d7a134888f79510bfb31b9f3cfa3804d49ea70844c22e3de6b05",
+      "positives": 1,
+      "negatives": 4
+    },
+    {
+      "stem": "6bba_20852818",
+      "embryo": "6bba",
+      "gt_sha256": "3f66bbf80d79f4617d2803e84630322647e2fa67fe68ceba76cf00c3dfcea762",
+      "positives": 3,
+      "negatives": 6
+    },
+    {
+      "stem": "6bba_2312ac41",
+      "embryo": "6bba",
+      "gt_sha256": "08b04b3d62d450c6d9b293b00a5ed3438c3c56c28fdffe512c3a30749f767e8f",
+      "positives": 2,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_23af9eeb",
+      "embryo": "6bba",
+      "gt_sha256": "b507a978ff80b5390fefe387f77fa5984157351217b83da707a35032df83a933",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_2540cd90",
+      "embryo": "6bba",
+      "gt_sha256": "1a860bd24f6c39e5f70e4223686a13c70e80d77ab4e8412b54e13d87c874aaed",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_2646afc7",
+      "embryo": "6bba",
+      "gt_sha256": "767c387967a3f0bbda0f87375719ab484055344c6f3c4e1c84202c1167a9609e",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_268e1230",
+      "embryo": "6bba",
+      "gt_sha256": "69151b9763f80254c7669f117ca571a65ceab09a4990a1889a7cda6cdbd0b11d",
+      "positives": 1,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_2819ca14",
+      "embryo": "6bba",
+      "gt_sha256": "6972f74bffac9710b37836504acdc92c390b5f2e637584ba9ea0bea48a6b49de",
+      "positives": 1,
+      "negatives": 5
+    },
+    {
+      "stem": "6bba_283bf9f1",
+      "embryo": "6bba",
+      "gt_sha256": "62f0cd0560fea2b3985b91edfc6feaba3970edb171b3f67beebd0b6bc18732a8",
+      "positives": 0,
+      "negatives": 13
+    },
+    {
+      "stem": "6bba_312f0dc3",
+      "embryo": "6bba",
+      "gt_sha256": "b47552ece4065e47fc82f4202b6bbf2f2da9caffba0c0e2d7d4d0fff999d9728",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_32db13fc",
+      "embryo": "6bba",
+      "gt_sha256": "7ed3e377d6aeaf471d870607eb4eb3ff41bab7bbabc49283e7ddb8921f8227a9",
+      "positives": 1,
+      "negatives": 2
+    },
+    {
+      "stem": "6bba_337b1b3a",
+      "embryo": "6bba",
+      "gt_sha256": "21b3b7509878263cb73e1437b155299be3b2625da5f6faff86816629ce2ff226",
+      "positives": 2,
+      "negatives": 29
+    },
+    {
+      "stem": "6bba_372c8cb8",
+      "embryo": "6bba",
+      "gt_sha256": "819ed6cd4a5f66c07aca8c8372ab89295188a1e2034c7dc4bf2f33cc944bd42e",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_3a1849c2",
+      "embryo": "6bba",
+      "gt_sha256": "0f4a974aae74d54565ffe945ccbb65e4ec29f6aecf998f95057ac0aa907836df",
+      "positives": 0,
+      "negatives": 4
+    },
+    {
+      "stem": "6bba_3abfe10a",
+      "embryo": "6bba",
+      "gt_sha256": "6b780f573fce4766667010cc00d68bb0e2126e5eca738153a8499d101796ac2f",
+      "positives": 1,
+      "negatives": 25
+    },
+    {
+      "stem": "6bba_3c5691b6",
+      "embryo": "6bba",
+      "gt_sha256": "1855385e5edfab1302f8e352457823273b240662150103af5bf79ca221bc1432",
+      "positives": 2,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_3db54e20",
+      "embryo": "6bba",
+      "gt_sha256": "e2e340d7bc6c8d03325293d0850a58f6bb9d23488b314c4c7d08c15c8240edf4",
+      "positives": 1,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_3fda6b25",
+      "embryo": "6bba",
+      "gt_sha256": "bfcdb31b86903d4485b6b2debf8f526b1b6f3d5038bac690b5b853534dd65906",
+      "positives": 1,
+      "negatives": 7
+    },
+    {
+      "stem": "6bba_43fea39d",
+      "embryo": "6bba",
+      "gt_sha256": "432ae28e7bf9041a7f767388f2a82ed2ecc9e2013962a98051810ebaa1cf7ed0",
+      "positives": 0,
+      "negatives": 15
+    },
+    {
+      "stem": "6bba_474be664",
+      "embryo": "6bba",
+      "gt_sha256": "cd717d22228540035e225bc97f2f0f2419cc1962a7084e45528907febc0400c3",
+      "positives": 1,
+      "negatives": 2
+    },
+    {
+      "stem": "6bba_48816121",
+      "embryo": "6bba",
+      "gt_sha256": "79699106f8e607b5e3562b86f94266be69f0c08568814add8ae5b04687070696",
+      "positives": 5,
+      "negatives": 7
+    },
+    {
+      "stem": "6bba_4aa14c89",
+      "embryo": "6bba",
+      "gt_sha256": "099f471cfac3ac2ff798c0a4c4aa38ae757e48fa945cc1c83b77d571e7496696",
+      "positives": 0,
+      "negatives": 3
+    },
+    {
+      "stem": "6bba_4f99ce20",
+      "embryo": "6bba",
+      "gt_sha256": "37828fe35cee6879534c875027fc81e322d51f30c6c0a30bb53d757c29ef4c53",
+      "positives": 2,
+      "negatives": 4
+    },
+    {
+      "stem": "6bba_4ffd3da3",
+      "embryo": "6bba",
+      "gt_sha256": "0b7a2e71a1ed40ec353ed5a2980d09eacaa8dec59b38317a57a0ffe4427af1b3",
+      "positives": 3,
+      "negatives": 2
+    },
+    {
+      "stem": "6bba_55b7eebe",
+      "embryo": "6bba",
+      "gt_sha256": "be3bc5d4b34665fa171ea60e752c75dd85ffef03ade458294d68e117cb29c6f8",
+      "positives": 1,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_55c70843",
+      "embryo": "6bba",
+      "gt_sha256": "8013abd79b5c39437ea4cc76b7ae05b89e1d68c0287261d05052963483c2fe46",
+      "positives": 0,
+      "negatives": 5
+    },
+    {
+      "stem": "6bba_57b7cc1e",
+      "embryo": "6bba",
+      "gt_sha256": "74eb202189df5907f3ba480d80a0ff66e22694f441a8e53b94789c95a8b09b62",
+      "positives": 3,
+      "negatives": 1
+    },
+    {
+      "stem": "6bba_5a4d9360",
+      "embryo": "6bba",
+      "gt_sha256": "2d7dab25514ffb8b9d58cc03824f28c476600c18dd882d3603c502647ff6d131",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_5b28472a",
+      "embryo": "6bba",
+      "gt_sha256": "a4b803ae8193a5d2bd9f3e725984dd1d9d1fe3f42cbaacbfc1befcf189fd801d",
+      "positives": 0,
+      "negatives": 2
+    },
+    {
+      "stem": "6bba_5c039895",
+      "embryo": "6bba",
+      "gt_sha256": "8969c1449ad22afa86230898a5bb21e64b97d5880d8c2c64ef76afd3fcb28436",
+      "positives": 3,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_5c824876",
+      "embryo": "6bba",
+      "gt_sha256": "5fb5ae4a5ae6451aa989becfdf16da7bc6e3e15dccca056e1bdaa0018dd34964",
+      "positives": 1,
+      "negatives": 1
+    },
+    {
+      "stem": "6bba_5dfe9ad1",
+      "embryo": "6bba",
+      "gt_sha256": "dc289eb1f5e0b86893ab0c19ca09de1dbca8d9ac78649fe584c7baabbb673963",
+      "positives": 0,
+      "negatives": 1
+    },
+    {
+      "stem": "6bba_5f89039d",
+      "embryo": "6bba",
+      "gt_sha256": "8c9a233fb15c8ff609314b99a55ff53572bf819672740179e327a5e96966ec63",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_61dd1e0d",
+      "embryo": "6bba",
+      "gt_sha256": "e511f227397c451d2ccd1738e2ac32bb84535c09719588c37b15adc26737db65",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_61ecbe65",
+      "embryo": "6bba",
+      "gt_sha256": "884cf2712d3f16b11043daaaa5acbe54de716d80a51f1f31052b41edb1c7267f",
+      "positives": 1,
+      "negatives": 1
+    },
+    {
+      "stem": "6bba_6321a359",
+      "embryo": "6bba",
+      "gt_sha256": "6c3eba1bdfada0e30652ac918607608a85ba6f7b9aad16dedfa31fffc8a6180c",
+      "positives": 1,
+      "negatives": 1
+    },
+    {
+      "stem": "6bba_6479435d",
+      "embryo": "6bba",
+      "gt_sha256": "6d668229a6603dcaa630c69ca3bd848dc744935d76321221a4bdfd7ed5ff9935",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_67ebd073",
+      "embryo": "6bba",
+      "gt_sha256": "8884fa7166190c527ad8b6103dba7925f4bf9de925f06888cf55ac2e135e5199",
+      "positives": 1,
+      "negatives": 3
+    },
+    {
+      "stem": "6bba_6ca87370",
+      "embryo": "6bba",
+      "gt_sha256": "e95d53ebe95dfc245b21aa2f03824a66319a6bff4a320223ef3b3dd87de9e92a",
+      "positives": 1,
+      "negatives": 21
+    },
+    {
+      "stem": "6bba_6db0e9b4",
+      "embryo": "6bba",
+      "gt_sha256": "2d0e773193aa8c7d7a2451c194137fdc1c4d07f96933b2e5cb379d3d244da832",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_6feb10f0",
+      "embryo": "6bba",
+      "gt_sha256": "521debc2a66612b2be66258d9ce09615096302d24dc950426f712ba87521cd71",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_6feeb0b1",
+      "embryo": "6bba",
+      "gt_sha256": "603957b43a8208002fe8efbed093c186a7ab9ea4c1fe0027401039e64eec1524",
+      "positives": 0,
+      "negatives": 1
+    },
+    {
+      "stem": "6bba_705ec2c9",
+      "embryo": "6bba",
+      "gt_sha256": "cd044b79c63082819151821ce551f0f3bf2ecb311ec8d073501c28bfed58cf96",
+      "positives": 1,
+      "negatives": 1
+    },
+    {
+      "stem": "6bba_718b21f9",
+      "embryo": "6bba",
+      "gt_sha256": "7e63ba63e8bcfc127a0ee65cd98b5bf0709129eefcc3ab01c51cebb32a036e03",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_74686d6a",
+      "embryo": "6bba",
+      "gt_sha256": "0ca2a43b66418bea5d727215a8d16c92be854ab8d81cee7dca4affd332c4d097",
+      "positives": 2,
+      "negatives": 49
+    },
+    {
+      "stem": "6bba_767a1e17",
+      "embryo": "6bba",
+      "gt_sha256": "312c7a3db72eb572f5f58d1fa13515b9b9c00aa4cb0ad33bc944ecde9c486d4e",
+      "positives": 0,
+      "negatives": 11
+    },
+    {
+      "stem": "6bba_76db78c1",
+      "embryo": "6bba",
+      "gt_sha256": "75842fc08253697bc91c92d3a33f87f905cbbd0ad777fe8c55cd5f04f01f5924",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_784a78c9",
+      "embryo": "6bba",
+      "gt_sha256": "d51fba47ba1913b3397d0d80820bd24a4aa1c20f8839594c04a84992c56181d2",
+      "positives": 1,
+      "negatives": 24
+    },
+    {
+      "stem": "6bba_786893ac",
+      "embryo": "6bba",
+      "gt_sha256": "78b5a3fa93d911d033dcbdb92477b90eeeeec83562c369d5b9be8e835ed74c99",
+      "positives": 3,
+      "negatives": 16
+    },
+    {
+      "stem": "6bba_789f8168",
+      "embryo": "6bba",
+      "gt_sha256": "f29a6afd595bb1919b7e44f5c71e8862514d78dc90d62100fa19f6af7af8a920",
+      "positives": 0,
+      "negatives": 19
+    },
+    {
+      "stem": "6bba_78a7bd97",
+      "embryo": "6bba",
+      "gt_sha256": "6c218184d4af0056f3376822b1f5f2ec044dde7f375ba09c1b93297ca3eec5f3",
+      "positives": 2,
+      "negatives": 4
+    },
+    {
+      "stem": "6bba_7af54fde",
+      "embryo": "6bba",
+      "gt_sha256": "0efe98f01f0f827ea681f084c70f5e373adda8016652a29d2f47f982122deacd",
+      "positives": 2,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_7b5d3b2c",
+      "embryo": "6bba",
+      "gt_sha256": "26f5f3e7cc2ba2c9ffd21afa8129c140ccf583e7524c257f22359607774f7ee4",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_7d3058ae",
+      "embryo": "6bba",
+      "gt_sha256": "2181832bc4ca37e0c74823ea847363164c0d9e89023cbac1fd29f2193cc838e8",
+      "positives": 2,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_7f87b3d8",
+      "embryo": "6bba",
+      "gt_sha256": "a4a40566a8228e67df37c112363e17959b9f44bfe722c35964a496ce502a476f",
+      "positives": 3,
+      "negatives": 28
+    },
+    {
+      "stem": "6bba_80d12824",
+      "embryo": "6bba",
+      "gt_sha256": "1e300860295fbdd8f22833f91189159cb294d6277eea1d57c28c6c06cc07a3a0",
+      "positives": 1,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_825bd1c6",
+      "embryo": "6bba",
+      "gt_sha256": "95b88f5049f5cf25a0bed0acb47fd662ed2b52119ce04cf3007099632b66119a",
+      "positives": 0,
+      "negatives": 3
+    },
+    {
+      "stem": "6bba_87289e13",
+      "embryo": "6bba",
+      "gt_sha256": "548cffb8f51edc60ea2a095997f78581c2bf81f0e3cec5e8670a8aa164101306",
+      "positives": 1,
+      "negatives": 1
+    },
+    {
+      "stem": "6bba_8b7818bf",
+      "embryo": "6bba",
+      "gt_sha256": "a4663509dcc462a5f12d40ce25b31cc1d992de5aaa675d386752a85bad4ef6ea",
+      "positives": 2,
+      "negatives": 1
+    },
+    {
+      "stem": "6bba_907271db",
+      "embryo": "6bba",
+      "gt_sha256": "c520ce7cd7af676c560839152b43165f913b7d2fd9fe7658e9982728c2d53caf",
+      "positives": 1,
+      "negatives": 5
+    },
+    {
+      "stem": "6bba_91951b3a",
+      "embryo": "6bba",
+      "gt_sha256": "7cc21783896353833e086fae6a22c46c48d3cbeab0a552fa13cce7ca165b0620",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_96833384",
+      "embryo": "6bba",
+      "gt_sha256": "5946f6fac8078078665ec8939b6c315b33d61256bf22d7d14fd7024a2b7fc6ae",
+      "positives": 0,
+      "negatives": 1
+    },
+    {
+      "stem": "6bba_969618f6",
+      "embryo": "6bba",
+      "gt_sha256": "166470a38b9cf35876c7ad647857412952aa16d71b4bb6346fd8769b470e182e",
+      "positives": 3,
+      "negatives": 39
+    },
+    {
+      "stem": "6bba_971fa5e0",
+      "embryo": "6bba",
+      "gt_sha256": "9a3b61c6487667bf0eeb4f19575d103677198abe7c056125b6f11c643855f543",
+      "positives": 0,
+      "negatives": 24
+    },
+    {
+      "stem": "6bba_9a41d029",
+      "embryo": "6bba",
+      "gt_sha256": "5991ed5ae48e3d741d4d91962d567e44f71c501f710293234e7af3a736d75e7f",
+      "positives": 2,
+      "negatives": 18
+    },
+    {
+      "stem": "6bba_9e23430b",
+      "embryo": "6bba",
+      "gt_sha256": "e0d5e6a1b72f221e7632be74036a5263981ae503e5bdfbf65d424cb57feaa47b",
+      "positives": 1,
+      "negatives": 1
+    },
+    {
+      "stem": "6bba_a5e926bb",
+      "embryo": "6bba",
+      "gt_sha256": "ec3fa149aebb58b0c532f0de5ee4cc54cea18cb05baaed12b3b16055c3a3f4b4",
+      "positives": 0,
+      "negatives": 1
+    },
+    {
+      "stem": "6bba_a90a0b9c",
+      "embryo": "6bba",
+      "gt_sha256": "ac75e9ec7ba40b94a336b8087977fd6be7e5c3458aa5fbc9f01297695386d983",
+      "positives": 0,
+      "negatives": 42
+    },
+    {
+      "stem": "6bba_ab78413d",
+      "embryo": "6bba",
+      "gt_sha256": "ad4a72a1473a0dfde49a5a15803e85a5cdb90c2034af5202ecc31ca8403e4e54",
+      "positives": 2,
+      "negatives": 10
+    },
+    {
+      "stem": "6bba_acd782a8",
+      "embryo": "6bba",
+      "gt_sha256": "5d14255e03d50a17008a9966b2c6f7c7f55f31f717f906593511000329283e55",
+      "positives": 0,
+      "negatives": 7
+    },
+    {
+      "stem": "6bba_ae82a791",
+      "embryo": "6bba",
+      "gt_sha256": "ae0812c78cab6011c8fb44473c3301f2e863386ef4cdaf3228a30a0250bbc814",
+      "positives": 0,
+      "negatives": 27
+    },
+    {
+      "stem": "6bba_aeee7805",
+      "embryo": "6bba",
+      "gt_sha256": "25e2574adbfc6f936282072db3c79aca3254f61c9b4d6a8958b4489834833c19",
+      "positives": 1,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_af149c94",
+      "embryo": "6bba",
+      "gt_sha256": "5352018518087b700f5522bd6e79f9fcabe0ce5e6f791139b89cd48e540c09d4",
+      "positives": 0,
+      "negatives": 19
+    },
+    {
+      "stem": "6bba_afb141ff",
+      "embryo": "6bba",
+      "gt_sha256": "0cc315aa5fe9c3b76cb8f48dbcd8718a94f37fba69bc6c729bf69402e944269e",
+      "positives": 2,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_b1ae37b9",
+      "embryo": "6bba",
+      "gt_sha256": "d16c0558076ed4b65ac0e739bab1668e0138b6255aa60dbbcf97b0a178261337",
+      "positives": 0,
+      "negatives": 6
+    },
+    {
+      "stem": "6bba_b204cac7",
+      "embryo": "6bba",
+      "gt_sha256": "c14a02f37285595018b52fb0c497a406d7a889565ed068654020bc08d60e62a1",
+      "positives": 2,
+      "negatives": 4
+    },
+    {
+      "stem": "6bba_b329af44",
+      "embryo": "6bba",
+      "gt_sha256": "85859cf33a4a1f2036fcc0c4fecfa010be2d4b285a7411765d90fc294f49c596",
+      "positives": 1,
+      "negatives": 5
+    },
+    {
+      "stem": "6bba_b693381b",
+      "embryo": "6bba",
+      "gt_sha256": "8a2831c1b484f22c925cfe8d9117a3b5a6c535f879ce1552cbbce3babcbe0d4c",
+      "positives": 0,
+      "negatives": 2
+    },
+    {
+      "stem": "6bba_bb9f20c3",
+      "embryo": "6bba",
+      "gt_sha256": "84de7e387731dc8449a48fbde20e2759a7c3c39a40b00bd118df7fd7a4edb0da",
+      "positives": 3,
+      "negatives": 103
+    },
+    {
+      "stem": "6bba_bbb708ca",
+      "embryo": "6bba",
+      "gt_sha256": "991e76e27546891e26295fa5fc293737578b4ee0cb68dea47f61a9518b22131f",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_c27cba08",
+      "embryo": "6bba",
+      "gt_sha256": "f597641f2df1d0539f96899c1c5edb8bc318d8185a1eb75f30a84873612c0389",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_c328f2fd",
+      "embryo": "6bba",
+      "gt_sha256": "bbcfcf9305f552f3f43b3d5bd56ae315a53ce1c26ecff4db89458a0d3b67789c",
+      "positives": 2,
+      "negatives": 9
+    },
+    {
+      "stem": "6bba_c73a1d11",
+      "embryo": "6bba",
+      "gt_sha256": "300b20f2a7fc07bcb55d08b2ab21918b9b9b4f6233428aa460670d003678a631",
+      "positives": 0,
+      "negatives": 25
+    },
+    {
+      "stem": "6bba_cdcfe533",
+      "embryo": "6bba",
+      "gt_sha256": "55a752106d0a4faf2ab41e1dff5012a7f41f95543c9c43a075fb359ef27bb48f",
+      "positives": 3,
+      "negatives": 55
+    },
+    {
+      "stem": "6bba_cf35214c",
+      "embryo": "6bba",
+      "gt_sha256": "8ce29428d70be5cc5325d10ca90e5c868bb4d34c7cc07309f136ba41e367fab6",
+      "positives": 0,
+      "negatives": 1
+    },
+    {
+      "stem": "6bba_cff5865f",
+      "embryo": "6bba",
+      "gt_sha256": "985ea6c5426d74ce9b61dce1d60a75c96395bc2d94c3fea96226febb3215b0ed",
+      "positives": 0,
+      "negatives": 45
+    },
+    {
+      "stem": "6bba_d0fc38b5",
+      "embryo": "6bba",
+      "gt_sha256": "da9a6efad663ce5d7bddf8b65e720b2145386af0be2a49ddfb800a8917103c80",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_d1acb6ff",
+      "embryo": "6bba",
+      "gt_sha256": "fbd35e0d507021f89e1fa56c32c41ad84789e0ecb8ea746e42b2133760b2cdb8",
+      "positives": 1,
+      "negatives": 10
+    },
+    {
+      "stem": "6bba_d2b9fc0c",
+      "embryo": "6bba",
+      "gt_sha256": "f0c98cf4b959a5aed610e88d1193404108eff7e2184920d997dfa14df54c9562",
+      "positives": 2,
+      "negatives": 2
+    },
+    {
+      "stem": "6bba_d3da753b",
+      "embryo": "6bba",
+      "gt_sha256": "264c8eff7ef33a9767c9d62384c53fdd9e23ef1e2a782281f227b33e7aaa66fa",
+      "positives": 1,
+      "negatives": 6
+    },
+    {
+      "stem": "6bba_d5eae175",
+      "embryo": "6bba",
+      "gt_sha256": "d021cad3bb86bf2721c3cdeb56f9fe45aec9776fc3b83866a45a404cd2e35b98",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_d6ecebbb",
+      "embryo": "6bba",
+      "gt_sha256": "711d4f8f70c577e269a045b9f4ca1d1fa71b15f071763783efe5f34ec7f332f8",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_d82a4fc6",
+      "embryo": "6bba",
+      "gt_sha256": "044ebae0f7c0156890d2c456f29ce17d9eb43aa3abd57f35639db383bc012631",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_debd7bfa",
+      "embryo": "6bba",
+      "gt_sha256": "dec6bc6e86729710cddeee21ff0184d448a490639624ca481eca8c77e65304c4",
+      "positives": 4,
+      "negatives": 18
+    },
+    {
+      "stem": "6bba_df673a83",
+      "embryo": "6bba",
+      "gt_sha256": "dd096ebed0d8352efcf1e3786295bbeb8532b8d0249b74a79e55caa289057a71",
+      "positives": 4,
+      "negatives": 5
+    },
+    {
+      "stem": "6bba_e16ffc58",
+      "embryo": "6bba",
+      "gt_sha256": "3fed8a857039ba43f48e49bd9aa6d474605417186487b528b64c241e13a32168",
+      "positives": 1,
+      "negatives": 22
+    },
+    {
+      "stem": "6bba_e5e44988",
+      "embryo": "6bba",
+      "gt_sha256": "82a63bb64acee23572d54fb15540d6fde0bbe7b508b71e4bc539c5039bcb999c",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_ebdf3b34",
+      "embryo": "6bba",
+      "gt_sha256": "f017f290eb81f72fa42e5655e95360e9393ef6db9eb29ab8d5098dc95c5b0120",
+      "positives": 2,
+      "negatives": 23
+    },
+    {
+      "stem": "6bba_ebff6e76",
+      "embryo": "6bba",
+      "gt_sha256": "3e8771525ff1d6176a84f1a90abbf55ca44d96da6bbb25a5195004f43db1b0d4",
+      "positives": 0,
+      "negatives": 101
+    },
+    {
+      "stem": "6bba_ed9377fd",
+      "embryo": "6bba",
+      "gt_sha256": "7999698ea452cd906b4a24a6c470b8e1dd6c7f9947bf6c60b9a8ff525099bbe7",
+      "positives": 0,
+      "negatives": 17
+    },
+    {
+      "stem": "6bba_edf14583",
+      "embryo": "6bba",
+      "gt_sha256": "c83f4b3e6643873f22622c6d7e4673044cb287463b739263fd5b13d706785974",
+      "positives": 0,
+      "negatives": 24
+    },
+    {
+      "stem": "6bba_eebc57a5",
+      "embryo": "6bba",
+      "gt_sha256": "591da04e4f791e2bf791dd4f0f1ed3e19fd4090a96cfd0e2ced2492c5f3669c6",
+      "positives": 0,
+      "negatives": 8
+    },
+    {
+      "stem": "6bba_ef7b4f7e",
+      "embryo": "6bba",
+      "gt_sha256": "88ecf0895c8b2f38e5f1cbe1c2a0b487ead0f0eae40c5ec5bc86bec2eb384db1",
+      "positives": 2,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_f17befbc",
+      "embryo": "6bba",
+      "gt_sha256": "6f0a53c5dccd7a9bcdfc59b92ac74337e0058f1aaa8e77ed8f705df7d078c83d",
+      "positives": 0,
+      "negatives": 8
+    },
+    {
+      "stem": "6bba_f1fde7e0",
+      "embryo": "6bba",
+      "gt_sha256": "9af90095a8e4d0220f5afedc0058d59b67e77e1d097dd5011efa517066190dab",
+      "positives": 0,
+      "negatives": 3
+    },
+    {
+      "stem": "6bba_f20478e9",
+      "embryo": "6bba",
+      "gt_sha256": "9a5405f6896694d54866d752e349180331e8ac6de4de4dd77f117999ed98092d",
+      "positives": 1,
+      "negatives": 5
+    },
+    {
+      "stem": "6bba_f4ae811c",
+      "embryo": "6bba",
+      "gt_sha256": "4e4a96d07119707d71ce8b897a0d2fac12e93fbdb45cb028928ea849e077a9d6",
+      "positives": 0,
+      "negatives": 5
+    },
+    {
+      "stem": "6bba_f8ffd5e7",
+      "embryo": "6bba",
+      "gt_sha256": "b1d7b7b526231ab1953fa8655a1783a1069803168ee7dc12a7a9055119f34d54",
+      "positives": 2,
+      "negatives": 25
+    },
+    {
+      "stem": "6bba_fbc898dc",
+      "embryo": "6bba",
+      "gt_sha256": "84f86d4a953227b850af2e354051f442e1d680ea934dd5675131807cb4ccc05a",
+      "positives": 0,
+      "negatives": 0
+    },
+    {
+      "stem": "6bba_fc516dc6",
+      "embryo": "6bba",
+      "gt_sha256": "8e54816cb85b3588762d0a15369eb74bdd3a373881eed7571542696596d3ded0",
+      "positives": 0,
+      "negatives": 4
+    },
+    {
+      "stem": "6bba_fc5f39dc",
+      "embryo": "6bba",
+      "gt_sha256": "c28133328bad11e1545b12d2410378f3956b121745d43166bdad10feff6e80c1",
+      "positives": 2,
+      "negatives": 2
+    },
+    {
+      "stem": "6bba_fc83837d",
+      "embryo": "6bba",
+      "gt_sha256": "8bd7e9fa11e0810c4701c0b985e54d47ef409828fc22acdbe6aa4a4ad1b69c62",
+      "positives": 0,
+      "negatives": 18
+    },
+    {
+      "stem": "6bba_fe670320",
+      "embryo": "6bba",
+      "gt_sha256": "17cbf30593186d86d6c0b569e0f5584a9b77132ad83fc5a04d444a95c49b7658",
+      "positives": 2,
+      "negatives": 1
+    }
+  ],
+  "seconds": 68.1548912525177,
+  "threshold": 0.95,
+  "negative_rule": "candidate has exactly one annotated parent different from the proposed parent",
+  "sparse_unannotated_as_negative": false,
+  "feature_names": [
+    "parent_distance_min",
+    "parent_distance_max",
+    "sister_distance",
+    "midpoint_distance",
+    "relative_asymmetry",
+    "daughter_angle_cosine",
+    "granddaughter_distance",
+    "sister_separation_change",
+    "daughter_speed_mean",
+    "daughter_speed_difference"
+  ],
+  "diagnostic_scope": "embryo-held-out pair classification; not full tracking CV or formal Kaggle score",
+  "final_model_training_scope": "all labeled training embryos; held-out models used for PP validation",
+  "no_test_labels": true,
+  "formal_score": null
+}

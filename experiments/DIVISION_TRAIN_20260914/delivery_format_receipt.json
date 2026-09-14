@@ -1,0 +1,11 @@
+{
+  "task_id": "DIVISION_TRAIN_20260914",
+  "observed_at_utc": "2026-09-14T08:33:45.437007+00:00",
+  "file": "validator_results.csv",
+  "transformation": "CRLF to LF only for Git delivery; original ordinary output retained in ignored downloads",
+  "raw_sha256": "5d14fbd6caee0cbe90e8b44d47f392c6d1cf8bac4912679b8635c359f041b716",
+  "delivered_sha256": "c5ea9db717fbef282560bcbe4d8f7617c599d1468c060015bc13f1321aa97d2a",
+  "csv_values_equal": true,
+  "line_endings_normalized": 65,
+  "kaggle_source_changed": false
+}

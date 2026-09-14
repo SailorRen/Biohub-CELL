@@ -1,9 +1,9 @@
 {
   "task_id": "DIVISION_TRAIN_20260914",
-  "observed_at_utc": "2026-09-14T06:45:24.916780+00:00",
+  "observed_at_utc": "2026-09-14T08:26:49.408644+00:00",
   "identity": {
     "task_id": "DIVISION_TRAIN_20260914",
-    "observed_at_utc": "2026-09-14T06:45:24.137040+00:00",
+    "observed_at_utc": "2026-09-14T08:26:48.860411+00:00",
     "ref": "sailorren/biohub-division-train-20260914",
     "kernel_id": 134301327,
     "version": 1,
@@ -20,7 +20,7 @@
     ],
     "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461"
   },
-  "status": "RUNNING",
+  "status": "COMPLETE",
   "failure_message": "",
   "formal_score_read": false
 }

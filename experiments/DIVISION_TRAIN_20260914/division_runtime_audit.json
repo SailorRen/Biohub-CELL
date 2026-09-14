@@ -1,0 +1,23 @@
+{
+  "task_id": "DIVISION_TRAIN_20260914",
+  "training_completed": true,
+  "weights_sha256": "0a1f9b93bb529e70f4f7c2ba0907eea8b4cecd2befccc8ba1fb75e569edf77a0",
+  "training_receipt_sha256": "7f151fc5522e9bf4e8d96904a888a9558a4b7fbfbf28185120138396334a1448",
+  "module_sha256": "fdeb80eea2c462e84b9e89b07ca14e57bdf6e8ab679c9a0c42df50edebcddb2c",
+  "selected_label": "tight55",
+  "selected_config": {
+    "MOTION_RELINK_TIGHT_UM": 5.5
+  },
+  "counts": {
+    "safe_divisions_added": 137,
+    "learned_division_context_checked": 5279,
+    "learned_division_scored": 5046,
+    "learned_division_rejected": 4763,
+    "learned_division_accepted": 283,
+    "learned_division_missing_context": 233
+  },
+  "source_models_retrained": false,
+  "formal_score": null,
+  "score_read": false,
+  "submission_sha256": "a4204f0661845b1f4aaa1c480f1b9190d3983f46f88fbe0d35b4fc141f5ec4d2"
+}
