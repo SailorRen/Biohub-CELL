@@ -1,0 +1,20 @@
+{
+  "task_id": "TARGET950_RUN_20260914",
+  "recorded_at_utc": "2026-09-14T08:20:25.382836+00:00",
+  "experiment_status": "PARTIAL_FORMAL_SCORE_PENDING_AT_CUTOFF",
+  "ordinary_inference": "COMPLETE_VERIFIED",
+  "training_executed": false,
+  "formal_submission_id": 56222238,
+  "formal_status_at_last_observation": "PENDING",
+  "formal_score": null,
+  "formal_last_observed_at_utc": "2026-09-14T08:13:51.712973+00:00",
+  "gain_status": "UNKNOWN_NO_FORMAL_SCORE",
+  "target_0950_status": "UNKNOWN_NO_FORMAL_SCORE",
+  "fact_delivery_status": "REMOTE_BYTES_VERIFIED",
+  "fact_commit": "40fd190e9589bbf139b25b2051a447257daab34c",
+  "fact_remote_files_matched": 95,
+  "fact_remote_files_total": 95,
+  "fact_delivery_receipt_sha256": "5333f99297a111ca987cd36ffa990e8f5daeaa921f35c50222f570ed537e3c3b",
+  "overall_completion_claim": false,
+  "note": "此回执证明截止证据已同步，不证明正式评分完成；包含本回执的最后提交还需独立远端回读。"
+}
