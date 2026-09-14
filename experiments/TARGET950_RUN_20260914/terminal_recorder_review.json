@@ -1,0 +1,67 @@
+{
+  "task_id": "TARGET950_RUN_20260914",
+  "status": "PASS",
+  "reviewer": "independent target950_write_gate agent",
+  "observed_at_utc": "2026-09-14T04:07:10.423658+00:00",
+  "scope": "Terminal recorder compatibility and local evidence handling only. Actual ordinary run/formal score remain unverified by this review.",
+  "findings": [],
+  "checks": {
+    "existing_test_receipt_source_hashes_current": true,
+    "independent_test_rerun_21_of_21": true,
+    "three_synthetic_terminal_states_pass_original_frozen_verify_15_of_15_each": true,
+    "original_and_alias_actual_local_gates_pass": true,
+    "production_results_and_ledger_bytes_unchanged": true,
+    "no_network_or_platform_write": true
+  },
+  "synthetic_compatibility_projections": [
+    {
+      "synthetic_public_score": "0.950",
+      "delta_vs_baseline": "0.003",
+      "delta_vs_own_best_before": "0.003",
+      "target_0950_achieved": true,
+      "unchanged_frozen_verify_passed": 15,
+      "unchanged_frozen_verify_total": 15
+    },
+    {
+      "synthetic_public_score": "0.947",
+      "delta_vs_baseline": "0.000",
+      "delta_vs_own_best_before": "0.000",
+      "target_0950_achieved": false,
+      "unchanged_frozen_verify_passed": 15,
+      "unchanged_frozen_verify_total": 15
+    },
+    {
+      "synthetic_public_score": "0.946",
+      "delta_vs_baseline": "-0.001",
+      "delta_vs_own_best_before": "-0.001",
+      "target_0950_achieved": false,
+      "unchanged_frozen_verify_passed": 15,
+      "unchanged_frozen_verify_total": 15
+    }
+  ],
+  "independent_test_result": {
+    "passed": 21,
+    "total": 21,
+    "production_test_receipt_rewritten": false
+  },
+  "source_sha256": {
+    "experiments/TARGET950_RUN_20260914/record_formal_terminal.py": "67263685643b8e235845dd9554ade740702c33fe94140763111a1c109460bd8d",
+    "experiments/TARGET950_RUN_20260914/test_record_formal_terminal.py": "09d15e6a0e24fbbb4100a9671eb51ada06a61ac8731841a2e474243f4b199e59",
+    "experiments/TARGET950_RUN_20260914/terminal_record_tests.json": "0505babfeec0c6c680d7578f8001f03d1c3bdc740459b00ffe2bada1c467881f",
+    "experiments/TARGET950_RUN_20260914/verify.py": "1caba72e31886bcc0af6b7ed66118edcdf8ef35fcb00f0d2389f9330ebf1a9f0",
+    "experiments/TARGET950_RUN_20260914/bound_runner.py": "7293e31ea2edfb36458689aa5fce751ee1abc5bbfb3d0ce08e0bff330d3d8eb3",
+    "experiments/TARGET950_RUN_20260914/manifest.json": "25b8c49345e0b5b7a31d82b7d9e1661178b35d04aad04149bac11ddd6e09450c",
+    "experiments/TARGET950_RUN_20260914/alias_manifest.json": "a0ef856e63d828327d2a25381cc94817d9ebeb44b97d5e3fcfda51118cf0d6d6",
+    "tasks/CODEX_20260914_BIOHUB_TARGET950_RUN_CONTRACT.json": "ec12ddf6f6982aa4573300d599370481ceabe30b749556f194169c4e5e4f3b80",
+    "tasks/CODEX_20260914_BIOHUB_TARGET950_PLATFORM_BINDING.json": "7fdcaacd0040bc1479e52544a53695e070f1e730d5714289a962aced98f4a821"
+  },
+  "network_requests": 0,
+  "kaggle_write_requests": 0,
+  "production_state_mutations": 0,
+  "notes": [
+    "Formal score requires exact COMPLETE submission ID and description; pending, failed, missing and nonfinite values are rejected.",
+    "Both source representations, exact Version/SV and fixed inputs remain bound; requested and canonical ref fields are preserved.",
+    "Current comparable baseline and best before submission are compared separately using Decimal.",
+    "The recorder performs no platform writes and leaves the unique save/submit ledger unchanged. Ordinary PP is reported separately from unknown hidden rerun PP."
+  ]
+}

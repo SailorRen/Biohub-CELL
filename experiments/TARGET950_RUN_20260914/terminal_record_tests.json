@@ -1,0 +1,102 @@
+{
+  "task_id": "TARGET950_RUN_20260914",
+  "status": "PASS",
+  "executed": true,
+  "observed_at_utc": "2026-09-14T03:38:57.203205+00:00",
+  "passed": 21,
+  "total": 21,
+  "checks": [
+    {
+      "id": "formal_0.950_exact_decimal_and_input_immutable",
+      "passed": true
+    },
+    {
+      "id": "formal_0.947_exact_decimal_and_input_immutable",
+      "passed": true
+    },
+    {
+      "id": "formal_0.946_exact_decimal_and_input_immutable",
+      "passed": true
+    },
+    {
+      "id": "current_baseline_and_presubmit_best_distinguished",
+      "passed": true
+    },
+    {
+      "id": "running_is_not_score",
+      "passed": true
+    },
+    {
+      "id": "error_is_not_score",
+      "passed": true
+    },
+    {
+      "id": "empty_score_rejected",
+      "passed": true
+    },
+    {
+      "id": "nan_score_rejected",
+      "passed": true
+    },
+    {
+      "id": "infinite_score_rejected",
+      "passed": true
+    },
+    {
+      "id": "incomplete_listing_rejected",
+      "passed": true
+    },
+    {
+      "id": "wrong_formal_response_id",
+      "passed": true
+    },
+    {
+      "id": "wrong_formal_description",
+      "passed": true
+    },
+    {
+      "id": "wrong_sv_rejected",
+      "passed": true
+    },
+    {
+      "id": "sdk_hash_cannot_replace_remote_hash",
+      "passed": true
+    },
+    {
+      "id": "changed_live_cell_rejected",
+      "passed": true
+    },
+    {
+      "id": "ordinary_unverified_rejected",
+      "passed": true
+    },
+    {
+      "id": "fixed_inputs_unverified_rejected",
+      "passed": true
+    },
+    {
+      "id": "second_submit_operation_rejected",
+      "passed": true
+    },
+    {
+      "id": "duplicate_submission_row_rejected",
+      "passed": true
+    },
+    {
+      "id": "stale_snapshot_before_submit_rejected",
+      "passed": true
+    },
+    {
+      "id": "presubmit_best_tamper_rejected",
+      "passed": true
+    }
+  ],
+  "scope": "Synthetic terminal snapshot processing only. Historical local identity receipts seed fixtures; no real terminal score is claimed.",
+  "network_requests": 0,
+  "kaggle_write_requests": 0,
+  "production_state_mutations": 0,
+  "source_sha256": {
+    "record_formal_terminal.py": "67263685643b8e235845dd9554ade740702c33fe94140763111a1c109460bd8d",
+    "test_record_formal_terminal.py": "09d15e6a0e24fbbb4100a9671eb51ada06a61ac8731841a2e474243f4b199e59"
+  }
+}
