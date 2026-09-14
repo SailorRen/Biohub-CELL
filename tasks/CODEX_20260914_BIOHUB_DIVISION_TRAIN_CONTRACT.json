@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "task_id": "DIVISION_TRAIN_20260914",
+  "goal": "实际训练一个分裂判别候选并提交一版 Kaggle 正式评分；不等待或读取正式分数。",
+  "freeze": {"require_git_tracked": false},
+  "scope": {
+    "in_scope": ["独立副本开发、测试分裂判别器", "Kaggle 云端以可靠 GT 配对训练并按胚胎隔离验证", "以训练门控替换 safe-div 三个手工确认规则，保留距离上限、DeepCenter 确认、数量上限和原自动选参", "一版正式提交及身份回读", "本候选代码、小型证据及报告同步 GitHub 独立分支并固定 commit 回读"],
+    "out_of_scope": ["读取已有提交的正式状态或分数", "等待或轮询新提交的分数", "修改主任务文件或使用子代理", "Dataset/Model 写入", "重新训练检测主干", "扩大参数搜索或重复正式提交", "数据、权重及 submission.csv 入 Git"],
+    "budget": {"new_notebooks": 1, "save_run_requests": 2, "engineering_fix_requests_included": 1, "formal_submission_requests": 1, "write_retries": 0, "dataset_model_writes": 0},
+    "stop_after": "一次正式提交身份回读后停止；用户通知后再读取分数。"
+  },
+  "acceptance": [
+    {"id": "meaningful-tests", "type": "command", "required": true, "argv": ["/opt/anaconda3/envs/ml/bin/python", "-B", "experiments/DIVISION_TRAIN_20260914/test_candidate.py"], "expected_exit": 0, "timeout_seconds": 120},
+    {"id": "training-runtime", "type": "json", "required": true, "path": "experiments/DIVISION_TRAIN_20260914/training_receipt.json", "assertions": [{"pointer": "/training_completed", "op": "equals", "value": true}, {"pointer": "/weights_sha256", "op": "not_empty"}, {"pointer": "/embryo_overlap", "op": "equals", "value": false}]},
+    {"id": "formal-identity", "type": "json", "required": true, "path": "experiments/DIVISION_TRAIN_20260914/submission_receipt.json", "assertions": [{"pointer": "/identity_readback_verified", "op": "equals", "value": true}, {"pointer": "/submission_id", "op": "not_empty"}, {"pointer": "/script_version_id", "op": "not_empty"}, {"pointer": "/score_read", "op": "equals", "value": false}]},
+    {"id": "remote-bytes", "type": "json", "required": true, "path": "experiments/DIVISION_TRAIN_20260914/delivery_receipt.json", "assertions": [{"pointer": "/all_files_match", "op": "equals", "value": true}, {"pointer": "/commit", "op": "not_empty"}]},
+    {"id": "task-report", "type": "file", "required": true, "path": "reports/20260914_分裂判别器训练与提交.md", "contains_all": ["训练", "正式", "未读取"]}
+  ]
+}

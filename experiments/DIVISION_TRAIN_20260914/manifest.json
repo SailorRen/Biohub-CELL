@@ -1,0 +1,18 @@
+{
+  "task_id": "DIVISION_TRAIN_20260914",
+  "frozen_at_utc": "2026-09-14T06:42:24.023573+00:00",
+  "candidate_sha256": "35ec0b376b94843722ac9e8107a0929ccf9a49f94d7bbac99b3093c4618ee123",
+  "files": {
+    "experiments/DIVISION_TRAIN_20260914/division_model.py": "fdeb80eea2c462e84b9e89b07ca14e57bdf6e8ab679c9a0c42df50edebcddb2c",
+    "experiments/DIVISION_TRAIN_20260914/test_candidate.py": "aa7c289ac4702c2719ce52049e996bf3f3d499c7ba352d43d3a6c96ae5909aca",
+    "experiments/DIVISION_TRAIN_20260914/build_candidate.py": "56d9fdbdb14406635c1fdc57c233fcec48efea4e77a3d0119467790e7250ab8f",
+    "experiments/DIVISION_TRAIN_20260914/platform_io.py": "8a34b3d1f597956bdcd5260ffc0d53a0ca2e12a80c2c142b95e922be1a17b3fa",
+    "experiments/DIVISION_TRAIN_20260914/candidate.ipynb": "35ec0b376b94843722ac9e8107a0929ccf9a49f94d7bbac99b3093c4618ee123",
+    "experiments/DIVISION_TRAIN_20260914/kernel-metadata.json": "d04b58bd5727c1505d9e78cc3e3a66598e010a3b1e5d555965689a5572b305b1",
+    "experiments/DIVISION_TRAIN_20260914/source_identity.json": "15e7a713d5b5ae204ab7879a94971b62d7434058fc11888917d36151ec850a65",
+    "tasks/CODEX_20260914_BIOHUB_DIVISION_TRAIN_CONTRACT.json": "611268c30131fad155992ccaa39c62f947aca02b189d87eb7b7a16a3d9615488",
+    "experiments/PUBLIC946_TTA_20260908/execute_once.py": "cf8cb5f595e8bcb70ab3e1b82f646a87c9efaadeb5190c96dcb139c7e11e625f",
+    "experiments/TARGET950_RUN_20260914/collect_output.py": "5782486ebf71464b83c20a592487d250b924585cdde6a47ddd9f942118b5376f"
+  },
+  "formal_scores_read": false
+}

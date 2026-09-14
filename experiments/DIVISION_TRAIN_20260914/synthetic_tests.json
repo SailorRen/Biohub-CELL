@@ -1,0 +1,7 @@
+{
+  "executed_at_utc": "2026-09-14T06:42:24.023101+00:00",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_fit_changes_weights_and_generalizes_synthetic_geometry (__main__.DivisionTests.test_fit_changes_weights_and_generalizes_synthetic_geometry) ... ok\ntest_integrated_gate_changes_a_fork_and_preserves_deepcenter_veto (__main__.DivisionTests.test_integrated_gate_changes_a_fork_and_preserves_deepcenter_veto) ... ok\ntest_missing_or_merged_granddaughter_rejected (__main__.DivisionTests.test_missing_or_merged_granddaughter_rejected) ... ok\ntest_notebook_scope_and_training_order (__main__.DivisionTests.test_notebook_scope_and_training_order) ... ok\ntest_sparse_negatives_require_different_known_parent (__main__.DivisionTests.test_sparse_negatives_require_different_known_parent) ... ok\ntest_swap_rotation_translation_and_units (__main__.DivisionTests.test_swap_rotation_translation_and_units) ... ok\ntest_validation_uses_held_out_weights_and_fails_unknown_group (__main__.DivisionTests.test_validation_uses_held_out_weights_and_fails_unknown_group) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.101s\n\nOK\n",
+  "synthetic_only": true
+}
