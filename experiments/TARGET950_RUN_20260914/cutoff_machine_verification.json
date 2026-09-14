@@ -1,0 +1,13 @@
+{
+  "task_id": "TARGET950_RUN_20260914",
+  "observed_at_utc": "2026-09-14T08:15:31.023024+00:00",
+  "command": [
+    "python3",
+    "experiments/TARGET950_RUN_20260914/verify.py"
+  ],
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/Users/sailor/kaggle/项目/Biohub - CELL/experiments/TARGET950_RUN_20260914/verify.py\", line 37, in <module>\n    if __name__=='__main__':raise SystemExit(main())\n                                             ^^^^^^\n  File \"/Users/sailor/kaggle/项目/Biohub - CELL/experiments/TARGET950_RUN_20260914/verify.py\", line 22, in main\n    formal=state['submission']; terminal=json.loads((io.P/'formal_terminal_receipt.json').read_text())\n                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/envs/ml/lib/python3.11/pathlib.py\", line 1058, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/envs/ml/lib/python3.11/pathlib.py\", line 1044, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/sailor/kaggle/项目/Biohub - CELL/experiments/TARGET950_RUN_20260914/formal_terminal_receipt.json'\n",
+  "status": "NOT_COMPLETE_FORMAL_TERMINAL_RECEIPT_MISSING",
+  "interpretation": "原验证器未改动；正式仍PENDING，因此未伪造formal_terminal_receipt.json。整体验收不能通过。"
+}

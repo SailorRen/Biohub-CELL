@@ -1,0 +1,113 @@
+{
+  "task_id": "TARGET950_RUN_20260914",
+  "status": "PARTIAL_FORMAL_SCORE_PENDING_AT_CUTOFF",
+  "overall_pass": false,
+  "completion_verified": false,
+  "reviewer": "target950_run_review",
+  "observed_at_utc": "2026-09-14T08:17:54.169279+00:00",
+  "conclusion": "已实际运行并唯一正式提交；3小时正式观测截止后仍PENDING，没有正式终态成绩，整体任务不能验收通过，也不能判断收益或宣称达到0.950。",
+  "local_evidence_integrity_checks": {
+    "all_original_and_alias_frozen_files_unchanged": true,
+    "candidate_and_baseline_original_sources_unchanged": true,
+    "two_unique_writes": true,
+    "each_write_one_send_no_retry_no_redirect": true,
+    "original_save_not_rewritten_or_repeated": true,
+    "exact_formal_request_and_response_ID": true,
+    "cutoff_snapshot_hash_and_time_bound": true,
+    "complete_listing_exact_latest_formal_row": true,
+    "latest_formal_pending_public_private_null_no_error": true,
+    "latest_exact_candidate_V1_full_source_binding": true,
+    "exact_three_hour_deadline_with_one_final_read": true,
+    "UI_cutoff_corroborates_same_SV_PENDING": true,
+    "ordinary_remains_actual_complete_and_output_verified": true,
+    "fixed_input_receipt_unchanged_5_2_10": true,
+    "baseline_current_formal_0947_still_effective": true,
+    "no_fabricated_candidate_score_delta_or_terminal_receipt": true,
+    "original_verify_not_changed_and_real_nonzero_saved": true,
+    "no_training_or_additional_experiment_in_recorded_task": true
+  },
+  "local_evidence_integrity_checks_passed": 18,
+  "local_evidence_integrity_checks_total": 18,
+  "verified_components": {
+    "frozen_candidate_and_source_identity": true,
+    "ordinary_inference_complete_and_actual_output_verified": true,
+    "fixed_input_versions_5_2_10": true,
+    "single_formal_submission_identity_and_budget": true,
+    "baseline_current_0947_score": true,
+    "bounded_observation_stopped_and_actual_pending_recorded": true
+  },
+  "unfulfilled_acceptance": {
+    "formal_terminal_state": false,
+    "finite_formal_public_score": false,
+    "formal_score_verified": false,
+    "delta_vs_current_baseline": false,
+    "delta_vs_own_best_before": false,
+    "target_0950_achieved": false,
+    "original_overall_machine_verifier": false
+  },
+  "identity": {
+    "submission_id": 56222238,
+    "canonical_ref": "sailorren/biohub-0-947-official-selector-20260914",
+    "kernel_id": 134280472,
+    "version": 1,
+    "script_version_id": 349666428,
+    "sdk_source_sha256": "cdefc823f59d0490e2ced01959e026ebfdd5c4b6f41d74ccb1c7bac4f61a6230",
+    "remote_source_sha256": "5c5f9758b778f38a2034a349311bb7bbb9f44b577ac83a9aca3396d09092b340"
+  },
+  "formal_state_at_cutoff": {
+    "status": "PENDING",
+    "public_score": null,
+    "private_score": null,
+    "error_description": "",
+    "score_verified": false,
+    "last_API_observed_at_utc": "2026-09-14T08:13:51.712973+00:00",
+    "last_API_observed_at_shanghai": "2026-09-14T16:13:51.712973+08:00",
+    "request_at_utc": "2026-09-14T05:13:20.253359+00:00",
+    "deadline_utc": "2026-09-14T08:13:20.253359+00:00",
+    "final_read_seconds_after_deadline": 31.459614,
+    "interpretation": "终结读取发生在截止后31.46秒；仅记录最后实际状态，不代表延长提交预算或取得终态。"
+  },
+  "ordinary_result": {
+    "selected_postprocess": "tight55",
+    "csv_sha256": "d34533806b3153ddd4f33f3bbc1dea70af2d5406bb1ea48e42c135a97c213f60",
+    "rows": 241356,
+    "nodes": 122808,
+    "edges": 118548,
+    "division_like_sources": 124,
+    "same_baseline_actual_selected_option_and_run_stats_except_timing": true,
+    "formal_hidden_postprocess": "UNKNOWN"
+  },
+  "comparison": {
+    "baseline_submission_id": 56160258,
+    "baseline_formal_public_score": "0.947",
+    "own_best_before_submission_public_score": "0.947",
+    "candidate_formal_public_score": null,
+    "delta_vs_baseline": null,
+    "delta_vs_own_best_before": null,
+    "target_0950_status": "UNKNOWN_NO_FORMAL_SCORE"
+  },
+  "machine_verification": {
+    "original_verifier_sha256": "1caba72e31886bcc0af6b7ed66118edcdf8ef35fcb00f0d2389f9330ebf1a9f0",
+    "recorded_exit_code": 1,
+    "failure": "Formal terminal receipt absent because the formal submission is PENDING; verifier was not weakened.",
+    "independent_rerun_performed": false,
+    "reason": "No relevant code change; reviewed original frozen bytes and actual recorded execution receipt."
+  },
+  "Git_delivery": "由主任务另行完成固定commit和权威远端回读；此审查不替代Git交付证明。",
+  "remaining_work": "正式终态分数与收益比较尚缺；此次观测已停止，不承诺后台完成。",
+  "reviewer_network_requests": 0,
+  "reviewer_platform_write_requests": 0,
+  "reviewer_modified_frozen_state_or_ledger": false,
+  "source_evidence_sha256": {
+    "experiments/TARGET950_RUN_20260914/manifest.json": "25b8c49345e0b5b7a31d82b7d9e1661178b35d04aad04149bac11ddd6e09450c",
+    "experiments/TARGET950_RUN_20260914/alias_manifest.json": "a0ef856e63d828327d2a25381cc94817d9ebeb44b97d5e3fcfda51118cf0d6d6",
+    "experiments/TARGET950_RUN_20260914/write_ledger.json": "aecf09f5e8092d1ab9cd8883e37c9d02688644d5f7c9e99c6a0a6b520d9f41ee",
+    "experiments/TARGET950_RUN_20260914/canonical_read_20260914T081357Z.json": "98c25936f7c984e345ea56b6278c44fe2c551ea689b301101235ba8c492c56e0",
+    "experiments/TARGET950_RUN_20260914/formal_observation_closeout.json": "f20fe369b5528c2a3ef6e41ccc6508dd349cf6192d5f20abaf0c27b96a2326b3",
+    "experiments/TARGET950_RUN_20260914/formal_ui_cutoff_receipt.json": "6cdea7271729f2c8337c95ed50e8b1dbca14931d4e5a459efce9da590951cf28",
+    "experiments/TARGET950_RUN_20260914/cutoff_machine_verification.json": "efedb8e6d4b28430e1682b95ec876c55e028163fc0c099ff8aa7e4cd185193ce",
+    "experiments/TARGET950_RUN_20260914/ordinary_summary.json": "e67552af0e12cc12b1c3a970fb63f52401e60ba5552658fc8332228c8b78e735",
+    "experiments/TARGET950_RUN_20260914/ordinary_independent_review.json": "09b23171c47943939f3f6271b0b25544fa27126164e89be44a879ee9e96ab383",
+    "experiments/TARGET950_RUN_20260914/input_binding_receipt.json": "26969eab35bb5ed73f0c4c9146733c643649ea7d53a679fe742713b57c10e9d7"
+  }
+}
