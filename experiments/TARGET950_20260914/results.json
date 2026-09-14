@@ -1,0 +1,43 @@
+{
+  "task_id": "TARGET950_PREPARATION_20260914",
+  "observed_at_utc": "2026-09-14T02:37:22.886332+00:00",
+  "preparation_status": "READY_FOR_REVIEW",
+  "baseline_submission_id": 56160258,
+  "baseline_script_version_id": 348960877,
+  "baseline_public_score": "0.947",
+  "target_public_score": "0.950",
+  "required_displayed_delta": "0.003",
+  "candidate_ref": "sailorren/biohub-947-official-selector-20260914",
+  "candidate_version": null,
+  "candidate_script_version_id": null,
+  "candidate_submission_id": null,
+  "candidate_ordinary_status": "NOT_RUN",
+  "candidate_formal_status": "NOT_RUN",
+  "candidate_public_score": null,
+  "candidate_delta_vs_baseline": null,
+  "target_0950_achieved": false,
+  "production_same_graph_official_rescore": "NOT_RUN",
+  "new_kaggle_write_requests": 0,
+  "operations": [],
+  "authorized_new_kaggle_budget": 0,
+  "proposed_budget_pending_authorization": {
+    "new_notebooks": 1,
+    "save_and_run_requests": 1,
+    "formal_submission_requests": 1,
+    "per_object_submission": 1,
+    "repairs": 0,
+    "retries": 0,
+    "training": 0,
+    "dataset_or_model_writes": 0,
+    "observe_ordinary_max_hours": 3,
+    "observe_formal_max_hours": 3,
+    "live_platform_remaining_quota_required": true
+  },
+  "execution_conditions": [
+    "Refresh own baseline, input versions, exact source hash, account and real-time quota before any platform write.",
+    "Run only this fixed candidate; record ledger before sending; uncertain write response requires read-only identity lookup, never re-send.",
+    "Only after ordinary output schema and runtime audit pass, submit the exact verified Version once. A higher local score or different selected PP is not a submission prerequisite.",
+    "If score ties or falls, report it and stop. If run/scoring remains pending after bounded observation, record actual IDs, last status and Shanghai timestamp; do not promise background completion.",
+    "Do not change competition final submission selection."
+  ]
+}

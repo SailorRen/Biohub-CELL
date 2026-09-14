@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0",
+  "task_id": "TARGET950_PREPARATION_20260914",
+  "status": "PASS",
+  "review_scope": "独立源码与本地准备证据审查；不证明生产运行、正式提交、GitHub 交付完成或达到 0.950。",
+  "reviewer": "public_950_research (independent from candidate implementation)",
+  "observed_at_utc": "2026-09-14T02:43:05.979830+00:00",
+  "candidate_sha256": "c38460def079f45749a8a3d85d6549dada0ec0343e2eed66bee3c7c40db4ae43",
+  "manifest_sha256": "1711a8a96864f281ef8f44497742586c0702a9988f578d1b2a5e7c9e70511781",
+  "report_sha256": "76a727b7c3d95104edb11fc43491f4fe345ae49dcfccb68a57d9b0839adb1884",
+  "baseline": {
+    "version": 1,
+    "script_version_id": 348960877,
+    "submission_id": 56160258,
+    "source_sha256": "bb6dbf2766fff1b4f7d1c96f3c1145c700d4d44e4695d924c7be8ccbe1b07af7",
+    "reported_current_formal_public_score": "0.947",
+    "verification_scope": "核对平台快照、浏览器精确版本回执、完整文件 SHA 和冻结合同；本次审查未重复登录或重新提交。"
+  },
+  "source_review": {
+    "read_in_full": [
+      "build_candidate.py",
+      "official_selector_adapter.py",
+      "runtime_audit.py",
+      "test_official_selector.py",
+      "integration_test.py",
+      "verify.py",
+      "verify_remote.py",
+      "vendor/official_075fc5/metrics.py",
+      "vendor/official_075fc5/division_metrics.py",
+      "vendor/official_075fc5/LICENSE"
+    ],
+    "baseline_review": "校验原始文件 SHA；对全部 12 个原单元进行结构相等核对；深读评分、验证缓存、原 PP7 选择与生成后恢复逻辑及相关配置。未将不变模型代码再次标为独立全文语义审查。",
+    "original_cells_changed": [
+      8
+    ],
+    "original_cell8_source_retained_as_prefix": true,
+    "all_other_original_cells_structurally_identical": true,
+    "additional_cells": [
+      12
+    ],
+    "original_pp7_and_conditional_combination_unchanged": true,
+    "fixed_input_versions": [
+      5,
+      2,
+      10
+    ],
+    "original_docker_and_machine_shape_retained": true,
+    "installed_sdk_dataset_version_syntax_verified_read_only": true,
+    "official_source_commit": "075fc5f5a52d11077f9dc2b074644618f26939e2",
+    "official_files_and_full_bsd3_license_byte_hashes_match_receipt": true,
+    "scorer_is_self_contained_and_uses_separate_package_namespace": true,
+    "ordered_same_graph_hash_and_scale_radius_n_total_are_recorded": true
+  },
+  "independent_execution": {
+    "scope": "只运行小型合成图、构建后 cell8/审计 cell 与只读 verify；没有模型或完整 Notebook 顶层运行。",
+    "earlier_full_adapter_rerun": {
+      "passed": 349,
+      "total": 349,
+      "adapter_sha256": "686b225efa9b4c4dc1dcec48133ffb8b06087f8e4a33396c3c624931019655ed",
+      "evidence_sha256": "896869041499e56d0fc0fdd547fbf4677cd1023205f5d7a87cffc68ecc412a5f",
+      "note": "此前审查阶段 349 项全重跑；最终新增图哈希采用下述增量独立核验，不将旧回执当最终全量重跑。"
+    },
+    "final_delta": [
+      {
+        "id": "hash_matches_independent_canonical_bytes",
+        "passed": true
+      },
+      {
+        "id": "hash_distinguishes_input_order",
+        "passed": true
+      },
+      {
+        "id": "same_gt_unchanged_across_order_change",
+        "passed": true
+      },
+      {
+        "id": "no_model_input_mutation",
+        "passed": true
+      },
+      {
+        "id": "current_build_reproduces_cells",
+        "passed": true
+      },
+      {
+        "id": "current_metadata_reproduces",
+        "passed": true
+      },
+      {
+        "id": "updated_built_cell_integration_14_of_14",
+        "passed": true
+      }
+    ],
+    "final_built_notebook_integration": {
+      "passed": 14,
+      "total": 14,
+      "checks": [
+        {
+          "id": "embedded-official-modules-loaded",
+          "passed": true
+        },
+        {
+          "id": "legacy-function-retained",
+          "passed": true
+        },
+        {
+          "id": "namespace-does-not-replace-predictor-package",
+          "passed": true
+        },
+        {
+          "id": "synthetic-perfect-edge-counts",
+          "passed": true
+        },
+        {
+          "id": "same-graph-proxy-fields",
+          "passed": true
+        },
+        {
+          "id": "synthetic-perfect-division-and-score",
+          "passed": true
+        },
+        {
+          "id": "runtime-audit-executes",
+          "passed": true
+        },
+        {
+          "id": "runtime-proxy-grouping",
+          "passed": true
+        },
+        {
+          "id": "runtime-resolved-selected-PP-after-restore",
+          "passed": true
+        },
+        {
+          "id": "runtime-score-separation",
+          "passed": true
+        },
+        {
+          "id": "runtime-json-no-nan",
+          "passed": true
+        },
+        {
+          "id": "input-plain-graph-not-mutated",
+          "passed": true
+        },
+        {
+          "id": "runtime-rejects-duplicate-stem",
+          "passed": true
+        },
+        {
+          "id": "runtime-rejects-selection-mismatch",
+          "passed": true
+        }
+      ],
+      "evidence_sha256": "4974206102a079b367eb36db8e551749aa7c192cccd167154b92bc53a59e62df"
+    },
+    "final_verify_py": {
+      "passed": 15,
+      "total": 15,
+      "exit_code": 0
+    },
+    "current_author_test_receipts_hash_verified": {
+      "adapter": 364,
+      "integration": 14,
+      "total": 378
+    },
+    "manifest_file_hashes_independently_verified": 36
+  },
+  "resolved_findings": [
+    {
+      "issue": "末尾审计曾将 pp_restore 后的 globals 误标为生成时实际后处理参数。",
+      "resolution": "使用 PP_BASE_CONFIG 按原 pp_apply 类型叠加 selected_config，并另存 restored globals；真实构建审计已覆盖选中 4.5、恢复 5.0。"
+    },
+    {
+      "issue": "同图结果最初仅按配置数量核对，缺少完整唯一 FOV 集和选择回执约束。",
+      "resolution": "每个 config 严格核对 val_stems 集合和数量，拒绝未知配置；核对 selected JSON，实际负例通过。"
+    }
+  ],
+  "unresolved_blockers": [],
+  "document_fact_and_scope_review": {
+    "local_378_checks_not_claimed_as_378_real_samples": true,
+    "legacy_proxy_author_scores_and_own_formal_score_are_distinguished": true,
+    "public_search_scope_limits_and_unknowns_are_explicit": true,
+    "production_same_graph_rescore_is_not_run": true,
+    "candidate_version_script_version_submission_are_null": true,
+    "candidate_inference_and_formal_submission_are_not_run": true,
+    "candidate_score_and_delta_are_null": true,
+    "target_0950_achieved": false,
+    "new_platform_write_budget_and_requests": 0,
+    "future_one_notebook_one_run_one_submission_budget_is_proposal_only": true
+  },
+  "limits": [
+    "PASS 只覆盖冻结候选的本地准备与证据一致性，不代表已经达到用户 0.950 目标。",
+    "没有真实八个验证 FOV 的同图官方评分、完整 Kaggle 运行或本候选正式分数；正式收益 UNKNOWN。",
+    "本地测试环境与 Kaggle NumPy/SciPy/Python 版本有差异；固定官方源码身份不证明隐藏部署逐字节相同。",
+    "本审查时 GitHub 推送及权威远端回读尚由主任务继续执行；此 PASS 不代替 git-delivery 门禁。"
+  ],
+  "reviewer_kaggle_write_requests": 0,
+  "reviewer_project_file_writes": [
+    "experiments/TARGET950_20260914/independent_review.json"
+  ]
+}

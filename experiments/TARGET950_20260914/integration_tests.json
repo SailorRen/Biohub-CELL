@@ -1,0 +1,73 @@
+{
+  "task_id": "TARGET950_PREPARATION_20260914",
+  "status": "PASS",
+  "executed": true,
+  "scope": "Synthetic-only built cell8 and scalar runtime audit; no notebook model cells or GPU run.",
+  "passed": 14,
+  "total": 14,
+  "checks": [
+    {
+      "id": "embedded-official-modules-loaded",
+      "passed": true
+    },
+    {
+      "id": "legacy-function-retained",
+      "passed": true
+    },
+    {
+      "id": "namespace-does-not-replace-predictor-package",
+      "passed": true
+    },
+    {
+      "id": "synthetic-perfect-edge-counts",
+      "passed": true
+    },
+    {
+      "id": "same-graph-proxy-fields",
+      "passed": true
+    },
+    {
+      "id": "synthetic-perfect-division-and-score",
+      "passed": true
+    },
+    {
+      "id": "runtime-audit-executes",
+      "passed": true
+    },
+    {
+      "id": "runtime-proxy-grouping",
+      "passed": true
+    },
+    {
+      "id": "runtime-resolved-selected-PP-after-restore",
+      "passed": true
+    },
+    {
+      "id": "runtime-score-separation",
+      "passed": true
+    },
+    {
+      "id": "runtime-json-no-nan",
+      "passed": true
+    },
+    {
+      "id": "input-plain-graph-not-mutated",
+      "passed": true
+    },
+    {
+      "id": "runtime-rejects-duplicate-stem",
+      "passed": true
+    },
+    {
+      "id": "runtime-rejects-selection-mismatch",
+      "passed": true
+    }
+  ],
+  "source_hashes": {
+    "candidate.ipynb": "c38460def079f45749a8a3d85d6549dada0ec0343e2eed66bee3c7c40db4ae43",
+    "build_candidate.py": "c8bc218734bad8e67b1a8c817a9e71e89c64ac6dacb8cf4d59a95c165c5856f5",
+    "runtime_audit.py": "b7b2f1de006a9f151128c85695881c7d85fb0a14669fe7a3876751061843aaad",
+    "official_selector_adapter.py": "3f12b1fdf3ecd2c7492f4577dbee00b964334abb861938e9ffbad9f84edaae9b",
+    "integration_test.py": "3593165ca11260ed3e51e2d6378d43c3e9ae4efe2fe082f6b7f8c74d8be4aa2a"
+  }
+}

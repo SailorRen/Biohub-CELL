@@ -1,0 +1,27 @@
+{
+  "classification": "OFFICIAL_FACT",
+  "source": "CUA fixed Notebook input page",
+  "url": "https://www.kaggle.com/code/sailorren/biohub-lineage-forge-precision-tracking/input?scriptVersionId=348960877",
+  "version": 1,
+  "script_version_id": 348960877,
+  "input_dataset_versions": [
+    {
+      "ref": "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+      "version": 5
+    },
+    {
+      "ref": "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+      "version": 2
+    },
+    {
+      "ref": "pilkwang/biohub-tracking-support-pack-50ep-v1",
+      "version": 10
+    }
+  ],
+  "runtime": "1h 36m 19s; GPU T4 x2",
+  "actual_selected_pp": "tight55",
+  "actual_test_nodes": 122808,
+  "actual_test_edges": 118548,
+  "observed_date_shanghai": "2026-09-14",
+  "new_kaggle_write_requests": 0
+}

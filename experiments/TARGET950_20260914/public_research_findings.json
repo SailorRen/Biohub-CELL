@@ -1,0 +1,126 @@
+{
+  "observed_at_utc": "2026-09-14T02:18:11.489593+00:00",
+  "platform_writes": 0,
+  "repository_writes": 0,
+  "official_scorer_main": "075fc5f5a52d11077f9dc2b074644618f26939e2",
+  "official_scorer_readback": "git ls-remote https://github.com/royerlab/kaggle-cell-tracking-competition.git refs/heads/main; unchanged from Sep9",
+  "inventory": {
+    "queries": [
+      {
+        "sort": "dateRun",
+        "count": 60
+      },
+      {
+        "sort": "scoreDescending",
+        "count": 60
+      }
+    ],
+    "full_catalog": false,
+    "list_topics_api": "403; used live browser recent-comments page1 instead"
+  },
+  "notebooks": {
+    "flexonafft/biohub-lineage-forge-precision-tracking": {
+      "version": 8,
+      "script_version_id": 348830165,
+      "public_score": 0.947,
+      "reading_scope": "CORE_SOURCE_READ: configuration, motion_relink/filter_output_graph, complete source diff against dctta-v020; not all 12 cells fully reread",
+      "mechanism": "DeepCenter TTA already enabled; safe-div threshold .20; secondary edge-feature TTA weight .75",
+      "url": "https://www.kaggle.com/code/flexonafft/biohub-lineage-forge-precision-tracking?scriptVersionId=348830165",
+      "metadata_kernel_id": 133330467,
+      "raw_api_path": "/tmp/biohub_public_950_20260914/flexonafft__biohub-lineage-forge-precision-tracking.json",
+      "raw_api_sha256": "88b1ed4102ed07636c27f17d3e4b17ddfb0473e1f54e45dbd42f694525b27791",
+      "source_sha256": "f1c7d777e5c41a937ce4b679f65f2e0d5795aec411e1cccda99487a86b06dbb2",
+      "score_evidence": "CUA notebook Public Score plus specific version score link",
+      "run_by_us": false
+    },
+    "sjlee101/biohub-lf-hoctveto-div-b": {
+      "version": 1,
+      "script_version_id": 349035072,
+      "public_score": 0.947,
+      "reading_scope": "CORE_SOURCE_READ: complete HOCT added graph/plumbing/fallback functions, output hook; shared rest not fully reread",
+      "mechanism": "3um sphere pseudo-instances, HOCT general_v0 with 5-frame tiled model, max_delta_t1, intersect final pipeline edges with HOCT edges; failures and budget skips preserve original graph",
+      "url": "https://www.kaggle.com/code/sjlee101/biohub-lf-hoctveto-div-b?scriptVersionId=349035072",
+      "metadata_kernel_id": 133962848,
+      "raw_api_path": "/tmp/biohub_public_950_20260914/sjlee101__biohub-lf-hoctveto-div-b.json",
+      "raw_api_sha256": "d04957be763201ce8aece5c17ad6f88c7011fa3f0a06f7b944a638dd019f4225",
+      "source_sha256": "8e385801b91db946c8a9b73ef53a511fa93e7c05b150e047777775b5b9df280a",
+      "score_evidence": "CUA notebook Public Score plus specific version score link",
+      "run_by_us": false
+    },
+    "sjlee101/biohub-lf-dctta-v020": {
+      "version": 1,
+      "script_version_id": null,
+      "public_score": null,
+      "reading_scope": "SOURCE_DIFF_READ relative to current Forge V8",
+      "mechanism": "Only module title/docstring and explanatory comments differ from current Forge V8; not a new optimization relative to current Forge",
+      "url": "https://www.kaggle.com/code/sjlee101/biohub-lf-dctta-v020",
+      "metadata_kernel_id": 133756606,
+      "raw_api_path": "/tmp/biohub_public_950_20260914/sjlee101__biohub-lf-dctta-v020.json",
+      "raw_api_sha256": "ac7ccb41bd27d9573153c1df0103b38f9f5118f9c5d5ce0dd711ebae43afef7b",
+      "source_sha256": "7129370737acb810fc8aa1dc0b515e782571ad61f9cc0b689d777f2c257fb012",
+      "score_evidence": "UNKNOWN",
+      "run_by_us": false
+    },
+    "zhincez/a-dividing-nucleus-gets-smaller-not-dimmer": {
+      "version": 4,
+      "script_version_id": null,
+      "public_score": null,
+      "reading_scope": "FULL_NOTEBOOK_SOURCE_READ: all12cells, {'code': 5, 'markdown': 7}; no outputs acquired or executed",
+      "mechanism": "Appearance hypothesis only: paired same-film/frame controls; half-max volume falls around division while peak stable; author bootstrap is row-level and selection division-rich films, not independent embryo validation",
+      "url": "https://www.kaggle.com/code/zhincez/a-dividing-nucleus-gets-smaller-not-dimmer",
+      "metadata_kernel_id": 134090266,
+      "raw_api_path": "/tmp/biohub_public_950_20260914/zhincez__a-dividing-nucleus-gets-smaller-not-dimmer.json",
+      "raw_api_sha256": "20481c84fde7bcae69cba67b80e612daa87e34a74bb4df23a69c03c907412004",
+      "source_sha256": "1dd8e153fdb16061f61d107a1357fca0ab1839eac0e51f00a774ad6465d6d9ab",
+      "score_evidence": "UNKNOWN",
+      "run_by_us": false
+    }
+  },
+  "discussion_evidence": [
+    {
+      "id": 740573,
+      "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/740573",
+      "scope": "Topic full text and8nestedcomments text read; images not inspected",
+      "takeaway": "Geometry alone has extreme base-rate imbalance; predicted-node displacement differs from labelled-centroid displacement. COMMUNITY_REPORT; needs own graph check."
+    },
+    {
+      "id": 738217,
+      "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/738217#3523665",
+      "scope": "Topic and45nestedcomments text acquired; selected Sep9-Sep12 methodological comments deeply read; image-only payloads not inspected; some older reply text truncated",
+      "takeaway": "Sep12 author says encoder finetuning hurt frozen linker; constant bias correction hurts; 15.2% contested links already locally prefer truth. These are author offline measurements, not current Kaggle formal scores."
+    },
+    {
+      "id": 732103,
+      "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/732103#3522706",
+      "scope": "Selected new Sep9-Sep14 comments deeply read; original post not fully read",
+      "takeaway": "Motion-relink replaces ILP forks; synthetic-trained division classifier AP.98 but author Public.910 to.906. Own pipeline causal effects UNKNOWN."
+    }
+  ],
+  "priority_hypotheses": [
+    {
+      "priority": 1,
+      "change": "Measure ILP raw forks -> Hungarian relink -> safe-div survival/recovery with fixed official scorer before choosing a targeted retention change",
+      "reason": "Actual current source replaces all raw edges with one-to-one motion_edges; need prove correct forks exist and are lost",
+      "status": "NOT_RUN"
+    },
+    {
+      "priority": 2,
+      "change": "Use model score margins to isolate contested assignment swaps where existing model prefers alternative; preserve confident continuation links",
+      "reason": "New model-independent information may already be lost at selection; avoid global greedy edge replacement",
+      "status": "NOT_RUN"
+    },
+    {
+      "priority": 3,
+      "change": "If selection errors small, appearance-aware division/tracklet model on windows with new independent supervision",
+      "reason": "Nuclear size trajectory/appearance is distinct from existing geometry gates; requires labelled validation and new training authorization",
+      "status": "NOT_RUN"
+    }
+  ],
+  "not_recommended_as_immediate_shortcut": [
+    "Repeat DCTTA already in Forge V8",
+    "HOCT hard edge intersection currently only author Public.947 and silent fallback scope",
+    "Global offset correction, unvalidated synthetic-only division gate, blind radius/threshold sweep"
+  ],
+  "verified_current_public_above_0947_in_read_sample": false,
+  "caveat": "Not an exhaustive catalogue or proof no higher public solution exists. Downloaded sources never executed. GetKernel lastRunTime values inconsistent with list/UI dates and not used as true run timestamps."
+}

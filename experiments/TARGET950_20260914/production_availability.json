@@ -1,0 +1,132 @@
+{
+  "task_id": "TARGET950_PREPARATION_20260914",
+  "operation": "READ_ONLY_BOUNDED_PRODUCTION_AVAILABILITY",
+  "ref": "sailorren/biohub-lineage-forge-precision-tracking",
+  "expected_version": 1,
+  "script_version_id": 348960877,
+  "submission_id": 56160258,
+  "started_at_utc": "2026-09-14T02:19:12.430243+00:00",
+  "budget_bytes": 30000000,
+  "accounted_bytes": 5055396,
+  "output_listing_max_pages": 15,
+  "pages": [
+    {
+      "request_number": 2,
+      "version_label": null,
+      "count": 100,
+      "next_page_present": true,
+      "log_bytes": 829492
+    },
+    {
+      "request_number": 3,
+      "version_label": null,
+      "count": 100,
+      "next_page_present": true,
+      "log_bytes": 829492
+    },
+    {
+      "request_number": 4,
+      "version_label": null,
+      "count": 100,
+      "next_page_present": true,
+      "log_bytes": 829492
+    },
+    {
+      "request_number": 5,
+      "version_label": null,
+      "count": 100,
+      "next_page_present": true,
+      "log_bytes": 829492
+    },
+    {
+      "request_number": 6,
+      "version_label": null,
+      "count": 41,
+      "next_page_present": false,
+      "log_bytes": 829492
+    }
+  ],
+  "downloads": [
+    {
+      "name": "ppsweep_results.csv",
+      "bytes": 1398,
+      "sha256": "3af442bfbf85d9abb3cc4c8049ad4f38550c5616793679f0756e7eb3a3239c82",
+      "status": "HTTP200_SAVED"
+    },
+    {
+      "name": "ppsweep_selected.json",
+      "bytes": 354,
+      "sha256": "69deed69c8a66dfbc0f7f56caf25996e91aa9074155f011f7788907342f33bcd",
+      "status": "HTTP200_SAVED"
+    },
+    {
+      "name": "run_stats.csv",
+      "bytes": 3137,
+      "sha256": "be66bcb74ca490817f710085a68c4b3b29be2dc3ba942863a3a5c1405efe5f30",
+      "status": "HTTP200_SAVED"
+    },
+    {
+      "name": "validator_results.csv",
+      "bytes": 7917,
+      "sha256": "f1b471385eb5799affb88a00850eaf7607b7a4b640787c4478e207aa90a08929",
+      "status": "HTTP200_SAVED"
+    }
+  ],
+  "errors": [
+    {
+      "stage": "session_output_page_1",
+      "error_type": "HTTPError",
+      "http_status": 404
+    }
+  ],
+  "platform_writes": 0,
+  "before": {
+    "ref": "sailorren/biohub-lineage-forge-precision-tracking",
+    "kernel_id": 133927813,
+    "version": 1,
+    "source_sha256": "bb6dbf2766fff1b4f7d1c96f3c1145c700d4d44e4695d924c7be8ccbe1b07af7"
+  },
+  "listing_rows": 441,
+  "listing_complete": true,
+  "output_file_inventory": {
+    "path": "output_file_inventory.json",
+    "rows": 441,
+    "sha256": "c6ee0cf0e7d166cc553d9077590713866b4609cc363755d8a6adfd0a479b0472",
+    "signed_urls_persisted": false
+  },
+  "val_graph_roots": [
+    "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff",
+    "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff",
+    "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff",
+    "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff",
+    "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff",
+    "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff",
+    "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff",
+    "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff"
+  ],
+  "gt_named_output_paths": [],
+  "ordinary_log_excerpt": {
+    "path": "ordinary_log_excerpt.json",
+    "lines_retained": 539,
+    "sha256": "580480a02e9d697508c92b03dcb8e0f9d76a0e62e1cfa3ca67a3da65f81cf3f6"
+  },
+  "competition_first_page": {
+    "rows": 100,
+    "next_page_present": true,
+    "gt_member_names": [],
+    "path": "competition_first_page.json"
+  },
+  "after": {
+    "ref": "sailorren/biohub-lineage-forge-precision-tracking",
+    "kernel_id": 133927813,
+    "version": 1,
+    "source_sha256": "bb6dbf2766fff1b4f7d1c96f3c1145c700d4d44e4695d924c7be8ccbe1b07af7"
+  },
+  "same_fixed_source_before_after": true,
+  "raw_graph_payload_downloads": 0,
+  "gt_payload_downloads": 0,
+  "postprocessed_graph_payload_downloads": 0,
+  "actual_same_graph_scoring": "NOT_RUN_MISSING_PAIRED_GT_AND_ACTUAL_POSTPROCESSED_GRAPHS",
+  "status": "READ_ONLY_AVAILABILITY_COMPLETE",
+  "completed_at_utc": "2026-09-14T02:19:35.315291+00:00"
+}

@@ -1,0 +1,6646 @@
+{
+  "status": "PASS",
+  "evidence_class": "MEASURED",
+  "executed": true,
+  "observed_at_utc": "2026-09-14T02:30:24.231133+00:00",
+  "script_sha256": "12bc41ed0ef5e9c20bd63843b3b5fe25401d668655e951bff5d3510f4ff6a89d",
+  "adapter_sha256": "3f12b1fdf3ecd2c7492f4577dbee00b964334abb861938e9ffbad9f84edaae9b",
+  "baseline_sha256": "bb6dbf2766fff1b4f7d1c96f3c1145c700d4d44e4695d924c7be8ccbe1b07af7",
+  "official_source_sha256": {
+    "metrics.py": "cfdd596e3f8909cca14db0682889738b19ff75c3808b3773175aba9367ca7444",
+    "division_metrics.py": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9"
+  },
+  "runtime": {
+    "python": "3.11.14",
+    "executable": "/Users/sailor/kaggle/项目/Biohub - CELL/downloads/LINEFIT_BOUNDARY_20260909/scorer/venv/bin/python",
+    "dependencies": {
+      "tracksdata": "0.1.0rc6.dev3+g980c2d30a",
+      "polars": "1.42.0",
+      "numpy": "2.4.2",
+      "scipy": "1.17.1",
+      "rustworkx": "0.18.1"
+    }
+  },
+  "installation": {
+    "metric_provenance": "official_075fc5:evaluate->per_sample_metrics->summarise",
+    "legacy_proxy_preserved": true,
+    "graph_builder": "fresh_InMemoryGraph_bulk_add_nodes_bulk_add_edges",
+    "nonfinite_final_score": "FAIL_CLOSED",
+    "missing_n_total": "FAIL_CLOSED"
+  },
+  "checks": [
+    {
+      "id": "perfect_division.row.edge_tp",
+      "actual": 5,
+      "expected": 5,
+      "status": "PASS"
+    },
+    {
+      "id": "perfect_division.row.edge_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "perfect_division.row.edge_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "perfect_division.row.division_tp",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "perfect_division.row.division_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "perfect_division.row.division_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "perfect_division.row.num_pred_nodes",
+      "actual": 6,
+      "expected": 6,
+      "status": "PASS"
+    },
+    {
+      "id": "perfect_division.row.node_recall",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "perfect_division.row.total_node_ratio",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "perfect_division.row.edge_jaccard",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "perfect_division.row.adj_edge_jaccard",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "perfect_division.summary.score",
+      "actual": 1.1,
+      "expected": 1.1,
+      "status": "PASS"
+    },
+    {
+      "id": "perfect_division.summary.adj_edge_jaccard",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "perfect_division.summary.division_tp",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "perfect_division.summary.division_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "perfect_division.summary.division_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "perfect_division.summary.n",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "perfect_division.summary.n_adj",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "perfect_division.selector_alias",
+      "actual": 1.1,
+      "expected": 1.1,
+      "status": "PASS"
+    },
+    {
+      "id": "perfect_division.input_unmodified",
+      "actual": [
+        {
+          "17": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            2,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "86": [
+            2,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ],
+          "109": [
+            3,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "132": [
+            3,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            40,
+            63
+          ],
+          [
+            40,
+            86
+          ],
+          [
+            63,
+            109
+          ],
+          [
+            86,
+            132
+          ]
+        ],
+        {
+          "17": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            2,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "86": [
+            2,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ],
+          "109": [
+            3,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "132": [
+            3,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            40,
+            63
+          ],
+          [
+            40,
+            86
+          ],
+          [
+            63,
+            109
+          ],
+          [
+            86,
+            132
+          ]
+        ]
+      ],
+      "expected": [
+        {
+          "17": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            2,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "86": [
+            2,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ],
+          "109": [
+            3,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "132": [
+            3,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            40,
+            63
+          ],
+          [
+            40,
+            86
+          ],
+          [
+            63,
+            109
+          ],
+          [
+            86,
+            132
+          ]
+        ],
+        {
+          "17": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            2,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "86": [
+            2,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ],
+          "109": [
+            3,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "132": [
+            3,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            40,
+            63
+          ],
+          [
+            40,
+            86
+          ],
+          [
+            63,
+            109
+          ],
+          [
+            86,
+            132
+          ]
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "perfect_division.error_provenance",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "perfect_division.known_official_counts",
+      "actual": [
+        5,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "expected": [
+        5,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "perfect_division.known_legacy_counterexample",
+      "actual": [
+        5,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "expected": [
+        5,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "weak_component_same_branch.row.edge_tp",
+      "actual": 2,
+      "expected": 2,
+      "status": "PASS"
+    },
+    {
+      "id": "weak_component_same_branch.row.edge_fp",
+      "actual": 2,
+      "expected": 2,
+      "status": "PASS"
+    },
+    {
+      "id": "weak_component_same_branch.row.edge_fn",
+      "actual": 3,
+      "expected": 3,
+      "status": "PASS"
+    },
+    {
+      "id": "weak_component_same_branch.row.division_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "weak_component_same_branch.row.division_fp",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "weak_component_same_branch.row.division_fn",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "weak_component_same_branch.row.num_pred_nodes",
+      "actual": 5,
+      "expected": 5,
+      "status": "PASS"
+    },
+    {
+      "id": "weak_component_same_branch.row.node_recall",
+      "actual": 0.6666666666666666,
+      "expected": 0.6666666666666666,
+      "status": "PASS"
+    },
+    {
+      "id": "weak_component_same_branch.row.total_node_ratio",
+      "actual": -0.16666666666666666,
+      "expected": -0.16666666666666666,
+      "status": "PASS"
+    },
+    {
+      "id": "weak_component_same_branch.row.edge_jaccard",
+      "actual": 0.2857142857142857,
+      "expected": 0.2857142857142857,
+      "status": "PASS"
+    },
+    {
+      "id": "weak_component_same_branch.row.adj_edge_jaccard",
+      "actual": 0.29047619047619044,
+      "expected": 0.29047619047619044,
+      "status": "PASS"
+    },
+    {
+      "id": "weak_component_same_branch.summary.score",
+      "actual": 0.29047619047619044,
+      "expected": 0.29047619047619044,
+      "status": "PASS"
+    },
+    {
+      "id": "weak_component_same_branch.summary.adj_edge_jaccard",
+      "actual": 0.29047619047619044,
+      "expected": 0.29047619047619044,
+      "status": "PASS"
+    },
+    {
+      "id": "weak_component_same_branch.summary.division_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "weak_component_same_branch.summary.division_fp",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "weak_component_same_branch.summary.division_fn",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "weak_component_same_branch.summary.n",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "weak_component_same_branch.summary.n_adj",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "weak_component_same_branch.selector_alias",
+      "actual": 0.29047619047619044,
+      "expected": 0.29047619047619044,
+      "status": "PASS"
+    },
+    {
+      "id": "weak_component_same_branch.input_unmodified",
+      "actual": [
+        {
+          "17": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            2,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "86": [
+            2,
+            0.0,
+            123.07692307692308,
+            0.0
+          ],
+          "109": [
+            3,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            40,
+            63
+          ],
+          [
+            40,
+            86
+          ],
+          [
+            63,
+            109
+          ]
+        ],
+        {
+          "17": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            2,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "86": [
+            2,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ],
+          "109": [
+            3,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "132": [
+            3,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            40,
+            63
+          ],
+          [
+            40,
+            86
+          ],
+          [
+            63,
+            109
+          ],
+          [
+            86,
+            132
+          ]
+        ]
+      ],
+      "expected": [
+        {
+          "17": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            2,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "86": [
+            2,
+            0.0,
+            123.07692307692308,
+            0.0
+          ],
+          "109": [
+            3,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            40,
+            63
+          ],
+          [
+            40,
+            86
+          ],
+          [
+            63,
+            109
+          ]
+        ],
+        {
+          "17": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            2,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "86": [
+            2,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ],
+          "109": [
+            3,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "132": [
+            3,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            40,
+            63
+          ],
+          [
+            40,
+            86
+          ],
+          [
+            63,
+            109
+          ],
+          [
+            86,
+            132
+          ]
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "weak_component_same_branch.error_provenance",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "weak_component_same_branch.known_official_counts",
+      "actual": [
+        2,
+        2,
+        3,
+        0,
+        1,
+        1
+      ],
+      "expected": [
+        2,
+        2,
+        3,
+        0,
+        1,
+        1
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "weak_component_same_branch.known_legacy_counterexample",
+      "actual": [
+        2,
+        2,
+        3,
+        1,
+        0,
+        0
+      ],
+      "expected": [
+        2,
+        2,
+        3,
+        1,
+        0,
+        0
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions.row.edge_tp",
+      "actual": 6,
+      "expected": 6,
+      "status": "PASS"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions.row.edge_fp",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions.row.edge_fn",
+      "actual": 5,
+      "expected": 5,
+      "status": "PASS"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions.row.division_tp",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions.row.division_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions.row.division_fn",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions.row.num_pred_nodes",
+      "actual": 8,
+      "expected": 8,
+      "status": "PASS"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions.row.node_recall",
+      "actual": 0.6666666666666666,
+      "expected": 0.6666666666666666,
+      "status": "PASS"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions.row.total_node_ratio",
+      "actual": -0.3333333333333333,
+      "expected": -0.3333333333333333,
+      "status": "PASS"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions.row.edge_jaccard",
+      "actual": 0.5,
+      "expected": 0.5,
+      "status": "PASS"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions.row.adj_edge_jaccard",
+      "actual": 0.5166666666666667,
+      "expected": 0.5166666666666667,
+      "status": "PASS"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions.summary.score",
+      "actual": 0.5666666666666668,
+      "expected": 0.5666666666666668,
+      "status": "PASS"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions.summary.adj_edge_jaccard",
+      "actual": 0.5166666666666667,
+      "expected": 0.5166666666666667,
+      "status": "PASS"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions.summary.division_tp",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions.summary.division_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions.summary.division_fn",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions.summary.n",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions.summary.n_adj",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions.selector_alias",
+      "actual": 0.5666666666666668,
+      "expected": 0.5666666666666668,
+      "status": "PASS"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions.input_unmodified",
+      "actual": [
+        {
+          "17": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            2,
+            0.0,
+            -49.23076923076923,
+            0.0
+          ],
+          "86": [
+            3,
+            0.0,
+            49.23076923076923,
+            0.0
+          ],
+          "109": [
+            4,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "132": [
+            4,
+            0.0,
+            73.84615384615384,
+            0.0
+          ],
+          "155": [
+            5,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "178": [
+            5,
+            0.0,
+            73.84615384615384,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            40,
+            63
+          ],
+          [
+            63,
+            86
+          ],
+          [
+            86,
+            109
+          ],
+          [
+            86,
+            132
+          ],
+          [
+            109,
+            155
+          ],
+          [
+            132,
+            178
+          ]
+        ],
+        {
+          "17": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            2,
+            0.0,
+            -49.23076923076923,
+            0.0
+          ],
+          "86": [
+            2,
+            0.0,
+            49.23076923076923,
+            0.0
+          ],
+          "109": [
+            3,
+            0.0,
+            -49.23076923076923,
+            0.0
+          ],
+          "132": [
+            3,
+            0.0,
+            49.23076923076923,
+            0.0
+          ],
+          "155": [
+            4,
+            0.0,
+            -49.23076923076923,
+            0.0
+          ],
+          "178": [
+            4,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "201": [
+            4,
+            0.0,
+            73.84615384615384,
+            0.0
+          ],
+          "224": [
+            5,
+            0.0,
+            -49.23076923076923,
+            0.0
+          ],
+          "247": [
+            5,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "270": [
+            5,
+            0.0,
+            73.84615384615384,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            40,
+            63
+          ],
+          [
+            40,
+            86
+          ],
+          [
+            63,
+            109
+          ],
+          [
+            109,
+            155
+          ],
+          [
+            155,
+            224
+          ],
+          [
+            86,
+            132
+          ],
+          [
+            132,
+            178
+          ],
+          [
+            132,
+            201
+          ],
+          [
+            178,
+            247
+          ],
+          [
+            201,
+            270
+          ]
+        ]
+      ],
+      "expected": [
+        {
+          "17": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            2,
+            0.0,
+            -49.23076923076923,
+            0.0
+          ],
+          "86": [
+            3,
+            0.0,
+            49.23076923076923,
+            0.0
+          ],
+          "109": [
+            4,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "132": [
+            4,
+            0.0,
+            73.84615384615384,
+            0.0
+          ],
+          "155": [
+            5,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "178": [
+            5,
+            0.0,
+            73.84615384615384,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            40,
+            63
+          ],
+          [
+            63,
+            86
+          ],
+          [
+            86,
+            109
+          ],
+          [
+            86,
+            132
+          ],
+          [
+            109,
+            155
+          ],
+          [
+            132,
+            178
+          ]
+        ],
+        {
+          "17": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            2,
+            0.0,
+            -49.23076923076923,
+            0.0
+          ],
+          "86": [
+            2,
+            0.0,
+            49.23076923076923,
+            0.0
+          ],
+          "109": [
+            3,
+            0.0,
+            -49.23076923076923,
+            0.0
+          ],
+          "132": [
+            3,
+            0.0,
+            49.23076923076923,
+            0.0
+          ],
+          "155": [
+            4,
+            0.0,
+            -49.23076923076923,
+            0.0
+          ],
+          "178": [
+            4,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "201": [
+            4,
+            0.0,
+            73.84615384615384,
+            0.0
+          ],
+          "224": [
+            5,
+            0.0,
+            -49.23076923076923,
+            0.0
+          ],
+          "247": [
+            5,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "270": [
+            5,
+            0.0,
+            73.84615384615384,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            40,
+            63
+          ],
+          [
+            40,
+            86
+          ],
+          [
+            63,
+            109
+          ],
+          [
+            109,
+            155
+          ],
+          [
+            155,
+            224
+          ],
+          [
+            86,
+            132
+          ],
+          [
+            132,
+            178
+          ],
+          [
+            132,
+            201
+          ],
+          [
+            178,
+            247
+          ],
+          [
+            201,
+            270
+          ]
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions.error_provenance",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions.known_official_counts",
+      "actual": [
+        6,
+        1,
+        5,
+        1,
+        0,
+        1
+      ],
+      "expected": [
+        6,
+        1,
+        5,
+        1,
+        0,
+        1
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions.known_legacy_counterexample",
+      "actual": [
+        6,
+        1,
+        5,
+        2,
+        0,
+        0
+      ],
+      "expected": [
+        6,
+        1,
+        5,
+        2,
+        0,
+        0
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "unmatched_fork_cross_components.row.edge_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "unmatched_fork_cross_components.row.edge_fp",
+      "actual": 2,
+      "expected": 2,
+      "status": "PASS"
+    },
+    {
+      "id": "unmatched_fork_cross_components.row.edge_fn",
+      "actual": 2,
+      "expected": 2,
+      "status": "PASS"
+    },
+    {
+      "id": "unmatched_fork_cross_components.row.division_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "unmatched_fork_cross_components.row.division_fp",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "unmatched_fork_cross_components.row.division_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "unmatched_fork_cross_components.row.num_pred_nodes",
+      "actual": 3,
+      "expected": 3,
+      "status": "PASS"
+    },
+    {
+      "id": "unmatched_fork_cross_components.row.node_recall",
+      "actual": 0.5,
+      "expected": 0.5,
+      "status": "PASS"
+    },
+    {
+      "id": "unmatched_fork_cross_components.row.total_node_ratio",
+      "actual": -0.25,
+      "expected": -0.25,
+      "status": "PASS"
+    },
+    {
+      "id": "unmatched_fork_cross_components.row.edge_jaccard",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "unmatched_fork_cross_components.row.adj_edge_jaccard",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "unmatched_fork_cross_components.summary.score",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "unmatched_fork_cross_components.summary.adj_edge_jaccard",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "unmatched_fork_cross_components.summary.division_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "unmatched_fork_cross_components.summary.division_fp",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "unmatched_fork_cross_components.summary.division_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "unmatched_fork_cross_components.summary.n",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "unmatched_fork_cross_components.summary.n_adj",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "unmatched_fork_cross_components.selector_alias",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "unmatched_fork_cross_components.input_unmodified",
+      "actual": [
+        {
+          "17": [
+            0,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            1,
+            0.0,
+            49.23076923076923,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            17,
+            63
+          ]
+        ],
+        {
+          "17": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            0,
+            0.0,
+            49.23076923076923,
+            0.0
+          ],
+          "86": [
+            1,
+            0.0,
+            49.23076923076923,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            63,
+            86
+          ]
+        ]
+      ],
+      "expected": [
+        {
+          "17": [
+            0,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            1,
+            0.0,
+            49.23076923076923,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            17,
+            63
+          ]
+        ],
+        {
+          "17": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            0,
+            0.0,
+            49.23076923076923,
+            0.0
+          ],
+          "86": [
+            1,
+            0.0,
+            49.23076923076923,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            63,
+            86
+          ]
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "unmatched_fork_cross_components.error_provenance",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "unmatched_fork_cross_components.known_official_counts",
+      "actual": [
+        0,
+        2,
+        2,
+        0,
+        1,
+        0
+      ],
+      "expected": [
+        0,
+        2,
+        2,
+        0,
+        1,
+        0
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "unmatched_fork_cross_components.known_legacy_counterexample",
+      "actual": [
+        0,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "delayed_local_division.row.edge_tp",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "delayed_local_division.row.edge_fp",
+      "actual": 3,
+      "expected": 3,
+      "status": "PASS"
+    },
+    {
+      "id": "delayed_local_division.row.edge_fn",
+      "actual": 4,
+      "expected": 4,
+      "status": "PASS"
+    },
+    {
+      "id": "delayed_local_division.row.division_tp",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "delayed_local_division.row.division_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "delayed_local_division.row.division_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "delayed_local_division.row.num_pred_nodes",
+      "actual": 5,
+      "expected": 5,
+      "status": "PASS"
+    },
+    {
+      "id": "delayed_local_division.row.node_recall",
+      "actual": 0.6666666666666666,
+      "expected": 0.6666666666666666,
+      "status": "PASS"
+    },
+    {
+      "id": "delayed_local_division.row.total_node_ratio",
+      "actual": -0.16666666666666666,
+      "expected": -0.16666666666666666,
+      "status": "PASS"
+    },
+    {
+      "id": "delayed_local_division.row.edge_jaccard",
+      "actual": 0.125,
+      "expected": 0.125,
+      "status": "PASS"
+    },
+    {
+      "id": "delayed_local_division.row.adj_edge_jaccard",
+      "actual": 0.12708333333333333,
+      "expected": 0.12708333333333333,
+      "status": "PASS"
+    },
+    {
+      "id": "delayed_local_division.summary.score",
+      "actual": 0.22708333333333333,
+      "expected": 0.22708333333333333,
+      "status": "PASS"
+    },
+    {
+      "id": "delayed_local_division.summary.adj_edge_jaccard",
+      "actual": 0.12708333333333333,
+      "expected": 0.12708333333333333,
+      "status": "PASS"
+    },
+    {
+      "id": "delayed_local_division.summary.division_tp",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "delayed_local_division.summary.division_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "delayed_local_division.summary.division_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "delayed_local_division.summary.n",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "delayed_local_division.summary.n_adj",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "delayed_local_division.selector_alias",
+      "actual": 0.22708333333333333,
+      "expected": 0.22708333333333333,
+      "status": "PASS"
+    },
+    {
+      "id": "delayed_local_division.input_unmodified",
+      "actual": [
+        {
+          "17": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "86": [
+            3,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "109": [
+            3,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            40,
+            63
+          ],
+          [
+            63,
+            86
+          ],
+          [
+            63,
+            109
+          ]
+        ],
+        {
+          "17": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            2,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "86": [
+            2,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ],
+          "109": [
+            3,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "132": [
+            3,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            40,
+            63
+          ],
+          [
+            40,
+            86
+          ],
+          [
+            63,
+            109
+          ],
+          [
+            86,
+            132
+          ]
+        ]
+      ],
+      "expected": [
+        {
+          "17": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "86": [
+            3,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "109": [
+            3,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            40,
+            63
+          ],
+          [
+            63,
+            86
+          ],
+          [
+            63,
+            109
+          ]
+        ],
+        {
+          "17": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            2,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "86": [
+            2,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ],
+          "109": [
+            3,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "132": [
+            3,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            40,
+            63
+          ],
+          [
+            40,
+            86
+          ],
+          [
+            63,
+            109
+          ],
+          [
+            86,
+            132
+          ]
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "delayed_local_division.error_provenance",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "delayed_local_division.known_official_counts",
+      "actual": [
+        1,
+        3,
+        4,
+        1,
+        0,
+        0
+      ],
+      "expected": [
+        1,
+        3,
+        4,
+        1,
+        0,
+        0
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "delayed_local_division.known_legacy_counterexample",
+      "actual": [
+        1,
+        3,
+        4,
+        1,
+        0,
+        0
+      ],
+      "expected": [
+        1,
+        3,
+        4,
+        1,
+        0,
+        0
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "merged_child_reject.row.edge_tp",
+      "actual": 5,
+      "expected": 5,
+      "status": "PASS"
+    },
+    {
+      "id": "merged_child_reject.row.edge_fp",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "merged_child_reject.row.edge_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "merged_child_reject.row.division_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "merged_child_reject.row.division_fp",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "merged_child_reject.row.division_fn",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "merged_child_reject.row.num_pred_nodes",
+      "actual": 7,
+      "expected": 7,
+      "status": "PASS"
+    },
+    {
+      "id": "merged_child_reject.row.node_recall",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "merged_child_reject.row.total_node_ratio",
+      "actual": 0.16666666666666666,
+      "expected": 0.16666666666666666,
+      "status": "PASS"
+    },
+    {
+      "id": "merged_child_reject.row.edge_jaccard",
+      "actual": 0.8333333333333334,
+      "expected": 0.8333333333333334,
+      "status": "PASS"
+    },
+    {
+      "id": "merged_child_reject.row.adj_edge_jaccard",
+      "actual": 0.8194444444444444,
+      "expected": 0.8194444444444444,
+      "status": "PASS"
+    },
+    {
+      "id": "merged_child_reject.summary.score",
+      "actual": 0.8194444444444443,
+      "expected": 0.8194444444444443,
+      "status": "PASS"
+    },
+    {
+      "id": "merged_child_reject.summary.adj_edge_jaccard",
+      "actual": 0.8194444444444443,
+      "expected": 0.8194444444444443,
+      "status": "PASS"
+    },
+    {
+      "id": "merged_child_reject.summary.division_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "merged_child_reject.summary.division_fp",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "merged_child_reject.summary.division_fn",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "merged_child_reject.summary.n",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "merged_child_reject.summary.n_adj",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "merged_child_reject.selector_alias",
+      "actual": 0.8194444444444443,
+      "expected": 0.8194444444444443,
+      "status": "PASS"
+    },
+    {
+      "id": "merged_child_reject.input_unmodified",
+      "actual": [
+        {
+          "17": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            2,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "86": [
+            2,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ],
+          "109": [
+            3,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "132": [
+            3,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ],
+          "155": [
+            1,
+            0.0,
+            123.07692307692308,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            40,
+            63
+          ],
+          [
+            40,
+            86
+          ],
+          [
+            63,
+            109
+          ],
+          [
+            86,
+            132
+          ],
+          [
+            155,
+            63
+          ]
+        ],
+        {
+          "17": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            2,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "86": [
+            2,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ],
+          "109": [
+            3,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "132": [
+            3,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            40,
+            63
+          ],
+          [
+            40,
+            86
+          ],
+          [
+            63,
+            109
+          ],
+          [
+            86,
+            132
+          ]
+        ]
+      ],
+      "expected": [
+        {
+          "17": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            2,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "86": [
+            2,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ],
+          "109": [
+            3,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "132": [
+            3,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ],
+          "155": [
+            1,
+            0.0,
+            123.07692307692308,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            40,
+            63
+          ],
+          [
+            40,
+            86
+          ],
+          [
+            63,
+            109
+          ],
+          [
+            86,
+            132
+          ],
+          [
+            155,
+            63
+          ]
+        ],
+        {
+          "17": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "40": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "63": [
+            2,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "86": [
+            2,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ],
+          "109": [
+            3,
+            0.0,
+            24.615384615384617,
+            0.0
+          ],
+          "132": [
+            3,
+            0.0,
+            -24.615384615384617,
+            0.0
+          ]
+        },
+        [
+          [
+            17,
+            40
+          ],
+          [
+            40,
+            63
+          ],
+          [
+            40,
+            86
+          ],
+          [
+            63,
+            109
+          ],
+          [
+            86,
+            132
+          ]
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "merged_child_reject.error_provenance",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "merged_child_reject.known_official_counts",
+      "actual": [
+        5,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "expected": [
+        5,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "merged_child_reject.known_legacy_counterexample",
+      "actual": [
+        5,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "expected": [
+        5,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "straight_no_divisions.row.edge_tp",
+      "actual": 2,
+      "expected": 2,
+      "status": "PASS"
+    },
+    {
+      "id": "straight_no_divisions.row.edge_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "straight_no_divisions.row.edge_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "straight_no_divisions.row.division_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "straight_no_divisions.row.division_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "straight_no_divisions.row.division_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "straight_no_divisions.row.num_pred_nodes",
+      "actual": 3,
+      "expected": 3,
+      "status": "PASS"
+    },
+    {
+      "id": "straight_no_divisions.row.node_recall",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "straight_no_divisions.row.total_node_ratio",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "straight_no_divisions.row.edge_jaccard",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "straight_no_divisions.row.adj_edge_jaccard",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "straight_no_divisions.summary.score",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "straight_no_divisions.summary.adj_edge_jaccard",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "straight_no_divisions.summary.division_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "straight_no_divisions.summary.division_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "straight_no_divisions.summary.division_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "straight_no_divisions.summary.n",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "straight_no_divisions.summary.n_adj",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "straight_no_divisions.selector_alias",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "straight_no_divisions.input_unmodified",
+      "actual": [
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ],
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ]
+      ],
+      "expected": [
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ],
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "straight_no_divisions.error_provenance",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "no_divisions_term_dropped",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "no_divisions_jaccard_nan",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "same_graph_hash_stable",
+      "actual": "6d4b2df40e7de3eab1a5270815816e34b4a4d44dbb751b8a26fc1d7b32040c54",
+      "expected": "6d4b2df40e7de3eab1a5270815816e34b4a4d44dbb751b8a26fc1d7b32040c54",
+      "status": "PASS"
+    },
+    {
+      "id": "same_gt_hash_stable",
+      "actual": "6d4b2df40e7de3eab1a5270815816e34b4a4d44dbb751b8a26fc1d7b32040c54",
+      "expected": "6d4b2df40e7de3eab1a5270815816e34b4a4d44dbb751b8a26fc1d7b32040c54",
+      "status": "PASS"
+    },
+    {
+      "id": "identical_pred_gt_hashes",
+      "actual": "6d4b2df40e7de3eab1a5270815816e34b4a4d44dbb751b8a26fc1d7b32040c54",
+      "expected": "6d4b2df40e7de3eab1a5270815816e34b4a4d44dbb751b8a26fc1d7b32040c54",
+      "status": "PASS"
+    },
+    {
+      "id": "graph_hash_sha256_length",
+      "actual": 64,
+      "expected": 64,
+      "status": "PASS"
+    },
+    {
+      "id": "graph_hash_same_input_provenance",
+      "actual": "same_plain_graph_received_by_legacy_proxy_and_official_adapter",
+      "expected": "same_plain_graph_received_by_legacy_proxy_and_official_adapter",
+      "status": "PASS"
+    },
+    {
+      "id": "hash_records_n_total",
+      "actual": 3.0,
+      "expected": 3.0,
+      "status": "PASS"
+    },
+    {
+      "id": "hash_records_scale",
+      "actual": [
+        1.625,
+        0.40625,
+        0.40625
+      ],
+      "expected": [
+        1.625,
+        0.40625,
+        0.40625
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "hash_records_radius",
+      "actual": 7.0,
+      "expected": 7.0,
+      "status": "PASS"
+    },
+    {
+      "id": "coordinate_change_changes_pred_hash",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "coordinate_change_preserves_gt_hash",
+      "actual": "6d4b2df40e7de3eab1a5270815816e34b4a4d44dbb751b8a26fc1d7b32040c54",
+      "expected": "6d4b2df40e7de3eab1a5270815816e34b4a4d44dbb751b8a26fc1d7b32040c54",
+      "status": "PASS"
+    },
+    {
+      "id": "node_insertion_order_is_hashed",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "edge_order_is_hashed",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "hash_normalizes_python_numeric_types",
+      "actual": "6d4b2df40e7de3eab1a5270815816e34b4a4d44dbb751b8a26fc1d7b32040c54",
+      "expected": "6d4b2df40e7de3eab1a5270815816e34b4a4d44dbb751b8a26fc1d7b32040c54",
+      "status": "PASS"
+    },
+    {
+      "id": "repeated_official_and_proxy_leave_nodes_unchanged",
+      "actual": {
+        "101": [
+          0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "903": [
+          1,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "8001": [
+          2,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "expected": {
+        "101": [
+          0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "903": [
+          1,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "8001": [
+          2,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "repeated_official_and_proxy_leave_edges_unchanged",
+      "actual": [
+        [
+          101,
+          903
+        ],
+        [
+          903,
+          8001
+        ]
+      ],
+      "expected": [
+        [
+          101,
+          903
+        ],
+        [
+          903,
+          8001
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate_edges.row.edge_tp",
+      "actual": 2,
+      "expected": 2,
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate_edges.row.edge_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate_edges.row.edge_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate_edges.row.division_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate_edges.row.division_fp",
+      "actual": 2,
+      "expected": 2,
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate_edges.row.division_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate_edges.row.num_pred_nodes",
+      "actual": 3,
+      "expected": 3,
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate_edges.row.node_recall",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate_edges.row.total_node_ratio",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate_edges.row.edge_jaccard",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate_edges.row.adj_edge_jaccard",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate_edges.summary.score",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate_edges.summary.adj_edge_jaccard",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate_edges.summary.division_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate_edges.summary.division_fp",
+      "actual": 2,
+      "expected": 2,
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate_edges.summary.division_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate_edges.summary.n",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate_edges.summary.n_adj",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate_edges.selector_alias",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate_edges.input_unmodified",
+      "actual": [
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ],
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ],
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ]
+      ],
+      "expected": [
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ],
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ],
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "duplicate_edges.error_provenance",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "nonconsecutive_and_backward_edges.row.edge_tp",
+      "actual": 2,
+      "expected": 2,
+      "status": "PASS"
+    },
+    {
+      "id": "nonconsecutive_and_backward_edges.row.edge_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "nonconsecutive_and_backward_edges.row.edge_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "nonconsecutive_and_backward_edges.row.division_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "nonconsecutive_and_backward_edges.row.division_fp",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "nonconsecutive_and_backward_edges.row.division_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "nonconsecutive_and_backward_edges.row.num_pred_nodes",
+      "actual": 3,
+      "expected": 3,
+      "status": "PASS"
+    },
+    {
+      "id": "nonconsecutive_and_backward_edges.row.node_recall",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "nonconsecutive_and_backward_edges.row.total_node_ratio",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "nonconsecutive_and_backward_edges.row.edge_jaccard",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "nonconsecutive_and_backward_edges.row.adj_edge_jaccard",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "nonconsecutive_and_backward_edges.summary.score",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "nonconsecutive_and_backward_edges.summary.adj_edge_jaccard",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "nonconsecutive_and_backward_edges.summary.division_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "nonconsecutive_and_backward_edges.summary.division_fp",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "nonconsecutive_and_backward_edges.summary.division_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "nonconsecutive_and_backward_edges.summary.n",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "nonconsecutive_and_backward_edges.summary.n_adj",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "nonconsecutive_and_backward_edges.selector_alias",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "nonconsecutive_and_backward_edges.input_unmodified",
+      "actual": [
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ],
+          [
+            101,
+            8001
+          ],
+          [
+            8001,
+            101
+          ]
+        ],
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ]
+      ],
+      "expected": [
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ],
+          [
+            101,
+            8001
+          ],
+          [
+            8001,
+            101
+          ]
+        ],
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "nonconsecutive_and_backward_edges.error_provenance",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "isolated_nodes_penalty.row.edge_tp",
+      "actual": 2,
+      "expected": 2,
+      "status": "PASS"
+    },
+    {
+      "id": "isolated_nodes_penalty.row.edge_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "isolated_nodes_penalty.row.edge_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "isolated_nodes_penalty.row.division_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "isolated_nodes_penalty.row.division_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "isolated_nodes_penalty.row.division_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "isolated_nodes_penalty.row.num_pred_nodes",
+      "actual": 6,
+      "expected": 6,
+      "status": "PASS"
+    },
+    {
+      "id": "isolated_nodes_penalty.row.node_recall",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "isolated_nodes_penalty.row.total_node_ratio",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "isolated_nodes_penalty.row.edge_jaccard",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "isolated_nodes_penalty.row.adj_edge_jaccard",
+      "actual": 0.9,
+      "expected": 0.9,
+      "status": "PASS"
+    },
+    {
+      "id": "isolated_nodes_penalty.summary.score",
+      "actual": 0.9,
+      "expected": 0.9,
+      "status": "PASS"
+    },
+    {
+      "id": "isolated_nodes_penalty.summary.adj_edge_jaccard",
+      "actual": 0.9,
+      "expected": 0.9,
+      "status": "PASS"
+    },
+    {
+      "id": "isolated_nodes_penalty.summary.division_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "isolated_nodes_penalty.summary.division_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "isolated_nodes_penalty.summary.division_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "isolated_nodes_penalty.summary.n",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "isolated_nodes_penalty.summary.n_adj",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "isolated_nodes_penalty.selector_alias",
+      "actual": 0.9,
+      "expected": 0.9,
+      "status": "PASS"
+    },
+    {
+      "id": "isolated_nodes_penalty.input_unmodified",
+      "actual": [
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "20000": [
+            0,
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "20001": [
+            0,
+            0.0,
+            1100.0,
+            0.0
+          ],
+          "20002": [
+            0,
+            0.0,
+            1200.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ],
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ]
+      ],
+      "expected": [
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "20000": [
+            0,
+            0.0,
+            1000.0,
+            0.0
+          ],
+          "20001": [
+            0,
+            0.0,
+            1100.0,
+            0.0
+          ],
+          "20002": [
+            0,
+            0.0,
+            1200.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ],
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "isolated_nodes_penalty.error_provenance",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "isolated_nodes_preserved",
+      "actual": 6,
+      "expected": 6,
+      "status": "PASS"
+    },
+    {
+      "id": "isolated_nodes_adjusted",
+      "actual": 0.9,
+      "expected": 0.9,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_6p5um.row.edge_tp",
+      "actual": 2,
+      "expected": 2,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_6p5um.row.edge_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_6p5um.row.edge_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_6p5um.row.division_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_6p5um.row.division_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_6p5um.row.division_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_6p5um.row.num_pred_nodes",
+      "actual": 3,
+      "expected": 3,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_6p5um.row.node_recall",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_6p5um.row.total_node_ratio",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_6p5um.row.edge_jaccard",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_6p5um.row.adj_edge_jaccard",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_6p5um.summary.score",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_6p5um.summary.adj_edge_jaccard",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_6p5um.summary.division_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_6p5um.summary.division_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_6p5um.summary.division_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_6p5um.summary.n",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_6p5um.summary.n_adj",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_6p5um.selector_alias",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_6p5um.input_unmodified",
+      "actual": [
+        {
+          "101": [
+            0,
+            4.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            4.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            4.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ],
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ]
+      ],
+      "expected": [
+        {
+          "101": [
+            0,
+            4.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            4.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            4.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ],
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_6p5um.error_provenance",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_8p125um.row.edge_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_8p125um.row.edge_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_8p125um.row.edge_fn",
+      "actual": 2,
+      "expected": 2,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_8p125um.row.division_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_8p125um.row.division_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_8p125um.row.division_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_8p125um.row.num_pred_nodes",
+      "actual": 3,
+      "expected": 3,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_8p125um.row.node_recall",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_8p125um.row.total_node_ratio",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_8p125um.row.edge_jaccard",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_8p125um.row.adj_edge_jaccard",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_8p125um.summary.score",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_8p125um.summary.adj_edge_jaccard",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_8p125um.summary.division_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_8p125um.summary.division_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_8p125um.summary.division_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_8p125um.summary.n",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_8p125um.summary.n_adj",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_8p125um.selector_alias",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_8p125um.input_unmodified",
+      "actual": [
+        {
+          "101": [
+            0,
+            5.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            5.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ],
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ]
+      ],
+      "expected": [
+        {
+          "101": [
+            0,
+            5.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            5.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            5.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ],
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "z_scale_8p125um.error_provenance",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "anisotropic_scale_inside",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "anisotropic_scale_outside",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "direct_official_empty_recall_bug",
+      "status": "PASS",
+      "exception": "KeyError",
+      "message": "'match_node_id'"
+    },
+    {
+      "id": "direct_official_isolated_recall_bug",
+      "status": "PASS",
+      "exception": "KeyError",
+      "message": "'match_node_id'"
+    },
+    {
+      "id": "empty_prediction_explicit_match.row.edge_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "empty_prediction_explicit_match.row.edge_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "empty_prediction_explicit_match.row.edge_fn",
+      "actual": 2,
+      "expected": 2,
+      "status": "PASS"
+    },
+    {
+      "id": "empty_prediction_explicit_match.row.division_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "empty_prediction_explicit_match.row.division_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "empty_prediction_explicit_match.row.division_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "empty_prediction_explicit_match.row.num_pred_nodes",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "empty_prediction_explicit_match.row.node_recall",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "empty_prediction_explicit_match.row.total_node_ratio",
+      "actual": -1.0,
+      "expected": -1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "empty_prediction_explicit_match.row.edge_jaccard",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "empty_prediction_explicit_match.row.adj_edge_jaccard",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "empty_prediction_explicit_match.summary.score",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "empty_prediction_explicit_match.summary.adj_edge_jaccard",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "empty_prediction_explicit_match.summary.division_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "empty_prediction_explicit_match.summary.division_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "empty_prediction_explicit_match.summary.division_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "empty_prediction_explicit_match.summary.n",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "empty_prediction_explicit_match.summary.n_adj",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "empty_prediction_explicit_match.selector_alias",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "empty_prediction_explicit_match.input_unmodified",
+      "actual": [
+        {},
+        [],
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ]
+      ],
+      "expected": [
+        {},
+        [],
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "empty_prediction_explicit_match.error_provenance",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "edgeless_prediction_explicit_match.row.edge_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "edgeless_prediction_explicit_match.row.edge_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "edgeless_prediction_explicit_match.row.edge_fn",
+      "actual": 2,
+      "expected": 2,
+      "status": "PASS"
+    },
+    {
+      "id": "edgeless_prediction_explicit_match.row.division_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "edgeless_prediction_explicit_match.row.division_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "edgeless_prediction_explicit_match.row.division_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "edgeless_prediction_explicit_match.row.num_pred_nodes",
+      "actual": 3,
+      "expected": 3,
+      "status": "PASS"
+    },
+    {
+      "id": "edgeless_prediction_explicit_match.row.node_recall",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "edgeless_prediction_explicit_match.row.total_node_ratio",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "edgeless_prediction_explicit_match.row.edge_jaccard",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "edgeless_prediction_explicit_match.row.adj_edge_jaccard",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "edgeless_prediction_explicit_match.summary.score",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "edgeless_prediction_explicit_match.summary.adj_edge_jaccard",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "edgeless_prediction_explicit_match.summary.division_tp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "edgeless_prediction_explicit_match.summary.division_fp",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "edgeless_prediction_explicit_match.summary.division_fn",
+      "actual": 0,
+      "expected": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "edgeless_prediction_explicit_match.summary.n",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "edgeless_prediction_explicit_match.summary.n_adj",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "edgeless_prediction_explicit_match.selector_alias",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "edgeless_prediction_explicit_match.input_unmodified",
+      "actual": [
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [],
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ]
+      ],
+      "expected": [
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [],
+        {
+          "101": [
+            0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "903": [
+            1,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "8001": [
+            2,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        [
+          [
+            101,
+            903
+          ],
+          [
+            903,
+            8001
+          ]
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "edgeless_prediction_explicit_match.error_provenance",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "empty_prediction_recall",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "empty_prediction_score",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "edgeless_prediction_recall",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "edgeless_prediction_score",
+      "actual": 0.0,
+      "expected": 0.0,
+      "status": "PASS"
+    },
+    {
+      "id": "invalid_n_total_None",
+      "status": "PASS",
+      "exception": "ValueError",
+      "message": "Missing or invalid estimated_number_of_nodes; no proxy fallback"
+    },
+    {
+      "id": "invalid_n_total_0",
+      "status": "PASS",
+      "exception": "ValueError",
+      "message": "estimated_number_of_nodes must be finite and positive"
+    },
+    {
+      "id": "invalid_n_total_-1",
+      "status": "PASS",
+      "exception": "ValueError",
+      "message": "estimated_number_of_nodes must be finite and positive"
+    },
+    {
+      "id": "invalid_n_total_nan",
+      "status": "PASS",
+      "exception": "ValueError",
+      "message": "estimated_number_of_nodes must be finite and positive"
+    },
+    {
+      "id": "invalid_n_total_inf",
+      "status": "PASS",
+      "exception": "ValueError",
+      "message": "estimated_number_of_nodes must be finite and positive"
+    },
+    {
+      "id": "invalid_n_total_True",
+      "status": "PASS",
+      "exception": "ValueError",
+      "message": "Missing or invalid estimated_number_of_nodes; no proxy fallback"
+    },
+    {
+      "id": "empty_gt_fail_closed",
+      "status": "PASS",
+      "exception": "ValueError",
+      "message": "Empty GT is unsupported by the frozen official matching chain"
+    },
+    {
+      "id": "fractional_frame_rejected",
+      "status": "PASS",
+      "exception": "ValueError",
+      "message": "Frame must be a nonnegative Int32 integer"
+    },
+    {
+      "id": "nonfinite_coordinate_rejected",
+      "status": "PASS",
+      "exception": "ValueError",
+      "message": "Nonfinite spatial coordinate"
+    },
+    {
+      "id": "dangling_edge_rejected",
+      "status": "PASS",
+      "exception": "ValueError",
+      "message": "Dangling edge in scorer input"
+    },
+    {
+      "id": "no_double_installation",
+      "status": "PASS",
+      "exception": "RuntimeError",
+      "message": "Official selector already installed; refusing double wrapping"
+    },
+    {
+      "id": "weighted_full_chain",
+      "actual": 1.077777777777778,
+      "expected": 1.077777777777778,
+      "status": "PASS"
+    },
+    {
+      "id": "official_nan_row_skip_count",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "official_nan_row_skip_score",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "official_nan_adjustment_skip_count",
+      "actual": 1,
+      "expected": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "official_nan_adjustment_score",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "all_nan_fail_closed",
+      "status": "PASS",
+      "exception": "ValueError",
+      "message": "Official aggregate score is nonfinite; no proxy fallback"
+    },
+    {
+      "id": "all_adj_nan_fail_closed",
+      "status": "PASS",
+      "exception": "ValueError",
+      "message": "Official aggregate score is nonfinite; no proxy fallback"
+    },
+    {
+      "id": "empty_aggregate_fail_closed",
+      "status": "PASS",
+      "exception": "ValueError",
+      "message": "No validator rows; refusing undefined official selector score"
+    },
+    {
+      "id": "legacy_row_cannot_enter_official_aggregate",
+      "status": "PASS",
+      "exception": "ValueError",
+      "message": "Selector received a row without official scorer provenance"
+    },
+    {
+      "id": "no_edge_mass_aggregate_fail_closed",
+      "status": "PASS",
+      "exception": "ValueError",
+      "message": "Official aggregate score is nonfinite; no proxy fallback"
+    },
+    {
+      "id": "original_selector.margin_equal_pass",
+      "actual": "c",
+      "expected": "c",
+      "status": "PASS"
+    },
+    {
+      "id": "original_selector.margin_below_fail",
+      "actual": "base",
+      "expected": "base",
+      "status": "PASS"
+    },
+    {
+      "id": "original_selector.adj_loss_equal_pass",
+      "actual": "c",
+      "expected": "c",
+      "status": "PASS"
+    },
+    {
+      "id": "original_selector.adj_loss_below_fail",
+      "actual": "base",
+      "expected": "base",
+      "status": "PASS"
+    },
+    {
+      "id": "original_selector.score_tie_keeps_base",
+      "actual": "base",
+      "expected": "base",
+      "status": "PASS"
+    },
+    {
+      "id": "large_1000_nodes",
+      "actual": 1000,
+      "expected": 1000,
+      "status": "PASS"
+    },
+    {
+      "id": "large_980_tp_edges",
+      "actual": 980,
+      "expected": 980,
+      "status": "PASS"
+    },
+    {
+      "id": "large_score",
+      "actual": 1.0,
+      "expected": 1.0,
+      "status": "PASS"
+    },
+    {
+      "id": "large_bulk_node_calls_used",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    },
+    {
+      "id": "large_bulk_edge_calls_used",
+      "actual": true,
+      "expected": true,
+      "status": "PASS"
+    }
+  ],
+  "check_summary": {
+    "total": 364,
+    "passed": 364,
+    "failed": 0
+  },
+  "case_results": [
+    {
+      "id": "perfect_division",
+      "official_summary": {
+        "n": 1,
+        "edge_jaccard": 1.0,
+        "division_jaccard": 1.0,
+        "division_tp": 1,
+        "division_fp": 0,
+        "division_fn": 0,
+        "node_recall": 1.0,
+        "adj_edge_jaccard": 1.0,
+        "n_adj": 1,
+        "score": 1.1
+      },
+      "adapter_summary": {
+        "n": 1,
+        "edge_jaccard": 1.0,
+        "division_jaccard": 1.0,
+        "division_tp": 1,
+        "division_fp": 0,
+        "division_fn": 0,
+        "node_recall": 1.0,
+        "adj_edge_jaccard": 1.0,
+        "n_adj": 1,
+        "score": 1.1,
+        "adjusted_edge_jaccard": 1.0,
+        "proxy_score": 1.1,
+        "official_score": 1.1,
+        "proxy_score_field_semantics": "official_score_alias_for_unchanged_cell10",
+        "div_tp": 1,
+        "div_fp": 0,
+        "div_fn": 0,
+        "metric_provenance": "official_075fc5:evaluate->per_sample_metrics->summarise",
+        "error_decomposition_provenance": "unchanged_forge947_cell8_proxy; independent_global_node_matching",
+        "official_rows_skipped": 0,
+        "official_adjusted_rows_used": 1,
+        "legacy_proxy_score": 1.1,
+        "missed_gt_nodes": 0,
+        "spurious_pred_nodes": 0,
+        "edges_recovered": 5,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 0,
+        "wrong_association_edges": 0,
+        "legacy_proxy_adjusted_edge_jaccard": 1.0,
+        "legacy_proxy_division_jaccard": 1.0,
+        "legacy_proxy_div_tp": 1,
+        "legacy_proxy_div_fp": 0,
+        "legacy_proxy_div_fn": 0,
+        "legacy_proxy_missed_gt_nodes": 0,
+        "legacy_proxy_spurious_pred_nodes": 0,
+        "legacy_proxy_edges_recovered": 5,
+        "legacy_proxy_edges_fragmented": 0,
+        "legacy_proxy_edges_lost_to_detection": 0,
+        "legacy_proxy_wrong_association_edges": 0
+      }
+    },
+    {
+      "id": "weak_component_same_branch",
+      "official_summary": {
+        "n": 1,
+        "edge_jaccard": 0.2857142857142857,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "division_fp": 1,
+        "division_fn": 1,
+        "node_recall": 0.6666666666666666,
+        "adj_edge_jaccard": 0.29047619047619044,
+        "n_adj": 1,
+        "score": 0.29047619047619044
+      },
+      "adapter_summary": {
+        "n": 1,
+        "edge_jaccard": 0.2857142857142857,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "division_fp": 1,
+        "division_fn": 1,
+        "node_recall": 0.6666666666666666,
+        "adj_edge_jaccard": 0.29047619047619044,
+        "n_adj": 1,
+        "score": 0.29047619047619044,
+        "adjusted_edge_jaccard": 0.29047619047619044,
+        "proxy_score": 0.29047619047619044,
+        "official_score": 0.29047619047619044,
+        "proxy_score_field_semantics": "official_score_alias_for_unchanged_cell10",
+        "div_tp": 0,
+        "div_fp": 1,
+        "div_fn": 1,
+        "metric_provenance": "official_075fc5:evaluate->per_sample_metrics->summarise",
+        "error_decomposition_provenance": "unchanged_forge947_cell8_proxy; independent_global_node_matching",
+        "official_rows_skipped": 0,
+        "official_adjusted_rows_used": 1,
+        "legacy_proxy_score": 0.3904761904761904,
+        "missed_gt_nodes": 2,
+        "spurious_pred_nodes": 1,
+        "edges_recovered": 2,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 3,
+        "wrong_association_edges": 1,
+        "legacy_proxy_adjusted_edge_jaccard": 0.29047619047619044,
+        "legacy_proxy_division_jaccard": 1.0,
+        "legacy_proxy_div_tp": 1,
+        "legacy_proxy_div_fp": 0,
+        "legacy_proxy_div_fn": 0,
+        "legacy_proxy_missed_gt_nodes": 2,
+        "legacy_proxy_spurious_pred_nodes": 1,
+        "legacy_proxy_edges_recovered": 2,
+        "legacy_proxy_edges_fragmented": 0,
+        "legacy_proxy_edges_lost_to_detection": 3,
+        "legacy_proxy_wrong_association_edges": 1
+      }
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions",
+      "official_summary": {
+        "n": 1,
+        "edge_jaccard": 0.5,
+        "division_jaccard": 0.5,
+        "division_tp": 1,
+        "division_fp": 0,
+        "division_fn": 1,
+        "node_recall": 0.6666666666666666,
+        "adj_edge_jaccard": 0.5166666666666667,
+        "n_adj": 1,
+        "score": 0.5666666666666668
+      },
+      "adapter_summary": {
+        "n": 1,
+        "edge_jaccard": 0.5,
+        "division_jaccard": 0.5,
+        "division_tp": 1,
+        "division_fp": 0,
+        "division_fn": 1,
+        "node_recall": 0.6666666666666666,
+        "adj_edge_jaccard": 0.5166666666666667,
+        "n_adj": 1,
+        "score": 0.5666666666666668,
+        "adjusted_edge_jaccard": 0.5166666666666667,
+        "proxy_score": 0.5666666666666668,
+        "official_score": 0.5666666666666668,
+        "proxy_score_field_semantics": "official_score_alias_for_unchanged_cell10",
+        "div_tp": 1,
+        "div_fp": 0,
+        "div_fn": 1,
+        "metric_provenance": "official_075fc5:evaluate->per_sample_metrics->summarise",
+        "error_decomposition_provenance": "unchanged_forge947_cell8_proxy; independent_global_node_matching",
+        "official_rows_skipped": 0,
+        "official_adjusted_rows_used": 1,
+        "legacy_proxy_score": 0.6166666666666667,
+        "missed_gt_nodes": 4,
+        "spurious_pred_nodes": 0,
+        "edges_recovered": 6,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 5,
+        "wrong_association_edges": 1,
+        "legacy_proxy_adjusted_edge_jaccard": 0.5166666666666667,
+        "legacy_proxy_division_jaccard": 1.0,
+        "legacy_proxy_div_tp": 2,
+        "legacy_proxy_div_fp": 0,
+        "legacy_proxy_div_fn": 0,
+        "legacy_proxy_missed_gt_nodes": 4,
+        "legacy_proxy_spurious_pred_nodes": 0,
+        "legacy_proxy_edges_recovered": 6,
+        "legacy_proxy_edges_fragmented": 0,
+        "legacy_proxy_edges_lost_to_detection": 5,
+        "legacy_proxy_wrong_association_edges": 1
+      }
+    },
+    {
+      "id": "unmatched_fork_cross_components",
+      "official_summary": {
+        "n": 1,
+        "edge_jaccard": 0.0,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "division_fp": 1,
+        "division_fn": 0,
+        "node_recall": 0.5,
+        "adj_edge_jaccard": 0.0,
+        "n_adj": 1,
+        "score": 0.0
+      },
+      "adapter_summary": {
+        "n": 1,
+        "edge_jaccard": 0.0,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "division_fp": 1,
+        "division_fn": 0,
+        "node_recall": 0.5,
+        "adj_edge_jaccard": 0.0,
+        "n_adj": 1,
+        "score": 0.0,
+        "adjusted_edge_jaccard": 0.0,
+        "proxy_score": 0.0,
+        "official_score": 0.0,
+        "proxy_score_field_semantics": "official_score_alias_for_unchanged_cell10",
+        "div_tp": 0,
+        "div_fp": 1,
+        "div_fn": 0,
+        "metric_provenance": "official_075fc5:evaluate->per_sample_metrics->summarise",
+        "error_decomposition_provenance": "unchanged_forge947_cell8_proxy; independent_global_node_matching",
+        "official_rows_skipped": 0,
+        "official_adjusted_rows_used": 1,
+        "legacy_proxy_score": 0.0,
+        "missed_gt_nodes": 2,
+        "spurious_pred_nodes": 1,
+        "edges_recovered": 0,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 2,
+        "wrong_association_edges": 0,
+        "legacy_proxy_adjusted_edge_jaccard": 0.0,
+        "legacy_proxy_division_jaccard": 0.0,
+        "legacy_proxy_div_tp": 0,
+        "legacy_proxy_div_fp": 0,
+        "legacy_proxy_div_fn": 0,
+        "legacy_proxy_missed_gt_nodes": 2,
+        "legacy_proxy_spurious_pred_nodes": 1,
+        "legacy_proxy_edges_recovered": 0,
+        "legacy_proxy_edges_fragmented": 0,
+        "legacy_proxy_edges_lost_to_detection": 2,
+        "legacy_proxy_wrong_association_edges": 0
+      }
+    },
+    {
+      "id": "delayed_local_division",
+      "official_summary": {
+        "n": 1,
+        "edge_jaccard": 0.125,
+        "division_jaccard": 1.0,
+        "division_tp": 1,
+        "division_fp": 0,
+        "division_fn": 0,
+        "node_recall": 0.6666666666666666,
+        "adj_edge_jaccard": 0.12708333333333333,
+        "n_adj": 1,
+        "score": 0.22708333333333333
+      },
+      "adapter_summary": {
+        "n": 1,
+        "edge_jaccard": 0.125,
+        "division_jaccard": 1.0,
+        "division_tp": 1,
+        "division_fp": 0,
+        "division_fn": 0,
+        "node_recall": 0.6666666666666666,
+        "adj_edge_jaccard": 0.12708333333333333,
+        "n_adj": 1,
+        "score": 0.22708333333333333,
+        "adjusted_edge_jaccard": 0.12708333333333333,
+        "proxy_score": 0.22708333333333333,
+        "official_score": 0.22708333333333333,
+        "proxy_score_field_semantics": "official_score_alias_for_unchanged_cell10",
+        "div_tp": 1,
+        "div_fp": 0,
+        "div_fn": 0,
+        "metric_provenance": "official_075fc5:evaluate->per_sample_metrics->summarise",
+        "error_decomposition_provenance": "unchanged_forge947_cell8_proxy; independent_global_node_matching",
+        "official_rows_skipped": 0,
+        "official_adjusted_rows_used": 1,
+        "legacy_proxy_score": 0.22708333333333333,
+        "missed_gt_nodes": 2,
+        "spurious_pred_nodes": 1,
+        "edges_recovered": 1,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 4,
+        "wrong_association_edges": 0,
+        "legacy_proxy_adjusted_edge_jaccard": 0.12708333333333333,
+        "legacy_proxy_division_jaccard": 1.0,
+        "legacy_proxy_div_tp": 1,
+        "legacy_proxy_div_fp": 0,
+        "legacy_proxy_div_fn": 0,
+        "legacy_proxy_missed_gt_nodes": 2,
+        "legacy_proxy_spurious_pred_nodes": 1,
+        "legacy_proxy_edges_recovered": 1,
+        "legacy_proxy_edges_fragmented": 0,
+        "legacy_proxy_edges_lost_to_detection": 4,
+        "legacy_proxy_wrong_association_edges": 0
+      }
+    },
+    {
+      "id": "merged_child_reject",
+      "official_summary": {
+        "n": 1,
+        "edge_jaccard": 0.8333333333333334,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "division_fp": 1,
+        "division_fn": 1,
+        "node_recall": 1.0,
+        "adj_edge_jaccard": 0.8194444444444443,
+        "n_adj": 1,
+        "score": 0.8194444444444443
+      },
+      "adapter_summary": {
+        "n": 1,
+        "edge_jaccard": 0.8333333333333334,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "division_fp": 1,
+        "division_fn": 1,
+        "node_recall": 1.0,
+        "adj_edge_jaccard": 0.8194444444444443,
+        "n_adj": 1,
+        "score": 0.8194444444444443,
+        "adjusted_edge_jaccard": 0.8194444444444443,
+        "proxy_score": 0.8194444444444443,
+        "official_score": 0.8194444444444443,
+        "proxy_score_field_semantics": "official_score_alias_for_unchanged_cell10",
+        "div_tp": 0,
+        "div_fp": 1,
+        "div_fn": 1,
+        "metric_provenance": "official_075fc5:evaluate->per_sample_metrics->summarise",
+        "error_decomposition_provenance": "unchanged_forge947_cell8_proxy; independent_global_node_matching",
+        "official_rows_skipped": 0,
+        "official_adjusted_rows_used": 1,
+        "legacy_proxy_score": 0.9194444444444443,
+        "missed_gt_nodes": 0,
+        "spurious_pred_nodes": 1,
+        "edges_recovered": 5,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 0,
+        "wrong_association_edges": 0,
+        "legacy_proxy_adjusted_edge_jaccard": 0.8194444444444443,
+        "legacy_proxy_division_jaccard": 1.0,
+        "legacy_proxy_div_tp": 1,
+        "legacy_proxy_div_fp": 0,
+        "legacy_proxy_div_fn": 0,
+        "legacy_proxy_missed_gt_nodes": 0,
+        "legacy_proxy_spurious_pred_nodes": 1,
+        "legacy_proxy_edges_recovered": 5,
+        "legacy_proxy_edges_fragmented": 0,
+        "legacy_proxy_edges_lost_to_detection": 0,
+        "legacy_proxy_wrong_association_edges": 0
+      }
+    },
+    {
+      "id": "straight_no_divisions",
+      "official_summary": {
+        "n": 1,
+        "edge_jaccard": 1.0,
+        "division_jaccard": "NaN",
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0,
+        "node_recall": 1.0,
+        "adj_edge_jaccard": 1.0,
+        "n_adj": 1,
+        "score": 1.0
+      },
+      "adapter_summary": {
+        "n": 1,
+        "edge_jaccard": 1.0,
+        "division_jaccard": "NaN",
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0,
+        "node_recall": 1.0,
+        "adj_edge_jaccard": 1.0,
+        "n_adj": 1,
+        "score": 1.0,
+        "adjusted_edge_jaccard": 1.0,
+        "proxy_score": 1.0,
+        "official_score": 1.0,
+        "proxy_score_field_semantics": "official_score_alias_for_unchanged_cell10",
+        "div_tp": 0,
+        "div_fp": 0,
+        "div_fn": 0,
+        "metric_provenance": "official_075fc5:evaluate->per_sample_metrics->summarise",
+        "error_decomposition_provenance": "unchanged_forge947_cell8_proxy; independent_global_node_matching",
+        "official_rows_skipped": 0,
+        "official_adjusted_rows_used": 1,
+        "legacy_proxy_score": 1.0,
+        "missed_gt_nodes": 0,
+        "spurious_pred_nodes": 0,
+        "edges_recovered": 2,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 0,
+        "wrong_association_edges": 0,
+        "legacy_proxy_adjusted_edge_jaccard": 1.0,
+        "legacy_proxy_division_jaccard": 0.0,
+        "legacy_proxy_div_tp": 0,
+        "legacy_proxy_div_fp": 0,
+        "legacy_proxy_div_fn": 0,
+        "legacy_proxy_missed_gt_nodes": 0,
+        "legacy_proxy_spurious_pred_nodes": 0,
+        "legacy_proxy_edges_recovered": 2,
+        "legacy_proxy_edges_fragmented": 0,
+        "legacy_proxy_edges_lost_to_detection": 0,
+        "legacy_proxy_wrong_association_edges": 0
+      }
+    },
+    {
+      "id": "duplicate_edges",
+      "official_summary": {
+        "n": 1,
+        "edge_jaccard": 1.0,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "division_fp": 2,
+        "division_fn": 0,
+        "node_recall": 1.0,
+        "adj_edge_jaccard": 1.0,
+        "n_adj": 1,
+        "score": 1.0
+      },
+      "adapter_summary": {
+        "n": 1,
+        "edge_jaccard": 1.0,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "division_fp": 2,
+        "division_fn": 0,
+        "node_recall": 1.0,
+        "adj_edge_jaccard": 1.0,
+        "n_adj": 1,
+        "score": 1.0,
+        "adjusted_edge_jaccard": 1.0,
+        "proxy_score": 1.0,
+        "official_score": 1.0,
+        "proxy_score_field_semantics": "official_score_alias_for_unchanged_cell10",
+        "div_tp": 0,
+        "div_fp": 2,
+        "div_fn": 0,
+        "metric_provenance": "official_075fc5:evaluate->per_sample_metrics->summarise",
+        "error_decomposition_provenance": "unchanged_forge947_cell8_proxy; independent_global_node_matching",
+        "official_rows_skipped": 0,
+        "official_adjusted_rows_used": 1,
+        "legacy_proxy_score": 1.0,
+        "missed_gt_nodes": 0,
+        "spurious_pred_nodes": 0,
+        "edges_recovered": 2,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 0,
+        "wrong_association_edges": 0,
+        "legacy_proxy_adjusted_edge_jaccard": 1.0,
+        "legacy_proxy_division_jaccard": 0.0,
+        "legacy_proxy_div_tp": 0,
+        "legacy_proxy_div_fp": 0,
+        "legacy_proxy_div_fn": 0,
+        "legacy_proxy_missed_gt_nodes": 0,
+        "legacy_proxy_spurious_pred_nodes": 0,
+        "legacy_proxy_edges_recovered": 2,
+        "legacy_proxy_edges_fragmented": 0,
+        "legacy_proxy_edges_lost_to_detection": 0,
+        "legacy_proxy_wrong_association_edges": 0
+      }
+    },
+    {
+      "id": "nonconsecutive_and_backward_edges",
+      "official_summary": {
+        "n": 1,
+        "edge_jaccard": 1.0,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "division_fp": 1,
+        "division_fn": 0,
+        "node_recall": 1.0,
+        "adj_edge_jaccard": 1.0,
+        "n_adj": 1,
+        "score": 1.0
+      },
+      "adapter_summary": {
+        "n": 1,
+        "edge_jaccard": 1.0,
+        "division_jaccard": 0.0,
+        "division_tp": 0,
+        "division_fp": 1,
+        "division_fn": 0,
+        "node_recall": 1.0,
+        "adj_edge_jaccard": 1.0,
+        "n_adj": 1,
+        "score": 1.0,
+        "adjusted_edge_jaccard": 1.0,
+        "proxy_score": 1.0,
+        "official_score": 1.0,
+        "proxy_score_field_semantics": "official_score_alias_for_unchanged_cell10",
+        "div_tp": 0,
+        "div_fp": 1,
+        "div_fn": 0,
+        "metric_provenance": "official_075fc5:evaluate->per_sample_metrics->summarise",
+        "error_decomposition_provenance": "unchanged_forge947_cell8_proxy; independent_global_node_matching",
+        "official_rows_skipped": 0,
+        "official_adjusted_rows_used": 1,
+        "legacy_proxy_score": 0.6666666666666666,
+        "missed_gt_nodes": 0,
+        "spurious_pred_nodes": 0,
+        "edges_recovered": 2,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 0,
+        "wrong_association_edges": 2,
+        "legacy_proxy_adjusted_edge_jaccard": 0.6666666666666666,
+        "legacy_proxy_division_jaccard": 0.0,
+        "legacy_proxy_div_tp": 0,
+        "legacy_proxy_div_fp": 1,
+        "legacy_proxy_div_fn": 0,
+        "legacy_proxy_missed_gt_nodes": 0,
+        "legacy_proxy_spurious_pred_nodes": 0,
+        "legacy_proxy_edges_recovered": 2,
+        "legacy_proxy_edges_fragmented": 0,
+        "legacy_proxy_edges_lost_to_detection": 0,
+        "legacy_proxy_wrong_association_edges": 2
+      }
+    },
+    {
+      "id": "isolated_nodes_penalty",
+      "official_summary": {
+        "n": 1,
+        "edge_jaccard": 1.0,
+        "division_jaccard": "NaN",
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0,
+        "node_recall": 1.0,
+        "adj_edge_jaccard": 0.9,
+        "n_adj": 1,
+        "score": 0.9
+      },
+      "adapter_summary": {
+        "n": 1,
+        "edge_jaccard": 1.0,
+        "division_jaccard": "NaN",
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0,
+        "node_recall": 1.0,
+        "adj_edge_jaccard": 0.9,
+        "n_adj": 1,
+        "score": 0.9,
+        "adjusted_edge_jaccard": 0.9,
+        "proxy_score": 0.9,
+        "official_score": 0.9,
+        "proxy_score_field_semantics": "official_score_alias_for_unchanged_cell10",
+        "div_tp": 0,
+        "div_fp": 0,
+        "div_fn": 0,
+        "metric_provenance": "official_075fc5:evaluate->per_sample_metrics->summarise",
+        "error_decomposition_provenance": "unchanged_forge947_cell8_proxy; independent_global_node_matching",
+        "official_rows_skipped": 0,
+        "official_adjusted_rows_used": 1,
+        "legacy_proxy_score": 0.9,
+        "missed_gt_nodes": 0,
+        "spurious_pred_nodes": 3,
+        "edges_recovered": 2,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 0,
+        "wrong_association_edges": 0,
+        "legacy_proxy_adjusted_edge_jaccard": 0.9,
+        "legacy_proxy_division_jaccard": 0.0,
+        "legacy_proxy_div_tp": 0,
+        "legacy_proxy_div_fp": 0,
+        "legacy_proxy_div_fn": 0,
+        "legacy_proxy_missed_gt_nodes": 0,
+        "legacy_proxy_spurious_pred_nodes": 3,
+        "legacy_proxy_edges_recovered": 2,
+        "legacy_proxy_edges_fragmented": 0,
+        "legacy_proxy_edges_lost_to_detection": 0,
+        "legacy_proxy_wrong_association_edges": 0
+      }
+    },
+    {
+      "id": "z_scale_6p5um",
+      "official_summary": {
+        "n": 1,
+        "edge_jaccard": 1.0,
+        "division_jaccard": "NaN",
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0,
+        "node_recall": 1.0,
+        "adj_edge_jaccard": 1.0,
+        "n_adj": 1,
+        "score": 1.0
+      },
+      "adapter_summary": {
+        "n": 1,
+        "edge_jaccard": 1.0,
+        "division_jaccard": "NaN",
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0,
+        "node_recall": 1.0,
+        "adj_edge_jaccard": 1.0,
+        "n_adj": 1,
+        "score": 1.0,
+        "adjusted_edge_jaccard": 1.0,
+        "proxy_score": 1.0,
+        "official_score": 1.0,
+        "proxy_score_field_semantics": "official_score_alias_for_unchanged_cell10",
+        "div_tp": 0,
+        "div_fp": 0,
+        "div_fn": 0,
+        "metric_provenance": "official_075fc5:evaluate->per_sample_metrics->summarise",
+        "error_decomposition_provenance": "unchanged_forge947_cell8_proxy; independent_global_node_matching",
+        "official_rows_skipped": 0,
+        "official_adjusted_rows_used": 1,
+        "legacy_proxy_score": 1.0,
+        "missed_gt_nodes": 0,
+        "spurious_pred_nodes": 0,
+        "edges_recovered": 2,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 0,
+        "wrong_association_edges": 0,
+        "legacy_proxy_adjusted_edge_jaccard": 1.0,
+        "legacy_proxy_division_jaccard": 0.0,
+        "legacy_proxy_div_tp": 0,
+        "legacy_proxy_div_fp": 0,
+        "legacy_proxy_div_fn": 0,
+        "legacy_proxy_missed_gt_nodes": 0,
+        "legacy_proxy_spurious_pred_nodes": 0,
+        "legacy_proxy_edges_recovered": 2,
+        "legacy_proxy_edges_fragmented": 0,
+        "legacy_proxy_edges_lost_to_detection": 0,
+        "legacy_proxy_wrong_association_edges": 0
+      }
+    },
+    {
+      "id": "z_scale_8p125um",
+      "official_summary": {
+        "n": 1,
+        "edge_jaccard": 0.0,
+        "division_jaccard": "NaN",
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0,
+        "node_recall": 0.0,
+        "adj_edge_jaccard": 0.0,
+        "n_adj": 1,
+        "score": 0.0
+      },
+      "adapter_summary": {
+        "n": 1,
+        "edge_jaccard": 0.0,
+        "division_jaccard": "NaN",
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0,
+        "node_recall": 0.0,
+        "adj_edge_jaccard": 0.0,
+        "n_adj": 1,
+        "score": 0.0,
+        "adjusted_edge_jaccard": 0.0,
+        "proxy_score": 0.0,
+        "official_score": 0.0,
+        "proxy_score_field_semantics": "official_score_alias_for_unchanged_cell10",
+        "div_tp": 0,
+        "div_fp": 0,
+        "div_fn": 0,
+        "metric_provenance": "official_075fc5:evaluate->per_sample_metrics->summarise",
+        "error_decomposition_provenance": "unchanged_forge947_cell8_proxy; independent_global_node_matching",
+        "official_rows_skipped": 0,
+        "official_adjusted_rows_used": 1,
+        "legacy_proxy_score": 0.0,
+        "missed_gt_nodes": 3,
+        "spurious_pred_nodes": 3,
+        "edges_recovered": 0,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 2,
+        "wrong_association_edges": 0,
+        "legacy_proxy_adjusted_edge_jaccard": 0.0,
+        "legacy_proxy_division_jaccard": 0.0,
+        "legacy_proxy_div_tp": 0,
+        "legacy_proxy_div_fp": 0,
+        "legacy_proxy_div_fn": 0,
+        "legacy_proxy_missed_gt_nodes": 3,
+        "legacy_proxy_spurious_pred_nodes": 3,
+        "legacy_proxy_edges_recovered": 0,
+        "legacy_proxy_edges_fragmented": 0,
+        "legacy_proxy_edges_lost_to_detection": 2,
+        "legacy_proxy_wrong_association_edges": 0
+      }
+    },
+    {
+      "id": "empty_prediction_explicit_match",
+      "official_summary": {
+        "n": 1,
+        "edge_jaccard": 0.0,
+        "division_jaccard": "NaN",
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0,
+        "node_recall": 0.0,
+        "adj_edge_jaccard": 0.0,
+        "n_adj": 1,
+        "score": 0.0
+      },
+      "adapter_summary": {
+        "n": 1,
+        "edge_jaccard": 0.0,
+        "division_jaccard": "NaN",
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0,
+        "node_recall": 0.0,
+        "adj_edge_jaccard": 0.0,
+        "n_adj": 1,
+        "score": 0.0,
+        "adjusted_edge_jaccard": 0.0,
+        "proxy_score": 0.0,
+        "official_score": 0.0,
+        "proxy_score_field_semantics": "official_score_alias_for_unchanged_cell10",
+        "div_tp": 0,
+        "div_fp": 0,
+        "div_fn": 0,
+        "metric_provenance": "official_075fc5:evaluate->per_sample_metrics->summarise",
+        "error_decomposition_provenance": "unchanged_forge947_cell8_proxy; independent_global_node_matching",
+        "official_rows_skipped": 0,
+        "official_adjusted_rows_used": 1,
+        "legacy_proxy_score": 0.0,
+        "missed_gt_nodes": 3,
+        "spurious_pred_nodes": 0,
+        "edges_recovered": 0,
+        "edges_fragmented": 0,
+        "edges_lost_to_detection": 2,
+        "wrong_association_edges": 0,
+        "legacy_proxy_adjusted_edge_jaccard": 0.0,
+        "legacy_proxy_division_jaccard": 0.0,
+        "legacy_proxy_div_tp": 0,
+        "legacy_proxy_div_fp": 0,
+        "legacy_proxy_div_fn": 0,
+        "legacy_proxy_missed_gt_nodes": 3,
+        "legacy_proxy_spurious_pred_nodes": 0,
+        "legacy_proxy_edges_recovered": 0,
+        "legacy_proxy_edges_fragmented": 0,
+        "legacy_proxy_edges_lost_to_detection": 2,
+        "legacy_proxy_wrong_association_edges": 0
+      }
+    },
+    {
+      "id": "edgeless_prediction_explicit_match",
+      "official_summary": {
+        "n": 1,
+        "edge_jaccard": 0.0,
+        "division_jaccard": "NaN",
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0,
+        "node_recall": 1.0,
+        "adj_edge_jaccard": 0.0,
+        "n_adj": 1,
+        "score": 0.0
+      },
+      "adapter_summary": {
+        "n": 1,
+        "edge_jaccard": 0.0,
+        "division_jaccard": "NaN",
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0,
+        "node_recall": 1.0,
+        "adj_edge_jaccard": 0.0,
+        "n_adj": 1,
+        "score": 0.0,
+        "adjusted_edge_jaccard": 0.0,
+        "proxy_score": 0.0,
+        "official_score": 0.0,
+        "proxy_score_field_semantics": "official_score_alias_for_unchanged_cell10",
+        "div_tp": 0,
+        "div_fp": 0,
+        "div_fn": 0,
+        "metric_provenance": "official_075fc5:evaluate->per_sample_metrics->summarise",
+        "error_decomposition_provenance": "unchanged_forge947_cell8_proxy; independent_global_node_matching",
+        "official_rows_skipped": 0,
+        "official_adjusted_rows_used": 1,
+        "legacy_proxy_score": 0.0,
+        "missed_gt_nodes": 0,
+        "spurious_pred_nodes": 0,
+        "edges_recovered": 0,
+        "edges_fragmented": 2,
+        "edges_lost_to_detection": 0,
+        "wrong_association_edges": 0,
+        "legacy_proxy_adjusted_edge_jaccard": 0.0,
+        "legacy_proxy_division_jaccard": 0.0,
+        "legacy_proxy_div_tp": 0,
+        "legacy_proxy_div_fp": 0,
+        "legacy_proxy_div_fn": 0,
+        "legacy_proxy_missed_gt_nodes": 0,
+        "legacy_proxy_spurious_pred_nodes": 0,
+        "legacy_proxy_edges_recovered": 0,
+        "legacy_proxy_edges_fragmented": 2,
+        "legacy_proxy_edges_lost_to_detection": 0,
+        "legacy_proxy_wrong_association_edges": 0
+      }
+    }
+  ],
+  "fixture_inputs": {
+    "scale_zyx_um": [
+      1.625,
+      0.40625,
+      0.40625
+    ],
+    "match_radius_um": 7.0,
+    "cases": [
+      {
+        "id": "perfect_division",
+        "purpose": "正常分裂阳性对照",
+        "gt": {
+          "nodes_t_y_um": {
+            "P": [
+              0,
+              0
+            ],
+            "D": [
+              1,
+              0
+            ],
+            "C1": [
+              2,
+              10
+            ],
+            "C2": [
+              2,
+              -10
+            ],
+            "G1": [
+              3,
+              10
+            ],
+            "G2": [
+              3,
+              -10
+            ]
+          },
+          "edges": [
+            [
+              "P",
+              "D"
+            ],
+            [
+              "D",
+              "C1"
+            ],
+            [
+              "D",
+              "C2"
+            ],
+            [
+              "C1",
+              "G1"
+            ],
+            [
+              "C2",
+              "G2"
+            ]
+          ]
+        },
+        "pred": {
+          "nodes_t_y_um": {
+            "P": [
+              0,
+              0
+            ],
+            "D": [
+              1,
+              0
+            ],
+            "C1": [
+              2,
+              10
+            ],
+            "C2": [
+              2,
+              -10
+            ],
+            "G1": [
+              3,
+              10
+            ],
+            "G2": [
+              3,
+              -10
+            ]
+          },
+          "edges": [
+            [
+              "P",
+              "D"
+            ],
+            [
+              "D",
+              "C1"
+            ],
+            [
+              "D",
+              "C2"
+            ],
+            [
+              "C1",
+              "G1"
+            ],
+            [
+              "C2",
+              "G2"
+            ]
+          ]
+        },
+        "n_total": 6,
+        "expected_official_counts": [
+          5,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "expected_proxy_counts": [
+          5,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "weak_component_same_branch",
+        "purpose": "同一弱连通块包含两条GT女儿，但命中同一有向预测分支",
+        "gt": {
+          "nodes_t_y_um": {
+            "P": [
+              0,
+              0
+            ],
+            "D": [
+              1,
+              0
+            ],
+            "C1": [
+              2,
+              10
+            ],
+            "C2": [
+              2,
+              -10
+            ],
+            "G1": [
+              3,
+              10
+            ],
+            "G2": [
+              3,
+              -10
+            ]
+          },
+          "edges": [
+            [
+              "P",
+              "D"
+            ],
+            [
+              "D",
+              "C1"
+            ],
+            [
+              "D",
+              "C2"
+            ],
+            [
+              "C1",
+              "G1"
+            ],
+            [
+              "C2",
+              "G2"
+            ]
+          ]
+        },
+        "pred": {
+          "nodes_t_y_um": {
+            "P": [
+              0,
+              0
+            ],
+            "D": [
+              1,
+              0
+            ],
+            "C1": [
+              2,
+              10
+            ],
+            "X": [
+              2,
+              50
+            ],
+            "G2": [
+              3,
+              -10
+            ]
+          },
+          "edges": [
+            [
+              "P",
+              "D"
+            ],
+            [
+              "D",
+              "C1"
+            ],
+            [
+              "D",
+              "X"
+            ],
+            [
+              "C1",
+              "G2"
+            ]
+          ]
+        },
+        "n_total": 6,
+        "expected_official_counts": [
+          2,
+          2,
+          3,
+          0,
+          1,
+          1
+        ],
+        "expected_proxy_counts": [
+          2,
+          2,
+          3,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "one_pred_fork_two_gt_divisions",
+        "purpose": "仅一个预测fork，被B0弱连通规则重复计为两个GT分裂",
+        "gt": {
+          "nodes_t_y_um": {
+            "P0": [
+              0,
+              0
+            ],
+            "D1": [
+              1,
+              0
+            ],
+            "A2": [
+              2,
+              -20
+            ],
+            "B2": [
+              2,
+              20
+            ],
+            "A3": [
+              3,
+              -20
+            ],
+            "E3": [
+              3,
+              20
+            ],
+            "A4": [
+              4,
+              -20
+            ],
+            "C4": [
+              4,
+              10
+            ],
+            "D4": [
+              4,
+              30
+            ],
+            "A5": [
+              5,
+              -20
+            ],
+            "C5": [
+              5,
+              10
+            ],
+            "D5": [
+              5,
+              30
+            ]
+          },
+          "edges": [
+            [
+              "P0",
+              "D1"
+            ],
+            [
+              "D1",
+              "A2"
+            ],
+            [
+              "D1",
+              "B2"
+            ],
+            [
+              "A2",
+              "A3"
+            ],
+            [
+              "A3",
+              "A4"
+            ],
+            [
+              "A4",
+              "A5"
+            ],
+            [
+              "B2",
+              "E3"
+            ],
+            [
+              "E3",
+              "C4"
+            ],
+            [
+              "E3",
+              "D4"
+            ],
+            [
+              "C4",
+              "C5"
+            ],
+            [
+              "D4",
+              "D5"
+            ]
+          ]
+        },
+        "pred": {
+          "nodes_t_y_um": {
+            "P0": [
+              0,
+              0
+            ],
+            "D1": [
+              1,
+              0
+            ],
+            "A2": [
+              2,
+              -20
+            ],
+            "E3": [
+              3,
+              20
+            ],
+            "C4": [
+              4,
+              10
+            ],
+            "D4": [
+              4,
+              30
+            ],
+            "C5": [
+              5,
+              10
+            ],
+            "D5": [
+              5,
+              30
+            ]
+          },
+          "edges": [
+            [
+              "P0",
+              "D1"
+            ],
+            [
+              "D1",
+              "A2"
+            ],
+            [
+              "A2",
+              "E3"
+            ],
+            [
+              "E3",
+              "C4"
+            ],
+            [
+              "E3",
+              "D4"
+            ],
+            [
+              "C4",
+              "C5"
+            ],
+            [
+              "D4",
+              "D5"
+            ]
+          ]
+        },
+        "n_total": 12,
+        "expected_official_counts": [
+          6,
+          1,
+          5,
+          1,
+          0,
+          1
+        ],
+        "expected_proxy_counts": [
+          6,
+          1,
+          5,
+          2,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "unmatched_fork_cross_components",
+        "purpose": "未匹配预测fork的女儿分别命中不同GT连通分量",
+        "gt": {
+          "nodes_t_y_um": {
+            "A0": [
+              0,
+              0
+            ],
+            "A1": [
+              1,
+              0
+            ],
+            "B0": [
+              0,
+              20
+            ],
+            "B1": [
+              1,
+              20
+            ]
+          },
+          "edges": [
+            [
+              "A0",
+              "A1"
+            ],
+            [
+              "B0",
+              "B1"
+            ]
+          ]
+        },
+        "pred": {
+          "nodes_t_y_um": {
+            "F": [
+              0,
+              10
+            ],
+            "A1": [
+              1,
+              0
+            ],
+            "B1": [
+              1,
+              20
+            ]
+          },
+          "edges": [
+            [
+              "F",
+              "A1"
+            ],
+            [
+              "F",
+              "B1"
+            ]
+          ]
+        },
+        "n_total": 4,
+        "expected_official_counts": [
+          0,
+          2,
+          2,
+          0,
+          1,
+          0
+        ],
+        "expected_proxy_counts": [
+          0,
+          2,
+          2,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "delayed_local_division",
+        "purpose": "分裂延后一帧且保持两条有向分支的阳性对照",
+        "gt": {
+          "nodes_t_y_um": {
+            "P": [
+              0,
+              0
+            ],
+            "D": [
+              1,
+              0
+            ],
+            "C1": [
+              2,
+              10
+            ],
+            "C2": [
+              2,
+              -10
+            ],
+            "G1": [
+              3,
+              10
+            ],
+            "G2": [
+              3,
+              -10
+            ]
+          },
+          "edges": [
+            [
+              "P",
+              "D"
+            ],
+            [
+              "D",
+              "C1"
+            ],
+            [
+              "D",
+              "C2"
+            ],
+            [
+              "C1",
+              "G1"
+            ],
+            [
+              "C2",
+              "G2"
+            ]
+          ]
+        },
+        "pred": {
+          "nodes_t_y_um": {
+            "P": [
+              0,
+              0
+            ],
+            "D": [
+              1,
+              0
+            ],
+            "M": [
+              2,
+              0
+            ],
+            "G1": [
+              3,
+              10
+            ],
+            "G2": [
+              3,
+              -10
+            ]
+          },
+          "edges": [
+            [
+              "P",
+              "D"
+            ],
+            [
+              "D",
+              "M"
+            ],
+            [
+              "M",
+              "G1"
+            ],
+            [
+              "M",
+              "G2"
+            ]
+          ]
+        },
+        "n_total": 6,
+        "expected_official_counts": [
+          1,
+          3,
+          4,
+          1,
+          0,
+          0
+        ],
+        "expected_proxy_counts": [
+          1,
+          3,
+          4,
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "merged_child_reject",
+        "purpose": "女儿有两个入边的非法拓扑反例；不声称B0正式图有此问题",
+        "gt": {
+          "nodes_t_y_um": {
+            "P": [
+              0,
+              0
+            ],
+            "D": [
+              1,
+              0
+            ],
+            "C1": [
+              2,
+              10
+            ],
+            "C2": [
+              2,
+              -10
+            ],
+            "G1": [
+              3,
+              10
+            ],
+            "G2": [
+              3,
+              -10
+            ]
+          },
+          "edges": [
+            [
+              "P",
+              "D"
+            ],
+            [
+              "D",
+              "C1"
+            ],
+            [
+              "D",
+              "C2"
+            ],
+            [
+              "C1",
+              "G1"
+            ],
+            [
+              "C2",
+              "G2"
+            ]
+          ]
+        },
+        "pred": {
+          "nodes_t_y_um": {
+            "P": [
+              0,
+              0
+            ],
+            "D": [
+              1,
+              0
+            ],
+            "C1": [
+              2,
+              10
+            ],
+            "C2": [
+              2,
+              -10
+            ],
+            "G1": [
+              3,
+              10
+            ],
+            "G2": [
+              3,
+              -10
+            ],
+            "X": [
+              1,
+              50
+            ]
+          },
+          "edges": [
+            [
+              "P",
+              "D"
+            ],
+            [
+              "D",
+              "C1"
+            ],
+            [
+              "D",
+              "C2"
+            ],
+            [
+              "C1",
+              "G1"
+            ],
+            [
+              "C2",
+              "G2"
+            ],
+            [
+              "X",
+              "C1"
+            ]
+          ]
+        },
+        "n_total": 6,
+        "expected_official_counts": [
+          5,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "expected_proxy_counts": [
+          5,
+          1,
+          0,
+          1,
+          0,
+          0
+        ]
+      }
+    ],
+    "aggregation": [
+      {
+        "id": "division_extra_isolated_nodes",
+        "gt": {
+          "nodes_t_y_um": {
+            "P": [
+              0,
+              0
+            ],
+            "D": [
+              1,
+              0
+            ],
+            "C1": [
+              2,
+              10
+            ],
+            "C2": [
+              2,
+              -10
+            ],
+            "G1": [
+              3,
+              10
+            ],
+            "G2": [
+              3,
+              -10
+            ]
+          },
+          "edges": [
+            [
+              "P",
+              "D"
+            ],
+            [
+              "D",
+              "C1"
+            ],
+            [
+              "D",
+              "C2"
+            ],
+            [
+              "C1",
+              "G1"
+            ],
+            [
+              "C2",
+              "G2"
+            ]
+          ]
+        },
+        "pred": {
+          "nodes_t_y_um": {
+            "P": [
+              0,
+              0
+            ],
+            "D": [
+              1,
+              0
+            ],
+            "C1": [
+              2,
+              10
+            ],
+            "C2": [
+              2,
+              -10
+            ],
+            "G1": [
+              3,
+              10
+            ],
+            "G2": [
+              3,
+              -10
+            ],
+            "extra0": [
+              0,
+              100
+            ],
+            "extra1": [
+              0,
+              120
+            ],
+            "extra2": [
+              0,
+              140
+            ],
+            "extra3": [
+              0,
+              160
+            ],
+            "extra4": [
+              0,
+              180
+            ],
+            "extra5": [
+              0,
+              200
+            ]
+          },
+          "edges": [
+            [
+              "P",
+              "D"
+            ],
+            [
+              "D",
+              "C1"
+            ],
+            [
+              "D",
+              "C2"
+            ],
+            [
+              "C1",
+              "G1"
+            ],
+            [
+              "C2",
+              "G2"
+            ]
+          ]
+        },
+        "n_total": 6
+      },
+      {
+        "id": "straight_perfect",
+        "gt": {
+          "nodes_t_y_um": {
+            "A": [
+              0,
+              0
+            ],
+            "B": [
+              1,
+              0
+            ],
+            "C": [
+              2,
+              0
+            ]
+          },
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        "pred": {
+          "nodes_t_y_um": {
+            "A": [
+              0,
+              0
+            ],
+            "B": [
+              1,
+              0
+            ],
+            "C": [
+              2,
+              0
+            ]
+          },
+          "edges": [
+            [
+              "A",
+              "B"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ]
+        },
+        "n_total": 3
+      }
+    ]
+  },
+  "large_graph": {
+    "nodes": 1000,
+    "edges": 980,
+    "seconds": 0.05752533299892093,
+    "bulk_calls": {
+      "nodes": 3,
+      "edges": 3
+    }
+  },
+  "total_seconds": 0.4590413339992665,
+  "limits": [
+    "Synthetic local execution only; no production graph rescore or Kaggle formal score.",
+    "Official source identity does not establish the private deployed Kaggle scorer identity.",
+    "Existing local venv differs from Kaggle NumPy/SciPy versions; not a bytewise runtime reproduction.",
+    "Edgeless predictions require explicit official node matching after evaluate to obtain recall.",
+    "Nonfinite aggregate or missing n_total raises; no proxy fallback.",
+    "Runtime smoke uses 1000 nodes; full 8-FOV automatic selection runtime remains NOT_RUN."
+  ]
+}

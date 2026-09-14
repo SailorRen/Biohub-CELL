@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "task_id": "TARGET950_PREPARATION_20260914",
+  "goal": "推进自有正式 Public 从 0.947 到 0.95；本阶段核实当前母版、更新公开证据、完成一个下一步候选的本地开发与实际测试，交付可审查的实验和预算。0.95 只有实际正式成绩才能证明，准备验收不代表提分。",
+  "scope": {
+    "baseline_commit": "ad9f3c2aa1e12b85d13aa804fc0058ca714dce91",
+    "baseline_ref": "sailorren/biohub-lineage-forge-precision-tracking",
+    "baseline_version": 1,
+    "baseline_script_version_id": 348960877,
+    "baseline_submission_id": 56160258,
+    "baseline_source_sha256": "bb6dbf2766fff1b4f7d1c96f3c1145c700d4d44e4695d924c7be8ccbe1b07af7",
+    "in_scope": [
+      "只读核实 Kaggle 正式身份、当前分数、固定输入、运行输出和实时额度",
+      "完整阅读当前母版全部 12 个代码单元，核实公开 Notebook 和官方评分源码",
+      "在可取得同图证据时执行实际诊断，否则如实保留 UNKNOWN 和 NOT_RUN",
+      "依据证据选择最多一个改动候选，保持已有模型权重和输入；候选具体差异及源码哈希在 manifest 中锁定",
+      "实际执行相关合成或同图测试，独立审查代码与证据",
+      "将代码、配置、小型证据和报告同步本项目 GitHub 并完成权威远端回读"
+    ],
+    "out_of_scope": [
+      "本阶段不执行新的 Kaggle Notebook 保存、推理或 submission；此前单候选和 TTA 批次授权已消费，新的平台操作等待具体候选与预算确认",
+      "不训练、不创建或更新 Dataset/Model，不变更最终提交选择",
+      "不扩大参数搜索，不修改原有 0.947 或任何历史冻结文件",
+      "不提交原始比赛数据、权重、submission.csv、凭据或签名下载链接"
+    ],
+    "new_kaggle_write_budget": 0,
+    "target_public_score": "0.950",
+    "preparation_is_not_target_achievement": true
+  },
+  "acceptance": [
+    {
+      "id": "baseline-identity",
+      "type": "json",
+      "path": "experiments/TARGET950_20260914/baseline_identity.json",
+      "assertions": [
+        {"pointer": "/submission_id", "op": "equals", "value": 56160258},
+        {"pointer": "/script_version_id", "op": "equals", "value": 348960877},
+        {"pointer": "/public_score", "op": "equals", "value": "0.947"},
+        {"pointer": "/status", "op": "equals", "value": "COMPLETE"},
+        {"pointer": "/source_sha256", "op": "equals", "value": "bb6dbf2766fff1b4f7d1c96f3c1145c700d4d44e4695d924c7be8ccbe1b07af7"}
+      ]
+    },
+    {
+      "id": "candidate-and-tests",
+      "type": "command",
+      "argv": ["python3", "experiments/TARGET950_20260914/verify.py"],
+      "cwd": ".",
+      "timeout_seconds": 120,
+      "expected_exit": 0
+    },
+    {
+      "id": "independent-review",
+      "type": "json",
+      "path": "experiments/TARGET950_20260914/independent_review.json",
+      "assertions": [{"pointer": "/status", "op": "equals", "value": "PASS"}]
+    },
+    {
+      "id": "report",
+      "type": "file",
+      "path": "reports/20260914_从0947到0950_候选与证据.md",
+      "min_bytes": 2000,
+      "contains_all": ["0.947", "0.950", "正式", "NOT_RUN", "GitHub", "预算"]
+    },
+    {
+      "id": "git-delivery",
+      "type": "git",
+      "repository": ".",
+      "require_commit": true,
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true,
+      "remote": "origin"
+    }
+  ]
+}

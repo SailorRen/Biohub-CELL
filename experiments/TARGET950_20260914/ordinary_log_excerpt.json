@@ -1,0 +1,2163 @@
+{
+  "original_log_bytes": 829492,
+  "original_log_sha256": "5d39ca9833915d3e8f2231fbefbed95b61517d75c7d0a455bbd596068e22bbe0",
+  "line_count": 6020,
+  "selected_lines": [
+    {
+      "line": 10,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":9.068280625,\"data\":\"BIOHUB_SCORE_AXIS: public 0.939 base + holdout-selected post-process configuration\\n\"}"
+    },
+    {
+      "line": 11,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":9.08922347,\"data\":\"Configuration guard: PASS\\n\"}"
+    },
+    {
+      "line": 82,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":9.974379493,\"data\":\"  \\\"primary_artifact_manifest\\\": \\\"/kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1/ARTIFACT_MANIFEST.json\\\",\\n\"}"
+    },
+    {
+      "line": 99,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":9.974444314,\"data\":\"  \\\"weights\\\": \\\"weights/unet_transformer/split_0/edge_predictor_best.pth\\\"\\n\"}"
+    },
+    {
+      "line": 101,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":10.177370996,\"data\":\"ARTIFACTS: /kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1\\n\"}"
+    },
+    {
+      "line": 105,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":10.177465147,\"data\":\"Weight path: weights/unet_transformer/split_0/edge_predictor_best.pth\\n\"}"
+    },
+    {
+      "line": 108,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":10.928524228,\"data\":\"Offline package dirs: ['/kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1/wheels']\\n\"}"
+    },
+    {
+      "line": 112,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":16.418615323,\"data\":\"Offline package dirs: ['/kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1/wheels']\\n\"}"
+    },
+    {
+      "line": 125,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":50.286201674,\"data\":\"Weights: /kaggle/working/tracking_repo/weights/unet_transformer/split_0/edge_predictor_best.pth\\n\"}"
+    },
+    {
+      "line": 126,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":50.716842813,\"data\":\"Support repo Python manifest SHA256: 978b626d1fd1e7397435a437dfe68691defe1572fc3c20e61012d7c9b52ed029\\n\"}"
+    },
+    {
+      "line": 129,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":221.856800475,\"data\":\"Secondary artifact: /kaggle/input/datasets/pilkwang/biohub-temporal-unet3d-seed314159-v1\\n\"}"
+    },
+    {
+      "line": 130,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":221.856866809,\"data\":\"Secondary weight: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth\\n\"}"
+    },
+    {
+      "line": 139,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":226.499334968,\"data\":\"Pre-ILP detector-coordinate manifest hook applied\\n\"}"
+    },
+    {
+      "line": 145,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":226.50422033,\"data\":\"GPU shard 0: CUDA_VISIBLE_DEVICES=0 | /usr/bin/python3 scripts/predict_unet_transformer.py --data-dir /kaggle/input/competitions/biohub-cell-tracking-during-development/test --splits kaggle_test_splits_50ep.json --split 0 --weights weights/unet_transformer/split_0/edge_predictor_best.pth --unet-batch-size 4 --det-threshold 0.965 --ilp-edge-weight -1.0 --ilp-appearance-weight 0.0 --ilp-disappearance-weight 2.0 --ilp-division-weight 1.2 --use-ilp --method unet_transformer_gpu0 --slice 0::2\\n\"}"
+    },
+    {
+      "line": 146,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":226.505709925,\"data\":\"GPU shard 1: CUDA_VISIBLE_DEVICES=1 | /usr/bin/python3 scripts/predict_unet_transformer.py --data-dir /kaggle/input/competitions/biohub-cell-tracking-during-development/test --splits kaggle_test_splits_50ep.json --split 0 --weights weights/unet_transformer/split_0/edge_predictor_best.pth --unet-batch-size 4 --det-threshold 0.965 --ilp-edge-weight -1.0 --ilp-appearance-weight 0.0 --ilp-disappearance-weight 2.0 --ilp-division-weight 1.2 --use-ilp --method unet_transformer_gpu1 --slice 1::2\\n\"}"
+    },
+    {
+      "line": 172,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":232.640416663,\"data\":\"Secondary model: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth | edge weight=0.150 | detection weight=0.800 | link mode=low_margin_consensus | temperature=1.000 | low-margin max=0.350 | edge threshold=0.480\\n\"}"
+    },
+    {
+      "line": 173,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":232.640449144,\"data\":\"Fold 0: 2 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\\n\"}"
+    },
+    {
+      "line": 174,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":232.64166658,\"data\":\"Secondary model: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth | edge weight=0.150 | detection weight=0.800 | link mode=low_margin_consensus | temperature=1.000 | low-margin max=0.350 | edge threshold=0.480\\n\"}"
+    },
+    {
+      "line": 175,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":232.641724335,\"data\":\"Fold 0: 2 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\\n\"}"
+    },
+    {
+      "line": 176,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":232.843141485,\"data\":\"Secondary model: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth | edge weight=0.150 | detection weight=0.800 | link mode=low_margin_consensus | temperature=1.000 | low-margin max=0.350 | edge threshold=0.480\\n\"}"
+    },
+    {
+      "line": 177,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":232.843174077,\"data\":\"Fold 0: 2 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\\n\"}"
+    },
+    {
+      "line": 178,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":232.843179891,\"data\":\"Secondary model: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth | edge weight=0.150 | detection weight=0.800 | link mode=low_margin_consensus | temperature=1.000 | low-margin max=0.350 | edge threshold=0.480\\n\"}"
+    },
+    {
+      "line": 179,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":232.843184224,\"data\":\"Fold 0: 2 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\\n\"}"
+    },
+    {
+      "line": 186,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":235.692435204,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 387, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 0, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 465, \\\"retention\\\": 0.832258064516129, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 187,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":235.694054732,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 391, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 1, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 444, \\\"retention\\\": 0.8806306306306306, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 190,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":235.772697204,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 387, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 0, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 465, \\\"retention\\\": 0.832258064516129, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 191,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":235.772700812,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 391, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 1, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 444, \\\"retention\\\": 0.8806306306306306, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 197,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":240.592839494,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 333, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 2, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 390, \\\"retention\\\": 0.8538461538461538, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 200,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":240.791329828,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 333, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 2, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 390, \\\"retention\\\": 0.8538461538461538, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 208,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":242.458439194,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 362, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 3, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 421, \\\"retention\\\": 0.8598574821852731, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 211,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":242.632595247,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 362, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 3, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 421, \\\"retention\\\": 0.8598574821852731, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 218,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":244.340283033,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 341, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 4, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 404, \\\"retention\\\": 0.844059405940594, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 221,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":244.465074128,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 341, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 4, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 404, \\\"retention\\\": 0.844059405940594, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 228,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":246.211753913,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 326, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 5, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 383, \\\"retention\\\": 0.8511749347258486, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 231,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":246.288581825,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 326, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 5, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 383, \\\"retention\\\": 0.8511749347258486, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 238,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":248.06265365,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 333, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 6, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 403, \\\"retention\\\": 0.826302729528536, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 241,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":248.133974001,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 333, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 6, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 403, \\\"retention\\\": 0.826302729528536, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 248,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":249.92526359,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 309, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 7, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 390, \\\"retention\\\": 0.7923076923076923, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 251,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":249.973651036,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 309, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 7, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 390, \\\"retention\\\": 0.7923076923076923, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 258,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":251.805589232,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 378, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 8, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 443, \\\"retention\\\": 0.8532731376975169, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 261,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":251.81542422,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 378, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 8, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 443, \\\"retention\\\": 0.8532731376975169, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 269,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":253.691702999,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 362, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 9, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 429, \\\"retention\\\": 0.8438228438228438, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 271,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":253.890170513,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 362, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 9, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 429, \\\"retention\\\": 0.8438228438228438, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 279,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":255.599876522,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 331, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 10, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 419, \\\"retention\\\": 0.7899761336515513, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 281,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":255.798507781,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 331, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 10, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 419, \\\"retention\\\": 0.7899761336515513, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 289,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":257.504633553,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 376, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 11, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 441, \\\"retention\\\": 0.8526077097505669, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 291,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":257.703107234,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 376, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 11, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 441, \\\"retention\\\": 0.8526077097505669, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 299,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":259.404575641,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 304, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 12, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 361, \\\"retention\\\": 0.8421052631578947, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 301,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":259.602949613,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 304, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 12, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 361, \\\"retention\\\": 0.8421052631578947, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 309,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":261.320569172,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 314, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 13, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 382, \\\"retention\\\": 0.8219895287958116, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 311,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":261.519007136,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 314, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 13, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 382, \\\"retention\\\": 0.8219895287958116, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 319,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":263.223285728,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 330, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 14, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 378, \\\"retention\\\": 0.873015873015873, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 321,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":263.422291751,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 330, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 14, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 378, \\\"retention\\\": 0.873015873015873, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 369,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":274.781125184,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 285, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 20, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 317, \\\"retention\\\": 0.8990536277602523, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 371,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":274.979800459,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 285, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 20, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 317, \\\"retention\\\": 0.8990536277602523, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 379,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":276.716126966,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 265, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 21, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 325, \\\"retention\\\": 0.8153846153846154, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 381,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":276.91428631,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 265, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 21, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 325, \\\"retention\\\": 0.8153846153846154, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 389,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":278.65553365,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 286, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 22, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 326, \\\"retention\\\": 0.8773006134969326, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 391,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":278.853935778,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 286, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 22, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 326, \\\"retention\\\": 0.8773006134969326, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 407,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":282.538727009,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 261, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 24, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 306, \\\"retention\\\": 0.8529411764705882, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 409,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":282.737075868,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 261, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 24, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 306, \\\"retention\\\": 0.8529411764705882, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 425,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":286.464407171,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 273, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 26, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 309, \\\"retention\\\": 0.883495145631068, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 427,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":286.662680773,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 273, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 26, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 309, \\\"retention\\\": 0.883495145631068, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 435,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":288.444379656,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 258, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 27, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 302, \\\"retention\\\": 0.8543046357615894, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 438,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":288.642706574,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 258, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 27, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 302, \\\"retention\\\": 0.8543046357615894, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 478,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":298.393813764,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 249, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 32, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 293, \\\"retention\\\": 0.8498293515358362, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 481,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":298.566439921,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 249, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 32, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 293, \\\"retention\\\": 0.8498293515358362, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 488,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":300.403786385,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 234, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 33, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 276, \\\"retention\\\": 0.8478260869565217, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 491,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":300.542968215,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 234, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 33, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 276, \\\"retention\\\": 0.8478260869565217, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 603,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":329.267505781,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 264, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 47, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 307, \\\"retention\\\": 0.8599348534201955, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 606,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":329.466028987,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 264, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 47, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 307, \\\"retention\\\": 0.8599348534201955, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 630,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":335.571802594,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 253, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 50, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 285, \\\"retention\\\": 0.887719298245614, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 633,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":335.736967732,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 253, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 50, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 285, \\\"retention\\\": 0.887719298245614, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 640,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":337.664439582,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 321, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 51, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 361, \\\"retention\\\": 0.889196675900277, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 643,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":337.769848242,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 321, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 51, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 361, \\\"retention\\\": 0.889196675900277, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 658,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":341.802080879,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 305, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 53, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 342, \\\"retention\\\": 0.8918128654970761, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 661,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":341.812063783,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 305, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 53, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 342, \\\"retention\\\": 0.8918128654970761, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 669,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":343.885040379,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 321, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 54, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 362, \\\"retention\\\": 0.8867403314917127, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 671,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":344.083163987,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 321, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 54, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 362, \\\"retention\\\": 0.8867403314917127, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 703,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":352.166396203,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 263, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 58, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 312, \\\"retention\\\": 0.842948717948718, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 705,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":352.364591158,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 263, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 58, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 312, \\\"retention\\\": 0.842948717948718, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 713,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":354.20642769,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 303, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 59, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 346, \\\"retention\\\": 0.8757225433526011, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 715,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":354.404092825,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 303, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 59, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 346, \\\"retention\\\": 0.8757225433526011, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 723,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":356.253114763,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 335, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 60, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 393, \\\"retention\\\": 0.8524173027989822, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 725,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":356.45130779,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 335, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 60, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 393, \\\"retention\\\": 0.8524173027989822, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 733,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":358.299396418,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 275, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 61, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 333, \\\"retention\\\": 0.8258258258258259, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 735,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":358.497810606,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 275, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 61, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 333, \\\"retention\\\": 0.8258258258258259, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 743,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":360.367385342,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 298, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 62, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 345, \\\"retention\\\": 0.863768115942029, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 745,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":360.565528248,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 298, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 62, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 345, \\\"retention\\\": 0.863768115942029, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 761,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":364.443418442,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 295, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 64, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 344, \\\"retention\\\": 0.8575581395348837, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 763,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":364.641261461,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 295, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 64, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 344, \\\"retention\\\": 0.8575581395348837, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 771,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":366.476410996,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 335, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 65, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 378, \\\"retention\\\": 0.8862433862433863, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 773,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":366.674599334,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 335, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 65, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 378, \\\"retention\\\": 0.8862433862433863, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 781,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":368.511093697,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 324, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 66, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 375, \\\"retention\\\": 0.864, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 784,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":368.709355745,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 324, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 66, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 375, \\\"retention\\\": 0.864, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 816,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":376.654260369,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 260, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 70, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 305, \\\"retention\\\": 0.8524590163934426, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 819,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":376.795176395,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 260, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 70, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 305, \\\"retention\\\": 0.8524590163934426, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 843,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":382.760134005,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 197, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 73, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 262, \\\"retention\\\": 0.7519083969465649, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 845,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":382.958430827,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 197, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 73, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 262, \\\"retention\\\": 0.7519083969465649, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 853,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":384.831626273,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 224, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 74, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 291, \\\"retention\\\": 0.7697594501718213, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 855,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":385.029471996,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 224, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 74, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 291, \\\"retention\\\": 0.7697594501718213, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 863,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":386.871177833,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 325, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 75, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 374, \\\"retention\\\": 0.8689839572192514, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 865,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":387.069510558,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 325, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 75, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 374, \\\"retention\\\": 0.8689839572192514, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 873,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":388.91791859,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 321, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 76, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 379, \\\"retention\\\": 0.8469656992084432, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 875,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":389.116172665,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 321, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 76, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 379, \\\"retention\\\": 0.8469656992084432, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 883,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":390.988702199,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 243, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 77, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 331, \\\"retention\\\": 0.7341389728096677, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 885,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":391.186854772,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 243, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 77, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 331, \\\"retention\\\": 0.7341389728096677, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 893,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":393.053824386,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 284, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 78, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 392, \\\"retention\\\": 0.7244897959183674, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 895,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":393.2520493,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 284, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 78, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 392, \\\"retention\\\": 0.7244897959183674, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 903,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":395.10898851,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 298, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 79, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 424, \\\"retention\\\": 0.7028301886792453, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 905,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":395.30733652,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 298, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 79, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 424, \\\"retention\\\": 0.7028301886792453, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 913,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":397.187308853,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 291, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 80, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 388, \\\"retention\\\": 0.75, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 915,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":397.385740971,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 291, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 80, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 388, \\\"retention\\\": 0.75, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 923,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":399.256431236,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 294, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 81, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 382, \\\"retention\\\": 0.7696335078534031, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 926,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":399.454869225,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 294, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 81, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 382, \\\"retention\\\": 0.7696335078534031, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 933,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":401.319850218,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 277, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 82, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 385, \\\"retention\\\": 0.7194805194805195, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 936,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":401.518322344,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 277, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 82, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 385, \\\"retention\\\": 0.7194805194805195, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 944,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":403.386019263,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 268, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 83, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 379, \\\"retention\\\": 0.7071240105540897, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 947,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":403.571235079,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 268, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 83, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 379, \\\"retention\\\": 0.7071240105540897, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 954,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":405.466996706,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 287, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 84, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 361, \\\"retention\\\": 0.7950138504155124, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 957,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":405.601362725,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 287, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 84, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 361, \\\"retention\\\": 0.7950138504155124, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 964,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":407.559086352,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 198, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 85, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 294, \\\"retention\\\": 0.673469387755102, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 967,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":407.592568914,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 198, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 85, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 294, \\\"retention\\\": 0.673469387755102, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 975,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":409.643494932,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 169, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 86, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 282, \\\"retention\\\": 0.599290780141844, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 977,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":409.841771049,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 169, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 86, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 282, \\\"retention\\\": 0.599290780141844, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 985,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":411.707410383,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 232, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 87, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 323, \\\"retention\\\": 0.718266253869969, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 987,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":411.905798906,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 232, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 87, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 323, \\\"retention\\\": 0.718266253869969, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 995,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":413.772641458,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 287, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 88, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 363, \\\"retention\\\": 0.790633608815427, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 997,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":413.970947287,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 287, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 88, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 363, \\\"retention\\\": 0.790633608815427, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1005,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":415.858270764,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 219, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 89, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 322, \\\"retention\\\": 0.6801242236024845, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1007,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":416.056607943,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 219, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 89, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 322, \\\"retention\\\": 0.6801242236024845, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1015,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":417.928099221,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 175, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 90, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 269, \\\"retention\\\": 0.6505576208178439, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1017,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":418.126416262,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 175, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 90, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 269, \\\"retention\\\": 0.6505576208178439, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1025,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":419.994120054,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 136, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 91, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 237, \\\"retention\\\": 0.5738396624472574, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1027,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":420.192396253,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 136, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 91, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 237, \\\"retention\\\": 0.5738396624472574, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1035,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":422.040792727,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 151, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 92, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 286, \\\"retention\\\": 0.527972027972028, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1037,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":422.239188416,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 151, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 92, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 286, \\\"retention\\\": 0.527972027972028, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1045,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":424.104051816,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 133, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 93, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 253, \\\"retention\\\": 0.525691699604743, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1047,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":424.302440693,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 133, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 93, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 253, \\\"retention\\\": 0.525691699604743, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1055,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":426.156816311,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 168, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 94, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 290, \\\"retention\\\": 0.5793103448275863, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1057,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":426.35519812,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 168, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 94, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 290, \\\"retention\\\": 0.5793103448275863, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1065,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":428.201487943,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 140, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 95, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 309, \\\"retention\\\": 0.45307443365695793, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1067,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":428.399810713,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 140, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 95, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 309, \\\"retention\\\": 0.45307443365695793, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1075,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":430.265793578,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 124, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 96, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 273, \\\"retention\\\": 0.4542124542124542, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1077,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":430.464157544,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 124, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 96, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 273, \\\"retention\\\": 0.4542124542124542, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1085,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":432.315942462,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 181, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 97, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 328, \\\"retention\\\": 0.551829268292683, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1087,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":432.515278343,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 181, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 97, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 328, \\\"retention\\\": 0.551829268292683, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1091,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":434.387020989,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 153, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 98, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 295, \\\"retention\\\": 0.5186440677966102, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1093,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":434.584983904,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 153, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 98, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 295, \\\"retention\\\": 0.5186440677966102, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1097,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":436.508541123,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 111, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 99, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 224, \\\"retention\\\": 0.4955357142857143, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1099,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":436.705628359,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 111, \\\"dataset\\\": \\\"44b6_0b24845f\\\", \\\"frame\\\": 99, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 224, \\\"retention\\\": 0.4955357142857143, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1421,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":543.34228625,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 66, \\\"dataset\\\": \\\"6bba_05b6850b\\\", \\\"frame\\\": 43, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 74, \\\"retention\\\": 0.8918918918918919, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1424,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":543.541009487,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 66, \\\"dataset\\\": \\\"6bba_05b6850b\\\", \\\"frame\\\": 43, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 74, \\\"retention\\\": 0.8918918918918919, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 1854,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":658.232571845,\"data\":\"Saved 2 predictions to /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_gpu0/split_0\\n\"}"
+    },
+    {
+      "line": 1855,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":658.435022999,\"data\":\"Saved 2 predictions to /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_gpu0/split_0\\n\"}"
+    },
+    {
+      "line": 1896,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":759.993720042,\"data\":\"Saved 2 predictions to /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_gpu1/split_0\\n\"}"
+    },
+    {
+      "line": 1897,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":760.230642139,\"data\":\"Saved 2 predictions to /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_gpu1/split_0\\n\"}"
+    },
+    {
+      "line": 1898,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":762.582154786,\"data\":\"Merged 4 prediction graphs into /kaggle/working/tracking_repo/predictions/unknown/unet_transformer/split_0\\n\"}"
+    },
+    {
+      "line": 1900,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":936.558044907,\"data\":\"Trying DeepCenter add-only gate checkpoint: /kaggle/input/datasets/pilkwang/biohub-deepcenter-unet3d-center-prior-v1/weights/full_frame_center/best.pt\\n\"}"
+    },
+    {
+      "line": 1901,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":936.843192661,\"data\":\"Loaded DeepCenter add-only gate checkpoint: /kaggle/input/datasets/pilkwang/biohub-deepcenter-unet3d-center-prior-v1/weights/full_frame_center/best.pt\\n\"}"
+    },
+    {
+      "line": 1910,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":988.755239533,\"data\":\"  [44b6_0113de3b] FINAL: 25622 nodes, 24907 edges\\n\"}"
+    },
+    {
+      "line": 1916,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1051.356295093,\"data\":\"  [44b6_0b24845f] FINAL: 20717 nodes, 19441 edges\\n\"}"
+    },
+    {
+      "line": 1922,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1061.500776356,\"data\":\"  [6bba_05b6850b] FINAL: 6152 nodes, 5957 edges\\n\"}"
+    },
+    {
+      "line": 1928,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1263.753827983,\"data\":\"  [6bba_05db0fb1] FINAL: 70268 nodes, 68176 edges\\n\"}"
+    },
+    {
+      "line": 1933,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1264.744703137,\"data\":\"  \\\"configuration\\\": {\\n\"}"
+    },
+    {
+      "line": 1983,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1264.744954683,\"data\":\"  \\\"leaderboard_feedback_used_for_configuration\\\": true,\\n\"}"
+    },
+    {
+      "line": 1986,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1264.744966699,\"data\":\"  \\\"organizer_labels_used_for_configuration\\\": false,\\n\"}"
+    },
+    {
+      "line": 2000,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1264.745017427,\"data\":\"    \\\"datasets\\\": [\\n\"}"
+    },
+    {
+      "line": 2040,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1264.944606081,\"data\":\"VALIDATOR: excluding 4 TRAIN stem(s) that also appear in TEST_DIR: ['44b6_0113de3b', '44b6_0b24845f', '6bba_05b6850b', '6bba_05db0fb1']\\n\"}"
+    },
+    {
+      "line": 2041,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1303.106267859,\"data\":\"VALIDATOR: selected 8 held-out TRAIN samples (4 per embryo-type prefix, 2 prefixes found, 8 contain a GT division)\\n\"}"
+    },
+    {
+      "line": 2043,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1303.10631748,\"data\":\"VALIDATOR: launching 2 shards on CUDA devices ['0', '1']\\n\"}"
+    },
+    {
+      "line": 2069,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1308.159460812,\"data\":\"Secondary model: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth | edge weight=0.150 | detection weight=0.800 | link mode=low_margin_consensus | temperature=1.000 | low-margin max=0.350 | edge threshold=0.480\\n\"}"
+    },
+    {
+      "line": 2070,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1308.159657033,\"data\":\"Fold 0: 4 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\\n\"}"
+    },
+    {
+      "line": 2071,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1308.17495969,\"data\":\"Secondary model: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth | edge weight=0.150 | detection weight=0.800 | link mode=low_margin_consensus | temperature=1.000 | low-margin max=0.350 | edge threshold=0.480\\n\"}"
+    },
+    {
+      "line": 2072,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1308.174984477,\"data\":\"Fold 0: 4 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\\n\"}"
+    },
+    {
+      "line": 2073,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1308.362077391,\"data\":\"Secondary model: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth | edge weight=0.150 | detection weight=0.800 | link mode=low_margin_consensus | temperature=1.000 | low-margin max=0.350 | edge threshold=0.480\\n\"}"
+    },
+    {
+      "line": 2074,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1308.362116247,\"data\":\"Fold 0: 4 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\\n\"}"
+    },
+    {
+      "line": 2075,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1308.362122638,\"data\":\"Secondary model: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth | edge weight=0.150 | detection weight=0.800 | link mode=low_margin_consensus | temperature=1.000 | low-margin max=0.350 | edge threshold=0.480\\n\"}"
+    },
+    {
+      "line": 2076,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1308.362128496,\"data\":\"Fold 0: 4 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\\n\"}"
+    },
+    {
+      "line": 2262,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1354.400128186,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 431, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 22, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 484, \\\"retention\\\": 0.890495867768595, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2264,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1354.598469696,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 431, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 22, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 484, \\\"retention\\\": 0.890495867768595, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2272,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1356.454873924,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 433, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 23, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 484, \\\"retention\\\": 0.8946280991735537, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2274,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1356.654337605,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 433, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 23, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 484, \\\"retention\\\": 0.8946280991735537, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2307,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1364.660615448,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 451, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 27, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 504, \\\"retention\\\": 0.8948412698412699, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2310,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1364.858297466,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 451, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 27, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 504, \\\"retention\\\": 0.8948412698412699, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2376,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1380.934081044,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 449, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 35, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 506, \\\"retention\\\": 0.8873517786561265, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2378,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1381.132132503,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 449, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 35, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 506, \\\"retention\\\": 0.8873517786561265, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2386,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1382.961431959,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 452, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 36, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 510, \\\"retention\\\": 0.8862745098039215, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2388,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1383.159954739,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 452, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 36, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 510, \\\"retention\\\": 0.8862745098039215, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2396,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1385.006571779,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 459, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 37, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 517, \\\"retention\\\": 0.8878143133462283, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2398,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1385.205302709,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 459, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 37, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 517, \\\"retention\\\": 0.8878143133462283, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2547,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1422.061584812,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 471, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 55, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 525, \\\"retention\\\": 0.8971428571428571, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2550,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1422.083854829,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 471, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 55, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 525, \\\"retention\\\": 0.8971428571428571, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2558,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1424.135766948,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 466, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 56, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 529, \\\"retention\\\": 0.8809073724007561, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2560,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1424.334459312,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 466, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 56, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 529, \\\"retention\\\": 0.8809073724007561, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2568,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1426.21075008,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 463, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 57, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 525, \\\"retention\\\": 0.8819047619047619, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2570,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1426.409526989,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 463, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 57, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 525, \\\"retention\\\": 0.8819047619047619, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2578,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1428.285220832,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 462, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 58, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 524, \\\"retention\\\": 0.8816793893129771, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2580,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1428.483270193,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 462, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 58, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 524, \\\"retention\\\": 0.8816793893129771, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2588,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1430.361893259,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 458, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 59, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 532, \\\"retention\\\": 0.8609022556390977, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2590,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1430.560610093,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 458, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 59, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 532, \\\"retention\\\": 0.8609022556390977, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2606,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1434.504325062,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 462, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 61, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 543, \\\"retention\\\": 0.850828729281768, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2609,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1434.703079109,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 462, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 61, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 543, \\\"retention\\\": 0.850828729281768, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2625,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1438.644779637,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 491, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 63, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 548, \\\"retention\\\": 0.8959854014598541, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2628,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1438.772702258,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 491, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 63, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 548, \\\"retention\\\": 0.8959854014598541, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2668,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1448.991196366,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 500, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 68, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 560, \\\"retention\\\": 0.8928571428571429, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2670,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1449.19033721,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 500, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 68, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 560, \\\"retention\\\": 0.8928571428571429, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2678,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1451.060763543,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 482, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 69, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 570, \\\"retention\\\": 0.8456140350877193, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2680,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1451.259331233,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 482, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 69, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 570, \\\"retention\\\": 0.8456140350877193, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2688,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1453.147047809,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 471, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 70, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 545, \\\"retention\\\": 0.8642201834862385, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2691,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1453.345139545,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 471, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 70, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 545, \\\"retention\\\": 0.8642201834862385, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2699,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1455.230225091,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 488, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 71, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 555, \\\"retention\\\": 0.8792792792792793, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2702,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1455.42618548,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 488, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 71, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 555, \\\"retention\\\": 0.8792792792792793, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2709,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1457.320996295,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 487, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 72, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 555, \\\"retention\\\": 0.8774774774774775, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2712,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1457.3312288,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 487, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 72, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 555, \\\"retention\\\": 0.8774774774774775, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2728,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1461.466928963,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 504, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 74, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 564, \\\"retention\\\": 0.8936170212765957, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2730,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1461.667724997,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 504, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 74, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 564, \\\"retention\\\": 0.8936170212765957, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2738,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1463.534667158,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 468, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 75, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 565, \\\"retention\\\": 0.8283185840707965, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2740,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1463.732337965,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 468, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 75, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 565, \\\"retention\\\": 0.8283185840707965, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2748,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1465.616969494,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 507, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 76, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 579, \\\"retention\\\": 0.8756476683937824, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2750,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1465.814875395,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 507, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 76, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 579, \\\"retention\\\": 0.8756476683937824, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2758,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1467.706176365,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 503, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 77, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 582, \\\"retention\\\": 0.8642611683848798, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2760,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1467.904850373,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 503, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 77, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 582, \\\"retention\\\": 0.8642611683848798, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2768,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1469.80059733,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 519, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 78, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 585, \\\"retention\\\": 0.8871794871794871, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2771,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1469.998845925,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 519, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 78, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 585, \\\"retention\\\": 0.8871794871794871, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2812,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1480.222190566,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 478, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 83, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 555, \\\"retention\\\": 0.8612612612612612, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2814,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1480.420482485,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 478, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 83, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 555, \\\"retention\\\": 0.8612612612612612, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2822,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1482.290380804,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 501, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 84, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 566, \\\"retention\\\": 0.8851590106007067, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2824,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1482.488289532,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 501, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 84, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 566, \\\"retention\\\": 0.8851590106007067, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2865,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1492.685632096,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 539, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 89, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 618, \\\"retention\\\": 0.872168284789644, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2868,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1492.759676065,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 539, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 89, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 618, \\\"retention\\\": 0.872168284789644, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2876,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1494.824737939,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 532, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 90, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 595, \\\"retention\\\": 0.8941176470588236, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2878,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1495.022724457,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 532, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 90, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 595, \\\"retention\\\": 0.8941176470588236, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2902,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1503.340471144,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 520, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 94, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 583, \\\"retention\\\": 0.8919382504288165, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 2904,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1503.537676829,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 520, \\\"dataset\\\": \\\"44b6_12dfb391\\\", \\\"frame\\\": 94, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 583, \\\"retention\\\": 0.8919382504288165, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3016,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1560.720524042,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 460, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 0, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 559, \\\"retention\\\": 0.8228980322003577, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3017,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1560.721678925,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 460, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 1, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 536, \\\"retention\\\": 0.8582089552238806, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3019,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1560.919687766,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 460, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 0, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 559, \\\"retention\\\": 0.8228980322003577, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3020,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1560.919710267,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 460, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 1, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 536, \\\"retention\\\": 0.8582089552238806, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3028,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1562.777889309,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 448, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 2, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 529, \\\"retention\\\": 0.8468809073724007, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3030,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1562.976332266,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 448, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 2, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 529, \\\"retention\\\": 0.8468809073724007, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3038,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1564.853109479,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 428, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 3, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 515, \\\"retention\\\": 0.8310679611650486, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3040,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1565.052361886,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 428, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 3, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 515, \\\"retention\\\": 0.8310679611650486, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3048,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1566.911900804,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 456, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 4, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 542, \\\"retention\\\": 0.8413284132841329, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3050,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1567.110270959,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 456, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 4, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 542, \\\"retention\\\": 0.8413284132841329, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3057,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1568.97979359,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 451, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 5, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 542, \\\"retention\\\": 0.8321033210332104, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3060,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1569.040894079,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 451, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 5, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 542, \\\"retention\\\": 0.8321033210332104, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3066,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1570.996927446,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 93, \\\"dataset\\\": \\\"44b6_341df25f\\\", \\\"frame\\\": 27, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 104, \\\"retention\\\": 0.8942307692307693, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3068,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1571.066243556,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 449, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 6, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 544, \\\"retention\\\": 0.8253676470588235, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3070,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1571.194857885,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 93, \\\"dataset\\\": \\\"44b6_341df25f\\\", \\\"frame\\\": 27, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 104, \\\"retention\\\": 0.8942307692307693, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3072,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1571.194867756,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 449, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 6, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 544, \\\"retention\\\": 0.8253676470588235, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3079,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1573.171624576,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 419, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 7, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 531, \\\"retention\\\": 0.7890772128060264, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3082,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1573.360358943,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 419, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 7, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 531, \\\"retention\\\": 0.7890772128060264, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3088,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1575.26138727,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 426, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 8, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 524, \\\"retention\\\": 0.8129770992366412, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3091,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1575.459344651,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 426, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 8, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 524, \\\"retention\\\": 0.8129770992366412, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3098,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1577.371288858,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 432, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 9, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 530, \\\"retention\\\": 0.8150943396226416, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3101,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1577.570787084,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 432, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 9, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 530, \\\"retention\\\": 0.8150943396226416, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3108,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1579.447394517,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 412, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 10, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 516, \\\"retention\\\": 0.7984496124031008, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3111,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1579.645972736,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 412, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 10, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 516, \\\"retention\\\": 0.7984496124031008, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3118,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1581.526334461,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 456, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 11, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 534, \\\"retention\\\": 0.8539325842696629, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3121,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1581.724449784,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 456, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 11, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 534, \\\"retention\\\": 0.8539325842696629, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3128,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1583.617671626,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 425, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 12, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 508, \\\"retention\\\": 0.8366141732283464, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3130,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1583.816115043,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 425, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 12, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 508, \\\"retention\\\": 0.8366141732283464, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3138,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1585.696036225,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 407, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 13, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 504, \\\"retention\\\": 0.8075396825396826, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3140,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1585.894431287,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 407, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 13, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 504, \\\"retention\\\": 0.8075396825396826, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3148,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1587.761938234,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 403, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 14, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 499, \\\"retention\\\": 0.8076152304609219, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3150,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1587.960580719,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 403, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 14, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 499, \\\"retention\\\": 0.8076152304609219, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3158,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1589.829593558,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 388, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 15, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 479, \\\"retention\\\": 0.8100208768267223, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3160,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1590.028261634,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 388, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 15, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 479, \\\"retention\\\": 0.8100208768267223, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3168,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1591.882428629,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 357, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 16, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 478, \\\"retention\\\": 0.7468619246861925, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3170,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1592.081201287,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 357, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 16, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 478, \\\"retention\\\": 0.7468619246861925, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3178,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1593.936970854,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 328, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 17, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 458, \\\"retention\\\": 0.7161572052401747, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3180,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1594.135216757,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 328, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 17, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 458, \\\"retention\\\": 0.7161572052401747, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3188,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1595.976795561,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 408, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 18, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 486, \\\"retention\\\": 0.8395061728395061, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3190,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1596.175181547,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 408, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 18, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 486, \\\"retention\\\": 0.8395061728395061, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3198,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1598.013888714,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 382, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 19, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 474, \\\"retention\\\": 0.8059071729957806, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3200,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1598.212230344,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 382, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 19, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 474, \\\"retention\\\": 0.8059071729957806, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3208,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1600.051233186,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 404, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 20, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 504, \\\"retention\\\": 0.8015873015873016, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3210,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1600.249046877,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 404, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 20, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 504, \\\"retention\\\": 0.8015873015873016, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3218,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1602.09001655,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 413, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 21, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 491, \\\"retention\\\": 0.8411405295315683, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3220,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1602.289444272,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 413, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 21, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 491, \\\"retention\\\": 0.8411405295315683, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3228,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1604.130902116,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 362, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 22, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 470, \\\"retention\\\": 0.7702127659574468, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3230,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1604.328827476,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 362, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 22, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 470, \\\"retention\\\": 0.7702127659574468, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3238,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1606.17784614,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 377, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 23, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 467, \\\"retention\\\": 0.8072805139186295, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3240,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1606.376142985,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 377, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 23, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 467, \\\"retention\\\": 0.8072805139186295, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3248,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1608.204041492,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 378, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 24, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 467, \\\"retention\\\": 0.8094218415417559, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3250,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1608.402415884,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 378, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 24, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 467, \\\"retention\\\": 0.8094218415417559, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3258,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1610.23643204,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 363, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 25, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 449, \\\"retention\\\": 0.8084632516703786, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3260,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1610.434630751,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 363, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 25, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 449, \\\"retention\\\": 0.8084632516703786, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3268,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1612.259893071,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 348, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 26, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 438, \\\"retention\\\": 0.7945205479452054, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3270,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1612.45828199,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 348, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 26, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 438, \\\"retention\\\": 0.7945205479452054, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3278,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1614.282780398,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 357, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 27, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 475, \\\"retention\\\": 0.751578947368421, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3280,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1614.481300462,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 357, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 27, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 475, \\\"retention\\\": 0.751578947368421, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3288,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1616.314156111,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 349, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 28, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 461, \\\"retention\\\": 0.7570498915401301, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3290,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1616.512382798,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 349, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 28, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 461, \\\"retention\\\": 0.7570498915401301, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3298,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1618.342312452,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 352, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 29, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 467, \\\"retention\\\": 0.7537473233404711, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3300,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1618.540396624,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 352, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 29, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 467, \\\"retention\\\": 0.7537473233404711, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3308,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1620.367829098,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 342, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 30, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 460, \\\"retention\\\": 0.7434782608695653, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3310,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1620.565995249,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 342, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 30, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 460, \\\"retention\\\": 0.7434782608695653, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3318,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1622.407279893,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 360, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 31, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 457, \\\"retention\\\": 0.787746170678337, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3320,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1622.607516481,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 360, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 31, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 457, \\\"retention\\\": 0.787746170678337, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3328,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1624.443839632,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 361, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 32, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 461, \\\"retention\\\": 0.7830802603036876, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3330,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1624.642076624,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 361, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 32, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 461, \\\"retention\\\": 0.7830802603036876, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3338,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1626.478562695,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 336, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 33, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 455, \\\"retention\\\": 0.7384615384615385, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3340,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1626.676725758,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 336, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 33, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 455, \\\"retention\\\": 0.7384615384615385, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3348,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1628.515002232,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 344, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 34, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 470, \\\"retention\\\": 0.7319148936170212, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3350,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1628.713283572,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 344, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 34, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 470, \\\"retention\\\": 0.7319148936170212, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3358,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1630.546772808,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 339, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 35, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 461, \\\"retention\\\": 0.735357917570499, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3360,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1630.745104709,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 339, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 35, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 461, \\\"retention\\\": 0.735357917570499, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3368,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1632.582562335,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 344, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 36, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 451, \\\"retention\\\": 0.7627494456762749, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3370,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1632.780994754,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 344, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 36, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 451, \\\"retention\\\": 0.7627494456762749, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3378,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1634.623555315,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 329, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 37, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 430, \\\"retention\\\": 0.7651162790697674, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3380,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1634.82185328,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 329, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 37, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 430, \\\"retention\\\": 0.7651162790697674, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3388,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1636.66671923,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 321, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 38, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 432, \\\"retention\\\": 0.7430555555555556, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3390,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1636.864971484,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 321, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 38, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 432, \\\"retention\\\": 0.7430555555555556, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3398,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1638.700117032,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 347, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 39, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 430, \\\"retention\\\": 0.8069767441860465, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3400,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1638.898310985,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 347, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 39, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 430, \\\"retention\\\": 0.8069767441860465, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3408,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1640.733329023,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 338, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 40, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 423, \\\"retention\\\": 0.7990543735224587, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3410,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1640.93150939,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 338, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 40, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 423, \\\"retention\\\": 0.7990543735224587, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3418,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1642.762542276,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 356, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 41, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 439, \\\"retention\\\": 0.8109339407744874, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3420,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1642.961081912,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 356, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 41, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 439, \\\"retention\\\": 0.8109339407744874, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3428,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1644.826500392,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 348, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 42, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 424, \\\"retention\\\": 0.8207547169811321, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3430,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1645.024697457,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 348, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 42, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 424, \\\"retention\\\": 0.8207547169811321, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3438,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1646.856962716,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 325, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 43, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 418, \\\"retention\\\": 0.777511961722488, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3440,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1647.05522078,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 325, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 43, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 418, \\\"retention\\\": 0.777511961722488, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3448,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1648.896939436,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 329, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 44, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 441, \\\"retention\\\": 0.746031746031746, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3450,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1649.095085562,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 329, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 44, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 441, \\\"retention\\\": 0.746031746031746, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3458,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1650.931897188,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 318, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 45, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 424, \\\"retention\\\": 0.75, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3460,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1651.130252589,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 318, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 45, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 424, \\\"retention\\\": 0.75, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3468,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1652.962537254,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 329, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 46, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 435, \\\"retention\\\": 0.7563218390804598, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3470,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1653.160982779,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 329, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 46, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 435, \\\"retention\\\": 0.7563218390804598, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3478,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1655.00295387,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 410, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 47, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 487, \\\"retention\\\": 0.8418891170431212, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3480,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1655.201265845,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 410, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 47, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 487, \\\"retention\\\": 0.8418891170431212, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3488,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1657.043319329,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 294, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 48, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 419, \\\"retention\\\": 0.7016706443914081, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3490,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1657.24150763,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 294, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 48, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 419, \\\"retention\\\": 0.7016706443914081, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3498,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1659.091996613,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 266, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 49, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 410, \\\"retention\\\": 0.6487804878048781, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3500,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1659.290303551,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 266, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 49, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 410, \\\"retention\\\": 0.6487804878048781, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3508,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1661.136223403,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 264, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 50, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 409, \\\"retention\\\": 0.6454767726161369, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3510,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1661.334364624,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 264, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 50, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 409, \\\"retention\\\": 0.6454767726161369, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3518,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1663.169529123,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 284, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 51, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 407, \\\"retention\\\": 0.6977886977886978, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3520,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1663.367904594,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 284, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 51, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 407, \\\"retention\\\": 0.6977886977886978, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3528,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1665.204151281,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 269, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 52, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 406, \\\"retention\\\": 0.6625615763546798, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3530,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1665.402409786,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 269, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 52, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 406, \\\"retention\\\": 0.6625615763546798, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3538,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1667.237595692,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 288, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 53, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 418, \\\"retention\\\": 0.6889952153110048, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3540,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1667.435746618,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 288, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 53, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 418, \\\"retention\\\": 0.6889952153110048, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3548,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1669.269615816,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 243, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 54, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 392, \\\"retention\\\": 0.6198979591836735, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3550,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1669.467750787,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 243, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 54, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 392, \\\"retention\\\": 0.6198979591836735, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3558,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1671.301295143,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 255, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 55, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 409, \\\"retention\\\": 0.6234718826405868, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3560,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1671.499744687,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 255, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 55, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 409, \\\"retention\\\": 0.6234718826405868, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3568,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1673.329107788,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 271, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 56, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 424, \\\"retention\\\": 0.6391509433962265, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3570,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1673.527392487,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 271, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 56, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 424, \\\"retention\\\": 0.6391509433962265, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3578,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1675.361494217,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 282, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 57, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 451, \\\"retention\\\": 0.6252771618625277, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3580,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1675.559610472,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 282, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 57, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 451, \\\"retention\\\": 0.6252771618625277, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3588,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1677.400836417,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 270, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 58, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 429, \\\"retention\\\": 0.6293706293706294, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3590,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1677.599155631,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 270, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 58, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 429, \\\"retention\\\": 0.6293706293706294, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3598,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1679.445460046,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 335, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 59, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 469, \\\"retention\\\": 0.7142857142857143, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3600,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1679.64365681,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 335, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 59, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 469, \\\"retention\\\": 0.7142857142857143, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3608,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1681.48634633,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 284, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 60, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 436, \\\"retention\\\": 0.6513761467889908, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3610,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1681.684655768,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 284, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 60, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 436, \\\"retention\\\": 0.6513761467889908, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3618,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1683.539585065,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 321, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 61, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 451, \\\"retention\\\": 0.7117516629711752, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3620,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1683.737024164,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 321, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 61, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 451, \\\"retention\\\": 0.7117516629711752, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3628,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1685.56773709,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 420, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 62, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 490, \\\"retention\\\": 0.8571428571428571, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3630,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1685.765842874,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 420, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 62, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 490, \\\"retention\\\": 0.8571428571428571, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3638,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1687.617193665,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 337, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 63, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 473, \\\"retention\\\": 0.7124735729386892, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3640,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1687.814818923,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 337, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 63, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 473, \\\"retention\\\": 0.7124735729386892, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3648,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1689.664530359,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 333, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 64, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 464, \\\"retention\\\": 0.7176724137931034, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3650,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1689.862748367,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 333, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 64, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 464, \\\"retention\\\": 0.7176724137931034, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3658,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1691.708290892,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 363, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 65, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 495, \\\"retention\\\": 0.7333333333333333, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3660,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1691.906197513,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 363, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 65, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 495, \\\"retention\\\": 0.7333333333333333, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3668,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1693.749793393,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 341, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 66, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 457, \\\"retention\\\": 0.7461706783369803, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3670,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1693.947620538,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 341, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 66, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 457, \\\"retention\\\": 0.7461706783369803, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3678,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1695.812611165,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 360, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 67, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 460, \\\"retention\\\": 0.782608695652174, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3680,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1696.010939969,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 360, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 67, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 460, \\\"retention\\\": 0.782608695652174, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3688,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1697.855752404,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 333, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 68, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 457, \\\"retention\\\": 0.7286652078774617, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3690,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1698.054025034,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 333, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 68, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 457, \\\"retention\\\": 0.7286652078774617, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3698,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1699.895478629,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 343, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 69, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 458, \\\"retention\\\": 0.7489082969432315, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3700,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1700.09367516,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 343, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 69, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 458, \\\"retention\\\": 0.7489082969432315, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3708,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1701.936503796,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 392, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 70, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 501, \\\"retention\\\": 0.782435129740519, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3710,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1702.134792611,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 392, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 70, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 501, \\\"retention\\\": 0.782435129740519, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3718,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1703.995630547,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 325, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 71, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 454, \\\"retention\\\": 0.7158590308370044, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3720,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1704.193732819,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 325, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 71, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 454, \\\"retention\\\": 0.7158590308370044, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3728,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1706.044315016,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 319, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 72, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 479, \\\"retention\\\": 0.6659707724425887, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3730,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1706.242536165,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 319, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 72, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 479, \\\"retention\\\": 0.6659707724425887, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3738,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1708.09432098,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 267, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 73, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 429, \\\"retention\\\": 0.6223776223776224, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3740,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1708.292581123,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 267, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 73, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 429, \\\"retention\\\": 0.6223776223776224, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3748,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1710.152211503,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 299, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 74, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 451, \\\"retention\\\": 0.6629711751662971, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3750,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1710.350628558,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 299, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 74, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 451, \\\"retention\\\": 0.6629711751662971, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3758,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1712.201184557,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 272, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 75, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 452, \\\"retention\\\": 0.6017699115044248, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3760,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1712.39939422,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 272, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 75, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 452, \\\"retention\\\": 0.6017699115044248, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3768,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1714.244559865,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 249, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 76, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 455, \\\"retention\\\": 0.5472527472527473, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3770,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1714.443028581,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 249, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 76, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 455, \\\"retention\\\": 0.5472527472527473, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3778,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1716.292520514,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 268, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 77, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 447, \\\"retention\\\": 0.5995525727069351, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3780,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1716.490872711,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 268, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 77, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 447, \\\"retention\\\": 0.5995525727069351, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3788,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1718.333375537,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 363, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 78, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 496, \\\"retention\\\": 0.7318548387096774, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3790,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1718.531684612,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 363, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 78, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 496, \\\"retention\\\": 0.7318548387096774, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3796,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1720.38351508,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 380, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 79, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 504, \\\"retention\\\": 0.753968253968254, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3798,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1720.58120462,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 380, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 79, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 504, \\\"retention\\\": 0.753968253968254, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3802,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1722.574629848,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 305, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 80, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 469, \\\"retention\\\": 0.650319829424307, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3804,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1722.775810606,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 305, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 80, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 469, \\\"retention\\\": 0.650319829424307, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3808,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1724.643893708,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 316, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 81, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 463, \\\"retention\\\": 0.6825053995680346, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3810,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1724.842274816,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 316, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 81, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 463, \\\"retention\\\": 0.6825053995680346, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3816,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1726.705776562,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 303, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 82, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 462, \\\"retention\\\": 0.6558441558441559, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3818,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1726.903909068,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 303, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 82, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 462, \\\"retention\\\": 0.6558441558441559, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3826,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1728.749543997,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 264, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 83, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 434, \\\"retention\\\": 0.6082949308755761, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3828,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1728.947627043,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 264, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 83, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 434, \\\"retention\\\": 0.6082949308755761, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3836,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1730.795944994,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 290, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 84, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 458, \\\"retention\\\": 0.6331877729257642, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3838,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1731.0878121,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 290, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 84, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 458, \\\"retention\\\": 0.6331877729257642, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3846,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1732.835755383,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 328, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 85, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 478, \\\"retention\\\": 0.6861924686192469, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3848,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1733.032839623,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 328, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 85, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 478, \\\"retention\\\": 0.6861924686192469, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3856,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1734.893078559,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 362, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 86, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 489, \\\"retention\\\": 0.7402862985685071, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3858,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1735.091739438,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 362, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 86, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 489, \\\"retention\\\": 0.7402862985685071, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3866,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1736.962616626,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 343, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 87, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 480, \\\"retention\\\": 0.7145833333333333, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3868,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1737.160807063,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 343, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 87, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 480, \\\"retention\\\": 0.7145833333333333, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3876,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1739.015853885,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 254, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 88, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 444, \\\"retention\\\": 0.5720720720720721, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3878,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1739.214026267,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 254, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 88, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 444, \\\"retention\\\": 0.5720720720720721, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3886,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1741.059586842,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 285, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 89, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 472, \\\"retention\\\": 0.6038135593220338, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3888,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1741.257752996,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 285, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 89, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 472, \\\"retention\\\": 0.6038135593220338, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3896,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1743.09596836,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 340, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 90, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 473, \\\"retention\\\": 0.718816067653277, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3898,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1743.294168087,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 340, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 90, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 473, \\\"retention\\\": 0.718816067653277, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3906,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1745.149270082,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 348, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 91, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 476, \\\"retention\\\": 0.7310924369747899, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3908,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1745.347544519,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 348, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 91, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 476, \\\"retention\\\": 0.7310924369747899, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3916,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1747.197921128,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 340, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 92, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 467, \\\"retention\\\": 0.728051391862955, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3918,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1747.39616861,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 340, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 92, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 467, \\\"retention\\\": 0.728051391862955, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3925,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1749.240637365,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 344, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 93, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 489, \\\"retention\\\": 0.7034764826175869, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3928,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1749.26733599,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 344, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 93, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 489, \\\"retention\\\": 0.7034764826175869, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3935,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1751.286296449,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 360, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 94, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 495, \\\"retention\\\": 0.7272727272727273, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3938,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1751.353228712,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 360, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 94, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 495, \\\"retention\\\": 0.7272727272727273, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3945,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1753.340984256,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 351, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 95, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 480, \\\"retention\\\": 0.73125, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3948,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1753.432580967,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 351, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 95, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 480, \\\"retention\\\": 0.73125, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3955,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1755.393571431,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 323, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 96, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 467, \\\"retention\\\": 0.6916488222698073, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3958,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1755.522299684,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 323, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 96, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 467, \\\"retention\\\": 0.6916488222698073, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3965,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1757.452616018,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 285, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 97, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 446, \\\"retention\\\": 0.6390134529147982, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3968,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1757.605863144,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 285, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 97, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 446, \\\"retention\\\": 0.6390134529147982, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3975,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1759.489528328,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 333, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 98, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 495, \\\"retention\\\": 0.6727272727272727, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3978,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1759.687809374,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 333, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 98, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 495, \\\"retention\\\": 0.6727272727272727, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3984,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1761.532611394,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 268, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 99, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 455, \\\"retention\\\": 0.589010989010989, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 3987,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1761.827091191,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 268, \\\"dataset\\\": \\\"44b6_2a2eff9f\\\", \\\"frame\\\": 99, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 455, \\\"retention\\\": 0.589010989010989, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 4046,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1792.271434245,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 342, \\\"dataset\\\": \\\"6bba_07e24132\\\", \\\"frame\\\": 32, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 392, \\\"retention\\\": 0.8724489795918368, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 4048,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1792.572809615,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 342, \\\"dataset\\\": \\\"6bba_07e24132\\\", \\\"frame\\\": 32, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 392, \\\"retention\\\": 0.8724489795918368, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 4608,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1936.866455707,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 59, \\\"dataset\\\": \\\"6bba_062c8d37\\\", \\\"frame\\\": 73, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 68, \\\"retention\\\": 0.8676470588235294, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 4610,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1937.06386284,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 59, \\\"dataset\\\": \\\"6bba_062c8d37\\\", \\\"frame\\\": 73, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 68, \\\"retention\\\": 0.8676470588235294, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 4614,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1938.870069213,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 62, \\\"dataset\\\": \\\"6bba_062c8d37\\\", \\\"frame\\\": 74, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 69, \\\"retention\\\": 0.8985507246376812, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 4616,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1939.067770181,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 62, \\\"dataset\\\": \\\"6bba_062c8d37\\\", \\\"frame\\\": 74, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 69, \\\"retention\\\": 0.8985507246376812, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 4656,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1958.560161967,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 64, \\\"dataset\\\": \\\"6bba_062c8d37\\\", \\\"frame\\\": 84, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 73, \\\"retention\\\": 0.8767123287671232, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 4658,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":1958.758444001,\"data\":\"BIOHUB_RETENTION_GUARD {\\\"blended_candidates\\\": 64, \\\"dataset\\\": \\\"6bba_062c8d37\\\", \\\"frame\\\": 84, \\\"minimum_retention\\\": 0.9, \\\"primary_candidates\\\": 73, \\\"retention\\\": 0.8767123287671232, \\\"use_primary\\\": true}\\n\"}"
+    },
+    {
+      "line": 5511,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2187.672785181,\"data\":\"Saved 4 predictions to /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_val_gpu1/split_0\\n\"}"
+    },
+    {
+      "line": 5512,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2187.875776335,\"data\":\"Saved 4 predictions to /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_val_gpu1/split_0\\n\"}"
+    },
+    {
+      "line": 5513,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2192.963327129,\"data\":\"Saved 4 predictions to /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_val_gpu0/split_0\\n\"}"
+    },
+    {
+      "line": 5514,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2193.245834612,\"data\":\"Saved 4 predictions to /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_val_gpu0/split_0\\n\"}"
+    },
+    {
+      "line": 5515,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2194.914037353,\"data\":\"VALIDATOR: merged 8 prediction graphs into /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_val/split_0\\n\"}"
+    },
+    {
+      "line": 5516,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2194.914064762,\"data\":\"VALIDATOR: prediction completed in 14.87 minutes\\n\"}"
+    },
+    {
+      "line": 5517,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2195.471951721,\"data\":\"Post-process base configuration (public 0.939):\\n\"}"
+    },
+    {
+      "line": 5538,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2199.431471686,\"data\":\"VALIDATOR: cached 8 raw prediction graphs + GT\\n\"}"
+    },
+    {
+      "line": 5541,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2199.431524519,\"data\":\"LOCAL VALIDATOR -- base configuration (public 0.939), official metric formula\\n\"}"
+    },
+    {
+      "line": 5549,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2303.273886987,\"data\":\"  [44b6_12dfb391] FINAL: 44953 nodes, 43494 edges\\n\"}"
+    },
+    {
+      "line": 5555,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2357.379666237,\"data\":\"  [44b6_267148e4] FINAL: 22251 nodes, 21333 edges\\n\"}"
+    },
+    {
+      "line": 5561,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2457.484640263,\"data\":\"  [44b6_2a2eff9f] FINAL: 40137 nodes, 38434 edges\\n\"}"
+    },
+    {
+      "line": 5567,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2472.126718217,\"data\":\"  [44b6_341df25f] FINAL: 8413 nodes, 8179 edges\\n\"}"
+    },
+    {
+      "line": 5573,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2479.302996368,\"data\":\"  [6bba_062c8d37] FINAL: 5853 nodes, 5620 edges\\n\"}"
+    },
+    {
+      "line": 5579,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2538.494660101,\"data\":\"  [6bba_07e24132] FINAL: 29181 nodes, 28143 edges\\n\"}"
+    },
+    {
+      "line": 5585,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2548.447220792,\"data\":\"  [6bba_085bf656] FINAL: 8300 nodes, 8030 edges\\n\"}"
+    },
+    {
+      "line": 5591,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2602.972351621,\"data\":\"  [6bba_09961292] FINAL: 29753 nodes, 28917 edges\\n\"}"
+    },
+    {
+      "line": 5600,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2603.001714954,\"data\":\"[base] n=8 adjusted_edge_jaccard=0.9260 division_jaccard=0.2308 (tp/fp/fn=3/1/9) PROXY_SCORE=0.9490  [6.7 min]\\n\"}"
+    },
+    {
+      "line": 5603,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2603.257407981,\"data\":\"POST-PROCESS SWEEP -- 7 candidates x 8 held-out videos\\n\"}"
+    },
+    {
+      "line": 5610,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2704.218025529,\"data\":\"  [44b6_12dfb391] FINAL: 44939 nodes, 43476 edges\\n\"}"
+    },
+    {
+      "line": 5616,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2754.722333292,\"data\":\"  [44b6_267148e4] FINAL: 22232 nodes, 21308 edges\\n\"}"
+    },
+    {
+      "line": 5622,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2849.448448912,\"data\":\"  [44b6_2a2eff9f] FINAL: 40119 nodes, 38409 edges\\n\"}"
+    },
+    {
+      "line": 5628,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2863.595219842,\"data\":\"  [44b6_341df25f] FINAL: 8409 nodes, 8175 edges\\n\"}"
+    },
+    {
+      "line": 5634,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2870.708635196,\"data\":\"  [6bba_062c8d37] FINAL: 5853 nodes, 5620 edges\\n\"}"
+    },
+    {
+      "line": 5640,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2927.034369839,\"data\":\"  [6bba_07e24132] FINAL: 29181 nodes, 28143 edges\\n\"}"
+    },
+    {
+      "line": 5646,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2937.006674998,\"data\":\"  [6bba_085bf656] FINAL: 8300 nodes, 8030 edges\\n\"}"
+    },
+    {
+      "line": 5652,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2987.562503565,\"data\":\"  [6bba_09961292] FINAL: 29747 nodes, 28907 edges\\n\"}"
+    },
+    {
+      "line": 5653,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":2987.851834087,\"data\":\"[gap45] n=8 adjusted_edge_jaccard=0.9260 division_jaccard=0.2308 (tp/fp/fn=3/1/9) PROXY_SCORE=0.9491  [6.4 min]\\n\"}"
+    },
+    {
+      "line": 5659,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":3091.473310436,\"data\":\"  [44b6_12dfb391] FINAL: 44959 nodes, 43497 edges\\n\"}"
+    },
+    {
+      "line": 5665,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":3146.59101922,\"data\":\"  [44b6_267148e4] FINAL: 22277 nodes, 21364 edges\\n\"}"
+    },
+    {
+      "line": 5671,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":3246.416935183,\"data\":\"  [44b6_2a2eff9f] FINAL: 40126 nodes, 38425 edges\\n\"}"
+    },
+    {
+      "line": 5677,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":3261.190737417,\"data\":\"  [44b6_341df25f] FINAL: 8413 nodes, 8179 edges\\n\"}"
+    },
+    {
+      "line": 5683,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":3268.438228044,\"data\":\"  [6bba_062c8d37] FINAL: 5853 nodes, 5623 edges\\n\"}"
+    },
+    {
+      "line": 5689,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":3327.547805918,\"data\":\"  [6bba_07e24132] FINAL: 29179 nodes, 28142 edges\\n\"}"
+    },
+    {
+      "line": 5695,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":3337.423552864,\"data\":\"  [6bba_085bf656] FINAL: 8300 nodes, 8030 edges\\n\"}"
+    },
+    {
+      "line": 5701,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":3391.618272424,\"data\":\"  [6bba_09961292] FINAL: 29742 nodes, 28916 edges\\n\"}"
+    },
+    {
+      "line": 5702,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":3391.618313905,\"data\":\"[tight55] n=8 adjusted_edge_jaccard=0.9280 division_jaccard=0.2308 (tp/fp/fn=3/1/9) PROXY_SCORE=0.9511  [6.7 min]\\n\"}"
+    },
+    {
+      "line": 5708,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":3496.880505235,\"data\":\"  [44b6_12dfb391] FINAL: 44951 nodes, 43484 edges\\n\"}"
+    },
+    {
+      "line": 5714,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":3552.750105171,\"data\":\"  [44b6_267148e4] FINAL: 22254 nodes, 21304 edges\\n\"}"
+    },
+    {
+      "line": 5720,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":3653.894921736,\"data\":\"  [44b6_2a2eff9f] FINAL: 40114 nodes, 38398 edges\\n\"}"
+    },
+    {
+      "line": 5726,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":3669.203751744,\"data\":\"  [44b6_341df25f] FINAL: 8411 nodes, 8177 edges\\n\"}"
+    },
+    {
+      "line": 5732,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":3677.218035388,\"data\":\"  [6bba_062c8d37] FINAL: 5829 nodes, 5581 edges\\n\"}"
+    },
+    {
+      "line": 5738,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":3738.007096412,\"data\":\"  [6bba_07e24132] FINAL: 29193 nodes, 28120 edges\\n\"}"
+    },
+    {
+      "line": 5744,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":3747.969114266,\"data\":\"  [6bba_085bf656] FINAL: 8290 nodes, 8020 edges\\n\"}"
+    },
+    {
+      "line": 5750,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":3802.902642744,\"data\":\"  [6bba_09961292] FINAL: 29754 nodes, 28904 edges\\n\"}"
+    },
+    {
+      "line": 5751,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":3802.902680053,\"data\":\"[relaxed9] n=8 adjusted_edge_jaccard=0.9266 division_jaccard=0.2143 (tp/fp/fn=3/2/9) PROXY_SCORE=0.9480  [6.9 min]\\n\"}"
+    },
+    {
+      "line": 5757,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":3908.157365802,\"data\":\"  [44b6_12dfb391] FINAL: 44948 nodes, 43490 edges\\n\"}"
+    },
+    {
+      "line": 5763,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":3962.923288719,\"data\":\"  [44b6_267148e4] FINAL: 22238 nodes, 21327 edges\\n\"}"
+    },
+    {
+      "line": 5769,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":4063.593884521,\"data\":\"  [44b6_2a2eff9f] FINAL: 40149 nodes, 38447 edges\\n\"}"
+    },
+    {
+      "line": 5775,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":4078.677381348,\"data\":\"  [44b6_341df25f] FINAL: 8413 nodes, 8179 edges\\n\"}"
+    },
+    {
+      "line": 5781,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":4085.907171002,\"data\":\"  [6bba_062c8d37] FINAL: 5853 nodes, 5620 edges\\n\"}"
+    },
+    {
+      "line": 5787,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":4145.73125836,\"data\":\"  [6bba_07e24132] FINAL: 29191 nodes, 28150 edges\\n\"}"
+    },
+    {
+      "line": 5793,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":4155.728515651,\"data\":\"  [6bba_085bf656] FINAL: 8300 nodes, 8030 edges\\n\"}"
+    },
+    {
+      "line": 5799,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":4210.507698488,\"data\":\"  [6bba_09961292] FINAL: 29745 nodes, 28911 edges\\n\"}"
+    },
+    {
+      "line": 5800,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":4210.507745707,\"data\":\"[bonus125] n=8 adjusted_edge_jaccard=0.9260 division_jaccard=0.2308 (tp/fp/fn=3/1/9) PROXY_SCORE=0.9490  [6.8 min]\\n\"}"
+    },
+    {
+      "line": 5806,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":4315.931634282,\"data\":\"  [44b6_12dfb391] FINAL: 44953 nodes, 43494 edges\\n\"}"
+    },
+    {
+      "line": 5812,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":4370.779106829,\"data\":\"  [44b6_267148e4] FINAL: 22251 nodes, 21333 edges\\n\"}"
+    },
+    {
+      "line": 5818,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":4471.702017769,\"data\":\"  [44b6_2a2eff9f] FINAL: 40137 nodes, 38434 edges\\n\"}"
+    },
+    {
+      "line": 5824,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":4486.804741136,\"data\":\"  [44b6_341df25f] FINAL: 8413 nodes, 8179 edges\\n\"}"
+    },
+    {
+      "line": 5830,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":4494.104950176,\"data\":\"  [6bba_062c8d37] FINAL: 5853 nodes, 5620 edges\\n\"}"
+    },
+    {
+      "line": 5836,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":4554.066765764,\"data\":\"  [6bba_07e24132] FINAL: 29181 nodes, 28143 edges\\n\"}"
+    },
+    {
+      "line": 5842,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":4564.142495779,\"data\":\"  [6bba_085bf656] FINAL: 8300 nodes, 8030 edges\\n\"}"
+    },
+    {
+      "line": 5848,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":4619.352393196,\"data\":\"  [6bba_09961292] FINAL: 29753 nodes, 28917 edges\\n\"}"
+    },
+    {
+      "line": 5849,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":4619.352441145,\"data\":\"[gap2step40] n=8 adjusted_edge_jaccard=0.9260 division_jaccard=0.2308 (tp/fp/fn=3/1/9) PROXY_SCORE=0.9490  [6.8 min]\\n\"}"
+    },
+    {
+      "line": 5855,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":4726.577221536,\"data\":\"  [44b6_12dfb391] FINAL: 44953 nodes, 43494 edges\\n\"}"
+    },
+    {
+      "line": 5861,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":4781.461839271,\"data\":\"  [44b6_267148e4] FINAL: 22251 nodes, 21333 edges\\n\"}"
+    },
+    {
+      "line": 5867,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":4882.656162314,\"data\":\"  [44b6_2a2eff9f] FINAL: 40137 nodes, 38434 edges\\n\"}"
+    },
+    {
+      "line": 5873,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":4897.739956512,\"data\":\"  [44b6_341df25f] FINAL: 8413 nodes, 8179 edges\\n\"}"
+    },
+    {
+      "line": 5879,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":4904.962537222,\"data\":\"  [6bba_062c8d37] FINAL: 5853 nodes, 5620 edges\\n\"}"
+    },
+    {
+      "line": 5885,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":4965.369834826,\"data\":\"  [6bba_07e24132] FINAL: 29181 nodes, 28143 edges\\n\"}"
+    },
+    {
+      "line": 5891,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":4975.486264078,\"data\":\"  [6bba_085bf656] FINAL: 8300 nodes, 8030 edges\\n\"}"
+    },
+    {
+      "line": 5897,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":5030.874510074,\"data\":\"  [6bba_09961292] FINAL: 29753 nodes, 28917 edges\\n\"}"
+    },
+    {
+      "line": 5898,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":5030.874575369,\"data\":\"[reuse28] n=8 adjusted_edge_jaccard=0.9260 division_jaccard=0.2308 (tp/fp/fn=3/1/9) PROXY_SCORE=0.9490  [6.9 min]\\n\"}"
+    },
+    {
+      "line": 5904,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":5136.856987675,\"data\":\"  [44b6_12dfb391] FINAL: 44923 nodes, 43456 edges\\n\"}"
+    },
+    {
+      "line": 5910,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":5191.526762138,\"data\":\"  [44b6_267148e4] FINAL: 22235 nodes, 21314 edges\\n\"}"
+    },
+    {
+      "line": 5916,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":5292.139026019,\"data\":\"  [44b6_2a2eff9f] FINAL: 40104 nodes, 38391 edges\\n\"}"
+    },
+    {
+      "line": 5922,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":5306.986381038,\"data\":\"  [44b6_341df25f] FINAL: 8413 nodes, 8179 edges\\n\"}"
+    },
+    {
+      "line": 5928,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":5314.197373591,\"data\":\"  [6bba_062c8d37] FINAL: 5853 nodes, 5620 edges\\n\"}"
+    },
+    {
+      "line": 5934,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":5373.912416317,\"data\":\"  [6bba_07e24132] FINAL: 29179 nodes, 28140 edges\\n\"}"
+    },
+    {
+      "line": 5940,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":5384.050683876,\"data\":\"  [6bba_085bf656] FINAL: 8300 nodes, 8030 edges\\n\"}"
+    },
+    {
+      "line": 5946,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":5439.110233614,\"data\":\"  [6bba_09961292] FINAL: 29747 nodes, 28908 edges\\n\"}"
+    },
+    {
+      "line": 5947,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":5439.110278878,\"data\":\"[dcgap035] n=8 adjusted_edge_jaccard=0.9260 division_jaccard=0.2308 (tp/fp/fn=3/1/9) PROXY_SCORE=0.9491  [6.8 min]\\n\"}"
+    },
+    {
+      "line": 5950,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":5439.110295043,\"data\":\"SWEEP TABLE (sorted by PROXY_SCORE)\\n\"}"
+    },
+    {
+      "line": 5961,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":5439.110383499,\"data\":\"SELECTED: tight55  overrides={'MOTION_RELINK_TIGHT_UM': 5.5}  (margin rule: \\u003e= +0.001 proxy and adj loss \\u003c= 0.0005)\\n\"}"
+    },
+    {
+      "line": 5963,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":5439.110390865,\"data\":\"  selected proxy=0.9511 adj=0.9280 divJ=0.2308\\n\"}"
+    },
+    {
+      "line": 5965,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":5439.110397366,\"data\":\"Re-writing submission.csv with the selected post-process configuration: tight55\\n\"}"
+    },
+    {
+      "line": 5972,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":5492.394468046,\"data\":\"  [44b6_0113de3b] FINAL: 25637 nodes, 24933 edges\\n\"}"
+    },
+    {
+      "line": 5978,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":5555.738409634,\"data\":\"  [44b6_0b24845f] FINAL: 20729 nodes, 19449 edges\\n\"}"
+    },
+    {
+      "line": 5984,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":5565.584344697,\"data\":\"  [6bba_05b6850b] FINAL: 6152 nodes, 5958 edges\\n\"}"
+    },
+    {
+      "line": 5990,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":5766.233183323,\"data\":\"  [6bba_05db0fb1] FINAL: 70290 nodes, 68208 edges\\n\"}"
+    },
+    {
+      "line": 5998,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":5766.980589486,\"data\":\"Final submission.csv rows=241356  config=tight55\\n\"}"
+    },
+    {
+      "line": 6000,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":5767.16322938,\"data\":\"PIPELINE MANIFEST -- resolved state, not just config\\n\"}"
+    },
+    {
+      "line": 6005,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":5767.163285758,\"data\":\"  - checkpoint file:     /kaggle/input/datasets/pilkwang/biohub-deepcenter-unet3d-center-prior-v1/weights/full_frame_center/best.pt\\n\"}"
+    },
+    {
+      "line": 6010,
+      "text": ",{\"stream_name\":\"stdout\",\"time\":5767.163310474,\"data\":\"Validator:               enabled=True  held_out_samples=8  match_radius=7.0um\\n\"}"
+    }
+  ]
+}

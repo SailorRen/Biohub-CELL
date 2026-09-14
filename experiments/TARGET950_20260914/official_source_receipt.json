@@ -1,0 +1,30 @@
+{
+  "classification": "SOURCE_CODE_VERIFIED",
+  "commit": "075fc5f5a52d11077f9dc2b074644618f26939e2",
+  "branch": "main",
+  "observed_at_utc": "2026-09-14T02:20:16.144693+00:00",
+  "files": [
+    {
+      "file": "metrics.py",
+      "source_path": "src/tracking_cellmot/metrics.py",
+      "url": "https://raw.githubusercontent.com/royerlab/kaggle-cell-tracking-competition/075fc5f5a52d11077f9dc2b074644618f26939e2/src/tracking_cellmot/metrics.py",
+      "bytes": 19602,
+      "sha256": "cfdd596e3f8909cca14db0682889738b19ff75c3808b3773175aba9367ca7444"
+    },
+    {
+      "file": "division_metrics.py",
+      "source_path": "src/tracking_cellmot/division_metrics.py",
+      "url": "https://raw.githubusercontent.com/royerlab/kaggle-cell-tracking-competition/075fc5f5a52d11077f9dc2b074644618f26939e2/src/tracking_cellmot/division_metrics.py",
+      "bytes": 20488,
+      "sha256": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9"
+    },
+    {
+      "file": "LICENSE",
+      "source_path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/royerlab/kaggle-cell-tracking-competition/075fc5f5a52d11077f9dc2b074644618f26939e2/LICENSE",
+      "bytes": 1507,
+      "sha256": "3910a8b578783928cbbf981c1b204591ab3368e70017dc695d6536f71d272796"
+    }
+  ],
+  "execution": "Only these two scoring modules are vendored; full repository not claimed."
+}

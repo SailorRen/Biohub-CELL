@@ -1,0 +1,49 @@
+{
+  "task_id": "TARGET950_PREPARATION_20260914",
+  "status": "PASS",
+  "executed": true,
+  "observed_at_utc": "2026-09-14T02:37:22.885254+00:00",
+  "total": 378,
+  "passed": 378,
+  "suites": [
+    {
+      "file": "adapter_tests.json",
+      "sha256": "1e75bca973a1fb4aaee4f79f9d69900d8605ad79f621925eb8844ad77432e024",
+      "passed": 364,
+      "total": 364
+    },
+    {
+      "file": "integration_tests.json",
+      "sha256": "cd1ba52089b5d4c48fdc53ae74e759763e143e4e154956ad35e3b913acc4f990",
+      "passed": 14,
+      "total": 14
+    }
+  ],
+  "scope": "Actual local synthetic adapter and built notebook scorer/audit execution only; no production model or Kaggle inference.",
+  "runtime": {
+    "python": "3.11.14",
+    "executable": "/Users/sailor/kaggle/项目/Biohub - CELL/downloads/LINEFIT_BOUNDARY_20260909/scorer/venv/bin/python",
+    "dependencies": {
+      "tracksdata": "0.1.0rc6.dev3+g980c2d30a",
+      "polars": "1.42.0",
+      "numpy": "2.4.2",
+      "scipy": "1.17.1",
+      "rustworkx": "0.18.1"
+    }
+  },
+  "source_hashes": {
+    "official_selector_adapter.py": "3f12b1fdf3ecd2c7492f4577dbee00b964334abb861938e9ffbad9f84edaae9b",
+    "test_official_selector.py": "12bc41ed0ef5e9c20bd63843b3b5fe25401d668655e951bff5d3510f4ff6a89d",
+    "build_candidate.py": "c8bc218734bad8e67b1a8c817a9e71e89c64ac6dacb8cf4d59a95c165c5856f5",
+    "runtime_audit.py": "b7b2f1de006a9f151128c85695881c7d85fb0a14669fe7a3876751061843aaad",
+    "integration_test.py": "3593165ca11260ed3e51e2d6378d43c3e9ae4efe2fe082f6b7f8c74d8be4aa2a",
+    "candidate.ipynb": "c38460def079f45749a8a3d85d6549dada0ec0343e2eed66bee3c7c40db4ae43",
+    "kernel-metadata.json": "01977ca82b645206d052436181cf5dda5321780800dd36e5d7615d8e315deac3",
+    "baseline/candidate.ipynb": "bb6dbf2766fff1b4f7d1c96f3c1145c700d4d44e4695d924c7be8ccbe1b07af7",
+    "vendor/official_075fc5/metrics.py": "cfdd596e3f8909cca14db0682889738b19ff75c3808b3773175aba9367ca7444",
+    "vendor/official_075fc5/division_metrics.py": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9",
+    "vendor/official_075fc5/LICENSE": "3910a8b578783928cbbf981c1b204591ab3368e70017dc695d6536f71d272796",
+    "../LINEFIT_BOUNDARY_20260909/scorer_diagnostic.py": "e2a46eab2f106be3dbd58473b065b38d0ddc1e6eff25f90cbe05d71eaf3041d5"
+  },
+  "not_evidence_of_score_gain": true
+}

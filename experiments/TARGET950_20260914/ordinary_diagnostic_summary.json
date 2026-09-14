@@ -1,0 +1,90 @@
+{
+  "task_id": "TARGET950_PREPARATION_20260914",
+  "classification": "MEASURED",
+  "evidence_scope": "OWN_947_ORDINARY_OUTPUT_ONLY_NOT_FORMAL_HIDDEN_OUTPUT",
+  "ref": "sailorren/biohub-lineage-forge-precision-tracking",
+  "version": 1,
+  "script_version_id": 348960877,
+  "submission_id": 56160258,
+  "source_sha256": "bb6dbf2766fff1b4f7d1c96f3c1145c700d4d44e4695d924c7be8ccbe1b07af7",
+  "selected_postprocessing": {
+    "base_proxy": 0.9490371529912655,
+    "held_out_stems": [
+      "44b6_12dfb391",
+      "44b6_267148e4",
+      "44b6_2a2eff9f",
+      "44b6_341df25f",
+      "6bba_062c8d37",
+      "6bba_07e24132",
+      "6bba_085bf656",
+      "6bba_09961292"
+    ],
+    "overrides": {
+      "MOTION_RELINK_TIGHT_UM": 5.5
+    },
+    "selected": "tight55",
+    "selected_proxy": 0.9510944139858309
+  },
+  "selected_proxy_row": {
+    "config": "tight55",
+    "adjusted_edge_jaccard": "0.9280174909089078",
+    "division_jaccard": "0.23076923076923078",
+    "proxy_score": "0.9510944139858309",
+    "div_tp": "3",
+    "div_fp": "1",
+    "div_fn": "9",
+    "missed_gt_nodes": "63",
+    "spurious_pred_nodes": "182977",
+    "edges_recovered": "5539",
+    "edges_fragmented": "133",
+    "edges_lost_to_detection": "79",
+    "wrong_association_edges": "0",
+    "n_samples": "8",
+    "seconds": "403.9077341556549",
+    "overrides": "{\"MOTION_RELINK_TIGHT_UM\": 5.5}"
+  },
+  "ordinary_totals": {
+    "nodes": 122808,
+    "edges": 118548,
+    "division_like_sources": 124,
+    "safe_divisions_added": 124,
+    "motion_relink_replaced_raw_edges": 118389,
+    "linefit_smoothed_nodes": 122792
+  },
+  "per_video_divisions": [
+    {
+      "dataset": "44b6_0113de3b",
+      "division_like_sources": 55,
+      "safe_divisions_added": 55
+    },
+    {
+      "dataset": "44b6_0b24845f",
+      "division_like_sources": 25,
+      "safe_divisions_added": 25
+    },
+    {
+      "dataset": "6bba_05b6850b",
+      "division_like_sources": 10,
+      "safe_divisions_added": 10
+    },
+    {
+      "dataset": "6bba_05db0fb1",
+      "division_like_sources": 34,
+      "safe_divisions_added": 34
+    }
+  ],
+  "same_graph_official_rescore": "NOT_RUN",
+  "raw_graph_payload_downloaded": false,
+  "gt_payload_downloaded": false,
+  "postprocessed_validation_graph_available": false,
+  "reason": "Uniform session output listing exhausted 441 entries; eight raw validation GEFF directories present. No identifiable paired GT output or persisted per-PP validation graphs. Competition metadata first page contains sample_submission.csv metadata plus 99 test image chunk members, no GEFF; no further paging or payload downloads. Reviewed source holds VAL_GT and postprocessed graphs in memory.",
+  "limits": [
+    "Full ordinary source bracketed by identical fixed V1 SHA before and after listing; version_label 1 request returned HTTP404, then current output listing used.",
+    "GT existence in competition is not denied; only first metadata page was inspected.",
+    "Raw validation graphs could be downloaded by known listed paths, but without paired GT this would not enable requested same-graph official scoring.",
+    "Ordinary proxy TP/FP/FN is not an official division recomputation and is not formal Public score.",
+    "Actual hidden postprocessing and hidden graph payload remain UNKNOWN."
+  ],
+  "kaggle_writes": 0,
+  "small_output_download_bytes": 12806
+}

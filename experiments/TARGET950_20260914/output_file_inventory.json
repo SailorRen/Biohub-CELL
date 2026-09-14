@@ -1,0 +1,1766 @@
+[
+  {
+    "file_name": "bidirectional_production_runtime_integrity.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "detector_coordinates_harmonic_association_production_0_2.jsonl",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "detector_coordinates_harmonic_association_production_1_2.jsonl",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "detector_coordinates_harmonic_association_production_single.jsonl",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "dual_seed_frame_retention_guard_report.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "ppsweep_results.csv",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "ppsweep_selected.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "retention_guard_0_2.jsonl",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "retention_guard_1_2.jsonl",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "retention_guard_single.jsonl",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "run_stats.csv",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "secondary_seed_weights/unet_transformer/split_0/SNAPSHOT_MANIFEST.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "secondary_seed_weights/unet_transformer/split_0/checkpoint_last.pth",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "secondary_seed_weights/unet_transformer/split_0/config.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "secondary_seed_weights/unet_transformer/split_0/history.csv",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "secondary_seed_weights/unet_transformer/split_0/split_manifest.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "secondary_seed_weights/unet_transformer/split_0/training_config.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "submission.csv",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/kaggle_test_splits_50ep.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/kaggle_val_splits.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/ids/c/0/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/props/edge_dist/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/props/edge_dist/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/props/edge_dist/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/props/edge_prob/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/props/edge_prob/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/props/edge_prob/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/ids/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/t/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/t/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/t/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/x/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/x/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/x/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/y/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/y/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/y/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/z/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/z/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/z/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/ids/c/0/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/props/edge_dist/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/props/edge_dist/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/props/edge_dist/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/props/edge_prob/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/props/edge_prob/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/props/edge_prob/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/ids/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/t/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/t/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/t/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/x/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/x/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/x/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/y/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/y/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/y/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/z/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/z/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/z/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/ids/c/0/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/props/edge_dist/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/props/edge_dist/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/props/edge_dist/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/props/edge_prob/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/props/edge_prob/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/props/edge_prob/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/ids/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/t/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/t/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/t/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/x/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/x/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/x/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/y/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/y/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/y/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/z/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/z/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/z/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/ids/c/0/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/props/edge_dist/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/props/edge_dist/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/props/edge_dist/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/props/edge_prob/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/props/edge_prob/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/props/edge_prob/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/ids/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/t/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/t/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/t/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/x/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/x/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/x/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/y/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/y/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/y/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/z/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/z/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/z/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/ids/c/0/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/props/edge_dist/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/props/edge_dist/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/props/edge_dist/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/props/edge_prob/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/props/edge_prob/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/props/edge_prob/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/ids/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/t/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/t/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/t/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/x/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/x/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/x/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/y/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/y/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/y/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/z/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/z/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/z/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/ids/c/0/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/props/edge_dist/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/props/edge_dist/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/props/edge_dist/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/props/edge_prob/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/props/edge_prob/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/props/edge_prob/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/ids/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/t/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/t/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/t/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/x/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/x/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/x/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/y/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/y/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/y/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/z/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/z/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/z/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/ids/c/0/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/props/edge_dist/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/props/edge_dist/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/props/edge_dist/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/props/edge_prob/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/props/edge_prob/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/props/edge_prob/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/ids/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/t/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/t/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/t/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/x/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/x/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/x/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/y/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/y/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/y/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/z/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/z/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/z/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/ids/c/0/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/props/edge_dist/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/props/edge_dist/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/props/edge_dist/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/props/edge_prob/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/props/edge_prob/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/props/edge_prob/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/ids/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/t/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/t/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/t/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/x/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/x/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/x/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/y/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/y/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/y/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/z/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/z/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/z/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/ids/c/0/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/props/edge_dist/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/props/edge_dist/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/props/edge_dist/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/props/edge_prob/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/props/edge_prob/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/props/edge_prob/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/ids/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/t/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/t/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/t/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/x/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/x/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/x/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/y/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/y/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/y/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/z/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/z/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/z/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/ids/c/0/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/props/edge_dist/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/props/edge_dist/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/props/edge_dist/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/props/edge_prob/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/props/edge_prob/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/props/edge_prob/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/ids/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/t/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/t/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/t/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/x/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/x/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/x/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/y/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/y/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/y/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/z/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/z/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/z/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/ids/c/0/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/props/edge_dist/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/props/edge_dist/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/props/edge_dist/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/props/edge_prob/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/props/edge_prob/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/props/edge_prob/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/ids/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/t/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/t/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/t/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/x/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/x/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/x/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/y/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/y/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/y/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/z/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/z/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/z/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/ids/c/0/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/props/edge_dist/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/props/edge_dist/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/props/edge_dist/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/props/edge_prob/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/props/edge_prob/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/props/edge_prob/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/ids/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/ids/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/solution/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/solution/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/solution/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/t/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/t/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/t/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/x/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/x/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/x/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/y/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/y/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/y/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/z/values/c/0",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/z/values/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/z/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/zarr.json",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/scripts/__pycache__/augmentations.cpython-312.pyc",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/scripts/__pycache__/dataspec.cpython-312.pyc",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/scripts/__pycache__/evaluate.cpython-312.pyc",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/scripts/__pycache__/train_unet_transformer.cpython-312.pyc",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/scripts/augmentations.py",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/scripts/dataspec.py",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/scripts/evaluate.py",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/scripts/predict_unet_transformer.py",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/scripts/train_unet_transformer.py",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/src/biohub_tracking/__init__.py",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/src/biohub_tracking/__pycache__/__init__.cpython-312.pyc",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/src/biohub_tracking/__pycache__/io.cpython-312.pyc",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/src/biohub_tracking/__pycache__/metrics.cpython-312.pyc",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/src/biohub_tracking/division_metrics.py",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/src/biohub_tracking/img_proc.py",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/src/biohub_tracking/io.py",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/src/biohub_tracking/metrics.py",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/src/biohub_tracking/models/__init__.py",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/src/biohub_tracking/models/__pycache__/__init__.cpython-312.pyc",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/src/biohub_tracking/models/__pycache__/simple_node_transformer.cpython-312.pyc",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/src/biohub_tracking/models/__pycache__/temporal_unet.cpython-312.pyc",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/src/biohub_tracking/models/simple_node_transformer.py",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "tracking_repo/src/biohub_tracking/models/temporal_unet.py",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  },
+  {
+    "file_name": "validator_results.csv",
+    "size_bytes": "UNKNOWN_API_DOES_NOT_EXPOSE_SIZE"
+  }
+]

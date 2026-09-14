@@ -1,0 +1,21 @@
+{
+  "task_id": "TARGET950_PREPARATION_20260914",
+  "classification": "OFFICIAL_FACT",
+  "observed_at_utc": "2026-09-14T02:13:38.265533+00:00",
+  "ref": "sailorren/biohub-lineage-forge-precision-tracking",
+  "kernel_id": 133927813,
+  "version": 1,
+  "script_version_id": 348960877,
+  "submission_id": 56160258,
+  "status": "COMPLETE",
+  "public_score": "0.947",
+  "private_score": null,
+  "source_sha256": "bb6dbf2766fff1b4f7d1c96f3c1145c700d4d44e4695d924c7be8ccbe1b07af7",
+  "api_current_version": 1,
+  "source_cells": 12,
+  "browser_source": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/submissions",
+  "version_url": "https://www.kaggle.com/code/sailorren/biohub-lineage-forge-precision-tracking?scriptVersionId=348960877",
+  "browser_evidence": "Submission Details: Biohub Lineage Forge — Precision Tracking - Version 1; Succeeded; Score 0.947; direct Notebook link has scriptVersionId=348960877; submission timestamp Sep 11 2026 14:32:14 Shanghai.",
+  "browser_api_source_binding": "Browser fixed V1/SV link + official API same ref/kernel/current V1 + full source equal CLI bytes; API submission row matches unique description and timestamp.",
+  "new_kaggle_write_requests": 0
+}

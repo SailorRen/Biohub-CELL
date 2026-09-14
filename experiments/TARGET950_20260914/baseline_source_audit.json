@@ -1,0 +1,142 @@
+{
+  "timestamp_utc": "2026-09-14T02:17:12.866912+00:00",
+  "classification": "SOURCE_CODE_VERIFIED",
+  "coverage": "FULL_NOTEBOOK_SOURCE_REVIEWED",
+  "notebook_source_sha256": "bb6dbf2766fff1b4f7d1c96f3c1145c700d4d44e4695d924c7be8ccbe1b07af7",
+  "notebook_code_cells": 12,
+  "reviewed_code_cells": 12,
+  "official_api_source_sha256_equal": true,
+  "cells": [
+    {
+      "cell_index_0based": 0,
+      "cell_number_1based": 1,
+      "line_count": 69,
+      "source_sha256": "545339ff52ac4315bffaf1131fcf769bb1a260ca523e988f19af9432979fc4bd",
+      "review_coverage": "ALL_SOURCE_TEXT_AND_AST",
+      "topic": "参数设定：DeepCenter safe-div0.20，启用DeepCenter TTA，其余冻结阈值",
+      "equal_to_B0_AST_excluding_top_level_docstring": false,
+      "equal_to_C2_AST_excluding_top_level_docstring": false
+    },
+    {
+      "cell_index_0based": 1,
+      "cell_number_1based": 2,
+      "line_count": 43,
+      "source_sha256": "99198956a4c7725d85c6aab0d478368749824801716c6d39cf5bf915187ac500",
+      "review_coverage": "ALL_SOURCE_TEXT_AND_AST",
+      "topic": "参数guard及不可信旧打印说明",
+      "equal_to_B0_AST_excluding_top_level_docstring": true,
+      "equal_to_C2_AST_excluding_top_level_docstring": true
+    },
+    {
+      "cell_index_0based": 2,
+      "cell_number_1based": 3,
+      "line_count": 238,
+      "source_sha256": "77fdadffbd02c87e8f686e55944b6741312be552f34c8dc615e6391a1959a2dc",
+      "review_coverage": "ALL_SOURCE_TEXT_AND_AST",
+      "topic": "比赛路径和完整PP配置",
+      "equal_to_B0_AST_excluding_top_level_docstring": true,
+      "equal_to_C2_AST_excluding_top_level_docstring": true
+    },
+    {
+      "cell_index_0based": 3,
+      "cell_number_1based": 4,
+      "line_count": 682,
+      "source_sha256": "0f62c46bbec00a2d3d6bbde0efb89d5713204983d51c9c3cf73df1869cf12f8f",
+      "review_coverage": "ALL_SOURCE_TEXT_AND_AST",
+      "topic": "离线依赖、三个checkpoint及support源码hash准入",
+      "equal_to_B0_AST_excluding_top_level_docstring": true,
+      "equal_to_C2_AST_excluding_top_level_docstring": true
+    },
+    {
+      "cell_index_0based": 4,
+      "cell_number_1based": 5,
+      "line_count": 460,
+      "source_sha256": "768bd13fbf10d26731819e0d19f79c11d5a1d0fad7065ec5f5f66c2c5fc3187c",
+      "review_coverage": "ALL_SOURCE_TEXT_AND_AST",
+      "topic": "所有动态源码补丁、主次模型TTA、双GPU test推理",
+      "equal_to_B0_AST_excluding_top_level_docstring": false,
+      "equal_to_C2_AST_excluding_top_level_docstring": false
+    },
+    {
+      "cell_index_0based": 5,
+      "cell_number_1based": 6,
+      "line_count": 1708,
+      "source_sha256": "1cdeb9eb90a61b62198a48a3b9c1e9d7c271ee0b18a57159c56f3498d3a3491c",
+      "review_coverage": "ALL_SOURCE_TEXT_AND_AST",
+      "topic": "DeepCenter网络/坐标/分裂veto、motion全替换、gap、safe-div、过滤、linefit、CSV",
+      "equal_to_B0_AST_excluding_top_level_docstring": false,
+      "equal_to_C2_AST_excluding_top_level_docstring": false
+    },
+    {
+      "cell_index_0based": 6,
+      "cell_number_1based": 7,
+      "line_count": 178,
+      "source_sha256": "c300805e0268602d76042dd271bcc3224fda6af2a52569e16bebc446701d66a5",
+      "review_coverage": "ALL_SOURCE_TEXT_AND_AST",
+      "topic": "初次base输出结构与retention审计；配置字段是历史硬编码",
+      "equal_to_B0_AST_excluding_top_level_docstring": true,
+      "equal_to_C2_AST_excluding_top_level_docstring": true
+    },
+    {
+      "cell_index_0based": 7,
+      "cell_number_1based": 8,
+      "line_count": 178,
+      "source_sha256": "7400441b355cbe09311e9c638c44264e374ad448d9ab1020b9d5866746e84ee7",
+      "review_coverage": "ALL_SOURCE_TEXT_AND_AST",
+      "topic": "分裂优先的train样本选择、validator推理",
+      "equal_to_B0_AST_excluding_top_level_docstring": true,
+      "equal_to_C2_AST_excluding_top_level_docstring": true
+    },
+    {
+      "cell_index_0based": 8,
+      "cell_number_1based": 9,
+      "line_count": 318,
+      "source_sha256": "54ed30a2f73355f369c112057570e9dd6a37e7f5521a6baf9ccdf4a8fc4ba6f8",
+      "review_coverage": "ALL_SOURCE_TEXT_AND_AST",
+      "topic": "自写节点/edge/division scorer与聚合；不能视为官方当前实现",
+      "equal_to_B0_AST_excluding_top_level_docstring": true,
+      "equal_to_C2_AST_excluding_top_level_docstring": true
+    },
+    {
+      "cell_index_0based": 9,
+      "cell_number_1based": 10,
+      "line_count": 146,
+      "source_sha256": "3986eaba6600507225a7140c033c14ae039a4fa95b3602806b43a8f2f11d90a0",
+      "review_coverage": "ALL_SOURCE_TEXT_AND_AST",
+      "topic": "缓存validator图与GT、可变PP及base评分",
+      "equal_to_B0_AST_excluding_top_level_docstring": true,
+      "equal_to_C2_AST_excluding_top_level_docstring": true
+    },
+    {
+      "cell_index_0based": 10,
+      "cell_number_1based": 11,
+      "line_count": 126,
+      "source_sha256": "ece3664cf924f36f3b838bac34fa636e67a5c865e6bf21ab61ff086bd1f87dfb",
+      "review_coverage": "ALL_SOURCE_TEXT_AND_AST",
+      "topic": "7个原候选和条件combo、margin选择及最终submission重写",
+      "equal_to_B0_AST_excluding_top_level_docstring": true,
+      "equal_to_C2_AST_excluding_top_level_docstring": true
+    },
+    {
+      "cell_index_0based": 11,
+      "cell_number_1based": 12,
+      "line_count": 44,
+      "source_sha256": "1b69f438acf6f21117acb50f1b42816a5da627c4dcec80b8e76372ef11793f15",
+      "review_coverage": "ALL_SOURCE_TEXT_AND_AST",
+      "topic": "最终已解析环境/加载状态打印",
+      "equal_to_B0_AST_excluding_top_level_docstring": true,
+      "equal_to_C2_AST_excluding_top_level_docstring": true
+    }
+  ],
+  "notebook_top_level_executed": false,
+  "model_executed": false,
+  "Kaggle_writes": 0,
+  "repository_writes": 0,
+  "synthetic_geometry_receipt": "/private/tmp/forge947_tta_geometry_audit.json",
+  "limitations": [
+    "Notebook outputs absent; actual selected PP requires separate run receipt",
+    "Support source file hashes/checkpoints declared and checked in Notebook; no weights or support repo execution performed in this audit",
+    "Formal score identity and comparison handled separately by root",
+    "No candidate improvement is measured in this read-only audit"
+  ]
+}
