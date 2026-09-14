@@ -1,0 +1,144 @@
+{
+  "checks": [
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/submission_id"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/script_version_id"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/public_score"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/status"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/source_sha256"
+          }
+        ],
+        "path": "experiments/TARGET950_20260914/baseline_identity.json",
+        "sha256": "70e97de43a962fb3da34cf58bc9d5ded7563706026c43ff7e91314c6f624590f"
+      },
+      "id": "baseline-identity",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "argument_count": 2,
+        "argv_sha256": "000fce53b46a656c03ccf6a34c27a12abdac6825d0253d42cb6c6127e7943e60",
+        "cwd": ".",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 1229,
+          "sha256": "00f0eb61c02f77f019caae23179b7b018b01ba7fc6cd0ca5cfa5fc6c01244bfc"
+        },
+        "stdout_text_checks": 0
+      },
+      "id": "candidate-and-tests",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/status"
+          }
+        ],
+        "path": "experiments/TARGET950_20260914/independent_review.json",
+        "sha256": "7c48f91d5f9cfa26ab8d04ca879d5075e69142df5fb384875c8f894d4ac4d3c9"
+      },
+      "id": "independent-review",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "bytes": 12545,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "reports/20260914_从0947到0950_候选与证据.md",
+        "required_text_checks": 6,
+        "sha256": "76a727b7c3d95104edb11fc43491f4fe345ae49dcfccb68a57d9b0839adb1884"
+      },
+      "id": "report",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "branch": "main",
+        "dirty_entry_count": 0,
+        "head": "2e6651c960a6e497763d309da6604fe9ddb030c5",
+        "remote": "origin",
+        "remote_exists": true,
+        "remote_head": "2e6651c960a6e497763d309da6604fe9ddb030c5",
+        "remote_url_sha256": "294339ae4bf28ec437260f32bd064c06212de22a7026887c59e47f72ef414b8e",
+        "repository": "."
+      },
+      "id": "git-delivery",
+      "outcome": "PASS",
+      "reason": "Git evidence passed",
+      "required": true,
+      "type": "git"
+    }
+  ],
+  "claimed_at": "2026-09-14T10:44:34+08:00",
+  "claimed_status": "CLAIMED_COMPLETE",
+  "contract_path": "tasks/CODEX_20260914_BIOHUB_TARGET950_PREPARATION_CONTRACT.json",
+  "contract_sha256": "6bbf96869eb0b3b70ae23c3b2fc188945d1c73fe3ea8ec6d954b71c85695af10",
+  "final_status": "COMPLETED_VERIFIED",
+  "finished_at": "2026-09-14T10:44:44+08:00",
+  "integrity_scope": "local-sha256-only",
+  "limitations": [
+    "The conclusion is limited to the frozen contract and the implemented checks.",
+    "The verifier does not prove omitted requirements or future stability.",
+    "A local or Git hash is not a trusted signature against a malicious writer."
+  ],
+  "optional_warning_check_ids": [],
+  "reason": "all required automated checks passed",
+  "required_summary": {
+    "failed_or_blocked": 0,
+    "human_review": 0,
+    "passed": 5
+  },
+  "run_id": "20260914T104440+0800-1f8d002b",
+  "schema_version": "1.0",
+  "started_at": "2026-09-14T10:44:40+08:00",
+  "task_id": "TARGET950_PREPARATION_20260914"
+}
