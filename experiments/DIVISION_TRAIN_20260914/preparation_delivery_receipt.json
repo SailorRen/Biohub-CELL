@@ -1,0 +1,98 @@
+{
+  "task_id": "DIVISION_TRAIN_20260914",
+  "commit": "45c2c5dc618d0c21017ca0ca3afbe95a0a0aab42",
+  "branch": "codex/division-train-20260914",
+  "live_remote_head": "45c2c5dc618d0c21017ca0ca3afbe95a0a0aab42",
+  "observed_at_utc": "2026-09-14T06:46:52.661863+00:00",
+  "all_files_match": true,
+  "matched": 14,
+  "total": 14,
+  "files": [
+    {
+      "path": "experiments/DIVISION_TRAIN_20260914/.gitignore",
+      "committed_sha256": "08e95c08c0efc902bb7490caa0689ca729fb6c2fa0fe48065f0ad77fea71069f",
+      "remote_sha256": "08e95c08c0efc902bb7490caa0689ca729fb6c2fa0fe48065f0ad77fea71069f",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_TRAIN_20260914/build_candidate.py",
+      "committed_sha256": "56d9fdbdb14406635c1fdc57c233fcec48efea4e77a3d0119467790e7250ab8f",
+      "remote_sha256": "56d9fdbdb14406635c1fdc57c233fcec48efea4e77a3d0119467790e7250ab8f",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_TRAIN_20260914/candidate.ipynb",
+      "committed_sha256": "35ec0b376b94843722ac9e8107a0929ccf9a49f94d7bbac99b3093c4618ee123",
+      "remote_sha256": "35ec0b376b94843722ac9e8107a0929ccf9a49f94d7bbac99b3093c4618ee123",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_TRAIN_20260914/division_model.py",
+      "committed_sha256": "fdeb80eea2c462e84b9e89b07ca14e57bdf6e8ab679c9a0c42df50edebcddb2c",
+      "remote_sha256": "fdeb80eea2c462e84b9e89b07ca14e57bdf6e8ab679c9a0c42df50edebcddb2c",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_TRAIN_20260914/kernel-metadata.json",
+      "committed_sha256": "d04b58bd5727c1505d9e78cc3e3a66598e010a3b1e5d555965689a5572b305b1",
+      "remote_sha256": "d04b58bd5727c1505d9e78cc3e3a66598e010a3b1e5d555965689a5572b305b1",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_TRAIN_20260914/manifest.json",
+      "committed_sha256": "a7875a81ed8eaa887205dfc8f03540cfdb806df0d208bd37060d6245e2b22109",
+      "remote_sha256": "a7875a81ed8eaa887205dfc8f03540cfdb806df0d208bd37060d6245e2b22109",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_TRAIN_20260914/platform_io.py",
+      "committed_sha256": "8a34b3d1f597956bdcd5260ffc0d53a0ca2e12a80c2c142b95e922be1a17b3fa",
+      "remote_sha256": "8a34b3d1f597956bdcd5260ffc0d53a0ca2e12a80c2c142b95e922be1a17b3fa",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_TRAIN_20260914/platform_preflight.json",
+      "committed_sha256": "ea4501acdd19a51f76a54fc45b8e41fc5721fdf5ea9133dfb939c6d6da7ccdd1",
+      "remote_sha256": "ea4501acdd19a51f76a54fc45b8e41fc5721fdf5ea9133dfb939c6d6da7ccdd1",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_TRAIN_20260914/source_identity.json",
+      "committed_sha256": "15e7a713d5b5ae204ab7879a94971b62d7434058fc11888917d36151ec850a65",
+      "remote_sha256": "15e7a713d5b5ae204ab7879a94971b62d7434058fc11888917d36151ec850a65",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_TRAIN_20260914/synthetic_tests.json",
+      "committed_sha256": "645caa74c665286bc47f217e6d6194fcadb2237441b2a82d7c3340cb9f333448",
+      "remote_sha256": "645caa74c665286bc47f217e6d6194fcadb2237441b2a82d7c3340cb9f333448",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_TRAIN_20260914/test_candidate.py",
+      "committed_sha256": "aa7c289ac4702c2719ce52049e996bf3f3d499c7ba352d43d3a6c96ae5909aca",
+      "remote_sha256": "aa7c289ac4702c2719ce52049e996bf3f3d499c7ba352d43d3a6c96ae5909aca",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_TRAIN_20260914/write_ledger.json",
+      "committed_sha256": "32f995487f14aedf88f6f63475d6cf33a4842b64465f384f5869c4ce782d8e47",
+      "remote_sha256": "32f995487f14aedf88f6f63475d6cf33a4842b64465f384f5869c4ce782d8e47",
+      "match": true
+    },
+    {
+      "path": "reports/20260914_分裂判别器训练与提交.md",
+      "committed_sha256": "a31d98b82a834b1f25b882197fee7313c5ef2587226c07306b345b285b76aa76",
+      "remote_sha256": "a31d98b82a834b1f25b882197fee7313c5ef2587226c07306b345b285b76aa76",
+      "match": true
+    },
+    {
+      "path": "tasks/CODEX_20260914_BIOHUB_DIVISION_TRAIN_CONTRACT.json",
+      "committed_sha256": "611268c30131fad155992ccaa39c62f947aca02b189d87eb7b7a16a3d9615488",
+      "remote_sha256": "611268c30131fad155992ccaa39c62f947aca02b189d87eb7b7a16a3d9615488",
+      "match": true
+    }
+  ],
+  "archive_sha256": "b1a11dfa95cb640baf5f0bf2641d8ee0ef6bf1ef42081b61d97e4788178e7d15",
+  "scope": "fixed committed task files; experiment completion and formal score are separate"
+}
