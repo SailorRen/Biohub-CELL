@@ -1,0 +1,26 @@
+{
+  "task_id": "TARGET950_RUN_20260914",
+  "observed_at_utc": "2026-09-14T05:03:21.272122+00:00",
+  "classification": "MEASURED",
+  "method": "CUA actual completed Notebook Input tab, selected each attached dataset and read Version text; paired with authenticated GetKernel V1 and matching Edit run link",
+  "canonical_ref": "sailorren/biohub-0-947-official-selector-20260914",
+  "kernel_id": 134280472,
+  "version": 1,
+  "script_version_id": 349666428,
+  "page_url": "https://www.kaggle.com/code/sailorren/biohub-0-947-official-selector-20260914/input",
+  "edit_link": "https://www.kaggle.com/code/sailorren/biohub-0-947-official-selector-20260914/edit/run/349666428",
+  "dataset_sources": [
+    "pilkwang/biohub-deepcenter-unet3d-center-prior-v1/5",
+    "pilkwang/biohub-temporal-unet3d-seed314159-v1/2",
+    "pilkwang/biohub-tracking-support-pack-50ep-v1/10"
+  ],
+  "ui_version_texts": [
+    "(Version 5)",
+    "(Version 2)",
+    "(Version 10)"
+  ],
+  "ordinary_ui_status": "Successfully ran in 6438.7s",
+  "ordinary_ui_output": "50.98 MB",
+  "input_versions_verified": true,
+  "platform_writes": 0
+}

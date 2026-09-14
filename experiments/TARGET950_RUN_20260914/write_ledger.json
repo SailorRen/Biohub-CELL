@@ -29,6 +29,32 @@
       "error_type": "RuntimeError",
       "http_status": null,
       "completed_at_utc": "2026-09-14T03:10:14.698653+00:00"
+    },
+    {
+      "action": "submit",
+      "at_utc": "2026-09-14T05:13:20.253359+00:00",
+      "ref": "sailorren/biohub-947-official-selector-20260914",
+      "canonical_ref": "sailorren/biohub-0-947-official-selector-20260914",
+      "manifest_sha256": "25b8c49345e0b5b7a31d82b7d9e1661178b35d04aad04149bac11ddd6e09450c",
+      "alias_manifest_sha256": "a0ef856e63d828327d2a25381cc94817d9ebeb44b97d5e3fcfda51118cf0d6d6",
+      "submitted_source_sha256": "cdefc823f59d0490e2ced01959e026ebfdd5c4b6f41d74ccb1c7bac4f61a6230",
+      "remote_source_sha256": "5c5f9758b778f38a2034a349311bb7bbb9f44b577ac83a9aca3396d09092b340",
+      "kernel_id": 134280472,
+      "version": 1,
+      "script_version_id": 349666428,
+      "status": "RESPONSE_RECEIVED_READBACK_REQUIRED",
+      "description": "TARGET950_RUN_20260914 | V1 | SV349666428 | SHA256 cdefc823f59d0490e2ced01959e026ebfdd5c4b6f41d74ccb1c7bac4f61a6230",
+      "transport": {
+        "max_retries": 0,
+        "allow_redirects": false,
+        "max_write_sends": 1,
+        "send_calls": 1
+      },
+      "response": {
+        "id": 56222238,
+        "message": ""
+      },
+      "completed_at_utc": "2026-09-14T05:13:22.821440+00:00"
     }
   ]
 }
