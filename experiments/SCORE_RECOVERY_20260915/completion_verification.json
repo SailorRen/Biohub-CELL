@@ -1,0 +1,41 @@
+{
+  "task_id": "SCORE_RECOVERY_20260915",
+  "final_status": "COMPLETED_VERIFIED",
+  "required_summary": {
+    "failed_or_blocked": 0,
+    "human_review": 0,
+    "passed": 4
+  },
+  "finished_at": "2026-09-15T09:41:15+08:00",
+  "scope": "只覆盖正式成绩回收、计算和Git文件交付，不代表提分或实际训练全过程复现",
+  "source_report_path": ".task-verification/SCORE_RECOVERY_20260915/runs/20260915T094114+0800-c55541d3.json",
+  "source_report_sha256": "fd6f1b2808382376b5754071f0192b85739c752d49b3a1bc0e0a3f9b7c1353e9",
+  "fact_commit": "ec072b5de33e026133c698f0b443fb5079d6a5f8",
+  "checks": [
+    {
+      "id": "formal-identity-and-deltas",
+      "outcome": "PASS",
+      "type": "command",
+      "required": true
+    },
+    {
+      "id": "independent-review",
+      "outcome": "PASS",
+      "type": "json",
+      "required": true
+    },
+    {
+      "id": "report",
+      "outcome": "PASS",
+      "type": "file",
+      "required": true
+    },
+    {
+      "id": "git-delivery",
+      "outcome": "PASS",
+      "type": "git",
+      "required": true
+    }
+  ],
+  "contract_sha256": "5f3e4e0287a61d312b785e6b8d1e15feef1558f6d324b9b43be31c96cf61a73f"
+}
