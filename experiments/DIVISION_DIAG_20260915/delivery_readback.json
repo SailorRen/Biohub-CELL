@@ -1,0 +1,225 @@
+{
+  "task_id": "DIVISION_DIAG_20260915",
+  "scope": "only new task files; does not prove paired diagnosis ran",
+  "observed_at_utc": "2026-09-15T04:15:29.789917+00:00",
+  "branch": "codex/division-diagnosis-20260915",
+  "commit": "5c04c1daa74cc57de43e812c6113ebfe355fe68e",
+  "remote_head": "5c04c1daa74cc57de43e812c6113ebfe355fe68e",
+  "remote_main": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+  "worktree_status": "",
+  "archive_url": "https://codeload.github.com/SailorRen/Biohub-CELL/zip/5c04c1daa74cc57de43e812c6113ebfe355fe68e",
+  "archive_sha256": "a449fb91226b4baebfffc18c886787c539c3598b00c7ec4f5b66f6fecae45082",
+  "matched": 26,
+  "total": 26,
+  "files": [
+    {
+      "path": "experiments/DIVISION_DIAG_20260915/cache_audit.json",
+      "bytes": 5080,
+      "local_sha256": "d50b6d8f403dcb6ecbb57f5ade505f2f6e9bf991410bd0ec19614776d52de280",
+      "commit_sha256": "d50b6d8f403dcb6ecbb57f5ade505f2f6e9bf991410bd0ec19614776d52de280",
+      "remote_sha256": "d50b6d8f403dcb6ecbb57f5ade505f2f6e9bf991410bd0ec19614776d52de280",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_DIAG_20260915/candidate_diff.csv",
+      "bytes": 378,
+      "local_sha256": "f886bfb1248f5b344f8647d3b1a78dab0a6dbec7034a8907dcb5afb59b814e4d",
+      "commit_sha256": "f886bfb1248f5b344f8647d3b1a78dab0a6dbec7034a8907dcb5afb59b814e4d",
+      "remote_sha256": "f886bfb1248f5b344f8647d3b1a78dab0a6dbec7034a8907dcb5afb59b814e4d",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_DIAG_20260915/collect_existing.py",
+      "bytes": 4108,
+      "local_sha256": "2adba6e77137c1e9b714dd4cad376264c8d3990e116f85537da6afcb1b523f76",
+      "commit_sha256": "2adba6e77137c1e9b714dd4cad376264c8d3990e116f85537da6afcb1b523f76",
+      "remote_sha256": "2adba6e77137c1e9b714dd4cad376264c8d3990e116f85537da6afcb1b523f76",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_DIAG_20260915/controlled_config.json",
+      "bytes": 1778,
+      "local_sha256": "b10df2d8de099e324afcafe794e646753e179c26fba486ab74f8498a670b9a0c",
+      "commit_sha256": "b10df2d8de099e324afcafe794e646753e179c26fba486ab74f8498a670b9a0c",
+      "remote_sha256": "b10df2d8de099e324afcafe794e646753e179c26fba486ab74f8498a670b9a0c",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_DIAG_20260915/diagnose.py",
+      "bytes": 15903,
+      "local_sha256": "8d1b3b0b925dd0a2b104bcf691933f364bdcbbaf38713c8fa317e12a4bf29994",
+      "commit_sha256": "8d1b3b0b925dd0a2b104bcf691933f364bdcbbaf38713c8fa317e12a4bf29994",
+      "remote_sha256": "8d1b3b0b925dd0a2b104bcf691933f364bdcbbaf38713c8fa317e12a4bf29994",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_DIAG_20260915/diagnosis.json",
+      "bytes": 7591,
+      "local_sha256": "d32bb575db68869cbd79529de5d82c05c1fc8eadb2b04b39abe0ec1f93b70616",
+      "commit_sha256": "d32bb575db68869cbd79529de5d82c05c1fc8eadb2b04b39abe0ec1f93b70616",
+      "remote_sha256": "d32bb575db68869cbd79529de5d82c05c1fc8eadb2b04b39abe0ec1f93b70616",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_DIAG_20260915/diagnostic_run.log",
+      "bytes": 743,
+      "local_sha256": "273ff46515ab6a825a9033c9ed5b978782f641bc185939013da96ecff61ed9fe",
+      "commit_sha256": "273ff46515ab6a825a9033c9ed5b978782f641bc185939013da96ecff61ed9fe",
+      "remote_sha256": "273ff46515ab6a825a9033c9ed5b978782f641bc185939013da96ecff61ed9fe",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_DIAG_20260915/execution_receipt.json",
+      "bytes": 2536,
+      "local_sha256": "96deaa7941363f165c9a6dc25c918125c4c504c93f7e38c9b112aa39c3973363",
+      "commit_sha256": "96deaa7941363f165c9a6dc25c918125c4c504c93f7e38c9b112aa39c3973363",
+      "remote_sha256": "96deaa7941363f165c9a6dc25c918125c4c504c93f7e38c9b112aa39c3973363",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_DIAG_20260915/historical_ordinary_summary.json",
+      "bytes": 671,
+      "local_sha256": "e5eab4a22650344df7be9ca6813d907ee9c352bf3f055ab66a40ae7070a582a3",
+      "commit_sha256": "e5eab4a22650344df7be9ca6813d907ee9c352bf3f055ab66a40ae7070a582a3",
+      "remote_sha256": "e5eab4a22650344df7be9ca6813d907ee9c352bf3f055ab66a40ae7070a582a3",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_DIAG_20260915/log_evidence.json",
+      "bytes": 3504,
+      "local_sha256": "28d051043fc29bab25f2f8859cac4a1ec0adba7f4af54ee29ce96f479626efee",
+      "commit_sha256": "28d051043fc29bab25f2f8859cac4a1ec0adba7f4af54ee29ce96f479626efee",
+      "remote_sha256": "28d051043fc29bab25f2f8859cac4a1ec0adba7f4af54ee29ce96f479626efee",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_DIAG_20260915/ordinary_division_runtime_audit.json",
+      "bytes": 868,
+      "local_sha256": "a7fe104f1287ae93d4f8bb7e4de57e4794a7d3f84d033e970cc4fcb38fc97713",
+      "commit_sha256": "a7fe104f1287ae93d4f8bb7e4de57e4794a7d3f84d033e970cc4fcb38fc97713",
+      "remote_sha256": "a7fe104f1287ae93d4f8bb7e4de57e4794a7d3f84d033e970cc4fcb38fc97713",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_DIAG_20260915/ordinary_division_training_receipt.json",
+      "bytes": 42198,
+      "local_sha256": "7f151fc5522e9bf4e8d96904a888a9558a4b7fbfbf28185120138396334a1448",
+      "commit_sha256": "7f151fc5522e9bf4e8d96904a888a9558a4b7fbfbf28185120138396334a1448",
+      "remote_sha256": "7f151fc5522e9bf4e8d96904a888a9558a4b7fbfbf28185120138396334a1448",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_DIAG_20260915/ordinary_ppsweep_selected.json",
+      "bytes": 353,
+      "local_sha256": "2620dcc3e5e4d85298e00383d98f45d787a0a7a834f0179e225ad9958068156b",
+      "commit_sha256": "2620dcc3e5e4d85298e00383d98f45d787a0a7a834f0179e225ad9958068156b",
+      "remote_sha256": "2620dcc3e5e4d85298e00383d98f45d787a0a7a834f0179e225ad9958068156b",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_DIAG_20260915/ordinary_run_stats.csv",
+      "bytes": 3329,
+      "local_sha256": "31bdf80280cb536ba41961a826d21bfa2ce36409294b3f1dbff7b114876cf83e",
+      "commit_sha256": "31bdf80280cb536ba41961a826d21bfa2ce36409294b3f1dbff7b114876cf83e",
+      "remote_sha256": "31bdf80280cb536ba41961a826d21bfa2ce36409294b3f1dbff7b114876cf83e",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_DIAG_20260915/recovery_receipt.json",
+      "bytes": 72089,
+      "local_sha256": "a107a8de7caee1860da79fa39d622cbf23ed02979eaaab31a6f77c07900b9669",
+      "commit_sha256": "a107a8de7caee1860da79fa39d622cbf23ed02979eaaab31a6f77c07900b9669",
+      "remote_sha256": "a107a8de7caee1860da79fa39d622cbf23ed02979eaaab31a6f77c07900b9669",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_DIAG_20260915/safe_div_static.diff",
+      "bytes": 3420,
+      "local_sha256": "394f7013c1d402a333baee52b8407a0fa662be09af29397d122af1feae772d74",
+      "commit_sha256": "394f7013c1d402a333baee52b8407a0fa662be09af29397d122af1feae772d74",
+      "remote_sha256": "394f7013c1d402a333baee52b8407a0fa662be09af29397d122af1feae772d74",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_DIAG_20260915/source_read_manifest.json",
+      "bytes": 26774,
+      "local_sha256": "ce098e2804f8fc1c46615e90ca163c3919ff538ae408b4aa827f73fca268dd4b",
+      "commit_sha256": "ce098e2804f8fc1c46615e90ca163c3919ff538ae408b4aa827f73fca268dd4b",
+      "remote_sha256": "ce098e2804f8fc1c46615e90ca163c3919ff538ae408b4aa827f73fca268dd4b",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_DIAG_20260915/supplemental_receipt.json",
+      "bytes": 69420,
+      "local_sha256": "7ca1cbab03ac9d6d1fddc7cd14936ef296b9519ea26c74863b85a99a8c3a5121",
+      "commit_sha256": "7ca1cbab03ac9d6d1fddc7cd14936ef296b9519ea26c74863b85a99a8c3a5121",
+      "remote_sha256": "7ca1cbab03ac9d6d1fddc7cd14936ef296b9519ea26c74863b85a99a8c3a5121",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_DIAG_20260915/training_runtime_summary.json",
+      "bytes": 5337,
+      "local_sha256": "4da22c86691dbb22cba99baf55b5280dbc3100d852406fd0095752f58709ad2c",
+      "commit_sha256": "4da22c86691dbb22cba99baf55b5280dbc3100d852406fd0095752f58709ad2c",
+      "remote_sha256": "4da22c86691dbb22cba99baf55b5280dbc3100d852406fd0095752f58709ad2c",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_DIAG_20260915/verification.json",
+      "bytes": 3530,
+      "local_sha256": "5343c08f95872baa941c04f789dff07857040235a6f0a82dde2d5fedeadbd7a9",
+      "commit_sha256": "5343c08f95872baa941c04f789dff07857040235a6f0a82dde2d5fedeadbd7a9",
+      "remote_sha256": "5343c08f95872baa941c04f789dff07857040235a6f0a82dde2d5fedeadbd7a9",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_DIAG_20260915/verification_path_quoting_failure.json",
+      "bytes": 3500,
+      "local_sha256": "190683941593e4169e63acc1b5a28f6f268581f7fef2662b335077b77107e278",
+      "commit_sha256": "190683941593e4169e63acc1b5a28f6f268581f7fef2662b335077b77107e278",
+      "remote_sha256": "190683941593e4169e63acc1b5a28f6f268581f7fef2662b335077b77107e278",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_DIAG_20260915/verify.py",
+      "bytes": 3300,
+      "local_sha256": "fe5ab6c0841a10293e5a28dfa3ef2e89054c3bab88cfa5aa4c99d2372e11dc1b",
+      "commit_sha256": "fe5ab6c0841a10293e5a28dfa3ef2e89054c3bab88cfa5aa4c99d2372e11dc1b",
+      "remote_sha256": "fe5ab6c0841a10293e5a28dfa3ef2e89054c3bab88cfa5aa4c99d2372e11dc1b",
+      "match": true
+    },
+    {
+      "path": "experiments/DIVISION_DIAG_20260915/verify_remote.py",
+      "bytes": 2541,
+      "local_sha256": "43358acde27e94aee912a70a942fbc184f153b8518a4a04493d9092102bacbca",
+      "commit_sha256": "43358acde27e94aee912a70a942fbc184f153b8518a4a04493d9092102bacbca",
+      "remote_sha256": "43358acde27e94aee912a70a942fbc184f153b8518a4a04493d9092102bacbca",
+      "match": true
+    },
+    {
+      "path": "reports/20260915_分裂训练版差异诊断.md",
+      "bytes": 12637,
+      "local_sha256": "b2bc2d03ec6d40f788d608004693a893be166b717cee9fd64683d6937f66134f",
+      "commit_sha256": "b2bc2d03ec6d40f788d608004693a893be166b717cee9fd64683d6937f66134f",
+      "remote_sha256": "b2bc2d03ec6d40f788d608004693a893be166b717cee9fd64683d6937f66134f",
+      "match": true
+    },
+    {
+      "path": "tasks/CODEX_20260915_DIVISION_DIAG_CONTRACT.json",
+      "bytes": 1532,
+      "local_sha256": "c8ebe474322c18b4e93a8a9ed220863b370a0ff44cb2ee648a4b06116a3d79da",
+      "commit_sha256": "c8ebe474322c18b4e93a8a9ed220863b370a0ff44cb2ee648a4b06116a3d79da",
+      "remote_sha256": "c8ebe474322c18b4e93a8a9ed220863b370a0ff44cb2ee648a4b06116a3d79da",
+      "match": true
+    },
+    {
+      "path": "tasks/CODEX_20260915_DIVISION_DIAG_INSTRUCTION.md",
+      "bytes": 10527,
+      "local_sha256": "065bafca357d16ede20fa69b085715d24c752fc4adb3bc347868acaccbc7eb49",
+      "commit_sha256": "065bafca357d16ede20fa69b085715d24c752fc4adb3bc347868acaccbc7eb49",
+      "remote_sha256": "065bafca357d16ede20fa69b085715d24c752fc4adb3bc347868acaccbc7eb49",
+      "match": true
+    }
+  ],
+  "status": "REMOTE_BYTES_VERIFIED"
+}

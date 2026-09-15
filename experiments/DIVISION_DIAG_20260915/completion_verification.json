@@ -1,0 +1,114 @@
+{
+  "checks": [
+    {
+      "details": {
+        "bytes": 10527,
+        "path": "tasks/CODEX_20260915_DIVISION_DIAG_INSTRUCTION.md",
+        "sha256": "065bafca357d16ede20fa69b085715d24c752fc4adb3bc347868acaccbc7eb49"
+      },
+      "id": "instruction",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "argument_count": 2,
+        "argv_sha256": "82d7cbac38eb5733aaa6cf2bafdd5b1745509e71c8be11f95f2fd942f94b2d68",
+        "cwd": ".",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 3530,
+          "sha256": "5343c08f95872baa941c04f789dff07857040235a6f0a82dde2d5fedeadbd7a9"
+        },
+        "stdout_text_checks": 0
+      },
+      "id": "diagnostic-integrity",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": false,
+            "pointer": "/paired/executed"
+          }
+        ],
+        "path": "experiments/DIVISION_DIAG_20260915/diagnosis.json",
+        "sha256": "d32bb575db68869cbd79529de5d82c05c1fc8eadb2b04b39abe0ec1f93b70616"
+      },
+      "id": "paired-executed",
+      "outcome": "FAIL",
+      "reason": "one or more JSON assertions failed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "bytes": 12637,
+        "path": "reports/20260915_分裂训练版差异诊断.md",
+        "sha256": "b2bc2d03ec6d40f788d608004693a893be166b717cee9fd64683d6937f66134f"
+      },
+      "id": "report",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "branch": "codex/division-diagnosis-20260915",
+        "dirty_entry_count": 0,
+        "head": "5c04c1daa74cc57de43e812c6113ebfe355fe68e",
+        "remote": "origin",
+        "remote_exists": true,
+        "remote_head": "5c04c1daa74cc57de43e812c6113ebfe355fe68e",
+        "remote_url_sha256": "294339ae4bf28ec437260f32bd064c06212de22a7026887c59e47f72ef414b8e",
+        "repository": "."
+      },
+      "id": "github",
+      "outcome": "PASS",
+      "reason": "Git evidence passed",
+      "required": true,
+      "type": "git"
+    }
+  ],
+  "claimed_at": "2026-09-15T12:15:22+08:00",
+  "claimed_status": "CLAIMED_COMPLETE",
+  "contract_path": "tasks/CODEX_20260915_DIVISION_DIAG_CONTRACT.json",
+  "contract_sha256": "c8ebe474322c18b4e93a8a9ed220863b370a0ff44cb2ee648a4b06116a3d79da",
+  "final_status": "BLOCKED",
+  "finished_at": "2026-09-15T12:15:36+08:00",
+  "integrity_scope": "local-sha256-only",
+  "limitations": [
+    "The conclusion is limited to the frozen contract and the implemented checks.",
+    "The verifier does not prove omitted requirements or future stability.",
+    "A local or Git hash is not a trusted signature against a malicious writer."
+  ],
+  "optional_warning_check_ids": [],
+  "reason": "one or more required checks failed or were blocked",
+  "required_summary": {
+    "failed_or_blocked": 1,
+    "human_review": 0,
+    "passed": 4
+  },
+  "run_id": "20260915T121534+0800-09ab3156",
+  "schema_version": "1.0",
+  "started_at": "2026-09-15T12:15:34+08:00",
+  "task_id": "DIVISION_DIAG_20260915"
+}

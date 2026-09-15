@@ -191,5 +191,12 @@
     "submissions": 0,
     "selection_changes": 0
   },
-  "github_delivery": "PENDING_SEPARATE_FIXED_COMMIT_READBACK"
+  "github_delivery": {
+    "content_status": "REMOTE_BYTES_VERIFIED",
+    "content_commit": "5c04c1daa74cc57de43e812c6113ebfe355fe68e",
+    "matched": 26,
+    "total": 26,
+    "receipt": "delivery_readback.json",
+    "final_commit_readback": "downloads/DIVISION_DIAG_20260915/final_readback.json; reported separately after final push"
+  }
 }
