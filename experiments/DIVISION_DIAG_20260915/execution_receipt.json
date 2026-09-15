@@ -35,5 +35,13 @@
     "reason": "Source-derived diff contained trailing whitespace from original Notebook",
     "resolution": "Trim display diff line endings only; original Notebook unchanged and raw source hashes retained",
     "commit_or_push_occurred_on_failed_attempt": false
+  },
+  "verification_path_issue": {
+    "failed_check": "historical-files-preserved",
+    "cause": "Git quoted Chinese filename; allowlist compared escaped output to Unicode path",
+    "repair": "Set core.quotepath=false for read-only path check; no scope/gate changes",
+    "initial_verification_preserved": "verification_path_quoting_failure.json",
+    "first_content_commit": "462b20c",
+    "note": "Initial content push includes failing diagnostic verifier receipt; corrected in follow-up task-only commit before completion verification."
   }
 }

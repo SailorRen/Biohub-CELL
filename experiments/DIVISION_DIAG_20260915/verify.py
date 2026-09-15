@@ -31,7 +31,7 @@ for name in ['diagnose.py','collect_existing.py']:
  bad=[f for f in calls if isinstance(f,ast.Name) and f.id in ['exec','eval','fit','train_from_mount'] or isinstance(f,ast.Attribute) and f.attr in ['fit','minimize','save_kernel','create_submission','train_from_mount']]
  check('no-training-or-notebook-execution:'+name,not bad)
 check('weights-ignored',subprocess.run(['git','check-ignore','-q',str(w)],cwd=R).returncode==0)
-changed=subprocess.check_output(['git','diff','--name-only','a123f0ad7f8808b44909d4c5fab48caf5147b50c'],cwd=R,text=True).splitlines()
+changed=subprocess.check_output(['git','-c','core.quotepath=false','diff','--name-only','a123f0ad7f8808b44909d4c5fab48caf5147b50c'],cwd=R,text=True).splitlines()
 allowed=lambda p:p.startswith('experiments/DIVISION_DIAG_20260915/') or p in ['tasks/CODEX_20260915_DIVISION_DIAG_INSTRUCTION.md','tasks/CODEX_20260915_DIVISION_DIAG_CONTRACT.json','reports/20260915_分裂训练版差异诊断.md']
 check('historical-files-preserved',all(map(allowed,changed)))
 print(json.dumps({'status':'EVIDENCE_CHECKS_PASS_PAIRED_BLOCKED' if all(x['pass'] for x in checks) else 'FAIL','passed':sum(x['pass'] for x in checks),'total':len(checks),'checks':checks},ensure_ascii=False,indent=2))

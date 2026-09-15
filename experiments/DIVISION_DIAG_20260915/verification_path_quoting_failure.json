@@ -1,6 +1,6 @@
 {
-  "status": "EVIDENCE_CHECKS_PASS_PAIRED_BLOCKED",
-  "passed": 38,
+  "status": "FAIL",
+  "passed": 37,
   "total": 38,
   "checks": [
     {
@@ -153,7 +153,7 @@
     },
     {
       "id": "historical-files-preserved",
-      "pass": true
+      "pass": false
     }
   ]
 }
