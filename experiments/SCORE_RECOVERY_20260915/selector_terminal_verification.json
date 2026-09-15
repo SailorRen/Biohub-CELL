@@ -1,0 +1,68 @@
+{
+  "task_id": "TARGET950_RUN_20260914",
+  "status": "PASS",
+  "passed": 15,
+  "total": 15,
+  "checks": [
+    {
+      "id": "exact-task",
+      "passed": true
+    },
+    {
+      "id": "one-save-one-submit",
+      "passed": true
+    },
+    {
+      "id": "single-send-transport",
+      "passed": true
+    },
+    {
+      "id": "writes-bound-to-source",
+      "passed": true
+    },
+    {
+      "id": "ordinal-version-one",
+      "passed": true
+    },
+    {
+      "id": "fixed-version-inputs",
+      "passed": true
+    },
+    {
+      "id": "ordinary-verified",
+      "passed": true
+    },
+    {
+      "id": "actual-output-receipt",
+      "passed": true
+    },
+    {
+      "id": "formal-id-score-chain",
+      "passed": true
+    },
+    {
+      "id": "formal-description-exact",
+      "passed": true
+    },
+    {
+      "id": "baseline-live-comparable",
+      "passed": true
+    },
+    {
+      "id": "finite-formal-score",
+      "passed": true
+    },
+    {
+      "id": "decimal-deltas",
+      "passed": true
+    },
+    {
+      "id": "target-only-from-formal",
+      "passed": true
+    },
+    {
+      "id": "no-training",
+      "passed": true
+    }
+  ]
+}

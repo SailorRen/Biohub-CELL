@@ -1,0 +1,60 @@
+{
+  "task_id": "SCORE_RECOVERY_20260915",
+  "status": "FORMAL_SCORES_VERIFIED",
+  "observed_at_utc": "2026-09-15T01:28:11.620041+00:00",
+  "recorded_at_utc": "2026-09-15T01:33:38.344910+00:00",
+  "fact_class": "MEASURED",
+  "source_snapshot": "experiments/TARGET950_RUN_20260914/canonical_read_20260915T012819Z.json",
+  "source_snapshot_sha256": "18f351e74513ee6bc767f2c763ee10de2d85884c147cb84788dd7a364089a173",
+  "submissions_complete": true,
+  "division": {
+    "id": 56226396,
+    "date_utc": "2026-09-14 08:30:01.713000",
+    "description": "DIVISION_TRAIN_20260914 | V1 | SV349707105 | SHA256 35ec0b376b94843722ac9e8107a0929ccf9a49f94d7bbac99b3093c4618ee123",
+    "status": "COMPLETE",
+    "public_score": "0.945",
+    "private_score": null,
+    "error_description": ""
+  },
+  "baseline": {
+    "id": 56160258,
+    "date_utc": "2026-09-11 06:32:14.947000",
+    "description": "Notebook Biohub Lineage Forge — Precision Tracking | Version 1",
+    "status": "COMPLETE",
+    "public_score": "0.947",
+    "private_score": null,
+    "error_description": ""
+  },
+  "selector": {
+    "id": 56222238,
+    "date_utc": "2026-09-14 05:13:21.670000",
+    "description": "TARGET950_RUN_20260914 | V1 | SV349666428 | SHA256 cdefc823f59d0490e2ced01959e026ebfdd5c4b6f41d74ccb1c7bac4f61a6230",
+    "status": "COMPLETE",
+    "public_score": "0.947",
+    "private_score": null,
+    "error_description": ""
+  },
+  "division_version": 1,
+  "division_script_version_id": 349707105,
+  "division_kernel_id": 134301327,
+  "division_delta_vs_baseline": "-0.002",
+  "division_delta_vs_selector": "-0.002",
+  "division_gap_to_0950": "0.005",
+  "selector_delta_vs_baseline": "0.000",
+  "improvement_observed": false,
+  "target_0950_achieved": false,
+  "training_runtime_evidence": "UNKNOWN",
+  "training_runtime_evidence_note": "本地未找到此独立Notebook的训练日志或提交前源码归档。源码将另行审查，不能单凭Train标题证明训练实际发生。",
+  "description_hash_scheme": "UNKNOWN",
+  "new_kaggle_write_requests": 0,
+  "new_training_requests": 0,
+  "final_selection_changes": 0,
+  "baseline_retained": true,
+  "previous_cutoff_evidence_preserved": true,
+  "evidence_sha256": {
+    "experiments/SCORE_RECOVERY_20260915/ui_score_receipt.json": "5e1d52fb3aaa4dae67a24f8dc27bff1c82ac565c63bad57d5a84395334aae5ea",
+    "experiments/SCORE_RECOVERY_20260915/division_source_receipt.json": "88b72ff8d5036a0a795e216d86a237d5332642b179813f534382e5936569037a",
+    "experiments/SCORE_RECOVERY_20260915/division_remote_source.ipynb": "53f50c62047b0c8e1e80ca2969acbdaac37b9ad443e8efa4c7275a38145f7ae5",
+    "experiments/TARGET950_RUN_20260914/formal_terminal_receipt.json": "a1b4201bf7538849df13fdd1da94e7bee481e168447cd84d418696f983245a6b"
+  }
+}

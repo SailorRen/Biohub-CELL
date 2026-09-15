@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "task_id": "SCORE_RECOVERY_20260915",
+  "goal": "只读核验新训练版正式成绩及与0.947基线的差值，区分同期Official Selector结果，保存可审计证据并同步GitHub。",
+  "scope": {
+    "user_report": "新提交的notebook的得分是0.945",
+    "division_submission_id": 56226396,
+    "division_version": 1,
+    "division_script_version_id": 349707105,
+    "selector_submission_id": 56222238,
+    "baseline_submission_id": 56160258,
+    "kaggle_write_budget": 0,
+    "training_budget": 0,
+    "preserve_prior_cutoff_evidence": true,
+    "final_selection_changes": 0
+  },
+  "acceptance": [
+    {
+      "id": "formal-identity-and-deltas",
+      "type": "command",
+      "argv": [
+        "python3",
+        "experiments/SCORE_RECOVERY_20260915/verify.py"
+      ],
+      "cwd": ".",
+      "timeout_seconds": 120,
+      "expected_exit": 0
+    },
+    {
+      "id": "independent-review",
+      "type": "json",
+      "path": "experiments/SCORE_RECOVERY_20260915/independent_review.json",
+      "assertions": [
+        {
+          "pointer": "/status",
+          "op": "equals",
+          "value": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "report",
+      "type": "file",
+      "path": "reports/20260915_训练版正式评分核验.md",
+      "min_bytes": 1200,
+      "contains_all": [
+        "0.945",
+        "0.947",
+        "0.002",
+        "UNKNOWN",
+        "GitHub"
+      ]
+    },
+    {
+      "id": "git-delivery",
+      "type": "git",
+      "repository": ".",
+      "require_commit": true,
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true,
+      "remote": "origin"
+    }
+  ]
+}

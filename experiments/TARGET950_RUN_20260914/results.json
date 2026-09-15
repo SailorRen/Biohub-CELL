@@ -8,7 +8,7 @@
   "ordinary": {
     "status": "COMPLETE",
     "verified": true,
-    "observed_at_utc": "2026-09-14T08:13:51.712973+00:00",
+    "observed_at_utc": "2026-09-15T01:28:11.620041+00:00",
     "requested_at_utc": "2026-09-14T03:10:10.354682+00:00"
   },
   "remote_binding": {
@@ -31,15 +31,15 @@
   },
   "submission": {
     "id": 56222238,
-    "status": "PENDING",
-    "public_score": null,
+    "status": "COMPLETE",
+    "public_score": "0.947",
     "private_score": null,
-    "score_verified": false,
+    "score_verified": true,
     "description": "TARGET950_RUN_20260914 | V1 | SV349666428 | SHA256 cdefc823f59d0490e2ced01959e026ebfdd5c4b6f41d74ccb1c7bac4f61a6230",
     "requested_at_utc": "2026-09-14T05:13:20.253359+00:00",
     "date_utc": "2026-09-14 05:13:21.670000",
     "error_description": "",
-    "observed_at_utc": "2026-09-14T08:13:51.712973+00:00"
+    "observed_at_utc": "2026-09-15T01:28:11.620041+00:00"
   },
   "target_0950_achieved": false,
   "training_executed": false,
@@ -54,15 +54,15 @@
     "error_description": ""
   },
   "current_own_best": {
-    "id": 56160258,
-    "date_utc": "2026-09-11 06:32:14.947000",
-    "description": "Notebook Biohub Lineage Forge — Precision Tracking | Version 1",
+    "id": 56222238,
+    "date_utc": "2026-09-14 05:13:21.670000",
+    "description": "TARGET950_RUN_20260914 | V1 | SV349666428 | SHA256 cdefc823f59d0490e2ced01959e026ebfdd5c4b6f41d74ccb1c7bac4f61a6230",
     "status": "COMPLETE",
     "public_score": "0.947",
     "private_score": null,
     "error_description": ""
   },
-  "updated_at_utc": "2026-09-14T08:13:57.538658+00:00",
+  "updated_at_utc": "2026-09-15T01:33:07.560519+00:00",
   "canonical_ref": "sailorren/biohub-0-947-official-selector-20260914",
   "actual_postprocess": {
     "selected_label": "tight55",
@@ -107,5 +107,7 @@
     "observation_deadline_utc": "2026-09-14T08:13:20.253359+00:00",
     "formal_terminal_obtained": false,
     "target_0950_status": "UNKNOWN_NO_FORMAL_SCORE"
-  }
+  },
+  "delta_vs_baseline": "0.000",
+  "delta_vs_own_best_before": "0.000"
 }

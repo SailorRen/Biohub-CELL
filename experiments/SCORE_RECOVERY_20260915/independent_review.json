@@ -1,0 +1,119 @@
+{
+  "task_id": "SCORE_RECOVERY_20260915",
+  "status": "PASS",
+  "reviewer": "independent agent /root/score_recovery_review",
+  "reviewed_at_utc": "2026-09-15T01:37:10.417070+00:00",
+  "scope": "仅审查已保存完整 API 快照及 UI 回执的正式提交身份、状态、Public 分数、Decimal 差值、源码证据边界和历史文件保护。不是训练全过程、算法因果收益或 GitHub 交付验收。",
+  "method": "独立重新读取全部 17 行正式提交 API 快照；核对 UI 固定 ScriptVersionId 链接；核对全部引用文件 SHA256 与 15 个代码单元哈希；实际运行本地 verify.py；将四份历史证据与固定 Git 提交原始字节比较。无网络请求。",
+  "source_observed_at_utc": "2026-09-15T01:28:11.620041+00:00",
+  "formal_findings": {
+    "division": {
+      "submission_id": 56226396,
+      "kernel_id": 134301327,
+      "version": 1,
+      "script_version_id": 349707105,
+      "status": "COMPLETE",
+      "public_score": "0.945",
+      "delta_vs_baseline": "-0.002",
+      "delta_vs_selector": "-0.002",
+      "gap_to_0950": "0.005"
+    },
+    "selector": {
+      "submission_id": 56222238,
+      "kernel_id": 134280472,
+      "version": 1,
+      "script_version_id": 349666428,
+      "status": "COMPLETE",
+      "public_score": "0.947",
+      "delta_vs_baseline": "0.000"
+    },
+    "baseline": {
+      "submission_id": 56160258,
+      "status": "COMPLETE",
+      "public_score": "0.947"
+    },
+    "improvement_observed": false,
+    "target_0950_achieved": false,
+    "private_scores": null,
+    "conclusion": "训练版公开分下降 0.002，Official Selector 持平；没有正式提分，也未达到 0.950。这里的“训练版”是提交对象名称，不证明实际训练全过程。"
+  },
+  "local_verifier": {
+    "argv": [
+      "python3",
+      "experiments/SCORE_RECOVERY_20260915/verify.py"
+    ],
+    "executed": true,
+    "exit_code": 0,
+    "status": "PASS",
+    "passed": 21,
+    "total": 21,
+    "source_sha256": "cb28d52df1f9b5bd8d576ac953123b57246fa273841d50143cd59e6e0869997c"
+  },
+  "source_boundary": {
+    "current_version": 1,
+    "current_source_sha256": "53f50c62047b0c8e1e80ca2969acbdaac37b9ad443e8efa4c7275a38145f7ae5",
+    "code_cells_hashed": 15,
+    "all_code_cell_hashes_match_receipt": true,
+    "submission_description_sha256": "35ec0b376b94843722ac9e8107a0929ccf9a49f94d7bbac99b3093c4618ee123",
+    "description_hash_scheme": "UNKNOWN",
+    "description_hash_match_to_current_or_prior_sdk_serialization": "NOT_VERIFIED",
+    "training_runtime_evidence": "UNKNOWN",
+    "training_evidence_note": "当前取得的源码 15 个代码单元 execution_count 均为空、outputs 均为空。静态源码、Notebook 名称以及正式 COMPLETE 都不能代替训练日志和训练产物血缘；也不能据此断言训练没有发生。",
+    "formal_hidden_postprocess": "UNKNOWN"
+  },
+  "protected_history": [
+    {
+      "path": "experiments/TARGET950_RUN_20260914/write_ledger.json",
+      "historical_commit": "31a19c3ae3a1bd94659f7c3394d073c48807af26",
+      "byte_equal": true,
+      "sha256": "aecf09f5e8092d1ab9cd8883e37c9d02688644d5f7c9e99c6a0a6b520d9f41ee"
+    },
+    {
+      "path": "experiments/TARGET950_RUN_20260914/formal_observation_closeout.json",
+      "historical_commit": "31a19c3ae3a1bd94659f7c3394d073c48807af26",
+      "byte_equal": true,
+      "sha256": "f20fe369b5528c2a3ef6e41ccc6508dd349cf6192d5f20abaf0c27b96a2326b3"
+    },
+    {
+      "path": "experiments/TARGET950_RUN_20260914/independent_review.json",
+      "historical_commit": "31a19c3ae3a1bd94659f7c3394d073c48807af26",
+      "byte_equal": true,
+      "sha256": "1882e1d105f0de23d146f7e55351e74fbf9c7b1a763adda8ed056b1839a842b9"
+    },
+    {
+      "path": "experiments/TARGET950_RUN_20260914/cutoff_machine_verification.json",
+      "historical_commit": "31a19c3ae3a1bd94659f7c3394d073c48807af26",
+      "byte_equal": true,
+      "sha256": "efedb8e6d4b28430e1682b95ec876c55e028163fc0c099ff8aa7e4cd185193ce"
+    }
+  ],
+  "recorded_task_write_budget": {
+    "kaggle_write_requests": 0,
+    "new_training_requests": 0,
+    "final_selection_changes": 0
+  },
+  "reviewer_actions": {
+    "network_requests": 0,
+    "platform_write_requests": 0,
+    "git_mutations": 0,
+    "files_written": [
+      "experiments/SCORE_RECOVERY_20260915/independent_review.json"
+    ]
+  },
+  "limitations": [
+    "本审查重新核对主代理保存的官方 API 和 UI 证据，没有独立发起第二次网络读取。",
+    "只能判断此次正式 Public 分数差异，不能由单次结果认定泛化能力或下降的因果机制。",
+    "新训练 Notebook 的提交前精确源码归档、描述哈希计算口径及实际训练日志未闭合，保持 UNKNOWN。",
+    "当前审查不核验 GitHub push、远端提交或远端文件字节；GitHub 交付由主代理另行验收。"
+  ],
+  "input_sha256": {
+    "tasks/CODEX_20260915_BIOHUB_SCORE_RECOVERY_CONTRACT.json": "5f3e4e0287a61d312b785e6b8d1e15feef1558f6d324b9b43be31c96cf61a73f",
+    "experiments/SCORE_RECOVERY_20260915/formal_results.json": "4f7d7805ba2c6d14fdbe190bd06801ad3c04388b8b8a1f3f8b4dd94b866f38bd",
+    "experiments/SCORE_RECOVERY_20260915/ui_score_receipt.json": "5e1d52fb3aaa4dae67a24f8dc27bff1c82ac565c63bad57d5a84395334aae5ea",
+    "experiments/SCORE_RECOVERY_20260915/division_source_receipt.json": "88b72ff8d5036a0a795e216d86a237d5332642b179813f534382e5936569037a",
+    "experiments/SCORE_RECOVERY_20260915/division_remote_source.ipynb": "53f50c62047b0c8e1e80ca2969acbdaac37b9ad443e8efa4c7275a38145f7ae5",
+    "experiments/SCORE_RECOVERY_20260915/verify.py": "cb28d52df1f9b5bd8d576ac953123b57246fa273841d50143cd59e6e0869997c",
+    "experiments/TARGET950_RUN_20260914/canonical_read_20260915T012819Z.json": "18f351e74513ee6bc767f2c763ee10de2d85884c147cb84788dd7a364089a173",
+    "experiments/TARGET950_RUN_20260914/formal_terminal_receipt.json": "a1b4201bf7538849df13fdd1da94e7bee481e168447cd84d418696f983245a6b"
+  }
+}

@@ -1,0 +1,475 @@
+{
+  "task_id": "SCORE_RECOVERY_20260915",
+  "reviewer": "division_score_context",
+  "observed_at_utc": "2026-09-15T01:36:03.560111+00:00",
+  "classification": "SOURCE_CODE_VERIFIED",
+  "status": "FULL_NOTEBOOK_SOURCE_STATIC_REVIEWED",
+  "scope": "静态源代码读取、全部代码单元AST与逐字对比；没有执行Notebook、训练或推理",
+  "source": {
+    "path": "experiments/SCORE_RECOVERY_20260915/division_remote_source.ipynb",
+    "raw_sha256": "53f50c62047b0c8e1e80ca2969acbdaac37b9ad443e8efa4c7275a38145f7ae5",
+    "code_cells": 15,
+    "reviewed_code_cells": 15,
+    "all_cells_are_code": true,
+    "all_cells_have_no_outputs": true,
+    "embedded_division_module_sha256": "fdeb80eea2c462e84b9e89b07ca14e57bdf6e8ab679c9a0c42df50edebcddb2c",
+    "embedded_division_module_functions": [
+      {
+        "name": "digest",
+        "line_start": 27,
+        "line_end": 28
+      },
+      {
+        "name": "point",
+        "line_start": 31,
+        "line_end": 32
+      },
+      {
+        "name": "pair_features",
+        "line_start": 35,
+        "line_end": 49
+      },
+      {
+        "name": "maps",
+        "line_start": 52,
+        "line_end": 62
+      },
+      {
+        "name": "context",
+        "line_start": 65,
+        "line_end": 74
+      },
+      {
+        "name": "labeled_pairs",
+        "line_start": 77,
+        "line_end": 113
+      },
+      {
+        "name": "design",
+        "line_start": 116,
+        "line_end": 118
+      },
+      {
+        "name": "fit",
+        "line_start": 121,
+        "line_end": 146
+      },
+      {
+        "name": "predict",
+        "line_start": 149,
+        "line_end": 150
+      },
+      {
+        "name": "binary_metrics",
+        "line_start": 153,
+        "line_end": 157
+      },
+      {
+        "name": "train_from_mount",
+        "line_start": 160,
+        "line_end": 207
+      },
+      {
+        "name": "runtime_pair_score",
+        "line_start": 210,
+        "line_end": 222
+      }
+    ]
+  },
+  "predecessors": {
+    "target950_path": "experiments/TARGET950_20260914/candidate.ipynb",
+    "target950_local_raw_sha256": "c38460def079f45749a8a3d85d6549dada0ec0343e2eed66bee3c7c40db4ae43",
+    "identical_code_cells": 12,
+    "new_division_cells_0based": [
+      4,
+      14
+    ],
+    "changed_existing_cell": {
+      "division": 6,
+      "target950": 5
+    },
+    "own_forge_path": "experiments/TARGET950_20260914/baseline/candidate.ipynb",
+    "own_forge_raw_sha256": "bb6dbf2766fff1b4f7d1c96f3c1145c700d4d44e4695d924c7be8ccbe1b07af7",
+    "baseline_submission_id": 56160258,
+    "baseline_script_version_id": 348960877,
+    "own_forge_existing_audit": "experiments/TARGET950_20260914/baseline_source_audit.json"
+  },
+  "cells": [
+    {
+      "cell_index_0based": 0,
+      "code_lines": 69,
+      "source_sha256": "545339ff52ac4315bffaf1131fcf769bb1a260ca523e988f19af9432979fc4bd",
+      "ast_parse_pass": true,
+      "coverage": "FULL_SOURCE_BYTES_AST_AND_EXACT_PREDECESSOR_COMPARISON; new and changed logic reviewed in full",
+      "equal_target950_cell_indices": [
+        0
+      ],
+      "equal_own_forge_cell_indices": [
+        0
+      ],
+      "topic": "冻结参数及DeepCenter TTA配置",
+      "embedded_outputs": 0,
+      "top_level_functions": []
+    },
+    {
+      "cell_index_0based": 1,
+      "code_lines": 43,
+      "source_sha256": "99198956a4c7725d85c6aab0d478368749824801716c6d39cf5bf915187ac500",
+      "ast_parse_pass": true,
+      "coverage": "FULL_SOURCE_BYTES_AST_AND_EXACT_PREDECESSOR_COMPARISON; new and changed logic reviewed in full",
+      "equal_target950_cell_indices": [
+        1
+      ],
+      "equal_own_forge_cell_indices": [
+        1
+      ],
+      "topic": "配置guard（部分旧打印说明不可当实际状态）",
+      "embedded_outputs": 0,
+      "top_level_functions": []
+    },
+    {
+      "cell_index_0based": 2,
+      "code_lines": 238,
+      "source_sha256": "77fdadffbd02c87e8f686e55944b6741312be552f34c8dc615e6391a1959a2dc",
+      "ast_parse_pass": true,
+      "coverage": "FULL_SOURCE_BYTES_AST_AND_EXACT_PREDECESSOR_COMPARISON; new and changed logic reviewed in full",
+      "equal_target950_cell_indices": [
+        2
+      ],
+      "equal_own_forge_cell_indices": [
+        2
+      ],
+      "topic": "比赛路径、完整后处理默认配置",
+      "embedded_outputs": 0,
+      "top_level_functions": []
+    },
+    {
+      "cell_index_0based": 3,
+      "code_lines": 682,
+      "source_sha256": "0f62c46bbec00a2d3d6bbde0efb89d5713204983d51c9c3cf73df1869cf12f8f",
+      "ast_parse_pass": true,
+      "coverage": "FULL_SOURCE_BYTES_AST_AND_EXACT_PREDECESSOR_COMPARISON; new and changed logic reviewed in full",
+      "equal_target950_cell_indices": [
+        3
+      ],
+      "equal_own_forge_cell_indices": [
+        3
+      ],
+      "topic": "离线依赖、预训练模型与输入文件校验",
+      "embedded_outputs": 0,
+      "top_level_functions": [
+        "module_missing",
+        "has_model_artifact",
+        "artifact_manifest",
+        "artifact_matches_target",
+        "candidate_roots_for_slug",
+        "find_artifacts_root",
+        "_has_package_file",
+        "find_offline_package_dirs",
+        "purge_imported_modules",
+        "polars_runtime_ready",
+        "packages_requiring_refresh",
+        "dependency_specs_for",
+        "import_failures",
+        "missing_names_from_failures",
+        "install_missing_dependencies",
+        "ensure_dependencies",
+        "remove_path",
+        "copy_or_extract_tree",
+        "link_or_copy_tree",
+        "materialize_inference_repo",
+        "_integrity_sha256_file",
+        "_find_secondary_artifact_root",
+        "_sha256_file"
+      ]
+    },
+    {
+      "cell_index_0based": 4,
+      "code_lines": 12,
+      "source_sha256": "6a424896f7ccde74f9bc155fef64dc9cd243a627ff9c24e297b15d9eff593f3c",
+      "ast_parse_pass": true,
+      "coverage": "FULL_SOURCE_BYTES_AST_AND_EXACT_PREDECESSOR_COMPARISON; new and changed logic reviewed in full",
+      "equal_target950_cell_indices": [],
+      "equal_own_forge_cell_indices": [],
+      "topic": "新增几何分裂分类器完整训练与模型载入",
+      "embedded_outputs": 0,
+      "top_level_functions": [
+        "_division_read_graph"
+      ]
+    },
+    {
+      "cell_index_0based": 5,
+      "code_lines": 460,
+      "source_sha256": "768bd13fbf10d26731819e0d19f79c11d5a1d0fad7065ec5f5f66c2c5fc3187c",
+      "ast_parse_pass": true,
+      "coverage": "FULL_SOURCE_BYTES_AST_AND_EXACT_PREDECESSOR_COMPARISON; new and changed logic reviewed in full",
+      "equal_target950_cell_indices": [
+        4
+      ],
+      "equal_own_forge_cell_indices": [
+        4
+      ],
+      "topic": "未变的主次模型动态补丁、TTA与测试推理",
+      "embedded_outputs": 0,
+      "top_level_functions": [
+        "list_test_stems",
+        "_visible_cuda_tokens",
+        "_prediction_dir_for_method",
+        "_wait_for_prediction_shards",
+        "_merge_prediction_shards"
+      ]
+    },
+    {
+      "cell_index_0based": 6,
+      "code_lines": 1697,
+      "source_sha256": "13fce1b0897b3cdf918d6b762386e1371839c53838c74d1924cf61685c003525",
+      "ast_parse_pass": true,
+      "coverage": "FULL_SOURCE_BYTES_AST_AND_EXACT_PREDECESSOR_COMPARISON; new and changed logic reviewed in full",
+      "equal_target950_cell_indices": [],
+      "equal_own_forge_cell_indices": [],
+      "topic": "safe-div规则替换为学习门；其他后处理不变",
+      "embedded_outputs": 0,
+      "top_level_functions": [
+        "graph_from_geff",
+        "edge_distance_um",
+        "point_distance_um",
+        "node_point",
+        "edge_sort_key",
+        "_next_node_id",
+        "read_test_frame",
+        "refine_synthetic_midpoint",
+        "_dc_pool_frame_xy",
+        "_dc_normalize_dynamic_range",
+        "_dc_manifest_weight_paths",
+        "_dc_checkpoint_candidates",
+        "load_deepcenter_veto_detector",
+        "_dc_cache_trim",
+        "deepcenter_heatmap_for_frame",
+        "deepcenter_score_point",
+        "deepcenter_accept_repair_point",
+        "_position_um",
+        "motion_relink_edges",
+        "close_single_frame_gaps",
+        "_single_successor_map",
+        "_single_predecessor_map",
+        "recover_strict_gap2",
+        "add_safe_divisions_postlink",
+        "filter_short_track_components",
+        "linefit_smooth_output_graph",
+        "filter_output_graph",
+        "write_test_submission"
+      ]
+    },
+    {
+      "cell_index_0based": 7,
+      "code_lines": 178,
+      "source_sha256": "c300805e0268602d76042dd271bcc3224fda6af2a52569e16bebc446701d66a5",
+      "ast_parse_pass": true,
+      "coverage": "FULL_SOURCE_BYTES_AST_AND_EXACT_PREDECESSOR_COMPARISON; new and changed logic reviewed in full",
+      "equal_target950_cell_indices": [
+        6
+      ],
+      "equal_own_forge_cell_indices": [
+        6
+      ],
+      "topic": "初次输出结构和运行完整性检查",
+      "embedded_outputs": 0,
+      "top_level_functions": []
+    },
+    {
+      "cell_index_0based": 8,
+      "code_lines": 178,
+      "source_sha256": "7400441b355cbe09311e9c638c44264e374ad448d9ab1020b9d5866746e84ee7",
+      "ast_parse_pass": true,
+      "coverage": "FULL_SOURCE_BYTES_AST_AND_EXACT_PREDECESSOR_COMPARISON; new and changed logic reviewed in full",
+      "equal_target950_cell_indices": [
+        7
+      ],
+      "equal_own_forge_cell_indices": [
+        7
+      ],
+      "topic": "未变的验证样本选择及验证推理",
+      "embedded_outputs": 0,
+      "top_level_functions": [
+        "_merge_validator_shards"
+      ]
+    },
+    {
+      "cell_index_0based": 9,
+      "code_lines": 556,
+      "source_sha256": "87eb743013ca8681126299d0adc445d523ae017e727fe700ae3ce2ee0c1b3603",
+      "ast_parse_pass": true,
+      "coverage": "FULL_SOURCE_BYTES_AST_AND_EXACT_PREDECESSOR_COMPARISON; new and changed logic reviewed in full",
+      "equal_target950_cell_indices": [
+        8
+      ],
+      "equal_own_forge_cell_indices": [],
+      "topic": "原TARGET950固定官方评分适配器",
+      "embedded_outputs": 0,
+      "top_level_functions": [
+        "match_nodes_bipartite",
+        "compute_edge_confusion",
+        "edge_jaccard",
+        "adjusted_jaccard",
+        "weakly_connected_components",
+        "compute_division_confusion",
+        "decompose_errors",
+        "_find_key_recursive",
+        "read_estimated_true_node_count",
+        "graph_to_plain",
+        "nodes_by_id_to_plain",
+        "score_sample",
+        "aggregate_official",
+        "install_official_selector"
+      ]
+    },
+    {
+      "cell_index_0based": 10,
+      "code_lines": 146,
+      "source_sha256": "3986eaba6600507225a7140c033c14ae039a4fa95b3602806b43a8f2f11d90a0",
+      "ast_parse_pass": true,
+      "coverage": "FULL_SOURCE_BYTES_AST_AND_EXACT_PREDECESSOR_COMPARISON; new and changed logic reviewed in full",
+      "equal_target950_cell_indices": [
+        9
+      ],
+      "equal_own_forge_cell_indices": [
+        9
+      ],
+      "topic": "验证图缓存与后处理评分",
+      "embedded_outputs": 0,
+      "top_level_functions": [
+        "pp_apply",
+        "pp_restore",
+        "score_validator_config"
+      ]
+    },
+    {
+      "cell_index_0based": 11,
+      "code_lines": 126,
+      "source_sha256": "ece3664cf924f36f3b838bac34fa636e67a5c865e6bf21ab61ff086bd1f87dfb",
+      "ast_parse_pass": true,
+      "coverage": "FULL_SOURCE_BYTES_AST_AND_EXACT_PREDECESSOR_COMPARISON; new and changed logic reviewed in full",
+      "equal_target950_cell_indices": [
+        10
+      ],
+      "equal_own_forge_cell_indices": [
+        10
+      ],
+      "topic": "未变的七候选、条件组合和margin选择",
+      "embedded_outputs": 0,
+      "top_level_functions": []
+    },
+    {
+      "cell_index_0based": 12,
+      "code_lines": 44,
+      "source_sha256": "1b69f438acf6f21117acb50f1b42816a5da627c4dcec80b8e76372ef11793f15",
+      "ast_parse_pass": true,
+      "coverage": "FULL_SOURCE_BYTES_AST_AND_EXACT_PREDECESSOR_COMPARISON; new and changed logic reviewed in full",
+      "equal_target950_cell_indices": [
+        11
+      ],
+      "equal_own_forge_cell_indices": [
+        11
+      ],
+      "topic": "最终环境与模型加载状态打印",
+      "embedded_outputs": 0,
+      "top_level_functions": []
+    },
+    {
+      "cell_index_0based": 13,
+      "code_lines": 91,
+      "source_sha256": "b7b2f1de006a9f151128c85695881c7d85fb0a14669fe7a3876751061843aaad",
+      "ast_parse_pass": true,
+      "coverage": "FULL_SOURCE_BYTES_AST_AND_EXACT_PREDECESSOR_COMPARISON; new and changed logic reviewed in full",
+      "equal_target950_cell_indices": [
+        12
+      ],
+      "equal_own_forge_cell_indices": [],
+      "topic": "原TARGET950同图官方/proxy小型审计",
+      "embedded_outputs": 0,
+      "top_level_functions": [
+        "_audit_clean"
+      ]
+    },
+    {
+      "cell_index_0based": 14,
+      "code_lines": 18,
+      "source_sha256": "1d41044a4a53fff5ebce19d852c098d0c65aa9a20e20317a599b6d7869c7aab5",
+      "ast_parse_pass": true,
+      "coverage": "FULL_SOURCE_BYTES_AST_AND_EXACT_PREDECESSOR_COMPARISON; new and changed logic reviewed in full",
+      "equal_target950_cell_indices": [],
+      "equal_own_forge_cell_indices": [],
+      "topic": "新增训练模型运行计数、权重与提交哈希审计",
+      "embedded_outputs": 0,
+      "top_level_functions": []
+    }
+  ],
+  "method": {
+    "model": "L2逻辑回归；10个标准化几何/运动特征及各自平方项加截距，共21系数",
+    "features": [
+      "父到女儿较小距离",
+      "父到女儿较大距离",
+      "姐妹距离",
+      "姐妹中点到父距离",
+      "父女距离相对不对称度",
+      "两女儿方向夹角余弦",
+      "孙女间距",
+      "姐妹至孙女间距变化",
+      "两女儿速度均值",
+      "两女儿速度差绝对值"
+    ],
+    "source_reference": "cell4 DIVISION_SOURCE lines35-49,116-146",
+    "optimizer": "scipy.optimize.minimize L-BFGS-B, maxiter250, ridge0.003, seed20260914",
+    "augmentation": "只在当前训练分区内原始坐标加3份独立0.35µm高斯扰动，合计4倍",
+    "normalization": "由训练分区增强样本计算mean/std，scale下限0.1；标准化后clip[-8,8]",
+    "class_weighting": "正负类各贡献0.5权重总和",
+    "threshold": 0.95,
+    "labels": "正例为有明确标注父节点且两女儿各有t+2单后继的分裂；负例的候选女儿必须明确属于另一标注父节点，不把未标注当负例；每已知女儿最多4个局部负例",
+    "negative_scope": "候选离拟议父节点10µm以内，姐妹距离14µm以内",
+    "split": "按GEFF文件stem的下划线前缀作为胚胎组，留一组训练模型用于该组PP验证；全部GT拟合最终模型用于测试。实际组数及GT样本数需运行回执确认",
+    "training_entry": "cell4顶层直接调用train_from_mount(COMP_DIR/train, WORKING_DIR, graph_reader)",
+    "model_persistence": "division_gate_weights.json保存final和held_out模型；division_training_receipt.json保存损失、迭代、各fold和GT清单",
+    "source_models_retrained": false,
+    "runtime_use": "safe-div候选先保留原有parent9µm/sister14µm/existing-child10µm等距离约束，再计算学习分数；完整两代上下文缺失则拒绝，score<0.95拒绝，之后继续DeepCenter门和原cap/拓扑约束",
+    "replaced_rules": [
+      "移除candidate!=mutual_nn_id硬拒绝",
+      "移除grandchild_distance-sister_distance>=2.25硬门；两女儿各有t+2单后继仍由训练模块context强制",
+      "移除相对父女距离不对称度<=0.6硬门",
+      "候选排序由parent_distance+0.15*sister_distance改为-score+1e-6*(原距离排序)"
+    ],
+    "unchanged_vs_target950": [
+      "图像检测器及两个时序模型权重/架构",
+      "检测和边特征TTA",
+      "关联融合权重",
+      "ILP",
+      "其他gap、短轨迹过滤、linefit、CSV生成逻辑",
+      "官方评分适配器及原PP自动选择流程"
+    ],
+    "difference_vs_own_forge": "除学习门/训练/审计外，沿用了TARGET950已引入的固定官方评分适配器和同图审计；自身不是仅改一个门阈值的实验。"
+  },
+  "evidence_boundaries": {
+    "pre_submission_source_raw_bytes": "UNKNOWN",
+    "description_hash": "35ec0b376b94843722ac9e8107a0929ccf9a49f94d7bbac99b3093c4618ee123",
+    "description_hash_serialization_scope": "UNKNOWN; not labeled SDK hash",
+    "actual_training_completed": "UNKNOWN_FROM_SOURCE_ONLY",
+    "actual_fit_counts_losses_weights": "UNKNOWN_FROM_SOURCE_ONLY",
+    "actual_test_learned_gate_usage": "UNKNOWN_FROM_SOURCE_ONLY",
+    "actual_postprocess_selected": "UNKNOWN_FROM_SOURCE_ONLY",
+    "formal_score": "Use separate official API and UI receipts, never source or ordinary outputs",
+    "runtime_audit_requirement": "cell14要求learned_division_scored>0并哈希绑定权重/训练回执/CSV；需要读取实际生成回执才算运行证据"
+  },
+  "inferences_not_causal_findings": [
+    "训练分布来自GT拓扑坐标并加噪声，实际门用于模型预测图；二者误差分布可能不同，源码不足以证明此次降分原因。",
+    "类别平衡损失下的0.95分数未经概率校准，不能解释为正式测试分裂95%正确率。",
+    "此次替换三条硬规则并改变候选排序，正式下降不能单独归因逻辑回归、某一个几何特征或单一规则。"
+  ],
+  "execution": {
+    "notebook_executed": false,
+    "training_executed": false,
+    "network_requests": 0,
+    "kaggle_writes": 0,
+    "repository_writes": [
+      "experiments/SCORE_RECOVERY_20260915/source_review.json"
+    ]
+  }
+}

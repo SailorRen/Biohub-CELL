@@ -1,0 +1,92 @@
+{
+  "task_id": "SCORE_RECOVERY_20260915",
+  "status": "PASS",
+  "passed": 21,
+  "total": 21,
+  "checks": [
+    {
+      "id": "complete-authoritative-list",
+      "passed": true
+    },
+    {
+      "id": "snapshot-hash",
+      "passed": true
+    },
+    {
+      "id": "unique-submission-ids",
+      "passed": true
+    },
+    {
+      "id": "division-formal-row",
+      "passed": true
+    },
+    {
+      "id": "selector-formal-row",
+      "passed": true
+    },
+    {
+      "id": "baseline-formal-row",
+      "passed": true
+    },
+    {
+      "id": "division-api-ui-identity",
+      "passed": true
+    },
+    {
+      "id": "division-api-ui-score",
+      "passed": true
+    },
+    {
+      "id": "selector-api-ui-score",
+      "passed": true
+    },
+    {
+      "id": "baseline-live-score",
+      "passed": true
+    },
+    {
+      "id": "decimal-deltas",
+      "passed": true
+    },
+    {
+      "id": "gain-only-from-formal",
+      "passed": true
+    },
+    {
+      "id": "source-current-object",
+      "passed": true
+    },
+    {
+      "id": "evidence-hashes",
+      "passed": true
+    },
+    {
+      "id": "unknowns-preserved",
+      "passed": true
+    },
+    {
+      "id": "zero-new-writes",
+      "passed": true
+    },
+    {
+      "id": "original-write-ledger-unchanged",
+      "passed": true
+    },
+    {
+      "id": "historical-formal_observation_closeout.json",
+      "passed": true
+    },
+    {
+      "id": "historical-independent_review.json",
+      "passed": true
+    },
+    {
+      "id": "historical-cutoff_machine_verification.json",
+      "passed": true
+    },
+    {
+      "id": "selector-terminal-receipt",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "task_id": "SCORE_RECOVERY_20260915",
+  "observed_at_utc": "2026-09-15T01:33:07.478358+00:00",
+  "source": "Kaggle submissions page and actual Submission Details dialog via cua_repl",
+  "division": {
+    "title": "Biohub Division Train 20260914 - Version 1",
+    "version": 1,
+    "script_version_id": 349707105,
+    "fixed_link": "https://www.kaggle.com/code/sailorren/biohub-division-train-20260914?scriptVersionId=349707105",
+    "description": "DIVISION_TRAIN_20260914 | V1 | SV349707105 | SHA256 35ec0b376b94843722ac9e8107a0929ccf9a49f94d7bbac99b3093c4618ee123",
+    "status_visible": "Succeeded",
+    "score_visible": "0.945",
+    "submitted_time_shanghai_visible": "2026-09-14 16:30:01",
+    "final_selection_checked": false,
+    "description_save_disabled": true
+  },
+  "selector": {
+    "title": "Biohub 0.947 Official Selector 20260914 - Version 1",
+    "status_visible": "Succeeded",
+    "public_score_visible": "0.947",
+    "description": "TARGET950_RUN_20260914 | V1 | SV349666428 | SHA256 cdefc823f59d0490e2ced01959e026ebfdd5c4b6f41d74ccb1c7bac4f61a6230"
+  },
+  "baseline": {
+    "title": "Biohub Lineage Forge — Precision Tracking - Version 1",
+    "status_visible": "Succeeded",
+    "public_score_visible": "0.947"
+  },
+  "kaggle_write_requests": 0
+}
