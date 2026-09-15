@@ -1,0 +1,195 @@
+{
+  "task_id": "DIVISION_DIAG_20260915",
+  "status": "PARTIAL_BLOCKED",
+  "observed_at_utc": "2026-09-15T04:14:18.480194+00:00",
+  "object": {
+    "ref": "sailorren/biohub-division-train-20260914",
+    "kernel_id": 134301327,
+    "version": 1,
+    "source_sha256": "53f50c62047b0c8e1e80ca2969acbdaac37b9ad443e8efa4c7275a38145f7ae5",
+    "script_version_id": 349707105,
+    "sv_binding": "archived exact V1 UI plus live same kernel/version/full source bytes"
+  },
+  "evidence_commit": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+  "evidence_recovery": "TRAINING_AND_ORDINARY_RUNTIME_RECOVERED; diagnostic caches incomplete",
+  "input_manifest": "source_read_manifest.json",
+  "artifact_manifest": [
+    {
+      "name": "bidirectional_production_runtime_integrity.json",
+      "path": "downloads/DIVISION_DIAG_20260915/platform/bidirectional_production_runtime_integrity.json",
+      "source": "Kaggle ListKernelSessionOutput sailorren/biohub-division-train-20260914",
+      "version": 1,
+      "script_version_id": 349707105,
+      "read_at_utc": "2026-09-15T04:05:47.251322+00:00",
+      "bytes": 2387,
+      "sha256": "ae41130ee035d3ddcbaf2d0977f721429a52ffda8133fe1b877f51de5926278d"
+    },
+    {
+      "name": "division_gate_weights.json",
+      "path": "downloads/DIVISION_DIAG_20260915/platform/division_gate_weights.json",
+      "source": "Kaggle ListKernelSessionOutput sailorren/biohub-division-train-20260914",
+      "version": 1,
+      "script_version_id": 349707105,
+      "read_at_utc": "2026-09-15T04:05:47.923356+00:00",
+      "bytes": 2979,
+      "sha256": "0a1f9b93bb529e70f4f7c2ba0907eea8b4cecd2befccc8ba1fb75e569edf77a0"
+    },
+    {
+      "name": "division_runtime_audit.json",
+      "path": "downloads/DIVISION_DIAG_20260915/platform/division_runtime_audit.json",
+      "source": "Kaggle ListKernelSessionOutput sailorren/biohub-division-train-20260914",
+      "version": 1,
+      "script_version_id": 349707105,
+      "read_at_utc": "2026-09-15T04:05:48.595283+00:00",
+      "bytes": 868,
+      "sha256": "a7fe104f1287ae93d4f8bb7e4de57e4794a7d3f84d033e970cc4fcb38fc97713"
+    },
+    {
+      "name": "division_training_receipt.json",
+      "path": "downloads/DIVISION_DIAG_20260915/platform/division_training_receipt.json",
+      "source": "Kaggle ListKernelSessionOutput sailorren/biohub-division-train-20260914",
+      "version": 1,
+      "script_version_id": 349707105,
+      "read_at_utc": "2026-09-15T04:05:49.390578+00:00",
+      "bytes": 42198,
+      "sha256": "7f151fc5522e9bf4e8d96904a888a9558a4b7fbfbf28185120138396334a1448"
+    },
+    {
+      "name": "ppsweep_selected.json",
+      "path": "downloads/DIVISION_DIAG_20260915/platform/ppsweep_selected.json",
+      "source": "Kaggle ListKernelSessionOutput sailorren/biohub-division-train-20260914",
+      "version": 1,
+      "script_version_id": 349707105,
+      "read_at_utc": "2026-09-15T04:05:50.019317+00:00",
+      "bytes": 353,
+      "sha256": "2620dcc3e5e4d85298e00383d98f45d787a0a7a834f0179e225ad9958068156b"
+    },
+    {
+      "name": "run_stats.csv",
+      "path": "downloads/DIVISION_DIAG_20260915/platform/run_stats.csv",
+      "source": "Kaggle ListKernelSessionOutput sailorren/biohub-division-train-20260914",
+      "version": 1,
+      "script_version_id": 349707105,
+      "read_at_utc": "2026-09-15T04:05:50.613773+00:00",
+      "bytes": 3329,
+      "sha256": "31bdf80280cb536ba41961a826d21bfa2ce36409294b3f1dbff7b114876cf83e"
+    },
+    {
+      "name": "validator_results.csv",
+      "path": "downloads/DIVISION_DIAG_20260915/platform/validator_results.csv",
+      "source": "Kaggle ListKernelSessionOutput sailorren/biohub-division-train-20260914",
+      "version": 1,
+      "script_version_id": 349707105,
+      "read_at_utc": "2026-09-15T04:05:51.487241+00:00",
+      "bytes": 47630,
+      "sha256": "5d14fbd6caee0cbe90e8b44d47f392c6d1cf8bac4912679b8635c359f041b716"
+    },
+    {
+      "name": "ordinary.log",
+      "path": "downloads/DIVISION_DIAG_20260915/platform/ordinary.log",
+      "source": "Kaggle ListKernelSessionOutput.log",
+      "version": 1,
+      "script_version_id": 349707105,
+      "read_at_utc": "2026-09-15T04:05:51.488826+00:00",
+      "bytes": 831971,
+      "sha256": "7c4f8ff0fd60860e12f6fec32b691f4deb4fe996774d0c7daa000bd3b1144088"
+    },
+    {
+      "name": "official_selector_audit.json",
+      "path": "downloads/DIVISION_DIAG_20260915/platform/official_selector_audit.json",
+      "source": "Kaggle ListKernelSessionOutput sailorren/biohub-division-train-20260914",
+      "version": 1,
+      "script_version_id": 349707105,
+      "read_at_utc": "2026-09-15T04:06:48.136335+00:00",
+      "bytes": 174297,
+      "sha256": "4a723f7b7f005ea364371b1523d2c6dd0d2bd4a5177400df368193c963c4c7f9"
+    },
+    {
+      "name": "ppsweep_results.csv",
+      "path": "downloads/DIVISION_DIAG_20260915/platform/ppsweep_results.csv",
+      "source": "Kaggle ListKernelSessionOutput sailorren/biohub-division-train-20260914",
+      "version": 1,
+      "script_version_id": 349707105,
+      "read_at_utc": "2026-09-15T04:06:48.863351+00:00",
+      "bytes": 4644,
+      "sha256": "39d62b5fc9f99e2fa7a32fb662dd99561c198259db7ccec39cb8b894f53c3082"
+    }
+  ],
+  "training_summary": "training_runtime_summary.json",
+  "frozen_configuration": "controlled_config.json",
+  "paired": {
+    "executed": false,
+    "status": "NOT_RUN_MISSING_REQUIRED_CACHES",
+    "candidate_rows": 0,
+    "executed_samples": [],
+    "prospective_samples": [
+      "44b6_12dfb391",
+      "44b6_267148e4",
+      "44b6_2a2eff9f",
+      "44b6_341df25f",
+      "6bba_062c8d37",
+      "6bba_07e24132",
+      "6bba_085bf656",
+      "6bba_09961292"
+    ],
+    "prospective_sample_count": 8,
+    "effective_samples": 0,
+    "excluded_from_run": 8,
+    "unknown_events": null,
+    "per_embryo_metrics": null,
+    "safe_div_stage_metrics": null,
+    "postprocess_stage_metrics": null,
+    "division_tp_fp_fn_A": null,
+    "division_tp_fp_fn_B": null,
+    "official_score_A": null,
+    "official_score_B": null,
+    "paired_delta": null,
+    "added_correct": null,
+    "added_wrong": null,
+    "lost_correct": null,
+    "removed_wrong": null,
+    "unreliably_labeled": null
+  },
+  "gaps": [
+    "No persisted DeepCenter heatmaps/point decisions for required candidate union; cannot run detector or bypass gate.",
+    "No cached image refinement inputs for single-frame/gap2 recovery; raw .geff is before earlier postprocessing, not exact safe-div input.",
+    "Ground-truth bytes and estimated node metadata not recovered; per-file hash/count receipts are not annotations.",
+    "Original training candidate rows and per-iteration optimizer trace absent.",
+    "Upstream pretraining embryo lineage and hidden formal runtime unknown."
+  ],
+  "hidden_formal_runtime": "UNKNOWN",
+  "next_modification": "尚不能确定下一修改点",
+  "public_archived": {
+    "Forge": {
+      "submission": 56160258,
+      "version": 1,
+      "sv": 348960877,
+      "score": "0.947"
+    },
+    "Selector": {
+      "submission": 56222238,
+      "version": 1,
+      "sv": 349666428,
+      "score": "0.947"
+    },
+    "Division": {
+      "submission": 56226396,
+      "version": 1,
+      "sv": 349707105,
+      "score": "0.945"
+    },
+    "live_score_read_this_task": false,
+    "new_formal_score": null,
+    "baseline_retained": "Forge 0.947"
+  },
+  "execution": {
+    "notebook_executed": false,
+    "training_calls": 0,
+    "classifier_prediction_calls_this_task": 0,
+    "detector_runs": 0,
+    "kaggle_writes": 0,
+    "submissions": 0,
+    "selection_changes": 0
+  },
+  "github_delivery": "PENDING_SEPARATE_FIXED_COMMIT_READBACK"
+}

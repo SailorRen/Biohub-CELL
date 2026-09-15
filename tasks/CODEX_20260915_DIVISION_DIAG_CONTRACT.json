@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "task_id": "DIVISION_DIAG_20260915",
+  "goal": "回收精确V1训练运行证据并在必要输入齐备时执行固定配置配对诊断；缺失保持BLOCKED，不以交付替代诊断成功。",
+  "scope": {
+    "evidence_commit": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+    "branch": "codex/division-diagnosis-20260915",
+    "kaggle_write_budget": 0,
+    "training_budget": 0,
+    "submission_budget": 0
+  },
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "acceptance": [
+    {
+      "id": "instruction",
+      "type": "file",
+      "path": "tasks/CODEX_20260915_DIVISION_DIAG_INSTRUCTION.md",
+      "sha256": "065bafca357d16ede20fa69b085715d24c752fc4adb3bc347868acaccbc7eb49"
+    },
+    {
+      "id": "diagnostic-integrity",
+      "type": "command",
+      "argv": [
+        "python3",
+        "experiments/DIVISION_DIAG_20260915/verify.py"
+      ],
+      "expected_exit": 0,
+      "timeout_seconds": 120
+    },
+    {
+      "id": "paired-executed",
+      "type": "json",
+      "path": "experiments/DIVISION_DIAG_20260915/diagnosis.json",
+      "assertions": [
+        {
+          "pointer": "/paired/executed",
+          "op": "equals",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "report",
+      "type": "file",
+      "path": "reports/20260915_分裂训练版差异诊断.md",
+      "min_bytes": 1000
+    },
+    {
+      "id": "github",
+      "type": "git",
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true
+    }
+  ]
+}

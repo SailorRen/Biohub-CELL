@@ -1,0 +1,1918 @@
+{
+  "task_id": "DIVISION_DIAG_20260915",
+  "started_at_utc": "2026-09-15T04:05:32.501886+00:00",
+  "kaggle_writes": 0,
+  "training_calls": 0,
+  "files": [
+    {
+      "name": "bidirectional_production_runtime_integrity.json",
+      "path": "downloads/DIVISION_DIAG_20260915/platform/bidirectional_production_runtime_integrity.json",
+      "source": "Kaggle ListKernelSessionOutput sailorren/biohub-division-train-20260914",
+      "version": 1,
+      "script_version_id": 349707105,
+      "read_at_utc": "2026-09-15T04:05:47.251322+00:00",
+      "bytes": 2387,
+      "sha256": "ae41130ee035d3ddcbaf2d0977f721429a52ffda8133fe1b877f51de5926278d"
+    },
+    {
+      "name": "division_gate_weights.json",
+      "path": "downloads/DIVISION_DIAG_20260915/platform/division_gate_weights.json",
+      "source": "Kaggle ListKernelSessionOutput sailorren/biohub-division-train-20260914",
+      "version": 1,
+      "script_version_id": 349707105,
+      "read_at_utc": "2026-09-15T04:05:47.923356+00:00",
+      "bytes": 2979,
+      "sha256": "0a1f9b93bb529e70f4f7c2ba0907eea8b4cecd2befccc8ba1fb75e569edf77a0"
+    },
+    {
+      "name": "division_runtime_audit.json",
+      "path": "downloads/DIVISION_DIAG_20260915/platform/division_runtime_audit.json",
+      "source": "Kaggle ListKernelSessionOutput sailorren/biohub-division-train-20260914",
+      "version": 1,
+      "script_version_id": 349707105,
+      "read_at_utc": "2026-09-15T04:05:48.595283+00:00",
+      "bytes": 868,
+      "sha256": "a7fe104f1287ae93d4f8bb7e4de57e4794a7d3f84d033e970cc4fcb38fc97713"
+    },
+    {
+      "name": "division_training_receipt.json",
+      "path": "downloads/DIVISION_DIAG_20260915/platform/division_training_receipt.json",
+      "source": "Kaggle ListKernelSessionOutput sailorren/biohub-division-train-20260914",
+      "version": 1,
+      "script_version_id": 349707105,
+      "read_at_utc": "2026-09-15T04:05:49.390578+00:00",
+      "bytes": 42198,
+      "sha256": "7f151fc5522e9bf4e8d96904a888a9558a4b7fbfbf28185120138396334a1448"
+    },
+    {
+      "name": "ppsweep_selected.json",
+      "path": "downloads/DIVISION_DIAG_20260915/platform/ppsweep_selected.json",
+      "source": "Kaggle ListKernelSessionOutput sailorren/biohub-division-train-20260914",
+      "version": 1,
+      "script_version_id": 349707105,
+      "read_at_utc": "2026-09-15T04:05:50.019317+00:00",
+      "bytes": 353,
+      "sha256": "2620dcc3e5e4d85298e00383d98f45d787a0a7a834f0179e225ad9958068156b"
+    },
+    {
+      "name": "run_stats.csv",
+      "path": "downloads/DIVISION_DIAG_20260915/platform/run_stats.csv",
+      "source": "Kaggle ListKernelSessionOutput sailorren/biohub-division-train-20260914",
+      "version": 1,
+      "script_version_id": 349707105,
+      "read_at_utc": "2026-09-15T04:05:50.613773+00:00",
+      "bytes": 3329,
+      "sha256": "31bdf80280cb536ba41961a826d21bfa2ce36409294b3f1dbff7b114876cf83e"
+    },
+    {
+      "name": "validator_results.csv",
+      "path": "downloads/DIVISION_DIAG_20260915/platform/validator_results.csv",
+      "source": "Kaggle ListKernelSessionOutput sailorren/biohub-division-train-20260914",
+      "version": 1,
+      "script_version_id": 349707105,
+      "read_at_utc": "2026-09-15T04:05:51.487241+00:00",
+      "bytes": 47630,
+      "sha256": "5d14fbd6caee0cbe90e8b44d47f392c6d1cf8bac4912679b8635c359f041b716"
+    },
+    {
+      "name": "ordinary.log",
+      "path": "downloads/DIVISION_DIAG_20260915/platform/ordinary.log",
+      "source": "Kaggle ListKernelSessionOutput.log",
+      "version": 1,
+      "script_version_id": 349707105,
+      "read_at_utc": "2026-09-15T04:05:51.488826+00:00",
+      "bytes": 831971,
+      "sha256": "7c4f8ff0fd60860e12f6fec32b691f4deb4fe996774d0c7daa000bd3b1144088"
+    }
+  ],
+  "inventory": [
+    {
+      "name": "bidirectional_production_runtime_integrity.json",
+      "size": null
+    },
+    {
+      "name": "detector_coordinates_harmonic_association_production_0_2.jsonl",
+      "size": null
+    },
+    {
+      "name": "detector_coordinates_harmonic_association_production_1_2.jsonl",
+      "size": null
+    },
+    {
+      "name": "detector_coordinates_harmonic_association_production_single.jsonl",
+      "size": null
+    },
+    {
+      "name": "division_gate_weights.json",
+      "size": null
+    },
+    {
+      "name": "division_runtime_audit.json",
+      "size": null
+    },
+    {
+      "name": "division_training_receipt.json",
+      "size": null
+    },
+    {
+      "name": "dual_seed_frame_retention_guard_report.json",
+      "size": null
+    },
+    {
+      "name": "official_scorer_075fc5/LICENSE",
+      "size": null
+    },
+    {
+      "name": "official_scorer_075fc5/__init__.py",
+      "size": null
+    },
+    {
+      "name": "official_scorer_075fc5/__pycache__/__init__.cpython-312.pyc",
+      "size": null
+    },
+    {
+      "name": "official_scorer_075fc5/__pycache__/division_metrics.cpython-312.pyc",
+      "size": null
+    },
+    {
+      "name": "official_scorer_075fc5/__pycache__/metrics.cpython-312.pyc",
+      "size": null
+    },
+    {
+      "name": "official_scorer_075fc5/division_metrics.py",
+      "size": null
+    },
+    {
+      "name": "official_scorer_075fc5/metrics.py",
+      "size": null
+    },
+    {
+      "name": "official_selector_audit.json",
+      "size": null
+    },
+    {
+      "name": "ppsweep_results.csv",
+      "size": null
+    },
+    {
+      "name": "ppsweep_selected.json",
+      "size": null
+    },
+    {
+      "name": "retention_guard_0_2.jsonl",
+      "size": null
+    },
+    {
+      "name": "retention_guard_1_2.jsonl",
+      "size": null
+    },
+    {
+      "name": "retention_guard_single.jsonl",
+      "size": null
+    },
+    {
+      "name": "run_stats.csv",
+      "size": null
+    },
+    {
+      "name": "secondary_seed_weights/unet_transformer/split_0/SNAPSHOT_MANIFEST.json",
+      "size": null
+    },
+    {
+      "name": "secondary_seed_weights/unet_transformer/split_0/checkpoint_last.pth",
+      "size": null
+    },
+    {
+      "name": "secondary_seed_weights/unet_transformer/split_0/config.json",
+      "size": null
+    },
+    {
+      "name": "secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth",
+      "size": null
+    },
+    {
+      "name": "secondary_seed_weights/unet_transformer/split_0/history.csv",
+      "size": null
+    },
+    {
+      "name": "secondary_seed_weights/unet_transformer/split_0/split_manifest.json",
+      "size": null
+    },
+    {
+      "name": "secondary_seed_weights/unet_transformer/split_0/training_config.json",
+      "size": null
+    },
+    {
+      "name": "submission.csv",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/kaggle_test_splits_50ep.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/kaggle_val_splits.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/ids/c/0/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/props/edge_dist/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/props/edge_dist/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/props/edge_dist/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/props/edge_prob/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/props/edge_prob/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/props/edge_prob/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/edges/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/ids/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/t/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/t/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/t/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/x/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/x/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/x/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/y/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/y/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/y/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/z/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/z/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/z/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/nodes/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0113de3b.geff/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/ids/c/0/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/props/edge_dist/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/props/edge_dist/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/props/edge_dist/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/props/edge_prob/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/props/edge_prob/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/props/edge_prob/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/edges/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/ids/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/t/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/t/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/t/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/x/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/x/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/x/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/y/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/y/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/y/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/z/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/z/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/z/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/nodes/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/44b6_0b24845f.geff/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/ids/c/0/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/props/edge_dist/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/props/edge_dist/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/props/edge_dist/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/props/edge_prob/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/props/edge_prob/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/props/edge_prob/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/edges/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/ids/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/t/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/t/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/t/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/x/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/x/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/x/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/y/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/y/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/y/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/z/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/z/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/z/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/nodes/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05b6850b.geff/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/ids/c/0/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/props/edge_dist/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/props/edge_dist/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/props/edge_dist/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/props/edge_prob/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/props/edge_prob/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/props/edge_prob/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/edges/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/ids/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/t/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/t/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/t/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/x/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/x/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/x/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/y/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/y/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/y/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/z/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/z/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/z/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/nodes/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer/split_0/6bba_05db0fb1.geff/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/ids/c/0/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/props/edge_dist/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/props/edge_dist/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/props/edge_dist/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/props/edge_prob/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/props/edge_prob/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/props/edge_prob/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/edges/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/ids/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/t/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/t/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/t/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/x/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/x/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/x/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/y/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/y/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/y/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/z/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/z/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/z/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/nodes/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_12dfb391.geff/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/ids/c/0/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/props/edge_dist/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/props/edge_dist/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/props/edge_dist/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/props/edge_prob/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/props/edge_prob/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/props/edge_prob/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/edges/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/ids/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/t/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/t/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/t/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/x/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/x/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/x/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/y/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/y/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/y/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/z/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/z/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/z/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/nodes/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_267148e4.geff/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/ids/c/0/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/props/edge_dist/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/props/edge_dist/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/props/edge_dist/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/props/edge_prob/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/props/edge_prob/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/props/edge_prob/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/edges/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/ids/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/t/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/t/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/t/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/x/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/x/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/x/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/y/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/y/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/y/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/z/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/z/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/z/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/nodes/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_2a2eff9f.geff/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/ids/c/0/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/props/edge_dist/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/props/edge_dist/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/props/edge_dist/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/props/edge_prob/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/props/edge_prob/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/props/edge_prob/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/edges/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/ids/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/t/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/t/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/t/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/x/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/x/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/x/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/y/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/y/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/y/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/z/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/z/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/z/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/nodes/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/44b6_341df25f.geff/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/ids/c/0/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/props/edge_dist/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/props/edge_dist/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/props/edge_dist/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/props/edge_prob/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/props/edge_prob/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/props/edge_prob/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/edges/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/ids/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/t/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/t/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/t/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/x/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/x/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/x/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/y/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/y/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/y/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/z/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/z/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/z/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/nodes/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_062c8d37.geff/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/ids/c/0/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/props/edge_dist/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/props/edge_dist/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/props/edge_dist/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/props/edge_prob/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/props/edge_prob/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/props/edge_prob/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/edges/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/ids/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/t/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/t/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/t/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/x/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/x/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/x/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/y/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/y/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/y/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/z/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/z/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/z/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/nodes/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_07e24132.geff/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/ids/c/0/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/props/edge_dist/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/props/edge_dist/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/props/edge_dist/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/props/edge_prob/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/props/edge_prob/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/props/edge_prob/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/edges/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/ids/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/t/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/t/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/t/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/x/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/x/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/x/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/y/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/y/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/y/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/z/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/z/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/z/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/nodes/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_085bf656.geff/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/ids/c/0/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/props/edge_dist/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/props/edge_dist/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/props/edge_dist/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/props/edge_prob/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/props/edge_prob/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/props/edge_prob/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/edges/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/ids/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/ids/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/solution/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/solution/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/solution/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/t/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/t/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/t/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/x/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/x/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/x/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/y/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/y/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/y/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/z/values/c/0",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/z/values/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/z/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/props/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/nodes/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/predictions/unknown/unet_transformer_val/split_0/6bba_09961292.geff/zarr.json",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/scripts/__pycache__/augmentations.cpython-312.pyc",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/scripts/__pycache__/dataspec.cpython-312.pyc",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/scripts/__pycache__/evaluate.cpython-312.pyc",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/scripts/__pycache__/train_unet_transformer.cpython-312.pyc",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/scripts/augmentations.py",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/scripts/dataspec.py",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/scripts/evaluate.py",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/scripts/predict_unet_transformer.py",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/scripts/train_unet_transformer.py",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/src/biohub_tracking/__init__.py",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/src/biohub_tracking/__pycache__/__init__.cpython-312.pyc",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/src/biohub_tracking/__pycache__/io.cpython-312.pyc",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/src/biohub_tracking/__pycache__/metrics.cpython-312.pyc",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/src/biohub_tracking/division_metrics.py",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/src/biohub_tracking/img_proc.py",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/src/biohub_tracking/io.py",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/src/biohub_tracking/metrics.py",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/src/biohub_tracking/models/__init__.py",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/src/biohub_tracking/models/__pycache__/__init__.cpython-312.pyc",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/src/biohub_tracking/models/__pycache__/simple_node_transformer.cpython-312.pyc",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/src/biohub_tracking/models/__pycache__/temporal_unet.cpython-312.pyc",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/src/biohub_tracking/models/simple_node_transformer.py",
+      "size": null
+    },
+    {
+      "name": "tracking_repo/src/biohub_tracking/models/temporal_unet.py",
+      "size": null
+    },
+    {
+      "name": "validator_results.csv",
+      "size": null
+    }
+  ],
+  "status": "EXISTING_ORDINARY_OUTPUT_RECOVERED",
+  "identity_before": {
+    "ref": "sailorren/biohub-division-train-20260914",
+    "kernel_id": 134301327,
+    "version": 1,
+    "source_sha256": "53f50c62047b0c8e1e80ca2969acbdaac37b9ad443e8efa4c7275a38145f7ae5",
+    "script_version_id": 349707105,
+    "sv_binding": "archived exact V1 UI plus live same kernel/version/full source bytes"
+  },
+  "pages": 5,
+  "inventory_complete": true,
+  "identity_after": {
+    "ref": "sailorren/biohub-division-train-20260914",
+    "kernel_id": 134301327,
+    "version": 1,
+    "source_sha256": "53f50c62047b0c8e1e80ca2969acbdaac37b9ad443e8efa4c7275a38145f7ae5",
+    "script_version_id": 349707105,
+    "sv_binding": "archived exact V1 UI plus live same kernel/version/full source bytes"
+  },
+  "finished_at_utc": "2026-09-15T04:05:52.783676+00:00"
+}

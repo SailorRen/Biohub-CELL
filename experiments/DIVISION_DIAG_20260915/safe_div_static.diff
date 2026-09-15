@@ -1,0 +1,67 @@
+--- Official Selector cell5
++++ Division Train cell6
+@@ -1076,34 +1076,28 @@
+                     continue
+
+
+-                if SAFE_DIV_REQUIRE_MUTUAL_NN and candidate_id != mutual_nn_id:
+-                    stats["safe_division_mutual_nn_rejected"] += 1
+-                    continue
+
+
+
+
+
+-                if SAFE_DIV_REQUIRE_DIVERGENCE:
+-                    c1_succ = out_by_source.get(existing_child_id, [])
+-                    q_succ = out_by_source.get(candidate_id, [])
+-                    if len(c1_succ) != 1 or len(q_succ) != 1:
+-                        stats["safe_division_divergence_rejected"] += 1
+-                        continue
+-                    c1_grandchild = nodes_by_id.get(int(c1_succ[0]["target_id"]))
+-                    q_grandchild = nodes_by_id.get(int(q_succ[0]["target_id"]))
+-                    if (
+-                        c1_grandchild is None or q_grandchild is None
+-                        or int(c1_grandchild["t"]) != t + 2
+-                        or int(q_grandchild["t"]) != t + 2
+-                    ):
+-                        stats["safe_division_divergence_rejected"] += 1
+-                        continue
+-                    grandchild_dist = edge_distance_um(c1_grandchild, q_grandchild)
+-                    if grandchild_dist - sister_dist < SAFE_DIV_DIVERGE_UM:
+-                        stats["safe_division_divergence_rejected"] += 1
+-                        continue
+
++                learned_score = DIVISION_MODULE.runtime_pair_score(
++                    DIVISION_PAYLOAD, nodes_by_id, out_by_source, source_id,
++                    existing_child_id, candidate_id, dataset,
++                    Path(TEST_DIR).resolve() == (Path(COMP_DIR) / "train").resolve(),
++                )
++                stats["learned_division_context_checked"] = stats.get("learned_division_context_checked", 0) + 1
++                if learned_score is None:
++                    stats["learned_division_missing_context"] = stats.get("learned_division_missing_context", 0) + 1
++                    continue
++                stats["learned_division_scored"] = stats.get("learned_division_scored", 0) + 1
++                if not math.isfinite(learned_score):
++                    raise RuntimeError("NONFINITE_LEARNED_DIVISION_SCORE")
++                if learned_score < DIVISION_MODULE.THRESHOLD:
++                    stats["learned_division_rejected"] = stats.get("learned_division_rejected", 0) + 1
++                    continue
++                stats["learned_division_accepted"] = stats.get("learned_division_accepted", 0) + 1
+                 stats["safe_division_geometric_candidates"] += 1
+                 if DEEPCENTER_SAFE_DIV_VETO and not deepcenter_accept_repair_point(
+                     dataset,
+@@ -1123,12 +1117,7 @@
+
+
+
+-                if SAFE_DIV_SISTER_SYMMETRY_TAU > 0.0:
+-                    _sym_denom = max((child_dist + parent_dist) / 2.0, 1e-6)
+-                    if abs(child_dist - parent_dist) / _sym_denom > SAFE_DIV_SISTER_SYMMETRY_TAU:
+-                        stats["safe_division_symmetry_rejected"] += 1
+-                        continue
+-                score = parent_dist + 0.15 * sister_dist
++                score = -learned_score + 1e-6 * (parent_dist + 0.15 * sister_dist)
+                 proposals.append((score, source_id, candidate_id, parent_dist, sister_dist))
+
+         stats["safe_division_candidates"] += len(proposals)

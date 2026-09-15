@@ -1,0 +1,159 @@
+{
+  "status": "FAIL",
+  "passed": 37,
+  "total": 38,
+  "checks": [
+    {
+      "id": "fixed-source:reports/20260915_训练版正式评分核验.md",
+      "pass": true
+    },
+    {
+      "id": "fixed-source:experiments/SCORE_RECOVERY_20260915/formal_results.json",
+      "pass": true
+    },
+    {
+      "id": "fixed-source:experiments/SCORE_RECOVERY_20260915/source_review.json",
+      "pass": true
+    },
+    {
+      "id": "fixed-source:experiments/SCORE_RECOVERY_20260915/division_remote_source.ipynb",
+      "pass": true
+    },
+    {
+      "id": "fixed-source:experiments/TARGET950_20260914/candidate.ipynb",
+      "pass": true
+    },
+    {
+      "id": "fixed-source:experiments/TARGET950_20260914/baseline/candidate.ipynb",
+      "pass": true
+    },
+    {
+      "id": "fixed-source:research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/official_kaggle/evidence/browser_official_routes.json",
+      "pass": true
+    },
+    {
+      "id": "fixed-source:experiments/TARGET950_RUN_20260914/ordinary_summary.json",
+      "pass": true
+    },
+    {
+      "id": "fixed-source:experiments/TARGET950_RUN_20260914/official_selector_audit.json",
+      "pass": true
+    },
+    {
+      "id": "fixed-source:experiments/TARGET950_20260914/vendor/official_075fc5/metrics.py",
+      "pass": true
+    },
+    {
+      "id": "fixed-source:experiments/TARGET950_20260914/vendor/official_075fc5/division_metrics.py",
+      "pass": true
+    },
+    {
+      "id": "fixed-source:experiments/TARGET950_20260914/vendor/official_075fc5/LICENSE",
+      "pass": true
+    },
+    {
+      "id": "fixed-source:experiments/TARGET950_20260914/official_selector_adapter.py",
+      "pass": true
+    },
+    {
+      "id": "artifact:bidirectional_production_runtime_integrity.json",
+      "pass": true
+    },
+    {
+      "id": "artifact:division_gate_weights.json",
+      "pass": true
+    },
+    {
+      "id": "artifact:division_runtime_audit.json",
+      "pass": true
+    },
+    {
+      "id": "artifact:division_training_receipt.json",
+      "pass": true
+    },
+    {
+      "id": "artifact:ppsweep_selected.json",
+      "pass": true
+    },
+    {
+      "id": "artifact:run_stats.csv",
+      "pass": true
+    },
+    {
+      "id": "artifact:validator_results.csv",
+      "pass": true
+    },
+    {
+      "id": "artifact:ordinary.log",
+      "pass": true
+    },
+    {
+      "id": "artifact:official_selector_audit.json",
+      "pass": true
+    },
+    {
+      "id": "artifact:ppsweep_results.csv",
+      "pass": true
+    },
+    {
+      "id": "weights-chain",
+      "pass": true
+    },
+    {
+      "id": "receipt-chain",
+      "pass": true
+    },
+    {
+      "id": "counts",
+      "pass": true
+    },
+    {
+      "id": "training-actual",
+      "pass": true
+    },
+    {
+      "id": "finite-model:final",
+      "pass": true
+    },
+    {
+      "id": "finite-model:44b6",
+      "pass": true
+    },
+    {
+      "id": "finite-model:6bba",
+      "pass": true
+    },
+    {
+      "id": "scope-not-inflated",
+      "pass": true
+    },
+    {
+      "id": "no-fake-candidates",
+      "pass": true
+    },
+    {
+      "id": "zero-actions",
+      "pass": true
+    },
+    {
+      "id": "threshold",
+      "pass": true
+    },
+    {
+      "id": "no-training-or-notebook-execution:diagnose.py",
+      "pass": true
+    },
+    {
+      "id": "no-training-or-notebook-execution:collect_existing.py",
+      "pass": true
+    },
+    {
+      "id": "weights-ignored",
+      "pass": true
+    },
+    {
+      "id": "historical-files-preserved",
+      "pass": false
+    }
+  ]
+}

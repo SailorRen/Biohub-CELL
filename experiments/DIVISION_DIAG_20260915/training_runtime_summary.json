@@ -1,0 +1,185 @@
+{
+  "fact_class": "MEASURED",
+  "training_completed_evidence": true,
+  "ordinary_classifier_used_evidence": true,
+  "models": [
+    {
+      "model": "final",
+      "finite": true,
+      "mean_count": 10,
+      "scale_count": 10,
+      "coefficient_count": 21,
+      "fit": {
+        "n_positive": 147,
+        "n_negative": 2876,
+        "augmented_rows": 12092,
+        "initial_loss": 0.6931471805599452,
+        "final_loss": 0.2725900686362126,
+        "optimizer_steps": 76,
+        "coefficient_norm": 3.32369325589017,
+        "converged": true
+      }
+    },
+    {
+      "model": "44b6",
+      "finite": true,
+      "mean_count": 10,
+      "scale_count": 10,
+      "coefficient_count": 21,
+      "fit": {
+        "n_positive": 122,
+        "n_negative": 1458,
+        "augmented_rows": 6320,
+        "initial_loss": 0.6931471805599452,
+        "final_loss": 0.2762832909149402,
+        "optimizer_steps": 74,
+        "coefficient_norm": 3.3311381131043527,
+        "converged": true
+      }
+    },
+    {
+      "model": "6bba",
+      "finite": true,
+      "mean_count": 10,
+      "scale_count": 10,
+      "coefficient_count": 21,
+      "fit": {
+        "n_positive": 25,
+        "n_negative": 1418,
+        "augmented_rows": 5772,
+        "initial_loss": 0.6931471805599453,
+        "final_loss": 0.30277230343685185,
+        "optimizer_steps": 74,
+        "coefficient_norm": 2.7717882210237823,
+        "converged": true
+      }
+    }
+  ],
+  "groups": {
+    "44b6": {
+      "files": 71,
+      "positive": 25,
+      "negative": 1418
+    },
+    "6bba": {
+      "files": 128,
+      "positive": 122,
+      "negative": 1458
+    }
+  },
+  "gt_inventory_count": 199,
+  "nonempty_pair_source_files": 135,
+  "zero_pair_source_files": 64,
+  "original_pairs": 3023,
+  "folds": [
+    {
+      "held_out_embryo": "44b6",
+      "training_embryos": [
+        "6bba"
+      ],
+      "embryo_overlap": false,
+      "fit": {
+        "n_positive": 122,
+        "n_negative": 1458,
+        "augmented_rows": 6320,
+        "initial_loss": 0.6931471805599452,
+        "final_loss": 0.2762832909149402,
+        "optimizer_steps": 74,
+        "coefficient_norm": 3.3311381131043527,
+        "converged": true
+      },
+      "pair_metrics": {
+        "tp": 8,
+        "fp": 8,
+        "fn": 17,
+        "tn": 1410,
+        "precision": 0.5,
+        "recall": 0.32,
+        "negative_acceptance_rate": 0.005641748942172073,
+        "threshold": 0.95
+      }
+    },
+    {
+      "held_out_embryo": "6bba",
+      "training_embryos": [
+        "44b6"
+      ],
+      "embryo_overlap": false,
+      "fit": {
+        "n_positive": 25,
+        "n_negative": 1418,
+        "augmented_rows": 5772,
+        "initial_loss": 0.6931471805599453,
+        "final_loss": 0.30277230343685185,
+        "optimizer_steps": 74,
+        "coefficient_norm": 2.7717882210237823,
+        "converged": true
+      },
+      "pair_metrics": {
+        "tp": 61,
+        "fp": 42,
+        "fn": 61,
+        "tn": 1416,
+        "precision": 0.5922330097087378,
+        "recall": 0.5,
+        "negative_acceptance_rate": 0.02880658436213992,
+        "threshold": 0.95
+      }
+    }
+  ],
+  "seconds": 68.1548912525177,
+  "ordinary_counts": {
+    "safe_divisions_added": 137,
+    "learned_division_context_checked": 5279,
+    "learned_division_scored": 5046,
+    "learned_division_rejected": 4763,
+    "learned_division_accepted": 283,
+    "learned_division_missing_context": 233
+  },
+  "ordinary_per_dataset": [
+    {
+      "dataset": "44b6_0113de3b",
+      "safe_divisions_added": 62,
+      "learned_division_context_checked": 767,
+      "learned_division_scored": 760,
+      "learned_division_rejected": 674,
+      "learned_division_accepted": 86,
+      "learned_division_missing_context": 7
+    },
+    {
+      "dataset": "44b6_0b24845f",
+      "safe_divisions_added": 23,
+      "learned_division_context_checked": 1201,
+      "learned_division_scored": 1101,
+      "learned_division_rejected": 1032,
+      "learned_division_accepted": 69,
+      "learned_division_missing_context": 100
+    },
+    {
+      "dataset": "6bba_05b6850b",
+      "safe_divisions_added": 8,
+      "learned_division_context_checked": 109,
+      "learned_division_scored": 104,
+      "learned_division_rejected": 94,
+      "learned_division_accepted": 10,
+      "learned_division_missing_context": 5
+    },
+    {
+      "dataset": "6bba_05db0fb1",
+      "safe_divisions_added": 44,
+      "learned_division_context_checked": 3202,
+      "learned_division_scored": 3081,
+      "learned_division_rejected": 2963,
+      "learned_division_accepted": 118,
+      "learned_division_missing_context": 121
+    }
+  ],
+  "model_parameters_uploaded": false,
+  "optimizer_message": "UNKNOWN: success and iterations saved, raw scipy message/status code absent",
+  "optimizer_trajectory": "UNKNOWN: per-iteration loss/gradient not persisted",
+  "candidate_training_rows": "UNKNOWN: receipt has per-GT counts/hashes, not original per-candidate coordinates/labels",
+  "grouping_rule_evidence": "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/official_kaggle/evidence/browser_official_routes.json",
+  "group_separation": "recorded group sets and counts verified against official naming definition; GT payload not independently recomputed",
+  "upstream_model_data_lineage": "UNKNOWN",
+  "hidden_training_and_runtime": "UNKNOWN"
+}

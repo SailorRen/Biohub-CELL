@@ -1,0 +1,27 @@
+{
+  "rows": [
+    {
+      "object": "Selector",
+      "sv": 349666428,
+      "scope": "historical ordinary full-graph validation; not rerun/not paired",
+      "n": 8,
+      "score": 0.9434021062935234,
+      "division_tp": 2,
+      "division_fp": 1,
+      "division_fn": 10
+    },
+    {
+      "object": "Division",
+      "sv": 349707105,
+      "scope": "historical ordinary full-graph validation; not rerun/not paired",
+      "n": 8,
+      "score": 0.9464524853649979,
+      "division_tp": 3,
+      "division_fp": 4,
+      "division_fn": 9
+    }
+  ],
+  "raw_prediction_byte_identity_between_sessions": "UNKNOWN",
+  "paired_delta": null,
+  "no_causal_attribution": true
+}

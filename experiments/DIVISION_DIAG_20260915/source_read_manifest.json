@@ -1,0 +1,705 @@
+{
+  "inputs": [
+    {
+      "path": "reports/20260915_训练版正式评分核验.md",
+      "commit": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+      "bytes": 6007,
+      "sha256": "0cc61b27623a238ed886ff00f7dce120a41f103919b62de643d0ddd7ac77b97d",
+      "read_at_utc": "2026-09-15T04:14:18.480194+00:00"
+    },
+    {
+      "path": "experiments/SCORE_RECOVERY_20260915/formal_results.json",
+      "commit": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+      "bytes": 2751,
+      "sha256": "4f7d7805ba2c6d14fdbe190bd06801ad3c04388b8b8a1f3f8b4dd94b866f38bd",
+      "read_at_utc": "2026-09-15T04:14:18.480194+00:00"
+    },
+    {
+      "path": "experiments/SCORE_RECOVERY_20260915/source_review.json",
+      "commit": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+      "bytes": 17608,
+      "sha256": "8958450a432dde9fe17994a14cf3c1181e8923e3780d3398dc782d20d4120663",
+      "read_at_utc": "2026-09-15T04:14:18.480194+00:00"
+    },
+    {
+      "path": "experiments/SCORE_RECOVERY_20260915/division_remote_source.ipynb",
+      "commit": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+      "bytes": 298663,
+      "sha256": "53f50c62047b0c8e1e80ca2969acbdaac37b9ad443e8efa4c7275a38145f7ae5",
+      "read_at_utc": "2026-09-15T04:14:18.480194+00:00"
+    },
+    {
+      "path": "experiments/TARGET950_20260914/candidate.ipynb",
+      "commit": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+      "bytes": 292572,
+      "sha256": "c38460def079f45749a8a3d85d6549dada0ec0343e2eed66bee3c7c40db4ae43",
+      "read_at_utc": "2026-09-15T04:14:18.480194+00:00"
+    },
+    {
+      "path": "experiments/TARGET950_20260914/baseline/candidate.ipynb",
+      "commit": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+      "bytes": 221906,
+      "sha256": "bb6dbf2766fff1b4f7d1c96f3c1145c700d4d44e4695d924c7be8ccbe1b07af7",
+      "read_at_utc": "2026-09-15T04:14:18.480194+00:00"
+    },
+    {
+      "path": "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/official_kaggle/evidence/browser_official_routes.json",
+      "commit": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+      "bytes": 47703,
+      "sha256": "86dce5c34f8e17df231ae6f67486aa950ad61972f06418b5030c0f4c5eb1ebaf",
+      "read_at_utc": "2026-09-15T04:14:18.480194+00:00"
+    },
+    {
+      "path": "experiments/TARGET950_RUN_20260914/ordinary_summary.json",
+      "commit": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+      "bytes": 24910,
+      "sha256": "e67552af0e12cc12b1c3a970fb63f52401e60ba5552658fc8332228c8b78e735",
+      "read_at_utc": "2026-09-15T04:14:18.480194+00:00"
+    },
+    {
+      "path": "experiments/TARGET950_RUN_20260914/official_selector_audit.json",
+      "commit": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+      "bytes": 174398,
+      "sha256": "8846c9fd3915d8138f8f4a634549eb6689b2bf506f85da66938562ad79c33799",
+      "read_at_utc": "2026-09-15T04:14:18.480194+00:00"
+    },
+    {
+      "path": "experiments/TARGET950_20260914/vendor/official_075fc5/metrics.py",
+      "commit": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+      "bytes": 19602,
+      "sha256": "cfdd596e3f8909cca14db0682889738b19ff75c3808b3773175aba9367ca7444",
+      "read_at_utc": "2026-09-15T04:14:18.480194+00:00"
+    },
+    {
+      "path": "experiments/TARGET950_20260914/vendor/official_075fc5/division_metrics.py",
+      "commit": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+      "bytes": 20488,
+      "sha256": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9",
+      "read_at_utc": "2026-09-15T04:14:18.480194+00:00"
+    },
+    {
+      "path": "experiments/TARGET950_20260914/vendor/official_075fc5/LICENSE",
+      "commit": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+      "bytes": 1507,
+      "sha256": "3910a8b578783928cbbf981c1b204591ab3368e70017dc695d6536f71d272796",
+      "read_at_utc": "2026-09-15T04:14:18.480194+00:00"
+    },
+    {
+      "path": "experiments/TARGET950_20260914/official_selector_adapter.py",
+      "commit": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+      "bytes": 11086,
+      "sha256": "3f12b1fdf3ecd2c7492f4577dbee00b964334abb861938e9ffbad9f84edaae9b",
+      "read_at_utc": "2026-09-15T04:14:18.480194+00:00"
+    }
+  ],
+  "cells": [
+    {
+      "object": "division",
+      "cell_index_0based": 0,
+      "bytes": 3066,
+      "sha256": "545339ff52ac4315bffaf1131fcf769bb1a260ca523e988f19af9432979fc4bd",
+      "ast_parse": true,
+      "functions": [],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "division",
+      "cell_index_0based": 1,
+      "bytes": 1330,
+      "sha256": "99198956a4c7725d85c6aab0d478368749824801716c6d39cf5bf915187ac500",
+      "ast_parse": true,
+      "functions": [],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "division",
+      "cell_index_0based": 2,
+      "bytes": 13642,
+      "sha256": "77fdadffbd02c87e8f686e55944b6741312be552f34c8dc615e6391a1959a2dc",
+      "ast_parse": true,
+      "functions": [],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "division",
+      "cell_index_0based": 3,
+      "bytes": 26734,
+      "sha256": "0f62c46bbec00a2d3d6bbde0efb89d5713204983d51c9c3cf73df1869cf12f8f",
+      "ast_parse": true,
+      "functions": [
+        "module_missing",
+        "has_model_artifact",
+        "artifact_manifest",
+        "artifact_matches_target",
+        "candidate_roots_for_slug",
+        "find_artifacts_root",
+        "_has_package_file",
+        "find_offline_package_dirs",
+        "purge_imported_modules",
+        "polars_runtime_ready",
+        "packages_requiring_refresh",
+        "dependency_specs_for",
+        "import_failures",
+        "missing_names_from_failures",
+        "install_missing_dependencies",
+        "ensure_dependencies",
+        "remove_path",
+        "copy_or_extract_tree",
+        "link_or_copy_tree",
+        "materialize_inference_repo",
+        "_integrity_sha256_file",
+        "_find_secondary_artifact_root",
+        "_sha256_file"
+      ],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "division",
+      "cell_index_0based": 4,
+      "bytes": 11644,
+      "sha256": "6a424896f7ccde74f9bc155fef64dc9cd243a627ff9c24e297b15d9eff593f3c",
+      "ast_parse": true,
+      "functions": [
+        "_division_read_graph"
+      ],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "division",
+      "cell_index_0based": 5,
+      "bytes": 49112,
+      "sha256": "768bd13fbf10d26731819e0d19f79c11d5a1d0fad7065ec5f5f66c2c5fc3187c",
+      "ast_parse": true,
+      "functions": [
+        "list_test_stems",
+        "_visible_cuda_tokens",
+        "_prediction_dir_for_method",
+        "_wait_for_prediction_shards",
+        "_merge_prediction_shards"
+      ],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "division",
+      "cell_index_0based": 6,
+      "bytes": 71235,
+      "sha256": "13fce1b0897b3cdf918d6b762386e1371839c53838c74d1924cf61685c003525",
+      "ast_parse": true,
+      "functions": [
+        "graph_from_geff",
+        "edge_distance_um",
+        "point_distance_um",
+        "node_point",
+        "edge_sort_key",
+        "_next_node_id",
+        "read_test_frame",
+        "refine_synthetic_midpoint",
+        "_dc_pool_frame_xy",
+        "_dc_normalize_dynamic_range",
+        "_dc_manifest_weight_paths",
+        "_dc_checkpoint_candidates",
+        "load_deepcenter_veto_detector",
+        "_dc_cache_trim",
+        "deepcenter_heatmap_for_frame",
+        "deepcenter_score_point",
+        "deepcenter_accept_repair_point",
+        "_position_um",
+        "motion_relink_edges",
+        "close_single_frame_gaps",
+        "_single_successor_map",
+        "_single_predecessor_map",
+        "recover_strict_gap2",
+        "add_safe_divisions_postlink",
+        "filter_short_track_components",
+        "linefit_smooth_output_graph",
+        "filter_output_graph",
+        "write_test_submission"
+      ],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "division",
+      "cell_index_0based": 7,
+      "bytes": 7352,
+      "sha256": "c300805e0268602d76042dd271bcc3224fda6af2a52569e16bebc446701d66a5",
+      "ast_parse": true,
+      "functions": [],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "division",
+      "cell_index_0based": 8,
+      "bytes": 7754,
+      "sha256": "7400441b355cbe09311e9c638c44264e374ad448d9ab1020b9d5866746e84ee7",
+      "ast_parse": true,
+      "functions": [
+        "_merge_validator_shards"
+      ],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "division",
+      "cell_index_0based": 9,
+      "bytes": 67375,
+      "sha256": "87eb743013ca8681126299d0adc445d523ae017e727fe700ae3ce2ee0c1b3603",
+      "ast_parse": true,
+      "functions": [
+        "match_nodes_bipartite",
+        "compute_edge_confusion",
+        "edge_jaccard",
+        "adjusted_jaccard",
+        "weakly_connected_components",
+        "compute_division_confusion",
+        "decompose_errors",
+        "_find_key_recursive",
+        "read_estimated_true_node_count",
+        "graph_to_plain",
+        "nodes_by_id_to_plain",
+        "score_sample",
+        "aggregate_official",
+        "install_official_selector"
+      ],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "division",
+      "cell_index_0based": 10,
+      "bytes": 6552,
+      "sha256": "3986eaba6600507225a7140c033c14ae039a4fa95b3602806b43a8f2f11d90a0",
+      "ast_parse": true,
+      "functions": [
+        "pp_apply",
+        "pp_restore",
+        "score_validator_config"
+      ],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "division",
+      "cell_index_0based": 11,
+      "bytes": 5847,
+      "sha256": "ece3664cf924f36f3b838bac34fa636e67a5c865e6bf21ab61ff086bd1f87dfb",
+      "ast_parse": true,
+      "functions": [],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "division",
+      "cell_index_0based": 12,
+      "bytes": 2004,
+      "sha256": "1b69f438acf6f21117acb50f1b42816a5da627c4dcec80b8e76372ef11793f15",
+      "ast_parse": true,
+      "functions": [],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "division",
+      "cell_index_0based": 13,
+      "bytes": 5196,
+      "sha256": "b7b2f1de006a9f151128c85695881c7d85fb0a14669fe7a3876751061843aaad",
+      "ast_parse": true,
+      "functions": [
+        "_audit_clean"
+      ],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "division",
+      "cell_index_0based": 14,
+      "bytes": 1236,
+      "sha256": "1d41044a4a53fff5ebce19d852c098d0c65aa9a20e20317a599b6d7869c7aab5",
+      "ast_parse": true,
+      "functions": [],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "selector",
+      "cell_index_0based": 0,
+      "bytes": 3066,
+      "sha256": "545339ff52ac4315bffaf1131fcf769bb1a260ca523e988f19af9432979fc4bd",
+      "ast_parse": true,
+      "functions": [],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "selector",
+      "cell_index_0based": 1,
+      "bytes": 1330,
+      "sha256": "99198956a4c7725d85c6aab0d478368749824801716c6d39cf5bf915187ac500",
+      "ast_parse": true,
+      "functions": [],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "selector",
+      "cell_index_0based": 2,
+      "bytes": 13642,
+      "sha256": "77fdadffbd02c87e8f686e55944b6741312be552f34c8dc615e6391a1959a2dc",
+      "ast_parse": true,
+      "functions": [],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "selector",
+      "cell_index_0based": 3,
+      "bytes": 26734,
+      "sha256": "0f62c46bbec00a2d3d6bbde0efb89d5713204983d51c9c3cf73df1869cf12f8f",
+      "ast_parse": true,
+      "functions": [
+        "module_missing",
+        "has_model_artifact",
+        "artifact_manifest",
+        "artifact_matches_target",
+        "candidate_roots_for_slug",
+        "find_artifacts_root",
+        "_has_package_file",
+        "find_offline_package_dirs",
+        "purge_imported_modules",
+        "polars_runtime_ready",
+        "packages_requiring_refresh",
+        "dependency_specs_for",
+        "import_failures",
+        "missing_names_from_failures",
+        "install_missing_dependencies",
+        "ensure_dependencies",
+        "remove_path",
+        "copy_or_extract_tree",
+        "link_or_copy_tree",
+        "materialize_inference_repo",
+        "_integrity_sha256_file",
+        "_find_secondary_artifact_root",
+        "_sha256_file"
+      ],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "selector",
+      "cell_index_0based": 4,
+      "bytes": 49112,
+      "sha256": "768bd13fbf10d26731819e0d19f79c11d5a1d0fad7065ec5f5f66c2c5fc3187c",
+      "ast_parse": true,
+      "functions": [
+        "list_test_stems",
+        "_visible_cuda_tokens",
+        "_prediction_dir_for_method",
+        "_wait_for_prediction_shards",
+        "_merge_prediction_shards"
+      ],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "selector",
+      "cell_index_0based": 5,
+      "bytes": 71710,
+      "sha256": "1cdeb9eb90a61b62198a48a3b9c1e9d7c271ee0b18a57159c56f3498d3a3491c",
+      "ast_parse": true,
+      "functions": [
+        "graph_from_geff",
+        "edge_distance_um",
+        "point_distance_um",
+        "node_point",
+        "edge_sort_key",
+        "_next_node_id",
+        "read_test_frame",
+        "refine_synthetic_midpoint",
+        "_dc_pool_frame_xy",
+        "_dc_normalize_dynamic_range",
+        "_dc_manifest_weight_paths",
+        "_dc_checkpoint_candidates",
+        "load_deepcenter_veto_detector",
+        "_dc_cache_trim",
+        "deepcenter_heatmap_for_frame",
+        "deepcenter_score_point",
+        "deepcenter_accept_repair_point",
+        "_position_um",
+        "motion_relink_edges",
+        "close_single_frame_gaps",
+        "_single_successor_map",
+        "_single_predecessor_map",
+        "recover_strict_gap2",
+        "add_safe_divisions_postlink",
+        "filter_short_track_components",
+        "linefit_smooth_output_graph",
+        "filter_output_graph",
+        "write_test_submission"
+      ],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "selector",
+      "cell_index_0based": 6,
+      "bytes": 7352,
+      "sha256": "c300805e0268602d76042dd271bcc3224fda6af2a52569e16bebc446701d66a5",
+      "ast_parse": true,
+      "functions": [],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "selector",
+      "cell_index_0based": 7,
+      "bytes": 7754,
+      "sha256": "7400441b355cbe09311e9c638c44264e374ad448d9ab1020b9d5866746e84ee7",
+      "ast_parse": true,
+      "functions": [
+        "_merge_validator_shards"
+      ],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "selector",
+      "cell_index_0based": 8,
+      "bytes": 67375,
+      "sha256": "87eb743013ca8681126299d0adc445d523ae017e727fe700ae3ce2ee0c1b3603",
+      "ast_parse": true,
+      "functions": [
+        "match_nodes_bipartite",
+        "compute_edge_confusion",
+        "edge_jaccard",
+        "adjusted_jaccard",
+        "weakly_connected_components",
+        "compute_division_confusion",
+        "decompose_errors",
+        "_find_key_recursive",
+        "read_estimated_true_node_count",
+        "graph_to_plain",
+        "nodes_by_id_to_plain",
+        "score_sample",
+        "aggregate_official",
+        "install_official_selector"
+      ],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "selector",
+      "cell_index_0based": 9,
+      "bytes": 6552,
+      "sha256": "3986eaba6600507225a7140c033c14ae039a4fa95b3602806b43a8f2f11d90a0",
+      "ast_parse": true,
+      "functions": [
+        "pp_apply",
+        "pp_restore",
+        "score_validator_config"
+      ],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "selector",
+      "cell_index_0based": 10,
+      "bytes": 5847,
+      "sha256": "ece3664cf924f36f3b838bac34fa636e67a5c865e6bf21ab61ff086bd1f87dfb",
+      "ast_parse": true,
+      "functions": [],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "selector",
+      "cell_index_0based": 11,
+      "bytes": 2004,
+      "sha256": "1b69f438acf6f21117acb50f1b42816a5da627c4dcec80b8e76372ef11793f15",
+      "ast_parse": true,
+      "functions": [],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "selector",
+      "cell_index_0based": 12,
+      "bytes": 5196,
+      "sha256": "b7b2f1de006a9f151128c85695881c7d85fb0a14669fe7a3876751061843aaad",
+      "ast_parse": true,
+      "functions": [
+        "_audit_clean"
+      ],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "forge",
+      "cell_index_0based": 0,
+      "bytes": 3066,
+      "sha256": "545339ff52ac4315bffaf1131fcf769bb1a260ca523e988f19af9432979fc4bd",
+      "ast_parse": true,
+      "functions": [],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "forge",
+      "cell_index_0based": 1,
+      "bytes": 1330,
+      "sha256": "99198956a4c7725d85c6aab0d478368749824801716c6d39cf5bf915187ac500",
+      "ast_parse": true,
+      "functions": [],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "forge",
+      "cell_index_0based": 2,
+      "bytes": 13642,
+      "sha256": "77fdadffbd02c87e8f686e55944b6741312be552f34c8dc615e6391a1959a2dc",
+      "ast_parse": true,
+      "functions": [],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "forge",
+      "cell_index_0based": 3,
+      "bytes": 26734,
+      "sha256": "0f62c46bbec00a2d3d6bbde0efb89d5713204983d51c9c3cf73df1869cf12f8f",
+      "ast_parse": true,
+      "functions": [
+        "module_missing",
+        "has_model_artifact",
+        "artifact_manifest",
+        "artifact_matches_target",
+        "candidate_roots_for_slug",
+        "find_artifacts_root",
+        "_has_package_file",
+        "find_offline_package_dirs",
+        "purge_imported_modules",
+        "polars_runtime_ready",
+        "packages_requiring_refresh",
+        "dependency_specs_for",
+        "import_failures",
+        "missing_names_from_failures",
+        "install_missing_dependencies",
+        "ensure_dependencies",
+        "remove_path",
+        "copy_or_extract_tree",
+        "link_or_copy_tree",
+        "materialize_inference_repo",
+        "_integrity_sha256_file",
+        "_find_secondary_artifact_root",
+        "_sha256_file"
+      ],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "forge",
+      "cell_index_0based": 4,
+      "bytes": 49112,
+      "sha256": "768bd13fbf10d26731819e0d19f79c11d5a1d0fad7065ec5f5f66c2c5fc3187c",
+      "ast_parse": true,
+      "functions": [
+        "list_test_stems",
+        "_visible_cuda_tokens",
+        "_prediction_dir_for_method",
+        "_wait_for_prediction_shards",
+        "_merge_prediction_shards"
+      ],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "forge",
+      "cell_index_0based": 5,
+      "bytes": 71710,
+      "sha256": "1cdeb9eb90a61b62198a48a3b9c1e9d7c271ee0b18a57159c56f3498d3a3491c",
+      "ast_parse": true,
+      "functions": [
+        "graph_from_geff",
+        "edge_distance_um",
+        "point_distance_um",
+        "node_point",
+        "edge_sort_key",
+        "_next_node_id",
+        "read_test_frame",
+        "refine_synthetic_midpoint",
+        "_dc_pool_frame_xy",
+        "_dc_normalize_dynamic_range",
+        "_dc_manifest_weight_paths",
+        "_dc_checkpoint_candidates",
+        "load_deepcenter_veto_detector",
+        "_dc_cache_trim",
+        "deepcenter_heatmap_for_frame",
+        "deepcenter_score_point",
+        "deepcenter_accept_repair_point",
+        "_position_um",
+        "motion_relink_edges",
+        "close_single_frame_gaps",
+        "_single_successor_map",
+        "_single_predecessor_map",
+        "recover_strict_gap2",
+        "add_safe_divisions_postlink",
+        "filter_short_track_components",
+        "linefit_smooth_output_graph",
+        "filter_output_graph",
+        "write_test_submission"
+      ],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "forge",
+      "cell_index_0based": 6,
+      "bytes": 7352,
+      "sha256": "c300805e0268602d76042dd271bcc3224fda6af2a52569e16bebc446701d66a5",
+      "ast_parse": true,
+      "functions": [],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "forge",
+      "cell_index_0based": 7,
+      "bytes": 7754,
+      "sha256": "7400441b355cbe09311e9c638c44264e374ad448d9ab1020b9d5866746e84ee7",
+      "ast_parse": true,
+      "functions": [
+        "_merge_validator_shards"
+      ],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "forge",
+      "cell_index_0based": 8,
+      "bytes": 11193,
+      "sha256": "54ed30a2f73355f369c112057570e9dd6a37e7f5521a6baf9ccdf4a8fc4ba6f8",
+      "ast_parse": true,
+      "functions": [
+        "match_nodes_bipartite",
+        "compute_edge_confusion",
+        "edge_jaccard",
+        "adjusted_jaccard",
+        "weakly_connected_components",
+        "compute_division_confusion",
+        "decompose_errors",
+        "_find_key_recursive",
+        "read_estimated_true_node_count",
+        "graph_to_plain",
+        "nodes_by_id_to_plain",
+        "score_sample",
+        "aggregate_official"
+      ],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "forge",
+      "cell_index_0based": 9,
+      "bytes": 6552,
+      "sha256": "3986eaba6600507225a7140c033c14ae039a4fa95b3602806b43a8f2f11d90a0",
+      "ast_parse": true,
+      "functions": [
+        "pp_apply",
+        "pp_restore",
+        "score_validator_config"
+      ],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "forge",
+      "cell_index_0based": 10,
+      "bytes": 5847,
+      "sha256": "ece3664cf924f36f3b838bac34fa636e67a5c865e6bf21ab61ff086bd1f87dfb",
+      "ast_parse": true,
+      "functions": [],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    },
+    {
+      "object": "forge",
+      "cell_index_0based": 11,
+      "bytes": 2004,
+      "sha256": "1b69f438acf6f21117acb50f1b42816a5da627c4dcec80b8e76372ef11793f15",
+      "ast_parse": true,
+      "functions": [],
+      "review_scope": "full bytes and AST inventory; only changed division logic, dependencies, configuration and scorer wiring semantically inspected"
+    }
+  ],
+  "division_module_sha256": "fdeb80eea2c462e84b9e89b07ca14e57bdf6e8ab679c9a0c42df50edebcddb2c",
+  "notebook_code_executed": false,
+  "semantic_review": "Full changed module/safe-div and relevant dependencies inspected; all other cells byte/AST comparison only."
+}
