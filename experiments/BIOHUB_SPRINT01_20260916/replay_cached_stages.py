@@ -41,7 +41,7 @@ def gh(n,e):return hashlib.sha256(json.dumps([list(n.items()),e],allow_nan=False
 meta={};g['SPRINT_FRAME_META']=meta
 code=patch_safe_div(funcs['add_safe_divisions_postlink']);line='        frame_cap = max(1, int(round(len(source_ids) * SAFE_DIV_FRAME_FRAC_CAP)))';assert code.count(line)==1
 code=code.replace(line,line+"\n        SPRINT_FRAME_META[(dataset,t)]={'frame_cap':frame_cap,'global_cap':global_cap,'sources':len(source_ids)}")
-exec(code,g);pure=g['add_safe_divisions_postlink'];snap={};checks=[];decisions=[]
+exec(code,g);pure=g['add_safe_divisions_postlink'];snap={};checks=[];decisions=[];final_differences=[]
 def capture(n,e,stats,**kw):
  snap['nodes']=copy.deepcopy(n);snap['edges']=copy.deepcopy(e);snap['stats']=dict(stats);snap['kw']=kw
  result=pure(n,e,stats,**kw);snap['after_nodes']=copy.deepcopy(n);snap['after_edges']=copy.deepcopy(result);return result
@@ -52,6 +52,10 @@ for stem in rules['samples']:
  rr={r['arm']:r for r in receipts if r['sample']==stem};assert gh(nodes,edges)==rr['A0']['raw_hash']
  g['SPRINT_POLICY']=ProposalPolicy('A0',scorer);fn,fe,stats=g['filter_output_graph'](copy.deepcopy(nodes),copy.deepcopy(edges),dataset=stem,deepcenter_bundle=bundle)
  final_match=gh(fn,fe)==rr['A0']['final_hash'] # Supplemental only: final score was independently verified on actual cloud snapshots.
+ collection=json.loads((P/'collection_v1.json').read_text());cloud=json.loads((R/collection['raw_path']/'sprint_cache'/f'{stem}_A0_graph.json').read_text());cn=dict(cloud['nodes']);ce=cloud['edges']
+ same_ids=list(fn)==list(cn);same_edges=fe==ce;coord_diff={k:[abs(float(fn[i][k])-float(cn[i][k])) for i in fn if i in cn and fn[i][k]!=cn[i][k]] for k in ['z','y','x']} if set(fn)==set(cn) else {}
+ final_differences.append({'sample':stem,'ordered_node_ids_equal':same_ids,'ordered_edges_equal':same_edges,'all_node_attributes_equal':fn==cn,'coordinate_differences':{k:{'nodes':len(v),'max_abs':max(v,default=0)} for k,v in coord_diff.items()},'local_nodes':len(fn),'cloud_nodes':len(cn),'local_edges':len(fe),'cloud_edges':len(ce)})
+
  assert gh(snap['nodes'],snap['edges'])==rr['A0']['safe_div_input_hash']
  a0_rows=g['SPRINT_POLICY'].rows
  for arm in ['A0','G1','R1']:
@@ -76,4 +80,4 @@ for stem in rules['samples']:
   decisions.extend(rows);checks.append({'sample':stem,'arm':arm,'raw_hash_match':True,'pre_safe_hash_match':True,'safe_hash_match':True,'A0_final_hash_match':final_match})
  print('CACHED_REPLAY_MATCH',stem,flush=True)
 summary={a:dict(collections.Counter(r['selection_reason'] for r in decisions if r['arm']==a)) for a in ['A0','G1','R1']}
-(P/'reconstructed_stages.json').write_text(json.dumps({'status':'RAW_PRE_SAFE_AND_SAFE_HASH_MATCHED','checks':checks,'selection_counts':summary,'decisions':decisions,'detector_or_temporal_model_executions':0,'classifier_inference_calls':sum(r['learned_score'] is not None for r in decisions),'platform_writes':0,'full_graph_local_path':str(OUT.relative_to(R))},indent=2)+'\n');print(summary)
+(P/'reconstructed_stages.json').write_text(json.dumps({'status':'RAW_PRE_SAFE_AND_SAFE_HASH_MATCHED','checks':checks,'supplemental_final_differences':final_differences,'selection_counts':summary,'decisions':decisions,'detector_or_temporal_model_executions':0,'classifier_inference_calls':sum(r['learned_score'] is not None for r in decisions),'platform_writes':0,'full_graph_local_path':str(OUT.relative_to(R))},indent=2)+'\n');print(summary)

@@ -1,0 +1,266 @@
+{
+  "status": "ORDINARY_VERIFIED",
+  "observed_at_utc": "20260916T051156Z",
+  "binding": {
+    "canonical_ref": "sailorren/biohub-sprint01-g1-frozen-inference-20260916",
+    "requested_ref": "sailorren/biohub-sprint01-own-g1-20260916",
+    "kernel_id": 134551153,
+    "version": 1,
+    "script_version_id": 350197436,
+    "source": "CUA actual Edit link /code/sailorren/biohub-sprint01-g1-frozen-inference-20260916/edit/run/350197436",
+    "observed_at_utc": "2026-09-16T02:55:59.257869+00:00",
+    "source_readback": "own_platform_20260916T025429Z.json"
+  },
+  "source_before": {
+    "kernel_id": 134551153,
+    "version": 1,
+    "source_sha256": "2455dcd654dba55017e27547558b3e51cd95017d3519dafc2205b239709d5094",
+    "enable_internet": false,
+    "is_private": true,
+    "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+    "datasets": [
+      "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+      "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+      "pilkwang/biohub-tracking-support-pack-50ep-v1"
+    ],
+    "input_kernels": [
+      "sailorren/biohub-division-train-20260914"
+    ]
+  },
+  "source_after": {
+    "kernel_id": 134551153,
+    "version": 1,
+    "source_sha256": "2455dcd654dba55017e27547558b3e51cd95017d3519dafc2205b239709d5094",
+    "enable_internet": false,
+    "is_private": true,
+    "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+    "datasets": [
+      "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+      "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+      "pilkwang/biohub-tracking-support-pack-50ep-v1"
+    ],
+    "input_kernels": [
+      "sailorren/biohub-division-train-20260914"
+    ]
+  },
+  "inventory_complete": true,
+  "inventory_pages": 5,
+  "inventory_files": 443,
+  "artifacts": [
+    {
+      "name": "bidirectional_production_runtime_integrity.json",
+      "bytes": 2387,
+      "sha256": "ae41130ee035d3ddcbaf2d0977f721429a52ffda8133fe1b877f51de5926278d",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/own_v1_20260916T051156Z/bidirectional_production_runtime_integrity.json",
+      "git_path": "experiments/BIOHUB_SPRINT01_20260916/own/output/bidirectional_production_runtime_integrity.json"
+    },
+    {
+      "name": "ppsweep_results.csv",
+      "bytes": 1394,
+      "sha256": "1492205067d8732e30daef3451865959c179c087b6690b2ccde4d51fbda91e5f",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/own_v1_20260916T051156Z/ppsweep_results.csv",
+      "git_path": "experiments/BIOHUB_SPRINT01_20260916/own/output/ppsweep_results.csv"
+    },
+    {
+      "name": "ppsweep_selected.json",
+      "bytes": 354,
+      "sha256": "24cf204fa4ce5842ae1f5ecd5855a8d83a76667088010bce22cd32f58c8e684f",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/own_v1_20260916T051156Z/ppsweep_selected.json",
+      "git_path": "experiments/BIOHUB_SPRINT01_20260916/own/output/ppsweep_selected.json"
+    },
+    {
+      "name": "run_stats.csv",
+      "bytes": 3134,
+      "sha256": "1ab34f4388e1c1f3f493c273098d415d2038f00969ac8f83b894a689bb2bc736",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/own_v1_20260916T051156Z/run_stats.csv",
+      "git_path": "experiments/BIOHUB_SPRINT01_20260916/own/output/run_stats.csv"
+    },
+    {
+      "name": "sprint_production_calls.jsonl",
+      "bytes": 550052,
+      "sha256": "3d411372eb88a2568937d056101c17561c5b302498677e7c988a1a1e431e296f",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/own_v1_20260916T051156Z/sprint_production_calls.jsonl",
+      "git_path": "experiments/BIOHUB_SPRINT01_20260916/own/output/sprint_production_calls.jsonl"
+    },
+    {
+      "name": "sprint_production_receipt.json",
+      "bytes": 631,
+      "sha256": "b1d045f0eaa022bc7578c51559d13fdb95ce1d046e7bd4f409c27b1aa1486062",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/own_v1_20260916T051156Z/sprint_production_receipt.json",
+      "git_path": "experiments/BIOHUB_SPRINT01_20260916/own/output/sprint_production_receipt.json"
+    },
+    {
+      "name": "submission.csv",
+      "bytes": 12561015,
+      "sha256": "01d070e371bb38147d603f5d26e38df782b1c95491d87a0b9210d20cc98bbca9",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/own_v1_20260916T051156Z/submission.csv"
+    },
+    {
+      "name": "validator_results.csv",
+      "bytes": 7915,
+      "sha256": "812c1b4ed60f78d21c76e9af2483a7d6d24025c17669ba357c238e4d92085156",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/own_v1_20260916T051156Z/validator_results.csv",
+      "git_path": "experiments/BIOHUB_SPRINT01_20260916/own/output/validator_results.csv"
+    }
+  ],
+  "raw_path": "downloads/BIOHUB_SPRINT01_20260916/own_v1_20260916T051156Z",
+  "csv": {
+    "status": "PASS",
+    "sha256": "01d070e371bb38147d603f5d26e38df782b1c95491d87a0b9210d20cc98bbca9",
+    "bytes": 12561015,
+    "rows": 241285,
+    "columns": [
+      "id",
+      "dataset",
+      "row_type",
+      "node_id",
+      "t",
+      "z",
+      "y",
+      "x",
+      "source_id",
+      "target_id"
+    ],
+    "datasets": [
+      {
+        "dataset": "44b6_0113de3b",
+        "nodes": 25637,
+        "edges": 24915,
+        "division_like_sources": 37
+      },
+      {
+        "dataset": "44b6_0b24845f",
+        "nodes": 20717,
+        "edges": 19428,
+        "division_like_sources": 13
+      },
+      {
+        "dataset": "6bba_05b6850b",
+        "nodes": 6152,
+        "edges": 5953,
+        "division_like_sources": 5
+      },
+      {
+        "dataset": "6bba_05db0fb1",
+        "nodes": 70290,
+        "edges": 68193,
+        "division_like_sources": 19
+      }
+    ],
+    "scope": "Ordinary output schema and graph structure; not formal score"
+  },
+  "production_receipt": {
+    "arm": "G1",
+    "weight_sha256": "0a1f9b93bb529e70f4f7c2ba0907eea8b4cecd2befccc8ba1fb75e569edf77a0",
+    "training_calls": 0,
+    "selected_label": "tight55",
+    "selected_config": {
+      "MOTION_RELINK_TIGHT_UM": 5.5
+    },
+    "calls": 72,
+    "test_calls": 8,
+    "test_datasets": [
+      "44b6_0113de3b",
+      "44b6_0b24845f",
+      "6bba_05b6850b",
+      "6bba_05db0fb1"
+    ],
+    "classifier_calls": 304,
+    "changed_calls": 8,
+    "submission_sha256": "01d070e371bb38147d603f5d26e38df782b1c95491d87a0b9210d20cc98bbca9",
+    "run_stats_sha256": "1ab34f4388e1c1f3f493c273098d415d2038f00969ac8f83b894a689bb2bc736",
+    "hidden_configuration": "UNKNOWN"
+  },
+  "actual_final_configs": {
+    "44b6_0113de3b": {
+      "SAFE_DIV_MAX_UM": 9.0,
+      "SAFE_DIV_SISTER_MAX_UM": 14.0,
+      "SAFE_DIV_DIVERGE_UM": 2.25,
+      "SAFE_DIV_SISTER_SYMMETRY_TAU": 0.6,
+      "SAFE_DIV_EXISTING_CHILD_MAX_UM": 10.0,
+      "SAFE_DIV_FRAME_FRAC_CAP": 0.0076,
+      "SAFE_DIV_GLOBAL_FRAC_CAP": 0.00375,
+      "DEEPCENTER_SAFE_DIV_THRESHOLD": 0.2,
+      "DEEPCENTER_GAP_THRESHOLD": 0.25,
+      "GAP_CLOSE_UM": 5.0,
+      "OUTPUT_MIN_TRACK_LEN": 6,
+      "SHORT_TRACK_RESCUE_MIN_MEAN_EDGE_PROB": 0.88,
+      "MOTION_RELINK_TIGHT_UM": 5.5,
+      "MOTION_RELINK_RELAXED_UM": 10.0,
+      "GAP2_MAX_STEP_UM": 4.4,
+      "GAP2_MAX_TOTAL_UM": 10.2,
+      "MOTION_RELINK_LEARNED_BONUS": 1.0,
+      "MOTION_RELINK_VELOCITY_WEIGHT": 0.5,
+      "GAP_CLOSE_REUSE_UM": 3.2,
+      "OUTPUT_EDGE_MAX_UM": 14.0
+    },
+    "44b6_0b24845f": {
+      "SAFE_DIV_MAX_UM": 9.0,
+      "SAFE_DIV_SISTER_MAX_UM": 14.0,
+      "SAFE_DIV_DIVERGE_UM": 2.25,
+      "SAFE_DIV_SISTER_SYMMETRY_TAU": 0.6,
+      "SAFE_DIV_EXISTING_CHILD_MAX_UM": 10.0,
+      "SAFE_DIV_FRAME_FRAC_CAP": 0.0076,
+      "SAFE_DIV_GLOBAL_FRAC_CAP": 0.00375,
+      "DEEPCENTER_SAFE_DIV_THRESHOLD": 0.2,
+      "DEEPCENTER_GAP_THRESHOLD": 0.25,
+      "GAP_CLOSE_UM": 5.0,
+      "OUTPUT_MIN_TRACK_LEN": 6,
+      "SHORT_TRACK_RESCUE_MIN_MEAN_EDGE_PROB": 0.88,
+      "MOTION_RELINK_TIGHT_UM": 5.5,
+      "MOTION_RELINK_RELAXED_UM": 10.0,
+      "GAP2_MAX_STEP_UM": 4.4,
+      "GAP2_MAX_TOTAL_UM": 10.2,
+      "MOTION_RELINK_LEARNED_BONUS": 1.0,
+      "MOTION_RELINK_VELOCITY_WEIGHT": 0.5,
+      "GAP_CLOSE_REUSE_UM": 3.2,
+      "OUTPUT_EDGE_MAX_UM": 14.0
+    },
+    "6bba_05b6850b": {
+      "SAFE_DIV_MAX_UM": 9.0,
+      "SAFE_DIV_SISTER_MAX_UM": 14.0,
+      "SAFE_DIV_DIVERGE_UM": 2.25,
+      "SAFE_DIV_SISTER_SYMMETRY_TAU": 0.6,
+      "SAFE_DIV_EXISTING_CHILD_MAX_UM": 10.0,
+      "SAFE_DIV_FRAME_FRAC_CAP": 0.0076,
+      "SAFE_DIV_GLOBAL_FRAC_CAP": 0.00375,
+      "DEEPCENTER_SAFE_DIV_THRESHOLD": 0.2,
+      "DEEPCENTER_GAP_THRESHOLD": 0.25,
+      "GAP_CLOSE_UM": 5.0,
+      "OUTPUT_MIN_TRACK_LEN": 6,
+      "SHORT_TRACK_RESCUE_MIN_MEAN_EDGE_PROB": 0.88,
+      "MOTION_RELINK_TIGHT_UM": 5.5,
+      "MOTION_RELINK_RELAXED_UM": 10.0,
+      "GAP2_MAX_STEP_UM": 4.4,
+      "GAP2_MAX_TOTAL_UM": 10.2,
+      "MOTION_RELINK_LEARNED_BONUS": 1.0,
+      "MOTION_RELINK_VELOCITY_WEIGHT": 0.5,
+      "GAP_CLOSE_REUSE_UM": 3.2,
+      "OUTPUT_EDGE_MAX_UM": 14.0
+    },
+    "6bba_05db0fb1": {
+      "SAFE_DIV_MAX_UM": 9.0,
+      "SAFE_DIV_SISTER_MAX_UM": 14.0,
+      "SAFE_DIV_DIVERGE_UM": 2.25,
+      "SAFE_DIV_SISTER_SYMMETRY_TAU": 0.6,
+      "SAFE_DIV_EXISTING_CHILD_MAX_UM": 10.0,
+      "SAFE_DIV_FRAME_FRAC_CAP": 0.0076,
+      "SAFE_DIV_GLOBAL_FRAC_CAP": 0.00375,
+      "DEEPCENTER_SAFE_DIV_THRESHOLD": 0.2,
+      "DEEPCENTER_GAP_THRESHOLD": 0.25,
+      "GAP_CLOSE_UM": 5.0,
+      "OUTPUT_MIN_TRACK_LEN": 6,
+      "SHORT_TRACK_RESCUE_MIN_MEAN_EDGE_PROB": 0.88,
+      "MOTION_RELINK_TIGHT_UM": 5.5,
+      "MOTION_RELINK_RELAXED_UM": 10.0,
+      "GAP2_MAX_STEP_UM": 4.4,
+      "GAP2_MAX_TOTAL_UM": 10.2,
+      "MOTION_RELINK_LEARNED_BONUS": 1.0,
+      "MOTION_RELINK_VELOCITY_WEIGHT": 0.5,
+      "GAP_CLOSE_REUSE_UM": 3.2,
+      "OUTPUT_EDGE_MAX_UM": 14.0
+    }
+  },
+  "scope": "Ordinary correctness and module-use evidence only; hidden formal score/config unknown",
+  "raw_log_sha256": "31f41bf64e9d6037ae1c324a7e0d44686baeb3045d2fec594f3a1e07de3e0b3a"
+}

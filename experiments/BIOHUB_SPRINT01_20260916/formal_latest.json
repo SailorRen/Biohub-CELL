@@ -1,0 +1,16 @@
+{
+  "observed_at_utc": "20260916T051701Z",
+  "competition": "biohub-cell-tracking-during-development",
+  "submission_id": 56270217,
+  "date_utc": "2026-09-16 05:13:20.153000",
+  "description": "BIOHUB_SPRINT01_20260916 G1 V1 SV350197436",
+  "status": "PENDING",
+  "public_score": null,
+  "error": "",
+  "version": 1,
+  "script_version_id": 350197436,
+  "kernel_id": 134551153,
+  "canonical_ref": "sailorren/biohub-sprint01-g1-frozen-inference-20260916",
+  "binding_source": "exact successful code-submission request plus prewrite source/version verification; platform detail binding checked separately",
+  "writes": 0
+}

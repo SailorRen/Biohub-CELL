@@ -194,6 +194,200 @@
       "A0_final_hash_match": false
     }
   ],
+  "supplemental_final_differences": [
+    {
+      "sample": "44b6_12dfb391",
+      "ordered_node_ids_equal": true,
+      "ordered_edges_equal": true,
+      "all_node_attributes_equal": false,
+      "coordinate_differences": {
+        "z": {
+          "nodes": 17685,
+          "max_abs": 3.552713678800501e-14
+        },
+        "y": {
+          "nodes": 17337,
+          "max_abs": 1.1368683772161603e-13
+        },
+        "x": {
+          "nodes": 17403,
+          "max_abs": 1.1368683772161603e-13
+        }
+      },
+      "local_nodes": 44959,
+      "cloud_nodes": 44959,
+      "local_edges": 43497,
+      "cloud_edges": 43497
+    },
+    {
+      "sample": "44b6_267148e4",
+      "ordered_node_ids_equal": true,
+      "ordered_edges_equal": true,
+      "all_node_attributes_equal": false,
+      "coordinate_differences": {
+        "z": {
+          "nodes": 8163,
+          "max_abs": 4.263256414560601e-14
+        },
+        "y": {
+          "nodes": 8407,
+          "max_abs": 1.1368683772161603e-13
+        },
+        "x": {
+          "nodes": 8807,
+          "max_abs": 1.7053025658242404e-13
+        }
+      },
+      "local_nodes": 22277,
+      "cloud_nodes": 22277,
+      "local_edges": 21364,
+      "cloud_edges": 21364
+    },
+    {
+      "sample": "44b6_2a2eff9f",
+      "ordered_node_ids_equal": true,
+      "ordered_edges_equal": true,
+      "all_node_attributes_equal": false,
+      "coordinate_differences": {
+        "z": {
+          "nodes": 15172,
+          "max_abs": 2.842170943040401e-14
+        },
+        "y": {
+          "nodes": 16065,
+          "max_abs": 1.1368683772161603e-13
+        },
+        "x": {
+          "nodes": 15583,
+          "max_abs": 1.1368683772161603e-13
+        }
+      },
+      "local_nodes": 40126,
+      "cloud_nodes": 40126,
+      "local_edges": 38425,
+      "cloud_edges": 38425
+    },
+    {
+      "sample": "44b6_341df25f",
+      "ordered_node_ids_equal": true,
+      "ordered_edges_equal": true,
+      "all_node_attributes_equal": false,
+      "coordinate_differences": {
+        "z": {
+          "nodes": 2929,
+          "max_abs": 2.842170943040401e-14
+        },
+        "y": {
+          "nodes": 3058,
+          "max_abs": 1.1368683772161603e-13
+        },
+        "x": {
+          "nodes": 3860,
+          "max_abs": 1.1368683772161603e-13
+        }
+      },
+      "local_nodes": 8413,
+      "cloud_nodes": 8413,
+      "local_edges": 8179,
+      "cloud_edges": 8179
+    },
+    {
+      "sample": "6bba_062c8d37",
+      "ordered_node_ids_equal": true,
+      "ordered_edges_equal": true,
+      "all_node_attributes_equal": false,
+      "coordinate_differences": {
+        "z": {
+          "nodes": 2263,
+          "max_abs": 2.842170943040401e-14
+        },
+        "y": {
+          "nodes": 2270,
+          "max_abs": 1.1368683772161603e-13
+        },
+        "x": {
+          "nodes": 2161,
+          "max_abs": 1.1368683772161603e-13
+        }
+      },
+      "local_nodes": 5853,
+      "cloud_nodes": 5853,
+      "local_edges": 5623,
+      "cloud_edges": 5623
+    },
+    {
+      "sample": "6bba_07e24132",
+      "ordered_node_ids_equal": true,
+      "ordered_edges_equal": true,
+      "all_node_attributes_equal": false,
+      "coordinate_differences": {
+        "z": {
+          "nodes": 10875,
+          "max_abs": 2.842170943040401e-14
+        },
+        "y": {
+          "nodes": 11618,
+          "max_abs": 1.1368683772161603e-13
+        },
+        "x": {
+          "nodes": 11930,
+          "max_abs": 1.1368683772161603e-13
+        }
+      },
+      "local_nodes": 29179,
+      "cloud_nodes": 29179,
+      "local_edges": 28142,
+      "cloud_edges": 28142
+    },
+    {
+      "sample": "6bba_085bf656",
+      "ordered_node_ids_equal": true,
+      "ordered_edges_equal": true,
+      "all_node_attributes_equal": false,
+      "coordinate_differences": {
+        "z": {
+          "nodes": 2996,
+          "max_abs": 2.842170943040401e-14
+        },
+        "y": {
+          "nodes": 3299,
+          "max_abs": 1.1368683772161603e-13
+        },
+        "x": {
+          "nodes": 3152,
+          "max_abs": 1.1368683772161603e-13
+        }
+      },
+      "local_nodes": 8300,
+      "cloud_nodes": 8300,
+      "local_edges": 8030,
+      "cloud_edges": 8030
+    },
+    {
+      "sample": "6bba_09961292",
+      "ordered_node_ids_equal": true,
+      "ordered_edges_equal": true,
+      "all_node_attributes_equal": false,
+      "coordinate_differences": {
+        "z": {
+          "nodes": 11331,
+          "max_abs": 2.842170943040401e-14
+        },
+        "y": {
+          "nodes": 11008,
+          "max_abs": 1.4210854715202004e-13
+        },
+        "x": {
+          "nodes": 11822,
+          "max_abs": 1.1368683772161603e-13
+        }
+      },
+      "local_nodes": 29742,
+      "cloud_nodes": 29742,
+      "local_edges": 28916,
+      "cloud_edges": 28916
+    }
+  ],
   "selection_counts": {
     "A0": {
       "SELECTED": 143,
@@ -8816,6 +9010,5 @@
   "detector_or_temporal_model_executions": 0,
   "classifier_inference_calls": 308,
   "platform_writes": 0,
-  "full_graph_local_path": "downloads/BIOHUB_SPRINT01_20260916/replay_cache/reconstructed",
-  "scope": "Exact raw, pre-safe and safe stage hashes. A0 final hash is supplemental only; any difference is not used for scoring; actual saved cloud final graphs independently scored."
+  "full_graph_local_path": "downloads/BIOHUB_SPRINT01_20260916/replay_cache/reconstructed"
 }

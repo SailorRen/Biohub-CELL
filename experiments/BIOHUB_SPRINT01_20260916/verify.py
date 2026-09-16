@@ -9,7 +9,6 @@ requests=ledger['requests'];count=collections.Counter(r['action'] for r in reque
 assert count['SaveAndRun']<=4 and count['Submission']<=2
 assert all(sum(r['action']=='Submission' and r.get('role')==role for r in requests)<=1 for role in ['own','public'])
 assert ledger['training_calls']==ledger['final_selection_changes']==0
-assert result['required_computations_complete'] is True,'REQUIRED_COMPUTATION_NOT_COMPLETE'
 assert result['public']['status']=='NO_VERIFIED_PUBLIC_CANDIDATE' or result['public']['formal_submission_id']
 collection=read('collection_v1.json');assert collection['status']=='COMPLETE' and collection['source_before_after_equal']
 assert collection['version']==1 and collection['script_version_id']==350191694
@@ -38,13 +37,17 @@ assert winner==d['selected']==result['own']['selected']
 if winner:
  assert result['own']['formal_submission_id'],'QUALIFIED_CANDIDATE_NOT_SUBMITTED'
  formal=read('formal_latest.json');ordinary=read('own_ordinary_verified.json')
- assert formal['status']=='COMPLETE' and formal['submission_id']==result['own']['formal_submission_id']
- assert math.isfinite(float(formal['public_score'])) and result['own']['public_score']==formal['public_score']
+ assert formal['submission_id']==result['own']['formal_submission_id']
+ if formal['status']=='COMPLETE':assert math.isfinite(float(formal['public_score']))
+ assert result['own']['public_score']==formal['public_score']
  assert ordinary['status']=='ORDINARY_VERIFIED' and ordinary['source_before']==ordinary['source_after']
  assert ordinary['binding']['script_version_id']==formal['script_version_id']
  assert ordinary['production_receipt']['weight_sha256']=='0a1f9b93bb529e70f4f7c2ba0907eea8b4cecd2befccc8ba1fb75e569edf77a0'
  for item in ordinary['artifacts']:
   if 'git_path' in item:assert hashlib.sha256((R/item['git_path']).read_bytes()).hexdigest()==item['sha256']
+ assert read('own_runtime_gate.json')['within_runtime_limit']
+ assert read('formal_ui_binding.json')['description']==formal['description']
+ assert read('formal_ui_binding.json')['notebook_href'].endswith('scriptVersionId='+str(formal['script_version_id']))
  assert read('own/source_review.json')['byte_identical_cells']==[0,1,2,3,4,6,7,8,9,10,11]
 else:assert not any(r['action']=='Submission' and r.get('role')=='own' for r in requests)
 assert all(r['historical_hash_match'] for r in read('gt_reader_integrity.json')['rows'])
@@ -60,4 +63,8 @@ assert sum(replay['selection_counts']['G1'].values())==154
 # Match exact frozen inherited inputs; tests above prove only task-specific behavior.
 assert subprocess.check_output(['git','branch','--show-current'],cwd=R,text=True).strip()=='codex/sprint01-20260916'
 subprocess.run(['git','merge-base','--is-ancestor','a1c5859a933e2f71269fc225bc9bbc55851cc860','HEAD'],cwd=R,check=True)
-print('PASS: fixed cohort, same inputs, original-rule preservation, repeatability, frozen selection, evidence hashes, request budgets; no claim of Public improvement')
+print('PASS_AVAILABLE_EVIDENCE: fixed cohort, same inputs, original-rule preservation, repeatability, frozen selection, evidence hashes, request budgets; no claim of Public improvement')
+
+# Keep the frozen terminal gate unchanged; pending scores never pass full acceptance.
+assert result['required_computations_complete'] is True,'REQUIRED_COMPUTATION_NOT_COMPLETE: formal score pending or unavailable'
+if winner:assert formal['status']=='COMPLETE'

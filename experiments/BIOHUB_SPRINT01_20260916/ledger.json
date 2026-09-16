@@ -48,6 +48,26 @@
         "kernelId": 134551153
       },
       "finished_at_utc": "2026-09-16T02:53:31.289707+00:00"
+    },
+    {
+      "action": "Submission",
+      "role": "own",
+      "arm": "G1",
+      "ref": "sailorren/biohub-sprint01-g1-frozen-inference-20260916",
+      "version": 1,
+      "script_version_id": 350197436,
+      "kernel_id": 134551153,
+      "at_utc": "2026-09-16T05:13:17.950438+00:00",
+      "description": "BIOHUB_SPRINT01_20260916 G1 V1 SV350197436",
+      "today_before": 0,
+      "daily_max": 5,
+      "status": "RESPONSE_RECEIVED_READBACK_REQUIRED",
+      "requests_counted": 1,
+      "response": {
+        "ref": 56270217,
+        "message": ""
+      },
+      "finished_at_utc": "2026-09-16T05:13:21.324582+00:00"
     }
   ],
   "training_calls": 0,

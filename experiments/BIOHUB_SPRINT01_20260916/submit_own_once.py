@@ -14,6 +14,7 @@ with (R/'downloads/BIOHUB_SPRINT01_20260916/write.lock').open('w') as lock:
  ledger=json.loads((P/'ledger.json').read_text());assert not any(e['action']=='Submission' and e.get('role')=='own' for e in ledger['requests'])
  assert sum(e['action']=='Submission' for e in ledger['requests'])<2 and now()<ledger['budgets']['new_request_deadline']
  assert api.get_config_value(api.CONFIG_NAME_USER)=='sailorren'
+ runtime=json.loads((P/'own_runtime_gate.json').read_text());assert runtime['within_runtime_limit'] and runtime['binding']['script_version_id']==350197436
  ordinary=json.loads((P/'own_ordinary_verified.json').read_text());assert ordinary['status']=='ORDINARY_VERIFIED'
  selection=json.loads((P/'selection_verified.json').read_text());assert selection['status']=='PASS' and selection['selected']=='G1'
  b=ordinary['binding'];ref=b['canonical_ref'];assert b['kernel_id']==134551153 and b['version']==1 and b['script_version_id']==350197436

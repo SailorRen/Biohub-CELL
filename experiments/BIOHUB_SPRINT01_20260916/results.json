@@ -1,11 +1,11 @@
 {
   "task_id": "BIOHUB_SPRINT01_20260916",
-  "status": "PARTIAL",
+  "status": "SCORE_PENDING",
   "required_computations_complete": false,
   "diagnosis_status": "EXECUTED_VERIFIED_8_FIELDS_2_EMBRYOS",
   "own": {
     "selected": "G1",
-    "ordinary_status": "RUNNING",
+    "ordinary_status": "ORDINARY_VERIFIED",
     "binding": {
       "canonical_ref": "sailorren/biohub-sprint01-g1-frozen-inference-20260916",
       "requested_ref": "sailorren/biohub-sprint01-own-g1-20260916",
@@ -16,9 +16,11 @@
       "observed_at_utc": "2026-09-16T02:55:59.257869+00:00",
       "source_readback": "own_platform_20260916T025429Z.json"
     },
-    "formal_submission_id": null,
-    "formal_status": "NOT_RUN",
-    "public_score": null
+    "formal_submission_id": 56270217,
+    "formal_status": "PENDING",
+    "public_score": null,
+    "formal_observed_at_utc": "20260916T051701Z",
+    "decision": "AWAIT_FORMAL_SCORE_NOT_PROMOTED"
   },
   "public": {
     "status": "NO_VERIFIED_PUBLIC_CANDIDATE",
@@ -34,7 +36,8 @@
     "scope": "archived 2026-09-15, not live re-read this batch"
   },
   "requests": {
-    "SaveAndRun": 2
+    "SaveAndRun": 2,
+    "Submission": 1
   },
   "training_calls": 0,
   "dataset_writes": 0,

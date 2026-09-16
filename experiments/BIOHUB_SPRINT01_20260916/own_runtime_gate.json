@@ -1,0 +1,21 @@
+{
+  "observed_at_utc": "2026-09-16T05:12:38.794216+00:00",
+  "source": "CUA exact Notebook page visible Runtime and Logs",
+  "url": "https://www.kaggle.com/code/sailorren/biohub-sprint01-g1-frozen-inference-20260916",
+  "binding": {
+    "canonical_ref": "sailorren/biohub-sprint01-g1-frozen-inference-20260916",
+    "requested_ref": "sailorren/biohub-sprint01-own-g1-20260916",
+    "kernel_id": 134551153,
+    "version": 1,
+    "script_version_id": 350197436,
+    "source": "CUA actual Edit link /code/sailorren/biohub-sprint01-g1-frozen-inference-20260916/edit/run/350197436",
+    "observed_at_utc": "2026-09-16T02:55:59.257869+00:00",
+    "source_readback": "own_platform_20260916T025429Z.json"
+  },
+  "visible_log_status": "8168.5 second run - successful",
+  "runtime_seconds": 8168.5,
+  "gpu_runtime_limit_hours": 12,
+  "within_runtime_limit": true,
+  "scope": "ordinary run only; hidden runtime unknown",
+  "output_file_count_visible": 443
+}

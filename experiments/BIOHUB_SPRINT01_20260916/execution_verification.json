@@ -1,0 +1,11 @@
+{
+  "observed_at_utc": "2026-09-16T05:16:17.512188+00:00",
+  "command": [
+    "python3",
+    "experiments/BIOHUB_SPRINT01_20260916/verify.py"
+  ],
+  "exit_code": 1,
+  "stdout": "PASS_AVAILABLE_EVIDENCE: fixed cohort, same inputs, original-rule preservation, repeatability, frozen selection, evidence hashes, request budgets; no claim of Public improvement\n",
+  "stderr": "Traceback (most recent call last):\n  File \"/Users/sailor/kaggle/\u9879\u76ee/Biohub - CELL/experiments/BIOHUB_SPRINT01_20260916/verify.py\", line 69, in <module>\n    assert result['required_computations_complete'] is True,'REQUIRED_COMPUTATION_NOT_COMPLETE: formal score pending or unavailable'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: REQUIRED_COMPUTATION_NOT_COMPLETE: formal score pending or unavailable\n",
+  "scope": "Full task gate remains blocked until formal terminal score; available evidence checked first."
+}
