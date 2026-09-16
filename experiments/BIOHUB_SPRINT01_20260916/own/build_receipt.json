@@ -1,0 +1,26 @@
+{
+  "arm": "G1",
+  "source_sha256": "de010e6ba142be0e01000093e061ef7d3388ddaa411185b40d26c63a3febe731",
+  "unchanged_original_cells": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "modified_original_cells": [
+    5
+  ],
+  "added_cells": [
+    "runtime_receipt"
+  ],
+  "original_selector_unchanged": true,
+  "production_config": "original Forge automatic selector retained; not frozen diagnostic tight55",
+  "weight_sha256": "0a1f9b93bb529e70f4f7c2ba0907eea8b4cecd2befccc8ba1fb75e569edf77a0"
+}

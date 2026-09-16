@@ -1,0 +1,141 @@
+{
+  "scope": "Actual mounted split-manifest contents; matching occurrence is not independently proof of every model training history",
+  "manifests": [
+    {
+      "path": "/kaggle/input/notebooks/sailorren/biohub-division-train-20260914/tracking_repo/kaggle_val_splits.json",
+      "sha256": "178a420289c25a69747537c6da8468a46f747c619dddf93dd9cdfe7444bf6e34",
+      "top_level_keys": null,
+      "sample_occurrences": {
+        "44b6_12dfb391": [
+          "0/test/0"
+        ],
+        "44b6_267148e4": [
+          "0/test/1"
+        ],
+        "44b6_2a2eff9f": [
+          "0/test/2"
+        ],
+        "44b6_341df25f": [
+          "0/test/3"
+        ],
+        "6bba_062c8d37": [
+          "0/test/4"
+        ],
+        "6bba_07e24132": [
+          "0/test/5"
+        ],
+        "6bba_085bf656": [
+          "0/test/6"
+        ],
+        "6bba_09961292": [
+          "0/test/7"
+        ]
+      }
+    },
+    {
+      "path": "/kaggle/input/notebooks/sailorren/biohub-division-train-20260914/tracking_repo/kaggle_test_splits_50ep.json",
+      "sha256": "75fccf5fa4771548dc8e53fa96800574cad593528ae022a968f03d481c8d5b52",
+      "top_level_keys": null,
+      "sample_occurrences": {
+        "44b6_12dfb391": [],
+        "44b6_267148e4": [],
+        "44b6_2a2eff9f": [],
+        "44b6_341df25f": [],
+        "6bba_062c8d37": [],
+        "6bba_07e24132": [],
+        "6bba_085bf656": [],
+        "6bba_09961292": []
+      }
+    },
+    {
+      "path": "/kaggle/input/notebooks/sailorren/biohub-division-train-20260914/secondary_seed_weights/unet_transformer/split_0/split_manifest.json",
+      "sha256": "cbe8ace34ffc157172280538441454b60250f0188faa063d1a9eadfb1ac55c0b",
+      "top_level_keys": [
+        "method",
+        "fold",
+        "splits_file",
+        "splits_file_sha256",
+        "train",
+        "test",
+        "base_seed",
+        "effective_seed"
+      ],
+      "sample_occurrences": {
+        "44b6_12dfb391": [
+          "train/4",
+          "test/4"
+        ],
+        "44b6_267148e4": [
+          "train/10",
+          "test/10"
+        ],
+        "44b6_2a2eff9f": [
+          "train/11",
+          "test/11"
+        ],
+        "44b6_341df25f": [
+          "train/14",
+          "test/14"
+        ],
+        "6bba_062c8d37": [
+          "train/73"
+        ],
+        "6bba_07e24132": [
+          "train/75"
+        ],
+        "6bba_085bf656": [
+          "train/76"
+        ],
+        "6bba_09961292": [
+          "train/77"
+        ]
+      }
+    },
+    {
+      "path": "/kaggle/input/datasets/pilkwang/biohub-temporal-unet3d-seed314159-v1/weights/unet_transformer/split_0/split_manifest.json",
+      "sha256": "cbe8ace34ffc157172280538441454b60250f0188faa063d1a9eadfb1ac55c0b",
+      "top_level_keys": [
+        "method",
+        "fold",
+        "splits_file",
+        "splits_file_sha256",
+        "train",
+        "test",
+        "base_seed",
+        "effective_seed"
+      ],
+      "sample_occurrences": {
+        "44b6_12dfb391": [
+          "train/4",
+          "test/4"
+        ],
+        "44b6_267148e4": [
+          "train/10",
+          "test/10"
+        ],
+        "44b6_2a2eff9f": [
+          "train/11",
+          "test/11"
+        ],
+        "44b6_341df25f": [
+          "train/14",
+          "test/14"
+        ],
+        "6bba_062c8d37": [
+          "train/73"
+        ],
+        "6bba_07e24132": [
+          "train/75"
+        ],
+        "6bba_085bf656": [
+          "train/76"
+        ],
+        "6bba_09961292": [
+          "train/77"
+        ]
+      }
+    }
+  ],
+  "full_pipeline_independent_validation": false,
+  "classifier_models": "Explicit held_out[44b6] / held_out[6bba]; runtime asserts embryo excluded from training_embryos; final never used for this diagnostic"
+}

@@ -1,0 +1,17 @@
+{
+  "src/tracking_cellmot/metrics.py": {
+    "url": "https://raw.githubusercontent.com/royerlab/kaggle-cell-tracking-competition/main/src/tracking_cellmot/metrics.py",
+    "sha256": "cfdd596e3f8909cca14db0682889738b19ff75c3808b3773175aba9367ca7444",
+    "matches_fixed": true
+  },
+  "src/tracking_cellmot/division_metrics.py": {
+    "url": "https://raw.githubusercontent.com/royerlab/kaggle-cell-tracking-competition/main/src/tracking_cellmot/division_metrics.py",
+    "sha256": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9",
+    "matches_fixed": true
+  },
+  "LICENSE": {
+    "url": "https://raw.githubusercontent.com/royerlab/kaggle-cell-tracking-competition/main/LICENSE",
+    "sha256": "3910a8b578783928cbbf981c1b204591ab3368e70017dc695d6536f71d272796",
+    "matches_fixed": true
+  }
+}

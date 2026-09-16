@@ -1,0 +1,9 @@
+{
+  "operation": "read-only GT download",
+  "first_attempt": "SSLError: UNEXPECTED_EOF_WHILE_READING",
+  "partial_files_retained": 43,
+  "recovery": "resume absent files only; use existing SDK response body instead of a redundant second GET; concurrency reduced from 4 to 2",
+  "final_receipt": "gt_fetch_receipt.json",
+  "Kaggle_write_requests": 0,
+  "signed_urls_stored": false
+}

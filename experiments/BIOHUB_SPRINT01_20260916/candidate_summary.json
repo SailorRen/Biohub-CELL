@@ -1,0 +1,78 @@
+{
+  "arms": {
+    "A0": {
+      "eligible_before_learning": 154,
+      "classifier_calls": 0,
+      "abstain": 0,
+      "filtered": 0,
+      "selected": 143,
+      "competition_or_cap": 11,
+      "fallback_frames": 0,
+      "global_cap_break_counter": 0,
+      "selection_reasons": {
+        "SELECTED": 143,
+        "FRAME_CAP": 11
+      },
+      "limitations": "replayed from exact cached pre-safe graph; selected flags and stage hashes equal actual cloud run"
+    },
+    "G1": {
+      "eligible_before_learning": 154,
+      "classifier_calls": 154,
+      "abstain": 0,
+      "filtered": 44,
+      "selected": 107,
+      "competition_or_cap": 3,
+      "fallback_frames": 0,
+      "global_cap_break_counter": 0,
+      "selection_reasons": {
+        "SELECTED": 107,
+        "LEARNED_FILTER": 44,
+        "FRAME_CAP": 3
+      },
+      "limitations": "replayed from exact cached pre-safe graph; selected flags and stage hashes equal actual cloud run"
+    },
+    "R1": {
+      "eligible_before_learning": 154,
+      "classifier_calls": 154,
+      "abstain": 0,
+      "filtered": 0,
+      "selected": 143,
+      "competition_or_cap": 11,
+      "fallback_frames": 0,
+      "global_cap_break_counter": 0,
+      "selection_reasons": {
+        "SELECTED": 143,
+        "FRAME_CAP": 11
+      },
+      "limitations": "replayed from exact cached pre-safe graph; selected flags and stage hashes equal actual cloud run"
+    }
+  },
+  "paired_rows": 308,
+  "direct_filter_changes": 44,
+  "selected_changes": {
+    "G1": 38,
+    "R1": 2
+  },
+  "stage_edge_changes": {
+    "G1": {
+      "safe_div": {
+        "added": 1,
+        "lost": 37
+      },
+      "final": {
+        "added": 5,
+        "lost": 59
+      }
+    },
+    "R1": {
+      "safe_div": {
+        "added": 1,
+        "lost": 1
+      },
+      "final": {
+        "added": 5,
+        "lost": 1
+      }
+    }
+  }
+}

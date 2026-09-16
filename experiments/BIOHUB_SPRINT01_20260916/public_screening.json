@@ -1,0 +1,102 @@
+{
+  "task_id": "BIOHUB_SPRINT01_20260916",
+  "recorded_at_utc": "2026-09-16T02:21:12.840403+00:00",
+  "observation_window_utc": "2026-09-16T02:15:00Z/2026-09-16T02:20:00Z",
+  "method": "CUA visible exact notebook version score link; card scores separated",
+  "candidates": [
+    {
+      "ref": "ravi123a321at/metric-hack-last-call",
+      "url": "https://www.kaggle.com/code/ravi123a321at/metric-hack-last-call?scriptVersionId=336602985",
+      "version": 1,
+      "script_version_id": 336602985,
+      "card_score": 0.963,
+      "exact_version_public_score": 0.885,
+      "license_visible": "Apache 2.0",
+      "scope": "DETAIL_SCORE_ONLY; first source also PARTIAL_RENDERED_SOURCE",
+      "decision": "REJECTED_SCORE_NOT_ABOVE_0.947",
+      "evidence_class": "OFFICIAL_FACT"
+    },
+    {
+      "ref": "outwrest/metric-hack-minimal-baseline-tta-2gpu",
+      "url": "https://www.kaggle.com/code/outwrest/metric-hack-minimal-baseline-tta-2gpu?scriptVersionId=335859069",
+      "version": 1,
+      "script_version_id": 335859069,
+      "card_score": 0.95,
+      "exact_version_public_score": 0.877,
+      "license_visible": "Apache 2.0",
+      "scope": "DETAIL_SCORE_ONLY; first source also PARTIAL_RENDERED_SOURCE",
+      "decision": "REJECTED_SCORE_NOT_ABOVE_0.947",
+      "evidence_class": "OFFICIAL_FACT"
+    },
+    {
+      "ref": "muhammaddanyalmalik/cell-tracking",
+      "url": "https://www.kaggle.com/code/muhammaddanyalmalik/cell-tracking?scriptVersionId=336445398",
+      "version": 1,
+      "script_version_id": 336445398,
+      "card_score": 0.95,
+      "exact_version_public_score": 0.877,
+      "license_visible": "Apache 2.0",
+      "scope": "DETAIL_SCORE_ONLY; first source also PARTIAL_RENDERED_SOURCE",
+      "decision": "REJECTED_SCORE_NOT_ABOVE_0.947",
+      "evidence_class": "OFFICIAL_FACT"
+    },
+    {
+      "ref": "anvithpothula/biohub-0-95",
+      "url": "https://www.kaggle.com/code/anvithpothula/biohub-0-95?scriptVersionId=337000331",
+      "version": 1,
+      "script_version_id": 337000331,
+      "card_score": 0.95,
+      "exact_version_public_score": 0.877,
+      "license_visible": "Apache 2.0",
+      "scope": "DETAIL_SCORE_ONLY; first source also PARTIAL_RENDERED_SOURCE",
+      "decision": "REJECTED_SCORE_NOT_ABOVE_0.947",
+      "evidence_class": "OFFICIAL_FACT"
+    },
+    {
+      "ref": "ravi123a321at/dark-agi-biohub-cell-tracking-solution",
+      "url": "https://www.kaggle.com/code/ravi123a321at/dark-agi-biohub-cell-tracking-solution?scriptVersionId=336441527",
+      "version": 1,
+      "script_version_id": 336441527,
+      "card_score": 0.95,
+      "exact_version_public_score": 0.877,
+      "license_visible": "Apache 2.0",
+      "scope": "DETAIL_SCORE_ONLY; first source also PARTIAL_RENDERED_SOURCE",
+      "decision": "REJECTED_SCORE_NOT_ABOVE_0.947",
+      "evidence_class": "OFFICIAL_FACT"
+    }
+  ],
+  "recently_run_first_page": "20 entries inspected; no score above 0.947 observed; unscored entries not treated as scored",
+  "full_notebook_deep_reads": 0,
+  "public_save_run_requests": 0,
+  "public_submission_requests": 0,
+  "status": "NO_VERIFIED_PUBLIC_CANDIDATE",
+  "closed_at_utc": "2026-09-16T02:22:56.710423+00:00",
+  "active_search_minutes_upper_bound": 25,
+  "reason": "Five higher-score cards failed exact-version score check; recent list and discussions did not expose a qualified stronger pure-inference notebook.",
+  "discussions": [
+    {
+      "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/740145",
+      "scope": "visible main text and comments",
+      "finding": "end2end linker raw edge JA about .90 is AUTHOR_CLAIM, not formal Public >.947; no exact stronger submission"
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/738217",
+      "scope": "visible main text/comments; 3 collapsed replies not read",
+      "finding": "FOCUS-3D/HOCT links and local .9557 author claim; no precise notebook version or formal score binding"
+    }
+  ],
+  "repositories": [
+    {
+      "repo": "royerlab/hoct",
+      "branch": "main",
+      "commit": "2ccc5040823bc944ab67790abd1f56eea7cd4f05",
+      "files_read": [
+        "README.md",
+        "src/hoct/_models.py"
+      ],
+      "scope": "README_AND_MODEL_REGISTRY_ONLY",
+      "finding": "general_v1 frozen pretrained weight registry exists; requires image and segmentation input. No exact Kaggle score >.947 in inspected sources. Not a qualified P1; no download or run.",
+      "weight_registry_sha256": "5bd836dfcb15ad796ea79a9595841a3e73b650a71c4acba3fc66aac65d745b33"
+    }
+  ]
+}

@@ -1,0 +1,1615 @@
+{
+  "observed_at_utc": "20260916T024442Z",
+  "ref": "sailorren/biohub-sprint01-diagnostic-20260916",
+  "version": 1,
+  "script_version_id": 350191694,
+  "kernel_id": 134548482,
+  "status": "COMPLETE",
+  "source_sha256": "214a01795b9608415784bd05b0732e6e537a42b17c8fd4b1454aed0674391d6e",
+  "source_before_after_equal": true,
+  "inventory_pages": 5,
+  "inventory_complete": true,
+  "files": [
+    {
+      "name": "bidirectional_production_runtime_integrity.json",
+      "bytes": 2387,
+      "sha256": "ae41130ee035d3ddcbaf2d0977f721429a52ffda8133fe1b877f51de5926278d",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/bidirectional_production_runtime_integrity.json",
+      "git_path": "experiments/BIOHUB_SPRINT01_20260916/output_v1/bidirectional_production_runtime_integrity.json"
+    },
+    {
+      "name": "official_scorer_075fc5/LICENSE"
+    },
+    {
+      "name": "official_scorer_075fc5/__init__.py"
+    },
+    {
+      "name": "official_scorer_075fc5/__pycache__/__init__.cpython-312.pyc"
+    },
+    {
+      "name": "official_scorer_075fc5/__pycache__/division_metrics.cpython-312.pyc"
+    },
+    {
+      "name": "official_scorer_075fc5/__pycache__/metrics.cpython-312.pyc"
+    },
+    {
+      "name": "official_scorer_075fc5/division_metrics.py"
+    },
+    {
+      "name": "official_scorer_075fc5/metrics.py"
+    },
+    {
+      "name": "secondary_seed_weights/unet_transformer/split_0/SNAPSHOT_MANIFEST.json"
+    },
+    {
+      "name": "secondary_seed_weights/unet_transformer/split_0/checkpoint_last.pth"
+    },
+    {
+      "name": "secondary_seed_weights/unet_transformer/split_0/config.json"
+    },
+    {
+      "name": "secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth"
+    },
+    {
+      "name": "secondary_seed_weights/unet_transformer/split_0/history.csv"
+    },
+    {
+      "name": "secondary_seed_weights/unet_transformer/split_0/split_manifest.json"
+    },
+    {
+      "name": "secondary_seed_weights/unet_transformer/split_0/training_config.json"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_11_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_13_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_15_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_16_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_17_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_19_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_20_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_21_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_22_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_25_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_26_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_27_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_28_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_29_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_2_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_31_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_32_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_33_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_35_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_37_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_38_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_39_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_3_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_40_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_41_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_42_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_43_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_44_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_45_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_46_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_47_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_49_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_50_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_51_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_52_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_53_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_54_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_55_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_56_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_57_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_58_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_59_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_60_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_61_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_62_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_63_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_66_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_67_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_68_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_69_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_6_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_70_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_71_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_72_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_73_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_74_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_75_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_76_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_77_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_78_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_79_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_7_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_80_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_81_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_82_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_83_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_85_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_86_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_87_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_88_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_89_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_8_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_90_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_91_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_92_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_93_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_94_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_95_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_9_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_A0_graph.json",
+      "bytes": 17613428,
+      "sha256": "0d1a4f91a1cc710bb59f0edfe8f81614ff2833209cf02d717fbc26050406f784",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_12dfb391_A0_graph.json"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_A0_repeat_graph.json"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_G1_graph.json",
+      "bytes": 17613246,
+      "sha256": "767a8d2ec5e469e2123c420aff07ca38d966f6f72504a289bd6bcbeba934bd77",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_12dfb391_G1_graph.json"
+    },
+    {
+      "name": "sprint_cache/44b6_12dfb391_R1_graph.json",
+      "bytes": 17613428,
+      "sha256": "06042f9a5d21202718f74bbc1f4e9ec4fa2011895c092aa44d416f151a66de30",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_12dfb391_R1_graph.json"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_10_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_11_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_12_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_13_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_14_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_15_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_16_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_17_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_18_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_19_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_1_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_21_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_23_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_24_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_25_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_26_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_27_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_28_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_29_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_2_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_30_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_31_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_33_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_34_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_35_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_36_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_37_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_38_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_39_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_3_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_40_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_41_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_42_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_44_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_45_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_46_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_47_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_48_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_49_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_4_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_50_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_51_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_52_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_54_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_55_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_56_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_57_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_58_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_59_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_60_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_61_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_62_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_65_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_66_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_67_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_69_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_73_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_74_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_75_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_76_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_77_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_78_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_79_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_7_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_80_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_81_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_82_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_83_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_84_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_85_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_86_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_87_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_89_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_8_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_90_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_93_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_94_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_96_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_9_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_A0_graph.json",
+      "bytes": 8819235,
+      "sha256": "dfe4a61a3076524e1894840c37faeca0dba7ba99c9b0001174e4fa32a78ba08f",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_267148e4_A0_graph.json"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_A0_repeat_graph.json"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_G1_graph.json",
+      "bytes": 8811763,
+      "sha256": "e26d4a42eeb187aef0a717a60fb1da80f7d62494d0084820e35df55ba6b51786",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_267148e4_G1_graph.json"
+    },
+    {
+      "name": "sprint_cache/44b6_267148e4_R1_graph.json",
+      "bytes": 8821010,
+      "sha256": "cb28fbc48771dec96f26a183e26e418afca12a9c70e2c7effa12536448bc983a",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_267148e4_R1_graph.json"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_10_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_11_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_12_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_13_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_14_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_15_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_16_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_17_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_18_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_19_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_1_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_20_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_21_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_22_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_23_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_24_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_25_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_26_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_27_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_28_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_29_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_2_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_30_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_31_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_32_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_33_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_34_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_35_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_36_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_37_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_38_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_39_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_3_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_40_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_41_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_42_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_43_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_44_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_45_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_46_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_47_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_48_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_49_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_4_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_50_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_52_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_53_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_54_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_55_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_56_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_57_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_58_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_59_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_5_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_60_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_61_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_62_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_63_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_64_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_65_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_66_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_67_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_68_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_69_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_6_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_70_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_71_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_72_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_73_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_74_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_75_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_76_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_77_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_78_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_79_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_7_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_80_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_81_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_82_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_83_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_84_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_86_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_87_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_88_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_89_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_8_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_90_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_91_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_92_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_93_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_94_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_95_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_96_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_9_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_A0_graph.json",
+      "bytes": 15779321,
+      "sha256": "416c2ca716dabd00e522846bf6374253ac3f6d8ca8acdc3eb92a14c43afd19b4",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_2a2eff9f_A0_graph.json"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_A0_repeat_graph.json"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_G1_graph.json",
+      "bytes": 15775201,
+      "sha256": "8680482c0b07755e1f479252d3fb65b9f8677d331ce89eb39b21d8321b805917",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_2a2eff9f_G1_graph.json"
+    },
+    {
+      "name": "sprint_cache/44b6_2a2eff9f_R1_graph.json",
+      "bytes": 15779321,
+      "sha256": "024d2de4b0e36739c632494ce2bf47d510a89d84892449e74039b532f0bcab18",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_2a2eff9f_R1_graph.json"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_10_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_11_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_16_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_19_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_1_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_20_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_23_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_24_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_25_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_27_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_29_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_30_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_32_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_37_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_3_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_44_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_45_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_46_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_49_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_51_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_52_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_57_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_59_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_5_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_62_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_65_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_69_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_6_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_71_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_80_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_95_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_A0_graph.json",
+      "bytes": 3279836,
+      "sha256": "c8692f779bb08946cb68a6a12b4f8b4ee6898c1317db5075bd1038a0718e86c3",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_341df25f_A0_graph.json"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_A0_repeat_graph.json"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_G1_graph.json",
+      "bytes": 3279387,
+      "sha256": "99189227784a45cf38eb44d04e0db95a9707c7d27110100b52bee9dfacd04c07",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_341df25f_G1_graph.json"
+    },
+    {
+      "name": "sprint_cache/44b6_341df25f_R1_graph.json",
+      "bytes": 3279836,
+      "sha256": "c8692f779bb08946cb68a6a12b4f8b4ee6898c1317db5075bd1038a0718e86c3",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_341df25f_R1_graph.json"
+    },
+    {
+      "name": "sprint_cache/6bba_062c8d37_11_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_062c8d37_14_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_062c8d37_17_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_062c8d37_1_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_062c8d37_23_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_062c8d37_29_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_062c8d37_33_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_062c8d37_35_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_062c8d37_40_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_062c8d37_52_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_062c8d37_5_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_062c8d37_63_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_062c8d37_90_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_062c8d37_A0_graph.json",
+      "bytes": 2278707,
+      "sha256": "e5f2d6db3c5c81a7dd72630ab71ed0f33810b8661c5adefaaf4da671328ebbf3",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_062c8d37_A0_graph.json"
+    },
+    {
+      "name": "sprint_cache/6bba_062c8d37_A0_repeat_graph.json"
+    },
+    {
+      "name": "sprint_cache/6bba_062c8d37_G1_graph.json",
+      "bytes": 2278399,
+      "sha256": "68ac0602e14f3462ba85eda91b79f2244837bae25f71805d3d8bd1c9beb23ae7",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_062c8d37_G1_graph.json"
+    },
+    {
+      "name": "sprint_cache/6bba_062c8d37_R1_graph.json",
+      "bytes": 2278707,
+      "sha256": "e5f2d6db3c5c81a7dd72630ab71ed0f33810b8661c5adefaaf4da671328ebbf3",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_062c8d37_R1_graph.json"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_10_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_11_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_12_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_13_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_14_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_15_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_18_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_19_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_1_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_20_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_21_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_22_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_23_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_24_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_27_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_28_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_29_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_2_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_30_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_31_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_32_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_33_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_34_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_35_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_36_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_37_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_38_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_39_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_3_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_41_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_43_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_45_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_46_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_47_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_48_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_4_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_50_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_51_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_53_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_55_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_56_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_57_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_58_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_5_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_60_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_62_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_66_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_67_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_6_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_72_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_75_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_76_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_77_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_79_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_7_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_81_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_82_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_83_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_84_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_86_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_90_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_91_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_92_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_94_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_9_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_A0_graph.json",
+      "bytes": 11347307,
+      "sha256": "3a68961c98d926fd2eec742c3b78a3c698cdb2838e27544ff744c3c6661161bf",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_07e24132_A0_graph.json"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_A0_repeat_graph.json"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_G1_graph.json",
+      "bytes": 11347055,
+      "sha256": "7cab73bba0bb052a349e5f01de3d7814df3ca87c5ce5f1d7af3ba8a63a924b70",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_07e24132_G1_graph.json"
+    },
+    {
+      "name": "sprint_cache/6bba_07e24132_R1_graph.json",
+      "bytes": 11347307,
+      "sha256": "3a68961c98d926fd2eec742c3b78a3c698cdb2838e27544ff744c3c6661161bf",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_07e24132_R1_graph.json"
+    },
+    {
+      "name": "sprint_cache/6bba_085bf656_10_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_085bf656_11_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_085bf656_14_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_085bf656_17_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_085bf656_28_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_085bf656_2_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_085bf656_31_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_085bf656_32_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_085bf656_44_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_085bf656_46_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_085bf656_48_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_085bf656_53_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_085bf656_5_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_085bf656_77_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_085bf656_7_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_085bf656_83_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_085bf656_9_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_085bf656_A0_graph.json",
+      "bytes": 3285079,
+      "sha256": "32b5b268d888f178b2e25906c6b68dbca8941d930e72ef2b3517b1c6d0131547",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_085bf656_A0_graph.json"
+    },
+    {
+      "name": "sprint_cache/6bba_085bf656_A0_repeat_graph.json"
+    },
+    {
+      "name": "sprint_cache/6bba_085bf656_G1_graph.json",
+      "bytes": 3285079,
+      "sha256": "32b5b268d888f178b2e25906c6b68dbca8941d930e72ef2b3517b1c6d0131547",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_085bf656_G1_graph.json"
+    },
+    {
+      "name": "sprint_cache/6bba_085bf656_R1_graph.json",
+      "bytes": 3285079,
+      "sha256": "32b5b268d888f178b2e25906c6b68dbca8941d930e72ef2b3517b1c6d0131547",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_085bf656_R1_graph.json"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_10_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_11_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_13_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_14_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_17_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_19_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_1_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_20_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_22_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_23_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_24_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_25_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_28_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_29_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_30_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_32_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_38_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_39_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_40_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_43_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_44_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_45_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_46_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_47_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_48_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_4_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_52_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_55_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_56_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_58_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_5_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_60_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_62_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_63_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_66_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_68_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_6_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_70_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_71_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_72_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_73_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_76_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_78_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_85_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_86_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_87_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_88_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_8_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_92_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_93_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_94_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_95_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_96_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_9_deepcenter.npy"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_A0_graph.json",
+      "bytes": 11612939,
+      "sha256": "38855009ca187ac3f5d03ef7bfe04049a1a0ae7d09364873bae63b260b074c19",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_09961292_A0_graph.json"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_A0_repeat_graph.json"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_G1_graph.json",
+      "bytes": 11611949,
+      "sha256": "310b1d47a77c2897e5c529772f15a23299911323bb5932fc4104926fbb73a8f3",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_09961292_G1_graph.json"
+    },
+    {
+      "name": "sprint_cache/6bba_09961292_R1_graph.json",
+      "bytes": 11612939,
+      "sha256": "5b25a293e48863c9978450bb0f9fb33789554bcd1ba8c285ba7c56679e2ef972",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_09961292_R1_graph.json"
+    },
+    {
+      "name": "sprint_cache/refinement_cache.json"
+    },
+    {
+      "name": "sprint_small/candidate_decisions.json",
+      "bytes": 166796,
+      "sha256": "8ac19a491b3f609de9266ae4b1071e9bdecb28345382ad532dcdd601f9dbf4a3",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_small/candidate_decisions.json",
+      "git_path": "experiments/BIOHUB_SPRINT01_20260916/output_v1/candidate_decisions.json"
+    },
+    {
+      "name": "sprint_small/changed_edges.json",
+      "bytes": 48723,
+      "sha256": "b24b7343048f7659fd7dd4efddb1f7f75c9bf5bd88bf26f645cc554a2d2ffd02",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_small/changed_edges.json",
+      "git_path": "experiments/BIOHUB_SPRINT01_20260916/output_v1/changed_edges.json"
+    },
+    {
+      "name": "sprint_small/diagnostic_results.json",
+      "bytes": 100685,
+      "sha256": "4c6b0a7427e3834685d4c044d1662fff0acead6ce2cffd28a0db767c107c3230",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_small/diagnostic_results.json",
+      "git_path": "experiments/BIOHUB_SPRINT01_20260916/output_v1/diagnostic_results.json"
+    },
+    {
+      "name": "sprint_small/progress.json",
+      "bytes": 129,
+      "sha256": "ac6a41c76cd279d6f90d6f0793bd893c5ee2190737b4a423e5fabc737e0eddd8",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_small/progress.json",
+      "git_path": "experiments/BIOHUB_SPRINT01_20260916/output_v1/progress.json"
+    },
+    {
+      "name": "sprint_small/stages.json",
+      "bytes": 166607,
+      "sha256": "b3bb16b3af7046d08260f909950bd521b86a45961736c7c7bf9af27aac90bca9",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_small/stages.json",
+      "git_path": "experiments/BIOHUB_SPRINT01_20260916/output_v1/stages.json"
+    },
+    {
+      "name": "sprint_small/upstream_split_manifests.json",
+      "bytes": 14182,
+      "sha256": "cc7b189b790054839aed73c3cef111150c572c18c7b8bb82d62479010bf67e3f",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_small/upstream_split_manifests.json",
+      "git_path": "experiments/BIOHUB_SPRINT01_20260916/output_v1/upstream_split_manifests.json"
+    },
+    {
+      "name": "tracking_repo/scripts/augmentations.py"
+    },
+    {
+      "name": "tracking_repo/scripts/dataspec.py"
+    },
+    {
+      "name": "tracking_repo/scripts/evaluate.py"
+    },
+    {
+      "name": "tracking_repo/scripts/predict_unet_transformer.py"
+    },
+    {
+      "name": "tracking_repo/scripts/train_unet_transformer.py"
+    },
+    {
+      "name": "tracking_repo/src/biohub_tracking/__init__.py"
+    },
+    {
+      "name": "tracking_repo/src/biohub_tracking/division_metrics.py"
+    },
+    {
+      "name": "tracking_repo/src/biohub_tracking/img_proc.py"
+    },
+    {
+      "name": "tracking_repo/src/biohub_tracking/io.py"
+    },
+    {
+      "name": "tracking_repo/src/biohub_tracking/metrics.py"
+    },
+    {
+      "name": "tracking_repo/src/biohub_tracking/models/__init__.py"
+    },
+    {
+      "name": "tracking_repo/src/biohub_tracking/models/simple_node_transformer.py"
+    },
+    {
+      "name": "tracking_repo/src/biohub_tracking/models/temporal_unet.py"
+    }
+  ],
+  "raw_log_sha256": "8c52b9d986fb8e12f205b9ed981e5bb30670a0804e913d6111ac84514d6bd4d3",
+  "raw_log_bytes": 49212,
+  "raw_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z",
+  "writes": 0
+}

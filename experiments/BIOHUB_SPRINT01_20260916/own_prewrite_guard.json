@@ -1,0 +1,11 @@
+{
+  "first_guard_result": "STOPPED_BEFORE_WRITE",
+  "reason": "exact equality on independent CPU/remote aggregate floating-point sums",
+  "local": 0.9434057263411257,
+  "remote": 0.9434057263411255,
+  "difference": 2.220446049250313e-16,
+  "verification_tolerance": 1e-12,
+  "selection_rule_changed": false,
+  "request_reserved": false,
+  "save_requests_sent": 0
+}

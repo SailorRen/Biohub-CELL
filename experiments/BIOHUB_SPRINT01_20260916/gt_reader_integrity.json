@@ -1,0 +1,61 @@
+{
+  "scope": "Original IndexedRXGraph reader ordering, compared with historical exact-version GT input hashes; raw array order was different and is not used",
+  "rows": [
+    {
+      "sample": "44b6_12dfb391",
+      "nodes": 788,
+      "edges": 773,
+      "hash": "c6011d3bc4e095e59278cbf7a833d3bf40fb009c62dd9f9ca22904b072be619b",
+      "historical_hash_match": true
+    },
+    {
+      "sample": "44b6_267148e4",
+      "nodes": 280,
+      "edges": 277,
+      "hash": "e49345f7586d669ccfae3d935039aa833362c058a4103ecd9be24dd17774d6f4",
+      "historical_hash_match": true
+    },
+    {
+      "sample": "44b6_2a2eff9f",
+      "nodes": 214,
+      "edges": 210,
+      "hash": "0d65bb8e038d7cc0e5cc0494bbf5a0c2ee68a10f7ebadc14044ce03fdbff91b5",
+      "historical_hash_match": true
+    },
+    {
+      "sample": "44b6_341df25f",
+      "nodes": 216,
+      "edges": 209,
+      "hash": "737532e3cafe8e86ebfa9fcc4190c7860e0127f45756761f5503e894a815cfef",
+      "historical_hash_match": true
+    },
+    {
+      "sample": "6bba_062c8d37",
+      "nodes": 930,
+      "edges": 898,
+      "hash": "00789e40cd27ab4c522884eac7fbb4ffc55e641c9647a402316c63042123056d",
+      "historical_hash_match": true
+    },
+    {
+      "sample": "6bba_07e24132",
+      "nodes": 359,
+      "edges": 345,
+      "hash": "cedf0c3a2f8cfcdca4c75c6c1b1e8519512ddcc654aba5eb471c2b4ff7f3580d",
+      "historical_hash_match": true
+    },
+    {
+      "sample": "6bba_085bf656",
+      "nodes": 1198,
+      "edges": 1168,
+      "hash": "64990f20b37c73ab00ddce538fd8dbd8540111ad33623ad8ff815bdbe569a3ac",
+      "historical_hash_match": true
+    },
+    {
+      "sample": "6bba_09961292",
+      "nodes": 1950,
+      "edges": 1871,
+      "hash": "2dce94f7f71d489e6e6626b945161c919b0e248d47aadb6717d1776c5c190972",
+      "historical_hash_match": true
+    }
+  ]
+}

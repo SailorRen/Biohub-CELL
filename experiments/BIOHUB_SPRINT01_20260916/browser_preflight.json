@@ -1,0 +1,15 @@
+{
+  "observed_at_utc": "2026-09-16T02:05:00Z",
+  "source": "CUA authenticated Kaggle exact competition pages",
+  "account_display": "Sailor Ren",
+  "rules_url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/rules",
+  "rules_accepted_text": "You have accepted the rules for this competition. Good luck!",
+  "deadline": "2026-09-29T23:59:00Z",
+  "requirements": {
+    "gpu_hours_max": 12,
+    "internet": false,
+    "submission_file": "submission.csv"
+  },
+  "evaluation": "score = adjusted_edge_jaccard + 0.1 × division_jaccard; distance 7um; scale 1.625/0.40625/0.40625; weighted edges and micro divisions",
+  "changes": 0
+}

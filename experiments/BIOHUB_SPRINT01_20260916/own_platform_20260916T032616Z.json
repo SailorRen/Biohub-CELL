@@ -1,0 +1,17 @@
+{
+  "observed_at_utc": "20260916T032616Z",
+  "requested_ref": "sailorren/biohub-sprint01-own-g1-20260916",
+  "canonical_ref": "sailorren/biohub-sprint01-g1-frozen-inference-20260916",
+  "kernel_id": 134551153,
+  "version": 1,
+  "source_sha256": "2455dcd654dba55017e27547558b3e51cd95017d3519dafc2205b239709d5094",
+  "cell_sources_equal": true,
+  "status": "KernelWorkerStatus.RUNNING",
+  "writes": 0,
+  "input_kernels": [
+    "sailorren/biohub-division-train-20260914"
+  ],
+  "log_bytes": 0,
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "files_first_page": []
+}

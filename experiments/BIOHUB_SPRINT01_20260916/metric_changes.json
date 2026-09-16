@@ -1,0 +1,44 @@
+[
+  {
+    "sample": "44b6_267148e4",
+    "arm": "G1",
+    "changes": {
+      "t_pred": {
+        "A0": 22277,
+        "candidate": 22263
+      },
+      "adj_edge_jaccard": {
+        "A0": 0.813196071598181,
+        "candidate": 0.8132565795093085
+      }
+    }
+  },
+  {
+    "sample": "44b6_2a2eff9f",
+    "arm": "G1",
+    "changes": {
+      "t_pred": {
+        "A0": 40126,
+        "candidate": 40117
+      },
+      "adj_edge_jaccard": {
+        "A0": 0.8818396782311838,
+        "candidate": 0.881853364050394
+      }
+    }
+  },
+  {
+    "sample": "44b6_267148e4",
+    "arm": "R1",
+    "changes": {
+      "t_pred": {
+        "A0": 22277,
+        "candidate": 22282
+      },
+      "adj_edge_jaccard": {
+        "A0": 0.813196071598181,
+        "candidate": 0.8131744616299211
+      }
+    }
+  }
+]

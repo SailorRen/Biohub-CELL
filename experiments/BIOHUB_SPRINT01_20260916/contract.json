@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_SPRINT01_20260916",
+  "goal": "执行固定A0/G1/R1诊断与独立公开候选筛选，合格者在预算内正式提交并回收真实状态；缺必需执行保持PARTIAL/BLOCKED。",
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "scope": {
+    "save_run_max": 4,
+    "submission_max": 2,
+    "private_dataset_versions_max": 1,
+    "fit_max": 0,
+    "start": "2026-09-16T02:03:31Z",
+    "new_request_deadline": "2026-09-18T02:03:31Z",
+    "base": "a1c5859a933e2f71269fc225bc9bbc55851cc860"
+  },
+  "acceptance": [
+    {
+      "id": "instruction",
+      "type": "file",
+      "path": "tasks/CODEX_20260916_BIOHUB_SPRINT01.md",
+      "sha256": "cbdbe51f3948b57b7387a101234354d769fe3cbe91eb8959f04f634605dae17c"
+    },
+    {
+      "id": "verification",
+      "type": "command",
+      "argv": [
+        "python3",
+        "experiments/BIOHUB_SPRINT01_20260916/verify.py"
+      ],
+      "expected_exit": 0,
+      "timeout_seconds": 120
+    },
+    {
+      "id": "executed-evaluation",
+      "type": "json",
+      "path": "experiments/BIOHUB_SPRINT01_20260916/results.json",
+      "assertions": [
+        {
+          "pointer": "/required_computations_complete",
+          "op": "equals",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "report",
+      "type": "file",
+      "path": "reports/20260916_BIOHUB_SPRINT01_RESULTS.md",
+      "min_bytes": 1000
+    },
+    {
+      "id": "git",
+      "type": "git",
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true
+    }
+  ]
+}

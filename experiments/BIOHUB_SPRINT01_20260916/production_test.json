@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "experiments/BIOHUB_SPRINT01_20260916/test_production_module.py"
+  ],
+  "observed_at_utc": "2026-09-16T02:54:58.396183+00:00",
+  "exit_code": 0,
+  "stdout": "SPRINT_PRODUCTION_SAFE_DIV synthetic final 1 0 1\n",
+  "stderr": ".\n----------------------------------------------------------------------\nRan 1 test in 0.004s\n\nOK\n",
+  "source_sha256": "b90b4fe6161b53391946b2eb9c07acaa0b17c9d02c25fae90406984054569cb5",
+  "earlier_fixture_error": "Synthetic stats initially omitted original zero-valued keys; corrected fixture, production wrapper unchanged"
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "path": "reports/20260915_分裂训练版差异诊断.md",
+    "bytes": 13080,
+    "sha256": "ec3081902c0bfd1bed3c28a788717f0663cf06f5d5fa36fd9b8c1b06f3538c17"
+  },
+  {
+    "path": "experiments/DIVISION_DIAG_20260915/diagnosis.json",
+    "bytes": 7868,
+    "sha256": "0044b30eb8e86c698a0c0de2a164cd987ea9902937f62e2e20a01e39f2c11d86"
+  },
+  {
+    "path": "experiments/DIVISION_DIAG_20260915/training_runtime_summary.json",
+    "bytes": 5337,
+    "sha256": "4da22c86691dbb22cba99baf55b5280dbc3100d852406fd0095752f58709ad2c"
+  },
+  {
+    "path": "experiments/DIVISION_DIAG_20260915/cache_audit.json",
+    "bytes": 5080,
+    "sha256": "d50b6d8f403dcb6ecbb57f5ade505f2f6e9bf991410bd0ec19614776d52de280"
+  },
+  {
+    "path": "experiments/DIVISION_DIAG_20260915/controlled_config.json",
+    "bytes": 1778,
+    "sha256": "b10df2d8de099e324afcafe794e646753e179c26fba486ab74f8498a670b9a0c"
+  },
+  {
+    "path": "experiments/DIVISION_DIAG_20260915/safe_div_static.diff",
+    "bytes": 3420,
+    "sha256": "394f7013c1d402a333baee52b8407a0fa662be09af29397d122af1feae772d74"
+  },
+  {
+    "path": "experiments/TARGET950_20260914/baseline/candidate.ipynb",
+    "bytes": 221906,
+    "sha256": "bb6dbf2766fff1b4f7d1c96f3c1145c700d4d44e4695d924c7be8ccbe1b07af7"
+  },
+  {
+    "path": "experiments/TARGET950_20260914/candidate.ipynb",
+    "bytes": 292572,
+    "sha256": "c38460def079f45749a8a3d85d6549dada0ec0343e2eed66bee3c7c40db4ae43"
+  },
+  {
+    "path": "experiments/SCORE_RECOVERY_20260915/division_remote_source.ipynb",
+    "bytes": 298663,
+    "sha256": "53f50c62047b0c8e1e80ca2969acbdaac37b9ad443e8efa4c7275a38145f7ae5"
+  },
+  {
+    "path": "experiments/TARGET950_20260914/official_selector_adapter.py",
+    "bytes": 11086,
+    "sha256": "3f12b1fdf3ecd2c7492f4577dbee00b964334abb861938e9ffbad9f84edaae9b"
+  }
+]

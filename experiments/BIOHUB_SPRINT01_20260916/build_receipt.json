@@ -1,0 +1,19 @@
+{
+  "source_sha256": "288f17190c91aa84630ce5e87388bd633e90b5fcbdaabf7b095c7f2688c7a490",
+  "cells": 9,
+  "training_functions_excluded": true,
+  "original_inference_cells_excluded": [
+    4,
+    7
+  ],
+  "cached_prediction_source": "Division V1",
+  "original_postprocess_sha256": "1cdeb9eb90a61b62198a48a3b9c1e9d7c271ee0b18a57159c56f3498d3a3491c",
+  "pure_function_names": [
+    "context",
+    "design",
+    "pair_features",
+    "point",
+    "predict"
+  ],
+  "no_auto_pp_search": true
+}

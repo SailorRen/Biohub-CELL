@@ -1,0 +1,329 @@
+--- Forge947_cell5
++++ Sprint01_G1_cell5
+@@ -1162,6 +1162,181 @@
+         stats["safe_divisions_added"] = len(added)
+         return [*edges, *added]
+     return edges
++_sprint_original_safe_div=add_safe_divisions_postlink
++def add_safe_divisions_postlink(
++    nodes_by_id: dict[int, dict[str, object]],
++    edges: list[dict[str, object]],
++    stats: dict[str, int],
++    dataset: str | None = None,
++    deepcenter_bundle: dict[str, object] | None = None,
++    frame_cache: dict[int, np.ndarray] | None = None,
++    deepcenter_cache: dict[tuple[str, int], np.ndarray] | None = None,
++) -> list[dict[str, object]]:
++    if not OUTPUT_SAFE_DIVISIONS or not edges or not nodes_by_id:
++        return edges
++    frame_cache = frame_cache if frame_cache is not None else {}
++    deepcenter_cache = deepcenter_cache if deepcenter_cache is not None else {}
++ 
++    out_by_source: dict[int, list[dict[str, object]]] = {}
++    incoming: set[int] = set()
++    for edge in edges:
++        out_by_source.setdefault(int(edge["source_id"]), []).append(edge)
++        incoming.add(int(edge["target_id"]))
++ 
++    ids_by_t: dict[int, list[int]] = {}
++    for node_id, node in nodes_by_id.items():
++        ids_by_t.setdefault(int(node["t"]), []).append(node_id)
++ 
++    existing_edges = {(int(edge["source_id"]), int(edge["target_id"])) for edge in edges}
++    global_cap = max(1, int(round(max(1, len(edges)) * SAFE_DIV_GLOBAL_FRAC_CAP)))
++    added: list[dict[str, object]] = []
++    used_targets: set[int] = set()
++    used_sources: set[int] = set()  
++ 
++    for t in sorted(ids_by_t):
++        child_frame_ids = ids_by_t.get(t + 1, [])
++        if not child_frame_ids:
++            continue
++        source_ids = [node_id for node_id in ids_by_t[t] if len(out_by_source.get(node_id, [])) == 1]
++        candidate_ids = [node_id for node_id in child_frame_ids if node_id not in incoming and node_id not in used_targets]
++        if not source_ids or not candidate_ids:
++            continue
++ 
++        
++        
++        
++        
++        
++        candidate_tree = None
++        if SAFE_DIV_REQUIRE_MUTUAL_NN:
++            candidate_positions = np.stack([_position_um(nodes_by_id[cid]) for cid in candidate_ids])
++            candidate_tree = cKDTree(candidate_positions)
++ 
++        frame_cap = max(1, int(round(len(source_ids) * SAFE_DIV_FRAME_FRAC_CAP)))
++        proposals: list[tuple[float, int, int, float, float]] = []
++        for source_id in source_ids:
++            source = nodes_by_id[source_id]
++            existing_child_edge = out_by_source[source_id][0]
++            existing_child_id = int(existing_child_edge["target_id"])
++            existing_child = nodes_by_id.get(existing_child_id)
++            if existing_child is None or int(existing_child["t"]) != t + 1:
++                continue
++            child_dist = edge_distance_um(source, existing_child)
++            if child_dist > SAFE_DIV_EXISTING_CHILD_MAX_UM:
++                continue
++ 
++            
++            
++            
++            
++            mutual_nn_id = None
++            if candidate_tree is not None:
++                _, nn_idx = candidate_tree.query(_position_um(existing_child))
++                mutual_nn_id = candidate_ids[int(nn_idx)]
++ 
++            for candidate_id in candidate_ids:
++                if (source_id, candidate_id) in existing_edges:
++                    continue
++                candidate = nodes_by_id[candidate_id]
++                parent_dist = edge_distance_um(source, candidate)
++                if parent_dist > SAFE_DIV_MAX_UM:
++                    continue
++                sister_dist = edge_distance_um(existing_child, candidate)
++                if sister_dist > SAFE_DIV_SISTER_MAX_UM:
++                    continue
++ 
++                
++                if SAFE_DIV_REQUIRE_MUTUAL_NN and candidate_id != mutual_nn_id:
++                    stats["safe_division_mutual_nn_rejected"] += 1
++                    continue
++ 
++                
++                
++                
++                
++                if SAFE_DIV_REQUIRE_DIVERGENCE:
++                    c1_succ = out_by_source.get(existing_child_id, [])
++                    q_succ = out_by_source.get(candidate_id, [])
++                    if len(c1_succ) != 1 or len(q_succ) != 1:
++                        stats["safe_division_divergence_rejected"] += 1
++                        continue
++                    c1_grandchild = nodes_by_id.get(int(c1_succ[0]["target_id"]))
++                    q_grandchild = nodes_by_id.get(int(q_succ[0]["target_id"]))
++                    if (
++                        c1_grandchild is None or q_grandchild is None
++                        or int(c1_grandchild["t"]) != t + 2
++                        or int(q_grandchild["t"]) != t + 2
++                    ):
++                        stats["safe_division_divergence_rejected"] += 1
++                        continue
++                    grandchild_dist = edge_distance_um(c1_grandchild, q_grandchild)
++                    if grandchild_dist - sister_dist < SAFE_DIV_DIVERGE_UM:
++                        stats["safe_division_divergence_rejected"] += 1
++                        continue
++ 
++                stats["safe_division_geometric_candidates"] += 1
++                if DEEPCENTER_SAFE_DIV_VETO and not deepcenter_accept_repair_point(
++                    dataset,
++                    int(candidate["t"]),
++                    node_point(candidate),
++                    deepcenter_bundle,
++                    frame_cache,
++                    deepcenter_cache,
++                    stats,
++                    "safe_div",
++                    DEEPCENTER_SAFE_DIV_THRESHOLD,
++                ):
++                    continue
++                
++                
++                
++                
++                
++                
++                if SAFE_DIV_SISTER_SYMMETRY_TAU > 0.0:
++                    _sym_denom = max((child_dist + parent_dist) / 2.0, 1e-6)
++                    if abs(child_dist - parent_dist) / _sym_denom > SAFE_DIV_SISTER_SYMMETRY_TAU:
++                        stats["safe_division_symmetry_rejected"] += 1
++                        continue
++                score = parent_dist + 0.15 * sister_dist
++                proposal = (score, source_id, candidate_id, parent_dist, sister_dist)
++                if SPRINT_POLICY.admit((nodes_by_id, out_by_source), proposal, dataset, t, existing_child_id):
++                    proposals.append(proposal)
++ 
++        stats["safe_division_candidates"] += len(proposals)
++        if not proposals:
++            continue
++        SPRINT_POLICY.order(proposals, dataset, t)
++        added_this_frame = 0
++        for _, source_id, candidate_id, parent_dist, _ in proposals:
++            if len(added) >= global_cap:
++                stats["safe_division_skipped_cap"] += 1
++                break
++            if added_this_frame >= frame_cap:
++                break
++            if candidate_id in used_targets or candidate_id in incoming:
++                continue
++            if source_id in used_sources:
++                continue
++            candidate = nodes_by_id[candidate_id]
++            added.append({
++                "source_id": source_id,
++                "target_id": candidate_id,
++                "edge_prob": None,
++                "distance_um": parent_dist,
++                "safe_division": 1,
++            })
++            SPRINT_POLICY.selected(dataset, t, source_id, candidate_id)
++            used_targets.add(candidate_id)
++            used_sources.add(source_id)
++            added_this_frame += 1
++ 
++    if added:
++        stats["safe_divisions_added"] = len(added)
++        return [*edges, *added]
++    return edges
++_sprint_patched_safe_div=add_safe_divisions_postlink
++
+ 
+ 
+ def filter_short_track_components(
+@@ -1704,5 +1879,144 @@
+     display(pd.read_csv(SUBMISSION_PATH, nrows=8))
+ 
+ 
++import numpy as np
++from scipy.special import expit
++SCALE = np.array([1.625,0.40625,0.40625])
++
++def point(row):
++    return np.array([row["z"], row["y"], row["x"]], dtype=float) * SCALE
++
++def pair_features(coords):
++    """Physical-coordinate input [..., parent/d1/d2/g1/g2, z/y/x]."""
++    a = np.asarray(coords, dtype=float)
++    if a.shape[-2:] != (5, 3) or not np.isfinite(a).all():
++        raise ValueError("INVALID_PAIR_COORDINATES")
++    p, c1, c2, g1, g2 = np.moveaxis(a, -2, 0)
++    v1, v2 = c1-p, c2-p
++    norm = lambda v: np.linalg.norm(v, axis=-1)
++    d1, d2 = norm(v1), norm(v2)
++    sister, grand = norm(c1-c2), norm(g1-g2)
++    speed1, speed2 = norm(g1-c1), norm(g2-c2)
++    return np.stack([np.minimum(d1,d2), np.maximum(d1,d2), sister,
++                     norm((c1+c2)*0.5-p), np.abs(d1-d2)/np.maximum((d1+d2)*0.5,1e-6),
++                     np.sum(v1*v2,axis=-1)/np.maximum(d1*d2,1e-6), grand, grand-sister,
++                     (speed1+speed2)*0.5, np.abs(speed1-speed2)], axis=-1)
++
++def context(nodes, out, parent, c1, c2):
++    t = int(nodes[parent]["t"])
++    if c1 == c2 or any(int(nodes[c]["t"]) != t+1 for c in (c1,c2)):
++        return None
++    if any(len(out.get(c,[])) != 1 for c in (c1,c2)):
++        return None
++    g1,g2 = out[c1][0],out[c2][0]
++    if g1 == g2 or any(int(nodes[g]["t"]) != t+2 for g in (g1,g2)):
++        return None
++    return np.stack([point(nodes[i]) for i in (parent,c1,c2,g1,g2)])
++
++def design(x, mean, scale):
++    z = np.clip((np.asarray(x)-mean)/scale,-8.0,8.0)
++    return np.concatenate([np.ones((*z.shape[:-1],1)), z, z*z],axis=-1)
++
++def predict(model, features):
++    return expit(design(features,np.asarray(model["mean"]),np.asarray(model["scale"]))@np.asarray(model["coefficients"]))
++
++"""Minimal additions to the original Forge proposal acceptance and ordering.
++No fit, model update, or new eligibility rule. Explicit model selection.
++"""
++import math
++
++class ProposalPolicy:
++    def __init__(self, arm, score_pair):
++        if arm not in ('A0','G1','R1'): raise ValueError(arm)
++        self.arm=arm; self.score_pair=score_pair; self.rows=[]; self.frame_fallbacks=[]
++        self.scores={}
++    def admit(self, snapshot, proposal, dataset, t, existing_child):
++        distance,parent,child,*_=proposal
++        score=None if self.arm=='A0' else self.score_pair(snapshot,parent,existing_child,child,dataset)
++        if score is not None and not math.isfinite(score): raise RuntimeError('NONFINITE_LEARNED_SCORE')
++        accept=not(self.arm=='G1' and score is not None and score<0.95)
++        row={'dataset':dataset,'frame':t,'parent':parent,'child1':existing_child,'child2':child,
++             'arm':self.arm,'original_eligible':True,'learned_score':score,'abstain':score is None and self.arm!='A0',
++             'accepted_before_sort':accept,'distance_priority':distance,'selected':False}
++        self.rows.append(row);self.scores[(dataset,t,parent,child)]=score
++        return accept
++    def order(self, proposals, dataset, t):
++        before=[(x[1],x[2]) for x in proposals]
++        if self.arm=='R1':
++            scores=[self.scores[(dataset,t,p[1],p[2])] for p in proposals]
++            if any(v is None for v in scores):
++                self.frame_fallbacks.append((dataset,t)); proposals.sort(key=lambda p:p[0])
++            else:
++                proposals.sort(key=lambda p:(-self.scores[(dataset,t,p[1],p[2])],p[0]))
++        else:proposals.sort(key=lambda p:p[0])
++        assert set(before)=={(x[1],x[2]) for x in proposals}
++        for rank,p in enumerate(proposals):
++            row=next(r for r in reversed(self.rows) if (r['dataset'],r['frame'],r['parent'],r['child2'])==(dataset,t,p[1],p[2]))
++            row['original_order']=before.index((p[1],p[2]));row['rank']=rank
++    def selected(self,dataset,t,parent,child):
++        row=next(r for r in reversed(self.rows) if (r['dataset'],r['frame'],r['parent'],r['child2'])==(dataset,t,parent,child));row['selected']=True
++
++def patch_safe_div(source):
++    """Patch one audited pure function; caller never passes a training cell."""
++    append='                proposals.append((score, source_id, candidate_id, parent_dist, sister_dist))'
++    assert source.count(append)==1
++    source=source.replace(append,'''                proposal = (score, source_id, candidate_id, parent_dist, sister_dist)
++                if SPRINT_POLICY.admit((nodes_by_id, out_by_source), proposal, dataset, t, existing_child_id):
++                    proposals.append(proposal)''')
++    old='        proposals.sort(key=lambda item: item[0])';assert source.count(old)==1
++    source=source.replace(old,'        SPRINT_POLICY.order(proposals, dataset, t)')
++    old='            used_targets.add(candidate_id)';assert source.count(old)==1
++    return source.replace(old,'            SPRINT_POLICY.selected(dataset, t, source_id, candidate_id)\n'+old)
++
++SPRINT_ARM='G1'
++VALIDATION_EMBRYO_MAP={'44b6_12dfb391': '44b6', '44b6_267148e4': '44b6', '44b6_2a2eff9f': '44b6', '44b6_341df25f': '44b6', '6bba_062c8d37': '6bba', '6bba_07e24132': '6bba', '6bba_085bf656': '6bba', '6bba_09961292': '6bba'}
++SPRINT_PP_KEYS=['SAFE_DIV_MAX_UM', 'SAFE_DIV_SISTER_MAX_UM', 'SAFE_DIV_DIVERGE_UM', 'SAFE_DIV_SISTER_SYMMETRY_TAU', 'SAFE_DIV_EXISTING_CHILD_MAX_UM', 'SAFE_DIV_FRAME_FRAC_CAP', 'SAFE_DIV_GLOBAL_FRAC_CAP', 'DEEPCENTER_SAFE_DIV_THRESHOLD', 'DEEPCENTER_GAP_THRESHOLD', 'GAP_CLOSE_UM', 'OUTPUT_MIN_TRACK_LEN', 'SHORT_TRACK_RESCUE_MIN_MEAN_EDGE_PROB', 'MOTION_RELINK_TIGHT_UM', 'MOTION_RELINK_RELAXED_UM', 'GAP2_MAX_STEP_UM', 'GAP2_MAX_TOTAL_UM', 'MOTION_RELINK_LEARNED_BONUS', 'MOTION_RELINK_VELOCITY_WEIGHT', 'GAP_CLOSE_REUSE_UM', 'OUTPUT_EDGE_MAX_UM']
++"""Frozen-model inference and ordinary runtime evidence; inserted into Forge cell 5.
++SPRINT_ARM, VALIDATION_EMBRYO_MAP and original/patched functions supplied by builder.
++"""
++import copy as _sprint_copy
++import hashlib as _sprint_hashlib
++import json as _sprint_json
++_SPRINT_WEIGHT_SHA='0a1f9b93bb529e70f4f7c2ba0907eea8b4cecd2befccc8ba1fb75e569edf77a0'
++_sprint_paths=[p for p in Path('/kaggle/input').rglob('division_gate_weights.json') if _sprint_hashlib.sha256(p.read_bytes()).hexdigest()==_SPRINT_WEIGHT_SHA]
++assert len(_sprint_paths)==1,'SPRINT_EXACT_WEIGHT_REQUIRED'
++_SPRINT_WEIGHTS=_sprint_json.loads(_sprint_paths[0].read_text())
++assert set(_SPRINT_WEIGHTS['held_out'])=={'44b6','6bba'}
++_SPRINT_TRAIN_RECEIPT=_sprint_json.loads((_sprint_paths[0].parent/'division_training_receipt.json').read_text())
++assert _SPRINT_TRAIN_RECEIPT['weights_sha256']==_SPRINT_WEIGHT_SHA
++for _fold in _SPRINT_TRAIN_RECEIPT['folds']:assert _fold['held_out_embryo'] not in _fold['training_embryos']
++SPRINT_CALLS=[]
++def _sprint_model_key(dataset):
++ # Original validator switches the actual source directory; embryo comes only from the explicit frozen map.
++ if Path(TEST_DIR).resolve()==(Path(COMP_DIR)/'train').resolve():
++  assert dataset in VALIDATION_EMBRYO_MAP,'UNMAPPED_VALIDATION_EMBRYO'
++  return VALIDATION_EMBRYO_MAP[dataset]
++ return 'final'
++def _sprint_score(snapshot,parent,c1,c2,dataset):
++ nodes,out_edges=snapshot;out={u:[int(e['target_id']) for e in es] for u,es in out_edges.items() if u in (c1,c2)}
++ coords=context(nodes,out,parent,c1,c2)
++ if coords is None:return None
++ key=_sprint_model_key(dataset);model=_SPRINT_WEIGHTS['final'] if key=='final' else _SPRINT_WEIGHTS['held_out'][key]
++ return float(predict(model,pair_features(coords)))
++def _sprint_graph_hash(nodes,edges):
++ return _sprint_hashlib.sha256(_sprint_json.dumps([list(nodes.items()),edges],allow_nan=False,separators=(',',':')).encode()).hexdigest()
++def sprint_audited_safe_div(nodes,edges,stats,**kw):
++ global SPRINT_POLICY
++ dataset=kw['dataset'];SPRINT_POLICY=ProposalPolicy(SPRINT_ARM,_sprint_score)
++ before=_sprint_graph_hash(nodes,edges)
++ shadow_nodes=_sprint_copy.deepcopy(nodes);shadow_edges=_sprint_copy.deepcopy(edges);shadow_stats=dict(stats)
++ result=_sprint_patched_safe_div(nodes,edges,stats,**kw)
++ # Same snapshot original rule replay is evidence only; it never supplies output.
++ old=_sprint_original_safe_div(shadow_nodes,shadow_edges,shadow_stats,**kw)
++ assert _sprint_graph_hash(shadow_nodes,shadow_edges)==before,'SPRINT_SHADOW_INPUT_MUTATED'
++ old_es={(int(e['source_id']),int(e['target_id'])) for e in old};new_es={(int(e['source_id']),int(e['target_id'])) for e in result}
++ record={'dataset':dataset,'arm':SPRINT_ARM,'model':_sprint_model_key(dataset),'input_hash':before,'old_safe_hash':_sprint_graph_hash(shadow_nodes,old),'new_safe_hash':_sprint_graph_hash(nodes,result),'added_edges':sorted(new_es-old_es),'lost_edges':sorted(old_es-new_es),'classifier_calls':sum(r['learned_score'] is not None for r in SPRINT_POLICY.rows),'filtered':sum(not r['accepted_before_sort'] for r in SPRINT_POLICY.rows),'abstain':sum(r['abstain'] for r in SPRINT_POLICY.rows),'fallback_frames':SPRINT_POLICY.frame_fallbacks,'candidates':SPRINT_POLICY.rows,'resolved_config':{k:globals()[k] for k in SPRINT_PP_KEYS}}
++ SPRINT_CALLS.append(record)
++ with (WORKING_DIR/'sprint_production_calls.jsonl').open('a') as f:f.write(_sprint_json.dumps(record,allow_nan=False)+'\n')
++ print('SPRINT_PRODUCTION_SAFE_DIV',dataset,record['model'],record['classifier_calls'],len(record['added_edges']),len(record['lost_edges']),flush=True)
++ return result
++add_safe_divisions_postlink=sprint_audited_safe_div
++
++
+ write_test_submission("base")
+ 

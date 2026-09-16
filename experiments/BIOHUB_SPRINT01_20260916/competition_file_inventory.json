@@ -1,0 +1,8 @@
+{
+  "scope": "FIRST_PAGE_ONLY; not full competition inventory",
+  "files_on_page": 200,
+  "has_next_page": true,
+  "raw_path": "downloads/BIOHUB_SPRINT01_20260916/competition_first_page.json",
+  "raw_sha256": "7fa758fd0efd1d6130698a3612af82c375bed610c32829af88fd5486bceeea7b",
+  "reason": "First page contained test image chunks; switched to direct known GEFF annotation paths, no whole-data enumeration"
+}

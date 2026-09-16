@@ -1,0 +1,26 @@
+{
+  "observed_at_utc": "2026-09-16T02:24:26.407809+00:00",
+  "scope": "pure patch policy and synthetic graphs, not real validation scores",
+  "runs": [
+    {
+      "command": [
+        "python3",
+        "experiments/BIOHUB_SPRINT01_20260916/test_patch.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.000s\n\nOK\n",
+      "source_sha256": "040e22227b53692037ecefb763dc2435981b11c91bad82aa9bff531b56215815"
+    },
+    {
+      "command": [
+        "python3",
+        "experiments/BIOHUB_SPRINT01_20260916/test_graph_patch.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.005s\n\nOK\n",
+      "source_sha256": "0b357b08749cfe9edb032b7c97d00caf5a762d156bb071f22ea64e2f78dd7b94"
+    }
+  ]
+}

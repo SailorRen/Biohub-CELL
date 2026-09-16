@@ -1,0 +1,82 @@
+[
+  {
+    "sample": "44b6_12dfb391",
+    "nodes": 788,
+    "edges": 773,
+    "hash": "12ebb7c431ef30e0be6384f57c30351b7429ea0bfb0bca7b1f6f32fadd7f13be",
+    "historical_hash_match": false,
+    "expected": [
+      "c6011d3bc4e095e59278cbf7a833d3bf40fb009c62dd9f9ca22904b072be619b"
+    ]
+  },
+  {
+    "sample": "44b6_267148e4",
+    "nodes": 280,
+    "edges": 277,
+    "hash": "36ae2ce0afed6d03a90382f1e7d8822c130dc34a1734fb04e7ec418441b71f32",
+    "historical_hash_match": false,
+    "expected": [
+      "e49345f7586d669ccfae3d935039aa833362c058a4103ecd9be24dd17774d6f4"
+    ]
+  },
+  {
+    "sample": "44b6_2a2eff9f",
+    "nodes": 214,
+    "edges": 210,
+    "hash": "195d773fcaa0f3f7d09f6b0eb091c3447cc9ace03544f58ac155b37911ec1f0b",
+    "historical_hash_match": false,
+    "expected": [
+      "0d65bb8e038d7cc0e5cc0494bbf5a0c2ee68a10f7ebadc14044ce03fdbff91b5"
+    ]
+  },
+  {
+    "sample": "44b6_341df25f",
+    "nodes": 216,
+    "edges": 209,
+    "hash": "222e41b0f49bf11b1c097cc9e2e16172d1292b40f2f866e109a4ecdd503c669f",
+    "historical_hash_match": false,
+    "expected": [
+      "737532e3cafe8e86ebfa9fcc4190c7860e0127f45756761f5503e894a815cfef"
+    ]
+  },
+  {
+    "sample": "6bba_062c8d37",
+    "nodes": 930,
+    "edges": 898,
+    "hash": "8c7179f31cc615ae505ca8a27f238a17386ee39f69f34319ec189448c5c8317b",
+    "historical_hash_match": false,
+    "expected": [
+      "00789e40cd27ab4c522884eac7fbb4ffc55e641c9647a402316c63042123056d"
+    ]
+  },
+  {
+    "sample": "6bba_07e24132",
+    "nodes": 359,
+    "edges": 345,
+    "hash": "8c724781bba35cc3b37d01de336c3eca62a7fcdf825484c6d5e3971aa2b0b5aa",
+    "historical_hash_match": false,
+    "expected": [
+      "cedf0c3a2f8cfcdca4c75c6c1b1e8519512ddcc654aba5eb471c2b4ff7f3580d"
+    ]
+  },
+  {
+    "sample": "6bba_085bf656",
+    "nodes": 1198,
+    "edges": 1168,
+    "hash": "9a5819614b504145d4dd6217624e1ec94c7a6a4b4fe0d39dcb6ac6751e39eda3",
+    "historical_hash_match": false,
+    "expected": [
+      "64990f20b37c73ab00ddce538fd8dbd8540111ad33623ad8ff815bdbe569a3ac"
+    ]
+  },
+  {
+    "sample": "6bba_09961292",
+    "nodes": 1950,
+    "edges": 1871,
+    "hash": "8e243527f16af8fbe0b793f6c1d3d0701bf46dcacdf2403f0973b75d11ecf8ef",
+    "historical_hash_match": false,
+    "expected": [
+      "2dce94f7f71d489e6e6626b945161c919b0e248d47aadb6717d1776c5c190972"
+    ]
+  }
+]

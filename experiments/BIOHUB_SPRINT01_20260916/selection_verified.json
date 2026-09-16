@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "selected": "G1",
+  "repeat_variation": 0.0,
+  "arms": {
+    "G1": {
+      "delta": 3.620047602348464e-06,
+      "group_delta": {
+        "44b6": 1.3967039331652664e-05,
+        "6bba": 0.0
+      },
+      "actual_final_graph_change": true,
+      "passes": true
+    },
+    "R1": {
+      "delta": -1.1043170153879345e-06,
+      "group_delta": {
+        "44b6": -4.260728277971637e-06,
+        "6bba": 0.0
+      },
+      "actual_final_graph_change": true,
+      "passes": false
+    }
+  },
+  "rules_sha256": "f1c1dae612de92241155a709497509e59dd5ee7a06f1df88c12fbcbe3a72cd72",
+  "scope": "controlled eight-field/two-embryo diagnostic, not Public score or generalization guarantee"
+}

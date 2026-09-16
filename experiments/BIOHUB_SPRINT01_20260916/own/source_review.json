@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "arm": "G1",
+  "byte_identical_cells": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "pure_inference_helper_name_collisions": [],
+  "source_sha256": "de010e6ba142be0e01000093e061ef7d3388ddaa411185b40d26c63a3febe731",
+  "no_original_selector_edit": true,
+  "explicit_heldout_validation_map": true,
+  "production_test_model": "saved final",
+  "diagnostic_configuration_not_injected_to_production": true,
+  "scope": "Static original-cell byte comparison and helper namespace; runtime success separately required"
+}

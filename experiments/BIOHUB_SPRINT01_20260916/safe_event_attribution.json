@@ -1,0 +1,1121 @@
+{
+  "status": "VERIFIED_SAFE_DIV_STAGE",
+  "observed_at_utc": "2026-09-16T03:21:17.371993+00:00",
+  "package_versions": {
+    "tracksdata": "0.1.0rc6.dev3+g980c2d30a",
+    "polars": "1.42.0",
+    "numpy": "2.4.2",
+    "scipy": "1.17.1",
+    "rustworkx": "0.18.1",
+    "geff": "1.3.1.1.3"
+  },
+  "events": [
+    {
+      "sample": "44b6_12dfb391",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 42956,
+      "frame": 86,
+      "old_children": [
+        43488,
+        43506
+      ],
+      "new_children": [
+        43506
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_267148e4",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 2054,
+      "frame": 10,
+      "old_children": [
+        2291,
+        2301
+      ],
+      "new_children": [
+        2291
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_267148e4",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 2862,
+      "frame": 13,
+      "old_children": [
+        3098,
+        3112
+      ],
+      "new_children": [
+        3098
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_267148e4",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 2891,
+      "frame": 13,
+      "old_children": [
+        3144,
+        3147
+      ],
+      "new_children": [
+        3147
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_267148e4",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 4682,
+      "frame": 20,
+      "old_children": [
+        4929,
+        4944
+      ],
+      "new_children": [
+        4944
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_267148e4",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 5958,
+      "frame": 25,
+      "old_children": [
+        6236,
+        6252
+      ],
+      "new_children": [
+        6252
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_267148e4",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 6851,
+      "frame": 28,
+      "old_children": [
+        7140,
+        7142
+      ],
+      "new_children": [
+        7142
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_267148e4",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 7142,
+      "frame": 29,
+      "old_children": [
+        7453
+      ],
+      "new_children": [
+        7452,
+        7453
+      ],
+      "official_before": "NO_FORK",
+      "official_after": "UNKNOWN",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_267148e4",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 7177,
+      "frame": 29,
+      "old_children": [
+        7497,
+        7498
+      ],
+      "new_children": [
+        7497
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_267148e4",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 9316,
+      "frame": 36,
+      "old_children": [
+        9632,
+        9660
+      ],
+      "new_children": [
+        9632
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_267148e4",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 9382,
+      "frame": 36,
+      "old_children": [
+        9686,
+        9695
+      ],
+      "new_children": [
+        9695
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_267148e4",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 10012,
+      "frame": 38,
+      "old_children": [
+        10336,
+        10343
+      ],
+      "new_children": [
+        10336
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_267148e4",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 10472,
+      "frame": 39,
+      "old_children": [
+        10797,
+        10798
+      ],
+      "new_children": [
+        10798
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_267148e4",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 12268,
+      "frame": 45,
+      "old_children": [
+        12530,
+        12548
+      ],
+      "new_children": [
+        12548
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_267148e4",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 14210,
+      "frame": 51,
+      "old_children": [
+        14529,
+        14530
+      ],
+      "new_children": [
+        14529
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_267148e4",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 21129,
+      "frame": 75,
+      "old_children": [
+        21374,
+        21387
+      ],
+      "new_children": [
+        21374
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_267148e4",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 21475,
+      "frame": 76,
+      "old_children": [
+        21719,
+        21732
+      ],
+      "new_children": [
+        21732
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_267148e4",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 21495,
+      "frame": 76,
+      "old_children": [
+        21751,
+        21756
+      ],
+      "new_children": [
+        21751
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_267148e4",
+      "embryo": "44b6",
+      "arm": "R1",
+      "stage": "safe_div",
+      "parent": 7142,
+      "frame": 29,
+      "old_children": [
+        7453
+      ],
+      "new_children": [
+        7452,
+        7453
+      ],
+      "official_before": "NO_FORK",
+      "official_after": "UNKNOWN",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_267148e4",
+      "embryo": "44b6",
+      "arm": "R1",
+      "stage": "safe_div",
+      "parent": 7177,
+      "frame": 29,
+      "old_children": [
+        7497,
+        7498
+      ],
+      "new_children": [
+        7497
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_2a2eff9f",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 701,
+      "frame": 1,
+      "old_children": [
+        1220,
+        1235
+      ],
+      "new_children": [
+        1220
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_2a2eff9f",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 1704,
+      "frame": 3,
+      "old_children": [
+        2181,
+        2207
+      ],
+      "new_children": [
+        2207
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_2a2eff9f",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 8922,
+      "frame": 17,
+      "old_children": [
+        9371,
+        9379
+      ],
+      "new_children": [
+        9379
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_2a2eff9f",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 9444,
+      "frame": 18,
+      "old_children": [
+        9938,
+        9944
+      ],
+      "new_children": [
+        9938
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_2a2eff9f",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 10985,
+      "frame": 21,
+      "old_children": [
+        11467,
+        11478
+      ],
+      "new_children": [
+        11478
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_2a2eff9f",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 27835,
+      "frame": 59,
+      "old_children": [
+        28260,
+        28277
+      ],
+      "new_children": [
+        28277
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_341df25f",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 4536,
+      "frame": 45,
+      "old_children": [
+        4627,
+        4632
+      ],
+      "new_children": [
+        4632
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_341df25f",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 5135,
+      "frame": 51,
+      "old_children": [
+        5226,
+        5235
+      ],
+      "new_children": [
+        5226
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "44b6_341df25f",
+      "embryo": "44b6",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 6005,
+      "frame": 61,
+      "old_children": [
+        6088,
+        6091
+      ],
+      "new_children": [
+        6088
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "6bba_062c8d37",
+      "embryo": "6bba",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 375,
+      "frame": 4,
+      "old_children": [
+        449,
+        450
+      ],
+      "new_children": [
+        449
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "6bba_062c8d37",
+      "embryo": "6bba",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 2194,
+      "frame": 32,
+      "old_children": [
+        2257,
+        2260
+      ],
+      "new_children": [
+        2260
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "6bba_07e24132",
+      "embryo": "6bba",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 8478,
+      "frame": 20,
+      "old_children": [
+        8857,
+        8883
+      ],
+      "new_children": [
+        8883
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "6bba_07e24132",
+      "embryo": "6bba",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 8512,
+      "frame": 20,
+      "old_children": [
+        8919,
+        8929
+      ],
+      "new_children": [
+        8919
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "6bba_09961292",
+      "embryo": "6bba",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 1252,
+      "frame": 3,
+      "old_children": [
+        1599,
+        1627
+      ],
+      "new_children": [
+        1599
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "6bba_09961292",
+      "embryo": "6bba",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 8854,
+      "frame": 24,
+      "old_children": [
+        9172,
+        9173
+      ],
+      "new_children": [
+        9173
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "6bba_09961292",
+      "embryo": "6bba",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 12852,
+      "frame": 37,
+      "old_children": [
+        13159,
+        13167
+      ],
+      "new_children": [
+        13159
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "6bba_09961292",
+      "embryo": "6bba",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 13027,
+      "frame": 38,
+      "old_children": [
+        13376,
+        13377
+      ],
+      "new_children": [
+        13376
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "6bba_09961292",
+      "embryo": "6bba",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 13131,
+      "frame": 38,
+      "old_children": [
+        13392,
+        13448
+      ],
+      "new_children": [
+        13392
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "6bba_09961292",
+      "embryo": "6bba",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 13507,
+      "frame": 39,
+      "old_children": [
+        13763,
+        13804
+      ],
+      "new_children": [
+        13763
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    },
+    {
+      "sample": "6bba_09961292",
+      "embryo": "6bba",
+      "arm": "G1",
+      "stage": "safe_div",
+      "parent": 15674,
+      "frame": 46,
+      "old_children": [
+        15989,
+        15990
+      ],
+      "new_children": [
+        15989
+      ],
+      "official_before": "UNKNOWN",
+      "official_after": "NO_FORK",
+      "categories": [
+        "无法可靠判定"
+      ],
+      "kind": "branch_change",
+      "support": "fixed official score_divisions with byte-identical ordered scorer inputs; UNKNOWN is unassessed, not negative"
+    }
+  ],
+  "counts": {
+    "G1": {
+      "无法可靠判定": 38
+    },
+    "R1": {
+      "无法可靠判定": 2
+    }
+  },
+  "checks": [
+    {
+      "sample": "44b6_12dfb391",
+      "arm": "A0",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "deaa1a0b154939601a31f5db1f39311da730eb073cce32e54086339803e7c8f5"
+    },
+    {
+      "sample": "44b6_12dfb391",
+      "arm": "G1",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "a090ac1bc1ac3802c2c540859a24eadf808d7c822854d21ff904a817630899f9"
+    },
+    {
+      "sample": "44b6_12dfb391",
+      "arm": "R1",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "cb7a505f752fcbb96955aa99abcbc7a685bd8ac924ca81b66ade363aa9d760ca"
+    },
+    {
+      "sample": "44b6_267148e4",
+      "arm": "A0",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "d65818e1bb69ad27906059d5a12916e44e9bda1c4b33fbd8e243f051fb634497"
+    },
+    {
+      "sample": "44b6_267148e4",
+      "arm": "G1",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "111ebf06145e98b1afc2fce685467b10d38a2755fd310b78f85d67f0caa95a6f"
+    },
+    {
+      "sample": "44b6_267148e4",
+      "arm": "R1",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "8fd2ca918a625420fe5e6ab6cf85e0c9d69f18ca36596c0856e0f48dddcb7ff6"
+    },
+    {
+      "sample": "44b6_2a2eff9f",
+      "arm": "A0",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "8155493cb7ad4b35eecce2cf85ae077616103252a61a36ba97ba4408cf9f279d"
+    },
+    {
+      "sample": "44b6_2a2eff9f",
+      "arm": "G1",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "fbdb2beefce3233013198d29a8e4a44ecc9595f5616178203d953bb84a665bb1"
+    },
+    {
+      "sample": "44b6_2a2eff9f",
+      "arm": "R1",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "45789b179aca2e865c38daaa9b059e4c1cbf9584b43607d7b1ccb90ec03445e6"
+    },
+    {
+      "sample": "44b6_341df25f",
+      "arm": "A0",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "b43db2aedd0ef8ca4ce0ec435628d1a74e9cc1fe9b45c8355e3faa505744be8d"
+    },
+    {
+      "sample": "44b6_341df25f",
+      "arm": "G1",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "b705460e63f7cf62782c6e3071228056e2241e89faeee119a727c7d69773c26d"
+    },
+    {
+      "sample": "44b6_341df25f",
+      "arm": "R1",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "b43db2aedd0ef8ca4ce0ec435628d1a74e9cc1fe9b45c8355e3faa505744be8d"
+    },
+    {
+      "sample": "6bba_062c8d37",
+      "arm": "A0",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "d1ebce607c94540aa5b38e86be0b17be820c04d4007b0c63f341a768120c6646"
+    },
+    {
+      "sample": "6bba_062c8d37",
+      "arm": "G1",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "58654377069b599424695d474e2d559015790c0030291a1ea45591bc62dee257"
+    },
+    {
+      "sample": "6bba_062c8d37",
+      "arm": "R1",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "d1ebce607c94540aa5b38e86be0b17be820c04d4007b0c63f341a768120c6646"
+    },
+    {
+      "sample": "6bba_07e24132",
+      "arm": "A0",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "492d8f5eaccff6d4ac0546f505c67263f5b37110cbf75c4071fd750863afb987"
+    },
+    {
+      "sample": "6bba_07e24132",
+      "arm": "G1",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "418f936d818b2e2a7ff5b7304dc495817070d23220d2d0214f2582ec9ef695d8"
+    },
+    {
+      "sample": "6bba_07e24132",
+      "arm": "R1",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "492d8f5eaccff6d4ac0546f505c67263f5b37110cbf75c4071fd750863afb987"
+    },
+    {
+      "sample": "6bba_085bf656",
+      "arm": "A0",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "1d344a0ab2e7a526e3a3f74057c75ca840a8bfe05fce4f5eeaf608058703664e"
+    },
+    {
+      "sample": "6bba_085bf656",
+      "arm": "G1",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "1d344a0ab2e7a526e3a3f74057c75ca840a8bfe05fce4f5eeaf608058703664e"
+    },
+    {
+      "sample": "6bba_085bf656",
+      "arm": "R1",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "1d344a0ab2e7a526e3a3f74057c75ca840a8bfe05fce4f5eeaf608058703664e"
+    },
+    {
+      "sample": "6bba_09961292",
+      "arm": "A0",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "e34aaaa2cf226358623a88324eb3ca74ca1b9deaea4c02ff8de089f19e1c553e"
+    },
+    {
+      "sample": "6bba_09961292",
+      "arm": "G1",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "d36ef04a2e5bccbc2ba251d49d529febe66b51c5403d309b1292c3896ed5e63c"
+    },
+    {
+      "sample": "6bba_09961292",
+      "arm": "R1",
+      "pred_hash_match": true,
+      "gt_hash_match": true,
+      "division_counts_match": true,
+      "full_metric_recomputed_match": true,
+      "graph_sha256": "06a9962f12edaed385eb8a03ff7e53f3d039af1833556215cf1559b1c60272a4"
+    }
+  ],
+  "scope": "Exact stage identified per event. Branch replacements produce a removed-old and added-new entry. Counts are not independent causal effects or necessarily equal aggregate TP/FP deltas; unassessed forks remain UNKNOWN."
+}
