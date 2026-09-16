@@ -1,7 +1,7 @@
 {
   "task_id": "BIOHUB_SPRINT01_20260916",
-  "status": "SCORE_PENDING",
-  "required_computations_complete": false,
+  "status": "EVALUATED",
+  "required_computations_complete": true,
   "diagnosis_status": "EXECUTED_VERIFIED_8_FIELDS_2_EMBRYOS",
   "own": {
     "selected": "G1",
@@ -17,10 +17,10 @@
       "source_readback": "own_platform_20260916T025429Z.json"
     },
     "formal_submission_id": 56270217,
-    "formal_status": "PENDING",
-    "public_score": null,
-    "formal_observed_at_utc": "20260916T051701Z",
-    "decision": "AWAIT_FORMAL_SCORE_NOT_PROMOTED"
+    "formal_status": "COMPLETE",
+    "public_score": "0.948",
+    "formal_observed_at_utc": "20260916T152650Z",
+    "decision": "RECOMMEND_NEXT_BASELINE"
   },
   "public": {
     "status": "NO_VERIFIED_PUBLIC_CANDIDATE",
@@ -228,7 +228,8 @@
       "passes": false
     }
   },
-  "formal_improvement": null,
+  "formal_delta_vs_forge": 0.001,
+  "formal_improvement": true,
   "delivery_status": "PENDING_FIXED_COMMIT_READBACK",
   "unknowns": [
     "hidden formal postprocess configuration",
