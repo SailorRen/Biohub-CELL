@@ -72,6 +72,6 @@
 
 执行状态：`PARTIAL_BLOCKED / BLOCKED_HOCT_COVERAGE_UNOBSERVABLE`。
 结果状态：`DIAGNOSTIC_NO_EFFECT`；保留G1，H1效果UNKNOWN。
-交付状态：本报告与代码、小型证据待本次固定commit远端核验；回执见任务目录的GitHub交付记录，最终回读不能替代科学结果。
+交付状态：内容commit `bf4a86b35820b9faddc1dab9f5ae9f0eb7e8ad63` 已从GitHub完整回读，43/43文件SHA256相同；远端HEAD相同、工作区洁净。回执 `github_content_readback.json` 与 `delivery_verification.json` 将随本次收尾提交保存，并再次回读。机器验收 evidence/report/delivery 三项通过，仅证明冻结合同内的合法停止与交付；不将实验状态改为 COMPLETED_VERIFIED。收尾commit与最终匹配数见最终回复，避免自引用哈希。
 
 实际命令见 `experiments/BIOHUB_SPRINT02_HOCT_20260917/实际执行命令.md`。使用既有verify-task-completion技能冻结验收，仅核验任务范围内合法停止与证据交付，不称未执行生产/正式评分完成。仅同步本任务文件；main不改、无强推、无自动合并、无下一批。
