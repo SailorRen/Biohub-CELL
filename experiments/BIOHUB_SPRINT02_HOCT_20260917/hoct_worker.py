@@ -9,7 +9,7 @@ import numpy as np
 import zarr
 import torch
 from hoct import load_model
-from hoct_observer import observe_video
+from hoct_observer import observe_video, InterfaceError
 from source_helpers import _hv_rasterize_spheres
 
 if __name__ == '__main__':
@@ -25,6 +25,9 @@ if __name__ == '__main__':
                                job['start_monotonic'],job['deadline_s'])
     except Exception as exc:
         result['reason'] = type(exc).__name__ + ':' + str(exc)[:300]
+        result['traceback'] = traceback.format_exc()
+        result['status'] = 'INTERFACE_ERROR' if isinstance(exc, (InterfaceError, KeyError, AttributeError, TypeError, IndexError)) else 'WORKER_ERROR'
+        result['observation'] = getattr(exc, 'observation', None)
         traceback.print_exc()
     result.update(seconds_total=time.monotonic()-started,
                   peak_rss_kib=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,

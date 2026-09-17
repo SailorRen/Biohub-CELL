@@ -10,6 +10,7 @@ import sys
 import time
 from pathlib import Path
 from hoct_guard import apply_guard, digest
+from hoct_observer import stop_on_interface_error
 
 OUT = Path('/kaggle/working/s02_small'); OUT.mkdir(exist_ok=True)
 CACHE = Path('/kaggle/working/s02_cache'); CACHE.mkdir(exist_ok=True)
@@ -59,7 +60,9 @@ for sample in CONTRACT['samples']:
             proc=subprocess.Popen([sys.executable,'/kaggle/working/s02_code/hoct_worker.py',str(jp)],stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
             try:
                 code=proc.wait(timeout=remain)
-                evidence=json.loads(Path(job['result']).read_text()) if code==0 else dict(video=stem,input_hash=before,complete=False,reason='WORKER_ERROR')
+                evidence=json.loads(Path(job['result']).read_text()) if Path(job['result']).exists() else dict(video=stem,input_hash=before,complete=False,reason='WORKER_ERROR')
+                if code != 0:
+                    evidence.update(complete=False, worker_exit_code=code)
             except subprocess.TimeoutExpired:
                 os.killpg(proc.pid,signal.SIGKILL);proc.wait()
                 evidence=dict(video=stem,input_hash=before,complete=False,reason='HARD_GLOBAL_TIMEOUT')
@@ -76,6 +79,17 @@ for sample in CONTRACT['samples']:
     (CACHE/(stem+'_H1_graph.json')).write_text(json.dumps(dict(nodes=list(hn.items()),edges=he),allow_nan=False))
     save('progress.json',dict(completed=len(coverage),samples=len(CONTRACT['samples']),latest=stem))
     print('S02_FOV',stem,r,flush=True)
+    if stop_on_interface_error(evidence, lambda failure: save('interface_error.json', dict(
+            failure=failure, processed=coverage, per_sample=rows, repeats=repeats,
+            remaining=[s['stem'] for s in CONTRACT['samples'][len(coverage):]],
+            status='INTERFACE_ERROR', production_gate='BLOCKED', complete=False))):
+        save('coverage.json',coverage); save('deleted_edges.json',deletions)
+        save('diagnostic_metrics.json',dict(status='INTERFACE_ERROR',complete=False,
+             per_sample=rows, summary=None, production_gate='BLOCKED_INTERFACE_ERROR'))
+        save('runtime_receipt.json',dict(stage='B',status='INTERFACE_ERROR',
+             complete_samples=len(coverage), remaining_samples=len(CONTRACT['samples'])-len(coverage),
+             observation=evidence.get('observation'), training_calls=0,detector_calls=0))
+        raise RuntimeError('INTERFACE_ERROR: stopped remaining diagnostic samples; receipts preserved')
 def aggregate(rs):
     answer=aggregate_official(rs)
     answer.update({k:sum(r[k] for r in rs) for k in ['edge_tp','edge_fp','edge_fn']})
