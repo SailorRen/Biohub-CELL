@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "task_id": "HOCT_ORACLE_RESTORE_20260917",
+  "goal": "仅恢复已确认3条正确连接，固定图和官方评分器本地复算；不推断可部署收益",
+  "scope": {
+    "in_scope": [
+      "离线图编辑与评分",
+      "当前分支小型证据交付"
+    ],
+    "out_of_scope": [
+      "Kaggle写入",
+      "模型推断",
+      "训练",
+      "搜索保留规则",
+      "修改旧结论"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "edges": [
+    {
+      "stem": "44b6_2a2eff9f",
+      "source": 36244,
+      "target": 36734
+    },
+    {
+      "stem": "6bba_09961292",
+      "source": 2629,
+      "target": 2992
+    },
+    {
+      "stem": "6bba_09961292",
+      "source": 27826,
+      "target": 28137
+    }
+  ],
+  "input_hashes": {
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/diagnostic_rerun/verification.json": "0912639b6474ce0ad75b328e1af0a057b73d8af413921d68f048c96c1ad7fd96",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/diagnostic_rerun/deleted_edge_attribution.csv": "4faa6f8588bfe4f16784f4ec8331ea698da27205b1a78ff49de84ff96ad20733",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/diagnostic_rerun/diagnostic_platform.json": "92d2b78c5bb38297b3bd303d1550b41fd8ebe1d97dd3c727b9f48a3f640cf170",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/contract.json": "6f4d778f64475447632514cf2f1515dfc8f4168af8e7ed5f9756f374c0c9c350"
+  },
+  "budget": {
+    "kaggle_write": 0,
+    "training": 0,
+    "inference": 0
+  },
+  "acceptance": [
+    {
+      "id": "oracle-recompute",
+      "type": "command",
+      "required": true,
+      "argv": [
+        "downloads/LINEFIT_BOUNDARY_20260909/scorer/venv/bin/python",
+        "experiments/BIOHUB_SPRINT02_HOCT_20260917/oracle_restore/run.py",
+        "--verify"
+      ],
+      "cwd": ".",
+      "expected_exit": 0,
+      "timeout_seconds": 180
+    },
+    {
+      "id": "report",
+      "type": "file",
+      "required": true,
+      "path": "experiments/BIOHUB_SPRINT02_HOCT_20260917/oracle_restore/报告.md",
+      "contains_all": [
+        "标注",
+        "Public",
+        "结论"
+      ]
+    },
+    {
+      "id": "git",
+      "type": "git",
+      "required": true,
+      "repository": ".",
+      "require_commit": true,
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true
+    }
+  ]
+}
