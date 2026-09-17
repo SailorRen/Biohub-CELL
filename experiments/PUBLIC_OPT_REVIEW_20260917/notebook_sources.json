@@ -1,0 +1,202 @@
+[
+  {
+    "ref": "sjlee101/biohub-lf-hoctveto-div-b",
+    "kernel_id": 133962848,
+    "version": 1,
+    "read_at_utc": "2026-09-17T02:05:14.169330+00:00",
+    "source_sha256": "8e385801b91db946c8a9b73ef53a511fa93e7c05b150e047777775b5b9df280a",
+    "bytes": 253551,
+    "path": "downloads/PUBLIC_OPT_REVIEW_20260917/sjlee101.ipynb",
+    "cells": [
+      {
+        "cell": 0,
+        "type": "code",
+        "lines": 73,
+        "sha256": "477a926d17cb1635d5ed69a03a367d08bb0531a8593ee5803f51bca8e4fb47e4"
+      },
+      {
+        "cell": 1,
+        "type": "code",
+        "lines": 43,
+        "sha256": "99198956a4c7725d85c6aab0d478368749824801716c6d39cf5bf915187ac500"
+      },
+      {
+        "cell": 2,
+        "type": "code",
+        "lines": 238,
+        "sha256": "77fdadffbd02c87e8f686e55944b6741312be552f34c8dc615e6391a1959a2dc"
+      },
+      {
+        "cell": 3,
+        "type": "code",
+        "lines": 682,
+        "sha256": "0f62c46bbec00a2d3d6bbde0efb89d5713204983d51c9c3cf73df1869cf12f8f"
+      },
+      {
+        "cell": 4,
+        "type": "code",
+        "lines": 460,
+        "sha256": "b96a3e8202814adabb95eb9600b18d1e935f00a15e345e11dd0156dafa928a1b"
+      },
+      {
+        "cell": 5,
+        "type": "code",
+        "lines": 1708,
+        "sha256": "cd57795a0c32d3159a001d3e175941b67c37154c2ff4653ee55896b3e3e7053b"
+      },
+      {
+        "cell": 6,
+        "type": "code",
+        "lines": 550,
+        "sha256": "38f6095b55eecf64e51b47088d51ba72bf4c71bd0808620b76f67f61c17cfa98"
+      },
+      {
+        "cell": 7,
+        "type": "code",
+        "lines": 178,
+        "sha256": "c300805e0268602d76042dd271bcc3224fda6af2a52569e16bebc446701d66a5"
+      },
+      {
+        "cell": 8,
+        "type": "code",
+        "lines": 178,
+        "sha256": "7400441b355cbe09311e9c638c44264e374ad448d9ab1020b9d5866746e84ee7"
+      },
+      {
+        "cell": 9,
+        "type": "code",
+        "lines": 318,
+        "sha256": "54ed30a2f73355f369c112057570e9dd6a37e7f5521a6baf9ccdf4a8fc4ba6f8"
+      },
+      {
+        "cell": 10,
+        "type": "code",
+        "lines": 146,
+        "sha256": "3986eaba6600507225a7140c033c14ae039a4fa95b3602806b43a8f2f11d90a0"
+      },
+      {
+        "cell": 11,
+        "type": "code",
+        "lines": 126,
+        "sha256": "ece3664cf924f36f3b838bac34fa636e67a5c865e6bf21ab61ff086bd1f87dfb"
+      },
+      {
+        "cell": 12,
+        "type": "code",
+        "lines": 8,
+        "sha256": "cf385462ced3af189100ca4798baac430e67d736bd086b46da2a4a3521acb889"
+      },
+      {
+        "cell": 13,
+        "type": "code",
+        "lines": 44,
+        "sha256": "1b69f438acf6f21117acb50f1b42816a5da627c4dcec80b8e76372ef11793f15"
+      }
+    ],
+    "source_coverage": "RETRIEVED_ALL_CELLS_TARGETED_READ_ONLY",
+    "executed": false,
+    "script_version_id": 349035072,
+    "public_score": 0.947,
+    "score_source": "Kaggle version detail UI",
+    "read_ranges": {
+      "0": "browser rendered configuration",
+      "6": "lines 1-550 (entire HOCT arming module)"
+    },
+    "ui_read_date_shanghai": "2026-09-17",
+    "full_notebook_review": false
+  },
+  {
+    "ref": "zhincez/biohub-0-947-lb-runnable-with-public-datasets",
+    "kernel_id": 134275109,
+    "version": 1,
+    "read_at_utc": "2026-09-17T02:05:15.692288+00:00",
+    "source_sha256": "38bca69a477e9090717c59c54358c2434e168042ac29734b9b12922aa7d0f186",
+    "bytes": 237687,
+    "path": "downloads/PUBLIC_OPT_REVIEW_20260917/zhincez.ipynb",
+    "cells": [
+      {
+        "cell": 0,
+        "type": "markdown",
+        "lines": 41,
+        "sha256": "bd4acb41ec12158b21a819579d57dc9b0110bd25842921171695d5f75b8ca10c"
+      },
+      {
+        "cell": 1,
+        "type": "markdown",
+        "lines": 219,
+        "sha256": "de96f694135d0aa67a2d453f986b0854a1919814c54b5779241674bc0047ba01"
+      },
+      {
+        "cell": 2,
+        "type": "code",
+        "lines": 3938,
+        "sha256": "92a63d967db07c6674d8d1678c76d258889a894f39c0240f71dd5ece32eac5e4"
+      }
+    ],
+    "source_coverage": "RETRIEVED_ALL_CELLS_TARGETED_READ_ONLY",
+    "executed": false,
+    "script_version_id": 349655081,
+    "public_score": 0.947,
+    "score_source": "Kaggle version detail UI",
+    "read_ranges": {
+      "0": "entire markdown; variant score is AUTHOR_CLAIM",
+      "2": "not fully read; no full-source claim"
+    },
+    "ui_read_date_shanghai": "2026-09-17",
+    "full_notebook_review": false
+  },
+  {
+    "ref": "hengck23/end2end-cell-linker-raw-edge-ja-0-9-no-ilp",
+    "kernel_id": 134502401,
+    "version": 3,
+    "read_at_utc": "2026-09-17T02:05:18.274954+00:00",
+    "source_sha256": "b0b2da4e467311a70723e14a8c33be716da54b62001a8a0d0536a36b328cd724",
+    "bytes": 296870,
+    "path": "downloads/PUBLIC_OPT_REVIEW_20260917/hengck23.ipynb",
+    "cells": [
+      {
+        "cell": 0,
+        "type": "markdown",
+        "lines": 5,
+        "sha256": "067b7e7a123d31b0a111b06bc2ce8b4a89dbfa3b69beee21047ae00c32b1b742"
+      },
+      {
+        "cell": 1,
+        "type": "code",
+        "lines": 161,
+        "sha256": "dfbcde9cdd4271570d998085285c45ca5d9afc4a1a6e2da202e6d0125a146dc5"
+      },
+      {
+        "cell": 2,
+        "type": "code",
+        "lines": 355,
+        "sha256": "457425a70b9bd9ed43de6742e78b7959deb36b0ce02fa4a7e6547618739b435d"
+      },
+      {
+        "cell": 3,
+        "type": "code",
+        "lines": 183,
+        "sha256": "59178adcbf78cc4a61141ea4160c7df3666448d33c0a9f1421d5bb9ba4b5a5fc"
+      },
+      {
+        "cell": 4,
+        "type": "code",
+        "lines": 46,
+        "sha256": "948cc009c08d415240122e210ee67f9fa5a2f0993ceaf0d10452ee5cb297bafe"
+      }
+    ],
+    "source_coverage": "RETRIEVED_ALL_CELLS_TARGETED_READ_ONLY",
+    "executed": false,
+    "script_version_id": 350162298,
+    "public_score": null,
+    "score_source": "UNKNOWN: no Public Score shown",
+    "read_ranges": {
+      "0": "entire markdown",
+      "2": "lines 224-273",
+      "3": "lines 1-80",
+      "4": "lines 1-46"
+    },
+    "ui_read_date_shanghai": "2026-09-17",
+    "full_notebook_review": false
+  }
+]

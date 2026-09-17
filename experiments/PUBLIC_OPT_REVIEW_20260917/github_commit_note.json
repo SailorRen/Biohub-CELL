@@ -1,0 +1,9 @@
+{
+  "repo": "JunhaoLiXD/Biohub_Cell_Tracking",
+  "commit": "bebb531af9073e2c8ff49a3cbc69c44602f276fb",
+  "read_at_utc": "2026-09-17T02:09:48.132693+00:00",
+  "commit_message": "Pivot to 0.944 parent: exp_055 LB-flat, exp_057 launched, exp_058 designed\n\nexp_055 (original-score joint repair): completed KEEP, independently audited\n(exact local_052 parity). One authorized Public LB scoring returned 0.942 ==\nrepro_041 -- zero gain; the frozen train16 proxy did not transfer. Decisive\nfinding: the train16 proxy is unreliable for post-smoothing graph-repair changes.\n\nexp_056 (division-aware joint repair): three Codex REVISE rounds; halted because\nits go-gate (exp_055 LB > 0.942) failed.\n\nPivot to repro_048 (Public LB 0.944) as the research parent, validated by the\nleaderboard. exp_057 (0.944 bundle + motion EMA 0.4): built (repro_048 notebook +\nonly the scoped velocity_um EMA edit + a fail-closed double-pass integrity block\nverifying EMA-off byte-parity to 0319ba6d, >=1 canonical edge diff, EMA telemetry,\nand effective-alpha==0.4, emitting a controller-compatible metrics.json). Reached\nstrategy CONSENSUS and Codex admission PASS; launched once as\nlingxd/biohub-exp057-0944-motion-ema (SUBMITTED, 1.0 GPU h reserved).\n\nexp_058 (aggressive self-train, v0.3): combined A+B fine-tune with a controlled\nheld-out split; designed and queued behind exp_057.\n\nAdds HANDOUT.md session record and syncs canonical state (STATE.json, CLAUDE/GOAL/\nAGENTS checkpoint blocks, CONTINUATION, SUBMISSION_BUDGET, GPU_BUDGET) plus the\nearlier uncommitted exp_053/054/055 work.\n\nCo-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>",
+  "coverage": "COMMIT_MESSAGE_ONLY; huge earlier diff truncated; not repository source review",
+  "conflict": "README/handoff/experiment.json retain earlier proxy KEEP and stale pending state; commit message records later LB0.942 flat",
+  "evidence_class": "AUTHOR_CLAIM"
+}

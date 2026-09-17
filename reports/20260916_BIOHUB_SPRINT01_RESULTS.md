@@ -69,7 +69,7 @@
 - 已验证普通输出：241285 行；实际选择 tight55，配置 {"MOTION_RELINK_TIGHT_UM": 5.5}。普通与隐藏配置分开，隐藏配置仍 UNKNOWN。
 - 正式状态：COMPLETE；submission：56270217；Public：0.948。最后 API 读取时间：20260916T152650Z（UTC）；页面首次回读已交叉核对同一 V/SV，当时为 Notebook Running。普通 COMPLETE 不等于提分。
 
-- 用户补充的 0.903 尚未绑定具体提交；本次 `get_submission` 与 `list_submissions` 两个接口均返回 submission56270217 为 COMPLETE、Public0.948，见 `formal_terminal_crosscheck.json`。不将两个分数混为同一对象。
+- 2026-09-17 用户已纠正：0.903 来自打开的错误比赛网页，G1 为 0.948，分数歧义已解决。此前 `get_submission` 与 `list_submissions` 均返回 submission56270217 为 COMPLETE、Public0.948；历史 `formal_terminal_crosscheck.json` 保留当时原文，不追改原始回执。
 
 ## 公开路线
 

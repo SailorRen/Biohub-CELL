@@ -1,0 +1,97 @@
+{
+  "recorded_at_utc": "2026-09-17T02:09:48.132693+00:00",
+  "capture_type": "manual structured notes from live CUA UI; not full page archive",
+  "leaderboard": {
+    "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/leaderboard",
+    "scope": "visible rows 1-49 and119-138; collapsed rows not read",
+    "score_binding": "TEAM_PUBLIC_SNAPSHOT; other teams exact submission UNKNOWN",
+    "public_fraction_approx": 0.29,
+    "private_fraction_approx": 0.71,
+    "rows": [
+      {
+        "rank": 1,
+        "team": "Sergio Alvarez",
+        "score": 0.97
+      },
+      {
+        "rank": 2,
+        "team": "Soheil Ayati",
+        "score": 0.968
+      },
+      {
+        "rank": 3,
+        "team": "Tang",
+        "score": 0.966
+      },
+      {
+        "rank": 4,
+        "team": "unicellular",
+        "score": 0.966
+      },
+      {
+        "rank": 5,
+        "team": "yu4u",
+        "score": 0.965
+      },
+      {
+        "rank": 6,
+        "team": "z7777",
+        "score": 0.962
+      },
+      {
+        "rank": 7,
+        "team": "Ryo Hasegawa",
+        "score": 0.961
+      },
+      {
+        "rank": 8,
+        "team": "slime",
+        "score": 0.961
+      },
+      {
+        "rank": 9,
+        "team": "tatsutaka",
+        "score": 0.96
+      },
+      {
+        "rank": 10,
+        "team": "Christoffer Thimsen",
+        "score": 0.96
+      },
+      {
+        "rank": 40,
+        "team": "Lê Quang Cảnh",
+        "score": 0.952
+      },
+      {
+        "rank": 44,
+        "team": "rogerrogerroger3r",
+        "score": 0.952
+      },
+      {
+        "rank": 129,
+        "team": "Sailor Ren",
+        "score": 0.948
+      }
+    ]
+  },
+  "code_lists": {
+    "scope": "Hotness first20 unpinned; PublicScore first20 unpinned; not exhaustive",
+    "public_score_url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/code?competitionId=136605&sortBy=scoreDescending&excludeNonAccessedDatasources=true",
+    "filter_boundary": "excludeNonAccessedDatasources=true retained by site; do not claim all public sources",
+    "card_score_not_formal_proof": true
+  },
+  "stale_card_recheck": {
+    "ref": "muhammaddanyalmalik/cell-tracking",
+    "version": 1,
+    "script_version_id": 336445398,
+    "card_score": 0.95,
+    "detail_public_score": 0.877,
+    "source_coverage": "DETAIL_AND_PARTIAL_RENDERED_SOURCE_ONLY"
+  },
+  "writes": {
+    "kaggle": 0,
+    "train": 0,
+    "submission": 0
+  }
+}

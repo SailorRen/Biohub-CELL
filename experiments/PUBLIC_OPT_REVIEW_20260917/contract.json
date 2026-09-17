@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "task_id": "PUBLIC_OPT_REVIEW_20260917",
+  "goal": "只读公开方案、讨论、GitHub并与G1对照，交付Chat材料并核验远端小文件",
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "scope": {
+    "in_scope": [
+      "当前排行榜已展示行",
+      "至少2个公开Notebook详情及明确源码读取范围",
+      "至少4篇讨论正文，披露评论覆盖",
+      "至少3个固定commit GitHub仓库的指定文件",
+      "G1既有正式证据与方法报告",
+      "任务分支同步和本次文件及G1报告SHA256回读"
+    ],
+    "out_of_scope": [
+      "全站穷尽检索",
+      "外部源码运行",
+      "训练及推理",
+      "Kaggle写入",
+      "提交或最终选择",
+      "自动合并"
+    ]
+  },
+  "acceptance": [
+    {
+      "id": "research",
+      "type": "file",
+      "path": "reports/20260917_公开方案与G1对照.md",
+      "min_bytes": 2000
+    },
+    {
+      "id": "handoff",
+      "type": "file",
+      "path": "reports/20260917_交给Chat的Biohub分析材料.md",
+      "min_bytes": 2000
+    },
+    {
+      "id": "evidence",
+      "type": "command",
+      "argv": [
+        "python3",
+        "experiments/PUBLIC_OPT_REVIEW_20260917/verify.py"
+      ],
+      "expected_exit": 0
+    },
+    {
+      "id": "remote",
+      "type": "git",
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true
+    }
+  ]
+}

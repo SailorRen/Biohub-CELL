@@ -1,0 +1,42 @@
+[
+  {
+    "id": 741242,
+    "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/741242",
+    "title": "Saving ~75 min in the dual-seed + HOCT veto pipeline",
+    "read_at_date_shanghai": "2026-09-17",
+    "coverage": "正文全部；页面显示0评论",
+    "observed_reply_count": 0,
+    "evidence_class": "AUTHOR_CLAIM",
+    "findings": "作者报告固定tight55、去除验证扫描约节约75分钟；降低HOCT超时回退风险；未证明正式提分"
+  },
+  {
+    "id": 740573,
+    "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/740573",
+    "title": "Division steps are not long steps",
+    "read_at_date_shanghai": "2026-09-17",
+    "coverage": "正文全部及已渲染8条评论/回复；图像未逐张审查",
+    "observed_reply_count": 8,
+    "evidence_class": "AUTHOR_CLAIM",
+    "findings": "作者73文件/36标注分裂；距离阈值受基础率、检测定位误差、稀疏标注选择偏差影响"
+  },
+  {
+    "id": 738217,
+    "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/738217",
+    "title": "focus3d : one of the best 3d cell segmentation",
+    "read_at_date_shanghai": "2026-09-17",
+    "coverage": "正文和全部当时展开评论文本；39顶层评论标示、列表49总计；3 more replies未展开；嵌图未逐张审查",
+    "observed_reply_count": null,
+    "evidence_class": "AUTHOR_CLAIM",
+    "findings": "密集伪标注、域偏移校准、长窗链接与结构化排序；作者更正局部基线0.9462而非fielded0.9557；dense head0.9429 encoder0.9085；不是正式Public回执"
+  },
+  {
+    "id": 740145,
+    "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/740145",
+    "title": "magic or overfitting?",
+    "read_at_date_shanghai": "2026-09-17",
+    "coverage": "正文全部及当时展开评论/回复（9 Comments标示，另1 appreciation）；嵌图未逐张审查",
+    "observed_reply_count": null,
+    "evidence_class": "AUTHOR_CLAIM",
+    "findings": "端到端linker约0.90 raw edge JA；训练标签来自FOCUS-3D与增强；不是完整官方总分或Public"
+  }
+]
