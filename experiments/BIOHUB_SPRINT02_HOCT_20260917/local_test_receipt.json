@@ -1,0 +1,16 @@
+{
+  "command": "python3 experiments/BIOHUB_SPRINT02_HOCT_20260917/test_guard.py",
+  "test_count": 4,
+  "status": "PASS",
+  "scope": [
+    "protected split edges",
+    "coverage only veto",
+    "missing/invalid evidence keeps graph",
+    "timeout/partial solve keeps graph",
+    "video identity",
+    "independent copy and coordinates",
+    "disabled identity",
+    "anomalous outdegree protection"
+  ],
+  "HOCT_model_executed": false
+}

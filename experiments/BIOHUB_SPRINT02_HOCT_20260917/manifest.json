@@ -1,0 +1,491 @@
+{
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 2227,
+      "sha256": "3d93338818c2e4ecbaad66a77abc47b9512c0e19fecdf0499868e11a27cdadcf",
+      "read_scope": "whole file"
+    },
+    {
+      "path": "reports/20260917_交给Chat的Biohub分析材料.md",
+      "bytes": 11270,
+      "sha256": "56630dbe840a86a39c32c312a10e6ee6ac41b59730ab606db6ef2b4aba514f89",
+      "read_scope": "whole file"
+    },
+    {
+      "path": "reports/20260917_公开方案与G1对照.md",
+      "bytes": 14543,
+      "sha256": "e87bc83a87badc984b4d612a3e15a36c8428b6c0f0d083f0a353f20e0633d1ab",
+      "read_scope": "whole file"
+    },
+    {
+      "path": "reports/20260916_BIOHUB_SPRINT01_RESULTS.md",
+      "bytes": 10793,
+      "sha256": "9e2d233886f0916a0b9c6dc53f5a1709293bedfca91ad3154aa487a4fb53f9bc",
+      "read_scope": "whole file"
+    },
+    {
+      "path": "experiments/BIOHUB_SPRINT01_20260916/formal_latest.json",
+      "bytes": 624,
+      "sha256": "c2d63b2ce95f0faf0a32af8ee11bc66eb97f81f19056c77bff019e1d5acbeb49",
+      "read_scope": "whole file"
+    },
+    {
+      "path": "experiments/BIOHUB_SPRINT01_20260916/formal_terminal_crosscheck.json",
+      "bytes": 350,
+      "sha256": "e2b2f21426a3b53adb90b2244f8dc899b9a615635c1bee81fade18b9e7f17810",
+      "read_scope": "whole file"
+    },
+    {
+      "path": "experiments/BIOHUB_SPRINT01_20260916/own_version_binding.json",
+      "bytes": 452,
+      "sha256": "d9e1e1e7940411fa198f16cd31f53055fff5593118cac938215b4ce3633fd89d",
+      "read_scope": "whole file"
+    },
+    {
+      "path": "experiments/BIOHUB_SPRINT01_20260916/own/candidate.ipynb",
+      "bytes": 242025,
+      "sha256": "de010e6ba142be0e01000093e061ef7d3388ddaa411185b40d26c63a3febe731",
+      "read_scope": "all executable cells 0-12 read; no execution"
+    },
+    {
+      "path": "experiments/BIOHUB_SPRINT01_20260916/own/build_receipt.json",
+      "bytes": 534,
+      "sha256": "2d148a7758e546a003a74ea59a42f5a6a18b3302920eb5cecbd50bcff985b466",
+      "read_scope": "whole file"
+    },
+    {
+      "path": "experiments/BIOHUB_SPRINT01_20260916/own/kernel-metadata.json",
+      "bytes": 865,
+      "sha256": "11816b32dc5078bea352860d85edd36ba388348332e9b5b8741bc291594ff906",
+      "read_scope": "whole file"
+    },
+    {
+      "path": "experiments/BIOHUB_SPRINT01_20260916/build_production.py",
+      "bytes": 3960,
+      "sha256": "b044d93cbda21c6cd2202ec8f175d86dfdaf5eebf85f1ad296270ac6dfdc35d9",
+      "read_scope": "whole file"
+    },
+    {
+      "path": "experiments/BIOHUB_SPRINT01_20260916/production_module.py",
+      "bytes": 3648,
+      "sha256": "ae1c414bc298eaefc33b79888644290cdb962c7b6f7fbf73adbdc3c278d9c3a6",
+      "read_scope": "whole file"
+    },
+    {
+      "path": "experiments/BIOHUB_SPRINT01_20260916/division_patch.py",
+      "bytes": 3087,
+      "sha256": "bca7e94a684b9d1d0f0e8061f9795049655c13b7a76cfff2202a78959c30c19b",
+      "read_scope": "whole file"
+    },
+    {
+      "path": "experiments/BIOHUB_SPRINT01_20260916/selection_rules.json",
+      "bytes": 1339,
+      "sha256": "f1c1dae612de92241155a709497509e59dd5ee7a06f1df88c12fbcbe3a72cd72",
+      "read_scope": "whole file"
+    },
+    {
+      "path": "experiments/BIOHUB_SPRINT01_20260916/verified_metrics.json",
+      "bytes": 33301,
+      "sha256": "2ff41bc448efdd62310e7938eeed2cde2efb90ec01663fa409550cf4636530b7",
+      "read_scope": "JSON parsed; G1 subtree fully read; other arms historical out of task scope"
+    },
+    {
+      "path": "experiments/PUBLIC_OPT_REVIEW_20260917/notebook_sources.json",
+      "bytes": 6024,
+      "sha256": "9855bf40815a3c3d1880ae0782826eb6ba9038336298a8529439db1fb9318336",
+      "read_scope": "whole file"
+    },
+    {
+      "path": "downloads/PUBLIC_OPT_REVIEW_20260917/sjlee101.ipynb",
+      "bytes": 253551,
+      "sha256": "8e385801b91db946c8a9b73ef53a511fa93e7c05b150e047777775b5b9df280a",
+      "read_scope": "cell6 lines1-550; relevant identical base cells compared; not full Notebook"
+    },
+    {
+      "path": "experiments/TARGET950_20260914/official_selector_adapter.py",
+      "bytes": 11086,
+      "sha256": "3f12b1fdf3ecd2c7492f4577dbee00b964334abb861938e9ffbad9f84edaae9b",
+      "read_scope": "whole file"
+    },
+    {
+      "path": "experiments/TARGET950_20260914/vendor/official_075fc5/metrics.py",
+      "bytes": 19602,
+      "sha256": "cfdd596e3f8909cca14db0682889738b19ff75c3808b3773175aba9367ca7444",
+      "read_scope": "whole file"
+    },
+    {
+      "path": "experiments/TARGET950_20260914/vendor/official_075fc5/division_metrics.py",
+      "bytes": 20488,
+      "sha256": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9",
+      "read_scope": "whole file"
+    }
+  ],
+  "assets": [
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/asset_versions.json",
+      "bytes": 257,
+      "sha256": "5b1b375ec4b7c5dbc483fa3b9323ae7184b0f184e735c55efcb7b5fc819011ad",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/support_dependency_files.json",
+      "bytes": 184,
+      "sha256": "0a140b95350ebeabe4fe146bb945d17b5943fe33e919d35587e3f1d3d6f01cc3",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/biohub-hoct-general-v0-official/dataset-metadata.json",
+      "bytes": 349,
+      "sha256": "a48aeb262119048798bda36231c9e895545f118bb1f75692242c899c95557770",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/biohub-hoct-general-v0-official/LICENSE",
+      "bytes": 1121,
+      "sha256": "58a554d878af9d421b9b0c6216164694f7d0e74e93b6c68989946462fb90bfce",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/biohub-hoct-general-v0-official/SOURCE.md",
+      "bytes": 595,
+      "sha256": "37429de8c7cbbefa6cc8bf18975706e106eddf50ef8ca3620795809be54aeedf",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/biohub-hoct-general-v0-official/general_v0.pt",
+      "bytes": 25510490,
+      "sha256": "024c2e4606275c96667907abfc9e0c27487b543480caf99d9ebd1d267cef8e4a",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/biohub-hoct-020-wheels/dataset-metadata.json",
+      "bytes": 901,
+      "sha256": "4a6a09870993b4a45ddbd35412fc2f96c5bff77c964d94085d078dd19d8f525c",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/biohub-hoct-020-wheels/hoct-0.2.0-py3-none-any.whl",
+      "bytes": 51052,
+      "sha256": "c6194e81a05d272913dd0945ede2484d9a7d89f8d751c4eb1e30c43031e9093c",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/biohub-hoct-020-wheels/spatial_graph-0.1.1-cp311-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+      "bytes": 17127766,
+      "sha256": "50b5a613e446e6c2c85e9f5a0a474c7f9d6b81e23fadc0e8623ef6486a2cd367",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/biohub-hoct-020-wheels/pooch-1.9.0-py3-none-any.whl",
+      "bytes": 67175,
+      "sha256": "f265597baa9f760d25ceb29d0beb8186c243d6607b0f60b83ecf14078dbc703b",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/support/tracksdata-0.1.0rc6.dev3+g980c2d30a-py3-none-any.whl",
+      "bytes": 278481,
+      "sha256": "5111a9058edb31272fd5c6d01ccfe6146cf190ed96b100cb3d27411a6a91ff4d",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/support_source/tracksdata/nodes/_regionprops.py",
+      "bytes": 11191,
+      "sha256": "9aacbd706459a8cd7ca23512ab9df073dbaec8ba6c28839162b73f3954335b86",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/support_source/tracksdata/solvers/_ilp_solver.py",
+      "bytes": 16764,
+      "sha256": "1a5bc197bb66e26bc56ceba8f280194978c4bfee46261410bb0ed1af55fbbfd0",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct-0.2.0.dist-info/METADATA",
+      "bytes": 9309,
+      "sha256": "879d777f4554cb6db30fcbee2ebc32910905689d0f9266bcb2414f0201975d8b",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct-0.2.0.dist-info/licenses/LICENSE",
+      "bytes": 1100,
+      "sha256": "e6bb4dca104864ee94bdb48cb2d1bded8a6f0d5907f763d27fb1ffb25fc87845",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct/_logging.py",
+      "bytes": 220,
+      "sha256": "b20e9359f5b736729654e9822ad9dbb644b68c2bf15a576b1ab44a06256d720b",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct/_io.py",
+      "bytes": 9237,
+      "sha256": "14af711bcc13935e880762c3b1b8d8fdf24fc7f50964d68b9c7c9a75dbfaaba1",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct/_api.py",
+      "bytes": 10832,
+      "sha256": "62f35e372eff20f4da143105bccf62619daab31b46c340b00a60614fc681b925",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct/__init__.py",
+      "bytes": 273,
+      "sha256": "1390ba6d9a32ac8e90aba7ec3207b15756872ee6ab8a08e5b41a2af97eb9f58c",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct/cli.py",
+      "bytes": 17127,
+      "sha256": "a69802a683f1b78d8cbe603c38ecbbfd93aa77a874515d71319d12e5c9506402",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct/__about__.py",
+      "bytes": 520,
+      "sha256": "b3d5375f9e0f76bf89961f463fa2c169afd5468b3baacff0b6b55e7d41c73480",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct/correction.py",
+      "bytes": 10011,
+      "sha256": "34fa20e198a75baecb39b3668957d6baa4ead391111d6827f7082b6e2e367d3e",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct/_models.py",
+      "bytes": 3614,
+      "sha256": "9db1a59b66012112b91f406c0ed0fd6bc8f0abd85e45f2c028c92b5521b37ab1",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct/features/graph.py",
+      "bytes": 10237,
+      "sha256": "34f651dcb247a185d8b70ed32d96fb5916565b470bd628ec256a3c0651693bf3",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct/features/constants.py",
+      "bytes": 203,
+      "sha256": "1027e0e7d5288d1782a0698278b4782806973813ea65709efa8dd139b4d91972",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct/features/__init__.py",
+      "bytes": 755,
+      "sha256": "d72c4d09486c458d25e7314e41550baef8cf91a25f0fb72a7fca76afe4d0ab81",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct/features/features.py",
+      "bytes": 5498,
+      "sha256": "4b5c383823d382a11a779cb79b1a3aa7c90608e1e906f2fc2f6a59f73632e106",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct/inference/_predict.py",
+      "bytes": 20649,
+      "sha256": "57921cbeed3d92ffc6abbf15f1a3a44213812b4c8385ff24d4ce0b02f30c381c",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct/inference/__init__.py",
+      "bytes": 230,
+      "sha256": "2e4ecabec7276b224cbf0ba89287c19625c1a7e1d1a0bc12cecab19fb5c530b9",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct/tracking/__init__.py",
+      "bytes": 235,
+      "sha256": "15301eec9b77514263c41c472f69521fcfb7a78e398f7b69a5562225c8bd0cab",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct/tracking/_solver.py",
+      "bytes": 7668,
+      "sha256": "3757c3525483d4927fd3bc44a17c499333b37ebf9aca07aeda081709431226fb",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct/tracking/_tracklet_solver.py",
+      "bytes": 9775,
+      "sha256": "d8531daf32b066317fd9e3cdb07113d4fbd1cbb9a58ae6921b28cf0d0903b9cc",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct/data/_batching.py",
+      "bytes": 10756,
+      "sha256": "b768d27c794e0e3dd7e029e13d39f8e96e27c83338e17f0fdfd403533fe20fba",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct/data/_tiled_dataset.py",
+      "bytes": 2411,
+      "sha256": "bd78131c3175dd08a2960aa0ae8df0e58151d1a775e09447dbc070c2c81a2ce3",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct/data/__init__.py",
+      "bytes": 564,
+      "sha256": "1160bf6e2f357b8369cd1d0c3fd3d185142bdafe2d7020c0ae758d07555e6c92",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct/data/_transforms.py",
+      "bytes": 6910,
+      "sha256": "27d7596700fe04b6936fec00b6edddff801d9f33f2421d362b6aeea4cfdb1f8a",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct/data/_labeled_dataset.py",
+      "bytes": 2845,
+      "sha256": "6b21e6dd543c5c9c46d1fb94120e3675f1727763535069e59ae727e646e82d2b",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/wheel_source/hoct/data/_frame_dataset.py",
+      "bytes": 7836,
+      "sha256": "a940c2220e3f10adee172a2a3a50b7659abbf6f4dfe43d921e2f508c8b8c0b62",
+      "source": "Kaggle dataset exact version1; supportpack exactversion10",
+      "read_scope": "download/hash; .py relevant API/model/predict/solver/features graph and regionprops read; other files not fully read"
+    }
+  ],
+  "versions": [
+    {
+      "ref": "sjlee101/biohub-hoct-020-wheels",
+      "version": 1,
+      "read_at": "2026-09-17T03:46:35.604762+00:00"
+    },
+    {
+      "ref": "musculer/biohub-hoct-general-v0-official",
+      "version": 1,
+      "read_at": "2026-09-17T03:46:38.538906+00:00"
+    }
+  ],
+  "samples": [
+    {
+      "stem": "44b6_12dfb391",
+      "embryo": "44b6",
+      "classifier": "held_out/44b6",
+      "cache_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_12dfb391_G1_graph.json",
+      "cache_sha256": "767a8d2ec5e469e2123c420aff07ca38d966f6f72504a289bd6bcbeba934bd77",
+      "scorer_input_hash": "998eb958747acf9b2c4010219bfb7f01f4818f276f7b9a93172d41b830cde4cd",
+      "gt_input_hash": "c6011d3bc4e095e59278cbf7a833d3bf40fb009c62dd9f9ca22904b072be619b",
+      "n_total": 58672.0
+    },
+    {
+      "stem": "44b6_267148e4",
+      "embryo": "44b6",
+      "classifier": "held_out/44b6",
+      "cache_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_267148e4_G1_graph.json",
+      "cache_sha256": "e26d4a42eeb187aef0a717a60fb1da80f7d62494d0084820e35df55ba6b51786",
+      "scorer_input_hash": "2e4680f54c2374f7e26d596fea1b8cda62448a41679df8d00dc19f26ff70fa21",
+      "gt_input_hash": "e49345f7586d669ccfae3d935039aa833362c058a4103ecd9be24dd17774d6f4",
+      "n_total": 19130.0
+    },
+    {
+      "stem": "44b6_2a2eff9f",
+      "embryo": "44b6",
+      "classifier": "held_out/44b6",
+      "cache_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_2a2eff9f_G1_graph.json",
+      "cache_sha256": "8680482c0b07755e1f479252d3fb65b9f8677d331ce89eb39b21d8321b805917",
+      "scorer_input_hash": "e4abce0237a8274b815ffa77f2e41a9c64c716d3b113f47406454e76bd895fea",
+      "gt_input_hash": "0d65bb8e038d7cc0e5cc0494bbf5a0c2ee68a10f7ebadc14044ce03fdbff91b5",
+      "n_total": 56367.0
+    },
+    {
+      "stem": "44b6_341df25f",
+      "embryo": "44b6",
+      "classifier": "held_out/44b6",
+      "cache_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_341df25f_G1_graph.json",
+      "cache_sha256": "99189227784a45cf38eb44d04e0db95a9707c7d27110100b52bee9dfacd04c07",
+      "scorer_input_hash": "a23350cb13c9eb18405f85e0494ba2ec8c9ba7d84b68c4dffcabe3fe470c5c15",
+      "gt_input_hash": "737532e3cafe8e86ebfa9fcc4190c7860e0127f45756761f5503e894a815cfef",
+      "n_total": 7436.0
+    },
+    {
+      "stem": "6bba_062c8d37",
+      "embryo": "6bba",
+      "classifier": "held_out/6bba",
+      "cache_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_062c8d37_G1_graph.json",
+      "cache_sha256": "68ac0602e14f3462ba85eda91b79f2244837bae25f71805d3d8bd1c9beb23ae7",
+      "scorer_input_hash": "accb49c87d2a4a18685c11b3d071acc678a3ad6ba656e2cfd90c1d0dc0ef887e",
+      "gt_input_hash": "00789e40cd27ab4c522884eac7fbb4ffc55e641c9647a402316c63042123056d",
+      "n_total": 6030.0
+    },
+    {
+      "stem": "6bba_07e24132",
+      "embryo": "6bba",
+      "classifier": "held_out/6bba",
+      "cache_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_07e24132_G1_graph.json",
+      "cache_sha256": "7cab73bba0bb052a349e5f01de3d7814df3ca87c5ce5f1d7af3ba8a63a924b70",
+      "scorer_input_hash": "87e64a8ea5e766d4ca344baf76a3b9d0cfa46ae46b73d4b9dd4dffac519c53a4",
+      "gt_input_hash": "cedf0c3a2f8cfcdca4c75c6c1b1e8519512ddcc654aba5eb471c2b4ff7f3580d",
+      "n_total": 21485.0
+    },
+    {
+      "stem": "6bba_085bf656",
+      "embryo": "6bba",
+      "classifier": "held_out/6bba",
+      "cache_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_085bf656_G1_graph.json",
+      "cache_sha256": "32b5b268d888f178b2e25906c6b68dbca8941d930e72ef2b3517b1c6d0131547",
+      "scorer_input_hash": "da03bb9b34946ec962151ef1fcd00e8b4eabe5fa8715b0999d3f8282e961cae9",
+      "gt_input_hash": "64990f20b37c73ab00ddce538fd8dbd8540111ad33623ad8ff815bdbe569a3ac",
+      "n_total": 8463.0
+    },
+    {
+      "stem": "6bba_09961292",
+      "embryo": "6bba",
+      "classifier": "held_out/6bba",
+      "cache_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_09961292_G1_graph.json",
+      "cache_sha256": "310b1d47a77c2897e5c529772f15a23299911323bb5932fc4104926fbb73a8f3",
+      "scorer_input_hash": "9f0e2da3ac1559f256490f107017e13712e569af824ffc9d3d9e40d6fa07ba2d",
+      "gt_input_hash": "2dce94f7f71d489e6e6626b945161c919b0e248d47aadb6717d1776c5c190972",
+      "n_total": 31117.0
+    }
+  ],
+  "source_license": "HOCT wheel MIT; weights SOURCE.md claims public MIT with upstream commit cabe8fd43b21653b8d717ac7758c07fd1f7c13cb; dataset license field unknown but bundled LICENSE retained",
+  "notebook_module_license": "UNKNOWN; source attribution retained; module adapted solely for authorized private experiment",
+  "initial_state": "initial_state.json",
+  "environment": "same G1 pinned docker image; --no-deps installation; torch/numpy/tracksdata/polars/pydantic versions must remain unchanged",
+  "lineage": "secondary trained on all 8 FOV; primary lineage UNKNOWN; classifier embryo heldout verified in prior exact receipt"
+}
