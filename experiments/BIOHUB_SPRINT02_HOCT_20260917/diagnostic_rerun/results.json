@@ -1,0 +1,114 @@
+{
+  "status": "DIAGNOSTIC_RUNNING",
+  "overall_task_status": "PARTIAL",
+  "observed_at_utc": "2026-09-17T09:16:33.191096+00:00",
+  "kernel_id": 134683728,
+  "version": 2,
+  "script_version_id": 350526849,
+  "source_cells_match": true,
+  "environment_cloud": "UNKNOWN",
+  "covered": null,
+  "selected": null,
+  "deleted": null,
+  "official_pair_scores": null,
+  "correct_structure_delta": null,
+  "gates_pass": null,
+  "local_rescore": "NOT_RUN_PENDING_NEW_FINAL_GRAPHS",
+  "new_public": null,
+  "production": "NOT_RUN",
+  "budgets_used": {
+    "save_run": 1,
+    "training": 0,
+    "submission": 0,
+    "dataset": 0,
+    "final_selection": 0
+  },
+  "sprint02_diagnostic_save_run_cumulative": 2,
+  "samples": [
+    {
+      "stem": "44b6_12dfb391",
+      "embryo": "44b6",
+      "execution_status": "UNKNOWN_WHILE_RUNNING",
+      "coverage": null,
+      "deletions": null,
+      "official_B0": null,
+      "official_H1": null
+    },
+    {
+      "stem": "44b6_267148e4",
+      "embryo": "44b6",
+      "execution_status": "UNKNOWN_WHILE_RUNNING",
+      "coverage": null,
+      "deletions": null,
+      "official_B0": null,
+      "official_H1": null
+    },
+    {
+      "stem": "44b6_2a2eff9f",
+      "embryo": "44b6",
+      "execution_status": "UNKNOWN_WHILE_RUNNING",
+      "coverage": null,
+      "deletions": null,
+      "official_B0": null,
+      "official_H1": null
+    },
+    {
+      "stem": "44b6_341df25f",
+      "embryo": "44b6",
+      "execution_status": "UNKNOWN_WHILE_RUNNING",
+      "coverage": null,
+      "deletions": null,
+      "official_B0": null,
+      "official_H1": null
+    },
+    {
+      "stem": "6bba_062c8d37",
+      "embryo": "6bba",
+      "execution_status": "UNKNOWN_WHILE_RUNNING",
+      "coverage": null,
+      "deletions": null,
+      "official_B0": null,
+      "official_H1": null
+    },
+    {
+      "stem": "6bba_07e24132",
+      "embryo": "6bba",
+      "execution_status": "UNKNOWN_WHILE_RUNNING",
+      "coverage": null,
+      "deletions": null,
+      "official_B0": null,
+      "official_H1": null
+    },
+    {
+      "stem": "6bba_085bf656",
+      "embryo": "6bba",
+      "execution_status": "UNKNOWN_WHILE_RUNNING",
+      "coverage": null,
+      "deletions": null,
+      "official_B0": null,
+      "official_H1": null
+    },
+    {
+      "stem": "6bba_09961292",
+      "embryo": "6bba",
+      "execution_status": "UNKNOWN_WHILE_RUNNING",
+      "coverage": null,
+      "deletions": null,
+      "official_B0": null,
+      "official_H1": null
+    }
+  ],
+  "delivery_checks": {
+    "frozen_files_sha256_match": 17,
+    "all_platform_cells_match": 8,
+    "single_write_transport_send_calls": 1
+  },
+  "missing": [
+    "new-version terminal output inventory",
+    "cloud environment receipt",
+    "actual inference/solve/coverage/deletions",
+    "eight final official paired scores",
+    "local final-graph recomputation and edge attribution"
+  ],
+  "next_action": "Only read existing V2 outputs; no new write, no automatic background monitor"
+}
