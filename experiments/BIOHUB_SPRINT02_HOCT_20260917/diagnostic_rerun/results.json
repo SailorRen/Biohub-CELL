@@ -1,19 +1,41 @@
 {
-  "status": "DIAGNOSTIC_RUNNING",
-  "overall_task_status": "PARTIAL",
-  "observed_at_utc": "2026-09-17T09:16:33.191096+00:00",
+  "status": "DIAGNOSTIC_REJECT",
+  "cloud_status": "COMPLETE",
+  "verification": "FINAL_GRAPHS_RECOMPUTED",
+  "observed_at_utc": "2026-09-17T11:38:56.756774+00:00",
   "kernel_id": 134683728,
   "version": 2,
   "script_version_id": 350526849,
   "source_cells_match": true,
-  "environment_cloud": "UNKNOWN",
-  "covered": null,
-  "selected": null,
-  "deleted": null,
-  "official_pair_scores": null,
-  "correct_structure_delta": null,
-  "gates_pass": null,
-  "local_rescore": "NOT_RUN_PENDING_NEW_FINAL_GRAPHS",
+  "environment_cloud": "ENVIRONMENT_VERIFIED",
+  "covered": 181908,
+  "selected_within_covered": 181468,
+  "deleted": 440,
+  "protected": 214,
+  "uncovered": 0,
+  "official_pair_scores": {
+    "B0": 0.9434057263411255,
+    "H1": 0.9447609115475968
+  },
+  "cloud_pair_delta": 0.0013551852064712655,
+  "local_pair_delta": 0.0013551852064710435,
+  "attribution_counts": {
+    "UNKNOWN": 425,
+    "OFFICIAL_SCORED_FP": 12,
+    "KNOWN_CORRECT_OFFICIAL_TP": 3
+  },
+  "gates_pass": false,
+  "failures": [
+    "ALL:edge_tp_DOWN",
+    "ALL:edge_fn_UP",
+    "44b6:SCORE_DOWN",
+    "44b6:edge_tp_DOWN",
+    "44b6:edge_fn_UP",
+    "6bba:edge_tp_DOWN",
+    "6bba:edge_fn_UP",
+    "KNOWN_CORRECT_DELETED_EDGE"
+  ],
+  "local_rescore": "VERIFIED",
   "new_public": null,
   "production": "NOT_RUN",
   "budgets_used": {
@@ -23,92 +45,12 @@
     "dataset": 0,
     "final_selection": 0
   },
+  "this_followup_new_write_requests": 0,
   "sprint02_diagnostic_save_run_cumulative": 2,
-  "samples": [
-    {
-      "stem": "44b6_12dfb391",
-      "embryo": "44b6",
-      "execution_status": "UNKNOWN_WHILE_RUNNING",
-      "coverage": null,
-      "deletions": null,
-      "official_B0": null,
-      "official_H1": null
-    },
-    {
-      "stem": "44b6_267148e4",
-      "embryo": "44b6",
-      "execution_status": "UNKNOWN_WHILE_RUNNING",
-      "coverage": null,
-      "deletions": null,
-      "official_B0": null,
-      "official_H1": null
-    },
-    {
-      "stem": "44b6_2a2eff9f",
-      "embryo": "44b6",
-      "execution_status": "UNKNOWN_WHILE_RUNNING",
-      "coverage": null,
-      "deletions": null,
-      "official_B0": null,
-      "official_H1": null
-    },
-    {
-      "stem": "44b6_341df25f",
-      "embryo": "44b6",
-      "execution_status": "UNKNOWN_WHILE_RUNNING",
-      "coverage": null,
-      "deletions": null,
-      "official_B0": null,
-      "official_H1": null
-    },
-    {
-      "stem": "6bba_062c8d37",
-      "embryo": "6bba",
-      "execution_status": "UNKNOWN_WHILE_RUNNING",
-      "coverage": null,
-      "deletions": null,
-      "official_B0": null,
-      "official_H1": null
-    },
-    {
-      "stem": "6bba_07e24132",
-      "embryo": "6bba",
-      "execution_status": "UNKNOWN_WHILE_RUNNING",
-      "coverage": null,
-      "deletions": null,
-      "official_B0": null,
-      "official_H1": null
-    },
-    {
-      "stem": "6bba_085bf656",
-      "embryo": "6bba",
-      "execution_status": "UNKNOWN_WHILE_RUNNING",
-      "coverage": null,
-      "deletions": null,
-      "official_B0": null,
-      "official_H1": null
-    },
-    {
-      "stem": "6bba_09961292",
-      "embryo": "6bba",
-      "execution_status": "UNKNOWN_WHILE_RUNNING",
-      "coverage": null,
-      "deletions": null,
-      "official_B0": null,
-      "official_H1": null
-    }
-  ],
-  "delivery_checks": {
-    "frozen_files_sha256_match": 17,
-    "all_platform_cells_match": 8,
-    "single_write_transport_send_calls": 1
-  },
-  "missing": [
-    "new-version terminal output inventory",
-    "cloud environment receipt",
-    "actual inference/solve/coverage/deletions",
-    "eight final official paired scores",
-    "local final-graph recomputation and edge attribution"
-  ],
-  "next_action": "Only read existing V2 outputs; no new write, no automatic background monitor"
+  "complete_samples": 8,
+  "excluded_samples": 0,
+  "forward_calls": null,
+  "solver_status_observations": 16,
+  "scientific_panel": "非独立回归面板",
+  "decision": "淘汰当前冻结H1，不进入生产或正式提交"
 }

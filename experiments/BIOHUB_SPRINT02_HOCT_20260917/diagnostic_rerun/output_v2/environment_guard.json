@@ -1,0 +1,26 @@
+{
+  "status": "ENVIRONMENT_VERIFIED",
+  "expected_version": "0.1.0rc6.dev3+g980c2d30a",
+  "observed_version": "0.1.0rc6.dev3+g980c2d30a",
+  "files": {
+    "tracksdata.graph._rustworkx_graph": {
+      "expected_sha256": "548db539dcf066f4a1bc331ba4bbb547d0b556d763fa9746185b19be514d1d11",
+      "observed_sha256": "548db539dcf066f4a1bc331ba4bbb547d0b556d763fa9746185b19be514d1d11",
+      "path": "/usr/local/lib/python3.12/dist-packages/tracksdata/graph/_rustworkx_graph.py"
+    },
+    "tracksdata.graph._base_graph": {
+      "expected_sha256": "fd3835a3a37b0817896e063ac10f809683b632ed7582c16547d40d304df19462",
+      "observed_sha256": "fd3835a3a37b0817896e063ac10f809683b632ed7582c16547d40d304df19462",
+      "path": "/usr/local/lib/python3.12/dist-packages/tracksdata/graph/_base_graph.py"
+    },
+    "tracksdata.nodes._mask": {
+      "expected_sha256": "43297f42c31a9035e242825aab51faf1ba219b25dbadf081e6de7d113818c422",
+      "observed_sha256": "43297f42c31a9035e242825aab51faf1ba219b25dbadf081e6de7d113818c422",
+      "path": "/usr/local/lib/python3.12/dist-packages/tracksdata/nodes/_mask.py"
+    }
+  },
+  "errors": [],
+  "executable": "/usr/bin/python3",
+  "prefix": "/usr",
+  "worker_environment": "same sys.executable, inherited environment, no dependency mutation after guard"
+}
