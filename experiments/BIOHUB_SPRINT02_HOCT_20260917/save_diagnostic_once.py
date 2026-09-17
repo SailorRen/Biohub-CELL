@@ -32,7 +32,10 @@ if __name__=='__main__':
         try:
             with api.build_kaggle_client() as c:c.kernels.kernels_api_client.get_kernel(q)
         except Exception as e:
-            assert getattr(getattr(e,'response',None),'status_code',None)==404,'ABSENCE_UNPROVEN'
+            code=getattr(getattr(e,'response',None),'status_code',None)
+            ui=json.loads((P/'kernel_absence_ui.json').read_text())
+            assert code in (403,404) and ui['ref']==ref and ui['visible_text']=="We can't find that page.",'ABSENCE_UNPROVEN'
+            assert (datetime.now(timezone.utc)-datetime.fromisoformat(ui['observed_at_utc'])).total_seconds()<600
         else:raise RuntimeError('EXISTING_TASK_KERNEL_NO_RESAVE')
         source=sha(P/'diagnostic/candidate.ipynb')
         assert source==json.loads((P/'diagnostic/build_receipt.json').read_text())['source_sha256']
