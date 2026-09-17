@@ -1,8 +1,8 @@
 {
   "status": "NOT_RUN",
   "submission_id": null,
-  "version": null,
-  "script_version_id": null,
   "public_score": null,
-  "reason": "Requires Stage B and Stage C gates"
+  "reason": "Stage B all eight videos fallback; production gate failed; retain G1 submission 56270217 Public 0.948",
+  "production": "NOT_RUN",
+  "final_selection_modified": false
 }

@@ -25,3 +25,24 @@ def main():
     print(json.dumps(dict(status='PASS_SCOPED_LOCAL_CHECKS',budgets_used=counts,diagnostic_status=d['status'],formal_status=formal['status'],claim='not an inference or formal-score completion certificate')))
 
 if __name__=='__main__':main()
+
+# Additional result-integrity checks implement the original Stage B stop gate.
+if __name__=='__main__' and (P/'verification.json').exists():
+    v=json.loads((P/'verification.json').read_text())
+    assert v['status']=='VERIFIED_FALLBACK_NO_EFFECT' and len(v['checks'])==8
+    assert v['fallback_videos']==8 and v['covered']==v['deleted']==0
+    assert not v['production_allowed'] and not v['formal_allowed']
+    platform=json.loads((P/'diagnostic_platform.json').read_text())
+    assert (platform['kernel_id'],platform['version'],platform['script_version_id'])==(134683728,1,350471527)
+    assert platform['status']=='COMPLETE' and platform['source_cells_match']
+    for f in platform['collected']:assert sha(R/f['local_path'])==f['sha256']
+    for f in (P/'output_v1').glob('*.json'):
+        r=next(x for x in platform['collected'] if x['path']=='s02_small/'+f.name)
+        assert sha(f)==r['sha256']
+    d=json.loads((P/'diagnostic_metrics.json').read_text())
+    assert d['summary']['B0']==d['summary']['H1'] and d['decision']=='DIAGNOSTIC_NO_EFFECT'
+    assert d['production_gate']=='BLOCKED_HOCT_COVERAGE_UNOBSERVABLE'
+    assert sha(P/'diagnostic/candidate.ipynb')==json.loads((P/'diagnostic/build_receipt.json').read_text())['source_sha256']
+    local=json.loads((P/'diagnostic/candidate.ipynb').read_text());remote=json.loads((R/platform['source_local']).read_text())
+    assert [(c['cell_type'],''.join(c['source'])) for c in local['cells']]==[(c['cell_type'],''.join(c['source'])) for c in remote['cells']]
+    print('PASS_TERMINAL_STOP_GATE_AND_IMMUTABLE_SOURCE')

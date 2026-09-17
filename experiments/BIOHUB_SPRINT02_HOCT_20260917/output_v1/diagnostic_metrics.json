@@ -1291,8 +1291,5 @@
     }
   ],
   "independent_panel_available": false,
-  "production_gate": "BLOCKED_HOCT_COVERAGE_UNOBSERVABLE",
-  "execution_status": "PARTIAL_BLOCKED",
-  "production_allowed": false,
-  "result_scope": "All eight H1 graphs fell back to B0. Exact score equality does not establish HOCT effectiveness."
+  "production_gate": "PENDING_LOCAL_OFFICIAL_EDGE_ATTRIBUTION"
 }

@@ -5,7 +5,7 @@ from datetime import datetime,timezone
 from urllib.parse import quote
 import requests
 R=Path(__file__).resolve().parents[2]
-def git(*a):return subprocess.check_output(['git',*a],cwd=R)
+def git(*a):return subprocess.check_output(['git','-c','core.quotepath=false',*a],cwd=R)
 def sha(x):return hashlib.sha256(x).hexdigest()
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--commit',required=True);p.add_argument('--output',required=True);a=p.parse_args()

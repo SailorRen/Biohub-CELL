@@ -1,0 +1,318 @@
+{
+  "observed_at_utc": "2026-09-17T06:02:23.347741+00:00",
+  "ref": "sailorren/biohub-s02-h1-diagnostic-20260917",
+  "kernel_id": 134683728,
+  "version": 1,
+  "script_version_id": 350471527,
+  "script_version_id_source": "Kaggle visible Edit link /edit/run/350471527",
+  "status": "COMPLETE",
+  "failure_message": "None",
+  "source_sha256": "47ea37f1545c6678e9589e15f86248bc0c3e1bdbb88a0f320a7a32f04392a17b",
+  "source_cells_match": true,
+  "source_local": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/remote_source.ipynb",
+  "output_inventory_complete": true,
+  "pages": 1,
+  "output_names": [
+    "bidirectional_production_runtime_integrity.json",
+    "official_scorer_075fc5/LICENSE",
+    "official_scorer_075fc5/__init__.py",
+    "official_scorer_075fc5/__pycache__/__init__.cpython-312.pyc",
+    "official_scorer_075fc5/__pycache__/division_metrics.cpython-312.pyc",
+    "official_scorer_075fc5/__pycache__/metrics.cpython-312.pyc",
+    "official_scorer_075fc5/division_metrics.py",
+    "official_scorer_075fc5/metrics.py",
+    "s02_cache/44b6_12dfb391.log",
+    "s02_cache/44b6_12dfb391_H1_graph.json",
+    "s02_cache/44b6_12dfb391_evidence.json",
+    "s02_cache/44b6_12dfb391_job.json",
+    "s02_cache/44b6_267148e4.log",
+    "s02_cache/44b6_267148e4_H1_graph.json",
+    "s02_cache/44b6_267148e4_evidence.json",
+    "s02_cache/44b6_267148e4_job.json",
+    "s02_cache/44b6_2a2eff9f.log",
+    "s02_cache/44b6_2a2eff9f_H1_graph.json",
+    "s02_cache/44b6_2a2eff9f_evidence.json",
+    "s02_cache/44b6_2a2eff9f_job.json",
+    "s02_cache/44b6_341df25f.log",
+    "s02_cache/44b6_341df25f_H1_graph.json",
+    "s02_cache/44b6_341df25f_evidence.json",
+    "s02_cache/44b6_341df25f_job.json",
+    "s02_cache/6bba_062c8d37.log",
+    "s02_cache/6bba_062c8d37_H1_graph.json",
+    "s02_cache/6bba_062c8d37_evidence.json",
+    "s02_cache/6bba_062c8d37_job.json",
+    "s02_cache/6bba_07e24132.log",
+    "s02_cache/6bba_07e24132_H1_graph.json",
+    "s02_cache/6bba_07e24132_evidence.json",
+    "s02_cache/6bba_07e24132_job.json",
+    "s02_cache/6bba_085bf656.log",
+    "s02_cache/6bba_085bf656_H1_graph.json",
+    "s02_cache/6bba_085bf656_evidence.json",
+    "s02_cache/6bba_085bf656_job.json",
+    "s02_cache/6bba_09961292.log",
+    "s02_cache/6bba_09961292_H1_graph.json",
+    "s02_cache/6bba_09961292_evidence.json",
+    "s02_cache/6bba_09961292_job.json",
+    "s02_code/__pycache__/hoct_guard.cpython-312.pyc",
+    "s02_code/__pycache__/hoct_observer.cpython-312.pyc",
+    "s02_code/__pycache__/source_helpers.cpython-312.pyc",
+    "s02_code/hoct_guard.py",
+    "s02_code/hoct_observer.py",
+    "s02_code/hoct_worker.py",
+    "s02_code/source_helpers.py",
+    "s02_small/coverage.json",
+    "s02_small/deleted_edges.json",
+    "s02_small/diagnostic_metrics.json",
+    "s02_small/progress.json",
+    "s02_small/runtime_receipt.json",
+    "secondary_seed_weights/unet_transformer/split_0/SNAPSHOT_MANIFEST.json",
+    "secondary_seed_weights/unet_transformer/split_0/checkpoint_last.pth",
+    "secondary_seed_weights/unet_transformer/split_0/config.json",
+    "secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth",
+    "secondary_seed_weights/unet_transformer/split_0/history.csv",
+    "secondary_seed_weights/unet_transformer/split_0/split_manifest.json",
+    "secondary_seed_weights/unet_transformer/split_0/training_config.json",
+    "tracking_repo/scripts/augmentations.py",
+    "tracking_repo/scripts/dataspec.py",
+    "tracking_repo/scripts/evaluate.py",
+    "tracking_repo/scripts/predict_unet_transformer.py",
+    "tracking_repo/scripts/train_unet_transformer.py",
+    "tracking_repo/src/biohub_tracking/__init__.py",
+    "tracking_repo/src/biohub_tracking/division_metrics.py",
+    "tracking_repo/src/biohub_tracking/img_proc.py",
+    "tracking_repo/src/biohub_tracking/io.py",
+    "tracking_repo/src/biohub_tracking/metrics.py",
+    "tracking_repo/src/biohub_tracking/models/__init__.py",
+    "tracking_repo/src/biohub_tracking/models/simple_node_transformer.py",
+    "tracking_repo/src/biohub_tracking/models/temporal_unet.py"
+  ],
+  "collected": [
+    {
+      "path": "s02_cache/44b6_12dfb391.log",
+      "bytes": 16210,
+      "sha256": "59e555902d162e62ee10dde93305d009066af9ce71c06dd7e478d090d02e4b0f",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/44b6_12dfb391.log"
+    },
+    {
+      "path": "s02_cache/44b6_12dfb391_H1_graph.json",
+      "bytes": 12215365,
+      "sha256": "966e686ddd6f9e59b2b1012ce1dcd08f76e94ce8a5a2800f4364d11ee42e8bd6",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/44b6_12dfb391_H1_graph.json"
+    },
+    {
+      "path": "s02_cache/44b6_12dfb391_evidence.json",
+      "bytes": 283,
+      "sha256": "37664bf279da67d13433a96037f4229487c574afb8c27ae417aa0ea269056524",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/44b6_12dfb391_evidence.json"
+    },
+    {
+      "path": "s02_cache/44b6_12dfb391_job.json",
+      "bytes": 534,
+      "sha256": "c8da464db74133c40e3d7d65acbc443e60c1aa14246abbd118605a5d4c142138",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/44b6_12dfb391_job.json"
+    },
+    {
+      "path": "s02_cache/44b6_267148e4.log",
+      "bytes": 14935,
+      "sha256": "8f0d5206c1838243b638bb512b34754ad48723a6746a8873fbd5533205080102",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/44b6_267148e4.log"
+    },
+    {
+      "path": "s02_cache/44b6_267148e4_H1_graph.json",
+      "bytes": 6147818,
+      "sha256": "ca430340101cfca9e1b0e2eaf5ae610ec202e9fe98a2a2d1a529d7417c6cfac9",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/44b6_267148e4_H1_graph.json"
+    },
+    {
+      "path": "s02_cache/44b6_267148e4_evidence.json",
+      "bytes": 283,
+      "sha256": "add0097e8421d1e299e7a04152d93ffcbbe4f7a72ad0797bcf570e62e6138758",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/44b6_267148e4_evidence.json"
+    },
+    {
+      "path": "s02_cache/44b6_267148e4_job.json",
+      "bytes": 534,
+      "sha256": "c1c5639fa32901d87689461f2ef153bbbf7c4140952b8307b199b8001cfe7967",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/44b6_267148e4_job.json"
+    },
+    {
+      "path": "s02_cache/44b6_2a2eff9f.log",
+      "bytes": 16210,
+      "sha256": "80105c8934617ac1d1cda28b54e2323825c3fdaabd86ccd5c191c3d39cc468c0",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/44b6_2a2eff9f.log"
+    },
+    {
+      "path": "s02_cache/44b6_2a2eff9f_H1_graph.json",
+      "bytes": 10978744,
+      "sha256": "be51837e3532c4e7cf5a83c762e0c834ecb4e19b91091e06ded59fff15d24717",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/44b6_2a2eff9f_H1_graph.json"
+    },
+    {
+      "path": "s02_cache/44b6_2a2eff9f_evidence.json",
+      "bytes": 283,
+      "sha256": "570ac1126b842ba54b583e86eb546e7f210c2f9733fd482033ff10c222020f18",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/44b6_2a2eff9f_evidence.json"
+    },
+    {
+      "path": "s02_cache/44b6_2a2eff9f_job.json",
+      "bytes": 534,
+      "sha256": "6432fd797fa60f0d678a4b205451ea8384b27d9eb5da7354da33d3381eeb5e12",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/44b6_2a2eff9f_job.json"
+    },
+    {
+      "path": "s02_cache/44b6_341df25f.log",
+      "bytes": 14370,
+      "sha256": "b79cc47ef7fc2951a290a33bba821b1d7c4731838a1970ab3a69bf5f898ea76b",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/44b6_341df25f.log"
+    },
+    {
+      "path": "s02_cache/44b6_341df25f_H1_graph.json",
+      "bytes": 2266190,
+      "sha256": "bcdbf0e9cd312ea770d69d300bde33560cc005cdba8260ccdd9d62739e3a8e1b",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/44b6_341df25f_H1_graph.json"
+    },
+    {
+      "path": "s02_cache/44b6_341df25f_evidence.json",
+      "bytes": 282,
+      "sha256": "3ec0c2aab408687b010fd68eecd93de16ad8995b4b6f89b8b2e6a717d1a97e36",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/44b6_341df25f_evidence.json"
+    },
+    {
+      "path": "s02_cache/44b6_341df25f_job.json",
+      "bytes": 534,
+      "sha256": "9ec4bb04658b156bc05a3047d84c89ef5eecaad62c05c41614c4c5b085e7b79c",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/44b6_341df25f_job.json"
+    },
+    {
+      "path": "s02_cache/6bba_062c8d37.log",
+      "bytes": 14166,
+      "sha256": "4f841dfcb16f6ff63c2670c8c9bc8056d8a4c86b72d0e55baac49ea07b97da82",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/6bba_062c8d37.log"
+    },
+    {
+      "path": "s02_cache/6bba_062c8d37_H1_graph.json",
+      "bytes": 1577250,
+      "sha256": "afaa092044fcb9f69cd959f28e10efb07f62094a012b8b4724b15c0d98a4a3e1",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/6bba_062c8d37_H1_graph.json"
+    },
+    {
+      "path": "s02_cache/6bba_062c8d37_evidence.json",
+      "bytes": 280,
+      "sha256": "5342a9e9cece23465ff8231c8dc5b4f4019250e38f09b10172c82fa020a93516",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/6bba_062c8d37_evidence.json"
+    },
+    {
+      "path": "s02_cache/6bba_062c8d37_job.json",
+      "bytes": 534,
+      "sha256": "7e5cfc20d9246b67d28215b2647ce2e64dc28eeda34bf4d8995149c10bae7eb1",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/6bba_062c8d37_job.json"
+    },
+    {
+      "path": "s02_cache/6bba_07e24132.log",
+      "bytes": 15552,
+      "sha256": "b190a5632789abb7a1809f9aed64fd2f65645e1477a972856c2004f5797a37ce",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/6bba_07e24132.log"
+    },
+    {
+      "path": "s02_cache/6bba_07e24132_H1_graph.json",
+      "bytes": 7846902,
+      "sha256": "43ee6f77f74ddadb41f58e38db88a8306800ea12c1565ee37ac1fb4dd83729e8",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/6bba_07e24132_H1_graph.json"
+    },
+    {
+      "path": "s02_cache/6bba_07e24132_evidence.json",
+      "bytes": 284,
+      "sha256": "5e7ef18c68f9860f62e364480611a11fd8dc34559f91e6c22e5e0081fc203317",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/6bba_07e24132_evidence.json"
+    },
+    {
+      "path": "s02_cache/6bba_07e24132_job.json",
+      "bytes": 534,
+      "sha256": "6db180f2b325d22a47fe9de4bf6e134a1e0e2f2092e19df94b3adcc03bf7a1ac",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/6bba_07e24132_job.json"
+    },
+    {
+      "path": "s02_cache/6bba_085bf656.log",
+      "bytes": 14286,
+      "sha256": "b6bbbe23409862777cc2743fc124aed90d0c53eeb71aa64f8e77f76e0532581a",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/6bba_085bf656.log"
+    },
+    {
+      "path": "s02_cache/6bba_085bf656_H1_graph.json",
+      "bytes": 2286900,
+      "sha256": "6963116ec0cf0206d2d17426214256b412f3f562b4d8d1283d8f2ff28cc5d5ba",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/6bba_085bf656_H1_graph.json"
+    },
+    {
+      "path": "s02_cache/6bba_085bf656_evidence.json",
+      "bytes": 282,
+      "sha256": "34f9ea00fadce9da06aa05ba2be2d2fa230138e2e3a4e4e23588e8bbdd79c59d",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/6bba_085bf656_evidence.json"
+    },
+    {
+      "path": "s02_cache/6bba_085bf656_job.json",
+      "bytes": 534,
+      "sha256": "8de2f8be9968fd15da851483f573f55076c4de400e0ead5a26775b00ab4d411b",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/6bba_085bf656_job.json"
+    },
+    {
+      "path": "s02_cache/6bba_09961292.log",
+      "bytes": 15091,
+      "sha256": "b44fbbd77118428c3e46370c32bf889a8f727961620521d3d04e70c78a728f9e",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/6bba_09961292.log"
+    },
+    {
+      "path": "s02_cache/6bba_09961292_H1_graph.json",
+      "bytes": 8030490,
+      "sha256": "359a487a20a0acadf651b9acc4c7d49ff9b6de32a8af900227138372a2d40334",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/6bba_09961292_H1_graph.json"
+    },
+    {
+      "path": "s02_cache/6bba_09961292_evidence.json",
+      "bytes": 284,
+      "sha256": "fd0ca338db179c4de55f63deae925dc5244a10ceacadff07f65f8f15029b6c34",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/6bba_09961292_evidence.json"
+    },
+    {
+      "path": "s02_cache/6bba_09961292_job.json",
+      "bytes": 534,
+      "sha256": "42fc6d477213a65dc438214f5a356375b7ec2e517c7e13ec9211b27f300fd253",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_cache/6bba_09961292_job.json"
+    },
+    {
+      "path": "s02_small/coverage.json",
+      "bytes": 7185,
+      "sha256": "cd69c5283391f9e2ec1a8ba77665213fcae3a2c587f939e8c7ad5e0b6f8963ab",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_small/coverage.json"
+    },
+    {
+      "path": "s02_small/deleted_edges.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_small/deleted_edges.json"
+    },
+    {
+      "path": "s02_small/diagnostic_metrics.json",
+      "bytes": 50953,
+      "sha256": "88b7cd77908cdfab746df674f84b7aeb3633f4e8e9f43dab0c374d9470778994",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_small/diagnostic_metrics.json"
+    },
+    {
+      "path": "s02_small/progress.json",
+      "bytes": 66,
+      "sha256": "32762d0a096799a604baf42cb52beb0941f0d5960848a3993465d9dc955a60b1",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_small/progress.json"
+    },
+    {
+      "path": "s02_small/runtime_receipt.json",
+      "bytes": 329,
+      "sha256": "5fb21eeced37c018977769e95bd002bf9cc7b62850c498bd9cea9af8e7dbeb06",
+      "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/s02_small/runtime_receipt.json"
+    }
+  ],
+  "log": {
+    "bytes": 25640,
+    "sha256": "d5aff962147df7368ff4a303fb7493055835d18f3597c89d24aff39ae49c0580",
+    "local_path": "downloads/BIOHUB_SPRINT02_HOCT_20260917/20260917T060107Z/run.log"
+  }
+}
