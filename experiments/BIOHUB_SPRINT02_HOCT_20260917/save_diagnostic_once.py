@@ -21,7 +21,8 @@ if __name__=='__main__':
         pre=json.loads((P/'preflight_api.json').read_text())
         assert pre['competition']['user_has_entered']=='True' and pre['gpu_remaining_hours']>2
         assert (datetime.now(timezone.utc)-datetime.fromisoformat(pre['observed_at_utc'])).total_seconds()<3600
-        checkpoint=json.loads((P/'github_stage_a.json').read_text())
+        # Latest receipt stays ignored to avoid a self-referential receipt hash.
+        checkpoint=json.loads((R/'downloads/BIOHUB_SPRINT02_HOCT_20260917/prewrite_remote.json').read_text())
         assert checkpoint['status']=='REMOTE_BYTES_VERIFIED'
         sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
         for f in checkpoint['files']:
