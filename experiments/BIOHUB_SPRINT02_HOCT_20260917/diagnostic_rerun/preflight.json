@@ -1,0 +1,36 @@
+{
+  "at_utc": "2026-09-17T08:14:42.375539+00:00",
+  "principal": "sailorren",
+  "kernel": {
+    "ref": "sailorren/biohub-s02-h1-diagnostic-20260917",
+    "kernel_id": 134683728,
+    "version": 1,
+    "is_private": true,
+    "enable_gpu": true,
+    "enable_internet": false,
+    "machine_shape": "NvidiaTeslaT4",
+    "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+    "datasets": [
+      "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+      "musculer/biohub-hoct-general-v0-official",
+      "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+      "pilkwang/biohub-tracking-support-pack-50ep-v1",
+      "sjlee101/biohub-hoct-020-wheels"
+    ],
+    "source_sha256": "47ea37f1545c6678e9589e15f86248bc0c3e1bdbb88a0f320a7a32f04392a17b",
+    "cell_sha256": [
+      "4f3cb456752a42016ab2d1c4aed8c53524b6ef9e6785f4146018323811efd597",
+      "545339ff52ac4315bffaf1131fcf769bb1a260ca523e988f19af9432979fc4bd",
+      "99198956a4c7725d85c6aab0d478368749824801716c6d39cf5bf915187ac500",
+      "77fdadffbd02c87e8f686e55944b6741312be552f34c8dc615e6391a1959a2dc",
+      "0f62c46bbec00a2d3d6bbde0efb89d5713204983d51c9c3cf73df1869cf12f8f",
+      "43755f1093282bb72f7c905b56d83786f48e60a0f2c947c94e4ef1f8910d3cb3",
+      "0a76e335bcb101ab664b57280e1784f20f179db74910999e225310909ab65677",
+      "63223564eb17115fd7a5e4abb2f24d7dfe4966688d10edd642f001ad9da465d8"
+    ]
+  },
+  "status": "COMPLETE",
+  "competition": "biohub-cell-tracking-during-development",
+  "user_has_entered": true,
+  "gpu_remaining_hours": 14.178845833333334
+}
