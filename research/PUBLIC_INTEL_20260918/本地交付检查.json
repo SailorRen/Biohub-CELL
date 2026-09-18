@@ -18,5 +18,6 @@
   "comments_read": 37,
   "source_script_execution": 0,
   "research_status": "PARTIAL_RESEARCH_BLOCKED",
-  "limits": "未联网批量验证所有外链；未将静态parse视为算法正确性证明"
+  "limits": "未联网批量验证所有外链；未将静态parse视为算法正确性证明",
+  "git_diff_check_exception": "上游img_proc.py末尾空白行提示；保留源字节以维持准确SHA256，未清理第三方源码。"
 }
