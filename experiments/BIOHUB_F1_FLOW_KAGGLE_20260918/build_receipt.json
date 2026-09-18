@@ -1,0 +1,23 @@
+{
+  "status": "BUILT_NOT_RUN",
+  "patch_sha256": "d2511cb21d536d230a6607d3119bccb1d931e21f4ec49237790d6dc335266896",
+  "diagnostic_sha256": "5a94bc79a1ffe55c71d1b456b579792048c7c3adb2eac3ecb96b801acf382bab",
+  "production_sha256": "d82f8ba98aa9d4ac51b62105155b1aadbbbf9f202ddd700a9b6281162e2d9c31",
+  "original_production_cells_unchanged": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "selector_unchanged": true,
+  "training_calls": 0,
+  "raw_manifest_files": 264
+}

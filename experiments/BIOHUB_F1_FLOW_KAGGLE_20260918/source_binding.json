@@ -1,0 +1,60 @@
+{
+  "G1": {
+    "ref": "sailorren/biohub-sprint01-g1-frozen-inference-20260916",
+    "version": 1,
+    "sv": 350197436,
+    "submission_id": 56270217,
+    "local_sha256": "de010e6ba142be0e01000093e061ef7d3388ddaa411185b40d26c63a3febe731",
+    "remote_sha256": "2455dcd654dba55017e27547558b3e51cd95017d3519dafc2205b239709d5094",
+    "all_code_cells_equal": true
+  },
+  "mechanism": {
+    "ref": "thtennant/biohub-frontier947-flow2-det096-v1",
+    "version": 1,
+    "sv": 350702651,
+    "source": "research/PUBLIC_INTEL_20260918/sources/N02/source_cells.json",
+    "scope": "neighbour displacement only; no full reproduction"
+  },
+  "cache": {
+    "ref": "sailorren/biohub-division-train-20260914/1",
+    "kernel_id": 134301327,
+    "sv": 349707105,
+    "stage": "raw prediction GEFF before motion/gap/safe-div",
+    "file_manifest": "BIOHUB_SPRINT01_20260916/replay_cache_manifest.json",
+    "expected_raw_hash_source": "BIOHUB_SPRINT01_20260916/output_v1/stages.json"
+  },
+  "official": {
+    "commit": "075fc5f5a52d11077f9dc2b074644618f26939e2",
+    "live_main_equal": true,
+    "checked_at_utc": "2026-09-18T09:27:18.557871+00:00"
+  },
+  "lineage": {
+    "division": "held_out embryo verified in cloud; no final on diagnostic",
+    "secondary": "all 8 appear in archived train manifest; full pipeline not independent",
+    "primary": "UNKNOWN",
+    "deepcenter": "UNKNOWN"
+  },
+  "interface_mapping": "Independent unchanged G1 motion pass provides tight seeds; second motion pass replaces predicted only. Seed baseline predecessor chain independent of F1. No extra threshold, stable distance/id neighbour sorting.",
+  "read_scope": [
+    "task full",
+    "AGENTS full",
+    "G1 cells0-3 full; cell5 motion plus direct helpers and downstream call chain; cells10-12",
+    "build_production.py",
+    "selection_rules.json",
+    "formal_latest.json",
+    "formal_ui_binding.json",
+    "own/build_receipt.json",
+    "own/kernel-metadata.json",
+    "production_module.py",
+    "replay.py",
+    "replay_cached_stages.py",
+    "lineage_summary.json",
+    "frozen_models_summary.json",
+    "official_selector_adapter.py via embedded scorer",
+    "N02 cell5 motion_relink_edges full",
+    "cache manifest parsed all 264 raw graph entries"
+  ],
+  "pending_reads": [
+    "G1 dynamic inference cell4 and validator cells6-9 needed before production"
+  ]
+}

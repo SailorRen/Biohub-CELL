@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "tests": [
+    "empty",
+    "off_exact",
+    "physical_units",
+    "translation",
+    "self_excluded",
+    "global_seed_shortage",
+    "no_local",
+    "endpoints_time_motion_degrees",
+    "nonfinite_rejected"
+  ],
+  "real_model_calls": 0,
+  "real_graph_replays": 0,
+  "official_scoring_calls": 0
+}

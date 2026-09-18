@@ -1,0 +1,17 @@
+--- G1_motion
++++ F1_motion
+@@ -1,4 +1,4 @@
+-def motion_relink_edges(
++def _f1_motion_impl(
+     nodes_by_id: dict[int, dict[str, object]],
+     stats: dict[str, int],
+     learned_edge_probs: dict[tuple[int, int], float] | None = None,
+@@ -54,6 +54,8 @@
+                 predicted = source_pos
+             else:
+                 predicted = source_pos + MOTION_RELINK_VELOCITY_WEIGHT * (source_pos - prev_pos)
++            if source_id in F1_PREDICTIONS:
++                predicted = F1_PREDICTIONS[source_id]
+             for j, target_id in enumerate(target_ids):
+                 target_pos = position_um[target_id]
+                 raw = float(np.linalg.norm(target_pos - source_pos))
