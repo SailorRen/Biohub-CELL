@@ -1,0 +1,13 @@
+{
+  "stage": "parent_source_read",
+  "error": "ApiGetKernelRequest version_label=1 returned HTTP 404",
+  "save_request_reached": false,
+  "budget_consumed": 0,
+  "resolution": "query current then assert version exactly 1 and archived code-cell equality",
+  "second_interruption": {
+    "stage": "OAuth read-only introspection",
+    "error": "SSL UNEXPECTED_EOF_WHILE_READING",
+    "save_request_reached": false,
+    "budget_consumed": 0
+  }
+}

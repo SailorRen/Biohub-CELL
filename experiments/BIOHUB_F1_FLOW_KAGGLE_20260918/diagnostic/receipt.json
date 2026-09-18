@@ -1,0 +1,18 @@
+{
+  "status": "BLOCKED_WRITE_OUTCOME_UNKNOWN",
+  "ref": "sailorren/biohub-f1-flow-diag-20260918",
+  "version": null,
+  "script_version_id": null,
+  "kernel_id": null,
+  "save_requests": 1,
+  "source_sha256": "5a94bc79a1ffe55c71d1b456b579792048c7c3adb2eac3ecb96b801acf382bab",
+  "results_obtained": false,
+  "completed_views": 0,
+  "cloud_execution": "UNKNOWN",
+  "public_score": null,
+  "readback_evidence": [
+    "platform_20260918T093719Z.json",
+    "ui_readback.json",
+    "../post_request_inventory.json"
+  ]
+}

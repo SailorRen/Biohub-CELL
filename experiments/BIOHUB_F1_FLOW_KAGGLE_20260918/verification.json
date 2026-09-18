@@ -1,0 +1,28 @@
+{
+  "status": "LOCAL_EVIDENCE_CHECKS_PASS",
+  "checks": {
+    "fixed_task_unchanged": true,
+    "patch_frozen": true,
+    "diagnostic_frozen": true,
+    "production_frozen": true,
+    "original_selector_and_other_cells_unchanged": true,
+    "one_attempt_only": true,
+    "no_production_or_submission": true,
+    "prohibited_actions_zero": true,
+    "unknown_not_claimed_complete": true,
+    "no_fabricated_diagnostic_results": true,
+    "synthetic_tests_passed": true,
+    "original_worktree_clean": true,
+    "original_branch_unchanged": true
+  },
+  "experiment_status": "BLOCKED_WRITE_OUTCOME_UNKNOWN",
+  "formal_score_status": "NOT_RUN",
+  "delivery_status": "REMOTE_READBACK_PENDING",
+  "original_head": "9d3c0f57b07444999c4326528470fe501c13c3a8",
+  "original_branch": "codex/sprint02-hoct-20260917",
+  "limitations": [
+    "No diagnostic result, Version, SV or cloud runtime verified",
+    "Local synthetic tests are not competition performance",
+    "Production preread and cloud resource checks still pending"
+  ]
+}

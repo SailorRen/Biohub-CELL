@@ -52,9 +52,10 @@
     "frozen_models_summary.json",
     "official_selector_adapter.py via embedded scorer",
     "N02 cell5 motion_relink_edges full",
-    "cache manifest parsed all 264 raw graph entries"
+    "cache manifest parsed all 264 raw graph entries",
+    "G1 cells6,7 full; remaining production cell4 only partial because large embedded strings truncated"
   ],
   "pending_reads": [
-    "G1 dynamic inference cell4 and validator cells6-9 needed before production"
+    "G1 dynamic inference cell4 embedded source strings full and validator cell9 before any production"
   ]
 }

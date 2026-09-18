@@ -22,7 +22,7 @@ with Path('/private/tmp/biohub-f1-20260918-write.lock').open('w') as lock:
   results=json.loads((P/'diagnostic/results.json').read_text());assert results['production_allowed']
   assert results['repeat_and_off_equal'] and results['graph_changed']
   assert json.loads((P/'diagnostic/receipt.json').read_text())['status']=='COMPLETE_SOURCE_VERIFIED'
- q=ApiGetKernelRequest();q.user_name='sailorren';q.kernel_slug='biohub-division-train-20260914';q.version_label='1'
+ q=ApiGetKernelRequest();q.user_name='sailorren';q.kernel_slug='biohub-division-train-20260914'
  with api.build_kaggle_client() as c:parent=c.kernels.kernels_api_client.get_kernel(q)
  assert parent.metadata.id==134301327 and parent.metadata.current_version_number==1
  archived=P.parent/'SCORE_RECOVERY_20260915/division_remote_source.ipynb'

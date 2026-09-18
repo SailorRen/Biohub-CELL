@@ -1,0 +1,9 @@
+{
+  "observed_at_utc": "20260918T093719Z",
+  "ref": "sailorren/biohub-f1-flow-diag-20260918",
+  "phase": "diagnostic",
+  "writes": 0,
+  "status": "READ_ERROR",
+  "error_type": "HTTPError",
+  "error": "403 Client Error: Forbidden for url: [URL_REDACTED]"
+}

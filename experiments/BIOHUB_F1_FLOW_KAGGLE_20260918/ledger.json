@@ -1,9 +1,30 @@
 {
   "task_id": "BIOHUB_F1_FLOW_KAGGLE_20260918",
-  "requests": [],
-  "status": "PREPARED_NOT_RUN",
+  "requests": [
+    {
+      "action": "SaveAndRun",
+      "phase": "diagnostic",
+      "ref": "sailorren/biohub-f1-flow-diag-20260918",
+      "at_utc": "2026-09-18T09:34:57.809820+00:00",
+      "source_sha256": "5a94bc79a1ffe55c71d1b456b579792048c7c3adb2eac3ecb96b801acf382bab",
+      "status": "OUTCOME_UNKNOWN_NO_RETRY",
+      "requests_counted": 1,
+      "error_type": "JSONDecodeError",
+      "error": "Expecting value: line 1 column 1 (char 0)",
+      "finished_at_utc": "2026-09-18T09:35:09.683118+00:00"
+    }
+  ],
+  "status": "BLOCKED_WRITE_OUTCOME_UNKNOWN",
   "training_calls": 0,
   "dataset_writes": 0,
   "formal_submission_requests": 0,
-  "final_selection_changes": 0
+  "final_selection_changes": 0,
+  "save_and_run_requests": 1,
+  "new_private_notebooks_confirmed": 0,
+  "new_private_notebook_creation_outcome": "UNKNOWN",
+  "engineering_reserve_used": 0,
+  "production_requests": 0,
+  "cloud_runtime_status": "UNKNOWN",
+  "last_observed_at_utc": "2026-09-18T09:38:32.576094+00:00",
+  "resume_action": "Read ledger and reconcile original request with exact platform object. If found, bind source/Version/SV and continue same run. If still absent, do not retry uncertain request; establish definitive failure and deterministic engineering repair or obtain new authorization."
 }
