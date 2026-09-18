@@ -1,0 +1,22 @@
+{
+  "status": "LOCAL_STATIC_CHECK_PASS",
+  "scope": "源副本一致性/索引计数/许可说明存在/定向敏感模式/报告本地引用；不是算法执行或研究完整性验收",
+  "notebooks": [
+    {
+      "id": "N01",
+      "cells": 5,
+      "source_equal": true
+    },
+    {
+      "id": "N02",
+      "cells": 12,
+      "source_equal": true
+    }
+  ],
+  "dependency_hash_matches": 13,
+  "discussions": 8,
+  "comments_read": 37,
+  "source_script_execution": 0,
+  "research_status": "PARTIAL_RESEARCH_BLOCKED",
+  "limits": "未联网批量验证所有外链；未将静态parse视为算法正确性证明"
+}

@@ -1,0 +1,153 @@
+{
+  "read_interval": [
+    "2026-09-18T12:04:00+08:00",
+    "2026-09-18T14:37:51+08:00"
+  ],
+  "leaderboard_observed_before": "2026-09-18T14:00:03+08:00",
+  "urls": [
+    "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/overview",
+    "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/leaderboard"
+  ],
+  "class": "OFFICIAL_FACT",
+  "metric": "adjusted_edge_jaccard + .1*division_jaccard; matching7um, scale(1.625,.40625,.40625); edge weighted and division micro",
+  "code_limits": {
+    "CPU_hours": 12,
+    "GPU_hours": 12,
+    "internet": false,
+    "public_external_data": true
+  },
+  "deadline_shanghai": {
+    "entry_and_merger": "2026-09-23T07:59:00+08:00",
+    "final_submission": "2026-09-30T07:59:00+08:00"
+  },
+  "public_private_percent": [
+    29,
+    71
+  ],
+  "top20": [
+    {
+      "rank": 1,
+      "team": "Sergio Alvarez",
+      "score": 0.97
+    },
+    {
+      "rank": 2,
+      "team": "yu4u",
+      "score": 0.969
+    },
+    {
+      "rank": 3,
+      "team": "Soheil Ayati",
+      "score": 0.968
+    },
+    {
+      "rank": 4,
+      "team": "Tang",
+      "score": 0.966
+    },
+    {
+      "rank": 5,
+      "team": "unicellular",
+      "score": 0.966
+    },
+    {
+      "rank": 6,
+      "team": "slime",
+      "score": 0.965
+    },
+    {
+      "rank": 7,
+      "team": "tatsutaka",
+      "score": 0.964
+    },
+    {
+      "rank": 8,
+      "team": "z7777",
+      "score": 0.962
+    },
+    {
+      "rank": 9,
+      "team": "Ryo Hasegawa",
+      "score": 0.961
+    },
+    {
+      "rank": 10,
+      "team": "Zyy7390",
+      "score": 0.96
+    },
+    {
+      "rank": 11,
+      "team": "Christoffer Thimsen",
+      "score": 0.96
+    },
+    {
+      "rank": 12,
+      "team": "SoichiOzaki",
+      "score": 0.959
+    },
+    {
+      "rank": 13,
+      "team": "que la cuenten como quieran",
+      "score": 0.958
+    },
+    {
+      "rank": 14,
+      "team": "enddl22",
+      "score": 0.958
+    },
+    {
+      "rank": 15,
+      "team": "Umesh Arampath",
+      "score": 0.958
+    },
+    {
+      "rank": 16,
+      "team": "VOXEL ART",
+      "score": 0.958
+    },
+    {
+      "rank": 17,
+      "team": "ymg_aq",
+      "score": 0.957
+    },
+    {
+      "rank": 18,
+      "team": "TWEAK",
+      "score": 0.957
+    },
+    {
+      "rank": 19,
+      "team": "Vibes & Edges Trade-Off",
+      "score": 0.957
+    },
+    {
+      "rank": 20,
+      "team": "Corwin",
+      "score": 0.957
+    }
+  ],
+  "near_own": [
+    {
+      "rank": 147,
+      "team": "forever young",
+      "score": 0.948
+    },
+    {
+      "rank": 148,
+      "team": "Sailor Ren",
+      "score": 0.948,
+      "entries": 18
+    },
+    {
+      "rank": 149,
+      "team": "zhehao liang",
+      "score": 0.948
+    },
+    {
+      "rank": 150,
+      "team": "yarden and yaeli",
+      "score": 0.948
+    }
+  ],
+  "limits": "动态队伍分数不分配给任何公开Notebook；未核实这期间是否发布新官方公告，当前页面本身没有编辑时间。官方GitHub主分支API读取失败，不能宣称评价源码已实时固定审查。"
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "ref": "anvithpothula/biohub-0-95",
+    "version": 1,
+    "sv": 337000331,
+    "version_at": "2026-07-22T03:12:52+08:00",
+    "card_score": 0.95,
+    "detail_public_score": 0.877,
+    "detail_best_score": 0.877,
+    "evidence_class": "OFFICIAL_FACT",
+    "location": "详情Competition Notebook/Public Score，Best链接绑定SV；版本侧栏V1of1",
+    "interpretation": "标题/列表残留不能作有效.950成绩，具体历史更正日期未核实",
+    "url": "https://www.kaggle.com/code/anvithpothula/biohub-0-95?scriptVersionId=337000331",
+    "read_interval": [
+      "2026-09-18T12:04:00+08:00",
+      "2026-09-18T14:37:51+08:00"
+    ],
+    "submission_id": "UNKNOWN"
+  },
+  {
+    "ref": "haideptry/biohub-sota-0-948-density-adaptive-2xt4-22m",
+    "version": 1,
+    "sv": 350463514,
+    "version_at": "2026-09-17T12:07:53+08:00",
+    "title_claim": "0.948+ /22m",
+    "detail_public_score": 0.945,
+    "runtime_seconds": 1686.9,
+    "evidence_class": "OFFICIAL_FACT",
+    "location": "详情Public Score及BestV1链接；普通日志28m7s",
+    "interpretation": "不高于G1；普通可见样例耗时不是hidden总耗时",
+    "url": "https://www.kaggle.com/code/haideptry/biohub-sota-0-948-density-adaptive-2xt4-22m?scriptVersionId=350463514",
+    "read_interval": [
+      "2026-09-18T12:04:00+08:00",
+      "2026-09-18T14:37:51+08:00"
+    ],
+    "submission_id": "UNKNOWN"
+  }
+]

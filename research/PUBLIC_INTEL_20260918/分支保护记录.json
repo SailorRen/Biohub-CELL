@@ -1,0 +1,12 @@
+{
+  "research_branch": "codex/public-intel-20260918",
+  "contract_and_remote_base": "b47d995fc6bbdbcdfbc04d886595961081dd7f66",
+  "remote_main_before_delivery": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+  "remote_experiment_before_delivery": "cc5f843820d8ca1e09288ca9e9561b876ec6a461",
+  "original_worktree_branch": "codex/sprint02-hoct-20260917",
+  "original_worktree_porcelain_before_delivery": "",
+  "isolation": "独立no-hardlinks clone；原工作区和.git未写入",
+  "push_scope": "只允许当前研究分支，禁止force与main/实验分支写入",
+  "initial_fetch_errors": ["原.git/FETCH_HEAD只读", "隔离clone默认DNS失败", "网络fetch HTTP2 framing失败"],
+  "resolved_fetch": "隔离clone，git http.version=HTTP/1.1 fetch成功并绑定固定任务书HEAD"
+}

@@ -1,0 +1,410 @@
+[
+  {
+    "id": "D01",
+    "discussion_id": 741868,
+    "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/741868",
+    "title": "Agents collaborate with Humans - Dashboards are key!",
+    "author": "Chris Deotte",
+    "published_at": "2026-09-18T05:50:19+08:00",
+    "last_edit_at": "UNKNOWN",
+    "read_interval": [
+      "2026-09-18T12:04:00+08:00",
+      "2026-09-18T14:37:51+08:00"
+    ],
+    "page_display_count": "0",
+    "actual_unique_comments_read": 0,
+    "comments": [],
+    "body_read": true,
+    "unexpanded_visible_controls": 0,
+    "count_note": "以渲染出的作者/时间/正文唯一块计数，页面数字可能只计顶层或缓存；不机械写100%。",
+    "images": {
+      "viewed": "主帖3D Cell Atlas界面已截图查看，含时序/模型/预测/标注/links开关",
+      "gap": "没有算法源码、量化比较或分数回执"
+    },
+    "license": "UNKNOWN；不公开镜像全文或原图",
+    "evidence_class": "AUTHOR_CLAIM",
+    "selection_reason": "24小时新帖：人机协作错误可视化",
+    "body_summary": "建议LLM制作可旋转/缩放/平移的3D预测仪表盘，由人观察问题；无效果量或代码。"
+  },
+  {
+    "id": "D02",
+    "discussion_id": 741749,
+    "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/741749",
+    "title": "Model changes don't move the LB above the public plateau — what actually did for you?",
+    "author": "hikaggler",
+    "published_at": "2026-09-17T14:31:17+08:00",
+    "last_edit_at": "UNKNOWN",
+    "read_interval": [
+      "2026-09-18T12:04:00+08:00",
+      "2026-09-18T14:37:51+08:00"
+    ],
+    "page_display_count": "1",
+    "actual_unique_comments_read": 1,
+    "comments": [
+      {
+        "position": 1,
+        "locator": "TWEAK / 2026-09-18T01:48:19+08:00",
+        "summary": "追问division改动前的基础模型与分数，质疑公共模型同质性是否解释平台期；未见作者回答。"
+      }
+    ],
+    "body_read": true,
+    "unexpanded_visible_controls": 0,
+    "count_note": "以渲染出的作者/时间/正文唯一块计数，页面数字可能只计顶层或缓存；不机械写100%。",
+    "images": {
+      "viewed": "未见支持核心结论的附图",
+      "gap": null
+    },
+    "license": "UNKNOWN；不公开镜像全文或原图",
+    "evidence_class": "AUTHOR_CLAIM",
+    "selection_reason": "24小时新帖：训练/模型消融及CV-LB反证",
+    "body_summary": "自述24视频双胚胎分层holdout：宽/深U-Net、60→131epochs、多种增强损失未稳定提分，2→9帧仅追回约.1%GT点；division局部改善未转成明显LB。合成预训较scratch +.012–.018及仅不确定列使用第二模型有收益；CV-LB相关约-.2，均无源码或版本回执。"
+  },
+  {
+    "id": "D03",
+    "discussion_id": 741386,
+    "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/741386",
+    "title": "A few questions about external zebrafish data",
+    "author": "Masha Mikhisor",
+    "published_at": "2026-09-15T06:10:13+08:00",
+    "last_edit_at": "UNKNOWN",
+    "read_interval": [
+      "2026-09-18T12:04:00+08:00",
+      "2026-09-18T14:37:51+08:00"
+    ],
+    "page_display_count": "3",
+    "actual_unique_comments_read": 3,
+    "comments": [
+      {
+        "position": 1,
+        "locator": "Sergio Alvarez / 2026-09-15T20:02:31+08:00",
+        "summary": "认为Ultrack不是训练胚胎、相似且需裁块；认为不会与隐藏测试重合并猜测标注方法。参赛者判断，非主办方确认。"
+      },
+      {
+        "position": 2,
+        "locator": "MOHAMMADJAFAR ZAMANI / 2026-09-18T02:40:37+08:00",
+        "summary": "新回复请求主办方确认Janelia/linajea 160328独立性、外部验证许可，并提供已审核标注与精确图像版本/spacing/时间间隔/覆盖绑定。"
+      },
+      {
+        "position": 3,
+        "locator": "Navneet / 2026-09-15T21:36:06+08:00",
+        "summary": "致谢，无新增方法。"
+      }
+    ],
+    "body_read": true,
+    "unexpanded_visible_controls": 0,
+    "count_note": "以渲染出的作者/时间/正文唯一块计数，页面数字可能只计顶层或缓存；不机械写100%。",
+    "images": {
+      "viewed": "无关键附图",
+      "gap": null
+    },
+    "license": "UNKNOWN；不公开镜像全文或原图",
+    "evidence_class": "AUTHOR_CLAIM",
+    "selection_reason": "旧主帖的24小时新回复：外部数据独立性仍未确认",
+    "body_summary": "追问Ultrack外部胚胎是否与比赛相同、curated lineage可获取性、帧间隔和estimated node count定义。"
+  },
+  {
+    "id": "D04",
+    "discussion_id": 735352,
+    "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/735352",
+    "title": "Possible big leaderboard shakeup",
+    "author": "mikelou1",
+    "published_at": "2026-08-15T16:25:14+08:00",
+    "last_edit_at": "UNKNOWN",
+    "read_interval": [
+      "2026-09-18T12:04:00+08:00",
+      "2026-09-18T14:37:51+08:00"
+    ],
+    "page_display_count": "11（列表曾显示12）",
+    "actual_unique_comments_read": 12,
+    "comments": [
+      {
+        "position": 1,
+        "locator": "Georgy Mamarin / 2026-09-17T23:49:49+08:00",
+        "summary": "新增13场显微/组织比赛的公私榜对照，自述保牌比例9%–97%；没有tracking比赛，作者也不预测本赛落在哪一端。原始数据未独立重算。"
+      },
+      {
+        "position": 2,
+        "locator": "TWEAK / 2026-08-15T21:23:10+08:00",
+        "summary": "自述通用插件对若干公开模型提升.03–.05及单模型.940，未披露源码/版本。"
+      },
+      {
+        "position": 3,
+        "locator": "mikelou1 / 2026-08-15T22:04:18+08:00",
+        "summary": "担心公开Notebook过拟合。"
+      },
+      {
+        "position": 4,
+        "locator": "Sergio Alvarez / 2026-08-16T02:12:20+08:00",
+        "summary": "追问插件是图优化还是独立tracker，未获具体实现。"
+      },
+      {
+        "position": 5,
+        "locator": "Moawiz / 2026-08-16T17:56:04+08:00",
+        "summary": "追问保留轨迹还是重新关联。"
+      },
+      {
+        "position": 6,
+        "locator": "OpPrime / 2026-08-19T16:44:19+08:00",
+        "summary": "致谢。"
+      },
+      {
+        "position": 7,
+        "locator": "Tang / 2026-08-15T19:43:45+08:00",
+        "summary": "建议可靠CV及外部/合成数据。"
+      },
+      {
+        "position": 8,
+        "locator": "nusrati / 2026-08-18T04:06:00+08:00",
+        "summary": "追问自训还是公共检测。"
+      },
+      {
+        "position": 9,
+        "locator": "Bharath Varma / 2026-08-15T20:49:38+08:00",
+        "summary": "认为400epoch以后收益递减，未给版本数据。"
+      },
+      {
+        "position": 10,
+        "locator": "nusrati / 2026-08-18T04:04:44+08:00",
+        "summary": "追问从头训练或微调。"
+      },
+      {
+        "position": 11,
+        "locator": "mikelou1 / 2026-08-18T08:00:15+08:00",
+        "summary": "自述从头训练division约.3但edge低约.01，口径未闭合。"
+      },
+      {
+        "position": 12,
+        "locator": "Komil Parmar / 2026-08-20T12:44:28+08:00",
+        "summary": "自述从头训练、成本可负担，无量化回执。"
+      }
+    ],
+    "body_read": true,
+    "unexpanded_visible_controls": 0,
+    "count_note": "以渲染出的作者/时间/正文唯一块计数，页面数字可能只计顶层或缓存；不机械写100%。",
+    "images": {
+      "viewed": "TWEAK附件原图已查看，显示Solo model1 untuned/Succeeded/.940，但无SV或submission ID",
+      "upstream": "https://storage.googleapis.com/kaggle-forum-message-attachments/3513174/49290/Screenshot_15-8-2026_91131_www.kaggle.com.jpeg",
+      "gap": "旧截图不能绑定当前评分规则"
+    },
+    "license": "UNKNOWN；不公开镜像全文或原图",
+    "evidence_class": "AUTHOR_CLAIM",
+    "selection_reason": "24小时新统计及旧高分主张校准",
+    "body_summary": "担忧顶榜差距小及division样本少导致过拟合/公私榜波动。"
+  },
+  {
+    "id": "D05",
+    "discussion_id": 740145,
+    "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/740145",
+    "title": "magic or overfitting?",
+    "author": "hengck23",
+    "published_at": "2026-09-08T21:31:27+08:00",
+    "last_edit_at": "UNKNOWN",
+    "read_interval": [
+      "2026-09-18T12:04:00+08:00",
+      "2026-09-18T14:37:51+08:00"
+    ],
+    "page_display_count": "9 Comments + 1 appreciation（列表12）",
+    "actual_unique_comments_read": 12,
+    "comments": [
+      {
+        "position": 1,
+        "locator": "hengck23 / 2026-09-09T16:49:45+08:00",
+        "summary": "更好定位用于产生稠密训练点；给出Ultrack权重线索但未确认与Kaggle点对齐。"
+      },
+      {
+        "position": 2,
+        "locator": "hengck23 / 2026-09-15T23:28:38+08:00",
+        "summary": "给出N01完整代码，raw edge约.90、无ILP/gap；自述无Kaggle标注训练，指出匹配多候选问题。"
+      },
+      {
+        "position": 3,
+        "locator": "hengck23 / 2026-09-16T05:21:05+08:00",
+        "summary": "用两组假阳性切片宣称合成增强linker精确；图不能证明总体泛化。"
+      },
+      {
+        "position": 4,
+        "locator": "hengck23 / 2026-09-16T05:27:34+08:00",
+        "summary": "图示FOCUS中心与Kaggle标注位置不同，猜测域偏移来源。"
+      },
+      {
+        "position": 5,
+        "locator": "hengck23 / 2026-09-16T05:40:08+08:00",
+        "summary": "图示疑似标注错误，未经主办方确认。"
+      },
+      {
+        "position": 6,
+        "locator": "Satwik / 2026-09-16T07:07:23+08:00",
+        "summary": "给出自己的GT/漏检图并认为标注有误；未独立复核。"
+      },
+      {
+        "position": 7,
+        "locator": "hengck23 / 2026-09-09T20:27:44+08:00",
+        "summary": "建议GT/PRED轨迹及XY/XZ切片可视化，FP可能很接近真值。"
+      },
+      {
+        "position": 8,
+        "locator": "hengck23 / 2026-09-09T20:35:18+08:00",
+        "summary": "提出关联时应可修正坐标，而非完全固定检测点。"
+      },
+      {
+        "position": 9,
+        "locator": "Mohit / 2026-09-09T03:35:47+08:00",
+        "summary": "质疑过拟合。"
+      },
+      {
+        "position": 10,
+        "locator": "hengck23 / 2026-09-09T02:26:15+08:00",
+        "summary": "展示取消增强的分组评价表，认为增强难度/分布不合适；未提供独立测试。"
+      },
+      {
+        "position": 11,
+        "locator": "hengck23 / 2026-09-08T22:54:38+08:00",
+        "summary": "提出先以累积.99保留高召回候选再精修排序，补gap，研究多帧注意力；图明确是edge recall不是Jaccard。"
+      },
+      {
+        "position": 12,
+        "locator": "Navneet / 2026-09-09T18:08:27+08:00",
+        "summary": "appreciation致谢。"
+      }
+    ],
+    "body_read": true,
+    "unexpanded_visible_controls": 0,
+    "count_note": "以渲染出的作者/时间/正文唯一块计数，页面数字可能只计顶层或缓存；不机械写100%。",
+    "images": {
+      "viewed": "已滚动查看主帖精修表、稠密点对比、FP两例、域偏移两例、疑似标注错误、Satwik拼图、轨迹示意/近邻FP、取消增强表、edge候选上界图；小字不能完全辨认处不转录精确数字。",
+      "gap": "原始图像与数值表未镜像；仅讨论位置可回读，无独立标注判定"
+    },
+    "license": "UNKNOWN；不公开镜像全文或原图",
+    "evidence_class": "AUTHOR_CLAIM",
+    "selection_reason": "72小时回复+N01依赖背景；相对9/17是补读，不是今天新增方法",
+    "body_summary": "精修检测点后维持高召回且减少峰值的作者试验；主图明确标注仍可能overfit。"
+  },
+  {
+    "id": "D06",
+    "discussion_id": 736937,
+    "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/736937",
+    "title": "Public Notebook Rankings Need a Metric Refresh",
+    "author": "Yunus Gümüşsoy",
+    "published_at": "2026-08-22T22:50:45+08:00",
+    "last_edit_at": "UNKNOWN",
+    "read_interval": [
+      "2026-09-18T12:04:00+08:00",
+      "2026-09-18T14:37:51+08:00"
+    ],
+    "page_display_count": "1",
+    "actual_unique_comments_read": 1,
+    "comments": [
+      {
+        "position": 1,
+        "locator": "jazivxt / 2026-08-30T20:06:39+08:00",
+        "summary": "赞同重算/刷新卡片有利社区，未提供官方实施确认。"
+      }
+    ],
+    "body_read": true,
+    "unexpanded_visible_controls": 0,
+    "count_note": "以渲染出的作者/时间/正文唯一块计数，页面数字可能只计顶层或缓存；不机械写100%。",
+    "images": {
+      "viewed": "无关键图",
+      "gap": null
+    },
+    "license": "UNKNOWN；不公开镜像全文或原图",
+    "evidence_class": "AUTHOR_CLAIM",
+    "selection_reason": "评分残留风险旧帖核查；作者非主办方",
+    "body_summary": "作者称榜单已重算但Notebook卡片仍保留旧高分；不是官方变更公告。"
+  },
+  {
+    "id": "D07",
+    "discussion_id": 741242,
+    "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/741242",
+    "title": "Saving ~75 min in the dual-seed + HOCT veto pipeline (same output, less HOCT deadline risk)",
+    "author": "Hammad Farooq",
+    "published_at": "2026-09-14T12:24:30+08:00",
+    "last_edit_at": "UNKNOWN",
+    "read_interval": [
+      "2026-09-18T12:04:00+08:00",
+      "2026-09-18T14:37:51+08:00"
+    ],
+    "page_display_count": "0",
+    "actual_unique_comments_read": 0,
+    "comments": [],
+    "body_read": true,
+    "unexpanded_visible_controls": 0,
+    "count_note": "以渲染出的作者/时间/正文唯一块计数，页面数字可能只计顶层或缓存；不机械写100%。",
+    "images": {
+      "viewed": "正文耗时表与代码片段已读；无外部图片",
+      "gap": "无本轮计时或before/after输出hash"
+    },
+    "license": "UNKNOWN；不公开镜像全文或原图",
+    "evidence_class": "AUTHOR_CLAIM",
+    "selection_reason": "直接针对HOCT预算；旧帖无新回复",
+    "body_summary": "自述固定tight55、删validator及7配置sweep与首次重复写出，可省约75min；HOCT10h预算可能因此覆盖更多hidden视频。也要求输出diff并承认GPU非确定性、8视频proxy小样本，以及validator未评HOCT。"
+  },
+  {
+    "id": "D08",
+    "discussion_id": 740573,
+    "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/740573",
+    "title": "Division steps are not long steps: base rates from the training labels",
+    "author": "Lê Quang Cảnh",
+    "published_at": "2026-09-10T11:33:29+08:00",
+    "last_edit_at": "UNKNOWN",
+    "read_interval": [
+      "2026-09-18T12:04:00+08:00",
+      "2026-09-18T14:37:51+08:00"
+    ],
+    "page_display_count": "4（列表8）",
+    "actual_unique_comments_read": 8,
+    "comments": [
+      {
+        "position": 1,
+        "locator": "hengck23 / 2026-09-10T20:13:35+08:00",
+        "summary": "先更正细亮线应是此前发生的分裂，再以外部Ultrack图提出外观线索；未证实Kaggle标注覆盖。"
+      },
+      {
+        "position": 2,
+        "locator": "hengck23 / 2026-09-10T20:26:17+08:00",
+        "summary": "请他人验证；附图提出从分裂后亮细结构往前回溯，属于建议。"
+      },
+      {
+        "position": 3,
+        "locator": "Lê Quang Cảnh / 2026-09-10T21:49:04+08:00",
+        "summary": "小样本8个父细胞强度AUC约.73，细长度不能分离；标注分裂时间不聚集，但不能否定未标注分裂同步。"
+      },
+      {
+        "position": 4,
+        "locator": "hengck23 / 2026-09-10T23:25:28+08:00",
+        "summary": "建议t±10裁块人工检查及FOCUS人机标注训练division detector。"
+      },
+      {
+        "position": 5,
+        "locator": "hengck23 / 2026-09-10T15:31:22+08:00",
+        "summary": "提醒稀疏标注，建议比较外部配置并核查单位。"
+      },
+      {
+        "position": 6,
+        "locator": "Lê Quang Cảnh / 2026-09-10T16:28:20+08:00",
+        "summary": "更正：73文件边均相邻帧，572轨迹多为中途起止，36分裂不是无偏全体；外部ILP代价尺度不能直接对比；外部spacing此前未匹配。"
+      },
+      {
+        "position": 7,
+        "locator": "hengck23 / 2026-09-10T17:43:27+08:00",
+        "summary": "指向Ultrack Fig6和sparse zebrafish配置；一级来源未全文追踪，仍线索。"
+      },
+      {
+        "position": 8,
+        "locator": "hengck23 / 2026-09-10T17:52:16+08:00",
+        "summary": "给出另一个外部zarr metadata打印，spacing=(1.625,.40625,.40625)、522帧；只读取帖子打印，没有下载数据核验。"
+      }
+    ],
+    "body_read": true,
+    "unexpanded_visible_controls": 0,
+    "count_note": "以渲染出的作者/时间/正文唯一块计数，页面数字可能只计顶层或缓存；不机械写100%。",
+    "images": {
+      "viewed": "t150–153外部分裂图及分裂后回溯建议图已实际查看；主帖数值表已读",
+      "gap": "无独立标注统计复算，外部Fig6未全文复现"
+    },
+    "license": "UNKNOWN；不公开镜像全文或原图",
+    "evidence_class": "AUTHOR_CLAIM",
+    "selection_reason": "旧线索补读：几何分裂门槛与稀疏标注反证",
+    "body_summary": "73标签文件、36分裂的作者统计：普通边中位1.724微米、分裂步4.569、姐妹8.849；>5微米普通722对分裂30。后续更正承认稀疏选择偏差与预测定位误差；不能把距离当充分分裂判据。"
+  }
+]

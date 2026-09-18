@@ -1,0 +1,83 @@
+{
+  "parent_ref": "flexonafft/biohub-harmonic-fusion",
+  "parent_version": 30,
+  "parent_sv": "UNKNOWN",
+  "parent_original_sha256": "e378e723ff30c3bebbe21b68553b3c666c4592141288f32529c1322b790fb44a",
+  "parent_review": "原文件取得；非整本深读入围，不称FULL",
+  "target": "N02",
+  "cells": [
+    {
+      "cell": 0,
+      "source_equal": false,
+      "parent_lines": 69,
+      "N02_lines": 93
+    },
+    {
+      "cell": 1,
+      "source_equal": false,
+      "parent_lines": 43,
+      "N02_lines": 43
+    },
+    {
+      "cell": 2,
+      "source_equal": false,
+      "parent_lines": 238,
+      "N02_lines": 251
+    },
+    {
+      "cell": 3,
+      "source_equal": false,
+      "parent_lines": 682,
+      "N02_lines": 690
+    },
+    {
+      "cell": 4,
+      "source_equal": false,
+      "parent_lines": 460,
+      "N02_lines": 525
+    },
+    {
+      "cell": 5,
+      "source_equal": false,
+      "parent_lines": 1708,
+      "N02_lines": 1915
+    },
+    {
+      "cell": 6,
+      "source_equal": true,
+      "parent_lines": 178,
+      "N02_lines": 178
+    },
+    {
+      "cell": 7,
+      "source_equal": true,
+      "parent_lines": 178,
+      "N02_lines": 178
+    },
+    {
+      "cell": 8,
+      "source_equal": true,
+      "parent_lines": 318,
+      "N02_lines": 318
+    },
+    {
+      "cell": 9,
+      "source_equal": true,
+      "parent_lines": 146,
+      "N02_lines": 146
+    },
+    {
+      "cell": 10,
+      "source_equal": true,
+      "parent_lines": 126,
+      "N02_lines": 126
+    },
+    {
+      "cell": 11,
+      "source_equal": true,
+      "parent_lines": 44,
+      "N02_lines": 44
+    }
+  ],
+  "inference": "存在相同单元与大段共同代码，归为同一实现家族；不是独立复现结果。"
+}

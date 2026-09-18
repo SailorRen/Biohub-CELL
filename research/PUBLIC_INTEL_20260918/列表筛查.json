@@ -1,0 +1,172 @@
+{
+  "read_interval": [
+    "2026-09-18T12:04:00+08:00",
+    "2026-09-18T14:37:51+08:00"
+  ],
+  "discussions": {
+    "sorts": [
+      "Recent Comments",
+      "Recently Posted"
+    ],
+    "pages_each": [
+      1
+    ],
+    "items_each": 20,
+    "pinned_each": 3,
+    "recent_comments_ids": [
+      738833,
+      714101,
+      716062,
+      741868,
+      741386,
+      741749,
+      735352,
+      741651,
+      738217,
+      740145,
+      732103,
+      741446,
+      741242,
+      740337,
+      740573,
+      740285,
+      739731,
+      739685,
+      740103,
+      739516
+    ],
+    "window_note": "两个首列表均看到超过72h条目；相对3d边缘精确时间未全部核验；筛查非全站全文。",
+    "filter_note": "界面有Filters徽标；未完整核实其设置，检索受限。"
+  },
+  "code": {
+    "sorts": [
+      "Hotness",
+      "Public Score",
+      "Recently Created first40"
+    ],
+    "pages": "无限滚动；Hotness首20、PublicScore首20、RecentlyCreated累计60非置顶条目",
+    "pinned": "inversion/cell-tracking-getting-started-w-nearest-neighbor",
+    "filters": "PublicScore/RecentlyCreated显式excludeNonAccessedDatasources=false；Hotness观察阶段曾为true，限制单列。",
+    "window_note": "RecentlyCreated到60项已见4–5d卡片，但卡片时间是Updated而排序是Created；不能证明更新窗口穷尽。未另跑RecentlyRun，未达每视角100上限。",
+    "refs": {
+      "Hotness": [
+        "mtoshidesu/testbiohub-lf-dctta020-sectta1",
+        "alfonso1799/biohub-top-3-push-v49-dynamic-sota",
+        "haideptry/biohub-sota-0-948-density-adaptive-2xt4-22m",
+        "feifanque/biohub-harmonic-fusion-ablation-test",
+        "thtennant/biohub-frontier947-fast-det096-tight60-v1",
+        "thtennant/biohub-frontier947-flow2-det096-v1",
+        "k8mp29vlxq4w/biohub-cell-tracking-during-development-abuuu",
+        "thtennant/biohub-frontier947-flow2-v1",
+        "thtennant/biohub-frontier947-fast-tight60-v1",
+        "jaslee2/f947-d40",
+        "jaslee2/f947-d30",
+        "arnav170/biohub-steal2",
+        "anhadmahajan06/biohub-track-your-cells",
+        "lingxd/biohub-repro059-public-0947-exact-copy",
+        "newwang12/biohub-v1-grouped",
+        "arnav170/biohub-steal",
+        "jaslee2/biohub-fork947",
+        "adhirajjagtap/biohub-cell-tracking-solution",
+        "zhincez/biohub-0-947-lb-runnable-with-public-datasets",
+        "shienzhang/biohub-public-0947-exact-repro"
+      ],
+      "Public Score": [
+        "anvithpothula/biohub-0-95",
+        "raunakdey07/biohub-harmonic-fusion-v3",
+        "flexonafft/biohub-harmonic-fusion",
+        "reyhanksatria/biohub-cell-tracking-0-947-lb",
+        "flexonafft/biohub-lineage-forge-precision-tracking",
+        "sjlee101/biohub-lf-dctta",
+        "sjlee101/biohub-lf-dctta-v020",
+        "sjlee101/biohub-lf-dctta020-sectta1",
+        "crystalbaby/biohub-lf-dctta-v020",
+        "sjlee101/biohub-lf-dctta025-sectta1",
+        "sjlee101/biohub-lf-dctta020-sectta1-sister16",
+        "zhehaoliang/biohub-p26-o01-exact-public-0947",
+        "mtoshidesu/test-biohub-lf-dctta",
+        "arnav170/biohub-harm",
+        "rogerrogerroger3r/biohub-run91",
+        "sjlee101/biohub-lf-hoctveto-b",
+        "sjlee101/biohub-lf-hoctveto-div-b",
+        "canhtoanle/biohub-lf-dctta-fork",
+        "arnav170/biohub-harm20",
+        "zhehaoliang/biohub-p26-o02k01-r03-w06"
+      ],
+      "Recently Created first40": [
+        "thtennant/biohub-frontier947-gapfill-det096-v1",
+        "avikdas567/3d-kinematic-cell-tracking-mitotic-bifurcation",
+        "thtennant/biohub-frontier947-fast-det096-tight60-v1",
+        "thtennant/biohub-frontier947-flow2-det096-v1",
+        "thtennant/biohub-frontier947-flow2-v1",
+        "thtennant/biohub-frontier947-fast-tight60-v1",
+        "jaslee2/f947-d40",
+        "jaslee2/f947-d30",
+        "arnav170/biohub-steal2",
+        "alfonso1799/biohub-top-3-push-v49-dynamic-sota",
+        "lingxd/biohub-repro059-public-0947-exact-copy",
+        "arnav170/biohub-steal",
+        "yongjilyu/biohub-ct-sub",
+        "ayazahmedkazi/b5-s3-candidate",
+        "k8mp29vlxq4w/biohub-cell-tracking-during-development-abuuu",
+        "haideptry/biohub-sota-0-948-density-adaptive-2xt4-22m",
+        "thtennant/biohub-frontier947-fast-det096-v1",
+        "thtennant/biohub-frontier947-fast-v1",
+        "jaslee2/biohub-fork947",
+        "haideptry/biohub-sota-0-947-fast-2xt4-22m-divnet-3d",
+        "adhirajjagtap/biohub-cell-tracking-solution",
+        "leonixis/biohub-v1-submit",
+        "denpugovkin/biohub-0-885-without-the-fake-lineage-hub",
+        "androidss/biohub-public-0947-exact-repro",
+        "androidss/936-dc-ours",
+        "arnav170/biohub-reid2",
+        "shienzhang/biohub-public-0947-exact-repro",
+        "beraterolelk/biohub-v2-wide-sweep-pp-ensemble-0-947-base",
+        "umarshad/notebook82c6959503",
+        "pawanmali/biohub-942tta-fork-succskip-v1",
+        "pawanmali/biohub-942tta-fork-novet-v1",
+        "xiaoleilian/biohub-unet3d-v2models-training-code",
+        "arnav170/biohub-reid",
+        "hengck23/end2end-cell-linker-raw-edge-ja-0-9-no-ilp",
+        "denpugovkin/why-this-tracker-parks-an-ancestor-outside-the-vol",
+        "pawanmali/biohub-942tta-fork-divfix-v1",
+        "tangai1/biohub-b02-dynamic-production-20260915",
+        "tangai1/biohub-b02-all199-production-20260915-1based",
+        "tangai1/biohub-b02-all199-production-20260915-packed",
+        "feifanque/biohub-harmonic-fusion-ablation-test"
+      ]
+    },
+    "created41_60": "标题已看但完整ref未全部留存：testbiohub-lf-dctta020-sectta1; biohub-v916-v910-hoct-mode1-r1; Biohub0.947LB Runnable With PublicDatasets; Structured Trajectory Candidate; P26 FastRepro; P26ExactRepro; DeepCenter+ILP; All199SubmissionKernel; zhincez; LiquidTrackerCore; CellTrackingBaseline; v5-thr099b; V1329; v4-public; TrackingPipelineForkSpeedups; newwang grouped; RaunakFusion; YaroslavReproduction; V1327; DeepCenterTTA"
+  },
+  "exclusion_rules": "同家族copy/参数变体不计独立方法；无源码/无版本分数不作为更强生产方案；未入围不宣称全文读过。",
+  "explicit_exclusions": [
+    {
+      "ref": "haideptry/biohub-sota-0-948-density-adaptive-2xt4-22m",
+      "reason": "下载原件并核分；同家族/多改动，Public .945低于G1，不占第三个独立家族名额；未全文审查。"
+    },
+    {
+      "ref": "anvithpothula/biohub-0-95",
+      "reason": "旧版本真实Public .877，高卡片被否证；原文件取得非深读。"
+    },
+    {
+      "ref": "hengck23/cell-point-detector",
+      "reason": "原文件取得；与N01同作者检测前置家族，不额外计独立方案。"
+    },
+    {
+      "ref": "flexonafft/biohub-harmonic-fusion",
+      "reason": "原文件取得并单元差异比较，N02同家族；不计整本已读。"
+    },
+    {
+      "ref": "sjlee101/biohub-lf-hoctveto-div-b",
+      "reason": "本轮源hash与9/17归档一致；不假称本轮重新整本读过。"
+    },
+    {
+      "discussion": 738217,
+      "reason": "优先N01直接关联的740145及最新24h信号；FOCUS主帖49回复未入围，保留未读。"
+    },
+    {
+      "discussion": 732103,
+      "reason": "合成数据入口未入围；无本轮直接收益证据。"
+    }
+  ]
+}
