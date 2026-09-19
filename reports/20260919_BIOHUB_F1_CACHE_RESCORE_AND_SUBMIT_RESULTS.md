@@ -71,3 +71,7 @@ cd /private/tmp/biohub-f1-recovery-20260919
 必要输出：f1_production_receipt.json、sprint_production_receipt.json、bidirectional_production_runtime_integrity.json、ppsweep_selected.json、run_stats.csv 与 ignored submission.csv（以真实清单文件名为准）。验证输入/权重哈希、源代码绑定、F1 启用、schema、端点、逐数据集覆盖与 submission SHA256。冻结的 F1 回执写出语句追加的是字面量反斜杠 n；读取时可仅对该已知尾缀用 JSONDecoder.raw_decode 严格解析，保留原始字节哈希，不修改/重跑生产 Notebook。
 
 正式提交已有授权，无需再征求；提交前重新核对账户/比赛/日限额/已有 submission，永久预记 ledger.formal_submission_requests=1，再单次 competition_submit_code(kernel=准确ref,kernel_version=1,file_name='submission.csv')。绑定正式 submission ID 后只读刷新 Public，与准确 G1 submission56270217 同精度比较；结果未知不可重发，不修改最终选择。没有创建会话外监控。
+
+文件交付阶段：固定提交 9690f7f1b2f65defe44ce4120d74a9c559bea12d 已完成 GitHub 104/104 文件字节回读；见 score_recovery_20260919/github_readback.json。后续提交仅保存该回读回执，本地最终回读另留 ignored .task-verification。
+
+最终页面观测：2026-09-19T22:17:02.276925+08:00，准确生产页面仍显示 Running for 208.9s，Edit 链接保持 /edit/run/351084196。此时正式评分未执行。
