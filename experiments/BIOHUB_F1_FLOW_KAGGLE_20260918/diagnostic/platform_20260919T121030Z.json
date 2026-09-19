@@ -1,0 +1,10 @@
+{
+  "observed_at_utc": "20260919T121030Z",
+  "ref": "sailorren/biohub-f1-flow-diag-20260918",
+  "phase": "diagnostic",
+  "writes": 0,
+  "status": "READ_ERROR",
+  "error_type": "AssertionError",
+  "error": "INPUT_MISMATCH_kernel_sources",
+  "traceback": "Traceback (most recent call last):\n  File \"/private/tmp/biohub-f1-recovery-20260919/experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/read_run.py\", line 37, in main\n    v=call('source');ident=identity(v)\n                           ^^^^^^^^^^^\n  File \"/private/tmp/biohub-f1-recovery-20260919/experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/read_run.py\", line 29, in identity\n    for field,key in [('input_kernels','kernel_sources'),('input_datasets','dataset_sources'),('input_competitions','competition_sources')]:assert sorted(z[field])==sorted(meta[key]),'INPUT_MISMATCH_'+key\n                                                                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: INPUT_MISMATCH_kernel_sources\n"
+}

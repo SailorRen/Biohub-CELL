@@ -1,0 +1,15 @@
+{
+  "checkpoint_commit": "4ab0ee0f371a2023d50a7bbb8ad194310f47b5df",
+  "files": [
+    {
+      "path": "tasks/CODEX_20260919_BIOHUB_F1_RECOVER_AND_SCORE.md",
+      "sha256": "f7411218c2bf75f5288e958f39baf14ef93e183cab4775de66a9e5eef48d32f9",
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/recovery_20260919/contract_amendment.json",
+      "sha256": "33e37696e84b79abe8d5c7d425ad3c7a136ddfc310514ac708b943902ea84380",
+      "match": true
+    }
+  ]
+}

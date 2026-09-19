@@ -1,0 +1,29 @@
+{
+  "observed_at_utc": "2026-09-19T12:08:36.674078+00:00",
+  "principal": "sailorren",
+  "g1_authenticated_source_equal": true,
+  "inventory_complete": true,
+  "inventory_count": 87,
+  "target_get_status": 403,
+  "target_ui": "We can't find that page.",
+  "target_url": "https://www.kaggle.com/code/sailorren/biohub-f1-flow-diag-20260918",
+  "active_events": 0,
+  "active_events_ui": "0 Active Events",
+  "gpu_remaining_hours": 30,
+  "daily_submission_remaining": 5,
+  "controlled_recovery_eligible": true,
+  "original_outcome": "UNKNOWN",
+  "known_risk": "Finite duplicate compute risk accepted by recovery task; absence observations do not prove first request failed",
+  "selected_write_path": "Official installed Kaggle SDK api.kernels_push; one HTTP send with redirects/retries disabled",
+  "client_versions": {
+    "kaggle": "2.2.3",
+    "kagglesdk": "0.1.33",
+    "requests": "2.32.5",
+    "urllib3": "2.6.3"
+  },
+  "accelerator": "NvidiaTeslaT4",
+  "accelerator_source": "https://github.com/Kaggle/kaggle-cli/blob/main/docs/kernels.md",
+  "actual_worker_availability": "Determined by platform scheduling; no active sessions, free GPU quota available",
+  "metadata_changed": false,
+  "mock_tests_passed": 2
+}

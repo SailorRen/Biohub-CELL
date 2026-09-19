@@ -1,4 +1,8 @@
 {
+  "observed_at_utc": "20260919T121320Z",
+  "ref": "sailorren/biohub-f1-flow-diag-20260918",
+  "phase": "diagnostic",
+  "writes": 0,
   "kernel_id": 134976549,
   "version": 1,
   "private": true,
@@ -17,15 +21,17 @@
   ],
   "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
   "machine_shape": "NvidiaTeslaT4",
-  "ref": "sailorren/biohub-f1-flow-diag-20260918",
   "script_version_id": 351058693,
   "bound_at_utc": "20260919T121227Z",
   "sv_status": "UI_EDIT_RUN_LINK_VERIFIED",
   "input_versions_status": "REQUESTED_EXACT_VERSIONS_RUNTIME_HASH_CHECK_PENDING",
-  "status": "DIAG_RUNNING",
-  "results_obtained": false,
-  "completed_views": null,
-  "public_score": null,
-  "save_requests": 2,
-  "last_observed_at_utc": "2026-09-19T12:17:25+00:00"
+  "status": "RUNNING",
+  "failure_message": "",
+  "pages": 1,
+  "inventory_complete": true,
+  "output_names": [],
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "safe_log_tail": "",
+  "association_method": "Current API bracketed by identical frozen Version, source hash and inputs; no latest-version substitution permitted",
+  "downloaded": []
 }

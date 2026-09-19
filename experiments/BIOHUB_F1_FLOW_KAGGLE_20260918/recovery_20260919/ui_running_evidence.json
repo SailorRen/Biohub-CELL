@@ -1,0 +1,17 @@
+{
+  "source": "Authenticated Kaggle Logs tab via cua_repl, V1 Edit/run/351058693",
+  "worker_status": "RUNNING",
+  "running_seconds": 416.4,
+  "output_bytes_displayed": 0,
+  "verified_log_lines": {
+    "support_repo_python_manifest_sha256": "978b626d1fd1e7397435a437dfe68691defe1572fc3c20e61012d7c9b52ed029",
+    "primary_sha256": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+    "deepcenter_sha256": "8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0",
+    "secondary_sha256": "9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f",
+    "runtime_integrity_receipt": "/kaggle/working/bidirectional_production_runtime_integrity.json"
+  },
+  "diagnostic_samples_completed": "UNKNOWN",
+  "note": "Displayed legacy configuration/score text is not F1 diagnostic data. Full input/cache hashes and result tables still required.",
+  "observed_at_utc_approximate": "2026-09-19T12:16:04+00:00",
+  "timestamp_precision_note": "Approximate tool-observation time; use timestamped API snapshot for precise final check start"
+}

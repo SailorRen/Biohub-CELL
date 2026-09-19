@@ -1,0 +1,33 @@
+{
+  "observed_at_utc": "20260919T121510Z",
+  "ref": "sailorren/biohub-f1-flow-diag-20260918",
+  "phase": "diagnostic",
+  "writes": 0,
+  "kernel_id": 134976549,
+  "version": 1,
+  "private": true,
+  "source_sha256": "e6e63a2c5f49d8372011037f8beb6812bb58cf06a293c9f3487a7cce1026ef37",
+  "code_cells_equal": true,
+  "input_kernels": [
+    "sailorren/biohub-division-train-20260914"
+  ],
+  "input_datasets": [
+    "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+    "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+    "pilkwang/biohub-tracking-support-pack-50ep-v1"
+  ],
+  "input_competitions": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "machine_shape": "NvidiaTeslaT4",
+  "script_version_id": 351058693,
+  "bound_at_utc": "20260919T121227Z",
+  "sv_status": "UI_EDIT_RUN_LINK_VERIFIED",
+  "input_versions_status": "REQUESTED_EXACT_VERSIONS_RUNTIME_HASH_CHECK_PENDING",
+  "status": "READ_ERROR",
+  "failure_message": "",
+  "error_type": "SSLError",
+  "error": "HTTPSConnectionPool(host='api.kaggle.com', port=443): Max retries exceeded with url: /v1/kernels.KernelsApiService/ListKernelSessionOutput (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))",
+  "traceback": "urllib3.exceptions.SSLError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/opt/anaconda3/envs/ml/lib/python3.11/site-packages/requests/adapters.py\", line 644, in send\n    resp = conn.urlopen(\n           ^^^^^^^^^^^^^\n  File \"/opt/anaconda3/envs/ml/lib/python3.11/site-packages/urllib3/connectionpool.py\", line 841, in urlopen\n    retries = retries.increment(\n              ^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/envs/ml/lib/python3.11/site-packages/urllib3/util/retry.py\", line 535, in increment\n    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nurllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.kaggle.com', port=443): Max retries exceeded with url: /v1/kernels.KernelsApiService/ListKernelSessionOutput (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/private/tmp/biohub-f1-recovery-20260919/experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/read_run.py\", line 51, in main\n    out=call('output',binding['version'],token);files.extend(out.files or [])\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/tmp/biohub-f1-recovery-20260919/experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/read_run.py\", line 26, in call\n    with api.build_kaggle_client() as c:return getattr(c.kernels.kernels_api_client,method)(q)\n                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/envs/ml/lib/python3.11/site-packages/kagglesdk/kernels/services/kernels_api_service.py\", line 70, in list_kernel_session_output\n    return self._client.call(\"kernels.KernelsApiService\", \"ListKernelSessionOutput\", request, ApiListKernelSessionOutputResponse)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/envs/ml/lib/python3.11/site-packages/kagglesdk/kaggle_http_client.py\", line 96, in call\n    http_response = self._session.send(http_request, **settings)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/envs/ml/lib/python3.11/site-packages/requests/sessions.py\", line 703, in send\n    r = adapter.send(request, **kwargs)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/anaconda3/envs/ml/lib/python3.11/site-packages/requests/adapters.py\", line 675, in send\n    raise SSLError(e, request=request)\nrequests.exceptions.SSLError: HTTPSConnectionPool(host='api.kaggle.com', port=443): Max retries exceeded with url: /v1/kernels.KernelsApiService/ListKernelSessionOutput (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))\n"
+}

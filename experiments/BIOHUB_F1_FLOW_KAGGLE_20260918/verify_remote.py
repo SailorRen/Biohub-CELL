@@ -7,13 +7,13 @@ p=argparse.ArgumentParser();p.add_argument('--commit',required=True);p.add_argum
 assert len(a.commit)==40 and all(c in '0123456789abcdef' for c in a.commit)
 def git(*args):return subprocess.check_output(['git','-c','http.version=HTTP/1.1',*args],cwd=R)
 def sha(b):return hashlib.sha256(b).hexdigest()
-branch='codex/f1-flow-kaggle-20260918';base='a88938c587a2444831a9b60bda292f1621ce6e7b'
+branch='codex/f1-flow-kaggle-20260918';base='80857e0d6c35e239d7bcd32c474170f787c7682a'
 head=git('rev-parse','HEAD').decode().strip();remote=git('ls-remote','origin','refs/heads/'+branch).decode().split()[0]
 main=git('ls-remote','origin','refs/heads/main').decode().split()[0]
 assert head==remote==a.commit
 status=git('status','--porcelain').decode();assert not status
 paths=git('diff','--name-only','-z',base,a.commit).decode().strip('\0').split('\0')
-assert paths and all(x.startswith('experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/') or x == 'reports/20260918_BIOHUB_F1_FLOW_KAGGLE_RESULTS.md' for x in paths)
+assert paths and all(x.startswith('experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/') or x == 'reports/20260919_BIOHUB_F1_RECOVER_AND_SCORE_RESULTS.md' for x in paths)
 (R/'downloads/BIOHUB_F1_FLOW_KAGGLE_20260918').mkdir(parents=True,exist_ok=True)
 archive=R/'downloads/BIOHUB_F1_FLOW_KAGGLE_20260918'/('github-'+a.commit+'.zip');url='https://codeload.github.com/SailorRen/Biohub-CELL/zip/'+a.commit
 subprocess.run(['curl','--http1.1','--fail','--silent','--show-error','--connect-timeout','20','--max-time','60','-o',str(archive),url],check=True)
@@ -23,7 +23,7 @@ with zipfile.ZipFile(archive) as z:
  for path in paths:
   b=(R/path).read_bytes();c=git('show',a.commit+':'+path);r=z.read(prefix+'/'+path)
   rows.append({'path':path,'bytes':len(b),'local_sha256':sha(b),'commit_sha256':sha(c),'remote_sha256':sha(r),'match':b==c==r})
-out={'task_id':'BIOHUB_F1_FLOW_KAGGLE_20260918','scope':'only new task files; GitHub delivery only; algorithm and formal score status are separate','observed_at_utc':datetime.now(timezone.utc).isoformat(),'branch':branch,'commit':a.commit,'remote_head':remote,'remote_main':main,'worktree_status':status,'archive_url':url,'archive_sha256':sha(archive.read_bytes()),'matched':sum(x['match'] for x in rows),'total':len(rows),'files':rows,'status':'REMOTE_BYTES_VERIFIED' if all(x['match'] for x in rows) else 'FAIL'}
+out={'task_id':'BIOHUB_F1_RECOVER_AND_SCORE_20260919','scope':'only new task files; GitHub delivery only; algorithm and formal score status are separate','observed_at_utc':datetime.now(timezone.utc).isoformat(),'branch':branch,'commit':a.commit,'remote_head':remote,'remote_main':main,'worktree_status':status,'archive_url':url,'archive_sha256':sha(archive.read_bytes()),'matched':sum(x['match'] for x in rows),'total':len(rows),'files':rows,'status':'REMOTE_BYTES_VERIFIED' if all(x['match'] for x in rows) else 'FAIL'}
 (R/a.output).write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps({k:v for k,v in out.items() if k!='files'},ensure_ascii=False))
 assert all(x['match'] for x in rows)

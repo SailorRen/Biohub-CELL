@@ -1,0 +1,31 @@
+{
+  "id": 134976549,
+  "ref": "sailorren/biohub-f1-flow-diag-20260918",
+  "title": "Biohub F1 Flow diag 20260918",
+  "author": "Sailor Ren",
+  "slug": "biohub-f1-flow-diag-20260918",
+  "lastRunTime": "2026-09-16T12:11:32.035Z",
+  "language": "python",
+  "kernelType": "notebook",
+  "isPrivate": true,
+  "enableGpu": true,
+  "enableInternet": false,
+  "categoryIds": [
+    "gpu"
+  ],
+  "datasetDataSources": [
+    "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+    "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+    "pilkwang/biohub-tracking-support-pack-50ep-v1"
+  ],
+  "kernelDataSources": [
+    "sailorren/biohub-division-train-20260914"
+  ],
+  "competitionDataSources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "enableTpu": false,
+  "currentVersionNumber": 1,
+  "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "machineShape": "NvidiaTeslaT4"
+}

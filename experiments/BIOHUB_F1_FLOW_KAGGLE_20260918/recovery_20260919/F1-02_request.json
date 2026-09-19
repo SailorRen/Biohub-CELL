@@ -1,0 +1,30 @@
+{
+  "action": "SaveAndRun",
+  "attempt_id": "F1-02",
+  "phase": "diagnostic",
+  "reason": "unknown_outcome_recovery",
+  "ref": "sailorren/biohub-f1-flow-diag-20260918",
+  "at_utc": "2026-09-19T12:09:01.940099+00:00",
+  "source_sha256": "5a94bc79a1ffe55c71d1b456b579792048c7c3adb2eac3ecb96b801acf382bab",
+  "metadata_sha256": "0f103321a7d05ca5f568a991dcde14d9a165ef8bc999090ebdb8aafeaa8b1a26",
+  "checkpoint_commit": "4ab0ee0f371a2023d50a7bbb8ad194310f47b5df",
+  "recovery_credential": "BIOHUB_F1_RECOVER_AND_SCORE_20260919-R1",
+  "status": "RESPONSE_RECEIVED_READBACK_REQUIRED",
+  "requests_counted": 1,
+  "http": {
+    "status": 200,
+    "content_type": "application/json",
+    "response_length": 168,
+    "body_sha256": "2a9e9533df59ae10fdc9f6a1d278f8e9ecbf2c62a725081ce6f73dc0f97a1d68",
+    "request_id": "UNAVAILABLE"
+  },
+  "wire_sends": 1,
+  "wire_sent_at_utc": "2026-09-19T12:09:01.948294+00:00",
+  "response": {
+    "ref": "/code/sailorren/biohub-f1-flow-diag-20260918",
+    "url": "[URL_REDACTED]",
+    "versionNumber": 1,
+    "kernelId": 134976549
+  },
+  "finished_at_utc": "2026-09-19T12:09:07.558871+00:00"
+}

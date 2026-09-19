@@ -1,0 +1,10 @@
+{
+  "status": "LOCAL_EVIDENCE_PASS",
+  "cloud_experiment": "DIAG_RUNNING",
+  "formal_submission_requests": 0,
+  "remote_delivery": "SEPARATE_READBACK_REQUIRED",
+  "science_unchanged": true,
+  "original_workspace_unchanged": true,
+  "observed_at_utc": "2026-09-19T12:19:36.631788+00:00",
+  "targeted_tests": "2 unittest cases PASS; compile and git diff --check PASS"
+}

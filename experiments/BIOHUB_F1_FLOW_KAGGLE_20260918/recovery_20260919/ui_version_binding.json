@@ -1,0 +1,13 @@
+{
+  "observed_at_utc": "2026-09-19T12:12:26.421071+00:00",
+  "ref": "sailorren/biohub-f1-flow-diag-20260918",
+  "version": 1,
+  "version_source": "SaveKernel response and GetKernel currentVersionNumber",
+  "script_version_id": 351058693,
+  "sv_source": "https://www.kaggle.com/code/sailorren/biohub-f1-flow-diag-20260918/edit/run/351058693",
+  "sv_source_location": "visible Edit link href, not clicked",
+  "worker_state": "RUNNING",
+  "accelerator": "GPU T4 x2",
+  "runtime_seconds_observed": 146.2,
+  "source_note": "Pull metadata strips input version suffixes. Exact requested versions preserved in unchanged metadata; full runtime hashes pending."
+}

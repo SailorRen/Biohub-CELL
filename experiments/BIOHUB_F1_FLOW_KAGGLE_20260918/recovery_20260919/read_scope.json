@@ -1,0 +1,21 @@
+{
+  "current_turn_full_reads": [
+    "AGENTS.md",
+    "tasks/CODEX_20260918_BIOHUB_F1_FLOW_KAGGLE.md",
+    "tasks/CODEX_20260919_BIOHUB_F1_RECOVER_AND_SCORE.md",
+    "contract.json",
+    "ledger.json",
+    "save_once.py",
+    "read_run.py",
+    "source_binding.json",
+    "reports/20260918_BIOHUB_F1_FLOW_KAGGLE_RESULTS.md",
+    "flow_patch.py",
+    "diagnostic_runtime.py",
+    "build.py",
+    "diagnostic/kernel-metadata.json",
+    "G1 cell4: complete AST-unparsed code plus four long literal source strings",
+    "G1 cell9 full"
+  ],
+  "historical_read_scope": "source_binding.json records previous-turn reads; no claim of rereading all historical cells/dependencies",
+  "science_files_unchanged": true
+}
