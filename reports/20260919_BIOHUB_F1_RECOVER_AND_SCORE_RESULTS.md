@@ -4,7 +4,7 @@
 
 ## 已确认根因
 
-`SOURCE_CODE_VERIFIED` + 云端错误日志：Notebook第7执行单元，在 `diagnostic_runtime.py:124` 的delta字典推导读取 `summary['F1']['edge_tp']`，触发 **KeyError: 'edge_tp'**。冻结官方 `metrics.summarise()` 返回score/adj_edge_jaccard/division计数等，但**不返回 edge_tp/edge_fp/edge_fn**；这三个字段存在于逐样本 `per_sample_metrics()` 结果。适配器也未把它们添加到summary。是我编写的F1汇总代码错误假定了返回schema，静态/小型运动测试没有覆盖结果汇总接口。
+`SOURCE_CODE_VERIFIED` + 云端错误日志：Notebook第7执行单元，在 `diagnostic_runtime.py:125` 的delta字典推导读取 `summary['F1']['edge_tp']`，触发 **KeyError: 'edge_tp'**。冻结官方 `metrics.summarise()` 返回score/adj_edge_jaccard/division计数等，但**不返回 edge_tp/edge_fp/edge_fn**；这三个字段存在于逐样本 `per_sample_metrics()` 结果。适配器也未把它们添加到summary。是我编写的F1汇总代码错误假定了返回schema，静态/小型运动测试没有覆盖结果汇总接口。
 
 用原官方函数AST提取与一行人工指标（未加载模型、未读取真实图或执行全量评分）重现同一KeyError，见 `recovery_20260919/analyze_failure.py` 和 `failure_analysis.json`。这不是上传失败；日志未以OOM、超时或图合法性断言终止。不能将此工程错误称为F1算法失败。
 
