@@ -1,0 +1,3048 @@
+{
+  "stem": "6bba_09961292",
+  "arm": "B0",
+  "metrics": {
+    "edge_tp": 1779,
+    "edge_fp": 127,
+    "edge_fn": 92,
+    "division_tp": 0,
+    "division_fp": 0,
+    "division_fn": 4,
+    "num_pred_nodes": 29742,
+    "node_recall": 0.9933333333333333,
+    "total_node_ratio": -0.044188064402095314,
+    "edge_jaccard": 0.8903903903903904,
+    "adj_edge_jaccard": 0.8943248531817481,
+    "score": 0.8943248531817481,
+    "n_total": 31117.0,
+    "weight": 1998
+  },
+  "log_score": 0.8943248531817481,
+  "log_delta": 0.0,
+  "graph_legal": true,
+  "repeat_and_off_equal": true,
+  "attribution_bijection_verified": true,
+  "events": [
+    {
+      "source_id": 2176,
+      "target_id": 32570,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 2295,
+      "target_id": 2641,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 2385,
+      "target_id": 32357,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 2395,
+      "target_id": 2687,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 2647,
+      "target_id": 32359,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 2675,
+      "target_id": 2988,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 2756,
+      "target_id": 3064,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 2800,
+      "target_id": 32360,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 2875,
+      "target_id": 32361,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 2878,
+      "target_id": 32362,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 2914,
+      "target_id": 32363,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 3101,
+      "target_id": 32364,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 3189,
+      "target_id": 32552,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 3376,
+      "target_id": 32365,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 3708,
+      "target_id": 4074,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 3847,
+      "target_id": 32367,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 3906,
+      "target_id": 32368,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 4058,
+      "target_id": 4418,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 4151,
+      "target_id": 32538,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 4418,
+      "target_id": 4807,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 4489,
+      "target_id": 4863,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 4702,
+      "target_id": 32370,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 4832,
+      "target_id": 32371,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 4843,
+      "target_id": 5138,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 4940,
+      "target_id": 32372,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 5356,
+      "target_id": 32373,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 5448,
+      "target_id": 32374,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 5477,
+      "target_id": 32582,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 5597,
+      "target_id": 32375,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 5818,
+      "target_id": 32376,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 6581,
+      "target_id": 32377,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 6898,
+      "target_id": 32378,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 8031,
+      "target_id": 32379,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 8357,
+      "target_id": 32380,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 8554,
+      "target_id": 32381,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 8714,
+      "target_id": 9058,
+      "attribution": "FP"
+    },
+    {
+      "source_id": 8785,
+      "target_id": 32382,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 8797,
+      "target_id": 32383,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 8885,
+      "target_id": 9248,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 8895,
+      "target_id": 9263,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 8911,
+      "target_id": 9235,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 8931,
+      "target_id": 9267,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 8947,
+      "target_id": 9219,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 8948,
+      "target_id": 9262,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 8951,
+      "target_id": 9225,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 8984,
+      "target_id": 9319,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 9024,
+      "target_id": 9354,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 9034,
+      "target_id": 9364,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 9068,
+      "target_id": 9376,
+      "attribution": "TP"
+    },
+    {
+      "source_id": 9155,
+      "target_id": 32566,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 9669,
+      "target_id": 32384,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 9762,
+      "target_id": 10075,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 9843,
+      "target_id": 32385,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 9977,
+      "target_id": 32386,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 10297,
+      "target_id": 32387,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 10339,
+      "target_id": 32388,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 10436,
+      "target_id": 32542,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 10495,
+      "target_id": 32389,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 10604,
+      "target_id": 10933,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 10648,
+      "target_id": 32390,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 10658,
+      "target_id": 32536,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 10769,
+      "target_id": 11079,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 10835,
+      "target_id": 32391,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 10884,
+      "target_id": 11182,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 10987,
+      "target_id": 32560,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 11128,
+      "target_id": 11418,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 11182,
+      "target_id": 11432,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 11349,
+      "target_id": 32393,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 11418,
+      "target_id": 11738,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 11738,
+      "target_id": 12060,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 11789,
+      "target_id": 12111,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 11978,
+      "target_id": 32394,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 12060,
+      "target_id": 12386,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 12111,
+      "target_id": 12435,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 12415,
+      "target_id": 32574,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 12435,
+      "target_id": 12743,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 12444,
+      "target_id": 32395,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 12613,
+      "target_id": 32396,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 12743,
+      "target_id": 13060,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 12958,
+      "target_id": 32568,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13009,
+      "target_id": 32397,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13027,
+      "target_id": 13376,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13036,
+      "target_id": 32400,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13040,
+      "target_id": 32401,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13041,
+      "target_id": 32402,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13045,
+      "target_id": 32403,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13047,
+      "target_id": 32404,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13049,
+      "target_id": 32405,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13055,
+      "target_id": 13352,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13057,
+      "target_id": 13414,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13058,
+      "target_id": 32406,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13060,
+      "target_id": 13362,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13064,
+      "target_id": 13433,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13075,
+      "target_id": 32408,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13095,
+      "target_id": 13347,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13096,
+      "target_id": 13354,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13112,
+      "target_id": 32409,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13113,
+      "target_id": 13428,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13129,
+      "target_id": 13426,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13136,
+      "target_id": 32410,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13160,
+      "target_id": 32411,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13166,
+      "target_id": 32412,
+      "attribution": "FP"
+    },
+    {
+      "source_id": 13187,
+      "target_id": 32413,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13188,
+      "target_id": 13476,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13191,
+      "target_id": 32572,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13194,
+      "target_id": 13429,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13219,
+      "target_id": 13517,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13220,
+      "target_id": 13465,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13224,
+      "target_id": 13512,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13232,
+      "target_id": 32415,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13235,
+      "target_id": 32416,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13244,
+      "target_id": 32417,
+      "attribution": "FP"
+    },
+    {
+      "source_id": 13250,
+      "target_id": 13530,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13255,
+      "target_id": 13504,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13263,
+      "target_id": 32418,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13266,
+      "target_id": 32419,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13282,
+      "target_id": 32420,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13298,
+      "target_id": 13556,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13300,
+      "target_id": 32421,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13301,
+      "target_id": 32422,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13302,
+      "target_id": 13570,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13307,
+      "target_id": 32423,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13339,
+      "target_id": 13577,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13340,
+      "target_id": 13597,
+      "attribution": "FP"
+    },
+    {
+      "source_id": 13349,
+      "target_id": 13617,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13351,
+      "target_id": 13615,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13352,
+      "target_id": 13613,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13358,
+      "target_id": 13623,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13373,
+      "target_id": 32558,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13379,
+      "target_id": 13635,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13380,
+      "target_id": 13646,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13407,
+      "target_id": 13644,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13418,
+      "target_id": 13588,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13419,
+      "target_id": 13633,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13420,
+      "target_id": 13668,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13421,
+      "target_id": 13671,
+      "attribution": "FP"
+    },
+    {
+      "source_id": 13433,
+      "target_id": 13586,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13434,
+      "target_id": 13720,
+      "attribution": "FP"
+    },
+    {
+      "source_id": 13435,
+      "target_id": 13686,
+      "attribution": "FP"
+    },
+    {
+      "source_id": 13437,
+      "target_id": 13740,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13441,
+      "target_id": 13704,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13444,
+      "target_id": 13673,
+      "attribution": "FP"
+    },
+    {
+      "source_id": 13446,
+      "target_id": 13676,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13447,
+      "target_id": 13681,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13448,
+      "target_id": 13773,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13457,
+      "target_id": 13643,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13460,
+      "target_id": 13782,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13477,
+      "target_id": 13761,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13480,
+      "target_id": 13780,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13483,
+      "target_id": 13695,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13487,
+      "target_id": 13743,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13488,
+      "target_id": 13758,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13492,
+      "target_id": 13729,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13498,
+      "target_id": 13762,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13503,
+      "target_id": 13756,
+      "attribution": "FP"
+    },
+    {
+      "source_id": 13507,
+      "target_id": 13763,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13520,
+      "target_id": 13808,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13524,
+      "target_id": 13811,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13536,
+      "target_id": 13805,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13543,
+      "target_id": 13806,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13546,
+      "target_id": 13803,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13547,
+      "target_id": 13818,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13730,
+      "target_id": 32425,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 13780,
+      "target_id": 14076,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 14076,
+      "target_id": 14381,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 14235,
+      "target_id": 14538,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 14381,
+      "target_id": 14689,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 14517,
+      "target_id": 32426,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 14521,
+      "target_id": 32550,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 14538,
+      "target_id": 14847,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 14825,
+      "target_id": 32580,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 14847,
+      "target_id": 15160,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 14972,
+      "target_id": 15252,
+      "attribution": "TP"
+    },
+    {
+      "source_id": 15020,
+      "target_id": 32428,
+      "attribution": "TP"
+    },
+    {
+      "source_id": 15116,
+      "target_id": 32564,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 15574,
+      "target_id": 15879,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 15887,
+      "target_id": 32429,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 15972,
+      "target_id": 32430,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 16312,
+      "target_id": 32522,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 16320,
+      "target_id": 16629,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 16399,
+      "target_id": 32431,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 16752,
+      "target_id": 32432,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 16895,
+      "target_id": 32508,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 17052,
+      "target_id": 32433,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 17136,
+      "target_id": 32434,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 17326,
+      "target_id": 32584,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 17373,
+      "target_id": 32435,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 17407,
+      "target_id": 32562,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 17545,
+      "target_id": 32436,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 17742,
+      "target_id": 32512,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 17743,
+      "target_id": 32437,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 18204,
+      "target_id": 32532,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 18892,
+      "target_id": 32556,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 18931,
+      "target_id": 32526,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 19395,
+      "target_id": 32439,
+      "attribution": "TP"
+    },
+    {
+      "source_id": 19495,
+      "target_id": 32440,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 19818,
+      "target_id": 32528,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 19862,
+      "target_id": 32441,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 19881,
+      "target_id": 32514,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 20190,
+      "target_id": 32442,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 20960,
+      "target_id": 32524,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 21496,
+      "target_id": 21859,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 21522,
+      "target_id": 32443,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 21529,
+      "target_id": 32444,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 21539,
+      "target_id": 21901,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 21559,
+      "target_id": 21828,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 21630,
+      "target_id": 21924,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 21700,
+      "target_id": 22017,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 21710,
+      "target_id": 32576,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 21763,
+      "target_id": 32445,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 21959,
+      "target_id": 32446,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 21998,
+      "target_id": 32447,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 22080,
+      "target_id": 32554,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 22124,
+      "target_id": 32448,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 22149,
+      "target_id": 32449,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 22166,
+      "target_id": 22510,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 22261,
+      "target_id": 22588,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 22283,
+      "target_id": 22610,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 22306,
+      "target_id": 32510,
+      "attribution": "TP"
+    },
+    {
+      "source_id": 22380,
+      "target_id": 22696,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 22696,
+      "target_id": 23007,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 22883,
+      "target_id": 32578,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 23430,
+      "target_id": 32451,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 23540,
+      "target_id": 32452,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 23592,
+      "target_id": 32544,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 23687,
+      "target_id": 32453,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 23951,
+      "target_id": 24278,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 24503,
+      "target_id": 32454,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 24786,
+      "target_id": 32455,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 24946,
+      "target_id": 32456,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 25334,
+      "target_id": 25650,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 25342,
+      "target_id": 32457,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 25397,
+      "target_id": 32458,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 25658,
+      "target_id": 32518,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 26152,
+      "target_id": 32459,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 26245,
+      "target_id": 26533,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 26253,
+      "target_id": 26646,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 26257,
+      "target_id": 26564,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 26259,
+      "target_id": 26631,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 26281,
+      "target_id": 26558,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 26292,
+      "target_id": 26633,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 26297,
+      "target_id": 26607,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 26311,
+      "target_id": 26636,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 26329,
+      "target_id": 26555,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 26344,
+      "target_id": 32516,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 26415,
+      "target_id": 26720,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 26421,
+      "target_id": 26733,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 27031,
+      "target_id": 32460,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 27035,
+      "target_id": 32461,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 27066,
+      "target_id": 32462,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 27198,
+      "target_id": 27475,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 27232,
+      "target_id": 32546,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 27263,
+      "target_id": 32463,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 27684,
+      "target_id": 32534,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 27802,
+      "target_id": 32520,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 27973,
+      "target_id": 32464,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 27990,
+      "target_id": 32465,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 28016,
+      "target_id": 32466,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 28096,
+      "target_id": 32467,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 28217,
+      "target_id": 32468,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 28301,
+      "target_id": 32469,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 28358,
+      "target_id": 32470,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 28364,
+      "target_id": 32471,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 28445,
+      "target_id": 32540,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 28488,
+      "target_id": 28822,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 28489,
+      "target_id": 28788,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 28659,
+      "target_id": 28961,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 29427,
+      "target_id": 29750,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 29617,
+      "target_id": 32548,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 29719,
+      "target_id": 32472,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 29750,
+      "target_id": 30063,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 29901,
+      "target_id": 32473,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 29903,
+      "target_id": 32474,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 29911,
+      "target_id": 30292,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 29919,
+      "target_id": 32475,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 29920,
+      "target_id": 32476,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 29924,
+      "target_id": 32477,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 29931,
+      "target_id": 32478,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 29934,
+      "target_id": 32479,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 29935,
+      "target_id": 30215,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 29936,
+      "target_id": 32480,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 29939,
+      "target_id": 30244,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 29940,
+      "target_id": 32481,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 29941,
+      "target_id": 32482,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 29943,
+      "target_id": 30294,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 29945,
+      "target_id": 32530,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 29949,
+      "target_id": 32483,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 29958,
+      "target_id": 32484,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 29983,
+      "target_id": 30311,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 29992,
+      "target_id": 30289,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30008,
+      "target_id": 32486,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30016,
+      "target_id": 30323,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30025,
+      "target_id": 30331,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30026,
+      "target_id": 30316,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30034,
+      "target_id": 30350,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30039,
+      "target_id": 30321,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30040,
+      "target_id": 32487,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30043,
+      "target_id": 30338,
+      "attribution": "FP"
+    },
+    {
+      "source_id": 30045,
+      "target_id": 32488,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30048,
+      "target_id": 30348,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30050,
+      "target_id": 30349,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30051,
+      "target_id": 30305,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30055,
+      "target_id": 30374,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30056,
+      "target_id": 30302,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30058,
+      "target_id": 30379,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30063,
+      "target_id": 30329,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30064,
+      "target_id": 30355,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30067,
+      "target_id": 32489,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30071,
+      "target_id": 30327,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30075,
+      "target_id": 30382,
+      "attribution": "FP"
+    },
+    {
+      "source_id": 30076,
+      "target_id": 30339,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30080,
+      "target_id": 32490,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30082,
+      "target_id": 30366,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30093,
+      "target_id": 32491,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30105,
+      "target_id": 32492,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30111,
+      "target_id": 30398,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30114,
+      "target_id": 32493,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30123,
+      "target_id": 32494,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30127,
+      "target_id": 30426,
+      "attribution": "FP"
+    },
+    {
+      "source_id": 30133,
+      "target_id": 30433,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30156,
+      "target_id": 30442,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30162,
+      "target_id": 30439,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30164,
+      "target_id": 30431,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30166,
+      "target_id": 32497,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30172,
+      "target_id": 32498,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30174,
+      "target_id": 30445,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30175,
+      "target_id": 32500,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30181,
+      "target_id": 30458,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30182,
+      "target_id": 32502,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30185,
+      "target_id": 30455,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30187,
+      "target_id": 30472,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30189,
+      "target_id": 30461,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30190,
+      "target_id": 32503,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30195,
+      "target_id": 32504,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30227,
+      "target_id": 30495,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30230,
+      "target_id": 30481,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30263,
+      "target_id": 30576,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30270,
+      "target_id": 30524,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30278,
+      "target_id": 30486,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30285,
+      "target_id": 30607,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30289,
+      "target_id": 30578,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30293,
+      "target_id": 30555,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30294,
+      "target_id": 30620,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30304,
+      "target_id": 30518,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30305,
+      "target_id": 30554,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30312,
+      "target_id": 30571,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30315,
+      "target_id": 32506,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30317,
+      "target_id": 30580,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30318,
+      "target_id": 30612,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30320,
+      "target_id": 30538,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30329,
+      "target_id": 30583,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30333,
+      "target_id": 30619,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30341,
+      "target_id": 30661,
+      "attribution": "FP"
+    },
+    {
+      "source_id": 30343,
+      "target_id": 30621,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30344,
+      "target_id": 30664,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30346,
+      "target_id": 30587,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30349,
+      "target_id": 30618,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30350,
+      "target_id": 30641,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30351,
+      "target_id": 30652,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30352,
+      "target_id": 30604,
+      "attribution": "FP"
+    },
+    {
+      "source_id": 30359,
+      "target_id": 30639,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30360,
+      "target_id": 30610,
+      "attribution": "FP"
+    },
+    {
+      "source_id": 30361,
+      "target_id": 30671,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30363,
+      "target_id": 30633,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30377,
+      "target_id": 30647,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30379,
+      "target_id": 30689,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30392,
+      "target_id": 30690,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30406,
+      "target_id": 30722,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30419,
+      "target_id": 30678,
+      "attribution": "FP"
+    },
+    {
+      "source_id": 30432,
+      "target_id": 30707,
+      "attribution": "FP"
+    },
+    {
+      "source_id": 30434,
+      "target_id": 30708,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30438,
+      "target_id": 30729,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30440,
+      "target_id": 30744,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30443,
+      "target_id": 30749,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30447,
+      "target_id": 30731,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30459,
+      "target_id": 30754,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30472,
+      "target_id": 30780,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30578,
+      "target_id": 32507,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30652,
+      "target_id": 30969,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30700,
+      "target_id": 31016,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 30969,
+      "target_id": 31276,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 31016,
+      "target_id": 31329,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 31276,
+      "target_id": 31612,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 31329,
+      "target_id": 31657,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32357,
+      "target_id": 3121,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32359,
+      "target_id": 3459,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32360,
+      "target_id": 3460,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32361,
+      "target_id": 3604,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32362,
+      "target_id": 3583,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32363,
+      "target_id": 3609,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32364,
+      "target_id": 3827,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32365,
+      "target_id": 4081,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32367,
+      "target_id": 4510,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32368,
+      "target_id": 4593,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32370,
+      "target_id": 5392,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32371,
+      "target_id": 5531,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32372,
+      "target_id": 5651,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32373,
+      "target_id": 6045,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32374,
+      "target_id": 6146,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32375,
+      "target_id": 6293,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32376,
+      "target_id": 6505,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32377,
+      "target_id": 7227,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32378,
+      "target_id": 7538,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32379,
+      "target_id": 8688,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32380,
+      "target_id": 9020,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32381,
+      "target_id": 9210,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32382,
+      "target_id": 9436,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32383,
+      "target_id": 9469,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32384,
+      "target_id": 10289,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32385,
+      "target_id": 10598,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32386,
+      "target_id": 10616,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32387,
+      "target_id": 10926,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32388,
+      "target_id": 10956,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32389,
+      "target_id": 11185,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32390,
+      "target_id": 11293,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32391,
+      "target_id": 11532,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32393,
+      "target_id": 11995,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32394,
+      "target_id": 12622,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32395,
+      "target_id": 13070,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32396,
+      "target_id": 13233,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32397,
+      "target_id": 13598,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32400,
+      "target_id": 13647,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32401,
+      "target_id": 13605,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32402,
+      "target_id": 13602,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32403,
+      "target_id": 13609,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32404,
+      "target_id": 13611,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32405,
+      "target_id": 13614,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32406,
+      "target_id": 13625,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32408,
+      "target_id": 13607,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32409,
+      "target_id": 13679,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32410,
+      "target_id": 13698,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32411,
+      "target_id": 13714,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32412,
+      "target_id": 13711,
+      "attribution": "FP"
+    },
+    {
+      "source_id": 32413,
+      "target_id": 13734,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32415,
+      "target_id": 13783,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32416,
+      "target_id": 13788,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32417,
+      "target_id": 13796,
+      "attribution": "FP"
+    },
+    {
+      "source_id": 32418,
+      "target_id": 13815,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32419,
+      "target_id": 13790,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32420,
+      "target_id": 13834,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32421,
+      "target_id": 13853,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32422,
+      "target_id": 13840,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32423,
+      "target_id": 13860,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32425,
+      "target_id": 14367,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32426,
+      "target_id": 15170,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32428,
+      "target_id": 15656,
+      "attribution": "TP"
+    },
+    {
+      "source_id": 32429,
+      "target_id": 16516,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32430,
+      "target_id": 16595,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32431,
+      "target_id": 17034,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32432,
+      "target_id": 17341,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32433,
+      "target_id": 17680,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32434,
+      "target_id": 17756,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32435,
+      "target_id": 17995,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32436,
+      "target_id": 18166,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32437,
+      "target_id": 18400,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32439,
+      "target_id": 20032,
+      "attribution": "TP"
+    },
+    {
+      "source_id": 32440,
+      "target_id": 20129,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32441,
+      "target_id": 20533,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32442,
+      "target_id": 20876,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32443,
+      "target_id": 22167,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32444,
+      "target_id": 22176,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32445,
+      "target_id": 22399,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32446,
+      "target_id": 22598,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32447,
+      "target_id": 22627,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32448,
+      "target_id": 22844,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32449,
+      "target_id": 22783,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32451,
+      "target_id": 24060,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32452,
+      "target_id": 24177,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32453,
+      "target_id": 24325,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32454,
+      "target_id": 25138,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32455,
+      "target_id": 25407,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32456,
+      "target_id": 25570,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32457,
+      "target_id": 25963,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32458,
+      "target_id": 25954,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32459,
+      "target_id": 26765,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32460,
+      "target_id": 27657,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32461,
+      "target_id": 27655,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32462,
+      "target_id": 27688,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32463,
+      "target_id": 27891,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32464,
+      "target_id": 28577,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32465,
+      "target_id": 28599,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32466,
+      "target_id": 28625,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32467,
+      "target_id": 28701,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32468,
+      "target_id": 28834,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32469,
+      "target_id": 28924,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32470,
+      "target_id": 28969,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32471,
+      "target_id": 28968,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32472,
+      "target_id": 30288,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32473,
+      "target_id": 30478,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32474,
+      "target_id": 30480,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32475,
+      "target_id": 30493,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32476,
+      "target_id": 30497,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32477,
+      "target_id": 30499,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32478,
+      "target_id": 30507,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32479,
+      "target_id": 30508,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32480,
+      "target_id": 30511,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32481,
+      "target_id": 30513,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32482,
+      "target_id": 30517,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32483,
+      "target_id": 30536,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32484,
+      "target_id": 30491,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32486,
+      "target_id": 30573,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32487,
+      "target_id": 30624,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32488,
+      "target_id": 30646,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32489,
+      "target_id": 30640,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32490,
+      "target_id": 30634,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32491,
+      "target_id": 30692,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32492,
+      "target_id": 30644,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32493,
+      "target_id": 30698,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32494,
+      "target_id": 30700,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32497,
+      "target_id": 30752,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32498,
+      "target_id": 30733,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32500,
+      "target_id": 30755,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32502,
+      "target_id": 30750,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32503,
+      "target_id": 30767,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32504,
+      "target_id": 30775,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32506,
+      "target_id": 30945,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32507,
+      "target_id": 31192,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32508,
+      "target_id": 32509,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32509,
+      "target_id": 17825,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32510,
+      "target_id": 32511,
+      "attribution": "TP"
+    },
+    {
+      "source_id": 32511,
+      "target_id": 23241,
+      "attribution": "TP"
+    },
+    {
+      "source_id": 32512,
+      "target_id": 32513,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32513,
+      "target_id": 18699,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32514,
+      "target_id": 32515,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32515,
+      "target_id": 20851,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32516,
+      "target_id": 32517,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32517,
+      "target_id": 27265,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32518,
+      "target_id": 32519,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32519,
+      "target_id": 26580,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32520,
+      "target_id": 32521,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32521,
+      "target_id": 28722,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32522,
+      "target_id": 32523,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32523,
+      "target_id": 17261,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32524,
+      "target_id": 32525,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32525,
+      "target_id": 21932,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32526,
+      "target_id": 32527,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32527,
+      "target_id": 19883,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32528,
+      "target_id": 32529,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32529,
+      "target_id": 20780,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32530,
+      "target_id": 32531,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32531,
+      "target_id": 30836,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32532,
+      "target_id": 32533,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32533,
+      "target_id": 19181,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32534,
+      "target_id": 32535,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32535,
+      "target_id": 28602,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32536,
+      "target_id": 32537,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32537,
+      "target_id": 11604,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32538,
+      "target_id": 32539,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32539,
+      "target_id": 5235,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32540,
+      "target_id": 32541,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32541,
+      "target_id": 29352,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32542,
+      "target_id": 32543,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32543,
+      "target_id": 11375,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32544,
+      "target_id": 32545,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32545,
+      "target_id": 24563,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32546,
+      "target_id": 32547,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32547,
+      "target_id": 28177,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32548,
+      "target_id": 32549,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32549,
+      "target_id": 30545,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32550,
+      "target_id": 32551,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32551,
+      "target_id": 15460,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32552,
+      "target_id": 32553,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32553,
+      "target_id": 4282,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32554,
+      "target_id": 32555,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32555,
+      "target_id": 23045,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32556,
+      "target_id": 32557,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32557,
+      "target_id": 19850,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32558,
+      "target_id": 32559,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32559,
+      "target_id": 14235,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32560,
+      "target_id": 32561,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32561,
+      "target_id": 11955,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32562,
+      "target_id": 32563,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32563,
+      "target_id": 18287,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32564,
+      "target_id": 32565,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32565,
+      "target_id": 16130,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32566,
+      "target_id": 32567,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32567,
+      "target_id": 10102,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32568,
+      "target_id": 32569,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32569,
+      "target_id": 13825,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32570,
+      "target_id": 32571,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32571,
+      "target_id": 3278,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32572,
+      "target_id": 32573,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32573,
+      "target_id": 14035,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32574,
+      "target_id": 32575,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32575,
+      "target_id": 13443,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32576,
+      "target_id": 32577,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32577,
+      "target_id": 22671,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32578,
+      "target_id": 32579,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32579,
+      "target_id": 23835,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32580,
+      "target_id": 32581,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32581,
+      "target_id": 15847,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32582,
+      "target_id": 32583,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32583,
+      "target_id": 6650,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32584,
+      "target_id": 32585,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 32585,
+      "target_id": 18252,
+      "attribution": "UNKNOWN"
+    }
+  ],
+  "changed_edges": 595,
+  "reuse_of": null,
+  "execution": "LOCAL_CPU_OFFICIAL_SCORING",
+  "elapsed_seconds": 1.0811648330018215,
+  "fingerprint": {
+    "script_sha256": "fe906765064cc0a24b3a08ad3a9b182040d509a7c637eeb72e999f6738e2af8a",
+    "pred_bytes_sha256": "359a487a20a0acadf651b9acc4c7d49ff9b6de32a8af900227138372a2d40334",
+    "ordered_graph_sha256": "9278325446118aa7edb6f2da512d2c9bb9d8b3edc676958381f564f033a2f9ae",
+    "gt_plain_sha256": "2dce94f7f71d489e6e6626b945161c919b0e248d47aadb6717d1776c5c190972",
+    "gt_byte_hashes": [
+      "3f47061e692d42996fd0fd61e7e166ef836283269a007cd05118d084b82c4d9e",
+      "72fded34d638fb05680e93c23f6fd44edfaeed61ae4cd3f107748f014a6e0403",
+      "7f741e6377bb75d25e79a3c20dad79ce0ca8300b4dc54283f5be8d664b6331f8",
+      "b6f7654934211ca89c5c8fb4954c3a6e108cff200e64c0d8a078ebb61b8b46e3",
+      "d341615c92e63b9ac59af53328ca4220cb486205e466de8e9826a587bf6d3b22",
+      "de9bc906198a80dfbf85d487fb4f58589c901c504aa810d53b44b3ed02232150",
+      "c7a8dd55b8a36ccc36387c425c31a0598fa8a4d3eed29b72e7546c164713c225",
+      "de9bc906198a80dfbf85d487fb4f58589c901c504aa810d53b44b3ed02232150",
+      "33571c88c192eb6c0c4899f17de3d790cba1bf1a14a5776ef091a91e4e4d574f",
+      "de9bc906198a80dfbf85d487fb4f58589c901c504aa810d53b44b3ed02232150",
+      "f6ba426a0d595b9348416df1c9a180e105149bc2f0e542bab7a2aca9a885dca4",
+      "de9bc906198a80dfbf85d487fb4f58589c901c504aa810d53b44b3ed02232150",
+      "99585082bb5ac30305acb0d5e74eddbc0d2c273ba05bddded83d390575a2ac3b"
+    ],
+    "scorer": {
+      "metrics.py": "cfdd596e3f8909cca14db0682889738b19ff75c3808b3773175aba9367ca7444",
+      "division_metrics.py": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9"
+    },
+    "versions": {
+      "tracksdata": "0.1.0rc6.dev3+g980c2d30a",
+      "polars": "1.42.0",
+      "numpy": "2.4.2",
+      "scipy": "1.17.1",
+      "geff": "1.3.1.1.3",
+      "zarr": "3.1.6",
+      "rustworkx": "0.18.1"
+    },
+    "n_total": 31117.0,
+    "scale": [
+      1.625,
+      0.40625,
+      0.40625
+    ],
+    "radius": 7.0
+  },
+  "status": "SCORED_LOG_VERIFIED"
+}

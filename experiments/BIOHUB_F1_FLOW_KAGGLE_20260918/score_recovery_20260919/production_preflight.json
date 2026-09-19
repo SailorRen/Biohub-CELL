@@ -1,0 +1,32 @@
+{
+  "observed_at_utc": "2026-09-19T14:09:25.671110+00:00",
+  "writes": 0,
+  "principal": "sailorren",
+  "active_events": 0,
+  "active_events_source": "authenticated Kaggle UI No Active Events",
+  "competition": {
+    "max_daily_submissions": "5",
+    "submissions_disabled": "False",
+    "user_has_entered": "True",
+    "is_kernels_submissions_only": "True",
+    "deadline": "2026-09-29 23:59:00"
+  },
+  "competition_daily_max": 5,
+  "submission_list_complete": true,
+  "today_submissions": 0,
+  "g1": {
+    "submission_id": 56270217,
+    "status": "SubmissionStatus.COMPLETE",
+    "public_score": "0.948"
+  },
+  "gpu_remaining_seconds": 105768.101,
+  "paid_compute_enabled": false,
+  "inventory_count": 88,
+  "production_absent_complete_list": true,
+  "parent": {
+    "kernel_id": 134301327,
+    "version": 1,
+    "code_cells_equal": true,
+    "source_sha256": "53f50c62047b0c8e1e80ca2969acbdaac37b9ad443e8efa4c7275a38145f7ae5"
+  }
+}

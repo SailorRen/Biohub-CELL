@@ -13,7 +13,7 @@ main=git('ls-remote','origin','refs/heads/main').decode().split()[0]
 assert head==remote==a.commit
 status=git('status','--porcelain').decode();assert not status
 paths=git('diff','--name-only','-z',base,a.commit).decode().strip('\0').split('\0')
-assert paths and all(x.startswith('experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/') or x == 'reports/20260919_BIOHUB_F1_RECOVER_AND_SCORE_RESULTS.md' for x in paths)
+assert paths and all(x.startswith('experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/') or x in ['reports/20260919_BIOHUB_F1_RECOVER_AND_SCORE_RESULTS.md','tasks/CODEX_20260919_BIOHUB_F1_CACHE_RESCORE_AND_SUBMIT.md','reports/20260919_BIOHUB_F1_CACHE_RESCORE_AND_SUBMIT_RESULTS.md'] for x in paths)
 (R/'downloads/BIOHUB_F1_FLOW_KAGGLE_20260918').mkdir(parents=True,exist_ok=True)
 archive=R/'downloads/BIOHUB_F1_FLOW_KAGGLE_20260918'/('github-'+a.commit+'.zip');url='https://codeload.github.com/SailorRen/Biohub-CELL/zip/'+a.commit
 subprocess.run(['curl','--http1.1','--fail','--silent','--show-error','--connect-timeout','20','--max-time','60','-o',str(archive),url],check=True)

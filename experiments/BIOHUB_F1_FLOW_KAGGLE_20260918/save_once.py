@@ -22,20 +22,36 @@ def main():
  with Path('/private/tmp/biohub-f1-20260918-write.lock').open('a') as lock:
   fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
   ledger=json.loads((P/'ledger.json').read_text());authorize(ledger,phase,reason)
-  contract=json.loads((P/'contract.json').read_text());amend=json.loads((R/'contract_amendment.json').read_text())
+  contract=json.loads((P/'contract.json').read_text())
+  if phase=='production':
+   current=P/'score_recovery_20260919'
+   sys.path.insert(0,str(current))
+   from production_gate import check
+   check(current)
+   amend=json.loads((current/'contract_amendment.json').read_text())
+   checkpoint=json.loads((current/'production_checkpoint_readback.json').read_text())
+   assert checkpoint['status']=='REMOTE_BYTES_VERIFIED' and all(x['match'] for x in checkpoint['files'])
+   # Every recovery/orchestration input must match the bytes read from GitHub.
+   required=[current/'receipt.json',current/'results.json',current/'restore_scores.py',current/'production_gate.py',current/'contract_amendment.json',Path(__file__).resolve()]
+   for path in required:
+    row=next(x for x in checkpoint['files'] if x['path']==str(path.relative_to(P.parents[1])))
+    assert hashlib.sha256(path.read_bytes()).hexdigest()==row['remote_sha256']
+   checkpoint['checkpoint_commit']=checkpoint['commit']
+   pre=json.loads((current/'production_preflight.json').read_text())
+   assert pre['production_absent_complete_list'] and pre['active_events']==0
+   assert pre['submission_list_complete'] and pre['today_submissions']<pre['competition_daily_max']
+  else:
+   amend=json.loads((R/'contract_amendment.json').read_text())
+   checkpoint=json.loads((R/'checkpoint_readback.json').read_text());assert all(x['match'] for x in checkpoint['files'])
+   pre=json.loads((R/'preflight_api.json').read_text());rec=json.loads((R/'reconciliation.json').read_text())
+   assert rec['controlled_recovery_eligible'] and rec['active_events']==0
   assert hashlib.sha256((P/'contract.json').read_bytes()).hexdigest()==amend['original_contract_sha256']
-  checkpoint=json.loads((R/'checkpoint_readback.json').read_text());assert all(x['match'] for x in checkpoint['files'])
-  pre=json.loads((R/'preflight_api.json').read_text());rec=json.loads((R/'reconciliation.json').read_text())
-  assert rec['controlled_recovery_eligible'] and rec['active_events']==0
   assert api.get_config_value(api.CONFIG_NAME_USER)==pre['principal']=='sailorren'
   assert pre['competition']['user_has_entered']=='True' and pre['competition']['submissions_disabled']=='False'
-  assert (datetime.now(timezone.utc)-datetime.fromisoformat(pre['observed_at_utc'])).total_seconds()<7200
+  assert (datetime.now(timezone.utc)-datetime.fromisoformat(pre['observed_at_utc'])).total_seconds()<1800
   g=api.quota_view().gpu_quota
   assert (g.total_time_allowed-g.time_used-g.time_reserved).total_seconds()>7200
   assert not g.is_pay_to_scale_enabled,'PAID_COMPUTE_NOT_ALLOWED'
-  if phase=='production':
-   result=json.loads((P/'diagnostic/results.json').read_text());assert result['production_allowed'] and result['repeat_and_off_equal'] and result['graph_changed']
-   assert json.loads((P/'diagnostic/receipt.json').read_text())['status']=='COMPLETE_SOURCE_VERIFIED'
   q=ApiGetKernelRequest();q.user_name='sailorren';q.kernel_slug='biohub-division-train-20260914'
   with api.build_kaggle_client() as c:parent=c.kernels.kernels_api_client.get_kernel(q)
   assert parent.metadata.id==134301327 and parent.metadata.current_version_number==1

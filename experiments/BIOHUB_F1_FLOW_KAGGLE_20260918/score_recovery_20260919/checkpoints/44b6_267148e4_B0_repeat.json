@@ -1,0 +1,72 @@
+{
+  "stem": "44b6_267148e4",
+  "arm": "B0_repeat",
+  "metrics": {
+    "edge_tp": 253,
+    "edge_fp": 29,
+    "edge_fn": 24,
+    "division_tp": 0,
+    "division_fp": 0,
+    "division_fn": 1,
+    "num_pred_nodes": 22263,
+    "node_recall": 0.9821428571428571,
+    "total_node_ratio": 0.16377417668583377,
+    "edge_jaccard": 0.826797385620915,
+    "adj_edge_jaccard": 0.8132565795093085,
+    "score": 0.8132565795093085,
+    "n_total": 19130.0,
+    "weight": 306
+  },
+  "log_score": 0.8132565795093085,
+  "log_delta": 0.0,
+  "graph_legal": true,
+  "repeat_and_off_equal": true,
+  "attribution_bijection_verified": true,
+  "events": [],
+  "changed_edges": 0,
+  "reuse_of": "44b6_267148e4_B0",
+  "execution": "GRAPH_EQUIVALENCE_REUSE",
+  "elapsed_seconds": 1.049999991664663e-05,
+  "fingerprint": {
+    "script_sha256": "fe906765064cc0a24b3a08ad3a9b182040d509a7c637eeb72e999f6738e2af8a",
+    "pred_bytes_sha256": "ca430340101cfca9e1b0e2eaf5ae610ec202e9fe98a2a2d1a529d7417c6cfac9",
+    "ordered_graph_sha256": "37293c203b9fdc70502cf9e69bf653916070527b7566313b1073c9bce913ef5a",
+    "gt_plain_sha256": "e49345f7586d669ccfae3d935039aa833362c058a4103ecd9be24dd17774d6f4",
+    "gt_byte_hashes": [
+      "1878e9486e6b1e1bfb39663ba0c4ebc8c729b7a1de879e2f469d0e2f43b8121a",
+      "6e883a6af14a820843c2e96c494ae2fb05b2e17457f61afda81f1d7e5d9addee",
+      "82d5734d8760cc4189a7150c371c8f225756353b39cc9cf42a8a79ffb9c80095",
+      "b04efbce059d90e1aafde741725fb33e0b0eb70fc737ce6afc5ff321d4802425",
+      "bde49a3ab12675ddcfc1da1c34d3ef870ebba924abd788ff97b043108e7e83fe",
+      "c0fee210809c474e8a175b056b072779df63c8786ee9ee42d923283d99a5c90a",
+      "bbb4b7221f42680dcd4a437013f295c9ca549cc30c2f1c333b4e2e403e8d88ba",
+      "c0fee210809c474e8a175b056b072779df63c8786ee9ee42d923283d99a5c90a",
+      "5cb24892763fed29dc498941aee03dd37d5e2dbac0e2035aa44074926e8d9542",
+      "c0fee210809c474e8a175b056b072779df63c8786ee9ee42d923283d99a5c90a",
+      "522eb2badb577df7225ab44e278742572b33a7cd33617b274d0f7a012e7d331e",
+      "c0fee210809c474e8a175b056b072779df63c8786ee9ee42d923283d99a5c90a",
+      "fd6634ca75f648589f493a12f916fe52fb9e3db94c81dc68c8b25e975e9b8b74"
+    ],
+    "scorer": {
+      "metrics.py": "cfdd596e3f8909cca14db0682889738b19ff75c3808b3773175aba9367ca7444",
+      "division_metrics.py": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9"
+    },
+    "versions": {
+      "tracksdata": "0.1.0rc6.dev3+g980c2d30a",
+      "polars": "1.42.0",
+      "numpy": "2.4.2",
+      "scipy": "1.17.1",
+      "geff": "1.3.1.1.3",
+      "zarr": "3.1.6",
+      "rustworkx": "0.18.1"
+    },
+    "n_total": 19130.0,
+    "scale": [
+      1.625,
+      0.40625,
+      0.40625
+    ],
+    "radius": 7.0
+  },
+  "status": "SCORED_LOG_VERIFIED"
+}

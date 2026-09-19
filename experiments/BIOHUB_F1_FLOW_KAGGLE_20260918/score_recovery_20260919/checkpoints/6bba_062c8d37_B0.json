@@ -1,0 +1,203 @@
+{
+  "stem": "6bba_062c8d37",
+  "arm": "B0",
+  "metrics": {
+    "edge_tp": 888,
+    "edge_fp": 6,
+    "edge_fn": 10,
+    "division_tp": 1,
+    "division_fp": 0,
+    "division_fn": 0,
+    "num_pred_nodes": 5853,
+    "node_recall": 0.9935483870967742,
+    "total_node_ratio": -0.02935323383084577,
+    "edge_jaccard": 0.9823008849557522,
+    "adj_edge_jaccard": 0.9851842557125876,
+    "score": 1.0851842557125877,
+    "n_total": 6030.0,
+    "weight": 904
+  },
+  "log_score": 1.0851842557125877,
+  "log_delta": 0.0,
+  "graph_legal": true,
+  "repeat_and_off_equal": true,
+  "attribution_bijection_verified": true,
+  "events": [
+    {
+      "source_id": 51,
+      "target_id": 139,
+      "attribution": "TP"
+    },
+    {
+      "source_id": 139,
+      "target_id": 225,
+      "attribution": "TP"
+    },
+    {
+      "source_id": 219,
+      "target_id": 301,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 225,
+      "target_id": 308,
+      "attribution": "TP"
+    },
+    {
+      "source_id": 506,
+      "target_id": 584,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 584,
+      "target_id": 662,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 633,
+      "target_id": 714,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 649,
+      "target_id": 722,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 662,
+      "target_id": 744,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 665,
+      "target_id": 735,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 679,
+      "target_id": 752,
+      "attribution": "FP"
+    },
+    {
+      "source_id": 689,
+      "target_id": 765,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 1832,
+      "target_id": 1898,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 1877,
+      "target_id": 1938,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 1938,
+      "target_id": 2000,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 2000,
+      "target_id": 2062,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 2194,
+      "target_id": 2260,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 2197,
+      "target_id": 2256,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 2205,
+      "target_id": 2272,
+      "attribution": "TP"
+    },
+    {
+      "source_id": 2212,
+      "target_id": 2278,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 2235,
+      "target_id": 2301,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 2275,
+      "target_id": 2335,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 2311,
+      "target_id": 2374,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 4076,
+      "target_id": 4136,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 4086,
+      "target_id": 4147,
+      "attribution": "UNKNOWN"
+    },
+    {
+      "source_id": 6173,
+      "target_id": 6237,
+      "attribution": "UNKNOWN"
+    }
+  ],
+  "changed_edges": 26,
+  "reuse_of": null,
+  "execution": "LOCAL_CPU_OFFICIAL_SCORING",
+  "elapsed_seconds": 0.1475834590019076,
+  "fingerprint": {
+    "script_sha256": "fe906765064cc0a24b3a08ad3a9b182040d509a7c637eeb72e999f6738e2af8a",
+    "pred_bytes_sha256": "afaa092044fcb9f69cd959f28e10efb07f62094a012b8b4724b15c0d98a4a3e1",
+    "ordered_graph_sha256": "9f48c16f3808b3ff6366c67a262d45c74ae7c52117e75d8e39188731d3378984",
+    "gt_plain_sha256": "00789e40cd27ab4c522884eac7fbb4ffc55e641c9647a402316c63042123056d",
+    "gt_byte_hashes": [
+      "9732ce8dec6a577be382241b81241401ac656bbf3f7a33dfb00a82548b6fbc56",
+      "e7e46bee7f7c320aefb64c0d8e6025bd79c2520e49491548cb7ae5e18374ff6b",
+      "0e7f5565475101f5c237d1c4d1fd7bf56a5354dbef1e4aff722ce249462b3190",
+      "7c9e5ca6c6c3a0627517054b5f41d7b80ec5078074d069d90e4e3b228ef60159",
+      "3df7cce196eb324e73398a906169ed72ec6f1bb970667f15f7de7c23ffdd0f92",
+      "7ca3608a5ac670e099a77e53be6ac18f1c35fb0908c1dd70555826b1333bf279",
+      "3a2ccce4fbe74cd3af0be41e14ee5fab6ed20074af2356fc3a9c3370271e29ce",
+      "7ca3608a5ac670e099a77e53be6ac18f1c35fb0908c1dd70555826b1333bf279",
+      "40e13cb8fde8be2b3615dab227f93827e1af489e5d564c918bc04976e76fd31a",
+      "7ca3608a5ac670e099a77e53be6ac18f1c35fb0908c1dd70555826b1333bf279",
+      "262ed1167156cad1e3f5246f2f5cfe268c4130a34aa49492f9caa161c6cf8d2d",
+      "7ca3608a5ac670e099a77e53be6ac18f1c35fb0908c1dd70555826b1333bf279",
+      "c3cf521d0ca0fd8fb0f1a196c071d672e949b4db7ecf023b8a18b7684ce47ff3"
+    ],
+    "scorer": {
+      "metrics.py": "cfdd596e3f8909cca14db0682889738b19ff75c3808b3773175aba9367ca7444",
+      "division_metrics.py": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9"
+    },
+    "versions": {
+      "tracksdata": "0.1.0rc6.dev3+g980c2d30a",
+      "polars": "1.42.0",
+      "numpy": "2.4.2",
+      "scipy": "1.17.1",
+      "geff": "1.3.1.1.3",
+      "zarr": "3.1.6",
+      "rustworkx": "0.18.1"
+    },
+    "n_total": 6030.0,
+    "scale": [
+      1.625,
+      0.40625,
+      0.40625
+    ],
+    "radius": 7.0
+  },
+  "status": "SCORED_LOG_VERIFIED"
+}

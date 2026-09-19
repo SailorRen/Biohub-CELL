@@ -1,0 +1,15 @@
+{
+  "available_bytes": 3655565312,
+  "budget_bytes": 1827782656,
+  "max_cpu_threads": 2,
+  "versions": {
+    "tracksdata": "0.1.0rc6.dev3+g980c2d30a",
+    "polars": "1.42.0",
+    "numpy": "2.4.2",
+    "scipy": "1.17.1",
+    "geff": "1.3.1.1.3",
+    "zarr": "3.1.6",
+    "rustworkx": "0.18.1"
+  },
+  "started_at_utc": "2026-09-19T14:09:14.788629+00:00"
+}

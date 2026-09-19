@@ -1,0 +1,46 @@
+{
+  "status": "PILOT_BOUND_CACHE_BYTES_VERIFIED",
+  "identity_before": {
+    "kernel_id": 134976549,
+    "version": 1,
+    "source_sha256": "e6e63a2c5f49d8372011037f8beb6812bb58cf06a293c9f3487a7cce1026ef37"
+  },
+  "identity_after": {
+    "kernel_id": 134976549,
+    "version": 1,
+    "source_sha256": "e6e63a2c5f49d8372011037f8beb6812bb58cf06a293c9f3487a7cce1026ef37"
+  },
+  "script_version_id": 351058693,
+  "predictions": [
+    {
+      "name": "f1_cache/44b6_12dfb391_B0_graph.json",
+      "bytes": 12215365,
+      "sha256": "966e686ddd6f9e59b2b1012ce1dcd08f76e94ce8a5a2800f4364d11ee42e8bd6",
+      "downloaded_at_utc": "2026-09-19T14:00:24.587267+00:00",
+      "declared_bytes": 12215365
+    },
+    {
+      "name": "f1_cache/44b6_12dfb391_B0_repeat_graph.json",
+      "bytes": 12215365,
+      "sha256": "966e686ddd6f9e59b2b1012ce1dcd08f76e94ce8a5a2800f4364d11ee42e8bd6",
+      "downloaded_at_utc": "2026-09-19T14:00:38.702593+00:00",
+      "declared_bytes": 12215365
+    },
+    {
+      "name": "f1_cache/44b6_12dfb391_F1_graph.json",
+      "bytes": 12074393,
+      "sha256": "e748b29c13f6c7bfe0778470ee4987a2f4f44ec127c0385b46eb550cab78e1cb",
+      "downloaded_at_utc": "2026-09-19T14:00:54.860332+00:00",
+      "declared_bytes": 12074393
+    },
+    {
+      "name": "f1_cache/44b6_12dfb391_F1_off_graph.json",
+      "bytes": 12215365,
+      "sha256": "966e686ddd6f9e59b2b1012ce1dcd08f76e94ce8a5a2800f4364d11ee42e8bd6",
+      "downloaded_at_utc": "2026-09-19T14:02:47.459721+00:00",
+      "declared_bytes": 12215365
+    }
+  ],
+  "observed_at_utc": "2026-09-19T14:04:33.749152+00:00",
+  "writes": 0
+}

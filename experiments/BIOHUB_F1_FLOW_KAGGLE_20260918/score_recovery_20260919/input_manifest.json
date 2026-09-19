@@ -1,0 +1,982 @@
+{
+  "source": {
+    "kernel_id": 134976549,
+    "version": 1,
+    "source_sha256": "e6e63a2c5f49d8372011037f8beb6812bb58cf06a293c9f3487a7cce1026ef37",
+    "script_version_id": 351058693
+  },
+  "predictions": [
+    {
+      "name": "f1_cache/44b6_12dfb391_B0_graph.json",
+      "bytes": 12215365,
+      "sha256": "966e686ddd6f9e59b2b1012ce1dcd08f76e94ce8a5a2800f4364d11ee42e8bd6",
+      "downloaded_at_utc": "2026-09-19T14:00:24.587267+00:00",
+      "declared_bytes": 12215365
+    },
+    {
+      "name": "f1_cache/44b6_12dfb391_B0_repeat_graph.json",
+      "bytes": 12215365,
+      "sha256": "966e686ddd6f9e59b2b1012ce1dcd08f76e94ce8a5a2800f4364d11ee42e8bd6",
+      "downloaded_at_utc": "2026-09-19T14:00:38.702593+00:00",
+      "declared_bytes": 12215365
+    },
+    {
+      "name": "f1_cache/44b6_12dfb391_F1_graph.json",
+      "bytes": 12074393,
+      "sha256": "e748b29c13f6c7bfe0778470ee4987a2f4f44ec127c0385b46eb550cab78e1cb",
+      "downloaded_at_utc": "2026-09-19T14:00:54.860332+00:00",
+      "declared_bytes": 12074393
+    },
+    {
+      "name": "f1_cache/44b6_12dfb391_F1_off_graph.json",
+      "bytes": 12215365,
+      "sha256": "966e686ddd6f9e59b2b1012ce1dcd08f76e94ce8a5a2800f4364d11ee42e8bd6",
+      "downloaded_at_utc": "2026-09-19T14:02:47.459721+00:00",
+      "declared_bytes": 12215365
+    },
+    {
+      "name": "f1_cache/44b6_267148e4_B0_graph.json",
+      "bytes": 6147818,
+      "sha256": "ca430340101cfca9e1b0e2eaf5ae610ec202e9fe98a2a2d1a529d7417c6cfac9",
+      "downloaded_at_utc": "2026-09-19T14:02:57.284760+00:00",
+      "declared_bytes": 6147818
+    },
+    {
+      "name": "f1_cache/44b6_267148e4_B0_repeat_graph.json",
+      "bytes": 6147818,
+      "sha256": "ca430340101cfca9e1b0e2eaf5ae610ec202e9fe98a2a2d1a529d7417c6cfac9",
+      "downloaded_at_utc": "2026-09-19T14:03:07.207809+00:00",
+      "declared_bytes": 6147818
+    },
+    {
+      "name": "f1_cache/44b6_267148e4_F1_graph.json",
+      "bytes": 6085175,
+      "sha256": "020da2739669ef1665b45bce5936da3410473f5c5469842867f95f689a034251",
+      "downloaded_at_utc": "2026-09-19T14:03:13.752594+00:00",
+      "declared_bytes": 6085175
+    },
+    {
+      "name": "f1_cache/44b6_267148e4_F1_off_graph.json",
+      "bytes": 6147818,
+      "sha256": "ca430340101cfca9e1b0e2eaf5ae610ec202e9fe98a2a2d1a529d7417c6cfac9",
+      "downloaded_at_utc": "2026-09-19T14:04:07.031272+00:00",
+      "declared_bytes": 6147818
+    },
+    {
+      "name": "f1_cache/44b6_2a2eff9f_B0_graph.json",
+      "bytes": 10978744,
+      "sha256": "be51837e3532c4e7cf5a83c762e0c834ecb4e19b91091e06ded59fff15d24717",
+      "downloaded_at_utc": "2026-09-19T14:04:34.128696+00:00",
+      "declared_bytes": 10978744
+    },
+    {
+      "name": "f1_cache/44b6_2a2eff9f_B0_repeat_graph.json",
+      "bytes": 10978744,
+      "sha256": "be51837e3532c4e7cf5a83c762e0c834ecb4e19b91091e06ded59fff15d24717",
+      "downloaded_at_utc": "2026-09-19T14:04:49.100417+00:00",
+      "declared_bytes": 10978744
+    },
+    {
+      "name": "f1_cache/44b6_2a2eff9f_F1_graph.json",
+      "bytes": 10843439,
+      "sha256": "ca92a673b00df40fce7ddf759e3739f1f2fb1e1dc2b4a70925fdcd41c073ea00",
+      "downloaded_at_utc": "2026-09-19T14:05:05.891014+00:00",
+      "declared_bytes": 10843439
+    },
+    {
+      "name": "f1_cache/44b6_2a2eff9f_F1_off_graph.json",
+      "bytes": 10978744,
+      "sha256": "be51837e3532c4e7cf5a83c762e0c834ecb4e19b91091e06ded59fff15d24717",
+      "downloaded_at_utc": "2026-09-19T14:05:19.607143+00:00",
+      "declared_bytes": 10978744
+    },
+    {
+      "name": "f1_cache/44b6_341df25f_B0_graph.json",
+      "bytes": 2266190,
+      "sha256": "bcdbf0e9cd312ea770d69d300bde33560cc005cdba8260ccdd9d62739e3a8e1b",
+      "downloaded_at_utc": "2026-09-19T14:05:25.633105+00:00",
+      "declared_bytes": 2266190
+    },
+    {
+      "name": "f1_cache/44b6_341df25f_B0_repeat_graph.json",
+      "bytes": 2266190,
+      "sha256": "bcdbf0e9cd312ea770d69d300bde33560cc005cdba8260ccdd9d62739e3a8e1b",
+      "downloaded_at_utc": "2026-09-19T14:05:30.170566+00:00",
+      "declared_bytes": 2266190
+    },
+    {
+      "name": "f1_cache/44b6_341df25f_F1_graph.json",
+      "bytes": 2237014,
+      "sha256": "4ce70eb5a9065410d5022edc548345a71a7b8f22920024c578544da106f028ca",
+      "downloaded_at_utc": "2026-09-19T14:05:34.862857+00:00",
+      "declared_bytes": 2237014
+    },
+    {
+      "name": "f1_cache/44b6_341df25f_F1_off_graph.json",
+      "bytes": 2266190,
+      "sha256": "bcdbf0e9cd312ea770d69d300bde33560cc005cdba8260ccdd9d62739e3a8e1b",
+      "downloaded_at_utc": "2026-09-19T14:05:45.644466+00:00",
+      "declared_bytes": 2266190
+    },
+    {
+      "name": "f1_cache/6bba_062c8d37_B0_graph.json",
+      "bytes": 1577250,
+      "sha256": "afaa092044fcb9f69cd959f28e10efb07f62094a012b8b4724b15c0d98a4a3e1",
+      "downloaded_at_utc": "2026-09-19T14:05:52.353278+00:00",
+      "declared_bytes": 1577250
+    },
+    {
+      "name": "f1_cache/6bba_062c8d37_B0_repeat_graph.json",
+      "bytes": 1577250,
+      "sha256": "afaa092044fcb9f69cd959f28e10efb07f62094a012b8b4724b15c0d98a4a3e1",
+      "downloaded_at_utc": "2026-09-19T14:05:56.385781+00:00",
+      "declared_bytes": 1577250
+    },
+    {
+      "name": "f1_cache/6bba_062c8d37_F1_graph.json",
+      "bytes": 1554694,
+      "sha256": "f6bffcfb8f02606d8e876e8fdfd0e13e2e0405362a42fdfa1045f356f487e850",
+      "downloaded_at_utc": "2026-09-19T14:06:00.112851+00:00",
+      "declared_bytes": 1554694
+    },
+    {
+      "name": "f1_cache/6bba_062c8d37_F1_off_graph.json",
+      "bytes": 1577250,
+      "sha256": "afaa092044fcb9f69cd959f28e10efb07f62094a012b8b4724b15c0d98a4a3e1",
+      "downloaded_at_utc": "2026-09-19T14:06:05.425942+00:00",
+      "declared_bytes": 1577250
+    },
+    {
+      "name": "f1_cache/6bba_07e24132_B0_graph.json",
+      "bytes": 7846902,
+      "sha256": "43ee6f77f74ddadb41f58e38db88a8306800ea12c1565ee37ac1fb4dd83729e8",
+      "downloaded_at_utc": "2026-09-19T14:06:15.299033+00:00",
+      "declared_bytes": 7846902
+    },
+    {
+      "name": "f1_cache/6bba_07e24132_B0_repeat_graph.json",
+      "bytes": 7846902,
+      "sha256": "43ee6f77f74ddadb41f58e38db88a8306800ea12c1565ee37ac1fb4dd83729e8",
+      "downloaded_at_utc": "2026-09-19T14:06:28.985807+00:00",
+      "declared_bytes": 7846902
+    },
+    {
+      "name": "f1_cache/6bba_07e24132_F1_graph.json",
+      "bytes": 7762858,
+      "sha256": "93b240e4e9027eefbe2c78d61b1dd2839a11981625cb38c398e8c58a16d6233e",
+      "downloaded_at_utc": "2026-09-19T14:06:37.565562+00:00",
+      "declared_bytes": 7762858
+    },
+    {
+      "name": "f1_cache/6bba_07e24132_F1_off_graph.json",
+      "bytes": 7846902,
+      "sha256": "43ee6f77f74ddadb41f58e38db88a8306800ea12c1565ee37ac1fb4dd83729e8",
+      "downloaded_at_utc": "2026-09-19T14:07:10.086784+00:00",
+      "declared_bytes": 7846902
+    },
+    {
+      "name": "f1_cache/6bba_085bf656_B0_graph.json",
+      "bytes": 2286900,
+      "sha256": "6963116ec0cf0206d2d17426214256b412f3f562b4d8d1283d8f2ff28cc5d5ba",
+      "downloaded_at_utc": "2026-09-19T14:07:14.267184+00:00",
+      "declared_bytes": 2286900
+    },
+    {
+      "name": "f1_cache/6bba_085bf656_B0_repeat_graph.json",
+      "bytes": 2286900,
+      "sha256": "6963116ec0cf0206d2d17426214256b412f3f562b4d8d1283d8f2ff28cc5d5ba",
+      "downloaded_at_utc": "2026-09-19T14:07:31.476302+00:00",
+      "declared_bytes": 2286900
+    },
+    {
+      "name": "f1_cache/6bba_085bf656_F1_graph.json",
+      "bytes": 2249504,
+      "sha256": "cfb41b0b9c58fff8a0030801bf56bbad0d8b7a3d54ba938c7e8f0143f905bbd7",
+      "downloaded_at_utc": "2026-09-19T14:07:37.804025+00:00",
+      "declared_bytes": 2249504
+    },
+    {
+      "name": "f1_cache/6bba_085bf656_F1_off_graph.json",
+      "bytes": 2286900,
+      "sha256": "6963116ec0cf0206d2d17426214256b412f3f562b4d8d1283d8f2ff28cc5d5ba",
+      "downloaded_at_utc": "2026-09-19T14:07:52.744124+00:00",
+      "declared_bytes": 2286900
+    },
+    {
+      "name": "f1_cache/6bba_09961292_B0_graph.json",
+      "bytes": 8030490,
+      "sha256": "359a487a20a0acadf651b9acc4c7d49ff9b6de32a8af900227138372a2d40334",
+      "downloaded_at_utc": "2026-09-19T14:08:02.858512+00:00",
+      "declared_bytes": 8030490
+    },
+    {
+      "name": "f1_cache/6bba_09961292_B0_repeat_graph.json",
+      "bytes": 8030490,
+      "sha256": "359a487a20a0acadf651b9acc4c7d49ff9b6de32a8af900227138372a2d40334",
+      "downloaded_at_utc": "2026-09-19T14:08:15.140404+00:00",
+      "declared_bytes": 8030490
+    },
+    {
+      "name": "f1_cache/6bba_09961292_F1_graph.json",
+      "bytes": 7928629,
+      "sha256": "43e812393d4ce75f7886c02fd444443dc675a73a356736e7de17eff74a60d684",
+      "downloaded_at_utc": "2026-09-19T14:08:41.283497+00:00",
+      "declared_bytes": 7928629
+    },
+    {
+      "name": "f1_cache/6bba_09961292_F1_off_graph.json",
+      "bytes": 8030490,
+      "sha256": "359a487a20a0acadf651b9acc4c7d49ff9b6de32a8af900227138372a2d40334",
+      "downloaded_at_utc": "2026-09-19T14:08:50.242350+00:00",
+      "declared_bytes": 8030490
+    }
+  ],
+  "gt": [
+    {
+      "source": "train/44b6_12dfb391.geff/edges/ids/c/0/0",
+      "bytes": 2066,
+      "sha256": "366bb2b585c9dcf58d024f1ccc62bee5b9f99e5977c5819cb171dcebb8b998d7",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_12dfb391.geff/edges/ids/c/0/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_12dfb391.geff/edges/ids/zarr.json",
+      "bytes": 636,
+      "sha256": "837592b5b26648afca1e47aad10ab92b5f51333ba5cbf4eecaae7a65573a7f4e",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_12dfb391.geff/edges/ids/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_12dfb391.geff/nodes/ids/c/0",
+      "bytes": 1164,
+      "sha256": "15cefe06f026218e60e880c6613ce22b2b697935cb5c3a31b5c594b77fbde590",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_12dfb391.geff/nodes/ids/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_12dfb391.geff/nodes/ids/zarr.json",
+      "bytes": 618,
+      "sha256": "f379c2375d8f039498115cd88d96f21f7c82aaaa5e35ea62551604905731e375",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_12dfb391.geff/nodes/ids/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_12dfb391.geff/nodes/props/t/values/c/0",
+      "bytes": 208,
+      "sha256": "bc29d945f8af822e9e8b3aee30ddfc95f2879336aa842bf891877379ae83224d",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_12dfb391.geff/nodes/props/t/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_12dfb391.geff/nodes/props/t/values/zarr.json",
+      "bytes": 617,
+      "sha256": "6f65ccf5264f925e519765b59c3798dc26ee2e2362746f075ba417535ecd501f",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_12dfb391.geff/nodes/props/t/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_12dfb391.geff/nodes/props/x/values/c/0",
+      "bytes": 863,
+      "sha256": "2d5798016d06fa3d2c981702c37f11ccda7023591fc92ee41361a35a1f1a0a23",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_12dfb391.geff/nodes/props/x/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_12dfb391.geff/nodes/props/x/values/zarr.json",
+      "bytes": 617,
+      "sha256": "6f65ccf5264f925e519765b59c3798dc26ee2e2362746f075ba417535ecd501f",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_12dfb391.geff/nodes/props/x/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_12dfb391.geff/nodes/props/y/values/c/0",
+      "bytes": 913,
+      "sha256": "8a0562b6c8a4e11475726da36d0f73c0fa56223bfa6946174c03a8338c31e09f",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_12dfb391.geff/nodes/props/y/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_12dfb391.geff/nodes/props/y/values/zarr.json",
+      "bytes": 617,
+      "sha256": "6f65ccf5264f925e519765b59c3798dc26ee2e2362746f075ba417535ecd501f",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_12dfb391.geff/nodes/props/y/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_12dfb391.geff/nodes/props/z/values/c/0",
+      "bytes": 590,
+      "sha256": "04f2393066316d329b320afceb4fa3d6b25789897da2d6eada93bcecdb0526aa",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_12dfb391.geff/nodes/props/z/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_12dfb391.geff/nodes/props/z/values/zarr.json",
+      "bytes": 617,
+      "sha256": "6f65ccf5264f925e519765b59c3798dc26ee2e2362746f075ba417535ecd501f",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_12dfb391.geff/nodes/props/z/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_12dfb391.geff/zarr.json",
+      "bytes": 2100,
+      "sha256": "63b4512848af645325e9c45343980b00b796eadbc28a2783612ffb8735c12a0d",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_12dfb391.geff/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_267148e4.geff/edges/ids/c/0/0",
+      "bytes": 978,
+      "sha256": "1878e9486e6b1e1bfb39663ba0c4ebc8c729b7a1de879e2f469d0e2f43b8121a",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_267148e4.geff/edges/ids/c/0/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_267148e4.geff/edges/ids/zarr.json",
+      "bytes": 636,
+      "sha256": "6e883a6af14a820843c2e96c494ae2fb05b2e17457f61afda81f1d7e5d9addee",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_267148e4.geff/edges/ids/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_267148e4.geff/nodes/ids/c/0",
+      "bytes": 703,
+      "sha256": "82d5734d8760cc4189a7150c371c8f225756353b39cc9cf42a8a79ffb9c80095",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_267148e4.geff/nodes/ids/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_267148e4.geff/nodes/ids/zarr.json",
+      "bytes": 618,
+      "sha256": "b04efbce059d90e1aafde741725fb33e0b0eb70fc737ce6afc5ff321d4802425",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_267148e4.geff/nodes/ids/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_267148e4.geff/nodes/props/t/values/c/0",
+      "bytes": 150,
+      "sha256": "bde49a3ab12675ddcfc1da1c34d3ef870ebba924abd788ff97b043108e7e83fe",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_267148e4.geff/nodes/props/t/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_267148e4.geff/nodes/props/t/values/zarr.json",
+      "bytes": 617,
+      "sha256": "c0fee210809c474e8a175b056b072779df63c8786ee9ee42d923283d99a5c90a",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_267148e4.geff/nodes/props/t/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_267148e4.geff/nodes/props/x/values/c/0",
+      "bytes": 348,
+      "sha256": "bbb4b7221f42680dcd4a437013f295c9ca549cc30c2f1c333b4e2e403e8d88ba",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_267148e4.geff/nodes/props/x/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_267148e4.geff/nodes/props/x/values/zarr.json",
+      "bytes": 617,
+      "sha256": "c0fee210809c474e8a175b056b072779df63c8786ee9ee42d923283d99a5c90a",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_267148e4.geff/nodes/props/x/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_267148e4.geff/nodes/props/y/values/c/0",
+      "bytes": 329,
+      "sha256": "5cb24892763fed29dc498941aee03dd37d5e2dbac0e2035aa44074926e8d9542",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_267148e4.geff/nodes/props/y/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_267148e4.geff/nodes/props/y/values/zarr.json",
+      "bytes": 617,
+      "sha256": "c0fee210809c474e8a175b056b072779df63c8786ee9ee42d923283d99a5c90a",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_267148e4.geff/nodes/props/y/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_267148e4.geff/nodes/props/z/values/c/0",
+      "bytes": 261,
+      "sha256": "522eb2badb577df7225ab44e278742572b33a7cd33617b274d0f7a012e7d331e",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_267148e4.geff/nodes/props/z/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_267148e4.geff/nodes/props/z/values/zarr.json",
+      "bytes": 617,
+      "sha256": "c0fee210809c474e8a175b056b072779df63c8786ee9ee42d923283d99a5c90a",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_267148e4.geff/nodes/props/z/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_267148e4.geff/zarr.json",
+      "bytes": 2101,
+      "sha256": "fd6634ca75f648589f493a12f916fe52fb9e3db94c81dc68c8b25e975e9b8b74",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_267148e4.geff/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_2a2eff9f.geff/edges/ids/c/0/0",
+      "bytes": 813,
+      "sha256": "ad1b34cbe8c445178313dad2cb941370b4240c3a80aa2f74603712de875bc898",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_2a2eff9f.geff/edges/ids/c/0/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_2a2eff9f.geff/edges/ids/zarr.json",
+      "bytes": 636,
+      "sha256": "e3268e4633ead7ee4c71830faf7816453be1f9ac765be93e0ebe977001c0f1db",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_2a2eff9f.geff/edges/ids/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_2a2eff9f.geff/nodes/ids/c/0",
+      "bytes": 634,
+      "sha256": "52513ec6125fada8d8667b3fb437b650751e4ee70333fe2ce896db8ee3ea967a",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_2a2eff9f.geff/nodes/ids/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_2a2eff9f.geff/nodes/ids/zarr.json",
+      "bytes": 618,
+      "sha256": "003452ab0df83d3c58ba0c67a9104597ec05ae8e57181e62376c2c40ed33f869",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_2a2eff9f.geff/nodes/ids/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_2a2eff9f.geff/nodes/props/t/values/c/0",
+      "bytes": 172,
+      "sha256": "8560d4af0d1b4349b3b19df1e6cc289fee048ea9d40255e0cdd34c43f753f853",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_2a2eff9f.geff/nodes/props/t/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_2a2eff9f.geff/nodes/props/t/values/zarr.json",
+      "bytes": 617,
+      "sha256": "b3828585bf97e5a508a7349ac77f7a6300e70f9f8f05536002c6d2d7aa4334f6",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_2a2eff9f.geff/nodes/props/t/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_2a2eff9f.geff/nodes/props/x/values/c/0",
+      "bytes": 261,
+      "sha256": "f3acf5064227df2594bc1bd1010da66ffc660b706b4d713180e09f8f974aa03b",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_2a2eff9f.geff/nodes/props/x/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_2a2eff9f.geff/nodes/props/x/values/zarr.json",
+      "bytes": 617,
+      "sha256": "b3828585bf97e5a508a7349ac77f7a6300e70f9f8f05536002c6d2d7aa4334f6",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_2a2eff9f.geff/nodes/props/x/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_2a2eff9f.geff/nodes/props/y/values/c/0",
+      "bytes": 258,
+      "sha256": "f5094ab2623419081da0203969b226960120eb7d8ebfe9f6d24c97da100560ec",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_2a2eff9f.geff/nodes/props/y/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_2a2eff9f.geff/nodes/props/y/values/zarr.json",
+      "bytes": 617,
+      "sha256": "b3828585bf97e5a508a7349ac77f7a6300e70f9f8f05536002c6d2d7aa4334f6",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_2a2eff9f.geff/nodes/props/y/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_2a2eff9f.geff/nodes/props/z/values/c/0",
+      "bytes": 222,
+      "sha256": "c249f4edf43366b854cdd0718c1140d601eb81e414894e59c754624db1a335b6",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_2a2eff9f.geff/nodes/props/z/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_2a2eff9f.geff/nodes/props/z/values/zarr.json",
+      "bytes": 617,
+      "sha256": "b3828585bf97e5a508a7349ac77f7a6300e70f9f8f05536002c6d2d7aa4334f6",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_2a2eff9f.geff/nodes/props/z/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_2a2eff9f.geff/zarr.json",
+      "bytes": 2102,
+      "sha256": "d3b385653da547f1e1b47ed29e8ae03d10b1f724da3c0cb817e131f5d26ca7bd",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_2a2eff9f.geff/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_341df25f.geff/edges/ids/c/0/0",
+      "bytes": 812,
+      "sha256": "d3830774ad9a43da79de7bb0dd8f792ae842d3576113dd3fdd6c3e5226b250a2",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_341df25f.geff/edges/ids/c/0/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_341df25f.geff/edges/ids/zarr.json",
+      "bytes": 636,
+      "sha256": "831ddc43756c6279ea5aaee13204d9f58bdb6c9fbfc22e6ee9b305a2d767b10c",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_341df25f.geff/edges/ids/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_341df25f.geff/nodes/ids/c/0",
+      "bytes": 612,
+      "sha256": "f2f98e8015eae506f1fddc76b864b33ccfb54243976d4ff509a3db635f112127",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_341df25f.geff/nodes/ids/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_341df25f.geff/nodes/ids/zarr.json",
+      "bytes": 618,
+      "sha256": "70abeecef1b37c4a48555663a63daae63f8a13c516bd10f2c174b01ae6ef9f6e",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_341df25f.geff/nodes/ids/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_341df25f.geff/nodes/props/t/values/c/0",
+      "bytes": 146,
+      "sha256": "edc4b77f5797e6ea57459deca3ee36f2f25f22931ea9d0917779203a64bd695d",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_341df25f.geff/nodes/props/t/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_341df25f.geff/nodes/props/t/values/zarr.json",
+      "bytes": 617,
+      "sha256": "95312af788baae5f993962f20ff3426351693187e55ea6e6189f273f3b1a712e",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_341df25f.geff/nodes/props/t/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_341df25f.geff/nodes/props/x/values/c/0",
+      "bytes": 229,
+      "sha256": "aad2b8dbd91ca2691d11533072ec59b70d86073ae43f1a894980fb104b834de4",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_341df25f.geff/nodes/props/x/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_341df25f.geff/nodes/props/x/values/zarr.json",
+      "bytes": 617,
+      "sha256": "95312af788baae5f993962f20ff3426351693187e55ea6e6189f273f3b1a712e",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_341df25f.geff/nodes/props/x/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_341df25f.geff/nodes/props/y/values/c/0",
+      "bytes": 282,
+      "sha256": "236e9e4aa7dd144bc5b4c1e70d854737f03373f1f67c55e9905987fe1289fe0b",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_341df25f.geff/nodes/props/y/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_341df25f.geff/nodes/props/y/values/zarr.json",
+      "bytes": 617,
+      "sha256": "95312af788baae5f993962f20ff3426351693187e55ea6e6189f273f3b1a712e",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_341df25f.geff/nodes/props/y/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_341df25f.geff/nodes/props/z/values/c/0",
+      "bytes": 180,
+      "sha256": "69241c2b64e2f6c18b7e375cc154a756cc19b17e7873f136e40aa280c1921965",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_341df25f.geff/nodes/props/z/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_341df25f.geff/nodes/props/z/values/zarr.json",
+      "bytes": 617,
+      "sha256": "95312af788baae5f993962f20ff3426351693187e55ea6e6189f273f3b1a712e",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_341df25f.geff/nodes/props/z/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/44b6_341df25f.geff/zarr.json",
+      "bytes": 2100,
+      "sha256": "9884cf8aaf49c7681fe3983e80be02ad742d548960f233b03d04270230cac052",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/44b6_341df25f.geff/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_062c8d37.geff/edges/ids/c/0/0",
+      "bytes": 2560,
+      "sha256": "9732ce8dec6a577be382241b81241401ac656bbf3f7a33dfb00a82548b6fbc56",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_062c8d37.geff/edges/ids/c/0/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_062c8d37.geff/edges/ids/zarr.json",
+      "bytes": 636,
+      "sha256": "e7e46bee7f7c320aefb64c0d8e6025bd79c2520e49491548cb7ae5e18374ff6b",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_062c8d37.geff/edges/ids/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_062c8d37.geff/nodes/ids/c/0",
+      "bytes": 1323,
+      "sha256": "0e7f5565475101f5c237d1c4d1fd7bf56a5354dbef1e4aff722ce249462b3190",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_062c8d37.geff/nodes/ids/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_062c8d37.geff/nodes/ids/zarr.json",
+      "bytes": 618,
+      "sha256": "7c9e5ca6c6c3a0627517054b5f41d7b80ec5078074d069d90e4e3b228ef60159",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_062c8d37.geff/nodes/ids/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_062c8d37.geff/nodes/props/t/values/c/0",
+      "bytes": 223,
+      "sha256": "3df7cce196eb324e73398a906169ed72ec6f1bb970667f15f7de7c23ffdd0f92",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_062c8d37.geff/nodes/props/t/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_062c8d37.geff/nodes/props/t/values/zarr.json",
+      "bytes": 617,
+      "sha256": "7ca3608a5ac670e099a77e53be6ac18f1c35fb0908c1dd70555826b1333bf279",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_062c8d37.geff/nodes/props/t/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_062c8d37.geff/nodes/props/x/values/c/0",
+      "bytes": 1004,
+      "sha256": "3a2ccce4fbe74cd3af0be41e14ee5fab6ed20074af2356fc3a9c3370271e29ce",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_062c8d37.geff/nodes/props/x/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_062c8d37.geff/nodes/props/x/values/zarr.json",
+      "bytes": 617,
+      "sha256": "7ca3608a5ac670e099a77e53be6ac18f1c35fb0908c1dd70555826b1333bf279",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_062c8d37.geff/nodes/props/x/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_062c8d37.geff/nodes/props/y/values/c/0",
+      "bytes": 1045,
+      "sha256": "40e13cb8fde8be2b3615dab227f93827e1af489e5d564c918bc04976e76fd31a",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_062c8d37.geff/nodes/props/y/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_062c8d37.geff/nodes/props/y/values/zarr.json",
+      "bytes": 617,
+      "sha256": "7ca3608a5ac670e099a77e53be6ac18f1c35fb0908c1dd70555826b1333bf279",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_062c8d37.geff/nodes/props/y/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_062c8d37.geff/nodes/props/z/values/c/0",
+      "bytes": 753,
+      "sha256": "262ed1167156cad1e3f5246f2f5cfe268c4130a34aa49492f9caa161c6cf8d2d",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_062c8d37.geff/nodes/props/z/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_062c8d37.geff/nodes/props/z/values/zarr.json",
+      "bytes": 617,
+      "sha256": "7ca3608a5ac670e099a77e53be6ac18f1c35fb0908c1dd70555826b1333bf279",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_062c8d37.geff/nodes/props/z/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_062c8d37.geff/zarr.json",
+      "bytes": 2099,
+      "sha256": "c3cf521d0ca0fd8fb0f1a196c071d672e949b4db7ecf023b8a18b7684ce47ff3",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_062c8d37.geff/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_07e24132.geff/edges/ids/c/0/0",
+      "bytes": 1193,
+      "sha256": "f6b48c80bd53422fb9230bce34aae90c5061da665d61bb1a16e223d3a9dacd04",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_07e24132.geff/edges/ids/c/0/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_07e24132.geff/edges/ids/zarr.json",
+      "bytes": 636,
+      "sha256": "c5ec6038e918081b00914dea4f16d026c3c1b3f858439ae60067a5a7d54e8384",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_07e24132.geff/edges/ids/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_07e24132.geff/nodes/ids/c/0",
+      "bytes": 751,
+      "sha256": "923ee6a2468581da69d9a8b292a0cda8f910e4dfc8e3a3dc355a31d9587b36c6",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_07e24132.geff/nodes/ids/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_07e24132.geff/nodes/ids/zarr.json",
+      "bytes": 618,
+      "sha256": "6ab2024b2438bf81f34f557a962bb3c4a47409a3cbf00006044ebbb2c0930644",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_07e24132.geff/nodes/ids/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_07e24132.geff/nodes/props/t/values/c/0",
+      "bytes": 215,
+      "sha256": "cd805f8743a9801e79b56db2b4c81fb193631e7ee6435d5f8003af09001d5cfe",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_07e24132.geff/nodes/props/t/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_07e24132.geff/nodes/props/t/values/zarr.json",
+      "bytes": 617,
+      "sha256": "4192d4dc3b7f8d95fe1e19ef279636334d7efe1b737f82938d4cc8261a831946",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_07e24132.geff/nodes/props/t/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_07e24132.geff/nodes/props/x/values/c/0",
+      "bytes": 396,
+      "sha256": "9ac6e7dc631a4a8b56a13f2d813051de96fc0b63efdcf580e3ca71a5e9b87fec",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_07e24132.geff/nodes/props/x/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_07e24132.geff/nodes/props/x/values/zarr.json",
+      "bytes": 617,
+      "sha256": "4192d4dc3b7f8d95fe1e19ef279636334d7efe1b737f82938d4cc8261a831946",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_07e24132.geff/nodes/props/x/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_07e24132.geff/nodes/props/y/values/c/0",
+      "bytes": 416,
+      "sha256": "bd76ea1599fc6f0da38d3888e7656b1999ee05788f216b0f0b4933236832d49a",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_07e24132.geff/nodes/props/y/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_07e24132.geff/nodes/props/y/values/zarr.json",
+      "bytes": 617,
+      "sha256": "4192d4dc3b7f8d95fe1e19ef279636334d7efe1b737f82938d4cc8261a831946",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_07e24132.geff/nodes/props/y/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_07e24132.geff/nodes/props/z/values/c/0",
+      "bytes": 334,
+      "sha256": "ab84735dd0ef6297969192bfd9256c9457026e18fc9fd931b6c535e59f3bc1a3",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_07e24132.geff/nodes/props/z/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_07e24132.geff/nodes/props/z/values/zarr.json",
+      "bytes": 617,
+      "sha256": "4192d4dc3b7f8d95fe1e19ef279636334d7efe1b737f82938d4cc8261a831946",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_07e24132.geff/nodes/props/z/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_07e24132.geff/zarr.json",
+      "bytes": 2100,
+      "sha256": "c467f482c3af867a15fb1497d5481fc1505ec6b639e1236654b6ea3557132709",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_07e24132.geff/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_085bf656.geff/edges/ids/c/0/0",
+      "bytes": 3228,
+      "sha256": "c9632dfba13913819c0d34eb6ad84990580c78d1b747bef89ae9d0aad14dc3a0",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_085bf656.geff/edges/ids/c/0/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_085bf656.geff/edges/ids/zarr.json",
+      "bytes": 638,
+      "sha256": "d0141788eaba7b5966e67086bf0e4810a2111a5d96f2fd918e0b06cde5a9ee58",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_085bf656.geff/edges/ids/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_085bf656.geff/nodes/ids/c/0",
+      "bytes": 1622,
+      "sha256": "e254a49248c127dd477748567ff1c08335c4a866908495c9905357bc3260fcf0",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_085bf656.geff/nodes/ids/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_085bf656.geff/nodes/ids/zarr.json",
+      "bytes": 620,
+      "sha256": "b5c2c90e13bb099f14b35a52113e6bbb65030689d4e502fba7980c7a7bc6e11e",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_085bf656.geff/nodes/ids/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_085bf656.geff/nodes/props/t/values/c/0",
+      "bytes": 231,
+      "sha256": "655a74a4c511900a1d401d61b93056453df307ea7b6994fc322d2f7b576e1591",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_085bf656.geff/nodes/props/t/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_085bf656.geff/nodes/props/t/values/zarr.json",
+      "bytes": 619,
+      "sha256": "58f53b56ed75d542a12aeb2322632bcfb0518421d262de3855970662ac1dc89d",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_085bf656.geff/nodes/props/t/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_085bf656.geff/nodes/props/x/values/c/0",
+      "bytes": 1248,
+      "sha256": "8f746acad723152968d6ed072dad8e7660044aa269e66251bd15fd1dfb57fd50",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_085bf656.geff/nodes/props/x/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_085bf656.geff/nodes/props/x/values/zarr.json",
+      "bytes": 619,
+      "sha256": "58f53b56ed75d542a12aeb2322632bcfb0518421d262de3855970662ac1dc89d",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_085bf656.geff/nodes/props/x/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_085bf656.geff/nodes/props/y/values/c/0",
+      "bytes": 1309,
+      "sha256": "ec712bea759ad3deb5fc7347158d17aaaa9577539f98750d172bed460100b94f",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_085bf656.geff/nodes/props/y/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_085bf656.geff/nodes/props/y/values/zarr.json",
+      "bytes": 619,
+      "sha256": "58f53b56ed75d542a12aeb2322632bcfb0518421d262de3855970662ac1dc89d",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_085bf656.geff/nodes/props/y/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_085bf656.geff/nodes/props/z/values/c/0",
+      "bytes": 981,
+      "sha256": "b5631d85368fe3bc2cb62d914f780bc37cc1f1d72c1b2d2b522e9303460c6190",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_085bf656.geff/nodes/props/z/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_085bf656.geff/nodes/props/z/values/zarr.json",
+      "bytes": 619,
+      "sha256": "58f53b56ed75d542a12aeb2322632bcfb0518421d262de3855970662ac1dc89d",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_085bf656.geff/nodes/props/z/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_085bf656.geff/zarr.json",
+      "bytes": 2099,
+      "sha256": "3b74869efa66949cee7a176a8acb96e54369d8673790641fb1168da4e694842a",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_085bf656.geff/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_09961292.geff/edges/ids/c/0/0",
+      "bytes": 5174,
+      "sha256": "3f47061e692d42996fd0fd61e7e166ef836283269a007cd05118d084b82c4d9e",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_09961292.geff/edges/ids/c/0/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_09961292.geff/edges/ids/zarr.json",
+      "bytes": 638,
+      "sha256": "72fded34d638fb05680e93c23f6fd44edfaeed61ae4cd3f107748f014a6e0403",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_09961292.geff/edges/ids/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_09961292.geff/nodes/ids/c/0",
+      "bytes": 2523,
+      "sha256": "7f741e6377bb75d25e79a3c20dad79ce0ca8300b4dc54283f5be8d664b6331f8",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_09961292.geff/nodes/ids/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_09961292.geff/nodes/ids/zarr.json",
+      "bytes": 620,
+      "sha256": "b6f7654934211ca89c5c8fb4954c3a6e108cff200e64c0d8a078ebb61b8b46e3",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_09961292.geff/nodes/ids/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_09961292.geff/nodes/props/t/values/c/0",
+      "bytes": 338,
+      "sha256": "d341615c92e63b9ac59af53328ca4220cb486205e466de8e9826a587bf6d3b22",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_09961292.geff/nodes/props/t/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_09961292.geff/nodes/props/t/values/zarr.json",
+      "bytes": 619,
+      "sha256": "de9bc906198a80dfbf85d487fb4f58589c901c504aa810d53b44b3ed02232150",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_09961292.geff/nodes/props/t/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_09961292.geff/nodes/props/x/values/c/0",
+      "bytes": 1979,
+      "sha256": "c7a8dd55b8a36ccc36387c425c31a0598fa8a4d3eed29b72e7546c164713c225",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_09961292.geff/nodes/props/x/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_09961292.geff/nodes/props/x/values/zarr.json",
+      "bytes": 619,
+      "sha256": "de9bc906198a80dfbf85d487fb4f58589c901c504aa810d53b44b3ed02232150",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_09961292.geff/nodes/props/x/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_09961292.geff/nodes/props/y/values/c/0",
+      "bytes": 2042,
+      "sha256": "33571c88c192eb6c0c4899f17de3d790cba1bf1a14a5776ef091a91e4e4d574f",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_09961292.geff/nodes/props/y/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_09961292.geff/nodes/props/y/values/zarr.json",
+      "bytes": 619,
+      "sha256": "de9bc906198a80dfbf85d487fb4f58589c901c504aa810d53b44b3ed02232150",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_09961292.geff/nodes/props/y/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_09961292.geff/nodes/props/z/values/c/0",
+      "bytes": 1275,
+      "sha256": "f6ba426a0d595b9348416df1c9a180e105149bc2f0e542bab7a2aca9a885dca4",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_09961292.geff/nodes/props/z/values/c/0",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_09961292.geff/nodes/props/z/values/zarr.json",
+      "bytes": 619,
+      "sha256": "de9bc906198a80dfbf85d487fb4f58589c901c504aa810d53b44b3ed02232150",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_09961292.geff/nodes/props/z/values/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    },
+    {
+      "source": "train/6bba_09961292.geff/zarr.json",
+      "bytes": 2100,
+      "sha256": "99585082bb5ac30305acb0d5e74eddbc0d2c273ba05bddded83d390575a2ac3b",
+      "local_path": "downloads/BIOHUB_SPRINT01_20260916/gt/6bba_09961292.geff/zarr.json",
+      "reuse": "existing local bytes verified against committed Kaggle download receipt"
+    }
+  ],
+  "status": "BOUND_CACHE_BYTES_VERIFIED",
+  "hash_semantics": "SHA256 of retrieved bytes, not a pre-crash platform digest",
+  "inventory_count": 498,
+  "pages": 5,
+  "gt_reused_bytes": 91958,
+  "identity_before": {
+    "kernel_id": 134976549,
+    "version": 1,
+    "source_sha256": "e6e63a2c5f49d8372011037f8beb6812bb58cf06a293c9f3487a7cce1026ef37"
+  },
+  "identity_after": {
+    "kernel_id": 134976549,
+    "version": 1,
+    "source_sha256": "e6e63a2c5f49d8372011037f8beb6812bb58cf06a293c9f3487a7cce1026ef37"
+  },
+  "completed_at_utc": "2026-09-19T14:08:56.241465+00:00",
+  "prediction_bytes": 204784683,
+  "new_gt_download_bytes": 0
+}
