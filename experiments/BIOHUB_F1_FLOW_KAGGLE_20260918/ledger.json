@@ -44,7 +44,7 @@
       "finished_at_utc": "2026-09-19T12:09:07.558871+00:00"
     }
   ],
-  "status": "DIAG_RUNNING",
+  "status": "DIAGNOSTIC_ERROR_SUMMARY_SCHEMA",
   "training_calls": 0,
   "dataset_writes": 0,
   "formal_submission_requests": 0,
@@ -54,9 +54,9 @@
   "new_private_notebook_creation_outcome": "Recovery V1 confirmed; first request remains UNKNOWN",
   "engineering_reserve_used": 1,
   "production_requests": 0,
-  "cloud_runtime_status": "RUNNING",
-  "last_observed_at_utc": "2026-09-19T12:17:25+00:00",
-  "resume_action": "Read the bound diagnostic V1/SV351058693 with read_run.py diagnostic; no further diagnostic writes authorized. If terminal complete and all frozen gates pass, remaining 1 Save & Run is production-only; formal submission max1.",
+  "cloud_runtime_status": "ERROR",
+  "last_observed_at_utc": "2026-09-19T13:07:12+00:00",
+  "resume_action": "No diagnostic retry authorized: shared reserve consumed. Read failure_analysis.json; preserve V1/SV351058693 cloud cache. Production gate blocked by missing exported aggregates/events. Further cloud repair requires new task authorization.",
   "bound_diagnostic": {
     "ref": "sailorren/biohub-f1-flow-diag-20260918",
     "kernel_id": 134976549,

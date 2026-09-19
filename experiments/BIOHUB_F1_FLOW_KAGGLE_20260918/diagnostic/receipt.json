@@ -22,10 +22,14 @@
   "bound_at_utc": "20260919T121227Z",
   "sv_status": "UI_EDIT_RUN_LINK_VERIFIED",
   "input_versions_status": "REQUESTED_EXACT_VERSIONS_RUNTIME_HASH_CHECK_PENDING",
-  "status": "DIAG_RUNNING",
+  "status": "DIAGNOSTIC_ERROR_SUMMARY_SCHEMA",
   "results_obtained": false,
-  "completed_views": null,
+  "completed_views": 8,
   "public_score": null,
   "save_requests": 2,
-  "last_observed_at_utc": "2026-09-19T12:17:25+00:00"
+  "last_observed_at_utc": "2026-09-19T13:07:12+00:00",
+  "cloud_execution": "ERROR",
+  "partial_log_scores_available": true,
+  "error": "KeyError: 'edge_tp'",
+  "production_allowed": false
 }

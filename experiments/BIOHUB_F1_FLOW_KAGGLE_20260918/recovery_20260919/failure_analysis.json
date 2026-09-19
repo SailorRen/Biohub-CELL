@@ -1,0 +1,106 @@
+{
+  "status": "DIAGNOSTIC_ERROR_SUMMARY_SCHEMA",
+  "ref": "sailorren/biohub-f1-flow-diag-20260918",
+  "version": 1,
+  "script_version_id": 351058693,
+  "platform_status": "ERROR",
+  "wall_seconds_ui": 2231.9,
+  "root_cause": "F1 runtime expects edge_tp/edge_fp/edge_fn in aggregate; official summarise does not return those keys",
+  "synthetic_schema_error_reproduced": true,
+  "official_summary_keys": [
+    "adj_edge_jaccard",
+    "division_fn",
+    "division_fp",
+    "division_jaccard",
+    "division_tp",
+    "edge_jaccard",
+    "n",
+    "n_adj",
+    "node_recall",
+    "score"
+  ],
+  "completed_views": 8,
+  "arms_per_view": 4,
+  "graph_files_listed": 32,
+  "graphs_downloaded": 0,
+  "small_output_files": [
+    "f1_small/input_hashes.json",
+    "f1_small/progress.json",
+    "f1_small/runtime_start.json"
+  ],
+  "missing_outputs": [
+    "results.json",
+    "stages.json",
+    "per_view.csv",
+    "edge_changes.csv",
+    "flow_usage.csv"
+  ],
+  "input_hashes_verified": 264,
+  "weights_config_scorer_hash_verified": true,
+  "per_view_log_scores": [
+    {
+      "stem": "44b6_12dfb391",
+      "B0": "0.9471907457431684",
+      "F1": "0.9472159859480405",
+      "delta": "0.0000252402048721",
+      "provenance": "cloud log F1_SAMPLE_COMPLETE; not reconstructed aggregate"
+    },
+    {
+      "stem": "44b6_267148e4",
+      "B0": "0.8132565795093085",
+      "F1": "0.8051126426748005",
+      "delta": "-0.0081439368345080",
+      "provenance": "cloud log F1_SAMPLE_COMPLETE; not reconstructed aggregate"
+    },
+    {
+      "stem": "44b6_2a2eff9f",
+      "B0": "0.881853364050394",
+      "F1": "0.8818427195243417",
+      "delta": "-0.0000106445260523",
+      "provenance": "cloud log F1_SAMPLE_COMPLETE; not reconstructed aggregate"
+    },
+    {
+      "stem": "44b6_341df25f",
+      "B0": "1.0774175677101698",
+      "F1": "1.0774175677101698",
+      "delta": "0E-16",
+      "provenance": "cloud log F1_SAMPLE_COMPLETE; not reconstructed aggregate"
+    },
+    {
+      "stem": "6bba_062c8d37",
+      "B0": "1.0851842557125877",
+      "F1": "1.0797113878123197",
+      "delta": "-0.0054728679002680",
+      "provenance": "cloud log F1_SAMPLE_COMPLETE; not reconstructed aggregate"
+    },
+    {
+      "stem": "6bba_07e24132",
+      "B0": "0.8154435633547912",
+      "F1": "0.8197989707436161",
+      "delta": "0.0043554073888249",
+      "provenance": "cloud log F1_SAMPLE_COMPLETE; not reconstructed aggregate"
+    },
+    {
+      "stem": "6bba_085bf656",
+      "B0": "0.9933698735632566",
+      "F1": "0.9933698735632566",
+      "delta": "0E-16",
+      "provenance": "cloud log F1_SAMPLE_COMPLETE; not reconstructed aggregate"
+    },
+    {
+      "stem": "6bba_09961292",
+      "B0": "0.8943248531817481",
+      "F1": "0.9028035645993335",
+      "delta": "0.0084787114175854",
+      "provenance": "cloud log F1_SAMPLE_COMPLETE; not reconstructed aggregate"
+    }
+  ],
+  "official_overall_score": null,
+  "official_embryo_scores": null,
+  "production_allowed": false,
+  "formal_submission": "NOT_RUN",
+  "second_issue": "All result tables saved only after summary; exception prevented their export",
+  "proposed_single_engineering_change": "Repair schema mapping by explicitly summing official per-view edge counts; checkpoint small per-view rows/stages/events/flow before final summary. Do not alter metric, weights, algorithm or thresholds.",
+  "repair_implemented": false,
+  "new_cloud_writes": 0
+}

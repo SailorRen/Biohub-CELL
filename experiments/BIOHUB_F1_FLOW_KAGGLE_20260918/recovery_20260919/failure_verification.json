@@ -1,0 +1,10 @@
+{
+  "status": "LOCAL_EVIDENCE_PASS",
+  "cloud_experiment": "DIAGNOSTIC_ERROR_SUMMARY_SCHEMA",
+  "formal_submission_requests": 0,
+  "remote_delivery": "SEPARATE_READBACK_REQUIRED",
+  "science_unchanged": true,
+  "original_workspace_unchanged": true,
+  "observed_at_utc": "2026-09-19T13:10:38.270995+00:00",
+  "analysis_validation": "Original official summarise function on one synthetic row reproduces missing edge_tp; 264 input hashes, frozen weights/config/scorer verified"
+}
