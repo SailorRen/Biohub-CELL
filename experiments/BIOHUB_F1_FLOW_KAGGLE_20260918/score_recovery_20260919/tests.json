@@ -1,0 +1,7 @@
+{
+  "schema_adapter_preserves_score": true,
+  "missing_required_field_rejected": true,
+  "own_weights_and_no_divisions": true,
+  "checkpoint_reuse_and_hash_rejection": true,
+  "nonconsecutive_id_roundtrip": true
+}
