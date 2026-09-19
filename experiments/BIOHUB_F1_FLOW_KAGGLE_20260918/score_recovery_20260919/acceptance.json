@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_F1_CACHE_RESCORE_AND_SUBMIT_20260919-R1",
+  "goal": "Verify actual cache recovery, immutable science and budget, truthful separate production/submission status, authoritative delivery; blocked experiment is not success",
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "acceptance": [
+    {
+      "id": "cache-recovery",
+      "type": "json",
+      "path": "experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/score_recovery_20260919/receipt.json",
+      "assertions": [
+        {
+          "pointer": "/status",
+          "op": "equals",
+          "value": "CACHE_RESCORE_VERIFIED"
+        }
+      ]
+    },
+    {
+      "id": "immutable-budget",
+      "type": "command",
+      "argv": [
+        "/opt/anaconda3/envs/ml/bin/python3",
+        "experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/recovery_20260919/verify_recovery.py"
+      ],
+      "cwd": ".",
+      "expected_exit": 0,
+      "timeout_seconds": 60
+    },
+    {
+      "id": "report",
+      "type": "file",
+      "path": "reports/20260919_BIOHUB_F1_CACHE_RESCORE_AND_SUBMIT_RESULTS.md",
+      "min_bytes": 300,
+      "contains_all": [
+        "B0",
+        "F1",
+        "Public"
+      ]
+    },
+    {
+      "id": "git",
+      "type": "git",
+      "repository": ".",
+      "require_commit": true,
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true
+    }
+  ]
+}

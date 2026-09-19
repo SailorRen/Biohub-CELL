@@ -1,0 +1,90 @@
+{
+  "revision_id": "BIOHUB_F1_CACHE_RESCORE_AND_SUBMIT_20260919-R1",
+  "task_commit": "e259e4abefce3f211bf193891f6da3f886835727",
+  "frozen_at_utc": "2026-09-19T13:55:43.593895+00:00",
+  "original_contract_sha256": "825284c358fc75f1a8f42819c96237e3c37cfe8cd8ebca5fd6c192292a509d67",
+  "task_sha256": "1e31e79e3053b05a6a62770670dcc202dc2b06a278261ad794eb8d597b13a7fa",
+  "source": {
+    "ref": "sailorren/biohub-f1-flow-diag-20260918",
+    "kernel_id": 134976549,
+    "version": 1,
+    "script_version_id": 351058693,
+    "worker_status": "ERROR"
+  },
+  "samples": [
+    "44b6_12dfb391",
+    "44b6_267148e4",
+    "44b6_2a2eff9f",
+    "44b6_341df25f",
+    "6bba_062c8d37",
+    "6bba_07e24132",
+    "6bba_085bf656",
+    "6bba_09961292"
+  ],
+  "arms": [
+    "B0",
+    "B0_repeat",
+    "F1_off",
+    "F1"
+  ],
+  "limits": {
+    "cache_bytes": 2147483648,
+    "peak_scoring_rss_bytes": 4294967296,
+    "startup_available_memory_fraction": 0.5,
+    "processes": 1,
+    "cpu_threads": 2
+  },
+  "budgets": {
+    "save_and_run_total_max": 3,
+    "already_used": 2,
+    "new_diagnostic": 0,
+    "production_remaining_max": 1,
+    "formal_submission_total_max": 1,
+    "formal_used": 0,
+    "shared_reserve_used": 1,
+    "shared_reserve_max": 1,
+    "training": 0,
+    "model_inference_local": 0,
+    "dataset_writes": 0,
+    "final_selection_changes": 0
+  },
+  "evidence_entry": "CACHE_RESCORE_VERIFIED replaces diagnostic COMPLETE only; source worker ERROR remains",
+  "nonrecoverable": [
+    "flow_neighbor_distribution",
+    "flow_coverage",
+    "motion_intermediate_graphs",
+    "original_GPU_timings"
+  ],
+  "alternative_flow_evidence": "FROZEN_SOURCE_PLUS_FINAL_GRAPH_CHANGE",
+  "scientific_contract_unchanged": true,
+  "source_hashes": {
+    "status": "BUILT_NOT_RUN",
+    "patch_sha256": "d2511cb21d536d230a6607d3119bccb1d931e21f4ec49237790d6dc335266896",
+    "diagnostic_sha256": "5a94bc79a1ffe55c71d1b456b579792048c7c3adb2eac3ecb96b801acf382bab",
+    "production_sha256": "d82f8ba98aa9d4ac51b62105155b1aadbbbf9f202ddd700a9b6281162e2d9c31",
+    "original_production_cells_unchanged": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "selector_unchanged": true,
+    "training_calls": 0,
+    "raw_manifest_files": 264
+  },
+  "score_log_absolute_tolerance": 1e-10,
+  "relative_tolerance": 0,
+  "script_freeze_required_before_real_scoring": true,
+  "download_policy": "Only exact 32 final graphs and required GT arrays/metadata; ignored; bounded stream; identity before/after; no signed URLs in evidence",
+  "stop_policy": "Checkpoint and stop on identity/resource/dependency/equality/scientific gate failure; no cloud fallback or retry",
+  "production_policy": "Fresh production preflight, current ledger and mutex, evidence hashes and authoritative GitHub readback before one send",
+  "submission_policy": "Exact production COMPLETE and validated outputs/version/SV before one formal request; unknown counts, no retry"
+}
