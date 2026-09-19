@@ -38,8 +38,8 @@ flow 覆盖率、邻居分布、运动中间图和旧 GPU 耗时标记 NOT_RECOV
 
 ## 云端与正式评分状态
 
-Kaggle 生产：NOT_RUN_PREWRITE_CHECKPOINT。正式 submission：NOT_RUN；Public=null。实时刷新 G1 submission56270217 状态 COMPLETE、Public=0.948（显示精度）。生产完成并验收后才可提交准确生产版本；禁止再次诊断。
-当前账本 Save & Run=2/3，工程备用=1/1，生产=0/1，正式提交=0/1；失败或未知也计入。Dataset/训练/最终选择修改=0。
+Kaggle 生产：RUNNING，V1 / SV351084196 / kernel134988494，ref=sailorren/biohub-f1-flow-prod-20260918。正式 submission：NOT_RUN_WAITING_FOR_PRODUCTION；Public=null。实时刷新 G1 submission56270217 状态 COMPLETE、Public=0.948（显示精度）。生产完成并验收后才可提交准确生产版本；禁止再次诊断。
+当前账本 Save & Run=3/3，工程备用=1/1，生产=1/1，正式提交=0/1；失败或未知也计入。Dataset/训练/最终选择修改=0。
 
 ## 证据与读取覆盖
 
@@ -50,3 +50,24 @@ Kaggle 生产：NOT_RUN_PREWRITE_CHECKPOINT。正式 submission：NOT_RUN；Publ
 本次合同先于恢复同步：546a7888ba34bb47385b9fa381f6bc60189a4c0d；评分脚本先于真实评分冻结并同步：96504be（完整 SHA 可由分支历史解析）。生产写入前再次同步全部恢复证据并固定提交回读。文件交付与生产/正式评分分别核验。
 
 关键文件位于 experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/score_recovery_20260919/：contract_amendment.json、input_manifest.json、script_freeze.json、checkpoints/（32）、per_view.csv、final_edge_changes.csv、results.json、receipt.json。
+
+## 本轮实际生产请求与续接
+
+2026-09-19 22:13:03（上海）预记并发送 F1-03，HTTP200，wire_sends=1，创建生产 V1，准确 SV351084196 从页面 Edit 链接绑定。SDK 回读 RUNNING；源码字节哈希 a7cb7f8a0da5b5055594779019ebb3ab688e3ce5916079d23b59574b628720b1，全部代码单元与冻结候选一致。平台序列化后字节与本地 Notebook 不同，未将两个哈希混用。
+
+生产前证据固定提交 bf1139342160e8efd86b82f3414470fb05a5e71d，GitHub 98/98 文件字节一致后才发送请求。第一次 UNKNOWN、第二次诊断 ERROR 均未覆盖，共享备用仍用满 1/1。
+
+生产尚在运行，本轮没有正式分数，完整实验目标尚未完成。G1 历史普通运行 8168.5 秒仅作等待背景，不是 F1 耗时预测。当前没有生产输出，不能把启动成功当验收完成。
+
+下一次在同一隔离分支执行以下只读命令续接原对象（不是启动器）：
+
+```bash
+cd /private/tmp/biohub-f1-recovery-20260919
+/opt/anaconda3/envs/ml/bin/python3 experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/read_run.py production
+```
+
+若仍 RUNNING/PENDING，保留 Public=null；不要运行 save_once.py（3/3 已耗尽）。若 ERROR，则真实终止，无备用。若 COMPLETE，需要补齐生产输出回收/验收后，按原代码竞赛流程对准确生产 V1/SV351084196 正式提交一次。旧 read_run.py 当前只记录生产清单，不回收生产回执/CSV；不能仅凭其状态输出直接提交。
+
+必要输出：f1_production_receipt.json、sprint_production_receipt.json、bidirectional_production_runtime_integrity.json、ppsweep_selected.json、run_stats.csv 与 ignored submission.csv（以真实清单文件名为准）。验证输入/权重哈希、源代码绑定、F1 启用、schema、端点、逐数据集覆盖与 submission SHA256。冻结的 F1 回执写出语句追加的是字面量反斜杠 n；读取时可仅对该已知尾缀用 JSONDecoder.raw_decode 严格解析，保留原始字节哈希，不修改/重跑生产 Notebook。
+
+正式提交已有授权，无需再征求；提交前重新核对账户/比赛/日限额/已有 submission，永久预记 ledger.formal_submission_requests=1，再单次 competition_submit_code(kernel=准确ref,kernel_version=1,file_name='submission.csv')。绑定正式 submission ID 后只读刷新 Public，与准确 G1 submission56270217 同精度比较；结果未知不可重发，不修改最终选择。没有创建会话外监控。

@@ -1,0 +1,25 @@
+{
+  "kernel_id": 134988494,
+  "version": 1,
+  "private": true,
+  "source_sha256": "a7cb7f8a0da5b5055594779019ebb3ab688e3ce5916079d23b59574b628720b1",
+  "code_cells_equal": true,
+  "input_kernels": [
+    "sailorren/biohub-division-train-20260914"
+  ],
+  "input_datasets": [
+    "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+    "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+    "pilkwang/biohub-tracking-support-pack-50ep-v1"
+  ],
+  "input_competitions": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "machine_shape": "NvidiaTeslaT4",
+  "ref": "sailorren/biohub-f1-flow-prod-20260918",
+  "script_version_id": 351084196,
+  "bound_at_utc": "20260919T141411Z",
+  "sv_status": "UI_EDIT_RUN_LINK_VERIFIED",
+  "input_versions_status": "REQUESTED_EXACT_VERSIONS_RUNTIME_HASH_CHECK_PENDING"
+}

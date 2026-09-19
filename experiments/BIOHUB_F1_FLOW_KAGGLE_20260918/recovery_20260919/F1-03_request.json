@@ -1,0 +1,30 @@
+{
+  "action": "SaveAndRun",
+  "attempt_id": "F1-03",
+  "phase": "production",
+  "reason": "frozen_gate_passed",
+  "ref": "sailorren/biohub-f1-flow-prod-20260918",
+  "at_utc": "2026-09-19T14:13:03.187727+00:00",
+  "source_sha256": "d82f8ba98aa9d4ac51b62105155b1aadbbbf9f202ddd700a9b6281162e2d9c31",
+  "metadata_sha256": "0aeff548466a4f9f28220ae9d327d9e04fd46c7c269ad83100eb51d1ab523a3c",
+  "checkpoint_commit": "bf1139342160e8efd86b82f3414470fb05a5e71d",
+  "recovery_credential": null,
+  "status": "RESPONSE_RECEIVED_READBACK_REQUIRED",
+  "requests_counted": 1,
+  "http": {
+    "status": 200,
+    "content_type": "application/json",
+    "response_length": 168,
+    "body_sha256": "da1e3165013adb5b7d61a6f43a5079d714adc109a63e69ac265eabfc0257d912",
+    "request_id": "UNAVAILABLE"
+  },
+  "wire_sends": 1,
+  "wire_sent_at_utc": "2026-09-19T14:13:03.194217+00:00",
+  "response": {
+    "ref": "/code/sailorren/biohub-f1-flow-prod-20260918",
+    "url": "[URL_REDACTED]",
+    "versionNumber": 1,
+    "kernelId": 134988494
+  },
+  "finished_at_utc": "2026-09-19T14:13:07.807934+00:00"
+}
