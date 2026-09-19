@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_F1_RECOVER_AND_SCORE_20260919-R1",
+  "goal": "Verify truthful recovery outcome, cumulative budget, immutable science and authoritative GitHub delivery; experiment/score completeness reported separately",
+  "scope": {
+    "in_scope": [
+      "F1 branch recovery orchestration and authorized cloud actions"
+    ],
+    "out_of_scope": [
+      "training",
+      "dataset writes",
+      "main changes",
+      "algorithm changes",
+      "final selection changes"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "acceptance": [
+    {
+      "id": "recovery-report",
+      "type": "file",
+      "required": true,
+      "path": "reports/20260919_BIOHUB_F1_RECOVER_AND_SCORE_RESULTS.md",
+      "min_bytes": 200,
+      "contains_all": [
+        "B0",
+        "F1",
+        "Public"
+      ]
+    },
+    {
+      "id": "targeted-check",
+      "type": "command",
+      "required": true,
+      "argv": [
+        "/opt/anaconda3/envs/ml/bin/python3",
+        "experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/recovery_20260919/verify_recovery.py"
+      ],
+      "cwd": ".",
+      "expected_exit": 0,
+      "timeout_seconds": 60
+    },
+    {
+      "id": "git-state",
+      "type": "git",
+      "required": true,
+      "repository": ".",
+      "require_commit": true,
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true
+    }
+  ]
+}
