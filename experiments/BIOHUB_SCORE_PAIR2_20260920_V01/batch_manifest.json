@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_SCORE_PAIR2_20260920_V01",
+  "goal": "S50/G58真实生产、最小实际输出复核、各一次正式提交；不以普通完成替代正式提交。",
+  "scope": {
+    "in_scope": [
+      "S50检测权重0.50",
+      "G58最终gap距离5.8",
+      "最低输出门禁及正式提交最多2次"
+    ],
+    "out_of_scope": [
+      "独立诊断",
+      "第三臂/新网格",
+      "训练/Dataset/最终选择",
+      "main和现有Notebook写入"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "frozen_at_utc": "2026-09-20T15:43:09.234251+00:00",
+  "task_source": {
+    "commit": "93d12faea46c514e4cccdf969c6d56d1545a2aa0",
+    "path": "tasks/CODEX_20260920_BIOHUB_SCORE_PAIR2_V01.md",
+    "sha256": "9e365ea35c3d19d448e4d677fa10b4e8e3a3e55974a6bebcdeacfbe4406ef0e8"
+  },
+  "g1_commit": "e9c7c63b896812660a78ec55fc3284c10f85e776",
+  "g1_notebook_sha256": "de010e6ba142be0e01000093e061ef7d3388ddaa411185b40d26c63a3febe731",
+  "reuse_commit": "850fafe77eaa6438cae06f9773d1b6a0b3d8c118",
+  "candidates": {
+    "S50": {
+      "ref": "sailorren/biohub-g1-secondary050-20260920",
+      "notebook_sha256": "967b6265528bc29ac9a7725dd8463e3f0bc1138f5a9df52ebf067c3958c60fd6",
+      "metadata_sha256": "9e3d6da7cc2e2af60e2cfed908b0a7ce823452e29cac6b5d5a5273b22dcaa3ed",
+      "inputs": {
+        "dataset_sources": [
+          "pilkwang/biohub-deepcenter-unet3d-center-prior-v1/5",
+          "pilkwang/biohub-temporal-unet3d-seed314159-v1/2",
+          "pilkwang/biohub-tracking-support-pack-50ep-v1/10"
+        ],
+        "kernel_sources": [
+          "sailorren/biohub-division-train-20260914/1"
+        ],
+        "competition_sources": [
+          "biohub-cell-tracking-during-development"
+        ],
+        "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+        "machine_shape": "NvidiaTeslaT4"
+      },
+      "change": {
+        "BIOHUB_SECONDARY_DETECTION_WEIGHT": [
+          0.8,
+          0.5
+        ]
+      },
+      "changed_original_cells": [
+        3,
+        4,
+        5
+      ]
+    },
+    "G58": {
+      "ref": "sailorren/biohub-g1-gap058-20260920",
+      "notebook_sha256": "8c4652d8d2fcc139a19406a15466b23f294ef4ef8d6ebdd336775206f81496ca",
+      "metadata_sha256": "b99d0c53e1774c15e3a0ff27ebc912f3b3644b97e4a204c53c59e70d3d0d6a3c",
+      "inputs": {
+        "dataset_sources": [
+          "pilkwang/biohub-deepcenter-unet3d-center-prior-v1/5",
+          "pilkwang/biohub-temporal-unet3d-seed314159-v1/2",
+          "pilkwang/biohub-tracking-support-pack-50ep-v1/10"
+        ],
+        "kernel_sources": [
+          "sailorren/biohub-division-train-20260914/1"
+        ],
+        "competition_sources": [
+          "biohub-cell-tracking-during-development"
+        ],
+        "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+        "machine_shape": "NvidiaTeslaT4"
+      },
+      "change": {
+        "final GAP_CLOSE_UM": [
+          5.0,
+          5.8
+        ]
+      },
+      "changed_original_cells": [
+        4,
+        5
+      ]
+    }
+  },
+  "weights": {
+    "gate": "0a1f9b93bb529e70f4f7c2ba0907eea8b4cecd2befccc8ba1fb75e569edf77a0",
+    "primary": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+    "secondary": "9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f",
+    "deepcenter": "8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0"
+  },
+  "runtime_sha256": "943324cae999ce48f4a9b9822937f815b1f8ee70d57208dead55780fe9b92529",
+  "official_reader_sha256": "c0fe1868d4550235c4673d4a3fc5e2d6ab0402f3cd0bac73eec8d1348eb9690d",
+  "budgets": {
+    "new_private_notebooks": 2,
+    "save_and_run": 3,
+    "shared_engineering_reserve": 1,
+    "formal_submission": 2,
+    "training": 0,
+    "dataset_write": 0,
+    "final_selection_change": 0,
+    "v1_f1_write": 0
+  },
+  "stop_conditions": [
+    "identity/config/output gate fails: stop affected arm",
+    "uncertain request counted, reconcile read-only, no retry",
+    "no effect without decision change: no submission",
+    "duplicate candidates: deduplicate",
+    "insufficient quota: stop, no reset waiting",
+    "no independent diagnostic/third candidate"
+  ],
+  "acceptance": [
+    {
+      "id": "task-identity",
+      "type": "file",
+      "path": "tasks/CODEX_20260920_BIOHUB_SCORE_PAIR2_V01.md",
+      "sha256": "9e365ea35c3d19d448e4d677fa10b4e8e3a3e55974a6bebcdeacfbe4406ef0e8"
+    },
+    {
+      "id": "changed-path-tests",
+      "type": "command",
+      "argv": [
+        "python3",
+        "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/test_changes.py"
+      ],
+      "expected_exit": 0,
+      "timeout_seconds": 120
+    },
+    {
+      "id": "execution",
+      "type": "command",
+      "argv": [
+        "python3",
+        "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/verify.py",
+        "--execution"
+      ],
+      "expected_exit": 0,
+      "timeout_seconds": 120
+    },
+    {
+      "id": "delivery",
+      "type": "command",
+      "argv": [
+        "python3",
+        "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/verify.py",
+        "--delivery"
+      ],
+      "expected_exit": 0,
+      "timeout_seconds": 120
+    },
+    {
+      "id": "git",
+      "type": "git",
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true
+    }
+  ]
+}

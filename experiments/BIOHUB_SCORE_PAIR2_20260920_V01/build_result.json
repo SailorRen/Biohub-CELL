@@ -1,0 +1,69 @@
+{
+  "candidates": {
+    "S50": {
+      "ref": "sailorren/biohub-g1-secondary050-20260920",
+      "notebook_sha256": "967b6265528bc29ac9a7725dd8463e3f0bc1138f5a9df52ebf067c3958c60fd6",
+      "metadata_sha256": "9e3d6da7cc2e2af60e2cfed908b0a7ce823452e29cac6b5d5a5273b22dcaa3ed",
+      "inputs": {
+        "dataset_sources": [
+          "pilkwang/biohub-deepcenter-unet3d-center-prior-v1/5",
+          "pilkwang/biohub-temporal-unet3d-seed314159-v1/2",
+          "pilkwang/biohub-tracking-support-pack-50ep-v1/10"
+        ],
+        "kernel_sources": [
+          "sailorren/biohub-division-train-20260914/1"
+        ],
+        "competition_sources": [
+          "biohub-cell-tracking-during-development"
+        ],
+        "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+        "machine_shape": "NvidiaTeslaT4"
+      },
+      "change": {
+        "BIOHUB_SECONDARY_DETECTION_WEIGHT": [
+          0.8,
+          0.5
+        ]
+      },
+      "changed_original_cells": [
+        3,
+        4,
+        5
+      ]
+    },
+    "G58": {
+      "ref": "sailorren/biohub-g1-gap058-20260920",
+      "notebook_sha256": "8c4652d8d2fcc139a19406a15466b23f294ef4ef8d6ebdd336775206f81496ca",
+      "metadata_sha256": "b99d0c53e1774c15e3a0ff27ebc912f3b3644b97e4a204c53c59e70d3d0d6a3c",
+      "inputs": {
+        "dataset_sources": [
+          "pilkwang/biohub-deepcenter-unet3d-center-prior-v1/5",
+          "pilkwang/biohub-temporal-unet3d-seed314159-v1/2",
+          "pilkwang/biohub-tracking-support-pack-50ep-v1/10"
+        ],
+        "kernel_sources": [
+          "sailorren/biohub-division-train-20260914/1"
+        ],
+        "competition_sources": [
+          "biohub-cell-tracking-during-development"
+        ],
+        "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+        "machine_shape": "NvidiaTeslaT4"
+      },
+      "change": {
+        "final GAP_CLOSE_UM": [
+          5.0,
+          5.8
+        ]
+      },
+      "changed_original_cells": [
+        4,
+        5
+      ]
+    }
+  },
+  "runtime_sha256": "943324cae999ce48f4a9b9822937f815b1f8ee70d57208dead55780fe9b92529",
+  "official_reader_sha256": "c0fe1868d4550235c4673d4a3fc5e2d6ab0402f3cd0bac73eec8d1348eb9690d",
+  "all_code_cells_ast": "PASS",
+  "g1_sha256": "de010e6ba142be0e01000093e061ef7d3388ddaa411185b40d26c63a3febe731"
+}
