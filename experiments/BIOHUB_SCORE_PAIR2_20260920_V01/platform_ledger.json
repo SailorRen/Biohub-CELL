@@ -1,14 +1,65 @@
 {
   "task_id": "BIOHUB_SCORE_PAIR2_20260920_V01",
-  "requests": [],
+  "requests": [
+    {
+      "action": "SaveAndRun",
+      "arm": "S50",
+      "ref": "sailorren/biohub-g1-secondary050-20260920",
+      "source_commit": "e8f7d0396cd7aa2af647594bad5367935cc76cec",
+      "source_sha256": "967b6265528bc29ac9a7725dd8463e3f0bc1138f5a9df52ebf067c3958c60fd6",
+      "at_utc": "2026-09-20T15:45:56.949593+00:00",
+      "at_shanghai": "2026-09-20T23:45:56.949613+08:00",
+      "status": "RUNNING_VERIFIED",
+      "counted": 1,
+      "response": {
+        "ref": "/code/sailorren/biohub-g1-secondary050-20260920",
+        "url": "https://www.kaggle.com/code/sailorren/biohub-g1-secondary050-20260920",
+        "versionNumber": 1,
+        "kernelId": 135123707
+      },
+      "finished_at_utc": "2026-09-20T15:46:01.106980+00:00",
+      "kernel_id": 135123707,
+      "version": 1,
+      "script_version_id": 351350449,
+      "last_observed_at_utc": "2026-09-20T15:47:24.094420+00:00",
+      "last_kernel_status": "RUNNING",
+      "source_equal": true,
+      "private": true
+    },
+    {
+      "action": "SaveAndRun",
+      "arm": "G58",
+      "ref": "sailorren/biohub-g1-gap058-20260920",
+      "source_commit": "e8f7d0396cd7aa2af647594bad5367935cc76cec",
+      "source_sha256": "8c4652d8d2fcc139a19406a15466b23f294ef4ef8d6ebdd336775206f81496ca",
+      "at_utc": "2026-09-20T15:46:38.464450+00:00",
+      "at_shanghai": "2026-09-20T23:46:38.464469+08:00",
+      "status": "RUNNING_VERIFIED",
+      "counted": 1,
+      "response": {
+        "ref": "/code/sailorren/biohub-g1-gap058-20260920",
+        "url": "https://www.kaggle.com/code/sailorren/biohub-g1-gap058-20260920",
+        "versionNumber": 1,
+        "kernelId": 135123769
+      },
+      "finished_at_utc": "2026-09-20T15:46:42.800823+00:00",
+      "kernel_id": 135123769,
+      "version": 1,
+      "script_version_id": 351350591,
+      "last_observed_at_utc": "2026-09-20T15:47:27.798576+00:00",
+      "last_kernel_status": "RUNNING",
+      "source_equal": true,
+      "private": true
+    }
+  ],
   "counts": {
-    "new_private_notebooks": 0,
-    "save_and_run": 0,
+    "new_private_notebooks": 2,
+    "save_and_run": 2,
     "formal_submission": 0,
     "training": 0,
     "dataset_write": 0,
     "final_selection_change": 0,
     "v1_f1_write": 0
   },
-  "status": "NOT_STARTED"
+  "status": "PLATFORM_READBACK_RECORDED"
 }

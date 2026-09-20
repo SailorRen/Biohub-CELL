@@ -3,7 +3,7 @@
   "account": "sailorren",
   "gpu_available_minutes": 1238,
   "gpu_total_hours": 30,
-  "active_kernel_sessions": 0,
+  "active_kernel_sessions": 1,
   "active_events": 0,
   "absent_slugs": [
     "sailorren/biohub-g1-secondary050-20260920",
@@ -12,5 +12,6 @@
   "absence_basis": "repository ledger/index and full live owned list checked again atomically before request",
   "quota_window": "daily API count uses UTC date; exact daily reset not exposed by inspected UI/API",
   "visible_gpu_refresh_time_sdk": "2026-09-26T00:00:00.000Z",
-  "gpu_sdk_discrepancy": "SDK total 6h differs from UI 30h; use live UI available balance, retain raw both"
+  "gpu_sdk_discrepancy": "SDK total 6h differs from UI 30h; use live UI available balance, retain raw both",
+  "active_session_basis": "S50 single accepted request; start UI had zero. Rechecked SDK target/owned list before each launch."
 }
