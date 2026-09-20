@@ -1,6 +1,6 @@
 {
   "observed_at_utc": "2026-09-20T23:29:30.874244+00:00",
-  "task_delivery": "FINAL_PAYLOAD_READBACK_PENDING",
+  "task_delivery": "PAYLOAD_BYTES_VERIFIED",
   "execution": "FORMAL_PAIR_ACCEPTED",
   "observation_paused_by_user": false,
   "resume_condition": "User notified completion and authorized resumption",
@@ -53,5 +53,8 @@
     "final_selection_change": 0,
     "v1_f1_write": 0
   },
-  "completion_claim_recorded": false
+  "completion_claim_recorded": true,
+  "payload_commit": "2fdc162e7852dcc3e807526e93c4a9a72f3dfb37",
+  "remote_verified_files": 59,
+  "completion_claim_scope": "Formal submission execution and delivery only; Public scores pending"
 }

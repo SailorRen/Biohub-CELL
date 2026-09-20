@@ -1,11 +1,29 @@
 {
-  "commit": "37fbcb72cf8e8503c3b5139ab8bc4c17fa92a018",
-  "remote_head": "37fbcb72cf8e8503c3b5139ab8bc4c17fa92a018",
+  "commit": "2fdc162e7852dcc3e807526e93c4a9a72f3dfb37",
+  "remote_head": "2fdc162e7852dcc3e807526e93c4a9a72f3dfb37",
   "files": [
     {
       "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/G58/candidate.ipynb",
       "sha256": "8c4652d8d2fcc139a19406a15466b23f294ef4ef8d6ebdd336775206f81496ca",
       "bytes": 257147,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/G58/formal_input_collection.json",
+      "sha256": "5630afc08fb29312da0f8a9e45f867ed3bd3f78d0fe9427949071d20cd107103",
+      "bytes": 4400,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/G58/formal_precheck.json",
+      "sha256": "141beba19d8756a5cea93cf9559cfe715c1664d8a13ad7c239154a2eec8c9ab9",
+      "bytes": 4528,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/G58/formal_status.json",
+      "sha256": "b44589fc725ff5ea471b1cc3e18f1d580d8ec4f7bbba6e638036f84f54698a47",
+      "bytes": 517,
       "equal": true
     },
     {
@@ -16,8 +34,14 @@
     },
     {
       "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/G58/platform_latest.json",
-      "sha256": "3d468f178d37078a63faf3eebb3035cb4753935492e9a3462e6717ace340499e",
-      "bytes": 1847,
+      "sha256": "1578d959d86f40b3349baf4a01873bf17b387a5d8cdd45136c9cba88151c5fad",
+      "bytes": 1910,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/G58/production_receipt.json",
+      "sha256": "de8550ea855059d2a74c9ad3dc1c224f530dc36887a00d93460a785812d5c357",
+      "bytes": 6266,
       "equal": true
     },
     {
@@ -45,6 +69,24 @@
       "equal": true
     },
     {
+      "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/S50/formal_input_collection.json",
+      "sha256": "ec7f769558e06699b77b3bac966c2166b1abf03c36adf8b211d34ef7a5c8d8b9",
+      "bytes": 4282,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/S50/formal_precheck.json",
+      "sha256": "e1476d92cb84e9b2103c0a1a38783389a966c6b1e7445b3795e2b257df359d5d",
+      "bytes": 4658,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/S50/formal_status.json",
+      "sha256": "f0889cb63926cc7486d80d5ca6efd3325a2aaa088ef6b615cf17e52c281bf828",
+      "bytes": 523,
+      "equal": true
+    },
+    {
       "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/S50/kernel-metadata.json",
       "sha256": "9e3d6da7cc2e2af60e2cfed908b0a7ce823452e29cac6b5d5a5273b22dcaa3ed",
       "bytes": 852,
@@ -52,8 +94,14 @@
     },
     {
       "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/S50/platform_latest.json",
-      "sha256": "7257766ad9fa4206ac5098df579ea3d34531299fbf11d2f9cfd3f12e834271d5",
-      "bytes": 1871,
+      "sha256": "1db79444f12d9152396cec77af83539b3a169eeb3811fe2b71e93a4c1c860809",
+      "bytes": 1934,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/S50/production_receipt.json",
+      "sha256": "b7ecb81cdd6a6d1afa7bdf5e5c5f0305d84c215030eabedd468c6c0657dfae83",
+      "bytes": 4913,
       "equal": true
     },
     {
@@ -78,6 +126,12 @@
       "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/S50/worker_live_observation.json",
       "sha256": "c43d40aca0a4cd6364779f7fdbb3bf9bb7cc5ebf7828cd5435ab4cd3419c1b9e",
       "bytes": 532,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/baseline_restoration.json",
+      "sha256": "bcad0f2b714ab4ff5fd520d3d2445c10ac155376d2cff1124e339218dcd1a59a",
+      "bytes": 430,
       "equal": true
     },
     {
@@ -112,14 +166,62 @@
     },
     {
       "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/execution_status.json",
-      "sha256": "293c4717f6ea26b322980e16684b8b33aeb66da18e7bc6cccef32bfb2fc37ee4",
-      "bytes": 1670,
+      "sha256": "8c13f47a4115f1ca300a8ef946e9253a25ec9475d3121a98fc030e143a02dfaf",
+      "bytes": 1882,
       "equal": true
     },
     {
       "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/fixed_sources.json",
       "sha256": "01b26b710ee8fe739f4f7d360c117c59bb0b4adce22d3345eb2ed2eb56387dcd",
       "bytes": 1986,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/formal_code_readback.json",
+      "sha256": "8fd9a58e54c1e0cfb50d3d3ada5a9e3fc2dafe8ee693c89e466db831d556c7a1",
+      "bytes": 11669,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/formal_prewrite_G58.json",
+      "sha256": "82e3086ca6ce87969375fdba4657ff501d41ea4c4c4fadf3257485d16bc8e3eb",
+      "bytes": 1746,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/formal_prewrite_S50.json",
+      "sha256": "23efecaeddee13015f785a93c389edaa82929a4ebb5bd9fdebc07970e08bc841",
+      "bytes": 1633,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/formal_status_snapshot.json",
+      "sha256": "61d7fadfb87bb5396d3f1dd584d7b09a95a3b19c8788aff8b7e76dab64263f1a",
+      "bytes": 7345,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/formal_ui_prewrite_G58.json",
+      "sha256": "8a2e2a7e0ca7588a7b9fca9aee7ff9e6c04f4f2954caf0bb2f35f79e180efd5b",
+      "bytes": 706,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/formal_ui_prewrite_S50.json",
+      "sha256": "caa3371441f805dae6251d0e0cbb280df4dec43d1672c2088826866074fa8d62",
+      "bytes": 613,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/formal_ui_readback.json",
+      "sha256": "a241add0266e58c8d130a75c4ec390346a399aaeb05c52d0d8be4c71d351f174",
+      "bytes": 652,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/github_readback.json",
+      "sha256": "6ec5bb5ea9fb87341d03feb05c18a3a285f42dcbb96e5932992f7433bec4684b",
+      "bytes": 8961,
       "equal": true
     },
     {
@@ -142,8 +244,8 @@
     },
     {
       "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/platform_ledger.json",
-      "sha256": "678eca4d296397be942d0ed5da18e92007aa5f50debced0e1393411af147bbc8",
-      "bytes": 2272,
+      "sha256": "cd6aa1897470c72c703ea71853f3729cb075e8041b654ddb5cd0975586e8d228",
+      "bytes": 4394,
       "equal": true
     },
     {
@@ -168,6 +270,12 @@
       "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/protected_state.json",
       "sha256": "37fbf1da61668c8a0d828b10760dd4745fb3cf693aaec452543a25ab04dfcc46",
       "bytes": 393,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/protected_state_final.json",
+      "sha256": "f2c688f5c52168e251541ff90dfea16f6a29ef849a8780de7313eeee652a786c",
+      "bytes": 486,
       "equal": true
     },
     {
@@ -198,6 +306,12 @@
       "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/read_pair.py",
       "sha256": "faa5d2f63e9f07bffc4821b7166202562818c03d6309eda5cd307a795349fe17",
       "bytes": 3013,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_SCORE_PAIR2_20260920_V01/restore_baseline.py",
+      "sha256": "7589fade3f10de3f835bbc70f4f56174df9d06626fa8b96789aee84c722cf49e",
+      "bytes": 2160,
       "equal": true
     },
     {
@@ -232,8 +346,8 @@
     },
     {
       "path": "reports/20260920_BIOHUB_SCORE_PAIR2_V01.md",
-      "sha256": "66c80913b8b4328bd9f42e276e7c9c21d3566de00957407391fd10697f80b406",
-      "bytes": 3313,
+      "sha256": "08fbc7fb6b4cf6529a3e69c7842d4b606fb7824b087f58f45cbc1eec417d6715",
+      "bytes": 5798,
       "equal": true
     },
     {
@@ -245,5 +359,5 @@
   ],
   "status": "COMPLETED_VERIFIED",
   "scope": "fixed payload bytes only",
-  "observed_at_utc": "2026-09-20T16:18:54.114401+00:00"
+  "observed_at_utc": "2026-09-20T23:33:34.520727+00:00"
 }
