@@ -1,0 +1,13 @@
+{
+  "source": "CUA visible Kaggle signed-in account menu and Active Events",
+  "observed_at_shanghai": "2026-09-20T11:24:00+08:00",
+  "time_precision": "minute",
+  "observed_at_utc": "2026-09-20T03:24:00+00:00",
+  "gpu_visible": "25h 59m available of 30h",
+  "active_events": [
+    "Biohub competition submission Scoring..."
+  ],
+  "final_selection": "0/2",
+  "quota_discrepancy": "SDK total 6h versus UI 30h; preserve both, UI is displayed account quota",
+  "writes": 0
+}

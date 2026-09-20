@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_DIVGATE_PAIR_20260920_V01",
+  "goal": "按固定任务执行 A18/B22 私有生产 Notebook、工程验收后各至多一次正式提交，分离运行/评分/远端交付状态。",
+  "scope": {
+    "in_scope": [
+      "仅任务分支 codex/divgate-pair-20260920",
+      "G1 完整原选参后最终门槛 0.18 / 0.22",
+      "原任务规定的工程验收、8视野辅助评价和远端逐字节回读"
+    ],
+    "out_of_scope": [
+      "main、V1/F1及其他仓库写入",
+      "训练、Dataset 写入、最终选择修改",
+      "新增算法、其他参数、额外实验或自动监控"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "frozen_at_utc": "2026-09-20T03:23:15.512269+00:00",
+  "frozen_at_shanghai": "2026-09-20T11:23:15.512269+08:00",
+  "task_source": {
+    "commit": "cd18d89d54f9dee9079d307bad8ae7021dfa0004",
+    "path": "tasks/CODEX_20260920_BIOHUB_DIVGATE_PAIR_V01.md",
+    "blob": "e678da70880cb134992626ff1f1bfc597fe09239",
+    "sha256": "8e84b1c618adbb95d0b47a12e59740d1e8872b27e71a22f1349cccc6a3e2d520",
+    "bytes": 17826
+  },
+  "research_commit": "6ec61f54cd5fb5b93fe7cd1dbc37b01a8e41bc57",
+  "g1_commit": "e9c7c63b896812660a78ec55fc3284c10f85e776",
+  "g1_notebook_sha256": "de010e6ba142be0e01000093e061ef7d3388ddaa411185b40d26c63a3febe731",
+  "gate_weight_sha256": "0a1f9b93bb529e70f4f7c2ba0907eea8b4cecd2befccc8ba1fb75e569edf77a0",
+  "budgets": {
+    "new_private_notebooks": 2,
+    "save_and_run": 3,
+    "shared_engineering_reserve": 1,
+    "formal_submission": 2,
+    "training": 0,
+    "dataset_write": 0,
+    "final_selection_change": 0,
+    "v1_f1_write": 0
+  },
+  "candidates": {
+    "A18": 0.18,
+    "B22": 0.22
+  },
+  "stop_conditions": [
+    "identity/input/config/graph/final CSV integrity failure",
+    "actual platform quota insufficient: A18 then B22, no cross-day auto continuation",
+    "uncertain request: count budget and read back, never blind retry",
+    "full production identical to G1: MEASURED_NO_EFFECT, do not submit",
+    "both candidates identical: deduplicate",
+    "auxiliary evaluation gaps disclosed; do not select by proxy gain"
+  ],
+  "acceptance": [
+    {
+      "id": "task-byte-identity",
+      "type": "file",
+      "path": "tasks/CODEX_20260920_BIOHUB_DIVGATE_PAIR_V01.md",
+      "sha256": "8e84b1c618adbb95d0b47a12e59740d1e8872b27e71a22f1349cccc6a3e2d520"
+    },
+    {
+      "id": "engineering",
+      "type": "command",
+      "argv": [
+        "/opt/anaconda3/envs/ml/bin/python",
+        "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/test_runtime.py"
+      ],
+      "expected_exit": 0,
+      "timeout_seconds": 120
+    },
+    {
+      "id": "execution-evidence",
+      "type": "command",
+      "argv": [
+        "/opt/anaconda3/envs/ml/bin/python",
+        "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/verify.py",
+        "--execution"
+      ],
+      "expected_exit": 0,
+      "timeout_seconds": 120
+    },
+    {
+      "id": "delivery-evidence",
+      "type": "command",
+      "argv": [
+        "/opt/anaconda3/envs/ml/bin/python",
+        "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/verify.py",
+        "--delivery"
+      ],
+      "expected_exit": 0,
+      "timeout_seconds": 120
+    },
+    {
+      "id": "git",
+      "type": "git",
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true
+    }
+  ]
+}
