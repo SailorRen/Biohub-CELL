@@ -1,0 +1,140 @@
+{
+  "checks": [
+    {
+      "details": {
+        "bytes": 17826,
+        "path": "tasks/CODEX_20260920_BIOHUB_DIVGATE_PAIR_V01.md",
+        "sha256": "8e84b1c618adbb95d0b47a12e59740d1e8872b27e71a22f1349cccc6a3e2d520"
+      },
+      "id": "task-byte-identity",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "argument_count": 2,
+        "argv_sha256": "32a0501d0ddec6b11095173f763511e76e662045029514aeb1e462552216d1cd",
+        "cwd": ".",
+        "executable": "python",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 739,
+          "sha256": "0fbc0e3ca1d4d9d9d66b48b88d1059b6bab4d108a3d21aedee6c67608af3c60a"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stdout_text_checks": 0
+      },
+      "id": "engineering",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "argument_count": 3,
+        "argv_sha256": "ee67bcf4f6052a76129bdbc39aea66ba616585548384a1d7f594ac60d897a9c7",
+        "cwd": ".",
+        "executable": "python",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 19,
+          "sha256": "0653a411b31f9b5e9a7b66b7b6af876c6f3ead420563be4e6d5552fcab81dbb1"
+        },
+        "stdout_text_checks": 0
+      },
+      "id": "execution-evidence",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "argument_count": 3,
+        "argv_sha256": "0a738d41873e0774e9d6318d5bb068ff9312bbf6195be1a22e129c5452993126",
+        "cwd": ".",
+        "executable": "python",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 31,
+          "sha256": "9cd8153958622ca49f7cfc3a8485431505d39d355106b75471acfc3ecffacba3"
+        },
+        "stdout_text_checks": 0
+      },
+      "id": "delivery-evidence",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "branch": "codex/divgate-pair-20260920",
+        "dirty_entry_count": 0,
+        "head": "566339e4a886b9be109feffa88928b1d22aa64b4",
+        "remote": "origin",
+        "remote_exists": true,
+        "remote_head": "566339e4a886b9be109feffa88928b1d22aa64b4",
+        "remote_url_sha256": "294339ae4bf28ec437260f32bd064c06212de22a7026887c59e47f72ef414b8e",
+        "repository": "."
+      },
+      "id": "git",
+      "outcome": "PASS",
+      "reason": "Git evidence passed",
+      "required": true,
+      "type": "git"
+    }
+  ],
+  "claimed_at": "2026-09-20T14:59:24+08:00",
+  "claimed_status": "CLAIMED_COMPLETE",
+  "contract_path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/contract.json",
+  "contract_sha256": "f236c8e2f73d8b3e9ed4ef6e04346caaeddc954e05cf7b6992104b1b2018c07e",
+  "final_status": "COMPLETED_VERIFIED",
+  "finished_at": "2026-09-20T14:59:30+08:00",
+  "integrity_scope": "local-sha256-only",
+  "limitations": [
+    "The conclusion is limited to the frozen contract and the implemented checks.",
+    "The verifier does not prove omitted requirements or future stability.",
+    "A local or Git hash is not a trusted signature against a malicious writer."
+  ],
+  "optional_warning_check_ids": [],
+  "reason": "all required automated checks passed",
+  "required_summary": {
+    "failed_or_blocked": 0,
+    "human_review": 0,
+    "passed": 5
+  },
+  "run_id": "20260920T145924+0800-5287b1e8",
+  "schema_version": "1.0",
+  "started_at": "2026-09-20T14:59:24+08:00",
+  "task_id": "BIOHUB_DIVGATE_PAIR_20260920_V01"
+}

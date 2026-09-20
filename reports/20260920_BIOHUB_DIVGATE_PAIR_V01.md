@@ -44,6 +44,6 @@ G1 submission 56270217 / SV350197436 的实时回读为 COMPLETE、Public 0.948�
 
 实际 CSV、完整图、权重和原始大日志只留本地私有临时目录，不写 GitHub。仓库仅代码、小型清单、哈希、汇总、平台回执和报告。历史运行中及只读结果报告保留在 report_before_formal.md，历史状态不代表当前状态。
 
-6 项人工图工程测试通过；冻结 verify.py --execution 返回 EXECUTION_VERIFIED。最终合同验收见 acceptance_verification.json；GitHub 固定提交逐字节核验见 github_readback.json。上述核验范围是授权运行、输出复核、正式提交及交付，**不包含尚未返回的正式评分或效果结论**。保护前后证据见 formal_protected_refs_before.json / formal_protected_refs_after.json。
+6 项人工图工程测试通过；冻结 verify.py --execution 返回 EXECUTION_VERIFIED。原冻结合同 5/5 必要检查通过（原文字节、工程测试、执行证据、交付证据、干净 Git 与远端 HEAD），在合同范围内为 COMPLETED_VERIFIED，见 acceptance_verification.json。验收 Git HEAD 为 566339e4a886b9be109feffa88928b1d22aa64b4；正式交付正文提交 428fc578a7136ec1a8d93c54a13067ee82f547ef 的 92 文件已通过 GitHub 固定提交逐字节核验，见 github_readback.json。上述核验范围是授权运行、输出复核、正式提交及交付，**不包含尚未返回的正式评分或效果结论**。保护前后证据见 formal_protected_refs_before.json / formal_protected_refs_after.json。
 
 后续仅可按精确 submission ID 只读查分；本批正式预算已耗尽，不得重提、改版或自动开启下一轮。
