@@ -1,3 +1,28 @@
+# 结果读取更新：2026-09-20 14:27 上海 / 06:27 UTC
+
+**A18、B22 普通运行均 COMPLETE；正式 submission 均未发起，Public 均未知。** 本次只读平台，未重跑、未提交。完整源码与冻结版本仍一致。
+
+|候选|Notebook / Version / ScriptVersionId|生产回执时间（上海）|完整生产图相对 G1|8 视野官方诊断分|相对同源 G1|
+|---|---|---|---|---:|---:|
+|A18|135051720 / V1 / 351207161|14:21:39|节点 +12，边 +16/-0，分裂 +7|0.9440708304724714|0|
+|B22|135052315 / V1 / 351207989|14:19:51|节点 -22，边 +0/-25，分裂 -8|0.9440708304724714|0|
+
+已读取生产回执：engineering_status=PASS、原 G1 的 0.20 重放等价、原始图未变、CSV 往返 PASS；真实最终门槛分别 0.18/0.22，两臂都保持 tight55 原选择。两臂最终 canonical hash 不同，且均不同于同源 G1。
+
+这些是冻结源码运行后生成的实际回执；本次尚未下载最终 CSV 做提交前独立复核，不能把回执 PASS 表述为完整正式提交门禁已经闭合。后续正式提交阶段仍未完成。
+
+辅助诊断：两臂各保存 16 条逐视野记录（G1 和候选各 8），共 2 个胚胎，无辅助评价缺口。逐行 edge/division TP/FP/FN 加总与官方摘要一致。三组总体 edge TP/FP/FN 均为 5542/236/209，division TP/FP/FN 均为 2/1/10；44b6 分组分数均 0.9327802761976679，6bba 均 0.9467717806290732。诊断图发生变化而评分持平，只表示此次官方评价统计未变化，不能推断隐藏输出相同或 Public 持平。
+
+全部 8 视野与 secondary 训练归档标识重叠，标签为 TRAIN_SEEN_DIAGNOSTIC；primary/DeepCenter 覆盖未知。该小样本不是独立泛化验证，0.94407083 **不是 Public 分数**。
+
+本次实时 submission 列表：G1 submission 56270217 为 COMPLETE / Public 0.948；现有 F1 submission 56375774 仍为 PENDING，无 Public。没有 A18/B22 正式提交。累计预算仍为 Notebook 2/2、Save & Run 2/3、submission 0/2，其他受禁操作均 0。
+
+本次证据：各臂 output/production_receipt.json、summary.json、diagnostic_results.jsonl、collection.json；根目录 diagnostic_results.jsonl 为两臂合并记录，summary.json 为当前状态。仅保存小型结果，运行环境变量快照已移除；不提交 CSV、影像、完整图或权重。远端同步验证见 result_github_readback.json。
+
+`execution_status=ORDINARY_COMPLETE_RECEIPTS_READ`；`score_status=NOT_SUBMITTED`；本次更新的 delivery 状态以 result_github_readback.json 为准。以下为此前运行中阶段的历史快照，不代表当前状态。
+
+---
+
 # BIOHUB_DIVGATE_PAIR_20260920_V01 执行回执
 
 本批已实际创建并 Save & Run **两个独立私有 Notebook**；两臂仍在普通生产运行，正式 submission **0 次**。没有本批 Public 分数，未宣称实验完成或提分。

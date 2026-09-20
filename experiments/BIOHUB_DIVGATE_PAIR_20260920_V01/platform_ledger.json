@@ -9,7 +9,7 @@
       "source_sha256": "5c1447b8b4dc73e2981c523959de3b227f7645e948f8c9e6f8fab5decf6e73e1",
       "at_utc": "2026-09-20T03:37:32.356392+00:00",
       "at_shanghai": "2026-09-20T11:37:32.356437+08:00",
-      "status": "RUNNING_VERIFIED",
+      "status": "READBACK_VERIFIED",
       "counted": 1,
       "response": {
         "ref": "/code/sailorren/biohub-g1-divgate018-20260920",
@@ -21,8 +21,8 @@
       "kernel_id": 135051720,
       "version": 1,
       "script_version_id": 351207161,
-      "last_observed_at_utc": "2026-09-20T03:43:07.384072+00:00",
-      "last_kernel_status": "RUNNING",
+      "last_observed_at_utc": "2026-09-20T06:26:30.799834+00:00",
+      "last_kernel_status": "COMPLETE",
       "source_equal": true,
       "private": true
     },
@@ -34,7 +34,7 @@
       "source_sha256": "f9751f48220b71e5160aa04b4b712b0c13d205985cbd2d5e464d9ae6a34cc65e",
       "at_utc": "2026-09-20T03:41:30.974452+00:00",
       "at_shanghai": "2026-09-20T11:41:30.974476+08:00",
-      "status": "RUNNING_VERIFIED",
+      "status": "READBACK_VERIFIED",
       "counted": 1,
       "response": {
         "ref": "/code/sailorren/biohub-g1-divgate022-20260920",
@@ -46,8 +46,8 @@
       "kernel_id": 135052315,
       "version": 1,
       "script_version_id": 351207989,
-      "last_observed_at_utc": "2026-09-20T03:43:10.009358+00:00",
-      "last_kernel_status": "RUNNING",
+      "last_observed_at_utc": "2026-09-20T06:26:32.709284+00:00",
+      "last_kernel_status": "COMPLETE",
       "source_equal": true,
       "private": true
     }

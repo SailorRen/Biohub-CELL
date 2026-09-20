@@ -1,0 +1,108 @@
+"stream_name":"stdout","time":8632.96950488,"data":"  [44b6_341df25f] after edge-filter+motion-relink: 8523 nodes, 8210 edges\n"}
+,{"stream_name":"stdout","time":8634.645016822,"data":"  [44b6_341df25f] after gap-closing (single-frame + gap2): 8569 nodes, 8290 edges\n"}
+,{"stream_name":"stdout","time":8653.900862193,"data":"SPRINT_PRODUCTION_SAFE_DIV 44b6_341df25f 44b6 13 0 3\n"}
+,{"stream_name":"stdout","time":8654.014198928,"data":"  [44b6_341df25f] after safe-division repair: 8569 nodes, 8298 edges (geometric_candidates=36, deepcenter_rejected=27, post_veto_candidates=9, added=8, cap_skipped=0, mutual_nn_rejected=3, divergence_rejected=140)\n"}
+,{"stream_name":"stdout","time":8654.014240716,"data":"  [44b6_341df25f] after division-geometry-filter+prune-isolated: 8569 nodes, 8298 edges\n"}
+,{"stream_name":"stdout","time":8654.014247876,"data":"  [44b6_341df25f] after short-track filtering: 8413 nodes, 8176 edges (components_removed=34)\n"}
+,{"stream_name":"stdout","time":8655.842516129,"data":"  [44b6_341df25f] FINAL: 8413 nodes, 8176 edges\n"}
+,{"stream_name":"stdout","time":8657.606203057,"data":"  [6bba_062c8d37] after edge-filter+motion-relink: 5997 nodes, 5648 edges\n"}
+,{"stream_name":"stdout","time":8658.675266598,"data":"  [6bba_062c8d37] after gap-closing (single-frame + gap2): 6048 nodes, 5743 edges\n"}
+,{"stream_name":"stdout","time":8666.668035924,"data":"SPRINT_PRODUCTION_SAFE_DIV 6bba_062c8d37 6bba 4 0 2\n"}
+,{"stream_name":"stdout","time":8666.887653288,"data":"  [6bba_062c8d37] after safe-division repair: 6048 nodes, 5745 edges (geometric_candidates=15, deepcenter_rejected=13, post_veto_candidates=2, added=2, cap_skipped=0, mutual_nn_rejected=3, divergence_rejected=63)\n"}
+,{"stream_name":"stdout","time":8666.887716005,"data":"  [6bba_062c8d37] after division-geometry-filter+prune-isolated: 6022 nodes, 5745 edges\n"}
+,{"stream_name":"stdout","time":8666.887722588,"data":"  [6bba_062c8d37] after short-track filtering: 5853 nodes, 5621 edges (components_removed=45)\n"}
+,{"stream_name":"stdout","time":8667.96568723,"data":"  [6bba_062c8d37] FINAL: 5853 nodes, 5621 edges\n"}
+,{"stream_name":"stdout","time":8695.259248111,"data":"  [6bba_07e24132] after edge-filter+motion-relink: 29751 nodes, 28212 edges\n"}
+,{"stream_name":"stdout","time":8705.521576545,"data":"  [6bba_07e24132] after gap-closing (single-frame + gap2): 30088 nodes, 28828 edges\n"}
+,{"stream_name":"stdout","time":8744.61455353,"data":"SPRINT_PRODUCTION_SAFE_DIV 6bba_07e24132 6bba 6 0 2\n"}
+,{"stream_name":"stdout","time":8744.732179683,"data":"  [6bba_07e24132] after safe-division repair: 30088 nodes, 28832 edges (geometric_candidates=117, deepcenter_rejected=113, post_veto_candidates=4, added=4, cap_skipped=0, mutual_nn_rejected=68, divergence_rejected=1011)\n"}
+,{"stream_name":"stdout","time":8744.732213922,"data":"  [6bba_07e24132] after division-geometry-filter+prune-isolated: 30079 nodes, 28832 edges\n"}
+,{"stream_name":"stdout","time":8744.732221214,"data":"  [6bba_07e24132] after short-track filtering: 29179 nodes, 28140 edges (components_removed=208)\n"}
+,{"stream_name":"stdout","time":8750.151373546,"data":"  [6bba_07e24132] FINAL: 29179 nodes, 28140 edges\n"}
+,{"stream_name":"stdout","time":8753.29443007,"data":"  [6bba_085bf656] after edge-filter+motion-relink: 8417 nodes, 8092 edges\n"}
+,{"stream_name":"stdout","time":8754.158117776,"data":"  [6bba_085bf656] after gap-closing (single-frame + gap2): 8438 nodes, 8131 edges\n"}
+,{"stream_name":"stdout","time":8765.307966874,"data":"SPRINT_PRODUCTION_SAFE_DIV 6bba_085bf656 6bba 4 0 0\n"}
+,{"stream_name":"stdout","time":8765.522284169,"data":"  [6bba_085bf656] after safe-division repair: 8438 nodes, 8135 edges (geometric_candidates=21, deepcenter_rejected=17, post_veto_candidates=4, added=4, cap_skipped=0, mutual_nn_rejected=4, divergence_rejected=102)\n"}
+,{"stream_name":"stdout","time":8765.522346736,"data":"  [6bba_085bf656] after division-geometry-filter+prune-isolated: 8435 nodes, 8135 edges\n"}
+,{"stream_name":"stdout","time":8765.522355765,"data":"  [6bba_085bf656] after short-track filtering: 8300 nodes, 8030 edges (components_removed=30)\n"}
+,{"stream_name":"stdout","time":8767.154099048,"data":"  [6bba_085bf656] FINAL: 8300 nodes, 8030 edges\n"}
+,{"stream_name":"stdout","time":8794.609638886,"data":"  [6bba_09961292] after edge-filter+motion-relink: 29955 nodes, 28827 edges\n"}
+,{"stream_name":"stdout","time":8802.725834492,"data":"  [6bba_09961292] after gap-closing (single-frame + gap2): 30167 nodes, 29212 edges\n"}
+,{"stream_name":"stdout","time":8834.940590332,"data":"SPRINT_PRODUCTION_SAFE_DIV 6bba_09961292 6bba 26 0 7\n"}
+,{"stream_name":"stdout","time":8835.037240044,"data":"  [6bba_09961292] after safe-division repair: 30167 nodes, 29230 edges (geometric_candidates=92, deepcenter_rejected=74, post_veto_candidates=18, added=18, cap_skipped=0, mutual_nn_rejected=66, divergence_rejected=972)\n"}
+,{"stream_name":"stdout","time":8835.037278946,"data":"  [6bba_09961292] after division-geometry-filter+prune-isolated: 30163 nodes, 29230 edges\n"}
+,{"stream_name":"stdout","time":8835.037286023,"data":"  [6bba_09961292] after short-track filtering: 29742 nodes, 28909 edges (components_removed=100)\n"}
+,{"stream_name":"stdout","time":8841.084718785,"data":"  [6bba_09961292] FINAL: 29742 nodes, 28909 edges\n"}
+,{"stream_name":"stdout","time":8841.413416683,"data":"Wrote /kaggle/working/divgate_pair/validation_g1.csv with 370,948 rows\n"}
+,{"stream_name":"stdout","time":8841.413444649,"data":"Node rows: 188,826 | edge rows: 182,122\n"}
+,{"stream_name":"stdout","time":8841.413449667,"data":"Wrote /kaggle/working/divgate_pair/validation_g1_run_stats.csv\n"}
+,{"stream_name":"stdout","time":8845.845195504,"data":"Found 8 prediction graphs\n"}
+,{"stream_name":"stdout","time":8907.827872157,"data":"  [44b6_12dfb391] after edge-filter+motion-relink: 45351 nodes, 43042 edges\n"}
+,{"stream_name":"stdout","time":8920.65468877,"data":"  [44b6_12dfb391] after gap-closing (single-frame + gap2): 46007 nodes, 44283 edges\n"}
+,{"stream_name":"stdout","time":8971.696772881,"data":"SPRINT_PRODUCTION_SAFE_DIV 44b6_12dfb391 44b6 23 0 1\n"}
+,{"stream_name":"stdout","time":8971.709439333,"data":"  [44b6_12dfb391] after safe-division repair: 46007 nodes, 44305 edges (geometric_candidates=150, deepcenter_rejected=128, post_veto_candidates=22, added=22, cap_skipped=0, mutual_nn_rejected=59, divergence_rejected=1566)\n"}
+,{"stream_name":"stdout","time":8971.709473563,"data":"  [44b6_12dfb391] after division-geometry-filter+prune-isolated: 46005 nodes, 44305 edges\n"}
+,{"stream_name":"stdout","time":8971.709480545,"data":"  [44b6_12dfb391] after short-track filtering: 44959 nodes, 43495 edges (components_removed=236)\n"}
+,{"stream_name":"stdout","time":8980.466234561,"data":"  [44b6_12dfb391] FINAL: 44959 nodes, 43495 edges\n"}
+,{"stream_name":"stdout","time":8998.122238876,"data":"  [44b6_267148e4] after edge-filter+motion-relink: 22829 nodes, 21464 edges\n"}
+,{"stream_name":"stdout","time":9009.198345251,"data":"  [44b6_267148e4] after gap-closing (single-frame + gap2): 23063 nodes, 21888 edges\n"}
+,{"stream_name":"stdout","time":9059.933255224,"data":"SPRINT_PRODUCTION_SAFE_DIV 44b6_267148e4 44b6 27 1 12\n"}
+,{"stream_name":"stdout","time":9060.02612808,"data":"  [44b6_267148e4] after safe-division repair: 23063 nodes, 21898 edges (geometric_candidates=210, deepcenter_rejected=198, post_veto_candidates=12, added=10, cap_skipped=0, mutual_nn_rejected=117, divergence_rejected=1048)\n"}
+,{"stream_name":"stdout","time":9060.026193521,"data":"  [44b6_267148e4] after division-geometry-filter+prune-isolated: 23009 nodes, 21898 edges\n"}
+,{"stream_name":"stdout","time":9060.026213467,"data":"  [44b6_267148e4] after short-track filtering: 22263 nodes, 21334 edges (components_removed=182)\n"}
+,{"stream_name":"stdout","time":9064.350907321,"data":"  [44b6_267148e4] FINAL: 22263 nodes, 21334 edges\n"}
+,{"stream_name":"stdout","time":9115.133356552,"data":"  [44b6_2a2eff9f] after edge-filter+motion-relink: 40928 nodes, 38430 edges\n"}
+,{"stream_name":"stdout","time":9130.330950017,"data":"  [44b6_2a2eff9f] after gap-closing (single-frame + gap2): 41457 nodes, 39413 edges\n"}
+,{"stream_name":"stdout","time":9193.38876242,"data":"SPRINT_PRODUCTION_SAFE_DIV 44b6_2a2eff9f 44b6 37 0 6\n"}
+,{"stream_name":"stdout","time":9193.482801349,"data":"  [44b6_2a2eff9f] after safe-division repair: 41457 nodes, 39444 edges (geometric_candidates=293, deepcenter_rejected=262, post_veto_candidates=31, added=31, cap_skipped=0, mutual_nn_rejected=74, divergence_rejected=1659)\n"}
+,{"stream_name":"stdout","time":9193.482845292,"data":"  [44b6_2a2eff9f] after division-geometry-filter+prune-isolated: 41453 nodes, 39444 edges\n"}
+,{"stream_name":"stdout","time":9193.482851459,"data":"  [44b6_2a2eff9f] after short-track filtering: 40117 nodes, 38409 edges (components_removed=301)\n"}
+,{"stream_name":"stdout","time":9201.668358861,"data":"  [44b6_2a2eff9f] FINAL: 40117 nodes, 38409 edges\n"}
+,{"stream_name":"stdout","time":9205.03625345,"data":"  [44b6_341df25f] after edge-filter+motion-relink: 8523 nodes, 8210 edges\n"}
+,{"stream_name":"stdout","time":9206.722629485,"data":"  [44b6_341df25f] after gap-closing (single-frame + gap2): 8569 nodes, 8290 edges\n"}
+,{"stream_name":"stdout","time":9225.89125752,"data":"SPRINT_PRODUCTION_SAFE_DIV 44b6_341df25f 44b6 13 0 3\n"}
+,{"stream_name":"stdout","time":9225.995352155,"data":"  [44b6_341df25f] after safe-division repair: 8569 nodes, 8298 edges (geometric_candidates=36, deepcenter_rejected=27, post_veto_candidates=9, added=8, cap_skipped=0, mutual_nn_rejected=3, divergence_rejected=140)\n"}
+,{"stream_name":"stdout","time":9225.995395705,"data":"  [44b6_341df25f] after division-geometry-filter+prune-isolated: 8569 nodes, 8298 edges\n"}
+,{"stream_name":"stdout","time":9225.995404166,"data":"  [44b6_341df25f] after short-track filtering: 8413 nodes, 8176 edges (components_removed=34)\n"}
+,{"stream_name":"stdout","time":9227.665911958,"data":"  [44b6_341df25f] FINAL: 8413 nodes, 8176 edges\n"}
+,{"stream_name":"stdout","time":9229.296268214,"data":"  [6bba_062c8d37] after edge-filter+motion-relink: 5997 nodes, 5648 edges\n"}
+,{"stream_name":"stdout","time":9230.388915177,"data":"  [6bba_062c8d37] after gap-closing (single-frame + gap2): 6048 nodes, 5743 edges\n"}
+,{"stream_name":"stdout","time":9238.248917087,"data":"SPRINT_PRODUCTION_SAFE_DIV 6bba_062c8d37 6bba 4 0 2\n"}
+,{"stream_name":"stdout","time":9238.470514935,"data":"  [6bba_062c8d37] after safe-division repair: 6048 nodes, 5745 edges (geometric_candidates=15, deepcenter_rejected=13, post_veto_candidates=2, added=2, cap_skipped=0, mutual_nn_rejected=3, divergence_rejected=63)\n"}
+,{"stream_name":"stdout","time":9238.470563405,"data":"  [6bba_062c8d37] after division-geometry-filter+prune-isolated: 6022 nodes, 5745 edges\n"}
+,{"stream_name":"stdout","time":9238.470572125,"data":"  [6bba_062c8d37] after short-track filtering: 5853 nodes, 5621 edges (components_removed=45)\n"}
+,{"stream_name":"stdout","time":9239.628190893,"data":"  [6bba_062c8d37] FINAL: 5853 nodes, 5621 edges\n"}
+,{"stream_name":"stdout","time":9267.459570641,"data":"  [6bba_07e24132] after edge-filter+motion-relink: 29751 nodes, 28212 edges\n"}
+,{"stream_name":"stdout","time":9278.083801409,"data":"  [6bba_07e24132] after gap-closing (single-frame + gap2): 30088 nodes, 28828 edges\n"}
+,{"stream_name":"stdout","time":9317.065544086,"data":"SPRINT_PRODUCTION_SAFE_DIV 6bba_07e24132 6bba 4 0 1\n"}
+,{"stream_name":"stdout","time":9317.187842718,"data":"  [6bba_07e24132] after safe-division repair: 30088 nodes, 28831 edges (geometric_candidates=117, deepcenter_rejected=114, post_veto_candidates=3, added=3, cap_skipped=0, mutual_nn_rejected=68, divergence_rejected=1011)\n"}
+,{"stream_name":"stdout","time":9317.187917874,"data":"  [6bba_07e24132] after division-geometry-filter+prune-isolated: 30079 nodes, 28831 edges\n"}
+,{"stream_name":"stdout","time":9317.18792801,"data":"  [6bba_07e24132] after short-track filtering: 29179 nodes, 28139 edges (components_removed=208)\n"}
+,{"stream_name":"stdout","time":9322.792350822,"data":"  [6bba_07e24132] FINAL: 29179 nodes, 28139 edges\n"}
+,{"stream_name":"stdout","time":9325.898698971,"data":"  [6bba_085bf656] after edge-filter+motion-relink: 8417 nodes, 8092 edges\n"}
+,{"stream_name":"stdout","time":9326.551720578,"data":"  [6bba_085bf656] after gap-closing (single-frame + gap2): 8438 nodes, 8131 edges\n"}
+,{"stream_name":"stdout","time":9337.520732634,"data":"SPRINT_PRODUCTION_SAFE_DIV 6bba_085bf656 6bba 3 0 0\n"}
+,{"stream_name":"stdout","time":9337.729652358,"data":"  [6bba_085bf656] after safe-division repair: 8438 nodes, 8134 edges (geometric_candidates=21, deepcenter_rejected=18, post_veto_candidates=3, added=3, cap_skipped=0, mutual_nn_rejected=4, divergence_rejected=102)\n"}
+,{"stream_name":"stdout","time":9337.729704711,"data":"  [6bba_085bf656] after division-geometry-filter+prune-isolated: 8435 nodes, 8134 edges\n"}
+,{"stream_name":"stdout","time":9337.729730874,"data":"  [6bba_085bf656] after short-track filtering: 8300 nodes, 8029 edges (components_removed=30)\n"}
+,{"stream_name":"stdout","time":9339.284305395,"data":"  [6bba_085bf656] FINAL: 8300 nodes, 8029 edges\n"}
+,{"stream_name":"stdout","time":9366.702999365,"data":"  [6bba_09961292] after edge-filter+motion-relink: 29955 nodes, 28827 edges\n"}
+,{"stream_name":"stdout","time":9374.79576598,"data":"  [6bba_09961292] after gap-closing (single-frame + gap2): 30167 nodes, 29212 edges\n"}
+,{"stream_name":"stdout","time":9407.477561544,"data":"SPRINT_PRODUCTION_SAFE_DIV 6bba_09961292 6bba 25 0 6\n"}
+,{"stream_name":"stdout","time":9407.559052078,"data":"  [6bba_09961292] after safe-division repair: 30167 nodes, 29230 edges (geometric_candidates=92, deepcenter_rejected=74, post_veto_candidates=18, added=18, cap_skipped=0, mutual_nn_rejected=66, divergence_rejected=972)\n"}
+,{"stream_name":"stdout","time":9407.559097893,"data":"  [6bba_09961292] after division-geometry-filter+prune-isolated: 30163 nodes, 29230 edges\n"}
+,{"stream_name":"stdout","time":9407.559122759,"data":"  [6bba_09961292] after short-track filtering: 29742 nodes, 28909 edges (components_removed=100)\n"}
+,{"stream_name":"stdout","time":9413.531782995,"data":"  [6bba_09961292] FINAL: 29742 nodes, 28909 edges\n"}
+,{"stream_name":"stdout","time":9413.858757784,"data":"Wrote /kaggle/working/divgate_pair/validation_candidate.csv with 370,938 rows\n"}
+,{"stream_name":"stdout","time":9413.858792093,"data":"Node rows: 188,826 | edge rows: 182,112\n"}
+,{"stream_name":"stdout","time":9413.858798339,"data":"Wrote /kaggle/working/divgate_pair/validation_candidate_run_stats.csv\n"}
+,{"stream_name":"stdout","time":9450.757337723,"data":"DIVGATE_PRODUCTION_FINAL B22 READY_FOR_FORMAL_CHECK 18ea6f091ae5d5de2cc0ae938ceb061b16ba897445fe52a87eeb4ba6b167834f\n"}
+,{"stream_name":"stderr","time":9456.417864538,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":9456.417913643,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":9456.549542481,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":9456.549595875,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":9457.258941968,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":9457.895927034,"data":"[NbConvertApp] Writing 703507 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":9460.504613884,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":9462.226750696,"data":"[NbConvertApp] Writing 1742637 bytes to __results__.html\n"}
+]

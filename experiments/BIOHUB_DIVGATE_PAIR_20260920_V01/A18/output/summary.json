@@ -1,0 +1,204 @@
+{
+  "status": "MEASURED_SAME_RUN_DIAGNOSTIC",
+  "gaps": [],
+  "rows": 16,
+  "coverage": {
+    "primary": "COVERAGE_UNKNOWN",
+    "deepcenter": "COVERAGE_UNKNOWN",
+    "secondary": "COVERAGE_UNKNOWN",
+    "gate": "held_out_embryo; upstream unseen not established"
+  },
+  "secondary_split_manifest_sha256": "cbe8ace34ffc157172280538441454b60250f0188faa063d1a9eadfb1ac55c0b",
+  "secondary_sample_coverage": {
+    "44b6_12dfb391": "TRAIN_SEEN_DIAGNOSTIC",
+    "44b6_267148e4": "TRAIN_SEEN_DIAGNOSTIC",
+    "44b6_2a2eff9f": "TRAIN_SEEN_DIAGNOSTIC",
+    "44b6_341df25f": "TRAIN_SEEN_DIAGNOSTIC",
+    "6bba_062c8d37": "TRAIN_SEEN_DIAGNOSTIC",
+    "6bba_07e24132": "TRAIN_SEEN_DIAGNOSTIC",
+    "6bba_085bf656": "TRAIN_SEEN_DIAGNOSTIC",
+    "6bba_09961292": "TRAIN_SEEN_DIAGNOSTIC"
+  },
+  "summary": {
+    "G1": {
+      "overall": {
+        "n": 8,
+        "edge_jaccard": 0.9256722899615835,
+        "division_jaccard": 0.15384615384615385,
+        "division_tp": 2,
+        "division_fp": 1,
+        "division_fn": 10,
+        "node_recall": 0.9848732845189085,
+        "adj_edge_jaccard": 0.9286862150878561,
+        "n_adj": 8,
+        "score": 0.9440708304724714,
+        "edge_tp": 5542,
+        "edge_fp": 236,
+        "edge_fn": 209
+      },
+      "embryos": {
+        "44b6": {
+          "n": 4,
+          "edge_jaccard": 0.9023136246786633,
+          "division_jaccard": 0.2,
+          "division_tp": 1,
+          "division_fp": 1,
+          "division_fn": 3,
+          "node_recall": 0.9931030604571214,
+          "adj_edge_jaccard": 0.9127802761976679,
+          "n_adj": 4,
+          "score": 0.9327802761976679,
+          "edge_tp": 1404,
+          "edge_fp": 87,
+          "edge_fn": 65
+        },
+        "6bba": {
+          "n": 4,
+          "edge_jaccard": 0.9338749717896637,
+          "division_jaccard": 0.125,
+          "division_tp": 1,
+          "division_fp": 0,
+          "division_fn": 7,
+          "node_recall": 0.9766435085806958,
+          "adj_edge_jaccard": 0.9342717806290732,
+          "n_adj": 4,
+          "score": 0.9467717806290732,
+          "edge_tp": 4138,
+          "edge_fp": 149,
+          "edge_fn": 144
+        }
+      }
+    },
+    "A18": {
+      "overall": {
+        "n": 8,
+        "edge_jaccard": 0.9256722899615835,
+        "division_jaccard": 0.15384615384615385,
+        "division_tp": 2,
+        "division_fp": 1,
+        "division_fn": 10,
+        "node_recall": 0.9848732845189085,
+        "adj_edge_jaccard": 0.9286862150878561,
+        "n_adj": 8,
+        "score": 0.9440708304724714,
+        "edge_tp": 5542,
+        "edge_fp": 236,
+        "edge_fn": 209
+      },
+      "embryos": {
+        "44b6": {
+          "n": 4,
+          "edge_jaccard": 0.9023136246786633,
+          "division_jaccard": 0.2,
+          "division_tp": 1,
+          "division_fp": 1,
+          "division_fn": 3,
+          "node_recall": 0.9931030604571214,
+          "adj_edge_jaccard": 0.9127802761976679,
+          "n_adj": 4,
+          "score": 0.9327802761976679,
+          "edge_tp": 1404,
+          "edge_fp": 87,
+          "edge_fn": 65
+        },
+        "6bba": {
+          "n": 4,
+          "edge_jaccard": 0.9338749717896637,
+          "division_jaccard": 0.125,
+          "division_tp": 1,
+          "division_fp": 0,
+          "division_fn": 7,
+          "node_recall": 0.9766435085806958,
+          "adj_edge_jaccard": 0.9342717806290732,
+          "n_adj": 4,
+          "score": 0.9467717806290732,
+          "edge_tp": 4138,
+          "edge_fp": 149,
+          "edge_fn": 144
+        }
+      }
+    }
+  },
+  "changes": [
+    {
+      "stem": "44b6_12dfb391",
+      "g1_hash": "c8db820dda2d0b202af228457efe29e6eaa5aabb61bba73429d1c1465f001a50",
+      "candidate_hash": "c8db820dda2d0b202af228457efe29e6eaa5aabb61bba73429d1c1465f001a50",
+      "nodes_delta": 0,
+      "edges_added": 0,
+      "edges_removed": 0,
+      "division_delta": 0,
+      "changed": false
+    },
+    {
+      "stem": "44b6_267148e4",
+      "g1_hash": "e7e941602e86d17f31dcdaab9105121d785791fcd3698cfb6cd8a03394f21591",
+      "candidate_hash": "7f90eb496fe6273459d766db483c500e4e14e4d9c8c53a08125921377a0fc6f5",
+      "nodes_delta": 0,
+      "edges_added": 1,
+      "edges_removed": 0,
+      "division_delta": 1,
+      "changed": true
+    },
+    {
+      "stem": "44b6_2a2eff9f",
+      "g1_hash": "dfb801cba65ab377d30c95911da2dbd66bd6137ba82b95a51aada6a518223b50",
+      "candidate_hash": "df48040a5088747d28b2af73c88e4eb68caaced783ed568b7008057aed55cfe2",
+      "nodes_delta": 0,
+      "edges_added": 2,
+      "edges_removed": 0,
+      "division_delta": 2,
+      "changed": true
+    },
+    {
+      "stem": "44b6_341df25f",
+      "g1_hash": "06b8f5372b76d8eb47ecdfa0a64833f8758c3badfab05590c4e7773e9d56cd3a",
+      "candidate_hash": "06b8f5372b76d8eb47ecdfa0a64833f8758c3badfab05590c4e7773e9d56cd3a",
+      "nodes_delta": 0,
+      "edges_added": 0,
+      "edges_removed": 0,
+      "division_delta": 0,
+      "changed": false
+    },
+    {
+      "stem": "6bba_062c8d37",
+      "g1_hash": "747a7f1b5ecd51e0e0846bc02b34b4d54f1e1c4f99656816ea421bdcf1f40bb2",
+      "candidate_hash": "747a7f1b5ecd51e0e0846bc02b34b4d54f1e1c4f99656816ea421bdcf1f40bb2",
+      "nodes_delta": 0,
+      "edges_added": 0,
+      "edges_removed": 0,
+      "division_delta": 0,
+      "changed": false
+    },
+    {
+      "stem": "6bba_07e24132",
+      "g1_hash": "70a9d96e9cf4a4ae10b03f683e21beb9cef1299d2035ea31700a418ca749d05d",
+      "candidate_hash": "38e0b9f45bcb2120208cc7990f5c35fa1c78e806875ecbc83a00d40ca71b36ed",
+      "nodes_delta": 0,
+      "edges_added": 1,
+      "edges_removed": 0,
+      "division_delta": 1,
+      "changed": true
+    },
+    {
+      "stem": "6bba_085bf656",
+      "g1_hash": "18e806f39003431616f33dd9818da88c881d71eb0397c0896ad43b3fc6b9e270",
+      "candidate_hash": "18e806f39003431616f33dd9818da88c881d71eb0397c0896ad43b3fc6b9e270",
+      "nodes_delta": 0,
+      "edges_added": 0,
+      "edges_removed": 0,
+      "division_delta": 0,
+      "changed": false
+    },
+    {
+      "stem": "6bba_09961292",
+      "g1_hash": "b01e0eb3434f62e7b695a07becbe96f96b5a8345fedc2d60f4e848a386252c89",
+      "candidate_hash": "b01e0eb3434f62e7b695a07becbe96f96b5a8345fedc2d60f4e848a386252c89",
+      "nodes_delta": 0,
+      "edges_added": 0,
+      "edges_removed": 0,
+      "division_delta": 0,
+      "changed": false
+    }
+  ]
+}

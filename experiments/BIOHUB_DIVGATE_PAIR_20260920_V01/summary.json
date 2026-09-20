@@ -1,10 +1,370 @@
 {
   "task_id": "BIOHUB_DIVGATE_PAIR_20260920_V01",
-  "observed_at_utc": "2026-09-20T03:44:33.842013+00:00",
-  "observed_at_shanghai": "2026-09-20T11:44:33.842013+08:00",
-  "execution_status": "KERNEL_RUNNING",
+  "observed_at_shanghai": "2026-09-20T14:27:56.225140+08:00",
+  "observed_at_utc": "2026-09-20T06:27:56.225140+00:00",
+  "execution_status": "ORDINARY_COMPLETE_RECEIPTS_READ",
   "score_status": "NOT_SUBMITTED",
-  "delivery_status": "COMPLETED_VERIFIED",
+  "delivery_status": "PENDING_UPDATED_RESULTS_READBACK",
+  "arms": {
+    "A18": {
+      "binding": {
+        "arm": "A18",
+        "observed_at_utc": "2026-09-20T06:26:30.799834+00:00",
+        "observed_at_shanghai": "2026-09-20T14:26:30.799834+08:00",
+        "writes": 0,
+        "ref": "sailorren/biohub-g1-divgate018-20260920",
+        "kernel_id": 135051720,
+        "version": 1,
+        "script_version_id": 351207161,
+        "script_version_id_source": "signed-in notebook edit/run link, observed without opening editor",
+        "kernel_status": "COMPLETE",
+        "private": true,
+        "source_equal": true,
+        "source_comparison": "all cells type and source; platform JSON serialization differs",
+        "local_notebook_sha256": "5c1447b8b4dc73e2981c523959de3b227f7645e948f8c9e6f8fab5decf6e73e1",
+        "remote_notebook_sha256": "b54d433a65b0ccfcb6ffd203abc3479d70f6ffe1129573c460b6882f88a77b3d",
+        "cell_count": 14,
+        "metadata": {
+          "id": 135051720,
+          "ref": "sailorren/biohub-g1-divgate018-20260920",
+          "title": "biohub-g1-divgate018-20260920",
+          "author": "Sailor Ren",
+          "slug": "biohub-g1-divgate018-20260920",
+          "lastRunTime": "2026-09-17T06:26:30.077Z",
+          "language": "python",
+          "kernelType": "notebook",
+          "isPrivate": true,
+          "enableGpu": true,
+          "enableInternet": false,
+          "categoryIds": [
+            "gpu"
+          ],
+          "datasetDataSources": [
+            "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+            "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+            "pilkwang/biohub-tracking-support-pack-50ep-v1"
+          ],
+          "kernelDataSources": [
+            "sailorren/biohub-division-train-20260914"
+          ],
+          "competitionDataSources": [
+            "biohub-cell-tracking-during-development"
+          ],
+          "enableTpu": false,
+          "currentVersionNumber": 1,
+          "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+          "machineShape": "NvidiaTeslaT4"
+        },
+        "submission_id": null,
+        "public_score": null,
+        "formal_status": "NOT_SUBMITTED"
+      },
+      "production_receipt_status": "READY_FOR_FORMAL_CHECK",
+      "receipt_engineering_status": "PASS",
+      "independent_final_csv_recheck": "NOT_RUN_THIS_READ_ONLY_RESULT_REQUEST",
+      "production_changes": {
+        "nodes_delta": 12,
+        "edges_added": 16,
+        "edges_removed": 0,
+        "division_delta": 7
+      },
+      "final_canonical_sha256": "6c39b67b8bbdbedfa910e980ff113dabc412e60a71a3f027291bc2e13e833b68",
+      "diagnostic_score": 0.9440708304724714,
+      "g1_diagnostic_score": 0.9440708304724714,
+      "diagnostic_delta": 0.0,
+      "official_summary": {
+        "G1": {
+          "overall": {
+            "n": 8,
+            "edge_jaccard": 0.9256722899615835,
+            "division_jaccard": 0.15384615384615385,
+            "division_tp": 2,
+            "division_fp": 1,
+            "division_fn": 10,
+            "node_recall": 0.9848732845189085,
+            "adj_edge_jaccard": 0.9286862150878561,
+            "n_adj": 8,
+            "score": 0.9440708304724714,
+            "edge_tp": 5542,
+            "edge_fp": 236,
+            "edge_fn": 209
+          },
+          "embryos": {
+            "44b6": {
+              "n": 4,
+              "edge_jaccard": 0.9023136246786633,
+              "division_jaccard": 0.2,
+              "division_tp": 1,
+              "division_fp": 1,
+              "division_fn": 3,
+              "node_recall": 0.9931030604571214,
+              "adj_edge_jaccard": 0.9127802761976679,
+              "n_adj": 4,
+              "score": 0.9327802761976679,
+              "edge_tp": 1404,
+              "edge_fp": 87,
+              "edge_fn": 65
+            },
+            "6bba": {
+              "n": 4,
+              "edge_jaccard": 0.9338749717896637,
+              "division_jaccard": 0.125,
+              "division_tp": 1,
+              "division_fp": 0,
+              "division_fn": 7,
+              "node_recall": 0.9766435085806958,
+              "adj_edge_jaccard": 0.9342717806290732,
+              "n_adj": 4,
+              "score": 0.9467717806290732,
+              "edge_tp": 4138,
+              "edge_fp": 149,
+              "edge_fn": 144
+            }
+          }
+        },
+        "A18": {
+          "overall": {
+            "n": 8,
+            "edge_jaccard": 0.9256722899615835,
+            "division_jaccard": 0.15384615384615385,
+            "division_tp": 2,
+            "division_fp": 1,
+            "division_fn": 10,
+            "node_recall": 0.9848732845189085,
+            "adj_edge_jaccard": 0.9286862150878561,
+            "n_adj": 8,
+            "score": 0.9440708304724714,
+            "edge_tp": 5542,
+            "edge_fp": 236,
+            "edge_fn": 209
+          },
+          "embryos": {
+            "44b6": {
+              "n": 4,
+              "edge_jaccard": 0.9023136246786633,
+              "division_jaccard": 0.2,
+              "division_tp": 1,
+              "division_fp": 1,
+              "division_fn": 3,
+              "node_recall": 0.9931030604571214,
+              "adj_edge_jaccard": 0.9127802761976679,
+              "n_adj": 4,
+              "score": 0.9327802761976679,
+              "edge_tp": 1404,
+              "edge_fp": 87,
+              "edge_fn": 65
+            },
+            "6bba": {
+              "n": 4,
+              "edge_jaccard": 0.9338749717896637,
+              "division_jaccard": 0.125,
+              "division_tp": 1,
+              "division_fp": 0,
+              "division_fn": 7,
+              "node_recall": 0.9766435085806958,
+              "adj_edge_jaccard": 0.9342717806290732,
+              "n_adj": 4,
+              "score": 0.9467717806290732,
+              "edge_tp": 4138,
+              "edge_fp": 149,
+              "edge_fn": 144
+            }
+          }
+        }
+      },
+      "coverage": {
+        "44b6_12dfb391": "TRAIN_SEEN_DIAGNOSTIC",
+        "44b6_267148e4": "TRAIN_SEEN_DIAGNOSTIC",
+        "44b6_2a2eff9f": "TRAIN_SEEN_DIAGNOSTIC",
+        "44b6_341df25f": "TRAIN_SEEN_DIAGNOSTIC",
+        "6bba_062c8d37": "TRAIN_SEEN_DIAGNOSTIC",
+        "6bba_07e24132": "TRAIN_SEEN_DIAGNOSTIC",
+        "6bba_085bf656": "TRAIN_SEEN_DIAGNOSTIC",
+        "6bba_09961292": "TRAIN_SEEN_DIAGNOSTIC"
+      },
+      "public_score": null,
+      "submission_id": null
+    },
+    "B22": {
+      "binding": {
+        "arm": "B22",
+        "observed_at_utc": "2026-09-20T06:26:32.709284+00:00",
+        "observed_at_shanghai": "2026-09-20T14:26:32.709284+08:00",
+        "writes": 0,
+        "ref": "sailorren/biohub-g1-divgate022-20260920",
+        "kernel_id": 135052315,
+        "version": 1,
+        "script_version_id": 351207989,
+        "script_version_id_source": "signed-in notebook edit/run link, observed without opening editor",
+        "kernel_status": "COMPLETE",
+        "private": true,
+        "source_equal": true,
+        "source_comparison": "all cells type and source; platform JSON serialization differs",
+        "local_notebook_sha256": "f9751f48220b71e5160aa04b4b712b0c13d205985cbd2d5e464d9ae6a34cc65e",
+        "remote_notebook_sha256": "3284ac04961ff558322d06749864a83405e88fd1f898d3e292022479742efcb7",
+        "cell_count": 14,
+        "metadata": {
+          "id": 135052315,
+          "ref": "sailorren/biohub-g1-divgate022-20260920",
+          "title": "biohub-g1-divgate022-20260920",
+          "author": "Sailor Ren",
+          "slug": "biohub-g1-divgate022-20260920",
+          "lastRunTime": "2026-09-17T06:26:32.127Z",
+          "language": "python",
+          "kernelType": "notebook",
+          "isPrivate": true,
+          "enableGpu": true,
+          "enableInternet": false,
+          "categoryIds": [
+            "gpu"
+          ],
+          "datasetDataSources": [
+            "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+            "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+            "pilkwang/biohub-tracking-support-pack-50ep-v1"
+          ],
+          "kernelDataSources": [
+            "sailorren/biohub-division-train-20260914"
+          ],
+          "competitionDataSources": [
+            "biohub-cell-tracking-during-development"
+          ],
+          "enableTpu": false,
+          "currentVersionNumber": 1,
+          "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+          "machineShape": "NvidiaTeslaT4"
+        },
+        "submission_id": null,
+        "public_score": null,
+        "formal_status": "NOT_SUBMITTED"
+      },
+      "production_receipt_status": "READY_FOR_FORMAL_CHECK",
+      "receipt_engineering_status": "PASS",
+      "independent_final_csv_recheck": "NOT_RUN_THIS_READ_ONLY_RESULT_REQUEST",
+      "production_changes": {
+        "nodes_delta": -22,
+        "edges_added": 0,
+        "edges_removed": 25,
+        "division_delta": -8
+      },
+      "final_canonical_sha256": "9c71bce35e2700ca72e2339187c18f906a06bacaa1ea795dcf794c97cda68006",
+      "diagnostic_score": 0.9440708304724714,
+      "g1_diagnostic_score": 0.9440708304724714,
+      "diagnostic_delta": 0.0,
+      "official_summary": {
+        "G1": {
+          "overall": {
+            "n": 8,
+            "edge_jaccard": 0.9256722899615835,
+            "division_jaccard": 0.15384615384615385,
+            "division_tp": 2,
+            "division_fp": 1,
+            "division_fn": 10,
+            "node_recall": 0.9848732845189085,
+            "adj_edge_jaccard": 0.9286862150878561,
+            "n_adj": 8,
+            "score": 0.9440708304724714,
+            "edge_tp": 5542,
+            "edge_fp": 236,
+            "edge_fn": 209
+          },
+          "embryos": {
+            "44b6": {
+              "n": 4,
+              "edge_jaccard": 0.9023136246786633,
+              "division_jaccard": 0.2,
+              "division_tp": 1,
+              "division_fp": 1,
+              "division_fn": 3,
+              "node_recall": 0.9931030604571214,
+              "adj_edge_jaccard": 0.9127802761976679,
+              "n_adj": 4,
+              "score": 0.9327802761976679,
+              "edge_tp": 1404,
+              "edge_fp": 87,
+              "edge_fn": 65
+            },
+            "6bba": {
+              "n": 4,
+              "edge_jaccard": 0.9338749717896637,
+              "division_jaccard": 0.125,
+              "division_tp": 1,
+              "division_fp": 0,
+              "division_fn": 7,
+              "node_recall": 0.9766435085806958,
+              "adj_edge_jaccard": 0.9342717806290732,
+              "n_adj": 4,
+              "score": 0.9467717806290732,
+              "edge_tp": 4138,
+              "edge_fp": 149,
+              "edge_fn": 144
+            }
+          }
+        },
+        "B22": {
+          "overall": {
+            "n": 8,
+            "edge_jaccard": 0.9256722899615835,
+            "division_jaccard": 0.15384615384615385,
+            "division_tp": 2,
+            "division_fp": 1,
+            "division_fn": 10,
+            "node_recall": 0.9848732845189085,
+            "adj_edge_jaccard": 0.9286862150878561,
+            "n_adj": 8,
+            "score": 0.9440708304724714,
+            "edge_tp": 5542,
+            "edge_fp": 236,
+            "edge_fn": 209
+          },
+          "embryos": {
+            "44b6": {
+              "n": 4,
+              "edge_jaccard": 0.9023136246786633,
+              "division_jaccard": 0.2,
+              "division_tp": 1,
+              "division_fp": 1,
+              "division_fn": 3,
+              "node_recall": 0.9931030604571214,
+              "adj_edge_jaccard": 0.9127802761976679,
+              "n_adj": 4,
+              "score": 0.9327802761976679,
+              "edge_tp": 1404,
+              "edge_fp": 87,
+              "edge_fn": 65
+            },
+            "6bba": {
+              "n": 4,
+              "edge_jaccard": 0.9338749717896637,
+              "division_jaccard": 0.125,
+              "division_tp": 1,
+              "division_fp": 0,
+              "division_fn": 7,
+              "node_recall": 0.9766435085806958,
+              "adj_edge_jaccard": 0.9342717806290732,
+              "n_adj": 4,
+              "score": 0.9467717806290732,
+              "edge_tp": 4138,
+              "edge_fp": 149,
+              "edge_fn": 144
+            }
+          }
+        }
+      },
+      "coverage": {
+        "44b6_12dfb391": "TRAIN_SEEN_DIAGNOSTIC",
+        "44b6_267148e4": "TRAIN_SEEN_DIAGNOSTIC",
+        "44b6_2a2eff9f": "TRAIN_SEEN_DIAGNOSTIC",
+        "44b6_341df25f": "TRAIN_SEEN_DIAGNOSTIC",
+        "6bba_062c8d37": "TRAIN_SEEN_DIAGNOSTIC",
+        "6bba_07e24132": "TRAIN_SEEN_DIAGNOSTIC",
+        "6bba_085bf656": "TRAIN_SEEN_DIAGNOSTIC",
+        "6bba_09961292": "TRAIN_SEEN_DIAGNOSTIC"
+      },
+      "public_score": null,
+      "submission_id": null
+    }
+  },
   "counts": {
     "new_private_notebooks": 2,
     "save_and_run": 2,
@@ -14,38 +374,9 @@
     "final_selection_change": 0,
     "v1_f1_write": 0
   },
-  "arms": {
-    "A18": {
-      "kernel_id": 135051720,
-      "version": 1,
-      "script_version_id": 351207161,
-      "kernel_status": "RUNNING",
-      "submission_id": null,
-      "public_score": null,
-      "public_delta_vs_g1": null,
-      "engineering_status": "AWAIT_ORDINARY_OUTPUT",
-      "canonical_graph_changes": null,
-      "diagnostic_status": "PENDING_KERNEL_OUTPUT",
-      "diagnostic_coverage": "TRAIN_SEEN_DIAGNOSTIC for secondary upstream; COVERAGE_UNKNOWN for other upstream weights"
-    },
-    "B22": {
-      "kernel_id": 135052315,
-      "version": 1,
-      "script_version_id": 351207989,
-      "kernel_status": "RUNNING",
-      "submission_id": null,
-      "public_score": null,
-      "public_delta_vs_g1": null,
-      "engineering_status": "AWAIT_ORDINARY_OUTPUT",
-      "canonical_graph_changes": null,
-      "diagnostic_status": "PENDING_KERNEL_OUTPUT",
-      "diagnostic_coverage": "TRAIN_SEEN_DIAGNOSTIC for secondary upstream; COVERAGE_UNKNOWN for other upstream weights"
-    }
-  },
-  "diagnostic_results_present": false,
-  "diagnostic_gap": "No completed ordinary output available; diagnostic_results.jsonl intentionally not fabricated. Results remain in running private kernels until collected.",
-  "final_selection_changes": 0,
-  "next_action": "Only read exact versions; after COMPLETE collect and independently validate output, compare full canonical outputs and deduplicate, then at most one formal submission per eligible arm under remaining budget. No autonomous monitoring or cross-day resumption.",
-  "delivery_scope": "Frozen payload commit e7672f46466fd4d8d8bb557da6b81d12c41272de (49 files); completion of running kernels and scores excluded",
-  "delivery_evidence": "github_readback.json"
+  "limitations": [
+    "Eight diagnostic FOVs represent two embryos; secondary archive training coverage overlaps all eight.",
+    "Notebook engineering receipts PASS; independent download and revalidation of final CSV not performed by this result-reading request.",
+    "No new SaveAndRun or Submission; formal submission stage remains unfinished."
+  ]
 }
