@@ -1,0 +1,95 @@
+{
+  "sources": [
+    {
+      "ref": "noisyislands/biohub-linker-association-mlp",
+      "version": 8,
+      "script_version_id": 351100540,
+      "url": "https://www.kaggle.com/code/noisyislands/biohub-linker-association-mlp?scriptVersionId=351100540",
+      "license": "Apache-2.0 (Kaggle UI observed)",
+      "source_path": "sources/biohub-linker-association-mlp/source.py",
+      "sha256": "f1471f9a6a6569392a77073ce63393b58a6a23968420efe6207c6e2dbcaf462d",
+      "source_lines": 595,
+      "cells_total": null,
+      "cells_read": null,
+      "coverage": "FULL_SCRIPT_SOURCE_READ",
+      "dependencies": "PARTIAL_DEPENDENCIES",
+      "public_score": null,
+      "score_status": "UNKNOWN; no exact-version score verified",
+      "version_binding": "Kaggle UI fork-version link plus currentVersionNumber/source; logs bracketed for scripts",
+      "metadata_time_conflict": "SDK lastRunTime differs from list/UI for scripts; not used as version date"
+    },
+    {
+      "ref": "noisyislands/biohub-xgboost-division-events",
+      "version": 7,
+      "script_version_id": 351100632,
+      "url": "https://www.kaggle.com/code/noisyislands/biohub-xgboost-division-events?scriptVersionId=351100632",
+      "license": "Apache-2.0 (Kaggle UI observed)",
+      "source_path": "sources/biohub-xgboost-division-events/source.py",
+      "sha256": "464851ed2ed177bdaa68c5e038d859b2ce7c4ae28cae45fee2b782fdc8ee5bfb",
+      "source_lines": 474,
+      "cells_total": null,
+      "cells_read": null,
+      "coverage": "FULL_SCRIPT_SOURCE_READ",
+      "dependencies": "PARTIAL_DEPENDENCIES",
+      "public_score": null,
+      "score_status": "UNKNOWN; no exact-version score verified",
+      "version_binding": "Kaggle UI fork-version link plus currentVersionNumber/source; logs bracketed for scripts",
+      "metadata_time_conflict": "SDK lastRunTime differs from list/UI for scripts; not used as version date"
+    },
+    {
+      "ref": "codezzzsleep/biohub-095-owned-validation",
+      "version": 1,
+      "script_version_id": 351098581,
+      "url": "https://www.kaggle.com/code/codezzzsleep/biohub-095-owned-validation?scriptVersionId=351098581",
+      "license": "Apache-2.0 (Kaggle UI observed)",
+      "source_path": "sources/biohub-095-owned-validation/source.ipynb",
+      "sha256": "6a9c42fcdb3b1ab13f24698db2884d8a49330e6b8803a1d45cb91b233e7c4451",
+      "source_lines": 969,
+      "cells_total": 8,
+      "cells_read": 8,
+      "coverage": "FULL_NOTEBOOK_SOURCE_READ",
+      "dependencies": "PARTIAL_DEPENDENCIES",
+      "public_score": null,
+      "score_status": "UNKNOWN; no exact-version score verified",
+      "version_binding": "Kaggle UI fork-version link plus currentVersionNumber/source; logs bracketed for scripts",
+      "metadata_time_conflict": "SDK lastRunTime differs from list/UI for scripts; not used as version date"
+    }
+  ],
+  "downloaded_not_read": [
+    {
+      "ref": "thtennant/biohub-frontier947-gapfill-det096-v1",
+      "coverage": "SOURCE_ACQUIRED_NOT_FULLY_READ",
+      "version": 1,
+      "not_counted_as_deep_read": true
+    },
+    {
+      "ref": "thtennant/biohub-frontier947-readmit-v1",
+      "coverage": "SOURCE_ACQUIRED_NOT_FULLY_READ",
+      "version": 1,
+      "not_counted_as_deep_read": true
+    },
+    {
+      "ref": "thtennant/biohub-frontier947-divprec-v1",
+      "coverage": "SOURCE_ACQUIRED_NOT_FULLY_READ",
+      "version": 1,
+      "not_counted_as_deep_read": true
+    }
+  ],
+  "script_training_summary": {
+    "MLP": {
+      "epochs": 2,
+      "features_per_epoch": 2866,
+      "last_loss": 1.9152677488842795,
+      "metric_scope": "training only"
+    },
+    "XGB": {
+      "rows": 10302,
+      "positives": 302,
+      "negatives": 10000,
+      "rounds": 200,
+      "train_accuracy": 0.9974,
+      "metric_scope": "in-sample only"
+    }
+  },
+  "all_execution_by_this_task": false
+}

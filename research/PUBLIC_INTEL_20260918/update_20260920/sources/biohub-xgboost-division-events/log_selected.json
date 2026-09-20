@@ -1,0 +1,11 @@
+{
+  "scope": "selected training result lines only; not full log",
+  "raw_log_sha256": "179edc65e6dca76d0f4a7d53652b4c334c5d421ae3be24092136211fd48ffdc8",
+  "records": [
+    {
+      "stream_name": "stdout",
+      "time": 87.906932131,
+      "data": "Trained 200 rounds in 0.2s | scale_pos_weight=33.1 | in-sample P(1) pos=0.9963 neg=0.0035 acc=0.9974\n"
+    }
+  ]
+}

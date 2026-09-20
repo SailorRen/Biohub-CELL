@@ -1,0 +1,61 @@
+{
+  "scope": "selected training result lines only; not full log",
+  "raw_log_sha256": "5734f76b03234bde88501503c7f3f79b9b073c348ddd2b71937804c2d0cb93a6",
+  "records": [
+    {
+      "stream_name": "stdout",
+      "time": 13.175243874,
+      "data": "Linker train kaggle=True cuda=True fold=0 window=5 epochs=2 lr=0.001\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 21.753083834999998,
+      "data": "  44b6_0113de3b epoch 1 feats 63 pos 50 neg 13 loss 3.0628\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 21.789068888,
+      "data": "  44b6_0b24845f epoch 1 feats 63 pos 49 neg 14 loss 1.5533\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 21.873135833,
+      "data": "  6bba_05b6850b epoch 1 feats 1124 pos 845 neg 279 loss 3.2228\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 21.938120335,
+      "data": "  6bba_05db0fb1 epoch 1 feats 1616 pos 1183 neg 433 loss 2.8609\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 21.938144091,
+      "data": "Epoch 1/2 avg loss 2.9785 total 2866\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 21.978703539,
+      "data": "  44b6_0113de3b epoch 2 feats 63 pos 50 neg 13 loss 2.1517\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 22.014125206,
+      "data": "  44b6_0b24845f epoch 2 feats 63 pos 49 neg 14 loss 1.1788\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 22.063295861,
+      "data": "  6bba_05b6850b epoch 2 feats 1124 pos 845 neg 279 loss 2.1039\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 22.121732895,
+      "data": "  6bba_05db0fb1 epoch 2 feats 1616 pos 1183 neg 433 loss 1.8035\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 22.121771179,
+      "data": "Epoch 2/2 avg loss 1.9153 total 2866\n"
+    }
+  ]
+}

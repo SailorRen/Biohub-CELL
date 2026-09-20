@@ -1,0 +1,50 @@
+{
+  "model": "xgboost.json",
+  "model_sha256": "a662314158f2ee698b7f373ce4cce7d66e63d9d413f55c3596502f30855e1e4a",
+  "model_license": "Apache-2.0",
+  "features": [
+    "daughter_separation_per_frame_um",
+    "is_first_frame",
+    "is_last_frame",
+    "local_density",
+    "n_frames_after",
+    "n_frames_before",
+    "parent_daughter_dist_absdiff_um",
+    "parent_daughter_dist_max_um",
+    "parent_daughter_dist_sum_um",
+    "parent_daughter_dist_um",
+    "parent_velocity_um",
+    "sister_dist_um",
+    "sister_symmetry"
+  ],
+  "class_order": [
+    0,
+    1
+  ],
+  "context_rows": 10302,
+  "n_pos": 302,
+  "n_neg": 10000,
+  "seed": 42,
+  "variant": "division",
+  "num_boost_round": 200,
+  "max_depth": 4,
+  "learning_rate": 0.05,
+  "scale_pos_weight": 33.11258278145695,
+  "xgboost_params": {
+    "max_depth": 4,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.9,
+    "min_child_weight": 3,
+    "scale_pos_weight": 33.11258278145695,
+    "objective": "binary:logistic",
+    "eval_metric": "auc",
+    "seed": 42,
+    "verbosity": 0
+  },
+  "n_forks": 302,
+  "geffs_with_nodes": 398,
+  "geffs_total": 597,
+  "fold": 0,
+  "train_time_s": 0.2
+}

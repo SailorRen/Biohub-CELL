@@ -1,0 +1,27 @@
+{
+  "id": 134994910,
+  "ref": "codezzzsleep/biohub-095-owned-validation",
+  "title": "biohub-095-owned-validation",
+  "author": "codezzzsleep",
+  "slug": "biohub-095-owned-validation",
+  "lastRunTime": "2026-09-17T02:34:41.524Z",
+  "language": "python",
+  "kernelType": "notebook",
+  "isPrivate": false,
+  "enableGpu": true,
+  "enableInternet": false,
+  "categoryIds": [
+    "gpu"
+  ],
+  "datasetDataSources": [
+    "pilkwang/biohub-tracking-support-pack-50ep-v1"
+  ],
+  "competitionDataSources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "totalVotes": 1,
+  "enableTpu": false,
+  "currentVersionNumber": 1,
+  "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "machineShape": "NvidiaTeslaT4"
+}

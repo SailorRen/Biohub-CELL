@@ -1,0 +1,27 @@
+{
+  "model": "EdgeMLP 6->16->16->1 on [dist/10, temporal_delta, is_first, is_last, motion_resid/10, comp_count], class-balanced neg:pos, pilot real training",
+  "candidate": {
+    "max_distance_um": 10.0,
+    "topk_targets": 3,
+    "aim_recall": 0.995
+  },
+  "solver": {
+    "type": "event_solver explicit b/d/c/h"
+  },
+  "candidate_mode": "production_sim",
+  "synthetic_dup_rate": 0.15,
+  "synthetic_noise_rate": 0.1,
+  "neg_pos_ratio": 1.5,
+  "window": 5,
+  "epochs": 2,
+  "lr": 0.001,
+  "fold": 0,
+  "train_datasets": [
+    "44b6_0113de3b",
+    "44b6_0b24845f",
+    "6bba_05b6850b",
+    "6bba_05db0fb1"
+  ],
+  "best_loss": 1.9152677488842795,
+  "note": "Pilot per plan \u00a77. When candidate_mode=production_sim, synthetic duplicate + noise nodes are injected to mimic production detector impostor behaviour."
+}

@@ -1,0 +1,26 @@
+{
+  "id": 134989532,
+  "ref": "noisyislands/biohub-linker-association-mlp",
+  "title": "Biohub Linker Association MLP",
+  "author": "noisyislands",
+  "slug": "biohub-linker-association-mlp",
+  "lastRunTime": "2026-09-17T02:34:35.848Z",
+  "language": "python",
+  "kernelType": "script",
+  "isPrivate": false,
+  "enableGpu": true,
+  "enableInternet": true,
+  "categoryIds": [
+    "gpu"
+  ],
+  "datasetDataSources": [
+    "PRIVATE_OR_UNRESOLVED"
+  ],
+  "competitionDataSources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "enableTpu": false,
+  "currentVersionNumber": 8,
+  "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "machineShape": "NvidiaTeslaT4"
+}

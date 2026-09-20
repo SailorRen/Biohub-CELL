@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_PUBLIC_INTEL_UPDATE_20260920",
+  "goal": "研究公开Code、Discussion、GitHub最近72小时变化；精确来源、阅读覆盖与缺口、零Kaggle写入、远端字节交付",
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "acceptance": [
+    {
+      "id": "evidence",
+      "type": "command",
+      "argv": [
+        "python3",
+        "research/PUBLIC_INTEL_20260918/update_20260920/verify.py"
+      ],
+      "cwd": ".",
+      "expected_exit": 0,
+      "timeout_seconds": 60
+    },
+    {
+      "id": "git",
+      "type": "git",
+      "repository": ".",
+      "require_clean": true,
+      "require_commit": true,
+      "require_remote": true,
+      "require_remote_head": true
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "topics": [
+    {
+      "topic_id": 742064,
+      "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/742064",
+      "coverage": "ALL_ROOT_AND_NESTED_REPLY_TEXT_READ",
+      "message_count": 1,
+      "reply_count": 0,
+      "raw_local_sha256": "26c2c475f1c918b97d2e0a05de7e5dc229e151d1df490876874edf35ac170956",
+      "messages": [
+        {
+          "message_id": 3525904,
+          "posted_at_utc": "2026-09-19T13:00:01.980Z",
+          "fact_class": "AUTHOR_CLAIM",
+          "summary": "作者报告 secondary manifest train199/test40且后者是前者子集；DeepCenter71；50ep未证实。自述子像素调整本地+0.0078而Public−0.002；未提供可核验submissionID。"
+        }
+      ]
+    },
+    {
+      "topic_id": 741749,
+      "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/741749",
+      "coverage": "ALL_ROOT_AND_NESTED_REPLY_TEXT_READ",
+      "message_count": 8,
+      "reply_count": 7,
+      "raw_local_sha256": "e1a1f8f3346dbbd78f7560ed23d682abb0cee56bfe481bc1dee53cb60fadc2d8",
+      "messages": [
+        {
+          "message_id": 3525208,
+          "posted_at_utc": "2026-09-17T06:31:17.693Z",
+          "fact_class": "AUTHOR_CLAIM",
+          "summary": "作者列举模型结构和训练长度改动未突破公开方案平台期，预训练有收益；解释须结合更正回复。"
+        },
+        {
+          "message_id": 3525406,
+          "posted_at_utc": "2026-09-17T17:48:19.580Z",
+          "fact_class": "AUTHOR_CLAIM",
+          "summary": "请求明确合成预训练设置及分数基线。"
+        },
+        {
+          "message_id": 3525570,
+          "posted_at_utc": "2026-09-18T07:21:37.373Z",
+          "fact_class": "AUTHOR_CLAIM",
+          "summary": "作者更正：其个人展示0.947来自公开Notebook，自研全流程0.939；合成预训练本地0.9146→0.9269，非0.947上的增益。"
+        },
+        {
+          "message_id": 3525577,
+          "posted_at_utc": "2026-09-18T08:18:39.780Z",
+          "fact_class": "AUTHOR_CLAIM",
+          "summary": "另一参与者报告两条谱系优化方向和局部收益不一致，尚无可迁移提升。"
+        },
+        {
+          "message_id": 3525596,
+          "posted_at_utc": "2026-09-18T10:13:21.050Z",
+          "fact_class": "AUTHOR_CLAIM",
+          "summary": "询问合成数据来源，并讨论继续改进和风险。"
+        },
+        {
+          "message_id": 3525605,
+          "posted_at_utc": "2026-09-18T11:03:17.987Z",
+          "fact_class": "AUTHOR_CLAIM",
+          "summary": "原作者认为节点数校准比漏检率更能解释其LB变化；仅个体观察。"
+        },
+        {
+          "message_id": 3525606,
+          "posted_at_utc": "2026-09-18T11:03:22.247Z",
+          "fact_class": "AUTHOR_CLAIM",
+          "summary": "作者使用José Freitas合成数据中的497条序列；同梯度步数扩大到2174条后本地adjusted下降约0.005。"
+        },
+        {
+          "message_id": 3525615,
+          "posted_at_utc": "2026-09-18T11:48:48.723Z",
+          "fact_class": "AUTHOR_CLAIM",
+          "summary": "澄清主要担心Private LB。"
+        }
+      ]
+    },
+    {
+      "topic_id": 741868,
+      "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/741868",
+      "coverage": "ALL_ROOT_AND_NESTED_REPLY_TEXT_READ",
+      "message_count": 5,
+      "reply_count": 4,
+      "raw_local_sha256": "57e50ab62ebdfac49024f1a4ab34fe904d24a474c0260448eb68aeed082bfb0b",
+      "messages": [
+        {
+          "message_id": 3525497,
+          "posted_at_utc": "2026-09-17T21:50:19.517Z",
+          "fact_class": "COMMUNITY_REPORT",
+          "summary": "主帖倡议用可视化仪表盘支持人和LLM检查实验。"
+        },
+        {
+          "message_id": 3525558,
+          "posted_at_utc": "2026-09-18T06:31:37.763Z",
+          "fact_class": "COMMUNITY_REPORT",
+          "summary": "建议进一步可视化模型前向过程。"
+        },
+        {
+          "message_id": 3525621,
+          "posted_at_utc": "2026-09-18T12:14:44.647Z",
+          "fact_class": "COMMUNITY_REPORT",
+          "summary": "建议展示结构与预处理页面。"
+        },
+        {
+          "message_id": 3525869,
+          "posted_at_utc": "2026-09-19T08:39:20.743Z",
+          "fact_class": "COMMUNITY_REPORT",
+          "summary": "Chris Deotte补充tom99763评估mock tests和讨论示例链接；未提供新比赛分数。"
+        },
+        {
+          "message_id": 3525897,
+          "posted_at_utc": "2026-09-19T12:00:27.247Z",
+          "fact_class": "COMMUNITY_REPORT",
+          "summary": "感谢补充链接，无新增方法证据。"
+        }
+      ]
+    },
+    {
+      "topic_id": 741651,
+      "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/741651",
+      "coverage": "ALL_ROOT_AND_NESTED_REPLY_TEXT_READ",
+      "message_count": 2,
+      "reply_count": 1,
+      "raw_local_sha256": "0441ef561e3854bf57b43c52ed0f23d99d136e3e9cd3b71fc4a282eed4ec9ee5",
+      "messages": [
+        {
+          "message_id": 3524989,
+          "posted_at_utc": "2026-09-16T13:36:37.390Z",
+          "fact_class": "COMMUNITY_REPORT",
+          "summary": "作者推测私榜可能大幅洗牌；没有定量支持。"
+        },
+        {
+          "message_id": 3525197,
+          "posted_at_utc": "2026-09-17T05:36:46.360Z",
+          "fact_class": "COMMUNITY_REPORT",
+          "summary": "附和洗牌猜测，无新证据。"
+        }
+      ]
+    }
+  ],
+  "total_messages": 16,
+  "total_replies": 12,
+  "image_gap": "741868原图本轮未重新视觉审查；新增外链未深读，不计入已读。",
+  "copyright": "仅同步自行撰写摘要及消息ID，不镜像讨论全文。"
+}

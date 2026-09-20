@@ -1,0 +1,23 @@
+{
+  "task": "BIOHUB_PUBLIC_INTEL_UPDATE_20260920",
+  "research_status": "PARTIAL_RESEARCH_BLOCKED",
+  "training": 0,
+  "inference": 0,
+  "save_and_run": 0,
+  "formal_submission": 0,
+  "dataset_write": 0,
+  "experiment_start": 0,
+  "protected_refs_before": {
+    "main": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+    "codex/f1-flow-kaggle-20260918": "8f18a8dd83146d6399b296ff54c4176c300724b5"
+  },
+  "research_branch": "codex/public-intel-20260918",
+  "base": "a6f7f203587b6af822244da8df0f3164fd972997",
+  "gaps": [
+    "MLP/XGB私人bootstrap数据集不可深读",
+    "owned-validation外部依赖版本未完整绑定",
+    "三份thtennant长Notebook未全文阅读",
+    "新增讨论外链未深读",
+    "没有独立核验到新Notebook正式Public提分"
+  ]
+}

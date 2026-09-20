@@ -1,0 +1,19 @@
+{
+  "evidence_class": "SOURCE_CODE_VERIFIED",
+  "evidence_type": "previously_archived_runtime_manifest_recounted",
+  "archive_date": "2026-09-16",
+  "dataset": "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+  "manifest_path": "weights/unet_transformer/split_0/split_manifest.json",
+  "manifest_sha256": "cbe8ace34ffc157172280538441454b60250f0188faa063d1a9eadfb1ac55c0b",
+  "method": "unet_transformer_alltrain_seed314159_v1",
+  "train_unique": 199,
+  "test_unique": 40,
+  "intersection": 40,
+  "test_subset_train": true,
+  "limits": [
+    "不是本轮重新下载的当前Dataset版本。",
+    "manifest声明不是实际训练全流程审计。",
+    "DeepCenter71与50ep完整覆盖本轮未独立核验；不推广成所有模型均199。",
+    "不能由训练集合覆盖推导记忆化因果或任何修改一定不迁移。"
+  ]
+}

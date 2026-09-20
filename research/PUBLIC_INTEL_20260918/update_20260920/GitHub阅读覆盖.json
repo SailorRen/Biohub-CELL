@@ -1,0 +1,103 @@
+{
+  "repositories": [
+    {
+      "repository": "https://github.com/royerlab/kaggle-cell-tracking-competition",
+      "branch": "main",
+      "commit": "075fc5f5a52d11077f9dc2b074644618f26939e2",
+      "files": [
+        {
+          "path": "README.md",
+          "bytes": 7254,
+          "sha256": "305222ff29b8b783c95ff2ceb2df3e801c52272633e798ef27af600fbe041812",
+          "url": "https://github.com/royerlab/kaggle-cell-tracking-competition/blob/075fc5f5a52d11077f9dc2b074644618f26939e2/README.md",
+          "coverage": "FULL_FILE_TEXT_READ"
+        },
+        {
+          "path": "metrics.md",
+          "bytes": 6942,
+          "sha256": "d8a2d3ff21b507242dd23e9b7c687d725261d7b4c79cff086cccb4093141d696",
+          "url": "https://github.com/royerlab/kaggle-cell-tracking-competition/blob/075fc5f5a52d11077f9dc2b074644618f26939e2/metrics.md",
+          "coverage": "FULL_FILE_TEXT_READ"
+        }
+      ],
+      "scope": "selected files only; not full repository review"
+    },
+    {
+      "repository": "https://github.com/JunhaoLiXD/Biohub_Cell_Tracking",
+      "branch": "main",
+      "commit": "e6fb6739b290b938717076b32d01a86eb462380d",
+      "files": [
+        {
+          "path": "README.md",
+          "bytes": 4493,
+          "sha256": "470f92af9f4c294302db99900c4ae3cc17949ad3b155d2e9cf1abab7183e10d4",
+          "url": "https://github.com/JunhaoLiXD/Biohub_Cell_Tracking/blob/e6fb6739b290b938717076b32d01a86eb462380d/README.md",
+          "coverage": "FULL_FILE_TEXT_READ"
+        },
+        {
+          "path": "CURRENT_BEST.json",
+          "bytes": 514,
+          "sha256": "8f9c364115352bce3138adb337c3913e021ee9f1ac29d8734d20cb40a343fca9",
+          "url": "https://github.com/JunhaoLiXD/Biohub_Cell_Tracking/blob/e6fb6739b290b938717076b32d01a86eb462380d/CURRENT_BEST.json",
+          "coverage": "FULL_FILE_TEXT_READ"
+        },
+        {
+          "path": "docs/research/transfer_failure_analysis_and_direction.md",
+          "bytes": 10251,
+          "sha256": "5799e48c8a0808292f964331036db92f5e6cb890130d2755841fda0c81e5b5ae",
+          "url": "https://github.com/JunhaoLiXD/Biohub_Cell_Tracking/blob/e6fb6739b290b938717076b32d01a86eb462380d/docs/research/transfer_failure_analysis_and_direction.md",
+          "coverage": "FULL_FILE_TEXT_READ"
+        },
+        {
+          "path": "docs/research/exp057_A0_edge_upper_bound_results.md",
+          "bytes": 4091,
+          "sha256": "914525df2c28440b751ba308ae11b62aa8b807d28854bc2b7a8b0ef7525cc9b2",
+          "url": "https://github.com/JunhaoLiXD/Biohub_Cell_Tracking/blob/e6fb6739b290b938717076b32d01a86eb462380d/docs/research/exp057_A0_edge_upper_bound_results.md",
+          "coverage": "FULL_FILE_TEXT_READ"
+        },
+        {
+          "path": "configs/exp_060_deepcenter_safe_div_threshold_sweep.yaml",
+          "bytes": 5629,
+          "sha256": "6eb16a4ae053db472ea974535a9a8c5bef27fb2bcab2c2d9832218f03c3f0198",
+          "url": "https://github.com/JunhaoLiXD/Biohub_Cell_Tracking/blob/e6fb6739b290b938717076b32d01a86eb462380d/configs/exp_060_deepcenter_safe_div_threshold_sweep.yaml",
+          "coverage": "FULL_FILE_TEXT_READ"
+        },
+        {
+          "path": "STATE.json",
+          "bytes": 21644,
+          "sha256": "0839e76cfb2e01e8858d02be432d334ed362514167fef91ef54864981413eca6",
+          "url": "https://github.com/JunhaoLiXD/Biohub_Cell_Tracking/blob/e6fb6739b290b938717076b32d01a86eb462380d/STATE.json",
+          "coverage": "FULL_FILE_TEXT_READ"
+        }
+      ],
+      "scope": "selected files only; not full repository review"
+    },
+    {
+      "repository": "https://github.com/kito2718/kaggle_Biohub-Cell_Tracking_During_Development",
+      "branch": "main",
+      "commit": "d12cd2007fb52d0e727ef7b5b4f8d4e1ce852eb0",
+      "files": [
+        {
+          "path": "README.md",
+          "bytes": 3206,
+          "sha256": "80a70b609383e2707681e873e5dab125caa5b5483f1fd90abdd5df0c2a0eea9c",
+          "url": "https://github.com/kito2718/kaggle_Biohub-Cell_Tracking_During_Development/blob/d12cd2007fb52d0e727ef7b5b4f8d4e1ce852eb0/README.md",
+          "coverage": "FULL_FILE_TEXT_READ"
+        },
+        {
+          "path": "s6_summary/s6_summary.md",
+          "bytes": 16787,
+          "sha256": "b17911d02acd051694492afe5c54511db706f3bfdae780300547b92c0d37f80d",
+          "url": "https://github.com/kito2718/kaggle_Biohub-Cell_Tracking_During_Development/blob/d12cd2007fb52d0e727ef7b5b4f8d4e1ce852eb0/s6_summary/s6_summary.md",
+          "coverage": "FULL_FILE_TEXT_READ"
+        }
+      ],
+      "scope": "selected files only; not full repository review"
+    }
+  ],
+  "limits": [
+    "公开仓库记录的Public分数归类AUTHOR_CLAIM，即便作者记录submissionID也不是本轮平台独立回读。",
+    "kito计划中的0.95以上不是已获得结果；Junhao README和CURRENT_BEST滞后于STATE。",
+    "未镜像许可证未确认的第三方仓库全文。"
+  ]
+}
