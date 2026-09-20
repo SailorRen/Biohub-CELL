@@ -1,0 +1,473 @@
+{
+  "task_id": "BIOHUB_PUBLIC_INTEL_UPDATE_20260920",
+  "scope": "This receipt verifies ae7332c payload bytes, not later receipts; includes unchanged historical Sep18 evidence.",
+  "observed_at_utc": "2026-09-20T02:46:17.587916+00:00",
+  "branch": "codex/public-intel-20260918",
+  "commit": "ae7332cdfa0dd899d8aaf77ff7583e08fddd9ef9",
+  "remote_head": "ae7332cdfa0dd899d8aaf77ff7583e08fddd9ef9",
+  "remote_main": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+  "worktree_status": "",
+  "archive_url": "https://codeload.github.com/SailorRen/Biohub-CELL/zip/ae7332cdfa0dd899d8aaf77ff7583e08fddd9ef9",
+  "archive_sha256": "1e3e568351bf0a5d0f06c590dc402db2f592ca26293c249198ab13cb7b0723ec",
+  "matched": 57,
+  "total": 57,
+  "files": [
+    {
+      "path": "reports/20260918_BIOHUB最新公开情报.md",
+      "bytes": 17719,
+      "local_sha256": "889ec9cf1c138df6d428f6201ddda09648b267da17d803a4e84ac8e8912a44b3",
+      "commit_sha256": "889ec9cf1c138df6d428f6201ddda09648b267da17d803a4e84ac8e8912a44b3",
+      "remote_sha256": "889ec9cf1c138df6d428f6201ddda09648b267da17d803a4e84ac8e8912a44b3",
+      "match": true
+    },
+    {
+      "path": "reports/20260918_交给Chat的Biohub最新情报.md",
+      "bytes": 8307,
+      "local_sha256": "f215d1249ebad9e79c9bf464ecd5c6353c5e9172a37d4d92ec0ff1db0487e0a2",
+      "commit_sha256": "f215d1249ebad9e79c9bf464ecd5c6353c5e9172a37d4d92ec0ff1db0487e0a2",
+      "remote_sha256": "f215d1249ebad9e79c9bf464ecd5c6353c5e9172a37d4d92ec0ff1db0487e0a2",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/README.md",
+      "bytes": 1025,
+      "local_sha256": "d3d405e8dfc2ee26822586c4e762cfa44207820432f95a4e4cbcc84ed6512d79",
+      "commit_sha256": "d3d405e8dfc2ee26822586c4e762cfa44207820432f95a4e4cbcc84ed6512d79",
+      "remote_sha256": "d3d405e8dfc2ee26822586c4e762cfa44207820432f95a4e4cbcc84ed6512d79",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/dependencies/support_v10/scripts/augmentations.py",
+      "bytes": 1958,
+      "local_sha256": "13db09817bf492f8d0f710a0a4d09776320b262060167055090a303fc6057f4e",
+      "commit_sha256": "13db09817bf492f8d0f710a0a4d09776320b262060167055090a303fc6057f4e",
+      "remote_sha256": "13db09817bf492f8d0f710a0a4d09776320b262060167055090a303fc6057f4e",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/dependencies/support_v10/scripts/dataspec.py",
+      "bytes": 1229,
+      "local_sha256": "e69bf952fb985477ac50ff8598a35020c95d20a035a09b81ab4056e655dd311f",
+      "commit_sha256": "e69bf952fb985477ac50ff8598a35020c95d20a035a09b81ab4056e655dd311f",
+      "remote_sha256": "e69bf952fb985477ac50ff8598a35020c95d20a035a09b81ab4056e655dd311f",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/dependencies/support_v10/scripts/evaluate.py",
+      "bytes": 6835,
+      "local_sha256": "614813cc51c3581c6ccda4bb20725a19da8ecac4a27620654bfca58319cffa3c",
+      "commit_sha256": "614813cc51c3581c6ccda4bb20725a19da8ecac4a27620654bfca58319cffa3c",
+      "remote_sha256": "614813cc51c3581c6ccda4bb20725a19da8ecac4a27620654bfca58319cffa3c",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/dependencies/support_v10/scripts/predict_unet_transformer.py",
+      "bytes": 26008,
+      "local_sha256": "c44e771ba5980b820f93091e03a303c25dfe8f3232e501f54dc9565731c234b9",
+      "commit_sha256": "c44e771ba5980b820f93091e03a303c25dfe8f3232e501f54dc9565731c234b9",
+      "remote_sha256": "c44e771ba5980b820f93091e03a303c25dfe8f3232e501f54dc9565731c234b9",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/dependencies/support_v10/scripts/train_unet_transformer.py",
+      "bytes": 49438,
+      "local_sha256": "c4f6317736bb3bb1ec8f3f6e9a6d935a463e3f0f1f685481b2d13218d35dc9ea",
+      "commit_sha256": "c4f6317736bb3bb1ec8f3f6e9a6d935a463e3f0f1f685481b2d13218d35dc9ea",
+      "remote_sha256": "c4f6317736bb3bb1ec8f3f6e9a6d935a463e3f0f1f685481b2d13218d35dc9ea",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/dependencies/support_v10/src/biohub_tracking/__init__.py",
+      "bytes": 86,
+      "local_sha256": "26a18d8da84e40da73281a48ebc3017d847a2e57431ab63e8629d2109e6e8571",
+      "commit_sha256": "26a18d8da84e40da73281a48ebc3017d847a2e57431ab63e8629d2109e6e8571",
+      "remote_sha256": "26a18d8da84e40da73281a48ebc3017d847a2e57431ab63e8629d2109e6e8571",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/dependencies/support_v10/src/biohub_tracking/division_metrics.py",
+      "bytes": 15872,
+      "local_sha256": "d1cf1e0a43009d02174f1699ce2aa28458a2220ac4b521731d3bcf31cf8c76be",
+      "commit_sha256": "d1cf1e0a43009d02174f1699ce2aa28458a2220ac4b521731d3bcf31cf8c76be",
+      "remote_sha256": "d1cf1e0a43009d02174f1699ce2aa28458a2220ac4b521731d3bcf31cf8c76be",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/dependencies/support_v10/src/biohub_tracking/img_proc.py",
+      "bytes": 5319,
+      "local_sha256": "00e8ef0adc8b39f1aaaa547ea6197b906bf9e8c009e339d3e95f8f8dbf31be3f",
+      "commit_sha256": "00e8ef0adc8b39f1aaaa547ea6197b906bf9e8c009e339d3e95f8f8dbf31be3f",
+      "remote_sha256": "00e8ef0adc8b39f1aaaa547ea6197b906bf9e8c009e339d3e95f8f8dbf31be3f",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/dependencies/support_v10/src/biohub_tracking/io.py",
+      "bytes": 13485,
+      "local_sha256": "efae135b088cecaab463d889f16c885ef6da3ad27b0747327d8ddc28d866b7bd",
+      "commit_sha256": "efae135b088cecaab463d889f16c885ef6da3ad27b0747327d8ddc28d866b7bd",
+      "remote_sha256": "efae135b088cecaab463d889f16c885ef6da3ad27b0747327d8ddc28d866b7bd",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/dependencies/support_v10/src/biohub_tracking/metrics.py",
+      "bytes": 15843,
+      "local_sha256": "31baf45b54c78f68bab4f65dd8f4b38bca702abb644171c6df7c46cdeef55d83",
+      "commit_sha256": "31baf45b54c78f68bab4f65dd8f4b38bca702abb644171c6df7c46cdeef55d83",
+      "remote_sha256": "31baf45b54c78f68bab4f65dd8f4b38bca702abb644171c6df7c46cdeef55d83",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/dependencies/support_v10/src/biohub_tracking/models/__init__.py",
+      "bytes": 246,
+      "local_sha256": "ab7587ef79856bae50d24b62e5805092d0459ee1c586522b763f9ef70c093e1d",
+      "commit_sha256": "ab7587ef79856bae50d24b62e5805092d0459ee1c586522b763f9ef70c093e1d",
+      "remote_sha256": "ab7587ef79856bae50d24b62e5805092d0459ee1c586522b763f9ef70c093e1d",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/dependencies/support_v10/src/biohub_tracking/models/simple_node_transformer.py",
+      "bytes": 7229,
+      "local_sha256": "b97209edeb03840e80d903e3e2a8c81c520641c8ef343f6ca2904d0f80db064e",
+      "commit_sha256": "b97209edeb03840e80d903e3e2a8c81c520641c8ef343f6ca2904d0f80db064e",
+      "remote_sha256": "b97209edeb03840e80d903e3e2a8c81c520641c8ef343f6ca2904d0f80db064e",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/dependencies/support_v10/src/biohub_tracking/models/temporal_unet.py",
+      "bytes": 5112,
+      "local_sha256": "d809c35d42f504161074ddeaaa7aee5b407e5bca7f9b4e1d5f9b2ff345666cac",
+      "commit_sha256": "d809c35d42f504161074ddeaaa7aee5b407e5bca7f9b4e1d5f9b2ff345666cac",
+      "remote_sha256": "d809c35d42f504161074ddeaaa7aee5b407e5bca7f9b4e1d5f9b2ff345666cac",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/dependencies/support_v10/来源与许可.json",
+      "bytes": 6413,
+      "local_sha256": "afe3c26f0c1429f4e28d82dc072731df8922ff0bfb27de994242b477d877d1ce",
+      "commit_sha256": "afe3c26f0c1429f4e28d82dc072731df8922ff0bfb27de994242b477d877d1ce",
+      "remote_sha256": "afe3c26f0c1429f4e28d82dc072731df8922ff0bfb27de994242b477d877d1ce",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/sources.json",
+      "bytes": 30721,
+      "local_sha256": "548eacf4d2824f5ab4d59875aac33e0624ad91e2fccbfab9ac6892e83dff4398",
+      "commit_sha256": "548eacf4d2824f5ab4d59875aac33e0624ad91e2fccbfab9ac6892e83dff4398",
+      "remote_sha256": "548eacf4d2824f5ab4d59875aac33e0624ad91e2fccbfab9ac6892e83dff4398",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/sources/N01/LICENSE-Apache-2.0.txt",
+      "bytes": 11358,
+      "local_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "commit_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "remote_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/sources/N01/source_cells.json",
+      "bytes": 27346,
+      "local_sha256": "06086a677e9e43cda3030e07bbba93b1ae54a44794c7b670dcfb0eabd5f286e5",
+      "commit_sha256": "06086a677e9e43cda3030e07bbba93b1ae54a44794c7b670dcfb0eabd5f286e5",
+      "remote_sha256": "06086a677e9e43cda3030e07bbba93b1ae54a44794c7b670dcfb0eabd5f286e5",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/sources/N02/LICENSE-Apache-2.0.txt",
+      "bytes": 11358,
+      "local_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "commit_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "remote_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/sources/N02/source_cells.json",
+      "bytes": 234121,
+      "local_sha256": "706aa4b3fcff6fe564bdb16f9ab92b0f488e114591f51cdc66ac1138f3b86f11",
+      "commit_sha256": "706aa4b3fcff6fe564bdb16f9ab92b0f488e114591f51cdc66ac1138f3b86f11",
+      "remote_sha256": "706aa4b3fcff6fe564bdb16f9ab92b0f488e114591f51cdc66ac1138f3b86f11",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/GitHub阅读覆盖.json",
+      "bytes": 4907,
+      "local_sha256": "e6a270b1ddb28a108fefde4f73b609d6ae6e84aff4b52c6baab727f0f72f29fd",
+      "commit_sha256": "e6a270b1ddb28a108fefde4f73b609d6ae6e84aff4b52c6baab727f0f72f29fd",
+      "remote_sha256": "e6a270b1ddb28a108fefde4f73b609d6ae6e84aff4b52c6baab727f0f72f29fd",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/acceptance.json",
+      "bytes": 752,
+      "local_sha256": "82f7b16990d72306d2647cb1654846ca9bf2343595595fae2164a14acbc94e84",
+      "commit_sha256": "82f7b16990d72306d2647cb1654846ca9bf2343595595fae2164a14acbc94e84",
+      "remote_sha256": "82f7b16990d72306d2647cb1654846ca9bf2343595595fae2164a14acbc94e84",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/sources/biohub-095-owned-validation/LICENSE-Apache-2.0.txt",
+      "bytes": 11358,
+      "local_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "commit_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "remote_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/sources/biohub-095-owned-validation/NOTICE.md",
+      "bytes": 379,
+      "local_sha256": "6d61be713f07d8b2483f075f562c083b6c7a68aaaef1db137a63c530f3cb5ecf",
+      "commit_sha256": "6d61be713f07d8b2483f075f562c083b6c7a68aaaef1db137a63c530f3cb5ecf",
+      "remote_sha256": "6d61be713f07d8b2483f075f562c083b6c7a68aaaef1db137a63c530f3cb5ecf",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/sources/biohub-095-owned-validation/metadata.json",
+      "bytes": 782,
+      "local_sha256": "3be984c0d71af25319fb2e65316f0921e0b455125882cf78e9e3adbffcd68755",
+      "commit_sha256": "3be984c0d71af25319fb2e65316f0921e0b455125882cf78e9e3adbffcd68755",
+      "remote_sha256": "3be984c0d71af25319fb2e65316f0921e0b455125882cf78e9e3adbffcd68755",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/sources/biohub-095-owned-validation/source.ipynb",
+      "bytes": 33365,
+      "local_sha256": "6a9c42fcdb3b1ab13f24698db2884d8a49330e6b8803a1d45cb91b233e7c4451",
+      "commit_sha256": "6a9c42fcdb3b1ab13f24698db2884d8a49330e6b8803a1d45cb91b233e7c4451",
+      "remote_sha256": "6a9c42fcdb3b1ab13f24698db2884d8a49330e6b8803a1d45cb91b233e7c4451",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/sources/biohub-linker-association-mlp/LICENSE-Apache-2.0.txt",
+      "bytes": 11358,
+      "local_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "commit_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "remote_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/sources/biohub-linker-association-mlp/NOTICE.md",
+      "bytes": 381,
+      "local_sha256": "aae983c39d773ef45be3d99e0cb9de76ac24c02f418b0fd9b274c22ae273ef5d",
+      "commit_sha256": "aae983c39d773ef45be3d99e0cb9de76ac24c02f418b0fd9b274c22ae273ef5d",
+      "remote_sha256": "aae983c39d773ef45be3d99e0cb9de76ac24c02f418b0fd9b274c22ae273ef5d",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/sources/biohub-linker-association-mlp/log_selected.json",
+      "bytes": 1803,
+      "local_sha256": "ac30a874d7ab89fcd89e929140497f6c14e7d7ed479e524779ca85c88e9f579d",
+      "commit_sha256": "ac30a874d7ab89fcd89e929140497f6c14e7d7ed479e524779ca85c88e9f579d",
+      "remote_sha256": "ac30a874d7ab89fcd89e929140497f6c14e7d7ed479e524779ca85c88e9f579d",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/sources/biohub-linker-association-mlp/metadata.json",
+      "bytes": 742,
+      "local_sha256": "cb1039df5b363959f9bbe392f9cc5701e29408f650bbaea4fb0a4babfadca4a0",
+      "commit_sha256": "cb1039df5b363959f9bbe392f9cc5701e29408f650bbaea4fb0a4babfadca4a0",
+      "remote_sha256": "cb1039df5b363959f9bbe392f9cc5701e29408f650bbaea4fb0a4babfadca4a0",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/sources/biohub-linker-association-mlp/output_prov.json",
+      "bytes": 815,
+      "local_sha256": "0d506e05503ce8c35254ca798560ab5989479ae701bdccca06a970c3abb3992b",
+      "commit_sha256": "0d506e05503ce8c35254ca798560ab5989479ae701bdccca06a970c3abb3992b",
+      "remote_sha256": "0d506e05503ce8c35254ca798560ab5989479ae701bdccca06a970c3abb3992b",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/sources/biohub-linker-association-mlp/source.py",
+      "bytes": 27916,
+      "local_sha256": "f1471f9a6a6569392a77073ce63393b58a6a23968420efe6207c6e2dbcaf462d",
+      "commit_sha256": "f1471f9a6a6569392a77073ce63393b58a6a23968420efe6207c6e2dbcaf462d",
+      "remote_sha256": "f1471f9a6a6569392a77073ce63393b58a6a23968420efe6207c6e2dbcaf462d",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/sources/biohub-xgboost-division-events/LICENSE-Apache-2.0.txt",
+      "bytes": 11358,
+      "local_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "commit_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "remote_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/sources/biohub-xgboost-division-events/NOTICE.md",
+      "bytes": 382,
+      "local_sha256": "d4ee3311ba2f4f6f7c97918e8c6364ecf0aabf8519e8f710811bae62c6e41969",
+      "commit_sha256": "d4ee3311ba2f4f6f7c97918e8c6364ecf0aabf8519e8f710811bae62c6e41969",
+      "remote_sha256": "d4ee3311ba2f4f6f7c97918e8c6364ecf0aabf8519e8f710811bae62c6e41969",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/sources/biohub-xgboost-division-events/log_selected.json",
+      "bytes": 365,
+      "local_sha256": "5259cb3a77d1f53e3c9ca0231ac5c3c1bb1ce0ce39a90f145ca30257647e9dc8",
+      "commit_sha256": "5259cb3a77d1f53e3c9ca0231ac5c3c1bb1ce0ce39a90f145ca30257647e9dc8",
+      "remote_sha256": "5259cb3a77d1f53e3c9ca0231ac5c3c1bb1ce0ce39a90f145ca30257647e9dc8",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/sources/biohub-xgboost-division-events/metadata.json",
+      "bytes": 711,
+      "local_sha256": "fc55ee911296301f81a2a7f3342093094a8e9917d0d4ce9502058ae397df03cb",
+      "commit_sha256": "fc55ee911296301f81a2a7f3342093094a8e9917d0d4ce9502058ae397df03cb",
+      "remote_sha256": "fc55ee911296301f81a2a7f3342093094a8e9917d0d4ce9502058ae397df03cb",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/sources/biohub-xgboost-division-events/output_manifest.json",
+      "bytes": 1168,
+      "local_sha256": "d7e8a75310ef9f611de4df3d5110318622d89ee49b5d70c6a2cb9de09bc08b5e",
+      "commit_sha256": "d7e8a75310ef9f611de4df3d5110318622d89ee49b5d70c6a2cb9de09bc08b5e",
+      "remote_sha256": "d7e8a75310ef9f611de4df3d5110318622d89ee49b5d70c6a2cb9de09bc08b5e",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/sources/biohub-xgboost-division-events/source.py",
+      "bytes": 19373,
+      "local_sha256": "464851ed2ed177bdaa68c5e038d859b2ce7c4ae28cae45fee2b782fdc8ee5bfb",
+      "commit_sha256": "464851ed2ed177bdaa68c5e038d859b2ce7c4ae28cae45fee2b782fdc8ee5bfb",
+      "remote_sha256": "464851ed2ed177bdaa68c5e038d859b2ce7c4ae28cae45fee2b782fdc8ee5bfb",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/verify.py",
+      "bytes": 1723,
+      "local_sha256": "802ffd7757e5531cf9fb0930552bafd96dc6904f5d164dd113cb824c4744a012",
+      "commit_sha256": "802ffd7757e5531cf9fb0930552bafd96dc6904f5d164dd113cb824c4744a012",
+      "remote_sha256": "802ffd7757e5531cf9fb0930552bafd96dc6904f5d164dd113cb824c4744a012",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/交给Chat.md",
+      "bytes": 1556,
+      "local_sha256": "21c0c119fd300e0ff94224aafbb20790cd61421cc6fba50babdd3cb3bef1e13e",
+      "commit_sha256": "21c0c119fd300e0ff94224aafbb20790cd61421cc6fba50babdd3cb3bef1e13e",
+      "remote_sha256": "21c0c119fd300e0ff94224aafbb20790cd61421cc6fba50babdd3cb3bef1e13e",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/公开权重训练覆盖核查.json",
+      "bytes": 842,
+      "local_sha256": "f6faff286d2fa6541cb8767fc40d0d8ad2b678a9c91855e3ef34179b0e7d850f",
+      "commit_sha256": "f6faff286d2fa6541cb8767fc40d0d8ad2b678a9c91855e3ef34179b0e7d850f",
+      "remote_sha256": "f6faff286d2fa6541cb8767fc40d0d8ad2b678a9c91855e3ef34179b0e7d850f",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/列表筛查.json",
+      "bytes": 110881,
+      "local_sha256": "f62fb7fc3d0e3ef1aa46b5d760c46896be54df16f991f9947db8f400102c4f2d",
+      "commit_sha256": "f62fb7fc3d0e3ef1aa46b5d760c46896be54df16f991f9947db8f400102c4f2d",
+      "remote_sha256": "f62fb7fc3d0e3ef1aa46b5d760c46896be54df16f991f9947db8f400102c4f2d",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/操作账本.json",
+      "bytes": 772,
+      "local_sha256": "f46ce77f325b39f821146fcc6ccaef529c507c4592f93c87a19035f939612d1d",
+      "commit_sha256": "f46ce77f325b39f821146fcc6ccaef529c507c4592f93c87a19035f939612d1d",
+      "remote_sha256": "f46ce77f325b39f821146fcc6ccaef529c507c4592f93c87a19035f939612d1d",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/最新公开情报.md",
+      "bytes": 9536,
+      "local_sha256": "0b246dfadf38da0d369c1ffa78cc7a75a586e7ef219cdf7acaf9cbefb4bd7fc5",
+      "commit_sha256": "0b246dfadf38da0d369c1ffa78cc7a75a586e7ef219cdf7acaf9cbefb4bd7fc5",
+      "remote_sha256": "0b246dfadf38da0d369c1ffa78cc7a75a586e7ef219cdf7acaf9cbefb4bd7fc5",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/源码阅读覆盖.json",
+      "bytes": 3829,
+      "local_sha256": "2232e30cd5f81d93812475a8d332f31f7861e0bc579a00e82f081e0f3ede1d84",
+      "commit_sha256": "2232e30cd5f81d93812475a8d332f31f7861e0bc579a00e82f081e0f3ede1d84",
+      "remote_sha256": "2232e30cd5f81d93812475a8d332f31f7861e0bc579a00e82f081e0f3ede1d84",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/update_20260920/讨论阅读覆盖.json",
+      "bytes": 5851,
+      "local_sha256": "8e662caac925f6e08c0772982040a8840718660fee0de0c22f049841f2444d51",
+      "commit_sha256": "8e662caac925f6e08c0772982040a8840718660fee0de0c22f049841f2444d51",
+      "remote_sha256": "8e662caac925f6e08c0772982040a8840718660fee0de0c22f049841f2444d51",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/verify_remote.py",
+      "bytes": 2560,
+      "local_sha256": "21507237854dc4073d4c3d0c525015984e29b92d1ef6079cdde3df668f17d417",
+      "commit_sha256": "21507237854dc4073d4c3d0c525015984e29b92d1ef6079cdde3df668f17d417",
+      "remote_sha256": "21507237854dc4073d4c3d0c525015984e29b92d1ef6079cdde3df668f17d417",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/准确分数核对.json",
+      "bytes": 1408,
+      "local_sha256": "06c7d588fbc01b4a5b64d44fb33ce8b0bd19ee0f312fa16955621f33158bb5e5",
+      "commit_sha256": "06c7d588fbc01b4a5b64d44fb33ce8b0bd19ee0f312fa16955621f33158bb5e5",
+      "remote_sha256": "06c7d588fbc01b4a5b64d44fb33ce8b0bd19ee0f312fa16955621f33158bb5e5",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/分支保护记录.json",
+      "bytes": 789,
+      "local_sha256": "454f30a59e5cba8737412476fd56768d0339b4886bfc0f3f4ab8a409e84c443d",
+      "commit_sha256": "454f30a59e5cba8737412476fd56768d0339b4886bfc0f3f4ab8a409e84c443d",
+      "remote_sha256": "454f30a59e5cba8737412476fd56768d0339b4886bfc0f3f4ab8a409e84c443d",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/列表筛查.json",
+      "bytes": 7290,
+      "local_sha256": "39d11dcec7344c2b2629e54b5e7b5966c07f7625a031fc8cfaad410f2633fee9",
+      "commit_sha256": "39d11dcec7344c2b2629e54b5e7b5966c07f7625a031fc8cfaad410f2633fee9",
+      "remote_sha256": "39d11dcec7344c2b2629e54b5e7b5966c07f7625a031fc8cfaad410f2633fee9",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/同家族静态差异.json",
+      "bytes": 1728,
+      "local_sha256": "aac89d8cec5cd1d043369106d21b04b71cef84e6818ef21883c9af10a00e204e",
+      "commit_sha256": "aac89d8cec5cd1d043369106d21b04b71cef84e6818ef21883c9af10a00e204e",
+      "remote_sha256": "aac89d8cec5cd1d043369106d21b04b71cef84e6818ef21883c9af10a00e204e",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/官方页面与排行榜.json",
+      "bytes": 3062,
+      "local_sha256": "dfd6fe69273bc26d5cdf80de729300926de6ca3f4d0ea3ae7052d54de052d0ec",
+      "commit_sha256": "dfd6fe69273bc26d5cdf80de729300926de6ca3f4d0ea3ae7052d54de052d0ec",
+      "remote_sha256": "dfd6fe69273bc26d5cdf80de729300926de6ca3f4d0ea3ae7052d54de052d0ec",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/本地交付检查.json",
+      "bytes": 760,
+      "local_sha256": "f65624283b33d63ceb7e81a828fbad7c2c0fc7b8d7de3a4c7cb6a2d8af19bb6b",
+      "commit_sha256": "f65624283b33d63ceb7e81a828fbad7c2c0fc7b8d7de3a4c7cb6a2d8af19bb6b",
+      "remote_sha256": "f65624283b33d63ceb7e81a828fbad7c2c0fc7b8d7de3a4c7cb6a2d8af19bb6b",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/讨论逐条阅读.json",
+      "bytes": 17870,
+      "local_sha256": "526426a3c85877a7e2c017f1fe6956e6e3ba5266bb6403f907fa1b20336d51c3",
+      "commit_sha256": "526426a3c85877a7e2c017f1fe6956e6e3ba5266bb6403f907fa1b20336d51c3",
+      "remote_sha256": "526426a3c85877a7e2c017f1fe6956e6e3ba5266bb6403f907fa1b20336d51c3",
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260918/远端交付回执.json",
+      "bytes": 14119,
+      "local_sha256": "616464ee6b875c028ab77307defb903d2b7837cd98825ce46dd14ea458bc749b",
+      "commit_sha256": "616464ee6b875c028ab77307defb903d2b7837cd98825ce46dd14ea458bc749b",
+      "remote_sha256": "616464ee6b875c028ab77307defb903d2b7837cd98825ce46dd14ea458bc749b",
+      "match": true
+    }
+  ],
+  "status": "REMOTE_BYTES_VERIFIED"
+}

@@ -19,5 +19,13 @@
     "三份thtennant长Notebook未全文阅读",
     "新增讨论外链未深读",
     "没有独立核验到新Notebook正式Public提分"
-  ]
+  ],
+  "protected_refs_after": {
+    "main": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+    "codex/f1-flow-kaggle-20260918": "8f18a8dd83146d6399b296ff54c4176c300724b5"
+  },
+  "canonical_worktree": {
+    "branch": "codex/sprint02-hoct-20260917",
+    "status": ""
+  }
 }
