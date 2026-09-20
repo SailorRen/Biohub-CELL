@@ -1,0 +1,17 @@
+{
+  "observed_at_utc": "2026-09-20T15:55:07.237931+00:00",
+  "source": "signed-in exact notebook log UI",
+  "kernel_id": 135123707,
+  "version": 1,
+  "script_version_id": 351350449,
+  "event": "BIOHUB_RETENTION_GUARD",
+  "dataset": "44b6_0b24845f",
+  "frame": 34,
+  "secondary_detection_weight": 0.5,
+  "minimum_retention": 0.9,
+  "primary_candidates": 325,
+  "blended_candidates": 288,
+  "retention": 0.8861538461538462,
+  "use_primary": true,
+  "scope": "worker parameter and existing retention decision only, no quality claim"
+}

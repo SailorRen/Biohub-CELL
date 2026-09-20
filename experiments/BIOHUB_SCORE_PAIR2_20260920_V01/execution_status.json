@@ -1,0 +1,54 @@
+{
+  "observed_at_utc": "2026-09-20T16:14:55.827979+00:00",
+  "task_delivery": "PENDING_PAYLOAD_READBACK",
+  "execution": "KERNEL_RUNNING",
+  "observation_paused_by_user": true,
+  "resume_condition": "User notifies that platform runs have finished; no automatic observation or submission while paused",
+  "platform_runs_cancelled": false,
+  "score": "NOT_SUBMITTED",
+  "contract_sha256": "a1cbf0c88508203932a74ef36e9684e4ca231b64f9b57f9fcfdd92e74d19d918",
+  "completed_checks": [
+    "fixed task identity",
+    "four changed-path tests",
+    "source freeze GitHub byte readback",
+    "two private exact V1/SV source bindings",
+    "request budget and dedup ledger"
+  ],
+  "remaining": [
+    "ordinary terminal output",
+    "actual CSV independent check",
+    "formal submission requests and ID readback"
+  ],
+  "arms": {
+    "S50": {
+      "kernel_id": 135123707,
+      "version": 1,
+      "script_version_id": 351350449,
+      "kernel_status": "RUNNING",
+      "submission_id": null,
+      "public_score": null,
+      "formal_status": "NOT_SUBMITTED",
+      "observed_at_shanghai": "2026-09-21T00:14:52.288663+08:00"
+    },
+    "G58": {
+      "kernel_id": 135123769,
+      "version": 1,
+      "script_version_id": 351350591,
+      "kernel_status": "RUNNING",
+      "submission_id": null,
+      "public_score": null,
+      "formal_status": "NOT_SUBMITTED",
+      "observed_at_shanghai": "2026-09-21T00:14:54.459061+08:00"
+    }
+  },
+  "counts": {
+    "new_private_notebooks": 2,
+    "save_and_run": 2,
+    "formal_submission": 0,
+    "training": 0,
+    "dataset_write": 0,
+    "final_selection_change": 0,
+    "v1_f1_write": 0
+  },
+  "completion_claim_recorded": false
+}

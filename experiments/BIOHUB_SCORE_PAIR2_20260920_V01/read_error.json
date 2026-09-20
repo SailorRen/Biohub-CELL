@@ -1,0 +1,7 @@
+{
+  "observed_at_utc": "2026-09-20T16:05:30.312058+00:00",
+  "operation": "read-only OAuth IntrospectToken before status query",
+  "error": "SSLError UNEXPECTED_EOF_WHILE_READING api.kaggle.com:443",
+  "platform_write_requests": 0,
+  "fallback": "signed-in UI confirms S50 RUNNING 1154.5s, G58 RUNNING 1114.4s"
+}

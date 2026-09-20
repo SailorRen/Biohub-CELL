@@ -1,0 +1,47 @@
+{
+  "sources": [
+    {
+      "commit": "e9c7c63b896812660a78ec55fc3284c10f85e776",
+      "path": "experiments/BIOHUB_SPRINT01_20260916/own/candidate.ipynb",
+      "sha256": "de010e6ba142be0e01000093e061ef7d3388ddaa411185b40d26c63a3febe731",
+      "inherited_bytes_equal": true
+    },
+    {
+      "commit": "e9c7c63b896812660a78ec55fc3284c10f85e776",
+      "path": "experiments/BIOHUB_SPRINT01_20260916/own/kernel-metadata.json",
+      "sha256": "11816b32dc5078bea352860d85edd36ba388348332e9b5b8741bc291594ff906",
+      "inherited_bytes_equal": true
+    },
+    {
+      "commit": "e9c7c63b896812660a78ec55fc3284c10f85e776",
+      "path": "experiments/BIOHUB_SPRINT01_20260916/build_production.py",
+      "sha256": "b044d93cbda21c6cd2202ec8f175d86dfdaf5eebf85f1ad296270ac6dfdc35d9",
+      "inherited_bytes_equal": true
+    },
+    {
+      "commit": "e9c7c63b896812660a78ec55fc3284c10f85e776",
+      "path": "experiments/BIOHUB_SPRINT01_20260916/production_module.py",
+      "sha256": "ae1c414bc298eaefc33b79888644290cdb962c7b6f7fbf73adbdc3c278d9c3a6",
+      "inherited_bytes_equal": true
+    },
+    {
+      "commit": "850fafe77eaa6438cae06f9773d1b6a0b3d8c118",
+      "path": "reports/20260920_BIOHUB_DIVGATE_PAIR_V01.md",
+      "sha256": "cf5bb6ff528b4f23415ec5ef59c3ab3b0865d2cec8b9a837691ebd8d92617602",
+      "inherited_bytes_equal": true
+    },
+    {
+      "commit": "850fafe77eaa6438cae06f9773d1b6a0b3d8c118",
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/candidate_manifest.json",
+      "sha256": "0b0b2f729553dbe807eeda5be5cb9891b20b5e15c48d1e2ae0eeb6656d3eba7c",
+      "inherited_bytes_equal": true
+    },
+    {
+      "commit": "850fafe77eaa6438cae06f9773d1b6a0b3d8c118",
+      "path": "reports/20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_REPORT_V01.md",
+      "sha256": "a4033313b87e0a6b1876e17996f484a61637b4696c59967a552267d7336013a1",
+      "inherited_bytes_equal": true
+    }
+  ],
+  "scope": "fixed source identity; unchanged G1 audit reused as task permits"
+}
