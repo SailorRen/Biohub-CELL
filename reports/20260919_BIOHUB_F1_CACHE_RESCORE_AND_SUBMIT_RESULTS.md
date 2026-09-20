@@ -1,6 +1,23 @@
 # F1 缓存评分恢复与正式提交
 
-## 2026-09-20 续接：生产验收通过，准备一次正式提交
+## 最新状态：生产已验收，正式 submission56375774 等待评分
+
+观测时间：2026-09-20 09:23:10（上海）。正式状态 PENDING，Public=null，结论 SCORE_PENDING；尚不能判断相对 G1 的变化，也不能宣称正式评分完成。
+
+2026-09-20 09:22:50 预记唯一额度并发送正式 code submission；HTTP200、wire_sends=1，平台回读 submission56375774，描述绑定生产 V1 / SV351084196，源码 SHA256 a7cb7f8a0da5b5055594779019ebb3ab688e3ce5916079d23b59574b628720b1。未上传本地 CSV 替代准确代码版本。
+
+累计 Save & Run=3/3、生产=1/1、工程备用=1/1、正式提交=1/1。训练、Dataset 写入、最终选择修改均为 0。第一次 UNKNOWN、诊断 V1 ERROR 保留。G1 submission56270217 本轮实时回读 COMPLETE / Public=0.948。没有改最终选择，没有新实验或会话外监控。
+
+正式发送前固定提交 0610eb5d341007598eae791b9e03aa4fdbc21654 已完成 GitHub 124/124 文件字节一致回读。正式回执、平台观察和累计账本见 production/formal_request.json、formal_status.json 及 E/ledger.json。
+
+下一次仅续接原 submission 的只读命令（不启动任何新计算）：
+```bash
+cd /private/tmp/biohub-f1-score-20260920
+/opt/anaconda3/envs/ml/bin/python3 experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/production/read_formal.py
+```
+若临时目录不存在，安全 clone 同研究分支后执行；正式写入额度已耗尽，不得运行 submit_once.py 或 save_once.py。若终态错误则保留错误，不重提。
+
+## 本轮生产验收证据
 
 准确生产 V1 / SV351084196 已由 API 核验 COMPLETE，页面耗时 12171.7 秒。回收 8 个必要文件；submission.csv 留 ignored，完整 F1 回执用无损 gzip 同步（133285 bytes，解压后 SHA256 与原始字节一致）。其余小型回执、完整输出清单和脱敏日志同步。
 
@@ -8,7 +25,11 @@
 
 原选择器选中 combo(tight55+relaxed9)，内部 proxy=0.9548168641878856，仅是反复使用验证面板的内部结果，不能作 Public 或独立泛化证据。实际 F1 回执尾缀是正常换行；此前从转义展示推测的字面量反斜杠 n 未出现在回收字节中。未修改或重跑 Notebook。
 
-预检：账户 sailorren、参赛有效、提交开放、今日 0/5，完整提交列表没有 F1；准确 G1 submission56270217 仍 COMPLETE / Public 0.948。正式预算尚未消费，提交前先同步本验收证据。
+预检：账户 sailorren、参赛有效、提交开放、今日 0/5，完整提交列表没有 F1；准确 G1 submission56270217 仍 COMPLETE / Public 0.948。这是正式写入前的预检快照；当前正式额度已消费 1/1。
+
+完成边界：缓存评分恢复已核验、生产输出已核验、正式提交已被平台接收并回读；正式评分尚未完成。文件交付使用独立固定提交字节回读，不能代替 Public 分数。
+
+读取覆盖：完整生产冻结源码绑定与既有路径审读；完整 6153 条日志结构扫描并定向读取警告和末尾，全部 8 个下载文件，全部 80 次 flow 的逐帧记录，全部 241020 CSV 行，完整 444 项输出清单，以及完整本人 submission 列表。日志中的 retention guard fallback 是冻结上游逐帧保护机制；run_stats 的 motion raw fallback 和 large-frame skip 均为 0。没有新增诊断、参数扫描或本地模型执行；生产自身冻结选择器的原有 9 项配置集保持不变。
 
 以下保留 9 月 19 日历史记录，历史 RUNNING / NOT_RUN 不是本轮最新状态。
 

@@ -1,0 +1,31 @@
+{
+  "action": "Submission",
+  "attempt_id": "F1-SUB-01",
+  "principal": "sailorren",
+  "competition": "biohub-cell-tracking-during-development",
+  "ref": "sailorren/biohub-f1-flow-prod-20260918",
+  "kernel_id": 134988494,
+  "version": 1,
+  "script_version_id": 351084196,
+  "source_sha256": "a7cb7f8a0da5b5055594779019ebb3ab688e3ce5916079d23b59574b628720b1",
+  "description": "BIOHUB_F1_FLOW_KAGGLE_20260918 F1 V1 SV351084196",
+  "at_utc": "2026-09-20T01:22:50.803769+00:00",
+  "status": "RESPONSE_RECEIVED_READBACK_REQUIRED",
+  "requests_counted": 1,
+  "wire_sends": 1,
+  "checkpoint_commit": "0610eb5d341007598eae791b9e03aa4fdbc21654",
+  "ordinary_submission_sha256": "da80c6aa879f1531a35088e029cf3f9658108265ee9c74d959d86e64182f6726",
+  "today_before": 0,
+  "daily_max": 5,
+  "sent_at_utc": "2026-09-20T01:22:50.806306+00:00",
+  "http": {
+    "status": 200,
+    "bytes": 16,
+    "body_sha256": "3be24e41e14d9914429b3e42eecd8a12ed2fd77402ec70c33aee839ddce0e14d"
+  },
+  "response": {
+    "ref": 56375774,
+    "message": ""
+  },
+  "finished_at_utc": "2026-09-20T01:22:53.104887+00:00"
+}

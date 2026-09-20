@@ -67,5 +67,11 @@
     }
   ],
   "kaggle_writes": 0,
-  "association": "current API source/version bracketed before and after; SV from verified UI edit-run binding"
+  "association": "current API source/version bracketed before and after; SV from verified UI edit-run binding",
+  "lossless_archive": {
+    "file": "experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/production/output_v1/f1_production_receipt.json.gz",
+    "bytes": 133285,
+    "sha256": "5bd638f97c60efc04dea8284245672149b29befd38b02df4245669c7dc5d2837",
+    "decompressed_sha256": "72fa2df9265a50484abe0c44662ea6d1b08830368bf6e99c4ce4b2b7748325d3"
+  }
 }
