@@ -1,0 +1,15 @@
+{
+  "observed_at_utc": "2026-09-20T06:48:58.380830+00:00",
+  "observed_at_shanghai": "2026-09-20T14:48:58.380830+08:00",
+  "account": "sailorren",
+  "gpu_available_minutes": 1238,
+  "gpu_text": "20h 38m available of 30h",
+  "active_ordinary_kernels": 0,
+  "active_formal_submissions": 1,
+  "existing_formal": "F1 56375774 Scoring",
+  "submission_control_enabled": true,
+  "concurrency_block_notice": false,
+  "existing_pair_submissions": [],
+  "source": "Signed-in competition Submissions full 20-row list and Active Events, account quota panel; read only",
+  "sdk_quota_discrepancy": "SDK totalTimeAllowed 21600s disagrees with UI 30h; both retained, UI account allowance used; no platform limit bypass."
+}

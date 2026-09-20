@@ -1,0 +1,157 @@
+{
+  "status": "PASS",
+  "observed_at_utc": "2026-09-20T06:48:22.126082+00:00",
+  "observed_at_shanghai": "2026-09-20T14:48:22.126082+08:00",
+  "arm": "A18",
+  "binding": {
+    "ref": "sailorren/biohub-g1-divgate018-20260920",
+    "kernel_id": 135051720,
+    "version": 1,
+    "script_version_id": 351207161,
+    "source_sha256": "b54d433a65b0ccfcb6ffd203abc3479d70f6ffe1129573c460b6882f88a77b3d",
+    "metadata": {
+      "id": 135051720,
+      "ref": "sailorren/biohub-g1-divgate018-20260920",
+      "title": "biohub-g1-divgate018-20260920",
+      "author": "Sailor Ren",
+      "slug": "biohub-g1-divgate018-20260920",
+      "lastRunTime": "2026-09-17T06:46:43.753Z",
+      "language": "python",
+      "kernelType": "notebook",
+      "isPrivate": true,
+      "enableGpu": true,
+      "enableInternet": false,
+      "categoryIds": [
+        "gpu"
+      ],
+      "datasetDataSources": [
+        "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+        "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+        "pilkwang/biohub-tracking-support-pack-50ep-v1"
+      ],
+      "kernelDataSources": [
+        "sailorren/biohub-division-train-20260914"
+      ],
+      "competitionDataSources": [
+        "biohub-cell-tracking-during-development"
+      ],
+      "enableTpu": false,
+      "currentVersionNumber": 1,
+      "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "machineShape": "NvidiaTeslaT4"
+    }
+  },
+  "csv_sha256": "2e22cd6024d04d0b0fc29ff964fa38caa138ec4b9bd076258f966c638e32ee72",
+  "rows": 241313,
+  "samples": [
+    "44b6_0113de3b",
+    "44b6_0b24845f",
+    "6bba_05b6850b",
+    "6bba_05db0fb1"
+  ],
+  "schema_graph_checks": "PASS",
+  "official_csv_roundtrip": "PASS",
+  "canonical_graphs": {
+    "44b6_0113de3b": {
+      "nodes": 25637,
+      "edges": 24916,
+      "divisions": 38,
+      "canonical_sha256": "efd6386310736697412947b95dfe7b1dab1bbf3be0d32974f53f1df4cd3edbb3"
+    },
+    "44b6_0b24845f": {
+      "nodes": 20725,
+      "edges": 19437,
+      "divisions": 16,
+      "canonical_sha256": "bcf40c5665cfd93ad126288f9fd86aed9ebed7d78d0c553ec3f249feb33dcd4a"
+    },
+    "6bba_05b6850b": {
+      "nodes": 6152,
+      "edges": 5953,
+      "divisions": 5,
+      "canonical_sha256": "f305c966bb2e2a84b351f15bad83ba884a062160b95d44a1ba7cf03bae4ed177"
+    },
+    "6bba_05db0fb1": {
+      "nodes": 70294,
+      "edges": 68199,
+      "divisions": 22,
+      "canonical_sha256": "0158313a53bb03c4fa43db64f6eb828fb8557164c3606648b83725da413f5652"
+    }
+  },
+  "final_canonical_sha256": "6c39b67b8bbdbedfa910e980ff113dabc412e60a71a3f027291bc2e13e833b68",
+  "g1_020_equivalent": "PASS",
+  "actual_single_config_change": {
+    "DEEPCENTER_SAFE_DIV_THRESHOLD": [
+      0.2,
+      0.18
+    ]
+  },
+  "production_call_input_pairing": "PASS",
+  "differences": [
+    {
+      "stem": "44b6_0113de3b",
+      "g1_hash": "4cfb7ca7d9c3e993faa57ec9971b0d9b20b7461de974b8935cec843ec955f952",
+      "candidate_hash": "efd6386310736697412947b95dfe7b1dab1bbf3be0d32974f53f1df4cd3edbb3",
+      "nodes_delta": 0,
+      "edges_added": 1,
+      "edges_removed": 0,
+      "division_delta": 1,
+      "changed": true
+    },
+    {
+      "stem": "44b6_0b24845f",
+      "g1_hash": "292c061c73e402b65fc8708b0e88bfef1e6af151843ed55c04f7a204375f3943",
+      "candidate_hash": "bcf40c5665cfd93ad126288f9fd86aed9ebed7d78d0c553ec3f249feb33dcd4a",
+      "nodes_delta": 8,
+      "edges_added": 9,
+      "edges_removed": 0,
+      "division_delta": 3,
+      "changed": true
+    },
+    {
+      "stem": "6bba_05b6850b",
+      "g1_hash": "f305c966bb2e2a84b351f15bad83ba884a062160b95d44a1ba7cf03bae4ed177",
+      "candidate_hash": "f305c966bb2e2a84b351f15bad83ba884a062160b95d44a1ba7cf03bae4ed177",
+      "nodes_delta": 0,
+      "edges_added": 0,
+      "edges_removed": 0,
+      "division_delta": 0,
+      "changed": false
+    },
+    {
+      "stem": "6bba_05db0fb1",
+      "g1_hash": "3546ab6f583487c31193c8027415d726c0c00b9544cbb50e6c4f6a98b16cd3d2",
+      "candidate_hash": "0158313a53bb03c4fa43db64f6eb828fb8557164c3606648b83725da413f5652",
+      "nodes_delta": 4,
+      "edges_added": 6,
+      "edges_removed": 0,
+      "division_delta": 3,
+      "changed": true
+    }
+  ],
+  "has_effect": true,
+  "weights": {
+    "primary": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+    "secondary": "9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f",
+    "deepcenter": "8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0"
+  },
+  "gate_weight_sha256": "0a1f9b93bb529e70f4f7c2ba0907eea8b4cecd2befccc8ba1fb75e569edf77a0",
+  "dependency_versions": {
+    "tracksdata": "0.1.0rc6.dev3+g980c2d30a",
+    "polars": "1.42.0",
+    "numpy": "2.0.2",
+    "scipy": "1.16.3",
+    "geff": "1.2.0.1.1",
+    "zarr": "3.2.1",
+    "torch": "2.10.0+cu128"
+  },
+  "tracksdata_source_manifest_sha256": "d991d47d0a2c79ac479a8eced257a386c113c03bfa024d2d42e51325eeecb852",
+  "official_source_hashes": {
+    "metrics": "cfdd596e3f8909cca14db0682889738b19ff75c3808b3773175aba9367ca7444",
+    "division_metrics": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9",
+    "build_graph_from_rows": "c0fe1868d4550235c4673d4a3fc5e2d6ab0402f3cd0bac73eec8d1348eb9690d"
+  },
+  "model_readiness_logs": "PASS",
+  "raw_log_sha256": "99537779902d2028374b0c5598d1dda0c64eed6b5164e2505e76168e46e87494",
+  "platform_mutations": 0,
+  "pair_deduplication": "DISTINCT"
+}

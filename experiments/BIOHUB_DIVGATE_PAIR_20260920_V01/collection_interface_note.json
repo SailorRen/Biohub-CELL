@@ -1,0 +1,8 @@
+{
+  "initial_read_request": "ListKernelSessionOutput version_label=1",
+  "result": "HTTP404",
+  "resolution": "Use documented current-output endpoint without version_label; require exact kernel/currentVersion=1 and frozen complete source before and after. This is a read-only endpoint fallback, no platform write/retry.",
+  "platform_writes": 0,
+  "second_read_failure": "Before/after full metadata equality failed solely because service lastRunTime changed on reads; subsequent collected snapshots confirm exact changed field for both arms.",
+  "identity_policy": "Exclude only lastRunTime from equality; preserve both values, require equality of every other metadata key plus complete source and exact V1."
+}

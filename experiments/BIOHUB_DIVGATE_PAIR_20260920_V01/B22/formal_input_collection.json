@@ -1,0 +1,134 @@
+{
+  "observed_at_utc": "2026-09-20T06:47:39.009404+00:00",
+  "observed_at_shanghai": "2026-09-20T14:47:39.009404+08:00",
+  "source_before": {
+    "ref": "sailorren/biohub-g1-divgate022-20260920",
+    "kernel_id": 135052315,
+    "version": 1,
+    "script_version_id": 351207989,
+    "source_sha256": "3284ac04961ff558322d06749864a83405e88fd1f898d3e292022479742efcb7",
+    "metadata": {
+      "id": 135052315,
+      "ref": "sailorren/biohub-g1-divgate022-20260920",
+      "title": "biohub-g1-divgate022-20260920",
+      "author": "Sailor Ren",
+      "slug": "biohub-g1-divgate022-20260920",
+      "lastRunTime": "2026-09-17T06:46:46.802Z",
+      "language": "python",
+      "kernelType": "notebook",
+      "isPrivate": true,
+      "enableGpu": true,
+      "enableInternet": false,
+      "categoryIds": [
+        "gpu"
+      ],
+      "datasetDataSources": [
+        "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+        "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+        "pilkwang/biohub-tracking-support-pack-50ep-v1"
+      ],
+      "kernelDataSources": [
+        "sailorren/biohub-division-train-20260914"
+      ],
+      "competitionDataSources": [
+        "biohub-cell-tracking-during-development"
+      ],
+      "enableTpu": false,
+      "currentVersionNumber": 1,
+      "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "machineShape": "NvidiaTeslaT4"
+    }
+  },
+  "source_after": {
+    "ref": "sailorren/biohub-g1-divgate022-20260920",
+    "kernel_id": 135052315,
+    "version": 1,
+    "script_version_id": 351207989,
+    "source_sha256": "3284ac04961ff558322d06749864a83405e88fd1f898d3e292022479742efcb7",
+    "metadata": {
+      "id": 135052315,
+      "ref": "sailorren/biohub-g1-divgate022-20260920",
+      "title": "biohub-g1-divgate022-20260920",
+      "author": "Sailor Ren",
+      "slug": "biohub-g1-divgate022-20260920",
+      "lastRunTime": "2026-09-17T06:47:37.008Z",
+      "language": "python",
+      "kernelType": "notebook",
+      "isPrivate": true,
+      "enableGpu": true,
+      "enableInternet": false,
+      "categoryIds": [
+        "gpu"
+      ],
+      "datasetDataSources": [
+        "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+        "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+        "pilkwang/biohub-tracking-support-pack-50ep-v1"
+      ],
+      "kernelDataSources": [
+        "sailorren/biohub-division-train-20260914"
+      ],
+      "competitionDataSources": [
+        "biohub-cell-tracking-during-development"
+      ],
+      "enableTpu": false,
+      "currentVersionNumber": 1,
+      "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "machineShape": "NvidiaTeslaT4"
+    }
+  },
+  "metadata_volatile_differences": {
+    "lastRunTime": [
+      "2026-09-17T06:46:46.802Z",
+      "2026-09-17T06:47:37.008Z"
+    ]
+  },
+  "output_version_binding": "current version verified V1 before and after exhaustive collection",
+  "inventory_pages": 5,
+  "inventory_count": 457,
+  "private_directory": "/private/tmp/divgate-formal-private/B22",
+  "artifacts": [
+    {
+      "name": "submission.csv",
+      "bytes": 12558525,
+      "sha256": "18ea6f091ae5d5de2cc0ae938ceb061b16ba897445fe52a87eeb4ba6b167834f"
+    },
+    {
+      "name": "divgate_pair/g1_original.csv",
+      "bytes": 12561015,
+      "sha256": "01d070e371bb38147d603f5d26e38df782b1c95491d87a0b9210d20cc98bbca9"
+    },
+    {
+      "name": "divgate_pair/g1_reproduced.csv",
+      "bytes": 12561015,
+      "sha256": "01d070e371bb38147d603f5d26e38df782b1c95491d87a0b9210d20cc98bbca9"
+    },
+    {
+      "name": "divgate_pair/production_receipt.json",
+      "bytes": 22585,
+      "sha256": "06e076c37d1431e3e77167634e10fd8c709b7609f1f17cb0b6ea1aae380e25f4"
+    },
+    {
+      "name": "divgate_pair/postprocess_calls.jsonl",
+      "bytes": 70036,
+      "sha256": "1ba3bd371a57ff015fa22537971153ace1fbf3f29e2f45c2727cc8ed7fb1c090"
+    },
+    {
+      "name": "bidirectional_production_runtime_integrity.json",
+      "bytes": 2387,
+      "sha256": "ae41130ee035d3ddcbaf2d0977f721429a52ffda8133fe1b877f51de5926278d"
+    },
+    {
+      "name": "sprint_production_receipt.json",
+      "bytes": 631,
+      "sha256": "82547f563a94ec7cf27151acee799ce2d124302e156f5ab747d5d98b3ebf5239"
+    },
+    {
+      "name": "ppsweep_selected.json",
+      "bytes": 354,
+      "sha256": "24cf204fa4ce5842ae1f5ecd5855a8d83a76667088010bce22cd32f58c8e684f"
+    }
+  ],
+  "log_sha256": "5442ef5e9dd08d5ce1263602ea2ddfaad95d057229b236e715fb06f5da1c9031",
+  "platform_writes": 0
+}
