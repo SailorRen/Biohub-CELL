@@ -1,0 +1,483 @@
+{
+  "commit": "ea96c3a24762c98bfe313235b2bb87c165da97e9",
+  "remote_head": "ea96c3a24762c98bfe313235b2bb87c165da97e9",
+  "files": [
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/A18/candidate.ipynb",
+      "sha256": "5c1447b8b4dc73e2981c523959de3b227f7645e948f8c9e6f8fab5decf6e73e1",
+      "bytes": 306073,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/A18/formal_input_collection.json",
+      "sha256": "ca4c78784128da27336302a912e494efab923e48ae9f186efdd24e57fe629625",
+      "bytes": 4608,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/A18/formal_precheck.json",
+      "sha256": "202a6f9a2dd432d10ff99c6090d7a04eb7c34e8fac1f085cae868f75cd624eb5",
+      "bytes": 5431,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/A18/kernel-metadata.json",
+      "sha256": "f3d4711534d19276466c87e2b86d4f753a39dbc95446cf70465b665f868f9b9a",
+      "bytes": 848,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/A18/output/collection.json",
+      "sha256": "90905dce2c28c0bc44e4ef44e13506ae3662e2591e5f077463186261aed2e5ec",
+      "bytes": 3819,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/A18/output/diagnostic_checkpoint.json",
+      "sha256": "bfab00e87441f53a70f1aede2e37b1c067564c9b1b76b916ce7a20345aaebbf8",
+      "bytes": 248,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/A18/output/diagnostic_results.jsonl",
+      "sha256": "149422a5a4068aa52a5fb3d1a94e317e9b9d8e67d3d984df0c81d4856b471551",
+      "bytes": 6726,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/A18/output/log_tail.txt",
+      "sha256": "e0b8cd544df9cd951a2c8030399a9600250faafdb8dcfa81f9c76ae7ed9346a0",
+      "bytes": 16000,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/A18/output/production_receipt.json",
+      "sha256": "ed110ed15d29246af5fb1e3d134772c5cd54a80f3661521dfc347148787baa1f",
+      "bytes": 19550,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/A18/output/selection.json",
+      "sha256": "4010fbc5d3ca763a61f24527160cac30adf37b0898378f7b59d429dd94c15d24",
+      "bytes": 5876,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/A18/output/summary.json",
+      "sha256": "971e313b12c6db8c24dc26aa533e8c95b3557e4c00cb2cb260c273e0bdc9915e",
+      "bytes": 6321,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/A18/platform_latest.json",
+      "sha256": "ac20f137a48a81c15ed00f812c48d635fccdd9005c0a1ea2b8966c1daf35f6dc",
+      "bytes": 1864,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/A18/production.diff",
+      "sha256": "f4d0c2f02d2c9c79ecbe457494d10935a9e581d3de912b36d62caadc76973b0d",
+      "bytes": 60119,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/A18/production_receipt.json",
+      "sha256": "ed110ed15d29246af5fb1e3d134772c5cd54a80f3661521dfc347148787baa1f",
+      "bytes": 19550,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/A18/ui_binding.json",
+      "sha256": "1a115bc0ff4cb9774b96eca62991b3720347fd3e63f879a89c5266cbe191690d",
+      "bytes": 599,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/B22/candidate.ipynb",
+      "sha256": "f9751f48220b71e5160aa04b4b712b0c13d205985cbd2d5e464d9ae6a34cc65e",
+      "bytes": 306073,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/B22/formal_input_collection.json",
+      "sha256": "a6620288719b91053d5badf0f9e6dbb57da727302d4657b487436ed580a07842",
+      "bytes": 4608,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/B22/formal_precheck.json",
+      "sha256": "690a88607515cccfa5bbd6fb596e0eeeb3d0a16f5c150c2ca75a40f8ff0fa3d6",
+      "bytes": 5439,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/B22/kernel-metadata.json",
+      "sha256": "b3318346acda8e0b7001a26d95e2f6b65690ea0301b8ef9a051c6ff09d32385d",
+      "bytes": 848,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/B22/output/collection.json",
+      "sha256": "af0f843e72399c2f6b34d707dda1f750a538cc9fc22aeca64a94c1454f20fdc6",
+      "bytes": 3819,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/B22/output/diagnostic_checkpoint.json",
+      "sha256": "bfab00e87441f53a70f1aede2e37b1c067564c9b1b76b916ce7a20345aaebbf8",
+      "bytes": 248,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/B22/output/diagnostic_results.jsonl",
+      "sha256": "5a4fdfafdc25130432d0d49291d80b15a9b58e55dfa5cc5ac5a8ee29daed999d",
+      "bytes": 6726,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/B22/output/log_tail.txt",
+      "sha256": "54ecbbd38cd67ff5a9663feb684cae58cd05a71fdc078706b61b0756cff80d76",
+      "bytes": 16000,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/B22/output/production_receipt.json",
+      "sha256": "39f9d60fb856b73c5b0141afb87d355fd2b923f26cdd0b365f494576ba97cdfd",
+      "bytes": 19558,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/B22/output/selection.json",
+      "sha256": "149bd9d274ecf68fa260e4b74b9ecdb95c59d617c3450930785f81b1bd5d7a45",
+      "bytes": 5876,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/B22/output/summary.json",
+      "sha256": "24e1355463e19dea81f3acf6dac2f380e7432f32604d319d7860385d16e41779",
+      "bytes": 6324,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/B22/platform_latest.json",
+      "sha256": "ef6724dd9e7a3368da27ffbee7965bf701584a6b13142b4345b9d02f29d01125",
+      "bytes": 1864,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/B22/production.diff",
+      "sha256": "816bec8b791182055533b194571442b42a3aaece0782f6827ddc59cdd27343b3",
+      "bytes": 60119,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/B22/production_receipt.json",
+      "sha256": "39f9d60fb856b73c5b0141afb87d355fd2b923f26cdd0b365f494576ba97cdfd",
+      "bytes": 19558,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/B22/ui_binding.json",
+      "sha256": "2c7f617f6722b5ced0aaa81a12f62af00f1c7149b35fb6d6528de19cc79b48d8",
+      "bytes": 599,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/build.py",
+      "sha256": "b759e23c18a8b740e1b36c9f56c2d6303b53745ecf142b446464cd13e1ae2fc8",
+      "bytes": 3653,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/candidate_manifest.json",
+      "sha256": "5fe2b7bbbd8ddc67db26a52940ca7e9613dc138f441047796be3c2f5e83dbce7",
+      "bytes": 7970,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/collect_formal_inputs.py",
+      "sha256": "df50dec4e5ff061ea4b404ff8f988ec0123574bc9c9e22ef54237b6016fa1461",
+      "bytes": 3767,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/collection_interface_note.json",
+      "sha256": "105a230daf9ac6eec551c86a8d42d629348c388389ce1ea6520cd060d7ee66c1",
+      "bytes": 711,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/contract.json",
+      "sha256": "f236c8e2f73d8b3e9ed4ef6e04346caaeddc954e05cf7b6992104b1b2018c07e",
+      "bytes": 3386,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/diagnostic_results.jsonl",
+      "sha256": "6108488cc963447675ac4a896c946916b377c798dade9e3c333eeea7293d9a29",
+      "bytes": 14188,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/execution_verification.json",
+      "sha256": "f62d295932fcdce8dce2a2fe345ecd70e0551bb81d51c7adc051e9c12678f1a1",
+      "bytes": 833,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/formal_preflight_initial.json",
+      "sha256": "d5b4ebea0677c0823c323d87e94337a3467c925db6590eb3f9498a3e3f8c7414",
+      "bytes": 12822,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/formal_ui_prewrite_A18.json",
+      "sha256": "7433143f14928b28ef9eaed39ca40ebe3f70afc0d522e942a8d5a5a1a978867d",
+      "bytes": 708,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/freeze_github_readback.json",
+      "sha256": "5ccbe1888ec855c07d8161e9366dd6e2b86c3f2b45645dcb94574a9a9f23ceab",
+      "bytes": 1760,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/github_readback.json",
+      "sha256": "c84497626a803f0033fbb73d42cdef14006685da0792dd595d29ccd84406b273",
+      "bytes": 11176,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/launch_once.py",
+      "sha256": "a7d4e929a046b3a90c395dccf5af7729a19ccd64315866d8253cf40f973605bb",
+      "bytes": 5289,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/launch_ui_gate.json",
+      "sha256": "081ac1991b69cb45029da879eb4a3a4caaabde3e0ba95ca06c2d4b4d3c1e586f",
+      "bytes": 1143,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/local_tests.json",
+      "sha256": "2bf85ee0196bf9fda54d5b5d2457b119da8d56928c1d8a9891e6aa9c83e88c4a",
+      "bytes": 150,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/official/LICENSE",
+      "sha256": "3910a8b578783928cbbf981c1b204591ab3368e70017dc695d6536f71d272796",
+      "bytes": 1507,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/official/csv_to_geffs.py",
+      "sha256": "914d151495c2c0f6bcab1feeebc6d0452b0ec63175cbce3b8774d20f79fa6f9a",
+      "bytes": 2887,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/official/division_metrics.py",
+      "sha256": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9",
+      "bytes": 20488,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/official/geffs_to_csv.py",
+      "sha256": "ecb8b121effb99f7889e6c9936f495fba6d98ea1bb541a2d1b1fb9f633bc9796",
+      "bytes": 3131,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/official/live_version_check.json",
+      "sha256": "6cb62c06497ed69e18c227f8999644a6312de30f639714eb6ff5b28cf3b5efab",
+      "bytes": 171,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/official/metrics.md",
+      "sha256": "d8a2d3ff21b507242dd23e9b7c687d725261d7b4c79cff086cccb4093141d696",
+      "bytes": 6942,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/official/metrics.py",
+      "sha256": "cfdd596e3f8909cca14db0682889738b19ff75c3808b3773175aba9367ca7444",
+      "bytes": 19602,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/official/pyproject.toml",
+      "sha256": "2e550bd632d68ef6402547489122f01d72c6a6e9842de46ff295f338452fce77",
+      "bytes": 1440,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/official/source_manifest.json",
+      "sha256": "b1dac2af120ac11428d64dede6b6b40e6c77db37b61fa65b686e4545d50eb87e",
+      "bytes": 1140,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/platform_ledger.json",
+      "sha256": "150ecfb4b8272140a2d5835ff4775947d728f9ebc0fea7a6fbbb8e77af43fa48",
+      "bytes": 2283,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/platform_snapshot_after_launch.json",
+      "sha256": "c6f92bae97e484b8007cd3c89b374972dd56c7b2007297769ba519f6548f30b1",
+      "bytes": 12836,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/preflight_initial.json",
+      "sha256": "ca05945b7fc45f37154aa99e02fde85d66c7d7b5ed4e02d87c0c23090c78d702",
+      "bytes": 10280,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/preflight_ui.json",
+      "sha256": "691e9f66476e8bbc20f085b4795a2f32c35374bc277ee9164019fbea4835297e",
+      "bytes": 473,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/prewrite_A18.json",
+      "sha256": "ef5a573c0f7eba9c3f10e18bb70d5b392eb4b92e6f8e5384b33e4ca8f5677454",
+      "bytes": 10940,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/prewrite_B22.json",
+      "sha256": "800a25564a37a7871e6397ffa5f4fee23c03a631c3be5406a39bbe590f84f787",
+      "bytes": 11556,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/protected_refs_after.json",
+      "sha256": "15e0c8ef44cb1ede94562287662c73acd2a1b63557dc7e9e49b25da8b321a67b",
+      "bytes": 475,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/protected_refs_before.json",
+      "sha256": "117bf4373f5835eedcb575c386712fccbb027f5a67f5c322de89f5b852f1a86e",
+      "bytes": 365,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/read_github.py",
+      "sha256": "5ee99d932503a5f6ddac210e89460dd2fc31671be23af07a0a6bd4d8dc053008",
+      "bytes": 1326,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/read_pair.py",
+      "sha256": "1d0994aaaac5830b60b45b37f70d9abf7cef3e20186643a1b8a27ebfe3240d54",
+      "bytes": 3017,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/read_preflight.py",
+      "sha256": "561b61d08eb3defcf071a9647d25944efe9338a711aee4789c35d736794eca56",
+      "bytes": 2299,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/research/\u4ea4\u7ed9Chat.md",
+      "sha256": "21c0c119fd300e0ff94224aafbb20790cd61421cc6fba50babdd3cb3bef1e13e",
+      "bytes": 1556,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/research/\u516c\u5f00\u6743\u91cd\u8bad\u7ec3\u8986\u76d6\u6838\u67e5.json",
+      "sha256": "f6faff286d2fa6541cb8767fc40d0d8ad2b678a9c91855e3ef34179b0e7d850f",
+      "bytes": 842,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/research/\u6700\u65b0\u516c\u5f00\u60c5\u62a5.md",
+      "sha256": "0b246dfadf38da0d369c1ffa78cc7a75a586e7ef219cdf7acaf9cbefb4bd7fc5",
+      "bytes": 9536,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/result_github_readback.json",
+      "sha256": "b3c8d460e44dc13e23bde38b3786777634959e879a01bd4b93c7f1fc27334ec8",
+      "bytes": 15080,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/runtime.py",
+      "sha256": "dc6e1510f2b0fe7dadd990f794d2a4f70000eb89db1954dc76dfd40111e406cb",
+      "bytes": 16252,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/source_github_readback.json",
+      "sha256": "c1b150efb60f9ef334784635fa171d20db7ac7f6c49aed66cd8b090dd927c4e2",
+      "bytes": 7640,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/source_review.json",
+      "sha256": "20f1b6bbdb3f3f7aaf143a43bf27595b156d30ddb1315d89bb5735301588a442",
+      "bytes": 2524,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/submission_snapshot_results.json",
+      "sha256": "b0dbd86572c7d7110df425a94a3200c872fb311a7ac590ebf8baf2b2859dd5e5",
+      "bytes": 5192,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/submit_once.py",
+      "sha256": "2c1171a49952b56c2f0e70671bbf2cfb07b07243bb8fbc72e273c776afbfbc88",
+      "bytes": 5400,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/summary.json",
+      "sha256": "e268a6fab2c9cd81501b9a03918dd730573323abc691abb4d400bb623ac2ea18",
+      "bytes": 13746,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/test_runtime.py",
+      "sha256": "4530c94a4cb411cc41bf202a9c0597da4f1e940a2ba70ef37ebba4c916257e86",
+      "bytes": 5883,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/verify.py",
+      "sha256": "88b9d9c35f564b9b877fa03adde9d610f5a156960533c48f421d39b21bcaca99",
+      "bytes": 1403,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/verify_formal_inputs.py",
+      "sha256": "184885ddf7be73ad78b19d2eb20e3352708a65c793439010cc2a958f129e3a3d",
+      "bytes": 7469,
+      "equal": true
+    },
+    {
+      "path": "tasks/CODEX_20260920_BIOHUB_DIVGATE_PAIR_V01.md",
+      "sha256": "8e84b1c618adbb95d0b47a12e59740d1e8872b27e71a22f1349cccc6a3e2d520",
+      "bytes": 17826,
+      "equal": true
+    },
+    {
+      "path": "reports/20260920_BIOHUB_DIVGATE_PAIR_V01.md",
+      "sha256": "adbeabbeec6c495e1cfb7ce1e2183f287f8d62aee0b9704158d09648f67b7e80",
+      "bytes": 9762,
+      "equal": true
+    }
+  ],
+  "observed_at_utc": "2026-09-20T06:49:49.156243+00:00",
+  "status": "COMPLETED_VERIFIED",
+  "scope": "fixed commit file bytes, not execution or score"
+}

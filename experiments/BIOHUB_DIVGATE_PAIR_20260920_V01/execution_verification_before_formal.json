@@ -1,5 +1,5 @@
 {
-  "observed_at_utc": "2026-09-20T06:57:35.593657+00:00",
+  "observed_at_utc": "2026-09-20T03:44:33.842013+00:00",
   "contract_sha256": "f236c8e2f73d8b3e9ed4ef6e04346caaeddc954e05cf7b6992104b1b2018c07e",
   "task_original_sha256": "8e84b1c618adbb95d0b47a12e59740d1e8872b27e71a22f1349cccc6a3e2d520",
   "task_byte_identity": "PASS",
@@ -16,13 +16,9 @@
       "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/verify.py",
       "--execution"
     ],
-    "exit_code": 0,
-    "status": "PASS",
-    "reason": "Both exact V1 outputs independently checked and formal IDs read back. Public remains pending."
+    "exit_code": 1,
+    "status": "NOT_PASSED",
+    "reason": "Both kernels RUNNING; ordinary outputs and formal submissions unavailable. No completion claim recorded."
   },
-  "overall_status": "EXECUTION_VERIFIED",
-  "independent_csv_recheck": {
-    "A18": "PASS",
-    "B22": "PASS"
-  }
+  "overall_status": "INCOMPLETE_KERNEL_RUNNING"
 }

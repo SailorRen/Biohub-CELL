@@ -82,15 +82,15 @@
   "execution_bindings": {
     "A18": {
       "arm": "A18",
-      "observed_at_utc": "2026-09-20T03:43:07.384072+00:00",
-      "observed_at_shanghai": "2026-09-20T11:43:07.384072+08:00",
+      "observed_at_utc": "2026-09-20T06:26:30.799834+00:00",
+      "observed_at_shanghai": "2026-09-20T14:26:30.799834+08:00",
       "writes": 0,
       "ref": "sailorren/biohub-g1-divgate018-20260920",
       "kernel_id": 135051720,
       "version": 1,
       "script_version_id": 351207161,
       "script_version_id_source": "signed-in notebook edit/run link, observed without opening editor",
-      "kernel_status": "RUNNING",
+      "kernel_status": "COMPLETE",
       "private": true,
       "source_equal": true,
       "source_comparison": "all cells type and source; platform JSON serialization differs",
@@ -103,7 +103,7 @@
         "title": "biohub-g1-divgate018-20260920",
         "author": "Sailor Ren",
         "slug": "biohub-g1-divgate018-20260920",
-        "lastRunTime": "2026-09-17T03:43:06.817Z",
+        "lastRunTime": "2026-09-17T06:26:30.077Z",
         "language": "python",
         "kernelType": "notebook",
         "isPrivate": true,
@@ -128,21 +128,22 @@
         "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
         "machineShape": "NvidiaTeslaT4"
       },
-      "submission_id": null,
+      "submission_id": 56383942,
       "public_score": null,
-      "formal_status": "NOT_SUBMITTED"
+      "formal_status": "PENDING",
+      "formal_observed_at_utc": "2026-09-20T06:52:21.765921+00:00"
     },
     "B22": {
       "arm": "B22",
-      "observed_at_utc": "2026-09-20T03:43:10.009358+00:00",
-      "observed_at_shanghai": "2026-09-20T11:43:10.009358+08:00",
+      "observed_at_utc": "2026-09-20T06:26:32.709284+00:00",
+      "observed_at_shanghai": "2026-09-20T14:26:32.709284+08:00",
       "writes": 0,
       "ref": "sailorren/biohub-g1-divgate022-20260920",
       "kernel_id": 135052315,
       "version": 1,
       "script_version_id": 351207989,
       "script_version_id_source": "signed-in notebook edit/run link, observed without opening editor",
-      "kernel_status": "RUNNING",
+      "kernel_status": "COMPLETE",
       "private": true,
       "source_equal": true,
       "source_comparison": "all cells type and source; platform JSON serialization differs",
@@ -155,7 +156,7 @@
         "title": "biohub-g1-divgate022-20260920",
         "author": "Sailor Ren",
         "slug": "biohub-g1-divgate022-20260920",
-        "lastRunTime": "2026-09-17T03:43:09.348Z",
+        "lastRunTime": "2026-09-17T06:26:32.127Z",
         "language": "python",
         "kernelType": "notebook",
         "isPrivate": true,
@@ -180,9 +181,10 @@
         "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
         "machineShape": "NvidiaTeslaT4"
       },
-      "submission_id": null,
+      "submission_id": 56384003,
       "public_score": null,
-      "formal_status": "NOT_SUBMITTED"
+      "formal_status": "PENDING",
+      "formal_observed_at_utc": "2026-09-20T06:52:21.765921+00:00"
     }
   }
 }

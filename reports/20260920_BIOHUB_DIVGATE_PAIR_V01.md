@@ -1,88 +1,49 @@
-# 结果读取更新：2026-09-20 14:27 上海 / 06:27 UTC
+# BIOHUB_DIVGATE_PAIR_20260920_V01 正式提交结果
 
-**A18、B22 普通运行均 COMPLETE；正式 submission 均未发起，Public 均未知。** 本次只读平台，未重跑、未提交。完整源码与冻结版本仍一致。
+两臂已完成实际最终 CSV 独立复核，各正式提交一次，并取得平台 ID。正式评分仍为 **SCORE_PENDING**，Public 均为 null；普通运行 COMPLETE 不代表评分完成。
 
-|候选|Notebook / Version / ScriptVersionId|生产回执时间（上海）|完整生产图相对 G1|8 视野官方诊断分|相对同源 G1|
-|---|---|---|---|---:|---:|
-|A18|135051720 / V1 / 351207161|14:21:39|节点 +12，边 +16/-0，分裂 +7|0.9440708304724714|0|
-|B22|135052315 / V1 / 351207989|14:19:51|节点 -22，边 +0/-25，分裂 -8|0.9440708304724714|0|
+平台 API 观测时间：**2026-09-20 14:52:21.765921 上海 / 06:52:21.765921 UTC**。
 
-已读取生产回执：engineering_status=PASS、原 G1 的 0.20 重放等价、原始图未变、CSV 往返 PASS；真实最终门槛分别 0.18/0.22，两臂都保持 tight55 原选择。两臂最终 canonical hash 不同，且均不同于同源 G1。
+|候选|Kernel / Version|ScriptVersionId|正式 submission ID|平台状态|Public|相对 G1 Public|
+|---|---|---:|---:|---|---|---|
+|A18|135051720 / V1|351207161|56383942|PENDING|null|null|
+|B22|135052315 / V1|351207989|56384003|PENDING|null|null|
 
-这些是冻结源码运行后生成的实际回执；本次尚未下载最终 CSV 做提交前独立复核，不能把回执 PASS 表述为完整正式提交门禁已经闭合。后续正式提交阶段仍未完成。
+A18 请求时间为上海 14:50:28，B22 为 14:52:07。平台成功响应中的 ID 与随后完整提交列表一致。正式详情页实际 Notebook 链接分别绑定 SV351207161、SV351207989。请求前账本以唯一 UUID 持久化且计入预算；没有重复提交或不明响应后的重试。提交前未发现这两个精确版本的既有正式 submission。
 
-辅助诊断：两臂各保存 16 条逐视野记录（G1 和候选各 8），共 2 个胚胎，无辅助评价缺口。逐行 edge/division TP/FP/FN 加总与官方摘要一致。三组总体 edge TP/FP/FN 均为 5542/236/209，division TP/FP/FN 均为 2/1/10；44b6 分组分数均 0.9327802761976679，6bba 均 0.9467717806290732。诊断图发生变化而评分持平，只表示此次官方评价统计未变化，不能推断隐藏输出相同或 Public 持平。
+G1 submission 56270217 / SV350197436 的实时回读为 COMPLETE、Public 0.948；F1 submission 56375774 / SV351084196 仍为 PENDING、Public null，均仅只读。现有 V1/F1、main、模型、阈值和最终选择未修改。
 
-全部 8 视野与 secondary 训练归档标识重叠，标签为 TRAIN_SEEN_DIAGNOSTIC；primary/DeepCenter 覆盖未知。该小样本不是独立泛化验证，0.94407083 **不是 Public 分数**。
+## 实际 CSV 独立复核
 
-本次实时 submission 列表：G1 submission 56270217 为 COMPLETE / Public 0.948；现有 F1 submission 56375774 仍为 PENDING，无 Public。没有 A18/B22 正式提交。累计预算仍为 Notebook 2/2、Save & Run 2/3、submission 0/2，其他受禁操作均 0。
+从各精确 V1 下载真实最终文件及 G1 原始/0.20 重放输出，下载前后核对版本、全部代码单元、私有属性与输入。下载清单为各臂 formal_input_collection.json；正式复核为 formal_precheck.json。
 
-本次证据：各臂 output/production_receipt.json、summary.json、diagnostic_results.jsonl、collection.json；根目录 diagnostic_results.jsonl 为两臂合并记录，summary.json 为当前状态。仅保存小型结果，运行环境变量快照已移除；不提交 CSV、影像、完整图或权重。远端同步验证见 result_github_readback.json。
+|候选|CSV 数据行|原始字节 SHA-256|相对同源 G1 的真实完整图差异|
+|---|---:|---|---|
+|A18|241313|2e22cd6024d04d0b0fc29ff964fa38caa138ec4b9bd076258f966c638e32ee72|节点 +12，边 +16/-0，分裂 +7|
+|B22|241238|18ea6f091ae5d5de2cc0ae938ceb061b16ba897445fe52a87eeb4ba6b167834f|节点 -22，边 +0/-25，分裂 -8|
 
-`execution_status=ORDINARY_COMPLETE_RECEIPTS_READ`；`score_status=NOT_SUBMITTED`；本次更新的 delivery 状态以 result_github_readback.json 为准。以下为此前运行中阶段的历史快照，不代表当前状态。
+两臂均 PASS：原始字节哈希与生产回执相符；官方 10 列 schema、4 个预期测试样本完整覆盖；行 ID 连续、节点/边唯一、端点合法、时间前进、入度/出度合法；官方 reader 回读内容与独立解析一致，规范化图哈希与回执一致；原 0.20 重放等价；候选均有真实内容变化且两臂不同，未触发无效应/去重停止条件。
 
----
+实际生产调用仅分别将 DEEPCENTER_SAFE_DIV_THRESHOLD 从 0.20 改为 0.18 / 0.22。保留原 tight55 选择与其他配置，原始推理图哈希配对一致。权重、官方源码、运行依赖版本及 tracksdata 源码清单均绑定；日志确认模型实际加载、无静默回退。复核重用已有结果，没有重新运行大模型。
 
-# BIOHUB_DIVGATE_PAIR_20260920_V01 执行回执
+8 视野、2 胚胎的辅助官方诊断三组均为 0.9440708304724714，差值 0；全部与 secondary 训练归档重叠，为 TRAIN_SEEN_DIAGNOSTIC。该值不是 Public，不支持泛化或提分结论；不以诊断持平阻断已授权的探索性正式提交。
 
-本批已实际创建并 Save & Run **两个独立私有 Notebook**；两臂仍在普通生产运行，正式 submission **0 次**。没有本批 Public 分数，未宣称实验完成或提分。
+## 预算、冻结与异常记录
 
-- `execution_status = KERNEL_RUNNING`
-- `score_status = NOT_SUBMITTED`；submission ID 和 Public 均为 `null`，不是正式评分等待。
-- `delivery_status = COMPLETED_VERIFIED`，范围仅为固定交付提交 `e7672f46466fd4d8d8bb557da6b81d12c41272de` 的 49 文件逐字节回读；证据见 `github_readback.json`。本状态与核验回执作为后续证据提交保存，并再次核对远端；远端交付核验不代表运行完成。
-- 本任务整体 `INCOMPLETE_KERNEL_RUNNING`，冻结执行验收当前未通过。
+累计新私有 Notebook **2/2**、Save & Run **2/3**、正式 submission **2/2**；训练、Dataset 写入、最终选择修改、现有 V1/F1 写入均 **0**。本次正式阶段新增 Save & Run 为 0，未再次执行 launch_once.py，无第三臂、无后续轮次、无自动监控。
 
-## 平台身份与观测
+原任务固定提交 cd18d89d54f9dee9079d307bad8ae7021dfa0004，17826 字节，SHA-256 8e84b1c618adbb95d0b47a12e59740d1e8872b27e71a22f1349cccc6a3e2d520。冻结合同 SHA-256 **f236c8e2f73d8b3e9ed4ef6e04346caaeddc954e05cf7b6992104b1b2018c07e** 未变。固定研究 6ec61f54cd5fb5b93fe7cd1dbc37b01a8e41bc57、G1 代码 e9c7c63b896812660a78ec55fc3284c10f85e776 未变。
 
-下表初始状态读取于 2026-09-20 03:41:46 UTC / 11:41:46 上海；A18/B22 后续源码核验的精确观测时间见各自 `platform_latest.json`。所有平台读取均为本账号只读，不采用历史 Best Score 代替当前分数。
+提交前必要代码、配置、独立复核已推送到 **ea96c3a24762c98bfe313235b2bb87c165da97e9**，formal_code_readback.json 记录 79 个文件的 GitHub 固定提交逐字节回读，先于两次正式请求。
 
-|对象|Kernel ID|Version|ScriptVersionId|Submission ID|实际状态|Public|相对 G1|最终图变化|诊断覆盖|
-|---|---:|---:|---:|---:|---|---:|---|---|---|
-|G1 母版|134551153|1|350197436|56270217|正式 COMPLETE|0.948|基线|历史母版，本批未重提|原 proxy 非独立官方验证|
-|现有 V1/F1，只读|134988494|1|351084196|56375774|普通 COMPLETE；正式 PENDING/UI Scoring|null|null|本批未测算|本批未评价|
-|A18|135051720|1|351207161|null|KERNEL_RUNNING|null|null|UNKNOWN，等待最终输出|secondary 为 TRAIN_SEEN_DIAGNOSTIC；其他上游 COVERAGE_UNKNOWN|
-|B22|135052315|1|351207989|null|KERNEL_RUNNING|null|null|UNKNOWN，等待最终输出|secondary 为 TRAIN_SEEN_DIAGNOSTIC；其他上游 COVERAGE_UNKNOWN|
+写入前确认账号 sailorren、比赛 136605、已参赛/可提交、动态每日上限 5；A18 前已用 1、B22 前已用 2。已登录 UI GPU 余量 20h38m/30h，普通运行并发为 0，正式提交按钮可用。SDK quota 的 6h 总量与 UI 不一致，两侧原始观测保留，不声称一致；实际平台接受请求。各臂 formal_prewrite 与 formal_ui_prewrite 保存当时观测。
 
-- [A18 私有 Notebook](https://www.kaggle.com/code/sailorren/biohub-g1-divgate018-20260920)：2026-09-20 03:37:32 UTC / 11:37:32 上海发出 Save & Run。
-- [B22 私有 Notebook](https://www.kaggle.com/code/sailorren/biohub-g1-divgate022-20260920)：2026-09-20 03:41:30 UTC / 11:41:30 上海发出 Save & Run。
-- SDK 回读 kernel/version/完整源码，网页可见 PRIVATE、Running、GPU T4×2；ScriptVersionId 来自页面实际 `edit/run/<id>` 链接，未打开编辑器。
-- A18 日志已显示实际测试视频推理启动、模型材料哈希和原阈值 0.20。新增生产阶段尚未执行完，不把初始化值当成最终 0.18/0.22 生效证明。
+只读收集曾遇到版本标签接口 404，及每次读取都会变化的 lastRunTime；改为版本前后精确身份/完整源码/其他元数据核对，实际差异保留在 collection_interface_note.json 和各臂清单。均未发生平台写入，不消耗工程备用或正式重试预算。
 
-## 冻结与实现
+## 交付与验收范围
 
-任务原文直接从固定远端提交读取，UTF-8 17826 字节，Git blob `e678da70880cb134992626ff1f1bfc597fe09239`，SHA-256 `8e84b1c618adbb95d0b47a12e59740d1e8872b27e71a22f1349cccc6a3e2d520`，均匹配用户指定值。没有根据聊天重写原文，也没有创建重复远端分支。
+实际 CSV、完整图、权重和原始大日志只留本地私有临时目录，不写 GitHub。仓库仅代码、小型清单、哈希、汇总、平台回执和报告。历史运行中及只读结果报告保留在 report_before_formal.md，历史状态不代表当前状态。
 
-独立 worktree：`/private/tmp/biohub-divgate-pair-20260920`；只写 `codex/divgate-pair-20260920`。完整读取固定研究三文件、G1 全部 13 个代码单元和构建/生产模块及权重回执、F1 指定文件、官方评分和 CSV 往返路径。
+6 项人工图工程测试通过；冻结 verify.py --execution 返回 EXECUTION_VERIFIED。最终合同验收见 acceptance_verification.json；GitHub 固定提交逐字节核验见 github_readback.json。上述核验范围是授权运行、输出复核、正式提交及交付，**不包含尚未返回的正式评分或效果结论**。保护前后证据见 formal_protected_refs_before.json / formal_protected_refs_after.json。
 
-预先冻结合同 SHA-256：`f236c8e2f73d8b3e9ed4ef6e04346caaeddc954e05cf7b6992104b1b2018c07e`。合同与原文先在 `ea8d261a00d675e5aab5a5f8189d0bdf453b3641` 推送并完成 7 文件字节回读。两臂源码均在 **`2649b1599785df268e614562a008d3fc0811c44a`** 推送并完成 33 文件回读后才发出 Save & Run；详见 `freeze_github_readback.json`、`source_github_readback.json`。
-
-原 G1 13 个代码单元保持完全一致，新增最后一个生产/诊断单元：恢复母版加原选择配置，验证原阈值为 0.20，仅改最终 `DEEPCENTER_SAFE_DIV_THRESHOLD` 为 0.18 或 0.22。复用同一次原始推理图、原版完整后处理和 CSV 写出；保留 G1 私有输出，重放 0.20 做等价性检查，对原图和最终输出分别校验，记录完整内容差异。原始 proxy 只为保留 G1 选择行为，不声称官方独立验证。
-
-本地人工图 6 项测试通过：阈值作用、深拷贝隔离、追加单元完整性、空边与行序不变性、逐视野检查点、实际官方 CSV 往返与 edge 字段汇总。第一次测试因 ML 环境缺少 polars 失败，改用仓库已有 scorer 环境通过；未安装环境、未跑大模型。短测试不是生产验收。
-
-两臂冻结同一官方提交 `075fc5f5a52d11077f9dc2b074644618f26939e2`，与本会话官方远端 HEAD 一致。实际评分模块、division 模块和 CSV reader 源码已冻结哈希；平台运行时另记依赖版本和源码哈希。固定 8 视野测算使用最终 CSV 经官方读取后的图，逐视野持久化；仅辅助评价缺口不自动阻断正式探索性提交，图/配置/输出错误则阻断。
-
-## 当前缺口与预算
-
-|操作|实耗|上限|
-|---|---:|---:|
-|新私有 Notebook|2|2|
-|Save & Run 请求|2|3（剩余共享工程备用 1）|
-|正式 submission 请求|0|2|
-|训练 / Dataset 写入 / 最终选择修改 / V1/F1 写入|各 0|各 0|
-
-两臂尚未结束，生产回执、最终 CSV 完整性、0.20 等价性、完整图差异、候选间去重和辅助诊断均待实际输出；未造空 `diagnostic_results.jsonl` 作为成功结果。`summary.json` 明确记录缺口；执行验证器当前非零退出，未登记整体完成声明。
-
-Kaggle SDK quota 的 total 6h 与已登录网页的“25h 59m available of 30h”不一致，原始两侧观测均保留，未伪称一致。写入前按实际已登录 UI 额度核查，平台接受两个请求；初始无普通 kernel 作业，B22 写入前仅 A18 普通作业和原 F1 正式评分。每日额度按当时接口的动态上限/实际已用核查，未硬编码上限、未取消现有任务。
-
-保护核验：main 与 F1 远端 HEAD 前后一致；用户原工作区分支、HEAD、干净状态未变，见 `protected_refs_before.json` 和 `protected_refs_after.json`。不对其他并发任务造成的远端变化作本任务因果判断。
-
-## 续接时的精确边界
-
-先读取本分支 ledger 与 A18/B22 的精确 V1/SV，再只读状态；**不得重新运行 `launch_once.py`** 或创建新 Notebook。当前 `read_pair.py` 只读取既有两对象并更新本地账本，不发送平台写请求。
-
-各自 COMPLETE 后，按固定版本收集小型回执和私有最终 CSV；独立验证源码、依赖、所有输入覆盖、无静默回退、最终阈值、0.20 原图等价、官方 CSV 往返与完整 canonical 差异。原始影像、完整图、权重和 submission.csv 不进入 GitHub。
-
-若完整输出无效应，标记 MEASURED_NO_EFFECT 不提交；两臂内容相同则去重。其余通过工程检查且有差异的候选，在当前授权剩余预算内分别正式提交一次，并在请求前锁定 ledger、核查实时账号/比赛/额度/并发、推送相关代码配置提交。请求不明确只读对账，禁止盲重试。正式分数只绑定实际 submission ID，不修改最终选择。
-
-本批未创建自动监控、后台定时器或跨日自动续跑。若会话结束时仍在运行，交付当前真实状态；不可把源代码上传、普通运行或 GitHub 交付写成正式跑分完成。
+后续仅可按精确 submission ID 只读查分；本批正式预算已耗尽，不得重提、改版或自动开启下一轮。

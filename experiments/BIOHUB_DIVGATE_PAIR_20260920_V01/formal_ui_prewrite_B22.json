@@ -1,0 +1,21 @@
+{
+  "observed_at_utc": "2026-09-20T06:51:58.988256+00:00",
+  "observed_at_shanghai": "2026-09-20T14:51:58.988256+08:00",
+  "account": "sailorren",
+  "gpu_available_minutes": 1238,
+  "gpu_text": "20h 38m available of 30h",
+  "active_ordinary_kernels": 0,
+  "active_formal_submissions": 2,
+  "existing_formal": "A18 56383942 and F1 56375774 Scoring",
+  "submission_control_enabled": true,
+  "concurrency_block_notice": false,
+  "existing_pair_submissions": [
+    {
+      "arm": "A18",
+      "submission_id": 56383942,
+      "script_version_id": 351207161
+    }
+  ],
+  "source": "Refreshed signed-in submissions list and Active Events; no B22 row; previous same-session quota panel 20h38m retained",
+  "sdk_quota_discrepancy": "SDK totalTimeAllowed 21600s disagrees with UI 30h; both retained, UI account allowance used; no platform limit bypass."
+}
