@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "scope": "Task-file synchronization only; no experiment execution",
+  "task_id": "BIOHUB_DIVGATE_PAIR_20260920_V01",
+  "repository": "SailorRen/Biohub-CELL",
+  "branch": "codex/divgate-pair-20260920",
+  "task_path": "tasks/CODEX_20260920_BIOHUB_DIVGATE_PAIR_V01.md",
+  "base_commit": "e9c7c63b896812660a78ec55fc3284c10f85e776",
+  "verified_task_commit": "dd4522c8088ff1b2a9c758feb3c78d72bd333074",
+  "task_sync_status": "TASK_SYNC_VERIFIED",
+  "verification": {
+    "original_bytes": 17826,
+    "original_sha256": "8e84b1c618adbb95d0b47a12e59740d1e8872b27e71a22f1349cccc6a3e2d520",
+    "local_git_blob_sha1": "e678da70880cb134992626ff1f1bfc597fe09239",
+    "remote_git_blob_sha1": "e678da70880cb134992626ff1f1bfc597fe09239",
+    "git_blob_identity_verified": true,
+    "method": "Compute Git blob SHA-1 over original UTF-8 bytes including the Git blob header and compare with the GitHub Contents API SHA at verified_task_commit.",
+    "independent_remote_sha256_computed": false,
+    "limits": "Raw-byte download to the runtime was unavailable. SHA-256 above was calculated over the original attachment only; integrity was verified using matching Git blob IDs, not an independently computed remote SHA-256.",
+    "task_commit_diff": {
+      "ahead_by": 1,
+      "behind_by": 0,
+      "added_files": ["tasks/CODEX_20260920_BIOHUB_DIVGATE_PAIR_V01.md"],
+      "modified_or_deleted_files": []
+    },
+    "branch_head_observed_after_task_write": "dd4522c8088ff1b2a9c758feb3c78d72bd333074"
+  },
+  "unchanged_branch_heads_before_and_after_task_write": {
+    "main": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+    "codex/f1-flow-kaggle-20260918": "8f18a8dd83146d6399b296ff54c4176c300724b5",
+    "codex/public-intel-20260918": "6ec61f54cd5fb5b93fe7cd1dbc37b01a8e41bc57",
+    "codex/sprint01-20260916": "e9c7c63b896812660a78ec55fc3284c10f85e776"
+  },
+  "execution_status": "NOT_STARTED_BY_THIS_SYNC",
+  "kaggle_writes_in_this_sync": 0,
+  "training_calls_in_this_sync": 0,
+  "submission_requests_in_this_sync": 0,
+  "local_worktree_status": "NOT_APPLICABLE_CONNECTOR_WRITES; user local worktree was not accessed",
+  "receipt_scope_note": "This receipt verifies the preceding task commit and does not claim to verify its own containing commit or the later experiment contract."
+}
