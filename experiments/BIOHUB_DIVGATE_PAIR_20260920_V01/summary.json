@@ -4,7 +4,7 @@
   "observed_at_shanghai": "2026-09-20T11:44:33.842013+08:00",
   "execution_status": "KERNEL_RUNNING",
   "score_status": "NOT_SUBMITTED",
-  "delivery_status": "PENDING_REMOTE_READBACK",
+  "delivery_status": "COMPLETED_VERIFIED",
   "counts": {
     "new_private_notebooks": 2,
     "save_and_run": 2,
@@ -45,5 +45,7 @@
   "diagnostic_results_present": false,
   "diagnostic_gap": "No completed ordinary output available; diagnostic_results.jsonl intentionally not fabricated. Results remain in running private kernels until collected.",
   "final_selection_changes": 0,
-  "next_action": "Only read exact versions; after COMPLETE collect and independently validate output, compare full canonical outputs and deduplicate, then at most one formal submission per eligible arm under remaining budget. No autonomous monitoring or cross-day resumption."
+  "next_action": "Only read exact versions; after COMPLETE collect and independently validate output, compare full canonical outputs and deduplicate, then at most one formal submission per eligible arm under remaining budget. No autonomous monitoring or cross-day resumption.",
+  "delivery_scope": "Frozen payload commit e7672f46466fd4d8d8bb557da6b81d12c41272de (49 files); completion of running kernels and scores excluded",
+  "delivery_evidence": "github_readback.json"
 }

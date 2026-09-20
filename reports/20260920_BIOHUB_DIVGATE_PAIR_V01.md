@@ -4,7 +4,7 @@
 
 - `execution_status = KERNEL_RUNNING`
 - `score_status = NOT_SUBMITTED`；submission ID 和 Public 均为 `null`，不是正式评分等待。
-- `delivery_status = PENDING_REMOTE_READBACK`；以同目录 `github_readback.json` 的固定提交、逐文件字节结果为权威，远端交付核验不代表运行完成。
+- `delivery_status = COMPLETED_VERIFIED`，范围仅为固定交付提交 `e7672f46466fd4d8d8bb557da6b81d12c41272de` 的 49 文件逐字节回读；证据见 `github_readback.json`。本状态与核验回执作为后续证据提交保存，并再次核对远端；远端交付核验不代表运行完成。
 - 本任务整体 `INCOMPLETE_KERNEL_RUNNING`，冻结执行验收当前未通过。
 
 ## 平台身份与观测
