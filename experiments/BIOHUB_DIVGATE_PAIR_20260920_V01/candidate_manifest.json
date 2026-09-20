@@ -1,0 +1,81 @@
+{
+  "task_id": "BIOHUB_DIVGATE_PAIR_20260920_V01",
+  "g1_commit": "e9c7c63b896812660a78ec55fc3284c10f85e776",
+  "g1_notebook_sha256": "de010e6ba142be0e01000093e061ef7d3388ddaa411185b40d26c63a3febe731",
+  "runtime_sha256": "dc6e1510f2b0fe7dadd990f794d2a4f70000eb89db1954dc76dfd40111e406cb",
+  "official_commit": "075fc5f5a52d11077f9dc2b074644618f26939e2",
+  "official_hashes": {
+    "metrics": "cfdd596e3f8909cca14db0682889738b19ff75c3808b3773175aba9367ca7444",
+    "division_metrics": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9",
+    "build_graph_from_rows": "c0fe1868d4550235c4673d4a3fc5e2d6ab0402f3cd0bac73eec8d1348eb9690d"
+  },
+  "source_review": {
+    "status": "FULL_NOTEBOOK_SOURCE_REVIEWED",
+    "cells": 13,
+    "all_original_cells_unchanged": true,
+    "note": "原始proxy保留，仅为维持选参；新增测算使用官方入口"
+  },
+  "candidates": {
+    "A18": {
+      "ref": "sailorren/biohub-g1-divgate018-20260920",
+      "final_threshold": 0.18,
+      "final_config_rule": "deepcopy(PP_BASE_CONFIG) updated by original selected_config, then only DEEPCENTER_SAFE_DIV_THRESHOLD overridden",
+      "notebook_sha256": "5c1447b8b4dc73e2981c523959de3b227f7645e948f8c9e6f8fab5decf6e73e1",
+      "metadata_sha256": "f3d4711534d19276466c87e2b86d4f753a39dbc95446cf70465b665f868f9b9a",
+      "inputs": {
+        "dataset_sources": [
+          "pilkwang/biohub-deepcenter-unet3d-center-prior-v1/5",
+          "pilkwang/biohub-temporal-unet3d-seed314159-v1/2",
+          "pilkwang/biohub-tracking-support-pack-50ep-v1/10"
+        ],
+        "kernel_sources": [
+          "sailorren/biohub-division-train-20260914/1"
+        ],
+        "competition_sources": [
+          "biohub-cell-tracking-during-development"
+        ],
+        "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+        "machine_shape": "NvidiaTeslaT4"
+      },
+      "status": "BUILT_NOT_RUN"
+    },
+    "B22": {
+      "ref": "sailorren/biohub-g1-divgate022-20260920",
+      "final_threshold": 0.22,
+      "final_config_rule": "deepcopy(PP_BASE_CONFIG) updated by original selected_config, then only DEEPCENTER_SAFE_DIV_THRESHOLD overridden",
+      "notebook_sha256": "f9751f48220b71e5160aa04b4b712b0c13d205985cbd2d5e464d9ae6a34cc65e",
+      "metadata_sha256": "b3318346acda8e0b7001a26d95e2f6b65690ea0301b8ef9a051c6ff09d32385d",
+      "inputs": {
+        "dataset_sources": [
+          "pilkwang/biohub-deepcenter-unet3d-center-prior-v1/5",
+          "pilkwang/biohub-temporal-unet3d-seed314159-v1/2",
+          "pilkwang/biohub-tracking-support-pack-50ep-v1/10"
+        ],
+        "kernel_sources": [
+          "sailorren/biohub-division-train-20260914/1"
+        ],
+        "competition_sources": [
+          "biohub-cell-tracking-during-development"
+        ],
+        "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+        "machine_shape": "NvidiaTeslaT4"
+      },
+      "status": "BUILT_NOT_RUN"
+    }
+  },
+  "weights": {
+    "gate": "0a1f9b93bb529e70f4f7c2ba0907eea8b4cecd2befccc8ba1fb75e569edf77a0",
+    "primary": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+    "secondary": "9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f",
+    "deepcenter": "8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0"
+  },
+  "V1_read_only": {
+    "kernel_id": 134988494,
+    "version": 1,
+    "script_version_id": 351084196,
+    "submission_id": 56375774,
+    "status": "SCORE_PENDING",
+    "public": null,
+    "source": "preflight_initial.json"
+  }
+}

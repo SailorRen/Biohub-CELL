@@ -1,0 +1,34 @@
+{
+  "repo": "royerlab/kaggle-cell-tracking-competition",
+  "commit": "075fc5f5a52d11077f9dc2b074644618f26939e2",
+  "files": [
+    {
+      "upstream_path": "src/tracking_cellmot/metrics.py",
+      "sha256": "cfdd596e3f8909cca14db0682889738b19ff75c3808b3773175aba9367ca7444"
+    },
+    {
+      "upstream_path": "src/tracking_cellmot/division_metrics.py",
+      "sha256": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9"
+    },
+    {
+      "upstream_path": "scripts/csv_to_geffs.py",
+      "sha256": "914d151495c2c0f6bcab1feeebc6d0452b0ec63175cbce3b8774d20f79fa6f9a"
+    },
+    {
+      "upstream_path": "scripts/geffs_to_csv.py",
+      "sha256": "ecb8b121effb99f7889e6c9936f495fba6d98ea1bb541a2d1b1fb9f633bc9796"
+    },
+    {
+      "upstream_path": "metrics.md",
+      "sha256": "d8a2d3ff21b507242dd23e9b7c687d725261d7b4c79cff086cccb4093141d696"
+    },
+    {
+      "upstream_path": "LICENSE",
+      "sha256": "3910a8b578783928cbbf981c1b204591ab3368e70017dc695d6536f71d272796"
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "sha256": "2e550bd632d68ef6402547489122f01d72c6a6e9842de46ff295f338452fce77"
+    }
+  ]
+}

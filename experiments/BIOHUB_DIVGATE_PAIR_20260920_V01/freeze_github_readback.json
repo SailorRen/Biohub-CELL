@@ -1,0 +1,50 @@
+{
+  "commit": "ea8d261a00d675e5aab5a5f8189d0bdf453b3641",
+  "remote_head": "ea8d261a00d675e5aab5a5f8189d0bdf453b3641",
+  "files": [
+    {
+      "path": "tasks/CODEX_20260920_BIOHUB_DIVGATE_PAIR_V01.md",
+      "sha256": "8e84b1c618adbb95d0b47a12e59740d1e8872b27e71a22f1349cccc6a3e2d520",
+      "bytes": 17826,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/contract.json",
+      "sha256": "f236c8e2f73d8b3e9ed4ef6e04346caaeddc954e05cf7b6992104b1b2018c07e",
+      "bytes": 3386,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/platform_ledger.json",
+      "sha256": "f4efc391a69e322555ebfb84ba70232a449c32183621f6ce6453353e10151722",
+      "bytes": 292,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/preflight_initial.json",
+      "sha256": "ca05945b7fc45f37154aa99e02fde85d66c7d7b5ed4e02d87c0c23090c78d702",
+      "bytes": 10280,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/preflight_ui.json",
+      "sha256": "691e9f66476e8bbc20f085b4795a2f32c35374bc277ee9164019fbea4835297e",
+      "bytes": 473,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/protected_refs_before.json",
+      "sha256": "117bf4373f5835eedcb575c386712fccbb027f5a67f5c322de89f5b852f1a86e",
+      "bytes": 365,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/read_preflight.py",
+      "sha256": "561b61d08eb3defcf071a9647d25944efe9338a711aee4789c35d736794eca56",
+      "bytes": 2299,
+      "equal": true
+    }
+  ],
+  "status": "COMPLETED_VERIFIED",
+  "scope": "task and contract remote bytes before Kaggle writes"
+}

@@ -1,0 +1,90 @@
+{
+  "status": "FULL_NOTEBOOK_SOURCE_REVIEWED",
+  "cells": [
+    {
+      "index": 0,
+      "bytes": 3066,
+      "sha256": "545339ff52ac4315bffaf1131fcf769bb1a260ca523e988f19af9432979fc4bd",
+      "parsed": true
+    },
+    {
+      "index": 1,
+      "bytes": 1330,
+      "sha256": "99198956a4c7725d85c6aab0d478368749824801716c6d39cf5bf915187ac500",
+      "parsed": true
+    },
+    {
+      "index": 2,
+      "bytes": 13642,
+      "sha256": "77fdadffbd02c87e8f686e55944b6741312be552f34c8dc615e6391a1959a2dc",
+      "parsed": true
+    },
+    {
+      "index": 3,
+      "bytes": 26734,
+      "sha256": "0f62c46bbec00a2d3d6bbde0efb89d5713204983d51c9c3cf73df1869cf12f8f",
+      "parsed": true
+    },
+    {
+      "index": 4,
+      "bytes": 49112,
+      "sha256": "768bd13fbf10d26731819e0d19f79c11d5a1d0fad7065ec5f5f66c2c5fc3187c",
+      "parsed": true
+    },
+    {
+      "index": 5,
+      "bytes": 88373,
+      "sha256": "9f8593a05348c6e6e8f21a19147532df7261921590ea2663e93b3f647f09fccb",
+      "parsed": true
+    },
+    {
+      "index": 6,
+      "bytes": 7352,
+      "sha256": "c300805e0268602d76042dd271bcc3224fda6af2a52569e16bebc446701d66a5",
+      "parsed": true
+    },
+    {
+      "index": 7,
+      "bytes": 7754,
+      "sha256": "7400441b355cbe09311e9c638c44264e374ad448d9ab1020b9d5866746e84ee7",
+      "parsed": true
+    },
+    {
+      "index": 8,
+      "bytes": 11193,
+      "sha256": "54ed30a2f73355f369c112057570e9dd6a37e7f5521a6baf9ccdf4a8fc4ba6f8",
+      "parsed": true
+    },
+    {
+      "index": 9,
+      "bytes": 6552,
+      "sha256": "3986eaba6600507225a7140c033c14ae039a4fa95b3602806b43a8f2f11d90a0",
+      "parsed": true
+    },
+    {
+      "index": 10,
+      "bytes": 5847,
+      "sha256": "ece3664cf924f36f3b838bac34fa636e67a5c865e6bf21ab61ff086bd1f87dfb",
+      "parsed": true
+    },
+    {
+      "index": 11,
+      "bytes": 2004,
+      "sha256": "1b69f438acf6f21117acb50f1b42816a5da627c4dcec80b8e76372ef11793f15",
+      "parsed": true
+    },
+    {
+      "index": 12,
+      "bytes": 1107,
+      "sha256": "46b99601f8a99a9b894a54a0a0e77c7d983c220a0a415821e05cb4ed6c881e36",
+      "parsed": true
+    }
+  ],
+  "reviewed": {
+    "G1": "all 13 code cells including dynamic source patch strings",
+    "research": "three required fixed files",
+    "F1": "fixed contract/build/formal_score read-only",
+    "official": "metrics.md, CSV roundtrip scripts, evaluate entry, metrics and division_metrics"
+  },
+  "first_test_failure": "ML environment lacked polars; reran using existing scorer environment; no platform request"
+}
