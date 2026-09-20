@@ -1,0 +1,133 @@
+{
+  "status": "PASS",
+  "arm": "G58",
+  "observed_at_utc": "2026-09-20T23:23:22.875423+00:00",
+  "observed_at_shanghai": "2026-09-21T07:23:22.875423+08:00",
+  "binding": {
+    "ref": "sailorren/biohub-g1-gap058-20260920",
+    "kernel_id": 135123769,
+    "version": 1,
+    "script_version_id": 351350591,
+    "source_sha256": "8005952212e82d093b2528001ae63a21f2502d51c08c4d6c06468c9b0e7667aa",
+    "metadata": {
+      "id": 135123769,
+      "ref": "sailorren/biohub-g1-gap058-20260920",
+      "title": "biohub-g1-gap058-20260920",
+      "author": "Sailor Ren",
+      "slug": "biohub-g1-gap058-20260920",
+      "lastRunTime": "2026-09-17T23:23:05.044Z",
+      "language": "python",
+      "kernelType": "notebook",
+      "isPrivate": true,
+      "enableGpu": true,
+      "enableInternet": false,
+      "categoryIds": [
+        "gpu"
+      ],
+      "datasetDataSources": [
+        "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+        "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+        "pilkwang/biohub-tracking-support-pack-50ep-v1"
+      ],
+      "kernelDataSources": [
+        "sailorren/biohub-division-train-20260914"
+      ],
+      "competitionDataSources": [
+        "biohub-cell-tracking-during-development"
+      ],
+      "enableTpu": false,
+      "currentVersionNumber": 1,
+      "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "machineShape": "NvidiaTeslaT4"
+    }
+  },
+  "csv_sha256": "f2c6bee2000fe495251c0aacff106866e615122619317907f7146414121b72c8",
+  "rows": 241314,
+  "samples": [
+    "44b6_0113de3b",
+    "44b6_0b24845f",
+    "6bba_05b6850b",
+    "6bba_05db0fb1"
+  ],
+  "schema_graph_checks": "PASS",
+  "official_csv_roundtrip": "PASS",
+  "final_canonical_sha256": "b35ccc37c0377271d8733cf7bf845399ebec8e133c6e7b548e580ceda8b2df03",
+  "has_effect": true,
+  "differences": [
+    {
+      "stem": "44b6_0113de3b",
+      "g1_hash": "4cfb7ca7d9c3e993faa57ec9971b0d9b20b7461de974b8935cec843ec955f952",
+      "candidate_hash": "6aa0aa3449b414cf59a610109aa9c21ebf212c066ec6506f174035e2b4793c77",
+      "nodes_delta": 5,
+      "edges_added": 117,
+      "edges_removed": 108,
+      "division_delta": -1,
+      "changed": true
+    },
+    {
+      "stem": "44b6_0b24845f",
+      "g1_hash": "292c061c73e402b65fc8708b0e88bfef1e6af151843ed55c04f7a204375f3943",
+      "candidate_hash": "1397ff0336247cef473064ebbd213ec1fbdcfcc19706f2b0c1f3ea29efab66f7",
+      "nodes_delta": 9,
+      "edges_added": 669,
+      "edges_removed": 664,
+      "division_delta": 0,
+      "changed": true
+    },
+    {
+      "stem": "6bba_05b6850b",
+      "g1_hash": "f305c966bb2e2a84b351f15bad83ba884a062160b95d44a1ba7cf03bae4ed177",
+      "candidate_hash": "a06d0e943760fe6dfee6f7097e531755d6cd9f9e1892bc1f08f436c5c9216f42",
+      "nodes_delta": 5,
+      "edges_added": 27,
+      "edges_removed": 22,
+      "division_delta": 0,
+      "changed": true
+    },
+    {
+      "stem": "6bba_05db0fb1",
+      "g1_hash": "3546ab6f583487c31193c8027415d726c0c00b9544cbb50e6c4f6a98b16cd3d2",
+      "candidate_hash": "e0ae26d2bc9d1b5c7e2b1ca844e30862e0bc8fffb2ba34451ae4ac9f8cb7c202",
+      "nodes_delta": -5,
+      "edges_added": 740,
+      "edges_removed": 744,
+      "division_delta": 0,
+      "changed": true
+    }
+  ],
+  "comparison_limit": null,
+  "pair_deduplication": "DISTINCT",
+  "selected_label": "tight55",
+  "selected_config": {
+    "MOTION_RELINK_TIGHT_UM": 5.5
+  },
+  "final_resolved_config": {
+    "SAFE_DIV_MAX_UM": 9.0,
+    "SAFE_DIV_SISTER_MAX_UM": 14.0,
+    "SAFE_DIV_DIVERGE_UM": 2.25,
+    "SAFE_DIV_SISTER_SYMMETRY_TAU": 0.6,
+    "SAFE_DIV_EXISTING_CHILD_MAX_UM": 10.0,
+    "SAFE_DIV_FRAME_FRAC_CAP": 0.0076,
+    "SAFE_DIV_GLOBAL_FRAC_CAP": 0.00375,
+    "DEEPCENTER_SAFE_DIV_THRESHOLD": 0.2,
+    "DEEPCENTER_GAP_THRESHOLD": 0.25,
+    "GAP_CLOSE_UM": 5.8,
+    "OUTPUT_MIN_TRACK_LEN": 6,
+    "SHORT_TRACK_RESCUE_MIN_MEAN_EDGE_PROB": 0.88,
+    "MOTION_RELINK_TIGHT_UM": 5.5,
+    "MOTION_RELINK_RELAXED_UM": 10.0,
+    "GAP2_MAX_STEP_UM": 4.4,
+    "GAP2_MAX_TOTAL_UM": 10.2,
+    "MOTION_RELINK_LEARNED_BONUS": 1.0,
+    "MOTION_RELINK_VELOCITY_WEIGHT": 0.5,
+    "GAP_CLOSE_REUSE_UM": 3.2,
+    "OUTPUT_EDGE_MAX_UM": 14.0
+  },
+  "worker_detection_weight": 0.8,
+  "weights": {
+    "primary": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+    "secondary": "9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f",
+    "deepcenter": "8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0"
+  },
+  "platform_writes": 0
+}
