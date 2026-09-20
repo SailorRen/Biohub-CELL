@@ -1,0 +1,24 @@
+{
+  "observed_at_utc": "2026-09-20T03:44:33.842013+00:00",
+  "contract_sha256": "f236c8e2f73d8b3e9ed4ef6e04346caaeddc954e05cf7b6992104b1b2018c07e",
+  "task_original_sha256": "8e84b1c618adbb95d0b47a12e59740d1e8872b27e71a22f1349cccc6a3e2d520",
+  "task_byte_identity": "PASS",
+  "synthetic_engineering": {
+    "status": "PASS",
+    "tests": 6,
+    "failures": 0,
+    "errors": 0,
+    "scope": "synthetic engineering only; no model inference or competition data"
+  },
+  "execution_check": {
+    "argv": [
+      "python3",
+      "experiments/BIOHUB_DIVGATE_PAIR_20260920_V01/verify.py",
+      "--execution"
+    ],
+    "exit_code": 1,
+    "status": "NOT_PASSED",
+    "reason": "Both kernels RUNNING; ordinary outputs and formal submissions unavailable. No completion claim recorded."
+  },
+  "overall_status": "INCOMPLETE_KERNEL_RUNNING"
+}

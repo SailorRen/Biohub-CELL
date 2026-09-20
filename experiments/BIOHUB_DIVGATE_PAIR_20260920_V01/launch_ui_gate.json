@@ -1,0 +1,27 @@
+{
+  "observed_at_utc": "2026-09-20T03:37:19.846064+00:00",
+  "observed_at_shanghai": "2026-09-20T11:37:19.846064+08:00",
+  "account": "sailorren",
+  "gpu_available_minutes": 1559,
+  "gpu_visible": "25h 59m available of 30h",
+  "active_kernel_sessions": 0,
+  "active_competition_submissions": 1,
+  "source": "CUA refreshed account quota and active events",
+  "absent_slugs": [
+    "sailorren/biohub-g1-divgate018-20260920",
+    "sailorren/biohub-g1-divgate022-20260920"
+  ],
+  "absence_text": "We can't find that page.",
+  "quota_discrepancy_preserved": "SDK 6h total vs UI 30h; launch uses signed-in UI allowance; server rejection counts without retry",
+  "scope": "Batch initial preflight; active_kernel_sessions is initial, not B22 current count",
+  "b22_prewrite_observation": {
+    "observed_at_utc": "2026-09-20T03:41:10.455703+00:00",
+    "active_kernel_sessions": 1,
+    "own_batch_kernel_ref": "sailorren/biohub-g1-divgate018-20260920",
+    "own_batch_version": 1,
+    "own_batch_status": "Running",
+    "external_kernel_sessions": 0,
+    "existing_f1_formal_status": "Scoring",
+    "source": "Kaggle Active Events signed-in UI"
+  }
+}

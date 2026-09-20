@@ -1,14 +1,65 @@
 {
   "task_id": "BIOHUB_DIVGATE_PAIR_20260920_V01",
-  "requests": [],
+  "requests": [
+    {
+      "action": "SaveAndRun",
+      "arm": "A18",
+      "ref": "sailorren/biohub-g1-divgate018-20260920",
+      "source_commit": "2649b1599785df268e614562a008d3fc0811c44a",
+      "source_sha256": "5c1447b8b4dc73e2981c523959de3b227f7645e948f8c9e6f8fab5decf6e73e1",
+      "at_utc": "2026-09-20T03:37:32.356392+00:00",
+      "at_shanghai": "2026-09-20T11:37:32.356437+08:00",
+      "status": "RUNNING_VERIFIED",
+      "counted": 1,
+      "response": {
+        "ref": "/code/sailorren/biohub-g1-divgate018-20260920",
+        "url": "https://www.kaggle.com/code/sailorren/biohub-g1-divgate018-20260920",
+        "versionNumber": 1,
+        "kernelId": 135051720
+      },
+      "finished_at_utc": "2026-09-20T03:37:36.427990+00:00",
+      "kernel_id": 135051720,
+      "version": 1,
+      "script_version_id": 351207161,
+      "last_observed_at_utc": "2026-09-20T03:43:07.384072+00:00",
+      "last_kernel_status": "RUNNING",
+      "source_equal": true,
+      "private": true
+    },
+    {
+      "action": "SaveAndRun",
+      "arm": "B22",
+      "ref": "sailorren/biohub-g1-divgate022-20260920",
+      "source_commit": "2649b1599785df268e614562a008d3fc0811c44a",
+      "source_sha256": "f9751f48220b71e5160aa04b4b712b0c13d205985cbd2d5e464d9ae6a34cc65e",
+      "at_utc": "2026-09-20T03:41:30.974452+00:00",
+      "at_shanghai": "2026-09-20T11:41:30.974476+08:00",
+      "status": "RUNNING_VERIFIED",
+      "counted": 1,
+      "response": {
+        "ref": "/code/sailorren/biohub-g1-divgate022-20260920",
+        "url": "https://www.kaggle.com/code/sailorren/biohub-g1-divgate022-20260920",
+        "versionNumber": 1,
+        "kernelId": 135052315
+      },
+      "finished_at_utc": "2026-09-20T03:41:35.445945+00:00",
+      "kernel_id": 135052315,
+      "version": 1,
+      "script_version_id": 351207989,
+      "last_observed_at_utc": "2026-09-20T03:43:10.009358+00:00",
+      "last_kernel_status": "RUNNING",
+      "source_equal": true,
+      "private": true
+    }
+  ],
   "counts": {
-    "new_private_notebooks": 0,
-    "save_and_run": 0,
+    "new_private_notebooks": 2,
+    "save_and_run": 2,
     "formal_submission": 0,
     "training": 0,
     "dataset_write": 0,
     "final_selection_change": 0,
     "v1_f1_write": 0
   },
-  "status": "NOT_RUN"
+  "status": "PLATFORM_READBACK_RECORDED"
 }

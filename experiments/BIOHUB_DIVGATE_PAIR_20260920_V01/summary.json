@@ -1,0 +1,49 @@
+{
+  "task_id": "BIOHUB_DIVGATE_PAIR_20260920_V01",
+  "observed_at_utc": "2026-09-20T03:44:33.842013+00:00",
+  "observed_at_shanghai": "2026-09-20T11:44:33.842013+08:00",
+  "execution_status": "KERNEL_RUNNING",
+  "score_status": "NOT_SUBMITTED",
+  "delivery_status": "PENDING_REMOTE_READBACK",
+  "counts": {
+    "new_private_notebooks": 2,
+    "save_and_run": 2,
+    "formal_submission": 0,
+    "training": 0,
+    "dataset_write": 0,
+    "final_selection_change": 0,
+    "v1_f1_write": 0
+  },
+  "arms": {
+    "A18": {
+      "kernel_id": 135051720,
+      "version": 1,
+      "script_version_id": 351207161,
+      "kernel_status": "RUNNING",
+      "submission_id": null,
+      "public_score": null,
+      "public_delta_vs_g1": null,
+      "engineering_status": "AWAIT_ORDINARY_OUTPUT",
+      "canonical_graph_changes": null,
+      "diagnostic_status": "PENDING_KERNEL_OUTPUT",
+      "diagnostic_coverage": "TRAIN_SEEN_DIAGNOSTIC for secondary upstream; COVERAGE_UNKNOWN for other upstream weights"
+    },
+    "B22": {
+      "kernel_id": 135052315,
+      "version": 1,
+      "script_version_id": 351207989,
+      "kernel_status": "RUNNING",
+      "submission_id": null,
+      "public_score": null,
+      "public_delta_vs_g1": null,
+      "engineering_status": "AWAIT_ORDINARY_OUTPUT",
+      "canonical_graph_changes": null,
+      "diagnostic_status": "PENDING_KERNEL_OUTPUT",
+      "diagnostic_coverage": "TRAIN_SEEN_DIAGNOSTIC for secondary upstream; COVERAGE_UNKNOWN for other upstream weights"
+    }
+  },
+  "diagnostic_results_present": false,
+  "diagnostic_gap": "No completed ordinary output available; diagnostic_results.jsonl intentionally not fabricated. Results remain in running private kernels until collected.",
+  "final_selection_changes": 0,
+  "next_action": "Only read exact versions; after COMPLETE collect and independently validate output, compare full canonical outputs and deduplicate, then at most one formal submission per eligible arm under remaining budget. No autonomous monitoring or cross-day resumption."
+}
