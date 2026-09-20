@@ -1,0 +1,104 @@
+{
+  "scope": "Only production output, single submission receipt and truthful PENDING delivery; formal scoring remains incomplete.",
+  "formal_score_status": "SCORE_PENDING",
+  "verification": {
+    "checks": [
+      {
+        "details": {
+          "argument_count": 2,
+          "argv_sha256": "0d25bd850884a870413ecc71ee3e4a58e88caf8fb2eaa55615478856b0df009a",
+          "cwd": ".",
+          "executable": "python3",
+          "expected_exit": 0,
+          "missing_stderr_text_checks": 0,
+          "missing_stdout_text_checks": 0,
+          "raw_output_stored": false,
+          "returncode": 0,
+          "stderr": {
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "stderr_text_checks": 0,
+          "stdout": {
+            "bytes": 231,
+            "sha256": "03d3b47a8a618a0d7ae8bad0381faf09a66d2a9833df100fe4c31da0137c71db"
+          },
+          "stdout_text_checks": 0
+        },
+        "id": "production-and-formal",
+        "outcome": "PASS",
+        "reason": "command evidence passed",
+        "required": true,
+        "type": "command"
+      },
+      {
+        "details": {
+          "argument_count": 2,
+          "argv_sha256": "311510e2433ae7305483a196446d44d1b0ed4ee7569a02a926e56f18f002a840",
+          "cwd": ".",
+          "executable": "python3",
+          "expected_exit": 0,
+          "missing_stderr_text_checks": 0,
+          "missing_stdout_text_checks": 0,
+          "raw_output_stored": false,
+          "returncode": 0,
+          "stderr": {
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "stderr_text_checks": 0,
+          "stdout": {
+            "bytes": 218,
+            "sha256": "e37426b1437b99e6e4d85d6eaab34259082c0c004439386e0cafb7c03543c4a0"
+          },
+          "stdout_text_checks": 0
+        },
+        "id": "immutable-budget",
+        "outcome": "PASS",
+        "reason": "command evidence passed",
+        "required": true,
+        "type": "command"
+      },
+      {
+        "details": {
+          "branch": "codex/f1-flow-kaggle-20260918",
+          "dirty_entry_count": 0,
+          "head": "614b7732b06820ef0c35955049aad86060b76fbf",
+          "remote": "origin",
+          "remote_exists": true,
+          "remote_head": "614b7732b06820ef0c35955049aad86060b76fbf",
+          "remote_url_sha256": "294339ae4bf28ec437260f32bd064c06212de22a7026887c59e47f72ef414b8e",
+          "repository": "."
+        },
+        "id": "git",
+        "outcome": "PASS",
+        "reason": "Git evidence passed",
+        "required": true,
+        "type": "git"
+      }
+    ],
+    "claimed_at": "2026-09-20T09:24:38+08:00",
+    "claimed_status": "CLAIMED_COMPLETE",
+    "contract_path": "experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/production/score_acceptance_20260920.json",
+    "contract_sha256": "9c2ba19b4503539cf11a607f2aa6b0da9ac4c1ee7bdccff25949ad3a4f0faac6",
+    "final_status": "COMPLETED_VERIFIED",
+    "finished_at": "2026-09-20T09:24:40+08:00",
+    "integrity_scope": "local-sha256-only",
+    "limitations": [
+      "The conclusion is limited to the frozen contract and the implemented checks.",
+      "The verifier does not prove omitted requirements or future stability.",
+      "A local or Git hash is not a trusted signature against a malicious writer."
+    ],
+    "optional_warning_check_ids": [],
+    "reason": "all required automated checks passed",
+    "required_summary": {
+      "failed_or_blocked": 0,
+      "human_review": 0,
+      "passed": 3
+    },
+    "run_id": "20260920T092438+0800-da0cb0f6",
+    "schema_version": "1.0",
+    "started_at": "2026-09-20T09:24:38+08:00",
+    "task_id": "BIOHUB_F1_FORMAL_CLOSEOUT_20260920"
+  }
+}

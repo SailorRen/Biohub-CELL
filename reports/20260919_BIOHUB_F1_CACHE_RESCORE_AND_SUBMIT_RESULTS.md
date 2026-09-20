@@ -17,6 +17,8 @@ cd /private/tmp/biohub-f1-score-20260920
 ```
 若临时目录不存在，安全 clone 同研究分支后执行；正式写入额度已耗尽，不得运行 submit_once.py 或 save_once.py。若终态错误则保留错误，不重提。
 
+文件交付回读：固定提交 614b7732b06820ef0c35955049aad86060b76fbf 的 126/126 文件字节一致。合同 9c2ba19b4503539cf11a607f2aa6b0da9ac4c1ee7bdccff25949ad3a4f0faac6 的 3 项交付检查通过（production-and-formal、immutable-budget、git），失败 0；其范围是生产输出、唯一提交回执及真实待评分状态，不代表正式评分完成。回执保存在 production/github_readback_20260920.json 与 delivery_verification_20260920.json。
+
 ## 本轮生产验收证据
 
 准确生产 V1 / SV351084196 已由 API 核验 COMPLETE，页面耗时 12171.7 秒。回收 8 个必要文件；submission.csv 留 ignored，完整 F1 回执用无损 gzip 同步（133285 bytes，解压后 SHA256 与原始字节一致）。其余小型回执、完整输出清单和脱敏日志同步。
