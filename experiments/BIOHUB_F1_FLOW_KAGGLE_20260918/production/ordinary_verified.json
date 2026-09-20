@@ -1,0 +1,1358 @@
+{
+  "status": "ORDINARY_OUTPUT_VERIFIED",
+  "observed_at_utc": "2026-09-20T01:19:20.284348+00:00",
+  "binding": {
+    "kernel_id": 134988494,
+    "version": 1,
+    "script_version_id": 351084196,
+    "source_sha256": "a7cb7f8a0da5b5055594779019ebb3ab688e3ce5916079d23b59574b628720b1"
+  },
+  "submission_sha256": "da80c6aa879f1531a35088e029cf3f9658108265ee9c74d959d86e64182f6726",
+  "rows": 241020,
+  "row_counts": {
+    "node": 122719,
+    "edge": 118301
+  },
+  "coverage": [
+    {
+      "dataset": "44b6_0113de3b",
+      "nodes": 25619,
+      "edges": 24880,
+      "frames": 100,
+      "time_min": 0,
+      "time_max": 99,
+      "max_indegree": 1,
+      "max_outdegree": 2
+    },
+    {
+      "dataset": "44b6_0b24845f",
+      "nodes": 20713,
+      "edges": 19401,
+      "frames": 100,
+      "time_min": 0,
+      "time_max": 99,
+      "max_indegree": 1,
+      "max_outdegree": 2
+    },
+    {
+      "dataset": "6bba_05b6850b",
+      "nodes": 6130,
+      "edges": 5927,
+      "frames": 100,
+      "time_min": 0,
+      "time_max": 99,
+      "max_indegree": 1,
+      "max_outdegree": 2
+    },
+    {
+      "dataset": "6bba_05db0fb1",
+      "nodes": 70257,
+      "edges": 68093,
+      "frames": 100,
+      "time_min": 0,
+      "time_max": 99,
+      "max_indegree": 1,
+      "max_outdegree": 2
+    }
+  ],
+  "selected_label": "combo(tight55+relaxed9)",
+  "selected_config": {
+    "MOTION_RELINK_RELAXED_UM": 9.0,
+    "MOTION_RELINK_TIGHT_UM": 5.5
+  },
+  "flow_config": {
+    "k": 12,
+    "radius_um": 40.0,
+    "exclude_um": 1.5,
+    "min_global_seeds": 4,
+    "iterations": 1
+  },
+  "flow_enabled_source_assertion_executed": true,
+  "flow_calls": [
+    {
+      "call_index": 0,
+      "frame_count": 99,
+      "seconds": 64.427893283,
+      "seed_stats": {
+        "motion_relink_tight_edges": 24356,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 581,
+        "motion_relink_edges": 24937
+      },
+      "prediction_count": 25587,
+      "source_nodes": 25587,
+      "flow_nodes": 25587,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 1,
+      "frame_count": 99,
+      "seconds": 48.5133879980001,
+      "seed_stats": {
+        "motion_relink_tight_edges": 19485,
+        "motion_relink_relaxed_edges": 888,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 20373
+      },
+      "prediction_count": 22375,
+      "source_nodes": 22380,
+      "flow_nodes": 22375,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 5
+    },
+    {
+      "call_index": 2,
+      "frame_count": 99,
+      "seconds": 4.435278440999809,
+      "seed_stats": {
+        "motion_relink_tight_edges": 5851,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 180,
+        "motion_relink_edges": 6031
+      },
+      "prediction_count": 6248,
+      "source_nodes": 6249,
+      "flow_nodes": 6248,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 1
+    },
+    {
+      "call_index": 3,
+      "frame_count": 99,
+      "seconds": 459.8573283960002,
+      "seed_stats": {
+        "motion_relink_tight_edges": 66226,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 1748,
+        "motion_relink_edges": 67974
+      },
+      "prediction_count": 70119,
+      "source_nodes": 70119,
+      "flow_nodes": 70119,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 4,
+      "frame_count": 99,
+      "seconds": 189.85274209300042,
+      "seed_stats": {
+        "motion_relink_tight_edges": 42733,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 312,
+        "motion_relink_edges": 43045
+      },
+      "prediction_count": 44956,
+      "source_nodes": 44956,
+      "flow_nodes": 44956,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 5,
+      "frame_count": 99,
+      "seconds": 50.99914239899999,
+      "seed_stats": {
+        "motion_relink_tight_edges": 20269,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 1179,
+        "motion_relink_edges": 21448
+      },
+      "prediction_count": 22693,
+      "source_nodes": 22693,
+      "flow_nodes": 22693,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 6,
+      "frame_count": 99,
+      "seconds": 157.1736007630002,
+      "seed_stats": {
+        "motion_relink_tight_edges": 38088,
+        "motion_relink_relaxed_edges": 345,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 38433
+      },
+      "prediction_count": 40591,
+      "source_nodes": 40592,
+      "flow_nodes": 40591,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 1
+    },
+    {
+      "call_index": 7,
+      "frame_count": 99,
+      "seconds": 7.625069466999776,
+      "seed_stats": {
+        "motion_relink_tight_edges": 8163,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 47,
+        "motion_relink_edges": 8210
+      },
+      "prediction_count": 8456,
+      "source_nodes": 8456,
+      "flow_nodes": 8456,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 8,
+      "frame_count": 99,
+      "seconds": 3.7922946740000043,
+      "seed_stats": {
+        "motion_relink_tight_edges": 5305,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 340,
+        "motion_relink_edges": 5645
+      },
+      "prediction_count": 5911,
+      "source_nodes": 5946,
+      "flow_nodes": 5911,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 35
+    },
+    {
+      "call_index": 9,
+      "frame_count": 99,
+      "seconds": 83.88062415800005,
+      "seed_stats": {
+        "motion_relink_tight_edges": 27658,
+        "motion_relink_relaxed_edges": 556,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 28214
+      },
+      "prediction_count": 29520,
+      "source_nodes": 29520,
+      "flow_nodes": 29520,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 10,
+      "frame_count": 99,
+      "seconds": 7.6971556830003465,
+      "seed_stats": {
+        "motion_relink_tight_edges": 7970,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 122,
+        "motion_relink_edges": 8092
+      },
+      "prediction_count": 8370,
+      "source_nodes": 8370,
+      "flow_nodes": 8370,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 11,
+      "frame_count": 99,
+      "seconds": 85.8278597489998,
+      "seed_stats": {
+        "motion_relink_tight_edges": 28365,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 449,
+        "motion_relink_edges": 28814
+      },
+      "prediction_count": 29686,
+      "source_nodes": 29686,
+      "flow_nodes": 29686,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 12,
+      "frame_count": 99,
+      "seconds": 190.10777251799936,
+      "seed_stats": {
+        "motion_relink_tight_edges": 42733,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 312,
+        "motion_relink_edges": 43045
+      },
+      "prediction_count": 44956,
+      "source_nodes": 44956,
+      "flow_nodes": 44956,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 13,
+      "frame_count": 99,
+      "seconds": 50.648890470999504,
+      "seed_stats": {
+        "motion_relink_tight_edges": 20269,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 1179,
+        "motion_relink_edges": 21448
+      },
+      "prediction_count": 22693,
+      "source_nodes": 22693,
+      "flow_nodes": 22693,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 14,
+      "frame_count": 99,
+      "seconds": 153.9068021310004,
+      "seed_stats": {
+        "motion_relink_tight_edges": 38088,
+        "motion_relink_relaxed_edges": 345,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 38433
+      },
+      "prediction_count": 40591,
+      "source_nodes": 40592,
+      "flow_nodes": 40591,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 1
+    },
+    {
+      "call_index": 15,
+      "frame_count": 99,
+      "seconds": 7.72322599600011,
+      "seed_stats": {
+        "motion_relink_tight_edges": 8163,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 47,
+        "motion_relink_edges": 8210
+      },
+      "prediction_count": 8456,
+      "source_nodes": 8456,
+      "flow_nodes": 8456,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 16,
+      "frame_count": 99,
+      "seconds": 4.147913041999345,
+      "seed_stats": {
+        "motion_relink_tight_edges": 5305,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 340,
+        "motion_relink_edges": 5645
+      },
+      "prediction_count": 5911,
+      "source_nodes": 5946,
+      "flow_nodes": 5911,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 35
+    },
+    {
+      "call_index": 17,
+      "frame_count": 99,
+      "seconds": 84.01970303899998,
+      "seed_stats": {
+        "motion_relink_tight_edges": 27658,
+        "motion_relink_relaxed_edges": 556,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 28214
+      },
+      "prediction_count": 29520,
+      "source_nodes": 29520,
+      "flow_nodes": 29520,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 18,
+      "frame_count": 99,
+      "seconds": 7.649006082999222,
+      "seed_stats": {
+        "motion_relink_tight_edges": 7970,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 122,
+        "motion_relink_edges": 8092
+      },
+      "prediction_count": 8370,
+      "source_nodes": 8370,
+      "flow_nodes": 8370,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 19,
+      "frame_count": 99,
+      "seconds": 86.79717658400023,
+      "seed_stats": {
+        "motion_relink_tight_edges": 28365,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 449,
+        "motion_relink_edges": 28814
+      },
+      "prediction_count": 29686,
+      "source_nodes": 29686,
+      "flow_nodes": 29686,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 20,
+      "frame_count": 99,
+      "seconds": 192.04160576599952,
+      "seed_stats": {
+        "motion_relink_tight_edges": 42676,
+        "motion_relink_relaxed_edges": 366,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 43042
+      },
+      "prediction_count": 44956,
+      "source_nodes": 44956,
+      "flow_nodes": 44956,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 21,
+      "frame_count": 99,
+      "seconds": 50.97230797999964,
+      "seed_stats": {
+        "motion_relink_tight_edges": 19928,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 1536,
+        "motion_relink_edges": 21464
+      },
+      "prediction_count": 22693,
+      "source_nodes": 22693,
+      "flow_nodes": 22693,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 22,
+      "frame_count": 99,
+      "seconds": 155.05079368099996,
+      "seed_stats": {
+        "motion_relink_tight_edges": 38000,
+        "motion_relink_relaxed_edges": 430,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 38430
+      },
+      "prediction_count": 40591,
+      "source_nodes": 40592,
+      "flow_nodes": 40591,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 1
+    },
+    {
+      "call_index": 23,
+      "frame_count": 99,
+      "seconds": 7.508673913999701,
+      "seed_stats": {
+        "motion_relink_tight_edges": 8153,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 57,
+        "motion_relink_edges": 8210
+      },
+      "prediction_count": 8456,
+      "source_nodes": 8456,
+      "flow_nodes": 8456,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 24,
+      "frame_count": 99,
+      "seconds": 3.8494666860005964,
+      "seed_stats": {
+        "motion_relink_tight_edges": 5234,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 414,
+        "motion_relink_edges": 5648
+      },
+      "prediction_count": 5899,
+      "source_nodes": 5946,
+      "flow_nodes": 5899,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 47
+    },
+    {
+      "call_index": 25,
+      "frame_count": 99,
+      "seconds": 83.31373413500023,
+      "seed_stats": {
+        "motion_relink_tight_edges": 27582,
+        "motion_relink_relaxed_edges": 630,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 28212
+      },
+      "prediction_count": 29520,
+      "source_nodes": 29520,
+      "flow_nodes": 29520,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 26,
+      "frame_count": 99,
+      "seconds": 7.655140744000164,
+      "seed_stats": {
+        "motion_relink_tight_edges": 7929,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 163,
+        "motion_relink_edges": 8092
+      },
+      "prediction_count": 8370,
+      "source_nodes": 8370,
+      "flow_nodes": 8370,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 27,
+      "frame_count": 99,
+      "seconds": 83.93709225600014,
+      "seed_stats": {
+        "motion_relink_tight_edges": 28283,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 544,
+        "motion_relink_edges": 28827
+      },
+      "prediction_count": 29686,
+      "source_nodes": 29686,
+      "flow_nodes": 29686,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 28,
+      "frame_count": 99,
+      "seconds": 189.7810862159995,
+      "seed_stats": {
+        "motion_relink_tight_edges": 42733,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 274,
+        "motion_relink_edges": 43007
+      },
+      "prediction_count": 44956,
+      "source_nodes": 44956,
+      "flow_nodes": 44956,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 29,
+      "frame_count": 99,
+      "seconds": 50.68470994800009,
+      "seed_stats": {
+        "motion_relink_tight_edges": 20269,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 1113,
+        "motion_relink_edges": 21382
+      },
+      "prediction_count": 22693,
+      "source_nodes": 22693,
+      "flow_nodes": 22693,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 30,
+      "frame_count": 99,
+      "seconds": 154.25735951500064,
+      "seed_stats": {
+        "motion_relink_tight_edges": 38088,
+        "motion_relink_relaxed_edges": 307,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 38395
+      },
+      "prediction_count": 40591,
+      "source_nodes": 40592,
+      "flow_nodes": 40591,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 1
+    },
+    {
+      "call_index": 31,
+      "frame_count": 99,
+      "seconds": 7.718977434000408,
+      "seed_stats": {
+        "motion_relink_tight_edges": 8163,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 45,
+        "motion_relink_edges": 8208
+      },
+      "prediction_count": 8456,
+      "source_nodes": 8456,
+      "flow_nodes": 8456,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 32,
+      "frame_count": 99,
+      "seconds": 3.8870377170005668,
+      "seed_stats": {
+        "motion_relink_tight_edges": 5305,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 313,
+        "motion_relink_edges": 5618
+      },
+      "prediction_count": 5911,
+      "source_nodes": 5946,
+      "flow_nodes": 5911,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 35
+    },
+    {
+      "call_index": 33,
+      "frame_count": 99,
+      "seconds": 82.95655541199994,
+      "seed_stats": {
+        "motion_relink_tight_edges": 27658,
+        "motion_relink_relaxed_edges": 495,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 28153
+      },
+      "prediction_count": 29520,
+      "source_nodes": 29520,
+      "flow_nodes": 29520,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 34,
+      "frame_count": 99,
+      "seconds": 7.686454067999875,
+      "seed_stats": {
+        "motion_relink_tight_edges": 7970,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 115,
+        "motion_relink_edges": 8085
+      },
+      "prediction_count": 8370,
+      "source_nodes": 8370,
+      "flow_nodes": 8370,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 35,
+      "frame_count": 99,
+      "seconds": 83.8513548459996,
+      "seed_stats": {
+        "motion_relink_tight_edges": 28365,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 415,
+        "motion_relink_edges": 28780
+      },
+      "prediction_count": 29686,
+      "source_nodes": 29686,
+      "flow_nodes": 29686,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 36,
+      "frame_count": 99,
+      "seconds": 188.2098549860002,
+      "seed_stats": {
+        "motion_relink_tight_edges": 42733,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 312,
+        "motion_relink_edges": 43045
+      },
+      "prediction_count": 44956,
+      "source_nodes": 44956,
+      "flow_nodes": 44956,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 37,
+      "frame_count": 99,
+      "seconds": 50.46524628099996,
+      "seed_stats": {
+        "motion_relink_tight_edges": 20269,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 1183,
+        "motion_relink_edges": 21452
+      },
+      "prediction_count": 22693,
+      "source_nodes": 22693,
+      "flow_nodes": 22693,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 38,
+      "frame_count": 99,
+      "seconds": 152.38986753599966,
+      "seed_stats": {
+        "motion_relink_tight_edges": 38088,
+        "motion_relink_relaxed_edges": 345,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 38433
+      },
+      "prediction_count": 40591,
+      "source_nodes": 40592,
+      "flow_nodes": 40591,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 1
+    },
+    {
+      "call_index": 39,
+      "frame_count": 99,
+      "seconds": 7.506438366000111,
+      "seed_stats": {
+        "motion_relink_tight_edges": 8163,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 47,
+        "motion_relink_edges": 8210
+      },
+      "prediction_count": 8456,
+      "source_nodes": 8456,
+      "flow_nodes": 8456,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 40,
+      "frame_count": 99,
+      "seconds": 3.8901300489997084,
+      "seed_stats": {
+        "motion_relink_tight_edges": 5305,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 340,
+        "motion_relink_edges": 5645
+      },
+      "prediction_count": 5911,
+      "source_nodes": 5946,
+      "flow_nodes": 5911,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 35
+    },
+    {
+      "call_index": 41,
+      "frame_count": 99,
+      "seconds": 83.9326449909995,
+      "seed_stats": {
+        "motion_relink_tight_edges": 27658,
+        "motion_relink_relaxed_edges": 556,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 28214
+      },
+      "prediction_count": 29520,
+      "source_nodes": 29520,
+      "flow_nodes": 29520,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 42,
+      "frame_count": 99,
+      "seconds": 7.679789896999864,
+      "seed_stats": {
+        "motion_relink_tight_edges": 7970,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 122,
+        "motion_relink_edges": 8092
+      },
+      "prediction_count": 8370,
+      "source_nodes": 8370,
+      "flow_nodes": 8370,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 43,
+      "frame_count": 99,
+      "seconds": 83.65885124999932,
+      "seed_stats": {
+        "motion_relink_tight_edges": 28365,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 449,
+        "motion_relink_edges": 28814
+      },
+      "prediction_count": 29686,
+      "source_nodes": 29686,
+      "flow_nodes": 29686,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 44,
+      "frame_count": 99,
+      "seconds": 188.17998273100056,
+      "seed_stats": {
+        "motion_relink_tight_edges": 42733,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 312,
+        "motion_relink_edges": 43045
+      },
+      "prediction_count": 44956,
+      "source_nodes": 44956,
+      "flow_nodes": 44956,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 45,
+      "frame_count": 99,
+      "seconds": 49.77806946100009,
+      "seed_stats": {
+        "motion_relink_tight_edges": 20269,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 1179,
+        "motion_relink_edges": 21448
+      },
+      "prediction_count": 22693,
+      "source_nodes": 22693,
+      "flow_nodes": 22693,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 46,
+      "frame_count": 99,
+      "seconds": 152.57783726100024,
+      "seed_stats": {
+        "motion_relink_tight_edges": 38088,
+        "motion_relink_relaxed_edges": 345,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 38433
+      },
+      "prediction_count": 40591,
+      "source_nodes": 40592,
+      "flow_nodes": 40591,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 1
+    },
+    {
+      "call_index": 47,
+      "frame_count": 99,
+      "seconds": 7.532846001000507,
+      "seed_stats": {
+        "motion_relink_tight_edges": 8163,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 47,
+        "motion_relink_edges": 8210
+      },
+      "prediction_count": 8456,
+      "source_nodes": 8456,
+      "flow_nodes": 8456,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 48,
+      "frame_count": 99,
+      "seconds": 3.829115565999018,
+      "seed_stats": {
+        "motion_relink_tight_edges": 5305,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 340,
+        "motion_relink_edges": 5645
+      },
+      "prediction_count": 5911,
+      "source_nodes": 5946,
+      "flow_nodes": 5911,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 35
+    },
+    {
+      "call_index": 49,
+      "frame_count": 99,
+      "seconds": 82.2028006519995,
+      "seed_stats": {
+        "motion_relink_tight_edges": 27658,
+        "motion_relink_relaxed_edges": 556,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 28214
+      },
+      "prediction_count": 29520,
+      "source_nodes": 29520,
+      "flow_nodes": 29520,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 50,
+      "frame_count": 99,
+      "seconds": 7.716233131999616,
+      "seed_stats": {
+        "motion_relink_tight_edges": 7970,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 122,
+        "motion_relink_edges": 8092
+      },
+      "prediction_count": 8370,
+      "source_nodes": 8370,
+      "flow_nodes": 8370,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 51,
+      "frame_count": 99,
+      "seconds": 83.12437543899978,
+      "seed_stats": {
+        "motion_relink_tight_edges": 28365,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 449,
+        "motion_relink_edges": 28814
+      },
+      "prediction_count": 29686,
+      "source_nodes": 29686,
+      "flow_nodes": 29686,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 52,
+      "frame_count": 99,
+      "seconds": 191.71733755099922,
+      "seed_stats": {
+        "motion_relink_tight_edges": 42733,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 312,
+        "motion_relink_edges": 43045
+      },
+      "prediction_count": 44956,
+      "source_nodes": 44956,
+      "flow_nodes": 44956,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 53,
+      "frame_count": 99,
+      "seconds": 51.01620603900119,
+      "seed_stats": {
+        "motion_relink_tight_edges": 20269,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 1179,
+        "motion_relink_edges": 21448
+      },
+      "prediction_count": 22693,
+      "source_nodes": 22693,
+      "flow_nodes": 22693,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 54,
+      "frame_count": 99,
+      "seconds": 155.32063352499972,
+      "seed_stats": {
+        "motion_relink_tight_edges": 38088,
+        "motion_relink_relaxed_edges": 345,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 38433
+      },
+      "prediction_count": 40591,
+      "source_nodes": 40592,
+      "flow_nodes": 40591,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 1
+    },
+    {
+      "call_index": 55,
+      "frame_count": 99,
+      "seconds": 7.597449552000398,
+      "seed_stats": {
+        "motion_relink_tight_edges": 8163,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 47,
+        "motion_relink_edges": 8210
+      },
+      "prediction_count": 8456,
+      "source_nodes": 8456,
+      "flow_nodes": 8456,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 56,
+      "frame_count": 99,
+      "seconds": 3.9523933550008223,
+      "seed_stats": {
+        "motion_relink_tight_edges": 5305,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 340,
+        "motion_relink_edges": 5645
+      },
+      "prediction_count": 5911,
+      "source_nodes": 5946,
+      "flow_nodes": 5911,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 35
+    },
+    {
+      "call_index": 57,
+      "frame_count": 99,
+      "seconds": 84.65366468899992,
+      "seed_stats": {
+        "motion_relink_tight_edges": 27658,
+        "motion_relink_relaxed_edges": 556,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 28214
+      },
+      "prediction_count": 29520,
+      "source_nodes": 29520,
+      "flow_nodes": 29520,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 58,
+      "frame_count": 99,
+      "seconds": 7.741971634000947,
+      "seed_stats": {
+        "motion_relink_tight_edges": 7970,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 122,
+        "motion_relink_edges": 8092
+      },
+      "prediction_count": 8370,
+      "source_nodes": 8370,
+      "flow_nodes": 8370,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 59,
+      "frame_count": 99,
+      "seconds": 85.83082132900017,
+      "seed_stats": {
+        "motion_relink_tight_edges": 28365,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 449,
+        "motion_relink_edges": 28814
+      },
+      "prediction_count": 29686,
+      "source_nodes": 29686,
+      "flow_nodes": 29686,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 60,
+      "frame_count": 99,
+      "seconds": 191.9389905930002,
+      "seed_stats": {
+        "motion_relink_tight_edges": 42733,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 312,
+        "motion_relink_edges": 43045
+      },
+      "prediction_count": 44956,
+      "source_nodes": 44956,
+      "flow_nodes": 44956,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 61,
+      "frame_count": 99,
+      "seconds": 51.06421868100006,
+      "seed_stats": {
+        "motion_relink_tight_edges": 20269,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 1179,
+        "motion_relink_edges": 21448
+      },
+      "prediction_count": 22693,
+      "source_nodes": 22693,
+      "flow_nodes": 22693,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 62,
+      "frame_count": 99,
+      "seconds": 156.30140118999952,
+      "seed_stats": {
+        "motion_relink_tight_edges": 38088,
+        "motion_relink_relaxed_edges": 345,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 38433
+      },
+      "prediction_count": 40591,
+      "source_nodes": 40592,
+      "flow_nodes": 40591,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 1
+    },
+    {
+      "call_index": 63,
+      "frame_count": 99,
+      "seconds": 7.535187833000236,
+      "seed_stats": {
+        "motion_relink_tight_edges": 8163,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 47,
+        "motion_relink_edges": 8210
+      },
+      "prediction_count": 8456,
+      "source_nodes": 8456,
+      "flow_nodes": 8456,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 64,
+      "frame_count": 99,
+      "seconds": 3.9289759820003383,
+      "seed_stats": {
+        "motion_relink_tight_edges": 5305,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 340,
+        "motion_relink_edges": 5645
+      },
+      "prediction_count": 5911,
+      "source_nodes": 5946,
+      "flow_nodes": 5911,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 35
+    },
+    {
+      "call_index": 65,
+      "frame_count": 99,
+      "seconds": 82.99212352699942,
+      "seed_stats": {
+        "motion_relink_tight_edges": 27658,
+        "motion_relink_relaxed_edges": 556,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 28214
+      },
+      "prediction_count": 29520,
+      "source_nodes": 29520,
+      "flow_nodes": 29520,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 66,
+      "frame_count": 99,
+      "seconds": 7.747751957000219,
+      "seed_stats": {
+        "motion_relink_tight_edges": 7970,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 122,
+        "motion_relink_edges": 8092
+      },
+      "prediction_count": 8370,
+      "source_nodes": 8370,
+      "flow_nodes": 8370,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 67,
+      "frame_count": 99,
+      "seconds": 86.00769059699996,
+      "seed_stats": {
+        "motion_relink_tight_edges": 28365,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 449,
+        "motion_relink_edges": 28814
+      },
+      "prediction_count": 29686,
+      "source_nodes": 29686,
+      "flow_nodes": 29686,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 68,
+      "frame_count": 99,
+      "seconds": 191.59026718099994,
+      "seed_stats": {
+        "motion_relink_tight_edges": 42676,
+        "motion_relink_relaxed_edges": 328,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 43004
+      },
+      "prediction_count": 44956,
+      "source_nodes": 44956,
+      "flow_nodes": 44956,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 69,
+      "frame_count": 99,
+      "seconds": 51.657252585000606,
+      "seed_stats": {
+        "motion_relink_tight_edges": 19928,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 1470,
+        "motion_relink_edges": 21398
+      },
+      "prediction_count": 22693,
+      "source_nodes": 22693,
+      "flow_nodes": 22693,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 70,
+      "frame_count": 99,
+      "seconds": 156.9703359539999,
+      "seed_stats": {
+        "motion_relink_tight_edges": 38000,
+        "motion_relink_relaxed_edges": 392,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 38392
+      },
+      "prediction_count": 40591,
+      "source_nodes": 40592,
+      "flow_nodes": 40591,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 1
+    },
+    {
+      "call_index": 71,
+      "frame_count": 99,
+      "seconds": 7.698735312000281,
+      "seed_stats": {
+        "motion_relink_tight_edges": 8153,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 55,
+        "motion_relink_edges": 8208
+      },
+      "prediction_count": 8456,
+      "source_nodes": 8456,
+      "flow_nodes": 8456,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 72,
+      "frame_count": 99,
+      "seconds": 4.021042635999038,
+      "seed_stats": {
+        "motion_relink_tight_edges": 5234,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 386,
+        "motion_relink_edges": 5620
+      },
+      "prediction_count": 5899,
+      "source_nodes": 5946,
+      "flow_nodes": 5899,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 47
+    },
+    {
+      "call_index": 73,
+      "frame_count": 99,
+      "seconds": 84.27269550900019,
+      "seed_stats": {
+        "motion_relink_tight_edges": 27582,
+        "motion_relink_relaxed_edges": 571,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 28153
+      },
+      "prediction_count": 29520,
+      "source_nodes": 29520,
+      "flow_nodes": 29520,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 74,
+      "frame_count": 99,
+      "seconds": 7.732429611000043,
+      "seed_stats": {
+        "motion_relink_tight_edges": 7929,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 156,
+        "motion_relink_edges": 8085
+      },
+      "prediction_count": 8370,
+      "source_nodes": 8370,
+      "flow_nodes": 8370,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 75,
+      "frame_count": 99,
+      "seconds": 85.9253212879994,
+      "seed_stats": {
+        "motion_relink_tight_edges": 28283,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 507,
+        "motion_relink_edges": 28790
+      },
+      "prediction_count": 29686,
+      "source_nodes": 29686,
+      "flow_nodes": 29686,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 76,
+      "frame_count": 99,
+      "seconds": 64.33392539899978,
+      "seed_stats": {
+        "motion_relink_tight_edges": 24139,
+        "motion_relink_relaxed_edges": 772,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 24911
+      },
+      "prediction_count": 25587,
+      "source_nodes": 25587,
+      "flow_nodes": 25587,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    },
+    {
+      "call_index": 77,
+      "frame_count": 99,
+      "seconds": 49.018129791998945,
+      "seed_stats": {
+        "motion_relink_tight_edges": 19236,
+        "motion_relink_relaxed_edges": 1076,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 20312
+      },
+      "prediction_count": 22375,
+      "source_nodes": 22380,
+      "flow_nodes": 22375,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 5
+    },
+    {
+      "call_index": 78,
+      "frame_count": 99,
+      "seconds": 4.34161083500112,
+      "seed_stats": {
+        "motion_relink_tight_edges": 5826,
+        "motion_relink_frames": 99,
+        "motion_relink_relaxed_edges": 194,
+        "motion_relink_edges": 6020
+      },
+      "prediction_count": 6248,
+      "source_nodes": 6249,
+      "flow_nodes": 6248,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 1
+    },
+    {
+      "call_index": 79,
+      "frame_count": 99,
+      "seconds": 462.1298472720009,
+      "seed_stats": {
+        "motion_relink_tight_edges": 65845,
+        "motion_relink_relaxed_edges": 2022,
+        "motion_relink_frames": 99,
+        "motion_relink_edges": 67867
+      },
+      "prediction_count": 70119,
+      "source_nodes": 70119,
+      "flow_nodes": 70119,
+      "global_seed_fallback": 0,
+      "no_local_fallback": 0
+    }
+  ],
+  "raw_f1_receipt_sha256": "72fa2df9265a50484abe0c44662ea6d1b08830368bf6e99c4ce4b2b7748325d3",
+  "json_suffix_observed": "'\\n'",
+  "schema_graph_weight_source_checks": "PASS",
+  "training_calls": 0,
+  "public_score": null
+}

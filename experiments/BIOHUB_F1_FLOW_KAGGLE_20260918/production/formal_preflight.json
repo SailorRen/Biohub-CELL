@@ -1,0 +1,31 @@
+{
+  "at_utc": "2026-09-20T01:20:11.237729+00:00",
+  "principal": "sailorren",
+  "competition": "biohub-cell-tracking-during-development",
+  "binding": {
+    "kernel_id": 134988494,
+    "version": 1,
+    "script_version_id": 351084196,
+    "source_sha256": "a7cb7f8a0da5b5055594779019ebb3ab688e3ce5916079d23b59574b628720b1"
+  },
+  "worker_status": "COMPLETE",
+  "user_has_entered": true,
+  "submissions_disabled": false,
+  "deadline": "2026-09-29 23:59:00+00:00",
+  "submission_list_complete": true,
+  "existing_f1": [],
+  "today_before": 0,
+  "daily_max": 5,
+  "g1": [
+    {
+      "ref": "56270217",
+      "description": "BIOHUB_SPRINT01_20260916 G1 V1 SV350197436",
+      "date": "2026-09-16 05:13:20.153000",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_score": "0.948",
+      "private_score": "",
+      "error_description": "",
+      "file_name": "submission.csv"
+    }
+  ]
+}

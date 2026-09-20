@@ -1,0 +1,23 @@
+{
+  "arm": "G1",
+  "weight_sha256": "0a1f9b93bb529e70f4f7c2ba0907eea8b4cecd2befccc8ba1fb75e569edf77a0",
+  "training_calls": 0,
+  "selected_label": "combo(tight55+relaxed9)",
+  "selected_config": {
+    "MOTION_RELINK_TIGHT_UM": 5.5,
+    "MOTION_RELINK_RELAXED_UM": 9.0
+  },
+  "calls": 80,
+  "test_calls": 8,
+  "test_datasets": [
+    "44b6_0113de3b",
+    "44b6_0b24845f",
+    "6bba_05b6850b",
+    "6bba_05db0fb1"
+  ],
+  "classifier_calls": 290,
+  "changed_calls": 8,
+  "submission_sha256": "da80c6aa879f1531a35088e029cf3f9658108265ee9c74d959d86e64182f6726",
+  "run_stats_sha256": "4f37b95985cecabc91001306b4b6b74899210cb2421b91599e35448e5631a959",
+  "hidden_configuration": "UNKNOWN"
+}

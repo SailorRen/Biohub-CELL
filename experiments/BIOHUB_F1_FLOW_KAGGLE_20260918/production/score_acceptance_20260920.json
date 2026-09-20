@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_F1_FORMAL_CLOSEOUT_20260920",
+  "goal": "核验固定生产V1实际输出并仅一次正式提交，准确记录评分或待评分，保护预算并回读GitHub",
+  "scope": {
+    "in_scope": [
+      "生产V1/SV351084196只读回收验收",
+      "最多一次正式code submission",
+      "同研究分支证据交付"
+    ],
+    "out_of_scope": [
+      "Save & Run",
+      "训练或模型重跑",
+      "Dataset写入",
+      "最终选择修改",
+      "main修改"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "acceptance": [
+    {
+      "id": "production-and-formal",
+      "type": "command",
+      "argv": [
+        "/opt/anaconda3/envs/ml/bin/python3",
+        "experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/production/verify_closeout.py"
+      ],
+      "cwd": ".",
+      "expected_exit": 0,
+      "timeout_seconds": 60
+    },
+    {
+      "id": "immutable-budget",
+      "type": "command",
+      "argv": [
+        "/opt/anaconda3/envs/ml/bin/python3",
+        "experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/recovery_20260919/verify_recovery.py"
+      ],
+      "cwd": ".",
+      "expected_exit": 0,
+      "timeout_seconds": 60
+    },
+    {
+      "id": "git",
+      "type": "git",
+      "repository": ".",
+      "require_commit": true,
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true
+    }
+  ]
+}

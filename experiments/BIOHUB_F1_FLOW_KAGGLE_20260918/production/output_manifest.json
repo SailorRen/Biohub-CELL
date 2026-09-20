@@ -1,0 +1,71 @@
+{
+  "status": "EXACT_VERSION_OUTPUT_COLLECTED",
+  "observed_at_utc": "2026-09-20T01:17:57.995108+00:00",
+  "binding": {
+    "kernel_id": 134988494,
+    "version": 1,
+    "script_version_id": 351084196,
+    "source_sha256": "a7cb7f8a0da5b5055594779019ebb3ab688e3ce5916079d23b59574b628720b1"
+  },
+  "source_after": {
+    "kernel_id": 134988494,
+    "version": 1,
+    "script_version_id": 351084196,
+    "source_sha256": "a7cb7f8a0da5b5055594779019ebb3ab688e3ce5916079d23b59574b628720b1"
+  },
+  "worker_status": "COMPLETE",
+  "inventory_count": 444,
+  "files": [
+    {
+      "file": "bidirectional_production_runtime_integrity.json",
+      "bytes": 2387,
+      "sha256": "ae41130ee035d3ddcbaf2d0977f721429a52ffda8133fe1b877f51de5926278d",
+      "local_path": "experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/production/output_v1/bidirectional_production_runtime_integrity.json"
+    },
+    {
+      "file": "f1_production_receipt.json",
+      "bytes": 2504657,
+      "sha256": "72fa2df9265a50484abe0c44662ea6d1b08830368bf6e99c4ce4b2b7748325d3",
+      "local_path": "downloads/BIOHUB_F1_FLOW_KAGGLE_20260918/production_v1/f1_production_receipt.json",
+      "storage_note": "Full 2.5 MB per-frame receipt ignored; all 80 calls verified, compact aggregates committed."
+    },
+    {
+      "file": "ppsweep_results.csv",
+      "bytes": 1601,
+      "sha256": "f66aa19871d08be832913715cecc36e9694660a74fa4bb0b2bcdd6579b035ee2",
+      "local_path": "experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/production/output_v1/ppsweep_results.csv"
+    },
+    {
+      "file": "ppsweep_selected.json",
+      "bytes": 407,
+      "sha256": "893c9ae37e183d976d6bddf6a72c249ff043642e3cf5ec308535d9216c1f6593",
+      "local_path": "experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/production/output_v1/ppsweep_selected.json"
+    },
+    {
+      "file": "run_stats.csv",
+      "bytes": 3198,
+      "sha256": "4f37b95985cecabc91001306b4b6b74899210cb2421b91599e35448e5631a959",
+      "local_path": "experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/production/output_v1/run_stats.csv"
+    },
+    {
+      "file": "sprint_production_receipt.json",
+      "bytes": 684,
+      "sha256": "ce22e0293444c9324d6ab3e70455922329815b3e31d7e0b05126bab7b9d26385",
+      "local_path": "experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/production/output_v1/sprint_production_receipt.json"
+    },
+    {
+      "file": "submission.csv",
+      "bytes": 12547146,
+      "sha256": "da80c6aa879f1531a35088e029cf3f9658108265ee9c74d959d86e64182f6726",
+      "local_path": "downloads/BIOHUB_F1_FLOW_KAGGLE_20260918/production_v1/submission.csv"
+    },
+    {
+      "file": "validator_results.csv",
+      "bytes": 9003,
+      "sha256": "fa612f544306875cb269933bdcf236dc36163d4d178d0fd9f874565793eb5ced",
+      "local_path": "experiments/BIOHUB_F1_FLOW_KAGGLE_20260918/production/output_v1/validator_results.csv"
+    }
+  ],
+  "kaggle_writes": 0,
+  "association": "current API source/version bracketed before and after; SV from verified UI edit-run binding"
+}

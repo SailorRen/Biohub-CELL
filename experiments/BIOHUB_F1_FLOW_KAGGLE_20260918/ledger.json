@@ -74,13 +74,13 @@
       "finished_at_utc": "2026-09-19T14:13:07.807934+00:00"
     }
   ],
-  "status": "PRODUCTION_RUNNING_AFTER_CACHE_RESCORE",
+  "status": "PRODUCTION_VERIFIED_READY_FOR_FORMAL",
   "training_calls": 0,
   "dataset_writes": 0,
   "formal_submission_requests": 0,
   "final_selection_changes": 0,
   "save_and_run_requests": 3,
-  "new_private_notebooks_confirmed": 1,
+  "new_private_notebooks_confirmed": 2,
   "new_private_notebook_creation_outcome": "Recovery V1 confirmed; first request remains UNKNOWN",
   "engineering_reserve_used": 1,
   "production_requests": 1,
@@ -96,7 +96,7 @@
   "recovery_status_checks_note": "Bounded SDK reads plus authenticated UI binding/log observations; no further checks in this session",
   "cache_recovery_status": "CACHE_RESCORE_VERIFIED",
   "cache_gate": "DIAGNOSTIC_MIXED_EXPLORATORY",
-  "production_stage": "RUNNING",
+  "production_stage": "ORDINARY_OUTPUT_VERIFIED",
   "production_bound": {
     "ref": "sailorren/biohub-f1-flow-prod-20260918",
     "kernel_id": 134988494,
@@ -105,7 +105,7 @@
     "source_sha256": "a7cb7f8a0da5b5055594779019ebb3ab688e3ce5916079d23b59574b628720b1"
   },
   "production_last_observed_at_utc": "20260919T141411Z",
-  "production_status_read_count": 1,
-  "formal_stage": "NOT_RUN_WAITING_FOR_PRODUCTION",
+  "production_status_read_count": 3,
+  "formal_stage": "NOT_RUN_READY_FOR_ONE_SUBMISSION",
   "public_score": null
 }
