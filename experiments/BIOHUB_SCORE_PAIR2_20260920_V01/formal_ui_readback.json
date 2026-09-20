@@ -1,0 +1,23 @@
+{
+  "observed_at_utc": "2026-09-20T23:29:30.874244+00:00",
+  "source": "Signed-in competition submissions DOM through cua_repl",
+  "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/submissions",
+  "selection_count": "0/2",
+  "selection_changes": 0,
+  "arms": {
+    "S50": {
+      "version": 1,
+      "script_version_id": 351350449,
+      "submission_id": 56407778,
+      "display_status": "Notebook Running",
+      "public": null
+    },
+    "G58": {
+      "version": 1,
+      "script_version_id": 351350591,
+      "submission_id": 56407804,
+      "display_status": "Notebook Running",
+      "public": null
+    }
+  }
+}

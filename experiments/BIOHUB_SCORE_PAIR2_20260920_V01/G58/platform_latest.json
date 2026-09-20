@@ -46,7 +46,8 @@
     "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
     "machineShape": "NvidiaTeslaT4"
   },
-  "submission_id": null,
+  "submission_id": 56407804,
   "public_score": null,
-  "formal_status": "NOT_SUBMITTED"
+  "formal_status": "PENDING",
+  "formal_observed_at_utc": "2026-09-20T23:28:31.306249+00:00"
 }

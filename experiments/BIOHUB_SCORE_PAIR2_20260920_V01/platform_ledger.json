@@ -50,16 +50,70 @@
       "last_kernel_status": "COMPLETE",
       "source_equal": true,
       "private": true
+    },
+    {
+      "action": "Submission",
+      "arm": "S50",
+      "request_id": "6e8d1e04-1202-4a44-ac03-bbdc1e1edbbf",
+      "ref": "sailorren/biohub-g1-secondary050-20260920",
+      "kernel_id": 135123707,
+      "version": 1,
+      "script_version_id": 351350449,
+      "source_commit": "1868c3126dc0f8960e20971bfa4217a5db40005b",
+      "csv_sha256": "39e2fbdd030173921dba9c865326c4adc28e5c53c53c38115d92751e834d69ea",
+      "description": "BIOHUB_SCORE_PAIR2_20260920_V01 S50 V1 SV351350449",
+      "at_utc": "2026-09-20T23:26:30.029543+00:00",
+      "at_shanghai": "2026-09-21T07:26:30.029564+08:00",
+      "status": "SUBMISSION_READBACK_VERIFIED",
+      "counted": 1,
+      "response": {
+        "ref": 56407778,
+        "message": ""
+      },
+      "submission_id": 56407778,
+      "finished_at_utc": "2026-09-20T23:26:32.165595+00:00",
+      "formal_status": "PENDING",
+      "public": null,
+      "observed_at_utc": "2026-09-20T23:28:31.306249+00:00",
+      "observed_at_shanghai": "2026-09-21T07:28:31.306249+08:00",
+      "public_score_raw": ""
+    },
+    {
+      "action": "Submission",
+      "arm": "G58",
+      "request_id": "797247c2-a6e9-4d57-9cf1-ad39d80221fa",
+      "ref": "sailorren/biohub-g1-gap058-20260920",
+      "kernel_id": 135123769,
+      "version": 1,
+      "script_version_id": 351350591,
+      "source_commit": "1868c3126dc0f8960e20971bfa4217a5db40005b",
+      "csv_sha256": "f2c6bee2000fe495251c0aacff106866e615122619317907f7146414121b72c8",
+      "description": "BIOHUB_SCORE_PAIR2_20260920_V01 G58 V1 SV351350591",
+      "at_utc": "2026-09-20T23:28:10.014214+00:00",
+      "at_shanghai": "2026-09-21T07:28:10.014236+08:00",
+      "status": "SUBMISSION_READBACK_VERIFIED",
+      "counted": 1,
+      "response": {
+        "ref": 56407804,
+        "message": ""
+      },
+      "submission_id": 56407804,
+      "finished_at_utc": "2026-09-20T23:28:12.586170+00:00",
+      "formal_status": "PENDING",
+      "public": null,
+      "observed_at_utc": "2026-09-20T23:28:31.306249+00:00",
+      "observed_at_shanghai": "2026-09-21T07:28:31.306249+08:00",
+      "public_score_raw": ""
     }
   ],
   "counts": {
     "new_private_notebooks": 2,
     "save_and_run": 2,
-    "formal_submission": 0,
+    "formal_submission": 2,
     "training": 0,
     "dataset_write": 0,
     "final_selection_change": 0,
     "v1_f1_write": 0
   },
-  "status": "PLATFORM_READBACK_RECORDED"
+  "status": "FORMAL_PAIR_ACCEPTED_SCORE_PENDING"
 }

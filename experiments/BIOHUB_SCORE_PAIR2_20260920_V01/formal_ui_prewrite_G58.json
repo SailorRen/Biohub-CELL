@@ -1,14 +1,17 @@
 {
-  "observed_at_utc": "2026-09-20T23:25:10.660309+00:00",
+  "observed_at_utc": "2026-09-20T23:28:02.717381+00:00",
   "account": "sailorren",
   "competition": "biohub-cell-tracking-during-development",
   "gpu_available_minutes": 979,
   "gpu_ui_text": "16h 19m available of 30h",
   "active_ordinary_kernels": 0,
-  "active_events_ui_text": "No Active Events; 0 Active Events",
+  "active_events_ui_text": "1 Active Event: Competition submission Scoring...",
   "submission_control_enabled": true,
   "concurrency_block_notice": false,
-  "existing_pair_submissions_seen": false,
+  "existing_pair_submissions_seen": [
+    "S50 V1 SV351350449; Notebook Running"
+  ],
   "daily_reset_time": "UNKNOWN; API counter checked immediately before each request",
-  "source": "Signed-in competition submissions page and account quota menu via cua_repl"
+  "source": "Signed-in competition submissions page and account quota menu via cua_repl",
+  "active_formal_submissions": 1
 }

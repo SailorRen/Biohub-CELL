@@ -1,11 +1,11 @@
 {
-  "observed_at_utc": "2026-09-20T23:25:36.841033+00:00",
-  "task_delivery": "PENDING_UPDATED_PAYLOAD_READBACK",
-  "execution": "ORDINARY_COMPLETE_OUTPUT_CHECKED",
+  "observed_at_utc": "2026-09-20T23:29:30.874244+00:00",
+  "task_delivery": "FINAL_PAYLOAD_READBACK_PENDING",
+  "execution": "FORMAL_PAIR_ACCEPTED",
   "observation_paused_by_user": false,
   "resume_condition": "User notified completion and authorized resumption",
   "platform_runs_cancelled": false,
-  "score": "NOT_SUBMITTED",
+  "score": "SCORE_PENDING",
   "contract_sha256": "a1cbf0c88508203932a74ef36e9684e4ca231b64f9b57f9fcfdd92e74d19d918",
   "completed_checks": [
     "fixed task identity",
@@ -16,8 +16,7 @@
     "actual CSV independent schema/graph/official roundtrip/config checks and distinct pair hashes"
   ],
   "remaining": [
-    "formal submission requests and ID readback",
-    "final payload delivery"
+    "Public results pending; no automatic retry or new run"
   ],
   "arms": {
     "S50": {
@@ -25,26 +24,30 @@
       "version": 1,
       "script_version_id": 351350449,
       "kernel_status": "COMPLETE",
-      "submission_id": null,
+      "submission_id": 56407778,
       "public_score": null,
-      "formal_status": "NOT_SUBMITTED",
-      "observed_at_shanghai": "2026-09-21T07:21:37.443674+08:00"
+      "formal_status": "PENDING",
+      "observed_at_shanghai": "2026-09-21T07:21:37.443674+08:00",
+      "public_score_raw": "",
+      "formal_observed_at_shanghai": "2026-09-21T07:28:31.306249+08:00"
     },
     "G58": {
       "kernel_id": 135123769,
       "version": 1,
       "script_version_id": 351350591,
       "kernel_status": "COMPLETE",
-      "submission_id": null,
+      "submission_id": 56407804,
       "public_score": null,
-      "formal_status": "NOT_SUBMITTED",
-      "observed_at_shanghai": "2026-09-21T07:21:40.053287+08:00"
+      "formal_status": "PENDING",
+      "observed_at_shanghai": "2026-09-21T07:21:40.053287+08:00",
+      "public_score_raw": "",
+      "formal_observed_at_shanghai": "2026-09-21T07:28:31.306249+08:00"
     }
   },
   "counts": {
     "new_private_notebooks": 2,
     "save_and_run": 2,
-    "formal_submission": 0,
+    "formal_submission": 2,
     "training": 0,
     "dataset_write": 0,
     "final_selection_change": 0,
