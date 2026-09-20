@@ -1,9 +1,9 @@
 {
   "task_id": "BIOHUB_DIVGATE_PAIR_20260920_V01",
-  "observed_at_shanghai": "2026-09-20T14:52:21.765921+08:00",
-  "observed_at_utc": "2026-09-20T06:52:21.765921+00:00",
+  "observed_at_shanghai": "2026-09-20T22:35:07.630540+08:00",
+  "observed_at_utc": "2026-09-20T14:35:07.630540+00:00",
   "execution_status": "FORMAL_SUBMITTED_VERIFIED",
-  "score_status": "SCORE_PENDING",
+  "score_status": "COMPLETE",
   "delivery_status": "SEE_FIXED_COMMIT_GITHUB_READBACK",
   "arms": {
     "A18": {
@@ -56,9 +56,9 @@
           "machineShape": "NvidiaTeslaT4"
         },
         "submission_id": 56383942,
-        "public_score": null,
-        "formal_status": "PENDING",
-        "formal_observed_at_utc": "2026-09-20T06:52:21.765921+00:00"
+        "public_score": 0.948,
+        "formal_status": "COMPLETE",
+        "formal_observed_at_utc": "2026-09-20T14:35:07.630540+00:00"
       },
       "production_receipt_status": "INDEPENDENTLY_VERIFIED",
       "receipt_engineering_status": "PASS",
@@ -183,10 +183,10 @@
         "6bba_085bf656": "TRAIN_SEEN_DIAGNOSTIC",
         "6bba_09961292": "TRAIN_SEEN_DIAGNOSTIC"
       },
-      "public_score": null,
+      "public_score": 0.948,
       "submission_id": 56383942,
-      "formal_status": "PENDING",
-      "formal_observed_at_utc": "2026-09-20T06:52:21.765921+00:00"
+      "formal_status": "COMPLETE",
+      "formal_observed_at_utc": "2026-09-20T14:35:07.630540+00:00"
     },
     "B22": {
       "binding": {
@@ -238,9 +238,9 @@
           "machineShape": "NvidiaTeslaT4"
         },
         "submission_id": 56384003,
-        "public_score": null,
-        "formal_status": "PENDING",
-        "formal_observed_at_utc": "2026-09-20T06:52:21.765921+00:00"
+        "public_score": 0.948,
+        "formal_status": "COMPLETE",
+        "formal_observed_at_utc": "2026-09-20T14:35:07.630540+00:00"
       },
       "production_receipt_status": "INDEPENDENTLY_VERIFIED",
       "receipt_engineering_status": "PASS",
@@ -365,10 +365,10 @@
         "6bba_085bf656": "TRAIN_SEEN_DIAGNOSTIC",
         "6bba_09961292": "TRAIN_SEEN_DIAGNOSTIC"
       },
-      "public_score": null,
+      "public_score": 0.948,
       "submission_id": 56384003,
-      "formal_status": "PENDING",
-      "formal_observed_at_utc": "2026-09-20T06:52:21.765921+00:00"
+      "formal_status": "COMPLETE",
+      "formal_observed_at_utc": "2026-09-20T14:35:07.630540+00:00"
     }
   },
   "counts": {
@@ -381,8 +381,8 @@
     "v1_f1_write": 0
   },
   "limitations": [
-    "Eight diagnostic FOVs represent two embryos and overlap secondary training; diagnostic score is not Public.",
-    "Both formal submissions are PENDING, Public null at the stated observation; no score or improvement claim.",
-    "No automatic monitoring or additional platform writes authorized by this closeout."
+    "Public/API exposed precision is 0.948 for G1, F1, A18, B22; strict score ordering is UNKNOWN.",
+    "UI auto-selection candidates are G1 and F1, manual selection count 0/2; this does not prove strict numerical superiority.",
+    "Eight diagnostic FOVs overlap secondary training; no independent generalization claim."
   ]
 }

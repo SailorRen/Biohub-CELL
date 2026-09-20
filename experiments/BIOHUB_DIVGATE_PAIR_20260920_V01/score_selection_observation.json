@@ -1,0 +1,21 @@
+{
+  "observed_at_shanghai": "2026-09-20 22:35-22:36 +08:00",
+  "fact_class": "OFFICIAL_FACT",
+  "source": "signed-in submissions page screenshot and competition rules AX text",
+  "submissions_url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/submissions",
+  "rules_url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/rules",
+  "manual_selected_count": 0,
+  "final_submission_limit": 2,
+  "automatic_candidate_ids": [
+    56375774,
+    56270217
+  ],
+  "not_automatic_candidate_ids": [
+    56383942,
+    56384003
+  ],
+  "rule_summary": "Up to two final submissions; if fewer selected, Kaggle automatically chooses best scoring submissions. Winner tie rule favors earlier entry; exact within-account automatic selection tie implementation not verified.",
+  "strict_score_order": "UNKNOWN",
+  "interpretation": "No exposed Public improvement and no replacement of automatic candidates. Hidden-decimal difference and exact tie cannot be distinguished from current evidence.",
+  "platform_writes": 0
+}

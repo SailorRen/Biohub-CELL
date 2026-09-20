@@ -1,0 +1,31 @@
+{
+  "observed_at_utc": "2026-09-20T14:36:08.865437+00:00",
+  "rows": [
+    {
+      "id": 56384003,
+      "description": "BIOHUB_DIVGATE_PAIR_20260920_V01 B22 V1 SV351207989",
+      "public_score_raw": "0.948",
+      "status": "SubmissionStatus.COMPLETE"
+    },
+    {
+      "id": 56383942,
+      "description": "BIOHUB_DIVGATE_PAIR_20260920_V01 A18 V1 SV351207161",
+      "public_score_raw": "0.948",
+      "status": "SubmissionStatus.COMPLETE"
+    },
+    {
+      "id": 56375774,
+      "description": "BIOHUB_F1_FLOW_KAGGLE_20260918 F1 V1 SV351084196",
+      "public_score_raw": "0.948",
+      "status": "SubmissionStatus.COMPLETE"
+    },
+    {
+      "id": 56270217,
+      "description": "BIOHUB_SPRINT01_20260916 G1 V1 SV350197436",
+      "public_score_raw": "0.948",
+      "status": "SubmissionStatus.COMPLETE"
+    }
+  ],
+  "next_page_token_present": false,
+  "platform_writes": 0
+}

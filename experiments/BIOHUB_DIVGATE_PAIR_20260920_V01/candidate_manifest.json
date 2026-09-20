@@ -74,9 +74,9 @@
     "version": 1,
     "script_version_id": 351084196,
     "submission_id": 56375774,
-    "status": "SCORE_PENDING",
-    "public": null,
-    "source": "preflight_initial.json"
+    "status": "COMPLETE",
+    "public": 0.948,
+    "source": "score_raw_readback.json"
   },
   "status_scope": "Build-time status retained; current platform facts are under execution_bindings and per-arm platform_latest.json",
   "execution_bindings": {
@@ -129,9 +129,9 @@
         "machineShape": "NvidiaTeslaT4"
       },
       "submission_id": 56383942,
-      "public_score": null,
-      "formal_status": "PENDING",
-      "formal_observed_at_utc": "2026-09-20T06:52:21.765921+00:00"
+      "public_score": 0.948,
+      "formal_status": "COMPLETE",
+      "formal_observed_at_utc": "2026-09-20T14:35:07.630540+00:00"
     },
     "B22": {
       "arm": "B22",
@@ -182,9 +182,9 @@
         "machineShape": "NvidiaTeslaT4"
       },
       "submission_id": 56384003,
-      "public_score": null,
-      "formal_status": "PENDING",
-      "formal_observed_at_utc": "2026-09-20T06:52:21.765921+00:00"
+      "public_score": 0.948,
+      "formal_status": "COMPLETE",
+      "formal_observed_at_utc": "2026-09-20T14:35:07.630540+00:00"
     }
   }
 }

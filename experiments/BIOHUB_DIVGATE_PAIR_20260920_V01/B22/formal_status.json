@@ -1,15 +1,15 @@
 {
   "submission_id": 56384003,
   "description": "BIOHUB_DIVGATE_PAIR_20260920_V01 B22 V1 SV351207989",
-  "status": "PENDING",
-  "public": null,
+  "status": "COMPLETE",
+  "public": 0.948,
   "date": "2026-09-20 06:52:08.977000",
   "error_description": null,
   "ref": "sailorren/biohub-g1-divgate022-20260920",
   "kernel_id": 135052315,
   "version": 1,
   "script_version_id": 351207989,
-  "observed_at_utc": "2026-09-20T06:52:21.765921+00:00",
-  "observed_at_shanghai": "2026-09-20T14:52:21.765921+08:00",
-  "score_status": "SCORE_PENDING"
+  "observed_at_utc": "2026-09-20T14:35:07.630540+00:00",
+  "observed_at_shanghai": "2026-09-20T22:35:07.630540+08:00",
+  "score_status": "COMPLETE"
 }
