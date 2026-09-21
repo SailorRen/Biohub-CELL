@@ -74,8 +74,8 @@
       "finished_at_utc": "2026-09-21T04:21:30.159875+00:00",
       "formal_status": "PENDING",
       "public": null,
-      "observed_at_utc": "2026-09-21T06:34:12.473447+00:00",
-      "observed_at_shanghai": "2026-09-21T14:34:12.473447+08:00"
+      "observed_at_utc": "2026-09-21T06:37:03.844958+00:00",
+      "observed_at_shanghai": "2026-09-21T14:37:03.844958+08:00"
     },
     {
       "action": "Submission",
@@ -100,8 +100,8 @@
       "finished_at_utc": "2026-09-21T04:21:52.219289+00:00",
       "formal_status": "PENDING",
       "public": null,
-      "observed_at_utc": "2026-09-21T06:34:12.473447+00:00",
-      "observed_at_shanghai": "2026-09-21T14:34:12.473447+08:00"
+      "observed_at_utc": "2026-09-21T06:37:03.844958+00:00",
+      "observed_at_shanghai": "2026-09-21T14:37:03.844958+08:00"
     },
     {
       "action": "SaveAndRun",
@@ -128,12 +128,38 @@
       "last_kernel_status": "COMPLETE",
       "source_equal": true,
       "private": true
+    },
+    {
+      "action": "Submission",
+      "arm": "H30",
+      "request_id": "573f6e80-a864-4e0d-abd1-8e600761ab1e",
+      "ref": "sailorren/biohub-g1-harmonic030-20260921",
+      "kernel_id": 135183277,
+      "version": 1,
+      "script_version_id": 351467088,
+      "source_commit": "5db7d26cc48d1a5127d169f0e9ac47d3e0076b1e",
+      "csv_sha256": "82d2e10f59424ac62b66d662421e93a33f3d4889173d58e6494a9ce37493effd",
+      "description": "BIOHUB_SCORE_TRIO_20260921_V01 H30 V1 SV351467088",
+      "at_utc": "2026-09-21T06:36:47.777279+00:00",
+      "at_shanghai": "2026-09-21T14:36:47.777292+08:00",
+      "status": "SUBMISSION_READBACK_VERIFIED",
+      "counted": 1,
+      "response": {
+        "ref": 56419440,
+        "message": ""
+      },
+      "submission_id": 56419440,
+      "finished_at_utc": "2026-09-21T06:36:49.622268+00:00",
+      "formal_status": "PENDING",
+      "public": null,
+      "observed_at_utc": "2026-09-21T06:37:03.844958+00:00",
+      "observed_at_shanghai": "2026-09-21T14:37:03.844958+08:00"
     }
   ],
   "counts": {
     "new_private_notebooks": 3,
     "save_and_run": 3,
-    "formal_submission": 2,
+    "formal_submission": 3,
     "training": 0,
     "dataset_write": 0,
     "final_selection_change": 0,
