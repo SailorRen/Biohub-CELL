@@ -1,12 +1,12 @@
 {
-  "observed_at_utc": "2026-09-21T04:03:52.318908+00:00",
+  "observed_at_utc": "2026-09-21T04:23:14.391445+00:00",
   "task_delivery": "PAYLOAD_BYTES_VERIFIED",
-  "execution": "ORDINARY_PAIR_COMPLETE_H30_NOT_STARTED",
-  "score": "NOT_SUBMITTED",
+  "execution": "D960_R00_SUBMITTED_H30_RUNNING",
+  "score": "SCORE_PENDING",
   "counts": {
-    "new_private_notebooks": 2,
-    "save_and_run": 2,
-    "formal_submission": 0,
+    "new_private_notebooks": 3,
+    "save_and_run": 3,
+    "formal_submission": 2,
     "training": 0,
     "dataset_write": 0,
     "final_selection_change": 0,
@@ -15,8 +15,8 @@
   "arms": {
     "D960": {
       "arm": "D960",
-      "observed_at_utc": "2026-09-21T04:03:48.376163+00:00",
-      "observed_at_shanghai": "2026-09-21T12:03:48.376163+08:00",
+      "observed_at_utc": "2026-09-21T04:23:08.006359+00:00",
+      "observed_at_shanghai": "2026-09-21T12:23:08.006359+08:00",
       "writes": 0,
       "ref": "sailorren/biohub-g1-det0960-20260921",
       "kernel_id": 135169669,
@@ -36,7 +36,7 @@
         "title": "biohub-g1-det0960-20260921",
         "author": "Sailor Ren",
         "slug": "biohub-g1-det0960-20260921",
-        "lastRunTime": "2026-09-18T04:03:47.735Z",
+        "lastRunTime": "2026-09-18T04:23:07.375Z",
         "language": "python",
         "kernelType": "notebook",
         "isPrivate": true,
@@ -61,14 +61,15 @@
         "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
         "machineShape": "NvidiaTeslaT4"
       },
-      "submission_id": null,
+      "submission_id": 56416049,
       "public_score": null,
-      "formal_status": "NOT_SUBMITTED"
+      "formal_status": "PENDING",
+      "formal_observed_at_utc": "2026-09-21T04:23:14.391445+00:00"
     },
     "R00": {
       "arm": "R00",
-      "observed_at_utc": "2026-09-21T04:03:50.447646+00:00",
-      "observed_at_shanghai": "2026-09-21T12:03:50.447646+08:00",
+      "observed_at_utc": "2026-09-21T04:23:10.092352+00:00",
+      "observed_at_shanghai": "2026-09-21T12:23:10.092352+08:00",
       "writes": 0,
       "ref": "sailorren/biohub-g1-rescue-trigger000-20260921",
       "kernel_id": 135169776,
@@ -88,7 +89,60 @@
         "title": "biohub-g1-rescue-trigger000-20260921",
         "author": "Sailor Ren",
         "slug": "biohub-g1-rescue-trigger000-20260921",
-        "lastRunTime": "2026-09-18T04:03:50.019Z",
+        "lastRunTime": "2026-09-18T04:23:09.182Z",
+        "language": "python",
+        "kernelType": "notebook",
+        "isPrivate": true,
+        "enableGpu": true,
+        "enableInternet": false,
+        "categoryIds": [
+          "gpu"
+        ],
+        "datasetDataSources": [
+          "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+          "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+          "pilkwang/biohub-tracking-support-pack-50ep-v1"
+        ],
+        "kernelDataSources": [
+          "sailorren/biohub-division-train-20260914"
+        ],
+        "competitionDataSources": [
+          "biohub-cell-tracking-during-development"
+        ],
+        "enableTpu": false,
+        "currentVersionNumber": 1,
+        "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+        "machineShape": "NvidiaTeslaT4"
+      },
+      "submission_id": 56416053,
+      "public_score": null,
+      "formal_status": "PENDING",
+      "formal_observed_at_utc": "2026-09-21T04:23:14.391445+00:00"
+    },
+    "H30": {
+      "arm": "H30",
+      "observed_at_utc": "2026-09-21T04:23:11.773616+00:00",
+      "observed_at_shanghai": "2026-09-21T12:23:11.773616+08:00",
+      "writes": 0,
+      "ref": "sailorren/biohub-g1-harmonic030-20260921",
+      "kernel_id": 135183277,
+      "version": 1,
+      "script_version_id": 351467088,
+      "script_version_id_source": "signed-in notebook edit/run link, observed without opening editor",
+      "kernel_status": "RUNNING",
+      "private": true,
+      "source_equal": true,
+      "source_comparison": "all cells type and source; platform JSON serialization differs",
+      "local_notebook_sha256": "fab2980c4f737555bcc6bf406953dd7dbed5d463bcb40bbb12bc2a593151de8d",
+      "remote_notebook_sha256": "7e771e81abf100242a78a40e047a01e9aa8c0af1e8a071d83bdee075d3354946",
+      "cell_count": 14,
+      "metadata": {
+        "id": 135183277,
+        "ref": "sailorren/biohub-g1-harmonic030-20260921",
+        "title": "biohub-g1-harmonic030-20260921",
+        "author": "Sailor Ren",
+        "slug": "biohub-g1-harmonic030-20260921",
+        "lastRunTime": "2026-09-18T04:23:11.376Z",
         "language": "python",
         "kernelType": "notebook",
         "isPrivate": true,
@@ -116,28 +170,19 @@
       "submission_id": null,
       "public_score": null,
       "formal_status": "NOT_SUBMITTED"
-    },
-    "H30": {
-      "arm": "H30",
-      "ref": "sailorren/biohub-g1-harmonic030-20260921",
-      "kernel_id": null,
-      "version": null,
-      "script_version_id": null,
-      "kernel_status": "NOT_STARTED",
-      "formal_status": "NOT_SUBMITTED",
-      "submission_id": null,
-      "public_score": null,
-      "reason": "No launch request in ledger; previous two ordinary runs now COMPLETE. This observation turn made no platform writes.",
-      "observed_at_utc": "2026-09-21T04:03:52.318908+00:00"
     }
   },
   "checks": {
     "budget": "PASS",
     "exact_sources": "PASS",
     "existing_changed_path_tests": 5,
-    "actual_csv_checks": "NOT_RUN",
-    "formal_requests": 0
+    "actual_csv_checks": {
+      "D960": "PASS",
+      "R00": "PASS",
+      "H30": "NOT_RUN_ORDINARY_RUNNING"
+    },
+    "formal_requests": 2
   },
-  "next": "Read existing run status; collect and check actual CSV of completed arms; submit each eligible arm once; launch already frozen H30 when slot exists. No background scheduler.",
-  "platform_writes_this_observation": 0
+  "next": "H30 exact V1 SV351467088: when ordinary COMPLETE collect actual outputs, check, submit once if eligible. D960/R00/S50/G58 read only scores. No relaunch and no background timer.",
+  "platform_writes_this_observation": 3
 }

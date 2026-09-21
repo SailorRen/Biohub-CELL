@@ -1,6 +1,6 @@
 # BIOHUB_SCORE_TRIO_20260921_V01
 
-同批续执行，流程以固定 7ef58d77f7654648684616d653252f4aa688ccb1 的精简指令为准；算法及输入按固定 2f1ac2572a7849a7ac7685d0d0f820dff9e079ad 原任务。task_delivery=SOURCE_BYTES_VERIFIED（最新回执同步范围见 github_readback.json）；execution=ORDINARY_PAIR_COMPLETE_H30_NOT_STARTED；score=NOT_SUBMITTED。任务尚未整体完成。
+同批续执行，流程以固定 7ef58d77f7654648684616d653252f4aa688ccb1 的精简指令为准；算法及输入按固定 2f1ac2572a7849a7ac7685d0d0f820dff9e079ad 原任务。task_delivery=SOURCE_BYTES_VERIFIED（最新回执同步范围见 github_readback.json）；execution=D960_R00_SUBMITTED_H30_RUNNING；score=SCORE_PENDING。任务尚未整体完成。
 
 G1 固定母版 e9c7c63b896812660a78ec55fc3284c10f85e776，Notebook SHA-256 de010e6ba142be0e01000093e061ef7d3388ddaa411185b40d26c63a3febe731。工具复用 d1fa52dd66f598bb85be8ca60d7891a3cf049017，输入、三份推理权重及 G1 gate 权重未变。三臂源码已构建；5 项改动路径 CPU 短测试通过，所有代码单元解析通过。未启动独立诊断、训练或重复母版推理。
 
@@ -9,17 +9,17 @@ G1 固定母版 e9c7c63b896812660a78ec55fc3284c10f85e776，Notebook SHA-256 de01
 |G1|既有母版|V1 / 350197436|56270217|0.948|COMPLETE|
 |S50|仅只读|V1 / 351350449|56407778|null|SCORE_PENDING|
 |G58|仅只读|V1 / 351350591|56407804|null|SCORE_PENDING|
-|D960|检测阈值 0.965→0.960|V1 / 351441983|null|null|普通 COMPLETE；NOT_SUBMITTED|
-|R00|最终短轨救援启动比例 0.10→0.00|V1 / 351442164|null|null|普通 COMPLETE；NOT_SUBMITTED|
-|H30|反向关联 harmonic 权重 0.15→0.30|null|null|null|NOT_STARTED；NOT_SUBMITTED|
+|D960|检测阈值 0.965→0.960|V1 / 351441983|56416049|空字符串 / null|SCORE_PENDING|
+|R00|最终短轨救援启动比例 0.10→0.00|V1 / 351442164|56416053|空字符串 / null|SCORE_PENDING|
+|H30|反向关联 harmonic 权重 0.15→0.30|V1 / 351467088|null|null|普通 RUNNING；NOT_SUBMITTED|
 
 首次平台对账时间 UTC 2026-09-21 01:41:49（上海09:41:49），已枚举93个自有 Notebook，无三个指定slug，也无其正式提交。当前UTC日已用0/5，不将上海午夜当重置依据；GPU UI可用16h19m/30h，SDK totalTimeAllowed=6h 与UI不一致，保留原始小型记录。两项活跃事件均为 S50/G58 正式评分，普通运行0。ListSubmissions 首次传返回的 competition.ref 得到403，纠正为固定比赛slug后成功；未产生写请求。
 
-唯一冻结记录 batch_manifest.json，唯一请求账本 platform_ledger.json。累计 Notebook 2/3、Save & Run 2/4（共享修复未用）、正式 submission 0/3且每臂最多1。训练、Dataset、最终选择、已有Notebook修改或取消为0。保留的两个额外提交名额未动用。
+唯一冻结记录 batch_manifest.json，唯一请求账本 platform_ledger.json。累计 Notebook 3/3、Save & Run 3/4（共享修复未用）、正式 submission 2/3且每臂最多1。训练、Dataset、最终选择、已有Notebook修改或取消为0。保留的两个额外提交名额未动用。
 
 必要实现：D960 精确更新初始化赋值及对应守卫，worker记录其实际检测阈值；H30 更新两处守卫并在实际 harmonic 使用点记录消费权重，公式、校准和TTA保持；R00 在原选择后直接设置消费全局值，原始预测图重新后处理，保留质量筛选和逐调用预算，记录实际救援决策。每个候选只继承原选择算法，不新增选项。附加回执不冒充正式分数。
 
-## 本次实际请求与续接
+## 首次执行记录（历史快照）
 
 冻结源码提交 1cf89f1f9380f005d98e9cb15ca9f5d80c4ebaca，启动前29文件远端逐字节回读一致（source_github_readback.json）。三臂候选源码、runtime、build、manifest 此后未变；只修复本地续接脚本对后续账本提交的识别，继续复用已回读的冻结源码，不重复启动或冻结。
 
@@ -38,3 +38,17 @@ G1 固定母版 e9c7c63b896812660a78ec55fc3284c10f85e776，Notebook SHA-256 de01
 D960、R00 的精确 V1 普通运行均为 COMPLETE，完整代码单元仍与冻结源码一致。正式列表中没有三臂 submission；两臂仍为 NOT_SUBMITTED / Public=null，实际 CSV 复核为 NOT_RUN。H30 账本无启动请求；此前两项普通运行已结束，本次未探测剩余额度或启动 H30。
 
 S50（56407778 / SV351350449）、G58（56407804 / SV351350591）API均为PENDING，原始Public为空字符串，归一化null；登录态比赛页面同时显示Notebook Running。本次未发送任何平台写请求，累计预算不变。更新仅记录已观测结果，不代表整个续执行任务完成。
+
+## 2026-09-21 正式提交续执行结果
+
+依据固定 cb527d031b73c9929bcbf719c97bec84e262ff16 的 FINISH_SUBMISSIONS 指令完成就绪动作。最新正式观测上海2026-09-21 12:23:14，普通状态时间见各臂platform_latest.json。
+
+- D960：实际V1 CSV 242281行，4个当次发现样本；原始字节SHA256 6994fb4bf97d91f8af0b7ed7a22a706a066e64493c68c38dcc7a83f7032d58f1。独立schema、图结构、官方reader往返、回执哈希、模型加载、实际检测阈值0.960及非重复检查PASS。相对既有G1输出净增504节点；跨运行输入字节身份未重新建立，因此不将差异解释为确定因果或精度收益，节点重编号也会影响边ID差异数。12:21:28发送唯一正式请求，submission56416049 / V1 / SV351441983；只读回读PENDING，原始Public=""，归一化null。
+- R00：实际V1 CSV 241905行，4个当次发现样本；原始字节SHA256 aa7ff235693942314f56ad7581462ed9237c15550b003ac1f6c33a3ab395fc14。相同独立检查PASS；实际最终触发阈值0.00，同运行未经最终后处理的输入图哈希不变，保留质量筛选和每调用<=120节点预算。相对同运行G1增加349节点、271边，无删除边；不同于D960和既有提交输出。12:21:49发送唯一正式请求，submission56416053 / V1 / SV351442164；PENDING，原始Public=""，归一化null。
+- H30：实时账号sailorren，GPU UI余额12h6m，普通活跃0；启动器重新完整枚举自有Notebook及精确slug，确认未创建；重新读取比赛与当日额度。12:22:22唯一计划Save & Run；Kernel135183277 / V1 / SV351467088，私有GPU T4x2、Internet关闭，完整14单元源码与冻结版本一致，普通RUNNING。实际最终CSV尚不可复核，因此NOT_SUBMITTED，submission=null、原始Public=null。直接待办条件是该精确普通版本尚未COMPLETE，不是旧的槽位等待或平台拒绝。
+
+S50（56407778 / V1 / SV351350449）、G58（56407804 / V1 / SV351350591）只读回读仍PENDING，原始Public=""；G1（56270217 / V1 / SV350197436）COMPLETE，原始Public="0.948"。本轮未重新检查旧G1/S50/G58 CSV，引用既有提交证据。无新正式分数，尚不能比较提升。
+
+累计Notebook3/3、Save & Run3/4、正式submission2/3；共享工程备用1次未用，H30正式请求尚余1次。训练、Dataset写入、最终选择修改、额外G1推理均0。所有请求均已在发送前计账，D960/R00禁止重提，H30禁止重复启动。两份实际CSV和完整日志留在/private/tmp/score-trio-private/，Git仅保存小型检查与请求回执。
+
+下一步仅续接H30完成后的实际CSV复核及合格时一次正式提交；其余四个已有正式submission只读查分。不为等待Public延长会话，不建立后台定时器；此报告同步不表示三臂整体执行完成。

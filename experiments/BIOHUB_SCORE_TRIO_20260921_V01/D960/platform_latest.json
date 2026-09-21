@@ -1,7 +1,7 @@
 {
   "arm": "D960",
-  "observed_at_utc": "2026-09-21T04:18:07.638294+00:00",
-  "observed_at_shanghai": "2026-09-21T12:18:07.638294+08:00",
+  "observed_at_utc": "2026-09-21T04:23:08.006359+00:00",
+  "observed_at_shanghai": "2026-09-21T12:23:08.006359+08:00",
   "writes": 0,
   "ref": "sailorren/biohub-g1-det0960-20260921",
   "kernel_id": 135169669,
@@ -21,7 +21,7 @@
     "title": "biohub-g1-det0960-20260921",
     "author": "Sailor Ren",
     "slug": "biohub-g1-det0960-20260921",
-    "lastRunTime": "2026-09-18T04:18:06.374Z",
+    "lastRunTime": "2026-09-18T04:23:07.375Z",
     "language": "python",
     "kernelType": "notebook",
     "isPrivate": true,
@@ -46,7 +46,8 @@
     "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
     "machineShape": "NvidiaTeslaT4"
   },
-  "submission_id": null,
+  "submission_id": 56416049,
   "public_score": null,
-  "formal_status": "NOT_SUBMITTED"
+  "formal_status": "PENDING",
+  "formal_observed_at_utc": "2026-09-21T04:23:14.391445+00:00"
 }

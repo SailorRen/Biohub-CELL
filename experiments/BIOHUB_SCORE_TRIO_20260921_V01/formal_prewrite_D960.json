@@ -1,0 +1,61 @@
+{
+  "observed_at_utc": "2026-09-21T04:21:27.572360+00:00",
+  "account": "sailorren",
+  "competition": "biohub-cell-tracking-during-development",
+  "competition_id": 136605,
+  "daily_used": 0,
+  "daily_max": 5,
+  "quota": {
+    "quotaRefreshTime": "2026-09-26T00:00:00.000Z",
+    "gpuQuota": {
+      "timeUsed": "64384.824.0s",
+      "timeReserved": "0s",
+      "totalTimeAllowed": "21600s",
+      "minimumTimeAllowed": "21600s",
+      "hasEverRun": true
+    },
+    "tpuQuota": {
+      "timeUsed": "0s",
+      "timeReserved": "0s",
+      "totalTimeAllowed": "72000s",
+      "minimumTimeAllowed": "72000s",
+      "hasEverRun": true
+    }
+  },
+  "ui": {
+    "observed_at_utc": "2026-09-21T04:20:53.083035+00:00",
+    "account": "sailorren",
+    "gpu_available_minutes": 726,
+    "active_ordinary_kernels": 0,
+    "active_formal_submissions": 2,
+    "submission_control_enabled": true,
+    "concurrency_block_notice": false,
+    "evidence": "Signed-in competition Submit Prediction enabled; Active Events D960/R00 Successful, two old competition Scoring; quota UI 12h 6m available of 30h."
+  },
+  "existing_submission_ids": [
+    56407804,
+    56407778,
+    56384003,
+    56383942,
+    56375774,
+    56332302,
+    56270217,
+    56226396,
+    56222238,
+    56160258,
+    56113466,
+    56094423,
+    56092872,
+    56091397,
+    56087974,
+    56069192,
+    56066361,
+    56066312,
+    56025033,
+    56002593,
+    55978992,
+    55976559,
+    55976471,
+    55311118
+  ]
+}
