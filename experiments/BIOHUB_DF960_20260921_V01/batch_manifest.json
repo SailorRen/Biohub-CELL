@@ -1,0 +1,52 @@
+{
+  "task_id": "BIOHUB_DF960_20260921_V01",
+  "task_commit": "ed143c02ddf97f9dd6e75ab256bf41383e4e4256",
+  "candidates": {
+    "DF960": {
+      "ref": "sailorren/biohub-df960-flow-20260921",
+      "notebook_sha256": "17ab1c1ff18d6b692d1f30a8e40e3a866b59e966760efa3fbd648b24bebfb813",
+      "metadata_sha256": "e02b1b6b62efcf120730fccb793b01df3c288370fc94d37c8fc9dd454722091e",
+      "inputs": {
+        "dataset_sources": [
+          "pilkwang/biohub-deepcenter-unet3d-center-prior-v1/5",
+          "pilkwang/biohub-temporal-unet3d-seed314159-v1/2",
+          "pilkwang/biohub-tracking-support-pack-50ep-v1/10"
+        ],
+        "kernel_sources": [
+          "sailorren/biohub-division-train-20260914/1"
+        ],
+        "competition_sources": [
+          "biohub-cell-tracking-during-development"
+        ],
+        "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+        "machine_shape": "NvidiaTeslaT4"
+      },
+      "change": {
+        "F1_FLOW": true
+      },
+      "changed_original_cells": [
+        5,
+        13
+      ]
+    }
+  },
+  "weights": {
+    "gate": "0a1f9b93bb529e70f4f7c2ba0907eea8b4cecd2befccc8ba1fb75e569edf77a0",
+    "primary": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+    "secondary": "9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f",
+    "deepcenter": "8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0"
+  },
+  "official_reader_sha256": "c0fe1868d4550235c4673d4a3fc5e2d6ab0402f3cd0bac73eec8d1348eb9690d",
+  "flow_patch_sha256": "d2511cb21d536d230a6607d3119bccb1d931e21f4ec49237790d6dc335266896",
+  "f1_source_sha256": "a7cb7f8a0da5b5055594779019ebb3ab688e3ce5916079d23b59574b628720b1",
+  "f1_sv": 351084196,
+  "d960_source_sha256": "b12568e27ea5a8c66942a6301c2c80d037fdffe43f338a23a86266f80a02d192",
+  "budgets": {
+    "new_private_notebooks": 1,
+    "save_and_run": 2,
+    "formal_submission": 1,
+    "training": 0,
+    "dataset_write": 0,
+    "final_selection_change": 0
+  }
+}

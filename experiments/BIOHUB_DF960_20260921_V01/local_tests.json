@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "checks": [
+    "all_cells_parse",
+    "flow_enabled_predictions",
+    "no_neighbour_fallback",
+    "disabled_exact_original_synthetic",
+    "disabled_exact_original_cached_D960_subset",
+    "micron_conversion_and_unchanged_cells"
+  ],
+  "cached_nodes": 40,
+  "cached_csv_sha256": "6994fb4bf97d91f8af0b7ed7a22a706a066e64493c68c38dcc7a83f7032d58f1",
+  "training": 0,
+  "gpu_runs": 0
+}
