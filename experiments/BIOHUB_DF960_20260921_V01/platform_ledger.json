@@ -26,15 +26,41 @@
       "last_kernel_status": "COMPLETE",
       "source_equal": true,
       "private": true
+    },
+    {
+      "action": "Submission",
+      "arm": "DF960",
+      "request_id": "df9cd6fc-3281-4e88-acba-82c36ca4e420",
+      "ref": "sailorren/biohub-df960-flow-20260921",
+      "kernel_id": 135257948,
+      "version": 1,
+      "script_version_id": 351617874,
+      "source_commit": "f06d4adb56f18e507a467209982da4a1cb216774",
+      "csv_sha256": "4798073c56ce777b217898afda628120aa493452053e1f6866321548b06f0405",
+      "description": "BIOHUB_DF960_20260921_V01 DF960 V1 SV351617874",
+      "at_utc": "2026-09-21T23:55:03.323964+00:00",
+      "at_shanghai": "2026-09-22T07:55:03.323972+08:00",
+      "status": "SUBMISSION_READBACK_VERIFIED",
+      "counted": 1,
+      "response": {
+        "ref": 56445846,
+        "message": ""
+      },
+      "submission_id": 56445846,
+      "finished_at_utc": "2026-09-21T23:55:06.666708+00:00",
+      "formal_status": "PENDING",
+      "public": null,
+      "observed_at_utc": "2026-09-21T23:55:22.626681+00:00",
+      "observed_at_shanghai": "2026-09-22T07:55:22.626681+08:00"
     }
   ],
   "counts": {
     "new_private_notebooks": 1,
     "save_and_run": 1,
-    "formal_submission": 0,
+    "formal_submission": 1,
     "training": 0,
     "dataset_write": 0,
     "final_selection_change": 0
   },
-  "status": "PLATFORM_READBACK_RECORDED"
+  "status": "FORMAL_SUBMISSION_ACCEPTED_SCORE_PENDING"
 }

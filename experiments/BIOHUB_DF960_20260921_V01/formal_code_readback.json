@@ -1,0 +1,63 @@
+{
+  "commit": "f06d4adb56f18e507a467209982da4a1cb216774",
+  "remote_head": "f06d4adb56f18e507a467209982da4a1cb216774",
+  "files": [
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/DF960/formal_input_collection.json",
+      "sha256": "548b83c146975ee2813a70056b47651dc7e3b7b0280aeb5656de61e30c165b1f",
+      "bytes": 4394,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/DF960/formal_precheck.json",
+      "sha256": "5ea5bb3fecf96387dc092b93b9c1089eeb0791a7573b94abd4ff14eaefb0fa2f",
+      "bytes": 7200,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/DF960/platform_latest.json",
+      "sha256": "6c3c971d21c8150d7adaf7501de9fef0611b06bf7137eed83a1397a366aa190d",
+      "bytes": 1854,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/DF960/production_receipt.json",
+      "sha256": "6285d55f20c00a42ffc06a3840d46e87dcc0f916a09ce56cba80e4e006f759c6",
+      "bytes": 5511,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/baseline_restore.json",
+      "sha256": "e6e86c3d92a5e5f70229be2e948de6ef91f9b591852d54aa4603e789f0a68759",
+      "bytes": 539,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/formal_status_snapshot.json",
+      "sha256": "e3736910eb10e59f2f870456d710f8b3a89510500c16555ae9123f7a96796fd4",
+      "bytes": 11298,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/formal_ui_prewrite_DF960.json",
+      "sha256": "14f387c2eb238562afbd6e7c4a6a45b9829ef92759a6ff0cb0a6157c67ee481a",
+      "bytes": 461,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/platform_ledger.json",
+      "sha256": "1dfc4eb9d3251e31b6ca2a50e4aa522aba926438e0efd706b194182c85189175",
+      "bytes": 1335,
+      "equal": true
+    },
+    {
+      "path": "reports/20260921_BIOHUB_DF960_ONE_SHOT_V01.md",
+      "sha256": "206540fe93a41747f259661dd4edb784b332fe2bc3d2508a2de9c73db0e9965b",
+      "bytes": 4007,
+      "equal": true
+    }
+  ],
+  "status": "COMPLETED_VERIFIED",
+  "scope": "fixed payload bytes only",
+  "observed_at_utc": "2026-09-21T23:54:38.237397+00:00"
+}
