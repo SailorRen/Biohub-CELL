@@ -25,7 +25,10 @@ with (R/'.task-verification/score_trio_write.lock').open('a') as lock:
  assert json.loads((P/'local_tests.json').read_text())['status']=='PASS'
  freeze=json.loads((P/'source_github_readback.json').read_text());assert freeze['status']=='COMPLETED_VERIFIED'
  head=subprocess.check_output(['git','rev-parse','HEAD'],cwd=R,text=True).strip()
- assert head==freeze['commit'] and not subprocess.check_output(['git','diff','HEAD','--',str(d),str(P/'runtime.py'),str(P/'build.py')],cwd=R)
+ # Resume may have ledger/report commits after the verified source freeze.
+ subprocess.check_call(['git','merge-base','--is-ancestor',freeze['commit'],head],cwd=R)
+ for path in [d/'candidate.ipynb',d/'kernel-metadata.json',P/'runtime.py',P/'build.py',P/'batch_manifest.json']:
+  assert path.read_bytes()==subprocess.check_output(['git','show',freeze['commit']+':'+str(path.relative_to(R))],cwd=R),'FROZEN_SOURCE_CHANGED'
  assert subprocess.check_output(['git','ls-remote','origin','refs/heads/codex/score-trio-20260921'],cwd=R,text=True).split()[0]==head
  ui=json.loads((P/'launch_ui_gate.json').read_text());assert (now()-datetime.fromisoformat(ui['observed_at_utc'])).total_seconds()<900
  assert ui['account']=='sailorren' and ui['gpu_available_minutes']>=180 and ui['active_kernel_sessions']<2
@@ -54,7 +57,7 @@ with (R/'.task-verification/score_trio_write.lock').open('a') as lock:
   pre['owned_list']=[{'id':k.id,'ref':k.ref,'version':k.current_version_number} for k in owned or []]
   assert not any(k.ref==meta['id'] for k in owned or [])
  save('prewrite_'+arm+'.json',pre)
- event={'action':'SaveAndRun','arm':arm,'ref':meta['id'],'source_commit':head,'source_sha256':m['notebook_sha256'],'at_utc':now().isoformat(),'at_shanghai':now().astimezone(ZoneInfo('Asia/Shanghai')).isoformat(),'status':'REQUEST_RESERVED','counted':1}
+ event={'action':'SaveAndRun','arm':arm,'ref':meta['id'],'source_commit':freeze['commit'],'request_code_commit':head,'source_sha256':m['notebook_sha256'],'at_utc':now().isoformat(),'at_shanghai':now().astimezone(ZoneInfo('Asia/Shanghai')).isoformat(),'status':'REQUEST_RESERVED','counted':1}
  ledger['requests'].append(event);ledger['counts']['save_and_run']+=1;ledger['counts']['new_private_notebooks']+=1;save('platform_ledger.json',ledger)
  try:
   v=api.kernels_push(str(d),timeout='43200',acc='NvidiaTeslaT4')

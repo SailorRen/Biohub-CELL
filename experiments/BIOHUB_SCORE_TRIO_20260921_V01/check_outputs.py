@@ -64,7 +64,11 @@ for arm in sys.argv[1:] or ['D960','R00','H30']:
   rows=[x for x in calls if x['stem']==stem];assert rows
   assert rows[-1]['config']==after and rows[-1]['final_hash']==final[stem]['canonical_sha256']
   assert all(x['raw_input_unchanged'] and not x['stats']['deepcenter_safe_div_missing'] for x in rows)
-  if arm=='R00':assert len({x['input_hash'] for x in rows})==1
+  if arm=='R00':
+   assert len({x['input_hash'] for x in rows})==1
+   for call in rows[-1]['rescue_calls']:
+    assert call['threshold']==0.0 and 0<=call['rescued_nodes']<=call['budget']<=120
+    assert call['triggered']==(call['removed_before_rescue']>0)
  integrity=json.loads((d/'bidirectional_production_runtime_integrity.json').read_text());weights={k:manifest['weights'][k] for k in ['primary','secondary','deepcenter']};assert r['weights']==integrity['checkpoint_sha256']==weights
  sprint=json.loads((d/'sprint_production_receipt.json').read_text());assert sprint['weight_sha256']==r['gate_weight_sha256']==manifest['weights']['gate'];assert sprint['training_calls']==r['training_calls']==0 and set(sprint['test_datasets'])==set(EXPECTED)
  assert r['engineering_status']=='PASS' and r['csv_roundtrip']=='PASS' and r['original_selector_unchanged']
@@ -80,10 +84,16 @@ for arm in sys.argv[1:] or ['D960','R00','H30']:
   base,_=parse(bp);differences=frozen.diff_contents(base,final)
   assert any(x['changed'] for x in differences),'NO_OUTPUT_EFFECT_OTHER_DECISION_EVIDENCE_REQUIRES_REVIEW'
   limit='Prior same-code/weights visible ordinary G1; competition input-byte identity not re-established, so causal comparison limited.'
+ for prior_dir in [P.parent/'BIOHUB_SCORE_PAIR2_20260920_V01',old]:
+  for prior_proof in prior_dir.glob('*/formal_precheck.json'):
+   prior=json.loads(prior_proof.read_text())
+   assert prior.get('final_canonical_sha256')!=canonical,'DUPLICATE_PRIOR_SUBMISSION_OUTPUT'
  dedup='DISTINCT_OR_OTHER_NOT_READY'
  for other in ['D960','R00','H30']:
   if other==arm:continue
   otherproof=P/other/'formal_precheck.json'
   if otherproof.exists():assert json.loads(otherproof.read_text())['final_canonical_sha256']!=canonical,'DUPLICATE_CANDIDATE'
  now=datetime.now(timezone.utc);proof={'status':'PASS','arm':arm,'observed_at_utc':now.isoformat(),'observed_at_shanghai':now.astimezone(ZoneInfo('Asia/Shanghai')).isoformat(),'binding':collection['source_after'],'csv_sha256':h(d/'submission.csv'),'rows':nrows,'samples':EXPECTED,'schema_graph_checks':'PASS','official_csv_roundtrip':'PASS','final_canonical_sha256':canonical,'has_effect':True,'differences':differences,'comparison_limit':limit,'pair_deduplication':dedup,'selected_label':r['selected_label'],'selected_config':r['selected_config'],'final_resolved_config':after,'worker_detection_weight':r['worker_detection_weight'],'weights':weights,'platform_writes':0}
+ proof['worker_det_threshold']=r['worker_det_threshold'];proof['worker_bidirectional_weight']=r['worker_bidirectional_weight']
+ proof['final_rescue_calls']={s:[x for x in calls if x['stem']==s][-1]['rescue_calls'] for s in EXPECTED}
  (P/arm/'formal_precheck.json').write_text(json.dumps(proof,indent=2)+'\n');(P/arm/'production_receipt.json').write_text(json.dumps(r,indent=2)+'\n');print(arm,'PASS',canonical)

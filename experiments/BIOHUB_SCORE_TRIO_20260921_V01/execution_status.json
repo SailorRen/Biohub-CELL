@@ -1,0 +1,142 @@
+{
+  "observed_at_utc": "2026-09-21T01:53:17.498121+00:00",
+  "task_delivery": "FINAL_DELTA_READBACK_PENDING",
+  "execution": "TWO_RUNNING_ONE_WAITING_SLOT",
+  "score": "NOT_SUBMITTED",
+  "counts": {
+    "new_private_notebooks": 2,
+    "save_and_run": 2,
+    "formal_submission": 0,
+    "training": 0,
+    "dataset_write": 0,
+    "final_selection_change": 0,
+    "v1_f1_write": 0
+  },
+  "arms": {
+    "D960": {
+      "arm": "D960",
+      "observed_at_utc": "2026-09-21T01:52:32.834791+00:00",
+      "observed_at_shanghai": "2026-09-21T09:52:32.834791+08:00",
+      "writes": 0,
+      "ref": "sailorren/biohub-g1-det0960-20260921",
+      "kernel_id": 135169669,
+      "version": 1,
+      "script_version_id": 351441983,
+      "script_version_id_source": "signed-in notebook edit/run link, observed without opening editor",
+      "kernel_status": "RUNNING",
+      "private": true,
+      "source_equal": true,
+      "source_comparison": "all cells type and source; platform JSON serialization differs",
+      "local_notebook_sha256": "b12568e27ea5a8c66942a6301c2c80d037fdffe43f338a23a86266f80a02d192",
+      "remote_notebook_sha256": "810dc353011da19665b34b2075e4e5f0157becc4bab726b4cfea8940fd122c82",
+      "cell_count": 14,
+      "metadata": {
+        "id": 135169669,
+        "ref": "sailorren/biohub-g1-det0960-20260921",
+        "title": "biohub-g1-det0960-20260921",
+        "author": "Sailor Ren",
+        "slug": "biohub-g1-det0960-20260921",
+        "lastRunTime": "2026-09-18T01:52:32.242Z",
+        "language": "python",
+        "kernelType": "notebook",
+        "isPrivate": true,
+        "enableGpu": true,
+        "enableInternet": false,
+        "categoryIds": [
+          "gpu"
+        ],
+        "datasetDataSources": [
+          "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+          "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+          "pilkwang/biohub-tracking-support-pack-50ep-v1"
+        ],
+        "kernelDataSources": [
+          "sailorren/biohub-division-train-20260914"
+        ],
+        "competitionDataSources": [
+          "biohub-cell-tracking-during-development"
+        ],
+        "enableTpu": false,
+        "currentVersionNumber": 1,
+        "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+        "machineShape": "NvidiaTeslaT4"
+      },
+      "submission_id": null,
+      "public_score": null,
+      "formal_status": "NOT_SUBMITTED"
+    },
+    "R00": {
+      "arm": "R00",
+      "observed_at_utc": "2026-09-21T01:52:35.202370+00:00",
+      "observed_at_shanghai": "2026-09-21T09:52:35.202370+08:00",
+      "writes": 0,
+      "ref": "sailorren/biohub-g1-rescue-trigger000-20260921",
+      "kernel_id": 135169776,
+      "version": 1,
+      "script_version_id": 351442164,
+      "script_version_id_source": "signed-in notebook edit/run link, observed without opening editor",
+      "kernel_status": "RUNNING",
+      "private": true,
+      "source_equal": true,
+      "source_comparison": "all cells type and source; platform JSON serialization differs",
+      "local_notebook_sha256": "927f2979f21b3f9df930f1b27f816ca6754ec67aa0efb47336cac25f3960fc2d",
+      "remote_notebook_sha256": "14a4ac59a444e20fe47754e2045bf55026b2347051aef974c495d5ec653b9da5",
+      "cell_count": 14,
+      "metadata": {
+        "id": 135169776,
+        "ref": "sailorren/biohub-g1-rescue-trigger000-20260921",
+        "title": "biohub-g1-rescue-trigger000-20260921",
+        "author": "Sailor Ren",
+        "slug": "biohub-g1-rescue-trigger000-20260921",
+        "lastRunTime": "2026-09-18T01:52:34.515Z",
+        "language": "python",
+        "kernelType": "notebook",
+        "isPrivate": true,
+        "enableGpu": true,
+        "enableInternet": false,
+        "categoryIds": [
+          "gpu"
+        ],
+        "datasetDataSources": [
+          "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+          "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+          "pilkwang/biohub-tracking-support-pack-50ep-v1"
+        ],
+        "kernelDataSources": [
+          "sailorren/biohub-division-train-20260914"
+        ],
+        "competitionDataSources": [
+          "biohub-cell-tracking-during-development"
+        ],
+        "enableTpu": false,
+        "currentVersionNumber": 1,
+        "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+        "machineShape": "NvidiaTeslaT4"
+      },
+      "submission_id": null,
+      "public_score": null,
+      "formal_status": "NOT_SUBMITTED"
+    },
+    "H30": {
+      "arm": "H30",
+      "ref": "sailorren/biohub-g1-harmonic030-20260921",
+      "kernel_id": null,
+      "version": null,
+      "script_version_id": null,
+      "kernel_status": "NOT_STARTED_WAITING_SLOT",
+      "formal_status": "NOT_SUBMITTED",
+      "submission_id": null,
+      "public_score": null,
+      "reason": "Two ordinary GPU commit sessions already running; retain existing two-session launch guard; no speculative third request",
+      "observed_at_utc": "2026-09-21T01:52:30.287090+00:00"
+    }
+  },
+  "checks": {
+    "budget": "PASS",
+    "exact_sources": "PASS",
+    "existing_changed_path_tests": 5,
+    "actual_csv_checks": "NOT_RUN",
+    "formal_requests": 0
+  },
+  "next": "Read existing run status; collect and check actual CSV of completed arms; submit each eligible arm once; launch already frozen H30 when slot exists. No background scheduler."
+}

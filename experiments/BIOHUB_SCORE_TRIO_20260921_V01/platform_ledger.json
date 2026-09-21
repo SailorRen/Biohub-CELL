@@ -1,9 +1,60 @@
 {
   "task_id": "BIOHUB_SCORE_TRIO_20260921_V01",
-  "requests": [],
+  "requests": [
+    {
+      "action": "SaveAndRun",
+      "arm": "D960",
+      "ref": "sailorren/biohub-g1-det0960-20260921",
+      "source_commit": "1cf89f1f9380f005d98e9cb15ca9f5d80c4ebaca",
+      "source_sha256": "b12568e27ea5a8c66942a6301c2c80d037fdffe43f338a23a86266f80a02d192",
+      "at_utc": "2026-09-21T01:49:20.330335+00:00",
+      "at_shanghai": "2026-09-21T09:49:20.330354+08:00",
+      "status": "RUNNING_VERIFIED",
+      "counted": 1,
+      "response": {
+        "ref": "/code/sailorren/biohub-g1-det0960-20260921",
+        "url": "https://www.kaggle.com/code/sailorren/biohub-g1-det0960-20260921",
+        "versionNumber": 1,
+        "kernelId": 135169669
+      },
+      "finished_at_utc": "2026-09-21T01:49:25.125682+00:00",
+      "kernel_id": 135169669,
+      "version": 1,
+      "script_version_id": 351441983,
+      "last_observed_at_utc": "2026-09-21T01:52:32.834791+00:00",
+      "last_kernel_status": "RUNNING",
+      "source_equal": true,
+      "private": true
+    },
+    {
+      "action": "SaveAndRun",
+      "arm": "R00",
+      "ref": "sailorren/biohub-g1-rescue-trigger000-20260921",
+      "source_commit": "1cf89f1f9380f005d98e9cb15ca9f5d80c4ebaca",
+      "source_sha256": "927f2979f21b3f9df930f1b27f816ca6754ec67aa0efb47336cac25f3960fc2d",
+      "at_utc": "2026-09-21T01:50:28.232204+00:00",
+      "at_shanghai": "2026-09-21T09:50:28.232229+08:00",
+      "status": "RUNNING_VERIFIED",
+      "counted": 1,
+      "response": {
+        "ref": "/code/sailorren/biohub-g1-rescue-trigger000-20260921",
+        "url": "https://www.kaggle.com/code/sailorren/biohub-g1-rescue-trigger000-20260921",
+        "versionNumber": 1,
+        "kernelId": 135169776
+      },
+      "finished_at_utc": "2026-09-21T01:50:34.728251+00:00",
+      "kernel_id": 135169776,
+      "version": 1,
+      "script_version_id": 351442164,
+      "last_observed_at_utc": "2026-09-21T01:52:35.202370+00:00",
+      "last_kernel_status": "RUNNING",
+      "source_equal": true,
+      "private": true
+    }
+  ],
   "counts": {
-    "new_private_notebooks": 0,
-    "save_and_run": 0,
+    "new_private_notebooks": 2,
+    "save_and_run": 2,
     "formal_submission": 0,
     "training": 0,
     "dataset_write": 0,
@@ -11,5 +62,5 @@
     "v1_f1_write": 0
   },
   "initial_reconciliation": "initial_reconciliation.json",
-  "status": "NOT_STARTED_VERIFIED_NO_EXISTING_OBJECTS"
+  "status": "PLATFORM_READBACK_RECORDED"
 }

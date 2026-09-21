@@ -1,0 +1,13 @@
+{
+  "arm": "H30",
+  "ref": "sailorren/biohub-g1-harmonic030-20260921",
+  "kernel_id": null,
+  "version": null,
+  "script_version_id": null,
+  "kernel_status": "NOT_STARTED_WAITING_SLOT",
+  "formal_status": "NOT_SUBMITTED",
+  "submission_id": null,
+  "public_score": null,
+  "reason": "Two ordinary GPU commit sessions already running; retain existing two-session launch guard; no speculative third request",
+  "observed_at_utc": "2026-09-21T01:52:30.287090+00:00"
+}

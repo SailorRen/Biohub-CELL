@@ -1,11 +1,11 @@
 {
-  "observed_at_utc": "2026-09-21T01:47:00.925185+00:00",
+  "observed_at_utc": "2026-09-21T01:52:30.287090+00:00",
   "account": "sailorren",
   "gpu_available_minutes": 979,
-  "active_kernel_sessions": 0,
+  "active_kernel_sessions": 2,
   "active_formal_submissions": 2,
   "gpu_text": "16h 19m available of 30h",
-  "active_event_text": "Two Competition submission / Scoring events; no ordinary kernel event",
+  "active_event_text": "D960 and R00 ordinary sessions active; S50/G58 scoring preserved",
   "absent_slugs": [
     "sailorren/biohub-g1-det0960-20260921",
     "sailorren/biohub-g1-harmonic030-20260921",

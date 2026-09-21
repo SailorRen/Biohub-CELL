@@ -2,7 +2,9 @@ import subprocess,json,hashlib,concurrent.futures,sys
 from pathlib import Path
 from datetime import datetime,timezone
 P=Path(__file__).resolve().parent;R=P.parents[1];sha=subprocess.check_output(['git','rev-parse','HEAD'],cwd=R,text=True).strip()
-paths=subprocess.check_output(['git','diff','--name-only','7ef58d77f7654648684616d653252f4aa688ccb1',sha,'--',str(P.relative_to(R)),'reports/20260921_BIOHUB_SCORE_TRIO_V01.md'],cwd=R,text=True).splitlines()+['tasks/CODEX_20260921_BIOHUB_SCORE_TRIO_V01.md','tasks/CODEX_20260921_BIOHUB_SCORE_TRIO_LEAN_CONTINUE_V01.md']
+base=sys.argv[2] if len(sys.argv)>2 else '7ef58d77f7654648684616d653252f4aa688ccb1'
+paths=subprocess.check_output(['git','diff','--name-only',base,sha,'--',str(P.relative_to(R)),'reports/20260921_BIOHUB_SCORE_TRIO_V01.md'],cwd=R,text=True).splitlines()
+if len(sys.argv)<=2:paths+=['tasks/CODEX_20260921_BIOHUB_SCORE_TRIO_V01.md','tasks/CODEX_20260921_BIOHUB_SCORE_TRIO_LEAN_CONTINUE_V01.md']
 def check(p):
  b=subprocess.check_output(['gh','api',f'repos/SailorRen/Biohub-CELL/contents/{p}?ref={sha}','-H','Accept: application/vnd.github.raw+json']);assert b==subprocess.check_output(['git','show',sha+':'+p],cwd=R)
  return {'path':p,'sha256':hashlib.sha256(b).hexdigest(),'bytes':len(b),'equal':True}

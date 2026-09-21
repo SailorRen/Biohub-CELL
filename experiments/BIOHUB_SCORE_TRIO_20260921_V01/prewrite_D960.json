@@ -1,0 +1,513 @@
+{
+  "at_utc": "2026-09-21T01:49:12.639250+00:00",
+  "at_shanghai": "2026-09-21T09:49:12.639274+08:00",
+  "arm": "D960",
+  "ui_gate": {
+    "observed_at_utc": "2026-09-21T01:47:00.925185+00:00",
+    "account": "sailorren",
+    "gpu_available_minutes": 979,
+    "active_kernel_sessions": 0,
+    "active_formal_submissions": 2,
+    "gpu_text": "16h 19m available of 30h",
+    "active_event_text": "Two Competition submission / Scoring events; no ordinary kernel event",
+    "absent_slugs": [
+      "sailorren/biohub-g1-det0960-20260921",
+      "sailorren/biohub-g1-harmonic030-20260921",
+      "sailorren/biohub-g1-rescue-trigger000-20260921"
+    ]
+  },
+  "sdk_quota": {
+    "quotaRefreshTime": "2026-09-26T00:00:00.000Z",
+    "gpuQuota": {
+      "timeUsed": "49238.684.0s",
+      "timeReserved": "0s",
+      "totalTimeAllowed": "21600s",
+      "minimumTimeAllowed": "21600s",
+      "hasEverRun": true
+    },
+    "tpuQuota": {
+      "timeUsed": "0s",
+      "timeReserved": "0s",
+      "totalTimeAllowed": "72000s",
+      "minimumTimeAllowed": "72000s",
+      "hasEverRun": true
+    }
+  },
+  "parent": {
+    "kernel_id": 134301327,
+    "version": 1,
+    "source_sha256": "53f50c62047b0c8e1e80ca2969acbdaac37b9ad443e8efa4c7275a38145f7ae5"
+  },
+  "submission_quota": {
+    "used_today": 0,
+    "maximum": 5
+  },
+  "competition_id": 136605,
+  "owned_list": [
+    {
+      "id": 0,
+      "ref": "sailorren/rsna-exp014-t01-resnet-study-train",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/atlas-homework",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/rsna-exp005-d01-e13-direct-runtime",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/rsna-knee-exp008-d01-native384dense",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/rsna-exp006-c02-v18-group-order-direct-score",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-0-947-official-selector-20260914",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/rsna-exp011-f01-fusion-rank-preserve",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/rsna-exp002-baseline-contract-probe",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-946-linefit-boundary-20260909",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-946-c1-xy8-20260908",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/rsna-exp004-c02-exp003-v18-group-row-order-score",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/rsna-exp009-c1-raptor-reverse-ablation",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/rsna-exp004-c01-exp002-e13-selector-score",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-v21a-parent9-dc026",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/kaggriculture-runtime-compatibility-test-v01",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-946-c2-secondary-edge-tta-20260908",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/rsna-exp010-w01-raptor-window-mask",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-946-b0-repro-20260908",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-division-train-20260914",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/sbird",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-g1-gap058-20260920",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-g1-secondary050-20260920",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-g1-divgate022-20260920",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-g1-divgate018-20260920",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-f1-flow-prod-20260918",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-f1-flow-diag-20260918",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/best-agent-ranking",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-frontier947-gapfill-det096-v1",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/kag-v46-cash-compact-cloud-20260918-v1",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-s02-h1-diagnostic-20260917",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/rsna-exp014-c01-resnet-study",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/rsna-exp013-t01-resnet-study-train",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-sprint01-g1-frozen-inference-20260916",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-sprint01-diagnostic-20260916",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/kaggriculture-v41-fresh-train-20260915",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/kaggriculture-v43-recovering-lost-harvests",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/rsna-exp012-c01-ortho-fusion",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/rsna-exp012-t01-orthofoundation-train",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/kaggriculture-most-powerfull-route",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/kaggriculture-structured-economic-policy-v2",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-lineage-forge-precision-tracking",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/notebooka4fc70fd19",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/cohezion-rsna-knee-sota-ensemble",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/kaggriculture-reactive-router",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/shop-router-0908",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/smartfarm-fresh-tf-lgbm-20260908-v1",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/kaggriculture-smart-farm-strategy-lab",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/kaggriculture-95-5-win-rate-via-replay-routing",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-harmonic-fusion",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/kaggriculture-psr-r2-tf-lgbm-20260907-v01",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/rsna-exp009-b0-public-v5",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-lb-942",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-run77",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/bend-the-knee-to-the-dinosaurs-all-public",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/rsna-knee-0937-meniscus-resid-repro",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/kaggriculture-public-state-router-74-5-win-rate",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/941-biohub-fresh-adaptive-assoc",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-v20b-two-embryo-radius-validation",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/farming-score-v3-replay-revised",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-v19c-dualwide-9-14-2-25",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-v19c-public0939-sis14-only",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-div45-stack",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/0-938",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/three-day-shop-router",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/v29-r1-adaptive-market-hysteresis",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/fieldbook-commit-for-three-days",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/kaggriculture-tetsu-tf-lgbm-20260901-v01",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/rsna-exp001-c01-baseline-runtime-derived-h01",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/rsna-exp001-train-heads",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/rsna-exp001-probe-features",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/shape-the-shop-work-the-pasture-kaggriculture",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/shape-the-shop-work-the-pasture-top-10",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/rsna-knee-dinosaur-v5-repro",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/25-27-strict-future-v27-midgame-meta-reset",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/kaggriculture-exp010-p100-diag-fe461f92",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/kaggriculture-exp010-transformer-train-v01",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/kaggriculture-replay-transformer-intelligence-v01",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/kaggriculture-replay-intelligence-training-v02",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/codex-sol-eclipse-alakazam-e149f2",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/probablity-v2",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/codex-sol-eclipse-alakazam",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/grimmsnarl-ex-damage-transfer-control",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/44-46-strict-future-top-30-v22-price-impact",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/biohub-solution",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/jed-slow-multipost",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/41-49-future-unseen-v19-replication-to-control",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/notebook109bdbe907",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/notebook40437bdb4f",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/neurogolf-2026-improved-starter-notebook",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/tinker-adapter-to-ready-to-submit",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/kaggle-pro-feedback-train",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/rossmann3-homework",
+      "version": 0
+    },
+    {
+      "id": 0,
+      "ref": "sailorren/boston-homework",
+      "version": 0
+    }
+  ]
+}
