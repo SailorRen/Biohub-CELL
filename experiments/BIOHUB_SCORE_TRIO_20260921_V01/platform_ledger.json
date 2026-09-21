@@ -1,0 +1,15 @@
+{
+  "task_id": "BIOHUB_SCORE_TRIO_20260921_V01",
+  "requests": [],
+  "counts": {
+    "new_private_notebooks": 0,
+    "save_and_run": 0,
+    "formal_submission": 0,
+    "training": 0,
+    "dataset_write": 0,
+    "final_selection_change": 0,
+    "v1_f1_write": 0
+  },
+  "initial_reconciliation": "initial_reconciliation.json",
+  "status": "NOT_STARTED_VERIFIED_NO_EXISTING_OBJECTS"
+}

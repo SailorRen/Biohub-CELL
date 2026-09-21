@@ -1,0 +1,102 @@
+{
+  "candidates": {
+    "D960": {
+      "ref": "sailorren/biohub-g1-det0960-20260921",
+      "notebook_sha256": "b12568e27ea5a8c66942a6301c2c80d037fdffe43f338a23a86266f80a02d192",
+      "metadata_sha256": "5fa91cefe66f25d5b7807581a287e36d97cf02c0d9c973c8a845a2e2819ee933",
+      "inputs": {
+        "dataset_sources": [
+          "pilkwang/biohub-deepcenter-unet3d-center-prior-v1/5",
+          "pilkwang/biohub-temporal-unet3d-seed314159-v1/2",
+          "pilkwang/biohub-tracking-support-pack-50ep-v1/10"
+        ],
+        "kernel_sources": [
+          "sailorren/biohub-division-train-20260914/1"
+        ],
+        "competition_sources": [
+          "biohub-cell-tracking-during-development"
+        ],
+        "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+        "machine_shape": "NvidiaTeslaT4"
+      },
+      "change": {
+        "BIOHUB_DET_THRESHOLD": [
+          0.965,
+          0.96
+        ]
+      },
+      "changed_original_cells": [
+        0,
+        1,
+        4,
+        5
+      ]
+    },
+    "H30": {
+      "ref": "sailorren/biohub-g1-harmonic030-20260921",
+      "notebook_sha256": "fab2980c4f737555bcc6bf406953dd7dbed5d463bcb40bbb12bc2a593151de8d",
+      "metadata_sha256": "414cac6530aa78121f1ae213150b62517929a1ed32ec6e2227ce9531a623c2ba",
+      "inputs": {
+        "dataset_sources": [
+          "pilkwang/biohub-deepcenter-unet3d-center-prior-v1/5",
+          "pilkwang/biohub-temporal-unet3d-seed314159-v1/2",
+          "pilkwang/biohub-tracking-support-pack-50ep-v1/10"
+        ],
+        "kernel_sources": [
+          "sailorren/biohub-division-train-20260914/1"
+        ],
+        "competition_sources": [
+          "biohub-cell-tracking-during-development"
+        ],
+        "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+        "machine_shape": "NvidiaTeslaT4"
+      },
+      "change": {
+        "BIOHUB_BIDIRECTIONAL_EDGE_WEIGHT": [
+          0.15,
+          0.3
+        ]
+      },
+      "changed_original_cells": [
+        0,
+        1,
+        4,
+        5
+      ]
+    },
+    "R00": {
+      "ref": "sailorren/biohub-g1-rescue-trigger000-20260921",
+      "notebook_sha256": "927f2979f21b3f9df930f1b27f816ca6754ec67aa0efb47336cac25f3960fc2d",
+      "metadata_sha256": "2ee1912ab339c0eaf96be74342e1217db6c2d3921e52dfcffaeb72d814427e4b",
+      "inputs": {
+        "dataset_sources": [
+          "pilkwang/biohub-deepcenter-unet3d-center-prior-v1/5",
+          "pilkwang/biohub-temporal-unet3d-seed314159-v1/2",
+          "pilkwang/biohub-tracking-support-pack-50ep-v1/10"
+        ],
+        "kernel_sources": [
+          "sailorren/biohub-division-train-20260914/1"
+        ],
+        "competition_sources": [
+          "biohub-cell-tracking-during-development"
+        ],
+        "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+        "machine_shape": "NvidiaTeslaT4"
+      },
+      "change": {
+        "SHORT_TRACK_RESCUE_TRIGGER_REMOVED_FRAC": [
+          0.1,
+          0.0
+        ]
+      },
+      "changed_original_cells": [
+        4,
+        5
+      ]
+    }
+  },
+  "runtime_sha256": "1606919c2d7f8812c59d4c70e5819ba3ccde549c7a8cbb96292d7d154734cd41",
+  "official_reader_sha256": "c0fe1868d4550235c4673d4a3fc5e2d6ab0402f3cd0bac73eec8d1348eb9690d",
+  "all_code_cells_ast": "PASS",
+  "g1_sha256": "de010e6ba142be0e01000093e061ef7d3388ddaa411185b40d26c63a3febe731"
+}
