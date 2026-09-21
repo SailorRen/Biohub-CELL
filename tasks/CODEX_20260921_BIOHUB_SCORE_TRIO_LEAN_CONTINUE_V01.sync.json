@@ -1,0 +1,33 @@
+{
+  "instruction_id": "BIOHUB_SCORE_TRIO_LEAN_CONTINUE_20260921_V01",
+  "experiment_id": "BIOHUB_SCORE_TRIO_20260921_V01",
+  "scope": "Task-file synchronization only; existing experiment budget unchanged",
+  "repository": "SailorRen/Biohub-CELL",
+  "branch": "codex/score-trio-20260921",
+  "base_commit": "2f1ac2572a7849a7ac7685d0d0f820dff9e079ad",
+  "verified_task_commit": "3817dc543ad17e235f540b4c740710c613ae0d8c",
+  "task_path": "tasks/CODEX_20260921_BIOHUB_SCORE_TRIO_LEAN_CONTINUE_V01.md",
+  "task_sync_status": "TASK_SYNC_VERIFIED",
+  "verification": {
+    "source_bytes": 8294,
+    "source_lines": 63,
+    "source_sha256": "ba96b6f2463afc50e4b4c8d7d8f87264400e719bea1b0bee679aa292f3f3121e",
+    "local_git_blob_sha1": "9d3bf5f590e97c63c2cddfe9b8249f23a18d9e0b",
+    "remote_git_blob_sha1": "9d3bf5f590e97c63c2cddfe9b8249f23a18d9e0b",
+    "git_blob_identity_verified": true,
+    "method": "Local Git blob SHA-1 over the original UTF-8 bytes and Git blob header matched GitHub Contents API SHA at verified_task_commit. Full decoded task content was read back.",
+    "independent_remote_sha256_computed": false,
+    "limits": "The SHA-256 is over the original local task bytes. No separately computed remote SHA-256 is claimed. This receipt verifies the preceding task commit, not its own containing commit.",
+    "task_commit_diff": {
+      "ahead_by": 1,
+      "behind_by": 0,
+      "added_files": ["tasks/CODEX_20260921_BIOHUB_SCORE_TRIO_LEAN_CONTINUE_V01.md"],
+      "modified_or_deleted_files": []
+    }
+  },
+  "execution_status": "NOT_EXECUTED_BY_THIS_SYNC",
+  "kaggle_writes_by_this_sync": 0,
+  "other_branch_writes_by_this_sync": 0,
+  "user_local_worktree": "NOT_ACCESSED",
+  "platform_state_note": "The trio ledger was absent at base_commit. This is not evidence that no platform jobs exist; the continuation task requires reconciliation before any launch or submission."
+}
