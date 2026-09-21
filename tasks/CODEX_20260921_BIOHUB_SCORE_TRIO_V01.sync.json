@@ -1,0 +1,27 @@
+{
+  "task_id": "BIOHUB_SCORE_TRIO_20260921_V01",
+  "scope": "Task-file delivery only; no Kaggle execution",
+  "repository": "SailorRen/Biohub-CELL",
+  "branch": "codex/score-trio-20260921",
+  "base_commit": "d1fa52dd66f598bb85be8ca60d7891a3cf049017",
+  "verified_task_commit": "3c5c9c5940c66bc963925301b0e20626c6672b26",
+  "task_path": "tasks/CODEX_20260921_BIOHUB_SCORE_TRIO_V01.md",
+  "task_delivery_status": "TASK_SYNC_VERIFIED",
+  "verification": {
+    "source_bytes": 11210,
+    "source_lines": 98,
+    "source_sha256": "04100828bf7814658a157f7c8d0557e870f203c4eab36a58a6c45a14ed8ef10f",
+    "local_git_blob_sha1": "0cda76d085d4cca83d9770e137d01c6f61f037b9",
+    "remote_git_blob_sha1": "0cda76d085d4cca83d9770e137d01c6f61f037b9",
+    "git_blob_identity_verified": true,
+    "independent_remote_sha256_computed": false,
+    "method": "Local Git blob SHA-1 over original UTF-8 bytes and Git blob header matched GitHub Contents API SHA at the fixed task commit.",
+    "limits": "Direct runtime network fetch failed. Source SHA-256 is local; remote integrity was checked by Git blob identity, not a separately computed remote SHA-256. This receipt verifies the preceding task commit, not its own containing commit."
+  },
+  "planned_candidates": ["D960", "H30", "R00"],
+  "formal_submission_cap": 3,
+  "execution_status": "NOT_STARTED_BY_THIS_CHAT",
+  "kaggle_writes_by_this_chat": 0,
+  "other_branch_writes_by_this_chat": 0,
+  "local_user_worktree": "NOT_ACCESSED"
+}
