@@ -1,0 +1,68 @@
+{
+  "observed_at_utc": "2026-09-21T14:38:02.015918+00:00",
+  "source_url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/submissions",
+  "sort": "Public Score",
+  "manual_selection_count": "0/2",
+  "rule": "Up to 2 submissions count towards final leaderboard; if fewer selected, Kaggle automatically selects from best scoring submissions.",
+  "top_order": [
+    {
+      "rank": 1,
+      "arm": "D960",
+      "submission_id": 56416049,
+      "version": 1,
+      "script_version_id": 351441983
+    },
+    {
+      "rank": 2,
+      "arm": "F1",
+      "submission_id": 56375774,
+      "version": 1,
+      "script_version_id": 351084196
+    },
+    {
+      "rank": 3,
+      "arm": "G1",
+      "submission_id": 56270217,
+      "version": 1,
+      "script_version_id": 350197436
+    },
+    {
+      "rank": 4,
+      "arm": "A18",
+      "submission_id": 56383942,
+      "version": 1,
+      "script_version_id": 351207161
+    },
+    {
+      "rank": 5,
+      "arm": "B22",
+      "submission_id": 56384003,
+      "version": 1,
+      "script_version_id": 351207989
+    },
+    {
+      "rank": 6,
+      "arm": "G58",
+      "submission_id": 56407804,
+      "version": 1,
+      "script_version_id": 351350591
+    },
+    {
+      "rank": 7,
+      "arm": "R00",
+      "submission_id": 56416053,
+      "version": 1,
+      "script_version_id": 351442164
+    },
+    {
+      "rank": 8,
+      "arm": "H30",
+      "submission_id": 56419440,
+      "version": 1,
+      "script_version_id": 351467088
+    }
+  ],
+  "platform_writes": 0,
+  "interpretation": "D960 is first in platform Public Score ordering, F1 second. Exact score gaps and tie-breaking details are not exposed by the three-decimal API score.",
+  "all_results_count": 38
+}

@@ -1,8 +1,8 @@
 {
-  "observed_at_utc": "2026-09-21T06:37:03.844958+00:00",
+  "observed_at_utc": "2026-09-21T14:36:15.178914+00:00",
   "task_delivery": "PAYLOAD_BYTES_VERIFIED",
   "execution": "ALL_THREE_SUBMITTED",
-  "score": "SCORE_PENDING",
+  "score": "ALL_THREE_COMPLETE",
   "counts": {
     "new_private_notebooks": 3,
     "save_and_run": 3,
@@ -62,9 +62,9 @@
         "machineShape": "NvidiaTeslaT4"
       },
       "submission_id": 56416049,
-      "public_score": null,
-      "formal_status": "PENDING",
-      "formal_observed_at_utc": "2026-09-21T06:37:03.844958+00:00"
+      "public_score": 0.948,
+      "formal_status": "COMPLETE",
+      "formal_observed_at_utc": "2026-09-21T14:36:15.178914+00:00"
     },
     "R00": {
       "arm": "R00",
@@ -115,9 +115,9 @@
         "machineShape": "NvidiaTeslaT4"
       },
       "submission_id": 56416053,
-      "public_score": null,
-      "formal_status": "PENDING",
-      "formal_observed_at_utc": "2026-09-21T06:37:03.844958+00:00"
+      "public_score": 0.948,
+      "formal_status": "COMPLETE",
+      "formal_observed_at_utc": "2026-09-21T14:36:15.178914+00:00"
     },
     "H30": {
       "arm": "H30",
@@ -168,9 +168,9 @@
         "machineShape": "NvidiaTeslaT4"
       },
       "submission_id": 56419440,
-      "public_score": null,
-      "formal_status": "PENDING",
-      "formal_observed_at_utc": "2026-09-21T06:37:03.844958+00:00"
+      "public_score": 0.947,
+      "formal_status": "COMPLETE",
+      "formal_observed_at_utc": "2026-09-21T14:36:15.178914+00:00"
     }
   },
   "checks": {
@@ -184,6 +184,6 @@
     },
     "formal_requests": 3
   },
-  "next": "Read-only score observations; formal budget exhausted. No relaunch or resubmission.",
-  "platform_writes_this_observation": 1
+  "next": "No pending trio actions. No new runs or submissions authorized by result reading.",
+  "platform_writes_this_observation": 0
 }

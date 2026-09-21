@@ -72,10 +72,10 @@
       },
       "submission_id": 56416049,
       "finished_at_utc": "2026-09-21T04:21:30.159875+00:00",
-      "formal_status": "PENDING",
-      "public": null,
-      "observed_at_utc": "2026-09-21T06:37:03.844958+00:00",
-      "observed_at_shanghai": "2026-09-21T14:37:03.844958+08:00"
+      "formal_status": "COMPLETE",
+      "public": 0.948,
+      "observed_at_utc": "2026-09-21T14:36:15.178914+00:00",
+      "observed_at_shanghai": "2026-09-21T22:36:15.178914+08:00"
     },
     {
       "action": "Submission",
@@ -98,10 +98,10 @@
       },
       "submission_id": 56416053,
       "finished_at_utc": "2026-09-21T04:21:52.219289+00:00",
-      "formal_status": "PENDING",
-      "public": null,
-      "observed_at_utc": "2026-09-21T06:37:03.844958+00:00",
-      "observed_at_shanghai": "2026-09-21T14:37:03.844958+08:00"
+      "formal_status": "COMPLETE",
+      "public": 0.948,
+      "observed_at_utc": "2026-09-21T14:36:15.178914+00:00",
+      "observed_at_shanghai": "2026-09-21T22:36:15.178914+08:00"
     },
     {
       "action": "SaveAndRun",
@@ -150,10 +150,10 @@
       },
       "submission_id": 56419440,
       "finished_at_utc": "2026-09-21T06:36:49.622268+00:00",
-      "formal_status": "PENDING",
-      "public": null,
-      "observed_at_utc": "2026-09-21T06:37:03.844958+00:00",
-      "observed_at_shanghai": "2026-09-21T14:37:03.844958+08:00"
+      "formal_status": "COMPLETE",
+      "public": 0.947,
+      "observed_at_utc": "2026-09-21T14:36:15.178914+00:00",
+      "observed_at_shanghai": "2026-09-21T22:36:15.178914+08:00"
     }
   ],
   "counts": {

@@ -1,17 +1,17 @@
 # BIOHUB_SCORE_TRIO_20260921_V01
 
-同批续执行，流程以固定 7ef58d77f7654648684616d653252f4aa688ccb1 的精简指令为准；算法及输入按固定 2f1ac2572a7849a7ac7685d0d0f820dff9e079ad 原任务。task_delivery=SOURCE_BYTES_VERIFIED（最新回执同步范围见 github_readback.json）；execution=ALL_THREE_SUBMITTED；score=SCORE_PENDING。任务尚未整体完成。
+同批续执行，流程以固定 7ef58d77f7654648684616d653252f4aa688ccb1 的精简指令为准；算法及输入按固定 2f1ac2572a7849a7ac7685d0d0f820dff9e079ad 原任务。task_delivery=SOURCE_BYTES_VERIFIED（最新回执同步范围见 github_readback.json）；execution=ALL_THREE_SUBMITTED；score=ALL_THREE_COMPLETE。任务尚未整体完成。
 
 G1 固定母版 e9c7c63b896812660a78ec55fc3284c10f85e776，Notebook SHA-256 de010e6ba142be0e01000093e061ef7d3388ddaa411185b40d26c63a3febe731。工具复用 d1fa52dd66f598bb85be8ca60d7891a3cf049017，输入、三份推理权重及 G1 gate 权重未变。三臂源码已构建；5 项改动路径 CPU 短测试通过，所有代码单元解析通过。未启动独立诊断、训练或重复母版推理。
 
 |候选|唯一主动干预|版本 / SV|submission|原始 Public|状态|
 |---|---|---|---|---|---|
 |G1|既有母版|V1 / 350197436|56270217|0.948|COMPLETE|
-|S50|仅只读|V1 / 351350449|56407778|null|SCORE_PENDING|
-|G58|仅只读|V1 / 351350591|56407804|null|SCORE_PENDING|
-|D960|检测阈值 0.965→0.960|V1 / 351441983|56416049|空字符串 / null|SCORE_PENDING|
-|R00|最终短轨救援启动比例 0.10→0.00|V1 / 351442164|56416053|空字符串 / null|SCORE_PENDING|
-|H30|反向关联 harmonic 权重 0.15→0.30|V1 / 351467088|56419440|空字符串 / null|SCORE_PENDING|
+|S50|仅只读|V1 / 351350449|56407778|0.943|COMPLETE|
+|G58|仅只读|V1 / 351350591|56407804|0.948|COMPLETE|
+|D960|检测阈值 0.965→0.960|V1 / 351441983|56416049|0.948|COMPLETE|
+|R00|最终短轨救援启动比例 0.10→0.00|V1 / 351442164|56416053|0.948|COMPLETE|
+|H30|反向关联 harmonic 权重 0.15→0.30|V1 / 351467088|56419440|0.947|COMPLETE|
 
 首次平台对账时间 UTC 2026-09-21 01:41:49（上海09:41:49），已枚举93个自有 Notebook，无三个指定slug，也无其正式提交。当前UTC日已用0/5，不将上海午夜当重置依据；GPU UI可用16h19m/30h，SDK totalTimeAllowed=6h 与UI不一致，保留原始小型记录。两项活跃事件均为 S50/G58 正式评分，普通运行0。ListSubmissions 首次传返回的 competition.ref 得到403，纠正为固定比赛slug后成功；未产生写请求。
 
@@ -62,3 +62,66 @@ H30 Kernel135183277 / V1 / SV351467088普通COMPLETE，下载前后身份和完�
 同次D960（56416049 / V1 / SV351441983）、R00（56416053 / V1 / SV351442164）、S50（56407778 / V1 / SV351350449）、G58（56407804 / V1 / SV351350591）均PENDING、原始Public=""。G1（56270217 / V1 / SV350197436）COMPLETE，原始Public="0.948"。三臂实际CSV均PASS；旧G1/S50/G58沿用既有检查，本轮只查分。
 
 累计Notebook3/3、Save & Run3/4、正式请求3/3，每臂各一次；共享工程备用未用，训练、Dataset写入、额外G1推理、最终选择修改均0。三臂运行、验收及正式提交阶段完成，正式得分仍待返回。下一步仅按已有ID只读查分，不重跑、不重提、不建立后台定时器。原始CSV和日志留在Git外；本节取代上文历史H30待完成状态。
+
+## 2026-09-21 22:36:15 上海：全部正式结果与集中比较
+
+只读API完整返回38条团队submission，无下一页，全部COMPLETE、无错误；完整列表如下。当前Public Score排序前八为D960、F1、G1、A18、B22、G58、R00、H30；前七显示0.948，H30显示0.947。D960确实是平台按Public Score排序的第一项，F1第二项。这是比仅看三位显示分更有区分力的排序证据；API仍只提供三位字符串，未取得精确领先幅度或同分排序规则，因此不编造隐藏精度差值。
+
+页面规则为最多选择2个提交计入最终榜；手选不足2个时从最高分提交自动补选。当前手选0/2，按当前排序对应D960和F1。不是删除其余记录，也不是已经得知最终Private排名。本次仅更改列表排序，未更改任何最终选择。
+
+相对G1显示0.948：D960/R00/G58/A18/B22/F1均PUBLIC_TIED（显示差0.000）；其中D960平台分数排序第一单独记录，不再把所有显示0.948解释为完全等价。H30为0.947，显示差-0.001；S50为0.943，显示差-0.005。没有三位显示分提升，D960的排序领先已观测，Private未知。三臂CSV检查均PASS，正式请求各一次且均成功出分。预算Notebook3/3、Save & Run3/4、正式3/3，训练/Dataset/最终选择修改均0；本次平台写请求0。
+
+|方案|Version / SV|submission ID|Public|状态|
+|---|---|---:|---:|---|
+|D960|V1 / 351441983|56416049|0.948|COMPLETE|
+|F1|V1 / 351084196|56375774|0.948|COMPLETE|
+|G1|V1 / 350197436|56270217|0.948|COMPLETE|
+|A18|V1 / 351207161|56383942|0.948|COMPLETE|
+|B22|V1 / 351207989|56384003|0.948|COMPLETE|
+|G58|V1 / 351350591|56407804|0.948|COMPLETE|
+|R00|V1 / 351442164|56416053|0.948|COMPLETE|
+|H30|V1 / 351467088|56419440|0.947|COMPLETE|
+|S50|V1 / 351350449|56407778|0.943|COMPLETE|
+
+### 全部38条正式结果（按提交时间倒序）
+
+|submission ID|方案原描述|原始Public|状态|
+|---:|---|---:|---|
+|56419440|BIOHUB_SCORE_TRIO_20260921_V01 H30 V1 SV351467088|0.947|COMPLETE|
+|56416053|BIOHUB_SCORE_TRIO_20260921_V01 R00 V1 SV351442164|0.948|COMPLETE|
+|56416049|BIOHUB_SCORE_TRIO_20260921_V01 D960 V1 SV351441983|0.948|COMPLETE|
+|56411991|Notebook biohub-v1-grouped ac4fdc  /  Version 1|0.943|COMPLETE|
+|56407804|BIOHUB_SCORE_PAIR2_20260920_V01 G58 V1 SV351350591|0.948|COMPLETE|
+|56407778|BIOHUB_SCORE_PAIR2_20260920_V01 S50 V1 SV351350449|0.943|COMPLETE|
+|56388962|Notebook biohub-lf-dctta025-sectta1  /  Version 1|0.947|COMPLETE|
+|56384003|BIOHUB_DIVGATE_PAIR_20260920_V01 B22 V1 SV351207989|0.948|COMPLETE|
+|56383942|BIOHUB_DIVGATE_PAIR_20260920_V01 A18 V1 SV351207161|0.948|COMPLETE|
+|56379064|Notebook biohub-lf-dctta-v020  /  Version 1|0.947|COMPLETE|
+|56375774|BIOHUB_F1_FLOW_KAGGLE_20260918 F1 V1 SV351084196|0.948|COMPLETE|
+|56351727|Notebook 🔬 [0.146 PB] BioHub 4D Cell Tracking  /  Version 1|0.146|COMPLETE|
+|56346797|Notebook biohub-942tta-repro-20260907  /  Version 1|0.945|COMPLETE|
+|56346069|Notebook biohub-lf-hoctveto-div-b  /  Version 1|0.947|COMPLETE|
+|56345834|Notebook Biohub Top 3 Push V50 Streamlined SOTA  /  Version 1|0.907|COMPLETE|
+|56333225|Notebook biohub-940e  /  Version 1|0.940|COMPLETE|
+|56332456|Notebook 0.938  /  Version 1|0.938|COMPLETE|
+|56332306|Notebook biohub-repro059-public-0947-exact-copy  /  Version 2|0.947|COMPLETE|
+|56332302|Notebook Biohub frontier947 gapfill det096 v1  /  Version 1|0.947|COMPLETE|
+|56332275|Notebook biohub-repro059-public-0947-exact-copy  /  Version 1|0.947|COMPLETE|
+|56270217|BIOHUB_SPRINT01_20260916 G1 V1 SV350197436|0.948|COMPLETE|
+|56226396|DIVISION_TRAIN_20260914  /  V1  /  SV349707105  /  SHA256 35ec0b376b94843722ac9e8107a0929ccf9a49f94d7bbac99b3093c4618ee123|0.945|COMPLETE|
+|56222238|TARGET950_RUN_20260914  /  V1  /  SV349666428  /  SHA256 cdefc823f59d0490e2ced01959e026ebfdd5c4b6f41d74ccb1c7bac4f61a6230|0.947|COMPLETE|
+|56160258|Notebook Biohub Lineage Forge — Precision Tracking  /  Version 1|0.947|COMPLETE|
+|56113466|LINEFIT_BOUNDARY_20260909  /  V1  /  SV348415815  /  SHA256 4271519ed44e28da93e89128fc6e39515f954e96b8c2d0a9b102c23f3e08f11b|0.946|COMPLETE|
+|56094423|PUBLIC946_TTA_20260908 C2  /  V1  /  SV348150127  /  SHA256 2f714f4159667aed98d4fa9b49256da2e44c29b8697c703f253a4ab765d04759|0.946|COMPLETE|
+|56092872|PUBLIC946_TTA_20260908 C1  /  V1  /  SV348131494  /  SHA256 accb328eeae3732101711c8d9b7e7a2c267ccd787c7228e72244b55f5488331f|0.940|COMPLETE|
+|56091397|PUBLIC946_TTA_20260908 B0  /  V1  /  SV348114666  /  SHA256 1ae0ac1beb9599308119c380056c05ebc69c230395b37bc3d0966c3107153f19|0.946|COMPLETE|
+|56087974|Notebook Biohub Harmonic Fusion  /  Version 1|0.946|COMPLETE|
+|56069192|V21A parent9 dc026  /  Version 1  /  SV 347862850  /  SHA256 9537aa87092fe2e0d130b9b23ffffb9796b6d6ee2d29b366c09bebce044223e0|0.942|COMPLETE|
+|56066361|Notebook Biohub  LB 942  /  Version 1|0.942|COMPLETE|
+|56066312|Notebook biohub-run77  /  Version 1|0.942|COMPLETE|
+|56025033|Notebook .941_biohub-fresh-adaptive-assoc  /  Version 1|0.941|COMPLETE|
+|56002593|Notebook biohub-v19c-dualwide-9-14-2-25  /  Version 1|0.940|COMPLETE|
+|55978992|Notebook biohub-v19c-public0939-sis14-only  /  Version 1|0.939|COMPLETE|
+|55976559|Notebook biohub-div45-stack  /  Version 1|0.938|COMPLETE|
+|55976471|Notebook skkd  /  Version 1|0.938|COMPLETE|
+|55311118|Notebook Biohub Solution  /  Version 1|0.885|COMPLETE|
