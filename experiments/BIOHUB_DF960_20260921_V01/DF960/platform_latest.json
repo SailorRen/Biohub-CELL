@@ -1,0 +1,52 @@
+{
+  "arm": "DF960",
+  "observed_at_utc": "2026-09-21T15:08:05.409194+00:00",
+  "observed_at_shanghai": "2026-09-21T23:08:05.409194+08:00",
+  "writes": 0,
+  "ref": "sailorren/biohub-df960-flow-20260921",
+  "kernel_id": 135257948,
+  "version": 1,
+  "script_version_id": 351617874,
+  "script_version_id_source": "signed-in notebook edit/run link, observed without opening editor",
+  "kernel_status": "RUNNING",
+  "private": true,
+  "source_equal": true,
+  "source_comparison": "all cells type and source; platform JSON serialization differs",
+  "local_notebook_sha256": "17ab1c1ff18d6b692d1f30a8e40e3a866b59e966760efa3fbd648b24bebfb813",
+  "remote_notebook_sha256": "e60856aaae0428a4055e75c4c757df9c5f2e60117cc0da83507ae3b018ba8bc4",
+  "cell_count": 14,
+  "metadata": {
+    "id": 135257948,
+    "ref": "sailorren/biohub-df960-flow-20260921",
+    "title": "Biohub DF960 Flow 20260921",
+    "author": "Sailor Ren",
+    "slug": "biohub-df960-flow-20260921",
+    "lastRunTime": "2026-09-18T15:08:03.950Z",
+    "language": "python",
+    "kernelType": "notebook",
+    "isPrivate": true,
+    "enableGpu": true,
+    "enableInternet": false,
+    "categoryIds": [
+      "gpu"
+    ],
+    "datasetDataSources": [
+      "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+      "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+      "pilkwang/biohub-tracking-support-pack-50ep-v1"
+    ],
+    "kernelDataSources": [
+      "sailorren/biohub-division-train-20260914"
+    ],
+    "competitionDataSources": [
+      "biohub-cell-tracking-during-development"
+    ],
+    "enableTpu": false,
+    "currentVersionNumber": 1,
+    "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+    "machineShape": "NvidiaTeslaT4"
+  },
+  "submission_id": null,
+  "public_score": null,
+  "formal_status": "NOT_SUBMITTED"
+}

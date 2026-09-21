@@ -87,7 +87,7 @@ for arm in sys.argv[1:] or ['DF960']:
   assert set(flow['final_flow_calls'])==set(EXPECTED) and all(x['enabled'] and x['motion_calls']>0 for x in flow['final_flow_calls'].values())
   assert sum(x['predictions'] for x in flow['final_flow_calls'].values())>0,'FLOW_NO_CONSUMPTION'
   assert flow['selected_label']==r['selected_label'] and flow['selected_config']==r['selected_config']
-  fp=Path('/private/tmp/df960-private/f1_submission.csv');fb,_=parse(fp);assert any(x['changed'] for x in frozen.diff_contents(fb,final)),'DUPLICATE_F1'
+  fp=Path('/private/tmp/df960-private/f1_submission.csv');assert h(fp)==json.loads((P/'f1_output_binding.json').read_text())['csv_sha256'];fb,_=parse(fp);assert any(x['changed'] for x in frozen.diff_contents(fb,final)),'DUPLICATE_F1'
  for prior_dir in [P.parent/'BIOHUB_SCORE_PAIR2_20260920_V01',P.parent/'BIOHUB_SCORE_TRIO_20260921_V01',old]:
   for prior_proof in prior_dir.glob('*/formal_precheck.json'):
    prior=json.loads(prior_proof.read_text())

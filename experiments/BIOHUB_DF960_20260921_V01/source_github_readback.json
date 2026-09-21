@@ -1,0 +1,123 @@
+{
+  "commit": "eb231c474e435f5255ece0c4745250b1d38c5904",
+  "remote_head": "eb231c474e435f5255ece0c4745250b1d38c5904",
+  "files": [
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/DF960/candidate.ipynb",
+      "sha256": "17ab1c1ff18d6b692d1f30a8e40e3a866b59e966760efa3fbd648b24bebfb813",
+      "bytes": 270667,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/DF960/kernel-metadata.json",
+      "sha256": "e02b1b6b62efcf120730fccb793b01df3c288370fc94d37c8fc9dd454722091e",
+      "bytes": 842,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/batch_manifest.json",
+      "sha256": "3201f8212488e8c0d19937b0ca40b0a2d47623fd2253d16d3ba0bcb92c57b97c",
+      "bytes": 2044,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/build.py",
+      "sha256": "f2b8374a84d18f4076974f58624dcfa679ad8cd990cd806cd15c515fb9a2e7fc",
+      "bytes": 5003,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/check_outputs.py",
+      "sha256": "da8612da8305026799b184e40dff35a29e346222ae9b30f6f483b57991a41194",
+      "bytes": 9187,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/collect_outputs.py",
+      "sha256": "97f7d25fbfc8757eb87833dd5792018e67e2edbc025370bd6e6476d194ff9f21",
+      "bytes": 3771,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/flow_patch.py",
+      "sha256": "d2511cb21d536d230a6607d3119bccb1d931e21f4ec49237790d6dc335266896",
+      "bytes": 3951,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/initial_reconciliation.json",
+      "sha256": "c99d32be687851bb76278a4dfa648761b75d9596ae95cec26692734d0e0c611d",
+      "bytes": 10838,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/launch_once.py",
+      "sha256": "b984fbc311b0829fce745c2c48f4b711a86dbf45b6bb813a853583e628ffba79",
+      "bytes": 5764,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/launch_ui_gate.json",
+      "sha256": "4c00cf0fb896d9ee4cf2239cd9a7f671b5356ab8742a0af51f5054722315efce",
+      "bytes": 357,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/local_tests.json",
+      "sha256": "b7b43aeed496150afa66faf9a2b3b0de52a32d7b6d3beaa9fbcbb9a5bda54246",
+      "bytes": 408,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/platform_ledger.json",
+      "sha256": "dc592bb0951cd082e84b0b3a1be405d543b69af5eecf11f08a9c46d85d67328b",
+      "bytes": 240,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/read_formal_status.py",
+      "sha256": "d800ebcad89117c71b88debcacbe98bc3b3550586c98253b31adf86c1f7ecb1d",
+      "bytes": 2639,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/read_github.py",
+      "sha256": "7ff4fa9ae64af4c9a73ad5d062be83f090510ec8814c483cf6408fd844a47aa4",
+      "bytes": 1467,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/read_pair.py",
+      "sha256": "6f19931d051f11c72c70c3c3d1e9f349f7b512d42820bae98d2be0bea26e30d8",
+      "bytes": 3345,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/source.diff",
+      "sha256": "2839fd2dd83f9e5396595eab21db313ccd3bb5b35b309bcdfe70ac1e5440341a",
+      "bytes": 22943,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/submit_once.py",
+      "sha256": "d635ddf4c1751f7b03a95ac0035708e2db9abb364f6548d2533c0a4e07c7eb45",
+      "bytes": 5724,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/test_flow.py",
+      "sha256": "6a24a69789c8231265e9c55a9f4912634e403e0c11b6fee068fec7569e59bbdd",
+      "bytes": 3277,
+      "equal": true
+    },
+    {
+      "path": "reports/20260921_BIOHUB_DF960_ONE_SHOT_V01.md",
+      "sha256": "944bd588167049cd2d153ea1e8a31891744d67747baa6baaa34b1666def3ed5f",
+      "bytes": 2180,
+      "equal": true
+    }
+  ],
+  "status": "COMPLETED_VERIFIED",
+  "scope": "fixed payload bytes only",
+  "observed_at_utc": "2026-09-21T15:06:12.124152+00:00"
+}

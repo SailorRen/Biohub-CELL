@@ -12,3 +12,7 @@
 ## 当前执行
 
 账号sailorren；初始团队当日4/5已用、剩1，目标slug全量owned inventory不存在。GPU UI9h46m，Active Events0。不假定上海午夜刷新。候选已构建，实际生产、CSV检查及正式提交尚未执行；NOT_SUBMITTED，Public=null。预算上限Notebook1、SaveRun2（计划1+明确工程备用1）、正式1；训练/Dataset/其他候选/最终选择0。唯一请求账本platform_ledger.json。
+
+## 已启动的唯一生产运行
+
+上海2026-09-21 23:06:43持久化并发送一次Save & Run，Kernel135257948 / V1 / SV351617874，source commit eb231c474e435f5255ece0c4745250b1d38c5904，Notebook SHA256 17ab1c1ff18d6b692d1f30a8e40e3a866b59e966760efa3fbd648b24bebfb813。平台全14代码单元回读一致，私有、GPU T4x2、Internet关闭；普通RUNNING。正式NOT_SUBMITTED / submission=null / Public=null，CSV尚待普通完成。已用Notebook1/1、SaveRun1/2、正式0/1。已有F1 V1实际CSV已回收至Git外，用于候选完成后的规范化去重，不产生GPU对照运行。
