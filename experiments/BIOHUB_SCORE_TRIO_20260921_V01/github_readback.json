@@ -1,111 +1,45 @@
 {
-  "commit": "6826da804c59e9e883840503d2c23b518be42897",
-  "remote_head": "6826da804c59e9e883840503d2c23b518be42897",
+  "commit": "17afe0426be4bcfa3ab4f092781a4a92e2e32ce8",
+  "remote_head": "17afe0426be4bcfa3ab4f092781a4a92e2e32ce8",
   "files": [
     {
       "path": "experiments/BIOHUB_SCORE_TRIO_20260921_V01/D960/platform_latest.json",
-      "sha256": "c45b542cafcf02bea380f96a85129f6ac6bd11509b5d3c1840ad0535a501cb32",
-      "bytes": 1852,
-      "equal": true
-    },
-    {
-      "path": "experiments/BIOHUB_SCORE_TRIO_20260921_V01/D960/ui_binding.json",
-      "sha256": "de0fd5d6f1750f5d13f78653c9f28d99e1f692b66dd6a1c38db1dd5a6afdbca8",
-      "bytes": 215,
-      "equal": true
-    },
-    {
-      "path": "experiments/BIOHUB_SCORE_TRIO_20260921_V01/H30/platform_latest.json",
-      "sha256": "1346bf04a24f22fa98de0e8076c89a57172266bde2dd0851b0bc2fc4663452b2",
-      "bytes": 466,
+      "sha256": "41e18a9f9dddbcbfc3477556fe898f17746f3949c95c1ee00d80d83c27e36934",
+      "bytes": 1853,
       "equal": true
     },
     {
       "path": "experiments/BIOHUB_SCORE_TRIO_20260921_V01/R00/platform_latest.json",
-      "sha256": "ba818d49f94411257c89413f9f29e9091e072537eea4f9f8e2094772206613d4",
-      "bytes": 1891,
-      "equal": true
-    },
-    {
-      "path": "experiments/BIOHUB_SCORE_TRIO_20260921_V01/R00/ui_binding.json",
-      "sha256": "4b2a2e7bbcfe23115630c0397d8bcf2ea8eb5264772a537c1b863610b5902fee",
-      "bytes": 215,
-      "equal": true
-    },
-    {
-      "path": "experiments/BIOHUB_SCORE_TRIO_20260921_V01/check_outputs.py",
-      "sha256": "343c5c45a0897d9299df624e81dff80ad60474e1810559763d0c9bf03965b44d",
-      "bytes": 8390,
+      "sha256": "ea634af4ebd4d4246c13d906b95f98283085c58bde708e9e59ad0e17c03a386d",
+      "bytes": 1892,
       "equal": true
     },
     {
       "path": "experiments/BIOHUB_SCORE_TRIO_20260921_V01/execution_status.json",
-      "sha256": "4f41976c38a95333bb5ffc7b24073956bc1d1356d68e7ef2303dffbdb62d0cd7",
-      "bytes": 5459,
+      "sha256": "29c0612f8a7317636cf3df7bb2707570fb3c793168a99db247aa8de4cfeb99f8",
+      "bytes": 5489,
       "equal": true
     },
     {
       "path": "experiments/BIOHUB_SCORE_TRIO_20260921_V01/formal_status_snapshot.json",
-      "sha256": "d39aa8139018200634bdbe5ef20c366e1fc6886831210ac19deb5a48852796e6",
+      "sha256": "54660a334964fd8c1f21e55c132be9481b3633eb63c1ef7bb1472e006a366f77",
       "bytes": 7345,
       "equal": true
     },
     {
-      "path": "experiments/BIOHUB_SCORE_TRIO_20260921_V01/launch_once.py",
-      "sha256": "64982eb60b7d218a83e5f9d9d85b8569e8b38347c17e541d7d24c9c1fe7aa565",
-      "bytes": 5773,
-      "equal": true
-    },
-    {
-      "path": "experiments/BIOHUB_SCORE_TRIO_20260921_V01/launch_ui_gate.json",
-      "sha256": "fa85b83c13c0a6aea90582632cbc387ec3c05561db43e4cfc6264d2f9b16b85a",
-      "bytes": 486,
-      "equal": true
-    },
-    {
       "path": "experiments/BIOHUB_SCORE_TRIO_20260921_V01/platform_ledger.json",
-      "sha256": "f9b5b9d6b488bec7db5eba59ca2dba40541bed131fe22021edef17910c493057",
-      "bytes": 2349,
-      "equal": true
-    },
-    {
-      "path": "experiments/BIOHUB_SCORE_TRIO_20260921_V01/prewrite_D960.json",
-      "sha256": "9c0f1ca9cf189c4605b217ba232591d27ccb0845e2663d279df5f08820383f88",
-      "bytes": 11183,
-      "equal": true
-    },
-    {
-      "path": "experiments/BIOHUB_SCORE_TRIO_20260921_V01/prewrite_R00.json",
-      "sha256": "4fd6f5f56acfb8fa91be2087e8bd6e4bc50eb32c3f75840371b234428ef7bdb6",
-      "bytes": 11280,
-      "equal": true
-    },
-    {
-      "path": "experiments/BIOHUB_SCORE_TRIO_20260921_V01/protected_state.json",
-      "sha256": "8656ba9553bfea2cdcdd884b5ccb8e477646d4b850e2b115504e2a40f26f6e94",
-      "bytes": 584,
-      "equal": true
-    },
-    {
-      "path": "experiments/BIOHUB_SCORE_TRIO_20260921_V01/read_github.py",
-      "sha256": "1f619d814f0556f058aef7bc46ee3a323b034fb24df98b12fd03505cc771c2bd",
-      "bytes": 1455,
-      "equal": true
-    },
-    {
-      "path": "experiments/BIOHUB_SCORE_TRIO_20260921_V01/source_github_readback.json",
-      "sha256": "e320c444aa850373943e1cb9cb052b9032f51180d8c91a35ced868d8271de02f",
-      "bytes": 6515,
+      "sha256": "952b8248bf764306a7b73e94e71cb12d907c641580d71ca91189ea753f1cce8d",
+      "bytes": 2353,
       "equal": true
     },
     {
       "path": "reports/20260921_BIOHUB_SCORE_TRIO_V01.md",
-      "sha256": "de51714b2158316f6a7d2f6aae770451a0d246c525fc259f2eaf5bfee3637de5",
-      "bytes": 4699,
+      "sha256": "de861a0620af20b4270252b7075e40284a84805500fd60ea8a41954ca922539f",
+      "bytes": 5455,
       "equal": true
     }
   ],
   "status": "COMPLETED_VERIFIED",
   "scope": "fixed payload bytes only",
-  "observed_at_utc": "2026-09-21T01:55:19.892136+00:00"
+  "observed_at_utc": "2026-09-21T04:08:32.718896+00:00"
 }
