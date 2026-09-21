@@ -1,12 +1,12 @@
 {
-  "observed_at_utc": "2026-09-21T04:23:14.391445+00:00",
+  "observed_at_utc": "2026-09-21T06:37:03.844958+00:00",
   "task_delivery": "PAYLOAD_BYTES_VERIFIED",
-  "execution": "D960_R00_SUBMITTED_H30_RUNNING",
+  "execution": "ALL_THREE_SUBMITTED",
   "score": "SCORE_PENDING",
   "counts": {
     "new_private_notebooks": 3,
     "save_and_run": 3,
-    "formal_submission": 2,
+    "formal_submission": 3,
     "training": 0,
     "dataset_write": 0,
     "final_selection_change": 0,
@@ -15,8 +15,8 @@
   "arms": {
     "D960": {
       "arm": "D960",
-      "observed_at_utc": "2026-09-21T04:23:08.006359+00:00",
-      "observed_at_shanghai": "2026-09-21T12:23:08.006359+08:00",
+      "observed_at_utc": "2026-09-21T06:34:05.305452+00:00",
+      "observed_at_shanghai": "2026-09-21T14:34:05.305452+08:00",
       "writes": 0,
       "ref": "sailorren/biohub-g1-det0960-20260921",
       "kernel_id": 135169669,
@@ -36,7 +36,7 @@
         "title": "biohub-g1-det0960-20260921",
         "author": "Sailor Ren",
         "slug": "biohub-g1-det0960-20260921",
-        "lastRunTime": "2026-09-18T04:23:07.375Z",
+        "lastRunTime": "2026-09-18T06:34:04.834Z",
         "language": "python",
         "kernelType": "notebook",
         "isPrivate": true,
@@ -64,12 +64,12 @@
       "submission_id": 56416049,
       "public_score": null,
       "formal_status": "PENDING",
-      "formal_observed_at_utc": "2026-09-21T04:23:14.391445+00:00"
+      "formal_observed_at_utc": "2026-09-21T06:37:03.844958+00:00"
     },
     "R00": {
       "arm": "R00",
-      "observed_at_utc": "2026-09-21T04:23:10.092352+00:00",
-      "observed_at_shanghai": "2026-09-21T12:23:10.092352+08:00",
+      "observed_at_utc": "2026-09-21T06:34:07.362881+00:00",
+      "observed_at_shanghai": "2026-09-21T14:34:07.362881+08:00",
       "writes": 0,
       "ref": "sailorren/biohub-g1-rescue-trigger000-20260921",
       "kernel_id": 135169776,
@@ -89,7 +89,7 @@
         "title": "biohub-g1-rescue-trigger000-20260921",
         "author": "Sailor Ren",
         "slug": "biohub-g1-rescue-trigger000-20260921",
-        "lastRunTime": "2026-09-18T04:23:09.182Z",
+        "lastRunTime": "2026-09-18T06:34:07.019Z",
         "language": "python",
         "kernelType": "notebook",
         "isPrivate": true,
@@ -117,19 +117,19 @@
       "submission_id": 56416053,
       "public_score": null,
       "formal_status": "PENDING",
-      "formal_observed_at_utc": "2026-09-21T04:23:14.391445+00:00"
+      "formal_observed_at_utc": "2026-09-21T06:37:03.844958+00:00"
     },
     "H30": {
       "arm": "H30",
-      "observed_at_utc": "2026-09-21T04:23:11.773616+00:00",
-      "observed_at_shanghai": "2026-09-21T12:23:11.773616+08:00",
+      "observed_at_utc": "2026-09-21T06:34:09.854455+00:00",
+      "observed_at_shanghai": "2026-09-21T14:34:09.854455+08:00",
       "writes": 0,
       "ref": "sailorren/biohub-g1-harmonic030-20260921",
       "kernel_id": 135183277,
       "version": 1,
       "script_version_id": 351467088,
       "script_version_id_source": "signed-in notebook edit/run link, observed without opening editor",
-      "kernel_status": "RUNNING",
+      "kernel_status": "COMPLETE",
       "private": true,
       "source_equal": true,
       "source_comparison": "all cells type and source; platform JSON serialization differs",
@@ -142,7 +142,7 @@
         "title": "biohub-g1-harmonic030-20260921",
         "author": "Sailor Ren",
         "slug": "biohub-g1-harmonic030-20260921",
-        "lastRunTime": "2026-09-18T04:23:11.376Z",
+        "lastRunTime": "2026-09-18T06:34:09.096Z",
         "language": "python",
         "kernelType": "notebook",
         "isPrivate": true,
@@ -167,9 +167,10 @@
         "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
         "machineShape": "NvidiaTeslaT4"
       },
-      "submission_id": null,
+      "submission_id": 56419440,
       "public_score": null,
-      "formal_status": "NOT_SUBMITTED"
+      "formal_status": "PENDING",
+      "formal_observed_at_utc": "2026-09-21T06:37:03.844958+00:00"
     }
   },
   "checks": {
@@ -179,10 +180,10 @@
     "actual_csv_checks": {
       "D960": "PASS",
       "R00": "PASS",
-      "H30": "NOT_RUN_ORDINARY_RUNNING"
+      "H30": "PASS"
     },
-    "formal_requests": 2
+    "formal_requests": 3
   },
-  "next": "H30 exact V1 SV351467088: when ordinary COMPLETE collect actual outputs, check, submit once if eligible. D960/R00/S50/G58 read only scores. No relaunch and no background timer.",
-  "platform_writes_this_observation": 3
+  "next": "Read-only score observations; formal budget exhausted. No relaunch or resubmission.",
+  "platform_writes_this_observation": 1
 }
