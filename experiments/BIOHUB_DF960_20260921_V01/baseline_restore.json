@@ -1,0 +1,18 @@
+[
+  {
+    "arm": "D960",
+    "version": 1,
+    "source_sha256": "810dc353011da19665b34b2075e4e5f0157becc4bab726b4cfea8940fd122c82",
+    "csv_sha256": "6994fb4bf97d91f8af0b7ed7a22a706a066e64493c68c38dcc7a83f7032d58f1",
+    "bytes": 12613838,
+    "platform_writes": 0
+  },
+  {
+    "arm": "F1",
+    "version": 1,
+    "source_sha256": "a7cb7f8a0da5b5055594779019ebb3ab688e3ce5916079d23b59574b628720b1",
+    "csv_sha256": "da80c6aa879f1531a35088e029cf3f9658108265ee9c74d959d86e64182f6726",
+    "bytes": 12547146,
+    "platform_writes": 0
+  }
+]

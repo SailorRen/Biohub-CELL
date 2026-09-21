@@ -16,3 +16,11 @@
 ## 已启动的唯一生产运行
 
 上海2026-09-21 23:06:43持久化并发送一次Save & Run，Kernel135257948 / V1 / SV351617874，source commit eb231c474e435f5255ece0c4745250b1d38c5904，Notebook SHA256 17ab1c1ff18d6b692d1f30a8e40e3a866b59e966760efa3fbd648b24bebfb813。平台全14代码单元回读一致，私有、GPU T4x2、Internet关闭；普通RUNNING。正式NOT_SUBMITTED / submission=null / Public=null，CSV尚待普通完成。已用Notebook1/1、SaveRun1/2、正式0/1。已有F1 V1实际CSV已回收至Git外，用于候选完成后的规范化去重，不产生GPU对照运行。
+
+## 2026-09-22 续接：提交前独立复核
+
+上海07:53，精确V1/SV351617874普通COMPLETE，平台源码全单元一致，运行12989秒。实际CSV共241944行、4样本；原始SHA256为4798073c56ce777b217898afda628120aa493452053e1f6866321548b06f0405，规范化内容SHA256为82366701907d91135dfd94bc3c352546c5122b79b9e645772de9a044378f4c96。check_outputs.py独立复核PASS：官方schema、样本覆盖、坐标、图端点/时间/度、官方reader回读、输出和回执一致；模型权重、det0.960、flow配置与实际调用、其余配置通过。原选择器选择combo(tight55+relaxed9)。
+
+4个样本相对归档D960实际CSV均变化，合计节点净减118，边增加2565、移除2784；与F1及已有候选规范化内容不重复。跨运行输入字节同一性未重新独立建立，差异不代表精度提升。历史D960/F1输出从平台恢复并与原归档字节哈希一致，完整CSV/图不入Git。
+
+最初只读下载遇到连接中断，随后完整下载及哈希核验成功；没有新增Save & Run。平台提交列表未见DF960，UI无活动作业，GPU剩6h10m，提交入口可用；正式请求发送前再次API核对配额。此阶段正式NOT_SUBMITTED，Public=null。

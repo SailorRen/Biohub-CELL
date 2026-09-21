@@ -10,7 +10,7 @@
       "source_sha256": "17ab1c1ff18d6b692d1f30a8e40e3a866b59e966760efa3fbd648b24bebfb813",
       "at_utc": "2026-09-21T15:06:43.897776+00:00",
       "at_shanghai": "2026-09-21T23:06:43.897804+08:00",
-      "status": "RUNNING_VERIFIED",
+      "status": "READBACK_VERIFIED",
       "counted": 1,
       "response": {
         "ref": "/code/sailorren/biohub-df960-flow-20260921",
@@ -22,8 +22,8 @@
       "kernel_id": 135257948,
       "version": 1,
       "script_version_id": 351617874,
-      "last_observed_at_utc": "2026-09-21T15:08:05.409194+00:00",
-      "last_kernel_status": "RUNNING",
+      "last_observed_at_utc": "2026-09-21T23:46:39.968915+00:00",
+      "last_kernel_status": "COMPLETE",
       "source_equal": true,
       "private": true
     }
