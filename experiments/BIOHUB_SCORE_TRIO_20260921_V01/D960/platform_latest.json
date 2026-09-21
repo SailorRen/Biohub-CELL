@@ -1,7 +1,7 @@
 {
   "arm": "D960",
-  "observed_at_utc": "2026-09-21T04:03:48.376163+00:00",
-  "observed_at_shanghai": "2026-09-21T12:03:48.376163+08:00",
+  "observed_at_utc": "2026-09-21T04:18:07.638294+00:00",
+  "observed_at_shanghai": "2026-09-21T12:18:07.638294+08:00",
   "writes": 0,
   "ref": "sailorren/biohub-g1-det0960-20260921",
   "kernel_id": 135169669,
@@ -21,7 +21,7 @@
     "title": "biohub-g1-det0960-20260921",
     "author": "Sailor Ren",
     "slug": "biohub-g1-det0960-20260921",
-    "lastRunTime": "2026-09-18T04:03:47.735Z",
+    "lastRunTime": "2026-09-18T04:18:06.374Z",
     "language": "python",
     "kernelType": "notebook",
     "isPrivate": true,

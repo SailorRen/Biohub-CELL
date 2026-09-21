@@ -1,0 +1,129 @@
+{
+  "observed_at_utc": "2026-09-21T04:19:08.742709+00:00",
+  "observed_at_shanghai": "2026-09-21T12:19:08.742709+08:00",
+  "source_before": {
+    "ref": "sailorren/biohub-g1-rescue-trigger000-20260921",
+    "kernel_id": 135169776,
+    "version": 1,
+    "script_version_id": 351442164,
+    "source_sha256": "14a4ac59a444e20fe47754e2045bf55026b2347051aef974c495d5ec653b9da5",
+    "metadata": {
+      "id": 135169776,
+      "ref": "sailorren/biohub-g1-rescue-trigger000-20260921",
+      "title": "biohub-g1-rescue-trigger000-20260921",
+      "author": "Sailor Ren",
+      "slug": "biohub-g1-rescue-trigger000-20260921",
+      "lastRunTime": "2026-09-18T04:18:39.075Z",
+      "language": "python",
+      "kernelType": "notebook",
+      "isPrivate": true,
+      "enableGpu": true,
+      "enableInternet": false,
+      "categoryIds": [
+        "gpu"
+      ],
+      "datasetDataSources": [
+        "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+        "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+        "pilkwang/biohub-tracking-support-pack-50ep-v1"
+      ],
+      "kernelDataSources": [
+        "sailorren/biohub-division-train-20260914"
+      ],
+      "competitionDataSources": [
+        "biohub-cell-tracking-during-development"
+      ],
+      "enableTpu": false,
+      "currentVersionNumber": 1,
+      "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "machineShape": "NvidiaTeslaT4"
+    }
+  },
+  "source_after": {
+    "ref": "sailorren/biohub-g1-rescue-trigger000-20260921",
+    "kernel_id": 135169776,
+    "version": 1,
+    "script_version_id": 351442164,
+    "source_sha256": "14a4ac59a444e20fe47754e2045bf55026b2347051aef974c495d5ec653b9da5",
+    "metadata": {
+      "id": 135169776,
+      "ref": "sailorren/biohub-g1-rescue-trigger000-20260921",
+      "title": "biohub-g1-rescue-trigger000-20260921",
+      "author": "Sailor Ren",
+      "slug": "biohub-g1-rescue-trigger000-20260921",
+      "lastRunTime": "2026-09-18T04:19:06.239Z",
+      "language": "python",
+      "kernelType": "notebook",
+      "isPrivate": true,
+      "enableGpu": true,
+      "enableInternet": false,
+      "categoryIds": [
+        "gpu"
+      ],
+      "datasetDataSources": [
+        "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+        "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+        "pilkwang/biohub-tracking-support-pack-50ep-v1"
+      ],
+      "kernelDataSources": [
+        "sailorren/biohub-division-train-20260914"
+      ],
+      "competitionDataSources": [
+        "biohub-cell-tracking-during-development"
+      ],
+      "enableTpu": false,
+      "currentVersionNumber": 1,
+      "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "machineShape": "NvidiaTeslaT4"
+    }
+  },
+  "metadata_volatile_differences": {
+    "lastRunTime": [
+      "2026-09-18T04:18:39.075Z",
+      "2026-09-18T04:19:06.239Z"
+    ]
+  },
+  "output_version_binding": "current version verified V1 before and after exhaustive collection",
+  "inventory_pages": 5,
+  "inventory_count": 450,
+  "private_directory": "/private/tmp/score-trio-private/R00",
+  "artifacts": [
+    {
+      "name": "submission.csv",
+      "bytes": 12593499,
+      "sha256": "aa7ff235693942314f56ad7581462ed9237c15550b003ac1f6c33a3ab395fc14"
+    },
+    {
+      "name": "score_trio/production_receipt.json",
+      "bytes": 6759,
+      "sha256": "3073455d8e8e7f9f02d22c2cf3911b288680c2dce18b953b9a5cbf5bfa1130bd"
+    },
+    {
+      "name": "score_trio/postprocess_calls.jsonl",
+      "bytes": 37309,
+      "sha256": "6f44d3b93f33e3c7b839f5b7ab426c6c7dd4fa7a75136f1885a0768415e832b1"
+    },
+    {
+      "name": "bidirectional_production_runtime_integrity.json",
+      "bytes": 2387,
+      "sha256": "ae41130ee035d3ddcbaf2d0977f721429a52ffda8133fe1b877f51de5926278d"
+    },
+    {
+      "name": "sprint_production_receipt.json",
+      "bytes": 631,
+      "sha256": "5e0eb1e571e9002ff7dfbce82bdb92cdc8c82aa49f1c6fedcdadda922ed66766"
+    },
+    {
+      "name": "ppsweep_selected.json",
+      "bytes": 354,
+      "sha256": "24cf204fa4ce5842ae1f5ecd5855a8d83a76667088010bce22cd32f58c8e684f"
+    },
+    {
+      "name": "score_trio/g1_original.csv",
+      "bytes": 12561015,
+      "sha256": "01d070e371bb38147d603f5d26e38df782b1c95491d87a0b9210d20cc98bbca9"
+    }
+  ],
+  "log_sha256": "acca4e9f8ea01dbf1e20b3dccde31e11d9d913825910bb715a6e7d1f9e7f2610",
+  "platform_writes": 0
+}

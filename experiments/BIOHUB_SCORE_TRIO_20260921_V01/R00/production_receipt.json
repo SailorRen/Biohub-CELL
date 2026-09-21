@@ -1,0 +1,207 @@
+{
+  "arm": "R00",
+  "status": "READY_FOR_FORMAL_CHECK",
+  "engineering_status": "PASS",
+  "observed_at_utc": "2026-09-21T03:58:00.175011+00:00",
+  "observed_at_shanghai": "2026-09-21T11:58:00.175011+08:00",
+  "expected_samples": [
+    "44b6_0113de3b",
+    "44b6_0b24845f",
+    "6bba_05b6850b",
+    "6bba_05db0fb1"
+  ],
+  "final_csv_sha256": "aa7ff235693942314f56ad7581462ed9237c15550b003ac1f6c33a3ab395fc14",
+  "final_canonical_sha256": "3cb5fcef9ae864667dc0abb4d8bf13da936024ada4490a74c88e55d00c2a30ed",
+  "final_graphs": {
+    "44b6_0113de3b": {
+      "nodes": 25723,
+      "edges": 24982,
+      "divisions": 37,
+      "canonical_sha256": "d452c5af5ea49fdbae8e2742f7d526eb06548c417082fe1c91d9959da6eeafbf"
+    },
+    "44b6_0b24845f": {
+      "nodes": 20835,
+      "edges": 19519,
+      "divisions": 13,
+      "canonical_sha256": "1b63973cd0690b6c607d33a2f9dab38b0dafca058dbec367e8810791d4659680"
+    },
+    "6bba_05b6850b": {
+      "nodes": 6179,
+      "edges": 5974,
+      "divisions": 5,
+      "canonical_sha256": "d0a8c88e0fad5a84537a50171c257d330eda8bb232a9d6c26fbf4ba9878d2f47"
+    },
+    "6bba_05db0fb1": {
+      "nodes": 70408,
+      "edges": 68285,
+      "divisions": 19,
+      "canonical_sha256": "018e9f3f66274fae0dcd50c92e55980e8efea91526c43423ba5d7c3ebadb23ee"
+    }
+  },
+  "selected_label": "tight55",
+  "selected_config": {
+    "MOTION_RELINK_TIGHT_UM": 5.5
+  },
+  "original_resolved_config": {
+    "SAFE_DIV_MAX_UM": 9.0,
+    "SAFE_DIV_SISTER_MAX_UM": 14.0,
+    "SAFE_DIV_DIVERGE_UM": 2.25,
+    "SAFE_DIV_SISTER_SYMMETRY_TAU": 0.6,
+    "SAFE_DIV_EXISTING_CHILD_MAX_UM": 10.0,
+    "SAFE_DIV_FRAME_FRAC_CAP": 0.0076,
+    "SAFE_DIV_GLOBAL_FRAC_CAP": 0.00375,
+    "DEEPCENTER_SAFE_DIV_THRESHOLD": 0.2,
+    "DEEPCENTER_GAP_THRESHOLD": 0.25,
+    "GAP_CLOSE_UM": 5.0,
+    "OUTPUT_MIN_TRACK_LEN": 6,
+    "SHORT_TRACK_RESCUE_MIN_MEAN_EDGE_PROB": 0.88,
+    "MOTION_RELINK_TIGHT_UM": 5.5,
+    "MOTION_RELINK_RELAXED_UM": 10.0,
+    "GAP2_MAX_STEP_UM": 4.4,
+    "GAP2_MAX_TOTAL_UM": 10.2,
+    "MOTION_RELINK_LEARNED_BONUS": 1.0,
+    "MOTION_RELINK_VELOCITY_WEIGHT": 0.5,
+    "GAP_CLOSE_REUSE_UM": 3.2,
+    "OUTPUT_EDGE_MAX_UM": 14.0,
+    "SHORT_TRACK_RESCUE_TRIGGER_REMOVED_FRAC": 0.1
+  },
+  "final_resolved_config": {
+    "SAFE_DIV_MAX_UM": 9.0,
+    "SAFE_DIV_SISTER_MAX_UM": 14.0,
+    "SAFE_DIV_DIVERGE_UM": 2.25,
+    "SAFE_DIV_SISTER_SYMMETRY_TAU": 0.6,
+    "SAFE_DIV_EXISTING_CHILD_MAX_UM": 10.0,
+    "SAFE_DIV_FRAME_FRAC_CAP": 0.0076,
+    "SAFE_DIV_GLOBAL_FRAC_CAP": 0.00375,
+    "DEEPCENTER_SAFE_DIV_THRESHOLD": 0.2,
+    "DEEPCENTER_GAP_THRESHOLD": 0.25,
+    "GAP_CLOSE_UM": 5.0,
+    "OUTPUT_MIN_TRACK_LEN": 6,
+    "SHORT_TRACK_RESCUE_MIN_MEAN_EDGE_PROB": 0.88,
+    "MOTION_RELINK_TIGHT_UM": 5.5,
+    "MOTION_RELINK_RELAXED_UM": 10.0,
+    "GAP2_MAX_STEP_UM": 4.4,
+    "GAP2_MAX_TOTAL_UM": 10.2,
+    "MOTION_RELINK_LEARNED_BONUS": 1.0,
+    "MOTION_RELINK_VELOCITY_WEIGHT": 0.5,
+    "GAP_CLOSE_REUSE_UM": 3.2,
+    "OUTPUT_EDGE_MAX_UM": 14.0,
+    "SHORT_TRACK_RESCUE_TRIGGER_REMOVED_FRAC": 0.0
+  },
+  "worker_detection_weight": 0.8,
+  "worker_det_threshold": 0.965,
+  "worker_bidirectional_weight": 0.15,
+  "worker_harmonic_records": [
+    {
+      "weight": 0.15,
+      "mode": "harmonic_probability"
+    },
+    {
+      "weight": 0.15,
+      "mode": "harmonic_probability"
+    },
+    {
+      "weight": 0.15,
+      "mode": "harmonic_probability"
+    },
+    {
+      "weight": 0.15,
+      "mode": "harmonic_probability"
+    }
+  ],
+  "worker_test_records": 400,
+  "worker_config_verified": true,
+  "worker_retention_summary": {
+    "44b6_0113de3b": {
+      "frames": 100,
+      "fallback_frames": 0,
+      "minimum_retention": 0.9926739926739927,
+      "median_retention": 1.0118578927634045
+    },
+    "44b6_0b24845f": {
+      "frames": 100,
+      "fallback_frames": 64,
+      "minimum_retention": 0.45307443365695793,
+      "median_retention": 0.8618514846811123
+    },
+    "6bba_05b6850b": {
+      "frames": 100,
+      "fallback_frames": 1,
+      "minimum_retention": 0.8918918918918919,
+      "median_retention": 1.0137012012012012
+    },
+    "6bba_05db0fb1": {
+      "frames": 100,
+      "fallback_frames": 0,
+      "minimum_retention": 0.9715142428785607,
+      "median_retention": 1.0110725229826354
+    }
+  },
+  "original_selector_unchanged": true,
+  "training_calls": 0,
+  "weights": {
+    "primary": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+    "secondary": "9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f",
+    "deepcenter": "8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0"
+  },
+  "gate_weight_sha256": "0a1f9b93bb529e70f4f7c2ba0907eea8b4cecd2befccc8ba1fb75e569edf77a0",
+  "official_reader_sha256": "c0fe1868d4550235c4673d4a3fc5e2d6ab0402f3cd0bac73eec8d1348eb9690d",
+  "csv_roundtrip": "PASS",
+  "raw_input_copy_isolation": true,
+  "dependency_versions": {
+    "tracksdata": "0.1.0rc6.dev3+g980c2d30a",
+    "polars": "1.42.0",
+    "numpy": "2.0.2",
+    "scipy": "1.16.3",
+    "geff": "1.2.0.1.1",
+    "zarr": "3.2.1",
+    "torch": "2.10.0+cu128"
+  },
+  "changes_vs_same_run_g1": [
+    {
+      "stem": "44b6_0113de3b",
+      "g1_hash": "4cfb7ca7d9c3e993faa57ec9971b0d9b20b7461de974b8935cec843ec955f952",
+      "candidate_hash": "d452c5af5ea49fdbae8e2742f7d526eb06548c417082fe1c91d9959da6eeafbf",
+      "nodes_delta": 86,
+      "edges_added": 67,
+      "edges_removed": 0,
+      "division_delta": 0,
+      "changed": true
+    },
+    {
+      "stem": "44b6_0b24845f",
+      "g1_hash": "292c061c73e402b65fc8708b0e88bfef1e6af151843ed55c04f7a204375f3943",
+      "candidate_hash": "1b63973cd0690b6c607d33a2f9dab38b0dafca058dbec367e8810791d4659680",
+      "nodes_delta": 118,
+      "edges_added": 91,
+      "edges_removed": 0,
+      "division_delta": 0,
+      "changed": true
+    },
+    {
+      "stem": "6bba_05b6850b",
+      "g1_hash": "f305c966bb2e2a84b351f15bad83ba884a062160b95d44a1ba7cf03bae4ed177",
+      "candidate_hash": "d0a8c88e0fad5a84537a50171c257d330eda8bb232a9d6c26fbf4ba9878d2f47",
+      "nodes_delta": 27,
+      "edges_added": 21,
+      "edges_removed": 0,
+      "division_delta": 0,
+      "changed": true
+    },
+    {
+      "stem": "6bba_05db0fb1",
+      "g1_hash": "3546ab6f583487c31193c8027415d726c0c00b9544cbb50e6c4f6a98b16cd3d2",
+      "candidate_hash": "018e9f3f66274fae0dcd50c92e55980e8efea91526c43423ba5d7c3ebadb23ee",
+      "nodes_delta": 118,
+      "edges_added": 92,
+      "edges_removed": 0,
+      "division_delta": 0,
+      "changed": true
+    }
+  ],
+  "has_effect": true,
+  "comparison_limit": null,
+  "legacy_guard_report_note": "Inherited historical literal configuration is not authoritative; use this resolved receipt and worker records.",
+  "postprocess_calls_sha256": "6f44d3b93f33e3c7b839f5b7ab426c6c7dd4fa7a75136f1885a0768415e832b1",
+  "public": null
+}
