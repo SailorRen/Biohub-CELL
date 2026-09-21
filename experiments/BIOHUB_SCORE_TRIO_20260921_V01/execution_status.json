@@ -1,6 +1,6 @@
 {
   "observed_at_utc": "2026-09-21T01:53:17.498121+00:00",
-  "task_delivery": "FINAL_DELTA_READBACK_PENDING",
+  "task_delivery": "PAYLOAD_BYTES_VERIFIED",
   "execution": "TWO_RUNNING_ONE_WAITING_SLOT",
   "score": "NOT_SUBMITTED",
   "counts": {
@@ -138,5 +138,7 @@
     "actual_csv_checks": "NOT_RUN",
     "formal_requests": 0
   },
-  "next": "Read existing run status; collect and check actual CSV of completed arms; submit each eligible arm once; launch already frozen H30 when slot exists. No background scheduler."
+  "next": "Read existing run status; collect and check actual CSV of completed arms; submit each eligible arm once; launch already frozen H30 when slot exists. No background scheduler.",
+  "payload_commit": "6826da804c59e9e883840503d2c23b518be42897",
+  "delta_verified_files": 17
 }
