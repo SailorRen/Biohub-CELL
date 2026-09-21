@@ -21,7 +21,7 @@
       "kernel_id": 135169669,
       "version": 1,
       "script_version_id": 351441983,
-      "last_observed_at_utc": "2026-09-21T04:23:08.006359+00:00",
+      "last_observed_at_utc": "2026-09-21T06:34:05.305452+00:00",
       "last_kernel_status": "COMPLETE",
       "source_equal": true,
       "private": true
@@ -46,7 +46,7 @@
       "kernel_id": 135169776,
       "version": 1,
       "script_version_id": 351442164,
-      "last_observed_at_utc": "2026-09-21T04:23:10.092352+00:00",
+      "last_observed_at_utc": "2026-09-21T06:34:07.362881+00:00",
       "last_kernel_status": "COMPLETE",
       "source_equal": true,
       "private": true
@@ -74,8 +74,8 @@
       "finished_at_utc": "2026-09-21T04:21:30.159875+00:00",
       "formal_status": "PENDING",
       "public": null,
-      "observed_at_utc": "2026-09-21T04:23:14.391445+00:00",
-      "observed_at_shanghai": "2026-09-21T12:23:14.391445+08:00"
+      "observed_at_utc": "2026-09-21T06:34:12.473447+00:00",
+      "observed_at_shanghai": "2026-09-21T14:34:12.473447+08:00"
     },
     {
       "action": "Submission",
@@ -100,8 +100,8 @@
       "finished_at_utc": "2026-09-21T04:21:52.219289+00:00",
       "formal_status": "PENDING",
       "public": null,
-      "observed_at_utc": "2026-09-21T04:23:14.391445+00:00",
-      "observed_at_shanghai": "2026-09-21T12:23:14.391445+08:00"
+      "observed_at_utc": "2026-09-21T06:34:12.473447+00:00",
+      "observed_at_shanghai": "2026-09-21T14:34:12.473447+08:00"
     },
     {
       "action": "SaveAndRun",
@@ -112,7 +112,7 @@
       "source_sha256": "fab2980c4f737555bcc6bf406953dd7dbed5d463bcb40bbb12bc2a593151de8d",
       "at_utc": "2026-09-21T04:22:22.527699+00:00",
       "at_shanghai": "2026-09-21T12:22:22.527715+08:00",
-      "status": "RUNNING_VERIFIED",
+      "status": "READBACK_VERIFIED",
       "counted": 1,
       "response": {
         "ref": "/code/sailorren/biohub-g1-harmonic030-20260921",
@@ -124,8 +124,8 @@
       "kernel_id": 135183277,
       "version": 1,
       "script_version_id": 351467088,
-      "last_observed_at_utc": "2026-09-21T04:23:11.773616+00:00",
-      "last_kernel_status": "RUNNING",
+      "last_observed_at_utc": "2026-09-21T06:34:09.854455+00:00",
+      "last_kernel_status": "COMPLETE",
       "source_equal": true,
       "private": true
     }

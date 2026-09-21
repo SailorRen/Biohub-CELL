@@ -1,6 +1,6 @@
 {
-  "observed_at_utc": "2026-09-21T04:23:14.391445+00:00",
-  "observed_at_shanghai": "2026-09-21T12:23:14.391445+08:00",
+  "observed_at_utc": "2026-09-21T06:34:12.473447+00:00",
+  "observed_at_shanghai": "2026-09-21T14:34:12.473447+08:00",
   "platform_writes": 0,
   "submissions": [
     {
@@ -22,6 +22,15 @@
       "error_description": null
     },
     {
+      "submission_id": 56411991,
+      "description": "Notebook biohub-v1-grouped ac4fdc | Version 1",
+      "status": "PENDING",
+      "public_score_raw": "",
+      "public": null,
+      "date": "2026-09-21 02:18:47.903000",
+      "error_description": null
+    },
+    {
       "submission_id": 56407804,
       "description": "BIOHUB_SCORE_PAIR2_20260920_V01 G58 V1 SV351350591",
       "status": "PENDING",
@@ -37,6 +46,15 @@
       "public_score_raw": "",
       "public": null,
       "date": "2026-09-20 23:26:30.763000",
+      "error_description": null
+    },
+    {
+      "submission_id": 56388962,
+      "description": "Notebook biohub-lf-dctta025-sectta1 | Version 1",
+      "status": "COMPLETE",
+      "public_score_raw": "0.947",
+      "public": 0.947,
+      "date": "2026-09-20 09:20:10.077000",
       "error_description": null
     },
     {
@@ -58,6 +76,15 @@
       "error_description": null
     },
     {
+      "submission_id": 56379064,
+      "description": "Notebook biohub-lf-dctta-v020 | Version 1",
+      "status": "COMPLETE",
+      "public_score_raw": "0.947",
+      "public": 0.947,
+      "date": "2026-09-20 03:43:46.687000",
+      "error_description": null
+    },
+    {
       "submission_id": 56375774,
       "description": "BIOHUB_F1_FLOW_KAGGLE_20260918 F1 V1 SV351084196",
       "status": "COMPLETE",
@@ -67,12 +94,84 @@
       "error_description": null
     },
     {
+      "submission_id": 56351727,
+      "description": "Notebook \ud83d\udd2c [0.146 PB] BioHub 4D Cell Tracking | Version 1",
+      "status": "COMPLETE",
+      "public_score_raw": "0.146",
+      "public": 0.146,
+      "date": "2026-09-19 07:07:55.503000",
+      "error_description": null
+    },
+    {
+      "submission_id": 56346797,
+      "description": "Notebook biohub-942tta-repro-20260907 | Version 1",
+      "status": "COMPLETE",
+      "public_score_raw": "0.945",
+      "public": 0.945,
+      "date": "2026-09-19 03:11:33.047000",
+      "error_description": null
+    },
+    {
+      "submission_id": 56346069,
+      "description": "Notebook biohub-lf-hoctveto-div-b | Version 1",
+      "status": "COMPLETE",
+      "public_score_raw": "0.947",
+      "public": 0.947,
+      "date": "2026-09-19 02:31:24.857000",
+      "error_description": null
+    },
+    {
+      "submission_id": 56345834,
+      "description": "Notebook Biohub Top 3 Push V50 Streamlined SOTA | Version 1",
+      "status": "COMPLETE",
+      "public_score_raw": "0.907",
+      "public": 0.907,
+      "date": "2026-09-19 02:16:54.763000",
+      "error_description": null
+    },
+    {
+      "submission_id": 56333225,
+      "description": "Notebook biohub-940e | Version 1",
+      "status": "COMPLETE",
+      "public_score_raw": "0.940",
+      "public": 0.94,
+      "date": "2026-09-18 15:03:02.347000",
+      "error_description": null
+    },
+    {
+      "submission_id": 56332456,
+      "description": "Notebook 0.938 | Version 1",
+      "status": "COMPLETE",
+      "public_score_raw": "0.938",
+      "public": 0.938,
+      "date": "2026-09-18 14:26:26.470000",
+      "error_description": null
+    },
+    {
+      "submission_id": 56332306,
+      "description": "Notebook biohub-repro059-public-0947-exact-copy | Version 2",
+      "status": "COMPLETE",
+      "public_score_raw": "0.947",
+      "public": 0.947,
+      "date": "2026-09-18 14:18:19.537000",
+      "error_description": null
+    },
+    {
       "submission_id": 56332302,
       "description": "Notebook Biohub frontier947 gapfill det096 v1 | Version 1",
       "status": "COMPLETE",
       "public_score_raw": "0.947",
       "public": 0.947,
       "date": "2026-09-18 14:18:10.213000",
+      "error_description": null
+    },
+    {
+      "submission_id": 56332275,
+      "description": "Notebook biohub-repro059-public-0947-exact-copy | Version 1",
+      "status": "COMPLETE",
+      "public_score_raw": "0.947",
+      "public": 0.947,
+      "date": "2026-09-18 14:17:11.243000",
       "error_description": null
     },
     {
