@@ -2,13 +2,13 @@
   "task_id": "BIOHUB_TWO_WAVE_20260922_V01",
   "observed_at_shanghai": "2026-09-22T11:18:42+08:00",
   "account": "sailorren",
-  "status": "SOURCE_READY_PRELAUNCH",
+  "status": "A_PRELAUNCH_READY",
   "platform": {
     "submissions_remaining": 4,
     "refresh_ui": "This resets in 21 hours",
     "refresh_exact": "NOT_OBSERVED",
     "refresh_estimate": "2026-09-23 approximately 08:00 Asia/Shanghai; UI rounded hours only, recheck before each submission",
-    "gpu_available_ui": "4h10m of30h (11:09 observation)",
+    "gpu_available_ui": "Quota used26:03/30hrs =>3h57m remaining at11:31",
     "active_events": {
       "formal_scoring": 2,
       "ordinary_gpu": 1,
@@ -19,7 +19,8 @@
       "query": "biohub-d960",
       "results": 4,
       "planned_A_B_found": false
-    }
+    },
+    "historical_D960_runtime_seconds": 7492.7
   },
   "budget_used": {
     "notebooks": 1,
@@ -58,12 +59,25 @@
       "request_id": "TW20260922-A-EDIT-01",
       "operation": "RENAME_AND_IMPORT_FROZEN_SOURCE_AND_VERIFY_INHERITED_INPUTS",
       "time_shanghai": "2026-09-22T11:24:00+08:00",
-      "status": "INTENT_RECORDED",
+      "status": "DONE_UI_CONFIRMED",
       "source_commit": "4dca986a5bd61e3191ff790b74b505017678652e",
       "notebook_sha256": "393dc558654af6abffd8c786a1b8fd4065a58e5c2a6a0ba61af4b9d3b4be40df",
       "target": "existing A draft only",
       "planned_slug": "sailorren/biohub-d960-v025-20260922",
-      "save_run": false
+      "save_run": false,
+      "import_method": "Kaggle Link import from frozen raw GitHub URL; file chooser denied before import, fallback succeeded"
+    },
+    {
+      "candidate": "A",
+      "request_id": "TW20260922-A-SAVERUN-01",
+      "operation": "SAVE_AND_RUN",
+      "planned_version": 1,
+      "file": "submission.csv",
+      "time_shanghai": "2026-09-22T11:34:00+08:00",
+      "mother_sv": 351441983,
+      "source_commit": "4dca986a5bd61e3191ff790b74b505017678652e",
+      "notebook_sha256": "393dc558654af6abffd8c786a1b8fd4065a58e5c2a6a0ba61af4b9d3b4be40df",
+      "status": "INTENT_RECORDED_NOT_YET_CLICKED"
     }
   ],
   "reference_results": {
@@ -95,16 +109,32 @@
   },
   "candidates": {
     "A": {
-      "status": "SOURCE_READY",
+      "status": "DRAFT_READY",
+      "slug": "sailorren/biohub-d960-v025-20260922",
+      "source_commit": "4dca986a5bd61e3191ff790b74b505017678652e",
+      "notebook_sha256": "393dc558654af6abffd8c786a1b8fd4065a58e5c2a6a0ba61af4b9d3b4be40df",
+      "source_ui_check": "WAVE_ARM A, velocity0.25, leafNone in imported first cell",
+      "private": true,
+      "accelerator": "GPU T4 x2",
+      "internet": false,
+      "environment_ui": "Pin to original environment (2026-07-01)",
+      "input_versions": {
+        "deepcenter": 5,
+        "secondary": 2,
+        "primary": 10,
+        "gate": 1,
+        "gate_sv": 349707105
+      },
       "version": null,
       "sv": null,
       "submission": null
     },
     "B": {
-      "status": "SOURCE_READY_RESOURCE_CHECK_PENDING",
+      "status": "SOURCE_READY_GPU_RESOURCE_BLOCKED",
       "version": null,
       "sv": null,
-      "submission": null
+      "submission": null,
+      "reason": "Remaining GPU3h57m cannot cover two D960-like 2h04m53s ordinary runs plus current unrelated GPU job. Prioritize A."
     },
     "C": {
       "status": "WAITING_FOR_WAVE1"
