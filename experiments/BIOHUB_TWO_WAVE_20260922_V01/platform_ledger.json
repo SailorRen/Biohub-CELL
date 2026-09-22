@@ -305,7 +305,7 @@
       "candidate": "B",
       "operation": "EDITOR_DIRECT_FORMAL_SUBMISSION",
       "intent_at": "2026-09-23T01:08:53.767460+08:00",
-      "status": "INTENT_ONLY_NOT_DISPATCHED",
+      "status": "FINAL_CONFIRMATION_READY_NOT_DISPATCHED",
       "dispatched": false,
       "counted": 0,
       "task_commit": "32eac4c90e47a75201e09d2db11338929b674b29",
@@ -344,7 +344,12 @@
         "quick_save": 0,
         "interactive_gpu": 0
       },
-      "export_metadata_caveat": "Export ipynb inherited metadata isGpuEnabled=false despite current UI GPU T4x2; final exact platform version must be read back; not use inherited ipynb tag as runtime proof."
+      "export_metadata_caveat": "Export ipynb inherited metadata isGpuEnabled=false despite current UI GPU T4x2; final exact platform version must be read back; not use inherited ipynb tag as runtime proof.",
+      "planned_version": 3,
+      "version_name": "B D960-L030P editor direct submission",
+      "description": "TW20260923-B-EDITOR-SUBMIT-01 D960-L030P velocity0.5 leaf0.30",
+      "confirmation_raw": "Your submission file must be named submission.csv. Submitting will save a new version and based on your settings will run on a GPU T4 x2.",
+      "quota_confirmation": "You have 3 submissions remaining today. This resets in 7 hours."
     }
   ],
   "reference_results": {
