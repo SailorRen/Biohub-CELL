@@ -1,0 +1,87 @@
+{
+  "status": "COMPLETED_VERIFIED",
+  "scope": "A continuation changed files only, not completed formal scoring",
+  "commit": "2519bf5dd02362d0fc7403ec63d6cc80f53e9609",
+  "remote_head": "2519bf5dd02362d0fc7403ec63d6cc80f53e9609",
+  "observed_at_utc": "2026-09-22T06:42:52.647328+00:00",
+  "files": [
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/A/consumption_precheck.json",
+      "bytes": 3439,
+      "sha256": "9a5a9eb5a8ed89a669bf70c983e2322978ee2ababd1b02f764175d0906fa22ba",
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/A/formal_precheck.json",
+      "bytes": 1635,
+      "sha256": "168a53204c8bf5a27d935ae01c4d5758c576b48ed4d3e4290ada4fb80d9aa7dd",
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/A/formal_status.json",
+      "bytes": 359,
+      "sha256": "a950ac10c472d6e819dad4d019a4aed5784c9e8b9384e42bf7e9150ae716f3e1",
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/A/output_binding.json",
+      "bytes": 3954,
+      "sha256": "1481c83b34771cab21bc3574832605a047ca39d12968a027c540ec35312c819d",
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/A/quota_prepare.json",
+      "bytes": 798,
+      "sha256": "33fa0bd89c204ce1829a9f5e689e7dbbd88419bcad290f2cce4d503ebf68b9e9",
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/A/quota_send.json",
+      "bytes": 798,
+      "sha256": "a5c0c00ea5857f4ec141e33e665854d41a6413bf890b576ff1a12e6414c46ae1",
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/A/reconciliation.json",
+      "bytes": 10915,
+      "sha256": "e760b77ebc11fef831eeadbd23969d985aa9c1c86777a2a895c40e58bf381e6e",
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/A/submit_existing_once.py",
+      "bytes": 5254,
+      "sha256": "195c3603ed4050f247572139190ce164d06751f9ccd080b25f77a0f79bcfa244",
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/A/ui_prewrite.json",
+      "bytes": 457,
+      "sha256": "118883399068233af0d3a540f23f82f354636de2b8074d5efb25264f1c61d17c",
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/A/verify_consumption.py",
+      "bytes": 3124,
+      "sha256": "0e535781ef3dbceb2478b22b5ed459c0629c786eb702fb0e97fd8be475b36cf9",
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/github_readback.json",
+      "bytes": 3477,
+      "sha256": "71468c6b8026b1d3fa2f6a59281e9b73385796bccd98acb629abbaa9de56245b",
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/platform_ledger.json",
+      "bytes": 8254,
+      "sha256": "ab8a2a614f4d19c28a3ff31167929a41d76ea243850966e234f684b2c6a54358",
+      "equal": true
+    },
+    {
+      "path": "reports/20260922_BIOHUB_TWO_WAVE_RESULTS.md",
+      "bytes": 13115,
+      "sha256": "43677c87254b2b92dd0ef5f8b964a1ac4e4e87c2a94f80ff78174d831b11b3b9",
+      "equal": true
+    }
+  ]
+}
