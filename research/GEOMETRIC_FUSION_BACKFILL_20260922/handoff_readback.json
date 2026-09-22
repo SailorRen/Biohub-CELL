@@ -1,0 +1,58 @@
+{
+  "task_id": "BIOHUB_GEOMETRIC_FUSION_BACKFILL_20260922_V01",
+  "repository": "SailorRen/Biohub-CELL",
+  "branch": "codex/geometric-fusion-backfill-20260922",
+  "base_commit": "34df61552d4331c999148c2db684c3c9a217c43f",
+  "payload_commit": "3840c240957275ecd6b255dda087212942e43f55",
+  "scope": "Task and historical evidence delivery only; excludes future backfill execution. This receipt verifies the prior payload commit, not itself.",
+  "method": "Locally computed Git blob SHA-1 (Git header plus full UTF-8 bytes) equals GitHub Contents API blob SHA at the fixed payload commit. Source SHA256 values are local; no independently computed remote SHA256 is claimed.",
+  "files": [
+    {
+      "path": "tasks/CODEX_20260922_BIOHUB_GEOMETRIC_FUSION_BACKFILL_V01.md",
+      "bytes": 15890,
+      "source_sha256": "d06479e3d26470ab00b9f08996d04772328b2e0bf202ab851596871b1da97036",
+      "local_git_blob_sha1": "507148dadc7d5655a3a7940a1fc72af3401f06fd",
+      "remote_git_blob_sha1": "507148dadc7d5655a3a7940a1fc72af3401f06fd",
+      "equal": true
+    },
+    {
+      "path": "reports/20260922_GEOMETRIC_FUSION_COMPARISON.md",
+      "bytes": 9487,
+      "source_sha256": "0157271ad9f35ba0acac269951de02913edfc5dffce37932f1c952fd3d019f52",
+      "local_git_blob_sha1": "79a6a45d43c7d8c0369358b752c8cb66021fecc0",
+      "remote_git_blob_sha1": "79a6a45d43c7d8c0369358b752c8cb66021fecc0",
+      "equal": true
+    },
+    {
+      "path": "research/GEOMETRIC_FUSION_BACKFILL_20260922/leaf_guard_unit_checks.json",
+      "bytes": 1149,
+      "source_sha256": "787a9209e69110af72b135ee4265cb723988c1f14c0ad29f049de921c8ba3012",
+      "local_git_blob_sha1": "99363ea7194dd849e614a3b909c24863c8fb1792",
+      "remote_git_blob_sha1": "99363ea7194dd849e614a3b909c24863c8fb1792",
+      "equal": true
+    },
+    {
+      "path": "research/GEOMETRIC_FUSION_BACKFILL_20260922/uploaded_notebook_fingerprints.json",
+      "bytes": 3657,
+      "source_sha256": "389f3c519ff9a76ceea53a03d3e804d802a7d0f226a9a1cdef36524f1109df28",
+      "local_git_blob_sha1": "896e960c0706f024084b6ca1b183e06dce3c70c3",
+      "remote_git_blob_sha1": "896e960c0706f024084b6ca1b183e06dce3c70c3",
+      "equal": true
+    }
+  ],
+  "comparison": {
+    "added_files": 4,
+    "modified_files": 0,
+    "deleted_files": 0,
+    "ahead_by": 4,
+    "behind_by": 0
+  },
+  "status": "TASK_HANDOFF_VERIFIED",
+  "original_notebook_mirrored": false,
+  "original_source_fingerprints_verified": "12/12",
+  "backfill_execution": "NOT_EXECUTED",
+  "kaggle_writes": 0,
+  "old_experiment_files_changed": 0,
+  "main_changed": false,
+  "user_local_worktree": "NOT_ACCESSED"
+}
