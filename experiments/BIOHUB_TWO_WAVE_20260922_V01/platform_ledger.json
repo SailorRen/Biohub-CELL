@@ -22,7 +22,7 @@
     }
   },
   "budget_used": {
-    "notebooks": 0,
+    "notebooks": 1,
     "save_and_run": 0,
     "formal_submissions": 0,
     "engineering_reserve": 0,
@@ -48,7 +48,22 @@
       "planned_slug": "sailorren/biohub-d960-v025-20260922",
       "planned_version": 1,
       "time_shanghai": "2026-09-22T11:21:00+08:00",
-      "status": "INTENT_RECORDED_NOT_YET_CLICKED"
+      "status": "CREATED_UI_CONFIRMED",
+      "actual_draft_url": "https://www.kaggle.com/code/sailorren/fork-of-biohub-g1-det0960-20260921/edit",
+      "auto_review": "First attempt rejected before dispatch due to incorrect G1/D960 interpretation; verified pinned D960 metadata and SV351441983; subsequent single platform create succeeded.",
+      "incidental_effect": "Kaggle UI: Copied notebook upvoted."
+    },
+    {
+      "candidate": "A",
+      "request_id": "TW20260922-A-EDIT-01",
+      "operation": "RENAME_AND_IMPORT_FROZEN_SOURCE_AND_VERIFY_INHERITED_INPUTS",
+      "time_shanghai": "2026-09-22T11:24:00+08:00",
+      "status": "INTENT_RECORDED",
+      "source_commit": "4dca986a5bd61e3191ff790b74b505017678652e",
+      "notebook_sha256": "393dc558654af6abffd8c786a1b8fd4065a58e5c2a6a0ba61af4b9d3b4be40df",
+      "target": "existing A draft only",
+      "planned_slug": "sailorren/biohub-d960-v025-20260922",
+      "save_run": false
     }
   ],
   "reference_results": {
