@@ -91,3 +91,29 @@ Notebook 1/4；Save & Run 1/5（计划1/4，共享工程备用0/1）；正式提
 固定任务 a593633，唯一源码4dca986，SHA256 `03e4abd5c80b5724b959bc453352524e276bebcf9aa0c2ffa38f22442d3e2ceb`。隔离 worktree，原工作区无改动。已创建唯一私有B草稿 `sailorren/biohub-d960-l030p-20260922`，Kernel135375343；尚无Version/SV/submission。官方SDK回读后，14个cell源码在规范化source列表/字符串表示后全部相等，既有CPU14项检查复用；无真实CSV，生产/后处理验收NOT_RUN。导入覆盖数据源后已恢复三个固定版本及gate，详见B/draft_readback.json。
 
 GPU官方接口：已用30:15:24.248，总30h，预留0；原始刷新字符串2026-09-26 00:00:00不带时区。UI普通Save & Run GPU选项和Save未禁用，因此先持久化唯一正常运行意图，尚未发送。Colab尚未进入，正式请求本轮0、原批1；Notebook本轮1、原批2；SaveRun本轮0、原批1。编辑器超时/导入/序列化比较误判及最小修复已归并记录，未重训、未新建Dataset、未执行C/D。
+
+### 本轮停点：REQUEST_UNCERTAIN（上海2026-09-22 20:42）
+
+唯一正常 Save & Run 请求 `TW20260922-B-SAVERUN-01` 已发出；运行前意图 commit `ffc710b8956bc7eafd388f99ba0b9aa10487a488` 已推送并按固定SHA回读账本一致。选择 GPU for this session，计划版本名 `B L030P source 4dca986`。页面原文：
+
+> An error occurred while committing kernel: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+
+只读对账：官方 GetKernelSessionStatus 返回404；B版本历史显示 `Starting Fresh` / `Start writing your notebook then save and view your versions here.`；B提交对话框直接选中本候选，显示 `The selected Notebook has no completed versions to submit. Please run the Notebook or select a different one.`，Submit禁用。现有两个Active Events为旧正式评分，未见B普通作业。上述证据支持“未观察到受理版本”，不把异常响应当作从未收到请求，不重发。
+
+GPU前后官方快照分别20:31:20与20:41:33上海：已用均30:15:24.248，总额30h，预留均0；不归因本轮扣时。刷新原值2026-09-26 00:00:00无时区，未猜上海精确恢复时刻。正式额度最新3次、UI resets in11hours。A仍Notebook Running，SV351739212、submission56456090仅只读查询；DF960的SV351617874当前Succeeded/Public0.948。原批历史A接受不等于出分。
+
+**Colab未启动。** 虽然Kaggle额度已耗尽，实际SaveRun错误是响应解析失败，没有GPU拒绝原文，不能把未知原因归为资源拒绝；依任务要求停在对账边界，未迁移平台掩盖错误。没有Colab连接、GPU分配、环境检查、数据下载或生产，也没有验证外部产物替代保存的完整通路。当前B正常提交入口要求完成版本，这是本次UI事实，不推断所有正式替代路径均不可能。
+
+保留唯一私有草稿 Kernel135375343，固定B的14个cell源码逐一规范化回读相等；Version=null、SV=null、submission=null。下载Notebook通过SDK返回的source字符串与原列表表示不同，曾引起直接对象比较误报，已以逐cell文本一致纠正；没有算法改动。固定Dataset选择为5/2/10，gate重挂现有输出，SDK只返回slug，不能将该字段夸大为当前gate SV独立回读。无需再导入代码。没有真实CSV、生产回执、真实删除数或非重复验收结果，均NOT_RUN，不以CPU检查代替实际输出。
+
+|请求类别|本轮|原批累计|上限|
+|---|---:|---:|---:|
+|新Kaggle候选Notebook|1|2|4|
+|普通SaveRun尝试（含异常响应）|1|2|5|
+|正式提交|0|1|4|
+|工程备用|0|0|1|
+|Colab GPU会话/生产|0/0|本轮0/0|1/1|
+
+今天3个正式名额均未由B消耗，要求保留的2个仍保留。同一草稿导入修复2次为编辑请求，不伪计为2个Notebook或运行。没有替代版本保存、训练、Dataset、TPU、购买、C/D、旧作业取消或自动监控。状态查询的首次自动审批超时发生在进程启动前，按工具允许只重试一次只读查询；不是运行重试，也不是安全拒绝。
+
+下一步交回Chat决定：先分析SaveRun响应解析失败及平台后台状态，是否需要向平台核实；本轮正常运行尝试已用完，不自行再次提交运行。只有资源阻断原因得到直接确认且无B在运行时，才考虑继续既定Colab路径。此次交付是资源路径与失败证据归档，不是候选跑通或评分成功。最终固定交付commit及四个小文件远端字节回读结果在本任务最终回复给出。
