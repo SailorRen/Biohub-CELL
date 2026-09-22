@@ -1,8 +1,8 @@
 {
   "task_id": "BIOHUB_TWO_WAVE_20260922_V01",
-  "observed_at_shanghai": "2026-09-22T23:30:52.459485+08:00",
+  "observed_at_shanghai": "2026-09-23T01:13:08.313866+08:00",
   "account": "sailorren",
-  "status": "BLOCKED_GPU_OUTPUT_COEXISTENCE",
+  "status": "EDITOR_SUBMIT_REJECTED_ACCELERATOR_QUOTA",
   "platform": {
     "submissions_remaining": 3,
     "refresh_ui": "This resets in 10 hours (V1 submit dialog at21:36 Shanghai)",
@@ -61,12 +61,20 @@
       "gpu_reserved": "0:00:00",
       "gpu_allowed": "1 day, 6:00:00",
       "refresh_raw": "2026-09-26 00:00:00"
+    },
+    "direct_submit_latest": {
+      "observed_at": "2026-09-23T01:13:08.313866+08:00",
+      "submissions_used": 2,
+      "daily_limit": 5,
+      "remaining": 3,
+      "gpu_ui": "30:15 /30 hrs",
+      "active_events": 0
     }
   },
   "budget_used": {
     "notebooks": 2,
     "save_and_run": 2,
-    "formal_submissions": 1,
+    "formal_submissions": 2,
     "engineering_reserve": 0,
     "training": 0,
     "dataset_write": 0,
@@ -305,9 +313,9 @@
       "candidate": "B",
       "operation": "EDITOR_DIRECT_FORMAL_SUBMISSION",
       "intent_at": "2026-09-23T01:08:53.767460+08:00",
-      "status": "FINAL_CONFIRMATION_READY_NOT_DISPATCHED",
-      "dispatched": false,
-      "counted": 0,
+      "status": "EDITOR_SUBMIT_REJECTED_ACCELERATOR_QUOTA",
+      "dispatched": true,
+      "counted": 1,
       "task_commit": "32eac4c90e47a75201e09d2db11338929b674b29",
       "kernel_id": 135375343,
       "slug": "sailorren/biohub-d960-l030p-20260922",
@@ -349,7 +357,16 @@
       "version_name": "B D960-L030P editor direct submission",
       "description": "TW20260923-B-EDITOR-SUBMIT-01 D960-L030P velocity0.5 leaf0.30",
       "confirmation_raw": "Your submission file must be named submission.csv. Submitting will save a new version and based on your settings will run on a GPU T4 x2.",
-      "quota_confirmation": "You have 3 submissions remaining today. This resets in 7 hours."
+      "quota_confirmation": "You have 3 submissions remaining today. This resets in 7 hours.",
+      "dispatched_observed_at": "2026-09-23T01:10:34.452456+08:00",
+      "intent_commit": "4b2a38ec642df5a96b35d851fd7d7734458f5ad4",
+      "response_title": "Accelerator Quota Exceeded",
+      "response_raw": "You've exceeded the number of hours allowed to use GPU. Your quota will reset to 30 hours in 3 days. You can continue working in this session until you've reached your 9 hour limit. You will not be able to commit unless you turn off GPU.",
+      "reconciled_at": "2026-09-23T01:13:08.313866+08:00",
+      "automatic_versions_observed": 0,
+      "automatic_ordinary_jobs_observed": 0,
+      "accepted": false,
+      "counting_note": "Final confirmation Submit pressed exactly once; counted once conservatively. Network-level CreateCodeSubmission receipt NOT_OBSERVED; platform rejected at commit/quota gate. Not a confirmed accepted formal submission."
     }
   ],
   "reference_results": {
@@ -382,7 +399,7 @@
   },
   "candidates": {
     "A": {
-      "status": "SCORE_PENDING",
+      "status": "SCORED",
       "slug": "sailorren/biohub-d960-v025-20260922",
       "source_commit": "4dca986a5bd61e3191ff790b74b505017678652e",
       "notebook_sha256": "393dc558654af6abffd8c786a1b8fd4065a58e5c2a6a0ba61af4b9d3b4be40df",
@@ -404,9 +421,9 @@
       "version_name": "A V025 source 4dca986",
       "version_url": "https://www.kaggle.com/code/sailorren/biohub-d960-v025-20260922?scriptVersionId=351739212",
       "created_at_ui_shanghai": "2026-09-22T11:33:55+08:00",
-      "formal_status": "Notebook Running",
+      "formal_status": "COMPLETE",
       "actual_csv_check": "CSV_AND_RECEIPT_PASS",
-      "public_raw": "",
+      "public_raw": "0.950",
       "parameter_check": "FINAL_VELOCITY_025_PASS",
       "runtime_initial_checks": {
         "configuration_guard": "PASS",
@@ -422,16 +439,16 @@
       "environment_evidence_note": "Editor selected Pin to original environment (2026-07-01); runtime viewer generic label Latest Container Image. Exact running Docker digest NOT_OBSERVED; do not equate generic label to verified digest.",
       "latest_observed_runtime_seconds": 508.9,
       "kernel_id": 135318885,
-      "public": null,
-      "observed_at_shanghai": "2026-09-22T20:42:56.035438+08:00",
+      "public": 0.95,
+      "observed_at_shanghai": "2026-09-23T01:13:08.313866+08:00",
       "ordinary_status": "COMPLETE"
     },
     "B": {
-      "status": "BLOCKED_GPU_OUTPUT_COEXISTENCE",
+      "status": "EDITOR_SUBMIT_REJECTED_ACCELERATOR_QUOTA",
       "version": 2,
       "sv": 351886222,
       "submission": null,
-      "reason": "Current supported active-session GPU switch restarts onto GPU; no independent GPU setting in Quick Save. Cancelled before GPU request; latest V2 remains CPU probe, no CSV.",
+      "reason": "Editor final Submit attempted once; Accelerator Quota Exceeded; no new version/job/submission observed.",
       "slug": "sailorren/biohub-d960-l030p-20260922",
       "kernel_id": 135375343,
       "private": true,
@@ -440,7 +457,10 @@
       "colab_status": "HOSTED_GPU_PROBE_PASS_NO_PRODUCTION",
       "accelerator": "None",
       "enable_gpu": false,
-      "machine_shape": "None"
+      "machine_shape": "None",
+      "draft_accelerator": "GPU T4 x2",
+      "formal_status": "NOT_ACCEPTED_QUOTA_REJECTION",
+      "formal_attempts": 1
     },
     "C": {
       "status": "WAITING_FOR_WAVE1"
@@ -449,7 +469,7 @@
       "status": "WAITING_FOR_WAVE1"
     }
   },
-  "next_action": "交回Chat：需要可核验的官方流程，在不启动Kaggle GPU的情况下将CPU磁盘输出与GPU元数据绑定同一版本；本批停止，不自动恢复生产或消费刷新后的额度。",
+  "next_action": "本次一次上限已消耗；停止，不重试、不关闭GPU提交、不换入口、不等额度、不建监控。后续只读对账须有新的任务；不自动使用刷新额度。",
   "observed_at_utc": "2026-09-22T12:42:56+00:00",
   "resource_trial": {
     "task_id": "BIOHUB_B_RESOURCE_TRIAL_20260922_V01",
@@ -571,14 +591,82 @@
   },
   "editor_direct_submit": {
     "task_id": "BIOHUB_B_EDITOR_DIRECT_SUBMIT_20260923_V01",
-    "status": "INTENT_SYNC_PENDING",
-    "formal_requests": 0,
-    "automatic_versions": 0,
-    "automatic_ordinary_jobs": 0,
+    "status": "EDITOR_SUBMIT_REJECTED_ACCELERATOR_QUOTA",
+    "task_commit": "32eac4c90e47a75201e09d2db11338929b674b29",
+    "task_remote_readback": {
+      "bytes": 6433,
+      "sha256": "1ba2468c552bbd6956aee01ea7b8adeaa11f748c15e77ff94075087c5281c18c",
+      "pass": true
+    },
     "started_at": "2026-09-23T01:08:53.767460+08:00",
-    "prior_B_formal_found": false,
-    "active_events": "No Active Events",
-    "current_version": 2,
-    "current_sv": 351886222
+    "observed_at": "2026-09-23T01:13:08.313866+08:00",
+    "request_id": "TW20260923-B-EDITOR-SUBMIT-01",
+    "final_submit_clicks": 1,
+    "formal_requests_counted": 1,
+    "accepted_submissions": 0,
+    "backend_request_receipt": "NOT_OBSERVED",
+    "submission": null,
+    "new_version": null,
+    "new_sv": null,
+    "latest_existing_version": 2,
+    "latest_existing_sv": 351886222,
+    "public": "NOT_RUN",
+    "gpu": {
+      "draft_ui": "GPU T4 x2",
+      "saved_submission_version": "NOT_CREATED",
+      "formal_runtime": "NOT_OBSERVED",
+      "interactive_session": "off",
+      "quota_before_after_ui": "30:15 /30 hrs; no new run observed"
+    },
+    "source": {
+      "frozen_sha256": "03e4abd5c80b5724b959bc453352524e276bebcf9aa0c2ffa38f22442d3e2ceb",
+      "editor_download_all14_sources_equal": true,
+      "all_execution_counts_null": true,
+      "download_sha256": "a63de4e08862127062a3a5940ee72ac398a659ae148600967652c590b3fec935",
+      "export_metadata_caveat": "Export ipynb inherited metadata isGpuEnabled=false despite current UI GPU T4x2; final exact platform version must be read back; not use inherited ipynb tag as runtime proof."
+    },
+    "inputs": {
+      "primary": 10,
+      "secondary": 2,
+      "deepcenter": 5,
+      "gate": 1,
+      "gate_sv": 349707105
+    },
+    "input_evidence": "Three datasets checked selected pinned versions in current UI, cancelled dialogs without changes; gate identity present and fixedV1/SV349707105 retained from prior receipt.",
+    "private": true,
+    "internet": false,
+    "confirmation": "Your submission file must be named submission.csv. Submitting will save a new version and based on your settings will run on a GPU T4 x2.",
+    "error_title": "Accelerator Quota Exceeded",
+    "error_raw": "You've exceeded the number of hours allowed to use GPU. Your quota will reset to 30 hours in 3 days. You can continue working in this session until you've reached your 9 hour limit. You will not be able to commit unless you turn off GPU.",
+    "reconciliation": {
+      "active_events": "No Active Events",
+      "versions": "Only V1 and V2; no V3. V2 text probe, not submitted.",
+      "official_submissions": "Read-only CLI CSV after click: no B, latest A56456090 COMPLETE0.950; D96056416049 COMPLETE0.948",
+      "daily_ui_after": "2 / 5 used",
+      "remaining": 3,
+      "reset_before": "7 hours"
+    },
+    "counts_this_batch": {
+      "formal_attempt": 1,
+      "accepted_formal": 0,
+      "automatic_version": 0,
+      "automatic_ordinary_job": 0,
+      "manual_save_run": 0,
+      "quick_save": 0,
+      "cpu_session": 0,
+      "colab_gpu": 0,
+      "interactive_gpu": 0
+    },
+    "counts_cumulative": {
+      "formal_attempts": 2,
+      "accepted_formal": 1,
+      "B_formal_attempts": 1,
+      "B_accepted_formal": 0,
+      "ordinary_save_run_attempts": 2,
+      "quick_save": 2,
+      "cpu_file_sessions": 2,
+      "colab_gpu_sessions": 1
+    },
+    "next_action": "本次一次上限已消耗；停止，不重试、不关闭GPU提交、不换入口、不等额度、不建监控。后续只读对账须有新的任务；不自动使用刷新额度。"
   }
 }

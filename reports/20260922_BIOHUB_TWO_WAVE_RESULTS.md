@@ -201,3 +201,32 @@ Quick Save明确选择 **Save output for this version when creating a Quick Save
 另外两个正式名额保留。新增Notebook、数据下载、训练、TPU、Dataset、购买、C/D、最终选择修改均0。旧REQUEST_UNCERTAIN不退账。保留冻结源码、V2探针及Mac归档；没有源码适配或CSV可复用。
 
 下一步最小问题：在不启动Kaggle GPU的条件下，是否有可核验的官方GPU元数据与CPU磁盘输出同版本保存流程。此处按任务停止，不自行新开研究轮次或先启动Colab。结构化本批结果在`B/colab_roundtrip_result.json`的`return_gpu_submit`，事件追加原JSONL，预算沿用原账本。关闭时间记录为2026-09-22T23:30:52.459485+08:00（收尾转录时间）。固定交付commit、远端小文件回读及worktree状态在最终回复给出。
+
+
+## B编辑器直接正式提交一次（2026-09-23 上海时间）
+
+**实际点击一次最终Submit，平台明确拒绝：`Accelerator Quota Exceeded`。未受理B，未生成V3或自动普通作业。** 状态`EDITOR_SUBMIT_REJECTED_ACCELERATOR_QUOTA`。任务原文已先提交`32eac4c90e47a75201e09d2db11338929b674b29`并固定字节回读通过；原分支包含交接基点c5f91b9，无后续并行交付，canonical及用户文件未改。
+
+本任务替代旧CSV、GPU＋Output及9月22日额度周期前置条件。故没有重复Colab/CPU探针，也没有以旧停点拒绝执行。当前账号sailorren；初查No Active Events，正式列表无B。Daily Submissions为2/5 used，确认框剩3次、7小时刷新，未等待刷新。
+
+准备：从同一B编辑器File→Download Notebook下载当前草稿，原14个代码单元source逐一与冻结B相等，execution_count全部null；冻结SHA256仍`03e4abd5c80b5724b959bc453352524e276bebcf9aa0c2ffa38f22442d3e2ceb`。未导入或改源码。当前UI分别核实primary固定V10、secondaryV2、DeepCenterV5；仅查看后取消，无版本切换。gate身份保持，V1/SV349707105沿用原回执，不声称本次重新独立核实gate SV。Share为Private，Internet off；会话off时将None设为GPU T4×2，确认仍off。下载ipynb的继承metadata含isGpuEnabled=false，不能代替当前UI设置或最终精确版本元数据。
+
+官方编辑器右栏Submit to competition→Submit打开新版本确认框，默认Version3，原文：
+
+> Your submission file must be named submission.csv. Submitting will save a new version and based on your settings will run on a GPU T4 x2.
+
+该入口使用当前草稿创建新版本，不是选旧V2；无需预先制造CSV。填版本名`B D960-L030P editor direct submission`，描述`TW20260923-B-EDITOR-SUBMIT-01 D960-L030P velocity0.5 leaf0.30`。唯一意图先以71e67c1同步，确认信息补充同步至`4b2a38ec642df5a96b35d851fd7d7734458f5ad4`，随后只点击一次最终Submit。
+
+平台返回完整错误：
+
+> You've exceeded the number of hours allowed to use GPU. Your quota will reset to 30 hours in 3 days. You can continue working in this session until you've reached your 9 hour limit. You will not be able to commit unless you turn off GPU.
+
+这是平台提示，不是本批自动审批拦截。只点Continue working关闭提示，没有选Turn off GPU、SaveRun、QuickSave或换入口重发。提示中的“continue working in this session”是平台通用文案，不能据此声称已启动会话；实际UI仍off。
+
+点击后只读对账：版本历史仍只有V1及V2，最新 **V2/SV351886222** 仍为NOT FOR SUBMISSION文本探针；没有新V3、B正式条目或活动作业。submission、实际新Version及SV均null；Public=NOT_RUN。GPU证据只到当前草稿GPU T4×2设置，**提交版本GPU绑定未产生，正式worker GPU=NOT_OBSERVED，完整推理NOT_RUN**。不把计划V3当真实版本，不称SCORE_PENDING。
+
+计账区分：最终提交按钮操作确实发出1次，按一次上限保守计账；没有网络层CreateCodeSubmission回执，不能声称正式评分服务已收到/受理。本次正式尝试1、受理0；原批累计正式尝试2/4（A受理1＋B拒绝1），B一次上限已用，不退账。平台Daily仍2/5 used，另外两个正式名额保留。本次自动版本0/1、配套普通作业0/1；手动SaveRun、QuickSave、CPU、Colab、交互GPU、训练、Dataset全部0。历史普通SaveRun尝试2、QuickSave2、CPU文件会话2、Colab设备会话1保持，旧REQUEST_UNCERTAIN不退账。自动作业无可识别对象，没有取消任何作业；无本次会话需要释放，无新增GPU运行可据以归因扣时。
+
+同窗只读发现：A **56456090/V1/SV351739212** 已COMPLETE，Public原值 **0.950**；D960 **56416049/V1/SV351441983** 原值 **0.948**。B无分数，不能报告B差值；A显示值差0.002不等于精确隐藏差值或稳定因果提升。未改最终选择。
+
+停止时间（收尾转录）：2026-09-23T01:13:08.313866+08:00。保留GPU草稿、冻结源码、旧V2、原账本与直接拒绝回执；本批不继续研究、重试、购买、等待额度或建立监控。固定报告commit及本批小文件远端回读在最终回复给出。
