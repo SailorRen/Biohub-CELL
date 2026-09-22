@@ -1,0 +1,86 @@
+{
+  "task_id": "BIOHUB_GEOMETRIC_FUSION_BACKFILL_20260922_V01",
+  "repository": "SailorRen/Biohub-CELL",
+  "branch": "codex/geometric-fusion-backfill-20260922",
+  "base_commit": "b70f453bc345bde06128fe7a2719d96e46120172",
+  "payload_commit": "ab759473304a2c7d9403de90134f3bc5283922a5",
+  "observed_at_shanghai": "2026-09-22T10:31:07+08:00",
+  "scope": "验证前一个payload commit的两份新增文件；不验证本回执自身，不递归生成回执链。",
+  "method": "GitHub连接器fetch_file(ref=固定payload commit)完整UTF-8正文逐字相等；本地Node计算Git blob SHA1(header+bytes)与远端blob SHA一致。另有GitHub compare证明只新增指定两份文件。",
+  "files": [
+    {
+      "path": "reports/20260922_GEOMETRIC_FUSION_BACKFILL_RESULTS.md",
+      "remote_blob": "9c7f8276a12bb7f3165dfdeca624b054761b730d",
+      "full_content_equal": true,
+      "remote_error": false,
+      "bytes": 8632,
+      "local_sha256": "24fc3077c9a05d2022366a150beac1b63910d58a6a95323d866826a87c6a236c",
+      "local_git_blob_sha1": "9c7f8276a12bb7f3165dfdeca624b054761b730d",
+      "git_blob_equal": true
+    },
+    {
+      "path": "research/GEOMETRIC_FUSION_BACKFILL_20260922/backfill_evidence.json",
+      "remote_blob": "a7878a42d1e36f63a4aa565263fe25e12a075808",
+      "full_content_equal": true,
+      "remote_error": false,
+      "bytes": 18049,
+      "local_sha256": "ff303ca53e2e4a8b6e2a38efbda4f953f68b860eb1519dcfc4cc0592eb1ce33a",
+      "local_git_blob_sha1": "a7878a42d1e36f63a4aa565263fe25e12a075808",
+      "git_blob_equal": true
+    }
+  ],
+  "remote_head_at_verification": "ab759473304a2c7d9403de90134f3bc5283922a5",
+  "remote_head_equals_payload": true,
+  "comparison": {
+    "repository_full_name": "SailorRen/Biohub-CELL",
+    "base": "b70f453bc345bde06128fe7a2719d96e46120172",
+    "head": "ab759473304a2c7d9403de90134f3bc5283922a5",
+    "status": "ahead",
+    "ahead_by": 1,
+    "behind_by": 0,
+    "total_commits": 1,
+    "too_large": null,
+    "base_commit": {
+      "sha": "b70f453bc345bde06128fe7a2719d96e46120172",
+      "url": "https://api.github.com/repos/SailorRen/Biohub-CELL/commits/b70f453bc345bde06128fe7a2719d96e46120172",
+      "html_url": "https://github.com/SailorRen/Biohub-CELL/commit/b70f453bc345bde06128fe7a2719d96e46120172"
+    },
+    "merge_base_commit": {
+      "sha": "b70f453bc345bde06128fe7a2719d96e46120172",
+      "url": "https://api.github.com/repos/SailorRen/Biohub-CELL/commits/b70f453bc345bde06128fe7a2719d96e46120172",
+      "html_url": "https://github.com/SailorRen/Biohub-CELL/commit/b70f453bc345bde06128fe7a2719d96e46120172"
+    },
+    "files": [
+      {
+        "filename": "reports/20260922_GEOMETRIC_FUSION_BACKFILL_RESULTS.md",
+        "status": "added",
+        "additions": 66,
+        "deletions": 0,
+        "changes": 66,
+        "previous_filename": null
+      },
+      {
+        "filename": "research/GEOMETRIC_FUSION_BACKFILL_20260922/backfill_evidence.json",
+        "status": "added",
+        "additions": 409,
+        "deletions": 0,
+        "changes": 409,
+        "previous_filename": null
+      }
+    ]
+  },
+  "delivery_status": "PAYLOAD_REMOTE_READBACK_VERIFIED",
+  "task_a": "SCORE_VERSION_AND_SOURCE_VERIFIED",
+  "task_b": "UI_VERIFIED_PENDING_API_FIELDS_UNAVAILABLE",
+  "task_c": "BOUNDED_REVIEW_COMPLETED",
+  "research_status": "PARTIAL_BACKFILL_BLOCKED",
+  "local_project_git_worktree": "NOT_APPLICABLE",
+  "local_ahead_behind": "NOT_APPLICABLE",
+  "delivery_transport": "GITHUB_CONNECTOR_FAST_FORWARD",
+  "old_reports_changed": false,
+  "old_fingerprints_changed": false,
+  "old_tests_changed": false,
+  "old_experiment_ledgers_changed": false,
+  "main_updated_by_this_task": false,
+  "kaggle_writes": 0
+}
