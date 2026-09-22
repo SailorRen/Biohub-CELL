@@ -2,7 +2,7 @@
   "task_id": "BIOHUB_TWO_WAVE_20260922_V01",
   "observed_at_shanghai": "2026-09-22T11:18:42+08:00",
   "account": "sailorren",
-  "status": "A_SUBMITTED_OTHER_ARMS_NOT_EXECUTED_THIS_CONTINUATION",
+  "status": "B_DRAFT_VERIFIED_NORMAL_RUN_INTENT",
   "platform": {
     "submissions_remaining": 4,
     "refresh_ui": "This resets in 21 hours",
@@ -26,10 +26,20 @@
       "Sailor Ren (You), Team Leader",
       "Dongdongjiaqi, Member"
     ],
-    "team_observed_at_shanghai": "2026-09-22T11:37:38+08:00"
+    "team_observed_at_shanghai": "2026-09-22T11:37:38+08:00",
+    "gpu_latest": {
+      "observed_at": "2026-09-22T12:31:20.281304+00:00",
+      "quota_refresh_time": "2026-09-26 00:00:00",
+      "gpu": {
+        "time_used": "1 day, 6:15:24.248000",
+        "time_reserved": "0:00:00",
+        "total_time_allowed": "1 day, 6:00:00",
+        "minimum_time_allowed": "1 day, 6:00:00"
+      }
+    }
   },
   "budget_used": {
-    "notebooks": 1,
+    "notebooks": 2,
     "save_and_run": 1,
     "formal_submissions": 1,
     "engineering_reserve": 0,
@@ -115,6 +125,43 @@
       "formal_status": "PENDING",
       "public_raw": "",
       "last_observed_at_utc": "2026-09-22T06:41:20.644467+00:00"
+    },
+    {
+      "candidate": "B",
+      "request_id": "TW20260922-B-CREATE-01",
+      "operation": "COPY_EXACT_D960_V1_TO_PRIVATE_DRAFT",
+      "mother_sv": 351441983,
+      "planned_slug": "sailorren/biohub-d960-l030p-20260922",
+      "notebook_sha256": "03e4abd5c80b5724b959bc453352524e276bebcf9aa0c2ffa38f22442d3e2ceb",
+      "source_commit": "4dca986a5bd61e3191ff790b74b505017678652e",
+      "status": "CREATED_UI_CONFIRMED",
+      "intent_at_shanghai": "2026-09-22T20:15:31.578197+08:00",
+      "dispatched": true,
+      "at_shanghai": "2026-09-22T20:20:15+08:00",
+      "actual_draft_url": "https://www.kaggle.com/code/sailorren/biohub-d960-l030p-20260922/edit",
+      "incidental_effect": "Kaggle UI: Copied notebook upvoted."
+    },
+    {
+      "candidate": "B",
+      "request_id": "TW20260922-B-EDIT-01",
+      "operation": "RENAME_AND_IMPORT_FROZEN_SOURCE_AND_VERIFY_INHERITED_INPUTS",
+      "status": "DONE_SOURCE_READBACK_VERIFIED",
+      "at_shanghai": "2026-09-22T20:22:26.889765+08:00",
+      "source_commit": "4dca986a5bd61e3191ff790b74b505017678652e",
+      "import_calls": 2,
+      "note": "Same draft link import repeated during editor loading repair; not SaveRun; normalized cell-source comparison PASS."
+    },
+    {
+      "candidate": "B",
+      "request_id": "TW20260922-B-SAVERUN-01",
+      "operation": "SAVE_AND_RUN",
+      "status": "INTENT_PERSISTED_NOT_DISPATCHED",
+      "planned_version": 1,
+      "slug": "sailorren/biohub-d960-l030p-20260922",
+      "kernel_id": 135375343,
+      "source_commit": "4dca986a5bd61e3191ff790b74b505017678652e",
+      "notebook_sha256": "03e4abd5c80b5724b959bc453352524e276bebcf9aa0c2ffa38f22442d3e2ceb",
+      "intent_at_shanghai": "2026-09-22T20:33:12.553220+08:00"
     }
   ],
   "reference_results": {
@@ -191,11 +238,14 @@
       "ordinary_status": "COMPLETE"
     },
     "B": {
-      "status": "SOURCE_READY_GPU_RESOURCE_BLOCKED",
+      "status": "DRAFT_SOURCE_VERIFIED",
       "version": null,
       "sv": null,
       "submission": null,
-      "reason": "Remaining GPU3h57m cannot cover two D960-like 2h04m53s ordinary runs plus current unrelated GPU job. Prioritize A."
+      "reason": "Normal GPU SaveRun options enabled despite exhausted quota; one authorized request planned.",
+      "slug": "sailorren/biohub-d960-l030p-20260922",
+      "kernel_id": 135375343,
+      "private": true
     },
     "C": {
       "status": "WAITING_FOR_WAVE1"
@@ -204,6 +254,6 @@
       "status": "WAITING_FOR_WAVE1"
     }
   },
-  "next_action": "Only read A formal result when requested; no B/C/D authorization in this continuation.",
+  "next_action": "Authorized B-only resource trial; create one private B draft then inspect actual GPU entrypoint; max one formal request.",
   "observed_at_utc": "2026-09-22 03:42:55 UTC"
 }

@@ -1,0 +1,59 @@
+{
+  "observed_at": "2026-09-22T20:33:12.553220+08:00",
+  "source_sha256": "03e4abd5c80b5724b959bc453352524e276bebcf9aa0c2ffa38f22442d3e2ceb",
+  "readback_method": "official kaggle kernels pull of B draft",
+  "kernel_id": 135375343,
+  "all_14_cell_sources_equal_after_list_string_normalization": true,
+  "is_private": true,
+  "enable_gpu": true,
+  "internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "input_versions_ui": {
+    "deepcenter": 5,
+    "secondary": 2,
+    "primary": 10,
+    "gate": 1
+  },
+  "gate_version_evidence": "Added existing gate; historical fixed V1/SV349707105; SDK metadata exposes slug only",
+  "metadata": {
+    "id": "sailorren/biohub-d960-l030p-20260922",
+    "id_no": 135375343,
+    "title": "biohub-d960-l030p-20260922",
+    "code_file": "biohub-d960-l030p-20260922.ipynb",
+    "language": "python",
+    "kernel_type": "notebook",
+    "is_private": true,
+    "enable_gpu": true,
+    "enable_tpu": false,
+    "enable_internet": false,
+    "keywords": [],
+    "dataset_sources": [
+      "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+      "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+      "pilkwang/biohub-tracking-support-pack-50ep-v1"
+    ],
+    "kernel_sources": [
+      "sailorren/biohub-division-train-20260914"
+    ],
+    "competition_sources": [
+      "biohub-cell-tracking-during-development"
+    ],
+    "model_sources": [],
+    "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+    "machine_shape": "NvidiaTeslaT4"
+  },
+  "quota": {
+    "observed_at": "2026-09-22T12:31:20.281304+00:00",
+    "quota_refresh_time": "2026-09-26 00:00:00",
+    "gpu": {
+      "time_used": "1 day, 6:15:24.248000",
+      "time_reserved": "0:00:00",
+      "total_time_allowed": "1 day, 6:00:00",
+      "minimum_time_allowed": "1 day, 6:00:00"
+    }
+  },
+  "csv_check": "NOT_RUN",
+  "version": null,
+  "sv": null,
+  "submission": null
+}

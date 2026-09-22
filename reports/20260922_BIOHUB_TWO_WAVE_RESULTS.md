@@ -83,3 +83,11 @@ Notebook 1/4；Save & Run 1/5（计划1/4，共享工程备用0/1）；正式提
 本次新增Notebook=0、Save & Run=0、正式请求=1/1。原批累计Notebook1/4、Save & Run1/5、正式1/4、共享工程备用0/1；训练、Dataset、独立GPU诊断、最终选择修改均0。B/C/D本次未执行，也未授权续启动；原历史记录保留。未提交原始CSV、完整图、权重、凭据或大日志。
 
 本次新增/变更小型文件的固定报告commit和远端字节核验见A/github_readback.json；保留原github_readback.json既有记录并加引用。原Mac工作区未改动，交付采用隔离worktree非强制push原任务分支。
+
+## B：Kaggle额度耗尽／Colab后备测试
+
+### 2026-09-22 20:33 上海阶段记录
+
+固定任务 a593633，唯一源码4dca986，SHA256 `03e4abd5c80b5724b959bc453352524e276bebcf9aa0c2ffa38f22442d3e2ceb`。隔离 worktree，原工作区无改动。已创建唯一私有B草稿 `sailorren/biohub-d960-l030p-20260922`，Kernel135375343；尚无Version/SV/submission。官方SDK回读后，14个cell源码在规范化source列表/字符串表示后全部相等，既有CPU14项检查复用；无真实CSV，生产/后处理验收NOT_RUN。导入覆盖数据源后已恢复三个固定版本及gate，详见B/draft_readback.json。
+
+GPU官方接口：已用30:15:24.248，总30h，预留0；原始刷新字符串2026-09-26 00:00:00不带时区。UI普通Save & Run GPU选项和Save未禁用，因此先持久化唯一正常运行意图，尚未发送。Colab尚未进入，正式请求本轮0、原批1；Notebook本轮1、原批2；SaveRun本轮0、原批1。编辑器超时/导入/序列化比较误判及最小修复已归并记录，未重训、未新建Dataset、未执行C/D。
