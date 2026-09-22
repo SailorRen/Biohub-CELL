@@ -1,0 +1,24 @@
+{
+  "source_commit": "9aaae780bb2c578066354077ee189f9539440d4c",
+  "scope": "Legacy normalized hash includes node IDs; mismatch alone does not prove effective change. Same-run ID-independent graph comparison additionally required.",
+  "outputs": [
+    {
+      "arm": "D960",
+      "path": "experiments/BIOHUB_SCORE_TRIO_20260921_V01/D960/production_receipt.json",
+      "csv_sha256": "6994fb4bf97d91f8af0b7ed7a22a706a066e64493c68c38dcc7a83f7032d58f1",
+      "canonical_sha256": "ec22575db7959b2865dc790859f69c67cd62b1efe1d8cef354f78f22716cd8c0"
+    },
+    {
+      "arm": "H30",
+      "path": "experiments/BIOHUB_SCORE_TRIO_20260921_V01/H30/production_receipt.json",
+      "csv_sha256": "82d2e10f59424ac62b66d662421e93a33f3d4889173d58e6494a9ce37493effd",
+      "canonical_sha256": "c35a3026bd5ab77ceb249afe5934bf6aac25bfd21c21e4214745bb7964988474"
+    },
+    {
+      "arm": "R00",
+      "path": "experiments/BIOHUB_SCORE_TRIO_20260921_V01/R00/production_receipt.json",
+      "csv_sha256": "aa7ff235693942314f56ad7581462ed9237c15550b003ac1f6c33a3ab395fc14",
+      "canonical_sha256": "3cb5fcef9ae864667dc0abb4d8bf13da936024ada4490a74c88e55d00c2a30ed"
+    }
+  ]
+}

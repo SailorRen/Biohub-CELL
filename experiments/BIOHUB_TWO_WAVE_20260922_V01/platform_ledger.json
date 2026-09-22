@@ -20,7 +20,13 @@
       "results": 4,
       "planned_A_B_found": false
     },
-    "historical_D960_runtime_seconds": 7492.7
+    "historical_D960_runtime_seconds": 7492.7,
+    "team_name": "Sailor Ren",
+    "team_members": [
+      "Sailor Ren (You), Team Leader",
+      "Dongdongjiaqi, Member"
+    ],
+    "team_observed_at_shanghai": "2026-09-22T11:37:38+08:00"
   },
   "budget_used": {
     "notebooks": 1,
@@ -48,18 +54,17 @@
       "mother_sv": 351441983,
       "planned_slug": "sailorren/biohub-d960-v025-20260922",
       "planned_version": 1,
-      "time_shanghai": "2026-09-22T11:21:00+08:00",
       "status": "CREATED_UI_CONFIRMED",
       "actual_draft_url": "https://www.kaggle.com/code/sailorren/fork-of-biohub-g1-det0960-20260921/edit",
       "auto_review": "First attempt rejected before dispatch due to incorrect G1/D960 interpretation; verified pinned D960 metadata and SV351441983; subsequent single platform create succeeded.",
       "incidental_effect": "Kaggle UI: Copied notebook upvoted.",
-      "intent_time_note": "Minute-level manually recorded estimate; pre-action GitHub commit timestamp is authoritative."
+      "intent_persisted_at_utc": "2026-09-22T03:22:26Z",
+      "pre_action_commit": "fda3ebdef6ff38f00dea19ae33ea4b804ff8003a"
     },
     {
       "candidate": "A",
       "request_id": "TW20260922-A-EDIT-01",
       "operation": "RENAME_AND_IMPORT_FROZEN_SOURCE_AND_VERIFY_INHERITED_INPUTS",
-      "time_shanghai": "2026-09-22T11:24:00+08:00",
       "status": "DONE_UI_CONFIRMED",
       "source_commit": "4dca986a5bd61e3191ff790b74b505017678652e",
       "notebook_sha256": "393dc558654af6abffd8c786a1b8fd4065a58e5c2a6a0ba61af4b9d3b4be40df",
@@ -67,7 +72,8 @@
       "planned_slug": "sailorren/biohub-d960-v025-20260922",
       "save_run": false,
       "import_method": "Kaggle Link import from frozen raw GitHub URL; file chooser denied before import, fallback succeeded",
-      "intent_time_note": "Minute-level manually recorded estimate; pre-action GitHub commit timestamp is authoritative."
+      "intent_persisted_at_utc": "2026-09-22T03:24:20Z",
+      "pre_action_commit": "703f93d90913aba9920eb40c8395eb93f76e09a3"
     },
     {
       "candidate": "A",
@@ -75,15 +81,14 @@
       "operation": "SAVE_AND_RUN",
       "planned_version": 1,
       "file": "submission.csv",
-      "time_shanghai": "2026-09-22T11:34:00+08:00",
       "mother_sv": 351441983,
       "source_commit": "4dca986a5bd61e3191ff790b74b505017678652e",
       "notebook_sha256": "393dc558654af6abffd8c786a1b8fd4065a58e5c2a6a0ba61af4b9d3b4be40df",
       "status": "RUNNING_UI_CONFIRMED",
       "version": 1,
       "sv": 351739212,
-      "intent_time_note": "Minute-level manually recorded estimate; pre-action GitHub commit timestamp is authoritative.",
-      "pre_action_commit": "92c54cae09c8146c54dc5a257cd227584c8616fc"
+      "pre_action_commit": "92c54cae09c8146c54dc5a257cd227584c8616fc",
+      "intent_persisted_at_utc": "2026-09-22T03:33:34Z"
     }
   ],
   "reference_results": {
@@ -146,8 +151,14 @@
         "offline_dependency_install": "succeeded",
         "required_graph_zarr_ilp_imports": "PASS",
         "primary_sha256": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
-        "deepcenter_sha256": "8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0"
-      }
+        "deepcenter_sha256": "8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0",
+        "secondary_sha256": "9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f",
+        "cuda_device": "Tesla T4",
+        "discovered_test_videos": 4,
+        "active_inference": "2 independent video shards on CUDA devices 0 and1"
+      },
+      "environment_evidence_note": "Editor selected Pin to original environment (2026-07-01); runtime viewer generic label Latest Container Image. Exact running Docker digest NOT_OBSERVED; do not equate generic label to verified digest.",
+      "latest_observed_runtime_seconds": 508.9
     },
     "B": {
       "status": "SOURCE_READY_GPU_RESOURCE_BLOCKED",
@@ -163,5 +174,6 @@
       "status": "WAITING_FOR_WAVE1"
     }
   },
-  "next_action": "Read this latest ledger; monitor ONLY A V1 SV351739212. Ordinary completion -> download exact submission.csv and two_wave/production_receipt.json -> independent check_actual_csv.py -> live quota/cycle check -> record formal intent and submit A exactly once immediately. Do not rerun to query status. B launch requires adequate GPU; C/D require BOTH formal scores."
+  "next_action": "Read this latest ledger; monitor ONLY A V1 SV351739212. Ordinary completion -> download exact submission.csv and two_wave/production_receipt.json -> independent check_actual_csv.py -> live quota/cycle check -> record formal intent and submit A exactly once immediately. Do not rerun to query status. B launch requires adequate GPU; C/D require BOTH formal scores.",
+  "observed_at_utc": "2026-09-22 03:42:55 UTC"
 }
