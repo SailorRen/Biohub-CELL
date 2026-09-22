@@ -1,0 +1,45 @@
+{
+  "scope": "CPU_SYNTHETIC_FUNCTION_TESTS_ONLY",
+  "notebook_sha256": "940ccce3466a8fdbbe4ead62c1bf33faef23054958ddf92d62858f81bdef774f",
+  "leaf_function_sha256": "a79267efb94511cbc964fcf661e8bb84fde8faad0f2cadabab8b741c2cbf716f",
+  "tests": [
+    {
+      "test": "division_daughter_low_probability",
+      "removed_nodes": [
+        1
+      ],
+      "remaining_parent0_outdegree": 1,
+      "stats": {
+        "leaf_prune_nodes": 1,
+        "leaf_prune_edges": 1
+      }
+    },
+    {
+      "test": "division_daughter_none_probability",
+      "removed_nodes": [],
+      "remaining_parent0_outdegree": 2,
+      "stats": {}
+    },
+    {
+      "test": "missing_probability_encoded_zero",
+      "removed_nodes": [
+        1
+      ],
+      "remaining_parent0_outdegree": 1,
+      "stats": {
+        "leaf_prune_nodes": 1,
+        "leaf_prune_edges": 1
+      }
+    },
+    {
+      "test": "final_frame_low_probability",
+      "removed_nodes": [],
+      "remaining_parent0_outdegree": 2,
+      "stats": {}
+    }
+  ],
+  "missing_learned_probability_default": 0.0,
+  "accuracy_improvement": "NOT_TESTED",
+  "notebook_executed": false,
+  "kaggle_writes": 0
+}
