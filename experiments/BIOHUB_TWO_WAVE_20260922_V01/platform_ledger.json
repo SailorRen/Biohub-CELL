@@ -37,7 +37,20 @@
     "formal_submissions": 4,
     "engineering_reserve": 1
   },
-  "requests": [],
+  "requests": [
+    {
+      "candidate": "A",
+      "request_id": "TW20260922-A-CREATE-01",
+      "operation": "COPY_EXACT_D960_V1_TO_PRIVATE_DRAFT",
+      "source_commit": "4dca986a5bd61e3191ff790b74b505017678652e",
+      "notebook_sha256": "393dc558654af6abffd8c786a1b8fd4065a58e5c2a6a0ba61af4b9d3b4be40df",
+      "mother_sv": 351441983,
+      "planned_slug": "sailorren/biohub-d960-v025-20260922",
+      "planned_version": 1,
+      "time_shanghai": "2026-09-22T11:21:00+08:00",
+      "status": "INTENT_RECORDED_NOT_YET_CLICKED"
+    }
+  ],
   "reference_results": {
     "D960": {
       "submission": 56416049,
