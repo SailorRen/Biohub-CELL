@@ -107,5 +107,107 @@
     "paid_plan_purchased": false,
     "signed_export_urls": "REDACTED_NOT_STORED"
   },
-  "next_decision": "Establish an official same-B filesystem-output binding procedure that preserves GPU and complete offline inference, or change task authorization; do not resume production on mere ipynb text output."
+  "next_decision": "Establish an official same-B filesystem-output binding procedure that preserves GPU and complete offline inference, or change task authorization; do not resume production on mere ipynb text output.",
+  "historical_record_note": "Top-level V1/checks retain prior roundtrip evidence; latest continuation is return_gpu_submit below.",
+  "return_gpu_submit": {
+    "task_id": "BIOHUB_B_RETURN_GPU_SUBMIT_20260922_V01",
+    "task_commit": "7999df89645512c588d7ac986408ad3aa8e8fe3d",
+    "observed_at": "2026-09-22T23:30:52.459485+08:00",
+    "status": "BLOCKED_GPU_OUTPUT_COEXISTENCE",
+    "kernel_id": 135375343,
+    "latest_version": 2,
+    "latest_sv": 351886222,
+    "new_version": null,
+    "submission": null,
+    "public": "NOT_RUN",
+    "source": {
+      "sha256": "03e4abd5c80b5724b959bc453352524e276bebcf9aa0c2ffa38f22442d3e2ceb",
+      "cells": 14,
+      "algorithm_changes": 0,
+      "model_cells_executed_this_batch": 0
+    },
+    "coexistence": {
+      "status": "NOT_ESTABLISHED_WITHIN_AUTHORIZED_ROUTE",
+      "draft_off_metadata_change": "GPU T4 x2 selected successfully while session off; did not allocate GPU. Subsequently set None to start authorized CPU session.",
+      "quick_save_inspection": "Advanced Settings exposed Save Output only; no separate accelerator binding. Dialog cancelled without Save.",
+      "cpu_probe": {
+        "path": "/kaggle/working/output_binding_probe.txt",
+        "bytes": 103,
+        "sha256": "86298e704f9c847ebe421b0ccdabf5635ff63a9f058be0db8d5fe42dd73f084a",
+        "source": "Reused archived payload; Console stdlib only; initial directory empty; no notebook cell edits."
+      },
+      "active_switch_raw": "Availability is limited to 30 hours per week. You have 0 hours remaining.",
+      "button": "Turn on GPU T4 x2",
+      "active_switch_confirmed": false,
+      "official_document": "https://www.kaggle.com/docs/notebooks",
+      "official_quote": "Your session will restart",
+      "boundary": "Official active-session GPU switch requires GPU-backed restart, outside authorization. No global impossibility claim; stop/offline metadata plus retained-output save is NOT_VERIFIED and not asserted as supported.",
+      "gpu_csv_binding": "NOT_RUN_NO_REAL_CSV",
+      "hidden_gpu": "UNTESTED"
+    },
+    "checks": {
+      "colab_gpu": "NOT_RUN",
+      "inputs_dependencies": "NOT_RUN",
+      "real_batch": "NOT_RUN",
+      "full_production": "NOT_RUN",
+      "actual_csv_checker": "NOT_RUN",
+      "return_final_save": "NOT_RUN",
+      "formal_acceptance": "NOT_RUN"
+    },
+    "resources": {
+      "gpu_readonly": {
+        "observed_at": "2026-09-22T23:22:41.451370+08:00",
+        "gpu_used": "1 day, 6:15:24.248000",
+        "gpu_reserved": "0:00:00",
+        "gpu_allowed": "1 day, 6:00:00",
+        "refresh_raw": "2026-09-26 00:00:00"
+      },
+      "final_cpu_session": "off (run a cell to start)",
+      "final_draft_accelerator": "None",
+      "saved_version_gpu": false,
+      "new_packaging_logs": "NOT_APPLICABLE_NO_SAVE",
+      "inputs": "Unmodified; five identities observed; exact versions not independently re-read this batch."
+    },
+    "budgets": {
+      "this_batch": {
+        "colab_gpu": 0,
+        "production": 0,
+        "cpu_file_sessions": 1,
+        "quick_saves": 0,
+        "formal_requests": 0
+      },
+      "cumulative": {
+        "quick_saves": 2,
+        "cpu_file_sessions": 2,
+        "colab_gpu_sessions": 1,
+        "full_B_production": 0,
+        "ordinary_save_run_attempts": 2,
+        "formal_requests": 1,
+        "B_formal_requests": 0
+      },
+      "remaining_submission_ui": 3,
+      "reset_ui": "This resets in 9 hours",
+      "quota_recheck_before_submission": "NOT_APPLICABLE_NO_SUBMISSION",
+      "two_reserved_slots_preserved": true
+    },
+    "auto_review": [
+      {
+        "action": "Off-session GPU metadata confirmation",
+        "rejected_before_dispatch": true,
+        "resolution": "Explicit task authorization and off-session state verified; same metadata action allowed; no GPU allocation."
+      },
+      {
+        "action": "Cancel dialog plus open Run menu with GPU configured",
+        "rejected_before_dispatch": true,
+        "resolution": "Did not repeat batch; cancelled separately, selected None while off, inspected menu under CPU configuration. No GPU run."
+      }
+    ],
+    "reusable_artifacts": [
+      "B/candidate.ipynb",
+      "B/output_snapshot_probe.json",
+      "Kaggle V2/SV351886222 text output",
+      "/private/tmp/biohub-cpu-probe-output/output_binding_probe.txt"
+    ],
+    "next_action": "交回Chat：需要可核验的官方流程，在不启动Kaggle GPU的情况下将CPU磁盘输出与GPU元数据绑定同一版本；本批停止，不自动恢复生产或消费刷新后的额度。"
+  }
 }

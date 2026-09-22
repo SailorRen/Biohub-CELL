@@ -168,3 +168,36 @@ Quick Save明确选择 **Save output for this version when creating a Quick Save
 预算：本轮CPU文件会话1/1、带输出Quick Save1/1；新增Notebook/GPU/Colab/TPU/模型/数据下载/正式提交/Dataset均0。原批累计候选2、普通SaveRun尝试2、非运行保存**2/2**、正式1（A），B正式0；旧不明请求未退账。
 
 没有文件快照机制阻断。下一步最小问题：若要继续真实Colab产物返回，需另行授权新Colab会话及最终保存，并明确如何保留GPU生产配置。本轮不恢复GPU、不继续生产。结构化证据在`B/output_snapshot_probe.json`；固定报告commit和4文件远端字节回读结果由最终回复给出。
+
+
+## B真实输出回传续接（2026-09-22 23:12起，上海时间）
+
+停点：**BLOCKED_GPU_OUTPUT_COEXISTENCE**，发生于GPU＋输出组合路径闭合之前。没有启动本批Colab生产，没有真实CSV、最终版本或正式B请求。最新仍为 **Kernel135375343 / V2 / SV351886222**，CPU文本探针，禁止提交；B Public为NOT_RUN，不写SCORE_PENDING。
+
+本任务原文先以`7999df89645512c588d7ac986408ad3aa8e8fe3d`提交原分支并远端字节回读通过（10345bytes，SHA256 `7711b7646bf44387a9e82c92cfe86a0f4486fe285bbdf0605f31f247a503f1a7`），随后才操作平台。安全复用隔离worktree，包含交接基点1735cafe；canonical未改动。冻结B源码哈希仍为`03e4abd5c80b5724b959bc453352524e276bebcf9aa0c2ffa38f22442d3e2ceb`，原14单元未编辑或模型执行。
+
+实际动作及边界：
+
+1. 只读核对账号sailorren、B版本历史/活动作业和正式列表，未发现后续B生产或提交。剩余正式3次，UI提示9小时刷新；没有跨刷新使用额度。A56456090仍PENDING，D96056416049实际Public原值0.948，均未执行。
+2. 草稿off时成功恢复GPU T4×2元数据，仍off，说明单独改GPU标签无需启动计算。查看Quick Save高级设置，仅有Save Output选项，没有独立GPU绑定项；取消，未派发保存。
+3. 为组合检查将草稿设None，按原账本意图启动本批唯一CPU文件会话。Console初始目录为空，仅重建已归档103byte探针并打印同一SHA256 `86298e704f9c847ebe421b0ccdabf5635ff63a9f058be0db8d5fe42dd73f084a`。没有重复CPU-only快照、临时Notebook单元、模型加载或Run All。
+4. 活动CPU会话选择GPU T4×2后出现确认框：**“Availability is limited to 30 hours per week. You have 0 hours remaining.”**，按钮Turn on GPU T4 x2。[Kaggle官方文档](https://www.kaggle.com/docs/notebooks)说明活动会话添加GPU会重启至GPU环境。该路径涉及本批禁止的Kaggle交互GPU申请，因此未确认，取消并停止本次CPU。最后UI为off，草稿None，版本数仍2。
+
+阻断不是“hidden_gpu尚未验证”，也不是旧JSON错误或缺submission.csv。本轮核实的当前活动会话切换路径需要GPU重启；没有获得官方支持的独立GPU＋磁盘输出保存路径。**未证明所有官方路径绝对不可能；停止CPU后恢复GPU并保留磁盘输出的组合仍NOT_VERIFIED，未冒充已支持或已失败。** 无新保存故无新打包日志、版本GPU或输出下载验收。V1 GPU与V2输出不能拼接。
+
+23:22:41 SDK实读GPU used30:15:24.248/30h、reserved0，refresh原文2026-09-26 00:00:00（未标时区）；首次TLS EOF后一次只读重试成功。未发GPU请求；释放后未重复查询配额。原Inputs未改，5个身份可见，本批未独立回读各版本号。
+
+自动审批两次在派发前拦截：off状态GPU确认最初被识别为GPU启动，经核对本任务明确元数据授权和off状态后同一动作获准；GPU配置下“取消＋打开Run菜单”批操作被拦截，改为单独取消并设None后查看CPU菜单。没有借此发GPU、SaveRun或模型执行；最终平台阻断依据为上述实际界面和官方文档。
+
+|预算项|本批新增|原批累计|累计授权上限|
+|---|---:|---:|---:|
+|CPU文件会话|1（已释放）|2|3|
+|非运行Quick Save|0|2|4|
+|Colab托管GPU会话|0|1（历史探针）|2|
+|完整B生产|0|0|本批1|
+|正式请求|0|1（仅A）|4；B累计最多1|
+|普通SaveRun尝试|0|2（含旧不明请求）|本批新增0|
+
+另外两个正式名额保留。新增Notebook、数据下载、训练、TPU、Dataset、购买、C/D、最终选择修改均0。旧REQUEST_UNCERTAIN不退账。保留冻结源码、V2探针及Mac归档；没有源码适配或CSV可复用。
+
+下一步最小问题：在不启动Kaggle GPU的条件下，是否有可核验的官方GPU元数据与CPU磁盘输出同版本保存流程。此处按任务停止，不自行新开研究轮次或先启动Colab。结构化本批结果在`B/colab_roundtrip_result.json`的`return_gpu_submit`，事件追加原JSONL，预算沿用原账本。关闭时间记录为2026-09-22T23:30:52.459485+08:00（收尾转录时间）。固定交付commit、远端小文件回读及worktree状态在最终回复给出。
