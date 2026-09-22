@@ -2,7 +2,7 @@
   "task_id": "BIOHUB_TWO_WAVE_20260922_V01",
   "observed_at_shanghai": "2026-09-22T11:18:42+08:00",
   "account": "sailorren",
-  "status": "A_PRELAUNCH_READY",
+  "status": "PARTIAL_A_RUNNING_B_RESOURCE_BLOCKED",
   "platform": {
     "submissions_remaining": 4,
     "refresh_ui": "This resets in 21 hours",
@@ -24,7 +24,7 @@
   },
   "budget_used": {
     "notebooks": 1,
-    "save_and_run": 0,
+    "save_and_run": 1,
     "formal_submissions": 0,
     "engineering_reserve": 0,
     "training": 0,
@@ -52,7 +52,8 @@
       "status": "CREATED_UI_CONFIRMED",
       "actual_draft_url": "https://www.kaggle.com/code/sailorren/fork-of-biohub-g1-det0960-20260921/edit",
       "auto_review": "First attempt rejected before dispatch due to incorrect G1/D960 interpretation; verified pinned D960 metadata and SV351441983; subsequent single platform create succeeded.",
-      "incidental_effect": "Kaggle UI: Copied notebook upvoted."
+      "incidental_effect": "Kaggle UI: Copied notebook upvoted.",
+      "intent_time_note": "Minute-level manually recorded estimate; pre-action GitHub commit timestamp is authoritative."
     },
     {
       "candidate": "A",
@@ -65,7 +66,8 @@
       "target": "existing A draft only",
       "planned_slug": "sailorren/biohub-d960-v025-20260922",
       "save_run": false,
-      "import_method": "Kaggle Link import from frozen raw GitHub URL; file chooser denied before import, fallback succeeded"
+      "import_method": "Kaggle Link import from frozen raw GitHub URL; file chooser denied before import, fallback succeeded",
+      "intent_time_note": "Minute-level manually recorded estimate; pre-action GitHub commit timestamp is authoritative."
     },
     {
       "candidate": "A",
@@ -77,7 +79,11 @@
       "mother_sv": 351441983,
       "source_commit": "4dca986a5bd61e3191ff790b74b505017678652e",
       "notebook_sha256": "393dc558654af6abffd8c786a1b8fd4065a58e5c2a6a0ba61af4b9d3b4be40df",
-      "status": "INTENT_RECORDED_NOT_YET_CLICKED"
+      "status": "RUNNING_UI_CONFIRMED",
+      "version": 1,
+      "sv": 351739212,
+      "intent_time_note": "Minute-level manually recorded estimate; pre-action GitHub commit timestamp is authoritative.",
+      "pre_action_commit": "92c54cae09c8146c54dc5a257cd227584c8616fc"
     }
   ],
   "reference_results": {
@@ -109,7 +115,7 @@
   },
   "candidates": {
     "A": {
-      "status": "DRAFT_READY",
+      "status": "ORDINARY_RUNNING",
       "slug": "sailorren/biohub-d960-v025-20260922",
       "source_commit": "4dca986a5bd61e3191ff790b74b505017678652e",
       "notebook_sha256": "393dc558654af6abffd8c786a1b8fd4065a58e5c2a6a0ba61af4b9d3b4be40df",
@@ -125,9 +131,23 @@
         "gate": 1,
         "gate_sv": 349707105
       },
-      "version": null,
-      "sv": null,
-      "submission": null
+      "version": 1,
+      "sv": 351739212,
+      "submission": null,
+      "version_name": "A V025 source 4dca986",
+      "version_url": "https://www.kaggle.com/code/sailorren/biohub-d960-v025-20260922?scriptVersionId=351739212",
+      "created_at_ui_shanghai": "2026-09-22T11:33:55+08:00",
+      "formal_status": "NOT_SUBMITTED",
+      "actual_csv_check": "NOT_AVAILABLE_RUNNING",
+      "public_raw": "NOT_SUBMITTED",
+      "parameter_check": "Config log velocity0.25; actual motion-consumption receipt pending postprocessing",
+      "runtime_initial_checks": {
+        "configuration_guard": "PASS",
+        "offline_dependency_install": "succeeded",
+        "required_graph_zarr_ilp_imports": "PASS",
+        "primary_sha256": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+        "deepcenter_sha256": "8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0"
+      }
     },
     "B": {
       "status": "SOURCE_READY_GPU_RESOURCE_BLOCKED",
@@ -143,5 +163,5 @@
       "status": "WAITING_FOR_WAVE1"
     }
   },
-  "next_action": "Freeze/readback source; record A create intent; browser import into one private object; exact fixed Inputs/resource check before one Save & Run. No formal submission before actual CSV checks."
+  "next_action": "Read this latest ledger; monitor ONLY A V1 SV351739212. Ordinary completion -> download exact submission.csv and two_wave/production_receipt.json -> independent check_actual_csv.py -> live quota/cycle check -> record formal intent and submit A exactly once immediately. Do not rerun to query status. B launch requires adequate GPU; C/D require BOTH formal scores."
 }
