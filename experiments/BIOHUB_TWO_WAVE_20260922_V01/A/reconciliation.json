@@ -1,0 +1,328 @@
+{
+  "observed_at_utc": "2026-09-22T06:34:24.860432+00:00",
+  "identity": {
+    "kernel_id": 135318885,
+    "version": 1,
+    "sv": 351739212,
+    "status": "COMPLETE",
+    "source_equal": true,
+    "remote_source_sha256": "77855893a618997f8be0097a4a02b59a91b1025445490465391c5d5607a6d887",
+    "metadata": {
+      "id": 135318885,
+      "ref": "sailorren/biohub-d960-v025-20260922",
+      "title": "biohub-d960-v025-20260922",
+      "author": "Sailor Ren",
+      "slug": "biohub-d960-v025-20260922",
+      "lastRunTime": "2026-09-19T06:34:21.213Z",
+      "language": "python",
+      "kernelType": "notebook",
+      "isPrivate": true,
+      "enableGpu": true,
+      "enableInternet": false,
+      "categoryIds": [
+        "gpu"
+      ],
+      "datasetDataSources": [
+        "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+        "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+        "pilkwang/biohub-tracking-support-pack-50ep-v1"
+      ],
+      "kernelDataSources": [
+        "sailorren/biohub-division-train-20260914"
+      ],
+      "competitionDataSources": [
+        "biohub-cell-tracking-during-development"
+      ],
+      "enableTpu": false,
+      "currentVersionNumber": 1,
+      "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "machineShape": "NvidiaTeslaT4"
+    }
+  },
+  "submissions": [
+    {
+      "id": 56447707,
+      "description": "Notebook Biohub Geometric Fusion | Version 1",
+      "status": "SubmissionStatus.PENDING",
+      "public_raw": "",
+      "date": "2026-09-22 01:09:58.423000"
+    },
+    {
+      "id": 56445846,
+      "description": "BIOHUB_DF960_20260921_V01 DF960 V1 SV351617874",
+      "status": "SubmissionStatus.PENDING",
+      "public_raw": "",
+      "date": "2026-09-21 23:55:05.440000"
+    },
+    {
+      "id": 56419440,
+      "description": "BIOHUB_SCORE_TRIO_20260921_V01 H30 V1 SV351467088",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.947",
+      "date": "2026-09-21 06:36:48.643000"
+    },
+    {
+      "id": 56416053,
+      "description": "BIOHUB_SCORE_TRIO_20260921_V01 R00 V1 SV351442164",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.948",
+      "date": "2026-09-21 04:21:51.023000"
+    },
+    {
+      "id": 56416049,
+      "description": "BIOHUB_SCORE_TRIO_20260921_V01 D960 V1 SV351441983",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.948",
+      "date": "2026-09-21 04:21:28.967000"
+    },
+    {
+      "id": 56411991,
+      "description": "Notebook biohub-v1-grouped ac4fdc | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.943",
+      "date": "2026-09-21 02:18:47.903000"
+    },
+    {
+      "id": 56407804,
+      "description": "BIOHUB_SCORE_PAIR2_20260920_V01 G58 V1 SV351350591",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.948",
+      "date": "2026-09-20 23:28:11.380000"
+    },
+    {
+      "id": 56407778,
+      "description": "BIOHUB_SCORE_PAIR2_20260920_V01 S50 V1 SV351350449",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.943",
+      "date": "2026-09-20 23:26:30.763000"
+    },
+    {
+      "id": 56388962,
+      "description": "Notebook biohub-lf-dctta025-sectta1 | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.947",
+      "date": "2026-09-20 09:20:10.077000"
+    },
+    {
+      "id": 56384003,
+      "description": "BIOHUB_DIVGATE_PAIR_20260920_V01 B22 V1 SV351207989",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.948",
+      "date": "2026-09-20 06:52:08.977000"
+    },
+    {
+      "id": 56383942,
+      "description": "BIOHUB_DIVGATE_PAIR_20260920_V01 A18 V1 SV351207161",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.948",
+      "date": "2026-09-20 06:50:30.027000"
+    },
+    {
+      "id": 56379064,
+      "description": "Notebook biohub-lf-dctta-v020 | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.947",
+      "date": "2026-09-20 03:43:46.687000"
+    },
+    {
+      "id": 56375774,
+      "description": "BIOHUB_F1_FLOW_KAGGLE_20260918 F1 V1 SV351084196",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.948",
+      "date": "2026-09-20 01:22:51.800000"
+    },
+    {
+      "id": 56351727,
+      "description": "Notebook \ud83d\udd2c [0.146 PB] BioHub 4D Cell Tracking | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.146",
+      "date": "2026-09-19 07:07:55.503000"
+    },
+    {
+      "id": 56346797,
+      "description": "Notebook biohub-942tta-repro-20260907 | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.945",
+      "date": "2026-09-19 03:11:33.047000"
+    },
+    {
+      "id": 56346069,
+      "description": "Notebook biohub-lf-hoctveto-div-b | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.947",
+      "date": "2026-09-19 02:31:24.857000"
+    },
+    {
+      "id": 56345834,
+      "description": "Notebook Biohub Top 3 Push V50 Streamlined SOTA | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.907",
+      "date": "2026-09-19 02:16:54.763000"
+    },
+    {
+      "id": 56333225,
+      "description": "Notebook biohub-940e | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.940",
+      "date": "2026-09-18 15:03:02.347000"
+    },
+    {
+      "id": 56332456,
+      "description": "Notebook 0.938 | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.938",
+      "date": "2026-09-18 14:26:26.470000"
+    },
+    {
+      "id": 56332306,
+      "description": "Notebook biohub-repro059-public-0947-exact-copy | Version 2",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.947",
+      "date": "2026-09-18 14:18:19.537000"
+    },
+    {
+      "id": 56332302,
+      "description": "Notebook Biohub frontier947 gapfill det096 v1 | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.947",
+      "date": "2026-09-18 14:18:10.213000"
+    },
+    {
+      "id": 56332275,
+      "description": "Notebook biohub-repro059-public-0947-exact-copy | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.947",
+      "date": "2026-09-18 14:17:11.243000"
+    },
+    {
+      "id": 56270217,
+      "description": "BIOHUB_SPRINT01_20260916 G1 V1 SV350197436",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.948",
+      "date": "2026-09-16 05:13:20.153000"
+    },
+    {
+      "id": 56226396,
+      "description": "DIVISION_TRAIN_20260914 | V1 | SV349707105 | SHA256 35ec0b376b94843722ac9e8107a0929ccf9a49f94d7bbac99b3093c4618ee123",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.945",
+      "date": "2026-09-14 08:30:01.713000"
+    },
+    {
+      "id": 56222238,
+      "description": "TARGET950_RUN_20260914 | V1 | SV349666428 | SHA256 cdefc823f59d0490e2ced01959e026ebfdd5c4b6f41d74ccb1c7bac4f61a6230",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.947",
+      "date": "2026-09-14 05:13:21.670000"
+    },
+    {
+      "id": 56160258,
+      "description": "Notebook Biohub Lineage Forge \u2014 Precision Tracking | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.947",
+      "date": "2026-09-11 06:32:14.947000"
+    },
+    {
+      "id": 56113466,
+      "description": "LINEFIT_BOUNDARY_20260909 | V1 | SV348415815 | SHA256 4271519ed44e28da93e89128fc6e39515f954e96b8c2d0a9b102c23f3e08f11b",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.946",
+      "date": "2026-09-09 04:27:08.340000"
+    },
+    {
+      "id": 56094423,
+      "description": "PUBLIC946_TTA_20260908 C2 | V1 | SV348150127 | SHA256 2f714f4159667aed98d4fa9b49256da2e44c29b8697c703f253a4ab765d04759",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.946",
+      "date": "2026-09-08 08:27:17.703000"
+    },
+    {
+      "id": 56092872,
+      "description": "PUBLIC946_TTA_20260908 C1 | V1 | SV348131494 | SHA256 accb328eeae3732101711c8d9b7e7a2c267ccd787c7228e72244b55f5488331f",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.940",
+      "date": "2026-09-08 06:49:04.480000"
+    },
+    {
+      "id": 56091397,
+      "description": "PUBLIC946_TTA_20260908 B0 | V1 | SV348114666 | SHA256 1ae0ac1beb9599308119c380056c05ebc69c230395b37bc3d0966c3107153f19",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.946",
+      "date": "2026-09-08 05:21:50.403000"
+    },
+    {
+      "id": 56087974,
+      "description": "Notebook Biohub Harmonic Fusion | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.946",
+      "date": "2026-09-08 01:20:28"
+    },
+    {
+      "id": 56069192,
+      "description": "V21A parent9 dc026 | Version 1 | SV 347862850 | SHA256 9537aa87092fe2e0d130b9b23ffffb9796b6d6ee2d29b366c09bebce044223e0",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.942",
+      "date": "2026-09-07 04:56:50.697000"
+    },
+    {
+      "id": 56066361,
+      "description": "Notebook Biohub  LB 942 | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.942",
+      "date": "2026-09-07 01:33:01.517000"
+    },
+    {
+      "id": 56066312,
+      "description": "Notebook biohub-run77 | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.942",
+      "date": "2026-09-07 01:29:36.053000"
+    },
+    {
+      "id": 56025033,
+      "description": "Notebook .941_biohub-fresh-adaptive-assoc | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.941",
+      "date": "2026-09-05 04:44:43.573000"
+    },
+    {
+      "id": 56002593,
+      "description": "Notebook biohub-v19c-dualwide-9-14-2-25 | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.940",
+      "date": "2026-09-04 01:46:40.747000"
+    },
+    {
+      "id": 55978992,
+      "description": "Notebook biohub-v19c-public0939-sis14-only | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.939",
+      "date": "2026-09-03 09:54:56.607000"
+    },
+    {
+      "id": 55976559,
+      "description": "Notebook biohub-div45-stack | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.938",
+      "date": "2026-09-03 07:05:14.430000"
+    },
+    {
+      "id": 55976471,
+      "description": "Notebook skkd | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.938",
+      "date": "2026-09-03 06:59:30.487000"
+    },
+    {
+      "id": 55311118,
+      "description": "Notebook Biohub Solution | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public_raw": "0.885",
+      "date": "2026-08-07 01:34:26.140000"
+    }
+  ],
+  "competition_id": 136605,
+  "daily_max": 5,
+  "entered": true,
+  "disabled": false
+}

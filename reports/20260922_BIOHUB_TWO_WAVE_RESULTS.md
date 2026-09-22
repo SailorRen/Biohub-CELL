@@ -63,3 +63,13 @@ Notebook 1/4；Save & Run 1/5（计划1/4，共享工程备用0/1）；正式提
 ### 后续启动观测
 
 同一SV351739212运行到508.9秒时仍RUNNING，日志已显示secondary SHA256与固定9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f一致、CUDA Tesla T4、发现4个实际test视频，并启动CUDA0/1两个独立视频分片。worker实际日志det_threshold0.96、secondary_detection_weight0.8。此为真实生产进行中，不是最终图完成或正式评分。gate实际后处理调用和最终CSV仍未验收。
+
+## A现有V1正式提交续接：Mac独立验收
+
+2026-09-22从GitHub同步至任务commit5d6093a8d27e21c6900acba01f81cb81dc289b0c，隔离worktree续接，未使用Mac旧账本启动。当前A Kernel135318885 / V1 / SV351739212，普通COMPLETE，耗时9029.9秒；全部14代码单元类型/顺序/source与冻结SHA256 393dc558654af6abffd8c786a1b8fd4065a58e5c2a6a0ba61af4b9d3b4be40df一致。SDK metadata的lastRunTime为继承旧值，未用于本次完成时间；精确SV以版本页面和edit/run链接绑定。
+
+选择性下载实际CSV和所需小回执到Git外。原check_actual_csv.py原样执行PASS：241889行、4样本、schema/坐标/哨兵/行ID/图结构/时间/度/哈希/归档去重通过；同次云端官方reader往返PASS。CSV SHA256 d46a19a6579538034f00701550e86b6a7087b1a58921eccf615767d60852aa55；ID无关摘要5e5210eb2c0460d2ff7a7171cbfde42c2820a1f03a37643736541b44f083aec0。4样本均有非纯重编号变化，不代表Public提分。
+
+独立最终消费复核PASS：velocity0.25共127524次，leaf禁用且删除0；det0.960、harmonic0.15、secondary detection0.8、G1分裂门0.20、三推理权重及gate一致，模型实际加载与后处理使用正常。原选择器本次选combo(tight55+bonus125+relaxed9)。追加消费核验脚本初次将worker_harmonic_records列表按整数比较导致TypeError，修正为非空列表检查后通过；未修改生产源码或放松标准。
+
+提交前SDK及UI均核对剩余4次，UI显示17小时刷新；精确Notebook V1及submission.csv正式Submit入口可用。先前误以默认JSON文件打开对话框只提示无法找到该输出，未点击提交；选择实际submission.csv后入口正常。本机SDK源码明确支持competition_submit_code(kernel_version=1)，将使用该接口，非本地CSV上传。唯一正式请求意图已追加原账本；本阶段尚未派发，新增Notebook/SaveRun为0，B/C/D未执行。

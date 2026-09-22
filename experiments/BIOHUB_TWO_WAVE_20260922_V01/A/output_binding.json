@@ -1,0 +1,117 @@
+{
+  "observed_at_utc": "2026-09-22T06:35:12.712933+00:00",
+  "before": {
+    "kernel_id": 135318885,
+    "version": 1,
+    "sv": 351739212,
+    "status": "COMPLETE",
+    "source_equal": true,
+    "remote_source_sha256": "77855893a618997f8be0097a4a02b59a91b1025445490465391c5d5607a6d887",
+    "metadata": {
+      "id": 135318885,
+      "ref": "sailorren/biohub-d960-v025-20260922",
+      "title": "biohub-d960-v025-20260922",
+      "author": "Sailor Ren",
+      "slug": "biohub-d960-v025-20260922",
+      "lastRunTime": "2026-09-19T06:34:21.213Z",
+      "language": "python",
+      "kernelType": "notebook",
+      "isPrivate": true,
+      "enableGpu": true,
+      "enableInternet": false,
+      "categoryIds": [
+        "gpu"
+      ],
+      "datasetDataSources": [
+        "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+        "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+        "pilkwang/biohub-tracking-support-pack-50ep-v1"
+      ],
+      "kernelDataSources": [
+        "sailorren/biohub-division-train-20260914"
+      ],
+      "competitionDataSources": [
+        "biohub-cell-tracking-during-development"
+      ],
+      "enableTpu": false,
+      "currentVersionNumber": 1,
+      "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "machineShape": "NvidiaTeslaT4"
+    }
+  },
+  "after": {
+    "kernel_id": 135318885,
+    "version": 1,
+    "sv": 351739212,
+    "status": "COMPLETE",
+    "source_equal": true,
+    "remote_source_sha256": "77855893a618997f8be0097a4a02b59a91b1025445490465391c5d5607a6d887",
+    "metadata": {
+      "id": 135318885,
+      "ref": "sailorren/biohub-d960-v025-20260922",
+      "title": "biohub-d960-v025-20260922",
+      "author": "Sailor Ren",
+      "slug": "biohub-d960-v025-20260922",
+      "lastRunTime": "2026-09-19T06:35:08.944Z",
+      "language": "python",
+      "kernelType": "notebook",
+      "isPrivate": true,
+      "enableGpu": true,
+      "enableInternet": false,
+      "categoryIds": [
+        "gpu"
+      ],
+      "datasetDataSources": [
+        "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+        "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+        "pilkwang/biohub-tracking-support-pack-50ep-v1"
+      ],
+      "kernelDataSources": [
+        "sailorren/biohub-division-train-20260914"
+      ],
+      "competitionDataSources": [
+        "biohub-cell-tracking-during-development"
+      ],
+      "enableTpu": false,
+      "currentVersionNumber": 1,
+      "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "machineShape": "NvidiaTeslaT4"
+    }
+  },
+  "sv_binding": "V1 frozen ledger and exact viewer link; latest V1 before and after collection",
+  "private_directory": "/private/tmp/biohub-a351739212-output",
+  "artifacts": [
+    {
+      "name": "submission.csv",
+      "sha256": "d46a19a6579538034f00701550e86b6a7087b1a58921eccf615767d60852aa55",
+      "bytes": 12593270
+    },
+    {
+      "name": "two_wave/production_receipt.json",
+      "sha256": "3b2967f5e26ca32d86e644daf67603e36ed012c2e7038eebb33f7f2c8262b8f7",
+      "bytes": 8365
+    },
+    {
+      "name": "two_wave/postprocess_calls.jsonl",
+      "sha256": "079ee9bb2dedef74f55360d295786124bec3b7373f906cb737b86b6ce569c823",
+      "bytes": 29351
+    },
+    {
+      "name": "ppsweep_selected.json",
+      "sha256": "5f5cabf9f38a211e0ed17451e1e6d39871b88002c01552d885eb2e1e44b4a662",
+      "bytes": 456
+    },
+    {
+      "name": "bidirectional_production_runtime_integrity.json",
+      "sha256": "ae41130ee035d3ddcbaf2d0977f721429a52ffda8133fe1b877f51de5926278d",
+      "bytes": 2387
+    },
+    {
+      "name": "sprint_production_receipt.json",
+      "sha256": "49ad86ec940fef07efb40ffdf5dcd3a2a65912bad5a332f6b27e6cf0455c6a44",
+      "bytes": 736
+    }
+  ],
+  "log_sha256": "f7a37b7d7dd2f2cc8518dd8a2cd6ca5d305594235bdd1621887ec25041e21cd9",
+  "platform_writes": 0
+}

@@ -1,0 +1,37 @@
+{
+  "arm": "A",
+  "status": "CSV_AND_RECEIPT_PASS",
+  "sha256": "d46a19a6579538034f00701550e86b6a7087b1a58921eccf615767d60852aa55",
+  "canonical_sha256": "286c85be29797d24bcb73e7c1edb34e1df351dc6170ef81bf6d6b193eb69374d",
+  "id_independent_sha256": "5e5210eb2c0460d2ff7a7171cbfde42c2820a1f03a37643736541b44f083aec0",
+  "rows": 241889,
+  "graphs": {
+    "44b6_0113de3b": {
+      "nodes": 25658,
+      "edges": 24913,
+      "canonical_sha256": "ccd8a84dc1e3d15c30e78b4047196904338de62350a266967dea5e5ae35e58e5",
+      "id_independent_sha256": "03e2851a774271908e112ff85c6c86828c0811346a23f385f937be5f9077a8a3"
+    },
+    "44b6_0b24845f": {
+      "nodes": 20985,
+      "edges": 19673,
+      "canonical_sha256": "a86fd66003361b69a3cfc7bf58631a755e56d90d5d8256a2e007bfc6808f3b23",
+      "id_independent_sha256": "8a15a98cec06521b92a459b37b4774c7bebcac65a1b87783da935858f33f0c25"
+    },
+    "6bba_05b6850b": {
+      "nodes": 6120,
+      "edges": 5917,
+      "canonical_sha256": "d2102e812db471b06592eed3114641b3a0e75c210831f908490d382e19996bd5",
+      "id_independent_sha256": "5bc69d8715d785b25a90990bc4fc25f79414bc86b9de9a8411a8d71d199cbd8c"
+    },
+    "6bba_05db0fb1": {
+      "nodes": 70398,
+      "edges": 68225,
+      "canonical_sha256": "b440932b5707e169e2cd71dc97fd0b7e88d4fa7122967fdf9aec96d4a8e4dc18",
+      "id_independent_sha256": "50649e89a3b4cc1c52bd2701d8b946d25390ff04111a2255da338adcc86de0a7"
+    }
+  },
+  "archived_deduplication": "PASS",
+  "other_batch_checks": [],
+  "scope": "Actual CSV downloaded from exact ordinary version; independent stdlib check plus same-run official reader receipt. Formal score not implied."
+}

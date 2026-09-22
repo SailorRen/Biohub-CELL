@@ -89,6 +89,23 @@
       "sv": 351739212,
       "pre_action_commit": "92c54cae09c8146c54dc5a257cd227584c8616fc",
       "intent_persisted_at_utc": "2026-09-22T03:33:34Z"
+    },
+    {
+      "candidate": "A",
+      "operation": "FORMAL_SUBMISSION",
+      "request_id": "d641440c-e68c-44a8-af6e-10b8cd4054d9",
+      "status": "INTENT_PERSISTED_NOT_DISPATCHED",
+      "version": 1,
+      "sv": 351739212,
+      "kernel_id": 135318885,
+      "slug": "sailorren/biohub-d960-v025-20260922",
+      "file": "submission.csv",
+      "description": "BIOHUB_TWO_WAVE_20260922_V01 A V025 V1 SV351739212",
+      "source_commit": "4dca986a5bd61e3191ff790b74b505017678652e",
+      "csv_sha256": "d46a19a6579538034f00701550e86b6a7087b1a58921eccf615767d60852aa55",
+      "intent_at_utc": "2026-09-22T06:38:26.393560+00:00",
+      "entrypoint": "Kaggle SDK competition_submit_code(kernel_version=1)",
+      "counted": 0
     }
   ],
   "reference_results": {
@@ -120,7 +137,7 @@
   },
   "candidates": {
     "A": {
-      "status": "ORDINARY_RUNNING",
+      "status": "ORDINARY_COMPLETE_CSV_PASS",
       "slug": "sailorren/biohub-d960-v025-20260922",
       "source_commit": "4dca986a5bd61e3191ff790b74b505017678652e",
       "notebook_sha256": "393dc558654af6abffd8c786a1b8fd4065a58e5c2a6a0ba61af4b9d3b4be40df",
@@ -143,9 +160,9 @@
       "version_url": "https://www.kaggle.com/code/sailorren/biohub-d960-v025-20260922?scriptVersionId=351739212",
       "created_at_ui_shanghai": "2026-09-22T11:33:55+08:00",
       "formal_status": "NOT_SUBMITTED",
-      "actual_csv_check": "NOT_AVAILABLE_RUNNING",
+      "actual_csv_check": "CSV_AND_RECEIPT_PASS",
       "public_raw": "NOT_SUBMITTED",
-      "parameter_check": "Config log velocity0.25; actual motion-consumption receipt pending postprocessing",
+      "parameter_check": "FINAL_VELOCITY_025_PASS",
       "runtime_initial_checks": {
         "configuration_guard": "PASS",
         "offline_dependency_install": "succeeded",
@@ -158,7 +175,8 @@
         "active_inference": "2 independent video shards on CUDA devices 0 and1"
       },
       "environment_evidence_note": "Editor selected Pin to original environment (2026-07-01); runtime viewer generic label Latest Container Image. Exact running Docker digest NOT_OBSERVED; do not equate generic label to verified digest.",
-      "latest_observed_runtime_seconds": 508.9
+      "latest_observed_runtime_seconds": 508.9,
+      "kernel_id": 135318885
     },
     "B": {
       "status": "SOURCE_READY_GPU_RESOURCE_BLOCKED",
