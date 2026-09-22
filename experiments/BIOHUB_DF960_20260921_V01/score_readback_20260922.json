@@ -1,0 +1,39 @@
+{
+  "commit": "d6c5c45072cb890b36295264029c49066ea49217",
+  "remote_head": "d6c5c45072cb890b36295264029c49066ea49217",
+  "files": [
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/DF960/formal_status.json",
+      "sha256": "25222dccd6e4fac1e376e74512df5c9a5016f1237de6ca87b95238a4954be1c5",
+      "bytes": 514,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/DF960/platform_latest.json",
+      "sha256": "a55a96de86c319f28e57ae9b2119921471ed3ab3f05374fe97b8dacd6bf6c013",
+      "bytes": 1916,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/formal_status_snapshot.json",
+      "sha256": "68ba2f452f4ff7852a763aff13661d1c049fd638288c8d9879d46778145637e7",
+      "bytes": 11570,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_DF960_20260921_V01/platform_ledger.json",
+      "sha256": "47153012369754b909a91c8e7a9d941955a6dde94f21cd9909b842e42bc77cc7",
+      "bytes": 2370,
+      "equal": true
+    },
+    {
+      "path": "reports/20260921_BIOHUB_DF960_ONE_SHOT_V01.md",
+      "sha256": "ec27114fe0f7b43e2b44f60bd5c9429891664f0d55ead7be5464e872a87c47d5",
+      "bytes": 6040,
+      "equal": true
+    }
+  ],
+  "status": "COMPLETED_VERIFIED",
+  "scope": "fixed payload bytes only",
+  "observed_at_utc": "2026-09-22T00:02:09.515630+00:00"
+}
