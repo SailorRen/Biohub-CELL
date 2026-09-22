@@ -145,3 +145,26 @@ GPU前后官方快照分别20:31:20与20:41:33上海：已用均30:15:24.248，�
 保留：Kaggle私有B V1及冻结源代码、原账本、resource_events.jsonl、colab_roundtrip_result.json。没有原始数据、CSV、模型、签名导出URL、邮箱或凭据入库。Colab仅设备探针，原模型单元未执行，导出后原14单元未再次逐字节导出验收，不能声称Colab生产源码验收完成。
 
 交回Chat的最小问题：是否能给出可核验的、同一B保留GPU与完整离线推理代码的正规输出绑定流程；若不能，应修改后续授权，而不是继续猜测或耗费完整生产。无后台监控、不等评分。交付验证由固定commit的远端字节回读另附于本轮回复。
+
+
+## CPU输出快照探针（2026-09-22 上海时间）
+
+结论：**真实工作目录文件快照及精确版本下载哈希验证通过；GPU生产配置未保留**。同一B Kernel135375343的新版本为 **V2 / SV351886222**，名称`B output snapshot probe - NOT FOR SUBMISSION`。这只验证Kaggle工作目录→版本Output，不证明Colab CSV回传、B生产或正式评分。
+
+安全fetch并快进隔离worktree至固定任务`301563f7902e9a54483f349a30c32893eab15e2d`；canonical分支干净、remote正确且未切换。完整读取任务/AGENTS/账本/上轮结果和事件；源码哈希未变。对账时B只有V1、草稿off、没有后续B活动或重复探针。
+
+22:32启动唯一CPU文件会话，先将Accelerator由GPU T4×2设为None，Internet保持关闭。只用Console列目录和执行任务原标准库探针，无临时单元、模型导入、权重加载、RunAll或SaveRun。原目录仅`.virtual_documents/__notebook_source__.ipynb`245600bytes；没有未知用户文件，未删除文件。
+
+探针`/kaggle/working/output_binding_probe.txt`：**103bytes**，SHA256 **`86298e704f9c847ebe421b0ccdabf5635ff63a9f058be0db8d5fe42dd73f084a`**。CPU打印回执、Mac独立构造payload、官方CLI精确`/2`下载文件三者一致。首次只读下载TLS `UNEXPECTED_EOF_WHILE_READING`，仅一次同版本只读重试成功，不重发保存。
+
+Quick Save明确选择 **Save output for this version when creating a Quick Save**，不是Never。唯一意图`TW20260922-B-OUTPUTSNAP-01`先写原账本，再派发一次；保持CPU直至上传、快照和文件验收完成。版本Output实见文本内容及103B，另含平台自动`.virtual_documents`源码文件；总245.7kB。打包日志6行：语法警告及nbconvert HTML转换，Successfully ran in11.9s，Accelerator None，无模型运行。
+
+保存前后下载源码逐单元比对：原14代码单元类型、顺序、source完全一致，execution_count全部null、outputs全部空；版本Diff+0/-0。编辑器旧“Cell executed at4:32am”提示源于继承的2026-09-09元数据，不代表本轮执行。
+
+新版本元数据：private=true、Internet=false、enable_gpu=false、enable_tpu=false、machine_shape=None。五个Inputs身份保留，SDK未独立返回各版本号，本次未修改Inputs。Docker为`gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9`，与上轮一致；编辑器Pin to original标签不能替代实际digest。CPU交互/打包为None不证明隐藏评分，**hidden_gpu=UNTESTED**。没有submission.csv；未点击Output页的通用Submit to Competition按钮，未打开或测试正式资格，正式请求0。
+
+22:34:36实读GPU used30:15:24.248/30h、reserved0，恢复原字段2026-09-26 00:00:00（时区未指明）。本次CPU约7分钟后正常Stop session，确认off；快照和下载均已完成，不影响旧任务。
+
+预算：本轮CPU文件会话1/1、带输出Quick Save1/1；新增Notebook/GPU/Colab/TPU/模型/数据下载/正式提交/Dataset均0。原批累计候选2、普通SaveRun尝试2、非运行保存**2/2**、正式1（A），B正式0；旧不明请求未退账。
+
+没有文件快照机制阻断。下一步最小问题：若要继续真实Colab产物返回，需另行授权新Colab会话及最终保存，并明确如何保留GPU生产配置。本轮不恢复GPU、不继续生产。结构化证据在`B/output_snapshot_probe.json`；固定报告commit和4文件远端字节回读结果由最终回复给出。
