@@ -1,0 +1,94 @@
+{
+  "task_id": "BIOHUB_TWO_WAVE_20260922_V01",
+  "repository": "SailorRen/Biohub-CELL",
+  "branch": "codex/two-wave-four-submit-20260922",
+  "status": "PASS",
+  "source_freeze_commit": "4dca986a5bd61e3191ff790b74b505017678652e",
+  "source_freeze_full_readback": [
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/build.py",
+      "sha": "8f93c21690a24e67d7c27689a8b415757014776e",
+      "full_content_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/patch_support.py",
+      "sha": "e5da18b93375b2c13e6255041114dccf266ad133",
+      "full_content_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/test_patch.py",
+      "sha": "5dda4a40ac1ff00d2dc674c90e1e4e8b8331ace0",
+      "full_content_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/batch_plan.json",
+      "sha": "1f929b16d702f9f3e3ecd72bda2f9c742a0e9a26",
+      "full_content_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/unit_checks.json",
+      "sha": "a02df375089dbf283a82ca8f69384c88f672d16d",
+      "full_content_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/platform_ledger.json",
+      "sha": "dcd059e36988aba9af8dfc41a59961bc9a82aecb",
+      "full_content_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/A/candidate.ipynb",
+      "sha": "39eb9b4a2d1378a153be692acca3f22805b1ae30",
+      "full_content_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/A/kernel-metadata.json",
+      "sha": "ff047e3f6452ca8730538d78b80eeb218d11ae95",
+      "full_content_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/B/candidate.ipynb",
+      "sha": "09d49f579fe098bed01b5b9f3b5cee6f00000dd4",
+      "full_content_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/B/kernel-metadata.json",
+      "sha": "b413b9f98d9c397bdb99980403a4849d3ddcc047",
+      "full_content_equal": true
+    }
+  ],
+  "stage_report_commit": "d8e5cda8967eeb2a06fc97ccb53fbdb81e96de51",
+  "stage_full_readback": [
+    {
+      "path": "reports/20260922_BIOHUB_TWO_WAVE_RESULTS.md",
+      "sha": "f437cc4914c07ca36c889ec3e612c3018907b4e3",
+      "full_content_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/platform_ledger.json",
+      "sha": "4eb9f570f01c036242ee375da0a430d5b4657ed5",
+      "full_content_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/check_actual_csv.py",
+      "sha": "3b8bf2f3b5f69483fb55f49a9ae975166f6cf53d",
+      "full_content_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/known_output_hashes.json",
+      "sha": "65031d0660c84010bc1abd1f63946bb6e6b8faad",
+      "full_content_equal": true
+    }
+  ],
+  "remote_head_observed": "d8e5cda8967eeb2a06fc97ccb53fbdb81e96de51",
+  "scope": "10 frozen files read back once before launch; four stage files read back at the exact report commit. This receipt is stored in a subsequent commit, not self-referentially reverified.",
+  "platform_state": "A V1 SV351739212 ORDINARY_RUNNING; B source ready GPU blocked; C/D waiting; formal requests0",
+  "exclusions": [
+    "main",
+    "old experiment ledgers",
+    "original CSV",
+    "full graphs",
+    "model weights",
+    "competition data",
+    "credentials"
+  ]
+}
