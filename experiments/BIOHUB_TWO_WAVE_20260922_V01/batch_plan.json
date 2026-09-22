@@ -1,0 +1,36 @@
+{
+  "task_id": "BIOHUB_TWO_WAVE_20260922_V01",
+  "source_commit": "1cf89f1f9380f005d98e9cb15ca9f5d80c4ebaca",
+  "source_sha256": "b12568e27ea5a8c66942a6301c2c80d037fdffe43f338a23a86266f80a02d192",
+  "candidates": {
+    "A": {
+      "notebook_sha256": "393dc558654af6abffd8c786a1b8fd4065a58e5c2a6a0ba61af4b9d3b4be40df",
+      "slug": "sailorren/biohub-d960-v025-20260922",
+      "velocity": 0.25,
+      "leaf_threshold": null,
+      "code_ast": "PASS",
+      "changed_cells": [
+        0,
+        5
+      ]
+    },
+    "B": {
+      "notebook_sha256": "03e4abd5c80b5724b959bc453352524e276bebcf9aa0c2ffa38f22442d3e2ceb",
+      "slug": "sailorren/biohub-d960-l030p-20260922",
+      "velocity": 0.5,
+      "leaf_threshold": 0.3,
+      "code_ast": "PASS",
+      "changed_cells": [
+        0,
+        5
+      ]
+    }
+  },
+  "C_D": "WAITING_FOR_WAVE1",
+  "resource_policy": "Prioritize A; B only when live quota and active-job requirements permit.",
+  "budgets": {
+    "notebooks": 4,
+    "save_and_run": 5,
+    "formal_submissions": 4
+  }
+}

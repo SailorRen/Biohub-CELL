@@ -1,0 +1,89 @@
+{
+  "task_id": "BIOHUB_TWO_WAVE_20260922_V01",
+  "observed_at_shanghai": "2026-09-22T11:18:42+08:00",
+  "account": "sailorren",
+  "status": "SOURCE_READY_PRELAUNCH",
+  "platform": {
+    "submissions_remaining": 4,
+    "refresh_ui": "This resets in 21 hours",
+    "refresh_exact": "NOT_OBSERVED",
+    "refresh_estimate": "2026-09-23 approximately 08:00 Asia/Shanghai; UI rounded hours only, recheck before each submission",
+    "gpu_available_ui": "4h10m of30h (11:09 observation)",
+    "active_events": {
+      "formal_scoring": 2,
+      "ordinary_gpu": 1,
+      "existing_ordinary": "sailorren/biohub-geometric-fusion V1 GPU T4x2 Running 2h; not this task"
+    },
+    "competition_deadline_shanghai": "2026-09-30T07:59:00+08:00",
+    "existing_candidates_search": {
+      "query": "biohub-d960",
+      "results": 4,
+      "planned_A_B_found": false
+    }
+  },
+  "budget_used": {
+    "notebooks": 0,
+    "save_and_run": 0,
+    "formal_submissions": 0,
+    "engineering_reserve": 0,
+    "training": 0,
+    "dataset_write": 0,
+    "independent_gpu_diagnostic": 0,
+    "final_selection_change": 0
+  },
+  "budget_limits": {
+    "notebooks": 4,
+    "save_and_run": 5,
+    "formal_submissions": 4,
+    "engineering_reserve": 1
+  },
+  "requests": [],
+  "reference_results": {
+    "D960": {
+      "submission": 56416049,
+      "sv": 351441983,
+      "version": 1,
+      "public_raw": "0.948",
+      "status": "Succeeded"
+    },
+    "DF960": {
+      "submission": 56445846,
+      "sv": 351617874,
+      "version": 1,
+      "public_raw": "",
+      "status": "Notebook Running",
+      "error": "NOT_OBSERVED"
+    },
+    "F1": {
+      "submission": 56375774,
+      "sv": 351084196,
+      "public_raw": "0.948"
+    },
+    "G1": {
+      "submission": 56270217,
+      "sv": 350197436,
+      "public_raw": "0.948"
+    }
+  },
+  "candidates": {
+    "A": {
+      "status": "SOURCE_READY",
+      "version": null,
+      "sv": null,
+      "submission": null
+    },
+    "B": {
+      "status": "SOURCE_READY_RESOURCE_CHECK_PENDING",
+      "version": null,
+      "sv": null,
+      "submission": null
+    },
+    "C": {
+      "status": "WAITING_FOR_WAVE1"
+    },
+    "D": {
+      "status": "WAITING_FOR_WAVE1"
+    }
+  },
+  "next_action": "Freeze/readback source; record A create intent; browser import into one private object; exact fixed Inputs/resource check before one Save & Run. No formal submission before actual CSV checks."
+}
