@@ -1,0 +1,409 @@
+{
+  "task_id": "BIOHUB_GEOMETRIC_FUSION_BACKFILL_20260922_V01",
+  "repository": "SailorRen/Biohub-CELL",
+  "branch": "codex/geometric-fusion-backfill-20260922",
+  "task_commit": "3840c240957275ecd6b255dda087212942e43f55",
+  "initial_remote_head": "b70f453bc345bde06128fe7a2719d96e46120172",
+  "task_commit_is_parent_of_initial_head": true,
+  "timezone": "Asia/Shanghai",
+  "overall_status": "PARTIAL_BACKFILL_BLOCKED",
+  "status_reason": "公开版本及源码绑定闭合；DF960当前UI仍Pending，尚无正式分数；未取得登录态API原始字段或当前数值submission ID。",
+  "task_a": {
+    "status": "SCORE_VERSION_AND_SOURCE_VERIFIED",
+    "classification": [
+      "OFFICIAL_FACT",
+      "SOURCE_CODE_VERIFIED"
+    ],
+    "author": "Aman Atar",
+    "slug": "amanatar/biohub-geometric-fusion",
+    "version": 3,
+    "script_version_id": 351532492,
+    "version_url": "https://www.kaggle.com/code/amanatar/biohub-geometric-fusion?scriptVersionId=351532492",
+    "version_saved_at_shanghai": "2026-09-21T17:18:35+08:00",
+    "header_time_shanghai": "2026-09-21T17:18:34+08:00",
+    "timestamp_note": "版本历史及Code列表为17:18:35；Notebook头部为17:18:34。保留各自语义，不合并为伪精确时间。",
+    "score_observation_window_shanghai": [
+      "2026-09-22T10:16:27+08:00",
+      "2026-09-22T10:21:24+08:00"
+    ],
+    "public_score_raw_ui": "0.948",
+    "best_score_raw_ui": "0.948",
+    "best_version": 3,
+    "best_script_version_id": 351532492,
+    "score_location": "固定SV页 Competition Notebook 面板：Public Score 0.948；Best Score 0.948 V3，链接携带scriptVersionId=351532492；当前Version 3 of 3。",
+    "author_submission_id": null,
+    "author_submission_id_status": "NOT_PUBLIC",
+    "source_download_url": "https://www.kaggle.com/kernels/scriptcontent/351532492/download",
+    "source_observed_at_shanghai": "2026-09-22T10:20:38+08:00",
+    "download_http_status": 200,
+    "download_method": "Node fetch GET，无凭据，不执行Notebook",
+    "license_observed": "Apache 2.0",
+    "third_party_source_uploaded_to_github": false,
+    "source_comparison": {
+      "bytes": 637942,
+      "sha256": "940ccce3466a8fdbbe4ead62c1bf33faef23054958ddf92d62858f81bdef774f",
+      "file_bytes_match": true,
+      "cell_count": 12,
+      "cells": [
+        {
+          "index": 0,
+          "cell_type": "code",
+          "source_sha256": "c4b8e77366232f2276d283d9cd199fe97e861f63f00170a66c879debcd74d758",
+          "source_utf8_bytes": 3261,
+          "match": true
+        },
+        {
+          "index": 1,
+          "cell_type": "code",
+          "source_sha256": "99198956a4c7725d85c6aab0d478368749824801716c6d39cf5bf915187ac500",
+          "source_utf8_bytes": 1330,
+          "match": true
+        },
+        {
+          "index": 2,
+          "cell_type": "code",
+          "source_sha256": "380f7ae50c17363ba55ed4a74fff2663c2809ac4273f4c845338c30636cb8615",
+          "source_utf8_bytes": 14091,
+          "match": true
+        },
+        {
+          "index": 3,
+          "cell_type": "code",
+          "source_sha256": "0f62c46bbec00a2d3d6bbde0efb89d5713204983d51c9c3cf73df1869cf12f8f",
+          "source_utf8_bytes": 26734,
+          "match": true
+        },
+        {
+          "index": 4,
+          "cell_type": "code",
+          "source_sha256": "768bd13fbf10d26731819e0d19f79c11d5a1d0fad7065ec5f5f66c2c5fc3187c",
+          "source_utf8_bytes": 49112,
+          "match": true
+        },
+        {
+          "index": 5,
+          "cell_type": "code",
+          "source_sha256": "71fa78d2e3dc0c02212de7cfd93bb3b04eee73bbb2c1d4683f88a5dcb046758e",
+          "source_utf8_bytes": 74608,
+          "match": true
+        },
+        {
+          "index": 6,
+          "cell_type": "code",
+          "source_sha256": "c300805e0268602d76042dd271bcc3224fda6af2a52569e16bebc446701d66a5",
+          "source_utf8_bytes": 7352,
+          "match": true
+        },
+        {
+          "index": 7,
+          "cell_type": "code",
+          "source_sha256": "7400441b355cbe09311e9c638c44264e374ad448d9ab1020b9d5866746e84ee7",
+          "source_utf8_bytes": 7754,
+          "match": true
+        },
+        {
+          "index": 8,
+          "cell_type": "code",
+          "source_sha256": "54ed30a2f73355f369c112057570e9dd6a37e7f5521a6baf9ccdf4a8fc4ba6f8",
+          "source_utf8_bytes": 11193,
+          "match": true
+        },
+        {
+          "index": 9,
+          "cell_type": "code",
+          "source_sha256": "e29124e0f64b84d4cb626c310cd8a6a4054b203daff738e45880d51af0d911df",
+          "source_utf8_bytes": 10718,
+          "match": true
+        },
+        {
+          "index": 10,
+          "cell_type": "code",
+          "source_sha256": "dc4d979850f5a32e501a21e913a385220748016a13014c790da919d8ea5d26df",
+          "source_utf8_bytes": 9438,
+          "match": true
+        },
+        {
+          "index": 11,
+          "cell_type": "code",
+          "source_sha256": "6356e45563862104abc2beb0e944e8c34d8d15ef8ac42a43a8ed4ac5006597be",
+          "source_utf8_bytes": 2502,
+          "match": true
+        }
+      ],
+      "status": "SOURCE_CELLS_MATCH_AND_FILE_BYTES_MATCH",
+      "ordered_source_sha256": "4e54b0202bc8d6f4428664a1e7f4feec5592020c01540d8450bd4e628efafe6a",
+      "method": "解析JSON；list source直接join，str原样；UTF-8 SHA256，不strip或规范化换行；比对全部12个cell类型、顺序及source。单元比较排除outputs、execution_count和metadata；整文件SHA256另行比较。",
+      "reference_commit": "3840c240957275ecd6b255dda087212942e43f55",
+      "reference_path": "research/GEOMETRIC_FUSION_BACKFILL_20260922/uploaded_notebook_fingerprints.json",
+      "original_chat_attachment_read_this_session": false,
+      "reference_note": "仅从GitHub读取旧附件指纹；本次读取的是公开精确SV下载文件。不是声称访问了旧Chat附件。"
+    },
+    "outputs": {
+      "classification": "MEASURED",
+      "provenance": "下载V3已有outputs，不是本次运行",
+      "source_cells": [
+        10,
+        11
+      ],
+      "selected": "combo(t55_leaf030+tight55+t55_divwide+t55_dcsd015+t55_dcsd010+vel025)",
+      "overrides": {
+        "MOTION_RELINK_TIGHT_UM": 5.5,
+        "LEAF_PRUNE_MIN_EDGE_PROB": 0.3,
+        "SAFE_DIV_MAX_UM": 11,
+        "SAFE_DIV_SISTER_MAX_UM": 16,
+        "SAFE_DIV_EXISTING_CHILD_MAX_UM": 12,
+        "DEEPCENTER_SAFE_DIV_THRESHOLD": 0.15,
+        "MOTION_RELINK_VELOCITY_WEIGHT": 0.25
+      },
+      "base_proxy": "0.9490",
+      "selected_proxy": "0.9530",
+      "velocity025_proxy": "0.9505",
+      "formal_score_of_velocity_only": null,
+      "manifest_leaf_threshold": "0.0",
+      "manifest_discrepancy_explanation": "cell10先pp_apply(selected_config)，写CSV，再finally pp_restore(_saved)；cell11全局leaf读数已还原，不能据它否认实际leaf0.30。cell10已有日志显示剪枝10/9/0/52。",
+      "csv_downloaded": false,
+      "separate_ppsweep_files_downloaded": false,
+      "notebook_executed": false
+    }
+  },
+  "task_b": {
+    "status": "UI_VERIFIED_PENDING_API_FIELDS_UNAVAILABLE",
+    "classification": "OFFICIAL_FACT",
+    "observation_window_shanghai": [
+      "2026-09-22T10:24:25+08:00",
+      "2026-09-22T10:25:48+08:00"
+    ],
+    "source_url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/submissions",
+    "account": "sailorren",
+    "account_verified_by": "Edge账号菜单Your Profile链接/kaggle.com/sailorren，显示Sailor Ren",
+    "access_attempts": [
+      {
+        "surface": "In-app browser",
+        "status": "BLOCKED_AUTH",
+        "evidence": "Sign In/Register，提交页We can't find that page."
+      },
+      {
+        "surface": "Edge existing session",
+        "status": "AUTHORIZED_READABLE",
+        "evidence": "自有正式提交列表可见；没有登录操作或凭据读取。"
+      }
+    ],
+    "submission_identity_method": "当前UI按作者、Version、完整描述及精确SV链接匹配；数值submission ID沿用固定GitHub归档绑定，UI未暴露，未独立API重新读取。",
+    "submissions": [
+      {
+        "arm": "DF960",
+        "submission_id": 56445846,
+        "version": 1,
+        "script_version_id": 351617874,
+        "status_ui": "Notebook Running",
+        "status_title": "Pending",
+        "normalized_status": "PENDING",
+        "public_raw_ui": "",
+        "public_normalized": null,
+        "public_raw_api": null,
+        "error_description_api": null,
+        "error_ui": "NOT_DISPLAYED",
+        "version_url": "https://www.kaggle.com/code/sailorren/biohub-df960-flow-20260921?scriptVersionId=351617874",
+        "submission_time_ui_shanghai": "2026-09-22T07:55:05+08:00"
+      },
+      {
+        "arm": "D960",
+        "submission_id": 56416049,
+        "version": 1,
+        "script_version_id": 351441983,
+        "status_ui": "Succeeded",
+        "normalized_status": "COMPLETE",
+        "public_raw_ui": "0.948",
+        "public_raw_api": null,
+        "error_description_api": null,
+        "error_ui": "NOT_DISPLAYED",
+        "public_order": 1
+      },
+      {
+        "arm": "F1",
+        "submission_id": 56375774,
+        "version": 1,
+        "script_version_id": 351084196,
+        "status_ui": "Succeeded",
+        "normalized_status": "COMPLETE",
+        "public_raw_ui": "0.948",
+        "public_raw_api": null,
+        "error_description_api": null,
+        "error_ui": "NOT_DISPLAYED",
+        "public_order": 2
+      },
+      {
+        "arm": "G1",
+        "submission_id": 56270217,
+        "version": 1,
+        "script_version_id": 350197436,
+        "status_ui": "Succeeded",
+        "normalized_status": "COMPLETE",
+        "public_raw_ui": "0.948",
+        "public_raw_api": null,
+        "error_description_api": null,
+        "error_ui": "NOT_DISPLAYED",
+        "public_order": 3
+      }
+    ],
+    "sort": "Public Score",
+    "order_observed_at_shanghai": "2026-09-22T10:25:48+08:00",
+    "manual_selection_count": "0/2",
+    "display_comparison": "D960/F1/G1 PUBLIC_TIED，显示差0.000；DF960无分数，不可比较。",
+    "hidden_precision": null,
+    "private_score": null,
+    "historical_df960": {
+      "observed_at_shanghai": "2026-09-22T08:00:31+08:00",
+      "status": "PENDING",
+      "public_raw_api": "",
+      "public_normalized": null,
+      "current_observation": false
+    },
+    "api_limit_reason": "本会话没有Kaggle只读API连接器；浏览器UI未暴露原始API score/error字段及数值submission ID。未提取Cookie、Token或隐藏应用状态。",
+    "no_polling": true,
+    "final_selection_changed": false
+  },
+  "task_c": {
+    "status": "BOUNDED_REVIEW_COMPLETED",
+    "started_at_shanghai": "2026-09-22T10:21:24+08:00",
+    "finished_at_shanghai": "2026-09-22T10:23:50+08:00",
+    "elapsed_seconds": 146,
+    "max_seconds": 600,
+    "last_24h_window_shanghai": [
+      "2026-09-21T10:21:24+08:00",
+      "2026-09-22T10:21:24+08:00"
+    ],
+    "code_scope": "Recently Run首批可见条目，绝对时间覆盖至24小时边界外；只将卡片用于发现，未声称全部代码深读。",
+    "code_url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/code?competitionId=136605&sortBy=dateRun&excludeNonAccessedDatasources=true",
+    "discussion_scope": "默认列表及Today筛选三个可见主题；以正文绝对发布时间核对。Today筛选不是精确24小时覆盖保证；未宣称遍历全部评论或页面。",
+    "discussion_url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion?sort=undefined&recency=today",
+    "target_comments": {
+      "url": "https://www.kaggle.com/code/amanatar/biohub-geometric-fusion/comments?scriptVersionId=351532492",
+      "count": 0
+    },
+    "sources": [
+      {
+        "id": "742266",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/742266",
+        "classification": "AUTHOR_CLAIM",
+        "author": "Justin CH123",
+        "posted_at_shanghai": "2026-09-21T11:39:55+08:00",
+        "updated_at": null,
+        "observation_window_shanghai": [
+          "2026-09-22T10:21:24+08:00",
+          "2026-09-22T10:23:50+08:00"
+        ],
+        "reading_scope": "正文及2条可见评论",
+        "summary": "正文称十项单参数Public均跌、最佳离线边分改动反而榜分最差；不是DF960/V025精确失败证据。",
+        "new_comments": [
+          {
+            "author": "OpPrime",
+            "posted_at_shanghai": "2026-09-22T02:52:06+08:00",
+            "classification": "COMMUNITY_REPORT",
+            "summary": "称正确母女链接可在ILP前缺失、选择时移除、后续relink阻止恢复；关联逻辑改动未形成可靠收益。未提供精确候选版本或正式回执。"
+          },
+          {
+            "author": "OmerZalman",
+            "posted_at_shanghai": "2026-09-22T04:24:20+08:00",
+            "classification": "COMMUNITY_REPORT",
+            "summary": "泛化建议各阶段都需改善；无V025/leaf直接实测。"
+          }
+        ]
+      },
+      {
+        "id": "742064",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/742064",
+        "classification": "AUTHOR_CLAIM",
+        "author": "Eric",
+        "posted_at_shanghai": "2026-09-19T21:00:01+08:00",
+        "updated_at": null,
+        "reading_scope": "正文、0评论",
+        "summary": "作者称secondary训练覆盖199段，局部验证可能在训练样本内；亚像素改动离线+0.0078但Public -0.002。未本次独立核对模型manifest或其submission，属于旧帖背景。"
+      },
+      {
+        "id": "741749",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/741749",
+        "classification": "AUTHOR_CLAIM",
+        "author": "hikaggler",
+        "posted_at_shanghai": "2026-09-17T14:31:17+08:00",
+        "updated_at": null,
+        "correction_posted_at_shanghai": "2026-09-18T15:21:37+08:00",
+        "reading_scope": "正文及当前可见回复",
+        "summary": "作者更正自己的端到端管线0.939，0.947是公开Notebook；不将帖子当作本候选成绩或24小时新消息。"
+      },
+      {
+        "id": "metric_prices",
+        "url": "https://www.kaggle.com/code/busyaprime/biohub-what-one-link-node-and-division-are-worth?scriptVersionId=351615701",
+        "classification": "AUTHOR_CLAIM",
+        "author": "Akmal Xodarev (Busya PRIME)",
+        "version": 3,
+        "script_version_id": 351615701,
+        "header_time_shanghai": "2026-09-21T22:58:03+08:00",
+        "code_list_updated_at_shanghai": "2026-09-21T22:58:04+08:00",
+        "reading_scope": "摘要、相关scorer调用代码、适用限制和署名；未完整源码审计或本地重算",
+        "summary": "作者对4个示例图用官方scorer做单项扰动，强调删除节点若同时丢真边可能抵消收益，近邻重匹配会扩大代价。正文明确未正式提交、示例可为训练内数据，榜单尺度为估计。支持谨慎剪枝，不是D960-V025/leaf030正式测评。"
+      },
+      {
+        "id": "741651",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/741651",
+        "classification": "COMMUNITY_REPORT",
+        "posted_at_shanghai": "2026-09-16T21:36:37+08:00",
+        "updated_at": null,
+        "new_comment_author": "Pavel",
+        "new_comment_at_shanghai": "2026-09-22T02:27:00+08:00",
+        "summary": "评论给出两次不同CV均对应0.914 Public；无版本或候选身份，不能用于本候选定量结论。"
+      },
+      {
+        "id": "742325",
+        "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/742325",
+        "classification": "AUTHOR_CLAIM",
+        "author": "You WeiLin",
+        "posted_at_shanghai": "2026-09-21T21:42:55+08:00",
+        "updated_at": null,
+        "summary": "对过拟合和长运行时间的观点；无直接实验回执，不据此改候选。"
+      }
+    ],
+    "direct_v025_or_protected_leaf_formal_increment": "NO_NEW_DIRECT_EVIDENCE",
+    "new_related_qualitative_evidence": true,
+    "timestamp_note": "未显示独立更新时间的来源updated_at=null；来源观测均发生于本节146秒窗口。"
+  },
+  "decision": {
+    "classification": "INFERENCE",
+    "keep_D960_V025_as_next_single_parameter_hypothesis": true,
+    "implemented": false,
+    "submitted": false,
+    "rationale": "精确公开V3与附件相同，velocity025单项局部指标支持小范围假设；整体0.948包含多项变化，不能归因为velocity。新反馈强化验证限制，未提供该候选直接反证。",
+    "constraints": [
+      "下一轮需要另行授权；仅D960原速度外推0.5→0.25",
+      "不叠加DF960位移替换",
+      "leaf030须保护分裂分支、区分缺失概率；既有CPU测试不重做",
+      "不修改评分器、选择器、生产参数或最终选择"
+    ]
+  },
+  "environment": {
+    "delivery_method": "GitHub connector",
+    "clone_status": "FAILED_MISSING_GIT_REMOTE_HTTPS_HELPER",
+    "local_target_worktree": "NOT_APPLICABLE",
+    "local_ahead_behind": "NOT_APPLICABLE",
+    "download_fallback": "PowerShell/Schannel失败；Node标准HTTPS GET成功，未关闭TLS验证。",
+    "dom_source_hashes_used_for_identity": false,
+    "dom_note": "初试渲染文本存在空白变化；最终结论只使用原始下载JSON。",
+    "old_mac_access": false,
+    "credentials_accessed": false
+  },
+  "kaggle_writes": 0,
+  "operations": {
+    "training": 0,
+    "gpu_diagnostics": 0,
+    "inference": 0,
+    "notebook_creation": 0,
+    "fork": 0,
+    "save_and_run": 0,
+    "formal_submission": 0,
+    "dataset_write": 0,
+    "final_selection_change": 0,
+    "monitor_creation": 0,
+    "cpu_synthetic_tests": 0
+  },
+  "github_scope": "仅新增结果报告、backfill_evidence.json、github_readback.json；不修改main、历史报告、指纹、测试或实验账本。"
+}
