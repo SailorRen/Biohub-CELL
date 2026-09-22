@@ -1,11 +1,11 @@
 {
   "task_id": "BIOHUB_TWO_WAVE_20260922_V01",
-  "observed_at_shanghai": "2026-09-22T20:42:56.035438+08:00",
+  "observed_at_shanghai": "2026-09-22T21:47:49.448797+08:00",
   "account": "sailorren",
-  "status": "B_REQUEST_UNCERTAIN_STOPPED",
+  "status": "B_ROUNDTRIP_BLOCKED_OUTPUT_BINDING",
   "platform": {
     "submissions_remaining": 3,
-    "refresh_ui": "This resets in 11 hours",
+    "refresh_ui": "This resets in 10 hours (V1 submit dialog at21:36 Shanghai)",
     "refresh_exact": "NOT_OBSERVED",
     "refresh_estimate": "Do not infer precise daily reset from rounded UI.",
     "gpu_available_ui": "Latest20:41:33 Shanghai: used30:15:24.248/30h; reserved0; available allowance0",
@@ -37,6 +37,16 @@
         "total_time_allowed": "1 day, 6:00:00",
         "minimum_time_allowed": "1 day, 6:00:00"
       }
+    },
+    "gpu_latest_roundtrip": {
+      "observed_at": "2026-09-22T21:29:04.726983+08:00",
+      "status_error": "404 Client Error: Not Found for url: https://api.kaggle.com/v1/kernels.KernelsApiService/GetKernelSessionStatus",
+      "quota_refresh_time": "2026-09-26 00:00:00",
+      "gpu": {
+        "time_used": "1 day, 6:15:24.248000",
+        "time_reserved": "0:00:00",
+        "total_time_allowed": "1 day, 6:00:00"
+      }
     }
   },
   "budget_used": {
@@ -47,7 +57,8 @@
     "training": 0,
     "dataset_write": 0,
     "independent_gpu_diagnostic": 0,
-    "final_selection_change": 0
+    "final_selection_change": 0,
+    "no_run_version_save_requests": 1
   },
   "budget_limits": {
     "notebooks": 4,
@@ -177,6 +188,56 @@
         "submit_ui": "The selected Notebook has no completed versions to submit. Please run the Notebook or select a different one.",
         "latest_observed_at": "2026-09-22T20:42:56.035438+08:00"
       }
+    },
+    {
+      "request_id": "TW20260922-B-QUICKSAVE-01",
+      "candidate": "B",
+      "operation": "NO_RUN_VERSION_SAVE",
+      "entrypoint": "Kaggle UI Quick Save",
+      "status": "QUICK_SAVE_CREATED_VERIFIED",
+      "kernel_id": 135375343,
+      "slug": "sailorren/biohub-d960-l030p-20260922",
+      "source_sha256": "03e4abd5c80b5724b959bc453352524e276bebcf9aa0c2ffa38f22442d3e2ceb",
+      "metadata_sha256": "1c819e491fc1527377a63015484c72d4f48f4aa197ad5f283fbf5b16180e8e48",
+      "intent_at": "2026-09-22T21:31:27.009013+08:00",
+      "execute_cells": false,
+      "save_output": "Never save output when creating a Quick Save",
+      "dispatched": true,
+      "dispatched_at": "2026-09-22T21:31:50.979567+08:00",
+      "version": 1,
+      "sv": 351871500,
+      "observed_at": "2026-09-22T21:36:54.124342+08:00",
+      "version_processing_seconds": 12.7,
+      "output_files": 0,
+      "model_execution": "NOT_RUN_ALL_CELLS_UNEXECUTED",
+      "gpu_note": "Quick Save HTML conversion logs Accelerator None; SDK metadata enable_gpu true/machine_shape NvidiaTeslaT4; hidden worker GPU UNKNOWN"
+    },
+    {
+      "candidate": "B",
+      "request_id": "TW20260922-B-COLAB-OPEN-01",
+      "operation": "OPEN_IN_COLAB",
+      "status": "EXPORTED_UNSAVED_COLAB_NOTEBOOK",
+      "kernel_id": 135375343,
+      "version": 1,
+      "sv": 351871500,
+      "intent_at": "2026-09-22T21:36:54.124342+08:00",
+      "dispatched": true,
+      "export_tabs": 2,
+      "note": "Delayed export caused one repeated navigation; duplicate untouched tab closed; no saved notebook or runtime from duplicate."
+    },
+    {
+      "request_id": "TW20260922-B-COLAB-GPU-01",
+      "candidate": "B",
+      "operation": "COLAB_HOSTED_GPU_CONNECT",
+      "intent_at": "2026-09-22T21:42:41.041127+08:00",
+      "status": "HOSTED_T4_PROBE_PASS_RELEASED",
+      "requested_gpu": "T4",
+      "max_attempts": 1,
+      "dispatched": true,
+      "dispatched_at": "2026-09-22T21:43:17.253472+08:00",
+      "actual_gpu": "Tesla T4",
+      "device_count": 1,
+      "production": false
     }
   ],
   "reference_results": {
@@ -254,17 +315,17 @@
       "ordinary_status": "COMPLETE"
     },
     "B": {
-      "status": "REQUEST_UNCERTAIN",
-      "version": null,
-      "sv": null,
+      "status": "QUICK_SAVE_OUTPUT_MISSING",
+      "version": 1,
+      "sv": 351871500,
       "submission": null,
-      "reason": "One normal GPU SaveRun yielded JSON parse failure; SDK404, empty version history, no completed B version. GPU exhausted but causal relation unproven.",
+      "reason": "V1 Quick Save exists but submission.csv missing; Colab hosted T4 probe PASS; official external output binding not established.",
       "slug": "sailorren/biohub-d960-l030p-20260922",
       "kernel_id": 135375343,
       "private": true,
-      "ordinary_status": "NO_VERSION_OBSERVED_AFTER_RECONCILIATION",
+      "ordinary_status": "QUICK_SAVE_ONLY_NO_MODEL_RUN",
       "actual_csv_check": "NOT_RUN_NO_PRODUCTION_OUTPUT",
-      "colab_status": "NOT_RUN_FALLBACK_PRECONDITION_NOT_ESTABLISHED"
+      "colab_status": "HOSTED_GPU_PROBE_PASS_NO_PRODUCTION"
     },
     "C": {
       "status": "WAITING_FOR_WAVE1"
@@ -273,7 +334,7 @@
       "status": "WAITING_FOR_WAVE1"
     }
   },
-  "next_action": "Return to Chat: diagnose normal SaveRun JSON response failure. No retry or Colab production under this turn; normal request cap consumed. Do not attribute error to GPU without direct evidence.",
+  "next_action": "Establish an official same-B filesystem-output binding procedure that preserves GPU and complete offline inference, or change task authorization; do not resume production on mere ipynb text output.",
   "observed_at_utc": "2026-09-22T12:42:56+00:00",
   "resource_trial": {
     "task_id": "BIOHUB_B_RESOURCE_TRIAL_20260922_V01",
@@ -286,5 +347,36 @@
     "formal_slots_remaining_ui": 3,
     "two_reserved_slots_preserved": true,
     "delivery_status": "COMMITTED_EVIDENCE_REQUIRES_FIXED_SHA_READBACK"
+  },
+  "roundtrip_continuation": {
+    "task_id": "BIOHUB_B_COLAB_ROUNDTRIP_20260922_V01",
+    "fixed_task_commit": "96e55736423a92717860e593b4b070c3b88b55f1",
+    "recheck_status": "NO_ACTIVE_B_OBSERVED_AT_RECHECK",
+    "recheck": {
+      "observed_at": "2026-09-22T21:29:04.726983+08:00",
+      "status_error": "404 Client Error: Not Found for url: https://api.kaggle.com/v1/kernels.KernelsApiService/GetKernelSessionStatus",
+      "quota_refresh_time": "2026-09-26 00:00:00",
+      "gpu": {
+        "time_used": "1 day, 6:15:24.248000",
+        "time_reserved": "0:00:00",
+        "total_time_allowed": "1 day, 6:00:00"
+      }
+    },
+    "version_history": "Starting Fresh",
+    "active_events": "One existing formal Scoring and one old Failed; no B ordinary run",
+    "cli": "2.2.3; --no-run not in push help; using UI Quick Save",
+    "no_run_version_save_requests": 1,
+    "colab_notebooks": 0,
+    "colab_gpu_sessions": 1,
+    "full_production": 0,
+    "formal_requests": 0,
+    "status": "BLOCKED_RETURN_OUTPUT_BINDING",
+    "colab_export_tabs": 2,
+    "colab_gpu_sessions_allocated": 1,
+    "colab_gpu_sessions_active": 0,
+    "cpu_file_sessions": 0,
+    "kaggle_new_candidates": 0,
+    "kaggle_ordinary_gpu_requests": 0,
+    "two_reserved_slots_preserved": true
   }
 }

@@ -117,3 +117,31 @@ GPU前后官方快照分别20:31:20与20:41:33上海：已用均30:15:24.248，�
 今天3个正式名额均未由B消耗，要求保留的2个仍保留。同一草稿导入修复2次为编辑请求，不伪计为2个Notebook或运行。没有替代版本保存、训练、Dataset、TPU、购买、C/D、旧作业取消或自动监控。状态查询的首次自动审批超时发生在进程启动前，按工具允许只重试一次只读查询；不是运行重试，也不是安全拒绝。
 
 下一步交回Chat决定：先分析SaveRun响应解析失败及平台后台状态，是否需要向平台核实；本轮正常运行尝试已用完，不自行再次提交运行。只有资源阻断原因得到直接确认且无B在运行时，才考虑继续既定Colab路径。此次交付是资源路径与失败证据归档，不是候选跑通或评分成功。最终固定交付commit及四个小文件远端字节回读结果在本任务最终回复给出。
+
+
+## B Colab 往返续接实测（2026-09-22 21:29—21:48 上海时间）
+
+状态：`BLOCKED_RETURN_OUTPUT_BINDING`。已建立非运行 V1，且实测 Colab 自有 GPU 可用；没有完整生产、真实 CSV 或正式提交。此结论替代上一节“未进入 Colab”的当前状态，旧 REQUEST_UNCERTAIN 和已用次数保留。
+
+固定任务 commit `96e55736423a92717860e593b4b070c3b88b55f1` 已包含于执行分支。Mac canonical remote 正确且无未提交改动，复用隔离 worktree 并安全 fetch/ff-only；未改 canonical 分支、reset、stash、强推或合并 main。已读完整当前任务及所列必要材料；B 源码 SHA256 仍为 `03e4abd5c80b5724b959bc453352524e276bebcf9aa0c2ffa38f22442d3e2ceb`，算法未变。
+
+|检查|结果及证据|
+|---|---|
+|一次旧请求对账|21:29 未发现 B 版本/活动普通作业，SDK404、Starting Fresh；GPU used30:15:24.248/30h、reserved0。记录 NO_ACTIVE_B_OBSERVED_AT_RECHECK，不推定旧请求未收到。|
+|非运行保存|CLI2.2.3 help 不支持 --no-run；只做一次网页 Quick Save。Kernel135375343 / **V1 / SV351871500**，私有、Internet关闭，SDK enable_gpu true/NvidiaTeslaT4。|
+|运行与代码|12.7秒 nbconvert HTML 打包，日志 Accelerator None，Output0B；14单元 execution_count=null、outputs空，normalized source与冻结B逐单元一致。不是模型运行。精确/1 pull403后，以UI唯一V1绑定current pull读取。|
+|配置边界|五个输入身份存在，总88.45GB；本次SDK没有独立返回固定版本号。Docker digest变为`dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9`，与冻结原环境不同。隐藏评分GPU和环境未验证。|
+|V1提交入口|明确 requires submission.csv / selected Notebook Version does not output this file；Submit禁用，File Upload禁用；剩3次、提示10小时刷新。未发送正式请求。|
+|Open in Colab|同一B导出成功；延迟打开导致两个临时导出页，重复页未保存/运行并关闭。保存到Drive的Notebook0个；没有第二GPU。Kaggle显示账号已关联，未购买/授权新OAuth。|
+|Colab托管GPU|21:44设备探针：Python3 Google Compute Engine GPU，1×Tesla T4，15360MiB（torch可见15637086208bytes），driver580.82.07；Python3.13.15、torch2.11.0+cu128、CUDA12.8、available=true、cwd=/content。已释放本次会话。|
+|输入、依赖、真实批次|NOT_RUN。自动插入的kagglehub登录及下载单元未执行；下载语句不含固定版本，不能直接作为冻结输入。没有依赖安装、权重下载或真实模型批次。|
+|完整生产/CSV验收|NOT_RUN，未生成CSV、production_receipt或output_check，不将设备探针当生产验收。|
+|回传/正式受理|BLOCKED / NOT_RUN。V1缺真实磁盘输出；尚未建立官方输出绑定方法，未做第二次保存或CPU文件会话。B submission=null，无分数。|
+
+本机SDK `competition_submit_code` 文档把file_name定义为kernel产生的输出文件，请求只指向kernel/version/filename，不附带外部CSV。[官方导入公告](https://www.kaggle.com/product-announcements/572642)支持Colab/GitHub/文件Notebook导入及Quick Save；[官方Notebook文档](https://www.kaggle.com/docs/notebooks)说明Quick Save快照。两者均未为本次建立外部磁盘CSV随V1绑定的证据。**未证明所有正规返回路径都不可能，也未证明必须再普通GPU运行**；已验证的是当前V1不具备提交资格，完整生产启动门禁未满足。
+
+预算：本轮新增Kaggle候选0、普通GPU运行0、非运行保存1/2、Colab保存Notebook0/1（另有两个临时导出页）、GPU申请及分配1/1、完整生产0/1、CPU文件会话0/1、正式请求0。原批累计候选2、普通SaveRun尝试2（旧B不明请求不退账）、非运行保存1、正式请求1（A）；B累计正式0/1，另外两个名额保留。未操作A/DF960/C/D。
+
+保留：Kaggle私有B V1及冻结源代码、原账本、resource_events.jsonl、colab_roundtrip_result.json。没有原始数据、CSV、模型、签名导出URL、邮箱或凭据入库。Colab仅设备探针，原模型单元未执行，导出后原14单元未再次逐字节导出验收，不能声称Colab生产源码验收完成。
+
+交回Chat的最小问题：是否能给出可核验的、同一B保留GPU与完整离线推理代码的正规输出绑定流程；若不能，应修改后续授权，而不是继续猜测或耗费完整生产。无后台监控、不等评分。交付验证由固定commit的远端字节回读另附于本轮回复。
