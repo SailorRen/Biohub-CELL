@@ -1,0 +1,57 @@
+{
+  "scope": "CPU synthetic functions only; no trained-weight inference or platform run",
+  "density_override_test": {
+    "passed_arguments": {
+      "tight_um": 100.0,
+      "relaxed_um": 100.0
+    },
+    "global_gate_5_5_10_edges": 0,
+    "global_relaxed_changed_to_11_edges": 1,
+    "conclusion": "Passed distance overrides are ignored; actual distance gates use global values."
+  },
+  "gshift_test": {
+    "off_equals_fast": true,
+    "synthetic_translation_um_per_step": 2.0,
+    "n_transitions": 2,
+    "global_shift_frames": 2,
+    "sum_shift_norm_um": 4.0,
+    "quality_gain": "NOT_TESTED"
+  },
+  "divnet_call_path": {
+    "call_count_in_code": 1,
+    "call_line": 1613,
+    "guard": "OUTPUT_DIVISION_GEOMETRY_FILTER and edges",
+    "default_in_config": "OUTPUT_DIVISION_GEOMETRY_FILTER defaults to string 0 (False)",
+    "observed_config_log_false": true,
+    "conclusion": "Default/recorded configuration does not enter the only scoring-call branch."
+  },
+  "divnet_latent_shape_test": {
+    "input_shapes": [
+      [
+        1,
+        1,
+        4,
+        16,
+        32,
+        32
+      ]
+    ],
+    "exception": "Expected 4D (unbatched) or 5D (batched) input to conv3d, but got input of size: [1, 1, 4, 16, 32, 32]",
+    "returned_probability": null,
+    "pretrained_weights_loaded": false,
+    "conclusion": "Even if enabled, scoring function returns None after caught 6-D Conv3d shape error."
+  },
+  "relative_rank_anchor_in_known_injections": {
+    "_old": 0,
+    "_new": 0,
+    "_guard_new": 0,
+    "_bi_old": 0,
+    "_bi_new": 0,
+    "_coordinate_manifest_new": 0,
+    "_et_old": 0,
+    "_et_new": 0,
+    "_secondary_tta_old": 0,
+    "_secondary_tta_new": 0,
+    "_rr_new": 0
+  }
+}
