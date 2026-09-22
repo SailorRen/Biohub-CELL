@@ -1,0 +1,103 @@
+{
+  "source_url": "https://www.kaggle.com/code/amanatar/biohub-geometric-fusion",
+  "attachment_name": "biohub-geometric-fusion.ipynb",
+  "original_bytes": 637942,
+  "original_sha256": "940ccce3466a8fdbbe4ead62c1bf33faef23054958ddf92d62858f81bdef774f",
+  "original_notebook_in_this_handoff": false,
+  "scope": "Fingerprints computed from the user-uploaded attachment; not a new Kaggle download or a score binding. The original full notebook, outputs and metadata are not mirrored here.",
+  "version": null,
+  "script_version_id": null,
+  "public_score_claim": "0.948",
+  "public_score_binding": "NOT_INDEPENDENTLY_VERIFIED",
+  "cell_index_base": 0,
+  "code_cells": 12,
+  "total_source_lines": 4437,
+  "canonicalization": "JSON parse; source = join(list) or original string; no strip or whitespace/newline normalization. Per-cell SHA256 over source UTF-8. Ordered aggregate is json.dumps([{cell_type,source},...], ensure_ascii=False, separators=(comma,colon)).encode(utf-8), no final newline. Excludes execution_count, outputs and metadata.",
+  "ordered_source_sha256": "4e54b0202bc8d6f4428664a1e7f4feec5592020c01540d8450bd4e628efafe6a",
+  "cells": [
+    {
+      "index": 0,
+      "cell_type": "code",
+      "source_utf8_bytes": 3261,
+      "source_lines": 69,
+      "source_sha256": "c4b8e77366232f2276d283d9cd199fe97e861f63f00170a66c879debcd74d758"
+    },
+    {
+      "index": 1,
+      "cell_type": "code",
+      "source_utf8_bytes": 1330,
+      "source_lines": 43,
+      "source_sha256": "99198956a4c7725d85c6aab0d478368749824801716c6d39cf5bf915187ac500"
+    },
+    {
+      "index": 2,
+      "cell_type": "code",
+      "source_utf8_bytes": 14091,
+      "source_lines": 246,
+      "source_sha256": "380f7ae50c17363ba55ed4a74fff2663c2809ac4273f4c845338c30636cb8615"
+    },
+    {
+      "index": 3,
+      "cell_type": "code",
+      "source_utf8_bytes": 26734,
+      "source_lines": 682,
+      "source_sha256": "0f62c46bbec00a2d3d6bbde0efb89d5713204983d51c9c3cf73df1869cf12f8f"
+    },
+    {
+      "index": 4,
+      "cell_type": "code",
+      "source_utf8_bytes": 49112,
+      "source_lines": 460,
+      "source_sha256": "768bd13fbf10d26731819e0d19f79c11d5a1d0fad7065ec5f5f66c2c5fc3187c"
+    },
+    {
+      "index": 5,
+      "cell_type": "code",
+      "source_utf8_bytes": 74608,
+      "source_lines": 1774,
+      "source_sha256": "71fa78d2e3dc0c02212de7cfd93bb3b04eee73bbb2c1d4683f88a5dcb046758e"
+    },
+    {
+      "index": 6,
+      "cell_type": "code",
+      "source_utf8_bytes": 7352,
+      "source_lines": 178,
+      "source_sha256": "c300805e0268602d76042dd271bcc3224fda6af2a52569e16bebc446701d66a5"
+    },
+    {
+      "index": 7,
+      "cell_type": "code",
+      "source_utf8_bytes": 7754,
+      "source_lines": 178,
+      "source_sha256": "7400441b355cbe09311e9c638c44264e374ad448d9ab1020b9d5866746e84ee7"
+    },
+    {
+      "index": 8,
+      "cell_type": "code",
+      "source_utf8_bytes": 11193,
+      "source_lines": 318,
+      "source_sha256": "54ed30a2f73355f369c112057570e9dd6a37e7f5521a6baf9ccdf4a8fc4ba6f8"
+    },
+    {
+      "index": 9,
+      "cell_type": "code",
+      "source_utf8_bytes": 10718,
+      "source_lines": 241,
+      "source_sha256": "e29124e0f64b84d4cb626c310cd8a6a4054b203daff738e45880d51af0d911df"
+    },
+    {
+      "index": 10,
+      "cell_type": "code",
+      "source_utf8_bytes": 9438,
+      "source_lines": 196,
+      "source_sha256": "dc4d979850f5a32e501a21e913a385220748016a13014c790da919d8ea5d26df"
+    },
+    {
+      "index": 11,
+      "cell_type": "code",
+      "source_utf8_bytes": 2502,
+      "source_lines": 52,
+      "source_sha256": "6356e45563862104abc2beb0e944e8c34d8d15ef8ac42a43a8ed4ac5006597be"
+    }
+  ]
+}
