@@ -2,7 +2,7 @@
   "task_id": "BIOHUB_TWO_WAVE_20260922_V01",
   "observed_at_shanghai": "2026-09-22T11:18:42+08:00",
   "account": "sailorren",
-  "status": "PARTIAL_A_RUNNING_B_RESOURCE_BLOCKED",
+  "status": "A_SUBMITTED_OTHER_ARMS_NOT_EXECUTED_THIS_CONTINUATION",
   "platform": {
     "submissions_remaining": 4,
     "refresh_ui": "This resets in 21 hours",
@@ -31,7 +31,7 @@
   "budget_used": {
     "notebooks": 1,
     "save_and_run": 1,
-    "formal_submissions": 0,
+    "formal_submissions": 1,
     "engineering_reserve": 0,
     "training": 0,
     "dataset_write": 0,
@@ -94,7 +94,7 @@
       "candidate": "A",
       "operation": "FORMAL_SUBMISSION",
       "request_id": "d641440c-e68c-44a8-af6e-10b8cd4054d9",
-      "status": "INTENT_PERSISTED_NOT_DISPATCHED",
+      "status": "SUBMISSION_READBACK_VERIFIED",
       "version": 1,
       "sv": 351739212,
       "kernel_id": 135318885,
@@ -105,7 +105,16 @@
       "csv_sha256": "d46a19a6579538034f00701550e86b6a7087b1a58921eccf615767d60852aa55",
       "intent_at_utc": "2026-09-22T06:38:26.393560+00:00",
       "entrypoint": "Kaggle SDK competition_submit_code(kernel_version=1)",
-      "counted": 0
+      "counted": 1,
+      "at_utc": "2026-09-22T06:40:43.338410+00:00",
+      "at_shanghai": "2026-09-22T14:40:43.339836+08:00",
+      "intent_commit": "cb92190da7347c58e0104f3cb0e5d7c9e3e6cfe6",
+      "submission_id": 56456090,
+      "response_message": "",
+      "response_at_utc": "2026-09-22T06:40:46.563526+00:00",
+      "formal_status": "PENDING",
+      "public_raw": "",
+      "last_observed_at_utc": "2026-09-22T06:41:20.644467+00:00"
     }
   ],
   "reference_results": {
@@ -137,7 +146,7 @@
   },
   "candidates": {
     "A": {
-      "status": "ORDINARY_COMPLETE_CSV_PASS",
+      "status": "SCORE_PENDING",
       "slug": "sailorren/biohub-d960-v025-20260922",
       "source_commit": "4dca986a5bd61e3191ff790b74b505017678652e",
       "notebook_sha256": "393dc558654af6abffd8c786a1b8fd4065a58e5c2a6a0ba61af4b9d3b4be40df",
@@ -155,13 +164,13 @@
       },
       "version": 1,
       "sv": 351739212,
-      "submission": null,
+      "submission": 56456090,
       "version_name": "A V025 source 4dca986",
       "version_url": "https://www.kaggle.com/code/sailorren/biohub-d960-v025-20260922?scriptVersionId=351739212",
       "created_at_ui_shanghai": "2026-09-22T11:33:55+08:00",
-      "formal_status": "NOT_SUBMITTED",
+      "formal_status": "PENDING",
       "actual_csv_check": "CSV_AND_RECEIPT_PASS",
-      "public_raw": "NOT_SUBMITTED",
+      "public_raw": "",
       "parameter_check": "FINAL_VELOCITY_025_PASS",
       "runtime_initial_checks": {
         "configuration_guard": "PASS",
@@ -176,7 +185,10 @@
       },
       "environment_evidence_note": "Editor selected Pin to original environment (2026-07-01); runtime viewer generic label Latest Container Image. Exact running Docker digest NOT_OBSERVED; do not equate generic label to verified digest.",
       "latest_observed_runtime_seconds": 508.9,
-      "kernel_id": 135318885
+      "kernel_id": 135318885,
+      "public": null,
+      "observed_at_shanghai": "2026-09-22T14:41:20.644467+08:00",
+      "ordinary_status": "COMPLETE"
     },
     "B": {
       "status": "SOURCE_READY_GPU_RESOURCE_BLOCKED",
@@ -192,6 +204,6 @@
       "status": "WAITING_FOR_WAVE1"
     }
   },
-  "next_action": "Read this latest ledger; monitor ONLY A V1 SV351739212. Ordinary completion -> download exact submission.csv and two_wave/production_receipt.json -> independent check_actual_csv.py -> live quota/cycle check -> record formal intent and submit A exactly once immediately. Do not rerun to query status. B launch requires adequate GPU; C/D require BOTH formal scores.",
+  "next_action": "Only read A formal result when requested; no B/C/D authorization in this continuation.",
   "observed_at_utc": "2026-09-22 03:42:55 UTC"
 }

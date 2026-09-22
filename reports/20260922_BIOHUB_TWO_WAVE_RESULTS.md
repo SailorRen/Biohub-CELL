@@ -73,3 +73,13 @@ Notebook 1/4；Save & Run 1/5（计划1/4，共享工程备用0/1）；正式提
 独立最终消费复核PASS：velocity0.25共127524次，leaf禁用且删除0；det0.960、harmonic0.15、secondary detection0.8、G1分裂门0.20、三推理权重及gate一致，模型实际加载与后处理使用正常。原选择器本次选combo(tight55+bonus125+relaxed9)。追加消费核验脚本初次将worker_harmonic_records列表按整数比较导致TypeError，修正为非空列表检查后通过；未修改生产源码或放松标准。
 
 提交前SDK及UI均核对剩余4次，UI显示17小时刷新；精确Notebook V1及submission.csv正式Submit入口可用。先前误以默认JSON文件打开对话框只提示无法找到该输出，未点击提交；选择实际submission.csv后入口正常。本机SDK源码明确支持competition_submit_code(kernel_version=1)，将使用该接口，非本地CSV上传。唯一正式请求意图已追加原账本；本阶段尚未派发，新增Notebook/SaveRun为0，B/C/D未执行。
+
+### A正式请求已受理
+
+上海2026-09-22 14:40:43通过Kaggle SDK精确版本code submission发送一次，取得submission **56456090**，Kernel135318885 / Version1 / SV351739212，输出submission.csv。请求UUID d641440c-e68c-44a8-af6e-10b8cd4054d9；意图与必要验收摘要先同步commit cb92190da7347c58e0104f3cb0e5d7c9e3e6cfe6，发送前GitHub远端HEAD及原账本全文回读一致，没有并发新增A请求；API实时剩余4次。计数在派发前持久化，不盲重试。
+
+14:41:20只回查一次：正式状态PENDING（SCORE_PENDING），原始Public=""，归一化Public=null，原始error=""。受理已核验，评分未完成，不声称提分。下一步仅按用户请求只读查56456090。
+
+本次新增Notebook=0、Save & Run=0、正式请求=1/1。原批累计Notebook1/4、Save & Run1/5、正式1/4、共享工程备用0/1；训练、Dataset、独立GPU诊断、最终选择修改均0。B/C/D本次未执行，也未授权续启动；原历史记录保留。未提交原始CSV、完整图、权重、凭据或大日志。
+
+本次新增/变更小型文件的固定报告commit和远端字节核验见A/github_readback.json；保留原github_readback.json既有记录并加引用。原Mac工作区未改动，交付采用隔离worktree非强制push原任务分支。
