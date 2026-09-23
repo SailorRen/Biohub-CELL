@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_CPU_SMALL_PROBE_20260923_V01",
+  "goal": "独立一次真实CPU编码器小样本对比；失败或超时如实交付，绝不等同完整B成功",
+  "scope": {
+    "in_scope": [
+      "独立诊断Notebook一次CPU会话；15分钟准备和45分钟测试；一次末尾Quick Save；独立分支交付"
+    ],
+    "out_of_scope": [
+      "A/B及原账本修改",
+      "GPU/Colab/提交/训练/全视频推理"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "acceptance": [
+    {
+      "id": "frozen-source",
+      "type": "file",
+      "path": "experiments/BIOHUB_TWO_WAVE_20260922_V01/B/candidate.ipynb",
+      "sha256": "03e4abd5c80b5724b959bc453352524e276bebcf9aa0c2ffa38f22442d3e2ceb"
+    },
+    {
+      "id": "result",
+      "type": "json",
+      "path": "experiments/BIOHUB_CPU_SMALL_PROBE_20260923_V01/result.json",
+      "assertions": [
+        {
+          "pointer": "/status",
+          "op": "not_empty"
+        },
+        {
+          "pointer": "/budget",
+          "op": "exists"
+        },
+        {
+          "pointer": "/limitations",
+          "op": "not_empty"
+        }
+      ]
+    },
+    {
+      "id": "report",
+      "type": "file",
+      "path": "reports/20260923_BIOHUB_CPU_SMALL_PROBE.md",
+      "min_bytes": 500
+    },
+    {
+      "id": "remote",
+      "type": "git",
+      "require_commit": true,
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true
+    },
+    {
+      "id": "actual-runtime",
+      "type": "manual",
+      "reason": "真实平台数值与时间需核对平台小回执；本地文件自身不证明实际执行",
+      "evidence_needed": [
+        "Kaggle具体Notebook与实际执行记录",
+        "逐阶段小回执",
+        "超时与资源释放证据"
+      ]
+    }
+  ]
+}
