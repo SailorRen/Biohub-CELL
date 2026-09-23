@@ -23,24 +23,32 @@ try:
   name,ver,_,wtags=parse_wheel_filename(p.name)
   if wtags & tags:available.setdefault(str(name),[]).append((str(ver),p))
  assert all(len({v for v,p in entries})==1 for entries in available.values()),'Ambiguous support wheel versions'
- constraints=[name+'=='+entries[0][0] for name,entries in available.items() if name not in ['numpy','torch']]
- constraints+=['numpy=='+md.version('numpy'),'torch=='+md.version('torch')]
+ # Override only the incompatible codec; retain the base NumPy and PyTorch.
+ supplements=['imagecodecs==2026.3.6','openvino==2026.4.0','openvino-telemetry==2025.2.0']
+ override_names={s.split('==',1)[0] for s in supplements}
+ constraints=[name+'=='+entries[0][0] for name,entries in available.items() if name not in {'numpy','torch'}|override_names]
+ constraints+=['numpy=='+md.version('numpy'),'torch=='+md.version('torch'),*supplements]
  (ROOT/'support_constraints.txt').write_text('\n'.join(constraints)+'\n')
  specs=json.loads((ROOT/'dependency_specs.json').read_text())
- run([sys.executable,'-m','pip','install','--disable-pip-version-check','--no-index','--find-links',str(support/'wheels'),'-c',str(ROOT/'support_constraints.txt'),'--report',str(ROOT/'support_install_report.json'),*specs])
  wheels=ROOT/'wheels';wheels.mkdir(exist_ok=True)
+ # Download artifacts only. The combined dry-run and both installs below DO resolve dependencies.
+ run([sys.executable,'-m','pip','download','--disable-pip-version-check','--index-url','https://pypi.org/simple','--only-binary=:all:','--no-deps','-d',str(wheels),*supplements])
+ install=[sys.executable,'-m','pip','install','--disable-pip-version-check','--no-index','--find-links',str(support/'wheels'),'--find-links',str(wheels),'-c',str(ROOT/'support_constraints.txt')]
+ run([*install,'--dry-run','--report',str(ROOT/'dependency_preflight.json'),*specs,*supplements])
+ run([*install,'--report',str(ROOT/'support_install_report.json'),*specs,*supplements])
  report=json.loads((ROOT/'support_install_report.json').read_text())
- selected=[]
+ selected=list(supplements)
  for row in report['install']:
-  src=Path(unquote(urlparse(row['download_info']['url']).path));assert src.is_file() and support in src.parents
-  shutil.copy2(src,wheels/src.name);selected.append(row['metadata']['name']+'=='+row['metadata']['version'])
- # One fixed official-PyPI supplement. Dependencies are fixed as well; no environment-wide upgrade.
- run([sys.executable,'-m','pip','download','--disable-pip-version-check','--index-url','https://pypi.org/simple','--only-binary=:all:','--no-deps','-d',str(wheels),'openvino==2026.4.0','openvino-telemetry==2025.2.0'])
- selected+=['openvino==2026.4.0','openvino-telemetry==2025.2.0']
- (ROOT/'requirements.lock').write_text('\n'.join(sorted(selected))+'\n')
- run([sys.executable,'-m','pip','install','--disable-pip-version-check','--no-index','--find-links',str(wheels),'-r',str(ROOT/'requirements.lock')])
+  url=urlparse(row['download_info']['url']);assert url.scheme=='file'
+  src=Path(unquote(url.path)).resolve();assert src.is_file() and (support.resolve() in src.parents or src.parent==wheels.resolve())
+  dst=wheels/src.name
+  if src!=dst.resolve():shutil.copy2(src,dst)
+  selected.append(row['metadata']['name']+'=='+row['metadata']['version'])
+ selected=sorted(set(selected))
+ (ROOT/'requirements.lock').write_text('\n'.join(selected)+'\n')
+ run([sys.executable,'-m','pip','install','--disable-pip-version-check','--no-index','--find-links',str(wheels),'-c',str(ROOT/'support_constraints.txt'),'-r',str(ROOT/'requirements.lock')])
  # Import-only full-chain dependency check; no hidden training/prediction entrypoint.
- check=run([sys.executable,'-c','import torch,numpy,zarr,polars,tracksdata,pyscipopt,geff,ilpy,blosc2,openvino; import json; print(json.dumps({k:__import__(k).__version__ for k in ["torch","numpy","zarr","polars","openvino"]}))'])
+ check=run([sys.executable,'-c','import torch,numpy,zarr,polars,tracksdata,pyscipopt,geff,ilpy,blosc2,openvino,imagecodecs; import json; print(json.dumps({k:__import__(k).__version__ for k in ["torch","numpy","zarr","polars","openvino","imagecodecs"]}))'])
  record('environment',versions=json.loads(check.stdout.strip().splitlines()[-1]),installed_specs=selected,network_isolation='NOT_VERIFIED_PREPARATION_ONLINE')
  run([sys.executable,str(ROOT/'convert_bundle.py')])
  manifest={p.relative_to(ROOT).as_posix():{'bytes':p.stat().st_size,'sha256':sha(p)} for p in sorted(ROOT.rglob('*')) if p.is_file() and p.name!='bundle_manifest.json'}

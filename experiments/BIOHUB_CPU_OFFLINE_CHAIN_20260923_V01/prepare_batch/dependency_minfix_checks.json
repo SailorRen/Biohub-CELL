@@ -1,0 +1,17 @@
+{
+  "base_commit": "a9829ed2ba4336ed1db8657007879c0ed2763c6b",
+  "status": "SOURCE_PATCHED_MOCK_REGRESSION_PASS",
+  "python": "3.13.5",
+  "tests_run": 7,
+  "tests_failed": 0,
+  "test_kind": "local temporary files and mocked subprocess; not package installation",
+  "new_kaggle_requests": 0,
+  "full_dependency_resolution": "NOT_VERIFIED",
+  "real_notebook_regeneration": "NOT_RUN_FULL_SOURCE_UNAVAILABLE",
+  "hashes": {
+    "prepare_bundle.py": "a45316f4671be1c339f49755ddaa82414380b4b5ddcf5b78b4b2156324bcf756",
+    "rebuild_dependency_minfix.py": "bd4839fb5f79cb280bf04eb28cbec59d816f0bb057d684fa2110fd301fd1ef7f",
+    "test_dependency_minfix.py": "35934f959059e7d6c10c09d735b38db9ebaab7240dbf9dfb4599bd19fb40ef88",
+    "repair_report.md": "3a9a907055fe1fa19eac697dee0e9a308236660166af92f6f9248020a531c200"
+  }
+}
