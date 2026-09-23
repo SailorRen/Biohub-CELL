@@ -1,0 +1,51 @@
+{
+  "task_id": "BIOHUB_CPU_SMALL_PROBE_20260923_V01",
+  "status": "CORE_ENCODER_SMALL_SAMPLE_PASS_WITH_PERFORMANCE_LIMITATIONS",
+  "fact_type": "MEASURED",
+  "kernel_id": 135480603,
+  "version": 1,
+  "script_version_id": 352060904,
+  "fixed_url": "https://www.kaggle.com/code/sailorren/biohub-cpu-small-probe-20260923?scriptVersionId=352060904",
+  "budget": {
+    "notebook_creation": 1,
+    "cpu_session": 1,
+    "quick_save": 1,
+    "gpu": 0,
+    "colab": 0,
+    "formal": 0,
+    "minimal_repair": 1,
+    "model_test_dispatch": 1,
+    "save_run": 0
+  },
+  "environment_preparation_wall_seconds": 542,
+  "conversion_and_test_seconds": 45.97562070999993,
+  "model_conversion": true,
+  "fp32_saved_reloaded_inferred": true,
+  "allclose_all_six_outputs": true,
+  "detection_decision_changes": 0,
+  "association_probability_allclose": true,
+  "association_threshold_changes": 0,
+  "peak_rss_kib": 2068888,
+  "timing_mean_seconds": {
+    "pytorch": 3.0445139666666514,
+    "openvino": 2.3329043393333677
+  },
+  "performance_control": "PARTIAL_NOT_STRICTLY_COMPARABLE",
+  "offline_deployment": "NOT_VERIFIED",
+  "full_cpu_b": "NOT_VERIFIED",
+  "formal_submission": "NOT_RUN",
+  "limitations": [
+    "OpenVINO requested4threads but compiled property returned2; PyTorch4; strict equal-thread performance comparison NOT_VERIFIED",
+    "PyTorch timedcall1 includes numpy copies whereas repeatcalls2/3 returntorch tensors; OpenVINO alwayscopies outputs; timing boundary not identical",
+    "Internet stayedOn after preparation; local IR reload passed but isolated offline deployment NOT_VERIFIED",
+    "Only two windows of first public video, no GPU equivalence",
+    "No secondary, DeepCenter, gate, D4TTA, reverse-time fusion, full selector or full-video graph optimization",
+    "No complete B production, no formal submission, no score",
+    "Association one real adjacent pair, same PT nodes/masks for both feature sources; not full bidirectional edge fusion",
+    "Trace specialized to observed input shape; second real window same shape passed, other shapes NOT_VERIFIED"
+  ],
+  "next_round_recommendation": "Worth a separately authorized complete CPU compatibility investigation; first equalize actual threads and timing boundary and verify network-isolated dependencies; no inference of full-video time compliance",
+  "runtime_receipts": "runtime_receipts.json",
+  "saved_version_evidence": "saved_version_readback.json",
+  "session_released": true
+}

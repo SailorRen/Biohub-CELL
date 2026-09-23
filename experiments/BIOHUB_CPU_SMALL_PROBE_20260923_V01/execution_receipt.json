@@ -1,0 +1,97 @@
+{
+  "task_id": "BIOHUB_CPU_SMALL_PROBE_20260923_V01",
+  "task_commit": "0c55ebdd78ae6ed53936408ec35a8a5b3b584172",
+  "intent_at": "2026-09-23T06:49:16.035944+00:00",
+  "slug": "sailorren/biohub-cpu-small-probe-20260923",
+  "dedup": "Your Work exact search: No results found; remote task branch absent before creation",
+  "budget": {
+    "notebook_creation": 1,
+    "cpu_session": 1,
+    "quick_save": 1,
+    "gpu": 0,
+    "colab": 0,
+    "formal": 0,
+    "minimal_repair": 1,
+    "model_test_dispatch": 1,
+    "save_run": 0
+  },
+  "source_download_note": "repo.zip404; actual directory listing used; downloaded only six Python sources and165byte config from pinnedV10, no weights/data",
+  "creation_observation": "Official /code/new created notebookc16985185a; renamed biohub-cpu-small-probe-20260923; session off; imported own diagnostic only",
+  "editor_url": "https://www.kaggle.com/code/sailorren/biohub-cpu-small-probe-20260923/edit",
+  "primary_dataset_version_id": 17804310,
+  "source_review": {
+    "model": "Exact AST extraction; no training entrypoint",
+    "batch": "Actual encode batch1; CLI unet_batch_size4 unused in source",
+    "window": 2,
+    "downsample": [
+      1,
+      4,
+      4
+    ],
+    "normalization": "Stored .001/.999 quantiles, clamp min0",
+    "det_threshold": 0.96,
+    "pool_kernel_um": 3.0,
+    "edge_threshold": 0.48,
+    "source_hashes": "source_hashes.json",
+    "openvino_docs": [
+      "https://docs.openvino.ai/2026/openvino-workflow/model-preparation/convert-model-to-ir.html",
+      "https://github.com/openvinotoolkit/openvino/blob/master/docs/articles_en/openvino-workflow/running-inference/inference-devices-and-modes/cpu-device.rst"
+    ]
+  },
+  "cpu_session_intent_at": "2026-09-23T06:56:57.244084+00:00",
+  "settings": {
+    "accelerator": "None checked",
+    "private": true,
+    "internet": "On for single conditional official PyPI install",
+    "primary": "V10 explicitly pinned",
+    "competition_id": 136605,
+    "session_before": "off"
+  },
+  "cpu_dispatched_at": "2026-09-23T06:58:44.189436+00:00",
+  "cpu_response": "Starting Draft Session Starting; Session is starting...; first code cell Control+Enter once",
+  "pre_test_static_correction": "B cell4 BIOHUB_DUAL_SEED_EDGE_THRESHOLD=0.48 overrides PredictConfig0.5. Corrected diagnostic before test dispatch; no inference rerun.",
+  "preparation": {
+    "started_at": "2026-09-23T06:58:58Z",
+    "completed_at": "2026-09-23T07:07:46Z",
+    "wall_seconds_from_cpu_dispatch": 542,
+    "deadline": "2026-09-23T07:13:44Z",
+    "initial_failure": "Interrupted excessive input recursive directory traversal at 221.0724 seconds",
+    "minimal_repair": "direct verified primary mount; same CPU session; original deadline preserved",
+    "repair_transport_error": "Console string escaping SyntaxError before execution; corrected only transport quoting",
+    "minimal_repair_count": 1,
+    "official_pypi_install_requests": 1,
+    "offline_wheel_install_requests": 1
+  },
+  "test_dispatched_at": "2026-09-23T07:08:05Z",
+  "test_timeout_seconds": 2700,
+  "quick_save_intent": {
+    "utc": "2026-09-23T07:10:02.479521+00:00",
+    "type": "Quick Save",
+    "name": "CPU small probe - executed records only",
+    "save_output": "Never save output when creating a Quick Save",
+    "purpose": "Save executed cell records; no rerun, no IR upload",
+    "dispatch_status": "ACCEPTED_V1"
+  },
+  "quick_save_result": {
+    "version": 1,
+    "ui_kind": "Quick Version",
+    "ui_duration": "Ran in 0 seconds",
+    "name": "CPU small probe - executed records only",
+    "saved_disk_outputs": false
+  },
+  "session_release": {
+    "observed_at": "2026-09-23T07:12:04Z",
+    "action": "Run > Stop session on own diagnostic only",
+    "confirmation": "Start session menu available; restart controls disabled"
+  },
+  "readback_error": "CLI owner/slug/1 pull returned403; UI observed onlyV1/SV352060904, then UI-provided owner/slug pull succeeded. Source-only CLI export has no cell outputs; actual13stage receipts independently read from saved-version rendered notebook.",
+  "kernel_id": 135480603,
+  "version": 1,
+  "script_version_id": 352060904,
+  "fixed_url": "https://www.kaggle.com/code/sailorren/biohub-cpu-small-probe-20260923?scriptVersionId=352060904",
+  "saved_stage_readback": {
+    "stages": 13,
+    "exact_match_to_console_export": true
+  },
+  "tracer_warning": "Converting a tensor to a Python boolean might cause the trace to be incorrect ... if x.shape[2:] != skip.shape[2:]"
+}
