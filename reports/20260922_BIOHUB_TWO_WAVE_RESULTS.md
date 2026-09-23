@@ -230,3 +230,27 @@ Quick Save明确选择 **Save output for this version when creating a Quick Save
 同窗只读发现：A **56456090/V1/SV351739212** 已COMPLETE，Public原值 **0.950**；D960 **56416049/V1/SV351441983** 原值 **0.948**。B无分数，不能报告B差值；A显示值差0.002不等于精确隐藏差值或稳定因果提升。未改最终选择。
 
 停止时间（收尾转录）：2026-09-23T01:13:08.313866+08:00。保留GPU草稿、冻结源码、旧V2、原账本与直接拒绝回执；本批不继续研究、重试、购买、等待额度或建立监控。固定报告commit及本批小文件远端回读在最终回复给出。
+
+
+## 2026-09-23 B 私有队友复制母版
+
+任务 `BIOHUB_B_TEAM_COPY_PREP_20260923_V01`；状态 **TEMPLATE_PREPARED_TEAMMATE_CHECK_PENDING**。记录时间 2026-09-23T12:10:06.164911+08:00（共享动作按收尾转录，非精确点击时间）。
+
+固定入口：[B V1 / SV351871500](https://www.kaggle.com/code/sailorren/biohub-d960-l030p-20260922?scriptVersionId=351871500)，Kernel135375343；直接复用已有 V1，不交付 V2/SV351886222 探针。任务正文已在 `5d30c8210278fdfb03ffb11748e2232cafbda872` 推送并固定字节回读后，才操作平台。
+
+已从该保存版渲染页面导出全部14个代码单元，逐单元比较：仅首尾空行渲染差异，内部源码、类型与顺序均匹配冻结B；无算法修改、无新增Markdown、无执行。新原始ipynb下载未取得（网页无下载结果、CLI精确/1返回403、SDK version_label=1返回404），不宣称本轮完整ipynb字节相等。旧同V1 SDK源码回执保留。
+
+保存版Input已核对比赛、primary V10、secondary V2、DeepCenter V5、gate V1/SV349707105。三个第三方Dataset均在官方SDK PUBLIC列表精确匹配，无需改权限。当前Private已回读；GPU=true、NvidiaTeslaT4、Internet=false及Docker来自旧同V1 SDK回执，本轮viewer Settings未重新提供这些字段，未以草稿代替。保存镜像与原请求镜像不同，实际环境留待队友运行验证；母版无需生产Output。
+
+比赛当前团队页唯一其他成员为Dongdongjiaqi，profile `/dongdongjiaqi`。B与用户拥有的gate分别新增一次 **Can view**，均出现 `Sharing settings saved`，并回读Viewer权限；保持Private，无编辑权限、无其他对象共享。队友本人尚未打开、复制或验证输入挂载。
+
+本轮Quick Save、Notebook创建、CPU/GPU/Colab会话、推理、训练、正式提交、Dataset写入均0；仅权限保存2次。原预算完整保留：Notebook2、普通SaveRun尝试2、非运行保存2、CPU文件会话2、正式请求2（A受理1；B历史一次额度拒绝；B受理仍0），Colab历史GPU设备探针1。旧REQUEST_UNCERTAIN不退账；本任务不恢复提交许可。A及最终选择未改。
+
+可转发步骤：
+
+1. 用本人账号打开上述V1链接，确认同队，点击Copy & Edit。
+2. 确认副本归本人并保持私有，选择T4×2、Internet关闭，检查自己的GPU余额。
+3. 把副本链接和Input／Settings截图发回用户，先不运行，由用户这边复核。
+4. 后续经用户协调后才运行一次并提交；报错只发截图，不改代码。
+
+结构化回执：`experiments/BIOHUB_TWO_WAVE_20260922_V01/B/team_copy_handoff.json`。母版已准备、共享已设置；跨账号复制、输入挂载、运行与正式评分均未验证。

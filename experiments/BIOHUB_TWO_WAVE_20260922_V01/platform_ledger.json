@@ -367,6 +367,36 @@
       "automatic_ordinary_jobs_observed": 0,
       "accepted": false,
       "counting_note": "Final confirmation Submit pressed exactly once; counted once conservatively. Network-level CreateCodeSubmission receipt NOT_OBSERVED; platform rejected at commit/quota gate. Not a confirmed accepted formal submission."
+    },
+    {
+      "request_id": "TW20260923-B-TEAM-SHARE-01",
+      "operation": "PRIVATE_NOTEBOOK_CAN_VIEW",
+      "task_id": "BIOHUB_B_TEAM_COPY_PREP_20260923_V01",
+      "task_commit": "5d30c8210278fdfb03ffb11748e2232cafbda872",
+      "object": "sailorren/biohub-d960-l030p-20260922",
+      "recipient": "dongdongjiaqi",
+      "permission": "Can view",
+      "dispatched": true,
+      "status": "SAVED_AND_READBACK_VERIFIED",
+      "observed_at": "2026-09-23T12:10:06.164911+08:00",
+      "time_precision": "Closeout transcription; individual sharing click times not separately captured",
+      "counts_as_version_save": false,
+      "counts_as_formal_submission": false
+    },
+    {
+      "request_id": "TW20260923-B-TEAM-SHARE-02",
+      "operation": "PRIVATE_NOTEBOOK_CAN_VIEW",
+      "task_id": "BIOHUB_B_TEAM_COPY_PREP_20260923_V01",
+      "task_commit": "5d30c8210278fdfb03ffb11748e2232cafbda872",
+      "object": "sailorren/biohub-division-train-20260914",
+      "recipient": "dongdongjiaqi",
+      "permission": "Can view",
+      "dispatched": true,
+      "status": "SAVED_AND_READBACK_VERIFIED",
+      "observed_at": "2026-09-23T12:10:06.164911+08:00",
+      "time_precision": "Closeout transcription; individual sharing click times not separately captured",
+      "counts_as_version_save": false,
+      "counts_as_formal_submission": false
     }
   ],
   "reference_results": {
@@ -668,5 +698,27 @@
       "colab_gpu_sessions": 1
     },
     "next_action": "本次一次上限已消耗；停止，不重试、不关闭GPU提交、不换入口、不等额度、不建监控。后续只读对账须有新的任务；不自动使用刷新额度。"
+  },
+  "team_copy_preparation": {
+    "task_id": "BIOHUB_B_TEAM_COPY_PREP_20260923_V01",
+    "status": "TEMPLATE_PREPARED_TEAMMATE_CHECK_PENDING",
+    "observed_at": "2026-09-23T12:10:06.164911+08:00",
+    "receipt": "B/team_copy_handoff.json",
+    "version": 1,
+    "sv": 351871500,
+    "url": "https://www.kaggle.com/code/sailorren/biohub-d960-l030p-20260922?scriptVersionId=351871500",
+    "teammate": "dongdongjiaqi",
+    "new_budget": {
+      "quick_save": 0,
+      "notebooks": 0,
+      "cpu_sessions": 0,
+      "gpu_sessions": 0,
+      "colab_sessions": 0,
+      "model_runs": 0,
+      "formal_submissions": 0,
+      "dataset_writes": 0,
+      "permission_saves": 2
+    },
+    "next_action": "队友复制后发回链接及Input/Settings截图，先不运行；本任务不恢复正式提交授权。"
   }
 }

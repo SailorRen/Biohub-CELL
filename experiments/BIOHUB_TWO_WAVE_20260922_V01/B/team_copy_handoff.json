@@ -1,0 +1,259 @@
+{
+  "task_id": "BIOHUB_B_TEAM_COPY_PREP_20260923_V01",
+  "status": "TEMPLATE_PREPARED_TEAMMATE_CHECK_PENDING",
+  "observed_at_shanghai": "2026-09-23T12:10:06.164911+08:00",
+  "time_precision": "Closeout transcription; individual sharing click times not separately captured",
+  "task_commit": "5d30c8210278fdfb03ffb11748e2232cafbda872",
+  "base_commit": "b00be3c7377876a8116ffc6b04eba6cb29c370f0",
+  "kernel_id": 135375343,
+  "slug": "sailorren/biohub-d960-l030p-20260922",
+  "version": 1,
+  "sv": 351871500,
+  "url": "https://www.kaggle.com/code/sailorren/biohub-d960-l030p-20260922?scriptVersionId=351871500",
+  "reused_existing_version": true,
+  "excluded_probe": {
+    "version": 2,
+    "sv": 351886222
+  },
+  "template": "PREPARED",
+  "sharing": [
+    {
+      "object": "sailorren/biohub-d960-l030p-20260922",
+      "permission": "Can view",
+      "private": true,
+      "new_share_request": 1,
+      "response": "Sharing settings saved",
+      "readback": "Reopened Share: Dongdongjiaqi Can view; private checked; viewer page Collaborators Viewer"
+    },
+    {
+      "object": "sailorren/biohub-division-train-20260914",
+      "permission": "Can view",
+      "private": true,
+      "new_share_request": 1,
+      "response": "Sharing settings saved",
+      "readback": "Saved gate V1 viewer page Collaborators Dongdongjiaqi (Viewer)"
+    }
+  ],
+  "teammate_side": "NOT_VERIFIED",
+  "source": {
+    "frozen_sha256": "03e4abd5c80b5724b959bc453352524e276bebcf9aa0c2ffa38f22442d3e2ceb",
+    "code_cells": 14,
+    "live_export_method": "Saved V1 rendered-kernel-content iframe pre textContent, all 14 complete cell texts exported to temporary JSON and compared locally",
+    "comparison": "All content and order equal after stripping boundary newline characters only; no internal/source algorithm differences",
+    "raw_ipynb_redownload": "UNAVAILABLE: UI download no local result; exact /1 CLI 403; SDK version_label=1 404. Do not claim a fresh byte-exact ipynb export. Prior same-V1 SDK receipt all14_sources_match=true retained.",
+    "per_cell": [
+      {
+        "cell": 1,
+        "type": "code",
+        "saved_rendered_sha256": "9662daf08240b4a6b350bae3454947ee825419d8db67ddbb667147b036075293",
+        "frozen_source_sha256": "9662daf08240b4a6b350bae3454947ee825419d8db67ddbb667147b036075293",
+        "exact_rendered_match": true,
+        "boundary_newline_normalized_match": true
+      },
+      {
+        "cell": 2,
+        "type": "code",
+        "saved_rendered_sha256": "9f4d94633b4ccd67c7fbabc09d31f275ad1cb912fff659b0cb8da40797dda1ea",
+        "frozen_source_sha256": "b42b9653cb0b931d6cba3a5218e1799e78fd997c21f0dcf317514cf2838d0bea",
+        "exact_rendered_match": false,
+        "boundary_newline_normalized_match": true
+      },
+      {
+        "cell": 3,
+        "type": "code",
+        "saved_rendered_sha256": "88bf7531e431618c0846423cafb8c8a7ae1ed6b4f81fdc1b80272f99b8b73125",
+        "frozen_source_sha256": "77fdadffbd02c87e8f686e55944b6741312be552f34c8dc615e6391a1959a2dc",
+        "exact_rendered_match": false,
+        "boundary_newline_normalized_match": true
+      },
+      {
+        "cell": 4,
+        "type": "code",
+        "saved_rendered_sha256": "0f62c46bbec00a2d3d6bbde0efb89d5713204983d51c9c3cf73df1869cf12f8f",
+        "frozen_source_sha256": "0f62c46bbec00a2d3d6bbde0efb89d5713204983d51c9c3cf73df1869cf12f8f",
+        "exact_rendered_match": true,
+        "boundary_newline_normalized_match": true
+      },
+      {
+        "cell": 5,
+        "type": "code",
+        "saved_rendered_sha256": "32562467f8883582a2f46018cf472d7d82805b78486d4047caeedbc361f92a7f",
+        "frozen_source_sha256": "f1a633bd9c2bc165727c3ccf0ab2eb6c9832c0be5b15a62c4a838a507dfa6969",
+        "exact_rendered_match": false,
+        "boundary_newline_normalized_match": true
+      },
+      {
+        "cell": 6,
+        "type": "code",
+        "saved_rendered_sha256": "cc2a2f8919348da98b54676da4b4bfee1756f8719e01733c1fb70f520259e6b4",
+        "frozen_source_sha256": "7d955a3c90f510e5df802acbdc3e5ce84343dea71556da53b117aa07c7aba4bc",
+        "exact_rendered_match": false,
+        "boundary_newline_normalized_match": true
+      },
+      {
+        "cell": 7,
+        "type": "code",
+        "saved_rendered_sha256": "a6945647d913ebae852ea5302b87b67727376593e71f40c9372b5bf1dba5f2ce",
+        "frozen_source_sha256": "c300805e0268602d76042dd271bcc3224fda6af2a52569e16bebc446701d66a5",
+        "exact_rendered_match": false,
+        "boundary_newline_normalized_match": true
+      },
+      {
+        "cell": 8,
+        "type": "code",
+        "saved_rendered_sha256": "f54948b07aaf12fa9c7f462b3c369b9db84d0cfdd47be3df6111846a63ebda35",
+        "frozen_source_sha256": "7400441b355cbe09311e9c638c44264e374ad448d9ab1020b9d5866746e84ee7",
+        "exact_rendered_match": false,
+        "boundary_newline_normalized_match": true
+      },
+      {
+        "cell": 9,
+        "type": "code",
+        "saved_rendered_sha256": "d24eda75a3f0d8294c6acd08d68a8b43f2409af2b5a45b8a1936d1033a47f277",
+        "frozen_source_sha256": "54ed30a2f73355f369c112057570e9dd6a37e7f5521a6baf9ccdf4a8fc4ba6f8",
+        "exact_rendered_match": false,
+        "boundary_newline_normalized_match": true
+      },
+      {
+        "cell": 10,
+        "type": "code",
+        "saved_rendered_sha256": "3986eaba6600507225a7140c033c14ae039a4fa95b3602806b43a8f2f11d90a0",
+        "frozen_source_sha256": "3986eaba6600507225a7140c033c14ae039a4fa95b3602806b43a8f2f11d90a0",
+        "exact_rendered_match": true,
+        "boundary_newline_normalized_match": true
+      },
+      {
+        "cell": 11,
+        "type": "code",
+        "saved_rendered_sha256": "2bd7479ad2a8fbfb137cb30287c8a5c21242a93679420439aeea70cb54093ee3",
+        "frozen_source_sha256": "ece3664cf924f36f3b838bac34fa636e67a5c865e6bf21ab61ff086bd1f87dfb",
+        "exact_rendered_match": false,
+        "boundary_newline_normalized_match": true
+      },
+      {
+        "cell": 12,
+        "type": "code",
+        "saved_rendered_sha256": "263b2cf07984fb210bf4fe739b40dbb8861ac5c96dd42ab12b79cc5a7d2b0674",
+        "frozen_source_sha256": "1b69f438acf6f21117acb50f1b42816a5da627c4dcec80b8e76372ef11793f15",
+        "exact_rendered_match": false,
+        "boundary_newline_normalized_match": true
+      },
+      {
+        "cell": 13,
+        "type": "code",
+        "saved_rendered_sha256": "c6e82702d619bf3d5db56b80f0a8d48ac466e910135623f4ea94395d9e6bb4bc",
+        "frozen_source_sha256": "46b99601f8a99a9b894a54a0a0e77c7d983c220a0a415821e05cb4ed6c881e36",
+        "exact_rendered_match": false,
+        "boundary_newline_normalized_match": true
+      },
+      {
+        "cell": 14,
+        "type": "code",
+        "saved_rendered_sha256": "34b41f0533537444abf6c1998f2018237350ee4109ffb80a5118ad38416eabaa",
+        "frozen_source_sha256": "34b41f0533537444abf6c1998f2018237350ee4109ffb80a5118ad38416eabaa",
+        "exact_rendered_match": true,
+        "boundary_newline_normalized_match": true
+      }
+    ],
+    "changes_this_batch": 0,
+    "executed_this_batch": 0,
+    "live_execution_prompts": "14 x In [ ]",
+    "markdown_added": 0
+  },
+  "inputs": [
+    {
+      "kind": "competition",
+      "ref": "biohub-cell-tracking-during-development",
+      "permission": "Current official team membership confirmed; teammate mount pending"
+    },
+    {
+      "kind": "dataset",
+      "ref": "pilkwang/biohub-tracking-support-pack-50ep-v1",
+      "version": 10,
+      "version_evidence": "Saved V1 Input source details Version 10",
+      "permission": "PUBLIC",
+      "public_evidence": "Official SDK dataset_list PUBLIC group exact reference matched"
+    },
+    {
+      "kind": "dataset",
+      "ref": "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+      "version": 2,
+      "version_evidence": "Saved V1 Input source details Version 2",
+      "permission": "PUBLIC",
+      "public_evidence": "Official SDK dataset_list PUBLIC group exact reference matched"
+    },
+    {
+      "kind": "dataset",
+      "ref": "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+      "version": 5,
+      "version_evidence": "Saved V1 Input source details Version 5",
+      "permission": "PUBLIC",
+      "public_evidence": "Official SDK dataset_list PUBLIC group exact reference matched"
+    },
+    {
+      "kind": "notebook",
+      "ref": "sailorren/biohub-division-train-20260914",
+      "version": 1,
+      "sv": 349707105,
+      "version_evidence": "Saved V1 source identity; gate exact SV URL shows Version 1 of 1",
+      "permission": "PRIVATE_CAN_VIEW_GRANTED",
+      "teammate": "dongdongjiaqi"
+    }
+  ],
+  "settings": {
+    "private": true,
+    "private_evidence": "Live Share dialog Private checked; final page Private",
+    "internet": false,
+    "enable_gpu": true,
+    "machine_shape": "NvidiaTeslaT4",
+    "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+    "settings_provenance": "GPU/Internet/Docker are prior exact V1 SDK metadata in B/colab_roundtrip_result.json#source_readback; live viewer Settings has no these fields; not claimed freshly exported. Version unchanged.",
+    "environment_validation": "NOT_RUN; actual saved image differs from original requested image; teammate runtime compatibility pending",
+    "session_started_this_batch": false,
+    "outputs_required": false,
+    "output_files_live": 0
+  },
+  "team": {
+    "page": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/team",
+    "team_name": "SailorRen",
+    "owner": "sailorren",
+    "member_display": "Dongdongjiaqi",
+    "member_username": "dongdongjiaqi",
+    "identity_evidence": "Only other current member; official team-page profile href /dongdongjiaqi"
+  },
+  "new_budget": {
+    "quick_save": 0,
+    "notebooks": 0,
+    "cpu_sessions": 0,
+    "gpu_sessions": 0,
+    "colab_sessions": 0,
+    "model_runs": 0,
+    "formal_submissions": 0,
+    "dataset_writes": 0,
+    "permission_saves": 2
+  },
+  "cumulative_budget_used_unchanged": {
+    "notebooks": 2,
+    "save_and_run": 2,
+    "formal_submissions": 2,
+    "engineering_reserve": 0,
+    "training": 0,
+    "dataset_write": 0,
+    "independent_gpu_diagnostic": 0,
+    "final_selection_change": 0,
+    "no_run_version_save_requests": 2,
+    "cpu_file_sessions": 2
+  },
+  "pending": [
+    "Teammate opens exact V1 and copies to own private account",
+    "Copied notebook keeps 14 original cells and all five pinned inputs",
+    "Own T4 x2, Internet off, available GPU balance and runtime compatibility",
+    "Return copied link and Input/Settings screenshots before any run"
+  ],
+  "not_claimed": [
+    "cross_account_copy_completed",
+    "model_run_succeeded",
+    "formal_submission_completed",
+    "colab_roundtrip_completed"
+  ]
+}
