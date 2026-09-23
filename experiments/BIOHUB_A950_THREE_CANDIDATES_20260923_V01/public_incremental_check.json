@@ -1,0 +1,49 @@
+{
+  "observed_at": "2026-09-23T20:58:22.647659+08:00",
+  "time_budget_minutes": 15,
+  "scope": "bounded browser incremental check; not full September 23 coverage",
+  "discussion_sort": "Recent Comments",
+  "code_sort": "Recently Run",
+  "sources": [
+    {
+      "id": 742266,
+      "coverage": "body and all 12 visible comments/replies read",
+      "classification": "AUTHOR_CLAIM",
+      "finding": "作者十项单变量更改均降分；本地edge提升与Public相反；评论未提供可复核的新正式版本。"
+    },
+    {
+      "id": 742064,
+      "coverage": "full body, 0 comments",
+      "classification": "AUTHOR_CLAIM",
+      "finding": "secondary全199训练、DC71训练；in-sample验证不能替代Public。作者局部改进而LB下降。"
+    },
+    {
+      "id": 741749,
+      "coverage": "body and visible comments read",
+      "classification": "AUTHOR_CLAIM",
+      "finding": "作者澄清自研端到端是0.939，名字旁0.947属公开本；本地预训练收益不能移植为本批提分证据。"
+    },
+    {
+      "id": 738217,
+      "coverage": "body and initial comments only; image content and remaining comments not reviewed",
+      "classification": "AUTHOR_CLAIM",
+      "finding": "展示训练样本FOCUS3D；初始评论称Ultrack未取得可靠结果；不加入本批。"
+    },
+    {
+      "url": "https://www.kaggle.com/code/amanatar/biohub-geometric-fusion?scriptVersionId=351532492",
+      "version": 3,
+      "sv": 351532492,
+      "public_display": "0.948",
+      "coverage": "current page version/public display; full source comparison inherited from fixed repository reports, not newly repeated",
+      "classification": "OFFICIAL_FACT"
+    }
+  ],
+  "recent_code_discovery": [
+    "junaid512/biohub-cell-tracking-strategic-submission",
+    "segamega/biohub-cell-tracking-during-development",
+    "zalejohn/submission-csv"
+  ],
+  "recent_code_limit": "Card-only discovery, no source or score conclusion; no algorithm changes from new cards",
+  "publication_time": "UI relative dates retained as relative observations; exact publish timestamps UNKNOWN",
+  "decision": "Three frozen authorized candidates unchanged"
+}

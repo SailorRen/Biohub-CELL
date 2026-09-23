@@ -1,0 +1,102 @@
+{
+  "observed_at": "2026-09-23T21:31:22.745436+08:00",
+  "kernel": 135524886,
+  "version": 1,
+  "sv": 352147006,
+  "url": "https://www.kaggle.com/code/sailorren/biohub-a950-v025-l030p-20260923?scriptVersionId=352147006",
+  "source_check": {
+    "method": "Official browser Download .ipynb from sole V1; Edit/run/352147006; official CLI metadata pull",
+    "code_cells_equal": 14,
+    "markdown_cells_equal": 1,
+    "outputs_empty": true,
+    "execution_counts_null": true,
+    "download_sha256": "bf991e44fc543733e682a56b5e433f7e80776ed3fbde3da3163ef49d88130df2"
+  },
+  "saved_settings": {
+    "id": "sailorren/biohub-a950-v025-l030p-20260923",
+    "id_no": 135524886,
+    "title": "biohub-a950-v025-l030p-20260923",
+    "code_file": "biohub-a950-v025-l030p-20260923.ipynb",
+    "language": "python",
+    "kernel_type": "notebook",
+    "is_private": true,
+    "enable_gpu": false,
+    "enable_tpu": false,
+    "enable_internet": false,
+    "keywords": [],
+    "dataset_sources": [
+      "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+      "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+      "pilkwang/biohub-tracking-support-pack-50ep-v1"
+    ],
+    "kernel_sources": [
+      "sailorren/biohub-division-train-20260914"
+    ],
+    "competition_sources": [
+      "biohub-cell-tracking-during-development"
+    ],
+    "model_sources": [],
+    "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+    "machine_shape": "None"
+  },
+  "input_versions": {
+    "competition": "biohub-cell-tracking-during-development",
+    "primary": 10,
+    "secondary": 2,
+    "deepcenter": 5,
+    "gate": {
+      "requested_sv": 349707105,
+      "requested_version": 1,
+      "saved_input_slug": "sailorren/biohub-division-train-20260914",
+      "exact_sv_direct_readback": "PASS: browser downloaded saved notebook metadata sourceType=kernelVersion sourceId=349707105",
+      "source_permission": "Private; dongdongjiaqi Can view confirmed"
+    }
+  },
+  "sharing": {
+    "username": "dongdongjiaqi",
+    "permission": "Can view",
+    "private": true,
+    "saved_and_reopened": true,
+    "teammate_view": "NOT_OBSERVED"
+  },
+  "packaging": "Quick Save Never output; 11.6second nbconvert packaging, no code execution; 0 Output files",
+  "environment_note": "Saved actual docker dafd4ce differs from original A private-byod37c64f; import uses embedded dockerImageVersionId31430. Recorded explicitly; candidate runtime on saved image NOT_VERIFIED. No dependency or algorithm changes.",
+  "run_gate": "HOLD_B_OR_L020P_PUBLIC",
+  "browser_download": {
+    "sha256": "bf991e44fc543733e682a56b5e433f7e80776ed3fbde3da3163ef49d88130df2",
+    "bytes": 263425,
+    "code_cells_equal": 14,
+    "markdown_cells_equal": 1,
+    "kaggle_metadata": {
+      "accelerator": "none",
+      "dataSources": [
+        {
+          "sourceType": "competition",
+          "sourceId": 136605
+        },
+        {
+          "sourceType": "datasetVersion",
+          "sourceId": 17751825
+        },
+        {
+          "sourceType": "datasetVersion",
+          "sourceId": 17804310
+        },
+        {
+          "sourceType": "datasetVersion",
+          "sourceId": 18187037
+        },
+        {
+          "sourceType": "kernelVersion",
+          "sourceId": 349707105
+        }
+      ],
+      "dockerImageVersionId": 31430,
+      "isInternetEnabled": false,
+      "language": "python",
+      "sourceType": "notebook",
+      "isGpuEnabled": false
+    }
+  },
+  "metadata_caveat": "Official CLI notebook body retains inherited metadata dataSources; actual CLI kernel metadata + saved Input UI used. Browser Download updates saved Kaggle metadata when available. Inherited papermill times are historical, not this candidate execution."
+}

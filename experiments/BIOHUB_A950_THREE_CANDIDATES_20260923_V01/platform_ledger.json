@@ -13,10 +13,16 @@
     "colab": 0
   },
   "used": {
-    "templates": 0,
-    "nonrunning_saves": 0,
+    "templates": 3,
+    "nonrunning_saves": 3,
     "formal_attempts": 0,
-    "sessions": 0
+    "sessions": 0,
+    "template_creation_attempts": 3,
+    "teammate_copies_observed": 0,
+    "teammate_ordinary_runs_observed": 0,
+    "model_inferences": 0,
+    "gpu_sessions": 0,
+    "cpu_sessions": 0
   },
   "teammate": {
     "username": "dongdongjiaqi",
@@ -63,42 +69,182 @@
     "V0375": {
       "slug": "sailorren/biohub-a950-v0375-20260923",
       "notebook_sha256": "83ca8967efe26f600832f5a68c43a2deaa61dd870655520e1de2fb60e3fe0bf0",
-      "template": "LOCAL_BUILT",
-      "sharing": "NOT_SET",
+      "template": "V1_SAVED_SOURCE_VERIFIED",
+      "sharing": "CAN_VIEW_VERIFIED",
       "teammate_copy": "NOT_OBSERVED",
       "ordinary_run": "NOT_RUN",
       "formal_submission": "NOT_DISPATCHED",
       "public": null,
       "run_gate": "READY_AFTER_TEMPLATE_AND_COPY_REVIEW",
       "intent": "CREATE_PRIVATE_TEMPLATE_AND_ONE_QUICK_SAVE",
-      "request_dispatched": false
+      "request_dispatched": true,
+      "version": 1,
+      "sv": 352145826,
+      "kernel": 135522207
     },
     "V025-L020P": {
       "slug": "sailorren/biohub-a950-v025-l020p-20260923",
       "notebook_sha256": "b14bd6ef263b84a6a42f9a08b25a8e9e8f2000e36d494539de26f63b2c017660",
-      "template": "LOCAL_BUILT",
-      "sharing": "NOT_SET",
+      "template": "V1_SAVED_SOURCE_VERIFIED",
+      "sharing": "CAN_VIEW_VERIFIED",
       "teammate_copy": "NOT_OBSERVED",
       "ordinary_run": "NOT_RUN",
       "formal_submission": "NOT_DISPATCHED",
       "public": null,
       "run_gate": "READY_AFTER_TEMPLATE_AND_COPY_REVIEW",
       "intent": "CREATE_PRIVATE_TEMPLATE_AND_ONE_QUICK_SAVE",
-      "request_dispatched": false
+      "request_dispatched": true,
+      "version": 1,
+      "sv": 352143016,
+      "kernel": 135522297
     },
     "V025-L030P": {
       "slug": "sailorren/biohub-a950-v025-l030p-20260923",
       "notebook_sha256": "d18513ca5e1baeb166c7f74bffc08c1a54b081369dd804acc76c2e41a177a0f4",
-      "template": "LOCAL_BUILT",
-      "sharing": "NOT_SET",
+      "template": "V1_SAVED_SOURCE_VERIFIED",
+      "sharing": "CAN_VIEW_VERIFIED",
       "teammate_copy": "NOT_OBSERVED",
       "ordinary_run": "NOT_RUN",
       "formal_submission": "NOT_DISPATCHED",
       "public": null,
       "run_gate": "HOLD_B_OR_L020P_PUBLIC",
       "intent": "CREATE_PRIVATE_TEMPLATE_AND_ONE_QUICK_SAVE",
-      "request_dispatched": false
+      "request_dispatched": true,
+      "version": 1,
+      "sv": 352147006,
+      "kernel": 135524886
     }
   },
-  "events": []
+  "events": [
+    {
+      "time": "2026-09-23T20:58:00+08:00",
+      "action": "A V1 Copy & edit notebook for V0375",
+      "result": "No editor navigation; read-only tab inventory and latest mine list show no new copy. Not retried.",
+      "status": "REQUEST_UNCERTAIN",
+      "saves": 0
+    },
+    {
+      "time": "2026-09-23T21:03:10.468692+08:00",
+      "action": "Create > Notebook for V025-L020P; import local candidate.ipynb",
+      "draft_url": "https://www.kaggle.com/code/sailorren/notebook6fd6b20559/edit",
+      "session": "off",
+      "result": "DRAFT_CREATED_IMPORTING"
+    },
+    {
+      "time": "2026-09-23T21:12:49.779243+08:00",
+      "action": "V025-L020P Quick Save Never output",
+      "dispatched": true,
+      "version": 1,
+      "sv": 352143016,
+      "status": "SAVED",
+      "session": "off"
+    },
+    {
+      "time": "2026-09-23T21:12:49.779243+08:00",
+      "action": "Read-only reconciliation of earlier copy",
+      "result": "Sidebar now shows Fork of biohub-d960-v025-20260922; resume this existing draft for V0375, no duplicate create"
+    },
+    {
+      "time": "2026-09-23T21:19:19.061239+08:00",
+      "action": "V0375 Quick Save intent",
+      "type": "Quick Save",
+      "output": "Never",
+      "session": "off",
+      "source_commit": "8460f67788c3b8abc3ef4df67974562e06573405",
+      "inputs": "competition primaryV10 secondaryV2 DCV5 gateV1",
+      "accelerator": "None",
+      "internet": false
+    },
+    {
+      "time": "2026-09-23T21:22:06.413804+08:00",
+      "action": "V0375 one Quick Save accepted; source/input/settings/share readback",
+      "version": 1,
+      "sv": 352145826,
+      "session": "off",
+      "formal": 0
+    },
+    {
+      "time": "2026-09-23T21:22:39.337751+08:00",
+      "action": "Create Notebook for L030P",
+      "draft": "notebook0c95fa49c9",
+      "session": "off",
+      "result": "created"
+    },
+    {
+      "time": "2026-09-23T21:24:25.774755+08:00",
+      "action": "L030P Quick Save intent",
+      "type": "Quick Save",
+      "output": "Never",
+      "session": "off",
+      "source_commit": "8460f67788c3b8abc3ef4df67974562e06573405",
+      "inputs": "competition primaryV10 secondaryV2 DCV5 gateV1",
+      "accelerator": "None",
+      "internet": false,
+      "run_gate": "HOLD"
+    },
+    {
+      "time": "2026-09-23T21:31:22.745436+08:00",
+      "action": "L030P Quick Save and Can view readback",
+      "sv": 352147006,
+      "version": 1,
+      "source_cells_equal": 14,
+      "session": "off"
+    },
+    {
+      "time": "2026-09-23T21:31:22.745436+08:00",
+      "action": "read-only API transient failure and recovery",
+      "raw_error": "SSL: UNEXPECTED_EOF_WHILE_READING at OAuthService/IntrospectToken",
+      "affected_reads": [
+        "submissions final query",
+        "L030P metadata pull"
+      ],
+      "repair": "one later read-only retry each succeeded; browser source download verified",
+      "platform_writes_retried": 0
+    }
+  ],
+  "status": "READY_FOR_TEAMMATE_ACTION",
+  "final_submission_observation": {
+    "observed_at": "2026-09-23T21:31:22.745436+08:00",
+    "source": "official Kaggle CLI competition submissions --csv",
+    "rows": [
+      {
+        "ref": "56492838",
+        "fileName": "submission.csv",
+        "date": "2026-09-23 12:17:33.050000",
+        "description": "Notebook biohub-d960-l030p-20260922 c2b4c1 | Version 1",
+        "status": "SubmissionStatus.PENDING",
+        "publicScore": "",
+        "privateScore": ""
+      },
+      {
+        "ref": "56492412",
+        "fileName": "submission.csv",
+        "date": "2026-09-23 11:59:07.047000",
+        "description": "Notebook biohub-d960-l030p-20260922 | Version 1",
+        "status": "SubmissionStatus.PENDING",
+        "publicScore": "",
+        "privateScore": ""
+      },
+      {
+        "ref": "56456090",
+        "fileName": "submission.csv",
+        "date": "2026-09-22 06:40:45.273000",
+        "description": "BIOHUB_TWO_WAVE_20260922_V01 A V025 V1 SV351739212",
+        "status": "SubmissionStatus.COMPLETE",
+        "publicScore": "0.950",
+        "privateScore": ""
+      },
+      {
+        "ref": "56416049",
+        "fileName": "submission.csv",
+        "date": "2026-09-21 04:21:28.967000",
+        "description": "BIOHUB_SCORE_TRIO_20260921_V01 D960 V1 SV351441983",
+        "status": "SubmissionStatus.COMPLETE",
+        "publicScore": "0.948",
+        "privateScore": ""
+      }
+    ],
+    "new_candidate_rows": [],
+    "l030_gate": "HOLD_B_OR_L020P_PUBLIC"
+  }
 }
