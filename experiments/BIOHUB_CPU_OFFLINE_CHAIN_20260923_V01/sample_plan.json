@@ -1,0 +1,41 @@
+{
+  "status": "FIXED_FROM_SOURCE_NOT_LOADED_THIS_BATCH",
+  "video": "44b6_0113de3b",
+  "frames": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "prior_verified_raw_shape": [
+    100,
+    64,
+    256,
+    256
+  ],
+  "original_last_frame": 99,
+  "segment_end_is_true_end": false,
+  "window": 2,
+  "actual_batch": 1,
+  "downsample": [
+    1,
+    4,
+    4
+  ],
+  "minimum_track": 6,
+  "rescue_minimum": 4,
+  "selector_mode": "FIXED_DIAGNOSTIC_CONFIG",
+  "additional_native_shape": "NOT_SELECTED_RUNTIME_BLOCKED"
+}

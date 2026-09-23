@@ -1,0 +1,46 @@
+{
+  "task": "BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01",
+  "utc": "2026-09-23T08:08:48.856653+00:00",
+  "preparation_cpu_session": {
+    "limit": 1,
+    "dispatched": 1,
+    "intent": "CPU-PREP-01",
+    "notebook": "sailorren/biohub-cpu-small-probe-20260923",
+    "kernel": 135480603,
+    "prior_version": 1,
+    "prior_sv": 352060904,
+    "settings": {
+      "accelerator": "None",
+      "internet": true,
+      "primary_version": 10
+    },
+    "dispatch_utc": "2026-09-23T08:09:07.035613+00:00",
+    "observed": "Draft Session Starting",
+    "same_session_readonly_reconnect_reload": 1,
+    "status": "RELEASED_AFTER_CONNECTION_BLOCK",
+    "released_utc": "2026-09-23T08:18:38.544Z",
+    "actual_code_execution": "NOT_OBSERVED",
+    "execution_request_dispatched": 1,
+    "retry": 0,
+    "ui_duration": "10 minutes",
+    "output_directory": "cpu_bundle NOT_OBSERVED"
+  },
+  "output_quick_save": {
+    "limit": 1,
+    "dispatched": 0
+  },
+  "offline_notebook": {
+    "limit": 1,
+    "created": 0
+  },
+  "offline_save_run": {
+    "limit": 1,
+    "dispatched": 0
+  },
+  "minimal_repair": {
+    "limit": 1,
+    "used": 0
+  },
+  "gpu": 0,
+  "formal_submission": 0
+}

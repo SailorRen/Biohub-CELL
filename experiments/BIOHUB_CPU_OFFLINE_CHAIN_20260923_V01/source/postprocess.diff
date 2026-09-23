@@ -1,0 +1,63 @@
+--- frozen_cell6_algorithm_prefix
++++ diagnostic_postprocess
+@@ -175,41 +175,7 @@
+ 
+ 
+ def _dc_checkpoint_candidates() -> list[Path]:
+-    candidates: list[Path] = []
+-    explicit = os.environ.get("BIOHUB_DEEPCENTER_CHECKPOINT", DEEPCENTER_CHECKPOINT_DEFAULT).strip()
+-    if explicit:
+-        candidates.append(Path(explicit))
+-    manifest_explicit = os.environ.get("BIOHUB_DEEPCENTER_MANIFEST", DEEPCENTER_MANIFEST_DEFAULT).strip()
+-    if manifest_explicit:
+-        candidates.extend(_dc_manifest_weight_paths(Path(manifest_explicit)))
+-
+-    input_root = Path("/kaggle/input")
+-    preferred_dirs = [
+-        Path("/kaggle/input/biohub-deepcenter-unet3d-center-prior-v1"),
+-        Path("/kaggle/input/datasets/pilkwang/biohub-deepcenter-unet3d-center-prior-v1"),
+-    ]
+-    for directory in preferred_dirs:
+-        candidates.extend(_dc_manifest_weight_paths(directory / "ARTIFACT_MANIFEST.json"))
+-        for name in ("checkpoint_last.pt", "best.pt", "last.pt"):
+-            candidates.append(directory / "weights" / "full_frame_center" / name)
+-            candidates.append(directory / name)
+-    if input_root.exists():
+-        for name in ("checkpoint_last.pt", "best.pt", "last.pt"):
+-            candidates.extend(sorted(input_root.glob(f"**/full_frame_center/**/{name}")))
+-
+-    seen: set[Path] = set()
+-    out: list[Path] = []
+-    for path in candidates:
+-        path = path.expanduser()
+-        try:
+-            key = path.resolve() if path.exists() else path
+-        except Exception:
+-            key = path
+-        if key in seen:
+-            continue
+-        seen.add(key)
+-        out.append(path)
+-    return out
++    return [EXACT_DC_WEIGHT]
+ 
+ 
+ try:
+@@ -1850,7 +1816,7 @@
+     return nodes_by_id, edges, stats
+ 
+ 
+-DEEPCENTER_VETO_DETECTOR = load_deepcenter_veto_detector()
++DEEPCENTER_VETO_DETECTOR = None # explicitly loaded and timed by diagnostic driver
+ 
+ def write_test_submission(tag: str = "base") -> None:
+     
+@@ -2076,7 +2042,7 @@
+ import hashlib as _sprint_hashlib
+ import json as _sprint_json
+ _SPRINT_WEIGHT_SHA='0a1f9b93bb529e70f4f7c2ba0907eea8b4cecd2befccc8ba1fb75e569edf77a0'
+-_sprint_paths=[p for p in Path('/kaggle/input').rglob('division_gate_weights.json') if _sprint_hashlib.sha256(p.read_bytes()).hexdigest()==_SPRINT_WEIGHT_SHA]
++_sprint_paths=[p for p in GATE_ROOT.rglob('division_gate_weights.json') if _sprint_hashlib.sha256(p.read_bytes()).hexdigest()==_SPRINT_WEIGHT_SHA]
+ assert len(_sprint_paths)==1,'SPRINT_EXACT_WEIGHT_REQUIRED'
+ _SPRINT_WEIGHTS=_sprint_json.loads(_sprint_paths[0].read_text())
+ assert set(_SPRINT_WEIGHTS['held_out'])=={'44b6','6bba'}

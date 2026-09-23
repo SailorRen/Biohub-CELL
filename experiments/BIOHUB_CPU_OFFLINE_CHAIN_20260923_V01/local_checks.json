@@ -1,0 +1,15 @@
+{
+  "postprocess_algorithm_definitions_equal": 42,
+  "allowed_changed_definition": [
+    "_dc_checkpoint_candidates"
+  ],
+  "frozen_source_hash": "03e4abd5c80b5724b959bc453352524e276bebcf9aa0c2ffa38f22442d3e2ceb",
+  "tests": "static only, runtime NOT_RUN",
+  "chain_module_compilation": "PASS",
+  "selector": "FIXED_DIAGNOSTIC_CONFIG; unchanged selector NOT_VALIDATED",
+  "git_whitespace_check": {
+    "status": "WARN_PRESERVED_SOURCE_AND_UNIFIED_DIFF_WHITESPACE",
+    "exit_code": 2,
+    "reason": "保留冻结源码的原空白和标准unified diff上下文，不把空白检查作为模型证据"
+  }
+}

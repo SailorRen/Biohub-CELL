@@ -1,0 +1,96 @@
+{
+  "task": "BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01",
+  "status": "BLOCKED_PREPARATION_SESSION_CONNECTION",
+  "classification": "MEASURED",
+  "observed_utc": "2026-09-23T08:18:38.544Z",
+  "preparation": {
+    "session_request": "ACCEPTED_INTERACTIVE_EVENT",
+    "code_request": "QUEUED_EXECUTION_NOT_OBSERVED",
+    "offline_install": "NOT_RUN",
+    "conversion": "NOT_OBSERVED",
+    "IR_and_wheels_output": "NOT_CREATED_OR_VERIFIED",
+    "new_version": null,
+    "new_sv": null,
+    "last_preserved_version": 1,
+    "last_preserved_sv": 352060904,
+    "notebook": "sailorren/biohub-cpu-small-probe-20260923",
+    "kernel": 135480603,
+    "session_released": true
+  },
+  "offline_chain": {
+    "notebook_created": false,
+    "save_run_dispatched": false,
+    "reference": "NOT_RUN",
+    "candidate": "NOT_RUN",
+    "module_coverage": {},
+    "conditional_modules": "NOT_RUN_NOT_NOT_TRIGGERED",
+    "numeric": "NOT_MEASURED",
+    "graph_difference": "NOT_MEASURED",
+    "csv_structure": "NOT_RUN",
+    "wall_seconds": null,
+    "peak_rss": null
+  },
+  "direct_errors": [
+    "Connection lost, reconnecting in 0 seconds.",
+    "Connection lost, reconnecting in 24 seconds."
+  ],
+  "observed_state_conflict": [
+    "Editor: Draft Session Starting",
+    "Active Events: Interactive Session Running: 10 minutes"
+  ],
+  "minimal_action": "one page refresh reconnecting same session; no repeated execution request; then one Stop Session on this exact event",
+  "budget": {
+    "task": "BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01",
+    "utc": "2026-09-23T08:08:48.856653+00:00",
+    "preparation_cpu_session": {
+      "limit": 1,
+      "dispatched": 1,
+      "intent": "CPU-PREP-01",
+      "notebook": "sailorren/biohub-cpu-small-probe-20260923",
+      "kernel": 135480603,
+      "prior_version": 1,
+      "prior_sv": 352060904,
+      "settings": {
+        "accelerator": "None",
+        "internet": true,
+        "primary_version": 10
+      },
+      "dispatch_utc": "2026-09-23T08:09:07.035613+00:00",
+      "observed": "Draft Session Starting",
+      "same_session_readonly_reconnect_reload": 1,
+      "status": "RELEASED_AFTER_CONNECTION_BLOCK",
+      "released_utc": "2026-09-23T08:18:38.544Z",
+      "actual_code_execution": "NOT_OBSERVED",
+      "execution_request_dispatched": 1,
+      "retry": 0,
+      "ui_duration": "10 minutes",
+      "output_directory": "cpu_bundle NOT_OBSERVED"
+    },
+    "output_quick_save": {
+      "limit": 1,
+      "dispatched": 0
+    },
+    "offline_notebook": {
+      "limit": 1,
+      "created": 0
+    },
+    "offline_save_run": {
+      "limit": 1,
+      "dispatched": 0
+    },
+    "minimal_repair": {
+      "limit": 1,
+      "used": 0
+    },
+    "gpu": 0,
+    "formal_submission": 0
+  },
+  "limitations": [
+    "No deployment version was saved or mounted.",
+    "No real short-chain CPU result was measured.",
+    "Local source/AST checks do not establish runtime correctness.",
+    "Previous NEEDS_HUMAN_REVIEW remains.",
+    "No full CPU B, GPU equivalence, hidden set timing or formal score evidence."
+  ],
+  "next_minimum_question": "Resolve the editor-to-CPU-session connection; a new preparation session requires renewed authorization because the one allowed request is consumed."
+}

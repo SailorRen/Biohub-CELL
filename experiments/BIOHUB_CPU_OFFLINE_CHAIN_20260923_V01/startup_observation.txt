@@ -1,0 +1,15 @@
+
+  - 'listitem "Status for biohub-cpu-small-probe-20260923: [object Object]. Click to open biohub-cpu-small-probe-20260923 in new window List Item"':
+    - 'link "Status for biohub-cpu-small-probe-20260923: [object Object]. Click to open biohub-cpu-small-probe-20260923 in new window"':
+      - generic: biohub-cpu-small-probe-20260923
+      - generic: Interactive Session
+      - generic: "Running: 8m"
+    - paragraph: 8m
+    - button "More options for biohub-cpu-small-probe-20260923": more_horiz
+- list:
+  - listitem "undefined List Item":
+    - link "Open Active Events dialog 1 1 Active Event":
+      - generic "Open Active Events dialog": auto_awesome_motion
+      - generic: "1"
+      - paragraph: 1 Active Event
+    - button "Collapse Active Events dialog": expand_more

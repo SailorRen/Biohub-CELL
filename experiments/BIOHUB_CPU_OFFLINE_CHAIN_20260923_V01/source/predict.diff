@@ -1,0 +1,36 @@
+--- frozen_B_patched_predict
++++ instrumented_diagnostic_predict
+@@ -584,7 +584,7 @@
+                             "BIOHUB_GPU_SHARD", "single"
+                         ).replace("/", "_")
+                         guard_log = (
+-                            Path("/kaggle/working")
++                            TRACE.root
+                             / f"retention_guard_{shard}.jsonl"
+                         )
+                         guard_record = {
+@@ -612,6 +612,7 @@
+ 
+             del secondary_det_logits
+ 
++        TRACE.window(frame_indices, unet_out, det_logits, secondary_unet_out)
+         del imgs
+ 
+         # --- Detect cells in each frame (dedup across windows) ---
+@@ -843,6 +844,7 @@
+             else:
+                 probs = torch.sigmoid(raw).cpu().numpy()
+ 
++            TRACE.edges(frame_indices, idx_src, idx_tgt, coords_so_far, probs, cfg.threshold)
+             candidates = sorted(
+                 [
+                     (probs[i, j], i, j)
+@@ -913,7 +915,7 @@
+             "stage": "post_detection_pre_graph_pre_ilp",
+         }
+         _coordinate_manifest_path = (
+-            Path("/kaggle/working")
++            TRACE.root
+             / f"detector_coordinates_{_coordinate_manifest_arm}_"
+             f"{_coordinate_shard}.jsonl"
+         )
