@@ -1,0 +1,104 @@
+{
+  "task_id": "BIOHUB_A950_THREE_CANDIDATES_20260923_V01",
+  "created_at": "2026-09-23T20:56:43.228904+08:00",
+  "task_commit": "c9c674e9b106d422ba83c95c2309bc4cf6413c78",
+  "budgets": {
+    "templates": 3,
+    "nonrunning_saves": 3,
+    "formal_attempts": 3,
+    "per_candidate_formal": 1,
+    "gpu_diagnostics": 0,
+    "training": 0,
+    "datasets": 0,
+    "colab": 0
+  },
+  "used": {
+    "templates": 0,
+    "nonrunning_saves": 0,
+    "formal_attempts": 0,
+    "sessions": 0
+  },
+  "teammate": {
+    "username": "dongdongjiaqi",
+    "verified_by": "current competition Team page; only other team member",
+    "permission": "Can view only"
+  },
+  "baseline_observation": {
+    "A": {
+      "submission": 56456090,
+      "version": 1,
+      "sv": 351739212,
+      "status": "COMPLETE",
+      "public": "0.950"
+    },
+    "D960": {
+      "submission": 56416049,
+      "version": 1,
+      "sv": 351441983,
+      "status": "COMPLETE",
+      "public": "0.948"
+    },
+    "B_existing": [
+      {
+        "slug": "dongdongjiaqi/biohub-d960-l030p-20260922",
+        "submission": 56492412,
+        "version": 1,
+        "sv": 352126664,
+        "status": "PENDING",
+        "public": null
+      },
+      {
+        "slug": "dongdongjiaqi/biohub-d960-l030p-20260922-c2b4c1",
+        "submission": 56492838,
+        "version": 1,
+        "sv": 352131289,
+        "status": "PENDING",
+        "public": null
+      }
+    ],
+    "source": "live official CLI competition submissions + browser team submission details 2026-09-23 20:48–20:55 Asia/Shanghai",
+    "old_requests_not_retried": true
+  },
+  "candidates": {
+    "V0375": {
+      "slug": "sailorren/biohub-a950-v0375-20260923",
+      "notebook_sha256": "83ca8967efe26f600832f5a68c43a2deaa61dd870655520e1de2fb60e3fe0bf0",
+      "template": "LOCAL_BUILT",
+      "sharing": "NOT_SET",
+      "teammate_copy": "NOT_OBSERVED",
+      "ordinary_run": "NOT_RUN",
+      "formal_submission": "NOT_DISPATCHED",
+      "public": null,
+      "run_gate": "READY_AFTER_TEMPLATE_AND_COPY_REVIEW",
+      "intent": "CREATE_PRIVATE_TEMPLATE_AND_ONE_QUICK_SAVE",
+      "request_dispatched": false
+    },
+    "V025-L020P": {
+      "slug": "sailorren/biohub-a950-v025-l020p-20260923",
+      "notebook_sha256": "b14bd6ef263b84a6a42f9a08b25a8e9e8f2000e36d494539de26f63b2c017660",
+      "template": "LOCAL_BUILT",
+      "sharing": "NOT_SET",
+      "teammate_copy": "NOT_OBSERVED",
+      "ordinary_run": "NOT_RUN",
+      "formal_submission": "NOT_DISPATCHED",
+      "public": null,
+      "run_gate": "READY_AFTER_TEMPLATE_AND_COPY_REVIEW",
+      "intent": "CREATE_PRIVATE_TEMPLATE_AND_ONE_QUICK_SAVE",
+      "request_dispatched": false
+    },
+    "V025-L030P": {
+      "slug": "sailorren/biohub-a950-v025-l030p-20260923",
+      "notebook_sha256": "d18513ca5e1baeb166c7f74bffc08c1a54b081369dd804acc76c2e41a177a0f4",
+      "template": "LOCAL_BUILT",
+      "sharing": "NOT_SET",
+      "teammate_copy": "NOT_OBSERVED",
+      "ordinary_run": "NOT_RUN",
+      "formal_submission": "NOT_DISPATCHED",
+      "public": null,
+      "run_gate": "HOLD_B_OR_L020P_PUBLIC",
+      "intent": "CREATE_PRIVATE_TEMPLATE_AND_ONE_QUICK_SAVE",
+      "request_dispatched": false
+    }
+  },
+  "events": []
+}

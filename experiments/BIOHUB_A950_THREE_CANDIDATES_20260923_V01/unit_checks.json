@@ -1,0 +1,26 @@
+{
+  "checks": {
+    "weak_leaf": "PASS",
+    "strong_leaf": "PASS",
+    "division_both_children": "PASS",
+    "missing_zero_exempt": "PASS",
+    "genuine_zero_removed": "PASS",
+    "actual_last_frame": "PASS",
+    "unknown_last_frame": "PASS",
+    "noncascade": "PASS",
+    "disabled": "PASS",
+    "invalid_score_and_original_logit_conversion": "PASS",
+    "id_and_row_order_invariant": "PASS",
+    "V0375_actual_motion_consumption_and_provenance": "PASS",
+    "V025-L020P_actual_motion_consumption_and_provenance": "PASS",
+    "V025-L030P_actual_motion_consumption_and_provenance": "PASS",
+    "unchanged_selector_and_clean_outputs": "PASS",
+    "same_graph_L020_removals_subset_L030": "PASS",
+    "L020_strict_boundary": "PASS",
+    "L020_weak_leaf": "PASS",
+    "V0375_parameters_and_algorithm_AST_preserved": "PASS",
+    "V025-L020P_parameters_and_algorithm_AST_preserved": "PASS",
+    "V025-L030P_parameters_and_algorithm_AST_preserved": "PASS"
+  },
+  "scope": "CPU small graphs and changed code only; no model inference or Public claim"
+}
