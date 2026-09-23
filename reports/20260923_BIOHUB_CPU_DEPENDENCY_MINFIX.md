@@ -33,3 +33,26 @@ python experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_batch/rebuild_d
 这些测试使用临时目录及模拟 subprocess，不安装真实 wheels、不加载模型，不能当成完整 pip 解析、ABI、图像读取或 Kaggle 运行成功。当前容器网络不可用，完整目标依赖集合也未挂载，因此完整依赖解析 `NOT_VERIFIED`；新代码中的完整预检需要在下一次获授权的目标准备环境实际执行。
 
 GPU／Kaggle新运行／正式提交均0；原A/B、队友母版、权限、旧运行账本、错误回执、模型和阈值未改。云端仍以已有 V2/SV352083775 的 ERROR 为最后已观测状态，`NEEDS_HUMAN_REVIEW`不清除。
+
+
+## 2026-09-23 完整工作区重建交付
+
+任务 `BIOHUB_CPU_MINFIX_REBUILD_20260923_V01`，来源基点 `cfb060290ad3e257a5c70cffc2e6bc142f0e516b`。任务先以 `d4dfabc363776197a2b91ce2e877472fa6b16064` 推送并固定字节回读，再执行本地重建。上文“未在完整原始Notebook执行重建”为历史记录，现由本节实际结果更新。
+
+状态 **REBUILT_LOCAL_VERIFIED_NOT_RUN**。Python3.11.14实际执行已有测试：7/7通过，subprocess均为mock，不是pip安装或真实解析。保留已有sha助手的ResourceWarning，未作无关修复。原构建器第一次运行退出0，完整216207字节旧Notebook已读取并保留；新文件生成于 `experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_batch/dependency_minfix/`。本轮无需修复原构建器或测试代码。
+
+独立AST/literal_eval检查新旧完整Notebook，15/15 PAYLOAD哈希、SOURCE_DIGEST及临时空目录展开验证通过；所有Python语法和JSON解析通过。只替换prepare_bundle.py，其余14份payload及其他单元、非payload启动代码不变。两个代码单元均无执行计数和输出。独立校验首次遇到macOS临时路径 `/var` 到 `/private/var` 的别名，规范化临时根路径后通过；没有放宽来源保护。
+
+静态检查确认imagecodecs覆盖为2026.3.6、基础NumPy/PyTorch锁定来源仍为镜像，三个固定补充wheel下载早于完整dry-run、dry-run早于安装；安装不带--no-deps。元数据逐字段等于原请求：同一Kernel、Private、GPU/TPU关闭、Internet on、比赛和Primary V10，code_file在新目录内解析为新Notebook。未创建Version/SV。
+
+第二次同一重建命令退出0；Notebook、metadata、rebuild_receipt三文件字节完全不变。对交接基点已有75个本实验／two-wave文件逐字节比较全部不变，包括旧Notebook、历史错误回执、A/B源码与原账本。
+
+SHA256：
+
+- 原内嵌脚本：`3819b84aa9ecb4335a5cf84c0be315ec1ee95a029fdab8b42e775f0b3abd9785`。
+- 新内嵌脚本：`a45316f4671be1c339f49755ddaa82414380b4b5ddcf5b78b4b2156324bcf756`，与当前prepare_bundle.py逐字节相同。
+- 新Notebook：`de5b881652019984ba6d6e26dfbc9fea03294341c0bd2a08945097945739467c`。
+
+实际命令退出码、完整stdout/stderr、逐PAYLOAD哈希及可重复性结果见新目录 `local_validation.json`，构建器回执见 `rebuild_receipt.json`。
+
+修复已打入Notebook；真实依赖解析／安装NOT_RUN，ABI、真实图像读取、IR转换及离线推理NOT_VERIFIED。本轮新增Kaggle请求0、未运行模型、未启动CI云端计算。旧V2/SV352083775 ERROR及NEEDS_HUMAN_REVIEW保留。继承的TASK/request_id只是历史代码，不是本轮执行证据；未来云端派发前必须另行冻结批次身份和唯一意图。最终固定commit、远端回读数量与clean状态在交付回复中列明，不将本地打包成功写为云端成功。

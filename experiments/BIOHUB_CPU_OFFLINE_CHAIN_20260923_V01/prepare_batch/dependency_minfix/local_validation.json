@@ -1,0 +1,142 @@
+{
+  "task": "BIOHUB_CPU_MINFIX_REBUILD_20260923_V01",
+  "status": "REBUILT_LOCAL_VERIFIED_NOT_RUN",
+  "python": "3.11.14 (main, Oct 21 2025, 18:27:30) [Clang 20.1.8 ]",
+  "mock_tests": {
+    "run": 7,
+    "failed": 0,
+    "real_pip_install": false,
+    "warnings": "ResourceWarning: unclosed file from existing sha helper; retained without unrelated code changes"
+  },
+  "command_receipts": [
+    {
+      "argv": [
+        "/opt/anaconda3/envs/ml/bin/python",
+        "experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_batch/test_dependency_minfix.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_constraints_override_codec_only (__main__.FixTests.test_constraints_override_codec_only) ... /private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpk62o7yi7/bundle/base_image_packages.json'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpk62o7yi7/bundle/dependency_preflight.json'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpk62o7yi7/bundle/dependency_specs.json'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpk62o7yi7/bundle/environment.json'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpk62o7yi7/bundle/preparation_started.json'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpk62o7yi7/bundle/requirements.lock'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpk62o7yi7/bundle/support_constraints.txt'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpk62o7yi7/bundle/support_install_report.json'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpk62o7yi7/bundle/wheels/imagecodecs-2026.3.6-py3-none-any.whl'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpk62o7yi7/bundle/wheels/openvino-2026.4.0-py3-none-any.whl'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpk62o7yi7/bundle/wheels/openvino_telemetry-2025.2.0-py3-none-any.whl'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpk62o7yi7/bundle/wheels/zarr-3.2.1-py3-none-any.whl'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\nok\ntest_foreign_artifact_path_rejected (__main__.FixTests.test_foreign_artifact_path_rejected) ... ok\ntest_notebook_rebuilder_preserves_other_payload_and_cells (__main__.FixTests.test_notebook_rebuilder_preserves_other_payload_and_cells) ... ok\ntest_notebook_rebuilder_rejects_unreviewed_drift (__main__.FixTests.test_notebook_rebuilder_rejects_unreviewed_drift) ... ok\ntest_preflight_failure_stops_before_install_or_conversion (__main__.FixTests.test_preflight_failure_stops_before_install_or_conversion) ... ok\ntest_staged_codec_no_self_copy_and_is_locked (__main__.FixTests.test_staged_codec_no_self_copy_and_is_locked) ... /private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmps_fyc347/bundle/base_image_packages.json'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmps_fyc347/bundle/dependency_preflight.json'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmps_fyc347/bundle/dependency_specs.json'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmps_fyc347/bundle/environment.json'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmps_fyc347/bundle/preparation_started.json'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmps_fyc347/bundle/requirements.lock'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmps_fyc347/bundle/support_constraints.txt'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmps_fyc347/bundle/support_install_report.json'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmps_fyc347/bundle/wheels/imagecodecs-2026.3.6-py3-none-any.whl'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmps_fyc347/bundle/wheels/openvino-2026.4.0-py3-none-any.whl'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmps_fyc347/bundle/wheels/openvino_telemetry-2025.2.0-py3-none-any.whl'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmps_fyc347/bundle/wheels/zarr-3.2.1-py3-none-any.whl'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\nok\ntest_supplement_download_precedes_combined_resolution (__main__.FixTests.test_supplement_download_precedes_combined_resolution) ... /private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpg2blenno/bundle/base_image_packages.json'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpg2blenno/bundle/dependency_preflight.json'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpg2blenno/bundle/dependency_specs.json'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpg2blenno/bundle/environment.json'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpg2blenno/bundle/preparation_started.json'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpg2blenno/bundle/requirements.lock'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpg2blenno/bundle/support_constraints.txt'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpg2blenno/bundle/support_install_report.json'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpg2blenno/bundle/wheels/imagecodecs-2026.3.6-py3-none-any.whl'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpg2blenno/bundle/wheels/openvino-2026.4.0-py3-none-any.whl'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpg2blenno/bundle/wheels/openvino_telemetry-2025.2.0-py3-none-any.whl'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\n/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_bundle.py:6: ResourceWarning: unclosed file <_io.BufferedReader name='/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/tmpg2blenno/bundle/wheels/zarr-3.2.1-py3-none-any.whl'>\n  def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()\nResourceWarning: Enable tracemalloc to get the object allocation traceback\nok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.052s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "/opt/anaconda3/envs/ml/bin/python",
+        "experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_batch/rebuild_dependency_minfix.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"output\": \"/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_batch/dependency_minfix\",\n  \"old_prepare_sha256\": \"3819b84aa9ecb4335a5cf84c0be315ec1ee95a029fdab8b42e775f0b3abd9785\",\n  \"new_prepare_sha256\": \"a45316f4671be1c339f49755ddaa82414380b4b5ddcf5b78b4b2156324bcf756\",\n  \"payload_files\": 15,\n  \"other_payload_files_unchanged\": true,\n  \"source_digest\": \"3a0111b6ace1573e497d1b6ecff64798ef8339ea3392c027fdd0a816d91aa9b8\",\n  \"platform_writes\": 0,\n  \"notebook_sha256\": \"de5b881652019984ba6d6e26dfbc9fea03294341c0bd2a08945097945739467c\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/anaconda3/envs/ml/bin/python",
+        "/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_batch/rebuild_dependency_minfix.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"output\": \"/private/tmp/biohub-cpu-offline-20260923/experiments/BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01/prepare_batch/dependency_minfix\",\n  \"old_prepare_sha256\": \"3819b84aa9ecb4335a5cf84c0be315ec1ee95a029fdab8b42e775f0b3abd9785\",\n  \"new_prepare_sha256\": \"a45316f4671be1c339f49755ddaa82414380b4b5ddcf5b78b4b2156324bcf756\",\n  \"payload_files\": 15,\n  \"other_payload_files_unchanged\": true,\n  \"source_digest\": \"3a0111b6ace1573e497d1b6ecff64798ef8339ea3392c027fdd0a816d91aa9b8\",\n  \"platform_writes\": 0,\n  \"notebook_sha256\": \"de5b881652019984ba6d6e26dfbc9fea03294341c0bd2a08945097945739467c\"\n}\n",
+      "stderr": ""
+    }
+  ],
+  "old_notebook_sha256": "0f8ea989ae165ea1f5b1a0079faa6ae0d4484094f743de8677a8372bd7e83f34",
+  "old_prepare_sha256": "3819b84aa9ecb4335a5cf84c0be315ec1ee95a029fdab8b42e775f0b3abd9785",
+  "new_prepare_sha256": "a45316f4671be1c339f49755ddaa82414380b4b5ddcf5b78b4b2156324bcf756",
+  "new_notebook_sha256": "de5b881652019984ba6d6e26dfbc9fea03294341c0bd2a08945097945739467c",
+  "source_digest": "3a0111b6ace1573e497d1b6ecff64798ef8339ea3392c027fdd0a816d91aa9b8",
+  "payload_files_verified": 15,
+  "unchanged_payload_files": 14,
+  "changed_payload_files": [
+    "prepare_bundle.py"
+  ],
+  "files": {
+    "prepare_bundle.py": {
+      "bytes": 5025,
+      "sha256": "a45316f4671be1c339f49755ddaa82414380b4b5ddcf5b78b4b2156324bcf756",
+      "syntax": "PASS"
+    },
+    "convert_bundle.py": {
+      "bytes": 9189,
+      "sha256": "43b24eac76e9af733221e872be35bc731b9c636fd944cc043280fc9c87155ff3",
+      "syntax": "PASS"
+    },
+    "install_offline.py": {
+      "bytes": 1086,
+      "sha256": "97e81e711ca199ebb656e9223a583fc7a6cc3e9d36276d98f4e3d9fc09be99ad",
+      "syntax": "PASS"
+    },
+    "chain.py": {
+      "bytes": 10007,
+      "sha256": "df1b2c6af55ceb5ab0698ffc0e8879afcaf1fce0393c92b7b5fa8722cec5c591",
+      "syntax": "PASS"
+    },
+    "diagnostic_validate.py": {
+      "bytes": 2706,
+      "sha256": "3ddd63af9163897b840a81a8ff77560d4fb0e170b309b9a72b76b5e8d21f1cf1",
+      "syntax": "PASS"
+    },
+    "trace_runtime.py": {
+      "bytes": 3331,
+      "sha256": "abeb6cdc13fc558c81e4afa4451d876b8f5a87da38f5d03c9f3398d87b8857c7",
+      "syntax": "PASS"
+    },
+    "source_hashes.json": {
+      "bytes": 562,
+      "sha256": "30dc1139566780d88a3da5be45da938df0b7ef93373f9e5b4e30a31f633fdaa8",
+      "syntax": "PASS"
+    },
+    "dependency_specs.json": {
+      "bytes": 750,
+      "sha256": "7dc29b6e4b0a5c7a11165ff7dfe8a6f5ddb962a6e1d08b4b5e548692b080c540",
+      "syntax": "PASS"
+    },
+    "source/config_1.py": {
+      "bytes": 3259,
+      "sha256": "9662daf08240b4a6b350bae3454947ee825419d8db67ddbb667147b036075293",
+      "syntax": "PASS"
+    },
+    "source/config_2.py": {
+      "bytes": 1329,
+      "sha256": "b42b9653cb0b931d6cba3a5218e1799e78fd997c21f0dcf317514cf2838d0bea",
+      "syntax": "PASS"
+    },
+    "source/config_3.py": {
+      "bytes": 13642,
+      "sha256": "77fdadffbd02c87e8f686e55944b6741312be552f34c8dc615e6391a1959a2dc",
+      "syntax": "PASS"
+    },
+    "source/official_reader.py": {
+      "bytes": 1116,
+      "sha256": "c0fe1868d4550235c4673d4a3fc5e2d6ab0402f3cd0bac73eec8d1348eb9690d",
+      "syntax": "PASS"
+    },
+    "source/patch_support.py": {
+      "bytes": 2819,
+      "sha256": "c74501d67c8d6cb93ff1b81143fedfdee600ad0e02b9382c53da3025d062c403",
+      "syntax": "PASS"
+    },
+    "source/postprocess.py": {
+      "bytes": 91518,
+      "sha256": "d25d3b410279dbd296852724747d39545c8a356d2180f9d32b607beaa9e633e3",
+      "syntax": "PASS"
+    },
+    "source/predict_unet_transformer.py": {
+      "bytes": 52035,
+      "sha256": "f4a9ad4efca54454c4cb8f39e3a37c200dd12fdba37293e2a2b7bb531d4bdef6",
+      "syntax": "PASS"
+    }
+  },
+  "bootstrap_and_other_cells_unchanged": true,
+  "metadata_unchanged": true,
+  "rebuild_idempotence": {
+    "preparation_batch.ipynb": "de5b881652019984ba6d6e26dfbc9fea03294341c0bd2a08945097945739467c",
+    "kernel-metadata.json": "2ad1431d05fc5fc1d3f943398a4f9c3ad0ed2376147efb794db929642446606e",
+    "rebuild_receipt.json": "318854abcc6d2322afa10549368b4b5a73b82f1e1606923d6b1e439b07b42f60"
+  },
+  "preexisting_experiment_files_byte_unchanged": 75,
+  "static_fix_checks": "PASS: overrides, base package pins, download before full dry-run before install, no install --no-deps",
+  "full_dependency_resolution": "NOT_RUN / NOT_VERIFIED",
+  "ABI_image_read_IR_offline_inference": "NOT_VERIFIED",
+  "new_kaggle_requests": 0,
+  "inherited_request_identity": "Historical TASK/request_id retained as code only; future authorized dispatch must freeze a new batch identity and intent.",
+  "prior_ERROR_and_NEEDS_HUMAN_REVIEW": "PRESERVED",
+  "independent_validator_note": "Initial temporary-directory containment assertion encountered macOS /var -> /private/var alias; resolved the temporary root before containment comparison, then all checks passed. No builder, payload, source guard or model change."
+}
