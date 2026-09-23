@@ -1,21 +1,178 @@
 {
-  "task": "BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01",
-  "status": "BLOCKED_PREPARATION_SESSION_CONNECTION",
+  "task": "BIOHUB_CPU_BATCH_PREP_CONTINUE_20260923_V01",
+  "status": "BLOCKED_PREPARATION_DEPENDENCY_CONFLICT",
   "classification": "MEASURED",
-  "observed_utc": "2026-09-23T08:18:38.544Z",
+  "observed_utc": "2026-09-23T08:57:40.319095+00:00",
+  "previous_attempt": {
+    "task": "BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01",
+    "status": "BLOCKED_PREPARATION_SESSION_CONNECTION",
+    "classification": "MEASURED",
+    "observed_utc": "2026-09-23T08:18:38.544Z",
+    "preparation": {
+      "session_request": "ACCEPTED_INTERACTIVE_EVENT",
+      "code_request": "QUEUED_EXECUTION_NOT_OBSERVED",
+      "offline_install": "NOT_RUN",
+      "conversion": "NOT_OBSERVED",
+      "IR_and_wheels_output": "NOT_CREATED_OR_VERIFIED",
+      "new_version": null,
+      "new_sv": null,
+      "last_preserved_version": 1,
+      "last_preserved_sv": 352060904,
+      "notebook": "sailorren/biohub-cpu-small-probe-20260923",
+      "kernel": 135480603,
+      "session_released": true
+    },
+    "offline_chain": {
+      "notebook_created": false,
+      "save_run_dispatched": false,
+      "reference": "NOT_RUN",
+      "candidate": "NOT_RUN",
+      "module_coverage": {},
+      "conditional_modules": "NOT_RUN_NOT_NOT_TRIGGERED",
+      "numeric": "NOT_MEASURED",
+      "graph_difference": "NOT_MEASURED",
+      "csv_structure": "NOT_RUN",
+      "wall_seconds": null,
+      "peak_rss": null
+    },
+    "direct_errors": [
+      "Connection lost, reconnecting in 0 seconds.",
+      "Connection lost, reconnecting in 24 seconds."
+    ],
+    "observed_state_conflict": [
+      "Editor: Draft Session Starting",
+      "Active Events: Interactive Session Running: 10 minutes"
+    ],
+    "minimal_action": "one page refresh reconnecting same session; no repeated execution request; then one Stop Session on this exact event",
+    "budget": {
+      "task": "BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01",
+      "utc": "2026-09-23T08:08:48.856653+00:00",
+      "preparation_cpu_session": {
+        "limit": 1,
+        "dispatched": 1,
+        "intent": "CPU-PREP-01",
+        "notebook": "sailorren/biohub-cpu-small-probe-20260923",
+        "kernel": 135480603,
+        "prior_version": 1,
+        "prior_sv": 352060904,
+        "settings": {
+          "accelerator": "None",
+          "internet": true,
+          "primary_version": 10
+        },
+        "dispatch_utc": "2026-09-23T08:09:07.035613+00:00",
+        "observed": "Draft Session Starting",
+        "same_session_readonly_reconnect_reload": 1,
+        "status": "RELEASED_AFTER_CONNECTION_BLOCK",
+        "released_utc": "2026-09-23T08:18:38.544Z",
+        "actual_code_execution": "NOT_OBSERVED",
+        "execution_request_dispatched": 1,
+        "retry": 0,
+        "ui_duration": "10 minutes",
+        "output_directory": "cpu_bundle NOT_OBSERVED"
+      },
+      "output_quick_save": {
+        "limit": 1,
+        "dispatched": 0
+      },
+      "offline_notebook": {
+        "limit": 1,
+        "created": 0
+      },
+      "offline_save_run": {
+        "limit": 1,
+        "dispatched": 0
+      },
+      "minimal_repair": {
+        "limit": 1,
+        "used": 0
+      },
+      "gpu": 0,
+      "formal_submission": 0
+    },
+    "limitations": [
+      "No deployment version was saved or mounted.",
+      "No real short-chain CPU result was measured.",
+      "Local source/AST checks do not establish runtime correctness.",
+      "Previous NEEDS_HUMAN_REVIEW remains.",
+      "No full CPU B, GPU equivalence, hidden set timing or formal score evidence."
+    ],
+    "next_minimum_question": "Resolve the editor-to-CPU-session connection; a new preparation session requires renewed authorization because the one allowed request is consumed."
+  },
   "preparation": {
-    "session_request": "ACCEPTED_INTERACTIVE_EVENT",
-    "code_request": "QUEUED_EXECUTION_NOT_OBSERVED",
-    "offline_install": "NOT_RUN",
-    "conversion": "NOT_OBSERVED",
-    "IR_and_wheels_output": "NOT_CREATED_OR_VERIFIED",
-    "new_version": null,
-    "new_sv": null,
-    "last_preserved_version": 1,
-    "last_preserved_sv": 352060904,
-    "notebook": "sailorren/biohub-cpu-small-probe-20260923",
+    "utc": "2026-09-23T08:57:40.319095+00:00",
     "kernel": 135480603,
-    "session_released": true
+    "version": 2,
+    "sv": 352083775,
+    "url": "https://www.kaggle.com/code/sailorren/biohub-cpu-small-probe-20260923?scriptVersionId=352083775",
+    "status": "KernelWorkerStatus.ERROR",
+    "ui_runtime": "23s",
+    "source_readback": "current SDK source equals submitted two code cells; UI exact V2/SV binding",
+    "code_cells_equal": true,
+    "metadata_readback": {
+      "id": "sailorren/biohub-cpu-small-probe-20260923",
+      "id_no": 135480603,
+      "title": "biohub-cpu-small-probe-20260923",
+      "code_file": "biohub-cpu-small-probe-20260923.ipynb",
+      "language": "python",
+      "kernel_type": "notebook",
+      "is_private": true,
+      "enable_gpu": false,
+      "enable_tpu": false,
+      "enable_internet": true,
+      "keywords": [],
+      "dataset_sources": [
+        "pilkwang/biohub-tracking-support-pack-50ep-v1"
+      ],
+      "kernel_sources": [],
+      "competition_sources": [
+        "biohub-cell-tracking-during-development"
+      ],
+      "model_sources": [],
+      "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+      "machine_shape": "None"
+    },
+    "primary_version_requested": 10,
+    "primary_version_UI_readback": "NOT_OBSERVED; CLI metadata omits version suffix",
+    "output_evidence": "exact SV Output shows cpu_bundle error/start receipts; downloaded receipt task/source digest matches current request",
+    "deployment_manifest": "NOT_CREATED",
+    "IR": "NOT_CREATED",
+    "weights_hash": "NOT_RUN",
+    "preparation_program_seconds": 6.144388921999962,
+    "exact_version_pull_error": "403 Client Error: Forbidden for url: https://api.kaggle.com/v1/kernels.KernelsApiService/GetKernel",
+    "raw_log_sha256": "af348667dc62e8647ee541164b1da788e32a37a138eb6bacad9f761ab085bdbe",
+    "downloaded_receipts": {
+      "submitted_source_hashes.json": {
+        "bytes": 1407,
+        "sha256": "3c6edaa387cd6b67387df8ac484fbf49f06349eb781ed4ddf08af9ff988958a4"
+      },
+      "preparation_error.json": {
+        "bytes": 3179,
+        "sha256": "8b790de549b956ae0fec11e90d9bc37a36a333aa840a6abf5d4cbf51c0d15779"
+      },
+      "preparation_started.json": {
+        "bytes": 194,
+        "sha256": "f9ccf0de60e52f32ea3626f4c2e8a901a275e0f64574d7bdda210881eb2ab624"
+      },
+      "error_log_excerpt.txt": {
+        "bytes": 1652,
+        "sha256": "8050eed1d5aae7d1603b8f86b6a8589b998da7c32544b20782e618b5e639be0d"
+      },
+      "batch_parent_error.json": {
+        "bytes": 451,
+        "sha256": "1e773d57afd87063cc9caf4aabf9559769c86fe624287f1e9815efe138b746c5"
+      },
+      "batch_started.json": {
+        "bytes": 240,
+        "sha256": "7c36c688ee17d8d68835f023435dcfa859a2babbc7b1a3a07a683e78a96ec1fe"
+      },
+      "base_image_packages.json": {
+        "bytes": 22471,
+        "sha256": "bf03280fc83f1bdf5e7a01f1fc1d2b2b95a634b002ae853c10fb3e4b310f3eef"
+      }
+    },
+    "cancel_requested": false,
+    "new_interactive_session": false
   },
   "offline_chain": {
     "notebook_created": false,
@@ -28,17 +185,15 @@
     "graph_difference": "NOT_MEASURED",
     "csv_structure": "NOT_RUN",
     "wall_seconds": null,
-    "peak_rss": null
+    "peak_rss": null,
+    "version": null,
+    "sv": null
   },
   "direct_errors": [
-    "Connection lost, reconnecting in 0 seconds.",
-    "Connection lost, reconnecting in 24 seconds."
+    "imagecodecs 2026.6.26 depends on numpy>=2.1",
+    "The user requested (constraint) numpy==2.0.2",
+    "ERROR: ResolutionImpossible"
   ],
-  "observed_state_conflict": [
-    "Editor: Draft Session Starting",
-    "Active Events: Interactive Session Running: 10 minutes"
-  ],
-  "minimal_action": "one page refresh reconnecting same session; no repeated execution request; then one Stop Session on this exact event",
   "budget": {
     "task": "BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01",
     "utc": "2026-09-23T08:08:48.856653+00:00",
@@ -68,7 +223,8 @@
     },
     "output_quick_save": {
       "limit": 1,
-      "dispatched": 0
+      "dispatched": 0,
+      "status": "DISABLED_BY_BATCH_CONTINUE"
     },
     "offline_notebook": {
       "limit": 1,
@@ -83,14 +239,64 @@
       "used": 0
     },
     "gpu": 0,
-    "formal_submission": 0
+    "formal_submission": 0,
+    "batch_continue": {
+      "task": "BIOHUB_CPU_BATCH_PREP_CONTINUE_20260923_V01",
+      "preparation": {
+        "request_id": "CPU-BATCH-PREP-01",
+        "limit": 1,
+        "dispatched": 1,
+        "state": "FAILED_DEPENDENCY_RESOLUTION",
+        "utc": "2026-09-23T08:48:41.219099+00:00",
+        "source_sha256": "0f8ea989ae165ea1f5b1a0079faa6ae0d4484094f743de8677a8372bd7e83f34",
+        "metadata": {
+          "id": "sailorren/biohub-cpu-small-probe-20260923",
+          "id_no": 135480603,
+          "title": "biohub-cpu-small-probe-20260923",
+          "code_file": "preparation_batch.ipynb",
+          "language": "python",
+          "kernel_type": "notebook",
+          "is_private": true,
+          "enable_gpu": false,
+          "enable_tpu": false,
+          "enable_internet": true,
+          "keywords": [],
+          "dataset_sources": [
+            "pilkwang/biohub-tracking-support-pack-50ep-v1/10"
+          ],
+          "kernel_sources": [],
+          "competition_sources": [
+            "biohub-cell-tracking-during-development"
+          ],
+          "model_sources": [],
+          "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+          "machine_shape": "None",
+          "docker_image_pinning_type": "original"
+        },
+        "entry": "official CLI kernels push",
+        "hard_timeout_seconds": 1800,
+        "dispatch_utc": "2026-09-23T08:52:29.424374+00:00",
+        "version": 2,
+        "sv": 352083775,
+        "readback_utc": "2026-09-23T08:57:40.319095+00:00",
+        "worker_status": "ERROR",
+        "retry": 0
+      },
+      "offline": {
+        "request_id": "CPU-OFFLINE-CHAIN-01",
+        "limit": 1,
+        "dispatched": 0,
+        "state": "NOT_DISPATCHED_PREPARATION_FAILED"
+      },
+      "new_interactive_sessions": 0,
+      "new_quick_saves": 0
+    }
   },
   "limitations": [
-    "No deployment version was saved or mounted.",
-    "No real short-chain CPU result was measured.",
-    "Local source/AST checks do not establish runtime correctness.",
-    "Previous NEEDS_HUMAN_REVIEW remains.",
-    "No full CPU B, GPU equivalence, hidden set timing or formal score evidence."
+    "Deployment bundle not completed; no IR or offline manifest.",
+    "No model inference, weights verification, short-chain measurements or CSV validation this batch.",
+    "No full CPU B, GPU equivalence, hidden timing or score claim.",
+    "NEEDS_HUMAN_REVIEW retained."
   ],
-  "next_minimum_question": "Resolve the editor-to-CPU-session connection; a new preparation session requires renewed authorization because the one allowed request is consumed."
+  "next_minimum_question": "Resolve the pinned NumPy/imagecodecs dependency conflict in a future explicitly authorized run; no retry in this batch."
 }

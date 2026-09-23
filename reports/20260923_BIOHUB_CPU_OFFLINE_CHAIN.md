@@ -1,4 +1,6 @@
-# CPU 离线调用链：准备会话连接阻断
+# CPU 离线调用链：批量准备依赖冲突
+
+最新续接结果见文末：V2/SV352083775 的 CPU 批量 worker 已实际执行，依赖解析失败，未进入离线链。以下旧连接失败证据保留。
 
 任务 `BIOHUB_CPU_OFFLINE_CHAIN_20260923_V01`。本轮未取得离线部署或短片段推理结果，状态为 **BLOCKED_PREPARATION_SESSION_CONNECTION**。上轮 `NEEDS_HUMAN_REVIEW` 保留。
 
@@ -52,3 +54,30 @@
 本轮只交付阻断证据和待执行适配代码，不宣称短片段CPU调用链通过、完整CPU B、GPU等价、隐藏集时限或正式分数已验证。没有 IR/wheels 的新 Kaggle 部署位置；唯一仍可引用的历史保存版本是 V1/SV352060904，其 Output 不包含本轮部署包。
 
 最终交付按独立分支固定 commit 回读小文件，实际 commit、remote HEAD、字节一致数及 worktree 状态由交付回读结果报告。原视频、权重、张量、IR、wheels、CSV和凭据均未加入Git。
+
+
+## 2026-09-23 批量准备续接：实际执行后停止
+
+任务 `BIOHUB_CPU_BATCH_PREP_CONTINUE_20260923_V01`。原文先以 `628d861422f1336f81f8e794f2ce6ca8b50643dc` 发布并逐字节回读；启动源码和唯一意图随后同步。空目录展开15个代码／清单文件，哈希与语法检查通过，未在Mac执行模型。
+
+16:52（上海时间）通过官方CLI仅派发一次 `CPU-BATCH-PREP-01`，实际准备版本为 [V2 / SV352083775](https://www.kaggle.com/code/sailorren/biohub-cpu-small-probe-20260923?scriptVersionId=352083775)，Kernel135480603。CLI终态 `KernelWorkerStatus.ERROR`，页面运行时间23秒；准备子程序实际记录6.144秒，不能当作模型算时。第一单元已输出任务ID和源码摘要的STARTED，脚本成功从空目录展开；本轮已补齐批量worker真实启动证据，旧交互连接错误不是本次停点。
+
+直接错误来自离线support wheels依赖解析：
+
+```text
+imagecodecs 2026.6.26 depends on numpy>=2.1
+The user requested (constraint) numpy==2.0.2
+ERROR: ResolutionImpossible
+```
+
+这里“user requested”是pip对代码约束文件的称呼，不是用户要求固定NumPy2.0.2。脚本为保留镜像NumPy而施加该约束，与固定support wheel要求冲突。没有证据归因为CPU配额、模型不兼容或浏览器断连。父进程正确非零退出，未打印成功。失败后未修复重跑、未创建离线Notebook。
+
+精确V2 Output已有cpu_bundle启动／错误回执及代码；已下载小JSON和错误摘录、记录字节数与SHA256。未形成IR、wheels部署包、requirements.lock或bundle_manifest，**部署Output验收不通过**，不能把错误回执保存成功当作部署成功。官方CLI精确版本pull返回403；当前源码pull成功且两个代码单元逐一等于提交源码，UI同时核验V2/SV身份。当前回读元数据Private、GPU/TPU false、Internet true、machine_shape None，镜像digest为 `dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9`。请求固定Primary V10；CLI回读省略版本后缀，UI精确版本字段未观察到，不能夸称已独立回读该字段。
+
+模型权重校验、转换、IR落盘重载、PyPI补充阶段均NOT_RUN。参考和候选短片段链、primary/secondary/TTA/关联融合/DeepCenter/gate/ILP/救援/L030P全部NOT_RUN；条件模块不是NOT_TRIGGERED。未生成诊断CSV，数值／决策／图差异、片段耗时与峰值RSS均NOT_MEASURED。离线Notebook Version/SV均无，未进行断网安装。
+
+本批准备SaveRun 1/1、离线SaveRun 0/1、新Notebook0/1、交互会话0、QuickSave0、工程修复0/1。累计保留旧失败交互会话1次，加本次CPU准备批作业1次；其他旧消耗不清零。GPU、Colab、正式提交、Dataset、共享修改均0。作业已ERROR自然结束，没有执行取消其他作业，也没有后台监控。
+
+可复用产物为自包含启动Notebook、15文件源码清单、同版本错误回执和基础镜像包清单；不能复用不存在的IR。后续最小工作是协调NumPy与imagecodecs的固定依赖组合，再由用户决定是否授权新的准备运行；本轮不追加运行。`NEEDS_HUMAN_REVIEW`保留，不宣称短片段链通过。
+
+本次小文件交付沿用研究分支，最终固定commit和逐字节远端回读数量在交付回复中列明。

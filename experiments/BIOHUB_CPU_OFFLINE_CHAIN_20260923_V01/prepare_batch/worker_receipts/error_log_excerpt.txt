@@ -1,0 +1,16 @@
+BATCH_STARTED {"task": "BIOHUB_CPU_BATCH_PREP_CONTINUE_20260923_V01", "request_id": "CPU-BATCH-PREP-01", "status": "STARTED", "utc": "2026-09-23T08:52:46Z", "source_digest": "ba66910c313b00755cf5328a8babca6c9e5b5a72195b1a545888ac44eccbf89d"}
+START_STAGE_COMMAND ['/usr/bin/python3', '-m', 'pip', 'install']
+The conflict is caused by:
+    tracksdata 0.1.0rc6.dev3+g980c2d30a depends on numpy>2
+    zarr 3.2.1 depends on numpy>=2
+    pyscipopt 6.2.1 depends on numpy>=1.16.0
+    geff 1.2.0.1.1 depends on numpy>=1.24
+    geff 1.2.0.1.1 depends on numpy>=1.26; python_version >= "3.12"
+    geff-spec 1.1.1 depends on numpy>=1.24
+    geff-spec 1.1.1 depends on numpy>=1.26; python_version >= "3.12"
+    blosc2 4.7.0 depends on numpy>=1.26
+    imagecodecs 2026.6.26 depends on numpy>=2.1
+    The user requested (constraint) numpy==2.0.2
+ ERROR: Cannot install blosc2==4.7.0, geff-spec==1.1.1, geff==1.2.0.1.1, imagecodecs==2026.6.26, pyscipopt==6.2.1, tracksdata==0.1.0rc6.dev3+g980c2d30a and zarr==3.2.1 because these package versions have conflicting dependencies.
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+BATCH_FAILED {"task": "BIOHUB_CPU_BATCH_PREP_CONTINUE_20260923_V01", "status": "FAILED", "error_type": "RuntimeError", "error": "Preparation child exited 1", "traceback": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_16/3396820621.py\", line 5, in <cell line: 0>\n    if rc:raise RuntimeError(f'Preparation child exited {rc}')\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Preparation child exited 1\n"}

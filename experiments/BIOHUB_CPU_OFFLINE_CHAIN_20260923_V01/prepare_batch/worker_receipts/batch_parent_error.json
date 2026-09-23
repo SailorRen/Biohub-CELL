@@ -1,0 +1,7 @@
+{
+  "task": "BIOHUB_CPU_BATCH_PREP_CONTINUE_20260923_V01",
+  "status": "FAILED",
+  "error_type": "RuntimeError",
+  "error": "Preparation child exited 1",
+  "traceback": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_16/3396820621.py\", line 5, in <cell line: 0>\n    if rc:raise RuntimeError(f'Preparation child exited {rc}')\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Preparation child exited 1\n"
+}

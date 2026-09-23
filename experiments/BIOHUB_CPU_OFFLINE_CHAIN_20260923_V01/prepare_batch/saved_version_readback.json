@@ -1,0 +1,75 @@
+{
+  "utc": "2026-09-23T08:57:40.319095+00:00",
+  "kernel": 135480603,
+  "version": 2,
+  "sv": 352083775,
+  "url": "https://www.kaggle.com/code/sailorren/biohub-cpu-small-probe-20260923?scriptVersionId=352083775",
+  "status": "KernelWorkerStatus.ERROR",
+  "ui_runtime": "23s",
+  "source_readback": "current SDK source equals submitted two code cells; UI exact V2/SV binding",
+  "code_cells_equal": true,
+  "metadata_readback": {
+    "id": "sailorren/biohub-cpu-small-probe-20260923",
+    "id_no": 135480603,
+    "title": "biohub-cpu-small-probe-20260923",
+    "code_file": "biohub-cpu-small-probe-20260923.ipynb",
+    "language": "python",
+    "kernel_type": "notebook",
+    "is_private": true,
+    "enable_gpu": false,
+    "enable_tpu": false,
+    "enable_internet": true,
+    "keywords": [],
+    "dataset_sources": [
+      "pilkwang/biohub-tracking-support-pack-50ep-v1"
+    ],
+    "kernel_sources": [],
+    "competition_sources": [
+      "biohub-cell-tracking-during-development"
+    ],
+    "model_sources": [],
+    "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+    "machine_shape": "None"
+  },
+  "primary_version_requested": 10,
+  "primary_version_UI_readback": "NOT_OBSERVED; CLI metadata omits version suffix",
+  "output_evidence": "exact SV Output shows cpu_bundle error/start receipts; downloaded receipt task/source digest matches current request",
+  "deployment_manifest": "NOT_CREATED",
+  "IR": "NOT_CREATED",
+  "weights_hash": "NOT_RUN",
+  "preparation_program_seconds": 6.144388921999962,
+  "exact_version_pull_error": "403 Client Error: Forbidden for url: https://api.kaggle.com/v1/kernels.KernelsApiService/GetKernel",
+  "raw_log_sha256": "af348667dc62e8647ee541164b1da788e32a37a138eb6bacad9f761ab085bdbe",
+  "downloaded_receipts": {
+    "submitted_source_hashes.json": {
+      "bytes": 1407,
+      "sha256": "3c6edaa387cd6b67387df8ac484fbf49f06349eb781ed4ddf08af9ff988958a4"
+    },
+    "preparation_error.json": {
+      "bytes": 3179,
+      "sha256": "8b790de549b956ae0fec11e90d9bc37a36a333aa840a6abf5d4cbf51c0d15779"
+    },
+    "preparation_started.json": {
+      "bytes": 194,
+      "sha256": "f9ccf0de60e52f32ea3626f4c2e8a901a275e0f64574d7bdda210881eb2ab624"
+    },
+    "error_log_excerpt.txt": {
+      "bytes": 1652,
+      "sha256": "8050eed1d5aae7d1603b8f86b6a8589b998da7c32544b20782e618b5e639be0d"
+    },
+    "batch_parent_error.json": {
+      "bytes": 451,
+      "sha256": "1e773d57afd87063cc9caf4aabf9559769c86fe624287f1e9815efe138b746c5"
+    },
+    "batch_started.json": {
+      "bytes": 240,
+      "sha256": "7c36c688ee17d8d68835f023435dcfa859a2babbc7b1a3a07a683e78a96ec1fe"
+    },
+    "base_image_packages.json": {
+      "bytes": 22471,
+      "sha256": "bf03280fc83f1bdf5e7a01f1fc1d2b2b95a634b002ae853c10fb3e4b310f3eef"
+    }
+  },
+  "cancel_requested": false,
+  "new_interactive_session": false
+}
