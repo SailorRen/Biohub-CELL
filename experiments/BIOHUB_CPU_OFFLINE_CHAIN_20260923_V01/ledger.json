@@ -27,7 +27,8 @@
   },
   "output_quick_save": {
     "limit": 1,
-    "dispatched": 0
+    "dispatched": 0,
+    "status": "DISABLED_BY_BATCH_CONTINUE"
   },
   "offline_notebook": {
     "limit": 1,
@@ -42,5 +43,49 @@
     "used": 0
   },
   "gpu": 0,
-  "formal_submission": 0
+  "formal_submission": 0,
+  "batch_continue": {
+    "task": "BIOHUB_CPU_BATCH_PREP_CONTINUE_20260923_V01",
+    "preparation": {
+      "request_id": "CPU-BATCH-PREP-01",
+      "limit": 1,
+      "dispatched": 0,
+      "state": "INTENT_PERSISTED",
+      "utc": "2026-09-23T08:48:41.219099+00:00",
+      "source_sha256": "0f8ea989ae165ea1f5b1a0079faa6ae0d4484094f743de8677a8372bd7e83f34",
+      "metadata": {
+        "id": "sailorren/biohub-cpu-small-probe-20260923",
+        "id_no": 135480603,
+        "title": "biohub-cpu-small-probe-20260923",
+        "code_file": "preparation_batch.ipynb",
+        "language": "python",
+        "kernel_type": "notebook",
+        "is_private": true,
+        "enable_gpu": false,
+        "enable_tpu": false,
+        "enable_internet": true,
+        "keywords": [],
+        "dataset_sources": [
+          "pilkwang/biohub-tracking-support-pack-50ep-v1/10"
+        ],
+        "kernel_sources": [],
+        "competition_sources": [
+          "biohub-cell-tracking-during-development"
+        ],
+        "model_sources": [],
+        "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+        "machine_shape": "None",
+        "docker_image_pinning_type": "original"
+      },
+      "entry": "official CLI kernels push",
+      "hard_timeout_seconds": 1800
+    },
+    "offline": {
+      "request_id": "CPU-OFFLINE-CHAIN-01",
+      "limit": 1,
+      "dispatched": 0
+    },
+    "new_interactive_sessions": 0,
+    "new_quick_saves": 0
+  }
 }

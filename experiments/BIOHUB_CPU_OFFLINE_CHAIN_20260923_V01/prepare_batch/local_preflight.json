@@ -1,0 +1,49 @@
+{
+  "status": "EMPTY_DIRECTORY_EXPANSION_PASS",
+  "files": 15,
+  "source_digest": "ba66910c313b00755cf5328a8babca6c9e5b5a72195b1a545888ac44eccbf89d",
+  "hashes": {
+    "prepare_bundle.py": "3819b84aa9ecb4335a5cf84c0be315ec1ee95a029fdab8b42e775f0b3abd9785",
+    "convert_bundle.py": "43b24eac76e9af733221e872be35bc731b9c636fd944cc043280fc9c87155ff3",
+    "install_offline.py": "97e81e711ca199ebb656e9223a583fc7a6cc3e9d36276d98f4e3d9fc09be99ad",
+    "chain.py": "df1b2c6af55ceb5ab0698ffc0e8879afcaf1fce0393c92b7b5fa8722cec5c591",
+    "diagnostic_validate.py": "3ddd63af9163897b840a81a8ff77560d4fb0e170b309b9a72b76b5e8d21f1cf1",
+    "trace_runtime.py": "abeb6cdc13fc558c81e4afa4451d876b8f5a87da38f5d03c9f3398d87b8857c7",
+    "source_hashes.json": "30dc1139566780d88a3da5be45da938df0b7ef93373f9e5b4e30a31f633fdaa8",
+    "dependency_specs.json": "7dc29b6e4b0a5c7a11165ff7dfe8a6f5ddb962a6e1d08b4b5e548692b080c540",
+    "source/config_1.py": "9662daf08240b4a6b350bae3454947ee825419d8db67ddbb667147b036075293",
+    "source/config_2.py": "b42b9653cb0b931d6cba3a5218e1799e78fd997c21f0dcf317514cf2838d0bea",
+    "source/config_3.py": "77fdadffbd02c87e8f686e55944b6741312be552f34c8dc615e6391a1959a2dc",
+    "source/official_reader.py": "c0fe1868d4550235c4673d4a3fc5e2d6ab0402f3cd0bac73eec8d1348eb9690d",
+    "source/patch_support.py": "c74501d67c8d6cb93ff1b81143fedfdee600ad0e02b9382c53da3025d062c403",
+    "source/postprocess.py": "d25d3b410279dbd296852724747d39545c8a356d2180f9d32b607beaa9e633e3",
+    "source/predict_unet_transformer.py": "f4a9ad4efca54454c4cb8f39e3a37c200dd12fdba37293e2a2b7bb531d4bdef6"
+  },
+  "no_model_import_or_execution": true,
+  "entry": "prepare_bundle.py",
+  "original_production_files_modified": false,
+  "metadata": {
+    "id": "sailorren/biohub-cpu-small-probe-20260923",
+    "id_no": 135480603,
+    "title": "biohub-cpu-small-probe-20260923",
+    "code_file": "preparation_batch.ipynb",
+    "language": "python",
+    "kernel_type": "notebook",
+    "is_private": true,
+    "enable_gpu": false,
+    "enable_tpu": false,
+    "enable_internet": true,
+    "keywords": [],
+    "dataset_sources": [
+      "pilkwang/biohub-tracking-support-pack-50ep-v1/10"
+    ],
+    "kernel_sources": [],
+    "competition_sources": [
+      "biohub-cell-tracking-during-development"
+    ],
+    "model_sources": [],
+    "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+    "machine_shape": "None",
+    "docker_image_pinning_type": "original"
+  }
+}

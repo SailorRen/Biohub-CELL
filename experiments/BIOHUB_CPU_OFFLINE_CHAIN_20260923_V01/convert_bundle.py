@@ -2,7 +2,7 @@
 import ast, contextlib, hashlib, importlib.util, json, math, os, resource, subprocess, sys, time, traceback
 from pathlib import Path
 ROOT=Path('/kaggle/working/cpu_bundle'); ROOT.mkdir(exist_ok=True)
-START=time.monotonic(); DEADLINE=START+1800
+START=time.monotonic(); DEADLINE=float(os.environ['CPU_PREP_DEADLINE_EPOCH'])
 
 def receipt(stage, **data):
     data.update(stage=stage,utc=time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),elapsed_seconds=time.monotonic()-START,peak_rss_kib=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss)
@@ -17,7 +17,7 @@ def sha(p):
     return h.hexdigest()
 
 def guard():
-    if time.monotonic()>=DEADLINE:raise TimeoutError('45 minute conversion/testing budget exhausted')
+    if time.time()>=DEADLINE:raise TimeoutError('30 minute unified preparation budget exhausted')
 
 def select_defs(path,names,namespace):
     tree=ast.parse(path.read_text());nodes=[n for n in tree.body if isinstance(n,(ast.FunctionDef,ast.ClassDef)) and n.name in names]
@@ -39,6 +39,7 @@ def main():
         if backend is not None and hasattr(backend,'fp32_precision'):backend.fp32_precision='ieee'
     assert not torch.cuda.is_available(), 'CPU session required'
     support=Path('/kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1')
+    if not support.exists():support=Path('/kaggle/input/biohub-tracking-support-pack-50ep-v1')
     repo=support/'repo'; weights=support/'weights/unet_transformer/split_0/edge_predictor_best.pth'
     expected=json.loads((ROOT/'source_hashes.json').read_text())
     actual={n:sha(repo/n) for n in expected}; assert actual==expected, 'support source checksum mismatch'
@@ -53,7 +54,7 @@ def main():
     W=2;ds=(1,4,4)
     comp=next(p for p in [Path('/kaggle/input/competitions/biohub-cell-tracking-during-development'),Path('/kaggle/input/biohub-cell-tracking-during-development')] if p.exists())
     movies=sorted((comp/'test').glob('*.zarr'),key=lambda p:p.stem);assert movies
-    movie=movies[0];g=zarr.open_group(str(movie),mode='r'); arr=g['0'];attrs=dict(g.attrs);scale=ns['_parse_scale'](attrs);q=attrs['image_statistics']['quantiles'];ql=float(q['0.001']);qh=float(q['0.999']);shape=list(arr.shape);target=[-(-s//d) for s,d in zip(shape[1:],ds)];assert shape[0]>=W
+    movie=movies[0];g=zarr.open_group(str(movie),mode='r'); arr=g['0'];attrs=dict(g.attrs);scale=ns['_parse_scale'](attrs);q=attrs['image_statistics']['quantiles'];ql=float(q['0.001']);qh=float(q['0.999']);shape=list(arr.shape);target=[-(-s//d) for s,d in zip(shape[1:],ds)];assert shape[0]>=16
     assert movie.stem=='44b6_0113de3b'
     selected=[0]
     other=[]

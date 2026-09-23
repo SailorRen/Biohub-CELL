@@ -1,0 +1,23 @@
+--- previous/prepare_bundle.py
++++ batch/prepare_bundle.py
+@@ -2,15 +2,17 @@
+ import hashlib,importlib.metadata as md,json,os,shutil,subprocess,sys,time,traceback
+ from pathlib import Path
+ from urllib.parse import urlparse,unquote
+-ROOT=Path('/kaggle/working/cpu_bundle');START=time.monotonic()
++ROOT=Path('/kaggle/working/cpu_bundle');START=time.monotonic();DEADLINE=float(os.environ['CPU_PREP_DEADLINE_EPOCH'])
+ def sha(p):return hashlib.file_digest(open(p,'rb'),'sha256').hexdigest()
+ def record(stage,**kw):
+  d={'stage':stage,'utc':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'elapsed_seconds':time.monotonic()-START,**kw};(ROOT/(stage+'.json')).write_text(json.dumps(d,indent=2)+'\n');print('BUNDLE',json.dumps(d),flush=True)
+ def run(args):
+- p=subprocess.run(args,capture_output=True,text=True,timeout=max(1,1800-(time.monotonic()-START)));print(p.stdout[-10000:],p.stderr[-5000:],flush=True);p.check_returncode();return p
++ print("START_STAGE_COMMAND",args[:4],flush=True)
++ p=subprocess.run(args,capture_output=True,text=True,timeout=max(1,DEADLINE-time.time()));print(p.stdout[-10000:],p.stderr[-5000:],flush=True);p.check_returncode();return p
+ try:
+  assert not (ROOT/'preparation_started.json').exists(),'Duplicate preparation prohibited'
+- record('preparation_started',status='STARTED')
++ record('preparation_started',status='STARTED',task=os.environ['CPU_BATCH_TASK_ID'])
++ (ROOT/'base_image_packages.json').write_text(json.dumps({d.metadata['Name']:d.version for d in md.distributions()},indent=2)+'\n')
+  support=Path('/kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1')
+  if not support.exists():support=Path('/kaggle/input/biohub-tracking-support-pack-50ep-v1')
+  assert (support/'wheels').is_dir()
