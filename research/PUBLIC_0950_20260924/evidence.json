@@ -1,0 +1,168 @@
+{
+  "observed_date_shanghai": "2026-09-24",
+  "assembled_at": "2026-09-24T21:11:12.511590+08:00",
+  "classification": "OFFICIAL_FACT",
+  "notebooks": [
+    {
+      "slug": "anvithpothula/biohub-x138",
+      "version": 1,
+      "script_version_id": 351539814,
+      "public_score_observed": "0.953",
+      "url": "https://www.kaggle.com/code/anvithpothula/biohub-x138?scriptVersionId=351539814",
+      "source_sha256": "6b655e39bbfd2d3d6c762badea69847d3f00f5b548f385cb01b07ee2600fde6d",
+      "code_cells": 12,
+      "nonempty_code_cells": 12,
+      "coverage": "COMPLETE_SOURCE_ACQUIRED_TARGETED_SEMANTIC_REVIEW",
+      "metadata": {
+        "id": "anvithpothula/biohub-x138",
+        "id_no": 135218473,
+        "title": "biohub x138",
+        "code_file": "biohub-x138.ipynb",
+        "language": "python",
+        "kernel_type": "notebook",
+        "is_private": false,
+        "enable_gpu": true,
+        "enable_tpu": false,
+        "enable_internet": false,
+        "keywords": [
+          "gpu"
+        ],
+        "dataset_sources": [
+          "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+          "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+          "pilkwang/biohub-tracking-support-pack-50ep-v1",
+          "anvithpothula/biohub-v1284-head-s075"
+        ],
+        "kernel_sources": [],
+        "competition_sources": [
+          "biohub-cell-tracking-during-development"
+        ],
+        "model_sources": [],
+        "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+        "machine_shape": "NvidiaTeslaT4"
+      }
+    },
+    {
+      "slug": "kunaldesale2408/biohub-cell-tracking",
+      "version": 10,
+      "script_version_id": 352321925,
+      "public_score_observed": "0.953",
+      "url": "https://www.kaggle.com/code/kunaldesale2408/biohub-cell-tracking?scriptVersionId=352321925",
+      "source_sha256": "9cd5d1490dfdd434b21027c4e934478f9def530c6670a2a86f5480b03b5d696e",
+      "code_cells": 13,
+      "nonempty_code_cells": 12,
+      "coverage": "COMPLETE_SOURCE_ACQUIRED_TARGETED_SEMANTIC_REVIEW",
+      "metadata": {
+        "id": "kunaldesale2408/biohub-cell-tracking",
+        "id_no": 130667075,
+        "title": "Biohub Cell Tracking",
+        "code_file": "biohub-cell-tracking.ipynb",
+        "language": "python",
+        "kernel_type": "notebook",
+        "is_private": false,
+        "enable_gpu": true,
+        "enable_tpu": false,
+        "enable_internet": false,
+        "keywords": [
+          "gpu"
+        ],
+        "dataset_sources": [
+          "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+          "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+          "pilkwang/biohub-tracking-support-pack-50ep-v1",
+          "anvithpothula/biohub-v1284-head-s075"
+        ],
+        "kernel_sources": [],
+        "competition_sources": [
+          "biohub-cell-tracking-during-development"
+        ],
+        "model_sources": [],
+        "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+        "machine_shape": "NvidiaTeslaT4"
+      }
+    }
+  ],
+  "source_comparison": {
+    "method": "Python AST parse without execution; ignore empty cells and formatting",
+    "equal_nonempty_cells": 12,
+    "all_equal": true
+  },
+  "github_readme_only": [
+    {
+      "repo": "Caffeinated-Code/biohub-cell-tracking-learning",
+      "branch": "main",
+      "commit": "228584ed818c527f2493554a82baa6848b36891b",
+      "commit_time": "2026-09-23T23:46:42Z",
+      "readme_path": "README.md",
+      "readme_bytes": 4339,
+      "coverage": "README_ONLY",
+      "readme_sha256": "e0cea275c8d92a313f2a2796d4368194a31dbffb0fac74bccb159f79451bf583"
+    },
+    {
+      "repo": "JunhaoLiXD/Biohub_Cell_Tracking",
+      "branch": "main",
+      "commit": "b57ce34bd6153c271294863d43dee623dcd263a5",
+      "commit_time": "2026-09-23T15:06:33Z",
+      "readme_path": "README.md",
+      "readme_bytes": 4493,
+      "coverage": "README_ONLY",
+      "readme_sha256": "470f92af9f4c294302db99900c4ae3cc17949ad3b155d2e9cf1abab7183e10d4"
+    },
+    {
+      "repo": "alvaromendizabal/biohub-cell-tracking-during-development",
+      "branch": "main",
+      "commit": "0676d815383b63605b6d5afc9aa6f74002763219",
+      "commit_time": "2026-09-24T04:39:25Z",
+      "readme_path": "README.md",
+      "readme_bytes": 5260,
+      "coverage": "README_ONLY",
+      "readme_sha256": "79915efe2f82fb3697359981113a2a68e814a2959ebe816cbe2afe22e740c034"
+    },
+    {
+      "repo": "kito2718/kaggle_Biohub-Cell_Tracking_During_Development",
+      "branch": "main",
+      "commit": "71f274121b0362b3f893c6ff8d0018736d8dfe9d",
+      "commit_time": "2026-09-24T10:51:36Z",
+      "readme_path": "README.md",
+      "readme_bytes": 3206,
+      "coverage": "README_ONLY",
+      "readme_sha256": "80a70b609383e2707681e873e5dab125caa5b5483f1fd90abdd5df0c2a0eea9c"
+    },
+    {
+      "repo": "pathik1511/biohub-cell-tracking",
+      "branch": "master",
+      "commit": "4174da2fffcd8ea54f980e24f191fe2a4000afdf",
+      "commit_time": "2026-09-24T11:06:10Z",
+      "readme_path": "README.md",
+      "readme_bytes": 2784,
+      "coverage": "README_ONLY",
+      "readme_sha256": "20d1d64a46527d7eafc5a1c7653347a8753cfee0e32673123c7048ba5281aebb"
+    }
+  ],
+  "head": {
+    "url": "https://www.kaggle.com/datasets/anvithpothula/biohub-v1284-head-s075",
+    "version": 1,
+    "filename": "v1284_head.pt",
+    "display_size": "33.91 kB",
+    "license_display": "CC0: Public Domain",
+    "author_public_notice_relative": "10 hours ago",
+    "file_list_observed": true,
+    "weight_downloaded": false,
+    "weight_sha256": "NOT_VERIFIED"
+  },
+  "limits": [
+    "Not an independent model reproduction",
+    "Notebook full source acquired; not every embedded function semantically audited",
+    "Input exact versions and weight hashes still require reproduction preflight",
+    "No census of all 0.950 leaderboard entries",
+    "No exhaustive GitHub search; indexed search can miss repositories"
+  ],
+  "new_platform_operations": {
+    "notebook_create": 0,
+    "save": 0,
+    "run": 0,
+    "training": 0,
+    "submission": 0,
+    "sharing_change": 0
+  }
+}
