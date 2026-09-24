@@ -1,0 +1,65 @@
+{
+  "archived_at": "2026-09-24T21:15:52.769072+08:00",
+  "records": [
+    {
+      "origin": "https://www.kaggle.com/code/anvithpothula/biohub-x138?scriptVersionId=351539814",
+      "version": 1,
+      "sv": 351539814,
+      "public_score_observation_date": "2026-09-24",
+      "public_score_observed": "0.953",
+      "download": "Official Kaggle CLI, acquired during preceding research; original bytes preserved",
+      "files": [
+        {
+          "path": "research/PUBLIC_0950_20260924/sources/x138/biohub-x138.ipynb",
+          "bytes": 268025,
+          "sha256": "6b655e39bbfd2d3d6c762badea69847d3f00f5b548f385cb01b07ee2600fde6d"
+        },
+        {
+          "path": "research/PUBLIC_0950_20260924/sources/x138/kernel-metadata.json",
+          "bytes": 825,
+          "sha256": "a2e38a7e9cd7758871a8c2d6aa030232d2887656e9a4676f174fb1dcc93e1fdb"
+        },
+        {
+          "path": "research/PUBLIC_0950_20260924/sources/x138/source.py",
+          "bytes": 251149,
+          "sha256": "8a4493d621adab3c2b6f92286d1cd6e04959abf93bd957ac237a5ebc3f992e1c"
+        }
+      ],
+      "outputs_count": 0,
+      "execution_this_task": false
+    },
+    {
+      "origin": "https://www.kaggle.com/code/kunaldesale2408/biohub-cell-tracking?scriptVersionId=352321925",
+      "version": 10,
+      "sv": 352321925,
+      "public_score_observation_date": "2026-09-24",
+      "public_score_observed": "0.953",
+      "download": "Official Kaggle CLI, acquired during preceding research; original bytes preserved",
+      "files": [
+        {
+          "path": "research/PUBLIC_0950_20260924/sources/kunal/biohub-cell-tracking.ipynb",
+          "bytes": 266063,
+          "sha256": "9cd5d1490dfdd434b21027c4e934478f9def530c6670a2a86f5480b03b5d696e"
+        },
+        {
+          "path": "research/PUBLIC_0950_20260924/sources/kunal/kernel-metadata.json",
+          "bytes": 854,
+          "sha256": "1fd2bc428dfc90c06be243e3cfb1a67ce4eef5472d7a65f67043713e4a003b79"
+        },
+        {
+          "path": "research/PUBLIC_0950_20260924/sources/kunal/source.py",
+          "bytes": 251141,
+          "sha256": "f054b97be67044ff3fd95af4a7fd0c6d3a7ea73274f6b61e08f03adde47f7fcb"
+        }
+      ],
+      "outputs_count": 0,
+      "execution_this_task": false
+    }
+  ],
+  "code_ast_equal_nonempty_cells": 12,
+  "notebook_metadata_warning": "Inherited notebook JSON metadata differs from official kernel-metadata.json and can contain old papermill timestamps, missing inputs, or GPU=false. Do not use notebook JSON alone as current platform version settings. Preserve source bytes; recheck exact version Inputs and settings before any future run.",
+  "weights_included": false,
+  "license_status": "Not independently verified for Notebook source; original author attribution retained. Head DataCard displayed CC0. Do not infer Notebook license from head dataset license.",
+  "model_runs": 0,
+  "kaggle_writes": 0
+}
