@@ -1,0 +1,119 @@
+{
+  "status": "PASS",
+  "subject_commit": "11e87cc2a5f6a37da784d102910d8f6872b62905",
+  "remote_head_at_readback": "11e87cc2a5f6a37da784d102910d8f6872b62905",
+  "branch": "codex/x138-team-pair-20260924",
+  "readback_at": "2026-09-24T23:44:09.344434+08:00",
+  "method": "GitHub contents API at fixed commit, decoded original bytes SHA256",
+  "file_count": 15,
+  "matched": 15,
+  "files": [
+    {
+      "path": "experiments/BIOHUB_X138_TEAM_PAIR_20260924_V01/X0/candidate.ipynb",
+      "bytes": 268204,
+      "sha256": "61befd33f4c6241d382d099db64b09717c035d9e7b7d06a9bf7355f8df6c36a1",
+      "github_blob_sha": "e79a180bce2b6567ab3104c541346e2efaa79bd8",
+      "matches": true
+    },
+    {
+      "path": "experiments/BIOHUB_X138_TEAM_PAIR_20260924_V01/X0/kernel-metadata.json",
+      "bytes": 630,
+      "sha256": "ddbf043fe841ee0a1c05ce930e714f6429ec662e804a748279d3a29290a43aec",
+      "github_blob_sha": "261c13e74ba27a6461391e22a736caec7c3d964f",
+      "matches": true
+    },
+    {
+      "path": "experiments/BIOHUB_X138_TEAM_PAIR_20260924_V01/X0/saved_version_readback.json",
+      "bytes": 4961,
+      "sha256": "958cbd9f8bcb4d70fd9d0d5bf77e3e0324246e672f7a6b75266769404cd8061a",
+      "github_blob_sha": "c7dc77fcb0ea987ae1a0e9240687c3c8c95818a8",
+      "matches": true
+    },
+    {
+      "path": "experiments/BIOHUB_X138_TEAM_PAIR_20260924_V01/X25/candidate.ipynb",
+      "bytes": 268207,
+      "sha256": "dd51cdd6a5b6ef4a2c94df52f5750956e12625a6c6cf07f395aff209260920e3",
+      "github_blob_sha": "e8f78899c2ce59bf7e5a41f8a02904eef496f0b1",
+      "matches": true
+    },
+    {
+      "path": "experiments/BIOHUB_X138_TEAM_PAIR_20260924_V01/X25/kernel-metadata.json",
+      "bytes": 628,
+      "sha256": "9bd0218226888603c8c0e116b3753e10dc20dc1d937742bb101ef59441537910",
+      "github_blob_sha": "24c994524dcedcd7c8a2da05545b1fd3a264c172",
+      "matches": true
+    },
+    {
+      "path": "experiments/BIOHUB_X138_TEAM_PAIR_20260924_V01/X25/saved_version_readback.json",
+      "bytes": 4957,
+      "sha256": "0b4b3c229973bd7d0983f4b92732e82101827dd99e0cd590557352c019043b5b",
+      "github_blob_sha": "5fc2692249c18dbdaa6be37fa3bb98037a5ec5e3",
+      "matches": true
+    },
+    {
+      "path": "experiments/BIOHUB_X138_TEAM_PAIR_20260924_V01/build.py",
+      "bytes": 7069,
+      "sha256": "9cb83bc348d71a136ac56bf0a30bfe53fc8ab0b5c84f0555d34ec1a08e46538a",
+      "github_blob_sha": "c8679088b26c63fd7fca3c2908d95c930cf3d339",
+      "matches": true
+    },
+    {
+      "path": "experiments/BIOHUB_X138_TEAM_PAIR_20260924_V01/candidate_manifest.json",
+      "bytes": 5929,
+      "sha256": "5793693bb0ec400a5c20ae16cac498e4aebeeea0bbe606d6122a0574f3b3df45",
+      "github_blob_sha": "fc9b312cb21ca8234e0b4d1d344286d3cb067af7",
+      "matches": true
+    },
+    {
+      "path": "experiments/BIOHUB_X138_TEAM_PAIR_20260924_V01/check_local.py",
+      "bytes": 5197,
+      "sha256": "57d3349aa3c9b51beac12861521006e98037f69fc6e1a9c2c1a1ca21630dbde3",
+      "github_blob_sha": "c4263f4ebe5339246c9a1ce90b007a4b507cc5a7",
+      "matches": true
+    },
+    {
+      "path": "experiments/BIOHUB_X138_TEAM_PAIR_20260924_V01/checks.json",
+      "bytes": 9658,
+      "sha256": "5a4f7dd33ae0e8c0f09de735dde62be4c53bebde49d8c30c1470bee1e9e022ec",
+      "github_blob_sha": "24af6cb69ef3ecc44ec1e998c67f7612aeae1e76",
+      "matches": true
+    },
+    {
+      "path": "experiments/BIOHUB_X138_TEAM_PAIR_20260924_V01/platform_ledger.json",
+      "bytes": 4366,
+      "sha256": "aed23bc53b76d0f05d4852dd347f2e0c8d819248c50e0cf0e74134b83c114345",
+      "github_blob_sha": "d40fc3856fd390bd86c94d2698f88e91bc42b260",
+      "matches": true
+    },
+    {
+      "path": "experiments/BIOHUB_X138_TEAM_PAIR_20260924_V01/source.diff",
+      "bytes": 5232,
+      "sha256": "5d78797ee9bfd491f4a9a9c7478853780f771a5891077ba4a4c5fbc25d4154d2",
+      "github_blob_sha": "e9ce17a850ae04aeeae06f0e2e7e0a8c9bd4e4e6",
+      "matches": true
+    },
+    {
+      "path": "experiments/BIOHUB_X138_TEAM_PAIR_20260924_V01/team_handoff.md",
+      "bytes": 1291,
+      "sha256": "ec01396a983fd09f8a67f427bc28c8d5a79a7ad5098c89762acccd8d4503958b",
+      "github_blob_sha": "4d8c6c99f76af77c52bbb0b1e883b5760d421297",
+      "matches": true
+    },
+    {
+      "path": "reports/20260924_BIOHUB_X138_TEAM_PAIR_RESULTS.md",
+      "bytes": 4287,
+      "sha256": "946b4d2f7c3307f0afc0acd8de60dbe6c0cef5de370bd1722ed6110a9e14159d",
+      "github_blob_sha": "3a114bffbd45bfe761ae1428a3ad939a8fbca9f5",
+      "matches": true
+    },
+    {
+      "path": "tasks/CODEX_20260924_BIOHUB_X138_TEAM_PAIR_V01.md",
+      "bytes": 14587,
+      "sha256": "31608ca65e45ff673a866e00b1b78e096115af6d78fffedef06bd43db8993135",
+      "github_blob_sha": "3b71199cbd59c8b2743939d9a61ef1a1fdeecc6b",
+      "matches": true
+    }
+  ],
+  "worktree_before_receipt": "",
+  "note": "This receipt is added in a following commit; subject readback is performed once, no self-reference loop."
+}
