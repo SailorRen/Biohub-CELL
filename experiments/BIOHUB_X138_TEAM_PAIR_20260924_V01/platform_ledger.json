@@ -1,0 +1,31 @@
+{
+  "task": "BIOHUB_X138_TEAM_PAIR_20260924_V01",
+  "limits": {
+    "private_templates": 2,
+    "quick_saves": 2,
+    "permission_saves": 2,
+    "model_runs": 0,
+    "submissions": 0
+  },
+  "events": [
+    {
+      "at": "2026-09-24T23:07:16.461966+08:00",
+      "action": "X0_CREATE_INTENT",
+      "slug": "sailorren/biohub-x138-exact-team-20260924",
+      "source_sv": 351539814,
+      "dispatched": false
+    }
+  ],
+  "team_identity": {
+    "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/team",
+    "observed_member": "dongdongjiaqi",
+    "profile_href": "/dongdongjiaqi",
+    "permission_target": "Can view",
+    "verified_live": true
+  },
+  "execution": "NOT_RUN",
+  "submission": "NOT_SUBMITTED",
+  "public": null,
+  "local_first_check_error": "NotebookValidationError: id unexpected under inherited nbformat minor; builder now declares nbformat 4.5, 26 checks pass.",
+  "platform_read_note": "Initial sandbox CLI help authentication DNS failure resolved with authorized network escalation; no write dispatched."
+}

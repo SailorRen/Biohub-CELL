@@ -1,0 +1,108 @@
+--- original/cell1
++++ X0/cell1
+@@ -6,6 +6,9 @@
+ Record edition.'''
+ 
+ import os
++# Team candidate fixed at build time; before Cell 3 constant initialization.
++X138_TEAM_CANDIDATE = "X0"
++os.environ["BIOHUB_MOTION_RELINK_VELOCITY_WEIGHT"] = "0.5"
+ BIOHUB_PRESET = 'harmonic_v3_division_wide'
+ BIOHUB_SCORE_AXIS = 'public 0.939 base + holdout-selected post-process configuration'
+ 
+--- original/cell12
++++ X0/cell12
+@@ -42,3 +42,39 @@
+       f"held_out_samples={len(val_stems)}  match_radius={VALIDATOR_MATCH_RADIUS_UM}um")
+ 
+ print("=" * 78)
++
++# Read-only prediction audit; separate from inherited historical printouts.
++import hashlib as _pair_hashlib
++from datetime import datetime as _pair_datetime, timezone as _pair_timezone
++try:
++    def _pair_file(path):
++        path = Path(path)
++        if not path.is_file():
++            return {"path": str(path), "status": "NOT_FOUND"}
++        h = _pair_hashlib.sha256()
++        with path.open("rb") as stream:
++            for chunk in iter(lambda: stream.read(1024 * 1024), b""):
++                h.update(chunk)
++        return {"path": str(path), "bytes": path.stat().st_size, "sha256": h.hexdigest()}
++    _pair_stats = globals().get("RUN_STATS_PATH")
++    _pair_record = {
++        "candidate": X138_TEAM_CANDIDATE,
++        "timestamp_utc": _pair_datetime.now(_pair_timezone.utc).isoformat(),
++        "velocity_constant": MOTION_RELINK_VELOCITY_WEIGHT,
++        "velocity_environment": os.environ.get("BIOHUB_MOTION_RELINK_VELOCITY_WEIGHT"),
++        "flow_mode": MOTION_RELINK_FLOW_MODE,
++        "head_mode": os.environ.get("V1284_MODE"),
++        "head": _pair_file(os.environ.get("V1284_HEAD", "")),
++        "csv": _pair_file(SUBMISSION_PATH),
++        "run_stats_file": _pair_file(_pair_stats) if _pair_stats else None,
++        "run_stats": pd.read_csv(_pair_stats).to_dict(orient="records") if _pair_stats and Path(_pair_stats).is_file() else None,
++        "deadline_degraded": globals().get("_deadline_degraded"),
++        "deepcenter_loaded": globals().get("_dc_loaded"),
++        "secondary_ready": globals().get("_secondary_ready"),
++        "module_warnings": "Review original saved logs for LOW-DETECTION DUMP SKIPPED, gap filler idle and repair fallback; not exhaustively captured here.",
++        "public": None,
++        "note": "Runtime audit only, not a formal score receipt. No predictions changed."
++    }
++    (WORKING_DIR / "x138_team_receipt.json").write_text(json.dumps(_pair_record, indent=2, default=str))
++except Exception as _pair_error:
++    print("X138_TEAM_RECEIPT_WARNING", type(_pair_error).__name__, str(_pair_error))
+--- original/cell1
++++ X25/cell1
+@@ -6,6 +6,9 @@
+ Record edition.'''
+ 
+ import os
++# Team candidate fixed at build time; before Cell 3 constant initialization.
++X138_TEAM_CANDIDATE = "X25"
++os.environ["BIOHUB_MOTION_RELINK_VELOCITY_WEIGHT"] = "0.25"
+ BIOHUB_PRESET = 'harmonic_v3_division_wide'
+ BIOHUB_SCORE_AXIS = 'public 0.939 base + holdout-selected post-process configuration'
+ 
+--- original/cell12
++++ X25/cell12
+@@ -42,3 +42,39 @@
+       f"held_out_samples={len(val_stems)}  match_radius={VALIDATOR_MATCH_RADIUS_UM}um")
+ 
+ print("=" * 78)
++
++# Read-only prediction audit; separate from inherited historical printouts.
++import hashlib as _pair_hashlib
++from datetime import datetime as _pair_datetime, timezone as _pair_timezone
++try:
++    def _pair_file(path):
++        path = Path(path)
++        if not path.is_file():
++            return {"path": str(path), "status": "NOT_FOUND"}
++        h = _pair_hashlib.sha256()
++        with path.open("rb") as stream:
++            for chunk in iter(lambda: stream.read(1024 * 1024), b""):
++                h.update(chunk)
++        return {"path": str(path), "bytes": path.stat().st_size, "sha256": h.hexdigest()}
++    _pair_stats = globals().get("RUN_STATS_PATH")
++    _pair_record = {
++        "candidate": X138_TEAM_CANDIDATE,
++        "timestamp_utc": _pair_datetime.now(_pair_timezone.utc).isoformat(),
++        "velocity_constant": MOTION_RELINK_VELOCITY_WEIGHT,
++        "velocity_environment": os.environ.get("BIOHUB_MOTION_RELINK_VELOCITY_WEIGHT"),
++        "flow_mode": MOTION_RELINK_FLOW_MODE,
++        "head_mode": os.environ.get("V1284_MODE"),
++        "head": _pair_file(os.environ.get("V1284_HEAD", "")),
++        "csv": _pair_file(SUBMISSION_PATH),
++        "run_stats_file": _pair_file(_pair_stats) if _pair_stats else None,
++        "run_stats": pd.read_csv(_pair_stats).to_dict(orient="records") if _pair_stats and Path(_pair_stats).is_file() else None,
++        "deadline_degraded": globals().get("_deadline_degraded"),
++        "deepcenter_loaded": globals().get("_dc_loaded"),
++        "secondary_ready": globals().get("_secondary_ready"),
++        "module_warnings": "Review original saved logs for LOW-DETECTION DUMP SKIPPED, gap filler idle and repair fallback; not exhaustively captured here.",
++        "public": None,
++        "note": "Runtime audit only, not a formal score receipt. No predictions changed."
++    }
++    (WORKING_DIR / "x138_team_receipt.json").write_text(json.dumps(_pair_record, indent=2, default=str))
++except Exception as _pair_error:
++    print("X138_TEAM_RECEIPT_WARNING", type(_pair_error).__name__, str(_pair_error))

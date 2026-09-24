@@ -1,0 +1,408 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "X0_nbformat_and_12_cells",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "X0_all_cell_ast",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "X0_unchanged_cells_2_to_11",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "X0_original_final_cell_preserved",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "X0_clean_outputs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "X0_before_constant",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "X25_nbformat_and_12_cells",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "X25_all_cell_ast",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "X25_unchanged_cells_2_to_11",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "X25_original_final_cell_preserved",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "X25_clean_outputs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "X25_before_constant",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "pair_only_velocity_and_identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_module_expanded_compiles",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "lowdet_before_head",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "head_anchor_guards_retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "csv_chain_retained",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "v0.5_no_predecessor",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "v0.5_self_velocity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "v0.5_flow_active",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "v0.5_flow_not_scaled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "v0.25_no_predecessor",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "v0.25_self_velocity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "v0.25_flow_active",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "v0.25_flow_not_scaled",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "check": "dense_flow_equal_across_velocities",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "count": 26,
+  "embedded_complete_python_strings": [
+    {
+      "cell": 5,
+      "line": 193,
+      "bytes": 1650,
+      "sha256": "89a3fcd46cdf5cd5779f12d7d98616831a228d63d88694759e374e010b4349fa"
+    },
+    {
+      "cell": 5,
+      "line": 219,
+      "bytes": 974,
+      "sha256": "ea380b9a7ab07830ca1fd7e50e44c555ffd023e0f86c524348c7c5fadc956390"
+    },
+    {
+      "cell": 5,
+      "line": 511,
+      "bytes": 3447,
+      "sha256": "34a2b4653f35ae73b5a7bdb46a095c812da5533c875cd1cdc4db83e4c3fd303c"
+    },
+    {
+      "cell": 5,
+      "line": 524,
+      "bytes": 24,
+      "sha256": "58ca4ad8cf06d51845d5f15dd5340820f0765c9fa9842c038cb4765debbc9bba"
+    },
+    {
+      "cell": 5,
+      "line": 524,
+      "bytes": 120,
+      "sha256": "e9962bb2a141cca086f3ed87a703fdf9cb64b98416293845450b80c9b24ecdc4"
+    },
+    {
+      "cell": 5,
+      "line": 523,
+      "bytes": 24,
+      "sha256": "58ca4ad8cf06d51845d5f15dd5340820f0765c9fa9842c038cb4765debbc9bba"
+    },
+    {
+      "cell": 5,
+      "line": 252,
+      "bytes": 65,
+      "sha256": "56b812ea5bb285487888fc102ac5124b09fff466be9ac41135c9b9387721fd9c"
+    },
+    {
+      "cell": 5,
+      "line": 488,
+      "bytes": 892,
+      "sha256": "8faca9a681c8c1150223541b022bb4db0acb162fba771fbdeceadda42988937c"
+    }
+  ],
+  "small_graph_results": [
+    {
+      "velocity": 0.5,
+      "sparse_edges": [
+        {
+          "source_id": 0,
+          "target_id": 100,
+          "edge_prob": 0.0,
+          "distance_um": 2.0,
+          "motion_distance_um": 2.0,
+          "motion_relinked": 1,
+          "motion_pass": "tight"
+        },
+        {
+          "source_id": 100,
+          "target_id": 200,
+          "edge_prob": 0.0,
+          "distance_um": 2.0,
+          "motion_distance_um": 1.0,
+          "motion_relinked": 1,
+          "motion_pass": "tight"
+        }
+      ],
+      "sparse_stats": {
+        "motion_relink_tight_edges": 2,
+        "motion_relink_frames": 2,
+        "motion_relink_edges": 2
+      },
+      "flow_edges": [
+        {
+          "source_id": 0,
+          "target_id": 100,
+          "edge_prob": 0.0,
+          "distance_um": 2.0,
+          "motion_distance_um": 0.0,
+          "motion_relinked": 1,
+          "motion_pass": "tight"
+        },
+        {
+          "source_id": 1,
+          "target_id": 101,
+          "edge_prob": 0.0,
+          "distance_um": 2.0,
+          "motion_distance_um": 0.0,
+          "motion_relinked": 1,
+          "motion_pass": "tight"
+        },
+        {
+          "source_id": 2,
+          "target_id": 102,
+          "edge_prob": 0.0,
+          "distance_um": 2.0,
+          "motion_distance_um": 0.0,
+          "motion_relinked": 1,
+          "motion_pass": "tight"
+        },
+        {
+          "source_id": 3,
+          "target_id": 103,
+          "edge_prob": 0.0,
+          "distance_um": 2.0,
+          "motion_distance_um": 0.0,
+          "motion_relinked": 1,
+          "motion_pass": "tight"
+        },
+        {
+          "source_id": 100,
+          "target_id": 200,
+          "edge_prob": 0.0,
+          "distance_um": 2.0,
+          "motion_distance_um": 0.0,
+          "motion_relinked": 1,
+          "motion_pass": "tight"
+        },
+        {
+          "source_id": 101,
+          "target_id": 201,
+          "edge_prob": 0.0,
+          "distance_um": 2.0,
+          "motion_distance_um": 0.0,
+          "motion_relinked": 1,
+          "motion_pass": "tight"
+        },
+        {
+          "source_id": 102,
+          "target_id": 202,
+          "edge_prob": 0.0,
+          "distance_um": 2.0,
+          "motion_distance_um": 0.0,
+          "motion_relinked": 1,
+          "motion_pass": "tight"
+        },
+        {
+          "source_id": 103,
+          "target_id": 203,
+          "edge_prob": 0.0,
+          "distance_um": 2.0,
+          "motion_distance_um": 0.0,
+          "motion_relinked": 1,
+          "motion_pass": "tight"
+        }
+      ],
+      "flow_stats": {
+        "motion_relink_flow_frames": 2,
+        "motion_relink_flow_predicted": 12,
+        "motion_relink_tight_edges": 8,
+        "motion_relink_frames": 2,
+        "motion_relink_edges": 8
+      }
+    },
+    {
+      "velocity": 0.25,
+      "sparse_edges": [
+        {
+          "source_id": 0,
+          "target_id": 100,
+          "edge_prob": 0.0,
+          "distance_um": 2.0,
+          "motion_distance_um": 2.0,
+          "motion_relinked": 1,
+          "motion_pass": "tight"
+        },
+        {
+          "source_id": 100,
+          "target_id": 200,
+          "edge_prob": 0.0,
+          "distance_um": 2.0,
+          "motion_distance_um": 1.5,
+          "motion_relinked": 1,
+          "motion_pass": "tight"
+        }
+      ],
+      "sparse_stats": {
+        "motion_relink_tight_edges": 2,
+        "motion_relink_frames": 2,
+        "motion_relink_edges": 2
+      },
+      "flow_edges": [
+        {
+          "source_id": 0,
+          "target_id": 100,
+          "edge_prob": 0.0,
+          "distance_um": 2.0,
+          "motion_distance_um": 0.0,
+          "motion_relinked": 1,
+          "motion_pass": "tight"
+        },
+        {
+          "source_id": 1,
+          "target_id": 101,
+          "edge_prob": 0.0,
+          "distance_um": 2.0,
+          "motion_distance_um": 0.0,
+          "motion_relinked": 1,
+          "motion_pass": "tight"
+        },
+        {
+          "source_id": 2,
+          "target_id": 102,
+          "edge_prob": 0.0,
+          "distance_um": 2.0,
+          "motion_distance_um": 0.0,
+          "motion_relinked": 1,
+          "motion_pass": "tight"
+        },
+        {
+          "source_id": 3,
+          "target_id": 103,
+          "edge_prob": 0.0,
+          "distance_um": 2.0,
+          "motion_distance_um": 0.0,
+          "motion_relinked": 1,
+          "motion_pass": "tight"
+        },
+        {
+          "source_id": 100,
+          "target_id": 200,
+          "edge_prob": 0.0,
+          "distance_um": 2.0,
+          "motion_distance_um": 0.0,
+          "motion_relinked": 1,
+          "motion_pass": "tight"
+        },
+        {
+          "source_id": 101,
+          "target_id": 201,
+          "edge_prob": 0.0,
+          "distance_um": 2.0,
+          "motion_distance_um": 0.0,
+          "motion_relinked": 1,
+          "motion_pass": "tight"
+        },
+        {
+          "source_id": 102,
+          "target_id": 202,
+          "edge_prob": 0.0,
+          "distance_um": 2.0,
+          "motion_distance_um": 0.0,
+          "motion_relinked": 1,
+          "motion_pass": "tight"
+        },
+        {
+          "source_id": 103,
+          "target_id": 203,
+          "edge_prob": 0.0,
+          "distance_um": 2.0,
+          "motion_distance_um": 0.0,
+          "motion_relinked": 1,
+          "motion_pass": "tight"
+        }
+      ],
+      "flow_stats": {
+        "motion_relink_flow_frames": 2,
+        "motion_relink_flow_predicted": 12,
+        "motion_relink_tight_edges": 8,
+        "motion_relink_frames": 2,
+        "motion_relink_edges": 8
+      }
+    }
+  ],
+  "scope": "Static syntax/identity and original function synthetic graph mechanics; no accuracy or real input inference. Full external support-module patch execution not run.",
+  "model_runs": 0
+}

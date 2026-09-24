@@ -1,0 +1,21 @@
+{
+  "id": "sailorren/biohub-x138-exact-team-20260924",
+  "title": "biohub-x138-exact-team-20260924",
+  "code_file": "candidate.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "dataset_sources": [
+    "pilkwang/biohub-tracking-support-pack-50ep-v1/10",
+    "pilkwang/biohub-temporal-unet3d-seed314159-v1/2",
+    "pilkwang/biohub-deepcenter-unet3d-center-prior-v1/5",
+    "anvithpothula/biohub-v1284-head-s075/1"
+  ],
+  "competition_sources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "kernel_sources": []
+}
