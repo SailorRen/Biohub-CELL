@@ -14,6 +14,85 @@
       "slug": "sailorren/biohub-x138-exact-team-20260924",
       "source_sv": 351539814,
       "dispatched": false
+    },
+    {
+      "at": "2026-09-24T23:15:03.035495+08:00",
+      "action": "X0_CREATE_CONFIRMED",
+      "slug": "sailorren/biohub-x138-exact-team-20260924",
+      "session": "OFF"
+    },
+    {
+      "at": "2026-09-24T23:15:03.035949+08:00",
+      "action": "X0_QUICK_SAVE_INTENT",
+      "version_name": "X0 exact - unrun team template",
+      "save_output": "Never",
+      "accelerator": "None",
+      "internet": false,
+      "dispatched": false
+    },
+    {
+      "at": "2026-09-24T23:22:31.943113+08:00",
+      "action": "X0_QUICK_SAVE_CONFIRMED",
+      "dispatched": true,
+      "version": 1,
+      "sv": 352443505,
+      "kernel": 135684967,
+      "response": "Quick version complete.",
+      "session": "OFF"
+    },
+    {
+      "at": "2026-09-24T23:22:31.943113+08:00",
+      "action": "X0_SHARE_CONFIRMED",
+      "dispatched": true,
+      "user": "dongdongjiaqi",
+      "permission": "Can view",
+      "readback": true
+    },
+    {
+      "at": "2026-09-24T23:22:31.943113+08:00",
+      "action": "X25_EXISTING_DRAFT_RECONCILED",
+      "slug": "sailorren/biohub-x138-104c84",
+      "version_count": 0,
+      "session": "OFF",
+      "note": "A second original-source fork appeared during UI navigation in this task. Reuse it for X25; no third creation. Exact creation timing is not observed."
+    },
+    {
+      "at": "2026-09-24T23:22:31.943113+08:00",
+      "action": "X25_IMPORT_AND_QUICK_SAVE_INTENT",
+      "target_slug": "sailorren/biohub-x138-v025-team-20260924",
+      "save_output": "Never",
+      "session": "OFF"
+    },
+    {
+      "at": "2026-09-24T23:43:02.923961+08:00",
+      "action": "X25_QUICK_SAVE_CONFIRMED",
+      "dispatched": true,
+      "version": 1,
+      "sv": 352448643,
+      "kernel": 135684985,
+      "session": "OFF",
+      "response": "V1 sole saved version downloaded; Quick Save selected before save"
+    },
+    {
+      "at": "2026-09-24T23:43:02.923961+08:00",
+      "action": "X25_SHARE_CONFIRMED",
+      "dispatched": true,
+      "user": "dongdongjiaqi",
+      "permission": "Can view",
+      "readback": true
+    },
+    {
+      "at": "2026-09-24T23:43:02.923961+08:00",
+      "action": "FINAL_SAVED_VERSION_READBACK",
+      "dispatched": false,
+      "read_only": true,
+      "source_cells_equal": 26,
+      "input_versions_each": [
+        10,
+        2,
+        5,
+        1
+      ]
     }
   ],
   "team_identity": {
@@ -27,5 +106,27 @@
   "submission": "NOT_SUBMITTED",
   "public": null,
   "local_first_check_error": "NotebookValidationError: id unexpected under inherited nbformat minor; builder now declares nbformat 4.5, 26 checks pass.",
-  "platform_read_note": "Initial sandbox CLI help authentication DNS failure resolved with authorized network escalation; no write dispatched."
+  "platform_read_note": "Initial sandbox CLI help authentication DNS failure resolved with authorized network escalation; no write dispatched.",
+  "consumed": {
+    "private_templates": 2,
+    "quick_saves": 2,
+    "permission_saves": 2,
+    "model_runs": 0,
+    "save_and_run": 0,
+    "submissions": 0,
+    "gpu_sessions": 0,
+    "colab_sessions": 0,
+    "independent_cpu_sessions": 0,
+    "training": 0,
+    "dataset_writes": 0,
+    "final_selection_changes": 0
+  },
+  "teammate_copy": "NOT_VERIFIED",
+  "status": "TEMPLATES_PREPARED_TEAM_ACTION_PENDING",
+  "ui_incidents": [
+    "An unintended source upvote during viewer control targeting was undone; official copy may automatically upvote source. No score or run implications.",
+    "Second original-source draft discovered and reused for X25. No third object created. Creation exact timestamp not observed; reconciled as kernel135684985.",
+    "File chooser setFiles completed slowly (~266s X0, ~740s X25), no duplicate upload/save.",
+    "Sticky input tree targeting selected requirements file instead of head; read-only reload then selected head confirmed V1."
+  ]
 }

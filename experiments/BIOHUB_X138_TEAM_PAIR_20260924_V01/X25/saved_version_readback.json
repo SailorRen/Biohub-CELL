@@ -1,0 +1,157 @@
+{
+  "observed_at": "2026-09-24T23:43:02.923961+08:00",
+  "kernel": 135684985,
+  "version": 1,
+  "sv": 352448643,
+  "url": "https://www.kaggle.com/code/sailorren/biohub-x138-v025-team-20260924?scriptVersionId=352448643",
+  "method": "Official kaggle kernels pull after UI verified sole V1; UI Input per-dataset version details",
+  "download_sha256": "752bda74ef4b325724e80c2740f0a2bd376c3a84b0087ad5f223da942e6fc27c",
+  "download_bytes": 266040,
+  "local_sha256": "dd51cdd6a5b6ef4a2c94df52f5750956e12625a6c6cf07f395aff209260920e3",
+  "whole_ipynb_bytes_identical": false,
+  "cells": [
+    {
+      "index": 0,
+      "type": "markdown",
+      "source_sha256": "37ff9121f4b8e1006bd0f3fb70b7a1be18fbd48c69e4109ca1cff6260fcc4c97",
+      "same_source": true
+    },
+    {
+      "index": 1,
+      "type": "code",
+      "source_sha256": "5004211e1771512ae3020b368d3d3aa288bc55a2ffc91b6078f0f325e4e41cc4",
+      "same_source": true
+    },
+    {
+      "index": 2,
+      "type": "code",
+      "source_sha256": "99198956a4c7725d85c6aab0d478368749824801716c6d39cf5bf915187ac500",
+      "same_source": true
+    },
+    {
+      "index": 3,
+      "type": "code",
+      "source_sha256": "18d436971ad2de603a4d30dd6f8e6e68be8ef53fc15dee82b272ccd1e7137be5",
+      "same_source": true
+    },
+    {
+      "index": 4,
+      "type": "code",
+      "source_sha256": "bb66c8563a3ae994f0eac6f63ea6989fa7de716aeeef75b8c157f96d84c22980",
+      "same_source": true
+    },
+    {
+      "index": 5,
+      "type": "code",
+      "source_sha256": "f4da12c5e885570cd846b59aa10d7393d985db673264987af5965296fc8bc971",
+      "same_source": true
+    },
+    {
+      "index": 6,
+      "type": "code",
+      "source_sha256": "1b2f7d09340bb173bb9a4767ef04fba593d0e23892197b3df8ab187bba905c6d",
+      "same_source": true
+    },
+    {
+      "index": 7,
+      "type": "code",
+      "source_sha256": "c300805e0268602d76042dd271bcc3224fda6af2a52569e16bebc446701d66a5",
+      "same_source": true
+    },
+    {
+      "index": 8,
+      "type": "code",
+      "source_sha256": "7400441b355cbe09311e9c638c44264e374ad448d9ab1020b9d5866746e84ee7",
+      "same_source": true
+    },
+    {
+      "index": 9,
+      "type": "code",
+      "source_sha256": "54ed30a2f73355f369c112057570e9dd6a37e7f5521a6baf9ccdf4a8fc4ba6f8",
+      "same_source": true
+    },
+    {
+      "index": 10,
+      "type": "code",
+      "source_sha256": "3986eaba6600507225a7140c033c14ae039a4fa95b3602806b43a8f2f11d90a0",
+      "same_source": true
+    },
+    {
+      "index": 11,
+      "type": "code",
+      "source_sha256": "ece3664cf924f36f3b838bac34fa636e67a5c865e6bf21ab61ff086bd1f87dfb",
+      "same_source": true
+    },
+    {
+      "index": 12,
+      "type": "code",
+      "source_sha256": "7e8e4ff40e1e6760508d7d9cdc60878726633778c6cae5405395a2c0f896fe05",
+      "same_source": true
+    }
+  ],
+  "metadata": {
+    "id": "sailorren/biohub-x138-v025-team-20260924",
+    "id_no": 135684985,
+    "title": "biohub-x138-v025-team-20260924",
+    "code_file": "biohub-x138-v025-team-20260924.ipynb",
+    "language": "python",
+    "kernel_type": "notebook",
+    "is_private": true,
+    "enable_gpu": false,
+    "enable_tpu": false,
+    "enable_internet": false,
+    "keywords": [],
+    "dataset_sources": [
+      "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+      "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+      "pilkwang/biohub-tracking-support-pack-50ep-v1",
+      "anvithpothula/biohub-v1284-head-s075"
+    ],
+    "kernel_sources": [],
+    "competition_sources": [
+      "biohub-cell-tracking-during-development"
+    ],
+    "model_sources": [],
+    "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+    "machine_shape": "None"
+  },
+  "inputs": [
+    {
+      "ref": "pilkwang/biohub-tracking-support-pack-50ep-v1",
+      "version": 10,
+      "evidence": "Final V1 Input tab Last Updated (Version N)"
+    },
+    {
+      "ref": "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+      "version": 2,
+      "evidence": "Final V1 Input tab Last Updated (Version N)"
+    },
+    {
+      "ref": "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+      "version": 5,
+      "evidence": "Final V1 Input tab Last Updated (Version N)"
+    },
+    {
+      "ref": "anvithpothula/biohub-v1284-head-s075",
+      "version": 1,
+      "evidence": "Final V1 Input tab Last Updated (Version N)"
+    }
+  ],
+  "sharing": {
+    "user": "dongdongjiaqi",
+    "permission": "Can view",
+    "private": true,
+    "persisted_readback": true,
+    "teammate_access": "NOT_VERIFIED"
+  },
+  "session": "OFF",
+  "save_type": "Quick Save",
+  "save_output": "Never",
+  "execution": "NOT_RUN",
+  "submission": "NOT_SUBMITTED",
+  "public": null,
+  "packaging_runtime_ui": "9s",
+  "packaging_note": "Quick Save packaging, not cell/model execution; 12 cells have null execution_count and empty outputs",
+  "environment_ui": "Pin to original environment (2026-07-01)",
+  "runtime_compatibility": "NOT_VERIFIED"
+}

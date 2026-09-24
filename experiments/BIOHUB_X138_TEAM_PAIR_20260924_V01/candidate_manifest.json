@@ -53,7 +53,50 @@
       "sha256": "61befd33f4c6241d382d099db64b09717c035d9e7b7d06a9bf7355f8df6c36a1",
       "original_code_cells": 12,
       "markdown_cells": 1,
-      "platform_settings": "To be read back; desired None/off/offline"
+      "platform_settings": {
+        "id": "sailorren/biohub-x138-exact-team-20260924",
+        "id_no": 135684967,
+        "title": "biohub-x138-exact-team-20260924",
+        "code_file": "biohub-x138-exact-team-20260924.ipynb",
+        "language": "python",
+        "kernel_type": "notebook",
+        "is_private": true,
+        "enable_gpu": false,
+        "enable_tpu": false,
+        "enable_internet": false,
+        "keywords": [],
+        "dataset_sources": [
+          "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+          "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+          "pilkwang/biohub-tracking-support-pack-50ep-v1",
+          "anvithpothula/biohub-v1284-head-s075"
+        ],
+        "kernel_sources": [],
+        "competition_sources": [
+          "biohub-cell-tracking-during-development"
+        ],
+        "model_sources": [],
+        "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+        "machine_shape": "None"
+      },
+      "kernel": 135684967,
+      "version": 1,
+      "sv": 352443505,
+      "url": "https://www.kaggle.com/code/sailorren/biohub-x138-exact-team-20260924?scriptVersionId=352443505",
+      "sharing": {
+        "user": "dongdongjiaqi",
+        "permission": "Can view",
+        "private": true,
+        "persisted_readback": true,
+        "teammate_access": "NOT_VERIFIED"
+      },
+      "code_readback": "13/13 cell source byte equality; 12 code AST pass",
+      "actual_input_versions": {
+        "pilkwang/biohub-tracking-support-pack-50ep-v1": 10,
+        "pilkwang/biohub-temporal-unet3d-seed314159-v1": 2,
+        "pilkwang/biohub-deepcenter-unet3d-center-prior-v1": 5,
+        "anvithpothula/biohub-v1284-head-s075": 1
+      }
     },
     "X25": {
       "slug": "sailorren/biohub-x138-v025-team-20260924",
@@ -64,7 +107,51 @@
       "sha256": "dd51cdd6a5b6ef4a2c94df52f5750956e12625a6c6cf07f395aff209260920e3",
       "original_code_cells": 12,
       "markdown_cells": 1,
-      "platform_settings": "To be read back; desired None/off/offline"
+      "platform_settings": {
+        "id": "sailorren/biohub-x138-v025-team-20260924",
+        "id_no": 135684985,
+        "title": "biohub-x138-v025-team-20260924",
+        "code_file": "biohub-x138-v025-team-20260924.ipynb",
+        "language": "python",
+        "kernel_type": "notebook",
+        "is_private": true,
+        "enable_gpu": false,
+        "enable_tpu": false,
+        "enable_internet": false,
+        "keywords": [],
+        "dataset_sources": [
+          "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+          "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+          "pilkwang/biohub-tracking-support-pack-50ep-v1",
+          "anvithpothula/biohub-v1284-head-s075"
+        ],
+        "kernel_sources": [],
+        "competition_sources": [
+          "biohub-cell-tracking-during-development"
+        ],
+        "model_sources": [],
+        "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+        "machine_shape": "None"
+      },
+      "kernel": 135684985,
+      "version": 1,
+      "sv": 352448643,
+      "url": "https://www.kaggle.com/code/sailorren/biohub-x138-v025-team-20260924?scriptVersionId=352448643",
+      "sharing": {
+        "user": "dongdongjiaqi",
+        "permission": "Can view",
+        "private": true,
+        "persisted_readback": true,
+        "teammate_access": "NOT_VERIFIED"
+      },
+      "code_readback": "13/13 cell source byte equality; 12 code AST pass",
+      "actual_input_versions": {
+        "pilkwang/biohub-tracking-support-pack-50ep-v1": 10,
+        "pilkwang/biohub-temporal-unet3d-seed314159-v1": 2,
+        "pilkwang/biohub-deepcenter-unet3d-center-prior-v1": 5,
+        "anvithpothula/biohub-v1284-head-s075": 1
+      }
     }
-  }
+  },
+  "status": "TEMPLATES_PREPARED_TEAM_ACTION_PENDING"
 }
