@@ -1,0 +1,65 @@
+{
+  "commit": "e591749594da16013c5e3b01df78e8e853627ede",
+  "observed_at": "2026-09-25T07:51:48.808938+00:00",
+  "remote_head": "e591749594da16013c5e3b01df78e8e853627ede",
+  "count": 8,
+  "all_equal": true,
+  "files": [
+    {
+      "path": "experiments/BIOHUB_XR0_XD960_SCORE_PAIR_20260925_V01/XD960/platform_template_readback.json",
+      "blob": "0ad890450170e80cac06bcbca29438238665722b",
+      "bytes": 1495,
+      "sha256": "1c1556efb018c64850beb19f9fe2ce31eb3c1be1bbe9598011d8e2eb0464f843",
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_XD960_SCORE_PAIR_20260925_V01/XR0/platform_template_readback.json",
+      "blob": "6b0f388e2ee63bb916efceace4c7f25ce19ca655",
+      "bytes": 1489,
+      "sha256": "8c77c388e9a55dac34f1e9e9ea0f9e5480269594dc120e97fb0d7046e3b95725",
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_XD960_SCORE_PAIR_20260925_V01/execution_status.json",
+      "blob": "4b5571f530331f80ee29a69fab0a11869d0c086b",
+      "bytes": 1143,
+      "sha256": "4da5994608e2b0ec2e1783ff1d295e950916611daae01cdcf9dd2e300f309fe4",
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_XD960_SCORE_PAIR_20260925_V01/platform_ledger.json",
+      "blob": "751795ef1cd5a5864b38e5c98ccf8639942b967b",
+      "bytes": 2011,
+      "sha256": "0e792f9a92a23c0dbe35de1c042fd514ffc530a001991c21409f9f665b0424a9",
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_XD960_SCORE_PAIR_20260925_V01/platform_ui_evidence.json",
+      "blob": "eb9b78330dceb68d1a2cd70fb240652f90893f5e",
+      "bytes": 1066,
+      "sha256": "3353742c4713d04141089ad93f7fe2900b0156c7a65aa2e5e4abb9c0e932f024",
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_XD960_SCORE_PAIR_20260925_V01/source_github_readback.json",
+      "blob": "61fe82c45d8df268c9746cfa6fbdd4776b80447b",
+      "bytes": 6802,
+      "sha256": "c91b5dd73dcabd14adc4c11a4ea6429fa2f9bcaf60aacf615528e6e78ef1257f",
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_XD960_SCORE_PAIR_20260925_V01/队友交接.md",
+      "blob": "7842d3788491ff11352b8a15c9d7e98d0d5d8d33",
+      "bytes": 2416,
+      "sha256": "13d09c2601189df27ea9d362625d733cdcdfda29da6d38bd6b564675d824e6ed",
+      "equal": true
+    },
+    {
+      "path": "reports/20260925_BIOHUB_XR0_XD960_SCORE_PAIR_RESULTS.md",
+      "blob": "0b82fb32138f4bdc2ba3da21a375b3600ab7bbcc",
+      "bytes": 4273,
+      "sha256": "7f6831eebc1e7e1daea68afa02c76d20521c3381438c26eb6a0b3c7891d6a87c",
+      "equal": true
+    }
+  ]
+}

@@ -34,3 +34,7 @@ head固定V1只读下载遇TLS EOF，没有降低TLS保护。本批实际挂载h
 已向用户交接两份真实链接，请当前同队dongdongjiaqi本人运行并回传副本Version/SV。先XR0验证共同部署，再立即XD960；用户要求同批提交、不等待首份正式分数。当前额度不足两份，需在正式动作时重新核对；若仍不足优先XR0，不自动跨周期提交。
 
 当前没有可供验收的队友运行、输出或正式回执，因此不得声称评分完成或提分。历史D960显示0.948与G1持平；XD960在x138上的收益UNKNOWN。详见实验目录的队友交接、platform_ledger、execution_status、platform_template_readback及GitHub回读。
+
+## GitHub 回读
+
+冻结源码commit `8bf74286f48e0aec40e08efbdda86e387f210425`：23/23文件字节一致。部署与交接commit `e591749594da16013c5e3b01df78e8e853627ede`：8/8文件字节一致且远端分支HEAD一致。机器验收的完整GPU/Public条件尚未满足，不能给出COMPLETED_VERIFIED。仓库无本批可运行的GitHub Actions工作流，不虚称CI通过。
