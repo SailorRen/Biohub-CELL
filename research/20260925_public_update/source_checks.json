@@ -1,0 +1,99 @@
+{
+  "observed_at": "2026-09-25T14:09:26.224121+08:00",
+  "scope": "bounded public discovery; not exhaustive or full notebook audit",
+  "kaggle_catalog": "first 20 unpinned entries of Hotness, Public Score, Recently Created, Recently Run; overlaps not counted as unique",
+  "github_query": "biohub tracking, sorted updated, first 15 repositories",
+  "source_files": [
+    {
+      "path": "kunal/biohub-cell-tracking.ipynb",
+      "bytes": 266063,
+      "sha256": "9cd5d1490dfdd434b21027c4e934478f9def530c6670a2a86f5480b03b5d696e"
+    },
+    {
+      "path": "embryos/biohub-exp003-two-embryos.ipynb",
+      "bytes": 40594,
+      "sha256": "b0d7de07bf34e0d104e6ed5e4035c8501a6b42aae9fe5dfc3b3625388ffe8bd8"
+    },
+    {
+      "path": "x138/biohub-x138.ipynb",
+      "bytes": 268025,
+      "sha256": "6b655e39bbfd2d3d6c762badea69847d3f00f5b548f385cb01b07ee2600fde6d"
+    },
+    {
+      "path": "github/alvaromendizabal/RESULTS.md",
+      "bytes": 4939,
+      "sha256": "b24e0ef00c30544c909b87a0e00e8fc5942d82b04969c3c0038ffcdea088fb9f"
+    },
+    {
+      "path": "github/JunhaoLiXD/EXPERIMENTS.md",
+      "bytes": 5059,
+      "sha256": "9cfec16c5c6662faf6618a0481665c0c6fced39239629aca45474bfbbcd1d84c"
+    },
+    {
+      "path": "github/JunhaoLiXD/README.md",
+      "bytes": 4493,
+      "sha256": "470f92af9f4c294302db99900c4ae3cc17949ad3b155d2e9cf1abab7183e10d4"
+    },
+    {
+      "path": "github/JunhaoLiXD/experiments/exp_064_x138_verbatim_repro/experiment.json",
+      "bytes": 11843,
+      "sha256": "c30aa568fdd218a660f8851dab2d5020686764a7d1f6899b701acfd54bb29a8e"
+    },
+    {
+      "path": "github/JunhaoLiXD/experiments/exp_064_x138_verbatim_repro/review.md",
+      "bytes": 3484,
+      "sha256": "7b88682fadc301473166185019fd070b3093ebcd89d2592e3d640a37fc7b702c"
+    },
+    {
+      "path": "github/pathik1511/README.md",
+      "bytes": 2784,
+      "sha256": "20d1d64a46527d7eafc5a1c7653347a8753cfee0e32673123c7048ba5281aebb"
+    },
+    {
+      "path": "github/kito2718/README.md",
+      "bytes": 3206,
+      "sha256": "80a70b609383e2707681e873e5dab125caa5b5483f1fd90abdd5df0c2a0eea9c"
+    },
+    {
+      "path": "github/kito2718/working/s7_049_boundary_calibration/s7_049_boundary_calibration.ipynb",
+      "bytes": 211501,
+      "sha256": "6e22382947bcd79a4b3e95f045f74b2a7722c27cbb43f29fb73288a77b77478b"
+    },
+    {
+      "path": "github/kito2718/working/s7_048_true_morphology_mobility/s7_048_true_morphology_mobility.ipynb",
+      "bytes": 211744,
+      "sha256": "e349f425ae9ddf0d8f479ca872190c5488fa4cc40e2b098c0ad50174f0e01bb3"
+    },
+    {
+      "path": "github/kito2718/s7_summary/s7_summary.md",
+      "bytes": 110527,
+      "sha256": "abb56e224fd8b0d75c6deaf834eb7370134ca38717fc0749800ce367939ccabd"
+    },
+    {
+      "path": "optimized/optimized-biohub-max-score.ipynb",
+      "bytes": 329564,
+      "sha256": "371fc1f9f4f20f692e0586616ff7d3eab4621d167f6c78516d3243c5a4fddfab"
+    }
+  ],
+  "x138_kunal_nonempty_code_cells": 12,
+  "x138_kunal_ast_equal": true,
+  "x138_version": 1,
+  "x138_sv": 351539814,
+  "x138_public_display": "0.953",
+  "optimized_latest_version": 4,
+  "optimized_latest_sv": 352554580,
+  "optimized_latest_ui": "You are viewing the last run of the kernel, which had an error.",
+  "optimized_0910_belongs_to": {
+    "version": 1,
+    "sv": 338260673
+  },
+  "platform_writes": 0,
+  "model_runs": 0,
+  "submissions": 0,
+  "limitations": [
+    "Kito 048/049 source functions inspected, not full pipeline audit",
+    "Third-party local metrics and submission states are AUTHOR_CLAIM",
+    "No access to private solutions; no independent reproduction",
+    "Discussion 742266 main post and visible comments read; collapsed replies not exhaustive"
+  ]
+}
