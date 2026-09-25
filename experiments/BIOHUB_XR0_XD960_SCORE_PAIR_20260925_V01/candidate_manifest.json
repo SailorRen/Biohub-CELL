@@ -1,0 +1,154 @@
+{
+  "task": "BIOHUB_XR0_XD960_SCORE_PAIR_20260925_V01",
+  "source_sha256": "6b655e39bbfd2d3d6c762badea69847d3f00f5b548f385cb01b07ee2600fde6d",
+  "development_base": "6205f21d9366abcc7d39d34f41dc609eb10fc77b",
+  "research_base": "8ce433abbbbab610e5f985aac67c41479c1b3cb3",
+  "source_base": "d01c627a3006455d7ac3f4351c76ddf1fd9f4eb2",
+  "inputs": [
+    {
+      "ref": "pilkwang/biohub-tracking-support-pack-50ep-v1",
+      "version": 10,
+      "license": "CC0-1.0",
+      "evidence": "x138 V1 Input source details; official dataset metadata"
+    },
+    {
+      "ref": "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+      "version": 2,
+      "license": "CC0-1.0",
+      "evidence": "x138 V1 Input source details; official dataset metadata"
+    },
+    {
+      "ref": "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+      "version": 5,
+      "license": "CC0-1.0",
+      "evidence": "x138 V1 Input source details; official dataset metadata"
+    },
+    {
+      "ref": "anvithpothula/biohub-v1284-head-s075",
+      "version": 1,
+      "license": "CC0-1.0",
+      "evidence": "x138 V1 Input source details; official dataset metadata"
+    }
+  ],
+  "head_sha256": "625a0d9340f48193f2ec294fc2d81c5bb3c03087eab78ef0ae998a9c4c7da00c",
+  "head_bytes": 33913,
+  "weight_assertions_retained": {
+    "primary": "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771",
+    "secondary": "9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f",
+    "deepcenter": "8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0"
+  },
+  "candidates": {
+    "XR0": {
+      "slug": "sailorren/biohub-x138-xr0-score-20260925",
+      "notebook_sha256": "27480ba0f73f5b0642dc214bae768280ba084c5162d84c26717adc10f8e21d24",
+      "code_cell_sha256": [
+        "a8863e2afba58eca19e62d872edf459b0ffcc8f8bb6d5d206992c92047b8f9d3",
+        "99198956a4c7725d85c6aab0d478368749824801716c6d39cf5bf915187ac500",
+        "18d436971ad2de603a4d30dd6f8e6e68be8ef53fc15dee82b272ccd1e7137be5",
+        "bb66c8563a3ae994f0eac6f63ea6989fa7de716aeeef75b8c157f96d84c22980",
+        "f4da12c5e885570cd846b59aa10d7393d985db673264987af5965296fc8bc971",
+        "1b2f7d09340bb173bb9a4767ef04fba593d0e23892197b3df8ab187bba905c6d",
+        "c300805e0268602d76042dd271bcc3224fda6af2a52569e16bebc446701d66a5",
+        "7400441b355cbe09311e9c638c44264e374ad448d9ab1020b9d5866746e84ee7",
+        "54ed30a2f73355f369c112057570e9dd6a37e7f5521a6baf9ccdf4a8fc4ba6f8",
+        "3986eaba6600507225a7140c033c14ae039a4fa95b3602806b43a8f2f11d90a0",
+        "ece3664cf924f36f3b838bac34fa636e67a5c865e6bf21ab61ff086bd1f87dfb",
+        "1b69f438acf6f21117acb50f1b42816a5da627c4dcec80b8e76372ef11793f15"
+      ],
+      "threshold": 0.965,
+      "velocity": 0.5,
+      "readmit_min_score": 0.965,
+      "kernel": null,
+      "owner": null,
+      "version": null,
+      "sv": null,
+      "submission_id": null,
+      "public": null,
+      "execution": "NOT_RUN",
+      "deployment": "NOT_CREATED",
+      "requested_metadata": {
+        "id": "sailorren/biohub-x138-xr0-score-20260925",
+        "title": "biohub-x138-xr0-score-20260925",
+        "code_file": "candidate.ipynb",
+        "language": "python",
+        "kernel_type": "notebook",
+        "is_private": true,
+        "enable_gpu": true,
+        "enable_tpu": false,
+        "enable_internet": false,
+        "keywords": [
+          "gpu"
+        ],
+        "dataset_sources": [
+          "pilkwang/biohub-tracking-support-pack-50ep-v1/10",
+          "pilkwang/biohub-temporal-unet3d-seed314159-v1/2",
+          "pilkwang/biohub-deepcenter-unet3d-center-prior-v1/5",
+          "anvithpothula/biohub-v1284-head-s075/1"
+        ],
+        "kernel_sources": [],
+        "competition_sources": [
+          "biohub-cell-tracking-during-development"
+        ],
+        "model_sources": [],
+        "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+        "machine_shape": "NvidiaTeslaT4"
+      }
+    },
+    "XD960": {
+      "slug": "sailorren/biohub-x138-xd960-score-20260925",
+      "notebook_sha256": "aa6e9913b258c4c6a55618eae85469d4178172ea1860574347dffe760304b325",
+      "code_cell_sha256": [
+        "5620779ff0778403aa043e578c661e25cbaccc371261a94e087821411232fd56",
+        "8b879c49513fc14316d0bb27b4da0a9551ccd553a4d78334f84180ccf7e9f1ae",
+        "18d436971ad2de603a4d30dd6f8e6e68be8ef53fc15dee82b272ccd1e7137be5",
+        "bb66c8563a3ae994f0eac6f63ea6989fa7de716aeeef75b8c157f96d84c22980",
+        "f4da12c5e885570cd846b59aa10d7393d985db673264987af5965296fc8bc971",
+        "1b2f7d09340bb173bb9a4767ef04fba593d0e23892197b3df8ab187bba905c6d",
+        "c300805e0268602d76042dd271bcc3224fda6af2a52569e16bebc446701d66a5",
+        "7400441b355cbe09311e9c638c44264e374ad448d9ab1020b9d5866746e84ee7",
+        "54ed30a2f73355f369c112057570e9dd6a37e7f5521a6baf9ccdf4a8fc4ba6f8",
+        "3986eaba6600507225a7140c033c14ae039a4fa95b3602806b43a8f2f11d90a0",
+        "ece3664cf924f36f3b838bac34fa636e67a5c865e6bf21ab61ff086bd1f87dfb",
+        "1b69f438acf6f21117acb50f1b42816a5da627c4dcec80b8e76372ef11793f15"
+      ],
+      "threshold": 0.96,
+      "velocity": 0.5,
+      "readmit_min_score": 0.965,
+      "kernel": null,
+      "owner": null,
+      "version": null,
+      "sv": null,
+      "submission_id": null,
+      "public": null,
+      "execution": "NOT_RUN",
+      "deployment": "NOT_CREATED",
+      "requested_metadata": {
+        "id": "sailorren/biohub-x138-xd960-score-20260925",
+        "title": "biohub-x138-xd960-score-20260925",
+        "code_file": "candidate.ipynb",
+        "language": "python",
+        "kernel_type": "notebook",
+        "is_private": true,
+        "enable_gpu": true,
+        "enable_tpu": false,
+        "enable_internet": false,
+        "keywords": [
+          "gpu"
+        ],
+        "dataset_sources": [
+          "pilkwang/biohub-tracking-support-pack-50ep-v1/10",
+          "pilkwang/biohub-temporal-unet3d-seed314159-v1/2",
+          "pilkwang/biohub-deepcenter-unet3d-center-prior-v1/5",
+          "anvithpothula/biohub-v1284-head-s075/1"
+        ],
+        "kernel_sources": [],
+        "competition_sources": [
+          "biohub-cell-tracking-during-development"
+        ],
+        "model_sources": [],
+        "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+        "machine_shape": "NvidiaTeslaT4"
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "task": "BIOHUB_XR0_XD960_SCORE_PAIR_20260925_V01",
+  "limits": {
+    "gpu_save_and_run": 2,
+    "shared_evidenced_repair": 1,
+    "submission": 2,
+    "per_candidate_submission": 1,
+    "formal_retry": 0
+  },
+  "events": [],
+  "consumed": {
+    "template_save": 0,
+    "gpu_save_and_run": 0,
+    "shared_repair": 0,
+    "submission": 0,
+    "training": 0,
+    "dataset_write": 0,
+    "final_selection_change": 0
+  },
+  "teammate": "dongdongjiaqi",
+  "teammate_current_team_verified": true,
+  "teammate_gpu_balance": "USER_CONFIRMED_SUFFICIENT",
+  "teammate_gpu_balance_independent": "UNKNOWN"
+}

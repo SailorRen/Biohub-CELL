@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_XR0_XD960_SCORE_PAIR_20260925_V01",
+  "goal": "XR0及XD960各取得一次完整GPU运行、合法输出、队友本人正式提交及实际Public，保留A与最终选择",
+  "scope": {
+    "in_scope": [
+      "指定任务分支、两份Private母版、同队Can view、队友本人运行提交、小型证据同步"
+    ],
+    "out_of_scope": [
+      "训练",
+      "第三候选",
+      "CPU或Colab",
+      "Dataset写入",
+      "旧版本修改",
+      "最终选择修改",
+      "凭据或代登录",
+      "后台监控"
+    ],
+    "budget_limits": {
+      "planned_gpu_runs": 2,
+      "shared_evidenced_engineering_repair_run": 1,
+      "formal_submissions": 2,
+      "per_candidate_submission": 1,
+      "formal_retries": 0
+    }
+  },
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "acceptance": [
+    {
+      "id": "local-source-checks",
+      "type": "json",
+      "path": "experiments/BIOHUB_XR0_XD960_SCORE_PAIR_20260925_V01/checks.json",
+      "assertions": [
+        {
+          "pointer": "/status",
+          "op": "equals",
+          "value": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "two-real-scores",
+      "type": "json",
+      "path": "experiments/BIOHUB_XR0_XD960_SCORE_PAIR_20260925_V01/execution_status.json",
+      "assertions": [
+        {
+          "pointer": "/XR0/gpu_output_verified",
+          "op": "equals",
+          "value": true
+        },
+        {
+          "pointer": "/XD960/gpu_output_verified",
+          "op": "equals",
+          "value": true
+        },
+        {
+          "pointer": "/XR0/public",
+          "op": "not_empty"
+        },
+        {
+          "pointer": "/XD960/public",
+          "op": "not_empty"
+        }
+      ]
+    },
+    {
+      "id": "remote-readback",
+      "type": "json",
+      "path": "experiments/BIOHUB_XR0_XD960_SCORE_PAIR_20260925_V01/github_readback.json",
+      "assertions": [
+        {
+          "pointer": "/all_equal",
+          "op": "equals",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "git-state",
+      "type": "git",
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true
+    },
+    {
+      "id": "real-platform-evidence",
+      "type": "manual",
+      "reason": "队友本人操作及精确Version/SV/实际CSV/模块消费/固定输入/权重断言/正式Public须由权威平台证据复核",
+      "evidence_needed": [
+        "完整GPU日志与CSV检查",
+        "每候选唯一submission及Public",
+        "实际镜像GPU及版本输入",
+        "未改变A或最终选择"
+      ]
+    }
+  ]
+}

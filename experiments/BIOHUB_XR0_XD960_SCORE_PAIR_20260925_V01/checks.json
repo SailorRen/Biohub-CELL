@@ -1,0 +1,214 @@
+{
+  "status": "PASS",
+  "count": 41,
+  "checks": [
+    {
+      "id": "actual_support_sha256",
+      "pass": true
+    },
+    {
+      "id": "XR0_12_cells",
+      "pass": true
+    },
+    {
+      "id": "XR0_cell_1_ast",
+      "pass": true
+    },
+    {
+      "id": "XR0_cell_2_ast",
+      "pass": true
+    },
+    {
+      "id": "XR0_cell_3_ast",
+      "pass": true
+    },
+    {
+      "id": "XR0_cell_4_ast",
+      "pass": true
+    },
+    {
+      "id": "XR0_cell_5_ast",
+      "pass": true
+    },
+    {
+      "id": "XR0_cell_6_ast",
+      "pass": true
+    },
+    {
+      "id": "XR0_cell_7_ast",
+      "pass": true
+    },
+    {
+      "id": "XR0_cell_8_ast",
+      "pass": true
+    },
+    {
+      "id": "XR0_cell_9_ast",
+      "pass": true
+    },
+    {
+      "id": "XR0_cell_10_ast",
+      "pass": true
+    },
+    {
+      "id": "XR0_cell_11_ast",
+      "pass": true
+    },
+    {
+      "id": "XR0_cell_12_ast",
+      "pass": true
+    },
+    {
+      "id": "XR0_exact_allowed_code_diff",
+      "pass": true
+    },
+    {
+      "id": "XR0_no_outputs",
+      "pass": true
+    },
+    {
+      "id": "XR0_effective_parameters",
+      "pass": true
+    },
+    {
+      "id": "XR0_dynamic_patches_actual_support",
+      "pass": true
+    },
+    {
+      "id": "XR0_cache_before_head",
+      "pass": true
+    },
+    {
+      "id": "XR0_threshold_real_cli_path",
+      "pass": true
+    },
+    {
+      "id": "XR0_patch_no_skip_warning",
+      "pass": true
+    },
+    {
+      "id": "XD960_12_cells",
+      "pass": true
+    },
+    {
+      "id": "XD960_cell_1_ast",
+      "pass": true
+    },
+    {
+      "id": "XD960_cell_2_ast",
+      "pass": true
+    },
+    {
+      "id": "XD960_cell_3_ast",
+      "pass": true
+    },
+    {
+      "id": "XD960_cell_4_ast",
+      "pass": true
+    },
+    {
+      "id": "XD960_cell_5_ast",
+      "pass": true
+    },
+    {
+      "id": "XD960_cell_6_ast",
+      "pass": true
+    },
+    {
+      "id": "XD960_cell_7_ast",
+      "pass": true
+    },
+    {
+      "id": "XD960_cell_8_ast",
+      "pass": true
+    },
+    {
+      "id": "XD960_cell_9_ast",
+      "pass": true
+    },
+    {
+      "id": "XD960_cell_10_ast",
+      "pass": true
+    },
+    {
+      "id": "XD960_cell_11_ast",
+      "pass": true
+    },
+    {
+      "id": "XD960_cell_12_ast",
+      "pass": true
+    },
+    {
+      "id": "XD960_exact_allowed_code_diff",
+      "pass": true
+    },
+    {
+      "id": "XD960_no_outputs",
+      "pass": true
+    },
+    {
+      "id": "XD960_effective_parameters",
+      "pass": true
+    },
+    {
+      "id": "XD960_dynamic_patches_actual_support",
+      "pass": true
+    },
+    {
+      "id": "XD960_cache_before_head",
+      "pass": true
+    },
+    {
+      "id": "XD960_threshold_real_cli_path",
+      "pass": true
+    },
+    {
+      "id": "XD960_patch_no_skip_warning",
+      "pass": true
+    }
+  ],
+  "embedded_complete_python_strings": [
+    {
+      "cell": 5,
+      "line": 193,
+      "sha256": "89a3fcd46cdf5cd5779f12d7d98616831a228d63d88694759e374e010b4349fa"
+    },
+    {
+      "cell": 5,
+      "line": 219,
+      "sha256": "ea380b9a7ab07830ca1fd7e50e44c555ffd023e0f86c524348c7c5fadc956390"
+    },
+    {
+      "cell": 5,
+      "line": 511,
+      "sha256": "34a2b4653f35ae73b5a7bdb46a095c812da5533c875cd1cdc4db83e4c3fd303c"
+    },
+    {
+      "cell": 5,
+      "line": 524,
+      "sha256": "58ca4ad8cf06d51845d5f15dd5340820f0765c9fa9842c038cb4765debbc9bba"
+    },
+    {
+      "cell": 5,
+      "line": 524,
+      "sha256": "e9962bb2a141cca086f3ed87a703fdf9cb64b98416293845450b80c9b24ecdc4"
+    },
+    {
+      "cell": 5,
+      "line": 523,
+      "sha256": "58ca4ad8cf06d51845d5f15dd5340820f0765c9fa9842c038cb4765debbc9bba"
+    },
+    {
+      "cell": 5,
+      "line": 252,
+      "sha256": "56b812ea5bb285487888fc102ac5124b09fff466be9ac41135c9b9387721fd9c"
+    },
+    {
+      "cell": 5,
+      "line": 488,
+      "sha256": "8faca9a681c8c1150223541b022bb4db0acb162fba771fbdeceadda42988937c"
+    }
+  ],
+  "scope": "All-cell syntax and exact diff, config ordering/consumption, actual original support prediction source dynamic patch application and compiled result. No GPU/model execution, offline package compatibility, head load or actual CSV validation. Those remain required in teammate full GPU run.",
+  "model_runs": 0
+}

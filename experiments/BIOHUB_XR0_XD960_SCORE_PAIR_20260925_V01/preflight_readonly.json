@@ -1,0 +1,613 @@
+{
+  "observed_at": "2026-09-25T07:20:49.137784+00:00",
+  "principal": "sailorren",
+  "platform_writes": 0,
+  "competition": {
+    "max_daily_submissions": 5,
+    "submissions_disabled": false,
+    "user_has_entered": true,
+    "is_kernels_submissions_only": true,
+    "deadline": "2026-09-29 23:59:00"
+  },
+  "submissions_complete": true,
+  "submissions": [
+    {
+      "id": 56539854,
+      "date": "2026-09-25 04:26:44.383000",
+      "description": "Notebook Biohub Cell Tracking | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "",
+      "error": "Your notebook hit an unhandled error while rerunning your code. Note that the hidden dataset can be larger/smaller/different than the public dataset"
+    },
+    {
+      "id": 56539761,
+      "date": "2026-09-25 04:21:25.563000",
+      "description": "Notebook biohub-x138-v025-team-20260924 | Version 3",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "",
+      "error": "Your notebook hit an unhandled error while rerunning your code. Note that the hidden dataset can be larger/smaller/different than the public dataset"
+    },
+    {
+      "id": 56539537,
+      "date": "2026-09-25 04:08:55.790000",
+      "description": "Notebook biohub-x138-v025-team-20260924 | Version 2",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "",
+      "error": "Your notebook hit an unhandled error while rerunning your code. Note that the hidden dataset can be larger/smaller/different than the public dataset"
+    },
+    {
+      "id": 56539500,
+      "date": "2026-09-25 04:07:06.817000",
+      "description": "Notebook biohub-x138-exact-team-20260924 | Version 2",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "",
+      "error": "Your notebook hit an unhandled error while rerunning your code. Note that the hidden dataset can be larger/smaller/different than the public dataset"
+    },
+    {
+      "id": 56509184,
+      "date": "2026-09-24 02:23:30.040000",
+      "description": "Notebook biohub-a950-v025-l020p-20260923 ecbbe6 | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "",
+      "error": "Your notebook hit an unhandled error while rerunning your code. Note that the hidden dataset can be larger/smaller/different than the public dataset"
+    },
+    {
+      "id": 56508111,
+      "date": "2026-09-24 01:18:28.617000",
+      "description": "Notebook biohub-a950-v0375-20260923 f22477 | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.948",
+      "error": ""
+    },
+    {
+      "id": 56508085,
+      "date": "2026-09-24 01:17:19.083000",
+      "description": "Notebook biohub-a950-v0375-20260923 | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.948",
+      "error": ""
+    },
+    {
+      "id": 56492838,
+      "date": "2026-09-23 12:17:33.050000",
+      "description": "Notebook biohub-d960-l030p-20260922 c2b4c1 | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.948",
+      "error": ""
+    },
+    {
+      "id": 56492412,
+      "date": "2026-09-23 11:59:07.047000",
+      "description": "Notebook biohub-d960-l030p-20260922 | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.948",
+      "error": ""
+    },
+    {
+      "id": 56456090,
+      "date": "2026-09-22 06:40:45.273000",
+      "description": "BIOHUB_TWO_WAVE_20260922_V01 A V025 V1 SV351739212",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.950",
+      "error": ""
+    },
+    {
+      "id": 56447707,
+      "date": "2026-09-22 01:09:58.423000",
+      "description": "Notebook Biohub Geometric Fusion | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "",
+      "error": "Your submission notebook exceeded the allowed runtime. Review the competition's Code Requirements page for the time limits. Note that the hidden dataset can be larger/smaller/different than the public dataset."
+    },
+    {
+      "id": 56445846,
+      "date": "2026-09-21 23:55:05.440000",
+      "description": "BIOHUB_DF960_20260921_V01 DF960 V1 SV351617874",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.948",
+      "error": ""
+    },
+    {
+      "id": 56419440,
+      "date": "2026-09-21 06:36:48.643000",
+      "description": "BIOHUB_SCORE_TRIO_20260921_V01 H30 V1 SV351467088",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.947",
+      "error": ""
+    },
+    {
+      "id": 56416053,
+      "date": "2026-09-21 04:21:51.023000",
+      "description": "BIOHUB_SCORE_TRIO_20260921_V01 R00 V1 SV351442164",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.948",
+      "error": ""
+    },
+    {
+      "id": 56416049,
+      "date": "2026-09-21 04:21:28.967000",
+      "description": "BIOHUB_SCORE_TRIO_20260921_V01 D960 V1 SV351441983",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.948",
+      "error": ""
+    },
+    {
+      "id": 56411991,
+      "date": "2026-09-21 02:18:47.903000",
+      "description": "Notebook biohub-v1-grouped ac4fdc | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.943",
+      "error": ""
+    },
+    {
+      "id": 56407804,
+      "date": "2026-09-20 23:28:11.380000",
+      "description": "BIOHUB_SCORE_PAIR2_20260920_V01 G58 V1 SV351350591",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.948",
+      "error": ""
+    },
+    {
+      "id": 56407778,
+      "date": "2026-09-20 23:26:30.763000",
+      "description": "BIOHUB_SCORE_PAIR2_20260920_V01 S50 V1 SV351350449",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.943",
+      "error": ""
+    },
+    {
+      "id": 56388962,
+      "date": "2026-09-20 09:20:10.077000",
+      "description": "Notebook biohub-lf-dctta025-sectta1 | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.947",
+      "error": ""
+    },
+    {
+      "id": 56384003,
+      "date": "2026-09-20 06:52:08.977000",
+      "description": "BIOHUB_DIVGATE_PAIR_20260920_V01 B22 V1 SV351207989",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.948",
+      "error": ""
+    },
+    {
+      "id": 56383942,
+      "date": "2026-09-20 06:50:30.027000",
+      "description": "BIOHUB_DIVGATE_PAIR_20260920_V01 A18 V1 SV351207161",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.948",
+      "error": ""
+    },
+    {
+      "id": 56379064,
+      "date": "2026-09-20 03:43:46.687000",
+      "description": "Notebook biohub-lf-dctta-v020 | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.947",
+      "error": ""
+    },
+    {
+      "id": 56375774,
+      "date": "2026-09-20 01:22:51.800000",
+      "description": "BIOHUB_F1_FLOW_KAGGLE_20260918 F1 V1 SV351084196",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.948",
+      "error": ""
+    },
+    {
+      "id": 56351727,
+      "date": "2026-09-19 07:07:55.503000",
+      "description": "Notebook \ud83d\udd2c [0.146 PB] BioHub 4D Cell Tracking | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.146",
+      "error": ""
+    },
+    {
+      "id": 56346797,
+      "date": "2026-09-19 03:11:33.047000",
+      "description": "Notebook biohub-942tta-repro-20260907 | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.945",
+      "error": ""
+    },
+    {
+      "id": 56346069,
+      "date": "2026-09-19 02:31:24.857000",
+      "description": "Notebook biohub-lf-hoctveto-div-b | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.947",
+      "error": ""
+    },
+    {
+      "id": 56345834,
+      "date": "2026-09-19 02:16:54.763000",
+      "description": "Notebook Biohub Top 3 Push V50 Streamlined SOTA | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.907",
+      "error": ""
+    },
+    {
+      "id": 56333225,
+      "date": "2026-09-18 15:03:02.347000",
+      "description": "Notebook biohub-940e | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.940",
+      "error": ""
+    },
+    {
+      "id": 56332456,
+      "date": "2026-09-18 14:26:26.470000",
+      "description": "Notebook 0.938 | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.938",
+      "error": ""
+    },
+    {
+      "id": 56332306,
+      "date": "2026-09-18 14:18:19.537000",
+      "description": "Notebook biohub-repro059-public-0947-exact-copy | Version 2",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.947",
+      "error": ""
+    },
+    {
+      "id": 56332302,
+      "date": "2026-09-18 14:18:10.213000",
+      "description": "Notebook Biohub frontier947 gapfill det096 v1 | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.947",
+      "error": ""
+    },
+    {
+      "id": 56332275,
+      "date": "2026-09-18 14:17:11.243000",
+      "description": "Notebook biohub-repro059-public-0947-exact-copy | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.947",
+      "error": ""
+    },
+    {
+      "id": 56270217,
+      "date": "2026-09-16 05:13:20.153000",
+      "description": "BIOHUB_SPRINT01_20260916 G1 V1 SV350197436",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.948",
+      "error": ""
+    },
+    {
+      "id": 56226396,
+      "date": "2026-09-14 08:30:01.713000",
+      "description": "DIVISION_TRAIN_20260914 | V1 | SV349707105 | SHA256 35ec0b376b94843722ac9e8107a0929ccf9a49f94d7bbac99b3093c4618ee123",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.945",
+      "error": ""
+    },
+    {
+      "id": 56222238,
+      "date": "2026-09-14 05:13:21.670000",
+      "description": "TARGET950_RUN_20260914 | V1 | SV349666428 | SHA256 cdefc823f59d0490e2ced01959e026ebfdd5c4b6f41d74ccb1c7bac4f61a6230",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.947",
+      "error": ""
+    },
+    {
+      "id": 56160258,
+      "date": "2026-09-11 06:32:14.947000",
+      "description": "Notebook Biohub Lineage Forge \u2014 Precision Tracking | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.947",
+      "error": ""
+    },
+    {
+      "id": 56113466,
+      "date": "2026-09-09 04:27:08.340000",
+      "description": "LINEFIT_BOUNDARY_20260909 | V1 | SV348415815 | SHA256 4271519ed44e28da93e89128fc6e39515f954e96b8c2d0a9b102c23f3e08f11b",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.946",
+      "error": ""
+    },
+    {
+      "id": 56094423,
+      "date": "2026-09-08 08:27:17.703000",
+      "description": "PUBLIC946_TTA_20260908 C2 | V1 | SV348150127 | SHA256 2f714f4159667aed98d4fa9b49256da2e44c29b8697c703f253a4ab765d04759",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.946",
+      "error": ""
+    },
+    {
+      "id": 56092872,
+      "date": "2026-09-08 06:49:04.480000",
+      "description": "PUBLIC946_TTA_20260908 C1 | V1 | SV348131494 | SHA256 accb328eeae3732101711c8d9b7e7a2c267ccd787c7228e72244b55f5488331f",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.940",
+      "error": ""
+    },
+    {
+      "id": 56091397,
+      "date": "2026-09-08 05:21:50.403000",
+      "description": "PUBLIC946_TTA_20260908 B0 | V1 | SV348114666 | SHA256 1ae0ac1beb9599308119c380056c05ebc69c230395b37bc3d0966c3107153f19",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.946",
+      "error": ""
+    },
+    {
+      "id": 56087974,
+      "date": "2026-09-08 01:20:28",
+      "description": "Notebook Biohub Harmonic Fusion | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.946",
+      "error": ""
+    },
+    {
+      "id": 56069192,
+      "date": "2026-09-07 04:56:50.697000",
+      "description": "V21A parent9 dc026 | Version 1 | SV 347862850 | SHA256 9537aa87092fe2e0d130b9b23ffffb9796b6d6ee2d29b366c09bebce044223e0",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.942",
+      "error": ""
+    },
+    {
+      "id": 56066361,
+      "date": "2026-09-07 01:33:01.517000",
+      "description": "Notebook Biohub  LB 942 | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.942",
+      "error": ""
+    },
+    {
+      "id": 56066312,
+      "date": "2026-09-07 01:29:36.053000",
+      "description": "Notebook biohub-run77 | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.942",
+      "error": ""
+    },
+    {
+      "id": 56025033,
+      "date": "2026-09-05 04:44:43.573000",
+      "description": "Notebook .941_biohub-fresh-adaptive-assoc | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.941",
+      "error": ""
+    },
+    {
+      "id": 56002593,
+      "date": "2026-09-04 01:46:40.747000",
+      "description": "Notebook biohub-v19c-dualwide-9-14-2-25 | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.940",
+      "error": ""
+    },
+    {
+      "id": 55978992,
+      "date": "2026-09-03 09:54:56.607000",
+      "description": "Notebook biohub-v19c-public0939-sis14-only | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.939",
+      "error": ""
+    },
+    {
+      "id": 55976559,
+      "date": "2026-09-03 07:05:14.430000",
+      "description": "Notebook biohub-div45-stack | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.938",
+      "error": ""
+    },
+    {
+      "id": 55976471,
+      "date": "2026-09-03 06:59:30.487000",
+      "description": "Notebook skkd | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.938",
+      "error": ""
+    },
+    {
+      "id": 55311118,
+      "date": "2026-08-07 01:34:26.140000",
+      "description": "Notebook Biohub Solution | Version 1",
+      "status": "SubmissionStatus.COMPLETE",
+      "public": "0.885",
+      "error": ""
+    }
+  ],
+  "kernels": {
+    "biohub-x138-exact-team-20260924-V2": {
+      "metadata": {
+        "id": 135684967,
+        "ref": "sailorren/biohub-x138-exact-team-20260924",
+        "title": "biohub-x138-exact-team-20260924",
+        "author": "Sailor Ren",
+        "slug": "biohub-x138-exact-team-20260924",
+        "lastRunTime": "2026-09-22T07:20:51.235Z",
+        "language": "python",
+        "kernelType": "notebook",
+        "isPrivate": true,
+        "enableGpu": false,
+        "enableInternet": false,
+        "datasetDataSources": [
+          "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+          "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+          "pilkwang/biohub-tracking-support-pack-50ep-v1",
+          "anvithpothula/biohub-v1284-head-s075"
+        ],
+        "competitionDataSources": [
+          "biohub-cell-tracking-during-development"
+        ],
+        "totalVotes": 1,
+        "enableTpu": false,
+        "currentVersionNumber": 2,
+        "dockerImage": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+        "machineShape": "None"
+      },
+      "sha256": "a28dae72c957f6c5993ab0f9dbddb9cb2dc8038b0283e2c80bae99dc8236e153",
+      "source_path": "/private/tmp/biohub-score-pair-private/biohub-x138-exact-team-20260924-V2.ipynb"
+    },
+    "biohub-x138-v025-team-20260924-V3": {
+      "metadata": {
+        "id": 135684985,
+        "ref": "sailorren/biohub-x138-v025-team-20260924",
+        "title": "biohub-x138-v025-team-20260924",
+        "author": "Sailor Ren",
+        "slug": "biohub-x138-v025-team-20260924",
+        "lastRunTime": "2026-09-22T07:20:52.958Z",
+        "language": "python",
+        "kernelType": "notebook",
+        "isPrivate": true,
+        "enableGpu": false,
+        "enableInternet": false,
+        "datasetDataSources": [
+          "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+          "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+          "pilkwang/biohub-tracking-support-pack-50ep-v1",
+          "anvithpothula/biohub-v1284-head-s075"
+        ],
+        "competitionDataSources": [
+          "biohub-cell-tracking-during-development"
+        ],
+        "totalVotes": 1,
+        "enableTpu": false,
+        "currentVersionNumber": 3,
+        "dockerImage": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+        "machineShape": "None"
+      },
+      "sha256": "39924942fb584438e7d1eb57b48352749506597915e6e3bdb46e6f55103821d2",
+      "source_path": "/private/tmp/biohub-score-pair-private/biohub-x138-v025-team-20260924-V3.ipynb"
+    }
+  },
+  "quota": {
+    "quotaRefreshTime": "2026-09-26T00:00:00.000Z",
+    "gpuQuota": {
+      "timeUsed": "22524.248.0s",
+      "timeReserved": "0s",
+      "totalTimeAllowed": "21600s",
+      "minimumTimeAllowed": "21600s",
+      "hasEverRun": true
+    },
+    "tpuQuota": {
+      "timeUsed": "0s",
+      "timeReserved": "0s",
+      "totalTimeAllowed": "72000s",
+      "minimumTimeAllowed": "72000s",
+      "hasEverRun": true
+    }
+  },
+  "own_refs": [
+    "sailorren/biohub-x138-v025-team-20260924",
+    "sailorren/biohub-x138-exact-team-20260924",
+    "sailorren/biohub-cpu-small-probe-20260923",
+    "sailorren/atlas-homework",
+    "sailorren/rsna-exp005-d01-e13-direct-runtime",
+    "sailorren/rsna-knee-exp008-d01-native384dense",
+    "sailorren/rsna-exp006-c02-v18-group-order-direct-score",
+    "sailorren/biohub-0-947-official-selector-20260914",
+    "sailorren/rsna-exp011-f01-fusion-rank-preserve",
+    "sailorren/rsna-exp002-baseline-contract-probe",
+    "sailorren/biohub-946-linefit-boundary-20260909",
+    "sailorren/biohub-946-c1-xy8-20260908",
+    "sailorren/rsna-exp004-c02-exp003-v18-group-row-order-score",
+    "sailorren/rsna-exp009-c1-raptor-reverse-ablation",
+    "sailorren/rsna-exp004-c01-exp002-e13-selector-score",
+    "sailorren/biohub-v21a-parent9-dc026",
+    "sailorren/kaggriculture-runtime-compatibility-test-v01",
+    "sailorren/biohub-946-c2-secondary-edge-tta-20260908",
+    "sailorren/rsna-exp010-w01-raptor-window-mask",
+    "sailorren/rsna-exp014-t01-resnet-study-train",
+    "sailorren/biohub-946-b0-repro-20260908",
+    "sailorren/biohub-division-train-20260914",
+    "sailorren/sbird",
+    "sailorren/biohub-cell-tracking",
+    "sailorren/biohub-a950-v025-l030p-20260923",
+    "sailorren/biohub-a950-v025-l020p-20260923",
+    "sailorren/biohub-a950-v0375-20260923",
+    "sailorren/notebook458ab760d4",
+    "sailorren/notebookeb5072ab09",
+    "sailorren/biohub-d960-l030p-20260922",
+    "sailorren/arc3-flashnext-asis",
+    "sailorren/biohub-0-951-sota-deepcenter-fast-ilp-19m",
+    "sailorren/biohub-a951-gshift",
+    "sailorren/biohub-d960-v025-20260922",
+    "sailorren/biohub-geometric-fusion",
+    "sailorren/biohub-df960-flow-20260921",
+    "sailorren/casmi26-quad-channel-evidence-ranker",
+    "sailorren/rsna-knee-dinosaur-v5",
+    "sailorren/biohub-g1-harmonic030-20260921",
+    "sailorren/biohub-g1-rescue-trigger000-20260921",
+    "sailorren/biohub-g1-det0960-20260921",
+    "sailorren/biohub-g1-gap058-20260920",
+    "sailorren/biohub-g1-secondary050-20260920",
+    "sailorren/biohub-g1-divgate022-20260920",
+    "sailorren/biohub-g1-divgate018-20260920",
+    "sailorren/biohub-f1-flow-prod-20260918",
+    "sailorren/biohub-f1-flow-diag-20260918",
+    "sailorren/best-agent-ranking",
+    "sailorren/biohub-frontier947-gapfill-det096-v1",
+    "sailorren/kag-v46-cash-compact-cloud-20260918-v1",
+    "sailorren/biohub-s02-h1-diagnostic-20260917",
+    "sailorren/rsna-exp014-c01-resnet-study",
+    "sailorren/rsna-exp013-t01-resnet-study-train",
+    "sailorren/biohub-sprint01-g1-frozen-inference-20260916",
+    "sailorren/biohub-sprint01-diagnostic-20260916",
+    "sailorren/kaggriculture-v41-fresh-train-20260915",
+    "sailorren/kaggriculture-v43-recovering-lost-harvests",
+    "sailorren/rsna-exp012-c01-ortho-fusion",
+    "sailorren/rsna-exp012-t01-orthofoundation-train",
+    "sailorren/kaggriculture-most-powerfull-route",
+    "sailorren/kaggriculture-structured-economic-policy-v2",
+    "sailorren/biohub-lineage-forge-precision-tracking",
+    "sailorren/notebooka4fc70fd19",
+    "sailorren/cohezion-rsna-knee-sota-ensemble",
+    "sailorren/kaggriculture-reactive-router",
+    "sailorren/shop-router-0908",
+    "sailorren/smartfarm-fresh-tf-lgbm-20260908-v1",
+    "sailorren/kaggriculture-smart-farm-strategy-lab",
+    "sailorren/kaggriculture-95-5-win-rate-via-replay-routing",
+    "sailorren/biohub-harmonic-fusion",
+    "sailorren/kaggriculture-psr-r2-tf-lgbm-20260907-v01",
+    "sailorren/rsna-exp009-b0-public-v5",
+    "sailorren/biohub-lb-942",
+    "sailorren/biohub-run77",
+    "sailorren/bend-the-knee-to-the-dinosaurs-all-public",
+    "sailorren/rsna-knee-0937-meniscus-resid-repro",
+    "sailorren/kaggriculture-public-state-router-74-5-win-rate",
+    "sailorren/941-biohub-fresh-adaptive-assoc",
+    "sailorren/biohub-v20b-two-embryo-radius-validation",
+    "sailorren/farming-score-v3-replay-revised",
+    "sailorren/biohub-v19c-dualwide-9-14-2-25",
+    "sailorren/biohub-v19c-public0939-sis14-only",
+    "sailorren/biohub-div45-stack",
+    "sailorren/0-938",
+    "sailorren/three-day-shop-router",
+    "sailorren/v29-r1-adaptive-market-hysteresis",
+    "sailorren/fieldbook-commit-for-three-days",
+    "sailorren/kaggriculture-tetsu-tf-lgbm-20260901-v01",
+    "sailorren/rsna-exp001-c01-baseline-runtime-derived-h01",
+    "sailorren/rsna-exp001-train-heads",
+    "sailorren/rsna-exp001-probe-features",
+    "sailorren/shape-the-shop-work-the-pasture-kaggriculture",
+    "sailorren/shape-the-shop-work-the-pasture-top-10",
+    "sailorren/rsna-knee-dinosaur-v5-repro",
+    "sailorren/25-27-strict-future-v27-midgame-meta-reset",
+    "sailorren/kaggriculture-exp010-p100-diag-fe461f92",
+    "sailorren/kaggriculture-exp010-transformer-train-v01",
+    "sailorren/kaggriculture-replay-transformer-intelligence-v01",
+    "sailorren/kaggriculture-replay-intelligence-training-v02",
+    "sailorren/codex-sol-eclipse-alakazam-e149f2",
+    "sailorren/probablity-v2",
+    "sailorren/codex-sol-eclipse-alakazam",
+    "sailorren/grimmsnarl-ex-damage-transfer-control",
+    "sailorren/44-46-strict-future-top-30-v22-price-impact",
+    "sailorren/biohub-solution",
+    "sailorren/jed-slow-multipost",
+    "sailorren/41-49-future-unseen-v19-replication-to-control",
+    "sailorren/notebook109bdbe907",
+    "sailorren/notebook40437bdb4f",
+    "sailorren/neurogolf-2026-improved-starter-notebook",
+    "sailorren/tinker-adapter-to-ready-to-submit",
+    "sailorren/kaggle-pro-feedback-train",
+    "sailorren/rossmann3-homework",
+    "sailorren/boston-homework"
+  ],
+  "own_complete": true
+}

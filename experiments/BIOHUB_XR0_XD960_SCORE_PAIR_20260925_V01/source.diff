@@ -1,0 +1,22 @@
+--- original/cell1
++++ XD960/cell1
+@@ -10,7 +10,7 @@
+ BIOHUB_SCORE_AXIS = 'public 0.939 base + holdout-selected post-process configuration'
+ 
+ os.environ["BIOHUB_OUTPUT_FILTER_SHORT_TRACKS"] = "1"
+-os.environ["BIOHUB_DET_THRESHOLD"] = "0.965"
++os.environ["BIOHUB_DET_THRESHOLD"] = "0.960"
+ os.environ["BIOHUB_MOTION_RELINK_LEARNED_BONUS"] = '1.0'
+ os.environ["BIOHUB_ILP_APPEARANCE_WEIGHT"] = "0.0"
+ os.environ["BIOHUB_ILP_DISAPPEARANCE_WEIGHT"] = "2"
+--- original/cell2
++++ XD960/cell2
+@@ -4,7 +4,7 @@
+ import os as _guard_os
+ 
+ _EXPECTED_NUMERIC = {
+-    "BIOHUB_DET_THRESHOLD": 0.965,
++    "BIOHUB_DET_THRESHOLD": 0.960,
+     "BIOHUB_ILP_APPEARANCE_WEIGHT": 0.0,
+     "BIOHUB_ILP_DISAPPEARANCE_WEIGHT": 2,
+     "BIOHUB_GAP_CLOSE_UM": 5.0,
