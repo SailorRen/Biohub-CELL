@@ -7,9 +7,48 @@
     "per_candidate_submission": 1,
     "formal_retry": 0
   },
-  "events": [],
+  "events": [
+    {
+      "action": "XR0_CREATE_INTENT",
+      "at": "2026-09-25T07:31:41.016185+00:00",
+      "source_sv": 351539814,
+      "requested_slug": "sailorren/biohub-x138-xr0-score-20260925",
+      "source_commit": "8bf74286f48e0aec40e08efbdda86e387f210425",
+      "source_readback_files": 23
+    },
+    {
+      "action": "XR0_TEMPLATE_QUICK_SAVE_CONFIRMED",
+      "at": "2026-09-25T07:43:22.460082+00:00",
+      "kernel": 135784801,
+      "version": 1,
+      "sv": 352619216,
+      "gpu_enabled": true,
+      "full_gpu_run": false,
+      "private": true,
+      "teammate": "dongdongjiaqi",
+      "permission": "Can view"
+    },
+    {
+      "action": "XD960_CREATE_INTENT",
+      "source_sv": 352619216,
+      "requested_slug": "sailorren/biohub-x138-xd960-score-20260925",
+      "source_commit": "8bf74286f48e0aec40e08efbdda86e387f210425"
+    },
+    {
+      "action": "XD960_TEMPLATE_QUICK_SAVE_CONFIRMED",
+      "at": "2026-09-25T07:50:58.064880+00:00",
+      "kernel": 135785956,
+      "version": 1,
+      "sv": 352620382,
+      "gpu_enabled": true,
+      "full_gpu_run": false,
+      "private": true,
+      "teammate": "dongdongjiaqi",
+      "permission": "Can view"
+    }
+  ],
   "consumed": {
-    "template_save": 0,
+    "template_save": 2,
     "gpu_save_and_run": 0,
     "shared_repair": 0,
     "submission": 0,
@@ -20,5 +59,12 @@
   "teammate": "dongdongjiaqi",
   "teammate_current_team_verified": true,
   "teammate_gpu_balance": "USER_CONFIRMED_SUFFICIENT",
-  "teammate_gpu_balance_independent": "UNKNOWN"
+  "teammate_gpu_balance_independent": "UNKNOWN",
+  "current_submission_quota_ui": {
+    "observed_at": "2026-09-25T07:50:58.064880+00:00",
+    "remaining_today": 1,
+    "reset_display": "16 hours",
+    "source": "Competition Submit Prediction dialog",
+    "request_sent": false
+  }
 }

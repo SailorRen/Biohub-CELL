@@ -1,0 +1,46 @@
+{
+  "observed_at": "2026-09-25T07:42:03.477525+00:00",
+  "metadata": {
+    "id": 135784801,
+    "ref": "sailorren/biohub-x138-xr0-score-20260925",
+    "title": "biohub-x138-xr0-score-20260925",
+    "author": "Sailor Ren",
+    "slug": "biohub-x138-xr0-score-20260925",
+    "lastRunTime": "2026-09-22T07:42:03.117Z",
+    "language": "python",
+    "kernelType": "notebook",
+    "isPrivate": true,
+    "enableGpu": true,
+    "enableInternet": false,
+    "datasetDataSources": [
+      "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+      "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+      "pilkwang/biohub-tracking-support-pack-50ep-v1",
+      "anvithpothula/biohub-v1284-head-s075"
+    ],
+    "competitionDataSources": [
+      "biohub-cell-tracking-during-development"
+    ],
+    "enableTpu": false,
+    "currentVersionNumber": 1,
+    "dockerImage": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+    "machineShape": "NvidiaTeslaT4"
+  },
+  "all_cell_source_equal": true,
+  "source_sha256": "29d7d889087936fd1f5cfb1ee40740ca39d449087266ea7cbb6c0ede22c873c3",
+  "sv": 352619216,
+  "sv_source": "Kaggle saved page Edit href /edit/run/352619216",
+  "save_mode": "Quick Save",
+  "full_gpu_run": false,
+  "fixed_dataset_versions_ui": {
+    "primary": 10,
+    "secondary": 2,
+    "deepcenter": 5,
+    "head": 1
+  },
+  "sharing": {
+    "private": true,
+    "dongdongjiaqi": "Can view",
+    "save_toast": "Sharing settings saved"
+  }
+}

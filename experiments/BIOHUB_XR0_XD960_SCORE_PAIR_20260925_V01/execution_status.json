@@ -1,22 +1,38 @@
 {
   "XR0": {
-    "status": "LOCAL_PREPARED",
+    "status": "READY_FOR_TEAMMATE_RUN",
     "gpu_output_verified": false,
-    "kernel": null,
-    "owner": null,
-    "version": null,
-    "sv": null,
+    "kernel": 135784801,
+    "owner": "sailorren",
+    "version": 1,
+    "sv": 352619216,
+    "template_url": "https://www.kaggle.com/code/sailorren/biohub-x138-xr0-score-20260925?scriptVersionId=352619216",
+    "run_owner": null,
+    "run_version": null,
+    "run_sv": null,
     "submission_id": null,
-    "public": null
+    "public": null,
+    "runtime_compatibility": "NOT_VERIFIED",
+    "head_mounted_hash": "NOT_VERIFIED",
+    "repair_fallback": "UNKNOWN",
+    "deadline_degraded": "UNKNOWN"
   },
   "XD960": {
-    "status": "LOCAL_PREPARED",
+    "status": "READY_FOR_TEAMMATE_RUN",
     "gpu_output_verified": false,
-    "kernel": null,
-    "owner": null,
-    "version": null,
-    "sv": null,
+    "kernel": 135785956,
+    "owner": "sailorren",
+    "version": 1,
+    "sv": 352620382,
+    "template_url": "https://www.kaggle.com/code/sailorren/biohub-x138-xd960-score-20260925?scriptVersionId=352620382",
+    "run_owner": null,
+    "run_version": null,
+    "run_sv": null,
     "submission_id": null,
-    "public": null
+    "public": null,
+    "runtime_compatibility": "NOT_VERIFIED",
+    "head_mounted_hash": "NOT_VERIFIED",
+    "repair_fallback": "UNKNOWN",
+    "deadline_degraded": "UNKNOWN"
   }
 }

@@ -1,0 +1,24 @@
+{
+  "observed_at": "2026-09-25T07:50:58.064880+00:00",
+  "source": "Live Kaggle DOM via Chrome",
+  "code_requirements": {
+    "gpu_runtime_max_hours": 12,
+    "internet": false,
+    "file": "submission.csv",
+    "external_data": "Freely & publicly available allowed including pretrained models"
+  },
+  "deadline_utc": "2026-09-29T23:59:00Z",
+  "deadline_shanghai": "2026-09-30T07:59:00+08:00",
+  "quota_display": "You have 1 submissions remaining today. This resets in 16 hours.",
+  "old_X25_V2": {
+    "sv": 352574469,
+    "submission_id": 56539537,
+    "status": "Notebook Threw Exception",
+    "ordinary_gpu": "UNKNOWN",
+    "source": "competition submission link"
+  },
+  "quick_save_output": "No submission.csv; Submit disabled; no submission attempted",
+  "request_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "image_selection": "Pin to original environment selected; actual image differs as platform metadata records",
+  "original_image_availability": "NOT_CONFIRMED_AVAILABLE_IN_UI"
+}
