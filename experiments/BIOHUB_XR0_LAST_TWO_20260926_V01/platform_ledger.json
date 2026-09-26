@@ -1,6 +1,6 @@
 {
   "task_id": "BIOHUB_XR0_LAST_TWO_20260926_V01",
-  "status": "RUNNING_BATCH",
+  "status": "WAITING_FOR_SCORES",
   "terminal_recovered": false,
   "created_at": "2026-09-26T16:44:02.174295+00:00",
   "budget": {
@@ -12,7 +12,7 @@
   "used": {
     "full_runs": 2,
     "engineering_spare_runs": 0,
-    "formal_requests": 1,
+    "formal_requests": 2,
     "training": 0,
     "dataset_writes": 0,
     "final_selection_changes": 0
@@ -49,7 +49,7 @@
         }
       ],
       "kernel_id": 135997845,
-      "last_observed_at": "2026-09-26T18:21:40.598546+00:00",
+      "last_observed_at": "2026-09-26T19:29:22.718598+00:00",
       "ordinary_status": {
         "status": "COMPLETE"
       },
@@ -61,14 +61,14 @@
       "submitted_at": "2026-09-26T17:22:53.552854+00:00",
       "formal_status": "SubmissionStatus.PENDING",
       "direct_error": null,
-      "formal_last_observed_at": "2026-09-26T18:21:43.130364+00:00"
+      "formal_last_observed_at": "2026-09-26T19:33:51.160015+00:00"
     },
     "XRL9": {
-      "state": "RUN_ACCEPTED",
+      "state": "SCORE_PENDING",
       "slug": "sailorren/biohub-xr0-xrl9-last-two-20260926",
       "version": 1,
       "sv": 353050971,
-      "submission_id": null,
+      "submission_id": 56587392,
       "public": null,
       "events": [
         {
@@ -81,17 +81,33 @@
             "versionNumber": 1,
             "kernelId": 135997875
           }
+        },
+        {
+          "type": "FORMAL_SUBMISSION",
+          "at": "2026-09-26T19:33:35.251290+00:00",
+          "message": "BIOHUB_XR0_LAST_TWO_20260926_V01 XRL9 V1 SV353050971",
+          "version": 1,
+          "sv": 353050971,
+          "response": {
+            "ref": 56587392
+          }
         }
       ],
       "kernel_id": 135997875,
-      "last_observed_at": "2026-09-26T18:21:42.461379+00:00",
-      "ordinary_status": {},
+      "last_observed_at": "2026-09-26T19:29:25.056108+00:00",
+      "ordinary_status": {
+        "status": "COMPLETE"
+      },
       "ui_observation": {
         "version_link_sv": 353050971,
         "accelerator": "GPU T4 x2",
         "observed_at": "2026-09-26T16:50:00+00:00"
-      }
+      },
+      "submitted_at": "2026-09-26T19:33:35.251290+00:00",
+      "formal_status": "SubmissionStatus.PENDING",
+      "direct_error": null,
+      "formal_last_observed_at": "2026-09-26T19:33:51.160015+00:00"
     }
   },
-  "last_score_observed_at": "2026-09-26T18:21:43.130364+00:00"
+  "last_score_observed_at": "2026-09-26T19:33:51.160015+00:00"
 }
