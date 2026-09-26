@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_XR0_TRANSFER_TRIO_20260926_V01",
+  "goal": "按原V01/V02执行三候选，完成合法GPU输出、各一次正式提交并回收终态",
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "acceptance": [
+    {
+      "id": "original-v01",
+      "type": "file",
+      "path": "tasks/CODEX_20260926_BIOHUB_XR0_TRANSFER_TRIO_V01.md",
+      "sha256": "f73ab06a1641e86542cc9b27a5e6a429c55a9b009b4fabaabef693b3d5b289c6"
+    },
+    {
+      "id": "original-v02",
+      "type": "file",
+      "path": "tasks/CODEX_20260926_BIOHUB_XR0_TRANSFER_TRIO_EXECUTE_V02.md",
+      "sha256": "22c033f96124ba30ff89a37decf27d771ffd9687978d29197b36e40dc491254f"
+    },
+    {
+      "id": "checks",
+      "type": "json",
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/build_checks.json",
+      "assertions": [
+        {
+          "pointer": "/passed",
+          "op": "equals",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "scored-all",
+      "type": "json",
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/platform_ledger.json",
+      "assertions": [
+        {
+          "pointer": "/status",
+          "op": "equals",
+          "value": "SCORED_ALL"
+        }
+      ]
+    },
+    {
+      "id": "results",
+      "type": "file",
+      "path": "reports/20260926_BIOHUB_XR0_TRANSFER_TRIO_RESULTS.md",
+      "min_bytes": 1000
+    },
+    {
+      "id": "remote",
+      "type": "git",
+      "require_clean": true,
+      "require_remote_head": true
+    },
+    {
+      "id": "formal-readback",
+      "type": "manual",
+      "reason": "需官方精确SV/提交终态和真实GPU输出核验",
+      "evidence_needed": [
+        "三份GPU/输出回执",
+        "精确submission及非空Public",
+        "预算无超额"
+      ]
+    }
+  ]
+}

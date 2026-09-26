@@ -1,0 +1,46 @@
+--- XR0/cell1
++++ XV25/cell1
+@@ -105,4 +105,6 @@
+ os.environ["BIOHUB_CACHE_EDGE_THRESHOLD"] = "1.0"
+ os.environ["BIOHUB_LOWDET_THRESHOLD"] = "0.3"
+ print("BIOHUB_PRESET:", BIOHUB_PRESET)
+-print("BIOHUB_SCORE_AXIS:", BIOHUB_SCORE_AXIS)+print("BIOHUB_SCORE_AXIS:", BIOHUB_SCORE_AXIS)
++# Frozen transfer batch: configure before original globals are initialized.
++os.environ["BIOHUB_MOTION_RELINK_VELOCITY_WEIGHT"] = '0.25'
+--- XR0/cell5
++++ XV25/cell5
+@@ -519,6 +519,10 @@
+ os.environ['V1284_MODE']='candidate'
+ os.environ['V1284_HEAD']=str(_myhead[0])
+ 
++import hashlib as _trio_hh
++assert _myhead[0].stat().st_size == 33913, 'TRIO_HEAD_SIZE'
++assert _trio_hh.sha256(_myhead[0].read_bytes()).hexdigest() == '625a0d9340f48193f2ec294fc2d81c5bb3c03087eab78ef0ae998a9c4c7da00c', 'TRIO_HEAD_HASH'
++print('TRIO_HEAD_VERIFIED', str(_myhead[0]), '625a0d9340f48193f2ec294fc2d81c5bb3c03087eab78ef0ae998a9c4c7da00c', flush=True)
+ _trial_source = _ps.read_text()
+ if _trial_source.count('import tracksdata as td\n') != 1: raise RuntimeError("V1284 patch anchor mismatch")
+ _trial_source = _trial_source.replace('import tracksdata as td\n', 'import tracksdata as td\nfrom v1284_coordinate_refinement import refine as _v1284_refine, index_features as _v1284_index\n')
+--- XR0/cell6
++++ XV25/cell6
+@@ -521,6 +521,9 @@
+     stats: dict[str, int],
+     learned_edge_probs: dict[tuple[int, int], float] | None = None,
+ ) -> list[dict[str, object]]:
++    stats.setdefault("trio_velocity_consumed", 0)
++    stats.setdefault("trio_no_flow_no_history", 0)
++    stats["trio_velocity_weight"] = MOTION_RELINK_VELOCITY_WEIGHT
+     if not OUTPUT_MOTION_RELINK or not nodes_by_id:
+         return []
+ 
+@@ -611,8 +614,11 @@
+                 stats["motion_relink_flow_predicted"] = stats.get("motion_relink_flow_predicted", 0) + 1
+             elif prev_pos is None:
+                 predicted_arr[i] = source_pos
++                stats["trio_no_flow_no_history"] = stats.get("trio_no_flow_no_history", 0) + 1
+             else:
+                 predicted_arr[i] = source_pos + MOTION_RELINK_VELOCITY_WEIGHT * (source_pos - prev_pos)
++                stats["trio_velocity_consumed"] = stats.get("trio_velocity_consumed", 0) + 1
++                stats["trio_velocity_weight"] = MOTION_RELINK_VELOCITY_WEIGHT
+         target_tree = cKDTree(target_arr)
+         gate_radius = gate_um * (1.0 + 1e-9) + 1e-9
+         gate_neighbours = target_tree.query_ball_point(source_arr, r=gate_radius)

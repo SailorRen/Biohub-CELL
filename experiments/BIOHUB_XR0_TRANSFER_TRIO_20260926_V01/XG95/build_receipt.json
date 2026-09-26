@@ -1,0 +1,22 @@
+{
+  "arm": "XG95",
+  "velocity": 0.5,
+  "g1": true,
+  "g1_threshold": 0.95,
+  "source_sha256": "0eed043c5bf1a093be2c03fa3b7310fd0d7979d01120a189cfd146c1535b8b72",
+  "unchanged_original_cells": [
+    2,
+    3,
+    4,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "algorithm_changes": [
+    "frozen_G1_proposal_filter"
+  ],
+  "runtime_additions": "head hash; consumption counters; CSV and light receipt; no extra inference"
+}

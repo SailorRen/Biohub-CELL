@@ -1,0 +1,127 @@
+{
+  "passed": true,
+  "count": 30,
+  "checks": [
+    {
+      "id": "XV25_13_code_cells",
+      "pass": true
+    },
+    {
+      "id": "XV25_unchanged_cells",
+      "pass": true
+    },
+    {
+      "id": "XV25_actual_config",
+      "pass": true
+    },
+    {
+      "id": "XV25_support_original_hash",
+      "pass": true
+    },
+    {
+      "id": "XV25_support_dynamic_patch",
+      "pass": true
+    },
+    {
+      "id": "XV25_cache_before_head",
+      "pass": true
+    },
+    {
+      "id": "XV25_no_patch_warning",
+      "pass": true
+    },
+    {
+      "id": "XG95_13_code_cells",
+      "pass": true
+    },
+    {
+      "id": "XG95_unchanged_cells",
+      "pass": true
+    },
+    {
+      "id": "XG95_actual_config",
+      "pass": true
+    },
+    {
+      "id": "XG95_support_original_hash",
+      "pass": true
+    },
+    {
+      "id": "XG95_support_dynamic_patch",
+      "pass": true
+    },
+    {
+      "id": "XG95_cache_before_head",
+      "pass": true
+    },
+    {
+      "id": "XG95_no_patch_warning",
+      "pass": true
+    },
+    {
+      "id": "XV25G95_13_code_cells",
+      "pass": true
+    },
+    {
+      "id": "XV25G95_unchanged_cells",
+      "pass": true
+    },
+    {
+      "id": "XV25G95_actual_config",
+      "pass": true
+    },
+    {
+      "id": "XV25G95_support_original_hash",
+      "pass": true
+    },
+    {
+      "id": "XV25G95_support_dynamic_patch",
+      "pass": true
+    },
+    {
+      "id": "XV25G95_cache_before_head",
+      "pass": true
+    },
+    {
+      "id": "XV25G95_no_patch_warning",
+      "pass": true
+    },
+    {
+      "id": "combination_only_velocity",
+      "pass": true
+    },
+    {
+      "id": "original_geometry_sort_cap_restored",
+      "pass": true
+    },
+    {
+      "id": "gate_after_deepcenter_before_sort",
+      "pass": true
+    },
+    {
+      "id": "gate_boundary",
+      "pass": true
+    },
+    {
+      "id": "nonfinite_error",
+      "pass": true
+    },
+    {
+      "id": "float_voxel_scaled_once",
+      "pass": true
+    },
+    {
+      "id": "context_abstain",
+      "pass": true
+    },
+    {
+      "id": "admit_abstain_preserves",
+      "pass": true
+    },
+    {
+      "id": "no_shadow_replay",
+      "pass": true
+    }
+  ],
+  "scope": "Static and small CPU checks; GPU, mounted inputs and actual outputs remain required."
+}

@@ -1,0 +1,106 @@
+--- XR0/cell1
++++ XG95/cell1
+@@ -105,4 +105,6 @@
+ os.environ["BIOHUB_CACHE_EDGE_THRESHOLD"] = "1.0"
+ os.environ["BIOHUB_LOWDET_THRESHOLD"] = "0.3"
+ print("BIOHUB_PRESET:", BIOHUB_PRESET)
+-print("BIOHUB_SCORE_AXIS:", BIOHUB_SCORE_AXIS)+print("BIOHUB_SCORE_AXIS:", BIOHUB_SCORE_AXIS)
++# Frozen transfer batch: configure before original globals are initialized.
++os.environ["BIOHUB_MOTION_RELINK_VELOCITY_WEIGHT"] = '0.5'
+--- XR0/cell5
++++ XG95/cell5
+@@ -519,6 +519,10 @@
+ os.environ['V1284_MODE']='candidate'
+ os.environ['V1284_HEAD']=str(_myhead[0])
+ 
++import hashlib as _trio_hh
++assert _myhead[0].stat().st_size == 33913, 'TRIO_HEAD_SIZE'
++assert _trio_hh.sha256(_myhead[0].read_bytes()).hexdigest() == '625a0d9340f48193f2ec294fc2d81c5bb3c03087eab78ef0ae998a9c4c7da00c', 'TRIO_HEAD_HASH'
++print('TRIO_HEAD_VERIFIED', str(_myhead[0]), '625a0d9340f48193f2ec294fc2d81c5bb3c03087eab78ef0ae998a9c4c7da00c', flush=True)
+ _trial_source = _ps.read_text()
+ if _trial_source.count('import tracksdata as td\n') != 1: raise RuntimeError("V1284 patch anchor mismatch")
+ _trial_source = _trial_source.replace('import tracksdata as td\n', 'import tracksdata as td\nfrom v1284_coordinate_refinement import refine as _v1284_refine, index_features as _v1284_index\n')
+--- XR0/cell6
++++ XG95/cell6
+@@ -521,6 +521,9 @@
+     stats: dict[str, int],
+     learned_edge_probs: dict[tuple[int, int], float] | None = None,
+ ) -> list[dict[str, object]]:
++    stats.setdefault("trio_velocity_consumed", 0)
++    stats.setdefault("trio_no_flow_no_history", 0)
++    stats["trio_velocity_weight"] = MOTION_RELINK_VELOCITY_WEIGHT
+     if not OUTPUT_MOTION_RELINK or not nodes_by_id:
+         return []
+ 
+@@ -611,8 +614,11 @@
+                 stats["motion_relink_flow_predicted"] = stats.get("motion_relink_flow_predicted", 0) + 1
+             elif prev_pos is None:
+                 predicted_arr[i] = source_pos
++                stats["trio_no_flow_no_history"] = stats.get("trio_no_flow_no_history", 0) + 1
+             else:
+                 predicted_arr[i] = source_pos + MOTION_RELINK_VELOCITY_WEIGHT * (source_pos - prev_pos)
++                stats["trio_velocity_consumed"] = stats.get("trio_velocity_consumed", 0) + 1
++                stats["trio_velocity_weight"] = MOTION_RELINK_VELOCITY_WEIGHT
+         target_tree = cKDTree(target_arr)
+         gate_radius = gate_um * (1.0 + 1e-9) + 1e-9
+         gate_neighbours = target_tree.query_ball_point(source_arr, r=gate_radius)
+@@ -1480,6 +1486,8 @@
+     frame_cache: dict[int, np.ndarray] | None = None,
+     deepcenter_cache: dict[tuple[str, int], np.ndarray] | None = None,
+ ) -> list[dict[str, object]]:
++    for _trio_key in ("trio_g1_candidates", "trio_g1_finite_scores", "trio_g1_rejected", "trio_g1_abstain"):
++        stats.setdefault(_trio_key, 0)
+     if not OUTPUT_SAFE_DIVISIONS or not edges or not nodes_by_id:
+         return edges
+     frame_cache = frame_cache if frame_cache is not None else {}
+@@ -1607,7 +1615,8 @@
+                         stats["safe_division_symmetry_rejected"] += 1
+                         continue
+                 score = parent_dist + 0.15 * sister_dist
+-                proposals.append((score, source_id, candidate_id, parent_dist, sister_dist))
++                if _trio_g1_admit(nodes_by_id, out_by_source, source_id, existing_child_id, candidate_id, stats, dataset):
++                    proposals.append((score, source_id, candidate_id, parent_dist, sister_dist))
+  
+         stats["safe_division_candidates"] += len(proposals)
+         if not proposals:
+@@ -2216,5 +2225,40 @@
+     display(pd.read_csv(SUBMISSION_PATH, nrows=8))
+ 
+ 
++
++import hashlib as _trio_hashlib
++_TRIO_GATE_SHA = '0a1f9b93bb529e70f4f7c2ba0907eea8b4cecd2befccc8ba1fb75e569edf77a0'
++_trio_gate_files = list(Path('/kaggle/input').rglob('division_gate_weights.json'))
++_trio_gate_files = [p for p in _trio_gate_files if _trio_hashlib.sha256(p.read_bytes()).hexdigest() == _TRIO_GATE_SHA]
++assert len(_trio_gate_files) == 1, 'TRIO_EXACT_GATE_WEIGHT_REQUIRED'
++_trio_gate_model = json.loads(_trio_gate_files[0].read_text())['final']
++assert np.asarray(_trio_gate_model['mean']).shape == (10,)
++assert np.asarray(_trio_gate_model['scale']).shape == (10,)
++assert np.asarray(_trio_gate_model['coefficients']).shape == (21,)
++assert np.isfinite(np.asarray(_trio_gate_model['coefficients'])).all()
++assert (np.asarray(_trio_gate_model['scale']) > 0).all()
++_trio_inference = {}
++exec('import numpy as np\nfrom scipy.special import expit\nSCALE = np.array([1.625,0.40625,0.40625])\n\ndef point(row):\n    return np.array([row["z"], row["y"], row["x"]], dtype=float) * SCALE\n\ndef pair_features(coords):\n    """Physical-coordinate input [..., parent/d1/d2/g1/g2, z/y/x]."""\n    a = np.asarray(coords, dtype=float)\n    if a.shape[-2:] != (5, 3) or not np.isfinite(a).all():\n        raise ValueError("INVALID_PAIR_COORDINATES")\n    p, c1, c2, g1, g2 = np.moveaxis(a, -2, 0)\n    v1, v2 = c1-p, c2-p\n    norm = lambda v: np.linalg.norm(v, axis=-1)\n    d1, d2 = norm(v1), norm(v2)\n    sister, grand = norm(c1-c2), norm(g1-g2)\n    speed1, speed2 = norm(g1-c1), norm(g2-c2)\n    return np.stack([np.minimum(d1,d2), np.maximum(d1,d2), sister,\n                     norm((c1+c2)*0.5-p), np.abs(d1-d2)/np.maximum((d1+d2)*0.5,1e-6),\n                     np.sum(v1*v2,axis=-1)/np.maximum(d1*d2,1e-6), grand, grand-sister,\n                     (speed1+speed2)*0.5, np.abs(speed1-speed2)], axis=-1)\n\ndef context(nodes, out, parent, c1, c2):\n    t = int(nodes[parent]["t"])\n    if c1 == c2 or any(int(nodes[c]["t"]) != t+1 for c in (c1,c2)):\n        return None\n    if any(len(out.get(c,[])) != 1 for c in (c1,c2)):\n        return None\n    g1,g2 = out[c1][0],out[c2][0]\n    if g1 == g2 or any(int(nodes[g]["t"]) != t+2 for g in (g1,g2)):\n        return None\n    return np.stack([point(nodes[i]) for i in (parent,c1,c2,g1,g2)])\n\ndef design(x, mean, scale):\n    z = np.clip((np.asarray(x)-mean)/scale,-8.0,8.0)\n    return np.concatenate([np.ones((*z.shape[:-1],1)), z, z*z],axis=-1)\n\ndef predict(model, features):\n    return expit(design(features,np.asarray(model["mean"]),np.asarray(model["scale"]))@np.asarray(model["coefficients"]))\n', _trio_inference)
++assert tuple(VOXEL_SCALE_UM) == (1.625, 0.40625, 0.40625)
++print('TRIO_GATE_LOADED', _TRIO_GATE_SHA, 'final', flush=True)
++_TRIO_GATE_SAMPLES = []
++def _trio_g1_accept_score(score):
++    if score is not None and not np.isfinite(score):
++        raise RuntimeError('TRIO_NONFINITE_GATE_SCORE')
++    return not (score is not None and score < 0.95)
++def _trio_g1_admit(nodes, outgoing, parent, child1, child2, stats, dataset):
++    stats['trio_g1_candidates'] = stats.get('trio_g1_candidates', 0) + 1
++    out = {u: [int(e['target_id']) for e in outgoing.get(u, [])] for u in (child1, child2)}
++    coords = _trio_inference['context'](nodes, out, parent, child1, child2)
++    score = None if coords is None else float(_trio_inference['predict'](_trio_gate_model, _trio_inference['pair_features'](coords)))
++    accepted = _trio_g1_accept_score(score)
++    key = 'trio_g1_abstain' if score is None else 'trio_g1_finite_scores'
++    stats[key] = stats.get(key, 0) + 1
++    if not accepted:
++        stats['trio_g1_rejected'] = stats.get('trio_g1_rejected', 0) + 1
++    if len(_TRIO_GATE_SAMPLES) < 20:
++        _TRIO_GATE_SAMPLES.append(dict(dataset=dataset, parent=int(parent), child1=int(child1), child2=int(child2), score=score, accepted=accepted))
++    return accepted
++
+ write_test_submission("base")
+ 
