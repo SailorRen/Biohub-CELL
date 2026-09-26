@@ -1,0 +1,80 @@
+{
+  "observed_window_shanghai": [
+    "2026-09-26T23:57:00+08:00",
+    "2026-09-27T00:04:31+08:00"
+  ],
+  "sources": [
+    {
+      "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/leaderboard",
+      "type": "MEASURED",
+      "top_score": 0.975,
+      "team_rank": 498,
+      "team_score": 0.953,
+      "last_score": 0.952,
+      "entries_rank_count": 3931
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/code?competitionId=136605&sortBy=scoreDescending&excludeNonAccessedDatasources=true",
+      "type": "MEASURED",
+      "top_card_score": 0.953,
+      "scope": "first20 unpinned, accessible datasources filter retained"
+    },
+    {
+      "url": "https://www.kaggle.com/code/raunakdey07/biohub-harmonic-fusion-v3?scriptVersionId=352639153",
+      "version": 5,
+      "sv": 352639153,
+      "public": 0.953,
+      "type": "MEASURED"
+    },
+    {
+      "url": "https://www.kaggle.com/code/amanatar/optimized-biohub-max-score?scriptVersionId=352554580",
+      "version": 4,
+      "sv": 352554580,
+      "public": 0.953,
+      "type": "MEASURED"
+    },
+    {
+      "url": "https://www.kaggle.com/code/amanatar/optimized-biohub-max-score?scriptVersionId=352997256",
+      "version": 5,
+      "sv": 352997256,
+      "public": null,
+      "ordinary_status": "error",
+      "direct_error": "UNKNOWN",
+      "type": "MEASURED"
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/743222",
+      "type": "COMMUNITY_REPORT",
+      "coverage": "full body; no comments"
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/742942",
+      "type": "COMMUNITY_REPORT",
+      "coverage": "full body and four comments"
+    },
+    {
+      "url": "https://github.com/kito2718/kaggle_Biohub-Cell_Tracking_During_Development/tree/33220916c88f707f097b46a68751b4f33c6c9f22",
+      "type": "SOURCE_CODE_VERIFIED",
+      "coverage": "summary1-3 relevant sections; 052 drift and relink implementation targeted review; not full repo"
+    },
+    {
+      "url": "https://www.kaggle.com/code/aaaa1597/s7-056-grand-master-unified-ipynb",
+      "type": "UNKNOWN",
+      "page_result": "We cannot find that page",
+      "public": null
+    }
+  ],
+  "platform_writes": {
+    "notebook_save": 0,
+    "inference": 0,
+    "training": 0,
+    "submission": 0,
+    "final_selection_change": 0
+  },
+  "limitations": [
+    "Public card is discovery only; direct version pages used for scored methods",
+    "No full semantic audit of Aman V5",
+    "Author GitHub scores not independently verified",
+    "Optimization recommendations are inference, not measured gains"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "baseline_commit": "d01c627a3006455d7ac3f4351c76ddf1fd9f4eb2",
+  "checks": [
+    {
+      "file": "biohub-harmonic-fusion-v3.ipynb",
+      "sha256": "9ab32885574092ab46a8d90bfa96393332c6e5a6249d33c92a9051efbc9779ca",
+      "bytes": 269607,
+      "effective_code_cells": 12,
+      "ast_pass": 12,
+      "baseline_ast_equal_cells": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "file": "optimized-biohub-max-score.ipynb",
+      "sha256": "96387e7858e6910e2ee151da106e2b8082d9005cf9258ea27b583ba6fb6965c4",
+      "bytes": 363090,
+      "effective_code_cells": 12,
+      "ast_pass": 12,
+      "baseline_ast_equal_cells": [
+        4,
+        5,
+        7,
+        9
+      ]
+    }
+  ],
+  "coverage": "Both complete downloaded notebooks parsed cell by cell; Raunak all-cell AST/diff review; Aman targeted review of new functions/config and sweep, not full semantic audit.",
+  "raunak_differences": "Docstrings/comments/log output removal and time import relocation; no identified algorithm change.",
+  "kito052": {
+    "commit": "33220916c88f707f097b46a68751b4f33c6c9f22",
+    "sha256": "12800d8b1acdd89847926863651ce2785aad9496be50f3180eae94608639bb52",
+    "coverage": "robust_estimate_drift, apply_continuous_soft_shrinkage and motion_relink_edges inspected; not full notebook review."
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_PUBLIC_LB_UPDATE_20260926",
+  "goal": "核对公开榜单与新增公开代码，交付有来源和边界的优化方向",
+  "scope": {
+    "in_scope": [
+      "只读排行榜、公开源码、讨论",
+      "本仓库小型证据与报告同步"
+    ],
+    "out_of_scope": [
+      "训练、推理、Notebook保存、提交、最终选择修改"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "acceptance": [
+    {
+      "id": "report",
+      "type": "file",
+      "path": "reports/20260926_BIOHUB_PUBLIC_LB_UPDATE.md",
+      "contains_all": [
+        "结论",
+        "证据",
+        "UNKNOWN"
+      ],
+      "min_bytes": 500
+    },
+    {
+      "id": "sources",
+      "type": "json",
+      "path": "research/20260926_public_lb_update/evidence.json",
+      "assertions": [
+        {
+          "pointer": "/sources",
+          "op": "not_empty"
+        }
+      ]
+    },
+    {
+      "id": "git",
+      "type": "git",
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true
+    },
+    {
+      "id": "interpretation",
+      "type": "manual",
+      "reason": "公开源码优化潜力不等于复现实测收益",
+      "evidence_needed": [
+        "来源与分数版本绑定",
+        "源码差异解释"
+      ]
+    }
+  ]
+}
