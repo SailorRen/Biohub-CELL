@@ -1,0 +1,127 @@
+{
+  "checks": [
+    {
+      "details": {
+        "bytes": 14370,
+        "path": "tasks/CODEX_20260926_BIOHUB_XR0_TRANSFER_TRIO_V01.md",
+        "sha256": "f73ab06a1641e86542cc9b27a5e6a429c55a9b009b4fabaabef693b3d5b289c6"
+      },
+      "id": "original-v01",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "bytes": 9173,
+        "path": "tasks/CODEX_20260926_BIOHUB_XR0_TRANSFER_TRIO_EXECUTE_V02.md",
+        "sha256": "22c033f96124ba30ff89a37decf27d771ffd9687978d29197b36e40dc491254f"
+      },
+      "id": "original-v02",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/passed"
+          }
+        ],
+        "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/build_checks.json",
+        "sha256": "4b85816b7495e54473ec93fdafe9a902c7b5c1b36623c9d4f4c4b725469fa754"
+      },
+      "id": "checks",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/status"
+          }
+        ],
+        "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/platform_ledger.json",
+        "sha256": "47612fc657ea0fe01b0baecac7befc758241acb798c8c1d7da84abdfc156c2e1"
+      },
+      "id": "scored-all",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "bytes": 7719,
+        "path": "reports/20260926_BIOHUB_XR0_TRANSFER_TRIO_RESULTS.md",
+        "sha256": "226442cab51a5c61c106f9816dd674cc7e0244a9c8674566c6d45e9788c74330"
+      },
+      "id": "results",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "branch": "codex/xr0-transfer-trio-20260926",
+        "dirty_entry_count": 0,
+        "head": "24eb4e2c646b5bd075463e9c43a1b74b216dfdd9",
+        "remote": "origin",
+        "remote_exists": true,
+        "remote_head": "24eb4e2c646b5bd075463e9c43a1b74b216dfdd9",
+        "remote_url_sha256": "294339ae4bf28ec437260f32bd064c06212de22a7026887c59e47f72ef414b8e",
+        "repository": "."
+      },
+      "id": "remote",
+      "outcome": "PASS",
+      "reason": "Git evidence passed",
+      "required": true,
+      "type": "git"
+    },
+    {
+      "details": {
+        "evidence_item_count": 3,
+        "reason": "需官方精确SV/提交终态和真实GPU输出核验"
+      },
+      "id": "formal-readback",
+      "outcome": "HUMAN_REVIEW",
+      "reason": "required fact is not independently automatable by this verifier",
+      "required": true,
+      "type": "manual"
+    }
+  ],
+  "claimed_at": "2026-09-26T23:26:08+08:00",
+  "claimed_status": "CLAIMED_COMPLETE",
+  "contract_path": "tasks/CODEX_20260926_BIOHUB_XR0_TRANSFER_TRIO_ACCEPTANCE.json",
+  "contract_sha256": "be06357a4ea31e6c21aca4456659c12f68f3d793c3a90516b3015f7ae341f9d6",
+  "final_status": "NEEDS_HUMAN_REVIEW",
+  "finished_at": "2026-09-26T23:26:13+08:00",
+  "integrity_scope": "local-sha256-only",
+  "limitations": [
+    "The conclusion is limited to the frozen contract and the implemented checks.",
+    "The verifier does not prove omitted requirements or future stability.",
+    "A local or Git hash is not a trusted signature against a malicious writer."
+  ],
+  "optional_warning_check_ids": [],
+  "reason": "one or more required facts need human review",
+  "required_summary": {
+    "failed_or_blocked": 0,
+    "human_review": 1,
+    "passed": 6
+  },
+  "run_id": "20260926T232612+0800-6c9ed8d7",
+  "schema_version": "1.0",
+  "started_at": "2026-09-26T23:26:12+08:00",
+  "task_id": "BIOHUB_XR0_TRANSFER_TRIO_20260926_V01"
+}
