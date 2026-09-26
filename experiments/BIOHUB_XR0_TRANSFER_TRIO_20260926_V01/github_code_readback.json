@@ -1,0 +1,164 @@
+{
+  "commit": "5787a38c114f17f179de6181758c2ef0222c3e28",
+  "observed_at": "2026-09-26T07:05:12.156619+00:00",
+  "passed": 26,
+  "failed": 0,
+  "files": [
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XG95/build_receipt.json",
+      "bytes": 429,
+      "sha256": "794a840f3d8a50dd8bde2dc7d785a8912c3c6375fdd7e49de427835a56d55f8a",
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XG95/candidate.ipynb",
+      "bytes": 271599,
+      "sha256": "0eed043c5bf1a093be2c03fa3b7310fd0d7979d01120a189cfd146c1535b8b72",
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XG95/dynamic_patch_check.log",
+      "bytes": 1012,
+      "sha256": "44e8c2db79c7bf33f4382acf4c52ac0c1edc81daa22402e8251d40a4ddcde225",
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XG95/kernel-metadata.json",
+      "bytes": 884,
+      "sha256": "545e32cfc62da2e41122e83685498f78c5708e2095160b988f76fa09c0fc6dc4",
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XG95/source.diff",
+      "bytes": 7513,
+      "sha256": "57ecb36d5c841e3daca949d85fb13a56ac66b6d161878197ba80ef34cc7c6472",
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25/build_receipt.json",
+      "bytes": 422,
+      "sha256": "da37efe69fc26c8326f1e058b189677452f2cbc2431ab098bd2ccef9bf923dc2",
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25/candidate.ipynb",
+      "bytes": 267381,
+      "sha256": "3e59e81bfbf1934d31c47e96a27db49e2c2c08d363e1a94bfe964e6bd33e59a2",
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25/dynamic_patch_check.log",
+      "bytes": 1012,
+      "sha256": "d841d294712db3ac4d16d21fb8f9ed38132fbe3fee665b2bb45d76fd1b1d8c84",
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25/kernel-metadata.json",
+      "bytes": 832,
+      "sha256": "fde9605d77b9ec1fe0a15559a03b379a37f3ce3d8abf2497c0bcc02c4cb6da75",
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25/source.diff",
+      "bytes": 2455,
+      "sha256": "621e76788ca182d174cdeea3ef897001a89258c0011bf7753e63369aa33df4ad",
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25G95/build_receipt.json",
+      "bytes": 457,
+      "sha256": "ac1f09e3a1b009f6ff4f86f1d64317ca625f461625380106fb14e7ac0e831cb4",
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25G95/candidate.ipynb",
+      "bytes": 271604,
+      "sha256": "7d0ba2f8594e59d1b79d6e3fe67d9d33a1408efc865d28fe31469d9563374511",
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25G95/dynamic_patch_check.log",
+      "bytes": 1012,
+      "sha256": "b934314e1f0c14a61f21212d951bd44b112abafe259ab5058960d35367d3b120",
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25G95/kernel-metadata.json",
+      "bytes": 890,
+      "sha256": "2a6ff72ecbd4969998fb625a7df7381269d4b8f44289c3e2a34a2ceb2615d92d",
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25G95/source.diff",
+      "bytes": 7523,
+      "sha256": "17638c927c8bf4ae604408c9d2fc3eac32425e67850cb42c2c9edb109907f812",
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/build.py",
+      "bytes": 7483,
+      "sha256": "15087d6c0e8d446e7fec90c0979e62b03aba1b99678f82f1a4764ced9090202e",
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/build_checks.json",
+      "bytes": 2265,
+      "sha256": "4b85816b7495e54473ec93fdafe9a902c7b5c1b36623c9d4f4c4b725469fa754",
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/check_build.py",
+      "bytes": 6097,
+      "sha256": "d2d8db9ef4409724d8e3e88d146475c1461bca67043b85e1963971bdc7752a1c",
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/platform_ledger.json",
+      "bytes": 1286,
+      "sha256": "d19f933ed203f397cc5d726177a55d0194b0cf8569c820fdaceb4efd8077a18a",
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/preflight.json",
+      "bytes": 16697,
+      "sha256": "562ed851592c0daa00560257072bab9546dcf3812aa3ab0f06da60a09d643c4d",
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/runtime_receipt.py",
+      "bytes": 3338,
+      "sha256": "e71259249b6ce3f86f931f5b44915d9c01ab0ded0079c2d1b4af4149781b0191",
+      "match": true
+    },
+    {
+      "path": "reports/20260926_BIOHUB_XR0_TRANSFER_TRIO_RESULTS.md",
+      "bytes": 1021,
+      "sha256": "beaa5c62a4ee6d9d2f5466d09bd335443fed00a3821d216c31c973b6d5862442",
+      "match": true
+    },
+    {
+      "path": "tasks/CODEX_20260926_BIOHUB_XR0_TRANSFER_TRIO_ACCEPTANCE.json",
+      "bytes": 1817,
+      "sha256": "be06357a4ea31e6c21aca4456659c12f68f3d793c3a90516b3015f7ae341f9d6",
+      "match": true
+    },
+    {
+      "path": "tasks/CODEX_20260926_BIOHUB_XR0_TRANSFER_TRIO_V01.md",
+      "bytes": 14370,
+      "sha256": "f73ab06a1641e86542cc9b27a5e6a429c55a9b009b4fabaabef693b3d5b289c6",
+      "match": true
+    },
+    {
+      "path": "tasks/CODEX_20260926_BIOHUB_XR0_TRANSFER_TRIO_EXECUTE_V02.md",
+      "bytes": 9173,
+      "sha256": "22c033f96124ba30ff89a37decf27d771ffd9687978d29197b36e40dc491254f",
+      "match": true
+    },
+    {
+      "path": "tasks/EXECUTE_V02_PACKAGE_MANIFEST.json",
+      "bytes": 501,
+      "sha256": "39fddca71173ca110d0e0acb0f5da529e349c0ab68dd01d29ba694b2ec15a6ba",
+      "match": true
+    }
+  ]
+}
