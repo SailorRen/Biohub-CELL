@@ -18,12 +18,12 @@
   },
   "candidates": {
     "XV25": {
-      "state": "SCORE_PENDING",
+      "state": "SCORED",
       "slug": "sailorren/biohub-xr0-xv25-20260926",
       "version": 1,
       "sv": 352908214,
       "submission_id": 56573059,
-      "public": null,
+      "public": "0.953",
       "events": [
         {
           "type": "SAVE_AND_RUN_ALL",
@@ -53,9 +53,10 @@
         "status": "COMPLETE"
       },
       "submitted_at": "2026-09-26T07:31:39.176524+00:00",
-      "formal_status": "SubmissionStatus.PENDING",
+      "formal_status": "SubmissionStatus.COMPLETE",
       "direct_error": null,
-      "formal_last_observed_at": "2026-09-26T13:36:19.554459+00:00"
+      "formal_last_observed_at": "2026-09-26T14:00:11.072333+00:00",
+      "first_terminal_observed_at": "2026-09-26T14:00:11.072333+00:00"
     },
     "XG95": {
       "state": "SCORE_PENDING",
@@ -95,7 +96,7 @@
       "submitted_at": "2026-09-26T07:32:40.932210+00:00",
       "formal_status": "SubmissionStatus.PENDING",
       "direct_error": null,
-      "formal_last_observed_at": "2026-09-26T13:36:19.554459+00:00"
+      "formal_last_observed_at": "2026-09-26T14:00:11.072333+00:00"
     },
     "XV25G95": {
       "state": "SCORE_PENDING",
@@ -135,7 +136,7 @@
       "submitted_at": "2026-09-26T07:51:47.989708+00:00",
       "formal_status": "SubmissionStatus.PENDING",
       "direct_error": null,
-      "formal_last_observed_at": "2026-09-26T13:36:19.554459+00:00"
+      "formal_last_observed_at": "2026-09-26T14:00:11.072333+00:00"
     }
   },
   "resource_note": "UI 00:00/30 hrs; API totalTimeAllowed=21600s, used/reserved=0; plan against smaller 6 hours. Concurrency confirmation pending.",
@@ -144,5 +145,5 @@
     "max_limit": "UNKNOWN",
     "scheduling": "Conservative two ordinary runs; launch combination immediately on first release. No existing other events."
   },
-  "last_score_observed_at": "2026-09-26T13:36:19.554459+00:00"
+  "last_score_observed_at": "2026-09-26T14:00:11.072333+00:00"
 }

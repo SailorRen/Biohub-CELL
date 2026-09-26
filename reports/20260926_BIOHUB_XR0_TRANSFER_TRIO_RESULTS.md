@@ -45,3 +45,5 @@ XV25 CSV共238260行，XG95共238236行；根据运行时真实测试集合核�
 定时只读回收：2026-09-26 20:27:48 上海，三个准确submission均为PENDING，Public均UNKNOWN，direct_error均为空。仍为WAITING_FOR_SCORES，无新增请求。
 
 定时只读回收：2026-09-26 21:36:19 上海，三个准确submission均为PENDING，Public均UNKNOWN，direct_error均为空。仍为WAITING_FOR_SCORES，无新增请求。
+
+首份正式终态：XV25 V1/SV352908214、submission56573059 已为COMPLETE，Public0.953，首次观测UTC 2026-09-26T14:00:11.072333+00:00。XG95及XV25G95仍PENDING。评分未齐，尚不进行比较、晋级或淘汰。
