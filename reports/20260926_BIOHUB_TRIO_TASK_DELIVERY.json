@@ -1,0 +1,41 @@
+{
+  "task_id": "BIOHUB_XR0_TRANSFER_TRIO_20260926_V01",
+  "scope": "TASK_FILE_DELIVERY_ONLY",
+  "status": "TASK_FILES_SYNCED_MODEL_NOT_RUN",
+  "repository": "SailorRen/Biohub-CELL",
+  "branch": "codex/xr0-transfer-trio-20260926",
+  "research_base_commit": "e67ea3fd5c1d8b45723559e0cf60baea37369caa",
+  "verified_content_commit": "156ef6f99760d566aec8875ec3e9d39e45e190b7",
+  "verification_method": "Compute Git blob SHA1 over each original ZIP member and compare with authoritative GitHub fetch_file blob SHA at the fixed content commit. All 3 match. ZIP CRC and original manifest SHA256 checks also pass.",
+  "files": [
+    {
+      "path": "tasks/CODEX_20260926_BIOHUB_XR0_TRANSFER_TRIO_V01.md",
+      "bytes": 14370,
+      "original_sha256": "f73ab06a1641e86542cc9b27a5e6a429c55a9b009b4fabaabef693b3d5b289c6",
+      "verified_git_blob_sha1": "92d410ba64c847ded511850c8fd017715098bcbd"
+    },
+    {
+      "path": "tasks/CODEX_20260926_BIOHUB_XR0_TRANSFER_TRIO_EXECUTE_V02.md",
+      "bytes": 9173,
+      "original_sha256": "22c033f96124ba30ff89a37decf27d771ffd9687978d29197b36e40dc491254f",
+      "verified_git_blob_sha1": "7ef135cfc0fc6f3b2a7775a2e7e6edad967002e2"
+    },
+    {
+      "path": "tasks/EXECUTE_V02_PACKAGE_MANIFEST.json",
+      "bytes": 501,
+      "original_sha256": "39fddca71173ca110d0e0acb0f5da529e349c0ab68dd01d29ba694b2ec15a6ba",
+      "verified_git_blob_sha1": "ef688522f7f872652aadfa678e8fc8ffea87e688"
+    }
+  ],
+  "verification_passed": 3,
+  "verification_total": 3,
+  "direct_raw_download": "UNAVAILABLE_DNS_RESOLUTION_FAILED; not used as verification evidence",
+  "original_text_preserved": true,
+  "historical_status_note": "NOT_SYNCED and read-only-connection statements in the original task files/manifest describe their generation session, not the current delivery. They have been preserved for byte identity. The task files are now committed. No algorithm, authorization or budget was changed.",
+  "changes_at_content_commit": "Exactly the two task Markdown files and original manifest were added relative to the research base; no existing files changed.",
+  "main_modified_by_this_delivery": false,
+  "candidate_construction_in_this_delivery": 0,
+  "kaggle_gpu_runs_in_this_delivery": 0,
+  "kaggle_submissions_in_this_delivery": 0,
+  "next_action": "Fetch this branch and read the fixed task files; verify the manifest and continue the already authorized XV25/XG95/XV25G95 batch under V01 technical rules and V02 execution/score-wait rules. Do not search for chat attachments or request renewed authorization."
+}
