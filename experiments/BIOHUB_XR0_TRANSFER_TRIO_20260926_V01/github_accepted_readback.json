@@ -1,0 +1,62 @@
+{
+  "commit": "ac61c5ce9212c247c1eab8f52c81b4b7c9984ce8",
+  "passed": 11,
+  "total": 11,
+  "files": [
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/platform_ledger.json",
+      "sha256": "29d03fc0dacc36979f8cd4f55c21d61d74996955549c404cb334bc6529e4a556",
+      "passed": true
+    },
+    {
+      "path": "reports/20260926_BIOHUB_XR0_TRANSFER_TRIO_RESULTS.md",
+      "sha256": "2b3712ad6570130fc56a04d122275be2ab0870adde336820953ab36b096272eb",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25/formal_request_receipt.json",
+      "sha256": "d91343f611b29bc566455242ca184f5405ddebe1f165bff15e2e5dc301fc79f5",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25/output_check.json",
+      "sha256": "04591f9baaeec0a1e98d9a4e7980f6acee941f3222bc0aa9298f9327156caa07",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25/deployment_check.json",
+      "sha256": "7da66d2ca2edcaaf885cf7eb461559147ed290a58ef93ef7ac24c7027ef62848",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XG95/formal_request_receipt.json",
+      "sha256": "04826286800c2fd61c57af05ea84e4e80eb845fd415e4cd307d701137fddcc5f",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XG95/output_check.json",
+      "sha256": "00ad539cc93391d2dc789a2cf34f4c79778d649a665a3381ae57a75bc96d9394",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XG95/deployment_check.json",
+      "sha256": "5ec2fd9fce0c4dd7918b121db0e2c06addff477ef3142ad84297ffc609f1686c",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25G95/formal_request_receipt.json",
+      "sha256": "2e01c7a35bdcda0e015380e3e760ea0e6cdfd7fe55309aaaf015d5bfe90f2295",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25G95/output_check.json",
+      "sha256": "9e0e799f7af21923434e3d24e9e71abeb0f67ebe0a9b9e988ad7b9b65bb009f3",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25G95/deployment_check.json",
+      "sha256": "d5b3f86cfc83a97ee1c38cc4f8a9cccd93c2ddcb88f47a0ad5b2c10d9b31cae0",
+      "passed": true
+    }
+  ]
+}

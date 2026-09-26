@@ -5,5 +5,12 @@
     "error": "SSL UNEXPECTED_EOF_WHILE_READING",
     "effect": "Read-only poll failed; no run or submission sent. Browser same SV352913254 still RUNNING at666.9s with active worker logs.",
     "budget_effect": 0
+  },
+  {
+    "observed_at": "2026-09-26T08:12:34.891809+00:00",
+    "operation": "formal status read, token introspection connection",
+    "error": "SSL UNEXPECTED_EOF_WHILE_READING",
+    "effect": "Read-only connection failure; browser exact descriptions/SVs show Notebook Running for all three. No submission request.",
+    "budget_effect": 0
   }
 ]

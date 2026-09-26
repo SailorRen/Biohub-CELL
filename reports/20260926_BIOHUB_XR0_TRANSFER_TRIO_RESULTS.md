@@ -33,3 +33,5 @@ XV25 CSV共238260行，XG95共238236行；根据运行时真实测试集合核�
 组合候选实际GPU普通运行19分28秒，238236行CSV通过检查，速度消费26，G1候选67/有限67/过滤17，repair_fallback与deadline_degraded均为0。实际输入页版本逐项确认V10/V2/V5/V1及既有Division Train。与XG95的可见CSV相同不作为跳过正式评分的依据，三方案的实际隐藏测试结果仍未知。第三份提交前实时剩余额度3次，正式受理56573515。
 
 阶段Git回执：84c9eefbb4828c0fa5bfba1ba628f00e23c28202 的报告、账本及三个运行/提交回执远端逐字节回读5/5通过；不等于最终评分完成。中途一次GetKernelSessionStatus发生SSL EOF，只读失败已记录，没有新增运行或请求。
+
+最新页面观测（UTC 2026-09-26T08:12:34.891809+00:00）：三个精确描述/Version/SV均为 `Notebook Running`，尚无Public。API查询连接偶发SSL EOF，仅影响只读观察，不产生新运行或提交。固定受理commit `ac61c5ce9212c247c1eab8f52c81b4b7c9984ce8` 关键文件远端逐字节回读11/11通过，见 `github_accepted_readback.json`。
