@@ -14,7 +14,7 @@ with api.build_kaggle_client() as c:
   (P/arm/'formal_last_observed.json').write_text(json.dumps(rec,indent=2)+'\n')
   a.update(formal_status=str(r.status),public=r.public_score or None,direct_error=r.error_description or None,formal_last_observed_at=now)
   if str(r.status).endswith('COMPLETE') and r.public_score:a['state']='SCORED'
-  elif str(r.status).endswith('ERROR'):a['state']='FORMAL_ERROR'
+  elif str(r.status).endswith('ERROR') or (str(r.status).endswith('COMPLETE') and r.error_description):a['state']='FORMAL_ERROR'
   else:a['state']='SCORE_PENDING'
   print(arm,r.ref,str(r.status),r.public_score or 'NO_PUBLIC',r.error_description or '',flush=True)
 aa=list(l['candidates'].values())
@@ -22,4 +22,5 @@ if all(a.get('state')=='SCORED' for a in aa):l['status']='SCORED_ALL'
 elif all(a.get('state') in ['SCORED','FORMAL_ERROR'] for a in aa):l['status']='TERMINAL_WITH_ERRORS'
 elif all(a.get('submission_id') for a in aa):l['status']='WAITING_FOR_SCORES'
 else:l['status']='RUNNING_BATCH'
+l['terminal_recovered']=all(a.get('state') in ['SCORED','FORMAL_ERROR'] for a in aa)
 l['last_score_observed_at']=now;lp.write_text(json.dumps(l,indent=2)+'\n')
