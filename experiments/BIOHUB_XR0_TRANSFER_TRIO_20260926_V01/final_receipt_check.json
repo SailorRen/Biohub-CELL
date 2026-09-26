@@ -1,0 +1,31 @@
+{
+  "observed_at": "2026-09-26T15:24:02.532014+00:00",
+  "status": "PASS",
+  "candidate_checks": [
+    {
+      "arm": "XV25",
+      "identity_status_score_output_budget_passed": true,
+      "submission_id": 56573059,
+      "sv": 352908214,
+      "public": "0.953"
+    },
+    {
+      "arm": "XG95",
+      "identity_status_score_output_budget_passed": true,
+      "submission_id": 56573089,
+      "sv": 352908258,
+      "public": "0.929"
+    },
+    {
+      "arm": "XV25G95",
+      "identity_status_score_output_budget_passed": true,
+      "submission_id": 56573515,
+      "sv": 352913254,
+      "public": "0.952"
+    }
+  ],
+  "budgets_passed": true,
+  "formal_terminal_count": 3,
+  "valid_public_count": 3,
+  "final_selection_unchanged": true
+}

@@ -1,24 +1,21 @@
 {
-  "observed_at": "2026-09-26T15:09:59.079350+00:00",
-  "source": "Kaggle live competition submissions list",
+  "observed_at": "2026-09-26T15:24:02.532014+00:00",
+  "source": "live Kaggle competition submissions page, exact descriptions and SV links",
   "candidates": {
     "XV25": {
       "submission_id": 56573059,
-      "version": 1,
       "sv": 352908214,
       "ui_raw_status": "Succeeded",
       "public": "0.953"
     },
     "XG95": {
       "submission_id": 56573089,
-      "version": 1,
       "sv": 352908258,
-      "ui_raw_status": "Submission Running",
-      "public": null
+      "ui_raw_status": "Succeeded",
+      "public": "0.929"
     },
     "XV25G95": {
       "submission_id": 56573515,
-      "version": 1,
       "sv": 352913254,
       "ui_raw_status": "Succeeded",
       "public": "0.952"

@@ -1,53 +1,64 @@
-# XR0 迁移三候选执行结果
+# XR0 迁移三候选正式评分结果
 
-当前状态：WAITING_FOR_SCORES。三份普通 GPU 运行和输出验收全部通过，均已逐份正式受理。正式评分尚未齐，本报告不作方案优劣判断。
+任务：BIOHUB_XR0_TRANSFER_TRIO_20260926_V01。业务状态：**SCORED_ALL**。三份完整GPU运行、真实输出验收、各一次正式提交和正式终态回收均已执行，3/3取得有效Public。本批未取得高于XR0 0.953的分数；保留A及当前最终选择，没有执行下一批实验。
 
-## 对象与回执
+## 正式结果（MEASURED）
 
-| 候选 | owner / Kernel slug | Version / SV | 普通运行 | submission ID | 正式状态 | Public | 提交时间（上海） |
-|---|---|---|---|---|---|---|---|
-| XV25 | sailorren/biohub-xr0-xv25-20260926 | V1 / 352908214 | COMPLETE，输出 PASS | 56573059 | PENDING | UNKNOWN | 2026-09-26 15:31:39 |
-| XG95 | sailorren/biohub-xr0-xg95-20260926 | V1 / 352908258 | COMPLETE，输出 PASS | 56573089 | PENDING | UNKNOWN | 2026-09-26 15:32:40 |
-| XV25G95 | sailorren/biohub-xr0-xv25g95-20260926 | V1 / 352913254 | COMPLETE，输出 PASS | 56573515 | PENDING | UNKNOWN | 2026-09-26 15:51:48 |
+所有时间为中国上海时区，提交时间采用Kaggle官方回执date；最后观测为精确ID API回读时间，非平台实际完成时间。
 
-正式最后观测时间：2026-09-26 15:51:59 上海。准确原始状态和时间在 platform_ledger.json 与每候选 formal_last_observed.json。已有 ID 只读查询，不重发。相对 XR0 0.953 的差值尚不可计算。三份正式终态回收后才统一分析；不修改最终选择。
+| 候选 / 精确Notebook链接 | Version / SV | submission ID | 正式终态 | Public | 相对XR0 0.953 | 官方提交时间 | 最后观测时间 | 直接错误 |
+|---|---|---|---|---|---|---|---|---|
+| [XV25](https://www.kaggle.com/code/sailorren/biohub-xr0-xv25-20260926?scriptVersionId=352908214) | V1 / 352908214 | 56573059 | COMPLETE | 0.953 | +0.000 | 2026-09-26 15:31:40 | 2026-09-26 23:21:09 | 无 |
+| [XG95](https://www.kaggle.com/code/sailorren/biohub-xr0-xg95-20260926?scriptVersionId=352908258) | V1 / 352908258 | 56573089 | COMPLETE | 0.929 | -0.024 | 2026-09-26 15:32:41 | 2026-09-26 23:21:09 | 无 |
+| [XV25G95](https://www.kaggle.com/code/sailorren/biohub-xr0-xv25g95-20260926?scriptVersionId=352913254) | V1 / 352913254 | 56573515 | COMPLETE | 0.952 | -0.001 | 2026-09-26 15:51:48 | 2026-09-26 23:21:09 | 无 |
 
-## 冻结定义及检查
+三份owner均为sailorren，Kernel ID依次为135935605、135935626、135937770。官方页面也逐条显示Succeeded及相同Public。准确请求/终态原始回执在各候选目录的formal_request_receipt.json、formal_terminal_receipt.json、formal_last_observed.json。未以普通运行、Quick Save、空CSV或旧CSV替代正式评分。
 
-原任务 V01/V02 按交付 manifest 验证 2/2 字节数和 SHA256 一致。成功 XR0 V1/SV352643547、submission56546951 的源码已实际读取并确认与冻结母版相同，其正式 Public 为0.953。G1 使用既有 V1/SV349707105 输出中的 final 模型，实际文件 SHA256 与任务要求一致，无重新训练。
+## 本批比较及限制
 
-三份同时构建，仅包含自身无 flow 分支速度0.25、冻结 G1 0.95 两项因素。原几何、排序和 cap 经 AST 还原一致。保留检测0.965、DeepCenter0.25、head、flow、readmit及原版其余算法。小型检查30项通过；另验证冻结G1真实final模型的有限分数路径。低阈缓存先于head的动态补丁在实际support源码上检查通过。代码冻结 commit：5787a38c114f17f179de6181758c2ef0222c3e28；固定远端关键文件回读26/26通过，详见 github_code_readback.json。
+XV25本次显示分数与XR0持平（0.000）；XG95低0.024；XV25G95低0.001。本次观察没有支持提分的候选。由于每候选只有一次正式Public，且没有隐藏测试逐项诊断，不能将分数差异解释为稳定收益或确定的因果机制。组合与G1单项在普通可见测试中CSV相同，但正式Public不同；可见测试不能替代隐藏测试结果，也不据此猜测平台故障。本轮未变更最终选择、晋级或追加实验。
 
-## 已完成实际运行验收
+## 冻结任务、代码与检查（SOURCE_CODE_VERIFIED）
 
-XV25 CSV共238260行，XG95共238236行；根据运行时真实测试集合核对覆盖，逐行复核字段、连续ID、坐标、边端点、相邻时序、唯一父节点、最多两个子节点。两份实际速度消费计数均26，repair_fallback=0、deadline_degraded=0，字段均实际存在。XG95 G1候选67、有限分数67、过滤17；零新增不作为失败条件。CSV仅留临时目录，不上传GitHub。
+原任务V01/V02与交付manifest核对2/2字节数、SHA256一致，原文未重写。交付commit为5d08e68b642c584d651b2220c1d74e46edbb097e。V02执行授权覆盖三份构建、运行、正式提交和前台等待；V01算法保持不变。
 
-两份保存Input页逐项确认四个Dataset版本为V10/V2/V5/V1，XG95另挂既有Division Train输出。实际日志确认三主权重哈希、head哈希、离线依赖、双T4推理、head在低阈缓存之后生效及真实CSV写出。XG95实际加载冻结gate SHA和final模型。API回读三份均Private、GPU启用、Internet off、原版docker digest一致。普通输出警告包括依赖弃用、nbconvert转义及Torch JIT内核缓存目录不可写；没有真实推理失败、repair fallback或deadline降级。Torch JIT缓存提示不等同于低阈检测缓存失效。
+母版为已正式取得0.953的XR0：dongdongjiaqi/biohub-x138-xr0-score-20260925，V1/SV352643547、submission56546951，其完整源码已重新读回并与冻结母版比对。原始12个有效代码单元保持顺序，附加轻量输出回执单元。
 
-## 调度与预算
+XV25只将原无flow自身速度权重改0.25；XG95仅增加冻结G1分裂候选过滤（0.95）；XV25G95组合两项。检测0.965、DeepCenter0.25、head、连续坐标采样、flow、readmit、gapfill、几何、排序及cap等保持XR0设置。未训练、未引入第三项算法修改、未恢复自动选择器。
 
-本批完整Save & Run已用3/3，工程备用0/1，正式请求3/3；训练0、Dataset写入0、最终选择修改0。前两份同批启动，普通运行释放槽位后即启动组合，不等待Public。账号sailorren，提交前实时额度5次。GPU API可用总额21600秒与UI30小时口径不同，按较小6小时规划。平台未明确展示最大并发上限，记为UNKNOWN；实测两份同时运行获准，采取两槽调度，未占用其他已有任务。
+G1实现参考固定研究commit e67ea3fd5c1d8b45723559e0cf60baea37369caa中的saved_inference.py与ProposalPolicy.admit；使用已有sailorren/biohub-division-train-20260914/1（SV349707105）输出的final模型。实际下载及GPU挂载文件SHA256均核对为0a1f9b93bb529e70f4f7c2ba0907eea8b4cecd2befccc8ba1fb75e569edf77a0。
 
-后续只继续三个准确ID的终态回收，不追加方案或重提。仍有工作未完成，不声明COMPLETED_VERIFIED。
+本地30项小型检查通过：nbformat、逐单元AST、嵌入脚本、参数读取时序、算法diff、原几何/排序/cap还原、动态补丁顺序、G1边界/回退/坐标单位等。低阈缓存及head动态补丁在实际support源码上验证，缓存先于head；不是仅凭AST判定动态生效。另用实际final模型核验有限分数路径。没有额外GPU诊断或第二遍推理。
 
-组合候选实际GPU普通运行19分28秒，238236行CSV通过检查，速度消费26，G1候选67/有限67/过滤17，repair_fallback与deadline_degraded均为0。实际输入页版本逐项确认V10/V2/V5/V1及既有Division Train。与XG95的可见CSV相同不作为跳过正式评分的依据，三方案的实际隐藏测试结果仍未知。第三份提交前实时剩余额度3次，正式受理56573515。
+## 实际部署与普通输出验收（MEASURED）
 
-阶段Git回执：84c9eefbb4828c0fa5bfba1ba628f00e23c28202 的报告、账本及三个运行/提交回执远端逐字节回读5/5通过；不等于最终评分完成。中途一次GetKernelSessionStatus发生SSL EOF，只读失败已记录，没有新增运行或请求。
+三份均Private、T4×2、Internet off。实际保存版本API源码回读与冻结候选相同，并均使用原版镜像：
+`gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461`。
 
-最新页面观测（UTC 2026-09-26T08:12:34.891809+00:00）：三个精确描述/Version/SV均为 `Notebook Running`，尚无Public。API查询连接偶发SSL EOF，仅影响只读观察，不产生新运行或提交。固定受理commit `ac61c5ce9212c247c1eab8f52c81b4b7c9984ce8` 关键文件远端逐字节回读11/11通过，见 `github_accepted_readback.json`。
+保存版本Input页逐项核对四项Dataset为：primary pilkwang/biohub-tracking-support-pack-50ep-v1 V10；secondary pilkwang/biohub-temporal-unet3d-seed314159-v1 V2；DeepCenter pilkwang/biohub-deepcenter-unet3d-center-prior-v1 V5；head anvithpothula/biohub-v1284-head-s075 V1；另挂本比赛，G1两份再挂既有Division Train精确V1。未静默使用Latest、未改旧资产。
 
-定时只读回收：2026-09-26 17:13:18 上海，三个准确submission均为PENDING，Public均UNKNOWN，direct_error均为空。保持WAITING_FOR_SCORES，不进行方案比较。
+实际普通日志确认离线依赖载入、双T4分片推理、原三主权重哈希断言、head大小33913及SHA256 625a0d9340f48193f2ec294fc2d81c5bb3c03087eab78ef0ae998a9c4c7da00c、head在低阈缓存补丁之后生效、真实CSV写出。G1两份实际加载final模型和正确哈希。
 
-定时只读回收：2026-09-26 18:23:53 上海，三个准确submission均为PENDING，Public均UNKNOWN，direct_error均为空。仍为WAITING_FOR_SCORES，无新增请求。
+| 候选 | 普通终态 / 输出检查 | CSV行数 | 速度实际消费计数 | G1候选 / 有限分数 / 过滤 | repair_fallback | deadline_degraded |
+|---|---|---:|---:|---|---:|---:|
+| XV25 | COMPLETE / PASS | 238260 | 26 | 关闭 | 0 | 0 |
+| XG95 | COMPLETE / PASS | 238236 | 26 | 67 / 67 / 17 | 0 | 0 |
+| XV25G95 | COMPLETE / PASS | 238236 | 26 | 67 / 67 / 17 | 0 | 0 |
 
-定时只读回收：2026-09-26 19:20:20 上海，三个准确submission均为PENDING，Public均UNKNOWN，direct_error均为空。仍为WAITING_FOR_SCORES，无新增请求。
+独立逐行核查字段、连续ID、实际测试集合覆盖、坐标、边端点、相邻时序、唯一父节点及最多两个子节点；未写死可见视频数、名称或输出哈希，也未强制每视频新增节点。上述诊断数值均来自普通GPU运行的实际字段，不将缺失字段默认为0。隐藏正式重跑的详细repair/deadline等诊断未取得，记为UNKNOWN；正式终态/分数及输出字节数已从官方精确ID回收，不能把普通运行诊断冒充隐藏重跑诊断。
 
-定时只读回收：2026-09-26 20:27:48 上海，三个准确submission均为PENDING，Public均UNKNOWN，direct_error均为空。仍为WAITING_FOR_SCORES，无新增请求。
+普通日志警告为依赖弃用、nbconvert转义和Torch JIT内核缓存目录不可写；预测仍完成，未触发repair fallback或deadline降级。JIT内核缓存提示不等于算法的低阈检测缓存失效。中途只读查询出现SSL EOF，已记录；不计作运行失败或新增请求。
 
-定时只读回收：2026-09-26 21:36:19 上海，三个准确submission均为PENDING，Public均UNKNOWN，direct_error均为空。仍为WAITING_FOR_SCORES，无新增请求。
+## 调度、额度与预算
 
-首份正式终态：XV25 V1/SV352908214、submission56573059 已为COMPLETE，Public0.953，首次观测UTC 2026-09-26T14:00:11.072333+00:00。XG95及XV25G95仍PENDING。评分未齐，尚不进行比较、晋级或淘汰。
+前两份同批启动，普通运行释放槽位后立即启动组合，不等待Public；各普通输出验收后立即提交精确V1，官方提交时间见上表。平台最大并发上限未明确展示，记为UNKNOWN；实测两份同时运行获准，采取两槽调度，未取消其他任务。GPU界面30小时与API totalTimeAllowed21600秒口径不同，按较小6小时规划。首次提交前实时剩余额度5次，第三份前剩3次。
 
-第二份正式终态：XV25G95 V1/SV352913254、submission56573515 已为COMPLETE，Public0.952，首次观测UTC 2026-09-26T14:23:26.359472+00:00。XG95仍PENDING；继续等待评分齐全，不提前比较。
+完整Save & Run **3/3**；共用工程备用 **0/1**；正式请求 **3/3**，每候选1次；正式重提0。训练、Dataset写入、CPU转换、Colab、最终选择修改均0。前台按约10分钟间隔查询准确ID，直到三份正式终态齐全；未创建后台监控或跨周期自动提交。
 
-最新只读回收：2026-09-26 23:09:59 上海，XV25为COMPLETE/0.953，XV25G95为COMPLETE/0.952，XG95 API为PENDING、页面原文为Submission Running、Public尚无。继续等待最后终态，不重复请求。
+## Git交付与验收
+
+任务分支：codex/xr0-transfer-trio-20260926，隔离工作区执行，canonical仓库未覆盖用户改动，未reset/stash/强推/合并main。CSV、图、原始数据、权重及凭据未入GitHub。
+
+冻结代码commit 5787a38c114f17f179de6181758c2ef0222c3e28关键文件远端逐字节回读26/26通过；全受理commit ac61c5ce9212c247c1eab8f52c81b4b7c9984ce8关键回执回读11/11通过。最终结果commit与关键文件回读记录将写入本批github_final_readback.json。final_receipt_check.json核对三份身份、SV、非空正式分数、实际输出及请求预算，3/3通过。
+
+冻结验收合同SHA256：be06357a4ea31e6c21aca4456659c12f68f3d793c3a90516b3015f7ae341f9d6。验收器的formal-readback属于预先冻结的manual语义项，不因本次已取得官方回执而改写合同；验收器结论与业务SCORED_ALL分开记录。
