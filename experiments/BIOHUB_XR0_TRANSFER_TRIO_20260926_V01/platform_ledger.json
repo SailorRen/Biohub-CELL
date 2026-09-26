@@ -1,6 +1,6 @@
 {
   "task_id": "BIOHUB_XR0_TRANSFER_TRIO_20260926_V01",
-  "status": "PREPARED_NOT_RUN",
+  "status": "RUNNING_BATCH",
   "created_at": "2026-09-26T07:04:14.813770+00:00",
   "budget": {
     "planned_full_runs": 3,
@@ -9,7 +9,7 @@
     "per_candidate_formal_max": 1
   },
   "used": {
-    "full_runs": 0,
+    "full_runs": 2,
     "engineering_spare_runs": 0,
     "formal_requests": 0,
     "training": 0,
@@ -18,22 +18,56 @@
   },
   "candidates": {
     "XV25": {
-      "state": "LOCAL_PREPARED",
+      "state": "RUN_ACCEPTED",
       "slug": "sailorren/biohub-xr0-xv25-20260926",
-      "version": null,
-      "sv": null,
+      "version": 1,
+      "sv": 352908214,
       "submission_id": null,
       "public": null,
-      "events": []
+      "events": [
+        {
+          "type": "SAVE_AND_RUN_ALL",
+          "at": "2026-09-26T07:07:13.597133+00:00",
+          "source_sha256": "3e59e81bfbf1934d31c47e96a27db49e2c2c08d363e1a94bfe964e6bd33e59a2",
+          "response": {
+            "ref": "/code/sailorren/biohub-xr0-xv25-20260926",
+            "url": "https://www.kaggle.com/code/sailorren/biohub-xr0-xv25-20260926",
+            "versionNumber": 1,
+            "kernelId": 135935605
+          }
+        }
+      ],
+      "kernel_id": 135935605,
+      "last_observed_at": "2026-09-26T07:09:05.550552+00:00",
+      "ordinary_status": {
+        "status": "RUNNING"
+      }
     },
     "XG95": {
-      "state": "LOCAL_PREPARED",
+      "state": "RUN_ACCEPTED",
       "slug": "sailorren/biohub-xr0-xg95-20260926",
-      "version": null,
-      "sv": null,
+      "version": 1,
+      "sv": 352908258,
       "submission_id": null,
       "public": null,
-      "events": []
+      "events": [
+        {
+          "type": "SAVE_AND_RUN_ALL",
+          "at": "2026-09-26T07:07:30.625071+00:00",
+          "source_sha256": "0eed043c5bf1a093be2c03fa3b7310fd0d7979d01120a189cfd146c1535b8b72",
+          "response": {
+            "ref": "/code/sailorren/biohub-xr0-xg95-20260926",
+            "url": "https://www.kaggle.com/code/sailorren/biohub-xr0-xg95-20260926",
+            "versionNumber": 1,
+            "kernelId": 135935626
+          }
+        }
+      ],
+      "kernel_id": 135935626,
+      "last_observed_at": "2026-09-26T07:09:06.929346+00:00",
+      "ordinary_status": {
+        "status": "RUNNING"
+      }
     },
     "XV25G95": {
       "state": "LOCAL_PREPARED",
@@ -45,5 +79,10 @@
       "events": []
     }
   },
-  "resource_note": "UI 00:00/30 hrs; API totalTimeAllowed=21600s, used/reserved=0; plan against smaller 6 hours. Concurrency confirmation pending."
+  "resource_note": "UI 00:00/30 hrs; API totalTimeAllowed=21600s, used/reserved=0; plan against smaller 6 hours. Concurrency confirmation pending.",
+  "concurrency": {
+    "observed_running": 2,
+    "max_limit": "UNKNOWN",
+    "scheduling": "Conservative two ordinary runs; launch combination immediately on first release. No existing other events."
+  }
 }
