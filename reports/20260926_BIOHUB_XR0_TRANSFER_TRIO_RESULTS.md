@@ -1,16 +1,16 @@
 # XR0 迁移三候选执行结果
 
-当前状态：RUNNING_BATCH。两份普通 GPU 运行和输出验收通过，已逐份正式受理；第三份普通运行中。正式评分尚未齐，本报告不作方案优劣判断。
+当前状态：WAITING_FOR_SCORES。三份普通 GPU 运行和输出验收全部通过，均已逐份正式受理。正式评分尚未齐，本报告不作方案优劣判断。
 
 ## 对象与回执
 
 | 候选 | owner / Kernel slug | Version / SV | 普通运行 | submission ID | 正式状态 | Public | 提交时间（上海） |
 |---|---|---|---|---|---|---|---|
 | XV25 | sailorren/biohub-xr0-xv25-20260926 | V1 / 352908214 | COMPLETE，输出 PASS | 56573059 | PENDING | UNKNOWN | 2026-09-26 15:31:39 |
-| XG95 | sailorren/biohub-xr0-xg95-20260926 | V1 / 352908258 | COMPLETE，输出 PASS | 56573089 | PENDING | UNKNOWN | 2026-09-26 15:32（精确秒见账本） |
-| XV25G95 | sailorren/biohub-xr0-xv25g95-20260926 | V1 / 352913254 | RUNNING | 尚无 | 未提交 | UNKNOWN | 尚无 |
+| XG95 | sailorren/biohub-xr0-xg95-20260926 | V1 / 352908258 | COMPLETE，输出 PASS | 56573089 | PENDING | UNKNOWN | 2026-09-26 15:32:40 |
+| XV25G95 | sailorren/biohub-xr0-xv25g95-20260926 | V1 / 352913254 | COMPLETE，输出 PASS | 56573515 | PENDING | UNKNOWN | 2026-09-26 15:51:48 |
 
-正式最后观测时间：2026-09-26 15:32:51 上海。准确原始状态和时间在 platform_ledger.json 与每候选 formal_last_observed.json。已有 ID 只读查询，不重发。相对 XR0 0.953 的差值尚不可计算。三份正式终态回收后才统一分析；不修改最终选择。
+正式最后观测时间：2026-09-26 15:51:59 上海。准确原始状态和时间在 platform_ledger.json 与每候选 formal_last_observed.json。已有 ID 只读查询，不重发。相对 XR0 0.953 的差值尚不可计算。三份正式终态回收后才统一分析；不修改最终选择。
 
 ## 冻结定义及检查
 
@@ -26,6 +26,10 @@ XV25 CSV共238260行，XG95共238236行；根据运行时真实测试集合核�
 
 ## 调度与预算
 
-本批完整Save & Run已用3/3，工程备用0/1，正式请求2/3；训练0、Dataset写入0、最终选择修改0。前两份同批启动，普通运行释放槽位后即启动组合，不等待Public。账号sailorren，提交前实时额度5次。GPU API可用总额21600秒与UI30小时口径不同，按较小6小时规划。平台未明确展示最大并发上限，记为UNKNOWN；实测两份同时运行获准，采取两槽调度，未占用其他已有任务。
+本批完整Save & Run已用3/3，工程备用0/1，正式请求3/3；训练0、Dataset写入0、最终选择修改0。前两份同批启动，普通运行释放槽位后即启动组合，不等待Public。账号sailorren，提交前实时额度5次。GPU API可用总额21600秒与UI30小时口径不同，按较小6小时规划。平台未明确展示最大并发上限，记为UNKNOWN；实测两份同时运行获准，采取两槽调度，未占用其他已有任务。
 
-后续只继续组合普通运行验收、其唯一正式请求及三个准确ID的终态回收，不追加方案或重提。仍有工作未完成，不声明COMPLETED_VERIFIED。
+后续只继续三个准确ID的终态回收，不追加方案或重提。仍有工作未完成，不声明COMPLETED_VERIFIED。
+
+组合候选实际GPU普通运行19分28秒，238236行CSV通过检查，速度消费26，G1候选67/有限67/过滤17，repair_fallback与deadline_degraded均为0。实际输入页版本逐项确认V10/V2/V5/V1及既有Division Train。与XG95的可见CSV相同不作为跳过正式评分的依据，三方案的实际隐藏测试结果仍未知。第三份提交前实时剩余额度3次，正式受理56573515。
+
+阶段Git回执：84c9eefbb4828c0fa5bfba1ba628f00e23c28202 的报告、账本及三个运行/提交回执远端逐字节回读5/5通过；不等于最终评分完成。中途一次GetKernelSessionStatus发生SSL EOF，只读失败已记录，没有新增运行或请求。

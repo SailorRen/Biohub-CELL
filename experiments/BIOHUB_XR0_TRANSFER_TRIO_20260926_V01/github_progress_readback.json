@@ -1,0 +1,32 @@
+{
+  "commit": "84c9eefbb4828c0fa5bfba1ba628f00e23c28202",
+  "passed": 5,
+  "total": 5,
+  "files": [
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/platform_ledger.json",
+      "sha256": "4e5622181edf111348730ad53be94d99425111958ec0a8577e8ec15160371060",
+      "passed": true
+    },
+    {
+      "path": "reports/20260926_BIOHUB_XR0_TRANSFER_TRIO_RESULTS.md",
+      "sha256": "b80caea2b9ea6aa7ef26a6bd25a983310f0a397fa86e1af935e79703dee6c7ff",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25/formal_request_receipt.json",
+      "sha256": "d91343f611b29bc566455242ca184f5405ddebe1f165bff15e2e5dc301fc79f5",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XG95/formal_request_receipt.json",
+      "sha256": "04826286800c2fd61c57af05ea84e4e80eb845fd415e4cd307d701137fddcc5f",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25G95/run_request_receipt.json",
+      "sha256": "a83e5541e265cb989ee266701b89b46f017753ee9ab6bc50b895147a17aae6ee",
+      "passed": true
+    }
+  ]
+}

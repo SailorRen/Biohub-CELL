@@ -1,0 +1,9 @@
+[
+  {
+    "observed_at": "2026-09-26T07:40:39.736414+00:00",
+    "operation": "GetKernelSessionStatus XV25G95",
+    "error": "SSL UNEXPECTED_EOF_WHILE_READING",
+    "effect": "Read-only poll failed; no run or submission sent. Browser same SV352913254 still RUNNING at666.9s with active worker logs.",
+    "budget_effect": 0
+  }
+]
