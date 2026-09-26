@@ -37,3 +37,5 @@ XV25 CSV共238260行，XG95共238236行；根据运行时真实测试集合核�
 最新页面观测（UTC 2026-09-26T08:12:34.891809+00:00）：三个精确描述/Version/SV均为 `Notebook Running`，尚无Public。API查询连接偶发SSL EOF，仅影响只读观察，不产生新运行或提交。固定受理commit `ac61c5ce9212c247c1eab8f52c81b4b7c9984ce8` 关键文件远端逐字节回读11/11通过，见 `github_accepted_readback.json`。
 
 定时只读回收：2026-09-26 17:13:18 上海，三个准确submission均为PENDING，Public均UNKNOWN，direct_error均为空。保持WAITING_FOR_SCORES，不进行方案比较。
+
+定时只读回收：2026-09-26 18:23:53 上海，三个准确submission均为PENDING，Public均UNKNOWN，direct_error均为空。仍为WAITING_FOR_SCORES，无新增请求。
