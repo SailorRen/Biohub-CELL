@@ -1,7 +1,7 @@
 # XR0最后两候选正式评分
 
 任务：BIOHUB_XR0_LAST_TWO_20260926_V01；遵循SCORE_FIRST_V02。
-当前状态：RUNNING_BATCH。尚未启动普通运行或正式提交，Public为UNKNOWN。
+当前状态：RUNNING_BATCH。XD960普通验收通过并正式受理56585147；XRL9已受理普通运行，等待推进。Public为UNKNOWN。
 
 固定交付b05a5e115111cfae66424f0b2e7eac09c1b914b8任务原文9571字节及SHA256核对通过。沿用原XR0十二个有效单元，XD960仅DET和守卫0.960，XRL9仅RELAXED_UM=9.0；其余算法不变。附加原head哈希核验、只读门限消费计数和上一批轻量输出验收，不增加推理。
 
@@ -17,3 +17,5 @@
 
 Code commit 2a574a0127abdfc46fb8fd33f3d0cc5778a77b3a: remote 26/26 byte-equal.
 XD960 V1/SV353050916; XRL9 V1/SV353050971. Both SAVE_AND_RUN_ALL accepted, GPU T4 x2; full runs used 2/2, formal requests 0/2. No output acceptance or Public yet. Earlier LOCAL_PREPARED statements above describe pre-launch history.
+
+XD960 formal submission 56585147, V1/SV353050916, submitted_at 2026-09-26T17:22:53.552854+00:00. GPU ordinary complete 1479.6s; independent output PASS 238585 rows. Formal requests used 1/2.
