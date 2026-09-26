@@ -1,0 +1,36 @@
+{
+  "commit": "c2720ff3de07f2d9e09597338a3f049ae333c3dd",
+  "read_at_utc": "2026-09-26T16:07:13.798064+00:00",
+  "passed": 4,
+  "total": 4,
+  "files": [
+    {
+      "path": "tasks/CODEX_20260926_PUBLIC_LB_UPDATE_CONTRACT.json",
+      "git_blob": "24d1202c987c9753ff713e8de033bf44cb48b0e1",
+      "sha256": "1ef8b0af13011d0007757dcb52210cc35df688910655f160392a932726fc71be",
+      "bytes": 1334,
+      "equal": true
+    },
+    {
+      "path": "reports/20260926_BIOHUB_PUBLIC_LB_UPDATE.md",
+      "git_blob": "ae5c7e0521411d70a05cbb6152f5b1ddb5fdd458",
+      "sha256": "db8944f0589d0ec3cbcbf75656b531751635cf2119bc4c9a5ba3a75bc9784b6a",
+      "bytes": 8221,
+      "equal": true
+    },
+    {
+      "path": "research/20260926_public_lb_update/evidence.json",
+      "git_blob": "4501ed5d77c353d1c0e84395cffb8e99ded55a86",
+      "sha256": "9f969ed9423fb26b5045d84eb459c35e13998d76c06c947f3bf4941b06329bac",
+      "bytes": 2743,
+      "equal": true
+    },
+    {
+      "path": "research/20260926_public_lb_update/source_checks.json",
+      "git_blob": "f53804981d8180b4a787e1d8a88cc99deec211d3",
+      "sha256": "edff1fff2c0719e233b01dc3efa6a460a700f303a1b732df4e205d8e9221a509",
+      "bytes": 1351,
+      "equal": true
+    }
+  ]
+}
