@@ -1,9 +1,31 @@
-# XR0迁移三候选执行结果
+# XR0 迁移三候选执行结果
 
-状态：PREPARED_NOT_RUN。原任务V01/V02哈希2/2通过，成功XR0准确源码重新回读匹配；G1已有V1权重下载哈希通过。30项小型检查通过，未代表GPU或CSV验收。
+当前状态：RUNNING_BATCH。两份普通 GPU 运行和输出验收通过，已逐份正式受理；第三份普通运行中。正式评分尚未齐，本报告不作方案优劣判断。
 
-三候选XV25/XG95/XV25G95已同时构建。仅速度0.25、冻结G1过滤两因素，原几何/排序/cap经AST还原一致。保留head、flow、检测0.965、DC0.25及缓存补丁顺序。新增head哈希断言、真实消费计数及轻量CSV核验，无额外推理或回放。
+## 对象与回执
 
-当前本批GPU完整运行0、正式请求0，Public均UNKNOWN；无新训练、Dataset写入和最终选择修改。具体状态以本批platform_ledger为准。平台当前账号sailorren；API可用GPU6小时，与页面30小时上限存在口径差异，按较小值安排。
+| 候选 | owner / Kernel slug | Version / SV | 普通运行 | submission ID | 正式状态 | Public | 提交时间（上海） |
+|---|---|---|---|---|---|---|---|
+| XV25 | sailorren/biohub-xr0-xv25-20260926 | V1 / 352908214 | COMPLETE，输出 PASS | 56573059 | PENDING | UNKNOWN | 2026-09-26 15:31:39 |
+| XG95 | sailorren/biohub-xr0-xg95-20260926 | V1 / 352908258 | COMPLETE，输出 PASS | 56573089 | PENDING | UNKNOWN | 2026-09-26 15:32（精确秒见账本） |
+| XV25G95 | sailorren/biohub-xr0-xv25g95-20260926 | V1 / 352913254 | RUNNING | 尚无 | 未提交 | UNKNOWN | 尚无 |
 
-尚需：固定代码远端回读、并发与额度确认、实际保存版本/输入/CUDA核验、输出验收、逐份一次正式提交及终态回收。已受理后只查准确ID；评分未齐不进行下一批分析。
+正式最后观测时间：2026-09-26 15:32:51 上海。准确原始状态和时间在 platform_ledger.json 与每候选 formal_last_observed.json。已有 ID 只读查询，不重发。相对 XR0 0.953 的差值尚不可计算。三份正式终态回收后才统一分析；不修改最终选择。
+
+## 冻结定义及检查
+
+原任务 V01/V02 按交付 manifest 验证 2/2 字节数和 SHA256 一致。成功 XR0 V1/SV352643547、submission56546951 的源码已实际读取并确认与冻结母版相同，其正式 Public 为0.953。G1 使用既有 V1/SV349707105 输出中的 final 模型，实际文件 SHA256 与任务要求一致，无重新训练。
+
+三份同时构建，仅包含自身无 flow 分支速度0.25、冻结 G1 0.95 两项因素。原几何、排序和 cap 经 AST 还原一致。保留检测0.965、DeepCenter0.25、head、flow、readmit及原版其余算法。小型检查30项通过；另验证冻结G1真实final模型的有限分数路径。低阈缓存先于head的动态补丁在实际support源码上检查通过。代码冻结 commit：5787a38c114f17f179de6181758c2ef0222c3e28；固定远端关键文件回读26/26通过，详见 github_code_readback.json。
+
+## 已完成实际运行验收
+
+XV25 CSV共238260行，XG95共238236行；根据运行时真实测试集合核对覆盖，逐行复核字段、连续ID、坐标、边端点、相邻时序、唯一父节点、最多两个子节点。两份实际速度消费计数均26，repair_fallback=0、deadline_degraded=0，字段均实际存在。XG95 G1候选67、有限分数67、过滤17；零新增不作为失败条件。CSV仅留临时目录，不上传GitHub。
+
+两份保存Input页逐项确认四个Dataset版本为V10/V2/V5/V1，XG95另挂既有Division Train输出。实际日志确认三主权重哈希、head哈希、离线依赖、双T4推理、head在低阈缓存之后生效及真实CSV写出。XG95实际加载冻结gate SHA和final模型。API回读三份均Private、GPU启用、Internet off、原版docker digest一致。普通输出警告包括依赖弃用、nbconvert转义及Torch JIT内核缓存目录不可写；没有真实推理失败、repair fallback或deadline降级。Torch JIT缓存提示不等同于低阈检测缓存失效。
+
+## 调度与预算
+
+本批完整Save & Run已用3/3，工程备用0/1，正式请求2/3；训练0、Dataset写入0、最终选择修改0。前两份同批启动，普通运行释放槽位后即启动组合，不等待Public。账号sailorren，提交前实时额度5次。GPU API可用总额21600秒与UI30小时口径不同，按较小6小时规划。平台未明确展示最大并发上限，记为UNKNOWN；实测两份同时运行获准，采取两槽调度，未占用其他已有任务。
+
+后续只继续组合普通运行验收、其唯一正式请求及三个准确ID的终态回收，不追加方案或重提。仍有工作未完成，不声明COMPLETED_VERIFIED。
