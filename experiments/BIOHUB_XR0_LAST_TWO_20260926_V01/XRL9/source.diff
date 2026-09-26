@@ -1,0 +1,45 @@
+--- XR0/cell1
++++ XRL9/cell1
+@@ -105,4 +105,5 @@
+ os.environ["BIOHUB_CACHE_EDGE_THRESHOLD"] = "1.0"
+ os.environ["BIOHUB_LOWDET_THRESHOLD"] = "0.3"
+ print("BIOHUB_PRESET:", BIOHUB_PRESET)
+-print("BIOHUB_SCORE_AXIS:", BIOHUB_SCORE_AXIS)+print("BIOHUB_SCORE_AXIS:", BIOHUB_SCORE_AXIS)
++os.environ["BIOHUB_MOTION_RELINK_RELAXED_UM"] = "9.0"
+--- XR0/cell5
++++ XRL9/cell5
+@@ -519,6 +519,10 @@
+ os.environ['V1284_MODE']='candidate'
+ os.environ['V1284_HEAD']=str(_myhead[0])
+ 
++import hashlib as _last_hh
++assert _myhead[0].stat().st_size == 33913, 'LAST_TWO_HEAD_SIZE'
++assert _last_hh.sha256(_myhead[0].read_bytes()).hexdigest() == '625a0d9340f48193f2ec294fc2d81c5bb3c03087eab78ef0ae998a9c4c7da00c', 'LAST_TWO_HEAD_HASH'
++print('LAST_TWO_HEAD_VERIFIED', str(_myhead[0]), flush=True)
+ _trial_source = _ps.read_text()
+ if _trial_source.count('import tracksdata as td\n') != 1: raise RuntimeError("V1284 patch anchor mismatch")
+ _trial_source = _trial_source.replace('import tracksdata as td\n', 'import tracksdata as td\nfrom v1284_coordinate_refinement import refine as _v1284_refine, index_features as _v1284_index\n')
+--- XR0/cell6
++++ XRL9/cell6
+@@ -521,6 +521,10 @@
+     stats: dict[str, int],
+     learned_edge_probs: dict[tuple[int, int], float] | None = None,
+ ) -> list[dict[str, object]]:
++    stats["last_two_relaxed_config"] = MOTION_RELINK_RELAXED_UM
++    stats["last_two_flow_relaxed_config"] = MOTION_RELINK_FLOW_RELAXED_UM
++    stats.setdefault("last_two_flow_relaxed_calls", 0)
++    stats.setdefault("last_two_no_flow_relaxed_calls", 0)
+     if not OUTPUT_MOTION_RELINK or not nodes_by_id:
+         return []
+ 
+@@ -712,6 +716,10 @@
+             for pass_name, gate_um in passes:
+                 pass_sources = [node_id for node_id in source_ids if node_id in unmatched_sources]
+                 pass_targets = [node_id for node_id in target_ids if node_id in unmatched_targets]
++                if pass_name == "relaxed":
++                    _last_mode = "flow" if flow is not None else "no_flow"
++                    stats["last_two_" + _last_mode + "_relaxed_calls"] = stats.get("last_two_" + _last_mode + "_relaxed_calls", 0) + 1
++                    stats["last_two_" + _last_mode + "_relaxed_gate"] = gate_um
+                 matches = assign_pass(pass_sources, pass_targets, gate_um, flow, flow_exclude_um)
+                 for source_id, target_id, raw, motion, prob in matches:
+                     if source_id not in unmatched_sources or target_id not in unmatched_targets:

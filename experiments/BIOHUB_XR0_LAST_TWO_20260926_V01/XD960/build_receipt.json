@@ -1,0 +1,12 @@
+{
+  "arm": "XD960",
+  "det": 0.96,
+  "relaxed": 10.0,
+  "velocity": 0.5,
+  "g1": false,
+  "source_sha256": "fdad84485affe7b54f08bab6264bda29cba9b73495f902bec966f6c934708041",
+  "algorithm_changes": [
+    "DET_THRESHOLD_AND_GUARD"
+  ],
+  "runtime_additions": "head hash, read-only assignment counters and existing lightweight output checks"
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_XR0_LAST_TWO_20260926_V01",
+  "goal": "Run and submit exact XD960 and XRL9 once each and recover formal terminal results",
+  "scope": {
+    "in_scope": [
+      "Two planned full GPU runs, one shared engineering reserve",
+      "At most two formal requests"
+    ],
+    "out_of_scope": [
+      "Training",
+      "Other experiments",
+      "Final selection changes"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "acceptance": [
+    {
+      "id": "report",
+      "type": "file",
+      "path": "reports/20260926_BIOHUB_XR0_LAST_TWO_RESULTS.md",
+      "min_bytes": 200
+    },
+    {
+      "id": "terminal",
+      "type": "json",
+      "path": "experiments/BIOHUB_XR0_LAST_TWO_20260926_V01/platform_ledger.json",
+      "assertions": [
+        {
+          "pointer": "/terminal_recovered",
+          "op": "equals",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "git",
+      "type": "git",
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true
+    },
+    {
+      "id": "formal-review",
+      "type": "manual",
+      "reason": "Review exact platform results and output evidence",
+      "evidence_needed": [
+        "Exact submission IDs",
+        "CUDA and output checks"
+      ]
+    }
+  ]
+}

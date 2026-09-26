@@ -1,0 +1,12 @@
+{
+  "arm": "XRL9",
+  "det": 0.965,
+  "relaxed": 9.0,
+  "velocity": 0.5,
+  "g1": false,
+  "source_sha256": "6ed78164a099f0c8b3bb96c34114ff47b3c4e74b06860d276a894463a0ef146e",
+  "algorithm_changes": [
+    "RELAXED_UM"
+  ],
+  "runtime_additions": "head hash, read-only assignment counters and existing lightweight output checks"
+}
