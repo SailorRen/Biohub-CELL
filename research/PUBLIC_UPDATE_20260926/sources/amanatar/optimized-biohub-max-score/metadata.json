@@ -1,0 +1,30 @@
+{
+  "id": 128768517,
+  "ref": "amanatar/optimized-biohub-max-score",
+  "title": "optimized-biohub-max-score",
+  "author": "Aman Atar",
+  "slug": "optimized-biohub-max-score",
+  "lastRunTime": "2026-09-23T05:53:02.679Z",
+  "language": "python",
+  "kernelType": "notebook",
+  "isPrivate": false,
+  "enableGpu": true,
+  "enableInternet": false,
+  "categoryIds": [
+    "gpu"
+  ],
+  "datasetDataSources": [
+    "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+    "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+    "pilkwang/biohub-tracking-support-pack-50ep-v1",
+    "anvithpothula/biohub-v1284-head-s075"
+  ],
+  "competitionDataSources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "totalVotes": 49,
+  "enableTpu": false,
+  "currentVersionNumber": 4,
+  "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "machineShape": "NvidiaTeslaT4"
+}

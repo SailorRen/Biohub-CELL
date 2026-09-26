@@ -1,0 +1,16 @@
+{
+  "topic": {
+    "id": 743146,
+    "title": "Winner deliverables when using permitted third-party pretrained weights",
+    "url": "/competitions/biohub-cell-tracking-during-development/discussion/743146",
+    "postDate": "2026-09-25T02:32:07.438Z",
+    "authorName": "SamoraDC",
+    "authorUrl": "https://www.kaggle.com/samoradc",
+    "votes": -1,
+    "forumName": "Biohub - Cell Tracking During Development",
+    "forumId": 10656304,
+    "content": "<p>Could the organizers clarify how the training-code delivery requirement in\nsection 2.8 applies to permitted, publicly available third-party pretrained\nweights used unchanged in a solution?</p>\n<p>If the original training source for those third-party weights is not available\nin a complete, legally redistributable form, can winner delivery satisfy that\nrequirement with the pinned weight sources, versions and licenses, the exact\ninference code and environment, and a reproducible description of their use?\nOr must complete, legally redistributable training source for those third-party\nweights also be provided?</p>\n<p>This question concerns the scope of the winner-delivery requirement, not a\nrequest for an exception. We understand that permission to use external models\ndoes not by itself waive the other rules, and that licensing of pretrained\ninputs and delivery of reproducible code are separate obligations.</p>"
+  },
+  "comments": [],
+  "next_page_token": ""
+}

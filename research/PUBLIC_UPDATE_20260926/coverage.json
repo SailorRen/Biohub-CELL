@@ -1,0 +1,41 @@
+{
+  "observed_at": "2026-09-26T06:02:43.862978+00:00",
+  "code_catalog_read": true,
+  "code_catalogs": {
+    "scoreDescending": 100,
+    "dateCreated": 100,
+    "dateRun": 100
+  },
+  "code_unique_refs": 162,
+  "discussion_catalog_read": true,
+  "discussion_catalog_scope": "Live first page, 3 pinned and 17 other topics; not exhaustive older pages",
+  "discussion_bodies": [
+    743222,
+    743006,
+    742942,
+    742266,
+    742131,
+    738217,
+    743146
+  ],
+  "comment_objects_including_deleted": {
+    "743222": 0,
+    "743006": 1,
+    "742942": 3,
+    "742266": 13,
+    "742131": 1,
+    "738217": 50,
+    "743146": 0
+  },
+  "platform_writes": 0,
+  "model_execution": 0,
+  "full_notebook_static_checks": 3,
+  "kito_scope": "two complete files acquired; targeted function review, not full semantic audit",
+  "limitations": [
+    "public catalog bounded, not all notebooks",
+    "images linked in discussions not independently examined",
+    "ordinary telemetry is not hidden scoring log",
+    "full CSV not downloaded or independently audited this turn",
+    "Kito formal receipts are author claims, not account-independent verified results"
+  ]
+}

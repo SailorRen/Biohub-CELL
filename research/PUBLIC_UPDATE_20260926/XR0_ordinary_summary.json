@@ -1,0 +1,304 @@
+{
+  "scope": "ordinary visible-run telemetry only, not hidden scoring telemetry or independent CSV audit",
+  "version": 1,
+  "sv": 352643547,
+  "observed_dataset_count": 4,
+  "totals": {
+    "raw_nodes": 121777.0,
+    "nodes": 121219.0,
+    "edges": 117041.0,
+    "safe_divisions_added": 62.0,
+    "readmitted_nodes": 1337.0,
+    "gapfill_added_nodes": 110.0,
+    "motion_relink_flow_frames": 792.0,
+    "motion_relink_flow_predicted": 493929.0,
+    "repair_fallback": 0.0,
+    "deadline_degraded": 0.0,
+    "repair_seconds": 193.2
+  },
+  "ppsweep": {
+    "base_proxy": null,
+    "held_out_stems": [],
+    "overrides": {},
+    "selected": "base",
+    "selected_proxy": null
+  },
+  "per_dataset": [
+    {
+      "dataset": "44b6_0113de3b",
+      "raw_nodes": "25817",
+      "nodes": "25728",
+      "edges": "24986",
+      "safe_divisions_added": "35",
+      "readmitted_nodes": "94",
+      "gapfill_added_nodes": "3",
+      "motion_relink_flow_frames": "198",
+      "motion_relink_flow_predicted": "103548",
+      "repair_fallback": "0",
+      "deadline_degraded": "0",
+      "repair_seconds": "41.2"
+    },
+    {
+      "dataset": "44b6_0b24845f",
+      "raw_nodes": "20206",
+      "nodes": "19522",
+      "edges": "18323",
+      "safe_divisions_added": "6",
+      "readmitted_nodes": "662",
+      "gapfill_added_nodes": "67",
+      "motion_relink_flow_frames": "198",
+      "motion_relink_flow_predicted": "85221",
+      "repair_fallback": "0",
+      "deadline_degraded": "0",
+      "repair_seconds": "50.1"
+    },
+    {
+      "dataset": "6bba_05b6850b",
+      "raw_nodes": "6239",
+      "nodes": "6220",
+      "edges": "6025",
+      "safe_divisions_added": "5",
+      "readmitted_nodes": "84",
+      "gapfill_added_nodes": "3",
+      "motion_relink_flow_frames": "198",
+      "motion_relink_flow_predicted": "25236",
+      "repair_fallback": "0",
+      "deadline_degraded": "0",
+      "repair_seconds": "9.6"
+    },
+    {
+      "dataset": "6bba_05db0fb1",
+      "raw_nodes": "69515",
+      "nodes": "69749",
+      "edges": "67707",
+      "safe_divisions_added": "16",
+      "readmitted_nodes": "497",
+      "gapfill_added_nodes": "37",
+      "motion_relink_flow_frames": "198",
+      "motion_relink_flow_predicted": "279924",
+      "repair_fallback": "0",
+      "deadline_degraded": "0",
+      "repair_seconds": "92.3"
+    }
+  ],
+  "selected_log_evidence": [
+    {
+      "stream_name": "stderr",
+      "time": 7.607466105,
+      "data": "0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"
+    },
+    {
+      "stream_name": "stderr",
+      "time": 8.220736287,
+      "data": "0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 9.354966175,
+      "data": "Configuration guard: PASS\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 9.355020095,
+      "data": "Baseline: fixed-90 dual-seed clean pipeline (public LB 0.913)\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 10.571088298,
+      "data": "Weight sha256: 12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 55.349252904,
+      "data": "Support repo Python manifest SHA256: 978b626d1fd1e7397435a437dfe68691defe1572fc3c20e61012d7c9b52ed029\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 55.349298874,
+      "data": "Primary materialized SHA256: 12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 55.349313566,
+      "data": "DeepCenter materialized SHA256: 8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 55.863067206,
+      "data": "Secondary SHA256: 9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 60.922025921,
+      "data": "CUDA device: Tesla T4\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 61.079065861,
+      "data": "Low-detection dump applied | dir= /kaggle/working/edge_cache | lowdet threshold= 0.3\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 337.243139305,
+      "data": "V1284 head patched AFTER the readmit dump patch; mode = candidate\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 337.243181249,
+      "data": "Launching 2 independent video shards on CUDA devices ['0', '1']\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 337.243189322,
+      "data": "GPU shard 0: CUDA_VISIBLE_DEVICES=0 | /usr/bin/python3 scripts/predict_unet_transformer.py --data-dir /kaggle/input/competitions/biohub-cell-tracking-during-development/test --splits kaggle_test_splits_50ep.json --split 0 --weights weights/unet_transformer/split_0/edge_predictor_best.pth --unet-batch-size 4 --det-threshold 0.965 --ilp-edge-weight -1.0 --ilp-appearance-weight 0.0 --ilp-disappearance-weight 2.0 --ilp-division-weight 1.2 --use-ilp --method unet_transformer_gpu0 --slice 0::2\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 337.244293868,
+      "data": "GPU shard 1: CUDA_VISIBLE_DEVICES=1 | /usr/bin/python3 scripts/predict_unet_transformer.py --data-dir /kaggle/input/competitions/biohub-cell-tracking-during-development/test --splits kaggle_test_splits_50ep.json --split 0 --weights weights/unet_transformer/split_0/edge_predictor_best.pth --unet-batch-size 4 --det-threshold 0.965 --ilp-edge-weight -1.0 --ilp-appearance-weight 0.0 --ilp-disappearance-weight 2.0 --ilp-division-weight 1.2 --use-ilp --method unet_transformer_gpu1 --slice 1::2\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 343.703416978,
+      "data": "Fold 0: 2 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 343.704612082,
+      "data": "Fold 0: 2 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 343.905643063,
+      "data": "Fold 0: 2 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 343.905655354,
+      "data": "Fold 0: 2 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\n"
+    },
+    {
+      "stream_name": "stderr",
+      "time": 348.100386692,
+      "data": "/kaggle/working/tracking_repo/scripts/v1284_coordinate_refinement.py:55: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /root/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1487.)\n"
+    },
+    {
+      "stream_name": "stderr",
+      "time": 348.303247607,
+      "data": "/kaggle/working/tracking_repo/scripts/v1284_coordinate_refinement.py:55: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /root/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1487.)\n"
+    },
+    {
+      "stream_name": "stderr",
+      "time": 348.303316605,
+      "data": "/kaggle/working/tracking_repo/scripts/v1284_coordinate_refinement.py:55: UserWarning: Specified kernel cache directory could not be created! This disables kernel caching. Specified directory is /root/.cache/torch/kernels. This warning will appear only once per process. (Triggered internally at /pytorch/aten/src/ATen/native/cuda/jit_utils.cpp:1487.)\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 898.081753719,
+      "data": "  [44b6_0113de3b] low-detection pool: 27561 peaks >= 0.5, 25817 on existing nodes, 1744 free\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 907.999007037,
+      "data": "  [44b6_0113de3b] low-detection pool: 27561 peaks >= 0.5, 25928 on existing nodes, 1633 free\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 907.999060677,
+      "data": "  [44b6_0113de3b] after gap-closing (single-frame + gap2 + low-detection filler): 25966 nodes, 25129 edges | 16.3s\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 938.531303772,
+      "data": "  [44b6_0b24845f] low-detection pool: 48783 peaks >= 0.5, 20206 on existing nodes, 28577 free\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 956.314422391,
+      "data": "  [44b6_0b24845f] low-detection pool: 48783 peaks >= 0.5, 20985 on existing nodes, 27798 free\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 956.314514026,
+      "data": "  [44b6_0b24845f] after gap-closing (single-frame + gap2 + low-detection filler): 21242 nodes, 19629 edges | 22.9s\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 985.429646507,
+      "data": "  [6bba_05b6850b] low-detection pool: 8222 peaks >= 0.5, 6239 on existing nodes, 1983 free\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 988.705372382,
+      "data": "  [6bba_05b6850b] low-detection pool: 8222 peaks >= 0.5, 6326 on existing nodes, 1896 free\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 988.705422889,
+      "data": "  [6bba_05b6850b] after gap-closing (single-frame + gap2 + low-detection filler): 6359 nodes, 6123 edges | 4.8s\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 1012.546294652,
+      "data": "  [6bba_05db0fb1] low-detection pool: 80516 peaks >= 0.5, 69515 on existing nodes, 11001 free\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 1045.998718993,
+      "data": "  [6bba_05db0fb1] low-detection pool: 80516 peaks >= 0.5, 70085 on existing nodes, 10431 free\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 1046.345784064,
+      "data": "  [6bba_05db0fb1] after gap-closing (single-frame + gap2 + low-detection filler): 70392 nodes, 68168 edges | 52.0s\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 1087.845065516,
+      "data": "    \"validated_receipt_sha256\": null\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 1087.845199534,
+      "data": "  \"source_notebook_sha256\": \"3e65ca691941949196bf417030ea84fccafe16baaec174b2a63540451bb937e8\",\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 1087.845301611,
+      "data": "  \"status\": \"clean_graph_audit_pass_candidate_unverified_quality\",\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 1087.845786819,
+      "data": "    \"sha256\": \"d52a5da2ae5cb0d1b22499f6ca51a00838a6c32ae9a1986ec756ea72e7909e03\"\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 1088.631617752,
+      "data": "PIPELINE MANIFEST -- resolved state, not just config\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 1088.631638667,
+      "data": "DeepCenter veto:         requested=True  loaded=True\n"
+    }
+  ],
+  "artifacts": {
+    "ppsweep_selected.json": {
+      "sha256": "c81bc2cc976ef4ce4c0963eaa3bed051a36ea9be20d70b985d1768c3fefddd17",
+      "bytes": 116
+    },
+    "biohub-x138-xr0-score-20260925.log": {
+      "sha256": "c9bfb436a7ea0c4316efc019553fdc5dbffe16827a30bc51788fee892e58c29c",
+      "bytes": 287519
+    },
+    "run_stats.csv": {
+      "sha256": "09ae903fc5422641278277d28adcf8329d438caf8c9b61e960441289959210f0",
+      "bytes": 3663
+    },
+    "bidirectional_production_runtime_integrity.json": {
+      "sha256": "ae41130ee035d3ddcbaf2d0977f721429a52ffda8133fe1b877f51de5926278d",
+      "bytes": 2387
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": 128498813,
+  "ref": "raunakdey07/biohub-harmonic-fusion-v3",
+  "title": "Biohub: Harmonic Fusion V3",
+  "author": "Raunak Dey",
+  "slug": "biohub-harmonic-fusion-v3",
+  "lastRunTime": "2026-09-23T05:53:02.643Z",
+  "language": "python",
+  "kernelType": "notebook",
+  "isPrivate": false,
+  "enableGpu": true,
+  "enableInternet": false,
+  "categoryIds": [
+    "gpu"
+  ],
+  "datasetDataSources": [
+    "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+    "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+    "pilkwang/biohub-tracking-support-pack-50ep-v1",
+    "anvithpothula/biohub-v1284-head-s075"
+  ],
+  "competitionDataSources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "totalVotes": 129,
+  "enableTpu": false,
+  "currentVersionNumber": 5,
+  "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "machineShape": "NvidiaTeslaT4"
+}

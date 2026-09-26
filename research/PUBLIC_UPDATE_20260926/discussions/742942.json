@@ -1,0 +1,38 @@
+{
+  "topic": {
+    "id": 742942,
+    "title": "errors in annotated ground truth",
+    "url": "/competitions/biohub-cell-tracking-during-development/discussion/742942",
+    "postDate": "2026-09-24T09:23:26.765Z",
+    "authorName": "Quantizr",
+    "authorUrl": "https://www.kaggle.com/quantizr",
+    "votes": 5,
+    "commentCount": 3,
+    "forumName": "Biohub - Cell Tracking During Development",
+    "forumId": 10656304,
+    "content": "<p>I've been looking over the sparsely annotated ground truth data for a while, and it seems like a good amount of the data is annotated incorrectly. I don't have exact stats but I've noticed some tracks where some of the centroids are not within 7um of the correctly linked cell for a given track, some links are just incorrect, or most recently I've been looking at cell divisions and here is something that is annotated as a cell division. You can clearly see that the blue annotated daughter cell was already there in previous frames and was not the result of a division (and at t+2 the centroid is significantly offset from the cell vs t+1 and t+3). Or its just near impossible to see even with contrast changes.</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F14167270%2Ffaf5df9316c95030c6f3b6c84930e9c9%2FScreenshot%20from%202026-09-24%2002-12-01.png?generation=1790241141046506&amp;alt=media\" alt=\"\"></p>\n<p>I just hope the test set isn't annotated this badly… but that might explain why some models which I think should do worse on manually annotated data seem to do better on the actual test set…</p>"
+  },
+  "comments": [
+    {
+      "id": 3527689,
+      "authorName": "Satwik",
+      "postDate": "2026-09-24T12:28:58.843Z",
+      "content": "<p>I agree, I have had similar observations. My detector has about 0.975 recall on competitio ndata, and from what I have tested (on multiple other datasets too) , it seems to detect almost every cell perfectly well , except a few lighter ones. <img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F3459992%2F8507612cd9ba0f30e4da18ce88b9aabe%2F0BDD02D9-EB9B-411C-A078-F64EE35699EC.jpg?generation=1790252870463349&amp;alt=media\" alt=\"\"></p>"
+    },
+    {
+      "id": 3527637,
+      "authorName": "Quantizr",
+      "postDate": "2026-09-24T09:50:25.447Z",
+      "content": "<p>Like genuinely where is the cell division here???\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F14167270%2Fc95ce39dd5f4b3a8314372590e8e7e7b%2FScreenshot%20from%202026-09-24%2002-48-10.png?generation=1790243301564530&amp;alt=media\" alt=\"\">\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F14167270%2F1d9e02799c000265eaf85ba6b20b845e%2FScreenshot%20from%202026-09-24%2002-47-53.png?generation=1790243309591150&amp;alt=media\" alt=\"\"></p>",
+      "replies": [
+        {
+          "id": 3527641,
+          "authorName": "sghwr",
+          "postDate": "2026-09-24T10:03:51.637Z",
+          "content": "<p>thats genuinely true from my side. we checked all fp originated from our model and do a blind test using our human eyes, the result found that ~70% of those fp can actually be tp since some of the annotation may be truly noisy🫠</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F29779493%2F67ac7b459492aa15733357277aa2db54%2Fimage%20(1).png?generation=1790244214320719&amp;alt=media\" alt=\"\"></p>"
+        }
+      ]
+    }
+  ],
+  "next_page_token": ""
+}

@@ -1,0 +1,239 @@
+[
+  {
+    "ref": "amanatar/optimized-biohub-max-score",
+    "sha256": "371fc1f9f4f20f692e0586616ff7d3eab4621d167f6c78516d3243c5a4fddfab",
+    "code_cells": 12,
+    "checks": [
+      {
+        "cell": 1,
+        "ast_pass": true,
+        "nodes": 1585,
+        "normalized_equal_original": false
+      },
+      {
+        "cell": 2,
+        "ast_pass": true,
+        "nodes": 252,
+        "normalized_equal_original": false
+      },
+      {
+        "cell": 3,
+        "ast_pass": true,
+        "nodes": 2333,
+        "normalized_equal_original": false
+      },
+      {
+        "cell": 4,
+        "ast_pass": true,
+        "nodes": 3835,
+        "normalized_equal_original": true
+      },
+      {
+        "cell": 5,
+        "ast_pass": true,
+        "nodes": 2670,
+        "normalized_equal_original": true
+      },
+      {
+        "cell": 6,
+        "ast_pass": true,
+        "nodes": 25737,
+        "normalized_equal_original": false
+      },
+      {
+        "cell": 7,
+        "ast_pass": true,
+        "nodes": 1066,
+        "normalized_equal_original": true
+      },
+      {
+        "cell": 8,
+        "ast_pass": true,
+        "nodes": 1701,
+        "normalized_equal_original": false
+      },
+      {
+        "cell": 9,
+        "ast_pass": true,
+        "nodes": 2585,
+        "normalized_equal_original": true
+      },
+      {
+        "cell": 10,
+        "ast_pass": true,
+        "nodes": 1962,
+        "normalized_equal_original": false
+      },
+      {
+        "cell": 11,
+        "ast_pass": true,
+        "nodes": 1996,
+        "normalized_equal_original": false
+      },
+      {
+        "cell": 12,
+        "ast_pass": true,
+        "nodes": 881,
+        "normalized_equal_original": false
+      }
+    ]
+  },
+  {
+    "ref": "raunakdey07/biohub-harmonic-fusion-v3",
+    "sha256": "9ab32885574092ab46a8d90bfa96393332c6e5a6249d33c92a9051efbc9779ca",
+    "code_cells": 12,
+    "checks": [
+      {
+        "cell": 1,
+        "ast_pass": true,
+        "nodes": 745,
+        "normalized_equal_original": false
+      },
+      {
+        "cell": 2,
+        "ast_pass": true,
+        "nodes": 196,
+        "normalized_equal_original": true
+      },
+      {
+        "cell": 3,
+        "ast_pass": true,
+        "nodes": 2099,
+        "normalized_equal_original": true
+      },
+      {
+        "cell": 4,
+        "ast_pass": true,
+        "nodes": 3835,
+        "normalized_equal_original": true
+      },
+      {
+        "cell": 5,
+        "ast_pass": true,
+        "nodes": 2670,
+        "normalized_equal_original": true
+      },
+      {
+        "cell": 6,
+        "ast_pass": true,
+        "nodes": 20332,
+        "normalized_equal_original": true
+      },
+      {
+        "cell": 7,
+        "ast_pass": true,
+        "nodes": 1066,
+        "normalized_equal_original": true
+      },
+      {
+        "cell": 8,
+        "ast_pass": true,
+        "nodes": 1406,
+        "normalized_equal_original": true
+      },
+      {
+        "cell": 9,
+        "ast_pass": true,
+        "nodes": 2585,
+        "normalized_equal_original": true
+      },
+      {
+        "cell": 10,
+        "ast_pass": true,
+        "nodes": 1228,
+        "normalized_equal_original": false
+      },
+      {
+        "cell": 11,
+        "ast_pass": true,
+        "nodes": 1235,
+        "normalized_equal_original": false
+      },
+      {
+        "cell": 12,
+        "ast_pass": true,
+        "nodes": 305,
+        "normalized_equal_original": false
+      }
+    ]
+  },
+  {
+    "ref": "anvithpothula/biohub-0-953-lb-original",
+    "sha256": "6b655e39bbfd2d3d6c762badea69847d3f00f5b548f385cb01b07ee2600fde6d",
+    "code_cells": 12,
+    "checks": [
+      {
+        "cell": 1,
+        "ast_pass": true,
+        "nodes": 747,
+        "normalized_equal_original": true
+      },
+      {
+        "cell": 2,
+        "ast_pass": true,
+        "nodes": 196,
+        "normalized_equal_original": true
+      },
+      {
+        "cell": 3,
+        "ast_pass": true,
+        "nodes": 2099,
+        "normalized_equal_original": true
+      },
+      {
+        "cell": 4,
+        "ast_pass": true,
+        "nodes": 3835,
+        "normalized_equal_original": true
+      },
+      {
+        "cell": 5,
+        "ast_pass": true,
+        "nodes": 2670,
+        "normalized_equal_original": true
+      },
+      {
+        "cell": 6,
+        "ast_pass": true,
+        "nodes": 20340,
+        "normalized_equal_original": true
+      },
+      {
+        "cell": 7,
+        "ast_pass": true,
+        "nodes": 1066,
+        "normalized_equal_original": true
+      },
+      {
+        "cell": 8,
+        "ast_pass": true,
+        "nodes": 1406,
+        "normalized_equal_original": true
+      },
+      {
+        "cell": 9,
+        "ast_pass": true,
+        "nodes": 2585,
+        "normalized_equal_original": true
+      },
+      {
+        "cell": 10,
+        "ast_pass": true,
+        "nodes": 1251,
+        "normalized_equal_original": true
+      },
+      {
+        "cell": 11,
+        "ast_pass": true,
+        "nodes": 1267,
+        "normalized_equal_original": true
+      },
+      {
+        "cell": 12,
+        "ast_pass": true,
+        "nodes": 329,
+        "normalized_equal_original": true
+      }
+    ]
+  }
+]

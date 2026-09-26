@@ -1,0 +1,54 @@
+{
+  "observed_at": "2026-09-26T06:02:43.862978+00:00",
+  "team": {
+    "name": "Sailor Ren",
+    "rank": 453,
+    "total_teams": 3922,
+    "score": "0.953",
+    "submission_id": 56546951,
+    "owner": "dongdongjiaqi",
+    "version": 1,
+    "sv": 352643547,
+    "previous_best": "0.950",
+    "xd960_submission_seen": false
+  },
+  "leaderboard_thresholds": {
+    "50": "0.960",
+    "75": "0.958",
+    "100": "0.956",
+    "150": "0.955",
+    "200": "0.954"
+  },
+  "public_private_fraction": [
+    29,
+    71
+  ],
+  "public_versions": [
+    {
+      "ref": "anvithpothula/biohub-0-953-lb-original",
+      "version": 1,
+      "sv": 351539814,
+      "score": "0.953",
+      "same_sha_as_x138": true
+    },
+    {
+      "ref": "raunakdey07/biohub-harmonic-fusion-v3",
+      "version": 5,
+      "sv": 352639153,
+      "score": "0.953",
+      "runtime": "16m48s GPU T4x2",
+      "changes": "comments/docstrings/logging plus import position; core cells2-9 normalized AST same"
+    },
+    {
+      "ref": "amanatar/optimized-biohub-max-score",
+      "version": 4,
+      "sv": 352554580,
+      "score": "0.953",
+      "ordinary_status": "error",
+      "runtime": "1h56m53s GPU T4x2",
+      "interpretation": "Both current Public score and ordinary error retained; no verified improvement over XR0"
+    }
+  ],
+  "kito_commit": "175ad9a5c41596f48b4d3224b4737211e9223998",
+  "kito_latest_commit_at": "2026-09-26T05:21:03Z"
+}

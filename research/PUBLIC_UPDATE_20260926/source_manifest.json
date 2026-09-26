@@ -1,0 +1,180 @@
+{
+  "observed_at": "2026-09-26T06:02:43.862978+00:00",
+  "files": [
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/XR0_ordinary_summary.json",
+      "bytes": 11742,
+      "sha256": "0caaf780aeddb3385f5a81c97dbe789d1b0740a42c38420ee4558a8e61f4401c"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/XR0_scored_readback.json",
+      "bytes": 1208,
+      "sha256": "be44069bdd0ac468ad8734023478d5a02fc6e7e9740d2755afe2c71df44635f1"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/catalog_dateCreated.json",
+      "bytes": 20083,
+      "sha256": "e6962aae8fc305b38daf72ac7cd076ff9285b12b41198dc149f8afd843a6d7f4"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/catalog_dateRun.json",
+      "bytes": 20070,
+      "sha256": "998c8fb07abfcce1e32378f19e15bf0f7c3b0e2b5c35c01c2f2e684dbb912975"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/catalog_scoreDescending.json",
+      "bytes": 20332,
+      "sha256": "48df926c696b28966e088543eacec95fdf7b4ba160b4e7338d54268558e419b9"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/coverage.json",
+      "bytes": 1153,
+      "sha256": "ec58d7810c1496752324569980ded5d1d65f504a66c601080e15a662a0c6c050"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/discussions/738217.json",
+      "bytes": 27955,
+      "sha256": "164de7972f90fa72e4cc63c1a73c1e28625d83fa2ca7130c459da83e71d3cba3"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/discussions/742131.json",
+      "bytes": 1788,
+      "sha256": "e3187065fd729f539c9cf433dfae404c0b3b2f85681cbcde340738ab7982ff93"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/discussions/742266.json",
+      "bytes": 9099,
+      "sha256": "0b4d09c2dc4e370acc8a348b5fc4e1ffe64e8d134234b5def8b569ae40fa840b"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/discussions/742942.json",
+      "bytes": 3622,
+      "sha256": "c00bfa4a1fcf6c8a162d43f924b8192bb6339b1fe06712e2dbb823b645ffce1d"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/discussions/743006.json",
+      "bytes": 2085,
+      "sha256": "4acd6cfcff6f34746a2d13336a67afc622cbbbf997dab992da1bd957b8f6e71d"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/discussions/743146.json",
+      "bytes": 1437,
+      "sha256": "b9a255b4d77b866f2656f330ca39d45ad645f13ed6909a3938eca11c869274db"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/discussions/743222.json",
+      "bytes": 4380,
+      "sha256": "a322c695be308a5be4e4852e3b24cee4417eea5752be46fe2eee2e1939e9332b"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/kito/s7_052_physics_drift_sota.ipynb",
+      "bytes": 209090,
+      "sha256": "12800d8b1acdd89847926863651ce2785aad9496be50f3180eae94608639bb52"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/kito/s7_052_physics_drift_sota.py",
+      "bytes": 190937,
+      "sha256": "70d46d8b5e51a964f9e22e8f0ce5ff47d0b1cbaf50d7c713c40be9db494fa4b0"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/kito/s7_054_drift_shielded_mitosis.ipynb",
+      "bytes": 233166,
+      "sha256": "2d920377d9597da38d7653f164435a6a3029a6393a93cafc41795162f22315dd"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/kito/s7_054_drift_shielded_mitosis.py",
+      "bytes": 196809,
+      "sha256": "405343c10af49678680f6dc7b8bf674c43568ae2a3be90175a716a84a3ff2017"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/kito/s7_summary/s7_summary2.md",
+      "bytes": 71015,
+      "sha256": "6b4420b55d25610ee1275d1a4327bb99f62444e79b613ba0b9d69f043eb8957d"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/kito/s7_summary/s7_summary3.md",
+      "bytes": 60911,
+      "sha256": "db8726f7002537da8f67e0fc82ee118f7d01a089a9a02ff8f448a204a8393980"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/leaderboard.json",
+      "bytes": 29448,
+      "sha256": "cc35fc4920ba83877242f1658a9c8a13ce1d00cd440f1da1b9e033c68ff3141d"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/platform_observations.json",
+      "bytes": 1407,
+      "sha256": "e87e226718caccc222adcf5234301572c27e0dfe0572685d51e73e0ec4667e7d"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/source_checks.json",
+      "bytes": 5147,
+      "sha256": "926f1ebd6e86640e2cddcaa54b8b4d62b5780b66f41cc8bf3bf23fccc30c2598"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/sources/amanatar/optimized-biohub-max-score/metadata.json",
+      "bytes": 926,
+      "sha256": "5891fbae869bd0ea0742bc32ed3609fb08f06c9c34e4ca65b534b7fd7a9c57d0"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/sources/amanatar/optimized-biohub-max-score/source.ipynb",
+      "bytes": 329564,
+      "sha256": "371fc1f9f4f20f692e0586616ff7d3eab4621d167f6c78516d3243c5a4fddfab"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/sources/amanatar/optimized-biohub-max-score/source.py",
+      "bytes": 309887,
+      "sha256": "fa739227ae3c428e04a8e28f5fff34ef3f80ae9695e14c1f38860fc8da14a13a"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/sources/amanatar/optimized-biohub-max-score/vs_x138.diff",
+      "bytes": 73889,
+      "sha256": "a5fef9cd5d38974133e5b3e95359839effc30160ddae75a4536d0daff19cbc30"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/sources/anvithpothula/biohub-0-953-lb-original/metadata.json",
+      "bytes": 994,
+      "sha256": "7291a98dc431024030f278be8b1b68afa37fd4353e62fa1e17f8963dbad03384"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/sources/anvithpothula/biohub-0-953-lb-original/source.ipynb",
+      "bytes": 268025,
+      "sha256": "6b655e39bbfd2d3d6c762badea69847d3f00f5b548f385cb01b07ee2600fde6d"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/sources/anvithpothula/biohub-0-953-lb-original/source.py",
+      "bytes": 250785,
+      "sha256": "92f2f6906efafd7b8520a8016652a508abbf3a9b5ec1bb295515de254fb465c1"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/sources/anvithpothula/biohub-0-953-lb-original/vs_x138.diff",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/sources/raunakdey07/biohub-harmonic-fusion-v3/metadata.json",
+      "bytes": 929,
+      "sha256": "4dc0492965537024e50456c3f925a983389e0f1fa8fca232ebf9d3455acc0148"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/sources/raunakdey07/biohub-harmonic-fusion-v3/source.ipynb",
+      "bytes": 269607,
+      "sha256": "9ab32885574092ab46a8d90bfa96393332c6e5a6249d33c92a9051efbc9779ca"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/sources/raunakdey07/biohub-harmonic-fusion-v3/source.py",
+      "bytes": 244022,
+      "sha256": "727eb4e542f196b6629399bf8a6c11eb60eafc1de8d54ec47720798f6e3af4e0"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/sources/raunakdey07/biohub-harmonic-fusion-v3/vs_x138.diff",
+      "bytes": 21249,
+      "sha256": "47c03584a58e6a129890cc9f2afd707fd11c7d95d540a5084f9328330f4708ee"
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260926/team_submissions.json",
+      "bytes": 13734,
+      "sha256": "047fc41d12c97a5724e1bbe8c42ba57e4b066932d5004a298dbfe094b4cc2740"
+    }
+  ]
+}

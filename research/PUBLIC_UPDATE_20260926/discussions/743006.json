@@ -1,0 +1,23 @@
+{
+  "topic": {
+    "id": 743006,
+    "title": "Beginner question: How do Public/Private splits usually work in biological datasets?",
+    "url": "/competitions/biohub-cell-tracking-during-development/discussion/743006",
+    "postDate": "2026-09-24T15:54:53.727Z",
+    "authorName": "Rishavendra Sharma",
+    "authorUrl": "https://www.kaggle.com/rishavendrasharma",
+    "commentCount": 1,
+    "forumName": "Biohub - Cell Tracking During Development",
+    "forumId": 10656304,
+    "content": "<p>Hi everyone,</p>\n<p>I'm relatively new to this type of Kaggle competition, and I have a general question about how the Public/Private Leaderboard split usually works in these tracking/computer vision challenges.</p>\n<p>I noticed on the leaderboard page that 71% of the test data is reserved for the private LB. For those of you with a lot of Kaggle experience (or the hosts!), how is this usually handled in biological datasets?</p>\n<p>Does a 71% private split typically mean it is drawn from the exact same distribution as the public 29% (e.g., just different timeframes or random spatial crops of the same embryos)? Or is it standard practice in these types of competitions for the private set to evaluate true generalization—meaning we should expect completely unseen imaging conditions, different microscopes, or totally different cell types?</p>\n<p>I'm asking because I'm trying to figure out my local validation strategy. I'm not sure if I should be heavily tuning my pipeline to perfectly fit the visual characteristics of the public test movies, or if I should be focusing entirely on heavy augmentations and generalized robustness assuming the private 71% will look completely different.</p>\n<p>Any insights into how Kaggle or biological tracking challenges generally structure this would be super helpful for a beginner! Thanks!</p>"
+  },
+  "comments": [
+    {
+      "id": 3528331,
+      "authorName": "Gabriel",
+      "postDate": "2026-09-25T21:55:15.607Z",
+      "content": "<p>I am also curious about the answer to this question.</p>"
+    }
+  ],
+  "next_page_token": ""
+}

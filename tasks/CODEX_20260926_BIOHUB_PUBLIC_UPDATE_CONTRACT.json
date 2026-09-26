@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_PUBLIC_UPDATE_20260926",
+  "goal": "读取当前公开代码和讨论，核对XR0正式分数并提出有证据的剩余四天优化方案",
+  "scope": {
+    "in_scope": [
+      "公开目录及正文/源码静态研究",
+      "本队既有评分只读核对",
+      "GitHub小文件同步"
+    ],
+    "out_of_scope": [
+      "新运行/训练/提交",
+      "修改旧候选及最终选择"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "acceptance": [
+    {
+      "id": "research-delivery",
+      "type": "file",
+      "path": "reports/20260926_BIOHUB_PUBLIC_UPDATE.md",
+      "min_bytes": 2000,
+      "contains_all": [
+        "UNKNOWN",
+        "优化",
+        "来源"
+      ]
+    },
+    {
+      "id": "coverage",
+      "type": "json",
+      "path": "research/PUBLIC_UPDATE_20260926/coverage.json",
+      "assertions": [
+        {
+          "pointer": "/code_catalog_read",
+          "op": "equals",
+          "value": true
+        },
+        {
+          "pointer": "/discussion_catalog_read",
+          "op": "equals",
+          "value": true
+        },
+        {
+          "pointer": "/platform_writes",
+          "op": "equals",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "git-state",
+      "type": "git",
+      "require_clean": true,
+      "require_remote_head": true
+    },
+    {
+      "id": "interpretation",
+      "type": "manual",
+      "reason": "作者主张与优化收益不能由静态研究证明",
+      "evidence_needed": [
+        "公开来源及精确版本",
+        "建议收益尚未实测"
+      ]
+    }
+  ]
+}

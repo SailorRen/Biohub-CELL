@@ -1,0 +1,1490 @@
+--- 
++++ 
+@@ -1,13 +1,8 @@
+-'''Biohub Harmonic Fusion
+-
+-Production 3D lineage reconstruction with dual temporal models,
+-dual edge-feature TTA, and geometry-validated divisions.
+-
+-Record edition.'''
++
+ 
+ import os
+-BIOHUB_PRESET = 'harmonic_v3_division_wide'
+-BIOHUB_SCORE_AXIS = 'public 0.939 base + holdout-selected post-process configuration'
++BIOHUB_PRESET = 'harmonic_v3_division_wide + v6 metric-aligned sweep layer'
++BIOHUB_SCORE_AXIS = 'x138 base (LB 0.953) + metric-aligned PP sweep, 9 h hidden-rerun governor (v9)'
+ 
+ os.environ["BIOHUB_OUTPUT_FILTER_SHORT_TRACKS"] = "1"
+ os.environ["BIOHUB_DET_THRESHOLD"] = "0.965"
+@@ -59,7 +54,7 @@
+ os.environ["BIOHUB_BIDIRECTIONAL_FUSION_MODE"] = "harmonic_probability"
+ os.environ["BIOHUB_DUAL_SEED_MIN_CANDIDATE_RETENTION"] = "0.90"
+ os.environ["BIOHUB_DIAGNOSTIC_ARM"] = "harmonic_association_production"
+-os.environ["BIOHUB_VALIDATOR_N_PER_TYPE"] = "4"
++os.environ["BIOHUB_VALIDATOR_N_PER_TYPE"] = "4"        # v9: v7-proven 4 held-out stems per type (9 h budget restored)
+ os.environ["BIOHUB_PPSWEEP_SELECT_MARGIN"] = "0.001"
+ os.environ["BIOHUB_PPSWEEP_MAX_ADJ_LOSS"] = "0.0005"
+ 
+@@ -69,9 +64,9 @@
+ # Runtime hardening. None of these change the output on the visible test.
+ import time as _t0_time
+ os.environ["BIOHUB_KERNEL_START_TS"] = str(_t0_time.time())
+-os.environ["BIOHUB_VALIDATOR_ENABLE"] = "0"          # in-sample train proxy, ~11 min of GPU per run
+-os.environ["BIOHUB_ILP_TIMEOUT_S"] = "1200"           # per dataset; SCIP keeps its incumbent at the limit
+-os.environ["BIOHUB_REPAIR_DEADLINE_S"] = "27000"      # 7.5 h after kernel start the repair loop degrades
++os.environ["BIOHUB_VALIDATOR_ENABLE"] = "1"           # v6: validator ON -- official-metric sweep needs it (~11 min GPU)
++os.environ["BIOHUB_ILP_TIMEOUT_S"] = "1200"           # per dataset; SCIP keeps its incumbent at the limit (x138-proven)
++os.environ["BIOHUB_REPAIR_DEADLINE_S"] = "27000"      # x138-proven 7.5 h; past this the repair loop degrades to filtering
+ os.environ["BIOHUB_FRAME_CACHE_MAX_FRAMES"] = "48"
+ os.environ["BIOHUB_MOTION_RELINK_TIGHT_UM"] = "5.5"   # ppsweep_selected.json of the public run (tight55)
+ # Neighbourhood-flow motion prior for the motion re-link (agent/frontier943_flow).
+@@ -104,6 +99,133 @@
+ os.environ["BIOHUB_CACHE_DIR"] = "/kaggle/working/edge_cache"
+ os.environ["BIOHUB_CACHE_EDGE_THRESHOLD"] = "1.0"
+ os.environ["BIOHUB_LOWDET_THRESHOLD"] = "0.3"
++
++# --- v6 additions: our validator-gated metric-aligned layer (all default inert) ---
++os.environ["BIOHUB_LEAF_PRUNE_MIN_EDGE_PROB"] = "0.0"   # v4 weak-leaf pruning (PPSWEEP sweeps it)
++os.environ["BIOHUB_PPSWEEP_EXTENDED"] = "1"             # v4/v5 extended candidate set
++os.environ["BIOHUB_PPSWEEP_PREFIX_GUARD"] = "1"         # per-embryo anti-overfit selection guard
++os.environ["BIOHUB_SWEEP_DEADLINE_S"] = "26100"         # sweep inner-loop abort, keeps best-so-far (7.25 h)
++os.environ["BIOHUB_OUTPUT_MIN_EDGE_PROB"] = "0.0"       # v5 L1 weak-edge output filter (0 = off)
++os.environ["BIOHUB_SEG_PRUNE_MIN_PROB"] = "0.0"         # v5 L2 weak pendant-segment pruning (0 = off)
++os.environ["BIOHUB_SEG_PRUNE_MAX_LEN"] = "6"
++os.environ["BIOHUB_GAP_CLOSE_DIV_UM"] = "0.0"           # v5 L3 division-priority gap continuation (0 = off)
++os.environ["BIOHUB_REPAIR_PARENT_MAX_UM"] = "0.0"       # v5 L4 second-daughter repair (0 = off)
++os.environ["BIOHUB_REPAIR_DEEPCENTER_THRESHOLD"] = "0.12"
++os.environ["BIOHUB_REPAIR_SISTER_SYMMETRY_TAU"] = "0.85"
++os.environ["BIOHUB_CORE_EDGE_PROB"] = "0.60"            # v5 L5 count-target pruning core definition
++os.environ["BIOHUB_COUNT_EXCESS_FRAC"] = "0.0"          # v5 L5 count-target pruning (0 = off)
++os.environ["BIOHUB_LINEFIT_MAX_SHIFT_UM"] = "0.0"       # v5 L7 linefit shift clamp (0 = off)
++
++# --- v9 additions: restored hidden-rerun governor (x138 base, 9 h wall) ---
++# The visible kernel finishes in ~20 min, but the SCORED rerun executes on
++# a larger hidden test set that needs hours (v4: 0.948 with a 2 h+ rerun;
++# x138: 0.953 with a 7.5 h repair deadline). Every
++# deadline below is seconds from the true kernel start (anchored above);
++# gates only skip work in bounded steps and the base submission always
++# ships. 0 disables a gate.
++os.environ["BIOHUB_REPAIR_PER_DATASET_CAP_S"] = "0"     # disabled: x138 ran the hidden set with no per-dataset cap (global 27000 s guards)
++os.environ["BIOHUB_VALIDATOR_LATEST_START_S"] = "19800" # validator start gate (5.5 h)
++os.environ["BIOHUB_SWEEP_LATEST_START_S"] = "23400"     # base-eval + sweep start gate (6.5 h)
++os.environ["BIOHUB_REWRITE_LATEST_START_S"] = "27600"   # pass-2 rewrite start gate (7.67 h)
++os.environ["BIOHUB_REWRITE_DEADLINE_S"] = "30600"       # pass-2 degrade point (8.5 h)
++os.environ["BIOHUB_WALL_BUDGET_S"] = "32400"            # 9 h Kaggle rerun wall (reporting only)
++# Fast sweep tier: 12 curated candidates spanning every lever family,
++# evaluated best-value-first inside the time-boxed window.
++# 0 = sweep the full dict.
++os.environ["BIOHUB_PPSWEEP_FAST_TIER"] = "1"
++# Optional precomputed-dataset hooks (both empty by default = plain v6 flow).
++os.environ["BIOHUB_FROZEN_PRESET_JSON"] = ""            # e.g. /kaggle/input/<preset-ds>/ppsweep_selected.json
++os.environ["BIOHUB_VAL_PRED_CACHE_DIR"] = ""            # dir with cached {stem}.geff validator predictions
++os.environ["BIOHUB_VAL_PRED_CACHE_KEY"] = ""            # defaults to "<METHOD>|det=<DET_THRESHOLD>"
++
++# Frozen-preset loader. When a prior run's ppsweep_selected.json is
++# attached as a Kaggle Dataset, the notebook applies the winning config
++# during the SINGLE base repair pass and skips validator + sweep + pass-2
++# rewrite entirely (ship mode: ~20-25 min, timeout-proof). Fail-loud on
++# any malformed preset.
++FROZEN_PRESET_LABEL: str | None = None
++FROZEN_PRESET_OVERRIDES: dict | None = None
++_V7_SWEEPABLE_KEYS = frozenset({
++    "SAFE_DIV_MAX_UM", "SAFE_DIV_SISTER_MAX_UM", "SAFE_DIV_DIVERGE_UM",
++    "SAFE_DIV_SISTER_SYMMETRY_TAU", "SAFE_DIV_EXISTING_CHILD_MAX_UM",
++    "SAFE_DIV_FRAME_FRAC_CAP", "SAFE_DIV_GLOBAL_FRAC_CAP",
++    "DEEPCENTER_SAFE_DIV_THRESHOLD", "DEEPCENTER_GAP_THRESHOLD",
++    "GAP_CLOSE_UM", "OUTPUT_MIN_TRACK_LEN",
++    "SHORT_TRACK_RESCUE_MIN_MEAN_EDGE_PROB", "MOTION_RELINK_TIGHT_UM",
++    "MOTION_RELINK_RELAXED_UM", "GAP2_MAX_STEP_UM", "GAP2_MAX_TOTAL_UM",
++    "MOTION_RELINK_LEARNED_BONUS", "MOTION_RELINK_VELOCITY_WEIGHT",
++    "GAP_CLOSE_REUSE_UM", "OUTPUT_EDGE_MAX_UM", "LEAF_PRUNE_MIN_EDGE_PROB",
++    "OUTPUT_MIN_EDGE_PROB", "SEG_PRUNE_MIN_PROB", "SEG_PRUNE_MAX_LEN",
++    "GAP_CLOSE_DIV_UM", "REPAIR_PARENT_MAX_UM", "REPAIR_DEEPCENTER_THRESHOLD",
++    "REPAIR_SISTER_SYMMETRY_TAU", "CORE_EDGE_PROB", "COUNT_EXCESS_FRAC",
++    "LINEFIT_MAX_SHIFT_UM",
++})
++
++# --- v9: attach-and-go auto-detection --------------------------------- #
++# Public datasets need no env edits: if a prior run's ppsweep_selected.json
++# (frozen preset, ship mode) or a validator prediction cache (cache_key.txt
++# + {stem}.geff files) is attached under /kaggle/input, v9 picks it up
++# automatically. Explicit env vars always win; a malformed auto-detected
++# preset is skipped with a loud warning so a broken unrelated dataset can
++# never brick the kernel (explicit-env presets still fail loud).
++from pathlib import Path as _V9Path
++import json as _v9_json
++
++_V9_AUTO_SET_ENV: dict[str, str] = {}
++_V9_INPUT_ROOT = _V9Path("/kaggle/input")
++if _V9_INPUT_ROOT.is_dir():
++    _v9_preset_hits = sorted(_V9_INPUT_ROOT.glob("*/ppsweep_selected.json"))
++    if FROZEN_PRESET_OVERRIDES is None and not os.environ.get("BIOHUB_FROZEN_PRESET_JSON", "").strip():
++        for _v9_p in _v9_preset_hits:
++            try:
++                _v9_doc = _v9_json.loads(_v9_p.read_text())
++                _v9_ov = _v9_doc.get("overrides") if isinstance(_v9_doc, dict) else None
++                if not isinstance(_v9_ov, dict) or not _v9_ov:
++                    raise ValueError("missing or empty 'overrides' dict")
++                _v9_unk = sorted(set(_v9_ov) - _V7_SWEEPABLE_KEYS)
++                if _v9_unk:
++                    raise ValueError(f"keys are not sweepable constants: {_v9_unk}")
++                for _v9_k, _v9_v in _v9_ov.items():
++                    if isinstance(_v9_v, bool) or not isinstance(_v9_v, (int, float)):
++                        raise ValueError(f"override {_v9_k!r} is not numeric: {_v9_v!r}")
++            except Exception as _v9_exc:
++                print(f"V9 AUTO-ATTACH: skipping unusable preset {_v9_p}: {_v9_exc}")
++                continue
++            os.environ["BIOHUB_FROZEN_PRESET_JSON"] = str(_v9_p)
++            _V9_AUTO_SET_ENV["BIOHUB_FROZEN_PRESET_JSON"] = str(_v9_p)
++            _v9_extra = ""
++            if len(_v9_preset_hits) > 1:
++                _v9_extra = " Other candidates: " + ", ".join(str(x) for x in _v9_preset_hits if x != _v9_p)
++            print(f"V9 AUTO-ATTACH: frozen preset dataset detected -> ship mode, "
++                  f"no env edit needed ({_v9_p}).{_v9_extra}")
++            break
++    if not os.environ.get("BIOHUB_VAL_PRED_CACHE_DIR", "").strip():
++        for _v9_c in sorted(_V9_INPUT_ROOT.glob("*/cache_key.txt")):
++            if any(_v9_c.parent.glob("*.geff")):
++                os.environ["BIOHUB_VAL_PRED_CACHE_DIR"] = str(_v9_c.parent)
++                _V9_AUTO_SET_ENV["BIOHUB_VAL_PRED_CACHE_DIR"] = str(_v9_c.parent)
++                print(f"V9 AUTO-ATTACH: validator prediction cache detected ({_v9_c.parent}) "
++                      "-- key-checked by the validator block; a mismatch recomputes safely.")
++                break
++
++_V7_FROZEN_PATH = os.environ.get("BIOHUB_FROZEN_PRESET_JSON", "").strip()
++if _V7_FROZEN_PATH:
++    import json as _v7_json
++    from pathlib import Path as _V7Path
++    _v7_frozen_doc = _v7_json.loads(_V7Path(_V7_FROZEN_PATH).read_text())
++    _v7_overrides = _v7_frozen_doc.get("overrides") if isinstance(_v7_frozen_doc, dict) else None
++    if not isinstance(_v7_overrides, dict) or not _v7_overrides:
++        raise RuntimeError(f"V7 frozen preset {_V7_FROZEN_PATH}: missing or empty 'overrides' dict")
++    _v7_unknown = sorted(set(_v7_overrides) - _V7_SWEEPABLE_KEYS)
++    if _v7_unknown:
++        raise RuntimeError(f"V7 frozen preset: keys are not sweepable constants: {_v7_unknown}")
++    for _v7_k, _v7_v in _v7_overrides.items():
++        if isinstance(_v7_v, bool) or not isinstance(_v7_v, (int, float)):
++            raise RuntimeError(f"V7 frozen preset: override {_v7_k!r} is not numeric: {_v7_v!r}")
++    FROZEN_PRESET_LABEL = str(_v7_frozen_doc.get("selected", "frozen"))
++    FROZEN_PRESET_OVERRIDES = dict(_v7_overrides)
++    print(f"V9 FROZEN PRESET loaded from {_V7_FROZEN_PATH}: {FROZEN_PRESET_LABEL} {FROZEN_PRESET_OVERRIDES}")
++
+ print("BIOHUB_PRESET:", BIOHUB_PRESET)
+ print("BIOHUB_SCORE_AXIS:", BIOHUB_SCORE_AXIS)
+ 
+@@ -119,6 +241,16 @@
+     "BIOHUB_GAP_CLOSE_UM": 5.0,
+     "BIOHUB_OUTPUT_MIN_TRACK_LEN": 6.0,
+     "BIOHUB_BIDIRECTIONAL_EDGE_WEIGHT": 0.15,
++    # v9 restored hidden-rerun deadlines (seconds from kernel start; x138/v5.1-proven scale)
++    "BIOHUB_ILP_TIMEOUT_S": 1200.0,
++    "BIOHUB_REPAIR_DEADLINE_S": 27000.0,
++    "BIOHUB_REPAIR_PER_DATASET_CAP_S": 0.0,
++    "BIOHUB_VALIDATOR_LATEST_START_S": 19800.0,
++    "BIOHUB_SWEEP_LATEST_START_S": 23400.0,
++    "BIOHUB_SWEEP_DEADLINE_S": 26100.0,
++    "BIOHUB_REWRITE_LATEST_START_S": 27600.0,
++    "BIOHUB_REWRITE_DEADLINE_S": 30600.0,
++    "BIOHUB_WALL_BUDGET_S": 32400.0,
+ }
+ 
+ _EXPECTED_TEXT = {
+@@ -128,6 +260,8 @@
+ 
+ _drift = {}
+ for _key, _want in _EXPECTED_NUMERIC.items():
++    if FROZEN_PRESET_OVERRIDES is not None and _key.removeprefix("BIOHUB_") in FROZEN_PRESET_OVERRIDES:
++        continue  # frozen preset intentionally overrides this key
+     _raw = _guard_os.environ.get(_key)
+     if _raw is None:
+         _drift[_key] = "missing"
+@@ -137,6 +271,8 @@
+         _drift[_key] = {"expected": _want, "actual": _got}
+ 
+ for _key, _want in _EXPECTED_TEXT.items():
++    if FROZEN_PRESET_OVERRIDES is not None and _key.removeprefix("BIOHUB_") in FROZEN_PRESET_OVERRIDES:
++        continue  # frozen preset intentionally overrides this key
+     _got = _guard_os.environ.get(_key)
+     if _got != _want:
+         _drift[_key] = {"expected": _want, "actual": _got}
+@@ -220,6 +356,21 @@
+ MOTION_RELINK_TIGHT_UM = float(os.environ.get("BIOHUB_MOTION_RELINK_TIGHT_UM", "6.0"))
+ MOTION_RELINK_RELAXED_UM = float(os.environ.get("BIOHUB_MOTION_RELINK_RELAXED_UM", "10.0"))
+ MOTION_RELINK_VELOCITY_WEIGHT = float(os.environ.get("BIOHUB_MOTION_RELINK_VELOCITY_WEIGHT", "0.5"))
++
++# v6: metric-aligned post-processing extensions (all default inert; PPSWEEP sweeps)
++OUTPUT_MIN_EDGE_PROB = float(os.environ.get("BIOHUB_OUTPUT_MIN_EDGE_PROB", "0.0"))
++SEG_PRUNE_MIN_PROB = float(os.environ.get("BIOHUB_SEG_PRUNE_MIN_PROB", "0.0"))
++SEG_PRUNE_MAX_LEN = int(os.environ.get("BIOHUB_SEG_PRUNE_MAX_LEN", "6"))
++GAP_CLOSE_DIV_UM = float(os.environ.get("BIOHUB_GAP_CLOSE_DIV_UM", "0.0"))
++REPAIR_PARENT_MAX_UM = float(os.environ.get("BIOHUB_REPAIR_PARENT_MAX_UM", "0.0"))
++REPAIR_DEEPCENTER_THRESHOLD = float(os.environ.get("BIOHUB_REPAIR_DEEPCENTER_THRESHOLD", "0.12"))
++REPAIR_SISTER_SYMMETRY_TAU = float(os.environ.get("BIOHUB_REPAIR_SISTER_SYMMETRY_TAU", "0.85"))
++CORE_EDGE_PROB = float(os.environ.get("BIOHUB_CORE_EDGE_PROB", "0.60"))
++COUNT_EXCESS_FRAC = float(os.environ.get("BIOHUB_COUNT_EXCESS_FRAC", "0.0"))
++LINEFIT_MAX_SHIFT_UM = float(os.environ.get("BIOHUB_LINEFIT_MAX_SHIFT_UM", "0.0"))
++LEAF_PRUNE_MIN_EDGE_PROB = float(os.environ.get("BIOHUB_LEAF_PRUNE_MIN_EDGE_PROB", "0.0"))
++PPSWEEP_EXTENDED = os.environ.get("BIOHUB_PPSWEEP_EXTENDED", "0") != "0"
++PPSWEEP_PREFIX_GUARD = os.environ.get("BIOHUB_PPSWEEP_PREFIX_GUARD", "0") != "0"
+ MOTION_RELINK_FLOW_MODE = os.environ.get("BIOHUB_MOTION_RELINK_FLOW_MODE", "off").strip().lower()
+ MOTION_RELINK_FLOW_K = int(os.environ.get("BIOHUB_MOTION_RELINK_FLOW_K", "8"))
+ MOTION_RELINK_FLOW_RADIUS_UM = float(os.environ.get("BIOHUB_MOTION_RELINK_FLOW_RADIUS_UM", "25.0"))
+@@ -350,6 +501,19 @@
+     "motion_relink_tight_um": MOTION_RELINK_TIGHT_UM,
+     "motion_relink_relaxed_um": MOTION_RELINK_RELAXED_UM,
+     "motion_relink_velocity_weight": MOTION_RELINK_VELOCITY_WEIGHT,
++    "output_min_edge_prob": OUTPUT_MIN_EDGE_PROB,
++    "seg_prune_min_prob": SEG_PRUNE_MIN_PROB,
++    "seg_prune_max_len": SEG_PRUNE_MAX_LEN,
++    "gap_close_div_um": GAP_CLOSE_DIV_UM,
++    "repair_parent_max_um": REPAIR_PARENT_MAX_UM,
++    "repair_deepcenter_threshold": REPAIR_DEEPCENTER_THRESHOLD,
++    "repair_sister_symmetry_tau": REPAIR_SISTER_SYMMETRY_TAU,
++    "core_edge_prob": CORE_EDGE_PROB,
++    "count_excess_frac": COUNT_EXCESS_FRAC,
++    "linefit_max_shift_um": LINEFIT_MAX_SHIFT_UM,
++    "leaf_prune_min_edge_prob": LEAF_PRUNE_MIN_EDGE_PROB,
++    "ppsweep_extended": PPSWEEP_EXTENDED,
++    "ppsweep_prefix_guard": PPSWEEP_PREFIX_GUARD,
+     "motion_relink_learned_bonus": MOTION_RELINK_LEARNED_BONUS,
+     "motion_relink_max_frame_nodes": MOTION_RELINK_MAX_FRAME_NODES,
+     "output_division_geometry_filter": OUTPUT_DIVISION_GEOMETRY_FILTER,
+@@ -1697,6 +1861,101 @@
+ SUBMISSION_COLUMNS = ["dataset", "row_type", "node_id", "t", "z", "y", "x", "source_id", "target_id"]
+ CSV_COLUMNS = ["id", *SUBMISSION_COLUMNS]
+ VOXEL_SCALE_UM = (1.625, 0.40625, 0.40625)
++
++# ---------------------------------------------------------------------- #
++# v9 RUNTIME GOVERNOR (9 h wall, x138/v5.1-proven scale). Measured from the
++# true kernel start (anchored in Cell 1). The guards are a safety net on the
++# hidden rerun: silent while the pipeline runs inside the proven budget,
++# degrading in bounded, verifiable steps instead of a timeout:
++#   1. per-dataset repair cap  -> one oversized dataset cannot eat hours
++#   2. repair deadline         -> remaining datasets ship edge filtering
++#   3. validator/sweep gates   -> skipped when out of budget
++#   4. rewrite fit-guard       -> pass-2 only with measured room to finish
++# At visible-run scale no gate trips and the floor is EXACTLY x138.
++# ---------------------------------------------------------------------- #
++import time as _v7_time
++
++_V7_DATASET_T0: dict[str, float] = {"t0": 0.0}
++
++
++def v7_kernel_elapsed() -> float:
++    return _v7_time.time() - KERNEL_START_TS
++
++
++def v7_gate_ok(gate_env: str, label: str) -> bool:
++    """True unless the kernel has already run past the named start gate."""
++    latest = float(os.environ.get(gate_env, "0") or 0.0)
++    if latest <= 0.0:
++        return True
++    elapsed = v7_kernel_elapsed()
++    if elapsed >= latest:
++        print(
++            f"V7 GATE [{label}]: skipped -- kernel elapsed {elapsed:.0f}s >= "
++            f"{gate_env}={latest:.0f}s",
++            flush=True,
++        )
++        return False
++    return True
++
++
++def v7_deadline_hit(env_key: str) -> bool:
++    limit = float(os.environ.get(env_key, "0") or 0.0)
++    return limit > 0.0 and v7_kernel_elapsed() >= limit
++
++
++def _repair_overrun() -> bool:
++    """Per-dataset repair budget: one oversized dataset cannot eat the wall."""
++    cap = float(os.environ.get("BIOHUB_REPAIR_PER_DATASET_CAP_S", "0") or 0.0)
++    return cap > 0.0 and (_v7_time.time() - _V7_DATASET_T0["t0"]) >= cap
++
++
++def _v7_repair_stage_checkpoint(dataset: str | None) -> None:
++    """Called between repair stages inside filter_output_graph."""
++    if not _deadline_degraded and _repair_overrun():
++        print(
++            f"  [{dataset}] V7: per-dataset repair cap "
++            f"{os.environ.get('BIOHUB_REPAIR_PER_DATASET_CAP_S', '0')}s reached;"
++            " degrading the remaining stages of this dataset",
++            flush=True,
++        )
++        _deadline_degrade()
++
++
++def _pp_apply_frozen_overrides(overrides: dict) -> dict:
++    """Apply frozen-preset post-process overrides to the module globals and
++    return the saved previous values. Unknown keys fail loud."""
++    saved = {}
++    for key, value in overrides.items():
++        current = globals().get(key)
++        if current is None:
++            raise RuntimeError(f"V7 frozen preset: unknown post-process key {key!r}")
++        saved[key] = current
++        globals()[key] = type(current)(value)
++    return saved
++
++
++def _v9_rewrite_fits() -> bool:
++    """v9: attempt the pass-2 rewrite only when the measured base-pass cost
++    still fits before the rewrite deadline. A mid-rewrite deadline degrade
++    would mix a weaker config into submission.csv, so when in doubt the
++    untouched base submission ships (exact x138 behavior)."""
++    limit = float(os.environ.get("BIOHUB_REWRITE_DEADLINE_S", "0") or 0.0)
++    if limit <= 0.0:
++        return True
++    base_cost = float(globals().get("_V9_REPAIR_SECONDS", 0.0) or 0.0)
++    need = base_cost * 1.15 + 30.0
++    room = limit - v7_kernel_elapsed()
++    if room >= need:
++        return True
++    globals()["_V9_REWRITE_FIT_SKIPPED"] = True
++    print(
++        f"V9: pass-2 rewrite skipped -- measured base pass {base_cost:.0f}s x1.15 + 30s "
++        f"= {need:.0f}s exceeds the {room:.0f}s left before "
++        f"BIOHUB_REWRITE_DEADLINE_S={limit:.0f}s; shipping the base submission.csv.",
++        flush=True,
++    )
++    return False
++
+ 
+ import time as _time
+ import traceback as _traceback
+@@ -3519,6 +3778,13 @@
+         if not np.isfinite(fitted).all():
+             stats["linefit_skipped_nodes"] += 1
+             continue
++        if LINEFIT_MAX_SHIFT_UM > 0.0:
++            shift_um = float(np.linalg.norm(
++                (fitted - original_pos[node_id]) * np.array(VOXEL_SCALE_UM, dtype=np.float64)
++            ))
++            if shift_um > LINEFIT_MAX_SHIFT_UM:
++                stats["linefit_clamped_nodes"] += 1
++                continue
+         updated_pos[node_id] = (1.0 - weight) * original_pos[node_id] + weight * fitted
+ 
+     for node_id, pos in updated_pos.items():
+@@ -3528,6 +3794,479 @@
+ 
+     stats["linefit_smoothed_nodes"] = len(updated_pos)
+     return nodes_by_id
++
++
++def prune_weak_leaf_nodes(
++    nodes_by_id: dict[int, dict[str, object]],
++    edges: list[dict[str, object]],
++    stats: dict[str, int],
++) -> tuple[dict[int, dict[str, object]], list[dict[str, object]]]:
++    """v4: remove terminal leaf nodes attached by a low-probability edge.
++
++    A node is pruned only when ALL of the following hold:
++      * it has no successor (out-degree 0) -- i.e. the tracker could not continue it;
++      * it has exactly one incoming edge (never a division daughter ambiguity);
++      * it does not sit on the final frame (terminal cells there are legitimate);
++      * its single incoming edge HAS a learned probability and it is below
++        LEAF_PRUNE_MIN_EDGE_PROB.
++    Edges without a probability (edge_prob is None, e.g. safe-division additions)
++    are exempt by construction, so division daughters added by add_safe_divisions_postlink
++    can never be pruned here. Single pass, no cascade: conservative by design.
++    """
++    if LEAF_PRUNE_MIN_EDGE_PROB <= 0.0 or not nodes_by_id or not edges:
++        return nodes_by_id, edges
++    max_t = max(int(node["t"]) for node in nodes_by_id.values())
++    out_degree: dict[int, int] = {}
++    incoming: dict[int, list[dict[str, object]]] = {}
++    for edge in edges:
++        source_id = int(edge["source_id"])
++        target_id = int(edge["target_id"])
++        out_degree[source_id] = out_degree.get(source_id, 0) + 1
++        incoming.setdefault(target_id, []).append(edge)
++    drop: set[int] = set()
++    for node_id, node in nodes_by_id.items():
++        if out_degree.get(node_id, 0) != 0:
++            continue
++        if int(node["t"]) >= max_t:
++            continue
++        incoming_edges = incoming.get(node_id, [])
++        if len(incoming_edges) != 1:
++            continue
++        prob = incoming_edges[0].get("edge_prob")
++        if prob is None:
++            continue
++        try:
++            prob = float(prob)
++        except (TypeError, ValueError):
++            continue
++        if not np.isfinite(prob):
++            continue
++        if prob < LEAF_PRUNE_MIN_EDGE_PROB:
++            drop.add(node_id)
++    if not drop:
++        return nodes_by_id, edges
++    kept_nodes = {node_id: node for node_id, node in nodes_by_id.items() if node_id not in drop}
++    kept_edges = [
++        edge for edge in edges
++        if int(edge["source_id"]) not in drop and int(edge["target_id"]) not in drop
++    ]
++    stats["leaf_prune_nodes"] = len(drop)
++    stats["leaf_prune_edges"] = len(edges) - len(kept_edges)
++    return kept_nodes, kept_edges
++
++
++def filter_weak_edges(
++    nodes_by_id: dict[int, dict[str, object]],
++    edges: list[dict[str, object]],
++    stats: dict[str, int],
++) -> tuple[dict[int, dict[str, object]], list[dict[str, object]]]:
++    """v5 L1: drop learned edges below OUTPUT_MIN_EDGE_PROB, then remove nodes
++    left with no edges at all (fragments created by the drop). Edges without a
++    probability (gap/safe-div/repair additions) are exempt by construction, so
++    division daughters can never be disconnected here. Nodes on frame 0 or the
++    final frame are always kept (legitimate lineage starts / terminal cells)."""
++    if OUTPUT_MIN_EDGE_PROB <= 0.0 or not edges:
++        return nodes_by_id, edges
++    kept_edges: list[dict[str, object]] = []
++    for edge in edges:
++        prob = edge.get("edge_prob")
++        if prob is None:
++            kept_edges.append(edge)
++            continue
++        try:
++            prob = float(prob)
++        except (TypeError, ValueError):
++            kept_edges.append(edge)
++            continue
++        if np.isfinite(prob) and prob < OUTPUT_MIN_EDGE_PROB:
++            stats["weak_edge_dropped"] += 1
++            continue
++        kept_edges.append(edge)
++    if stats["weak_edge_dropped"] == 0:
++        return nodes_by_id, edges
++    incident = set()
++    for edge in kept_edges:
++        incident.add(int(edge["source_id"]))
++        incident.add(int(edge["target_id"]))
++    max_t = max(int(node["t"]) for node in nodes_by_id.values())
++    kept_nodes: dict[int, dict[str, object]] = {}
++    for node_id, node in nodes_by_id.items():
++        if node_id in incident or int(node["t"]) == 0 or int(node["t"]) >= max_t:
++            kept_nodes[node_id] = node
++        else:
++            stats["weak_edge_orphan_nodes"] += 1
++    return kept_nodes, kept_edges
++
++def prune_weak_segments(
++    nodes_by_id: dict[int, dict[str, object]],
++    edges: list[dict[str, object]],
++    stats: dict[str, int],
++) -> tuple[dict[int, dict[str, object]], list[dict[str, object]]]:
++    """v5 L2: prune weak pendant chain segments (generalizes v4 terminal-leaf
++    pruning to multi-node spurs). A maximal non-branching chain is prunable
++    when ALL hold: every chain edge carries a learned probability; the mean
++    probability < SEG_PRUNE_MIN_PROB; node count <= SEG_PRUNE_MAX_LEN; no node
++    sits on frame 0 or the final frame; the chain has at least one free end
++    (head without parent or tail without child). Interior bridges between two
++    attachment points are never pruned. Edges without probabilities (division
++    daughters added by add_safe_divisions_postlink / repair) are exempt.
++    Single pass, no cascade."""
++    if SEG_PRUNE_MIN_PROB <= 0.0 or not edges:
++        return nodes_by_id, edges
++    out_adj: dict[int, list[int]] = {}
++    in_adj: dict[int, list[int]] = {}
++    edge_prob_by_pair: dict[tuple[int, int], float] = {}
++    for edge in edges:
++        s = int(edge["source_id"])
++        t = int(edge["target_id"])
++        out_adj.setdefault(s, []).append(t)
++        in_adj.setdefault(t, []).append(s)
++        prob = edge.get("edge_prob")
++        if prob is not None:
++            try:
++                edge_prob_by_pair[(s, t)] = float(prob)
++            except (TypeError, ValueError):
++                pass
++    max_t = max(int(node["t"]) for node in nodes_by_id.values())
++    visited: set[int] = set()
++    drop_nodes: set[int] = set()
++    for head in sorted(nodes_by_id):
++        if head in visited or len(out_adj.get(head, ())) != 1:
++            continue
++        # a chain head is a node whose single parent (if any) is a fork or the
++        # head has no parent / multiple parents; interior chain nodes are
++        # reached by walking forward from an earlier head.
++        head_parents = in_adj.get(head, [])
++        if len(head_parents) == 1 and len(out_adj.get(head_parents[0], ())) == 1:
++            continue
++        chain = [head]
++        visited.add(head)
++        cur = head
++        while True:
++            nxt_list = out_adj.get(cur, [])
++            if len(nxt_list) != 1:
++                break
++            nxt = nxt_list[0]
++            if len(in_adj.get(nxt, ())) != 1 or nxt in visited:
++                break
++            chain.append(nxt)
++            visited.add(nxt)
++            cur = nxt
++        if len(chain) < 2:
++            continue
++        tail = chain[-1]
++        head_free = len(head_parents) == 0
++        tail_free = len(out_adj.get(tail, ())) == 0
++        if not (head_free or tail_free):
++            continue
++        chain_pairs = [(chain[i], chain[i + 1]) for i in range(len(chain) - 1)]
++        if any(pair not in edge_prob_by_pair for pair in chain_pairs):
++            continue
++        if any(int(nodes_by_id[n]["t"]) == 0 or int(nodes_by_id[n]["t"]) >= max_t for n in chain):
++            continue
++        if len(chain) > SEG_PRUNE_MAX_LEN:
++            continue
++        mean_prob = float(np.mean([edge_prob_by_pair[pair] for pair in chain_pairs]))
++        if mean_prob >= SEG_PRUNE_MIN_PROB:
++            continue
++        drop_nodes.update(chain)
++        stats["seg_prune_segments"] += 1
++    if not drop_nodes:
++        return nodes_by_id, edges
++    kept_nodes = {nid: n for nid, n in nodes_by_id.items() if nid not in drop_nodes}
++    kept_edges = [
++        e for e in edges
++        if int(e["source_id"]) not in drop_nodes and int(e["target_id"]) not in drop_nodes
++    ]
++    stats["seg_prune_nodes"] = len(nodes_by_id) - len(kept_nodes)
++    stats["seg_prune_edges"] = len(edges) - len(kept_edges)
++    return kept_nodes, kept_edges
++
++def close_division_priority_gaps(
++    nodes_by_id: dict[int, dict[str, object]],
++    edges: list[dict[str, object]],
++    stats: dict[str, int],
++    dataset: str | None = None,
++    deepcenter_bundle: dict[str, object] | None = None,
++    frame_cache: dict[int, np.ndarray] | None = None,
++    deepcenter_cache: dict[tuple[str, int], np.ndarray] | None = None,
++) -> tuple[dict[int, dict[str, object]], list[dict[str, object]]]:
++    """v5 L3: division-priority gap continuation. Links dead-end nodes (out-degree
++    0) to childless detections on the next frame within GAP_CLOSE_DIV_UM -- a
++    relaxed radius beyond GAP_CLOSE_UM reserved for lineage continuation.
++    Requires the DeepCenter gap score at the target to pass DEEPCENTER_GAP_THRESHOLD
++    and respects the global gap-close caps. Never creates forks (target must be
++    childless, source must be a dead end) and never inserts synthetic nodes.
++    Keeps daughter lineages inside the fork's connected component, which the
++    official division confusion rule requires for a division TP."""
++    if GAP_CLOSE_DIV_UM <= 0.0 or not edges or not nodes_by_id:
++        return nodes_by_id, edges
++    frame_cache = frame_cache if frame_cache is not None else {}
++    deepcenter_cache = deepcenter_cache if deepcenter_cache is not None else {}
++    out_count: dict[int, int] = {}
++    in_count: dict[int, int] = {}
++    existing_pairs: set[tuple[int, int]] = set()
++    for edge in edges:
++        s = int(edge["source_id"])
++        t = int(edge["target_id"])
++        out_count[s] = out_count.get(s, 0) + 1
++        in_count[t] = in_count.get(t, 0) + 1
++        existing_pairs.add((s, t))
++    ids_by_t: dict[int, list[int]] = {}
++    for node_id, node in nodes_by_id.items():
++        ids_by_t.setdefault(int(node["t"]), []).append(node_id)
++    max_added = min(
++        GAP_CLOSE_MAX_ADDED_ABS,
++        max(1, int(round(len(nodes_by_id) * GAP_CLOSE_MAX_ADDED_FRAC))) if GAP_CLOSE_MAX_ADDED_FRAC > 0 else 0,
++    )
++    proposals: list[tuple[float, int, int]] = []
++    for t in sorted(ids_by_t):
++        targets = ids_by_t.get(t + 1, [])
++        if not targets:
++            continue
++        for source_id in ids_by_t[t]:
++            if out_count.get(source_id, 0) != 0:
++                continue
++            source_pos = _position_um(nodes_by_id[source_id])
++            for target_id in targets:
++                if in_count.get(target_id, 0) != 0 or (source_id, target_id) in existing_pairs:
++                    continue
++                dist = float(np.linalg.norm(_position_um(nodes_by_id[target_id]) - source_pos))
++                if dist <= GAP_CLOSE_DIV_UM:
++                    proposals.append((dist, source_id, target_id))
++    stats["divgap_candidates"] = len(proposals)
++    if not proposals:
++        return nodes_by_id, edges
++    proposals.sort(key=lambda item: (item[0], item[1], item[2]))
++    used_sources: set[int] = set()
++    used_targets: set[int] = set()
++    new_edges: list[dict[str, object]] = []
++    for dist, source_id, target_id in proposals:
++        if len(new_edges) >= max_added:
++            break
++        if source_id in used_sources or target_id in used_targets:
++            continue
++        target = nodes_by_id[target_id]
++        if DEEPCENTER_GAP_VETO and not deepcenter_accept_repair_point(
++            dataset,
++            int(target["t"]),
++            node_point(target),
++            deepcenter_bundle,
++            frame_cache,
++            deepcenter_cache,
++            stats,
++            "divgap",
++            DEEPCENTER_GAP_THRESHOLD,
++        ):
++            stats["divgap_deepcenter_rejected"] += 1
++            continue
++        new_edges.append({
++            "source_id": source_id,
++            "target_id": target_id,
++            "edge_prob": None,
++            "distance_um": dist,
++            "divgap_continuation": 1,
++        })
++        used_sources.add(source_id)
++        used_targets.add(target_id)
++        stats["divgap_added"] += 1
++    if new_edges:
++        edges = [*edges, *new_edges]
++    return nodes_by_id, edges
++
++def repair_second_daughter(
++    nodes_by_id: dict[int, dict[str, object]],
++    edges: list[dict[str, object]],
++    stats: dict[str, int],
++    dataset: str | None = None,
++    deepcenter_bundle: dict[str, object] | None = None,
++    frame_cache: dict[int, np.ndarray] | None = None,
++    deepcenter_cache: dict[tuple[str, int], np.ndarray] | None = None,
++) -> tuple[dict[int, dict[str, object]], list[dict[str, object]]]:
++    """v5 L4: complete near-miss divisions on the final graph. For every parent
++    with exactly one child, search childless detections on the child's frame
++    within REPAIR_PARENT_MAX_UM; require sister distance <= SAFE_DIV_SISTER_MAX_UM,
++    relaxed sister symmetry (|d1-d2|/mean <= REPAIR_SISTER_SYMMETRY_TAU), reject
++    only MEASURABLE divergence violations (both branches extended to t+2 and
++    grandchild separation below SAFE_DIV_DIVERGE_UM), and require the DeepCenter
++    score at the candidate daughter to pass REPAIR_DEEPCENTER_THRESHOLD -- a
++    relaxed floor vs the 0.25 safe-div veto, because these candidates already
++    failed the strict funnel. Adds ONE edge per parent (out-degree 1 -> 2),
++    never re-parents an existing child, capped by SAFE_DIV_GLOBAL_FRAC_CAP.
++    Added edges carry edge_prob=None so exempt downstream passes can never
++    prune division daughters."""
++    if REPAIR_PARENT_MAX_UM <= 0.0 or not edges or not nodes_by_id:
++        return nodes_by_id, edges
++    frame_cache = frame_cache if frame_cache is not None else {}
++    deepcenter_cache = deepcenter_cache if deepcenter_cache is not None else {}
++    out_by_source: dict[int, list[dict[str, object]]] = {}
++    out_count: dict[int, int] = {}
++    incoming: set[int] = set()
++    existing_pairs: set[tuple[int, int]] = set()
++    for edge in edges:
++        s = int(edge["source_id"])
++        t = int(edge["target_id"])
++        out_by_source.setdefault(s, []).append(edge)
++        out_count[s] = out_count.get(s, 0) + 1
++        incoming.add(t)
++        existing_pairs.add((s, t))
++    ids_by_t: dict[int, list[int]] = {}
++    for node_id, node in nodes_by_id.items():
++        ids_by_t.setdefault(int(node["t"]), []).append(node_id)
++    global_cap = max(1, int(round(max(1, len(edges)) * SAFE_DIV_GLOBAL_FRAC_CAP)))
++    added: list[dict[str, object]] = []
++    parents = sorted(pid for pid, outs in out_by_source.items() if len(outs) == 1)
++    for parent_id in parents:
++        if len(added) >= global_cap:
++            stats["repair_skipped_cap"] += 1
++            break
++        parent = nodes_by_id[parent_id]
++        t = int(parent["t"])
++        child_edge = out_by_source[parent_id][0]
++        child_id = int(child_edge["target_id"])
++        child = nodes_by_id.get(child_id)
++        if child is None or int(child["t"]) != t + 1:
++            continue
++        child_dist = edge_distance_um(parent, child)
++        if child_dist > SAFE_DIV_EXISTING_CHILD_MAX_UM:
++            continue
++        child_succ = out_by_source.get(child_id, [])
++        child_grandchild = None
++        if len(child_succ) == 1:
++            gc = nodes_by_id.get(int(child_succ[0]["target_id"]))
++            if gc is not None and int(gc["t"]) == t + 2:
++                child_grandchild = gc
++        best: tuple[float, int, float] | None = None
++        for cand_id in ids_by_t.get(t + 1, []):
++            if cand_id == child_id or cand_id in incoming or (parent_id, cand_id) in existing_pairs:
++                continue
++            cand = nodes_by_id[cand_id]
++            parent_dist = edge_distance_um(parent, cand)
++            if parent_dist > REPAIR_PARENT_MAX_UM:
++                continue
++            sister_dist = edge_distance_um(child, cand)
++            if sister_dist > SAFE_DIV_SISTER_MAX_UM:
++                continue
++            if REPAIR_SISTER_SYMMETRY_TAU > 0.0:
++                denom = max((child_dist + parent_dist) / 2.0, 1e-6)
++                if abs(child_dist - parent_dist) / denom > REPAIR_SISTER_SYMMETRY_TAU:
++                    stats["repair_symmetry_rejected"] += 1
++                    continue
++            cand_succ = out_by_source.get(cand_id, [])
++            cand_grandchild = None
++            if len(cand_succ) == 1:
++                gc = nodes_by_id.get(int(cand_succ[0]["target_id"]))
++                if gc is not None and int(gc["t"]) == t + 2:
++                    cand_grandchild = gc
++            if (
++                child_grandchild is not None and cand_grandchild is not None
++                and SAFE_DIV_REQUIRE_DIVERGENCE
++                and edge_distance_um(child_grandchild, cand_grandchild) - sister_dist < SAFE_DIV_DIVERGE_UM
++            ):
++                continue
++            score = parent_dist + 0.15 * sister_dist
++            if best is None or score < best[0]:
++                best = (score, cand_id, parent_dist)
++        if best is None:
++            continue
++        _score, cand_id, parent_dist = best
++        cand = nodes_by_id[cand_id]
++        if DEEPCENTER_SAFE_DIV_VETO and not deepcenter_accept_repair_point(
++            dataset,
++            int(cand["t"]),
++            node_point(cand),
++            deepcenter_bundle,
++            frame_cache,
++            deepcenter_cache,
++            stats,
++            "repair",
++            REPAIR_DEEPCENTER_THRESHOLD,
++        ):
++            continue
++        added.append({
++            "source_id": parent_id,
++            "target_id": cand_id,
++            "edge_prob": None,
++            "distance_um": parent_dist,
++            "second_daughter_repair": 1,
++        })
++        incoming.add(cand_id)
++        stats["repairs_added"] += 1
++    if added:
++        edges = [*edges, *added]
++    return nodes_by_id, edges
++
++def prune_to_node_count_target(
++    nodes_by_id: dict[int, dict[str, object]],
++    edges: list[dict[str, object]],
++    stats: dict[str, int],
++) -> tuple[dict[int, dict[str, object]], list[dict[str, object]]]:
++    """v5 L5: metric-aware node budget targeting the one-sided adjusted-Jaccard
++    count penalty. Core = nodes pinned by strong evidence: frame 0, final frame,
++    or incident to an edge whose probability is None (gap/safe-div/repair
++    additions) or >= CORE_EDGE_PROB. If the graph holds more than
++    core*(1+COUNT_EXCESS_FRAC) nodes, remove the weakest non-core nodes first
++    (lowest max incident edge probability, then lowest degree) until the target
++    is met. Never removes pinned nodes or fork parents (out-degree >= 2).
++    Single pass, no cascade; the sweep + prefix guard decide the excess."""
++    if COUNT_EXCESS_FRAC <= 0.0 or not nodes_by_id:
++        return nodes_by_id, edges
++    max_t = max(int(node["t"]) for node in nodes_by_id.values())
++    incident_prob: dict[int, float] = {}
++    out_count: dict[int, int] = {}
++    in_count: dict[int, int] = {}
++    pinned: set[int] = set()
++    for edge in edges:
++        s = int(edge["source_id"])
++        t = int(edge["target_id"])
++        out_count[s] = out_count.get(s, 0) + 1
++        in_count[t] = in_count.get(t, 0) + 1
++        prob = edge.get("edge_prob")
++        if prob is None:
++            pinned.add(s)
++            pinned.add(t)
++            continue
++        try:
++            p = float(prob)
++        except (TypeError, ValueError):
++            pinned.add(s)
++            pinned.add(t)
++            continue
++        if not np.isfinite(p):
++            pinned.add(s)
++            pinned.add(t)
++            continue
++        if p > incident_prob.get(s, -1.0):
++            incident_prob[s] = p
++        if p > incident_prob.get(t, -1.0):
++            incident_prob[t] = p
++        if p >= CORE_EDGE_PROB:
++            pinned.add(s)
++            pinned.add(t)
++    for node_id, node in nodes_by_id.items():
++        if int(node["t"]) == 0 or int(node["t"]) >= max_t:
++            pinned.add(node_id)
++    core_count = sum(1 for nid in nodes_by_id if nid in pinned)
++    target = int(math.ceil(core_count * (1.0 + COUNT_EXCESS_FRAC)))
++    excess = len(nodes_by_id) - target
++    stats["count_target_excess"] = max(0, excess)
++    if excess <= 0:
++        return nodes_by_id, edges
++    candidates = [
++        nid for nid in nodes_by_id
++        if nid not in pinned and out_count.get(nid, 0) < 2
++    ]
++    candidates.sort(key=lambda nid: (incident_prob.get(nid, -1.0), in_count.get(nid, 0) + out_count.get(nid, 0), nid))
++    drop = set(candidates[:excess])
++    if not drop:
++        return nodes_by_id, edges
++    kept_nodes = {nid: n for nid, n in nodes_by_id.items() if nid not in drop}
++    kept_edges = [
++        e for e in edges
++        if int(e["source_id"]) not in drop and int(e["target_id"]) not in drop
++    ]
++    stats["count_target_removed"] = len(drop)
++    return kept_nodes, kept_edges
+ 
+ 
+ def filter_output_graph(
+@@ -3599,6 +4338,30 @@
+         "short_track_rescue_budget": 0,
+         "linefit_smoothed_nodes": 0,
+         "linefit_skipped_nodes": 0,
++        "leaf_prune_nodes": 0,
++        "leaf_prune_edges": 0,
++        "weak_edge_dropped": 0,
++        "weak_edge_orphan_nodes": 0,
++        "seg_prune_segments": 0,
++        "seg_prune_nodes": 0,
++        "seg_prune_edges": 0,
++        "divgap_candidates": 0,
++        "divgap_added": 0,
++        "divgap_deepcenter_rejected": 0,
++        "deepcenter_divgap_checked": 0,
++        "deepcenter_divgap_accepted": 0,
++        "deepcenter_divgap_rejected": 0,
++        "deepcenter_divgap_missing": 0,
++        "repairs_added": 0,
++        "repair_symmetry_rejected": 0,
++        "repair_skipped_cap": 0,
++        "deepcenter_repair_checked": 0,
++        "deepcenter_repair_accepted": 0,
++        "deepcenter_repair_rejected": 0,
++        "deepcenter_repair_missing": 0,
++        "count_target_removed": 0,
++        "count_target_excess": 0,
++        "linefit_clamped_nodes": 0,
+     }
+ 
+     edges: list[dict[str, object]] = []
+@@ -3617,6 +4380,8 @@
+             continue
+         edges.append(edge)
+ 
++    if not _deadline_degraded and _repair_overrun():
++        _v7_repair_stage_checkpoint(dataset)
+     if OUTPUT_MOTION_RELINK:
+         learned_edge_probs: dict[tuple[int, int], float] = {}
+         for edge in edges:
+@@ -3666,6 +4431,8 @@
+ 
+     print(f"  [{dataset}] after edge-filter+motion-relink: {len(nodes_by_id)} nodes, {len(edges)} edges | {_time.time() - _stage_t0:.1f}s")
+     repair_frame_cache: dict[int, np.ndarray] = {}
++    if not _deadline_degraded and _repair_overrun():
++        _v7_repair_stage_checkpoint(dataset)
+     deepcenter_heatmap_cache: dict[tuple[str, int], np.ndarray] = {}
+     nodes_by_id, edges = close_single_frame_gaps(
+         nodes_by_id,
+@@ -3681,6 +4448,19 @@
+         nodes_by_id, edges, stats, dataset=dataset, frame_cache=repair_frame_cache,
+     )
+     print(f"  [{dataset}] after gap-closing (single-frame + gap2 + low-detection filler): {len(nodes_by_id)} nodes, {len(edges)} edges | {_time.time() - _stage_t0:.1f}s")
++    if not _deadline_degraded and _repair_overrun():
++        _v7_repair_stage_checkpoint(dataset)
++    if GAP_CLOSE_DIV_UM > 0.0:
++        nodes_by_id, edges = close_division_priority_gaps(
++            nodes_by_id, edges, stats,
++            dataset=dataset,
++            deepcenter_bundle=deepcenter_bundle,
++            frame_cache=repair_frame_cache,
++            deepcenter_cache=deepcenter_heatmap_cache,
++        )
++        if stats.get("divgap_added"):
++            print(f"  [{dataset}] after division-priority gap continuation: {len(nodes_by_id)} nodes, {len(edges)} edges"
++                  f" (added={stats['divgap_added']})")
+     edges = add_safe_divisions_postlink(
+         nodes_by_id,
+         edges,
+@@ -3745,9 +4525,41 @@
+             edges = [edge for edge in edges if int(edge["source_id"]) in nodes_by_id and int(edge["target_id"]) in nodes_by_id]
+ 
+     print(f"  [{dataset}] after division-geometry-filter+prune-isolated: {len(nodes_by_id)} nodes, {len(edges)} edges | {_time.time() - _stage_t0:.1f}s")
++    if OUTPUT_MIN_EDGE_PROB > 0.0:
++        nodes_by_id, edges = filter_weak_edges(nodes_by_id, edges, stats)
++        print(f"  [{dataset}] after weak-edge filtering: {len(nodes_by_id)} nodes, {len(edges)} edges"
++              f" (dropped={stats['weak_edge_dropped']}, orphans={stats['weak_edge_orphan_nodes']})")
++    if SEG_PRUNE_MIN_PROB > 0.0:
++        nodes_by_id, edges = prune_weak_segments(nodes_by_id, edges, stats)
++        if stats.get("seg_prune_segments"):
++            print(f"  [{dataset}] after weak-segment pruning: {len(nodes_by_id)} nodes, {len(edges)} edges"
++                  f" (segments={stats['seg_prune_segments']}, nodes={stats['seg_prune_nodes']})")
+     nodes_by_id, edges = filter_short_track_components(nodes_by_id, edges, stats)
+     print(f"  [{dataset}] after short-track filtering: {len(nodes_by_id)} nodes, {len(edges)} edges"
+           f" (components_removed={stats['short_track_components_removed']})")
++    if LEAF_PRUNE_MIN_EDGE_PROB > 0.0:
++        nodes_by_id, edges = prune_weak_leaf_nodes(nodes_by_id, edges, stats)
++        if stats.get("leaf_prune_nodes"):
++            print(f"  [{dataset}] after weak-leaf pruning: {len(nodes_by_id)} nodes, {len(edges)} edges"
++                  f" (leaf_pruned={stats['leaf_prune_nodes']})")
++    if REPAIR_PARENT_MAX_UM > 0.0:
++        nodes_by_id, edges = repair_second_daughter(
++            nodes_by_id, edges, stats,
++            dataset=dataset,
++            deepcenter_bundle=deepcenter_bundle,
++            frame_cache=repair_frame_cache,
++            deepcenter_cache=deepcenter_heatmap_cache,
++        )
++        if stats.get("repairs_added"):
++            print(f"  [{dataset}] after second-daughter repair: {len(nodes_by_id)} nodes, {len(edges)} edges"
++                  f" (repairs={stats['repairs_added']})")
++    if COUNT_EXCESS_FRAC > 0.0:
++        nodes_by_id, edges = prune_to_node_count_target(nodes_by_id, edges, stats)
++        if stats.get("count_target_removed"):
++            print(f"  [{dataset}] after count-target pruning: {len(nodes_by_id)} nodes, {len(edges)} edges"
++                  f" (removed={stats['count_target_removed']})")
++    if not _deadline_degraded and _repair_overrun():
++        _v7_repair_stage_checkpoint(dataset)
+     nodes_by_id = linefit_smooth_output_graph(nodes_by_id, edges, stats)
+     print(f"  [{dataset}] FINAL: {len(nodes_by_id)} nodes, {len(edges)} edges | {_time.time() - _stage_t0:.1f}s")
+ 
+@@ -3803,6 +4615,7 @@
+ 
+             raw_node_count = len(nodes_by_id)
+             _dataset_t0 = _time.time()
++            _V7_DATASET_T0["t0"] = _dataset_t0
+             if not _deadline_degraded and _dataset_t0 - KERNEL_START_TS > REPAIR_DEADLINE_S:
+                 _deadline_degrade()
+             _nodes_snapshot = {node_id: dict(node) for node_id, node in nodes_by_id.items()}
+@@ -3906,7 +4719,23 @@
+     display(pd.read_csv(SUBMISSION_PATH, nrows=8))
+ 
+ 
+-write_test_submission("base")
++_V9_REPAIR_T0 = v7_kernel_elapsed()
++_V7_FROZEN_APPLIED = False
++_v7_frozen_saved: dict = {}
++if FROZEN_PRESET_OVERRIDES is not None:
++    _v7_frozen_saved = _pp_apply_frozen_overrides(FROZEN_PRESET_OVERRIDES)
++    _V7_FROZEN_APPLIED = True
++    print(f"V7: frozen preset {FROZEN_PRESET_LABEL!r} applied to the base repair pass: {FROZEN_PRESET_OVERRIDES}", flush=True)
++try:
++    write_test_submission("base")
++finally:
++    if _v7_frozen_saved:
++        for _v7_k, _v7_v in _v7_frozen_saved.items():
++            globals()[_v7_k] = _v7_v
++
++# v9: measured cost of the full base pass -- the pass-2 rewrite's cost proxy.
++_V9_REPAIR_SECONDS = max(0.0, v7_kernel_elapsed() - _V9_REPAIR_T0)
++
+ 
+ 
+ 
+@@ -4224,8 +5053,38 @@
+     return final_dir
+ 
+ 
++if VALIDATOR_ENABLE and val_stems and FROZEN_PRESET_OVERRIDES is not None:
++    print("V7: frozen preset active -- skipping the validator entirely (no val inference, no sweep).")
++    val_stems = []
++if VALIDATOR_ENABLE and val_stems and not v7_gate_ok("BIOHUB_VALIDATOR_LATEST_START_S", "VALIDATOR"):
++    val_stems = []
++_v7_val_pred_cache_hit = False
++_V7_CACHE_DIR = os.environ.get("BIOHUB_VAL_PRED_CACHE_DIR", "").strip()
++if VALIDATOR_ENABLE and val_stems and _V7_CACHE_DIR:
++    _v7_expected_key = os.environ.get("BIOHUB_VAL_PRED_CACHE_KEY", "").strip() or f"{METHOD}|det={DET_THRESHOLD}"
++    _v7_cache_key_path = Path(_V7_CACHE_DIR) / "cache_key.txt"
++    _v7_cached_ok = _v7_cache_key_path.exists() and _v7_cache_key_path.read_text().strip() == _v7_expected_key
++    if _v7_cached_ok:
++        _v7_missing_cached = [s for s in val_stems if not (Path(_V7_CACHE_DIR) / f"{s}.geff").exists()]
++        _v7_cached_ok = not _v7_missing_cached
++        if _v7_missing_cached:
++            print(f"V7: validator cache missing predictions for {_v7_missing_cached[:4]} -- will re-run inference.")
++    if _v7_cached_ok:
++        import shutil as _v7_shutil
++        _v7_dest = REPO_DIR / "predictions" / "v7_valcache" / f"{METHOD}_val" / "split_0"
++        _v7_dest.mkdir(parents=True, exist_ok=True)
++        for _v7_s in val_stems:
++            _v7_target = _v7_dest / f"{_v7_s}.geff"
++            if not _v7_target.exists():
++                _v7_shutil.copy2(Path(_V7_CACHE_DIR) / f"{_v7_s}.geff", _v7_target)
++        _v7_val_pred_cache_hit = True
++        print(f"V7: validator predictions loaded from cache {_V7_CACHE_DIR} "
++              f"(key {_v7_expected_key!r}) -- val inference skipped.")
++    else:
++        print(f"V7: validator cache at {_V7_CACHE_DIR} unusable (key mismatch or missing stems) -- running prediction.")
++
+ predict_val_seconds = None
+-if VALIDATOR_ENABLE and val_stems:
++if VALIDATOR_ENABLE and val_stems and not _v7_val_pred_cache_hit:
+     val_splits_path = REPO_DIR / "kaggle_val_splits.json"
+     val_splits_path.write_text(json.dumps([{"split": 0, "train": [], "test": val_stems}], indent=2))
+     val_method_prefix = f"{METHOD}_val"
+@@ -4605,7 +5464,12 @@
+     "SHORT_TRACK_RESCUE_MIN_MEAN_EDGE_PROB", "MOTION_RELINK_TIGHT_UM",
+     "MOTION_RELINK_RELAXED_UM", "GAP2_MAX_STEP_UM", "GAP2_MAX_TOTAL_UM",
+     "MOTION_RELINK_LEARNED_BONUS", "MOTION_RELINK_VELOCITY_WEIGHT",
+-    "GAP_CLOSE_REUSE_UM", "OUTPUT_EDGE_MAX_UM",
++    "GAP_CLOSE_REUSE_UM", "OUTPUT_EDGE_MAX_UM", "LEAF_PRUNE_MIN_EDGE_PROB",
++    # v5: metric-aligned post-processing extensions
++    "OUTPUT_MIN_EDGE_PROB", "SEG_PRUNE_MIN_PROB", "SEG_PRUNE_MAX_LEN",
++    "GAP_CLOSE_DIV_UM", "REPAIR_PARENT_MAX_UM", "REPAIR_DEEPCENTER_THRESHOLD",
++    "REPAIR_SISTER_SYMMETRY_TAU", "CORE_EDGE_PROB", "COUNT_EXCESS_FRAC",
++    "LINEFIT_MAX_SHIFT_UM",
+ ]
+ PP_BASE_CONFIG = {key: globals()[key] for key in PP_SWEEP_KEYS}
+ print("Post-process base configuration (public 0.939):")
+@@ -4628,6 +5492,7 @@
+ 
+ 
+ VAL_RAW_GRAPHS: dict[str, tuple[dict, list]] = {}
++VAL_BASE_PROCESSED: dict[str, tuple] = {}  # v4: base-processed graphs for the audit
+ VAL_GT: dict[str, tuple[list, list, object]] = {}
+ 
+ if VALIDATOR_ENABLE and val_stems:
+@@ -4693,6 +5558,8 @@
+             row["stem"] = stem
+             row["config"] = label
+             row["safe_divisions_added"] = _stage_stats.get("safe_divisions_added", 0)
++            if label == "base":
++                VAL_BASE_PROCESSED[stem] = (pred_nodes_plain, pred_edges_plain)
+             rows.append(row)
+     finally:
+         globals()["TEST_DIR"] = _real_test_dir
+@@ -4701,6 +5568,21 @@
+     summary["n_samples"] = len(rows)
+     summary["config"] = label
+     summary["seconds"] = time.time() - t0
++
++    # v4: per-embryo-prefix proxy for the anti-overfit selection guard
++    prefix_rows: dict[str, list[dict]] = {}
++    for row in rows:
++        prefix_rows.setdefault(str(row["stem"]).split("_")[0], []).append(row)
++    summary["prefix_proxy"] = {}
++    for prefix, prows in prefix_rows.items():
++        w = sum(r["weight"] for r in prows) or 1
++        p_tp = sum(r["div_tp"] for r in prows)
++        p_fp = sum(r["div_fp"] for r in prows)
++        p_fn = sum(r["div_fn"] for r in prows)
++        p_adj = sum(r["adjusted_edge_jaccard"] * r["weight"] for r in prows) / w
++        summary["prefix_proxy"][prefix] = (
++            p_adj + VALIDATOR_DIVISION_WEIGHT * edge_jaccard(p_tp, p_fp, p_fn)
++        )
+     if verbose:
+         for row in rows:
+             print(f"  {row['stem']:<28} edge_jaccard={row['edge_jaccard']:.4f} "
+@@ -4713,11 +5595,88 @@
+     return summary, rows
+ 
+ 
++def division_recoverability_audit() -> None:
++    """v4 diagnostic (never affects scores or selection).
++
++    Classifies every GT division whose matched prediction parent does not emit
++    two child edges:
++      * recoverable_by_postprocess -- BOTH GT daughters have a matched pred node,
++        so safe-div / relink sweep candidates can potentially convert FN -> TP;
++      * missing_second_daughter   -- the second daughter node is absent entirely
++        (detection-limited; needs inference-level changes, not post-processing);
++      * parent_unmatched          -- the GT parent itself has no pred match.
++    """
++    if not VAL_BASE_PROCESSED:
++        return
++    totals = {
++        "reproduced_ok": 0,
++        "recoverable_by_postprocess": 0,
++        "missing_second_daughter": 0,
++        "parent_unmatched": 0,
++    }
++    per_stem_lines: list[str] = []
++    for stem in val_stems:
++        base = VAL_BASE_PROCESSED.get(stem)
++        if base is None:
++            continue
++        pred_nodes_plain, pred_edges_plain = base
++        gt_nodes_plain, gt_edges_plain, _t_true = VAL_GT[stem]
++        _p2g, g2p = match_nodes_bipartite(
++            pred_nodes_plain, gt_nodes_plain, max_dist=VALIDATOR_MATCH_RADIUS_UM
++        )
++        gt_children: dict[int, list[int]] = {}
++        for s, t in gt_edges_plain:
++            gt_children.setdefault(s, []).append(t)
++        pred_children_count: dict[int, int] = {}
++        for s, t in pred_edges_plain:
++            pred_children_count[s] = pred_children_count.get(s, 0) + 1
++        stem_counts = {
++            "recoverable_by_postprocess": 0,
++            "missing_second_daughter": 0,
++            "parent_unmatched": 0,
++        }
++        for parent, kids in gt_children.items():
++            if len(kids) < 2:
++                continue
++            pred_parent = g2p.get(parent)
++            if pred_parent is None:
++                stem_counts["parent_unmatched"] += 1
++            elif pred_children_count.get(pred_parent, 0) >= 2:
++                totals["reproduced_ok"] += 1
++                continue
++            else:
++                matched_kids = sum(1 for k in kids if k in g2p)
++                if matched_kids >= len(kids):
++                    stem_counts["recoverable_by_postprocess"] += 1
++                else:
++                    stem_counts["missing_second_daughter"] += 1
++        for key, value in stem_counts.items():
++            totals[key] += value
++        if any(stem_counts.values()):
++            rendered = "  ".join(f"{k}={v}" for k, v in stem_counts.items())
++            per_stem_lines.append(f"  {stem:<28} {rendered}")
++    print()
++    print("=" * 78)
++    print("DIVISION-FN RECOVERABILITY AUDIT (base config, diagnostic only)")
++    print("=" * 78)
++    for line in per_stem_lines:
++        print(line)
++    print(
++        f"TOTAL: reproduced_ok={totals['reproduced_ok']}  "
++        f"recoverable_by_postprocess={totals['recoverable_by_postprocess']}  "
++        f"missing_second_daughter={totals['missing_second_daughter']}  "
++        f"parent_unmatched={totals['parent_unmatched']}"
++    )
++    print("recoverable -> try dcsd010/dcsd015/divwide/sym075/diverge150 family")
++    print("              + v5 second-daughter repair (repd010/repd015/repd015w)")
++    print("missing     -> detection-limited; post-processing cannot recover these")
++
++
+ validator_sample_rows: list[dict[str, object]] = []
+ validator_summary_rows: list[dict[str, object]] = []
+ PP_RESULTS: dict[str, dict] = {}
+ 
+-if VALIDATOR_ENABLE and val_stems:
++if VALIDATOR_ENABLE and val_stems and v7_gate_ok("BIOHUB_SWEEP_LATEST_START_S", "VALIDATOR-BASE"):
+     print()
+     print("=" * 78)
+     print("LOCAL VALIDATOR -- base configuration (public 0.939), official metric formula")
+@@ -4734,6 +5693,7 @@
+         for row in base_rows:
+             writer.writerow(row)
+     print(f"Per-sample validator rows written to {VALIDATOR_STATS_PATH}")
++    division_recoverability_audit()
+ else:
+     print("VALIDATOR: disabled or no held-out samples available -- skipping scoring.")
+ 
+@@ -4750,6 +5710,84 @@
+     "reuse28": {"GAP_CLOSE_REUSE_UM": 2.8},
+     "dcgap035": {"DEEPCENTER_GAP_THRESHOLD": 0.35},
+ }
++
++# ------------------------------------------------------------------ #
++# v4: EXTENDED CANDIDATE SET (validated on the same 8 held-out videos;
++# only selections passing margin + adj-loss + prefix guard ship).
++# Division funnel at v3 reference run: ~2.6k divergence-rejected and
++# ~89% of geometric survivors DeepCenter-rejected per video -> the
++# dcsd*/divwide/sym075/diverge150 family attacks both kill-gates.
++# ------------------------------------------------------------------ #
++if PPSWEEP_EXTENDED:
++    PP_CANDIDATES.update({
++        # -- division recall: loosen DeepCenter safe-div veto --
++        "dcsd015": {"DEEPCENTER_SAFE_DIV_THRESHOLD": 0.15},
++        "dcsd010": {"DEEPCENTER_SAFE_DIV_THRESHOLD": 0.10},
++        # -- division recall: widen geometry windows --
++        "divwide": {
++            "SAFE_DIV_MAX_UM": 11.0,
++            "SAFE_DIV_SISTER_MAX_UM": 16.0,
++            "SAFE_DIV_EXISTING_CHILD_MAX_UM": 12.0,
++        },
++        # -- division recall: relax sister-symmetry (higher tau = permissive) --
++        "sym075": {"SAFE_DIV_SISTER_SYMMETRY_TAU": 0.75},
++        # -- division recall: relax divergence requirement (top rejection source) --
++        "diverge150": {"SAFE_DIV_DIVERGE_UM": 1.5},
++        # -- v6 note: the x138 base preset already ships MOTION_RELINK_TIGHT_UM=5.5,
++        #    so v4's t55_* composites collapse onto their single-knob versions below. --
++        # -- spurious-node suppression via v4 weak-leaf pruning --
++        "leaf030": {"LEAF_PRUNE_MIN_EDGE_PROB": 0.30},
++        "leaf040": {"LEAF_PRUNE_MIN_EDGE_PROB": 0.40},
++        # -- recall levers for under-predicting videos --
++        "minlen5": {"OUTPUT_MIN_TRACK_LEN": 5},
++        "rescue085": {"SHORT_TRACK_RESCUE_MIN_MEAN_EDGE_PROB": 0.85},
++        "dcgap018": {"DEEPCENTER_GAP_THRESHOLD": 0.18},
++        # -- motion-model variants --
++        "vel075": {"MOTION_RELINK_VELOCITY_WEIGHT": 0.75},
++        "vel025": {"MOTION_RELINK_VELOCITY_WEIGHT": 0.25},
++    })
++
++# ------------------------------------------------------------------ #
++# v5: METRIC-ALIGNED CANDIDATES. The official adjustment is one-sided
++# (t_pred > t_true penalizes, under-prediction is rewarded) and edges
++# between unmatched nodes are free -> spurious-node pruning is profitable
++# on EVERY video, and division FN = lineage-continuity problem.
++# ------------------------------------------------------------------ #
++if PPSWEEP_EXTENDED:
++    PP_CANDIDATES.update({
++        # -- L1 weak-edge output filter (precision; unmatched-node edges are metric-free) --
++        "ep010": {"OUTPUT_MIN_EDGE_PROB": 0.10},
++        "ep015": {"OUTPUT_MIN_EDGE_PROB": 0.15},
++        "ep020": {"OUTPUT_MIN_EDGE_PROB": 0.20},
++        # -- L2 weak pendant-segment pruning (mid-track FP population) --
++        "seg030L3": {"SEG_PRUNE_MIN_PROB": 0.30, "SEG_PRUNE_MAX_LEN": 3},
++        "seg035L4": {"SEG_PRUNE_MIN_PROB": 0.35, "SEG_PRUNE_MAX_LEN": 4},
++        "seg040L6": {"SEG_PRUNE_MIN_PROB": 0.40, "SEG_PRUNE_MAX_LEN": 6},
++        # -- L3 division-priority gap continuation (lineage continuity -> division TP) --
++        "divgap60": {"GAP_CLOSE_DIV_UM": 6.0},
++        "divgap70": {"GAP_CLOSE_DIV_UM": 7.0},
++        # -- L4 second-daughter repair (relaxed DeepCenter floor; each FN division ~= +0.0077 proxy) --
++        "repd010": {"REPAIR_PARENT_MAX_UM": 11.0, "REPAIR_DEEPCENTER_THRESHOLD": 0.10},
++        "repd015": {"REPAIR_PARENT_MAX_UM": 11.0, "REPAIR_DEEPCENTER_THRESHOLD": 0.15},
++        "repd015w": {"REPAIR_PARENT_MAX_UM": 12.0, "REPAIR_DEEPCENTER_THRESHOLD": 0.15},
++        # -- L5 count-target pruning (directly targets the one-sided count penalty) --
++        "cx03": {"COUNT_EXCESS_FRAC": 0.03},
++        "cx06": {"COUNT_EXCESS_FRAC": 0.06},
++        "cx10": {"COUNT_EXCESS_FRAC": 0.10},
++        # -- L7 linefit shift clamp (v6 note: L6 vel-state is superseded by
++        #    x138's flow-field relinker and is not carried into v6) --
++        "lfitclamp25": {"LINEFIT_MAX_SHIFT_UM": 2.5},
++        "lfitclamp40": {"LINEFIT_MAX_SHIFT_UM": 4.0},
++        # -- v6 composites on the x138 base (base already ships tight 5.5 + flow relink) --
++        "leaf_seg": {"LEAF_PRUNE_MIN_EDGE_PROB": 0.30, "SEG_PRUNE_MIN_PROB": 0.35, "SEG_PRUNE_MAX_LEN": 4},
++        "prune_pack": {"LEAF_PRUNE_MIN_EDGE_PROB": 0.30, "SEG_PRUNE_MIN_PROB": 0.35, "SEG_PRUNE_MAX_LEN": 4,
++                       "OUTPUT_MIN_EDGE_PROB": 0.15, "COUNT_EXCESS_FRAC": 0.06},
++        "repd_divgap": {"REPAIR_PARENT_MAX_UM": 11.0, "REPAIR_DEEPCENTER_THRESHOLD": 0.15, "GAP_CLOSE_DIV_UM": 6.0},
++        "ep_cx": {"OUTPUT_MIN_EDGE_PROB": 0.15, "COUNT_EXCESS_FRAC": 0.06},
++        "seg_cx": {"SEG_PRUNE_MIN_PROB": 0.35, "SEG_PRUNE_MAX_LEN": 4, "COUNT_EXCESS_FRAC": 0.06},
++        "divwide_dcsd010": {"SAFE_DIV_MAX_UM": 11.0, "SAFE_DIV_SISTER_MAX_UM": 16.0,
++                            "SAFE_DIV_EXISTING_CHILD_MAX_UM": 12.0, "DEEPCENTER_SAFE_DIV_THRESHOLD": 0.10},
++    })
+ PP_SELECT_MARGIN = float(os.environ.get("BIOHUB_PPSWEEP_SELECT_MARGIN", "0.002"))
+ PP_MAX_ADJ_LOSS = float(os.environ.get("BIOHUB_PPSWEEP_MAX_ADJ_LOSS", "0.0005"))
+ PP_SWEEP_RESULTS_PATH = WORKING_DIR / "ppsweep_results.csv"
+@@ -4758,12 +5796,56 @@
+ selected_label = "base"
+ selected_config: dict = {}
+ 
+-if VALIDATOR_ENABLE and val_stems and "base" in PP_RESULTS:
++# v6: sweep deadline guard. On Kaggle's hidden rerun the test set can be
++# larger; if the kernel is already past BIOHUB_SWEEP_DEADLINE_S when the
++# sweep would start, skip it and ship the base configuration unchanged
++# (exact x138 behavior). 0 disables the guard.
++_sweep_deadline_s = float(os.environ.get("BIOHUB_SWEEP_DEADLINE_S", "0") or 0.0)
++try:
++    _sweep_elapsed = _time.time() - float(globals().get("KERNEL_START_TS", _time.time()))
++except Exception:
++    _sweep_elapsed = 0.0
++_sweep_time_ok = _sweep_deadline_s <= 0 or _sweep_elapsed < _sweep_deadline_s
++if VALIDATOR_ENABLE and val_stems and "base" in PP_RESULTS and not _sweep_time_ok:
++    print(f"SWEEP: skipped -- kernel elapsed {_sweep_elapsed:.0f}s >= "
++          f"BIOHUB_SWEEP_DEADLINE_S={_sweep_deadline_s:.0f}; shipping the base configuration.")
++elif VALIDATOR_ENABLE and val_stems and "base" in PP_RESULTS and FROZEN_PRESET_OVERRIDES is None:
+     base_summary = PP_RESULTS["base"]
++
++    def _prefix_guard_ok(summary: dict) -> bool:
++        """v4 anti-overfit guard: reject candidates whose proxy regresses by
++        more than 0.001 on ANY embryo prefix (44b6 / 6bba), even if the pooled
++        proxy improved. Keeps the sweep honest on 8 held-out videos."""
++        if not PPSWEEP_PREFIX_GUARD:
++            return True
++        cand_pp = summary.get("prefix_proxy") or {}
++        base_pp = base_summary.get("prefix_proxy") or {}
++        for prefix, base_val in base_pp.items():
++            if cand_pp.get(prefix, float("-inf")) < base_val - 0.001:
++                return False
++        return True
+     print("=" * 78)
+     print(f"POST-PROCESS SWEEP -- {len(PP_CANDIDATES)} candidates x {len(val_stems)} held-out videos")
+     print("=" * 78)
+-    for label, config in PP_CANDIDATES.items():
++    # v9: ordered by expected proxy-per-second so the time-boxed sweep
++    # window evaluates the highest-value candidates first: division-FN
++    # recovery (+0.0077 proxy per recovered FN) and spurious-node pruning
++    # (profitable on every video) lead the tier.
++    _V7_FAST_TIER = (
++        "repd_divgap", "dcgap018", "tight55", "leaf040", "divwide", "dcsd015",
++        "vel075", "sym075", "ep015", "minlen5", "rescue085", "divwide_dcsd010",
++    )
++    if os.environ.get("BIOHUB_PPSWEEP_FAST_TIER", "1") != "0":
++        _sweep_items = [(k, PP_CANDIDATES[k]) for k in _V7_FAST_TIER if k in PP_CANDIDATES]
++        print(f"V9 FAST TIER: {len(_sweep_items)} curated candidates, best-value first "
++              f"(set BIOHUB_PPSWEEP_FAST_TIER=0 to sweep all {len(PP_CANDIDATES)})")
++    else:
++        _sweep_items = list(PP_CANDIDATES.items())
++    for label, config in _sweep_items:
++        if v7_deadline_hit("BIOHUB_SWEEP_DEADLINE_S"):
++            print(f"V9 SWEEP: deadline reached before {label!r} -- keeping partial results "
++                  f"({len(PP_RESULTS)} configs evaluated).")
++            break
+         summary, rows = score_validator_config(config, label)
+         PP_RESULTS[label] = summary
+         validator_sample_rows.extend(rows)
+@@ -4775,13 +5857,14 @@
+         if label != "base"
+         and summary["proxy_score"] >= base_summary["proxy_score"] + 0.0005
+         and summary["adjusted_edge_jaccard"] >= base_summary["adjusted_edge_jaccard"] - PP_MAX_ADJ_LOSS
++        and _prefix_guard_ok(summary)
+     ]
+     positive.sort(key=lambda l: PP_RESULTS[l]["proxy_score"], reverse=True)
+     combo_config: dict = {}
+     for label in positive:
+         for key, value in PP_CANDIDATES[label].items():
+             combo_config.setdefault(key, value)
+-    if len(positive) >= 2:
++    if len(positive) >= 2 and not v7_deadline_hit("BIOHUB_SWEEP_DEADLINE_S"):
+         combo_label = "combo(" + "+".join(positive) + ")"
+         summary, rows = score_validator_config(combo_config, combo_label)
+         PP_RESULTS[combo_label] = summary
+@@ -4799,19 +5882,30 @@
+               f"adj={summary['adjusted_edge_jaccard']:.4f}  divJ={summary['division_jaccard']:.4f} "
+               f"(tp/fp/fn={summary['div_tp']}/{summary['div_fp']}/{summary['div_fn']})")
+     pd.DataFrame([
+-        {"config": label, **{k: v for k, v in summary.items() if k != "config"},
++        {"config": label,
++         **{k: (json.dumps(v, sort_keys=True) if isinstance(v, dict) else v)
++            for k, v in summary.items() if k != "config"},
+          "overrides": json.dumps(PP_CANDIDATES.get(label, {}), sort_keys=True)}
+         for label, summary in ranked
+     ]).to_csv(PP_SWEEP_RESULTS_PATH, index=False)
+ 
+-    best_label, best_summary = ranked[0]
+-    if (
+-        best_label != "base"
+-        and best_summary["proxy_score"] >= base_summary["proxy_score"] + PP_SELECT_MARGIN
+-        and best_summary["adjusted_edge_jaccard"] >= base_summary["adjusted_edge_jaccard"] - PP_MAX_ADJ_LOSS
+-    ):
+-        selected_label = best_label
+-        selected_config = dict(PP_CANDIDATES[best_label])
++    # v4: scan the ranking and take the FIRST candidate that passes all
++    # three guards (proxy margin, adjusted-edge loss, prefix stability).
++    # A higher-proxy candidate that fails a guard must never block a
++    # valid runner-up from shipping.
++    selected_label = "base"
++    selected_config: dict = {}
++    for best_label, best_summary in ranked:
++        if best_label == "base":
++            break
++        if (
++            best_summary["proxy_score"] >= base_summary["proxy_score"] + PP_SELECT_MARGIN
++            and best_summary["adjusted_edge_jaccard"] >= base_summary["adjusted_edge_jaccard"] - PP_MAX_ADJ_LOSS
++            and _prefix_guard_ok(best_summary)
++        ):
++            selected_label = best_label
++            selected_config = dict(PP_CANDIDATES[best_label])
++            break
+     print()
+     print(f"SELECTED: {selected_label}  overrides={selected_config}  "
+           f"(margin rule: >= +{PP_SELECT_MARGIN} proxy and adj loss <= {PP_MAX_ADJ_LOSS})")
+@@ -4828,6 +5922,9 @@
+ else:
+     print("SWEEP: validator unavailable -- keeping the base configuration.")
+ 
++if FROZEN_PRESET_OVERRIDES is not None:
++    selected_label = FROZEN_PRESET_LABEL
++    selected_config = dict(FROZEN_PRESET_OVERRIDES)
+ PP_SELECTED_PATH.write_text(json.dumps({
+     "selected": selected_label,
+     "overrides": selected_config,
+@@ -4836,9 +5933,23 @@
+     "held_out_stems": list(val_stems),
+ }, indent=2, sort_keys=True) + "\n")
+ 
+-if selected_config:
++if selected_config and globals().get("_V7_FROZEN_APPLIED", False):
++    for key, value in selected_config.items():
++        os.environ["BIOHUB_" + key] = str(value)
++    print("V9: frozen preset was already applied during the base repair pass -- submission.csv is final.")
++elif selected_config and not _v9_rewrite_fits():
++    for key, value in selected_config.items():
++        os.environ["BIOHUB_" + key] = str(value)
++elif selected_config and v7_deadline_hit("BIOHUB_REWRITE_LATEST_START_S"):
++    for key, value in selected_config.items():
++        os.environ["BIOHUB_" + key] = str(value)
++    _v7_rw_latest = float(os.environ.get("BIOHUB_REWRITE_LATEST_START_S", "0") or 0.0)
++    print(f"V9: pass-2 rewrite skipped -- kernel elapsed {v7_kernel_elapsed():.0f}s >= "
++          f"BIOHUB_REWRITE_LATEST_START_S={_v7_rw_latest:.0f}s; shipping the base submission.csv.")
++elif selected_config:
+     print()
+     print(f"Re-writing submission.csv with the selected post-process configuration: {selected_label}")
++    os.environ["BIOHUB_REPAIR_DEADLINE_S"] = os.environ.get("BIOHUB_REWRITE_DEADLINE_S", "30600")
+     _saved = pp_apply(selected_config)
+     try:
+         write_test_submission(selected_label)
+@@ -4847,7 +5958,7 @@
+     for key, value in selected_config.items():
+         os.environ["BIOHUB_" + key] = str(value)
+ else:
+-    print("Keeping the base submission.csv (public 0.939 configuration).")
++    print("Keeping the base submission.csv (x138 harmonic_v3_division_wide preset).")
+ 
+ 
+ _final = pd.read_csv(SUBMISSION_PATH)
+@@ -4909,4 +6020,62 @@
+ print(f"Validator:               enabled={VALIDATOR_ENABLE}  "
+       f"held_out_samples={len(val_stems)}  match_radius={VALIDATOR_MATCH_RADIUS_UM}um")
+ 
++_v6env = os.environ.get
++print(f"v6 metric-aligned layer:  leaf={_v6env.get('BIOHUB_LEAF_PRUNE_MIN_EDGE_PROB')}  "
++      f"seg={_v6env.get('BIOHUB_SEG_PRUNE_MIN_PROB')}  ep={_v6env.get('BIOHUB_OUTPUT_MIN_EDGE_PROB')}  "
++      f"divgap={_v6env.get('BIOHUB_GAP_CLOSE_DIV_UM')}  repair={_v6env.get('BIOHUB_REPAIR_PARENT_MAX_UM')}  "
++      f"cx={_v6env.get('BIOHUB_COUNT_EXCESS_FRAC')}  lfitclamp={_v6env.get('BIOHUB_LINEFIT_MAX_SHIFT_UM')}")
++print(f"Sweep:                   extended={_v6env.get('BIOHUB_PPSWEEP_EXTENDED')}  "
++      f"prefix_guard={_v6env.get('BIOHUB_PPSWEEP_PREFIX_GUARD')}  "
++      f"deadline_s={_v6env.get('BIOHUB_SWEEP_DEADLINE_S')}")
++
+ print("=" * 78)
++
++
++# ---------------------------------------------------------------------- #
++# v9 runtime report: what the hidden-rerun governor actually did. Written
++# for every run so behavior is auditable from the notebook outputs.
++# ---------------------------------------------------------------------- #
++_v9_report = {
++    "kernel_start_ts": KERNEL_START_TS,
++    "kernel_elapsed_s": round(v7_kernel_elapsed(), 1),
++    "wall_budget_s": float(os.environ.get("BIOHUB_WALL_BUDGET_S", "0") or 0.0),
++    "ladder_s": {k: float(os.environ.get(k, "0") or 0.0) for k in (
++        "BIOHUB_ILP_TIMEOUT_S", "BIOHUB_REPAIR_PER_DATASET_CAP_S",
++        "BIOHUB_REPAIR_DEADLINE_S", "BIOHUB_VALIDATOR_LATEST_START_S",
++        "BIOHUB_SWEEP_LATEST_START_S", "BIOHUB_SWEEP_DEADLINE_S",
++        "BIOHUB_REWRITE_LATEST_START_S", "BIOHUB_REWRITE_DEADLINE_S",
++        "BIOHUB_WALL_BUDGET_S")},
++    "deadline_degraded": bool(globals().get("_deadline_degraded", False)),
++    "repair_seconds_measured": round(float(globals().get("_V9_REPAIR_SECONDS", 0.0) or 0.0), 1),
++    "rewrite_fit_skipped": bool(globals().get("_V9_REWRITE_FIT_SKIPPED", False)),
++    "frozen_preset_applied": bool(globals().get("_V7_FROZEN_APPLIED", False)),
++    "frozen_preset_path": os.environ.get("BIOHUB_FROZEN_PRESET_JSON", ""),
++    "auto_attached": dict(globals().get("_V9_AUTO_SET_ENV", {})),
++    "val_pred_cache_used": bool(globals().get("_v7_val_pred_cache_hit", False)),
++    "fast_tier": os.environ.get("BIOHUB_PPSWEEP_FAST_TIER", "1") != "0",
++    "sweep_candidates_total": len(PP_CANDIDATES),
++    "sweep_results_count": len(globals().get("PP_RESULTS", {})),
++    "shipped_config": selected_label if "selected_label" in globals() else "base",
++    "shipped_overrides": selected_config if "selected_config" in globals() else {},
++}
++_v9_report_path = WORKING_DIR / "biohub_v9_runtime_report.json"
++_v9_report_path.write_text(json.dumps(_v9_report, indent=2, sort_keys=True) + "\n")
++print()
++print("=" * 78)
++print("V9 RUNTIME REPORT (9 h governor)")
++print("=" * 78)
++print(f"  kernel elapsed:        {_v9_report['kernel_elapsed_s']:.0f}s (wall budget {_v9_report['wall_budget_s']:.0f}s)")
++print(f"  deadline degraded:     {_v9_report['deadline_degraded']}")
++print(f"  base pass measured:    {_v9_report['repair_seconds_measured']:.0f}s")
++print(f"  rewrite fit-skipped:   {_v9_report['rewrite_fit_skipped']}")
++print(f"  frozen preset applied: {_v9_report['frozen_preset_applied']}")
++print(f"  auto-attached:         {_v9_report['auto_attached'] or '{}'}")
++print(f"  val prediction cache:  {_v9_report['val_pred_cache_used']}")
++print(f"  fast sweep tier:       {_v9_report['fast_tier']}  (results: {_v9_report['sweep_results_count']}/{_v9_report['sweep_candidates_total']})")
++print(f"  shipped config:        {_v9_report['shipped_config']} {_v9_report['shipped_overrides'] or ''}")
++if not _v9_report["frozen_preset_applied"] and _v9_report["sweep_results_count"] > 1:
++    print("  NEXT STEP: attach ppsweep_selected.json (from the Output tab) as a")
++    print("             Kaggle Dataset to this notebook -- v9 auto-detects it and")
++    print("             ships the winning config in a single ~20 min base pass.")
++print(f"  report written to:     {_v9_report_path}")
