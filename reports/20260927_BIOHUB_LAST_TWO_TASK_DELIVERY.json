@@ -1,0 +1,27 @@
+{
+  "task_id": "BIOHUB_XR0_LAST_TWO_20260926_V01",
+  "scope": "TASK_DELIVERY_ONLY",
+  "status": "TASK_SYNCED_CANDIDATES_NOT_EXECUTED_BY_CHAT",
+  "repository": "SailorRen/Biohub-CELL",
+  "branch": "codex/xr0-last-two-20260926",
+  "code_base_commit": "4033cdf778b70cf6957107efaaebeb729f122f7c",
+  "verified_task_commit": "9ceb9fd36b490d3b6ead0cbc55971e47d66774f0",
+  "task_path": "tasks/CODEX_20260927_BIOHUB_XR0_LAST_TWO_SCORE_FIRST_V02.md",
+  "bytes": 9571,
+  "sha256": "4dd53e2ccf96d9fd73d96fb944f1bb77d4b2c88cfea88f0e00cad6e406c1a084",
+  "verified_git_blob_sha1": "023be4ae377f998ca77799b7208e6185b178a094",
+  "verification": "Complete fixed-commit GitHub fetch_file readback; authoritative blob SHA equals locally computed Git blob SHA over the complete UTF-8 task.",
+  "task_files_verified": "1/1",
+  "algorithms": [
+    "XD960: DET 0.965 to 0.960 only",
+    "XRL9: relaxed association 10.0 to 9.0 um only"
+  ],
+  "formal_request_cap_same_last_two_batch": 2,
+  "no_additional_budget_granted": true,
+  "main_modified_by_this_delivery": false,
+  "candidate_construction_by_chat": 0,
+  "kaggle_runs_by_chat": 0,
+  "kaggle_submissions_by_chat": 0,
+  "actual_kaggle_existing_objects": "UNKNOWN; Codex must deduplicate before execution",
+  "next_action": "Codex fetches the branch, reads the self-contained task, deduplicates exact platform candidates, and executes the already requested two-candidate score-first batch."
+}
