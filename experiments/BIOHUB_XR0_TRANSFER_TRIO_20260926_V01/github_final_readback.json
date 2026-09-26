@@ -1,0 +1,181 @@
+{
+  "commit": "a71ebe070da47568b0fa62880c5409d3e207d608",
+  "passed": 29,
+  "total": 29,
+  "files": [
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/platform_ledger.json",
+      "bytes": 6357,
+      "sha256": "47612fc657ea0fe01b0baecac7befc758241acb798c8c1d7da84abdfc156c2e1",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/build_checks.json",
+      "bytes": 2265,
+      "sha256": "4b85816b7495e54473ec93fdafe9a902c7b5c1b36623c9d4f4c4b725469fa754",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/final_receipt_check.json",
+      "bytes": 743,
+      "sha256": "4f2ebdb17fd9425ab61a9fccff19a3c41db4b1b314ae3ad13fe1b564f5dce053",
+      "passed": true
+    },
+    {
+      "path": "reports/20260926_BIOHUB_XR0_TRANSFER_TRIO_RESULTS.md",
+      "bytes": 7719,
+      "sha256": "226442cab51a5c61c106f9816dd674cc7e0244a9c8674566c6d45e9788c74330",
+      "passed": true
+    },
+    {
+      "path": "tasks/CODEX_20260926_BIOHUB_XR0_TRANSFER_TRIO_V01.md",
+      "bytes": 14370,
+      "sha256": "f73ab06a1641e86542cc9b27a5e6a429c55a9b009b4fabaabef693b3d5b289c6",
+      "passed": true
+    },
+    {
+      "path": "tasks/CODEX_20260926_BIOHUB_XR0_TRANSFER_TRIO_EXECUTE_V02.md",
+      "bytes": 9173,
+      "sha256": "22c033f96124ba30ff89a37decf27d771ffd9687978d29197b36e40dc491254f",
+      "passed": true
+    },
+    {
+      "path": "tasks/EXECUTE_V02_PACKAGE_MANIFEST.json",
+      "bytes": 501,
+      "sha256": "39fddca71173ca110d0e0acb0f5da529e349c0ab68dd01d29ba694b2ec15a6ba",
+      "passed": true
+    },
+    {
+      "path": "tasks/CODEX_20260926_BIOHUB_XR0_TRANSFER_TRIO_ACCEPTANCE.json",
+      "bytes": 1817,
+      "sha256": "be06357a4ea31e6c21aca4456659c12f68f3d793c3a90516b3015f7ae341f9d6",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25/candidate.ipynb",
+      "bytes": 267381,
+      "sha256": "3e59e81bfbf1934d31c47e96a27db49e2c2c08d363e1a94bfe964e6bd33e59a2",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25/kernel-metadata.json",
+      "bytes": 832,
+      "sha256": "fde9605d77b9ec1fe0a15559a03b379a37f3ce3d8abf2497c0bcc02c4cb6da75",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25/source.diff",
+      "bytes": 2455,
+      "sha256": "621e76788ca182d174cdeea3ef897001a89258c0011bf7753e63369aa33df4ad",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25/build_receipt.json",
+      "bytes": 422,
+      "sha256": "da37efe69fc26c8326f1e058b189677452f2cbc2431ab098bd2ccef9bf923dc2",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25/formal_terminal_receipt.json",
+      "bytes": 517,
+      "sha256": "2ad462ed58773d3e19717915fad025d261e8df7b228fa6ccd56f4efadc450766",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25/output_check.json",
+      "bytes": 613,
+      "sha256": "04591f9baaeec0a1e98d9a4e7980f6acee941f3222bc0aa9298f9327156caa07",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25/deployment_check.json",
+      "bytes": 2743,
+      "sha256": "7da66d2ca2edcaaf885cf7eb461559147ed290a58ef93ef7ac24c7027ef62848",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XG95/candidate.ipynb",
+      "bytes": 271599,
+      "sha256": "0eed043c5bf1a093be2c03fa3b7310fd0d7979d01120a189cfd146c1535b8b72",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XG95/kernel-metadata.json",
+      "bytes": 884,
+      "sha256": "545e32cfc62da2e41122e83685498f78c5708e2095160b988f76fa09c0fc6dc4",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XG95/source.diff",
+      "bytes": 7513,
+      "sha256": "57ecb36d5c841e3daca949d85fb13a56ac66b6d161878197ba80ef34cc7c6472",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XG95/build_receipt.json",
+      "bytes": 429,
+      "sha256": "794a840f3d8a50dd8bde2dc7d785a8912c3c6375fdd7e49de427835a56d55f8a",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XG95/formal_terminal_receipt.json",
+      "bytes": 517,
+      "sha256": "db863c6e36e7aabd61fd53f5523e4d2f7fb7df15548f10bdbc456a4f83968c70",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XG95/output_check.json",
+      "bytes": 607,
+      "sha256": "00ad539cc93391d2dc789a2cf34f4c79778d649a665a3381ae57a75bc96d9394",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XG95/deployment_check.json",
+      "bytes": 3117,
+      "sha256": "5ec2fd9fce0c4dd7918b121db0e2c06addff477ef3142ad84297ffc609f1686c",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25G95/candidate.ipynb",
+      "bytes": 271604,
+      "sha256": "7d0ba2f8594e59d1b79d6e3fe67d9d33a1408efc865d28fe31469d9563374511",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25G95/kernel-metadata.json",
+      "bytes": 890,
+      "sha256": "2a6ff72ecbd4969998fb625a7df7381269d4b8f44289c3e2a34a2ceb2615d92d",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25G95/source.diff",
+      "bytes": 7523,
+      "sha256": "17638c927c8bf4ae604408c9d2fc3eac32425e67850cb42c2c9edb109907f812",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25G95/build_receipt.json",
+      "bytes": 457,
+      "sha256": "ac1f09e3a1b009f6ff4f86f1d64317ca625f461625380106fb14e7ac0e831cb4",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25G95/formal_terminal_receipt.json",
+      "bytes": 520,
+      "sha256": "a6477bf89b2976d5c1af75ef77995debd8016adcb6e36cb31e1d872909a1da00",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25G95/output_check.json",
+      "bytes": 610,
+      "sha256": "9e0e799f7af21923434e3d24e9e71abeb0f67ebe0a9b9e988ad7b9b65bb009f3",
+      "passed": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_TRANSFER_TRIO_20260926_V01/XV25G95/deployment_check.json",
+      "bytes": 3120,
+      "sha256": "d5b3f86cfc83a97ee1c38cc4f8a9cccd93c2ddcb88f47a0ad5b2c10d9b31cae0",
+      "passed": true
+    }
+  ]
+}
