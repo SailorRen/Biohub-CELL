@@ -2,7 +2,7 @@
   "task_id": "BIOHUB_XRL9_TWO_WAVE_20260927_V01",
   "stage": "WAVE1_SCORED",
   "formal_request_count": 3,
-  "full_run_count": 4,
+  "full_run_count": 6,
   "engineering_spare_count": 1,
   "planned_reserve": 2,
   "formal_request_cap": 5,
@@ -174,18 +174,30 @@
         "flow_relaxed": 0.0,
         "g1": false
       },
-      "kernel_ref": null,
+      "kernel_ref": "sailorren/biohub-xrl9-r9d950-20260927",
       "planned_kernel_ref": "sailorren/biohub-xrl9-r9d950-20260927",
-      "kernel_id": null,
-      "version": null,
-      "script_version_id": null,
+      "kernel_id": 136121301,
+      "version": 1,
+      "script_version_id": 353314948,
       "submission_id": null,
       "requested_at": null,
       "observed_at": null,
-      "status": "LOCAL_PREPARED",
+      "status": "RUN_ACCEPTED",
       "public_score": null,
       "direct_error": null,
-      "events": []
+      "events": [
+        {
+          "type": "SAVE_AND_RUN_ALL",
+          "at": "2026-09-27T14:04:58.288374+00:00",
+          "source_sha256": "beb14a421c6c28c006362cedb4cf30738b22e28df8621b009d279ec1e3dfc936",
+          "response": {
+            "ref": "/code/sailorren/biohub-xrl9-r9d950-20260927",
+            "url": "https://www.kaggle.com/code/sailorren/biohub-xrl9-r9d950-20260927",
+            "versionNumber": 1,
+            "kernelId": 136121301
+          }
+        }
+      ]
     },
     {
       "candidate_id": "R8D955",
@@ -197,23 +209,35 @@
         "flow_relaxed": 0.0,
         "g1": false
       },
-      "kernel_ref": null,
+      "kernel_ref": "sailorren/biohub-xrl9-r8d955-20260927",
       "planned_kernel_ref": "sailorren/biohub-xrl9-r8d955-20260927",
-      "kernel_id": null,
-      "version": null,
-      "script_version_id": null,
+      "kernel_id": 136121346,
+      "version": 1,
+      "script_version_id": 353315066,
       "submission_id": null,
       "requested_at": null,
       "observed_at": null,
-      "status": "LOCAL_PREPARED",
+      "status": "RUN_ACCEPTED",
       "public_score": null,
       "direct_error": null,
-      "events": []
+      "events": [
+        {
+          "type": "SAVE_AND_RUN_ALL",
+          "at": "2026-09-27T14:05:22.946502+00:00",
+          "source_sha256": "ef554190c31471fc117f37212ebf690252ed0bed7e93f7eb18b9e358ced2901d",
+          "response": {
+            "ref": "/code/sailorren/biohub-xrl9-r8d955-20260927",
+            "url": "https://www.kaggle.com/code/sailorren/biohub-xrl9-r8d955-20260927",
+            "versionNumber": 1,
+            "kernelId": 136121346
+          }
+        }
+      ]
     }
   ],
   "final_selection_changed": false,
-  "run_request_count": 4,
-  "accepted_full_run_count": 3,
+  "run_request_count": 6,
+  "accepted_full_run_count": 5,
   "maximum_batch_gpu_concurrency": 2,
   "terminal_recovered": false,
   "last_score_observed_at": "2026-09-27T13:17:49.203600+00:00",

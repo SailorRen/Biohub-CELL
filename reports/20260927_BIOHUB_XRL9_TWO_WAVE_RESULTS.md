@@ -1,6 +1,6 @@
 # XRL9 两波正式评分执行记录
 
-状态：WAVE1_SCORED；报告生成时间 2026-09-27T14:02:10.315444+00:00（UTC）。
+状态：WAVE1_SCORED；报告生成时间 2026-09-27T14:07:43.470356+00:00（UTC）。
 
 任务交付 commit：`ffd6a3b6036037c76372787b487f6d800454e8e4`；原文 SHA256：`aa66741012266c7e0c30d186f2ac2819206cfa567e4b0ae0591bad15c4908d6d`。
 
@@ -11,10 +11,10 @@ MEASURED 基线 XRL9：Public 0.955，submission 56587392，V1 / SV353050971。�
 | [R9D960](https://www.kaggle.com/code/sailorren/biohub-xrl9-r9d960-20260927) | 0.96 / 9.0 | 1 / 353188100 | 56599443 | SCORED | 0.955 | +0.0000 | 2026-09-27T05:55:57.582371+00:00 | 2026-09-27T13:17:49.203600+00:00 | 未返回错误 |
 | [R8D965](https://www.kaggle.com/code/sailorren/biohub-xrl9-r8d965-20260927) | 0.965 / 8.0 | 1 / 353188155 | 56599380 | SCORED | 0.955 | +0.0000 | 2026-09-27T05:53:06.171876+00:00 | 2026-09-27T13:17:49.203600+00:00 | 未返回错误 |
 | [R9D955](https://www.kaggle.com/code/sailorren/biohub-xrl9-r9d955-20260927) | 0.955 / 9.0 | 1 / 353192186 | 56599964 | SCORED | 0.956 | +0.0010 | 2026-09-27T06:08:32.999420+00:00 | 2026-09-27T13:17:49.203600+00:00 | 未返回错误 |
-| R9D950 | 0.95 / 9.0 | None / None | UNKNOWN | LOCAL_PREPARED | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN |
-| R8D955 | 0.955 / 8.0 | None / None | UNKNOWN | LOCAL_PREPARED | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN |
+| [R9D950](https://www.kaggle.com/code/sailorren/biohub-xrl9-r9d950-20260927) | 0.95 / 9.0 | 1 / 353314948 | UNKNOWN | RUN_ACCEPTED | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN |
+| [R8D955](https://www.kaggle.com/code/sailorren/biohub-xrl9-r8d955-20260927) | 0.955 / 8.0 | 1 / 353315066 | UNKNOWN | RUN_ACCEPTED | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN |
 
-预算：已发送 Save & Run 请求 4（含明确失败）；实际受理完整运行 3；工程备用 1/1；正式请求 3/5。第二波最多 2，首批正式结果齐备之前不启动。
+预算：已发送 Save & Run 请求 6（含明确失败）；实际受理完整运行 5；工程备用 1/1；正式请求 3/5。第二波最多 2，首批正式结果齐备之前不启动。
 
 三份候选已通过 27 项小型检查：完整 Notebook/13 代码单元、AST、允许差异、参数消费、实际 support 动态补丁、缓存先于 head。冻结源码 commit `00a930ffe17bbda213397a438bc3fd45a0ea4cc0`，32/32 文件远端逐字节回读通过。静态检查不等于运行通过或正式得分。
 

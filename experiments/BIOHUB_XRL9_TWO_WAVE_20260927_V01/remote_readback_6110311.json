@@ -1,0 +1,51 @@
+{
+  "commit": "61103113bf333fb7586488103d710c938e92a3d5",
+  "passed": 9,
+  "files": [
+    {
+      "path": "tasks/CODEX_20260927_BIOHUB_XRL9_WAVE2_SCORE_FIRST_V02.md",
+      "sha256": "f1554a2554a658add78d7995388204d50e715a54ca4b5713183f02b7447d92c5",
+      "blob": "8a949b6a2c569c568f2846ad9f8106938dbecaff"
+    },
+    {
+      "path": "reports/20260927_BIOHUB_XRL9_TWO_WAVE_RESULTS.md",
+      "sha256": "b1a863bd63dc038b3b0879d3dd33fadf864a0e53abb7219de16ede16ea1ffd66",
+      "blob": "82ea49645aea596a45a0cfb5ab6d3117f4617113"
+    },
+    {
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/platform_ledger.json",
+      "sha256": "988435332f51c8a73acdf9b4568417c6829156509dfb74970c05d9f24ec3acb0",
+      "blob": "5e3d460c1bfc74afa4ed393726a48eb2b970b6de"
+    },
+    {
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/R9D950/candidate.ipynb",
+      "sha256": "beb14a421c6c28c006362cedb4cf30738b22e28df8621b009d279ec1e3dfc936",
+      "blob": "da0064de1b54028f1b016a490cb7d8c7f95bb1f4"
+    },
+    {
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/R9D950/kernel-metadata.json",
+      "sha256": "4f8eba36e89047d45c69ed0be95329645c414c77dc1dbc6d39e2291b8541e531",
+      "blob": "1f022b2026d7ac9339dae8093b8b59f4f17b839a"
+    },
+    {
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/R9D950/source.diff",
+      "sha256": "f6fd2a8f60e6693082c251bd21db46d7221c717869d890ba64c76bf478b0cf31",
+      "blob": "a20299923e970b7926ca43f9c512e08608b614bd"
+    },
+    {
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/R8D955/candidate.ipynb",
+      "sha256": "ef554190c31471fc117f37212ebf690252ed0bed7e93f7eb18b9e358ced2901d",
+      "blob": "8f02d7981bfde85159544d5a7e54ad3db92f84e2"
+    },
+    {
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/R8D955/kernel-metadata.json",
+      "sha256": "7248f41b66f1b46cc8bf2c7f679b454cb48307f1dd85d1712885fa3e16e50187",
+      "blob": "38a0d8629373b16229a1bab9d4fe09bf0a55c605"
+    },
+    {
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/R8D955/source.diff",
+      "sha256": "cdd02081d7dafb06abb7765dcbfcfba5da29cb30253c6c2b34fa412c6b15f23d",
+      "blob": "cd01693acd4f485f223ca433b2a14cb4aa8d06fd"
+    }
+  ]
+}
