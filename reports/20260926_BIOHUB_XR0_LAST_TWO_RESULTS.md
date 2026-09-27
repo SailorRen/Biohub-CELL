@@ -52,7 +52,7 @@ CSV、模型和图未进入 GitHub。
 
 XRL9 四项版本均从实际保存 V1 的 Input 页逐项回读。XD960 主/副/DeepCenter 从实际 Input 页读回，head 以固定 /1 请求、官方数据集当前版本 1 及实际挂载哈希共同核对。两份三个主权重原哈希断言和 head 33913 字节、SHA256 625a0d9340f48193f2ec294fc2d81c5bb3c03087eab78ef0ae998a9c4c7da00c 均实际通过。head、低阈缓存、真实推理及参数消费均有运行日志和小型回执。
 
-告警为依赖弃用、Notebook 转换器转义和 Torch JIT 缓存目录告警；没有推理 Traceback，没有把缺失统计当作 0。只读查分曾发生一次已记录 SSL 连接中断，随后恢复；它不是候选正式错误，不消耗正式请求。
+告警为依赖弃用、Notebook 转换器转义和 Torch JIT 缓存目录告警；没有推理 Traceback，没有把缺失统计当作 0。只读查分有过 SSL 连接中断并已记录，随后恢复；它不是候选正式错误，不消耗正式请求。
 
 ## 调度、预算及证据
 
@@ -63,3 +63,5 @@ XRL9 四项版本均从实际保存 V1 的 Input 页逐项回读。XD960 主/副
 代码冻结 commit 2a574a0127abdfc46fb8fd33f3d0cc5778a77b3a：关键文件远端逐字节回读 26/26 一致。两份正式回执与验收同步 commit 2c82c57dd5c31140c3422dad6be54ed9be7a70ca：回读 8/8 一致。第一份正式结果同步 commit 3dabd9965575885d259791fb3e132b2b5998e4c8：回读 4/4 一致。最终终态内容 commit 及回读收口回执见本实验目录的 final_remote_readback.json。
 
 完整候选、source.diff、部署配置、必要检查、普通验收、正式请求及终态回执位于 experiments/BIOHUB_XR0_LAST_TWO_20260926_V01/。账本为 platform_ledger.json。冻结验收合同 tasks/CODEX_20260927_LAST_TWO_ACCEPTANCE.json 的 SHA256 为 59b160185e2c36acb882f94354acad88f3c57bad94927007e9c09b8ea66b358c；其 formal-review 为必需人工项，不能仅凭本报告把机器状态写成 COMPLETED_VERIFIED。
+
+收口回读：正式结果内容 commit 60c460356bd74805330e37b5a4c377cd29f1b50c 的关键文件远端逐字节核对 21/21 通过，见 final_remote_readback.json。独立冻结合同验收 report、terminal、git 三项 PASS，失败 0；formal-review 保留 HUMAN_REVIEW，因此框架状态为 NEEDS_HUMAN_REVIEW，见 final_verification.json。该状态不改变两个正式 COMPLETE / Public 的平台事实，也没有触发新的提交或最终选择操作。

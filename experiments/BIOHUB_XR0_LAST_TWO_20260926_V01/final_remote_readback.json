@@ -1,0 +1,157 @@
+{
+  "commit": "60c460356bd74805330e37b5a4c377cd29f1b50c",
+  "branch": "codex/xr0-last-two-20260926",
+  "repository": "SailorRen/Biohub-CELL",
+  "observed_at": "2026-09-27T02:11:45.692644+00:00",
+  "passed": 21,
+  "total": 21,
+  "files": [
+    {
+      "path": "tasks/CODEX_20260927_BIOHUB_XR0_LAST_TWO_SCORE_FIRST_V02.md",
+      "git_blob": "023be4ae377f998ca77799b7208e6185b178a094",
+      "bytes": 9571,
+      "sha256": "4dd53e2ccf96d9fd73d96fb944f1bb77d4b2c88cfea88f0e00cad6e406c1a084",
+      "byte_equal": true
+    },
+    {
+      "path": "reports/20260927_BIOHUB_LAST_TWO_TASK_DELIVERY.json",
+      "git_blob": "d9a381c90bfff5fc1ff2cdbe29d6827bfc1ecf4e",
+      "bytes": 1422,
+      "sha256": "762deb1a5680ac89cc800df9ec03306eb96c6fb825adcf2aef886577da45b638",
+      "byte_equal": true
+    },
+    {
+      "path": "reports/20260926_BIOHUB_XR0_LAST_TWO_RESULTS.md",
+      "git_blob": "fbc49d465b87a54ad92ec126b6ba3bab31c3a124",
+      "bytes": 6585,
+      "sha256": "2e92a2d1ebce6391ff6bed1431f50e1bcb7a1d073f5dd7fe76aea561985b7e82",
+      "byte_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_LAST_TWO_20260926_V01/platform_ledger.json",
+      "git_blob": "39c47e72795a3b20cc3cd29b7b2107e9c9986c40",
+      "bytes": 4161,
+      "sha256": "e5f45931c00946945532345ef1d0e09655ece8dd7fff22a473a713acfede0071",
+      "byte_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_LAST_TWO_20260926_V01/build_checks.json",
+      "git_blob": "2b0da4c1299c05a96c99916ea9619bc2bdbc63a0",
+      "bytes": 1400,
+      "sha256": "dd1c3097f065d4b08a442607c33db164b4d8d63a468f29ccba6f5b64566d661e",
+      "byte_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_LAST_TWO_20260926_V01/XD960/candidate.ipynb",
+      "git_blob": "cadcfb984083e0a4882d28ff846a2affd5ec023d",
+      "bytes": 267681,
+      "sha256": "fdad84485affe7b54f08bab6264bda29cba9b73495f902bec966f6c934708041",
+      "byte_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_LAST_TWO_20260926_V01/XD960/source.diff",
+      "git_blob": "dd5748b679e0b748b5e8c3f7a5db43025f78661a",
+      "bytes": 2892,
+      "sha256": "2fe02d4d72712ca515ae5a0f70fd9f58688f5415e9e1d5e3bd2cd53dc110e293",
+      "byte_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_LAST_TWO_20260926_V01/XD960/kernel-metadata.json",
+      "git_blob": "2d651b57dd5374a053de9a9b78cf3a4306fee53b",
+      "bytes": 852,
+      "sha256": "49815694429bfab6a7b4de91b18947171fc6efd27cd6d1840692fb194de7b547",
+      "byte_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_LAST_TWO_20260926_V01/XD960/output_check.json",
+      "git_blob": "75e30cd336ffe75d88c984f50d341cae4a42b8b6",
+      "bytes": 681,
+      "sha256": "e8742be8e673ca148c1b4d85293e5359945678700291a3cfd23f4ede377db1a2",
+      "byte_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_LAST_TWO_20260926_V01/XD960/deployment_check.json",
+      "git_blob": "a623c88f3fbf298dc784eef7471fdf0c6cd8d1d2",
+      "bytes": 2826,
+      "sha256": "a82ef8c1df2b09dc74598aa64fe465cb9edee5a8d3f26b7c2e4c6ef3db42378c",
+      "byte_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_LAST_TWO_20260926_V01/XD960/formal_request_receipt.json",
+      "git_blob": "c5a0d91fe10a1ceda978430e37ec559d51e610b3",
+      "bytes": 88,
+      "sha256": "6f43a21bff414ea5b916b32b8df0229e579836c00ec666f3b5ff86a43306b7f7",
+      "byte_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_LAST_TWO_20260926_V01/XD960/formal_last_observed.json",
+      "git_blob": "aa76cb6c6e14c3202838eef5031585ecbbe6e9fd",
+      "bytes": 513,
+      "sha256": "81d262afb16d1ec9346a005c0f5b92772d64cf170e2f5bb5a282e4790966dc97",
+      "byte_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_LAST_TWO_20260926_V01/XD960/formal_ui_readback.json",
+      "git_blob": "27d72805c597a9017fd64c27a09661751cd3a6f6",
+      "bytes": 395,
+      "sha256": "e174308f0e953ee9f55248d220ecd3089d52b0e89ce302e02a764163b622a0a4",
+      "byte_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_LAST_TWO_20260926_V01/XRL9/candidate.ipynb",
+      "git_blob": "59946b9611cf63aff2288a0e8bfdfa07b2d365ec",
+      "bytes": 267741,
+      "sha256": "6ed78164a099f0c8b3bb96c34114ff47b3c4e74b06860d276a894463a0ef146e",
+      "byte_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_LAST_TWO_20260926_V01/XRL9/source.diff",
+      "git_blob": "2ba67904918b7b16680416130844b6a7b4c24297",
+      "bytes": 2495,
+      "sha256": "a2f14f29f221355c94d6f65b21e9405564b5ed5785bcc7ee9957723863ed444e",
+      "byte_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_LAST_TWO_20260926_V01/XRL9/kernel-metadata.json",
+      "git_blob": "5e07780f2e6090c2791c18ff518d37d76d11a0c6",
+      "bytes": 850,
+      "sha256": "1ca74894427bcb612e31dee7e8265d91d5bbd5a7e3b035e2be87ff5a04c4e6a1",
+      "byte_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_LAST_TWO_20260926_V01/XRL9/output_check.json",
+      "git_blob": "d5adb980b0d11d2cbcde826fbd65ee4ded2a6e9f",
+      "bytes": 680,
+      "sha256": "9612eab7d11192aee2a77a1b663f15748e796dda6e977436c1159952c41f93c9",
+      "byte_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_LAST_TWO_20260926_V01/XRL9/deployment_check.json",
+      "git_blob": "a50425390339895d5d127a21883efd566c3fd341",
+      "bytes": 2921,
+      "sha256": "8ce4dbb53d0b9fb27a6f95db77c6234921a1afd7f45d45e73dce294f590e0467",
+      "byte_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_LAST_TWO_20260926_V01/XRL9/formal_request_receipt.json",
+      "git_blob": "36afae5b6a007a44114c1b39fe9ec8d926c1357b",
+      "bytes": 88,
+      "sha256": "7dc4882ef5981ae2c47bb5f3f1ef2202a1295b6a1b9f89259f3da491eaa68c79",
+      "byte_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_LAST_TWO_20260926_V01/XRL9/formal_last_observed.json",
+      "git_blob": "bf97716cb0c70f8f199dc1cb284f1a548f2fe813",
+      "bytes": 512,
+      "sha256": "3ce7f0879d9d413dfaef59433a288fb91b10bb298871e23f982bf156c4591999",
+      "byte_equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_XR0_LAST_TWO_20260926_V01/XRL9/formal_ui_readback.json",
+      "git_blob": "f1a04792b62d4f3e8051becce597a5cb10293ead",
+      "bytes": 394,
+      "sha256": "b5f5181d86530b47f4732f3b5a8e02be45cde825781ed313697b69aadaca0bfb",
+      "byte_equal": true
+    }
+  ]
+}
