@@ -1,0 +1,52 @@
+{
+  "task_id": "BIOHUB_XRL9_TWO_WAVE_20260927_V01",
+  "scope": "TASK_DELIVERY_ONLY",
+  "status": "TASK_SYNCED_KAGGLE_NOT_EXECUTED_BY_CHAT",
+  "repository": "SailorRen/Biohub-CELL",
+  "branch": "codex/xrl9-two-wave-20260927",
+  "base_commit": "0c50eda41f4cecf6b423b88f7100276c8cfb75e8",
+  "verified_task_commit": "cc5fe5e9da8175c4d22e41d123d566a687ef5ef1",
+  "task_path": "tasks/CODEX_20260927_BIOHUB_XRL9_TWO_WAVE_V01.md",
+  "task_bytes": 12836,
+  "task_sha256": "aa66741012266c7e0c30d186f2ac2819206cfa567e4b0ae0591bad15c4908d6d",
+  "verified_git_blob_sha1": "9933e4b76cbf907faf5f8c08876b4b1de4b89390",
+  "verification": "Fixed-commit GitHub fetch_file full request plus tail readback; remote blob SHA-1 equals locally computed Git blob SHA-1 over the complete UTF-8 task.",
+  "task_files_verified": "1/1",
+  "wave1": [
+    {
+      "candidate_id": "R9D960",
+      "det": 0.96,
+      "relaxed_um": 9.0
+    },
+    {
+      "candidate_id": "R8D965",
+      "det": 0.965,
+      "relaxed_um": 8.0
+    },
+    {
+      "candidate_id": "R9D955",
+      "det": 0.955,
+      "relaxed_um": 9.0
+    }
+  ],
+  "formal_request_cap_wave1": 3,
+  "formal_request_cap_wave2": 2,
+  "formal_request_cap_total": 5,
+  "wave2_gate": "All accepted wave1 submissions terminal; freeze next configuration from actual Public results before using reserved requests.",
+  "main_modified_by_this_delivery": false,
+  "candidate_construction_by_chat": 0,
+  "kaggle_runs_by_chat": 0,
+  "kaggle_submissions_by_chat": 0,
+  "codex_started_by_chat": false,
+  "actual_kaggle_existing_objects": "UNKNOWN; Codex must query platform and deduplicate before execution.",
+  "automation": {
+    "created": true,
+    "scope": "READ_ONLY_GITHUB_RECEIPT_CHECK",
+    "frequency": "HOURLY",
+    "max_occurrences": 48,
+    "launches_codex": false,
+    "submits_to_kaggle": false,
+    "requires_codex_to_sync_actual_receipts": true
+  },
+  "next_action": "Codex reads this task branch and executes the authorized two-wave score-driven batch; task delivery is not execution."
+}
