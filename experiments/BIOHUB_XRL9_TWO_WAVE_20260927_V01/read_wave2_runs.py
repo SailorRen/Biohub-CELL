@@ -17,5 +17,10 @@ with api.build_kaggle_client() as c:
   response=c.kernels.kernels_api_client.get_kernel_session_status(q);status=response.to_dict();status['status']=response.status.name;a.update(observed_at=datetime.now(timezone.utc).isoformat(),ordinary_status=status)
   if not a['submission_id']:a['status']='ORDINARY_'+status.get('status','UNKNOWN')
   (P/arm/'ordinary_readback.json').write_text(json.dumps({'at':a['observed_at'],'source_equal':equal,'metadata':m,'status':status},indent=2)+'\n');print(arm,status,'image',m.get('dockerImage'))
-l['stage']='WAVE2_ORDINARY_RUNNING' if not any(a.get('submission_id') for a in l['wave2']) else 'WAVE2_SCORE_PENDING'
+if any(a.get('submission_id') for a in l['wave2']):
+ l['stage']='WAVE2_SCORE_PENDING'
+elif all(a.get('ordinary_status',{}).get('status')=='QUEUED' for a in l['wave2']):
+ l['stage']='WAVE2_ORDINARY_QUEUED'
+else:
+ l['stage']='WAVE2_ORDINARY_AWAITING_VALIDATION'
 lp.write_text(json.dumps(l,indent=2)+'\n')
