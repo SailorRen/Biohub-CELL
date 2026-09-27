@@ -1,6 +1,6 @@
 {
   "task_id": "BIOHUB_XRL9_TWO_WAVE_20260927_V01",
-  "stage": "WAVE1_SCORED",
+  "stage": "WAVE2_ORDINARY_RUNNING",
   "formal_request_count": 3,
   "full_run_count": 6,
   "engineering_spare_count": 1,
@@ -181,8 +181,8 @@
       "script_version_id": 353314948,
       "submission_id": null,
       "requested_at": null,
-      "observed_at": null,
-      "status": "RUN_ACCEPTED",
+      "observed_at": "2026-09-27T14:16:38.900165+00:00",
+      "status": "ORDINARY_QUEUED",
       "public_score": null,
       "direct_error": null,
       "events": [
@@ -197,7 +197,10 @@
             "kernelId": 136121301
           }
         }
-      ]
+      ],
+      "ordinary_status": {
+        "status": "QUEUED"
+      }
     },
     {
       "candidate_id": "R8D955",
@@ -216,8 +219,8 @@
       "script_version_id": 353315066,
       "submission_id": null,
       "requested_at": null,
-      "observed_at": null,
-      "status": "RUN_ACCEPTED",
+      "observed_at": "2026-09-27T14:16:41.028363+00:00",
+      "status": "ORDINARY_QUEUED",
       "public_score": null,
       "direct_error": null,
       "events": [
@@ -232,7 +235,10 @@
             "kernelId": 136121346
           }
         }
-      ]
+      ],
+      "ordinary_status": {
+        "status": "QUEUED"
+      }
     }
   ],
   "final_selection_changed": false,
