@@ -1,0 +1,33 @@
+{
+  "at": "2026-09-27T05:30:52.502737+00:00",
+  "source_equal": true,
+  "metadata": {
+    "id": 136064891,
+    "ref": "sailorren/biohub-xrl9-r8d965-20260927",
+    "title": "biohub-xrl9-r8d965-20260927",
+    "author": "Sailor Ren",
+    "slug": "biohub-xrl9-r8d965-20260927",
+    "lastRunTime": "2026-09-24T05:30:51.185Z",
+    "language": "python",
+    "kernelType": "notebook",
+    "isPrivate": true,
+    "enableGpu": true,
+    "enableInternet": false,
+    "datasetDataSources": [
+      "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+      "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+      "pilkwang/biohub-tracking-support-pack-50ep-v1",
+      "anvithpothula/biohub-v1284-head-s075"
+    ],
+    "competitionDataSources": [
+      "biohub-cell-tracking-during-development"
+    ],
+    "enableTpu": false,
+    "currentVersionNumber": 1,
+    "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+    "machineShape": "NvidiaTeslaT4"
+  },
+  "status": {
+    "status": "RUNNING"
+  }
+}
