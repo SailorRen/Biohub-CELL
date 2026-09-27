@@ -1,0 +1,299 @@
+{
+  "content_commit": "2083818073e298145a0a5853d42d2fb1c71d6a2f",
+  "branch": "codex/public-update-20260927",
+  "observed_at": "2026-09-27T12:13:48.467752+08:00",
+  "passed": 40,
+  "failed": 0,
+  "files": [
+    {
+      "path": "reports/20260927_BIOHUB_PUBLIC_UPDATE_AND_RESULTS.md",
+      "bytes": 14307,
+      "sha256": "dbd882d3ac22c847a775b9190d73d4d870f87c31dee4db2636cb109faa3935e9",
+      "remote_blob": "b0c5475d915ea0f54010fa7b7b8aa3c08316c267",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/catalog_dateCreated.json",
+      "bytes": 19950,
+      "sha256": "8eee50af34b32fcb760bdb35cbad68763b0d51f11188192807a8c23789dcfe86",
+      "remote_blob": "2d40805e1031370d72de8e03f6d0f897500d6685",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/catalog_dateRun.json",
+      "bytes": 19830,
+      "sha256": "99c96e264a586eaf9a9ad65fa08e6f23c18e1722f46b3197c268fd0d17ef0349",
+      "remote_blob": "3a4ecadec8cfc0744ab0f47e01f892cac7b0d76e",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/catalog_scoreDescending.json",
+      "bytes": 20091,
+      "sha256": "9d634253d264e12a8b928a215f499a25bf7e52979084ec7513317d5ef2923e47",
+      "remote_blob": "f12f61f13206d39ad133d723ca948864a094e59c",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/collect.py",
+      "bytes": 1509,
+      "sha256": "dfaf6f127bdf35246bc2146144f0193034ffb162ed15c3b40ffa4381a10197de",
+      "remote_blob": "d8131cae61a910a7e3fd34a15b4cf6003dc769a2",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/coverage.json",
+      "bytes": 1326,
+      "sha256": "e2d11f8fb646c44f85b49e9c8bf742e95761d4d21b137a455f8aa753e8ef7c6c",
+      "remote_blob": "038b7148459f400a0cded2fc354d2aae390f607e",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/details.py",
+      "bytes": 1446,
+      "sha256": "a545818cd56dd5edf7a1196cdc68701f9dcc34406979dbde6f0c091772cacfb7",
+      "remote_blob": "1850c8409a78ea79e5e449de91e9ec89f1fe72a5",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/discussions/742169.json",
+      "bytes": 3180,
+      "sha256": "e33e0dda72a99426cb1ca9adff040fa08c426a6c26d6579950a9434c292bed14",
+      "remote_blob": "aa0eb358a9681d3e79ae867091d6d9579748e2dc",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/discussions/742266.json",
+      "bytes": 15046,
+      "sha256": "de8ba8b1a5100001d86cd95be24542b70c246cd8fe84214116da5a1c0240edb9",
+      "remote_blob": "f0de3d251175214791334e91bdb232b6cfc2ae44",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/discussions/742942.json",
+      "bytes": 7562,
+      "sha256": "cc10998904750b590210a9741b84d4dbfd6140ac723a58d8242def6c819a97f9",
+      "remote_blob": "5ed397b1c606d642914704fa3e91397a72be4371",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/discussions/743006.json",
+      "bytes": 10082,
+      "sha256": "a63a607f887d75e663572a7a28532df968d8194e0d57e3c7bf7379af9c2f9b94",
+      "remote_blob": "dcfd05f7dc7ba27590435375b17f3166af5e8733",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/discussions/743222.json",
+      "bytes": 7162,
+      "sha256": "b105a6ae65c7538faa60e07f0132d6a400f0fbaadc6a6c35fc90c668703989a2",
+      "remote_blob": "887c5ebafe5cd0efb1d79128b9b7d380687fb4a2",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/discussions/743765.json",
+      "bytes": 1155,
+      "sha256": "c74a1c1badf956d122817d2d0501b0ea3f1ea65b7139580b03a84097cd6e8ff7",
+      "remote_blob": "1a91dfd650ae50ad364732f24c4da186b403bf50",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/leaderboard.json",
+      "bytes": 29434,
+      "sha256": "18b79c7e4996acbb7b1427b38b7c169e6c16609f852085fb3d2c0a1acda42327",
+      "remote_blob": "f42999167ecd4f412681d3c81378d47408c71d91",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/leaderboard_page2.json",
+      "bytes": 29576,
+      "sha256": "7841a719074d4f2dabae4b50a09e2ba2c68ddbdae1394da3dd270e9d6ef878d2",
+      "remote_blob": "1df9ab35b8c5603274eefde6c33e88ca70965c4c",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/observation.json",
+      "bytes": 80,
+      "sha256": "6e3fe37e495197f26eaea54424fa1e2a1987eff44ee5dec2c5b233c62ce920d4",
+      "remote_blob": "d07149f5b948e1e9847e18bcf788511cc0e14bc5",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/platform_observations.json",
+      "bytes": 2143,
+      "sha256": "57fb8fc091a1c290be4a8b8008b9f34f96b4caa5d6bbcf428a91b30f6ba6eced",
+      "remote_blob": "cdaaf8da271b95112b6a6fc3ee2e34b81c59987b",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/source_checks.json",
+      "bytes": 17266,
+      "sha256": "4105c6954abf0b8f10fcb75f0fe7076f06fb426bd857ff40e803888dbaf52201",
+      "remote_blob": "4077d9f671202a623287f16e1a3df556dd33169d",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/source_manifest.json",
+      "bytes": 5899,
+      "sha256": "256475d79cdd8a2a5504d14e41beed05a5b632030bcc1d4a34c0ef9ce8302ea7",
+      "remote_blob": "c2103f16e06dd4d89dec4adbe1ee1de69a5f8147",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/sources/amanatar/optimized-biohub-max-score/metadata.json",
+      "bytes": 927,
+      "sha256": "1483ea6615a57d6e620f7bb0a20f85a42d61e19ee5fe6aabc867d5852d7d962e",
+      "remote_blob": "40fd6677e099bd3d6c6861e7d0530472577c9e8e",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/sources/amanatar/optimized-biohub-max-score/source.ipynb",
+      "bytes": 270362,
+      "sha256": "e6c3f729835b28ca61ec7634526fb9e798df43e43e40f5e1a0a794dcd8521c2e",
+      "remote_blob": "2f22e8559b2f22904c73184a2386b67de6347ac5",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/sources/amanatar/optimized-biohub-max-score/source.py",
+      "bytes": 252960,
+      "sha256": "fd213edc889112f19479d4c59ce84a56923df89c69f37ddd5e94e3f930cffeba",
+      "remote_blob": "d14caf39d9b8c823a382295c662d31d77b2a7e54",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/sources/amanatar/optimized-biohub-max-score/vs_20260926.diff",
+      "bytes": 87816,
+      "sha256": "3e49667653ebcd10ba7c89dee99e978838b0a9e021a3e5ad7119b2a7d80c93de",
+      "remote_blob": "1ed6c7bb4b49e574c1724c2c532f59a09a9af4a6",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/sources/amanatar/optimized-biohub-max-score/vs_x138.diff",
+      "bytes": 16271,
+      "sha256": "a638a391e9467a871050da3f06eda082b62dbfc736e25709f3334647ae34060a",
+      "remote_blob": "72a64eb70bf25325bb0f9c15e2d08361a213122f",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/sources/raunakdey07/biohub-harmonic-fusion-v3/metadata.json",
+      "bytes": 930,
+      "sha256": "4afc175a1666161c80b41495c95d8a0bdd13f11a2af707233ec03f96e3d7df49",
+      "remote_blob": "a2b30feb075dee22d7caad6d22218cca4d51ce2d",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/sources/raunakdey07/biohub-harmonic-fusion-v3/source.ipynb",
+      "bytes": 269607,
+      "sha256": "9ab32885574092ab46a8d90bfa96393332c6e5a6249d33c92a9051efbc9779ca",
+      "remote_blob": "aee8b59987a7e27a07f4e58a53e72620c384a115",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/sources/raunakdey07/biohub-harmonic-fusion-v3/source.py",
+      "bytes": 244132,
+      "sha256": "7f51ce19ea0f5d6240d15e3477a53bb837e3f5842e3c80f5ca46976c33ab168f",
+      "remote_blob": "fa1ed6f59d3c0e8daa9edd10fdef586753346973",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/sources/raunakdey07/biohub-harmonic-fusion-v3/vs_20260926.diff",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "remote_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/sources/raunakdey07/biohub-harmonic-fusion-v3/vs_x138.diff",
+      "bytes": 21616,
+      "sha256": "35cb887c3aad9e9f2bae139f22de5198ee8642dc86efbb50b170e6a633cf9c66",
+      "remote_blob": "a102d43c8c1c8a9f147349e71951f5d12fe8d798",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/sources/sarveshchhetri/robust-3d-cell-tracking/metadata.json",
+      "bytes": 720,
+      "sha256": "aaf1034674479cd89bdcce705c8248004314ebb6493022965046784add8aa48f",
+      "remote_blob": "b347189ad6ca06b8aa7346e16f3cb119f35ca09d",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/sources/sarveshchhetri/robust-3d-cell-tracking/source.ipynb",
+      "bytes": 25807,
+      "sha256": "7e62e45e2aa66dc21d3cde0b18ad80748b731dfd882ceb1eab0ae7a84bd85de8",
+      "remote_blob": "4d0cc4f05eb99b8c14a5865f5284a6e3c263a1bb",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/sources/sarveshchhetri/robust-3d-cell-tracking/source.py",
+      "bytes": 15935,
+      "sha256": "39e186068dfd70de54a39cdf829659f6bf8f066c80ffdfbac57a61bf5d6d1dc1",
+      "remote_blob": "5e06ddf708a6e5e5564af4e5e16ceab46496e797",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/sources/sarveshchhetri/robust-3d-cell-tracking/vs_x138.diff",
+      "bytes": 271826,
+      "sha256": "cd34e4f165307a9db308cfee680f925079ebe55aeac0ec05ce9e8478d9fea0d8",
+      "remote_blob": "fb32e4bf5bbbd0d9610a9df7b5a3792710b507a9",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/static_review.py",
+      "bytes": 1616,
+      "sha256": "669177499f9cb92805baf5978decd24cf79be32c5285c0df16234e708b86a998",
+      "remote_blob": "9d6072230efe87b69e6aa735128ff129b5d150a4",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/submission_56585147.json",
+      "bytes": 381,
+      "sha256": "2dd5f8f62f68f53a1c19b794fe1bbe1360c4593239561c476da2ff8f77cc1544",
+      "remote_blob": "64ac6e7393fc011098a74ccf34c36513542a83bd",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/submission_56587392.json",
+      "bytes": 380,
+      "sha256": "fd9efde7f28594336d4fbac8e30b4f800db15de06edab9bc9acd34f3fca20daa",
+      "remote_blob": "05c17b898a00d81e30b7dd744bd8bd3391c9db85",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/timeline.json",
+      "bytes": 552,
+      "sha256": "c9c1263f76e39611f7bad8437da6d1d64aa45e9a22f29c299778dad344c9ba62",
+      "remote_blob": "60acbd3647312c2e0407bbdfb26677c8010081f7",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/topics_active.json",
+      "bytes": 7002,
+      "sha256": "1522d668a36652e805a7ba135effd7bf467e1941f9317818b6a232f6826fe9df",
+      "remote_blob": "affff3fe8e2457e9f7845b180dc633e254edfc3e",
+      "byte_equal": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260927/topics_new.json",
+      "bytes": 6895,
+      "sha256": "38d438923777b64f288426ef7031ed23e6f5f2f4b55ad35d246de699edcb3e14",
+      "remote_blob": "40a57ddeb856be071f24c186feed8bb3ebab8a50",
+      "byte_equal": true
+    },
+    {
+      "path": "tasks/CODEX_20260927_PUBLIC_UPDATE_ACCEPTANCE.json",
+      "bytes": 1765,
+      "sha256": "61437822835489068360a76bfdf1504ffbdbdeb9cec34a52ce6baaaf9dc9ae5d",
+      "remote_blob": "d8d471b4f6b19395a96020b54027fefc3656dbb0",
+      "byte_equal": true
+    }
+  ],
+  "scope": "Authoritative GitHub Contents API fixed-commit byte comparison",
+  "verification": {
+    "contract_sha256": "61437822835489068360a76bfdf1504ffbdbdeb9cec34a52ce6baaaf9dc9ae5d",
+    "status": "NEEDS_HUMAN_REVIEW",
+    "automated_passed": 3,
+    "failed": 0,
+    "manual": 1,
+    "scope_commit": "2083818073e298145a0a5853d42d2fb1c71d6a2f",
+    "report": "verification.json"
+  }
+}
