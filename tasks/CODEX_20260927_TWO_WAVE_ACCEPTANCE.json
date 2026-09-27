@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_XRL9_TWO_WAVE_20260927_V01",
+  "goal": "按固定任务执行两批最多五候选并回收正式终态；无效/少用明确记录",
+  "scope": {
+    "in_scope": [
+      "任务 ffd6a3b 的首批3项及条件第二批最多2项；一次工程备用；Git小文件回执"
+    ],
+    "out_of_scope": [
+      "训练、Dataset写入、最终选择、其他账号、main、额外方案"
+    ]
+  },
+  "acceptance": [
+    {
+      "id": "task-bytes",
+      "type": "file",
+      "path": "tasks/CODEX_20260927_BIOHUB_XRL9_TWO_WAVE_V01.md",
+      "sha256": "aa66741012266c7e0c30d186f2ac2819206cfa567e4b0ae0591bad15c4908d6d"
+    },
+    {
+      "id": "ledger",
+      "type": "json",
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/platform_ledger.json",
+      "assertions": [
+        {
+          "pointer": "/stage",
+          "op": "equals",
+          "value": "SCORED_ALL"
+        }
+      ]
+    },
+    {
+      "id": "git",
+      "type": "git",
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true
+    },
+    {
+      "id": "formal-evidence",
+      "type": "manual",
+      "reason": "精确GPU/输入、合法输出、正式终态与第二批决策语义需复核",
+      "evidence_needed": [
+        "报告、运行验收、官方submission回执、预算账本"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "base_commit": "0c50eda41f4cecf6b423b88f7100276c8cfb75e8",
+  "source_sha256": "6ed78164a099f0c8b3bb96c34114ff47b3c4e74b06860d276a894463a0ef146e",
+  "cells": [
+    {
+      "cell": 1,
+      "bytes": 5400,
+      "sha256": "c83bf3a76f7a31a058732b76e4f62e85fe2f66e0929cb253adecda7f8f53b5db",
+      "definitions": [],
+      "AST": "PASS"
+    },
+    {
+      "cell": 2,
+      "bytes": 1330,
+      "sha256": "99198956a4c7725d85c6aab0d478368749824801716c6d39cf5bf915187ac500",
+      "definitions": [],
+      "AST": "PASS"
+    },
+    {
+      "cell": 3,
+      "bytes": 15679,
+      "sha256": "18d436971ad2de603a4d30dd6f8e6e68be8ef53fc15dee82b272ccd1e7137be5",
+      "definitions": [],
+      "AST": "PASS"
+    },
+    {
+      "cell": 4,
+      "bytes": 27027,
+      "sha256": "bb66c8563a3ae994f0eac6f63ea6989fa7de716aeeef75b8c157f96d84c22980",
+      "definitions": [
+        "module_missing",
+        "has_model_artifact",
+        "artifact_manifest",
+        "artifact_matches_target",
+        "candidate_roots_for_slug",
+        "find_artifacts_root",
+        "_has_package_file",
+        "find_offline_package_dirs",
+        "purge_imported_modules",
+        "polars_runtime_ready",
+        "packages_requiring_refresh",
+        "dependency_specs_for",
+        "import_failures",
+        "missing_names_from_failures",
+        "install_missing_dependencies",
+        "ensure_dependencies",
+        "remove_path",
+        "copy_or_extract_tree",
+        "link_or_copy_tree",
+        "materialize_inference_repo",
+        "_integrity_sha256_file",
+        "_find_secondary_artifact_root",
+        "_sha256_file",
+        "add",
+        "_walk_input_root"
+      ],
+      "AST": "PASS"
+    },
+    {
+      "cell": 5,
+      "bytes": 63871,
+      "sha256": "167eafa8306e56558cd2f700fec7d5630f54427acbd34ca38b3ddda4adcf9934",
+      "definitions": [
+        "list_test_stems",
+        "_visible_cuda_tokens",
+        "_prediction_dir_for_method",
+        "_wait_for_prediction_shards",
+        "_merge_prediction_shards"
+      ],
+      "AST": "PASS"
+    },
+    {
+      "cell": 6,
+      "bytes": 97697,
+      "sha256": "1c256f12c1c2c53e5aeb7389036c33a492a8922e2c74b161f945768539c90288",
+      "definitions": [
+        "_frame_cache_trim",
+        "_deadline_degrade",
+        "fallback_output_graph",
+        "graph_from_geff",
+        "edge_distance_um",
+        "point_distance_um",
+        "node_point",
+        "edge_sort_key",
+        "_next_node_id",
+        "read_test_frame",
+        "refine_synthetic_midpoint",
+        "_dc_pool_frame_xy",
+        "_dc_normalize_dynamic_range",
+        "_dc_manifest_weight_paths",
+        "_dc_checkpoint_candidates",
+        "load_deepcenter_veto_detector",
+        "_dc_cache_trim",
+        "deepcenter_heatmap_for_frame",
+        "deepcenter_score_point",
+        "deepcenter_accept_repair_point",
+        "_position_um",
+        "motion_relink_edges",
+        "close_single_frame_gaps",
+        "_single_successor_map",
+        "_single_predecessor_map",
+        "recover_strict_gap2",
+        "_gapfill_bump",
+        "load_low_detections",
+        "build_low_detection_pool",
+        "readmit_discarded_detections",
+        "fill_gaps_from_low_detections",
+        "add_safe_divisions_postlink",
+        "filter_short_track_components",
+        "linefit_smooth_output_graph",
+        "filter_output_graph",
+        "write_test_submission",
+        "learned_prob",
+        "_flow_predictor",
+        "assign_pass",
+        "_field_from",
+        "frame_local_spacing",
+        "pos_um",
+        "context_ok",
+        "chain_for",
+        "find",
+        "union",
+        "__init__",
+        "forward",
+        "__init__",
+        "forward",
+        "predict"
+      ],
+      "AST": "PASS"
+    },
+    {
+      "cell": 7,
+      "bytes": 7352,
+      "sha256": "c300805e0268602d76042dd271bcc3224fda6af2a52569e16bebc446701d66a5",
+      "definitions": [],
+      "AST": "PASS"
+    },
+    {
+      "cell": 8,
+      "bytes": 7754,
+      "sha256": "7400441b355cbe09311e9c638c44264e374ad448d9ab1020b9d5866746e84ee7",
+      "definitions": [
+        "_merge_validator_shards",
+        "_stem_has_gt_division"
+      ],
+      "AST": "PASS"
+    },
+    {
+      "cell": 9,
+      "bytes": 11193,
+      "sha256": "54ed30a2f73355f369c112057570e9dd6a37e7f5521a6baf9ccdf4a8fc4ba6f8",
+      "definitions": [
+        "match_nodes_bipartite",
+        "compute_edge_confusion",
+        "edge_jaccard",
+        "adjusted_jaccard",
+        "weakly_connected_components",
+        "compute_division_confusion",
+        "decompose_errors",
+        "_find_key_recursive",
+        "read_estimated_true_node_count",
+        "graph_to_plain",
+        "nodes_by_id_to_plain",
+        "score_sample",
+        "aggregate_official",
+        "find",
+        "union",
+        "lineage_descendants"
+      ],
+      "AST": "PASS"
+    },
+    {
+      "cell": 10,
+      "bytes": 6552,
+      "sha256": "3986eaba6600507225a7140c033c14ae039a4fa95b3602806b43a8f2f11d90a0",
+      "definitions": [
+        "pp_apply",
+        "pp_restore",
+        "score_validator_config"
+      ],
+      "AST": "PASS"
+    },
+    {
+      "cell": 11,
+      "bytes": 5847,
+      "sha256": "ece3664cf924f36f3b838bac34fa636e67a5c865e6bf21ab61ff086bd1f87dfb",
+      "definitions": [],
+      "AST": "PASS"
+    },
+    {
+      "cell": 12,
+      "bytes": 2004,
+      "sha256": "1b69f438acf6f21117acb50f1b42816a5da627c4dcec80b8e76372ef11793f15",
+      "definitions": [],
+      "AST": "PASS"
+    },
+    {
+      "cell": 13,
+      "bytes": 3613,
+      "sha256": "4d48c5dca6f11ec971532bf5765b6cda96dbabf019677cb894bafb6ab601b640",
+      "definitions": [],
+      "AST": "PASS"
+    }
+  ]
+}

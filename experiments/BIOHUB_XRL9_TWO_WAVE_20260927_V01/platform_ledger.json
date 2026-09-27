@@ -1,0 +1,82 @@
+{
+  "task_id": "BIOHUB_XRL9_TWO_WAVE_20260927_V01",
+  "stage": "PREPARED",
+  "formal_request_count": 0,
+  "full_run_count": 0,
+  "engineering_spare_count": 0,
+  "planned_reserve": 2,
+  "formal_request_cap": 5,
+  "wave1": [
+    {
+      "candidate_id": "R9D960",
+      "effective_config": {
+        "det": 0.96,
+        "relaxed_um": 9.0,
+        "readmit": 0.965,
+        "velocity": 0.5,
+        "flow_relaxed": 0.0,
+        "g1": false
+      },
+      "kernel_ref": null,
+      "planned_kernel_ref": "sailorren/biohub-xrl9-r9d960-20260927",
+      "kernel_id": null,
+      "version": null,
+      "script_version_id": null,
+      "submission_id": null,
+      "requested_at": null,
+      "observed_at": null,
+      "status": "LOCAL_PREPARED",
+      "public_score": null,
+      "direct_error": null,
+      "events": []
+    },
+    {
+      "candidate_id": "R8D965",
+      "effective_config": {
+        "det": 0.965,
+        "relaxed_um": 8.0,
+        "readmit": 0.965,
+        "velocity": 0.5,
+        "flow_relaxed": 0.0,
+        "g1": false
+      },
+      "kernel_ref": null,
+      "planned_kernel_ref": "sailorren/biohub-xrl9-r8d965-20260927",
+      "kernel_id": null,
+      "version": null,
+      "script_version_id": null,
+      "submission_id": null,
+      "requested_at": null,
+      "observed_at": null,
+      "status": "LOCAL_PREPARED",
+      "public_score": null,
+      "direct_error": null,
+      "events": []
+    },
+    {
+      "candidate_id": "R9D955",
+      "effective_config": {
+        "det": 0.955,
+        "relaxed_um": 9.0,
+        "readmit": 0.965,
+        "velocity": 0.5,
+        "flow_relaxed": 0.0,
+        "g1": false
+      },
+      "kernel_ref": null,
+      "planned_kernel_ref": "sailorren/biohub-xrl9-r9d955-20260927",
+      "kernel_id": null,
+      "version": null,
+      "script_version_id": null,
+      "submission_id": null,
+      "requested_at": null,
+      "observed_at": null,
+      "status": "LOCAL_PREPARED",
+      "public_score": null,
+      "direct_error": null,
+      "events": []
+    }
+  ],
+  "wave2": [],
+  "final_selection_changed": false
+}

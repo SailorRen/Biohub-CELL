@@ -1,0 +1,115 @@
+{
+  "passed": true,
+  "count": 27,
+  "checks": [
+    {
+      "id": "R9D960_13_code_cells",
+      "pass": true
+    },
+    {
+      "id": "R9D960_unchanged_cells",
+      "pass": true
+    },
+    {
+      "id": "R9D960_actual_config",
+      "pass": true
+    },
+    {
+      "id": "R9D960_support_original_hash",
+      "pass": true
+    },
+    {
+      "id": "R9D960_support_dynamic_patch",
+      "pass": true
+    },
+    {
+      "id": "R9D960_cache_before_head",
+      "pass": true
+    },
+    {
+      "id": "R9D960_no_patch_warning",
+      "pass": true
+    },
+    {
+      "id": "R8D965_13_code_cells",
+      "pass": true
+    },
+    {
+      "id": "R8D965_unchanged_cells",
+      "pass": true
+    },
+    {
+      "id": "R8D965_actual_config",
+      "pass": true
+    },
+    {
+      "id": "R8D965_support_original_hash",
+      "pass": true
+    },
+    {
+      "id": "R8D965_support_dynamic_patch",
+      "pass": true
+    },
+    {
+      "id": "R8D965_cache_before_head",
+      "pass": true
+    },
+    {
+      "id": "R8D965_no_patch_warning",
+      "pass": true
+    },
+    {
+      "id": "R9D955_13_code_cells",
+      "pass": true
+    },
+    {
+      "id": "R9D955_unchanged_cells",
+      "pass": true
+    },
+    {
+      "id": "R9D955_actual_config",
+      "pass": true
+    },
+    {
+      "id": "R9D955_support_original_hash",
+      "pass": true
+    },
+    {
+      "id": "R9D955_support_dynamic_patch",
+      "pass": true
+    },
+    {
+      "id": "R9D955_cache_before_head",
+      "pass": true
+    },
+    {
+      "id": "R9D955_no_patch_warning",
+      "pass": true
+    },
+    {
+      "id": "R9D960_only_allowed_diff",
+      "pass": true
+    },
+    {
+      "id": "R9D960_both_gate_paths",
+      "pass": true
+    },
+    {
+      "id": "R8D965_only_allowed_diff",
+      "pass": true
+    },
+    {
+      "id": "R8D965_both_gate_paths",
+      "pass": true
+    },
+    {
+      "id": "R9D955_only_allowed_diff",
+      "pass": true
+    },
+    {
+      "id": "R9D955_both_gate_paths",
+      "pass": true
+    }
+  ],
+  "scope": "No inference; static/config and actual support dynamic patch checks only"
+}
