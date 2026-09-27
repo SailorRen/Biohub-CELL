@@ -1,0 +1,66 @@
+{
+  "commit": "7403f19d4c4a4c26258248eb66ca9c968a713313",
+  "passed": 12,
+  "files": [
+    {
+      "path": "tasks/CODEX_20260927_BIOHUB_XRL9_WAVE2_SCORE_FIRST_V02.md",
+      "sha256": "f1554a2554a658add78d7995388204d50e715a54ca4b5713183f02b7447d92c5",
+      "blob": "8a949b6a2c569c568f2846ad9f8106938dbecaff"
+    },
+    {
+      "path": "reports/20260927_BIOHUB_XRL9_TWO_WAVE_RESULTS.md",
+      "sha256": "be5d6159149eac3de75525b6505eb98329fed00a6be307065faa398988984350",
+      "blob": "ba4b16d86038ff7af20b7b46b3bbd02597db54fe"
+    },
+    {
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/platform_ledger.json",
+      "sha256": "24d21c12191521cd24d5e913faf52f8b124dc0b8f6bd53214b074dbccfa758d8",
+      "blob": "17e1528a739638d8969ff636780dadccd05530fa"
+    },
+    {
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/R9D950/candidate.ipynb",
+      "sha256": "beb14a421c6c28c006362cedb4cf30738b22e28df8621b009d279ec1e3dfc936",
+      "blob": "da0064de1b54028f1b016a490cb7d8c7f95bb1f4"
+    },
+    {
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/R9D950/kernel-metadata.json",
+      "sha256": "4f8eba36e89047d45c69ed0be95329645c414c77dc1dbc6d39e2291b8541e531",
+      "blob": "1f022b2026d7ac9339dae8093b8b59f4f17b839a"
+    },
+    {
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/R9D950/source.diff",
+      "sha256": "f6fd2a8f60e6693082c251bd21db46d7221c717869d890ba64c76bf478b0cf31",
+      "blob": "a20299923e970b7926ca43f9c512e08608b614bd"
+    },
+    {
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/R8D955/candidate.ipynb",
+      "sha256": "ef554190c31471fc117f37212ebf690252ed0bed7e93f7eb18b9e358ced2901d",
+      "blob": "8f02d7981bfde85159544d5a7e54ad3db92f84e2"
+    },
+    {
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/R8D955/kernel-metadata.json",
+      "sha256": "7248f41b66f1b46cc8bf2c7f679b454cb48307f1dd85d1712885fa3e16e50187",
+      "blob": "38a0d8629373b16229a1bab9d4fe09bf0a55c605"
+    },
+    {
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/R8D955/source.diff",
+      "sha256": "cdd02081d7dafb06abb7765dcbfcfba5da29cb30253c6c2b34fa412c6b15f23d",
+      "blob": "cd01693acd4f485f223ca433b2a14cb4aa8d06fd"
+    },
+    {
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/wave2_delivery_verification.json",
+      "sha256": "606e80cb1ebe8a4eaf568a24da2c8c0b8f9416fdbf68c1e538e833d81f03fe2c",
+      "blob": "d2b39f5a22ccb7ac5da12a6415d4ca4d76cadd1e"
+    },
+    {
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/R9D950/run_request_receipt.json",
+      "sha256": "ffa7f0b8322bdcac373d6535a4b60a1c5c4de23fc1750b682fd70d2be2d8b06b",
+      "blob": "cfc48c13282f56b014d21e93e8b8d3950ac7ade1"
+    },
+    {
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/R8D955/run_request_receipt.json",
+      "sha256": "07b0cb2dc3dd5bb9ea21fb32ce4dfc658e16bef5ebcb9a4a570afbe7f47239d9",
+      "blob": "7e387dc3dda9116af4196c574a014da8de0e0954"
+    }
+  ]
+}
