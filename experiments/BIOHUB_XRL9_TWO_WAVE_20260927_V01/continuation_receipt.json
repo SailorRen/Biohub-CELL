@@ -1,0 +1,13 @@
+{
+  "observed_at": "2026-09-27T06:11:32.004201+00:00",
+  "requested_mode": "heartbeat every 15 minutes, same task, exact IDs, wave2 only after wave1 terminal",
+  "created": false,
+  "status": "AUTO_REVIEW_REJECTED",
+  "reason": "Persistent background scheduling authorization deemed insufficient; explicit user approval requested. No workaround or alternative scheduler started.",
+  "existing_formal_ids": [
+    56599443,
+    56599380,
+    56599964
+  ],
+  "second_wave_executed": false
+}
