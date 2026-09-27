@@ -12,6 +12,7 @@ assert a['ordinary_status']['status']=='COMPLETE'
 assert json.loads((P/arm/'deployment_check.json').read_text())['passed'] is True
 assert sum(any(e['type']=='FORMAL_SUBMISSION' for e in x['events']) for x in l['wave1'])<=3
 assert sum(any(e['type']=='FORMAL_SUBMISSION' for e in x['events']) for x in l['wave2'])<=2
+assert datetime.now(timezone.utc)<datetime(2026,9,29,23,59,tzinfo=timezone.utc)
 assert api.config_values.get('username')=='sailorren'
 with api.build_kaggle_client() as c:
  q=ApiListSubmissionsRequest();q.competition_name='biohub-cell-tracking-during-development';q.page=-1;q.page_size=100
