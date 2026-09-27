@@ -1,5 +1,5 @@
 {
-  "at": "2026-09-27T05:34:28.357973+00:00",
+  "at": "2026-09-27T05:53:26.611389+00:00",
   "source_equal": true,
   "metadata": {
     "id": 136064865,
@@ -7,12 +7,15 @@
     "title": "biohub-xrl9-r9d960-20260927",
     "author": "Sailor Ren",
     "slug": "biohub-xrl9-r9d960-20260927",
-    "lastRunTime": "2026-09-24T05:34:26.357Z",
+    "lastRunTime": "2026-09-24T05:53:24.921Z",
     "language": "python",
     "kernelType": "notebook",
     "isPrivate": true,
     "enableGpu": true,
     "enableInternet": false,
+    "categoryIds": [
+      "gpu"
+    ],
     "datasetDataSources": [
       "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
       "pilkwang/biohub-temporal-unet3d-seed314159-v1",
@@ -28,6 +31,6 @@
     "machineShape": "NvidiaTeslaT4"
   },
   "status": {
-    "status": "RUNNING"
+    "status": "COMPLETE"
   }
 }

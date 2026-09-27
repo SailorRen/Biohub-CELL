@@ -1,9 +1,9 @@
 {
   "task_id": "BIOHUB_XRL9_TWO_WAVE_20260927_V01",
-  "stage": "PREPARED",
-  "formal_request_count": 0,
-  "full_run_count": 3,
-  "engineering_spare_count": 0,
+  "stage": "WAVE1_SCORE_PENDING",
+  "formal_request_count": 1,
+  "full_run_count": 4,
+  "engineering_spare_count": 1,
   "planned_reserve": 2,
   "formal_request_cap": 5,
   "wave1": [
@@ -24,8 +24,8 @@
       "script_version_id": 353188100,
       "submission_id": null,
       "requested_at": null,
-      "observed_at": "2026-09-27T05:34:28.357973+00:00",
-      "status": "ORDINARY_RUNNING",
+      "observed_at": "2026-09-27T05:53:26.611389+00:00",
+      "status": "ORDINARY_COMPLETE",
       "public_score": null,
       "direct_error": null,
       "events": [
@@ -42,7 +42,7 @@
         }
       ],
       "ordinary_status": {
-        "status": "RUNNING"
+        "status": "COMPLETE"
       }
     },
     {
@@ -60,10 +60,10 @@
       "kernel_id": 136064891,
       "version": 1,
       "script_version_id": 353188155,
-      "submission_id": null,
-      "requested_at": null,
-      "observed_at": "2026-09-27T05:34:30.149977+00:00",
-      "status": "ORDINARY_RUNNING",
+      "submission_id": 56599380,
+      "requested_at": "2026-09-27T05:53:06.171876+00:00",
+      "observed_at": "2026-09-27T05:53:28.281379+00:00",
+      "status": "SCORE_PENDING",
       "public_score": null,
       "direct_error": null,
       "events": [
@@ -77,10 +77,20 @@
             "versionNumber": 1,
             "kernelId": 136064891
           }
+        },
+        {
+          "type": "FORMAL_SUBMISSION",
+          "at": "2026-09-27T05:53:06.171876+00:00",
+          "message": "BIOHUB_XRL9_TWO_WAVE_20260927_V01 R8D965 V1 SV353188155",
+          "version": 1,
+          "sv": 353188155,
+          "response": {
+            "ref": 56599380
+          }
         }
       ],
       "ordinary_status": {
-        "status": "RUNNING"
+        "status": "COMPLETE"
       }
     },
     {
@@ -93,15 +103,15 @@
         "flow_relaxed": 0.0,
         "g1": false
       },
-      "kernel_ref": null,
+      "kernel_ref": "sailorren/biohub-xrl9-r9d955-20260927",
       "planned_kernel_ref": "sailorren/biohub-xrl9-r9d955-20260927",
-      "kernel_id": null,
-      "version": null,
+      "kernel_id": 136064955,
+      "version": 1,
       "script_version_id": null,
       "submission_id": null,
       "requested_at": null,
-      "observed_at": null,
-      "status": "RUN_REQUEST_ERROR",
+      "observed_at": "2026-09-27T05:53:29.726253+00:00",
+      "status": "ORDINARY_RUNNING",
       "public_score": null,
       "direct_error": "Maximum batch GPU session count of 2 reached.",
       "events": [
@@ -112,13 +122,27 @@
           "response": {
             "error": "Maximum batch GPU session count of 2 reached."
           }
+        },
+        {
+          "type": "SAVE_AND_RUN_ALL",
+          "at": "2026-09-27T05:49:20.957549+00:00",
+          "source_sha256": "da53daf678724e920403350f4dde0e83b66163ef12d6a0b6efe28b58756c325c",
+          "response": {
+            "ref": "/code/sailorren/biohub-xrl9-r9d955-20260927",
+            "url": "https://www.kaggle.com/code/sailorren/biohub-xrl9-r9d955-20260927",
+            "versionNumber": 1,
+            "kernelId": 136064955
+          }
         }
-      ]
+      ],
+      "ordinary_status": {
+        "status": "RUNNING"
+      }
     }
   ],
   "wave2": [],
   "final_selection_changed": false,
-  "run_request_count": 3,
-  "accepted_full_run_count": 2,
+  "run_request_count": 4,
+  "accepted_full_run_count": 3,
   "maximum_batch_gpu_concurrency": 2
 }
