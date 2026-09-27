@@ -1,0 +1,560 @@
+[
+  {
+    "ref": "amanatar/optimized-biohub-max-score",
+    "notebook_sha256": "e6c3f729835b28ca61ec7634526fb9e798df43e43e40f5e1a0a794dcd8521c2e",
+    "code_cells": 13,
+    "effective_code_cells": 12,
+    "cells": [
+      {
+        "code_cell": 1,
+        "bytes": 5464,
+        "sha256": "f32a115b3f808271298dc52fc15c17a81381f957047bdff9168c6198b13d5581",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": []
+      },
+      {
+        "code_cell": 2,
+        "bytes": 1344,
+        "sha256": "465c15c9bea9d5c8981756ac4844f46c4648f10a30a08baea7802230d73aa7bf",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": []
+      },
+      {
+        "code_cell": 3,
+        "bytes": 15869,
+        "sha256": "f28cd05a1cb4edf7dfa5c40300642efa23b11c684d7569e54314f8290f8bd2cc",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": []
+      },
+      {
+        "code_cell": 4,
+        "bytes": 27026,
+        "sha256": "084015ad4fe1885afa04a130886af231f7cbaa9923d0509ccaaf5f558bcdc416",
+        "ast_parse": true,
+        "shell_or_magic_lines": [
+          "            != _support_expected_sha256[relative]"
+        ],
+        "definitions": [
+          "module_missing",
+          "has_model_artifact",
+          "artifact_manifest",
+          "artifact_matches_target",
+          "candidate_roots_for_slug",
+          "find_artifacts_root",
+          "_has_package_file",
+          "find_offline_package_dirs",
+          "purge_imported_modules",
+          "polars_runtime_ready",
+          "packages_requiring_refresh",
+          "dependency_specs_for",
+          "import_failures",
+          "missing_names_from_failures",
+          "install_missing_dependencies",
+          "ensure_dependencies",
+          "remove_path",
+          "copy_or_extract_tree",
+          "link_or_copy_tree",
+          "materialize_inference_repo",
+          "_integrity_sha256_file",
+          "_find_secondary_artifact_root",
+          "_sha256_file",
+          "add",
+          "_walk_input_root"
+        ]
+      },
+      {
+        "code_cell": 5,
+        "bytes": 64377,
+        "sha256": "af789905a607b93c6a1dd0263e03060b902b0b343522b917848dd48dcb2f2ad7",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": [
+          "list_test_stems",
+          "_visible_cuda_tokens",
+          "_prediction_dir_for_method",
+          "_wait_for_prediction_shards",
+          "_merge_prediction_shards"
+        ]
+      },
+      {
+        "code_cell": 6,
+        "bytes": 97855,
+        "sha256": "74b62f4de8c5792b14974a51cf8c82e5f864ae035f0dff4bfa3ba827681c7a6f",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": [
+          "_frame_cache_trim",
+          "_deadline_degrade",
+          "fallback_output_graph",
+          "graph_from_geff",
+          "edge_distance_um",
+          "point_distance_um",
+          "node_point",
+          "edge_sort_key",
+          "_next_node_id",
+          "read_test_frame",
+          "refine_synthetic_midpoint",
+          "_dc_pool_frame_xy",
+          "_dc_normalize_dynamic_range",
+          "_dc_manifest_weight_paths",
+          "_dc_checkpoint_candidates",
+          "load_deepcenter_veto_detector",
+          "_dc_cache_trim",
+          "deepcenter_heatmap_for_frame",
+          "deepcenter_score_point",
+          "deepcenter_accept_repair_point",
+          "_position_um",
+          "motion_relink_edges",
+          "close_single_frame_gaps",
+          "_single_successor_map",
+          "_single_predecessor_map",
+          "recover_strict_gap2",
+          "_gapfill_bump",
+          "load_low_detections",
+          "build_low_detection_pool",
+          "readmit_discarded_detections",
+          "fill_gaps_from_low_detections",
+          "add_safe_divisions_postlink",
+          "filter_short_track_components",
+          "linefit_smooth_output_graph",
+          "filter_output_graph",
+          "write_test_submission",
+          "_DCConvBlock3d",
+          "_DCDeepCenterUNet3D",
+          "learned_prob",
+          "_flow_predictor",
+          "assign_pass",
+          "_field_from",
+          "frame_local_spacing",
+          "pos_um",
+          "context_ok",
+          "chain_for",
+          "find",
+          "union",
+          "__init__",
+          "forward",
+          "__init__",
+          "forward",
+          "predict"
+        ]
+      },
+      {
+        "code_cell": 7,
+        "bytes": 7543,
+        "sha256": "2d55ebeadf0068f7176c58165665be52e4f2d1684fc7e22da586d08faf18c17d",
+        "ast_parse": true,
+        "shell_or_magic_lines": [
+          "            != _guard_node_time[_guard_source] + 1"
+        ],
+        "definitions": []
+      },
+      {
+        "code_cell": 8,
+        "bytes": 7745,
+        "sha256": "d088e539b1356839b27137a074c47038f3f860676dc4507bdbaa0e76fa844b6e",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": [
+          "_merge_validator_shards",
+          "_stem_has_gt_division"
+        ]
+      },
+      {
+        "code_cell": 9,
+        "bytes": 11185,
+        "sha256": "cfaee1fc63a36b46edea49131d3f8f79890a3d62d2c377d2a6b66b19090a4dc7",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": [
+          "match_nodes_bipartite",
+          "compute_edge_confusion",
+          "edge_jaccard",
+          "adjusted_jaccard",
+          "weakly_connected_components",
+          "compute_division_confusion",
+          "decompose_errors",
+          "_find_key_recursive",
+          "read_estimated_true_node_count",
+          "graph_to_plain",
+          "nodes_by_id_to_plain",
+          "score_sample",
+          "aggregate_official",
+          "find",
+          "union",
+          "lineage_descendants"
+        ]
+      },
+      {
+        "code_cell": 10,
+        "bytes": 6564,
+        "sha256": "e3df8c57e6664d533587c7330ee1386b4de46103631dfd18de568b11ee01acea",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": [
+          "pp_apply",
+          "pp_restore",
+          "score_validator_config"
+        ]
+      },
+      {
+        "code_cell": 11,
+        "bytes": 5850,
+        "sha256": "357dfa980c5f4dada1452723d23bc2bf38038ce7ae408670bb638a51e5829187",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": []
+      },
+      {
+        "code_cell": 12,
+        "bytes": 1994,
+        "sha256": "263b2cf07984fb210bf4fe739b40dbb8861ac5c96dd42ab12b79cc5a7d2b0674",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": []
+      },
+      {
+        "code_cell": 13,
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": []
+      }
+    ],
+    "status": "FULL_NOTEBOOK_SOURCE_STATIC_CHECKED",
+    "limitation": "All cells parsed; selected algorithm differences inspected. No downloaded code execution or dynamic patch validation."
+  },
+  {
+    "ref": "raunakdey07/biohub-harmonic-fusion-v3",
+    "notebook_sha256": "9ab32885574092ab46a8d90bfa96393332c6e5a6249d33c92a9051efbc9779ca",
+    "code_cells": 12,
+    "effective_code_cells": 12,
+    "cells": [
+      {
+        "code_cell": 1,
+        "bytes": 4589,
+        "sha256": "523266337532c34708d12cc62cbcdd2de5e10df1039b9c78ec26f131a4302a3e",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": []
+      },
+      {
+        "code_cell": 2,
+        "bytes": 1328,
+        "sha256": "3b4489c94c10f01a2264a95ae626777924d2e6d1d056d91551addc508df2b844",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": []
+      },
+      {
+        "code_cell": 3,
+        "bytes": 15679,
+        "sha256": "18d436971ad2de603a4d30dd6f8e6e68be8ef53fc15dee82b272ccd1e7137be5",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": []
+      },
+      {
+        "code_cell": 4,
+        "bytes": 26833,
+        "sha256": "6fec86e41c0ab835de75ce138c800edcb624f2e72e870dcac2d042f1f5648df5",
+        "ast_parse": true,
+        "shell_or_magic_lines": [
+          "            != _support_expected_sha256[relative]"
+        ],
+        "definitions": [
+          "module_missing",
+          "has_model_artifact",
+          "artifact_manifest",
+          "artifact_matches_target",
+          "candidate_roots_for_slug",
+          "find_artifacts_root",
+          "_has_package_file",
+          "find_offline_package_dirs",
+          "purge_imported_modules",
+          "polars_runtime_ready",
+          "packages_requiring_refresh",
+          "dependency_specs_for",
+          "import_failures",
+          "missing_names_from_failures",
+          "install_missing_dependencies",
+          "ensure_dependencies",
+          "remove_path",
+          "copy_or_extract_tree",
+          "link_or_copy_tree",
+          "materialize_inference_repo",
+          "_integrity_sha256_file",
+          "_find_secondary_artifact_root",
+          "_sha256_file",
+          "add",
+          "_walk_input_root"
+        ]
+      },
+      {
+        "code_cell": 5,
+        "bytes": 61714,
+        "sha256": "f6f6647657348c8a84e5674962d41c94bc2506c8148cd667757a20af2b6b8a85",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": [
+          "list_test_stems",
+          "_visible_cuda_tokens",
+          "_prediction_dir_for_method",
+          "_wait_for_prediction_shards",
+          "_merge_prediction_shards"
+        ]
+      },
+      {
+        "code_cell": 6,
+        "bytes": 93593,
+        "sha256": "aca6ef7b1be49f6307e6b35a7400e4cc068c85316bf14126cddaab2f06516464",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": [
+          "_frame_cache_trim",
+          "_deadline_degrade",
+          "fallback_output_graph",
+          "graph_from_geff",
+          "edge_distance_um",
+          "point_distance_um",
+          "node_point",
+          "edge_sort_key",
+          "_next_node_id",
+          "read_test_frame",
+          "refine_synthetic_midpoint",
+          "_dc_pool_frame_xy",
+          "_dc_normalize_dynamic_range",
+          "_dc_manifest_weight_paths",
+          "_dc_checkpoint_candidates",
+          "load_deepcenter_veto_detector",
+          "_dc_cache_trim",
+          "deepcenter_heatmap_for_frame",
+          "deepcenter_score_point",
+          "deepcenter_accept_repair_point",
+          "_position_um",
+          "motion_relink_edges",
+          "close_single_frame_gaps",
+          "_single_successor_map",
+          "_single_predecessor_map",
+          "recover_strict_gap2",
+          "_gapfill_bump",
+          "load_low_detections",
+          "build_low_detection_pool",
+          "readmit_discarded_detections",
+          "fill_gaps_from_low_detections",
+          "add_safe_divisions_postlink",
+          "filter_short_track_components",
+          "linefit_smooth_output_graph",
+          "filter_output_graph",
+          "write_test_submission",
+          "_DCConvBlock3d",
+          "_DCDeepCenterUNet3D",
+          "learned_prob",
+          "_flow_predictor",
+          "assign_pass",
+          "_field_from",
+          "frame_local_spacing",
+          "pos_um",
+          "context_ok",
+          "chain_for",
+          "find",
+          "union",
+          "__init__",
+          "forward",
+          "__init__",
+          "forward",
+          "predict"
+        ]
+      },
+      {
+        "code_cell": 7,
+        "bytes": 7351,
+        "sha256": "a6945647d913ebae852ea5302b87b67727376593e71f40c9372b5bf1dba5f2ce",
+        "ast_parse": true,
+        "shell_or_magic_lines": [
+          "        != 0.9",
+          "            != _guard_node_time[_guard_source] + 1"
+        ],
+        "definitions": []
+      },
+      {
+        "code_cell": 8,
+        "bytes": 7754,
+        "sha256": "7400441b355cbe09311e9c638c44264e374ad448d9ab1020b9d5866746e84ee7",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": [
+          "_merge_validator_shards",
+          "_stem_has_gt_division"
+        ]
+      },
+      {
+        "code_cell": 9,
+        "bytes": 11185,
+        "sha256": "cfaee1fc63a36b46edea49131d3f8f79890a3d62d2c377d2a6b66b19090a4dc7",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": [
+          "match_nodes_bipartite",
+          "compute_edge_confusion",
+          "edge_jaccard",
+          "adjusted_jaccard",
+          "weakly_connected_components",
+          "compute_division_confusion",
+          "decompose_errors",
+          "_find_key_recursive",
+          "read_estimated_true_node_count",
+          "graph_to_plain",
+          "nodes_by_id_to_plain",
+          "score_sample",
+          "aggregate_official",
+          "find",
+          "union",
+          "lineage_descendants"
+        ]
+      },
+      {
+        "code_cell": 10,
+        "bytes": 6267,
+        "sha256": "a5f76107fd1b13e5a94aaa99f9a5e5cfad963981160ef3bdd9f6183e0dfe8fcb",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": [
+          "pp_apply",
+          "pp_restore",
+          "score_validator_config"
+        ]
+      },
+      {
+        "code_cell": 11,
+        "bytes": 5763,
+        "sha256": "efdbd174a86c28b5cf471dec04c6fccffbb561ed325e54a7584df5d087199bdb",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": []
+      },
+      {
+        "code_cell": 12,
+        "bytes": 1944,
+        "sha256": "a4b98a619921f35a3b360173b353912ba74c3294fd813615c07bb68f7ca24ce1",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": []
+      }
+    ],
+    "status": "FULL_NOTEBOOK_SOURCE_STATIC_CHECKED",
+    "limitation": "All cells parsed; selected algorithm differences inspected. No downloaded code execution or dynamic patch validation."
+  },
+  {
+    "ref": "sarveshchhetri/robust-3d-cell-tracking",
+    "notebook_sha256": "7e62e45e2aa66dc21d3cde0b18ad80748b731dfd882ceb1eab0ae7a84bd85de8",
+    "code_cells": 10,
+    "effective_code_cells": 10,
+    "cells": [
+      {
+        "code_cell": 1,
+        "bytes": 127,
+        "sha256": "74a81adcba066fb4917d866ff08fd2a9d05b06063a817fb0d04e15401ce79a11",
+        "ast_parse": true,
+        "shell_or_magic_lines": [
+          "!pip install --no-index --find-links /kaggle/input/datasets/sarveshchhetri/zarr-offline-wheel/wheels/kaggle/working/wheels zarr"
+        ],
+        "definitions": []
+      },
+      {
+        "code_cell": 2,
+        "bytes": 518,
+        "sha256": "a1589d1c30117c89ec4d9be925e9dd43b97eb54da46188b2c9641a9ca2bdb0a8",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": []
+      },
+      {
+        "code_cell": 3,
+        "bytes": 2042,
+        "sha256": "594f449f991851dd463463b4a163797646ba97998a46b795f994111037c7697d",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": []
+      },
+      {
+        "code_cell": 4,
+        "bytes": 1829,
+        "sha256": "37eec3f870b078ca7f749bd66ab0b84d94797f9480c877324a943b3b16e7a9e4",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": [
+          "locate_competition_root",
+          "_movie_array",
+          "read_frame",
+          "num_frames",
+          "read_ground_truth"
+        ]
+      },
+      {
+        "code_cell": 5,
+        "bytes": 1642,
+        "sha256": "cee8eea2d70a9a73579bf9f0b88b2233b1c06559b4447183b9a3dc54ec3f4089",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": [
+          "_normalize_frame",
+          "detect_frame"
+        ]
+      },
+      {
+        "code_cell": 6,
+        "bytes": 1878,
+        "sha256": "4205236a0b162a921ffc35c40005f58e925666defeea6e14639b2561c96b762d",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": [
+          "link_frames"
+        ]
+      },
+      {
+        "code_cell": 7,
+        "bytes": 3000,
+        "sha256": "c6361827766753cb1ff85ef470f51157bd0eea1039b949c4b55a377d5efe41c3",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": [
+          "track_movie"
+        ]
+      },
+      {
+        "code_cell": 8,
+        "bytes": 3456,
+        "sha256": "12810e51c7ec7f0b61278ccb9b3fefa23e1c66eb07db404cd724d85b0613b20f",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": [
+          "_match_nodes_per_t",
+          "_score_edges_locally",
+          "score_movie_locally"
+        ]
+      },
+      {
+        "code_cell": 9,
+        "bytes": 689,
+        "sha256": "c9ba48f6879b06e1128de8b8d200b4b2c8f6a0050a0e2002030d7ba12e034cf4",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": []
+      },
+      {
+        "code_cell": 10,
+        "bytes": 646,
+        "sha256": "c18ec87fd69d8bb57ebf79518b2897517e7de59565bc46fdf941cfe825b0a933",
+        "ast_parse": true,
+        "shell_or_magic_lines": [],
+        "definitions": []
+      }
+    ],
+    "status": "FULL_NOTEBOOK_SOURCE_STATIC_CHECKED",
+    "limitation": "All cells parsed; selected algorithm differences inspected. No downloaded code execution or dynamic patch validation."
+  }
+]

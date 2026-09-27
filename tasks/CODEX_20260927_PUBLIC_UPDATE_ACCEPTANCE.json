@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_PUBLIC_UPDATE_20260927_V01",
+  "goal": "只读刷新公开区和本队最新成绩，形成有版本与来源边界的 GitHub 报告",
+  "scope": {
+    "in_scope": [
+      "当前排行榜；代码按分数与最近运行各前100项；讨论最新一页，至少3个正文；至少2个有价值 Notebook 完整源码静态检查；本队成绩；小型证据与报告同步"
+    ],
+    "out_of_scope": [
+      "Kaggle 写操作、运行、提交、训练、最终选择修改；穷尽公开区"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "acceptance": [
+    {
+      "id": "report",
+      "type": "file",
+      "path": "reports/20260927_BIOHUB_PUBLIC_UPDATE_AND_RESULTS.md",
+      "min_bytes": 1000,
+      "contains_all": [
+        "56585147",
+        "56587392",
+        "SOURCE_CODE_VERIFIED",
+        "UNKNOWN"
+      ]
+    },
+    {
+      "id": "coverage",
+      "type": "json",
+      "path": "research/PUBLIC_UPDATE_20260927/coverage.json",
+      "assertions": [
+        {
+          "pointer": "/minimum_scope_met",
+          "op": "equals",
+          "value": true
+        },
+        {
+          "pointer": "/platform_writes",
+          "op": "equals",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "remote",
+      "type": "git",
+      "require_commit": true,
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true,
+      "remote": "origin"
+    },
+    {
+      "id": "interpretation",
+      "type": "manual",
+      "reason": "来源与优化方向的语义判断需人工复核，自动检查不能证明收益",
+      "evidence_needed": [
+        "报告逐项来源、版本、原始小型证据及覆盖边界"
+      ]
+    }
+  ]
+}

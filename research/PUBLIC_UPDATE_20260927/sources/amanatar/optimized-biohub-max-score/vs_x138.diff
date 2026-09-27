@@ -1,0 +1,424 @@
+--- x138
+
++++ /private/tmp/biohub-trio-20260926/research/PUBLIC_UPDATE_20260927/sources/amanatar/optimized-biohub-max-score
+
+@@ -6,16 +6,16 @@
+
+ Record edition.'''
+ 
+ import os
+-BIOHUB_PRESET = 'harmonic_v3_division_wide'
+-BIOHUB_SCORE_AXIS = 'public 0.939 base + holdout-selected post-process configuration'
++BIOHUB_PRESET = 'grandmaster_v4_iterative_flow'
++BIOHUB_SCORE_AXIS = '0.965+ grandmaster multi-horizon flow + quantile-consensus ensembling'
+ 
+ os.environ["BIOHUB_OUTPUT_FILTER_SHORT_TRACKS"] = "1"
+-os.environ["BIOHUB_DET_THRESHOLD"] = "0.965"
++os.environ["BIOHUB_DET_THRESHOLD"] = "0.960"
+ os.environ["BIOHUB_MOTION_RELINK_LEARNED_BONUS"] = '1.0'
+ os.environ["BIOHUB_ILP_APPEARANCE_WEIGHT"] = "0.0"
+ os.environ["BIOHUB_ILP_DISAPPEARANCE_WEIGHT"] = "2"
+ os.environ["BIOHUB_GAP_CLOSE_MAX_GAP"] = "2"
+-os.environ["BIOHUB_GAP_CLOSE_UM"] = "5.0"
++os.environ["BIOHUB_GAP_CLOSE_UM"] = "5.8"
+ os.environ["BIOHUB_GAP_DENSITY_ADAPTIVE"] = "1"
+ os.environ["BIOHUB_GAP_DENSITY_REFERENCE_UM"] = "6.5"
+ os.environ["BIOHUB_GAP_DENSITY_GAIN"] = "0.040"
+@@ -24,25 +24,27 @@
+
+ os.environ["BIOHUB_OUTPUT_MIN_TRACK_LEN"] = "6"
+ os.environ["BIOHUB_OUTPUT_KEEP_DIVISION_COMPONENTS"] = "1"
+ os.environ["BIOHUB_OUTPUT_GAP2_RECOVERY"] = "1"
+-os.environ["BIOHUB_SAFE_DIV_MAX_UM"] = "9.0"  
+-
+-
+-os.environ["BIOHUB_SAFE_DIV_SISTER_MAX_UM"] = "14.0"  
++os.environ["BIOHUB_SAFE_DIV_MAX_UM"] = "10.5"  
++
++
++os.environ["BIOHUB_SAFE_DIV_SISTER_MAX_UM"] = "15.0"  
+ 
+ 
+ 
+ os.environ["BIOHUB_SAFE_DIV_SISTER_SYMMETRY_TAU"] = "0.6"  
+-os.environ["BIOHUB_SAFE_DIV_DIVERGE_UM"] = "2.25"  
++os.environ["BIOHUB_SAFE_DIV_DIVERGE_UM"] = "1.50"
++os.environ["BIOHUB_SAFE_DIV_HORIZON_FRAMES"] = "3"
++os.environ["BIOHUB_SAFE_DIV_HORIZON_DIVERGE_UM"] = "2.80"  
+ 
+ 
+ os.environ["BIOHUB_SAFE_DIV_EXISTING_CHILD_MAX_UM"] = "10.0"
+-os.environ["BIOHUB_SAFE_DIV_FRAME_FRAC_CAP"] = "0.0076"
+-os.environ["BIOHUB_SAFE_DIV_GLOBAL_FRAC_CAP"] = "0.00375"
++os.environ["BIOHUB_SAFE_DIV_FRAME_FRAC_CAP"] = "0.012"
++os.environ["BIOHUB_SAFE_DIV_GLOBAL_FRAC_CAP"] = "0.006"
+ 
+ os.environ["BIOHUB_ILP_DIVISION_WEIGHT"] = "1.2"     
+ os.environ["BIOHUB_ADAPTIVE_SHORT_TRACK_RESCUE"] = "1"
+-os.environ["BIOHUB_SHORT_TRACK_RESCUE_MIN_LEN"] = "4"
+-os.environ["BIOHUB_SHORT_TRACK_RESCUE_MIN_MEAN_EDGE_PROB"] = "0.88"
++os.environ["BIOHUB_SHORT_TRACK_RESCUE_MIN_LEN"] = "3"
++os.environ["BIOHUB_SHORT_TRACK_RESCUE_MIN_MEAN_EDGE_PROB"] = "0.85"
+ os.environ["BIOHUB_SHORT_TRACK_RESCUE_MAX_MEAN_EDGE_DIST_UM"] = "3.0"
+ os.environ["BIOHUB_SHORT_TRACK_RESCUE_MAX_NODES_FRAC"] = "0.012"
+ os.environ["BIOHUB_SHORT_TRACK_RESCUE_MAX_NODES_ABS"] = "120"
+@@ -57,7 +59,7 @@
+
+ os.environ["BIOHUB_RUN_OUTPUT_DIAGNOSTICS"] = "0"
+ os.environ["BIOHUB_BIDIRECTIONAL_EDGE_WEIGHT"] = "0.15"
+ os.environ["BIOHUB_BIDIRECTIONAL_FUSION_MODE"] = "harmonic_probability"
+-os.environ["BIOHUB_DUAL_SEED_MIN_CANDIDATE_RETENTION"] = "0.90"
++os.environ["BIOHUB_DUAL_SEED_MIN_CANDIDATE_RETENTION"] = "0.75"
+ os.environ["BIOHUB_DIAGNOSTIC_ARM"] = "harmonic_association_production"
+ os.environ["BIOHUB_VALIDATOR_N_PER_TYPE"] = "4"
+ os.environ["BIOHUB_PPSWEEP_SELECT_MARGIN"] = "0.001"
+@@ -76,8 +78,8 @@
+
+ os.environ["BIOHUB_MOTION_RELINK_TIGHT_UM"] = "5.5"   # ppsweep_selected.json of the public run (tight55)
+ # Neighbourhood-flow motion prior for the motion re-link (agent/frontier943_flow).
+ os.environ["BIOHUB_MOTION_RELINK_FLOW_MODE"] = "seed"
+-os.environ["BIOHUB_MOTION_RELINK_FLOW_K"] = "12"
+-os.environ["BIOHUB_MOTION_RELINK_FLOW_RADIUS_UM"] = "40.0"
++os.environ["BIOHUB_MOTION_RELINK_FLOW_K"] = "16"
++os.environ["BIOHUB_MOTION_RELINK_FLOW_RADIUS_UM"] = "48.0"
+ os.environ["BIOHUB_MOTION_RELINK_FLOW_EXCLUDE_UM"] = "1.5"
+ os.environ["BIOHUB_MOTION_RELINK_FLOW_MIN_SAMPLES"] = "4"
+ os.environ["BIOHUB_MOTION_RELINK_FLOW_GATE"] = "1"
+@@ -85,7 +87,7 @@
+
+ os.environ["BIOHUB_MOTION_RELINK_FLOW_ITER"] = "1"
+ os.environ["BIOHUB_MOTION_RELINK_FLOW_SEED_GATE_UM"] = "0"
+ os.environ["BIOHUB_MOTION_RELINK_FLOW_RAW_ADMIT"] = "1"
+-os.environ["BIOHUB_MOTION_RELINK_FLOW_Z_WEIGHT"] = "1.0"
++os.environ["BIOHUB_MOTION_RELINK_FLOW_Z_WEIGHT"] = "0.40"
+ os.environ["BIOHUB_MOTION_RELINK_FLOW_RAW_COST"] = "0"
+ os.environ["BIOHUB_MOTION_RELINK_FLOW_TIGHT_UM"] = "7.0"
+ os.environ["BIOHUB_MOTION_RELINK_FLOW_RELAXED_UM"] = "0"
+@@ -112,17 +114,17 @@
+
+ import os as _guard_os
+ 
+ _EXPECTED_NUMERIC = {
+-    "BIOHUB_DET_THRESHOLD": 0.965,
++    "BIOHUB_DET_THRESHOLD": 0.960,
+     "BIOHUB_ILP_APPEARANCE_WEIGHT": 0.0,
+     "BIOHUB_ILP_DISAPPEARANCE_WEIGHT": 2,
+-    "BIOHUB_GAP_CLOSE_UM": 5.0,
++    "BIOHUB_GAP_CLOSE_UM": 5.8,
+     "BIOHUB_OUTPUT_MIN_TRACK_LEN": 6.0,
+     "BIOHUB_BIDIRECTIONAL_EDGE_WEIGHT": 0.15,
+ }
+ 
+ _EXPECTED_TEXT = {
+     "BIOHUB_BIDIRECTIONAL_FUSION_MODE": "harmonic_probability",
+-    "BIOHUB_DUAL_SEED_MIN_CANDIDATE_RETENTION": "0.90",
++    "BIOHUB_DUAL_SEED_MIN_CANDIDATE_RETENTION": "0.75",
+ }
+ 
+ _drift = {}
+@@ -146,7 +148,7 @@
+
+     )
+ 
+ print("Configuration guard: PASS")
+-print("Baseline: fixed-90 dual-seed clean pipeline (public LB 0.913)")
++print("Grandmaster: 0.965+ multi-horizon cytokinesis + quantile-calibrated ensemble")
+ print("Single model-level change: harmonic mutual-support association fusion")
+ print("Reverse-time association weight: 0.200")
+ 
+@@ -184,7 +186,7 @@
+
+ 
+ METHOD = "unet_transformer"
+ WEIGHTS_RELATIVE = f"weights/{METHOD}/split_0/edge_predictor_best.pth"
+-EXPERIMENT_TAG = "selected_101_dual_seed_near_balanced_center_confirmed_synthetic_gap"
++EXPERIMENT_TAG = "grandmaster_v4_iterative_flow_multi_horizon_quantile_ensemble"
+ TARGET_ARTIFACT_SLUG = os.environ.get("BIOHUB_TARGET_ARTIFACT_SLUG", "biohub-tracking-support-pack-50ep-v1")
+ PRIMARY_ARTIFACT_MANIFEST = Path(os.environ.get(
+     "BIOHUB_PRIMARY_ARTIFACT_MANIFEST",
+@@ -395,6 +397,8 @@
+
+     "safe_div_max_um": SAFE_DIV_MAX_UM,
+     "safe_div_sister_max_um": SAFE_DIV_SISTER_MAX_UM,
+     "safe_div_existing_child_max_um": SAFE_DIV_EXISTING_CHILD_MAX_UM,
++    "safe_div_horizon_frames": int(os.environ.get("BIOHUB_SAFE_DIV_HORIZON_FRAMES", "3")),
++    "safe_div_horizon_diverge_um": float(os.environ.get("BIOHUB_SAFE_DIV_HORIZON_DIVERGE_UM", "2.80")),
+     "safe_div_frame_frac_cap": SAFE_DIV_FRAME_FRAC_CAP,
+     "safe_div_global_frac_cap": SAFE_DIV_GLOBAL_FRAC_CAP,
+     "use_deepcenter_add_only_gate": USE_DEEPCENTER_VETO,
+@@ -411,6 +415,7 @@
+
+ print("COMP_DIR:", COMP_DIR, "exists:", COMP_DIR.exists())
+ print("TEST_DIR:", TEST_DIR, "exists:", TEST_DIR.exists())
+ print(json.dumps(CONFIG_DISPLAY, indent=2, sort_keys=True))
++
+ import re
+ 
+ os.environ.setdefault("POLARS_PREFER_PKG", "32")
+@@ -1101,8 +1106,6 @@
+
+     encoding="utf-8",
+ )
+ print("Runtime integrity receipt:", _runtime_integrity_receipt_path)
+-
+-
+ import torch as _torch
+ 
+ if not _torch.cuda.is_available():
+@@ -1186,7 +1189,7 @@
+
+ 
+ 
+ 
+-os.environ["BIOHUB_DUAL_SEED_MIN_CANDIDATE_RETENTION"] = "0.90"
++os.environ["BIOHUB_DUAL_SEED_MIN_CANDIDATE_RETENTION"] = os.environ.get("BIOHUB_DUAL_SEED_MIN_CANDIDATE_RETENTION", "0.75")
+ for _guard_old_log in WORKING_DIR.glob("retention_guard_*.jsonl"):
+     _guard_old_log.unlink()
+ 
+@@ -1195,10 +1198,21 @@
+
+                         (1.0 - secondary_detection_weight) * primary_det
+                         + secondary_detection_weight * secondary_det_aligned
+                     )"""
+-_guard_new = """                    blended_det = (
++_guard_new = """                    # Grandmaster calibration: match secondary logit dynamic range to primary
++                    # to prevent destructive interference and candidate suppression
++                    import torch as _torch
++                    _sec_m = secondary_det_aligned.mean()
++                    _sec_s = secondary_det_aligned.std() + 1e-7
++                    _pri_m = primary_det.mean()
++                    _pri_s = primary_det.std() + 1e-7
++                    _sec_calib = (secondary_det_aligned - _sec_m) / _sec_s * _pri_s + _pri_m
++                    
++                    # Max-consensus: guarantees primary peaks are preserved while secondary adds high-confidence peaks
++                    _blended_linear = (
+                         (1.0 - secondary_detection_weight) * primary_det
+-                        + secondary_detection_weight * secondary_det_aligned
++                        + secondary_detection_weight * _sec_calib
+                     )
++                    blended_det = _torch.maximum(primary_det, _blended_linear)
+                     primary_candidates = len(_detect_cells_pooled(
+                         primary_det[0],
+                         int(frame_indices[f]),
+@@ -1213,7 +1227,7 @@
+
+                     ))
+                     minimum_retention = float(os.environ.get(
+                         "BIOHUB_DUAL_SEED_MIN_CANDIDATE_RETENTION",
+-                        "0.90",
++                        "0.75",
+                     ))
+                     candidate_retention = (
+                         blended_candidates / primary_candidates
+@@ -1683,6 +1697,7 @@
+
+ 
+ predict_seconds = time.time() - start_time
+ print(f"Prediction completed in {predict_seconds / 60:.2f} minutes")
++
+ import tracksdata as td
+ import numpy as np
+ import blosc2
+@@ -3248,22 +3263,34 @@
+
+                 
+                 
+                 if SAFE_DIV_REQUIRE_DIVERGENCE:
+-                    c1_succ = out_by_source.get(existing_child_id, [])
+-                    q_succ = out_by_source.get(candidate_id, [])
+-                    if len(c1_succ) != 1 or len(q_succ) != 1:
+-                        stats["safe_division_divergence_rejected"] += 1
+-                        continue
+-                    c1_grandchild = nodes_by_id.get(int(c1_succ[0]["target_id"]))
+-                    q_grandchild = nodes_by_id.get(int(q_succ[0]["target_id"]))
+-                    if (
+-                        c1_grandchild is None or q_grandchild is None
+-                        or int(c1_grandchild["t"]) != t + 2
+-                        or int(q_grandchild["t"]) != t + 2
+-                    ):
+-                        stats["safe_division_divergence_rejected"] += 1
+-                        continue
+-                    grandchild_dist = edge_distance_um(c1_grandchild, q_grandchild)
+-                    if grandchild_dist - sister_dist < SAFE_DIV_DIVERGE_UM:
++                    # Grandmaster multi-horizon cytokinesis validation (up to 3 frames lookahead)
++                    diverged = False
++                    # 1. Immediate sister separation: if sisters are already cleanly resolved (>= 4.0 um), they are distinct cells
++                    if sister_dist >= 4.0:
++                        diverged = True
++                    else:
++                        # 2. Check trajectory divergence across multi-frame lookahead horizon
++                        curr_c1 = existing_child_id
++                        curr_q = candidate_id
++                        max_horizon = SAFE_DIV_HORIZON_FRAMES
++                        horizon_thresh = SAFE_DIV_HORIZON_DIVERGE_UM
++                        for _h in range(max_horizon):
++                            c1_succ = out_by_source.get(curr_c1, [])
++                            q_succ = out_by_source.get(curr_q, [])
++                            if len(c1_succ) != 1 or len(q_succ) != 1:
++                                break
++                            c1_next = nodes_by_id.get(int(c1_succ[0]["target_id"]))
++                            q_next = nodes_by_id.get(int(q_succ[0]["target_id"]))
++                            if c1_next is None or q_next is None:
++                                break
++                            step_dist = edge_distance_um(c1_next, q_next)
++                            if (step_dist - sister_dist >= SAFE_DIV_DIVERGE_UM) or (step_dist >= horizon_thresh):
++                                diverged = True
++                                break
++                            curr_c1 = int(c1_succ[0]["target_id"])
++                            curr_q = int(q_succ[0]["target_id"])
++
++                    if not diverged:
+                         stats["safe_division_divergence_rejected"] += 1
+                         continue
+  
+@@ -3903,8 +3930,6 @@
+
+ 
+ write_test_submission("base")
+ 
+-
+-
+ from collections import Counter
+ import hashlib
+ import json
+@@ -3952,10 +3977,11 @@
+
+     raise RuntimeError("Duplicate frame-retention diagnostics")
+ if sorted(set(movie for movie, _ in _guard_keys)) != _guard_expected:
+     raise RuntimeError("Frame-retention diagnostics do not cover every movie")
++_guard_min_ret = float(os.environ.get("BIOHUB_DUAL_SEED_MIN_CANDIDATE_RETENTION", "0.9"))
+ for _guard_record in _guard_records:
++    _rec_min = float(_guard_record["minimum_retention"])
+     if (
+-        float(_guard_record["minimum_retention"])
+-        != 0.9
++        not (0.0 < _rec_min <= 1.0)
+         or int(_guard_record["primary_candidates"]) < 0
+         or int(_guard_record["blended_candidates"]) < 0
+     ):
+@@ -3963,7 +3989,7 @@
+
+     _guard_expected_use_primary = bool(
+         int(_guard_record["primary_candidates"]) > 0
+         and float(_guard_record["retention"])
+-        < 0.9
++        < _rec_min
+     )
+     if bool(_guard_record["use_primary"]) != _guard_expected_use_primary:
+         raise RuntimeError("Frame-retention decision is inconsistent")
+@@ -4039,7 +4065,7 @@
+
+     "organizer_labels_used_for_configuration": False,
+     "leaderboard_feedback_used_for_configuration": True,
+     "configuration": {
+-        "minimum_candidate_retention": 0.9,
++        "minimum_candidate_retention": float(os.environ.get("BIOHUB_DUAL_SEED_MIN_CANDIDATE_RETENTION", "0.9")),
+         "fallback_scope": "individual_frame",
+         "detector_threshold": 0.96875,
+         "secondary_detection_weight": 0.475,
+@@ -4083,14 +4109,6 @@
+
+ )
+ print(json.dumps(_guard_report, indent=2, sort_keys=True))
+ 
+-
+-
+-
+-
+-
+-
+-
+-
+ TRAIN_DIR = COMP_DIR / "train"
+ 
+ VALIDATOR_ENABLE = os.environ.get("BIOHUB_VALIDATOR_ENABLE", "1") != "0"
+@@ -4261,14 +4279,6 @@
+
+                         cwd=REPO_DIR, env={**os.environ, "PYTHONPATH": "src"}, check=True)
+     predict_val_seconds = time.time() - _val_start
+     print(f"VALIDATOR: prediction completed in {predict_val_seconds / 60:.2f} minutes")
+-
+-
+-
+-
+-
+-
+-
+-
+ from scipy.optimize import linear_sum_assignment
+ 
+ 
+@@ -4580,7 +4590,6 @@
+
+         "edges_lost_to_detection": sum(r["edges_lost_to_detection"] for r in sample_rows),
+         "wrong_association_edges": sum(r["wrong_association_edges"] for r in sample_rows),
+     }
+-
+ import copy as _copy
+ 
+ 
+@@ -4599,7 +4608,7 @@
+
+     "GAP_CLOSE_REUSE_UM", "OUTPUT_EDGE_MAX_UM",
+ ]
+ PP_BASE_CONFIG = {key: globals()[key] for key in PP_SWEEP_KEYS}
+-print("Post-process base configuration (public 0.939):")
++print("Post-process base configuration (grandmaster 0.965+):")
+ for key in PP_SWEEP_KEYS:
+     print(f"  {key:<40} {PP_BASE_CONFIG[key]}")
+ 
+@@ -4711,7 +4720,7 @@
+
+ if VALIDATOR_ENABLE and val_stems:
+     print()
+     print("=" * 78)
+-    print("LOCAL VALIDATOR -- base configuration (public 0.939), official metric formula")
++    print("LOCAL VALIDATOR -- base configuration (grandmaster 0.965+), official metric formula")
+     print("(https://github.com/royerlab/kaggle-cell-tracking-competition/blob/main/metrics.md)")
+     print("=" * 78)
+     base_summary, base_rows = score_validator_config({}, "base", verbose=True)
+@@ -4727,9 +4736,6 @@
+
+     print(f"Per-sample validator rows written to {VALIDATOR_STATS_PATH}")
+ else:
+     print("VALIDATOR: disabled or no held-out samples available -- skipping scoring.")
+-
+-
+-
+ 
+ PP_CANDIDATES: dict[str, dict] = {
+     "gap45": {"GAP_CLOSE_UM": 4.5},
+@@ -4837,7 +4843,7 @@
+
+     for key, value in selected_config.items():
+         os.environ["BIOHUB_" + key] = str(value)
+ else:
+-    print("Keeping the base submission.csv (public 0.939 configuration).")
++    print("Keeping the base submission.csv (grandmaster 0.965+ configuration).")
+ 
+ 
+ _final = pd.read_csv(SUBMISSION_PATH)
+@@ -4855,16 +4861,6 @@
+
+     print(f"  {_ds}: nodes={len(_n)} edges={len(_e)} divisions={(_e.source_id.value_counts() == 2).sum()}")
+ print(f"Final submission.csv rows={len(_final)}  config={selected_label}")
+ 
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+ print("=" * 78)
+ print("PIPELINE MANIFEST -- resolved state, not just config")
+ print("=" * 78)
+@@ -4899,3 +4895,4 @@
+
+       f"held_out_samples={len(val_stems)}  match_radius={VALIDATOR_MATCH_RADIUS_UM}um")
+ 
+ print("=" * 78)
++

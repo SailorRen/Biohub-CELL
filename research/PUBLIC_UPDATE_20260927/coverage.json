@@ -1,0 +1,41 @@
+{
+  "observed_start": "2026-09-27T12:04:30.077315+08:00",
+  "observed_end": "2026-09-27T12:10:14.980379+08:00",
+  "minimum_scope_met": true,
+  "code_catalogs": {
+    "scoreDescending": 100,
+    "dateRun": 100,
+    "dateCreated": 100
+  },
+  "unique_refs": 162,
+  "new_refs_vs_previous_snapshot": [],
+  "updated_refs_vs_previous_snapshot": [
+    "sarveshchhetri/robust-3d-cell-tracking",
+    "amanatar/optimized-biohub-max-score"
+  ],
+  "leaderboard_rows": 400,
+  "discussion_catalogs": {
+    "new": 20,
+    "active": 20
+  },
+  "discussion_bodies": {
+    "742169": 6,
+    "742266": 15,
+    "742942": 7,
+    "743006": 4,
+    "743222": 1,
+    "743765": 2
+  },
+  "full_notebooks_statically_checked": 3,
+  "effective_code_cells": 34,
+  "platform_writes": 0,
+  "model_execution": 0,
+  "limitations": [
+    "Bounded catalog sample, not every public notebook or all 121 discussions.",
+    "Public scores for two latest team submissions refreshed via official API; earlier four scores are archived receipts.",
+    "Aman V6 Public absent on page; submission identity/status UNKNOWN.",
+    "Static AST checks do not establish runtime semantics; dynamic patch code was not executed.",
+    "Discussion attachment images and linked external repositories not independently reviewed.",
+    "No new CV or hidden-test component analysis."
+  ]
+}

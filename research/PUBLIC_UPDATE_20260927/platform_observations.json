@@ -1,0 +1,81 @@
+{
+  "observed_at": "2026-09-27T12:10:14.980379+08:00",
+  "source": "Kaggle live UI via cua_repl and official SDK",
+  "leaderboard_url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/leaderboard",
+  "team": {
+    "name": "Sailor Ren",
+    "rank": 225,
+    "public": "0.955",
+    "entries": 56,
+    "total_teams_ui": 3941,
+    "members": [
+      "sailorren",
+      "dongdongjiaqi"
+    ]
+  },
+  "thresholds": {
+    "10": "0.969",
+    "17": "0.966",
+    "50": "0.962",
+    "75": "0.959",
+    "100": "0.957",
+    "150": "0.956",
+    "200": "0.955"
+  },
+  "public_private_fraction": [
+    29,
+    71
+  ],
+  "final_deadline_shanghai": "2026-09-30T07:59:00+08:00",
+  "public_versions": [
+    {
+      "ref": "amanatar/optimized-biohub-max-score",
+      "version": 6,
+      "sv": 353147685,
+      "ordinary_status": "successful with repair fallbacks",
+      "runtime_seconds": 1001,
+      "public": null,
+      "public_status": "UNKNOWN",
+      "best_score": "0.953",
+      "best_version": 4,
+      "best_sv": 352554580,
+      "repair_error": "NameError: name 'SAFE_DIV_HORIZON_FRAMES' is not defined",
+      "affected_visible_datasets": 4,
+      "visible_division_parents": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "source_sha256": "e6c3f729835b28ca61ec7634526fb9e798df43e43e40f5e1a0a794dcd8521c2e"
+    },
+    {
+      "ref": "sarveshchhetri/robust-3d-cell-tracking",
+      "version": 8,
+      "sv": 352988018,
+      "public": "0.429",
+      "best_score": "0.432",
+      "best_version": 7,
+      "best_sv": 351910842,
+      "runtime": "19m43s",
+      "private_dataset_visible": true
+    },
+    {
+      "ref": "raunakdey07/biohub-harmonic-fusion-v3",
+      "version": 5,
+      "sv": 352639153,
+      "public": "0.953",
+      "runtime": "16m48s GPU T4x2",
+      "code_unchanged_since_previous_snapshot": true
+    }
+  ],
+  "new_deadline_discussion": {
+    "topic": 743765,
+    "reply_id": 3528942,
+    "reply_author": "Satwik / p4rallax",
+    "reply_badge": "192nd in this Competition",
+    "host_badge_seen": false,
+    "classification": "COMMUNITY_REPORT",
+    "not_official_deadline_policy": true
+  }
+}
