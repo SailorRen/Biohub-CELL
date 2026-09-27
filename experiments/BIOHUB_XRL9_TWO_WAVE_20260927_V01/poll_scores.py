@@ -21,7 +21,7 @@ with api.build_kaggle_client() as c:
 aa=l['wave1']+l['wave2']
 if all(a.get('status')=='SCORED' for a in aa):l['stage']='WAVE1_SCORED' if not l.get('wave2_decision_complete') else 'SCORED_ALL'
 elif all(a.get('status') in ['SCORED','FORMAL_ERROR'] for a in aa):l['stage']='PARTIAL_BLOCKED'
-elif all(a.get('submission_id') for a in aa):l['stage']='WAVE2_SCORE_PENDING' if l['wave2'] else 'WAVE1_SCORE_PENDING'
+elif any(a.get('submission_id') for a in aa):l['stage']='WAVE2_SCORE_PENDING' if l['wave2'] else 'WAVE1_SCORE_PENDING'
 else:l['stage']='PREPARED'
 l['terminal_recovered']=all(a.get('status') in ['SCORED','FORMAL_ERROR'] for a in aa)
 l['last_score_observed_at']=now;lp.write_text(json.dumps(l,indent=2)+'\n')

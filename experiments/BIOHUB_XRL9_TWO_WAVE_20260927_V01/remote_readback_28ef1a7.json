@@ -1,0 +1,36 @@
+{
+  "commit": "28ef1a7",
+  "passed": 6,
+  "files": [
+    {
+      "path": "tasks/CODEX_20260927_BIOHUB_XRL9_TWO_WAVE_V01.md",
+      "sha256": "aa66741012266c7e0c30d186f2ac2819206cfa567e4b0ae0591bad15c4908d6d",
+      "blob": "9933e4b76cbf907faf5f8c08876b4b1de4b89390"
+    },
+    {
+      "path": "reports/20260927_BIOHUB_XRL9_TWO_WAVE_RESULTS.md",
+      "sha256": "442ec005ab80f38f1dee0b56d08cb134196ca6b7f454d50797c8552c2f7ba03e",
+      "blob": "0381b547b87c41504295613a96d46680a886b4d2"
+    },
+    {
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/platform_ledger.json",
+      "sha256": "bcf11edf3e21f0f6252d9374a2cce01be3e08634e932fa9d9f41b77fe7ef50b7",
+      "blob": "e67750bb54078dc2e24dc6664b188cc5d47597e4"
+    },
+    {
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/R9D960/candidate.ipynb",
+      "sha256": "e1f213ab5d1a55666ac472fac0a4c94dccc9ecbdd333f1a7f7f35b63e642f0d3",
+      "blob": "ee5af7aa7a17a9989ddecdac97c9b2227b6420d6"
+    },
+    {
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/R8D965/candidate.ipynb",
+      "sha256": "76d168e512f28f63ed82c72e2a31421e84758ea38abab1758d7bc514f26067f1",
+      "blob": "f821cce2e4427353988083470f13292b235d2b69"
+    },
+    {
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/R9D955/candidate.ipynb",
+      "sha256": "da53daf678724e920403350f4dde0e83b66163ef12d6a0b6efe28b58756c325c",
+      "blob": "c456bee508f44992d76c00f9292b0abc321f0bad"
+    }
+  ]
+}
