@@ -1,0 +1,32 @@
+{
+  "at": "2026-09-27T06:07:16.222856+00:00",
+  "version": 1,
+  "sv": 353192186,
+  "files": [
+    {
+      "name": "ppsweep_selected.json",
+      "bytes": 116,
+      "sha256": "c81bc2cc976ef4ce4c0963eaa3bed051a36ea9be20d70b985d1768c3fefddd17"
+    },
+    {
+      "name": "run_stats.csv",
+      "bytes": 3882,
+      "sha256": "28a95d2ed9de66abc37b7b5eec84a01cb4f0054f7484d947cdebbe875eedbdf4"
+    },
+    {
+      "name": "submission.csv",
+      "bytes": 12442367,
+      "sha256": "434497259bba4c02b5c4f3486578380a25ef6eb9ce3698b8d247c65152c8548a"
+    },
+    {
+      "name": "two_wave_receipt.json",
+      "bytes": 15034,
+      "sha256": "3827e899fec1eb0c015dd09ff544db7a5c4011d0eded36e2a12df1b9c56d104f"
+    },
+    {
+      "name": "biohub-xrl9-r9d955-20260927.log",
+      "bytes": 286186,
+      "sha256": "30a52511c3e3eb94914ad439ca224a92079356d0d4b5ae5a9b98d5a47f2c247b"
+    }
+  ]
+}

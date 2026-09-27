@@ -1,0 +1,35 @@
+{
+  "arm": "R9D955",
+  "status": "PASS",
+  "csv_rows": 238980,
+  "csv_sha256": "434497259bba4c02b5c4f3486578380a25ef6eb9ce3698b8d247c65152c8548a",
+  "graphs": {
+    "44b6_0113de3b": {
+      "nodes": 25778,
+      "edges": 25026
+    },
+    "44b6_0b24845f": {
+      "nodes": 19621,
+      "edges": 18376
+    },
+    "6bba_05b6850b": {
+      "nodes": 6217,
+      "edges": 6018
+    },
+    "6bba_05db0fb1": {
+      "nodes": 70010,
+      "edges": 67934
+    }
+  },
+  "relaxed_calls": {
+    "flow": 792,
+    "no_flow": 0
+  },
+  "det": 0.955,
+  "relaxed": 9.0,
+  "repair_fallback": 0,
+  "deadline_degraded": 0,
+  "gate_candidates": null,
+  "gate_finite_scores": null,
+  "gate_rejected": null
+}
