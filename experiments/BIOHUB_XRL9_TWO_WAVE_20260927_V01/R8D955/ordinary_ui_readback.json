@@ -1,0 +1,14 @@
+{
+  "observed_at": "2026-09-27T17:21:27.373057+00:00",
+  "source": "Kaggle refreshed notebook Logs tab via browser",
+  "url": "https://www.kaggle.com/code/sailorren/biohub-xrl9-r8d955-20260927",
+  "edit_link": "https://www.kaggle.com/code/sailorren/biohub-xrl9-r8d955-20260927/edit/run/353315066",
+  "version": 1,
+  "script_version_id": 353315066,
+  "raw_status": "Running for 316.8s",
+  "accelerator": "GPU T4 x2",
+  "log_cuda": "CUDA device: Tesla T4",
+  "output": "0 B",
+  "ordinary_complete": false,
+  "api_read_error": "SSL UNEXPECTED_EOF_WHILE_READING at IntrospectToken; two read-only attempts failed; no mutation"
+}
