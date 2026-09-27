@@ -1,7 +1,7 @@
 {
   "task_id": "BIOHUB_XRL9_TWO_WAVE_20260927_V01",
-  "stage": "WAVE1_SCORE_PENDING",
-  "formal_request_count": 1,
+  "stage": "PREPARED",
+  "formal_request_count": 2,
   "full_run_count": 4,
   "engineering_spare_count": 1,
   "planned_reserve": 2,
@@ -22,10 +22,10 @@
       "kernel_id": 136064865,
       "version": 1,
       "script_version_id": 353188100,
-      "submission_id": null,
-      "requested_at": null,
-      "observed_at": "2026-09-27T05:53:26.611389+00:00",
-      "status": "ORDINARY_COMPLETE",
+      "submission_id": 56599443,
+      "requested_at": "2026-09-27T05:55:57.582371+00:00",
+      "observed_at": "2026-09-27T05:56:22.971348+00:00",
+      "status": "SCORE_PENDING",
       "public_score": null,
       "direct_error": null,
       "events": [
@@ -39,11 +39,22 @@
             "versionNumber": 1,
             "kernelId": 136064865
           }
+        },
+        {
+          "type": "FORMAL_SUBMISSION",
+          "at": "2026-09-27T05:55:57.582371+00:00",
+          "message": "BIOHUB_XRL9_TWO_WAVE_20260927_V01 R9D960 V1 SV353188100",
+          "version": 1,
+          "sv": 353188100,
+          "response": {
+            "ref": 56599443
+          }
         }
       ],
       "ordinary_status": {
         "status": "COMPLETE"
-      }
+      },
+      "formal_status": "SubmissionStatus.PENDING"
     },
     {
       "candidate_id": "R8D965",
@@ -62,7 +73,7 @@
       "script_version_id": 353188155,
       "submission_id": 56599380,
       "requested_at": "2026-09-27T05:53:06.171876+00:00",
-      "observed_at": "2026-09-27T05:53:28.281379+00:00",
+      "observed_at": "2026-09-27T05:56:22.971348+00:00",
       "status": "SCORE_PENDING",
       "public_score": null,
       "direct_error": null,
@@ -91,7 +102,8 @@
       ],
       "ordinary_status": {
         "status": "COMPLETE"
-      }
+      },
+      "formal_status": "SubmissionStatus.PENDING"
     },
     {
       "candidate_id": "R9D955",
@@ -107,13 +119,13 @@
       "planned_kernel_ref": "sailorren/biohub-xrl9-r9d955-20260927",
       "kernel_id": 136064955,
       "version": 1,
-      "script_version_id": null,
+      "script_version_id": 353192186,
       "submission_id": null,
       "requested_at": null,
       "observed_at": "2026-09-27T05:53:29.726253+00:00",
       "status": "ORDINARY_RUNNING",
       "public_score": null,
-      "direct_error": "Maximum batch GPU session count of 2 reached.",
+      "direct_error": null,
       "events": [
         {
           "type": "SAVE_AND_RUN_ALL",
@@ -144,5 +156,7 @@
   "final_selection_changed": false,
   "run_request_count": 4,
   "accepted_full_run_count": 3,
-  "maximum_batch_gpu_concurrency": 2
+  "maximum_batch_gpu_concurrency": 2,
+  "terminal_recovered": false,
+  "last_score_observed_at": "2026-09-27T05:56:22.971348+00:00"
 }
