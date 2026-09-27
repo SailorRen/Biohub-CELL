@@ -1,5 +1,5 @@
 {
-  "at": "2026-09-27T17:04:27.863419+00:00",
+  "at": "2026-09-27T17:34:31.332085+00:00",
   "source_equal": true,
   "metadata": {
     "id": 136121346,
@@ -7,7 +7,7 @@
     "title": "biohub-xrl9-r8d955-20260927",
     "author": "Sailor Ren",
     "slug": "biohub-xrl9-r8d955-20260927",
-    "lastRunTime": "2026-09-24T17:04:26.811Z",
+    "lastRunTime": "2026-09-24T17:34:29.435Z",
     "language": "python",
     "kernelType": "notebook",
     "isPrivate": true,
@@ -28,6 +28,6 @@
     "machineShape": "NvidiaTeslaT4"
   },
   "status": {
-    "status": "QUEUED"
+    "status": "RUNNING"
   }
 }

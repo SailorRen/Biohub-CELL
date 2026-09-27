@@ -181,7 +181,7 @@
       "script_version_id": 353314948,
       "submission_id": null,
       "requested_at": null,
-      "observed_at": "2026-09-27T17:21:27.373057+00:00",
+      "observed_at": "2026-09-27T17:34:27.835029+00:00",
       "status": "ORDINARY_RUNNING",
       "public_score": null,
       "direct_error": null,
@@ -199,8 +199,7 @@
         }
       ],
       "ordinary_status": {
-        "status": "RUNNING",
-        "source": "ordinary_ui_readback.json"
+        "status": "RUNNING"
       },
       "last_api_status": {
         "status": "QUEUED"
@@ -224,7 +223,7 @@
       "script_version_id": 353315066,
       "submission_id": null,
       "requested_at": null,
-      "observed_at": "2026-09-27T17:21:27.373057+00:00",
+      "observed_at": "2026-09-27T17:34:31.332085+00:00",
       "status": "ORDINARY_RUNNING",
       "public_score": null,
       "direct_error": null,
@@ -242,8 +241,7 @@
         }
       ],
       "ordinary_status": {
-        "status": "RUNNING",
-        "source": "ordinary_ui_readback.json"
+        "status": "RUNNING"
       },
       "last_api_status": {
         "status": "QUEUED"

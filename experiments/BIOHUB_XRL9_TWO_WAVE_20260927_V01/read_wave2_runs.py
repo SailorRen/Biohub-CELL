@@ -21,6 +21,8 @@ if any(a.get('submission_id') for a in l['wave2']):
  l['stage']='WAVE2_SCORE_PENDING'
 elif all(a.get('ordinary_status',{}).get('status')=='QUEUED' for a in l['wave2']):
  l['stage']='WAVE2_ORDINARY_QUEUED'
+elif any(a.get('ordinary_status',{}).get('status')=='RUNNING' for a in l['wave2']):
+ l['stage']='WAVE2_ORDINARY_RUNNING'
 else:
  l['stage']='WAVE2_ORDINARY_AWAITING_VALIDATION'
 lp.write_text(json.dumps(l,indent=2)+'\n')
