@@ -1,0 +1,15 @@
+{
+  "scope": "bounded evening report; not entire two-wave execution",
+  "checks": {
+    "nine_exact_completed_receipts": true,
+    "wave1_all_scored": true,
+    "no_new_requests": true,
+    "catalog_300_unique162": true,
+    "six_discussions_35_unchanged": true,
+    "three_prior_sources_identical": true,
+    "new_source_current_score_unknown": true,
+    "no_kaggle_writes": true
+  },
+  "passed": 8,
+  "remote_readback": "performed after commit"
+}

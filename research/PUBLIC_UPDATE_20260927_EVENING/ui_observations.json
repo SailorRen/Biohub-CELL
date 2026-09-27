@@ -1,0 +1,26 @@
+{
+  "observed_at": "2026-09-27T21:25:44.771498+08:00",
+  "source": "Kaggle browser visible DOM",
+  "leaderboard_url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/leaderboard",
+  "team": "Sailor Ren",
+  "rank": 191,
+  "total_teams": 3953,
+  "score": "0.956",
+  "entries": 59,
+  "public_fraction_approx": 0.29,
+  "private_fraction_approx": 0.71,
+  "updated_notebook": {
+    "ref": "mtoshidesu/testbiohub-lf-dctta020-sectta1",
+    "version": 6,
+    "sv": 353197576,
+    "ordinary_run": "successful",
+    "runtime": "2h 13m 10s",
+    "gpu": "T4 x2",
+    "current_public": "UNKNOWN",
+    "best_score_badge": {
+      "version": 2,
+      "sv": 349927817,
+      "score": "0.947"
+    }
+  }
+}

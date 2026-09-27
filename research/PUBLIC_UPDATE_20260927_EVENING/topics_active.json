@@ -1,0 +1,188 @@
+{
+  "topics": [
+    {
+      "id": 714101,
+      "title": "How to get started + Competition's Official Discord",
+      "topicUrl": "/competitions/biohub-cell-tracking-during-development/discussion/714101",
+      "commentCount": 8,
+      "votes": 27,
+      "postDate": "2026-06-25T16:44:43.592Z",
+      "lastCommentPostDate": "2026-08-31T11:28:33.580Z",
+      "isSticky": true
+    },
+    {
+      "id": 716062,
+      "title": "Welcome to the Biohub - Cell Tracking During Development Challenge",
+      "topicUrl": "/competitions/biohub-cell-tracking-during-development/discussion/716062",
+      "commentCount": 6,
+      "votes": 78,
+      "postDate": "2026-06-30T02:16:18.647Z",
+      "lastCommentPostDate": "2026-08-02T13:27:44.360Z",
+      "isSticky": true
+    },
+    {
+      "id": 738833,
+      "title": "Cell Tracking In-Person Workshop",
+      "topicUrl": "/competitions/biohub-cell-tracking-during-development/discussion/738833",
+      "commentCount": 4,
+      "votes": 12,
+      "postDate": "2026-09-01T21:31:36.602Z",
+      "lastCommentPostDate": "2026-09-27T02:37:08.370Z",
+      "isSticky": true
+    },
+    {
+      "id": 738217,
+      "title": "focus3d : one of the best 3d cell segmentation",
+      "topicUrl": "/competitions/biohub-cell-tracking-during-development/discussion/738217",
+      "commentCount": 50,
+      "votes": 40,
+      "postDate": "2026-08-30T15:24:33.907Z",
+      "lastCommentPostDate": "2026-09-20T08:19:52.773Z"
+    },
+    {
+      "id": 732103,
+      "title": "[Free Dataset] 18.5 GB of fully-labelled synthetic 3D microscopy — 165k labelled divisions",
+      "topicUrl": "/competitions/biohub-cell-tracking-during-development/discussion/732103",
+      "commentCount": 20,
+      "votes": 65,
+      "postDate": "2026-08-01T21:12:10.502Z",
+      "lastCommentPostDate": "2026-09-15T21:33:48.683Z"
+    },
+    {
+      "id": 723655,
+      "title": "simple idea:\"Your Affinity Field Tells Your Fate\"",
+      "topicUrl": "/competitions/biohub-cell-tracking-during-development/discussion/723655",
+      "commentCount": 19,
+      "votes": 25,
+      "postDate": "2026-07-07T17:37:36.697Z",
+      "lastCommentPostDate": "2026-07-18T01:17:36.170Z"
+    },
+    {
+      "id": 724283,
+      "title": "beware of jumps in ground truth track",
+      "topicUrl": "/competitions/biohub-cell-tracking-during-development/discussion/724283",
+      "commentCount": 16,
+      "votes": 42,
+      "postDate": "2026-07-10T12:47:17.916Z",
+      "lastCommentPostDate": "2026-08-08T09:50:56.223Z"
+    },
+    {
+      "id": 742266,
+      "title": "Stuck at 0.947 after ten board tests. What I measured, and one question about the relink stage ",
+      "topicUrl": "/competitions/biohub-cell-tracking-during-development/discussion/742266",
+      "commentCount": 14,
+      "votes": 6,
+      "postDate": "2026-09-21T03:39:55.992Z",
+      "lastCommentPostDate": "2026-09-26T20:15:54.696Z"
+    },
+    {
+      "id": 727154,
+      "title": "Division Metric exploit and patch. ",
+      "topicUrl": "/competitions/biohub-cell-tracking-during-development/discussion/727154",
+      "commentCount": 14,
+      "votes": 36,
+      "postDate": "2026-07-18T00:20:53.126Z",
+      "lastCommentPostDate": "2026-07-24T07:37:33.870Z"
+    },
+    {
+      "id": 740145,
+      "title": "magic or overfitting?",
+      "topicUrl": "/competitions/biohub-cell-tracking-during-development/discussion/740145",
+      "commentCount": 12,
+      "votes": 14,
+      "postDate": "2026-09-08T13:31:27.038Z",
+      "lastCommentPostDate": "2026-09-15T23:07:23.423Z"
+    },
+    {
+      "id": 735352,
+      "title": "Possible big leaderboard shakeup",
+      "topicUrl": "/competitions/biohub-cell-tracking-during-development/discussion/735352",
+      "commentCount": 12,
+      "votes": 10,
+      "postDate": "2026-08-15T08:25:14.079Z",
+      "lastCommentPostDate": "2026-09-17T15:49:49.820Z"
+    },
+    {
+      "id": 739220,
+      "title": "How can i reach a 0.9 score at least?",
+      "topicUrl": "/competitions/biohub-cell-tracking-during-development/discussion/739220",
+      "commentCount": 11,
+      "votes": 1,
+      "postDate": "2026-09-03T07:55:55.088Z",
+      "lastCommentPostDate": "2026-09-05T17:16:43.436Z"
+    },
+    {
+      "id": 726924,
+      "title": "Cotracker and other methods",
+      "topicUrl": "/competitions/biohub-cell-tracking-during-development/discussion/726924",
+      "commentCount": 11,
+      "votes": 6,
+      "postDate": "2026-07-17T04:31:05.227Z",
+      "lastCommentPostDate": "2026-08-06T17:10:21.830Z"
+    },
+    {
+      "id": 723921,
+      "title": "Ground truth for all 4 test clips appears to be present in the train split",
+      "topicUrl": "/competitions/biohub-cell-tracking-during-development/discussion/723921",
+      "commentCount": 10,
+      "votes": -9,
+      "postDate": "2026-07-08T19:09:04.758Z",
+      "lastCommentPostDate": "2026-07-12T15:07:04.890Z"
+    },
+    {
+      "id": 737543,
+      "title": "what layer did ur gains actually come from",
+      "topicUrl": "/competitions/biohub-cell-tracking-during-development/discussion/737543",
+      "commentCount": 9,
+      "votes": 5,
+      "postDate": "2026-08-26T03:10:45.084Z",
+      "lastCommentPostDate": "2026-08-31T08:05:40.273Z"
+    },
+    {
+      "id": 740573,
+      "title": "Division steps are not long steps: base rates from the training labels",
+      "topicUrl": "/competitions/biohub-cell-tracking-during-development/discussion/740573",
+      "commentCount": 8,
+      "votes": 1,
+      "postDate": "2026-09-10T03:33:29.586Z",
+      "lastCommentPostDate": "2026-09-10T15:25:28.813Z"
+    },
+    {
+      "id": 724130,
+      "title": "Share a custom napari visualizer",
+      "topicUrl": "/competitions/biohub-cell-tracking-during-development/discussion/724130",
+      "commentCount": 8,
+      "votes": 48,
+      "postDate": "2026-07-09T16:55:59.111Z",
+      "lastCommentPostDate": "2026-08-24T15:51:58.506Z"
+    },
+    {
+      "id": 741868,
+      "title": "Agents collaborate with Humans - Dashboards are key!",
+      "topicUrl": "/competitions/biohub-cell-tracking-during-development/discussion/741868",
+      "commentCount": 7,
+      "votes": 19,
+      "postDate": "2026-09-17T21:50:19.517Z",
+      "lastCommentPostDate": "2026-09-20T08:45:29.866Z"
+    },
+    {
+      "id": 741749,
+      "title": "Model changes don't move the LB above the public plateau — what actually did for you?",
+      "topicUrl": "/competitions/biohub-cell-tracking-during-development/discussion/741749",
+      "commentCount": 7,
+      "votes": 5,
+      "postDate": "2026-09-17T06:31:17.691Z",
+      "lastCommentPostDate": "2026-09-18T11:48:48.723Z"
+    },
+    {
+      "id": 716952,
+      "title": "Rule-based is surprisingly strong? (currently 7th/344teams / gold zone, no learning)",
+      "topicUrl": "/competitions/biohub-cell-tracking-during-development/discussion/716952",
+      "commentCount": 7,
+      "votes": 48,
+      "postDate": "2026-07-01T08:50:08.239Z",
+      "lastCommentPostDate": "2026-07-03T10:53:01.280Z"
+    }
+  ],
+  "totalCount": 121
+}

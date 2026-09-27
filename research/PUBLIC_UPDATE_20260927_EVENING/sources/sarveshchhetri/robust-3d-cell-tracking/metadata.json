@@ -1,0 +1,27 @@
+{
+  "id": 134210279,
+  "ref": "sarveshchhetri/robust-3d-cell-tracking",
+  "title": "Robust 3D Cell Tracking",
+  "author": "Sarvesh Chhetri",
+  "slug": "robust-3d-cell-tracking",
+  "lastRunTime": "2026-09-24T13:22:20.091Z",
+  "language": "python",
+  "kernelType": "notebook",
+  "isPrivate": false,
+  "enableGpu": false,
+  "enableInternet": false,
+  "categoryIds": [
+    "biology"
+  ],
+  "datasetDataSources": [
+    ""
+  ],
+  "competitionDataSources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "totalVotes": 3,
+  "enableTpu": false,
+  "currentVersionNumber": 8,
+  "dockerImage": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9",
+  "machineShape": "None"
+}

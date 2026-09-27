@@ -1,0 +1,413 @@
+{
+  "observed_start": "2026-09-27T21:19:10.694594+08:00",
+  "observed_end": "2026-09-27T21:25:44.771498+08:00",
+  "catalog_rows": 300,
+  "unique_refs": 162,
+  "new_refs": [],
+  "updated_catalog_refs": [
+    "mtoshidesu/testbiohub-lf-dctta020-sectta1"
+  ],
+  "leaderboard_rows": 200,
+  "exact_team_submission_receipts": 9,
+  "sources": [
+    {
+      "ref": "amanatar/optimized-biohub-max-score",
+      "sha256": "e6c3f729835b28ca61ec7634526fb9e798df43e43e40f5e1a0a794dcd8521c2e",
+      "code_cells": 13,
+      "identical_to_morning": true,
+      "checks": [
+        {
+          "cell": 0,
+          "ast": "PASS"
+        },
+        {
+          "cell": 1,
+          "ast": "PASS"
+        },
+        {
+          "cell": 2,
+          "ast": "PASS"
+        },
+        {
+          "cell": 3,
+          "ast": "PASS"
+        },
+        {
+          "cell": 4,
+          "ast": "PASS"
+        },
+        {
+          "cell": 5,
+          "ast": "PASS"
+        },
+        {
+          "cell": 6,
+          "ast": "PASS"
+        },
+        {
+          "cell": 7,
+          "ast": "PASS"
+        },
+        {
+          "cell": 8,
+          "ast": "PASS"
+        },
+        {
+          "cell": 9,
+          "ast": "PASS"
+        },
+        {
+          "cell": 10,
+          "ast": "PASS"
+        },
+        {
+          "cell": 11,
+          "ast": "PASS"
+        },
+        {
+          "cell": 12,
+          "ast": "PASS"
+        }
+      ],
+      "review_scope": "byte identical to fully reviewed morning source"
+    },
+    {
+      "ref": "mtoshidesu/testbiohub-lf-dctta020-sectta1",
+      "sha256": "72dac25cc0227d19053c1c183d980878c876fe819685cdacea248457b9cf0243",
+      "code_cells": 45,
+      "identical_to_morning": false,
+      "checks": [
+        {
+          "cell": 0,
+          "ast": "PASS"
+        },
+        {
+          "cell": 1,
+          "ast": "PASS"
+        },
+        {
+          "cell": 2,
+          "ast": "PASS"
+        },
+        {
+          "cell": 3,
+          "ast": "PASS"
+        },
+        {
+          "cell": 4,
+          "ast": "PASS"
+        },
+        {
+          "cell": 5,
+          "ast": "PASS"
+        },
+        {
+          "cell": 6,
+          "ast": "PASS"
+        },
+        {
+          "cell": 7,
+          "ast": "PASS"
+        },
+        {
+          "cell": 8,
+          "ast": "PASS"
+        },
+        {
+          "cell": 9,
+          "ast": "PASS"
+        },
+        {
+          "cell": 10,
+          "ast": "PASS"
+        },
+        {
+          "cell": 11,
+          "ast": "PASS"
+        },
+        {
+          "cell": 12,
+          "ast": "PASS"
+        },
+        {
+          "cell": 13,
+          "ast": "PASS"
+        },
+        {
+          "cell": 14,
+          "ast": "PASS"
+        },
+        {
+          "cell": 15,
+          "ast": "PASS"
+        },
+        {
+          "cell": 16,
+          "ast": "PASS"
+        },
+        {
+          "cell": 17,
+          "ast": "PASS"
+        },
+        {
+          "cell": 18,
+          "ast": "PASS"
+        },
+        {
+          "cell": 19,
+          "ast": "PASS"
+        },
+        {
+          "cell": 20,
+          "ast": "PASS"
+        },
+        {
+          "cell": 21,
+          "ast": "PASS"
+        },
+        {
+          "cell": 22,
+          "ast": "PASS"
+        },
+        {
+          "cell": 23,
+          "ast": "PASS"
+        },
+        {
+          "cell": 24,
+          "ast": "PASS"
+        },
+        {
+          "cell": 25,
+          "ast": "PASS"
+        },
+        {
+          "cell": 26,
+          "ast": "PASS"
+        },
+        {
+          "cell": 27,
+          "ast": "PASS"
+        },
+        {
+          "cell": 28,
+          "ast": "PASS"
+        },
+        {
+          "cell": 29,
+          "ast": "PASS"
+        },
+        {
+          "cell": 30,
+          "ast": "PASS"
+        },
+        {
+          "cell": 31,
+          "ast": "PASS"
+        },
+        {
+          "cell": 32,
+          "ast": "PASS"
+        },
+        {
+          "cell": 33,
+          "ast": "PASS"
+        },
+        {
+          "cell": 34,
+          "ast": "PASS"
+        },
+        {
+          "cell": 35,
+          "ast": "PASS"
+        },
+        {
+          "cell": 36,
+          "ast": "PASS"
+        },
+        {
+          "cell": 37,
+          "ast": "PASS"
+        },
+        {
+          "cell": 38,
+          "ast": "PASS"
+        },
+        {
+          "cell": 39,
+          "ast": "PASS"
+        },
+        {
+          "cell": 40,
+          "ast": "PASS"
+        },
+        {
+          "cell": 41,
+          "ast": "PASS"
+        },
+        {
+          "cell": 42,
+          "ast": "PASS"
+        },
+        {
+          "cell": 43,
+          "ast": "PASS"
+        },
+        {
+          "cell": 44,
+          "ast": "PASS"
+        }
+      ],
+      "review_scope": "configuration and validator/selector targeted review; complete source acquired"
+    },
+    {
+      "ref": "raunakdey07/biohub-harmonic-fusion-v3",
+      "sha256": "9ab32885574092ab46a8d90bfa96393332c6e5a6249d33c92a9051efbc9779ca",
+      "code_cells": 12,
+      "identical_to_morning": true,
+      "checks": [
+        {
+          "cell": 0,
+          "ast": "PASS"
+        },
+        {
+          "cell": 1,
+          "ast": "PASS"
+        },
+        {
+          "cell": 2,
+          "ast": "PASS"
+        },
+        {
+          "cell": 3,
+          "ast": "PASS"
+        },
+        {
+          "cell": 4,
+          "ast": "PASS"
+        },
+        {
+          "cell": 5,
+          "ast": "PASS"
+        },
+        {
+          "cell": 6,
+          "ast": "PASS"
+        },
+        {
+          "cell": 7,
+          "ast": "PASS"
+        },
+        {
+          "cell": 8,
+          "ast": "PASS"
+        },
+        {
+          "cell": 9,
+          "ast": "PASS"
+        },
+        {
+          "cell": 10,
+          "ast": "PASS"
+        },
+        {
+          "cell": 11,
+          "ast": "PASS"
+        }
+      ],
+      "review_scope": "byte identical to fully reviewed morning source"
+    },
+    {
+      "ref": "sarveshchhetri/robust-3d-cell-tracking",
+      "sha256": "7e62e45e2aa66dc21d3cde0b18ad80748b731dfd882ceb1eab0ae7a84bd85de8",
+      "code_cells": 10,
+      "identical_to_morning": true,
+      "checks": [
+        {
+          "cell": 0,
+          "ast": "IPYTHON_OR_SYNTAX_REVIEW",
+          "line": 1
+        },
+        {
+          "cell": 1,
+          "ast": "PASS"
+        },
+        {
+          "cell": 2,
+          "ast": "PASS"
+        },
+        {
+          "cell": 3,
+          "ast": "PASS"
+        },
+        {
+          "cell": 4,
+          "ast": "PASS"
+        },
+        {
+          "cell": 5,
+          "ast": "PASS"
+        },
+        {
+          "cell": 6,
+          "ast": "PASS"
+        },
+        {
+          "cell": 7,
+          "ast": "PASS"
+        },
+        {
+          "cell": 8,
+          "ast": "PASS"
+        },
+        {
+          "cell": 9,
+          "ast": "PASS"
+        }
+      ],
+      "review_scope": "byte identical to fully reviewed morning source"
+    }
+  ],
+  "discussions": [
+    {
+      "topic_id": 742169,
+      "messages_including_replies": 6,
+      "body_map_unchanged": true
+    },
+    {
+      "topic_id": 742266,
+      "messages_including_replies": 15,
+      "body_map_unchanged": true
+    },
+    {
+      "topic_id": 742942,
+      "messages_including_replies": 7,
+      "body_map_unchanged": true
+    },
+    {
+      "topic_id": 743006,
+      "messages_including_replies": 4,
+      "body_map_unchanged": true
+    },
+    {
+      "topic_id": 743222,
+      "messages_including_replies": 1,
+      "body_map_unchanged": true
+    },
+    {
+      "topic_id": 743765,
+      "messages_including_replies": 2,
+      "body_map_unchanged": true
+    }
+  ],
+  "kaggle_write_count": 0,
+  "model_runs": 0,
+  "limitations": [
+    "Bounded 3x100 catalog sample; not all public code or all 121 discussions.",
+    "m-toshi V6 source acquired in full; human review targeted to config and selector, not every algorithm line.",
+    "New notebook current formal submission and Public UNKNOWN; ordinary success is not formal score.",
+    "Other three public score observations refer to morning exact-version evidence; source byte identity refreshed now.",
+    "Discussion images and cited external links not independently examined.",
+    "Kaggle kernel metadata lastRunTime conflicts with catalog/browser; do not use as version timestamp."
+  ]
+}

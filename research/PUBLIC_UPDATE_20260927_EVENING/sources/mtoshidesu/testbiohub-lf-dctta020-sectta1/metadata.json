@@ -1,0 +1,29 @@
+{
+  "id": 134419045,
+  "ref": "mtoshidesu/testbiohub-lf-dctta020-sectta1",
+  "title": "Testbiohub-lf-dctta020-sectta1",
+  "author": "m-toshi desu",
+  "slug": "testbiohub-lf-dctta020-sectta1",
+  "lastRunTime": "2026-09-24T13:22:17.323Z",
+  "language": "python",
+  "kernelType": "notebook",
+  "isPrivate": false,
+  "enableGpu": true,
+  "enableInternet": false,
+  "categoryIds": [
+    "gpu"
+  ],
+  "datasetDataSources": [
+    "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+    "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+    "pilkwang/biohub-tracking-support-pack-50ep-v1"
+  ],
+  "competitionDataSources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "totalVotes": 49,
+  "enableTpu": false,
+  "currentVersionNumber": 6,
+  "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "machineShape": "NvidiaTeslaT4"
+}
