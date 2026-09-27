@@ -1,6 +1,6 @@
 # XRL9 两波正式评分执行记录
 
-状态：WAVE2_ORDINARY_RUNNING；报告生成时间 2026-09-27T14:17:44.791292+00:00（UTC）。
+状态：WAVE2_ORDINARY_QUEUED；报告生成时间 2026-09-27T14:26:34.413238+00:00（UTC）。
 
 任务交付 commit：`ffd6a3b6036037c76372787b487f6d800454e8e4`；原文 SHA256：`aa66741012266c7e0c30d186f2ac2819206cfa567e4b0ae0591bad15c4908d6d`。
 
@@ -11,8 +11,8 @@ MEASURED 基线 XRL9：Public 0.955，submission 56587392，V1 / SV353050971。�
 | [R9D960](https://www.kaggle.com/code/sailorren/biohub-xrl9-r9d960-20260927) | 0.96 / 9.0 | 1 / 353188100 | 56599443 | SCORED | 0.955 | +0.0000 | 2026-09-27T05:55:57.582371+00:00 | 2026-09-27T13:17:49.203600+00:00 | 未返回错误 |
 | [R8D965](https://www.kaggle.com/code/sailorren/biohub-xrl9-r8d965-20260927) | 0.965 / 8.0 | 1 / 353188155 | 56599380 | SCORED | 0.955 | +0.0000 | 2026-09-27T05:53:06.171876+00:00 | 2026-09-27T13:17:49.203600+00:00 | 未返回错误 |
 | [R9D955](https://www.kaggle.com/code/sailorren/biohub-xrl9-r9d955-20260927) | 0.955 / 9.0 | 1 / 353192186 | 56599964 | SCORED | 0.956 | +0.0010 | 2026-09-27T06:08:32.999420+00:00 | 2026-09-27T13:17:49.203600+00:00 | 未返回错误 |
-| [R9D950](https://www.kaggle.com/code/sailorren/biohub-xrl9-r9d950-20260927) | 0.95 / 9.0 | 1 / 353314948 | UNKNOWN | ORDINARY_QUEUED | UNKNOWN | UNKNOWN | UNKNOWN | 2026-09-27T14:16:38.900165+00:00 | UNKNOWN |
-| [R8D955](https://www.kaggle.com/code/sailorren/biohub-xrl9-r8d955-20260927) | 0.955 / 8.0 | 1 / 353315066 | UNKNOWN | ORDINARY_QUEUED | UNKNOWN | UNKNOWN | UNKNOWN | 2026-09-27T14:16:41.028363+00:00 | UNKNOWN |
+| [R9D950](https://www.kaggle.com/code/sailorren/biohub-xrl9-r9d950-20260927) | 0.95 / 9.0 | 1 / 353314948 | UNKNOWN | ORDINARY_QUEUED | UNKNOWN | UNKNOWN | UNKNOWN | 2026-09-27T14:25:39.921498+00:00 | UNKNOWN |
+| [R8D955](https://www.kaggle.com/code/sailorren/biohub-xrl9-r8d955-20260927) | 0.955 / 8.0 | 1 / 353315066 | UNKNOWN | ORDINARY_QUEUED | UNKNOWN | UNKNOWN | UNKNOWN | 2026-09-27T14:25:42.723228+00:00 | UNKNOWN |
 
 预算：已发送 Save & Run 请求 6（含明确失败）；实际受理完整运行 5；工程备用 1/1；正式请求 3/5。第二波最多 2，首批正式结果齐备之前不启动。
 
@@ -29,3 +29,9 @@ MEASURED 基线 XRL9：Public 0.955，submission 56587392，V1 / SV353050971。�
 不改最终选择、不修改旧账本、不新增训练或 Dataset。CSV、图、原始数据、权重和凭据不入 GitHub。
 
 持续等待方式：AUTO_REVIEW_REJECTED。历史后台调度请求未获自动审批通过，未创建监控。本次前台只读查询已收齐首波分数；该历史拒绝不代表提交仍在评分。
+
+## 第二波当前执行状态
+
+两份 Save & Run All 均已受理，实际源码与冻结文件一致、GPU启用、Private、Internet off、原镜像摘要一致。平台当前 QUEUED，尚无普通运行完整输出；实际 CUDA/挂载版本/CSV与运行告警验收均待运行完成。第二波正式请求 0/2，submission ID 尚不存在，Public UNKNOWN。
+
+本次未建立后台监控。恢复只查询 R9D950 V1/SV353314948、R8D955 V1/SV353315066；不重复运行，普通请求已达6/6。每份完成后分别核对实际输入和日志、验收CSV，刷新额度并正式提交一次，不等另一份Public。第二波冻结代码 commit 61103113bf333fb7586488103d710c938e92a3d5 已9/9远端逐字节回读。完整任务尚未完成。

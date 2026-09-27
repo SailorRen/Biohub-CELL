@@ -12,4 +12,5 @@ s+=['',f"预算：已发送 Save & Run 请求 {l['full_run_count']}（含明确�
 c=P/'continuation_receipt.json'
 if c.exists():
  cr=json.loads(c.read_text());s+=['', '持续等待方式：'+cr['status']+'。历史后台调度请求未获自动审批通过，未创建监控。本次前台只读查询已收齐首波分数；该历史拒绝不代表提交仍在评分。']
+s+=['','## 第二波当前执行状态','', '两份 Save & Run All 均已受理，实际源码与冻结文件一致、GPU启用、Private、Internet off、原镜像摘要一致。平台当前 QUEUED，尚无普通运行完整输出；实际 CUDA/挂载版本/CSV与运行告警验收均待运行完成。第二波正式请求 0/2，submission ID 尚不存在，Public UNKNOWN。','', '本次未建立后台监控。恢复只查询 R9D950 V1/SV353314948、R8D955 V1/SV353315066；不重复运行，普通请求已达6/6。每份完成后分别核对实际输入和日志、验收CSV，刷新额度并正式提交一次，不等另一份Public。第二波冻结代码 commit 61103113bf333fb7586488103d710c938e92a3d5 已9/9远端逐字节回读。完整任务尚未完成。']
 r.write_text('\n'.join(s)+'\n')

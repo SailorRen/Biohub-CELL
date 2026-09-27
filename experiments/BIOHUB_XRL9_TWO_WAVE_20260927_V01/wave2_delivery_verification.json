@@ -1,0 +1,45 @@
+{
+  "passed": false,
+  "status": "WAITING_FOR_ORDINARY_RUNS",
+  "observed_at": "2026-09-27T14:26:34.388897+00:00",
+  "build_checks_passed": 20,
+  "frozen_source_commit": "61103113bf333fb7586488103d710c938e92a3d5",
+  "frozen_remote_files_passed": 9,
+  "ordinary_requests_new": 2,
+  "ordinary_complete_new": 0,
+  "formal_requests_new": 0,
+  "formal_requests_total": 3,
+  "full_run_requests_total": 6,
+  "engineering_spare_used": 1,
+  "remaining_authorized_formal_requests": 2,
+  "background_monitor_created": false,
+  "objects": [
+    {
+      "arm": "R9D950",
+      "version": 1,
+      "sv": 353314948,
+      "kernel": "sailorren/biohub-xrl9-r9d950-20260927",
+      "ordinary_status": {
+        "status": "QUEUED"
+      },
+      "submission_id": null
+    },
+    {
+      "arm": "R8D955",
+      "version": 1,
+      "sv": 353315066,
+      "kernel": "sailorren/biohub-xrl9-r8d955-20260927",
+      "ordinary_status": {
+        "status": "QUEUED"
+      },
+      "submission_id": null
+    }
+  ],
+  "resume": [
+    "Read existing R9D950 V1/SV353314948 and R8D955 V1/SV353315066 only.",
+    "No further Save & Run requests authorized.",
+    "After COMPLETE, observe exact input versions, download real output, run check_output and check_deployment.",
+    "Refresh current formal quota; submit each exact version once via submit_one.py immediately after PASS.",
+    "Persist each formal ID and sync immediately; query exact IDs for final scores."
+  ]
+}
