@@ -1,0 +1,12 @@
+{
+  "arm": "R9D950",
+  "det": 0.95,
+  "relaxed": 9.0,
+  "readmit": 0.965,
+  "flow_relaxed": 0.0,
+  "velocity": 0.5,
+  "g1": false,
+  "source_sha256": "beb14a421c6c28c006362cedb4cf30738b22e28df8621b009d279ec1e3dfc936",
+  "parent_source_sha256": "da53daf678724e920403350f4dde0e83b66163ef12d6a0b6efe28b58756c325c",
+  "task_commit": "74ffadea8e7ac750a2bdb837207f3fa5a7aa48f5"
+}

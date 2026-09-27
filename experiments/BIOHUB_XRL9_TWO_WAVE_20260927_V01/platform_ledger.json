@@ -163,11 +163,61 @@
       "formal_status": "SubmissionStatus.COMPLETE"
     }
   ],
-  "wave2": [],
+  "wave2": [
+    {
+      "candidate_id": "R9D950",
+      "effective_config": {
+        "det": 0.95,
+        "relaxed_um": 9.0,
+        "readmit": 0.965,
+        "velocity": 0.5,
+        "flow_relaxed": 0.0,
+        "g1": false
+      },
+      "kernel_ref": null,
+      "planned_kernel_ref": "sailorren/biohub-xrl9-r9d950-20260927",
+      "kernel_id": null,
+      "version": null,
+      "script_version_id": null,
+      "submission_id": null,
+      "requested_at": null,
+      "observed_at": null,
+      "status": "LOCAL_PREPARED",
+      "public_score": null,
+      "direct_error": null,
+      "events": []
+    },
+    {
+      "candidate_id": "R8D955",
+      "effective_config": {
+        "det": 0.955,
+        "relaxed_um": 8.0,
+        "readmit": 0.965,
+        "velocity": 0.5,
+        "flow_relaxed": 0.0,
+        "g1": false
+      },
+      "kernel_ref": null,
+      "planned_kernel_ref": "sailorren/biohub-xrl9-r8d955-20260927",
+      "kernel_id": null,
+      "version": null,
+      "script_version_id": null,
+      "submission_id": null,
+      "requested_at": null,
+      "observed_at": null,
+      "status": "LOCAL_PREPARED",
+      "public_score": null,
+      "direct_error": null,
+      "events": []
+    }
+  ],
   "final_selection_changed": false,
   "run_request_count": 4,
   "accepted_full_run_count": 3,
   "maximum_batch_gpu_concurrency": 2,
-  "terminal_recovered": true,
-  "last_score_observed_at": "2026-09-27T13:17:49.203600+00:00"
+  "terminal_recovered": false,
+  "last_score_observed_at": "2026-09-27T13:17:49.203600+00:00",
+  "wave2_decision_complete": true,
+  "wave2_task_commit": "74ffadea8e7ac750a2bdb837207f3fa5a7aa48f5",
+  "wave2_comparison_baseline": 0.956
 }

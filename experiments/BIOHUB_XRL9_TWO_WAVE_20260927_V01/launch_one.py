@@ -21,7 +21,7 @@ if a in l['wave2']:
  assert all(x['status'] in ['SCORED','FORMAL_ERROR','NOT_SUBMITTED'] for x in l['wave1'])
 assert api.config_values.get('username')=='sailorren'
 assert datetime.now(timezone.utc)<datetime(2026,9,29,23,59,tzinfo=timezone.utc)
-assert json.loads((P/'build_checks.json').read_text())['passed']
+assert json.loads((P/('wave2_build_checks.json' if a in l['wave2'] else 'build_checks.json')).read_text())['passed']
 m=json.loads((P/arm/'kernel-metadata.json').read_text());code=(P/arm/'candidate.ipynb').read_text()
 assert hashlib.sha256(code.encode()).hexdigest()==json.loads((P/arm/'build_receipt.json').read_text())['source_sha256']
 r=ApiSaveKernelRequest();r.slug=m['id'];r.new_title=m['title'];r.text=code;r.language='python';r.kernel_type='notebook';r.is_private=True;r.enable_gpu=True;r.enable_tpu=False;r.enable_internet=False;r.dataset_data_sources=m['dataset_sources'];r.kernel_data_sources=[];r.competition_data_sources=m['competition_sources'];r.model_data_sources=[];r.docker_image=m['docker_image'];r.machine_shape='NvidiaTeslaT4';r.kernel_execution_type=KernelExecutionType.SAVE_AND_RUN_ALL

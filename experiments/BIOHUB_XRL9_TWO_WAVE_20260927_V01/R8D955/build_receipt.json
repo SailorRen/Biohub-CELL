@@ -1,0 +1,12 @@
+{
+  "arm": "R8D955",
+  "det": 0.955,
+  "relaxed": 8.0,
+  "readmit": 0.965,
+  "flow_relaxed": 0.0,
+  "velocity": 0.5,
+  "g1": false,
+  "source_sha256": "ef554190c31471fc117f37212ebf690252ed0bed7e93f7eb18b9e358ced2901d",
+  "parent_source_sha256": "da53daf678724e920403350f4dde0e83b66163ef12d6a0b6efe28b58756c325c",
+  "task_commit": "74ffadea8e7ac750a2bdb837207f3fa5a7aa48f5"
+}

@@ -1,0 +1,14 @@
+{
+  "observed_at": "2026-09-27T14:02:10.139807+00:00",
+  "owner": "sailorren",
+  "formal_remaining": 2,
+  "resets_hours": 10,
+  "gpu_ui_used": "02:36",
+  "gpu_ui_total_hours": 30,
+  "gpu_api_total_seconds": 21600,
+  "gpu_api_used_raw": "9398.279.0s",
+  "conservative_remaining_estimate_hours": 3.389,
+  "balance_discrepancy": "API used string malformed; UI total30h vs API6h; conservative estimate only",
+  "parent_draft_session": "off; no cell run or save",
+  "current_team_best": 0.956
+}

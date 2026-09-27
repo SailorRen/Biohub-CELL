@@ -1,0 +1,21 @@
+--- R9D955/cell1
++++ R8D955/cell1
+@@ -106,4 +106,4 @@
+ os.environ["BIOHUB_LOWDET_THRESHOLD"] = "0.3"
+ print("BIOHUB_PRESET:", BIOHUB_PRESET)
+ print("BIOHUB_SCORE_AXIS:", BIOHUB_SCORE_AXIS)
+-os.environ["BIOHUB_MOTION_RELINK_RELAXED_UM"] = "9.0"
++os.environ["BIOHUB_MOTION_RELINK_RELAXED_UM"] = "8.0"
+--- R9D955/cell13
++++ R8D955/cell13
+@@ -2,8 +2,8 @@
+ import hashlib as _trio_hashlib
+ import json as _trio_json
+ from collections import Counter as _TrioCounter
+-_TRIO_ARM = 'R9D955'
+-assert MOTION_RELINK_RELAXED_UM == 9.0 and MOTION_RELINK_FLOW_RELAXED_UM == 0
++_TRIO_ARM = 'R8D955'
++assert MOTION_RELINK_RELAXED_UM == 8.0 and MOTION_RELINK_FLOW_RELAXED_UM == 0
+ assert MOTION_RELINK_LEARNED_BONUS == 1.0 and MOTION_RELINK_TIGHT_UM == 5.5 and MOTION_RELINK_FLOW_TIGHT_UM == 7.0
+ assert MOTION_RELINK_VELOCITY_WEIGHT == 0.5
+ assert DET_THRESHOLD == 0.955 and READMIT_MIN_SCORE == 0.965

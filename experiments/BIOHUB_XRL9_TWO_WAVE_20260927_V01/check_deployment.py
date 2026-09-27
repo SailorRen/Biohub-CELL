@@ -2,7 +2,7 @@
 from pathlib import Path
 import json,sys,hashlib
 from datetime import datetime,timezone
-P=Path(__file__).resolve().parent;arm=sys.argv[1];D=Path('/private/tmp')/('two-wave-output-'+arm);a=next(x for x in json.loads((P/'platform_ledger.json').read_text())['wave1'] if x['candidate_id']==arm)
+P=Path(__file__).resolve().parent;arm=sys.argv[1];D=Path('/private/tmp')/('two-wave-output-'+arm);ledger=json.loads((P/'platform_ledger.json').read_text());a=next(x for x in ledger['wave1']+ledger['wave2'] if x['candidate_id']==arm)
 m=json.loads((P/arm/'ordinary_readback.json').read_text());assert m['source_equal'] and m['status']['status']=='COMPLETE'
 assert m['metadata']['dockerImage'].endswith('37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461')
 u=json.loads((P/arm/'input_versions_observed.json').read_text());assert u['version']==a['version'] and u['sv']==a['script_version_id'];assert u['versions']==[10,2,5,1]

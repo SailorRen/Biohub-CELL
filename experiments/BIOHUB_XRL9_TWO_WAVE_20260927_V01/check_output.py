@@ -2,11 +2,11 @@
 import argparse,csv,hashlib,json,math,re
 from collections import Counter
 from pathlib import Path
-p=argparse.ArgumentParser();p.add_argument('arm',choices=['R9D960','R8D965','R9D955']);p.add_argument('directory');a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('arm',choices=['R9D960','R8D965','R9D955','R9D950','R8D955']);p.add_argument('directory');a=p.parse_args()
 P=Path(__file__).resolve().parent;D=Path(a.directory)
 r=json.loads((D/'two_wave_receipt.json').read_text());assert r['task']=='BIOHUB_XRL9_TWO_WAVE_20260927_V01' and r['arm']==a.arm
 vel=.5;gate=False
-det={'R9D960':.960,'R8D965':.965,'R9D955':.955}[a.arm];relaxed={'R9D960':9.,'R8D965':8.,'R9D955':9.}[a.arm]
+det={'R9D960':.960,'R8D965':.965,'R9D955':.955,'R9D950':.950,'R8D955':.955}[a.arm];relaxed={'R9D960':9.,'R8D965':8.,'R9D955':9.,'R9D950':9.,'R8D955':8.}[a.arm]
 assert r['det']==det and r['relaxed']==relaxed and r['flow_relaxed']==0
 assert r['velocity']==vel and r['g1']==gate and r['csv_validation']=='PASS'
 assert r['head_sha256']=='625a0d9340f48193f2ec294fc2d81c5bb3c03087eab78ef0ae998a9c4c7da00c'

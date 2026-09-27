@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_WAVE2_SCORE_FIRST_V02",
+  "goal": "两个冻结候选真实GPU运行验收且每份一次正式提交并回收准确状态；出分另判终态",
+  "scope": {
+    "in_scope": [
+      "R9D950",
+      "R8D955",
+      "原任务累计正式最多5次、普通请求最多6次"
+    ],
+    "out_of_scope": [
+      "重跑首波",
+      "改变最终选择",
+      "后台调度"
+    ]
+  },
+  "acceptance": [
+    {
+      "id": "task-bytes",
+      "type": "file",
+      "path": "tasks/CODEX_20260927_BIOHUB_XRL9_WAVE2_SCORE_FIRST_V02.md",
+      "sha256": "f1554a2554a658add78d7995388204d50e715a54ca4b5713183f02b7447d92c5"
+    },
+    {
+      "id": "build",
+      "type": "json",
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/wave2_build_checks.json",
+      "assertions": [
+        {
+          "pointer": "/passed",
+          "op": "equals",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "delivery",
+      "type": "json",
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/wave2_delivery_verification.json",
+      "assertions": [
+        {
+          "pointer": "/passed",
+          "op": "equals",
+          "value": true
+        }
+      ]
+    }
+  ]
+}

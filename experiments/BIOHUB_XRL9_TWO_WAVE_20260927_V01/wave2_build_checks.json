@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "count": 20,
+  "checks": [
+    {
+      "id": "R9D950_13_code_cells",
+      "pass": true
+    },
+    {
+      "id": "R9D950_unchanged_cells",
+      "pass": true
+    },
+    {
+      "id": "R9D950_actual_config",
+      "pass": true
+    },
+    {
+      "id": "R9D950_support_original_hash",
+      "pass": true
+    },
+    {
+      "id": "R9D950_support_dynamic_patch",
+      "pass": true
+    },
+    {
+      "id": "R9D950_cache_before_head",
+      "pass": true
+    },
+    {
+      "id": "R9D950_no_patch_warning",
+      "pass": true
+    },
+    {
+      "id": "R8D955_13_code_cells",
+      "pass": true
+    },
+    {
+      "id": "R8D955_unchanged_cells",
+      "pass": true
+    },
+    {
+      "id": "R8D955_actual_config",
+      "pass": true
+    },
+    {
+      "id": "R8D955_support_original_hash",
+      "pass": true
+    },
+    {
+      "id": "R8D955_support_dynamic_patch",
+      "pass": true
+    },
+    {
+      "id": "R8D955_cache_before_head",
+      "pass": true
+    },
+    {
+      "id": "R8D955_no_patch_warning",
+      "pass": true
+    },
+    {
+      "id": "R9D950_exact_parent_inverse_diff",
+      "pass": true
+    },
+    {
+      "id": "R8D955_exact_parent_inverse_diff",
+      "pass": true
+    },
+    {
+      "id": "R9D950_only_allowed_diff",
+      "pass": true
+    },
+    {
+      "id": "R9D950_both_gate_paths",
+      "pass": true
+    },
+    {
+      "id": "R8D955_only_allowed_diff",
+      "pass": true
+    },
+    {
+      "id": "R8D955_both_gate_paths",
+      "pass": true
+    }
+  ],
+  "scope": "No inference; static/config and actual support dynamic patch checks only"
+}
