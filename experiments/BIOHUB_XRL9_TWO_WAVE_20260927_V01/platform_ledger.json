@@ -1,7 +1,7 @@
 {
   "task_id": "BIOHUB_XRL9_TWO_WAVE_20260927_V01",
-  "stage": "WAVE2_ORDINARY_AWAITING_VALIDATION",
-  "formal_request_count": 4,
+  "stage": "WAVE2_SCORE_PENDING",
+  "formal_request_count": 5,
   "full_run_count": 6,
   "engineering_spare_count": 1,
   "planned_reserve": 2,
@@ -24,7 +24,7 @@
       "script_version_id": 353188100,
       "submission_id": 56599443,
       "requested_at": "2026-09-27T05:55:57.582371+00:00",
-      "observed_at": "2026-09-27T13:17:49.203600+00:00",
+      "observed_at": "2026-09-27T17:58:13.885207+00:00",
       "status": "SCORED",
       "public_score": "0.955",
       "direct_error": null,
@@ -73,7 +73,7 @@
       "script_version_id": 353188155,
       "submission_id": 56599380,
       "requested_at": "2026-09-27T05:53:06.171876+00:00",
-      "observed_at": "2026-09-27T13:17:49.203600+00:00",
+      "observed_at": "2026-09-27T17:58:13.885207+00:00",
       "status": "SCORED",
       "public_score": "0.955",
       "direct_error": null,
@@ -122,7 +122,7 @@
       "script_version_id": 353192186,
       "submission_id": 56599964,
       "requested_at": "2026-09-27T06:08:32.999420+00:00",
-      "observed_at": "2026-09-27T13:17:49.203600+00:00",
+      "observed_at": "2026-09-27T17:58:13.885207+00:00",
       "status": "SCORED",
       "public_score": "0.956",
       "direct_error": null,
@@ -181,7 +181,7 @@
       "script_version_id": 353314948,
       "submission_id": 56615584,
       "requested_at": "2026-09-27T17:56:08.717493+00:00",
-      "observed_at": "2026-09-27T17:51:33.521913+00:00",
+      "observed_at": "2026-09-27T17:58:13.885207+00:00",
       "status": "SCORE_PENDING",
       "public_score": null,
       "direct_error": null,
@@ -214,7 +214,8 @@
       "last_api_status": {
         "status": "QUEUED"
       },
-      "last_api_observed_at": "2026-09-27T17:04:25.318008+00:00"
+      "last_api_observed_at": "2026-09-27T17:04:25.318008+00:00",
+      "formal_status": "SubmissionStatus.PENDING"
     },
     {
       "candidate_id": "R8D955",
@@ -231,10 +232,10 @@
       "kernel_id": 136121346,
       "version": 1,
       "script_version_id": 353315066,
-      "submission_id": null,
-      "requested_at": null,
-      "observed_at": "2026-09-27T17:51:35.950524+00:00",
-      "status": "ORDINARY_COMPLETE",
+      "submission_id": 56615617,
+      "requested_at": "2026-09-27T17:57:35.489390+00:00",
+      "observed_at": "2026-09-27T17:58:13.885207+00:00",
+      "status": "SCORE_PENDING",
       "public_score": null,
       "direct_error": null,
       "events": [
@@ -248,6 +249,16 @@
             "versionNumber": 1,
             "kernelId": 136121346
           }
+        },
+        {
+          "type": "FORMAL_SUBMISSION",
+          "at": "2026-09-27T17:57:35.489390+00:00",
+          "message": "BIOHUB_XRL9_TWO_WAVE_20260927_V01 R8D955 V1 SV353315066",
+          "version": 1,
+          "sv": 353315066,
+          "response": {
+            "ref": 56615617
+          }
         }
       ],
       "ordinary_status": {
@@ -256,7 +267,8 @@
       "last_api_status": {
         "status": "QUEUED"
       },
-      "last_api_observed_at": "2026-09-27T17:04:27.863419+00:00"
+      "last_api_observed_at": "2026-09-27T17:04:27.863419+00:00",
+      "formal_status": "SubmissionStatus.PENDING"
     }
   ],
   "final_selection_changed": false,
@@ -264,11 +276,11 @@
   "accepted_full_run_count": 5,
   "maximum_batch_gpu_concurrency": 2,
   "terminal_recovered": false,
-  "last_score_observed_at": "2026-09-27T13:17:49.203600+00:00",
+  "last_score_observed_at": "2026-09-27T17:58:13.885207+00:00",
   "wave2_decision_complete": true,
   "wave2_task_commit": "74ffadea8e7ac750a2bdb837207f3fa5a7aa48f5",
   "wave2_comparison_baseline": 0.956,
-  "wave2_wait_reason": "Refreshed exact-version Logs pages show GPU running, output 0 B; await completion and validation.",
+  "wave2_wait_reason": "Both exact formal submissions accepted: 56615584 and 56615617; both PENDING without Public. Only read existing IDs.",
   "automation": {
     "automation_id": "biohub",
     "kind": "heartbeat",
