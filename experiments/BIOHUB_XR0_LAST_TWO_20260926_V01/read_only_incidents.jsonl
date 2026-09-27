@@ -1,0 +1,1 @@
+{"observed_at": "2026-09-27T00:07:49.004864+00:00", "operation": "poll_scores.py authentication introspection before read", "error": "SSLError UNEXPECTED_EOF_WHILE_READING", "platform_mutation": false, "submission_ids": [56585147, 56587392], "effect": "No new score observation; prior pending state retained"}
