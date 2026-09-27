@@ -1,7 +1,7 @@
 {
   "task_id": "BIOHUB_XRL9_TWO_WAVE_20260927_V01",
-  "stage": "WAVE2_ORDINARY_RUNNING",
-  "formal_request_count": 3,
+  "stage": "WAVE2_ORDINARY_AWAITING_VALIDATION",
+  "formal_request_count": 4,
   "full_run_count": 6,
   "engineering_spare_count": 1,
   "planned_reserve": 2,
@@ -179,10 +179,10 @@
       "kernel_id": 136121301,
       "version": 1,
       "script_version_id": 353314948,
-      "submission_id": null,
-      "requested_at": null,
-      "observed_at": "2026-09-27T17:34:27.835029+00:00",
-      "status": "ORDINARY_RUNNING",
+      "submission_id": 56615584,
+      "requested_at": "2026-09-27T17:56:08.717493+00:00",
+      "observed_at": "2026-09-27T17:51:33.521913+00:00",
+      "status": "SCORE_PENDING",
       "public_score": null,
       "direct_error": null,
       "events": [
@@ -196,10 +196,20 @@
             "versionNumber": 1,
             "kernelId": 136121301
           }
+        },
+        {
+          "type": "FORMAL_SUBMISSION",
+          "at": "2026-09-27T17:56:08.717493+00:00",
+          "message": "BIOHUB_XRL9_TWO_WAVE_20260927_V01 R9D950 V1 SV353314948",
+          "version": 1,
+          "sv": 353314948,
+          "response": {
+            "ref": 56615584
+          }
         }
       ],
       "ordinary_status": {
-        "status": "RUNNING"
+        "status": "COMPLETE"
       },
       "last_api_status": {
         "status": "QUEUED"
@@ -223,8 +233,8 @@
       "script_version_id": 353315066,
       "submission_id": null,
       "requested_at": null,
-      "observed_at": "2026-09-27T17:34:31.332085+00:00",
-      "status": "ORDINARY_RUNNING",
+      "observed_at": "2026-09-27T17:51:35.950524+00:00",
+      "status": "ORDINARY_COMPLETE",
       "public_score": null,
       "direct_error": null,
       "events": [
@@ -241,7 +251,7 @@
         }
       ],
       "ordinary_status": {
-        "status": "RUNNING"
+        "status": "COMPLETE"
       },
       "last_api_status": {
         "status": "QUEUED"
