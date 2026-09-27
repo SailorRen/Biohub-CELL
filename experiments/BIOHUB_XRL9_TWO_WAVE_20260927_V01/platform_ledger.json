@@ -181,7 +181,7 @@
       "script_version_id": 353314948,
       "submission_id": null,
       "requested_at": null,
-      "observed_at": "2026-09-27T14:25:39.921498+00:00",
+      "observed_at": "2026-09-27T16:04:30.282863+00:00",
       "status": "ORDINARY_QUEUED",
       "public_score": null,
       "direct_error": null,
@@ -219,7 +219,7 @@
       "script_version_id": 353315066,
       "submission_id": null,
       "requested_at": null,
-      "observed_at": "2026-09-27T14:25:42.723228+00:00",
+      "observed_at": "2026-09-27T16:04:37.520647+00:00",
       "status": "ORDINARY_QUEUED",
       "public_score": null,
       "direct_error": null,
@@ -250,5 +250,12 @@
   "wave2_decision_complete": true,
   "wave2_task_commit": "74ffadea8e7ac750a2bdb837207f3fa5a7aa48f5",
   "wave2_comparison_baseline": 0.956,
-  "wave2_wait_reason": "Existing exact GPU versions remain QUEUED; no ordinary output available; formal submission prohibited until output/deployment PASS."
+  "wave2_wait_reason": "Existing exact GPU versions remain QUEUED; no ordinary output available; formal submission prohibited until output/deployment PASS.",
+  "automation": {
+    "automation_id": "biohub",
+    "kind": "heartbeat",
+    "status": "ACTIVE",
+    "rrule": "FREQ=MINUTELY;INTERVAL=15",
+    "observed_at": "2026-09-27T16:05:19.268519+00:00"
+  }
 }

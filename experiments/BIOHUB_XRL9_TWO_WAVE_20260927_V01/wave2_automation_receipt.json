@@ -1,0 +1,13 @@
+{
+  "observed_at": "2026-09-27T16:05:19.268519+00:00",
+  "automation_id": "biohub",
+  "kind": "heartbeat",
+  "status": "ACTIVE",
+  "rrule": "FREQ=MINUTELY;INTERVAL=15",
+  "target_thread_id": "01a0d76c-2c79-7cf3-b2b5-85bfb2631153",
+  "prompt": "续接已明确授权的 Biohub-CELL 第二波运行验收、正式提交与查分。仓库 SailorRen/Biohub-CELL，隔离工作区 /private/tmp/biohub-trio-20260926，分支 codex/xrl9-two-wave-20260927。先读 AGENTS.md、固定任务 commit 74ffadea8e7ac750a2bdb837207f3fa5a7aa48f5 中 tasks/CODEX_20260927_BIOHUB_XRL9_WAVE2_SCORE_FIRST_V02.md，以及当前报告和账本。保留用户改动，不重置、强推或改 main。\n只处理 R9D950：sailorren/biohub-xrl9-r9d950-20260927，Version 1，SV353314948；R8D955：sailorren/biohub-xrl9-r8d955-20260927，Version 1，SV353315066。先排重并核对账本及平台已有请求，已有 submission ID 只读查状态；响应不明先查对象，不重发。普通运行预算已用尽6/6（含工程备用），严禁再启动运行或创建版本。正式请求原已3/5，最多再2次、每候选一次，失败与响应不明也计数。不得新增候选、训练、Dataset、账号切换或修改最终选择。\n每次先只读查询这两个精确版本。可使用 /opt/anaconda3/envs/ml/bin/python 执行 experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/read_wave2_runs.py。普通运行完成后，使用已有 download_output.py、check_output.py、check_deployment.py 验收实际 CSV、CUDA/T4、完整测试覆盖、实际参数消费、输入固定版本、权重哈希及降级/错误字段；不能将 Quick Save、metadata 或缺字段当通过。实际版本 Inputs 页核对并保存 input_versions_observed.json（版本[10,2,5,1]）。CSV/图/权重/凭据留在 Git 外。\n每份独立验收通过后，刷新当前账号 sailorren、比赛截止时间及真实正式提交余额，写入该候选 pre_submit_quota.json；检查已有正式条目和账本后，使用已有 submit_one.py 各正式提交一次精确版本，不等另一份或首份Public。提交前持久记账，立即保存真实 Version/SV/submission ID、提交时间与回执并同步远端。用户已授权此值守自动执行上述两次正式提交，无需再次申请。若另一执行者已在操作同一对象，避免并发写入和重复提交。\n已有正式ID则用 poll_scores.py 只读查询准确ID，等待终态。持续更新 reports/20260927_BIOHUB_XRL9_TWO_WAVE_RESULTS.md 和 experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/platform_ledger.json。注意 render_report.py 存在历史硬编码 QUEUED 文案，先修正为真实状态再用，不能覆盖新回执。所有重要变化同步此分支，固定commit关键小文件远端回读。首波不重跑；评分齐备前不开展下一轮研究。\n普通队列/评分状态无变化时保持安静；取得正式ID、终态、失败或需要用户操作时才通知。平台错误或验收不通过立即记录并通知，停止该候选外部写入，另一合格候选仍按预算推进。截止后禁止新提交；已有ID仍可查分。两候选均终态或已无合法可执行后续动作时同步最终证据并暂停此值守任务。不声称必然成功或后台运行超出实际调度能力。",
+  "readback_verified": true,
+  "platform_probe": "PASS; both exact ordinary versions QUEUED",
+  "formal_requests_added": 0,
+  "requires_local_computer_and_app_running": true
+}
