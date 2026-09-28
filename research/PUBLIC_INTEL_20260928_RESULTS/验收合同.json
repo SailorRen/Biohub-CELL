@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_PUBLIC_INTEL_20260928_RESULTS",
+  "goal": "读取首批正式分数并采集最新 Kaggle 公开讨论、代码目录与 GitHub 固定提交资料，明确覆盖限制",
+  "scope": {
+    "in_scope": [
+      "只读公开来源与精确 submission",
+      "本仓库研究报告和证据同步"
+    ],
+    "out_of_scope": [
+      "把标题当正式分数",
+      "执行外部来源代码",
+      "情报驱动的未授权新方法"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "acceptance": [
+    {
+      "id": "coverage",
+      "type": "json",
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/verification.json",
+      "assertions": [
+        {
+          "pointer": "/passed",
+          "op": "equals",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "report",
+      "type": "file",
+      "path": "reports/20260928_正式结果与最新公开情报.md",
+      "contains_all": [
+        "56626891",
+        "56626811",
+        "56627073",
+        "AUTHOR_CLAIM",
+        "覆盖边界"
+      ]
+    },
+    {
+      "id": "git",
+      "type": "git",
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true
+    }
+  ]
+}

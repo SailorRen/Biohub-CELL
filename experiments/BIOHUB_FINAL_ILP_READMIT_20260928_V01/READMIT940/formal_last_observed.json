@@ -1,13 +1,15 @@
 {
-  "observed_at": "2026-09-28T03:00:24.993151+00:00",
+  "observed_at": "2026-09-28T10:09:47.076259+00:00",
   "version": 1,
   "sv": 353461671,
   "submission": {
     "ref": 56627073,
-    "totalBytes": 0,
+    "totalBytes": 209211008,
     "date": "2026-09-28T03:00:02.637Z",
     "description": "BIOHUB_FINAL_ILP_READMIT_20260928_V01 READMIT940 V1 SV353461671",
     "fileName": "submission.csv",
+    "publicScore": "0.957",
+    "status": "COMPLETE",
     "submittedBy": "sailorren",
     "submittedByRef": "sailorren",
     "teamName": "Sailor Ren",
