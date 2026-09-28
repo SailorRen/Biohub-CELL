@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "commit": "aec8462303da7fecf4716c59d388c11cd957d7a0",
+  "files": [
+    {
+      "path": "experiments/BIOHUB_FINAL_ILP_READMIT_20260928_V01/platform_ledger.json",
+      "sha256": "c233cf15075d73aad4bb284844dd0379bfa2c63d7e867d6e91d0d5a0f22f3203"
+    },
+    {
+      "path": "experiments/BIOHUB_FINAL_ILP_READMIT_20260928_V01/wave2_build_checks.json",
+      "sha256": "68a1804228674dd5c9f3f32f761036abcdf743672edc497217a4a164083b2443"
+    },
+    {
+      "path": "experiments/BIOHUB_FINAL_ILP_READMIT_20260928_V01/wave2_preflight.json",
+      "sha256": "3013c649f40f89e17154a6bb2e19de9f2beadeedeca52d25f06faf5e41690e93"
+    },
+    {
+      "path": "reports/20260928_BIOHUB_FINAL_ILP_READMIT_RESULTS.md",
+      "sha256": "2fe1cf4000de7ffdaf5d54b58fe00967eb5b0919b06cc958d1c612368f4ea923"
+    },
+    {
+      "path": "experiments/BIOHUB_FINAL_ILP_READMIT_20260928_V01/DIV02_READMIT940/candidate.ipynb",
+      "sha256": "2bdc27117093b1e618cb14d66978759ee1ed6a96a6a0c94f7f217843bbd85314"
+    },
+    {
+      "path": "experiments/BIOHUB_FINAL_ILP_READMIT_20260928_V01/DIV02_READMIT940/kernel-metadata.json",
+      "sha256": "40ca87fecd3cf7de13caa8a6bb0a3179ccd8bccdbc5d79bfd935cd96d27e698e"
+    },
+    {
+      "path": "experiments/BIOHUB_FINAL_ILP_READMIT_20260928_V01/DIV04_READMIT9525/candidate.ipynb",
+      "sha256": "b440c2a7dde39050fd6fe6df8e937e4a98939e681634e5eac415ac580fe0000a"
+    },
+    {
+      "path": "experiments/BIOHUB_FINAL_ILP_READMIT_20260928_V01/DIV04_READMIT9525/kernel-metadata.json",
+      "sha256": "55016cb16c737974f5182d8157a557e2c3779653b463ecf8e9a951a711687eed"
+    }
+  ]
+}
