@@ -18,17 +18,17 @@ SOURCE_CODE_VERIFIED：R9D955 完整源码 13 单元已读取并逐单元 AST �
 
 ## 当前平台状态
 
-观测记录汇总时间：2026-09-28T18:26:42.149857+08:00；阶段 WAVE2_RUNNING。
+观测记录汇总时间：2026-09-28T18:39:10.761412+08:00；阶段 WAVE2_SCORE_PENDING。
 
 |候选|ILP / readmit|Version / SV|submission|普通运行|正式状态|Public|Δ0.956|Δ当前最佳|
 |---|---|---|---|---|---|---|---|---|
 | DIV04_READMIT940 | 0.4 / 0.94 | 1 / 353458552 | 56626891 | COMPLETE | SubmissionStatus.COMPLETE | 0.958 | +0.002 | +0.000 |
 | DIV04 | 0.4 / 0.965 | 1 / 353458610 | 56626811 | COMPLETE | SubmissionStatus.COMPLETE | 0.956 | +0.000 | -0.002 |
 | READMIT940 | 1.2 / 0.94 | 1 / 353461671 | 56627073 | COMPLETE | SubmissionStatus.COMPLETE | 0.957 | +0.001 | -0.001 |
-| DIV02_READMIT940 | 0.2 / 0.94 | 1 / 353559166 | UNKNOWN | RUNNING | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN |
-| DIV04_READMIT9525 | 0.4 / 0.9525 | 1 / 353559196 | UNKNOWN | RUNNING | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN |
+| DIV02_READMIT940 | 0.2 / 0.94 | 1 / 353559166 | UNKNOWN | COMPLETE | UNKNOWN | UNKNOWN | UNKNOWN | UNKNOWN |
+| DIV04_READMIT9525 | 0.4 / 0.9525 | 1 / 353559196 | 56638061 | COMPLETE | SubmissionStatus.PENDING | UNKNOWN | UNKNOWN | UNKNOWN |
 
-本批普通请求 5，已受理 5；正式请求 3/5；工程备用 0/1。旧批次 5/5 不变。
+本批普通请求 5，已受理 5；正式请求 4/5；工程备用 0/1。旧批次 5/5 不变。
 
 PENDING / UNKNOWN 不代表低分或零分。第一批未取得全部正式终态前，第二批不冻结、不运行。没有后台调度；本会话内继续执行，若中断按账本精确 ID 续接。
 

@@ -1,0 +1,18 @@
+{
+  "scope": "有界公开情报及首批分数交付；不包含第二批正式终态",
+  "verified_commit": "6467d91b850a909807a211eef56ffeb289e7ccab",
+  "remote_files_passed": 78,
+  "research_checks_passed": 46,
+  "contract_sha256": "ba1571abb807114639cd0701c95e13ab62efb3f6b5ca5ffd0a4cd9d045760dfc",
+  "contract_status": "COMPLETED_VERIFIED",
+  "required_checks_passed": [
+    "coverage",
+    "report",
+    "git"
+  ],
+  "unknowns": [
+    "第三方未公开方法与私人分数",
+    "非本队submission记录不可访问",
+    "未全量深读122主题与所有Notebook"
+  ]
+}
