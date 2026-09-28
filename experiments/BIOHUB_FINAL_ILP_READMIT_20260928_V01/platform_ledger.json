@@ -55,7 +55,7 @@
           }
         }
       ],
-      "observed_at": "2026-09-28T10:39:07.817095+00:00",
+      "observed_at": "2026-09-28T10:43:09.153993+00:00",
       "ordinary_status": {
         "status": "COMPLETE"
       },
@@ -63,7 +63,8 @@
         "output_check": "PASS",
         "runtime_check": "PASS",
         "actual_input_versions": "PASS",
-        "fresh_formal_quota": "OBSERVED_BEFORE_REQUEST"
+        "fresh_formal_quota": "OBSERVED_BEFORE_REQUEST",
+        "fresh_pre_submit_gpu_quota": "NOT_REFRESHED_PER_REQUEST_AUDIT_GAP"
       },
       "requested_at": "2026-09-28T02:52:31.089892+00:00",
       "formal_status": "SubmissionStatus.COMPLETE"
@@ -112,7 +113,7 @@
           }
         }
       ],
-      "observed_at": "2026-09-28T10:39:07.817095+00:00",
+      "observed_at": "2026-09-28T10:43:09.153993+00:00",
       "ordinary_status": {
         "status": "COMPLETE"
       },
@@ -120,7 +121,8 @@
         "output_check": "PASS",
         "runtime_check": "PASS",
         "actual_input_versions": "PASS",
-        "fresh_formal_quota": "OBSERVED_BEFORE_REQUEST"
+        "fresh_formal_quota": "OBSERVED_BEFORE_REQUEST",
+        "fresh_pre_submit_gpu_quota": "NOT_REFRESHED_PER_REQUEST_AUDIT_GAP"
       },
       "requested_at": "2026-09-28T02:48:34.804774+00:00",
       "formal_status": "SubmissionStatus.COMPLETE"
@@ -169,15 +171,16 @@
           }
         }
       ],
-      "observed_at": "2026-09-28T10:39:07.817095+00:00",
+      "observed_at": "2026-09-28T10:43:09.153993+00:00",
       "ordinary_status": {
         "status": "COMPLETE"
       },
       "necessary_checks": {
-        "output_check": "UNKNOWN",
-        "runtime_check": "UNKNOWN",
-        "actual_input_versions": "UNKNOWN",
-        "fresh_formal_quota": "UNKNOWN"
+        "output_check": "PASS",
+        "runtime_check": "PASS",
+        "actual_input_versions": "PASS",
+        "fresh_formal_quota": "OBSERVED_BEFORE_REQUEST",
+        "fresh_pre_submit_gpu_quota": "OBSERVED_BEFORE_REQUEST"
       },
       "requested_at": "2026-09-28T03:00:01.659318+00:00",
       "formal_status": "SubmissionStatus.COMPLETE"
@@ -200,9 +203,9 @@
       "kernel_id": 136242225,
       "version": 1,
       "script_version_id": 353559166,
-      "submission_id": null,
+      "submission_id": 56638149,
       "source_sha256": "2bdc27117093b1e618cb14d66978759ee1ed6a96a6a0c94f7f217843bbd85314",
-      "status": "ORDINARY_COMPLETE",
+      "status": "SCORE_PENDING",
       "public_score": null,
       "direct_error": null,
       "events": [
@@ -216,12 +219,31 @@
             "versionNumber": 1,
             "kernelId": 136242225
           }
+        },
+        {
+          "type": "FORMAL_SUBMISSION",
+          "at": "2026-09-28T10:42:22.164574+00:00",
+          "message": "BIOHUB_FINAL_ILP_READMIT_20260928_V01 DIV02_READMIT940 V1 SV353559166",
+          "version": 1,
+          "sv": 353559166,
+          "response": {
+            "ref": 56638149
+          }
         }
       ],
-      "observed_at": "2026-09-28T10:39:05.329000+00:00",
+      "observed_at": "2026-09-28T10:43:09.153993+00:00",
       "ordinary_status": {
         "status": "COMPLETE"
-      }
+      },
+      "requested_at": "2026-09-28T10:42:22.164574+00:00",
+      "necessary_checks": {
+        "output_check": "PASS",
+        "runtime_check": "PASS",
+        "actual_input_versions": "PASS",
+        "fresh_formal_quota": "OBSERVED_BEFORE_REQUEST",
+        "fresh_pre_submit_gpu_quota": "OBSERVED_BEFORE_REQUEST"
+      },
+      "formal_status": "SubmissionStatus.PENDING"
     },
     {
       "candidate_id": "DIV04_READMIT9525",
@@ -267,25 +289,32 @@
           }
         }
       ],
-      "observed_at": "2026-09-28T10:39:07.817095+00:00",
+      "observed_at": "2026-09-28T10:43:09.153993+00:00",
       "ordinary_status": {
         "status": "COMPLETE"
       },
       "requested_at": "2026-09-28T10:38:41.737011+00:00",
-      "formal_status": "SubmissionStatus.PENDING"
+      "formal_status": "SubmissionStatus.PENDING",
+      "necessary_checks": {
+        "output_check": "PASS",
+        "runtime_check": "PASS",
+        "actual_input_versions": "PASS",
+        "fresh_formal_quota": "OBSERVED_BEFORE_REQUEST",
+        "fresh_pre_submit_gpu_quota": "OBSERVED_BEFORE_REQUEST"
+      }
     }
   ],
   "run_request_count": 5,
   "full_run_count": 5,
   "accepted_full_run_count": 5,
-  "formal_request_count": 4,
+  "formal_request_count": 5,
   "engineering_spare_count": 0,
   "formal_request_cap": 5,
   "maximum_batch_gpu_concurrency": 2,
   "final_selection_changed": false,
   "blocking_reason": null,
   "terminal_recovered": false,
-  "last_score_observed_at": "2026-09-28T10:39:07.817095+00:00",
+  "last_score_observed_at": "2026-09-28T10:43:09.153993+00:00",
   "wave2_decision_complete": true,
   "second_wave_decision": {
     "at": "2026-09-28T10:12:48.369695+00:00",

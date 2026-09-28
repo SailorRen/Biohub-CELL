@@ -1,0 +1,35 @@
+{
+  "arm": "DIV02_READMIT940",
+  "status": "PASS",
+  "csv_rows": 240784,
+  "csv_sha256": "3e097f5b7894446f799ab15fbca8a0c6ad1bda8f165f530aacb4ad5e1cf79919",
+  "graphs": {
+    "44b6_0113de3b": {
+      "nodes": 25837,
+      "edges": 25084
+    },
+    "44b6_0b24845f": {
+      "nodes": 20119,
+      "edges": 18858
+    },
+    "6bba_05b6850b": {
+      "nodes": 6243,
+      "edges": 6043
+    },
+    "6bba_05db0fb1": {
+      "nodes": 70348,
+      "edges": 68252
+    }
+  },
+  "relaxed_calls": {
+    "flow": 792,
+    "no_flow": 0
+  },
+  "det": 0.955,
+  "relaxed": 9.0,
+  "repair_fallback": 0,
+  "deadline_degraded": 0,
+  "gate_candidates": null,
+  "gate_finite_scores": null,
+  "gate_rejected": null
+}

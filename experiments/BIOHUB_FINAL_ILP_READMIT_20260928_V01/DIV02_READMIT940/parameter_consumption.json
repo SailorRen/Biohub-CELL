@@ -1,0 +1,37 @@
+{
+  "task": "BIOHUB_FINAL_ILP_READMIT_20260928_V01",
+  "arm": "DIV02_READMIT940",
+  "ilp": 0.2,
+  "readmit": 0.94,
+  "datasets": [
+    {
+      "dataset": "44b6_0113de3b",
+      "calls": 1,
+      "threshold": 0.94,
+      "passed_candidates": 144,
+      "added_before_later_pruning": 144
+    },
+    {
+      "dataset": "44b6_0b24845f",
+      "calls": 1,
+      "threshold": 0.94,
+      "passed_candidates": 1102,
+      "added_before_later_pruning": 1102
+    },
+    {
+      "dataset": "6bba_05b6850b",
+      "calls": 1,
+      "threshold": 0.94,
+      "passed_candidates": 103,
+      "added_before_later_pruning": 103
+    },
+    {
+      "dataset": "6bba_05db0fb1",
+      "calls": 1,
+      "threshold": 0.94,
+      "passed_candidates": 692,
+      "added_before_later_pruning": 692
+    }
+  ],
+  "note": "Added count is before later graph pruning; it is not a final retained-node count."
+}
