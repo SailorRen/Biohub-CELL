@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "sv": 353458552,
+  "observed_at": "2026-09-28T02:51:47.255486+00:00",
+  "source": "Completed exact notebook Input tab; independent page reload before reading each dataset avoids stale detail version",
+  "order": [
+    "primary",
+    "secondary",
+    "deepcenter",
+    "head"
+  ],
+  "versions": [
+    10,
+    2,
+    5,
+    1
+  ]
+}
