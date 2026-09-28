@@ -1,6 +1,6 @@
 {
   "task_id": "BIOHUB_FINAL_ILP_READMIT_20260928_V01",
-  "stage": "HOLD_UI_UNLOCK_REQUIRED",
+  "stage": "WAVE1_SCORE_PENDING",
   "first_wave": [
     "DIV04_READMIT940",
     "DIV04",
@@ -42,7 +42,7 @@
           }
         }
       ],
-      "observed_at": "2026-09-28T02:41:37.604338+00:00",
+      "observed_at": "2026-09-28T02:45:51.316667+00:00",
       "ordinary_status": {
         "status": "COMPLETE"
       },
@@ -69,9 +69,9 @@
       "kernel_id": 136194644,
       "version": 1,
       "script_version_id": 353458610,
-      "submission_id": null,
+      "submission_id": 56626811,
       "source_sha256": "9540869dbaf093c7199aac86bce3fca0cedd27abd051911ffa404ba26b11685f",
-      "status": "ORDINARY_COMPLETE",
+      "status": "SCORE_PENDING",
       "public_score": null,
       "direct_error": null,
       "events": [
@@ -85,9 +85,19 @@
             "versionNumber": 1,
             "kernelId": 136194644
           }
+        },
+        {
+          "type": "FORMAL_SUBMISSION",
+          "at": "2026-09-28T02:48:34.804774+00:00",
+          "message": "BIOHUB_FINAL_ILP_READMIT_20260928_V01 DIV04 V1 SV353458610",
+          "version": 1,
+          "sv": 353458610,
+          "response": {
+            "ref": 56626811
+          }
         }
       ],
-      "observed_at": "2026-09-28T02:41:39.631818+00:00",
+      "observed_at": "2026-09-28T02:49:03.697781+00:00",
       "ordinary_status": {
         "status": "COMPLETE"
       },
@@ -96,7 +106,9 @@
         "runtime_check": "PASS",
         "actual_input_versions": "UNKNOWN",
         "fresh_formal_quota": "UNKNOWN"
-      }
+      },
+      "requested_at": "2026-09-28T02:48:34.804774+00:00",
+      "formal_status": "SubmissionStatus.PENDING"
     },
     {
       "candidate_id": "READMIT940",
@@ -132,7 +144,7 @@
           }
         }
       ],
-      "observed_at": "2026-09-28T02:41:41.104570+00:00",
+      "observed_at": "2026-09-28T02:45:55.222428+00:00",
       "ordinary_status": {
         "status": "RUNNING"
       },
@@ -148,10 +160,12 @@
   "run_request_count": 3,
   "full_run_count": 3,
   "accepted_full_run_count": 3,
-  "formal_request_count": 0,
+  "formal_request_count": 1,
   "engineering_spare_count": 0,
   "formal_request_cap": 5,
   "maximum_batch_gpu_concurrency": 2,
   "final_selection_changed": false,
-  "blocking_reason": "Mac locked; cannot currently verify actual mounted Dataset versions and fresh formal quota through authenticated Kaggle UI."
+  "blocking_reason": null,
+  "terminal_recovered": false,
+  "last_score_observed_at": "2026-09-28T02:49:03.697781+00:00"
 }
