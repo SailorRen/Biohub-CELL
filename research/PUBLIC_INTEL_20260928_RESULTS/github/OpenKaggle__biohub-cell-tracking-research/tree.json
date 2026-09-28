@@ -1,0 +1,1304 @@
+{
+  "sha": "03bfe828bf7517203a09f17651bef2b400c12f47",
+  "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/03bfe828bf7517203a09f17651bef2b400c12f47",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96a7e98c38b2808be8488e0bbde8a2e1a66badd6",
+      "size": 521,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/96a7e98c38b2808be8488e0bbde8a2e1a66badd6"
+    },
+    {
+      "path": "CAMPAIGN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3edfa274a4be88a45c4e99dab1cd8f19256dc666",
+      "size": 24754,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/3edfa274a4be88a45c4e99dab1cd8f19256dc666"
+    },
+    {
+      "path": "CITATION.bib",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98310d1fa32ed3bf1671736539f8af2d801c44ff",
+      "size": 407,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/98310d1fa32ed3bf1671736539f8af2d801c44ff"
+    },
+    {
+      "path": "CITATION.cff",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a35117d7b42ae906e2207e5835744ee304eb4c48",
+      "size": 708,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/a35117d7b42ae906e2207e5835744ee304eb4c48"
+    },
+    {
+      "path": "DATA_LINEAGE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44f2f64b04fa5ceacf087beeaa877e675eb2800e",
+      "size": 1393,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/44f2f64b04fa5ceacf087beeaa877e675eb2800e"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67b963620a01ed605482f3c2ef66fa2ba5ab1320",
+      "size": 1080,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/67b963620a01ed605482f3c2ef66fa2ba5ab1320"
+    },
+    {
+      "path": "NOTICE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "222b336068f24a26807d2a7d992f9e554c6db5a1",
+      "size": 1607,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/222b336068f24a26807d2a7d992f9e554c6db5a1"
+    },
+    {
+      "path": "PROVENANCE.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "489635f38ae0bbeb55297e368d00a78e219181cb",
+      "size": 1648,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/489635f38ae0bbeb55297e368d00a78e219181cb"
+    },
+    {
+      "path": "PUBLIC_ARCHIVE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6dd3ee6ecfba280ceb81354d0d26164c7a72142",
+      "size": 751,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/d6dd3ee6ecfba280ceb81354d0d26164c7a72142"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9f9232915605b06ec4b455775be9dbb1ab9b2c0",
+      "size": 1872,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/b9f9232915605b06ec4b455775be9dbb1ab9b2c0"
+    },
+    {
+      "path": "REPRODUCIBILITY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ca257a653029237e38c2c853f7a232ad0e2b58b",
+      "size": 1441,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/4ca257a653029237e38c2c853f7a232ad0e2b58b"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "aef43987d0750d1c771052cf1a144a6c076200fa",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/aef43987d0750d1c771052cf1a144a6c076200fa"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/bidict-0.23.1-LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1cc6f8083163383d7f6df9c4b64cf970d01620c",
+      "size": 16784,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/d1cc6f8083163383d7f6df9c4b64cf970d01620c"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/donfig-0.8.1.post1-LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78695fe58012e8920dd321d8a243ad4416e13283",
+      "size": 1119,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/78695fe58012e8920dd321d8a243ad4416e13283"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/geff-1.2.0.1.1-LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca7b2656e44c23f5bbe4e2d0412ab065cdce1ccc",
+      "size": 1066,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/ca7b2656e44c23f5bbe4e2d0412ab065cdce1ccc"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/geff-spec-1.1.1-LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca7b2656e44c23f5bbe4e2d0412ab065cdce1ccc",
+      "size": 1066,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/ca7b2656e44c23f5bbe4e2d0412ab065cdce1ccc"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/ilpy-0.6.0-LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "438b882a93d285f55b73dd6a4f360dc352a5a1a5",
+      "size": 1066,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/438b882a93d285f55b73dd6a4f360dc352a5a1a5"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/imagecodecs-2026.6.26-LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8b9580f48f4953e76e0984215b4a044b88b0d6c",
+      "size": 1529,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/d8b9580f48f4953e76e0984215b4a044b88b0d6c"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/numcodecs-0.15.1-LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22c4904c4a4ad0c4e9bc9aa82037f2fd9c56a662",
+      "size": 1124,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/22c4904c4a4ad0c4e9bc9aa82037f2fd9c56a662"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/polars-1.42.0-LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33b09bbb6c5bd43c5e985e2affed64c5ed093616",
+      "size": 1145,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/33b09bbb6c5bd43c5e985e2affed64c5ed093616"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/pyscipopt-6.2.1-LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91afa2414cb15a4fd0f515d16248711e2c0e75e6",
+      "size": 1084,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/91afa2414cb15a4fd0f515d16248711e2c0e75e6"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/reyhanksatria-notebook-Apache-2.0-LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d77234945579b7fc1ee64c8212f9787f10ebbadf",
+      "size": 11351,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/d77234945579b7fc1ee64c8212f9787f10ebbadf"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/rustworkx-0.18.0-LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68c771a099958211169377d766a7389422f5573d",
+      "size": 10143,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/68c771a099958211169377d766a7389422f5573d"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/tracksdata-0.1.0rc6.dev3+g980c2d30a-LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "628d10094787ea8072264ae33467fed8cf271014",
+      "size": 1534,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/628d10094787ea8072264ae33467fed8cf271014"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/zarr-3.2.1-LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e8da4d2424241744037944bdf0a54ff458b3524",
+      "size": 1124,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/1e8da4d2424241744037944bdf0a54ff458b3524"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d049c237aedb87c7976cc49e5169a2aae2cc075",
+      "size": 4273,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/2d049c237aedb87c7976cc49e5169a2aae2cc075"
+    },
+    {
+      "path": "audit_campaign.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31a0058b1ddb600cbfaa1f9489b522d5ce50b8c0",
+      "size": 97308,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/31a0058b1ddb600cbfaa1f9489b522d5ce50b8c0"
+    },
+    {
+      "path": "build_budgeted_oof_protocol.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8c786598205543a04dd0db4bf88404f294a2d3a",
+      "size": 6444,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/a8c786598205543a04dd0db4bf88404f294a2d3a"
+    },
+    {
+      "path": "build_oof_manifests.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1525483ad37360de030f4c9b45dfa8df2e5efdc1",
+      "size": 2513,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/1525483ad37360de030f4c9b45dfa8df2e5efdc1"
+    },
+    {
+      "path": "build_oof_recovery_protocol.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9a96681be1352d0bab0ceeeee61123d2e103e09",
+      "size": 4932,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/d9a96681be1352d0bab0ceeeee61123d2e103e09"
+    },
+    {
+      "path": "decisions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "02f18edf65d4e499c00a5ac28cb90f2976a629ce",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/02f18edf65d4e499c00a5ac28cb90f2976a629ce"
+    },
+    {
+      "path": "decisions/BH-0005-min-track-length.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc39fc638ff23360eedae1ae0b6ae6208ae0af5a",
+      "size": 2043,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/bc39fc638ff23360eedae1ae0b6ae6208ae0af5a"
+    },
+    {
+      "path": "decisions/source-captures",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "07e350ac3355280cda597ab9a7af80b21fe96e51",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/07e350ac3355280cda597ab9a7af80b21fe96e51"
+    },
+    {
+      "path": "decisions/source-captures/BH-0005-min-track-length.DECISION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "208d8ddce30e4002e9e898bb9f8838d16113bd82",
+      "size": 1716,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/208d8ddce30e4002e9e898bb9f8838d16113bd82"
+    },
+    {
+      "path": "decisions/source-captures/MANIFEST.sha256",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9119855df2b45f890aab240881807ab8f16e7ad5",
+      "size": 103,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/9119855df2b45f890aab240881807ab8f16e7ad5"
+    },
+    {
+      "path": "decisions/source-captures/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c52ee3874c0ca3e8ca6b75163ecdc13cd0f2680a",
+      "size": 779,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/c52ee3874c0ca3e8ca6b75163ecdc13cd0f2680a"
+    },
+    {
+      "path": "download_sample.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86aa80c2c1b382bd56526c1161c48a0f39fda989",
+      "size": 3289,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/86aa80c2c1b382bd56526c1161c48a0f39fda989"
+    },
+    {
+      "path": "download_test_metadata.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "972837a2fe67816379caaed731a0d1201e3c62ff",
+      "size": 2143,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/972837a2fe67816379caaed731a0d1201e3c62ff"
+    },
+    {
+      "path": "extract_notebook.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08b25fd89e0e4fc19ee04ec3ca1d50a4d21d126a",
+      "size": 1273,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/08b25fd89e0e4fc19ee04ec3ca1d50a4d21d126a"
+    },
+    {
+      "path": "kaggle_runs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "17e51a204a88bb4fa5180e29017a7ec3bdfb4769",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/17e51a204a88bb4fa5180e29017a7ec3bdfb4769"
+    },
+    {
+      "path": "kaggle_runs/BH-0001",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a07e11519b556e5a95c6dd88298884b74c88a796",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/a07e11519b556e5a95c6dd88298884b74c88a796"
+    },
+    {
+      "path": "kaggle_runs/BH-0001/RUN_RECEIPT.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c89da8b1ff85387a81bb3063989f8f55a96dcbe",
+      "size": 1519,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/8c89da8b1ff85387a81bb3063989f8f55a96dcbe"
+    },
+    {
+      "path": "kaggle_runs/BH-0001/bidirectional_production_runtime_integrity.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcdf91c32e3edd67512a41a4d17ad200c6e75e3a",
+      "size": 2387,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/bcdf91c32e3edd67512a41a4d17ad200c6e75e3a"
+    },
+    {
+      "path": "kaggle_runs/BH-0001/dual_seed_frame_retention_guard_report.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a8e61bc366d39d5ff14a55f77c1f17bcc3952bf",
+      "size": 3297,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/4a8e61bc366d39d5ff14a55f77c1f17bcc3952bf"
+    },
+    {
+      "path": "kaggle_runs/BH-0001/secondary_seed_weights",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a7604ab925e0f8e9bea69e43668e10056a6f2570",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/a7604ab925e0f8e9bea69e43668e10056a6f2570"
+    },
+    {
+      "path": "kaggle_runs/BH-0001/secondary_seed_weights/unet_transformer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "84ead713b201a6f65c5e220c173dd7ed2f5f17ce",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/84ead713b201a6f65c5e220c173dd7ed2f5f17ce"
+    },
+    {
+      "path": "kaggle_runs/BH-0001/secondary_seed_weights/unet_transformer/split_0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4b4a9aaafce1eddff090dc1e525e487892b19214",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/4b4a9aaafce1eddff090dc1e525e487892b19214"
+    },
+    {
+      "path": "kaggle_runs/BH-0001/secondary_seed_weights/unet_transformer/split_0/SNAPSHOT_MANIFEST.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33627af65f17818212977284002d260959a03a06",
+      "size": 1291,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/33627af65f17818212977284002d260959a03a06"
+    },
+    {
+      "path": "kaggle_runs/BH-0001/secondary_seed_weights/unet_transformer/split_0/config.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8284b034025911ba95af7e9c6979aeb39d79ae74",
+      "size": 165,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/8284b034025911ba95af7e9c6979aeb39d79ae74"
+    },
+    {
+      "path": "kaggle_runs/BH-0001/secondary_seed_weights/unet_transformer/split_0/training_config.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19ab453f5a2eb298c8ac961ccdcd7e6d812dc7be",
+      "size": 899,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/19ab453f5a2eb298c8ac961ccdcd7e6d812dc7be"
+    },
+    {
+      "path": "kaggle_runs/BH-0001/submission_validation.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa25cc17972ca227562567289c077525cd687029",
+      "size": 1024,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/aa25cc17972ca227562567289c077525cd687029"
+    },
+    {
+      "path": "kaggle_runs/BH-0002-source",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d3f6e303ae064f5f759fb313f8d3d86f0493b5b3",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/d3f6e303ae064f5f759fb313f8d3d86f0493b5b3"
+    },
+    {
+      "path": "kaggle_runs/BH-0002-source/biohub-budgeted-embryo-oof-v1.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8a618b3410009781620cdb6916ab4ed0480dece",
+      "size": 61365,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/f8a618b3410009781620cdb6916ab4ed0480dece"
+    },
+    {
+      "path": "kaggle_runs/BH-0002-source/kernel-metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bfb34d5c7ea102453429ce6fd3be302cf45949e",
+      "size": 712,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/9bfb34d5c7ea102453429ce6fd3be302cf45949e"
+    },
+    {
+      "path": "kaggle_runs/BH-0002-terminal",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "870555bd1f4f9325347486eae7628f7b88618954",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/870555bd1f4f9325347486eae7628f7b88618954"
+    },
+    {
+      "path": "kaggle_runs/BH-0002-terminal/biohub-budgeted-embryo-oof-v1.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcca47d9987438578ad03924d860a28a8a3ce27d",
+      "size": 1198731,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/dcca47d9987438578ad03924d860a28a8a3ce27d"
+    },
+    {
+      "path": "kaggle_runs/BH-0002-terminal/budgeted_oof_protocol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b761bb3d69d9373424c9ff110bea3ce9ce796210",
+      "size": 8861,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/b761bb3d69d9373424c9ff110bea3ce9ce796210"
+    },
+    {
+      "path": "kaggle_runs/BH-0002-terminal/fold_0_train.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a469345f85df193ccd6fe51bb68294f73f1e0ac4",
+      "size": 1541,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/a469345f85df193ccd6fe51bb68294f73f1e0ac4"
+    },
+    {
+      "path": "kaggle_runs/BH-0003-source",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4d3b44f8ffa965556b7370af975d1bdb144f1297",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/4d3b44f8ffa965556b7370af975d1bdb144f1297"
+    },
+    {
+      "path": "kaggle_runs/BH-0003-source/biohub-budgeted-embryo-oof-1ep.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "727e5d94c770667dfed138e67029ae9700ee79c5",
+      "size": 62206,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/727e5d94c770667dfed138e67029ae9700ee79c5"
+    },
+    {
+      "path": "kaggle_runs/BH-0003-source/kernel-metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59eb094ac2f67549a24a64cfa82c07e9bc9096a3",
+      "size": 715,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/59eb094ac2f67549a24a64cfa82c07e9bc9096a3"
+    },
+    {
+      "path": "kaggle_runs/BH-0003",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e2af9e067e22e0abe45c996b27d2ad9c6ad8cf47",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/e2af9e067e22e0abe45c996b27d2ad9c6ad8cf47"
+    },
+    {
+      "path": "kaggle_runs/BH-0003/budgeted_oof_partial.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50f162642a9cc723e1d85392f5a62572e67cc6dc",
+      "size": 8344,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/50f162642a9cc723e1d85392f5a62572e67cc6dc"
+    },
+    {
+      "path": "kaggle_runs/BH-0003/budgeted_oof_protocol.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b85db55e913195981dc4910510d05d1183107a8",
+      "size": 9797,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/3b85db55e913195981dc4910510d05d1183107a8"
+    },
+    {
+      "path": "kaggle_runs/BH-0003/budgeted_oof_receipt.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "796ee67ce29fca344434a38fc1ca62f96738f5cb",
+      "size": 9758,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/796ee67ce29fca344434a38fc1ca62f96738f5cb"
+    },
+    {
+      "path": "kaggle_runs/BH-0003/fold_0_predict.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be211f9746d4ab3f3feb162fdc31a6318ef3b84d",
+      "size": 305,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/be211f9746d4ab3f3feb162fdc31a6318ef3b84d"
+    },
+    {
+      "path": "kaggle_runs/BH-0003/fold_0_train.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6be642ee6d5139a6979717f7153f7f0cc2b939a1",
+      "size": 773,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/6be642ee6d5139a6979717f7153f7f0cc2b939a1"
+    },
+    {
+      "path": "kaggle_runs/BH-0003/fold_1_predict.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2613b77aa424acd5dec0d592f2e815f238c1c8c0",
+      "size": 305,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/2613b77aa424acd5dec0d592f2e815f238c1c8c0"
+    },
+    {
+      "path": "kaggle_runs/BH-0003/fold_1_train.log",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84a7b7458d30857d3f4e721362b4eefcf5db3258",
+      "size": 769,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/84a7b7458d30857d3f4e721362b4eefcf5db3258"
+    },
+    {
+      "path": "kernels",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3c1ea7916ed85e4e85748edcd90a363b887e6fbd",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/3c1ea7916ed85e4e85748edcd90a363b887e6fbd"
+    },
+    {
+      "path": "kernels/biohub_0946_public_deps_repro",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d69d99823788c33fa5086dff92f3a06c88bbfd12",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/d69d99823788c33fa5086dff92f3a06c88bbfd12"
+    },
+    {
+      "path": "kernels/biohub_0946_public_deps_repro/REPRO_RECEIPT.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62a298432549e985e86dd12c7b4b176a2ad05d86",
+      "size": 1199,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/62a298432549e985e86dd12c7b4b176a2ad05d86"
+    },
+    {
+      "path": "kernels/biohub_0946_public_deps_repro/biohub-0946-public-deps-repro.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b320446a515c443bad66e3297dfcb80d3c38b2f6",
+      "size": 173526,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/b320446a515c443bad66e3297dfcb80d3c38b2f6"
+    },
+    {
+      "path": "kernels/biohub_0946_public_deps_repro/biohub-0946-public-deps-repro.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31671490826cb3a6ad16777cde381e53631f10ff",
+      "size": 12679,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/31671490826cb3a6ad16777cde381e53631f10ff"
+    },
+    {
+      "path": "kernels/biohub_0946_public_deps_repro/biohub-0946-public-deps-repro.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55eed5bd6ec2b8f2d1be4024a7fca7649efddc54",
+      "size": 156500,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/55eed5bd6ec2b8f2d1be4024a7fca7649efddc54"
+    },
+    {
+      "path": "kernels/biohub_0946_public_deps_repro/kernel-metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc7af5660ad9df643935a564009fb807285e95b8",
+      "size": 824,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/dc7af5660ad9df643935a564009fb807285e95b8"
+    },
+    {
+      "path": "kernels/biohub_budgeted_embryo_oof",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1957c601811245e5a85b1b30af3546c1eaaa9f47",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/1957c601811245e5a85b1b30af3546c1eaaa9f47"
+    },
+    {
+      "path": "kernels/biohub_budgeted_embryo_oof/biohub-budgeted-embryo-oof.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8a618b3410009781620cdb6916ab4ed0480dece",
+      "size": 61365,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/f8a618b3410009781620cdb6916ab4ed0480dece"
+    },
+    {
+      "path": "kernels/biohub_budgeted_embryo_oof/kernel-metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1251e6f1fa9283393e37fe1cb90e4fa3b62f6045",
+      "size": 712,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/1251e6f1fa9283393e37fe1cb90e4fa3b62f6045"
+    },
+    {
+      "path": "kernels/biohub_budgeted_embryo_oof_1ep_recovery",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dc731a454edc55c2a88420bdfe793e246c9b4463",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/dc731a454edc55c2a88420bdfe793e246c9b4463"
+    },
+    {
+      "path": "kernels/biohub_budgeted_embryo_oof_1ep_recovery/biohub-budgeted-embryo-oof-1ep.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "727e5d94c770667dfed138e67029ae9700ee79c5",
+      "size": 62206,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/727e5d94c770667dfed138e67029ae9700ee79c5"
+    },
+    {
+      "path": "kernels/biohub_budgeted_embryo_oof_1ep_recovery/kernel-metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75100c1b26a626f674e731766fb326ff05727a21",
+      "size": 718,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/75100c1b26a626f674e731766fb326ff05727a21"
+    },
+    {
+      "path": "official",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f1a0f0620ed03e3bff496bd6fc39bdb7b1d0421a",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/f1a0f0620ed03e3bff496bd6fc39bdb7b1d0421a"
+    },
+    {
+      "path": "official/baseline_kernel_environment_status.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4b021546adb3e368a7fc8aaec9a9ea2e7f4749e",
+      "size": 4000,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/b4b021546adb3e368a7fc8aaec9a9ea2e7f4749e"
+    },
+    {
+      "path": "official/leaderboard_20260909T1113Z",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e8d077ffc6aa165c94dcbb23fadef708ac70467c",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/e8d077ffc6aa165c94dcbb23fadef708ac70467c"
+    },
+    {
+      "path": "official/leaderboard_20260909T1113Z/receipt.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe4a8a4169850a5997829a713c1a50febe5cf8c8",
+      "size": 1452,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/fe4a8a4169850a5997829a713c1a50febe5cf8c8"
+    },
+    {
+      "path": "official/oof_kernel_status.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a76dfcf99900d31c9d876b5685c0e8d5ab1bbc4",
+      "size": 5427,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/3a76dfcf99900d31c9d876b5685c0e8d5ab1bbc4"
+    },
+    {
+      "path": "official/oof_recovery_kernel_status.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98e8b9634f209d40e0335f399218d01fdb8470cf",
+      "size": 3987,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/98e8b9634f209d40e0335f399218d01fdb8470cf"
+    },
+    {
+      "path": "official/oof_recovery_launch_status.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22995cb4dbb7cc3ad3aa6d133370753f692b080b",
+      "size": 474,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/22995cb4dbb7cc3ad3aa6d133370753f692b080b"
+    },
+    {
+      "path": "official/oof_recovery_runtime_activity.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68c09f866d54c1bdd9f99d57fad855e19728ec8b",
+      "size": 3182,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/68c09f866d54c1bdd9f99d57fad855e19728ec8b"
+    },
+    {
+      "path": "official/oof_recovery_status_20260909T121825Z.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48d88d4c01f3811a0df7a7138f2dd9816385ec64",
+      "size": 474,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/48d88d4c01f3811a0df7a7138f2dd9816385ec64"
+    },
+    {
+      "path": "official/oof_runtime_activity.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78eafaca4e9b1ae115681bac1ea47e854ce3662f",
+      "size": 7356,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/78eafaca4e9b1ae115681bac1ea47e854ce3662f"
+    },
+    {
+      "path": "official/pages",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c8db186b0965bd323810db987e1fecfdae8a7413",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/c8db186b0965bd323810db987e1fecfdae8a7413"
+    },
+    {
+      "path": "official/pages/abstract.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "682168546713107cfd7624300486c5d2e8b87d44",
+      "size": 465,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/682168546713107cfd7624300486c5d2e8b87d44"
+    },
+    {
+      "path": "official/pages/code-requirements.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "983d00f2270bae3f8adebc2f5e0815141b7edb09",
+      "size": 835,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/983d00f2270bae3f8adebc2f5e0815141b7edb09"
+    },
+    {
+      "path": "official/pages/data-description.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c03366c7543e1be144cff7f024108400ee8dd84",
+      "size": 2311,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/2c03366c7543e1be144cff7f024108400ee8dd84"
+    },
+    {
+      "path": "official/pages/description.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0231274220e03aa345d80c8dc54fa410e82942a8",
+      "size": 1070,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/0231274220e03aa345d80c8dc54fa410e82942a8"
+    },
+    {
+      "path": "official/pages/evaluation.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7980bd890b3ade5ffbc40afebc78615f1f8caefa",
+      "size": 2392,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/7980bd890b3ade5ffbc40afebc78615f1f8caefa"
+    },
+    {
+      "path": "official/pages/prizes.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ecbb4543d9440dfda368add30276169313d85f31",
+      "size": 148,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/ecbb4543d9440dfda368add30276169313d85f31"
+    },
+    {
+      "path": "official/pages/rules.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7d80c0b6277935b2904c4d5d5f773277b15e786",
+      "size": 36623,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/a7d80c0b6277935b2904c4d5d5f773277b15e786"
+    },
+    {
+      "path": "official/pages/timeline.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1438431cec3f35eeebac0c3f0ad5010e2e194f65",
+      "size": 505,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/1438431cec3f35eeebac0c3f0ad5010e2e194f65"
+    },
+    {
+      "path": "official/receipt.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42b8a9825a1642e36f14fb8178feb803cadbd0af",
+      "size": 5403,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/42b8a9825a1642e36f14fb8178feb803cadbd0af"
+    },
+    {
+      "path": "official/source_notebook_license_receipt.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f48d1ca9b2fcf0a8ca395833ccb5254dd3aaec6",
+      "size": 1004,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/1f48d1ca9b2fcf0a8ca395833ccb5254dd3aaec6"
+    },
+    {
+      "path": "official/submission_56108120_status.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87437ffcd92652770b071fa9514a13c199166ba3",
+      "size": 752,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/87437ffcd92652770b071fa9514a13c199166ba3"
+    },
+    {
+      "path": "official/winning_model_documentation_requirements.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abcd410aafd665e13c158aa121240af1b23f9506",
+      "size": 2284,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/abcd410aafd665e13c158aa121240af1b23f9506"
+    },
+    {
+      "path": "prepare_oof_kernel.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fad88aa03eddf73f8f4d9adbbf3a79a229d0d45",
+      "size": 17607,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/5fad88aa03eddf73f8f4d9adbbf3a79a229d0d45"
+    },
+    {
+      "path": "prepare_public_repro.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e962ac910c3c57c8f7d700e566f06274f884900",
+      "size": 4501,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/4e962ac910c3c57c8f7d700e566f06274f884900"
+    },
+    {
+      "path": "public_assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8b5d59666d974cedd3609d257273588441bac998",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/8b5d59666d974cedd3609d257273588441bac998"
+    },
+    {
+      "path": "public_assets/deepcenter",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f2a7b0065f8a84cd0edf9b2e7d4f97695efe5fce",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/f2a7b0065f8a84cd0edf9b2e7d4f97695efe5fce"
+    },
+    {
+      "path": "public_assets/deepcenter/ARTIFACT_MANIFEST.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f16bf911ad997d93a9a6014dc7cd425d8930d6ab",
+      "size": 7071,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/f16bf911ad997d93a9a6014dc7cd425d8930d6ab"
+    },
+    {
+      "path": "public_assets/deepcenter/dataset-metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c680482c80f3a57d286e389835a91ae40dc9d01b",
+      "size": 420,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/c680482c80f3a57d286e389835a91ae40dc9d01b"
+    },
+    {
+      "path": "public_assets/primary",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d5b5ba31a57c3b93cb711f7569d0b94de22d0397",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/d5b5ba31a57c3b93cb711f7569d0b94de22d0397"
+    },
+    {
+      "path": "public_assets/primary/ARTIFACT_MANIFEST.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b04882453483a16d6bf80a8b4a85ca5b11503baf",
+      "size": 4376,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/b04882453483a16d6bf80a8b4a85ca5b11503baf"
+    },
+    {
+      "path": "public_assets/primary/dataset-metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f17740498d3db37fb311400e478c7018b6eeb382",
+      "size": 390,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/f17740498d3db37fb311400e478c7018b6eeb382"
+    },
+    {
+      "path": "public_assets/secondary",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "abaa06fa0ad44c0abbd05b7ea17bc3cf08bfd087",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/abaa06fa0ad44c0abbd05b7ea17bc3cf08bfd087"
+    },
+    {
+      "path": "public_assets/secondary/ARTIFACT_MANIFEST.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "714a47e67f1e62334cc9bf35b29c30217d5ca92a",
+      "size": 6580,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/714a47e67f1e62334cc9bf35b29c30217d5ca92a"
+    },
+    {
+      "path": "public_assets/secondary/dataset-metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45b28f87c224d12ec8515fc803e766e5e64a6e67",
+      "size": 395,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/45b28f87c224d12ec8515fc803e766e5e64a6e67"
+    },
+    {
+      "path": "public_assets/secondary/source",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8e060d10dc36fe8596f7b8af9148108c4215140b",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/8e060d10dc36fe8596f7b8af9148108c4215140b"
+    },
+    {
+      "path": "public_assets/secondary/source/dataspec.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa48da06928cf766423b6a9e0c6bab514220266b",
+      "size": 1229,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/fa48da06928cf766423b6a9e0c6bab514220266b"
+    },
+    {
+      "path": "public_assets/secondary/source/evaluate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8dc0f154f57d0fb306ff5723e3873900bbed8c3",
+      "size": 6835,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/d8dc0f154f57d0fb306ff5723e3873900bbed8c3"
+    },
+    {
+      "path": "public_assets/secondary/source/kaggle_dependency_install_command.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ce660abfdd27f9400a318e389006633ba3eb89b",
+      "size": 167,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/7ce660abfdd27f9400a318e389006633ba3eb89b"
+    },
+    {
+      "path": "public_assets/secondary/source/metrics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8add1faf1a0a86b112306bd1adf22ff1fc9cfac4",
+      "size": 15843,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/8add1faf1a0a86b112306bd1adf22ff1fc9cfac4"
+    },
+    {
+      "path": "public_assets/secondary/source/predict_unet_transformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7434e1bf1dbffc8e379eee2705a55acb0dbc50a2",
+      "size": 26008,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/7434e1bf1dbffc8e379eee2705a55acb0dbc50a2"
+    },
+    {
+      "path": "public_assets/secondary/source/train_unet_transformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c6219f3c798c6d4b7d2d23a4d61a916e01038da",
+      "size": 49438,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/1c6219f3c798c6d4b7d2d23a4d61a916e01038da"
+    },
+    {
+      "path": "public_notebooks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d791d066bce91d01ebd6824bff321254b9dec907",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/d791d066bce91d01ebd6824bff321254b9dec907"
+    },
+    {
+      "path": "public_notebooks/reyhanksatria_0946",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c671d9422d00c9fa3c35a355b9702acacb3fc3dc",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/c671d9422d00c9fa3c35a355b9702acacb3fc3dc"
+    },
+    {
+      "path": "public_notebooks/reyhanksatria_0946/biohub-cell-tracking-0-946-lb.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15d525a1a413fc35a08424f2ce60fc83bc29d5a7",
+      "size": 173533,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/15d525a1a413fc35a08424f2ce60fc83bc29d5a7"
+    },
+    {
+      "path": "public_notebooks/reyhanksatria_0946/biohub-cell-tracking-0-946-lb.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31671490826cb3a6ad16777cde381e53631f10ff",
+      "size": 12679,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/31671490826cb3a6ad16777cde381e53631f10ff"
+    },
+    {
+      "path": "public_notebooks/reyhanksatria_0946/biohub-cell-tracking-0-946-lb.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44bac08ca604853cf0442d61b1f7818841a2e3a0",
+      "size": 156506,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/44bac08ca604853cf0442d61b1f7818841a2e3a0"
+    },
+    {
+      "path": "public_notebooks/reyhanksatria_0946/kernel-metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcb1507ce8b76d0a428c59fffcad378071763136",
+      "size": 697,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/bcb1507ce8b76d0a428c59fffcad378071763136"
+    },
+    {
+      "path": "public_notebooks/scout_0948_repro",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4faf754751ddcf51696d51e402d2e4585a2c02ee",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/4faf754751ddcf51696d51e402d2e4585a2c02ee"
+    },
+    {
+      "path": "public_notebooks/scout_0948_repro/biohub-0-948-reproduction-20260901.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f54c79cd6139ba27d2001e3498d3bdf39ddce85c",
+      "size": 209559,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/f54c79cd6139ba27d2001e3498d3bdf39ddce85c"
+    },
+    {
+      "path": "public_notebooks/scout_0948_repro/kernel-metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b903a34ec98d306fdbf331ef7701e3d96b4c586",
+      "size": 851,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/0b903a34ec98d306fdbf331ef7701e3d96b4c586"
+    },
+    {
+      "path": "public_notebooks/scout_biohub_095",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8fe2c989e7bfdffb8f0ff5ba0e22e6d3c425c7c8",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/8fe2c989e7bfdffb8f0ff5ba0e22e6d3c425c7c8"
+    },
+    {
+      "path": "public_notebooks/scout_biohub_095/biohub-0-95.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c7830d150909ffefca4904c561ac8ecbc64341a",
+      "size": 33365,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/2c7830d150909ffefca4904c561ac8ecbc64341a"
+    },
+    {
+      "path": "public_notebooks/scout_biohub_095/kernel-metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab4206788a9be351554986f871e79dd56d0c9428",
+      "size": 671,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/ab4206788a9be351554986f871e79dd56d0c9428"
+    },
+    {
+      "path": "public_notebooks/scout_lineage_forge",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b4c3085eb38ae7fba2d8f442a6e7bc70e2b21c1e",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/b4c3085eb38ae7fba2d8f442a6e7bc70e2b21c1e"
+    },
+    {
+      "path": "public_notebooks/scout_lineage_forge/biohub-lineage-forge-precision-tracking.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b0ed8f4b9e911f735cfeb98858d480771e1e761",
+      "size": 220793,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/6b0ed8f4b9e911f735cfeb98858d480771e1e761"
+    },
+    {
+      "path": "public_notebooks/scout_lineage_forge/kernel-metadata.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88bd0abb396ef09509088a06837fa83de3fb2ebc",
+      "size": 869,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/88bd0abb396ef09509088a06837fa83de3fb2ebc"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2015073861e16d396bf93f1c670023470cc3bf51",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/2015073861e16d396bf93f1c670023470cc3bf51"
+    },
+    {
+      "path": "src/analyze_oof.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "901cb5f18e1ee8e575bcc328d38b83c50f03dabd",
+      "size": 7323,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/901cb5f18e1ee8e575bcc328d38b83c50f03dabd"
+    },
+    {
+      "path": "src/finalize_oof.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3905fc2b7e5696eaa8198399d28ac4e59f1ac191",
+      "size": 7915,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/3905fc2b7e5696eaa8198399d28ac4e59f1ac191"
+    },
+    {
+      "path": "src/finalize_oof_parent.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ac550b7cb8b41d168531614031c2a2d1df0099a",
+      "size": 8389,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/0ac550b7cb8b41d168531614031c2a2d1df0099a"
+    },
+    {
+      "path": "src/finalize_oof_recovery.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dbdbd637a6e24766be7a3af8b741451577999a0",
+      "size": 11793,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/3dbdbd637a6e24766be7a3af8b741451577999a0"
+    },
+    {
+      "path": "src/record_oof_recovery_launch.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19825994f96d9de520819870a5e313b73c05a870",
+      "size": 8131,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/19825994f96d9de520819870a5e313b73c05a870"
+    },
+    {
+      "path": "src/record_oof_recovery_terminal.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed4730db7b943b23e7e4ce646467f00dc2d3e0e0",
+      "size": 10414,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/ed4730db7b943b23e7e4ce646467f00dc2d3e0e0"
+    },
+    {
+      "path": "src/record_oof_terminal.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b51eaaed3538f1b9f9301a57bed269ab6a298511",
+      "size": 8951,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/b51eaaed3538f1b9f9301a57bed269ab6a298511"
+    },
+    {
+      "path": "src/validate_oof_receipt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1db2f7cb9cebf3f70eaf8e8067ac04d5cda7985f",
+      "size": 7159,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/1db2f7cb9cebf3f70eaf8e8067ac04d5cda7985f"
+    },
+    {
+      "path": "src/validate_oof_recovery.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd1d76baa8dc98977cf5613e0d672781524de319",
+      "size": 8148,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/bd1d76baa8dc98977cf5613e0d672781524de319"
+    },
+    {
+      "path": "src/validate_submission.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f626f5deba33f927413171ca1704035a31d6a5a",
+      "size": 8241,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/7f626f5deba33f927413171ca1704035a31d6a5a"
+    },
+    {
+      "path": "sync_kernel_status.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4d44f1a8a75ff3eaca2ff5ed28bcdf25665130b",
+      "size": 3435,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/c4d44f1a8a75ff3eaca2ff5ed28bcdf25665130b"
+    },
+    {
+      "path": "sync_official.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5e61456b5807a9bba385253599e4a4d884cbdf8",
+      "size": 4045,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/f5e61456b5807a9bba385253599e4a4d884cbdf8"
+    },
+    {
+      "path": "sync_submission_status.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ca1388df720234b1527b21591f69a4d09d504da",
+      "size": 2347,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/1ca1388df720234b1527b21591f69a4d09d504da"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d96bdbea153bc24b7fab90f51492aa946103cf66",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/d96bdbea153bc24b7fab90f51492aa946103cf66"
+    },
+    {
+      "path": "tests/test_analyze_oof.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2be0b0f4cb97e52c15545538529a70aaf1326dc4",
+      "size": 2495,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/2be0b0f4cb97e52c15545538529a70aaf1326dc4"
+    },
+    {
+      "path": "tests/test_finalize_oof.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be3e541d393bd876cc1333301b533f695e4ba3b2",
+      "size": 6466,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/be3e541d393bd876cc1333301b533f695e4ba3b2"
+    },
+    {
+      "path": "tests/test_finalize_oof_parent.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "137e72c4c6976a890708bc831787c0b57f04fb1d",
+      "size": 4739,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/137e72c4c6976a890708bc831787c0b57f04fb1d"
+    },
+    {
+      "path": "tests/test_finalize_oof_recovery.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1ab3c5e1d3e7521cca164260280fcf5ad14acf5",
+      "size": 10352,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/d1ab3c5e1d3e7521cca164260280fcf5ad14acf5"
+    },
+    {
+      "path": "tests/test_oof_recovery.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "263ba9c2382e76a51010a705e25d5785b112f07d",
+      "size": 7118,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/263ba9c2382e76a51010a705e25d5785b112f07d"
+    },
+    {
+      "path": "tests/test_oof_terminal_transition.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d6f5a3b3e194b323dbe2296193f2837a6223425",
+      "size": 14223,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/5d6f5a3b3e194b323dbe2296193f2837a6223425"
+    },
+    {
+      "path": "tests/test_record_oof_recovery_launch.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12dcdc6b8cce2adb67d7c13501a67a1258130a14",
+      "size": 4465,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/12dcdc6b8cce2adb67d7c13501a67a1258130a14"
+    },
+    {
+      "path": "tests/test_record_oof_recovery_terminal.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "acac088ea2855b9f7cc24a649064d4f2e651f2a8",
+      "size": 6505,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/acac088ea2855b9f7cc24a649064d4f2e651f2a8"
+    },
+    {
+      "path": "tests/test_record_oof_terminal.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "609027fc32faae6c3587ead4d99a11465fadcf62",
+      "size": 5595,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/609027fc32faae6c3587ead4d99a11465fadcf62"
+    },
+    {
+      "path": "tests/test_sync_kernel_status.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6676b7bb7688fd04c6a6c0dd1243a1c367a88a36",
+      "size": 2150,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/6676b7bb7688fd04c6a6c0dd1243a1c367a88a36"
+    },
+    {
+      "path": "tests/test_validate_oof_receipt.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59ec1505c3af1adb22f98317ddbb60c572cfc1c6",
+      "size": 3192,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/59ec1505c3af1adb22f98317ddbb60c572cfc1c6"
+    },
+    {
+      "path": "tests/test_validate_submission.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec54d23d56834d668972688f31c489e699fe49f4",
+      "size": 2047,
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/blobs/ec54d23d56834d668972688f31c489e699fe49f4"
+    }
+  ],
+  "truncated": false
+}

@@ -55,7 +55,7 @@
           }
         }
       ],
-      "observed_at": "2026-09-28T10:16:35.867586+00:00",
+      "observed_at": "2026-09-28T10:25:50.772984+00:00",
       "ordinary_status": {
         "status": "COMPLETE"
       },
@@ -112,7 +112,7 @@
           }
         }
       ],
-      "observed_at": "2026-09-28T10:16:37.973203+00:00",
+      "observed_at": "2026-09-28T10:25:53.345695+00:00",
       "ordinary_status": {
         "status": "COMPLETE"
       },
@@ -169,7 +169,7 @@
           }
         }
       ],
-      "observed_at": "2026-09-28T10:16:39.165528+00:00",
+      "observed_at": "2026-09-28T10:25:54.529250+00:00",
       "ordinary_status": {
         "status": "COMPLETE"
       },
@@ -218,7 +218,7 @@
           }
         }
       ],
-      "observed_at": "2026-09-28T10:16:40.509218+00:00",
+      "observed_at": "2026-09-28T10:25:56.365667+00:00",
       "ordinary_status": {
         "status": "RUNNING"
       }
@@ -257,7 +257,7 @@
           }
         }
       ],
-      "observed_at": "2026-09-28T10:16:41.888104+00:00",
+      "observed_at": "2026-09-28T10:25:57.605733+00:00",
       "ordinary_status": {
         "status": "RUNNING"
       }
@@ -277,7 +277,7 @@
   "wave2_decision_complete": true,
   "second_wave_decision": {
     "at": "2026-09-28T10:12:48.369695+00:00",
-    "rule": "组合唯一最高且 > 0.956",
+    "rule": "\u7ec4\u5408\u552f\u4e00\u6700\u9ad8\u4e14 > 0.956",
     "evidence": {
       "DIV04_READMIT940": {
         "submission_id": 56626891,
@@ -292,7 +292,7 @@
         "public_score": "0.957"
       }
     },
-    "reason": "组合0.958唯一最高；ILP0.2继续降低分裂成本，readmit0.9525缓和补回阈值。两份在运行前同时冻结，不采用新情报中的其他方法。",
+    "reason": "\u7ec4\u54080.958\u552f\u4e00\u6700\u9ad8\uff1bILP0.2\u7ee7\u7eed\u964d\u4f4e\u5206\u88c2\u6210\u672c\uff0creadmit0.9525\u7f13\u548c\u8865\u56de\u9608\u503c\u3002\u4e24\u4efd\u5728\u8fd0\u884c\u524d\u540c\u65f6\u51bb\u7ed3\uff0c\u4e0d\u91c7\u7528\u65b0\u60c5\u62a5\u4e2d\u7684\u5176\u4ed6\u65b9\u6cd5\u3002",
     "remaining_formal_budget": 2,
     "final_selection_changed": false
   }

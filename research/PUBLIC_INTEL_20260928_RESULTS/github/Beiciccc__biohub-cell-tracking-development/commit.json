@@ -1,0 +1,101 @@
+{
+  "sha": "5b36660820a739b85af099abf59244724fef61d0",
+  "node_id": "C_kwDOTKIJrdoAKDViMzY2NjA4MjBhNzM5Yjg1YWYwOTlhYmY1OTI0NDcyNGZlZjYxZDA",
+  "commit": {
+    "author": {
+      "name": "Kun Zhang",
+      "email": "kun027901@gmail.com",
+      "date": "2026-09-01T15:13:47Z"
+    },
+    "committer": {
+      "name": "Kun Zhang",
+      "email": "kun027901@gmail.com",
+      "date": "2026-09-01T15:13:47Z"
+    },
+    "message": "Record exp243 submission",
+    "tree": {
+      "sha": "2e23016358d24ed2a96d249fe5384d83de2a26c2",
+      "url": "https://api.github.com/repos/Beiciccc/biohub-cell-tracking-development/git/trees/2e23016358d24ed2a96d249fe5384d83de2a26c2"
+    },
+    "url": "https://api.github.com/repos/Beiciccc/biohub-cell-tracking-development/git/commits/5b36660820a739b85af099abf59244724fef61d0",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/Beiciccc/biohub-cell-tracking-development/commits/5b36660820a739b85af099abf59244724fef61d0",
+  "html_url": "https://github.com/Beiciccc/biohub-cell-tracking-development/commit/5b36660820a739b85af099abf59244724fef61d0",
+  "comments_url": "https://api.github.com/repos/Beiciccc/biohub-cell-tracking-development/commits/5b36660820a739b85af099abf59244724fef61d0/comments",
+  "author": {
+    "login": "Beiciccc",
+    "id": 149979447,
+    "node_id": "U_kgDOCPCBNw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/149979447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Beiciccc",
+    "html_url": "https://github.com/Beiciccc",
+    "followers_url": "https://api.github.com/users/Beiciccc/followers",
+    "following_url": "https://api.github.com/users/Beiciccc/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Beiciccc/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Beiciccc/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Beiciccc/subscriptions",
+    "organizations_url": "https://api.github.com/users/Beiciccc/orgs",
+    "repos_url": "https://api.github.com/users/Beiciccc/repos",
+    "events_url": "https://api.github.com/users/Beiciccc/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Beiciccc/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "Beiciccc",
+    "id": 149979447,
+    "node_id": "U_kgDOCPCBNw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/149979447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Beiciccc",
+    "html_url": "https://github.com/Beiciccc",
+    "followers_url": "https://api.github.com/users/Beiciccc/followers",
+    "following_url": "https://api.github.com/users/Beiciccc/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Beiciccc/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Beiciccc/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Beiciccc/subscriptions",
+    "organizations_url": "https://api.github.com/users/Beiciccc/orgs",
+    "repos_url": "https://api.github.com/users/Beiciccc/repos",
+    "events_url": "https://api.github.com/users/Beiciccc/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Beiciccc/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "f53194c918a19dbde12e3e4b0db9efb1139c2c7a",
+      "url": "https://api.github.com/repos/Beiciccc/biohub-cell-tracking-development/commits/f53194c918a19dbde12e3e4b0db9efb1139c2c7a",
+      "html_url": "https://github.com/Beiciccc/biohub-cell-tracking-development/commit/f53194c918a19dbde12e3e4b0db9efb1139c2c7a"
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "additions": 1,
+    "deletions": 0
+  },
+  "files": [
+    {
+      "sha": "6d4ec51e00e90c2bc418d2e58eb79edbfadbba61",
+      "filename": "docs/experiment_log.md",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 0,
+      "changes": 1,
+      "blob_url": "https://github.com/Beiciccc/biohub-cell-tracking-development/blob/5b36660820a739b85af099abf59244724fef61d0/docs%2Fexperiment_log.md",
+      "raw_url": "https://github.com/Beiciccc/biohub-cell-tracking-development/raw/5b36660820a739b85af099abf59244724fef61d0/docs%2Fexperiment_log.md",
+      "contents_url": "https://api.github.com/repos/Beiciccc/biohub-cell-tracking-development/contents/docs%2Fexperiment_log.md?ref=5b36660820a739b85af099abf59244724fef61d0",
+      "patch": "@@ -207,6 +207,7 @@ submission table.\n | exp240 | Kaggle code notebook | Public 0.935 pipeline variant with secondary edge fusion weight set to 0.18; all other settings fixed | pending | pending | Ref 55940836; 234,805 rows with 119,483 nodes and 115,322 edges across four datasets; submission SHA-256 `aead9c2572289012cdb92005ac92b8ec62b50f4c2486b71ea3e542383971a2f1` |\n | exp241 | Kaggle code notebook | Public 0.935 pipeline variant with secondary edge fusion weight set to 0.20; all other settings fixed | pending | pending | Ref 55941477; 234,871 rows with 119,517 nodes and 115,354 edges across four datasets; submission SHA-256 `f9d42e27f6b2cbeba1ea8f433087fba45be7742b41b38d271c4109339e9279c4` |\n | exp242 | Kaggle code notebook | Public 0.935 pipeline variant with secondary edge fusion weight set to 0.22; all other settings fixed | pending | pending | Ref 55942125; 235,046 rows with 119,606 nodes and 115,440 edges across four datasets; submission SHA-256 `8f94d55a607bb39649adc8927ac9de07e7eefff490eb7d196f08e86276445db9` |\n+| exp243 | Kaggle code notebook | Public 0.935 pipeline variant with secondary edge fusion weight set to 0.25; all other settings fixed | pending | pending | Ref 55942767; 235,245 rows with 119,706 nodes and 115,539 edges across four datasets; submission SHA-256 `e5934891e85e6ad60c49c8682b6d17fe3f5b9511c60a2f35fbe5d7936a02ecf0` |\n \n Runtime rule update: CPU rule-based variants that take about 900 seconds on the\n public test set are not safe for submission. Further variants should either use"
+    }
+  ]
+}

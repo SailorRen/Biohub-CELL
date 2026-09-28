@@ -1,0 +1,36 @@
+{
+  "at": "2026-09-28T10:19:12.036186+00:00",
+  "results": [
+    {
+      "submission_id": 56615374,
+      "read_status": "HTTPError",
+      "public_score": null,
+      "classification": "UNKNOWN"
+    },
+    {
+      "submission_id": 56619419,
+      "read_status": "HTTPError",
+      "public_score": null,
+      "classification": "UNKNOWN"
+    },
+    {
+      "submission_id": 56376695,
+      "read_status": "HTTPError",
+      "public_score": null,
+      "classification": "UNKNOWN"
+    },
+    {
+      "submission_id": 56591286,
+      "read_status": "HTTPError",
+      "public_score": null,
+      "classification": "UNKNOWN"
+    },
+    {
+      "submission_id": 55942767,
+      "read_status": "HTTPError",
+      "public_score": null,
+      "classification": "UNKNOWN"
+    }
+  ],
+  "note": "Public GitHub document IDs were tested once; this account did not obtain their submission records. No bypass or repeated requests."
+}

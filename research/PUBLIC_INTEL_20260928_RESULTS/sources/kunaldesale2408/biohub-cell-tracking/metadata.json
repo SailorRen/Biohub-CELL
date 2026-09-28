@@ -1,0 +1,30 @@
+{
+  "id": 130667075,
+  "ref": "kunaldesale2408/biohub-cell-tracking",
+  "title": "Biohub Cell Tracking",
+  "author": "Kunal Desale",
+  "slug": "biohub-cell-tracking",
+  "lastRunTime": "2026-09-25T10:14:31.967Z",
+  "language": "python",
+  "kernelType": "notebook",
+  "isPrivate": false,
+  "enableGpu": true,
+  "enableInternet": false,
+  "categoryIds": [
+    "gpu"
+  ],
+  "datasetDataSources": [
+    "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+    "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+    "pilkwang/biohub-tracking-support-pack-50ep-v1",
+    "anvithpothula/biohub-v1284-head-s075"
+  ],
+  "competitionDataSources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "totalVotes": 238,
+  "enableTpu": false,
+  "currentVersionNumber": 10,
+  "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "machineShape": "NvidiaTeslaT4"
+}

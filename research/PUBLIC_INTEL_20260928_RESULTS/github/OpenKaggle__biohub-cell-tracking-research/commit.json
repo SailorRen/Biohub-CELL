@@ -1,0 +1,125 @@
+{
+  "sha": "03bfe828bf7517203a09f17651bef2b400c12f47",
+  "node_id": "C_kwDOUtSe8NoAKDAzYmZlODI4YmY3NTE3MjAzYTA5ZjE3NjUxYmVmMmI0MDBjMTJmNDc",
+  "commit": {
+    "author": {
+      "name": "Jah-yee",
+      "email": "166608075+Jah-yee@users.noreply.github.com",
+      "date": "2026-09-28T09:59:39Z"
+    },
+    "committer": {
+      "name": "Jah-yee",
+      "email": "166608075+Jah-yee@users.noreply.github.com",
+      "date": "2026-09-28T09:59:39Z"
+    },
+    "message": "docs: add 2026-09 citation surfaces",
+    "tree": {
+      "sha": "a10a9eb6a89a36230c1615fd859e9a170b08fe45",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/trees/a10a9eb6a89a36230c1615fd859e9a170b08fe45"
+    },
+    "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/git/commits/03bfe828bf7517203a09f17651bef2b400c12f47",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/commits/03bfe828bf7517203a09f17651bef2b400c12f47",
+  "html_url": "https://github.com/OpenKaggle/biohub-cell-tracking-research/commit/03bfe828bf7517203a09f17651bef2b400c12f47",
+  "comments_url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/commits/03bfe828bf7517203a09f17651bef2b400c12f47/comments",
+  "author": {
+    "login": "Jah-yee",
+    "id": 166608075,
+    "node_id": "U_kgDOCe48yw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/166608075?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Jah-yee",
+    "html_url": "https://github.com/Jah-yee",
+    "followers_url": "https://api.github.com/users/Jah-yee/followers",
+    "following_url": "https://api.github.com/users/Jah-yee/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Jah-yee/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Jah-yee/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Jah-yee/subscriptions",
+    "organizations_url": "https://api.github.com/users/Jah-yee/orgs",
+    "repos_url": "https://api.github.com/users/Jah-yee/repos",
+    "events_url": "https://api.github.com/users/Jah-yee/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Jah-yee/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "Jah-yee",
+    "id": 166608075,
+    "node_id": "U_kgDOCe48yw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/166608075?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Jah-yee",
+    "html_url": "https://github.com/Jah-yee",
+    "followers_url": "https://api.github.com/users/Jah-yee/followers",
+    "following_url": "https://api.github.com/users/Jah-yee/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Jah-yee/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Jah-yee/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Jah-yee/subscriptions",
+    "organizations_url": "https://api.github.com/users/Jah-yee/orgs",
+    "repos_url": "https://api.github.com/users/Jah-yee/repos",
+    "events_url": "https://api.github.com/users/Jah-yee/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Jah-yee/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "ef07ad30814f919ddfce3fa3e974fc501059df45",
+      "url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/commits/ef07ad30814f919ddfce3fa3e974fc501059df45",
+      "html_url": "https://github.com/OpenKaggle/biohub-cell-tracking-research/commit/ef07ad30814f919ddfce3fa3e974fc501059df45"
+    }
+  ],
+  "stats": {
+    "total": 41,
+    "additions": 40,
+    "deletions": 1
+  },
+  "files": [
+    {
+      "sha": "98310d1fa32ed3bf1671736539f8af2d801c44ff",
+      "filename": "CITATION.bib",
+      "status": "added",
+      "additions": 9,
+      "deletions": 0,
+      "changes": 9,
+      "blob_url": "https://github.com/OpenKaggle/biohub-cell-tracking-research/blob/03bfe828bf7517203a09f17651bef2b400c12f47/CITATION.bib",
+      "raw_url": "https://github.com/OpenKaggle/biohub-cell-tracking-research/raw/03bfe828bf7517203a09f17651bef2b400c12f47/CITATION.bib",
+      "contents_url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/contents/CITATION.bib?ref=03bfe828bf7517203a09f17651bef2b400c12f47",
+      "patch": "@@ -0,0 +1,9 @@\n+@software{openkaggle_biohub_cell_tracking_2026,\n+  author    = {{OpenKaggle contributors}},\n+  title     = {BioHub Cell Tracking Research Archive},\n+  year      = {2026},\n+  version   = {snapshot-2026-09},\n+  publisher = {OpenKaggle},\n+  url       = {https://github.com/OpenKaggle/biohub-cell-tracking-research/tree/snapshot-2026-09},\n+  note      = {Public source and reproducibility archive; see CITATION.cff}\n+}"
+    },
+    {
+      "sha": "a35117d7b42ae906e2207e5835744ee304eb4c48",
+      "filename": "CITATION.cff",
+      "status": "modified",
+      "additions": 7,
+      "deletions": 0,
+      "changes": 7,
+      "blob_url": "https://github.com/OpenKaggle/biohub-cell-tracking-research/blob/03bfe828bf7517203a09f17651bef2b400c12f47/CITATION.cff",
+      "raw_url": "https://github.com/OpenKaggle/biohub-cell-tracking-research/raw/03bfe828bf7517203a09f17651bef2b400c12f47/CITATION.cff",
+      "contents_url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/contents/CITATION.cff?ref=03bfe828bf7517203a09f17651bef2b400c12f47",
+      "patch": "@@ -7,7 +7,14 @@ type: software\n authors:\n   - name: OpenKaggle contributors\n repository-code: https://github.com/openkaggle/biohub-cell-tracking-research\n+url: https://github.com/OpenKaggle/biohub-cell-tracking-research/tree/snapshot-2026-09\n license: MIT\n+version: snapshot-2026-09\n+date-released: 2026-09-28\n abstract: >-\n   Public archive snapshot of BioHub Cell Tracking research code, tests,\n   methods, campaign records, and lightweight provenance receipts.\n+keywords:\n+  - Kaggle\n+  - cell tracking\n+  - reproducibility"
+    },
+    {
+      "sha": "b9f9232915605b06ec4b455775be9dbb1ab9b2c0",
+      "filename": "README.md",
+      "status": "modified",
+      "additions": 24,
+      "deletions": 1,
+      "changes": 25,
+      "blob_url": "https://github.com/OpenKaggle/biohub-cell-tracking-research/blob/03bfe828bf7517203a09f17651bef2b400c12f47/README.md",
+      "raw_url": "https://github.com/OpenKaggle/biohub-cell-tracking-research/raw/03bfe828bf7517203a09f17651bef2b400c12f47/README.md",
+      "contents_url": "https://api.github.com/repos/OpenKaggle/biohub-cell-tracking-research/contents/README.md?ref=03bfe828bf7517203a09f17651bef2b400c12f47",
+      "patch": "@@ -1,4 +1,4 @@\n-# BioHub Cell Tracking Research\n+# [2026-09] BioHub Cell Tracking Research Archive\n \n > **Public archive snapshot.** This repository is a reviewable record of the\n > research code, tests, methods, and lightweight receipts that were selected\n@@ -7,6 +7,29 @@\n \n Public source and reproducibility archive for the [BioHub Cell Tracking During Development](https://www.kaggle.com/competitions/biohub-cell-tracking-during-development) research workspace.\n \n+## Contribution summary\n+\n+This snapshot contributes research code, tests, methods, campaign records, and\n+lightweight provenance receipts. Competition data, generated artifacts,\n+submissions, and the upstream clone remain excluded and source-linked.\n+\n Included: original scripts, tests, methods, campaign records, and lightweight provenance receipts. Excluded: competition data, generated artifacts, virtual environments, submissions, and the upstream `royerlab/kaggle-cell-tracking-competition` clone. The upstream clone is referenced rather than republished.\n \n See [PUBLIC_ARCHIVE.md](PUBLIC_ARCHIVE.md) for scope and related repositories.\n+\n+## Cite this repository\n+\n+For this source snapshot, cite [`CITATION.cff`](CITATION.cff) or\n+[`CITATION.bib`](CITATION.bib) and use the tagged\n+[`snapshot-2026-09`](https://github.com/OpenKaggle/biohub-cell-tracking-research/tree/snapshot-2026-09)\n+source state. Cite upstream tools and any official data separately.\n+\n+## References\n+\n+- [BioHub Cell Tracking During Development](https://www.kaggle.com/competitions/biohub-cell-tracking-during-development)\n+- [OpenKaggle publishing guide](https://github.com/OpenKaggle/.github/blob/main/PUBLISHING.md)\n+\n+## Release\n+\n+- Snapshot: [`snapshot-2026-09`](https://github.com/OpenKaggle/biohub-cell-tracking-research/tree/snapshot-2026-09)\n+- Public boundary: [`PUBLIC_ARCHIVE.md`](PUBLIC_ARCHIVE.md)"
+    }
+  ]
+}

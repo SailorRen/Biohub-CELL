@@ -1,0 +1,177 @@
+{
+  "sha": "2f151b95c31e79b5d0a98171a0b094b463689bea",
+  "url": "https://api.github.com/repos/alvaromendizabal/biohub-cell-tracking-during-development/git/trees/2f151b95c31e79b5d0a98171a0b094b463689bea",
+  "tree": [
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e22166177268a285710496c9163a6cb151a93dd0",
+      "url": "https://api.github.com/repos/alvaromendizabal/biohub-cell-tracking-during-development/git/trees/e22166177268a285710496c9163a6cb151a93dd0"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "42f0fc970236a785eececdc8fde11dff78533f19",
+      "url": "https://api.github.com/repos/alvaromendizabal/biohub-cell-tracking-during-development/git/trees/42f0fc970236a785eececdc8fde11dff78533f19"
+    },
+    {
+      "path": ".github/workflows/portfolio.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49547c3d1c1ca89054fe1e3fb83715853ff3495b",
+      "size": 397,
+      "url": "https://api.github.com/repos/alvaromendizabal/biohub-cell-tracking-during-development/git/blobs/49547c3d1c1ca89054fe1e3fb83715853ff3495b"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da62d23063937dd034d47f6d641c596e4eeff40a",
+      "size": 455,
+      "url": "https://api.github.com/repos/alvaromendizabal/biohub-cell-tracking-during-development/git/blobs/da62d23063937dd034d47f6d641c596e4eeff40a"
+    },
+    {
+      "path": "ATTRIBUTION.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da48b186fce4dd928ccbf5e5a4207ceef47e725a",
+      "size": 2306,
+      "url": "https://api.github.com/repos/alvaromendizabal/biohub-cell-tracking-during-development/git/blobs/da48b186fce4dd928ccbf5e5a4207ceef47e725a"
+    },
+    {
+      "path": "CASE_STUDY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bb2518f205916eece4dff24ffb231520caf0983",
+      "size": 5724,
+      "url": "https://api.github.com/repos/alvaromendizabal/biohub-cell-tracking-during-development/git/blobs/0bb2518f205916eece4dff24ffb231520caf0983"
+    },
+    {
+      "path": "FRONTIER.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f6665329b0520ea4c957f57dbc51d95bef864d1",
+      "size": 3712,
+      "url": "https://api.github.com/repos/alvaromendizabal/biohub-cell-tracking-during-development/git/blobs/4f6665329b0520ea4c957f57dbc51d95bef864d1"
+    },
+    {
+      "path": "LICENSE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9039148ee727707d56baca399e60e5b3679ffcf",
+      "size": 607,
+      "url": "https://api.github.com/repos/alvaromendizabal/biohub-cell-tracking-during-development/git/blobs/f9039148ee727707d56baca399e60e5b3679ffcf"
+    },
+    {
+      "path": "PUBLICATION_MANIFEST.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fbb867e176d85026cd5f1ef66648419e732ed54",
+      "size": 1251,
+      "url": "https://api.github.com/repos/alvaromendizabal/biohub-cell-tracking-during-development/git/blobs/2fbb867e176d85026cd5f1ef66648419e732ed54"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d214b10357b0b652937cd1f2a4742b0541a020d",
+      "size": 6952,
+      "url": "https://api.github.com/repos/alvaromendizabal/biohub-cell-tracking-during-development/git/blobs/2d214b10357b0b652937cd1f2a4742b0541a020d"
+    },
+    {
+      "path": "REPRODUCIBILITY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd60bdcf7283d5aea8180ba4478ac288ae1956f4",
+      "size": 5325,
+      "url": "https://api.github.com/repos/alvaromendizabal/biohub-cell-tracking-during-development/git/blobs/bd60bdcf7283d5aea8180ba4478ac288ae1956f4"
+    },
+    {
+      "path": "RESULTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d337742847c525425c7c86d5ef19379c28f0d05",
+      "size": 6860,
+      "url": "https://api.github.com/repos/alvaromendizabal/biohub-cell-tracking-during-development/git/blobs/3d337742847c525425c7c86d5ef19379c28f0d05"
+    },
+    {
+      "path": "RIGHTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91dbb531f92f5e1376423d4308c06a3401c59bab",
+      "size": 767,
+      "url": "https://api.github.com/repos/alvaromendizabal/biohub-cell-tracking-during-development/git/blobs/91dbb531f92f5e1376423d4308c06a3401c59bab"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "266bbe0629c0565d4745403c23a89e126e1df031",
+      "size": 1808,
+      "url": "https://api.github.com/repos/alvaromendizabal/biohub-cell-tracking-during-development/git/blobs/266bbe0629c0565d4745403c23a89e126e1df031"
+    },
+    {
+      "path": "assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "28c6221a712fc54b13bede71974a75ea908c0368",
+      "url": "https://api.github.com/repos/alvaromendizabal/biohub-cell-tracking-during-development/git/trees/28c6221a712fc54b13bede71974a75ea908c0368"
+    },
+    {
+      "path": "assets/exact_error_budget_0.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "629191443695e226cac3f3557b31acae649ccc69",
+      "size": 61996,
+      "url": "https://api.github.com/repos/alvaromendizabal/biohub-cell-tracking-during-development/git/blobs/629191443695e226cac3f3557b31acae649ccc69"
+    },
+    {
+      "path": "licenses",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eee0c478c6315050b0a909ee698acf343e778421",
+      "url": "https://api.github.com/repos/alvaromendizabal/biohub-cell-tracking-during-development/git/trees/eee0c478c6315050b0a909ee698acf343e778421"
+    },
+    {
+      "path": "licenses/royerlab-BSD-3-Clause.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "830713e4de20385bdea541d08aa897541d91f67e",
+      "size": 1505,
+      "url": "https://api.github.com/repos/alvaromendizabal/biohub-cell-tracking-during-development/git/blobs/830713e4de20385bdea541d08aa897541d91f67e"
+    },
+    {
+      "path": "notebooks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ff47a1183f5935cb624bf689d8462b6e9f82d013",
+      "url": "https://api.github.com/repos/alvaromendizabal/biohub-cell-tracking-during-development/git/trees/ff47a1183f5935cb624bf689d8462b6e9f82d013"
+    },
+    {
+      "path": "notebooks/portfolio.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcf52182a3f236f21c9cbe56e83c53235b7e9670",
+      "size": 92466,
+      "url": "https://api.github.com/repos/alvaromendizabal/biohub-cell-tracking-during-development/git/blobs/dcf52182a3f236f21c9cbe56e83c53235b7e9670"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dae22a1da8feace9067304244de68ac05756cd67",
+      "url": "https://api.github.com/repos/alvaromendizabal/biohub-cell-tracking-during-development/git/trees/dae22a1da8feace9067304244de68ac05756cd67"
+    },
+    {
+      "path": "scripts/check_showcase.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3efb7d94547f406076656360de55149d2dc2473",
+      "size": 3244,
+      "url": "https://api.github.com/repos/alvaromendizabal/biohub-cell-tracking-during-development/git/blobs/d3efb7d94547f406076656360de55149d2dc2473"
+    }
+  ],
+  "truncated": false
+}

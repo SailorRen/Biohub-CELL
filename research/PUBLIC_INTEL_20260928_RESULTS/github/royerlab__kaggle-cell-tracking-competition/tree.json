@@ -1,0 +1,462 @@
+{
+  "sha": "075fc5f5a52d11077f9dc2b074644618f26939e2",
+  "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/trees/075fc5f5a52d11077f9dc2b074644618f26939e2",
+  "tree": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af97b7958380b194a6fde7c76feb3f9986cd3bdf",
+      "size": 206,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/af97b7958380b194a6fde7c76feb3f9986cd3bdf"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "901f81c0982414b9459397210c17048f3ea70ddf",
+      "size": 1507,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/901f81c0982414b9459397210c17048f3ea70ddf"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d14bbac3ddcde61c25ac431e9b48e292dd4f76ed",
+      "size": 7254,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/d14bbac3ddcde61c25ac431e9b48e292dd4f76ed"
+    },
+    {
+      "path": "assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d3956e191ea0906b79d29d0d20b87e3756486c8b",
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/trees/d3956e191ea0906b79d29d0d20b87e3756486c8b"
+    },
+    {
+      "path": "assets/demo.gif",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c20c29dead501bb281da9101ab6fc99246ac844c",
+      "size": 5244279,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/c20c29dead501bb281da9101ab6fc99246ac844c"
+    },
+    {
+      "path": "assets/division.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11faf628dcc0a6be4e141cb58daf2a33fcd64920",
+      "size": 57747,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/11faf628dcc0a6be4e141cb58daf2a33fcd64920"
+    },
+    {
+      "path": "assets/figure.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9acfd4adbb33d94b66c5ff0f99fdc8963fcad0d",
+      "size": 55844,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/f9acfd4adbb33d94b66c5ff0f99fdc8963fcad0d"
+    },
+    {
+      "path": "assets/late_division.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "754ace2f2e65cffa2764304fabe6d0f907008fb6",
+      "size": 51381,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/754ace2f2e65cffa2764304fabe6d0f907008fb6"
+    },
+    {
+      "path": "metrics.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df84639194776282af9b788828ad6a9b870e19bb",
+      "size": 6942,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/df84639194776282af9b788828ad6a9b870e19bb"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3f20c4378da2e8948afa59783ef9ec30c9ce985",
+      "size": 1440,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/b3f20c4378da2e8948afa59783ef9ec30c9ce985"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "53a2ceb86bf540e448e5b86fb229d457ab74331e",
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/trees/53a2ceb86bf540e448e5b86fb229d457ab74331e"
+    },
+    {
+      "path": "scripts/augmentations.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4952b90fe14c395a00aaed6f703bde54f94610f",
+      "size": 1876,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/f4952b90fe14c395a00aaed6f703bde54f94610f"
+    },
+    {
+      "path": "scripts/csv_to_geffs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e485126a68409efee6f95f611d0bd5704befa09d",
+      "size": 2887,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/e485126a68409efee6f95f611d0bd5704befa09d"
+    },
+    {
+      "path": "scripts/dataspec.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2e191ceae63096ef262f9672962f83593fdb526",
+      "size": 1215,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/f2e191ceae63096ef262f9672962f83593fdb526"
+    },
+    {
+      "path": "scripts/evaluate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b17afbbfec40a7e477d30b947ed0987625bf59ae",
+      "size": 5219,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/b17afbbfec40a7e477d30b947ed0987625bf59ae"
+    },
+    {
+      "path": "scripts/geffs_to_csv.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d8effd56d238e96d4586e223379d649b46cfbc2",
+      "size": 3131,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/9d8effd56d238e96d4586e223379d649b46cfbc2"
+    },
+    {
+      "path": "scripts/predict_unet_transformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7372c6177d4ae79a693e5622e96e0af19a308b9",
+      "size": 26011,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/b7372c6177d4ae79a693e5622e96e0af19a308b9"
+    },
+    {
+      "path": "scripts/train_unet_transformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67522aeddc6e16b4a546ce362d5be096fbb84cf7",
+      "size": 50229,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/67522aeddc6e16b4a546ce362d5be096fbb84cf7"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "53d1795dcd8c52dd533ab7596095274a0eee76ab",
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/trees/53d1795dcd8c52dd533ab7596095274a0eee76ab"
+    },
+    {
+      "path": "src/tracking_cellmot",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fc85aaae351d670a9bf407308f83aaa5d7c9c98d",
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/trees/fc85aaae351d670a9bf407308f83aaa5d7c9c98d"
+    },
+    {
+      "path": "src/tracking_cellmot/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "943b14d7fbd618490528ce4c112dcc32aca22769",
+      "size": 79,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/943b14d7fbd618490528ce4c112dcc32aca22769"
+    },
+    {
+      "path": "src/tracking_cellmot/division_metrics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9afa8630f3d7a294f9a25fca81cce1e0c7c7aeca",
+      "size": 20488,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/9afa8630f3d7a294f9a25fca81cce1e0c7c7aeca"
+    },
+    {
+      "path": "src/tracking_cellmot/img_proc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd53e5b19d705ebd3f62abbdeee015f053d6cf73",
+      "size": 5319,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/fd53e5b19d705ebd3f62abbdeee015f053d6cf73"
+    },
+    {
+      "path": "src/tracking_cellmot/io.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a215f97b5bd0e137dd49d382aa230eb1074fcc4e",
+      "size": 13485,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/a215f97b5bd0e137dd49d382aa230eb1074fcc4e"
+    },
+    {
+      "path": "src/tracking_cellmot/metrics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e536cdc9f0877542ab227ec701ef0fdbb667189a",
+      "size": 19602,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/e536cdc9f0877542ab227ec701ef0fdbb667189a"
+    },
+    {
+      "path": "src/tracking_cellmot/models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ed8583f28ea8caed6562efc2973dd238b041b91b",
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/trees/ed8583f28ea8caed6562efc2973dd238b041b91b"
+    },
+    {
+      "path": "src/tracking_cellmot/models/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "575e2fe47a5570975bb6489f03fdebc252cad357",
+      "size": 248,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/575e2fe47a5570975bb6489f03fdebc252cad357"
+    },
+    {
+      "path": "src/tracking_cellmot/models/simple_node_transformer.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1a28f7c76381204748f4b03e064494a313f751e",
+      "size": 7229,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/d1a28f7c76381204748f4b03e064494a313f751e"
+    },
+    {
+      "path": "src/tracking_cellmot/models/temporal_unet.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b819f50b1a5ef9acbd7ec6f2f859e2a89628add",
+      "size": 5112,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/5b819f50b1a5ef9acbd7ec6f2f859e2a89628add"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1331fc7f36ad73ae48d9ef3c3d0cee2b397144a0",
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/trees/1331fc7f36ad73ae48d9ef3c3d0cee2b397144a0"
+    },
+    {
+      "path": "tests/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "tests/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4d7ee4aa7b08075b61492947000f859f3a61f12d",
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/trees/4d7ee4aa7b08075b61492947000f859f3a61f12d"
+    },
+    {
+      "path": "tests/assets/sandbox_examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "481cbdf2320a9efd1019d8efdb94dc903d058f86",
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/trees/481cbdf2320a9efd1019d8efdb94dc903d058f86"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/3_division.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b06a32aaf73b09cca940d22103f2af899202d595",
+      "size": 1042,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/b06a32aaf73b09cca940d22103f2af899202d595"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/complex.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3899946f9959654076cd4463c1054f3aa275d378",
+      "size": 3133,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/3899946f9959654076cd4463c1054f3aa275d378"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/complex2.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca29b64ce4641ebbea6cb1dc018d2446d48df9c1",
+      "size": 3131,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/ca29b64ce4641ebbea6cb1dc018d2446d48df9c1"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/division.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6850273224709c7c67ec438964af95f2296dedc2",
+      "size": 1839,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/6850273224709c7c67ec438964af95f2296dedc2"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/division_at_end.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ede3dd992b8688cb4c7b85cef5c61e6e832be513",
+      "size": 1968,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/ede3dd992b8688cb4c7b85cef5c61e6e832be513"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/division_node_stage.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b3dc8800753162d1a2f9049ddbf573cf1bc2738",
+      "size": 2038,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/6b3dc8800753162d1a2f9049ddbf573cf1bc2738"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/division_test.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53c3740c2e5afd8eeb2da3f30c887fe0af756b68",
+      "size": 1852,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/53c3740c2e5afd8eeb2da3f30c887fe0af756b68"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/duplicated_division.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca456f0365df84602a40bd938caad8508ab90748",
+      "size": 2080,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/ca456f0365df84602a40bd938caad8508ab90748"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/edges_wrong_division_ok.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aee84ca9f5333825610250b292af67b7e63399bf",
+      "size": 2075,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/aee84ca9f5333825610250b292af67b7e63399bf"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/late_division.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2beeafe0af1e23a903a35a8172ec023c1567048a",
+      "size": 1681,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/2beeafe0af1e23a903a35a8172ec023c1567048a"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/merge_delay.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4c88a5a0b6381a0bfd7abc83a6bb1cab1658d0d",
+      "size": 1576,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/c4c88a5a0b6381a0bfd7abc83a6bb1cab1658d0d"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/node_conflict.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8a9c98c33b838826c723b62a6d7501c5ca65d75",
+      "size": 2511,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/b8a9c98c33b838826c723b62a6d7501c5ca65d75"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/simple.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c8970c1d561cef1439b73962bb1058b5fcd59f9",
+      "size": 2030,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/3c8970c1d561cef1439b73962bb1058b5fcd59f9"
+    },
+    {
+      "path": "tests/assets/sandbox_examples/successive_div.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1dabae5c849271621a7377fa3445355b6321be40",
+      "size": 1829,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/1dabae5c849271621a7377fa3445355b6321be40"
+    },
+    {
+      "path": "tests/conftest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a5b5f02a6c3c886450112bd614a91fed29d8dc8",
+      "size": 3523,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/4a5b5f02a6c3c886450112bd614a91fed29d8dc8"
+    },
+    {
+      "path": "tests/test_division_metrics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b64fc78ecf5a1520af539b2dccfdefddd8dc5c8",
+      "size": 39456,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/2b64fc78ecf5a1520af539b2dccfdefddd8dc5c8"
+    },
+    {
+      "path": "tests/test_division_sandbox_examples.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58bfe4712b7971777392af892b25f14f4416f3cd",
+      "size": 11437,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/58bfe4712b7971777392af892b25f14f4416f3cd"
+    },
+    {
+      "path": "tests/test_img_proc.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b33d625995b1762e0b12a8ea41f7dd14f77ad285",
+      "size": 3207,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/b33d625995b1762e0b12a8ea41f7dd14f77ad285"
+    },
+    {
+      "path": "tests/test_io.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f36cb8bc886bafc02e2fbf61726f88c1da6ce054",
+      "size": 4022,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/f36cb8bc886bafc02e2fbf61726f88c1da6ce054"
+    },
+    {
+      "path": "tests/test_metrics.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b53bc8da7ff22934e9dd6ce406d7633fc95be3dd",
+      "size": 49117,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/b53bc8da7ff22934e9dd6ce406d7633fc95be3dd"
+    },
+    {
+      "path": "tests/test_training_scripts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96e05050810bfdd9295da3c09cbe0209dfe75ec7",
+      "size": 5017,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/96e05050810bfdd9295da3c09cbe0209dfe75ec7"
+    },
+    {
+      "path": "visualize",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3fa471e81e95c6146863ca188a4a99a1491b2fb1",
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/trees/3fa471e81e95c6146863ca188a4a99a1491b2fb1"
+    },
+    {
+      "path": "visualize/visualize_ground_truth.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69f98351673543a488e2e8f91b8229245a3e192c",
+      "size": 2492,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/69f98351673543a488e2e8f91b8229245a3e192c"
+    },
+    {
+      "path": "visualize/visualize_predictions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ef58bbb234331974f4a698646ae004e20523a63",
+      "size": 11517,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/6ef58bbb234331974f4a698646ae004e20523a63"
+    },
+    {
+      "path": "visualize/visualize_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3518cd923d07cbc72dd76075bacff5f18693fd3",
+      "size": 3356,
+      "url": "https://api.github.com/repos/royerlab/kaggle-cell-tracking-competition/git/blobs/f3518cd923d07cbc72dd76075bacff5f18693fd3"
+    }
+  ],
+  "truncated": false
+}

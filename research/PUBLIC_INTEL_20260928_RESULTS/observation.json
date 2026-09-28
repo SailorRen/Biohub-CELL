@@ -1,0 +1,19 @@
+{
+  "observed_at": "2026-09-28T10:11:23.109561+00:00",
+  "platform_writes": 0,
+  "coverage_plan": {
+    "catalog_sorts": [
+      "scoreDescending",
+      "dateRun",
+      "dateCreated"
+    ],
+    "catalog_per_sort": 100,
+    "topic_sorts": [
+      "new",
+      "active"
+    ],
+    "github_queries": 3,
+    "github_fixed_repos_min": 3,
+    "discussion_bodies_min": 4
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "sha": "7b1fa3c0b6f980d36f067882c5f874e9f25b2154",
+  "node_id": "C_kwDOUuzRt9oAKDdiMWZhM2MwYjZmOTgwZDM2ZjA2Nzg4MmM1Zjg3NGU5ZjI1YjIxNTQ",
+  "commit": {
+    "author": {
+      "name": "Can Akbaş",
+      "email": "1hayrettin.hayrettin1@gmail.com",
+      "date": "2026-09-28T09:01:13Z"
+    },
+    "committer": {
+      "name": "Can Akbaş",
+      "email": "1hayrettin.hayrettin1@gmail.com",
+      "date": "2026-09-28T09:01:13Z"
+    },
+    "message": "Fix demo GIF: prediction count was wrongly capped to the sparse-GT count instead of real cell density",
+    "tree": {
+      "sha": "f74dde5b06eb6cc5fbd2ec524d37c0618e5650d0",
+      "url": "https://api.github.com/repos/canakbass/biohub-cell-tracking/git/trees/f74dde5b06eb6cc5fbd2ec524d37c0618e5650d0"
+    },
+    "url": "https://api.github.com/repos/canakbass/biohub-cell-tracking/git/commits/7b1fa3c0b6f980d36f067882c5f874e9f25b2154",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/canakbass/biohub-cell-tracking/commits/7b1fa3c0b6f980d36f067882c5f874e9f25b2154",
+  "html_url": "https://github.com/canakbass/biohub-cell-tracking/commit/7b1fa3c0b6f980d36f067882c5f874e9f25b2154",
+  "comments_url": "https://api.github.com/repos/canakbass/biohub-cell-tracking/commits/7b1fa3c0b6f980d36f067882c5f874e9f25b2154/comments",
+  "author": null,
+  "committer": null,
+  "parents": [
+    {
+      "sha": "1d93071e91c07ba233187f48e5f07168ee32c736",
+      "url": "https://api.github.com/repos/canakbass/biohub-cell-tracking/commits/1d93071e91c07ba233187f48e5f07168ee32c736",
+      "html_url": "https://github.com/canakbass/biohub-cell-tracking/commit/1d93071e91c07ba233187f48e5f07168ee32c736"
+    }
+  ],
+  "stats": {
+    "total": 38,
+    "additions": 15,
+    "deletions": 23
+  },
+  "files": [
+    {
+      "sha": "224d5321dbb39c4c6ddc131f9944b4c67e6ef773",
+      "filename": "demo.gif",
+      "status": "modified",
+      "additions": 0,
+      "deletions": 0,
+      "changes": 0,
+      "blob_url": "https://github.com/canakbass/biohub-cell-tracking/blob/7b1fa3c0b6f980d36f067882c5f874e9f25b2154/demo.gif",
+      "raw_url": "https://github.com/canakbass/biohub-cell-tracking/raw/7b1fa3c0b6f980d36f067882c5f874e9f25b2154/demo.gif",
+      "contents_url": "https://api.github.com/repos/canakbass/biohub-cell-tracking/contents/demo.gif?ref=7b1fa3c0b6f980d36f067882c5f874e9f25b2154"
+    },
+    {
+      "sha": "98378a6f0de2d62755d406c9d0f232541d981064",
+      "filename": "v11_27_gif_demo.py",
+      "status": "modified",
+      "additions": 15,
+      "deletions": 23,
+      "changes": 38,
+      "blob_url": "https://github.com/canakbass/biohub-cell-tracking/blob/7b1fa3c0b6f980d36f067882c5f874e9f25b2154/v11_27_gif_demo.py",
+      "raw_url": "https://github.com/canakbass/biohub-cell-tracking/raw/7b1fa3c0b6f980d36f067882c5f874e9f25b2154/v11_27_gif_demo.py",
+      "contents_url": "https://api.github.com/repos/canakbass/biohub-cell-tracking/contents/v11_27_gif_demo.py?ref=7b1fa3c0b6f980d36f067882c5f874e9f25b2154",
+      "patch": "@@ -229,7 +229,9 @@ def get(k):\n     by_t = {}\n     for i in range(len(t)):\n         by_t.setdefault(int(t[i]), []).append((z[i], y[i], x[i]))\n-    return by_t\n+    meta = dict(g.attrs).get(\"geff\", {}) or {}\n+    est_nodes = (meta.get(\"extra\") or {}).get(\"estimated_number_of_nodes\")\n+    return by_t, (float(est_nodes) if est_nodes is not None else None)\n \n \n # =============================================================================\n@@ -247,27 +249,16 @@ def get(k):\n zdir = os.path.join(TRAIN, DATASET_NAME + \".zarr\")\n gdir = os.path.join(TRAIN, DATASET_NAME + \".geff\")\n \n-print(f\"COMP var mi: {os.path.isdir(COMP)}\")\n-print(f\"COMP icerik: {sorted(os.listdir(COMP)) if os.path.isdir(COMP) else 'YOK'}\")\n-print(f\"/kaggle/input icerik: {sorted(os.listdir('/kaggle/input'))}\")\n-print(f\"/kaggle/input/competitions var mi: {os.path.isdir('/kaggle/input/competitions')}\")\n-if os.path.isdir('/kaggle/input/competitions'):\n-    print(f\"/kaggle/input/competitions icerik: {sorted(os.listdir('/kaggle/input/competitions'))}\")\n-print(f\"TRAIN var mi: {os.path.isdir(TRAIN)}\")\n-print(f\"TRAIN icerik (ilk 10): {sorted(os.listdir(TRAIN))[:10] if os.path.isdir(TRAIN) else 'YOK'}\")\n-print(f\"zdir={zdir} var mi: {os.path.isdir(zdir)}\")\n-if os.path.isdir(zdir):\n-    print(f\"zdir icerik: {sorted(os.listdir(zdir))}\")\n-    sub0 = os.path.join(zdir, \"0\")\n-    print(f\"zdir/0 var mi: {os.path.isdir(sub0)}\")\n-    if os.path.isdir(sub0):\n-        print(f\"zdir/0 icerik: {sorted(os.listdir(sub0))}\")\n-\n arr = zarr.open(os.path.join(zdir, \"0\"), mode='r')\n T, Z, Y, X = arr.shape\n N_FRAMES = min(N_FRAMES, T)\n-gt_by_t = read_gt_points(gdir)\n-print(f\"dataset={DATASET_NAME} T={T} Z={Z} Y={Y} X={X}  gosterilecek frame={N_FRAMES}\")\n+gt_by_t, est_nodes = read_gt_points(gdir)\n+# GT SEYREK (kasitli): sadece ~%3.6 hucre isaretli - README'deki bilinen olgu.\n+# Tahmin sayisini GT'ye gore SINIRLAMAK YANLIS olurdu (asiri az gosterirdi) ->\n+# GERCEK yogunluk hedefi olan est_nodes/T kullaniliyor (uretim pipeline'iyla ayni mantik).\n+target_per_frame = max(5, int(round((est_nodes / T) if est_nodes else 40)))\n+print(f\"dataset={DATASET_NAME} T={T} Z={Z} Y={Y} X={X}  gosterilecek frame={N_FRAMES}  \"\n+      f\"est_nodes={est_nodes}  hedef_frame_basina={target_per_frame}\")\n \n \n def mip_to_rgb(vol_zyx, size):\n@@ -307,12 +298,12 @@ def draw_points(im, pts_yx, color, r=4):\n \n         from scipy.ndimage import maximum_filter\n         pooled = maximum_filter(hm, size=(3, 11, 11), mode=\"nearest\")\n-        mask = (hm >= pooled) & (hm > 0.05)\n+        mask = (hm >= pooled) & (hm > 0.025)\n         idx = np.argwhere(mask)\n         sc = hm[mask]\n         n_gt_here = len(gt_by_t.get(t, []))\n-        if len(idx) > max(5, int(1.2 * n_gt_here)):\n-            keep = np.argpartition(-sc, max(5, int(1.2 * n_gt_here)))[:max(5, int(1.2 * n_gt_here))]\n+        if len(idx) > target_per_frame:\n+            keep = np.argpartition(-sc, target_per_frame)[:target_per_frame]\n             idx = idx[keep]\n         pred_yx = [(p[1] * OUT_SIZE / Y, p[2] * OUT_SIZE / X) for p in idx]\n \n@@ -325,7 +316,8 @@ def draw_points(im, pts_yx, color, r=4):\n \n         d = ImageDraw.Draw(im)\n         d.rectangle([0, 0, OUT_SIZE, 18], fill=(0, 0, 0))\n-        d.text((4, 2), f\"t={t:03d}  yesil=GT  kirmizi=tahmin\", fill=(255, 255, 255))\n+        d.text((4, 2), f\"t={t:03d}  yesil=GT (kasitli seyrek, ~%3.6)  kirmizi=tahmin\",\n+              fill=(255, 255, 255))\n         frames_out.append(im)\n         if t % 10 == 0:\n             print(f\"  t={t:3d}  GT={n_gt_here}  tahmin={len(pred_yx)}\")"
+    }
+  ]
+}
