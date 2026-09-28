@@ -1,7 +1,7 @@
 {
-  "passed": false,
-  "status": "WAITING_FOR_SCORES",
-  "observed_at": "2026-09-27T17:59:50.289203+00:00",
+  "passed": true,
+  "status": "SCORED_ALL",
+  "observed_at": "2026-09-28T00:37:25.478144+00:00",
   "build_checks_passed": 20,
   "frozen_source_commit": "61103113bf333fb7586488103d710c938e92a3d5",
   "frozen_remote_files_passed": 9,
@@ -23,8 +23,10 @@
         "status": "COMPLETE"
       },
       "submission_id": 56615584,
-      "formal_status": "SubmissionStatus.PENDING",
-      "requested_at": "2026-09-27T17:56:08.717493+00:00"
+      "formal_status": "SubmissionStatus.COMPLETE",
+      "requested_at": "2026-09-27T17:56:08.717493+00:00",
+      "public_score": "0.955",
+      "observed_at": "2026-09-28T00:37:25.478144+00:00"
     },
     {
       "arm": "R8D955",
@@ -35,14 +37,14 @@
         "status": "COMPLETE"
       },
       "submission_id": 56615617,
-      "formal_status": "SubmissionStatus.PENDING",
-      "requested_at": "2026-09-27T17:57:35.489390+00:00"
+      "formal_status": "SubmissionStatus.COMPLETE",
+      "requested_at": "2026-09-27T17:57:35.489390+00:00",
+      "public_score": "0.956",
+      "observed_at": "2026-09-28T00:37:25.478144+00:00"
     }
   ],
   "resume": [
-    "Only query existing formal submission IDs 56615584 and 56615617.",
-    "No additional Save & Run or formal request authorized.",
-    "Recover terminal scores and errors, synchronize evidence; pause heartbeat when both terminal."
+    "No further runs or submissions. Results recovered. Final selection unchanged."
   ],
   "formal_submission_ids": [
     56615584,
@@ -50,12 +52,12 @@
   ],
   "ordinary_run_checks_passed": 2,
   "formal_accepted": 2,
-  "formal_public_count": 0,
-  "reason": "Both ordinary runs and checks passed; both formal requests accepted and PENDING. Score task is not complete.",
+  "formal_public_count": 2,
+  "reason": "Both exact formal submissions COMPLETE with Public; ordinary output/deployment PASS; budgets respected.",
   "automation_verified": {
     "id": "biohub",
     "kind": "heartbeat",
-    "status": "ACTIVE",
+    "status": "PAUSED",
     "rrule": "FREQ=MINUTELY;INTERVAL=15",
     "scope": "local app heartbeat; requires app running"
   }
