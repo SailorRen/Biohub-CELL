@@ -1,0 +1,304 @@
+{
+  "content_commit": "181f80cece87c68743b63c439df5ff5f246b8aac",
+  "observed_at": "2026-09-28T01:46:57.690957+00:00",
+  "remote_head_matches": true,
+  "files_verified": 49,
+  "files": [
+    {
+      "path": "reports/20260928_BIOHUB_PUBLIC_UPDATE_AND_RESULTS.md",
+      "sha256": "93e3e097a67b8bc993809e8b65bfc3847dad00de6bb73959b1455ab5eab342fa",
+      "bytes": 9483,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/catalog_dateCreated.json",
+      "sha256": "32585f60d716a9f56bbbf971bf96a05614d64474009b28f1afa945f284309db0",
+      "bytes": 19950,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/catalog_dateRun.json",
+      "sha256": "fb0ff7efe4d5917c9c9b018b988c70c2c97434f1252dfbf26430ea2ebd585352",
+      "bytes": 19830,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/catalog_scoreDescending.json",
+      "sha256": "f0c1db9b20543f3aa55e22b6782317f71719df1f3cd3b01edabeb2c81e57f3bf",
+      "bytes": 20091,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/collect.py",
+      "sha256": "8edad42c388373f46e283e8fb668717e2294897ac34a477ffff9bfe3b48e39e8",
+      "bytes": 1590,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/coverage.json",
+      "sha256": "a862f631ceca506378d285dd4065654402700740b73b73d951652d427507faec",
+      "bytes": 3887,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/details.py",
+      "sha256": "26ec11eb0c21b14658f083af22ed55c2bc2e8af2e203e8bac156dbcdbbb71293",
+      "bytes": 1490,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/discussions/742169.json",
+      "sha256": "671a51cb00473906981a212cfd5182ad6961dfb0221e2f252eaf9b74c765d201",
+      "bytes": 3431,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/discussions/742266.json",
+      "sha256": "e28d13bc8707cf6565f75058f496455746ac8fb8dd034c377d31a7c2873c1898",
+      "bytes": 15068,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/discussions/742942.json",
+      "sha256": "cc10998904750b590210a9741b84d4dbfd6140ac723a58d8242def6c819a97f9",
+      "bytes": 7562,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/discussions/743006.json",
+      "sha256": "a63a607f887d75e663572a7a28532df968d8194e0d57e3c7bf7379af9c2f9b94",
+      "bytes": 10082,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/discussions/743222.json",
+      "sha256": "b105a6ae65c7538faa60e07f0132d6a400f0fbaadc6a6c35fc90c668703989a2",
+      "bytes": 7162,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/discussions/743765.json",
+      "sha256": "c47c3f1e23ba4a913c761024c41e6bfbb02534110c2062860cc4dfe93c8fab08",
+      "bytes": 1173,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/discussions/743929.json",
+      "sha256": "da4c98e714bfca4ebae65dbb2256822aa2a4c4b265add0ff83e853ce1b178dcf",
+      "bytes": 10226,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/leaderboard.json",
+      "sha256": "2c9b05b8c7cc51717b1f8d18c3110c0ea1b11eba58eeb4c26efd255dc78ba837",
+      "bytes": 29452,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/new_details.py",
+      "sha256": "1622c2d3e21613f50c79cb39c9f07835ab37e9eabef12822135f08d339a5a047",
+      "bytes": 1333,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/observation.json",
+      "sha256": "9743a22fe2fb9cf865acee4e10d2965be62d948034197a993e165560c32250d0",
+      "bytes": 80,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/sources/amanatar/optimized-biohub-max-score/metadata.json",
+      "sha256": "ed63b242251c7ec6990df335f66e9bd74f71b950d15e712dfaeeb152013d079c",
+      "bytes": 927,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/sources/amanatar/optimized-biohub-max-score/source.ipynb",
+      "sha256": "e6c3f729835b28ca61ec7634526fb9e798df43e43e40f5e1a0a794dcd8521c2e",
+      "bytes": 270362,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/sources/amanatar/optimized-biohub-max-score/source.py",
+      "sha256": "fd213edc889112f19479d4c59ce84a56923df89c69f37ddd5e94e3f930cffeba",
+      "bytes": 252960,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/sources/anhadmahajan06/biohub-track-your-cells/metadata.json",
+      "sha256": "b27145489293666305432376977e2309d7c790a8c282f3f3f3497560e52d1d10",
+      "bytes": 931,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/sources/anhadmahajan06/biohub-track-your-cells/source.ipynb",
+      "sha256": "1613b590a81530c4dc8e42d78e4b65751c6293bf91cd79b2c9c262851dca77b1",
+      "bytes": 60885,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/sources/anhadmahajan06/biohub-track-your-cells/source.py",
+      "sha256": "366f475ed3f529da3d3b29fff79fda806622bc397a0e54f9d191dbb1c8ed4388",
+      "bytes": 51001,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/sources/mtoshidesu/testbiohub-lf-dctta020-sectta1/metadata.json",
+      "sha256": "6e9d828b768a3e0126f5df3cd133aa66e7feb37b926844389f372856c523d147",
+      "bytes": 900,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/sources/mtoshidesu/testbiohub-lf-dctta020-sectta1/source.ipynb",
+      "sha256": "72dac25cc0227d19053c1c183d980878c876fe819685cdacea248457b9cf0243",
+      "bytes": 321868,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/sources/mtoshidesu/testbiohub-lf-dctta020-sectta1/source.py",
+      "sha256": "22dc96027fd34d2c370113bbe76e8f53d33383c58049ed53c29a009bc570e833",
+      "bytes": 223660,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/sources/raunakdey07/biohub-harmonic-fusion-v3/metadata.json",
+      "sha256": "21e8dbb0facce257f198b3a81ea06ed277a6abde759450a2a3f92a44c3142acb",
+      "bytes": 930,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/sources/raunakdey07/biohub-harmonic-fusion-v3/source.ipynb",
+      "sha256": "9ab32885574092ab46a8d90bfa96393332c6e5a6249d33c92a9051efbc9779ca",
+      "bytes": 269607,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/sources/raunakdey07/biohub-harmonic-fusion-v3/source.py",
+      "sha256": "7f51ce19ea0f5d6240d15e3477a53bb837e3f5842e3c80f5ca46976c33ab168f",
+      "bytes": 244132,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/sources/sarveshchhetri/robust-3d-cell-tracking/metadata.json",
+      "sha256": "e64f376d7996f317620f456c71d75fbd4ebf9f485b5b360379a3afb952ace986",
+      "bytes": 720,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/sources/sarveshchhetri/robust-3d-cell-tracking/source.ipynb",
+      "sha256": "7e62e45e2aa66dc21d3cde0b18ad80748b731dfd882ceb1eab0ae7a84bd85de8",
+      "bytes": 25807,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/sources/sarveshchhetri/robust-3d-cell-tracking/source.py",
+      "sha256": "39e186068dfd70de54a39cdf829659f6bf8f066c80ffdfbac57a61bf5d6d1dc1",
+      "bytes": 15935,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/submission_56546951.json",
+      "sha256": "1237c130c8e253919cce7dbeb7171d157330623144f66709c0db29e5db9dc00d",
+      "bytes": 387,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/submission_56573059.json",
+      "sha256": "19868478d4842e9216ed0770a6f091c5e91035ab6e773d678d7bce1aa112dc8e",
+      "bytes": 385,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/submission_56573089.json",
+      "sha256": "a616b587bd08112de65bdf67d198bd5f122a200d5dd99f9be656472c70ad2864",
+      "bytes": 385,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/submission_56573515.json",
+      "sha256": "6c575e1d6f73ae4e03111c56b89074fed5cf928befb54e3e49ed2ad601f28d4a",
+      "bytes": 388,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/submission_56585147.json",
+      "sha256": "2dd5f8f62f68f53a1c19b794fe1bbe1360c4593239561c476da2ff8f77cc1544",
+      "bytes": 381,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/submission_56587392.json",
+      "sha256": "fd9efde7f28594336d4fbac8e30b4f800db15de06edab9bc9acd34f3fca20daa",
+      "bytes": 380,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/submission_56599380.json",
+      "sha256": "f1c765ca58ed32d67ca2c968f0334e6c5b6983f486624817a51041de7a1618fe",
+      "bytes": 383,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/submission_56599443.json",
+      "sha256": "152f8b5562bf55ebaf90ef4e84e2d66a5c92c20405ae56ab8c56bc7364eb6e9b",
+      "bytes": 383,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/submission_56599964.json",
+      "sha256": "858d1a5d2ff02457fb680fa68ca4bad414f29e55c8bcd25bb4b31a5876ffc5d6",
+      "bytes": 383,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/submission_56615584.json",
+      "sha256": "7e325feeebf28502d6dfb1bfd10f2e6dee7b7b91eae29bd6030c30fe9f5132c9",
+      "bytes": 383,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/submission_56615617.json",
+      "sha256": "1fb5ee343fea9dbba449760226e9049422c81b85c393d7962260895a8b5e6d86",
+      "bytes": 383,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/topics_active.json",
+      "sha256": "fbe051eeea8bf002274e3cfc2ed5d3b9c6d42a56d592398a00bc8f4839fc0eda",
+      "bytes": 7002,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/topics_new.json",
+      "sha256": "9579707b92384fa7db303802f5e447b6375db9a9274df37fcddeecf2d1073284",
+      "bytes": 6975,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/ui_observations.json",
+      "sha256": "0bc17d019bbe19574f3bd781e3c3e115fe1a78d10913a69ac71850c117dfb8ea",
+      "bytes": 846,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/verification.json",
+      "sha256": "54ef263097b50c2294a4039bfeb69ccf01bceefb2fea02884bafe1dc04725c00",
+      "bytes": 655,
+      "match": true
+    },
+    {
+      "path": "research/PUBLIC_UPDATE_20260928/verify.py",
+      "sha256": "69180e5053cd6dbfd8b1394afe32da193d38558b564fb01f17c59634787e0431",
+      "bytes": 2594,
+      "match": true
+    },
+    {
+      "path": "tasks/CODEX_20260928_PUBLIC_UPDATE_ACCEPTANCE.json",
+      "sha256": "23c44b79391a5d7283edbe5b26ac48151a636a4e45d965b12fec9ef00fbc29b9",
+      "bytes": 515,
+      "match": true
+    }
+  ],
+  "status": "REMOTE_BYTES_VERIFIED",
+  "scope": "bounded research delivery only"
+}
