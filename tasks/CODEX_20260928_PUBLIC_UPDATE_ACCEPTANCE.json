@@ -1,0 +1,13 @@
+{
+  "task": "BIOHUB_PUBLIC_UPDATE_20260928",
+  "scope": "read-only Kaggle research and own results; Markdown report and Git delivery",
+  "required": {
+    "submissions": 11,
+    "code_sorts": 3,
+    "topics_sorts": 2,
+    "discussion_bodies": 6,
+    "public_source_refresh": 4
+  },
+  "boundaries": "No Kaggle writes, no new experiments, no final selection changes",
+  "completion": "report claims linked to dated evidence; coverage checked; fixed commit remote bytes verified; blocked sources explicitly UNKNOWN"
+}

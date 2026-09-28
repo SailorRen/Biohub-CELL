@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "eleven_exact_complete_scores": true,
+    "two_wave2_scores": true,
+    "catalog_coverage": true,
+    "discussion_coverage": true,
+    "notebook_static_syntax": true,
+    "four_sources_unchanged": true,
+    "team_rank": true,
+    "author_team_rank": true,
+    "all_ids_in_report": true,
+    "limitations_and_sources": true,
+    "no_forbidden_artifacts": true
+  },
+  "passed": true,
+  "status": "LOCAL_EVIDENCE_CHECKED",
+  "semantic_review": "manual; author claims not independently reproduced",
+  "remote_readback": "separate delivery receipt",
+  "contract_sha256": "23c44b79391a5d7283edbe5b26ac48151a636a4e45d965b12fec9ef00fbc29b9"
+}

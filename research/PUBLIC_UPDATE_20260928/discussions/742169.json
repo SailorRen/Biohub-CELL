@@ -1,0 +1,54 @@
+{
+  "messages": [
+    {
+      "id": 3528965,
+      "postDate": "2026-09-27T02:28:46.610Z",
+      "content": "<p>Hi hello hi hello</p>",
+      "rawMarkdown": "Hi hello hi hello",
+      "votes": -1,
+      "replies": [
+        {
+          "id": 3529330,
+          "postDate": "2026-09-28T00:16:32.367Z",
+          "content": "<p>hello Mohammed. Welcome to Kaggle!</p>",
+          "rawMarkdown": "hello Mohammed. Welcome to Kaggle!"
+        }
+      ]
+    },
+    {
+      "id": 3526141,
+      "postDate": "2026-09-20T13:22:23.863Z",
+      "content": "<p>Is your performance mainly from a particular model or the overall pipeline?\nDid you refine public notebooks, use open-source tools such as HOCT, or train your own model?\nWhich component improved your score most: detection, linking, division detection, or post-processing?\nDid you train on all available movies, and how did you design validation to avoid overfitting?\nHow well does your local validation correlate with the leaderboard?\nHow do you balance division recall against false divisions?\nDo you use ensembling, test-time augmentation, or global graph optimization?\nWhich promising approaches failed, and what would you recommend improving first?</p>",
+      "rawMarkdown": "\n\nIs your performance mainly from a particular model or the overall pipeline?\n\nDid you refine public notebooks, use open-source tools such as HOCT, or train your own model?\n\nWhich component improved your score most: detection, linking, division detection, or post-processing?\n\nDid you train on all available movies, and how did you design validation to avoid overfitting?\n\nHow well does your local validation correlate with the leaderboard?\n\nHow do you balance division recall against false divisions?\n\nDo you use ensembling, test-time augmentation, or global graph optimization?\n\nWhich promising approaches failed, and what would you recommend improving first?\n\n",
+      "votes": 4
+    },
+    {
+      "id": 3526181,
+      "postDate": "2026-09-20T15:45:37.160Z",
+      "content": "<p>I guess you have some room for improvement in all directions.</p>",
+      "rawMarkdown": "I guess you have some room for improvement in all directions.",
+      "votes": 1,
+      "replies": [
+        {
+          "id": 3526191,
+          "postDate": "2026-09-20T16:40:43.873Z",
+          "content": "<p>Thanks! If you had to prioritize one area for a solution scoring around 0.950, where do you think the largest remaining gain is: cell detection, temporal linking, division detection, or graph post-processing? Did your biggest improvement come from model training or pipeline refinement?</p>",
+          "rawMarkdown": "Thanks! If you had to prioritize one area for a solution scoring around 0.950, where do you think the largest remaining gain is: cell detection, temporal linking, division detection, or graph post-processing? Did your biggest improvement come from model training or pipeline refinement?",
+          "votes": -1
+        },
+        {
+          "id": 3528959,
+          "postDate": "2026-09-27T01:57:06.210Z",
+          "content": "<p>im stuck at 0.957 do you have any tips?</p>",
+          "rawMarkdown": "im stuck at 0.957 do you have any tips?"
+        }
+      ]
+    },
+    {
+      "id": 3526179,
+      "postDate": "2026-09-20T15:41:42.453Z",
+      "content": "<p>Did improve the public notebook ?</p>",
+      "rawMarkdown": "Did improve the public notebook ?"
+    }
+  ]
+}

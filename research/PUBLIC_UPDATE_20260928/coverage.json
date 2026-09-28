@@ -1,0 +1,145 @@
+{
+  "unique_kernels": 162,
+  "catalog_each": 100,
+  "new_refs": 0,
+  "updated_refs": [
+    "anhadmahajan06/biohub-track-your-cells"
+  ],
+  "topics_total": 122,
+  "discussions": {
+    "743222": {
+      "messages": 1,
+      "new_ids": [],
+      "edited_ids": []
+    },
+    "742266": {
+      "messages": 15,
+      "new_ids": [],
+      "edited_ids": []
+    },
+    "743765": {
+      "messages": 2,
+      "new_ids": [],
+      "edited_ids": []
+    },
+    "743929": {
+      "messages": 4,
+      "new_ids": [
+        3529273,
+        3529306,
+        3529308,
+        3529326
+      ],
+      "edited_ids": []
+    },
+    "743006": {
+      "messages": 4,
+      "new_ids": [],
+      "edited_ids": []
+    },
+    "742169": {
+      "messages": 7,
+      "new_ids": [
+        3529330
+      ],
+      "edited_ids": []
+    },
+    "742942": {
+      "messages": 7,
+      "new_ids": [],
+      "edited_ids": []
+    }
+  },
+  "sources": [
+    {
+      "ref": "sarveshchhetri/robust-3d-cell-tracking",
+      "sha256": "7e62e45e2aa66dc21d3cde0b18ad80748b731dfd882ceb1eab0ae7a84bd85de8",
+      "code_cells": 10,
+      "ast_errors": [],
+      "same_as_previous": true,
+      "review": "targeted static review only; no source execution",
+      "ast_preprocessor": "IPython TransformerManager, parse only"
+    },
+    {
+      "ref": "mtoshidesu/testbiohub-lf-dctta020-sectta1",
+      "sha256": "72dac25cc0227d19053c1c183d980878c876fe819685cdacea248457b9cf0243",
+      "code_cells": 45,
+      "ast_errors": [],
+      "same_as_previous": true,
+      "review": "targeted static review only; no source execution",
+      "ast_preprocessor": "IPython TransformerManager, parse only"
+    },
+    {
+      "ref": "anhadmahajan06/biohub-track-your-cells",
+      "sha256": "1613b590a81530c4dc8e42d78e4b65751c6293bf91cd79b2c9c262851dca77b1",
+      "code_cells": 10,
+      "ast_errors": [],
+      "same_as_previous": false,
+      "review": "targeted static review only; no source execution",
+      "ast_preprocessor": "IPython TransformerManager, parse only"
+    },
+    {
+      "ref": "amanatar/optimized-biohub-max-score",
+      "sha256": "e6c3f729835b28ca61ec7634526fb9e798df43e43e40f5e1a0a794dcd8521c2e",
+      "code_cells": 13,
+      "ast_errors": [],
+      "same_as_previous": true,
+      "review": "targeted static review only; no source execution",
+      "ast_preprocessor": "IPython TransformerManager, parse only"
+    },
+    {
+      "ref": "raunakdey07/biohub-harmonic-fusion-v3",
+      "sha256": "9ab32885574092ab46a8d90bfa96393332c6e5a6249d33c92a9051efbc9779ca",
+      "code_cells": 12,
+      "ast_errors": [],
+      "same_as_previous": true,
+      "review": "targeted static review only; no source execution",
+      "ast_preprocessor": "IPython TransformerManager, parse only"
+    }
+  ],
+  "leaderboard_checkpoints": {
+    "1": {
+      "teamId": 16454395,
+      "teamName": "yu4u",
+      "submissionDate": "2026-09-27T14:11:16.773Z",
+      "score": "0.978"
+    },
+    "50": {
+      "teamId": 16458101,
+      "teamName": "Knight of Favonius",
+      "submissionDate": "2026-09-27T00:45:28.746Z",
+      "score": "0.963"
+    },
+    "75": {
+      "teamId": 16596911,
+      "teamName": "Michael Hernandez",
+      "submissionDate": "2026-09-27T00:01:38.333Z",
+      "score": "0.961"
+    },
+    "100": {
+      "teamId": 16931222,
+      "teamName": "Oikantik Basu",
+      "submissionDate": "2026-09-27T08:31:53.423Z",
+      "score": "0.959"
+    },
+    "150": {
+      "teamId": 16655148,
+      "teamName": "Ben Pepper",
+      "submissionDate": "2026-09-27T05:00:14.536Z",
+      "score": "0.957"
+    },
+    "189": {
+      "teamId": 16578232,
+      "teamName": "Sailor Ren",
+      "submissionDate": "2026-09-27T17:57:37.763Z",
+      "score": "0.956"
+    },
+    "200": {
+      "teamId": 16756059,
+      "teamName": "Thomas",
+      "submissionDate": "2026-09-27T00:03:23.830Z",
+      "score": "0.956"
+    }
+  },
+  "own_submissions": 11
+}
