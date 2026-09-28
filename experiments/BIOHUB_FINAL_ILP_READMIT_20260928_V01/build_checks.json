@@ -1,0 +1,151 @@
+{
+  "passed": true,
+  "count": 36,
+  "checks": [
+    {
+      "id": "DIV04_READMIT940_13_code_cells",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT940_unchanged_cells",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT940_actual_config",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT940_support_original_hash",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT940_support_dynamic_patch",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT940_ilp_solver_consumption",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT940_cache_before_head",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT940_no_patch_warning",
+      "pass": true
+    },
+    {
+      "id": "DIV04_13_code_cells",
+      "pass": true
+    },
+    {
+      "id": "DIV04_unchanged_cells",
+      "pass": true
+    },
+    {
+      "id": "DIV04_actual_config",
+      "pass": true
+    },
+    {
+      "id": "DIV04_support_original_hash",
+      "pass": true
+    },
+    {
+      "id": "DIV04_support_dynamic_patch",
+      "pass": true
+    },
+    {
+      "id": "DIV04_ilp_solver_consumption",
+      "pass": true
+    },
+    {
+      "id": "DIV04_cache_before_head",
+      "pass": true
+    },
+    {
+      "id": "DIV04_no_patch_warning",
+      "pass": true
+    },
+    {
+      "id": "READMIT940_13_code_cells",
+      "pass": true
+    },
+    {
+      "id": "READMIT940_unchanged_cells",
+      "pass": true
+    },
+    {
+      "id": "READMIT940_actual_config",
+      "pass": true
+    },
+    {
+      "id": "READMIT940_support_original_hash",
+      "pass": true
+    },
+    {
+      "id": "READMIT940_support_dynamic_patch",
+      "pass": true
+    },
+    {
+      "id": "READMIT940_ilp_solver_consumption",
+      "pass": true
+    },
+    {
+      "id": "READMIT940_cache_before_head",
+      "pass": true
+    },
+    {
+      "id": "READMIT940_no_patch_warning",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT940_exact_allowed_diff",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT940_metadata",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT940_readmit_chain",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT940_ilp_command",
+      "pass": true
+    },
+    {
+      "id": "DIV04_exact_allowed_diff",
+      "pass": true
+    },
+    {
+      "id": "DIV04_metadata",
+      "pass": true
+    },
+    {
+      "id": "DIV04_readmit_chain",
+      "pass": true
+    },
+    {
+      "id": "DIV04_ilp_command",
+      "pass": true
+    },
+    {
+      "id": "READMIT940_exact_allowed_diff",
+      "pass": true
+    },
+    {
+      "id": "READMIT940_metadata",
+      "pass": true
+    },
+    {
+      "id": "READMIT940_readmit_chain",
+      "pass": true
+    },
+    {
+      "id": "READMIT940_ilp_command",
+      "pass": true
+    }
+  ],
+  "scope": "13 code cells AST, config consumption, allowlisted diff, actual support dynamic patch; no inference"
+}
