@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "at": "2026-09-28T02:17:50.260209+00:00",
+  "commit": "adde2b234062158c673882c90acb4df4ecc778ac",
+  "remote_head": "adde2b234062158c673882c90acb4df4ecc778ac",
+  "files": [
+    {
+      "path": "experiments/BIOHUB_FINAL_ILP_READMIT_20260928_V01/DIV04/candidate.ipynb",
+      "sha256": "9540869dbaf093c7199aac86bce3fca0cedd27abd051911ffa404ba26b11685f",
+      "bytes": 268285,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_FINAL_ILP_READMIT_20260928_V01/DIV04/kernel-metadata.json",
+      "sha256": "3adbdd38febc9a5b048f5f495d1ce9e4cd7e44778dcc39ee8261a7db69184469",
+      "bytes": 838,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_FINAL_ILP_READMIT_20260928_V01/READMIT940/candidate.ipynb",
+      "sha256": "49cab3b225b23d358b874017867e30198ad6129d26aed695936e324eb2200fce",
+      "bytes": 268287,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_FINAL_ILP_READMIT_20260928_V01/READMIT940/kernel-metadata.json",
+      "sha256": "8ec72fec8aa32264b288602a68676491891f9a4b7a124ca0779e3e14801350a1",
+      "bytes": 848,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_FINAL_ILP_READMIT_20260928_V01/DIV04_READMIT940/candidate.ipynb",
+      "sha256": "ac3651a886a11ecab5e89e8e2a80e10f8b4547b7b4775a6a75e437d8e2ea8035",
+      "bytes": 268293,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_FINAL_ILP_READMIT_20260928_V01/DIV04_READMIT940/kernel-metadata.json",
+      "sha256": "34effef10a823e77ccbdef38256b2e87fa0a91c2171d3de3423e90124d880742",
+      "bytes": 860,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_FINAL_ILP_READMIT_20260928_V01/build_checks.json",
+      "sha256": "37e72364bf9873586f087d25bd82251759335db14a09a8d770bed3f20a4b2aa6",
+      "bytes": 2868,
+      "equal": true
+    },
+    {
+      "path": "experiments/BIOHUB_FINAL_ILP_READMIT_20260928_V01/platform_ledger.json",
+      "sha256": "686274e9935ce439b0f8c15f3dd58cf6c7acdb945bab8301d4d32834299356b6",
+      "bytes": 2454,
+      "equal": true
+    }
+  ]
+}

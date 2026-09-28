@@ -1,6 +1,6 @@
 {
   "task_id": "BIOHUB_FINAL_ILP_READMIT_20260928_V01",
-  "stage": "LOCAL_PREPARED",
+  "stage": "WAVE1_ORDINARY_RUNNING",
   "first_wave": [
     "DIV04_READMIT940",
     "DIV04",
@@ -20,16 +20,32 @@
         "g1": false
       },
       "planned_kernel_ref": "sailorren/biohub-final-div04-readmit940-20260928",
-      "kernel_ref": null,
-      "kernel_id": null,
-      "version": null,
-      "script_version_id": null,
+      "kernel_ref": "sailorren/biohub-final-div04-readmit940-20260928",
+      "kernel_id": 136194614,
+      "version": 1,
+      "script_version_id": 353458552,
       "submission_id": null,
       "source_sha256": "ac3651a886a11ecab5e89e8e2a80e10f8b4547b7b4775a6a75e437d8e2ea8035",
-      "status": "LOCAL_PREPARED",
+      "status": "ORDINARY_RUNNING",
       "public_score": null,
       "direct_error": null,
-      "events": []
+      "events": [
+        {
+          "type": "SAVE_AND_RUN_ALL",
+          "at": "2026-09-28T02:18:23.430707+00:00",
+          "source_sha256": "ac3651a886a11ecab5e89e8e2a80e10f8b4547b7b4775a6a75e437d8e2ea8035",
+          "response": {
+            "ref": "/code/sailorren/biohub-final-div04-readmit940-20260928",
+            "url": "https://www.kaggle.com/code/sailorren/biohub-final-div04-readmit940-20260928",
+            "versionNumber": 1,
+            "kernelId": 136194614
+          }
+        }
+      ],
+      "observed_at": "2026-09-28T02:19:16.633466+00:00",
+      "ordinary_status": {
+        "status": "RUNNING"
+      }
     },
     {
       "candidate_id": "DIV04",
@@ -43,16 +59,32 @@
         "g1": false
       },
       "planned_kernel_ref": "sailorren/biohub-final-div04-20260928",
-      "kernel_ref": null,
-      "kernel_id": null,
-      "version": null,
-      "script_version_id": null,
+      "kernel_ref": "sailorren/biohub-final-div04-20260928",
+      "kernel_id": 136194644,
+      "version": 1,
+      "script_version_id": 353458610,
       "submission_id": null,
       "source_sha256": "9540869dbaf093c7199aac86bce3fca0cedd27abd051911ffa404ba26b11685f",
-      "status": "LOCAL_PREPARED",
+      "status": "ORDINARY_RUNNING",
       "public_score": null,
       "direct_error": null,
-      "events": []
+      "events": [
+        {
+          "type": "SAVE_AND_RUN_ALL",
+          "at": "2026-09-28T02:18:47.873057+00:00",
+          "source_sha256": "9540869dbaf093c7199aac86bce3fca0cedd27abd051911ffa404ba26b11685f",
+          "response": {
+            "ref": "/code/sailorren/biohub-final-div04-20260928",
+            "url": "https://www.kaggle.com/code/sailorren/biohub-final-div04-20260928",
+            "versionNumber": 1,
+            "kernelId": 136194644
+          }
+        }
+      ],
+      "observed_at": "2026-09-28T02:19:19.739898+00:00",
+      "ordinary_status": {
+        "status": "RUNNING"
+      }
     },
     {
       "candidate_id": "READMIT940",
@@ -79,9 +111,9 @@
     }
   ],
   "wave2": [],
-  "run_request_count": 0,
-  "full_run_count": 0,
-  "accepted_full_run_count": 0,
+  "run_request_count": 2,
+  "full_run_count": 2,
+  "accepted_full_run_count": 2,
   "formal_request_count": 0,
   "engineering_spare_count": 0,
   "formal_request_cap": 5,
