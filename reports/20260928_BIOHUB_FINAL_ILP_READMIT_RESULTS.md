@@ -18,16 +18,20 @@ SOURCE_CODE_VERIFIED：R9D955 完整源码 13 单元已读取并逐单元 AST �
 
 ## 当前平台状态
 
-观测记录汇总时间：2026-09-28T18:10:54.122982+08:00；阶段 WAVE1_SCORED。
+观测记录汇总时间：2026-09-28T18:14:53.747594+08:00；阶段 WAVE2_PREPARED。
 
 |候选|ILP / readmit|Version / SV|submission|普通运行|正式状态|Public|Δ0.956|
 |---|---|---|---|---|---|---|---|
 | DIV04_READMIT940 | 0.4 / 0.94 | 1 / 353458552 | 56626891 | COMPLETE | SubmissionStatus.COMPLETE | 0.958 | +0.002 |
 | DIV04 | 0.4 / 0.965 | 1 / 353458610 | 56626811 | COMPLETE | SubmissionStatus.COMPLETE | 0.956 | +0.000 |
 | READMIT940 | 1.2 / 0.94 | 1 / 353461671 | 56627073 | COMPLETE | SubmissionStatus.COMPLETE | 0.957 | +0.001 |
+| DIV02_READMIT940 | 0.2 / 0.94 | None / None | UNKNOWN | LOCAL_PREPARED | UNKNOWN | UNKNOWN | UNKNOWN |
+| DIV04_READMIT9525 | 0.4 / 0.9525 | None / None | UNKNOWN | LOCAL_PREPARED | UNKNOWN | UNKNOWN | UNKNOWN |
 
 本批普通请求 3，已受理 3；正式请求 3/5；工程备用 0/1。旧批次 5/5 不变。
 
 PENDING / UNKNOWN 不代表低分或零分。第一批未取得全部正式终态前，第二批不冻结、不运行。没有后台调度；本会话内继续执行，若中断按账本精确 ID 续接。
 
 流程审计：前两次正式请求均刷新了正式余额、账号、截止时间和去重，但 GPU 额度最近一次刷新在 READMIT940 普通运行前，未分别在两次正式请求前即时刷新。后续已补入独立 GPU 额度回读；该历史缺口不追溯标记为通过。
+
+{"at": "2026-09-28T10:12:48.369695+00:00", "rule": "组合唯一最高且 > 0.956", "evidence": {"DIV04_READMIT940": {"submission_id": 56626891, "public_score": "0.958"}, "DIV04": {"submission_id": 56626811, "public_score": "0.956"}, "READMIT940": {"submission_id": 56627073, "public_score": "0.957"}}, "reason": "组合0.958唯一最高；ILP0.2继续降低分裂成本，readmit0.9525缓和补回阈值。两份在运行前同时冻结，不采用新情报中的其他方法。", "remaining_formal_budget": 2, "final_selection_changed": false}

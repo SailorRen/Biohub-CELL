@@ -9,9 +9,9 @@ P=Path(__file__).resolve().parent;arm=sys.argv[1];lp=P/'platform_ledger.json';l=
 spare=False
 assert a['status']=='LOCAL_PREPARED' and not a['events']
 assert l['run_request_count']<5
-assert json.loads((P/'preflight.json').read_text())['catalog_complete']
-assert not json.loads((P/'preflight.json').read_text())['matching_candidates']
-assert json.loads((P/'prelaunch_remote_readback.json').read_text())['passed']
+assert json.loads((P/('wave2_preflight.json' if a in l['wave2'] else 'preflight.json')).read_text())['catalog_complete']
+assert not json.loads((P/('wave2_preflight.json' if a in l['wave2'] else 'preflight.json')).read_text())['matching_candidates']
+assert json.loads((P/('wave2_prelaunch_remote_readback.json' if a in l['wave2'] else 'prelaunch_remote_readback.json')).read_text())['passed']
 if a in l['wave2']:
  assert l.get('wave2_decision_complete')
  assert all(x['status'] in ['SCORED','FORMAL_ERROR','NOT_SUBMITTED'] for x in l['wave1'])
