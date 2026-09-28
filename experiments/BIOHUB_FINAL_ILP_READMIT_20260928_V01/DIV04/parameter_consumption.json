@@ -1,0 +1,36 @@
+{
+  "task": "BIOHUB_FINAL_ILP_READMIT_20260928_V01",
+  "arm": "DIV04",
+  "ilp": 0.4,
+  "readmit": 0.965,
+  "datasets": [
+    {
+      "dataset": "44b6_0113de3b",
+      "calls": 1,
+      "threshold": 0.965,
+      "passed_candidates": 101,
+      "added_before_later_pruning": 101
+    },
+    {
+      "dataset": "44b6_0b24845f",
+      "calls": 1,
+      "threshold": 0.965,
+      "passed_candidates": 768,
+      "added_before_later_pruning": 768
+    },
+    {
+      "dataset": "6bba_05b6850b",
+      "calls": 1,
+      "threshold": 0.965,
+      "passed_candidates": 93,
+      "added_before_later_pruning": 93
+    },
+    {
+      "dataset": "6bba_05db0fb1",
+      "calls": 1,
+      "threshold": 0.965,
+      "passed_candidates": 513,
+      "added_before_later_pruning": 513
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "observed_at": "2026-09-28T02:38:10.889550+00:00",
+  "kernel_ref": "sailorren/biohub-xrl9-r9d955-20260927",
+  "version": 1,
+  "sv": 353192186,
+  "submission": {
+    "ref": 56599964,
+    "totalBytes": 208635164,
+    "date": "2026-09-27T06:08:34.890Z",
+    "description": "BIOHUB_XRL9_TWO_WAVE_20260927_V01 R9D955 V1 SV353192186",
+    "fileName": "submission.csv",
+    "publicScore": "0.956",
+    "status": "COMPLETE",
+    "submittedBy": "sailorren",
+    "submittedByRef": "sailorren",
+    "teamName": "Sailor Ren",
+    "url": "/submissions/56599964/56599964.raw"
+  },
+  "all_13_cell_sources_equal": true,
+  "archive_sha256": "da53daf678724e920403350f4dde0e83b66163ef12d6a0b6efe28b58756c325c",
+  "platform_serialized_sha256": "b7a51abe3f556ab70f4f731b171442872edae4208d93671dd184b7143a3ac30b",
+  "explicit_version_label_1_lookup": "HTTP_404",
+  "note": "Current metadata version asserted 1. Notebook serialization differs; every cell source equals the frozen production archive."
+}

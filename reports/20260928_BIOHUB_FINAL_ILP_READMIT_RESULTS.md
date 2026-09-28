@@ -18,14 +18,24 @@ SOURCE_CODE_VERIFIED：R9D955 完整源码 13 单元已读取并逐单元 AST �
 
 ## 当前平台状态
 
-观测记录汇总时间：2026-09-28T10:29:54.758891+08:00；阶段 WAVE1_ORDINARY_RUNNING。
+观测记录汇总时间：2026-09-28T10:42:34.931525+08:00；阶段 HOLD_UI_UNLOCK_REQUIRED。
 
 |候选|ILP / readmit|Version / SV|submission|普通运行|正式状态|Public|Δ0.956|
 |---|---|---|---|---|---|---|---|
-| DIV04_READMIT940 | 0.4 / 0.94 | 1 / 353458552 | UNKNOWN | RUNNING | UNKNOWN | UNKNOWN | UNKNOWN |
-| DIV04 | 0.4 / 0.965 | 1 / 353458610 | UNKNOWN | RUNNING | UNKNOWN | UNKNOWN | UNKNOWN |
-| READMIT940 | 1.2 / 0.94 | None / None | UNKNOWN | LOCAL_PREPARED | UNKNOWN | UNKNOWN | UNKNOWN |
+| DIV04_READMIT940 | 0.4 / 0.94 | 1 / 353458552 | UNKNOWN | COMPLETE | UNKNOWN | UNKNOWN | UNKNOWN |
+| DIV04 | 0.4 / 0.965 | 1 / 353458610 | UNKNOWN | COMPLETE | UNKNOWN | UNKNOWN | UNKNOWN |
+| READMIT940 | 1.2 / 0.94 | 1 / None | UNKNOWN | RUNNING | UNKNOWN | UNKNOWN | UNKNOWN |
 
-本批普通请求 2，已受理 2；正式请求 0/5；工程备用 0/1。旧批次 5/5 不变。
+本批普通请求 3，已受理 3；正式请求 0/5；工程备用 0/1。旧批次 5/5 不变。
 
 PENDING / UNKNOWN 不代表低分或零分。第一批未取得全部正式终态前，第二批不冻结、不运行。没有后台调度；本会话内继续执行，若中断按账本精确 ID 续接。
+
+## 当前阻断和已完成验收
+
+HOLD_UI_UNLOCK_REQUIRED：电脑控制工具报告 Mac 已锁定，已请求用户手动解锁。实际 Input 版本展示、新鲜正式余额及 READMIT940 的 SV 尚未取得，保持 UNKNOWN；不将请求中的 Dataset 版本当作已验证实际挂载，不发送正式请求。
+
+MEASURED：组合 DIV04_READMIT940 V1/SV353458552 已 COMPLETE，CSV 240518 行；DIV04 V1/SV353458610 已 COMPLETE，CSV 239084 行。两份覆盖全部4个实际测试对象，CSV字段、坐标、唯一性、时序和拓扑通过，repair_fallback=0、deadline_degraded=0。真实日志验证模型/主副权重/head哈希、T4×2、原镜像及缓存先于head。四个对象的 ILP 求解调用均为0.4。readmit 实际调用阈值分别0.94/0.965；候选通过/清理前补回计数见 parameter_consumption.json，不能当作最终保留节点数或 Public 提升。
+
+READMIT940 已受理 V1 / Kernel136196252，实际状态见上表；SV保持null，未猜测。普通请求3，已受理3，工程备用0；正式请求0/5、submission ID全部null。首批正式结果缺失，第二批尚未冻结或执行。最终选择未变，旧批次5/5账本原字节保留。
+
+解锁后先核验已经完成的两份实际输入与实时正式余额，逐份送评；同时续查 READMIT940，完成后验收送评。不重跑已有普通对象。没有创建后台调度器，会话结束不承诺自动续接。

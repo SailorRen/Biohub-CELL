@@ -1,0 +1,27 @@
+{
+  "recorded_at": "2026-09-28T02:42:34.898775+00:00",
+  "status": "HOLD_UI_UNLOCK_REQUIRED",
+  "computer_use_error": "The Mac is locked and automatic unlock could not unlock it. Ask the user to unlock the Mac manually before continuing.",
+  "user_unlock_requested": true,
+  "ordinary_requests": 3,
+  "formal_requests": 0,
+  "spare_used": 0,
+  "persisted_background_scheduler_created": false,
+  "other_observations": [
+    {
+      "operation": "ListKernelSessionOutput with version_label=1 while running",
+      "result": "HTTP_404",
+      "cause": "UNKNOWN; not proof of ordinary failure"
+    },
+    {
+      "operation": "GetKernel baseline with version_label=1",
+      "result": "HTTP_404",
+      "recovery": "Current-version endpoint with asserted version1; all13 cell sources and exact formal0.956 verified"
+    },
+    {
+      "operation": "Remote byte comparison after a newer local read_runs observation",
+      "result": "Local working ledger differs from prior pushed snapshot",
+      "recovery": "Synchronize updated snapshot then repeat exact bytes readback"
+    }
+  ]
+}

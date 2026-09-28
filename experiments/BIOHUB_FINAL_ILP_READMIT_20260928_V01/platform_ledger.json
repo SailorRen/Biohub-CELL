@@ -1,6 +1,6 @@
 {
   "task_id": "BIOHUB_FINAL_ILP_READMIT_20260928_V01",
-  "stage": "WAVE1_ORDINARY_RUNNING",
+  "stage": "HOLD_UI_UNLOCK_REQUIRED",
   "first_wave": [
     "DIV04_READMIT940",
     "DIV04",
@@ -26,7 +26,7 @@
       "script_version_id": 353458552,
       "submission_id": null,
       "source_sha256": "ac3651a886a11ecab5e89e8e2a80e10f8b4547b7b4775a6a75e437d8e2ea8035",
-      "status": "ORDINARY_RUNNING",
+      "status": "ORDINARY_COMPLETE",
       "public_score": null,
       "direct_error": null,
       "events": [
@@ -42,9 +42,15 @@
           }
         }
       ],
-      "observed_at": "2026-09-28T02:28:44.138650+00:00",
+      "observed_at": "2026-09-28T02:41:37.604338+00:00",
       "ordinary_status": {
-        "status": "RUNNING"
+        "status": "COMPLETE"
+      },
+      "necessary_checks": {
+        "output_check": "PASS",
+        "runtime_check": "PASS",
+        "actual_input_versions": "UNKNOWN",
+        "fresh_formal_quota": "UNKNOWN"
       }
     },
     {
@@ -65,7 +71,7 @@
       "script_version_id": 353458610,
       "submission_id": null,
       "source_sha256": "9540869dbaf093c7199aac86bce3fca0cedd27abd051911ffa404ba26b11685f",
-      "status": "ORDINARY_RUNNING",
+      "status": "ORDINARY_COMPLETE",
       "public_score": null,
       "direct_error": null,
       "events": [
@@ -81,9 +87,15 @@
           }
         }
       ],
-      "observed_at": "2026-09-28T02:28:47.060084+00:00",
+      "observed_at": "2026-09-28T02:41:39.631818+00:00",
       "ordinary_status": {
-        "status": "RUNNING"
+        "status": "COMPLETE"
+      },
+      "necessary_checks": {
+        "output_check": "PASS",
+        "runtime_check": "PASS",
+        "actual_input_versions": "UNKNOWN",
+        "fresh_formal_quota": "UNKNOWN"
       }
     },
     {
@@ -98,25 +110,48 @@
         "g1": false
       },
       "planned_kernel_ref": "sailorren/biohub-final-readmit940-20260928",
-      "kernel_ref": null,
-      "kernel_id": null,
-      "version": null,
+      "kernel_ref": "sailorren/biohub-final-readmit940-20260928",
+      "kernel_id": 136196252,
+      "version": 1,
       "script_version_id": null,
       "submission_id": null,
       "source_sha256": "49cab3b225b23d358b874017867e30198ad6129d26aed695936e324eb2200fce",
-      "status": "LOCAL_PREPARED",
+      "status": "ORDINARY_RUNNING",
       "public_score": null,
       "direct_error": null,
-      "events": []
+      "events": [
+        {
+          "type": "SAVE_AND_RUN_ALL",
+          "at": "2026-09-28T02:39:04.134687+00:00",
+          "source_sha256": "49cab3b225b23d358b874017867e30198ad6129d26aed695936e324eb2200fce",
+          "response": {
+            "ref": "/code/sailorren/biohub-final-readmit940-20260928",
+            "url": "https://www.kaggle.com/code/sailorren/biohub-final-readmit940-20260928",
+            "versionNumber": 1,
+            "kernelId": 136196252
+          }
+        }
+      ],
+      "observed_at": "2026-09-28T02:41:41.104570+00:00",
+      "ordinary_status": {
+        "status": "RUNNING"
+      },
+      "necessary_checks": {
+        "output_check": "UNKNOWN",
+        "runtime_check": "UNKNOWN",
+        "actual_input_versions": "UNKNOWN",
+        "fresh_formal_quota": "UNKNOWN"
+      }
     }
   ],
   "wave2": [],
-  "run_request_count": 2,
-  "full_run_count": 2,
-  "accepted_full_run_count": 2,
+  "run_request_count": 3,
+  "full_run_count": 3,
+  "accepted_full_run_count": 3,
   "formal_request_count": 0,
   "engineering_spare_count": 0,
   "formal_request_cap": 5,
   "maximum_batch_gpu_concurrency": 2,
-  "final_selection_changed": false
+  "final_selection_changed": false,
+  "blocking_reason": "Mac locked; cannot currently verify actual mounted Dataset versions and fresh formal quota through authenticated Kaggle UI."
 }
