@@ -2,7 +2,7 @@
 import argparse,csv,hashlib,json,math,re
 from collections import Counter
 from pathlib import Path
-p=argparse.ArgumentParser();p.add_argument('arm',choices=['DIV04','READMIT940','DIV04_READMIT940']);p.add_argument('directory');a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('arm');p.add_argument('directory');a=p.parse_args()
 P=Path(__file__).resolve().parent;D=Path(a.directory)
 r=json.loads((D/'two_wave_receipt.json').read_text());assert r['task']=='BIOHUB_FINAL_ILP_READMIT_20260928_V01' and r['arm']==a.arm
 vel=.5;gate=False

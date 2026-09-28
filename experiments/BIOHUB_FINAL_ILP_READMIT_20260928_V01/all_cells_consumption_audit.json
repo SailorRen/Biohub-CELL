@@ -1,0 +1,82 @@
+{
+  "all_13_cells_parsed": true,
+  "only_config_cell_assigns_target_globals": true,
+  "cells": [
+    {
+      "cell": 0,
+      "ast": "PASS",
+      "target_writes": []
+    },
+    {
+      "cell": 1,
+      "ast": "PASS",
+      "target_writes": []
+    },
+    {
+      "cell": 2,
+      "ast": "PASS",
+      "target_writes": [
+        {
+          "name": "ILP_DIVISION_WEIGHT",
+          "line": 49,
+          "source": "ILP_DIVISION_WEIGHT = float(os.environ.get(\"BIOHUB_ILP_DIVISION_WEIGHT\", \"1.0\"))"
+        },
+        {
+          "name": "READMIT_MIN_SCORE",
+          "line": 83,
+          "source": "READMIT_MIN_SCORE = float(os.environ.get(\"BIOHUB_READMIT_MIN_SCORE\", \"0.965\"))"
+        }
+      ]
+    },
+    {
+      "cell": 3,
+      "ast": "PASS",
+      "target_writes": []
+    },
+    {
+      "cell": 4,
+      "ast": "PASS",
+      "target_writes": []
+    },
+    {
+      "cell": 5,
+      "ast": "PASS",
+      "target_writes": []
+    },
+    {
+      "cell": 6,
+      "ast": "PASS",
+      "target_writes": []
+    },
+    {
+      "cell": 7,
+      "ast": "PASS",
+      "target_writes": []
+    },
+    {
+      "cell": 8,
+      "ast": "PASS",
+      "target_writes": []
+    },
+    {
+      "cell": 9,
+      "ast": "PASS",
+      "target_writes": []
+    },
+    {
+      "cell": 10,
+      "ast": "PASS",
+      "target_writes": []
+    },
+    {
+      "cell": 11,
+      "ast": "PASS",
+      "target_writes": []
+    },
+    {
+      "cell": 12,
+      "ast": "PASS",
+      "target_writes": []
+    }
+  ]
+}

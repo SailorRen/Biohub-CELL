@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "synthetic_only": true,
+  "results": [
+    {
+      "candidate": "DIV04",
+      "threshold": 0.965,
+      "synthetic_added": 0,
+      "statistics": {
+        "final_readmit_calls": 1,
+        "final_readmit_threshold": 0.965,
+        "final_readmit_passed": 0,
+        "gapfill_pool_peaks": 3,
+        "gapfill_pool_excluded": 1,
+        "readmitted_nodes": 0
+      },
+      "passed": true
+    },
+    {
+      "candidate": "READMIT940",
+      "threshold": 0.94,
+      "synthetic_added": 1,
+      "statistics": {
+        "final_readmit_calls": 1,
+        "final_readmit_threshold": 0.94,
+        "final_readmit_passed": 1,
+        "gapfill_pool_peaks": 3,
+        "gapfill_pool_excluded": 1,
+        "readmitted_nodes": 1
+      },
+      "passed": true
+    },
+    {
+      "candidate": "DIV04_READMIT940",
+      "threshold": 0.94,
+      "synthetic_added": 1,
+      "statistics": {
+        "final_readmit_calls": 1,
+        "final_readmit_threshold": 0.94,
+        "final_readmit_passed": 1,
+        "gapfill_pool_peaks": 3,
+        "gapfill_pool_excluded": 1,
+        "readmitted_nodes": 1
+      },
+      "passed": true
+    }
+  ]
+}

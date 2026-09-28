@@ -25,7 +25,12 @@ r=ApiSaveKernelRequest();r.slug=m['id'];r.new_title=m['title'];r.text=code;r.lan
 with api.build_kaggle_client() as c:
  quota=c.kernels.kernels_api_client.get_accelerator_quota_statistics().to_dict()
  g=quota['gpuQuota']
- def seconds(v):return float(v.rstrip('s').replace('.0','') if v.count('.')>1 else v.rstrip('s'))
+ def seconds(v):
+  value=v.rstrip('s')
+  if value.count('.')>1:
+   assert value.endswith('.0'),'UNKNOWN_QUOTA_FORMAT'
+   value=value[:-2]
+  return float(value)
  assert seconds(g['totalTimeAllowed'])-seconds(g['timeUsed'])-seconds(g['timeReserved'])>1200,'GPU_QUOTA_HOLD'
  active=0
  for row in l['wave1']+l['wave2']:
