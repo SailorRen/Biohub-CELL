@@ -1,5 +1,5 @@
 {
-  "at": "2026-09-28T02:45:55.222428+00:00",
+  "at": "2026-09-28T02:56:53.088189+00:00",
   "source_equal": true,
   "metadata": {
     "id": 136196252,
@@ -7,12 +7,15 @@
     "title": "biohub-final-readmit940-20260928",
     "author": "Sailor Ren",
     "slug": "biohub-final-readmit940-20260928",
-    "lastRunTime": "2026-09-25T02:45:54.635Z",
+    "lastRunTime": "2026-09-25T02:56:52.201Z",
     "language": "python",
     "kernelType": "notebook",
     "isPrivate": true,
     "enableGpu": true,
     "enableInternet": false,
+    "categoryIds": [
+      "gpu"
+    ],
     "datasetDataSources": [
       "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
       "pilkwang/biohub-temporal-unet3d-seed314159-v1",
@@ -28,6 +31,6 @@
     "machineShape": "NvidiaTeslaT4"
   },
   "status": {
-    "status": "RUNNING"
+    "status": "COMPLETE"
   }
 }

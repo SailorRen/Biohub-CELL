@@ -1,0 +1,23 @@
+{
+  "observed_at": "2026-09-28T02:53:50.705243+00:00",
+  "owner": "sailorren",
+  "quota": {
+    "quotaRefreshTime": "2026-10-03T00:00:00.000Z",
+    "gpuQuota": {
+      "timeUsed": "14994.47808.0s",
+      "timeReserved": "0s",
+      "totalTimeAllowed": "21600s",
+      "minimumTimeAllowed": "21600s",
+      "hasEverRun": true
+    },
+    "tpuQuota": {
+      "timeUsed": "0s",
+      "timeReserved": "0s",
+      "totalTimeAllowed": "72000s",
+      "minimumTimeAllowed": "72000s",
+      "hasEverRun": true
+    }
+  },
+  "scope": "After first two formal requests; not a retroactive pre-submit GPU refresh",
+  "audit_gap": "First two formal requests rechecked identity, formal balance/window, deadline and dedup; GPU quota was last refreshed before READMIT940 ordinary launch, not separately refreshed immediately before each formal request."
+}

@@ -20,6 +20,8 @@ assert api.config_values.get('username')=='sailorren'
 with api.build_kaggle_client() as c:
  q=ApiListSubmissionsRequest();q.competition_name='biohub-cell-tracking-during-development';q.page=-1;q.page_size=100
  v=c.competitions.competition_api_client.list_submissions(q)
+ gpu=c.kernels.kernels_api_client.get_accelerator_quota_statistics().to_dict()
+ (P/arm/'pre_submit_api_snapshot.json').write_text(json.dumps({'observed_at':datetime.now(timezone.utc).isoformat(),'owner':api.config_values.get('username'),'gpu_quota':gpu,'team_submissions':v.to_dict()},indent=2)+'\n')
  assert not v.next_page_token
  assert not any(f'BIOHUB_FINAL_ILP_READMIT_20260928_V01 {arm} ' in x.description for x in v.submissions),'EXISTING_FORMAL_FOUND'
 now=lambda:datetime.now(timezone.utc).isoformat()

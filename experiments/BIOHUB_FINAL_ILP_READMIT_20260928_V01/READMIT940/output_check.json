@@ -1,0 +1,35 @@
+{
+  "arm": "READMIT940",
+  "status": "PASS",
+  "csv_rows": 240388,
+  "csv_sha256": "be5991e53f2fe98f03786e24602d1efe5b6e85ce8867112a195dbde764e8bd83",
+  "graphs": {
+    "44b6_0113de3b": {
+      "nodes": 25831,
+      "edges": 25078
+    },
+    "44b6_0b24845f": {
+      "nodes": 20056,
+      "edges": 18800
+    },
+    "6bba_05b6850b": {
+      "nodes": 6231,
+      "edges": 6031
+    },
+    "6bba_05db0fb1": {
+      "nodes": 70224,
+      "edges": 68137
+    }
+  },
+  "relaxed_calls": {
+    "flow": 792,
+    "no_flow": 0
+  },
+  "det": 0.955,
+  "relaxed": 9.0,
+  "repair_fallback": 0,
+  "deadline_degraded": 0,
+  "gate_candidates": null,
+  "gate_finite_scores": null,
+  "gate_rejected": null
+}
