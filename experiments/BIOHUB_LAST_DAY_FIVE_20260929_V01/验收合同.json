@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_LAST_DAY_FIVE_20260929_V01",
+  "goal": "执行固定五候选，核验精确对象、终态和远端交付；最终选择只读",
+  "scope": {
+    "in_scope": [
+      "tasks/CODEX_20260929_BIOHUB_LAST_DAY_FIVE_V01.md 所列动作"
+    ],
+    "out_of_scope": [
+      "训练",
+      "Dataset创建",
+      "最终选择修改",
+      "旧账本修改",
+      "main合并"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "acceptance": [
+    {
+      "id": "frozen-task",
+      "type": "file",
+      "path": "tasks/CODEX_20260929_BIOHUB_LAST_DAY_FIVE_V01.md",
+      "sha256": "687016a6478eeffc41fe5e538ac02e46a7bc8700a528efb642cd03f175eac5ca"
+    },
+    {
+      "id": "old-ledger-unchanged",
+      "type": "file",
+      "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/platform_ledger.json",
+      "sha256": "ebc9f1f0f7e8306d3d532fcf8e49bf8ec1291d788bde3cf515181bb474519bef"
+    },
+    {
+      "id": "prior-ilp-ledger-unchanged",
+      "type": "file",
+      "path": "experiments/BIOHUB_FINAL_ILP_READMIT_20260928_V01/platform_ledger.json",
+      "sha256": "2b646496523c355d945a7b5946f4d598e35e9cfbe8121f430795ad7c8f0c7eee"
+    },
+    {
+      "id": "terminal-evidence",
+      "type": "command",
+      "argv": [
+        "/opt/anaconda3/envs/ml/bin/python",
+        "experiments/BIOHUB_LAST_DAY_FIVE_20260929_V01/verify_delivery.py"
+      ],
+      "expected_exit": 0,
+      "timeout_seconds": 120
+    },
+    {
+      "id": "git-remote",
+      "type": "git",
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true
+    }
+  ]
+}

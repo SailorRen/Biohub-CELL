@@ -1,0 +1,129 @@
+{
+  "task_id": "BIOHUB_LAST_DAY_FIVE_20260929_V01",
+  "stage": "LOCAL_PREPARED",
+  "candidates": [
+    {
+      "candidate_id": "DIV06_READMIT940",
+      "effective_config": {
+        "ilp": 0.6,
+        "readmit": 0.94,
+        "det": 0.955,
+        "relaxed_um": 9.0,
+        "flow_relaxed": 0.0,
+        "velocity": 0.5,
+        "g1": false
+      },
+      "planned_kernel_ref": "sailorren/biohub-last-div06-readmit940-20260929",
+      "kernel_ref": null,
+      "kernel_id": null,
+      "version": null,
+      "script_version_id": null,
+      "submission_id": null,
+      "source_sha256": "0460e480685afc89651f71a23600e591d72411d83593a7bef83ad3c3932aac7a",
+      "status": "LOCAL_PREPARED",
+      "public_score": null,
+      "direct_error": null,
+      "events": []
+    },
+    {
+      "candidate_id": "DIV03_READMIT940",
+      "effective_config": {
+        "ilp": 0.3,
+        "readmit": 0.94,
+        "det": 0.955,
+        "relaxed_um": 9.0,
+        "flow_relaxed": 0.0,
+        "velocity": 0.5,
+        "g1": false
+      },
+      "planned_kernel_ref": "sailorren/biohub-last-div03-readmit940-20260929",
+      "kernel_ref": null,
+      "kernel_id": null,
+      "version": null,
+      "script_version_id": null,
+      "submission_id": null,
+      "source_sha256": "d1dcf213756763b5d44b2982aa3714362c7fd08a696feeae4fed6a4aca64541f",
+      "status": "LOCAL_PREPARED",
+      "public_score": null,
+      "direct_error": null,
+      "events": []
+    },
+    {
+      "candidate_id": "DIV04_READMIT930",
+      "effective_config": {
+        "ilp": 0.4,
+        "readmit": 0.93,
+        "det": 0.955,
+        "relaxed_um": 9.0,
+        "flow_relaxed": 0.0,
+        "velocity": 0.5,
+        "g1": false
+      },
+      "planned_kernel_ref": "sailorren/biohub-last-div04-readmit930-20260929",
+      "kernel_ref": null,
+      "kernel_id": null,
+      "version": null,
+      "script_version_id": null,
+      "submission_id": null,
+      "source_sha256": "5e8b809a2ed8249e2c15448651bbe16ea9284ce7348452b975104e9138f27763",
+      "status": "LOCAL_PREPARED",
+      "public_score": null,
+      "direct_error": null,
+      "events": []
+    },
+    {
+      "candidate_id": "DIV04_READMIT94625",
+      "effective_config": {
+        "ilp": 0.4,
+        "readmit": 0.94625,
+        "det": 0.955,
+        "relaxed_um": 9.0,
+        "flow_relaxed": 0.0,
+        "velocity": 0.5,
+        "g1": false
+      },
+      "planned_kernel_ref": "sailorren/biohub-last-div04-readmit94625-20260929",
+      "kernel_ref": null,
+      "kernel_id": null,
+      "version": null,
+      "script_version_id": null,
+      "submission_id": null,
+      "source_sha256": "924659dc42c4abdad5061d3331ed6f74f4bf82bc09e28f636535a63eb22b5113",
+      "status": "LOCAL_PREPARED",
+      "public_score": null,
+      "direct_error": null,
+      "events": []
+    },
+    {
+      "candidate_id": "DIV04_READMIT940_RL8",
+      "effective_config": {
+        "ilp": 0.4,
+        "readmit": 0.94,
+        "det": 0.955,
+        "relaxed_um": 8.0,
+        "flow_relaxed": 0.0,
+        "velocity": 0.5,
+        "g1": false
+      },
+      "planned_kernel_ref": "sailorren/biohub-last-div04-readmit940-rl8-20260929",
+      "kernel_ref": null,
+      "kernel_id": null,
+      "version": null,
+      "script_version_id": null,
+      "submission_id": null,
+      "source_sha256": "b2faa3457f8a68a846e6f0dfb30918112a376c78c80e4caab736a67e2d84e85c",
+      "status": "LOCAL_PREPARED",
+      "public_score": null,
+      "direct_error": null,
+      "events": []
+    }
+  ],
+  "run_request_count": 0,
+  "full_run_count": 0,
+  "accepted_full_run_count": 0,
+  "formal_request_count": 0,
+  "engineering_spare_count": 0,
+  "formal_request_cap": 5,
+  "maximum_batch_gpu_concurrency": 2,
+  "final_selection_changed": false
+}

@@ -1,0 +1,247 @@
+{
+  "passed": true,
+  "count": 60,
+  "checks": [
+    {
+      "id": "DIV06_READMIT940_13_code_cells",
+      "pass": true
+    },
+    {
+      "id": "DIV06_READMIT940_unchanged_cells",
+      "pass": true
+    },
+    {
+      "id": "DIV06_READMIT940_actual_config",
+      "pass": true
+    },
+    {
+      "id": "DIV06_READMIT940_support_original_hash",
+      "pass": true
+    },
+    {
+      "id": "DIV06_READMIT940_support_dynamic_patch",
+      "pass": true
+    },
+    {
+      "id": "DIV06_READMIT940_ilp_solver_consumption",
+      "pass": true
+    },
+    {
+      "id": "DIV06_READMIT940_cache_before_head",
+      "pass": true
+    },
+    {
+      "id": "DIV06_READMIT940_no_patch_warning",
+      "pass": true
+    },
+    {
+      "id": "DIV03_READMIT940_13_code_cells",
+      "pass": true
+    },
+    {
+      "id": "DIV03_READMIT940_unchanged_cells",
+      "pass": true
+    },
+    {
+      "id": "DIV03_READMIT940_actual_config",
+      "pass": true
+    },
+    {
+      "id": "DIV03_READMIT940_support_original_hash",
+      "pass": true
+    },
+    {
+      "id": "DIV03_READMIT940_support_dynamic_patch",
+      "pass": true
+    },
+    {
+      "id": "DIV03_READMIT940_ilp_solver_consumption",
+      "pass": true
+    },
+    {
+      "id": "DIV03_READMIT940_cache_before_head",
+      "pass": true
+    },
+    {
+      "id": "DIV03_READMIT940_no_patch_warning",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT930_13_code_cells",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT930_unchanged_cells",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT930_actual_config",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT930_support_original_hash",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT930_support_dynamic_patch",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT930_ilp_solver_consumption",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT930_cache_before_head",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT930_no_patch_warning",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT94625_13_code_cells",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT94625_unchanged_cells",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT94625_actual_config",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT94625_support_original_hash",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT94625_support_dynamic_patch",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT94625_ilp_solver_consumption",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT94625_cache_before_head",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT94625_no_patch_warning",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT940_RL8_13_code_cells",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT940_RL8_unchanged_cells",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT940_RL8_actual_config",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT940_RL8_support_original_hash",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT940_RL8_support_dynamic_patch",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT940_RL8_ilp_solver_consumption",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT940_RL8_cache_before_head",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT940_RL8_no_patch_warning",
+      "pass": true
+    },
+    {
+      "id": "DIV06_READMIT940_exact_allowed_diff",
+      "pass": true
+    },
+    {
+      "id": "DIV06_READMIT940_metadata",
+      "pass": true
+    },
+    {
+      "id": "DIV06_READMIT940_readmit_chain",
+      "pass": true
+    },
+    {
+      "id": "DIV06_READMIT940_ilp_command",
+      "pass": true
+    },
+    {
+      "id": "DIV03_READMIT940_exact_allowed_diff",
+      "pass": true
+    },
+    {
+      "id": "DIV03_READMIT940_metadata",
+      "pass": true
+    },
+    {
+      "id": "DIV03_READMIT940_readmit_chain",
+      "pass": true
+    },
+    {
+      "id": "DIV03_READMIT940_ilp_command",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT930_exact_allowed_diff",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT930_metadata",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT930_readmit_chain",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT930_ilp_command",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT94625_exact_allowed_diff",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT94625_metadata",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT94625_readmit_chain",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT94625_ilp_command",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT940_RL8_exact_allowed_diff",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT940_RL8_metadata",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT940_RL8_readmit_chain",
+      "pass": true
+    },
+    {
+      "id": "DIV04_READMIT940_RL8_ilp_command",
+      "pass": true
+    }
+  ],
+  "scope": "13 code cells AST, config consumption, allowlisted diff, actual support dynamic patch; no inference"
+}
