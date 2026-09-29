@@ -15,7 +15,7 @@ s+=f"观察：{datetime.now(timezone.utc).isoformat()}（UTC）。stage={l['stag
 s+='|候选|ILP/readmit/relaxed|Version|SV|submission|普通状态|正式状态|Public|Δ0.958|\n|---|---|---|---|---|---|---|---|---|\n'
 for a in l['candidates']:
  c=a['effective_config'];score=a['public_score'];delta=f'{float(score)-.958:+.3f}' if score else 'UNKNOWN'
- s+='|'+ '|'.join(str(v) for v in [a['candidate_id'],f"{c['ilp']}/{c['readmit']}/{c['relaxed_um']}",a['version'],a['script_version_id'],a['submission_id'],a.get('ordinary_status',{}).get('status','NOT_REQUESTED'),a.get('formal_status','NOT_SUBMITTED'),score,delta])+'|\n'
+ s+='|'+ '|'.join(str(v) for v in [a['candidate_id'],f"{c['ilp']}/{c['readmit']}/{c['relaxed_um']}",a['version'],a['script_version_id'],a['submission_id'],a.get('ordinary_status',{}).get('status','NOT_REQUESTED'),a.get('formal_status',a['status'] if a.get('submission_id') else 'NOT_SUBMITTED'),score,delta])+'|\n'
 s+='''
 ## 实时资源与排重
 

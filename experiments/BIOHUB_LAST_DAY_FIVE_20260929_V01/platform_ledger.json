@@ -1,6 +1,6 @@
 {
   "task_id": "BIOHUB_LAST_DAY_FIVE_20260929_V01",
-  "stage": "ROLLING_RUNS",
+  "stage": "ROLLING_SCORE_PENDING",
   "candidates": [
     {
       "candidate_id": "DIV06_READMIT940",
@@ -46,11 +46,12 @@
           }
         }
       ],
-      "observed_at": "2026-09-29T03:36:34.479119+00:00",
+      "observed_at": "2026-09-29T03:47:49.892384+00:00",
       "ordinary_status": {
         "status": "COMPLETE"
       },
-      "requested_at": "2026-09-29T03:39:18.653681+00:00"
+      "requested_at": "2026-09-29T03:39:18.653681+00:00",
+      "formal_status": "SubmissionStatus.PENDING"
     },
     {
       "candidate_id": "DIV03_READMIT940",
@@ -68,9 +69,9 @@
       "kernel_id": 136338855,
       "version": 1,
       "script_version_id": 353755286,
-      "submission_id": null,
+      "submission_id": 56661753,
       "source_sha256": "d1dcf213756763b5d44b2982aa3714362c7fd08a696feeae4fed6a4aca64541f",
-      "status": "ORDINARY_COMPLETE",
+      "status": "SCORE_PENDING",
       "public_score": null,
       "direct_error": null,
       "events": [
@@ -84,12 +85,24 @@
             "versionNumber": 1,
             "kernelId": 136338855
           }
+        },
+        {
+          "type": "FORMAL_SUBMISSION",
+          "at": "2026-09-29T03:47:36.188521+00:00",
+          "message": "BIOHUB_LAST_DAY_FIVE_20260929_V01 DIV03_READMIT940 V1 SV353755286",
+          "version": 1,
+          "sv": 353755286,
+          "response": {
+            "ref": 56661753
+          }
         }
       ],
-      "observed_at": "2026-09-29T03:36:35.586304+00:00",
+      "observed_at": "2026-09-29T03:47:49.892384+00:00",
       "ordinary_status": {
         "status": "COMPLETE"
-      }
+      },
+      "requested_at": "2026-09-29T03:47:36.188521+00:00",
+      "formal_status": "SubmissionStatus.PENDING"
     },
     {
       "candidate_id": "DIV04_READMIT930",
@@ -106,7 +119,7 @@
       "kernel_ref": "sailorren/biohub-last-div04-readmit930-20260929",
       "kernel_id": 136340519,
       "version": 1,
-      "script_version_id": null,
+      "script_version_id": 353758519,
       "submission_id": null,
       "source_sha256": "5e8b809a2ed8249e2c15448651bbe16ea9284ce7348452b975104e9138f27763",
       "status": "ORDINARY_RUNNING",
@@ -145,7 +158,7 @@
       "kernel_ref": "sailorren/biohub-last-div04-readmit94625-20260929",
       "kernel_id": 136340533,
       "version": 1,
-      "script_version_id": null,
+      "script_version_id": 353758544,
       "submission_id": null,
       "source_sha256": "924659dc42c4abdad5061d3331ed6f74f4bf82bc09e28f636535a63eb22b5113",
       "status": "ORDINARY_RUNNING",
@@ -196,9 +209,11 @@
   "run_request_count": 4,
   "full_run_count": 4,
   "accepted_full_run_count": 4,
-  "formal_request_count": 1,
+  "formal_request_count": 2,
   "engineering_spare_count": 0,
   "formal_request_cap": 5,
   "maximum_batch_gpu_concurrency": 2,
-  "final_selection_changed": false
+  "final_selection_changed": false,
+  "terminal_recovered": false,
+  "last_score_observed_at": "2026-09-29T03:47:49.892384+00:00"
 }
