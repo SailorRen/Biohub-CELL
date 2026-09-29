@@ -29,4 +29,6 @@ API 已分页枚举本人 131 个 Notebook，其中 60 个 Biohub 源码逐项�
 
 旧两批 5/5 账本保持原字节；旧 ILP 批前两次未逐次刷新 GPU 余额缺口保留，本轮每次正式请求重新读取 GPU 与正式余额。新模型训练、Dataset 写入、最终选择修改均为 0。无自动后台调度、无第六算法候选。UNKNOWN/null 不冒充已受理或低分；超过 0.958 才是新增 Public 提升，不保证 Private。
 '''
+if (P/'final_selection_observed.json').exists():
+ f=json.loads((P/'final_selection_observed.json').read_text());s+=f"\n最终选择最近只读复核：{f['observed_at']}；手动 {f['manual_selected_count']}/{f['maximum']}；手动 ID {f['manual_selected_submission_ids']}；自动具体 ID UNKNOWN；未修改。\n"
 (R/'reports/20260929_BIOHUB_LAST_DAY_FIVE_RESULTS.md').write_text(s)

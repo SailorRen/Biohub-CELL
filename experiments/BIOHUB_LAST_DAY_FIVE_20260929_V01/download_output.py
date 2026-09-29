@@ -15,4 +15,5 @@ files,token=api.kernels_output(a['kernel_ref'],str(D),file_pattern=r'(^|/)(submi
 assert not token
 receipt={'at':datetime.now(timezone.utc).isoformat(),'version':a['version'],'sv':a['script_version_id'],'files':[{'name':Path(f).name,'bytes':Path(f).stat().st_size,'sha256':hashlib.sha256(Path(f).read_bytes()).hexdigest()} for f in files]}
 (P/arm/'output_download_receipt.json').write_text(json.dumps(receipt,indent=2)+'\n')
+(P/arm/'runtime_receipt.json').write_bytes((D/'two_wave_receipt.json').read_bytes())
 print(json.dumps(receipt))
