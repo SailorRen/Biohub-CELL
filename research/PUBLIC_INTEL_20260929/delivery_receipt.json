@@ -1,0 +1,38 @@
+{
+  "evidence_commit": "87d1fa5cfa2465fea1bb855df34ad3055740ec03",
+  "scope": "Only frozen contract checks and bounded acquisition/terminal score delivery; historical GPU refresh gap remains",
+  "verifications": [
+    {
+      "task_id": "BIOHUB_PUBLIC_INTEL_20260929",
+      "contract_sha256": "1691b49cf1ff2c80f199fb2e3e8ffac8a30173ea8b82fa05d89b61990beddee5",
+      "final_status": "COMPLETED_VERIFIED",
+      "required_summary": {
+        "failed_or_blocked": 0,
+        "human_review": 0,
+        "passed": 3
+      },
+      "verification_report_sha256": "ebe52880015faeb6eeddc2259d1eb65f8675332963b2dc3bd0882f9675ddbbc3",
+      "remote_commit": "87d1fa5cfa2465fea1bb855df34ad3055740ec03",
+      "remote_bytes_passed": true,
+      "remote_file_count": 75
+    },
+    {
+      "task_id": "BIOHUB_FINAL_ILP_READMIT_20260928_V01",
+      "contract_sha256": "045ee90a7d26731d30ede02a98845ce4aef3868392da7bd8f0a01a88659aa7cc",
+      "final_status": "COMPLETED_VERIFIED",
+      "required_summary": {
+        "failed_or_blocked": 0,
+        "human_review": 0,
+        "passed": 4
+      },
+      "verification_report_sha256": "3171552596a74acd62c94c9cf482193039037bef391bdd09bea3c72d4768bb9f",
+      "remote_commit": "87d1fa5cfa2465fea1bb855df34ad3055740ec03",
+      "remote_bytes_passed": true,
+      "remote_file_count": 37
+    }
+  ],
+  "historical_gap": "First two formal requests did not independently refresh GPU quota before each request; never retroactively marked passed",
+  "kaggle_new_runs_this_readback": 0,
+  "kaggle_new_submissions_this_readback": 0,
+  "final_selection_changed": false
+}
