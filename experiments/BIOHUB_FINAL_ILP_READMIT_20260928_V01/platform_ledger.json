@@ -1,6 +1,6 @@
 {
   "task_id": "BIOHUB_FINAL_ILP_READMIT_20260928_V01",
-  "stage": "WAVE2_SCORE_PENDING",
+  "stage": "SCORED_ALL",
   "first_wave": [
     "DIV04_READMIT940",
     "DIV04",
@@ -55,7 +55,7 @@
           }
         }
       ],
-      "observed_at": "2026-09-28T10:43:09.153993+00:00",
+      "observed_at": "2026-09-29T02:12:18.782052+00:00",
       "ordinary_status": {
         "status": "COMPLETE"
       },
@@ -113,7 +113,7 @@
           }
         }
       ],
-      "observed_at": "2026-09-28T10:43:09.153993+00:00",
+      "observed_at": "2026-09-29T02:12:18.782052+00:00",
       "ordinary_status": {
         "status": "COMPLETE"
       },
@@ -171,7 +171,7 @@
           }
         }
       ],
-      "observed_at": "2026-09-28T10:43:09.153993+00:00",
+      "observed_at": "2026-09-29T02:12:18.782052+00:00",
       "ordinary_status": {
         "status": "COMPLETE"
       },
@@ -205,8 +205,8 @@
       "script_version_id": 353559166,
       "submission_id": 56638149,
       "source_sha256": "2bdc27117093b1e618cb14d66978759ee1ed6a96a6a0c94f7f217843bbd85314",
-      "status": "SCORE_PENDING",
-      "public_score": null,
+      "status": "SCORED",
+      "public_score": "0.957",
       "direct_error": null,
       "events": [
         {
@@ -231,7 +231,7 @@
           }
         }
       ],
-      "observed_at": "2026-09-28T10:43:09.153993+00:00",
+      "observed_at": "2026-09-29T02:12:18.782052+00:00",
       "ordinary_status": {
         "status": "COMPLETE"
       },
@@ -243,7 +243,7 @@
         "fresh_formal_quota": "OBSERVED_BEFORE_REQUEST",
         "fresh_pre_submit_gpu_quota": "OBSERVED_BEFORE_REQUEST"
       },
-      "formal_status": "SubmissionStatus.PENDING"
+      "formal_status": "SubmissionStatus.COMPLETE"
     },
     {
       "candidate_id": "DIV04_READMIT9525",
@@ -263,8 +263,8 @@
       "script_version_id": 353559196,
       "submission_id": 56638061,
       "source_sha256": "b440c2a7dde39050fd6fe6df8e937e4a98939e681634e5eac415ac580fe0000a",
-      "status": "SCORE_PENDING",
-      "public_score": null,
+      "status": "SCORED",
+      "public_score": "0.958",
       "direct_error": null,
       "events": [
         {
@@ -289,12 +289,12 @@
           }
         }
       ],
-      "observed_at": "2026-09-28T10:43:09.153993+00:00",
+      "observed_at": "2026-09-29T02:12:18.782052+00:00",
       "ordinary_status": {
         "status": "COMPLETE"
       },
       "requested_at": "2026-09-28T10:38:41.737011+00:00",
-      "formal_status": "SubmissionStatus.PENDING",
+      "formal_status": "SubmissionStatus.COMPLETE",
       "necessary_checks": {
         "output_check": "PASS",
         "runtime_check": "PASS",
@@ -313,8 +313,8 @@
   "maximum_batch_gpu_concurrency": 2,
   "final_selection_changed": false,
   "blocking_reason": null,
-  "terminal_recovered": false,
-  "last_score_observed_at": "2026-09-28T10:43:09.153993+00:00",
+  "terminal_recovered": true,
+  "last_score_observed_at": "2026-09-29T02:12:18.782052+00:00",
   "wave2_decision_complete": true,
   "second_wave_decision": {
     "at": "2026-09-28T10:12:48.369695+00:00",

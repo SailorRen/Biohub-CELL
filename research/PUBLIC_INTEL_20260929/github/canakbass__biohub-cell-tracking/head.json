@@ -1,0 +1,10 @@
+{
+  "repo": "canakbass/biohub-cell-tracking",
+  "branch": "main",
+  "commit": "7b1fa3c0b6f980d36f067882c5f874e9f25b2154",
+  "date": "2026-09-28T09:01:13Z",
+  "message": "Fix demo GIF: prediction count was wrongly capped to the sparse-GT count instead of real cell density",
+  "previous_commit": "7b1fa3c0b6f980d36f067882c5f874e9f25b2154",
+  "changed": false,
+  "observed_at": "2026-09-29T02:17:39.824251+00:00"
+}

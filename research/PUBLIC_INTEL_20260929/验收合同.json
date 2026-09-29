@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_PUBLIC_INTEL_20260929",
+  "goal": "回收五份正式终态分数并相对 9 月 28 日归档开展有界公开情报更新",
+  "scope": {
+    "in_scope": [
+      "只读公开来源与精确 submission",
+      "本仓库研究报告和证据同步"
+    ],
+    "out_of_scope": [
+      "把标题当正式分数",
+      "执行外部来源代码",
+      "情报驱动的未授权新方法"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "acceptance": [
+    {
+      "id": "coverage",
+      "type": "json",
+      "path": "research/PUBLIC_INTEL_20260929/verification.json",
+      "assertions": [
+        {
+          "pointer": "/passed",
+          "op": "equals",
+          "value": true
+        }
+      ]
+    },
+    {
+      "id": "report",
+      "type": "file",
+      "path": "reports/20260929_正式结果与最新公开情报.md",
+      "contains_all": [
+        "56626891",
+        "56626811",
+        "56627073",
+        "AUTHOR_CLAIM",
+        "覆盖边界",
+        "56638149",
+        "56638061"
+      ]
+    },
+    {
+      "id": "git",
+      "type": "git",
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true
+    }
+  ],
+  "coverage_plan": {
+    "catalog_sorts": 3,
+    "catalog_per_sort": 100,
+    "topic_sorts": 2,
+    "discussion_bodies_min": 6,
+    "github_queries": 3,
+    "fixed_repository_heads_min": 8,
+    "changed_repository_files_min": 4,
+    "platform_writes": 0
+  }
+}

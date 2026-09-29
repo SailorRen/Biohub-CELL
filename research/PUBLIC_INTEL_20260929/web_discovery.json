@@ -1,0 +1,15 @@
+{
+  "queries": [
+    "\"biohub\" \"cell tracking\" \"September 29\" 2026",
+    "site:kaggle.com/competitions/biohub-cell-tracking-during-development/discussion 0.959",
+    "site:github.com biohub cell tracking 2026 September"
+  ],
+  "used_for": "Discovery only; findings checked against API bodies and fixed GitHub files",
+  "discovered_urls": [
+    "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/742266",
+    "https://github.com/Acceleratorer/Biohub-Cell-Tracking-During-Development-"
+  ],
+  "not_deep_read": [
+    "Acceleratorer/Biohub-Cell-Tracking-During-Development-"
+  ]
+}

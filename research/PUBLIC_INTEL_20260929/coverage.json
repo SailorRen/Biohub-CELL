@@ -1,0 +1,114 @@
+{
+  "discussion_delta": {
+    "744093": {
+      "messages": 1,
+      "new_ids": [
+        3529614
+      ],
+      "new_scope": true,
+      "body_changed_ids": []
+    },
+    "742266": {
+      "messages": 15,
+      "new_ids": [
+        3526344,
+        3526611,
+        3526816,
+        3526577,
+        3526818,
+        3528912,
+        3527305,
+        3527035,
+        3527037,
+        3527081,
+        3527097,
+        3527099,
+        3527160,
+        3527181,
+        3527268
+      ],
+      "new_scope": true,
+      "body_changed_ids": []
+    },
+    "743765": {
+      "messages": 2,
+      "new_ids": [],
+      "new_scope": false,
+      "body_changed_ids": []
+    },
+    "743929": {
+      "messages": 7,
+      "new_ids": [
+        3529557,
+        3529737
+      ],
+      "new_scope": false,
+      "body_changed_ids": []
+    },
+    "743006": {
+      "messages": 6,
+      "new_ids": [
+        3529517
+      ],
+      "new_scope": false,
+      "body_changed_ids": []
+    },
+    "732103": {
+      "messages": 26,
+      "new_ids": [],
+      "new_scope": false,
+      "body_changed_ids": []
+    },
+    "742169": {
+      "messages": 7,
+      "new_ids": [],
+      "new_scope": false,
+      "body_changed_ids": []
+    }
+  },
+  "catalog_delta": {
+    "scoreDescending": {
+      "count": 100,
+      "new_refs": []
+    },
+    "dateRun": {
+      "count": 100,
+      "new_refs": [
+        "ayodejiibrahimlateef/biohub-v916-v910-hoct-mode1-r1"
+      ]
+    },
+    "dateCreated": {
+      "count": 100,
+      "new_refs": [
+        "amanatar/biohub-geometric-fusion"
+      ]
+    }
+  },
+  "unique_kernels": 159,
+  "github_repositories": 10,
+  "github_files": 32,
+  "changed_prior_heads": [
+    "OpenKaggle/biohub-cell-tracking-research",
+    "kito2718/kaggle_Biohub-Cell_Tracking_During_Development",
+    "drosadocastro-bit/Atabey"
+  ],
+  "newly_read_repositories": [
+    "pathik1511/biohub-cell-tracking",
+    "MapleBadger666/biohub-cell-tracking"
+  ],
+  "semantic_review": "Targeted changed discussion bodies, README/result deltas, selected functions only; not whole-repository or full-notebook semantic audit",
+  "source_code_ranges": {
+    "royerlab/scripts/csv_to_geffs.py": "entire file",
+    "pathik1511/src/biohub/metric.py": [
+      "135-172",
+      "191-240"
+    ],
+    "pathik1511/src/biohub/link.py": [
+      "155-251"
+    ],
+    "MapleBadger666/src/biohub_cell_tracking/frozen_v9.py": [
+      "1316-1392",
+      "1473-1612"
+    ]
+  }
+}

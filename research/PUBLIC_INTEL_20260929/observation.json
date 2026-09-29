@@ -1,0 +1,30 @@
+{
+  "observed_at": "2026-09-29T02:16:28.917694+00:00",
+  "platform_writes": 0,
+  "inherited_collector_defaults": {
+    "catalog_sorts": [
+      "scoreDescending",
+      "dateRun",
+      "dateCreated"
+    ],
+    "catalog_per_sort": 100,
+    "topic_sorts": [
+      "new",
+      "active"
+    ],
+    "github_queries": 3,
+    "github_fixed_repos_min": 3,
+    "discussion_bodies_min": 4
+  },
+  "coverage_plan": {
+    "catalog_sorts": 3,
+    "catalog_per_sort": 100,
+    "topic_sorts": 2,
+    "discussion_bodies_min": 6,
+    "github_queries": 3,
+    "fixed_repository_heads_min": 8,
+    "changed_repository_files_min": 4,
+    "platform_writes": 0
+  },
+  "plan_note": "冻结覆盖以验收合同为准；旧采集器记录的默认值另存，不用于验收。"
+}

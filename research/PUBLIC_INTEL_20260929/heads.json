@@ -1,0 +1,102 @@
+[
+  {
+    "repo": "OpenKaggle/biohub-cell-tracking-research",
+    "branch": "main",
+    "commit": "129b0fee22bf0e4becbe67eba261e5775c713496",
+    "date": "2026-09-28T10:57:34Z",
+    "message": "docs: identify repository citation author",
+    "previous_commit": "03bfe828bf7517203a09f17651bef2b400c12f47",
+    "changed": true,
+    "observed_at": "2026-09-29T02:17:41.101077+00:00"
+  },
+  {
+    "repo": "canakbass/biohub-cell-tracking",
+    "branch": "main",
+    "commit": "7b1fa3c0b6f980d36f067882c5f874e9f25b2154",
+    "date": "2026-09-28T09:01:13Z",
+    "message": "Fix demo GIF: prediction count was wrongly capped to the sparse-GT count instead of real cell density",
+    "previous_commit": "7b1fa3c0b6f980d36f067882c5f874e9f25b2154",
+    "changed": false,
+    "observed_at": "2026-09-29T02:17:39.824251+00:00"
+  },
+  {
+    "repo": "alvaromendizabal/biohub-cell-tracking-during-development",
+    "branch": "main",
+    "commit": "2f151b95c31e79b5d0a98171a0b094b463689bea",
+    "date": "2026-09-28T05:23:56Z",
+    "message": "Portfolio: publish qualified Harmonic integration and deployment milestone (#7)\n\nPublish the locally qualified full-Harmonic integration result, delivery engineering, semi-reproducibility contract, updated presentation notebook, and current deployment frontier while keeping competition-specific implementation details private.",
+    "previous_commit": "2f151b95c31e79b5d0a98171a0b094b463689bea",
+    "changed": false,
+    "observed_at": "2026-09-29T02:17:39.968959+00:00"
+  },
+  {
+    "repo": "kito2718/kaggle_Biohub-Cell_Tracking_During_Development",
+    "branch": "main",
+    "commit": "fe311dd55de2aa35e44eb0e751f7412f7d7ac7d3",
+    "date": "2026-09-28T21:34:54Z",
+    "message": "064/080の対応の記録を追加",
+    "previous_commit": "21493759ea8693892bb035a6d047fa693436d303",
+    "changed": true,
+    "observed_at": "2026-09-29T02:17:40.126042+00:00"
+  },
+  {
+    "repo": "Beiciccc/biohub-cell-tracking-development",
+    "branch": "main",
+    "commit": "5b36660820a739b85af099abf59244724fef61d0",
+    "date": "2026-09-01T15:13:47Z",
+    "message": "Record exp243 submission",
+    "previous_commit": "5b36660820a739b85af099abf59244724fef61d0",
+    "changed": false,
+    "observed_at": "2026-09-29T02:17:42.764670+00:00"
+  },
+  {
+    "repo": "royerlab/kaggle-cell-tracking-competition",
+    "branch": "main",
+    "commit": "075fc5f5a52d11077f9dc2b074644618f26939e2",
+    "date": "2026-07-18T00:03:46Z",
+    "message": "Merge pull request #2 from royerlab/metrics-fix\n\nUpdating metric to patch weakly connected component exploit",
+    "previous_commit": "075fc5f5a52d11077f9dc2b074644618f26939e2",
+    "changed": false,
+    "observed_at": "2026-09-29T02:17:43.847612+00:00"
+  },
+  {
+    "repo": "JunhaoLiXD/Biohub_Cell_Tracking",
+    "branch": "main",
+    "commit": "b3cffe55c516ecb63b0694ec5c7dce47fef4f47f",
+    "date": "2026-09-28T04:28:25Z",
+    "message": "Record ep015 result and launch fork-protected diagnostic",
+    "previous_commit": "b3cffe55c516ecb63b0694ec5c7dce47fef4f47f",
+    "changed": false,
+    "observed_at": "2026-09-29T02:17:44.689053+00:00"
+  },
+  {
+    "repo": "drosadocastro-bit/Atabey",
+    "branch": "main",
+    "commit": "f6bac5f04b1942237c1aa19d7c24017aae155712",
+    "date": "2026-09-28T20:00:53Z",
+    "message": "Merge pull request #31 from drosadocastro-bit/v26a-forward-ranking-ablation\n\nV26a forward ranking ablation",
+    "previous_commit": "8597512fb348904c113ff29130100edc9212133c",
+    "changed": true,
+    "observed_at": "2026-09-29T02:17:45.984781+00:00"
+  },
+  {
+    "repo": "pathik1511/biohub-cell-tracking",
+    "branch": "master",
+    "commit": "2dd17c4ea7f3c3ce5e4f876155b4411558039585",
+    "date": "2026-09-28T22:55:33Z",
+    "message": "chore: update kaggle rank",
+    "previous_commit": null,
+    "changed": true,
+    "observed_at": "2026-09-29T02:17:46.080947+00:00"
+  },
+  {
+    "repo": "MapleBadger666/biohub-cell-tracking",
+    "branch": "main",
+    "commit": "3bbc291826ddbb7a57c8709fb09b85d085f3061c",
+    "date": "2026-09-28T22:36:13Z",
+    "message": "Preserve distinct historical script backups before local cleanup",
+    "previous_commit": null,
+    "changed": true,
+    "observed_at": "2026-09-29T02:17:47.327630+00:00"
+  }
+]
