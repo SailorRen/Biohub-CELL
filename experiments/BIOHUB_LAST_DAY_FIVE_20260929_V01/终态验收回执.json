@@ -1,0 +1,102 @@
+{
+  "task_id": "BIOHUB_LAST_DAY_FIVE_20260929_V01",
+  "contract_sha256": "dab0d256c320a0c6f212d2e723dc37fdc76e4f30219abf252b16f2f3c06b9bd6",
+  "final_status": "COMPLETED_VERIFIED",
+  "finished_at": "2026-09-29T19:37:05+08:00",
+  "required_summary": {
+    "failed_or_blocked": 0,
+    "human_review": 0,
+    "passed": 5
+  },
+  "checks": [
+    {
+      "details": {
+        "bytes": 9939,
+        "path": "tasks/CODEX_20260929_BIOHUB_LAST_DAY_FIVE_V01.md",
+        "sha256": "687016a6478eeffc41fe5e538ac02e46a7bc8700a528efb642cd03f175eac5ca"
+      },
+      "id": "frozen-task",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "bytes": 9455,
+        "path": "experiments/BIOHUB_XRL9_TWO_WAVE_20260927_V01/platform_ledger.json",
+        "sha256": "ebc9f1f0f7e8306d3d532fcf8e49bf8ec1291d788bde3cf515181bb474519bef"
+      },
+      "id": "old-ledger-unchanged",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "bytes": 11629,
+        "path": "experiments/BIOHUB_FINAL_ILP_READMIT_20260928_V01/platform_ledger.json",
+        "sha256": "2b646496523c355d945a7b5946f4d598e35e9cfbe8121f430795ad7c8f0c7eee"
+      },
+      "id": "prior-ilp-ledger-unchanged",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "argument_count": 2,
+        "argv_sha256": "0847babe8f458add2b2371672080c784f98ec244df9f174649afa34392b989ad",
+        "cwd": ".",
+        "executable": "python",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 47,
+          "sha256": "b94ff148f52c3f935e2cc4e92af19688f3c9de75b19b7044f7d586f6e1c26406"
+        },
+        "stdout_text_checks": 0
+      },
+      "id": "terminal-evidence",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "branch": "codex/last-day-five-20260929",
+        "dirty_entry_count": 0,
+        "head": "9f7005cbfe7ecdd891e48ca2e88412593f20834e",
+        "remote": "origin",
+        "remote_exists": true,
+        "remote_head": "9f7005cbfe7ecdd891e48ca2e88412593f20834e",
+        "remote_url_sha256": "294339ae4bf28ec437260f32bd064c06212de22a7026887c59e47f72ef414b8e",
+        "repository": "."
+      },
+      "id": "git-remote",
+      "outcome": "PASS",
+      "reason": "Git evidence passed",
+      "required": true,
+      "type": "git"
+    }
+  ],
+  "limitations": [
+    "The conclusion is limited to the frozen contract and the implemented checks.",
+    "The verifier does not prove omitted requirements or future stability.",
+    "A local or Git hash is not a trusted signature against a malicious writer."
+  ],
+  "verified_commit": "9f7005cbfe7ecdd891e48ca2e88412593f20834e",
+  "remote_files_byte_verified": 67,
+  "current_selection_readback": "UNKNOWN: browser initialization unavailable; historical observation retained, no selection changes"
+}
