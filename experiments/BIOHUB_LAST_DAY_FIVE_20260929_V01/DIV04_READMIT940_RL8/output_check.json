@@ -1,0 +1,35 @@
+{
+  "arm": "DIV04_READMIT940_RL8",
+  "status": "PASS",
+  "csv_rows": 240196,
+  "csv_sha256": "3e34b9f50d96f9434b02135b483678d5cd0c9a51a8388e2c7a098492f4d0038c",
+  "graphs": {
+    "44b6_0113de3b": {
+      "nodes": 25807,
+      "edges": 25032
+    },
+    "44b6_0b24845f": {
+      "nodes": 20040,
+      "edges": 18760
+    },
+    "6bba_05b6850b": {
+      "nodes": 6212,
+      "edges": 6006
+    },
+    "6bba_05db0fb1": {
+      "nodes": 70235,
+      "edges": 68104
+    }
+  },
+  "relaxed_calls": {
+    "flow": 792,
+    "no_flow": 0
+  },
+  "det": 0.955,
+  "relaxed": 8.0,
+  "repair_fallback": 0,
+  "deadline_degraded": 0,
+  "gate_candidates": null,
+  "gate_finite_scores": null,
+  "gate_rejected": null
+}

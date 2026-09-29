@@ -6,7 +6,7 @@
 五份均独立从唯一母版生成；除单因素配置、对应守卫断言、候选与任务回执标识外，保留其余代码。0.94625 全精度保留；RL8 两种 flow 路径通过实际函数合成检查。构建检查 60 项，readmit 合成检查 5 份；全部 13 单元已读取/AST 检查，2—11 单元与母版字节相同，未重做科学效果验证。普通运行完成后仍须验证实际输出与挂载。
 
 ## 当前状态
-观察：2026-09-29T04:07:00.079146+00:00（UTC）。stage=ROLLING_SCORE_PENDING。普通请求 5/5，正式请求 4/5，工程备用 0/1。
+观察：2026-09-29T04:16:15.511320+00:00（UTC）。stage=ROLLING_SCORE_PENDING。普通请求 5/5，正式请求 5/5，工程备用 0/1。
 
 |候选|ILP/readmit/relaxed|Version|SV|submission|普通状态|正式状态|Public|Δ0.958|
 |---|---|---|---|---|---|---|---|---|
@@ -14,7 +14,7 @@
 |DIV03_READMIT940|0.3/0.94/9.0|1|353755286|56661753|COMPLETE|SubmissionStatus.PENDING|None|UNKNOWN|
 |DIV04_READMIT930|0.4/0.93/9.0|1|353758519|56661944|COMPLETE|SubmissionStatus.PENDING|None|UNKNOWN|
 |DIV04_READMIT94625|0.4/0.94625/9.0|1|353758544|56662001|COMPLETE|SubmissionStatus.PENDING|None|UNKNOWN|
-|DIV04_READMIT940_RL8|0.4/0.94/8.0|1|353761942|None|RUNNING|NOT_SUBMITTED|None|UNKNOWN|
+|DIV04_READMIT940_RL8|0.4/0.94/8.0|1|353761942|56662318|COMPLETE|SCORE_PENDING|None|UNKNOWN|
 
 ## 实时资源与排重
 

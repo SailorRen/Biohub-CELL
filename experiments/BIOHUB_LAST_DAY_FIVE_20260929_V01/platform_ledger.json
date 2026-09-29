@@ -46,7 +46,7 @@
           }
         }
       ],
-      "observed_at": "2026-09-29T04:06:37.140732+00:00",
+      "observed_at": "2026-09-29T04:12:55.318272+00:00",
       "ordinary_status": {
         "status": "COMPLETE"
       },
@@ -97,7 +97,7 @@
           }
         }
       ],
-      "observed_at": "2026-09-29T04:06:38.407897+00:00",
+      "observed_at": "2026-09-29T04:12:57.930728+00:00",
       "ordinary_status": {
         "status": "COMPLETE"
       },
@@ -148,7 +148,7 @@
           }
         }
       ],
-      "observed_at": "2026-09-29T04:06:39.781894+00:00",
+      "observed_at": "2026-09-29T04:12:59.205906+00:00",
       "ordinary_status": {
         "status": "COMPLETE"
       },
@@ -199,7 +199,7 @@
           }
         }
       ],
-      "observed_at": "2026-09-29T04:06:41.883553+00:00",
+      "observed_at": "2026-09-29T04:13:00.875732+00:00",
       "ordinary_status": {
         "status": "COMPLETE"
       },
@@ -222,9 +222,9 @@
       "kernel_id": 136342188,
       "version": 1,
       "script_version_id": 353761942,
-      "submission_id": null,
+      "submission_id": 56662318,
       "source_sha256": "b2faa3457f8a68a846e6f0dfb30918112a376c78c80e4caab736a67e2d84e85c",
-      "status": "ORDINARY_RUNNING",
+      "status": "SCORE_PENDING",
       "public_score": null,
       "direct_error": null,
       "events": [
@@ -238,18 +238,29 @@
             "versionNumber": 1,
             "kernelId": 136342188
           }
+        },
+        {
+          "type": "FORMAL_SUBMISSION",
+          "at": "2026-09-29T04:15:26.475941+00:00",
+          "message": "BIOHUB_LAST_DAY_FIVE_20260929_V01 DIV04_READMIT940_RL8 V1 SV353761942",
+          "version": 1,
+          "sv": 353761942,
+          "response": {
+            "ref": 56662318
+          }
         }
       ],
-      "observed_at": "2026-09-29T04:06:44.072667+00:00",
+      "observed_at": "2026-09-29T04:13:03.309532+00:00",
       "ordinary_status": {
-        "status": "RUNNING"
-      }
+        "status": "COMPLETE"
+      },
+      "requested_at": "2026-09-29T04:15:26.475941+00:00"
     }
   ],
   "run_request_count": 5,
   "full_run_count": 5,
   "accepted_full_run_count": 5,
-  "formal_request_count": 4,
+  "formal_request_count": 5,
   "engineering_spare_count": 0,
   "formal_request_cap": 5,
   "maximum_batch_gpu_concurrency": 2,
