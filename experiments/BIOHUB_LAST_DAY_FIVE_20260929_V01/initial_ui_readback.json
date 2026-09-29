@@ -1,6 +1,5 @@
 {
   "recorded_at": "2026-09-29T03:15:15.368806+00:00",
-  "observation_window_shanghai": "2026-09-29 10:53-11:03",
   "owner": "sailorren",
   "formal_remaining": 5,
   "reset_in_hours_display": 21,
@@ -15,5 +14,6 @@
     "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/submissions",
     "https://www.kaggle.com/settings"
   ],
-  "method": "Fresh browser accessibility observation"
+  "method": "Fresh browser accessibility observation",
+  "observation_time_note": "Observed during this turn before recorded_at; exact initial browser timestamp not captured."
 }

@@ -17,4 +17,5 @@ with api.build_kaggle_client() as c:
   status=c.kernels.kernels_api_client.get_kernel_session_status(q).to_dict();a.update(observed_at=datetime.now(timezone.utc).isoformat(),ordinary_status=status)
   if not a['submission_id']:a['status']='ORDINARY_'+status['status']
   (P/arm/'ordinary_readback.json').write_text(json.dumps({'at':a['observed_at'],'source_equal':equal,'metadata':m,'status':status},indent=2)+'\n');print(arm,status,'image',m.get('dockerImage'))
+if not any(a.get('submission_id') for a in l['candidates']):l['stage']='ROLLING_RUNS'
 lp.write_text(json.dumps(l,indent=2)+'\n')
