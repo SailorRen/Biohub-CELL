@@ -6,7 +6,9 @@
 五份均独立从唯一母版生成；除单因素配置、对应守卫断言、候选与任务回执标识外，保留其余代码。0.94625 全精度保留；RL8 两种 flow 路径通过实际函数合成检查。构建检查 60 项，readmit 合成检查 5 份；全部 13 单元已读取/AST 检查，2—11 单元与母版字节相同，未重做科学效果验证。普通运行完成后仍须验证实际输出与挂载。
 
 ## 当前状态
-观察：2026-09-29T04:16:15.511320+00:00（UTC）。stage=ROLLING_SCORE_PENDING。普通请求 5/5，正式请求 5/5，工程备用 0/1。
+观察：2026-09-29T12:18:26.145252+08:00（上海）。stage=ROLLING_SCORE_PENDING。普通请求 5/5，正式请求 5/5，工程备用 0/1。
+
+执行阶段核验 PASS：五份普通 COMPLETE、五份输出和部署检查通过、五次正式请求已受理，工程备用 0。正式终态尚缺，状态 SCORE_PENDING；不声明实验完成或 Public 提升。续接仅查询已存在的五个 submission，无剩余提交预算。
 
 |候选|ILP/readmit/relaxed|Version|SV|submission|普通状态|正式状态|Public|Δ0.958|
 |---|---|---|---|---|---|---|---|---|
@@ -14,7 +16,7 @@
 |DIV03_READMIT940|0.3/0.94/9.0|1|353755286|56661753|COMPLETE|SubmissionStatus.PENDING|None|UNKNOWN|
 |DIV04_READMIT930|0.4/0.93/9.0|1|353758519|56661944|COMPLETE|SubmissionStatus.PENDING|None|UNKNOWN|
 |DIV04_READMIT94625|0.4/0.94625/9.0|1|353758544|56662001|COMPLETE|SubmissionStatus.PENDING|None|UNKNOWN|
-|DIV04_READMIT940_RL8|0.4/0.94/8.0|1|353761942|56662318|COMPLETE|SCORE_PENDING|None|UNKNOWN|
+|DIV04_READMIT940_RL8|0.4/0.94/8.0|1|353761942|56662318|COMPLETE|SubmissionStatus.PENDING|None|UNKNOWN|
 
 ## 实时资源与排重
 
@@ -28,4 +30,4 @@ API 已分页枚举本人 131 个 Notebook，其中 60 个 Biohub 源码逐项�
 
 旧两批 5/5 账本保持原字节；旧 ILP 批前两次未逐次刷新 GPU 余额缺口保留，本轮每次正式请求重新读取 GPU 与正式余额。新模型训练、Dataset 写入、最终选择修改均为 0。无自动后台调度、无第六算法候选。UNKNOWN/null 不冒充已受理或低分；超过 0.958 才是新增 Public 提升，不保证 Private。
 
-最终选择最近只读复核：2026-09-29T04:01:13.264334+00:00；手动 0/2；手动 ID []；自动具体 ID UNKNOWN；未修改。
+最终选择最近只读复核：2026-09-29T04:17:06.946Z；手动 0/2；手动 ID []；自动具体 ID UNKNOWN；未修改。

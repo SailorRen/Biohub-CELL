@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 from datetime import datetime,timezone
+from zoneinfo import ZoneInfo
 P=Path(__file__).resolve().parent;R=P.parents[1];l=json.loads((P/'platform_ledger.json').read_text())
 s='''# 最后一天五候选执行记录
 
@@ -11,7 +12,9 @@ s='''# 最后一天五候选执行记录
 
 ## 当前状态
 '''
-s+=f"观察：{datetime.now(timezone.utc).isoformat()}（UTC）。stage={l['stage']}。普通请求 {l['run_request_count']}/5，正式请求 {l['formal_request_count']}/5，工程备用 {l['engineering_spare_count']}/1。\n\n"
+s+=f"观察：{datetime.now(ZoneInfo('Asia/Shanghai')).isoformat()}（上海）。stage={l['stage']}。普通请求 {l['run_request_count']}/5，正式请求 {l['formal_request_count']}/5，工程备用 {l['engineering_spare_count']}/1。\n\n"
+if (P/'执行阶段核验.json').exists():
+ v=json.loads((P/'执行阶段核验.json').read_text());s+=f"执行阶段核验 {v['execution_checks']}：五份普通 COMPLETE、五份输出和部署检查通过、五次正式请求已受理，工程备用 0。正式终态尚缺，状态 SCORE_PENDING；不声明实验完成或 Public 提升。续接仅查询已存在的五个 submission，无剩余提交预算。\n\n"
 s+='|候选|ILP/readmit/relaxed|Version|SV|submission|普通状态|正式状态|Public|Δ0.958|\n|---|---|---|---|---|---|---|---|---|\n'
 for a in l['candidates']:
  c=a['effective_config'];score=a['public_score'];delta=f'{float(score)-.958:+.3f}' if score else 'UNKNOWN'

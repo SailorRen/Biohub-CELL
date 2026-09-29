@@ -1,0 +1,18 @@
+{
+  "observed_at": "2026-09-29T04:17:49.574220+00:00",
+  "scope": "ordinary execution, exact identity, necessary gates, formal request accounting, unchanged frozen files; not terminal score validation",
+  "execution_checks": "PASS",
+  "ordinary_completed": 5,
+  "formal_accepted": 5,
+  "engineering_spare": 0,
+  "submission_ids": [
+    56661592,
+    56661753,
+    56661944,
+    56662001,
+    56662318
+  ],
+  "old_ledgers_unchanged": true,
+  "final_selection_changed": false,
+  "formal_terminal_check": "SCORE_PENDING"
+}
