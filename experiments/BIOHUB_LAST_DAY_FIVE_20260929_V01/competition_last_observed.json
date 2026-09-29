@@ -1,0 +1,85 @@
+{
+  "observed_at": "2026-09-29T11:35:35.466092+00:00",
+  "competition": {
+    "id": 136605,
+    "ref": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development",
+    "title": "Biohub - Cell Tracking During Development",
+    "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development",
+    "description": "Detect and track zebrafish cells through 3D space and time",
+    "organizationName": "Biohub",
+    "category": "Research",
+    "reward": "60,000 Usd",
+    "tags": [
+      {
+        "ref": "image",
+        "name": "image",
+        "description": "",
+        "fullPath": "data type > image",
+        "competitionCount": 707,
+        "datasetCount": 63303,
+        "scriptCount": 7128,
+        "totalCount": 71138
+      },
+      {
+        "ref": "video",
+        "name": "video",
+        "description": "",
+        "fullPath": "data type > video data",
+        "competitionCount": 22,
+        "datasetCount": 1601,
+        "scriptCount": 324,
+        "totalCount": 1947
+      },
+      {
+        "ref": "computer vision",
+        "name": "computer vision",
+        "description": "Teaching a machine to interpret real-world images and videos. Applications include detecting objects, capturing motion, and restoring images.",
+        "fullPath": "technique > computer vision",
+        "competitionCount": 155,
+        "datasetCount": 7750,
+        "scriptCount": 6540,
+        "totalCount": 14445
+      },
+      {
+        "ref": "object detection",
+        "name": "object detection",
+        "description": "",
+        "fullPath": "task > object-detection",
+        "competitionCount": 46,
+        "datasetCount": 1670,
+        "scriptCount": 896,
+        "totalCount": 2612
+      },
+      {
+        "ref": "biology",
+        "name": "biology",
+        "description": "Explore datasets and kernels about gene expressions, transcriptomics, and even the works of Charles Darwin.",
+        "fullPath": "subject > earth and nature > biology",
+        "competitionCount": 47,
+        "datasetCount": 18163,
+        "scriptCount": 6373,
+        "totalCount": 24583
+      },
+      {
+        "ref": "custom metric",
+        "name": "custom metric",
+        "description": "This competition's metric is defined under the 'Evaluation' tab",
+        "fullPath": ""
+      }
+    ],
+    "deadline": "2026-09-29T23:59:00.000Z",
+    "teamCount": 3993,
+    "userHasEntered": true,
+    "userRank": 155,
+    "newEntrantDeadline": "2026-09-22T23:59:00.000Z",
+    "enabledDate": "2026-06-29T19:01:13.613Z",
+    "maxDailySubmissions": 5,
+    "maxTeamSize": 5,
+    "evaluationMetric": "CZI Biohub Zebrafish 133605",
+    "awardsPoints": true,
+    "isKernelsSubmissionsOnly": true,
+    "thumbnailImageUrl": "https://storage.googleapis.com/kaggle-competitions/kaggle/136605/logos/thumb76_76.png?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1790691033&Signature=t8rOvy6O0mxJtuSC5%2Bjwj5klw7MvkRHofuhs4l1lF7j5uB1LhHPX%2Bj49tAqnkTTI5fcTLQXF93035EswlDOGPVn%2FTiiHJhPbhJU%2FHqAyiLVEi39FqtslUkB0iQDLc3pNFXlcDhGBdrX7f3IKCGx%2BiJNah5BsVhpKiY954jxwgEM6R2ahMXmJyCo%2BJFhc5IbcUb4zNUk%2FEPhSW8ou3EQgNHNeKxAZ3z71wKSHwJsa5k5vSxgyNNKuqXjAD%2B%2F2S%2BYSmue2c82pDIOiPp8k4AluZ%2B8mAb%2FoIAuBknEAVwwA8WIscltzZIHPSQiOd%2BLr9Ybq%2BSKK7nOuRVeJ3VfVCC35bg%3D%3D&t=2026-04-22-22-08-44",
+    "hostName": "Biohub",
+    "dateCreated": "2026-04-01T21:58:55.077Z"
+  }
+}

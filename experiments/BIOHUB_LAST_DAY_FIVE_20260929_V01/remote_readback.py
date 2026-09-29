@@ -10,7 +10,7 @@ for a in l['candidates']:
  for f in ['candidate.ipynb','kernel-metadata.json','run_request_receipt.json','formal_request_receipt.json','formal_last_observed.json','output_check.json','deployment_check.json','input_versions_observed.json','runtime_receipt.json','pre_submit_quota.json','pre_submit_api_snapshot.json','ordinary_readback.json']:
   p=P/a['candidate_id']/f
   if p.exists():paths.append(p)
-for f in ['final_selection_observed.json','post_submit_quota.json','执行阶段核验.json']:
+for f in ['final_selection_observed.json','post_submit_quota.json','执行阶段核验.json','competition_last_observed.json','score_recovery_notes.json']:
  if (P/f).exists():paths.append(P/f)
 rows=[]
 for p in paths:
