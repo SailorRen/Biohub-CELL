@@ -1,6 +1,6 @@
 {
-  "status": "READY_TO_CLEAN",
-  "updated_at": "2026-09-30T05:18:30.616713+00:00",
+  "status": "LOCAL_WORKING_FILES_REMOVED",
+  "updated_at": "2026-09-30T05:20:22.211787+00:00",
   "deletion_authorized_by_user": true,
   "condition": "Only after GitHub byte readback and frozen archive verifier PASS",
   "targets": [
@@ -19,5 +19,18 @@
   "archive_verified_commit": "a77cd16a4fed96acf307662e35ac39dfbec8f617",
   "remote_files_byte_verified": 2755,
   "archive_contract_sha256": "8828e1dcb9314da6859c65475660b8ca14d8f44d3c310de3ef97c6c148b98e52",
-  "archive_contract_status": "COMPLETED_VERIFIED"
+  "archive_contract_status": "COMPLETED_VERIFIED",
+  "removed_paths": [
+    "/Users/sailor/kaggle/项目/Biohub - CELL",
+    "/Users/sailor/.codex/worktrees/final-ilp-readmit/Biohub - CELL",
+    "/private/tmp/biohub-final-remote-verify-20260930.git"
+  ],
+  "absence_verified": true,
+  "primary_removed_allocated_kib": 1730268,
+  "temporary_mirror_removed_allocated_kib": 11776,
+  "managed_worktree_method": "Codex app archive_worktree; archived_worktree artifact observed; checkout path absent",
+  "managed_archived_artifact_id": "01a0f0c0-583f-70e1-9c48-b4a4f7616b56",
+  "retained_scope_note": "GitHub and Kaggle objects retained. Application archive metadata/recovery storage and chat/memory history are not purged. No claim that all application internal traces are erased.",
+  "temporary_handoff_policy": "Receipt and request scratch files removed after successful remote byte readback.",
+  "archive_receipt_commit": "3b134196c72211eaee25efb0efb7fe8e77046239"
 }
