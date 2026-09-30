@@ -1,0 +1,298 @@
+{
+  "checks": [
+    {
+      "details": {
+        "bytes": 8383,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "tasks/CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS_TASK.md",
+        "required_text_checks": 4,
+        "sha256": "c097dc8ad2ecf8aa4ab0f6530d570e1dbe6f678d8c48ca292f215345e30bb675"
+      },
+      "id": "task-record",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/sample_count"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/embryo_count"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/sample_rows_canonical_sha256"
+          }
+        ],
+        "path": "experiments/V20B/sample_manifest.json",
+        "sha256": "7b028996131fc189f8a480b8e1c01f26f72131877758680af9ed1b7c9edce842"
+      },
+      "id": "sample-manifest",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/experiment_label"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/checkpoint_overlap/status"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/historical_invariants/v20a_domain_status"
+          }
+        ],
+        "path": "experiments/V20B/evidence_boundary.json",
+        "sha256": "48fc1b23c0930e05c0371d9d6d0a85dd595bb440c85b11aff5910d589c7d548f"
+      },
+      "id": "evidence-boundary",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/limits/save_kernel_total"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/limits/formal_competition_submission"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/limits/retry"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/limits/dataset_write"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/limits/model_write"
+          }
+        ],
+        "path": "experiments/V20B/write_budget.json",
+        "sha256": "2ee55ca9d1a39b077d116800f0af7240780cdc56e68d22ffb973e632f9ec8186"
+      },
+      "id": "write-budget",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "argument_count": 4,
+        "argv_sha256": "a5d84a34f62a6a900b0ad23637e7e9444dcba7c32ad975c212ef52d9550f5586",
+        "cwd": ".",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 36,
+          "sha256": "eeda656ac1ef0cd4785c5fadd1b74409b76ab2197c57e80a3c321af5e8a07430"
+        },
+        "stdout_text_checks": 1
+      },
+      "id": "resolved-config-checker-self-test",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "argument_count": 6,
+        "argv_sha256": "9b304ca82c731d17654928a8b522561de293df29c2fe885b67135fa4b3b7cae0",
+        "cwd": ".",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 184,
+          "sha256": "56280476cc460fd67a6057861b5683417f3cc529d1c16e958f697609705771c0"
+        },
+        "stdout_text_checks": 2
+      },
+      "id": "v20b-domain-verifier",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "argument_count": 5,
+        "argv_sha256": "bcb94f0f443389eb1e330a97bb97b8f37f8640379645157e8e6facc61906d1c0",
+        "cwd": ".",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 12774,
+          "sha256": "b2af50343a0e55413b78d03b35918ead0f3aa2f7ae1d9ac2a22a7290c4ed77fb"
+        },
+        "stdout_text_checks": 2
+      },
+      "id": "v20a-history-regression",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "bytes": 18507,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "reports/20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS_REPORT_V01.md",
+        "required_text_checks": 8,
+        "sha256": "f65989300fe408a2df78f9b88a3831ce140e6d5d9bff70a70150186cc6d5fde1"
+      },
+      "id": "final-report",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "bytes": 23043,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "reports/20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS_REPORT_V01.html",
+        "required_text_checks": 2,
+        "sha256": "9f9c86a48818e994eea080c65d99dff248393f886cb7f440e1802edb44f4867c"
+      },
+      "id": "final-html-report",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "not_empty",
+            "passed": true,
+            "pointer": "/status"
+          },
+          {
+            "op": "not_empty",
+            "passed": true,
+            "pointer": "/domain_status"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/summary/failed"
+          }
+        ],
+        "path": "reports/20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS_VERIFY.json",
+        "sha256": "3bc60e01bf83d64718079dbefb756f0c126519e73c2cc00344fae2da1306b75c"
+      },
+      "id": "final-verification-receipt",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "branch": "main",
+        "dirty_entry_count": 0,
+        "head": "42836ad1599a54ea7acc319d7342896f0a7cccf8",
+        "remote": "origin",
+        "remote_exists": true,
+        "remote_head": "42836ad1599a54ea7acc319d7342896f0a7cccf8",
+        "remote_url_sha256": "294339ae4bf28ec437260f32bd064c06212de22a7026887c59e47f72ef414b8e",
+        "repository": "."
+      },
+      "id": "git-clean-and-remote-head",
+      "outcome": "PASS",
+      "reason": "Git evidence passed",
+      "required": true,
+      "type": "git"
+    }
+  ],
+  "claimed_at": "2026-09-04T19:39:34+08:00",
+  "claimed_status": "CLAIMED_COMPLETE",
+  "contract_path": "experiments/V20B/contract.json",
+  "contract_sha256": "ea46844436142e61c3bc570b4e616531b69eca2cbc609935cf84ce768d41a40b",
+  "final_status": "COMPLETED_VERIFIED",
+  "finished_at": "2026-09-04T19:49:48+08:00",
+  "integrity_scope": "git-tracked-and-sha256",
+  "limitations": [
+    "The conclusion is limited to the frozen contract and the implemented checks.",
+    "The verifier does not prove omitted requirements or future stability.",
+    "A local or Git hash is not a trusted signature against a malicious writer."
+  ],
+  "optional_warning_check_ids": [],
+  "reason": "all required automated checks passed",
+  "required_summary": {
+    "failed_or_blocked": 0,
+    "human_review": 0,
+    "passed": 11
+  },
+  "run_id": "20260904T194947+0800-5f6b8555",
+  "schema_version": "1.0",
+  "started_at": "2026-09-04T19:49:47+08:00",
+  "task_id": "CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS"
+}

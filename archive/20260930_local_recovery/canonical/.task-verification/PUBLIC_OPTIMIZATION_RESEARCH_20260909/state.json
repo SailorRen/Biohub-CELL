@@ -1,0 +1,28 @@
+{
+  "baseline": {
+    "contract_matches_head": false,
+    "contract_tracked": false,
+    "git_repository": true,
+    "head": "175054cb891e2f7981d196a6c1cb6d26f8d6abcf",
+    "integrity_scope": "local-sha256-only"
+  },
+  "claim": {
+    "claimed_at": "2026-09-09T10:09:01+08:00",
+    "source": "agent_report",
+    "status": "CLAIMED_COMPLETE",
+    "summary_chars": 64,
+    "summary_sha256": "b401c78d8a33cff1114eea13b5dff6ccb8335f725c219b5561a94e30365b83ce"
+  },
+  "contract_path": "tasks/CODEX_20260909_BIOHUB_PUBLIC_OPTIMIZATION_RESEARCH_CONTRACT.json",
+  "contract_sha256": "ac37e6ae3eef37bbe281082beb72508677575962df6ac180a43617824df92da0",
+  "latest_verification": {
+    "final_status": "COMPLETED_VERIFIED",
+    "finished_at": "2026-09-09T10:11:42+08:00",
+    "report_path": ".task-verification/PUBLIC_OPTIMIZATION_RESEARCH_20260909/runs/20260909T101140+0800-e16d9c67.json",
+    "run_id": "20260909T101140+0800-e16d9c67"
+  },
+  "prepared_at": "2026-09-09T09:43:03+08:00",
+  "schema_version": "1.0",
+  "status": "COMPLETED_VERIFIED",
+  "task_id": "PUBLIC_OPTIMIZATION_RESEARCH_20260909"
+}

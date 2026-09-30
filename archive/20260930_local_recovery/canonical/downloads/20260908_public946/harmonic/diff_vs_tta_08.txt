@@ -1,0 +1,17 @@
+--- harmonic_8
++++ tta_8
+@@ -1,8 +1,8 @@
+-
+-
+-
+-
+-
+-
++# ============================================================
++# CELL 9 (NEW) -- VALIDATOR: scoring against the official metric
++# (https://github.com/royerlab/kaggle-cell-tracking-competition/blob/main/metrics.md)
++# Division-matching reflects the organizers' post-exploit patch (single
++# connected component + both-daughter-lineage coverage + anchor + fork).
++# ============================================================
+ 
+ from scipy.optimize import linear_sum_assignment

@@ -1,0 +1,78 @@
+{
+  "checks": [
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/passed"
+          }
+        ],
+        "path": "research/PUBLIC_INTEL_20260928_RESULTS/verification.json",
+        "sha256": "1837edaa889b0f85154e653fc6572faff440cad5bb931ce7ce69b0c017b2c900"
+      },
+      "id": "coverage",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "bytes": 9245,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "reports/20260928_正式结果与最新公开情报.md",
+        "required_text_checks": 5,
+        "sha256": "adfdbb445c09857c8d896e678b2ebc6779b2ccb140c528c44639afdf0e02e739"
+      },
+      "id": "report",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "branch": "codex/final-ilp-readmit-20260928",
+        "dirty_entry_count": 0,
+        "head": "6467d91b850a909807a211eef56ffeb289e7ccab",
+        "remote": "origin",
+        "remote_exists": true,
+        "remote_head": "6467d91b850a909807a211eef56ffeb289e7ccab",
+        "remote_url_sha256": "294339ae4bf28ec437260f32bd064c06212de22a7026887c59e47f72ef414b8e",
+        "repository": "."
+      },
+      "id": "git",
+      "outcome": "PASS",
+      "reason": "Git evidence passed",
+      "required": true,
+      "type": "git"
+    }
+  ],
+  "claimed_at": "2026-09-28T18:26:58+08:00",
+  "claimed_status": "CLAIMED_COMPLETE",
+  "contract_path": "research/PUBLIC_INTEL_20260928_RESULTS/验收合同.json",
+  "contract_sha256": "ba1571abb807114639cd0701c95e13ab62efb3f6b5ca5ffd0a4cd9d045760dfc",
+  "final_status": "COMPLETED_VERIFIED",
+  "finished_at": "2026-09-28T18:26:59+08:00",
+  "integrity_scope": "local-sha256-only",
+  "limitations": [
+    "The conclusion is limited to the frozen contract and the implemented checks.",
+    "The verifier does not prove omitted requirements or future stability.",
+    "A local or Git hash is not a trusted signature against a malicious writer."
+  ],
+  "optional_warning_check_ids": [],
+  "reason": "all required automated checks passed",
+  "required_summary": {
+    "failed_or_blocked": 0,
+    "human_review": 0,
+    "passed": 3
+  },
+  "run_id": "20260928T182658+0800-0b08191c",
+  "schema_version": "1.0",
+  "started_at": "2026-09-28T18:26:58+08:00",
+  "task_id": "BIOHUB_PUBLIC_INTEL_20260928_RESULTS"
+}

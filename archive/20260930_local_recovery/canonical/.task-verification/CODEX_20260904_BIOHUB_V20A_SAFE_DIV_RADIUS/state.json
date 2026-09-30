@@ -1,0 +1,28 @@
+{
+  "baseline": {
+    "contract_matches_head": true,
+    "contract_tracked": true,
+    "git_repository": true,
+    "head": "0feb0e4b7f09b390b5ff1397ac672993fd9482a4",
+    "integrity_scope": "git-tracked-and-sha256"
+  },
+  "claim": {
+    "claimed_at": "2026-09-04T12:56:28+08:00",
+    "source": "agent_report",
+    "status": "CLAIMED_COMPLETE",
+    "summary_chars": 141,
+    "summary_sha256": "c75bb77a1a85c154f109e0cfec781d9f46117e16c864e5807fda086e2a7ea43a"
+  },
+  "contract_path": "experiments/V20A/contract.json",
+  "contract_sha256": "85f78b97015fa2d16cf4ab8fa6c8526fe8cc302da81d215a886940316daa3c68",
+  "latest_verification": {
+    "final_status": "COMPLETED_VERIFIED",
+    "finished_at": "2026-09-04T12:57:06+08:00",
+    "report_path": ".task-verification/CODEX_20260904_BIOHUB_V20A_SAFE_DIV_RADIUS/runs/20260904T125702+0800-49af7d5a.json",
+    "run_id": "20260904T125702+0800-49af7d5a"
+  },
+  "prepared_at": "2026-09-04T12:36:44+08:00",
+  "schema_version": "1.0",
+  "status": "COMPLETED_VERIFIED",
+  "task_id": "CODEX_20260904_BIOHUB_V20A_SAFE_DIV_RADIUS"
+}

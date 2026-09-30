@@ -1,0 +1,1168 @@
+{
+  "repository": "yu-lab-vt/FOCUS-3D",
+  "branch": "main",
+  "commit": "5c4b53f743a0fbbae056e2c1a139895ae819f069",
+  "observed_at_utc": "2026-09-09T01:48:22.863064+00:00",
+  "pushed_at": "2026-09-02T10:42:11Z",
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "commit_message": "Update README.md",
+  "tree": {
+    "sha": "5c4b53f743a0fbbae056e2c1a139895ae819f069",
+    "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/5c4b53f743a0fbbae056e2c1a139895ae819f069",
+    "tree": [
+      {
+        "path": ".copier-answers.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d6481834ddd3bdded085d225da888cda78b9431c",
+        "size": 598,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/d6481834ddd3bdded085d225da888cda78b9431c"
+      },
+      {
+        "path": ".github",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "517b9e7c50c1e95ce8e3e576f97f945caeeff302",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/517b9e7c50c1e95ce8e3e576f97f945caeeff302"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "2a511fa6bc1c15d22627d2654680bb7f5c31155e",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/2a511fa6bc1c15d22627d2654680bb7f5c31155e"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c14b66dcaa663e0880c6c6e1746e022d609ab2cf",
+        "size": 2821,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/c14b66dcaa663e0880c6c6e1746e022d609ab2cf"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/documentation.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7af00d6deb1acb592403b77c3c1ed5a0cea5c688",
+        "size": 256,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/7af00d6deb1acb592403b77c3c1ed5a0cea5c688"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "12025ec53a5031522eddf04b8136661a1fb8b6f6",
+        "size": 758,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/12025ec53a5031522eddf04b8136661a1fb8b6f6"
+      },
+      {
+        "path": ".github/ISSUE_TEMPLATE/task.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f51f7a79e984efa2963577e113d42a4943d3d71e",
+        "size": 199,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/f51f7a79e984efa2963577e113d42a4943d3d71e"
+      },
+      {
+        "path": ".github/PULL_REQUEST_TEMPLATE.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b25e158603516d2cefe4b271b2bc688e4f527c6c",
+        "size": 605,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/b25e158603516d2cefe4b271b2bc688e4f527c6c"
+      },
+      {
+        "path": ".github/dependabot.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f3ba761a9bbc5c716ab17d1efed3dea576a82869",
+        "size": 696,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/f3ba761a9bbc5c716ab17d1efed3dea576a82869"
+      },
+      {
+        "path": ".github/workflows",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "da05bd39430de62ca2067250b6659347fc24d54c",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/da05bd39430de62ca2067250b6659347fc24d54c"
+      },
+      {
+        "path": ".github/workflows/test_and_deploy.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5108680c783290848c3087f9d542d683fc27d724",
+        "size": 1550,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/5108680c783290848c3087f9d542d683fc27d724"
+      },
+      {
+        "path": ".gitignore",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0de18f1266906573b693b551742c6dcf3bd32eb7",
+        "size": 1123,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/0de18f1266906573b693b551742c6dcf3bd32eb7"
+      },
+      {
+        "path": ".napari-hub",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "aa781e3eca5b98849cb6b2ace8c02352e6170b5e",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/aa781e3eca5b98849cb6b2ace8c02352e6170b5e"
+      },
+      {
+        "path": ".napari-hub/DESCRIPTION.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7ecdd97c3321f1996fbe28ced90575c574400f0c",
+        "size": 463,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/7ecdd97c3321f1996fbe28ced90575c574400f0c"
+      },
+      {
+        "path": ".napari-hub/config.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "904c76f41f87274ecb26dce774284b5e203d9343",
+        "size": 542,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/904c76f41f87274ecb26dce774284b5e203d9343"
+      },
+      {
+        "path": ".pre-commit-config.yaml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c2b04ad0bfd19d42f6a88221254d0c2537ef79c7",
+        "size": 734,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/c2b04ad0bfd19d42f6a88221254d0c2537ef79c7"
+      },
+      {
+        "path": "LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "08d2b9d4a7708dfac0a91864e6fa9cbe95331065",
+        "size": 1488,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/08d2b9d4a7708dfac0a91864e6fa9cbe95331065"
+      },
+      {
+        "path": "README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7c3e970394236e3b2090d2ccc23fd9554005df56",
+        "size": 10392,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/7c3e970394236e3b2090d2ccc23fd9554005df56"
+      },
+      {
+        "path": "docs",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "e72275aa28803a09f4b333b536b8a2001d10b473",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/e72275aa28803a09f4b333b536b8a2001d10b473"
+      },
+      {
+        "path": "docs/MENU_REFERENCE.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "113ad6eb1fa1a1c29ddad8bcc47b66f3fd51de24",
+        "size": 18870,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/113ad6eb1fa1a1c29ddad8bcc47b66f3fd51de24"
+      },
+      {
+        "path": "example",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "36aa1cfec3e9f42697c0d593d6272920d4cd77ff",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/36aa1cfec3e9f42697c0d593d6272920d4cd77ff"
+      },
+      {
+        "path": "example/checkpoint",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "e71d754e023e786f5cbeb238ce7ec8b01953c419",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/e71d754e023e786f5cbeb238ce7ec8b01953c419"
+      },
+      {
+        "path": "example/checkpoint/checkpoint.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "23e38a9ea011bba9f415a40e95fdb6d1c73751a7",
+        "size": 121,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/23e38a9ea011bba9f415a40e95fdb6d1c73751a7"
+      },
+      {
+        "path": "example/data",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "8256e914f3aeee89a32218f0656234c16cd0380e",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/8256e914f3aeee89a32218f0656234c16cd0380e"
+      },
+      {
+        "path": "example/data/zebrafish.tif",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "dc1e74232b60dd73313d39463d39fccfc5cbe21b",
+        "size": 5768304,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/dc1e74232b60dd73313d39463d39fccfc5cbe21b"
+      },
+      {
+        "path": "notebooks",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "2de97fae2b7f6be9fa760b2a5d5639524254e6d4",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/2de97fae2b7f6be9fa760b2a5d5639524254e6d4"
+      },
+      {
+        "path": "notebooks/01_inference.ipynb",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b23f465ccc2b8f17abf73bd87e5478d86b58a9d8",
+        "size": 14621,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/b23f465ccc2b8f17abf73bd87e5478d86b58a9d8"
+      },
+      {
+        "path": "notebooks/02_finetune.ipynb",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a3a62d90fcbc18f0ea41647b2debc7137ff296fa",
+        "size": 19868,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/a3a62d90fcbc18f0ea41647b2debc7137ff296fa"
+      },
+      {
+        "path": "pyproject.toml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d8df51f7a8344c05b31669efc65d6ac386179043",
+        "size": 3267,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/d8df51f7a8344c05b31669efc65d6ac386179043"
+      },
+      {
+        "path": "src",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "f9512d18d582cfae938867157755d36770b1d1b7",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/f9512d18d582cfae938867157755d36770b1d1b7"
+      },
+      {
+        "path": "src/focus3d",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "b9ddf5338eceb4c1f1dd637f86e5fa5614970a91",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/b9ddf5338eceb4c1f1dd637f86e5fa5614970a91"
+      },
+      {
+        "path": "src/focus3d/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0f5eef4b2482e82f513e80a7fc8f1379f5d8ec86",
+        "size": 102,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/0f5eef4b2482e82f513e80a7fc8f1379f5d8ec86"
+      },
+      {
+        "path": "src/focus3d/_reader.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7c2361f0d7e0842d540231d0c0325407a7d95d00",
+        "size": 4481,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/7c2361f0d7e0842d540231d0c0325407a7d95d00"
+      },
+      {
+        "path": "src/focus3d/_sample_data.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "fc108a637bace6fc8b83aac4b47fa653802891e3",
+        "size": 1968,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/fc108a637bace6fc8b83aac4b47fa653802891e3"
+      },
+      {
+        "path": "src/focus3d/_widget.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "21dc4d79c8450c6bc4fb87144ce89184ba040ff1",
+        "size": 164072,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/21dc4d79c8450c6bc4fb87144ce89184ba040ff1"
+      },
+      {
+        "path": "src/focus3d/_writer.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7349cc82c9674f327975b5e74ff77d06795d209a",
+        "size": 3250,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/7349cc82c9674f327975b5e74ff77d06795d209a"
+      },
+      {
+        "path": "src/focus3d/analysis",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "bfbfbb1dd42ad64a52d2709aa3ddfeefec7409e0",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/bfbfbb1dd42ad64a52d2709aa3ddfeefec7409e0"
+      },
+      {
+        "path": "src/focus3d/analysis/analysis.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "52cf1dd0d970e2cb8aed5ebb74590e78e9a052b0",
+        "size": 75354,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/52cf1dd0d970e2cb8aed5ebb74590e78e9a052b0"
+      },
+      {
+        "path": "src/focus3d/analysis/morphometry_engine.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "924c5a052765b773f9ab5066de201bbb814e4471",
+        "size": 85138,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/924c5a052765b773f9ab5066de201bbb814e4471"
+      },
+      {
+        "path": "src/focus3d/basic",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "1998a823a583e6cecd41b95ecee8ded3bceadc03",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/1998a823a583e6cecd41b95ecee8ded3bceadc03"
+      },
+      {
+        "path": "src/focus3d/basic/curation.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9ce2163cc882e6b6ae37e057cfdd4ee7a7cc1b4e",
+        "size": 123313,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/9ce2163cc882e6b6ae37e057cfdd4ee7a7cc1b4e"
+      },
+      {
+        "path": "src/focus3d/napari.yaml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b7222b783c398dd62f6c23ffa7d4a8f34667f6d4",
+        "size": 1444,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/b7222b783c398dd62f6c23ffa7d4a8f34667f6d4"
+      },
+      {
+        "path": "src/focus3d/segmentation",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "cb9c646a89241c5c3ec558a48ae7cd15cd2d6857",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/cb9c646a89241c5c3ec558a48ae7cd15cd2d6857"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "f752ffc5af56ea129c84f5f3293d4eb634dcb915",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/f752ffc5af56ea129c84f5f3293d4eb634dcb915"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e884cf166ce12caea257ffb3741ff1e8a3cca79d",
+        "size": 1054,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/e884cf166ce12caea257ffb3741ff1e8a3cca79d"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/click_inference.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6da708f836e7e4100eb12eeb77ac57959bfaa8da",
+        "size": 24832,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/6da708f836e7e4100eb12eeb77ac57959bfaa8da"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/configs",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "d7b84f4831157a5ef17b13adfa37a31cf14b1487",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/d7b84f4831157a5ef17b13adfa37a31cf14b1487"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/configs/3d_test.yaml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6a6a7e5838f84219bb0f893ed0a4c9f53168886a",
+        "size": 2390,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/6a6a7e5838f84219bb0f893ed0a4c9f53168886a"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/fine_tune.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8c16ac11f7f9c384441854e496b6b4275ea678bf",
+        "size": 7885,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/8c16ac11f7f9c384441854e496b6b4275ea678bf"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/fine_tune_function.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3c56d5950c966b531b7f4d4da636c62834438604",
+        "size": 11650,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/3c56d5950c966b531b7f4d4da636c62834438604"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/inference.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4f7901c87af4ab19ff4976e4fef31349c4274bcc",
+        "size": 69001,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/4f7901c87af4ab19ff4976e4fef31349c4274bcc"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/inference_win.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "162f9162e20f7ad07010388aa5346f3f3c8f089c",
+        "size": 73952,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/162f9162e20f7ad07010388aa5346f3f3c8f089c"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "180db2abb5caa58a277bc02e7e9b5551f2e9366a",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/180db2abb5caa58a277bc02e7e9b5551f2e9366a"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2b86e7906b53c452195c2266059e328cab0490b2",
+        "size": 301,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/2b86e7906b53c452195c2266059e328cab0490b2"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/config.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a11b4cca9454eb876fa8a94344ac9664b466cdb7",
+        "size": 4336,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/a11b4cca9454eb876fa8a94344ac9664b466cdb7"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/config_win.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a627046d62c012afd14aef1f1049de845f7d1fa1",
+        "size": 12825,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/a627046d62c012afd14aef1f1049de845f7d1fa1"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/data",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "7cb21e3388b88133adee16b0bc31dc22f7616377",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/7cb21e3388b88133adee16b0bc31dc22f7616377"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/data/data_mapper.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e79643b095b30b9e2c57225726a78278fe77d3cc",
+        "size": 15815,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/e79643b095b30b9e2c57225726a78278fe77d3cc"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/maskformer_model.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f3d6059abe893a01b1c434f01389892594b97294",
+        "size": 24007,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/f3d6059abe893a01b1c434f01389892594b97294"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/maskformer_model_win.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "592c6a9dc1f52af8f554647065e20d9e43194085",
+        "size": 28069,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/592c6a9dc1f52af8f554647065e20d9e43194085"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "38821e3a6fdb24e5f9ac163874f4980934d047ce",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/38821e3a6fdb24e5f9ac163874f4980934d047ce"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "52ca57a436fac79d1855b78c0e847f34b7343ca9",
+        "size": 184,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/52ca57a436fac79d1855b78c0e847f34b7343ca9"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "ef0985f865036a9d9741f28036cb43127704212c",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/ef0985f865036a9d9741f28036cb43127704212c"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9020c2df23e2af280b7bb168b996ae9eaf312eb8",
+        "size": 51,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/9020c2df23e2af280b7bb168b996ae9eaf312eb8"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/engine_pretrain.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a35b7560672b43d56545173d9228beedafe3fc10",
+        "size": 4189,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/a35b7560672b43d56545173d9228beedafe3fc10"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/mae3d_backbone.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "823c696fdd7769ce6f71fa99cd4d882782eae871",
+        "size": 6355,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/823c696fdd7769ce6f71fa99cd4d882782eae871"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/mae3d_backbone_win.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b2f2fc31a8312f1375a3030228ee1fc9fac4e3fe",
+        "size": 6734,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/b2f2fc31a8312f1375a3030228ee1fc9fac4e3fe"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/models_mae.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "17590aac7d02642757a6c66bbb8bdf51c9352e1d",
+        "size": 31278,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/17590aac7d02642757a6c66bbb8bdf51c9352e1d"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/util",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "a079207312f7b363d9649a3a1712bad3c32b586a",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/a079207312f7b363d9649a3a1712bad3c32b586a"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/util/crop.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2d4c6077a7bc624e4b050e6af5912cf465b92b80",
+        "size": 1362,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/2d4c6077a7bc624e4b050e6af5912cf465b92b80"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/util/datasets.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6e2eaa2ec170351eddcfd4ef5a3ce02f85c9bd45",
+        "size": 22388,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/6e2eaa2ec170351eddcfd4ef5a3ce02f85c9bd45"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/util/lars.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "254631a7a464425689266e0150eb768fa80f8569",
+        "size": 2193,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/254631a7a464425689266e0150eb768fa80f8569"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/util/lr_decay.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a92b78160229d5c9d617783a9e316abbf6ddd7eb",
+        "size": 2435,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/a92b78160229d5c9d617783a9e316abbf6ddd7eb"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/util/lr_sched.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "86fe8a4b4e849c71185a7cd29d73e1cc566b974b",
+        "size": 885,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/86fe8a4b4e849c71185a7cd29d73e1cc566b974b"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/util/misc.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a015280690c941ec64c2f80d4a74489b5d7daf2a",
+        "size": 13200,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/a015280690c941ec64c2f80d4a74489b5d7daf2a"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/util/pos_embed.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "75100555eab53e200030dbd6fac347d7c5f40c0d",
+        "size": 5908,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/75100555eab53e200030dbd6fac347d7c5f40c0d"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "26a7c8b01294b8fe6c1c764e38e3a8fecd3c563e",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/26a7c8b01294b8fe6c1c764e38e3a8fecd3c563e"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c2ea8e810154c233b8b9b58f6cdf26215f1b7837",
+        "size": 87,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/c2ea8e810154c233b8b9b58f6cdf26215f1b7837"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/adapter_modules.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "450d1fb99d5cc1e2c202eb441dfd204b08608c19",
+        "size": 23350,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/450d1fb99d5cc1e2c202eb441dfd204b08608c19"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/ops",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "9eacac8f54d5d297e703f265f53a90dc0f7db9b1",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/9eacac8f54d5d297e703f265f53a90dc0f7db9b1"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/ops/README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9b10314036bf966aec167264084f2d9c15a57fe8",
+        "size": 19,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/9b10314036bf966aec167264084f2d9c15a57fe8"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/ops/functions",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "b391ca2bce8d673e513a13cd5dbc35d7648c0043",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/b391ca2bce8d673e513a13cd5dbc35d7648c0043"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/ops/functions/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b021b045fb95c3bc357e39d238dde2bfeac309ec",
+        "size": 633,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/b021b045fb95c3bc357e39d238dde2bfeac309ec"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/ops/functions/ms_deform_attn_func.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4d8cb704ca4d61980cafa5aa9df78889229cc068",
+        "size": 3855,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/4d8cb704ca4d61980cafa5aa9df78889229cc068"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/ops/make.sh",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "106b685722bc6ed70a06bf04309e75e62f73a430",
+        "size": 593,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/106b685722bc6ed70a06bf04309e75e62f73a430"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/ops/modules",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "dd6a5998e67024d223b073d899d2c757aecb1e5f",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/dd6a5998e67024d223b073d899d2c757aecb1e5f"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/ops/modules/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4c1abef6a1e375c8df7685d4f2d705f9646f1200",
+        "size": 612,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/4c1abef6a1e375c8df7685d4f2d705f9646f1200"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/ops/modules/ms_deform_attn.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5070e538aa8d85333283dc6f5e7af414aabaff6d",
+        "size": 6848,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/5070e538aa8d85333283dc6f5e7af414aabaff6d"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/ops/setup.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e7f557baec311b315601cc445b9df86f5cc65559",
+        "size": 2511,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/e7f557baec311b315601cc445b9df86f5cc65559"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/ops/src",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "fc2d54b8b2b2e19cc5a6ff897eac78a8d9c62eda",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/fc2d54b8b2b2e19cc5a6ff897eac78a8d9c62eda"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/ops/src/cpu",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "c0abe70beedd9d0151395714e18ef7ca237e1d5e",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/c0abe70beedd9d0151395714e18ef7ca237e1d5e"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/ops/src/cpu/ms_deform_attn_cpu.cpp",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2aa070c5be2fcd99b22828d28ecd5b1a5894f773",
+        "size": 1253,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/2aa070c5be2fcd99b22828d28ecd5b1a5894f773"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/ops/src/cpu/ms_deform_attn_cpu.h",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "277befb08061f7c186f3f277b252e210c7fcdb2b",
+        "size": 1135,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/277befb08061f7c186f3f277b252e210c7fcdb2b"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/ops/src/cuda",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "d1d809e1c0a0c1d5bf73ac19b858580710edbc25",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/d1d809e1c0a0c1d5bf73ac19b858580710edbc25"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/ops/src/cuda/ms_deform_attn_cuda.cu",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a3217d6e2663b00ea6371638172c06e3d92374e0",
+        "size": 7498,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/a3217d6e2663b00ea6371638172c06e3d92374e0"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/ops/src/cuda/ms_deform_attn_cuda.h",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "375d7372b25f04c76b794ec37f052c386cb435fb",
+        "size": 1137,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/375d7372b25f04c76b794ec37f052c386cb435fb"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/ops/src/cuda/ms_deform_im2col_cuda.cuh",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "11b8d417e0e3941b8132b018e2843f56c86e62e2",
+        "size": 54639,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/11b8d417e0e3941b8132b018e2843f56c86e62e2"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/ops/src/ms_deform_attn.h",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3fd73447b6cdeb7221335c1c26ea1920562ed510",
+        "size": 1835,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/3fd73447b6cdeb7221335c1c26ea1920562ed510"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/ops/src/vision.cpp",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2201f63a51dca16d0b31148ed2c9e8e47ec15bdc",
+        "size": 799,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/2201f63a51dca16d0b31148ed2c9e8e47ec15bdc"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/ops/test.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7426eadd3ca62f826bfae0c98165baf7ea8205fe",
+        "size": 4550,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/7426eadd3ca62f826bfae0c98165baf7ea8205fe"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/unet_parts.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4af228bde3f0ab1acb9d3324314fc6d0b75b8663",
+        "size": 2785,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/4af228bde3f0ab1acb9d3324314fc6d0b75b8663"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/util",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "fea662e3fe9375c92a90bd2c51e4cb65e6b0ffff",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/fea662e3fe9375c92a90bd2c51e4cb65e6b0ffff"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/util/pos_embed.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5298432ab2bfacf8d217f1436eaeda9453449f99",
+        "size": 5903,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/5298432ab2bfacf8d217f1436eaeda9453449f99"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/backbone/vitadapter/vitadapter.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "edc16f975569d2494e37c680a58c0205f3d1278b",
+        "size": 12379,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/edc16f975569d2494e37c680a58c0205f3d1278b"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/criterion.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a5b9c2b663f82a4cf5fa2cde1f141c4f7dfe43fe",
+        "size": 16139,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/a5b9c2b663f82a4cf5fa2cde1f141c4f7dfe43fe"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/criterion_win.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "036feb657c5527d75553165aa3e0fe3be32a8f85",
+        "size": 16479,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/036feb657c5527d75553165aa3e0fe3be32a8f85"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/matcher.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3be3170c1058c7538decf98b0f129ccc697f4524",
+        "size": 7632,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/3be3170c1058c7538decf98b0f129ccc697f4524"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "ecfe19133482da1be915d7b9dee9016d04382965",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/ecfe19133482da1be915d7b9dee9016d04382965"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9020c2df23e2af280b7bb168b996ae9eaf312eb8",
+        "size": 51,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/9020c2df23e2af280b7bb168b996ae9eaf312eb8"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/fpn3d.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2f61c4a014823aa472768ea55294496bf6fa99bf",
+        "size": 8461,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/2f61c4a014823aa472768ea55294496bf6fa99bf"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/fpn3d_win.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a1f1148350201ab57ef1be6b9d5ee509f00988a6",
+        "size": 9329,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/a1f1148350201ab57ef1be6b9d5ee509f00988a6"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/msdeformattn3d.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "91559f6792c26a2be282a810f1806a70eed40f98",
+        "size": 24532,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/91559f6792c26a2be282a810f1806a70eed40f98"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/msdeformattn3d_win.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "cf6478a9a0804d6a1ca83678a6755d660a7f5869",
+        "size": 24832,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/cf6478a9a0804d6a1ca83678a6755d660a7f5869"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/ops",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "c46044800cb889ebcd065ae50e0bd1f5a5ef92cd",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/c46044800cb889ebcd065ae50e0bd1f5a5ef92cd"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/ops/functions",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "9ca7162591b056be274fd5e03bb704e10de832c9",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/9ca7162591b056be274fd5e03bb704e10de832c9"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/ops/functions/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "46c708c58a4e385fb35c8f80c83436ac585f74c3",
+        "size": 733,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/46c708c58a4e385fb35c8f80c83436ac585f74c3"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/ops/functions/ms_deform_attn_func.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "20aa11e2ba0496dd0d6d418e30308c5b9ec72e3f",
+        "size": 4322,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/20aa11e2ba0496dd0d6d418e30308c5b9ec72e3f"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/ops/make.sh",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7b38cdbf48f3571d986a33e7563b517952b51bb2",
+        "size": 729,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/7b38cdbf48f3571d986a33e7563b517952b51bb2"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/ops/modules",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "c47252ac5cf87e90b2db0638d59f3021098d4188",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/c47252ac5cf87e90b2db0638d59f3021098d4188"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/ops/modules/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6fdbf03359958f3d67ab00f879bf6b61a6c8f06a",
+        "size": 720,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/6fdbf03359958f3d67ab00f879bf6b61a6c8f06a"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/ops/modules/ms_deform_attn.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "022fd7eb35e5163177fb95aaddb43838d98bcfea",
+        "size": 7360,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/022fd7eb35e5163177fb95aaddb43838d98bcfea"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/ops/setup.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "da49b0450e66c7f9e891f68f3782490e4f4db12e",
+        "size": 3064,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/da49b0450e66c7f9e891f68f3782490e4f4db12e"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/ops/src",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "682da873d42efa7951ad2e76f860490addb852c1",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/682da873d42efa7951ad2e76f860490addb852c1"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/ops/src/cpu",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "a85ec08ca8980399ec227b78a58e8cfe73feeab9",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/a85ec08ca8980399ec227b78a58e8cfe73feeab9"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/ops/src/cpu/ms_deform_attn_cpu.cpp",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "14056c046490b4ef2772d09ba06e2e7bb3e15883",
+        "size": 1396,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/14056c046490b4ef2772d09ba06e2e7bb3e15883"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/ops/src/cpu/ms_deform_attn_cpu.h",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9dbe6052287188dc86c004875c570c08f19b3a27",
+        "size": 1278,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/9dbe6052287188dc86c004875c570c08f19b3a27"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/ops/src/cuda",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "8347408ee1d47082267404253533cfbe88df6b36",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/8347408ee1d47082267404253533cfbe88df6b36"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/ops/src/cuda/ms_deform_attn_cuda.cu",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f7b6a1eeec87ee88e7a4043a11fc6a04eafe130b",
+        "size": 7450,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/f7b6a1eeec87ee88e7a4043a11fc6a04eafe130b"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/ops/src/cuda/ms_deform_attn_cuda.h",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b9b72ce57341a78982fdf29f1f6c8b0a85d721a6",
+        "size": 1280,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/b9b72ce57341a78982fdf29f1f6c8b0a85d721a6"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/ops/src/cuda/ms_deform_im2col_cuda.cuh",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "23be608fe92fd8126765859f88d35171bb644b63",
+        "size": 54614,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/23be608fe92fd8126765859f88d35171bb644b63"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/ops/src/ms_deform_attn.h",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d7c108ff174f0896ee50d75ad3380d839c8cf5b5",
+        "size": 1978,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/d7c108ff174f0896ee50d75ad3380d839c8cf5b5"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/ops/src/vision.cpp",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4a08821e0121a77556aa7a263ec8ebfa928b13b6",
+        "size": 942,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/4a08821e0121a77556aa7a263ec8ebfa928b13b6"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/pixel_decoder/ops/test.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "15e888d5fcbc05b45112f1023edd581a6228fab4",
+        "size": 4687,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/15e888d5fcbc05b45112f1023edd581a6228fab4"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/point_features_3d.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b3dbb463ea446dd9a6636fa01a79a86142704ed5",
+        "size": 1964,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/b3dbb463ea446dd9a6636fa01a79a86142704ed5"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/transformer_decoder",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "f1f042301616be757a48e04610adb35e845edfdd",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/f1f042301616be757a48e04610adb35e845edfdd"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/transformer_decoder/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0da19bd3c552edbe483795a14798ceffcda15bcd",
+        "size": 103,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/0da19bd3c552edbe483795a14798ceffcda15bcd"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/transformer_decoder/mask2former_transformer_decoder_3d.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "962e048ea2915c2bd8dad08f8b3c57efff8107be",
+        "size": 44487,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/962e048ea2915c2bd8dad08f8b3c57efff8107be"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/transformer_decoder/mask2former_transformer_decoder_3d_win.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "839e914ef3e62cce25d404aa3e77f3bc0fdfc3aa",
+        "size": 44408,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/839e914ef3e62cce25d404aa3e77f3bc0fdfc3aa"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/transformer_decoder/position_encoding_3d.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e043b3063ab1a6afa2b296a252f33b48b47d7a25",
+        "size": 4115,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/e043b3063ab1a6afa2b296a252f33b48b47d7a25"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/modeling/transformer_decoder/transformer_3d.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "15a60ab36b2a218d979a8db6af90fbc84fe9c145",
+        "size": 13632,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/15a60ab36b2a218d979a8db6af90fbc84fe9c145"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/utils",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "2da0ca57b177af672f46a8d068d80f1fd2038195",
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/trees/2da0ca57b177af672f46a8d068d80f1fd2038195"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/utils/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9020c2df23e2af280b7bb168b996ae9eaf312eb8",
+        "size": 51,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/9020c2df23e2af280b7bb168b996ae9eaf312eb8"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/mask2former/utils/misc.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6cbc3778173d7432db77b99185c4d552f8a29759",
+        "size": 3958,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/6cbc3778173d7432db77b99185c4d552f8a29759"
+      },
+      {
+        "path": "src/focus3d/segmentation/FOCUS3D/train_net_3d.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ca511d7cf735c381a1ff6bc2e24d0e1548c268b3",
+        "size": 14859,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/ca511d7cf735c381a1ff6bc2e24d0e1548c268b3"
+      },
+      {
+        "path": "src/focus3d/segmentation/mask2former_adapter.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "096d5c9b0615bafe1d82dbda0dc6ba62b70a7073",
+        "size": 13702,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/096d5c9b0615bafe1d82dbda0dc6ba62b70a7073"
+      },
+      {
+        "path": "src/focus3d/segmentation/seg_io.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4ffdee25cfc7fab73db6c2d0011df4ee6c941ce4",
+        "size": 16134,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/4ffdee25cfc7fab73db6c2d0011df4ee6c941ce4"
+      },
+      {
+        "path": "src/focus3d/segmentation/segmentation.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a9aa9241bfb1e9a63a33f04b2960b1f5cfc530c7",
+        "size": 6280,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/a9aa9241bfb1e9a63a33f04b2960b1f5cfc530c7"
+      },
+      {
+        "path": "tox.ini",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "5388606a43c37d886f081323cdfe20c8baab8acf",
+        "size": 639,
+        "url": "https://api.github.com/repos/yu-lab-vt/FOCUS-3D/git/blobs/5388606a43c37d886f081323cdfe20c8baab8acf"
+      }
+    ],
+    "truncated": false
+  }
+}

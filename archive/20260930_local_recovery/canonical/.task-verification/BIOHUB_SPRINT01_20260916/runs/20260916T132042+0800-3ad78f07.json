@@ -1,0 +1,22 @@
+{
+  "checks": [],
+  "claimed_status": null,
+  "contract_path": "experiments/BIOHUB_SPRINT01_20260916/contract.json",
+  "current_contract_sha256": "62773a7da48cd203553a58a9c58bea84d9c6a82eb6076dba9c1723ec6ddc283f",
+  "final_status": "BLOCKED",
+  "finished_at": "2026-09-16T13:20:42+08:00",
+  "frozen_contract_sha256": "62773a7da48cd203553a58a9c58bea84d9c6a82eb6076dba9c1723ec6ddc283f",
+  "limitations": [
+    "No acceptance checks were trusted because the verification lifecycle was invalid."
+  ],
+  "reason": "agent completion was not recorded with claim",
+  "required_summary": {
+    "failed_or_blocked": 1,
+    "human_review": 0,
+    "passed": 0
+  },
+  "run_id": "20260916T132042+0800-3ad78f07",
+  "schema_version": "1.0",
+  "started_at": "2026-09-16T13:20:42+08:00",
+  "task_id": "BIOHUB_SPRINT01_20260916"
+}

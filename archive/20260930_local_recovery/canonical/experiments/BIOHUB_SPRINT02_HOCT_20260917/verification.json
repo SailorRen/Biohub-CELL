@@ -1,0 +1,234 @@
+{
+  "status": "VERIFIED_FALLBACK_NO_EFFECT",
+  "execution_status": "PARTIAL_BLOCKED",
+  "reason": "BLOCKED_HOCT_COVERAGE_UNOBSERVABLE",
+  "result_status": "DIAGNOSTIC_NO_EFFECT",
+  "observed_at_utc": "2026-09-17T06:05:19.361131+00:00",
+  "checks": [
+    {
+      "stem": "44b6_12dfb391",
+      "graphs_equal": true,
+      "guard_replay_match": true,
+      "official_counts_and_hashes_match": true,
+      "repeat_exact": true,
+      "score_pair_exact": true
+    },
+    {
+      "stem": "44b6_267148e4",
+      "graphs_equal": true,
+      "guard_replay_match": true,
+      "official_counts_and_hashes_match": true,
+      "repeat_exact": true,
+      "score_pair_exact": true
+    },
+    {
+      "stem": "44b6_2a2eff9f",
+      "graphs_equal": true,
+      "guard_replay_match": true,
+      "official_counts_and_hashes_match": true,
+      "repeat_exact": true,
+      "score_pair_exact": true
+    },
+    {
+      "stem": "44b6_341df25f",
+      "graphs_equal": true,
+      "guard_replay_match": true,
+      "official_counts_and_hashes_match": true,
+      "repeat_exact": true,
+      "score_pair_exact": true
+    },
+    {
+      "stem": "6bba_062c8d37",
+      "graphs_equal": true,
+      "guard_replay_match": true,
+      "official_counts_and_hashes_match": true,
+      "repeat_exact": true,
+      "score_pair_exact": true
+    },
+    {
+      "stem": "6bba_07e24132",
+      "graphs_equal": true,
+      "guard_replay_match": true,
+      "official_counts_and_hashes_match": true,
+      "repeat_exact": true,
+      "score_pair_exact": true
+    },
+    {
+      "stem": "6bba_085bf656",
+      "graphs_equal": true,
+      "guard_replay_match": true,
+      "official_counts_and_hashes_match": true,
+      "repeat_exact": true,
+      "score_pair_exact": true
+    },
+    {
+      "stem": "6bba_09961292",
+      "graphs_equal": true,
+      "guard_replay_match": true,
+      "official_counts_and_hashes_match": true,
+      "repeat_exact": true,
+      "score_pair_exact": true
+    }
+  ],
+  "local_summary": {
+    "B0": {
+      "n": 8,
+      "edge_jaccard": 0.9250167000668003,
+      "division_jaccard": 0.15384615384615385,
+      "division_tp": 2,
+      "division_fp": 1,
+      "division_fn": 10,
+      "node_recall": 0.9844442605103172,
+      "adj_edge_jaccard": 0.9280211109565103,
+      "n_adj": 8,
+      "score": 0.9434057263411257,
+      "adjusted_edge_jaccard": 0.9280211109565103,
+      "proxy_score": 0.9434057263411257,
+      "official_score": 0.9434057263411257,
+      "proxy_score_field_semantics": "official_score_alias_for_unchanged_cell10",
+      "div_tp": 2,
+      "div_fp": 1,
+      "div_fn": 10,
+      "metric_provenance": "official_075fc5:evaluate->per_sample_metrics->summarise",
+      "error_decomposition_provenance": "unchanged_forge947_cell8_proxy; independent_global_node_matching",
+      "official_rows_skipped": 0,
+      "official_adjusted_rows_used": 8,
+      "legacy_proxy_score": 0.9510980340334333,
+      "missed_gt_nodes": 63,
+      "spurious_pred_nodes": 182954,
+      "edges_recovered": 5539,
+      "edges_fragmented": 133,
+      "edges_lost_to_detection": 79,
+      "wrong_association_edges": 0,
+      "legacy_proxy_adjusted_edge_jaccard": 0.9280211109565102,
+      "legacy_proxy_division_jaccard": 0.23076923076923078,
+      "legacy_proxy_div_tp": 3,
+      "legacy_proxy_div_fp": 1,
+      "legacy_proxy_div_fn": 9,
+      "legacy_proxy_missed_gt_nodes": 63,
+      "legacy_proxy_spurious_pred_nodes": 182954,
+      "legacy_proxy_edges_recovered": 5539,
+      "legacy_proxy_edges_fragmented": 133,
+      "legacy_proxy_edges_lost_to_detection": 79,
+      "legacy_proxy_wrong_association_edges": 0
+    },
+    "H1": {
+      "n": 8,
+      "edge_jaccard": 0.9250167000668003,
+      "division_jaccard": 0.15384615384615385,
+      "division_tp": 2,
+      "division_fp": 1,
+      "division_fn": 10,
+      "node_recall": 0.9844442605103172,
+      "adj_edge_jaccard": 0.9280211109565103,
+      "n_adj": 8,
+      "score": 0.9434057263411257,
+      "adjusted_edge_jaccard": 0.9280211109565103,
+      "proxy_score": 0.9434057263411257,
+      "official_score": 0.9434057263411257,
+      "proxy_score_field_semantics": "official_score_alias_for_unchanged_cell10",
+      "div_tp": 2,
+      "div_fp": 1,
+      "div_fn": 10,
+      "metric_provenance": "official_075fc5:evaluate->per_sample_metrics->summarise",
+      "error_decomposition_provenance": "unchanged_forge947_cell8_proxy; independent_global_node_matching",
+      "official_rows_skipped": 0,
+      "official_adjusted_rows_used": 8,
+      "legacy_proxy_score": 0.9510980340334333,
+      "missed_gt_nodes": 63,
+      "spurious_pred_nodes": 182954,
+      "edges_recovered": 5539,
+      "edges_fragmented": 133,
+      "edges_lost_to_detection": 79,
+      "wrong_association_edges": 0,
+      "legacy_proxy_adjusted_edge_jaccard": 0.9280211109565102,
+      "legacy_proxy_division_jaccard": 0.23076923076923078,
+      "legacy_proxy_div_tp": 3,
+      "legacy_proxy_div_fp": 1,
+      "legacy_proxy_div_fn": 9,
+      "legacy_proxy_missed_gt_nodes": 63,
+      "legacy_proxy_spurious_pred_nodes": 182954,
+      "legacy_proxy_edges_recovered": 5539,
+      "legacy_proxy_edges_fragmented": 133,
+      "legacy_proxy_edges_lost_to_detection": 79,
+      "legacy_proxy_wrong_association_edges": 0
+    }
+  },
+  "cloud_score": 0.9434057263411255,
+  "local_score": 0.9434057263411257,
+  "cross_environment_score_difference": 2.220446049250313e-16,
+  "note": "Cloud and local each have byte-identical B0/H1 scorer inputs and exactly equal paired metrics. Cross-environment last-bit difference is recorded, not used as tolerance or a passed production gate.",
+  "fallback_videos": 8,
+  "covered": 0,
+  "deleted": 0,
+  "protected_edges": 214,
+  "ordinary_uncovered": 181908,
+  "node_attrs_probe": {
+    "requested_t": [
+      "t"
+    ],
+    "requested_node_id_and_t": [
+      "node_id",
+      "t"
+    ]
+  },
+  "package_versions": {
+    "tracksdata": "0.1.0rc6.dev3+g980c2d30a",
+    "numpy": "2.4.2",
+    "polars": "1.42.0"
+  },
+  "errors": [
+    {
+      "stem": "44b6_12dfb391",
+      "model_inference_logged": true,
+      "traceback": "Traceback (most recent call last):\n  File \"/kaggle/working/s02_code/hoct_worker.py\", line 24, in <module>\n    result = observe_video(job['video'],nodes,v['edges'],model,volume,_hv_rasterize_spheres,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/s02_code/hoct_observer.py\", line 134, in observe_video\n    c,s,r = observe_chunk(model, labels[a:min(T,b+1)], volume[a:min(T,b+1)], ids_by_frame, raster, a,b)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/s02_code/hoct_observer.py\", line 84, in observe_chunk\n    mapping[int(row['node_id'])] = pid\n                ~~~^^^^^^^^^^^\nKeyError: 'node_id'\n",
+      "log_sha256": "59e555902d162e62ee10dde93305d009066af9ce71c06dd7e478d090d02e4b0f"
+    },
+    {
+      "stem": "44b6_267148e4",
+      "model_inference_logged": true,
+      "traceback": "Traceback (most recent call last):\n  File \"/kaggle/working/s02_code/hoct_worker.py\", line 24, in <module>\n    result = observe_video(job['video'],nodes,v['edges'],model,volume,_hv_rasterize_spheres,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/s02_code/hoct_observer.py\", line 134, in observe_video\n    c,s,r = observe_chunk(model, labels[a:min(T,b+1)], volume[a:min(T,b+1)], ids_by_frame, raster, a,b)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/s02_code/hoct_observer.py\", line 84, in observe_chunk\n    mapping[int(row['node_id'])] = pid\n                ~~~^^^^^^^^^^^\nKeyError: 'node_id'\n",
+      "log_sha256": "8f0d5206c1838243b638bb512b34754ad48723a6746a8873fbd5533205080102"
+    },
+    {
+      "stem": "44b6_2a2eff9f",
+      "model_inference_logged": true,
+      "traceback": "Traceback (most recent call last):\n  File \"/kaggle/working/s02_code/hoct_worker.py\", line 24, in <module>\n    result = observe_video(job['video'],nodes,v['edges'],model,volume,_hv_rasterize_spheres,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/s02_code/hoct_observer.py\", line 134, in observe_video\n    c,s,r = observe_chunk(model, labels[a:min(T,b+1)], volume[a:min(T,b+1)], ids_by_frame, raster, a,b)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/s02_code/hoct_observer.py\", line 84, in observe_chunk\n    mapping[int(row['node_id'])] = pid\n                ~~~^^^^^^^^^^^\nKeyError: 'node_id'\n",
+      "log_sha256": "80105c8934617ac1d1cda28b54e2323825c3fdaabd86ccd5c191c3d39cc468c0"
+    },
+    {
+      "stem": "44b6_341df25f",
+      "model_inference_logged": true,
+      "traceback": "Traceback (most recent call last):\n  File \"/kaggle/working/s02_code/hoct_worker.py\", line 24, in <module>\n    result = observe_video(job['video'],nodes,v['edges'],model,volume,_hv_rasterize_spheres,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/s02_code/hoct_observer.py\", line 134, in observe_video\n    c,s,r = observe_chunk(model, labels[a:min(T,b+1)], volume[a:min(T,b+1)], ids_by_frame, raster, a,b)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/s02_code/hoct_observer.py\", line 84, in observe_chunk\n    mapping[int(row['node_id'])] = pid\n                ~~~^^^^^^^^^^^\nKeyError: 'node_id'\n",
+      "log_sha256": "b79cc47ef7fc2951a290a33bba821b1d7c4731838a1970ab3a69bf5f898ea76b"
+    },
+    {
+      "stem": "6bba_062c8d37",
+      "model_inference_logged": true,
+      "traceback": "Traceback (most recent call last):\n  File \"/kaggle/working/s02_code/hoct_worker.py\", line 24, in <module>\n    result = observe_video(job['video'],nodes,v['edges'],model,volume,_hv_rasterize_spheres,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/s02_code/hoct_observer.py\", line 134, in observe_video\n    c,s,r = observe_chunk(model, labels[a:min(T,b+1)], volume[a:min(T,b+1)], ids_by_frame, raster, a,b)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/s02_code/hoct_observer.py\", line 84, in observe_chunk\n    mapping[int(row['node_id'])] = pid\n                ~~~^^^^^^^^^^^\nKeyError: 'node_id'\n",
+      "log_sha256": "4f841dfcb16f6ff63c2670c8c9bc8056d8a4c86b72d0e55baac49ea07b97da82"
+    },
+    {
+      "stem": "6bba_07e24132",
+      "model_inference_logged": true,
+      "traceback": "Traceback (most recent call last):\n  File \"/kaggle/working/s02_code/hoct_worker.py\", line 24, in <module>\n    result = observe_video(job['video'],nodes,v['edges'],model,volume,_hv_rasterize_spheres,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/s02_code/hoct_observer.py\", line 134, in observe_video\n    c,s,r = observe_chunk(model, labels[a:min(T,b+1)], volume[a:min(T,b+1)], ids_by_frame, raster, a,b)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/s02_code/hoct_observer.py\", line 84, in observe_chunk\n    mapping[int(row['node_id'])] = pid\n                ~~~^^^^^^^^^^^\nKeyError: 'node_id'\n",
+      "log_sha256": "b190a5632789abb7a1809f9aed64fd2f65645e1477a972856c2004f5797a37ce"
+    },
+    {
+      "stem": "6bba_085bf656",
+      "model_inference_logged": true,
+      "traceback": "Traceback (most recent call last):\n  File \"/kaggle/working/s02_code/hoct_worker.py\", line 24, in <module>\n    result = observe_video(job['video'],nodes,v['edges'],model,volume,_hv_rasterize_spheres,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/s02_code/hoct_observer.py\", line 134, in observe_video\n    c,s,r = observe_chunk(model, labels[a:min(T,b+1)], volume[a:min(T,b+1)], ids_by_frame, raster, a,b)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/s02_code/hoct_observer.py\", line 84, in observe_chunk\n    mapping[int(row['node_id'])] = pid\n                ~~~^^^^^^^^^^^\nKeyError: 'node_id'\n",
+      "log_sha256": "b6bbbe23409862777cc2743fc124aed90d0c53eeb71aa64f8e77f76e0532581a"
+    },
+    {
+      "stem": "6bba_09961292",
+      "model_inference_logged": true,
+      "traceback": "Traceback (most recent call last):\n  File \"/kaggle/working/s02_code/hoct_worker.py\", line 24, in <module>\n    result = observe_video(job['video'],nodes,v['edges'],model,volume,_hv_rasterize_spheres,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/s02_code/hoct_observer.py\", line 134, in observe_video\n    c,s,r = observe_chunk(model, labels[a:min(T,b+1)], volume[a:min(T,b+1)], ids_by_frame, raster, a,b)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/kaggle/working/s02_code/hoct_observer.py\", line 84, in observe_chunk\n    mapping[int(row['node_id'])] = pid\n                ~~~^^^^^^^^^^^\nKeyError: 'node_id'\n",
+      "log_sha256": "b44fbbd77118428c3e46370c32bf889a8f727961620521d3d04e70c78a728f9e"
+    }
+  ],
+  "production_allowed": false,
+  "formal_allowed": false,
+  "successful_complete_coverage_videos": 0,
+  "solver_success_count": null
+}

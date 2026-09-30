@@ -1,0 +1,166 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tracksdata"
+dynamic = ["version"]
+description = 'A Python library for multi-object tracking data structures and algorithms'
+readme = "README.md"
+requires-python = ">=3.10"
+license = "BSD-3-Clause"
+keywords = ["cell-tracking", "tracking", "multi-object-tracking", "computer-vision", "graph", "machine-learning"]
+authors = [
+  { name = "Jordao Bragantini", email = "jordao.bragantini@czbiohub.org" },
+  { name = "Ilan Theodoro", email = "ilan.silva@czbiohub.org" },
+  { name = "Alexander Nguyen", email = "nguyencalex3@gmail.com" },
+  { name = "Teun Huijben", email = "teun.huijben@czbiohub.org" },
+  { name = "Yohsuke T. Fukai", email = "ysk@yfukai.net" },
+  { name = "Caroline Malin-Mayor", email = "malinmayorc@janelia.hhmi.org" },
+  { name = "Anniek Stokkermans", email = "a.stokkermans@hubrecht.eu" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: BSD License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Scientific/Engineering :: Image Processing",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "dask",
+  "blosc2",
+  "numpy > 2",
+  "scikit-image >= 0.24.0",
+  "rustworkx >= 0.17.1",
+  "tqdm",
+  "polars >= 1.36.0",
+  "sqlalchemy>=2",
+  "rich",
+  "numba",
+  "imagecodecs",
+  "typing-extensions",
+  "ilpy >= 0.5.1",
+  "pyarrow",
+  "bidict>=0.23.1",
+  "geff>=1.1.3.1.1",
+  "psygnal>=0.14.0",
+  # zarr 2.x's util.py imports cbuffer_sizes/cbuffer_metainfo from
+  # numcodecs.blosc, which numcodecs >= 0.16 removed. Pin numcodecs per
+  # Python version (mirroring geff) instead of pinning zarr, so tracksdata
+  # remains co-installable with downstream tools still on zarr 2.x.
+  "numcodecs>=0.13",
+  "numcodecs>=0.13,<0.16; python_version > '3.10,<=3.11'", # TODO: remove pin once the 16 release is stable
+  "numcodecs>=0.15; python_version >= '3.13'", # TODO: remove pin once the 16 release is stable
+]
+
+[project.optional-dependencies]
+spatial = ["spatial-graph"]
+motile = ["motile"]
+test = [
+  "spatial-graph",
+  "motile",
+  "pytest>=7.0",
+  "pytest-cov",
+  "pytest-html",
+  "py-ctcmetrics==1.2.2",
+  "traccuracy>=0.4.2",
+  "pytest-qt",
+  "napari",
+  "pyqt5",
+]
+docs = [
+  "mkdocs",
+  "mkdocs-api-autonav",
+  "mkdocs-material",
+  "mkdocstrings-python",
+  "mkdocstrings-python-xref",
+  "mkdocs-mermaid2-plugin",
+  "mike",
+  "traccuracy>=0.4.2",
+]
+bench = ["asv"]
+
+[project.urls]
+Documentation = "https://github.com/jookuma/tracksdata#readme"
+Issues = "https://github.com/jookuma/tracksdata/issues"
+Source = "https://github.com/jookuma/tracksdata"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/tracksdata/__about__.py"
+
+# https://docs.astral.sh/ruff
+[tool.ruff]
+target-version = "py310"
+src = ["src"]
+line-length = 120
+
+# https://docs.astral.sh/ruff/rules
+[tool.ruff.lint]
+pydocstyle = { convention = "numpy" }
+ignore = ["E712"]
+select = [
+    "E",    # style errors
+    "W",    # style warnings
+    "F",    # flakes
+    "D417", # Missing argument descriptions in Docstrings
+    "I",    # isort
+    "UP",   # pyupgrade
+    "C4",   # flake8-comprehensions
+    "B",    # flake8-bugbear
+    "A001", # flake8-builtins
+    "RUF",  # ruff-specific rules
+    "TID",  # flake8-tidy-imports
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*.py" = ["D", "S"]
+
+# https://docs.astral.sh/ruff/formatter/
+[tool.ruff.format]
+docstring-code-format = true
+skip-magic-trailing-comma = false # default is false
+
+# https://coverage.readthedocs.io/en/6.4/config.html
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+exclude_lines = [
+    "@njit",  # numba is not supported by coverage
+    "@jitclass",
+    "@overload",
+    "pragma: no cover", # Have to re-enable the standard pragma
+    "def __repr__", # Don't complain about missing debug-only code:
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if TYPE_CHECKING:",  # Ignore type checking
+    "if __name__ == .__main__.:", # Don't complain if non-runnable code isn't run:
+    "@(abc.)?abstractmethod", # Don't complain about abstract methods, they aren't run:
+    "def .*: \\.\\.\\.$",  # Exclude function headers that end with "..." (type stubs)
+]
+
+[tool.coverage.run]
+source = ["src"]
+branch = true
+parallel = true
+omit = [
+  "src/tracksdata/__about__.py",
+  "src/tracksdata/conftest.py",
+  "**/_test/*.py",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.13.0",
+]

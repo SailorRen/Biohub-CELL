@@ -1,0 +1,221 @@
+{
+  "task_id": "BIOHUB_SPRINT02_HOCT_20260917",
+  "task_commit": "12bbe42c5a770618f9cc5edb9d18d55788420dea",
+  "evidence_commit": "9ebee866f96e6e268d51c0ebc363edf56a882168",
+  "task_sha256": "0c23b55514c1b9c00a0177d7140af02e0e47463829c45042f1d2ee29bc528273",
+  "branch": "codex/sprint02-hoct-20260917",
+  "frozen_at_utc": "2026-09-17T04:04:59.297609+00:00",
+  "G1_source_sha256": "de010e6ba142be0e01000093e061ef7d3388ddaa411185b40d26c63a3febe731",
+  "HOCT_source_sha256": "8e385801b91db946c8a9b73ef53a511fa93e7c05b150e047777775b5b9df280a",
+  "baseline": {
+    "submission": 56270217,
+    "version": 1,
+    "script_version_id": 350197436,
+    "public_score": 0.948
+  },
+  "budgets": {
+    "training": 0,
+    "save_run": 2,
+    "diagnostic_save_run": 1,
+    "production_save_run": 1,
+    "submission": 1,
+    "dataset_write": 0,
+    "final_selection": 0
+  },
+  "samples": [
+    {
+      "stem": "44b6_12dfb391",
+      "embryo": "44b6",
+      "classifier": "held_out/44b6",
+      "cache_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_12dfb391_G1_graph.json",
+      "cache_sha256": "767a8d2ec5e469e2123c420aff07ca38d966f6f72504a289bd6bcbeba934bd77",
+      "scorer_input_hash": "998eb958747acf9b2c4010219bfb7f01f4818f276f7b9a93172d41b830cde4cd",
+      "gt_input_hash": "c6011d3bc4e095e59278cbf7a833d3bf40fb009c62dd9f9ca22904b072be619b",
+      "n_total": 58672.0
+    },
+    {
+      "stem": "44b6_267148e4",
+      "embryo": "44b6",
+      "classifier": "held_out/44b6",
+      "cache_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_267148e4_G1_graph.json",
+      "cache_sha256": "e26d4a42eeb187aef0a717a60fb1da80f7d62494d0084820e35df55ba6b51786",
+      "scorer_input_hash": "2e4680f54c2374f7e26d596fea1b8cda62448a41679df8d00dc19f26ff70fa21",
+      "gt_input_hash": "e49345f7586d669ccfae3d935039aa833362c058a4103ecd9be24dd17774d6f4",
+      "n_total": 19130.0
+    },
+    {
+      "stem": "44b6_2a2eff9f",
+      "embryo": "44b6",
+      "classifier": "held_out/44b6",
+      "cache_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_2a2eff9f_G1_graph.json",
+      "cache_sha256": "8680482c0b07755e1f479252d3fb65b9f8677d331ce89eb39b21d8321b805917",
+      "scorer_input_hash": "e4abce0237a8274b815ffa77f2e41a9c64c716d3b113f47406454e76bd895fea",
+      "gt_input_hash": "0d65bb8e038d7cc0e5cc0494bbf5a0c2ee68a10f7ebadc14044ce03fdbff91b5",
+      "n_total": 56367.0
+    },
+    {
+      "stem": "44b6_341df25f",
+      "embryo": "44b6",
+      "classifier": "held_out/44b6",
+      "cache_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_341df25f_G1_graph.json",
+      "cache_sha256": "99189227784a45cf38eb44d04e0db95a9707c7d27110100b52bee9dfacd04c07",
+      "scorer_input_hash": "a23350cb13c9eb18405f85e0494ba2ec8c9ba7d84b68c4dffcabe3fe470c5c15",
+      "gt_input_hash": "737532e3cafe8e86ebfa9fcc4190c7860e0127f45756761f5503e894a815cfef",
+      "n_total": 7436.0
+    },
+    {
+      "stem": "6bba_062c8d37",
+      "embryo": "6bba",
+      "classifier": "held_out/6bba",
+      "cache_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_062c8d37_G1_graph.json",
+      "cache_sha256": "68ac0602e14f3462ba85eda91b79f2244837bae25f71805d3d8bd1c9beb23ae7",
+      "scorer_input_hash": "accb49c87d2a4a18685c11b3d071acc678a3ad6ba656e2cfd90c1d0dc0ef887e",
+      "gt_input_hash": "00789e40cd27ab4c522884eac7fbb4ffc55e641c9647a402316c63042123056d",
+      "n_total": 6030.0
+    },
+    {
+      "stem": "6bba_07e24132",
+      "embryo": "6bba",
+      "classifier": "held_out/6bba",
+      "cache_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_07e24132_G1_graph.json",
+      "cache_sha256": "7cab73bba0bb052a349e5f01de3d7814df3ca87c5ce5f1d7af3ba8a63a924b70",
+      "scorer_input_hash": "87e64a8ea5e766d4ca344baf76a3b9d0cfa46ae46b73d4b9dd4dffac519c53a4",
+      "gt_input_hash": "cedf0c3a2f8cfcdca4c75c6c1b1e8519512ddcc654aba5eb471c2b4ff7f3580d",
+      "n_total": 21485.0
+    },
+    {
+      "stem": "6bba_085bf656",
+      "embryo": "6bba",
+      "classifier": "held_out/6bba",
+      "cache_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_085bf656_G1_graph.json",
+      "cache_sha256": "32b5b268d888f178b2e25906c6b68dbca8941d930e72ef2b3517b1c6d0131547",
+      "scorer_input_hash": "da03bb9b34946ec962151ef1fcd00e8b4eabe5fa8715b0999d3f8282e961cae9",
+      "gt_input_hash": "64990f20b37c73ab00ddce538fd8dbd8540111ad33623ad8ff815bdbe569a3ac",
+      "n_total": 8463.0
+    },
+    {
+      "stem": "6bba_09961292",
+      "embryo": "6bba",
+      "classifier": "held_out/6bba",
+      "cache_path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_09961292_G1_graph.json",
+      "cache_sha256": "310b1d47a77c2897e5c529772f15a23299911323bb5932fc4104926fbb73a8f3",
+      "scorer_input_hash": "9f0e2da3ac1559f256490f107017e13712e569af824ffc9d3d9e40d6fa07ba2d",
+      "gt_input_hash": "2dce94f7f71d489e6e6626b945161c919b0e248d47aadb6717d1776c5c190972",
+      "n_total": 31117.0
+    }
+  ],
+  "independent_panel_available": false,
+  "extra_panel_reason": "Existing exact G1 final caches and explicit classifier held-out map cover only these two embryos; no directly usable additional-embryo cache+heldout binding.",
+  "panel_label": "非独立回归面板",
+  "lineage": "secondary trained on all 8 FOV; primary lineage UNKNOWN; classifier embryo heldout verified in prior exact receipt",
+  "B0_configuration": {
+    "SAFE_DIV_MAX_UM": 9.0,
+    "SAFE_DIV_SISTER_MAX_UM": 14.0,
+    "SAFE_DIV_DIVERGE_UM": 2.25,
+    "SAFE_DIV_SISTER_SYMMETRY_TAU": 0.6,
+    "SAFE_DIV_EXISTING_CHILD_MAX_UM": 10.0,
+    "SAFE_DIV_FRAME_FRAC_CAP": 0.0076,
+    "SAFE_DIV_GLOBAL_FRAC_CAP": 0.00375,
+    "DEEPCENTER_SAFE_DIV_THRESHOLD": 0.2,
+    "DEEPCENTER_GAP_THRESHOLD": 0.25,
+    "GAP_CLOSE_UM": 5.0,
+    "OUTPUT_MIN_TRACK_LEN": 6,
+    "SHORT_TRACK_RESCUE_MIN_MEAN_EDGE_PROB": 0.88,
+    "MOTION_RELINK_TIGHT_UM": 5.5,
+    "MOTION_RELINK_RELAXED_UM": 10.0,
+    "GAP2_MAX_STEP_UM": 4.4,
+    "GAP2_MAX_TOTAL_UM": 10.2,
+    "MOTION_RELINK_LEARNED_BONUS": 1.0,
+    "MOTION_RELINK_VELOCITY_WEIGHT": 0.5,
+    "GAP_CLOSE_REUSE_UM": 3.2,
+    "OUTPUT_EDGE_MAX_UM": 14.0
+  },
+  "production_configuration": "EXACT_G1_ORIGINAL_SELECTOR",
+  "classifier_weight_sha256": "0a1f9b93bb529e70f4f7c2ba0907eea8b4cecd2befccc8ba1fb75e569edf77a0",
+  "offline_files": {
+    "hoct-0.2.0-py3-none-any.whl": "c6194e81a05d272913dd0945ede2484d9a7d89f8d751c4eb1e30c43031e9093c",
+    "spatial_graph-0.1.1-cp311-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl": "50b5a613e446e6c2c85e9f5a0a474c7f9d6b81e23fadc0e8623ef6486a2cd367",
+    "pooch-1.9.0-py3-none-any.whl": "f265597baa9f760d25ceb29d0beb8186c243d6607b0f60b83ecf14078dbc703b",
+    "general_v0.pt": "024c2e4606275c96667907abfc9e0c27487b543480caf99d9ebd1d267cef8e4a"
+  },
+  "HOCT": {
+    "version": "0.2.0",
+    "model": "general_v0.pt",
+    "radius_um": 3,
+    "scale": [
+      1,
+      1.625,
+      0.40625,
+      0.40625
+    ],
+    "max_delta_t": 1,
+    "distance_threshold": 300,
+    "n_neighbors": 5,
+    "window_size": 5,
+    "test_time_augs": 0,
+    "tile": [
+      5,
+      32,
+      128,
+      128
+    ],
+    "overlap": [
+      1,
+      8,
+      16,
+      16
+    ],
+    "chunk_retries": [
+      1,
+      2,
+      4
+    ],
+    "solver": {
+      "appearance_weight": 0.5,
+      "delta_t_weight": 0.5,
+      "disappearance_weight": 0.25,
+      "division_weight": 0.25,
+      "edge_bias": 0.5,
+      "node_weight": -10,
+      "timeout": 7200,
+      "tracklet_solver": true
+    },
+    "tracklet_second_pass_timeout": "underlying ILPSolver default None; outer process deadline enforced"
+  },
+  "deadline_s": 36000,
+  "platform_runtime_max_s": 43200,
+  "output_reserve_s": 900,
+  "per_video_estimate_limit_s": 900,
+  "invariants": [
+    "V_H1=V_B0",
+    "coordinates unchanged",
+    "P frozen from B0 outdegree >=2",
+    "P subset E_H1 subset E_B0",
+    "D=C-S",
+    "no post-H1 processing"
+  ],
+  "coverage": "original candidate edge ID AND finite actual model input/output AND updated nonnegative similarity AND all internal solves OPTIMAL AND exact label-mask endpoint identity; successful complete source chunk merge",
+  "scorer": "unchanged TARGET950 official_selector_adapter.py + vendor/official_075fc5; exact same ordered float graph inputs; no rounding/clipping",
+  "gates": {
+    "tolerance": 0,
+    "stop": [
+      "invariant failure",
+      "unreliable coverage",
+      "incomplete diagnostic",
+      "any embryo or aggregate score decreases",
+      "any embryo or aggregate edge/division TP decreases or FN increases",
+      "known-correct deleted edge"
+    ],
+    "production_requires": [
+      "all 8 final B0/H1 scores",
+      "same B0 repeated exactly",
+      "both embryos nonzero C",
+      "some D nonempty",
+      "all protection gates",
+      "local unchanged official edge attribution complete"
+    ],
+    "production_accept": "strict aggregate gain DIAGNOSTIC_GAIN; exact tie EXPLORATORY_ALLOWED",
+    "formal_requires": "production actual C>0 D>0, all video invariants, exact source/V/SV, final H1 hash, complete receipt",
+    "formal_observe_max_minutes": 60
+  }
+}

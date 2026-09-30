@@ -1,0 +1,45 @@
+{
+  "id": 740145,
+  "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/740145",
+  "observed_at_utc": "2026-09-09T01:49:19.728330+00:00",
+  "platform_writes": 0,
+  "topic": {
+    "id": 740145,
+    "title": "magic or overfitting?",
+    "url": "/competitions/biohub-cell-tracking-during-development/discussion/740145",
+    "postDate": "2026-09-08T13:31:27.038Z",
+    "authorName": "hengck23",
+    "authorUrl": "https://www.kaggle.com/hengck23",
+    "votes": 3,
+    "commentCount": 3,
+    "forumName": "Biohub - Cell Tracking During Development",
+    "forumId": 10656304,
+    "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Fb9aa6b1321cfd69983aab968deba4789%2FSelection_4826.png?generation=1788875194680167&amp;alt=media\" alt=\"\"></p>\n<p>e.g. at epoch 8:\nrefine_prob &gt;= 0.0888, remove 13.13% peak detection and has kaggle recall of 99.45%. Error distance from kaggle annotation in 64x64x64 canonical voxel is refined from 1.1766 to 0.969</p>"
+  },
+  "comment_pages": [
+    {
+      "comments": [
+        {
+          "id": 3522401,
+          "authorName": "Mohit",
+          "postDate": "2026-09-08T19:35:47.550Z",
+          "content": "<p>Idk y but  it feels overfitting</p>"
+        },
+        {
+          "id": 3522369,
+          "authorName": "hengck23",
+          "postDate": "2026-09-08T18:26:15.160Z",
+          "content": "<p>update\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F73c31f1a9f19a6fd92fc4b44fb6011f5%2FSelection_4838.png?generation=1788891973475998&amp;alt=media\" alt=\"\"></p>\n<p>how i know augmentation data is more difficult? I report metrics for different data groups. ChatGPT is incredible for debugging algorithms; just ask him how. This is how a beginner can become an expert in machine learning.</p>"
+        },
+        {
+          "id": 3522275,
+          "authorName": "hengck23",
+          "postDate": "2026-09-08T14:54:38.210Z",
+          "content": "<p>how to analyze your edge transformer</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F86fdf404585661419220b50525609e15%2FSelection_4832.png?generation=1788879742049134&amp;alt=media\" alt=\"\"></p>\n<p>Obviously, the strategy is:\n1) increase correct edge probability so that you can threshold to reduce fp<br>\n2) fill the gap either by learning a net or heuristics ( 1-frame gap correction seems achievable)  </p>\n<p>how to increase edge probability:</p>\n<ul>\n<li>\"appearance feature smiliarity\" : maybe better localisation? resolution? larger region/scale. need to visualise the error case, but i can imagine difficult cases are: cell density is too high and everyone is similarly packed, or the cell is too faint and disappears in the next frame, or the movement (and neighbours) is too large and looks different  </li>\n</ul>\n<p>TRICKS!!!</p>\n<ul>\n<li>refine only candidates at 99% cutoff to avoid complex appearance features for edge probability\nso i need to push edge recall from 0.966 to 0.990 for 99% cutoff. Then a refine module to better choose/rank from these candidates with more complex computation, or attention from multiple frames etc.</li>\n</ul>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F3140beb4e7364cae6f958da162fbb0e0%2FSelection_4837.png?generation=1788881686957802&amp;alt=media\" alt=\"\"></p>\n<p>locate the ceilings </p>"
+        }
+      ]
+    }
+  ],
+  "comments_pagination_complete": true,
+  "status": "TEXT_ACQUIRED_NOT_YET_REVIEWED"
+}

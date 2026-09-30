@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_SPRINT02_HOCT_DIAGNOSTIC_RERUN_20260917",
+  "goal": "同一八视野 G1/HOCT 云端配对诊断；本地复算并远端交付，任何环境/接口错误停止",
+  "ref": "sailorren/biohub-s02-h1-diagnostic-20260917",
+  "scope": {
+    "in_scope": [
+      "启动副本环境检查",
+      "一次既有对象 Save & Run",
+      "只读回收与本地复算",
+      "任务分支交付"
+    ],
+    "out_of_scope": [
+      "训练",
+      "生产",
+      "正式提交",
+      "Dataset写入",
+      "最终选择修改"
+    ]
+  },
+  "budget": {
+    "save_run": 1,
+    "submission": 0,
+    "training": 0,
+    "dataset": 0,
+    "production": 0,
+    "retry": 0
+  },
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "frozen_files": {
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/diagnostic_rerun/diagnostic_launch.ipynb": "4edc1bf0b81d678444a0720015b298807fe1abcb5faff40c41c8369cd3a5aa21",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/diagnostic_rerun/kernel-metadata.json": "2d506fe0d9fa0b411eeff26e7d3833db8999f40eba6a42b5fa3738bb21f56135",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/diagnostic_rerun/env_guard.py": "206d286218ccde5f17c74f35d77ac25ac733a9fe1ac5f268849de270add785fc",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/diagnostic_rerun/save_once.py": "b3c0ec15fe9c5acc9886ca12bf02ff973e7a9fbc9368ce2ff7b9af58f88c3828",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/diagnostic_rerun/launch_receipt.json": "71f6029c497972f8c67cb23e6774e3f59811b6a525e36e3f3fcc9eb193e4d81e",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/diagnostic_rerun/preflight.json": "d9cbd52cd6e2b6ffc501fbf768b398662e1c8bcab7c621bbbcb7e6c6fa3e1da5",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/diagnostic_rerun/source_preflight.json": "a7cc7ecf71e29b1082e3a7632209c53fce8408964d2ea658201f9f988ae87d7d",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/diagnostic_rerun/local_preflight.log": "2876ee7ded0530edfbeb7c4963642fb344019f633c7140dd1d2199c88e4e15ec",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/diagnostic_rerun/env_tests.log": "d993ba02843ceabdcc959ea48b9163124e4f6744407c1664cf79e710314655a7",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/contract.json": "6f4d778f64475447632514cf2f1515dfc8f4168af8e7ed5f9756f374c0c9c350",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/hoct_observer.py": "3b22aeecb1cfc1368cd9446c212c1fb2fef9d1e33e96bf4b47a87672a9fb1f9a",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/hoct_worker.py": "f3282c544bf63d4a452a707f31c6e946edf8ec8280122ced2af0b238eb79c01a",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/hoct_guard.py": "57acc3277c1cedd04c32f634ab6019a5a0e452ef7e55d0abdbd3d2affcd9c751",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/diagnostic_runtime.py": "9a5ef3f835d7a4e5abaaa0d76db5a29a793515c54666d4a97addaa518bbe534d",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/request_ledger.jsonl": "99d119cea96fbe803768b3e876b950b4d66801f0f52c3ce238cbbd4f3d598413",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/interface_fix/diagnostic_fixed.ipynb": "1f4cbb3c98089bfb5f3fa0901922e87edb6cb88636e12af1dec6f645a919c729",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/interface_fix/verification.json": "b7421aa325de0cc2a759caa7735777f97e52e038ffa8458070a1ae60c8f21cf0"
+  },
+  "source_receipt": {
+    "original_sha256": "1f4cbb3c98089bfb5f3fa0901922e87edb6cb88636e12af1dec6f645a919c729",
+    "launch_sha256": "4edc1bf0b81d678444a0720015b298807fe1abcb5faff40c41c8369cd3a5aa21",
+    "guard_sha256": "206d286218ccde5f17c74f35d77ac25ac733a9fe1ac5f268849de270add785fc",
+    "changed_cells": [
+      7
+    ],
+    "cell_mapping": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7
+    },
+    "all_original_source_preserved": true,
+    "outputs_empty": true,
+    "guard_position": "after offline pip install and package_before equality; before first subprocess worker",
+    "worker_environment": "same sys.executable; Popen inherits environment; no dependency changes after guard",
+    "cells": [
+      "4f3cb456752a42016ab2d1c4aed8c53524b6ef9e6785f4146018323811efd597",
+      "545339ff52ac4315bffaf1131fcf769bb1a260ca523e988f19af9432979fc4bd",
+      "99198956a4c7725d85c6aab0d478368749824801716c6d39cf5bf915187ac500",
+      "77fdadffbd02c87e8f686e55944b6741312be552f34c8dc615e6391a1959a2dc",
+      "0f62c46bbec00a2d3d6bbde0efb89d5713204983d51c9c3cf73df1869cf12f8f",
+      "dec4bdb9bf4a0f408385e039a3e8c64214841eeeccc5a616a51b8353108a2e62",
+      "0a76e335bcb101ab664b57280e1784f20f179db74910999e225310909ab65677",
+      "522b6d9c2af3f6444a844e2a348b79d2296266fbb7b92778e9c46905a92a7c2b"
+    ]
+  },
+  "authorization_commits": [
+    "245f9b2b8615133d2919c4c619e15aead40eb5d4",
+    "d186ede27518018c1890248068a54272334eb6ff"
+  ],
+  "scientific_contract_sha256": "6f4d778f64475447632514cf2f1515dfc8f4168af8e7ed5f9756f374c0c9c350",
+  "checks_reused": "local_preflight.log: 7 observer + 4 guard PASS; source_preflight.json: 8 fixed graph hashes; unchanged tests not repeated",
+  "panel": "非独立回归面板",
+  "acceptance": [
+    {
+      "id": "original-fixed",
+      "type": "file",
+      "required": true,
+      "path": "experiments/BIOHUB_SPRINT02_HOCT_20260917/interface_fix/diagnostic_fixed.ipynb",
+      "sha256": "1f4cbb3c98089bfb5f3fa0901922e87edb6cb88636e12af1dec6f645a919c729"
+    },
+    {
+      "id": "launch-fixed",
+      "type": "file",
+      "required": true,
+      "path": "experiments/BIOHUB_SPRINT02_HOCT_20260917/diagnostic_rerun/diagnostic_launch.ipynb",
+      "sha256": "4edc1bf0b81d678444a0720015b298807fe1abcb5faff40c41c8369cd3a5aa21"
+    },
+    {
+      "id": "cloud-terminal-science",
+      "type": "manual",
+      "required": true,
+      "reason": "实际同版本环境、覆盖、图变化、完整官方评分和本地复算证据，错误/RUNNING不能标诊断完成"
+    },
+    {
+      "id": "report",
+      "type": "file",
+      "required": true,
+      "path": "reports/20260917_BIOHUB_SPRINT02_HOCT_DIAGNOSTIC_RERUN_RESULTS.md",
+      "min_bytes": 100
+    },
+    {
+      "id": "git",
+      "type": "git",
+      "required": true,
+      "repository": ".",
+      "require_clean": true,
+      "require_commit": true,
+      "require_remote": true,
+      "require_remote_head": true
+    }
+  ]
+}

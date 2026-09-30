@@ -1,0 +1,220 @@
+{
+  "checks": [
+    {
+      "details": {
+        "bytes": 134177,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/11_github_repository_inventory.csv",
+        "required_text_checks": 3,
+        "sha256": "376242d2fb018cb23ae58ae7aeb9eb599ef69390d86cd763e7adcfd6e63c451b"
+      },
+      "id": "inventory-canonical-schema",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "bytes": 227603,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/12_github_deep_read.md",
+        "required_text_checks": 4,
+        "sha256": "91b75cfe61ca2f0ae0d7d43bf8f73dfaa0966c14843eab53400d20c7be5c7d54"
+      },
+      "id": "deep-report",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "bytes": 59979,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/13_github_code_method_matrix.csv",
+        "required_text_checks": 1,
+        "sha256": "4614ec59be15df8ab479c2b881203c63c264bee9e54645eff228c92ca4b898e8"
+      },
+      "id": "method-matrix-canonical-schema",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "bytes": 69406,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/00_source_manifest.github_fragment.jsonl",
+        "required_text_checks": 5,
+        "sha256": "9f1ddba42aae67b2924939e71db4244d5866c09b2048d7ce8fca9a7029aa5df0"
+      },
+      "id": "manifest-schema-and-status",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "bytes": 9456,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/19_claims_evidence_matrix.github_fragment.csv",
+        "required_text_checks": 4,
+        "sha256": "4f9f71044121629591f72cfacf5f1d9b1b5c74a80a57f7100dc6e7be7f274752"
+      },
+      "id": "claims-canonical-schema",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "bytes": 32786,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/21_search_query_log.github_fragment.csv",
+        "required_text_checks": 3,
+        "sha256": "ea9353be2dacd4a95952a62313e6ff3841ebb1a532dd051a5f8fc0d1876016a1"
+      },
+      "id": "query-canonical-schema",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "bytes": 1559,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/20_access_failures.github_fragment.md",
+        "required_text_checks": 4,
+        "sha256": "c5a16b18651436b9e8a31501a61649aedd4f15fb201f2d154330a9a272ef8164"
+      },
+      "id": "failure-boundaries",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/discovered_repository_count"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/deep_repository_count"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/full_relevant_repository_count"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/target_files_repository_count"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/files_fully_read_count"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/deep_read_error_count"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/query_log_row_count"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/source_manifest_row_count"
+          }
+        ],
+        "path": "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/github_ecosystem_output_summary.json",
+        "sha256": "d8c3c983906f8018618158711d84744db7f276635a5a1625caccaaad415f31a1"
+      },
+      "id": "summary-counts",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "argument_count": 2,
+        "argv_sha256": "dfad4f31d5dd2364f202e1096f1d5a8a1a992c399f50e67d14b12a51f06857bb",
+        "cwd": "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 2369,
+          "sha256": "62dcdd0460e2b0d327b911ab0aea6e48264f2d10d462fdd17d8a6c4e58c8f233"
+        },
+        "stdout_text_checks": 4
+      },
+      "id": "schema-and-evidence-verifier",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    }
+  ],
+  "claimed_at": "2026-09-03T16:59:39+08:00",
+  "claimed_status": "CLAIMED_COMPLETE",
+  "contract_path": "research/20260903_BIOHUB_CELL_PUBLIC_RECON_V01/staging/github_ecosystem/github_ecosystem_subtask_contract_v03.json",
+  "contract_sha256": "89e69d2400c8c80db7aff908aa8f1472931132b4c043c40bfcc7aae55a165e31",
+  "final_status": "COMPLETED_VERIFIED",
+  "finished_at": "2026-09-03T17:00:15+08:00",
+  "integrity_scope": "local-sha256-only",
+  "limitations": [
+    "The conclusion is limited to the frozen contract and the implemented checks.",
+    "The verifier does not prove omitted requirements or future stability.",
+    "A local or Git hash is not a trusted signature against a malicious writer."
+  ],
+  "optional_warning_check_ids": [],
+  "reason": "all required automated checks passed",
+  "required_summary": {
+    "failed_or_blocked": 0,
+    "human_review": 0,
+    "passed": 9
+  },
+  "run_id": "20260903T170015+0800-22792e8e",
+  "schema_version": "1.0",
+  "started_at": "2026-09-03T17:00:15+08:00",
+  "task_id": "BIOHUB_CELL_GITHUB_ECOSYSTEM_20260903_V03"
+}

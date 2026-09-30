@@ -1,0 +1,100 @@
+{
+  "commit": "5380edd95453cd187ccc13272bc769ae2cf53095",
+  "remote_head": "5380edd95453cd187ccc13272bc769ae2cf53095",
+  "files": [
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/independent_audit.json",
+      "local_sha256": "8c5f88e559405c2c8401b2e4f5a3289f6b578277f52c219e1b8553a335e3b0d8",
+      "remote_sha256": "8c5f88e559405c2c8401b2e4f5a3289f6b578277f52c219e1b8553a335e3b0d8",
+      "equal": true,
+      "bytes": 6751
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/ordinary.log",
+      "local_sha256": "19f8295736c11ec8a60b75fa3a26d848a8dff6cb31aed4b18a719e48f2d88f99",
+      "remote_sha256": "19f8295736c11ec8a60b75fa3a26d848a8dff6cb31aed4b18a719e48f2d88f99",
+      "equal": true,
+      "bytes": 850777
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/ppsweep_results.csv",
+      "local_sha256": "120727ef0afe612e02cbf30e75bba60fc8a460e3d12b0038cc7dd05411a3568d",
+      "remote_sha256": "120727ef0afe612e02cbf30e75bba60fc8a460e3d12b0038cc7dd05411a3568d",
+      "equal": true,
+      "bytes": 1401
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/ppsweep_selected.json",
+      "local_sha256": "5f6fe577421f72dbf374b02387a0006b58508f2943e2e42c36caf3001691a8b5",
+      "remote_sha256": "5f6fe577421f72dbf374b02387a0006b58508f2943e2e42c36caf3001691a8b5",
+      "equal": true,
+      "bytes": 353
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/public946_expanded_patch_receipt.json",
+      "local_sha256": "51c22155da6ca1cd3f5e6dfaf4e10babf90f418c78ebfcee2546f354f6d82936",
+      "remote_sha256": "51c22155da6ca1cd3f5e6dfaf4e10babf90f418c78ebfcee2546f354f6d82936",
+      "equal": true,
+      "bytes": 1486
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/public946_final_audit.json",
+      "local_sha256": "429bcce13bbfaa694da0fc756672d4801c3b7e7c168bc43b820a26cfc63b8696",
+      "remote_sha256": "429bcce13bbfaa694da0fc756672d4801c3b7e7c168bc43b820a26cfc63b8696",
+      "equal": true,
+      "bytes": 16736
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/run_stats.csv",
+      "local_sha256": "5a93cd293bffc7bb4180e100dd0c4199381ed4acab70912d7c609644393a43bc",
+      "remote_sha256": "5a93cd293bffc7bb4180e100dd0c4199381ed4acab70912d7c609644393a43bc",
+      "equal": true,
+      "bytes": 3133
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/runtime_summary.json",
+      "local_sha256": "826663880f347bb38d479203a93fcb8290ca4ea30c89791ea0fdfda5bbee6f98",
+      "remote_sha256": "826663880f347bb38d479203a93fcb8290ca4ea30c89791ea0fdfda5bbee6f98",
+      "equal": true,
+      "bytes": 362591
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/B0/validator_results.csv",
+      "local_sha256": "9d28929631425afb5c4dc2595670ccb2f12e342360bd0ffce45e5837416a0ec0",
+      "remote_sha256": "9d28929631425afb5c4dc2595670ccb2f12e342360bd0ffce45e5837416a0ec0",
+      "equal": true,
+      "bytes": 7809
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/execute_once.py",
+      "local_sha256": "cf8cb5f595e8bcb70ab3e1b82f646a87c9efaadeb5190c96dcb139c7e11e625f",
+      "remote_sha256": "cf8cb5f595e8bcb70ab3e1b82f646a87c9efaadeb5190c96dcb139c7e11e625f",
+      "equal": true,
+      "bytes": 21138
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/results.json",
+      "local_sha256": "b4dd0802446c6d584c736d71f3d8c9bfc617e33ab6aa2b753eb0519e78da78c8",
+      "remote_sha256": "b4dd0802446c6d584c736d71f3d8c9bfc617e33ab6aa2b753eb0519e78da78c8",
+      "equal": true,
+      "bytes": 43488
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/write_ledger.json",
+      "local_sha256": "065768a9971fd48df0cbfbbf25b1468d35ee3bdc4efc7a8f03ce27731eb97819",
+      "remote_sha256": "065768a9971fd48df0cbfbbf25b1468d35ee3bdc4efc7a8f03ce27731eb97819",
+      "equal": true,
+      "bytes": 7738
+    },
+    {
+      "path": "reports/20260908_PUBLIC946_TTA_OPTIMIZATION_RESULT.md",
+      "local_sha256": "cdab1f9e7f057726665baaed7691dafbafb5b17235f6fb3a52d56bf13e680457",
+      "remote_sha256": "cdab1f9e7f057726665baaed7691dafbafb5b17235f6fb3a52d56bf13e680457",
+      "equal": true,
+      "bytes": 10870
+    }
+  ],
+  "git_status_porcelain": "",
+  "observed_at_utc": "2026-09-08T05:30:26.785268+00:00",
+  "status": "CHECKPOINT_REMOTE_VERIFIED_EXPERIMENT_RUNNING"
+}

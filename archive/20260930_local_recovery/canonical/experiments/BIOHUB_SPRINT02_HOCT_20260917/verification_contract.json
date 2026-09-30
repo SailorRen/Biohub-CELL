@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_SPRINT02_HOCT_20260917",
+  "goal": "按原任务书完成H1条件执行链或有证据的合法停止；分开验收执行、结果、交付",
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "scope": {
+    "instruction_commit": "12bbe42c5a770618f9cc5edb9d18d55788420dea",
+    "instruction_sha256": "0c23b55514c1b9c00a0177d7140af02e0e47463829c45042f1d2ee29bc528273",
+    "budget": {
+      "train": 0,
+      "save_run": 2,
+      "submission": 1,
+      "dataset_write": 0,
+      "final_selection": 0
+    },
+    "out_of_scope": [
+      "改变G1选择器或分类器",
+      "无覆盖证据删边",
+      "超预算",
+      "其他候选",
+      "main合并"
+    ]
+  },
+  "acceptance": [
+    {
+      "id": "evidence",
+      "type": "command",
+      "argv": [
+        "python3",
+        "experiments/BIOHUB_SPRINT02_HOCT_20260917/verify.py"
+      ],
+      "expected_exit": 0,
+      "timeout_seconds": 120
+    },
+    {
+      "id": "report",
+      "type": "file",
+      "path": "reports/20260917_BIOHUB_SPRINT02_HOCT_RESULTS.md",
+      "min_bytes": 1500
+    },
+    {
+      "id": "delivery",
+      "type": "git",
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true
+    }
+  ]
+}

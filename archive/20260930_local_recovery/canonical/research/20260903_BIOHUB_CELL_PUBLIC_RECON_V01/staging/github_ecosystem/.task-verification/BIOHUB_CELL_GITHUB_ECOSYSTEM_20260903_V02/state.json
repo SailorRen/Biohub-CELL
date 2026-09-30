@@ -1,0 +1,17 @@
+{
+  "baseline": {
+    "contract_matches_head": false,
+    "contract_tracked": false,
+    "git_repository": true,
+    "head": "ff0abce0f8d033745a58cdcab1639c65c94d4520",
+    "integrity_scope": "local-sha256-only"
+  },
+  "claim": null,
+  "contract_path": "github_ecosystem_subtask_contract_v02.json",
+  "contract_sha256": "db75b552eeaac3a5dcd1eb3c469f0ed0eadb585f778483754ec476e80adc73ef",
+  "latest_verification": null,
+  "prepared_at": "2026-09-03T16:05:45+08:00",
+  "schema_version": "1.0",
+  "status": "PLANNED",
+  "task_id": "BIOHUB_CELL_GITHUB_ECOSYSTEM_20260903_V02"
+}

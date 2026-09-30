@@ -1,0 +1,76 @@
+{
+  "id": 739685,
+  "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/739685",
+  "observed_at_utc": "2026-09-09T01:49:24.282628+00:00",
+  "platform_writes": 0,
+  "topic": {
+    "id": 739685,
+    "title": "Problems with edje connection",
+    "url": "/competitions/biohub-cell-tracking-during-development/discussion/739685",
+    "postDate": "2026-09-05T13:05:03.739Z",
+    "authorName": "Mark",
+    "authorUrl": "https://www.kaggle.com/markdjadchenko",
+    "votes": 2,
+    "commentCount": 7,
+    "forumName": "Biohub - Cell Tracking During Development",
+    "forumId": 10656304,
+    "content": "<p>Any implementation of a \"smarter\" motion linker—anything beyond a basic algorithm—results in an increase of exactly 0.001.</p>\n<p>The CV may vary by about 0.01–0.03, but the model's performance simply neither worsens nor improves on the LB, which seems strange. </p>\n<p>Has anyone encountered this?</p>"
+  },
+  "comment_pages": [
+    {
+      "comments": [
+        {
+          "id": 3521828,
+          "authorName": "Rishabh Roy",
+          "postDate": "2026-09-07T09:08:18.460Z",
+          "content": "<p>i believe that for me since i am using a point based detector it losing out on lot of features . If i would have used a cell segment based approach it would have al lot of features that we could ave used and identify the tracked cell </p>",
+          "votes": -1
+        },
+        {
+          "id": 3522082,
+          "authorName": "Yubo WANG",
+          "postDate": "2026-09-08T04:03:10.897Z",
+          "content": "<p>I’m seeing pretty much the same behavior.</p>\n<p>My motion linker changes give around +0.012 on 5-fold CV on average, with no fold getting worse, but the LB gain is exactly +0.001. I also compared the public 0.946 LB notebook with my older private 0.942 LB notebook under the same 5-fold CV setup, and surprisingly the public one was about 0.015 worse locally. Given that some people have already pointed out possible test-set overfitting in public notebooks, I’m starting to suspect there may also be a fairly large distribution shift between train, public test, and hidden test…?</p>\n<p><a href=\"https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/739278\" target=\"_blank\">https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/739278</a></p>",
+          "replies": [
+            {
+              "id": 3522206,
+              "authorName": "hengck23",
+              "postDate": "2026-09-08T12:03:12.330Z",
+              "content": "<p>ask chatgpt \"distribution shift between train, public test, and hidden test…\" on how to probe or verify.\nYou definitely can do some online testing/training and send the results back by \"smart encoding your submission\"</p>\n<p>also download more external data or augmentation etc to test locally.\nwhen you evaluate your model on local dataset, don't just look at the numbers. visualise the results and more importantly, explain why (especially statistically). is the error common or will be common? </p>",
+              "votes": 1,
+              "replies": [
+                {
+                  "id": 3522210,
+                  "authorName": "Yubo WANG",
+                  "postDate": "2026-09-08T12:08:33.423Z",
+                  "content": "<p>I'm working on finding the cause you mentioned, which was also a problem I encountered when I hit a bottleneck with my ROGII. Thanks a lot🥲</p>"
+                },
+                {
+                  "id": 3522221,
+                  "authorName": "hengck23",
+                  "postDate": "2026-09-08T12:50:02.010Z",
+                  "content": "<p>Root cause not necessarily means why it happens. It can also means will it reliably happen. Eg you can make some smart error correction to repair local track. But will this error actually happens in hidden test ( not why it happens).</p>\n<p>As a concept example, you find your gain in local lb is due to repair of gap = 5 missing frames. Then you find that of all broken tracks, 80% is gap1, 18% is gap2 … less than one percent is gap5</p>",
+                  "votes": 1
+                },
+                {
+                  "id": 3522271,
+                  "authorName": "Yubo WANG",
+                  "postDate": "2026-09-08T14:49:59.107Z",
+                  "content": "<p>Truly brilliant probe design! Thank you for guiding a Kaggle newcomer like me.</p>"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3521324,
+          "authorName": "Rishabh Roy",
+          "postDate": "2026-09-05T14:55:36.760Z",
+          "content": "<p>on the same boat </p>"
+        }
+      ]
+    }
+  ],
+  "comments_pagination_complete": true,
+  "status": "TEXT_ACQUIRED_NOT_YET_REVIEWED"
+}

@@ -1,0 +1,189 @@
+Processing ./downloads/LINEFIT_BOUNDARY_20260909/scorer/tracksdata_980c2d30a.tar.gz
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting polars==1.42.0
+  Downloading polars-1.42.0-py3-none-any.whl.metadata (10 kB)
+Collecting polars-runtime-32==1.42.0 (from polars==1.42.0)
+  Downloading polars_runtime_32-1.42.0-cp310-abi3-macosx_11_0_arm64.whl.metadata (1.5 kB)
+Collecting bidict>=0.23.1 (from tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading bidict-0.24.1-py3-none-any.whl.metadata (8.7 kB)
+Collecting blosc2 (from tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading blosc2-4.12.0-cp311-abi3-macosx_11_0_arm64.whl.metadata (7.8 kB)
+Collecting dask (from tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading dask-2026.8.0-py3-none-any.whl.metadata (3.8 kB)
+Collecting geff>=1.1.3.1.1 (from tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading geff-1.3.1.1.3-py3-none-any.whl.metadata (3.3 kB)
+Collecting ilpy>=0.5.1 (from tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading ilpy-0.6.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting imagecodecs (from tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading imagecodecs-2026.3.6-cp311-abi3-macosx_11_0_arm64.whl.metadata (21 kB)
+Collecting numba (from tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading numba-0.67.0-cp311-cp311-macosx_12_0_arm64.whl.metadata (2.7 kB)
+Collecting numcodecs<0.16,>=0.13 (from tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading numcodecs-0.15.1-cp311-cp311-macosx_11_0_arm64.whl.metadata (2.9 kB)
+Requirement already satisfied: numpy>2 in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from tracksdata==0.1.0rc6.dev3+g980c2d30a) (2.4.2)
+Collecting psygnal>=0.14.0 (from tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading psygnal-0.15.1-cp311-cp311-macosx_11_0_arm64.whl.metadata (6.1 kB)
+Requirement already satisfied: pyarrow in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from tracksdata==0.1.0rc6.dev3+g980c2d30a) (21.0.0)
+Collecting rich (from tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting rustworkx>=0.17.1 (from tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading rustworkx-0.18.1-cp310-abi3-macosx_11_0_arm64.whl.metadata (10 kB)
+Requirement already satisfied: scikit-image>=0.24.0 in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from tracksdata==0.1.0rc6.dev3+g980c2d30a) (0.26.0)
+Requirement already satisfied: sqlalchemy>=2 in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from tracksdata==0.1.0rc6.dev3+g980c2d30a) (2.0.49)
+Requirement already satisfied: tqdm in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from tracksdata==0.1.0rc6.dev3+g980c2d30a) (4.67.3)
+Requirement already satisfied: typing-extensions in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from tracksdata==0.1.0rc6.dev3+g980c2d30a) (4.15.0)
+Collecting geff-spec<1.4 (from geff>=1.1.3.1.1->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading geff_spec-1.3.0-py3-none-any.whl.metadata (2.1 kB)
+Requirement already satisfied: networkx>=3.2.1 in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from geff>=1.1.3.1.1->tracksdata==0.1.0rc6.dev3+g980c2d30a) (3.6.1)
+Collecting pydantic>=2.11 (from geff>=1.1.3.1.1->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading pydantic-2.13.5-py3-none-any.whl.metadata (110 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 110.2/110.2 kB 385.7 kB/s eta 0:00:00
+Collecting typer>=0.14.0 (from geff>=1.1.3.1.1->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading typer-0.27.2-py3-none-any.whl.metadata (16 kB)
+Collecting zarr<4,>=2.18 (from geff>=1.1.3.1.1->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading zarr-3.1.6-py3-none-any.whl.metadata (8.6 kB)
+Collecting pyscipopt (from ilpy>=0.5.1->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading pyscipopt-6.2.1-cp311-cp311-macosx_11_0_arm64.whl.metadata (7.5 kB)
+Collecting deprecated (from numcodecs<0.16,>=0.13->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading deprecated-1.3.1-py2.py3-none-any.whl.metadata (5.9 kB)
+Requirement already satisfied: scipy>=1.11.4 in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from scikit-image>=0.24.0->tracksdata==0.1.0rc6.dev3+g980c2d30a) (1.17.1)
+Requirement already satisfied: pillow>=10.1 in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from scikit-image>=0.24.0->tracksdata==0.1.0rc6.dev3+g980c2d30a) (12.1.1)
+Requirement already satisfied: imageio!=2.35.0,>=2.33 in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from scikit-image>=0.24.0->tracksdata==0.1.0rc6.dev3+g980c2d30a) (2.37.3)
+Requirement already satisfied: tifffile>=2022.8.12 in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from scikit-image>=0.24.0->tracksdata==0.1.0rc6.dev3+g980c2d30a) (2026.3.3)
+Requirement already satisfied: packaging>=21 in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from scikit-image>=0.24.0->tracksdata==0.1.0rc6.dev3+g980c2d30a) (25.0)
+Requirement already satisfied: lazy-loader>=0.4 in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from scikit-image>=0.24.0->tracksdata==0.1.0rc6.dev3+g980c2d30a) (0.5)
+Collecting ndindex (from blosc2->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading ndindex-1.10.1-cp311-cp311-macosx_11_0_arm64.whl.metadata (3.6 kB)
+Collecting msgpack (from blosc2->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading msgpack-1.2.2-cp311-cp311-macosx_11_0_arm64.whl.metadata (8.3 kB)
+Collecting numexpr>=2.14.1 (from blosc2->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading numexpr-2.14.2-cp311-cp311-macosx_11_0_arm64.whl.metadata (9.0 kB)
+Requirement already satisfied: httpx[http2] in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from blosc2->tracksdata==0.1.0rc6.dev3+g980c2d30a) (0.28.1)
+Requirement already satisfied: threadpoolctl in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from blosc2->tracksdata==0.1.0rc6.dev3+g980c2d30a) (3.6.0)
+Collecting click>=8.1 (from dask->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting cloudpickle>=3.0.0 (from dask->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+Requirement already satisfied: fsspec>=2021.09.0 in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from dask->tracksdata==0.1.0rc6.dev3+g980c2d30a) (2026.2.0)
+Collecting partd>=1.4.0 (from dask->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading partd-1.4.2-py3-none-any.whl.metadata (4.6 kB)
+Requirement already satisfied: pyyaml>=5.4.1 in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from dask->tracksdata==0.1.0rc6.dev3+g980c2d30a) (6.0.3)
+Collecting toolz>=0.12.0 (from dask->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading toolz-1.1.0-py3-none-any.whl.metadata (5.1 kB)
+Collecting importlib_metadata>=4.13.0 (from dask->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading importlib_metadata-9.0.1-py3-none-any.whl.metadata (4.5 kB)
+Collecting llvmlite<0.50,>=0.49.0dev0 (from numba->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading llvmlite-0.49.0-cp311-cp311-macosx_12_0_arm64.whl.metadata (5.0 kB)
+Requirement already satisfied: markdown-it-py>=2.2.0 in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from rich->tracksdata==0.1.0rc6.dev3+g980c2d30a) (4.2.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from rich->tracksdata==0.1.0rc6.dev3+g980c2d30a) (2.19.2)
+Collecting annotated-types (from geff-spec<1.4->geff>=1.1.3.1.1->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+Collecting zipp>=3.20 (from importlib_metadata>=4.13.0->dask->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading zipp-4.1.0-py3-none-any.whl.metadata (3.6 kB)
+Requirement already satisfied: mdurl~=0.1 in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from markdown-it-py>=2.2.0->rich->tracksdata==0.1.0rc6.dev3+g980c2d30a) (0.1.2)
+Collecting locket (from partd>=1.4.0->dask->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading locket-1.0.0-py2.py3-none-any.whl.metadata (2.8 kB)
+Collecting pydantic-core==2.46.5 (from pydantic>=2.11->geff>=1.1.3.1.1->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading pydantic_core-2.46.5-cp311-cp311-macosx_11_0_arm64.whl.metadata (6.6 kB)
+Collecting typing-inspection>=0.4.2 (from pydantic>=2.11->geff>=1.1.3.1.1->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+Collecting shellingham>=1.3.0 (from typer>=0.14.0->geff>=1.1.3.1.1->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting annotated-doc>=0.0.2 (from typer>=0.14.0->geff>=1.1.3.1.1->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+Collecting donfig>=0.8 (from zarr<4,>=2.18->geff>=1.1.3.1.1->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading donfig-0.8.1.post1-py3-none-any.whl.metadata (5.0 kB)
+Collecting google-crc32c>=1.5 (from zarr<4,>=2.18->geff>=1.1.3.1.1->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading google_crc32c-1.8.0-cp311-cp311-macosx_12_0_arm64.whl.metadata (1.7 kB)
+Collecting wrapt<3,>=1.10 (from deprecated->numcodecs<0.16,>=0.13->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading wrapt-2.4.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (7.4 kB)
+Requirement already satisfied: anyio in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from httpx[http2]->blosc2->tracksdata==0.1.0rc6.dev3+g980c2d30a) (4.12.1)
+Requirement already satisfied: certifi in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from httpx[http2]->blosc2->tracksdata==0.1.0rc6.dev3+g980c2d30a) (2026.2.25)
+Requirement already satisfied: httpcore==1.* in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from httpx[http2]->blosc2->tracksdata==0.1.0rc6.dev3+g980c2d30a) (1.0.9)
+Requirement already satisfied: idna in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from httpx[http2]->blosc2->tracksdata==0.1.0rc6.dev3+g980c2d30a) (3.11)
+Collecting h2<5,>=3 (from httpx[http2]->blosc2->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading h2-4.4.1-py3-none-any.whl.metadata (3.8 kB)
+Requirement already satisfied: h11>=0.16 in /opt/anaconda3/envs/ml/lib/python3.11/site-packages (from httpcore==1.*->httpx[http2]->blosc2->tracksdata==0.1.0rc6.dev3+g980c2d30a) (0.16.0)
+Collecting hyperframe<7,>=6.1 (from h2<5,>=3->httpx[http2]->blosc2->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading hyperframe-6.1.0-py3-none-any.whl.metadata (4.3 kB)
+Collecting hpack<5,>=4.2 (from h2<5,>=3->httpx[http2]->blosc2->tracksdata==0.1.0rc6.dev3+g980c2d30a)
+  Downloading hpack-4.2.0-py3-none-any.whl.metadata (3.3 kB)
+Downloading polars-1.42.0-py3-none-any.whl (836 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 836.9/836.9 kB 1.4 MB/s eta 0:00:00
+Downloading polars_runtime_32-1.42.0-cp310-abi3-macosx_11_0_arm64.whl (47.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 47.4/47.4 MB 1.1 MB/s eta 0:00:00
+Downloading bidict-0.24.1-py3-none-any.whl (36 kB)
+Downloading geff-1.3.1.1.3-py3-none-any.whl (69 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.0/69.0 kB 1.6 MB/s eta 0:00:00
+Downloading ilpy-0.6.0-py3-none-any.whl (32 kB)
+Downloading numcodecs-0.15.1-cp311-cp311-macosx_11_0_arm64.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 1.4 MB/s eta 0:00:00
+Downloading psygnal-0.15.1-cp311-cp311-macosx_11_0_arm64.whl (567 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 567.8/567.8 kB 1.5 MB/s eta 0:00:00
+Downloading rustworkx-0.18.1-cp310-abi3-macosx_11_0_arm64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 1.5 MB/s eta 0:00:00
+Downloading blosc2-4.12.0-cp311-abi3-macosx_11_0_arm64.whl (4.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.9/4.9 MB 1.4 MB/s eta 0:00:00
+Downloading dask-2026.8.0-py3-none-any.whl (1.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 1.4 MB/s eta 0:00:00
+Downloading imagecodecs-2026.3.6-cp311-abi3-macosx_11_0_arm64.whl (11.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.7/11.7 MB 1.2 MB/s eta 0:00:00
+Downloading numba-0.67.0-cp311-cp311-macosx_12_0_arm64.whl (2.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 1.6 MB/s eta 0:00:00
+Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 310.7/310.7 kB 1.6 MB/s eta 0:00:00
+Downloading click-8.5.0-py3-none-any.whl (125 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.3/125.3 kB 1.6 MB/s eta 0:00:00
+Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+Downloading geff_spec-1.3.0-py3-none-any.whl (15 kB)
+Downloading importlib_metadata-9.0.1-py3-none-any.whl (27 kB)
+Downloading llvmlite-0.49.0-cp311-cp311-macosx_12_0_arm64.whl (40.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.5/40.5 MB 1.5 MB/s eta 0:00:00
+Downloading numexpr-2.14.2-cp311-cp311-macosx_11_0_arm64.whl (153 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 153.2/153.2 kB 1.0 MB/s eta 0:00:00
+Downloading partd-1.4.2-py3-none-any.whl (18 kB)
+Downloading pydantic-2.13.5-py3-none-any.whl (472 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 472.6/472.6 kB 1.6 MB/s eta 0:00:00
+Downloading pydantic_core-2.46.5-cp311-cp311-macosx_11_0_arm64.whl (1.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 1.6 MB/s eta 0:00:00
+Downloading toolz-1.1.0-py3-none-any.whl (58 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.1/58.1 kB 2.2 MB/s eta 0:00:00
+Downloading typer-0.27.2-py3-none-any.whl (123 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 123.1/123.1 kB 1.4 MB/s eta 0:00:00
+Downloading zarr-3.1.6-py3-none-any.whl (295 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 295.7/295.7 kB 2.0 MB/s eta 0:00:00
+Downloading deprecated-1.3.1-py2.py3-none-any.whl (11 kB)
+Downloading msgpack-1.2.2-cp311-cp311-macosx_11_0_arm64.whl (83 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 83.9/83.9 kB 1.3 MB/s eta 0:00:00
+Downloading ndindex-1.10.1-cp311-cp311-macosx_11_0_arm64.whl (171 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 171.4/171.4 kB 1.9 MB/s eta 0:00:00
+Downloading pyscipopt-6.2.1-cp311-cp311-macosx_11_0_arm64.whl (8.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.4/8.4 MB 1.4 MB/s eta 0:00:00
+Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Downloading donfig-0.8.1.post1-py3-none-any.whl (21 kB)
+Downloading google_crc32c-1.8.0-cp311-cp311-macosx_12_0_arm64.whl (31 kB)
+Downloading h2-4.4.1-py3-none-any.whl (62 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.6/62.6 kB 1.6 MB/s eta 0:00:00
+Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+Downloading wrapt-2.4.0-cp311-cp311-macosx_11_0_arm64.whl (95 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 95.8/95.8 kB 2.3 MB/s eta 0:00:00
+Downloading zipp-4.1.0-py3-none-any.whl (10 kB)
+Downloading locket-1.0.0-py2.py3-none-any.whl (4.4 kB)
+Downloading hpack-4.2.0-py3-none-any.whl (34 kB)
+Downloading hyperframe-6.1.0-py3-none-any.whl (13 kB)
+Building wheels for collected packages: tracksdata
+  Building wheel for tracksdata (pyproject.toml): started
+  Building wheel for tracksdata (pyproject.toml): finished with status 'done'
+  Created wheel for tracksdata: filename=tracksdata-0.1.0rc6.dev3+g980c2d30a-py3-none-any.whl size=278481 sha256=8ecf5edfb916bd15fb8a970abe5a7adcc720bfb7698f098615d61a801e6117b7
+  Stored in directory: /private/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/pip-ephem-wheel-cache-eoxfvedl/wheels/28/49/d1/066fb2a58432c9b9530ca1ca32c1bf2de8c04ec0525618783f
+Successfully built tracksdata
+Installing collected packages: zipp, wrapt, typing-inspection, toolz, shellingham, rustworkx, pyscipopt, pydantic-core, psygnal, polars-runtime-32, numexpr, ndindex, msgpack, locket, llvmlite, imagecodecs, hyperframe, hpack, google-crc32c, donfig, cloudpickle, click, bidict, annotated-types, annotated-doc, rich, pydantic, polars, partd, numba, importlib_metadata, ilpy, h2, deprecated, typer, numcodecs, dask, zarr, blosc2, geff-spec, geff, tracksdata
+Successfully installed annotated-doc-0.0.5 annotated-types-0.8.0 bidict-0.24.1 blosc2-4.12.0 click-8.5.0 cloudpickle-3.1.2 dask-2026.8.0 deprecated-1.3.1 donfig-0.8.1.post1 geff-1.3.1.1.3 geff-spec-1.3.0 google-crc32c-1.8.0 h2-4.4.1 hpack-4.2.0 hyperframe-6.1.0 ilpy-0.6.0 imagecodecs-2026.3.6 importlib_metadata-9.0.1 llvmlite-0.49.0 locket-1.0.0 msgpack-1.2.2 ndindex-1.10.1 numba-0.67.0 numcodecs-0.15.1 numexpr-2.14.2 partd-1.4.2 polars-1.42.0 polars-runtime-32-1.42.0 psygnal-0.15.1 pydantic-2.13.5 pydantic-core-2.46.5 pyscipopt-6.2.1 rich-15.0.0 rustworkx-0.18.1 shellingham-1.5.4 toolz-1.1.0 tracksdata-0.1.0rc6.dev3+g980c2d30a typer-0.27.2 typing-inspection-0.4.4 wrapt-2.4.0 zarr-3.1.6 zipp-4.1.0
+Could not fetch URL https://pypi.org/simple/pip/: There was a problem confirming the ssl certificate: HTTPSConnectionPool(host='pypi.org', port=443): Max retries exceeded with url: /simple/pip/ (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)'))) - skipping

@@ -1,0 +1,24 @@
+--- ttacell11
++++ harmoniccell11
+@@ -1,12 +1,12 @@
+-# ============================================================
+-# CELL 10 (NEW) -- PIPELINE MANIFEST
+-# Resolved state of every optional/conditional mechanism, printed once.
+-# The point: every silent bug found in this project so far (DeepCenter
+-# never loading, a duplicate training cell silently winning, a dead
+-# validator comparison) would have been visible on this one printout
+-# instead of requiring manual tracing. Read this block before trusting
+-# any run's score.
+-# ============================================================
++
++
++
++
++
++
++
++
++
+ 
+ print("=" * 78)
+ print("PIPELINE MANIFEST -- resolved state, not just config")

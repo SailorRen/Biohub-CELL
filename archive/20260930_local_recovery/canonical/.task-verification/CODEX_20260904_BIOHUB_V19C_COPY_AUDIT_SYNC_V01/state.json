@@ -1,0 +1,28 @@
+{
+  "baseline": {
+    "contract_matches_head": true,
+    "contract_tracked": true,
+    "git_repository": true,
+    "head": "f7bb5e0dd6ec7fe27509bae25ee749dbce08aeef",
+    "integrity_scope": "git-tracked-and-sha256"
+  },
+  "claim": {
+    "claimed_at": "2026-09-04T01:27:20+08:00",
+    "source": "agent_report",
+    "status": "CLAIMED_COMPLETE",
+    "summary_chars": 225,
+    "summary_sha256": "8f92c666c8b1a5306624b5095c3b0fa00c0cc0d86dbb674c383eda336e596a20"
+  },
+  "contract_path": "tasks/CODEX_20260904_BIOHUB_V19C_COPY_AUDIT_SYNC_CONTRACT.json",
+  "contract_sha256": "3ac963a7bdc1ca2a6f62b8c0b0ac30abf6de06f80f789694a2f9ac9bf5a6eeb4",
+  "latest_verification": {
+    "final_status": "COMPLETED_VERIFIED",
+    "finished_at": "2026-09-04T01:27:50+08:00",
+    "report_path": ".task-verification/CODEX_20260904_BIOHUB_V19C_COPY_AUDIT_SYNC_V01/runs/20260904T012733+0800-de43f92e.json",
+    "run_id": "20260904T012733+0800-de43f92e"
+  },
+  "prepared_at": "2026-09-04T01:05:26+08:00",
+  "schema_version": "1.0",
+  "status": "COMPLETED_VERIFIED",
+  "task_id": "CODEX_20260904_BIOHUB_V19C_COPY_AUDIT_SYNC_V01"
+}

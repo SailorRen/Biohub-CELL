@@ -1,0 +1,8 @@
+# ==== HOCT consensus veto: finalize cell (inserted after the post-process sweep) =======
+# If the sweep re-wrote submission.csv, the veto was applied inside that write (the arming cell
+# re-bound write_test_submission) and nothing is re-written here. If the sweep kept the base file,
+# it is re-written once with the veto. Either way exactly one HOCT_VETO_SUMMARY line is printed:
+# videos vetoed / skipped for the wall-clock budget / failed, elapsed seconds, deadline used.
+# With BIOHUB_HOCT_VETO=0 (or without the arming cell) this cell does nothing.
+if globals().get("_HV_MODE", 0) in (1, 2):
+    _hv_finalize()

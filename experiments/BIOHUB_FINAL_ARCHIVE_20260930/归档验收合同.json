@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_FINAL_ARCHIVE_20260930",
+  "goal": "私榜回收、全部本地项目文件分类盘点、设计优化代码汇总和GitHub可恢复归档；通过后再清理",
+  "scope": {
+    "in_scope": [
+      "官方只读结果",
+      "本地比赛文件盘点与安全归档",
+      "报告和GitHub同步"
+    ],
+    "out_of_scope": [
+      "新增运行或提交",
+      "改变最终选择",
+      "上传数据权重凭据",
+      "删除其他比赛"
+    ]
+  },
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "acceptance": [
+    {
+      "id": "report",
+      "type": "file",
+      "path": "reports/20260930_Biohub比赛总报告与归档索引.md",
+      "contains_all": [
+        "设计思路",
+        "优化方法",
+        "Private",
+        "清理范围"
+      ]
+    },
+    {
+      "id": "archive-coverage",
+      "type": "command",
+      "argv": [
+        "/usr/bin/python3",
+        "experiments/BIOHUB_FINAL_ARCHIVE_20260930/verify_archive.py"
+      ],
+      "expected_exit": 0,
+      "timeout_seconds": 180
+    },
+    {
+      "id": "git-remote",
+      "type": "git",
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true
+    }
+  ]
+}

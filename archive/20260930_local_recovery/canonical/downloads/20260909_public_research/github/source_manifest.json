@@ -1,0 +1,638 @@
+{
+  "royerlab/kaggle-cell-tracking-competition": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/royerlab/kaggle-cell-tracking-competition/075fc5f5a52d11077f9dc2b074644618f26939e2/README.md",
+      "bytes": 7254,
+      "sha256": "305222ff29b8b783c95ff2ceb2df3e801c52272633e798ef27af600fbe041812",
+      "lines": 203,
+      "download_path": "downloads/20260909_public_research/github/royerlab__kaggle-cell-tracking-competition/source/README.md",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          203
+        ]
+      ],
+      "evidence_class": "AUTHOR_CLAIM"
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/royerlab/kaggle-cell-tracking-competition/075fc5f5a52d11077f9dc2b074644618f26939e2/LICENSE",
+      "bytes": 1507,
+      "sha256": "3910a8b578783928cbbf981c1b204591ab3368e70017dc695d6536f71d272796",
+      "lines": 28,
+      "download_path": "downloads/20260909_public_research/github/royerlab__kaggle-cell-tracking-competition/source/LICENSE",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          28
+        ]
+      ],
+      "evidence_class": "AUTHOR_CLAIM"
+    },
+    {
+      "path": "metrics.md",
+      "url": "https://raw.githubusercontent.com/royerlab/kaggle-cell-tracking-competition/075fc5f5a52d11077f9dc2b074644618f26939e2/metrics.md",
+      "bytes": 6942,
+      "sha256": "d8a2d3ff21b507242dd23e9b7c687d725261d7b4c79cff086cccb4093141d696",
+      "lines": 149,
+      "download_path": "downloads/20260909_public_research/github/royerlab__kaggle-cell-tracking-competition/source/metrics.md",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          149
+        ]
+      ],
+      "evidence_class": "AUTHOR_CLAIM"
+    },
+    {
+      "path": "src/tracking_cellmot/metrics.py",
+      "url": "https://raw.githubusercontent.com/royerlab/kaggle-cell-tracking-competition/075fc5f5a52d11077f9dc2b074644618f26939e2/src/tracking_cellmot/metrics.py",
+      "bytes": 19602,
+      "sha256": "cfdd596e3f8909cca14db0682889738b19ff75c3808b3773175aba9367ca7444",
+      "lines": 536,
+      "download_path": "downloads/20260909_public_research/github/royerlab__kaggle-cell-tracking-competition/source/src/tracking_cellmot/metrics.py",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          536
+        ]
+      ],
+      "evidence_class": "SOURCE_CODE_VERIFIED"
+    },
+    {
+      "path": "src/tracking_cellmot/division_metrics.py",
+      "url": "https://raw.githubusercontent.com/royerlab/kaggle-cell-tracking-competition/075fc5f5a52d11077f9dc2b074644618f26939e2/src/tracking_cellmot/division_metrics.py",
+      "bytes": 20488,
+      "sha256": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9",
+      "lines": 574,
+      "download_path": "downloads/20260909_public_research/github/royerlab__kaggle-cell-tracking-competition/source/src/tracking_cellmot/division_metrics.py",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          574
+        ]
+      ],
+      "evidence_class": "SOURCE_CODE_VERIFIED"
+    },
+    {
+      "path": "scripts/evaluate.py",
+      "url": "https://raw.githubusercontent.com/royerlab/kaggle-cell-tracking-competition/075fc5f5a52d11077f9dc2b074644618f26939e2/scripts/evaluate.py",
+      "bytes": 5219,
+      "sha256": "03ad4049530d3682c77435194e5d921981f331df3462abcde4a7156d1a57b7d3",
+      "lines": 142,
+      "download_path": "downloads/20260909_public_research/github/royerlab__kaggle-cell-tracking-competition/source/scripts/evaluate.py",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          142
+        ]
+      ],
+      "evidence_class": "SOURCE_CODE_VERIFIED"
+    },
+    {
+      "path": "tests/test_division_sandbox_examples.py",
+      "url": "https://raw.githubusercontent.com/royerlab/kaggle-cell-tracking-competition/075fc5f5a52d11077f9dc2b074644618f26939e2/tests/test_division_sandbox_examples.py",
+      "bytes": 11437,
+      "sha256": "2fdc8c6f0847db264e6c1ef5ff3b40bec7089ab7e7a87adc7270d6d90449de90",
+      "lines": 383,
+      "download_path": "downloads/20260909_public_research/github/royerlab__kaggle-cell-tracking-competition/source/tests/test_division_sandbox_examples.py",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          383
+        ]
+      ],
+      "evidence_class": "SOURCE_CODE_VERIFIED"
+    }
+  ],
+  "matt-ceran/biohub-cell-tracking": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/matt-ceran/biohub-cell-tracking/446589b772f4d98adecc3f6ba15434f0e0d57069/README.md",
+      "bytes": 12069,
+      "sha256": "8efbe8d4570ef1bb48824f8e140d119ab731cb9e734ad561372e38261ab18152",
+      "lines": 255,
+      "download_path": "downloads/20260909_public_research/github/matt-ceran__biohub-cell-tracking/source/README.md",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          255
+        ]
+      ],
+      "evidence_class": "AUTHOR_CLAIM"
+    },
+    {
+      "path": "experiments/2026-08-13-phase11-v2-atlasforge.md",
+      "url": "https://raw.githubusercontent.com/matt-ceran/biohub-cell-tracking/446589b772f4d98adecc3f6ba15434f0e0d57069/experiments/2026-08-13-phase11-v2-atlasforge.md",
+      "bytes": 8022,
+      "sha256": "9a77429b073d582e85bf1f10520a0503f4f2cbd9df2e2d3d8909fb2e389dd778",
+      "lines": 161,
+      "download_path": "downloads/20260909_public_research/github/matt-ceran__biohub-cell-tracking/source/experiments/2026-08-13-phase11-v2-atlasforge.md",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          161
+        ]
+      ],
+      "evidence_class": "AUTHOR_CLAIM"
+    },
+    {
+      "path": "experiments/2026-08-11-phase11-truth-rank-atlas.md",
+      "url": "https://raw.githubusercontent.com/matt-ceran/biohub-cell-tracking/446589b772f4d98adecc3f6ba15434f0e0d57069/experiments/2026-08-11-phase11-truth-rank-atlas.md",
+      "bytes": 9120,
+      "sha256": "a731aa0287809a992e331c3b890daa76148cb41c79b586c18371dee1c203c0aa",
+      "lines": 167,
+      "download_path": "downloads/20260909_public_research/github/matt-ceran__biohub-cell-tracking/source/experiments/2026-08-11-phase11-truth-rank-atlas.md",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          167
+        ]
+      ],
+      "evidence_class": "AUTHOR_CLAIM"
+    },
+    {
+      "path": "src/biohub/division_truth_rank.py",
+      "url": "https://raw.githubusercontent.com/matt-ceran/biohub-cell-tracking/446589b772f4d98adecc3f6ba15434f0e0d57069/src/biohub/division_truth_rank.py",
+      "bytes": 8712,
+      "sha256": "7b1900f8a2610c626c09fc3c2b1fdfb96c3213d4d80c3bd980a38d3822d4e419",
+      "lines": 250,
+      "download_path": "downloads/20260909_public_research/github/matt-ceran__biohub-cell-tracking/source/src/biohub/division_truth_rank.py",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          250
+        ]
+      ],
+      "evidence_class": "SOURCE_CODE_VERIFIED"
+    },
+    {
+      "path": "src/biohub/division_v2.py",
+      "url": "https://raw.githubusercontent.com/matt-ceran/biohub-cell-tracking/446589b772f4d98adecc3f6ba15434f0e0d57069/src/biohub/division_v2.py",
+      "bytes": 25552,
+      "sha256": "db2f3a2cc0a8e31a0e58bacaa0fc73c8febc86da5ca4ce034ddcbc2793dd4138",
+      "lines": 608,
+      "download_path": "downloads/20260909_public_research/github/matt-ceran__biohub-cell-tracking/source/src/biohub/division_v2.py",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          608
+        ]
+      ],
+      "evidence_class": "SOURCE_CODE_VERIFIED"
+    },
+    {
+      "path": "src/biohub/metric.py",
+      "url": "https://raw.githubusercontent.com/matt-ceran/biohub-cell-tracking/446589b772f4d98adecc3f6ba15434f0e0d57069/src/biohub/metric.py",
+      "bytes": 9503,
+      "sha256": "1e935ceb00e26705ff1ccc7a548547dd4742a8ea5f74ae7e0d03eac29ee03dd2",
+      "lines": 261,
+      "download_path": "downloads/20260909_public_research/github/matt-ceran__biohub-cell-tracking/source/src/biohub/metric.py",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          261
+        ]
+      ],
+      "evidence_class": "SOURCE_CODE_VERIFIED"
+    },
+    {
+      "path": "src/biohub/split.py",
+      "url": "https://raw.githubusercontent.com/matt-ceran/biohub-cell-tracking/446589b772f4d98adecc3f6ba15434f0e0d57069/src/biohub/split.py",
+      "bytes": 1607,
+      "sha256": "7ee69af7f226c97d49666fc35ecd2125fbe31e079ca6eebba3bb9422c20a99d8",
+      "lines": 50,
+      "download_path": "downloads/20260909_public_research/github/matt-ceran__biohub-cell-tracking/source/src/biohub/split.py",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          50
+        ]
+      ],
+      "evidence_class": "SOURCE_CODE_VERIFIED"
+    }
+  ],
+  "weigertlab/trackastra": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/weigertlab/trackastra/aa57a95160002e0fc70b915ab74178b39c99fd6a/README.md",
+      "bytes": 10603,
+      "sha256": "0366a54f45973797aaffdac8b0082e388da691e43a1ad030e442a9692e7b9676",
+      "lines": 248,
+      "download_path": "downloads/20260909_public_research/github/weigertlab__trackastra/source/README.md",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          248
+        ]
+      ],
+      "evidence_class": "AUTHOR_CLAIM"
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/weigertlab/trackastra/aa57a95160002e0fc70b915ab74178b39c99fd6a/LICENSE",
+      "bytes": 1521,
+      "sha256": "cc9ea92a72a63101ff425cc525faeace28ec9fc9c658a0fc01daf236e06326c9",
+      "lines": 28,
+      "download_path": "downloads/20260909_public_research/github/weigertlab__trackastra/source/LICENSE",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          28
+        ]
+      ],
+      "evidence_class": "AUTHOR_CLAIM"
+    },
+    {
+      "path": "trackastra/model/predict.py",
+      "url": "https://raw.githubusercontent.com/weigertlab/trackastra/aa57a95160002e0fc70b915ab74178b39c99fd6a/trackastra/model/predict.py",
+      "bytes": 8149,
+      "sha256": "8e4dbdc7754a69b3c3a269560baa1d571480024c0f5874db3426e4f19841e880",
+      "lines": 230,
+      "download_path": "downloads/20260909_public_research/github/weigertlab__trackastra/source/trackastra/model/predict.py",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          230
+        ]
+      ],
+      "evidence_class": "SOURCE_CODE_VERIFIED"
+    },
+    {
+      "path": "trackastra/tracking/tracking.py",
+      "url": "https://raw.githubusercontent.com/weigertlab/trackastra/aa57a95160002e0fc70b915ab74178b39c99fd6a/trackastra/tracking/tracking.py",
+      "bytes": 5599,
+      "sha256": "3a1e63ee3a9ae50a65f179b7189616aa651bcd10664e4d2735d169b43377870b",
+      "lines": 181,
+      "download_path": "downloads/20260909_public_research/github/weigertlab__trackastra/source/trackastra/tracking/tracking.py",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          181
+        ]
+      ],
+      "evidence_class": "SOURCE_CODE_VERIFIED"
+    },
+    {
+      "path": "trackastra/tracking/ilp.py",
+      "url": "https://raw.githubusercontent.com/weigertlab/trackastra/aa57a95160002e0fc70b915ab74178b39c99fd6a/trackastra/tracking/ilp.py",
+      "bytes": 4855,
+      "sha256": "7b09eead5fbc0bba15dcd479ee083e9dd1541784c7904c19c49ab31e900cf544",
+      "lines": 184,
+      "download_path": "downloads/20260909_public_research/github/weigertlab__trackastra/source/trackastra/tracking/ilp.py",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          184
+        ]
+      ],
+      "evidence_class": "SOURCE_CODE_VERIFIED"
+    },
+    {
+      "path": "trackastra/model/pretrained.py",
+      "url": "https://raw.githubusercontent.com/weigertlab/trackastra/aa57a95160002e0fc70b915ab74178b39c99fd6a/trackastra/model/pretrained.py",
+      "bytes": 2247,
+      "sha256": "116acfd1bac9412d6a96b89058655a8766f11abe6be6b3fe22f9c529d3257d87",
+      "lines": 77,
+      "download_path": "downloads/20260909_public_research/github/weigertlab__trackastra/source/trackastra/model/pretrained.py",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          77
+        ]
+      ],
+      "evidence_class": "SOURCE_CODE_VERIFIED"
+    }
+  ],
+  "royerlab/hoct": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/royerlab/hoct/2ccc5040823bc944ab67790abd1f56eea7cd4f05/README.md",
+      "bytes": 7225,
+      "sha256": "27eb52a73286db57d93c09406c0be2315f1196b8bdfac5e98d0e1e5a7aa3f121",
+      "lines": 218,
+      "download_path": "downloads/20260909_public_research/github/royerlab__hoct/source/README.md",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          218
+        ]
+      ],
+      "evidence_class": "AUTHOR_CLAIM"
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/royerlab/hoct/2ccc5040823bc944ab67790abd1f56eea7cd4f05/LICENSE",
+      "bytes": 1100,
+      "sha256": "e6bb4dca104864ee94bdb48cb2d1bded8a6f0d5907f763d27fb1ffb25fc87845",
+      "lines": 21,
+      "download_path": "downloads/20260909_public_research/github/royerlab__hoct/source/LICENSE",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          21
+        ]
+      ],
+      "evidence_class": "AUTHOR_CLAIM"
+    },
+    {
+      "path": "examples/basic_tracking.py",
+      "url": "https://raw.githubusercontent.com/royerlab/hoct/2ccc5040823bc944ab67790abd1f56eea7cd4f05/examples/basic_tracking.py",
+      "bytes": 2077,
+      "sha256": "1c76e98dd0a68d38b703e346eadfae17cbc89f4b5266159125bde0982a5bf8c8",
+      "lines": 66,
+      "download_path": "downloads/20260909_public_research/github/royerlab__hoct/source/examples/basic_tracking.py",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          66
+        ]
+      ],
+      "evidence_class": "SOURCE_CODE_VERIFIED"
+    },
+    {
+      "path": "src/hoct/_api.py",
+      "url": "https://raw.githubusercontent.com/royerlab/hoct/2ccc5040823bc944ab67790abd1f56eea7cd4f05/src/hoct/_api.py",
+      "bytes": 10832,
+      "sha256": "62f35e372eff20f4da143105bccf62619daab31b46c340b00a60614fc681b925",
+      "lines": 332,
+      "download_path": "downloads/20260909_public_research/github/royerlab__hoct/source/src/hoct/_api.py",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          332
+        ]
+      ],
+      "evidence_class": "SOURCE_CODE_VERIFIED"
+    },
+    {
+      "path": "src/hoct/_models.py",
+      "url": "https://raw.githubusercontent.com/royerlab/hoct/2ccc5040823bc944ab67790abd1f56eea7cd4f05/src/hoct/_models.py",
+      "bytes": 3614,
+      "sha256": "9db1a59b66012112b91f406c0ed0fd6bc8f0abd85e45f2c028c92b5521b37ab1",
+      "lines": 118,
+      "download_path": "downloads/20260909_public_research/github/royerlab__hoct/source/src/hoct/_models.py",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          118
+        ]
+      ],
+      "evidence_class": "SOURCE_CODE_VERIFIED"
+    },
+    {
+      "path": "src/hoct/tracking/_solver.py",
+      "url": "https://raw.githubusercontent.com/royerlab/hoct/2ccc5040823bc944ab67790abd1f56eea7cd4f05/src/hoct/tracking/_solver.py",
+      "bytes": 7668,
+      "sha256": "3757c3525483d4927fd3bc44a17c499333b37ebf9aca07aeda081709431226fb",
+      "lines": 184,
+      "download_path": "downloads/20260909_public_research/github/royerlab__hoct/source/src/hoct/tracking/_solver.py",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          184
+        ]
+      ],
+      "evidence_class": "SOURCE_CODE_VERIFIED"
+    },
+    {
+      "path": "src/hoct/features/features.py",
+      "url": "https://raw.githubusercontent.com/royerlab/hoct/2ccc5040823bc944ab67790abd1f56eea7cd4f05/src/hoct/features/features.py",
+      "bytes": 5498,
+      "sha256": "4b5c383823d382a11a779cb79b1a3aa7c90608e1e906f2fc2f6a59f73632e106",
+      "lines": 189,
+      "download_path": "downloads/20260909_public_research/github/royerlab__hoct/source/src/hoct/features/features.py",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          189
+        ]
+      ],
+      "evidence_class": "SOURCE_CODE_VERIFIED"
+    },
+    {
+      "path": "src/hoct/features/constants.py",
+      "url": "https://raw.githubusercontent.com/royerlab/hoct/2ccc5040823bc944ab67790abd1f56eea7cd4f05/src/hoct/features/constants.py",
+      "bytes": 203,
+      "sha256": "1027e0e7d5288d1782a0698278b4782806973813ea65709efa8dd139b4d91972",
+      "lines": 10,
+      "download_path": "downloads/20260909_public_research/github/royerlab__hoct/source/src/hoct/features/constants.py",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          10
+        ]
+      ],
+      "evidence_class": "SOURCE_CODE_VERIFIED"
+    },
+    {
+      "path": "src/hoct/inference/_predict.py",
+      "url": "https://raw.githubusercontent.com/royerlab/hoct/2ccc5040823bc944ab67790abd1f56eea7cd4f05/src/hoct/inference/_predict.py",
+      "bytes": 20649,
+      "sha256": "57921cbeed3d92ffc6abbf15f1a3a44213812b4c8385ff24d4ce0b02f30c381c",
+      "lines": 578,
+      "download_path": "downloads/20260909_public_research/github/royerlab__hoct/source/src/hoct/inference/_predict.py",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          578
+        ]
+      ],
+      "evidence_class": "SOURCE_CODE_VERIFIED"
+    }
+  ],
+  "royerlab/ultrack-td": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/royerlab/ultrack-td/fc8f988856ecd129d36b2c93a46d617c75ccad99/README.md",
+      "bytes": 4910,
+      "sha256": "d25d5d83eb176e3b672e5f3c14c2d1562c845eee3bd374aa7a4e7a972cf4eac5",
+      "lines": 180,
+      "download_path": "downloads/20260909_public_research/github/royerlab__ultrack-td/source/README.md",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          180
+        ]
+      ],
+      "evidence_class": "AUTHOR_CLAIM"
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/royerlab/ultrack-td/fc8f988856ecd129d36b2c93a46d617c75ccad99/LICENSE",
+      "bytes": 1534,
+      "sha256": "4e459930bb13a7e0ebbf8acc0f0be1bb973d4f0d095a54e1bd52b7cc27101683",
+      "lines": 13,
+      "download_path": "downloads/20260909_public_research/github/royerlab__ultrack-td/source/LICENSE",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          13
+        ]
+      ],
+      "evidence_class": "AUTHOR_CLAIM"
+    },
+    {
+      "path": "examples/zebrahub.py",
+      "url": "https://raw.githubusercontent.com/royerlab/ultrack-td/fc8f988856ecd129d36b2c93a46d617c75ccad99/examples/zebrahub.py",
+      "bytes": 2821,
+      "sha256": "0f07888636cc4fb0261604d2ae12437a5e2ac192114134f42564e5c2421a4701",
+      "lines": 94,
+      "download_path": "downloads/20260909_public_research/github/royerlab__ultrack-td/source/examples/zebrahub.py",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          94
+        ]
+      ],
+      "evidence_class": "SOURCE_CODE_VERIFIED"
+    },
+    {
+      "path": "src/ultrack_td/__init__.py",
+      "url": "https://raw.githubusercontent.com/royerlab/ultrack-td/fc8f988856ecd129d36b2c93a46d617c75ccad99/src/ultrack_td/__init__.py",
+      "bytes": 8793,
+      "sha256": "44b0f588200380e704f24b42a8b40e939d93dd011702a94a252e6d5add0c9764",
+      "lines": 253,
+      "download_path": "downloads/20260909_public_research/github/royerlab__ultrack-td/source/src/ultrack_td/__init__.py",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          253
+        ]
+      ],
+      "evidence_class": "SOURCE_CODE_VERIFIED"
+    }
+  ],
+  "yu-lab-vt/FOCUS-3D": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/yu-lab-vt/FOCUS-3D/5c4b53f743a0fbbae056e2c1a139895ae819f069/README.md",
+      "bytes": 10392,
+      "sha256": "9c260e65993e613de32f663f61a1d795f81d6f287e9f0906e15c687b6f95d6a8",
+      "lines": 235,
+      "download_path": "downloads/20260909_public_research/github/yu-lab-vt__FOCUS-3D/source/README.md",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          235
+        ]
+      ],
+      "evidence_class": "AUTHOR_CLAIM"
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/yu-lab-vt/FOCUS-3D/5c4b53f743a0fbbae056e2c1a139895ae819f069/LICENSE",
+      "bytes": 1488,
+      "sha256": "7e13a7b02995a68ee0fac9351faada94c3c0ca5a8a12fabfc0abc0a3757f2f11",
+      "lines": 28,
+      "download_path": "downloads/20260909_public_research/github/yu-lab-vt__FOCUS-3D/source/LICENSE",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          28
+        ]
+      ],
+      "evidence_class": "AUTHOR_CLAIM"
+    },
+    {
+      "path": "src/focus3d/segmentation/FOCUS3D/LICENSE",
+      "url": "https://raw.githubusercontent.com/yu-lab-vt/FOCUS-3D/5c4b53f743a0fbbae056e2c1a139895ae819f069/src/focus3d/segmentation/FOCUS3D/LICENSE",
+      "bytes": 1054,
+      "sha256": "99566a874d9decd98dc3cea026c314ad255d8798d7d51e121fe1413f4d2750bb",
+      "lines": 19,
+      "download_path": "downloads/20260909_public_research/github/yu-lab-vt__FOCUS-3D/source/src/focus3d/segmentation/FOCUS3D/LICENSE",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          19
+        ]
+      ],
+      "evidence_class": "AUTHOR_CLAIM"
+    },
+    {
+      "path": "src/focus3d/segmentation/segmentation.py",
+      "url": "https://raw.githubusercontent.com/yu-lab-vt/FOCUS-3D/5c4b53f743a0fbbae056e2c1a139895ae819f069/src/focus3d/segmentation/segmentation.py",
+      "bytes": 6280,
+      "sha256": "42171a34548bcbb230799677a7411251ba995414c9e65906652ab8edd009ff1a",
+      "lines": 172,
+      "download_path": "downloads/20260909_public_research/github/yu-lab-vt__FOCUS-3D/source/src/focus3d/segmentation/segmentation.py",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          172
+        ]
+      ],
+      "evidence_class": "SOURCE_CODE_VERIFIED"
+    },
+    {
+      "path": "example/checkpoint/checkpoint.md",
+      "url": "https://raw.githubusercontent.com/yu-lab-vt/FOCUS-3D/5c4b53f743a0fbbae056e2c1a139895ae819f069/example/checkpoint/checkpoint.md",
+      "bytes": 121,
+      "sha256": "ed72364e63b35ff0c85c947904833588f8130bfef7505237a505f799e2b0da12",
+      "lines": 1,
+      "download_path": "downloads/20260909_public_research/github/yu-lab-vt__FOCUS-3D/source/example/checkpoint/checkpoint.md",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "evidence_class": "AUTHOR_CLAIM"
+    },
+    {
+      "path": "src/focus3d/segmentation/mask2former_adapter.py",
+      "url": "https://raw.githubusercontent.com/yu-lab-vt/FOCUS-3D/5c4b53f743a0fbbae056e2c1a139895ae819f069/src/focus3d/segmentation/mask2former_adapter.py",
+      "bytes": 13702,
+      "sha256": "04fac077fa02263418ae7efd87128a8660fec8fd65dcacd724b77d5745a60304",
+      "lines": 494,
+      "download_path": "downloads/20260909_public_research/github/yu-lab-vt__FOCUS-3D/source/src/focus3d/segmentation/mask2former_adapter.py",
+      "status": "FULL_SELECTED_FILE_READ",
+      "read_ranges": [
+        [
+          1,
+          494
+        ]
+      ],
+      "evidence_class": "SOURCE_CODE_VERIFIED"
+    }
+  ]
+}

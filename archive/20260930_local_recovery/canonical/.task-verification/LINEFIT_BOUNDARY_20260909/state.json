@@ -1,0 +1,28 @@
+{
+  "baseline": {
+    "contract_matches_head": false,
+    "contract_tracked": false,
+    "git_repository": true,
+    "head": "add2018e9ab1142d170625cd960298974cffaaa8",
+    "integrity_scope": "local-sha256-only"
+  },
+  "claim": {
+    "claimed_at": "2026-09-09T22:38:11+08:00",
+    "source": "agent_report",
+    "status": "CLAIMED_COMPLETE",
+    "summary_chars": 80,
+    "summary_sha256": "f93559e24e0b8bf1d90d44c18b280a43d4facdcc0ab5f6b4ef4b2f5dfbcb28fc"
+  },
+  "contract_path": "tasks/CODEX_20260909_BIOHUB_LINEFIT_BOUNDARY_CONTRACT.json",
+  "contract_sha256": "38ef065b940817d544c3d75de505f955473583a1f9dbf6a7a01019af5fb97bfd",
+  "latest_verification": {
+    "final_status": "COMPLETED_VERIFIED",
+    "finished_at": "2026-09-09T22:42:14+08:00",
+    "report_path": ".task-verification/LINEFIT_BOUNDARY_20260909/runs/20260909T224210+0800-fe670040.json",
+    "run_id": "20260909T224210+0800-fe670040"
+  },
+  "prepared_at": "2026-09-09T10:15:30+08:00",
+  "schema_version": "1.0",
+  "status": "COMPLETED_VERIFIED",
+  "task_id": "LINEFIT_BOUNDARY_20260909"
+}

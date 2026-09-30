@@ -1,0 +1,21 @@
+Collecting tracksdata@ git+https://github.com/royerlab/tracksdata.git@980c2d30a
+  Cloning https://github.com/royerlab/tracksdata.git (to revision 980c2d30a) to /private/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/pip-install-uc7prf1b/tracksdata_7e6a3f23b3d843cbb337c914d8118dc1
+  Running command git clone --filter=blob:none --quiet https://github.com/royerlab/tracksdata.git /private/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/pip-install-uc7prf1b/tracksdata_7e6a3f23b3d843cbb337c914d8118dc1
+  fatal: unable to access 'https://github.com/royerlab/tracksdata.git/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
+  error: subprocess-exited-with-error
+  
+  × git clone --filter=blob:none --quiet https://github.com/royerlab/tracksdata.git /private/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/pip-install-uc7prf1b/tracksdata_7e6a3f23b3d843cbb337c914d8118dc1 did not run successfully.
+  │ exit code: 128
+  ╰─> See above for output.
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× git clone --filter=blob:none --quiet https://github.com/royerlab/tracksdata.git /private/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/pip-install-uc7prf1b/tracksdata_7e6a3f23b3d843cbb337c914d8118dc1 did not run successfully.
+│ exit code: 128
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
+
+[notice] A new release of pip is available: 24.0 -> 26.2.1
+[notice] To update, run: python -m pip install --upgrade pip

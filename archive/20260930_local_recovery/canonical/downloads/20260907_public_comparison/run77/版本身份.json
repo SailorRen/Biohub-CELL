@@ -1,0 +1,19 @@
+{
+  "id": 133322991,
+  "ref": "rogerrogerroger3r/biohub-run77",
+  "title": "biohub-run77",
+  "author": "rogerrogerroger3r",
+  "slug": "biohub-run77",
+  "current_version_number": 2,
+  "is_private": false,
+  "language": "python",
+  "kernel_type": "notebook",
+  "enable_gpu": true,
+  "enable_internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "observed_at_asia_shanghai": "2026-09-07T09:48:39.758253+08:00",
+  "expected_version": 2,
+  "version_guard_pass": true,
+  "response_source_sha256": "22d75fa685be276c19dfa7796bffc9b15526e83fbe974b33e62fdb4f8645b266",
+  "matches_initial_pull": true
+}

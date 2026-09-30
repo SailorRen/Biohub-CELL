@@ -1,0 +1,41 @@
+# Biohub 0.947 LB, runnable with public datasets
+
+This is [Reyhan Ksatria's 0.947 notebook](https://www.kaggle.com/code/reyhanksatria/biohub-cell-tracking-0-947-lb) (version 5) with three input paths changed and nothing else.
+
+The original attaches its model files as three private datasets, so a copy of it cannot load them. The same files are public in Pilkwang Kim's datasets:
+
+- [biohub-tracking-support-pack-50ep-v1](https://www.kaggle.com/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1)
+- [biohub-temporal-unet3d-seed314159-v1](https://www.kaggle.com/datasets/pilkwang/biohub-temporal-unet3d-seed314159-v1)
+- [biohub-deepcenter-unet3d-center-prior-v1](https://www.kaggle.com/datasets/pilkwang/biohub-deepcenter-unet3d-center-prior-v1)
+
+The notebook checks its model files against pinned SHA256 values before it predicts anything, and the public copies pass: primary `12f6881e…`, DeepCenter `8040999a…`, secondary `9bac2fa0…`.
+
+**Scored:** submission 56207450, public LB **0.947**, T4 x2.
+
+## The whole diff
+
+| setting | original | here |
+| --- | --- | --- |
+| `BIOHUB_MODEL_ARTIFACTS` | `reyhanksatria/biohub-tracking-support-pack` | `pilkwang/biohub-tracking-support-pack-50ep-v1` |
+| `BIOHUB_DEEPCENTER_CHECKPOINT` (3 places) | `reyhanksatria/biohub-deepcenterunet3d-center-prior-v1` | `pilkwang/biohub-deepcenter-unet3d-center-prior-v1` |
+| `BIOHUB_SECONDARY_ARTIFACT_MANIFEST` | `reyhanksatria/biohub-temporalunet3d-seed-314159-v1` | `pilkwang/biohub-temporal-unet3d-seed314159-v1` |
+
+All paths sit under `/kaggle/input/datasets/`.
+
+## One variant I also scored
+
+| change on top of this notebook | submission | public LB |
+| --- | --- | --- |
+| none | 56207450 | 0.947 |
+| `ILP_DISAPPEARANCE_WEIGHT` 2 → 1.5 and `MOTION_RELINK_RELAXED_UM` 10 → 8.5 | 56207453 | 0.947 |
+
+No visible change at three decimals.
+
+## Credit
+
+- Model weights, the ILP and the graph repair chain: [Pilkwang Kim](https://www.kaggle.com/code/pilkwang/biohub-cell-tracking-learned-graph-w-gap-recovery).
+- The 0.938 and 0.940 notebooks this line grew from: [nusrati](https://www.kaggle.com/code/nusrati/0-938).
+- Bidirectional harmonic fusion: [Дворкин Евгений](https://www.kaggle.com/code/evgendvorkin/biohub-0-927-lb).
+- Everything from 0.941 to 0.947, and every line of code below: [Reyhan Ksatria](https://www.kaggle.com/code/reyhanksatria/biohub-cell-tracking-0-947-lb).
+
+Everything below this cell is Reyhan's original notebook, unchanged apart from the three paths.

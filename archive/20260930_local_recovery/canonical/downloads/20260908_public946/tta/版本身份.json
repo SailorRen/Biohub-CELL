@@ -1,0 +1,28 @@
+{
+  "id": 133372183,
+  "ref": "redoctopusk/biohub-942tta",
+  "title": "biohub-942tta",
+  "author": "James Y",
+  "slug": "biohub-942tta",
+  "current_version_number": 1,
+  "last_run_time": "2026-09-05 01:21:47.996000",
+  "is_private": false,
+  "language": "python",
+  "kernel_type": "notebook",
+  "enable_gpu": true,
+  "enable_internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_data_sources": [
+    "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+    "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+    "pilkwang/biohub-tracking-support-pack-50ep-v1"
+  ],
+  "competition_data_sources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "model_data_sources": [],
+  "kernel_data_sources": [],
+  "observed_at_asia_shanghai": "2026-09-08T09:21:46.619355+08:00",
+  "source_sha256": "521cb97f0f457643379a51b60c4f71e3f4cc7d1823fd98cbb97633ffaa515ec4",
+  "source_bytes": 213474
+}

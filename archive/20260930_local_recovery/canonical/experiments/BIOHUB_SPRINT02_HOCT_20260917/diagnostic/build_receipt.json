@@ -1,0 +1,14 @@
+{
+  "source_sha256": "62464d4fd8b372e39cec76de6f798588b6b017b76fb8a371e0210bd8c4a86ae9",
+  "cells": 8,
+  "G1_setup_cells": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "G1_detector_and_postprocessor_not_executed": true,
+  "scorer_cell_sha256": "0a76e335bcb101ab664b57280e1784f20f179db74910999e225310909ab65677",
+  "sphere_function_sha256": "8108b0e66f35e906cf17912359cfdf5ffb4d1a26987e013521e93db368971de3",
+  "training_calls": 0
+}

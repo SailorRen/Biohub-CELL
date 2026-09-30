@@ -1,0 +1,28 @@
+{
+  "baseline": {
+    "contract_matches_head": false,
+    "contract_tracked": false,
+    "git_repository": true,
+    "head": "a1c5859a933e2f71269fc225bc9bbc55851cc860",
+    "integrity_scope": "local-sha256-only"
+  },
+  "claim": {
+    "claimed_at": "2026-09-16T23:31:24+08:00",
+    "source": "agent_report",
+    "status": "CLAIMED_COMPLETE",
+    "summary_chars": 78,
+    "summary_sha256": "6e460989f6f19c84fe2d8acb949a3bc5f54a93a0e99113921f5d0440dbfbb81a"
+  },
+  "contract_path": "experiments/BIOHUB_SPRINT01_20260916/contract.json",
+  "contract_sha256": "62773a7da48cd203553a58a9c58bea84d9c6a82eb6076dba9c1723ec6ddc283f",
+  "latest_verification": {
+    "final_status": "COMPLETED_VERIFIED",
+    "finished_at": "2026-09-16T23:31:34+08:00",
+    "report_path": ".task-verification/BIOHUB_SPRINT01_20260916/runs/20260916T233131+0800-f3382043.json",
+    "run_id": "20260916T233131+0800-f3382043"
+  },
+  "prepared_at": "2026-09-16T10:03:56+08:00",
+  "schema_version": "1.0",
+  "status": "COMPLETED_VERIFIED",
+  "task_id": "BIOHUB_SPRINT01_20260916"
+}

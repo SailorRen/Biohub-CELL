@@ -1,0 +1,3 @@
+# Biohub V19C - Public 0939 Sister14 Only
+
+Real hidden-test inference fork of Rishabh Roy's public `biohub-div45-stack` (public LB 0.938). The notebook runs the detector, linker, ILP, and division post-processing against Kaggle's mounted test data; it does not consume a previous submission CSV.

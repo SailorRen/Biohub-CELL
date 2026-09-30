@@ -1,0 +1,28 @@
+{
+  "baseline": {
+    "contract_matches_head": false,
+    "contract_tracked": false,
+    "git_repository": true,
+    "head": "31a19c3ae3a1bd94659f7c3394d073c48807af26",
+    "integrity_scope": "local-sha256-only"
+  },
+  "claim": {
+    "claimed_at": "2026-09-15T09:40:56+08:00",
+    "source": "agent_report",
+    "status": "CLAIMED_COMPLETE",
+    "summary_chars": 103,
+    "summary_sha256": "8e28a8672dacb1e58a79470c3c9434bb55255f847dd08ea95b14b5116beda2c8"
+  },
+  "contract_path": "tasks/CODEX_20260915_BIOHUB_SCORE_RECOVERY_CONTRACT.json",
+  "contract_sha256": "5f3e4e0287a61d312b785e6b8d1e15feef1558f6d324b9b43be31c96cf61a73f",
+  "latest_verification": {
+    "final_status": "COMPLETED_VERIFIED",
+    "finished_at": "2026-09-15T09:42:45+08:00",
+    "report_path": ".task-verification/SCORE_RECOVERY_20260915/runs/20260915T094243+0800-f2e66578.json",
+    "run_id": "20260915T094243+0800-f2e66578"
+  },
+  "prepared_at": "2026-09-15T09:30:11+08:00",
+  "schema_version": "1.0",
+  "status": "COMPLETED_VERIFIED",
+  "task_id": "SCORE_RECOVERY_20260915"
+}

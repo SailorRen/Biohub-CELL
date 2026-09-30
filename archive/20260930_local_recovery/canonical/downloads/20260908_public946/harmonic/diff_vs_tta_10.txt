@@ -1,0 +1,27 @@
+--- harmonic_10
++++ tta_10
+@@ -1,5 +1,5 @@
+-
+-
+-
++# Post-process parameter sweep on the cached validator graphs. Each candidate
++# changes one or two post-process constants relative to the base configuration.
++# Detection, linking and the ILP are NOT touched (they were already run).
+ PP_CANDIDATES: dict[str, dict] = {
+     "gap45": {"GAP_CLOSE_UM": 4.5},
+@@ -29,6 +29,6 @@
+         validator_sample_rows.extend(rows)
+ 
+-    
+-    
++    # Greedy stack: every single-knob candidate that improves PROXY_SCORE and
++    # does not lose adjusted_edge_jaccard is combined (later keys override).
+     positive = [
+         label for label, summary in PP_RESULTS.items()
+@@ -110,5 +110,5 @@
+     print("Keeping the base submission.csv (public 0.939 configuration).")
+ 
+-
++# Final structural audit of whatever submission.csv is on disk now.
+ _final = pd.read_csv(SUBMISSION_PATH)
+ assert _final.columns.tolist() == CSV_COLUMNS, _final.columns.tolist()

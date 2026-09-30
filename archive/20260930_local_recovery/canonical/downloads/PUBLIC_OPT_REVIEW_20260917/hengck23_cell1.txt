@@ -1,0 +1,161 @@
+try:
+    import zarr, geff, tracksdata
+
+except: 
+    import os
+    import sys
+    import subprocess
+    import importlib
+    import importlib.util
+    from pathlib import Path
+    
+    # Polars wheel in the support package uses the 32-bit runtime package.
+    os.environ.setdefault("POLARS_PREFER_PKG", "32")
+    
+    SUPPORT_DIR = Path(
+        "/kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1"
+    )
+    WHEELS_DIR = SUPPORT_DIR / "wheels"
+    
+    if not WHEELS_DIR.exists():
+        # Fallback for Kaggle's shorter mounted dataset path.
+        candidates = list(Path("/kaggle/input").glob("**/wheels"))
+        if not candidates:
+            raise FileNotFoundError("Could not find the attached offline wheels directory")
+        WHEELS_DIR = candidates[0]
+    
+    print("Offline wheels:", WHEELS_DIR)
+    
+    
+    # These are packages supplied by the attached dataset.
+    # Deliberately exclude:
+    #   numpy, scipy, torch, pandas, dask, xarray, numba, llvmlite
+    #
+    # Kaggle already supplies compatible versions of those packages.
+    OFFLINE_PACKAGES = [
+        "tracksdata",
+        "zarr==3.2.1",
+        "numcodecs==0.15.1",
+        "donfig==0.8.1.post1",
+        "geff==1.2.0.1.1",
+        "geff-spec==1.1.1",
+        "pyscipopt==6.2.1",
+        "ilpy==0.6.0",
+        "rustworkx==0.18.0",
+        "polars==1.42.0",
+        "polars-runtime-32==1.42.0",
+        "bidict==0.23.1",
+        "imagecodecs==2026.6.26",
+    ]
+    
+    
+    def module_missing(module_name: str) -> bool:
+        return importlib.util.find_spec(module_name) is None
+    
+    
+    # Import name differs from pip package name in several cases.
+    REQUIRED_IMPORTS = {
+        "tracksdata": "tracksdata",
+        "zarr": "zarr",
+        "numcodecs": "numcodecs",
+        "geff": "geff",
+        "pyscipopt": "pyscipopt",
+        "ilpy": "ilpy",
+        "rustworkx": "rustworkx",
+        "polars": "polars",
+        "imagecodecs": "imagecodecs",
+    }
+    
+    
+    def purge_modules(module_roots):
+        """
+        Remove already-imported package modules from sys.modules.
+    
+        Normally this cell runs before imports, but this also protects against
+        accidental imports performed by earlier Kaggle initialization code.
+        """
+        for root in module_roots:
+            for name in list(sys.modules):
+                if name == root or name.startswith(root + "."):
+                    sys.modules.pop(name, None)
+    
+    
+    def install_offline_packages():
+        cmd = [
+            sys.executable,
+            "-m",
+            "pip",
+            "install",
+            "--quiet",
+            "--no-index",
+            "--no-deps",
+            "--find-links",
+            str(WHEELS_DIR),
+            *OFFLINE_PACKAGES,
+        ]
+    
+        print("Installing attached packages without modifying NumPy/SciPy/Torch...")
+        result = subprocess.run(
+            cmd,
+            text=True,
+            capture_output=True,
+        )
+    
+        if result.returncode != 0:
+            print(result.stdout[-4000:])
+            print(result.stderr[-4000:])
+            raise RuntimeError("Offline dependency installation failed")
+    
+        purge_modules(REQUIRED_IMPORTS.values())
+    
+    
+    install_offline_packages()
+    
+    
+    # Verify the complete import chain needed by biohub_tracking.io.
+    failures = {}
+    
+    for name, module_name in {
+        **REQUIRED_IMPORTS,
+        "numpy": "numpy",
+        "scipy": "scipy",
+        "dask": "dask.array",
+        "xarray": "xarray",
+    }.items():
+        try:
+            importlib.import_module(module_name)
+        except Exception as exc:
+            failures[name] = f"{type(exc).__name__}: {exc}"
+    
+    if failures:
+        raise ImportError(
+            "Dependency verification failed:\n"
+            + "\n".join(f"{name}: {error}" for name, error in failures.items())
+        )
+
+import zarr, geff, tracksdata
+print("All offline dependencies imported successfully.")
+
+#-----------------------------------------------------------------------------------------
+import sys
+sys.path.append("/kaggle/input/datasets/hengck23/hengck23-cell-point-detector-demo")
+sys.path.append("/kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1/repo/src")
+#import biohub_tracking as tracking_cellmot
+
+
+import tracksdata as td
+import os
+import time
+import polars as pl
+import numpy as np
+import pandas as pd
+import zarr
+from geff import GeffMetadata
+from biohub_tracking.io import open_dataset, save_graph
+from biohub_tracking.metrics import evaluate, node_recall
+
+import torch
+from model_v12 import *
+
+
+print("import ok!!!")

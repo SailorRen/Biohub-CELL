@@ -1,0 +1,26 @@
+[
+  {
+    "name": "always_tls",
+    "calls": 3,
+    "returned": null,
+    "error_type": "SSLError",
+    "status": "PASS",
+    "network_calls": 0
+  },
+  {
+    "name": "success_on_third",
+    "calls": 3,
+    "returned": "ok",
+    "error_type": null,
+    "status": "PASS",
+    "network_calls": 0
+  },
+  {
+    "name": "non_tls",
+    "calls": 1,
+    "returned": null,
+    "error_type": "ValueError",
+    "status": "PASS",
+    "network_calls": 0
+  }
+]

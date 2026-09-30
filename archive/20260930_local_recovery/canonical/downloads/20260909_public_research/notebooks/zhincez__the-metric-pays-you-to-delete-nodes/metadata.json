@@ -1,0 +1,68 @@
+{
+  "ref": "zhincez/the-metric-pays-you-to-delete-nodes",
+  "kernel_id": 133516745,
+  "version": 4,
+  "observed_at_utc": "2026-09-09T01:46:52.873948+00:00",
+  "sha256": "bc611d789aba74a30b7085ae9d4a614afad2d8af5abdc3ff2f2fe394394efcf7",
+  "bytes": 7406,
+  "cells": [
+    {
+      "index": 0,
+      "type": "markdown",
+      "lines": 9,
+      "sha256": "6570ffbfb2d1fe33ed3afc2d3423564e53230364214610352bd615d3f2294e98"
+    },
+    {
+      "index": 1,
+      "type": "markdown",
+      "lines": 13,
+      "sha256": "0662c1b90023da0ba716f14c1c7181566369fa45f5631ebe992dd757a8a05169"
+    },
+    {
+      "index": 2,
+      "type": "markdown",
+      "lines": 16,
+      "sha256": "94918431d4622c84a68088f51e570858c350264e6f85ae7f2c53130fc10a244f"
+    },
+    {
+      "index": 3,
+      "type": "markdown",
+      "lines": 14,
+      "sha256": "4c439fdd216ce7987827c9bd2f4512aaa42865ef71d87fa4ced3a458463bdfc3"
+    },
+    {
+      "index": 4,
+      "type": "markdown",
+      "lines": 13,
+      "sha256": "69fef68469e8c3f722399bddb772e13edb5035c442e1ab8a2268b66987b73b1d"
+    },
+    {
+      "index": 5,
+      "type": "markdown",
+      "lines": 9,
+      "sha256": "5fed322373a50daad8a24e3e1d768bda47c795822426d704542cdc17b5b5b1a4"
+    },
+    {
+      "index": 6,
+      "type": "markdown",
+      "lines": 5,
+      "sha256": "1f18ba0d1b23ad5a53ba36c7a047e47523ce818e4b8166c63f76ef8b2823ff21"
+    },
+    {
+      "index": 7,
+      "type": "code",
+      "lines": 36,
+      "sha256": "4b11cb7b5176e3750cc1bbb7812a6e8ea07a91eceab25be38eb838b7dfeb6014"
+    },
+    {
+      "index": 8,
+      "type": "markdown",
+      "lines": 9,
+      "sha256": "d5e55c4df5a35afa6c7609a7450475b678a6690cb72fa3610bf65ed90e65a8b5"
+    }
+  ],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-images/python@sha256:dafd4ce5668bbf1ad422e4c109e0f18c9623c3a7c7f48b0235f13142755c40b9"
+}

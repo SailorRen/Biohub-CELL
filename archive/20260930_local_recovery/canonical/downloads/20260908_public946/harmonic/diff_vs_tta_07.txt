@@ -1,0 +1,45 @@
+--- harmonic_7
++++ tta_7
+@@ -1,9 +1,9 @@
+-
+-
+-
+-
+-
+-
+-
++# ============================================================
++# CELL 8 (NEW) -- VALIDATOR: held-out sample selection + prediction run
++# ============================================================
++# Ported from the team's own local-validator harness onto this notebook's
++# own path variables and its own (genuinely parallel, Popen-based) shard
++# runner -- nothing in Cells 1-7 is touched, so this notebook still
++# reproduces 0.915 if VALIDATOR_ENABLE is turned off.
+ 
+ TRAIN_DIR = COMP_DIR / "train"
+@@ -19,5 +19,5 @@
+ if VALIDATOR_ENABLE and TRAIN_DIR.exists():
+     train_stems_all = sorted(p.name[:-5] for p in TRAIN_DIR.iterdir() if p.name.endswith(".zarr"))
+-    test_stem_set = set(test_stems)  
++    test_stem_set = set(test_stems)  # from Cell 6 -- guards against train/test leakage
+     overlap = [s for s in train_stems_all if s in test_stem_set]
+     if overlap:
+@@ -25,11 +25,11 @@
+     candidates = [s for s in train_stems_all if s not in test_stem_set]
+ 
+-    
+-    
+-    
+-    
+-    
+-    
+-    
++    # REVIEW: division-aware sample selection. GT divisions are annotated in
++    # only ~44% of videos, so plain alphabetical selection risks picking a
++    # validator set that structurally can't show division_jaccard movement.
++    # This checks each candidate's own GT graph for a division (out-degree>=2)
++    # -- a computed, per-video property, not a hardcoded list of stem names --
++    # so it generalizes to any future TRAIN_DIR contents rather than
++    # overfitting to today's specific videos.
+     def _stem_has_gt_division(stem: str) -> bool:
+         gt_path = TRAIN_DIR / f"{stem}.geff"

@@ -1,0 +1,32 @@
+--- v21a/cell2
++++ tta/cell0
+@@ -12,5 +12,5 @@
+ import os
+ BIOHUB_PRESET = 'harmonic_v3_division_wide'
+-BIOHUB_SCORE_AXIS = 'v19c reported LB 0.939 sister separation radius 14um arm'
++BIOHUB_SCORE_AXIS = 'public 0.939 base + holdout-selected post-process configuration'
+ 
+ os.environ["BIOHUB_OUTPUT_FILTER_SHORT_TRACKS"] = "1"
+@@ -20,5 +20,5 @@
+ os.environ["BIOHUB_ILP_DISAPPEARANCE_WEIGHT"] = "2"
+ os.environ["BIOHUB_GAP_CLOSE_MAX_GAP"] = "2"
+-os.environ["BIOHUB_GAP_CLOSE_UM"] = "5.8"
++os.environ["BIOHUB_GAP_CLOSE_UM"] = "5.0"
+ os.environ["BIOHUB_GAP_DENSITY_ADAPTIVE"] = "1"
+ os.environ["BIOHUB_GAP_DENSITY_REFERENCE_UM"] = "6.5"
+@@ -59,5 +59,4 @@
+ os.environ["BIOHUB_DEEPCENTER_GAP_THRESHOLD"] = "0.25"
+ os.environ["BIOHUB_DEEPCENTER_SAFE_DIV_VETO"] = "1"
+-os.environ["BIOHUB_DEEPCENTER_SAFE_DIV_THRESHOLD"] = "0.26"
+ os.environ["BIOHUB_RUN_OUTPUT_DIAGNOSTICS"] = "0"
+ os.environ["BIOHUB_BIDIRECTIONAL_EDGE_WEIGHT"] = "0.15"
+@@ -65,5 +64,9 @@
+ os.environ["BIOHUB_DUAL_SEED_MIN_CANDIDATE_RETENTION"] = "0.90"
+ os.environ["BIOHUB_DIAGNOSTIC_ARM"] = "harmonic_association_production"
++os.environ["BIOHUB_VALIDATOR_N_PER_TYPE"] = "4"
++os.environ["BIOHUB_PPSWEEP_SELECT_MARGIN"] = "0.001"
++os.environ["BIOHUB_PPSWEEP_MAX_ADJ_LOSS"] = "0.0005"
+ 
++os.environ["BIOHUB_DEEPCENTER_SAFE_DIV_THRESHOLD"] = "0.25"
+ print("BIOHUB_PRESET:", BIOHUB_PRESET)
+ print("BIOHUB_SCORE_AXIS:", BIOHUB_SCORE_AXIS)

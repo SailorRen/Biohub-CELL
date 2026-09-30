@@ -1,0 +1,23 @@
+{
+  "operations": [
+    {
+      "action": "save",
+      "at_utc": "2026-09-09T02:26:34.994942+00:00",
+      "ref": "sailorren/biohub-946-linefit-boundary-20260909",
+      "manifest_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+      "submitted_source_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "status": "WRITE_OUTCOME_UNKNOWN_READ_ONLY_RECONCILE_REQUIRED",
+      "version": null,
+      "script_version_id": null,
+      "transport": {
+        "max_retries": 0,
+        "allow_redirects": false,
+        "max_write_sends": 1,
+        "send_calls": 0
+      },
+      "error_type": "TimeoutError",
+      "http_status": null,
+      "completed_at_utc": "2026-09-09T02:26:34.995220+00:00"
+    }
+  ]
+}

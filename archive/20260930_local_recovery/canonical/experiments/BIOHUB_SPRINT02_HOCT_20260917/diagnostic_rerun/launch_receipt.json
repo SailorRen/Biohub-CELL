@@ -1,0 +1,32 @@
+{
+  "original_sha256": "1f4cbb3c98089bfb5f3fa0901922e87edb6cb88636e12af1dec6f645a919c729",
+  "launch_sha256": "4edc1bf0b81d678444a0720015b298807fe1abcb5faff40c41c8369cd3a5aa21",
+  "guard_sha256": "206d286218ccde5f17c74f35d77ac25ac733a9fe1ac5f268849de270add785fc",
+  "changed_cells": [
+    7
+  ],
+  "cell_mapping": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5,
+    "6": 6,
+    "7": 7
+  },
+  "all_original_source_preserved": true,
+  "outputs_empty": true,
+  "guard_position": "after offline pip install and package_before equality; before first subprocess worker",
+  "worker_environment": "same sys.executable; Popen inherits environment; no dependency changes after guard",
+  "cells": [
+    "4f3cb456752a42016ab2d1c4aed8c53524b6ef9e6785f4146018323811efd597",
+    "545339ff52ac4315bffaf1131fcf769bb1a260ca523e988f19af9432979fc4bd",
+    "99198956a4c7725d85c6aab0d478368749824801716c6d39cf5bf915187ac500",
+    "77fdadffbd02c87e8f686e55944b6741312be552f34c8dc615e6391a1959a2dc",
+    "0f62c46bbec00a2d3d6bbde0efb89d5713204983d51c9c3cf73df1869cf12f8f",
+    "dec4bdb9bf4a0f408385e039a3e8c64214841eeeccc5a616a51b8353108a2e62",
+    "0a76e335bcb101ab664b57280e1784f20f179db74910999e225310909ab65677",
+    "522b6d9c2af3f6444a844e2a348b79d2296266fbb7b92778e9c46905a92a7c2b"
+  ]
+}

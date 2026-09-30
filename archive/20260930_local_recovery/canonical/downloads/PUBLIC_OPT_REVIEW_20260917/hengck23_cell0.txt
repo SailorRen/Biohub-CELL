@@ -1,0 +1,5 @@
+for discussion, refer to:  
+https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/740145  
+https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/738217   
+
+This model is trained without Kaggle annotations. It just uses focus-3D instance segmentation centroids + augmentation to simulate cell movement. It only uses frame from t=0,5,10 ..., i.e. 20% of kaggle data.

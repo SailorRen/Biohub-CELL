@@ -1,0 +1,28 @@
+{
+  "baseline": {
+    "contract_matches_head": false,
+    "contract_tracked": false,
+    "git_repository": true,
+    "head": "e9c7c63b896812660a78ec55fc3284c10f85e776",
+    "integrity_scope": "local-sha256-only"
+  },
+  "claim": {
+    "claimed_at": "2026-09-17T10:17:38+08:00",
+    "source": "agent_report",
+    "status": "CLAIMED_COMPLETE",
+    "summary_chars": 41,
+    "summary_sha256": "aee79f1f8d797dc4feaf73d30b0ea4e13c17e15613e1cba67a38966aed9a7513"
+  },
+  "contract_path": "experiments/PUBLIC_OPT_REVIEW_20260917/contract.json",
+  "contract_sha256": "7973d243b55e663c29d9272eb00be7c22c62fca47b04c9cce668831fd9bf2b0f",
+  "latest_verification": {
+    "final_status": "COMPLETED_VERIFIED",
+    "finished_at": "2026-09-17T10:17:57+08:00",
+    "report_path": ".task-verification/PUBLIC_OPT_REVIEW_20260917/runs/20260917T101755+0800-0344d0a3.json",
+    "run_id": "20260917T101755+0800-0344d0a3"
+  },
+  "prepared_at": "2026-09-17T10:00:06+08:00",
+  "schema_version": "1.0",
+  "status": "COMPLETED_VERIFIED",
+  "task_id": "PUBLIC_OPT_REVIEW_20260917"
+}

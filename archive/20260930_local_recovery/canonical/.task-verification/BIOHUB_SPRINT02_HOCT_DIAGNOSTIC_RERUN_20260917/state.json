@@ -1,0 +1,17 @@
+{
+  "baseline": {
+    "contract_matches_head": false,
+    "contract_tracked": false,
+    "git_repository": true,
+    "head": "d186ede27518018c1890248068a54272334eb6ff",
+    "integrity_scope": "local-sha256-only"
+  },
+  "claim": null,
+  "contract_path": "experiments/BIOHUB_SPRINT02_HOCT_20260917/diagnostic_rerun/run_contract.json",
+  "contract_sha256": "b0f1a99bc0d990e803c1b7f76008a51911448924137fe2847106dafb31684f80",
+  "latest_verification": null,
+  "prepared_at": "2026-09-17T16:36:50+08:00",
+  "schema_version": "1.0",
+  "status": "PLANNED",
+  "task_id": "BIOHUB_SPRINT02_HOCT_DIAGNOSTIC_RERUN_20260917"
+}

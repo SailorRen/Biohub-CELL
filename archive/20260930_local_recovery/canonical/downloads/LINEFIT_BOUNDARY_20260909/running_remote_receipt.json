@@ -1,0 +1,263 @@
+{
+  "task_id": "LINEFIT_BOUNDARY_20260909",
+  "observed_at_utc": "2026-09-09T02:43:08.240358+00:00",
+  "method": "Authoritative GitHub codeload fixed-commit archive + live ls-remote main",
+  "commit": "8726631b21b238c3cf4befc847d8be86f20cef23",
+  "live_remote_main": "8726631b21b238c3cf4befc847d8be86f20cef23",
+  "worktree_clean": true,
+  "archive_sha256": "55683a6a85ffddc6dfcd96e57ef04aa0a9cc8cff532faa71348beede60a0358f",
+  "archive_url": "https://codeload.github.com/SailorRen/Biohub-CELL/zip/8726631b21b238c3cf4befc847d8be86f20cef23",
+  "matched": 31,
+  "total": 31,
+  "files": [
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/algorithm.diff",
+      "bytes": 2227,
+      "local_sha256": "a911be1d6918cb487b13dc95b2337bee69f0da8b34ac5e383c2559f288804675",
+      "remote_sha256": "a911be1d6918cb487b13dc95b2337bee69f0da8b34ac5e383c2559f288804675",
+      "fixed_commit_sha256": "a911be1d6918cb487b13dc95b2337bee69f0da8b34ac5e383c2559f288804675",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/browser_observations.json",
+      "bytes": 651,
+      "local_sha256": "113f8615036eb111a262d4d94017d39c3a6cea9d4024bdf791a92e9d78f4bbfa",
+      "remote_sha256": "113f8615036eb111a262d4d94017d39c3a6cea9d4024bdf791a92e9d78f4bbfa",
+      "fixed_commit_sha256": "113f8615036eb111a262d4d94017d39c3a6cea9d4024bdf791a92e9d78f4bbfa",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/build_candidate.py",
+      "bytes": 4235,
+      "local_sha256": "db815cd3a29cad9923a9cede6ae9fe8cbb5bef8d394fed0cbc1e030a4c53c82b",
+      "remote_sha256": "db815cd3a29cad9923a9cede6ae9fe8cbb5bef8d394fed0cbc1e030a4c53c82b",
+      "fixed_commit_sha256": "db815cd3a29cad9923a9cede6ae9fe8cbb5bef8d394fed0cbc1e030a4c53c82b",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/build_receipt.json",
+      "bytes": 4802,
+      "local_sha256": "a9d669318205fc970128f37490ba8ef38d028a399c38a866b33ef76e0cd30263",
+      "remote_sha256": "a9d669318205fc970128f37490ba8ef38d028a399c38a866b33ef76e0cd30263",
+      "fixed_commit_sha256": "a9d669318205fc970128f37490ba8ef38d028a399c38a866b33ef76e0cd30263",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/candidate.ipynb",
+      "bytes": 257509,
+      "local_sha256": "2476eae2ff6f95d79a18c8a1294e14e10e5309c61ec86872cbc4962687b852a5",
+      "remote_sha256": "2476eae2ff6f95d79a18c8a1294e14e10e5309c61ec86872cbc4962687b852a5",
+      "fixed_commit_sha256": "2476eae2ff6f95d79a18c8a1294e14e10e5309c61ec86872cbc4962687b852a5",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/collect_output.py",
+      "bytes": 4787,
+      "local_sha256": "47a52b5fc878ba55cdf82fba155bb0faf0c8dfaf3bd4bee0010f9eef86a78729",
+      "remote_sha256": "47a52b5fc878ba55cdf82fba155bb0faf0c8dfaf3bd4bee0010f9eef86a78729",
+      "fixed_commit_sha256": "47a52b5fc878ba55cdf82fba155bb0faf0c8dfaf3bd4bee0010f9eef86a78729",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/error_20260909T022609Z.json",
+      "bytes": 192,
+      "local_sha256": "af39561a05e8ad4c6ca40bae1cd450d3945149f2634afbd62ff231d1af8b62a6",
+      "remote_sha256": "af39561a05e8ad4c6ca40bae1cd450d3945149f2634afbd62ff231d1af8b62a6",
+      "fixed_commit_sha256": "af39561a05e8ad4c6ca40bae1cd450d3945149f2634afbd62ff231d1af8b62a6",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/independent_preflight.json",
+      "bytes": 11360,
+      "local_sha256": "0120869e357e39cac022163d6347951af4a09fdb9bc691ac31668b66e53ad75a",
+      "remote_sha256": "0120869e357e39cac022163d6347951af4a09fdb9bc691ac31668b66e53ad75a",
+      "fixed_commit_sha256": "0120869e357e39cac022163d6347951af4a09fdb9bc691ac31668b66e53ad75a",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/kaggle_io.py",
+      "bytes": 14789,
+      "local_sha256": "ebbee458e1dcb9e71892ea4d7aed3042432ac7492e4939b7b22ec457305bc289",
+      "remote_sha256": "ebbee458e1dcb9e71892ea4d7aed3042432ac7492e4939b7b22ec457305bc289",
+      "fixed_commit_sha256": "ebbee458e1dcb9e71892ea4d7aed3042432ac7492e4939b7b22ec457305bc289",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/kernel-metadata.json",
+      "bytes": 822,
+      "local_sha256": "5f457b08159866f7f12ba951a34847b3cdce2987a685360d5fef05d85de0d611",
+      "remote_sha256": "5f457b08159866f7f12ba951a34847b3cdce2987a685360d5fef05d85de0d611",
+      "fixed_commit_sha256": "5f457b08159866f7f12ba951a34847b3cdce2987a685360d5fef05d85de0d611",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/linefit_patch.py",
+      "bytes": 5582,
+      "local_sha256": "97ea8b0d1bda9a694b91b82cb55d4c2f2ddcd0e1d8df171b2e3dc6e3d2fe0451",
+      "remote_sha256": "97ea8b0d1bda9a694b91b82cb55d4c2f2ddcd0e1d8df171b2e3dc6e3d2fe0451",
+      "fixed_commit_sha256": "97ea8b0d1bda9a694b91b82cb55d4c2f2ddcd0e1d8df171b2e3dc6e3d2fe0451",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/manifest.json",
+      "bytes": 4424,
+      "local_sha256": "eb45073c9ab58005c603353d59782b4d6c879b03027c15e27bd91573279cbdda",
+      "remote_sha256": "eb45073c9ab58005c603353d59782b4d6c879b03027c15e27bd91573279cbdda",
+      "fixed_commit_sha256": "eb45073c9ab58005c603353d59782b4d6c879b03027c15e27bd91573279cbdda",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/observe_once.py",
+      "bytes": 1795,
+      "local_sha256": "a71ee04fb549c5dad9977a3bf416926018e299d1a7d91a72a4bccb446c8adf3a",
+      "remote_sha256": "a71ee04fb549c5dad9977a3bf416926018e299d1a7d91a72a4bccb446c8adf3a",
+      "fixed_commit_sha256": "a71ee04fb549c5dad9977a3bf416926018e299d1a7d91a72a4bccb446c8adf3a",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/ordinary_observations.jsonl",
+      "bytes": 224,
+      "local_sha256": "e78f206438318916ac89863ba931b8ab454a2f2a6ebaa3a00b5b8f6ed935eb1d",
+      "remote_sha256": "e78f206438318916ac89863ba931b8ab454a2f2a6ebaa3a00b5b8f6ed935eb1d",
+      "fixed_commit_sha256": "e78f206438318916ac89863ba931b8ab454a2f2a6ebaa3a00b5b8f6ed935eb1d",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/pre_save.json",
+      "bytes": 6698,
+      "local_sha256": "20bfd9ca8bd19b1c1d8a33de3f0dc0e37290bb67f33c8a96448d32d0c326a861",
+      "remote_sha256": "20bfd9ca8bd19b1c1d8a33de3f0dc0e37290bb67f33c8a96448d32d0c326a861",
+      "fixed_commit_sha256": "20bfd9ca8bd19b1c1d8a33de3f0dc0e37290bb67f33c8a96448d32d0c326a861",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/preflight_verification.json",
+      "bytes": 1423,
+      "local_sha256": "721450b037f12d1e8d4609e66eeb9144544828646ed640d78b1e38451fd17bf3",
+      "remote_sha256": "721450b037f12d1e8d4609e66eeb9144544828646ed640d78b1e38451fd17bf3",
+      "fixed_commit_sha256": "721450b037f12d1e8d4609e66eeb9144544828646ed640d78b1e38451fd17bf3",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/read_20260909T022140Z.json",
+      "bytes": 6698,
+      "local_sha256": "5a2959cdf2fdd095c085021d2081be2edeece4c3f66824ecdb96882baa001e21",
+      "remote_sha256": "5a2959cdf2fdd095c085021d2081be2edeece4c3f66824ecdb96882baa001e21",
+      "fixed_commit_sha256": "5a2959cdf2fdd095c085021d2081be2edeece4c3f66824ecdb96882baa001e21",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/read_20260909T022823Z.json",
+      "bytes": 6698,
+      "local_sha256": "23996213e7730d878c1c34ae7a9f01830190d5163866addd6551980e4a1b0a71",
+      "remote_sha256": "23996213e7730d878c1c34ae7a9f01830190d5163866addd6551980e4a1b0a71",
+      "fixed_commit_sha256": "23996213e7730d878c1c34ae7a9f01830190d5163866addd6551980e4a1b0a71",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/read_20260909T023332Z.json",
+      "bytes": 8264,
+      "local_sha256": "337ddd684b150c143e63c5a8d6c3d82732be8d71d610f038916acd6360d58998",
+      "remote_sha256": "337ddd684b150c143e63c5a8d6c3d82732be8d71d610f038916acd6360d58998",
+      "fixed_commit_sha256": "337ddd684b150c143e63c5a8d6c3d82732be8d71d610f038916acd6360d58998",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/render_report.py",
+      "bytes": 6971,
+      "local_sha256": "ae31344e4566b951336e039e69563f38954417e8fde38384e9cd60310c2241de",
+      "remote_sha256": "ae31344e4566b951336e039e69563f38954417e8fde38384e9cd60310c2241de",
+      "fixed_commit_sha256": "ae31344e4566b951336e039e69563f38954417e8fde38384e9cd60310c2241de",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/results.json",
+      "bytes": 1817,
+      "local_sha256": "8a3c29e86d1e30e4aa71a686aef7484e0b1482ed5fce26092124ad7554df7840",
+      "remote_sha256": "8a3c29e86d1e30e4aa71a686aef7484e0b1482ed5fce26092124ad7554df7840",
+      "fixed_commit_sha256": "8a3c29e86d1e30e4aa71a686aef7484e0b1482ed5fce26092124ad7554df7840",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/save_reconciliation.json",
+      "bytes": 2488,
+      "local_sha256": "3273bebae386573578cb430d1ecce463ac19578e764f578be96afdc97fbf1234",
+      "remote_sha256": "3273bebae386573578cb430d1ecce463ac19578e764f578be96afdc97fbf1234",
+      "fixed_commit_sha256": "3273bebae386573578cb430d1ecce463ac19578e764f578be96afdc97fbf1234",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/scorer_diagnostic.json",
+      "bytes": 34989,
+      "local_sha256": "cb66992d3b268068ad011d32db16dd6c6c5ceea061a4b4334258a6ad269e8c77",
+      "remote_sha256": "cb66992d3b268068ad011d32db16dd6c6c5ceea061a4b4334258a6ad269e8c77",
+      "fixed_commit_sha256": "cb66992d3b268068ad011d32db16dd6c6c5ceea061a4b4334258a6ad269e8c77",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/scorer_diagnostic.md",
+      "bytes": 4090,
+      "local_sha256": "1a0480414941d29249ed2065680a417d7c215d0bfaaffbd26f0d65a179ef5cb2",
+      "remote_sha256": "1a0480414941d29249ed2065680a417d7c215d0bfaaffbd26f0d65a179ef5cb2",
+      "fixed_commit_sha256": "1a0480414941d29249ed2065680a417d7c215d0bfaaffbd26f0d65a179ef5cb2",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/scorer_diagnostic.py",
+      "bytes": 23316,
+      "local_sha256": "e2a46eab2f106be3dbd58473b065b38d0ddc1e6eff25f90cbe05d71eaf3041d5",
+      "remote_sha256": "e2a46eab2f106be3dbd58473b065b38d0ddc1e6eff25f90cbe05d71eaf3041d5",
+      "fixed_commit_sha256": "e2a46eab2f106be3dbd58473b065b38d0ddc1e6eff25f90cbe05d71eaf3041d5",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/test_linefit.py",
+      "bytes": 12483,
+      "local_sha256": "d90c7c5ac27500e6be40285ea08bdfb0dc22bd233fb91721d0726c5b3b4f8660",
+      "remote_sha256": "d90c7c5ac27500e6be40285ea08bdfb0dc22bd233fb91721d0726c5b3b4f8660",
+      "fixed_commit_sha256": "d90c7c5ac27500e6be40285ea08bdfb0dc22bd233fb91721d0726c5b3b4f8660",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/tests.json",
+      "bytes": 7356,
+      "local_sha256": "2ab191b018398a708566e046aba490d83e6bf0d12dfb9a1bb492b450cbed0e2a",
+      "remote_sha256": "2ab191b018398a708566e046aba490d83e6bf0d12dfb9a1bb492b450cbed0e2a",
+      "fixed_commit_sha256": "2ab191b018398a708566e046aba490d83e6bf0d12dfb9a1bb492b450cbed0e2a",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/verify.py",
+      "bytes": 5465,
+      "local_sha256": "541afbe214d07a3fd08a45d05be647cdbd09e4f8cca9bd46189ee45eae795c66",
+      "remote_sha256": "541afbe214d07a3fd08a45d05be647cdbd09e4f8cca9bd46189ee45eae795c66",
+      "fixed_commit_sha256": "541afbe214d07a3fd08a45d05be647cdbd09e4f8cca9bd46189ee45eae795c66",
+      "match": true
+    },
+    {
+      "path": "experiments/LINEFIT_BOUNDARY_20260909/write_ledger.json",
+      "bytes": 1374,
+      "local_sha256": "81cbca92eff42bfc698c8d4a57e284345e150c9d04b525a72255cb7c0578682f",
+      "remote_sha256": "81cbca92eff42bfc698c8d4a57e284345e150c9d04b525a72255cb7c0578682f",
+      "fixed_commit_sha256": "81cbca92eff42bfc698c8d4a57e284345e150c9d04b525a72255cb7c0578682f",
+      "match": true
+    },
+    {
+      "path": "reports/20260909_LINEFIT_BOUNDARY_实测报告.md",
+      "bytes": 5089,
+      "local_sha256": "72b04ddc2aafcb59e5adde08274dcbb64e3b667caf1953961f0cce80a7de30f4",
+      "remote_sha256": "72b04ddc2aafcb59e5adde08274dcbb64e3b667caf1953961f0cce80a7de30f4",
+      "fixed_commit_sha256": "72b04ddc2aafcb59e5adde08274dcbb64e3b667caf1953961f0cce80a7de30f4",
+      "match": true
+    },
+    {
+      "path": "tasks/CODEX_20260909_BIOHUB_LINEFIT_BOUNDARY_CONTRACT.json",
+      "bytes": 3299,
+      "local_sha256": "38ef065b940817d544c3d75de505f955473583a1f9dbf6a7a01019af5fb97bfd",
+      "remote_sha256": "38ef065b940817d544c3d75de505f955473583a1f9dbf6a7a01019af5fb97bfd",
+      "fixed_commit_sha256": "38ef065b940817d544c3d75de505f955473583a1f9dbf6a7a01019af5fb97bfd",
+      "match": true
+    }
+  ],
+  "status": "REMOTE_BYTES_VERIFIED"
+}

@@ -1,0 +1,36 @@
+{
+  "observed_at_utc": "2026-09-17T02:15:53.590563+00:00",
+  "status": "LOCAL_SCOPE_PASS",
+  "checks": [
+    {
+      "argv": [
+        "python3",
+        "experiments/PUBLIC_OPT_REVIEW_20260917/verify.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"notebooks\": 3, \"discussions\": 4, \"github_repositories\": 3, \"github_files\": 7, \"scope\": \"artifact integrity and scope only; external methods not rerun\"}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "/Users/sailor/.agents/skills/summarize-project-context/scripts/validate_context_summary.py",
+        "reports/20260917_交给Chat的Biohub分析材料.md"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: reports/20260917_交给Chat的Biohub分析材料.md，130 行\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "scope": "new research scope and G1 correction; not external quality validation"
+}

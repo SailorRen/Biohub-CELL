@@ -1,0 +1,300 @@
+{
+  "checks": [
+    {
+      "details": {
+        "bytes": 4609,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "tasks/CODEX_20260904_BIOHUB_V19C_COPY_AUDIT_SYNC_TASK.md",
+        "required_text_checks": 4,
+        "sha256": "17cf516c00d94c63641959cfa4e8089ceab59a3ad864b36b634f19e3fc5c2ec0"
+      },
+      "id": "task-source-preserved",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "bytes": 18220,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "scripts/verify_v19c_copy_audit.py",
+        "required_text_checks": 3,
+        "sha256": "f42489004bad2906ac66e0ce9999450d7b4d36fe4b984b140f18b6bdd46af1cf"
+      },
+      "id": "verifier-frozen",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/status"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/target/notebook_ref"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/target/version_number"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/source_audit/all_copy_cells_checked"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/runtime_log/read_status"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/score_binding/public_score"
+          },
+          {
+            "op": "not_empty",
+            "passed": true,
+            "pointer": "/score_binding/submission_id"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/redistribution/full_notebook_source_committed"
+          }
+        ],
+        "path": "research/20260904_BIOHUB_V19C_COPY_AUDIT_V01/audit_summary.json",
+        "sha256": "84bc4e0650e28f886c3a90cd8b978334b139feeeb9fef887de4a215ebd6cf6cc"
+      },
+      "id": "audit-summary",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/kaggle_submission_create_count"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/kaggle_notebook_write_count"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/training_task_count"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/kaggle_dataset_create_count"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/competition_join_or_rule_accept_count"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/large_dataset_download_count"
+          }
+        ],
+        "path": "governance/CODEX_20260904_BIOHUB_V19C_COPY_AUDIT_LEDGER.json",
+        "sha256": "3e275b7769f001bce5f3f8837ac2ee5525d22ecb8acc68f6b86a7304779574ea"
+      },
+      "id": "external-action-zero-writes",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "bytes": 12575,
+        "forbidden_text_checks": 4,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "reports/20260904_BIOHUB_V19C_COPY_AUDIT_REPORT_V01.md",
+        "required_text_checks": 9,
+        "sha256": "1d9c1d1ceeb84a21c9ea46190428994145b02c91349566312dc09686f121d55e"
+      },
+      "id": "audit-report",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/status"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/summary/failed"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/summary/passed"
+          }
+        ],
+        "path": "reports/20260904_BIOHUB_V19C_COPY_AUDIT_VERIFY.json",
+        "sha256": "5557891a055b9cc69e747697609a1097ec4fbc46639699f0c4a9cce46238cd29"
+      },
+      "id": "audit-verification-report",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "argument_count": 5,
+        "argv_sha256": "3a1d5632a05d9df3d98aa8c57a4aab250d921bb71061d35cfbfc01b8dc4f32f6",
+        "cwd": ".",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 45,
+          "sha256": "aa875c77f37c4b884c2b6d13546fc11054e82e2a5fe6c1b2f48a3392cfccae9c"
+        },
+        "stdout_text_checks": 2
+      },
+      "id": "deterministic-v19c-audit-check",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "argument_count": 5,
+        "argv_sha256": "3087e97b2d9576de829b28f144bb77d9f72054053fc95cc203313d5fba39d75f",
+        "cwd": ".",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 36,
+          "sha256": "307ff8ea7859c3ebc127879c423ebc0b1b4884f5084a26971b1c81ab71eddca0"
+        },
+        "stdout_text_checks": 2
+      },
+      "id": "initial-recon-regression-check",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "argument_count": 6,
+        "argv_sha256": "5765c6caa26815a30514bb75ab7d76fb2202b9eeab304e36b77bf7aa3a45007c",
+        "cwd": ".",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 71,
+          "sha256": "b52a4b011feb763c76ea7b76772995d73077147c439c149e38a2ea27e814e45a"
+        },
+        "stdout_text_checks": 3
+      },
+      "id": "authoritative-github-readback",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "branch": "main",
+        "dirty_entry_count": 0,
+        "head": "9a1535347a9c35105de51209db91c920cabe7ec9",
+        "remote": "origin",
+        "remote_exists": true,
+        "remote_head": "9a1535347a9c35105de51209db91c920cabe7ec9",
+        "remote_url_sha256": "294339ae4bf28ec437260f32bd064c06212de22a7026887c59e47f72ef414b8e",
+        "repository": "."
+      },
+      "id": "git-clean-and-remote-head",
+      "outcome": "PASS",
+      "reason": "Git evidence passed",
+      "required": true,
+      "type": "git"
+    }
+  ],
+  "claimed_at": "2026-09-04T01:27:20+08:00",
+  "claimed_status": "CLAIMED_COMPLETE",
+  "contract_path": "tasks/CODEX_20260904_BIOHUB_V19C_COPY_AUDIT_SYNC_CONTRACT.json",
+  "contract_sha256": "3ac963a7bdc1ca2a6f62b8c0b0ac30abf6de06f80f789694a2f9ac9bf5a6eeb4",
+  "final_status": "COMPLETED_VERIFIED",
+  "finished_at": "2026-09-04T01:27:50+08:00",
+  "integrity_scope": "git-tracked-and-sha256",
+  "limitations": [
+    "The conclusion is limited to the frozen contract and the implemented checks.",
+    "The verifier does not prove omitted requirements or future stability.",
+    "A local or Git hash is not a trusted signature against a malicious writer."
+  ],
+  "optional_warning_check_ids": [],
+  "reason": "all required automated checks passed",
+  "required_summary": {
+    "failed_or_blocked": 0,
+    "human_review": 0,
+    "passed": 10
+  },
+  "run_id": "20260904T012733+0800-de43f92e",
+  "schema_version": "1.0",
+  "started_at": "2026-09-04T01:27:33+08:00",
+  "task_id": "CODEX_20260904_BIOHUB_V19C_COPY_AUDIT_SYNC_V01"
+}

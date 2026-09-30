@@ -1,0 +1,16 @@
+--- lb942_cell_9
++++ harmonic_cell_9
+@@ -1,9 +1,9 @@
+ import copy as _copy
+ 
+-# Post-process constants that the sweep is allowed to override. Every one of
+-# them is read from module globals at call time inside filter_output_graph and
+-# its helpers, so overriding globals() is equivalent to changing the BIOHUB_*
+-# environment variable before the definitions cell ran.
++
++
++
++
+ PP_SWEEP_KEYS = [
+     "SAFE_DIV_MAX_UM", "SAFE_DIV_SISTER_MAX_UM", "SAFE_DIV_DIVERGE_UM",
+     "SAFE_DIV_SISTER_SYMMETRY_TAU", "SAFE_DIV_EXISTING_CHILD_MAX_UM",

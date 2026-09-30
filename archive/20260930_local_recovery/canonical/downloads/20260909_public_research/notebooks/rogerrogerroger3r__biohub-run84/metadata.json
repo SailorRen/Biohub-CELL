@@ -1,0 +1,79 @@
+{
+  "ref": "rogerrogerroger3r/biohub-run84",
+  "kernel_id": 133532578,
+  "version": 1,
+  "observed_at_utc": "2026-09-09T01:46:54.325346+00:00",
+  "sha256": "42bd6ec98fda58f8617eecded7e7e8c0671f567b7eee597a343386550438380d",
+  "bytes": 200725,
+  "cells": [
+    {
+      "index": 0,
+      "type": "code",
+      "lines": 61,
+      "sha256": "70b80d2a29b46ddb5a8fd25ebe324f0154371893be8e5f85f477d61ce5787c5f"
+    },
+    {
+      "index": 1,
+      "type": "code",
+      "lines": 44,
+      "sha256": "efac330af683a50b12bd541599c782b9538c159a55d6eacd36d5bebe7255cc94"
+    },
+    {
+      "index": 2,
+      "type": "code",
+      "lines": 238,
+      "sha256": "6c5a6e880b6879cd6b26cc9e2394ce5492a797a863fead740e0aa25c5d22d643"
+    },
+    {
+      "index": 3,
+      "type": "code",
+      "lines": 682,
+      "sha256": "681232942fbb971dc1b999816b32c6d91da819e55d123b359b601169dd5982fb"
+    },
+    {
+      "index": 4,
+      "type": "code",
+      "lines": 439,
+      "sha256": "7acc1e33063ae2c944e8f63b188227603005158e8af6a036450fce22ed54ade5"
+    },
+    {
+      "index": 5,
+      "type": "code",
+      "lines": 1659,
+      "sha256": "49bed1d06ba5b4111c789704607a4d699976f1fe2a9f2ff45f8e3bdba8a15e5f"
+    },
+    {
+      "index": 6,
+      "type": "code",
+      "lines": 178,
+      "sha256": "239f51c30606f090e1fbc939a541891cef2dbea45d7b1c4a6fef53352e94759d"
+    },
+    {
+      "index": 7,
+      "type": "code",
+      "lines": 166,
+      "sha256": "082c333402a4f10b81db5f3cf07c02beb70c8b575f5f948f81b4f58d20e9e21d"
+    },
+    {
+      "index": 8,
+      "type": "code",
+      "lines": 414,
+      "sha256": "54ff3e88b8e8222433179df53be137cf35dde1d286c9ae48d835e1957065b7da"
+    },
+    {
+      "index": 9,
+      "type": "code",
+      "lines": 35,
+      "sha256": "325878ba81cc45ed645e42ba60c681a9a8cfe0c2bb53b8cca6c134569f52f954"
+    }
+  ],
+  "dataset_sources": [
+    "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+    "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+    "pilkwang/biohub-tracking-support-pack-50ep-v1",
+    "pilkwang/pilkwang-public-dataset-for-notebooks-figures"
+  ],
+  "kernel_sources": [],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461"
+}

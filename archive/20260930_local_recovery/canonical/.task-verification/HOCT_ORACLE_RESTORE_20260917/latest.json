@@ -1,0 +1,88 @@
+{
+  "checks": [
+    {
+      "details": {
+        "argument_count": 3,
+        "argv_sha256": "7e11154efefd6bc3617aa07faa8bce43ef21fca8b1b4c5d54437912565ec1870",
+        "cwd": ".",
+        "executable": "python",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 354,
+          "sha256": "7f03a739af503f28a081dd230e6c5e41d0167d5793a271a02d3bacc5d72ecc13"
+        },
+        "stdout_text_checks": 0
+      },
+      "id": "oracle-recompute",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "bytes": 2737,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "experiments/BIOHUB_SPRINT02_HOCT_20260917/oracle_restore/报告.md",
+        "required_text_checks": 3,
+        "sha256": "f0e237a770ed8830d1ce8117ad51a98bd75d7da1e9ec4d742a74b703c2f803ce"
+      },
+      "id": "report",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "branch": "codex/sprint02-hoct-20260917",
+        "dirty_entry_count": 0,
+        "head": "dedd9b46251ddc17583177fefb46f825e6cb2dcf",
+        "remote": "origin",
+        "remote_exists": true,
+        "remote_head": "dedd9b46251ddc17583177fefb46f825e6cb2dcf",
+        "remote_url_sha256": "294339ae4bf28ec437260f32bd064c06212de22a7026887c59e47f72ef414b8e",
+        "repository": "."
+      },
+      "id": "git",
+      "outcome": "PASS",
+      "reason": "Git evidence passed",
+      "required": true,
+      "type": "git"
+    }
+  ],
+  "claimed_at": "2026-09-17T20:04:44+08:00",
+  "claimed_status": "CLAIMED_COMPLETE",
+  "contract_path": "experiments/BIOHUB_SPRINT02_HOCT_20260917/oracle_restore/contract.json",
+  "contract_sha256": "a4d7e6fcc42ce38ee790fe0ec1f4879d547e4efe2f295c218ba09657b168a6a9",
+  "final_status": "COMPLETED_VERIFIED",
+  "finished_at": "2026-09-17T20:04:52+08:00",
+  "integrity_scope": "local-sha256-only",
+  "limitations": [
+    "The conclusion is limited to the frozen contract and the implemented checks.",
+    "The verifier does not prove omitted requirements or future stability.",
+    "A local or Git hash is not a trusted signature against a malicious writer."
+  ],
+  "optional_warning_check_ids": [],
+  "reason": "all required automated checks passed",
+  "required_summary": {
+    "failed_or_blocked": 0,
+    "human_review": 0,
+    "passed": 3
+  },
+  "run_id": "20260917T200444+0800-1a7c9bfe",
+  "schema_version": "1.0",
+  "started_at": "2026-09-17T20:04:44+08:00",
+  "task_id": "HOCT_ORACLE_RESTORE_20260917"
+}

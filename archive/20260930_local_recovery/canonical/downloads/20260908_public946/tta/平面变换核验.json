@@ -1,0 +1,19 @@
+{
+  "method": "CPU synthetic 3x5 index array; same planar index transforms as source; no model or competition data used",
+  "passes": 8,
+  "unique_views": 7,
+  "duplicate_groups": [
+    [
+      "flip_x",
+      "rot90_then_transpose"
+    ]
+  ],
+  "missing_true_antidiagonal": true,
+  "source_cell": 4,
+  "source_lines": [
+    45,
+    214
+  ],
+  "new_patch_line": 31,
+  "observed_status": "MEASURED"
+}

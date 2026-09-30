@@ -1,0 +1,40 @@
+--- v19c cell 2
++++ lb942 cell 0
+@@ -11,7 +11,7 @@
+ # the leaderboard; each block is grouped and commented by what it controls.
+ import os
+ BIOHUB_PRESET = 'harmonic_v3_division_wide'
+-BIOHUB_SCORE_AXIS = 'v19c reported LB 0.939 sister separation radius 14um arm'
++BIOHUB_SCORE_AXIS = 'public 0.939 base + holdout-selected post-process configuration'
+ 
+ os.environ["BIOHUB_OUTPUT_FILTER_SHORT_TRACKS"] = "1"
+ os.environ["BIOHUB_DET_THRESHOLD"] = "0.965"
+@@ -19,7 +19,7 @@
+ os.environ["BIOHUB_ILP_APPEARANCE_WEIGHT"] = "0.0"
+ os.environ["BIOHUB_ILP_DISAPPEARANCE_WEIGHT"] = "2"
+ os.environ["BIOHUB_GAP_CLOSE_MAX_GAP"] = "2"
+-os.environ["BIOHUB_GAP_CLOSE_UM"] = "5.8"
++os.environ["BIOHUB_GAP_CLOSE_UM"] = "5.0"
+ os.environ["BIOHUB_GAP_DENSITY_ADAPTIVE"] = "1"
+ os.environ["BIOHUB_GAP_DENSITY_REFERENCE_UM"] = "6.5"
+ os.environ["BIOHUB_GAP_DENSITY_GAIN"] = "0.040"
+@@ -28,7 +28,7 @@
+ os.environ["BIOHUB_OUTPUT_MIN_TRACK_LEN"] = "6"
+ os.environ["BIOHUB_OUTPUT_KEEP_DIVISION_COMPONENTS"] = "1"
+ os.environ["BIOHUB_OUTPUT_GAP2_RECOVERY"] = "1"
+-os.environ["BIOHUB_SAFE_DIV_MAX_UM"] = "7.0"  # Max parent-to-daughter separation for an accepted division.
++os.environ["BIOHUB_SAFE_DIV_MAX_UM"] = "9.0"  # Max parent-to-daughter separation for an accepted division.
+ #   Ground-truth parent-daughter links reach 10.4um; a 7um cap rejected ~25% of real links.
+ #   Loosening 7->9 recovers wide-but-genuine divisions (this is the "sdm9" arm; alone it scored LB 0.939).
+ os.environ["BIOHUB_SAFE_DIV_SISTER_MAX_UM"] = "14.0"  # Max daughter-to-daughter separation for an accepted division.
+@@ -63,6 +63,10 @@
+ os.environ["BIOHUB_BIDIRECTIONAL_FUSION_MODE"] = "harmonic_probability"
+ os.environ["BIOHUB_DUAL_SEED_MIN_CANDIDATE_RETENTION"] = "0.90"
+ os.environ["BIOHUB_DIAGNOSTIC_ARM"] = "harmonic_association_production"
++os.environ["BIOHUB_VALIDATOR_N_PER_TYPE"] = "4"
++os.environ["BIOHUB_PPSWEEP_SELECT_MARGIN"] = "0.001"
++os.environ["BIOHUB_PPSWEEP_MAX_ADJ_LOSS"] = "0.0005"
+ 
++os.environ["BIOHUB_DEEPCENTER_SAFE_DIV_THRESHOLD"] = "0.25"
+ print("BIOHUB_PRESET:", BIOHUB_PRESET)
+ print("BIOHUB_SCORE_AXIS:", BIOHUB_SCORE_AXIS)

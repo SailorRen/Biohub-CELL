@@ -1,0 +1,431 @@
+{
+  "checks": [
+    {
+      "details": {
+        "bytes": 7227,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "tasks/CODEX_20260904_BIOHUB_V20A_SAFE_DIV_RADIUS_TASK.md",
+        "required_text_checks": 4,
+        "sha256": "7aa0b42a51bdeedf710c4e68a64d999b9da20fac55eaa5e25d9f5bf135f1896a"
+      },
+      "id": "task-record",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/status"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/effective_embryo_group_count"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/selected_sample_count"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/fold_count"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/candidate_runs_allowed"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/kaggle_submission_allowed"
+          }
+        ],
+        "path": "experiments/V20A/frozen_split.json",
+        "sha256": "9185ef6812363d82bfc20a694f9de27cee00a5901071e0684c053bc7de004de8"
+      },
+      "id": "frozen-split-hard-gate",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "bytes": 312,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "experiments/V20A/frozen_split_sha256.txt",
+        "required_text_checks": 3,
+        "sha256": "f78408dcc5d98ea8070aee4615d583f10de0e78e000d48d8d4cf9d06f9b4319e"
+      },
+      "id": "frozen-split-hashes",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/commit"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/cli_summary_output_precision/format"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/cli_summary_output_precision/maximum_comparison_tolerance"
+          }
+        ],
+        "path": "experiments/V20A/scorer_identity.json",
+        "sha256": "d2d2f3e0668d5510f71cb1304ea915e8182dcf373943306c909722d0fa5dca0d"
+      },
+      "id": "scorer-pinned",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/status"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/arms/R70/status"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/arms/R80/status"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/arms/R90/status"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/submission_id"
+          }
+        ],
+        "path": "experiments/V20A/no_run_manifest.json",
+        "sha256": "deab625ee10c7d6536981d2932632d6f21a59caca3f5de8d2457997568a3c619"
+      },
+      "id": "no-run-manifest",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/counts/save_kernel"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/counts/notebook_run"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/counts/competition_submit"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/counts/retry"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/counts/submission_status_poll"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/counts/unauthorized_kaggle_write"
+          }
+        ],
+        "path": "experiments/V20A/platform_write_ledger.json",
+        "sha256": "836219274ecde5bdeec38e21c657769d9e4f436cb6ddfc736687cbbefa7370f6"
+      },
+      "id": "platform-write-ledger",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/decision"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/selected_radius_um"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/kaggle_submission_created"
+          }
+        ],
+        "path": "experiments/V20A/promotion_decision.json",
+        "sha256": "3ca4fb98ba825454a564bc8598af87be31f1aad491d1e839b8877429dc9ed1e4"
+      },
+      "id": "promotion-decision",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "bytes": 21990,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "reports/20260904_BIOHUB_V20A_SAFE_DIV_RADIUS_OPTIMIZATION_REPORT_V01.md",
+        "required_text_checks": 10,
+        "sha256": "a70e787312a497bf9f76c25f45fe7db31b1bdb0a2f98d2d84f70e8b22dad130e"
+      },
+      "id": "final-markdown-report",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "bytes": 496931,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "reports/20260904_BIOHUB_V20A_SAFE_DIV_RADIUS_OPTIMIZATION_REPORT_V01.html",
+        "required_text_checks": 3,
+        "sha256": "27c9df7bf7c8178dbae0082d5ae9d5440ccfc4040b4eef4780829eef81d42d85"
+      },
+      "id": "final-portable-html-report",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/status"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/domain_status"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/summary/failed"
+          }
+        ],
+        "path": "reports/20260904_BIOHUB_V20A_SAFE_DIV_RADIUS_OPTIMIZATION_VERIFY.json",
+        "sha256": "e705ebe83c51a5f6233e2b5e4d7d179498cc1ff0ead6c21599efd2f0220e3ad3"
+      },
+      "id": "custom-verification-receipt",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "argument_count": 3,
+        "argv_sha256": "9d13749d80a6e18775640ce3ca6c32844ee181122c3a3c3e661dde1bec16ccf2",
+        "cwd": ".",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 36,
+          "sha256": "f4c0fcf85cb98f533bba04d8c9588e9f696710af4f9b4b7ef9bf710ef144ddf3"
+        },
+        "stdout_text_checks": 1
+      },
+      "id": "resolved-config-checker-self-test",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "argument_count": 5,
+        "argv_sha256": "bcb94f0f443389eb1e330a97bb97b8f37f8640379645157e8e6facc61906d1c0",
+        "cwd": ".",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 12765,
+          "sha256": "a3f9921defb20fcd69397ec9430723097cfcc8bd420bfd44eb62249ceee027d9"
+        },
+        "stdout_text_checks": 2
+      },
+      "id": "deterministic-domain-verifier",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "argument_count": 5,
+        "argv_sha256": "0a50c62856e9a8e5058ebd5d638e84e915b661d61f15d42d3ef9b7878eb717f2",
+        "cwd": ".",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 82,
+          "sha256": "0b27352cfde217cc619b2cc49ecf4bf4cc852d6dea6deee5cb6a0907adc29b4d"
+        },
+        "stdout_text_checks": 2
+      },
+      "id": "prior-v19c-audit-regression",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "argument_count": 6,
+        "argv_sha256": "c72381a73cc31e3650f7778a5c70ff69debba42faa9d53f6a0f17d23f448870f",
+        "cwd": ".",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 3,
+        "raw_output_stored": false,
+        "returncode": 1,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 12972,
+          "sha256": "c7315ca77bb200f209e2adeca615381ee5cd4d39019a7ec03ae12a8e685c5f66"
+        },
+        "stdout_text_checks": 3
+      },
+      "id": "authoritative-github-readback",
+      "outcome": "FAIL",
+      "reason": "exit code did not match; required stdout text was missing",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "branch": "main",
+        "dirty_entry_count": 0,
+        "head": "48e54c543afaac8ef01b628c8833b89b4fa5d7bc",
+        "remote": "origin",
+        "remote_exists": true,
+        "remote_query_stderr": {
+          "bytes": 108,
+          "sha256": "e4a00531cfdc9ac4d7eb3978b373cc389a4676da782965740318788a18658cc3"
+        },
+        "remote_url_sha256": "294339ae4bf28ec437260f32bd064c06212de22a7026887c59e47f72ef414b8e",
+        "repository": "."
+      },
+      "id": "git-clean-and-remote-head",
+      "outcome": "BLOCKED",
+      "reason": "current remote head could not be queried",
+      "required": true,
+      "type": "git"
+    }
+  ],
+  "claimed_at": "2026-09-04T12:56:28+08:00",
+  "claimed_status": "CLAIMED_COMPLETE",
+  "contract_path": "experiments/V20A/contract.json",
+  "contract_sha256": "85f78b97015fa2d16cf4ab8fa6c8526fe8cc302da81d215a886940316daa3c68",
+  "final_status": "BLOCKED",
+  "finished_at": "2026-09-04T12:56:34+08:00",
+  "integrity_scope": "git-tracked-and-sha256",
+  "limitations": [
+    "The conclusion is limited to the frozen contract and the implemented checks.",
+    "The verifier does not prove omitted requirements or future stability.",
+    "A local or Git hash is not a trusted signature against a malicious writer."
+  ],
+  "optional_warning_check_ids": [],
+  "reason": "one or more required checks failed or were blocked",
+  "required_summary": {
+    "failed_or_blocked": 2,
+    "human_review": 0,
+    "passed": 13
+  },
+  "run_id": "20260904T125634+0800-0c252f82",
+  "schema_version": "1.0",
+  "started_at": "2026-09-04T12:56:34+08:00",
+  "task_id": "CODEX_20260904_BIOHUB_V20A_SAFE_DIV_RADIUS"
+}

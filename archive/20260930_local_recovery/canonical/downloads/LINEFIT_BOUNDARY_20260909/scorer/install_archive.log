@@ -1,0 +1,57 @@
+Processing ./downloads/LINEFIT_BOUNDARY_20260909/scorer/tracksdata_980c2d30a.tar.gz
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × Preparing metadata (pyproject.toml) did not run successfully.
+  │ exit code: 1
+  ╰─> [32 lines of output]
+      Traceback (most recent call last):
+        File "/Users/sailor/kaggle/项目/Biohub - CELL/downloads/LINEFIT_BOUNDARY_20260909/scorer/venv/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 353, in <module>
+          main()
+        File "/Users/sailor/kaggle/项目/Biohub - CELL/downloads/LINEFIT_BOUNDARY_20260909/scorer/venv/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 335, in main
+          json_out['return_val'] = hook(**hook_input['kwargs'])
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/Users/sailor/kaggle/项目/Biohub - CELL/downloads/LINEFIT_BOUNDARY_20260909/scorer/venv/lib/python3.11/site-packages/pip/_vendor/pyproject_hooks/_in_process/_in_process.py", line 152, in prepare_metadata_for_build_wheel
+          whl_basename = backend.build_wheel(metadata_directory, config_settings)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/private/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/pip-build-env-hognd6q8/overlay/lib/python3.11/site-packages/hatchling/build.py", line 58, in build_wheel
+          return os.path.basename(next(builder.build(directory=wheel_directory, versions=["standard"])))
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/private/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/pip-build-env-hognd6q8/overlay/lib/python3.11/site-packages/hatchling/builders/plugin/interface.py", line 92, in build
+          self.metadata.validate_fields()
+        File "/private/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/pip-build-env-hognd6q8/overlay/lib/python3.11/site-packages/hatchling/metadata/core.py", line 266, in validate_fields
+          _ = self.version
+              ^^^^^^^^^^^^
+        File "/private/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/pip-build-env-hognd6q8/overlay/lib/python3.11/site-packages/hatchling/metadata/core.py", line 150, in version
+          self._version = self._get_version()
+                          ^^^^^^^^^^^^^^^^^^^
+        File "/private/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/pip-build-env-hognd6q8/overlay/lib/python3.11/site-packages/hatchling/metadata/core.py", line 249, in _get_version
+          version = self.hatch.version.cached
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "/private/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/pip-build-env-hognd6q8/overlay/lib/python3.11/site-packages/hatchling/metadata/core.py", line 1534, in cached
+          raise type(e)(message) from None
+      LookupError: Error getting the version from source `vcs`: setuptools-scm was unable to detect version for /private/var/folders/hy/typvq39j5nz7ktmlwpll5zdh0000gn/T/pip-req-build-x8c6kv3q.
+      
+      Make sure you're either building from a fully intact git repository or PyPI tarballs. Most other sources (such as GitHub's tarballs, a git checkout without the .git folder) don't contain the necessary metadata and will not work.
+      
+      For example, if you're using pip, instead of https://github.com/user/proj/archive/master.zip use git+https://github.com/user/proj.git#egg=proj
+      
+      Alternatively, set the version with the environment variable SETUPTOOLS_SCM_PRETEND_VERSION_FOR_${NORMALIZED_DIST_NAME} as described in https://setuptools-scm.readthedocs.io/en/latest/config/
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: metadata-generation-failed
+
+× Encountered error while generating package metadata.
+╰─> See above for output.
+
+note: This is an issue with the package mentioned above, not pip.
+hint: See above for details.
+
+[notice] A new release of pip is available: 24.0 -> 26.2.1
+[notice] To update, run: python -m pip install --upgrade pip

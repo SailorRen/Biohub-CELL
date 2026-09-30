@@ -1,0 +1,318 @@
+{
+  "passed": true,
+  "commit": "6467d91b850a909807a211eef56ffeb289e7ccab",
+  "files": [
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/topics_active.json",
+      "sha256": "364022a59e23bf1b22d7a9e68470fa187b740c3dec8f23315cc8e9be9fe27a28"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github_search_0.json",
+      "sha256": "b55eecbb2672fdf144f5c3d7685f9463d9a5fb64744fb56227ca83fe7ce27f45"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/collect.py",
+      "sha256": "9be3ebe1826b6712ded0acef57e881a3341e056d26bb33669f3fe44dbae39c6b"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/topics_new.json",
+      "sha256": "833df372fc566d8781e8a597d324f89ca75754805de15df32a1e63e550097edb"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/catalog_dateCreated.json",
+      "sha256": "ae05e0698b7ed7fd2244d69755b97267881d905b4c5f4531991eec3961c55f5b"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github_file_manifest.json",
+      "sha256": "9df3236fffeb16d6ec134ac011ba23b12fd12a73a77eaf0e79140efff8a32d6f"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github_search_1.json",
+      "sha256": "3d5375651cd884691a00d079d4e46254280068ebabd4ce64b8109bb9b2380e7d"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/observation.json",
+      "sha256": "3c3bc7012b2ae8ee4aa101271329336aad0c4b767efcc0078de0f21e8aa55e7f"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/public_submission_access.json",
+      "sha256": "cbd28ac725e141c11cdde327e948087774c626afad4f472f7f05dd3d13dc3c3b"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/leaderboard.json",
+      "sha256": "2749c67c44b8eac430ae201652291823aa457645eaa8b4c4372e2f05c0379401"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/public_notebook_ui.json",
+      "sha256": "0871811d7a0f87544a94649e13147d01b2eb14137fa772d2a485d4064a9c201d"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/details.py",
+      "sha256": "c12ac49feeeaad54d17bc69cb981a1c07e10611e4d73ab71a39e12472a9e925c"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/\u9a8c\u6536\u5408\u540c.json",
+      "sha256": "ba1571abb807114639cd0701c95e13ab62efb3f6b5ca5ffd0a4cd9d045760dfc"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/coverage.json",
+      "sha256": "d95ee83465a79fe65b875a72a855f99f4696b1b2b44beb08dabb83212a9d2af0"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/verification.json",
+      "sha256": "1837edaa889b0f85154e653fc6572faff440cad5bb931ce7ce69b0c017b2c900"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github_search_2.json",
+      "sha256": "03b22d35c3e5052b5a744b9364c4e007b2893774d2f0f35a8c44d62cd28b1cc7"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/verify.py",
+      "sha256": "7d42a659cbfe58105c8d58fd085149b4d19616a59a1c4e2a631853ac4389a16a"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/catalog_dateRun.json",
+      "sha256": "d28bad28dc07e02cf079c2393124c27e7dcbd5ef50babced2af04605e6f0be08"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github_files.py",
+      "sha256": "b637a7ff3153a62c5a794b454a7a5126625f14dc1c166ab75a1e9181fab3819b"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/catalog_scoreDescending.json",
+      "sha256": "6cd7364fd1e197bfe3dab52daf44232e7a74317c93206ff46984ba8a1911bd19"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/discussions/743222.json",
+      "sha256": "b105a6ae65c7538faa60e07f0132d6a400f0fbaadc6a6c35fc90c668703989a2"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/discussions/743765.json",
+      "sha256": "c47c3f1e23ba4a913c761024c41e6bfbb02534110c2062860cc4dfe93c8fab08"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/discussions/743929.json",
+      "sha256": "ff953429f0c72580eac3471eed40276992ad5744bf1cb2d41b149ca552671814"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/discussions/743006.json",
+      "sha256": "121f1e760a5e836e234a94827128eab2a06237fde9442bc5bba7b7a5510d439c"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/discussions/732103.json",
+      "sha256": "f9cd68fb6d3ff9ceed60efc0ed242411d9914c1d84cdff5604406ce905767c79"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/discussions/742169.json",
+      "sha256": "671a51cb00473906981a212cfd5182ad6961dfb0221e2f252eaf9b74c765d201"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/Beiciccc__biohub-cell-tracking-development/repo.json",
+      "sha256": "ad58beb57578f46e786407459ad838f4bb752263184ed2131355ec85c7e48fe8"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/Beiciccc__biohub-cell-tracking-development/commit.json",
+      "sha256": "34a8d6c59ffcb579cea235db2e39b44cc71c991c0ba20d8ea945afac956945db"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/Beiciccc__biohub-cell-tracking-development/tree.json",
+      "sha256": "b0c57551957337d89b2500e032bb51c08185e7387aee130567dc3d0949f0ab1c"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/Beiciccc__biohub-cell-tracking-development/files/README.md",
+      "sha256": "fd55120b3676ea4b002df6f41c81eb325fda6a7bb71f9d7656c79e7b5ae89ce3"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/Beiciccc__biohub-cell-tracking-development/files/docs/experiment_log.md",
+      "sha256": "8b8c8b7842eb36fce4d7410a5b91012cab8d77759b235b692417047538ad695c"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/royerlab__kaggle-cell-tracking-competition/repo.json",
+      "sha256": "6111f4fdefbf4ca7fbedc9b8a82a799e5b457b24cfdb83accdc1c31a0e771590"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/royerlab__kaggle-cell-tracking-competition/commit.json",
+      "sha256": "cffbd212eba0053b7406d4956bc050c151af30a5856322019862927b5ceb08c7"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/royerlab__kaggle-cell-tracking-competition/tree.json",
+      "sha256": "eb1e83c9b5e2a4563d1198bd123a8511b0e2de07966d15f2f10b1333f3c89be5"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/royerlab__kaggle-cell-tracking-competition/files/README.md",
+      "sha256": "305222ff29b8b783c95ff2ceb2df3e801c52272633e798ef27af600fbe041812"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/royerlab__kaggle-cell-tracking-competition/files/metrics.md",
+      "sha256": "d8a2d3ff21b507242dd23e9b7c687d725261d7b4c79cff086cccb4093141d696"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/royerlab__kaggle-cell-tracking-competition/files/src/tracking_cellmot/division_metrics.py",
+      "sha256": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/canakbass__biohub-cell-tracking/repo.json",
+      "sha256": "1c205ee9daeae279e13a7488363bfe32f642fe726cfbd3f327bd204edbc15094"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/canakbass__biohub-cell-tracking/commit.json",
+      "sha256": "bbbc06fc0fc4bbf6c70cf6bd454faf59e9c9df5c1a41096902a9fa6e2d00aae5"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/canakbass__biohub-cell-tracking/tree.json",
+      "sha256": "f9d322872bcc1b53bd6ee815fad3656efbf11aa74615c45eadc494acb70f3539"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/canakbass__biohub-cell-tracking/files/STATE.md",
+      "sha256": "84a0f80da79a9fc4b9b59adfbd204546137287173e9bb8968a9bb91033157000"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/canakbass__biohub-cell-tracking/files/README.md",
+      "sha256": "82f3d9d61c62bcbc7b7c9a6522cf482c3fc3da733de161c0142209efe5db1d01"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/kito2718__kaggle_Biohub-Cell_Tracking_During_Development/repo.json",
+      "sha256": "c65244ec24e8ffdb5fc19a95188c7106932898c21b1636dbe47e84e3df2ab8b1"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/kito2718__kaggle_Biohub-Cell_Tracking_During_Development/commit.json",
+      "sha256": "4b31a292e6a12e81ba41293ed68a440e1a6044afe379abac19e6209b4080bad6"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/kito2718__kaggle_Biohub-Cell_Tracking_During_Development/tree.json",
+      "sha256": "b81660dab4016f2eaad5ede843f69c29aae9ab17f4812d33871728de56dc5938"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/kito2718__kaggle_Biohub-Cell_Tracking_During_Development/files/working/s8_064_global_association/source_static.txt",
+      "sha256": "8ee71c2032959b7b3ef69311b37180a23fb3ee84c7b755e934632cf986b77931"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/kito2718__kaggle_Biohub-Cell_Tracking_During_Development/files/working/s8_064_global_association/s8_064_global_association.ipynb",
+      "sha256": "7563e83788ec0db86e27ee57f107a51307cb9413cb70ab4e6b38c94e0286e908"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/kito2718__kaggle_Biohub-Cell_Tracking_During_Development/files/s7_summary/s8_summary2.md",
+      "sha256": "4975650cf94023c8b725c74d7c56aad9f1579d7bedbbd00598eef546118f457a"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/OpenKaggle__biohub-cell-tracking-research/repo.json",
+      "sha256": "c98ab573ae6fa3a0034e1fe37b4e54c468134f83fc528a5730d7aeb0103b98ec"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/OpenKaggle__biohub-cell-tracking-research/commit.json",
+      "sha256": "9677be2f99ac3c46425ab0f1d3e9b2a0472b02ad78c719a7751799501b80663c"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/OpenKaggle__biohub-cell-tracking-research/tree.json",
+      "sha256": "32757e97bf1913234be89546d11625772ab5ae0ac50688da94db6dfc37d0f689"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/OpenKaggle__biohub-cell-tracking-research/files/CAMPAIGN.md",
+      "sha256": "796f895a3649d0a5459cad245a29612a6a96e4749771f61bd10fe2d3dbd7ee57"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/OpenKaggle__biohub-cell-tracking-research/files/README.md",
+      "sha256": "12e63dfa8ce42dcde2242091ba70157fb00820a25b8134aec7e71a28e3d40e2c"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/OpenKaggle__biohub-cell-tracking-research/files/decisions/BH-0005-min-track-length.md",
+      "sha256": "cc2b698c91cee9f2441ca0305e655d15e5b9349f5d4299055e7e8e3334213d41"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/JunhaoLiXD__Biohub_Cell_Tracking/repo.json",
+      "sha256": "f509dd95dd573efd200505c09c035d1564f78d19cbacfa0ac0a567636015ca53"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/JunhaoLiXD__Biohub_Cell_Tracking/commit.json",
+      "sha256": "afbc0c8ffa60ee2dbcded5becd20770b28ffbd7052e3f0f45e4f0c9140f2cec7"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/JunhaoLiXD__Biohub_Cell_Tracking/tree.json",
+      "sha256": "914f5daa5dce8084d9530f142bacc378ba4de92af4f403dd3294f88e575d031b"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/JunhaoLiXD__Biohub_Cell_Tracking/files/EXP067_STATUS.md",
+      "sha256": "2cb39ea697804e7f5dda702eddfbe67b3c9a8fee396aaeb970ff33237b50432c"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/JunhaoLiXD__Biohub_Cell_Tracking/files/README.md",
+      "sha256": "470f92af9f4c294302db99900c4ae3cc17949ad3b155d2e9cf1abab7183e10d4"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/JunhaoLiXD__Biohub_Cell_Tracking/files/docs/research/adaptive_pruning_claude_review_2026-09-28.md",
+      "sha256": "8901e362094d41631b6d45b73f168c4e3fa9b601f23da2c0f18e0e114b8bb4f9"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/alvaromendizabal__biohub-cell-tracking-during-development/repo.json",
+      "sha256": "fbc1a7910aa2b8d3d1aaac049f8e9351c8b6ce4ca72847637cd59bc836faab9a"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/alvaromendizabal__biohub-cell-tracking-during-development/commit.json",
+      "sha256": "5e1a8c32485c972563e1909c5e59aebe2afe283adab560b07ff60862e240314d"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/alvaromendizabal__biohub-cell-tracking-during-development/tree.json",
+      "sha256": "4a6179814f7b732648ad200eb946207c2f8da719b62408abe9558e85ba8cd6f5"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/alvaromendizabal__biohub-cell-tracking-during-development/files/FRONTIER.md",
+      "sha256": "5fc29f6d93a0172c16a3241a9a16afdd6f00b3a8c4542befccd036c1da01ce3d"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/alvaromendizabal__biohub-cell-tracking-during-development/files/README.md",
+      "sha256": "0863790e375ea74f7d686d722e02131d6bbec5ec2a38ae52636c1988b31db57a"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/alvaromendizabal__biohub-cell-tracking-during-development/files/RESULTS.md",
+      "sha256": "22a7af29a04afedce1f0c11b3f5d8301b83be326e79627bfd6a1ac9cf143992e"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/alvaromendizabal__biohub-cell-tracking-during-development/files/REPRODUCIBILITY.md",
+      "sha256": "d8cd3f034fe6bbed6a8437cd872ae430fa560a4cac6d0b5cf084cd311043636c"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/drosadocastro-bit__Atabey/repo.json",
+      "sha256": "8891acf1fbac52b17409e9e8fcdc615830eaca4475d43673bcffe36869cc5209"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/drosadocastro-bit__Atabey/commit.json",
+      "sha256": "0a385245097060784a05ecf61637b6de79b49455414cd0d958b429027a7f5baa"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/drosadocastro-bit__Atabey/tree.json",
+      "sha256": "33369572b17fa83db4aecd85d43a73685e7132f3ffe6c9080e42feb99ad97943"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/drosadocastro-bit__Atabey/files/README.md",
+      "sha256": "770075b0954045b9f4202c470f084fc0ab2a7c8480180c2848af83359fb389f2"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/github/drosadocastro-bit__Atabey/files/V27C_OFFICIAL_GRAPH_EVALUATION_RESULTS.md",
+      "sha256": "6075743ad512a4de731bd1eb7d4acdc4778d4ff06dde7cc2769f48d558f9c319"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/sources/kunaldesale2408/biohub-cell-tracking/metadata.json",
+      "sha256": "7f8d97c10518c70fa302e79708f0fe0a585640f78828d07f11e6e939c46cac81"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/sources/kunaldesale2408/biohub-cell-tracking/comparison.json",
+      "sha256": "5af0c698be48cf9bb5cc89b89f7a65e5bd817b8b2f33ec3b0cf660bd6be5cc75"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/sources/kunaldesale2408/biohub-cell-tracking/vs_previous.diff",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/sources/kunaldesale2408/biohub-cell-tracking/source.ipynb",
+      "sha256": "9cd5d1490dfdd434b21027c4e934478f9def530c6670a2a86f5480b03b5d696e"
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260928_RESULTS/sources/kunaldesale2408/biohub-cell-tracking/source.py",
+      "sha256": "3937fc1afd64971b5c88d8534bb07ee8fdef07c095caeb938d324b228428d947"
+    },
+    {
+      "path": "reports/20260928_\u6b63\u5f0f\u7ed3\u679c\u4e0e\u6700\u65b0\u516c\u5f00\u60c5\u62a5.md",
+      "sha256": "adfdbb445c09857c8d896e678b2ebc6779b2ccb140c528c44639afdf0e02e739"
+    }
+  ]
+}

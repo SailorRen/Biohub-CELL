@@ -1,0 +1,11 @@
+{
+  "stage": "A",
+  "error": "ABSENCE_UNPROVEN",
+  "api_status": 403,
+  "readonly_title_search_count": 0,
+  "ui_absence_verified": true,
+  "kaggle_write_requests_sent": 0,
+  "ledger_empty": true,
+  "repair": "Use explicit official UI absence alongside 403 and empty own-kernel search; same semantics as previous project runner",
+  "algorithm_changed": false
+}

@@ -1,0 +1,65 @@
+{
+  "observed_at_utc": "2026-09-08T05:25:09.144487+00:00",
+  "scope": "Independent local read-only audit; no network or platform writes; results and frozen files unchanged",
+  "status": "NO_BLOCKING_READER_DEFECT_FOUND",
+  "code_sha256": {
+    "read_platform.py": "cd32235fb393799f2672d5654a73b82e8f5e0f25f50b3173f29a58341a1b2c71",
+    "execute_once.py": "cf8cb5f595e8bcb70ab3e1b82f646a87c9efaadeb5190c96dcb139c7e11e625f",
+    "verify.py": "4d2b544cb3016d3bd980d3f52fdf03f76777626bb2c47c850ccf901a61ca404a"
+  },
+  "B0_observed": {
+    "ref": "sailorren/biohub-946-b0-repro-20260908",
+    "version": 1,
+    "script_version_id": 348114666,
+    "submission": {
+      "id": 56091397,
+      "status": "PENDING",
+      "public_score": null,
+      "description": "PUBLIC946_TTA_20260908 B0 | V1 | SV348114666 | SHA256 1ae0ac1beb9599308119c380056c05ebc69c230395b37bc3d0966c3107153f19",
+      "requested_at_utc": "2026-09-08T05:21:47.226217+00:00",
+      "date_utc": "2026-09-08 05:21:50.403000",
+      "read_location": "Kaggle competition submissions API: biohub-cell-tracking-during-development; exact submission ID 56091397",
+      "private_score": null,
+      "error_description": "",
+      "observed_at_utc": "2026-09-08T05:22:17.749473+00:00",
+      "observed_at_shanghai": "2026-09-08T13:22:17.749473+08:00"
+    },
+    "own_best_before_submission": {
+      "id": 56069192,
+      "status": "COMPLETE",
+      "public_score": "0.942",
+      "description": "V21A parent9 dc026 | Version 1 | SV 347862850 | SHA256 9537aa87092fe2e0d130b9b23ffffb9796b6d6ee2d29b366c09bebce044223e0",
+      "date_utc": "2026-09-07 04:56:50.697000",
+      "observed_at_utc": "2026-09-08T05:21:45.024497+00:00",
+      "scope": "Live completed submissions before this write"
+    }
+  },
+  "checks": {
+    "submission_id_matches_unique_response": true,
+    "version_matches": true,
+    "script_version_id_matches": true,
+    "local_source_hash_matches": true,
+    "platform_description_matches_unique_request": true,
+    "transmitted_source_hash_preserved": true,
+    "own_best_before_submission_matches_preflight": true,
+    "remote_binding_verified": true,
+    "pending_score_remains_null": true
+  },
+  "score_readback_procedure": [
+    "Refresh each submitted arm explicitly: reader intentionally merges only the --arm object although each listing contains all known batch submission IDs. Refreshing C1 alone does not replace B0.submission with a newer B0 match.",
+    "After a scored terminal read preserve original public_score string, exact ID, description, both observation timezones and read_location. Version/SV/local source and transmitted source remain bound through the unique ledger operation and remote_binding; no inference from score/title.",
+    "Run formal_arm against the exact row and ledger after terminal COMPLETE. ERROR/PENDING or missing score keep all score deltas null and retain any exact error.",
+    "Recompute all arms after the final current_own_best refresh, using Decimal(str(score)) and serialize exact differences as decimal strings. Existing comparisons requires delta_vs_B0, delta_vs_own_best_at_start, delta_vs_current_own_best, delta_vs_public_0946; it does not fill them.",
+    "Keep each arm own_best_before_submission copied from that arm unique formal-request preflight. Add/report delta_vs_own_best_before_submission using that frozen observed reference; do not overwrite it with later current_own_best.",
+    "A best candidate has delta_vs_current_own_best=0 after becoming current best; its improvement is established against B0, initial best, or the separately preserved pre-submission best. Zero to the new current best is not evidence of no improvement.",
+    "Report actual_postprocess as ordinary-run selection; formal hidden selection/output remain UNKNOWN unless directly recovered. Different original PP selections confound a pure feature-only causal interpretation."
+  ],
+  "existing_comparisons_fields": [
+    "delta_vs_B0",
+    "delta_vs_own_best_at_start",
+    "delta_vs_current_own_best",
+    "delta_vs_public_0946"
+  ],
+  "recommended_extra_comparison": "delta_vs_own_best_before_submission",
+  "no_frozen_file_change_recommended": true
+}

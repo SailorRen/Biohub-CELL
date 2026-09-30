@@ -1,0 +1,224 @@
+{
+  "repository": "royerlab/ultrack-td",
+  "branch": "main",
+  "commit": "fc8f988856ecd129d36b2c93a46d617c75ccad99",
+  "observed_at_utc": "2026-09-09T01:48:19.312571+00:00",
+  "pushed_at": "2026-06-14T12:46:17Z",
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "commit_message": "updating readme",
+  "tree": {
+    "sha": "fc8f988856ecd129d36b2c93a46d617c75ccad99",
+    "url": "https://api.github.com/repos/royerlab/ultrack-td/git/trees/fc8f988856ecd129d36b2c93a46d617c75ccad99",
+    "tree": [
+      {
+        "path": ".github",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "ad25ca2960de196e19afb41cd0451a75e2e8faf2",
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/trees/ad25ca2960de196e19afb41cd0451a75e2e8faf2"
+      },
+      {
+        "path": ".github/dependabot.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6c4b369539355a7bc893f1aa7b0509fd09ecdc2a",
+        "size": 224,
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/blobs/6c4b369539355a7bc893f1aa7b0509fd09ecdc2a"
+      },
+      {
+        "path": ".github/workflows",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "9336156647d6a191ddc43b31ac49b4f18f1c9d5d",
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/trees/9336156647d6a191ddc43b31ac49b4f18f1c9d5d"
+      },
+      {
+        "path": ".github/workflows/ci.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4c69693bab4a288fe1fbe020c44ef6951f60ddcc",
+        "size": 1450,
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/blobs/4c69693bab4a288fe1fbe020c44ef6951f60ddcc"
+      },
+      {
+        "path": ".github/workflows/release.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "32492f14664eb0257a2f268d09e0efc6177d09fe",
+        "size": 4019,
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/blobs/32492f14664eb0257a2f268d09e0efc6177d09fe"
+      },
+      {
+        "path": ".gitignore",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "ded5e6f3c1f76fa2d02e2057d286aa92d454c0d0",
+        "size": 3713,
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/blobs/ded5e6f3c1f76fa2d02e2057d286aa92d454c0d0"
+      },
+      {
+        "path": ".pre-commit-config.yaml",
+        "mode": "100755",
+        "type": "blob",
+        "sha": "6f51714bdedeaee66f149e65286e900ee51add13",
+        "size": 1116,
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/blobs/6f51714bdedeaee66f149e65286e900ee51add13"
+      },
+      {
+        "path": "CMakeLists.txt",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d3edc50170a66fb0106ec704a286129a7a161d96",
+        "size": 4216,
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/blobs/d3edc50170a66fb0106ec704a286129a7a161d96"
+      },
+      {
+        "path": "LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "628d10094787ea8072264ae33467fed8cf271014",
+        "size": 1534,
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/blobs/628d10094787ea8072264ae33467fed8cf271014"
+      },
+      {
+        "path": "README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "42b532cb4019809c4c0698a50748ae05dedd6ce7",
+        "size": 4910,
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/blobs/42b532cb4019809c4c0698a50748ae05dedd6ce7"
+      },
+      {
+        "path": "examples",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "a9964c59411a63c77f94266abe744b50b87203df",
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/trees/a9964c59411a63c77f94266abe744b50b87203df"
+      },
+      {
+        "path": "examples/zebrahub.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1d6be43ade2e8f46eb7931ee6937e2c1d19a35bf",
+        "size": 2821,
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/blobs/1d6be43ade2e8f46eb7931ee6937e2c1d19a35bf"
+      },
+      {
+        "path": "pyproject.toml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f17a55bdab6f162b592298b3702b66d540bcefe5",
+        "size": 2085,
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/blobs/f17a55bdab6f162b592298b3702b66d540bcefe5"
+      },
+      {
+        "path": "src",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "b1495ff95dc53591f163a9815b71a1f4e0ab2c11",
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/trees/b1495ff95dc53591f163a9815b71a1f4e0ab2c11"
+      },
+      {
+        "path": "src/bimap.h",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0ed58c4c03f8a554d4588ed286a64b8bf92e350f",
+        "size": 996,
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/blobs/0ed58c4c03f8a554d4588ed286a64b8bf92e350f"
+      },
+      {
+        "path": "src/counting_map.h",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "675e9f7d58da1b8355055316476461f39fa38b63",
+        "size": 711,
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/blobs/675e9f7d58da1b8355055316476461f39fa38b63"
+      },
+      {
+        "path": "src/segment.h",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6551c980cba12bc45f698e4ce7604350a732fae3",
+        "size": 3484,
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/blobs/6551c980cba12bc45f698e4ce7604350a732fae3"
+      },
+      {
+        "path": "src/tree.h",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3b7b57874c38c3e8827ac677772d259cd05380fe",
+        "size": 1347,
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/blobs/3b7b57874c38c3e8827ac677772d259cd05380fe"
+      },
+      {
+        "path": "src/ultrack.h",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8d26402389960c6384f4c47530caa5a933276167",
+        "size": 11489,
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/blobs/8d26402389960c6384f4c47530caa5a933276167"
+      },
+      {
+        "path": "src/ultrack_td",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "6a362335e64ab92d6129db41b8f3ecfd196baa9d",
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/trees/6a362335e64ab92d6129db41b8f3ecfd196baa9d"
+      },
+      {
+        "path": "src/ultrack_td/__init__.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b24a8e583692426d95c3140416fccc0da45bcd36",
+        "size": 8793,
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/blobs/b24a8e583692426d95c3140416fccc0da45bcd36"
+      },
+      {
+        "path": "src/ultrack_td/_tests",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "c8a48722edf07e6be4f4ce4d0e98c1652b5d0755",
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/trees/c8a48722edf07e6be4f4ce4d0e98c1652b5d0755"
+      },
+      {
+        "path": "src/ultrack_td/_tests/test_ultrack_td.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "49afd17c3840cb6f29850927bc7217cfce798596",
+        "size": 3297,
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/blobs/49afd17c3840cb6f29850927bc7217cfce798596"
+      },
+      {
+        "path": "src/ultrack_td/v1.py",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0abd0644dbd40fa594bee35d9bb802e376341da2",
+        "size": 6707,
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/blobs/0abd0644dbd40fa594bee35d9bb802e376341da2"
+      },
+      {
+        "path": "src/ultrack_td_ext.cpp",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1dd88fbfe63f969e03361498e832e253270ce02e",
+        "size": 3452,
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/blobs/1dd88fbfe63f969e03361498e832e253270ce02e"
+      },
+      {
+        "path": "src/union_find.h",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1173a321c394955eb7a0afaf46182919001635c1",
+        "size": 5290,
+        "url": "https://api.github.com/repos/royerlab/ultrack-td/git/blobs/1173a321c394955eb7a0afaf46182919001635c1"
+      }
+    ],
+    "truncated": false
+  }
+}

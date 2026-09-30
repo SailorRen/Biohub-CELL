@@ -1,0 +1,145 @@
+{
+  "task_id": "PUBLIC_OPT_REVIEW_20260917",
+  "scope": "only new task files; GitHub delivery only; algorithm and formal score status are separate",
+  "observed_at_utc": "2026-09-17T02:16:47.043364+00:00",
+  "branch": "codex/public-review-20260917",
+  "commit": "778d5f19d2d6002499de777981728952e57fa5a8",
+  "remote_head": "778d5f19d2d6002499de777981728952e57fa5a8",
+  "remote_main": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+  "worktree_status": "",
+  "archive_url": "https://codeload.github.com/SailorRen/Biohub-CELL/zip/778d5f19d2d6002499de777981728952e57fa5a8",
+  "archive_sha256": "50f461638f70d59e38d18523078764cac946f9c3aceb33b1c96ad19536b090e4",
+  "matched": 16,
+  "total": 16,
+  "files": [
+    {
+      "path": "experiments/PUBLIC_OPT_REVIEW_20260917/contract.json",
+      "bytes": 1441,
+      "local_sha256": "7973d243b55e663c29d9272eb00be7c22c62fca47b04c9cce668831fd9bf2b0f",
+      "commit_sha256": "7973d243b55e663c29d9272eb00be7c22c62fca47b04c9cce668831fd9bf2b0f",
+      "remote_sha256": "7973d243b55e663c29d9272eb00be7c22c62fca47b04c9cce668831fd9bf2b0f",
+      "match": true
+    },
+    {
+      "path": "experiments/PUBLIC_OPT_REVIEW_20260917/discussions.json",
+      "bytes": 2221,
+      "local_sha256": "45cc01d08a10ddc082b1a23dbb85f9447224d9df2f9b4dab6e9b2b9e1e44bc53",
+      "commit_sha256": "45cc01d08a10ddc082b1a23dbb85f9447224d9df2f9b4dab6e9b2b9e1e44bc53",
+      "remote_sha256": "45cc01d08a10ddc082b1a23dbb85f9447224d9df2f9b4dab6e9b2b9e1e44bc53",
+      "match": true
+    },
+    {
+      "path": "experiments/PUBLIC_OPT_REVIEW_20260917/github_commit_note.json",
+      "bytes": 1924,
+      "local_sha256": "881a8a9ff5fda9a09d0b536b8b6e85430f04e78f6ded0a1edc527dae2ac46f22",
+      "commit_sha256": "881a8a9ff5fda9a09d0b536b8b6e85430f04e78f6ded0a1edc527dae2ac46f22",
+      "remote_sha256": "881a8a9ff5fda9a09d0b536b8b6e85430f04e78f6ded0a1edc527dae2ac46f22",
+      "match": true
+    },
+    {
+      "path": "experiments/PUBLIC_OPT_REVIEW_20260917/github_sources.json",
+      "bytes": 4187,
+      "local_sha256": "017dd505e341e6af5fe99bfe922ed72e548599e98a9d62a7b4c6da34d8814a0a",
+      "commit_sha256": "017dd505e341e6af5fe99bfe922ed72e548599e98a9d62a7b4c6da34d8814a0a",
+      "remote_sha256": "017dd505e341e6af5fe99bfe922ed72e548599e98a9d62a7b4c6da34d8814a0a",
+      "match": true
+    },
+    {
+      "path": "experiments/PUBLIC_OPT_REVIEW_20260917/initial_state.json",
+      "bytes": 478,
+      "local_sha256": "1ab6a2d68cb2266ae58fa4b63a2e9b3eb84e6d036272f074573ae0d58bc19f37",
+      "commit_sha256": "1ab6a2d68cb2266ae58fa4b63a2e9b3eb84e6d036272f074573ae0d58bc19f37",
+      "remote_sha256": "1ab6a2d68cb2266ae58fa4b63a2e9b3eb84e6d036272f074573ae0d58bc19f37",
+      "match": true
+    },
+    {
+      "path": "experiments/PUBLIC_OPT_REVIEW_20260917/notebook_sources.json",
+      "bytes": 6024,
+      "local_sha256": "9855bf40815a3c3d1880ae0782826eb6ba9038336298a8529439db1fb9318336",
+      "commit_sha256": "9855bf40815a3c3d1880ae0782826eb6ba9038336298a8529439db1fb9318336",
+      "remote_sha256": "9855bf40815a3c3d1880ae0782826eb6ba9038336298a8529439db1fb9318336",
+      "match": true
+    },
+    {
+      "path": "experiments/PUBLIC_OPT_REVIEW_20260917/platform_observations.json",
+      "bytes": 2459,
+      "local_sha256": "6942467c98fff68f20869be62b18abdf780cca2349d6d7529b142856f0527d8d",
+      "commit_sha256": "6942467c98fff68f20869be62b18abdf780cca2349d6d7529b142856f0527d8d",
+      "remote_sha256": "6942467c98fff68f20869be62b18abdf780cca2349d6d7529b142856f0527d8d",
+      "match": true
+    },
+    {
+      "path": "experiments/PUBLIC_OPT_REVIEW_20260917/read_public.py",
+      "bytes": 1889,
+      "local_sha256": "97f3fc6eda72e7b0ad07b1a5296744df7dd5e0c833145684e78509f485baa348",
+      "commit_sha256": "97f3fc6eda72e7b0ad07b1a5296744df7dd5e0c833145684e78509f485baa348",
+      "remote_sha256": "97f3fc6eda72e7b0ad07b1a5296744df7dd5e0c833145684e78509f485baa348",
+      "match": true
+    },
+    {
+      "path": "experiments/PUBLIC_OPT_REVIEW_20260917/validation.json",
+      "bytes": 1059,
+      "local_sha256": "d5da3a11867a67b93cb48b639eec6a99272ef0a56d5de4595125b8a297bd6cc6",
+      "commit_sha256": "d5da3a11867a67b93cb48b639eec6a99272ef0a56d5de4595125b8a297bd6cc6",
+      "remote_sha256": "d5da3a11867a67b93cb48b639eec6a99272ef0a56d5de4595125b8a297bd6cc6",
+      "match": true
+    },
+    {
+      "path": "experiments/PUBLIC_OPT_REVIEW_20260917/verify.py",
+      "bytes": 2045,
+      "local_sha256": "852ba43c96f8852d488f05502a1fd63577f741e579bcd6d437e814eaa909ecde",
+      "commit_sha256": "852ba43c96f8852d488f05502a1fd63577f741e579bcd6d437e814eaa909ecde",
+      "remote_sha256": "852ba43c96f8852d488f05502a1fd63577f741e579bcd6d437e814eaa909ecde",
+      "match": true
+    },
+    {
+      "path": "experiments/PUBLIC_OPT_REVIEW_20260917/verify_remote.py",
+      "bytes": 2618,
+      "local_sha256": "f0570449fc566c29870d9638cfdde0e774b93fce764df4ad83bcdfef72106554",
+      "commit_sha256": "f0570449fc566c29870d9638cfdde0e774b93fce764df4ad83bcdfef72106554",
+      "remote_sha256": "f0570449fc566c29870d9638cfdde0e774b93fce764df4ad83bcdfef72106554",
+      "match": true
+    },
+    {
+      "path": "experiments/PUBLIC_OPT_REVIEW_20260917/运行说明.md",
+      "bytes": 2090,
+      "local_sha256": "97bb03c4b23728ac8157a350e627aabf8c62d6d40bc4b83ee699918fdecf1825",
+      "commit_sha256": "97bb03c4b23728ac8157a350e627aabf8c62d6d40bc4b83ee699918fdecf1825",
+      "remote_sha256": "97bb03c4b23728ac8157a350e627aabf8c62d6d40bc4b83ee699918fdecf1825",
+      "match": true
+    },
+    {
+      "path": "reports/20260916_BIOHUB_SPRINT01_RESULTS.md",
+      "bytes": 10793,
+      "local_sha256": "9e2d233886f0916a0b9c6dc53f5a1709293bedfca91ad3154aa487a4fb53f9bc",
+      "commit_sha256": "9e2d233886f0916a0b9c6dc53f5a1709293bedfca91ad3154aa487a4fb53f9bc",
+      "remote_sha256": "9e2d233886f0916a0b9c6dc53f5a1709293bedfca91ad3154aa487a4fb53f9bc",
+      "match": true
+    },
+    {
+      "path": "reports/20260917_交给Chat的Biohub分析材料.md",
+      "bytes": 11270,
+      "local_sha256": "56630dbe840a86a39c32c312a10e6ee6ac41b59730ab606db6ef2b4aba514f89",
+      "commit_sha256": "56630dbe840a86a39c32c312a10e6ee6ac41b59730ab606db6ef2b4aba514f89",
+      "remote_sha256": "56630dbe840a86a39c32c312a10e6ee6ac41b59730ab606db6ef2b4aba514f89",
+      "match": true
+    },
+    {
+      "path": "reports/20260917_公开方案与G1对照.md",
+      "bytes": 14543,
+      "local_sha256": "e87bc83a87badc984b4d612a3e15a36c8428b6c0f0d083f0a353f20e0633d1ab",
+      "commit_sha256": "e87bc83a87badc984b4d612a3e15a36c8428b6c0f0d083f0a353f20e0633d1ab",
+      "remote_sha256": "e87bc83a87badc984b4d612a3e15a36c8428b6c0f0d083f0a353f20e0633d1ab",
+      "match": true
+    },
+    {
+      "path": "tasks/CODEX_20260917_PUBLIC_OPT_REVIEW.md",
+      "bytes": 451,
+      "local_sha256": "b2f71d800d6180568a73ae2296eb07d4f04fba06e03302458c2f3bad1bfd207c",
+      "commit_sha256": "b2f71d800d6180568a73ae2296eb07d4f04fba06e03302458c2f3bad1bfd207c",
+      "remote_sha256": "b2f71d800d6180568a73ae2296eb07d4f04fba06e03302458c2f3bad1bfd207c",
+      "match": true
+    }
+  ],
+  "status": "REMOTE_BYTES_VERIFIED"
+}

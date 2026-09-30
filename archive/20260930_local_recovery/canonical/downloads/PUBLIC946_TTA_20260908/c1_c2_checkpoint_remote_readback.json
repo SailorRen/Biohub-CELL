@@ -1,0 +1,93 @@
+{
+  "commit": "e09e68590453fa0eabebd0b8ba18b3105a4aa278",
+  "remote_head": "e09e68590453fa0eabebd0b8ba18b3105a4aa278",
+  "files": [
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C1/independent_audit.json",
+      "local_sha256": "775afb8b80b2d5a98647cc6472b9ec4be71dd7849713b5674d2fde85cdcc2d7e",
+      "remote_sha256": "775afb8b80b2d5a98647cc6472b9ec4be71dd7849713b5674d2fde85cdcc2d7e",
+      "equal": true,
+      "bytes": 8125
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C1/ordinary.log",
+      "local_sha256": "68e880524e8f6125dcb9cb72e466f6c1573064af6288aa764fb1a7713ea9f129",
+      "remote_sha256": "68e880524e8f6125dcb9cb72e466f6c1573064af6288aa764fb1a7713ea9f129",
+      "equal": true,
+      "bytes": 858495
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C1/ppsweep_results.csv",
+      "local_sha256": "f7e5168ddbe9b05e41c0e3c767ce37ee31459d0f5d93e5777156af93df94864f",
+      "remote_sha256": "f7e5168ddbe9b05e41c0e3c767ce37ee31459d0f5d93e5777156af93df94864f",
+      "equal": true,
+      "bytes": 1400
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C1/ppsweep_selected.json",
+      "local_sha256": "3e78319c7b8ce6673ea249cd0f0c5f67a6056c7e2d4e305a2b8f57e530a85c0e",
+      "remote_sha256": "3e78319c7b8ce6673ea249cd0f0c5f67a6056c7e2d4e305a2b8f57e530a85c0e",
+      "equal": true,
+      "bytes": 357
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C1/public946_expanded_patch_receipt.json",
+      "local_sha256": "c201ab8e305f34444c4d0525559b6aeab92c540f692f677697678bd7014fa14e",
+      "remote_sha256": "c201ab8e305f34444c4d0525559b6aeab92c540f692f677697678bd7014fa14e",
+      "equal": true,
+      "bytes": 2789
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C1/public946_final_audit.json",
+      "local_sha256": "b6f10c2eec2c21c15b6f6b6350045958dbd2986808cfd9d98064ee1b94b923fc",
+      "remote_sha256": "b6f10c2eec2c21c15b6f6b6350045958dbd2986808cfd9d98064ee1b94b923fc",
+      "equal": true,
+      "bytes": 16740
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C1/run_stats.csv",
+      "local_sha256": "502e83da9180019fecad5a12ab416429f44127f724926b34754f94aead0b4a3c",
+      "remote_sha256": "502e83da9180019fecad5a12ab416429f44127f724926b34754f94aead0b4a3c",
+      "equal": true,
+      "bytes": 3137
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C1/runtime_summary.json",
+      "local_sha256": "52168918a6a1c085e93bea5484db60fa334530fbef1a5579b80f1332b941f1d3",
+      "remote_sha256": "52168918a6a1c085e93bea5484db60fa334530fbef1a5579b80f1332b941f1d3",
+      "equal": true,
+      "bytes": 362596
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/C1/validator_results.csv",
+      "local_sha256": "a627cd27a8f5ec81d9492f6c0cc74d389ce879c0b6d5cf150d05556a51db8eb1",
+      "remote_sha256": "a627cd27a8f5ec81d9492f6c0cc74d389ce879c0b6d5cf150d05556a51db8eb1",
+      "equal": true,
+      "bytes": 7953
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/results.json",
+      "local_sha256": "dcc59c3e84cc9e6264d93d550a58a552fe1131f5a2ce01868bc5f246ec5da2da",
+      "remote_sha256": "dcc59c3e84cc9e6264d93d550a58a552fe1131f5a2ce01868bc5f246ec5da2da",
+      "equal": true,
+      "bytes": 70072
+    },
+    {
+      "path": "experiments/PUBLIC946_TTA_20260908/write_ledger.json",
+      "local_sha256": "3505773f2c2d137454258bccad2dacf97e6622ef62756125f8796ad9e3645ac9",
+      "remote_sha256": "3505773f2c2d137454258bccad2dacf97e6622ef62756125f8796ad9e3645ac9",
+      "equal": true,
+      "bytes": 13201
+    },
+    {
+      "path": "reports/20260908_PUBLIC946_TTA_OPTIMIZATION_RESULT.md",
+      "local_sha256": "e31e199e97b85c3a103e79cc8f7677a76cbf7383f65c7b93eca020e3439abcf5",
+      "remote_sha256": "e31e199e97b85c3a103e79cc8f7677a76cbf7383f65c7b93eca020e3439abcf5",
+      "equal": true,
+      "bytes": 12991
+    }
+  ],
+  "git_status_porcelain": "",
+  "observed_at_utc": "2026-09-08T07:02:46.417204+00:00",
+  "status": "CHECKPOINT_REMOTE_VERIFIED_EXPERIMENT_RUNNING"
+}

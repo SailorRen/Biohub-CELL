@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "task_id": "BIOHUB_SPRINT02_HOCT_INTERFACE_FIX_20260917",
+  "goal": "仅本地修复真实图字段接口、保护和快速停止；构建NOT_RUN源码并核验Git交付",
+  "freeze": {
+    "require_git_tracked": false
+  },
+  "scope": {
+    "task_commit": "a0b646817f111028b57766618e9b12561e766edd",
+    "evidence_commit": "bf76ed8c455c39b00d974a0beb67dc65feff2437",
+    "budgets": {
+      "kaggle_write": 0,
+      "save_run": 0,
+      "submission": 0,
+      "dataset_write": 0,
+      "training": 0,
+      "model_inference": 0,
+      "final_selection": 0
+    },
+    "acceptance_semantics": [
+      "old node_id error reproduced",
+      "exact tracksdata InMemoryGraph actual mapping and edge reads",
+      "noncontiguous IDs and chunk offset",
+      "empty/missing/ambiguous/incomplete protection",
+      "wrapper restoration",
+      "first interface error stops remaining samples preserving receipt",
+      "fixed local Notebook embeds repaired modules and empty outputs",
+      "historical artifacts unchanged"
+    ]
+  },
+  "acceptance": [
+    {
+      "id": "local",
+      "type": "command",
+      "argv": [
+        "downloads/LINEFIT_BOUNDARY_20260909/scorer/venv/bin/python",
+        "experiments/BIOHUB_SPRINT02_HOCT_20260917/interface_fix/verify_fix.py"
+      ],
+      "expected_exit": 0,
+      "timeout_seconds": 120
+    },
+    {
+      "id": "report",
+      "type": "file",
+      "path": "reports/20260917_BIOHUB_SPRINT02_HOCT_INTERFACE_FIX_RESULTS.md",
+      "min_bytes": 1000
+    },
+    {
+      "id": "git",
+      "type": "git",
+      "require_clean": true,
+      "require_remote": true,
+      "require_remote_head": true
+    }
+  ]
+}

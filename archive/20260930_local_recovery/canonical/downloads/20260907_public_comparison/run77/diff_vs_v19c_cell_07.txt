@@ -1,0 +1,29 @@
+--- v19c cell 9
++++ run77 cell 7
+@@ -1,10 +1,4 @@
+-# ============================================================
+-# CELL 8 (NEW) -- VALIDATOR: held-out sample selection + prediction run
+-# ============================================================
+-# Ported from the team's own local-validator harness onto this notebook's
+-# own path variables and its own (genuinely parallel, Popen-based) shard
+-# runner -- nothing in Cells 1-7 is touched, so this notebook still
+-# reproduces 0.915 if VALIDATOR_ENABLE is turned off.
++
+ 
+ TRAIN_DIR = COMP_DIR / "train"
+ 
+@@ -24,13 +18,7 @@
+         print(f"VALIDATOR: excluding {len(overlap)} TRAIN stem(s) that also appear in TEST_DIR: {overlap}")
+     candidates = [s for s in train_stems_all if s not in test_stem_set]
+ 
+-    # REVIEW: division-aware sample selection. GT divisions are annotated in
+-    # only ~44% of videos, so plain alphabetical selection risks picking a
+-    # validator set that structurally can't show division_jaccard movement.
+-    # This checks each candidate's own GT graph for a division (out-degree>=2)
+-    # -- a computed, per-video property, not a hardcoded list of stem names --
+-    # so it generalizes to any future TRAIN_DIR contents rather than
+-    # overfitting to today's specific videos.
++
+     def _stem_has_gt_division(stem: str) -> bool:
+         gt_path = TRAIN_DIR / f"{stem}.geff"
+         try:

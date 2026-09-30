@@ -1,0 +1,109 @@
+--- ttacell5
++++ harmoniccell5
+@@ -998,7 +998,7 @@
+     global_cap = max(1, int(round(max(1, len(edges)) * SAFE_DIV_GLOBAL_FRAC_CAP)))
+     added: list[dict[str, object]] = []
+     used_targets: set[int] = set()
+-    used_sources: set[int] = set()  # parallel to used_targets, for the parent side.
++    used_sources: set[int] = set()  
+  
+     for t in sorted(ids_by_t):
+         child_frame_ids = ids_by_t.get(t + 1, [])
+@@ -1009,11 +1009,11 @@
+         if not source_ids or not candidate_ids:
+             continue
+  
+-        # PATCH: nearest-orphan tree over this frame's unclaimed candidates,
+-        # built once per t and reused for every source_id below. Lets us
+-        # require that a proposed second daughter is the CLOSEST unclaimed
+-        # node to the existing first daughter, not merely within
+-        # SAFE_DIV_SISTER_MAX_UM of it.
++        
++        
++        
++        
++        
+         candidate_tree = None
+         if SAFE_DIV_REQUIRE_MUTUAL_NN:
+             candidate_positions = np.stack([_position_um(nodes_by_id[cid]) for cid in candidate_ids])
+@@ -1032,10 +1032,10 @@
+             if child_dist > SAFE_DIV_EXISTING_CHILD_MAX_UM:
+                 continue
+  
+-            # PATCH: who is the existing child's nearest still-unclaimed
+-            # neighbor this frame? Only that candidate can pass the
+-            # mutual-NN check below -- computed once per existing_child,
+-            # not once per candidate.
++            
++            
++            
++            
+             mutual_nn_id = None
+             if candidate_tree is not None:
+                 _, nn_idx = candidate_tree.query(_position_um(existing_child))
+@@ -1052,15 +1052,15 @@
+                 if sister_dist > SAFE_DIV_SISTER_MAX_UM:
+                     continue
+  
+-                # PATCH: mutual-nearest-orphan.
++                
+                 if SAFE_DIV_REQUIRE_MUTUAL_NN and candidate_id != mutual_nn_id:
+                     stats["safe_division_mutual_nn_rejected"] += 1
+                     continue
+  
+-                # PATCH: forward divergence. Both putative daughters need
+-                # their own unambiguous single successor one frame later,
+-                # and those two grandchildren must have moved apart more
+-                # than the sisters were apart now.
++                
++                
++                
++                
+                 if SAFE_DIV_REQUIRE_DIVERGENCE:
+                     c1_succ = out_by_source.get(existing_child_id, [])
+                     q_succ = out_by_source.get(candidate_id, [])
+@@ -1094,12 +1094,12 @@
+                     DEEPCENTER_SAFE_DIV_THRESHOLD,
+                 ):
+                     continue
+-                # G1 sister-symmetry precision gate (2026-08-31). Reject a safe-div fork whose
+-                # two daughters are wildly asymmetric in distance from the parent -- signature of
+-                # a spurious near-peak stealing the daughter slot. Loose tau=0.6 keeps real
+-                # (mildly-asymmetric) divisions; rejecting the spurious proposal frees the greedy
+-                # per-frame slot so the TRUE fork can form. Offline 23-movie validation proxy vs the previous banked configuration:
+-                # fp_forks 35->15 (-57%), tp_forks 2->3, adjJ +0.0011, FINAL +0.0073. tau<=0 = off.
++                
++                
++                
++                
++                
++                
+                 if SAFE_DIV_SISTER_SYMMETRY_TAU > 0.0:
+                     _sym_denom = max((child_dist + parent_dist) / 2.0, 1e-6)
+                     if abs(child_dist - parent_dist) / _sym_denom > SAFE_DIV_SISTER_SYMMETRY_TAU:
+@@ -1381,12 +1381,12 @@
+         "gap2_added_edges": 0,
+         "gap2_skipped_cap": 0,
+         "safe_division_candidates": 0,
+-        "safe_division_geometric_candidates": 0,  # REVIEW: pre-DeepCenter-veto count, to make the veto's effect visible
++        "safe_division_geometric_candidates": 0,  
+         "safe_divisions_added": 0,
+         "safe_division_skipped_cap": 0,
+         "safe_division_mutual_nn_rejected": 0,
+         "safe_division_divergence_rejected": 0,
+-        "safe_division_symmetry_rejected": 0,  # G1 sister-symmetry gate rejects (tau=0.6)
++        "safe_division_symmetry_rejected": 0,  
+         "deepcenter_gap_checked": 0,
+         "deepcenter_gap_bypassed_strong_motion": 0,
+         "deepcenter_gap_bypassed_observed_node": 0,
+@@ -1557,8 +1557,8 @@
+ DEEPCENTER_VETO_DETECTOR = load_deepcenter_veto_detector()
+ 
+ def write_test_submission(tag: str = "base") -> None:
+-    # Post-process the test prediction graphs with the CURRENT module-level
+-    # post-process constants and (re)write submission.csv + run_stats.csv.
++    
++    
+     geffs = sorted((REPO_DIR / "predictions").glob(f"*/{METHOD}/split_0/*.geff"))
+     print(f"Found {len(geffs)} prediction graphs")
+     if len(geffs) != len(test_stems):

@@ -1,0 +1,28 @@
+{
+  "baseline": {
+    "contract_matches_head": true,
+    "contract_tracked": true,
+    "git_repository": true,
+    "head": "ff0abce0f8d033745a58cdcab1639c65c94d4520",
+    "integrity_scope": "git-tracked-and-sha256"
+  },
+  "claim": {
+    "claimed_at": "2026-09-03T17:15:47+08:00",
+    "source": "agent_report",
+    "status": "CLAIMED_COMPLETE",
+    "summary_chars": 209,
+    "summary_sha256": "305c0f72daad0f43fc168ab5bc6e327d1218f73f64fe7243b5a95cdfe21037e2"
+  },
+  "contract_path": "tasks/CODEX_20260903_BIOHUB_CELL_INITIAL_RECON_CONTRACT.json",
+  "contract_sha256": "238a17f05370055ed6a8d0866c1ad88c5a247f5ba80b75de444995909ed0d1b7",
+  "latest_verification": {
+    "final_status": "COMPLETED_VERIFIED",
+    "finished_at": "2026-09-03T17:35:13+08:00",
+    "report_path": ".task-verification/CODEX_20260903_BIOHUB_CELL_INITIAL_RECON_V01/runs/20260903T173451+0800-d0612c91.json",
+    "run_id": "20260903T173451+0800-d0612c91"
+  },
+  "prepared_at": "2026-09-03T15:53:47+08:00",
+  "schema_version": "1.0",
+  "status": "COMPLETED_VERIFIED",
+  "task_id": "CODEX_20260903_BIOHUB_CELL_INITIAL_RECON_V01"
+}

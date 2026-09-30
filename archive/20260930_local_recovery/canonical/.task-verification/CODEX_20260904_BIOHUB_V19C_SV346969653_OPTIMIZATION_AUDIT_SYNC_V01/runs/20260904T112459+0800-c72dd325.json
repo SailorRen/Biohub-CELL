@@ -1,0 +1,357 @@
+{
+  "checks": [
+    {
+      "details": {
+        "bytes": 7042,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "tasks/CODEX_20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_AUDIT_SYNC_TASK.md",
+        "required_text_checks": 4,
+        "sha256": "670ef15979b25200c85a7cd3a2606422693352f299d20c161a6cba13d20f9daf"
+      },
+      "id": "task-source-preserved",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "bytes": 19507,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "scripts/verify_v19c_sv346969653_optimization_audit.py",
+        "required_text_checks": 3,
+        "sha256": "185b6c61f7773fba08eab4b34f676c27dffafcfcc4db9361a2b3c4301b70e835"
+      },
+      "id": "verifier-frozen",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/status"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/target/notebook_ref"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/target/script_version_id"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/source_audit/all_cells_checked"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/runtime_log/read_status"
+          },
+          {
+            "op": "not_empty",
+            "passed": true,
+            "pointer": "/optimization/decision"
+          },
+          {
+            "op": "not_empty",
+            "passed": true,
+            "pointer": "/optimization/top_candidate_id"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/optimization/experiment_executed"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/redistribution/full_notebook_source_committed"
+          }
+        ],
+        "path": "research/20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_AUDIT_V01/audit_summary.json",
+        "sha256": "327d9a368d99076c8fcd216df299f1f323a81e4b3d71d723081095949dd4ece3"
+      },
+      "id": "audit-summary",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/kaggle_submission_create_count"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/kaggle_notebook_write_count"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/training_task_count"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/kaggle_dataset_create_count"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/kaggle_model_create_count"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/competition_join_or_rule_accept_count"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/large_dataset_download_count"
+          }
+        ],
+        "path": "governance/CODEX_20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_AUDIT_LEDGER.json",
+        "sha256": "1aaa02ef79c07e4e9e5cef8afa2e8fb477cf9e878becec9f46c6408121123963"
+      },
+      "id": "external-action-zero-writes",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "bytes": 18320,
+        "forbidden_text_checks": 6,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "reports/20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_REPORT_V01.md",
+        "required_text_checks": 13,
+        "sha256": "a4033313b87e0a6b1876e17996f484a61637b4696c59967a552267d7336013a1"
+      },
+      "id": "optimization-report",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "bytes": 6350,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "research/20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_AUDIT_V01/05_optimization_opportunities.csv",
+        "required_text_checks": 4,
+        "sha256": "45ddae00221d71719a04c8ff9bca0c996875e0987ddf011cc76209cdb02a1368"
+      },
+      "id": "optimization-candidate-table",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/status"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/summary/failed"
+          },
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/summary/passed"
+          }
+        ],
+        "path": "reports/20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_VERIFY.json",
+        "sha256": "b493320b0d3f4223badc900bcfd8b5e7c396ca16dbeb77609e53e0d0cf537a8b"
+      },
+      "id": "audit-verification-report",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "argument_count": 5,
+        "argv_sha256": "0a50c62856e9a8e5058ebd5d638e84e915b661d61f15d42d3ef9b7878eb717f2",
+        "cwd": ".",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 82,
+          "sha256": "0b27352cfde217cc619b2cc49ecf4bf4cc852d6dea6deee5cb6a0907adc29b4d"
+        },
+        "stdout_text_checks": 2
+      },
+      "id": "deterministic-optimization-audit-check",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "argument_count": 5,
+        "argv_sha256": "3a1d5632a05d9df3d98aa8c57a4aab250d921bb71061d35cfbfc01b8dc4f32f6",
+        "cwd": ".",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 45,
+          "sha256": "aa875c77f37c4b884c2b6d13546fc11054e82e2a5fe6c1b2f48a3392cfccae9c"
+        },
+        "stdout_text_checks": 2
+      },
+      "id": "prior-v19c-audit-regression-check",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "argument_count": 5,
+        "argv_sha256": "3087e97b2d9576de829b28f144bb77d9f72054053fc95cc203313d5fba39d75f",
+        "cwd": ".",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 36,
+          "sha256": "307ff8ea7859c3ebc127879c423ebc0b1b4884f5084a26971b1c81ab71eddca0"
+        },
+        "stdout_text_checks": 2
+      },
+      "id": "initial-recon-regression-check",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "argument_count": 6,
+        "argv_sha256": "be68f6206d3293f79f528a6b3eabb0ac9b845dac85e90f44d805dc05d5b85e65",
+        "cwd": ".",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 3,
+        "raw_output_stored": false,
+        "returncode": 1,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 48,
+          "sha256": "4f8f49f680f93432bee973c66b7f214d2ffcdb50c8359c3a0e9b4926ed65c48f"
+        },
+        "stdout_text_checks": 3
+      },
+      "id": "authoritative-github-readback",
+      "outcome": "FAIL",
+      "reason": "exit code did not match; required stdout text was missing",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "branch": "main",
+        "dirty_entry_count": 0,
+        "head": "f4af9bc5bbdf79e478e1ccba9897c632fd68c659",
+        "remote": "origin",
+        "remote_exists": true,
+        "remote_query_stderr": {
+          "bytes": 146,
+          "sha256": "a9eac4c3a0b474d6d0edd79affc012741285a44999cf574afe77ecced5ea687a"
+        },
+        "remote_url_sha256": "294339ae4bf28ec437260f32bd064c06212de22a7026887c59e47f72ef414b8e",
+        "repository": "."
+      },
+      "id": "git-clean-and-remote-head",
+      "outcome": "BLOCKED",
+      "reason": "current remote head could not be queried",
+      "required": true,
+      "type": "git"
+    }
+  ],
+  "claimed_at": "2026-09-04T11:24:42+08:00",
+  "claimed_status": "CLAIMED_COMPLETE",
+  "contract_path": "tasks/CODEX_20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_AUDIT_SYNC_CONTRACT.json",
+  "contract_sha256": "f9d398ea5cf5c667e84bc4544622a25a846ac77fa06e4adc36e3f65456ef4120",
+  "final_status": "BLOCKED",
+  "finished_at": "2026-09-04T11:25:00+08:00",
+  "integrity_scope": "git-tracked-and-sha256",
+  "limitations": [
+    "The conclusion is limited to the frozen contract and the implemented checks.",
+    "The verifier does not prove omitted requirements or future stability.",
+    "A local or Git hash is not a trusted signature against a malicious writer."
+  ],
+  "optional_warning_check_ids": [],
+  "reason": "one or more required checks failed or were blocked",
+  "required_summary": {
+    "failed_or_blocked": 2,
+    "human_review": 0,
+    "passed": 10
+  },
+  "run_id": "20260904T112459+0800-c72dd325",
+  "schema_version": "1.0",
+  "started_at": "2026-09-04T11:24:59+08:00",
+  "task_id": "CODEX_20260904_BIOHUB_V19C_SV346969653_OPTIMIZATION_AUDIT_SYNC_V01"
+}

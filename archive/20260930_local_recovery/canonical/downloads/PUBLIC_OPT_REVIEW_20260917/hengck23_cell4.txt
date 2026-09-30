@@ -1,0 +1,46 @@
+#evaluation here
+
+summary_df = []
+for i, sample_id in enumerate(valid_id):
+    truth_file = f"{KAGGLE_DIR}/train/{sample_id}.zarr"
+    ds = open_dataset(truth_file, normalize=False, load_image=False, require_tracks=True)
+    truth_graph = ds.tracks
+    # print(truth_graph)
+
+    predict_file = f"{dump_dir}/{sample_id}.geff"
+    pred_result = td.graph.IndexedRXGraph.from_geff(predict_file)
+    pred_graph = pred_result[0]  # if isinstance(pred_result, tuple) else pred_result
+    # print(pred_graph)
+
+    print(sample_id, "---------------------------")
+    er = evaluate(
+        pred_graph,
+        truth_graph,
+        scale=ds.scale,
+        max_distance=7.0,
+    )
+    print("edge TP:", er.edge_tp)
+    print("edge FP:", er.edge_fp)
+    print("edge FN:", er.edge_fn)
+    print("division TP:", er.division_tp)
+    print("division FP:", er.division_fp)
+    print("division FN:", er.division_fn)
+
+    edge_jaccard = (er.edge_tp )/(er.edge_tp + er.edge_fp + er.edge_fn)
+    print("edge_jaccard:", edge_jaccard)
+
+    recall = node_recall(pred_graph, truth_graph)
+    print("node_recall:", recall)
+
+    summary_df.append({
+        "sample_id": sample_id,
+        "node_recall": recall,
+        "edge_jaccard": edge_jaccard,
+        "edge_tp": er.edge_tp,
+        "edge_fp": er.edge_fp,
+        "edge_fn": er.edge_fn,
+    })
+summary_df = pd.DataFrame(summary_df)
+print(summary_df)
+print("edge_jaccard:", summary_df["edge_jaccard"].mean())
+print("node_recall:",summary_df["node_recall"].mean())

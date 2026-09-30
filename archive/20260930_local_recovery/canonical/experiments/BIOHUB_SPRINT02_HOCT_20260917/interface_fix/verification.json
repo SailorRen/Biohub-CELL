@@ -1,0 +1,45 @@
+{
+  "status": "FIXED_LOCAL_VERIFIED",
+  "cloud_status": "NOT_RUN",
+  "original_experiment": "PARTIAL_BLOCKED",
+  "hoct_effect": "UNKNOWN",
+  "new_public_score": null,
+  "tests": {
+    "observer": 7,
+    "guard": 4,
+    "old_error_reproduced": true,
+    "real_backend": true,
+    "synthetic_selection": true,
+    "fast_stop_remaining_calls": 0,
+    "wrappers_restored": true
+  },
+  "package_version": "0.1.0rc6.dev3+g980c2d30a",
+  "backend": "<class 'tracksdata.graph._rustworkx_graph.RustWorkXGraph'>",
+  "source_wheel": "downloads/BIOHUB_SPRINT02_HOCT_20260917/support/tracksdata-0.1.0rc6.dev3+g980c2d30a-py3-none-any.whl",
+  "wheel_sha256": "5111a9058edb31272fd5c6d01ccfe6146cf190ed96b100cb3d27411a6a91ff4d",
+  "package_source_sha256": {
+    "graph/_rustworkx_graph.py": "548db539dcf066f4a1bc331ba4bbb547d0b556d763fa9746185b19be514d1d11",
+    "graph/_base_graph.py": "fd3835a3a37b0817896e063ac10f809683b632ed7582c16547d40d304df19462",
+    "nodes/_mask.py": "43297f42c31a9035e242825aab51faf1ba219b25dbadf081e6de7d113818c422"
+  },
+  "source_hashes": {
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/hoct_observer.py": "3b22aeecb1cfc1368cd9446c212c1fb2fef9d1e33e96bf4b47a87672a9fb1f9a",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/hoct_worker.py": "f3282c544bf63d4a452a707f31c6e946edf8ec8280122ced2af0b238eb79c01a",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/diagnostic_runtime.py": "9a5ef3f835d7a4e5abaaa0d76db5a29a793515c54666d4a97addaa518bbe534d",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/test_observer.py": "c51ead676a21ece1a8f9688f7572149f7e2f5e4ae35b0e1ce5383abc0c8906a7",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/interface_fix/build_fixed.py": "a642a0757b0658771d32b3d8a1a34fc02bac3f68039221030f381acb77da79c5",
+    "experiments/BIOHUB_SPRINT02_HOCT_20260917/interface_fix/diagnostic_fixed.ipynb": "1f4cbb3c98089bfb5f3fa0901922e87edb6cb88636e12af1dec6f645a919c729"
+  },
+  "budgets_used": {
+    "kaggle_write": 0,
+    "save_run": 0,
+    "submission": 0,
+    "dataset_write": 0,
+    "training": 0,
+    "model_inference": 0,
+    "final_selection": 0
+  },
+  "limitations": [
+    "No HOCT model inference, solver execution or cloud rerun. Synthetic selected graph; real frozen graph interfaces. NumPy local 2.4.2 vs historical cloud 2.0.2; graph backend source matches wheel bytewise."
+  ]
+}

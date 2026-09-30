@@ -1,0 +1,42 @@
+--- ttacell0
++++ run84cell0
+@@ -1,21 +1,14 @@
+-# Cell-tracking-during-development submission pipeline.
+-#
+-# Stages: (1) a dual-seed TemporalUNet3D detector produces per-frame center
+-#   heatmaps that are fused into candidate nodes; (2) a transformer edge model
+-#   scores parent->child links; (3) an ILP solver selects a consistent track
+-#   graph; (4) a division-aware post-processing pass (safe-div) proposes cell
+-#   divisions and a DeepCenter model vetoes false ones.
+-#
+-# All behaviour below is configured through BIOHUB_* environment variables read
+-# by the pipeline. The knobs set here are the values validated to score best on
+-# the leaderboard; each block is grouped and commented by what it controls.
++
+ import os
+ BIOHUB_PRESET = 'harmonic_v3_division_wide'
+-BIOHUB_SCORE_AXIS = 'public 0.939 base + holdout-selected post-process configuration'
++BIOHUB_SCORE_AXIS = 'v19c reported LB 0.939 sister separation radius 14um arm'
+ 
+ os.environ["BIOHUB_OUTPUT_FILTER_SHORT_TRACKS"] = "1"
+-os.environ["BIOHUB_DET_THRESHOLD"] = "0.965"
+-os.environ["BIOHUB_MOTION_RELINK_LEARNED_BONUS"] = '1.0'
++os.environ["BIOHUB_DET_THRESHOLD"] = "0.965"  # x54: v19 swept DOWN from 0.96875 (0.96->0.937, 0.95->0.937, 0.94->0.936) so their own gradient points UP, and they stopped. Dense LB punishes over-detection; raising the detection threshold is the most direct volume reduction available.
++os.environ["BIOHUB_DEEPCENTER_SAFE_DIV_THRESHOLD"] = "0.25"  # x56: STACK. x40 (0.26) moved divisions 148->87 and scored 0.942; x54 (DET 0.975) moved NODES -1.1% while leaving divisions at 152. Measured orthogonal: different counters, so they should compose.
++os.environ["BIOHUB_MOTION_RELINK_LEARNED_BONUS"] = '3.0'  # mianwang1024/biohub-relink-v1 (author LB 0.946): 'relink bonus 3.0 / tight 7.0 / relaxed 11.0 -- local 199-movie CV 0.91944'
++os.environ["BIOHUB_MOTION_RELINK_TIGHT_UM"] = '7.0'  # pipeline default 6.0
++os.environ["BIOHUB_MOTION_RELINK_RELAXED_UM"] = '11.0'  # pipeline default 10.0
+ os.environ["BIOHUB_ILP_APPEARANCE_WEIGHT"] = "0.0"
+ os.environ["BIOHUB_ILP_DISAPPEARANCE_WEIGHT"] = "2"
+ os.environ["BIOHUB_GAP_CLOSE_MAX_GAP"] = "2"
+@@ -63,10 +56,6 @@
+ os.environ["BIOHUB_BIDIRECTIONAL_FUSION_MODE"] = "harmonic_probability"
+ os.environ["BIOHUB_DUAL_SEED_MIN_CANDIDATE_RETENTION"] = "0.90"
+ os.environ["BIOHUB_DIAGNOSTIC_ARM"] = "harmonic_association_production"
+-os.environ["BIOHUB_VALIDATOR_N_PER_TYPE"] = "4"
+-os.environ["BIOHUB_PPSWEEP_SELECT_MARGIN"] = "0.001"
+-os.environ["BIOHUB_PPSWEEP_MAX_ADJ_LOSS"] = "0.0005"
+ 
+-os.environ["BIOHUB_DEEPCENTER_SAFE_DIV_THRESHOLD"] = "0.25"
+ print("BIOHUB_PRESET:", BIOHUB_PRESET)
+ print("BIOHUB_SCORE_AXIS:", BIOHUB_SCORE_AXIS)

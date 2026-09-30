@@ -1,0 +1,19 @@
+{
+  "status": "NOT_STARTED",
+  "updated_at": "2026-09-30T05:12:48.104339+00:00",
+  "deletion_authorized_by_user": true,
+  "condition": "Only after GitHub byte readback and frozen archive verifier PASS",
+  "targets": [
+    "/Users/sailor/kaggle/项目/Biohub - CELL",
+    "/Users/sailor/.codex/worktrees/final-ilp-readmit/Biohub - CELL",
+    "/private/tmp/biohub-final-remote-verify-20260930.git"
+  ],
+  "managed_worktree_policy": "Use archive_worktree; app retains recoverable snapshot",
+  "outside_scope": [
+    "other competitions",
+    "global environments",
+    "credentials",
+    "conversation and memory history"
+  ],
+  "new_kaggle_writes": 0
+}

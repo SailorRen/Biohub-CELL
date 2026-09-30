@@ -1,0 +1,18 @@
+{
+  "id": 132979728,
+  "ref": "sailorren/biohub-v19c-public0939-sis14-only",
+  "title": "biohub-v19c-public0939-sis14-only",
+  "author": "Sailor Ren",
+  "slug": "biohub-v19c-public0939-sis14-only",
+  "current_version_number": 1,
+  "is_private": true,
+  "language": "python",
+  "kernel_type": "notebook",
+  "enable_gpu": true,
+  "enable_internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "observed_at_asia_shanghai": "2026-09-07T09:48:41.689339+08:00",
+  "expected_version": 1,
+  "version_guard_pass": true,
+  "response_source_sha256": "92bf632410fedc9eb7e0984a20525590b5583d5abb002d8239ff65d9f51fbf57"
+}

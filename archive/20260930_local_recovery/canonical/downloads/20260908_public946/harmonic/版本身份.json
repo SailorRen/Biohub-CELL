@@ -1,0 +1,57 @@
+{
+  "id": 131620291,
+  "ref": "flexonafft/biohub-harmonic-fusion",
+  "title": "Biohub Harmonic Fusion",
+  "author": "Igor Zharov",
+  "slug": "biohub-harmonic-fusion",
+  "current_version_number": 29,
+  "is_private": false,
+  "language": "python",
+  "kernel_type": "notebook",
+  "enable_gpu": true,
+  "enable_internet": false,
+  "machine_shape": "NvidiaTeslaT4",
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "dataset_data_sources": [
+    "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+    "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+    "pilkwang/biohub-tracking-support-pack-50ep-v1"
+  ],
+  "competition_data_sources": [
+    "biohub-cell-tracking-during-development"
+  ],
+  "metadata_fields": [
+    "_id",
+    "_ref",
+    "_title",
+    "_author",
+    "_slug",
+    "_last_run_time",
+    "_language",
+    "_kernel_type",
+    "_is_private",
+    "_enable_gpu",
+    "_enable_internet",
+    "_category_ids",
+    "_dataset_data_sources",
+    "_kernel_data_sources",
+    "_competition_data_sources",
+    "_total_votes",
+    "_model_data_sources",
+    "_enable_tpu",
+    "_current_version_number",
+    "_docker_image",
+    "_machine_shape",
+    "_is_frozen"
+  ],
+  "blob_fields": [
+    "_source",
+    "_language",
+    "_kernel_type",
+    "_slug",
+    "_is_frozen"
+  ],
+  "observed_at_asia_shanghai": "2026-09-08T09:21:46.674524+08:00",
+  "response_source_sha256": "6e1f25c4db92ca05084a3cab39ff083d10c3f43a730581c141363301c0e985bb",
+  "source_bytes": 211555
+}

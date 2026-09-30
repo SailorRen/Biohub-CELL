@@ -1,0 +1,30 @@
+[
+  {
+    "command": "python3 -m venv --system-site-packages downloads/LINEFIT_BOUNDARY_20260909/scorer/venv",
+    "exit_code": 0
+  },
+  {
+    "command": "downloads/LINEFIT_BOUNDARY_20260909/scorer/venv/bin/python -m pip install --no-cache-dir 'tracksdata @ git+https://github.com/royerlab/tracksdata.git@980c2d30a' 'polars==1.42.0'",
+    "exit_code": 1,
+    "result": "Git clone TLS failure; no installation completed."
+  },
+  {
+    "command": "curl -fsSL --retry 1 --max-time 45 https://codeload.github.com/royerlab/tracksdata/tar.gz/980c2d30a -o downloads/LINEFIT_BOUNDARY_20260909/scorer/tracksdata_980c2d30a.tar.gz",
+    "exit_code": 0
+  },
+  {
+    "command": "SETUPTOOLS_SCM_PRETEND_VERSION_FOR_TRACKSDATA=0.1.0rc6.dev3+g980c2d30a downloads/LINEFIT_BOUNDARY_20260909/scorer/venv/bin/python -m pip install --no-cache-dir downloads/LINEFIT_BOUNDARY_20260909/scorer/tracksdata_980c2d30a.tar.gz 'polars==1.42.0'",
+    "exit_code": 1,
+    "result": "Archive lacked VCS version metadata; per-distribution override did not apply."
+  },
+  {
+    "command": "SETUPTOOLS_SCM_PRETEND_VERSION=0.1.0rc6.dev3+g980c2d30a downloads/LINEFIT_BOUNDARY_20260909/scorer/venv/bin/python -m pip install --no-cache-dir downloads/LINEFIT_BOUNDARY_20260909/scorer/tracksdata_980c2d30a.tar.gz 'polars==1.42.0'",
+    "exit_code": 0,
+    "result": "Installed only in task-local venv; subprocess-scoped version metadata supplied."
+  },
+  {
+    "command": "gh api repos/royerlab/tracksdata/commits/980c2d30a --jq .sha",
+    "exit_code": 0,
+    "result": "980c2d30aeca76b86eddef0aeadb4d10dee8530d"
+  }
+]

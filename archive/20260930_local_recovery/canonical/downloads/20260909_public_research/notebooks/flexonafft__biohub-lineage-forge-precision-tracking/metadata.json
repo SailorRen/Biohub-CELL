@@ -1,0 +1,90 @@
+{
+  "ref": "flexonafft/biohub-lineage-forge-precision-tracking",
+  "kernel_id": 133330467,
+  "version": 7,
+  "observed_at_utc": "2026-09-09T01:46:50.984961+00:00",
+  "sha256": "df7eacbb6936fc1767755c154a3047899d2641c1c69070c4d3dac83dca772db3",
+  "bytes": 220793,
+  "cells": [
+    {
+      "index": 0,
+      "type": "code",
+      "lines": 71,
+      "sha256": "ee771676ee3891d9614827dad820229fa6f485dfe522be59e3ee07c4a343c34b"
+    },
+    {
+      "index": 1,
+      "type": "code",
+      "lines": 43,
+      "sha256": "99198956a4c7725d85c6aab0d478368749824801716c6d39cf5bf915187ac500"
+    },
+    {
+      "index": 2,
+      "type": "code",
+      "lines": 238,
+      "sha256": "77fdadffbd02c87e8f686e55944b6741312be552f34c8dc615e6391a1959a2dc"
+    },
+    {
+      "index": 3,
+      "type": "code",
+      "lines": 682,
+      "sha256": "0f62c46bbec00a2d3d6bbde0efb89d5713204983d51c9c3cf73df1869cf12f8f"
+    },
+    {
+      "index": 4,
+      "type": "code",
+      "lines": 460,
+      "sha256": "768bd13fbf10d26731819e0d19f79c11d5a1d0fad7065ec5f5f66c2c5fc3187c"
+    },
+    {
+      "index": 5,
+      "type": "code",
+      "lines": 1685,
+      "sha256": "93c9742433b4dec4332bd1ddae3fce07892a318b265b36f7c10e2f3174417a34"
+    },
+    {
+      "index": 6,
+      "type": "code",
+      "lines": 178,
+      "sha256": "c300805e0268602d76042dd271bcc3224fda6af2a52569e16bebc446701d66a5"
+    },
+    {
+      "index": 7,
+      "type": "code",
+      "lines": 178,
+      "sha256": "7400441b355cbe09311e9c638c44264e374ad448d9ab1020b9d5866746e84ee7"
+    },
+    {
+      "index": 8,
+      "type": "code",
+      "lines": 318,
+      "sha256": "54ed30a2f73355f369c112057570e9dd6a37e7f5521a6baf9ccdf4a8fc4ba6f8"
+    },
+    {
+      "index": 9,
+      "type": "code",
+      "lines": 146,
+      "sha256": "3986eaba6600507225a7140c033c14ae039a4fa95b3602806b43a8f2f11d90a0"
+    },
+    {
+      "index": 10,
+      "type": "code",
+      "lines": 126,
+      "sha256": "ece3664cf924f36f3b838bac34fa636e67a5c865e6bf21ab61ff086bd1f87dfb"
+    },
+    {
+      "index": 11,
+      "type": "code",
+      "lines": 44,
+      "sha256": "1b69f438acf6f21117acb50f1b42816a5da627c4dcec80b8e76372ef11793f15"
+    }
+  ],
+  "dataset_sources": [
+    "pilkwang/biohub-deepcenter-unet3d-center-prior-v1",
+    "pilkwang/biohub-temporal-unet3d-seed314159-v1",
+    "pilkwang/biohub-tracking-support-pack-50ep-v1"
+  ],
+  "kernel_sources": [],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461"
+}

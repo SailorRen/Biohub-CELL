@@ -1,0 +1,19 @@
+--- V21A_cell_3
++++ harmonic_cell_1
+@@ -1,4 +1,4 @@
+-# Configuration guard: assert the single intended model-level change.
++
+ import json as _guard_json
+ import math as _guard_math
+ import os as _guard_os
+@@ -7,9 +7,7 @@
+     "BIOHUB_DET_THRESHOLD": 0.965,
+     "BIOHUB_ILP_APPEARANCE_WEIGHT": 0.0,
+     "BIOHUB_ILP_DISAPPEARANCE_WEIGHT": 2,
+-    "BIOHUB_GAP_CLOSE_UM": 5.8,
+-    "BIOHUB_SAFE_DIV_MAX_UM": 9.0,
+-    "BIOHUB_DEEPCENTER_SAFE_DIV_THRESHOLD": 0.26,
++    "BIOHUB_GAP_CLOSE_UM": 5.0,
+     "BIOHUB_OUTPUT_MIN_TRACK_LEN": 6.0,
+     "BIOHUB_BIDIRECTIONAL_EDGE_WEIGHT": 0.15,
+ }

@@ -1,0 +1,328 @@
+--- run77_cell_5
++++ harmonic_cell_5
+@@ -998,7 +998,7 @@
+     global_cap = max(1, int(round(max(1, len(edges)) * SAFE_DIV_GLOBAL_FRAC_CAP)))
+     added: list[dict[str, object]] = []
+     used_targets: set[int] = set()
+-    used_sources: set[int] = set()  # parallel to used_targets, for the parent side.
++    used_sources: set[int] = set()  
+  
+     for t in sorted(ids_by_t):
+         child_frame_ids = ids_by_t.get(t + 1, [])
+@@ -1009,6 +1009,11 @@
+         if not source_ids or not candidate_ids:
+             continue
+  
++        
++        
++        
++        
++        
+         candidate_tree = None
+         if SAFE_DIV_REQUIRE_MUTUAL_NN:
+             candidate_positions = np.stack([_position_um(nodes_by_id[cid]) for cid in candidate_ids])
+@@ -1027,6 +1032,10 @@
+             if child_dist > SAFE_DIV_EXISTING_CHILD_MAX_UM:
+                 continue
+  
++            
++            
++            
++            
+             mutual_nn_id = None
+             if candidate_tree is not None:
+                 _, nn_idx = candidate_tree.query(_position_um(existing_child))
+@@ -1043,11 +1052,15 @@
+                 if sister_dist > SAFE_DIV_SISTER_MAX_UM:
+                     continue
+  
+-                # PATCH: mutual-nearest-orphan.
++                
+                 if SAFE_DIV_REQUIRE_MUTUAL_NN and candidate_id != mutual_nn_id:
+                     stats["safe_division_mutual_nn_rejected"] += 1
+                     continue
+  
++                
++                
++                
++                
+                 if SAFE_DIV_REQUIRE_DIVERGENCE:
+                     c1_succ = out_by_source.get(existing_child_id, [])
+                     q_succ = out_by_source.get(candidate_id, [])
+@@ -1081,6 +1094,12 @@
+                     DEEPCENTER_SAFE_DIV_THRESHOLD,
+                 ):
+                     continue
++                
++                
++                
++                
++                
++                
+                 if SAFE_DIV_SISTER_SYMMETRY_TAU > 0.0:
+                     _sym_denom = max((child_dist + parent_dist) / 2.0, 1e-6)
+                     if abs(child_dist - parent_dist) / _sym_denom > SAFE_DIV_SISTER_SYMMETRY_TAU:
+@@ -1362,12 +1381,12 @@
+         "gap2_added_edges": 0,
+         "gap2_skipped_cap": 0,
+         "safe_division_candidates": 0,
+-        "safe_division_geometric_candidates": 0,  # REVIEW: pre-DeepCenter-veto count, to make the veto's effect visible
++        "safe_division_geometric_candidates": 0,  
+         "safe_divisions_added": 0,
+         "safe_division_skipped_cap": 0,
+         "safe_division_mutual_nn_rejected": 0,
+         "safe_division_divergence_rejected": 0,
+-        "safe_division_symmetry_rejected": 0,  # G1 sister-symmetry gate rejects (tau=0.6)
++        "safe_division_symmetry_rejected": 0,  
+         "deepcenter_gap_checked": 0,
+         "deepcenter_gap_bypassed_strong_motion": 0,
+         "deepcenter_gap_bypassed_observed_node": 0,
+@@ -1537,123 +1556,130 @@
+ 
+ DEEPCENTER_VETO_DETECTOR = load_deepcenter_veto_detector()
+ 
+-geffs = sorted((REPO_DIR / "predictions").glob(f"*/{METHOD}/split_0/*.geff"))
+-print(f"Found {len(geffs)} prediction graphs")
+-if len(geffs) != len(test_stems):
+-    found = {path.stem for path in geffs}
+-    missing = sorted(set(test_stems) - found)
+-    raise RuntimeError(f"Expected {len(test_stems)} graphs, found {len(geffs)}. Missing: {missing[:10]}")
+-
+-stats_rows: list[dict[str, object]] = []
+-seen_datasets: set[str] = set()
+-row_id = 0
+-total_nodes = 0
+-total_edges = 0
+-
+-with SUBMISSION_PATH.open("w", newline="") as f:
+-    writer = csv.DictWriter(f, fieldnames=CSV_COLUMNS)
+-    writer.writeheader()
+-
+-    for geff_path in geffs:
+-        dataset = geff_path.stem
+-        seen_datasets.add(dataset)
+-        graph = graph_from_geff(geff_path)
+-
+-        nodes_by_id: dict[int, dict[str, object]] = {}
+-        for row in graph.node_attrs().iter_rows(named=True):
+-            node_id = int(row["node_id"])
+-            nodes_by_id[node_id] = {
+-                "node_id": node_id,
+-                "t": int(row["t"]),
+-                "z": float(row["z"]),
+-                "y": float(row["y"]),
+-                "x": float(row["x"]),
+-            }
+-
+-        raw_edges: list[dict[str, object]] = []
+-        for row in graph.edge_attrs().iter_rows(named=True):
+-            edge_prob = row.get("edge_prob") if hasattr(row, "get") else None
+-            raw_edges.append({
+-                "source_id": int(row["source_id"]),
+-                "target_id": int(row["target_id"]),
+-                "edge_prob": None if edge_prob is None else float(edge_prob),
++def write_test_submission(tag: str = "base") -> None:
++    
++    
++    geffs = sorted((REPO_DIR / "predictions").glob(f"*/{METHOD}/split_0/*.geff"))
++    print(f"Found {len(geffs)} prediction graphs")
++    if len(geffs) != len(test_stems):
++        found = {path.stem for path in geffs}
++        missing = sorted(set(test_stems) - found)
++        raise RuntimeError(f"Expected {len(test_stems)} graphs, found {len(geffs)}. Missing: {missing[:10]}")
++
++    stats_rows: list[dict[str, object]] = []
++    seen_datasets: set[str] = set()
++    row_id = 0
++    total_nodes = 0
++    total_edges = 0
++
++    with SUBMISSION_PATH.open("w", newline="") as f:
++        writer = csv.DictWriter(f, fieldnames=CSV_COLUMNS)
++        writer.writeheader()
++
++        for geff_path in geffs:
++            dataset = geff_path.stem
++            seen_datasets.add(dataset)
++            graph = graph_from_geff(geff_path)
++
++            nodes_by_id: dict[int, dict[str, object]] = {}
++            for row in graph.node_attrs().iter_rows(named=True):
++                node_id = int(row["node_id"])
++                nodes_by_id[node_id] = {
++                    "node_id": node_id,
++                    "t": int(row["t"]),
++                    "z": float(row["z"]),
++                    "y": float(row["y"]),
++                    "x": float(row["x"]),
++                }
++
++            raw_edges: list[dict[str, object]] = []
++            for row in graph.edge_attrs().iter_rows(named=True):
++                edge_prob = row.get("edge_prob") if hasattr(row, "get") else None
++                raw_edges.append({
++                    "source_id": int(row["source_id"]),
++                    "target_id": int(row["target_id"]),
++                    "edge_prob": None if edge_prob is None else float(edge_prob),
++                })
++
++            raw_node_count = len(nodes_by_id)
++            nodes_by_id, edges, filter_stats = filter_output_graph(nodes_by_id, raw_edges, dataset=dataset, deepcenter_bundle=DEEPCENTER_VETO_DETECTOR)
++            if not nodes_by_id:
++                raise AssertionError(f"{dataset}: post-processing removed every node")
++
++            for node_id in sorted(nodes_by_id):
++                node = nodes_by_id[node_id]
++                writer.writerow({
++                    "id": row_id,
++                    "dataset": dataset,
++                    "row_type": "node",
++                    "node_id": int(node["node_id"]),
++                    "t": int(node["t"]),
++                    "z": max(0, int(round(float(node["z"])))),
++                    "y": max(0, int(round(float(node["y"])))),
++                    "x": max(0, int(round(float(node["x"])))),
++                    "source_id": -1,
++                    "target_id": -1,
++                })
++                row_id += 1
++
++            division_sources: dict[int, int] = {}
++            for edge in edges:
++                source_id = int(edge["source_id"])
++                target_id = int(edge["target_id"])
++                if source_id not in nodes_by_id or target_id not in nodes_by_id:
++                    raise AssertionError(f"{dataset}: dangling edge after filtering")
++                writer.writerow({
++                    "id": row_id,
++                    "dataset": dataset,
++                    "row_type": "edge",
++                    "node_id": -1,
++                    "t": -1,
++                    "z": -1,
++                    "y": -1,
++                    "x": -1,
++                    "source_id": source_id,
++                    "target_id": target_id,
++                })
++                row_id += 1
++                division_sources[source_id] = division_sources.get(source_id, 0) + 1
++
++            node_count = len(nodes_by_id)
++            edge_count = len(edges)
++            total_nodes += node_count
++            total_edges += edge_count
++            stats_rows.append({
++                "dataset": dataset,
++                "raw_nodes": raw_node_count,
++                "nodes": node_count,
++                "raw_edges": filter_stats["raw_edges"],
++                "edges": edge_count,
++                "division_like_sources": sum(1 for count in division_sources.values() if count >= 2),
++                "edge_to_node_ratio": edge_count / max(node_count, 1),
++                "gap_added_nodes_frac": filter_stats.get("gap_added_nodes", 0) / max(raw_node_count, 1),
++                **filter_stats,
+             })
+ 
+-        raw_node_count = len(nodes_by_id)
+-        nodes_by_id, edges, filter_stats = filter_output_graph(nodes_by_id, raw_edges, dataset=dataset, deepcenter_bundle=DEEPCENTER_VETO_DETECTOR)
+-        if not nodes_by_id:
+-            raise AssertionError(f"{dataset}: post-processing removed every node")
+-
+-        for node_id in sorted(nodes_by_id):
+-            node = nodes_by_id[node_id]
+-            writer.writerow({
+-                "id": row_id,
+-                "dataset": dataset,
+-                "row_type": "node",
+-                "node_id": int(node["node_id"]),
+-                "t": int(node["t"]),
+-                "z": max(0, int(round(float(node["z"])))),
+-                "y": max(0, int(round(float(node["y"])))),
+-                "x": max(0, int(round(float(node["x"])))),
+-                "source_id": -1,
+-                "target_id": -1,
+-            })
+-            row_id += 1
+-
+-        division_sources: dict[int, int] = {}
+-        for edge in edges:
+-            source_id = int(edge["source_id"])
+-            target_id = int(edge["target_id"])
+-            if source_id not in nodes_by_id or target_id not in nodes_by_id:
+-                raise AssertionError(f"{dataset}: dangling edge after filtering")
+-            writer.writerow({
+-                "id": row_id,
+-                "dataset": dataset,
+-                "row_type": "edge",
+-                "node_id": -1,
+-                "t": -1,
+-                "z": -1,
+-                "y": -1,
+-                "x": -1,
+-                "source_id": source_id,
+-                "target_id": target_id,
+-            })
+-            row_id += 1
+-            division_sources[source_id] = division_sources.get(source_id, 0) + 1
+-
+-        node_count = len(nodes_by_id)
+-        edge_count = len(edges)
+-        total_nodes += node_count
+-        total_edges += edge_count
+-        stats_rows.append({
+-            "dataset": dataset,
+-            "raw_nodes": raw_node_count,
+-            "nodes": node_count,
+-            "raw_edges": filter_stats["raw_edges"],
+-            "edges": edge_count,
+-            "division_like_sources": sum(1 for count in division_sources.values() if count >= 2),
+-            "edge_to_node_ratio": edge_count / max(node_count, 1),
+-            "gap_added_nodes_frac": filter_stats.get("gap_added_nodes", 0) / max(raw_node_count, 1),
+-            **filter_stats,
+-        })
+-
+-expected_datasets = set(test_stems)
+-missing_datasets = sorted(expected_datasets - seen_datasets)
+-extra_datasets = sorted(seen_datasets - expected_datasets)
+-if missing_datasets or extra_datasets:
+-    raise AssertionError({"missing": missing_datasets[:10], "extra": extra_datasets[:10]})
+-assert row_id == total_nodes + total_edges, "Internal row counter mismatch"
+-assert total_nodes > 0, "No node rows produced"
+-
+-header = SUBMISSION_PATH.open().readline().strip().split(",")
+-assert header == CSV_COLUMNS, f"Bad CSV header: {header}"
+-
+-stats = pd.DataFrame(stats_rows).sort_values("dataset").reset_index(drop=True)
+-stats["predict_minutes_total"] = predict_seconds / 60.0
+-stats["experiment_tag"] = EXPERIMENT_TAG
+-stats.to_csv(RUN_STATS_PATH, index=False)
+-
+-print(f"Wrote {SUBMISSION_PATH} with {row_id:,} rows")
+-print(f"Node rows: {total_nodes:,} | edge rows: {total_edges:,}")
+-print(f"Wrote {RUN_STATS_PATH}")
+-display(pd.read_csv(SUBMISSION_PATH, nrows=8))
++    expected_datasets = set(test_stems)
++    missing_datasets = sorted(expected_datasets - seen_datasets)
++    extra_datasets = sorted(seen_datasets - expected_datasets)
++    if missing_datasets or extra_datasets:
++        raise AssertionError({"missing": missing_datasets[:10], "extra": extra_datasets[:10]})
++    assert row_id == total_nodes + total_edges, "Internal row counter mismatch"
++    assert total_nodes > 0, "No node rows produced"
++
++    header = SUBMISSION_PATH.open().readline().strip().split(",")
++    assert header == CSV_COLUMNS, f"Bad CSV header: {header}"
++
++    stats = pd.DataFrame(stats_rows).sort_values("dataset").reset_index(drop=True)
++    stats["predict_minutes_total"] = predict_seconds / 60.0
++    stats["experiment_tag"] = f"{EXPERIMENT_TAG}:{tag}"
++    stats.to_csv(RUN_STATS_PATH, index=False)
++
++    print(f"Wrote {SUBMISSION_PATH} with {row_id:,} rows")
++    print(f"Node rows: {total_nodes:,} | edge rows: {total_edges:,}")
++    print(f"Wrote {RUN_STATS_PATH}")
++    display(pd.read_csv(SUBMISSION_PATH, nrows=8))
++
++
++write_test_submission("base")
++

@@ -1,0 +1,53 @@
+--- ttacell3
++++ harmoniccell3
+@@ -67,8 +67,8 @@
+ REQUIRED_MODULES = {name: module for name, (module, _) in PACKAGE_SPECS.items() if module}
+ FALLBACK_ARTIFACT_SLUGS = ["biohub-tracking-support-pack-v1"]
+ 
+-# The safe path for offline reruns is to use attached wheels.
+-# Set BIOHUB_ALLOW_PIP_INSTALL=1 only for an interactive internet-enabled run.
++
++
+ ALLOW_PIP_INSTALL = os.environ.get("BIOHUB_ALLOW_PIP_INSTALL", "0") != "0"
+ 
+ 
+@@ -441,9 +441,9 @@
+ ensure_dependencies(ARTIFACTS)
+ materialize_inference_repo(ARTIFACTS)
+ 
+-# Verify every materialized support-repo Python source before the next cell
+-# performs the sealed dynamic inference patch. Also hash the actual primary and
+-# DeepCenter checkpoint bytes that the production path will use.
++
++
++
+ import hashlib as _integrity_hashlib
+ 
+ _support_expected_sha256 = {
+@@ -463,7 +463,7 @@
+ }
+ _support_expected_manifest_sha256 = "978b626d1fd1e7397435a437dfe68691defe1572fc3c20e61012d7c9b52ed029"
+ _primary_expected_sha256 = "12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771"
+-_deepcenter_expected_sha256 = "8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0"  # best.pt (epoch 2), not checkpoint_last.pt (epoch 500)
++_deepcenter_expected_sha256 = "8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0"  
+ 
+ 
+ def _integrity_sha256_file(path: Path) -> str:
+@@ -567,7 +567,7 @@
+ print("DeepCenter materialized SHA256:", _deepcenter_actual_sha256)
+ 
+ 
+-# Resolve the independent-seed pack by checksum, then materialize only its weights.
++
+ import hashlib as _hashlib
+ 
+ _secondary_manifest_explicit = Path(os.environ.get(
+@@ -648,7 +648,7 @@
+ print("Secondary SHA256:", _secondary_actual_sha256)
+ print("Secondary edge-logit weight:", os.environ["BIOHUB_SECONDARY_EDGE_WEIGHT"])
+ 
+-os.environ["BIOHUB_SECONDARY_DETECTION_WEIGHT"] = "0.80"  # our swept detection-fusion peak (was 0.475)
++os.environ["BIOHUB_SECONDARY_DETECTION_WEIGHT"] = "0.80"  
+ os.environ["BIOHUB_SECONDARY_LINK_MODE"] = "low_margin_consensus"
+ os.environ["BIOHUB_SECONDARY_MIX_TEMPERATURE"] = "1"
+ os.environ["BIOHUB_SECONDARY_LOW_MARGIN_MAX"] = "0.35"

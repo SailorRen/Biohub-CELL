@@ -1,0 +1,11 @@
+--- ttacell4
++++ run84cell4
+@@ -220,8 +220,6 @@
+ if 'EDGE_TTA_ACTIVE' not in _ps.read_text():
+     raise RuntimeError('EDGE-TTA PATCH DID NOT PERSIST')
+ os.environ['BIOHUB_EDGE_FEATURE_TTA'] = '1'
+-print('EDGE_TTA patch installed and enabled in', _ps)
+-# ===== end edge-feature TTA =====
+ 
+ 
+ def list_test_stems() -> list[str]:

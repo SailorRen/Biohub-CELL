@@ -1,0 +1,28 @@
+{
+  "baseline": {
+    "contract_matches_head": false,
+    "contract_tracked": false,
+    "git_repository": true,
+    "head": "a0e63708a60d72e2eab907c03a8cb9c47abe378a",
+    "integrity_scope": "local-sha256-only"
+  },
+  "claim": {
+    "claimed_at": "2026-09-09T09:31:14+08:00",
+    "source": "agent_report",
+    "status": "CLAIMED_COMPLETE",
+    "summary_chars": 99,
+    "summary_sha256": "06649f85411648b3c1c9e4d76acc53e48cb71f3d4c64702f0d72a35ecd795515"
+  },
+  "contract_path": "experiments/PUBLIC946_TTA_20260908/manifest.json",
+  "contract_sha256": "e126e7fff52941518b70a3dc3c8e9523a804f7fcffdd511079c63f6f098831e7",
+  "latest_verification": {
+    "final_status": "COMPLETED_VERIFIED",
+    "finished_at": "2026-09-09T09:34:34+08:00",
+    "report_path": ".task-verification/PUBLIC946_TTA_20260908/runs/20260909T093432+0800-bab5c7e3.json",
+    "run_id": "20260909T093432+0800-bab5c7e3"
+  },
+  "prepared_at": "2026-09-08T11:32:55+08:00",
+  "schema_version": "1.0",
+  "status": "COMPLETED_VERIFIED",
+  "task_id": "PUBLIC946_TTA_20260908"
+}

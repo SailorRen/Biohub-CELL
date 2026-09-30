@@ -1,0 +1,46 @@
+--- lb942_cell_2
++++ harmonic_cell_2
+@@ -22,7 +22,7 @@
+     Path(f"/kaggle/input/{COMPETITION}"),
+ ]
+ COMP_DIR = next((path for path in COMP_DIR_CANDIDATES if path.exists()), COMP_DIR_CANDIDATES[0])
+-# Hard-bound production input: competition test images only.
++
+ TEST_DIR = COMP_DIR / "test"
+ 
+ WORKING_DIR = Path("/kaggle/working") if Path("/kaggle/working").exists() else Path(".")
+@@ -48,15 +48,15 @@
+ ILP_DISAPPEARANCE_WEIGHT = float(os.environ.get("BIOHUB_ILP_DISAPPEARANCE_WEIGHT", "0.1"))
+ ILP_DIVISION_WEIGHT = float(os.environ.get("BIOHUB_ILP_DIVISION_WEIGHT", "1.0"))
+ 
+-# Hard-bound full production coverage. Internal GPU sharding remains exhaustive.
++
+ SLICE = ""
+ 
+-# If dependencies are not already installed and no offline wheels are attached,
+-# this controls whether the notebook attempts PyPI installation.
++
++
+ ALLOW_PIP_INSTALL = os.environ.get("BIOHUB_ALLOW_PIP_INSTALL", "0") != "0"
+ RUN_OUTPUT_DIAGNOSTICS = os.environ.get("BIOHUB_RUN_OUTPUT_DIAGNOSTICS", "1") != "0"
+ 
+-# Output-level graph post-processing.
++
+ OUTPUT_EDGE_MAX_UM = float(os.environ.get("BIOHUB_OUTPUT_EDGE_MAX_UM", "14.0"))
+ OUTPUT_ENFORCE_NEXT_FRAME = os.environ.get("BIOHUB_OUTPUT_ENFORCE_NEXT_FRAME", "1") != "0"
+ OUTPUT_SINGLE_PARENT_REPAIR = os.environ.get("BIOHUB_OUTPUT_SINGLE_PARENT_REPAIR", "1") != "0"
+@@ -121,12 +121,12 @@
+ SAFE_DIV_FRAME_FRAC_CAP = float(os.environ.get("BIOHUB_SAFE_DIV_FRAME_FRAC_CAP", "0.008"))
+ SAFE_DIV_GLOBAL_FRAC_CAP = float(os.environ.get("BIOHUB_SAFE_DIV_GLOBAL_FRAC_CAP", "0.004"))
+ 
+-# --- new config: add next to the existing SAFE_DIV_* block ---
++
+ SAFE_DIV_DIVERGE_UM = float(os.environ.get("BIOHUB_SAFE_DIV_DIVERGE_UM", "2.25"))
+ SAFE_DIV_REQUIRE_DIVERGENCE = os.environ.get("BIOHUB_SAFE_DIV_REQUIRE_DIVERGENCE", "1") != "0"
+ SAFE_DIV_REQUIRE_MUTUAL_NN = os.environ.get("BIOHUB_SAFE_DIV_REQUIRE_MUTUAL_NN", "1") != "0"
+ 
+-# DeepCenter support is retained for compatibility, but this selected run keeps it disabled.
++
+ USE_DEEPCENTER_VETO = os.environ.get("BIOHUB_USE_DEEPCENTER_VETO", "1") != "0"
+ REQUIRE_DEEPCENTER_VETO = os.environ.get("BIOHUB_REQUIRE_DEEPCENTER_VETO", "1") != "0"
+ DEEPCENTER_MANIFEST_DEFAULT = os.environ.get(

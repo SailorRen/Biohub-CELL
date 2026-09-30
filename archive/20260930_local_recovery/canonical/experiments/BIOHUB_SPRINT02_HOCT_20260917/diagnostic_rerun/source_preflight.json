@@ -1,0 +1,92 @@
+{
+  "status": "STATIC_AND_LOCAL_TESTS_VERIFIED_WRITE_NOT_SENT",
+  "source_sha256": "1f4cbb3c98089bfb5f3fa0901922e87edb6cb88636e12af1dec6f645a919c729",
+  "cells": [
+    {
+      "index": 0,
+      "lines": 2,
+      "sha256": "4f3cb456752a42016ab2d1c4aed8c53524b6ef9e6785f4146018323811efd597"
+    },
+    {
+      "index": 1,
+      "lines": 69,
+      "sha256": "545339ff52ac4315bffaf1131fcf769bb1a260ca523e988f19af9432979fc4bd"
+    },
+    {
+      "index": 2,
+      "lines": 43,
+      "sha256": "99198956a4c7725d85c6aab0d478368749824801716c6d39cf5bf915187ac500"
+    },
+    {
+      "index": 3,
+      "lines": 238,
+      "sha256": "77fdadffbd02c87e8f686e55944b6741312be552f34c8dc615e6391a1959a2dc"
+    },
+    {
+      "index": 4,
+      "lines": 682,
+      "sha256": "0f62c46bbec00a2d3d6bbde0efb89d5713204983d51c9c3cf73df1869cf12f8f"
+    },
+    {
+      "index": 5,
+      "lines": 16,
+      "sha256": "dec4bdb9bf4a0f408385e039a3e8c64214841eeeccc5a616a51b8353108a2e62"
+    },
+    {
+      "index": 6,
+      "lines": 560,
+      "sha256": "0a76e335bcb101ab664b57280e1784f20f179db74910999e225310909ab65677"
+    },
+    {
+      "index": 7,
+      "lines": 115,
+      "sha256": "9a5ef3f835d7a4e5abaaa0d76db5a29a793515c54666d4a97addaa518bbe534d"
+    }
+  ],
+  "original_inputs": [
+    {
+      "path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_12dfb391_G1_graph.json",
+      "sha256": "767a8d2ec5e469e2123c420aff07ca38d966f6f72504a289bd6bcbeba934bd77",
+      "bytes": 17613246
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_267148e4_G1_graph.json",
+      "sha256": "e26d4a42eeb187aef0a717a60fb1da80f7d62494d0084820e35df55ba6b51786",
+      "bytes": 8811763
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_2a2eff9f_G1_graph.json",
+      "sha256": "8680482c0b07755e1f479252d3fb65b9f8677d331ce89eb39b21d8321b805917",
+      "bytes": 15775201
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/44b6_341df25f_G1_graph.json",
+      "sha256": "99189227784a45cf38eb44d04e0db95a9707c7d27110100b52bee9dfacd04c07",
+      "bytes": 3279387
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_062c8d37_G1_graph.json",
+      "sha256": "68ac0602e14f3462ba85eda91b79f2244837bae25f71805d3d8bd1c9beb23ae7",
+      "bytes": 2278399
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_07e24132_G1_graph.json",
+      "sha256": "7cab73bba0bb052a349e5f01de3d7814df3ca87c5ce5f1d7af3ba8a63a924b70",
+      "bytes": 11347055
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_085bf656_G1_graph.json",
+      "sha256": "32b5b268d888f178b2e25906c6b68dbca8941d930e72ef2b3517b1c6d0131547",
+      "bytes": 3285079
+    },
+    {
+      "path": "downloads/BIOHUB_SPRINT01_20260916/v1_20260916T024442Z/sprint_cache/6bba_09961292_G1_graph.json",
+      "sha256": "310b1d47a77c2897e5c529772f15a23299911323bb5932fc4104926fbb73a8f3",
+      "bytes": 11611949
+    }
+  ],
+  "source_matches_fixed_commit": true,
+  "missing_guard": "No expected tracksdata version/source assertion before model inference in fixed Notebook; awaiting explicit resolution",
+  "old_ledger_sha256": "99d119cea96fbe803768b3e876b950b4d66801f0f52c3ce238cbbd4f3d598413",
+  "new_write_requests": 0
+}

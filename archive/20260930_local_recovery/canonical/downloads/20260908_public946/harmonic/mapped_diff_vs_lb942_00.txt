@@ -1,0 +1,63 @@
+--- lb942_cell_0
++++ harmonic_cell_0
+@@ -1,14 +1,13 @@
+-# Cell-tracking-during-development submission pipeline.
+-#
+-# Stages: (1) a dual-seed TemporalUNet3D detector produces per-frame center
+-#   heatmaps that are fused into candidate nodes; (2) a transformer edge model
+-#   scores parent->child links; (3) an ILP solver selects a consistent track
+-#   graph; (4) a division-aware post-processing pass (safe-div) proposes cell
+-#   divisions and a DeepCenter model vetoes false ones.
+-#
+-# All behaviour below is configured through BIOHUB_* environment variables read
+-# by the pipeline. The knobs set here are the values validated to score best on
+-# the leaderboard; each block is grouped and commented by what it controls.
++'''
++Biohub Harmonic Fusion
++
++Production 3D lineage reconstruction with dual temporal models,
++edge-feature test-time augmentation, and geometry-validated divisions.
++
++Record edition.
++'''
++
++
+ import os
+ BIOHUB_PRESET = 'harmonic_v3_division_wide'
+ BIOHUB_SCORE_AXIS = 'public 0.939 base + holdout-selected post-process configuration'
+@@ -28,22 +27,22 @@
+ os.environ["BIOHUB_OUTPUT_MIN_TRACK_LEN"] = "6"
+ os.environ["BIOHUB_OUTPUT_KEEP_DIVISION_COMPONENTS"] = "1"
+ os.environ["BIOHUB_OUTPUT_GAP2_RECOVERY"] = "1"
+-os.environ["BIOHUB_SAFE_DIV_MAX_UM"] = "9.0"  # Max parent-to-daughter separation for an accepted division.
+-#   Ground-truth parent-daughter links reach 10.4um; a 7um cap rejected ~25% of real links.
+-#   Loosening 7->9 recovers wide-but-genuine divisions (this is the "sdm9" arm; alone it scored LB 0.939).
+-os.environ["BIOHUB_SAFE_DIV_SISTER_MAX_UM"] = "14.0"  # Max daughter-to-daughter separation for an accepted division.
+-#   Ground-truth divisions have sister separations up to 13.7um (median 10.4, p90 13.0), so a 12um cap
+-#   rejected ~29% of real divisions; 14um admits all of them while the symmetry, mutual-NN, divergence
+-#   and DeepCenter gates still suppress spurious wide pairs.
+-os.environ["BIOHUB_SAFE_DIV_SISTER_SYMMETRY_TAU"] = "0.6"  # Sister-symmetry precision gate: reject a proposed division whose two
+-os.environ["BIOHUB_SAFE_DIV_DIVERGE_UM"] = "2.25"  # Forward-divergence precision gate (default 2.25); larger=stricter, rejects non-separating spurious forks. kimi-v18 LB sweep peaked ~4.0-4.5.
+-#   daughter distances from the parent differ by more than 60% of their mean (a wildly-asymmetric,
+-#   almost-always-spurious split). Freeing that slot lets the genuine symmetric division form.
++os.environ["BIOHUB_SAFE_DIV_MAX_UM"] = "9.0"  
++
++
++os.environ["BIOHUB_SAFE_DIV_SISTER_MAX_UM"] = "14.0"  
++
++
++
++os.environ["BIOHUB_SAFE_DIV_SISTER_SYMMETRY_TAU"] = "0.6"  
++os.environ["BIOHUB_SAFE_DIV_DIVERGE_UM"] = "2.25"  
++
++
+ os.environ["BIOHUB_SAFE_DIV_EXISTING_CHILD_MAX_UM"] = "10.0"
+ os.environ["BIOHUB_SAFE_DIV_FRAME_FRAC_CAP"] = "0.0076"
+ os.environ["BIOHUB_SAFE_DIV_GLOBAL_FRAC_CAP"] = "0.00375"
+-# Encourage the ILP to natively predict divisions rather than just disappearing/reappearing
+-os.environ["BIOHUB_ILP_DIVISION_WEIGHT"] = "1.2"     # Up from 1.0
++
++os.environ["BIOHUB_ILP_DIVISION_WEIGHT"] = "1.2"     
+ os.environ["BIOHUB_ADAPTIVE_SHORT_TRACK_RESCUE"] = "1"
+ os.environ["BIOHUB_SHORT_TRACK_RESCUE_MIN_LEN"] = "4"
+ os.environ["BIOHUB_SHORT_TRACK_RESCUE_MIN_MEAN_EDGE_PROB"] = "0.88"

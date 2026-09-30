@@ -1,0 +1,23 @@
+{
+  "status": "BUILT_LOCAL",
+  "cloud_status": "NOT_RUN",
+  "version": null,
+  "script_version_id": null,
+  "source_sha256": "1f4cbb3c98089bfb5f3fa0901922e87edb6cb88636e12af1dec6f645a919c729",
+  "original_sha256": "62464d4fd8b372e39cec76de6f798588b6b017b76fb8a371e0210bd8c4a86ae9",
+  "changed_cells": [
+    5,
+    7
+  ],
+  "embedded_files": [
+    "hoct_observer.py",
+    "hoct_worker.py"
+  ],
+  "module_sha256": {
+    "hoct_observer.py": "3b22aeecb1cfc1368cd9446c212c1fb2fef9d1e33e96bf4b47a87672a9fb1f9a",
+    "hoct_worker.py": "f3282c544bf63d4a452a707f31c6e946edf8ec8280122ced2af0b238eb79c01a",
+    "diagnostic_runtime.py": "9a5ef3f835d7a4e5abaaa0d76db5a29a793515c54666d4a97addaa518bbe534d"
+  },
+  "outputs_empty": true,
+  "kaggle_requests": 0
+}

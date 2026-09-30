@@ -1,0 +1,106 @@
+{
+  "checks": [
+    {
+      "details": {
+        "argument_count": 2,
+        "argv_sha256": "773d64654ff89306a517a12403c97984d27e7476840a94e5244723b97e8bc188",
+        "cwd": ".",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 1645,
+          "sha256": "4d3ea8441df691ee8454e53017a009096eea57ecea7960b01919f66fe7609c58"
+        },
+        "stdout_text_checks": 0
+      },
+      "id": "formal-identity-and-deltas",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "assertions": [
+          {
+            "op": "equals",
+            "passed": true,
+            "pointer": "/status"
+          }
+        ],
+        "path": "experiments/SCORE_RECOVERY_20260915/independent_review.json",
+        "sha256": "4bab2b8fa7cd1bd690729249fe421947f80dc046aae17f8ca0e7f36dc99468fa"
+      },
+      "id": "independent-review",
+      "outcome": "PASS",
+      "reason": "JSON assertions passed",
+      "required": true,
+      "type": "json"
+    },
+    {
+      "details": {
+        "bytes": 6007,
+        "forbidden_text_checks": 0,
+        "matched_forbidden_text_checks": 0,
+        "missing_required_text_checks": 0,
+        "path": "reports/20260915_训练版正式评分核验.md",
+        "required_text_checks": 5,
+        "sha256": "0cc61b27623a238ed886ff00f7dce120a41f103919b62de643d0ddd7ac77b97d"
+      },
+      "id": "report",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "branch": "main",
+        "dirty_entry_count": 0,
+        "head": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+        "remote": "origin",
+        "remote_exists": true,
+        "remote_head": "a123f0ad7f8808b44909d4c5fab48caf5147b50c",
+        "remote_url_sha256": "294339ae4bf28ec437260f32bd064c06212de22a7026887c59e47f72ef414b8e",
+        "repository": "."
+      },
+      "id": "git-delivery",
+      "outcome": "PASS",
+      "reason": "Git evidence passed",
+      "required": true,
+      "type": "git"
+    }
+  ],
+  "claimed_at": "2026-09-15T09:40:56+08:00",
+  "claimed_status": "CLAIMED_COMPLETE",
+  "contract_path": "tasks/CODEX_20260915_BIOHUB_SCORE_RECOVERY_CONTRACT.json",
+  "contract_sha256": "5f3e4e0287a61d312b785e6b8d1e15feef1558f6d324b9b43be31c96cf61a73f",
+  "final_status": "COMPLETED_VERIFIED",
+  "finished_at": "2026-09-15T09:42:45+08:00",
+  "integrity_scope": "local-sha256-only",
+  "limitations": [
+    "The conclusion is limited to the frozen contract and the implemented checks.",
+    "The verifier does not prove omitted requirements or future stability.",
+    "A local or Git hash is not a trusted signature against a malicious writer."
+  ],
+  "optional_warning_check_ids": [],
+  "reason": "all required automated checks passed",
+  "required_summary": {
+    "failed_or_blocked": 0,
+    "human_review": 0,
+    "passed": 4
+  },
+  "run_id": "20260915T094243+0800-f2e66578",
+  "schema_version": "1.0",
+  "started_at": "2026-09-15T09:42:43+08:00",
+  "task_id": "SCORE_RECOVERY_20260915"
+}

@@ -1,0 +1,34 @@
+--- run77_cell_7
++++ harmonic_cell_7
+@@ -1,3 +1,9 @@
++
++
++
++
++
++
+ 
+ 
+ TRAIN_DIR = COMP_DIR / "train"
+@@ -12,13 +18,19 @@
+ val_stems: list[str] = []
+ if VALIDATOR_ENABLE and TRAIN_DIR.exists():
+     train_stems_all = sorted(p.name[:-5] for p in TRAIN_DIR.iterdir() if p.name.endswith(".zarr"))
+-    test_stem_set = set(test_stems)  # from Cell 6 -- guards against train/test leakage
++    test_stem_set = set(test_stems)  
+     overlap = [s for s in train_stems_all if s in test_stem_set]
+     if overlap:
+         print(f"VALIDATOR: excluding {len(overlap)} TRAIN stem(s) that also appear in TEST_DIR: {overlap}")
+     candidates = [s for s in train_stems_all if s not in test_stem_set]
+ 
+-
++    
++    
++    
++    
++    
++    
++    
+     def _stem_has_gt_division(stem: str) -> bool:
+         gt_path = TRAIN_DIR / f"{stem}.geff"
+         try:

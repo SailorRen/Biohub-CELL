@@ -1,0 +1,85 @@
+{
+  "checks": [
+    {
+      "details": {
+        "argument_count": 2,
+        "argv_sha256": "60f3767f668cb0b2ed2fd4146a554ad65f2da8c05f46165a64ea04610e16764d",
+        "cwd": ".",
+        "executable": "python",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 826,
+          "sha256": "47907bde7a61f1af1224fc830eadff476eee3a43167e6473d4e28989cd8d7f4e"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 2753,
+          "sha256": "6a689f1cbb6024e6e2347cbf5a9937ff9cd68d8fc2a38d7b3fddcbd776cae349"
+        },
+        "stdout_text_checks": 0
+      },
+      "id": "local",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "bytes": 6020,
+        "path": "reports/20260917_BIOHUB_SPRINT02_HOCT_INTERFACE_FIX_RESULTS.md",
+        "sha256": "bac74581fb8649cd30732ea0bfb8517672278f34277b19c87fc8508a4c3376f0"
+      },
+      "id": "report",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "branch": "codex/sprint02-hoct-20260917",
+        "dirty_entry_count": 0,
+        "head": "5992407f18641c7b5bc5d0b4e1a481310afd490e",
+        "remote": "origin",
+        "remote_exists": true,
+        "remote_head": "5992407f18641c7b5bc5d0b4e1a481310afd490e",
+        "remote_url_sha256": "294339ae4bf28ec437260f32bd064c06212de22a7026887c59e47f72ef414b8e",
+        "repository": "."
+      },
+      "id": "git",
+      "outcome": "PASS",
+      "reason": "Git evidence passed",
+      "required": true,
+      "type": "git"
+    }
+  ],
+  "claimed_at": "2026-09-17T15:16:48+08:00",
+  "claimed_status": "CLAIMED_COMPLETE",
+  "contract_path": "experiments/BIOHUB_SPRINT02_HOCT_20260917/interface_fix/fix_contract.json",
+  "contract_sha256": "b206425e9255bd0a5de27f2e4c303ac0d03f6192abcd45415edb3be78a9c651e",
+  "final_status": "COMPLETED_VERIFIED",
+  "finished_at": "2026-09-17T15:16:52+08:00",
+  "integrity_scope": "local-sha256-only",
+  "limitations": [
+    "The conclusion is limited to the frozen contract and the implemented checks.",
+    "The verifier does not prove omitted requirements or future stability.",
+    "A local or Git hash is not a trusted signature against a malicious writer."
+  ],
+  "optional_warning_check_ids": [],
+  "reason": "all required automated checks passed",
+  "required_summary": {
+    "failed_or_blocked": 0,
+    "human_review": 0,
+    "passed": 3
+  },
+  "run_id": "20260917T151648+0800-c22cf5c9",
+  "schema_version": "1.0",
+  "started_at": "2026-09-17T15:16:48+08:00",
+  "task_id": "BIOHUB_SPRINT02_HOCT_INTERFACE_FIX_20260917",
+  "scope_note": "Local interface repair only; cloud NOT_RUN, original experiment PARTIAL_BLOCKED, formal score null."
+}

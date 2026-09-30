@@ -1,0 +1,66 @@
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/ml/lib/python3.11/urllib/request.py", line 1348, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/opt/anaconda3/envs/ml/lib/python3.11/http/client.py", line 1303, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/opt/anaconda3/envs/ml/lib/python3.11/http/client.py", line 1349, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/opt/anaconda3/envs/ml/lib/python3.11/http/client.py", line 1298, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/opt/anaconda3/envs/ml/lib/python3.11/http/client.py", line 1058, in _send_output
+    self.send(msg)
+  File "/opt/anaconda3/envs/ml/lib/python3.11/http/client.py", line 996, in send
+    self.connect()
+  File "/opt/anaconda3/envs/ml/lib/python3.11/http/client.py", line 1475, in connect
+    self.sock = self._context.wrap_socket(self.sock,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/ml/lib/python3.11/ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/ml/lib/python3.11/ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "/opt/anaconda3/envs/ml/lib/python3.11/ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/sailor/kaggle/项目/Biohub - CELL/experiments/PUBLIC946_TTA_20260908/verify_remote_delivery.py", line 37, in <module>
+    files = list(pool.map(read_one, paths))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/ml/lib/python3.11/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/ml/lib/python3.11/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/ml/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/ml/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/opt/anaconda3/envs/ml/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sailor/kaggle/项目/Biohub - CELL/experiments/PUBLIC946_TTA_20260908/verify_remote_delivery.py", line 30, in read_one
+    with urllib.request.urlopen(url, timeout=60) as response:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/ml/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/ml/lib/python3.11/urllib/request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/ml/lib/python3.11/urllib/request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/ml/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/opt/anaconda3/envs/ml/lib/python3.11/urllib/request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/envs/ml/lib/python3.11/urllib/request.py", line 1351, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)>

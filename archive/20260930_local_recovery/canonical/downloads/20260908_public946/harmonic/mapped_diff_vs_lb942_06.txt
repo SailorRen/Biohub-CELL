@@ -1,0 +1,8 @@
+--- lb942_cell_6
++++ harmonic_cell_6
+@@ -1,4 +1,4 @@
+-# Independent audit for the frozen frame-retention probe.
++
+ from collections import Counter
+ import hashlib
+ import json

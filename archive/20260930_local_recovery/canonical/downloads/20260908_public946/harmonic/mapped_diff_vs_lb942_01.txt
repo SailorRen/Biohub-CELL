@@ -1,0 +1,8 @@
+--- lb942_cell_1
++++ harmonic_cell_1
+@@ -1,4 +1,4 @@
+-# Configuration guard: assert the single intended model-level change.
++
+ import json as _guard_json
+ import math as _guard_math
+ import os as _guard_os

@@ -1,0 +1,17 @@
+{
+  "baseline": {
+    "contract_matches_head": false,
+    "contract_tracked": false,
+    "git_repository": true,
+    "head": "ff0abce0f8d033745a58cdcab1639c65c94d4520",
+    "integrity_scope": "local-sha256-only"
+  },
+  "claim": null,
+  "contract_path": "task-contract.json",
+  "contract_sha256": "a8d4d6b6ca30fc773ee3b17f1f3fb09dfde3e1ec9522ff6b00b0c0c255645fcc",
+  "latest_verification": null,
+  "prepared_at": "2026-09-03T15:57:06+08:00",
+  "schema_version": "1.0",
+  "status": "PLANNED",
+  "task_id": "BIOHUB_CELL_OFFICIAL_KAGGLE_RECON_20260903_V01"
+}

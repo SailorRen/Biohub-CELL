@@ -1,0 +1,118 @@
+--- ttacell8
++++ run84cell8
+@@ -1,9 +1,4 @@
+-# ============================================================
+-# CELL 9 (NEW) -- VALIDATOR: scoring against the official metric
+-# (https://github.com/royerlab/kaggle-cell-tracking-competition/blob/main/metrics.md)
+-# Division-matching reflects the organizers' post-exploit patch (single
+-# connected component + both-daughter-lineage coverage + anchor + fork).
+-# ============================================================
++
+ 
+ from scipy.optimize import linear_sum_assignment
+ 
+@@ -316,3 +311,104 @@
+         "edges_lost_to_detection": sum(r["edges_lost_to_detection"] for r in sample_rows),
+         "wrong_association_edges": sum(r["wrong_association_edges"] for r in sample_rows),
+     }
++
++
++validator_sample_rows: list[dict[str, object]] = []
++validator_summary_rows: list[dict[str, object]] = []
++
++if VALIDATOR_ENABLE and val_stems:
++    val_pred_paths = {
++        stem: found
++        for stem in val_stems
++        if (found := next((REPO_DIR / "predictions").rglob(f"{stem}.geff"), None)) is not None
++    }
++    missing = [s for s in val_stems if s not in val_pred_paths]
++    if missing:
++        print(f"VALIDATOR: no prediction .geff found for {missing} -- did Cell 8 run and succeed?")
++
++    rows_this_config = []
++    for stem in val_stems:
++        gt_path = TRAIN_DIR / f"{stem}.geff"
++        pred_path = val_pred_paths.get(stem)
++        if not gt_path.exists() or pred_path is None:
++            print(f"VALIDATOR: skipping {stem} (missing GT or prediction .geff)")
++            continue
++        gt_graph = graph_from_geff(gt_path)
++        gt_nodes_plain, gt_edges_plain = graph_to_plain(gt_graph)
++        t_true = read_estimated_true_node_count(gt_path)
++
++        pred_graph = graph_from_geff(pred_path)
++        raw_nodes_by_id: dict[int, dict[str, object]] = {}
++        for row in pred_graph.node_attrs().iter_rows(named=True):
++            node_id = int(row["node_id"])
++            raw_nodes_by_id[node_id] = {
++                "node_id": node_id, "t": int(row["t"]),
++                "z": float(row["z"]), "y": float(row["y"]), "x": float(row["x"]),
++            }
++        raw_edges = []
++        for row in pred_graph.edge_attrs().iter_rows(named=True):
++            edge_prob = row.get("edge_prob") if hasattr(row, "get") else None
++            raw_edges.append({
++                "source_id": int(row["source_id"]), "target_id": int(row["target_id"]),
++                "edge_prob": None if edge_prob is None else float(edge_prob),
++            })
++
++
++        _real_test_dir = TEST_DIR
++        globals()["TEST_DIR"] = TRAIN_DIR
++        try:
++            processed_nodes, processed_edges, _stage_stats = filter_output_graph(
++                raw_nodes_by_id, raw_edges, dataset=stem,
++                deepcenter_bundle=globals().get("DEEPCENTER_VETO_DETECTOR"),
++            )
++        finally:
++            globals()["TEST_DIR"] = _real_test_dir
++        pred_nodes_plain = nodes_by_id_to_plain(processed_nodes)
++        pred_edges_plain = [(int(e["source_id"]), int(e["target_id"])) for e in processed_edges]
++
++        row = score_sample(pred_nodes_plain, pred_edges_plain, gt_nodes_plain, gt_edges_plain, t_true)
++        row["stem"] = stem
++        row["t_true_source"] = "estimated_number_of_nodes" if t_true is not None else "MISSING"
++        rows_this_config.append(row)
++        validator_sample_rows.append(row)
++
++    if rows_this_config:
++        summary = aggregate_official(rows_this_config)
++        summary["n_samples"] = len(rows_this_config)
++        validator_summary_rows.append(summary)
++
++    print()
++    print("=" * 78)
++    print("LOCAL VALIDATOR -- proxy score using the official metric formula")
++    print("(https://github.com/royerlab/kaggle-cell-tracking-competition/blob/main/metrics.md)")
++    print("=" * 78)
++    for row in validator_sample_rows:
++        print(f"  {row['stem']:<28} edge_jaccard={row['edge_jaccard']:.4f} "
++              f"adj_edge_jaccard={row['adjusted_edge_jaccard']:.4f} T_pred={row['t_pred']} "
++              f"T_true={row['t_true']} div(tp/fp/fn)=({row['div_tp']}/{row['div_fp']}/{row['div_fn']})")
++        print(f"      errors: missed_gt_nodes={row['missed_gt_nodes']} "
++              f"spurious_pred_nodes={row['spurious_pred_nodes']} "
++              f"recovered={row['edges_recovered']} fragmented={row['edges_fragmented']} "
++              f"lost_to_detection={row['edges_lost_to_detection']} "
++              f"wrong_association={row['wrong_association_edges']}")
++    print()
++    for summary in validator_summary_rows:
++        print(f"n={summary['n_samples']}  adjusted_edge_jaccard={summary['adjusted_edge_jaccard']:.4f}  "
++              f"division_jaccard={summary['division_jaccard']:.4f}  "
++              f"PROXY_SCORE={summary['proxy_score']:.4f}")
++        print(f"  totals -- missed_gt_nodes={summary['missed_gt_nodes']} "
++              f"spurious_pred_nodes={summary['spurious_pred_nodes']} "
++              f"recovered={summary['edges_recovered']} fragmented={summary['edges_fragmented']} "
++              f"lost_to_detection={summary['edges_lost_to_detection']} "
++              f"wrong_association={summary['wrong_association_edges']}")
++
++    if validator_sample_rows:
++        with VALIDATOR_STATS_PATH.open("w", newline="") as f:
++            fieldnames = sorted({k for row in validator_sample_rows for k in row.keys()})
++            writer = csv.DictWriter(f, fieldnames=fieldnames)
++            writer.writeheader()
++            for row in validator_sample_rows:
++                writer.writerow(row)
++        print(f"\nPer-sample validator rows written to {VALIDATOR_STATS_PATH}")
++else:
++    print("VALIDATOR: disabled or no held-out samples available -- skipping scoring.")

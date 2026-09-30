@@ -1,0 +1,27 @@
+--- v19c cell 10
++++ run77 cell 8
+@@ -1,9 +1,4 @@
+-# ============================================================
+-# CELL 9 (NEW) -- VALIDATOR: scoring against the official metric
+-# (https://github.com/royerlab/kaggle-cell-tracking-competition/blob/main/metrics.md)
+-# Division-matching reflects the organizers' post-exploit patch (single
+-# connected component + both-daughter-lineage coverage + anchor + fork).
+-# ============================================================
++
+ 
+ from scipy.optimize import linear_sum_assignment
+ 
+@@ -358,12 +353,7 @@
+                 "edge_prob": None if edge_prob is None else float(edge_prob),
+             })
+ 
+-        # REVIEW FIX: DeepCenter's gap/division veto path reads raw zarr
+-        # volume data via read_test_frame(dataset, t, ...), which resolves
+-        # TEST_DIR as a bare global at call time -- correct for the real
+-        # test-set run, but held-out validator samples live in TRAIN_DIR.
+-        # Redirect the global for exactly the duration of this call and
+-        # restore it unconditionally, even if filter_output_graph raises.
++
+         _real_test_dir = TEST_DIR
+         globals()["TEST_DIR"] = TRAIN_DIR
+         try:

@@ -1,0 +1,182 @@
+{
+  "B0": {
+    "ALL": {
+      "samples": 8,
+      "edge_denominator": 5988,
+      "division_denominator": 13,
+      "sum_weight": 5988,
+      "sum_t_pred": 188826,
+      "sum_t_true": 208700.0
+    },
+    "44b6": {
+      "samples": 4,
+      "edge_denominator": 1552,
+      "division_denominator": 5,
+      "sum_weight": 1552,
+      "sum_t_pred": 115752,
+      "sum_t_true": 141605.0
+    },
+    "6bba": {
+      "samples": 4,
+      "edge_denominator": 4436,
+      "division_denominator": 8,
+      "sum_weight": 4436,
+      "sum_t_pred": 73074,
+      "sum_t_true": 67095.0
+    },
+    "44b6_12dfb391": {
+      "samples": 1,
+      "edge_denominator": 806,
+      "division_denominator": 1,
+      "sum_weight": 806,
+      "sum_t_pred": 44959,
+      "sum_t_true": 58672.0
+    },
+    "44b6_267148e4": {
+      "samples": 1,
+      "edge_denominator": 306,
+      "division_denominator": 1,
+      "sum_weight": 306,
+      "sum_t_pred": 22263,
+      "sum_t_true": 19130.0
+    },
+    "44b6_2a2eff9f": {
+      "samples": 1,
+      "edge_denominator": 231,
+      "division_denominator": 2,
+      "sum_weight": 231,
+      "sum_t_pred": 40117,
+      "sum_t_true": 56367.0
+    },
+    "44b6_341df25f": {
+      "samples": 1,
+      "edge_denominator": 209,
+      "division_denominator": 1,
+      "sum_weight": 209,
+      "sum_t_pred": 8413,
+      "sum_t_true": 7436.0
+    },
+    "6bba_062c8d37": {
+      "samples": 1,
+      "edge_denominator": 904,
+      "division_denominator": 1,
+      "sum_weight": 904,
+      "sum_t_pred": 5853,
+      "sum_t_true": 6030.0
+    },
+    "6bba_07e24132": {
+      "samples": 1,
+      "edge_denominator": 363,
+      "division_denominator": 2,
+      "sum_weight": 363,
+      "sum_t_pred": 29179,
+      "sum_t_true": 21485.0
+    },
+    "6bba_085bf656": {
+      "samples": 1,
+      "edge_denominator": 1171,
+      "division_denominator": 1,
+      "sum_weight": 1171,
+      "sum_t_pred": 8300,
+      "sum_t_true": 8463.0
+    },
+    "6bba_09961292": {
+      "samples": 1,
+      "edge_denominator": 1998,
+      "division_denominator": 4,
+      "sum_weight": 1998,
+      "sum_t_pred": 29742,
+      "sum_t_true": 31117.0
+    }
+  },
+  "H1": {
+    "ALL": {
+      "samples": 8,
+      "edge_denominator": 5976,
+      "division_denominator": 13,
+      "sum_weight": 5976,
+      "sum_t_pred": 188826,
+      "sum_t_true": 208700.0
+    },
+    "44b6": {
+      "samples": 4,
+      "edge_denominator": 1551,
+      "division_denominator": 5,
+      "sum_weight": 1551,
+      "sum_t_pred": 115752,
+      "sum_t_true": 141605.0
+    },
+    "6bba": {
+      "samples": 4,
+      "edge_denominator": 4425,
+      "division_denominator": 8,
+      "sum_weight": 4425,
+      "sum_t_pred": 73074,
+      "sum_t_true": 67095.0
+    },
+    "44b6_12dfb391": {
+      "samples": 1,
+      "edge_denominator": 806,
+      "division_denominator": 1,
+      "sum_weight": 806,
+      "sum_t_pred": 44959,
+      "sum_t_true": 58672.0
+    },
+    "44b6_267148e4": {
+      "samples": 1,
+      "edge_denominator": 305,
+      "division_denominator": 1,
+      "sum_weight": 305,
+      "sum_t_pred": 22263,
+      "sum_t_true": 19130.0
+    },
+    "44b6_2a2eff9f": {
+      "samples": 1,
+      "edge_denominator": 231,
+      "division_denominator": 2,
+      "sum_weight": 231,
+      "sum_t_pred": 40117,
+      "sum_t_true": 56367.0
+    },
+    "44b6_341df25f": {
+      "samples": 1,
+      "edge_denominator": 209,
+      "division_denominator": 1,
+      "sum_weight": 209,
+      "sum_t_pred": 8413,
+      "sum_t_true": 7436.0
+    },
+    "6bba_062c8d37": {
+      "samples": 1,
+      "edge_denominator": 904,
+      "division_denominator": 1,
+      "sum_weight": 904,
+      "sum_t_pred": 5853,
+      "sum_t_true": 6030.0
+    },
+    "6bba_07e24132": {
+      "samples": 1,
+      "edge_denominator": 360,
+      "division_denominator": 2,
+      "sum_weight": 360,
+      "sum_t_pred": 29179,
+      "sum_t_true": 21485.0
+    },
+    "6bba_085bf656": {
+      "samples": 1,
+      "edge_denominator": 1171,
+      "division_denominator": 1,
+      "sum_weight": 1171,
+      "sum_t_pred": 8300,
+      "sum_t_true": 8463.0
+    },
+    "6bba_09961292": {
+      "samples": 1,
+      "edge_denominator": 1990,
+      "division_denominator": 4,
+      "sum_weight": 1990,
+      "sum_t_pred": 29742,
+      "sum_t_true": 31117.0
+    }
+  }
+}

@@ -1,0 +1,382 @@
+{
+  "commit": "87d1fa5cfa2465fea1bb855df34ad3055740ec03",
+  "passed": true,
+  "observed_at": "2026-09-29T02:25:06.902343+00:00",
+  "files": [
+    {
+      "path": "research/PUBLIC_INTEL_20260929/topics_active.json",
+      "sha256": "f6a454bef4f6d0cde2aafc75f72beb245287f891d0e588b20d840993f293184b",
+      "bytes": 7002
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github_search_0.json",
+      "sha256": "d9d38aeefa4d495ac1253c8da591d28c2f396379025298ac40d5cb6efb2f3d66",
+      "bytes": 213776
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/collect.py",
+      "sha256": "9be3ebe1826b6712ded0acef57e881a3341e056d26bb33669f3fe44dbae39c6b",
+      "bytes": 1745
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/topics_new.json",
+      "sha256": "f53c96b0ebd10947e62ea97d1aecd91d437804d2ad08c06e1bfb8b5fca859c1d",
+      "bytes": 6963
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/catalog_dateCreated.json",
+      "sha256": "067cacfc6b98abbee93f58291e5211b6fb2b648918dc93efe41d5875f34064b3",
+      "bytes": 19946
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github_file_manifest.json",
+      "sha256": "2e91d4ab74dbf35be5bcee6a1e4df584e446c945a18b756531980fb62504dc63",
+      "bytes": 15788
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github_search_1.json",
+      "sha256": "d0b33b53072adc69a6a0fd6cff89d6e1b37146ac0868497efecd03dd73fba6f9",
+      "bytes": 209546
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/observation.json",
+      "sha256": "4eaae8bf2edf85eb5f6a59d22420c2600ef87236837020b5594cae01bbbeb3c6",
+      "bytes": 758
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/heads.json",
+      "sha256": "64b4f5783a1679ef11793968f703c3454c599a0db2b29c0bd52635eefbcb4535",
+      "bytes": 4230
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/leaderboard.json",
+      "sha256": "8a9e85aa37b711a8f9233d17acbb1901d84814ff9276c718b706bcd08bcf2c7d",
+      "bytes": 29486
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/details.py",
+      "sha256": "493e16da5653ac0f7b2cc94279baa8efb8fe70ad42ad3473631b38d30d8ae3bd",
+      "bytes": 2462
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/验收合同.json",
+      "sha256": "1691b49cf1ff2c80f199fb2e3e8ffac8a30173ea8b82fa05d89b61990beddee5",
+      "bytes": 1494
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/coverage.json",
+      "sha256": "1efbf0ac936a939124dea7ea3239983022d9361dad981e6731f5402519c29458",
+      "bytes": 2430
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/verification.json",
+      "sha256": "40340ce50c683a7e0939d22dc961f0253009713b3c52c125561f534fdfad9624",
+      "bytes": 3267
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github_search_2.json",
+      "sha256": "be353d4acfcd3cf3b1025b56116186b6d87b294def0e77870784030ce6f65623",
+      "bytes": 164988
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/verify.py",
+      "sha256": "cee72094efff8b6e3c03be7310cd2e1d272763d8ef4206e1932008efa20a9a54",
+      "bytes": 2872
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/catalog_dateRun.json",
+      "sha256": "be551acd496d8f64b3d83f96fc9a7ad6de3564ca1c3e698518d8cb9bf8d47cde",
+      "bytes": 19848
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/catalog_scoreDescending.json",
+      "sha256": "1ee1294f34f20ccd2f5e335ddd07b69c6df8459eebbe1cacdcfb123cb0a900ee",
+      "bytes": 20021
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/extra_sources.py",
+      "sha256": "7ae30fc6004814b479e5705621ab2481cfc7e3763046811d21523ff54fbdacc7",
+      "bytes": 1340
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/web_discovery.json",
+      "sha256": "a5cf8f5d337721ad32a24b8afa1529edc83f07852db0c3ec19187e05c16a7774",
+      "bytes": 620
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/discussions/744093.json",
+      "sha256": "b171e5f5a4f9b91dbce143163d9ac43e71da4da148c2a7c04fafc3ea593ee4bf",
+      "bytes": 3312
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/discussions/742266.json",
+      "sha256": "e28d13bc8707cf6565f75058f496455746ac8fb8dd034c377d31a7c2873c1898",
+      "bytes": 15068
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/discussions/743765.json",
+      "sha256": "c47c3f1e23ba4a913c761024c41e6bfbb02534110c2062860cc4dfe93c8fab08",
+      "bytes": 1173
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/discussions/743929.json",
+      "sha256": "035ca89c524f530dbbfab36ce5ee0643f36f7a7513bed46c9124f192534fed7b",
+      "bytes": 12024
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/discussions/743006.json",
+      "sha256": "4425a279003131bd9fa348bdec2a9015cbbf41d9e0202ad6582a1f6d732f6e55",
+      "bytes": 12035
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/discussions/732103.json",
+      "sha256": "f9cd68fb6d3ff9ceed60efc0ed242411d9914c1d84cdff5604406ce905767c79",
+      "bytes": 51900
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/discussions/742169.json",
+      "sha256": "eef5d881ebbde8ae125f8dbc75ed3abe2c18fec4ef7567e5bb2d072f2341c5ea",
+      "bytes": 3453
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/pathik1511__biohub-cell-tracking/head.json",
+      "sha256": "58194f115a945243d0504a517e7375dad4047adc679a787ad2a406317c3ae9a2",
+      "bytes": 301
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/pathik1511__biohub-cell-tracking/text_tree.json",
+      "sha256": "9a4c7d9d96b073b94ceec75f261f7f57438d0f12df514214bbe6b6ae7a511f5e",
+      "bytes": 331
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/pathik1511__biohub-cell-tracking/files/README.md",
+      "sha256": "20d1d64a46527d7eafc5a1c7653347a8753cfee0e32673123c7048ba5281aebb",
+      "bytes": 2784
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/pathik1511__biohub-cell-tracking/files/src/biohub/link.py",
+      "sha256": "5de924ee96dfcc673a22fe7d93dfd6167ab0235227e61247df1170f4759e5b69",
+      "bytes": 10533
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/pathik1511__biohub-cell-tracking/files/src/biohub/metric.py",
+      "sha256": "e0bf8ecce4176ba6065b768f691d5b50122a44c9ea6cef3a7a09e8869db09f59",
+      "bytes": 8076
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/Beiciccc__biohub-cell-tracking-development/head.json",
+      "sha256": "e8cf88170e75580eb37f0d4eccb6f84bc7b870015cf6c67176ed74934063c727",
+      "bytes": 347
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/Beiciccc__biohub-cell-tracking-development/files/README.md",
+      "sha256": "fd55120b3676ea4b002df6f41c81eb325fda6a7bb71f9d7656c79e7b5ae89ce3",
+      "bytes": 8275
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/Beiciccc__biohub-cell-tracking-development/files/docs/experiment_log.md",
+      "sha256": "8b8c8b7842eb36fce4d7410a5b91012cab8d77759b235b692417047538ad695c",
+      "bytes": 69084
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/royerlab__kaggle-cell-tracking-competition/head.json",
+      "sha256": "a4c5842889bc298116a8689946ae88abeee16e73b1b0f0e6f083d187d15f761c",
+      "bytes": 433
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/royerlab__kaggle-cell-tracking-competition/files/README.md",
+      "sha256": "305222ff29b8b783c95ff2ceb2df3e801c52272633e798ef27af600fbe041812",
+      "bytes": 7254
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/royerlab__kaggle-cell-tracking-competition/files/metrics.md",
+      "sha256": "d8a2d3ff21b507242dd23e9b7c687d725261d7b4c79cff086cccb4093141d696",
+      "bytes": 6942
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/royerlab__kaggle-cell-tracking-competition/files/scripts/csv_to_geffs.py",
+      "sha256": "914d151495c2c0f6bcab1feeebc6d0452b0ec63175cbce3b8774d20f79fa6f9a",
+      "bytes": 2887
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/royerlab__kaggle-cell-tracking-competition/files/src/tracking_cellmot/division_metrics.py",
+      "sha256": "0635c38621a38f1eb4b55a302b4a817a88e9094930dfc2dab16faeeee60f4dc9",
+      "bytes": 20488
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/canakbass__biohub-cell-tracking/head.json",
+      "sha256": "4ff95ebcc96f69662d3a8404ff5fa5c0cfce467266f978019741cefe372fb1e7",
+      "bytes": 413
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/canakbass__biohub-cell-tracking/files/STATE.md",
+      "sha256": "84a0f80da79a9fc4b9b59adfbd204546137287173e9bb8968a9bb91033157000",
+      "bytes": 71270
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/canakbass__biohub-cell-tracking/files/README.md",
+      "sha256": "82f3d9d61c62bcbc7b7c9a6522cf482c3fc3da733de161c0142209efe5db1d01",
+      "bytes": 11298
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/kito2718__kaggle_Biohub-Cell_Tracking_During_Development/head.json",
+      "sha256": "b4571a234ef357efadcff83206980e229c5d0061336ba85248692d62d2e79704",
+      "bytes": 370
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/kito2718__kaggle_Biohub-Cell_Tracking_During_Development/text_tree.json",
+      "sha256": "9efd6738f1ba26bdfc1c1dee19ca5f82ae8b4098439ef73087741f9a7c402b03",
+      "bytes": 6176
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/kito2718__kaggle_Biohub-Cell_Tracking_During_Development/files/working/s8_064_global_association/s8_064_global_association.ipynb",
+      "sha256": "9869b5eac91acbaea686e0d847781f8e5c6fe6bc81797e64e31b79195f61c2ce",
+      "bytes": 262064
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/kito2718__kaggle_Biohub-Cell_Tracking_During_Development/files/s7_summary/s8_summary3.md",
+      "sha256": "8c191d6b10054a5fed191ad86c5e685e33bc1197e7d0f726df5812f94f4e3612",
+      "bytes": 28473
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/kito2718__kaggle_Biohub-Cell_Tracking_During_Development/files/s7_summary/s8_summary2.md",
+      "sha256": "52bac2b97e561d1f4d5897599ef06fb5bc87db11dd18fa4a69e3b4a4b455d2e8",
+      "bytes": 30917
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/OpenKaggle__biohub-cell-tracking-research/head.json",
+      "sha256": "592f7300434a90acf8463d585b688abe7d3220dc9e7bd422c99e44ec91d45bd7",
+      "bytes": 362
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/OpenKaggle__biohub-cell-tracking-research/text_tree.json",
+      "sha256": "9b6659e20ae62cda80f8d357e357e3b014eadfe9dcc319baa927e67776f4dc3d",
+      "bytes": 6741
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/OpenKaggle__biohub-cell-tracking-research/files/CAMPAIGN.md",
+      "sha256": "796f895a3649d0a5459cad245a29612a6a96e4749771f61bd10fe2d3dbd7ee57",
+      "bytes": 24754
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/OpenKaggle__biohub-cell-tracking-research/files/README.md",
+      "sha256": "12e63dfa8ce42dcde2242091ba70157fb00820a25b8134aec7e71a28e3d40e2c",
+      "bytes": 1872
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/OpenKaggle__biohub-cell-tracking-research/files/decisions/BH-0005-min-track-length.md",
+      "sha256": "cc2b698c91cee9f2441ca0305e655d15e5b9349f5d4299055e7e8e3334213d41",
+      "bytes": 2043
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/JunhaoLiXD__Biohub_Cell_Tracking/head.json",
+      "sha256": "f667258fcd8a72232e65532e27f0dca72e3029b510026dcf4d8c3d53bc416968",
+      "bytes": 369
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/JunhaoLiXD__Biohub_Cell_Tracking/files/STATE.json",
+      "sha256": "11253e759f7696f0d91643f58113380edfbebce2033f6581c2f7f3a11388a08a",
+      "bytes": 140997
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/JunhaoLiXD__Biohub_Cell_Tracking/files/EXP067_STATUS.md",
+      "sha256": "2cb39ea697804e7f5dda702eddfbe67b3c9a8fee396aaeb970ff33237b50432c",
+      "bytes": 18891
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/JunhaoLiXD__Biohub_Cell_Tracking/files/README.md",
+      "sha256": "470f92af9f4c294302db99900c4ae3cc17949ad3b155d2e9cf1abab7183e10d4",
+      "bytes": 4493
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/JunhaoLiXD__Biohub_Cell_Tracking/files/docs/research/adaptive_pruning_claude_review_2026-09-28.md",
+      "sha256": "8901e362094d41631b6d45b73f168c4e3fa9b601f23da2c0f18e0e114b8bb4f9",
+      "bytes": 1683
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/alvaromendizabal__biohub-cell-tracking-during-development/head.json",
+      "sha256": "1d5be4a60268376797d1da20ff69aefe13997c9fbc2e0281777d3015adf3c15e",
+      "bytes": 667
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/alvaromendizabal__biohub-cell-tracking-during-development/files/FRONTIER.md",
+      "sha256": "5fc29f6d93a0172c16a3241a9a16afdd6f00b3a8c4542befccd036c1da01ce3d",
+      "bytes": 3712
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/alvaromendizabal__biohub-cell-tracking-during-development/files/README.md",
+      "sha256": "0863790e375ea74f7d686d722e02131d6bbec5ec2a38ae52636c1988b31db57a",
+      "bytes": 6952
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/alvaromendizabal__biohub-cell-tracking-during-development/files/RESULTS.md",
+      "sha256": "22a7af29a04afedce1f0c11b3f5d8301b83be326e79627bfd6a1ac9cf143992e",
+      "bytes": 6860
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/alvaromendizabal__biohub-cell-tracking-during-development/files/REPRODUCIBILITY.md",
+      "sha256": "d8cd3f034fe6bbed6a8437cd872ae430fa560a4cac6d0b5cf084cd311043636c",
+      "bytes": 5325
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/MapleBadger666__biohub-cell-tracking/head.json",
+      "sha256": "fdaa90e801b5e009b3442fcf3b65fec7f5a590e4065772711da9979fca5b3a5f",
+      "bytes": 342
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/MapleBadger666__biohub-cell-tracking/text_tree.json",
+      "sha256": "ead95e21f1bfab7b3530adc6c1ed620bc440c8a99d1ebece7459262e8fda8d4e",
+      "bytes": 3724
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/MapleBadger666__biohub-cell-tracking/files/README.md",
+      "sha256": "37b27794de2d3a4f12fbce97d58e397214baf5e4f5b1e91e92a028a4bb617d50",
+      "bytes": 6705
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/MapleBadger666__biohub-cell-tracking/files/docs/VALIDATION.md",
+      "sha256": "1b1cc277aab8a001d0ca2097ad8b336d7bfbb3745818de089c3a2a7bede79b97",
+      "bytes": 3479
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/MapleBadger666__biohub-cell-tracking/files/src/biohub_cell_tracking/frozen_v9.py",
+      "sha256": "486ae177e8709ddd17bf20d61dc628477a78d7434cd54a7ecf3729915b36ab17",
+      "bytes": 55823
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/drosadocastro-bit__Atabey/head.json",
+      "sha256": "e7104e0b6099639099cbf4868ba015689f835c44527297f63eba32e203137c0d",
+      "bytes": 413
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/drosadocastro-bit__Atabey/text_tree.json",
+      "sha256": "a934a64ea29829ee0d3f0941e667140152425c261c832f834d147bc375dd6681",
+      "bytes": 67572
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/drosadocastro-bit__Atabey/files/V28_KAGGLE_RESULT.md",
+      "sha256": "de7a3d7f1ace6d761f790bc23c4100536c24e580b4c834cffb28d18c596a0396",
+      "bytes": 4535
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/drosadocastro-bit__Atabey/files/V29A_RESULTS.md",
+      "sha256": "9936e016e070fc6f9fd3ff61b852fe80cadce25b85180b0c44fc340ad689130f",
+      "bytes": 6672
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/drosadocastro-bit__Atabey/files/README.md",
+      "sha256": "78e5f03b769831dbaae00e96c24708123573335ac61bc0b63426619e5a316281",
+      "bytes": 29738
+    },
+    {
+      "path": "research/PUBLIC_INTEL_20260929/github/drosadocastro-bit__Atabey/files/V27C_OFFICIAL_GRAPH_EVALUATION_RESULTS.md",
+      "sha256": "6075743ad512a4de731bd1eb7d4acdc4778d4ff06dde7cc2769f48d558f9c319",
+      "bytes": 10127
+    },
+    {
+      "path": "reports/20260929_正式结果与最新公开情报.md",
+      "sha256": "c6aec1b8fd0da8fdfafb3f34d41a783eef87af86ce4de9d17e153fb40410cd90",
+      "bytes": 9548
+    }
+  ]
+}

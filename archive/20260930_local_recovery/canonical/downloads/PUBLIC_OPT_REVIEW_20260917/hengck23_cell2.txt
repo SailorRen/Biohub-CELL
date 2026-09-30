@@ -1,0 +1,355 @@
+# processing tricks
+
+# todo: do nms using refine or node logit?
+# add_cluster: duplicate-node clustering / greedy NMS
+@torch.no_grad()
+def cluster_predicted_nodes(out, radius=1.0):
+    """
+    Greedy score-ordered duplicate suppression on refined node coordinates.
+
+    For each frame:
+      1) sort valid predictions by refine_logit descending;
+      2) keep the highest-scoring remaining prediction;
+      3) suppress remaining predictions within `radius`;
+      4) compact kept nodes to IDs 0..K-1.
+
+    We keep an actual model prediction rather than averaging coordinates/features,
+    so node_feature and refine_zyx remain mutually consistent.
+    """
+    if radius is None or radius <= 0:
+        n = int(out.mask.sum().item())
+        return out, {"num_before": n, "num_after": n, "num_removed": 0}
+
+    B, N, _ = out.refine_zyx.shape
+    device = out.refine_zyx.device
+
+    new_refine_zyx = torch.zeros_like(out.refine_zyx)
+    new_refine_logit = torch.zeros_like(out.refine_logit)
+    new_peak_zyx = torch.zeros_like(out.peak_zyx)
+    new_peak_logit = torch.zeros_like(out.peak_logit)
+    new_mask = torch.zeros_like(out.mask)
+    new_node_feature = [torch.zeros_like(f) for f in out.node_feature]
+
+    new_count = []
+    num_before = 0
+    num_after = 0
+    r2 = float(radius) ** 2
+
+    for b in range(B):
+        valid = torch.where(out.mask[b])[0]
+        nv = int(len(valid))
+        num_before += nv
+
+        if nv == 0:
+            new_count.append(0)
+            continue
+
+        zyx = out.refine_zyx[b, valid].float()
+        score = out.refine_logit[b, valid].float()
+        order = torch.argsort(score, descending=True)
+
+        suppressed = torch.zeros(nv, dtype=torch.bool, device=device)
+        keep_local = []
+
+        for j in order.tolist():
+            if bool(suppressed[j]):
+                continue
+
+            keep_local.append(j)
+            d2 = ((zyx - zyx[j]) ** 2).sum(dim=-1)
+            suppressed |= d2 <= r2
+
+        keep_local = torch.as_tensor(keep_local, dtype=torch.long, device=device)
+        keep = valid[keep_local]
+        k = int(len(keep))
+
+        num_after += k
+        new_count.append(k)
+        new_mask[b, :k] = True
+        new_refine_zyx[b, :k] = out.refine_zyx[b, keep]
+        new_refine_logit[b, :k] = out.refine_logit[b, keep]
+        new_peak_zyx[b, :k] = out.peak_zyx[b, keep]
+        new_peak_logit[b, :k] = out.peak_logit[b, keep]
+
+        for level, f in enumerate(out.node_feature):
+            new_node_feature[level][b, :k] = f[b, keep]
+
+    out.refine_zyx = new_refine_zyx
+    out.refine_logit = new_refine_logit
+    out.peak_zyx = new_peak_zyx
+    out.peak_logit = new_peak_logit
+    out.node_feature = new_node_feature
+    out.mask = new_mask
+    out.count = new_count
+    return out
+
+def edge_top_cumulative_bidirectional(
+    edge_logit,
+    mask_src,
+    mask_dst,
+    t_start,
+    no_link_logit=0.0,
+    cumulative=0.99,
+    no_link_weight=1.0,
+):
+    """
+    Bidirectional version of edge_top_cumulative.
+
+    edge_logit : (B, Ns, Nd)
+        Raw pairwise edge logits.
+
+    For each real edge i -> j:
+        p_dst(j | i) = softmax over destination
+        p_src(i | j) = softmax over source
+
+        score(i, j) = p_dst(j | i) * p_src(i | j)
+
+    NO_LINK exists only on the forward/source->destination side:
+        score(i, NO_LINK) = p_dst(NO_LINK | i) * no_link_weight
+
+    Scores are then normalized over destinations for each source so that
+    cumulative probability selection remains meaningful.
+
+    Returns list of dict:
+        t
+        src_id
+        dst_id       (-1 = NO_LINK)
+        prob
+        rank
+        cumulative_prob
+        logit
+        prob_dst
+        prob_src
+    """
+
+    edge_logit = edge_logit.float()
+    mask_src = mask_src.bool()
+    mask_dst = mask_dst.bool()
+
+    B, Ns, Nd = edge_logit.shape
+    rows = []
+
+    for b in range(B):
+        # -------------------------------------------------------------
+        # Real edge logits
+        # -------------------------------------------------------------
+        real_logits = edge_logit[b]  # (Ns, Nd)
+
+        # -------------------------------------------------------------
+        # Forward probability P(dst | src)
+        # Includes explicit NO_LINK.
+        # -------------------------------------------------------------
+        dst_logits = real_logits.masked_fill(~mask_dst[b][None, :], -1e9)
+
+        no_link = torch.full(
+            (Ns, 1),
+            float(no_link_logit),
+            dtype=dst_logits.dtype,
+            device=dst_logits.device,
+        )
+
+        dst_logits_with_no_link = torch.cat([dst_logits, no_link], dim=-1)
+        prob_dst = torch.softmax(dst_logits_with_no_link, dim=-1)  # (Ns, Nd+1)
+
+        # -------------------------------------------------------------
+        # Reverse probability P(src | dst)
+        # Only real edges participate.
+        # -------------------------------------------------------------
+        src_logits = real_logits.masked_fill(~mask_src[b][:, None], -1e9)
+        src_logits = src_logits.masked_fill(~mask_dst[b][None, :], -1e9)
+
+        prob_src = torch.softmax(src_logits, dim=0)  # (Ns, Nd)
+
+        # Invalid destinations should contribute exactly zero.
+        prob_src = prob_src * mask_dst[b][None, :].to(prob_src.dtype)
+
+        # -------------------------------------------------------------
+        # Bidirectional edge score
+        # -------------------------------------------------------------
+        score_real = prob_dst[:, :Nd] * prob_src
+
+        score_no_link = prob_dst[:, Nd:Nd + 1] * float(no_link_weight)
+
+        score = torch.cat([score_real, score_no_link], dim=-1)
+
+        # Normalize again over destination so each row sums to one.
+        prob = score / score.sum(dim=-1, keepdim=True).clamp_min(1e-12)
+
+        # -------------------------------------------------------------
+        # Cumulative candidate selection
+        # -------------------------------------------------------------
+        src_ids = torch.where(mask_src[b])[0]
+
+        for src_id in src_ids.tolist():
+            p = prob[src_id]
+
+            p_sorted, idx_sorted = torch.sort(p, descending=True)
+            cum = torch.cumsum(p_sorted, dim=0)
+
+            hit = torch.where(cum >= cumulative)[0]
+            if len(hit):
+                n_keep = int(hit[0]) + 1
+            else:
+                n_keep = len(p_sorted)
+
+            # if USE_ILP:
+            #     n_keep = max(n_keep, 2)
+
+            for rank in range(n_keep):
+                idx = int(idx_sorted[rank])
+
+                if idx == Nd:
+                    dst_id = -1
+                    p_src_value = 1.0
+                    raw_logit = float(no_link_logit)
+                else:
+                    dst_id = idx
+                    p_src_value = float(prob_src[src_id, idx])
+                    raw_logit = float(real_logits[src_id, idx])
+
+                rows.append({
+                    "t": int(t_start + b),
+                    "src_id": int(src_id),
+                    "dst_id": dst_id,
+                    "rank": rank,
+                    "prob": float(p_sorted[rank]),
+                    "cumulative_prob": float(cum[rank]),
+                    "logit": raw_logit,
+                    "prob_dst": float(prob_dst[src_id, idx]),
+                    "prob_src": p_src_value,
+                })
+
+    return rows
+
+def select_top1_with_dst_correction(predict_edge_df):
+    """
+    Keep forward top-1, then resolve destination conflicts using original logits.
+
+    For each conflicting (t, dst_id):
+      - Softmax over sources whose forward top-1 selected this destination.
+      - Keep the source with maximum probability.
+      - No birth option is added in this experiment.
+
+    Non-conflicting edges stay unchanged. Original prob/rank are preserved.
+    NO_LINK rows are excluded from the returned graph.
+    """
+    required = {"t", "src_id", "dst_id", "rank", "prob", "logit"}
+    missing = required - set(predict_edge_df.columns)
+    if missing:
+        raise ValueError(f"Missing columns: {sorted(missing)}")
+
+    df = predict_edge_df[
+        (predict_edge_df["rank"] == 0) & (predict_edge_df["dst_id"] >= 0)
+    ].copy()
+    df = df.drop_duplicates(["t", "src_id", "dst_id"]).reset_index(drop=True)
+
+    if df.groupby(["t", "src_id"]).size().gt(1).any():
+        raise ValueError("Input contains multiple distinct rank-0 edges for one source")
+
+    if not np.isfinite(df["logit"].to_numpy(dtype=np.float64)).all():
+        raise ValueError("Selected edge logits must be finite")
+
+    keys = ["t", "dst_id"]
+    groups = df.groupby(keys, sort=False)
+    df["dst_num_competing_src"] = groups["src_id"].transform("size")
+
+    # Stable softmax over competing sources for each destination.
+    score = df["logit"].astype(np.float64)
+    weight = np.exp(score - groups["logit"].transform("max"))
+    denominator = weight.groupby([df["t"], df["dst_id"]]).transform("sum")
+    df["dst_competition_prob"] = weight / denominator
+
+    # Softmax preserves logit ordering; source ID breaks exact ties deterministically.
+    df = df.sort_values(
+        ["t", "dst_id", "logit", "src_id"], ascending=[True, True, False, True],
+        kind="stable",
+    )
+    df = df.drop_duplicates(keys, keep="first")
+    return df.sort_values(["t", "src_id"], kind="stable").reset_index(drop=True)
+
+
+
+####################################################################################3
+# Kaggle GEFF writer / official metric helper
+def prediction_to_geff_graph(predict_node_df, predict_edge_df, downsample=(1, 4, 4)):
+    """
+    Convert our per-frame local node IDs and directed t->t+1 edges into a
+    tracksdata graph suitable for save_graph(... .geff).
+
+    predict_node_df columns:
+        t, node_id, z, y, x, p
+
+    predict_edge_df columns:
+        t, src_id, dst_id, ...
+
+    src_id/dst_id are LOCAL node IDs inside frame t / t+1, so the key
+    (t, node_id) is used to map them to graph-global node IDs.
+
+    Our inference coordinates are on the downsampled 64^3 grid.  Kaggle's
+    truth GEFF uses the original image voxel coordinate system, therefore
+    coordinates are multiplied by downsample=(1,4,4) before saving.
+    """
+    required_node = {"t", "node_id", "z", "y", "x"}
+    required_edge = {"t", "src_id", "dst_id"}
+    missing_node = required_node - set(predict_node_df.columns)
+    missing_edge = required_edge - set(predict_edge_df.columns)
+    if missing_node:
+        raise ValueError(f"predict_node_df missing columns: {sorted(missing_node)}")
+    if missing_edge:
+        raise ValueError(f"predict_edge_df missing columns: {sorted(missing_edge)}")
+
+    graph = td.graph.InMemoryGraph()
+    for key in ["z", "y", "x"]:
+        graph.add_node_attr_key(key, pl.Float64, -999999.0)
+
+    dz, dy, dx = map(float, downsample)
+
+    node_records = []
+    local_keys = []
+    for r in predict_node_df.itertuples(index=False):
+        node_records.append({
+            "t": int(r.t),
+            "z": float(r.z) * dz,
+            "y": float(r.y) * dy,
+            "x": float(r.x) * dx,
+        })
+        local_keys.append((int(r.t), int(r.node_id)))
+
+    graph_node_ids = graph.bulk_add_nodes(node_records)
+    node_map = {
+        key: int(graph_id)
+        for key, graph_id in zip(local_keys, graph_node_ids)
+    }
+
+    edge_records = []
+    skipped_edges = 0
+
+    # Optional attributes are useful for inspection but are not required
+    # by the Kaggle evaluator.
+    graph.add_edge_attr_key("edge_prob", pl.Float64, 0.0)
+
+    for r in predict_edge_df.itertuples(index=False):
+        t = int(r.t)
+        src_key = (t, int(r.src_id))
+        dst_key = (t + 1, int(r.dst_id))
+
+        src = node_map.get(src_key)
+        dst = node_map.get(dst_key)
+        if src is None or dst is None:
+            skipped_edges += 1
+            continue
+
+        prob = float(getattr(r, "prob", 1.0))
+        edge_records.append({
+            "source_id": src,
+            "target_id": dst,
+            "edge_prob": prob,
+        })
+
+    if edge_records:
+        graph.bulk_add_edges(edge_records)
+
+    return graph, skipped_edges
+
+
+print("helper ok!!!")

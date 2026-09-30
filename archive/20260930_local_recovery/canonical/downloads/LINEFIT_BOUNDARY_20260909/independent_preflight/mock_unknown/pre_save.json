@@ -1,0 +1,20 @@
+{
+  "principal": "sailorren",
+  "competition": {
+    "user_has_entered": true,
+    "submissions_disabled": false,
+    "is_kernels_submissions_only": true
+  },
+  "submissions_complete": true,
+  "submission_remaining": 1,
+  "baseline_submission": {
+    "status": "COMPLETE",
+    "public_score": ".946"
+  },
+  "gpu_remaining_hours": 2,
+  "candidate_read_error": {
+    "http_status": 404
+  },
+  "own_list_complete": true,
+  "own_exact_matches": []
+}

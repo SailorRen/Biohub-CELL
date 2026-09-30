@@ -1,0 +1,8 @@
+{
+  "operation": "READ_ONLY_CURRENT_SOURCE_RECHECK_AFTER_LOG_READ",
+  "observed_at_asia_shanghai": "2026-09-08T09:26:29.161056+08:00",
+  "version_label_29_attempt": "HTTP404; no source returned; no mutations",
+  "current_version_number": 29,
+  "source_sha256": "6e1f25c4db92ca05084a3cab39ff083d10c3f43a730581c141363301c0e985bb",
+  "matches_initial_pull": true
+}

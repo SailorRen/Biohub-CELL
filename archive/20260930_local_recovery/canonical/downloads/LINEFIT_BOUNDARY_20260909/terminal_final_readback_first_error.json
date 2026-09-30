@@ -1,0 +1,9 @@
+{
+  "operation": "final read-only GitHub verification",
+  "commit": "ad9f3c2aa1e12b85d13aa804fc0058ca714dce91",
+  "error": "git ls-remote: LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443",
+  "git_exit_code": 128,
+  "companion_contract_verification": ".task-verification/LINEFIT_BOUNDARY_20260909/runs/20260909T223951+0800-be60b4c0.json",
+  "new_writes": 0,
+  "next_action": "Only read-only connectivity and unchanged verification may be retried."
+}

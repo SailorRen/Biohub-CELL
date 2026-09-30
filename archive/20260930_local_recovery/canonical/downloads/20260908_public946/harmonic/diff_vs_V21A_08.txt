@@ -1,0 +1,496 @@
+--- V21A_cell_8
++++ harmonic_cell_8
+@@ -1,178 +1,318 @@
+-# Independent audit for the frozen frame-retention probe.
+-from collections import Counter
+-import hashlib
+-import json
+-from pathlib import Path
+-
+-import pandas as pd
+-import torch
+-
+-_guard_submission = Path("/kaggle/working/submission.csv")
+-_guard_columns = [
+-    "id", "dataset", "row_type", "node_id", "t", "z", "y", "x",
+-    "source_id", "target_id",
+-]
+-if not _guard_submission.is_file():
+-    raise FileNotFoundError(_guard_submission)
+-_guard_frame = pd.read_csv(_guard_submission)
+-if _guard_frame.empty or _guard_frame.columns.tolist() != _guard_columns:
+-    raise RuntimeError("Retention-guard submission schema changed")
+-if _guard_frame["id"].tolist() != list(range(len(_guard_frame))):
+-    raise RuntimeError("Retention-guard row IDs are not contiguous")
+-if set(_guard_frame["row_type"].unique()) != {"node", "edge"}:
+-    raise RuntimeError("Retention-guard row types changed")
+-
+-_guard_datasets = sorted(_guard_frame["dataset"].astype(str).unique())
+-_guard_expected = sorted(
+-    path.name.removesuffix(".zarr")
+-    for path in TEST_DIR.iterdir()
+-    if path.name.endswith(".zarr")
+-)
+-if _guard_datasets != _guard_expected:
+-    raise RuntimeError({"expected": _guard_expected, "actual": _guard_datasets})
+-
+-_guard_records = []
+-for _guard_path in sorted(Path("/kaggle/working").glob("retention_guard_*.jsonl")):
+-    for _guard_line in _guard_path.read_text().splitlines():
+-        if _guard_line.strip():
+-            _guard_records.append(json.loads(_guard_line))
+-if not _guard_records:
+-    raise RuntimeError("No frame-retention diagnostics were produced")
+-
+-_guard_keys = [
+-    (str(row["dataset"]), int(row["frame"])) for row in _guard_records
+-]
+-if len(_guard_keys) != len(set(_guard_keys)):
+-    raise RuntimeError("Duplicate frame-retention diagnostics")
+-if sorted(set(movie for movie, _ in _guard_keys)) != _guard_expected:
+-    raise RuntimeError("Frame-retention diagnostics do not cover every movie")
+-for _guard_record in _guard_records:
+-    if (
+-        float(_guard_record["minimum_retention"])
+-        != 0.9
+-        or int(_guard_record["primary_candidates"]) < 0
+-        or int(_guard_record["blended_candidates"]) < 0
+-    ):
+-        raise RuntimeError("Frame-retention diagnostic contract changed")
+-    _guard_expected_use_primary = bool(
+-        int(_guard_record["primary_candidates"]) > 0
+-        and float(_guard_record["retention"])
+-        < 0.9
++
++
++
++
++
++
++
++from scipy.optimize import linear_sum_assignment
++
++
++def match_nodes_bipartite(pred_nodes: dict, gt_nodes: dict, max_dist: float = 7.0):
++    pred_by_t: dict[int, list[int]] = {}
++    for pid, (t, *_r) in pred_nodes.items():
++        pred_by_t.setdefault(int(t), []).append(pid)
++    gt_by_t: dict[int, list[int]] = {}
++    for gid, (t, *_r) in gt_nodes.items():
++        gt_by_t.setdefault(int(t), []).append(gid)
++
++    pred_to_gt: dict[int, int] = {}
++    gt_to_pred: dict[int, int] = {}
++    for t, p_ids in pred_by_t.items():
++        g_ids = gt_by_t.get(t, [])
++        if not g_ids:
++            continue
++        voxel_scale = np.array(VOXEL_SCALE_UM, dtype=float)
++        p_pos = np.array([pred_nodes[p][1:] for p in p_ids], dtype=float) * voxel_scale
++        g_pos = np.array([gt_nodes[g][1:] for g in g_ids], dtype=float) * voxel_scale
++        diff = p_pos[:, None, :] - g_pos[None, :, :]
++        cost = np.sqrt((diff ** 2).sum(axis=-1))
++        BIG = 1e6
++        cost_gated = np.where(cost <= max_dist, cost, BIG)
++        row_ind, col_ind = linear_sum_assignment(cost_gated)
++        for r, c in zip(row_ind, col_ind):
++            if cost_gated[r, c] >= BIG:
++                continue
++            pred_to_gt[p_ids[r]] = g_ids[c]
++            gt_to_pred[g_ids[c]] = p_ids[r]
++    return pred_to_gt, gt_to_pred
++
++
++def compute_edge_confusion(pred_edges, gt_edges, pred_to_gt, gt_to_pred):
++    gt_edge_set = set(gt_edges)
++    gt_outgoing: dict[int, set[int]] = {}
++    gt_incoming_source: dict[int, int] = {}
++    for s, t in gt_edge_set:
++        gt_outgoing.setdefault(s, set()).add(t)
++        gt_incoming_source[t] = s
++
++    tp = 0
++    fp = 0
++    matched_gt_edges = set()
++    for s, t in pred_edges:
++        ms = pred_to_gt.get(s)
++        mt = pred_to_gt.get(t)
++        is_tp = ms is not None and mt is not None and mt in gt_outgoing.get(ms, ())
++        if is_tp:
++            tp += 1
++            matched_gt_edges.add((ms, mt))
++            continue
++        is_fp = (mt is not None and mt in gt_incoming_source) or (
++            ms is not None and bool(gt_outgoing.get(ms))
++        )
++        if is_fp:
++            fp += 1
++    fn = len(gt_edge_set - matched_gt_edges)
++    return tp, fp, fn
++
++
++def edge_jaccard(tp: int, fp: int, fn: int) -> float:
++    denom = tp + fp + fn
++    return tp / denom if denom else 0.0
++
++
++def adjusted_jaccard(jaccard: float, t_pred: int, t_true, a: float = 0.1) -> float:
++    if not t_true or t_true <= 0:
++        return jaccard
++    return max(0.0, jaccard * (1.0 - a * (t_pred - t_true) / t_true))
++
++
++def weakly_connected_components(node_ids, edges):
++    parent = {n: n for n in node_ids}
++
++    def find(x):
++        while parent[x] != x:
++            parent[x] = parent[parent[x]]
++            x = parent[x]
++        return x
++
++    def union(a, b):
++        ra, rb = find(a), find(b)
++        if ra != rb:
++            parent[ra] = rb
++
++    for s, t in edges:
++        if s in parent and t in parent:
++            union(s, t)
++    return {n: find(n) for n in node_ids}
++
++
++def compute_division_confusion(pred_nodes, pred_edges, gt_nodes, gt_edges, pred_to_gt, gt_to_pred):
++    gt_out: dict[int, set[int]] = {}
++    gt_in: dict[int, int] = {}
++    for s, t in gt_edges:
++        gt_out.setdefault(s, set()).add(t)
++        gt_in[t] = s
++
++    pred_out: dict[int, set[int]] = {}
++    for s, t in pred_edges:
++        pred_out.setdefault(s, set()).add(t)
++
++    pred_node_ids = list(pred_nodes.keys())
++    pred_edge_list = list(pred_edges)
++    components = weakly_connected_components(pred_node_ids, pred_edge_list)
++    fork_components = {
++        components[n] for n, outs in pred_out.items() if len(outs) >= 2 and n in components
++    }
++    gt_division_sources = [s for s, outs in gt_out.items() if len(outs) >= 2]
++
++    def lineage_descendants(root_child: int) -> set[int]:
++        seen = {root_child}
++        stack = [root_child]
++        while stack:
++            cur = stack.pop()
++            for nxt in gt_out.get(cur, ()):
++                if nxt not in seen:
++                    seen.add(nxt)
++                    stack.append(nxt)
++        return seen
++
++    tp = 0
++    fn = 0
++    tp_gt_sources: set[int] = set()
++
++    for gsrc in gt_division_sources:
++        children = sorted(gt_out[gsrc])
++        if len(children) < 2:
++            continue
++        anchor_candidates = [gsrc]
++        if gsrc in gt_in:
++            anchor_candidates.append(gt_in[gsrc])
++        anchor_pred_nodes = [gt_to_pred[a] for a in anchor_candidates if a in gt_to_pred]
++
++        lineage_hit_components: list[set[int]] = []
++        ok = True
++        for child in children[:2]:
++            lineage = lineage_descendants(child)
++            hit_comp_ids = {
++                components[p_id]
++                for gt_id in lineage
++                if (p_id := gt_to_pred.get(gt_id)) is not None and p_id in components
++            }
++            if not hit_comp_ids:
++                ok = False
++                break
++            lineage_hit_components.append(hit_comp_ids)
++
++        if not ok or not anchor_pred_nodes:
++            fn += 1
++            continue
++
++        anchor_comp_ids = {components[p] for p in anchor_pred_nodes if p in components}
++        if not anchor_comp_ids:
++            fn += 1
++            continue
++
++        found = any(
++            comp_id in lineage_hit_components[0]
++            and comp_id in lineage_hit_components[1]
++            and comp_id in fork_components
++            for comp_id in anchor_comp_ids
++        )
++        if found:
++            tp += 1
++            tp_gt_sources.add(gsrc)
++        else:
++            fn += 1
++
++    fp = 0
++    for n, outs in pred_out.items():
++        if len(outs) < 2:
++            continue
++        g = pred_to_gt.get(n)
++        if g is None or g not in gt_out or g in tp_gt_sources:
++            continue
++        fp += 1
++
++    return tp, fp, fn
++
++
++def decompose_errors(pred_nodes, gt_nodes, pred_edges, gt_edges, pred_to_gt, gt_to_pred):
++    """Splits error mass into detection vs. fragmentation vs. wrong-association,
++    using the exact same pred_to_gt/gt_to_pred matching compute_edge_confusion
++    uses. Division errors are already isolated by compute_division_confusion;
++    this covers everything else -- the diagnostic breakdown for deciding
++    whether further gains are in detection, linking, or fragmentation."""
++    gt_edge_set = set(gt_edges)
++    pred_edge_set = set(pred_edges)
++    gt_outgoing: dict[int, set[int]] = {}
++    for s, t in gt_edge_set:
++        gt_outgoing.setdefault(s, set()).add(t)
++
++    missed_gt_nodes = sum(1 for g in gt_nodes if g not in gt_to_pred)
++    spurious_pred_nodes = sum(1 for p in pred_nodes if p not in pred_to_gt)
++
++    recovered = fragmented = lost_to_detection = 0
++    for gs, gtid in gt_edge_set:
++        ps, pt = gt_to_pred.get(gs), gt_to_pred.get(gtid)
++        if ps is None or pt is None:
++            lost_to_detection += 1
++        elif (ps, pt) in pred_edge_set:
++            recovered += 1
++        else:
++            fragmented += 1
++
++    wrong_association = 0
++    for ps, pt in pred_edge_set:
++        ms, mt = pred_to_gt.get(ps), pred_to_gt.get(pt)
++        if ms is not None and mt is not None and mt not in gt_outgoing.get(ms, ()):
++            wrong_association += 1
++
++    return {
++        "missed_gt_nodes": missed_gt_nodes,
++        "spurious_pred_nodes": spurious_pred_nodes,
++        "edges_recovered": recovered,
++        "edges_fragmented": fragmented,
++        "edges_lost_to_detection": lost_to_detection,
++        "wrong_association_edges": wrong_association,
++    }
++
++
++def _find_key_recursive(obj, key):
++    if isinstance(obj, dict):
++        if key in obj:
++            return obj[key]
++        for v in obj.values():
++            found = _find_key_recursive(v, key)
++            if found is not None:
++                return found
++    elif isinstance(obj, list):
++        for item in obj:
++            found = _find_key_recursive(item, key)
++            if found is not None:
++                return found
++    return None
++
++
++def read_estimated_true_node_count(geff_path: Path):
++    for candidate in (geff_path / "zarr.json", geff_path / ".zattrs"):
++        if not candidate.exists():
++            continue
++        try:
++            payload = json.loads(candidate.read_text())
++        except Exception:
++            continue
++        found = _find_key_recursive(payload, "estimated_number_of_nodes")
++        if found is not None:
++            try:
++                return float(found)
++            except (TypeError, ValueError):
++                continue
++    return None
++
++
++def graph_to_plain(graph):
++    nodes: dict[int, tuple] = {}
++    for row in graph.node_attrs().iter_rows(named=True):
++        node_id = int(row["node_id"])
++        nodes[node_id] = (int(row["t"]), float(row["z"]), float(row["y"]), float(row["x"]))
++    edges: list[tuple[int, int]] = []
++    for row in graph.edge_attrs().iter_rows(named=True):
++        edges.append((int(row["source_id"]), int(row["target_id"])))
++    return nodes, edges
++
++
++def nodes_by_id_to_plain(nodes_by_id):
++    return {nid: (int(n["t"]), float(n["z"]), float(n["y"]), float(n["x"])) for nid, n in nodes_by_id.items()}
++
++
++def score_sample(pred_nodes_plain, pred_edges_plain, gt_nodes_plain, gt_edges_plain, t_true):
++    p2g, g2p = match_nodes_bipartite(pred_nodes_plain, gt_nodes_plain, max_dist=VALIDATOR_MATCH_RADIUS_UM)
++    tp, fp, fn = compute_edge_confusion(pred_edges_plain, gt_edges_plain, p2g, g2p)
++    jac = edge_jaccard(tp, fp, fn)
++    t_pred = len(pred_nodes_plain)
++    adj = adjusted_jaccard(jac, t_pred, t_true, a=VALIDATOR_NODE_COUNT_PENALTY_A)
++    div_tp, div_fp, div_fn = compute_division_confusion(
++        pred_nodes_plain, pred_edges_plain, gt_nodes_plain, gt_edges_plain, p2g, g2p
+     )
+-    if bool(_guard_record["use_primary"]) != _guard_expected_use_primary:
+-        raise RuntimeError("Frame-retention decision is inconsistent")
+-
+-_guard_topology = {}
+-for _guard_movie, _guard_group in _guard_frame.groupby("dataset", sort=True):
+-    _guard_nodes = _guard_group[_guard_group["row_type"].eq("node")]
+-    _guard_edges = _guard_group[_guard_group["row_type"].eq("edge")]
+-    if _guard_nodes.empty or _guard_nodes["t"].lt(0).any():
+-        raise RuntimeError(f"{_guard_movie}: invalid biological node time")
+-    if _guard_nodes[["z", "y", "x"]].lt(0).any().any():
+-        raise RuntimeError(f"{_guard_movie}: negative biological coordinate")
+-    _guard_node_time = dict(zip(
+-        _guard_nodes["node_id"].astype(int),
+-        _guard_nodes["t"].astype(int),
+-    ))
+-    _guard_incoming = Counter()
+-    _guard_outgoing = Counter()
+-    for _guard_edge in _guard_edges.itertuples():
+-        _guard_source = int(_guard_edge.source_id)
+-        _guard_target = int(_guard_edge.target_id)
+-        if (
+-            _guard_source not in _guard_node_time
+-            or _guard_target not in _guard_node_time
+-            or _guard_node_time[_guard_target]
+-            != _guard_node_time[_guard_source] + 1
+-        ):
+-            raise RuntimeError(f"{_guard_movie}: invalid lineage edge")
+-        _guard_incoming[_guard_target] += 1
+-        _guard_outgoing[_guard_source] += 1
+-    _guard_max_in = max(_guard_incoming.values(), default=0)
+-    _guard_max_out = max(_guard_outgoing.values(), default=0)
+-    if _guard_max_in > 1 or _guard_max_out > 2:
+-        raise RuntimeError(f"{_guard_movie}: invalid lineage degree")
+-    _guard_topology[_guard_movie] = {
+-        "nodes": int(len(_guard_nodes)),
+-        "edges": int(len(_guard_edges)),
+-        "max_indegree": int(_guard_max_in),
+-        "max_outdegree": int(_guard_max_out),
+-        "division_parents": int(sum(
+-            value == 2 for value in _guard_outgoing.values()
+-        )),
++    errors = decompose_errors(pred_nodes_plain, gt_nodes_plain, pred_edges_plain, gt_edges_plain, p2g, g2p)
++    div_jac = edge_jaccard(div_tp, div_fp, div_fn)
++    row = {
++        "edge_tp": tp, "edge_fp": fp, "edge_fn": fn, "edge_jaccard": jac,
++        "t_pred": t_pred, "t_true": t_true, "adjusted_edge_jaccard": adj,
++        "div_tp": div_tp, "div_fp": div_fp, "div_fn": div_fn, "div_jaccard": div_jac,
++        "weight": tp + fp + fn,
+     }
+-
+-_guard_by_movie = {}
+-for _guard_movie in _guard_expected:
+-    _guard_movie_records = [
+-        row for row in _guard_records if row["dataset"] == _guard_movie
+-    ]
+-    _guard_by_movie[_guard_movie] = {
+-        "frames": int(len(_guard_movie_records)),
+-        "fallback_frames": int(sum(
+-            bool(row["use_primary"]) for row in _guard_movie_records
+-        )),
+-        "minimum_retention": float(min(
+-            row["retention"] for row in _guard_movie_records
+-        )),
+-        "median_retention": float(pd.Series(
+-            [row["retention"] for row in _guard_movie_records]
+-        ).median()),
++    row.update(errors)
++    return row
++
++
++def aggregate_official(sample_rows):
++    total_w = sum(r["weight"] for r in sample_rows) or 1
++    weighted_adj = sum(r["adjusted_edge_jaccard"] * r["weight"] for r in sample_rows) / total_w
++    div_tp = sum(r["div_tp"] for r in sample_rows)
++    div_fp = sum(r["div_fp"] for r in sample_rows)
++    div_fn = sum(r["div_fn"] for r in sample_rows)
++    div_jac = edge_jaccard(div_tp, div_fp, div_fn)
++    return {
++        "adjusted_edge_jaccard": weighted_adj,
++        "division_jaccard": div_jac,
++        "proxy_score": weighted_adj + VALIDATOR_DIVISION_WEIGHT * div_jac,
++        "div_tp": div_tp, "div_fp": div_fp, "div_fn": div_fn,
++        "missed_gt_nodes": sum(r["missed_gt_nodes"] for r in sample_rows),
++        "spurious_pred_nodes": sum(r["spurious_pred_nodes"] for r in sample_rows),
++        "edges_recovered": sum(r["edges_recovered"] for r in sample_rows),
++        "edges_fragmented": sum(r["edges_fragmented"] for r in sample_rows),
++        "edges_lost_to_detection": sum(r["edges_lost_to_detection"] for r in sample_rows),
++        "wrong_association_edges": sum(r["wrong_association_edges"] for r in sample_rows),
+     }
+-
+-_guard_digest = hashlib.sha256(_guard_submission.read_bytes()).hexdigest()
+-_guard_report = {
+-    "experiment": "harmonic_bidirectional_association_v1",
+-    "status": "clean_graph_audit_pass_candidate_unverified_quality",
+-    "parent_experiment": "paired_bidirectional_primary_weight020_vs_forward_v1",
+-    "method_attribution": "fixed-90 dual-seed baseline with harmonic mutual-support association fusion (rule from public CC0 notebook yusuketogashi/no-hack-biohub-cell-another-approch-3rd v18)",
+-    "source_kernel": "raykkretzschmar/biohub-bidirectional-primary-union13-diagnostic-v1",
+-    "source_notebook_sha256": "3e65ca691941949196bf417030ea84fccafe16baaec174b2a63540451bb937e8",
+-    "public_output_used": False,
+-    "metric_hack_used": False,
+-    "organizer_labels_used_for_configuration": False,
+-    "leaderboard_feedback_used_for_configuration": True,
+-    "configuration": {
+-        "minimum_candidate_retention": 0.9,
+-        "fallback_scope": "individual_frame",
+-        "detector_threshold": 0.96875,
+-        "secondary_detection_weight": 0.475,
+-        "secondary_edge_weight": 0.15,
+-        "bidirectional_primary_weight": 0.30,
+-        "secondary_link_mode": "low_margin_consensus",
+-        "secondary_low_margin_max": 0.35,
+-        "edge_candidate_threshold": 0.48,
+-        "ilp_appearance_weight": 0.0,
+-        "ilp_disappearance_weight": 1.5,
+-        "gap_close_um": 5.8,
+-        "deepcenter_gap_threshold": 0.25,
+-        "deepcenter_gap_confirm_min_span_um": 8.5,
+-    },
+-    "hardware": {
+-        "visible_gpu_count": int(torch.cuda.device_count()),
+-    },
+-    "diagnostics": {
+-        "rows": int(len(_guard_records)),
+-        "fallback_frames": int(sum(
+-            bool(row["use_primary"]) for row in _guard_records
+-        )),
+-        "by_movie": _guard_by_movie,
+-    },
+-    "submission": {
+-        "sha256": _guard_digest,
+-        "rows": int(len(_guard_frame)),
+-        "datasets": _guard_datasets,
+-    },
+-    "topology": _guard_topology,
+-    "quality_promotion": {
+-        "status": "candidate_unverified",
+-        "required_receipt": "bidirectional_blend_union13_receipt.json",
+-        "required_condition": "promote=true",
+-        "execute_push_submit": "FORBIDDEN_UNTIL_REQUIRED_CONDITION",
+-        "validated_receipt_sha256": None,
+-    },
+-}
+-Path("/kaggle/working/dual_seed_frame_retention_guard_report.json").write_text(
+-    json.dumps(_guard_report, indent=2, sort_keys=True) + "\n"
+-)
+-print(json.dumps(_guard_report, indent=2, sort_keys=True))

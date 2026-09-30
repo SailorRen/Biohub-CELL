@@ -1,0 +1,85 @@
+{
+  "checks": [
+    {
+      "details": {
+        "argument_count": 2,
+        "argv_sha256": "8ce484c67da702bb68d2c50248ac3a7c4db9c54f28d8f9c139808187a404682f",
+        "cwd": ".",
+        "executable": "python3",
+        "expected_exit": 0,
+        "missing_stderr_text_checks": 0,
+        "missing_stdout_text_checks": 0,
+        "raw_output_stored": false,
+        "returncode": 0,
+        "stderr": {
+          "bytes": 102,
+          "sha256": "feabb4add9e2ca3374e538560634d1ec97dc4f4ce89aab12f3d726e36ea9b2f6"
+        },
+        "stderr_text_checks": 0,
+        "stdout": {
+          "bytes": 266,
+          "sha256": "c10a6cafc28676b98e66b7b4ef0c135a923cf7fc596fc6f7fa025b4f9241d9f3"
+        },
+        "stdout_text_checks": 0
+      },
+      "id": "evidence",
+      "outcome": "PASS",
+      "reason": "command evidence passed",
+      "required": true,
+      "type": "command"
+    },
+    {
+      "details": {
+        "bytes": 8205,
+        "path": "reports/20260917_BIOHUB_SPRINT02_HOCT_RESULTS.md",
+        "sha256": "462e56305864f3ca6d0fb7a7fc44eb5752b78b35900f26db370e5fb0853cb637"
+      },
+      "id": "report",
+      "outcome": "PASS",
+      "reason": "file evidence passed",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "details": {
+        "branch": "codex/sprint02-hoct-20260917",
+        "dirty_entry_count": 0,
+        "head": "bf4a86b35820b9faddc1dab9f5ae9f0eb7e8ad63",
+        "remote": "origin",
+        "remote_exists": true,
+        "remote_head": "bf4a86b35820b9faddc1dab9f5ae9f0eb7e8ad63",
+        "remote_url_sha256": "294339ae4bf28ec437260f32bd064c06212de22a7026887c59e47f72ef414b8e",
+        "repository": "."
+      },
+      "id": "delivery",
+      "outcome": "PASS",
+      "reason": "Git evidence passed",
+      "required": true,
+      "type": "git"
+    }
+  ],
+  "claimed_at": "2026-09-17T14:13:51+08:00",
+  "claimed_status": "CLAIMED_COMPLETE",
+  "contract_path": "experiments/BIOHUB_SPRINT02_HOCT_20260917/verification_contract.json",
+  "contract_sha256": "6a76f51d3dfbdd0dccbde3e240b87f2e4f3ed62b9034f76f32a784202cbad23f",
+  "final_status": "COMPLETED_VERIFIED",
+  "finished_at": "2026-09-17T14:13:52+08:00",
+  "integrity_scope": "local-sha256-only",
+  "limitations": [
+    "The conclusion is limited to the frozen contract and the implemented checks.",
+    "The verifier does not prove omitted requirements or future stability.",
+    "A local or Git hash is not a trusted signature against a malicious writer."
+  ],
+  "optional_warning_check_ids": [],
+  "reason": "all required automated checks passed",
+  "required_summary": {
+    "failed_or_blocked": 0,
+    "human_review": 0,
+    "passed": 3
+  },
+  "run_id": "20260917T141351+0800-a746a644",
+  "schema_version": "1.0",
+  "started_at": "2026-09-17T14:13:51+08:00",
+  "task_id": "BIOHUB_SPRINT02_HOCT_20260917",
+  "scope_note": "Only legal-stop evidence and delivery passed. Experiment remains PARTIAL_BLOCKED; production and formal submission NOT_RUN."
+}

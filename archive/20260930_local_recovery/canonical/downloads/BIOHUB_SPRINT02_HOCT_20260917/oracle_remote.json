@@ -1,0 +1,63 @@
+{
+  "commit": "dedd9b46251ddc17583177fefb46f825e6cb2dcf",
+  "remote_head": "dedd9b46251ddc17583177fefb46f825e6cb2dcf",
+  "branch": "codex/sprint02-hoct-20260917",
+  "matched": 9,
+  "files": [
+    {
+      "path": "experiments/BIOHUB_SPRINT02_HOCT_20260917/oracle_restore/run.py",
+      "sha256": "bc1cf610cacd20bcdd43969c91f5358c6d5fe23431ac69b89576e5809657513c",
+      "bytes": 3869,
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_SPRINT02_HOCT_20260917/oracle_restore/run.log",
+      "sha256": "5d08a0b402d0a79e433db4b3cd4a9df3fb66808dd448d1608985066607224c32",
+      "bytes": 326,
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_SPRINT02_HOCT_20260917/oracle_restore/results.json",
+      "sha256": "cf297c400fcb413dcb3252e178b30c0cf69c27c163072437d7ad9433b874d371",
+      "bytes": 47642,
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_SPRINT02_HOCT_20260917/oracle_restore/报告.md",
+      "sha256": "f0e237a770ed8830d1ce8117ad51a98bd75d7da1e9ec4d742a74b703c2f803ce",
+      "bytes": 2737,
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_SPRINT02_HOCT_20260917/oracle_restore/contract.json",
+      "sha256": "a4d7e6fcc42ce38ee790fe0ec1f4879d547e4efe2f295c218ba09657b168a6a9",
+      "bytes": 2344,
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_SPRINT02_HOCT_20260917/diagnostic_rerun/verification.json",
+      "sha256": "0912639b6474ce0ad75b328e1af0a057b73d8af413921d68f048c96c1ad7fd96",
+      "bytes": 114343,
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_SPRINT02_HOCT_20260917/diagnostic_rerun/deleted_edge_attribution.csv",
+      "sha256": "4faa6f8588bfe4f16784f4ec8331ea698da27205b1a78ff49de84ff96ad20733",
+      "bytes": 18409,
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_SPRINT02_HOCT_20260917/diagnostic_rerun/diagnostic_platform.json",
+      "sha256": "92d2b78c5bb38297b3bd303d1550b41fd8ebe1d97dd3c727b9f48a3f640cf170",
+      "bytes": 15295,
+      "match": true
+    },
+    {
+      "path": "experiments/BIOHUB_SPRINT02_HOCT_20260917/contract.json",
+      "sha256": "6f4d778f64475447632514cf2f1515dfc8f4168af8e7ed5f9756f374c0c9c350",
+      "bytes": 9200,
+      "match": true
+    }
+  ],
+  "worktree_status": ""
+}

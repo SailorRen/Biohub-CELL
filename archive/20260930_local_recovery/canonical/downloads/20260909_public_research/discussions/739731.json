@@ -1,0 +1,77 @@
+{
+  "id": 739731,
+  "url": "https://www.kaggle.com/competitions/biohub-cell-tracking-during-development/discussion/739731",
+  "observed_at_utc": "2026-09-09T01:49:38.233742+00:00",
+  "platform_writes": 0,
+  "topic": {
+    "id": 739731,
+    "title": "can we turn auto research to auo data generator?",
+    "url": "/competitions/biohub-cell-tracking-during-development/discussion/739731",
+    "postDate": "2026-09-05T19:21:43.157Z",
+    "authorName": "hengck23",
+    "authorUrl": "https://www.kaggle.com/hengck23",
+    "votes": 6,
+    "commentCount": 7,
+    "forumName": "Biohub - Cell Tracking During Development",
+    "forumId": 10656304,
+    "content": "<p>i have a feeling that it can be done. Ask Codex to generate psf, then style it for fluorescence microscopy. We have a discriminator as a judge. it fits the loop generator --&gt; test --&gt; iterate.</p>\n<p>this is just psf generator</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F9fe94cd69cb343584fb191a0cde22e8e%2FSelection_4781.png?generation=1788636058965350&amp;alt=media\" alt=\"\">\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Fe19f9ac9ec485441cb97a7349b86545e%2FSelection_4786.png?generation=1788636100528234&amp;alt=media\" alt=\"\"></p>"
+  },
+  "comment_pages": [
+    {
+      "comments": [
+        {
+          "id": 3522384,
+          "authorName": "hengck23",
+          "postDate": "2026-09-08T18:58:40.797Z",
+          "content": "<p>external data<br>\n<a href=\"https://zebrahub.sf.czbiohub.org/imaging\" target=\"_blank\">https://zebrahub.sf.czbiohub.org/imaging</a><br>\n<a href=\"https://public.czbiohub.org/royerlab/zebrahub/imaging/single-objective/\" target=\"_blank\">https://public.czbiohub.org/royerlab/zebrahub/imaging/single-objective/</a><br>\n<a href=\"https://public.czbiohub.org/royerlab/zoo/\" target=\"_blank\">https://public.czbiohub.org/royerlab/zoo/</a>\n<a href=\"https://public.czbiohub.org/royerlab/ultrack/\" target=\"_blank\">https://public.czbiohub.org/royerlab/ultrack/</a></p>\n<p>it is dense track! i think it is by ultrack</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F9d50c08c33cebcbbd8bf3f5060b4e9a1%2FSelection_4841.png?generation=1788898795365771&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F4fb513a47380d4ac853d9b8f3a9e0432%2FSelection_4842.png?generation=1788898817410763&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F59efe6edfb20a773e0338379a946c1e0%2FSelection_4845.png?generation=1788911392662598&amp;alt=media\" alt=\"\"></p>\n<p>we do have \"unlimited external data\"</p>",
+          "votes": 1
+        },
+        {
+          "id": 3521427,
+          "authorName": "Sergio Alvarez",
+          "postDate": "2026-09-05T20:48:27.127Z",
+          "content": "<p>I've tried the synthetic volume idea for ~2 weeks with no clear improvement in my scores, so I dropped it. Still, it would be cool to see this strategy work here, as it helped improve a little in the CZII competition. (Polnet was used there: <a href=\"https://github.com/anmartinezs/polnet\" target=\"_blank\">https://github.com/anmartinezs/polnet</a>)</p>\n<p>I suggest to send DaXi microscope paper as reference (<a href=\"https://www.nature.com/articles/s41592-022-01417-2\" target=\"_blank\">https://www.nature.com/articles/s41592-022-01417-2</a>)</p>\n<p>Here is one example of synthetic volume I tried to use:</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F2221915%2F508c44ad1c064184a3a589b7de41f5dd%2Fsynthetic_z_stack_optimized.gif?generation=1788641223173538&amp;alt=media\" alt=\"\"></p>",
+          "votes": 4,
+          "replies": [
+            {
+              "id": 3521446,
+              "authorName": "hengck23",
+              "postDate": "2026-09-05T23:02:44.757Z",
+              "content": "<p>Your synthetic data quality is good! I will check the DaXi paper. Thanks!</p>"
+            },
+            {
+              "id": 3521482,
+              "authorName": "hengck23",
+              "postDate": "2026-09-06T04:12:28.723Z",
+              "content": "<p>I have some bold idea. At inference you run your model. You have rough estimate of motion. Then you can do augmentation of hiddent test data with appropriate motion and perform online test finetuning or adaptation at selected frames etc</p>"
+            }
+          ]
+        },
+        {
+          "id": 3521416,
+          "authorName": "hengck23",
+          "postDate": "2026-09-05T19:29:22.643Z",
+          "content": "<p>close to my idea<br>\n<a href=\"https://arxiv.org/pdf/2107.10180\" target=\"_blank\">https://arxiv.org/pdf/2107.10180</a><br>\n3D fluorescence microscopy data synthesis for segmentation and benchmarking<br>\n<a href=\"https://www.biorxiv.org/content/10.1101/2022.06.10.495713v1\" target=\"_blank\">https://www.biorxiv.org/content/10.1101/2022.06.10.495713v1</a><br>\nNISNet3D: Three-Dimensional Nuclear Synthesis and Instance Segmentation for Fluorescence Microscopy Images  </p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Fda81e458e6ac40760f6bd444de79eb82%2FSelection_4788.png?generation=1788636533698104&amp;alt=media\" alt=\"\"></p>",
+          "votes": -2
+        },
+        {
+          "id": 3521415,
+          "authorName": "hengck23",
+          "postDate": "2026-09-05T19:27:55.870Z",
+          "content": "<p>differentiable render\n<a href=\"https://github.com/VirtualEmbryo/deltaMic?utm_source=chatgpt.com\" target=\"_blank\">https://github.com/VirtualEmbryo/deltaMic?utm_source=chatgpt.com</a></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F4ca457bf73e3526165ae8d2e1a59bbd6%2FSelection_4789.png?generation=1788636465458910&amp;alt=media\" alt=\"\"></p>",
+          "votes": -1,
+          "replies": [
+            {
+              "id": 3521533,
+              "authorName": "Rishabh Roy",
+              "postDate": "2026-09-06T08:44:54.313Z",
+              "content": "<p><a href=\"https://arxiv.org/abs/2002.10749\" target=\"_blank\">https://arxiv.org/abs/2002.10749</a></p>"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "comments_pagination_complete": true,
+  "status": "TEXT_ACQUIRED_NOT_YET_REVIEWED"
+}

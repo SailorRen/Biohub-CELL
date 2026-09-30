@@ -1,0 +1,28 @@
+{
+  "baseline": {
+    "contract_matches_head": true,
+    "contract_tracked": true,
+    "git_repository": true,
+    "head": "569bd65a0c367e7be5a8097101cd4bd288835a53",
+    "integrity_scope": "git-tracked-and-sha256"
+  },
+  "claim": {
+    "claimed_at": "2026-09-04T19:39:34+08:00",
+    "source": "agent_report",
+    "status": "CLAIMED_COMPLETE",
+    "summary_chars": 199,
+    "summary_sha256": "4a33e60bec6159298a38819c3813d9698a3ac77ce4ca4f27377f6f1dc6f9fc81"
+  },
+  "contract_path": "experiments/V20B/contract.json",
+  "contract_sha256": "ea46844436142e61c3bc570b4e616531b69eca2cbc609935cf84ce768d41a40b",
+  "latest_verification": {
+    "final_status": "COMPLETED_VERIFIED",
+    "finished_at": "2026-09-04T19:49:48+08:00",
+    "report_path": ".task-verification/CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS/runs/20260904T194947+0800-5f6b8555.json",
+    "run_id": "20260904T194947+0800-5f6b8555"
+  },
+  "prepared_at": "2026-09-04T16:30:35+08:00",
+  "schema_version": "1.0",
+  "status": "COMPLETED_VERIFIED",
+  "task_id": "CODEX_20260904_BIOHUB_V20B_TWO_EMBRYO_PAIRED_RADIUS"
+}

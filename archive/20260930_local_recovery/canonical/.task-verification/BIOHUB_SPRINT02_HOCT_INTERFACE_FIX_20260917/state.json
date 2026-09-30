@@ -1,0 +1,28 @@
+{
+  "baseline": {
+    "contract_matches_head": false,
+    "contract_tracked": false,
+    "git_repository": true,
+    "head": "a0b646817f111028b57766618e9b12561e766edd",
+    "integrity_scope": "local-sha256-only"
+  },
+  "claim": {
+    "claimed_at": "2026-09-17T15:16:48+08:00",
+    "source": "agent_report",
+    "status": "CLAIMED_COMPLETE",
+    "summary_chars": 120,
+    "summary_sha256": "815b25778f8f673324cea973b6463923bf1a8b8d076beb475b6fbb917b7aa74f"
+  },
+  "contract_path": "experiments/BIOHUB_SPRINT02_HOCT_20260917/interface_fix/fix_contract.json",
+  "contract_sha256": "b206425e9255bd0a5de27f2e4c303ac0d03f6192abcd45415edb3be78a9c651e",
+  "latest_verification": {
+    "final_status": "COMPLETED_VERIFIED",
+    "finished_at": "2026-09-17T15:30:14+08:00",
+    "report_path": ".task-verification/BIOHUB_SPRINT02_HOCT_INTERFACE_FIX_20260917/runs/20260917T153009+0800-0c3cf7c9.json",
+    "run_id": "20260917T153009+0800-0c3cf7c9"
+  },
+  "prepared_at": "2026-09-17T14:59:39+08:00",
+  "schema_version": "1.0",
+  "status": "COMPLETED_VERIFIED",
+  "task_id": "BIOHUB_SPRINT02_HOCT_INTERFACE_FIX_20260917"
+}

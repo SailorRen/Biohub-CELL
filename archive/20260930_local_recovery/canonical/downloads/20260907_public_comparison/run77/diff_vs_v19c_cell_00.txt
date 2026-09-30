@@ -1,0 +1,35 @@
+--- v19c cell 2
++++ run77 cell 0
+@@ -1,20 +1,11 @@
+-# Cell-tracking-during-development submission pipeline.
+-#
+-# Stages: (1) a dual-seed TemporalUNet3D detector produces per-frame center
+-#   heatmaps that are fused into candidate nodes; (2) a transformer edge model
+-#   scores parent->child links; (3) an ILP solver selects a consistent track
+-#   graph; (4) a division-aware post-processing pass (safe-div) proposes cell
+-#   divisions and a DeepCenter model vetoes false ones.
+-#
+-# All behaviour below is configured through BIOHUB_* environment variables read
+-# by the pipeline. The knobs set here are the values validated to score best on
+-# the leaderboard; each block is grouped and commented by what it controls.
++
+ import os
+ BIOHUB_PRESET = 'harmonic_v3_division_wide'
+ BIOHUB_SCORE_AXIS = 'v19c reported LB 0.939 sister separation radius 14um arm'
+ 
+ os.environ["BIOHUB_OUTPUT_FILTER_SHORT_TRACKS"] = "1"
+-os.environ["BIOHUB_DET_THRESHOLD"] = "0.965"
++os.environ["BIOHUB_DET_THRESHOLD"] = "0.965"  # x54: v19 swept DOWN from 0.96875 (0.96->0.937, 0.95->0.937, 0.94->0.936) so their own gradient points UP, and they stopped. Dense LB punishes over-detection; raising the detection threshold is the most direct volume reduction available.
++os.environ["BIOHUB_DEEPCENTER_SAFE_DIV_THRESHOLD"] = "0.26"  # x56: STACK. x40 (0.26) moved divisions 148->87 and scored 0.942; x54 (DET 0.975) moved NODES -1.1% while leaving divisions at 152. Measured orthogonal: different counters, so they should compose.
+ os.environ["BIOHUB_MOTION_RELINK_LEARNED_BONUS"] = '1.0'
+ os.environ["BIOHUB_ILP_APPEARANCE_WEIGHT"] = "0.0"
+ os.environ["BIOHUB_ILP_DISAPPEARANCE_WEIGHT"] = "2"
+@@ -28,7 +19,7 @@
+ os.environ["BIOHUB_OUTPUT_MIN_TRACK_LEN"] = "6"
+ os.environ["BIOHUB_OUTPUT_KEEP_DIVISION_COMPONENTS"] = "1"
+ os.environ["BIOHUB_OUTPUT_GAP2_RECOVERY"] = "1"
+-os.environ["BIOHUB_SAFE_DIV_MAX_UM"] = "7.0"  # Max parent-to-daughter separation for an accepted division.
++os.environ["BIOHUB_SAFE_DIV_MAX_UM"] = "9.0"  # Max parent-to-daughter separation for an accepted division.
+ #   Ground-truth parent-daughter links reach 10.4um; a 7um cap rejected ~25% of real links.
+ #   Loosening 7->9 recovers wide-but-genuine divisions (this is the "sdm9" arm; alone it scored LB 0.939).
+ os.environ["BIOHUB_SAFE_DIV_SISTER_MAX_UM"] = "14.0"  # Max daughter-to-daughter separation for an accepted division.

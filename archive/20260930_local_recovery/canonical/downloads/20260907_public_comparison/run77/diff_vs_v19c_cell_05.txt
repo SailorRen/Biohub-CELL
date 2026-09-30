@@ -1,0 +1,49 @@
+--- v19c cell 7
++++ run77 cell 5
+@@ -1009,11 +1009,6 @@
+         if not source_ids or not candidate_ids:
+             continue
+  
+-        # PATCH: nearest-orphan tree over this frame's unclaimed candidates,
+-        # built once per t and reused for every source_id below. Lets us
+-        # require that a proposed second daughter is the CLOSEST unclaimed
+-        # node to the existing first daughter, not merely within
+-        # SAFE_DIV_SISTER_MAX_UM of it.
+         candidate_tree = None
+         if SAFE_DIV_REQUIRE_MUTUAL_NN:
+             candidate_positions = np.stack([_position_um(nodes_by_id[cid]) for cid in candidate_ids])
+@@ -1032,10 +1027,6 @@
+             if child_dist > SAFE_DIV_EXISTING_CHILD_MAX_UM:
+                 continue
+  
+-            # PATCH: who is the existing child's nearest still-unclaimed
+-            # neighbor this frame? Only that candidate can pass the
+-            # mutual-NN check below -- computed once per existing_child,
+-            # not once per candidate.
+             mutual_nn_id = None
+             if candidate_tree is not None:
+                 _, nn_idx = candidate_tree.query(_position_um(existing_child))
+@@ -1057,10 +1048,6 @@
+                     stats["safe_division_mutual_nn_rejected"] += 1
+                     continue
+  
+-                # PATCH: forward divergence. Both putative daughters need
+-                # their own unambiguous single successor one frame later,
+-                # and those two grandchildren must have moved apart more
+-                # than the sisters were apart now.
+                 if SAFE_DIV_REQUIRE_DIVERGENCE:
+                     c1_succ = out_by_source.get(existing_child_id, [])
+                     q_succ = out_by_source.get(candidate_id, [])
+@@ -1094,12 +1081,6 @@
+                     DEEPCENTER_SAFE_DIV_THRESHOLD,
+                 ):
+                     continue
+-                # G1 sister-symmetry precision gate (2026-08-31). Reject a safe-div fork whose
+-                # two daughters are wildly asymmetric in distance from the parent -- signature of
+-                # a spurious near-peak stealing the daughter slot. Loose tau=0.6 keeps real
+-                # (mildly-asymmetric) divisions; rejecting the spurious proposal frees the greedy
+-                # per-frame slot so the TRUE fork can form. Offline 23-movie validation proxy vs the previous banked configuration:
+-                # fp_forks 35->15 (-57%), tp_forks 2->3, adjJ +0.0011, FINAL +0.0073. tau<=0 = off.
+                 if SAFE_DIV_SISTER_SYMMETRY_TAU > 0.0:
+                     _sym_denom = max((child_dist + parent_dist) / 2.0, 1e-6)
+                     if abs(child_dist - parent_dist) / _sym_denom > SAFE_DIV_SISTER_SYMMETRY_TAU:

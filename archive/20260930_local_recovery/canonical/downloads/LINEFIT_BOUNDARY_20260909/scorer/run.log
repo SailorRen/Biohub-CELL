@@ -1,0 +1,206 @@
+[09/09/26 10:30:01] WARNING  No matching edges found.        _base_graph.py:1281
+                    WARNING  No matching edges found.        _base_graph.py:1281
+{
+  "status": "PASS",
+  "checks": {
+    "total": 83,
+    "passed": 83,
+    "failed": 0
+  },
+  "cases": [
+    {
+      "id": "perfect_division",
+      "official": [
+        5,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "proxy": [
+        5,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "delta": 0.0
+    },
+    {
+      "id": "weak_component_same_branch",
+      "official": [
+        2,
+        2,
+        3,
+        0,
+        1,
+        1
+      ],
+      "proxy": [
+        2,
+        2,
+        3,
+        1,
+        0,
+        0
+      ],
+      "delta": 0.09999999999999998
+    },
+    {
+      "id": "one_pred_fork_two_gt_divisions",
+      "official": [
+        6,
+        1,
+        5,
+        1,
+        0,
+        1
+      ],
+      "proxy": [
+        6,
+        1,
+        5,
+        2,
+        0,
+        0
+      ],
+      "delta": 0.04999999999999993
+    },
+    {
+      "id": "unmatched_fork_cross_components",
+      "official": [
+        0,
+        2,
+        2,
+        0,
+        1,
+        0
+      ],
+      "proxy": [
+        0,
+        2,
+        2,
+        0,
+        0,
+        0
+      ],
+      "delta": 0.0
+    },
+    {
+      "id": "delayed_local_division",
+      "official": [
+        1,
+        3,
+        4,
+        1,
+        0,
+        0
+      ],
+      "proxy": [
+        1,
+        3,
+        4,
+        1,
+        0,
+        0
+      ],
+      "delta": 0.0
+    },
+    {
+      "id": "merged_child_reject",
+      "official": [
+        5,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "proxy": [
+        5,
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "delta": 0.09999999999999998
+    }
+  ],
+  "aggregation": {
+    "official_per_sample": [
+      {
+        "edge_tp": 5,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 1,
+        "division_fp": 0,
+        "division_fn": 0,
+        "num_pred_nodes": 12,
+        "node_recall": 1.0,
+        "total_node_ratio": 1.0,
+        "edge_jaccard": 1.0,
+        "adj_edge_jaccard": 0.9
+      },
+      {
+        "edge_tp": 2,
+        "edge_fp": 0,
+        "edge_fn": 0,
+        "division_tp": 0,
+        "division_fp": 0,
+        "division_fn": 0,
+        "num_pred_nodes": 3,
+        "node_recall": 1.0,
+        "total_node_ratio": 0.0,
+        "edge_jaccard": 1.0,
+        "adj_edge_jaccard": 1.0
+      }
+    ],
+    "official_full": {
+      "n": 2,
+      "edge_jaccard": 1.0,
+      "division_jaccard": 1.0,
+      "division_tp": 1,
+      "division_fp": 0,
+      "division_fn": 0,
+      "node_recall": 1.0,
+      "adj_edge_jaccard": 0.9285714285714286,
+      "n_adj": 2,
+      "score": 1.0285714285714287
+    },
+    "proxy": {
+      "adjusted_edge_jaccard": 0.9285714285714286,
+      "division_jaccard": 1.0,
+      "proxy_score": 1.0285714285714287,
+      "div_tp": 1,
+      "div_fp": 0,
+      "div_fn": 0,
+      "missed_gt_nodes": 0,
+      "spurious_pred_nodes": 6,
+      "edges_recovered": 7,
+      "edges_fragmented": 0,
+      "edges_lost_to_detection": 0,
+      "wrong_association_edges": 0
+    },
+    "official_convenience": {
+      "edge_jaccard": 1.0,
+      "division_jaccard": 1.0,
+      "score": 1.1
+    },
+    "convenience_minus_full": 0.0714285714285714,
+    "missing_metadata_official_adjusted": null,
+    "missing_metadata_proxy_adjusted": 1.0
+  },
+  "dependencies": {
+    "tracksdata": "0.1.0rc6.dev3+g980c2d30a",
+    "polars": "1.42.0",
+    "numpy": "2.4.2",
+    "scipy": "1.17.1",
+    "rustworkx": "0.18.1",
+    "geff": "1.3.1.1.3",
+    "numba": "0.67.0",
+    "zarr": "3.1.6"
+  }
+}

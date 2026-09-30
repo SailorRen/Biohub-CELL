@@ -1,0 +1,15 @@
+{
+  "stage": "B",
+  "package_versions": {
+    "torch": "2.10.0+cu128",
+    "numpy": "2.0.2",
+    "tracksdata": "0.1.0rc6.dev3+g980c2d30a",
+    "polars": "1.42.0",
+    "pydantic": "2.13.4"
+  },
+  "seconds": 3206.6376043520004,
+  "training_calls": 0,
+  "detector_calls": 0,
+  "complete_samples": 8,
+  "hoct_successful_videos": 0
+}
